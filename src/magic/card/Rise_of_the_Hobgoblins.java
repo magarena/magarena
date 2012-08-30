@@ -52,7 +52,6 @@ public class Rise_of_the_Hobgoblins {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player},
                     this,
                     "Red creatures and white creatures you control gain first strike until end of turn.");
         }
@@ -63,7 +62,7 @@ public class Rise_of_the_Hobgoblins {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPlayer player=(MagicPlayer)data[0];
+            final MagicPlayer player=event.getPlayer();
             final Collection<MagicTarget> targets=game.filterTargets(
                     player,
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
@@ -86,7 +85,6 @@ public class Rise_of_the_Hobgoblins {
                     new MagicMayChoice(
                         "You may pay {X}.",
                         new MagicPayManaCostChoice(MagicManaCost.X)),
-                    new Object[]{player},
                     this,
                     "You may pay$ {X}$. If you do, put X 1/1 red and white Goblin Soldier creature tokens onto the battlefield.");
         }
@@ -98,7 +96,7 @@ public class Rise_of_the_Hobgoblins {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                final MagicPlayer player=(MagicPlayer)data[0];
+                final MagicPlayer player=event.getPlayer();
                 final MagicPayManaCostResult payedManaCost=(MagicPayManaCostResult)choiceResults[1];
                 for (int count=payedManaCost.getX();count>0;count--) {
                     game.doAction(new MagicPlayTokenAction(
