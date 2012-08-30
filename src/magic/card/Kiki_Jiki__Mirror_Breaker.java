@@ -36,7 +36,6 @@ public class Kiki_Jiki__Mirror_Breaker {
                     player,
                     MagicTargetChoice.TARGET_NON_LEGENDARY_CREATURE_YOU_CONTROL,
                     MagicCopyTargetPicker.create(),
-                    new Object[]{player},
                     this,
                     "Put a token that's a copy of target nonlegendary creature$ you control onto the battlefield. "+
                     "That token has haste. Sacrifice it at end of turn.");
@@ -46,7 +45,7 @@ public class Kiki_Jiki__Mirror_Breaker {
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    final MagicPlayer player=(MagicPlayer)data[0];
+                    final MagicPlayer player=event.getPlayer();
                     final MagicCard card=MagicCard.createTokenCard(creature.getCardDefinition(),player);
                     game.doAction(new MagicPlayCardAction(card,player,MagicPlayCardAction.HASTE_SACRIFICE_AT_END_OF_TURN));
                 }
