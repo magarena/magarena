@@ -28,7 +28,6 @@ public class Bottle_Gnomes {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player},
                     this,
                     player + " gains 3 life.");
         }
@@ -38,7 +37,7 @@ public class Bottle_Gnomes {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],3));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),3));
         }
     };
 }
