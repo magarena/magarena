@@ -19,7 +19,6 @@ public class Tuktuk_the_Explorer {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player},
                     this,
                     player + " puts a legendary 5/5 colorless Goblin Golem artifact creature token " + 
                             "named Tuktuk the Returned onto the battlefield."):
@@ -32,7 +31,7 @@ public class Tuktuk_the_Explorer {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Tuktuk the Returned")));
+            game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Tuktuk the Returned")));
         }
     };
 }
