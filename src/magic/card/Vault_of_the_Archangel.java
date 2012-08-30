@@ -45,7 +45,6 @@ public class Vault_of_the_Archangel {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source.getController()},
                     this,
                     "Creatures " + source.getController() +
                     " controls gain deathtouch and lifelink until end of turn.");
@@ -57,7 +56,7 @@ public class Vault_of_the_Archangel {
                 final Object[] data,
                 final Object[] choiceResults) {
             final Collection<MagicTarget> targets = game.filterTargets(
-                    (MagicPlayer)data[0],
+                    event.getPlayer(),
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicTarget target : targets) {
                 final MagicPermanent creature = (MagicPermanent)target;
