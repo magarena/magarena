@@ -32,7 +32,6 @@ public class Rith__the_Awakener {
                             "You may pay {2}{G}.",
                             new MagicPayManaCostChoice(MagicManaCost.TWO_GREEN),
                             MagicColorChoice.MOST_INSTANCE),
-                        new Object[]{player},
                         this,
                         "You may$ pay {2}{G}$. If you do, choose a color$. "+
                         "Put a 1/1 green Saproling creature token onto the battlefield for each permanent of that color."):
@@ -45,7 +44,7 @@ public class Rith__the_Awakener {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                final MagicPlayer player=(MagicPlayer)data[0];
+                final MagicPlayer player=event.getPlayer();
                 final MagicColor color=(MagicColor)choiceResults[2];
                 final Collection<MagicTarget> targets=
                     game.filterTargets(player,MagicTargetFilter.TARGET_PERMANENT);
