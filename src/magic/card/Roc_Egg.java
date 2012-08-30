@@ -19,7 +19,6 @@ public class Roc_Egg {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player},
                     this,
                     player + " puts a 3/3 white Bird creature token with flying onto the battlefield.") :
                 MagicEvent.NONE;
@@ -31,7 +30,7 @@ public class Roc_Egg {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Bird")));
+            game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Bird")));
         }
     };
 }
