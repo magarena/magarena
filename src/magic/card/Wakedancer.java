@@ -19,7 +19,6 @@ public class Wakedancer {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player},
                     this,
                     player + " puts a 2/2 black Zombie creature token onto the battlefield."):
                 MagicEvent.NONE;
@@ -31,7 +30,7 @@ public class Wakedancer {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicPlayTokenAction(
-                    (MagicPlayer)data[0],
+                    event.getPlayer(),
                     TokenCardDefinitions.get("Zombie")));
         }        
     };
