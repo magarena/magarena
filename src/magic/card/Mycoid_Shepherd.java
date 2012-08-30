@@ -26,7 +26,6 @@ public class Mycoid_Shepherd {
                                     MagicSimpleMayChoice.GAIN_LIFE,
                                     5,
                                     MagicSimpleMayChoice.DEFAULT_YES),
-                            new Object[]{player},
                             this,
                             player + " may$ gain 5 life.") :
                         MagicEvent.NONE;
@@ -38,7 +37,7 @@ public class Mycoid_Shepherd {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],5));
+                game.doAction(new MagicChangeLifeAction(event.getPlayer(),5));
             }
         }
     };
@@ -59,7 +58,6 @@ public class Mycoid_Shepherd {
                                             MagicSimpleMayChoice.GAIN_LIFE,
                                             5,
                                             MagicSimpleMayChoice.DEFAULT_YES),
-                                    new Object[]{player},
                                     this,
                                     player + " may$ gain 5 life.") :
                                 MagicEvent.NONE;
@@ -71,7 +69,7 @@ public class Mycoid_Shepherd {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],5));
+                game.doAction(new MagicChangeLifeAction(event.getPlayer(),5));
             }
         }
     };
