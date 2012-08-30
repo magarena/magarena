@@ -16,7 +16,6 @@ public class Sacred_Prey {
                     new MagicEvent(
                             permanent,
                             player,
-                            new Object[]{player},
                             this,
                             player + " gains 1 life."):
                     MagicEvent.NONE;
@@ -28,7 +27,7 @@ public class Sacred_Prey {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],1));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
         }
     };
 }
