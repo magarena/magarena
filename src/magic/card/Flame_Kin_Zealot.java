@@ -24,7 +24,6 @@ public class Flame_Kin_Zealot {
             return new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player},
                     this,
                     "Creatures " + player + " controls get " +
                     "+1/+1 and gain haste until end of turn.");
@@ -36,7 +35,7 @@ public class Flame_Kin_Zealot {
                 final Object data[],
                 final Object[] choiceResults) {
             final Collection<MagicTarget> targets = game.filterTargets(
-                    (MagicPlayer)data[0],
+                    event.getPlayer(),
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicTarget target : targets) {
                 final MagicPermanent creature=(MagicPermanent)target;
