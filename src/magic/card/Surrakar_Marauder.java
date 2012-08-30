@@ -6,21 +6,18 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicSetAbilityAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
+import magic.model.trigger.MagicLandfallTrigger;
 
 public class Surrakar_Marauder {
-    public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
+    public static final MagicLandfallTrigger T = new MagicLandfallTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
-            final MagicPlayer player = permanent.getController();
-            return (player == played.getController() && played.isLand()) ?
-                new MagicEvent(
+        public MagicEvent getEvent(final MagicPermanent permanent) {
+            return new MagicEvent(
                     permanent,
-                    player,
-                    new Object[]{permanent},
+                    permanent.getController(),
+                    MagicEvent.NO_DATA,
                     this,
-                    permanent + " gains intimidate until end of turn."):
-                MagicEvent.NONE;
+                    permanent + " gains intimidate until end of turn.");
         }
         
         @Override
@@ -30,7 +27,7 @@ public class Surrakar_Marauder {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicSetAbilityAction(
-                    (MagicPermanent)data[0],
+                    event.getPermanent(),
                     MagicAbility.Intimidate));
         }        
     };
