@@ -17,7 +17,6 @@ public class Griffin_Guide {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player},
                     this,
                     "Put a 2/2 white Griffin creature token with flying onto the battlefield."):
                 MagicEvent.NONE;
@@ -28,7 +27,7 @@ public class Griffin_Guide {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Griffin")));
+            game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Griffin")));
         }
     };
 }
