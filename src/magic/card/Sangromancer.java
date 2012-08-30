@@ -26,7 +26,6 @@ public class Sangromancer {
                             MagicSimpleMayChoice.GAIN_LIFE,
                             3,
                             MagicSimpleMayChoice.DEFAULT_YES),
-                    new Object[]{player},
                     this,
                     player + " may$ gain 3 life.") :
                 MagicEvent.NONE;
@@ -38,7 +37,7 @@ public class Sangromancer {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],3));
+                game.doAction(new MagicChangeLifeAction(event.getPlayer(),3));
             }
         }
     };
@@ -57,7 +56,6 @@ public class Sangromancer {
                             MagicSimpleMayChoice.GAIN_LIFE,
                             3,
                             MagicSimpleMayChoice.DEFAULT_YES),
-                    new Object[]{player},
                     this,
                     player + " may$ gain 3 life.") :
                 MagicEvent.NONE;
@@ -70,7 +68,7 @@ public class Sangromancer {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],3));
+                game.doAction(new MagicChangeLifeAction(event.getPlayer(),3));
             }
         }
     };
