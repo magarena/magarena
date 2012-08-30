@@ -68,7 +68,6 @@ public class Siege_Gang_Commander {
             return new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player},
                     this,
                     player + " puts three 1/1 red Goblin creature tokens onto the battlefield.");
         }
@@ -78,7 +77,7 @@ public class Siege_Gang_Commander {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player=(MagicPlayer)data[0];
+            final MagicPlayer player=event.getPlayer();
             for (int count=3;count>0;count--) {
                 game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Goblin1")));
             }
