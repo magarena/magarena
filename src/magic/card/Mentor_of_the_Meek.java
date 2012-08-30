@@ -25,7 +25,6 @@ public class Mentor_of_the_Meek {
                         new MagicMayChoice(
                                 "You may pay {1}.",
                                 new MagicPayManaCostChoice(MagicManaCost.ONE)),
-                        new Object[]{player},
                         this,
                         "You may$ pay {1}$. If you do, draw a card."):
                 MagicEvent.NONE;
@@ -38,7 +37,7 @@ public class Mentor_of_the_Meek {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
+                game.doAction(new MagicDrawAction(event.getPlayer(),1));
             }
         }        
     };
