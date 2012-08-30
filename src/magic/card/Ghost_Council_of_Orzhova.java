@@ -42,7 +42,6 @@ public class Ghost_Council_of_Orzhova {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this,
                     "Exile " + source + ". Return it to the battlefield under its owner's control at end of turn.");
         }
@@ -52,7 +51,7 @@ public class Ghost_Council_of_Orzhova {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicExileUntilEndOfTurnAction((MagicPermanent)data[0]));
+            game.doAction(new MagicExileUntilEndOfTurnAction(event.getPermanent()));
         }
     };
     
@@ -64,7 +63,6 @@ public class Ghost_Council_of_Orzhova {
                     permanent,
                     player,
                     MagicTargetChoice.TARGET_OPPONENT,
-                    new Object[]{player},
                     this,
                     "Target opponent$ loses 1 life and " + player + " gains 1 life.");
         }
@@ -77,7 +75,7 @@ public class Ghost_Council_of_Orzhova {
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     game.doAction(new MagicChangeLifeAction(player,-1));
-                    game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],1));
+                    game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
                 }
             });
         }        
