@@ -43,7 +43,6 @@ public class Skyshroud_Ranger {
                             player + " may put a land card from his or her hand into play.",
                             MagicTargetChoice.TARGET_LAND_CARD_FROM_HAND),
                     new MagicGraveyardTargetPicker(true),
-                    new Object[]{player},
                     this,
                     player + " may$ put a land card$ from his or her hand into play.");
         }
@@ -58,7 +57,7 @@ public class Skyshroud_Ranger {
                 event.processTargetCard(game,choiceResults,1,new MagicCardAction() {
                     public void doAction(final MagicCard card) {
                         game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
-                        game.doAction(new MagicPlayCardAction(card,(MagicPlayer)data[0],MagicPlayCardAction.NONE));
+                        game.doAction(new MagicPlayCardAction(card,event.getPlayer(),MagicPlayCardAction.NONE));
                     }
                 });
             }
