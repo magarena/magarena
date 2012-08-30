@@ -37,7 +37,6 @@ public class Quest_for_the_Gravelord {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player},
                     this,
                     "Put a 5/5 black Zombie Giant creature token onto the battlefield.");
         }
@@ -47,7 +46,7 @@ public class Quest_for_the_Gravelord {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Zombie Giant")));
+            game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Zombie Giant")));
         }
     };
     
