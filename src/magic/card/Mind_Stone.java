@@ -37,7 +37,6 @@ public class Mind_Stone {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player},
                     this,
                     "Draw a card.");
         }
@@ -47,7 +46,7 @@ public class Mind_Stone {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
+            game.doAction(new MagicDrawAction(event.getPlayer(),1));
         }
     };
 }
