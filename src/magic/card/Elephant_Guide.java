@@ -17,7 +17,6 @@ public class Elephant_Guide {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player},
                     this,
                     "Put a 3/3 green Elephant creature token onto the battlefield."):
                 MagicEvent.NONE;
@@ -28,7 +27,7 @@ public class Elephant_Guide {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Elephant")));
+            game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Elephant")));
         }
     };
 }
