@@ -70,7 +70,6 @@ public class Scrib_Nibblers {
                     source,
                     player,
                     MagicTargetChoice.NEG_TARGET_PLAYER,
-                    new Object[]{player},
                     this,
                     "Exile the top card of target player's$ library. " +
                     "If it's a land card, " + player + " gains 1 life.");
@@ -85,7 +84,7 @@ public class Scrib_Nibblers {
                         game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
                         game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.Exile));
                         if (card.getCardDefinition().isLand()) {
-                            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],1));
+                            game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
                         }
                     }
                 }
