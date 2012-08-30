@@ -20,7 +20,6 @@ public class Thief_of_Hope {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{player},
                         this,
                         player.getOpponent() + " loses 1 life and " +
                         player + " gains 1 life."):
@@ -32,7 +31,7 @@ public class Thief_of_Hope {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[0];
+            final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicChangeLifeAction(player.getOpponent(),-1));
             game.doAction(new MagicChangeLifeAction(player,1));
         }        
