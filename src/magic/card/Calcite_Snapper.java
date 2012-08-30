@@ -9,25 +9,23 @@ import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
-import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
+import magic.model.trigger.MagicLandfallTrigger;
 
 public class Calcite_Snapper {
-    public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
+    public static final MagicLandfallTrigger T = new MagicLandfallTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
+        public MagicEvent getEvent(final MagicPermanent permanent) {
             final MagicPlayer player = permanent.getController();
-            return (player == played.getController() && played.isLand()) ?
-                new MagicEvent(
+            return new MagicEvent(
                     permanent,
                     player,
                     new MagicMayChoice(
                             player + " may switch " + permanent + "'s " +
                             "power and toughness until end of turn."),
-                    new Object[]{permanent},
+                    MagicEvent.NO_DATA,
                     this,
                     player + " may$ switch " + permanent + "'s " +
-                    "power and toughness until end of turn."):
-                MagicEvent.NONE;
+                    "power and toughness until end of turn.");
         }
         
         @Override
@@ -37,8 +35,7 @@ public class Calcite_Snapper {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                final MagicPermanent permanent = (MagicPermanent)data[0];
-                game.doAction(new MagicAddStaticAction(permanent, new MagicStatic(
+                game.doAction(new MagicAddStaticAction(event.getPermanent(), new MagicStatic(
                         MagicLayer.SwitchPT,
                         MagicStatic.UntilEOT) {
                     @Override
