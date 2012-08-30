@@ -74,7 +74,6 @@ public class Rakdos_Guildmage {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player},
                     this,
                     player + " puts a 2/1 red Goblin creature token with haste onto the battlefield. Exile it at end of turn.");
         }
@@ -84,7 +83,7 @@ public class Rakdos_Guildmage {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPlayer player=(MagicPlayer)data[0];
+            final MagicPlayer player=event.getPlayer();
             final MagicCard card=MagicCard.createTokenCard(TokenCardDefinitions.get("Goblin2"),player);
             game.doAction(new MagicPlayCardAction(card,player,MagicPlayCardAction.REMOVE_AT_END_OF_TURN));
         }
