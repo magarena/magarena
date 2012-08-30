@@ -11,25 +11,23 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
-import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
+import magic.model.trigger.MagicLandfallTrigger;
 
 public class Cosi_s_Ravager {
-    public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
+    public static final MagicLandfallTrigger T = new MagicLandfallTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
+        public MagicEvent getEvent(final MagicPermanent permanent) {
             final MagicPlayer player = permanent.getController();
-            return (player == played.getController() && played.isLand()) ?
-                new MagicEvent(
+            return new MagicEvent(
                     permanent,
                     player,
                     new MagicMayChoice(
                             player + " may have " + permanent + " deal 1 damage to target player",
                             MagicTargetChoice.NEG_TARGET_PLAYER),
                     new MagicDamageTargetPicker(1),
-                    new Object[]{permanent},
+                    MagicEvent.NO_DATA,
                     this,
-                    player + " may$ have " + permanent + " deal 1 damage to target player$"):
-                MagicEvent.NONE;
+                    player + " may$ have " + permanent + " deal 1 damage to target player$");
         }
         
         @Override
@@ -41,7 +39,7 @@ public class Cosi_s_Ravager {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTarget(game,choiceResults,1,new MagicTargetAction() {
                     public void doAction(final MagicTarget target) {
-                        final MagicDamage damage = new MagicDamage((MagicPermanent)data[0],target,1,false);
+                        final MagicDamage damage = new MagicDamage(event.getPermanent(),target,1,false);
                         game.doAction(new MagicDealDamageAction(damage));
                     }
                 });
