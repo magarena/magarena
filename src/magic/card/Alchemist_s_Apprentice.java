@@ -33,7 +33,6 @@ public class Alchemist_s_Apprentice {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player},
                     this,
                     player + " draws a card.");
         }
@@ -44,7 +43,7 @@ public class Alchemist_s_Apprentice {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
+            game.doAction(new MagicDrawAction(event.getPlayer(),1));
         }
     };
 }
