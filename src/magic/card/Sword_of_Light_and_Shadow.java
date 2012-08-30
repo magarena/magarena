@@ -31,7 +31,6 @@ public class Sword_of_Light_and_Shadow {
                         "his or her graveyard to his or her hand.",
                         MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD),
                     new MagicGraveyardTargetPicker(false),
-                    new Object[]{player},
                     this,
                     player + " gains 3 life and may$ return target creature card$ " +
                     "from his or her graveyard to his or her hand."):
@@ -43,7 +42,7 @@ public class Sword_of_Light_and_Shadow {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],3));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),3));
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTargetCard(game,choiceResults,1,new MagicCardAction() {
                     public void doAction(final MagicCard card) {
