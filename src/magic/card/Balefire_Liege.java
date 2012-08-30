@@ -82,7 +82,6 @@ public class Balefire_Liege {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{player},
                         this,
                         player + " gains 3 life."):
                 MagicEvent.NONE;
@@ -93,7 +92,7 @@ public class Balefire_Liege {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],3));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),3));
         }
     };
 }
