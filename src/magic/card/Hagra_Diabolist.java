@@ -25,7 +25,6 @@ public class Hagra_Diabolist {
                                 player + " may have target player lose life " +
                                 "equal to the number of Allies he or she controls.",
                                 MagicTargetChoice.NEG_TARGET_PLAYER),
-                        new Object[]{player},
                         this,
                         player + " may$ have target player$ lose life " +
                         "equal to the number of Allies he or she controls.") :
@@ -41,7 +40,7 @@ public class Hagra_Diabolist {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTargetPlayer(game,choiceResults,1,new MagicPlayerAction() {
                     public void doAction(final MagicPlayer targetPlayer) {
-                        final MagicPlayer player = (MagicPlayer)data[0];
+                        final MagicPlayer player = event.getPlayer();
                         final int amount =
                                 player.getNrOfPermanentsWithSubType(MagicSubType.Ally);
                         if (amount > 0) {
