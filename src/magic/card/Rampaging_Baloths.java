@@ -8,16 +8,14 @@ import magic.model.action.MagicPlayTokenAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
+import magic.model.trigger.MagicLandfallTrigger;
 
 public class Rampaging_Baloths {
-    public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
+    public static final MagicLandfallTrigger T = new MagicLandfallTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
+        public MagicEvent getEvent(final MagicPermanent permanent) {
             final MagicPlayer player = permanent.getController();
-            return (player == played.getController() &&
-                    played.isLand()) ?
-                new MagicEvent(
+            return new MagicEvent(
                         permanent,
                         player,
                         new MagicSimpleMayChoice(
@@ -26,11 +24,10 @@ public class Rampaging_Baloths {
                                 MagicSimpleMayChoice.PLAY_TOKEN,
                                 1,
                                 MagicSimpleMayChoice.DEFAULT_YES),
-                        new Object[]{player},
+                        MagicEvent.NO_DATA,
                         this,
                         player + " may$ put a 4/4 green Beast " +
-                        "creature token onto the battlefield."):
-                MagicEvent.NONE;
+                        "creature token onto the battlefield.");
         }
         @Override
         public void executeEvent(
@@ -40,7 +37,7 @@ public class Rampaging_Baloths {
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 game.doAction(new MagicPlayTokenAction(
-                        (MagicPlayer)data[0],
+                        event.getPlayer(),
                         TokenCardDefinitions.get("Beast4")));
             }
         }        
