@@ -21,7 +21,6 @@ public class Wall_of_Reverence {
                     player,
                     MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
                     MagicPowerTargetPicker.getInstance(),
-                    new Object[]{player},
                     this,
                     player + " gains life equal to the power of target creature$ he or she controls."):
                 MagicEvent.NONE;
@@ -34,7 +33,7 @@ public class Wall_of_Reverence {
                 final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],creature.getPower()));
+                    game.doAction(new MagicChangeLifeAction(event.getPlayer(),creature.getPower()));
                 }
             });
         }
