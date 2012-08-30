@@ -15,7 +15,6 @@ public class Khalni_Garden {
             return new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player},
                     this,
                     player + " puts a 0/1 green Plant creature token onto the battlefield.");
         }
@@ -26,7 +25,7 @@ public class Khalni_Garden {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicPlayTokenAction(
-                    (MagicPlayer)data[0],
+                    event.getPlayer(),
                     TokenCardDefinitions.get("Plant")));
         }        
     };
