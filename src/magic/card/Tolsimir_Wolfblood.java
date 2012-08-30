@@ -57,7 +57,6 @@ public class Tolsimir_Wolfblood {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player},
                     this,
                     "Put a legendary 2/2 green and white Wolf creature token named Voja onto the battlefield.");
         }
@@ -67,7 +66,7 @@ public class Tolsimir_Wolfblood {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Voja")));
+            game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Voja")));
         }
     };
 }
