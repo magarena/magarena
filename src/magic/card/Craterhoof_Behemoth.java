@@ -23,7 +23,6 @@ public class Craterhoof_Behemoth {
             return new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player},
                     this,
                     "Creatures " + player + " controls gain trample " +
                     "and get +X/+X until end of turn, where X is " +
@@ -36,7 +35,7 @@ public class Craterhoof_Behemoth {
                 final Object data[],
                 final Object[] choiceResults) {
             final Collection<MagicTarget> targets = game.filterTargets(
-                    (MagicPlayer)data[0],
+                    event.getPlayer(),
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             final int amount = targets.size();
             for (final MagicTarget target : targets) {
