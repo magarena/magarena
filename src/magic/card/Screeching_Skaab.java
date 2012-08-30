@@ -17,7 +17,6 @@ public class Screeching_Skaab {
             return new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player},
                     this,
                     player + " puts the top two cards of his " +
                     "or her library into his or her graveyard.");
@@ -28,7 +27,7 @@ public class Screeching_Skaab {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicMillLibraryAction((MagicPlayer)data[0],2));
+            game.doAction(new MagicMillLibraryAction(event.getPlayer(),2));
         }
     };
 }
