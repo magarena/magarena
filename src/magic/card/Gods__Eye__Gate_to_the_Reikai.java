@@ -19,7 +19,6 @@ public class Gods__Eye__Gate_to_the_Reikai {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player},
                     this,
                     player + " puts a 1/1 colorless Spirit creature token onto the battlefield.") :
                 MagicEvent.NONE;
@@ -32,7 +31,7 @@ public class Gods__Eye__Gate_to_the_Reikai {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicPlayTokenAction(
-                    (MagicPlayer)data[0],
+                    event.getPlayer(),
                     TokenCardDefinitions.get("Spirit1")));
         }
     };
