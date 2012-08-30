@@ -9,15 +9,14 @@ import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicWeakenTargetPicker;
-import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
+import magic.model.trigger.MagicLandfallTrigger;
 
 public class Caustic_Crawler {
-    public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
+    public static final MagicLandfallTrigger T = new MagicLandfallTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
+        public MagicEvent getEvent(final MagicPermanent permanent) {
             final MagicPlayer player = permanent.getController();
-            return (player == played.getController() && played.isLand()) ?
-                new MagicEvent(
+            return new MagicEvent(
                     permanent,
                     player,
                     new MagicMayChoice(
@@ -26,8 +25,7 @@ public class Caustic_Crawler {
                     new MagicWeakenTargetPicker(1,1),
                     MagicEvent.NO_DATA,
                     this,
-                    player + " may$ have target creature$ get -1/-1 until end of turn."):
-                MagicEvent.NONE;
+                    player + " may$ have target creature$ get -1/-1 until end of turn.");
         }
         
         @Override
