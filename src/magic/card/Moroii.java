@@ -17,7 +17,6 @@ public class Moroii {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{player},
                         this,
                         player + " loses 1 life.") :
                 MagicEvent.NONE;
@@ -29,7 +28,7 @@ public class Moroii {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],-1));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),-1));
         }
     };
 }
