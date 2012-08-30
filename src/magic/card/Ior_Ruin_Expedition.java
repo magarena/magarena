@@ -69,7 +69,6 @@ public class Ior_Ruin_Expedition {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player},
                     this,
                     player + " draws two cards");
         }
@@ -79,7 +78,7 @@ public class Ior_Ruin_Expedition {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicDrawAction((MagicPlayer)data[0],2));
+            game.doAction(new MagicDrawAction(event.getPlayer(),2));
         }
     };
 }
