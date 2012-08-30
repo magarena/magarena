@@ -6,21 +6,18 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicSetAbilityAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
+import magic.model.trigger.MagicLandfallTrigger;
 
 public class Fledgling_Griffin {
-    public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
+    public static final MagicLandfallTrigger T = new MagicLandfallTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
-            final MagicPlayer player = permanent.getController();
-            return (player == played.getController() && played.isLand()) ?
-                new MagicEvent(
+        public MagicEvent getEvent(final MagicPermanent permanent) {
+            return new MagicEvent(
                     permanent,
-                    player,
-                    new Object[]{permanent},
+                    permanent.getController(),
+                    MagicEvent.NO_DATA,
                     this,
-                    permanent + " gains flying until end of turn."):
-                MagicEvent.NONE;
+                    permanent + " gains flying until end of turn.");
         }
         
         @Override
@@ -29,7 +26,7 @@ public class Fledgling_Griffin {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicSetAbilityAction((MagicPermanent)data[0],MagicAbility.Flying));
+            game.doAction(new MagicSetAbilityAction(event.getPermanent(),MagicAbility.Flying));
         }        
     };
 }
