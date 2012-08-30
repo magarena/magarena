@@ -19,7 +19,6 @@ public class Hero_of_Bladehold {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{player},
                         this,
                         player + " puts two 1/1 white Soldier creature tokens " + 
                         "onto the battlefield tapped and attacking."):
@@ -31,7 +30,7 @@ public class Hero_of_Bladehold {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player=(MagicPlayer)data[0];
+            final MagicPlayer player=event.getPlayer();
             for (int count=2;count>0;count--) {
                 final MagicCard card=MagicCard.createTokenCard(TokenCardDefinitions.get("Soldier"),player);
                 game.doAction(new MagicPlayCardAction(card,player,MagicPlayCardAction.TAPPED_ATTACKING));
