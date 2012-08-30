@@ -15,7 +15,6 @@ public class Broodmate_Dragon {
             return new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player},
                     this,
                     player + " puts a 4/4 red Dragon creature token with flying onto the battlefield.");
         }
@@ -25,7 +24,7 @@ public class Broodmate_Dragon {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Dragon4")));
+            game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Dragon4")));
         }
     };
 }
