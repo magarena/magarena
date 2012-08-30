@@ -69,7 +69,6 @@ public class Golem_Foundry {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player},
                     this,
                     player + " puts a 3/3 colorless Golem artifact creature token onto the battlefield.");
         }
@@ -79,7 +78,7 @@ public class Golem_Foundry {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Golem3")));
+            game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Golem3")));
         }
     };
 }
