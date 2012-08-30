@@ -31,7 +31,6 @@ public class Kazuul_Warlord {
                                 MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
                                 1,
                                 MagicSimpleMayChoice.DEFAULT_YES),
-                        new Object[]{player},
                         this,
                         player + " may$ put a +1/+1 counter on " +
                         "each Ally creature he or she controls.") :
@@ -46,7 +45,7 @@ public class Kazuul_Warlord {
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 final Collection<MagicTarget> targets =
-                        game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_ALLY_YOU_CONTROL);
+                        game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_ALLY_YOU_CONTROL);
                 for (final MagicTarget target : targets) {
                     game.doAction(new MagicChangeCountersAction(
                             (MagicPermanent)target,
