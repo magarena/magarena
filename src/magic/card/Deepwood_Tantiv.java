@@ -16,7 +16,6 @@ public class Deepwood_Tantiv {
                     new MagicEvent(
                             permanent,
                             player,
-                            new Object[]{player},
                             this,
                             player + " gains 2 life."):
                     MagicEvent.NONE;
@@ -28,7 +27,7 @@ public class Deepwood_Tantiv {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],2));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),2));
         }
     };
 }
