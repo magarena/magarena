@@ -18,7 +18,6 @@ public class Blistergrub {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{player},
                         this,
                         player.getOpponent()+ " loses 2 life."):
                 MagicEvent.NONE;
@@ -29,7 +28,7 @@ public class Blistergrub {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player=(MagicPlayer)data[0];
+            final MagicPlayer player=event.getPlayer();
             game.doAction(new MagicChangeLifeAction(player.getOpponent(),-2));
         }
     };
