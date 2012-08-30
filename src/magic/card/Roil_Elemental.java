@@ -12,16 +12,15 @@ import magic.model.event.MagicEvent;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTargetFilter;
-import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
+import magic.model.trigger.MagicLandfallTrigger;
 
 public class Roil_Elemental {
 
-    public static final Object T = new MagicWhenOtherComesIntoPlayTrigger() {
+    public static final Object T = new MagicLandfallTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent played) {
+        public MagicEvent getEvent(final MagicPermanent permanent) {
             final MagicPlayer player = permanent.getController();
-            return (player == played.getController() && played.isLand()) ?
-                new MagicEvent(
+            return new MagicEvent(
                     permanent,
                     player,
                     new MagicMayChoice(
@@ -29,8 +28,7 @@ public class Roil_Elemental {
                         MagicTargetChoice.NEG_TARGET_CREATURE),
                     MagicEvent.NO_DATA,
                     this,
-                    "You may$ gain control of target creature$ for as long as you control " + permanent + ".") :
-                MagicEvent.NONE;
+                    "You may$ gain control of target creature$ for as long as you control " + permanent + ".");
         }
 
         @Override
