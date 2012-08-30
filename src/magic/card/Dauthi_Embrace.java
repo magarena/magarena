@@ -33,7 +33,7 @@ public class Dauthi_Embrace {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    MagicTargetChoice.POS_TARGET_CREATURE,
+                    MagicTargetChoice.TARGET_CREATURE,
                     MagicShadowTargetPicker.getInstance(),
                     MagicEvent.NO_DATA,
                     this,

@@ -22,7 +22,7 @@ public class Shadow_Rift {
             return new MagicEvent(
                     cardOnStack.getCard(),
                     cardOnStack.getController(),
-                    MagicTargetChoice.POS_TARGET_CREATURE,
+                    MagicTargetChoice.TARGET_CREATURE,
                     MagicShadowTargetPicker.getInstance(),
                     new Object[]{cardOnStack,cardOnStack.getController()},
                     this,
