@@ -16,7 +16,7 @@ import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
-import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
+import magic.model.trigger.MagicLandfallTrigger;
 
 public class Avenger_of_Zendikar {
     public static final MagicWhenComesIntoPlayTrigger T1 =new MagicWhenComesIntoPlayTrigger() {
@@ -49,16 +49,11 @@ public class Avenger_of_Zendikar {
         }        
     };
     
-    public static final MagicWhenOtherComesIntoPlayTrigger T2 = new MagicWhenOtherComesIntoPlayTrigger() {
+    public static final MagicLandfallTrigger T2 = new MagicLandfallTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicPermanent played) {
+        public MagicEvent getEvent(final MagicPermanent permanent) {
             final MagicPlayer player = permanent.getController();
-            return (player == played.getController() &&
-                    played.isLand()) ?
-                new MagicEvent(
+            return new MagicEvent(
                         permanent,
                         player,
                         new MagicSimpleMayChoice(
@@ -67,11 +62,10 @@ public class Avenger_of_Zendikar {
                                 MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
                                 1,
                                 MagicSimpleMayChoice.DEFAULT_YES),
-                        new Object[]{player},
+                        MagicEvent.NO_DATA,
                         this,
                         player + " may$ put a +1/+1 counter on each " +
-                        "Plant creature he or she controls."):
-                MagicEvent.NONE;
+                        "Plant creature he or she controls.");
         }
         @Override
         public void executeEvent(
@@ -80,17 +74,16 @@ public class Avenger_of_Zendikar {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                final MagicPlayer player = (MagicPlayer)data[0];
                 final Collection<MagicTarget> targets = game.filterTargets(
-                        player,
+                        event.getPlayer(),
                         MagicTargetFilter.TARGET_PLANT_YOU_CONTROL);
-                    for (final MagicTarget target : targets) {
-                        game.doAction(new MagicChangeCountersAction(
-                                (MagicPermanent)target,
-                                MagicCounterType.PlusOne,
-                                1,
-                                true));
-                    }
+                for (final MagicTarget target : targets) {
+                    game.doAction(new MagicChangeCountersAction(
+                            (MagicPermanent)target,
+                            MagicCounterType.PlusOne,
+                            1,
+                            true));
+                }
             }
         }        
     };
