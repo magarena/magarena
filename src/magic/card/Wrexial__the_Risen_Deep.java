@@ -31,7 +31,6 @@ public class Wrexial__the_Risen_Deep {
                         "You may cast target instant or sorcery card from your opponent's graveyard.",
                         MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD),
                     new MagicGraveyardTargetPicker(true),
-                    new Object[]{player},
                     this,
                     "You may$ cast target instant or sorcery card$ from your opponent's graveyard " + 
                     "without paying its mana cost. "+
@@ -48,7 +47,7 @@ public class Wrexial__the_Risen_Deep {
                 event.processTargetCard(game,choiceResults,1,new MagicCardAction() {
                     public void doAction(final MagicCard card) {
                         game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-                        final MagicCardOnStack cardOnStack=new MagicCardOnStack(card,(MagicPlayer)data[0],MagicPayedCost.NO_COST);
+                        final MagicCardOnStack cardOnStack=new MagicCardOnStack(card,event.getPlayer(),MagicPayedCost.NO_COST);
                         cardOnStack.setMoveLocation(MagicLocationType.Exile);
                         game.doAction(new MagicPutItemOnStackAction(cardOnStack));
                     }
