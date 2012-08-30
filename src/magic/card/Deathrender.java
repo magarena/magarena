@@ -30,7 +30,6 @@ public class Deathrender {
                         "hand onto the battlefield and attach " + permanent + " to it.",
                             MagicTargetChoice.TARGET_CREATURE_CARD_FROM_HAND),
                     new MagicGraveyardTargetPicker(true),
-                    new Object[]{player,permanent},
                     this,
                     player + " may$ put a creature card$ from his or her hand " +
                     "onto the battlefield and attach " + permanent + " to it."):
@@ -46,9 +45,9 @@ public class Deathrender {
                 event.processTargetCard(game,choiceResults,1,new MagicCardAction() {
                     public void doAction(final MagicCard card) {
                         game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
-                        final MagicPlayCardAction action = new MagicPlayCardAction(card,(MagicPlayer)data[0],MagicPlayCardAction.NONE);
+                        final MagicPlayCardAction action = new MagicPlayCardAction(card,event.getPlayer(),MagicPlayCardAction.NONE);
                         game.doAction(action);
-                        game.doAction(new MagicAttachEquipmentAction((MagicPermanent)data[1],action.getPermanent()));
+                        game.doAction(new MagicAttachEquipmentAction(event.getPermanent(),action.getPermanent()));
                     }
                 });
             }
