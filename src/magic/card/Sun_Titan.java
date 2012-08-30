@@ -22,7 +22,6 @@ public class Sun_Titan {
                     player,
                     MagicTargetChoice.TARGET_PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD,
                     new MagicGraveyardTargetPicker(true),
-                    new Object[]{player},
                     this,
                     "Return target permanent card$ with converted mana cost 3 or less " + 
                     "from your graveyard to the battlefield.");
@@ -36,7 +35,7 @@ public class Sun_Titan {
                 final Object[] choiceResults) {
             event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard card) {
-                    game.doAction(new MagicReanimateAction((MagicPlayer)data[0],card,MagicPlayCardAction.NONE));
+                    game.doAction(new MagicReanimateAction(event.getPlayer(),card,MagicPlayCardAction.NONE));
                 }
             });
         }
@@ -52,7 +51,6 @@ public class Sun_Titan {
                     player,
                     MagicTargetChoice.TARGET_PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD,
                     new MagicGraveyardTargetPicker(true),
-                    new Object[]{player},
                     this,
                     "Return target permanent card$ with converted mana cost 3 or less " + 
                     "from your graveyard to the battlefield."):
@@ -67,7 +65,7 @@ public class Sun_Titan {
                 final Object[] choiceResults) {
             event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard card) {
-                    game.doAction(new MagicReanimateAction((MagicPlayer)data[0],card,MagicPlayCardAction.NONE));
+                    game.doAction(new MagicReanimateAction(event.getPlayer(),card,MagicPlayCardAction.NONE));
                 }
             });
         }
