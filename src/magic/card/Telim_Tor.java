@@ -24,7 +24,6 @@ public class Telim_Tor {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player},
                     this,
                     "Attacking creatures with flanking get +1/+1 until end of turn."):
                 MagicEvent.NONE;
@@ -37,7 +36,7 @@ public class Telim_Tor {
                 final Object data[],
                 final Object[] choiceResults) {
             final Collection<MagicTarget> targets = game.filterTargets(
-                    (MagicPlayer)data[0],
+                    event.getPlayer(),
                     MagicTargetFilter.TARGET_ATTACKING_CREATURE);
             for (final MagicTarget target : targets) {
                 final MagicPermanent creature = (MagicPermanent)target;
