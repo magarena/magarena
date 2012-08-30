@@ -14,7 +14,6 @@ public class Flight_of_Fancy {
             return new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player},
                     this,
                     player + " draws two cards.");
         }
@@ -24,7 +23,7 @@ public class Flight_of_Fancy {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicDrawAction((MagicPlayer)data[0],2));
+            game.doAction(new MagicDrawAction(event.getPlayer(),2));
         }        
     };
 }
