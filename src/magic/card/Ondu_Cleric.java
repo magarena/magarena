@@ -26,7 +26,6 @@ public class Ondu_Cleric {
                                 MagicSimpleMayChoice.GAIN_LIFE,
                                 1,
                                 MagicSimpleMayChoice.DEFAULT_YES),
-                        new Object[]{player},
                         this,
                         player + " may$ gain life equal to " +
                         "the number of Allies he or she controls.") :
@@ -40,7 +39,7 @@ public class Ondu_Cleric {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                final MagicPlayer player = (MagicPlayer)data[0];
+                final MagicPlayer player = event.getPlayer();
                 final int amount =
                         player.getNrOfPermanentsWithSubType(MagicSubType.Ally);
                 if (amount > 0) {
