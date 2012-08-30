@@ -15,7 +15,6 @@ public class Howling_Mine {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player},
                     this,
                     player + " draws a card."):
                 MagicEvent.NONE;
@@ -23,7 +22,7 @@ public class Howling_Mine {
         
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[0];
+            final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicDrawAction(player,1));
         }
     };
