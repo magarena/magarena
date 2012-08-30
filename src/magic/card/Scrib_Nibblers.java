@@ -21,15 +21,14 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTapEvent;
 import magic.model.event.MagicTiming;
-import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
+import magic.model.trigger.MagicLandfallTrigger;
 
 public class Scrib_Nibblers {
-    public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
+    public static final MagicLandfallTrigger T = new MagicLandfallTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
+        public MagicEvent getEvent(final MagicPermanent permanent) {
             final MagicPlayer player = permanent.getController();
-            return (player == played.getController() && played.isLand()) ?
-                new MagicEvent(
+            return new MagicEvent(
                     permanent,
                     player,
                     new MagicSimpleMayChoice(
@@ -37,10 +36,9 @@ public class Scrib_Nibblers {
                             MagicSimpleMayChoice.UNTAP,
                             1,
                             MagicSimpleMayChoice.DEFAULT_YES),
-                    new Object[]{permanent},
+                    MagicEvent.NO_DATA,
                     this,
-                    player + " may$ untap " + permanent + "."):
-                MagicEvent.NONE;
+                    player + " may$ untap " + permanent + ".");
         }
         
         @Override
@@ -50,7 +48,7 @@ public class Scrib_Nibblers {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                game.doAction(new MagicUntapAction((MagicPermanent)data[0]));
+                game.doAction(new MagicUntapAction(event.getPermanent()));
             }
         }        
     };
