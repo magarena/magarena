@@ -23,7 +23,6 @@ public class Saprazzan_Heir {
                                     MagicSimpleMayChoice.DRAW_CARDS,
                                     1,
                                     MagicSimpleMayChoice.DEFAULT_NONE),
-                            new Object[]{player},
                             this,
                             player + " may$ draw three cards."):
                     MagicEvent.NONE;
@@ -36,7 +35,7 @@ public class Saprazzan_Heir {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                game.doAction(new MagicDrawAction((MagicPlayer)data[0],3));
+                game.doAction(new MagicDrawAction(event.getPlayer(),3));
             }
         }
     };
