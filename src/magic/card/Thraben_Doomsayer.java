@@ -56,7 +56,6 @@ public class Thraben_Doomsayer {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player},
                     this,
                     player + " puts a 1/1 white Human " +
                     "creature token onto the battlefield.");
@@ -69,7 +68,7 @@ public class Thraben_Doomsayer {
                 final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicPlayTokenAction(
-                    (MagicPlayer)data[0],
+                    event.getPlayer(),
                     TokenCardDefinitions.get("Human1")));
         }
     };
