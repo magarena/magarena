@@ -19,7 +19,6 @@ public class Falkenrath_Noble {
                     permanent,
                     player,
                     MagicTargetChoice.NEG_TARGET_PLAYER,
-                    new Object[]{player},
                     this,
                     "Target player$ loses 1 life and " + player + " gains 1 life.") :
                 MagicEvent.NONE;
@@ -33,7 +32,7 @@ public class Falkenrath_Noble {
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     game.doAction(new MagicChangeLifeAction(player,-1));
-                    game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],1));
+                    game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
                 }
             });
         }
