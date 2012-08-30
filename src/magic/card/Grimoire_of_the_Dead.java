@@ -99,7 +99,6 @@ public class Grimoire_of_the_Dead {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player},
                     this,
                     "Put all creature cards from all graveyards onto the " +
                     "battlefield under your control. They're black Zombies " +
@@ -111,7 +110,7 @@ public class Grimoire_of_the_Dead {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[0];
+            final MagicPlayer player = event.getPlayer();
             final Collection<MagicTarget> targets =
                     game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS);
             for (final MagicTarget target : targets) {
