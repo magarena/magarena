@@ -23,7 +23,6 @@ public class Triumph_of_Cruelty {
                     new MagicEvent(
                             permanent,
                             player,
-                            new Object[]{player},
                             this,
                             player.getOpponent() + " discards a card " +
                             "if you control the creature with the greatest " +
