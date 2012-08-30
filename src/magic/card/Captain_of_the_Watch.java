@@ -46,7 +46,6 @@ public class Captain_of_the_Watch {
             return new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player},
                     this,
                     player + " puts three 1/1 white Soldier creature tokens onto the battlefield.");
         }
@@ -56,7 +55,7 @@ public class Captain_of_the_Watch {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player=(MagicPlayer)data[0];
+            final MagicPlayer player=event.getPlayer();
             for (int count=3;count>0;count--) {
                 game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Soldier")));
             }
