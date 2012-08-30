@@ -23,7 +23,6 @@ public class Goldenglow_Moth {
                                 MagicSimpleMayChoice.GAIN_LIFE,
                                 3,
                                 MagicSimpleMayChoice.DEFAULT_YES),
-                            new Object[]{player},
                             this,
                             player + " may$ gain 4 life.") :
                     MagicEvent.NONE;
@@ -36,7 +35,7 @@ public class Goldenglow_Moth {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],4));
+                game.doAction(new MagicChangeLifeAction(event.getPlayer(),4));
             }
         }
     };
