@@ -23,7 +23,7 @@ public class Puppeteer_Clique {
                     player,
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD,
                     new MagicGraveyardTargetPicker(true),
-                    new Object[]{player},this,
+                    this,
                     "Put target creature card$ in an opponent's graveyard onto the battlefield under your control. "+
                     "It has haste. At the end of your turn, exile it.");
         }
@@ -33,7 +33,7 @@ public class Puppeteer_Clique {
             event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard card) {
                     game.doAction(new MagicReanimateAction(
-                                (MagicPlayer)data[0],
+                                event.getPlayer(),
                                 card,
                                 MagicPlayCardAction.HASTE_REMOVE_AT_END_OF_YOUR_TURN));
                 }
