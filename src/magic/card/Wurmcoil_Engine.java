@@ -19,7 +19,6 @@ public class Wurmcoil_Engine {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player},
                     this,
                     player + " puts a 3/3 colorless Wurm artifact creature token with deathtouch and "+
                             "a 3/3 colorless Wurm artifact creature token with lifelink onto the battlefield."):
@@ -31,7 +30,7 @@ public class Wurmcoil_Engine {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player=(MagicPlayer)data[0];
+            final MagicPlayer player=event.getPlayer();
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Wurm1")));
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Wurm2")));            
         }
