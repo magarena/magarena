@@ -5,22 +5,20 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
+import magic.model.trigger.MagicLandfallTrigger;
 
 public class Adventuring_Gear {
-    public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
+    public static final MagicLandfallTrigger T = new MagicLandfallTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
+        public MagicEvent getEvent(final MagicPermanent permanent) {
             final MagicPermanent equippedCreature = permanent.getEquippedCreature();
-            final MagicPlayer player = permanent.getController();
-            return (equippedCreature.isValid() &&
-                    player == played.getController() && played.isLand()) ?
+            return equippedCreature.isValid() ?
                 new MagicEvent(
                         permanent,
-                        player,
+                        permanent.getController(),
                         new Object[]{equippedCreature},
                         this,
-                        "Equipped creature gets +2/+2 until end of turn."):
+                        "Equipped creature gets +2/+2 until end of turn.") :
                 MagicEvent.NONE;
         }
         @Override
