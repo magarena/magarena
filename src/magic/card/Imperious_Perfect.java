@@ -49,7 +49,6 @@ public class Imperious_Perfect {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player},
                     this,
                     player + " puts a 1/1 green Elf Warrior creature token onto the battlefield.");
         }
@@ -59,7 +58,7 @@ public class Imperious_Perfect {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicPlayTokenAction((MagicPlayer) data[0], TokenCardDefinitions.get("Elf1")));            
+            game.doAction(new MagicPlayTokenAction(event.getPlayer(), TokenCardDefinitions.get("Elf1")));            
         }
     };
 }
