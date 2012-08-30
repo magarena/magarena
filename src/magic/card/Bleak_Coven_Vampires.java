@@ -19,7 +19,6 @@ public class Bleak_Coven_Vampires {
                     permanent,
                     player,
                     MagicTargetChoice.NEG_TARGET_PLAYER,
-                    new Object[]{player},
                     this,
                     "Target player$ loses 4 life and " +
                     player + " gains 4 life.") :
@@ -36,7 +35,7 @@ public class Bleak_Coven_Vampires {
                     game.doAction(new MagicChangeLifeAction(player,-4));
                 }
             });
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],4));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),4));
         }
     };
 }
