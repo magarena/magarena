@@ -16,7 +16,6 @@ public class Verdant_Force {
             return new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{player},
                         this,
                         player + " puts a 1/1 green Saproling creature token onto the battlefield.");
         }    
@@ -26,7 +25,7 @@ public class Verdant_Force {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Saproling")));
+            game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Saproling")));
         }
     };
 }
