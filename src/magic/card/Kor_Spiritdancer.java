@@ -44,7 +44,6 @@ public class Kor_Spiritdancer {
                                     MagicSimpleMayChoice.DRAW_CARDS,
                                     1,
                                     MagicSimpleMayChoice.DEFAULT_NONE),
-                            new Object[]{player},
                             this,
                             player + " may$ draw a card.") :
                     MagicEvent.NONE;
@@ -53,7 +52,7 @@ public class Kor_Spiritdancer {
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
+                game.doAction(new MagicDrawAction(event.getPlayer(),1));
             }
         }        
     };
