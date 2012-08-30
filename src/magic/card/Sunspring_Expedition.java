@@ -35,7 +35,6 @@ public class Sunspring_Expedition {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player},
                     this,
                     player + " gains 8 life");
         }
@@ -45,7 +44,7 @@ public class Sunspring_Expedition {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],8));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),8));
         }
     };
 }
