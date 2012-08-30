@@ -24,7 +24,6 @@ public class Debtors__Knell {
                         player,
                         MagicTargetChoice.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS,
                         new MagicGraveyardTargetPicker(true),
-                        new Object[]{player},
                         this,
                         "Put target creature card$ in a graveyard onto the battlefield under your control."):
                 MagicEvent.NONE;
@@ -34,7 +33,7 @@ public class Debtors__Knell {
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
             event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard card) {
-                    game.doAction(new MagicReanimateAction((MagicPlayer)data[0],card,MagicPlayCardAction.NONE));
+                    game.doAction(new MagicReanimateAction(event.getPlayer(),card,MagicPlayCardAction.NONE));
                 }
             });
         }
