@@ -18,7 +18,6 @@ public class Voice_of_the_Provinces {
             return new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player},
                     this,
                     player + " puts a 1/1 white Human " +
                     "creature token onto the battlefield.");
@@ -31,7 +30,7 @@ public class Voice_of_the_Provinces {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicPlayTokenAction(
-                    (MagicPlayer)data[0],
+                    event.getPlayer(),
                     TokenCardDefinitions.get("Human1")));
         }        
     };
