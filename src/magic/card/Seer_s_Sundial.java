@@ -8,24 +8,21 @@ import magic.model.action.MagicDrawAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
+import magic.model.trigger.MagicLandfallTrigger;
 
 public class Seer_s_Sundial {
-    public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
+    public static final MagicLandfallTrigger T = new MagicLandfallTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
-            final MagicPlayer player = permanent.getController();
-            return (player == played.getController() && played.isLand()) ?
-                new MagicEvent(
+        public MagicEvent getEvent(final MagicPermanent permanent) {
+            return new MagicEvent(
                     permanent,
-                    player,
+                    permanent.getController(),
                     new MagicMayChoice(
                             "You may pay {2}.",
                             new MagicPayManaCostChoice(MagicManaCost.TWO)),
-                    new Object[]{player},
+                    MagicEvent.NO_DATA,
                     this,
-                    "You may$ pay {2}$. If you do, draw a card.") :
-                MagicEvent.NONE;
+                    "You may$ pay {2}$. If you do, draw a card.");
         }
         
         @Override
@@ -35,7 +32,7 @@ public class Seer_s_Sundial {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
+                game.doAction(new MagicDrawAction(event.getPlayer(),1));
             }
         }        
     };
