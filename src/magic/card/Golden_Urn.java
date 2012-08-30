@@ -33,7 +33,6 @@ public class Golden_Urn {
                             MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
                             1,
                             MagicSimpleMayChoice.DEFAULT_YES),
-                        new Object[]{permanent},
                         this,
                         player + " may$ put a charge counter on " + permanent + "."):
                 MagicEvent.NONE;
@@ -45,7 +44,7 @@ public class Golden_Urn {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.Charge,1,true));
+                game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,1,true));
             }    
         }
     };
@@ -69,13 +68,11 @@ public class Golden_Urn {
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
             final MagicPlayer player = source.getController();
-            final int amount = source.getCounters(MagicCounterType.Charge);
             return new MagicEvent(
                 source,
                 player,
-                new Object[]{player,amount},
                 this,
-                player + " gains " + amount + " life.");
+                player + " gains life equal to the number of charge counters on " + source + ".");
         }
 
         @Override
@@ -84,7 +81,8 @@ public class Golden_Urn {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],(Integer)data[1]));
+            final int amount = event.getPermanent().getCounters(MagicCounterType.Charge);
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),amount));
         }
     };
 }
