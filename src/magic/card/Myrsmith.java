@@ -27,7 +27,6 @@ public class Myrsmith {
                         new MagicMayChoice(
                                 "You may pay {1}.",
                                 new MagicPayManaCostChoice(MagicManaCost.ONE)),
-                        new Object[]{player},
                         this,
                         player + " may$ pay {1}$. If you do, put a 1/1 " +
                         "colorless Myr artifact creature token onto the battlefield."):
@@ -37,7 +36,7 @@ public class Myrsmith {
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Myr1")));
+                game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Myr1")));
             }
         }
     };
