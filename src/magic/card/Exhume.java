@@ -25,7 +25,7 @@ public class Exhume {
                     player,
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
                     new MagicGraveyardTargetPicker(true),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Each player puts a creature card from " +
                     "his or her graveyard onto the battlefield.");
@@ -41,7 +41,7 @@ public class Exhume {
             game.doAction(new MagicMoveCardAction(cardOnStack));
             event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard targetCard) {
-                    final MagicPlayer player = (MagicPlayer)data[1];
+                    final MagicPlayer player = event.getPlayer();
                     game.doAction(new MagicReanimateAction(player,targetCard,MagicPlayCardAction.NONE));
                     game.addEvent(new MagicEvent(
                             cardOnStack.getCard(),
