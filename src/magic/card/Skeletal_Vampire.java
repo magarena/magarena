@@ -45,7 +45,6 @@ public class Skeletal_Vampire {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player},
                     this,
                     player + " puts two 1/1 black Bat creature tokens with flying onto the battlefield.");
         }
@@ -56,7 +55,7 @@ public class Skeletal_Vampire {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPlayer player=(MagicPlayer)data[0];
+            final MagicPlayer player=event.getPlayer();
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Bat")));
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Bat")));            }
     };
@@ -106,7 +105,6 @@ public class Skeletal_Vampire {
             return new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player},
                     this,
                     player + " puts two 1/1 black Bat creature tokens with flying onto the battlefield.");
         }
@@ -117,7 +115,7 @@ public class Skeletal_Vampire {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player=(MagicPlayer)data[0];
+            final MagicPlayer player=event.getPlayer();
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Bat")));
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Bat")));
         }        
