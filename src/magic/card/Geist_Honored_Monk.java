@@ -26,7 +26,6 @@ public class Geist_Honored_Monk {
             return new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player},
                     this,
                     player + " puts two 1/1 white Spirit creature tokens with flying onto the battlefield.");
         }
@@ -37,7 +36,7 @@ public class Geist_Honored_Monk {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[0];
+            final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Spirit2")));
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Spirit2")));
         }        
