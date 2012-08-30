@@ -32,7 +32,6 @@ public class Starlight_Invoker {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player},
                     this,
                     player + " gains 5 life.");
         }
@@ -43,7 +42,7 @@ public class Starlight_Invoker {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],5));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),5));
         }
     };
 }
