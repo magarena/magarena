@@ -27,7 +27,7 @@ public class Doomgape {
                 public void doAction(final MagicPermanent creature) {
                     final int toughness=creature.getToughness();
                     game.doAction(new MagicSacrificeAction(creature));
-                    game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],toughness));
+                    game.doAction(new MagicChangeLifeAction(event.getPlayer(),toughness));
                 }
             });
         }
@@ -41,7 +41,6 @@ public class Doomgape {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{permanent,player},
                         this,
                         "Sacrifice a creature. " + player + 
                           " gains life equal to that creature's toughness."):
@@ -54,14 +53,13 @@ public class Doomgape {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player=(MagicPlayer)data[1];
+            final MagicPlayer player=event.getPlayer();
             if (player.controlsPermanentWithType(MagicType.Creature)) {
                 game.addEvent(new MagicEvent(
-                    (MagicPermanent)data[0],
+                    event.getPermanent(),
                     player,
                     MagicTargetChoice.SACRIFICE_CREATURE,
                     MagicSacrificeTargetPicker.create(),
-                    new Object[]{player},
                     EAT,
                     "Choose a creature to sacrifice$."));
             }
