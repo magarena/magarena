@@ -19,7 +19,6 @@ public class Kozilek__Butcher_of_Truth {
             return new MagicEvent(
                     data.getSource(),
                     player,
-                    new Object[]{player},
                     this,
                     player + " draws four cards.");
         }
@@ -30,7 +29,7 @@ public class Kozilek__Butcher_of_Truth {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicDrawAction((MagicPlayer)data[0],4));
+            game.doAction(new MagicDrawAction(event.getPlayer(),4));
         }
     };
     
