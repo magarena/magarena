@@ -29,7 +29,6 @@ public class Sea_Gate_Loremaster {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player},
                     this,
                     player + " draws a card for each Ally he or she controls.");
         }
@@ -39,7 +38,7 @@ public class Sea_Gate_Loremaster {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[0];
+            final MagicPlayer player = event.getPlayer();
             final int amount =
                     player.getNrOfPermanentsWithSubType(MagicSubType.Ally);
             game.doAction(new MagicDrawAction(player,amount));
