@@ -22,7 +22,7 @@ public class Remand {
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.NEG_TARGET_SPELL,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Counter target spell$. If you do, return that spell card to its owner's hand. Draw a card.");
         }
@@ -38,7 +38,7 @@ public class Remand {
                     game.doAction(new MagicCounterItemOnStackAction(targetSpell,MagicLocationType.OwnersHand));
                 }
             });
-            game.doAction(new MagicDrawAction((MagicPlayer)data[1],1));
+            game.doAction(new MagicDrawAction(event.getPlayer(),1));
         }
     };
 }
