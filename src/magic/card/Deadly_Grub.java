@@ -24,7 +24,6 @@ public class Deadly_Grub {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player},
                     this,
                     player + " puts a 6/1 green Insect creature token " +
                     "with shroud onto the battlefield.") :
@@ -37,7 +36,7 @@ public class Deadly_Grub {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicPlayTokenAction(
-                    (MagicPlayer)data[0],
+                    event.getPlayer(),
                     TokenCardDefinitions.get("Insect2")));
         }
     };
