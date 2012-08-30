@@ -28,7 +28,6 @@ public class Avenger_of_Zendikar {
             return new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player},
                     this,
                     player + " puts a 0/1 green Plant creature token onto " +
                     "the battlefield for each land he or she controls.");
@@ -39,7 +38,7 @@ public class Avenger_of_Zendikar {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[0];
+            final MagicPlayer player = event.getPlayer();
             int amount = player.getNrOfPermanentsWithType(MagicType.Land);
             for (;amount>0;amount--) {
                 game.doAction(new MagicPlayTokenAction(
