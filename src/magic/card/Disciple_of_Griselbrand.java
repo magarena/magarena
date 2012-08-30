@@ -40,7 +40,6 @@ public class Disciple_of_Griselbrand {
                     player,
                     MagicTargetChoice.SACRIFICE_CREATURE,
                     MagicSacrificeTargetPicker.create(),
-                    new Object[]{player},
                     this,
                     "Sacrifice a creature. " + player + " gains life " +
                     "equal to sacrificed creature's toughness.");
@@ -55,7 +54,7 @@ public class Disciple_of_Griselbrand {
                 public void doAction(final MagicPermanent creature) {
                     final int toughness=creature.getToughness();
                     game.doAction(new MagicSacrificeAction(creature));
-                    game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],toughness));
+                    game.doAction(new MagicChangeLifeAction(event.getPlayer(),toughness));
                 }
             });
         }
