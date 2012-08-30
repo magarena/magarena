@@ -31,7 +31,6 @@ public class Goblin_Lackey {
                             "his or her hand onto the battlefield.",
                             MagicTargetChoice.TARGET_GOBLIN_CARD_FROM_HAND),
                         new MagicGraveyardTargetPicker(true),
-                        new Object[]{player},
                         this,
                         player + " may$ put a Goblin permanent card$ from " +
                         "his or her hand onto the battlefield."):
@@ -52,7 +51,7 @@ public class Goblin_Lackey {
                                 MagicLocationType.OwnersHand));
                         game.doAction(new MagicPlayCardAction(
                                 card,
-                                (MagicPlayer)data[0],
+                                event.getPlayer(),
                                 MagicPlayCardAction.NONE));
                     }
                 });
