@@ -31,14 +31,13 @@ public class Godsire {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player},
                     this,
                     "Put an 8/8 Beast creature token that's red, green and white onto the battlefield.");
         }
 
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-            game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Beast8")));
+            game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Beast8")));
         }
     };
 }
