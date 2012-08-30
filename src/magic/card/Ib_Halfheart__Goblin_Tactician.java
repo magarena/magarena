@@ -80,7 +80,6 @@ public class Ib_Halfheart__Goblin_Tactician {
             return new MagicEvent(
                         source,
                         player,
-                        new Object[]{player},
                         this,
                         player + " puts two 1/1 red Goblin creature tokens into play.");
         }
@@ -91,7 +90,7 @@ public class Ib_Halfheart__Goblin_Tactician {
             final MagicEvent event,
             final Object data[],
             final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[0];
+            final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicPlayTokenAction(player, TokenCardDefinitions.get("Goblin1")));
             game.doAction(new MagicPlayTokenAction(player, TokenCardDefinitions.get("Goblin1")));
         }
