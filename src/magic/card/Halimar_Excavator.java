@@ -21,7 +21,6 @@ public class Halimar_Excavator {
                         permanent,
                         player,
                         MagicTargetChoice.NEG_TARGET_PLAYER,
-                        new Object[]{player},
                         this,
                         "Target player$ puts the top X cards of his or her " +
                         "library into his or her graveyard, where X is the " +
@@ -37,7 +36,7 @@ public class Halimar_Excavator {
                 final Object[] choiceResults) {
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer targetPlayer) {
-                    final MagicPlayer player = (MagicPlayer)data[0];
+                    final MagicPlayer player = event.getPlayer();
                     final int amount =
                             player.getNrOfPermanentsWithSubType(MagicSubType.Ally);
                     if (amount > 0) {
