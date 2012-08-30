@@ -18,7 +18,6 @@ public class Bitterblossom {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player},
                     this,
                     player + " loses 1 life and puts a 1/1 black Faerie Rogue creature token with flying " +
                     "onto the battlefield."):
@@ -30,7 +29,7 @@ public class Bitterblossom {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player=(MagicPlayer)data[0];
+            final MagicPlayer player=event.getPlayer();
             game.doAction(new MagicChangeLifeAction(player,-1));
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Faerie Rogue")));
         }
