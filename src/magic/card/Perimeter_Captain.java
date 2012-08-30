@@ -25,7 +25,6 @@ public class Perimeter_Captain {
                                             MagicSimpleMayChoice.GAIN_LIFE,
                                             2,
                                             MagicSimpleMayChoice.DEFAULT_YES),
-                                    new Object[]{player},
                                     this,
                                     player + " may$ gain 2 life.") :
                                 MagicEvent.NONE;
@@ -38,7 +37,7 @@ public class Perimeter_Captain {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],2));
+                game.doAction(new MagicChangeLifeAction(event.getPlayer(),2));
             }
         }
     };
