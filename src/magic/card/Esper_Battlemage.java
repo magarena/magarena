@@ -37,7 +37,6 @@ public class Esper_Battlemage {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player},
                     this,
                     "Prevent the next 2 damage that would be dealt to you this turn.");
         }
@@ -48,7 +47,7 @@ public class Esper_Battlemage {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicPreventDamageAction((MagicPlayer)data[0],2));
+            game.doAction(new MagicPreventDamageAction(event.getPlayer(),2));
         }
     };
 
