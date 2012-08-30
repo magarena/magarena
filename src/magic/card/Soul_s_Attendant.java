@@ -23,7 +23,6 @@ public class Soul_s_Attendant {
                                     MagicSimpleMayChoice.GAIN_LIFE,
                                     1,
                                     MagicSimpleMayChoice.DEFAULT_YES),
-                            new Object[]{player},
                             this,
                             player + " may$ gain 1 life.") :
                     MagicEvent.NONE;
@@ -36,7 +35,7 @@ public class Soul_s_Attendant {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],1));
+                game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
             }            
         }        
     };
