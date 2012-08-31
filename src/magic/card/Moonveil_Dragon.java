@@ -41,7 +41,6 @@ public class Moonveil_Dragon {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source.getController()},
                     this,
                     "Each creature you control gets +1/+0 until end of turn.");
         }
@@ -53,7 +52,7 @@ public class Moonveil_Dragon {
                 final Object[] data,
                 final Object[] choiceResults) {
             final Collection<MagicTarget> targets = game.filterTargets(
-                    (MagicPlayer)data[0],
+                    event.getPlayer(),
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
                 for (final MagicTarget target : targets) {
                     game.doAction(new MagicChangeTurnPTAction((MagicPermanent)target,1,0));
