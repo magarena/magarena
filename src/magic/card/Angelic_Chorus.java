@@ -17,7 +17,7 @@ public class Angelic_Chorus {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{player,otherPermanent},
+                        new Object[]{otherPermanent},
                         this,
                         player + " gains life equal to the toughness of " + otherPermanent + ".") :
                MagicEvent.NONE;
@@ -30,8 +30,8 @@ public class Angelic_Chorus {
                 final Object data[],
                 final Object[] choiceResults) {
             // get toughness here so counters on the creature are considered
-            final int toughness = ((MagicPermanent)data[1]).getToughness();
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],toughness));
+            final int toughness = ((MagicPermanent)data[0]).getToughness();
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),toughness));
         }
     };
 }
