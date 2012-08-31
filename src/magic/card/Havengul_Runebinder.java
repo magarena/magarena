@@ -52,7 +52,6 @@ public class Havengul_Runebinder {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source.getController()},
                     this,
                     "Put a 2/2 black Zombie creature token onto the battlefield, " +
                     "then put a +1/+1 counter on each Zombie creature you control.");
@@ -63,7 +62,7 @@ public class Havengul_Runebinder {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[0];
+            final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicPlayTokenAction(
                     player,
                     TokenCardDefinitions.get("Zombie")));
