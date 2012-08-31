@@ -21,7 +21,6 @@ public class Chronozoa {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player,permanent},
                     this,
                     player + " puts two tokens that are copies of " + permanent + " onto the battlefield.") :
                 MagicEvent.NONE;
@@ -32,8 +31,8 @@ public class Chronozoa {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[0];
-            final MagicPermanent permanent = (MagicPermanent)data[1];
+            final MagicPlayer player = event.getPlayer();
+            final MagicPermanent permanent = event.getPermanent();
             final MagicCard card = MagicCard.createTokenCard(permanent.getCardDefinition(),player);
             game.doAction(new MagicPlayCardAction(card,player,MagicPlayCardAction.NONE));
             game.doAction(new MagicPlayCardAction(card,player,MagicPlayCardAction.NONE));
