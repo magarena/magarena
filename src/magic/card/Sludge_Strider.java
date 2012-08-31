@@ -26,7 +26,6 @@ public class Sludge_Strider {
                                 "You may pay {1}.",
                                 new MagicPayManaCostChoice(MagicManaCost.ONE),
                                 MagicTargetChoice.NEG_TARGET_PLAYER),
-                        new Object[]{permanent.getController()},
                         this,
                         "You may$ pay {1}$. If you do, target player$ loses 1 life and you gain 1 life."):
                 MagicEvent.NONE;
@@ -43,7 +42,7 @@ public class Sludge_Strider {
                         game.doAction(new MagicChangeLifeAction(player,-1));
                     }
                 });
-                game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],1));
+                game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
             }            
         }    
     };
@@ -60,7 +59,6 @@ public class Sludge_Strider {
                                 "You may pay {1}.",
                                 new MagicPayManaCostChoice(MagicManaCost.ONE),
                                 MagicTargetChoice.NEG_TARGET_PLAYER),
-                        new Object[]{permanent.getController()},
                         this,
                         "You may$ pay {1}$. If you do, target player$ loses 1 life and you gain 1 life."):
                 MagicEvent.NONE;
@@ -77,7 +75,7 @@ public class Sludge_Strider {
                         game.doAction(new MagicChangeLifeAction(player,-1));
                     }
                 });
-                game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],1));
+                game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
             }            
         }    
     };
