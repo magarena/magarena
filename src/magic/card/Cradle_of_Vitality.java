@@ -32,7 +32,7 @@ public class Cradle_of_Vitality {
                     new Object[]{amount},
                     this,
                     "You may$ pay {1}{W}$. If you do, put a +1/+1 counter " +
-                        "on target creature$ for each 1 life you gained."):
+                    "on target creature$ for each 1 life you gained."):
                 MagicEvent.NONE;
         }
         @Override
