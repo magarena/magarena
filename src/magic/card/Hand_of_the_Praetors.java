@@ -39,7 +39,6 @@ public class Hand_of_the_Praetors {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{player.getOpponent()},
                         this,
                         player.getOpponent() + " gets a poison counter."):
                 MagicEvent.NONE;
@@ -50,7 +49,7 @@ public class Hand_of_the_Praetors {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangePoisonAction((MagicPlayer)data[0],1));
+            game.doAction(new MagicChangePoisonAction(event.getPlayer().getOpponent(),1));
         }        
     };
 }
