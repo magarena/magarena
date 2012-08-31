@@ -22,7 +22,6 @@ public class Blood_Artist {
                     permanent,
                     controller,
                     MagicTargetChoice.NEG_TARGET_PLAYER,
-                    new Object[]{controller},
                     this,
                     "Target player$ loses 1 life and " +
                     controller + " gains 1 life."):
@@ -40,7 +39,7 @@ public class Blood_Artist {
                     game.doAction(new MagicChangeLifeAction(player,-1));
                 }
             });
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],1));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
         }
     };
 }
