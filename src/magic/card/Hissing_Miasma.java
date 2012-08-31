@@ -17,7 +17,6 @@ public class Hissing_Miasma {
                 new MagicEvent(
                         permanent,
                         controller,
-                        new Object[]{controller},
                         this,
                         controller + " loses 1 life."):
                 MagicEvent.NONE;
@@ -29,7 +28,7 @@ public class Hissing_Miasma {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],-1));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),-1));
         }
     };
 }
