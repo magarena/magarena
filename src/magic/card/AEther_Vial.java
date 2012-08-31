@@ -36,7 +36,6 @@ public class AEther_Vial {
                         player,
                         new MagicMayChoice(
                                 player + " may put a charge counter on " + permanent + "."),
-                        new Object[]{permanent},
                         this,
                         player + " may$ put a charge counter on " + permanent + "."):
                 MagicEvent.NONE;
@@ -48,7 +47,7 @@ public class AEther_Vial {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.Charge,1,true));
+                game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,1,true));
             }    
         }
     };
@@ -79,7 +78,6 @@ public class AEther_Vial {
                     source.getController(),
                     targetChoice,
                     new MagicGraveyardTargetPicker(true),
-                    new Object[]{source.getController()},
                     this,
                     "Put a creature card$ with converted mana cost equal to " +
                     "the number of charge counters on " + source +
@@ -91,7 +89,7 @@ public class AEther_Vial {
             event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard card) {
                     game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
-                    game.doAction(new MagicPlayCardAction(card,(MagicPlayer)data[0],MagicPlayCardAction.NONE));
+                    game.doAction(new MagicPlayCardAction(card,event.getPlayer(),MagicPlayCardAction.NONE));
                 }
             });
         }
