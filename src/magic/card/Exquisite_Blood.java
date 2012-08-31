@@ -20,7 +20,7 @@ public class Exquisite_Blood {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player,amount},
+                    new Object[]{amount},
                     this,
                     player + " gains " + amount + " life."):
                 MagicEvent.NONE;
@@ -32,8 +32,8 @@ public class Exquisite_Blood {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeLifeAction(
-                    (MagicPlayer)data[0],
-                    (Integer)data[1]));
+                    event.getPlayer(),
+                    (Integer)data[0]));
         }
     };
 }
