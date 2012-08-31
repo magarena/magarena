@@ -42,7 +42,6 @@ public class Culling_Dais {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this,
                     "Put a charge counter on " + source + ".");
         }
@@ -53,7 +52,7 @@ public class Culling_Dais {
                 final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
-                    (MagicPermanent)data[0],
+                    event.getPermanent(),
                     MagicCounterType.Charge,
                     1,
                     true));
@@ -79,13 +78,11 @@ public class Culling_Dais {
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
             final MagicPlayer player = source.getController();
-            final int amount = source.getCounters(MagicCounterType.Charge);
             return new MagicEvent(
                 source,
                 player,
-                new Object[]{player,amount},
                 this,
-                player + " draws " + amount + " card(s).");
+                player + " draw a card for each charge counter on " + source + ".");
         }
 
         @Override
@@ -94,9 +91,10 @@ public class Culling_Dais {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
+            final int amount = event.getPermanent().getCounters(MagicCounterType.Charge);
             game.doAction(new MagicDrawAction(
-                    (MagicPlayer)data[0],
-                    (Integer)data[1]));
+                    event.getPlayer(),
+                    amount));
         }
     };
 }
