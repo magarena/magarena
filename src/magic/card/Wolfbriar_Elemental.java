@@ -26,8 +26,8 @@ public class Wolfbriar_Elemental {
             final MagicEvent event,
             final Object[] data,
             final Object[] choiceResults) {
-            final MagicPlayer player=(MagicPlayer)data[0];
-            int count=(Integer)data[1];
+            final MagicPlayer player=event.getPlayer();
+            int count=(Integer)data[0];
             for (;count>0;count--) {
                 game.doAction(new MagicPlayTokenAction(
                         player,
@@ -46,7 +46,7 @@ public class Wolfbriar_Elemental {
                     card,
                     player,
                     new MagicKickerChoice(MagicManaCost.GREEN,true),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "$Play " + card + ". When " + card + " enters the battlefield, " + 
                     "put a 2/2 green Wolf creature token onto the battlefield for each time it was kicked$.");
@@ -67,7 +67,7 @@ public class Wolfbriar_Elemental {
                 final MagicEvent triggerEvent=new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{player,kickerCount},
+                        new Object[]{kickerCount},
                         KICKED,
                         "Put "+kickerCount+" 2/2 green Wolf creature tokens onto the battlefield.");
                 game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(triggerEvent)));
