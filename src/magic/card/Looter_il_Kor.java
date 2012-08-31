@@ -20,7 +20,6 @@ public class Looter_il_Kor {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{player,permanent},
                         this,
                         player + " draws a card, then discards a card."):
                 MagicEvent.NONE;
@@ -31,9 +30,9 @@ public class Looter_il_Kor {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[0];
+            final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicDrawAction(player,1));
-            game.addEvent(new MagicDiscardEvent((MagicPermanent)data[1],player,1,false));
+            game.addEvent(new MagicDiscardEvent(event.getPermanent(),player,1,false));
         }
     };
 }
