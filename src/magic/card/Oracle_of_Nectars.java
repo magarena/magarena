@@ -30,7 +30,7 @@ public class Oracle_of_Nectars {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player,amount},
+                    new Object[]{amount},
                     this,
                     player + " gains " + amount + " life.");
         }
@@ -40,8 +40,7 @@ public class Oracle_of_Nectars {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPlayer player=(MagicPlayer)data[0];
-            game.doAction(new MagicChangeLifeAction(player,(Integer)data[1]));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),(Integer)data[0]));
         }
     };
 }
