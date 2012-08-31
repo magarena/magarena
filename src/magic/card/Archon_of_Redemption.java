@@ -16,7 +16,6 @@ public class Archon_of_Redemption {
             return new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player,permanent},
                     this,
                     player + " gains life equal to " + permanent + "'s power.");
         }
@@ -26,8 +25,7 @@ public class Archon_of_Redemption {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent permanent=(MagicPermanent)data[1];
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],permanent.getPower()));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),event.getPermanent().getPower()));
         }        
     };
 
@@ -42,7 +40,7 @@ public class Archon_of_Redemption {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{player,otherPermanent},
+                        new Object[]{otherPermanent},
                         this,
                         player + " gains life equal to the power of "+otherPermanent+'.'):
                 MagicEvent.NONE;
@@ -53,8 +51,8 @@ public class Archon_of_Redemption {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent permanent=(MagicPermanent)data[1];
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],permanent.getPower()));
+            final MagicPermanent permanent=(MagicPermanent)data[0];
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),permanent.getPower()));
         }        
     };
 }
