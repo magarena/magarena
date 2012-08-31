@@ -21,7 +21,6 @@ public class Commander_s_Authority {
                 new MagicEvent(
                         enchanted,
                         controller,
-                        new Object[]{controller},
                         this,
                         controller + " puts a 1/1 white Human " +
                         "creature token onto the battlefield.") :
@@ -34,7 +33,7 @@ public class Commander_s_Authority {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicPlayTokenAction(
-                    (MagicPlayer)data[0],
+                    event.getPlayer(),
                     TokenCardDefinitions.get("Human1")));
         }
     };
