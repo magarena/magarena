@@ -17,10 +17,9 @@ public class Nemesis_of_Reason {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{player.getOpponent()},
                         this,
                         player.getOpponent() + " puts the top ten cards " +
-                                "of his or her library into his or her graveyard."):
+                        "of his or her library into his or her graveyard."):
                 MagicEvent.NONE;
         }
         
@@ -30,7 +29,7 @@ public class Nemesis_of_Reason {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicMillLibraryAction((MagicPlayer)data[0],10));
+            game.doAction(new MagicMillLibraryAction(event.getPlayer().getOpponent(),10));
         }
     };
 }
