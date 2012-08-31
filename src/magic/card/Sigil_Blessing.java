@@ -27,7 +27,7 @@ public class Sigil_Blessing {
                     player,
                     MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
                     MagicPumpTargetPicker.create(),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Until end of turn, target creature$ you control gets +3/+3 and other creatures you control get +1/+1.");
         }
@@ -41,7 +41,7 @@ public class Sigil_Blessing {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     final Collection<MagicTarget> targets=game.filterTargets(
-                            (MagicPlayer)data[1],
+                            event.getPlayer(),
                             MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
                     for (final MagicTarget target : targets) {
                         final MagicPermanent permanent=(MagicPermanent)target;
