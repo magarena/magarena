@@ -29,7 +29,6 @@ public class Tuktuk_Scrapper {
                                 player + " may destroy target artifact.",
                                 MagicTargetChoice.NEG_TARGET_ARTIFACT),
                         new MagicDestroyTargetPicker(false),
-                        new Object[]{player,permanent},
                         this,
                         player + " may$ destroy target artifact$.") :
                 MagicEvent.NONE;
@@ -46,7 +45,7 @@ public class Tuktuk_Scrapper {
                     public void doAction(final MagicPermanent target) {
                         game.doAction(new MagicDestroyAction(target));
                         final MagicCard card = target.getCard();
-                        final MagicPlayer player = (MagicPlayer)data[0];
+                        final MagicPlayer player = event.getPlayer();
                         // only deal damage when the target is destroyed
                         if (card.getOwner().getGraveyard().contains(card)
                             ||
@@ -56,7 +55,7 @@ public class Tuktuk_Scrapper {
                                     player.getNrOfPermanentsWithSubType(MagicSubType.Ally);
                             if (amount > 0) {
                                 final MagicDamage damage = new MagicDamage(
-                                        (MagicPermanent)data[1],
+                                        event.getPermanent(),
                                         card.getOwner(),
                                         amount,
                                         false);
