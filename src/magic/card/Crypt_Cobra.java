@@ -17,7 +17,6 @@ public class Crypt_Cobra {
                 return new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{opponent},
                         this,
                         opponent + " gets a poison counter.");
             }
@@ -30,7 +29,7 @@ public class Crypt_Cobra {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangePoisonAction((MagicPlayer)data[0],1));
+            game.doAction(new MagicChangePoisonAction(event.getPlayer().getOpponent(),1));
         }
     };
 }
