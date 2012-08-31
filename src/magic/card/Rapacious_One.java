@@ -23,7 +23,7 @@ public class Rapacious_One {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{player,amount},
+                        new Object[]{amount},
                         this,
                         amount > 1 ?
                                 "Put " + amount + " 0/1 colorless Eldrazi Spawn " +
@@ -40,8 +40,8 @@ public class Rapacious_One {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            for (int count=(Integer)data[1];count>0;count--) {
-                game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Eldrazi Spawn")));
+            for (int count=(Integer)data[0];count>0;count--) {
+                game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Eldrazi Spawn")));
             }
             
         }        
