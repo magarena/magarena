@@ -24,10 +24,10 @@ public class Chastise {
                     player,
                     MagicTargetChoice.NEG_TARGET_ATTACKING_CREATURE,
                     new MagicDestroyTargetPicker(false),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
-                    "Destroy target attacking creature$. " + player +
-                            " gains life equal to its power.");
+                    "Destroy target attacking creature$. " + 
+                    player + " gains life equal to its power.");
         }
         @Override
         public void executeEvent(
@@ -41,7 +41,7 @@ public class Chastise {
                 public void doAction(final MagicPermanent creature) {
                     final int power=creature.getPower();
                     game.doAction(new MagicDestroyAction(creature));
-                    game.doAction(new MagicChangeLifeAction((MagicPlayer)data[1],power));
+                    game.doAction(new MagicChangeLifeAction(event.getPlayer(),power));
                 }
             });
         }
