@@ -34,7 +34,6 @@ public class Quicksilver_Amulet {
                     source.getController(),
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_HAND,
                     new MagicGraveyardTargetPicker(true),
-                    new Object[]{source.getController()},
                     this,
                     "Put a creature card$ from your hand onto the battlefield.");
         }
@@ -48,7 +47,7 @@ public class Quicksilver_Amulet {
             event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard card) {
                     game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
-                    game.doAction(new MagicPlayCardAction(card,(MagicPlayer)data[0],MagicPlayCardAction.NONE));
+                    game.doAction(new MagicPlayCardAction(card,event.getPlayer(),MagicPlayCardAction.NONE));
                 }
             });
         }
