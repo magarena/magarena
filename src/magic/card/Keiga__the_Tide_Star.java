@@ -22,7 +22,6 @@ public class Keiga__the_Tide_Star {
                         permanent.getController(),
                         MagicTargetChoice.TARGET_CREATURE,
                         MagicExileTargetPicker.create(),
-                        new Object[]{permanent.getController()},
                         this,
                         "Gain control of target creature$."):
                 MagicEvent.NONE;
@@ -32,7 +31,7 @@ public class Keiga__the_Tide_Star {
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    game.doAction(new MagicGainControlAction((MagicPlayer)data[0],creature));
+                    game.doAction(new MagicGainControlAction(event.getPlayer(),creature));
                 }
             });
         }
