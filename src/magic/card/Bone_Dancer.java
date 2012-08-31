@@ -30,7 +30,6 @@ public class Bone_Dancer {
                                 player + " may put the top creature card of " +
                                 opponent + "'s graveyard onto the " +
                                 "battlefield under his or her control."),
-                        new Object[]{player,opponent,permanent},
                         this,
                         player + " may$ put the top creature card of " +
                         opponent + "'s graveyard onto the " +
@@ -46,18 +45,18 @@ public class Bone_Dancer {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                final MagicPlayer opponent = (MagicPlayer)data[1];
+                final MagicPlayer opponent = event.getPlayer().getOpponent();
                 final List<MagicTarget> targets =
                         game.filterTargets(opponent,MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD);
                 if (targets.size() > 0) {
                     final MagicCard card = (MagicCard)targets.get(targets.size()-1);
                     game.doAction(new MagicReanimateAction(
-                            (MagicPlayer)data[0],
+                            event.getPlayer(),
                             card,
                             MagicPlayCardAction.NONE));
                 }
                 game.doAction(new MagicChangeStateAction(
-                        (MagicPermanent)data[2],
+                        event.getPermanent(),
                         MagicPermanentState.NoCombatDamage,true));
             }
         }
