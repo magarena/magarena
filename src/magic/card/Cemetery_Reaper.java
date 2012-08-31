@@ -70,7 +70,6 @@ public class Cemetery_Reaper {
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS,
                     // exiling a high cost card is good here
                     new MagicGraveyardTargetPicker(true),
-                    new Object[]{source.getController()},
                     this,
                     "Exile target creature card from a graveyard. " +
                     "Put a 2/2 black Zombie creature token onto the battlefield.");
@@ -83,7 +82,7 @@ public class Cemetery_Reaper {
                 final Object[] choiceResults) {
             event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard card) {
-                    final MagicPlayer player=(MagicPlayer)data[0];
+                    final MagicPlayer player=event.getPlayer();
                     game.doAction(new MagicRemoveCardAction(
                             card,
                             MagicLocationType.Graveyard));
