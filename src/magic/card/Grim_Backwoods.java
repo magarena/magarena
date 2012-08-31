@@ -47,7 +47,6 @@ public class Grim_Backwoods {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source.getController()},
                     this,
                     source.getController() + " draws a card.");
         }
@@ -57,7 +56,7 @@ public class Grim_Backwoods {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
+            game.doAction(new MagicDrawAction(event.getPlayer(),1));
         }
     };
 }
