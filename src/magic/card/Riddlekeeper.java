@@ -18,7 +18,6 @@ public class Riddlekeeper {
                 new MagicEvent(
                         permanent,
                         controller,
-                        new Object[]{controller},
                         this,
                         controller + " puts the top two cards of his or her library into his or her graveyard."):
                 MagicEvent.NONE;
@@ -30,7 +29,7 @@ public class Riddlekeeper {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicMillLibraryAction((MagicPlayer)data[0],2));
+            game.doAction(new MagicMillLibraryAction(event.getPlayer(),2));
         }
     };
 }
