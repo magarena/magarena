@@ -33,7 +33,6 @@ public class Legacy_s_Allure {
                         player,
                         new MagicMayChoice(
                                 player + " may put a treasure counter on " + permanent + "."),
-                        new Object[]{permanent},
                         this,
                         player + " may$ put a treasure counter on " + permanent + "."):
                 MagicEvent.NONE;
@@ -45,7 +44,7 @@ public class Legacy_s_Allure {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.Charge,1,true));
+                game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,1,true));
             }    
         }
     };
@@ -75,7 +74,6 @@ public class Legacy_s_Allure {
                     source.getController(),
                     targetChoice,
                     MagicExileTargetPicker.create(),
-                    new Object[]{source.getController()},
                     this,
                     "Gain control of target creature$ with power less than or " +
                     "equal to the number of treasure counters on " + source + ".");
@@ -85,7 +83,7 @@ public class Legacy_s_Allure {
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    game.doAction(new MagicGainControlAction((MagicPlayer)data[0],creature));
+                    game.doAction(new MagicGainControlAction(event.getPlayer(),creature));
                 }
             });
         }
