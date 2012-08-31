@@ -28,7 +28,6 @@ public class Wanderwine_Prophets {
                             "If you do, take an extra turn after this one.",
                             MagicTargetChoice.SACRIFICE_MERFOLK),
                         MagicSacrificeTargetPicker.create(),
-                        new Object[]{permanent.getController()},
                         this,
                         "You may$ sacrifice a Merfolk$. " +
                         "If you do, take an extra turn after this one"):
@@ -45,7 +44,7 @@ public class Wanderwine_Prophets {
                 event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
                         game.doAction(new MagicSacrificeAction(creature));
-                        game.doAction(new MagicChangeExtraTurnsAction((MagicPlayer)data[0],1));
+                        game.doAction(new MagicChangeExtraTurnsAction(event.getPlayer(),1));
                     }
                 });
             } 
