@@ -18,7 +18,7 @@ public class Ageless_Entity {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{permanent,amount},
+                    new Object[]{amount},
                     this,
                     amount > 1 ?
                         "Put " + amount + " +1/+1 counters on " + permanent + "." :
@@ -32,9 +32,9 @@ public class Ageless_Entity {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
-                    (MagicPermanent)data[0],
+                    event.getPermanent(),
                     MagicCounterType.PlusOne,
-                    (Integer)data[1],
+                    (Integer)data[0],
                     true));
         }
     };
