@@ -44,7 +44,6 @@ public class Mistbind_Clique {
                     player,
                     championChoice,
                     MagicExileTargetPicker.create(),
-                    new Object[]{permanent,player.getOpponent()},
                     this,
                     "You may$ exile another Faerie you control$. " +
                     "If you don't, sacrifice " + permanent + ".");
@@ -55,20 +54,20 @@ public class Mistbind_Clique {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent permanent = (MagicPermanent)data[0];
+            final MagicPermanent permanent = event.getPermanent();
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
                         game.doAction(new MagicExileUntilThisLeavesPlayAction(permanent,creature));
                     }
                 });
-                final Collection<MagicTarget> targets =
-                        game.filterTargets((MagicPlayer)data[1],
+                final Collection<MagicTarget> targets = game.filterTargets(
+                        event.getPlayer().getOpponent(),
                         MagicTargetFilter.TARGET_LAND_YOU_CONTROL);
-                    for (final MagicTarget target : targets) {
-                        final MagicPermanent land = (MagicPermanent)target;
-                        game.doAction(new MagicTapAction(land,true));
-                    }
+                for (final MagicTarget target : targets) {
+                    final MagicPermanent land = (MagicPermanent)target;
+                    game.doAction(new MagicTapAction(land,true));
+                }
             } else {
                 game.doAction(new MagicSacrificeAction(permanent));
             }
@@ -84,7 +83,7 @@ public class Mistbind_Clique {
                 return new MagicEvent(
                         permanent,
                         permanent.getController(),
-                        new Object[]{exiledCard,permanent.getController()},
+                        new Object[]{exiledCard},
                         this,
                         "Return " + exiledCard + " to the battlefield");
             }
