@@ -34,7 +34,6 @@ public class Elder_of_Laurels {
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
                     MagicPumpTargetPicker.create(),
-                    new Object[]{source.getController()},
                     this,
                     "Target creature gets +X/+X until end of turn, where X " +
                     "is the number of creatures " + source.getController() + " controls.");
@@ -47,7 +46,7 @@ public class Elder_of_Laurels {
                 final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    final int amount = ((MagicPlayer)data[0]).getNrOfPermanentsWithType(MagicType.Creature);
+                    final int amount = event.getPlayer().getNrOfPermanentsWithType(MagicType.Creature);
                     game.doAction(new MagicChangeTurnPTAction(creature,amount,amount));
                 }
             });
