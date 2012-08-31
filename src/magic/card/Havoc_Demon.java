@@ -21,7 +21,6 @@ public class Havoc_Demon {
                 new MagicEvent(
                         permanent,
                         permanent.getController(),
-                        new Object[]{permanent.getController()},
                         this,
                         "All creatures get -5/-5 until end of turn."):
                 MagicEvent.NONE;
@@ -33,7 +32,7 @@ public class Havoc_Demon {
                 final Object data[],
                 final Object[] choiceResults) {
             final Collection<MagicTarget> targets=
-                game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_CREATURE);
+                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE);
             for (final MagicTarget target : targets) {
                 game.doAction(new MagicChangeTurnPTAction((MagicPermanent)target,-5,-5));
             }
