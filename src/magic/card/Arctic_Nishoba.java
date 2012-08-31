@@ -12,19 +12,14 @@ public class Arctic_Nishoba {
     public static final MagicWhenLeavesPlayTrigger T2 = new MagicWhenLeavesPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            if (permanent == data) {
-                final MagicPlayer player = permanent.getController();
-                final int amount = permanent.getCounters(MagicCounterType.Charge) * 2;
-                if (amount > 0) {
-                return new MagicEvent(
+            final MagicPlayer player = permanent.getController();
+            return (permanent == data) ?
+                new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player,amount},
                     this,
-                    player + " gains " + amount + " life.");
-                }
-            }
-            return MagicEvent.NONE;
+                    player + " gains 2 life for each age counter on " + permanent + "."):
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(
@@ -32,9 +27,10 @@ public class Arctic_Nishoba {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
+            final int amount = event.getPermanent().getCounters(MagicCounterType.Charge) * 2;
             game.doAction(new MagicChangeLifeAction(
-                    (MagicPlayer)data[0],
-                    (Integer)data[1]));
+                    event.getPlayer(),
+                    amount));
         }
     };
 }
