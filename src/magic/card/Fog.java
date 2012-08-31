@@ -18,7 +18,7 @@ public class Fog {
             return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Prevent all combat damage that would be dealt this turn.");
         }
@@ -28,8 +28,8 @@ public class Fog {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[1];
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
+            final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicChangePlayerStateAction(player,MagicPlayerState.PreventAllCombatDamage,true));
             game.doAction(new MagicChangePlayerStateAction(player.getOpponent(),MagicPlayerState.PreventAllCombatDamage,true));
         }
