@@ -19,7 +19,7 @@ public class Proper_Burial {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player,toughness},
+                    new Object[]{toughness},
                     this,
                     player + " gains " + toughness + " life.") :
                 MagicEvent.NONE;
@@ -31,8 +31,8 @@ public class Proper_Burial {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeLifeAction(
-                    (MagicPlayer)data[0],
-                    (Integer)data[1]));
+                    event.getPlayer(),
+                    (Integer)data[0]));
         }
     };
 }
