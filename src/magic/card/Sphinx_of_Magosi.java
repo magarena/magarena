@@ -33,7 +33,6 @@ public class Sphinx_of_Magosi {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player,source},
                     this,
                     "Draw a card, then put a +1/+1 counter on " + source + ".");
         }
@@ -44,8 +43,8 @@ public class Sphinx_of_Magosi {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
-            game.doAction(new MagicChangeCountersAction((MagicPermanent)data[1],MagicCounterType.PlusOne,1,true));
+            game.doAction(new MagicDrawAction(event.getPlayer(),1));
+            game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,1,true));
         }
     };
 }
