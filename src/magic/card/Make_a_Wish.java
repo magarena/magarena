@@ -20,7 +20,7 @@ public class Make_a_Wish {
             return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
-                    new Object[]{player,cardOnStack},
+                    new Object[]{cardOnStack},
                     this,
                     "Return two cards at random from your graveyard to your hand.");
         }
@@ -30,8 +30,8 @@ public class Make_a_Wish {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[0];
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[1];
+            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
+            final MagicPlayer player = event.getPlayer();
             final MagicCardList cards = player.getGraveyard();
             int actualAmount = Math.min(cards.size(),2);
             for (;actualAmount>0;actualAmount--) {
