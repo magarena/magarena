@@ -17,7 +17,7 @@ public class Angel_s_Mercy {
             return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     player + " gains 7 life.");
         }
@@ -28,7 +28,7 @@ public class Angel_s_Mercy {
                 final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[1],7));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),7));
         }
     };
 }
