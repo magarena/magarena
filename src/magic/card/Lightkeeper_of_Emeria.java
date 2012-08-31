@@ -25,7 +25,7 @@ public class Lightkeeper_of_Emeria {
             final MagicEvent event,
             final Object[] data,
             final Object[] choiceResults) {
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],(Integer)data[1]));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),(Integer)data[0]));
         }
     };
 
@@ -38,7 +38,7 @@ public class Lightkeeper_of_Emeria {
                     card,
                     player,
                     new MagicKickerChoice(MagicManaCost.WHITE,true),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "$Play " + card + ". When " + card + " enters the battlefield, " + 
                     player + " gains 2 life for each time it was kicked$.");
@@ -60,7 +60,7 @@ public class Lightkeeper_of_Emeria {
                 final MagicEvent triggerEvent=new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player,life},
+                    new Object[]{life},
                     KICKED,
                     player + " gains " + life + " life."
                 );
