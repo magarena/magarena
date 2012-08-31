@@ -23,8 +23,7 @@ public class Shriekgeist {
                     damage.isCombat()) ?
                 new MagicEvent(
                         permanent,
-                        player,
-                        new Object[]{target},
+                        (MagicPlayer)target,
                         this,
                         target + " puts the top two cards of " +
                         "his or her library into his or her graveyard."):
@@ -36,7 +35,7 @@ public class Shriekgeist {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicMillLibraryAction((MagicPlayer)data[0],2));
+            game.doAction(new MagicMillLibraryAction(event.getPlayer(),2));
         }
     };
 }
