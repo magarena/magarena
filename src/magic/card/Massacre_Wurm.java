@@ -46,7 +46,6 @@ public class Massacre_Wurm {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{otherController},
                         this,
                         "Your opponent loses 2 life."):
                 MagicEvent.NONE;
@@ -57,7 +56,7 @@ public class Massacre_Wurm {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],-2));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer().getOpponent(),-2));
         }
     };
 }
