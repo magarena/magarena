@@ -27,7 +27,7 @@ public class Traitorous_Blood {
                     player,
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     MagicExileTargetPicker.create(),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Gain control of target creature$ until end of turn. Untap it. " +
                     "It gains trample and haste until end of turn.");
@@ -38,7 +38,7 @@ public class Traitorous_Blood {
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    game.doAction(new MagicGainControlAction((MagicPlayer)data[1],creature,MagicStatic.UntilEOT));
+                    game.doAction(new MagicGainControlAction(event.getPlayer(),creature,MagicStatic.UntilEOT));
                     game.doAction(new MagicUntapAction(creature));
                     game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Trample));
                     game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Haste));
