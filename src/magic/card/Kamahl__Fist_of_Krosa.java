@@ -57,7 +57,6 @@ public class Kamahl__Fist_of_Krosa {
                     source,
                     source.getController(),
                     MagicTargetChoice.TARGET_LAND,
-                    MagicEvent.NO_DATA,
                     this,
                     "Target land$ becomes a 1/1 creature until end of turn.");
         }
@@ -92,7 +91,6 @@ public class Kamahl__Fist_of_Krosa {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source.getController()},
                     this,
                     "Creatures " + source.getController() +
                     " controls get +3/+3 and gain trample until end of turn.");
@@ -105,7 +103,7 @@ public class Kamahl__Fist_of_Krosa {
                 final Object[] data,
                 final Object[] choiceResults) {
             final Collection<MagicTarget> targets =
-                    game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+                    game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
                 for (final MagicTarget target : targets) {
                     final MagicPermanent creature = (MagicPermanent)target;
                     game.doAction(new MagicChangeTurnPTAction(creature,3,3));
