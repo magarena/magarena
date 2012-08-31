@@ -48,7 +48,6 @@ public class Ezuri__Renegade_Leader {
                     source.getController(),
                     targetChoice,
                     MagicRegenerateTargetPicker.getInstance(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Regenerate another target Elf$.");
         }
