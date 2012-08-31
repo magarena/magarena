@@ -40,7 +40,6 @@ public class Dwarven_Driller {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_LAND,
                     new MagicDestroyTargetPicker(false),
-                    new Object[]{source.getController()},
                     this,
                     "Destroy target land$ unless its controller has " +
                     source + " deal 2 damage to him or her.");
@@ -61,7 +60,7 @@ public class Dwarven_Driller {
                             new MagicMayChoice(
                                     controller + " may have " +
                                     event.getSource() + " deal 2 damage to him or her."),
-                            new Object[]{controller,permanent},
+                            new Object[]{permanent},
                             EVENT_ACTION,
                             controller + " may$ have " +
                             event.getSource() + " deal 2 damage to him or her."));
@@ -78,12 +77,12 @@ public class Dwarven_Driller {
                 if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                     final MagicDamage damage = new MagicDamage(
                             event.getSource(),
-                            (MagicPlayer)data[0],
+                            event.getPlayer(),
                             2,
                             false);
                     game.doAction(new MagicDealDamageAction(damage));
                 } else {
-                    game.doAction(new MagicDestroyAction((MagicPermanent)data[1]));
+                    game.doAction(new MagicDestroyAction((MagicPermanent)data[0]));
                 }
             }
         };
