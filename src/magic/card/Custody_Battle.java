@@ -23,12 +23,11 @@ public class Custody_Battle {
                         enchanted,
                         player,
                         new MagicMayChoice(
-                                "You may sacrifice a land. If you don't, " +
+                                player + " may sacrifice a land. If you don't, " +
                                 opponent + " gains control of " + enchanted + ".",
                                 MagicTargetChoice.SACRIFICE_LAND),
-                        new Object[]{opponent},
                         this,
-                        "You may$ sacrifice a land$. If you don't, " +
+                        player + " may$ sacrifice a land$. If you don't, " +
                         opponent + " gains control of " + enchanted + ".") :
                 MagicEvent.NONE;
         }
@@ -45,7 +44,9 @@ public class Custody_Battle {
                     }
                 });
             } else {
-                game.doAction(new MagicGainControlAction((MagicPlayer)data[0],(MagicPermanent)event.getSource()));
+                game.doAction(new MagicGainControlAction(
+                            event.getPlayer().getOpponent(),
+                            event.getPermanent()));
             }
         }
     };
