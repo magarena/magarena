@@ -18,7 +18,6 @@ public class Thresher_Beast {
                     new MagicEvent(
                             permanent,
                             player,
-                            new Object[]{permanent,player.getOpponent()},
                             this,
                             player.getOpponent() + " sacrifices a land."):
                     MagicEvent.NONE;
@@ -30,10 +29,10 @@ public class Thresher_Beast {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer opponent = (MagicPlayer)data[1];
+            final MagicPlayer opponent = event.getPlayer().getOpponent();
             if (opponent.controlsPermanentWithType(MagicType.Land)) {
                 game.addEvent(new MagicSacrificePermanentEvent(
-                    (MagicPermanent)data[0],
+                    event.getPermanent(),
                     opponent,
                     MagicTargetChoice.SACRIFICE_LAND));
             }
