@@ -48,7 +48,6 @@ public class Ashenmoor_Liege {
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
-                    new Object[]{targetPlayer},
                     this,
                     targetPlayer + " loses 4 life."):
                 MagicEvent.NONE;
@@ -60,7 +59,7 @@ public class Ashenmoor_Liege {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],-4));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer().getOpponent(),-4));
         }
     };
 }
