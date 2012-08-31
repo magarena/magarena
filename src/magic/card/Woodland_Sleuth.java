@@ -22,7 +22,6 @@ public class Woodland_Sleuth {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player,permanent},
                     this,
                     "Return a creature card at random from your graveyard to your hand.") :
                 MagicEvent.NONE;
@@ -33,11 +32,11 @@ public class Woodland_Sleuth {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[0];
+            final MagicPlayer player = event.getPlayer();
             final List<MagicTarget> targets =
                     game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD);
             if (targets.size() > 0) {
-                final MagicPermanent permanent = (MagicPermanent)data[1];
+                final MagicPermanent permanent = event.getPermanent();
                 final magic.MersenneTwisterFast rng = 
                         new magic.MersenneTwisterFast(permanent.getId() + player.getId());
                 final int index = rng.nextInt(targets.size());
