@@ -27,7 +27,6 @@ public class Charmbreaker_Devils {
                     new MagicEvent(
                             permanent,
                             player,
-                            new Object[]{player,permanent},
                             this,
                             "Return an instant or sorcery card at random " +
                                     "from your graveyard to your hand.") :
@@ -39,11 +38,11 @@ public class Charmbreaker_Devils {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[0];
+            final MagicPlayer player = event.getPlayer();
             final List<MagicTarget> targets =
                     game.filterTargets(player,MagicTargetFilter.TARGET_INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD);
             if (targets.size() > 0) {
-                final MagicPermanent permanent = (MagicPermanent)data[1];
+                final MagicPermanent permanent = event.getPermanent();
                 final magic.MersenneTwisterFast rng = 
                         new magic.MersenneTwisterFast(permanent.getId() + player.getId());
                 final int index = rng.nextInt(targets.size());
@@ -63,7 +62,6 @@ public class Charmbreaker_Devils {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{permanent},
                     this,
                     permanent + " gets +4/+0 until end of turn."):
                 MagicEvent.NONE;
@@ -74,7 +72,7 @@ public class Charmbreaker_Devils {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeTurnPTAction((MagicPermanent)data[0],4,0));
+            game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),4,0));
         }
     };
 }
