@@ -34,15 +34,14 @@ public class Myr_Propagator {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player,source},
                     this,
                     player + " puts a token that's a copy of " + source + " onto the battlefield.");
         }
 
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[0];
-            final MagicPermanent permanent = (MagicPermanent)data[1];
+            final MagicPlayer player = event.getPlayer();
+            final MagicPermanent permanent = event.getPermanent();
             final MagicCard card = MagicCard.createTokenCard(permanent.getCardDefinition(),player);
             game.doAction(new MagicPlayCardAction(card,player,MagicPlayCardAction.NONE));
         }
