@@ -30,7 +30,6 @@ public class Murasa_Pyromancer {
                                 MagicTargetChoice.NEG_TARGET_CREATURE),
                         // estimated. Amount of damage can be different on resolution
                         new MagicDamageTargetPicker(player.getNrOfPermanentsWithSubType(MagicSubType.Ally)),
-                        new Object[]{player,permanent},
                         this,
                         player + " may$ have " + permanent + " deal " +
                         "damage to target creature$ equal to the " +
@@ -47,12 +46,12 @@ public class Murasa_Pyromancer {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
-                        final MagicPlayer player = (MagicPlayer)data[0];
+                        final MagicPlayer player = event.getPlayer();
                         final int amount =
                                 player.getNrOfPermanentsWithSubType(MagicSubType.Ally);
                         if (amount > 0) {
                             final MagicDamage damage = new MagicDamage(
-                                    (MagicPermanent)data[1],
+                                    event.getPermanent(),
                                     creature,
                                     amount,
                                     false);
