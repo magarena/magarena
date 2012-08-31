@@ -17,7 +17,6 @@ public class Kokusho__the_Evening_Star {
                 new MagicEvent(
                         permanent,
                         permanent.getController(),
-                        new Object[]{permanent.getController()},
                         this,
                         "Your opponent loses 5 life. You gain 5 life."):
                 MagicEvent.NONE;
@@ -28,7 +27,7 @@ public class Kokusho__the_Evening_Star {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player=(MagicPlayer)data[0];
+            final MagicPlayer player=event.getPlayer();
             game.doAction(new MagicChangeLifeAction(player.getOpponent(),-5));
             game.doAction(new MagicChangeLifeAction(player,5));
         }
