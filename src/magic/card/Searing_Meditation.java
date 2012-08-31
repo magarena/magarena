@@ -29,7 +29,6 @@ public class Searing_Meditation {
                             new MagicPayManaCostChoice(MagicManaCost.TWO),
                             MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER),
                             new MagicDamageTargetPicker(2),
-                    new Object[]{permanent},
                     this,
                     "You may$ pay {2}$. If you do, " + permanent + " deals 2 " +
                     "damage to target creature or player$."):
@@ -44,7 +43,7 @@ public class Searing_Meditation {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTarget(game,choiceResults,2,new MagicTargetAction() {
                     public void doAction(final MagicTarget target) {
-                        final MagicDamage damage = new MagicDamage((MagicPermanent)data[0],target,2,false);
+                        final MagicDamage damage = new MagicDamage(event.getPermanent(),target,2,false);
                         game.doAction(new MagicDealDamageAction(damage));
                     }
                 });
