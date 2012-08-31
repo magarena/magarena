@@ -20,7 +20,6 @@ public class Massacre_Wurm {
             return new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player.getOpponent()},
                     this,
                     "Creatures your opponent controls get -2/-2 until end of turn.");
         }
@@ -31,7 +30,7 @@ public class Massacre_Wurm {
                 final Object data[],
                 final Object[] choiceResults) {
             final Collection<MagicTarget> targets=
-                game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+                game.filterTargets(event.getPlayer().getOpponent(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicTarget target : targets) {
                 game.doAction(new MagicChangeTurnPTAction((MagicPermanent)target,-2,-2));
             }
