@@ -27,7 +27,7 @@ public class Sphinx_of_Lost_Truths {
                     card,
                     player,
                     new MagicKickerChoice(MagicManaCost.ONE_BLUE,false),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "$Play " + card + ". When " + card + 
                     " enters the battlefield, draw three cards. Then if it wasn't kicked$, discard three cards.");
@@ -52,10 +52,11 @@ public class Sphinx_of_Lost_Truths {
             return new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player,permanent,kicked},
+                    new Object[]{kicked},
                     this,
-                    kicked ? player + " draws three cards." :
-                        player + " draws three cards. Then discards three cards.");
+                    kicked ? 
+                    player + " draws three cards." :
+                    player + " draws three cards. Then discards three cards.");
         }
         @Override
         public void executeEvent(
@@ -63,11 +64,11 @@ public class Sphinx_of_Lost_Truths {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player=(MagicPlayer)data[0];
+            final MagicPlayer player=event.getPlayer();
             game.doAction(new MagicDrawAction(player,3));
-            final boolean kicked=(Boolean)data[2];
+            final boolean kicked=(Boolean)data[0];
             if (!kicked) {
-                game.addEvent(new MagicDiscardEvent((MagicPermanent)data[1],player,3,false));
+                game.addEvent(new MagicDiscardEvent(event.getPermanent(),player,3,false));
             }
         }        
     };
