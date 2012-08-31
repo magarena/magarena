@@ -17,7 +17,6 @@ public class Guiltfeeder {
                 return new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{opponent},
                         this,
                         opponent + " loses 1 life for each card in his or her graveyard.");
             }
@@ -30,7 +29,7 @@ public class Guiltfeeder {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[0];
+            final MagicPlayer player = event.getPlayer().getOpponent();
             game.doAction(new MagicChangeLifeAction(
                     player,
                     -player.getGraveyard().size()));
