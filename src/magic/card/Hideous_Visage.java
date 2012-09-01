@@ -23,7 +23,7 @@ public class Hideous_Visage {
             return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Creatures " + player + " controls gain intimidate until end of turn.");
         }
@@ -36,7 +36,7 @@ public class Hideous_Visage {
                 final Object[] choiceResults) {
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             final Collection<MagicTarget> targets =
-                game.filterTargets((MagicPlayer)data[1],MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicTarget target : targets) {
                 game.doAction(new MagicSetAbilityAction((MagicPermanent)target,MagicAbility.Intimidate));
             }
