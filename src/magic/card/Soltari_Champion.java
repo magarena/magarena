@@ -23,7 +23,6 @@ public class Soltari_Champion {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{permanent,player},
                     this,
                     "Other creatures " + player +
                     " controls get +1/+1 until end of turn."):
@@ -35,9 +34,9 @@ public class Soltari_Champion {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent permanent = (MagicPermanent)data[0];
+            final MagicPermanent permanent = event.getPermanent();
             final Collection<MagicTarget> targets = game.filterTargets(
-                    (MagicPlayer)data[1],
+                    event.getPlayer(),
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicTarget target : targets) {
                 if (target != permanent) {
