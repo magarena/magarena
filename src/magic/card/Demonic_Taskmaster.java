@@ -21,7 +21,6 @@ public class Demonic_Taskmaster {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{permanent,player},
                         this,
                         "Sacrifice a creature other than " + permanent + ".") :
                 MagicEvent.NONE;
@@ -33,8 +32,8 @@ public class Demonic_Taskmaster {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent permanent = (MagicPermanent)data[0];
-            final MagicPlayer player = (MagicPlayer)data[1];
+            final MagicPermanent permanent = event.getPermanent();
+            final MagicPlayer player = event.getPlayer();
             if (player.controlsPermanentWithType(MagicType.Creature)) {
                 final MagicTargetFilter targetFilter = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
                         MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,
