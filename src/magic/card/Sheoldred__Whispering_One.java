@@ -18,17 +18,17 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 public class Sheoldred__Whispering_One {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             final MagicPlayer player=permanent.getController();
-            return (player != data) ?
-                MagicEvent.NONE :
+            return (player == upkeepPlayer) ?
                 new MagicEvent(
                     permanent,
                     player,
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
                     new MagicGraveyardTargetPicker(true),
                     this,
-                    "Return target creature card$ from your graveyard to the battlefield.");
+                    "Return target creature card$ from your graveyard to the battlefield."):
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(
@@ -46,16 +46,15 @@ public class Sheoldred__Whispering_One {
     
     public static final MagicAtUpkeepTrigger T2 = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             final MagicPlayer player=permanent.getController();
-            return (player == data) ? 
-                MagicEvent.NONE :
+            return (player != upkeepPlayer) ? 
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
-                    new Object[]{permanent,data},
                     this,
-                    "Your opponent sacrifices a creature.");
+                    "Your opponent sacrifices a creature."):
+                MagicEvent.NONE;
         }
         
         @Override
@@ -64,10 +63,10 @@ public class Sheoldred__Whispering_One {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer opponent=(MagicPlayer)data[1];
+            final MagicPlayer opponent=event.getPlayer().getOpponent();
             if (opponent.controlsPermanentWithType(MagicType.Creature)) {
                 game.addEvent(new MagicSacrificePermanentEvent(
-                            (MagicPermanent)data[0],
+                            event.getSource(),
                             opponent,
                             MagicTargetChoice.SACRIFICE_CREATURE));
             }
