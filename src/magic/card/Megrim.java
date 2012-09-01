@@ -18,8 +18,7 @@ public class Megrim {
             return (otherController != player) ?
                 new MagicEvent(
                         permanent,
-                        player,
-                        new Object[]{permanent,otherController},
+                        otherController,
                         this,
                         permanent + " deals 2 damage to " + otherController + "."):
                 MagicEvent.NONE;
@@ -31,8 +30,8 @@ public class Megrim {
                 final Object data[],
                 final Object[] choiceResults) {
             final MagicDamage damage = new MagicDamage(
-                    (MagicPermanent)data[0],
-                    (MagicPlayer)data[1],
+                    event.getSource(),
+                    event.getPlayer(),
                     2,
                     false);
             game.doAction(new MagicDealDamageAction(damage));
