@@ -557,7 +557,7 @@ public interface MagicTargetFilter {
             final MagicPermanent permanent = (MagicPermanent)target;
             return target.getController() == player &&
                     permanent.isCreature() &&
-                    permanent.getCardDefinition().isToken();
+                    permanent.isToken();
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType == MagicTargetType.Permanent;
