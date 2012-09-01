@@ -24,7 +24,7 @@ public class Afflict {
                     player,
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     new MagicWeakenTargetPicker(1,1),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Target creature$ gets -1/-1 until end of turn.");
         }
@@ -38,7 +38,7 @@ public class Afflict {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeTurnPTAction(creature,-1,-1));
-                    game.doAction(new MagicDrawAction((MagicPlayer)data[1],1));
+                    game.doAction(new MagicDrawAction(event.getPlayer(),1));
                 }
             });
         }
