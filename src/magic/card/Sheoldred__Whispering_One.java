@@ -53,7 +53,7 @@ public class Sheoldred__Whispering_One {
                     permanent,
                     permanent.getController(),
                     this,
-                    "Your opponent sacrifices a creature."):
+                    upkeepPlayer + " sacrifices a creature."):
                 MagicEvent.NONE;
         }
         
