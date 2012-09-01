@@ -22,7 +22,7 @@ public class Phyrexian_Obliterator {
                     new MagicEvent(
                             permanent,
                             player,
-                            new Object[]{permanent,player,amount},
+                            new Object[]{amount},
                             this,
                             player + " sacrifices " + amount + " permanents."):
                     MagicEvent.NONE;
@@ -34,9 +34,9 @@ public class Phyrexian_Obliterator {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent permanent = (MagicPermanent)data[0];
-            final MagicPlayer player = (MagicPlayer)data[1];
-            int amount = (Integer)data[2];
+            final MagicPermanent permanent = event.getPermanent();
+            final MagicPlayer player = event.getPlayer();
+            int amount = (Integer)data[0];
             while (amount > 0 && player.getPermanents().size() > 0) {
                 game.addEvent(new MagicSacrificePermanentEvent(
                         permanent,
