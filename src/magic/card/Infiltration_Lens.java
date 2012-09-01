@@ -21,7 +21,8 @@ public class Infiltration_Lens {
                 genEvent(
                     permanent, 
                     permanent.getController(), 
-                    equippedCreature.getBlockingCreatures().size()):
+                    equippedCreature.getBlockingCreatures().size()
+                ) :
                 MagicEvent.NONE;
         }
     };
@@ -55,8 +56,17 @@ public class Infiltration_Lens {
             }        
             amount--;
             if (amount > 0) {
-                final MagicEvent triggerEvent = genEvent(permanent, player, amount);
-                game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(triggerEvent)));
+                game.doAction(
+                    new MagicPutItemOnStackAction(
+                        new MagicTriggerOnStack(
+                            genEvent(
+                                permanent, 
+                                player, 
+                                amount
+                            )
+                        )
+                    )
+                );
             }
         }
     };
