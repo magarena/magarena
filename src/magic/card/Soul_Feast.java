@@ -20,10 +20,10 @@ public class Soul_Feast {
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.NEG_TARGET_PLAYER,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Target player$ loses 4 life and " +
-                            player + " gains 4 life.");
+                    player + " gains 4 life.");
         }
         @Override
         public void executeEvent(
@@ -37,7 +37,7 @@ public class Soul_Feast {
                     game.doAction(new MagicChangeLifeAction(player,-4));
                 }
             });
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[1],4));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),4));
         }
     };
 }
