@@ -17,7 +17,7 @@ public class Divination {
             return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Draw two cards.");
         }
@@ -28,7 +28,7 @@ public class Divination {
                 final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-            game.doAction(new MagicDrawAction((MagicPlayer)data[1],2));
+            game.doAction(new MagicDrawAction(event.getPlayer(),2));
         }
     };
 }
