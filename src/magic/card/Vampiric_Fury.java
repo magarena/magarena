@@ -26,7 +26,7 @@ public class Vampiric_Fury {
             return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Vampire creatures " + player + " controls get +2/+0 " +
                     "and gain first strike until end of turn.");
@@ -39,7 +39,7 @@ public class Vampiric_Fury {
                 final Object[] choiceResults) {
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             final Collection<MagicTarget> targets = game.filterTargets(
-                    (MagicPlayer)data[1],
+                    event.getPlayer(),
                     MagicTargetFilter.TARGET_VAMPIRE_YOU_CONTROL);
             for (final MagicTarget target : targets) {
                 final MagicPermanent creature = (MagicPermanent)target;
