@@ -25,7 +25,6 @@ public class Beacon_of_Unrest {
                     player,
                     MagicTargetChoice.TARGET_ARTIFACT_OR_CREATURE_CARD_FROM_ALL_GRAVEYARDS,
                     new MagicGraveyardTargetPicker(true),
-                    new Object[]{card,player},
                     this,
                     "Return target artifact or creature card$ from a graveyard onto the battlefield under your control. "+
                     "Shuffle " + card + " into its owner's library.");
@@ -38,10 +37,10 @@ public class Beacon_of_Unrest {
                 final Object[] choiceResults) {
             event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard targetCard) {
-                    game.doAction(new MagicReanimateAction((MagicPlayer)data[1],targetCard,MagicPlayCardAction.NONE));
+                    game.doAction(new MagicReanimateAction(event.getPlayer(),targetCard,MagicPlayCardAction.NONE));
                 }
             });
-            game.doAction(new MagicShuffleIntoLibraryAction((MagicCard)data[0]));
+            game.doAction(new MagicShuffleIntoLibraryAction(event.getCard()));
         }
     };
 }
