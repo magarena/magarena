@@ -22,7 +22,7 @@ public class Sword_of_War_and_Peace {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{permanent,player,targetPlayer},
+                    new Object[]{targetPlayer},
                     this,
                     permanent + " deals damage to " + targetPlayer + 
                     " equal to the number of cards in his or her hand and " +
@@ -35,13 +35,13 @@ public class Sword_of_War_and_Peace {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer targetPlayer=(MagicPlayer)data[2];
+            final MagicPlayer targetPlayer=(MagicPlayer)data[0];
             final int amount1=targetPlayer.getHand().size();
             if (amount1>0) {
-                final MagicDamage damage=new MagicDamage((MagicSource)data[0],targetPlayer,amount1,false);
+                final MagicDamage damage=new MagicDamage(event.getSource(),targetPlayer,amount1,false);
                 game.doAction(new MagicDealDamageAction(damage));
             }
-            final MagicPlayer player=(MagicPlayer)data[1];
+            final MagicPlayer player=event.getPlayer();
             final int amount2=player.getHand().size();
             if (amount2>0) {
                 game.doAction(new MagicChangeLifeAction(player,amount2));
