@@ -26,7 +26,6 @@ public class Ronin_Cliffrider {
                         new MagicMayChoice(
                                 player + " may$ have " + permanent + " deal 1 damage " +
                                 "to each creature defending player controls."),
-                        new Object[]{permanent,player.getOpponent()},
                         this,
                         player + " may$ have " + permanent + " deal 1 damage " +
                         "to each creature defending player controls.") :
@@ -40,8 +39,8 @@ public class Ronin_Cliffrider {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                final MagicSource source = (MagicSource)data[0];
-                final MagicPlayer defendingPlayer = (MagicPlayer)data[1];
+                final MagicSource source = event.getSource();
+                final MagicPlayer defendingPlayer = event.getPlayer().getOpponent();
                 final Collection<MagicTarget> creatures =
                         game.filterTargets(defendingPlayer,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
                 for (final MagicTarget creature : creatures) {
