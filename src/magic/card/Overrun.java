@@ -24,7 +24,7 @@ public class Overrun {
             return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Creatures " + player +
                     " controls get +3/+3 and gain trample until end of turn.");
@@ -37,7 +37,7 @@ public class Overrun {
                 final Object[] choiceResults) {
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             final Collection<MagicTarget> targets=
-                game.filterTargets((MagicPlayer)data[1],MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicTarget target : targets) {
                 final MagicPermanent creature=(MagicPermanent)target;
                 game.doAction(new MagicChangeTurnPTAction(creature,3,3));
