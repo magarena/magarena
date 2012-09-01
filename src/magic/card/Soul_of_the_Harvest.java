@@ -16,18 +16,17 @@ public class Soul_of_the_Harvest {
                 final MagicPermanent permanent,
                 final MagicPermanent otherPermanent) {
             return (otherPermanent != permanent &&
-                    !otherPermanent.getCard().isToken() &&
+                    otherPermanent.isNonToken() &&
                     otherPermanent.isCreature() &&
                     otherPermanent.getController() == permanent.getController()) ?
                 new MagicEvent(
                         permanent,
                         permanent.getController(),
                         new MagicSimpleMayChoice(
-                                "You may draw a card.",
-                                MagicSimpleMayChoice.DRAW_CARDS,
-                                1,
-                                MagicSimpleMayChoice.DEFAULT_NONE),
-                        MagicEvent.NO_DATA,
+                            "You may draw a card.",
+                            MagicSimpleMayChoice.DRAW_CARDS,
+                            1,
+                            MagicSimpleMayChoice.DEFAULT_NONE),
                         this,
                         "You may$ draw a card."):
                 MagicEvent.NONE;
