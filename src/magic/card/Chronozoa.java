@@ -6,7 +6,7 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.action.MagicPlayCardAction;
+import magic.model.action.MagicPlayTokenAction;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicGraveyardTriggerData;
 import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
@@ -33,9 +33,8 @@ public class Chronozoa {
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
             final MagicPermanent permanent = event.getPermanent();
-            final MagicCard card = MagicCard.createTokenCard(permanent.getCardDefinition(),player);
-            game.doAction(new MagicPlayCardAction(card,player,MagicPlayCardAction.NONE));
-            game.doAction(new MagicPlayCardAction(card,player,MagicPlayCardAction.NONE));
+            game.doAction(new MagicPlayTokenAction(player,permanent.getCardDefinition()));
+            game.doAction(new MagicPlayTokenAction(player,permanent.getCardDefinition()));
         }
     };
 }
