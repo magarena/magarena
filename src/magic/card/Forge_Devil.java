@@ -24,7 +24,6 @@ public class Forge_Devil {
                     player,
                     MagicTargetChoice.TARGET_CREATURE,
                     new MagicDamageTargetPicker(1),
-                    new Object[]{permanent,player},
                     this,
                     permanent + " deals 1 damage to target " +
                     "creature$ and 1 damage to " + player + ".");
@@ -35,14 +34,14 @@ public class Forge_Devil {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent permanent = (MagicPermanent)data[0];
+            final MagicPermanent permanent = event.getPermanent();
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicDamage damage = new MagicDamage(permanent,target,1,false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });
-            final MagicDamage damage = new MagicDamage(permanent,(MagicPlayer)data[1],1,false);
+            final MagicDamage damage = new MagicDamage(permanent,event.getPlayer(),1,false);
             game.doAction(new MagicDealDamageAction(damage));
         }
     };
