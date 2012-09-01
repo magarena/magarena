@@ -17,16 +17,15 @@ public class The_Rack {
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicPlayer data) {
+                final MagicPlayer upkeepPlayer) {
             final MagicPlayer player = permanent.getController();
             final MagicTarget target = permanent.getChosenTarget();
-            return (data == target) ?
+            return (upkeepPlayer == target) ?
                 new MagicEvent(
                     permanent,
-                    player,
-                    new Object[]{permanent,data},
+                    upkeepPlayer,
                     this,
-                    permanent + " deals X damage to " + data +
+                    permanent + " deals X damage to " + upkeepPlayer +
                     " where X is 3 minus the number of cards in his or her hand."):
                 MagicEvent.NONE;
         }
@@ -36,12 +35,12 @@ public class The_Rack {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer opponent = (MagicPlayer)data[1];
-            final int amount = 3 - opponent.getHandSize();
+            final MagicPlayer player = event.getPlayer();
+            final int amount = 3 - player.getHandSize();
             if (amount > 0) {
                 final MagicDamage damage = new MagicDamage(
-                        (MagicSource)data[0],
-                        opponent,
+                        event.getSource(),
+                        player,
                         amount,
                         false);
                 game.doAction(new MagicDealDamageAction(damage));
