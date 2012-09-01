@@ -18,7 +18,7 @@ public class Bountiful_Harvest {
             return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     player + " gains 1 life for each land he or she controls.");
         }
@@ -29,7 +29,7 @@ public class Bountiful_Harvest {
                 final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-            final MagicPlayer player = (MagicPlayer)data[1];
+            final MagicPlayer player = event.getPlayer();
             final int amount = player.getNrOfPermanentsWithType(MagicType.Land);
             if (amount > 0) {
                 game.doAction(new MagicChangeLifeAction(player,amount));
