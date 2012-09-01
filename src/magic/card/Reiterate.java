@@ -24,7 +24,7 @@ public class Reiterate {
                     new MagicBuybackChoice(
                             MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_SPELL,
                             MagicManaCost.THREE),
-                    new Object[]{cardOnStack,cardOnStack.getController()},
+                    new Object[]{cardOnStack},
                     this,
                     "Copy target instant or sorcery spell$. You may choose " +
                     "new targets for the copy. If the buyback cost was payed$, " +
@@ -44,7 +44,7 @@ public class Reiterate {
                     0,
                     new MagicCardOnStackAction() {
                 public void doAction(final MagicCardOnStack targetSpell) {
-                    game.doAction(new MagicCopyCardOnStackAction((MagicPlayer)data[1],targetSpell));
+                    game.doAction(new MagicCopyCardOnStackAction(event.getPlayer(),targetSpell));
                     if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
                         game.doAction(new MagicMoveCardAction(
                                 cardOnStack.getCard(),
