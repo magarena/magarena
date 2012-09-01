@@ -24,7 +24,7 @@ public class Break_of_Day {
             return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Creatures " + player + " controls get +1/+1 until end of turn.");
         }
@@ -35,7 +35,7 @@ public class Break_of_Day {
                 final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-            final MagicPlayer player = (MagicPlayer)data[1];
+            final MagicPlayer player = event.getPlayer();
             final Collection<MagicTarget> targets = game.filterTargets(
                     player,
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
