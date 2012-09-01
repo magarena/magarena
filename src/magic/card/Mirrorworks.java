@@ -5,7 +5,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicPlayCardAction;
+import magic.model.action.MagicPlayTokenAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.event.MagicEvent;
@@ -19,15 +19,15 @@ public class Mirrorworks {
                 final MagicPermanent permanent,
                 final MagicPermanent otherPermanent) {
             return (otherPermanent != permanent &&
-                    !otherPermanent.getCard().isToken() &&
+                    otherPermanent.isNonToken() &&
                     otherPermanent.isArtifact()) ?
                 new MagicEvent(
                         permanent,
                         permanent.getController(),
                         new MagicMayChoice(
-                                "You may pay {2}.",
-                                new MagicPayManaCostChoice(MagicManaCost.TWO)),
-                            new Object[]{otherPermanent.getCardDefinition()},
+                            "You may pay {2}.",
+                            new MagicPayManaCostChoice(MagicManaCost.TWO)),
+                        new Object[]{otherPermanent.getCardDefinition()},
                         this,
                         "You may$ pay {2}. If you do, put a token that's a " +
                         "copy of " + otherPermanent + " onto the battlefield."):
@@ -41,13 +41,9 @@ public class Mirrorworks {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                final MagicCard card = MagicCard.createTokenCard(
-                        (MagicCardDefinition)data[0],
-                        event.getPlayer());
-                game.doAction(new MagicPlayCardAction(
-                        card,
+                game.doAction(new MagicPlayTokenAction(
                         event.getPlayer(),
-                        MagicPlayCardAction.NONE));
+                        (MagicCardDefinition)data[0]));
             }            
         }        
     };
