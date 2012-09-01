@@ -24,7 +24,7 @@ public class Maw_of_the_Mire {
                     player,
                     MagicTargetChoice.NEG_TARGET_LAND,
                     new MagicDestroyTargetPicker(false),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Destroy target land$. " + player + " gains 4 life.");
         }
@@ -39,7 +39,7 @@ public class Maw_of_the_Mire {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                      game.doAction(new MagicDestroyAction(permanent));
-                     game.doAction(new MagicChangeLifeAction((MagicPlayer)data[1],4));
+                     game.doAction(new MagicChangeLifeAction(event.getPlayer(),4));
                 }
             });
         }
