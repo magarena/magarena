@@ -17,7 +17,6 @@ public class Abyssal_Nightstalker {
                 return new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{permanent,opponent},
                         this,
                         opponent + " discards a card.");
             }
@@ -31,8 +30,8 @@ public class Abyssal_Nightstalker {
                 final Object data[],
                 final Object[] choiceResults) {
             game.addEvent(new MagicDiscardEvent(
-                    (MagicPermanent)data[0],
-                    (MagicPlayer)data[1],
+                    event.getPermanent(),
+                    event.getPlayer().getOpponent(),
                     1,
                     false));
         }
