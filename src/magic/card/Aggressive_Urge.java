@@ -24,7 +24,7 @@ public class Aggressive_Urge {
                     player,
                     MagicTargetChoice.POS_TARGET_CREATURE,
                     MagicPumpTargetPicker.create(),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Target creature$ gets +1/+1 until end of turn.");
         }
@@ -40,7 +40,7 @@ public class Aggressive_Urge {
                     game.doAction(new MagicChangeTurnPTAction(creature,1,1));
                 }
             });
-            game.doAction(new MagicDrawAction((MagicPlayer)data[1],1));
+            game.doAction(new MagicDrawAction(event.getPlayer(),1));
         }
     };
 }
