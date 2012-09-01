@@ -16,7 +16,6 @@ public class Ravenous_Rats {
             return new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{permanent,opponent},
                     this,
                     opponent + " discards a card.");
         }
@@ -28,8 +27,8 @@ public class Ravenous_Rats {
                 final Object[] choiceResults) {
             game.addEvent(
                     new MagicDiscardEvent(
-                            (MagicPermanent)data[0],
-                            (MagicPlayer)data[1],
+                            event.getSource(),
+                            event.getPlayer().getOpponent(),
                             1,
                             false));
         }        
