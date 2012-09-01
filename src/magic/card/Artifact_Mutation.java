@@ -26,7 +26,7 @@ public class Artifact_Mutation {
                     cardOnStack.getController(),
                     MagicTargetChoice.NEG_TARGET_ARTIFACT,
                     new MagicDestroyTargetPicker(true),
-                    new Object[]{cardOnStack,cardOnStack.getController()},
+                    new Object[]{cardOnStack},
                     this,
                     "Destroy target artifact$. It can't be regenerated.");
         }
@@ -45,7 +45,7 @@ public class Artifact_Mutation {
                     int amount = permanent.getCardDefinition().getConvertedCost();
                     for (;amount>0;amount--) {
                         game.doAction(new MagicPlayTokenAction(
-                                (MagicPlayer)data[1],
+                                event.getPlayer(),
                                 TokenCardDefinitions.get("Saproling")));
                     }
                 }
