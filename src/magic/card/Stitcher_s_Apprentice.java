@@ -37,7 +37,6 @@ public class Stitcher_s_Apprentice {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{source,player},
                     this,
                     player + " puts a 2/2 blue Homunculus creature token " +
                     "onto the battlefield, then sacrifices a creature.");
@@ -48,14 +47,13 @@ public class Stitcher_s_Apprentice {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[1];
+            final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Homunculus2")));
             game.addEvent(new MagicEvent(
-                    (MagicPermanent)data[0],
+                    event.getPermanent(),
                     player,
                     MagicTargetChoice.SACRIFICE_CREATURE,
                     MagicSacrificeTargetPicker.create(),
-                    MagicEvent.NO_DATA,
                     EVENT_ACTION,
                     "Choose a creature to sacrifice$."));
         }
