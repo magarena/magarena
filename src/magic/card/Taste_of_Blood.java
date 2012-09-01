@@ -26,10 +26,10 @@ public class Taste_of_Blood {
                     player,
                     MagicTargetChoice.NEG_TARGET_PLAYER,
                     new MagicDamageTargetPicker(1),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     card + " deals 1 damage to target player$ and " +
-                            player + " gains 1 life.");
+                    player + " gains 1 life.");
         }
         @Override
         public void executeEvent(
@@ -45,7 +45,7 @@ public class Taste_of_Blood {
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[1],1));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
         }
     };
 }
