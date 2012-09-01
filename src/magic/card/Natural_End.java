@@ -26,10 +26,10 @@ public class Natural_End {
                     player,
                     MagicTargetChoice.TARGET_ARTIFACT_OR_ENCHANTMENT,
                     new MagicDestroyTargetPicker(false),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Destroy target artifact or enchantment$. " +
-                            player + " gains 3 life.");
+                    player + " gains 3 life.");
         }
         @Override
         public void executeEvent(
@@ -41,7 +41,7 @@ public class Natural_End {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicDestroyAction(permanent));
-                    game.doAction(new MagicChangeLifeAction((MagicPlayer)data[1],3));
+                    game.doAction(new MagicChangeLifeAction(event.getPlayer(),3));
                 }
             });
         }
