@@ -19,7 +19,6 @@ public class Mycoloth {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{permanent,player},
                         this,
                         "Put a 1/1 green Saproling creature token onto the battlefield for each +1/+1 counter on " + permanent + "."):
                 MagicEvent.NONE;
@@ -31,8 +30,8 @@ public class Mycoloth {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent permanent=(MagicPermanent)data[0];
-            final MagicPlayer player=(MagicPlayer)data[1];
+            final MagicPermanent permanent=event.getPermanent();
+            final MagicPlayer player=event.getPlayer();
             if (player.controlsPermanent(permanent)) {
                 final int tokens = permanent.getCounters(MagicCounterType.PlusOne); 
                 for (int count=tokens;count>0;count--) {
