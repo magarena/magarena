@@ -17,54 +17,28 @@ public class Infiltration_Lens {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             final MagicPermanent equippedCreature = permanent.getEquippedCreature();
-            if (creature == equippedCreature) {
-                final int amount = equippedCreature.getBlockingCreatures().size();
-                final MagicPlayer player = permanent.getController();
-                return new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicSimpleMayChoice(
-                                player + " may draw two cards.",
-                                MagicSimpleMayChoice.DRAW_CARDS,
-                                2,
-                                MagicSimpleMayChoice.DEFAULT_NONE),
-                        new Object[]{permanent,player,amount},
-                        this,
-                        player + " may draw two cards.");
-            }
-            return MagicEvent.NONE;
-        }
-        
-        @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event,
-                final Object data[],
-                final Object[] choiceResults) {
-            final MagicPermanent permanent = (MagicPermanent)data[0];
-            final MagicPlayer player = (MagicPlayer)data[1];
-            int amount = (Integer)data[2];
-            if (MagicChoice.isYesChoice(choiceResults[0])) {
-                game.doAction(new MagicDrawAction(player,2));
-            }        
-            amount--;
-            if (amount > 0) {
-                final MagicEvent triggerEvent = new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicSimpleMayChoice(
-                                player + " may draw two cards.",
-                                MagicSimpleMayChoice.DRAW_CARDS,
-                                2,
-                                MagicSimpleMayChoice.DEFAULT_NONE),
-                        new Object[]{permanent,player,amount},
-                        DRAW,
-                        player + " may draw two cards."
-                    );
-                    game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(triggerEvent)));
-            }
+            return (creature == equippedCreature) ?
+                genEvent(
+                    permanent, 
+                    permanent.getController(), 
+                    equippedCreature.getBlockingCreatures().size()):
+                MagicEvent.NONE;
         }
     };
+
+    private static final MagicEvent genEvent(final MagicPermanent permanent, final MagicPlayer player, final int amount) {
+        return new MagicEvent(
+            permanent,
+            player,
+            new MagicSimpleMayChoice(
+                player + " may draw two cards.",
+                MagicSimpleMayChoice.DRAW_CARDS,
+                2,
+                MagicSimpleMayChoice.DEFAULT_NONE),
+            new Object[]{amount},
+            DRAW,
+            player + " may draw two cards.");
+    }
     
     private static final MagicEventAction DRAW = new MagicEventAction() {
         @Override
@@ -73,27 +47,16 @@ public class Infiltration_Lens {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanent permanent = (MagicPermanent)data[0];
-            final MagicPlayer player = (MagicPlayer)data[1];
-            int amount = (Integer)data[2];
+            final MagicPermanent permanent = event.getPermanent();
+            final MagicPlayer player = event.getPlayer();
+            int amount = (Integer)data[0];
             if (MagicChoice.isYesChoice(choiceResults[0])) {
                 game.doAction(new MagicDrawAction(player,2));
             }        
             amount--;
             if (amount > 0) {
-                final MagicEvent triggerEvent = new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicSimpleMayChoice(
-                                player + " may draw two cards.",
-                                MagicSimpleMayChoice.DRAW_CARDS,
-                                2,
-                                MagicSimpleMayChoice.DEFAULT_NONE),
-                        new Object[]{permanent,player,amount},
-                        DRAW,
-                        player + " may draw two cards."
-                    );
-                    game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(triggerEvent)));
+                final MagicEvent triggerEvent = genEvent(permanent, player, amount);
+                game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(triggerEvent)));
             }
         }
     };
