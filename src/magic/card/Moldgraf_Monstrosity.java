@@ -26,7 +26,6 @@ public class Moldgraf_Monstrosity {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{permanent,player},
                     this,
                     "Exile " + permanent + ", then return two creature " +
                     "cards at random from your graveyard to the battlefield."):
@@ -38,10 +37,10 @@ public class Moldgraf_Monstrosity {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent permanent = (MagicPermanent)data[0];
+            final MagicPermanent permanent = event.getPermanent();
             game.doAction(new MagicRemoveCardAction(permanent.getCard(),MagicLocationType.Graveyard));
             game.doAction(new MagicMoveCardAction(permanent.getCard(),MagicLocationType.Graveyard,MagicLocationType.Exile));
-            final MagicPlayer player = (MagicPlayer)data[1];
+            final MagicPlayer player = event.getPlayer();
             final List<MagicTarget> targets =
                     game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD);
             final magic.MersenneTwisterFast rng = 
