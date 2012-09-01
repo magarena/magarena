@@ -22,7 +22,6 @@ public class Butcher_of_Malakir {
                 new MagicEvent(
                     permanent,
                     controller,
-                    new Object[]{permanent,controller.getOpponent()},
                     this,
                     "Your opponent sacrifices a creature."):
                 MagicEvent.NONE;
@@ -34,10 +33,10 @@ public class Butcher_of_Malakir {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer opponent=(MagicPlayer)data[1];
+            final MagicPlayer opponent=event.getPlayer().getOpponent();
             if (opponent.controlsPermanentWithType(MagicType.Creature)) {
                 game.addEvent(new MagicSacrificePermanentEvent(
-                            (MagicPermanent)data[0],
+                            event.getPermanent(),
                             opponent,
                             MagicTargetChoice.SACRIFICE_CREATURE));
             }
@@ -54,7 +53,6 @@ public class Butcher_of_Malakir {
                 new MagicEvent(
                     permanent,
                     controller,
-                    new Object[]{permanent,controller.getOpponent()},
                     this,
                     "Your opponent sacrifices a creature."):
                 MagicEvent.NONE;
@@ -66,10 +64,10 @@ public class Butcher_of_Malakir {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer opponent=(MagicPlayer)data[1];
+            final MagicPlayer opponent=event.getPlayer().getOpponent();
             if (opponent.controlsPermanentWithType(MagicType.Creature)) {
                 game.addEvent(new MagicSacrificePermanentEvent(
-                            (MagicPermanent)data[0],
+                            event.getPermanent(),
                             opponent,
                             MagicTargetChoice.SACRIFICE_CREATURE));
             }
