@@ -44,7 +44,6 @@ public class Recurring_Nightmare {
                     source.getController(),
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
                     new MagicGraveyardTargetPicker(true),
-                    new Object[]{source,source.getController()},
                     this,
                     "Return " + source + " to its owner's hand. Return " +
                     "target creature card$ from your graveyard to the battlefield.");
@@ -55,10 +54,10 @@ public class Recurring_Nightmare {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicRemoveFromPlayAction((MagicPermanent)data[0],MagicLocationType.OwnersHand));
+            game.doAction(new MagicRemoveFromPlayAction(event.getPermanent(),MagicLocationType.OwnersHand));
             event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard targetCard) {
-                    game.doAction(new MagicReanimateAction((MagicPlayer)data[1],targetCard,MagicPlayCardAction.NONE));
+                    game.doAction(new MagicReanimateAction(event.getPlayer(),targetCard,MagicPlayCardAction.NONE));
                 }
             });
         }
