@@ -23,7 +23,6 @@ public class Copperhorn_Scout {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{permanent,player},
                     this,
                     "Untap each other creature you control."):
                 MagicEvent.NONE;
@@ -34,9 +33,9 @@ public class Copperhorn_Scout {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent permanent = (MagicPermanent)data[0];
+            final MagicPermanent permanent = event.getPermanent();
             final Collection<MagicTarget> targets = game.filterTargets(
-                    (MagicPlayer)data[1],
+                    event.getPlayer(),
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicTarget target : targets) {
                 if (target != permanent) {
