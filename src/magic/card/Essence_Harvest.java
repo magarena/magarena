@@ -25,7 +25,7 @@ public class Essence_Harvest {
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.NEG_TARGET_PLAYER,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Target player$ loses X life and you gain X life, where " +
                     "X is the greatest power among creatures " + player + " controls.");
@@ -40,7 +40,7 @@ public class Essence_Harvest {
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     final Collection<MagicTarget> targets = game.filterTargets(
-                            (MagicPlayer)data[1],
+                            event.getPlayer(),
                             MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
                     int power = 0;
                     for (final MagicTarget target : targets) {
@@ -48,7 +48,7 @@ public class Essence_Harvest {
                         power = Math.max(power,creature.getPower());
                     }
                     game.doAction(new MagicChangeLifeAction(player,-power));
-                    game.doAction(new MagicChangeLifeAction((MagicPlayer)data[1],power));
+                    game.doAction(new MagicChangeLifeAction(event.getPlayer(),power));
                 }
             });
         }
