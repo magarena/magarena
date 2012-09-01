@@ -22,7 +22,7 @@ public class Offering_to_Asha {
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.NEG_TARGET_SPELL,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Counter target spell$ unless its controller pays {4}. " +
                     player + " gains 4 life.");
@@ -35,7 +35,7 @@ public class Offering_to_Asha {
                 final Object[] choiceResults) {
             final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
             game.doAction(new MagicMoveCardAction(cardOnStack));
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[1],4));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),4));
             event.processTargetCardOnStack(game,choiceResults,0,new MagicCardOnStackAction() {
                 public void doAction(final MagicCardOnStack targetSpell) {
                     game.addEvent(new MagicCounterUnlessEvent(cardOnStack.getCard(),targetSpell,MagicManaCost.FOUR));
