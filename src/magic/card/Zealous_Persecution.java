@@ -22,7 +22,7 @@ public class Zealous_Persecution {
             return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Until end of turn, creatures you control get +1/+1 and creatures your opponent controls get -1/-1.");
         }
@@ -33,9 +33,8 @@ public class Zealous_Persecution {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-            final MagicPlayer player=(MagicPlayer)data[1];
+            final MagicPlayer player=event.getPlayer();
             final Collection<MagicTarget> targets=
                 game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE);
             for (final MagicTarget target : targets) {
