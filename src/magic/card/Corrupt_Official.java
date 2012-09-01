@@ -16,7 +16,6 @@ public class Corrupt_Official {
                     new MagicEvent(
                             permanent,
                             permanent.getController(),
-                            new Object[]{permanent,defendingPlayer},
                             this,
                             defendingPlayer + " discards a card at random."):
                     MagicEvent.NONE;
@@ -29,8 +28,8 @@ public class Corrupt_Official {
                 final Object data[],
                 final Object[] choiceResults) {
             game.addEvent(new MagicDiscardEvent(
-                    (MagicPermanent)data[0],
-                    (MagicPlayer)data[1],
+                    event.getSource(),
+                    event.getPlayer().getOpponent(),
                     1,
                     true));
         }
