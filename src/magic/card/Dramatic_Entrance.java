@@ -24,7 +24,7 @@ public class Dramatic_Entrance {
                     cardOnStack.getController(),
                     MagicTargetChoice.TARGET_GREEN_CREATURE_CARD_FROM_HAND,
                     new MagicGraveyardTargetPicker(true),
-                    new Object[]{cardOnStack,cardOnStack.getController()},
+                    new Object[]{cardOnStack},
                     this,
                     "Put a green creature card$ from your hand onto the battlefield.");
         }
@@ -38,7 +38,7 @@ public class Dramatic_Entrance {
             event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard card) {
                     game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
-                    game.doAction(new MagicPlayCardAction(card,(MagicPlayer)data[1],MagicPlayCardAction.NONE));
+                    game.doAction(new MagicPlayCardAction(card,event.getPlayer(),MagicPlayCardAction.NONE));
                 }
             });
         }
