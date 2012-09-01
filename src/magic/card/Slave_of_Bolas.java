@@ -28,7 +28,7 @@ public class Slave_of_Bolas {
                     player,
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     MagicExileTargetPicker.create(),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Gain control of target creature$. Untap that creature. " + 
                     "It gains haste until end of turn. Sacrifice it at end of turn.");
@@ -42,7 +42,7 @@ public class Slave_of_Bolas {
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    game.doAction(new MagicGainControlAction((MagicPlayer)data[1],creature));
+                    game.doAction(new MagicGainControlAction(event.getPlayer(),creature));
                     game.doAction(new MagicUntapAction(creature));
                     game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Haste));
                     game.doAction(new MagicChangeStateAction(creature,MagicPermanentState.SacrificeAtEndOfTurn,true));
