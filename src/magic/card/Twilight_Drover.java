@@ -22,14 +22,12 @@ import magic.model.trigger.MagicWhenLeavesPlayTrigger;
 public class Twilight_Drover {
     public static final MagicWhenLeavesPlayTrigger T2 = new MagicWhenLeavesPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent left) {
             final MagicPlayer player = permanent.getController();
-            return (data.isCreature() &&
-                    data.getCardDefinition().isToken()) ?
+            return (left.isCreature() && left.isToken()) ?
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{permanent},
                         this,
                         player + " puts a +1/+1 counter on " + permanent + "."):
                 MagicEvent.NONE;
@@ -41,7 +39,7 @@ public class Twilight_Drover {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
-                    (MagicPermanent)data[0],
+                    event.getPermanent(),
                     MagicCounterType.PlusOne,
                     1,
                     true));            
