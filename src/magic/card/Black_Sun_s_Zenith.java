@@ -26,7 +26,7 @@ public class Black_Sun_s_Zenith {
             return new MagicEvent(
                     card,
                     player,
-                    new Object[]{card,player,amount},
+                    new Object[]{amount},
                     this,
                     "Put "+amount+" -1/-1 counters on each creature. " + 
                     "Shuffle " + card + " into its owner's library.");
@@ -37,15 +37,15 @@ public class Black_Sun_s_Zenith {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final int amount=(Integer)data[2];
+            final int amount=(Integer)data[0];
             final Collection<MagicTarget> targets = 
-                game.filterTargets((MagicPlayer)data[1],MagicTargetFilter.TARGET_CREATURE);
+                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE);
             for (final MagicTarget target : targets) {
                 game.doAction(new MagicChangeCountersAction(
                             (MagicPermanent)target,
                             MagicCounterType.MinusOne,amount,true));
             }
-            game.doAction(new MagicShuffleIntoLibraryAction((MagicCard)data[0]));
+            game.doAction(new MagicShuffleIntoLibraryAction(event.getCard()));
         }
     };
 }

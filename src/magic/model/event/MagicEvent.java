@@ -159,6 +159,10 @@ public class MagicEvent implements MagicCopyable {
         return (MagicPermanent)source;
     }
     
+    public final MagicCard getCard() {
+        return (MagicCard)source;
+    }
+    
     public final MagicPlayer getPlayer() {
         return player;
     }
