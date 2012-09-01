@@ -18,7 +18,6 @@ public class Kazuul__Tyrant_of_the_Cliffs {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{permanent,player},
                         this,
                         "Put a 3/3 red Ogre creature token onto the battlefield unless your opponent pays {3}."):
                 MagicEvent.NONE;
@@ -29,9 +28,9 @@ public class Kazuul__Tyrant_of_the_Cliffs {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player=(MagicPlayer)data[1];
+            final MagicPlayer player=event.getPlayer();
             game.addEvent(new MagicPlayOgreUnlessEvent(
-                        (MagicPermanent)data[0],
+                        event.getPermanent(),
                         player.getOpponent(),
                         player,
                         MagicManaCost.THREE));
