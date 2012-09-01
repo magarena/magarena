@@ -31,7 +31,7 @@ public class Into_the_Roil {
                         MagicTargetChoice.TARGET_NONLAND_PERMANENT,
                         MagicManaCost.ONE_BLUE,false),
                     MagicBounceTargetPicker.getInstance(),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Return target nonland permanent$ to its owner's hand. If " + card + " was kicked$, draw a card.");
         }
@@ -46,7 +46,7 @@ public class Into_the_Roil {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
                     if (((Integer)choiceResults[1])>0) {
-                        game.doAction(new MagicDrawAction((MagicPlayer)data[1],1));
+                        game.doAction(new MagicDrawAction(event.getPlayer(),1));
                     }
                 }
             });
