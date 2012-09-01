@@ -24,9 +24,9 @@ public class Fleeting_Distraction {
                     player,
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     new MagicWeakenTargetPicker(1,1),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
-                    "Target creature$ gets -1/-0 until end of turn.");
+                    "Target creature$ gets -1/-0 until end of turn. Draw a card.");
         }
         @Override
         public void executeEvent(
@@ -38,7 +38,7 @@ public class Fleeting_Distraction {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeTurnPTAction(creature,-1,-0));
-                    game.doAction(new MagicDrawAction((MagicPlayer)data[1],1));
+                    game.doAction(new MagicDrawAction(event.getPlayer(),1));
                 }
             });
         }
