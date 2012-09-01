@@ -17,7 +17,7 @@ public class Harvester_of_Souls {
                 final MagicPermanent otherPermanent) {
             return (permanent != otherPermanent &&
                     otherPermanent.isCreature() &&
-                    !otherPermanent.getCard().isToken()) ?
+                    otherPermanent.isNonToken()) ?
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
@@ -26,7 +26,6 @@ public class Harvester_of_Souls {
                             MagicSimpleMayChoice.DRAW_CARDS,
                             1,
                             MagicSimpleMayChoice.DEFAULT_NONE),
-                        MagicEvent.NO_DATA,
                         this,
                         "You may$ draw a card."):
                 MagicEvent.NONE;

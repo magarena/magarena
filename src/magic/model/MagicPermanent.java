@@ -230,6 +230,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return card.isToken();
     }
     
+    public boolean isNonToken() {
+        return !card.isToken();
+    }
+    
     @Override
     public MagicCardDefinition getCardDefinition() {
         return cardDefinition;
