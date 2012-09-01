@@ -18,16 +18,15 @@ public class Black_Vise {
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicPlayer data) {
+                final MagicPlayer upkeepPlayer) {
             final MagicPlayer player = permanent.getController();
             final MagicTarget target = permanent.getChosenTarget();
-            return (data == target) ?
+            return (upkeepPlayer == target) ?
                 new MagicEvent(
                     permanent,
-                    player,
-                    new Object[]{permanent,data},
+                    upkeepPlayer,
                     this,
-                    permanent + " deals X damage to " + data +
+                    permanent + " deals X damage to " + upkeepPlayer +
                     " where X is the number of cards in his or her hand minus 4."):
                 MagicEvent.NONE;
         }
@@ -37,12 +36,12 @@ public class Black_Vise {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer opponent = (MagicPlayer)data[1];
-            final int amount = opponent.getHandSize() - 4;
+            final MagicPlayer player = event.getPlayer();
+            final int amount = player.getHandSize() - 4;
             if (amount > 0) {
                 final MagicDamage damage = new MagicDamage(
-                        (MagicSource)data[0],
-                        opponent,
+                        event.getPermanent(),
+                        player,
                         amount,
                         false);
                 game.doAction(new MagicDealDamageAction(damage));
