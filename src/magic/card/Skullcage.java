@@ -19,7 +19,6 @@ public class Skullcage {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{permanent,data},
                     this,
                     permanent + " deals 2 damage to your opponent " + 
                     "unless your opponent has exactly three or exactly four cards in hand."):
@@ -31,10 +30,10 @@ public class Skullcage {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer opponent=(MagicPlayer)data[1];
+            final MagicPlayer opponent=event.getPlayer().getOpponent();
             final int amount=opponent.getHandSize();
             if (amount<3||amount>4) {
-                final MagicDamage damage=new MagicDamage((MagicSource)data[0],opponent,2,false);
+                final MagicDamage damage=new MagicDamage(event.getSource(),opponent,2,false);
                 game.doAction(new MagicDealDamageAction(damage));
             }
         }
