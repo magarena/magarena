@@ -18,7 +18,6 @@ public class Followed_Footsteps {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{permanent,player},
                     this,
                     player + " puts a token that's a copy of enchanted creature onto the battlefield."):
                 MagicEvent.NONE;
@@ -30,10 +29,10 @@ public class Followed_Footsteps {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent permanent=(MagicPermanent)data[0];
+            final MagicPermanent permanent=event.getPermanent();
             final MagicPermanent enchantedCreature=permanent.getEnchantedCreature();
             if (enchantedCreature.isValid()) {
-                game.doAction(new MagicPlayTokenAction((MagicPlayer)data[1],enchantedCreature.getCardDefinition()));
+                game.doAction(new MagicPlayTokenAction(event.getPlayer(),enchantedCreature.getCardDefinition()));
             }
         }        
     };
