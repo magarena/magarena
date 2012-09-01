@@ -25,7 +25,7 @@ public class Brush_with_Death {
                     new MagicBuybackChoice(
                             MagicTargetChoice.TARGET_OPPONENT,
                             MagicManaCost.TWO_BLACK_BLACK),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Target opponent$ loses 2 life and " + player + " gains " +
                     "2 life. If the buyback cost was payed$, return " +
@@ -46,7 +46,7 @@ public class Brush_with_Death {
                     new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     game.doAction(new MagicChangeLifeAction(player,-2));
-                    game.doAction(new MagicChangeLifeAction((MagicPlayer)data[1],2));
+                    game.doAction(new MagicChangeLifeAction(event.getPlayer(),2));
                     if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
                         game.doAction(new MagicMoveCardAction(
                                 cardOnStack.getCard(),
