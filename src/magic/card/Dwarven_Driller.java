@@ -36,13 +36,13 @@ public class Dwarven_Driller {
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.NEG_TARGET_LAND,
-                    new MagicDestroyTargetPicker(false),
-                    this,
-                    "Destroy target land$ unless its controller has " +
-                    source + " deal 2 damage to him or her.");
+                source,
+                source.getController(),
+                MagicTargetChoice.NEG_TARGET_LAND,
+                new MagicDestroyTargetPicker(false),
+                this,
+                "Destroy target land$ unless its controller has " +
+                source + " deal 2 damage to him or her.");
         }
 
         @Override
@@ -55,15 +55,15 @@ public class Dwarven_Driller {
                 public void doAction(final MagicPermanent permanent) {
                     final MagicPlayer controller = permanent.getController();
                     game.addEvent(new MagicEvent(
-                            event.getSource(),
-                            controller,
-                            new MagicMayChoice(
-                                    controller + " may have " +
-                                    event.getSource() + " deal 2 damage to him or her."),
-                            new Object[]{permanent},
-                            EVENT_ACTION,
-                            controller + " may$ have " +
-                            event.getSource() + " deal 2 damage to him or her."));
+                        event.getSource(),
+                        controller,
+                        new MagicMayChoice(
+                            controller + " may have " +
+                            event.getSource() + " deal 2 damage to him or her."),
+                        new Object[]{permanent},
+                        EVENT_ACTION,
+                        controller + " may$ have " +
+                        event.getSource() + " deal 2 damage to him or her."));
                 }
             });
         }
