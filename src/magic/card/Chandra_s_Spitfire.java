@@ -18,11 +18,10 @@ public class Chandra_s_Spitfire {
             final MagicTarget target=damage.getTarget();
             return (!damage.isCombat()&&target.isPlayer()&&target!=player) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{permanent},
-                        this,
-                        permanent + " gets +3/+0 until end of turn."):
+                    permanent,
+                    player,
+                    this,
+                    permanent + " gets +3/+0 until end of turn."):
                 MagicEvent.NONE;
         }
         @Override
@@ -31,7 +30,7 @@ public class Chandra_s_Spitfire {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeTurnPTAction((MagicPermanent)data[0],3,0));
+            game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),3,0));
         }
     };
 }
