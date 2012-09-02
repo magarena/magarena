@@ -10,26 +10,27 @@ import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
 public class Ogre_Leadfoot {
     public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            if (creature == permanent) {
-                final MagicPermanentList plist = new MagicPermanentList();
-                for (final MagicPermanent blocker : permanent.getBlockingCreatures()) {
-                    if (blocker.isArtifact() && blocker.isCreature()) {
-                        plist.add(blocker);
-                    }
-                }
-                if (!plist.isEmpty()) {
-                    return new MagicEvent(
-                            permanent,
-                            permanent.getController(),
-                            new Object[]{plist},
-                            this,
-                            plist.size() > 1 ?
-                                    "Destroy blocking artifact creatures." :
-                                    "Destroy " + plist.get(0) + ".");
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
+            if (permanent != attacker) {
+                return MagicEvent.NONE;
+            }
+            final MagicPermanentList plist = new MagicPermanentList();
+            for (final MagicPermanent blocker : permanent.getBlockingCreatures()) {
+                if (blocker.isArtifact() && blocker.isCreature()) {
+                    plist.add(blocker);
                 }
             }
-            return MagicEvent.NONE;
+            return !plist.isEmpty() ?
+                new MagicEvent(
+                    permanent,
+                    permanent.getController(),
+                    new Object[]{plist},
+                    this,
+                    plist.size() > 1 ?
+                        "Destroy blocking artifact creatures." :
+                        "Destroy " + plist.get(0) + "."
+                ):
+                MagicEvent.NONE;
         }
         
         @Override
