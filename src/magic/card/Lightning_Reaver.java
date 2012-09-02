@@ -20,7 +20,6 @@ public class Lightning_Reaver {
                 new MagicEvent(
                         permanent,
                         permanent.getController(),
-                        new Object[]{permanent},
                         this,
                         "Put a charge counter on " + permanent + "."):
                 MagicEvent.NONE;
@@ -31,23 +30,22 @@ public class Lightning_Reaver {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.Charge,1,true));
+            game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,1,true));
         }
     };
 
     public static final MagicAtEndOfTurnTrigger T2 = new MagicAtEndOfTurnTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eotPlayer) {
             final MagicPlayer player=permanent.getController();
             final int counters=permanent.getCounters(MagicCounterType.Charge);
-            return (player==data && counters>0) ?
+            return (player==eotPlayer && counters>0) ?
                 new MagicEvent(
                         permanent,
-                        player,
-                        new Object[]{permanent,player.getOpponent()},
+                        player.getOpponent(),
                         this,
                         permanent + " deals damage equal to the number of " + 
-                        "charge counters on it to your opponent."):
+                        "charge counters on it to " + player.getOpponent() + "."):
                 MagicEvent.NONE;
         }
         @Override
@@ -56,9 +54,9 @@ public class Lightning_Reaver {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent permanent=(MagicPermanent)data[0];
+            final MagicPermanent permanent=event.getPermanent();
             final int counters=permanent.getCounters(MagicCounterType.Charge);
-            final MagicDamage damage=new MagicDamage(permanent,(MagicTarget)data[1],counters,false);
+            final MagicDamage damage=new MagicDamage(permanent,event.getPlayer(),counters,false);
             game.doAction(new MagicDealDamageAction(damage));
         }        
     };
