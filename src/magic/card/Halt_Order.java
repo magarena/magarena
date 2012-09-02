@@ -21,7 +21,7 @@ public class Halt_Order {
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.NEG_TARGET_ARTIFACT_SPELL,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Counter target artifact spell$. Draw a card.");
         }
@@ -35,7 +35,7 @@ public class Halt_Order {
             event.processTargetCardOnStack(game,choiceResults,0,new MagicCardOnStackAction() {
                 public void doAction(final MagicCardOnStack targetSpell) {
                     game.doAction(new MagicCounterItemOnStackAction(targetSpell));
-                    game.doAction(new MagicDrawAction((MagicPlayer)data[1],1));
+                    game.doAction(new MagicDrawAction(event.getPlayer(),1));
                 }
             });
         }
