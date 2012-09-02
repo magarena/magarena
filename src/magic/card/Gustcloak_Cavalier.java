@@ -21,13 +21,13 @@ public class Gustcloak_Cavalier {
             final MagicPlayer player = permanent.getController();
             return (permanent == creature) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicMayChoice(player + " may tap target creature.",
-                                MagicTargetChoice.NEG_TARGET_CREATURE),
-                        new MagicTapTargetPicker(true,false),
-                        this,
-                        player + " may$ tap target creature$."):
+                    permanent,
+                    player,
+                    new MagicMayChoice(player + " may tap target creature.",
+                            MagicTargetChoice.NEG_TARGET_CREATURE),
+                    new MagicTapTargetPicker(true,false),
+                    this,
+                    player + " may$ tap target creature$."):
                 MagicEvent.NONE;
         }
         @Override
@@ -51,16 +51,15 @@ public class Gustcloak_Cavalier {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             final MagicPlayer player = permanent.getController();
             return (creature == permanent) ?
-                    new MagicEvent(
-                            permanent,
-                            player,
-                            new MagicMayChoice(player + " may untap " + permanent +
-                                    " and remove it from combat."),
-                            new Object[]{permanent},
-                            this, 
-                            player + " may$ untap " + permanent +
-                            " and remove it from combat.") :
-            MagicEvent.NONE;
+                new MagicEvent(
+                    permanent,
+                    player,
+                    new MagicMayChoice(player + " may untap " + permanent +
+                            " and remove it from combat."),
+                    this, 
+                    player + " may$ untap " + permanent +
+                    " and remove it from combat.") :
+                MagicEvent.NONE;
         }
         
         @Override
@@ -70,7 +69,7 @@ public class Gustcloak_Cavalier {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                final MagicPermanent permanent = (MagicPermanent)data[0];
+                final MagicPermanent permanent = event.getPermanent();
                 game.doAction(new MagicUntapAction(permanent));
                 game.doAction(new MagicRemoveFromCombatAction(permanent));
             }
