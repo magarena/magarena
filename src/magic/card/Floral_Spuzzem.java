@@ -20,15 +20,14 @@ public class Floral_Spuzzem {
             if (creature == permanent) {
                 final MagicPlayer player = permanent.getController();
                 return new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicMayChoice(
-                                player + " may destroy target artifact.",
-                                MagicTargetChoice.TARGET_ARTIFACT_YOUR_OPPONENT_CONTROLS),
-                        new MagicDestroyTargetPicker(false),
-                        new Object[]{permanent},
-                        this,
-                        player + " may$ destroy target artifact$.");
+                    permanent,
+                    player,
+                    new MagicMayChoice(
+                        player + " may destroy target artifact.",
+                        MagicTargetChoice.TARGET_ARTIFACT_YOUR_OPPONENT_CONTROLS),
+                    new MagicDestroyTargetPicker(false),
+                    this,
+                    player + " may$ destroy target artifact$.");
             }
             return MagicEvent.NONE;
         }
@@ -46,7 +45,7 @@ public class Floral_Spuzzem {
                     }
                 });
                 game.doAction(new MagicChangeStateAction(
-                        (MagicPermanent)data[0],
+                        event.getPermanent(),
                         MagicPermanentState.NoCombatDamage,true));
             }
         }
