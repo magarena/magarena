@@ -22,7 +22,7 @@ public class Timely_Reinforcements {
             return new MagicEvent(
                     card,
                     player,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "If you have less life than an opponent, you gain 6 life. " +
                     "If you control fewer creatures than an opponent, " +
@@ -36,7 +36,7 @@ public class Timely_Reinforcements {
                 final Object[] choiceResults) {
             final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
             game.doAction(new MagicMoveCardAction(cardOnStack));        
-            final MagicPlayer player = (MagicPlayer)data[1];
+            final MagicPlayer player = event.getPlayer();
             if (player.getLife() < player.getOpponent().getLife()) {
                 game.doAction(new MagicChangeLifeAction(player,6));
             }    
