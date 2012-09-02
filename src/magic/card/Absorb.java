@@ -21,7 +21,7 @@ public class Absorb {
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.NEG_TARGET_SPELL,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Counter target spell$. " + player + " gains 3 life.");
         }
@@ -37,7 +37,7 @@ public class Absorb {
                     game.doAction(new MagicCounterItemOnStackAction(targetSpell));
                 }
             });
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[1],3));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),3));
         }
     };
 }
