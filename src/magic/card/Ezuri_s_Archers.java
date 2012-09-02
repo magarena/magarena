@@ -16,11 +16,10 @@ public class Ezuri_s_Archers {
                     blocked.isValid() &&
                     blocked.hasAbility(MagicAbility.Flying)) ?
                 new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        new Object[]{permanent},
-                        this,
-                        permanent + " gets +3/+0 until end of turn."):
+                    permanent,
+                    permanent.getController(),
+                    this,
+                    permanent + " gets +3/+0 until end of turn."):
                 MagicEvent.NONE;
         }
         @Override
@@ -29,7 +28,7 @@ public class Ezuri_s_Archers {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeTurnPTAction((MagicPermanent)data[0],3,0));
+            game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),3,0));
         }
     };
 }
