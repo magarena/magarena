@@ -12,17 +12,19 @@ import magic.model.trigger.MagicWhenBlocksTrigger;
 public class Ashmouth_Hound {
     public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            if (creature == permanent) {
-                final MagicPermanentList plist = permanent.getBlockingCreatures();
-                return new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        new Object[]{permanent,plist},
-                        this,
-                        permanent + " deals 1 damage to blocking creature.");
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
+            if (permanent != attacker) {
+                return MagicEvent.NONE;
             }
-            return MagicEvent.NONE;
+
+            final MagicPermanentList plist = new MagicPermanentList(permanent.getBlockingCreatures());
+            return new MagicEvent(
+                permanent,
+                permanent.getController(),
+                new Object[]{plist},
+                this,
+                permanent + " deals 1 damage to each blocking creature."
+            );
         }
         
         @Override
@@ -31,10 +33,9 @@ public class Ashmouth_Hound {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent permanent = (MagicPermanent)data[0];
-            final MagicPermanentList plist = (MagicPermanentList)data[1];
+            final MagicPermanentList plist = (MagicPermanentList)data[0];
             for (final MagicPermanent blocker : plist) {
-                final MagicDamage damage = new MagicDamage(permanent,blocker,1,false);
+                final MagicDamage damage = new MagicDamage(event.getPermanent(),blocker,1,false);
                 game.doAction(new MagicDealDamageAction(damage));
             }
         }
@@ -42,15 +43,15 @@ public class Ashmouth_Hound {
     
     public static final MagicWhenBlocksTrigger T2 = new MagicWhenBlocksTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            final MagicPermanent blocked = permanent.getBlockedCreature();
-            return (permanent == data && blocked.isValid()) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
+            final MagicPermanent attacker = permanent.getBlockedCreature();
+            return (permanent == blocker && attacker.isValid()) ?
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
-                    new Object[]{permanent,blocked},
+                    new Object[]{attacker},
                     this,
-                    permanent + " deals 1 damage to " + blocked + "."):
+                    permanent + " deals 1 damage to " + attacker + "."):
                 MagicEvent.NONE;
         }
         @Override
@@ -60,8 +61,8 @@ public class Ashmouth_Hound {
                 final Object data[],
                 final Object[] choiceResults) {
             final MagicDamage damage = new MagicDamage(
+                    event.getSource(),
                     (MagicPermanent)data[0],
-                    (MagicPermanent)data[1],
                     1,
                     false);
             game.doAction(new MagicDealDamageAction(damage));
