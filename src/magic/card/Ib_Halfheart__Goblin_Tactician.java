@@ -26,45 +26,45 @@ import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
 
 public class Ib_Halfheart__Goblin_Tactician {
     public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
-    @Override
-    public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent otherPermanent) {
-        final MagicPlayer player = permanent.getController();
-            if (permanent != otherPermanent &&
-        otherPermanent.getController() == player &&
-        otherPermanent.isCreature() &&
-        otherPermanent.hasSubType(MagicSubType.Goblin)) {
-                return new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[] { otherPermanent, otherPermanent.getBlockingCreatures() },
-                        this,
-                        player + " sacrifices " + otherPermanent + ". If " + player + " does, " + otherPermanent + " deals 4 damage to each creature blocking it.");
-            }
-            return MagicEvent.NONE;
-    }
-    
-    @Override
-    public void executeEvent(
-        final MagicGame game,
-        final MagicEvent event,
-        final Object data[],
-        final Object[] choiceResults) {
-            MagicPermanent goblin = (MagicPermanent)data[0];
-            MagicPermanentList blockingCreatures = (MagicPermanentList)data[1];
-        Iterator<MagicPermanent> iterator = blockingCreatures.iterator();
-        while (iterator.hasNext()) {
-            MagicPermanent blockingCreature = iterator.next();
-            MagicDamage damage = new MagicDamage(goblin, blockingCreature, 4, false);
-            game.doAction(new MagicDealDamageAction(damage));
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent otherPermanent) {
+            final MagicPlayer player = permanent.getController();
+            return (permanent != otherPermanent &&
+                    otherPermanent.getController() == player &&
+                    otherPermanent.isCreature() &&
+                    otherPermanent.hasSubType(MagicSubType.Goblin)) ?
+                new MagicEvent(
+                    permanent,
+                    player,
+                    new Object[]{otherPermanent},
+                    this,
+                    player + " sacrifices " + otherPermanent + ". If " + player + " does, " + otherPermanent + " deals 4 damage to each creature blocking it."
+                ):
+                MagicEvent.NONE;
         }
-        game.doAction( new MagicSacrificeAction( goblin ) );
-    }
+        
+        @Override
+        public void executeEvent(
+            final MagicGame game,
+            final MagicEvent event,
+            final Object data[],
+            final Object[] choiceResults) {
+            final MagicPermanent goblin = (MagicPermanent)data[0];
+            final MagicSacrificeAction sac = new MagicSacrificeAction(goblin);
+            final MagicPermanentList blockingCreatures = goblin.getBlockingCreatures();
+            game.doAction(sac);
+            if (sac.isValid()) {
+                for (final MagicPermanent blocker : blockingCreatures) {
+                    MagicDamage damage = new MagicDamage(goblin, blocker, 4, false);
+                    game.doAction(new MagicDealDamageAction(damage));
+                }
+            }
+        }
     };
     
     public static final MagicPermanentActivation A1 = new MagicPermanentActivation(
-    new MagicCondition[] { MagicCondition.TWO_MOUNTAINS_CONDITION },
-    new MagicActivationHints(MagicTiming.Token, false), "Token") 
-    {
+        new MagicCondition[] {MagicCondition.TWO_MOUNTAINS_CONDITION},
+        new MagicActivationHints(MagicTiming.Token, false), "Token") {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -78,10 +78,11 @@ public class Ib_Halfheart__Goblin_Tactician {
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             MagicPlayer player = source.getController();
             return new MagicEvent(
-                        source,
-                        player,
-                        this,
-                        player + " puts two 1/1 red Goblin creature tokens into play.");
+                source,
+                player,
+                this,
+                player + " puts two 1/1 red Goblin creature tokens into play."
+            );
         }
     
         @Override
