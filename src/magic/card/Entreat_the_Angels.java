@@ -21,7 +21,7 @@ public class Entreat_the_Angels {
             return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
-                    new Object[]{cardOnStack,player,x},
+                    new Object[]{cardOnStack,x},
                     this,
                     player + " puts " + x + " 4/4 white Angel " +
                     "creature tokens with flying onto the battlefield.");
@@ -33,10 +33,10 @@ public class Entreat_the_Angels {
                 final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-            int x = (Integer)data[2];
+            int x = (Integer)data[1];
             for (;x>0;x--) {
                 game.doAction(new MagicPlayTokenAction(
-                        (MagicPlayer)data[1],
+                        event.getPlayer(),
                         TokenCardDefinitions.get("Angel4")));
             }
         }
