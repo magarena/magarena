@@ -31,7 +31,7 @@ public class Titanic_Ultimatum {
             return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Until end of turn, creatures you control get +5/+5 and gain first strike, lifelink and trample.");
         }
@@ -43,7 +43,7 @@ public class Titanic_Ultimatum {
                 final Object[] choiceResults) {
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             final Collection<MagicTarget> targets=game.filterTargets(
-                    (MagicPlayer)data[1],
+                    event.getPlayer(),
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicTarget target : targets) {
                 final MagicPermanent creature=(MagicPermanent)target;
