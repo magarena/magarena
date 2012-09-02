@@ -16,11 +16,10 @@ public class Falkenrath_Marauders {
                     damage.getTarget().isPlayer() &&
                     damage.isCombat()) ?
                 new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        new Object[]{permanent},
-                        this,
-                        "Put two +1/+1 counters on " + permanent + ".") :
+                    permanent,
+                    permanent.getController(),
+                    this,
+                    "Put two +1/+1 counters on " + permanent + ".") :
                 MagicEvent.NONE;
         }
         @Override
@@ -30,7 +29,7 @@ public class Falkenrath_Marauders {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
-                    (MagicPermanent)data[0],
+                    event.getPermanent(),
                     MagicCounterType.PlusOne,
                     2,
                     true));
