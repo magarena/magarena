@@ -20,9 +20,9 @@ public class Spiteful_Shadows {
             final MagicPermanent enchantedCreature = permanent.getEnchantedCreature();
             return (damage.getTarget() == enchantedCreature) ?
                 new MagicEvent(
-                    permanent,
-                    player,
-                    new Object[]{enchantedCreature,enchantedCreature.getController(),amount},
+                    enchantedCreature,
+                    enchantedCreature.getController(),
+                    new Object[]{amount},
                     this,
                     enchantedCreature + " deals " + amount +
                     " damage to " + enchantedCreature.getController() + ".") :
@@ -35,9 +35,9 @@ public class Spiteful_Shadows {
                 final Object data[],
                 final Object[] choiceResults) {
             final MagicDamage damage = new MagicDamage(
-                    (MagicPermanent)data[0],
-                    (MagicPlayer)data[1],
-                    (Integer)data[2],
+                    event.getSource(),
+                    event.getPlayer(),
+                    (Integer)data[0],
                     false);
             game.doAction(new MagicDealDamageAction(damage));
         }
