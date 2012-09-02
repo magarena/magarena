@@ -48,7 +48,6 @@ public class Halcyon_Glaze {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{permanent},
                         this,
                         permanent + " becomes a 4/4 Illusion creature with flying until end of turn. " + 
                         "It's still an enchantment."):
@@ -60,7 +59,7 @@ public class Halcyon_Glaze {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicBecomesCreatureAction((MagicPermanent)data[0],PT,AB,ST));
+            game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT,AB,ST));
         }
     };
 }
