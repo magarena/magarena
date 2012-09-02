@@ -30,7 +30,6 @@ public class Mask_of_Memory {
                                     MagicSimpleMayChoice.DRAW_CARDS,
                                     2,
                                     MagicSimpleMayChoice.DEFAULT_NONE),
-                            new Object[] {permanent, player},
                             this,
                             "You may$ draw two cards. If you do, discard a card.") :
                     MagicEvent.NONE;
@@ -43,10 +42,10 @@ public class Mask_of_Memory {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicChoice.isYesChoice(choiceResults[0])) {
-                final MagicPlayer player = (MagicPlayer)data[1];
+                final MagicPlayer player = event.getPlayer();
                 game.doAction(new MagicDrawAction(player, 2));
                 game.addEvent(new MagicDiscardEvent(
-                        (MagicPermanent)data[0],
+                        event.getSource(),
                         player,
                         1,
                         false));
