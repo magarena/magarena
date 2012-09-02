@@ -21,7 +21,6 @@ public class Grave_Pact {
                     permanent,
                     player,
                     MagicTargetChoice.TARGET_OPPONENT,
-                    new Object[]{permanent},
                     this,
                     "Opponent$ sacrifices a creature.") :
                 MagicEvent.NONE;
@@ -36,7 +35,7 @@ public class Grave_Pact {
                 public void doAction(final MagicPlayer opponent) {
                     if (opponent.controlsPermanentWithType(MagicType.Creature)) {
                         game.addEvent(new MagicSacrificePermanentEvent(
-                            (MagicPermanent)data[0],
+                            event.getSource(),
                             opponent,
                             MagicTargetChoice.SACRIFICE_CREATURE));
                     }
