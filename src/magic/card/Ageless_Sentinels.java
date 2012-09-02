@@ -39,14 +39,13 @@ public class Ageless_Sentinels {
        public MagicEvent executeTrigger(
                final MagicGame game,
                final MagicPermanent permanent,
-               final MagicPermanent data) {
-           return (permanent == data) ?
+               final MagicPermanent blocker) {
+           return (permanent == blocker) ?
                 new MagicEvent(
-                       permanent,
-                       permanent.getController(),
-                       new Object[]{permanent},
-                       this,
-                       permanent + " becomes a Bird Giant and loses defender."):
+                   permanent,
+                   permanent.getController(),
+                   this,
+                   permanent + " becomes a Bird Giant and loses defender."):
                 MagicEvent.NONE;
        }
        @Override
@@ -55,7 +54,7 @@ public class Ageless_Sentinels {
                final MagicEvent event,
                final Object data[],
                final Object[] choiceResults) {
-           final MagicPermanent permanent = (MagicPermanent)data[0];
+           final MagicPermanent permanent = event.getPermanent();
            game.doAction(new MagicAddStaticAction(permanent, ST));
            game.doAction(new MagicAddStaticAction(permanent, AB));
        }
