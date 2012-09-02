@@ -13,13 +13,12 @@ public class Septic_Rats {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
             final MagicPlayer player=permanent.getController();
             return (permanent==data && player.getOpponent().getPoison()>0) ?
-                    new MagicEvent(
-                            permanent,
-                            player,
-                            new Object[]{permanent},
-                            this,
-                            permanent + " gets +1/+1 until end of turn.") :
-                    MagicEvent.NONE;
+                new MagicEvent(
+                    permanent,
+                    player,
+                    this,
+                    permanent + " gets +1/+1 until end of turn.") :
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(
@@ -27,7 +26,7 @@ public class Septic_Rats {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeTurnPTAction((MagicPermanent)data[0],1,1));
+            game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),1,1));
         }
     };
 }
