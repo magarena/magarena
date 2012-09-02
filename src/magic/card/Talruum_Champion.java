@@ -21,19 +21,21 @@ public class Talruum_Champion {
     
     public static final MagicWhenBecomesBlockedTrigger T1 = new MagicWhenBecomesBlockedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            if (creature == permanent) {
-                final MagicPermanentList plist = new MagicPermanentList(permanent.getBlockingCreatures());
-                return new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        new Object[]{plist},
-                        this,
-                        plist.size() > 1 ?
-                            "Blocking creatures lose first strike until end of turn." :
-                            plist.get(0) + " loses first strike until end of turn.");
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
+            if (permanent != attacker) {
+                return MagicEvent.NONE;
             }
-            return MagicEvent.NONE;
+            
+            final MagicPermanentList plist = new MagicPermanentList(permanent.getBlockingCreatures());
+            return new MagicEvent(
+                permanent,
+                permanent.getController(),
+                new Object[]{plist},
+                this,
+                plist.size() > 1 ?
+                    "Blocking creatures lose first strike until end of turn." :
+                    plist.get(0) + " loses first strike until end of turn."
+            );
         }
         
         @Override
@@ -51,13 +53,13 @@ public class Talruum_Champion {
     
     public static final MagicWhenBlocksTrigger T2 = new MagicWhenBlocksTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
             final MagicPermanent blocked = permanent.getBlockedCreature();
-            return (permanent == data && blocked.isValid()) ?
+            return (permanent == blocker && blocked.isValid()) ?
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
-                    new Object[]{blocked,permanent.getController()},
+                    new Object[]{blocked},
                     this,
                     blocked + " loses first strike until end of turn."):
                 MagicEvent.NONE;
