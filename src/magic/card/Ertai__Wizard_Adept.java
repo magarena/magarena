@@ -38,7 +38,6 @@ public class Ertai__Wizard_Adept {
                     source,
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_SPELL,
-                    new Object[]{source},
                     this,
                     "Counter target spell$.");
         }
