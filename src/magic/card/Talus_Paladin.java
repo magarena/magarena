@@ -25,17 +25,17 @@ public class Talus_Paladin {
             return (otherPermanent.getController() == player &&
                     otherPermanent.hasSubType(MagicSubType.Ally)) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicSimpleMayChoice(
-                                player + " may have Ally creatures he or " +
-                                "she controls gain lifelink until end of turn.",
-                                MagicSimpleMayChoice.PUMP,
-                                1,
-                                MagicSimpleMayChoice.DEFAULT_YES),
-                        this,
-                        player + " may$ have Ally creatures he or " +
-                        "she controls gain lifelink until end of turn.") :
+                    permanent,
+                    player,
+                    new MagicSimpleMayChoice(
+                        player + " may have Ally creatures he or " +
+                        "she controls gain lifelink until end of turn.",
+                        MagicSimpleMayChoice.PUMP,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_YES),
+                    this,
+                    player + " may$ have Ally creatures he or " +
+                    "she controls gain lifelink until end of turn.") :
                 MagicEvent.NONE;
         }
         
@@ -48,10 +48,10 @@ public class Talus_Paladin {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 final Collection<MagicTarget> targets =
                         game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_ALLY_YOU_CONTROL);
-                    for (final MagicTarget target : targets) {
-                        final MagicPermanent creature = (MagicPermanent)target;
-                        game.doAction(new MagicSetAbilityAction(creature,MagicAbility.LifeLink));
-                    }
+                for (final MagicTarget target : targets) {
+                    final MagicPermanent creature = (MagicPermanent)target;
+                    game.doAction(new MagicSetAbilityAction(creature,MagicAbility.LifeLink));
+                }
             }            
         }        
     };
@@ -63,16 +63,15 @@ public class Talus_Paladin {
             return (otherPermanent.getController() == player &&
                     otherPermanent.hasSubType(MagicSubType.Ally)) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicSimpleMayChoice(
-                                player + " may put a +1/+1 counter on " + permanent + ".",
-                                MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
-                                1,
-                                MagicSimpleMayChoice.DEFAULT_YES),
-                        new Object[]{permanent},
-                        this,
-                        player + " may$ put a +1/+1 counter on " + permanent + ".") :
+                    permanent,
+                    player,
+                    new MagicSimpleMayChoice(
+                        player + " may put a +1/+1 counter on " + permanent + ".",
+                        MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_YES),
+                    this,
+                    player + " may$ put a +1/+1 counter on " + permanent + ".") :
                 MagicEvent.NONE;
         }
         
@@ -84,7 +83,7 @@ public class Talus_Paladin {
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 game.doAction(new MagicChangeCountersAction(
-                        (MagicPermanent)data[0],
+                        event.getPermanent(),
                         MagicCounterType.PlusOne,
                         1,
                         true));
