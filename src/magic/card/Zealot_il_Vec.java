@@ -18,22 +18,21 @@ public class Zealot_il_Vec {
     public static final MagicWhenAttacksUnblockedTrigger T = new MagicWhenAttacksUnblockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            if (creature == permanent) {
-                final MagicPlayer player = permanent.getController();
-                return new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicMayChoice(
-                                player + " may have " + permanent +
-                                " deal 1 damage to target creature.",
-                                MagicTargetChoice.NEG_TARGET_CREATURE),
-                        new MagicDamageTargetPicker(3),
-                        new Object[]{permanent},
-                        this,
-                        player + " may$ have " + permanent +
-                        " deal 1 damage to target creature$.");
-            }
-            return MagicEvent.NONE;
+            final MagicPlayer player = permanent.getController();
+            return (creature == permanent) ?
+                new MagicEvent(
+                    permanent,
+                    player,
+                    new MagicMayChoice(
+                        player + " may have " + permanent +
+                        " deal 1 damage to target creature.",
+                        MagicTargetChoice.NEG_TARGET_CREATURE),
+                    new MagicDamageTargetPicker(3),
+                    this,
+                    player + " may$ have " + permanent +
+                    " deal 1 damage to target creature$."
+                ):
+                MagicEvent.NONE;
         }
         
         @Override
@@ -45,7 +44,7 @@ public class Zealot_il_Vec {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
-                        final MagicPermanent permanent = (MagicPermanent)data[0];
+                        final MagicPermanent permanent = event.getPermanent();
                         final MagicDamage damage = new MagicDamage(
                                 permanent,
                                 creature,
