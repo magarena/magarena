@@ -25,7 +25,7 @@ public class Instill_Infection {
                     player,
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     new MagicWeakenTargetPicker(1,1),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Put a -1/-1 counter on target creature$.");
         }
@@ -41,7 +41,7 @@ public class Instill_Infection {
                     game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.MinusOne,1,true));
                 }
             });
-            game.doAction(new MagicDrawAction((MagicPlayer)data[1],1));
+            game.doAction(new MagicDrawAction(event.getPlayer(),1));
         }
     };
 }
