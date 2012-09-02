@@ -20,7 +20,6 @@ public class Rage_Thrower {
                     permanent,
                     permanent.getController(),
                     MagicTargetChoice.NEG_TARGET_PLAYER,
-                    new Object[]{permanent},
                     this,
                     permanent + " deals 2 damage to target player."):
                 MagicEvent.NONE;
@@ -33,7 +32,7 @@ public class Rage_Thrower {
                 final Object[] choiceResults) {
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
-                    final MagicDamage damage = new MagicDamage((MagicPermanent)data[0],player,2,false);
+                    final MagicDamage damage = new MagicDamage(event.getSource(),player,2,false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });
