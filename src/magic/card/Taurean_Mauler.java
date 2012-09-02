@@ -22,11 +22,10 @@ public class Taurean_Mauler {
                     permanent,
                     player,
                     new MagicSimpleMayChoice(
-                            player + " may put a +1/+1 counter on " + permanent + ".",
-                            MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
-                            1,
-                            MagicSimpleMayChoice.DEFAULT_YES),
-                    new Object[]{permanent},
+                        player + " may put a +1/+1 counter on " + permanent + ".",
+                        MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_YES),
                     this,
                     player + " may put a +1/+1 counter on " + permanent + "."):
                 MagicEvent.NONE;
@@ -38,7 +37,7 @@ public class Taurean_Mauler {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.PlusOne,1,true));
+                game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,1,true));
             }
         }
     };
