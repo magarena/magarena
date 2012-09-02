@@ -47,16 +47,15 @@ public class Grimgrin__Corpse_Born {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this,
                     "Untap " + source + " and put a +1/+1 counter on it.");
         }
 
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-            game.doAction(new MagicUntapAction((MagicPermanent)data[0]));
+            game.doAction(new MagicUntapAction(event.getPermanent()));
             game.doAction(new MagicChangeCountersAction(
-                    (MagicPermanent)data[0],
+                    event.getPermanent(),
                     MagicCounterType.PlusOne,
                     1,
                     true));
@@ -73,7 +72,6 @@ public class Grimgrin__Corpse_Born {
                         player,
                         MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
                         new MagicDestroyTargetPicker(false),
-                        new Object[]{permanent},
                         this,
                         "Destroy target creature$ your opponent controls, " +
                         "then put a +1/+1 counter on " + permanent + "."):
@@ -92,7 +90,7 @@ public class Grimgrin__Corpse_Born {
                 }
             });
             game.doAction(new MagicChangeCountersAction(
-                    (MagicPermanent)data[0],
+                    event.getPermanent(),
                     MagicCounterType.PlusOne,
                     1,
                     true));
