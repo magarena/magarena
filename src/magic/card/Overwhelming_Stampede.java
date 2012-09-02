@@ -24,7 +24,7 @@ public class Overwhelming_Stampede {
             return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Until end of turn, creatures you control gain trample and get +X/+X, where X is the greatest power among creatures you control.");
         }
@@ -37,7 +37,7 @@ public class Overwhelming_Stampede {
                 final Object[] choiceResults) {
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             final Collection<MagicTarget> targets=
-                game.filterTargets((MagicPlayer)data[1],MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             int power=0;
             for (final MagicTarget target : targets) {
                 final MagicPermanent creature=(MagicPermanent)target;
