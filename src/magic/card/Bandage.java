@@ -24,7 +24,7 @@ public class Bandage {
                     player,
                     MagicTargetChoice.POS_TARGET_CREATURE_OR_PLAYER,
                     MagicPreventTargetPicker.getInstance(),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Prevent the next 1 damage that would be dealt to target " +
                     "creature or player$ this turn. Draw a card.");
@@ -42,7 +42,7 @@ public class Bandage {
                     game.doAction(new MagicPreventDamageAction(target,1));
                 }
             });
-            game.doAction(new MagicDrawAction((MagicPlayer)data[1],1));
+            game.doAction(new MagicDrawAction(event.getPlayer(),1));
         }
     };
 }
