@@ -13,26 +13,26 @@ public class Amphibious_Kavu {
     public static final MagicWhenBecomesBlockedTrigger T1 = new MagicWhenBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
-            if (attacker == permanent) {
-                final MagicPermanentList plist = permanent.getBlockingCreatures();
-                boolean pump = false;
-                for (final MagicPermanent blocker : plist) {
-                    final int colorFlags = blocker.getColorFlags();
-                    if (MagicColor.Blue.hasColor(colorFlags) ||
-                        MagicColor.Black.hasColor(colorFlags)) {
-                        pump = true;
-                    }
-                }
-                return (pump) ?
-                    new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        this,
-                        permanent + " gets +3/+3 until end of turn."
-                    ):
-                    MagicEvent.NONE;
+            if (permanent != attacker) {
+                return MagicEvent.NONE;
             }
-            return MagicEvent.NONE;
+            final MagicPermanentList plist = permanent.getBlockingCreatures();
+            boolean pump = false;
+            for (final MagicPermanent blocker : plist) {
+                final int colorFlags = blocker.getColorFlags();
+                if (MagicColor.Blue.hasColor(colorFlags) ||
+                    MagicColor.Black.hasColor(colorFlags)) {
+                    pump = true;
+                }
+            }
+            return (pump) ?
+                new MagicEvent(
+                    permanent,
+                    permanent.getController(),
+                    this,
+                    permanent + " gets +3/+3 until end of turn."
+                ):
+                MagicEvent.NONE;
         }
         
         @Override
@@ -42,9 +42,10 @@ public class Amphibious_Kavu {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeTurnPTAction(
-                    event.getPermanent(),
-                    3,
-                    3));
+                event.getPermanent(),
+                3,
+                3
+            ));
         }
     };
     
@@ -70,9 +71,10 @@ public class Amphibious_Kavu {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeTurnPTAction(
-                    event.getPermanent(),
-                    3,
-                    3));
+                event.getPermanent(),
+                3,
+                3
+            ));
         }
     };
 }
