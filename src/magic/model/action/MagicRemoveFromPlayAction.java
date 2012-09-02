@@ -21,6 +21,10 @@ public class MagicRemoveFromPlayAction extends MagicAction {
         this.permanent=permanent;
         this.toLocation=toLocation;
     }
+
+    public boolean isValid() {
+        return valid;
+    }
     
     @Override
     public void doAction(final MagicGame game) {
