@@ -31,7 +31,6 @@ public class Horseshoe_Crab {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this,
                     "Untap " + source + ".");
         }
@@ -41,7 +40,7 @@ public class Horseshoe_Crab {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicUntapAction((MagicPermanent)data[0]));
+            game.doAction(new MagicUntapAction(event.getPermanent()));
         }
     };
 }
