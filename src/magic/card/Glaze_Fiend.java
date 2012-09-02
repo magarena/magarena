@@ -17,11 +17,10 @@ public class Glaze_Fiend {
                     otherPermanent.isArtifact() &&
                     otherPermanent.getController() == player) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{permanent},
-                        this,
-                        permanent + " gets +2/+2 until end of turn") :
+                    permanent,
+                    player,
+                    this,
+                    permanent + " gets +2/+2 until end of turn") :
                 MagicEvent.NONE;
         }
         
@@ -31,7 +30,7 @@ public class Glaze_Fiend {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeTurnPTAction((MagicPermanent)data[0],2,2));
+            game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),2,2));
         }
     };
 }
