@@ -20,7 +20,6 @@ public class Rupture_Spire {
                     new MagicMayChoice(
                         "You may pay {1}.",
                         new MagicPayManaCostChoice(MagicManaCost.ONE)),
-                    new Object[]{permanent},
                     this,
                     "You may$ pay {1}. If you don't, sacrifice " + permanent + ".");
         }
@@ -31,7 +30,7 @@ public class Rupture_Spire {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isNoChoice(choiceResults[0])) {
-                game.doAction(new MagicSacrificeAction((MagicPermanent)data[0]));
+                game.doAction(new MagicSacrificeAction(event.getPermanent()));
             }
         }
     };
