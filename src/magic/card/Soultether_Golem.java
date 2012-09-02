@@ -17,11 +17,10 @@ public class Soultether_Golem {
                     otherPermanent.isCreature() && 
                     otherPermanent.getController() == player) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{permanent},
-                        this,
-                        player + " puts a time counter on " + permanent + "."):
+                    permanent,
+                    player,
+                    this,
+                    player + " puts a time counter on " + permanent + "."):
                 MagicEvent.NONE;
         }
         
@@ -32,7 +31,7 @@ public class Soultether_Golem {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
-                    (MagicPermanent)data[0],
+                    event.getPermanent(),
                     MagicCounterType.Charge,
                     1,
                     true));            
