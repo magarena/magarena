@@ -18,7 +18,7 @@ public class Night_s_Whisper {
             return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     player + " draws two cards and loses 2 life.");
         }
@@ -29,7 +29,7 @@ public class Night_s_Whisper {
                 final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-            final MagicPlayer player = (MagicPlayer)data[1];
+            final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicDrawAction(player,2));
             game.doAction(new MagicChangeLifeAction(player,-2));
         }
