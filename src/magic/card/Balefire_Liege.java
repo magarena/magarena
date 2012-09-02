@@ -45,17 +45,16 @@ public class Balefire_Liege {
     };
     public static final MagicWhenOtherSpellIsCastTrigger T = new MagicWhenOtherSpellIsCastTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
             final MagicPlayer player=permanent.getController();
-            final MagicCard card=data.getCard();
+            final MagicCard card=cardOnStack.getCard();
             return (card.getOwner()==player&&MagicColor.Red.hasColor(card.getColorFlags())) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        MagicTargetChoice.NEG_TARGET_PLAYER,
-                        new Object[]{permanent},
-                        this,
-                        permanent + " deals 3 damage to target player$."):
+                    permanent,
+                    player,
+                    MagicTargetChoice.NEG_TARGET_PLAYER,
+                    this,
+                    permanent + " deals 3 damage to target player$."):
                 MagicEvent.NONE;
         }
         @Override
@@ -66,7 +65,7 @@ public class Balefire_Liege {
                 final Object[] choiceResults) {
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
-                    final MagicDamage damage=new MagicDamage((MagicPermanent)data[0],player,3,false);
+                    final MagicDamage damage=new MagicDamage(event.getSource(),player,3,false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });
@@ -75,15 +74,15 @@ public class Balefire_Liege {
     
     public static final MagicWhenOtherSpellIsCastTrigger T2 = new MagicWhenOtherSpellIsCastTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
             final MagicPlayer player=permanent.getController();
-            final MagicCard card=data.getCard();
+            final MagicCard card=cardOnStack.getCard();
             return (card.getOwner()==player&&MagicColor.White.hasColor(card.getColorFlags())) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        player + " gains 3 life."):
+                    permanent,
+                    player,
+                    this,
+                    player + " gains 3 life."):
                 MagicEvent.NONE;
         }
         @Override
