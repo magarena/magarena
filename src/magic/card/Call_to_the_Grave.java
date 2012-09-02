@@ -22,7 +22,6 @@ public class Call_to_the_Grave {
             return new MagicEvent(
                 permanent,
                 player,
-                new Object[]{permanent,player},
                 this,
                 player + " sacrifices a non-Zombie creature.");
         }
@@ -33,10 +32,10 @@ public class Call_to_the_Grave {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[1];
+            final MagicPlayer player = event.getPlayer();
             if (player.controlsPermanentWithType(MagicType.Creature)) {
                 game.addEvent(new MagicSacrificePermanentEvent(
-                            (MagicPermanent)data[0],
+                            event.getSource(),
                             player,
                             MagicTargetChoice.SACRIFICE_NON_ZOMBIE));
             }
@@ -52,7 +51,6 @@ public class Call_to_the_Grave {
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
-                    new Object[]{permanent},
                     this,
                     "Sacrifice " + permanent + "."):
                 MagicEvent.NONE;
@@ -64,7 +62,7 @@ public class Call_to_the_Grave {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicSacrificeAction((MagicPermanent)data[0]));
+            game.doAction(new MagicSacrificeAction(event.getPermanent()));
         }    
     };
 }
