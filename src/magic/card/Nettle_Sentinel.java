@@ -22,22 +22,21 @@ public class Nettle_Sentinel {
                     MagicColor.Green.hasColor(card.getColorFlags()) &&
                     permanent.isTapped()) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicSimpleMayChoice(
-                                player + " may untap " + permanent + ".",
-                                MagicSimpleMayChoice.UNTAP,
-                                1,
-                                MagicSimpleMayChoice.DEFAULT_YES),
-                                new Object[]{permanent},
-                        this,
-                        player + " may$ untap " + permanent + ".") :
+                    permanent,
+                    player,
+                    new MagicSimpleMayChoice(
+                        player + " may untap " + permanent + ".",
+                        MagicSimpleMayChoice.UNTAP,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_YES),
+                    this,
+                    player + " may$ untap " + permanent + ".") :
                 MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                game.doAction(new MagicUntapAction((MagicPermanent)data[0]));
+                game.doAction(new MagicUntapAction(event.getPermanent()));
             }
         }
     };
