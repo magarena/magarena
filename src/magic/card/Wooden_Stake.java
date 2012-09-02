@@ -14,27 +14,28 @@ import magic.model.trigger.MagicWhenBlocksTrigger;
 public class Wooden_Stake {
     public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
             final MagicPermanent equippedCreature = permanent.getEquippedCreature();
-            if (creature == equippedCreature) {
-                final MagicPermanentList plist = new MagicPermanentList();
-                for (final MagicPermanent blocker : equippedCreature.getBlockingCreatures()) {
-                    if (blocker.hasSubType(MagicSubType.Vampire)) {
-                        plist.add(blocker);
-                    }
-                }
-                if (!plist.isEmpty()) {
-                    return new MagicEvent(
-                            permanent,
-                            permanent.getController(),
-                            new Object[]{plist},
-                            this,
-                            plist.size() > 1 ?
-                                "Destroy blocking Vampires. They can't be regenerated." :
-                                "Destroy " + plist.get(0) + ". It can't be regenerated.");
+            if (equippedCreature != attacker) {
+                return MagicEvent.NONE;
+            }
+            final MagicPermanentList plist = new MagicPermanentList();
+            for (final MagicPermanent blocker : equippedCreature.getBlockingCreatures()) {
+                if (blocker.hasSubType(MagicSubType.Vampire)) {
+                    plist.add(blocker);
                 }
             }
-            return MagicEvent.NONE;
+            return !plist.isEmpty() ?
+                new MagicEvent(
+                    permanent,
+                    permanent.getController(),
+                    new Object[]{plist},
+                    this,
+                    plist.size() > 1 ?
+                        "Destroy blocking Vampires. They can't be regenerated." :
+                        "Destroy " + plist.get(0) + ". It can't be regenerated."
+                ):
+                MagicEvent.NONE;
         }
         
         @Override
