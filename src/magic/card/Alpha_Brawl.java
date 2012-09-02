@@ -28,7 +28,7 @@ public class Alpha_Brawl {
                     player,
                     MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
                     MagicPowerTargetPicker.getInstance(),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Target creature$ an opponent controls deals damage equal to " +
                     "its power to each other creature that player controls, then " +
@@ -43,7 +43,7 @@ public class Alpha_Brawl {
                 final Object[] choiceResults) {
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
-                final MagicPlayer player = (MagicPlayer)data[1];
+                final MagicPlayer player = event.getPlayer();
                 public void doAction(final MagicPermanent permanent) {
                     final Collection<MagicTarget> creatures = 
                             game.filterTargets(player.getOpponent(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
