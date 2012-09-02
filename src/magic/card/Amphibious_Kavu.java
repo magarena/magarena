@@ -12,8 +12,8 @@ import magic.model.trigger.MagicWhenBlocksTrigger;
 public class Amphibious_Kavu {
     public static final MagicWhenBecomesBlockedTrigger T1 = new MagicWhenBecomesBlockedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            if (creature == permanent) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
+            if (attacker == permanent) {
                 final MagicPermanentList plist = permanent.getBlockingCreatures();
                 boolean pump = false;
                 for (final MagicPermanent blocker : plist) {
@@ -23,14 +23,14 @@ public class Amphibious_Kavu {
                         pump = true;
                     }
                 }
-                if (pump) {
-                    return new MagicEvent(
-                            permanent,
-                            permanent.getController(),
-                            new Object[]{permanent},
-                            this,
-                            permanent + " gets +3/+3 until end of turn.");
-                }
+                return (pump) ?
+                    new MagicEvent(
+                        permanent,
+                        permanent.getController(),
+                        this,
+                        permanent + " gets +3/+3 until end of turn."
+                    ):
+                    MagicEvent.NONE;
             }
             return MagicEvent.NONE;
         }
@@ -42,7 +42,7 @@ public class Amphibious_Kavu {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeTurnPTAction(
-                    (MagicPermanent)data[0],
+                    event.getPermanent(),
                     3,
                     3));
         }
@@ -50,16 +50,15 @@ public class Amphibious_Kavu {
     
     public static final MagicWhenBlocksTrigger T2 = new MagicWhenBlocksTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
             final MagicPermanent blocked = permanent.getBlockedCreature();
-            return (permanent == data &&
+            return (permanent == blocker &&
                     blocked.isValid() &&
                     (MagicColor.Blue.hasColor(blocked.getColorFlags()) ||
                     MagicColor.Black.hasColor(blocked.getColorFlags()))) ?
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
-                    new Object[]{permanent},
                     this,
                     permanent + " gets +3/+3 until end of turn."):
                 MagicEvent.NONE;
@@ -71,7 +70,7 @@ public class Amphibious_Kavu {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeTurnPTAction(
-                    (MagicPermanent)data[0],
+                    event.getPermanent(),
                     3,
                     3));
         }
