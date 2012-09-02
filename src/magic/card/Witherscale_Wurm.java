@@ -26,19 +26,18 @@ public class Witherscale_Wurm {
     
     public static final MagicWhenBecomesBlockedTrigger T1 = new MagicWhenBecomesBlockedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            if (creature == permanent) {
-                final MagicPermanentList plist = new MagicPermanentList(permanent.getBlockingCreatures());
-                return new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        new Object[]{plist},
-                        this,
-                        plist.size() > 1 ?
-                            "Blocking creatures gain wither until end of turn." :
-                            plist.get(0) + " gains wither until end of turn.");
-            }
-            return MagicEvent.NONE;
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
+            final MagicPermanentList plist = permanent.getBlockingCreatures();
+            return (permanent == attacker) ?
+                new MagicEvent(
+                    permanent,
+                    permanent.getController(),
+                    this,
+                    plist.size() > 1 ?
+                        "Blocking creatures gain wither until end of turn." :
+                        plist.get(0) + " gains wither until end of turn."
+                ):
+                MagicEvent.NONE;
         }
         
         @Override
@@ -47,7 +46,7 @@ public class Witherscale_Wurm {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanentList plist = (MagicPermanentList)data[0];
+            final MagicPermanentList plist = event.getPermanent().getBlockingCreatures();
             for (final MagicPermanent blocker : plist) {
                 game.doAction(new MagicAddStaticAction(blocker,AB));
             }
@@ -56,15 +55,15 @@ public class Witherscale_Wurm {
     
     public static final MagicWhenBlocksTrigger T2 = new MagicWhenBlocksTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            final MagicPermanent blocked = permanent.getBlockedCreature();
-            return (permanent == data && blocked.isValid()) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
+            final MagicPermanent attacker = permanent.getBlockedCreature();
+            return (permanent == blocker && attacker.isValid()) ?
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
-                    new Object[]{blocked,permanent.getController()},
+                    new Object[]{attacker},
                     this,
-                    blocked + " gains wither until end of turn."):
+                    attacker + " gains wither until end of turn."):
                 MagicEvent.NONE;
         }
         @Override
@@ -90,7 +89,6 @@ public class Witherscale_Wurm {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{permanent},
                     this,
                     "Remove all -1/-1 counters from " + permanent + "."):
                 MagicEvent.NONE;
@@ -101,7 +99,7 @@ public class Witherscale_Wurm {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent permanent = (MagicPermanent)data[0];
+            final MagicPermanent permanent = event.getPermanent();
             final int amount = permanent.getCounters(MagicCounterType.MinusOne);
             game.doAction(new MagicChangeCountersAction(
                     permanent,
