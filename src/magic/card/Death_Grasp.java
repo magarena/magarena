@@ -28,10 +28,10 @@ public class Death_Grasp {
                     player,
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(amount),
-                    new Object[]{cardOnStack,player,amount},
+                    new Object[]{cardOnStack,amount},
                     this,
                     card + " deals " + amount + " damage to target creature or player$. " +
-                            player + " gains "+amount+" life.");
+                    player + " gains "+amount+" life.");
         }
         @Override
         public void executeEvent(
@@ -41,14 +41,14 @@ public class Death_Grasp {
                 final Object[] choiceResults) {
             final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
             game.doAction(new MagicMoveCardAction(cardOnStack));
-            final int amount=(Integer)data[2];
+            final int amount=(Integer)data[1];
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicDamage damage=new MagicDamage(cardOnStack.getCard(),target,amount,false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[1],amount));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),amount));
         }
     };
 }
