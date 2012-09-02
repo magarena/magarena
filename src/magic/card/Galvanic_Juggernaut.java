@@ -16,7 +16,6 @@ public class Galvanic_Juggernaut {
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
-                    new Object[]{permanent},
                     this,
                     "Untap " + permanent + ".") :
                 MagicEvent.NONE;
@@ -27,7 +26,7 @@ public class Galvanic_Juggernaut {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicUntapAction((MagicPermanent)data[0]));
+            game.doAction(new MagicUntapAction(event.getPermanent()));
         }
     };
 }
