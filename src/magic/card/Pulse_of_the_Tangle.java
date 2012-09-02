@@ -22,7 +22,7 @@ public class Pulse_of_the_Tangle {
             return new MagicEvent(
                     card,
                     player,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     player + " puts a 3/3 green Beast creature token onto the battlefield. " + 
                     "Then if your opponent controls more creatures than you, return " + card + " to its owner's hand.");
@@ -34,7 +34,7 @@ public class Pulse_of_the_Tangle {
                 final Object[] data,
                 final Object[] choiceResults) {
             final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-            final MagicPlayer player=(MagicPlayer)data[1];
+            final MagicPlayer player=event.getPlayer();
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Beast3")));
             final boolean more=player.getOpponent().getNrOfPermanentsWithType(MagicType.Creature)>
             player.getNrOfPermanentsWithType(MagicType.Creature);            
