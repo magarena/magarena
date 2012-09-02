@@ -32,7 +32,6 @@ public class Stuffy_Doll {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this,
                     source + " deals 1 damage to itself.");
         }
@@ -42,7 +41,7 @@ public class Stuffy_Doll {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanent permanent=(MagicPermanent)data[0];
+            final MagicPermanent permanent=event.getPermanent();
             final MagicDamage damage=new MagicDamage(permanent,permanent,1,false);
             game.doAction(new MagicDealDamageAction(damage));
         }
@@ -58,7 +57,7 @@ public class Stuffy_Doll {
                 return new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{permanent,target,amount},
+                        new Object[]{amount},
                         this,
                         permanent + " deals " + amount +
                         " damage to " + target + ".");
@@ -72,9 +71,9 @@ public class Stuffy_Doll {
                 final Object data[],
                 final Object[] choiceResults) {
             final MagicDamage damage = new MagicDamage(
-                    (MagicSource)data[0],
-                    (MagicTarget)data[1],
-                    (Integer)data[2],
+                    event.getPermanent(),
+                    event.getPermanent().getChosenTarget(),
+                    (Integer)data[0],
                     false);
             game.doAction(new MagicDealDamageAction(damage));
         }
