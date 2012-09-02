@@ -24,7 +24,7 @@ public class Shadow_Rift {
                     cardOnStack.getController(),
                     MagicTargetChoice.TARGET_CREATURE,
                     MagicShadowTargetPicker.getInstance(),
-                    new Object[]{cardOnStack,cardOnStack.getController()},
+                    new Object[]{cardOnStack},
                     this,
                     "Target creature$ gains shadow until end of turn. Draw a card.");
         }
@@ -39,7 +39,7 @@ public class Shadow_Rift {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Shadow));
-                    game.doAction(new MagicDrawAction((MagicPlayer)data[1],1));
+                    game.doAction(new MagicDrawAction(event.getPlayer(),1));
                 }
             });
         }
