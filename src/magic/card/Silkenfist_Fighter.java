@@ -13,12 +13,11 @@ public class Silkenfist_Fighter {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             final MagicPlayer player = permanent.getController();
             return (creature == permanent) ?
-                    new MagicEvent(
-                            permanent,
-                            player,
-                            new Object[]{permanent},
-                            this, 
-                            "Untap " + permanent + ".") :
+                new MagicEvent(
+                    permanent,
+                    player,
+                    this, 
+                    "Untap " + permanent + ".") :
             MagicEvent.NONE;
         }
         
@@ -28,7 +27,7 @@ public class Silkenfist_Fighter {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-                game.doAction(new MagicUntapAction((MagicPermanent)data[0]));
+                game.doAction(new MagicUntapAction(event.getPermanent()));
         }
     };
 }
