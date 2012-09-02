@@ -23,7 +23,7 @@ public class Smash {
                     cardOnStack.getController(),
                     MagicTargetChoice.NEG_TARGET_ARTIFACT,
                     new MagicDestroyTargetPicker(false),
-                    new Object[]{cardOnStack,cardOnStack.getController()},
+                    new Object[]{cardOnStack},
                     this,
                     "Destroy target artifact$. Draw a card.");
         }
@@ -38,7 +38,7 @@ public class Smash {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicDestroyAction(permanent));
-                    game.doAction(new MagicDrawAction((MagicPlayer)data[1],1));
+                    game.doAction(new MagicDrawAction(event.getPlayer(),1));
                 }
             });
         }
