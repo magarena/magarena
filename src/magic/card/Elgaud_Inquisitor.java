@@ -8,26 +8,21 @@ import magic.model.MagicPlayer;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicGraveyardTriggerData;
-import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
+import magic.model.trigger.MagicWhenDiesTrigger;
 
 public class Elgaud_Inquisitor {
-    public static final MagicWhenPutIntoGraveyardTrigger T = new MagicWhenPutIntoGraveyardTrigger() {
+    public static final MagicWhenDiesTrigger T = new MagicWhenDiesTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicGraveyardTriggerData triggerData) {
+        public MagicEvent getEvent(final MagicPermanent permanent) {
             final MagicPlayer player = permanent.getController();
-            return (MagicLocationType.Play == triggerData.fromLocation) ?
-                new MagicEvent(
-                    permanent,
-                    player,
-                    this,
-                    player + " puts a 1/1 white Spirit creature " +
-                    "token with flying onto the battlefield.") :
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                player,
+                this,
+                player + " puts a 1/1 white Spirit creature " +
+                "token with flying onto the battlefield."
+            );
         }
-        
         @Override
         public void executeEvent(
                 final MagicGame game,
