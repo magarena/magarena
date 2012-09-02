@@ -17,14 +17,13 @@ public class Kami_of_the_Tended_Garden {
             final MagicPlayer player = permanent.getController();
             return (player == data) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicMayChoice(
-                                "You may pay {G}.",
-                                new MagicPayManaCostChoice(MagicManaCost.GREEN)),
-                            new Object[]{permanent},
-                            this,
-                            "You may$ pay {G}$. If you don't, sacrifice " + permanent + ".") :
+                    permanent,
+                    player,
+                    new MagicMayChoice(
+                        "You may pay {G}.",
+                        new MagicPayManaCostChoice(MagicManaCost.GREEN)),
+                    this,
+                    "You may$ pay {G}$. If you don't, sacrifice " + permanent + ".") :
                 MagicEvent.NONE;
         }
 
@@ -35,7 +34,7 @@ public class Kami_of_the_Tended_Garden {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isNoChoice(choiceResults[0])) {
-                game.doAction(new MagicSacrificeAction((MagicPermanent)data[0]));
+                game.doAction(new MagicSacrificeAction(event.getPermanent()));
             }            
         }
     };
