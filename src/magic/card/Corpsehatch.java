@@ -25,7 +25,7 @@ public class Corpsehatch {
                     player,
                     MagicTargetChoice.NEG_TARGET_NONBLACK_CREATURE,
                     new MagicDestroyTargetPicker(false),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Destroy target nonblack creature$. " + 
                     "Put two 0/1 colorless Eldrazi Spawn creature tokens onto the battlefield. " +
@@ -43,7 +43,7 @@ public class Corpsehatch {
                     game.doAction(new MagicDestroyAction(creature));
                 }
             });
-            final MagicPlayer player=(MagicPlayer)data[1];
+            final MagicPlayer player=event.getPlayer();
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Eldrazi Spawn")));
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Eldrazi Spawn")));
         }
