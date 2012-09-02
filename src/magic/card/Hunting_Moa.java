@@ -12,7 +12,7 @@ import magic.model.event.MagicEvent;
 import magic.model.target.MagicPumpTargetPicker;
 import magic.model.trigger.MagicGraveyardTriggerData;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
-import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
+import magic.model.trigger.MagicWhenDiesTrigger;
 
 public class Hunting_Moa {
     public static final MagicWhenComesIntoPlayTrigger T2 = new MagicWhenComesIntoPlayTrigger() {
@@ -22,13 +22,13 @@ public class Hunting_Moa {
                 final MagicPermanent permanent,
                 final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.TARGET_CREATURE,
-                    MagicPumpTargetPicker.create(),
-                    MagicEvent.NO_DATA,
-                    this,
-                    player + " puts a +1/+1 counter on target creature$.");
+                permanent,
+                player,
+                MagicTargetChoice.TARGET_CREATURE,
+                MagicPumpTargetPicker.create(),
+                this,
+                player + " puts a +1/+1 counter on target creature$."
+            );
         }    
         @Override
         public void executeEvent(
@@ -48,23 +48,18 @@ public class Hunting_Moa {
         }
     };
     
-    public static final MagicWhenPutIntoGraveyardTrigger T3 = new MagicWhenPutIntoGraveyardTrigger() {
+    public static final MagicWhenDiesTrigger T3 = new MagicWhenDiesTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicGraveyardTriggerData triggerData) {
+        public MagicEvent getEvent(final MagicPermanent permanent) {
             final MagicPlayer player = permanent.getController();
-            return (MagicLocationType.Play == triggerData.fromLocation) ?
-                new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.TARGET_CREATURE,
-                    MagicPumpTargetPicker.create(),
-                    MagicEvent.NO_DATA,
-                    this,
-                    player + " puts a +1/+1 counter on target creature$.") :
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                player,
+                MagicTargetChoice.TARGET_CREATURE,
+                MagicPumpTargetPicker.create(),
+                this,
+                player + " puts a +1/+1 counter on target creature$."
+            );
         }
         
         @Override
