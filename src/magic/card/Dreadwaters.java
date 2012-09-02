@@ -23,7 +23,7 @@ public class Dreadwaters {
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.TARGET_PLAYER,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Target player$ puts the top X cards of his or her library into " +
                     "his or her graveyard, where X is the number of lands you control.");
@@ -37,7 +37,7 @@ public class Dreadwaters {
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer target) {
-                    final MagicPlayer player = (MagicPlayer)data[1];
+                    final MagicPlayer player = event.getPlayer();
                     final int amount = player.getNrOfPermanentsWithType(MagicType.Land);
                     game.doAction(new MagicMillLibraryAction(target,amount));
                 }
