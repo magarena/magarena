@@ -10,25 +10,25 @@ import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
 public class Tel_Jilad_Wolf {
     public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            if (creature == permanent) {
-                final MagicPermanentList plist = new MagicPermanentList();
-                for (final MagicPermanent blocker : permanent.getBlockingCreatures()) {
-                    if (blocker.isArtifact() && blocker.isCreature()) {
-                        plist.add(blocker);
-                    }
-                }
-                if (!plist.isEmpty()) {
-                    final int amount = permanent.getBlockingCreatures().size() * 3;
-                    return new MagicEvent(
-                            permanent,
-                            permanent.getController(),
-                            new Object[]{permanent,amount},
-                            this,
-                            permanent + " gets +" + amount + "/+" +  amount + " until end of turn.");
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
+            if (permanent != attacker) {
+                return MagicEvent.NONE;
+            }
+            int amount = 0;
+            for (final MagicPermanent blocker : permanent.getBlockingCreatures()) {
+                if (blocker.isArtifact() && blocker.isCreature()) {
+                    amount += 3;
                 }
             }
-            return MagicEvent.NONE;
+            return amount > 0 ?
+                new MagicEvent(
+                    permanent,
+                    permanent.getController(),
+                    new Object[]{amount},
+                    this,
+                    permanent + " gets +" + amount + "/+" +  amount + " until end of turn."
+                ):
+                MagicEvent.NONE;
         }
         
         @Override
@@ -38,9 +38,10 @@ public class Tel_Jilad_Wolf {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeTurnPTAction(
-                    (MagicPermanent)data[0],
-                    (Integer)data[1],
-                    (Integer)data[1]));
+                event.getPermanent(),
+                (Integer)data[0],
+                (Integer)data[0]
+            ));
         }
     };
 }
