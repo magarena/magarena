@@ -39,7 +39,7 @@ public class Kazandu_Tuskcaller {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{amount,player},
+                    new Object[]{amount},
                     this,
                     player + description);
         }
@@ -50,7 +50,7 @@ public class Kazandu_Tuskcaller {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[1];
+            final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicPlayTokenAction(
                     player,
                     TokenCardDefinitions.get("Elephant")));
