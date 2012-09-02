@@ -67,7 +67,7 @@ public abstract class MagicStatic extends MagicDummyPermanentModifier implements
 
     public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
         if (filter == MagicTargetFilter.SELF) {
-            return source == target;
+            return source == target && condition(game, source, target);
         } else {
             return filter.accept(game, source.getController(), target) && condition(game, source, target);
         }
