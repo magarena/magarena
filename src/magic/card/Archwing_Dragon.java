@@ -14,13 +14,12 @@ public class Archwing_Dragon {
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicPlayer data) {
+                final MagicPlayer eotPlayer) {
             final MagicPlayer player = permanent.getController();
-            return (player == data) ?
+            return (player == eotPlayer) ?
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{permanent},
                     this,
                     "Return " + permanent + " to its owner's hand."):
                 MagicEvent.NONE;
@@ -32,7 +31,7 @@ public class Archwing_Dragon {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicRemoveFromPlayAction(
-                    (MagicPermanent)data[0],
+                    event.getPermanent(),
                     MagicLocationType.OwnersHand));
         }
     };
