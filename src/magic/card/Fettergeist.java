@@ -15,7 +15,7 @@ import magic.model.stack.MagicTriggerOnStack;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 
 public class Fettergeist {
-    private static final MagicEventAction EVENT = new MagicEventAction() {
+    private static final MagicEventAction EVENT_ACTION = new MagicEventAction() {
         @Override
         public void executeEvent(
             final MagicGame game,
@@ -23,7 +23,7 @@ public class Fettergeist {
             final Object[] data,
             final Object[] choiceResults) {
             if (MagicMayChoice.isNoChoice(choiceResults[0])) {
-                game.doAction(new MagicSacrificeAction((MagicPermanent)event.getSource()));
+                game.doAction(new MagicSacrificeAction(event.getPermanent()));
             }
         }
     };
@@ -33,16 +33,15 @@ public class Fettergeist {
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicPlayer data) {
+                final MagicPlayer upkeepPlayer) {
             final MagicPlayer player = permanent.getController();
-            return (player == data) ?
+            return (player == upkeepPlayer) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{permanent},
-                        this,
-                        "Sacrifice " + permanent + " unless you pay " +
-                        "{1} for each other creature you control.") :
+                    permanent,
+                    player,
+                    this,
+                    "Sacrifice " + permanent + " unless you pay " +
+                    "{1} for each other creature you control.") :
                 MagicEvent.NONE;
         }
 
@@ -56,15 +55,15 @@ public class Fettergeist {
             final int amount = event.getPlayer().getNrOfPermanentsWithType(MagicType.Creature) - x;
             final MagicManaCost cost = MagicManaCost.create("{"+amount+"}");
             final MagicEvent triggerEvent = new MagicEvent(
-                    event.getSource(),
-                    event.getPlayer(),
-                    new MagicMayChoice(
-                            "You may pay " + cost.getText(),
-                            new MagicPayManaCostChoice(cost)),
-                    EVENT,
-                    "You may$ pay " + cost.getText() +
-                    "$. If you don't, sacrifice " + event.getSource() + "."
-                    );
+                event.getSource(),
+                event.getPlayer(),
+                new MagicMayChoice(
+                        "You may pay " + cost.getText(),
+                        new MagicPayManaCostChoice(cost)),
+                EVENT_ACTION,
+                "You may$ pay " + cost.getText() +
+                "$. If you don't, sacrifice " + event.getSource() + "."
+                );
             game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(triggerEvent)));            
         }
     };
