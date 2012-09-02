@@ -18,11 +18,10 @@ public class Goblin_Piledriver {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             return (permanent==creature) ?
                 new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        new Object[]{permanent},
-                        this,
-                        permanent + " gets +2/+0 until end of turn for each other attacking Goblin."):
+                    permanent,
+                    permanent.getController(),
+                    this,
+                    permanent + " gets +2/+0 until end of turn for each other attacking Goblin."):
                 MagicEvent.NONE;
         }
         @Override
@@ -31,18 +30,11 @@ public class Goblin_Piledriver {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            int power=0;
-            final MagicPermanent creature=(MagicPermanent)data[0];
+            final MagicPermanent creature=event.getPermanent();
             final Collection<MagicTarget> targets=
-                game.filterTargets(creature.getController(),MagicTargetFilter.TARGET_ATTACKING_CREATURE);
-            for (final MagicTarget target : targets) {
-                if (creature!=target) {
-                    final MagicPermanent attacker=(MagicPermanent)target;
-                    if (attacker.hasSubType(MagicSubType.Goblin)) {
-                        power+=2;
-                    }
-                }
-            }
+                game.filterTargets(creature.getController(),MagicTargetFilter.TARGET_ATTACKING_GOBLIN);
+            //excluding itself
+            final int power = targets.size() - 1;
             if (power>0) {
                 game.doAction(new MagicChangeTurnPTAction(creature,power,0));
             }
