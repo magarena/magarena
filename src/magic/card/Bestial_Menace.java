@@ -18,7 +18,7 @@ public class Bestial_Menace {
             return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Put a 1/1 green Snake creature token, " + 
                         "a 2/2 green Wolf creature token and " + 
@@ -31,7 +31,7 @@ public class Bestial_Menace {
                 final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-            final MagicPlayer player=(MagicPlayer)data[1];
+            final MagicPlayer player=event.getPlayer();
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Snake")));
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Wolf")));
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Elephant")));
