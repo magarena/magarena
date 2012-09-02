@@ -31,7 +31,6 @@ public class Thalakos_Drifters {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this,
                     source + " gains shadow until end of turn.");
         }
@@ -41,7 +40,7 @@ public class Thalakos_Drifters {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicSetAbilityAction((MagicPermanent)data[0],MagicAbility.Shadow));
+            game.doAction(new MagicSetAbilityAction(event.getPermanent(),MagicAbility.Shadow));
         }
     };
 }
