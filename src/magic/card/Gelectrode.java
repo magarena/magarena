@@ -20,7 +20,6 @@ public class Gelectrode {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{permanent},
                     this,
                     "Untap " + permanent + "."):
                 MagicEvent.NONE;
@@ -31,7 +30,7 @@ public class Gelectrode {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicUntapAction((MagicPermanent)data[0]));
+            game.doAction(new MagicUntapAction(event.getPermanent()));
         }
     };
 }
