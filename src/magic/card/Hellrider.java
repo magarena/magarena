@@ -19,8 +19,7 @@ public class Hellrider {
             return (creature.getController() == player) ?
                 new MagicEvent(
                         permanent,
-                        player,
-                        new Object[]{permanent,player.getOpponent()},
+                        player.getOpponent(),
                         this,
                         permanent + " deals 1 damage to " + player.getOpponent() + ".") :
                 MagicEvent.NONE;
@@ -33,8 +32,8 @@ public class Hellrider {
                 final Object data[],
                 final Object[] choiceResults) {
             final MagicDamage damage = new MagicDamage(
-                    (MagicPermanent)data[0],
-                    (MagicPlayer)data[1],
+                    event.getPermanent(),
+                    event.getPlayer(),
                     1,
                     false);
             game.doAction(new MagicDealDamageAction(damage));
