@@ -58,18 +58,17 @@ public class Glint_Hawk_Idol {
                     otherPermanent.isArtifact() && 
                     otherPermanent.getController() == player) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicSimpleMayChoice(
-                            player + " may have " + permanent + " become a 2/2 Bird " +
-                            "artifact creature with flying until end of turn.",
-                            MagicSimpleMayChoice.BECOME_CREATURE,
-                            0,
-                            MagicSimpleMayChoice.DEFAULT_YES),
-                        new Object[]{permanent},
-                        this,
-                        player + " may$ have " + permanent + " become a 2/2 Bird " +
-                        "artifact creature with flying until end of turn."):
+                    permanent,
+                    player,
+                    new MagicSimpleMayChoice(
+                        player + " may have " + permanent + " become a 2/2 Bird " +
+                        "artifact creature with flying until end of turn.",
+                        MagicSimpleMayChoice.BECOME_CREATURE,
+                        0,
+                        MagicSimpleMayChoice.DEFAULT_YES),
+                    this,
+                    player + " may$ have " + permanent + " become a 2/2 Bird " +
+                    "artifact creature with flying until end of turn."):
                 MagicEvent.NONE;
         }
         
@@ -80,7 +79,7 @@ public class Glint_Hawk_Idol {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                game.doAction(new MagicBecomesCreatureAction((MagicPermanent)data[0],PT,AB,ST));
+                game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT,AB,ST));
             }            
         }        
     };
@@ -102,16 +101,18 @@ public class Glint_Hawk_Idol {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this, 
                     source + " becomes a 2/2 Bird artifact " +
                     "creature with flying until end of turn.");
         }
 
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,
-                final Object[] data,final Object[] choiceResults) {
-            game.doAction(new MagicBecomesCreatureAction((MagicPermanent)data[0],PT,AB,ST));
+        public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
+            game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT,AB,ST));
         }
     };
 }
