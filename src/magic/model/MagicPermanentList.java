@@ -20,10 +20,6 @@ public class MagicPermanentList extends ArrayList<MagicPermanent> implements Mag
 
     @Override
     public MagicPermanentList copy(final MagicCopyMap copyMap) {
-        final MagicPermanentList copy = new MagicPermanentList();
-        for (final MagicPermanent permanent : this) {
-            add(copyMap.copy(permanent));
-        }
-        return copy;
+        return new MagicPermanentList(copyMap, this);
     }
 }
