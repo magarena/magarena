@@ -35,7 +35,6 @@ public class Tree_of_Redemption {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source,source.getController()},
                     this,
                     "Exchange your life total with "+ source + "'s toughness.");
         }
@@ -46,8 +45,8 @@ public class Tree_of_Redemption {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanent permanent = (MagicPermanent)data[0];
-            final MagicPlayer player = (MagicPlayer)data[1];
+            final MagicPermanent permanent = event.getPermanent();
+            final MagicPlayer player = event.getPlayer();
             final int life = player.getLife();
             final int toughness = permanent.getToughness();
             // exchange life with toughness even when they are equal
