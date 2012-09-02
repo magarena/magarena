@@ -34,9 +34,10 @@ public class Goblin_Bombardment {
         final MagicPayedCost payedCost) {
         return new MagicEvent(source, source.getController(),
             MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
-            new MagicDamageTargetPicker(1), new Object[] { source },
-            this, source.getCard()
-                + " deals 1 damage to target creature or player$.");
+            new MagicDamageTargetPicker(1), 
+            new Object[]{source},
+            this,
+            source.getCard() + " deals 1 damage to target creature or player$.");
     }
 
     @Override

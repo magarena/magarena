@@ -22,7 +22,8 @@ public class Backlash {
                     cardOnStack.getCard(),
                     cardOnStack.getController(),
                     MagicTargetChoice.NEG_TARGET_UNTAPPED_CREATURE,
-                    new MagicTapTargetPicker(true,false),new Object[]{cardOnStack},
+                    new MagicTapTargetPicker(true,false),
+                    new Object[]{cardOnStack},
                     this,
                     "Tap target untapped creature$. That creature deals damage equal to its power to its controller.");
         }
