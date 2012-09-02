@@ -18,7 +18,7 @@ public class Reviving_Dose {
             return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     player + " gains 3 life and draws a card.");
         }
@@ -28,9 +28,10 @@ public class Reviving_Dose {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
+            final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[1],3));
-            game.doAction(new MagicDrawAction((MagicPlayer)data[1],1));
+            game.doAction(new MagicChangeLifeAction(player,3));
+            game.doAction(new MagicDrawAction(player,1));
         }
     };
 }
