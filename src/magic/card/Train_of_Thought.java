@@ -22,7 +22,7 @@ public class Train_of_Thought {
                     cardOnStack.getCard(),
                     player,
                     new MagicKickerChoice(MagicManaCost.ONE_BLUE, true, true),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Draw a card.");
         }
@@ -33,7 +33,7 @@ public class Train_of_Thought {
                 final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-            game.doAction(new MagicDrawAction((MagicPlayer)data[1],1));
+            game.doAction(new MagicDrawAction(event.getPlayer(),1));
         }
     };
 }
