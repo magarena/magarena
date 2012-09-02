@@ -23,7 +23,9 @@ public class Fists_of_the_Anvil {
                     player,
                     MagicTargetChoice.POS_TARGET_CREATURE,
                     MagicPumpTargetPicker.create(),
-                    new Object[]{cardOnStack},this,"Target creature$ gets +4/+0 until end of turn.");
+                    new Object[]{cardOnStack},
+                    this,
+                    "Target creature$ gets +4/+0 until end of turn.");
         }
         @Override
         public void executeEvent(

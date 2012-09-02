@@ -28,7 +28,8 @@ public class Afterlife {
                     cardOnStack.getController(),
                     MagicTargetChoice.TARGET_CREATURE,
                     new MagicDestroyTargetPicker(true),
-                    new Object[]{cardOnStack},this,
+                    new Object[]{cardOnStack},
+                    this,
                     "Destroy target creature$. It can't be regenerated. " +
                     "Its controller puts a 1/1 white Spirit creature " +
                     "token with flying onto the battlefield.");

@@ -28,7 +28,8 @@ public class Pongify {
                     cardOnStack.getController(),
                     MagicTargetChoice.TARGET_CREATURE,
                     new MagicDestroyTargetPicker(true),
-                    new Object[]{cardOnStack},this,
+                    new Object[]{cardOnStack},
+                    this,
                     "Destroy target creature$. It can't be regenerated. " +
                     "That creature's controller puts a 3/3 green Ape " +
                     "creature onto the battlefield.");

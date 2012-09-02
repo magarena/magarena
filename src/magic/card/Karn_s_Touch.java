@@ -29,7 +29,8 @@ public class Karn_s_Touch {
                     player,
                     MagicTargetChoice.POS_TARGET_NONCREATURE_ARTIFACT,
                     TP,
-                    new Object[]{cardOnStack,player},this,
+                    new Object[]{cardOnStack,player},
+                    this,
                     "Target noncreature artifact$ becomes an artifact creature with " + 
                     "power and toughness each equal to its converted mana cost until end of turn");
         }
