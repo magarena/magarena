@@ -19,12 +19,11 @@ public class Lavacore_Elemental {
             return (damage.isCombat() && 
                     damage.getTarget().isPlayer() &&
                     source.getController() == player) ?
-                            new MagicEvent(
-                                permanent,
-                                player,
-                                new Object[]{permanent},
-                                this,
-                                player + " puts a time counter on " + permanent + ".") :
+                new MagicEvent(
+                    permanent,
+                    player,
+                    this,
+                    player + " puts a time counter on " + permanent + ".") :
                 MagicEvent.NONE;
         }
         @Override
@@ -33,7 +32,7 @@ public class Lavacore_Elemental {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.Charge,1,true));
+            game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,1,true));
         }
     };
 }
