@@ -50,7 +50,6 @@ public class Myr_Galvanizer {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source,source.getController()},
                     this,
                     "Untap each other Myr you control.");
         }
@@ -60,9 +59,9 @@ public class Myr_Galvanizer {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanent permanent = (MagicPermanent)data[0];
+            final MagicPermanent permanent = event.getPermanent();
             final Collection<MagicTarget> targets = game.filterTargets(
-                    (MagicPlayer)data[1],
+                    event.getPlayer(),
                     MagicTargetFilter.TARGET_MYR_YOU_CONTROL);
             for (final MagicTarget target : targets) {
                 if (target != permanent) {
