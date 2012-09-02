@@ -12,16 +12,15 @@ import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
 public class Dwarven_Berserker {
     public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
             final MagicPlayer player = permanent.getController();
-            return (permanent == data ) ?
-                    new MagicEvent(
-                            permanent,
-                            player,
-                            new Object[]{permanent},
-                            this,
-                            permanent + " gets +3/+0 and gains trample until end of turn."):
-                    MagicEvent.NONE;
+            return (permanent == attacker) ?
+                new MagicEvent(
+                    permanent,
+                    player,
+                    this,
+                    permanent + " gets +3/+0 and gains trample until end of turn."):
+                MagicEvent.NONE;
         }
         
         @Override
@@ -30,7 +29,7 @@ public class Dwarven_Berserker {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent creature = (MagicPermanent)data[0];
+            final MagicPermanent creature = event.getPermanent();
             game.doAction(new MagicChangeTurnPTAction(creature,3,0));
             game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Trample));
         }
