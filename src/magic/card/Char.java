@@ -27,7 +27,7 @@ public class Char {
                     player,
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(4),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     card + " deals 4 damage to target creature or player$ and 2 damage to you.");
         }
@@ -44,7 +44,7 @@ public class Char {
                 public void doAction(final MagicTarget target) {
                     final MagicDamage damage1=new MagicDamage(source,target,4,false);
                     game.doAction(new MagicDealDamageAction(damage1));
-                    final MagicDamage damage2=new MagicDamage(source,(MagicPlayer)data[1],2,false);
+                    final MagicDamage damage2=new MagicDamage(source,event.getPlayer(),2,false);
                     game.doAction(new MagicDealDamageAction(damage2));
                 }
             });
