@@ -50,13 +50,12 @@ public class Shrine_of_Burning_Rage {
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
-                    new MagicDamageTargetPicker(source.getCounters(MagicCounterType.Charge)),
-                    new Object[]{source},
-                    this,
-                    source + " deals damage equal to the number of charge counters on it to target creature or player$.");
+                source,
+                source.getController(),
+                MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                new MagicDamageTargetPicker(source.getCounters(MagicCounterType.Charge)),
+                this,
+                source + " deals damage equal to the number of charge counters on it to target creature or player$.");
         }
 
         @Override
@@ -67,7 +66,7 @@ public class Shrine_of_Burning_Rage {
                 final Object[] choiceResults) {
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
-                    final MagicPermanent source=(MagicPermanent)data[0];
+                    final MagicPermanent source=event.getPermanent();
                     final int amount=source.getCounters(MagicCounterType.Charge);
                     if (amount>0) {
                         final MagicDamage damage=new MagicDamage(source,target,amount,false);
@@ -83,13 +82,12 @@ public class Shrine_of_Burning_Rage {
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicPlayer data) {
+                final MagicPlayer upkeepPlayer) {
             final MagicPlayer player=permanent.getController();
-            return (player==data) ?
+            return (player==upkeepPlayer) ?
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{permanent},
                     this,
                     "Put a charge counter on " + permanent + "."):
                 MagicEvent.NONE;
@@ -102,7 +100,7 @@ public class Shrine_of_Burning_Rage {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
-                        (MagicPermanent)data[0],
+                        event.getPermanent(),
                         MagicCounterType.Charge,
                         1,
                         true));
@@ -114,14 +112,13 @@ public class Shrine_of_Burning_Rage {
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicCardOnStack data) {
+                final MagicCardOnStack cardOnStack) {
             final MagicPlayer player=permanent.getController();
-            final MagicCard card=data.getCard();
+            final MagicCard card=cardOnStack.getCard();
             return (card.getOwner()==player&&MagicColor.Red.hasColor(card.getColorFlags())) ?
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{permanent},
                     this,
                     "Put a charge counter on " + permanent + "."):
                 MagicEvent.NONE;
@@ -134,7 +131,7 @@ public class Shrine_of_Burning_Rage {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
-                        (MagicPermanent)data[0],
+                        event.getPermanent(),
                         MagicCounterType.Charge,
                         1,
                         true));
