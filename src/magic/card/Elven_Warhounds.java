@@ -11,21 +11,21 @@ import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
 public class Elven_Warhounds {
     public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            if (creature == permanent) {
-                final MagicPermanentList plist = new MagicPermanentList(permanent.getBlockingCreatures());
-                return new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        new Object[]{plist},
-                        this,
-                        plist.size() > 1 ?
-                        "Put blocking creatures on top of their owner's library." :
-                        "Put " + plist.get(0) + " on top of its owner's library.");
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
+            if (permanent != attacker) {
+                return MagicEvent.NONE;
             }
-            return MagicEvent.NONE;
+            final MagicPermanentList plist = new MagicPermanentList(permanent.getBlockingCreatures());
+            return new MagicEvent(
+                permanent,
+                permanent.getController(),
+                new Object[]{plist},
+                this,
+                plist.size() > 1 ?
+                    "Put blocking creatures on top of their owner's library." :
+                    "Put " + plist.get(0) + " on top of its owner's library."
+            );
         }
-        
         @Override
         public void executeEvent(
                 final MagicGame game,
