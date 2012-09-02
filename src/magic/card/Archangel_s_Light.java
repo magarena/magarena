@@ -23,7 +23,7 @@ public class Archangel_s_Light {
             return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     player + " gains 2 life for each card in his or her " +
                     "graveyard, then shuffles his or her graveyard into " +
@@ -35,7 +35,7 @@ public class Archangel_s_Light {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[1];
+            final MagicPlayer player = event.getPlayer();
             final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
             for (final MagicCard card : graveyard) {
                 game.doAction(new MagicChangeLifeAction(player,2));
