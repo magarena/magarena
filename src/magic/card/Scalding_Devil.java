@@ -41,7 +41,6 @@ public class Scalding_Devil {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_PLAYER,
                     new MagicDamageTargetPicker(1),
-                    new Object[]{source},
                     this,
                     source + " deals 1 damage to target player$.");
         }
@@ -54,7 +53,7 @@ public class Scalding_Devil {
                 final Object[] choiceResults) {
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
-                    final MagicDamage damage=new MagicDamage((MagicSource)data[0],player,1,false);
+                    final MagicDamage damage=new MagicDamage(event.getSource(),player,1,false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });
