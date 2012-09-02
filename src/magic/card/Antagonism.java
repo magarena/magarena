@@ -16,12 +16,10 @@ public class Antagonism {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPlayer player) {
-            final MagicPlayer opponent = player.getOpponent();
-            return (!opponent.hasState(MagicPlayerState.WasDealtDamage)) ?
+            return (!player.getOpponent().hasState(MagicPlayerState.WasDealtDamage)) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
-                    new Object[]{permanent,player},
+                    player,
                     this,
                     permanent + " deals 2 damage to " + player + "."):
                 MagicEvent.NONE;
@@ -34,8 +32,8 @@ public class Antagonism {
                 final Object data[],
                 final Object[] choiceResults) {
             final MagicDamage damage = new MagicDamage(
-                    (MagicPermanent)data[0],
-                    (MagicPlayer)data[1],
+                    event.getSource(),
+                    event.getPlayer(),
                     2,
                     false);
             game.doAction(new MagicDealDamageAction(damage));
