@@ -27,7 +27,7 @@ public class Wildsize {
                     player,
                     MagicTargetChoice.POS_TARGET_CREATURE,
                     MagicPumpTargetPicker.create(),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Target creature$ gets +2/+2 and gains trample until end of turn. Draw a card.");
         }
@@ -45,7 +45,7 @@ public class Wildsize {
                     game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Trample));
                 }
             });
-            game.doAction(new MagicDrawAction((MagicPlayer)data[1],1));
+            game.doAction(new MagicDrawAction(event.getPlayer(),1));
         }
     };
 }
