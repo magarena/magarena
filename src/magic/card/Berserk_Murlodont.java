@@ -11,19 +11,17 @@ import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
 public class Berserk_Murlodont {
     public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            final MagicPlayer player = permanent.getController();
-            if (player == data.getController() &&
-                data.hasSubType(MagicSubType.Beast)) {
-                final int amount = data.getBlockingCreatures().size();
-                return new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{data,amount},
-                        this,
-                        data + " gets +" + amount + "/+" +  amount + " until end of turn.");
-            }
-            return MagicEvent.NONE;
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
+            final int amount = blocker.getBlockingCreatures().size();
+            return blocker.hasSubType(MagicSubType.Beast) ?
+                new MagicEvent(
+                    permanent,
+                    permanent.getController(),
+                    new Object[]{blocker,amount},
+                    this,
+                    blocker + " gets +" + amount + "/+" +  amount + " until end of turn."
+                ):
+                MagicEvent.NONE;
         }
         
         @Override
