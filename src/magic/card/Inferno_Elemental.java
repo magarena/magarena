@@ -14,11 +14,9 @@ public class Inferno_Elemental {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             if (creature == permanent) {
-                final MagicPermanentList plist = permanent.getBlockingCreatures();
                 return new MagicEvent(
                         permanent,
                         permanent.getController(),
-                        new Object[]{permanent,plist},
                         this,
                         permanent + " deals 3 damage to blocking creature.");
             }
@@ -31,8 +29,8 @@ public class Inferno_Elemental {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent permanent = (MagicPermanent)data[0];
-            final MagicPermanentList plist = (MagicPermanentList)data[1];
+            final MagicPermanent permanent = event.getPermanent();
+            final MagicPermanentList plist = permanent.getBlockingCreatures();
             for (final MagicPermanent blocker : plist) {
                 final MagicDamage damage = new MagicDamage(permanent,blocker,3,false);
                 game.doAction(new MagicDealDamageAction(damage));
@@ -48,7 +46,6 @@ public class Inferno_Elemental {
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
-                    new Object[]{permanent,blocked},
                     this,
                     permanent + " deals 3 damage to " + blocked + "."):
                 MagicEvent.NONE;
@@ -60,8 +57,8 @@ public class Inferno_Elemental {
                 final Object data[],
                 final Object[] choiceResults) {
             final MagicDamage damage = new MagicDamage(
-                    (MagicPermanent)data[0],
-                    (MagicPermanent)data[1],
+                    event.getPermanent(),
+                    event.getPermanent().getBlockedCreature(),
                     3,
                     false);
             game.doAction(new MagicDealDamageAction(damage));
