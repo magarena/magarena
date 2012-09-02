@@ -24,7 +24,6 @@ public class Gigadrowse {
                     cardOnStack.getController(),
                     new MagicKickerChoice(MagicTargetChoice.NEG_TARGET_PERMANENT, MagicManaCost.BLUE, true, true),
                     new MagicTapTargetPicker(true,false),
-                    MagicEvent.NO_DATA,
                     this,
                     "Tap target permanent$.");
         }

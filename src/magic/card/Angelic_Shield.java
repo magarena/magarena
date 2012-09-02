@@ -47,7 +47,6 @@ public class Angelic_Shield {
                     source.getController(),
                     MagicTargetChoice.TARGET_CREATURE,
                     MagicBounceTargetPicker.getInstance(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Return target creature$ to its owner's hand.");
         }

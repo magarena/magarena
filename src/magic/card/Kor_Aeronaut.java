@@ -66,7 +66,6 @@ public class Kor_Aeronaut {
                     permanent,
                     player,
                     MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicEvent.NO_DATA,
                     KICKED,
                     "Target creature$ gains flying until end of turn."
                 );

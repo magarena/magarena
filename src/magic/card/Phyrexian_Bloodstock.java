@@ -21,7 +21,6 @@ public class Phyrexian_Bloodstock {
                         permanent.getController(),
                         MagicTargetChoice.TARGET_WHITE_CREATURE,
                         new MagicDestroyTargetPicker(true),
-                        MagicEvent.NO_DATA,
                         this,
                         "Destroy target white creature$. It can't be regenerated.") :
             MagicEvent.NONE;

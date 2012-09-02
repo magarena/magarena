@@ -35,7 +35,6 @@ public class Royal_Assassin {
                     player,
                     MagicTargetChoice.NEG_TARGET_TAPPED_CREATURE,
                     new MagicDestroyTargetPicker(false),
-                    MagicEvent.NO_DATA,
                     this,
                     "Destroy target tapped creature$.");
         }

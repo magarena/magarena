@@ -78,7 +78,6 @@ public class Grave_Exchange {
                     event.getSource(),
                     event.getPlayer(),
                     MagicTargetChoice.NEG_TARGET_PLAYER,
-                    MagicEvent.NO_DATA,
                     EVENT,
                     "Target player$ sacrifices a creature."
                 );

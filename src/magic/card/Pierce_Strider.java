@@ -18,7 +18,6 @@ public class Pierce_Strider {
                     permanent,
                     player,
                     MagicTargetChoice.TARGET_OPPONENT,
-                    MagicEvent.NO_DATA,
                     this,
                     "Target opponent$ loses 3 life.");
         }

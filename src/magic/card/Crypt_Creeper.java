@@ -39,7 +39,6 @@ public class Crypt_Creeper {
                     MagicTargetChoice.NEG_TARGET_CARD_FROM_ALL_GRAVEYARDS,
                     // exiling a high cost card is good here
                     new MagicGraveyardTargetPicker(true),
-                    MagicEvent.NO_DATA,
                     this,
                     "Exile target card$ from a graveyard.");
         }

@@ -22,7 +22,6 @@ public class Farbog_Boneflinger {
                     player,
                     MagicTargetChoice.TARGET_CREATURE,
                     new MagicWeakenTargetPicker(2,2),
-                    MagicEvent.NO_DATA,
                     this,
                     "Target creature$ gets -2/-2 until end of turn.");
         }

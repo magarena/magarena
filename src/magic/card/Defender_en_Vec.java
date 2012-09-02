@@ -36,7 +36,6 @@ public class Defender_en_Vec {
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE_OR_PLAYER,
                     MagicPreventTargetPicker.getInstance(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Prevent the next 2 damage that would be dealt " +
                     "to target creature or player$ this turn.");

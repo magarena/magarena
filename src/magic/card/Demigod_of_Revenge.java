@@ -25,7 +25,6 @@ public class Demigod_of_Revenge {
             return new MagicEvent(
                     data.getSource(),
                     player,
-                    MagicEvent.NO_DATA,
                     this,
                     "Return all cards named " + data.getSource() +
                     " from your graveyard to the battlefield.");

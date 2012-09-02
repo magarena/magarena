@@ -19,7 +19,6 @@ public class Angel_of_Despair {
                     player,
                     MagicTargetChoice.TARGET_PERMANENT,
                     new MagicDestroyTargetPicker(false),
-                    MagicEvent.NO_DATA,
                     this,
                     "Destroy target permanent$.");
         }

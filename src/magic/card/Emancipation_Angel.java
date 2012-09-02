@@ -23,7 +23,6 @@ public class Emancipation_Angel {
                     player,
                     MagicTargetChoice.TARGET_PERMANENT_YOU_CONTROL,
                     MagicBounceTargetPicker.getInstance(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Return a permanent$ you control to its owner's hand.");
         }

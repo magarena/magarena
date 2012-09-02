@@ -15,7 +15,6 @@ public class Fledgling_Griffin {
             return new MagicEvent(
                     permanent,
                     permanent.getController(),
-                    MagicEvent.NO_DATA,
                     this,
                     permanent + " gains flying until end of turn.");
         }

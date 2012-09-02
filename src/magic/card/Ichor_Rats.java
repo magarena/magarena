@@ -14,7 +14,6 @@ public class Ichor_Rats {
             return new MagicEvent(
                     permanent,
                     player,
-                    MagicEvent.NO_DATA,
                     this,
                     "Each player gets a poison counter.");
         }

@@ -49,7 +49,6 @@ public class Nephalia_Smuggler {
                     source.getController(),
                     targetChoice,
                     MagicBounceTargetPicker.getInstance(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Exile another target creature you control$, then " +
                     "return that card to the battlefield under your control.");

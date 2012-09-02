@@ -19,7 +19,6 @@ public class Hammerheim_Deadeye {
                     player,
                     MagicTargetChoice.TARGET_CREATURE_WITH_FLYING,
                     new MagicDestroyTargetPicker(false),
-                    MagicEvent.NO_DATA,
                     this,
                     "Destroy target creature with flying$.");
         }

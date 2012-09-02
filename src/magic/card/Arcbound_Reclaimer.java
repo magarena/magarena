@@ -36,7 +36,6 @@ public class Arcbound_Reclaimer {
                     source.getController(),
                     MagicTargetChoice.TARGET_ARTIFACT_CARD_FROM_GRAVEYARD,
                     new MagicGraveyardTargetPicker(false),
-                    MagicEvent.NO_DATA,
                     this,
                     "Put target artifact card$ from your graveyard on top of your library");
         }

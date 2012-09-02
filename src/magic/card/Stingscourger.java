@@ -23,7 +23,6 @@ public class Stingscourger {
                     player,
                     MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
                     MagicBounceTargetPicker.getInstance(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Return target creature$ your opponent " +
                     "controls to its owner's hand.");

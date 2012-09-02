@@ -22,7 +22,6 @@ public class Shivan_Wurm {
                     player,
                     MagicTargetChoice.RED_OR_GREEN_CREATURE_YOU_CONTROL,
                     MagicBounceTargetPicker.getInstance(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Return a red or green creature you control$ to its owner's hand.");
         }

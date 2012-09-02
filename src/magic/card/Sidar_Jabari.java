@@ -21,7 +21,6 @@ public class Sidar_Jabari {
                         player,
                         MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
                         new MagicTapTargetPicker(true,false),
-                        MagicEvent.NO_DATA,
                         this,
                         "Tap target creature defending player controls."):
                 MagicEvent.NONE;

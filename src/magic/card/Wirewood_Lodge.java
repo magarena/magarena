@@ -38,7 +38,6 @@ public class Wirewood_Lodge {
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_ELF,
                     new MagicTapTargetPicker(false,true),
-                    MagicEvent.NO_DATA,
                     this,
                     "Untap target Elf$.");
         }

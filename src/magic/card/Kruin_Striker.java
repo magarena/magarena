@@ -23,7 +23,6 @@ public class Kruin_Striker {
                 new MagicEvent(
                         permanent,
                         player,
-                        MagicEvent.NO_DATA,
                         this,
                         permanent + " gets +1/+0 and gains trample until end of turn."):
                 MagicEvent.NONE;

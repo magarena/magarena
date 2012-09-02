@@ -28,7 +28,6 @@ public class Restoration_Angel {
                             "You may exile target non-Angel creature you control.",
                             MagicTargetChoice.TARGET_NON_ANGEL_CREATURE_YOU_CONTROL),
                     MagicBounceTargetPicker.getInstance(),
-                    MagicEvent.NO_DATA,
                     this,
                     "You may$ exile target non-Angel creature$ you control, then return " +
                     "that card to the battlefield under your control.");

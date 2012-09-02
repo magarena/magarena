@@ -21,7 +21,6 @@ public class Blowfly_Infestation {
                     permanent.getController(),
                     MagicTargetChoice.TARGET_CREATURE,
                     new MagicWeakenTargetPicker(1,1),
-                    MagicEvent.NO_DATA,
                     this,
                     "Put a -1/-1 counter on target creature$."):
                 MagicEvent.NONE;

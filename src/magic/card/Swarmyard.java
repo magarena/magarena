@@ -33,7 +33,6 @@ public class Swarmyard {
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_INSECT_RAT_SPIDER_OR_SQUIRREL,
                     MagicRegenerateTargetPicker.getInstance(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Regenerate target Insect, Rat, Spider, or Squirrel$.");
         }

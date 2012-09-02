@@ -24,7 +24,6 @@ public class Archon_of_Justice {
                         permanent.getController(),
                         MagicTargetChoice.TARGET_PERMANENT,
                         MagicExileTargetPicker.create(),
-                        MagicEvent.NO_DATA,
                         this,
                         "Exile target permanent$."):
                 MagicEvent.NONE;

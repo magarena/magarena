@@ -32,7 +32,6 @@ public class Aven_Mimeomancer {
                             player + " may put a feather counter on target creature.",
                             MagicTargetChoice.TARGET_CREATURE),
                         new MagicBecomeTargetPicker(3,1,true),
-                        MagicEvent.NO_DATA,
                         this,
                         player + " may$ put a feather counter on target creature$."):
                 MagicEvent.NONE;

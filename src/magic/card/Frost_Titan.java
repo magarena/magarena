@@ -53,7 +53,6 @@ public class Frost_Titan {
                     permanent,
                     player,
                     MagicTargetChoice.TARGET_PERMANENT,
-                    MagicEvent.NO_DATA,
                     this,
                     "Tap target permanent$. It doesn't untap during its controller's next untap step.");
         }
@@ -80,7 +79,6 @@ public class Frost_Titan {
                     permanent,
                     permanent.getController(),
                     MagicTargetChoice.TARGET_PERMANENT,
-                    MagicEvent.NO_DATA,
                     this,
                     "Tap target permanent$. It doesn't untap during its controller's next untap step."):
                 MagicEvent.NONE;

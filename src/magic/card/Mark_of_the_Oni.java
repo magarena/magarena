@@ -23,7 +23,6 @@ public class Mark_of_the_Oni {
                 new MagicEvent(
                     permanent,
                     player,
-                    MagicEvent.NO_DATA,
                     this,
                     "Sacrifice " + permanent + "."):
                 MagicEvent.NONE;

@@ -20,7 +20,6 @@ public class Devout_Lightcaster {
                     player,
                     MagicTargetChoice.TARGET_BLACK_PERMANENT,
                     MagicExileTargetPicker.create(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Exile target black permanent$.");
         }

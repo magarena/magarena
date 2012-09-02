@@ -38,7 +38,6 @@ public class Ethersworn_Adjudicator {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_ENCHANTMENT,
                     new MagicDestroyTargetPicker(false),
-                    MagicEvent.NO_DATA,
                     this,
                     "Destroy target creature or enchantment$.");
         }

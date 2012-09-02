@@ -59,7 +59,6 @@ public class Kodama_of_the_Center_Tree {
                         player,
                         mayChoice,
                         new MagicGraveyardTargetPicker(false),
-                        MagicEvent.NO_DATA,
                         this,
                         player + " may$ return target Spirit card$ with " +
                         "converted mana cost " + cmc + " or less " +

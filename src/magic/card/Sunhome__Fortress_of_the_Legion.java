@@ -41,7 +41,6 @@ public class Sunhome__Fortress_of_the_Legion {
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
                     MagicFirstStrikeTargetPicker.create(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Target creature$ gains double strike until end of turn.");
         }

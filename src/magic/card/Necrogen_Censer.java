@@ -37,7 +37,6 @@ public class Necrogen_Censer {
                     source,
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_PLAYER,
-                    MagicEvent.NO_DATA,
                     this,
                     "Target player$ loses 2 life.");
         }

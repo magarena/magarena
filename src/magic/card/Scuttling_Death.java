@@ -33,7 +33,6 @@ public class Scuttling_Death {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     new MagicWeakenTargetPicker(1,1),
-                    MagicEvent.NO_DATA,
                     this,
                     "Target creature$ gets -1/-1 until end of turn.");
         }

@@ -22,7 +22,6 @@ public class Riot_Ringleader {
                 new MagicEvent(
                         permanent,
                         permanent.getController(),
-                        MagicEvent.NO_DATA,
                         this,
                         "Human creatures " + permanent.getController() +
                         " controls get +1/+0 until end of turn."):

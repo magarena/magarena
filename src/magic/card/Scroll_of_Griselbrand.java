@@ -40,7 +40,6 @@ public class Scroll_of_Griselbrand {
             return new MagicEvent(
                 source,
                 player,
-                MagicEvent.NO_DATA,
                 this,
                 "Opponent discards a card. If " + player +
                 " controls a Demon, opponent loses 3 life.");

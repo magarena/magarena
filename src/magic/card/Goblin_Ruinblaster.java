@@ -68,7 +68,6 @@ public class Goblin_Ruinblaster {
                     player,
                     MagicTargetChoice.NEG_TARGET_NONBASIC_LAND,
                     new MagicDestroyTargetPicker(false),
-                    MagicEvent.NO_DATA,
                     KICKED,
                     "Destroy target nonbasic land$."
                 );

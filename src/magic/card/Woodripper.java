@@ -38,7 +38,6 @@ public class Woodripper {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_ARTIFACT,
                     new MagicDestroyTargetPicker(false),
-                    MagicEvent.NO_DATA,
                     this,
                     "Destroy target artifact$.");
         }

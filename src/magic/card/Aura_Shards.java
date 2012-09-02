@@ -24,7 +24,6 @@ public class Aura_Shards {
                             player + " may destroy target artifact or enchantment.",
                             MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_ENCHANTMENT),
                         new MagicDestroyTargetPicker(false),
-                        MagicEvent.NO_DATA,
                         this,
                         player + " may$ destroy target artifact or enchantment$."):
                 MagicEvent.NONE;

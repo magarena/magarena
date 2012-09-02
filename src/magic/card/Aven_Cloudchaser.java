@@ -19,7 +19,6 @@ public class Aven_Cloudchaser {
                     player,
                     MagicTargetChoice.TARGET_ENCHANTMENT,
                     new MagicDestroyTargetPicker(false),
-                    MagicEvent.NO_DATA,
                     this,
                     "Destroy target enchantment$.");
         }

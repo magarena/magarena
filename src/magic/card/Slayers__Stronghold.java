@@ -46,7 +46,6 @@ public class Slayers__Stronghold {
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
                     MagicPumpTargetPicker.create(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Target creature gets +2/+0 and gains " +
                     "vigilance and haste until end of turn.");

@@ -19,7 +19,6 @@ public class Woodfall_Primus {
                     player,
                     MagicTargetChoice.TARGET_NONCREATURE,
                     new MagicDestroyTargetPicker(false),
-                    MagicEvent.NO_DATA,
                     this,
                     "Destroy target noncreature permanent$.");
         }

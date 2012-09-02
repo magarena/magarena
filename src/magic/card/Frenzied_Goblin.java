@@ -29,7 +29,6 @@ public class Frenzied_Goblin {
                             new MagicPayManaCostChoice(MagicManaCost.RED),
                             MagicTargetChoice.NEG_TARGET_CREATURE),
                         new MagicNoCombatTargetPicker(false,true,false),
-                        MagicEvent.NO_DATA,
                         this,
                         "You may$ pay {R}$. If you do, target creature$ can't block this turn."):
                 MagicEvent.NONE;

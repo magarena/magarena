@@ -27,7 +27,6 @@ public class Gravedigger {
                         "his or her graveyard to his or her hand.",
                         MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD),
                     new MagicGraveyardTargetPicker(false),
-                    MagicEvent.NO_DATA,
                     this,
                     player + " may$ return target creature card$ from" +
                     " his or her graveyard to his or her hand.");

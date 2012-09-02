@@ -20,7 +20,6 @@ public class Hollowhenge_Spirit {
                     permanent,
                     player,
                     MagicTargetChoice.TARGET_ATTACKING_OR_BLOCKING_CREATURE,
-                    MagicEvent.NO_DATA,
                     this,
                     "Remove target attacking or blocking creature$ from combat.");
         }

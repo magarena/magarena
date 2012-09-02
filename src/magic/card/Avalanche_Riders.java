@@ -19,7 +19,6 @@ public class Avalanche_Riders {
                     player,
                     MagicTargetChoice.TARGET_LAND,
                     new MagicDestroyTargetPicker(false),
-                    MagicEvent.NO_DATA,
                     this,
                     "Destroy target land$.");
         }

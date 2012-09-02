@@ -22,7 +22,6 @@ public class Argentum_Armor {
                         permanent.getController(),
                         MagicTargetChoice.TARGET_PERMANENT,
                         new MagicDestroyTargetPicker(false),
-                        MagicEvent.NO_DATA,
                         this,
                         "Destroy target permanent$."):
                 MagicEvent.NONE;

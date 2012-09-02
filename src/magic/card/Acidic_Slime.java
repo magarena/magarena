@@ -19,7 +19,6 @@ public class Acidic_Slime {
                     player,
                     MagicTargetChoice.TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND,
                     new MagicDestroyTargetPicker(false),
-                    MagicEvent.NO_DATA,
                     this,
                     "Destroy target artifact, enchantment or land$.");
         }

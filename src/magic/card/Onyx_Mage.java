@@ -36,7 +36,6 @@ public class Onyx_Mage {
                     source.getController(),
                     MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
                     MagicDeathtouchTargetPicker.getInstance(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Target creature$ you control gains deathtouch until end of turn.");
         }

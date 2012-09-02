@@ -20,7 +20,6 @@ public class Affa_Guard_Hound {
                     player,
                     MagicTargetChoice.TARGET_CREATURE,
                     MagicPumpTargetPicker.create(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Target creature$ gets +0/+3 until end of turn.");
         }

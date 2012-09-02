@@ -38,7 +38,6 @@ public class Brittle_Effigy {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     MagicExileTargetPicker.create(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Exile target creature$.");
         }

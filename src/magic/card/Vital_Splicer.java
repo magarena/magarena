@@ -38,7 +38,6 @@ public class Vital_Splicer {
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_GOLEM_YOU_CONTROL,
                     MagicRegenerateTargetPicker.getInstance(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Regenerate target Golem$ you control.");
         }

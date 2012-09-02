@@ -23,7 +23,6 @@ public class Timberland_Guide {
                     player,
                     MagicTargetChoice.TARGET_CREATURE,
                     MagicPumpTargetPicker.create(),
-                    MagicEvent.NO_DATA,
                     this,
                     player + " puts a +1/+1 counter on target creature$.");
         }    

@@ -35,7 +35,6 @@ public class Silverchase_Fox {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_ENCHANTMENT,
                     new MagicDestroyTargetPicker(false),
-                    MagicEvent.NO_DATA,
                     this,
                     "Exile target enchantment$.");
         }

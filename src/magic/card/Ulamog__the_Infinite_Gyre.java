@@ -31,7 +31,6 @@ public class Ulamog__the_Infinite_Gyre {
                     player,
                     MagicTargetChoice.TARGET_PERMANENT,
                     new MagicDestroyTargetPicker(false),
-                    MagicEvent.NO_DATA,
                     this,
                     "Destroy target permanent$.");
         }

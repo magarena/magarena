@@ -31,7 +31,6 @@ public class Griselbrand {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Draw seven cards");
         }

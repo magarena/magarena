@@ -34,7 +34,6 @@ public class Merfolk_Seastalkers {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE_WITHOUT_FLYING,
                     new MagicTapTargetPicker(true,false),
-                    MagicEvent.NO_DATA,
                     this,
                     "Tap target creature$ without flying.");
         }

@@ -35,7 +35,6 @@ public class Rage_Nimbus {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     MagicMustAttackTargetPicker.create(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Target creature$ attacks this turn if able.");
         }

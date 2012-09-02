@@ -36,7 +36,6 @@ public class Scrib_Nibblers {
                             MagicSimpleMayChoice.UNTAP,
                             1,
                             MagicSimpleMayChoice.DEFAULT_YES),
-                    MagicEvent.NO_DATA,
                     this,
                     player + " may$ untap " + permanent + ".");
         }

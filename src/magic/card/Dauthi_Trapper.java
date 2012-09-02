@@ -34,7 +34,6 @@ public class Dauthi_Trapper {
                     source.getController(),
                     MagicTargetChoice.TARGET_CREATURE,
                     MagicShadowTargetPicker.getInstance(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Target creature$ gains shadow until end of turn.");
         }

@@ -40,7 +40,6 @@ public class Goblin_Burrows {
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_GOBLIN_CREATURE,
                     MagicPumpTargetPicker.create(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Target Goblin creature$ gets +2/+0 until end of turn.");
         }

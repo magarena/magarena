@@ -61,7 +61,6 @@ public class Avenger_of_Zendikar {
                                 MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
                                 1,
                                 MagicSimpleMayChoice.DEFAULT_YES),
-                        MagicEvent.NO_DATA,
                         this,
                         player + " may$ put a +1/+1 counter on each " +
                         "Plant creature he or she controls.");

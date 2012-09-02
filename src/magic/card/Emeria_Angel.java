@@ -24,7 +24,6 @@ public class Emeria_Angel {
                             MagicSimpleMayChoice.PLAY_TOKEN,
                             1,
                             MagicSimpleMayChoice.DEFAULT_YES),
-                    MagicEvent.NO_DATA,
                     this,
                     player + " may$ put a 1/1 white Bird creature " +
                     "token with flying onto the battlefield.");

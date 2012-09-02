@@ -45,7 +45,6 @@ public class Skirsdag_Flayer {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     new MagicDestroyTargetPicker(false),
-                    MagicEvent.NO_DATA,
                     this,
                     "Destroy target creature$.");
         }

@@ -69,7 +69,6 @@ public class Gatekeeper_of_Malakir {
                     permanent,
                     player,
                     MagicTargetChoice.NEG_TARGET_PLAYER,
-                    MagicEvent.NO_DATA,
                     KICKED,
                     "Target player$ sacrifices a creature."
                 );

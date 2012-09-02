@@ -19,7 +19,6 @@ public class Manic_Vandal {
                     player,
                     MagicTargetChoice.TARGET_ARTIFACT,
                     new MagicDestroyTargetPicker(false),
-                    MagicEvent.NO_DATA,
                     this,
                     "Destroy target artifact$.");
         }

@@ -26,7 +26,6 @@ public class Angel_of_Flight_Alabaster {
                     player,
                     MagicTargetChoice.TARGET_SPIRIT_CARD_FROM_GRAVEYARD,
                     new MagicGraveyardTargetPicker(false),
-                    MagicEvent.NO_DATA,
                     this,
                     "Return target Spirit card$ from your graveyard to your hand.");
         }

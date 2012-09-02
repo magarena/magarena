@@ -96,7 +96,6 @@ public class Lim_Dul_the_Necromancer {
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_ZOMBIE,
                     MagicRegenerateTargetPicker.getInstance(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Regenerate target Zombie$.");
         }

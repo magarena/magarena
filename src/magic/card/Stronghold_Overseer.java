@@ -39,7 +39,6 @@ public class Stronghold_Overseer {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Creatures with shadow get +1/+0 until end of turn and " +
                     "creatures without shadow get -1/-0 until end of turn.");

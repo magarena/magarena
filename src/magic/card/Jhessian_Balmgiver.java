@@ -36,7 +36,6 @@ public class Jhessian_Balmgiver {
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
                     MagicUnblockableTargetPicker.create(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Target creature$ is unblockable this turn.");
         }

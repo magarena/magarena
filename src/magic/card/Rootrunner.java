@@ -35,7 +35,6 @@ public class Rootrunner {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_LAND,
                     MagicBounceTargetPicker.getInstance(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Put target land$ on top of its owner's library.");
         }

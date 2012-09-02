@@ -27,7 +27,6 @@ public class Necropede {
                             player + " may put a -1/-1 counter on target creature.",
                             MagicTargetChoice.NEG_TARGET_CREATURE),
                     new MagicWeakenTargetPicker(1,1),
-                    MagicEvent.NO_DATA,
                     this,
                     player + " may put a -1/-1 counter on target creature.") :
                 MagicEvent.NONE;

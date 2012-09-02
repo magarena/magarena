@@ -33,7 +33,6 @@ public class Vedalken_Mastermind {
                     source.getController(),
                     MagicTargetChoice.TARGET_PERMANENT_YOU_CONTROL,
                     MagicBounceTargetPicker.getInstance(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Return target permanent you control$ to its owner's hand.");
         }

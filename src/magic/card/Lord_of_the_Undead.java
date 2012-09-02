@@ -54,7 +54,6 @@ public class Lord_of_the_Undead {
                     source.getController(),
                     MagicTargetChoice.TARGET_ZOMBIE_CARD_FROM_GRAVEYARD,
                     new MagicGraveyardTargetPicker(false),
-                    MagicEvent.NO_DATA,
                     this,
                     "Return target Zombie card$ from your graveyard to your hand.");
         }

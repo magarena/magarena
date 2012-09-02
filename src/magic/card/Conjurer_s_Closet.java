@@ -30,7 +30,6 @@ public class Conjurer_s_Closet {
                             "You may exile target creature you control.",
                             MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL),
                     MagicBounceTargetPicker.getInstance(),
-                    MagicEvent.NO_DATA,
                     this,
                     "You may$ exile target creature$ you control, then return " +
                     "that card to the battlefield under your control."):

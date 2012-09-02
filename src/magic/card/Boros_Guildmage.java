@@ -36,7 +36,6 @@ public class Boros_Guildmage {
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
                     MagicHasteTargetPicker.create(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Target creature$ gains haste until end of turn.");
         }
@@ -72,7 +71,6 @@ public class Boros_Guildmage {
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
                     MagicFirstStrikeTargetPicker.create(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Target creature$ gains first strike until end of turn.");
         }

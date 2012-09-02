@@ -44,7 +44,6 @@ public class Tectonic_Edge {
                     source.getController(),
                     MagicTargetChoice.TARGET_NONBASIC_LAND,
                     new MagicDestroyTargetPicker(false),
-                    MagicEvent.NO_DATA,
                     this,
                     "Destroy target nonbasic land$.");
         }

@@ -34,7 +34,6 @@ public class Pus_Kami {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_NONBLACK_CREATURE,
                     new MagicDestroyTargetPicker(false),
-                    MagicEvent.NO_DATA,
                     this,
                     "Destroy target nonblack creature$.");
         }

@@ -19,7 +19,6 @@ public class Goldnight_Redeemer {
             return new MagicEvent(
                     permanent,
                     player,
-                    MagicEvent.NO_DATA,
                     this,
                     player + " gains 2 life for each " +
                     "other creature he or she controls.");

@@ -34,7 +34,6 @@ public class Alluring_Siren {
                     source.getController(),
                     MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
                     MagicMustAttackTargetPicker.create(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Target creature$ an opponent controls attacks you this turn if able.");
         }

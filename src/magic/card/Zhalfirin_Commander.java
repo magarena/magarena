@@ -32,7 +32,6 @@ public class Zhalfirin_Commander {
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_KNIGHT_CREATURE,
                     MagicPumpTargetPicker.create(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Target Knight creature$ gets +1/+1 until end of turn.");
         }

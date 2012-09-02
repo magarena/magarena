@@ -21,7 +21,6 @@ public class Nekrataal {
                     player,
                     MagicTargetChoice.TARGET_NONARTIFACT_NONBLACK_CREATURE,
                     new MagicDestroyTargetPicker(true),
-                    MagicEvent.NO_DATA,
                     this,
                     "Destroy target nonartifact, nonblack creature$. " +
                     "That creature can't be regenerated.");

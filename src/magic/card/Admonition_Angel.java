@@ -42,7 +42,6 @@ public class Admonition_Angel {
                 player,
                 mayChoice,
                 MagicExileTargetPicker.create(),
-                MagicEvent.NO_DATA,
                 this,
                 player + " may$ exile another target nonland permanent$.");
         }
@@ -72,7 +71,6 @@ public class Admonition_Angel {
                 return new MagicEvent(
                         permanent,
                         permanent.getController(),
-                        MagicEvent.NO_DATA,
                         this,
                         clist.size() > 1 ?
                                 "Return exiled cards to the battlefield." :

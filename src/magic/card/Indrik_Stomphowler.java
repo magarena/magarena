@@ -19,7 +19,6 @@ public class Indrik_Stomphowler {
                     player,
                     MagicTargetChoice.TARGET_ARTIFACT_OR_ENCHANTMENT,
                     new MagicDestroyTargetPicker(false),
-                    MagicEvent.NO_DATA,
                     this,
                     "Destroy target artifact or enchantment$.");
         }

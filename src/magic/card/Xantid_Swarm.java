@@ -21,7 +21,6 @@ public class Xantid_Swarm {
                 new MagicEvent(
                         permanent,
                         player,
-                        MagicEvent.NO_DATA,
                         this,
                         player.getOpponent() + " can't cast spells this turn."):
                 MagicEvent.NONE;           

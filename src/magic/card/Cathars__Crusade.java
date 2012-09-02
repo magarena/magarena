@@ -25,7 +25,6 @@ public class Cathars__Crusade {
                 new MagicEvent(
                         permanent,
                         player,
-                        MagicEvent.NO_DATA,
                         this,
                         player + " puts a +1/+1 counter on " +
                         "each creature he or she controls.") :

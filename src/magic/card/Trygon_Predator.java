@@ -24,7 +24,6 @@ public class Trygon_Predator {
                             "You may destroy target artifact or enchantment.",
                             MagicTargetChoice.TARGET_ARTIFACT_OR_ENCHANTMENT_YOUR_OPPONENT_CONTROLS),
                         new MagicDestroyTargetPicker(false),
-                        MagicEvent.NO_DATA,
                         this,
                         "You may$ destroy target artifact or enchantment$ your opponent controls."):
                 MagicEvent.NONE;

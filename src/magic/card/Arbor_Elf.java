@@ -36,7 +36,6 @@ public class Arbor_Elf {
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_FOREST,
                     new MagicTapTargetPicker(false,true),
-                    MagicEvent.NO_DATA,
                     this,
                     "Untap target Forest$.");
         }

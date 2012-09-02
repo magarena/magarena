@@ -26,7 +26,6 @@ public class Angelic_Benediction {
                             player + " may tap target creature.",
                             MagicTargetChoice.NEG_TARGET_CREATURE),
                         new MagicTapTargetPicker(true,false),
-                        MagicEvent.NO_DATA,
                         this,
                         player + " may$ tap target creature$."):
                 MagicEvent.NONE;

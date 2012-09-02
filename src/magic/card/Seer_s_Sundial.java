@@ -20,7 +20,6 @@ public class Seer_s_Sundial {
                     new MagicMayChoice(
                             "You may pay {2}.",
                             new MagicPayManaCostChoice(MagicManaCost.TWO)),
-                    MagicEvent.NO_DATA,
                     this,
                     "You may$ pay {2}$. If you do, draw a card.");
         }

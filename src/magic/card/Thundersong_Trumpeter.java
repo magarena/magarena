@@ -32,7 +32,6 @@ public class Thundersong_Trumpeter {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     new MagicNoCombatTargetPicker(true,true,false),
-                    MagicEvent.NO_DATA,
                     this,
                     "Target creature$ can't attack or block this turn.");
         }

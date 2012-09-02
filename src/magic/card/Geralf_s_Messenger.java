@@ -21,7 +21,6 @@ public class Geralf_s_Messenger {
                     permanent,
                     player,
                     MagicTargetChoice.TARGET_OPPONENT,
-                    MagicEvent.NO_DATA,
                     this,
                     "Target opponent$ loses 2 life.");
         }

@@ -23,7 +23,6 @@ public class Galepowder_Mage {
                             player,
                             MagicTargetChoice.TARGET_CREATURE,
                             MagicExileTargetPicker.create(),
-                            MagicEvent.NO_DATA,
                             this,
                             "Exile target creature$. Return that card to the " +
                             "battlefield under its owner's control at end of turn.") :

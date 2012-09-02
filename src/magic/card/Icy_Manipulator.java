@@ -36,7 +36,6 @@ public class Icy_Manipulator {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_CREATURE_OR_LAND,
                     new MagicTapTargetPicker(true,false),
-                    MagicEvent.NO_DATA,
                     this,
                     "Tap target artifact, creature, or land$.");
         }

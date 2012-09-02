@@ -33,7 +33,6 @@ public class Intrepid_Hero {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE_POWER_4_OR_MORE,
                     new MagicDestroyTargetPicker(true),
-                    MagicEvent.NO_DATA,
                     this,
                     "Destroy target creature$ with power 4 or greater.");
         }

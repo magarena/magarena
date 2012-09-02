@@ -19,7 +19,6 @@ public class Mystic_Snake {
                     permanent,
                     player,
                     MagicTargetChoice.TARGET_SPELL,
-                    MagicEvent.NO_DATA,
                     this,
                     "Counter target spell$.");
         }

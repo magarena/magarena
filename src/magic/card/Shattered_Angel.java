@@ -22,7 +22,6 @@ public class Shattered_Angel {
                                     MagicSimpleMayChoice.GAIN_LIFE,
                                     3,
                                     MagicSimpleMayChoice.DEFAULT_YES),
-                            MagicEvent.NO_DATA,
                             this,
                             player + " may$ gain 3 life.");
         }

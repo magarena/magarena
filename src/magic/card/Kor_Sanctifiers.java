@@ -68,7 +68,6 @@ public class Kor_Sanctifiers {
                     player,
                     MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_ENCHANTMENT,
                     new MagicDestroyTargetPicker(false),
-                    MagicEvent.NO_DATA,
                     KICKED,
                     "Destroy target artifact or enchantment$."
                 );

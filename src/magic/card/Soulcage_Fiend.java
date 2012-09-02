@@ -20,7 +20,6 @@ public class Soulcage_Fiend {
                 new MagicEvent(
                         permanent,
                         permanent.getController(),
-                        MagicEvent.NO_DATA,
                         this,
                         "Each player loses 3 life."):
                 MagicEvent.NONE;

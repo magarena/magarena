@@ -53,7 +53,8 @@ public class Omnibian {
                     source.getController(),
                     MagicTargetChoice.TARGET_CREATURE,
                     new MagicBecomeTargetPicker(3,3,false),
-                    MagicEvent.NO_DATA,this,"Target creature$ becomes a 3/3 Frog until end of turn.");
+                    this,
+                    "Target creature$ becomes a 3/3 Frog until end of turn.");
         }
 
         @Override

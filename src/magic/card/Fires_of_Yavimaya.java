@@ -45,7 +45,6 @@ public class Fires_of_Yavimaya {
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
                     MagicPumpTargetPicker.create(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Target creature$ gets +2/+2 until end of turn.");
         }

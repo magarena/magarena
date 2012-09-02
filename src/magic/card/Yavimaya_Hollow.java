@@ -38,7 +38,6 @@ public class Yavimaya_Hollow {
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
                     MagicRegenerateTargetPicker.getInstance(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Regenerate target creature$.");
         }

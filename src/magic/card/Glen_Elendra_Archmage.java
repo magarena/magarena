@@ -34,7 +34,6 @@ public class Glen_Elendra_Archmage {
                     source,
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_NONCREATURE_SPELL,
-                    MagicEvent.NO_DATA,
                     this,
                     "Counter target noncreature spell$.");
         }

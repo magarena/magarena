@@ -27,7 +27,6 @@ public class Corpse_Cur {
                         "infect from his or her graveyard to his or her hand.",
                         MagicTargetChoice.TARGET_CREATURE_CARD_WITH_INFECT_FROM_GRAVEYARD),
                     new MagicGraveyardTargetPicker(false),
-                    MagicEvent.NO_DATA,
                     this,
                     player + " may$ return target creature card$ with " +
                     "infect from his or her graveyard to his or her hand.");

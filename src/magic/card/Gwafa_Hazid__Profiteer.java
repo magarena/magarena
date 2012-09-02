@@ -71,7 +71,6 @@ public class Gwafa_Hazid__Profiteer {
                     player,
                     MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
                     new MagicNoCombatTargetPicker(true,true,true),
-                    MagicEvent.NO_DATA,
                     this,
                     player + " puts a bribery counter on target creature$. " +
                         "Its controller draws a card.");

@@ -21,7 +21,6 @@ public class Moonsilver_Spear {
                 new MagicEvent(
                         permanent,
                         permanent.getController(), 
-                        MagicEvent.NO_DATA,
                         this,
                         permanent.getController() + " puts a 4/4 white Angel " +
                         "creature token with flying onto the battlefield."):

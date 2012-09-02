@@ -34,7 +34,6 @@ public class Havengul_Skaab {
                         permanent.getController(),
                         targetChoice,
                         MagicBounceTargetPicker.getInstance(),
-                        MagicEvent.NO_DATA,
                         this,
                         "Return another creature you control$ to its owner's hand.");
             }

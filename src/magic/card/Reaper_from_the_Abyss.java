@@ -20,7 +20,6 @@ public class Reaper_from_the_Abyss {
                         permanent.getController(),
                         MagicTargetChoice.TARGET_NON_DEMON,
                         new MagicDestroyTargetPicker(false),
-                        MagicEvent.NO_DATA,
                         this,
                         "Destroy target non-Demon creature.") :
                     MagicEvent.NONE;

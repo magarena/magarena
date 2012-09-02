@@ -61,7 +61,6 @@ public class Fettergeist {
                     new MagicMayChoice(
                             "You may pay " + cost.getText(),
                             new MagicPayManaCostChoice(cost)),
-                    MagicEvent.NO_DATA,
                     EVENT,
                     "You may$ pay " + cost.getText() +
                     "$. If you don't, sacrifice " + event.getSource() + "."

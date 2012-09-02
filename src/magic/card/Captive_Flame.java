@@ -35,7 +35,6 @@ public class Captive_Flame {
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
                     MagicPumpTargetPicker.create(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Target creature$ gets +1/+0 until end of turn.");
         }

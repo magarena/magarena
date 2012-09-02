@@ -22,7 +22,6 @@ public class Demonic_Rising {
                 new MagicEvent(
                     permanent,
                     player,
-                    MagicEvent.NO_DATA,
                     this,
                     player + " puts a 5/5 black Demon creature " +
                     "token with flying onto the battlefield."):

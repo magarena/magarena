@@ -62,7 +62,6 @@ public class Niblis_of_the_Breath {
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
                     new MagicTapTargetPicker(false,true),
-                    MagicEvent.NO_DATA,
                     this,
                     "Untap target creature$.");
         }

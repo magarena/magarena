@@ -32,7 +32,6 @@ public class Vampire_Hexmage {
                     source.getController(),
                     MagicTargetChoice.TARGET_PERMANENT,
                     MagicCountersTargetPicker.getInstance(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Remove all counters from target permanent$.");
         }

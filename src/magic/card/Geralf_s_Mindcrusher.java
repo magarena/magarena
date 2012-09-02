@@ -20,7 +20,6 @@ public class Geralf_s_Mindcrusher {
                     permanent,
                     player,
                     MagicTargetChoice.NEG_TARGET_PLAYER,
-                    MagicEvent.NO_DATA,
                     this,
                     "Target player$ puts the top five cards of " +
                     "his or her library into his or her graveyard.");

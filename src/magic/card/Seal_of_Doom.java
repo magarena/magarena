@@ -35,7 +35,6 @@ public class Seal_of_Doom {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_NONBLACK_CREATURE,
                     new MagicDestroyTargetPicker(true),
-                    MagicEvent.NO_DATA,
                     this,
                     "Destroy target nonblack creature$. It can't be regenerated.");
         }

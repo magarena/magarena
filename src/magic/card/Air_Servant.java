@@ -34,7 +34,6 @@ public class Air_Servant {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE_WITH_FLYING,
                     new MagicTapTargetPicker(true,false),
-                    MagicEvent.NO_DATA,
                     this,
                     "Tap target creature$ with flying.");
         }

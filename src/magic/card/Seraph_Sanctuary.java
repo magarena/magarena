@@ -21,7 +21,6 @@ public class Seraph_Sanctuary {
                 new MagicEvent(
                         permanent,
                         player,
-                        MagicEvent.NO_DATA,
                         this,
                         player + " gains 1 life.") :
                 MagicEvent.NONE;

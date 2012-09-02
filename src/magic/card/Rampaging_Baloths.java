@@ -24,7 +24,6 @@ public class Rampaging_Baloths {
                                 MagicSimpleMayChoice.PLAY_TOKEN,
                                 1,
                                 MagicSimpleMayChoice.DEFAULT_YES),
-                        MagicEvent.NO_DATA,
                         this,
                         player + " may$ put a 4/4 green Beast " +
                         "creature token onto the battlefield.");

@@ -28,7 +28,6 @@ public class Surgespanner {
                                 new MagicPayManaCostChoice(MagicManaCost.ONE_BLUE),
                                 MagicTargetChoice.TARGET_PERMANENT),
                         MagicBounceTargetPicker.getInstance(),
-                        MagicEvent.NO_DATA,
                         this,
                         "You may$ pay {1}{U}$. If you do, " +
                         "Return target permanent$ to its owner's hand.") :

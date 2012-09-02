@@ -95,7 +95,6 @@ public class Captain_of_the_Mists {
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
                     new MagicTapTargetPicker(false,true),
-                    MagicEvent.NO_DATA,
                     this,
                     "Untap target creature$.");
         }

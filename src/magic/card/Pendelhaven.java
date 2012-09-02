@@ -32,7 +32,6 @@ public class Pendelhaven {
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_1_1_CREATURE,
                     MagicPumpTargetPicker.create(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Target 1/1 creature$ gets +1/+2 until end of turn.");
         }

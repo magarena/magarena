@@ -20,7 +20,6 @@ public class AEther_Adept {
                     player,
                     MagicTargetChoice.TARGET_CREATURE,
                     MagicBounceTargetPicker.getInstance(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Return target creature$ to its owner's hand.");
         }

@@ -22,7 +22,6 @@ public class Grazing_Gladehart {
                             MagicSimpleMayChoice.GAIN_LIFE,
                             2,
                             MagicSimpleMayChoice.DEFAULT_YES),
-                    MagicEvent.NO_DATA,
                     this,
                     player + " may gain 2 life.");
         }

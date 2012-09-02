@@ -25,7 +25,6 @@ public class Elder_Cathar {
                     player,
                     MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
                     MagicPumpTargetPicker.create(),
-                    MagicEvent.NO_DATA,
                     this,
                     player + " puts a +1/+1 counter on target creature he or she controls. " +
                     "If that creature is a Human, put two +1/+1 counters on it instead.") :

@@ -26,7 +26,6 @@ public class Roil_Elemental {
                     new MagicMayChoice(
                         player + " may gain control of target creature for as long as you control " + permanent + ".",
                         MagicTargetChoice.NEG_TARGET_CREATURE),
-                    MagicEvent.NO_DATA,
                     this,
                     "You may$ gain control of target creature$ for as long as you control " + permanent + ".");
         }

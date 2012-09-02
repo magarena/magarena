@@ -23,7 +23,6 @@ public class Rotcrown_Ghoul {
                         permanent,
                         permanent.getController(),
                         MagicTargetChoice.NEG_TARGET_PLAYER,
-                        MagicEvent.NO_DATA,
                         this,
                         "Target player$ puts the top five cards of " +
                         "his or her library into his or her graveyard."):

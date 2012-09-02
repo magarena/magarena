@@ -19,7 +19,6 @@ public class Bone_Shredder {
                     player,
                     MagicTargetChoice.TARGET_NONARTIFACT_NONBLACK_CREATURE,
                     new MagicDestroyTargetPicker(false),
-                    MagicEvent.NO_DATA,
                     this,
                     "Destroy target nonartifact, nonblack creature$.");
         }

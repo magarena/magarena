@@ -42,7 +42,6 @@ public class Rakdos_Guildmage {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     new MagicWeakenTargetPicker(2,2),
-                    MagicEvent.NO_DATA,
                     this,
                     "Target creature$ gets -2/-2 until end of turn.");
         }

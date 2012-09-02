@@ -33,7 +33,6 @@ public class Dauthi_Cutthroat {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE_WITH_SHADOW,
                     new MagicDestroyTargetPicker(false),
-                    MagicEvent.NO_DATA,
                     this,
                     "Destroy target creature with shadow$.");
         }

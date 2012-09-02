@@ -40,7 +40,6 @@ public class Scroll_of_Avacyn {
             return new MagicEvent(
                 source,
                 player,
-                MagicEvent.NO_DATA,
                 this,
                 player + " draws a card. If he or she controls an Angel, " +
                 player + " gains 5 life.");

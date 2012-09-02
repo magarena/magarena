@@ -23,7 +23,6 @@ public class Briarpack_Alpha {
                     player,
                     MagicTargetChoice.TARGET_CREATURE,
                     MagicPumpTargetPicker.create(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Target creature$ gets +2/+2 until end of turn.");
         }

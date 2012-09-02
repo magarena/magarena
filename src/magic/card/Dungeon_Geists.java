@@ -23,7 +23,6 @@ public class Dungeon_Geists {
             permanent,
             player,
             MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS, 
-            MagicEvent.NO_DATA,
             this,
             "Tap target creature opponent controls$. " + 
             "It doesn't untap during its controller's untap step as long as " + player + " controls " + permanent + ".");

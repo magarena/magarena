@@ -36,7 +36,6 @@ public class Tumble_Magnet {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_CREATURE,
                     new MagicTapTargetPicker(true,false),
-                    MagicEvent.NO_DATA,
                     this,
                     "Tap target artifact or creature$.");
         }

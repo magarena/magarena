@@ -21,7 +21,6 @@ public class Ulvenwald_Bear {
                         player,
                         MagicTargetChoice.POS_TARGET_CREATURE,
                         MagicPumpTargetPicker.create(),
-                        MagicEvent.NO_DATA,
                         this,
                         player + " puts two +1/+1 counters on target creature$.");
             }

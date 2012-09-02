@@ -21,7 +21,6 @@ public class Crossway_Vampire {
                     player,
                     MagicTargetChoice.TARGET_CREATURE,
                     new MagicNoCombatTargetPicker(false,true,false),
-                    MagicEvent.NO_DATA,
                     this,
                     "Target creature$ can't block this turn.");
         }

@@ -55,7 +55,7 @@ public class Mad_Auntie {
             "another target Goblin");
         return new MagicEvent(source, source.getController(), targetChoice,
             MagicRegenerateTargetPicker.getInstance(),
-            MagicEvent.NO_DATA, this,
+            this,
             "Regenerate another target Goblin$.");
     }
 

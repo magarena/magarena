@@ -34,7 +34,6 @@ public class Isao__Enlightened_Bushi {
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_SAMURAI,
                     MagicRegenerateTargetPicker.getInstance(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Regenerate target Samurai$.");
         }

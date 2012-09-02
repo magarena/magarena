@@ -27,7 +27,6 @@ public class Treasure_Hunter {
                         "his or her graveyard to his or her hand.",
                         MagicTargetChoice.TARGET_ARTIFACT_CARD_FROM_GRAVEYARD),
                     new MagicGraveyardTargetPicker(false),
-                    MagicEvent.NO_DATA,
                     this,
                     player + " may$ return target artifact card$ from " +
                     "his or her graveyard to his or her hand.");

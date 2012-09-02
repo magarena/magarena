@@ -20,7 +20,6 @@ public class Bloodgift_Demon {
                         permanent,
                         player,
                         MagicTargetChoice.TARGET_PLAYER,
-                        MagicEvent.NO_DATA,
                         this,
                         "Target player$ draws a card and loses 1 life.") :
                 MagicEvent.NONE;

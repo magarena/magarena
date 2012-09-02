@@ -34,7 +34,6 @@ public class Visara_the_Dreadful {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     new MagicDestroyTargetPicker(true),
-                    MagicEvent.NO_DATA,
                     this,
                     "Destroy target creature$. It can't be regenerated.");
         }

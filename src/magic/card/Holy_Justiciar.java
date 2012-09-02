@@ -45,7 +45,6 @@ public class Holy_Justiciar {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     new MagicTapTargetPicker(true,false),
-                    MagicEvent.NO_DATA,
                     this,
                     "Tap target creature$. If that creature is a Zombie, exile it.");
         }

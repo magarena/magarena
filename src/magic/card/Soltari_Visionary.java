@@ -28,7 +28,6 @@ public class Soltari_Visionary {
                             MagicTargetChoice.TARGET_ENCHANTMENT_YOU_CONTROL :
                             MagicTargetChoice.TARGET_ENCHANTMENT_YOUR_OPPONENT_CONTROLS,
                         new MagicDestroyTargetPicker(false),
-                        MagicEvent.NO_DATA,
                         this,
                         "Destroy target enchantment$.");
                 }

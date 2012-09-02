@@ -47,7 +47,6 @@ public class Driver_of_the_Dead {
                         player,
                         mayChoice,
                         new MagicGraveyardTargetPicker(false),
-                        MagicEvent.NO_DATA,
                         this,
                         player + " may$ return target creature card$ with " +
                         "converted mana cost 2 or less " +

@@ -23,7 +23,6 @@ public class Stingerfling_Spider {
                             player + " may destroy target creature with flying.",
                             MagicTargetChoice.NEG_TARGET_CREATURE_WITH_FLYING),
                     new MagicDestroyTargetPicker(false),
-                    MagicEvent.NO_DATA,
                     this,
                     player + " may$ destroy target creature$ with flying.");
         }

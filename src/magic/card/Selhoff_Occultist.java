@@ -18,7 +18,6 @@ public class Selhoff_Occultist {
                     permanent,
                     permanent.getController(),
                     MagicTargetChoice.NEG_TARGET_PLAYER,
-                    MagicEvent.NO_DATA,
                     this,
                     "Target player$ puts the top card of his or her library into his or her graveyard."):
                 MagicEvent.NONE;

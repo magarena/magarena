@@ -21,7 +21,6 @@ public class Nulltread_Gargantuan {
                     player,
                     MagicTargetChoice.CREATURE_YOU_CONTROL,
                     MagicBounceTargetPicker.getInstance(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Put a creature you control$ on top of its owner's library.");
         }

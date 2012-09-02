@@ -36,7 +36,6 @@ public class Avacynian_Priest {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_NONHUMAN_CREATURE,
                     new MagicTapTargetPicker(true,false),
-                    MagicEvent.NO_DATA,
                     this,
                     "Tap target non-Human creature$.");
         }

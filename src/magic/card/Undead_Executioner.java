@@ -29,7 +29,6 @@ public class Undead_Executioner {
                             player + " may have target creature get -2/-2 until end of turn.",
                             MagicTargetChoice.NEG_TARGET_CREATURE),
                     new MagicWeakenTargetPicker(2,2),
-                    MagicEvent.NO_DATA,
                     this,
                     player + " may$ have target creature$ get -2/-2 until end of turn.") :
                 MagicEvent.NONE;

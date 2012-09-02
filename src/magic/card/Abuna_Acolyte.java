@@ -34,7 +34,6 @@ public class Abuna_Acolyte {
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE_OR_PLAYER,
                     MagicPreventTargetPicker.getInstance(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Prevent the next 1 damage that would be dealt to target creature or player$ this turn.");
         }
@@ -66,7 +65,6 @@ public class Abuna_Acolyte {
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_ARTIFACT_CREATURE,
                     MagicPreventTargetPicker.getInstance(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Prevent the next 2 damage that would be dealt to target artifact creature$ this turn");
         }

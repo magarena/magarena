@@ -22,7 +22,6 @@ public class Calcite_Snapper {
                     new MagicMayChoice(
                             player + " may switch " + permanent + "'s " +
                             "power and toughness until end of turn."),
-                    MagicEvent.NO_DATA,
                     this,
                     player + " may$ switch " + permanent + "'s " +
                     "power and toughness until end of turn.");

@@ -29,7 +29,6 @@ public class Wort__Boggart_Auntie {
                             "from his or her graveyard to his or her hand.",
                             MagicTargetChoice.TARGET_GOBLIN_CARD_FROM_GRAVEYARD),
                         new MagicGraveyardTargetPicker(false),
-                        MagicEvent.NO_DATA,
                         this,
                         player + " may$ return target Goblin card$ from " +
                         "his or her graveyard to his or her hand."):

@@ -32,7 +32,6 @@ public class Ior_Ruin_Expedition {
                             MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
                             1,
                             MagicSimpleMayChoice.DEFAULT_YES),
-                    MagicEvent.NO_DATA,
                     this,
                     player + " may$ put a quest counter on " + permanent + ".");
         }

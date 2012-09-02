@@ -25,7 +25,6 @@ public class Goldnight_Commander {
                 new MagicEvent(
                         permanent,
                         player,
-                        MagicEvent.NO_DATA,
                         this,
                         "Creatures " + player + " controls get +1/+1 until end of turn."):
                 MagicEvent.NONE;

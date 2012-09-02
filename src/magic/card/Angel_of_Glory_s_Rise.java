@@ -25,7 +25,6 @@ public class Angel_of_Glory_s_Rise {
             return new MagicEvent(
                     permanent,
                     player,
-                    MagicEvent.NO_DATA,
                     this,
                     "Exile all Zombies, then return all Human creature " +
                     "cards from your graveyard to the battlefield.");

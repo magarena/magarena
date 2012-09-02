@@ -45,7 +45,6 @@ public class Deranged_Outcast {
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
                     MagicPumpTargetPicker.create(),
-                    MagicEvent.NO_DATA,
                     this,
                     source.getController() + " puts two +1/+1 counters on target creature$.");
         }

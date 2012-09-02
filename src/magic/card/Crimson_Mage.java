@@ -36,7 +36,6 @@ public class Crimson_Mage {
                     source.getController(),
                     MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
                     MagicHasteTargetPicker.create(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Target creature$ you control gains haste until end of turn.");
         }

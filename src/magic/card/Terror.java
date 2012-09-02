@@ -22,7 +22,6 @@ public class Terror {
                     cardOnStack.getController(),
                     MagicTargetChoice.NEG_TARGET_NONARTIFACT_NONBLACK_CREATURE,
                     new MagicDestroyTargetPicker(true),
-                    MagicEvent.NO_DATA,
                     this,
                     "Destroy target nonartifact, nonblack creature$. It can't be regenerated.");
         }

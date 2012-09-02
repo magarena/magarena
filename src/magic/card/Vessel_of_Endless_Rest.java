@@ -25,7 +25,6 @@ public class Vessel_of_Endless_Rest {
                     player,
                     MagicTargetChoice.NEG_TARGET_CARD_FROM_ALL_GRAVEYARDS,
                     new MagicGraveyardTargetPicker(true),
-                    MagicEvent.NO_DATA,
                     this,
                     "Put target card$ from a graveyard " +
                     "on the bottom of its owner's library.");

@@ -22,7 +22,6 @@ public class Maalfeld_Twins {
                 new MagicEvent(
                     permanent,
                     player,
-                    MagicEvent.NO_DATA,
                     this,
                     player + " puts two 2/2 black Zombie " +
                     "creature tokens onto the battlefield.") :

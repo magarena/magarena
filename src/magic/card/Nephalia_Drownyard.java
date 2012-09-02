@@ -39,7 +39,6 @@ public class Nephalia_Drownyard {
                     source,
                     source.getController(),
                     MagicTargetChoice.TARGET_PLAYER,
-                    MagicEvent.NO_DATA,
                     this,
                     "Target player$ puts the top three cards of " +
                     "his or her library into his or her graveyard.");

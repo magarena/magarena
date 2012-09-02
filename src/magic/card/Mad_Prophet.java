@@ -39,7 +39,6 @@ public class Mad_Prophet {
             return new MagicEvent(
                     source,
                     player,
-                    MagicEvent.NO_DATA,
                     this,
                     player + " draws a card.");
         }

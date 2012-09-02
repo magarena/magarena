@@ -15,7 +15,6 @@ public class Snapping_Creeper {
             return new MagicEvent(
                     permanent,
                     permanent.getController(),
-                    MagicEvent.NO_DATA,
                     this,
                     permanent + " gains vigilance until end of turn.");
         }

@@ -35,7 +35,6 @@ public class Deathless_Angel {
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
                     MagicIndestructibleTargetPicker.create(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Target creature$ is indestructible this turn.");
         }
