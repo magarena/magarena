@@ -18,16 +18,15 @@ public class Glint_Hawk {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    new MagicMayChoice(
-                        "You may return an artifact you control to its owner's hand.",
-                        MagicTargetChoice.ARTIFACT_YOU_CONTROL),
-                    MagicBounceTargetPicker.getInstance(),
-                    new Object[]{permanent},
-                    this,
-                    "You may$ return an artifact you control to its owner's hand. " +
-                    "If you don't, sacrifice " + permanent + ".");
+                permanent,
+                player,
+                new MagicMayChoice(
+                    "You may return an artifact you control to its owner's hand.",
+                    MagicTargetChoice.ARTIFACT_YOU_CONTROL),
+                MagicBounceTargetPicker.getInstance(),
+                this,
+                "You may$ return an artifact you control to its owner's hand. " +
+                "If you don't, sacrifice " + permanent + ".");
         }
         @Override
         public void executeEvent(
@@ -36,7 +35,7 @@ public class Glint_Hawk {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isNoChoice(choiceResults[0])) {
-                game.doAction(new MagicSacrificeAction((MagicPermanent)data[0]));
+                game.doAction(new MagicSacrificeAction(event.getPermanent()));
             }
             else {
                 event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
