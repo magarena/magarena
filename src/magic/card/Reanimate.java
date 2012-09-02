@@ -25,7 +25,7 @@ public class Reanimate {
                     player,
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS,
                     new MagicGraveyardTargetPicker(false), // no mana cost but payed with life
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Put target creature card$ from a graveyard onto the battlefield under your control. " +
                             player + " loses life equal to its converted mana cost.");
@@ -40,7 +40,7 @@ public class Reanimate {
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard targetCard) {
-                    final MagicPlayer player=(MagicPlayer)data[1];
+                    final MagicPlayer player=event.getPlayer();
                     game.doAction(new MagicReanimateAction(player,targetCard,MagicPlayCardAction.NONE));
                     game.doAction(new MagicChangeLifeAction(player,-targetCard.getCardDefinition().getConvertedCost()));
                 }
