@@ -27,7 +27,7 @@ public class Douse_in_Gloom {
                     player,
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     new MagicDamageTargetPicker(2),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     card + " deals 2 damage to target creature$ and " +
                             player + " gains 2 life.");
@@ -46,7 +46,7 @@ public class Douse_in_Gloom {
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[1],2));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),2));
         }
     };
 }
