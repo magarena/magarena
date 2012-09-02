@@ -15,8 +15,7 @@ public class Liliana_s_Specter {
             final MagicPlayer opponent = player.getOpponent();
             return new MagicEvent(
                     permanent,
-                    player,
-                    new Object[]{permanent,opponent},
+                    opponent,
                     this,
                     opponent + " discards a card.");
         }
@@ -26,8 +25,8 @@ public class Liliana_s_Specter {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent permanent=(MagicPermanent)data[0];
-            final MagicPlayer player=(MagicPlayer)data[1];
+            final MagicPermanent permanent=event.getPermanent();
+            final MagicPlayer player=event.getPlayer();
             game.addEvent(new MagicDiscardEvent(permanent,player,1,false));
         }        
     };
