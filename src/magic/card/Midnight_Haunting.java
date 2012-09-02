@@ -18,7 +18,7 @@ public class Midnight_Haunting {
             return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     player + " puts two 1/1 white Spirit creature " +
                     "tokens with flying onto the battlefield.");
@@ -30,7 +30,7 @@ public class Midnight_Haunting {
                 final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-            final MagicPlayer player = (MagicPlayer)data[1];
+            final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Spirit2")));
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Spirit2")));
         }
