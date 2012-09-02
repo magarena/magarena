@@ -47,7 +47,7 @@ public class Rise_from_the_Grave {
                     player,
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS,
                     new MagicGraveyardTargetPicker(true),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Put target creature$ card from a graveyard onto the " +
                     "battlefield under your control. That creature is a black " +
@@ -63,7 +63,7 @@ public class Rise_from_the_Grave {
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard targetCard) {
-                    final MagicPlayer player = (MagicPlayer)data[1];
+                    final MagicPlayer player = event.getPlayer();
 
                     if (!targetCard.getOwner().getGraveyard().contains(targetCard)) {
                         return;
