@@ -9,21 +9,20 @@ import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicGraveyardTriggerData;
-import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
+import magic.model.trigger.MagicWhenDiesTrigger;
 
 import java.util.Collection;
 
 public class Havoc_Demon {
-    public static final MagicWhenPutIntoGraveyardTrigger T = new MagicWhenPutIntoGraveyardTrigger() {
+    public static final MagicWhenDiesTrigger T = new MagicWhenDiesTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
-            return (MagicLocationType.Play==triggerData.fromLocation) ?
-                new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        this,
-                        "All creatures get -5/-5 until end of turn."):
-                MagicEvent.NONE;
+        public MagicEvent getEvent(final MagicPermanent permanent) {
+            return new MagicEvent(
+                permanent,
+                permanent.getController(),
+                this,
+                "All creatures get -5/-5 until end of turn."
+            );
         }
         @Override
         public void executeEvent(
