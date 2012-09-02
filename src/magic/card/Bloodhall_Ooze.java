@@ -14,24 +14,23 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 public class Bloodhall_Ooze {
     public static final MagicAtUpkeepTrigger T1 = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             final MagicPlayer player = permanent.getController();
-            return (player == data &&
+            return (player == upkeepPlayer &&
                     game.filterTargets(
                         player,
                         MagicTargetFilter.TARGET_BLACK_PERMANENT_YOU_CONTROL).size() > 0) ?
-                    new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicSimpleMayChoice(
-                                player + " may put a +1/+1 counter on " + permanent,
-                                MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
-                                1,
-                                MagicSimpleMayChoice.DEFAULT_YES),
-                        new Object[]{permanent},
-                        this,
-                        player + " may$ put a +1/+1 counter on " + permanent) :
-                    MagicEvent.NONE;
+                new MagicEvent(
+                    permanent,
+                    player,
+                    new MagicSimpleMayChoice(
+                        player + " may put a +1/+1 counter on " + permanent,
+                        MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_YES),
+                    this,
+                    player + " may$ put a +1/+1 counter on " + permanent) :
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(
@@ -41,7 +40,7 @@ public class Bloodhall_Ooze {
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 game.doAction(new MagicChangeCountersAction(
-                        (MagicPermanent)data[0],
+                        event.getPermanent(),
                         MagicCounterType.PlusOne,
                         1,
                         true));
@@ -51,24 +50,23 @@ public class Bloodhall_Ooze {
     
     public static final MagicAtUpkeepTrigger T2 = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             final MagicPlayer player = permanent.getController();
-            return (player == data &&
+            return (player == upkeepPlayer &&
                     game.filterTargets(
                         player,
                         MagicTargetFilter.TARGET_GREEN_PERMANENT_YOU_CONTROL).size() > 0) ?
-                    new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicSimpleMayChoice(
-                                player + " may put a +1/+1 counter on " + permanent,
-                                MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
-                                1,
-                                MagicSimpleMayChoice.DEFAULT_YES),
-                        new Object[]{permanent},
-                        this,
-                        player + " may$ put a +1/+1 counter on " + permanent) :
-                    MagicEvent.NONE;
+                new MagicEvent(
+                    permanent,
+                    player,
+                    new MagicSimpleMayChoice(
+                        player + " may put a +1/+1 counter on " + permanent,
+                        MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_YES),
+                    this,
+                    player + " may$ put a +1/+1 counter on " + permanent) :
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(
@@ -78,7 +76,7 @@ public class Bloodhall_Ooze {
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 game.doAction(new MagicChangeCountersAction(
-                        (MagicPermanent)data[0],
+                        event.getPermanent(),
                         MagicCounterType.PlusOne,
                         1,
                         true));
