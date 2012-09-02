@@ -26,7 +26,7 @@ public class Martial_Coup {
             return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
-                    new Object[]{cardOnStack,player,x},
+                    new Object[]{cardOnStack,x},
                     this,
                     "Put "+x+" 1/1 white Soldier creature tokens onto the battlefield." + 
                     (x >= 5 ? " Destroy all other creatures.":""));
@@ -39,8 +39,8 @@ public class Martial_Coup {
                 final Object[] choiceResults) {
             final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
             game.doAction(new MagicMoveCardAction(cardOnStack));
-            final MagicPlayer player=(MagicPlayer)data[1];
-            int x=(Integer)data[2];
+            final MagicPlayer player=event.getPlayer();
+            int x=(Integer)data[1];
             final Collection<MagicTarget> targets;
             if (x>=5) {
                 targets=game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE);
