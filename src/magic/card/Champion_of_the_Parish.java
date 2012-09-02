@@ -19,11 +19,10 @@ public class Champion_of_the_Parish {
                     otherPermanent.getController() == player &&
                     otherPermanent.hasSubType(MagicSubType.Human)) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{permanent},
-                        this,
-                        "Put a +1/+1 counter on " + permanent + ".") :
+                    permanent,
+                    player,
+                    this,
+                    "Put a +1/+1 counter on " + permanent + ".") :
                 MagicEvent.NONE;
         }
         
@@ -33,7 +32,7 @@ public class Champion_of_the_Parish {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.PlusOne,1,true));            
+            game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,1,true));            
         }        
     };
 }
