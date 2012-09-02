@@ -38,7 +38,6 @@ public class Raging_Ravine {
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
-                    new Object[]{permanent},
                     this,
                     "Put a +1/+1 counter on " + permanent + "."):
                 MagicEvent.NONE;
@@ -51,10 +50,11 @@ public class Raging_Ravine {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
-                        (MagicPermanent)data[0],
-                        MagicCounterType.PlusOne,
-                        1,
-                        true));
+                event.getPermanent(),
+                MagicCounterType.PlusOne,
+                1,
+                true
+            ));
         }
     };
 
@@ -107,12 +107,11 @@ public class Raging_Ravine {
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    new Object[]{source},
-                    this,
-                    "Until end of turn, " + source + " becomes a 3/3 red and green Elemental creature with " + 
-                    "\"Whenever this creature attacks, put a +1/+1 counter on it.\" It's still a land.");
+                source,
+                source.getController(),
+                this,
+                "Until end of turn, " + source + " becomes a 3/3 red and green Elemental creature with " + 
+                "\"Whenever this creature attacks, put a +1/+1 counter on it.\" It's still a land.");
         }
 
         @Override
@@ -121,7 +120,7 @@ public class Raging_Ravine {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanent permanent=(MagicPermanent)data[0];
+            final MagicPermanent permanent=event.getPermanent();
             game.doAction(new MagicBecomesCreatureAction(permanent,PT,ST,C));
             game.doAction(new MagicAddTurnTriggerAction(permanent,CT));
         }
