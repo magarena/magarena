@@ -23,7 +23,7 @@ public class Whispers_of_the_Muse {
                     card,
                     player,
                     new MagicBuybackChoice(MagicManaCost.FIVE),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     player + " $draws a card. If the buyback cost was payed$, " +
                     "return " + card + " to its owner's hand as it resolves.");
@@ -35,7 +35,7 @@ public class Whispers_of_the_Muse {
                 final Object[] data,
                 final Object[] choiceResults) {
             final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            game.doAction(new MagicDrawAction((MagicPlayer)data[1],1));
+            game.doAction(new MagicDrawAction(event.getPlayer(),1));
             if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
                 game.doAction(new MagicMoveCardAction(
                         cardOnStack.getCard(),
