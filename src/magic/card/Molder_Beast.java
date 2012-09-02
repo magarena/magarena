@@ -14,7 +14,6 @@ public class Molder_Beast {
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
-                    new Object[]{permanent},
                     this,
                     permanent + " gets +2/+0 until end of turn.") :
                 MagicEvent.NONE;
@@ -25,7 +24,7 @@ public class Molder_Beast {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeTurnPTAction((MagicPermanent)data[0],2,0));
+            game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),2,0));
         }
     };
 }
