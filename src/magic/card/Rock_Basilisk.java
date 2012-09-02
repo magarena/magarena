@@ -13,26 +13,29 @@ import magic.model.trigger.MagicWhenBlocksTrigger;
 public class Rock_Basilisk {
     public static final MagicWhenBecomesBlockedTrigger T1 = new MagicWhenBecomesBlockedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            if (creature == permanent) {
-                final MagicPermanentList plist = new MagicPermanentList();
-                for (final MagicPermanent blocker : permanent.getBlockingCreatures()) {
-                    if (!blocker.hasSubType(MagicSubType.Wall)) {
-                        plist.add(blocker);
-                    }
-                }
-                if (!plist.isEmpty()) {
-                    return new MagicEvent(
-                            permanent,
-                            permanent.getController(),
-                            new Object[]{plist},
-                            this,
-                            plist.size() > 1 ?
-                                    "Destroy blocking non-Wall creatures at end of combat." :
-                                    "Destroy " + plist.get(0) + " at end of combat.");
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
+            if (attacker != permanent) {
+                return MagicEvent.NONE;
+            }
+            
+            final MagicPermanentList plist = new MagicPermanentList();
+            for (final MagicPermanent blocker : permanent.getBlockingCreatures()) {
+                if (!blocker.hasSubType(MagicSubType.Wall)) {
+                    plist.add(blocker);
                 }
             }
-            return MagicEvent.NONE;
+            
+            return !plist.isEmpty() ?
+                new MagicEvent(
+                    permanent,
+                    permanent.getController(),
+                    new Object[]{plist},
+                    this,
+                    plist.size() > 1 ?
+                        "Destroy blocking non-Wall creatures at end of combat." :
+                        "Destroy " + plist.get(0) + " at end of combat."
+                ) :
+                MagicEvent.NONE;
         }
         
         @Override
