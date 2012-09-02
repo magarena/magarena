@@ -70,7 +70,6 @@ public class Umezawa_s_Jitte {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     new MagicWeakenTargetPicker(1,1),
-                    MagicEvent.NO_DATA,
                     this,
                     "Target creature$ gets -1/-1 until end of turn.");
         }
@@ -126,7 +125,6 @@ public class Umezawa_s_Jitte {
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
-                    new Object[]{permanent},
                     this,
                     "Put two charge counters on " + permanent + ".") :
                 MagicEvent.NONE;
@@ -138,7 +136,7 @@ public class Umezawa_s_Jitte {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
-                    (MagicPermanent)data[0],
+                    event.getPermanent(),
                     MagicCounterType.Charge,
                     2,
                     true));
