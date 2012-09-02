@@ -14,11 +14,10 @@ public class Festerhide_Boar {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             if (game.getCreatureDiedThisTurn()) {
                 return new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{permanent},
-                        this,
-                        permanent + " enters the battlefield with two +1/+1 counters on it ");
+                    permanent,
+                    player,
+                    this,
+                    permanent + " enters the battlefield with two +1/+1 counters on it ");
             }
             return MagicEvent.NONE;
         }
@@ -29,7 +28,7 @@ public class Festerhide_Boar {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
-                    (MagicPermanent)data[0],
+                    event.getPermanent(),
                     MagicCounterType.PlusOne,
                     2,
                     true));
