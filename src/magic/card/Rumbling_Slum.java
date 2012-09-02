@@ -16,11 +16,10 @@ public class Rumbling_Slum {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
             return (permanent.getController()==player) ?
                 new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        new Object[]{permanent},
-                        this,
-                        permanent + " deals 1 damage to each player."):
+                    permanent,
+                    permanent.getController(),
+                    this,
+                    permanent + " deals 1 damage to each player."):
                 MagicEvent.NONE;
         }
         @Override
@@ -29,7 +28,7 @@ public class Rumbling_Slum {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicSource source=(MagicSource)data[0];
+            final MagicSource source=event.getSource();
             for (final MagicPlayer player : game.getPlayers()) {
                 final MagicDamage damage=new MagicDamage(source,player,1,false);
                 game.doAction(new MagicDealDamageAction(damage));
