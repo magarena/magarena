@@ -23,9 +23,9 @@ public class Thoughtweft_Gambit {
             return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
-                       "Tap all creatures your opponent controls and untap all creatures you control.");
+                    "Tap all creatures your opponent controls and untap all creatures you control.");
         }
         @Override
         public void executeEvent(
@@ -35,7 +35,7 @@ public class Thoughtweft_Gambit {
                 final Object[] choiceResults) {
             final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
             game.doAction(new MagicMoveCardAction(cardOnStack));
-            final MagicPlayer player=(MagicPlayer)data[1];
+            final MagicPlayer player=event.getPlayer();
             final Collection<MagicTarget> targets=
                 game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE);
             for (final MagicTarget target : targets) {
