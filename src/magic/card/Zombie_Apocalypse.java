@@ -26,7 +26,7 @@ public class Zombie_Apocalypse {
             return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Return all Zombie creature cards from your graveyard " +
                     "to the battlefield tapped, then destroy all Humans.");
@@ -39,7 +39,7 @@ public class Zombie_Apocalypse {
                 final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-            final MagicPlayer player = (MagicPlayer)data[1];
+            final MagicPlayer player = event.getPlayer();
             final List<MagicTarget> zombies =
                     game.filterTargets(player,MagicTargetFilter.TARGET_ZOMBIE_CARD_FROM_GRAVEYARD);
             for (final MagicTarget target : zombies) {
