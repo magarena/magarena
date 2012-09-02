@@ -91,7 +91,6 @@ public class Aurification {
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
-                    MagicEvent.NO_DATA,
                     this,
                     "Remove all gold counters from all creatures.") :
             MagicEvent.NONE;
