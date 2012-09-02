@@ -19,7 +19,6 @@ public class Journey_to_Nowhere {
                     player,
                     MagicTargetChoice.TARGET_CREATURE,
                     MagicExileTargetPicker.create(),
-                    new Object[]{permanent},
                     this,
                     "Exile target creature$.");
         }
@@ -29,7 +28,7 @@ public class Journey_to_Nowhere {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent permanent = (MagicPermanent)data[0];
+            final MagicPermanent permanent = event.getPermanent();
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicExileUntilThisLeavesPlayAction(permanent,creature));
