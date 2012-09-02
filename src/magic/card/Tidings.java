@@ -17,7 +17,7 @@ public class Tidings {
             return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Draw four cards.");
         }
@@ -28,7 +28,7 @@ public class Tidings {
                 final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-            game.doAction(new MagicDrawAction((MagicPlayer)data[1],4));
+            game.doAction(new MagicDrawAction(event.getPlayer(),4));
         }
     };
 }
