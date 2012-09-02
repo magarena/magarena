@@ -17,14 +17,13 @@ public class Drifter_il_Dal {
             final MagicPlayer player = permanent.getController();
             return (player == data) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicMayChoice(
-                                "You may pay {U}.",
-                                new MagicPayManaCostChoice(MagicManaCost.BLUE)),
-                            new Object[]{permanent},
-                            this,
-                            "You may$ pay {U}$. If you don't, sacrifice " + permanent + ".") :
+                    permanent,
+                    player,
+                    new MagicMayChoice(
+                        "You may pay {U}.",
+                        new MagicPayManaCostChoice(MagicManaCost.BLUE)),
+                    this,
+                    "You may$ pay {U}$. If you don't, sacrifice " + permanent + ".") :
                 MagicEvent.NONE;
         }
 
@@ -35,7 +34,7 @@ public class Drifter_il_Dal {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isNoChoice(choiceResults[0])) {
-                game.doAction(new MagicSacrificeAction((MagicPermanent)data[0]));
+                game.doAction(new MagicSacrificeAction(event.getPermanent()));
             }            
         }
     };
