@@ -21,7 +21,6 @@ public class Hamlet_Captain {
                 new MagicEvent(
                         permanent,
                         permanent.getController(),
-                        new Object[]{permanent,permanent.getController()},
                         this,
                         "Other Human creatures " + permanent.getController() +
                         " controls get +1/+1 until end of turn."):
@@ -34,10 +33,10 @@ public class Hamlet_Captain {
                 final Object data[],
                 final Object[] choiceResults) {
             final Collection<MagicTarget> targets =
-                game.filterTargets((MagicPlayer)data[1],MagicTargetFilter.TARGET_HUMAN_YOU_CONTROL);
+                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_HUMAN_YOU_CONTROL);
             for (final MagicTarget target : targets) {
                 final MagicPermanent creature = (MagicPermanent)target;
-                if (creature != (MagicPermanent)data[0]) {
+                if (creature != event.getPermanent()) {
                     game.doAction(new MagicChangeTurnPTAction(creature,1,1));
                 }
             }
@@ -51,7 +50,6 @@ public class Hamlet_Captain {
                 new MagicEvent(
                         permanent,
                         permanent.getController(),
-                        new Object[]{permanent,permanent.getController()},
                         this,
                         "Other Human creatures " + permanent.getController() +
                         " controls get +1/+1 until end of turn."):
@@ -64,10 +62,10 @@ public class Hamlet_Captain {
                 final Object data[],
                 final Object[] choiceResults) {
             final Collection<MagicTarget> targets =
-                game.filterTargets((MagicPlayer)data[1],MagicTargetFilter.TARGET_HUMAN_YOU_CONTROL);
+                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_HUMAN_YOU_CONTROL);
             for (final MagicTarget target : targets) {
                 final MagicPermanent creature = (MagicPermanent)target;
-                if (creature != (MagicPermanent)data[0]) {
+                if (creature != event.getPermanent()) {
                     game.doAction(new MagicChangeTurnPTAction(creature,1,1));
                 }
             }
