@@ -39,7 +39,6 @@ public class Parallax_Wave {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     MagicExileTargetPicker.create(),
-                    new Object[]{source},
                     this,
                     "Exile target creature$.");
         }
@@ -49,7 +48,7 @@ public class Parallax_Wave {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicExileUntilThisLeavesPlayAction(
-                            (MagicPermanent)data[0],
+                            event.getPermanent(),
                             permanent));
                 }
             });
@@ -58,18 +57,17 @@ public class Parallax_Wave {
     
     public static final MagicWhenLeavesPlayTrigger T3 = new MagicWhenLeavesPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent data) {
-            if (permanent == data &&
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent left) {
+            if (permanent == left &&
                 !permanent.getExiledCards().isEmpty()) {
                 final MagicCardList clist = new MagicCardList(permanent.getExiledCards());
                 return new MagicEvent(
                         permanent,
                         permanent.getController(),
-                        new Object[]{permanent},
                         this,
                         clist.size() > 1 ?
-                                "Return exiled creatures to the battlefield " :
-                                "Return " + clist.get(0) + " to the battlefield ");
+                            "Return exiled creatures to the battlefield " :
+                            "Return " + clist.get(0) + " to the battlefield ");
             }
             return MagicEvent.NONE;
         }
@@ -79,7 +77,7 @@ public class Parallax_Wave {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent permanent = (MagicPermanent)data[0];
+            final MagicPermanent permanent = event.getPermanent();
             game.doAction(new MagicReturnExiledUntilThisLeavesPlayAction(permanent,MagicLocationType.Play));
         }
     };
