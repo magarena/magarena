@@ -18,7 +18,7 @@ public class Mind_Spring {
             return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
-                    new Object[]{cardOnStack,player,amount},
+                    new Object[]{cardOnStack,amount},
                     this,
                     "Draw "+amount+" cards.");
         }
@@ -29,7 +29,7 @@ public class Mind_Spring {
                 final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-            game.doAction(new MagicDrawAction((MagicPlayer)data[1],(Integer)data[2]));
+            game.doAction(new MagicDrawAction(event.getPlayer(),(Integer)data[1]));
         }
     };
 }
