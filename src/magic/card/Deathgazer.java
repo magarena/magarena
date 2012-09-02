@@ -13,27 +13,28 @@ import magic.model.trigger.MagicWhenBlocksTrigger;
 public class Deathgazer {
     public static final MagicWhenBecomesBlockedTrigger T1 = new MagicWhenBecomesBlockedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            if (creature == permanent) {
-                final MagicPermanentList plist = new MagicPermanentList();
-                for (final MagicPermanent blocker : permanent.getBlockingCreatures()) {
-                    final int colorFlags = blocker.getColorFlags();
-                    if (!MagicColor.Black.hasColor(colorFlags)) {
-                        plist.add(blocker);
-                    }
-                }
-                if (!plist.isEmpty()) {
-                    return new MagicEvent(
-                            permanent,
-                            permanent.getController(),
-                            new Object[]{plist},
-                            this,
-                            plist.size() > 1 ?
-                                    "Destroy blocking nonblack creatures at end of combat." :
-                                    "Destroy " + plist.get(0) + " at end of combat.");
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
+            if (permanent !=  attacker) {
+                return MagicEvent.NONE;
+            }
+            final MagicPermanentList plist = new MagicPermanentList();
+            for (final MagicPermanent blocker : permanent.getBlockingCreatures()) {
+                final int colorFlags = blocker.getColorFlags();
+                if (!MagicColor.Black.hasColor(colorFlags)) {
+                    plist.add(blocker);
                 }
             }
-            return MagicEvent.NONE;
+            return !plist.isEmpty() ? 
+                new MagicEvent(
+                    permanent,
+                    permanent.getController(),
+                    new Object[]{plist},
+                    this,
+                    plist.size() > 1 ?
+                        "Destroy blocking nonblack creatures at end of combat." :
+                        "Destroy " + plist.get(0) + " at end of combat."
+                ):
+                MagicEvent.NONE;
         }
         
         @Override
@@ -51,9 +52,9 @@ public class Deathgazer {
     
     public static final MagicWhenBlocksTrigger T2 = new MagicWhenBlocksTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
             final MagicPermanent blocked = permanent.getBlockedCreature();
-            return (permanent == data &&
+            return (permanent == blocker &&
                     blocked.isValid() &&
                     !MagicColor.Black.hasColor(blocked.getColorFlags())) ?
                 new MagicEvent(
