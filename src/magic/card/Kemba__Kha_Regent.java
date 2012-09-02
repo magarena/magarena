@@ -17,7 +17,6 @@ public class Kemba__Kha_Regent {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{permanent,player},
                         this,
                         player + " puts a 2/2 white Cat creature token onto the " +
                         "battlefield for each Equipment attached to " + permanent + "."):
@@ -29,10 +28,10 @@ public class Kemba__Kha_Regent {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent permanent = (MagicPermanent)data[0];
+            final MagicPermanent permanent = event.getPermanent();
             int amount = permanent.getEquipmentPermanents().size();
             for (;amount>0;amount--) {
-                game.doAction(new MagicPlayTokenAction((MagicPlayer)data[1],TokenCardDefinitions.get("Cat2")));
+                game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Cat2")));
             }
         }        
     };
