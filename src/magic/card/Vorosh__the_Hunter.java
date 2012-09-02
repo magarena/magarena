@@ -29,7 +29,6 @@ public class Vorosh__the_Hunter {
                     new MagicMayChoice(
                         "You may pay {2}{G}.",
                         new MagicPayManaCostChoice(MagicManaCost.TWO_GREEN)),
-                    new Object[]{permanent},
                     this,
                     "You may$ pay {2}{G}$. If you do, put six +1/+1 counters on " + permanent + "."):
                 MagicEvent.NONE;
@@ -42,10 +41,11 @@ public class Vorosh__the_Hunter {
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 game.doAction(new MagicChangeCountersAction(
-                            (MagicPermanent)data[0],
-                            MagicCounterType.PlusOne,
-                            6,
-                            true));
+                    event.getPermanent(),
+                    MagicCounterType.PlusOne,
+                    6,
+                    true
+                ));
             }
         }
     };
