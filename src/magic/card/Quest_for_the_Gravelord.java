@@ -56,16 +56,15 @@ public class Quest_for_the_Gravelord {
             final MagicPlayer player = permanent.getController();
             return (otherPermanent.isCreature()) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicSimpleMayChoice(
-                                player + " may put a quest counter on " + permanent + ".",
-                                MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
-                                1,
-                                MagicSimpleMayChoice.DEFAULT_YES),
-                        new Object[]{permanent},
-                        this,
-                        player + " may$ put a quest counter on " + permanent + "."):
+                    permanent,
+                    player,
+                    new MagicSimpleMayChoice(
+                        player + " may put a quest counter on " + permanent + ".",
+                        MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_YES),
+                    this,
+                    player + " may$ put a quest counter on " + permanent + "."):
                 MagicEvent.NONE;
         }
         @Override
@@ -76,10 +75,11 @@ public class Quest_for_the_Gravelord {
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 game.doAction(new MagicChangeCountersAction(
-                        (MagicPermanent)data[0],
-                        MagicCounterType.Charge,
-                        1,
-                        true));
+                    event.getPermanent(),
+                    MagicCounterType.Charge,
+                    1,
+                    true
+                ));
             }
         }
     };
