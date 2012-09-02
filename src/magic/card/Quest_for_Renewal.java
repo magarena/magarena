@@ -19,20 +19,19 @@ import magic.model.trigger.MagicWhenBecomesTappedTrigger;
 public class Quest_for_Renewal {
     public static final MagicWhenBecomesTappedTrigger T1 = new MagicWhenBecomesTappedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent tapped) {
             final MagicPlayer player = permanent.getController();
-            return (data.getController() == player && data.isCreature()) ?
+            return (tapped.getController() == player && tapped.isCreature()) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicSimpleMayChoice(
-                                player + " may put a quest counter on " + permanent + ".",
-                                MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
-                                1,
-                                MagicSimpleMayChoice.DEFAULT_YES),
-                        new Object[]{permanent},
-                        this,
-                        player + " may$ put a quest counter on " + permanent + "."):
+                    permanent,
+                    player,
+                    new MagicSimpleMayChoice(
+                        player + " may put a quest counter on " + permanent + ".",
+                        MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_YES),
+                    this,
+                    player + " may$ put a quest counter on " + permanent + "."):
                 MagicEvent.NONE;
         }
         @Override
@@ -43,25 +42,26 @@ public class Quest_for_Renewal {
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 game.doAction(new MagicChangeCountersAction(
-                        (MagicPermanent)data[0],
-                        MagicCounterType.Charge,
-                        1,
-                        true));
+                    event.getPermanent(),
+                    MagicCounterType.Charge,
+                    1,
+                    true
+                ));
             }
         }
     };
     
     public static final MagicAtUpkeepTrigger T2 = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             final MagicPlayer player = permanent.getController();
-            return (player != data &&
+            return (player != upkeepPlayer &&
                     permanent.getCounters(MagicCounterType.Charge) >= 4) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        "Untap all creatures you control."):
+                    permanent,
+                    player,
+                    this,
+                    "Untap all creatures you control."):
                 MagicEvent.NONE;
         }    
         @Override
