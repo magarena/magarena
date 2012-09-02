@@ -12,15 +12,13 @@ public class Deep_Slumber_Titan {
     public static final MagicWhenDamageIsDealtTrigger T1 = new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            return (damage.getTarget() == permanent &&
-                    permanent.isTapped()) ?
-                    new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        new Object[]{permanent},
-                        this,
-                        "Untap " + permanent + ".") :
-                    MagicEvent.NONE;
+            return (damage.getTarget() == permanent && permanent.isTapped()) ?
+                new MagicEvent(
+                    permanent,
+                    permanent.getController(),
+                    this,
+                    "Untap " + permanent + ".") :
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(
@@ -28,7 +26,7 @@ public class Deep_Slumber_Titan {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicUntapAction((MagicPermanent)data[0]));
+            game.doAction(new MagicUntapAction(event.getPermanent()));
         }
     };
 }
