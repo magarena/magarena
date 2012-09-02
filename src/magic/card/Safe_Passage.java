@@ -18,7 +18,7 @@ public class Safe_Passage {
             return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Prevent all damage that would be dealt to you and creatures you control this turn.");
         }
@@ -29,7 +29,7 @@ public class Safe_Passage {
                 final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-            game.doAction(new MagicChangePlayerStateAction((MagicPlayer)data[1],MagicPlayerState.PreventAllDamage,true));
+            game.doAction(new MagicChangePlayerStateAction(event.getPlayer(),MagicPlayerState.PreventAllDamage,true));
         }
     };
 }
