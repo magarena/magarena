@@ -21,13 +21,12 @@ public class Oblivion_Ring {
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
                     targetFilter,true,MagicTargetHint.None,"another target nonland permanent to exile");
             return new MagicEvent(
-                    permanent,
-                    player,
-                    targetChoice,
-                    MagicExileTargetPicker.create(),
-                    new Object[]{permanent},
-                    this,
-                    "Exile another target nonland permanent$.");
+                permanent,
+                player,
+                targetChoice,
+                MagicExileTargetPicker.create(),
+                this,
+                "Exile another target nonland permanent$.");
         }
         @Override
         public void executeEvent(
@@ -35,7 +34,7 @@ public class Oblivion_Ring {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent permanent = (MagicPermanent)data[0];
+            final MagicPermanent permanent = event.getPermanent();
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicExileUntilThisLeavesPlayAction(permanent,creature));
