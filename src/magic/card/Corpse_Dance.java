@@ -28,7 +28,7 @@ public class Corpse_Dance {
                     cardOnStack.getController(),
                     new MagicBuybackChoice(MagicManaCost.TWO),
                     new MagicGraveyardTargetPicker(true),
-                    new Object[]{cardOnStack,cardOnStack.getController()},
+                    new Object[]{cardOnStack},
                     this,
                     "Return the top creature card$ of your graveyard to the battlefield. " +
                     "That creature gains haste until end of turn. Exile it at the " +
@@ -43,13 +43,13 @@ public class Corpse_Dance {
                 final Object[] data,
                 final Object[] choiceResults) {
             final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            final MagicPlayer player = (MagicPlayer)data[1];
+            final MagicPlayer player = event.getPlayer();
             final List<MagicTarget> targets =
                     game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD);
             if (targets.size() > 0) {
                 final MagicCard card = (MagicCard)targets.get(targets.size()-1);
                 game.doAction(new MagicReanimateAction(
-                        (MagicPlayer)data[1],
+                        player,
                         card,
                         MagicPlayCardAction.HASTE_UEOT_REMOVE_AT_END_OF_TURN));
                 if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
