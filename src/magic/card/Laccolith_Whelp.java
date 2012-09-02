@@ -18,22 +18,22 @@ public class Laccolith_Whelp {
     public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            if (creature == permanent) {
-                final MagicPlayer player = permanent.getController();
-                    return new MagicEvent(
-                            permanent,
-                            player,
-                            new MagicMayChoice(
-                                    player + " may have " + permanent + " deal " +
-                                    "damage equal to its power to target creature.",
-                                    MagicTargetChoice.NEG_TARGET_CREATURE),
-                            new MagicDamageTargetPicker(permanent.getPower()),
-                            new Object[]{permanent},
-                            this,
-                            player + " may$ have " + permanent + " deal " +
-                            "damage equal to its power to target creature$.");
-            }
-            return MagicEvent.NONE;
+            final MagicPlayer player = permanent.getController();
+            return (creature == permanent) ?
+                new MagicEvent(
+                    permanent,
+                    player,
+                    new MagicMayChoice(
+                        player + " may have " + permanent + " deal " +
+                        "damage equal to its power to target creature.",
+                        MagicTargetChoice.NEG_TARGET_CREATURE
+                    ),
+                    new MagicDamageTargetPicker(permanent.getPower()),
+                    this,
+                    player + " may$ have " + permanent + " deal " +
+                    "damage equal to its power to target creature$."
+                ):
+                MagicEvent.NONE;
         }
         
         @Override
@@ -45,7 +45,7 @@ public class Laccolith_Whelp {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
-                        final MagicPermanent permanent = (MagicPermanent)data[0];
+                        final MagicPermanent permanent = event.getPermanent();
                         final MagicDamage damage = new MagicDamage(
                                 permanent,
                                 creature,
