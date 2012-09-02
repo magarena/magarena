@@ -18,7 +18,11 @@ public class MagicChangeCountersAction extends MagicAction {
             final boolean hasScore) {
         this.permanent=permanent;
         this.counterType=counterType;
-        this.amount=amount;
+        
+        // number of counters cannot become negative
+        this.amount = (permanent.getCounters(counterType) + amount >= 0) ?
+            amount : 0;
+        
         this.hasScore=hasScore;
     }
     
