@@ -27,7 +27,6 @@ public class Binding_Grasp {
                     new MagicMayChoice(
                         "You may pay {1}{U}.",
                         new MagicPayManaCostChoice(MagicManaCost.ONE_BLUE)),
-                    new Object[]{permanent},
                     this,
                     "You may$ pay {1}{U}$. If you don't, sacrifice " + permanent + ".") :
             MagicEvent.NONE;
@@ -40,7 +39,7 @@ public class Binding_Grasp {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isNoChoice(choiceResults[0])) {
-                game.doAction(new MagicSacrificeAction((MagicPermanent)data[0]));
+                game.doAction(new MagicSacrificeAction(event.getPermanent()));
             }            
         }
     };
