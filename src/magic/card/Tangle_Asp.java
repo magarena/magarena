@@ -12,19 +12,20 @@ import magic.model.trigger.MagicWhenBlocksTrigger;
 public class Tangle_Asp {
     public static final MagicWhenBecomesBlockedTrigger T1 = new MagicWhenBecomesBlockedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            if (creature == permanent) {
-                final MagicPermanentList plist = new MagicPermanentList(permanent.getBlockingCreatures());
-                return new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        new Object[]{plist},
-                        this,
-                        plist.size() > 1 ?
-                            "Destroy blocking creatures at end of combat." :
-                            "Destroy " + plist.get(0) + " at end of combat.");
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
+            if (permanent != attacker) {
+                return MagicEvent.NONE;
             }
-            return MagicEvent.NONE;
+            final MagicPermanentList plist = new MagicPermanentList(permanent.getBlockingCreatures());
+            return new MagicEvent(
+                permanent,
+                permanent.getController(),
+                new Object[]{plist},
+                this,
+                plist.size() > 1 ?
+                    "Destroy blocking creatures at end of combat." :
+                    "Destroy " + plist.get(0) + " at end of combat."
+            );
         }
         
         @Override
@@ -42,9 +43,9 @@ public class Tangle_Asp {
     
     public static final MagicWhenBlocksTrigger T2 = new MagicWhenBlocksTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
             final MagicPermanent blocked = permanent.getBlockedCreature();
-            return (permanent == data && blocked.isValid()) ?
+            return (permanent == blocker && blocked.isValid()) ?
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
