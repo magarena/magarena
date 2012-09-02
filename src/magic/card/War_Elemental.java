@@ -24,7 +24,6 @@ public class War_Elemental {
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
-                    new Object[]{permanent},
                     this,
                     "Sacrifice " + permanent + "."):
                 MagicEvent.NONE;
@@ -35,7 +34,7 @@ public class War_Elemental {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicSacrificeAction((MagicPermanent)data[0]));
+            game.doAction(new MagicSacrificeAction(event.getPermanent()));
         }
     };
     
@@ -50,11 +49,11 @@ public class War_Elemental {
             final int amount = damage.getDealtAmount();
             return (damage.getTarget() == opponent) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{permanent,amount},
-                        this,
-                        player + " puts " + amount + " +1/+1 counters on " + permanent + "."):
+                    permanent,
+                    player,
+                    new Object[]{amount},
+                    this,
+                    player + " puts " + amount + " +1/+1 counters on " + permanent + "."):
                 MagicEvent.NONE;
         }
         @Override
@@ -64,9 +63,9 @@ public class War_Elemental {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
-                    (MagicPermanent)data[0],
+                    event.getPermanent(),
                     MagicCounterType.PlusOne,
-                    (Integer)data[1],
+                    (Integer)data[0],
                     true));
         }
     };
