@@ -19,13 +19,12 @@ public class Chasm_Drake {
             final MagicPlayer player = permanent.getController();
             return (permanent == creature) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
-                        MagicFlyingTargetPicker.create(),
-                        new Object[]{permanent},
-                        this,
-                        "Target creature$ you control gains flying until end of turn."):
+                    permanent,
+                    player,
+                    MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
+                    MagicFlyingTargetPicker.create(),
+                    this,
+                    "Target creature$ you control gains flying until end of turn."):
                 MagicEvent.NONE;           
         }
         
