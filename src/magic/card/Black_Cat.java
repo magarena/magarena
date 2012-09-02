@@ -7,25 +7,18 @@ import magic.model.MagicPlayer;
 import magic.model.event.MagicDiscardEvent;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicGraveyardTriggerData;
-import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
+import magic.model.trigger.MagicWhenDiesTrigger;
 
 public class Black_Cat {
-    public static final MagicWhenPutIntoGraveyardTrigger T = new MagicWhenPutIntoGraveyardTrigger() {
+    public static final MagicWhenDiesTrigger T = new MagicWhenDiesTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicGraveyardTriggerData triggerData) {
-            if (triggerData.fromLocation != MagicLocationType.Play) {
-                return MagicEvent.NONE;
-            }
+        public MagicEvent getEvent(final MagicPermanent permanent) {
             final MagicPlayer opponent = permanent.getController().getOpponent();
             return new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        new Object[]{permanent,opponent},
-                        this,
-                        opponent + " discards a card at random.");
+                    permanent,
+                    opponent,
+                    this,
+                    opponent + " discards a card at random.");
         }
 
         @Override
@@ -35,8 +28,8 @@ public class Black_Cat {
                 final Object data[],
                 final Object[] choiceResults) {
             game.addEvent(new MagicDiscardEvent(
-                    (MagicPermanent)data[0],
-                    (MagicPlayer)data[1],
+                    event.getSource(),
+                    event.getPlayer(),
                     1,
                     true));
         }
