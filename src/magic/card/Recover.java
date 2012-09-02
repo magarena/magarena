@@ -25,7 +25,7 @@ public class Recover {
                     player,
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
                     new MagicGraveyardTargetPicker(false),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Return target creature card$ from your graveyard to your hand. Draw a card.");
         }
@@ -35,7 +35,6 @@ public class Recover {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPlayer player=(MagicPlayer)data[1];
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard targetCard) {
@@ -43,7 +42,7 @@ public class Recover {
                     game.doAction(new MagicMoveCardAction(targetCard,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
                 }
             });
-            game.doAction(new MagicDrawAction(player,1));
+            game.doAction(new MagicDrawAction(event.getPlayer(),1));
         }
     };
 }
