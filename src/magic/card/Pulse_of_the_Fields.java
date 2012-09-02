@@ -20,7 +20,7 @@ public class Pulse_of_the_Fields {
             return new MagicEvent(
                     card,
                     player,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     player + " gains 4 life. Then if your opponent " +
                     "has more life than you, return " + 
@@ -33,7 +33,7 @@ public class Pulse_of_the_Fields {
                 final Object[] data,
                 final Object[] choiceResults) {
             final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            final MagicPlayer player = (MagicPlayer)data[1];
+            final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicChangeLifeAction(player,4));
             final boolean more = player.getOpponent().getLife() > player.getLife();
             final MagicLocationType location = more ? MagicLocationType.OwnersHand : MagicLocationType.Graveyard;
