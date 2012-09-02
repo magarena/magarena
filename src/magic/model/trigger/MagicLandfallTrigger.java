@@ -12,10 +12,6 @@ public abstract class MagicLandfallTrigger extends MagicWhenOtherComesIntoPlayTr
     
     public MagicLandfallTrigger() {}
     
-    public MagicTriggerType getType() {
-        return MagicTriggerType.WhenOtherComesIntoPlay;
-    }
-
     protected abstract MagicEvent getEvent(final MagicPermanent permanent);
     
     @Override
