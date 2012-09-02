@@ -24,23 +24,22 @@ import magic.model.trigger.MagicWhenOtherSpellIsCastTrigger;
 public class Golem_Foundry {
     public static final MagicWhenOtherSpellIsCastTrigger T = new MagicWhenOtherSpellIsCastTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
             final MagicPlayer player = permanent.getController();
-            final MagicCard card = data.getCard();
-            return (card.getOwner() == player &&
-                    data.getCardDefinition().isArtifact()) ?
-                        new MagicEvent(
-                            permanent,
-                            player,
-                            new MagicSimpleMayChoice(
-                                player + " may put a charge counter on " + permanent + ".",
-                                MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
-                                1,
-                                MagicSimpleMayChoice.DEFAULT_YES),
-                            new Object[]{permanent},
-                            this,
-                            player + " may$ put a charge counter on " + permanent + "."):
-                       MagicEvent.NONE;
+            final MagicCard card = cardOnStack.getCard();
+            return (card.getOwner() == player && cardOnStack.getCardDefinition().isArtifact()) ?
+                new MagicEvent(
+                    permanent,
+                    player,
+                    new MagicSimpleMayChoice(
+                        player + " may put a charge counter on " + permanent + ".",
+                        MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_YES),
+                    this,
+                    player + " may$ put a charge counter on " + permanent + "."
+                ):
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(
@@ -49,7 +48,7 @@ public class Golem_Foundry {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.Charge,1,true));
+                game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,1,true));
             }    
         }        
     };
