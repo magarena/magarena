@@ -38,7 +38,6 @@ public class Demonlord_of_Ashmouth {
                     player,
                     magicChoice,
                     MagicSacrificeTargetPicker.create(),
-                    new Object[]{permanent},
                     this,
                     "You may$ sacrifice another creature$. If you don't," +
                     " exile " + permanent + ".");
@@ -49,7 +48,7 @@ public class Demonlord_of_Ashmouth {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent permanent = (MagicPermanent)data[0];
+            final MagicPermanent permanent = event.getPermanent();
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
