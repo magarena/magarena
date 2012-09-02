@@ -18,7 +18,7 @@ public class Sift {
             return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Draw three cards, then discard a card.");
         }
@@ -30,7 +30,7 @@ public class Sift {
                 final Object[] choiceResults) {
             final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
             game.doAction(new MagicMoveCardAction(cardOnStack));
-            final MagicPlayer player=(MagicPlayer)data[1];
+            final MagicPlayer player=event.getPlayer();
             game.doAction(new MagicDrawAction(player,3));
             game.addEvent(new MagicDiscardEvent(cardOnStack.getCard(),player,1,false));
         }
