@@ -31,7 +31,6 @@ public class Flameblast_Dragon {
                             new MagicPayManaCostChoice(MagicManaCost.X_RED),
                             MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER), 
                         new MagicDamageTargetPicker(player.getMaximumX(game,MagicManaCost.X_RED)),
-                        new Object[]{permanent},
                         this,
                         "You may pay$ {X}{R}$. If you do, " + permanent + 
                         " deals X damage to target creature or player$."):
@@ -44,7 +43,7 @@ public class Flameblast_Dragon {
                 event.processTarget(game,choiceResults,2,new MagicTargetAction() {
                     public void doAction(final MagicTarget target) {
                         final MagicPayManaCostResult payedManaCost=(MagicPayManaCostResult)choiceResults[1];
-                        final MagicDamage damage=new MagicDamage((MagicPermanent)data[0],target,payedManaCost.getX(),false);
+                        final MagicDamage damage=new MagicDamage(event.getPermanent(),target,payedManaCost.getX(),false);
                         game.doAction(new MagicDealDamageAction(damage));
                     }
                 });
