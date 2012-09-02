@@ -45,7 +45,6 @@ public class Acorn_Catapult {
                     source.getController(),
                     MagicTargetChoice.TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(1),
-                    new Object[]{source},
                     this,
                     source + " deals 1 damage to target creature or player$. " +
                     "That creature's controller or that player puts a 1/1 " +
@@ -61,7 +60,7 @@ public class Acorn_Catapult {
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicDamage damage = new MagicDamage(
-                            (MagicSource)data[0],
+                            event.getSource(),
                             target,
                             1,
                             false);
