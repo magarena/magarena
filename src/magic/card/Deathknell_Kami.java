@@ -32,7 +32,6 @@ public class Deathknell_Kami {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this,
                     source + " gets +1/+1 until end of turn.");
         }
@@ -42,7 +41,7 @@ public class Deathknell_Kami {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanent permanent = (MagicPermanent)data[0];
+            final MagicPermanent permanent = event.getPermanent();
             game.doAction(new MagicChangeTurnPTAction(permanent,1,1));
             game.doAction(new MagicChangeStateAction(
                     permanent,
