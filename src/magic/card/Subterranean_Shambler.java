@@ -24,7 +24,6 @@ public class Subterranean_Shambler {
             return new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{permanent,player},
                     this,
                     permanent + " deals 1 damage to each creature without flying.");
         }
@@ -34,9 +33,9 @@ public class Subterranean_Shambler {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicSource source = (MagicSource)data[0];
+            final MagicSource source = event.getSource();
             final Collection<MagicTarget> creatures =
-                game.filterTargets((MagicPlayer)data[1],MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING);
+                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING);
             for (final MagicTarget creature : creatures) {
                 final MagicDamage damage = new MagicDamage(source,creature,1,false);
                 game.doAction(new MagicDealDamageAction(damage));
@@ -54,7 +53,6 @@ public class Subterranean_Shambler {
                 new MagicEvent(
                         permanent,
                         permanent.getController(),
-                        new Object[]{permanent,permanent.getController()},
                         this,
                         permanent + " deals 1 damage to each creature without flying.") :
             MagicEvent.NONE;
@@ -65,9 +63,9 @@ public class Subterranean_Shambler {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicSource source = (MagicSource)data[0];
+            final MagicSource source = event.getSource();
             final Collection<MagicTarget> creatures =
-                game.filterTargets((MagicPlayer)data[1],MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING);
+                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING);
             for (final MagicTarget creature : creatures) {
                 final MagicDamage damage = new MagicDamage(source,creature,1,false);
                 game.doAction(new MagicDealDamageAction(damage));
