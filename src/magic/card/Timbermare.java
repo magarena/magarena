@@ -21,7 +21,6 @@ public class Timbermare {
             return new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{permanent},
                     this,
                     "Tap all other creatures.");
         }
@@ -32,11 +31,11 @@ public class Timbermare {
                 final Object data[],
                 final Object[] choiceResults) {
             final Collection<MagicTarget> targets = game.filterTargets(
-                    game.getPlayer(0),
+                    event.getPlayer(),
                     MagicTargetFilter.TARGET_CREATURE);
             for (final MagicTarget target : targets) {
                 final MagicPermanent creature = (MagicPermanent)target;
-                if (creature != (MagicPermanent)data[0]) {
+                if (creature != event.getPermanent()) {
                     game.doAction(new MagicTapAction(creature,true));
                 }
             }
