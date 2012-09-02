@@ -44,7 +44,6 @@ public class Beastmaster_Ascension {
                                 MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
                                 1,
                                 MagicSimpleMayChoice.DEFAULT_YES),
-                        new Object[]{permanent},
                         this,
                         player + " may$ put a quest counter on " + permanent + ".") :
                 MagicEvent.NONE;
@@ -58,7 +57,7 @@ public class Beastmaster_Ascension {
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 game.doAction(new MagicChangeCountersAction(
-                        (MagicPermanent)data[0],
+                        event.getPermanent(),
                         MagicCounterType.Charge,
                         1,
                         true));
