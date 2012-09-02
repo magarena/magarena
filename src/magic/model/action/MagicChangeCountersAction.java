@@ -28,6 +28,9 @@ public class MagicChangeCountersAction extends MagicAction {
     
     @Override
     public void doAction(final MagicGame game) {
+        if (amount == 0) {
+            return;
+        }
         final int oldScore=hasScore?permanent.getScore():0;
         permanent.changeCounters(counterType,amount);
         if (hasScore) {
