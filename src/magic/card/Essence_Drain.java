@@ -27,10 +27,10 @@ public class Essence_Drain {
                     player,
                     MagicTargetChoice.TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(3),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     card + " deals 3 damage to target creature or player$ and " +
-                            player + " gains 3 life.");
+                    player + " gains 3 life.");
         }
         @Override
         public void executeEvent(
@@ -46,7 +46,7 @@ public class Essence_Drain {
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[1],3));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),3));
         }
     };
 }
