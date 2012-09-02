@@ -33,7 +33,7 @@ public class Rite_of_Replication {
                             MagicManaCost.FIVE,
                             false),
                     MagicCopyTargetPicker.create(),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Put a token onto the battlefield that's a copy of " +
                     "target creature$. If " + card + " was kicked$, put " +
@@ -48,7 +48,7 @@ public class Rite_of_Replication {
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    final MagicPlayer player = (MagicPlayer)data[1];
+                    final MagicPlayer player = event.getPlayer();
                     final MagicCardDefinition cardDefinition = creature.getCardDefinition();
                     int count = (Integer)choiceResults[1] > 0 ? 5:1;
                     for (;count>0;count--) {
