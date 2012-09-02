@@ -20,7 +20,7 @@ public class Blunt_the_Assault {
             return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     player + " gains 1 life for each creature on the battlefield. " +
                     "Prevent all combat damage that would be dealt this turn.");
@@ -32,7 +32,7 @@ public class Blunt_the_Assault {
                 final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-            final MagicPlayer player = (MagicPlayer)data[1];
+            final MagicPlayer player = event.getPlayer();
             final int amount = game.getNrOfPermanents(MagicType.Creature);
             if (amount > 0) {
                 game.doAction(new MagicChangeLifeAction(player,amount));
