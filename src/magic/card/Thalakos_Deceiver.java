@@ -26,7 +26,6 @@ public class Thalakos_Deceiver {
                                 ". If you do, gain control of target creature.",
                                 MagicTargetChoice.NEG_TARGET_CREATURE),
                         MagicExileTargetPicker.create(),
-                        new Object[]{permanent,player},
                         this,
                         player + " may$ sacrifice " + permanent +
                         ". If you do, gain control of target creature$.");
@@ -41,10 +40,10 @@ public class Thalakos_Deceiver {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                game.doAction(new MagicSacrificeAction((MagicPermanent)data[0]));
+                game.doAction(new MagicSacrificeAction(event.getPermanent()));
                 event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
-                        game.doAction(new MagicGainControlAction((MagicPlayer)data[1],creature));
+                        game.doAction(new MagicGainControlAction(event.getPlayer(),creature));
                     }
                 });
             }
