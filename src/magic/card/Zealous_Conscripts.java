@@ -23,7 +23,6 @@ public class Zealous_Conscripts {
                     player,
                     MagicTargetChoice.NEG_TARGET_PERMANENT,
                     MagicExileTargetPicker.create(),
-                    new Object[]{permanent,player},
                     this,
                     "Gain control of target permanent$ until end of turn. Untap that permanent. " +
                     "It gains haste until end of turn.");
@@ -33,7 +32,7 @@ public class Zealous_Conscripts {
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent perm) {
-                    game.doAction(new MagicGainControlAction((MagicPlayer)data[1],perm,MagicStatic.UntilEOT));
+                    game.doAction(new MagicGainControlAction(event.getPlayer(),perm,MagicStatic.UntilEOT));
                     game.doAction(new MagicUntapAction(perm));
                     game.doAction(new MagicSetAbilityAction(perm,MagicAbility.Haste));
                 }
