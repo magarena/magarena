@@ -8,21 +8,19 @@ import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicGraveyardTriggerData;
-import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
+import magic.model.trigger.MagicWhenDiesTrigger;
 
 public class Rancor {
-    public static final MagicWhenPutIntoGraveyardTrigger T = new MagicWhenPutIntoGraveyardTrigger() {
+    public static final MagicWhenDiesTrigger T = new MagicWhenDiesTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
-            final MagicCard card=triggerData.card;
-            return (MagicLocationType.Play==triggerData.fromLocation) ?
-                new MagicEvent(
-                        card,
-                        card.getController(),
-                        new Object[]{card},
-                        this,
-                        "Return " + permanent + " to its owner's hand.") :
-                MagicEvent.NONE;
+        public MagicEvent getEvent(final MagicPermanent permanent) {
+            final MagicCard card = permanent.getCard();
+            return new MagicEvent(
+                card,
+                card.getController(),
+                this,
+                "Return " + card + " to its owner's hand."
+            );
         }
         @Override
         public void executeEvent(
@@ -30,7 +28,7 @@ public class Rancor {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicCard card=(MagicCard)data[0];
+            final MagicCard card = event.getCard();
             game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
             game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
         }
