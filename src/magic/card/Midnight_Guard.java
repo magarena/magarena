@@ -19,7 +19,6 @@ public class Midnight_Guard {
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
-                    new Object[]{permanent},
                     this,
                     "Untap " + permanent + ".") :
                 MagicEvent.NONE;
@@ -30,7 +29,7 @@ public class Midnight_Guard {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicUntapAction((MagicPermanent)data[0]));
+            game.doAction(new MagicUntapAction(event.getPermanent()));
         }
     };
 }
