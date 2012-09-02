@@ -25,8 +25,8 @@ public class Balefire_Dragon {
                     damage.isCombat()) ?
                 new MagicEvent(
                         permanent,
-                        player,
-                        new Object[]{permanent,player.getOpponent(),amount},
+                        (MagicPlayer)damage.getTarget(),
+                        new Object[]{amount},
                         this,
                         permanent + " deals " + amount + 
                         " damage to each creature defending player controls."):
@@ -39,16 +39,15 @@ public class Balefire_Dragon {
                 final Object data[],
                 final Object[] choiceResults) {
             final Collection<MagicTarget> creatures=
-                    game.filterTargets((MagicPlayer)data[1],MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-                for (final MagicTarget creature : creatures) {
-                    final MagicDamage damage = new MagicDamage(
-                            (MagicPermanent)data[0],
-                            creature,
-                            (Integer)data[2],
-                            false);
-                    game.doAction(new MagicDealDamageAction(damage));
-                }
-            
+                    game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+            for (final MagicTarget creature : creatures) {
+                final MagicDamage damage = new MagicDamage(
+                        event.getSource(),
+                        creature,
+                        (Integer)data[0],
+                        false);
+                game.doAction(new MagicDealDamageAction(damage));
+            }
         }        
     };
 }
