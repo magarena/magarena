@@ -18,13 +18,12 @@ public class Draining_Whelk {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.TARGET_SPELL,
-                    new Object[]{permanent},
-                    this,
-                    "Counter target spell$. Put X +1/+1 counters on " + permanent + 
-                    ", where X is that spell's converted mana cost.");
+                permanent,
+                player,
+                MagicTargetChoice.TARGET_SPELL,
+                this,
+                "Counter target spell$. Put X +1/+1 counters on " + permanent + 
+                ", where X is that spell's converted mana cost.");
         }
         @Override
         public void executeEvent(
@@ -36,7 +35,7 @@ public class Draining_Whelk {
                 public void doAction(final MagicCardOnStack card) {
                     game.doAction(new MagicCounterItemOnStackAction(card));
                     game.doAction(new MagicChangeCountersAction(
-                                (MagicPermanent)data[0],
+                                event.getPermanent(),
                                 MagicCounterType.PlusOne,
                                 card.getConvertedCost(),
                                 true));
