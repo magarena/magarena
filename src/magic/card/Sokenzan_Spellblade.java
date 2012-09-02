@@ -28,7 +28,6 @@ public class Sokenzan_Spellblade {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source,source.getController()},
                     this,
                     source + " gets +X/+0 until end of turn, where " +
                     "X is the number of cards in your hand.");
@@ -39,9 +38,9 @@ public class Sokenzan_Spellblade {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[1];
+            final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicChangeTurnPTAction(
-                    (MagicPermanent)data[0],
+                    event.getPermanent(),
                     player.getHandSize(),
                     0));
             
