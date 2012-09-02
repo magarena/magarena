@@ -18,7 +18,6 @@ public class Promise_of_Bunrei {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{permanent,player},
                         this,
                         "Sacrifice " + permanent + ". If you do, " + 
                         "put four 1/1 colorless Spirit creature tokens onto the battlefield."):
@@ -31,8 +30,8 @@ public class Promise_of_Bunrei {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent permanent=(MagicPermanent)data[0];
-            final MagicPlayer player=(MagicPlayer)data[1];
+            final MagicPermanent permanent=event.getPermanent();
+            final MagicPlayer player=event.getPlayer();
             if (player.controlsPermanent(permanent)) {
                 game.doAction(new MagicSacrificeAction(permanent));
                 for (int count=4;count>0;count--) {
