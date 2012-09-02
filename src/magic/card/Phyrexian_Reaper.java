@@ -13,27 +13,29 @@ import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
 public class Phyrexian_Reaper {
     public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            if (creature == permanent) {
-                final MagicPermanentList plist = new MagicPermanentList();
-                for (final MagicPermanent blocker : permanent.getBlockingCreatures()) {
-                    final int colorFlags = blocker.getColorFlags();
-                    if (MagicColor.Green.hasColor(colorFlags)) {
-                        plist.add(blocker);
-                    }
-                }
-                if (!plist.isEmpty()) {
-                    return new MagicEvent(
-                            permanent,
-                            permanent.getController(),
-                            new Object[]{plist},
-                            this,
-                            plist.size() > 1 ?
-                                    "Destroy blocking green creatures. They can't be regenerated." :
-                                    "Destroy " + plist.get(0) + ". It can't be regenerated.");
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
+            if (permanent != attacker) {
+                return MagicEvent.NONE;
+            }
+
+            final MagicPermanentList plist = new MagicPermanentList();
+            for (final MagicPermanent blocker : permanent.getBlockingCreatures()) {
+                final int colorFlags = blocker.getColorFlags();
+                if (MagicColor.Green.hasColor(colorFlags)) {
+                    plist.add(blocker);
                 }
             }
-            return MagicEvent.NONE;
+            return !plist.isEmpty() ?
+                new MagicEvent(
+                    permanent,
+                    permanent.getController(),
+                    new Object[]{plist},
+                    this,
+                    plist.size() > 1 ?
+                        "Destroy blocking green creatures. They can't be regenerated." :
+                        "Destroy " + plist.get(0) + ". It can't be regenerated."
+                ):
+                MagicEvent.NONE;
         }
         
         @Override
