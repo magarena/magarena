@@ -20,7 +20,7 @@ public class Reverberate {
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_SPELL,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Copy target instant or sorcery spell$. You may choose new targets for the copy.");
         }
@@ -33,7 +33,7 @@ public class Reverberate {
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetCardOnStack(game,choiceResults,0,new MagicCardOnStackAction() {
                 public void doAction(final MagicCardOnStack targetSpell) {
-                    game.doAction(new MagicCopyCardOnStackAction((MagicPlayer)data[1],targetSpell));
+                    game.doAction(new MagicCopyCardOnStackAction(event.getPlayer(),targetSpell));
                 }
             });
         }
