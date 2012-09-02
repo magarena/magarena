@@ -29,12 +29,12 @@ public class Aurification {
             return (damage.getTarget() == player && 
                     damage.getSource().isCreature()) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{damage.getSource()},
-                        this,
-                        player + " puts a gold counter on " +
-                        damage.getSource() + ".") :
+                    permanent,
+                    player,
+                    new Object[]{damage.getSource()},
+                    this,
+                    player + " puts a gold counter on " + damage.getSource() + "."
+                ) :
                 MagicEvent.NONE;
         }
         
@@ -46,9 +46,7 @@ public class Aurification {
                 final Object[] choiceResults) {
             final MagicPermanent creature = (MagicPermanent)data[0];
             game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.Gold,1,true));
-            game.doAction(new MagicAddStaticAction(creature, new MagicStatic(
-                    MagicLayer.Ability,
-                    MagicTargetFilter.TARGET_CREATURE) {
+            game.doAction(new MagicAddStaticAction(creature, new MagicStatic(MagicLayer.Ability) {
                 @Override
                 public long getAbilityFlags(
                         final MagicPermanent source,
@@ -57,16 +55,14 @@ public class Aurification {
                     return flags | MagicAbility.Defender.getMask();
                 }
                 @Override
-                public boolean accept(
+                public boolean condition(
                         final MagicGame game,
                         final MagicPermanent source,
                         final MagicPermanent target) {
-                    return target.getId() == creature.getId() && target.getCounters(MagicCounterType.Gold) > 0;
+                    return target.getCounters(MagicCounterType.Gold) > 0;
                 }
             }));
-            game.doAction(new MagicAddStaticAction(creature, new MagicStatic(
-                    MagicLayer.Type,
-                    MagicTargetFilter.TARGET_CREATURE) {
+            game.doAction(new MagicAddStaticAction(creature, new MagicStatic(MagicLayer.Type) {
                 @Override
                 public void modSubTypeFlags(
                         final MagicPermanent permanent,
@@ -74,11 +70,11 @@ public class Aurification {
                     flags.add(MagicSubType.Wall);
                 }
                 @Override
-                public boolean accept(
+                public boolean condition(
                         final MagicGame game,
                         final MagicPermanent source,
                         final MagicPermanent target) {
-                    return target.getId() == creature.getId() && target.getCounters(MagicCounterType.Gold) > 0;
+                    return target.getCounters(MagicCounterType.Gold) > 0;
                 }
             }));
         }
@@ -86,14 +82,15 @@ public class Aurification {
     
     public static final MagicWhenLeavesPlayTrigger T2 = new MagicWhenLeavesPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            return (permanent == data) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent left) {
+            return (permanent == left) ?
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
                     this,
-                    "Remove all gold counters from all creatures.") :
-            MagicEvent.NONE;
+                    "Remove all gold counters from all creatures."
+                ):
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(
@@ -102,18 +99,18 @@ public class Aurification {
                 final Object data[],
                 final Object[] choiceResults) {
             final Collection<MagicTarget> targets =
-                    game.filterTargets(game.getPlayer(0),MagicTargetFilter.TARGET_CREATURE);
-                for (final MagicTarget target : targets) {
-                    final MagicPermanent permanent = (MagicPermanent)target;
-                    final int amount = permanent.getCounters(MagicCounterType.Gold);
-                    if (amount > 0) {
-                        game.doAction(new MagicChangeCountersAction(
-                                permanent,
-                                MagicCounterType.Gold,
-                                -amount,
-                                true));
-                    }
+                    game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE);
+            for (final MagicTarget target : targets) {
+                final MagicPermanent permanent = (MagicPermanent)target;
+                final int amount = permanent.getCounters(MagicCounterType.Gold);
+                if (amount > 0) {
+                    game.doAction(new MagicChangeCountersAction(
+                            permanent,
+                            MagicCounterType.Gold,
+                            -amount,
+                            true));
                 }
+            }
         }
     };
 }
