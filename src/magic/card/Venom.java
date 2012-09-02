@@ -13,27 +13,28 @@ import magic.model.trigger.MagicWhenBlocksTrigger;
 public class Venom {
     public static final MagicWhenBecomesBlockedTrigger T1 = new MagicWhenBecomesBlockedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
             final MagicPermanent enchantedCreature = permanent.getEnchantedCreature();
-            if (creature == enchantedCreature) {
-                final MagicPermanentList plist = new MagicPermanentList();
-                for (final MagicPermanent blocker : enchantedCreature.getBlockingCreatures()) {
-                    if (!blocker.hasSubType(MagicSubType.Wall)) {
-                        plist.add(blocker);
-                    }
-                }
-                if (!plist.isEmpty()) {
-                    return new MagicEvent(
-                            permanent,
-                            permanent.getController(),
-                            new Object[]{plist},
-                            this,
-                            plist.size() > 1 ?
-                                    "Destroy blocking non-Wall creatures at end of combat." :
-                                    "Destroy " + plist.get(0) + " at end of combat.");
+            if (enchantedCreature != attacker) {
+                return MagicEvent.NONE;
+            }
+            final MagicPermanentList plist = new MagicPermanentList();
+            for (final MagicPermanent blocker : enchantedCreature.getBlockingCreatures()) {
+                if (!blocker.hasSubType(MagicSubType.Wall)) {
+                    plist.add(blocker);
                 }
             }
-            return MagicEvent.NONE;
+            return !plist.isEmpty() ?
+                new MagicEvent(
+                    permanent,
+                    permanent.getController(),
+                    new Object[]{plist},
+                    this,
+                    plist.size() > 1 ?
+                        "Destroy blocking non-Wall creatures at end of combat." :
+                        "Destroy " + plist.get(0) + " at end of combat."
+                ):
+                MagicEvent.NONE;
         }
         
         @Override
