@@ -12,15 +12,20 @@ import magic.model.trigger.MagicWhenBlocksTrigger;
 public class Inferno_Elemental {
     public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            if (creature == permanent) {
-                return new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        this,
-                        permanent + " deals 3 damage to blocking creature.");
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
+            if (permanent != attacker) {
+                return MagicEvent.NONE;
             }
-            return MagicEvent.NONE;
+
+            final MagicPermanentList plist = new MagicPermanentList(permanent.getBlockingCreatures());
+            
+            return new MagicEvent(
+                permanent,
+                permanent.getController(),
+                new Object[]{plist},
+                this,
+                permanent + " deals 3 damage to each blocking creature."
+            );
         }
         
         @Override
@@ -29,10 +34,9 @@ public class Inferno_Elemental {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent permanent = event.getPermanent();
-            final MagicPermanentList plist = permanent.getBlockingCreatures();
+            final MagicPermanentList plist = (MagicPermanentList)data[0];
             for (final MagicPermanent blocker : plist) {
-                final MagicDamage damage = new MagicDamage(permanent,blocker,3,false);
+                final MagicDamage damage = new MagicDamage(event.getSource(),blocker,3,false);
                 game.doAction(new MagicDealDamageAction(damage));
             }
         }
@@ -40,12 +44,13 @@ public class Inferno_Elemental {
     
     public static final MagicWhenBlocksTrigger T2 = new MagicWhenBlocksTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
             final MagicPermanent blocked = permanent.getBlockedCreature();
-            return (permanent == data && blocked.isValid()) ?
+            return (permanent == blocker && blocked.isValid()) ?
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
+                    new Object[]{blocked},
                     this,
                     permanent + " deals 3 damage to " + blocked + "."):
                 MagicEvent.NONE;
@@ -58,7 +63,7 @@ public class Inferno_Elemental {
                 final Object[] choiceResults) {
             final MagicDamage damage = new MagicDamage(
                     event.getPermanent(),
-                    event.getPermanent().getBlockedCreature(),
+                    (MagicPermanent)data[0],
                     3,
                     false);
             game.doAction(new MagicDealDamageAction(damage));
