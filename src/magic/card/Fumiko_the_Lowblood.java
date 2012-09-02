@@ -31,7 +31,7 @@ public class Fumiko_the_Lowblood {
                 return new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{permanent,amount},
+                        new Object[]{amount},
                         this,
                         permanent + " gets +" + amount + "/+" +  amount + " until end of turn.");
             }
@@ -44,9 +44,9 @@ public class Fumiko_the_Lowblood {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeTurnPTAction(
-                    (MagicPermanent)data[0],
-                    (Integer)data[1],
-                    (Integer)data[1]));
+                    event.getPermanent(),
+                    (Integer)data[0],
+                    (Integer)data[0]));
         }
     };
     
@@ -59,7 +59,7 @@ public class Fumiko_the_Lowblood {
                 return new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{permanent,amount},
+                        new Object[]{amount},
                         this,
                         permanent + " gets +" + amount + "/+" +  amount + " until end of turn.");
             }
@@ -72,9 +72,9 @@ public class Fumiko_the_Lowblood {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeTurnPTAction(
-                    (MagicPermanent)data[0],
-                    (Integer)data[1],
-                    (Integer)data[1]));
+                    event.getPermanent(),
+                    (Integer)data[0],
+                    (Integer)data[0]));
         }
     };
 }
