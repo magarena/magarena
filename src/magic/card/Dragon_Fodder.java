@@ -18,7 +18,7 @@ public class Dragon_Fodder {
             return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Put two 1/1 red Goblin creature tokens onto the battlefield.");
         }
@@ -29,7 +29,7 @@ public class Dragon_Fodder {
                 final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-            final MagicPlayer player=(MagicPlayer)data[1];
+            final MagicPlayer player=event.getPlayer();
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Goblin1")));
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Goblin1")));
         }
