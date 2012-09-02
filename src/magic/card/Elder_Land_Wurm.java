@@ -28,11 +28,10 @@ public class Elder_Land_Wurm {
                final MagicPermanent data) {
            return (permanent == data) ?
                 new MagicEvent(
-                       permanent,
-                       permanent.getController(),
-                       new Object[]{permanent},
-                       this,
-                       permanent + " loses defender."):
+                   permanent,
+                   permanent.getController(),
+                   this,
+                   permanent + " loses defender."):
                 MagicEvent.NONE;
        }
        @Override
@@ -41,8 +40,7 @@ public class Elder_Land_Wurm {
                final MagicEvent event,
                final Object data[],
                final Object[] choiceResults) {
-           final MagicPermanent permanent = (MagicPermanent)data[0];
-           game.doAction(new MagicAddStaticAction(permanent, AB));
+           game.doAction(new MagicAddStaticAction(event.getPermanent(), AB));
        }
    };
 }
