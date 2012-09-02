@@ -22,7 +22,7 @@ public class Lab_Rats {
                     cardOnStack.getCard(),
                     player,
                     new MagicBuybackChoice(MagicManaCost.FOUR),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     player + " puts a 1/1 black Rat creature token onto the " +
                     "battlefield. If the buyback cost was payed$, " +
@@ -37,7 +37,7 @@ public class Lab_Rats {
                 final Object[] choiceResults) {
             final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
             game.doAction(new MagicPlayTokenAction(
-                    (MagicPlayer)data[1],
+                    event.getPlayer(),
                     TokenCardDefinitions.get("Rat1")));
             if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
                 game.doAction(new MagicMoveCardAction(
