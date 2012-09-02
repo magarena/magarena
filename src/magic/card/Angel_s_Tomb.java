@@ -88,7 +88,6 @@ public class Angel_s_Tomb {
                             MagicSimpleMayChoice.BECOME_CREATURE,
                             0,
                             MagicSimpleMayChoice.DEFAULT_YES),
-                        new Object[]{permanent},
                         this,
                         player + " may$ have " + permanent + " become a 3/3 white " +
                         "Angel artifact creature with flying until end of turn."):
@@ -103,7 +102,7 @@ public class Angel_s_Tomb {
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 game.doAction(new MagicBecomesCreatureAction(
-                        (MagicPermanent)data[0],
+                        event.getPermanent(),
                         PT,
                         AB,
                         ST,
