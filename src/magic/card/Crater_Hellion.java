@@ -20,7 +20,6 @@ public class Crater_Hellion {
             return new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{permanent,player},
                     this,
                     permanent + " deals 4 damage to each other creature.");
         }
@@ -30,9 +29,9 @@ public class Crater_Hellion {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicSource permanent = (MagicPermanent)data[0];
+            final MagicSource permanent = event.getPermanent();
             final Collection<MagicTarget> creatures =
-                game.filterTargets((MagicPlayer)data[1],MagicTargetFilter.TARGET_CREATURE);
+                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE);
             for (final MagicTarget creature : creatures) {
                 if (permanent != creature) {
                     final MagicDamage damage=new MagicDamage(permanent,creature,4,false);
