@@ -17,7 +17,7 @@ public class Visions_of_Beyond {
             return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Draw a card. If a graveyard has twenty or more cards in it, " +
                     "draw three cards instead.");
@@ -31,7 +31,7 @@ public class Visions_of_Beyond {
             final int amount = game.getPlayer(0).getGraveyard().size() >= 20 ||
                     game.getPlayer(1).getGraveyard().size() >= 20 ? 3 : 1;
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-            game.doAction(new MagicDrawAction((MagicPlayer)data[1],amount));
+            game.doAction(new MagicDrawAction(event.getPlayer(),amount));
         }
     };
 }
