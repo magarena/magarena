@@ -32,7 +32,6 @@ public class Yew_Spirit {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this,
                     source + " gets +X/+X until end of turn, where X is its power.");
         }
@@ -42,7 +41,7 @@ public class Yew_Spirit {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanent permanent = (MagicPermanent)data[0];
+            final MagicPermanent permanent = event.getPermanent();
             final int power = permanent.getPower();
             game.doAction(new MagicChangeTurnPTAction(permanent,power,power));
         }
