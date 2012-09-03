@@ -37,7 +37,6 @@ public class Bloodshot_Trainee {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     new MagicDamageTargetPicker(4),
-                    new Object[]{source},
                     this,
                     source + " deals 4 damage to target creature$.");
         }
@@ -46,7 +45,7 @@ public class Bloodshot_Trainee {
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
-                    final MagicDamage damage = new MagicDamage((MagicSource)data[0],target,4,false);
+                    final MagicDamage damage = new MagicDamage(event.getSource(),target,4,false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });
