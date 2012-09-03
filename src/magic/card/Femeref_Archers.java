@@ -34,7 +34,6 @@ public class Femeref_Archers {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_ATTACKING_CREATURE_WITH_FLYING,
                     new MagicDamageTargetPicker(4),
-                    new Object[]{source},
                     this,
                     source + " deals 4 damage to target attacking creature$ with flying.");
         }
@@ -43,7 +42,7 @@ public class Femeref_Archers {
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    final MagicDamage damage=new MagicDamage((MagicSource)data[0],creature,4,false);
+                    final MagicDamage damage=new MagicDamage(event.getSource(),creature,4,false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });
