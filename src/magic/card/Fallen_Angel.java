@@ -32,7 +32,6 @@ public class Fallen_Angel {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this,
                     source + " gets +2/+1 until end of turn.");
         }
@@ -42,7 +41,7 @@ public class Fallen_Angel {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeTurnPTAction((MagicPermanent)data[0],2,1));
+            game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),2,1));
         }
     };
 }
