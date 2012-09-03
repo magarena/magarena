@@ -39,7 +39,6 @@ public class Hateflayer {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(5),
-                    new Object[]{source},
                     this,
                     source + " deals damage equal to its power to target creature or player$.");
         }
@@ -48,7 +47,7 @@ public class Hateflayer {
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
-                    final MagicPermanent permanent=(MagicPermanent)data[0];
+                    final MagicPermanent permanent=event.getPermanent();
                     final MagicDamage damage=new MagicDamage(permanent,target,permanent.getPower(),false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
