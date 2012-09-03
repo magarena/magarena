@@ -57,7 +57,6 @@ public class Inkmoth_Nexus {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this, 
                     source + " becomes a 1/1 Blinkmoth artifact creature with flying and infect until end of turn. " + 
                     "It's still a land.");
@@ -66,7 +65,7 @@ public class Inkmoth_Nexus {
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,
                 final Object[] data,final Object[] choiceResults) {
-            final MagicPermanent permanent=(MagicPermanent)data[0];
+            final MagicPermanent permanent=event.getPermanent();
             game.doAction(new MagicBecomesCreatureAction(permanent,PT,AB,ST));
         }
     };
