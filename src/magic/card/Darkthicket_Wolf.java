@@ -30,7 +30,6 @@ public class Darkthicket_Wolf {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this,
                     source + " gets +2/+2 until end of turn.");
         }
@@ -40,7 +39,7 @@ public class Darkthicket_Wolf {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanent permanent=(MagicPermanent)data[0];
+            final MagicPermanent permanent=event.getPermanent();
             game.doAction(new MagicChangeTurnPTAction(permanent,2,2));
         }
     };
