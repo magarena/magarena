@@ -32,7 +32,6 @@ public class Scepter_of_Dominance {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_PERMANENT,
                     new MagicTapTargetPicker(true,false),
-                    new Object[]{source},
                     this,
                     "Tap target permanent$.");
         }
