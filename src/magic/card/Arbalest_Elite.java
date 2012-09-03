@@ -35,7 +35,6 @@ public class Arbalest_Elite {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_ATTACKING_OR_BLOCKING_CREATURE,
                     new MagicDamageTargetPicker(3),
-                    new Object[]{source},
                     this,
                     source + " deals 3 damage to target attacking or blocking creature$. " +
                     source + " doesn't untap during your next untap step.");
@@ -48,9 +47,9 @@ public class Arbalest_Elite {
                 final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    final MagicDamage damage=new MagicDamage((MagicPermanent)data[0],creature,3,false);
+                    final MagicDamage damage=new MagicDamage(event.getPermanent(),creature,3,false);
                     game.doAction(new MagicDealDamageAction(damage));
-                    game.doAction(new MagicChangeStateAction((MagicPermanent)data[0],MagicPermanentState.DoesNotUntapDuringNext,true));
+                    game.doAction(new MagicChangeStateAction(event.getPermanent(),MagicPermanentState.DoesNotUntapDuringNext,true));
                 }
             });
         }
