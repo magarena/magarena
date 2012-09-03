@@ -66,7 +66,6 @@ public class Skinshifter {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this,
                     "Until end of turn, " + source + 
                     " becomes a 4/4 Rhino and gains trample.");
@@ -78,7 +77,7 @@ public class Skinshifter {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicBecomesCreatureAction((MagicPermanent)data[0],PT1,AB1,ST1));
+            game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT1,AB1,ST1));
         }
     };
     
@@ -126,7 +125,6 @@ public class Skinshifter {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this,
                     "Until end of turn, " + source + 
                     " becomes a 2/2 Bird and gains flying.");
@@ -138,7 +136,7 @@ public class Skinshifter {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicBecomesCreatureAction((MagicPermanent)data[0],PT2,AB2,ST2));
+            game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT2,AB2,ST2));
         }
     };
     
@@ -180,7 +178,6 @@ public class Skinshifter {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this,
                     "Until end of turn, " + source + 
                     " becomes a becomes a 0/8 Plant.");
@@ -192,7 +189,7 @@ public class Skinshifter {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicBecomesCreatureAction((MagicPermanent)data[0],PT3,ST3));
+            game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT3,ST3));
         }
     };
 }
