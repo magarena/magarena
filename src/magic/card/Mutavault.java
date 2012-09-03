@@ -56,7 +56,6 @@ public class Mutavault {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this,
                     source + " becomes a 2/2 creature with all creature types until end of turn. " + 
                     "It's still a land.");
@@ -68,7 +67,7 @@ public class Mutavault {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanent permanent=(MagicPermanent)data[0];
+            final MagicPermanent permanent=event.getPermanent();
             game.doAction(new MagicBecomesCreatureAction(permanent,PT,ST));
         }
     };
