@@ -61,7 +61,6 @@ public class Forbidding_Watchtower {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this,
                     "Until end of turn, " + source + 
                     " becomes a 1/5 white Soldier creature. " + 
@@ -73,7 +72,7 @@ public class Forbidding_Watchtower {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicBecomesCreatureAction((MagicPermanent)data[0],PT,ST,C));
+            game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT,ST,C));
         }
     };
 }
