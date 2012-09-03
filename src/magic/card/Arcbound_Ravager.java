@@ -31,7 +31,6 @@ public class Arcbound_Ravager {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this,
                     source.getController() + " puts a +1/+1 counter on "
                     + source + ".");
@@ -42,7 +41,7 @@ public class Arcbound_Ravager {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.PlusOne,1,true));
+            game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,1,true));
         }
     };
 }
