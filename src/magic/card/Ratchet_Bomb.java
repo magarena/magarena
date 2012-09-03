@@ -39,7 +39,6 @@ public class Ratchet_Bomb {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this,
                     "Put a charge counter on " + source + ".");
         }
@@ -51,7 +50,7 @@ public class Ratchet_Bomb {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
-                        (MagicPermanent)data[0],
+                        event.getPermanent(),
                         MagicCounterType.Charge,
                         1,
                         true));
@@ -78,7 +77,6 @@ public class Ratchet_Bomb {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this,
                     "Destroy each nonland permanent with converted mana cost equal to the number of charge counters on " + 
                     source + ".");
@@ -90,7 +88,7 @@ public class Ratchet_Bomb {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanent source=(MagicPermanent)data[0];
+            final MagicPermanent source=event.getPermanent();
             final int amount=source.getCounters(MagicCounterType.Charge);
             final Collection<MagicTarget> targets=
                 game.filterTargets(source.getController(), 
