@@ -36,7 +36,6 @@ public class Rabble_Rouser {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this,
                     "Attacking creatures get +X/+0 until end of turn, " +
                     "where X is " + source + "'s power.");
@@ -47,7 +46,7 @@ public class Rabble_Rouser {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanent permanent = (MagicPermanent)data[0];
+            final MagicPermanent permanent = event.getPermanent();
             final Collection<MagicTarget> targets = game.filterTargets(
                     permanent.getController(),
                     MagicTargetFilter.TARGET_ATTACKING_CREATURE);
