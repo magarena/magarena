@@ -38,7 +38,6 @@ public class Mikaeus__the_Lunarch {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player,source},
                     this,
                     "Put a +1/+1 counter on " + source + ".");
         }
@@ -49,7 +48,7 @@ public class Mikaeus__the_Lunarch {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeCountersAction((MagicPermanent)data[1],MagicCounterType.PlusOne,1,true));
+            game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,1,true));
         }
     };
     
@@ -71,7 +70,6 @@ public class Mikaeus__the_Lunarch {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this,
                     "Put a +1/+1 counter on each other creature you control.");
         }
@@ -81,7 +79,7 @@ public class Mikaeus__the_Lunarch {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanent creature = (MagicPermanent)data[0];
+            final MagicPermanent creature = event.getPermanent();
             final Collection<MagicTarget> targets =
                 game.filterTargets(creature.getController(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicTarget target : targets) {
