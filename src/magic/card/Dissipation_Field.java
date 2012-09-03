@@ -16,14 +16,14 @@ public class Dissipation_Field {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicPlayer player=permanent.getController();
-            final MagicSource source=damage.getSource();
-            return (damage.getTarget()==player&&source.isPermanent()) ?
+            final MagicSource dmgSource=damage.getSource();
+            return (damage.getTarget()==player && dmgSource.isPermanent()) ?
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{source},
+                        new Object[]{dmgSource},
                         this,
-                        "Return "+source+" to its owner's hand."):
+                        "Return "+dmgSource+" to its owner's hand."):
                 MagicEvent.NONE;
         }
         @Override
