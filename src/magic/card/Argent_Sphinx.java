@@ -36,7 +36,6 @@ public class Argent_Sphinx {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this,
                     "Exile " + source + ". Return it to the battlefield " +
                     "under your control at the end of turn.");
@@ -47,7 +46,7 @@ public class Argent_Sphinx {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicExileUntilEndOfTurnAction((MagicPermanent)data[0]));
+            game.doAction(new MagicExileUntilEndOfTurnAction(event.getPermanent()));
         }
     };
 }
