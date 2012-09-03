@@ -36,7 +36,6 @@ public class Mindshrieker {
                     source,
                     source.getController(),
                     MagicTargetChoice.TARGET_PLAYER,
-                    new Object[]{source},
                     this,
                     "Target player$ puts the top card of his or her library " +
                     "into his or her graveyard. " + source + " gets +X/+X " +
@@ -54,7 +53,7 @@ public class Mindshrieker {
                     game.doAction(new MagicMillLibraryAction(player,1));
                     final MagicCard card = player.getGraveyard().get(player.getGraveyard().size()-1);
                     final int amount = card.getCardDefinition().getConvertedCost();
-                    game.doAction(new MagicChangeTurnPTAction((MagicPermanent)data[0],amount,amount));
+                    game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),amount,amount));
                 }
             });
         }
