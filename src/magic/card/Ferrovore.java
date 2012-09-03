@@ -40,7 +40,6 @@ public class Ferrovore {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this,
                     source + " gets +3/+0 until end of turn.");
         }
@@ -50,7 +49,7 @@ public class Ferrovore {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeTurnPTAction((MagicPermanent)data[0],3,0));
+            game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),3,0));
         }
     };
 }
