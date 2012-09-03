@@ -32,7 +32,6 @@ public class Scattershot_Archer {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this,
                     source + " deals 1 damage to each creature with flying.");
         }
@@ -43,7 +42,7 @@ public class Scattershot_Archer {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanent permanent=(MagicPermanent)data[0];
+            final MagicPermanent permanent=event.getPermanent();
             final Collection<MagicTarget> targets=
                 game.filterTargets(permanent.getController(),MagicTargetFilter.TARGET_CREATURE_WITH_FLYING);
             for (final MagicTarget target : targets) {
