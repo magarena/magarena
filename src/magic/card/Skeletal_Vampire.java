@@ -84,7 +84,6 @@ public class Skeletal_Vampire {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this,
                     "Regenerate " + source + ".");
         }
@@ -95,7 +94,7 @@ public class Skeletal_Vampire {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicRegenerateAction((MagicPermanent)data[0]));
+            game.doAction(new MagicRegenerateAction(event.getPermanent()));
         }
     };
     
