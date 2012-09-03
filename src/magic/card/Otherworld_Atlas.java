@@ -35,7 +35,6 @@ public class Otherworld_Atlas {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this,
                     "Put a charge counter on " + source + ".");
         }
@@ -44,10 +43,10 @@ public class Otherworld_Atlas {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
-                        (MagicPermanent)data[0],
+                        event.getPermanent(),
                         MagicCounterType.Charge,
                         1,
                         true));
@@ -76,7 +75,6 @@ public class Otherworld_Atlas {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this,
                     "Each player draws a card for each charge counter on " +
                     source + ".");
@@ -88,7 +86,7 @@ public class Otherworld_Atlas {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanent source = (MagicPermanent)data[0];
+            final MagicPermanent source = event.getPermanent();
             final int amount = source.getCounters(MagicCounterType.Charge);
             for (final MagicPlayer player : game.getPlayers()) {
                 game.doAction(new MagicDrawAction(player,amount));
