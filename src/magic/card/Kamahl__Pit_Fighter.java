@@ -33,7 +33,6 @@ public class Kamahl__Pit_Fighter {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(3),
-                    new Object[]{source},
                     this,
                     source + " deals 3 damage to target creature or player$.");
         }
@@ -45,7 +44,7 @@ public class Kamahl__Pit_Fighter {
                 final Object[] choiceResults) {
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
-                    final MagicDamage damage = new MagicDamage((MagicPermanent)data[0],target,3,false);
+                    final MagicDamage damage = new MagicDamage(event.getPermanent(),target,3,false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });
