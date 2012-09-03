@@ -33,7 +33,6 @@ public class Hoard_Smelter_Dragon {
                     source.getController(),
                     MagicTargetChoice.TARGET_ARTIFACT,
                     new MagicDestroyTargetPicker(false),
-                    new Object[]{source},
                     this,
                     "Destroy target artifact$. " + source + " gets +X/+0 " +
                     "until end of turn, where X is that artifact's converted mana cost.");
@@ -48,7 +47,7 @@ public class Hoard_Smelter_Dragon {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicDestroyAction(permanent));
                     game.doAction(new MagicChangeTurnPTAction(
-                            (MagicPermanent)data[0],
+                            event.getPermanent(),
                             permanent.getCardDefinition().getConvertedCost(),
                             0));
                 }
