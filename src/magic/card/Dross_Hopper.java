@@ -33,7 +33,6 @@ public class Dross_Hopper {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this,
                     source + " gains flying until end of turn.");
         }
@@ -43,7 +42,7 @@ public class Dross_Hopper {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicSetAbilityAction((MagicPermanent)data[0],MagicAbility.Flying));
+            game.doAction(new MagicSetAbilityAction(event.getPermanent(),MagicAbility.Flying));
         }
     };
 }
