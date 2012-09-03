@@ -42,7 +42,6 @@ public class Barrage_Ogre {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(2),
-                    new Object[]{source},
                     this,
                     source + " deals 2 damage to target creature or player$.");
         }
@@ -54,7 +53,7 @@ public class Barrage_Ogre {
                 final Object[] choiceResults) {
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
-                    final MagicDamage damage = new MagicDamage((MagicSource)data[0],target,2,false);
+                    final MagicDamage damage = new MagicDamage(event.getSource(),target,2,false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });
