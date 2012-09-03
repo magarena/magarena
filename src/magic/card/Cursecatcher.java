@@ -33,7 +33,6 @@ public class Cursecatcher {
                     source,
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_INSTANT_OR_SORCERY_SPELL,
-                    new Object[]{source},
                     this,
                     "Counter target instant or sorcery spell$ unless its controller pays {1}.");
         }
@@ -42,7 +41,7 @@ public class Cursecatcher {
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
             event.processTargetCardOnStack(game,choiceResults,0,new MagicCardOnStackAction() {
                 public void doAction(final MagicCardOnStack targetSpell) {
-                    game.addEvent(new MagicCounterUnlessEvent((MagicSource)data[0],targetSpell,MagicManaCost.ONE)); 
+                    game.addEvent(new MagicCounterUnlessEvent(event.getSource(),targetSpell,MagicManaCost.ONE)); 
                 }
             });
         }
