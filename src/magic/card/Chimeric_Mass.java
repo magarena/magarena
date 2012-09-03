@@ -74,7 +74,6 @@ public class Chimeric_Mass {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this,
                     "Until end of turn, " + source + 
                     " becomes a Construct artifact creature with " + 
@@ -87,7 +86,7 @@ public class Chimeric_Mass {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicBecomesCreatureAction((MagicPermanent)data[0],PT,ST));
+            game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT,ST));
         }
     };
 
