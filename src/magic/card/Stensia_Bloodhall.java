@@ -42,7 +42,6 @@ public class Stensia_Bloodhall {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_PLAYER,
                     new MagicDamageTargetPicker(2),
-                    new Object[]{source},
                     this,
                     source + " deals 2 damage to target player$.");
         }
@@ -51,7 +50,7 @@ public class Stensia_Bloodhall {
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
-                    final MagicDamage damage = new MagicDamage((MagicPermanent)data[0],player,2,false);
+                    final MagicDamage damage = new MagicDamage(event.getPermanent(),player,2,false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });
