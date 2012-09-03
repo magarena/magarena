@@ -50,7 +50,6 @@ public class Null_Champion {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this,
                     "Regenerate " + source + ".");
         }
@@ -61,7 +60,7 @@ public class Null_Champion {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicRegenerateAction((MagicPermanent)data[0]));
+            game.doAction(new MagicRegenerateAction(event.getPermanent()));
         }
     };
 }
