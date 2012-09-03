@@ -34,7 +34,6 @@ public class Stun_Sniper {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     new MagicTapTargetPicker(true,false),
-                    new Object[]{source},
                     this,
                     source + " deals 1 damage to target creature$. Tap that creature.");
         }
@@ -46,7 +45,7 @@ public class Stun_Sniper {
                 final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    final MagicDamage damage=new MagicDamage((MagicPermanent)data[0],creature,1,false);
+                    final MagicDamage damage=new MagicDamage(event.getPermanent(),creature,1,false);
                     game.doAction(new MagicDealDamageAction(damage));
                     game.doAction(new MagicTapAction(creature,true));
                 }
