@@ -39,7 +39,6 @@ public class Spiritmonger {
                     source,
                     source.getController(),
                     MagicColorChoice.BLUE_RED_WHITE_INSTANCE,
-                    new Object[]{source},
                     this,
                     source + " becomes the color$ of your choice until end of turn.");
         }
@@ -49,7 +48,7 @@ public class Spiritmonger {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanent permanent=(MagicPermanent)data[0];
+            final MagicPermanent permanent=event.getPermanent();
             game.doAction(new MagicAddStaticAction(permanent, 
                 new MagicStatic(MagicLayer.SwitchPT,MagicStatic.UntilEOT) {
                 @Override
