@@ -39,7 +39,6 @@ public class Parallax_Tide {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_LAND,
                     MagicExileTargetPicker.create(),
-                    new Object[]{source},
                     this,
                     "Exile target land$.");
         }
@@ -49,7 +48,7 @@ public class Parallax_Tide {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicExileUntilThisLeavesPlayAction(
-                            (MagicPermanent)data[0],
+                            event.getPermanent(),
                             permanent));
                 }
             });
@@ -65,7 +64,6 @@ public class Parallax_Tide {
                 return new MagicEvent(
                         permanent,
                         permanent.getController(),
-                        new Object[]{permanent},
                         this,
                         clist.size() > 1 ?
                                 "Return exiled cards to the battlefield " :
@@ -79,7 +77,7 @@ public class Parallax_Tide {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent permanent = (MagicPermanent)data[0];
+            final MagicPermanent permanent = event.getPermanent();
             game.doAction(new MagicReturnExiledUntilThisLeavesPlayAction(permanent,MagicLocationType.Play));
         }
     };
