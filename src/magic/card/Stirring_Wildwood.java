@@ -79,7 +79,6 @@ public class Stirring_Wildwood {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this,
                     "Until end of turn, " + source + 
                     " becomes a 3/4 green and white Elemental creature with reach. It's still a land.");
@@ -90,7 +89,7 @@ public class Stirring_Wildwood {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicBecomesCreatureAction((MagicPermanent)data[0],PT,AB,ST,C));
+            game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT,AB,ST,C));
         }
     };
 }
