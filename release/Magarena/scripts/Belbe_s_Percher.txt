@@ -1,0 +1,12 @@
+name=Belbe's Percher
+url=http://magiccards.info/ne/en/53.html
+image=http://magiccards.info/scans/en/ne/53.jpg 
+value=2.548
+ability=flying
+rarity=C
+type=Creature
+subtype=Bird
+pt=2/2
+cost={2}{B}
+ability=flying,can't block creatures without flying
+timing=main
