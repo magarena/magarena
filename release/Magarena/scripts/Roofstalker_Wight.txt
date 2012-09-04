@@ -1,0 +1,11 @@
+name=Roofstalker Wight
+url=http://magiccards.info/rav/en/102.html
+image=http://magiccards.info/scans/en/rav/102.jpg 
+value=2.293
+rarity=C
+type=Creature
+subtype=Zombie
+pt=2/1
+cost={1}{B}
+ability=gains {1}{U} flying
+timing=main
