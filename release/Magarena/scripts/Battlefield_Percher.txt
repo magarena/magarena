@@ -1,0 +1,11 @@
+name=Battlefield Percher
+url=http://magiccards.info/ne/en/52.html
+image=http://magiccards.info/scans/en/ne/52.jpg 
+value=1.545
+rarity=U
+type=Creature
+subtype=Bird
+pt=2/2
+cost={3}{B}{B}
+ability=flying,pump {1}{B} +1/+1,can't block creatures without flying
+timing=main
