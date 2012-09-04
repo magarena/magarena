@@ -1,0 +1,11 @@
+name=Starlit Angel
+url=http://magiccards.info/po/en/192.html
+image=http://magiccards.info/scans/en/po/192.jpg 
+value=2.145
+rarity=U
+type=Creature
+subtype=Angel
+pt=3/4
+cost={3}{W}{W}
+ability=flying
+timing=main
