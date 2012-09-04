@@ -1,0 +1,11 @@
+name=Mesa Falcon
+url=http://magiccards.info/6e/en/31.html
+image=http://magiccards.info/scans/en/6e/31.jpg 
+value=2.500
+rarity=C
+type=Creature
+subtype=Bird
+pt=1/1
+cost={1}{W}
+ability=flying,pump {1}{W} +0/+1
+timing=main
