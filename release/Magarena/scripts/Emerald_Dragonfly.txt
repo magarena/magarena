@@ -1,0 +1,11 @@
+name=Emerald Dragonfly
+url=http://magiccards.info/ch/en/35.html
+image=http://magiccards.info/scans/en/ch/35.jpg 
+value=3.150
+rarity=C
+type=Creature
+subtype=Insect
+pt=1/1
+cost={1}{G}
+ability=flying,gains {G}{G} first strike
+timing=main
