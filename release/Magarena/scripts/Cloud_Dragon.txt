@@ -1,0 +1,11 @@
+name=Cloud Dragon
+url=http://magiccards.info/me4/en/41.html
+image=http://magiccards.info/scans/en/me4/41.jpg
+value=2.850
+rarity=R
+type=Creature
+subtype=Illusion,Dragon
+pt=5/4
+cost={5}{U}
+ability=flying,can't block creatures without flying
+timing=main
