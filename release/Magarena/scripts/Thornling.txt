@@ -1,0 +1,11 @@
+name=Thornling
+url=http://magiccards.info/cfx/en/95.html
+image=http://magiccards.info/scans/en/cfx/95.jpg
+value=3.823
+rarity=M
+type=Creature
+subtype=Elemental,Shapeshifter
+pt=4/4
+cost={3}{G}{G}
+ability=gains {G} haste,gains {G} trample,gains {G} indestructible,pump {1} +1/-1,pump {1} -1/+1
+timing=main
