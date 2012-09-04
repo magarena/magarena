@@ -1,0 +1,11 @@
+name=Bloodied Ghost
+url=http://magiccards.info/eve/en/83.html
+image=http://magiccards.info/scans/en/eve/83.jpg 
+value=2.653
+rarity=U
+type=Creature
+subtype=Spirit
+pt=3/3
+cost={1}{W/B}{W/B}
+ability=flying,enters with -1/-1 1
+timing=main
