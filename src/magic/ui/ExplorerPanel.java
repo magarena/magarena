@@ -36,20 +36,20 @@ public class ExplorerPanel extends JPanel implements ActionListener {
     
     public static final int ALL = 0;
     public static final int LAND = 1;
-    public static final int SPELL = 2;    
+    public static final int SPELL = 2;
     
     private static final String CLOSE_BUTTON_TEXT = "Close";
     private static final String ADD_BUTTON_TEXT = "Add";
     private static final String REMOVE_BUTTON_TEXT = "Remove";
     private static final String CARD_POOL_TITLE = "Card Pool";
-     private static final int SPACING=10;
+    private static final int SPACING=10;
     
      private final MagicFrame frame;
     private final MagicPlayerDefinition player;
     
     private final CardTable cardPoolTable;
     private final CardTable deckTable;
-     private final ZoneBackgroundLabel backgroundImage;
+    private final ZoneBackgroundLabel backgroundImage;
     private final CardViewer cardViewer;
     private final DeckStatisticsViewer statsViewer;
     private final ExplorerFilterPanel filterPanel;
@@ -157,7 +157,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
         final Container cardsPanel; // reference panel holding both card pool and deck
         
         if (isEditingDeck()) {
-            cardPoolTable = new CardTable(cardPoolDefs, cardViewer, generatePoolTitle(), true);
+            cardPoolTable = new CardTable(cardPoolDefs, cardViewer, generatePoolTitle(), false);
             cardPoolTable.addMouseListener(new CardPoolMouseListener());
             
             deckDefs = getPlayer().getDeck();
