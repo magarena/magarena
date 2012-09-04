@@ -1,0 +1,11 @@
+name=Sky Spirit
+url=http://magiccards.info/ddi/en/10.html
+image=http://magiccards.info/scans/en/ddi/10.jpg 
+value=4.250
+rarity=U
+type=Creature
+subtype=Spirit
+pt=2/2
+cost={1}{W}{U}
+ability=flying,first strike
+timing=main
