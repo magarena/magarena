@@ -1,0 +1,11 @@
+name=Phantom Monster
+url=http://magiccards.info/med/en/43.html
+image=http://magiccards.info/scans/en/med/43.jpg
+value=3.657
+rarity=U
+type=Creature
+subtype=Illusion
+pt=3/3
+cost={3}{U}
+ability=flying
+timing=main
