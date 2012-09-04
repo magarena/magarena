@@ -1,0 +1,11 @@
+name=Cloud Spirit
+url=http://magiccards.info/me4/en/42.html
+image=http://magiccards.info/scans/en/me4/42.jpg
+value=3.206
+rarity=C
+type=Creature
+subtype=Spirit
+pt=3/1
+cost={2}{U}
+ability=flying,can't block creatures without flying
+timing=main
