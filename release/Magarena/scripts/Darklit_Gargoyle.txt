@@ -1,0 +1,11 @@
+name=Darklit Gargoyle
+url=http://magiccards.info/cfx/en/7.html
+image=http://magiccards.info/scans/en/cfx/7.jpg 
+value=3.284
+rarity=C
+type=Artifact,Creature
+subtype=Gargoyle
+pt=1/2
+cost={1}{W}
+ability=flying,pump {B} +2/-1
+timing=main
