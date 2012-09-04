@@ -1,0 +1,11 @@
+name=Arrogant Vampire
+url=http://magiccards.info/po/en/1.html
+image=http://magiccards.info/scans/en/po/1.jpg 
+value=2.185
+ability=flying
+rarity=U
+type=Creature
+subtype=Vampire
+pt=4/3
+cost={3}{B}{B}
+timing=main
