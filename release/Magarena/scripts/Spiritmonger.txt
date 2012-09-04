@@ -1,5 +1,5 @@
 name=Spiritmonger
-url=http://magiccards.info/gpx/en/2.html
+url=http://magiccards.info/ap/en/121.html
 image=http://magiccards.info/scans/en/ap/121.jpg
 value=4.798
 rarity=R
