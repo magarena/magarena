@@ -1,0 +1,11 @@
+name=Flying Men
+url=http://magiccards.info/tsts/en/20.html
+image=http://magiccards.info/scans/en/tsts/20.jpg 
+value=4.136
+rarity=C
+type=Creature
+subtype=Human
+pt=1/1
+cost={U}
+ability=flying
+timing=main
