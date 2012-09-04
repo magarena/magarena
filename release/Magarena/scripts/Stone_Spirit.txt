@@ -1,0 +1,11 @@
+name=Stone Spirit
+url=http://magiccards.info/me2/en/150.html
+image=http://magiccards.info/scans/en/me2/150.jpg 
+value=2.705
+rarity=U
+type=Creature
+subtype=Elemental,Spirit
+pt=4/3
+cost={4}{R}
+ability=can't be blocked by creatures with flying
+timing=main
