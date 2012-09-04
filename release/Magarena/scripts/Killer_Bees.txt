@@ -1,0 +1,11 @@
+name=Killer Bees
+url=http://magiccards.info/me3/en/126.html
+image=http://magiccards.info/scans/en/me3/126.jpg
+value=4.089
+rarity=U
+type=Creature
+subtype=Insect
+pt=0/1
+cost={1}{G}{G}
+ability=flying,pump {G} +1/+1
+timing=main
