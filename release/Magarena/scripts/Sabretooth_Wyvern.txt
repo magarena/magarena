@@ -1,0 +1,11 @@
+name=Sabertooth Wyvern
+url=http://magiccards.info/ex/en/99.html
+image=http://magiccards.info/scans/en/ex/99.jpg 
+value=
+rarity=U
+type=Creature
+subtype=Drake
+pt=3/2
+cost={4}{R}
+ability=flying,first strike
+timing=main
