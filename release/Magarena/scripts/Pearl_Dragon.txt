@@ -1,0 +1,11 @@
+name=Pearl Dragon
+url=http://magiccards.info/6e/en/34.html
+image=http://magiccards.info/scans/en/6e/34.jpg 
+value=2.819
+rarity=R
+type=Creature
+subtype=Dragon
+pt=4/4
+cost={4}{W}{W}
+ability=flying,pump {1}{W} +0/+1
+timing=main
