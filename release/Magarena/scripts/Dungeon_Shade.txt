@@ -1,0 +1,11 @@
+name=Dungeon Shade
+url=http://magiccards.info/sh/en/8.html
+image=http://magiccards.info/scans/en/sh/8.jpg 
+value=3.404
+rarity=C
+type=Creature
+subtype=Shade,Spirit
+pt=1/1
+cost={3}{B}
+ability=flying,pump {B} +1/+1
+timing=main
