@@ -119,7 +119,7 @@ public class DeckStrCal {
    
     public static void main(final String[] args) {
         if (!parseArguments(args)) {
-            System.err.println("Usage: java -jar <path to Magarena.jar/exe> magic.DeckStrCal --deck1 <.dec file> --deck2 <.dec file> [options]");
+            System.err.println("Usage: java -cp <path to Magarena.jar/exe> magic.DeckStrCal --deck1 <.dec file> --deck2 <.dec file> [options]");
             System.err.println("Options:");
             System.err.println("--ai1      [MMAB|MMABC|MCTS|RND] (AI for player 1, default MMAB)");
             System.err.println("--ai2      [MMAB|MMABC|MCTS|RND] (AI for player 2, default MMAB)");
