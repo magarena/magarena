@@ -1,0 +1,11 @@
+name=Shriek Raptor
+url=http://magiccards.info/nph/en/24.html
+image=http://magiccards.info/scans/en/nph/24.jpg 
+value=2.395
+rarity=C
+type=Creature
+subtype=Bird
+pt=2/3
+cost={3}{W}{W}
+ability=flying,infect
+timing=main
