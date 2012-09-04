@@ -1,0 +1,11 @@
+name=Djinn of the Lamp
+url=http://magiccards.info/po/en/54.html
+image=http://magiccards.info/scans/en/po/54.jpg 
+value=2.125
+rarity=R
+type=Creature
+subtype=Djinn
+pt=5/6
+cost={5}{U}{U}
+ability=flying
+timing=main
