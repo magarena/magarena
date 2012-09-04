@@ -1,0 +1,11 @@
+name=Rishadan Airship
+url=http://magiccards.info/mm/en/91.html
+image=http://magiccards.info/scans/en/mm/91.jpg 
+value=3.258
+rarity=C
+type=Creature
+subtype=Human,Pirate
+pt=3/1
+cost={2}{U}
+ability=flying,can't block creatures without flying
+timing=main
