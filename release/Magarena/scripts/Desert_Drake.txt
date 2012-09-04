@@ -1,0 +1,11 @@
+name=Desert Drake
+url=http://magiccards.info/po/en/127.html
+image=http://magiccards.info/scans/en/po/127.jpg 
+value=2.083
+rarity=U
+type=Creature
+subtype=Drake
+pt=2/2
+cost={3}{R}
+ability=flying
+timing=main
