@@ -1,0 +1,11 @@
+name=Cobalt Golem
+url=http://magiccards.info/mi/en/157.html
+image=http://magiccards.info/scans/en/mi/157.jpg 
+value=1.972
+rarity=C
+type=Artifact,Creature
+subtype=Golem
+pt=2/3
+cost={4}
+ability=gains {1}{U} flying
+timing=main
