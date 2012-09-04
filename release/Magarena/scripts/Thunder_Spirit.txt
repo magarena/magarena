@@ -1,0 +1,11 @@
+name=Thunder Spirit
+url=http://magiccards.info/med/en/27.html
+image=http://magiccards.info/scans/en/med/27.jpg
+value=4.206
+rarity=R
+type=Creature
+subtype=Elemental,Spirit
+pt=2/2
+cost={1}{W}{W}
+ability=flying,first strike
+timing=main
