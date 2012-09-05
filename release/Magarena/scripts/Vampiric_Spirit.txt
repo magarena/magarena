@@ -1,0 +1,11 @@
+name=Vampiric Spirit
+url=http://magiccards.info/8e/en/170.html
+image=http://magiccards.info/scans/en/8e/170.jpg
+value=2.674
+rarity=R
+type=Creature
+subtype=Spirit
+pt=4/3
+cost={2}{B}{B}
+ability=flying,enters lose life 4
+timing=main
