@@ -1,0 +1,11 @@
+name=Tower Drake
+url=http://magiccards.info/in/en/82.html
+image=http://magiccards.info/scans/en/in/82.jpg
+value=2.905
+rarity=C
+type=Creature
+subtype=Drake
+pt=2/1
+cost={2}{U}
+ability=flying,pump {W} +0/+1
+timing=main
