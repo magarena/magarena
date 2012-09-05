@@ -1,0 +1,11 @@
+name=Treetop Rangers
+url=http://magiccards.info/us/en/279.html
+image=http://magiccards.info/scans/en/us/279.jpg
+value=3.614
+rarity=C
+type=Creature
+subtype=Elf
+pt=2/2
+cost={2}{G}
+ability=can't be blocked except by creatures with flying
+timing=main
