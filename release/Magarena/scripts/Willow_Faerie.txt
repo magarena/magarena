@@ -1,0 +1,11 @@
+name=Willow Faerie
+url=http://magiccards.info/hl/en/73.html
+image=http://magiccards.info/scans/en/hl/73.jpg
+value=2.851
+rarity=C
+type=Creature
+subtype=Faerie
+pt=1/2
+cost={1}{G}
+ability=flying
+timing=main
