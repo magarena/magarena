@@ -1,0 +1,11 @@
+name=Viashivan Dragon
+url=http://magiccards.info/vi/en/140.html
+image=http://magiccards.info/scans/en/vi/140.jpg
+value=3.810
+rarity=R
+type=Creature
+subtype=Dragon
+pt=4/4
+cost={2}{R}{R}{G}{G}
+ability=flying,pump {R} +1/+0,pump {G} +0/+1
+timing=main
