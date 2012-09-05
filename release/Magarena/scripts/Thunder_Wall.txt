@@ -1,0 +1,11 @@
+name=Thunder Wall
+url=http://magiccards.info/me2/en/71.html
+image=http://magiccards.info/scans/en/me2/71.jpg
+value=2.881
+rarity=U
+type=Creature
+subtype=Wall
+pt=0/2
+cost={1}{U}{U}
+ability=flying,defender,pump {U} +1/+1
+timing=main
