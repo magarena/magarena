@@ -1,0 +1,10 @@
+name=Venser's Sliver
+url=http://magiccards.info/ts/en/267.html
+image=http://magiccards.info/scans/en/ts/267.jpg
+value=1.419
+rarity=C
+type=Artifact,Creature
+subtype=Sliver
+pt=3/3
+cost={5}
+timing=main
