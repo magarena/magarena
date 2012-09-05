@@ -17,3 +17,4 @@ release/Magarena/*.log
 release/Magarena/*.txt
 release/Magarena.exe
 release/Magarena.jar
+.git/*
