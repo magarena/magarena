@@ -25,7 +25,6 @@ public class Faceless_Devourer {
                     player,
                     targetChoice,
                     MagicExileTargetPicker.create(),
-                    new Object[]{permanent},
                     this,
                     "Exile another creature with shadow$.");
         }
@@ -35,7 +34,7 @@ public class Faceless_Devourer {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent permanent = (MagicPermanent)data[0];
+            final MagicPermanent permanent = event.getPermanent();
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicExileUntilThisLeavesPlayAction(permanent,creature));
