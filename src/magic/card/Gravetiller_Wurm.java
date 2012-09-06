@@ -19,7 +19,6 @@ public class Gravetiller_Wurm {
                 return new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{permanent},
                         this,
                         permanent + " enters the battlefield with four +1/+1 counters on it ");
             }
@@ -32,7 +31,7 @@ public class Gravetiller_Wurm {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
-                    (MagicPermanent)data[0],
+                    event.getPermanent(),
                     MagicCounterType.PlusOne,
                     4,
                     true));
