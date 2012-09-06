@@ -16,7 +16,6 @@ public class Narcolepsy {
                 new MagicEvent(
                         permanent,
                         permanent.getController(),
-                        new Object[]{permanent},
                         this,
                         "If "+enchantedCreature+" is untapped, tap it.") :
                 MagicEvent.NONE;
@@ -27,7 +26,7 @@ public class Narcolepsy {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent permanent=(MagicPermanent)data[0];
+            final MagicPermanent permanent=event.getPermanent();
             final MagicPermanent enchantedCreature=permanent.getEnchantedCreature();
             if (enchantedCreature.isValid()) {
                 game.doAction(new MagicTapAction(enchantedCreature,true));
