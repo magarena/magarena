@@ -14,9 +14,9 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 public class Arcbound_Fiend {
     public static final MagicAtUpkeepTrigger T3 = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             final MagicPlayer player=permanent.getController();
-            return (player == data) ?
+            return (player == upkeepPlayer) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -24,7 +24,6 @@ public class Arcbound_Fiend {
                             player + " may move a +1/+1 counter from " +
                             "target creature onto " + permanent + ".",
                             MagicTargetChoice.NEG_TARGET_CREATURE_PLUSONE_COUNTER),
-                        new Object[]{permanent},
                         this,
                         player + " may$ move a +1/+1 counter from " +
                         "target creature$ onto " + permanent + "."):
@@ -40,7 +39,7 @@ public class Arcbound_Fiend {
                 event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
                         if (creature.getCounters(MagicCounterType.PlusOne) > 0) {
-                            game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.PlusOne,1,true));
+                            game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,1,true));
                             game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.PlusOne,-1,true));
                         }
                     }
