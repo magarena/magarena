@@ -37,20 +37,18 @@ public class Goblin_Artillery {
                     player,
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(2),
-                    new Object[]{source,player},
                     this,
                     source + " deals 2 damage to target creature or player$ and 3 damage to you.");
         }
 
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
-            final MagicSource source=(MagicSource)data[0];
+            final MagicSource source=event.getSource();
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicDamage damage1=new MagicDamage(source,target,2,false);
                     game.doAction(new MagicDealDamageAction(damage1));
-                    final MagicDamage damage2=new MagicDamage(source,(MagicTarget)data[1],3,false);
+                    final MagicDamage damage2=new MagicDamage(source,event.getPlayer(),3,false);
                     game.doAction(new MagicDealDamageAction(damage2));
                 }
             });
