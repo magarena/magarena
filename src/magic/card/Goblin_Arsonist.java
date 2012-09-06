@@ -26,7 +26,6 @@ public class Goblin_Arsonist {
                                 "You may deal 1 damage to target creature or player.",
                                 MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER),
                         new MagicDamageTargetPicker(1),
-                        new Object[]{permanent},
                         this,
                         "You may$ deal 1 damage to target creature or player$") :
                 MagicEvent.NONE;
@@ -37,7 +36,7 @@ public class Goblin_Arsonist {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTarget(game,choiceResults,1,new MagicTargetAction() {
                     public void doAction(final MagicTarget target) {
-                        final MagicDamage damage = new MagicDamage((MagicPermanent)data[0],target,1,false);
+                        final MagicDamage damage = new MagicDamage(event.getPermanent(),target,1,false);
                         game.doAction(new MagicDealDamageAction(damage));
                     }
                 });
