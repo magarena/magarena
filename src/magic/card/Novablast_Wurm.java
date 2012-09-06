@@ -19,7 +19,6 @@ public class Novablast_Wurm {
                 new MagicEvent(
                         permanent,
                         permanent.getController(),
-                        new Object[]{permanent},
                         this,
                         "Destroy all creatures other than " + permanent + ".") :
                 MagicEvent.NONE;
@@ -31,7 +30,7 @@ public class Novablast_Wurm {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent permanent=(MagicPermanent)data[0];
+            final MagicPermanent permanent=event.getPermanent();
             final MagicTargetFilter targetFilter = 
                     new MagicTargetFilter.MagicOtherPermanentTargetFilter(
                     MagicTargetFilter.TARGET_CREATURE,permanent);
