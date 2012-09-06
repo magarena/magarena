@@ -16,12 +16,11 @@ public class Spiteful_Visions {
     
     public static final Object T2 = new MagicWhenOtherDrawnTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard data) {
-            final MagicPlayer player = data.getOwner();
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard card) {
+            final MagicPlayer player = card.getOwner();
             return new MagicEvent(
                 permanent,
-                permanent.getController(),
-                new Object[]{permanent,player},
+                player,
                 this,
                 permanent + " deals 1 damage to " + player + ".");
         }
@@ -32,7 +31,7 @@ public class Spiteful_Visions {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicDamage damage = new MagicDamage((MagicSource)data[0],(MagicTarget)data[1],1,false);
+            final MagicDamage damage = new MagicDamage(event.getSource(),event.getPlayer(),1,false);
             game.doAction(new MagicDealDamageAction(damage));
         }        
     };
