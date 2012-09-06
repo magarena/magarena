@@ -23,7 +23,6 @@ public class Pitchburn_Devils {
                         permanent.getController(),
                         MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                         new MagicDamageTargetPicker(3),
-                        new Object[]{permanent},
                         this,
                         permanent + " deals 3 damage to target creature or player$."):
                 MagicEvent.NONE;
@@ -33,7 +32,7 @@ public class Pitchburn_Devils {
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
-                    final MagicDamage damage = new MagicDamage((MagicPermanent)data[0],target,3,false);
+                    final MagicDamage damage = new MagicDamage(event.getPermanent(),target,3,false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });
