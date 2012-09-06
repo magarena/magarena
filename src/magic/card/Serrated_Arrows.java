@@ -38,13 +38,12 @@ public class Serrated_Arrows {
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicPlayer data) {
+                final MagicPlayer upkeepPlayer) {
             final MagicPlayer player = permanent.getController();    
-            return (player == data && permanent.getCounters(MagicCounterType.Charge) == 0) ?
+            return (player == upkeepPlayer && permanent.getCounters(MagicCounterType.Charge) == 0) ?
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{permanent},
                     this,
                     "Sacrifice " + permanent + "."):
                 MagicEvent.NONE;
@@ -55,7 +54,7 @@ public class Serrated_Arrows {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicSacrificeAction((MagicPermanent)data[0]));
+            game.doAction(new MagicSacrificeAction(event.getPermanent()));
         }
     };
 }
