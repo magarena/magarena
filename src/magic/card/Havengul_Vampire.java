@@ -21,7 +21,6 @@ public class Havengul_Vampire {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{permanent},
                     this,
                     player + " puts a +1/+1 counter on " + permanent + "."):
                 MagicEvent.NONE;
@@ -33,7 +32,7 @@ public class Havengul_Vampire {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
-                    (MagicPermanent)data[0],
+                    event.getPermanent(),
                     MagicCounterType.PlusOne,
                     1,
                     true));
