@@ -28,7 +28,6 @@ public class Farrel_s_Zealot {
                                 " deal 3 damage to target creature.",
                                 MagicTargetChoice.NEG_TARGET_CREATURE),
                         new MagicDamageTargetPicker(3),
-                        new Object[]{permanent},
                         this,
                         player + " may$ have " + permanent +
                         " deal 3 damage to target creature$.");
@@ -45,7 +44,7 @@ public class Farrel_s_Zealot {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
-                        final MagicPermanent permanent = (MagicPermanent)data[0];
+                        final MagicPermanent permanent = event.getPermanent();
                         final MagicDamage damage = new MagicDamage(
                                 permanent,
                                 creature,
