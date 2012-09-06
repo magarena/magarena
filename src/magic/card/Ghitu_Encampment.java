@@ -68,7 +68,6 @@ public class Ghitu_Encampment {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this,
                     "Until end of turn, " + source + 
                     " becomes a 2/1 red Warrior creature with first strike. " + 
@@ -80,7 +79,7 @@ public class Ghitu_Encampment {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicBecomesCreatureAction((MagicPermanent)data[0],PT,AB,ST,C));
+            game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT,AB,ST,C));
         }
     };
 }
