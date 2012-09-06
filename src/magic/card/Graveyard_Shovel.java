@@ -39,7 +39,6 @@ public class Graveyard_Shovel {
                     source,
                     player,
                     MagicTargetChoice.TARGET_PLAYER,
-                    new Object[]{player,source},
                     this,
                     "Target player$ exiles a card from his or her graveyard. " +
                     "If it's a creature card, " + player + " gains 2 life.");
@@ -53,9 +52,9 @@ public class Graveyard_Shovel {
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer targetPlayer) {
                     if (targetPlayer.getGraveyard().size() > 0) {
-                        final MagicPlayer player = (MagicPlayer)data[0];
+                        final MagicPlayer player = event.getPlayer();
                         game.addEvent(new MagicEvent(
-                                (MagicSource)data[1],
+                                event.getSource(),
                                 targetPlayer,
                                 MagicTargetChoice.TARGET_CARD_FROM_GRAVEYARD,
                                 new MagicGraveyardTargetPicker(true),
