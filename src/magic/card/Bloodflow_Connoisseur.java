@@ -33,7 +33,6 @@ public class Bloodflow_Connoisseur {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this,
                     source.getController() + " puts a +1/+1 counter on "
                     + source + ".");
@@ -45,7 +44,7 @@ public class Bloodflow_Connoisseur {
                 final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
-                    (MagicPermanent)data[0],
+                    event.getPermanent(),
                     MagicCounterType.PlusOne,
                     1,
                     true));
