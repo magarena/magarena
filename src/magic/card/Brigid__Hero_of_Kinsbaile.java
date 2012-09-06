@@ -37,7 +37,6 @@ public class Brigid__Hero_of_Kinsbaile {
                     source,
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_PLAYER,
-                    new Object[]{source},
                     this,
                     source + " deals 2 damage to each attacking or blocking creature target player$ controls.");
         }
@@ -46,7 +45,7 @@ public class Brigid__Hero_of_Kinsbaile {
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
-                    final MagicSource source=(MagicSource)data[0];
+                    final MagicSource source=event.getSource();
                     final Collection<MagicTarget> targets=
                         game.filterTargets(player,MagicTargetFilter.TARGET_ATTACKING_OR_BLOCKING_CREATURE_YOU_CONTROL);
                     for (final MagicTarget target : targets) {
