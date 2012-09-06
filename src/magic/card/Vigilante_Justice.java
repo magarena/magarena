@@ -29,7 +29,6 @@ public class Vigilante_Justice {
                         player,
                         MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                         new MagicDamageTargetPicker(1),
-                        new Object[]{permanent},
                         this,
                         permanent + " deals 1 damage to target creature or player$.") :
                 MagicEvent.NONE;
