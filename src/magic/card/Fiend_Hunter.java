@@ -28,7 +28,6 @@ public class Fiend_Hunter {
                     player,
                     championChoice,
                     MagicExileTargetPicker.create(),
-                    new Object[]{permanent},
                     this,
                     player + " may$ exile another creature$.");
         }
@@ -38,7 +37,7 @@ public class Fiend_Hunter {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent permanent = (MagicPermanent)data[0];
+            final MagicPermanent permanent = event.getPermanent();
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
