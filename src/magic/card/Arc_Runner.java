@@ -10,13 +10,12 @@ import magic.model.trigger.MagicAtEndOfTurnTrigger;
 public class Arc_Runner {
     public static final MagicAtEndOfTurnTrigger T = new MagicAtEndOfTurnTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eotPlayer) {
             final MagicPlayer player = permanent.getController();
-            return (player == data) ?
+            return (player == eotPlayer) ?
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{permanent},
                     this,
                     "Sacrifice " + permanent + "."):
                 MagicEvent.NONE;
@@ -27,7 +26,7 @@ public class Arc_Runner {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicSacrificeAction((MagicPermanent)data[0]));
+            game.doAction(new MagicSacrificeAction(event.getPermanent()));
         }
     };
 }
