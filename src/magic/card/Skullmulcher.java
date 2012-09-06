@@ -44,7 +44,6 @@ public class Skullmulcher {
                             player,
                             devourChoice,
                             MagicSacrificeTargetPicker.create(),
-                            new Object[]{permanent},
                             this,
                             "You may$ sacrifice a creature$ to "+permanent+".");
             }
@@ -59,7 +58,7 @@ public class Skullmulcher {
 
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-            final MagicPermanent permanent=(MagicPermanent)data[0];
+            final MagicPermanent permanent=event.getPermanent();
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
