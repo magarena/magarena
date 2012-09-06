@@ -27,7 +27,6 @@ public class Master_Thief {
                     player,
                     MagicTargetChoice.TARGET_ARTIFACT,
                     MagicExileTargetPicker.create(),
-                    new Object[]{player,permanent},
                     this,
                     "Gain control of target artifact$ " +
                     "for as long as you control " + permanent + ".");
