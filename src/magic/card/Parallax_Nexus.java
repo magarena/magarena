@@ -44,7 +44,6 @@ public class Parallax_Nexus {
                     source,
                     source.getController(),
                     MagicTargetChoice.TARGET_OPPONENT,
-                    new Object[]{source.getController(),source},
                     this,
                     "Target opponent$ exiles a card from his or her hand.");
         }
@@ -54,13 +53,12 @@ public class Parallax_Nexus {
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer targetPlayer) {
                     if (targetPlayer.getHand().size() > 0) {
-                        final MagicSource source = (MagicSource)data[1];
+                        final MagicSource source = event.getSource();
                         game.addEvent(new MagicEvent(
                                 source,
                                 targetPlayer,
                                 MagicTargetChoice.TARGET_CARD_FROM_HAND,
                                 new MagicGraveyardTargetPicker(false),
-                                new Object[]{source},
                                 EVENT_ACTION,
                                 targetPlayer + " exiles a card$ from his or her hand."));
                     }
@@ -77,7 +75,7 @@ public class Parallax_Nexus {
                     final Object[] choiceResults) {
                 event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                     public void doAction(final MagicCard card) {
-                        game.doAction(new MagicExileUntilThisLeavesPlayAction((MagicPermanent)data[0],card,MagicLocationType.OwnersHand));
+                        game.doAction(new MagicExileUntilThisLeavesPlayAction(event.getPermanent(),card,MagicLocationType.OwnersHand));
                     }
                 });
             }
@@ -93,7 +91,6 @@ public class Parallax_Nexus {
                 return new MagicEvent(
                         permanent,
                         permanent.getController(),
-                        new Object[]{permanent},
                         this,
                         clist.size() > 1 ?
                                 "Return exiled cards to their owner's hand" :
@@ -107,7 +104,7 @@ public class Parallax_Nexus {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent permanent = (MagicPermanent)data[0];
+            final MagicPermanent permanent = event.getPermanent();
             game.doAction(new MagicReturnExiledUntilThisLeavesPlayAction(permanent,MagicLocationType.OwnersHand));
         }
     };
