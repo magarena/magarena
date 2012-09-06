@@ -40,7 +40,6 @@ public class Torch_Fiend {
                     source.getController(),
                     MagicTargetChoice.TARGET_ARTIFACT,
                     new MagicDestroyTargetPicker(false),
-                    new Object[]{source},
                     this,
                     "Destroy target artifact$.");
         }
