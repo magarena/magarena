@@ -28,7 +28,6 @@ public class Leonin_Relic_Warder {
                     player,
                     mayChoice,
                     MagicExileTargetPicker.create(),
-                    new Object[]{permanent},
                     this,
                     player + " may$ exile another artifact or enchantment$.");
         }
@@ -38,7 +37,7 @@ public class Leonin_Relic_Warder {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent permanent = (MagicPermanent)data[0];
+            final MagicPermanent permanent = event.getPermanent();
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent target) {
