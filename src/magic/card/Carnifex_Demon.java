@@ -37,7 +37,6 @@ public class Carnifex_Demon {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this,
                     "Put a -1/-1 counter on each other creature.");
         }
@@ -47,7 +46,7 @@ public class Carnifex_Demon {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanent creature=(MagicPermanent)data[0];
+            final MagicPermanent creature=event.getPermanent();
             final Collection<MagicTarget> targets=
                 game.filterTargets(creature.getController(),MagicTargetFilter.TARGET_CREATURE);
             for (final MagicTarget target : targets) {
