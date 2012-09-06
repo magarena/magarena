@@ -33,7 +33,6 @@ public class Brain_Weevil {
                     source,
                     source.getController(),
                     MagicTargetChoice.TARGET_PLAYER,
-                    new Object[]{source},
                     this,
                     "Target player$ discards two cards.");
         }
@@ -42,7 +41,7 @@ public class Brain_Weevil {
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
-                    game.addEvent(new MagicDiscardEvent((MagicPermanent)data[0],player,2,false));
+                    game.addEvent(new MagicDiscardEvent(event.getPermanent(),player,2,false));
                 }
             });
         }
