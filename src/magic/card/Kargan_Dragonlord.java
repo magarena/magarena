@@ -69,7 +69,6 @@ public class Kargan_Dragonlord {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
                     this,
                     source + " gets +1/+0 until end of turn.");
         }
@@ -80,7 +79,7 @@ public class Kargan_Dragonlord {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeTurnPTAction((MagicPermanent)data[0],1,0));
+            game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),1,0));
         }
     };
 }
