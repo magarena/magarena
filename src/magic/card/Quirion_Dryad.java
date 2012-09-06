@@ -14,9 +14,9 @@ import magic.model.trigger.MagicWhenOtherSpellIsCastTrigger;
 public class Quirion_Dryad {
     public static final MagicWhenOtherSpellIsCastTrigger T = new MagicWhenOtherSpellIsCastTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
             final MagicPlayer player = permanent.getController();
-            final MagicCard card = data.getCard();
+            final MagicCard card = cardOnStack.getCard();
             return (card.getOwner() == player &&
                     (MagicColor.White.hasColor(card.getColorFlags()) ||
                     MagicColor.Blue.hasColor(card.getColorFlags()) ||
@@ -25,7 +25,6 @@ public class Quirion_Dryad {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{permanent},
                         this,
                         "Put a +1/+1 counter on " + permanent + ".") :
                 MagicEvent.NONE;
@@ -36,7 +35,7 @@ public class Quirion_Dryad {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.PlusOne,1,true));
+            game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,1,true));
         }
     };
 }
