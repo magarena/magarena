@@ -18,7 +18,6 @@ public class Stronghold_Rats {
                 new MagicEvent(
                         permanent,
                         permanent.getController(),
-                        new Object[]{permanent},
                         this,
                         "Each player discards a card."):
                 MagicEvent.NONE;
@@ -30,7 +29,7 @@ public class Stronghold_Rats {
                 final Object data[],
                 final Object[] choiceResults) {
             for (final MagicPlayer player : game.getPlayers()) {
-                game.addEvent(new MagicDiscardEvent((MagicPermanent)data[0],player,1,false));
+                game.addEvent(new MagicDiscardEvent(event.getPermanent(),player,1,false));
             }
         }
     };
