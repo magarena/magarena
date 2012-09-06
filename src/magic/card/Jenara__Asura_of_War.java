@@ -32,7 +32,6 @@ public class Jenara__Asura_of_War {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player,source},
                     this,
                     "Put a +1/+1 counter on " + source + ".");
         }
@@ -43,7 +42,7 @@ public class Jenara__Asura_of_War {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeCountersAction((MagicPermanent)data[1],MagicCounterType.PlusOne,1,true));
+            game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,1,true));
         }
     };
 }
