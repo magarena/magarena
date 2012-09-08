@@ -27,13 +27,11 @@ public class Fumiko_the_Lowblood {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
             if (permanent == data) {
                 final MagicPlayer player = permanent.getController();
-                final int amount = player.getOpponent().getNrOfAttackers();
                 return new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{amount},
                         this,
-                        permanent + " gets +" + amount + "/+" +  amount + " until end of turn.");
+                        permanent + " gets +X/+X until end of turn, where X is the number of attacking creatures.");
             }
             return MagicEvent.NONE;
         }
@@ -43,10 +41,8 @@ public class Fumiko_the_Lowblood {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeTurnPTAction(
-                    event.getPermanent(),
-                    (Integer)data[0],
-                    (Integer)data[0]));
+            final int amount = event.getPlayer().getOpponent().getNrOfAttackers();
+            game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),amount,amount));
         }
     };
     
@@ -55,13 +51,11 @@ public class Fumiko_the_Lowblood {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
             if (permanent == data) {
                 final MagicPlayer player = permanent.getController();
-                final int amount = player.getNrOfAttackers();
                 return new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{amount},
                         this,
-                        permanent + " gets +" + amount + "/+" +  amount + " until end of turn.");
+                        permanent + " gets +X/+X until end of turn, where X is the number of attacking creatures.");
             }
             return MagicEvent.NONE;
         }
@@ -71,10 +65,8 @@ public class Fumiko_the_Lowblood {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeTurnPTAction(
-                    event.getPermanent(),
-                    (Integer)data[0],
-                    (Integer)data[0]));
+            final int amount = event.getPlayer().getNrOfAttackers();
+            game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),amount,amount));
         }
     };
 }

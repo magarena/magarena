@@ -404,3 +404,7 @@ update_value_from_rankings: cards/gatherer_rankings
 	make $^.update_value
 	vim $^
 	hg add $^
+
+check_data: scripts/check_data.awk
+	grep "new Object\|data\[[0-9\]" -r src/magic/card  | awk -f $^ | sed 's/  //g' | sed 's/:/:\t/' > $@
+	flip -u $@
