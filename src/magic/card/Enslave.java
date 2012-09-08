@@ -16,16 +16,16 @@ public class Enslave {
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicPlayer data) {
+                final MagicPlayer upkeepPlayer) {
             final MagicPlayer player = permanent.getController();
-            return (player == data) ?
+            final MagicPermanent enchantedCreature = permanent.getEnchantedCreature();
+            return (player == upkeepPlayer && enchantedCreature.isCreature()) ?
                 new MagicEvent(
-                    permanent,
-                    player,
-                    new Object[]{permanent.getEnchantedCreature()},
+                    enchantedCreature,
+                    enchantedCreature.getOwner(),
                     this,
-                    permanent.getEnchantedCreature() + " deals 1 damage to " +
-                    permanent.getEnchantedCreature().getOwner() + ".") :
+                    enchantedCreature + " deals 1 damage to " +
+                    enchantedCreature.getOwner() + ".") :
             MagicEvent.NONE;
         }
 
@@ -35,10 +35,9 @@ public class Enslave {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent enchanted = (MagicPermanent)data[0];
             final MagicDamage damage = new MagicDamage(
-                    enchanted,
-                    enchanted.getOwner(),
+                    event.getSource(),
+                    event.getPlayer(),
                     1,
                     false);
             game.doAction(new MagicDealDamageAction(damage));            
