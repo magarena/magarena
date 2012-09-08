@@ -21,7 +21,6 @@ public class Weatherseed_Treefolk {
                 new MagicEvent(
                         permanent,
                         permanent.getController(),
-                        new Object[]{permanent.getCard()},
                         this,
                         "Return " + permanent + " to its owner's hand."):
                 MagicEvent.NONE;
@@ -33,7 +32,7 @@ public class Weatherseed_Treefolk {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicCard card = (MagicCard)data[0];
+            final MagicCard card = event.getPermanent().getCard();
             game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
             game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
         }
