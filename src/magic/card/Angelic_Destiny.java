@@ -12,12 +12,11 @@ import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
 public class Angelic_Destiny {
     public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            return (permanent.getEnchantedCreature() == data) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent died) {
+            return (permanent.getEnchantedCreature() == died) ?
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
-                    new Object[]{permanent.getCard()},
                     this,
                     "Return " + permanent + " to its owner's hand."):
                 MagicEvent.NONE;
@@ -28,7 +27,7 @@ public class Angelic_Destiny {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicCard card = (MagicCard)data[0];
+            final MagicCard card = event.getPermanent().getCard();
             if (card.getOwner().getGraveyard().contains(card)) {
                 game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
                 game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
