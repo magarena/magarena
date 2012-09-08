@@ -18,7 +18,7 @@ public class Juniper_Order_Ranger {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{otherPermanent,permanent},
+                        new Object[]{otherPermanent},
                         this,
                         "Put a +1/+1 counter on "+otherPermanent+" and a +1/+1 counter on " + 
                         permanent + "."):
@@ -32,7 +32,7 @@ public class Juniper_Order_Ranger {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.PlusOne,1,true));
-            game.doAction(new MagicChangeCountersAction((MagicPermanent)data[1],MagicCounterType.PlusOne,1,true));            
+            game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,1,true));            
         }        
     };
 }
