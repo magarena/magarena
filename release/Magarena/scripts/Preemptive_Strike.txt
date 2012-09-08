@@ -1,0 +1,9 @@
+name=Preemptive Strike
+url=http://magiccards.info/p3k/en/50.html
+image=http://magiccards.info/scans/en/p3k/50.jpg
+value=3.952
+rarity=C
+type=Instant
+cost={1}{U}
+timing=counter
+effect=Counter target creature spell
