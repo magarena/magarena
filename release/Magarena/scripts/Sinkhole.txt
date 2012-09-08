@@ -1,0 +1,10 @@
+name=Sinkhole
+url=http://magiccards.info/me4/en/97.html
+image=http://magiccards.info/scans/en/me4/97.jpg
+value=4.777
+removal=3
+rarity=C
+type=Sorcery
+cost={B}{B}
+timing=main
+effect=Destroy target land
