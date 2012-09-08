@@ -1,0 +1,11 @@
+name=Sunder from Within
+url=http://magiccards.info/sok/en/117.html
+image=http://magiccards.info/scans/en/sok/117.jpg
+value=2.646
+removal=1
+rarity=U
+type=Sorcery
+subtype=Arcane
+cost={2}{R}{R}
+timing=main
+effect=Destroy target artifact or land
