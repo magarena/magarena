@@ -22,7 +22,7 @@ public class Retaliator_Griffin {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{permanent,amount},
+                        new Object[]{amount},
                         this,
                         "Put "+amount+" +1/+1 counters on " + permanent + "."):
                 MagicEvent.NONE;
@@ -34,9 +34,9 @@ public class Retaliator_Griffin {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
-                        (MagicPermanent)data[0],
+                        event.getPermanent(),
                         MagicCounterType.PlusOne,
-                        (Integer)data[1],true));
+                        (Integer)data[0],true));
         }        
     };
 }
