@@ -23,7 +23,7 @@ public class Astral_Steel {
                     cardOnStack.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
                     MagicPumpTargetPicker.create(),
-                    new Object[]{cardOnStack,cardOnStack.getController()},
+                    new Object[]{cardOnStack},
                     this,
                     "Target creature$ gets +1/+2 until end of turn.");
         }

@@ -1,0 +1,10 @@
+name=Craterize
+url=http://magiccards.info/m13/en/126.html
+image=http://magiccards.info/scans/en/m13/126.jpg
+value=1.018
+removal=3
+rarity=C
+type=Sorcery
+cost={3}{R}
+timing=main
+effect=Destroy target land

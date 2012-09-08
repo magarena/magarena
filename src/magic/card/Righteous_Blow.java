@@ -24,7 +24,7 @@ public class Righteous_Blow {
                     player,
                     MagicTargetChoice.NEG_TARGET_ATTACKING_OR_BLOCKING_CREATURE,
                     new MagicDamageTargetPicker(2),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     cardOnStack.getCard() + " deals 2 damage to " +
                     "target attacking or blocking creature$.");

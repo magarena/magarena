@@ -38,7 +38,7 @@ public class Duskwalker {
                     card,
                     player,
                     new MagicKickerChoice(MagicManaCost.THREE_BLACK,false),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "$Play " + card + ". If " + card + " was kicked$, " + 
                     "it enters the battlefield with two +1/+1 counters on it and with fear.");
