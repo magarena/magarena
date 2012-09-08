@@ -10,15 +10,15 @@ import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
 public class Unstoppable_Ash {
     public static final MagicWhenBecomesBlockedTrigger T3 = new MagicWhenBecomesBlockedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
             final MagicPlayer player = permanent.getController();
-            return (player == data.getController() ) ?
+            return (player == attacker.getController()) ?
                     new MagicEvent(
                             permanent,
                             player,
-                            new Object[]{data},
+                            new Object[]{attacker},
                             this,
-                            data + " gets +0/+5 until end of turn."):
+                            attacker + " gets +0/+5 until end of turn."):
                     MagicEvent.NONE;
         }
         
