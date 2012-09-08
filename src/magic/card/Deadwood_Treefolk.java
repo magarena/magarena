@@ -43,14 +43,13 @@ public class Deadwood_Treefolk {
     
     public static final MagicWhenLeavesPlayTrigger T4 = new MagicWhenLeavesPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            return (permanent == data) ? 
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent left) {
+            return (permanent == left) ? 
                     new MagicEvent(
                     permanent,
                     permanent.getController(),
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
                     new MagicGraveyardTargetPicker(false),
-                    new Object[]{permanent.getController()},
                     this,
                     "Return another target creature card$ from your graveyard to your hand.") :
             MagicEvent.NONE;
