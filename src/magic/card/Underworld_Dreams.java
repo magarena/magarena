@@ -19,8 +19,7 @@ public class Underworld_Dreams {
             return (permanent.getController() != player) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
-                    new Object[]{permanent,player},
+                    player,
                     this,
                     permanent + " deals 1 damage to your opponent."):
                 MagicEvent.NONE;
@@ -32,7 +31,7 @@ public class Underworld_Dreams {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicDamage damage = new MagicDamage((MagicSource)data[0],(MagicTarget)data[1],1,false);
+            final MagicDamage damage = new MagicDamage(event.getSource(),event.getPlayer(),1,false);
             game.doAction(new MagicDealDamageAction(damage));
         }        
     };
