@@ -11,13 +11,12 @@ import magic.model.trigger.MagicWhenBlocksTrigger;
 public class Meglonoth {
     public static final MagicWhenBlocksTrigger T = new MagicWhenBlocksTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent defender) {
             final MagicPermanent blocked=permanent.getBlockedCreature();
-            return (permanent==data && blocked.isValid()) ?
+            return (permanent==defender && blocked.isValid()) ?
                 new MagicEvent(
                         permanent,
-                        permanent.getController(),
-                        new Object[]{permanent,blocked.getController()},
+                        blocked.getController(),
                         this,
                         permanent + " deals damage to the blocked creature's controller equal to " +
                         permanent + "'s power."):
@@ -29,8 +28,8 @@ public class Meglonoth {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent permanent=(MagicPermanent)data[0];
-            final MagicDamage damage=new MagicDamage(permanent,(MagicTarget)data[1],permanent.getPower(),false);
+            final MagicPermanent permanent=event.getPermanent();
+            final MagicDamage damage=new MagicDamage(permanent,event.getPlayer(),permanent.getPower(),false);
             game.doAction(new MagicDealDamageAction(damage));
         }
     };
