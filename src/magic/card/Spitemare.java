@@ -24,7 +24,7 @@ public class Spitemare {
                         permanent.getController(),
                         MagicTargetChoice.TARGET_CREATURE_OR_PLAYER,
                         new MagicDamageTargetPicker(amount),
-                        new Object[]{permanent,amount},
+                        new Object[]{amount},
                         this,
                         permanent + " deals "+amount+" damage to target creature or player$."):
                 MagicEvent.NONE;
@@ -37,7 +37,7 @@ public class Spitemare {
                 final Object[] choiceResults) {
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
-                    final MagicDamage damage=new MagicDamage((MagicSource)data[0],target,(Integer)data[1],false);
+                    final MagicDamage damage=new MagicDamage(event.getSource(),target,(Integer)data[0],false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });
