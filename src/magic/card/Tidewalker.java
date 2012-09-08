@@ -32,7 +32,7 @@ public class Tidewalker {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{permanent,amount},
+                    new Object[]{amount},
                     this,
                     amount > 1 ?
                             permanent + " enters the battlefield with " + amount + " time counters on it." :
@@ -46,9 +46,9 @@ public class Tidewalker {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
-                    (MagicPermanent)data[0],
+                    event.getPermanent(),
                     MagicCounterType.Charge,
-                    (Integer)data[1],
+                    (Integer)data[0],
                     true));
         }
         @Override
