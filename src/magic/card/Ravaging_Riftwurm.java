@@ -29,7 +29,7 @@ public class Ravaging_Riftwurm {
                     card,
                     player,
                     new MagicKickerChoice(MagicManaCost.FOUR,false),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "$Play " + card + ". If " + card + " was kicked$, " + 
                     "it enters the battlefield with three additional time counters on it.");
@@ -58,10 +58,10 @@ public class Ravaging_Riftwurm {
             return new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{permanent,amount},
+                    new Object[]{amount},
                     this,
                     permanent + " enters the battlefield with " +
-                            amount + " time counters on it.");
+                    amount + " time counters on it.");
         }
         @Override
         public void executeEvent(
@@ -70,9 +70,9 @@ public class Ravaging_Riftwurm {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
-                    (MagicPermanent)data[0],
+                    event.getPermanent(),
                     MagicCounterType.Charge,
-                    (Integer)data[1],
+                    (Integer)data[0],
                     true));
         }
         @Override
