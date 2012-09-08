@@ -18,7 +18,7 @@ public class Raking_Canopy {
                 new MagicEvent(
                         permanent,
                         permanent.getController(),
-                        new Object[]{permanent,creature},
+                        new Object[]{creature},
                         this,
                         permanent + " deals 4 damage to "+creature+".") :
                 MagicEvent.NONE;
@@ -30,7 +30,7 @@ public class Raking_Canopy {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicDamage damage=new MagicDamage((MagicSource)data[0],(MagicTarget)data[1],4,false);
+            final MagicDamage damage=new MagicDamage(event.getSource(),(MagicTarget)data[0],4,false);
             game.doAction(new MagicDealDamageAction(damage));
         }
     };
