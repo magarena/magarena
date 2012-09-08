@@ -18,21 +18,20 @@ public class Rhox {
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicPermanent data) {
+                final MagicPermanent attacker) {
             final MagicPlayer player = permanent.getController();
             final MagicPlayer defendingPlayer = player.getOpponent();
-            return (permanent == data ) ?
-                    new MagicEvent(
-                            permanent,
-                            player,
-                            new MagicMayChoice(
-                                    player + " may have Rhox deal its combat damage " +
-                                    "to defending player as though it weren't blocked."),
-                            new Object[]{permanent,defendingPlayer},
-                            this,
-                            player + " may$ have Rhox deal its combat damage " +
-                            "to defending player as though it weren't blocked."):
-                    MagicEvent.NONE;
+            return (permanent == attacker) ?
+                new MagicEvent(
+                    permanent,
+                    defendingPlayer,
+                    new MagicMayChoice(
+                        player + " may have " + permanent + " deal its combat damage " +
+                        "to defending player as though it weren't blocked."),
+                    this,
+                    player + " may$ have " + permanent + " deal its combat damage " +
+                    "to defending player as though it weren't blocked."):
+                MagicEvent.NONE;
         }
         
         @Override
@@ -42,10 +41,10 @@ public class Rhox {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                final MagicPermanent permanent = (MagicPermanent)data[0];
+                final MagicPermanent permanent = event.getPermanent();
                 final MagicDamage damage = new MagicDamage(
                         permanent,
-                        (MagicTarget)data[1],
+                        event.getPlayer(),
                         permanent.getPower(),
                         true);
                 game.doAction(new MagicDealDamageAction(damage));
