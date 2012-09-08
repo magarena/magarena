@@ -76,7 +76,7 @@ public class Angelheart_Vial {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{permanent,amount},
+                        new Object[]{amount},
                         this,
                         "Put " + amount + " charge counters on " + permanent + "."):
                 MagicEvent.NONE;
@@ -88,9 +88,9 @@ public class Angelheart_Vial {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
-                    (MagicPermanent)data[0],
+                    event.getPermanent(),
                     MagicCounterType.Charge,
-                    (Integer)data[1],
+                    (Integer)data[0],
                     false));
         }
     };
