@@ -27,7 +27,7 @@ public class Frost_Titan {
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
-                    new Object[]{permanent,target},
+                    new Object[]{target},
                     this,
                     "Counter spell or ability$ unless its controller pays {2}."):
                 MagicEvent.NONE;
@@ -39,8 +39,8 @@ public class Frost_Titan {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicSource source = (MagicSource)data[0];
-            final MagicItemOnStack target = (MagicItemOnStack)data[1];
+            final MagicSource source = event.getSource();
+            final MagicItemOnStack target = (MagicItemOnStack)data[0];
             game.addEvent(new MagicCounterUnlessEvent(source,target,MagicManaCost.TWO));
         }
     };
