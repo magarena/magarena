@@ -1,0 +1,9 @@
+name=False Summoning
+url=http://magiccards.info/me4/en/49.html
+image=http://magiccards.info/scans/en/me4/49.jpg
+value=3.750
+rarity=C
+type=Instant
+cost={1}{U}
+timing=counter
+effect=Counter target creature spell
