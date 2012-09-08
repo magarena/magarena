@@ -1,0 +1,11 @@
+name=Wreak Havoc
+url=http://magiccards.info/gp/en/139.html
+image=http://magiccards.info/scans/en/gp/139.jpg
+value=3.176
+removal=4
+rarity=U
+type=Sorcery
+cost={2}{R}{G}
+ability=can't be countered
+timing=main
+effect=Destroy target artifact or land
