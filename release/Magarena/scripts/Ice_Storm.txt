@@ -1,0 +1,10 @@
+name=Ice Storm
+url=http://magiccards.info/med/en/122.html
+image=http://magiccards.info/scans/en/med/122.jpg
+value=4.186
+removal=3
+rarity=U
+type=Sorcery
+cost={2}{G}
+timing=main
+effect=Destroy target land
