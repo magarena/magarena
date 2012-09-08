@@ -22,7 +22,7 @@ public class Circle_of_Flame {
                 new MagicEvent(
                         permanent,
                         controller,
-                        new Object[]{permanent,creature},
+                        new Object[]{creature},
                         this,
                         permanent + " deals 1 damage to attacking creature without flying."):
                 MagicEvent.NONE;
@@ -34,8 +34,7 @@ public class Circle_of_Flame {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicTarget target = (MagicTarget)data[1];
-            final MagicDamage damage = new MagicDamage((MagicPermanent)data[0],target,1,false);
+            final MagicDamage damage = new MagicDamage(event.getSource(),(MagicTarget)data[0],1,false);
             game.doAction(new MagicDealDamageAction(damage));
         }
     };
