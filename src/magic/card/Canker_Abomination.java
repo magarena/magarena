@@ -17,36 +17,12 @@ public class Canker_Abomination {
                 final MagicPermanent permanent,
                 final MagicPlayer player) {
             final int amount = player.getOpponent().getNrOfPermanentsWithType(MagicType.Creature);
-            return (amount > 0) ?
-                new MagicEvent(
-                    permanent,
-                    player,
-                    new Object[]{permanent,amount},
-                    this,
-                    amount > 1 ?
-                            permanent + " enters the battlefield with " +
-                                amount + " -1/-1 counters on it." :
-                            permanent + " enters the battlefield with a " +
-                                    "-1/-1 counter on it.") :
-               MagicEvent.NONE;
-        }
-
-        @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event,
-                final Object data[],
-                final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
-                    (MagicPermanent)data[0],
-                    MagicCounterType.MinusOne,
-                    (Integer)data[1],
-                    true));
-        }
-        
-        @Override
-        public boolean usesStack() {
-            return false;
+                        permanent,
+                        MagicCounterType.MinusOne,
+                        amount,
+                        true));
+            return MagicEvent.NONE;
         }
     };
 }
