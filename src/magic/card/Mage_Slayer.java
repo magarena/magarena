@@ -18,9 +18,8 @@ public class Mage_Slayer {
             final MagicPlayer player=permanent.getController();
             return (equippedCreature.isValid() && equippedCreature==creature) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{equippedCreature,player.getOpponent()},
+                        equippedCreature,
+                        player.getOpponent(),
                         this,
                         equippedCreature+ " deals damage equal to its power to defending player."):
                 MagicEvent.NONE;
@@ -31,8 +30,8 @@ public class Mage_Slayer {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent permanent=(MagicPermanent)data[0];
-            final MagicDamage damage=new MagicDamage(permanent,(MagicTarget)data[1],permanent.getPower(),false);
+            final MagicPermanent permanent=event.getPermanent();
+            final MagicDamage damage=new MagicDamage(permanent,event.getPlayer(),permanent.getPower(),false);
             game.doAction(new MagicDealDamageAction(damage));
         }
     };
