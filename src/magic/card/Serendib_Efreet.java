@@ -20,7 +20,6 @@ public class Serendib_Efreet {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{permanent,player},
                         this,
                         permanent + " deals 1 damage to you.") :
                 MagicEvent.NONE;
@@ -31,7 +30,7 @@ public class Serendib_Efreet {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicDamage damage=new MagicDamage((MagicSource)data[0],(MagicTarget)data[1],1,false);
+            final MagicDamage damage=new MagicDamage(event.getSource(),event.getPlayer(),1,false);
             game.doAction(new MagicDealDamageAction(damage));
         }
     };
