@@ -25,7 +25,7 @@ public class Mordant_Dragon {
                             "You may have " + permanent + " deal that much damage to target creature.",
                             MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS),
                         new MagicDamageTargetPicker(amount),
-                        new Object[]{permanent,amount},
+                        new Object[]{amount},
                         this,
                         "You may$ have " + permanent + " deal "+amount+" damage to target creature$ your opponent controls."):
                 MagicEvent.NONE;
@@ -40,7 +40,7 @@ public class Mordant_Dragon {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    final MagicDamage damage=new MagicDamage((MagicPermanent)data[0],creature,(Integer)data[1],false);
+                    final MagicDamage damage=new MagicDamage(event.getSource(),creature,(Integer)data[0],false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
                 });
