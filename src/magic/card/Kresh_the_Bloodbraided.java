@@ -22,11 +22,11 @@ public class Kresh_the_Bloodbraided {
                     permanent,
                     player,
                     new MagicSimpleMayChoice(
-                            player + " may put " + power + " +1/+1 counters on " + permanent + ".",
-                            MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
-                            1,
-                            MagicSimpleMayChoice.DEFAULT_YES),
-                    new Object[]{permanent,power},
+                        player + " may put " + power + " +1/+1 counters on " + permanent + ".",
+                        MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_YES),
+                    new Object[]{power},
                     this,
                     player + " may put " + power + " +1/+1 counters on " + permanent + ".") :
                 MagicEvent.NONE;
@@ -39,9 +39,9 @@ public class Kresh_the_Bloodbraided {
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 game.doAction(new MagicChangeCountersAction(
-                        (MagicPermanent)data[0],
+                        event.getPermanent(),
                         MagicCounterType.PlusOne,
-                        (Integer)data[1],
+                        (Integer)data[0],
                         true));
             }
         }
