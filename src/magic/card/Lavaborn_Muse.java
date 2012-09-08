@@ -19,7 +19,6 @@ public class Lavaborn_Muse {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{permanent,player},
                         this,
                         permanent + " deals 3 damage to " + player + "."):
                 MagicEvent.NONE;
@@ -31,7 +30,7 @@ public class Lavaborn_Muse {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicDamage damage=new MagicDamage((MagicSource)data[0],(MagicTarget)data[1],3,false);
+            final MagicDamage damage=new MagicDamage(event.getSource(),event.getPlayer(),3,false);
             game.doAction(new MagicDealDamageAction(damage));
         }
     };
