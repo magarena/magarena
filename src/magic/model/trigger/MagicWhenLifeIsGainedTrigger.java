@@ -1,7 +1,6 @@
-
 package magic.model.trigger;
 
-public abstract class MagicWhenLifeIsGainedTrigger extends MagicTrigger<Object[]> {
+public abstract class MagicWhenLifeIsGainedTrigger extends MagicTrigger<MagicLifeChangeTriggerData> {
     public MagicWhenLifeIsGainedTrigger(final int priority) {
         super(priority); 
     }

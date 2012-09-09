@@ -7,14 +7,15 @@ import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicWhenLifeIsGainedTrigger;
+import magic.model.trigger.MagicLifeChangeTriggerData;
 
 public class Ageless_Entity {
     public static final MagicWhenLifeIsGainedTrigger T = new MagicWhenLifeIsGainedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object[] data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicLifeChangeTriggerData lifeChange) {
             final MagicPlayer player = permanent.getController();
-            final int amount = (Integer)data[1];
-            return (player == (MagicPlayer)data[0]) ?
+            final int amount = lifeChange.amount;
+            return (player == lifeChange.player) ?
                 new MagicEvent(
                     permanent,
                     player,

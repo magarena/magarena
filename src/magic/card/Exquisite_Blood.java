@@ -6,6 +6,7 @@ import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicWhenLifeIsLostTrigger;
+import magic.model.trigger.MagicLifeChangeTriggerData;
 
 public class Exquisite_Blood {
     public static final MagicWhenLifeIsLostTrigger T = new MagicWhenLifeIsLostTrigger() {
@@ -13,10 +14,10 @@ public class Exquisite_Blood {
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final Object[] data) {
+                final MagicLifeChangeTriggerData lifeChange) {
             final MagicPlayer player = permanent.getController();
-            final int amount = (Integer)data[1];
-            return (player.getOpponent() == (MagicPlayer)data[0]) ?
+            final int amount = lifeChange.amount;
+            return (player.getOpponent() == lifeChange.player) ?
                 new MagicEvent(
                     permanent,
                     player,

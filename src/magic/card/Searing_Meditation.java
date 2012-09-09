@@ -14,13 +14,14 @@ import magic.model.event.MagicEvent;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicWhenLifeIsGainedTrigger;
+import magic.model.trigger.MagicLifeChangeTriggerData;
 
 public class Searing_Meditation {
     public static final MagicWhenLifeIsGainedTrigger T = new MagicWhenLifeIsGainedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object[] data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicLifeChangeTriggerData lifeChange) {
             final MagicPlayer player = permanent.getController();
-            return (player == (MagicPlayer)data[0]) ?
+            return (player == lifeChange.player) ?
                 new MagicEvent(
                     permanent,
                     player,

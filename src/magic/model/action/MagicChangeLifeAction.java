@@ -4,6 +4,7 @@ import magic.ai.ArtificialScoringSystem;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicLifeChangeTriggerData;
 
 /** Keeping the player life is done in the marker action. */
 public class MagicChangeLifeAction extends MagicAction {
@@ -24,9 +25,9 @@ public class MagicChangeLifeAction extends MagicAction {
        
         setScore(player,ArtificialScoringSystem.getLifeScore(newLife)-ArtificialScoringSystem.getLifeScore(oldLife));
         if (newLife > oldLife) {
-            game.executeTrigger(MagicTriggerType.WhenLifeIsGained,new Object[]{player,newLife-oldLife});
+            game.executeTrigger(MagicTriggerType.WhenLifeIsGained,new MagicLifeChangeTriggerData(player,newLife-oldLife));
         } else if (newLife < oldLife) {
-            game.executeTrigger(MagicTriggerType.WhenLifeIsLost,new Object[]{player,oldLife-newLife});
+            game.executeTrigger(MagicTriggerType.WhenLifeIsLost,new MagicLifeChangeTriggerData(player,oldLife-newLife));
         }
         game.setStateCheckRequired();
     }
