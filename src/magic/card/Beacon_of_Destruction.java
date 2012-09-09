@@ -26,7 +26,6 @@ public class Beacon_of_Destruction {
                     player,
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(5),
-                    new Object[]{card},
                     this,
                     card + " deals 5 damage to target creature or player$. " + 
                     "Shuffle " + card + " into its owner's library.");
@@ -37,14 +36,13 @@ public class Beacon_of_Destruction {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCard card=(MagicCard)data[0];
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
-                    final MagicDamage damage=new MagicDamage(card,target,5,false);
+                    final MagicDamage damage=new MagicDamage(event.getSource(),target,5,false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });
-            game.doAction(new MagicShuffleIntoLibraryAction(card));
+            game.doAction(new MagicShuffleIntoLibraryAction(event.getCard()));
         }
     };
 }
