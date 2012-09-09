@@ -14,11 +14,12 @@ public class Blade_of_the_Bloodchief {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
             final MagicPermanent equippedCreature = permanent.getEquippedCreature();
             final boolean isVampire = equippedCreature.hasSubType(MagicSubType.Vampire);
+            final int numCounters = isVampire ? 2 : 1;
             return (equippedCreature != MagicPermanent.NONE && otherPermanent.isCreature()) ?
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
-                    new Object[]{equippedCreature,isVampire ? 2:1},
+                    new Object[]{equippedCreature,numCounters},
                     this,
                     isVampire ?
                         "Put two +1/+1 counters on " + equippedCreature + "." :
