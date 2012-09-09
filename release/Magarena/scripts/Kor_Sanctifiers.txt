@@ -8,4 +8,5 @@ subtype=Kor,Cleric
 cost={2}{W}
 pt=2/3
 timing=main
+ability=kicker {W} destroy target artifact or enchantment
 requires_card_code
