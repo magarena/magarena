@@ -38,11 +38,10 @@ public class Essence_Drain {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));
+            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
-                    final MagicDamage damage=new MagicDamage(cardOnStack.getCard(),target,3,false);
+                    final MagicDamage damage=new MagicDamage(event.getSource(),target,3,false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });
