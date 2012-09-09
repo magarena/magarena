@@ -15,7 +15,6 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventAction;
 import magic.model.event.MagicSacrificePermanentEvent;
-import magic.model.event.MagicSpellCardEvent;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Gatekeeper_of_Malakir {
