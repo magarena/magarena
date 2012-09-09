@@ -24,7 +24,7 @@ public class Bloodhusk_Ritualist {
                     player,
                     MagicTargetChoice.TARGET_OPPONENT,
                     this,
-                    "Target opponent$ discards " + permanent.getKicker() + " card(s)."):
+                    "Target opponent$ discards " + permanent.getKicker() + " cards."):
                 MagicEvent.NONE;
         }
         @Override

@@ -38,6 +38,7 @@ class TestKicker extends TestGameBuilder {
         addToHand(P,"Pouncing Wurm",1); 
         addToHand(P,"Gatekeeper of Malakir",1); 
         addToHand(P,"Lightkeeper of Emeria",1); 
+        addToHand(P,"Bloodhusk Ritualist",1); 
 
         P = opponent;
         
@@ -45,6 +46,7 @@ class TestKicker extends TestGameBuilder {
         addToLibrary(P, "Plains", 10);
         createPermanent(game,P,"Rupture Spire",false,8);
         createPermanent(game,P,"Thieving Magpie",false,1);
+        addToHand(P, "Plains", 7);
         
         return game;
     }
