@@ -7,6 +7,7 @@ import magic.model.MagicPermanentState;
 import magic.model.action.MagicChangeStateAction;
 import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicPermanentAction;
+import magic.model.action.MagicMoveCardAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
@@ -22,12 +23,14 @@ public class Terror {
                     cardOnStack.getController(),
                     MagicTargetChoice.NEG_TARGET_NONARTIFACT_NONBLACK_CREATURE,
                     new MagicDestroyTargetPicker(true),
+                    new Object[]{cardOnStack},
                     this,
                     "Destroy target nonartifact, nonblack creature$. It can't be regenerated.");
         }
 
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeStateAction(creature,MagicPermanentState.CannotBeRegenerated,true));
