@@ -8,6 +8,7 @@ import magic.model.MagicPlayer;
 import magic.model.action.MagicDrawAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicSetAbilityAction;
+import magic.model.action.MagicMoveCardAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
@@ -23,11 +24,13 @@ public class Stun {
                     cardOnStack.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     new MagicNoCombatTargetPicker(false,true,false),
+                    new Object[]{cardOnStack},
                     this,
                     "Target creature$ can't block this turn. Draw a card.");
         }
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicSetAbilityAction(creature,MagicAbility.CannotBlock));
