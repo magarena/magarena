@@ -8,4 +8,5 @@ subtype=Vampire,Warrior
 cost={B}{B}
 pt=2/2
 timing=fmain
+ability=kicker {B} target player sacrifices a creature
 requires_card_code
