@@ -7,6 +7,6 @@ type=Creature
 subtype=Kor,Soldier
 cost={W}{W}
 pt=2/2
-ability=flying
+ability=flying,kicker {1}{W} target creature gains flying until end of turn
 timing=main
 requires_card_code
