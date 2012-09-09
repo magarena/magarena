@@ -97,6 +97,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     private int abilityPlayedThisTurn=0;
     private int damage=0;
     private int preventDamage=0;
+    private int kicked=0;
     private final int fixedScore;
     private int score;
 
@@ -152,6 +153,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         chosenTarget = copyMap.copy(sourcePermanent.chosenTarget);
         damage=sourcePermanent.damage;
         preventDamage=sourcePermanent.preventDamage;
+        kicked=sourcePermanent.kicked;
         fixedScore=sourcePermanent.fixedScore;
     
         cachedController     = copyMap.copy(sourcePermanent.cachedController);
@@ -191,6 +193,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             stateFlags,
             damage,
             preventDamage,
+            kicked,
             equippedCreature.getId(),
             enchantedCreature.getId(),
             blockedCreature.getId(),
@@ -199,8 +202,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             counters[2],
             counters[3],
             abilityPlayedThisTurn,
-            damage,
-            preventDamage,
             cachedController.getId(),
             cachedTypeFlags,
             // cachedSubTypeFlags,
@@ -469,6 +470,18 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     @Override
     public void setPreventDamage(final int amount) {
         preventDamage=amount;
+    }
+
+    public void setKicked(final int aKicked) {
+        kicked = aKicked;
+    }
+
+    public int getKicked() {
+        return kicked;
+    }
+    
+    public boolean isKicked() {
+        return kicked > 0;
     }
 
     public int getLethalDamage(final int toughness) {

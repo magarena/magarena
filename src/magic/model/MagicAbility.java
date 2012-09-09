@@ -21,6 +21,7 @@ import magic.model.event.MagicVividManaActivation;
 import magic.model.event.MagicSacrificeTapManaActivation;
 import magic.model.event.MagicGainActivation;
 import magic.model.event.MagicPlayMulticounterEvent;
+import magic.model.event.MagicPlayCardEvent;
 
 import magic.model.mstatic.MagicCDA;
 
@@ -522,6 +523,24 @@ public enum MagicAbility {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             final MagicManaCost manaCost = MagicManaCost.create(arg);
             card.add(new MagicMiracleTrigger(manaCost));
+        }
+    },
+    Kicker("kicker", 0) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final int idx = arg.indexOf(' ');
+            final String[] token = {arg.substring(0,idx), arg.substring(idx+1)};
+            final MagicManaCost cost = MagicManaCost.create(token[0]);
+            final String desc = token[1];
+            card.add(MagicPlayCardEvent.create(cost, false, desc));
+        }
+    },
+    Multikicker("multikicker", 0) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final int idx = arg.indexOf(' ');
+            final String[] token = {arg.substring(0,idx), arg.substring(idx+1)};
+            final MagicManaCost cost = MagicManaCost.create(token[0]);
+            final String desc = token[1];
+            card.add(MagicPlayCardEvent.create(cost, true, desc));
         }
     },
     None("",0);

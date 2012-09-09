@@ -17,7 +17,6 @@ public enum MagicPermanentState {
     RemoveAtEndOfYourTurn("remove from game at end of your turn","{E}"),
     ExcludeManaSource("exclude as mana source",""),
     ExcludeFromCombat("exclude from combat",""),
-    Kicked("kicked",""),
     Destroyed("destroyed",""),
     ReturnToOwnerAtEndOfTurn("return to owner at end of turn","{R}"),
     ReturnToHandOfOwnerAtEndOfCombat("return to owner's hand at end of combat",""),
@@ -39,7 +38,6 @@ public enum MagicPermanentState {
         ReturnToOwnerAtEndOfTurn.getMask()|
         ExcludeManaSource.getMask()|
         ExcludeFromCombat.getMask()|
-        Kicked.getMask()|
         DestroyAtEndOfCombat.getMask()|
         MustPayEchoCost.getMask();
     
