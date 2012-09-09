@@ -6,6 +6,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicManaCost;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicTapAction;
+import magic.model.action.MagicMoveCardAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.choice.MagicKickerChoice;
 import magic.model.event.MagicEvent;
@@ -24,6 +25,7 @@ public class Gigadrowse {
                     cardOnStack.getController(),
                     new MagicKickerChoice(MagicTargetChoice.NEG_TARGET_PERMANENT, MagicManaCost.BLUE, true, true),
                     new MagicTapTargetPicker(true,false),
+                    new Object[]{cardOnStack},
                     this,
                     "Tap target permanent$.");
         }
@@ -33,6 +35,7 @@ public class Gigadrowse {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
+            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicTapAction(permanent,true));
