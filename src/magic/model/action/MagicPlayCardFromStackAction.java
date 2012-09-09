@@ -8,11 +8,11 @@ import magic.model.stack.MagicCardOnStack;
 public class MagicPlayCardFromStackAction extends MagicPutIntoPlayAction {
 
     private final MagicCardOnStack cardOnStack;
-    private final int kicked;
+    private final int kicker;
     
-    public MagicPlayCardFromStackAction(final MagicCardOnStack aCardOnStack, final int aKicked) {
+    public MagicPlayCardFromStackAction(final MagicCardOnStack aCardOnStack, final int aKicker) {
         cardOnStack = aCardOnStack;
-        kicked = aKicked;
+        kicker = aKicker;
     }
     
     public MagicPlayCardFromStackAction(final MagicCardOnStack cardOnStack) {
@@ -27,7 +27,7 @@ public class MagicPlayCardFromStackAction extends MagicPutIntoPlayAction {
     @Override
     protected MagicPermanent createPermanent(final MagicGame game) {
         final MagicPermanent permanent=game.createPermanent(cardOnStack.getCard(),cardOnStack.getController());
-        permanent.setKicked(kicked);
+        permanent.setKicker(kicker);
         return permanent;
     }    
 }
