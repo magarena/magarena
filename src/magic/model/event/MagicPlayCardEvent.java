@@ -30,16 +30,11 @@ public class MagicPlayCardEvent {
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choices) {
             final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-            if (choices.length >= 2 && choices[1] != null && choices[1] instanceof Integer) { 
-                game.doAction(new MagicPlayCardFromStackAction(cardOnStack, (Integer)choices[1]));
-            } else {
-                game.doAction(new MagicPlayCardFromStackAction(cardOnStack));
-            }
+            game.doAction(new MagicPlayCardFromStackAction(cardOnStack));
         }
     };
-    
 
-    public static MagicSpellCardEvent create(final MagicManaCost kickerCost, final boolean multi, final String desc) {
+    public static MagicSpellCardEvent createKicker(final MagicManaCost kickerCost, final boolean multi, final String desc) {
         return new MagicSpellCardEvent() {
             @Override
             public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
@@ -60,8 +55,34 @@ public class MagicPlayCardEvent {
                     final Object[] data,
                     final Object[] choiceResults) {
                 final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-                final MagicPlayCardFromStackAction action = new MagicPlayCardFromStackAction(cardOnStack, (Integer)choiceResults[1]);
-                game.doAction(action);
+                final int kicker = (Integer)choiceResults[1];
+                game.doAction(new MagicPlayCardFromStackAction(cardOnStack, kicker));
+            }
+        };
+    }
+    
+    public static MagicSpellCardEvent createX(final String desc) {
+        return new MagicSpellCardEvent() {
+            @Override
+            public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+                final MagicPlayer player = cardOnStack.getController();
+                final MagicCard card = cardOnStack.getCard();
+                return new MagicEvent(
+                        card,
+                        player,
+                        new Object[]{cardOnStack,payedCost.getX()},
+                        this,
+                        "$Play " + card + ". " + desc + ".");
+            }
+            @Override
+            public void executeEvent(
+                    final MagicGame game,
+                    final MagicEvent event,
+                    final Object[] data,
+                    final Object[] choiceResults) {
+                final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
+                final int X = (Integer)data[1];
+                game.doAction(new MagicPlayCardFromStackAction(cardOnStack, X));
             }
         };
     }

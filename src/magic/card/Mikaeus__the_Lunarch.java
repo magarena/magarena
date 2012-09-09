@@ -20,8 +20,8 @@ import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 
 public class Mikaeus__the_Lunarch {
-    public static final Object S = Primordial_Hydra.E;
-    
+    public static final Object ETB = Primordial_Hydra.ETB;
+
     public static final MagicPermanentActivation A1 = new MagicPermanentActivation(
             new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
             new MagicActivationHints(MagicTiming.Pump),

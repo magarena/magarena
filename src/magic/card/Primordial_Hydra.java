@@ -8,13 +8,11 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeCountersAction;
-import magic.model.action.MagicPlayCardFromStackAction;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicSpellCardEvent;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
-import magic.model.stack.MagicCardOnStack;
 import magic.model.trigger.MagicAtUpkeepTrigger;
+import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Primordial_Hydra {
     public static final MagicStatic S = new MagicStatic(MagicLayer.Ability) {
@@ -30,36 +28,19 @@ public class Primordial_Hydra {
         }
     };
     
-    public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
+    public static final MagicWhenComesIntoPlayTrigger ETB = new MagicWhenComesIntoPlayTrigger() {
         @Override
-        public MagicEvent getEvent(
-                final MagicCardOnStack cardOnStack,
-                final MagicPayedCost payedCost) {
-            final int amount = payedCost.getX();
-            final MagicCard card = cardOnStack.getCard();
-            return new MagicEvent(
-                    card,
-                    cardOnStack.getController(),
-                    new Object[]{cardOnStack,amount},
-                    this,
-                    card + " enters the battlefield with " + amount + " +1/+1 counters on it.");
-        }
-
-        @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event,
-                final Object[] data,
-                final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-            final MagicPlayCardFromStackAction action = new MagicPlayCardFromStackAction(cardOnStack);
-            game.doAction(action);
-            final MagicPermanent permanent = action.getPermanent();
+        public MagicEvent executeTrigger(
+            final MagicGame game,
+            final MagicPermanent permanent,
+            final MagicPlayer player) {   
             game.doAction(new MagicChangeCountersAction(
-                        permanent,
-                        MagicCounterType.PlusOne,
-                        (Integer)data[1],
-                        true));
+                permanent,
+                MagicCounterType.PlusOne,
+                permanent.getKicker(),
+                true
+            ));
+            return MagicEvent.NONE;
         }
     };
     

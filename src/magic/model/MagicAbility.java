@@ -531,7 +531,7 @@ public enum MagicAbility {
             final String[] token = {arg.substring(0,idx), arg.substring(idx+1)};
             final MagicManaCost cost = MagicManaCost.create(token[0]);
             final String desc = token[1];
-            card.add(MagicPlayCardEvent.create(cost, false, desc));
+            card.add(MagicPlayCardEvent.createKicker(cost, false, desc));
         }
     },
     Multikicker("multikicker", 0) {
@@ -540,7 +540,12 @@ public enum MagicAbility {
             final String[] token = {arg.substring(0,idx), arg.substring(idx+1)};
             final MagicManaCost cost = MagicManaCost.create(token[0]);
             final String desc = token[1];
-            card.add(MagicPlayCardEvent.create(cost, true, desc));
+            card.add(MagicPlayCardEvent.createKicker(cost, true, desc));
+        }
+    },
+    EntersWithX("enters with x", 0) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(MagicPlayCardEvent.createX(arg));
         }
     },
     None("",0);
