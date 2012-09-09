@@ -8,4 +8,5 @@ subtype=Wurm
 cost={3}{G}
 pt=3/3
 timing=main
+ability=kicker {2}{G} it enters the battlefield with three +1/+1 counters on it and with haste
 requires_card_code
