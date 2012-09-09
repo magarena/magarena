@@ -1,34 +1,32 @@
 package magic.card;
 
-import magic.model.MagicCard;
+import magic.model.MagicPermanent;
 import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicDealDamageAction;
-import magic.model.action.MagicPlayCardFromStackAction;
 import magic.model.action.MagicPlayerAction;
-import magic.model.choice.MagicKickerChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicSpellCardEvent;
-import magic.model.stack.MagicCardOnStack;
+import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Deathforge_Shaman {          
-    public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+    public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
         @Override
-        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
-            final MagicCard card = cardOnStack.getCard();
-            return new MagicEvent(
-                    card,
+        public MagicEvent executeTrigger(
+            final MagicGame game,
+            final MagicPermanent permanent,
+            final MagicPlayer player) {   
+            return permanent.isKicked() ?
+                new MagicEvent(
+                    permanent,
                     player,
-                    new MagicKickerChoice(MagicTargetChoice.NEG_TARGET_PLAYER,MagicManaCost.RED,true),
-                    new Object[]{cardOnStack},
+                    MagicTargetChoice.NEG_TARGET_PLAYER,
                     this,
-                    "Play " + card + ". " + card + " deals damage to target " +
-                    "player$ equal to twice the number of times it was kicked$.");
+                    permanent + " deals damage to target player$ equal to twice the number of times it was kicked."):
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(
@@ -36,22 +34,16 @@ public class Deathforge_Shaman {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final int kickerCount = (Integer)choiceResults[1];
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            final MagicPlayCardFromStackAction action = new MagicPlayCardFromStackAction(cardOnStack);
-            game.doAction(action);
-            if (kickerCount > 0) {
-                event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
-                    public void doAction(final MagicPlayer player) {
-                        final MagicDamage damage = new MagicDamage(
-                                cardOnStack.getCard(),
-                                player,
-                                kickerCount * 2,
-                                false);
-                        game.doAction(new MagicDealDamageAction(damage));
-                    }
-                });
-            }
+            event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
+                public void doAction(final MagicPlayer player) {
+                    final MagicDamage damage = new MagicDamage(
+                            event.getSource(),
+                            player,
+                            event.getPermanent().getKicker() * 2,
+                            false);
+                    game.doAction(new MagicDealDamageAction(damage));
+                }
+            });
         }
     };
 }

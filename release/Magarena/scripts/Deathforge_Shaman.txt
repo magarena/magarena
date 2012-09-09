@@ -8,4 +8,5 @@ subtype=Ogre,Shaman
 cost={4}{R}
 pt=4/3
 timing=main
+ability=multikicker {R} it deals damage to target player equal to twice the number of times it was kicked
 requires_card_code
