@@ -12,7 +12,6 @@ import magic.model.action.MagicPlayCardFromStackAction;
 import magic.model.choice.MagicKickerChoice;
 import magic.model.event.MagicDiscardEvent;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
