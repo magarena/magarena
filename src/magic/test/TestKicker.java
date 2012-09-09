@@ -33,6 +33,7 @@ class TestKicker extends TestGameBuilder {
         addToHand(P,"Ravaging Riftwurm",1); 
         addToHand(P,"Sphinx of Lost Truths",1); 
         addToHand(P,"Wolfbriar Elemental",1); 
+        addToHand(P,"Pincer Spider",1); 
 
         P = opponent;
         
