@@ -19,24 +19,6 @@ import magic.model.stack.MagicTriggerOnStack;
 
 public class Wolfbriar_Elemental {
                         
-    private static final MagicEventAction KICKED = new MagicEventAction() {
-        @Override
-        public void executeEvent(
-            final MagicGame game,
-            final MagicEvent event,
-            final Object[] data,
-            final Object[] choiceResults) {
-            final MagicPlayer player=event.getPlayer();
-            int count=(Integer)data[0];
-            for (;count>0;count--) {
-                game.doAction(new MagicPlayTokenAction(
-                        player,
-                        TokenCardDefinitions.
-                        get("Wolf")));
-            }
-        }
-    };
-
     public static final MagicSpellCardEvent E =new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
@@ -71,6 +53,24 @@ public class Wolfbriar_Elemental {
                         KICKED,
                         "Put "+kickerCount+" 2/2 green Wolf creature tokens onto the battlefield.");
                 game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(triggerEvent)));
+            }
+        }
+    };
+    
+    private static final MagicEventAction KICKED = new MagicEventAction() {
+        @Override
+        public void executeEvent(
+            final MagicGame game,
+            final MagicEvent event,
+            final Object[] data,
+            final Object[] choiceResults) {
+            final MagicPlayer player=event.getPlayer();
+            int count=(Integer)data[0];
+            for (;count>0;count--) {
+                game.doAction(new MagicPlayTokenAction(
+                        player,
+                        TokenCardDefinitions.
+                        get("Wolf")));
             }
         }
     };
