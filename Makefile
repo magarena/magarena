@@ -412,5 +412,5 @@ check_data: scripts/check_data.awk
 	done > $@
 	flip -u $@
 
-check_movecard:
+check_movespellcard:
 	diff <(grep MagicSpellCardEvent -lr src/magic/card | sort) <(grep MagicMoveCardAction -l $$(grep MagicSpellCardEvent -lr src/magic/card) | sort)
