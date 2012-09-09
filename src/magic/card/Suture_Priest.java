@@ -16,6 +16,7 @@ public class Suture_Priest {
             final MagicPlayer player = permanent.getController();
             final MagicPlayer controller = otherPermanent.getController();
             final boolean same = controller == player;
+            final int lifeChange = same ? 1 : -1;
             return (otherPermanent != permanent &&
                     otherPermanent.isCreature()) ?
                 new MagicEvent(
@@ -32,7 +33,7 @@ public class Suture_Priest {
                             MagicSimpleMayChoice.OPPONENT_LOSE_LIFE,
                             1,
                             MagicSimpleMayChoice.DEFAULT_YES),
-                    new Object[]{controller,same ? 1:-1},
+                    new Object[]{controller,lifeChange},
                     this,
                     same ?
                         controller + " may$ gain 1 life." :
