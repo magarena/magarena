@@ -30,7 +30,7 @@ public class Douse_in_Gloom {
                     new Object[]{cardOnStack},
                     this,
                     card + " deals 2 damage to target creature$ and " +
-                            player + " gains 2 life.");
+                    player + " gains 2 life.");
         }
         @Override
         public void executeEvent(
@@ -38,11 +38,10 @@ public class Douse_in_Gloom {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));            
+            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
-                    final MagicDamage damage=new MagicDamage(cardOnStack.getCard(),target,2,false);
+                    final MagicDamage damage=new MagicDamage(event.getSource(),target,2,false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });
