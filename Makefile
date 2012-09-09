@@ -406,5 +406,8 @@ update_value_from_rankings: cards/gatherer_rankings
 	hg add $^
 
 check_data: scripts/check_data.awk
-	grep "new Object\|data\[[0-9\]" -r src/magic/card  | awk -f $^ | sed 's/  //g' | sed 's/:/:\t/' > $@
+	for i in src/magic/card/*; do \
+			echo $$i; \
+			grep "new Object\|data\[[0-9\]" $$i  | awk -f $^ | sed 's/  //g' | sed 's/:/:\t/'; \
+	done > $@
 	flip -u $@
