@@ -1,6 +1,6 @@
 package magic.card;
 
-import magic.model.MagicCard;
+import magic.model.MagicPlayer;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicManaCost;
@@ -12,18 +12,16 @@ import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.action.MagicBecomesCreatureAction;
 import magic.model.action.MagicChangeCountersAction;
-import magic.model.action.MagicPlayCardFromStackAction;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicPlayAbilityEvent;
-import magic.model.event.MagicSpellCardEvent;
 import magic.model.event.MagicTiming;
-import magic.model.stack.MagicCardOnStack;
 import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicLayer;
+import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 import java.util.EnumSet;
 
@@ -90,36 +88,19 @@ public class Chimeric_Mass {
         }
     };
 
-    public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
+    public static final MagicWhenComesIntoPlayTrigger ETB = new MagicWhenComesIntoPlayTrigger() {
         @Override
-        public MagicEvent getEvent(
-                final MagicCardOnStack cardOnStack,
-                final MagicPayedCost payedCost) {
-            final int charges=payedCost.getX();
-            final MagicCard card = cardOnStack.getCard();
-            return new MagicEvent(
-                    card,
-                    cardOnStack.getController(),
-                    new Object[]{cardOnStack,charges},
-                    this,
-                    card + " enters the battlefield with "+charges+" charge counters on it.");
-        }
-
-        @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event,
-                final Object[] data,
-                final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-            final MagicPlayCardFromStackAction action = new MagicPlayCardFromStackAction(cardOnStack);
-            game.doAction(action);
-            final MagicPermanent permanent=action.getPermanent();
+        public MagicEvent executeTrigger(
+            final MagicGame game,
+            final MagicPermanent permanent,
+            final MagicPlayer player) {   
             game.doAction(new MagicChangeCountersAction(
-                        permanent,
-                        MagicCounterType.Charge,
-                        (Integer)data[1],
-                        true));
+                permanent,
+                MagicCounterType.Charge,
+                permanent.getKicker(),
+                true
+            ));
+            return MagicEvent.NONE;
         }
     };
 }
