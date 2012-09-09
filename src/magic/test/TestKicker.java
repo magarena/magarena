@@ -8,7 +8,7 @@ import magic.model.MagicPlayerProfile;
 import magic.model.MagicDuel;
 import magic.model.phase.MagicMainPhase;
 
-class TestRavagingRiftwurm extends TestGameBuilder {    
+class TestKicker extends TestGameBuilder {    
     public MagicGame getGame() {
         final MagicDuel duel=new MagicDuel();
         duel.setDifficulty(6);
@@ -32,6 +32,7 @@ class TestRavagingRiftwurm extends TestGameBuilder {
         createPermanent(game,P,"Thieving Magpie",false,1);
         addToHand(P,"Ravaging Riftwurm",1); 
         addToHand(P,"Sphinx of Lost Truths",1); 
+        addToHand(P,"Wolfbriar Elemental",1); 
 
         P = opponent;
         
