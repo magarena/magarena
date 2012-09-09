@@ -8,4 +8,5 @@ subtype=Human,Knight
 cost={2}{W}
 pt=2/2
 timing=main
+ability=kicker {2}{W} it enters the battlefield with two +1/+1 counters on it and with first strike
 requires_card_code
