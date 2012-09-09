@@ -1,6 +1,6 @@
 package magic.card;
 
-import magic.model.MagicCard;
+import magic.model.MagicPlayer;
 import magic.model.MagicCounterType;
 import magic.model.MagicDamage;
 import magic.model.MagicGame;
@@ -19,46 +19,28 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicRemoveCounterEvent;
-import magic.model.event.MagicSpellCardEvent;
 import magic.model.event.MagicTiming;
-import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
+import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Apocalypse_Hydra {
-    public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
+    public static final MagicWhenComesIntoPlayTrigger ETB = new MagicWhenComesIntoPlayTrigger() {
         @Override
-        public MagicEvent getEvent(
-                final MagicCardOnStack cardOnStack,
-                final MagicPayedCost payedCost) {
-            int amount = payedCost.getX();
-            if (amount >= 5) {
-                amount *= 2;
-            }
-            final MagicCard card = cardOnStack.getCard();
-            return new MagicEvent(
-                    card,
-                    cardOnStack.getController(),
-                    new Object[]{cardOnStack,amount},
-                    this,
-                    card + " enters the battlefield with " + amount + " +1/+1 counters on it.");
-        }
-
-        @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event,
-                final Object[] data,
-                final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            final MagicPlayCardFromStackAction action = new MagicPlayCardFromStackAction(cardOnStack);
-            game.doAction(action);
-            final MagicPermanent permanent = action.getPermanent();
+        public MagicEvent executeTrigger(
+            final MagicGame game,
+            final MagicPermanent permanent,
+            final MagicPlayer player) {   
+            final int count = permanent.getKicker() >= 5 ? 
+                    2 * permanent.getKicker() :
+                    permanent.getKicker();
             game.doAction(new MagicChangeCountersAction(
-                        permanent,
-                        MagicCounterType.PlusOne,
-                        (Integer)data[1],
-                        true));
+                permanent,
+                MagicCounterType.PlusOne,
+                count,
+                true
+            ));
+            return MagicEvent.NONE;
         }
     };
     
