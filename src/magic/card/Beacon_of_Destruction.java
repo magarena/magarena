@@ -5,8 +5,9 @@ import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPlayer;
+import magic.model.MagicLocationType;
 import magic.model.action.MagicDealDamageAction;
-import magic.model.action.MagicShuffleIntoLibraryAction;
+import magic.model.action.MagicChangeCardDestinationAction;
 import magic.model.action.MagicTargetAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
@@ -19,16 +20,13 @@ public class Beacon_of_Destruction {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player=cardOnStack.getController();
-            final MagicCard card=cardOnStack.getCard();
             return new MagicEvent(
-                    card,
-                    player,
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(5),
                     this,
-                    card + " deals 5 damage to target creature or player$. " + 
-                    "Shuffle " + card + " into its owner's library.");
+                    cardOnStack + " deals 5 damage to target creature or player$. " + 
+                    "Shuffle " + cardOnStack + " into its owner's library.");
         }
         @Override
         public void executeEvent(
@@ -42,7 +40,7 @@ public class Beacon_of_Destruction {
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });
-            game.doAction(new MagicShuffleIntoLibraryAction(event.getCard()));
+            game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(),MagicLocationType.OwnersLibrary));
         }
     };
 }
