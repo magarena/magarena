@@ -22,12 +22,9 @@ public class Sudden_Disappearance {
         public MagicEvent getEvent(
                 final MagicCardOnStack cardOnStack,
                 final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
+                    cardOnStack,
                     MagicTargetChoice.TARGET_PLAYER,
-                    new Object[]{cardOnStack},
                     this,
                     "Exile all nonland permanents target player$ controls.");
         }
@@ -37,7 +34,6 @@ public class Sudden_Disappearance {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     final Collection<MagicTarget> targets =
@@ -45,7 +41,7 @@ public class Sudden_Disappearance {
                     for (final MagicTarget target : targets) {
                         final MagicPermanent permanent = (MagicPermanent)target;
                         if (!permanent.isLand()) {
-                               game.doAction(new MagicExileUntilEndOfTurnAction(permanent));    
+                            game.doAction(new MagicExileUntilEndOfTurnAction(permanent));    
                         }
                     }
                 }
