@@ -19,13 +19,10 @@ public class Reprisal {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_CREATURE_POWER_4_OR_MORE,
                     new MagicDestroyTargetPicker(true),
-                    new Object[]{cardOnStack},
                     this,
                     "Destroy target creature$ with power 4 or greater. It can't be regenerated.");
         }
@@ -35,7 +32,6 @@ public class Reprisal {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicChangeStateAction(permanent,MagicPermanentState.CannotBeRegenerated,true));
