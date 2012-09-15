@@ -19,11 +19,9 @@ public class Melt_Terrain {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_LAND,
                     new MagicDestroyTargetPicker(false),
-                    new Object[]{cardOnStack},
                     this,
                     "Destroy target land$. " + cardOnStack + 
                     " deals 2 damage to that land's controller.");
@@ -35,12 +33,10 @@ public class Melt_Terrain {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicDestroyAction(permanent));
-                    final MagicDamage damage = new MagicDamage(cardOnStack.getCard(),permanent.getController(),2,false);
+                    final MagicDamage damage = new MagicDamage(event.getSource(),permanent.getController(),2,false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });
