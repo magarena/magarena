@@ -17,13 +17,10 @@ public class Tragic_Slip {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     new MagicWeakenTargetPicker(1,1),
-                    new Object[]{cardOnStack},
                     this,
                     "Target creature$ gets -1/-1 until end of turn.");
         }
@@ -33,7 +30,6 @@ public class Tragic_Slip {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));        
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {    
                 public void doAction(final MagicPermanent creature) {
                     final int amount = game.getCreatureDiedThisTurn() ? -13 : -1;
