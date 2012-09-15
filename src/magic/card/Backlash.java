@@ -19,11 +19,9 @@ public class Backlash {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_UNTAPPED_CREATURE,
                     new MagicTapTargetPicker(true,false),
-                    new Object[]{cardOnStack},
                     this,
                     "Tap target untapped creature$. That creature deals damage equal to its power to its controller.");
         }
@@ -33,14 +31,11 @@ public class Backlash {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    if (creature.isUntapped()) {
-                        game.doAction(new MagicTapAction(creature,true));
-                        final MagicDamage damage=new MagicDamage(creature,creature.getController(),creature.getPower(),false);
-                        game.doAction(new MagicDealDamageAction(damage));
-                    }
+                    game.doAction(new MagicTapAction(creature,true));
+                    final MagicDamage damage=new MagicDamage(creature,creature.getController(),creature.getPower(),false);
+                    game.doAction(new MagicDealDamageAction(damage));
                 }
             });
         }
