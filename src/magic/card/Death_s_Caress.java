@@ -21,13 +21,10 @@ public class Death_s_Caress {
         public MagicEvent getEvent(
                 final MagicCardOnStack cardOnStack,
                 final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     new MagicDestroyTargetPicker(false),
-                    new Object[]{cardOnStack},
                     this,
                     "Destroy target creature$. If that creature was " +
                     "a Human, you gain life equal to its toughness.");
@@ -38,13 +35,11 @@ public class Death_s_Caress {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     if (creature.hasSubType(MagicSubType.Human)) {
                         game.doAction(new MagicChangeLifeAction(
-                                cardOnStack.getController(),
+                                event.getPlayer(),
                                 creature.getToughness()));
                     }
                     game.doAction(new MagicDestroyAction(creature));
