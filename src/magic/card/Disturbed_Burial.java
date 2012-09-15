@@ -7,6 +7,7 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.action.MagicCardAction;
 import magic.model.action.MagicMoveCardAction;
+import magic.model.action.MagicChangeCardDestinationAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.choice.MagicBuybackChoice;
 import magic.model.choice.MagicTargetChoice;
@@ -20,13 +21,11 @@ public class Disturbed_Burial {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     new MagicBuybackChoice(
                             MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
                             MagicManaCost.THREE),
                     new MagicGraveyardTargetPicker(false),
-                    new Object[]{cardOnStack},
                     this,
                     "Return target creature card$ from your graveyard to your hand. " +
                     "If the buyback cost was payed$, " +
@@ -39,28 +38,15 @@ public class Disturbed_Burial {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            final boolean hasTarget = event.processTargetCard(
-                    game,
-                    choiceResults,
-                    0,
-                    new MagicCardAction() {
+            event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard targetCard) {
                     game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
                     game.doAction(new MagicMoveCardAction(targetCard,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
                     if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
-                        game.doAction(new MagicMoveCardAction(
-                                cardOnStack.getCard(),
-                                MagicLocationType.Stack,
-                                MagicLocationType.OwnersHand));
-                    } else {
-                        game.doAction(new MagicMoveCardAction(cardOnStack));
-                    }
+                        game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
+                    } 
                 }
             });
-            if (!hasTarget) {
-                game.doAction(new MagicMoveCardAction(cardOnStack));
-            }
         }
     };
 }
