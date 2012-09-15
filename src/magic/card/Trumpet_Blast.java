@@ -18,11 +18,8 @@ public class Trumpet_Blast {
     public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player=cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
-                    new Object[]{cardOnStack},
+                    cardOnStack,
                     this,
                     "Attacking creatures get +2/+0 until end of turn.");
         }
@@ -32,10 +29,8 @@ public class Trumpet_Blast {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];            
-            game.doAction(new MagicMoveCardAction(cardOnStack));
             final Collection<MagicTarget> targets=game.filterTargets(
-                    cardOnStack.getController(),
+                    event.getPlayer(),
                     MagicTargetFilter.TARGET_ATTACKING_CREATURE);
             for (final MagicTarget target : targets) {
                 game.doAction(new MagicChangeTurnPTAction((MagicPermanent)target,2,0));
