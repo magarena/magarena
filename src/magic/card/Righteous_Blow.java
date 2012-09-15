@@ -4,7 +4,6 @@ import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicPermanentAction;
@@ -18,15 +17,12 @@ public class Righteous_Blow {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_ATTACKING_OR_BLOCKING_CREATURE,
                     new MagicDamageTargetPicker(2),
-                    new Object[]{cardOnStack},
                     this,
-                    cardOnStack.getCard() + " deals 2 damage to " +
+                    cardOnStack + " deals 2 damage to " +
                     "target attacking or blocking creature$.");
         }
         @Override
@@ -35,12 +31,10 @@ public class Righteous_Blow {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     final MagicDamage damage = new MagicDamage(
-                            cardOnStack.getCard(),
+                            event.getSource(),
                             creature,
                             2,
                             false);
