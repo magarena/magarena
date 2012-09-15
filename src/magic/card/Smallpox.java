@@ -19,11 +19,8 @@ public class Smallpox {
         public MagicEvent getEvent(
                 final MagicCardOnStack cardOnStack,
                 final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
-                    new Object[]{cardOnStack},
+                    cardOnStack,
                     this,
                     "Each player loses 1 life, discards a card, " +
                     "sacrifices a creature, then sacrifices a land.");
@@ -35,29 +32,25 @@ public class Smallpox {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));
             for (final MagicPlayer player : game.getPlayers()) {
                 game.doAction(new MagicChangeLifeAction(player,-1));
                 game.addEvent(new MagicDiscardEvent(
-                        cardOnStack.getCard(),
-                        player,
-                        1,
-                        false));
-                if (player.controlsPermanentWithType(MagicType.Creature)) {
-                    game.addEvent(new MagicSacrificePermanentEvent(
-                        cardOnStack.getCard(),
-                        player,
-                        MagicTargetChoice.SACRIFICE_CREATURE));
-                }
-                if (player.controlsPermanentWithType(MagicType.Land)) {
-                    game.addEvent(new MagicSacrificePermanentEvent(
-                        cardOnStack.getCard(),
-                        player,
-                        MagicTargetChoice.SACRIFICE_LAND));
-                }
+                    event.getSource(),
+                    player,
+                    1,
+                    false
+                ));
+                game.addEvent(new MagicSacrificePermanentEvent(
+                    event.getSource(),
+                    player,
+                    MagicTargetChoice.SACRIFICE_CREATURE
+                ));
+                game.addEvent(new MagicSacrificePermanentEvent(
+                    event.getSource(),
+                    player,
+                    MagicTargetChoice.SACRIFICE_LAND
+                ));
             }
         }
     };
-
 }
