@@ -12,6 +12,18 @@ import magic.model.stack.MagicCardOnStack;
  * An Aura that is returned to play does NOT target a permanent
  */
 public class MagicReturnAuraEvent extends MagicEvent {
+    public MagicReturnAuraEvent(final MagicCardOnStack cardOnStack) {
+        super(cardOnStack,
+              new MagicTargetChoice(
+                    cardOnStack.getEvent().getTargetChoice().getTargetFilter(),
+                    false,
+                    cardOnStack.getEvent().getTargetChoice().getTargetHint(true),
+                    cardOnStack.getEvent().getTargetChoice().getDescription()),
+              cardOnStack.getEvent().getTargetPicker(),
+              EVENT_ACTION,
+              cardOnStack.getEvent().getChoiceDescription());        
+    }    
+    
     private static final MagicEventAction EVENT_ACTION = new MagicEventAction() {
         @Override
         public void executeEvent(
@@ -19,7 +31,7 @@ public class MagicReturnAuraEvent extends MagicEvent {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
+            final MagicCardOnStack cardOnStack = event.getCardOnStack();
             final boolean success = event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicPlayCardFromStackAction(cardOnStack,creature));
@@ -30,18 +42,4 @@ public class MagicReturnAuraEvent extends MagicEvent {
             }
         }
     };
-    
-    public MagicReturnAuraEvent(final MagicCardOnStack cardOnStack) {
-        super(cardOnStack.getCard(),
-                cardOnStack.getCard().getController(),
-                new MagicTargetChoice(
-                        cardOnStack.getEvent().getTargetChoice().getTargetFilter(),
-                        false,
-                        cardOnStack.getEvent().getTargetChoice().getTargetHint(true),
-                        cardOnStack.getEvent().getTargetChoice().getDescription()),
-                cardOnStack.getEvent().getTargetPicker(),
-                new Object[]{cardOnStack},
-                EVENT_ACTION,
-                cardOnStack.getEvent().getChoiceDescription());        
-    }    
 }
