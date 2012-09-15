@@ -16,14 +16,11 @@ public class Absorb {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player=cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_SPELL,
-                    new Object[]{cardOnStack},
                     this,
-                    "Counter target spell$. " + player + " gains 3 life.");
+                    "Counter target spell$. " + cardOnStack.getController() + " gains 3 life.");
         }
         @Override
         public void executeEvent(
@@ -31,13 +28,12 @@ public class Absorb {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetCardOnStack(game,choiceResults,0,new MagicCardOnStackAction() {
                 public void doAction(final MagicCardOnStack targetSpell) {
                     game.doAction(new MagicCounterItemOnStackAction(targetSpell));
+                    game.doAction(new MagicChangeLifeAction(event.getPlayer(),3));
                 }
             });
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(),3));
         }
     };
 }
