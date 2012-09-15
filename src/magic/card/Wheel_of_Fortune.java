@@ -20,9 +20,7 @@ public class Wheel_of_Fortune {
                 final MagicCardOnStack cardOnStack,
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
-                cardOnStack.getCard(),
-                cardOnStack.getController(),
-                new Object[]{cardOnStack},
+                cardOnStack,
                 this,
                 "Each player discards his or her hand and draws seven cards."
             );
@@ -34,8 +32,6 @@ public class Wheel_of_Fortune {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));
             for (final MagicPlayer player : game.getPlayers()) {
                 final MagicCardList hand = new MagicCardList(player.getHand());
                 for (final MagicCard card : hand) {
