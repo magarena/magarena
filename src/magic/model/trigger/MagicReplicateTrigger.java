@@ -25,9 +25,7 @@ public class MagicReplicateTrigger extends MagicWhenSpellIsCastTrigger {
         int kickerCount = (Integer)cardOnStack.getChoiceResults()[1];
         return (kickerCount > 0) ?
             new MagicEvent(
-                cardOnStack.getSource(),
-                cardOnStack.getController(),
-                new Object[]{cardOnStack},
+                cardOnStack,
                 this,
                 "Copy " + cardOnStack.getSource() + " for each time its replicate cost was paid.") :
             MagicEvent.NONE;
@@ -39,7 +37,7 @@ public class MagicReplicateTrigger extends MagicWhenSpellIsCastTrigger {
             final MagicEvent event,
             final Object data[],
             final Object[] choiceResults) {
-        final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
+        final MagicCardOnStack cardOnStack = event.getCardOnStack();
         int kickerCount = (Integer)cardOnStack.getChoiceResults()[1];
         for (;kickerCount>0;kickerCount--) {
             game.doAction(new MagicCopyCardOnStackAction(
