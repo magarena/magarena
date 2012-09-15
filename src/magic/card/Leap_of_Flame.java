@@ -23,11 +23,9 @@ public class Leap_of_Flame {
                 final MagicCardOnStack cardOnStack,
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     new MagicKickerChoice(MagicTargetChoice.POS_TARGET_PERMANENT, MagicManaCost.BLUE_RED, true, true),
                     MagicFirstStrikeTargetPicker.create(),
-                    new Object[]{cardOnStack},
                     this,
                     "Target creature$ gets +1/+0 and gains flying" +
                     "and first strike until end of turn.");
@@ -38,7 +36,6 @@ public class Leap_of_Flame {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeTurnPTAction(creature,1,0));
