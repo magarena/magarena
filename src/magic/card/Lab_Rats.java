@@ -6,7 +6,7 @@ import magic.model.MagicLocationType;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPlayer;
-import magic.model.action.MagicMoveCardAction;
+import magic.model.action.MagicChangeCardDestinationAction;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.choice.MagicBuybackChoice;
 import magic.model.event.MagicEvent;
@@ -17,14 +17,11 @@ public class Lab_Rats {
     public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
+                    cardOnStack,
                     new MagicBuybackChoice(MagicManaCost.FOUR),
-                    new Object[]{cardOnStack},
                     this,
-                    player + " puts a 1/1 black Rat creature token onto the " +
+                    cardOnStack.getController() + " puts a 1/1 black Rat creature token onto the " +
                     "battlefield. If the buyback cost was payed$, " +
                     "return " + cardOnStack + " to its owner's hand as it resolves.");
         }
@@ -35,18 +32,12 @@ public class Lab_Rats {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
             game.doAction(new MagicPlayTokenAction(
                     event.getPlayer(),
                     TokenCardDefinitions.get("Rat1")));
             if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
-                game.doAction(new MagicMoveCardAction(
-                        cardOnStack.getCard(),
-                        MagicLocationType.Stack,
-                        MagicLocationType.OwnersHand));
-            } else {
-                game.doAction(new MagicMoveCardAction(cardOnStack));
-            }
+                game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
+            } 
         }
     };
 }
