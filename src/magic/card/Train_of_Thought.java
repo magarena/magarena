@@ -17,12 +17,9 @@ public class Train_of_Thought {
         public MagicEvent getEvent(
                 final MagicCardOnStack cardOnStack,
                 final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
+                    cardOnStack,
                     new MagicKickerChoice(MagicManaCost.ONE_BLUE, true, true),
-                    new Object[]{cardOnStack},
                     this,
                     "Draw a card.");
         }
@@ -32,7 +29,6 @@ public class Train_of_Thought {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             game.doAction(new MagicDrawAction(event.getPlayer(),1));
         }
     };
