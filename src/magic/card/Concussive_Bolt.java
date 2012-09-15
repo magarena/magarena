@@ -26,16 +26,12 @@ public class Concussive_Bolt {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
-            final MagicCard card = cardOnStack.getCard();
             return new MagicEvent(
-                    card,
-                    player,
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_PLAYER,
                     new MagicDamageTargetPicker(4),
-                    new Object[]{cardOnStack},
                     this,
-                    card + " deals 4 damage to target player$.");
+                    cardOnStack + " deals 4 damage to target player$.");
         }
         @Override
         public void executeEvent(
@@ -43,11 +39,9 @@ public class Concussive_Bolt {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));            
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer targetPlayer) {
-                    final MagicDamage damage = new MagicDamage(cardOnStack.getCard(),targetPlayer,4,false);
+                    final MagicDamage damage = new MagicDamage(event.getSource(),targetPlayer,4,false);
                     game.doAction(new MagicDealDamageAction(damage));
                     if (MagicCondition.METALCRAFT_CONDITION.accept(event.getSource())) {
                         final Collection<MagicTarget> targets =
