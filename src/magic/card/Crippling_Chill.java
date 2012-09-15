@@ -22,11 +22,9 @@ public class Crippling_Chill {
                 final MagicCardOnStack cardOnStack,
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     new MagicTapTargetPicker(true,false),
-                    new Object[]{cardOnStack},
                     this,
                     "Tap target creature$. It doesn't untap " +
                     "during its controller's next untap step.");
@@ -37,7 +35,6 @@ public class Crippling_Chill {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicTapAction(creature,true));
@@ -45,9 +42,9 @@ public class Crippling_Chill {
                             creature,
                             MagicPermanentState.DoesNotUntapDuringNext,
                             true));
+                    game.doAction(new MagicDrawAction(event.getPlayer(),1));
                 }
             });
-            game.doAction(new MagicDrawAction(event.getPlayer(),1));
         }
     };
 }
