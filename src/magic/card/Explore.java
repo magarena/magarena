@@ -14,13 +14,10 @@ public class Explore {
     public static final MagicSpellCardEvent EL=new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player=cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
-                    new Object[]{cardOnStack},
+                    cardOnStack,
                     this,
-                    player + " may play an additional land this turn.");
+                    cardOnStack.getController() + " may play an additional land this turn.");
         }
 
         @Override
@@ -29,7 +26,6 @@ public class Explore {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             game.doAction(new MagicChangeLandPlayedAction(-1));
             game.doAction(new MagicDrawAction(event.getPlayer(),1));
         }
