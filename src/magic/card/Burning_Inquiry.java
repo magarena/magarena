@@ -10,20 +10,12 @@ import magic.model.event.MagicDiscardEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 
-
 public class Burning_Inquiry {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
-        public MagicEvent getEvent(
-            final MagicCardOnStack cardOnStack,
-            final MagicPayedCost payedCost)
-        {
-            final MagicPlayer player = cardOnStack.getController();
-
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
-                cardOnStack.getCard(),
-                player,
-                new Object[]{cardOnStack},
+                cardOnStack,
                 this,
                 "Each player draw three cards then discard three cards."
             );
@@ -34,16 +26,14 @@ public class Burning_Inquiry {
             final MagicGame game,
             final MagicEvent event,
             final Object[] data,
-            final Object[] choiceResults)
-        {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-
-            game.doAction(new MagicMoveCardAction(cardOnStack));
-
+            final Object[] choiceResults) {
             for (final MagicPlayer player : game.getPlayers()) {
                 game.doAction(new MagicDrawAction(player, 3));
                 game.addEvent(new MagicDiscardEvent(
-                    cardOnStack.getCard(), player, 3, true));
+                            event.getSource(),
+                            player, 
+                            3, 
+                            true));
             }
         }
     };
