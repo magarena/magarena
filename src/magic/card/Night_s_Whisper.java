@@ -14,13 +14,10 @@ public class Night_s_Whisper {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
-                    new Object[]{cardOnStack},
+                    cardOnStack,
                     this,
-                    player + " draws two cards and loses 2 life.");
+                    cardOnStack.getController() + " draws two cards and loses 2 life.");
         }
         @Override
         public void executeEvent(
@@ -28,7 +25,6 @@ public class Night_s_Whisper {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicDrawAction(player,2));
             game.doAction(new MagicChangeLifeAction(player,-2));
