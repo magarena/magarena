@@ -21,9 +21,7 @@ public class Devastation_Tide {
                 final MagicCardOnStack cardOnStack,
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
-                    new Object[]{cardOnStack},
+                    cardOnStack,
                     this,
                     "Return all nonland permanents to their owners' hands.");
         }
@@ -33,10 +31,8 @@ public class Devastation_Tide {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));            
             final Collection<MagicTarget> targets = game.filterTargets(
-                    cardOnStack.getController(),
+                    event.getPlayer(),
                     MagicTargetFilter.TARGET_NONLAND_PERMANENT);
             for (final MagicTarget target : targets) {
                 game.doAction(new MagicRemoveFromPlayAction(
