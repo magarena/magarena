@@ -6,8 +6,9 @@ import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
+import magic.model.MagicLocationType;
 import magic.model.action.MagicChangeCountersAction;
-import magic.model.action.MagicShuffleIntoLibraryAction;
+import magic.model.action.MagicChangeCardDestinationAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
@@ -20,16 +21,13 @@ public class Black_Sun_s_Zenith {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player=cardOnStack.getController();
-            final MagicCard card=cardOnStack.getCard();
             final int amount=payedCost.getX();
             return new MagicEvent(
-                    card,
-                    player,
+                    cardOnStack,
                     new Object[]{amount},
                     this,
                     "Put "+amount+" -1/-1 counters on each creature. " + 
-                    "Shuffle " + card + " into its owner's library.");
+                    "Shuffle " + cardOnStack + " into its owner's library.");
         }
         @Override
         public void executeEvent(
@@ -45,7 +43,7 @@ public class Black_Sun_s_Zenith {
                             (MagicPermanent)target,
                             MagicCounterType.MinusOne,amount,true));
             }
-            game.doAction(new MagicShuffleIntoLibraryAction(event.getCard()));
+            game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(),MagicLocationType.OwnersLibrary));
         }
     };
 }
