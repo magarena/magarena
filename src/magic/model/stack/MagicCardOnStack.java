@@ -3,14 +3,18 @@ package magic.model.stack;
 import magic.model.MagicAbility;
 import magic.model.MagicGame;
 import magic.model.MagicCard;
+import magic.model.MagicSource;
 import magic.model.MagicCopyMap;
 import magic.model.MagicLocationType;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPlayer;
-import javax.swing.ImageIcon;
-import java.util.Arrays;
+import magic.model.event.MagicActivation;
 
-public class MagicCardOnStack extends MagicItemOnStack {
+import java.util.Arrays;
+import java.util.Collection;
+
+import javax.swing.ImageIcon;
+public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
 
     private MagicLocationType moveLocation=MagicLocationType.Graveyard;
     private int x=0;
@@ -83,5 +87,30 @@ public class MagicCardOnStack extends MagicItemOnStack {
     @Override
     public ImageIcon getIcon() {
         return getCard().getCardDefinition().getIcon();
+    }
+
+    @Override
+    public MagicGame getGame() {
+        return getSource().getGame();
+    }
+    
+    @Override
+    public Collection<MagicActivation> getActivations() {
+        return getSource().getActivations();
+    }
+    
+    @Override
+    public int getColorFlags() {
+        return getSource().getColorFlags();
+    }
+    
+    @Override
+    public boolean hasAbility(final MagicAbility ability) {
+        return getSource().hasAbility(ability);
+    }
+    
+    @Override
+    public boolean isCreature() {
+        return getSource().isCreature();
     }
 }
