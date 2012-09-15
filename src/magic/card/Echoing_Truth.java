@@ -21,11 +21,9 @@ public class Echoing_Truth {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_NONLAND_PERMANENT,
                     MagicBounceTargetPicker.getInstance(),
-                    new Object[]{cardOnStack},
                     this,
                     "Return target nonland permanent$ and all other " +
                     "permanents with the same name as that permanent " +
@@ -37,14 +35,12 @@ public class Echoing_Truth {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent targetPermanent) {
                     final MagicTargetFilter targetFilter = 
                         new MagicTargetFilter.NameTargetFilter(targetPermanent.getName());
                     final Collection<MagicTarget> targets = 
-                        game.filterTargets(cardOnStack.getController(),targetFilter);
+                        game.filterTargets(event.getPlayer(),targetFilter);
                     for (final MagicTarget target : targets) {
                         game.doAction(new MagicRemoveFromPlayAction(
                                 (MagicPermanent)target,
