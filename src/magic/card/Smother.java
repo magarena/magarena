@@ -19,11 +19,9 @@ public class Smother {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_CREATURE_CONVERTED_3_OR_LESS,
                     new MagicDestroyTargetPicker(true),
-                    new Object[]{cardOnStack},
                     this,
                     "Destroy target creature$ with converted mana cost 3 or less. It can't be regenerated.");
         }
@@ -33,7 +31,6 @@ public class Smother {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeStateAction(creature,MagicPermanentState.CannotBeRegenerated,true));
