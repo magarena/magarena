@@ -40,11 +40,11 @@ public class Brush_with_Death {
                 public void doAction(final MagicPlayer player) {
                     game.doAction(new MagicChangeLifeAction(player,-2));
                     game.doAction(new MagicChangeLifeAction(event.getPlayer(),2));
+                    if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
+                        game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
+                    } 
                 }
             });
-            if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
-                game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
-            } 
         }
     };
 }
