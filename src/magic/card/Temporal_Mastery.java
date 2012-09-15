@@ -5,6 +5,7 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicLocationType;
 import magic.model.action.MagicChangeExtraTurnsAction;
 import magic.model.action.MagicMoveCardAction;
+import magic.model.action.MagicChangeCardDestinationAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
@@ -14,9 +15,7 @@ public class Temporal_Mastery {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
-                    new Object[]{cardOnStack},
+                    cardOnStack,
                     this,
                     "Take an extra turn after this one. Exile " + cardOnStack.getCard());
         }
@@ -26,10 +25,8 @@ public class Temporal_Mastery {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            cardOnStack.setMoveLocation(MagicLocationType.Exile);
             game.doAction(new MagicChangeExtraTurnsAction(event.getPlayer(),1));
-            game.doAction(new MagicMoveCardAction(cardOnStack));
+            game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(),MagicLocationType.Exile));
         }
     };
 }
