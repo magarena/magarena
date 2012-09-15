@@ -49,11 +49,9 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
             @Override
             public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
                 return new MagicEvent(
-                        cardOnStack.getCard(),
-                        cardOnStack.getController(),
+                        cardOnStack,
                         choice,
                         (picker != null ? picker : MagicDefaultTargetPicker.create()),
-                        new Object[]{cardOnStack},
                         action,
                         effect + "$.");
             }

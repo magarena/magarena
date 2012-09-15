@@ -38,7 +38,7 @@ public class MagicEventActionFactory {
                     final MagicEvent event,
                     final Object[] data,
                     final Object[] choiceResults) {
-                game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
+                game.doAction(new MagicMoveCardAction(event.getCardOnStack()));
                 event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
                         game.doAction(new MagicDestroyAction(creature));
@@ -55,7 +55,7 @@ public class MagicEventActionFactory {
                     final MagicEvent event,
                     final Object[] data,
                     final Object[] choiceResults) {
-                game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
+                game.doAction(new MagicMoveCardAction(event.getCardOnStack()));
                 event.processTargetCardOnStack(game,choiceResults,0,new MagicCardOnStackAction() {
                     public void doAction(final MagicCardOnStack targetSpell) {
                         game.doAction(new MagicCounterItemOnStackAction(targetSpell));
@@ -72,7 +72,7 @@ public class MagicEventActionFactory {
                     final MagicEvent event,
                     final Object[] data,
                     final Object[] choiceResults) {
-                game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
+                game.doAction(new MagicMoveCardAction(event.getCardOnStack()));
                 event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent perm) {
                         game.doAction(new MagicRemoveFromPlayAction(perm,MagicLocationType.Exile));
