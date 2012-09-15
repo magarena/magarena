@@ -21,17 +21,13 @@ public class Burst_Lightning {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player=cardOnStack.getController();
-            final MagicCard card=cardOnStack.getCard();
             return new MagicEvent(
-                    card,
-                    player,
+                    cardOnStack,
                     new MagicKickerChoice(MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,MagicManaCost.FOUR,false),
                     new MagicDamageTargetPicker(2),
-                    new Object[]{cardOnStack},
                     this,
-                    card + " deals 2 damage to target creature or player$. "+
-                    "If " + card + " was kicked$, it deals 4 damage to that creature or player instead.");
+                    cardOnStack + " deals 2 damage to target creature or player$. "+
+                    "If " + cardOnStack + " was kicked$, it deals 4 damage to that creature or player instead.");
         }
         @Override
         public void executeEvent(
@@ -39,12 +35,10 @@ public class Burst_Lightning {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final int amount=((Integer)choiceResults[1])>0?4:2;
-                    final MagicDamage damage=new MagicDamage(cardOnStack.getCard(),target,amount,false);
+                    final MagicDamage damage=new MagicDamage(event.getSource(),target,amount,false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });
