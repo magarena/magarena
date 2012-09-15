@@ -907,6 +907,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return type.hasType(getTypeFlags());
     }
     
+    public boolean isBasic() {
+        return hasType(MagicType.Basic);
+    }
+    
     public boolean isLand() {
         return hasType(MagicType.Land);
     }
