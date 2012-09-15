@@ -20,17 +20,18 @@ public class MagicPlayCardEvent {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
-                    new Object[]{cardOnStack},
+                    cardOnStack,
                     this,
                     "Put " + cardOnStack.getName() + " onto the battlefield.");
         }
 
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choices) {
-            final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-            game.doAction(new MagicPlayCardFromStackAction(cardOnStack));
+        public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choices) {
+            game.doAction(new MagicPlayCardFromStackAction(event.getCardOnStack()));
         }
     };
 
@@ -38,13 +39,10 @@ public class MagicPlayCardEvent {
         return new MagicSpellCardEvent() {
             @Override
             public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-                final MagicPlayer player = cardOnStack.getController();
                 final MagicCard card = cardOnStack.getCard();
                 return new MagicEvent(
-                        card,
-                        player,
+                        cardOnStack,
                         new MagicKickerChoice(kickerCost,multi),
-                        new Object[]{cardOnStack},
                         this,
                         "$Play " + card + ". If " + card + " was kicked$, " + desc + ".");
             }
@@ -54,9 +52,8 @@ public class MagicPlayCardEvent {
                     final MagicEvent event,
                     final Object[] data,
                     final Object[] choiceResults) {
-                final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
                 final int kicker = (Integer)choiceResults[1];
-                game.doAction(new MagicPlayCardFromStackAction(cardOnStack, kicker));
+                game.doAction(new MagicPlayCardFromStackAction(event.getCardOnStack(), kicker));
             }
         };
     }
@@ -65,12 +62,10 @@ public class MagicPlayCardEvent {
         return new MagicSpellCardEvent() {
             @Override
             public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-                final MagicPlayer player = cardOnStack.getController();
                 final MagicCard card = cardOnStack.getCard();
                 return new MagicEvent(
-                        card,
-                        player,
-                        new Object[]{cardOnStack,payedCost.getX()},
+                        cardOnStack,
+                        new Object[]{payedCost.getX()},
                         this,
                         "$Play " + card + ". " + desc + ".");
             }
@@ -80,9 +75,8 @@ public class MagicPlayCardEvent {
                     final MagicEvent event,
                     final Object[] data,
                     final Object[] choiceResults) {
-                final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-                final int X = (Integer)data[1];
-                game.doAction(new MagicPlayCardFromStackAction(cardOnStack, X));
+                final int X = (Integer)data[0];
+                game.doAction(new MagicPlayCardFromStackAction(event.getCardOnStack(), X));
             }
         };
     }
