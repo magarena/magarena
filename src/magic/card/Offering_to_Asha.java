@@ -17,15 +17,12 @@ public class Offering_to_Asha {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player=cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_SPELL,
-                    new Object[]{cardOnStack},
                     this,
                     "Counter target spell$ unless its controller pays {4}. " +
-                    player + " gains 4 life.");
+                    cardOnStack.getController() + " gains 4 life.");
         }
         @Override
         public void executeEvent(
@@ -33,14 +30,12 @@ public class Offering_to_Asha {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(),4));
             event.processTargetCardOnStack(game,choiceResults,0,new MagicCardOnStackAction() {
                 public void doAction(final MagicCardOnStack targetSpell) {
-                    game.addEvent(new MagicCounterUnlessEvent(cardOnStack.getCard(),targetSpell,MagicManaCost.FOUR));
+                    game.addEvent(new MagicCounterUnlessEvent(event.getSource(),targetSpell,MagicManaCost.FOUR));
                 }
             });
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),4));
         }
     };
 }
