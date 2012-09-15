@@ -22,13 +22,10 @@ public class Slave_of_Bolas {
     public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player=cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     MagicExileTargetPicker.create(),
-                    new Object[]{cardOnStack},
                     this,
                     "Gain control of target creature$. Untap that creature. " + 
                     "It gains haste until end of turn. Sacrifice it at end of turn.");
@@ -39,7 +36,6 @@ public class Slave_of_Bolas {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicGainControlAction(event.getPlayer(),creature));
