@@ -16,13 +16,10 @@ public class Mass_Appeal {
         public MagicEvent getEvent(
                 final MagicCardOnStack cardOnStack,
                 final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
-                    new Object[]{cardOnStack},
+                    cardOnStack,
                     this,
-                    player + " draws a card for each Human he or she controls.");
+                    cardOnStack.getController() + " draws a card for each Human he or she controls.");
         }
         @Override
         public void executeEvent(
@@ -30,7 +27,6 @@ public class Mass_Appeal {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicDrawAction(
                     player,
