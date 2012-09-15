@@ -16,10 +16,8 @@ public class Time_Warp {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     MagicTargetChoice.POS_TARGET_PLAYER,                    
-                    new Object[]{cardOnStack},
                     this,
                     "Target player$ takes an extra turn after this one.");
         }
@@ -29,7 +27,6 @@ public class Time_Warp {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     game.doAction(new MagicChangeExtraTurnsAction(player,1));
