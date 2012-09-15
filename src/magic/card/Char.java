@@ -20,16 +20,12 @@ public class Char {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player=cardOnStack.getController();
-            final MagicCard card = cardOnStack.getCard();
             return new MagicEvent(
-                    card,
-                    player,
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(4),
-                    new Object[]{cardOnStack},
                     this,
-                    card + " deals 4 damage to target creature or player$ and 2 damage to you.");
+                    cardOnStack + " deals 4 damage to target creature or player$ and 2 damage to you.");
         }
         @Override
         public void executeEvent(
@@ -37,14 +33,11 @@ public class Char {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));
-            final MagicSource source=cardOnStack.getCard();
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
-                    final MagicDamage damage1=new MagicDamage(source,target,4,false);
+                    final MagicDamage damage1=new MagicDamage(event.getSource(),target,4,false);
                     game.doAction(new MagicDealDamageAction(damage1));
-                    final MagicDamage damage2=new MagicDamage(source,event.getPlayer(),2,false);
+                    final MagicDamage damage2=new MagicDamage(event.getSource(),event.getPlayer(),2,false);
                     game.doAction(new MagicDealDamageAction(damage2));
                 }
             });
