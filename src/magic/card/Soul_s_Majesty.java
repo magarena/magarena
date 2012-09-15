@@ -17,13 +17,10 @@ public class Soul_s_Majesty {
     public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player=cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
+                    cardOnStack,
                     MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
                     MagicPowerTargetPicker.getInstance(),
-                    new Object[]{cardOnStack},
                     this,
                     "Draw cards equal to the power of target creature$ you control.");
         }
@@ -33,7 +30,6 @@ public class Soul_s_Majesty {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicDrawAction(event.getPlayer(),creature.getPower()));
