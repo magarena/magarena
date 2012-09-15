@@ -20,17 +20,13 @@ public class Essence_Drain {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player=cardOnStack.getController();
-            final MagicCard card = cardOnStack.getCard();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
+                    cardOnStack,
                     MagicTargetChoice.TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(3),
-                    new Object[]{cardOnStack},
                     this,
-                    card + " deals 3 damage to target creature or player$ and " +
-                    player + " gains 3 life.");
+                    cardOnStack + " deals 3 damage to target creature or player$ and " +
+                    cardOnStack.getController() + " gains 3 life.");
         }
         @Override
         public void executeEvent(
@@ -38,7 +34,6 @@ public class Essence_Drain {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicDamage damage=new MagicDamage(event.getSource(),target,3,false);
