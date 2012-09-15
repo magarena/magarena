@@ -18,11 +18,8 @@ public class Wrap_in_Vigor {
     public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player=cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
-                    new Object[]{cardOnStack},
+                    cardOnStack,
                     this,
                     "Regenerate each creature you control.");
         }
@@ -33,14 +30,11 @@ public class Wrap_in_Vigor {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));            
             final Collection<MagicTarget> targets = 
                 game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicTarget target : targets) {
                 final MagicPermanent creature=(MagicPermanent)target;
-                if (creature.canRegenerate()) {
-                    game.doAction(new MagicRegenerateAction(creature));
-                }
+                game.doAction(new MagicRegenerateAction(creature));
             }
         }
     };
