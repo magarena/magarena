@@ -19,10 +19,8 @@ public class Silence {
                 final MagicCardOnStack cardOnStack,
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     MagicTargetChoice.TARGET_OPPONENT,
-                    new Object[]{cardOnStack},
                     this,
                     "Your opponent$ can't cast spells this turn.");
         }
@@ -32,7 +30,6 @@ public class Silence {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer opponent) {
                     game.doAction(new MagicChangePlayerStateAction(
