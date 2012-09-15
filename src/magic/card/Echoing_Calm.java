@@ -21,11 +21,9 @@ public class Echoing_Calm {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_ENCHANTMENT,
                     new MagicDestroyTargetPicker(false),
-                    new Object[]{cardOnStack},
                     this,
                     "Destroy target enchantment$ and all other enchantments " +
                     "with the same name as that enchantment.");
@@ -36,14 +34,12 @@ public class Echoing_Calm {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent targetPermanent) {
                     final MagicTargetFilter targetFilter = 
                         new MagicTargetFilter.NameTargetFilter(targetPermanent.getName());
                     final Collection<MagicTarget> targets = 
-                        game.filterTargets(cardOnStack.getController(),targetFilter);
+                        game.filterTargets(event.getPlayer(),targetFilter);
                     for (final MagicTarget target : targets) {
                         final MagicPermanent permanent = (MagicPermanent)target;
                         if (permanent.isEnchantment()) {
