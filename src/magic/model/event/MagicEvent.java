@@ -10,11 +10,13 @@ import magic.model.MagicMessage;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
+import magic.model.MagicLocationType;
 import magic.model.action.MagicCardAction;
 import magic.model.action.MagicCardOnStackAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicPlayerAction;
 import magic.model.action.MagicTargetAction;
+import magic.model.action.MagicMoveCardAction;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicPayManaCostResult;
 import magic.model.choice.MagicTargetChoice;
@@ -367,6 +369,10 @@ public class MagicEvent implements MagicCopyable {
     
     public final void executeEvent(final MagicGame game,final Object choiceResults[]) {
         action.executeEvent(game,this,data,choiceResults);
+        //move card to move location that is not play 
+        if (source instanceof MagicCardOnStack && getCardOnStack().getMoveLocation() != MagicLocationType.Play) {
+            game.doAction(new MagicMoveCardAction(getCardOnStack()));
+        }
     }
 
     public String toString() {

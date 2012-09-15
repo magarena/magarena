@@ -6,7 +6,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 import magic.model.action.MagicBecomesCreatureAction;
-import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
@@ -41,7 +40,6 @@ public class Diminish {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction(event.getCardOnStack()));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicBecomesCreatureAction(creature,PT));
