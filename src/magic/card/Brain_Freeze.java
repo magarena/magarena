@@ -18,10 +18,8 @@ public class Brain_Freeze {
                 final MagicCardOnStack cardOnStack,
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     MagicTargetChoice.TARGET_PLAYER,
-                    new Object[]{cardOnStack},
                     this,
                     "Target player$ puts the top three cards of his or her " +
                     "library into his or her graveyard.");
@@ -32,7 +30,6 @@ public class Brain_Freeze {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     game.doAction(new MagicMillLibraryAction(player,3));
