@@ -16,10 +16,8 @@ public class Stupor {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     MagicTargetChoice.TARGET_OPPONENT,
-                    new Object[]{cardOnStack},
                     this,
                     "Target opponent$ discards a card at random, then discards a card.");
         }
@@ -29,12 +27,10 @@ public class Stupor {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
-                    game.addEvent(new MagicDiscardEvent(cardOnStack.getCard(),player,1,true));
-                    game.addEvent(new MagicDiscardEvent(cardOnStack.getCard(),player,1,false));
+                    game.addEvent(new MagicDiscardEvent(event.getSource(),player,1,true));
+                    game.addEvent(new MagicDiscardEvent(event.getSource(),player,1,false));
                 }
             });
         }
