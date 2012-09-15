@@ -19,13 +19,10 @@ public class Archangel_s_Light {
         public MagicEvent getEvent(
                 final MagicCardOnStack cardOnStack,
                 final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
-                    new Object[]{cardOnStack},
+                    cardOnStack,
                     this,
-                    player + " gains 2 life for each card in his or her " +
+                    cardOnStack.getController() + " gains 2 life for each card in his or her " +
                     "graveyard, then shuffles his or her graveyard into " +
                     "his or her library.");
         }
@@ -47,7 +44,6 @@ public class Archangel_s_Light {
                         MagicLocationType.Graveyard,
                         MagicLocationType.OwnersLibrary));            
             }
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
         }
     };
 }
