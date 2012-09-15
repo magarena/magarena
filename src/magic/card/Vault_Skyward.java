@@ -19,11 +19,9 @@ public class Vault_Skyward {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     MagicTargetChoice.POS_TARGET_CREATURE,
                     MagicFlyingTargetPicker.create(),
-                    new Object[]{cardOnStack},
                     this,
                     "Target creature$ gains flying until end of turn. Untap it.");
         }
@@ -34,7 +32,6 @@ public class Vault_Skyward {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Flying));
