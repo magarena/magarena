@@ -38,11 +38,11 @@ public class Reiterate {
             event.processTargetCardOnStack(game,choiceResults,0,new MagicCardOnStackAction() {
                 public void doAction(final MagicCardOnStack targetSpell) {
                     game.doAction(new MagicCopyCardOnStackAction(event.getPlayer(),targetSpell));
+                    if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
+                        game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
+                    } 
                 }
             });
-            if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
-                game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
-            } 
         }
     };
 }
