@@ -21,13 +21,10 @@ public class Vapor_Snag {
         public MagicEvent getEvent(
                 final MagicCardOnStack cardOnStack,
                 final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
+                    cardOnStack,
                     MagicTargetChoice.TARGET_CREATURE,
                     MagicBounceTargetPicker.getInstance(),
-                    new Object[]{cardOnStack},
                     this,
                     "Return target creature$ to its owner's hand. " +
                     "Its controller loses 1 life.");
@@ -38,12 +35,9 @@ public class Vapor_Snag {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    game.doAction(new MagicRemoveFromPlayAction(
-                            creature,
-                            MagicLocationType.OwnersHand));
+                    game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.OwnersHand));
                     game.doAction(new MagicChangeLifeAction(creature.getController(),-1));
                 }
             });
