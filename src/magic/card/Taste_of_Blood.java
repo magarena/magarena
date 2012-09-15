@@ -19,17 +19,13 @@ public class Taste_of_Blood {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
-            final MagicCard card = cardOnStack.getCard();
             return new MagicEvent(
-                    card,
-                    player,
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_PLAYER,
                     new MagicDamageTargetPicker(1),
-                    new Object[]{cardOnStack},
                     this,
-                    card + " deals 1 damage to target player$ and " +
-                    player + " gains 1 life.");
+                    cardOnStack + " deals 1 damage to target player$ and " +
+                    cardOnStack.getController() + " gains 1 life.");
         }
         @Override
         public void executeEvent(
@@ -37,11 +33,9 @@ public class Taste_of_Blood {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));            
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
-                    final MagicDamage damage = new MagicDamage(cardOnStack.getCard(),player,1,false);
+                    final MagicDamage damage = new MagicDamage(event.getSource(),player,1,false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });
