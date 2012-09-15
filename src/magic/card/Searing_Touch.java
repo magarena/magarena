@@ -6,7 +6,7 @@ import magic.model.MagicLocationType;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.action.MagicDealDamageAction;
-import magic.model.action.MagicMoveCardAction;
+import magic.model.action.MagicChangeCardDestinationAction;
 import magic.model.action.MagicTargetAction;
 import magic.model.choice.MagicBuybackChoice;
 import magic.model.choice.MagicTargetChoice;
@@ -21,13 +21,11 @@ public class Searing_Touch {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     new MagicBuybackChoice(
                             MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                             MagicManaCost.FOUR),
                     new MagicDamageTargetPicker(1),
-                    new Object[]{cardOnStack},
                     this,
                     cardOnStack + " deals 1 damage to target creature " +
                     "or player$. If the buyback cost was payed$, " +
@@ -40,32 +38,19 @@ public class Searing_Touch {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            final boolean hasTarget = event.processTarget(
-                    game,
-                    choiceResults,
-                    0,
-                    new MagicTargetAction() {
+            event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicDamage damage = new MagicDamage(
-                            cardOnStack.getCard(),
+                            event.getSource(),
                             target,
                             1,
                             false);
                     game.doAction(new MagicDealDamageAction(damage));
                     if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
-                        game.doAction(new MagicMoveCardAction(
-                                cardOnStack.getCard(),
-                                MagicLocationType.Stack,
-                                MagicLocationType.OwnersHand));
-                    } else {
-                        game.doAction(new MagicMoveCardAction(cardOnStack));
-                    }
+                        game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
+                    } 
                 }
             });
-            if (!hasTarget) {
-                game.doAction(new MagicMoveCardAction(cardOnStack));
-            }
         }
     };
 }
