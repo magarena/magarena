@@ -18,13 +18,10 @@ public class Soul_s_Might {
     public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player=cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
+                    cardOnStack,
                     MagicTargetChoice.POS_TARGET_CREATURE,
                     MagicPowerTargetPicker.getInstance(),
-                    new Object[]{cardOnStack},
                     this,
                     "Put X +1/+1 counters on target creature$, where X is that creature's power.");
         }
@@ -34,7 +31,6 @@ public class Soul_s_Might {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeCountersAction(
