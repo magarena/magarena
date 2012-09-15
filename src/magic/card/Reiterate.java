@@ -7,7 +7,7 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicCardOnStackAction;
 import magic.model.action.MagicCopyCardOnStackAction;
-import magic.model.action.MagicMoveCardAction;
+import magic.model.action.MagicChangeCardDestinationAction;
 import magic.model.choice.MagicBuybackChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
@@ -19,12 +19,10 @@ public class Reiterate {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     new MagicBuybackChoice(
                             MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_SPELL,
                             MagicManaCost.THREE),
-                    new Object[]{cardOnStack},
                     this,
                     "Copy target instant or sorcery spell$. You may choose " +
                     "new targets for the copy. If the buyback cost was payed$, " +
@@ -37,27 +35,14 @@ public class Reiterate {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            final boolean hasTarget = event.processTargetCardOnStack(
-                    game,
-                    choiceResults,
-                    0,
-                    new MagicCardOnStackAction() {
+            event.processTargetCardOnStack(game,choiceResults,0,new MagicCardOnStackAction() {
                 public void doAction(final MagicCardOnStack targetSpell) {
                     game.doAction(new MagicCopyCardOnStackAction(event.getPlayer(),targetSpell));
-                    if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
-                        game.doAction(new MagicMoveCardAction(
-                                cardOnStack.getCard(),
-                                MagicLocationType.Stack,
-                                MagicLocationType.OwnersHand));
-                    } else {
-                        game.doAction(new MagicMoveCardAction(cardOnStack));
-                    }
                 }
             });
-            if (!hasTarget) {
-                game.doAction(new MagicMoveCardAction(cardOnStack));
-            }
+            if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
+                game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
+            } 
         }
     };
 }
