@@ -16,11 +16,8 @@ public class Make_a_Wish {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
-                    new Object[]{cardOnStack},
+                    cardOnStack,
                     this,
                     "Return two cards at random from your graveyard to your hand.");
         }
@@ -30,19 +27,16 @@ public class Make_a_Wish {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
             final MagicPlayer player = event.getPlayer();
             final MagicCardList cards = player.getGraveyard();
+            final magic.MersenneTwisterFast rng = new magic.MersenneTwisterFast(cards.getCardsId());
             int actualAmount = Math.min(cards.size(),2);
             for (;actualAmount>0;actualAmount--) {
-                final magic.MersenneTwisterFast rng = 
-                        new magic.MersenneTwisterFast(cardOnStack.getId() + player.getId());
                 final int index = rng.nextInt(cards.size());
                 final MagicCard card = cards.get(index);
                 game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
                 game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
             }
-            game.doAction(new MagicMoveCardAction(cardOnStack));
         }
     };
 }
