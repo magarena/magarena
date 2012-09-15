@@ -19,11 +19,9 @@ public class Rush_of_Blood {
                 final MagicCardOnStack cardOnStack,
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     MagicTargetChoice.POS_TARGET_CREATURE,
                     MagicPumpTargetPicker.create(),
-                    new Object[]{cardOnStack},
                     this,
                     "Target creature$ gets +X/+0 until " +
                     "end of turn, where X is its power.");
@@ -34,7 +32,6 @@ public class Rush_of_Blood {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                             game.doAction(new MagicChangeTurnPTAction(
