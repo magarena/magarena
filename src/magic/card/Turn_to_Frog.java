@@ -53,11 +53,9 @@ public class Turn_to_Frog {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     MagicTargetChoice.TARGET_CREATURE,
                     new MagicBecomeTargetPicker(1,1,false),
-                    new Object[]{cardOnStack},
                     this,
                     "Target creature$ loses all abilities " +
                     "and becomes a 1/1 blue Frog until end of turn.");
@@ -68,7 +66,6 @@ public class Turn_to_Frog {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeStateAction(creature,MagicPermanentState.LosesAllAbilities,true));
