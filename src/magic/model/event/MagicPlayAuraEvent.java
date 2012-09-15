@@ -29,11 +29,9 @@ public class MagicPlayAuraEvent extends MagicSpellCardEvent {
     @Override
     public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
         return new MagicEvent(
-                cardOnStack.getCard(),
-                cardOnStack.getController(),
+                cardOnStack,
                 targetChoice,
                 targetPicker,
-                new Object[]{cardOnStack},
                 this,
                 "Enchant "+targetChoice.getTargetDescription()+"$ with "+cardOnStack.getName()+".");
     }
@@ -44,7 +42,7 @@ public class MagicPlayAuraEvent extends MagicSpellCardEvent {
             final MagicEvent event,
             final Object[] data,
             final Object[] choiceResults) {
-        final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
+        final MagicCardOnStack cardOnStack = event.getCardOnStack();
         final boolean success = event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
             public void doAction(final MagicPermanent creature) {
                 game.doAction(new MagicPlayCardFromStackAction(cardOnStack,creature));

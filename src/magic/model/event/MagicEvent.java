@@ -93,6 +93,15 @@ public class MagicEvent implements MagicCopyable {
             final String description) {
         this(source,player,choice,targetPicker,NO_DATA,action,description);
     }
+    
+    public MagicEvent(
+            final MagicSource source,
+            final MagicChoice choice,
+            final MagicTargetPicker targetPicker,
+            final MagicEventAction action,
+            final String description) {
+        this(source,source.getController(),choice,targetPicker,NO_DATA,action,description);
+    }
 
     public MagicEvent(
             final MagicSource source,
