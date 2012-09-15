@@ -17,13 +17,10 @@ public class Gather_the_Townsfolk {
         public MagicEvent getEvent(
                 final MagicCardOnStack cardOnStack,
                 final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
-                    new Object[]{cardOnStack},
+                    cardOnStack,
                     this,
-                    player + " puts two 1/1 white Human " +
+                    cardOnStack.getController() + " puts two 1/1 white Human " +
                     "creature tokens onto the battlefield.");
         }
         @Override
@@ -32,7 +29,6 @@ public class Gather_the_Townsfolk {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             int amount = MagicCondition.FATEFUL_HOUR.accept(event.getSource()) ? 5 : 2;
             for (;amount>0;amount--) {
                 game.doAction(new MagicPlayTokenAction(
