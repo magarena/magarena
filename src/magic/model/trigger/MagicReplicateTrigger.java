@@ -27,7 +27,7 @@ public class MagicReplicateTrigger extends MagicWhenSpellIsCastTrigger {
             new MagicEvent(
                 cardOnStack,
                 this,
-                "Copy " + cardOnStack.getSource() + " for each time its replicate cost was paid.") :
+                "Copy " + cardOnStack + " for each time its replicate cost was paid.") :
             MagicEvent.NONE;
     }
     
