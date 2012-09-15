@@ -18,13 +18,10 @@ public class Zombify {
     public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player=cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
+                    cardOnStack,
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
                     new MagicGraveyardTargetPicker(true),
-                    new Object[]{cardOnStack},
                     this,
                     "Return target creature card$ from your graveyard to the battlefield.");
         }
@@ -35,7 +32,6 @@ public class Zombify {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard targetCard) {
                     game.doAction(new MagicReanimateAction(event.getPlayer(),targetCard,MagicPlayCardAction.NONE));
