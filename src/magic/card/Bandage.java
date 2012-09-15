@@ -18,13 +18,10 @@ public class Bandage {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
+                    cardOnStack,
                     MagicTargetChoice.POS_TARGET_CREATURE_OR_PLAYER,
                     MagicPreventTargetPicker.getInstance(),
-                    new Object[]{cardOnStack},
                     this,
                     "Prevent the next 1 damage that would be dealt to target " +
                     "creature or player$ this turn. Draw a card.");
@@ -36,13 +33,12 @@ public class Bandage {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     game.doAction(new MagicPreventDamageAction(target,1));
+                    game.doAction(new MagicDrawAction(event.getPlayer(),1));
                 }
             });
-            game.doAction(new MagicDrawAction(event.getPlayer(),1));
         }
     };
 }
