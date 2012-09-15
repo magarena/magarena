@@ -20,13 +20,11 @@ public class Shattering_Pulse {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     new MagicBuybackChoice(
                             MagicTargetChoice.TARGET_ARTIFACT,
                             MagicManaCost.THREE),
                     new MagicDestroyTargetPicker(false),
-                    new Object[]{cardOnStack},
                     this,
                     "Destroy target artifact$. If the buyback cost was payed$, " +
                     "return " + cardOnStack + " to its owner's hand as it resolves.");
@@ -38,7 +36,7 @@ public class Shattering_Pulse {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
+            final MagicCardOnStack cardOnStack = event.getCardOnStack();
             final boolean hasTarget = event.processTargetPermanent(
                     game,
                     choiceResults,
