@@ -19,18 +19,15 @@ public class Terror {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_NONARTIFACT_NONBLACK_CREATURE,
                     new MagicDestroyTargetPicker(true),
-                    new Object[]{cardOnStack},
                     this,
                     "Destroy target nonartifact, nonblack creature$. It can't be regenerated.");
         }
 
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeStateAction(creature,MagicPermanentState.CannotBeRegenerated,true));
@@ -39,5 +36,4 @@ public class Terror {
             });
         }
     };
-
 }

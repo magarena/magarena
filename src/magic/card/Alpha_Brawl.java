@@ -22,13 +22,10 @@ public class Alpha_Brawl {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
+                    cardOnStack,
                     MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
                     MagicPowerTargetPicker.getInstance(),
-                    new Object[]{cardOnStack},
                     this,
                     "Target creature$ an opponent controls deals damage equal to " +
                     "its power to each other creature that player controls, then " +
@@ -41,7 +38,6 @@ public class Alpha_Brawl {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 final MagicPlayer player = event.getPlayer();
                 public void doAction(final MagicPermanent permanent) {
@@ -68,5 +64,4 @@ public class Alpha_Brawl {
             });
         }
     };
-
 }

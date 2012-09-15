@@ -19,16 +19,13 @@ public class Reanimate {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player=cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
+                    cardOnStack,
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS,
                     new MagicGraveyardTargetPicker(false), // no mana cost but payed with life
-                    new Object[]{cardOnStack},
                     this,
                     "Put target creature card$ from a graveyard onto the battlefield under your control. " +
-                            player + " loses life equal to its converted mana cost.");
+                    cardOnStack.getController() + " loses life equal to its converted mana cost.");
         }
 
         @Override
@@ -37,7 +34,6 @@ public class Reanimate {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard targetCard) {
                     final MagicPlayer player=event.getPlayer();

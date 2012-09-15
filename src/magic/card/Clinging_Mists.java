@@ -8,6 +8,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
 import magic.model.MagicPlayerState;
+import magic.model.condition.MagicCondition;
 import magic.model.action.MagicChangePlayerStateAction;
 import magic.model.action.MagicChangeStateAction;
 import magic.model.action.MagicMoveCardAction;
@@ -24,11 +25,8 @@ public class Clinging_Mists {
         public MagicEvent getEvent(
                 final MagicCardOnStack cardOnStack,
                 final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
-                    new Object[]{cardOnStack},
+                    cardOnStack,
                     this,
                     "Prevent all combat damage that would be dealt this turn.");
         }
@@ -38,9 +36,7 @@ public class Clinging_Mists {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));
-            final MagicPlayer player = cardOnStack.getController();
+            final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicChangePlayerStateAction(
                     player,
                     MagicPlayerState.PreventAllCombatDamage,
@@ -49,7 +45,7 @@ public class Clinging_Mists {
                     player.getOpponent(),
                     MagicPlayerState.PreventAllCombatDamage,
                     true));
-            if (player.getLife() <= 5) {
+            if (MagicCondition.FATEFUL_HOUR.accept(event.getSource())) {
                 final Collection<MagicTarget> targets =
                         game.filterTargets(player,MagicTargetFilter.TARGET_ATTACKING_CREATURE);
                 for (final MagicTarget target : targets) {
