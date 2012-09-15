@@ -115,6 +115,14 @@ public class MagicEvent implements MagicCopyable {
     
     public MagicEvent(
             final MagicSource source,
+            final MagicChoice choice,
+            final MagicEventAction action,
+            final String description) {
+        this(source,source.getController(),choice,MagicDefaultTargetPicker.create(),NO_DATA,action,description);
+    }
+    
+    public MagicEvent(
+            final MagicSource source,
             final MagicPlayer player,
             final Object data[],
             final MagicEventAction action,
@@ -124,10 +132,25 @@ public class MagicEvent implements MagicCopyable {
     
     public MagicEvent(
             final MagicSource source,
+            final Object data[],
+            final MagicEventAction action,
+            final String description) {
+        this(source,source.getController(),NO_CHOICES,MagicDefaultTargetPicker.create(),data,action,description);
+    }
+    
+    public MagicEvent(
+            final MagicSource source,
             final MagicPlayer player,
             final MagicEventAction action,
             final String description) {
         this(source,player,NO_CHOICES,MagicDefaultTargetPicker.create(),NO_DATA,action,description);
+    }
+    
+    public MagicEvent(
+            final MagicSource source,
+            final MagicEventAction action,
+            final String description) {
+        this(source,source.getController(),NO_CHOICES,MagicDefaultTargetPicker.create(),NO_DATA,action,description);
     }
     
     private MagicEvent(final MagicCopyMap copyMap, final MagicEvent sourceEvent) {
@@ -161,6 +184,10 @@ public class MagicEvent implements MagicCopyable {
     
     public final MagicCard getCard() {
         return (MagicCard)source;
+    }
+    
+    public final MagicCardOnStack getCardOnStack() {
+        return (MagicCardOnStack)source;
     }
     
     public final MagicPlayer getPlayer() {
