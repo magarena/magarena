@@ -13,9 +13,7 @@ public class Time_Walk {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
-                    new Object[]{cardOnStack},
+                    cardOnStack,
                     this,
                     "Take an extra turn after this one.");
         }
@@ -25,7 +23,6 @@ public class Time_Walk {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             game.doAction(new MagicChangeExtraTurnsAction(event.getPlayer(),1));
         }
     };
