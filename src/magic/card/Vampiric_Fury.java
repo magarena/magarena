@@ -22,13 +22,10 @@ public class Vampiric_Fury {
         public MagicEvent getEvent(
                 final MagicCardOnStack cardOnStack,
                 final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
-                    new Object[]{cardOnStack},
+                    cardOnStack,
                     this,
-                    "Vampire creatures " + player + " controls get +2/+0 " +
+                    "Vampire creatures " + cardOnStack.getController() + " controls get +2/+0 " +
                     "and gain first strike until end of turn.");
         }
         @Override
@@ -37,7 +34,6 @@ public class Vampiric_Fury {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             final Collection<MagicTarget> targets = game.filterTargets(
                     event.getPlayer(),
                     MagicTargetFilter.TARGET_VAMPIRE_YOU_CONTROL);
