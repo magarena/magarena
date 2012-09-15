@@ -17,12 +17,8 @@ public class Timely_Reinforcements {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
-            final MagicCard card = cardOnStack.getCard();
             return new MagicEvent(
-                    card,
-                    player,
-                    new Object[]{cardOnStack},
+                    cardOnStack,
                     this,
                     "If you have less life than an opponent, you gain 6 life. " +
                     "If you control fewer creatures than an opponent, " +
@@ -34,14 +30,12 @@ public class Timely_Reinforcements {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));        
             final MagicPlayer player = event.getPlayer();
             if (player.getLife() < player.getOpponent().getLife()) {
                 game.doAction(new MagicChangeLifeAction(player,6));
             }    
             if (player.getNrOfPermanentsWithType(MagicType.Creature) < 
-                    player.getOpponent().getNrOfPermanentsWithType(MagicType.Creature)) {
+                player.getOpponent().getNrOfPermanentsWithType(MagicType.Creature)) {
                 for (int count = 3; count > 0; count--) {
                     game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Soldier")));
                 }
