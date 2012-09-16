@@ -17,12 +17,9 @@ public class Remand {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player=cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_SPELL,
-                    new Object[]{cardOnStack},
                     this,
                     "Counter target spell$. If you do, return that spell card to its owner's hand. Draw a card.");
         }
@@ -32,13 +29,12 @@ public class Remand {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetCardOnStack(game,choiceResults,0,new MagicCardOnStackAction() {
                 public void doAction(final MagicCardOnStack targetSpell) {
                     game.doAction(new MagicCounterItemOnStackAction(targetSpell,MagicLocationType.OwnersHand));
+                    game.doAction(new MagicDrawAction(event.getPlayer(),1));
                 }
             });
-            game.doAction(new MagicDrawAction(event.getPlayer(),1));
         }
     };
 }
