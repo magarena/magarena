@@ -20,7 +20,7 @@ public class Gather_the_Townsfolk {
             return new MagicEvent(
                     cardOnStack,
                     this,
-                    cardOnStack.getController() + " puts two 1/1 white Human " +
+                    "PN puts two 1/1 white Human " +
                     "creature tokens onto the battlefield.");
         }
         @Override

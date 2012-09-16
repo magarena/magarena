@@ -18,8 +18,8 @@ public class Pulse_of_the_Fields {
             return new MagicEvent(
                     cardOnStack,
                     this,
-                    cardOnStack.getController() + " gains 4 life. Then if your opponent " +
-                    "has more life than you, return " + cardOnStack + " to its owner's hand.");
+                    "PN gains 4 life. Then if your opponent " +
+                    "has more life than you, return SN to its owner's hand.");
         }
         @Override
         public void executeEvent(

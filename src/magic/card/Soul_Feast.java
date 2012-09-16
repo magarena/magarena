@@ -20,7 +20,7 @@ public class Soul_Feast {
                     MagicTargetChoice.NEG_TARGET_PLAYER,
                     this,
                     "Target player$ loses 4 life and " +
-                    cardOnStack.getController() + " gains 4 life.");
+                    "PN gains 4 life.");
         }
         @Override
         public void executeEvent(

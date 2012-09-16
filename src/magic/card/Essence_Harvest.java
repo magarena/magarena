@@ -25,7 +25,7 @@ public class Essence_Harvest {
                     MagicTargetChoice.NEG_TARGET_PLAYER,
                     this,
                     "Target player$ loses X life and you gain X life, where " +
-                    "X is the greatest power among creatures " + cardOnStack.getController() + " controls.");
+                    "X is the greatest power among creatures PN controls.");
         }
         @Override
         public void executeEvent(

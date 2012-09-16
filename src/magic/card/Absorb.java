@@ -20,7 +20,7 @@ public class Absorb {
                     cardOnStack,
                     MagicTargetChoice.NEG_TARGET_SPELL,
                     this,
-                    "Counter target spell$. " + cardOnStack.getController() + " gains 3 life.");
+                    "Counter target spell$. PN gains 3 life.");
         }
         @Override
         public void executeEvent(

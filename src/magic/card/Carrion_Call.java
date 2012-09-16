@@ -17,7 +17,7 @@ public class Carrion_Call {
             return new MagicEvent(
                     cardOnStack,
                     this,
-                    cardOnStack.getController() + " puts two 1/1 green Insect creature tokens with infect onto the battlefield");
+                    "PN puts two 1/1 green Insect creature tokens with infect onto the battlefield");
         }
         @Override
         public void executeEvent(

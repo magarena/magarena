@@ -19,7 +19,7 @@ public class Mass_Appeal {
             return new MagicEvent(
                     cardOnStack,
                     this,
-                    cardOnStack.getController() + " draws a card for each Human he or she controls.");
+                    "PN draws a card for each Human he or she controls.");
         }
         @Override
         public void executeEvent(

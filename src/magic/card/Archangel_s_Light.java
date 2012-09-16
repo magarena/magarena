@@ -22,7 +22,7 @@ public class Archangel_s_Light {
             return new MagicEvent(
                     cardOnStack,
                     this,
-                    cardOnStack.getController() + " gains 2 life for each card in his or her " +
+                    "PN gains 2 life for each card in his or her " +
                     "graveyard, then shuffles his or her graveyard into " +
                     "his or her library.");
         }

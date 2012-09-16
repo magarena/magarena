@@ -23,7 +23,7 @@ public class Bar_the_Door {
             return new MagicEvent(
                     cardOnStack,
                     this,
-                    "Creatures " + cardOnStack.getController() + " controls get +0/+4 until end of turn.");
+                    "Creatures PN controls get +0/+4 until end of turn.");
         }
         @Override
         public void executeEvent(

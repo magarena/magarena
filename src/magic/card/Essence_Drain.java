@@ -25,8 +25,8 @@ public class Essence_Drain {
                     MagicTargetChoice.TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(3),
                     this,
-                    cardOnStack + " deals 3 damage to target creature or player$ and " +
-                    cardOnStack.getController() + " gains 3 life.");
+                    "SN deals 3 damage to target creature or player$ and " +
+                    "PN gains 3 life.");
         }
         @Override
         public void executeEvent(

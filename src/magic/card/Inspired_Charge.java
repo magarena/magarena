@@ -21,7 +21,7 @@ public class Inspired_Charge {
             return new MagicEvent(
                     cardOnStack,
                     this,
-                    "Creatures " + cardOnStack.getController() + " controls get +2/+1 until end of turn.");
+                    "Creatures PN controls get +2/+1 until end of turn.");
         }
         @Override
         public void executeEvent(

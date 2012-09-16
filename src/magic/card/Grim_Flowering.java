@@ -17,7 +17,7 @@ public class Grim_Flowering {
             return new MagicEvent(
                     cardOnStack,
                     this,
-                    cardOnStack.getController() + " draws a card for each creature " +
+                    "PN draws a card for each creature " +
                     "card in his or her graveyard.");
         }
         @Override

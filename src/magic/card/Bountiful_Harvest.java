@@ -17,7 +17,7 @@ public class Bountiful_Harvest {
             return new MagicEvent(
                     cardOnStack,
                     this,
-                    cardOnStack.getController() + " gains 1 life for each land you control.");
+                    "PN gains 1 life for each land you control.");
         }
         @Override
         public void executeEvent(

@@ -25,8 +25,8 @@ public class Douse_in_Gloom {
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     new MagicDamageTargetPicker(2),
                     this,
-                    cardOnStack + " deals 2 damage to target creature$ and " +
-                    cardOnStack.getController() + " gains 2 life.");
+                    "SN deals 2 damage to target creature$ and " +
+                    "PN gains 2 life.");
         }
         @Override
         public void executeEvent(

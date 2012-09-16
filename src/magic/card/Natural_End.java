@@ -26,7 +26,7 @@ public class Natural_End {
                     new MagicDestroyTargetPicker(false),
                     this,
                     "Destroy target artifact or enchantment$. " +
-                    cardOnStack.getController() + " gains 3 life.");
+                    "PN gains 3 life.");
         }
         @Override
         public void executeEvent(

@@ -17,7 +17,7 @@ public class Reviving_Dose {
             return new MagicEvent(
                     cardOnStack,
                     this,
-                    cardOnStack.getController() + " gains 3 life and draws a card.");
+                    "PN gains 3 life and draws a card.");
         }
         @Override
         public void executeEvent(

@@ -17,7 +17,7 @@ public class Midnight_Haunting {
             return new MagicEvent(
                     cardOnStack,
                     this,
-                    cardOnStack.getController() + " puts two 1/1 white Spirit creature " +
+                    "PN puts two 1/1 white Spirit creature " +
                     "tokens with flying onto the battlefield.");
         }
         @Override

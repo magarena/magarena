@@ -21,8 +21,8 @@ public class Whispers_of_the_Muse {
                     cardOnStack,
                     new MagicBuybackChoice(MagicManaCost.FIVE),
                     this,
-                    cardOnStack.getController() + " $draws a card. If the buyback cost was payed$, " +
-                    "return " + cardOnStack + " to its owner's hand as it resolves.");
+                    "PN draws a card. If the buyback cost was payed$, " +
+                    "return SN to its owner's hand as it resolves.");
         }
         @Override
         public void executeEvent(

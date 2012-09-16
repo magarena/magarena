@@ -17,7 +17,7 @@ public class Night_s_Whisper {
             return new MagicEvent(
                     cardOnStack,
                     this,
-                    cardOnStack.getController() + " draws two cards and loses 2 life.");
+                    "PN draws two cards and loses 2 life.");
         }
         @Override
         public void executeEvent(

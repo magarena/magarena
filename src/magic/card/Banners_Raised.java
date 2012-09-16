@@ -23,7 +23,7 @@ public class Banners_Raised {
             return new MagicEvent(
                     cardOnStack,
                     this,
-                    "Creatures " + cardOnStack.getController() + " controls get +1/+0 until end of turn.");
+                    "Creatures PN controls get +1/+0 until end of turn.");
         }
         @Override
         public void executeEvent(

@@ -21,9 +21,9 @@ public class Lab_Rats {
                     cardOnStack,
                     new MagicBuybackChoice(MagicManaCost.FOUR),
                     this,
-                    cardOnStack.getController() + " puts a 1/1 black Rat creature token onto the " +
+                    "PN puts a 1/1 black Rat creature token onto the " +
                     "battlefield. If the buyback cost was payed$, " +
-                    "return " + cardOnStack + " to its owner's hand as it resolves.");
+                    "return SN to its owner's hand as it resolves.");
         }
 
         @Override

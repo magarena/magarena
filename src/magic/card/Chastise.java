@@ -24,7 +24,7 @@ public class Chastise {
                     new MagicDestroyTargetPicker(false),
                     this,
                     "Destroy target attacking creature$. " + 
-                    cardOnStack.getController() + " gains life equal to its power.");
+                    "PN gains life equal to its power.");
         }
         @Override
         public void executeEvent(

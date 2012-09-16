@@ -22,7 +22,7 @@ public class Burst_of_Speed {
             return new MagicEvent(
                     cardOnStack,
                     this,
-                    "Creatures " + cardOnStack.getController() + " controls gain haste until end of turn.");
+                    "Creatures PN controls gain haste until end of turn.");
         }
 
         @Override

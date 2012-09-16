@@ -21,7 +21,7 @@ public class Guardians__Pledge {
             return new MagicEvent(
                     cardOnStack,
                     this,
-                    "White creatures " + cardOnStack.getController() + " controls get +2/+2 until end of turn.");
+                    "White creatures PN controls get +2/+2 until end of turn.");
         }
         @Override
         public void executeEvent(

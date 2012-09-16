@@ -25,7 +25,7 @@ public class Cursebreak {
                     new MagicDestroyTargetPicker(false),
                     this,
                     "Destroy target enchantment$. " +
-                    cardOnStack.getController() + " gains 2 life.");
+                    "PN gains 2 life.");
         }
         @Override
         public void executeEvent(

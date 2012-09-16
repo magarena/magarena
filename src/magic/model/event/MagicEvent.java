@@ -251,7 +251,7 @@ public class MagicEvent implements MagicCopyable {
     
     public final String getDescription(final Object choiceResults[]) {
         final String withChoices = MagicMessage.replaceChoices(description,choiceResults);
-        final String withName = MagicMessage.replaceYou(withChoices,player.getName());
+        final String withName = MagicMessage.replaceName(withChoices,this);
         return withName; 
     }
 

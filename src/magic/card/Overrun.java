@@ -23,8 +23,7 @@ public class Overrun {
             return new MagicEvent(
                     cardOnStack,
                     this,
-                    "Creatures " + cardOnStack.getController() +
-                    " controls get +3/+3 and gain trample until end of turn.");
+                    "Creatures PN controls get +3/+3 and gain trample until end of turn.");
         }
         @Override
         public void executeEvent(

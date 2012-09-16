@@ -22,7 +22,7 @@ public class Offering_to_Asha {
                     MagicTargetChoice.NEG_TARGET_SPELL,
                     this,
                     "Counter target spell$ unless its controller pays {4}. " +
-                    cardOnStack.getController() + " gains 4 life.");
+                    "PN gains 4 life.");
         }
         @Override
         public void executeEvent(

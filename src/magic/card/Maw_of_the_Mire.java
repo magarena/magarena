@@ -23,7 +23,7 @@ public class Maw_of_the_Mire {
                     MagicTargetChoice.NEG_TARGET_LAND,
                     new MagicDestroyTargetPicker(false),
                     this,
-                    "Destroy target land$. " + cardOnStack.getController() + " gains 4 life.");
+                    "Destroy target land$. PN gains 4 life.");
         }
 
         @Override

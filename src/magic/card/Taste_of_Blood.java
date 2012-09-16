@@ -24,8 +24,8 @@ public class Taste_of_Blood {
                     MagicTargetChoice.NEG_TARGET_PLAYER,
                     new MagicDamageTargetPicker(1),
                     this,
-                    cardOnStack + " deals 1 damage to target player$ and " +
-                    cardOnStack.getController() + " gains 1 life.");
+                    "SN deals 1 damage to target player$ and " +
+                    "PN gains 1 life.");
         }
         @Override
         public void executeEvent(

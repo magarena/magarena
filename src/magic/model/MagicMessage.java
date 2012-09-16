@@ -1,6 +1,7 @@
 package magic.model;
 
 import magic.model.phase.MagicPhaseType;
+import magic.model.event.MagicEvent;
 
 import java.util.Collection;
 import java.util.Iterator;
@@ -61,8 +62,10 @@ public class MagicMessage {
         }
     }
     
-    public static String replaceYou(final String sourceText,final String pname) {
-        return sourceText.replaceAll("PN", pname);
+    public static String replaceName(final String sourceText,final MagicEvent event) {
+        return sourceText
+            .replaceAll("PN", event.getPlayer().toString())
+            .replaceAll("SN", event.getSource().toString());
     }
     
     public static String replaceChoices(final String sourceText,final Object choices[]) {

@@ -25,7 +25,7 @@ public class Vampiric_Fury {
             return new MagicEvent(
                     cardOnStack,
                     this,
-                    "Vampire creatures " + cardOnStack.getController() + " controls get +2/+0 " +
+                    "Vampire creatures PN controls get +2/+0 " +
                     "and gain first strike until end of turn.");
         }
         @Override

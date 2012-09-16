@@ -17,7 +17,7 @@ public class Explore {
             return new MagicEvent(
                     cardOnStack,
                     this,
-                    cardOnStack.getController() + " may play an additional land this turn.");
+                    "PN may play an additional land this turn.");
         }
 
         @Override

@@ -22,7 +22,7 @@ public class Hideous_Visage {
             return new MagicEvent(
                     cardOnStack,
                     this,
-                    "Creatures " + cardOnStack.getController() + " controls gain intimidate until end of turn.");
+                    "Creatures PN controls gain intimidate until end of turn.");
         }
 
         @Override

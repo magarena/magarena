@@ -21,8 +21,8 @@ public class Paraselene {
             return new MagicEvent(
                     cardOnStack,
                     this,
-                    "Destroy all enchantments. " + cardOnStack.getController() +
-                    " gains 1 life for each enchantment destroyed this way.");
+                    "Destroy all enchantments. " +
+                    "PN gains 1 life for each enchantment destroyed this way.");
         }
         @Override
         public void executeEvent(

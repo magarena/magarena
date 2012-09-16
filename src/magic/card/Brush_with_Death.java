@@ -24,9 +24,8 @@ public class Brush_with_Death {
                             MagicTargetChoice.TARGET_OPPONENT,
                             MagicManaCost.TWO_BLACK_BLACK),
                     this,
-                    "Target opponent$ loses 2 life and " + cardOnStack.getController() + " gains " +
-                    "2 life. If the buyback cost was payed$, return " +
-                    cardOnStack + " to its owner's hand as it resolves.");
+                    "Target opponent$ loses 2 life and PN gains 2 life. " + 
+                    "If the buyback cost was payed$, return SN to its owner's hand as it resolves.");
         }
 
         @Override

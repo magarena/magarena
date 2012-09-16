@@ -20,8 +20,8 @@ public class Pulse_of_the_Tangle {
             return new MagicEvent(
                     cardOnStack,
                     this,
-                    cardOnStack.getController() + " puts a 3/3 green Beast creature token onto the battlefield. " + 
-                    "Then if your opponent controls more creatures than you, return " + cardOnStack + " to its owner's hand.");
+                    "PN puts a 3/3 green Beast creature token onto the battlefield. " + 
+                    "Then if your opponent controls more creatures than you, return SN to its owner's hand.");
         }
         @Override
         public void executeEvent(

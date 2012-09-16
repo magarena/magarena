@@ -25,7 +25,7 @@ public class Reanimate {
                     new MagicGraveyardTargetPicker(false), // no mana cost but payed with life
                     this,
                     "Put target creature card$ from a graveyard onto the battlefield under your control. " +
-                    cardOnStack.getController() + " loses life equal to its converted mana cost.");
+                    "PN loses life equal to its converted mana cost.");
         }
 
         @Override

@@ -19,7 +19,7 @@ public class Blunt_the_Assault {
             return new MagicEvent(
                     cardOnStack,
                     this,
-                    cardOnStack.getController() + " gains 1 life for each creature on the battlefield. " +
+                    "PN gains 1 life for each creature on the battlefield. " +
                     "Prevent all combat damage that would be dealt this turn.");
         }
         @Override
