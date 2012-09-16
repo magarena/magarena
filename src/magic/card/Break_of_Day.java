@@ -6,7 +6,7 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeTurnPTAction;
-import magic.model.action.MagicMoveCardAction;
+import magic.model.condition.MagicCondition;
 import magic.model.action.MagicSetAbilityAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
@@ -20,13 +20,10 @@ public class Break_of_Day {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player=cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
-                    new Object[]{cardOnStack},
+                    cardOnStack,
                     this,
-                    "Creatures " + player + " controls get +1/+1 until end of turn.");
+                    "Creatures PN controls get +1/+1 until end of turn.");
         }
         @Override
         public void executeEvent(
@@ -34,16 +31,14 @@ public class Break_of_Day {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             final MagicPlayer player = event.getPlayer();
             final Collection<MagicTarget> targets = game.filterTargets(
                     player,
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-            final boolean fatefulHour = player.getLife() <= 5;
             for (final MagicTarget target : targets) {
                 final MagicPermanent creature = (MagicPermanent)target;
                 game.doAction(new MagicChangeTurnPTAction(creature,1,1));
-                if (fatefulHour) {
+                if (MagicCondition.FATEFUL_HOUR.accept(event.getSource())) {
                     game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Indestructible));
                 }
             }
