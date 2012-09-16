@@ -16,15 +16,12 @@ public class Sudden_Impact {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_PLAYER,
-                    new Object[]{cardOnStack,player},
                     this,
-                    cardOnStack.getCard() + " deals damage equal to the " +
-                    "number of cards in target player's hand to that player");
+                    "SN deals damage equal to the " +
+                    "number of cards in target player's hand to that player$.");
         }
         @Override
         public void executeEvent(
@@ -32,12 +29,10 @@ public class Sudden_Impact {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     final MagicDamage damage = new MagicDamage(
-                            cardOnStack.getCard(),
+                            event.getSource(),
                             player,
                             player.getHandSize(),
                             false);
