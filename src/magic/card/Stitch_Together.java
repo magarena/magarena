@@ -23,13 +23,10 @@ public class Stitch_Together {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             // estimated number of cards in the graveyard. this may change
             // before resolution but we need to make a choice here
-            final MagicCard card = cardOnStack.getCard();
             return new MagicEvent(
-                    card,
-                    cardOnStack.getController(),
+                    cardOnStack,
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
-                    new MagicGraveyardTargetPicker(MagicCondition.THRESHOLD_CONDITION.accept(card)),
-                    new Object[]{cardOnStack},
+                    new MagicGraveyardTargetPicker(MagicCondition.THRESHOLD_CONDITION.accept(cardOnStack)),
                     this,
                     "Return target creature card$ from your graveyard to your hand. " +
                     "Return that card from your graveyard to the battlefield instead " +
@@ -42,7 +39,6 @@ public class Stitch_Together {
                 final Object[] data,
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard targetCard) {              
                     if (MagicCondition.THRESHOLD_CONDITION.accept(event.getSource())) {
