@@ -18,10 +18,8 @@ public class Outwit {
                 final MagicCardOnStack cardOnStack,
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_SPELL,
-                    new Object[]{cardOnStack},
                     this,
                     "Counter target spell$ that targets a player.");
         }
@@ -31,7 +29,6 @@ public class Outwit {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetCardOnStack(game,choiceResults,0,new MagicCardOnStackAction() {
                 public void doAction(final MagicCardOnStack targetSpell) {
                     if (targetSpell.getChoiceResults() != null) {
