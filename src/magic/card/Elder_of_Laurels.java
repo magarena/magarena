@@ -31,12 +31,11 @@ public class Elder_of_Laurels {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
                     MagicPumpTargetPicker.create(),
                     this,
                     "Target creature gets +X/+X until end of turn, where X " +
-                    "is the number of creatures " + source.getController() + " controls.");
+                    "is the number of creatures PN controls.");
         }
         @Override
         public void executeEvent(

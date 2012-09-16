@@ -70,9 +70,8 @@ public class Ethersworn_Adjudicator {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    "Untap " + source + ".");
+                    "Untap SN.");
         }
         @Override
         public void executeEvent(

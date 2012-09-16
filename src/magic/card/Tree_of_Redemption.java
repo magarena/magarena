@@ -34,9 +34,8 @@ public class Tree_of_Redemption {
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    "Exchange your life total with "+ source + "'s toughness.");
+                    "Exchange your life total with SN's toughness.");
         }
 
         @Override

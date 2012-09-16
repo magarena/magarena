@@ -35,10 +35,9 @@ public class Rabble_Rouser {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
                     "Attacking creatures get +X/+0 until end of turn, " +
-                    "where X is " + source + "'s power.");
+                    "where X is SN's power.");
         }
         @Override
         public void executeEvent(

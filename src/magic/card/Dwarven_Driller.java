@@ -37,12 +37,11 @@ public class Dwarven_Driller {
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                source.getController(),
                 MagicTargetChoice.NEG_TARGET_LAND,
                 new MagicDestroyTargetPicker(false),
                 this,
                 "Destroy target land$ unless its controller has " +
-                source + " deal 2 damage to him or her.");
+                "SN deal 2 damage to him or her.");
         }
 
         @Override

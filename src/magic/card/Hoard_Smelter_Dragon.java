@@ -30,11 +30,10 @@ public class Hoard_Smelter_Dragon {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     MagicTargetChoice.TARGET_ARTIFACT,
                     new MagicDestroyTargetPicker(false),
                     this,
-                    "Destroy target artifact$. " + source + " gets +X/+0 " +
+                    "Destroy target artifact$. SN gets +X/+0 " +
                     "until end of turn, where X is that artifact's converted mana cost.");
         }
         @Override

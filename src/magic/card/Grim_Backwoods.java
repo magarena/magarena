@@ -46,9 +46,8 @@ public class Grim_Backwoods {
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    source.getController() + " draws a card.");
+                    "PN draws a card.");
         }
         @Override
         public void executeEvent(

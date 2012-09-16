@@ -34,11 +34,10 @@ public class Mindshrieker {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     MagicTargetChoice.TARGET_PLAYER,
                     this,
                     "Target player$ puts the top card of his or her library " +
-                    "into his or her graveyard. " + source + " gets +X/+X " +
+                    "into his or her graveyard. SN gets +X/+X " +
                     "until end of turn, where X is that card's converted mana cost");
         }
 

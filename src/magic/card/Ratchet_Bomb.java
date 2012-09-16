@@ -75,10 +75,8 @@ public class Ratchet_Bomb {
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    "Destroy each nonland permanent with converted mana cost equal to the number of charge counters on " + 
-                    source + ".");
+                    "Destroy each nonland permanent with converted mana cost equal to the number of charge counters on SN.");
         }
 
         @Override

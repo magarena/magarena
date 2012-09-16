@@ -55,7 +55,6 @@ public class Kamahl__Fist_of_Krosa {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     MagicTargetChoice.TARGET_LAND,
                     this,
                     "Target land$ becomes a 1/1 creature until end of turn.");
@@ -90,10 +89,8 @@ public class Kamahl__Fist_of_Krosa {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    "Creatures " + source.getController() +
-                    " controls get +3/+3 and gain trample until end of turn.");
+                    "Creatures PN controls get +3/+3 and gain trample until end of turn.");
         }
 
         @Override

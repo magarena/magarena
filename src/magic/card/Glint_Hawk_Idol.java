@@ -67,7 +67,7 @@ public class Glint_Hawk_Idol {
                         0,
                         MagicSimpleMayChoice.DEFAULT_YES),
                     this,
-                    player + " may$ have " + permanent + " become a 2/2 Bird " +
+                    "PN may$ have SN become a 2/2 Bird " +
                     "artifact creature with flying until end of turn."):
                 MagicEvent.NONE;
         }
@@ -100,9 +100,8 @@ public class Glint_Hawk_Idol {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this, 
-                    source + " becomes a 2/2 Bird artifact " +
+                    "SN becomes a 2/2 Bird artifact " +
                     "creature with flying until end of turn.");
         }
 

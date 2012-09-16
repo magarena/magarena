@@ -40,10 +40,9 @@ public class Mirror_Entity {
             final int x=payedCost.getX();
             return new MagicEvent(
                     source,
-                    source.getController(),
                     new Object[]{source,x},
                     this,
-                    "Creatures " + source.getController() + " controls become "+
+                    "Creatures PN controls become "+
                     x+"/"+x+" and gain all creature types until end of turn.");
         }
         @Override

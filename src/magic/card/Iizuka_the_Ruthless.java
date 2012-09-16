@@ -44,10 +44,8 @@ public class Iizuka_the_Ruthless {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    "Samurai creatures " + source.getController() +
-                    " controls gain double strike until end of turn.");
+                    "Samurai creatures PN controls gain double strike until end of turn.");
         }
 
         @Override
