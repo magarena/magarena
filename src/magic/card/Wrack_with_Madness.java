@@ -21,12 +21,9 @@ public class Wrack_with_Madness {
         public MagicEvent getEvent(
                 final MagicCardOnStack cardOnStack,
                 final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_CREATURE,
-                    new Object[]{cardOnStack,player},
                     this,
                     "Target creature$ deals damage to itself equal to its power.");
         }
@@ -36,13 +33,12 @@ public class Wrack_with_Madness {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     MagicPermanent creature = (MagicPermanent)target;
                     final MagicDamage damage = new MagicDamage(
-                            (MagicSource)target,
-                            target,
+                            creature,
+                            creature,
                             creature.getPower(),
                             false);
                     game.doAction(new MagicDealDamageAction(damage));
