@@ -16,10 +16,8 @@ public class Mind_Rot {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_PLAYER,
-                    new Object[]{cardOnStack},
                     this,
                     "Target player$ discards two cards.");
         }
@@ -29,11 +27,9 @@ public class Mind_Rot {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
-                    game.addEvent(new MagicDiscardEvent(cardOnStack.getCard(),player,2,false));
+                    game.addEvent(new MagicDiscardEvent(event.getSource(),player,2,false));
                 }
             });
         }
