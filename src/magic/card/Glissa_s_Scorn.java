@@ -18,11 +18,9 @@ public class Glissa_s_Scorn {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_ARTIFACT,
                     new MagicDestroyTargetPicker(false),
-                    new Object[]{cardOnStack},
                     this,
                     "Destroy target artifact$. Its controller loses 1 life.");
         }
@@ -32,8 +30,6 @@ public class Glissa_s_Scorn {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicDestroyAction(permanent));
