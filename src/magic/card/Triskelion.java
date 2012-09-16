@@ -32,11 +32,10 @@ public class Triskelion {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(1),
                     this,
-                    source + " deals 1 damage to target creature or player$.");
+                    "SN deals 1 damage to target creature or player$.");
         }
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
