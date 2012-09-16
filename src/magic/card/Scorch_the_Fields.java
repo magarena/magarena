@@ -25,11 +25,9 @@ public class Scorch_the_Fields {
                 final MagicCardOnStack cardOnStack,
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_LAND,
                     new MagicDestroyTargetPicker(false),
-                    new Object[]{cardOnStack},
                     this,
                     "Destroy target land$. " + cardOnStack + 
                     " deals 1 damage to each Human creature.");
@@ -41,17 +39,15 @@ public class Scorch_the_Fields {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicDestroyAction(permanent));
                     final Collection<MagicTarget> targets = game.filterTargets(
-                            cardOnStack.getController().getOpponent(),
+                            event.getPlayer(),
                             MagicTargetFilter.TARGET_HUMAN);
                     for (final MagicTarget target : targets) {
                         final MagicDamage damage = new MagicDamage(
-                                cardOnStack.getCard(),
+                                event.getSource(),
                                 target,
                                 1,
                                 false);
