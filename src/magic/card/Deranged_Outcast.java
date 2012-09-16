@@ -42,11 +42,10 @@ public class Deranged_Outcast {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
                     MagicPumpTargetPicker.create(),
                     this,
-                    source.getController() + " puts two +1/+1 counters on target creature$.");
+                    "PN puts two +1/+1 counters on target creature$.");
         }
         @Override
         public void executeEvent(

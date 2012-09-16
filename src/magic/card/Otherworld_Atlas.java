@@ -34,9 +34,8 @@ public class Otherworld_Atlas {
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    "Put a charge counter on " + source + ".");
+                    "Put a charge counter on SN.");
         }
         
         @Override
@@ -74,10 +73,8 @@ public class Otherworld_Atlas {
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    "Each player draws a card for each charge counter on " +
-                    source + ".");
+                    "Each player draws a card for each charge counter on SN.");
         }
 
         @Override

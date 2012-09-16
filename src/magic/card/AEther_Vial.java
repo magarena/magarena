@@ -37,7 +37,7 @@ public class AEther_Vial {
                         new MagicMayChoice(
                                 player + " may put a charge counter on " + permanent + "."),
                         this,
-                        player + " may$ put a charge counter on " + permanent + "."):
+                        "PN may$ put a charge counter on SN."):
                 MagicEvent.NONE;
         }
         @Override
@@ -75,13 +75,11 @@ public class AEther_Vial {
                     targetFilter,false,MagicTargetHint.None,"a creature card from your hand");
             return new MagicEvent(
                     source,
-                    source.getController(),
                     targetChoice,
                     new MagicGraveyardTargetPicker(true),
                     this,
                     "Put a creature card$ with converted mana cost equal to " +
-                    "the number of charge counters on " + source +
-                    " from your hand onto the battlefield.");
+                    "the number of charge counters on SN from your hand onto the battlefield.");
         }
 
         @Override

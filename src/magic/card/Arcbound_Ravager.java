@@ -30,10 +30,8 @@ public class Arcbound_Ravager {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    source.getController() + " puts a +1/+1 counter on "
-                    + source + ".");
+                    "PN puts a +1/+1 counter on SN.");
         }
         @Override
         public void executeEvent(

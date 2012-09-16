@@ -41,9 +41,8 @@ public class Culling_Dais {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    "Put a charge counter on " + source + ".");
+                    "Put a charge counter on SN.");
         }
         @Override
         public void executeEvent(
@@ -77,12 +76,10 @@ public class Culling_Dais {
         public MagicEvent getPermanentEvent(
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
-            final MagicPlayer player = source.getController();
             return new MagicEvent(
                 source,
-                player,
                 this,
-                player + " draw a card for each charge counter on " + source + ".");
+                "PN draw a card for each charge counter on SN.");
         }
 
         @Override

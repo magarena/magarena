@@ -29,12 +29,10 @@ public class Sphinx_of_Magosi {
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicPlayer player=source.getController();
             return new MagicEvent(
                     source,
-                    player,
                     this,
-                    "Draw a card, then put a +1/+1 counter on " + source + ".");
+                    "Draw a card, then put a +1/+1 counter on SN.");
         }
         
         @Override

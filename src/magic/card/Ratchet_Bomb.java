@@ -38,9 +38,8 @@ public class Ratchet_Bomb {
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    "Put a charge counter on " + source + ".");
+                    "Put a charge counter on SN.");
         }
         
         @Override

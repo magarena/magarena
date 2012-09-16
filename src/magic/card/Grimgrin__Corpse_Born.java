@@ -46,9 +46,8 @@ public class Grimgrin__Corpse_Born {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    "Untap " + source + " and put a +1/+1 counter on it.");
+                    "Untap SN and put a +1/+1 counter on it.");
         }
 
         @Override
@@ -65,16 +64,14 @@ public class Grimgrin__Corpse_Born {
     public static final MagicWhenAttacksTrigger T1 = new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            final MagicPlayer player = permanent.getController();
             return (permanent == creature) ?
                 new MagicEvent(
                         permanent,
-                        player,
                         MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
                         new MagicDestroyTargetPicker(false),
                         this,
                         "Destroy target creature$ your opponent controls, " +
-                        "then put a +1/+1 counter on " + permanent + "."):
+                        "then put a +1/+1 counter on SN."):
                 MagicEvent.NONE;           
         }
         

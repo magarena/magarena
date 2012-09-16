@@ -34,7 +34,7 @@ public class Legacy_s_Allure {
                         new MagicMayChoice(
                                 player + " may put a treasure counter on " + permanent + "."),
                         this,
-                        player + " may$ put a treasure counter on " + permanent + "."):
+                        "PN may$ put a treasure counter on SN."):
                 MagicEvent.NONE;
         }
         @Override
@@ -71,12 +71,11 @@ public class Legacy_s_Allure {
                     targetFilter,true,MagicTargetHint.Negative,"target creature to gain control of");
             return new MagicEvent(
                     source,
-                    source.getController(),
                     targetChoice,
                     MagicExileTargetPicker.create(),
                     this,
                     "Gain control of target creature$ with power less than or " +
-                    "equal to the number of treasure counters on " + source + ".");
+                    "equal to the number of treasure counters on SN.");
         }
 
         @Override

@@ -34,7 +34,7 @@ public class Golden_Urn {
                             1,
                             MagicSimpleMayChoice.DEFAULT_YES),
                         this,
-                        player + " may$ put a charge counter on " + permanent + "."):
+                        "PN may$ put a charge counter on SN."):
                 MagicEvent.NONE;
         }
         @Override
@@ -67,12 +67,10 @@ public class Golden_Urn {
         public MagicEvent getPermanentEvent(
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
-            final MagicPlayer player = source.getController();
             return new MagicEvent(
                 source,
-                player,
                 this,
-                player + " gains life equal to the number of charge counters on " + source + ".");
+                "PN gains life equal to the number of charge counters on SN.");
         }
 
         @Override
