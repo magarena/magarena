@@ -49,9 +49,8 @@ public class Null_Champion {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    "Regenerate " + source + ".");
+                    "Regenerate SN.");
         }
 
         @Override
