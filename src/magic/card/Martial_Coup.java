@@ -22,11 +22,8 @@ public class Martial_Coup {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             final int x=payedCost.getX();
-            final MagicPlayer player=cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
-                    new Object[]{cardOnStack,x},
+                    cardOnStack,
                     this,
                     "Put "+x+" 1/1 white Soldier creature tokens onto the battlefield." + 
                     (x >= 5 ? " Destroy all other creatures.":""));
@@ -37,21 +34,16 @@ public class Martial_Coup {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));
             final MagicPlayer player=event.getPlayer();
-            int x=(Integer)data[1];
-            final Collection<MagicTarget> targets;
-            if (x>=5) {
-                targets=game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE);
-            } else {
-                targets=Collections.<MagicTarget>emptyList();
-            }
+            int x = event.getCardOnStack().getX();
+            if (x >= 5) {
+                final Collection<MagicTarget> targets = game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE);
+                for (final MagicTarget target : targets) {
+                    game.doAction(new MagicDestroyAction((MagicPermanent)target));
+                }
+            } 
             for (;x>0;x--) {
                 game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Soldier")));
-            }
-            for (final MagicTarget target : targets) {
-                game.doAction(new MagicDestroyAction((MagicPermanent)target));
             }
         }
     };
