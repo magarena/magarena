@@ -22,7 +22,7 @@ public class Shadowstorm {
             return new MagicEvent(
                     cardOnStack,
                     this,
-                    cardOnStack + " deals 2 damage to each creature with shadow.");
+                    "SN deals 2 damage to each creature with shadow.");
         }
         @Override
         public void executeEvent(

@@ -26,8 +26,8 @@ public class Shattering_Pulse {
                             MagicManaCost.THREE),
                     new MagicDestroyTargetPicker(false),
                     this,
-                    "Destroy target artifact$. If the buyback cost was payed$, " +
-                    "return " + cardOnStack + " to its owner's hand as it resolves.");
+                    "Destroy target artifact$. " + 
+                    "If the buyback cost was payed$, return SN to its owner's hand as it resolves.");
         }
 
         @Override

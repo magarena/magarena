@@ -22,7 +22,7 @@ public class Shock {
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(2),
                     this,
-                    cardOnStack + " deals 2 damage to target creature or player$.");
+                    "SN deals 2 damage to target creature or player$.");
         }
         @Override
         public void executeEvent(

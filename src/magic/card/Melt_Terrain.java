@@ -23,8 +23,8 @@ public class Melt_Terrain {
                     MagicTargetChoice.NEG_TARGET_LAND,
                     new MagicDestroyTargetPicker(false),
                     this,
-                    "Destroy target land$. " + cardOnStack + 
-                    " deals 2 damage to that land's controller.");
+                    "Destroy target land$. " + 
+                    "SN deals 2 damage to that land's controller.");
         }
 
         @Override

@@ -31,9 +31,8 @@ public class Rite_of_Replication {
                             false),
                     MagicCopyTargetPicker.create(),
                     this,
-                    "Put a token onto the battlefield that's a copy of " +
-                    "target creature$. If " + cardOnStack + " was kicked$, put " +
-                    "five of those tokens onto the battlefield instead.");
+                    "Put a token onto the battlefield that's a copy of target creature$. " + 
+                    "If SN was kicked$, put five of those tokens onto the battlefield instead.");
         }
         @Override
         public void executeEvent(

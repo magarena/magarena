@@ -17,7 +17,7 @@ public class Temporal_Mastery {
             return new MagicEvent(
                     cardOnStack,
                     this,
-                    "Take an extra turn after this one. Exile " + cardOnStack.getCard());
+                    "Take an extra turn after this one. Exile SN.");
         }
         @Override
         public void executeEvent(

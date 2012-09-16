@@ -24,9 +24,9 @@ public class Reiterate {
                             MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_SPELL,
                             MagicManaCost.THREE),
                     this,
-                    "Copy target instant or sorcery spell$. You may choose " +
-                    "new targets for the copy. If the buyback cost was payed$, " +
-                    "return " + cardOnStack + " to its owner's hand as it resolves.");
+                    "Copy target instant or sorcery spell$. " + 
+                    "You may choose new targets for the copy. " + 
+                    "If the buyback cost was payed$, return SN to its owner's hand as it resolves.");
         }
 
         @Override

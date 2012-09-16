@@ -26,9 +26,8 @@ public class Allay {
                     MagicManaCost.THREE),     
                 new MagicDestroyTargetPicker(false),
                 this,
-                "Destroy target enchantment$. If the buyback cost was " +
-                "payed$, return " + cardOnStack + " to its owner's " +
-                "hand as it resolves."
+                "Destroy target enchantment$. " + 
+                "If the buyback cost was payed$, return SN to its owner's hand as it resolves."
             );
         }
 

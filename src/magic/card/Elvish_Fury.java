@@ -26,9 +26,8 @@ public class Elvish_Fury {
                             MagicManaCost.FOUR),
                     MagicPumpTargetPicker.create(),
                     this,
-                    "Target creature$ gets +2/+2 until end of turn. If the " +
-                    "buyback cost was payed$, " +
-                    "return " + cardOnStack + " to its owner's hand as it resolves.");
+                    "Target creature$ gets +2/+2 until end of turn. " + 
+                    "If the buyback cost was payed$, return SN to its owner's hand as it resolves.");
         }
 
         @Override

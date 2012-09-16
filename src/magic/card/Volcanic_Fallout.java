@@ -22,7 +22,7 @@ public class Volcanic_Fallout {
             return new MagicEvent(
                     cardOnStack,
                     this,
-                    cardOnStack + " deals 2 damage to each creature and each player.");
+                    "SN deals 2 damage to each creature and each player.");
         }
         @Override
         public void executeEvent(

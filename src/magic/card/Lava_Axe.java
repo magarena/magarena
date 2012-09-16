@@ -20,7 +20,7 @@ public class Lava_Axe {
                     cardOnStack,
                     MagicTargetChoice.NEG_TARGET_PLAYER,
                     this,
-                    cardOnStack + " deals 5 damage to target player$.");
+                    "SN deals 5 damage to target player$.");
         }
         @Override
         public void executeEvent(

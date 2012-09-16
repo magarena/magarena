@@ -25,8 +25,8 @@ public class Beacon_of_Destruction {
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(5),
                     this,
-                    cardOnStack + " deals 5 damage to target creature or player$. " + 
-                    "Shuffle " + cardOnStack + " into its owner's library.");
+                    "SN deals 5 damage to target creature or player$. " + 
+                    "Shuffle SN into its owner's library.");
         }
         @Override
         public void executeEvent(

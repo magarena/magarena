@@ -26,8 +26,8 @@ public class Burst_Lightning {
                     new MagicKickerChoice(MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,MagicManaCost.FOUR,false),
                     new MagicDamageTargetPicker(2),
                     this,
-                    cardOnStack + " deals 2 damage to target creature or player$. "+
-                    "If " + cardOnStack + " was kicked$, it deals 4 damage to that creature or player instead.");
+                    "SN deals 2 damage to target creature or player$. "+
+                    "If SN was kicked$, it deals 4 damage to that creature or player instead.");
         }
         @Override
         public void executeEvent(

@@ -26,9 +26,8 @@ public class Breath_of_Darigaaz {
                     cardOnStack,
                     new MagicKickerChoice(MagicManaCost.TWO,false),
                     this,
-                    cardOnStack + " deals 1 damage to each creature without flying and each player. " + 
-                    "If " + cardOnStack + " was kicked$, " + 
-                    "it deals 4 damage to each creature without flying and each player instead.");
+                    "SN deals 1 damage to each creature without flying and each player. " + 
+                    "If SN was kicked$, it deals 4 damage to each creature without flying and each player instead.");
         }
         @Override
         public void executeEvent(

@@ -24,7 +24,7 @@ public class Chain_Reaction {
             return new MagicEvent(
                     cardOnStack,
                     this,
-                    cardOnStack + " deals X damage to each creature, where X is the number of creatures on the battlefield.");
+                    "SN deals X damage to each creature, where X is the number of creatures on the battlefield.");
         }
         @Override
         public void executeEvent(

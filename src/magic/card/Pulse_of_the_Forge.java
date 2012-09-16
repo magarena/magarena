@@ -24,9 +24,9 @@ public class Pulse_of_the_Forge {
                     MagicTargetChoice.NEG_TARGET_PLAYER,
                     new MagicDamageTargetPicker(4),
                     this,
-                    cardOnStack + " deals 4 damage to target player$." +
+                    "SN deals 4 damage to target player$. " +
                     "Then if that player has more life than you, " +
-                    "return " + cardOnStack + " to its owner's hand.");
+                    "return SN to its owner's hand.");
         }
         @Override
         public void executeEvent(

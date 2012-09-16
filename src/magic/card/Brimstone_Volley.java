@@ -22,7 +22,7 @@ public class Brimstone_Volley {
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(3),
                     this,
-                    cardOnStack + " deals 3 damage to target creature or player$.");
+                    "SN deals 3 damage to target creature or player$.");
         }
         @Override
         public void executeEvent(

@@ -25,7 +25,7 @@ public class Char {
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(4),
                     this,
-                    cardOnStack + " deals 4 damage to target creature or player$ and 2 damage to you.");
+                    "SN deals 4 damage to target creature or player$ and 2 damage to you.");
         }
         @Override
         public void executeEvent(

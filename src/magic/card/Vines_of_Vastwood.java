@@ -30,7 +30,7 @@ public class Vines_of_Vastwood {
                     MagicPumpTargetPicker.create(),
                     this,
                     "Target creature$ can't be the target of spells or abilities your opponent controls this turn. " + 
-                    "If " + cardOnStack + " was kicked$, that creature gets +4/+4 until end of turn.");
+                    "If SN was kicked$, that creature gets +4/+4 until end of turn.");
         }
         @Override
         public void executeEvent(

@@ -26,9 +26,8 @@ public class Anoint {
                             MagicManaCost.THREE),
                     MagicPreventTargetPicker.getInstance(),
                     this,
-                    "Prevent the next 3 damage that would be dealt to target " +
-                    "creature$ this turn. If the buyback cost was payed$, " +
-                    "return " + cardOnStack + " to its owner's hand as it resolves.");
+                    "Prevent the next 3 damage that would be dealt to target creature$ this turn. " + 
+                    "If the buyback cost was payed$, return SN to its owner's hand as it resolves.");
         }
 
         @Override

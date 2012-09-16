@@ -31,7 +31,7 @@ public class Concussive_Bolt {
                     MagicTargetChoice.NEG_TARGET_PLAYER,
                     new MagicDamageTargetPicker(4),
                     this,
-                    cardOnStack + " deals 4 damage to target player$.");
+                    "SN deals 4 damage to target player$.");
         }
         @Override
         public void executeEvent(

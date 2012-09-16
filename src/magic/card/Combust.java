@@ -24,7 +24,7 @@ public class Combust {
                     MagicTargetChoice.NEG_WHITE_OR_BLUE_CREATURE,
                     new MagicDamageTargetPicker(5,true),
                     this,
-                    cardOnStack + " deals 5 damage to target white or blue creature$. " +
+                    "SN deals 5 damage to target white or blue creature$. " +
                     "The damage can't be prevented.");
         }
         @Override

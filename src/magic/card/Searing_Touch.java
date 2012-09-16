@@ -27,9 +27,8 @@ public class Searing_Touch {
                             MagicManaCost.FOUR),
                     new MagicDamageTargetPicker(1),
                     this,
-                    cardOnStack + " deals 1 damage to target creature " +
-                    "or player$. If the buyback cost was payed$, " +
-                    "return " + cardOnStack + " to its owner's hand as it resolves.");
+                    "SN deals 1 damage to target creature or player$. " + 
+                    "If the buyback cost was payed$, return SN to its owner's hand as it resolves.");
         }
 
         @Override

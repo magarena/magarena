@@ -25,7 +25,7 @@ public class Beacon_of_Unrest {
                     new MagicGraveyardTargetPicker(true),
                     this,
                     "Return target artifact or creature card$ from a graveyard onto the battlefield under your control. "+
-                    "Shuffle " + cardOnStack + " into its owner's library.");
+                    "Shuffle SN into its owner's library.");
         }
         @Override
         public void executeEvent(

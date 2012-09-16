@@ -28,8 +28,7 @@ public class Disturbed_Burial {
                     new MagicGraveyardTargetPicker(false),
                     this,
                     "Return target creature card$ from your graveyard to your hand. " +
-                    "If the buyback cost was payed$, " +
-                    "return " + cardOnStack + " to its owner's hand as it resolves.");
+                    "If the buyback cost was payed$, return SN to its owner's hand as it resolves.");
         }
 
         @Override

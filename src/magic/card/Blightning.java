@@ -21,7 +21,7 @@ public class Blightning {
                     cardOnStack,
                     MagicTargetChoice.NEG_TARGET_PLAYER,
                     this,
-                    cardOnStack + " deals 3 damage to target player$. That player discards two cards.");
+                    "SN deals 3 damage to target player$. That player discards two cards.");
         }
         @Override
         public void executeEvent(

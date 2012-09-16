@@ -22,8 +22,7 @@ public class Righteous_Blow {
                     MagicTargetChoice.NEG_TARGET_ATTACKING_OR_BLOCKING_CREATURE,
                     new MagicDamageTargetPicker(2),
                     this,
-                    cardOnStack + " deals 2 damage to " +
-                    "target attacking or blocking creature$.");
+                    "SN deals 2 damage to target attacking or blocking creature$.");
         }
         @Override
         public void executeEvent(

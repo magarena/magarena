@@ -26,9 +26,8 @@ public class Evincar_s_Justice {
                     cardOnStack,
                     new MagicBuybackChoice(MagicManaCost.THREE),
                     this,
-                    cardOnStack + " deals 2 damage to each creature " +
-                    "and each player. If the buyback cost was payed$, " +
-                    "return " + cardOnStack + " to its owner's hand as it resolves.");
+                    "SN deals 2 damage to each creature and each player. " + 
+                    "If the buyback cost was payed$, return SN to its owner's hand as it resolves.");
         }
 
         @Override

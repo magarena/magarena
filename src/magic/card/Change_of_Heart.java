@@ -27,9 +27,8 @@ public class Change_of_Heart {
                         MagicManaCost.THREE),
                     new MagicNoCombatTargetPicker(true,false,false),
                     this,
-                    "Target creature$ can't attack this turn. If the buyback " +
-                    "cost was payed$, return " + cardOnStack + " to its " +
-                    "owner's hand as it resolves.");
+                    "Target creature$ can't attack this turn. " + 
+                    "If the buyback cost was payed$, return SN to its owner's hand as it resolves.");
         }
 
         @Override

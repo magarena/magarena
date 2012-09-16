@@ -23,7 +23,7 @@ public class Pyroclasm {
             return new MagicEvent(
                     cardOnStack,
                     this,
-                    cardOnStack + " deals 2 damage to each creature.");
+                    "SN deals 2 damage to each creature.");
         }
         @Override
         public void executeEvent(

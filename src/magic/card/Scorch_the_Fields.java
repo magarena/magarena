@@ -29,8 +29,8 @@ public class Scorch_the_Fields {
                     MagicTargetChoice.NEG_TARGET_LAND,
                     new MagicDestroyTargetPicker(false),
                     this,
-                    "Destroy target land$. " + cardOnStack + 
-                    " deals 1 damage to each Human creature.");
+                    "Destroy target land$. " + 
+                    "SN deals 1 damage to each Human creature.");
         }
 
         @Override

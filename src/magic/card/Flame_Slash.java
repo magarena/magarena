@@ -22,7 +22,7 @@ public class Flame_Slash {
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     new MagicDamageTargetPicker(4),
                     this,
-                    cardOnStack + " deals 4 damage to target creature$.");
+                    "SN deals 4 damage to target creature$.");
         }
         @Override
         public void executeEvent(
