@@ -30,12 +30,10 @@ public class Myr_Propagator {
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicPlayer player = source.getController();
             return new MagicEvent(
                     source,
-                    player,
                     this,
-                    player + " puts a token that's a copy of " + source + " onto the battlefield.");
+                    "PN puts a token that's a copy of SN onto the battlefield.");
         }
 
         @Override
