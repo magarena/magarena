@@ -18,11 +18,8 @@ public class Turn_the_Tide {
     public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player=cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
-                    new Object[]{cardOnStack},
+                    cardOnStack,
                     this,
                     "Creatures your opponent controls get -2/-0 until end of turn.");
         }
@@ -33,7 +30,6 @@ public class Turn_the_Tide {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             final MagicPlayer opponent=event.getPlayer().getOpponent();
             final Collection<MagicTarget> targets=
                 game.filterTargets(opponent,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
