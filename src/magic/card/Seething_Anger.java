@@ -6,7 +6,7 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicChangeTurnPTAction;
-import magic.model.action.MagicMoveCardAction;
+import magic.model.action.MagicChangeCardDestinationAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicBuybackChoice;
 import magic.model.choice.MagicTargetChoice;
@@ -20,13 +20,11 @@ public class Seething_Anger {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     new MagicBuybackChoice(
-                            MagicTargetChoice.POS_TARGET_CREATURE,
-                            MagicManaCost.THREE),
+                        MagicTargetChoice.POS_TARGET_CREATURE,
+                        MagicManaCost.THREE),
                     MagicPumpTargetPicker.create(),
-                    new Object[]{cardOnStack},
                     this,
                     "Target creature$ gets +3/+0 until end of turn. If the " +
                     "buyback cost was payed$, " +
@@ -39,27 +37,14 @@ public class Seething_Anger {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            final boolean hasTarget = event.processTargetPermanent(
-                    game,
-                    choiceResults,
-                    0,
-                    new MagicPermanentAction() {
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeTurnPTAction(creature,3,0));
                     if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
-                        game.doAction(new MagicMoveCardAction(
-                                cardOnStack.getCard(),
-                                MagicLocationType.Stack,
-                                MagicLocationType.OwnersHand));
-                    } else {
-                        game.doAction(new MagicMoveCardAction(cardOnStack));
-                    }
+                        game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
+                    } 
                 }
             });
-            if (!hasTarget) {
-                game.doAction(new MagicMoveCardAction(cardOnStack));
-            }
         }
     };
 }
