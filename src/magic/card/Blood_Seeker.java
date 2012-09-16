@@ -22,13 +22,14 @@ public class Blood_Seeker {
                     permanent,
                     player,
                     new MagicSimpleMayChoice(
-                            player + " may have " + controller + " lose 1 life.",
-                            MagicSimpleMayChoice.OPPONENT_LOSE_LIFE,
-                            1,
-                            MagicSimpleMayChoice.DEFAULT_YES),
+                        player + " may have " + controller + " lose 1 life.",
+                        MagicSimpleMayChoice.OPPONENT_LOSE_LIFE,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_YES
+                    ),
                     new Object[]{controller},
                     this,
-                    player + " may$ have " + controller + " lose 1 life."):
+                    "PN may$ have " + controller + " lose 1 life."):
                 MagicEvent.NONE;
         }
         @Override
