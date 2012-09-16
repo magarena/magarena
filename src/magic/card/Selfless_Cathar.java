@@ -33,10 +33,8 @@ public class Selfless_Cathar {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    "Creatures " + source.getController() +
-                    " controls get +1/+1 until end of turn.");
+                    "Creatures PN controls get +1/+1 until end of turn.");
         }
 
         @Override
