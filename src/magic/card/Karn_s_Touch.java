@@ -23,13 +23,10 @@ public class Karn_s_Touch {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
+                    cardOnStack,
                     MagicTargetChoice.POS_TARGET_NONCREATURE_ARTIFACT,
                     TP,
-                    new Object[]{cardOnStack,player},
                     this,
                     "Target noncreature artifact$ becomes an artifact creature with " + 
                     "power and toughness each equal to its converted mana cost until end of turn");
@@ -37,7 +34,6 @@ public class Karn_s_Touch {
 
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicBecomesCreatureAction(creature,PT,ST));
