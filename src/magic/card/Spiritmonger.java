@@ -27,9 +27,12 @@ public class Spiritmonger {
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
             return new MagicEvent[]{
-                new MagicPayManaCostEvent(source,source.getController(),
-                        MagicManaCost.GREEN),
-                new MagicPlayAbilityEvent((MagicPermanent)source)};
+                new MagicPayManaCostEvent(
+                    source,source.getController(),
+                    MagicManaCost.GREEN
+                ),
+                new MagicPlayAbilityEvent((MagicPermanent)source)
+            };
         }
         @Override
         public MagicEvent getPermanentEvent(
@@ -37,10 +40,9 @@ public class Spiritmonger {
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     MagicColorChoice.BLUE_RED_WHITE_INSTANCE,
                     this,
-                    source + " becomes the color$ of your choice until end of turn.");
+                    "SN becomes the color$ of your choice until end of turn.");
         }
         @Override
         public void executeEvent(
