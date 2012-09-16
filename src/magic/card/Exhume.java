@@ -19,13 +19,8 @@ public class Exhume {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
-                    MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
-                    new MagicGraveyardTargetPicker(true),
-                    new Object[]{cardOnStack},
+                    cardOnStack,
                     this,
                     "Each player puts a creature card from " +
                     "his or her graveyard onto the battlefield.");
@@ -37,22 +32,18 @@ public class Exhume {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));
-            event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
-                public void doAction(final MagicCard targetCard) {
-                    final MagicPlayer player = event.getPlayer();
-                    game.doAction(new MagicReanimateAction(player,targetCard,MagicPlayCardAction.NONE));
-                    game.addEvent(new MagicEvent(
-                            cardOnStack.getCard(),
-                            player.getOpponent(),
-                            MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
-                            new MagicGraveyardTargetPicker(true),
-                            EVENT_ACTION,
-                            ""));
-                }
-            });
+            for (final MagicPlayer player : game.getPlayers()) {
+                game.addEvent(new MagicEvent(
+                    event.getSource(),
+                    player,
+                    MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
+                    new MagicGraveyardTargetPicker(true),
+                    EVENT_ACTION,
+                    ""
+                ));
+            }
         }
+
         private final MagicEventAction EVENT_ACTION = new MagicEventAction() {
             @Override
             public void executeEvent(
@@ -62,8 +53,7 @@ public class Exhume {
                     final Object[] choiceResults) {
                 event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                     public void doAction(final MagicCard card) {
-                        final MagicPlayer opponent = event.getPlayer();
-                        game.doAction(new MagicReanimateAction(opponent,card,MagicPlayCardAction.NONE));
+                        game.doAction(new MagicReanimateAction(event.getPlayer(),card,MagicPlayCardAction.NONE));
                     }
                 });
             }
