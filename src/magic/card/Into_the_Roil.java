@@ -22,18 +22,14 @@ public class Into_the_Roil {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player=cardOnStack.getController();
-            final MagicCard card=cardOnStack.getCard();
             return new MagicEvent(
-                    card,
-                    player,
+                    cardOnStack,
                     new MagicKickerChoice(
                         MagicTargetChoice.TARGET_NONLAND_PERMANENT,
                         MagicManaCost.ONE_BLUE,false),
                     MagicBounceTargetPicker.getInstance(),
-                    new Object[]{cardOnStack},
                     this,
-                    "Return target nonland permanent$ to its owner's hand. If " + card + " was kicked$, draw a card.");
+                    "Return target nonland permanent$ to its owner's hand. If SN was kicked$, draw a card.");
         }
         @Override
         public void executeEvent(
@@ -41,7 +37,6 @@ public class Into_the_Roil {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
