@@ -21,17 +21,13 @@ public class Death_Grasp {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             final int amount=payedCost.getX();
-            final MagicPlayer player=cardOnStack.getController();
-            final MagicCard card = cardOnStack.getCard();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(amount),
-                    new Object[]{cardOnStack,amount},
                     this,
-                    card + " deals " + amount + " damage to target creature or player$. " +
-                    player + " gains "+amount+" life.");
+                    "SN deals " + amount + " damage to target creature or player$. " +
+                    "PN gains " + amount + " life.");
         }
         @Override
         public void executeEvent(
@@ -39,16 +35,14 @@ public class Death_Grasp {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));
-            final int amount=(Integer)data[1];
+            final int amount = event.getCardOnStack().getX();
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
-                    final MagicDamage damage=new MagicDamage(cardOnStack.getCard(),target,amount,false);
+                    final MagicDamage damage=new MagicDamage(event.getSource(),target,amount,false);
                     game.doAction(new MagicDealDamageAction(damage));
+                    game.doAction(new MagicChangeLifeAction(event.getPlayer(),amount));
                 }
             });
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(),amount));
         }
     };
 }
