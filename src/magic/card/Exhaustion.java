@@ -17,10 +17,8 @@ public class Exhaustion {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     MagicTargetChoice.TARGET_OPPONENT,
-                    new Object[]{cardOnStack},
                     this,
                     "Creatures and lands target opponent$ controls don't untap during that opponent's next untap step.");
         }
@@ -30,7 +28,6 @@ public class Exhaustion {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     game.doAction(new MagicChangePlayerStateAction(player,MagicPlayerState.Exhausted,true));
