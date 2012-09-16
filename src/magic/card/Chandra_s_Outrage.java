@@ -19,17 +19,13 @@ public class Chandra_s_Outrage {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
-            final MagicCard card = cardOnStack.getCard();
             return new MagicEvent(
-                    card,
-                    player,
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     new MagicDamageTargetPicker(2),
-                    new Object[]{cardOnStack,player},
                     this,
-                    card + " deals 4 damage to target creature$ and 2 damage " +
-                            "to that creature's controller.");
+                    "SN deals 4 damage to target creature$ and " + 
+                             "2 damage to that creature's controller.");
         }
         @Override
         public void executeEvent(
@@ -37,13 +33,11 @@ public class Chandra_s_Outrage {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));            
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
-                    MagicDamage damage = new MagicDamage(cardOnStack.getCard(),target,4,false);
+                    MagicDamage damage = new MagicDamage(event.getSource(),target,4,false);
                     game.doAction(new MagicDealDamageAction(damage));
-                    damage = new MagicDamage(cardOnStack.getCard(),target.getController(),2,false);
+                    damage = new MagicDamage(event.getSource(),target.getController(),2,false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });
