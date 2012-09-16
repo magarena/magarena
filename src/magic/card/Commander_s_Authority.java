@@ -14,16 +14,16 @@ public class Commander_s_Authority {
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicPlayer data) {
+                final MagicPlayer upkeepPlayer) {
             final MagicPermanent enchanted = permanent.getEnchantedCreature();
             final MagicPlayer controller = enchanted.getController();
-            return (controller == data) ?
+            return (controller == upkeepPlayer) ?
                 new MagicEvent(
-                        enchanted,
-                        controller,
-                        this,
-                        controller + " puts a 1/1 white Human " +
-                        "creature token onto the battlefield.") :
+                    enchanted,
+                    controller,
+                    this,
+                    "PN puts a 1/1 white Human creature token onto the battlefield."
+                ) :
                 MagicEvent.NONE;
         }
         @Override
