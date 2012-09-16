@@ -15,10 +15,11 @@ public class Hissing_Miasma {
             final MagicPlayer controller=creature.getController();
             return (controller!=permanent.getController()) ?
                 new MagicEvent(
-                        permanent,
-                        controller,
-                        this,
-                        controller + " loses 1 life."):
+                    permanent,
+                    controller,
+                    this,
+                    "PN loses 1 life."
+                ):
                 MagicEvent.NONE;
         }
         
