@@ -34,11 +34,10 @@ public class Desert {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     MagicTargetChoice.NEG_TARGET_ATTACKING_CREATURE,
                     new MagicDamageTargetPicker(1),
                     this,
-                    source + " deals 1 damage to target attacking creature.");
+                    "SN deals 1 damage to target attacking creature.");
         }
 
         @Override
