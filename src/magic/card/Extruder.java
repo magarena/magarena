@@ -34,11 +34,10 @@ public class Extruder {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
                     MagicPumpTargetPicker.create(),
                     this,
-                    source.getController() + " puts a +1/+1 counter on target creature$.");
+                    "PN puts a +1/+1 counter on target creature$.");
         }
         @Override
         public void executeEvent(
