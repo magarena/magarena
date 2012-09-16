@@ -41,9 +41,8 @@ public class Ghost_Council_of_Orzhova {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    "Exile " + source + ". Return it to the battlefield under its owner's control at end of turn.");
+                    "Exile SN. Return it to the battlefield under its owner's control at end of turn.");
         }
         @Override
         public void executeEvent(
