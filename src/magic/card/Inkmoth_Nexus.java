@@ -56,9 +56,8 @@ public class Inkmoth_Nexus {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this, 
-                    source + " becomes a 1/1 Blinkmoth artifact creature with flying and infect until end of turn. " + 
+                    "SN becomes a 1/1 Blinkmoth artifact creature with flying and infect until end of turn. " + 
                     "It's still a land.");
         }
 
