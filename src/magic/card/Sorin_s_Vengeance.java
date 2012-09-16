@@ -20,17 +20,12 @@ public class Sorin_s_Vengeance {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
-            final MagicCard card = cardOnStack.getCard();
             return new MagicEvent(
-                    card,
-                    player,
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_PLAYER,
                     new MagicDamageTargetPicker(10),
-                    new Object[]{cardOnStack},
                     this,
-                    card + " deals 10 damage to target player$ and " +
-                    player + " gains 10 life.");
+                    "SN deals 10 damage to target player$ and PN gains 10 life.");
         }
         @Override
         public void executeEvent(
@@ -38,15 +33,13 @@ public class Sorin_s_Vengeance {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));            
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
-                    final MagicDamage damage=new MagicDamage(cardOnStack.getCard(),target,10,false);
+                    final MagicDamage damage=new MagicDamage(event.getSource(),target,10,false);
                     game.doAction(new MagicDealDamageAction(damage));
+                    game.doAction(new MagicChangeLifeAction(event.getPlayer(),10));
                 }
             });
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(),10));
         }
     };
 }
