@@ -24,15 +24,11 @@ public class Aggravate {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
-            final MagicCard card = cardOnStack.getCard();
             return new MagicEvent(
-                    card,
-                    player,
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_PLAYER,
-                    new Object[]{cardOnStack,player},
                     this,
-                    card + " deals 1 damage to each creature target player$ " +
+                    "SN deals 1 damage to each creature target player$ " +
                     "controls. Each creature dealt damage this way attacks " +
                     "this turn if able.");
         }
@@ -42,8 +38,6 @@ public class Aggravate {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));            
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer targetPlayer) {
                     final Collection<MagicTarget> targets = game.filterTargets(
@@ -51,7 +45,7 @@ public class Aggravate {
                             MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
                     for (final MagicTarget target : targets) {
                         final MagicDamage damage = new MagicDamage(
-                                cardOnStack.getCard(),
+                                event.getSource(),
                                 target,
                                 1,
                                 false);
