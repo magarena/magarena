@@ -71,10 +71,8 @@ public class Chimeric_Mass {
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    "Until end of turn, " + source + 
-                    " becomes a Construct artifact creature with " + 
+                    "Until end of turn, SN becomes a Construct artifact creature with " + 
                     "\"This creature's power and toughness are each equal to the number of charge counters on it.\"");
         }
 
