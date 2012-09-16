@@ -21,13 +21,10 @@ public class Traitorous_Blood {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     MagicExileTargetPicker.create(),
-                    new Object[]{cardOnStack},
                     this,
                     "Gain control of target creature$ until end of turn. Untap it. " +
                     "It gains trample and haste until end of turn.");
@@ -35,7 +32,6 @@ public class Traitorous_Blood {
 
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicGainControlAction(event.getPlayer(),creature,MagicStatic.UntilEOT));
