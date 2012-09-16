@@ -14,9 +14,7 @@ public class Vision_Skeins {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
-                    new Object[]{cardOnStack,},
+                    cardOnStack,
                     this,
                     "Each player draws two cards.");
         }
@@ -26,7 +24,6 @@ public class Vision_Skeins {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             for (final MagicPlayer player : game.getPlayers()) {
                 game.doAction(new MagicDrawAction(player,2));
             }
