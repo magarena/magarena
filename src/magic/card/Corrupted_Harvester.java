@@ -39,9 +39,8 @@ public class Corrupted_Harvester {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    "Regenerate " + source + ".");
+                    "Regenerate SN.");
         }
         @Override
         public void executeEvent(
