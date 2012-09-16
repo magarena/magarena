@@ -22,13 +22,14 @@ public class Vacuumelt {
         public MagicEvent getEvent(
                 final MagicCardOnStack cardOnStack,
                 final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
-                    new MagicKickerChoice(MagicTargetChoice.TARGET_CREATURE, MagicManaCost.TWO_BLUE, true, true),
+                    cardOnStack,
+                    new MagicKickerChoice(
+                        MagicTargetChoice.TARGET_CREATURE, 
+                        MagicManaCost.TWO_BLUE, 
+                        true, 
+                        true),
                     MagicBounceTargetPicker.getInstance(),
-                    new Object[]{cardOnStack},
                     this,
                     "Return target creature$ to its owner's hand.");
         }
@@ -38,12 +39,9 @@ public class Vacuumelt {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                            game.doAction(new MagicRemoveFromPlayAction(
-                                    creature,
-                                    MagicLocationType.OwnersHand));
+                    game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.OwnersHand));
                 }
             });
         }
