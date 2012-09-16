@@ -7,7 +7,7 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.action.MagicChangeStateAction;
-import magic.model.action.MagicMoveCardAction;
+import magic.model.action.MagicChangeCardDestinationAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicBuybackChoice;
 import magic.model.choice.MagicTargetChoice;
@@ -21,13 +21,11 @@ public class Change_of_Heart {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     new MagicBuybackChoice(
-                            MagicTargetChoice.NEG_TARGET_CREATURE,
-                            MagicManaCost.THREE),
+                        MagicTargetChoice.NEG_TARGET_CREATURE,
+                        MagicManaCost.THREE),
                     new MagicNoCombatTargetPicker(true,false,false),
-                    new Object[]{cardOnStack},
                     this,
                     "Target creature$ can't attack this turn. If the buyback " +
                     "cost was payed$, return " + cardOnStack + " to its " +
@@ -40,27 +38,14 @@ public class Change_of_Heart {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            final boolean hasTarget = event.processTargetPermanent(
-                    game,
-                    choiceResults,
-                    0,
-                    new MagicPermanentAction() {
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeStateAction(creature,MagicPermanentState.CannotAttack,true));
                     if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
-                        game.doAction(new MagicMoveCardAction(
-                                cardOnStack.getCard(),
-                                MagicLocationType.Stack,
-                                MagicLocationType.OwnersHand));
-                    } else {
-                        game.doAction(new MagicMoveCardAction(cardOnStack));
-                    }
+                        game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
+                    } 
                 }
             });
-            if (!hasTarget) {
-                game.doAction(new MagicMoveCardAction(cardOnStack));
-            }
         }
     };
 }
