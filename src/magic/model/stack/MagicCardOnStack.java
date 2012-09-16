@@ -74,6 +74,10 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
         return getCardDefinition().getConvertedCost()+x;
     }
 
+    public int getX() {
+        return x;
+    }
+
     @Override
     public boolean isSpell() {
         return true;

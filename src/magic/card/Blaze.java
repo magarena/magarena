@@ -19,13 +19,11 @@ public class Blaze {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             final int amount=payedCost.getX();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(amount),
-                    new Object[]{cardOnStack,amount},
                     this,
-                    cardOnStack.getCard() + " deals "+amount+" damage to target creature or player$.");
+                    "SN deals "+amount+" damage to target creature or player$.");
         }
         @Override
         public void executeEvent(
@@ -33,11 +31,9 @@ public class Blaze {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
-                    final MagicDamage damage=new MagicDamage(cardOnStack.getCard(),target,(Integer)data[1],false);
+                    final MagicDamage damage=new MagicDamage(event.getSource(),target,event.getCardOnStack().getX(),false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });
