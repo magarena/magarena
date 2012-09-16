@@ -27,7 +27,7 @@ public class Mordant_Dragon {
                         new MagicDamageTargetPicker(amount),
                         new Object[]{amount},
                         this,
-                        "You may$ have " + permanent + " deal "+amount+" damage to target creature$ your opponent controls."):
+                        "You may$ have SN deal "+amount+" damage to target creature$ your opponent controls."):
                 MagicEvent.NONE;
         }
         
