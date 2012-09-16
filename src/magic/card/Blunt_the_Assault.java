@@ -16,13 +16,10 @@ public class Blunt_the_Assault {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
-                    new Object[]{cardOnStack},
+                    cardOnStack,
                     this,
-                    player + " gains 1 life for each creature on the battlefield. " +
+                    cardOnStack.getController() + " gains 1 life for each creature on the battlefield. " +
                     "Prevent all combat damage that would be dealt this turn.");
         }
         @Override
@@ -31,7 +28,6 @@ public class Blunt_the_Assault {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             final MagicPlayer player = event.getPlayer();
             final int amount = game.getNrOfPermanents(MagicType.Creature);
             if (amount > 0) {
