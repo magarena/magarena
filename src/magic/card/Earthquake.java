@@ -21,14 +21,10 @@ public class Earthquake {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             final int amount=payedCost.getX();
-            final MagicPlayer player=cardOnStack.getController();
-            final MagicCard card = cardOnStack.getCard();
             return new MagicEvent(
-                    card,
-                    player,
-                    new Object[]{cardOnStack,amount},
+                    cardOnStack,
                     this,
-                    card + " deals "+amount+" damage to each creature without flying and each player.");
+                    "SN deals "+amount+" damage to each creature without flying and each player.");
         }
         @Override
         public void executeEvent(
@@ -36,12 +32,10 @@ public class Earthquake {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));
-            final MagicSource source=cardOnStack.getCard();
-            final int amount=(Integer)data[1];
+            final MagicSource source=event.getSource();
+            final int amount=event.getCardOnStack().getX();
             final Collection<MagicTarget> targets=
-                game.filterTargets(cardOnStack.getController(),MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING);
+                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING);
             for (final MagicTarget target : targets) {
                 final MagicDamage damage=new MagicDamage(source,target,amount,false);
                 game.doAction(new MagicDealDamageAction(damage));
