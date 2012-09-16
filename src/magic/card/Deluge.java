@@ -18,9 +18,7 @@ public class Deluge {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
-                    new Object[]{cardOnStack},
+                    cardOnStack,
                     this,
                     "Tap all creatures without flying.");
         }
@@ -30,10 +28,8 @@ public class Deluge {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));
             final Collection<MagicTarget> targets=
-                game.filterTargets(cardOnStack.getController(),MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING);
+                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING);
             for (final MagicTarget target : targets) {
                 game.doAction(new MagicTapAction((MagicPermanent)target,true));
             }
