@@ -21,13 +21,10 @@ public class Thatcher_Revolt {
         public MagicEvent getEvent(
                 final MagicCardOnStack cardOnStack,
                 final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
-                    new Object[]{cardOnStack,player},
+                    cardOnStack,
                     this,
-                    player + " puts three 1/1 red Human creature " +
+                    "PN puts three 1/1 red Human creature " +
                     "tokens with haste onto the battlefield. Sacrifice " +
                     "those tokens at the beginning of the next end step.");
         }
@@ -37,7 +34,6 @@ public class Thatcher_Revolt {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             final MagicPlayer player = event.getPlayer();
             final MagicCardDefinition token = TokenCardDefinitions.get("Human2");
             for (int x=3;x>0;x--) {
