@@ -31,14 +31,12 @@ public class Fireslinger {
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicPlayer player=source.getController();
             return new MagicEvent(
                     source,
-                    player,
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(1),
                     this,
-                    source + " deals 1 damage to target creature or player$ and 1 damage to you.");
+                    "SN deals 1 damage to target creature or player$ and 1 damage to you.");
         }
 
         @Override
@@ -48,10 +46,10 @@ public class Fireslinger {
                 public void doAction(final MagicTarget target) {
                     final MagicDamage damage1=new MagicDamage(source,target,1,false);
                     game.doAction(new MagicDealDamageAction(damage1));
+                    final MagicDamage damage2=new MagicDamage(source,event.getPlayer(),1,false);
+                    game.doAction(new MagicDealDamageAction(damage2));
                 }
             });
-            final MagicDamage damage2=new MagicDamage(source,event.getPlayer(),1,false);
-            game.doAction(new MagicDealDamageAction(damage2));
         }
     };
 }
