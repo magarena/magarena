@@ -24,11 +24,9 @@ public class Pongify {
                 final MagicCardOnStack cardOnStack,
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     MagicTargetChoice.TARGET_CREATURE,
                     new MagicDestroyTargetPicker(true),
-                    new Object[]{cardOnStack},
                     this,
                     "Destroy target creature$. It can't be regenerated. " +
                     "That creature's controller puts a 3/3 green Ape " +
@@ -40,7 +38,6 @@ public class Pongify {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     final MagicPlayer controller = creature.getController();
