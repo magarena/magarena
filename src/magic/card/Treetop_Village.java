@@ -67,10 +67,8 @@ public class Treetop_Village {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    "Until end of turn, " + source + 
-                    " becomes a 3/3 green Ape creature with trample. " + 
+                    "Until end of turn, SN becomes a 3/3 green Ape creature with trample. " + 
                     "It's still a land.");
         }
         @Override
