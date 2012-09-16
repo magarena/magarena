@@ -14,13 +14,10 @@ public class Grim_Flowering {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
-                    new Object[]{cardOnStack},
+                    cardOnStack,
                     this,
-                    player + " draws a card for each creature " +
+                    cardOnStack.getController() + " draws a card for each creature " +
                     "card in his or her graveyard.");
         }
         @Override
@@ -29,7 +26,6 @@ public class Grim_Flowering {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             final MagicPlayer player = event.getPlayer();
             final int amount = game.filterTargets(
                     player,
