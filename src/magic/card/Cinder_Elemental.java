@@ -44,16 +44,16 @@ public class Cinder_Elemental {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(amount),
-                    new Object[]{source,amount},
+                    new Object[]{amount},
                     this,
-                    source + " deals "+amount+" damage to target creature or player$.");
+                    "SN deals "+amount+" damage to target creature or player$.");
         }
 
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
-                    final MagicDamage damage=new MagicDamage((MagicSource)data[0],target,(Integer)data[1],false);
+                    final MagicDamage damage=new MagicDamage(event.getSource(),target,(Integer)data[0],false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });
