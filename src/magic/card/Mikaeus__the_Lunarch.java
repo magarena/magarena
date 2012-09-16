@@ -34,12 +34,10 @@ public class Mikaeus__the_Lunarch {
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicPlayer player = source.getController();
             return new MagicEvent(
                     source,
-                    player,
                     this,
-                    "Put a +1/+1 counter on " + source + ".");
+                    "Put a +1/+1 counter on SN.");
         }
         
         @Override
@@ -69,7 +67,6 @@ public class Mikaeus__the_Lunarch {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
                     "Put a +1/+1 counter on each other creature you control.");
         }
