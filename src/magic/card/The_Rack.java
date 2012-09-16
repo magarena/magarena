@@ -25,8 +25,7 @@ public class The_Rack {
                     permanent,
                     upkeepPlayer,
                     this,
-                    permanent + " deals X damage to " + upkeepPlayer +
-                    " where X is 3 minus the number of cards in his or her hand."):
+                    "SN deals X damage to PN where X is 3 minus the number of cards in his or her hand."):
                 MagicEvent.NONE;
         }
         @Override

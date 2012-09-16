@@ -49,10 +49,9 @@ public class Inferno_Elemental {
             return (permanent == blocker && blocked.isValid()) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     new Object[]{blocked},
                     this,
-                    permanent + " deals 3 damage to " + blocked + "."):
+                    "SN deals 3 damage to " + blocked + "."):
                 MagicEvent.NONE;
         }
         @Override

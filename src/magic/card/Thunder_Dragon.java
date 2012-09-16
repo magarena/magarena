@@ -22,7 +22,7 @@ public class Thunder_Dragon {
                     permanent,
                     player,
                     this,
-                    permanent + " deals 3 damage to each creature without flying.");
+                    "SN deals 3 damage to each creature without flying.");
         }
         @Override
         public void executeEvent(

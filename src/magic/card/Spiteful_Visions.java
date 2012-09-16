@@ -22,7 +22,7 @@ public class Spiteful_Visions {
                 permanent,
                 player,
                 this,
-                permanent + " deals 1 damage to " + player + ".");
+                "SN deals 1 damage to PN.");
         }
         
         @Override

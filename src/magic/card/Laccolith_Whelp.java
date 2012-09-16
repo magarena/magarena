@@ -18,19 +18,17 @@ public class Laccolith_Whelp {
     public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            final MagicPlayer player = permanent.getController();
             return (creature == permanent) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new MagicMayChoice(
-                        player + " may have " + permanent + " deal " +
+                        permanent.getController() + " may have " + permanent + " deal " +
                         "damage equal to its power to target creature.",
                         MagicTargetChoice.NEG_TARGET_CREATURE
                     ),
                     new MagicDamageTargetPicker(permanent.getPower()),
                     this,
-                    player + " may$ have " + permanent + " deal " +
+                    "PN may$ have SN deal " +
                     "damage equal to its power to target creature$."
                 ):
                 MagicEvent.NONE;

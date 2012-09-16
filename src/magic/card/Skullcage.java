@@ -20,7 +20,7 @@ public class Skullcage {
                     permanent,
                     player,
                     this,
-                    permanent + " deals 2 damage to your opponent " + 
+                    "SN deals 2 damage to your opponent " + 
                     "unless your opponent has exactly three or exactly four cards in hand."):
                 MagicEvent.NONE;
         }

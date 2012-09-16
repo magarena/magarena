@@ -20,11 +20,10 @@ public class Perilous_Myr {
         public MagicEvent getEvent(final MagicPermanent permanent) {
             return new MagicEvent(
                 permanent,
-                permanent.getController(),
                 MagicTargetChoice.TARGET_CREATURE_OR_PLAYER,
                 new MagicDamageTargetPicker(2),
                 this,
-                permanent + " deals 2 damage to target creature or player$."
+                "SN deals 2 damage to target creature or player$."
             );
         }
         

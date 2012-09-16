@@ -19,9 +19,8 @@ public class Lightning_Reaver {
             return (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
                 new MagicEvent(
                         permanent,
-                        permanent.getController(),
                         this,
-                        "Put a charge counter on " + permanent + "."):
+                        "Put a charge counter on SN."):
                 MagicEvent.NONE;
         }
         @Override
@@ -44,8 +43,8 @@ public class Lightning_Reaver {
                         permanent,
                         player.getOpponent(),
                         this,
-                        permanent + " deals damage equal to the number of " + 
-                        "charge counters on it to " + player.getOpponent() + "."):
+                        "SN deals damage equal to the number of " + 
+                        "charge counters on it to PN."):
                 MagicEvent.NONE;
         }
         @Override
