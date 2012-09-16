@@ -45,7 +45,6 @@ public class Ezuri__Renegade_Leader {
                     targetFilter,true,MagicTargetHint.Positive,"another target Elf");
             return new MagicEvent(
                     source,
-                    source.getController(),
                     targetChoice,
                     MagicRegenerateTargetPicker.getInstance(),
                     this,
@@ -81,10 +80,8 @@ public class Ezuri__Renegade_Leader {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    "Elf creatures " + source.getController() + " controls " +
-                    "get +3/+3 and gain trample until end of turn.");
+                    "Elf creatures PN controls get +3/+3 and gain trample until end of turn.");
         }
 
         @Override
