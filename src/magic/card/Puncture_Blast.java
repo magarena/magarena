@@ -19,16 +19,12 @@ public class Puncture_Blast {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player=cardOnStack.getController();
-            final MagicCard card = cardOnStack.getCard();
             return new MagicEvent(
-                    card,
-                    player,
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(3),
-                    new Object[]{cardOnStack},
                     this,
-                    card + " deals 3 damage to target creature or player$.");
+                    "SN deals 3 damage to target creature or player$.");
         }
         @Override
         public void executeEvent(
@@ -36,11 +32,9 @@ public class Puncture_Blast {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
-                    final MagicDamage damage=new MagicDamage(cardOnStack.getCard(),target,3,false);
+                    final MagicDamage damage=new MagicDamage(event.getSource(),target,3,false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });
