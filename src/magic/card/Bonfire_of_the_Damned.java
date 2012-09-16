@@ -25,13 +25,11 @@ public class Bonfire_of_the_Damned {
                 final MagicPayedCost payedCost) {
             final int amount = payedCost.getX();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_PLAYER,
                     new MagicDamageTargetPicker(amount),
-                    new Object[]{cardOnStack,amount},
                     this,
-                    cardOnStack.getCard() + " deals " + amount +
+                    "SN deals " + amount +
                     " damage to target player$ and each creature he or she controls.");
         }
         @Override
@@ -40,13 +38,11 @@ public class Bonfire_of_the_Damned {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
-                    final int amount = (Integer)data[1];
+                    final int amount = event.getCardOnStack().getX();
                     MagicDamage damage = new MagicDamage(
-                            cardOnStack.getCard(),
+                            event.getSource(),
                             player,
                             amount,
                             false);
@@ -56,7 +52,7 @@ public class Bonfire_of_the_Damned {
                             MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
                     for (final MagicTarget target : targets) {
                         damage = new MagicDamage(
-                                cardOnStack.getCard(),
+                                event.getSource(),
                                 target,
                                 amount,
                                 false);
