@@ -35,9 +35,8 @@ public class Argent_Sphinx {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    "Exile " + source + ". Return it to the battlefield " +
+                    "Exile SN. Return it to the battlefield " +
                     "under your control at the end of turn.");
         }
         @Override
