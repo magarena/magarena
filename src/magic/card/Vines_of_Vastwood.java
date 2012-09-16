@@ -22,17 +22,15 @@ public class Vines_of_Vastwood {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     new MagicKickerChoice(
                         MagicTargetChoice.TARGET_CREATURE,
                         MagicManaCost.GREEN,
                         false),
                     MagicPumpTargetPicker.create(),
-                    new Object[]{cardOnStack},
                     this,
                     "Target creature$ can't be the target of spells or abilities your opponent controls this turn. " + 
-                    "If " + cardOnStack.getCard() + " was kicked$, that creature gets +4/+4 until end of turn.");
+                    "If " + cardOnStack + " was kicked$, that creature gets +4/+4 until end of turn.");
         }
         @Override
         public void executeEvent(
@@ -40,8 +38,6 @@ public class Vines_of_Vastwood {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     final MagicPlayer player = event.getPlayer();
