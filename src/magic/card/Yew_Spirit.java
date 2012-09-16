@@ -31,9 +31,8 @@ public class Yew_Spirit {
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    source + " gets +X/+X until end of turn, where X is its power.");
+                    "SN gets +X/+X until end of turn, where X is its power.");
         }
         @Override
         public void executeEvent(
