@@ -19,16 +19,13 @@ public class Burn_the_Impure {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicCard card = cardOnStack.getCard();
             return new MagicEvent(
-                    card,
-                    cardOnStack.getController(),
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     new MagicDamageTargetPicker(3),
-                    new Object[]{cardOnStack},
                     this,
-                    card + " deals 3 damage to target creature$. If that creature " +
-                    "has infect, " + card + " deals 3 damage to that creature's controller.");
+                    "SN deals 3 damage to target creature$. If that creature " +
+                    "has infect, SN deals 3 damage to that creature's controller.");
         }
         @Override
         public void executeEvent(
@@ -36,14 +33,12 @@ public class Burn_the_Impure {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    final MagicDamage damage1 = new MagicDamage(cardOnStack.getCard(),creature,3,false);
+                    final MagicDamage damage1 = new MagicDamage(event.getSource(),creature,3,false);
                     game.doAction(new MagicDealDamageAction(damage1));
                     if (creature.hasAbility(MagicAbility.Infect)) {
-                        final MagicDamage damage2 = new MagicDamage(cardOnStack.getCard(),creature.getController(),3,false);
+                        final MagicDamage damage2 = new MagicDamage(event.getSource(),creature.getController(),3,false);
                         game.doAction(new MagicDealDamageAction(damage2));
                     }
                 }
