@@ -41,12 +41,10 @@ public class Skeletal_Vampire {
         public MagicEvent getPermanentEvent(
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
-            final MagicPlayer player=source.getController();
             return new MagicEvent(
                     source,
-                    player,
                     this,
-                    player + " puts two 1/1 black Bat creature tokens with flying onto the battlefield.");
+                    "PN puts two 1/1 black Bat creature tokens with flying onto the battlefield.");
         }
 
         @Override
@@ -83,9 +81,8 @@ public class Skeletal_Vampire {
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    "Regenerate " + source + ".");
+                    "Regenerate SN.");
         }
 
         @Override
@@ -105,7 +102,7 @@ public class Skeletal_Vampire {
                     permanent,
                     player,
                     this,
-                    player + " puts two 1/1 black Bat creature tokens with flying onto the battlefield.");
+                    "PN puts two 1/1 black Bat creature tokens with flying onto the battlefield.");
         }
         
         @Override
