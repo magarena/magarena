@@ -44,10 +44,8 @@ public class Vault_of_the_Archangel {
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    "Creatures " + source.getController() +
-                    " controls gain deathtouch and lifelink until end of turn.");
+                    "Creatures PN controls gain deathtouch and lifelink until end of turn.");
         }
         @Override
         public void executeEvent(
