@@ -14,13 +14,10 @@ public class Bountiful_Harvest {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
-                    new Object[]{cardOnStack},
+                    cardOnStack,
                     this,
-                    player + " gains 1 life for each land he or she controls.");
+                    cardOnStack.getController() + " gains 1 life for each land you control.");
         }
         @Override
         public void executeEvent(
@@ -28,7 +25,6 @@ public class Bountiful_Harvest {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             final MagicPlayer player = event.getPlayer();
             final int amount = player.getNrOfPermanentsWithType(MagicType.Land);
             if (amount > 0) {
