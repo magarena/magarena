@@ -30,9 +30,8 @@ public class Putrid_Leech {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    source + " gets +2/+2 until end of turn.");
+                    "SN gets +2/+2 until end of turn.");
         }
 
         @Override
