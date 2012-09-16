@@ -21,40 +21,18 @@ import magic.model.stack.MagicTriggerOnStack;
 import magic.model.target.MagicGraveyardTargetPicker;
 
 public class Grave_Exchange {
-    private static final MagicEventAction EVENT = new MagicEventAction() {
-        @Override
-        public void executeEvent(
-            final MagicGame game,
-            final MagicEvent event,
-            final Object[] data,
-            final Object[] choiceResults) {
-            event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
-                public void doAction(final MagicPlayer opponent) {
-                    if (opponent.controlsPermanentWithType(MagicType.Creature)) {
-                        game.addEvent(new MagicSacrificePermanentEvent(
-                            event.getSource(),
-                            event.getPlayer().getOpponent(),
-                            MagicTargetChoice.SACRIFICE_CREATURE));
-                    }
-                }
-            });
-        }
-    };
-    
     public static final MagicSpellCardEvent S =new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(
                 final MagicCardOnStack cardOnStack,
                 final MagicPayedCost payedCost) {
-            final MagicPlayer player=cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
-                    MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
-                    new MagicGraveyardTargetPicker(false),
-                    new Object[]{cardOnStack,player},
-                    this,
-                    "Return target creature card$ from your graveyard to your hand.");
+                cardOnStack,
+                MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
+                new MagicGraveyardTargetPicker(false),
+                this,
+                "Return target creature card$ from your graveyard to your hand."
+            );
         }
         @Override
         public void executeEvent(
@@ -62,7 +40,6 @@ public class Grave_Exchange {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard targetCard) {
                     game.doAction(new MagicRemoveCardAction(
@@ -74,15 +51,31 @@ public class Grave_Exchange {
                             MagicLocationType.OwnersHand));
                 }
             });
-            final MagicEvent triggerEvent = new MagicEvent(
-                    event.getSource(),
-                    event.getPlayer(),
-                    MagicTargetChoice.NEG_TARGET_PLAYER,
-                    EVENT,
-                    "Target player$ sacrifices a creature."
-                );
-                game.doAction(new MagicPutItemOnStackAction(
-                        new MagicTriggerOnStack(triggerEvent)));
+            game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(new MagicEvent(
+                event.getSource(),
+                MagicTargetChoice.NEG_TARGET_PLAYER,
+                EVENT_ACTION,
+                "Target player$ sacrifices a creature."
+            ))));
+        }
+    };
+    
+    private static final MagicEventAction EVENT_ACTION = new MagicEventAction() {
+        @Override
+        public void executeEvent(
+            final MagicGame game,
+            final MagicEvent event,
+            final Object[] data,
+            final Object[] choiceResults) {
+            event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
+                public void doAction(final MagicPlayer opponent) {
+                    game.addEvent(new MagicSacrificePermanentEvent(
+                        event.getSource(),
+                        opponent,
+                        MagicTargetChoice.SACRIFICE_CREATURE
+                    ));
+                }
+            });
         }
     };
 }
