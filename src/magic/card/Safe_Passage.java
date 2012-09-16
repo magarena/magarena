@@ -14,11 +14,8 @@ public class Safe_Passage {
     public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player=cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
-                    new Object[]{cardOnStack},
+                    cardOnStack,
                     this,
                     "Prevent all damage that would be dealt to you and creatures you control this turn.");
         }
@@ -28,7 +25,6 @@ public class Safe_Passage {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             game.doAction(new MagicChangePlayerStateAction(event.getPlayer(),MagicPlayerState.PreventAllDamage,true));
         }
     };
