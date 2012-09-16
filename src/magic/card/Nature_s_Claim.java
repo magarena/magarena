@@ -19,11 +19,9 @@ public class Nature_s_Claim {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_ENCHANTMENT,
                     new MagicDestroyTargetPicker(false),
-                    new Object[]{cardOnStack},
                     this,
                     "Destroy target artifact or enchantment$. Its controller gains 4 life.");
         }
@@ -33,7 +31,6 @@ public class Nature_s_Claim {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicDestroyAction(permanent));
