@@ -19,13 +19,11 @@ public class Smash_to_Smithereens {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_ARTIFACT,
                     new MagicDestroyTargetPicker(false),
-                    new Object[]{cardOnStack},
                     this,
-                    "Destroy target artifact$. " + cardOnStack.getCard() + " deals 3 damage to that artifact's controller.");
+                    "Destroy target artifact$. SN deals 3 damage to that artifact's controller.");
         }
         @Override
         public void executeEvent(
@@ -33,12 +31,10 @@ public class Smash_to_Smithereens {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
-                    final MagicDamage damage=new MagicDamage(event.getSource(),permanent.getController(),3,false);
                     game.doAction(new MagicDestroyAction(permanent));
+                    final MagicDamage damage=new MagicDamage(event.getSource(),permanent.getController(),3,false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });
