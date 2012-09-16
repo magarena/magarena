@@ -8,7 +8,7 @@ import magic.model.MagicLocationType;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPlayer;
-import magic.model.action.MagicMoveCardAction;
+import magic.model.action.MagicChangeCardDestinationAction;
 import magic.model.action.MagicPlayCardAction;
 import magic.model.action.MagicReanimateAction;
 import magic.model.choice.MagicBuybackChoice;
@@ -24,11 +24,9 @@ public class Corpse_Dance {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     new MagicBuybackChoice(MagicManaCost.TWO),
                     new MagicGraveyardTargetPicker(true),
-                    new Object[]{cardOnStack},
                     this,
                     "Return the top creature card$ of your graveyard to the battlefield. " +
                     "That creature gains haste until end of turn. Exile it at the " +
@@ -42,7 +40,6 @@ public class Corpse_Dance {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
             final MagicPlayer player = event.getPlayer();
             final List<MagicTarget> targets =
                     game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD);
@@ -52,18 +49,10 @@ public class Corpse_Dance {
                         player,
                         card,
                         MagicPlayCardAction.HASTE_UEOT_REMOVE_AT_END_OF_TURN));
-                if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
-                    game.doAction(new MagicMoveCardAction(
-                            cardOnStack.getCard(),
-                            MagicLocationType.Stack,
-                            MagicLocationType.OwnersHand));
-                } else {
-                    game.doAction(new MagicMoveCardAction(cardOnStack));
-                }
-            } else {
-                game.doAction(new MagicMoveCardAction(cardOnStack));
-            }
-            
+            } 
+            if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
+                game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
+            } 
         }
     };
 }
