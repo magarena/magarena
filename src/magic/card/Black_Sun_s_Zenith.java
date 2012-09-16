@@ -24,10 +24,9 @@ public class Black_Sun_s_Zenith {
             final int amount=payedCost.getX();
             return new MagicEvent(
                     cardOnStack,
-                    new Object[]{amount},
                     this,
                     "Put "+amount+" -1/-1 counters on each creature. " + 
-                    "Shuffle " + cardOnStack + " into its owner's library.");
+                    "Shuffle SN into its owner's library.");
         }
         @Override
         public void executeEvent(
@@ -35,7 +34,7 @@ public class Black_Sun_s_Zenith {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final int amount=(Integer)data[0];
+            final int amount = event.getCardOnStack().getX();
             final Collection<MagicTarget> targets = 
                 game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE);
             for (final MagicTarget target : targets) {
