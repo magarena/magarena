@@ -14,11 +14,8 @@ public class Mind_Spring {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             final int amount=payedCost.getX();
-            final MagicPlayer player=cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
-                    new Object[]{cardOnStack,amount},
+                    cardOnStack,
                     this,
                     "Draw "+amount+" cards.");
         }
@@ -28,8 +25,7 @@ public class Mind_Spring {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-            game.doAction(new MagicDrawAction(event.getPlayer(),(Integer)data[1]));
+            game.doAction(new MagicDrawAction(event.getPlayer(),event.getCardOnStack().getX()));
         }
     };
 }
