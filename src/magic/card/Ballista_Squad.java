@@ -30,10 +30,12 @@ public class Ballista_Squad {
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
             return new MagicEvent[]{
-                    new MagicPayManaCostTapEvent(
-                            source,
-                            source.getController(),
-                            MagicManaCost.X_WHITE)};
+                new MagicPayManaCostTapEvent(
+                    source,
+                    source.getController(),
+                    MagicManaCost.X_WHITE
+                )
+            };
         }
 
         @Override
@@ -46,10 +48,9 @@ public class Ballista_Squad {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_ATTACKING_OR_BLOCKING_CREATURE,
                     new MagicDamageTargetPicker(amount),
-                    new Object[]{source,amount},
+                    new Object[]{amount},
                     this,
-                    source + " deals " + amount +
-                    " damage to target creature$.");
+                    "SN deals " + amount + " damage to target creature$.");
         }
 
         @Override
@@ -61,9 +62,9 @@ public class Ballista_Squad {
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicDamage damage = new MagicDamage(
-                            (MagicSource)data[0],
+                            event.getSource(),
                             target,
-                            (Integer)data[1],
+                            (Integer)data[0],
                             false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
