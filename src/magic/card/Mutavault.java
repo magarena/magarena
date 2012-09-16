@@ -55,9 +55,8 @@ public class Mutavault {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    source + " becomes a 2/2 creature with all creature types until end of turn. " + 
+                    "SN becomes a 2/2 creature with all creature types until end of turn. " + 
                     "It's still a land.");
         }
 
