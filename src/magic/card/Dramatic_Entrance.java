@@ -20,11 +20,9 @@ public class Dramatic_Entrance {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     MagicTargetChoice.TARGET_GREEN_CREATURE_CARD_FROM_HAND,
                     new MagicGraveyardTargetPicker(true),
-                    new Object[]{cardOnStack},
                     this,
                     "Put a green creature card$ from your hand onto the battlefield.");
         }
@@ -34,7 +32,6 @@ public class Dramatic_Entrance {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard card) {
                     game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
