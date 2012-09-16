@@ -22,13 +22,12 @@ public class Artifact_Mutation {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_ARTIFACT,
                     new MagicDestroyTargetPicker(true),
-                    new Object[]{cardOnStack},
                     this,
-                    "Destroy target artifact$. It can't be regenerated.");
+                    "Destroy target artifact$. It can't be regenerated. " + 
+                    "Put X 1/1 green Saproling creature tokens onto the battlefield, where X is that artifact's converted mana cost.");
         }
         @Override
         public void executeEvent(
@@ -36,8 +35,6 @@ public class Artifact_Mutation {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicChangeStateAction(permanent,MagicPermanentState.CannotBeRegenerated,true));
