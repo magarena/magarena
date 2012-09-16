@@ -26,12 +26,10 @@ public class Gristleback {
         public MagicEvent getPermanentEvent(
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
-            final MagicPlayer player = source.getController();
             return new MagicEvent(
                     source,
-                    player,
                     this,
-                    player + " gains life equal to " + source + "'s power.");
+                    "PN gains life equal to SN's power.");
         }
         @Override
         public void executeEvent(
