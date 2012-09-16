@@ -29,9 +29,8 @@ public class Phyrexian_Prowler {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    source + " gets +1/+1 until end of turn.");
+                    "SN gets +1/+1 until end of turn.");
         }
 
         @Override

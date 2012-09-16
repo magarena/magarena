@@ -108,9 +108,8 @@ public class Raging_Ravine {
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                source.getController(),
                 this,
-                "Until end of turn, " + source + " becomes a 3/3 red and green Elemental creature with " + 
+                "Until end of turn, SN becomes a 3/3 red and green Elemental creature with " + 
                 "\"Whenever this creature attacks, put a +1/+1 counter on it.\" It's still a land.");
         }
 

@@ -67,10 +67,9 @@ public class Celestial_Colonnade {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    "Until end of turn, " + source + 
-                    " becomes a 4/4 white and blue Elemental creature with flying and vigilance. It's still a land.");
+                    "Until end of turn, SN becomes a 4/4 white and blue Elemental creature with flying and vigilance. " + 
+                    "It's still a land.");
         }
         @Override
         public void executeEvent(

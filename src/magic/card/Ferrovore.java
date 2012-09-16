@@ -39,9 +39,8 @@ public class Ferrovore {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    source + " gets +3/+0 until end of turn.");
+                    "SN gets +3/+0 until end of turn.");
         }
         @Override
         public void executeEvent(

@@ -28,12 +28,10 @@ public class Arcanis_the_Omnipotent {
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicPlayer player=source.getController();
             return new MagicEvent(
                     source,
-                    player,
                     this,
-                    player + " draws three cards.");
+                    "PN draws three cards.");
         }
         @Override
         public void executeEvent(
@@ -57,9 +55,8 @@ public class Arcanis_the_Omnipotent {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    "Return " + source + " to its owner's hand.");
+                    "Return SN to its owner's hand.");
         }
         @Override
         public void executeEvent(

@@ -30,9 +30,8 @@ public class Thalakos_Drifters {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    source + " gains shadow until end of turn.");
+                    "SN gains shadow until end of turn.");
         }
         @Override
         public void executeEvent(

@@ -68,10 +68,8 @@ public class Nantuko_Monastery {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    "Until end of turn, " + source + 
-                    " becomes a 4/4 green and white Insect Monk creature with first strike. " + 
+                    "Until end of turn, SN becomes a 4/4 green and white Insect Monk creature with first strike. " + 
                     "It's still a land.");
         }
         @Override

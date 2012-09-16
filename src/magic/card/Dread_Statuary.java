@@ -52,10 +52,8 @@ public class Dread_Statuary {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    "Until end of turn, " + source + 
-                    " becomes a 4/2 Golem artifact creature. " + 
+                    "Until end of turn, SN becomes a 4/2 Golem artifact creature. " + 
                     "It's still a land.");
         }
         @Override

@@ -60,10 +60,8 @@ public class Forbidding_Watchtower {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    "Until end of turn, " + source + 
-                    " becomes a 1/5 white Soldier creature. " + 
+                    "Until end of turn, SN becomes a 1/5 white Soldier creature. " + 
                     "It's still a land.");
         }
         @Override

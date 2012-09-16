@@ -41,12 +41,11 @@ public class Recurring_Nightmare {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
                     new MagicGraveyardTargetPicker(true),
                     this,
-                    "Return " + source + " to its owner's hand. Return " +
-                    "target creature card$ from your graveyard to the battlefield.");
+                    "Return SN to its owner's hand. " + 
+                    "Return target creature card$ from your graveyard to the battlefield.");
         }
         @Override
         public void executeEvent(

@@ -38,19 +38,18 @@ public class Falkenrath_Torturer {
         public MagicEvent getPermanentEvent(
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
-            String message = source + " gains flying until end of turn.";
+            String message = "SN gains flying until end of turn.";
             boolean isHuman = false;
             final MagicTarget target = payedCost.getTarget();
             if (target != MagicTargetNone.getInstance()) {
                 final MagicPermanent sacrificed = (MagicPermanent)payedCost.getTarget();
                 isHuman = sacrificed.getCardDefinition().hasSubType(MagicSubType.Human);
                 if (isHuman) {
-                    message += " Put a +1/+1 counter on " + source + ".";
+                    message += " Put a +1/+1 counter on SN.";
                 }
             }
             return new MagicEvent(
                     source,
-                    source.getController(),
                     new Object[]{source,isHuman},
                     this,
                     message);

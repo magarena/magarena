@@ -65,10 +65,8 @@ public class Skinshifter {
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    "Until end of turn, " + source + 
-                    " becomes a 4/4 Rhino and gains trample.");
+                    "Until end of turn, SN becomes a 4/4 Rhino and gains trample.");
         }
 
         @Override
@@ -124,10 +122,8 @@ public class Skinshifter {
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    "Until end of turn, " + source + 
-                    " becomes a 2/2 Bird and gains flying.");
+                    "Until end of turn, SN becomes a 2/2 Bird and gains flying.");
         }
 
         @Override
@@ -177,10 +173,8 @@ public class Skinshifter {
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    "Until end of turn, " + source + 
-                    " becomes a becomes a 0/8 Plant.");
+                    "Until end of turn, SN becomes a becomes a 0/8 Plant.");
         }
 
         @Override

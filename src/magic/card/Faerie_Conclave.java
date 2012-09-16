@@ -67,10 +67,8 @@ public class Faerie_Conclave {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    "Until end of turn, " + source + 
-                    " becomes a 2/1 blue Faerie creature with flying. " + 
+                    "Until end of turn, SN becomes a 2/1 blue Faerie creature with flying. " + 
                     "It's still a land.");
         }
         @Override

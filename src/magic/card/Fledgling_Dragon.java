@@ -50,9 +50,8 @@ public class Fledgling_Dragon {
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    source + " gets +1/+0 until end of turn.");
+                    "SN gets +1/+0 until end of turn.");
         }
 
         @Override

@@ -78,10 +78,8 @@ public class Stirring_Wildwood {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    "Until end of turn, " + source + 
-                    " becomes a 3/4 green and white Elemental creature with reach. It's still a land.");
+                    "Until end of turn, SN becomes a 3/4 green and white Elemental creature with reach. It's still a land.");
         }
         @Override
         public void executeEvent(

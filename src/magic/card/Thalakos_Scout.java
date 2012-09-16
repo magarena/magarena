@@ -28,9 +28,8 @@ public class Thalakos_Scout {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    "Return " + source + " to its owner's hand.");
+                    "Return SN to its owner's hand.");
         }
         @Override
         public void executeEvent(

@@ -27,10 +27,9 @@ public class Sokenzan_Spellblade {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    source + " gets +X/+0 until end of turn, where " +
-                    "X is the number of cards in your hand.");
+                    "SN gets +X/+0 until end of turn, " + 
+                    "where X is the number of cards in your hand.");
         }
         @Override
         public void executeEvent(

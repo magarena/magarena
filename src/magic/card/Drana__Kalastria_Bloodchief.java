@@ -32,13 +32,12 @@ public class Drana__Kalastria_Bloodchief {
             final int amount=payedCost.getX();
             return new MagicEvent(
                     source,
-                    source.getController(),
                     MagicTargetChoice.TARGET_CREATURE,
                     new MagicWeakenTargetPicker(0,amount),
                     new Object[]{source,amount},
                     this,
                     "Target creature$ gets -0/-"+amount+" until end of turn and " + 
-                    source + " gets +"+amount+"/+0 until end of turn.");
+                    "SN gets +"+amount+"/+0 until end of turn.");
         }
 
         @Override
