@@ -6,7 +6,6 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLifeAction;
-import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicPlayerAction;
 import magic.model.action.MagicChangeCardDestinationAction;
 import magic.model.choice.MagicBuybackChoice;
