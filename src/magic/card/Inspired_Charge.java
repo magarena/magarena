@@ -18,13 +18,10 @@ public class Inspired_Charge {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player=cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
-                    new Object[]{cardOnStack},
+                    cardOnStack,
                     this,
-                    "Creatures " + player + " controls get +2/+1 until end of turn.");
+                    "Creatures " + cardOnStack.getController() + " controls get +2/+1 until end of turn.");
         }
         @Override
         public void executeEvent(
@@ -32,7 +29,6 @@ public class Inspired_Charge {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));            
             final Collection<MagicTarget> targets=
                 game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicTarget target : targets) {
