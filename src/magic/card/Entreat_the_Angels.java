@@ -17,13 +17,10 @@ public class Entreat_the_Angels {
                 final MagicCardOnStack cardOnStack,
                 final MagicPayedCost payedCost) {
             final int x = payedCost.getX();
-            final MagicPlayer player = cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
-                    new Object[]{cardOnStack,x},
+                    cardOnStack,
                     this,
-                    player + " puts " + x + " 4/4 white Angel " +
+                    "PN puts " + x + " 4/4 white Angel " +
                     "creature tokens with flying onto the battlefield.");
         }
         @Override
@@ -32,8 +29,7 @@ public class Entreat_the_Angels {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-            int x = (Integer)data[1];
+            int x = event.getCardOnStack().getX();
             for (;x>0;x--) {
                 game.doAction(new MagicPlayTokenAction(
                         event.getPlayer(),
