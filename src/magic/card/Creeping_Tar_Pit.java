@@ -67,10 +67,8 @@ public class Creeping_Tar_Pit {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    "Until end of turn, " + source + 
-                    " becomes a 3/2 blue and black Elemental creature and is unblockable. " + 
+                    "Until end of turn, SN becomes a 3/2 blue and black Elemental creature and is unblockable. " + 
                     "It's still a land.");
         }
         @Override
