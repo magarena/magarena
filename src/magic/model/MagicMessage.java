@@ -61,6 +61,10 @@ public class MagicMessage {
         }
     }
     
+    public static String replaceYou(final String sourceText,final String pname) {
+        return sourceText.replaceAll("PN", pname);
+    }
+    
     public static String replaceChoices(final String sourceText,final Object choices[]) {
         final String parts[]=sourceText.split("\\$");
         

@@ -24,7 +24,7 @@ public class Solemn_Offering {
                     new MagicDestroyTargetPicker(false),
                     this,
                     "Destroy target artifact or enchantment$. " +
-                    cardOnStack.getController() + " gains 4 life.");
+                    "PN gains 4 life.");
         }
         @Override
         public void executeEvent(
