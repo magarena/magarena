@@ -65,9 +65,8 @@ public class Grimoire_of_the_Dead {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    "Put a study counter on " + source + ".");
+                    "Put a study counter on SN.");
         }
         @Override
         public void executeEvent(
@@ -94,10 +93,8 @@ public class Grimoire_of_the_Dead {
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicPlayer player = source.getController();
             return new MagicEvent(
                     source,
-                    player,
                     this,
                     "Put all creature cards from all graveyards onto the " +
                     "battlefield under your control. They're black Zombies " +
