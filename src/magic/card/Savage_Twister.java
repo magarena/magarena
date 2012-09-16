@@ -21,14 +21,10 @@ public class Savage_Twister {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             final int amount=payedCost.getX();
-            final MagicPlayer player=cardOnStack.getController();
-            final MagicCard card = cardOnStack.getCard();
             return new MagicEvent(
-                    card,
-                    player,
-                    new Object[]{cardOnStack,amount},
+                    cardOnStack,
                     this,
-                    card + " deals "+amount+" damage to each creature.");
+                    "SN deals "+amount+" damage to each creature.");
         }
         @Override
         public void executeEvent(
@@ -36,14 +32,11 @@ public class Savage_Twister {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));
-            final int amount=(Integer)data[1];
-            final MagicSource source=cardOnStack.getCard();
+            final int amount=event.getCardOnStack().getX();
             final Collection<MagicTarget> targets=
-                game.filterTargets(cardOnStack.getController(),MagicTargetFilter.TARGET_CREATURE);
+                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE);
             for (final MagicTarget target : targets) {
-                final MagicDamage damage=new MagicDamage(source,target,amount,false);
+                final MagicDamage damage=new MagicDamage(event.getSource(),target,amount,false);
                 game.doAction(new MagicDealDamageAction(damage));
             }
         }
