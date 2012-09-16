@@ -18,11 +18,8 @@ public class Infest {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player=cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
-                    new Object[]{cardOnStack},
+                    cardOnStack,
                     this,
                     "All creatures get -2/-2 until end of turn.");
         }
@@ -32,10 +29,8 @@ public class Infest {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));
             final Collection<MagicTarget> targets=
-                game.filterTargets(cardOnStack.getController(),MagicTargetFilter.TARGET_CREATURE);
+                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE);
             for (final MagicTarget target : targets) {
                 game.doAction(new MagicChangeTurnPTAction((MagicPermanent)target,-2,-2));
             }
