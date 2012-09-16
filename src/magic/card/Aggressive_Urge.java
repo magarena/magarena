@@ -18,15 +18,12 @@ public class Aggressive_Urge {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
+                    cardOnStack,
                     MagicTargetChoice.POS_TARGET_CREATURE,
                     MagicPumpTargetPicker.create(),
-                    new Object[]{cardOnStack},
                     this,
-                    "Target creature$ gets +1/+1 until end of turn.");
+                    "Target creature$ gets +1/+1 until end of turn. Draw a card.");
         }
         @Override
         public void executeEvent(
@@ -34,13 +31,12 @@ public class Aggressive_Urge {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeTurnPTAction(creature,1,1));
+                    game.doAction(new MagicDrawAction(event.getPlayer(),1));
                 }
             });
-            game.doAction(new MagicDrawAction(event.getPlayer(),1));
         }
     };
 }
