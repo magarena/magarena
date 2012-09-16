@@ -19,10 +19,8 @@ public class Geist_Snatch {
                 final MagicCardOnStack cardOnStack,
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
+                    cardOnStack,
                     MagicTargetChoice.NEG_TARGET_CREATURE_SPELL,
-                    new Object[]{cardOnStack},
                     this,
                     "Counter target creature spell$. Put a 1/1 blue " +
                     "Spirit creature token with flying onto the battlefield.");
@@ -33,7 +31,6 @@ public class Geist_Snatch {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetCardOnStack(game,choiceResults,0,new MagicCardOnStackAction() {
                 public void doAction(final MagicCardOnStack targetSpell) {
                     game.doAction(new MagicCounterItemOnStackAction(targetSpell));
