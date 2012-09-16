@@ -33,11 +33,10 @@ public class Ember_Hauler {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(2),
                     this,
-                    source + " deals 2 damage to target creature or player$.");
+                    "SN deals 2 damage to target creature or player$.");
         }
 
         @Override

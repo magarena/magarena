@@ -50,16 +50,14 @@ public class Brimstone_Mage {
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicPlayer player = source.getController();
             final int amount = source.getCounters(MagicCounterType.Charge) >= 3 ? 3:1;
             return new MagicEvent(
                     source,
-                    player,
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(amount),
                     new Object[]{source,amount},
                     this,
-                    source + " deals " + amount + " damage to target creature or player$.");
+                    "SN deals " + amount + " damage to target creature or player$.");
         }
 
         @Override

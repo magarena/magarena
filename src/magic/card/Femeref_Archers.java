@@ -31,11 +31,10 @@ public class Femeref_Archers {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     MagicTargetChoice.NEG_TARGET_ATTACKING_CREATURE_WITH_FLYING,
                     new MagicDamageTargetPicker(4),
                     this,
-                    source + " deals 4 damage to target attacking creature$ with flying.");
+                    "SN deals 4 damage to target attacking creature$ with flying.");
         }
 
         @Override

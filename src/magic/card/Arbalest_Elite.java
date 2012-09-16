@@ -32,12 +32,11 @@ public class Arbalest_Elite {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     MagicTargetChoice.NEG_TARGET_ATTACKING_OR_BLOCKING_CREATURE,
                     new MagicDamageTargetPicker(3),
                     this,
-                    source + " deals 3 damage to target attacking or blocking creature$. " +
-                    source + " doesn't untap during your next untap step.");
+                    "SN deals 3 damage to target attacking or blocking creature$. " +
+                    "SN doesn't untap during your next untap step.");
         }
         @Override
         public void executeEvent(

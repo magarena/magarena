@@ -35,10 +35,9 @@ public class Brigid__Hero_of_Kinsbaile {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     MagicTargetChoice.NEG_TARGET_PLAYER,
                     this,
-                    source + " deals 2 damage to each attacking or blocking creature target player$ controls.");
+                    "SN deals 2 damage to each attacking or blocking creature target player$ controls.");
         }
 
         @Override

@@ -51,11 +51,10 @@ public class Shrine_of_Burning_Rage {
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                source.getController(),
                 MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                 new MagicDamageTargetPicker(source.getCounters(MagicCounterType.Charge)),
                 this,
-                source + " deals damage equal to the number of charge counters on it to target creature or player$.");
+                "SN deals damage equal to the number of charge counters on it to target creature or player$.");
         }
 
         @Override

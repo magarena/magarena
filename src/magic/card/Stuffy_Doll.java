@@ -31,9 +31,8 @@ public class Stuffy_Doll {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    source + " deals 1 damage to itself.");
+                    "SN deals 1 damage to itself.");
         }
         @Override
         public void executeEvent(

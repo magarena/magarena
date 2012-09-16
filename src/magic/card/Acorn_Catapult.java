@@ -42,11 +42,10 @@ public class Acorn_Catapult {
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     MagicTargetChoice.TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(1),
                     this,
-                    source + " deals 1 damage to target creature or player$. " +
+                    "SN deals 1 damage to target creature or player$. " +
                     "That creature's controller or that player puts a 1/1 " +
                     "green Squirrel creature token onto the battlefield");
         }

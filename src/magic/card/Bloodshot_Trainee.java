@@ -34,11 +34,10 @@ public class Bloodshot_Trainee {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     new MagicDamageTargetPicker(4),
                     this,
-                    source + " deals 4 damage to target creature$.");
+                    "SN deals 4 damage to target creature$.");
         }
 
         @Override

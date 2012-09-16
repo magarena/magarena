@@ -38,11 +38,10 @@ public class Scalding_Devil {
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     MagicTargetChoice.NEG_TARGET_PLAYER,
                     new MagicDamageTargetPicker(1),
                     this,
-                    source + " deals 1 damage to target player$.");
+                    "SN deals 1 damage to target player$.");
         }
 
         @Override

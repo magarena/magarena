@@ -88,6 +88,16 @@ public class MagicEvent implements MagicCopyable {
     
     public MagicEvent(
             final MagicSource source,
+            final MagicChoice choice,
+            final MagicTargetPicker targetPicker,
+            final Object data[],
+            final MagicEventAction action,
+            final String description) {
+        this(source,source.getController(),choice,targetPicker,data,action,description);
+    }
+    
+    public MagicEvent(
+            final MagicSource source,
             final MagicPlayer player,
             final MagicChoice choice,
             final MagicTargetPicker targetPicker,
@@ -113,6 +123,15 @@ public class MagicEvent implements MagicCopyable {
             final MagicEventAction action,
             final String description) {
         this(source,player,choice,MagicDefaultTargetPicker.create(),data,action,description);
+    }
+    
+    public MagicEvent(
+            final MagicSource source,
+            final MagicChoice choice,
+            final Object data[],
+            final MagicEventAction action,
+            final String description) {
+        this(source,source.getController(),choice,MagicDefaultTargetPicker.create(),data,action,description);
     }
     
     public MagicEvent(

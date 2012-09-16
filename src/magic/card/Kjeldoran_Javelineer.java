@@ -34,12 +34,11 @@ public class Kjeldoran_Javelineer {
             final int amount = source.getCounters(MagicCounterType.Charge);
             return new MagicEvent(
                     source,
-                    source.getController(),
                     MagicTargetChoice.NEG_TARGET_ATTACKING_OR_BLOCKING_CREATURE,
                     new MagicDamageTargetPicker(amount),
                     new Object[]{source,amount},
                     this,
-                    source + " deals " + amount + " damage to target creature$.");
+                    "SN deals " + amount + " damage to target creature$.");
         }
 
         @Override

@@ -39,12 +39,11 @@ public class Falkenrath_Exterminator {
             final int amount = source.getCounters(MagicCounterType.PlusOne);
             return new MagicEvent(
                     source,
-                    source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     new MagicDamageTargetPicker(amount),
                     new Object[]{amount},
                     this,
-                    source + " deals " + amount + " damage to target creature$.");
+                    "SN deals " + amount + " damage to target creature$.");
         }
         @Override
         public void executeEvent(

@@ -33,11 +33,10 @@ public class Ancient_Hellkite {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
                     new MagicDamageTargetPicker(1),
                     this,
-                    source + " deals 1 damage to target creature$ your opponent controls.");
+                    "SN deals 1 damage to target creature$ your opponent controls.");
         }
 
         @Override

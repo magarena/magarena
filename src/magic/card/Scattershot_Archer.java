@@ -31,9 +31,8 @@ public class Scattershot_Archer {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     this,
-                    source + " deals 1 damage to each creature with flying.");
+                    "SN deals 1 damage to each creature with flying.");
         }
 
         @Override

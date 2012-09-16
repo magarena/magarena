@@ -31,14 +31,12 @@ public class Goblin_Artillery {
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicPlayer player=source.getController();
             return new MagicEvent(
                     source,
-                    player,
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(2),
                     this,
-                    source + " deals 2 damage to target creature or player$ and 3 damage to you.");
+                    "SN deals 2 damage to target creature or player$ and 3 damage to you.");
         }
 
         @Override

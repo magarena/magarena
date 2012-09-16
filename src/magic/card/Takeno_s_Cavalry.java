@@ -32,11 +32,10 @@ public class Takeno_s_Cavalry {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     MagicTargetChoice.NEG_TARGET_ATTACKING_OR_BLOCKING_SPIRIT,
                     new MagicDamageTargetPicker(1),
                     this,
-                    source + " deals 1 damage to target attacking or blocking Spirit$.");
+                    "SN deals 1 damage to target attacking or blocking Spirit$.");
         }
 
         @Override

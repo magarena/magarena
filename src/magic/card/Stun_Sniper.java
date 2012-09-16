@@ -31,11 +31,10 @@ public class Stun_Sniper {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     new MagicTapTargetPicker(true,false),
                     this,
-                    source + " deals 1 damage to target creature$. Tap that creature.");
+                    "SN deals 1 damage to target creature$. Tap that creature.");
         }
         @Override
         public void executeEvent(

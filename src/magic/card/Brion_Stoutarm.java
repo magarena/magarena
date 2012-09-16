@@ -46,11 +46,10 @@ public class Brion_Stoutarm {
             final MagicTarget sacrificed=payedCost.getTarget();
             return new MagicEvent(
                     source,
-                    source.getController(),
                     MagicTargetChoice.NEG_TARGET_PLAYER,
                     new Object[]{source,sacrificed},
                     this,
-                    source + " deals damage equal to the power of "+sacrificed+" to target player$.");
+                    "SN deals damage equal to the power of "+sacrificed+" to target player$.");
         }
 
         @Override
