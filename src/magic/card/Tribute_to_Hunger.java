@@ -21,15 +21,12 @@ public class Tribute_to_Hunger {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player=cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
+                    cardOnStack,
                     MagicTargetChoice.TARGET_OPPONENT,
-                    new Object[]{cardOnStack},
                     this,
-                    "Target opponent$ sacrifices a creature. " + player + 
-                    " gains life equal to that creature's toughness.");
+                    "Target opponent$ sacrifices a creature. " + 
+                    "PN gains life equal to that creature's toughness.");
         }
         @Override
         public void executeEvent(
@@ -37,20 +34,16 @@ public class Tribute_to_Hunger {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer opponent) {
-                    if (opponent.controlsPermanentWithType(MagicType.Creature)) {
-                        game.addEvent(new MagicEvent(
-                            cardOnStack.getCard(),
-                            opponent,
-                            MagicTargetChoice.SACRIFICE_CREATURE,
-                            MagicSacrificeTargetPicker.create(),
-                            new Object[]{event.getPlayer()},
-                            EVENT_ACTION,
-                            "Choose a creature to sacrifice$."));
-                    }
+                    game.addEvent(new MagicEvent(
+                        event.getSource(),
+                        opponent,
+                        MagicTargetChoice.SACRIFICE_CREATURE,
+                        MagicSacrificeTargetPicker.create(),
+                        new Object[]{event.getPlayer()},
+                        EVENT_ACTION,
+                        "Choose a creature to sacrifice$."));
                 }
             });
         }
