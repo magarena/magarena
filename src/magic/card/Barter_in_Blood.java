@@ -17,11 +17,8 @@ public class Barter_in_Blood {
         public MagicEvent getEvent(
                 final MagicCardOnStack cardOnStack,
                 final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
-                    new Object[]{cardOnStack},
+                    cardOnStack,
                     this,
                     "Each player sacrifices two creatures.");
         }
@@ -32,19 +29,14 @@ public class Barter_in_Blood {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));
             for (final MagicPlayer player : game.getPlayers()) {
                 for (int i=2;i>0;i--) {
-                    if (player.controlsPermanentWithType(MagicType.Creature)) {
-                        game.addEvent(new MagicSacrificePermanentEvent(
-                            cardOnStack.getCard(),
-                            player,
-                            MagicTargetChoice.SACRIFICE_CREATURE));
-                    }
+                    game.addEvent(new MagicSacrificePermanentEvent(
+                        event.getSource(),
+                        player,
+                        MagicTargetChoice.SACRIFICE_CREATURE));
                 }
             }
         }
     };
-
 }
