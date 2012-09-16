@@ -17,9 +17,7 @@ public class Back_to_Nature {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    cardOnStack.getController(),
-                    new Object[]{cardOnStack},
+                    cardOnStack,
                     this,
                     "Destroy all enchantments.");
         }
@@ -29,10 +27,8 @@ public class Back_to_Nature {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-            game.doAction(new MagicMoveCardAction(cardOnStack));
             final Collection<MagicTarget> targets=
-                game.filterTargets(cardOnStack.getController(),MagicTargetFilter.TARGET_ENCHANTMENT);
+                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_ENCHANTMENT);
             game.doAction(new MagicDestroyAction(targets));
         }
     };
