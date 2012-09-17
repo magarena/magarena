@@ -88,7 +88,7 @@ public class Shrine_of_Burning_Rage {
                     permanent,
                     player,
                     this,
-                    "Put a charge counter on " + permanent + "."):
+                    "Put a charge counter on SN."):
                 MagicEvent.NONE;
         }
         
@@ -119,7 +119,7 @@ public class Shrine_of_Burning_Rage {
                     permanent,
                     player,
                     this,
-                    "Put a charge counter on " + permanent + "."):
+                    "Put a charge counter on SN."):
                 MagicEvent.NONE;
         }
         

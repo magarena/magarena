@@ -11,13 +11,11 @@ public class Silkenfist_Fighter {
     public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            final MagicPlayer player = permanent.getController();
             return (creature == permanent) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this, 
-                    "Untap " + permanent + ".") :
+                    "Untap SN.") :
             MagicEvent.NONE;
         }
         
@@ -27,7 +25,7 @@ public class Silkenfist_Fighter {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-                game.doAction(new MagicUntapAction(event.getPermanent()));
+            game.doAction(new MagicUntapAction(event.getPermanent()));
         }
     };
 }

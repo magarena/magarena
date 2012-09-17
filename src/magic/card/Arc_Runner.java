@@ -17,7 +17,7 @@ public class Arc_Runner {
                     permanent,
                     player,
                     this,
-                    "Sacrifice " + permanent + "."):
+                    "Sacrifice SN."):
                 MagicEvent.NONE;
         }
         @Override

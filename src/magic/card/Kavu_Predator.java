@@ -22,8 +22,8 @@ public class Kavu_Predator {
                     new Object[]{amount},
                     this,
                     amount > 1 ?
-                        "Put " + amount + " +1/+1 counters on " + permanent + "." :
-                        "Put a +1/+1 counter on " + permanent + ".") :
+                        "Put " + amount + " +1/+1 counters on SN." :
+                        "Put a +1/+1 counter on SN.") :
                 MagicEvent.NONE;
         }
         @Override
