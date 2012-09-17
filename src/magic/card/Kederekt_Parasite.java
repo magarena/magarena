@@ -32,7 +32,7 @@ public class Kederekt_Parasite {
                     permanent,
                     player,
                     this,
-                    permanent + " deals 1 damage to your opponent."):
+                    "SN deals 1 damage to PN."):
                 MagicEvent.NONE;
         }
         

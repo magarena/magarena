@@ -25,7 +25,7 @@ public class Subterranean_Shambler {
                     permanent,
                     player,
                     this,
-                    permanent + " deals 1 damage to each creature without flying.");
+                    "SN deals 1 damage to each creature without flying.");
         }
         @Override
         public void executeEvent(
@@ -48,13 +48,12 @@ public class Subterranean_Shambler {
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicPermanent data) {
-            return (permanent == data) ?
+                final MagicPermanent left) {
+            return (permanent == left) ?
                 new MagicEvent(
                         permanent,
-                        permanent.getController(),
                         this,
-                        permanent + " deals 1 damage to each creature without flying.") :
+                        "SN deals 1 damage to each creature without flying.") :
             MagicEvent.NONE;
         }
         @Override

@@ -20,7 +20,6 @@ public class Mordant_Dragon {
             return (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
                 new MagicEvent(
                         permanent,
-                        permanent.getController(),
                         new MagicMayChoice(
                             "You may have " + permanent + " deal that much damage to target creature.",
                             MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS),

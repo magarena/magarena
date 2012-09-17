@@ -14,14 +14,13 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 public class Serendib_Efreet {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             final MagicPlayer player=permanent.getController();
-            return (player==data) ?
+            return (player==upkeepPlayer) ?
                 new MagicEvent(
                         permanent,
-                        player,
                         this,
-                        permanent + " deals 1 damage to you.") :
+                        "SN deals 1 damage to PN.") :
                 MagicEvent.NONE;
         }
         @Override

@@ -20,10 +20,9 @@ public class Ashmouth_Hound {
             final MagicPermanentList plist = new MagicPermanentList(permanent.getBlockingCreatures());
             return new MagicEvent(
                 permanent,
-                permanent.getController(),
                 new Object[]{plist},
                 this,
-                permanent + " deals 1 damage to each blocking creature."
+                "SN deals 1 damage to each blocking creature."
             );
         }
         
@@ -48,10 +47,9 @@ public class Ashmouth_Hound {
             return (permanent == blocker && attacker.isValid()) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     new Object[]{attacker},
                     this,
-                    permanent + " deals 1 damage to " + attacker + "."):
+                    "SN deals 1 damage to " + attacker + "."):
                 MagicEvent.NONE;
         }
         @Override

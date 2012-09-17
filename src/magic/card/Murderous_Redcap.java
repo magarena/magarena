@@ -24,7 +24,7 @@ public class Murderous_Redcap {
                 MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                 new MagicDamageTargetPicker(power),
                 this,
-                permanent + " deals damage equal to its power to target creature or player$.");
+                "SN deals damage equal to its power to target creature or player$.");
         }
         
         @Override

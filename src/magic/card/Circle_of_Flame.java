@@ -24,7 +24,7 @@ public class Circle_of_Flame {
                         controller,
                         new Object[]{creature},
                         this,
-                        permanent + " deals 1 damage to attacking creature without flying."):
+                        "SN deals 1 damage to attacking creature without flying."):
                 MagicEvent.NONE;
         }
         

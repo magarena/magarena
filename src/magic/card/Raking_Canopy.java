@@ -17,10 +17,9 @@ public class Raking_Canopy {
             return (creature.getController()!=permanent.getController()&&creature.hasAbility(MagicAbility.Flying)) ?
                 new MagicEvent(
                         permanent,
-                        permanent.getController(),
                         new Object[]{creature},
                         this,
-                        permanent + " deals 4 damage to "+creature+".") :
+                        "SN deals 4 damage to "+creature+".") :
                 MagicEvent.NONE;
         }
         

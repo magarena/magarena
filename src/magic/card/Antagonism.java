@@ -21,7 +21,7 @@ public class Antagonism {
                     permanent,
                     player,
                     this,
-                    permanent + " deals 2 damage to " + player + "."):
+                    "SN deals 2 damage to PN."):
                 MagicEvent.NONE;
         }
         

@@ -21,12 +21,11 @@ public class Spitemare {
             return (damage.getTarget()==permanent) ?
                 new MagicEvent(
                         permanent,
-                        permanent.getController(),
                         MagicTargetChoice.TARGET_CREATURE_OR_PLAYER,
                         new MagicDamageTargetPicker(amount),
                         new Object[]{amount},
                         this,
-                        permanent + " deals "+amount+" damage to target creature or player$."):
+                        "SN deals "+amount+" damage to target creature or player$."):
                 MagicEvent.NONE;
         }
         @Override

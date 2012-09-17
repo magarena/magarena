@@ -50,16 +50,13 @@ public class Stuffy_Doll {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {  
             if (damage.getTarget() == permanent) {
-                final MagicPlayer player = permanent.getController();
                 final int amount = damage.getDealtAmount();
                 final MagicTarget target = permanent.getChosenTarget();
                 return new MagicEvent(
                         permanent,
-                        player,
                         new Object[]{amount},
                         this,
-                        permanent + " deals " + amount +
-                        " damage to " + target + ".");
+                        "SN deals " + amount + " damage to " + target + ".");
             }
             return MagicEvent.NONE;
         }

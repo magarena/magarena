@@ -21,7 +21,7 @@ public class Underworld_Dreams {
                     permanent,
                     player,
                     this,
-                    permanent + " deals 1 damage to your opponent."):
+                    "SN deals 1 damage to PN."):
                 MagicEvent.NONE;
         }
         

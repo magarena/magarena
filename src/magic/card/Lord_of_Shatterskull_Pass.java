@@ -30,13 +30,11 @@ public class Lord_of_Shatterskull_Pass {
     public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            final MagicPlayer player=permanent.getController();
             return (permanent==creature&&permanent.getCounters(MagicCounterType.Charge)>=6) ?
                 new MagicEvent(
                         permanent,
-                        player,
                         this,
-                        permanent + " deals 6 damage to each creature defending player controls."):
+                        "SN deals 6 damage to each creature defending player controls."):
                 MagicEvent.NONE;
         }
         @Override

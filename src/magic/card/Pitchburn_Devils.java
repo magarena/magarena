@@ -20,11 +20,10 @@ public class Pitchburn_Devils {
             return (MagicLocationType.Play == triggerData.fromLocation) ?
                 new MagicEvent(
                         permanent,
-                        permanent.getController(),
                         MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                         new MagicDamageTargetPicker(3),
                         this,
-                        permanent + " deals 3 damage to target creature or player$."):
+                        "SN deals 3 damage to target creature or player$."):
                 MagicEvent.NONE;
         }
         

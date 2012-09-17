@@ -27,8 +27,8 @@ public class Kessig_Malcontents {
                     MagicTargetChoice.NEG_TARGET_PLAYER,
                     new MagicDamageTargetPicker(amount),
                     this,
-                    permanent + " deals damage to target player$ " +
-                    "equal to the number of Humans " + player + " controls.");
+                    "SN deals damage to target player$ " +
+                    "equal to the number of Humans PN controls.");
         }
         
         @Override

@@ -29,7 +29,7 @@ public class Dwarven_Vigilantes {
                         MagicTargetChoice.NEG_TARGET_CREATURE),
                     new MagicDamageTargetPicker(permanent.getPower()),
                     this,
-                    player + " may$ have " + permanent + " deal " +
+                    "PN may$ have SN deal " +
                     "damage equal to its power to target creature$.");
             }
             return MagicEvent.NONE;

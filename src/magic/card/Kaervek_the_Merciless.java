@@ -24,12 +24,11 @@ public class Kaervek_the_Merciless {
             return (cardOnStack.getController()!=player) ?
                 new MagicEvent(
                         permanent,
-                        player,
                         MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                         new MagicDamageTargetPicker(damage),
                         new Object[]{damage},
                         this,
-                        permanent + " deals "+damage+" damage to target creature or player$."):
+                        "SN deals "+damage+" damage to target creature or player$."):
                 MagicEvent.NONE;
         }
         
