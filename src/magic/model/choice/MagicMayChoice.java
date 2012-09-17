@@ -24,20 +24,26 @@ public class MagicMayChoice extends MagicChoice {
             new Object[]{NO_CHOICE});
     
     private final MagicChoice choices[];
-    private MagicTargetChoice targetChoice = MagicTargetChoice.TARGET_NONE;
-    private int manaChoiceResultIndex=-1;
+    private final MagicTargetChoice targetChoice; 
+    private final int manaChoiceResultIndex;
     
     public MagicMayChoice(final String description,final MagicChoice... choices) {
         super(description);
         this.choices=choices;
+
+        MagicTargetChoice localTargetChoice = MagicTargetChoice.TARGET_NONE;
+        int localManaChoiceResultIndex = -1;
         for (int index=0;index<choices.length;index++) {
             final MagicChoice choice=choices[index];
             if (choice instanceof MagicTargetChoice) {
-                targetChoice=(MagicTargetChoice)choice;
+                localTargetChoice=(MagicTargetChoice)choice;
             } else if (choice instanceof MagicPayManaCostChoice) {
-                manaChoiceResultIndex=index+1;
+                localManaChoiceResultIndex=index+1;
             }
         }
+
+        targetChoice = localTargetChoice;
+        manaChoiceResultIndex = localManaChoiceResultIndex;
     }
             
     private MagicChoice[] getChoices() {
