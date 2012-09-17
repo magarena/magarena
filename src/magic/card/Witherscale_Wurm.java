@@ -61,7 +61,6 @@ public class Witherscale_Wurm {
             return (permanent == blocker && attacker.isValid()) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     new Object[]{attacker},
                     this,
                     attacker + " gains wither until end of turn."):
@@ -91,7 +90,7 @@ public class Witherscale_Wurm {
                     permanent,
                     player,
                     this,
-                    "Remove all -1/-1 counters from " + permanent + "."):
+                    "Remove all -1/-1 counters from SN."):
                 MagicEvent.NONE;
         }
         @Override

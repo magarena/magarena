@@ -17,7 +17,7 @@ public class Festerhide_Boar {
                     permanent,
                     player,
                     this,
-                    permanent + " enters the battlefield with two +1/+1 counters on it ");
+                    "SN enters the battlefield with two +1/+1 counters on it ");
             }
             return MagicEvent.NONE;
         }

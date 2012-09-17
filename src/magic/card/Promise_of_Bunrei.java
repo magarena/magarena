@@ -19,7 +19,7 @@ public class Promise_of_Bunrei {
                         permanent,
                         player,
                         this,
-                        "Sacrifice " + permanent + ". If you do, " + 
+                        "Sacrifice SN. If you do, " + 
                         "put four 1/1 colorless Spirit creature tokens onto the battlefield."):
                 MagicEvent.NONE;
         }

@@ -23,7 +23,7 @@ public class Call_to_the_Grave {
                 permanent,
                 player,
                 this,
-                player + " sacrifices a non-Zombie creature.");
+                "PN sacrifices a non-Zombie creature.");
         }
         
         @Override

@@ -24,13 +24,13 @@ public class Charmbreaker_Devils {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
             final MagicPlayer player = permanent.getController();
             return (player == data) ?
-                    new MagicEvent(
-                            permanent,
-                            player,
-                            this,
-                            "Return an instant or sorcery card at random " +
-                            "from your graveyard to your hand.") :
-                    MagicEvent.NONE;
+                new MagicEvent(
+                    permanent,
+                    player,
+                    this,
+                    "Return an instant or sorcery card at random " +
+                    "from your graveyard to your hand.") :
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(
@@ -63,7 +63,7 @@ public class Charmbreaker_Devils {
                     permanent,
                     player,
                     this,
-                    permanent + " gets +4/+0 until end of turn."):
+                    "SN gets +4/+0 until end of turn."):
                 MagicEvent.NONE;
         }
         @Override

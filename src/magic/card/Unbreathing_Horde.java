@@ -44,9 +44,8 @@ public class Unbreathing_Horde {
 
                 return new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     this,
-                    "Remove a +1/+1 counter from " + permanent + "."
+                    "Remove a +1/+1 counter from SN."
                 );
             }
             return MagicEvent.NONE;

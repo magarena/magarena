@@ -22,7 +22,7 @@ public class Draining_Whelk {
                 player,
                 MagicTargetChoice.TARGET_SPELL,
                 this,
-                "Counter target spell$. Put X +1/+1 counters on " + permanent + 
+                "Counter target spell$. Put X +1/+1 counters on SN " + 
                 ", where X is that spell's converted mana cost.");
         }
         @Override

@@ -29,9 +29,8 @@ public class Elder_Land_Wurm {
            return (permanent == data) ?
                 new MagicEvent(
                    permanent,
-                   permanent.getController(),
                    this,
-                   permanent + " loses defender."):
+                   "SN loses defender."):
                 MagicEvent.NONE;
        }
        @Override

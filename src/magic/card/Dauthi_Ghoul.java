@@ -17,12 +17,12 @@ public class Dauthi_Ghoul {
             return (otherPermanent != permanent &&
                     otherPermanent.isCreature() && 
                     otherPermanent.hasAbility(MagicAbility.Shadow)) ?
-                            new MagicEvent(
-                                    permanent,
-                                    player,
-                                    this,
-                                    player + " puts a +1/+1 counter on " + permanent + ".") :
-                            MagicEvent.NONE;
+                    new MagicEvent(
+                        permanent,
+                        player,
+                        this,
+                        "PN puts a +1/+1 counter on SN.") :
+                    MagicEvent.NONE;
         }
         @Override
         public void executeEvent(

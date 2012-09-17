@@ -80,7 +80,7 @@ public class Quest_for_the_Gemblades {
                                 1,
                                 MagicSimpleMayChoice.DEFAULT_YES),
                         this,
-                        player + " may$ put a quest counter on " + permanent + "."):
+                        "PN may$ put a quest counter on SN."):
                 MagicEvent.NONE;
         }
         @Override

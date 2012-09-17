@@ -15,9 +15,8 @@ public class Deep_Slumber_Titan {
             return (damage.getTarget() == permanent && permanent.isTapped()) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     this,
-                    "Untap " + permanent + ".") :
+                    "Untap SN.") :
                 MagicEvent.NONE;
         }
         @Override

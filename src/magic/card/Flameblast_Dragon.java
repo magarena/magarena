@@ -32,8 +32,8 @@ public class Flameblast_Dragon {
                             MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER), 
                         new MagicDamageTargetPicker(player.getMaximumX(game,MagicManaCost.X_RED)),
                         this,
-                        "You may pay$ {X}{R}$. If you do, " + permanent + 
-                        " deals X damage to target creature or player$."):
+                        "You may pay$ {X}{R}$. If you do, SN " + 
+                        "deals X damage to target creature or player$."):
                 MagicEvent.NONE;
         }
         

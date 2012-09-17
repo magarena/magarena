@@ -40,7 +40,7 @@ public class Fettergeist {
                     permanent,
                     player,
                     this,
-                    "Sacrifice " + permanent + " unless you pay " +
+                    "Sacrifice SN unless you pay " +
                     "{1} for each other creature you control.") :
                 MagicEvent.NONE;
         }
@@ -58,11 +58,11 @@ public class Fettergeist {
                 event.getSource(),
                 event.getPlayer(),
                 new MagicMayChoice(
-                        "You may pay " + cost.getText(),
-                        new MagicPayManaCostChoice(cost)),
+                    "You may pay " + cost.getText(),
+                    new MagicPayManaCostChoice(cost)),
                 EVENT_ACTION,
                 "You may$ pay " + cost.getText() +
-                "$. If you don't, sacrifice " + event.getSource() + "."
+                "$. If you don't, sacrifice SN."
                 );
             game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(triggerEvent)));            
         }
