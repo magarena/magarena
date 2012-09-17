@@ -18,8 +18,7 @@ public class Meglonoth {
                         permanent,
                         blocked.getController(),
                         this,
-                        permanent + " deals damage to the blocked creature's controller equal to " +
-                        permanent + "'s power."):
+                        "SN deals damage to the blocked creature's controller equal to SN's power."):
                 MagicEvent.NONE;
         }
         @Override

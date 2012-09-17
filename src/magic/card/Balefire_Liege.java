@@ -54,7 +54,7 @@ public class Balefire_Liege {
                     player,
                     MagicTargetChoice.NEG_TARGET_PLAYER,
                     this,
-                    permanent + " deals 3 damage to target player$."):
+                    "SN deals 3 damage to target player$."):
                 MagicEvent.NONE;
         }
         @Override

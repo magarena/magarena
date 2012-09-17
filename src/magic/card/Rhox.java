@@ -29,7 +29,7 @@ public class Rhox {
                         player + " may have " + permanent + " deal its combat damage " +
                         "to defending player as though it weren't blocked."),
                     this,
-                    player + " may$ have " + permanent + " deal its combat damage " +
+                    "PN may$ have SN deal its combat damage " +
                     "to defending player as though it weren't blocked."):
                 MagicEvent.NONE;
         }

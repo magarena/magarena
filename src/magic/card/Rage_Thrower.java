@@ -18,10 +18,9 @@ public class Rage_Thrower {
                     otherPermanent.isCreature()) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     MagicTargetChoice.NEG_TARGET_PLAYER,
                     this,
-                    permanent + " deals 2 damage to target player."):
+                    "SN deals 2 damage to target player."):
                 MagicEvent.NONE;
         }
         @Override

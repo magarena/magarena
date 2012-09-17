@@ -21,7 +21,7 @@ public class Crater_Hellion {
                     permanent,
                     player,
                     this,
-                    permanent + " deals 4 damage to each other creature.");
+                    "SN deals 4 damage to each other creature.");
         }
         @Override
         public void executeEvent(

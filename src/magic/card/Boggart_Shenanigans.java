@@ -27,13 +27,12 @@ public class Boggart_Shenanigans {
                 otherPermanent.hasSubType(MagicSubType.Goblin)) ? 
             new MagicEvent(
                 permanent,
-                permanent.getController(),
                 new MagicMayChoice(
-                    "You may have " + permanent + " deal 1 damage to target player.",
+                    permanent.getController() + " may have " + permanent + " deal 1 damage to target player.",
                     MagicTargetChoice.NEG_TARGET_PLAYER),
                 new MagicDamageTargetPicker(1),
                 this,
-                "You may$ have " + permanent + " deal 1 damage to target player$.") : 
+                "PN may$ have SN deal 1 damage to target player$.") : 
             MagicEvent.NONE;
     }
 

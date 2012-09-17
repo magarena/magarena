@@ -20,7 +20,7 @@ public class Lavaborn_Muse {
                         permanent,
                         player,
                         this,
-                        permanent + " deals 3 damage to " + player + "."):
+                        "SN deals 3 damage to PN."):
                 MagicEvent.NONE;
         }
         

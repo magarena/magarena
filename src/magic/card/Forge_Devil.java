@@ -25,8 +25,7 @@ public class Forge_Devil {
                     MagicTargetChoice.TARGET_CREATURE,
                     new MagicDamageTargetPicker(1),
                     this,
-                    permanent + " deals 1 damage to target " +
-                    "creature$ and 1 damage to " + player + ".");
+                    "SN deals 1 damage to target creature$ and 1 damage to PN.");
         }
         @Override
         public void executeEvent(

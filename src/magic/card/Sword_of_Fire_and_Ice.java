@@ -19,15 +19,13 @@ public class Sword_of_Fire_and_Ice {
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            final MagicPlayer player=permanent.getController();
             return (damage.getSource()==permanent.getEquippedCreature()&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
                 new MagicEvent(
                         permanent,
-                        player,
                         MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                         new MagicDamageTargetPicker(2),
                         this,
-                        permanent + " deals 2 damage to target creature or player$ and you draw a card."):
+                        "SN deals 2 damage to target creature or player$ and you draw a card."):
                 MagicEvent.NONE;
         }
         

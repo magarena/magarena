@@ -22,10 +22,9 @@ public class Somberwald_Vigilante {
             final MagicPermanentList plist = new MagicPermanentList(permanent.getBlockingCreatures());
             return new MagicEvent(
                 permanent,
-                permanent.getController(),
                 new Object[]{plist},
                 this,
-                permanent + " deals 1 damage to each blocking creature."
+                "SN deals 1 damage to each blocking creature."
             );
         }
         

@@ -26,8 +26,8 @@ public class Black_Vise {
                     permanent,
                     upkeepPlayer,
                     this,
-                    permanent + " deals X damage to " + upkeepPlayer +
-                    " where X is the number of cards in his or her hand minus 4."):
+                    "PN deals X damage to PN " +
+                    "where X is the number of cards in his or her hand minus 4."):
                 MagicEvent.NONE;
         }
         @Override

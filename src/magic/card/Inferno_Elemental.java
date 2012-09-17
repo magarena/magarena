@@ -21,10 +21,9 @@ public class Inferno_Elemental {
             
             return new MagicEvent(
                 permanent,
-                permanent.getController(),
                 new Object[]{plist},
                 this,
-                permanent + " deals 3 damage to each blocking creature."
+                "SN deals 3 damage to each blocking creature."
             );
         }
         
