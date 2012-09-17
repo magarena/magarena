@@ -20,9 +20,8 @@ public class Weatherseed_Treefolk {
             return (MagicLocationType.Play == triggerData.fromLocation) ?
                 new MagicEvent(
                         permanent,
-                        permanent.getController(),
                         this,
-                        "Return " + permanent + " to its owner's hand."):
+                        "Return SN to its owner's hand."):
                 MagicEvent.NONE;
         }
 

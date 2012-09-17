@@ -21,7 +21,7 @@ public class Chandra_s_Spitfire {
                     permanent,
                     player,
                     this,
-                    permanent + " gets +3/+0 until end of turn."):
+                    "SN gets +3/+0 until end of turn."):
                 MagicEvent.NONE;
         }
         @Override

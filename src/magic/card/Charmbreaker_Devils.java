@@ -29,7 +29,7 @@ public class Charmbreaker_Devils {
                             player,
                             this,
                             "Return an instant or sorcery card at random " +
-                                    "from your graveyard to your hand.") :
+                            "from your graveyard to your hand.") :
                     MagicEvent.NONE;
         }
         @Override

@@ -13,9 +13,8 @@ public class Molder_Beast {
             return (otherPermanent.isArtifact()) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     this,
-                    permanent + " gets +2/+0 until end of turn.") :
+                    "SN gets +2/+0 until end of turn.") :
                 MagicEvent.NONE;
         }
         @Override

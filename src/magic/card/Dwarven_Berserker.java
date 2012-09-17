@@ -13,13 +13,11 @@ public class Dwarven_Berserker {
     public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
-            final MagicPlayer player = permanent.getController();
             return (permanent == attacker) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    permanent + " gets +3/+0 and gains trample until end of turn."):
+                    "SN gets +3/+0 and gains trample until end of turn."):
                 MagicEvent.NONE;
         }
         

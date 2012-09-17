@@ -24,7 +24,7 @@ public class Kruin_Striker {
                         permanent,
                         player,
                         this,
-                        permanent + " gets +1/+0 and gains trample until end of turn."):
+                        "SN gets +1/+0 and gains trample until end of turn."):
                 MagicEvent.NONE;
         }
         @Override

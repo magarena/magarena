@@ -17,9 +17,8 @@ public class Ezuri_s_Archers {
                     blocked.hasAbility(MagicAbility.Flying)) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     this,
-                    permanent + " gets +3/+0 until end of turn."):
+                    "SN gets +3/+0 until end of turn."):
                 MagicEvent.NONE;
         }
         @Override

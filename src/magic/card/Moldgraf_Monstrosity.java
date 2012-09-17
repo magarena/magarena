@@ -21,13 +21,11 @@ public class Moldgraf_Monstrosity {
     public static final MagicWhenPutIntoGraveyardTrigger T = new MagicWhenPutIntoGraveyardTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
-            final MagicPlayer player = permanent.getController();
             return (MagicLocationType.Play == triggerData.fromLocation) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    "Exile " + permanent + ", then return two creature " +
+                    "Exile SN, then return two creature " +
                     "cards at random from your graveyard to the battlefield."):
                 MagicEvent.NONE;
         }

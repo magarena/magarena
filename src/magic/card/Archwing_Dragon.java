@@ -21,7 +21,7 @@ public class Archwing_Dragon {
                     permanent,
                     player,
                     this,
-                    "Return " + permanent + " to its owner's hand."):
+                    "Return SN to its owner's hand."):
                 MagicEvent.NONE;
         }
         @Override

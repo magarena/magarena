@@ -14,9 +14,8 @@ public class Snapping_Creeper {
         public MagicEvent getEvent(final MagicPermanent permanent) {
             return new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     this,
-                    permanent + " gains vigilance until end of turn.");
+                    "SN gains vigilance until end of turn.");
         }
         
         @Override

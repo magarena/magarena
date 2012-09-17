@@ -23,10 +23,9 @@ public class Tel_Jilad_Wolf {
             return amount > 0 ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     new Object[]{amount},
                     this,
-                    permanent + " gets +" + amount + "/+" +  amount + " until end of turn."
+                    "SN gets +" + amount + "/+" +  amount + " until end of turn."
                 ):
                 MagicEvent.NONE;
         }

@@ -17,7 +17,7 @@ public class Septic_Rats {
                     permanent,
                     player,
                     this,
-                    permanent + " gets +1/+1 until end of turn.") :
+                    "SN gets +1/+1 until end of turn.") :
                 MagicEvent.NONE;
         }
         @Override

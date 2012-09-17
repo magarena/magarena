@@ -20,7 +20,7 @@ public class Glaze_Fiend {
                     permanent,
                     player,
                     this,
-                    permanent + " gets +2/+2 until end of turn") :
+                    "SN gets +2/+2 until end of turn") :
                 MagicEvent.NONE;
         }
         

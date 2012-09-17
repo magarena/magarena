@@ -14,9 +14,8 @@ public class Fledgling_Griffin {
         public MagicEvent getEvent(final MagicPermanent permanent) {
             return new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     this,
-                    permanent + " gains flying until end of turn.");
+                    "SN gains flying until end of turn.");
         }
         
         @Override

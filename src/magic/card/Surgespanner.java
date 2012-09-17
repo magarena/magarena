@@ -30,7 +30,7 @@ public class Surgespanner {
                         MagicBounceTargetPicker.getInstance(),
                         this,
                         "You may$ pay {1}{U}$. If you do, " +
-                        "Return target permanent$ to its owner's hand.") :
+                        "return target permanent$ to its owner's hand.") :
                 MagicEvent.NONE;
         }
         @Override

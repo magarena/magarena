@@ -26,12 +26,10 @@ public class Fumiko_the_Lowblood {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
             if (permanent == data) {
-                final MagicPlayer player = permanent.getController();
                 return new MagicEvent(
                         permanent,
-                        player,
                         this,
-                        permanent + " gets +X/+X until end of turn, where X is the number of attacking creatures.");
+                        "SN gets +X/+X until end of turn, where X is the number of attacking creatures.");
             }
             return MagicEvent.NONE;
         }
@@ -50,12 +48,10 @@ public class Fumiko_the_Lowblood {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
             if (permanent == data) {
-                final MagicPlayer player = permanent.getController();
                 return new MagicEvent(
                         permanent,
-                        player,
                         this,
-                        permanent + " gets +X/+X until end of turn, where X is the number of attacking creatures.");
+                        "SN gets +X/+X until end of turn, where X is the number of attacking creatures.");
             }
             return MagicEvent.NONE;
         }

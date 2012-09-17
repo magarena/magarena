@@ -49,7 +49,7 @@ public class Halcyon_Glaze {
                         permanent,
                         player,
                         this,
-                        permanent + " becomes a 4/4 Illusion creature with flying until end of turn. " + 
+                        "SN becomes a 4/4 Illusion creature with flying until end of turn. " + 
                         "It's still an enchantment."):
                 MagicEvent.NONE;
         }

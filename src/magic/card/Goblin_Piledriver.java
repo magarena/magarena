@@ -19,9 +19,8 @@ public class Goblin_Piledriver {
             return (permanent==creature) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     this,
-                    permanent + " gets +2/+0 until end of turn for each other attacking Goblin."):
+                    "SN gets +2/+0 until end of turn for each other attacking Goblin."):
                 MagicEvent.NONE;
         }
         @Override

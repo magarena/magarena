@@ -14,9 +14,8 @@ public class Surrakar_Marauder {
         public MagicEvent getEvent(final MagicPermanent permanent) {
             return new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     this,
-                    permanent + " gains intimidate until end of turn.");
+                    "SN gains intimidate until end of turn.");
         }
         
         @Override

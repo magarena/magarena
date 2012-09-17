@@ -28,9 +28,8 @@ public class Amphibious_Kavu {
             return (pump) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     this,
-                    permanent + " gets +3/+3 until end of turn."
+                    "SN gets +3/+3 until end of turn."
                 ):
                 MagicEvent.NONE;
         }

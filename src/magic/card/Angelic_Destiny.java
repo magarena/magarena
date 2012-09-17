@@ -16,9 +16,8 @@ public class Angelic_Destiny {
             return (permanent.getEnchantedCreature() == died) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     this,
-                    "Return " + permanent + " to its owner's hand."):
+                    "Return SN to its owner's hand."):
                 MagicEvent.NONE;
         }
         @Override
