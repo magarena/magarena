@@ -24,13 +24,12 @@ public class Farrel_s_Zealot {
                         permanent,
                         player,
                         new MagicMayChoice(
-                                player + " may have " + permanent +
-                                " deal 3 damage to target creature.",
-                                MagicTargetChoice.NEG_TARGET_CREATURE),
+                            player + " may have " + permanent +
+                            " deal 3 damage to target creature.",
+                            MagicTargetChoice.NEG_TARGET_CREATURE),
                         new MagicDamageTargetPicker(3),
                         this,
-                        player + " may$ have " + permanent +
-                        " deal 3 damage to target creature$.");
+                        "PN may$ have SN deal 3 damage to target creature$.");
             }
             return MagicEvent.NONE;
         }

@@ -24,7 +24,7 @@ public class Mark_of_the_Oni {
                     permanent,
                     player,
                     this,
-                    "Sacrifice " + permanent + "."):
+                    "Sacrifice SN."):
                 MagicEvent.NONE;
         }
         @Override

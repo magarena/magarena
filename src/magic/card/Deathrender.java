@@ -31,8 +31,8 @@ public class Deathrender {
                             MagicTargetChoice.TARGET_CREATURE_CARD_FROM_HAND),
                     new MagicGraveyardTargetPicker(true),
                     this,
-                    player + " may$ put a creature card$ from his or her hand " +
-                    "onto the battlefield and attach " + permanent + " to it."):
+                    "PN may$ put a creature card$ from his or her hand " +
+                    "onto the battlefield and attach SN to it."):
                 MagicEvent.NONE;
         }
         @Override

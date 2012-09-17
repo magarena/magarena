@@ -54,11 +54,11 @@ public class Gustcloak_Cavalier {
                 new MagicEvent(
                     permanent,
                     player,
-                    new MagicMayChoice(player + " may untap " + permanent +
-                            " and remove it from combat."),
+                    new MagicMayChoice(
+                        player + " may untap " + permanent +
+                        " and remove it from combat."),
                     this, 
-                    player + " may$ untap " + permanent +
-                    " and remove it from combat.") :
+                    "PN may$ untap SN and remove it from combat.") :
                 MagicEvent.NONE;
         }
         

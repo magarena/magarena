@@ -20,7 +20,7 @@ public class Unruly_Mob {
                     permanent,
                     player,
                     this,
-                    "Put a +1/+1 counter on " + permanent + "."):
+                    "Put a +1/+1 counter on SN."):
                 MagicEvent.NONE;
         }
         @Override
