@@ -31,7 +31,7 @@ public class Murasa_Pyromancer {
                         // estimated. Amount of damage can be different on resolution
                         new MagicDamageTargetPicker(player.getNrOfPermanentsWithSubType(MagicSubType.Ally)),
                         this,
-                        player + " may$ have " + permanent + " deal " +
+                        "PN may$ have SN deal " +
                         "damage to target creature$ equal to the " +
                         "number of Allies he or she controls.") :
                 MagicEvent.NONE;

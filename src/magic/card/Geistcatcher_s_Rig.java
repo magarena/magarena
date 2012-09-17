@@ -25,7 +25,7 @@ public class Geistcatcher_s_Rig {
                         MagicTargetChoice.NEG_TARGET_CREATURE_WITH_FLYING),
                     new MagicDamageTargetPicker(4),
                     this,
-                    player + " may$ have " + permanent + " deal 4 damage " +
+                    "PN may$ have SN deal 4 damage " +
                     "to target creature with flying$.");
         }
         @Override

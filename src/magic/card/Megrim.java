@@ -20,7 +20,7 @@ public class Megrim {
                         permanent,
                         otherController,
                         this,
-                        permanent + " deals 2 damage to " + otherController + "."):
+                        "SN deals 2 damage to PN."):
                 MagicEvent.NONE;
         }
         @Override

@@ -18,11 +18,9 @@ public class Dingus_Egg {
             return (otherPermanent.isLand()) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
-                    new Object[]{otherPermanent.getController()},
+                    otherPermanent.getController(),
                     this,
-                    permanent + " deals 2 damage to " +
-                            otherPermanent.getController() + ".") :
+                    "SN deals 2 damage to PN.") :
                 MagicEvent.NONE;
         }
         @Override
@@ -33,7 +31,7 @@ public class Dingus_Egg {
                 final Object[] choiceResults) {
             final MagicDamage damage = new MagicDamage(
                     event.getSource(),
-                    (MagicTarget)data[0],
+                    event.getPlayer(),
                     2,
                     false);
             game.doAction(new MagicDealDamageAction(damage));

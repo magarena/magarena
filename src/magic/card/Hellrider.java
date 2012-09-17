@@ -21,7 +21,7 @@ public class Hellrider {
                         permanent,
                         player.getOpponent(),
                         this,
-                        permanent + " deals 1 damage to " + player.getOpponent() + ".") :
+                        "SN deals 1 damage to PN.") :
                 MagicEvent.NONE;
         }
         

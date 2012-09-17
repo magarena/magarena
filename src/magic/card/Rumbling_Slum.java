@@ -17,9 +17,8 @@ public class Rumbling_Slum {
             return (permanent.getController()==player) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     this,
-                    permanent + " deals 1 damage to each player."):
+                    "SN deals 1 damage to each player."):
                 MagicEvent.NONE;
         }
         @Override

@@ -33,7 +33,7 @@ public class Embersmith {
                         MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER),
                         new MagicDamageTargetPicker(2),
                     this,
-                    "You may$ pay {1}$. If you do, " + permanent + " deals 1 " +
+                    "PN may$ pay {1}$. If you do, SN deals 1 " +
                     "damage to target creature or player$."):
                MagicEvent.NONE;
         }

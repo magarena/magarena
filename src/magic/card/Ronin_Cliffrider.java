@@ -27,7 +27,7 @@ public class Ronin_Cliffrider {
                                 player + " may$ have " + permanent + " deal 1 damage " +
                                 "to each creature defending player controls."),
                         this,
-                        player + " may$ have " + permanent + " deal 1 damage " +
+                        "PN may$ have SN deal 1 damage " +
                         "to each creature defending player controls.") :
                 MagicEvent.NONE;
         }

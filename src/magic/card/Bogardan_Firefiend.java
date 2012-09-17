@@ -19,11 +19,10 @@ public class Bogardan_Firefiend {
             return (MagicLocationType.Play == triggerData.fromLocation) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     MagicTargetChoice.TARGET_CREATURE,
                     new MagicDamageTargetPicker(2),
                     this,
-                    permanent + " deals 2 damage to target creature$."):
+                    "SN deals 2 damage to target creature$."):
                 MagicEvent.NONE;
         }
         

@@ -21,12 +21,12 @@ public class Mordant_Dragon {
                 new MagicEvent(
                         permanent,
                         new MagicMayChoice(
-                            "You may have " + permanent + " deal that much damage to target creature.",
+                            permanent.getController() + " may have " + permanent + " deal that much damage to target creature.",
                             MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS),
                         new MagicDamageTargetPicker(amount),
                         new Object[]{amount},
                         this,
-                        "You may$ have SN deal "+amount+" damage to target creature$ your opponent controls."):
+                        "PN may$ have SN deal "+amount+" damage to target creature$ your opponent controls."):
                 MagicEvent.NONE;
         }
         
