@@ -33,9 +33,9 @@ public class Turntimber_Ranger {
                                 MagicSimpleMayChoice.DEFAULT_YES),
                         new MagicDestroyTargetPicker(false),
                         this,
-                        player + " may$ put a 2/2 green Wolf creature " +
+                        "PN may$ put a 2/2 green Wolf creature " +
                         "token onto the battlefield. If you do, put a " +
-                        "+1/+1 counter on " + permanent + ".") :
+                        "+1/+1 counter on SN.") :
                 MagicEvent.NONE;
         }
         

@@ -15,14 +15,12 @@ public class Chronozoa {
     public static final MagicWhenPutIntoGraveyardTrigger T3 = new MagicWhenPutIntoGraveyardTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
-            final MagicPlayer player = permanent.getController();
             return (MagicLocationType.Play == triggerData.fromLocation &&
                     permanent.getCounters(MagicCounterType.Charge) == 0) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    player + " puts two tokens that are copies of " + permanent + " onto the battlefield.") :
+                    "PN puts two tokens that are copies of SN onto the battlefield.") :
                 MagicEvent.NONE;
         }
         @Override

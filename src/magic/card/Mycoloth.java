@@ -20,7 +20,7 @@ public class Mycoloth {
                         permanent,
                         player,
                         this,
-                        "Put a 1/1 green Saproling creature token onto the battlefield for each +1/+1 counter on " + permanent + "."):
+                        "Put a 1/1 green Saproling creature token onto the battlefield for each +1/+1 counter on SN."):
                 MagicEvent.NONE;
         }
         

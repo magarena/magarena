@@ -20,7 +20,7 @@ public class Gravetiller_Wurm {
                         permanent,
                         player,
                         this,
-                        permanent + " enters the battlefield with four +1/+1 counters on it ");
+                        "SN enters the battlefield with four +1/+1 counters on it.");
             }
             return MagicEvent.NONE;
         }

@@ -15,9 +15,8 @@ public class Arcbound_Crusher {
                     otherPermanent.isArtifact()) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     this,
-                    "Put a +1/+1 counter on " + permanent + "."):
+                    "Put a +1/+1 counter on SN."):
                 MagicEvent.NONE;
         }
         

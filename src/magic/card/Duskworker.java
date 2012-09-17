@@ -11,13 +11,11 @@ public class Duskworker {
     public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            final MagicPlayer player = permanent.getController();
             return (permanent == data ) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    "Regenerate " + permanent + "."):
+                    "Regenerate SN."):
                 MagicEvent.NONE;
         }
         

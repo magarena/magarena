@@ -28,7 +28,7 @@ public class Indebted_Samurai {
                         1,
                         MagicSimpleMayChoice.DEFAULT_YES),
                     this,
-                    player + " may put a +1/+1 counter on " + permanent + "."):
+                    "PN may put a +1/+1 counter on SN."):
                 MagicEvent.NONE;
         }
         

@@ -22,7 +22,7 @@ public class Demonic_Taskmaster {
                         permanent,
                         player,
                         this,
-                        "Sacrifice a creature other than " + permanent + ".") :
+                        "Sacrifice a creature other than SN.") :
                 MagicEvent.NONE;
         }
 

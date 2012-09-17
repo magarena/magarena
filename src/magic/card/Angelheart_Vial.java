@@ -46,12 +46,10 @@ public class Angelheart_Vial {
         public MagicEvent getPermanentEvent(
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
-            final MagicPlayer player = source.getController();
             return new MagicEvent(
                     source,
-                    player,
                     this,
-                    player + " gains 2 life and draws a card");
+                    "PN gains 2 life and draws a card");
         }
 
         @Override
@@ -78,7 +76,7 @@ public class Angelheart_Vial {
                         player,
                         new Object[]{amount},
                         this,
-                        "Put " + amount + " charge counters on " + permanent + "."):
+                        "Put " + amount + " charge counters on SN."):
                 MagicEvent.NONE;
         }
         @Override

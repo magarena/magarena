@@ -17,9 +17,8 @@ public class Village_Cannibals {
                     otherPermanent.hasSubType(MagicSubType.Human)) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     this,
-                    "Put a +1/+1 counter on " + permanent + "."):
+                    "Put a +1/+1 counter on SN."):
                 MagicEvent.NONE;
         }
         @Override
