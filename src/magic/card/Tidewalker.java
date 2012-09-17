@@ -35,8 +35,8 @@ public class Tidewalker {
                     new Object[]{amount},
                     this,
                     amount > 1 ?
-                            permanent + " enters the battlefield with " + amount + " time counters on it." :
-                            permanent + " enters the battlefield with a time counter on it.") :
+                        "SN enters the battlefield with " + amount + " time counters on it." :
+                        "SN enters the battlefield with a time counter on it.") :
                 MagicEvent.NONE;
         }
         @Override

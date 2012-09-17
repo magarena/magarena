@@ -100,12 +100,10 @@ public class Umezawa_s_Jitte {
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicPlayer player = source.getController();
             return new MagicEvent(
                     source,
-                    player,
                     this,
-                    player + " gains 2 life.");
+                    "PN gains 2 life.");
         }
         @Override
         public void executeEvent(
@@ -124,9 +122,8 @@ public class Umezawa_s_Jitte {
                     damage.isCombat()) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     this,
-                    "Put two charge counters on " + permanent + ".") :
+                    "Put two charge counters on SN.") :
                 MagicEvent.NONE;
         }
         @Override

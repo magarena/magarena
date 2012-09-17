@@ -26,7 +26,7 @@ public class Glint_Hawk {
                 MagicBounceTargetPicker.getInstance(),
                 this,
                 "You may$ return an artifact you control to its owner's hand. " +
-                "If you don't, sacrifice " + permanent + ".");
+                "If you don't, sacrifice SN.");
         }
         @Override
         public void executeEvent(

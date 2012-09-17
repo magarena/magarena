@@ -12,13 +12,11 @@ public class Revered_Unicorn {
     public static final MagicWhenLeavesPlayTrigger T2 = new MagicWhenLeavesPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            final MagicPlayer player = permanent.getController();
             return (permanent == data) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    player + " gains life equal to the number of ages counters on " + permanent + "."):
+                    "PN gains life equal to the number of age counters on SN."):
                 MagicEvent.NONE;
         }
         @Override

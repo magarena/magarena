@@ -20,7 +20,7 @@ public class Endless_Wurm {
                         permanent,
                         player,
                         this,
-                        "Sacrifice " + permanent + " unless you sacrifice an enchantment."):
+                        "Sacrifice SN unless you sacrifice an enchantment."):
                 MagicEvent.NONE;
         }
 

@@ -25,7 +25,7 @@ public class Veteran_of_the_Depths {
                         1,
                         MagicSimpleMayChoice.DEFAULT_YES),
                     this,
-                    "Put a +1/+1 counter on " + permanent + ".") :
+                    "Put a +1/+1 counter on SN.") :
                 MagicEvent.NONE;
         }
         @Override

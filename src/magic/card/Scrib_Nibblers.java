@@ -37,7 +37,7 @@ public class Scrib_Nibblers {
                             1,
                             MagicSimpleMayChoice.DEFAULT_YES),
                     this,
-                    player + " may$ untap " + permanent + ".");
+                    "PN may$ untap SN.");
         }
         
         @Override

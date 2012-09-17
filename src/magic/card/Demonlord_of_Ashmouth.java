@@ -40,7 +40,7 @@ public class Demonlord_of_Ashmouth {
                     MagicSacrificeTargetPicker.create(),
                     this,
                     "You may$ sacrifice another creature$. If you don't," +
-                    " exile " + permanent + ".");
+                    " exile SN.");
         }
         @Override
         public void executeEvent(

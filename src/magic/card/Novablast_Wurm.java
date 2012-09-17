@@ -18,9 +18,8 @@ public class Novablast_Wurm {
             return (permanent==creature) ?
                 new MagicEvent(
                         permanent,
-                        permanent.getController(),
                         this,
-                        "Destroy all creatures other than " + permanent + ".") :
+                        "Destroy all creatures other than SN.") :
                 MagicEvent.NONE;
         }
         

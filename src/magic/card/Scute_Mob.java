@@ -20,7 +20,7 @@ public class Scute_Mob {
                         permanent,
                         player,
                         this,
-                        "Put four +1/+1 counters on " + permanent + ".") :
+                        "Put four +1/+1 counters on SN.") :
                 MagicEvent.NONE;
         }
         @Override

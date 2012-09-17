@@ -14,9 +14,8 @@ public class Goblin_Sharpshooter {
                     permanent.isTapped()) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     this,
-                    "Untap " + permanent + ".") :
+                    "Untap SN.") :
                 MagicEvent.NONE;
         }
         @Override

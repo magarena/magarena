@@ -33,7 +33,6 @@ public class Witherscale_Wurm {
             final MagicPermanentList plist = new MagicPermanentList(permanent.getBlockingCreatures());
             return new MagicEvent(
                 permanent,
-                permanent.getController(),
                 new Object[]{plist},
                 this,
                 plist.size() > 1 ?

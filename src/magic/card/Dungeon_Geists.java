@@ -20,12 +20,12 @@ public class Dungeon_Geists {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-            permanent,
-            player,
-            MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS, 
-            this,
-            "Tap target creature opponent controls$. " + 
-            "It doesn't untap during its controller's untap step as long as " + player + " controls " + permanent + ".");
+                permanent,
+                player,
+                MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS, 
+                this,
+                "Tap target creature opponent controls$. " + 
+                "It doesn't untap during its controller's untap step as long as PN controls SN.");
         }
 
         @Override

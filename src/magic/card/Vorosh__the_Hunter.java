@@ -30,7 +30,7 @@ public class Vorosh__the_Hunter {
                         "You may pay {2}{G}.",
                         new MagicPayManaCostChoice(MagicManaCost.TWO_GREEN)),
                     this,
-                    "You may$ pay {2}{G}$. If you do, put six +1/+1 counters on " + permanent + "."):
+                    "You may$ pay {2}{G}$. If you do, put six +1/+1 counters on SN."):
                 MagicEvent.NONE;
         }
         @Override

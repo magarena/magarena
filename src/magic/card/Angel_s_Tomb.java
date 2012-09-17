@@ -89,7 +89,7 @@ public class Angel_s_Tomb {
                             0,
                             MagicSimpleMayChoice.DEFAULT_YES),
                         this,
-                        player + " may$ have " + permanent + " become a 3/3 white " +
+                        "PN may$ have SN become a 3/3 white " +
                         "Angel artifact creature with flying until end of turn."):
                 MagicEvent.NONE;
         }

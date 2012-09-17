@@ -23,7 +23,7 @@ public class Kami_of_the_Tended_Garden {
                         "You may pay {G}.",
                         new MagicPayManaCostChoice(MagicManaCost.GREEN)),
                     this,
-                    "You may$ pay {G}$. If you don't, sacrifice " + permanent + ".") :
+                    "You may$ pay {G}$. If you don't, sacrifice SN.") :
                 MagicEvent.NONE;
         }
 
