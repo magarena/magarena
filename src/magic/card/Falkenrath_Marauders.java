@@ -17,9 +17,8 @@ public class Falkenrath_Marauders {
                     damage.isCombat()) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     this,
-                    "Put two +1/+1 counters on " + permanent + ".") :
+                    "Put two +1/+1 counters on SN.") :
                 MagicEvent.NONE;
         }
         @Override

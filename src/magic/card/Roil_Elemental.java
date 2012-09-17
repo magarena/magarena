@@ -27,7 +27,7 @@ public class Roil_Elemental {
                         player + " may gain control of target creature for as long as you control " + permanent + ".",
                         MagicTargetChoice.NEG_TARGET_CREATURE),
                     this,
-                    "You may$ gain control of target creature$ for as long as you control " + permanent + ".");
+                    "You may$ gain control of target creature$ for as long as you control SN.");
         }
 
         @Override

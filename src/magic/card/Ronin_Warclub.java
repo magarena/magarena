@@ -19,7 +19,7 @@ public class Ronin_Warclub {
                         player,
                         new Object[]{otherPermanent},
                         this,
-                         "Attach " + permanent + " to " + otherPermanent + ".") :
+                         "Attach SN to " + otherPermanent + ".") :
                 MagicEvent.NONE;
         }
         

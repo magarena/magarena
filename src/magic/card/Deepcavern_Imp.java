@@ -26,8 +26,8 @@ public class Deepcavern_Imp {
                             player + " may discard a card."
                         ),
                         this,
-                        player + " may$ discard a card. " +
-                        "If he or she doesn't, sacrifice " + permanent + "."
+                        "PN may$ discard a card. " +
+                        "If he or she doesn't, sacrifice SN."
                     ):
                     new MagicSacrificeEvent(permanent);
             } else {

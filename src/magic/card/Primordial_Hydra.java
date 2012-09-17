@@ -55,7 +55,7 @@ public class Primordial_Hydra {
                         player,
                         new Object[]{amount},
                         this,
-                        "Put " + amount + " +1/+1 counters on " + permanent + ".") :
+                        "Put " + amount + " +1/+1 counters on SN.") :
                 MagicEvent.NONE;
         }
         @Override
