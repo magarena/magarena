@@ -20,13 +20,11 @@ public class Quest_for_Renewal {
     public static final MagicWhenBecomesTappedTrigger T1 = new MagicWhenBecomesTappedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent tapped) {
-            final MagicPlayer player = permanent.getController();
-            return (tapped.getController() == player && tapped.isCreature()) ?
+            return (tapped.getController() == permanent.getController() && tapped.isCreature()) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new MagicSimpleMayChoice(
-                        player + " may put a quest counter on " + permanent + ".",
+                        "You may put a quest counter on " + permanent + ".",
                         MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
                         1,
                         MagicSimpleMayChoice.DEFAULT_YES),

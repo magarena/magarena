@@ -14,15 +14,13 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 public class Demonic_Taskmaster {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-            final MagicPlayer player = permanent.getController();
-            return (player == data &&
-                player.getNrOfPermanentsWithType(MagicType.Creature) > 1) ?    
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+            return (permanent.getController() == upkeepPlayer) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        "Sacrifice a creature other than SN.") :
+                    permanent,
+                    this,
+                    "PN sacrifices a creature other than SN."
+                ) :
                 MagicEvent.NONE;
         }
 
@@ -34,17 +32,17 @@ public class Demonic_Taskmaster {
                 final Object[] choiceResults) {
             final MagicPermanent permanent = event.getPermanent();
             final MagicPlayer player = event.getPlayer();
-            if (player.controlsPermanentWithType(MagicType.Creature)) {
-                final MagicTargetFilter targetFilter = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
-                        MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,
-                        permanent);
-                final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                        targetFilter,
-                        false,
-                        MagicTargetHint.None,
-                        "a creature other than " + permanent + " to sacrifice");
-                game.addEvent(new MagicSacrificePermanentEvent(permanent,player,targetChoice));
-            }        
+            final MagicTargetFilter targetFilter = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
+                MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,
+                permanent
+            );
+            final MagicTargetChoice targetChoice = new MagicTargetChoice(
+                targetFilter,
+                false,
+                MagicTargetHint.None,
+                "a creature other than " + permanent + " to sacrifice"
+            );
+            game.addEvent(new MagicSacrificePermanentEvent(permanent,player,targetChoice));
         }
     };
 }

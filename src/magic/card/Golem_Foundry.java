@@ -25,14 +25,12 @@ public class Golem_Foundry {
     public static final MagicWhenOtherSpellIsCastTrigger T = new MagicWhenOtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
-            final MagicPlayer player = permanent.getController();
             final MagicCard card = cardOnStack.getCard();
-            return (card.getOwner() == player && cardOnStack.getCardDefinition().isArtifact()) ?
+            return (card.getOwner() == permanent.getController() && cardOnStack.getCardDefinition().isArtifact()) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new MagicSimpleMayChoice(
-                        player + " may put a charge counter on " + permanent + ".",
+                        "You may put a charge counter on " + permanent + ".",
                         MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
                         1,
                         MagicSimpleMayChoice.DEFAULT_YES),

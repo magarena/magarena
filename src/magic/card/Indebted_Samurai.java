@@ -15,15 +15,13 @@ public class Indebted_Samurai {
     public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
             return (otherPermanent.isCreature() &&
-                    otherPermanent.getController() == player &&
+                    otherPermanent.getController() == permanent.getController() &&
                     otherPermanent.hasSubType(MagicSubType.Samurai)) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new MagicSimpleMayChoice(
-                        player + " may put a +1/+1 counter on " + permanent + ".",
+                        "You may put a +1/+1 counter on " + permanent + ".",
                         MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
                         1,
                         MagicSimpleMayChoice.DEFAULT_YES),

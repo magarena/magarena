@@ -19,15 +19,13 @@ public class Roil_Elemental {
     public static final Object T = new MagicLandfallTrigger() {
         @Override
         public MagicEvent getEvent(final MagicPermanent permanent) {
-            final MagicPlayer player = permanent.getController();
             return new MagicEvent(
                     permanent,
-                    player,
                     new MagicMayChoice(
-                        player + " may gain control of target creature for as long as you control " + permanent + ".",
+                        "You may gain control of target creature for as long as you control " + permanent + ".",
                         MagicTargetChoice.NEG_TARGET_CREATURE),
                     this,
-                    "You may$ gain control of target creature$ for as long as you control SN.");
+                    "PN may$ gain control of target creature$ for as long as PN controls SN.");
         }
 
         @Override

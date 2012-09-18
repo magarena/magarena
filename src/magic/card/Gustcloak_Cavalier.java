@@ -18,16 +18,15 @@ public class Gustcloak_Cavalier {
     public static final MagicWhenAttacksTrigger T2 = new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            final MagicPlayer player = permanent.getController();
             return (permanent == creature) ?
                 new MagicEvent(
                     permanent,
-                    player,
-                    new MagicMayChoice(player + " may tap target creature.",
-                            MagicTargetChoice.NEG_TARGET_CREATURE),
+                    new MagicMayChoice(
+                        "You may tap target creature.",
+                        MagicTargetChoice.NEG_TARGET_CREATURE),
                     new MagicTapTargetPicker(true,false),
                     this,
-                    player + " may$ tap target creature$."):
+                    "PN may$ tap target creature$."):
                 MagicEvent.NONE;
         }
         @Override

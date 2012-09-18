@@ -18,20 +18,18 @@ public class Farrel_s_Zealot {
     public static final MagicWhenAttacksUnblockedTrigger T = new MagicWhenAttacksUnblockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            if (creature == permanent) {
-                final MagicPlayer player = permanent.getController();
-                return new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicMayChoice(
-                            player + " may have " + permanent +
-                            " deal 3 damage to target creature.",
-                            MagicTargetChoice.NEG_TARGET_CREATURE),
-                        new MagicDamageTargetPicker(3),
-                        this,
-                        "PN may$ have SN deal 3 damage to target creature$.");
-            }
-            return MagicEvent.NONE;
+            return (creature == permanent) ?
+                new MagicEvent(
+                    permanent,
+                    new MagicMayChoice(
+                        "You may have " + permanent +
+                        " deal 3 damage to target creature.",
+                        MagicTargetChoice.NEG_TARGET_CREATURE),
+                    new MagicDamageTargetPicker(3),
+                    this,
+                    "PN may$ have SN deal 3 damage to target creature$."
+                ) :
+                MagicEvent.NONE;
         }
         
         @Override

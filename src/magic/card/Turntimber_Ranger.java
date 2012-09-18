@@ -18,19 +18,17 @@ public class Turntimber_Ranger {
     public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
-            return (otherPermanent.getController() == player &&
+            return (otherPermanent.getController() == permanent.getController() &&
                     otherPermanent.hasSubType(MagicSubType.Ally)) ?
                 new MagicEvent(
                         permanent,
-                        player,
                         new MagicSimpleMayChoice(
-                                player + " may put a 2/2 green Wolf creature " +
-                                "token onto the battlefield. If you do, put a " +
-                                "+1/+1 counter on " + permanent + ".",
-                                MagicSimpleMayChoice.PLAY_TOKEN,
-                                1,
-                                MagicSimpleMayChoice.DEFAULT_YES),
+                            "You may put a 2/2 green Wolf creature " +
+                            "token onto the battlefield. If you do, put a " +
+                            "+1/+1 counter on " + permanent + ".",
+                            MagicSimpleMayChoice.PLAY_TOKEN,
+                            1,
+                            MagicSimpleMayChoice.DEFAULT_YES),
                         new MagicDestroyTargetPicker(false),
                         this,
                         "PN may$ put a 2/2 green Wolf creature " +

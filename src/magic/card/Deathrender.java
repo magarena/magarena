@@ -20,15 +20,13 @@ public class Deathrender {
     public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            final MagicPlayer player = permanent.getController();
             return (permanent.getEquippedCreature() == data) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new MagicMayChoice(
-                        player + " may put a creature card from his or her " +
+                        "You may put a creature card from you " +
                         "hand onto the battlefield and attach " + permanent + " to it.",
-                            MagicTargetChoice.TARGET_CREATURE_CARD_FROM_HAND),
+                        MagicTargetChoice.TARGET_CREATURE_CARD_FROM_HAND),
                     new MagicGraveyardTargetPicker(true),
                     this,
                     "PN may$ put a creature card$ from his or her hand " +
