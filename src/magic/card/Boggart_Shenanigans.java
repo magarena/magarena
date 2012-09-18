@@ -20,15 +20,15 @@ public class Boggart_Shenanigans {
     public MagicEvent executeTrigger(
         final MagicGame game,
         final MagicPermanent permanent, 
-        final MagicPermanent otherPermanent) {
+        final MagicPermanent died) {
         final MagicPlayer player = permanent.getController();
-        return (permanent != otherPermanent &&
-                otherPermanent.getController() == player &&
-                otherPermanent.hasSubType(MagicSubType.Goblin)) ? 
+        return (died != permanent &&
+                died.hasSubType(MagicSubType.Goblin) &&
+                died.hasSameController(permanent)) ?
             new MagicEvent(
                 permanent,
                 new MagicMayChoice(
-                    permanent.getController() + " may have " + permanent + " deal 1 damage to target player.",
+                    "You may have " + permanent + " deal 1 damage to target player.",
                     MagicTargetChoice.NEG_TARGET_PLAYER),
                 new MagicDamageTargetPicker(1),
                 this,

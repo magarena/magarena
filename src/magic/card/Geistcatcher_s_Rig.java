@@ -20,7 +20,7 @@ public class Geistcatcher_s_Rig {
                     permanent,
                     player,
                     new MagicMayChoice(
-                        player + " may have " + permanent + " deal 4 damage " +
+                        "You may have " + permanent + " deal 4 damage " +
                         "to target creature with flying.",
                         MagicTargetChoice.NEG_TARGET_CREATURE_WITH_FLYING),
                     new MagicDamageTargetPicker(4),

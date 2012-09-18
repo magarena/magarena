@@ -18,21 +18,19 @@ public class Dwarven_Vigilantes {
     public static final MagicWhenAttacksUnblockedTrigger T = new MagicWhenAttacksUnblockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            if (creature == permanent) {
-                final MagicPlayer player = permanent.getController();
-                return new MagicEvent(
+            return (creature == permanent) ?
+                new MagicEvent(
                     permanent,
-                    player,
                     new MagicMayChoice(
-                        player + " may have " + permanent + " deal " +
+                        "You may have " + permanent + " deal " +
                         "damage equal to its power to target creature.",
                         MagicTargetChoice.NEG_TARGET_CREATURE),
                     new MagicDamageTargetPicker(permanent.getPower()),
                     this,
                     "PN may$ have SN deal " +
-                    "damage equal to its power to target creature$.");
-            }
-            return MagicEvent.NONE;
+                    "damage equal to its power to target creature$."
+                ):
+                MagicEvent.NONE;
         }
         
         @Override

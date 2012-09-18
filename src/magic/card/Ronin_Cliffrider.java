@@ -18,17 +18,15 @@ public class Ronin_Cliffrider {
     public static final MagicWhenAttacksTrigger T3 = new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            final MagicPlayer player = creature.getController();
             return (permanent == creature) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicMayChoice(
-                                player + " may$ have " + permanent + " deal 1 damage " +
-                                "to each creature defending player controls."),
-                        this,
-                        "PN may$ have SN deal 1 damage " +
-                        "to each creature defending player controls.") :
+                    permanent,
+                    new MagicMayChoice(
+                        "You may$ have " + permanent + " deal 1 damage " +
+                        "to each creature defending player controls."),
+                    this,
+                    "PN may$ have SN deal 1 damage " +
+                    "to each creature defending player controls.") :
                 MagicEvent.NONE;
         }
         

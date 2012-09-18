@@ -16,24 +16,23 @@ import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
 public class Tajuru_Archer {
     public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
-            return (otherPermanent.getController() == player &&
-                    otherPermanent.hasSubType(MagicSubType.Ally)) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent other) {
+            final int numAllies = permanent.getController().getNrOfPermanentsWithSubType(MagicSubType.Ally);
+            return (other.hasSameController(permanent) &&
+                    other.hasSubType(MagicSubType.Ally)) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicMayChoice(
-                                player + " may have " + permanent + " deal " +
-                                "damage to target creature with flying equal to " +
-                                "the number of Allies he or she controls.",
-                                MagicTargetChoice.NEG_TARGET_CREATURE_WITH_FLYING),
-                        // estimated. Amount of damage can be different on resolution
-                        new MagicDamageTargetPicker(player.getNrOfPermanentsWithSubType(MagicSubType.Ally)),
-                        this,
-                        "PN may$ have SN deal " +
-                        "damage to target creature with flying$ equal to " +
-                        "the number of Allies he or she controls.") :
+                    permanent,
+                    new MagicMayChoice(
+                        "You may have " + permanent + " deal " +
+                        "damage to target creature with flying equal to " +
+                        "the number of Allies he or she controls.",
+                        MagicTargetChoice.NEG_TARGET_CREATURE_WITH_FLYING),
+                    // estimated. Amount of damage can be different on resolution
+                    new MagicDamageTargetPicker(numAllies),
+                    this,
+                    "PN may$ have SN deal " +
+                    "damage to target creature with flying$ equal to " +
+                    "the number of Allies he or she controls.") :
                 MagicEvent.NONE;
         }
         

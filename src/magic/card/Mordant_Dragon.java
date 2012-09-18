@@ -17,16 +17,18 @@ public class Mordant_Dragon {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final int amount=damage.getAmount();
-            return (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
+            return (damage.getSource() == permanent && 
+                    damage.getTarget().isPlayer() && 
+                    damage.isCombat()) ?
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        permanent.getController() + " may have " + permanent + " deal that much damage to target creature.",
+                        "You may have " + permanent + " deal " + amount + " damage to target creature.",
                         MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS),
                     new MagicDamageTargetPicker(amount),
                     new Object[]{amount},
                     this,
-                    "PN may$ have SN deal "+amount+" damage to target creature$ your opponent controls."):
+                    "PN may$ have SN deal " + amount + " damage to target creature$ your opponent controls."):
                 MagicEvent.NONE;
         }
         

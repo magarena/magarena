@@ -19,14 +19,11 @@ public class Rhox {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPermanent attacker) {
-            final MagicPlayer player = permanent.getController();
-            final MagicPlayer defendingPlayer = player.getOpponent();
             return (permanent == attacker) ?
                 new MagicEvent(
                     permanent,
-                    defendingPlayer,
                     new MagicMayChoice(
-                        player + " may have " + permanent + " deal its combat damage " +
+                        "You may have " + permanent + " deal its combat damage " +
                         "to defending player as though it weren't blocked."),
                     this,
                     "PN may$ have SN deal its combat damage " +
@@ -44,7 +41,7 @@ public class Rhox {
                 final MagicPermanent permanent = event.getPermanent();
                 final MagicDamage damage = new MagicDamage(
                         permanent,
-                        event.getPlayer(),
+                        event.getPlayer().getOpponent(),
                         permanent.getPower(),
                         true);
                 game.doAction(new MagicDealDamageAction(damage));

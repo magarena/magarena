@@ -17,13 +17,11 @@ public class Cosi_s_Ravager {
     public static final MagicLandfallTrigger T = new MagicLandfallTrigger() {
         @Override
         public MagicEvent getEvent(final MagicPermanent permanent) {
-            final MagicPlayer player = permanent.getController();
             return new MagicEvent(
                     permanent,
-                    player,
                     new MagicMayChoice(
-                            player + " may have " + permanent + " deal 1 damage to target player",
-                            MagicTargetChoice.NEG_TARGET_PLAYER),
+                        "You may have " + permanent + " deal 1 damage to target player",
+                        MagicTargetChoice.NEG_TARGET_PLAYER),
                     new MagicDamageTargetPicker(1),
                     this,
                     "PN may$ have SN deal 1 damage to target player$");
