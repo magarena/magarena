@@ -275,6 +275,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         assert cachedController != null : "cachedController is null in " + this;
         return cachedController;
     }
+
+    public boolean hasSameController(final MagicPermanent other) {
+        return getController() == other.getController();
+    }
     
     public static void update(final MagicGame game) {
         MagicPermanent.updateProperties(game);
