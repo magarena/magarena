@@ -23,9 +23,7 @@ public class Turntimber_Ranger {
                 new MagicEvent(
                         permanent,
                         new MagicSimpleMayChoice(
-                            "You may put a 2/2 green Wolf creature " +
-                            "token onto the battlefield. If you do, put a " +
-                            "+1/+1 counter on " + permanent + ".",
+                            "Put token?",
                             MagicSimpleMayChoice.PLAY_TOKEN,
                             1,
                             MagicSimpleMayChoice.DEFAULT_YES),
