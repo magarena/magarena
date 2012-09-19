@@ -276,7 +276,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return cachedController;
     }
 
-    public boolean hasSameController(final MagicPermanent other) {
+    public boolean hasSameController(final MagicSource other) {
         return getController() == other.getController();
     }
     
