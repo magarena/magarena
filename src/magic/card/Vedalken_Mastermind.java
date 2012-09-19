@@ -30,7 +30,6 @@ public class Vedalken_Mastermind {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     MagicTargetChoice.TARGET_PERMANENT_YOU_CONTROL,
                     MagicBounceTargetPicker.getInstance(),
                     this,
