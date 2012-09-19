@@ -12,15 +12,13 @@ public class Soultether_Golem {
     public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
             return (otherPermanent != permanent &&
                     otherPermanent.isCreature() && 
-                    otherPermanent.getController() == player) ?
+                    otherPermanent.hasSameController(permanent)) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    player + " puts a time counter on " + permanent + "."):
+                    "PN puts a time counter on SN."):
                 MagicEvent.NONE;
         }
         
