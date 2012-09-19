@@ -24,9 +24,9 @@ public class Surgespanner {
                         permanent,
                         player,
                         new MagicMayChoice(
-                                "You may pay {1}{U}.",
-                                new MagicPayManaCostChoice(MagicManaCost.ONE_BLUE),
-                                MagicTargetChoice.TARGET_PERMANENT),
+                            "Pay {1}{U}?",
+                            new MagicPayManaCostChoice(MagicManaCost.ONE_BLUE),
+                            MagicTargetChoice.TARGET_PERMANENT),
                         MagicBounceTargetPicker.getInstance(),
                         this,
                         "You may$ pay {1}{U}$. If you do, " +
