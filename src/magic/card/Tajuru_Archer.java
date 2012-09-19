@@ -23,9 +23,7 @@ public class Tajuru_Archer {
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        "You may have " + permanent + " deal " +
-                        "damage to target creature with flying equal to " +
-                        "the number of Allies he or she controls.",
+                        "Deal damage?",
                         MagicTargetChoice.NEG_TARGET_CREATURE_WITH_FLYING),
                     // estimated. Amount of damage can be different on resolution
                     new MagicDamageTargetPicker(numAllies),
