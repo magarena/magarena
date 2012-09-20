@@ -21,10 +21,7 @@ public class Dwarven_Vigilantes {
             return (creature == permanent) ?
                 new MagicEvent(
                     permanent,
-                    new MagicMayChoice(
-                        "You may have " + permanent + " deal " +
-                        "damage equal to its power to target creature.",
-                        MagicTargetChoice.NEG_TARGET_CREATURE),
+                    new MagicMayChoice(MagicTargetChoice.NEG_TARGET_CREATURE),
                     new MagicDamageTargetPicker(permanent.getPower()),
                     this,
                     "PN may$ have SN deal " +
