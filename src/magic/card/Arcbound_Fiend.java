@@ -15,18 +15,13 @@ public class Arcbound_Fiend {
     public static final MagicAtUpkeepTrigger T3 = new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            final MagicPlayer player=permanent.getController();
-            return (player == upkeepPlayer) ?
+            return permanent.isController(upkeepPlayer) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicMayChoice(
-                            player + " may move a +1/+1 counter from " +
-                            "target creature onto " + permanent + ".",
-                            MagicTargetChoice.NEG_TARGET_CREATURE_PLUSONE_COUNTER),
-                        this,
-                        player + " may$ move a +1/+1 counter from " +
-                        "target creature$ onto " + permanent + "."):
+                    permanent,
+                    new MagicMayChoice(MagicTargetChoice.NEG_TARGET_CREATURE_PLUSONE_COUNTER),
+                    this,
+                    "PN may$ move a +1/+1 counter from " +
+                    "target creature$ onto SN."):
                 MagicEvent.NONE;
         }
         @Override
