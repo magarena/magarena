@@ -14,10 +14,9 @@ public class Loyal_Sentry {
             return (permanent == defender && blocked.isValid()) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     new Object[]{blocked},
                     this,
-                    "Destroy " + blocked + ". Destroy " + permanent + "."):
+                    "Destroy both " + blocked + "and SN."):
                 MagicEvent.NONE;
         }
         @Override
