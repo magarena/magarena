@@ -23,17 +23,14 @@ public class Ior_Ruin_Expedition {
     public static final MagicLandfallTrigger T = new MagicLandfallTrigger() {
         @Override
         public MagicEvent getEvent(final MagicPermanent permanent) {
-            final MagicPlayer player = permanent.getController();
             return new MagicEvent(
                     permanent,
-                    player,
                     new MagicSimpleMayChoice(
-                            player + " may put a quest counter on " + permanent + ".",
-                            MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
-                            1,
-                            MagicSimpleMayChoice.DEFAULT_YES),
+                        MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_YES),
                     this,
-                    player + " may$ put a quest counter on " + permanent + ".");
+                    "PN may$ put a quest counter on SN.");
         }
         
         @Override
@@ -64,12 +61,10 @@ public class Ior_Ruin_Expedition {
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicPlayer player=source.getController();
             return new MagicEvent(
                     source,
-                    player,
                     this,
-                    player + " draws two cards");
+                    "PN draws two cards");
         }
         @Override
         public void executeEvent(
