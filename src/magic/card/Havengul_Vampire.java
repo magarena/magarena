@@ -15,14 +15,12 @@ public class Havengul_Vampire {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
             return (permanent != otherPermanent &&
                     otherPermanent.isCreature()) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    player + " puts a +1/+1 counter on " + permanent + "."):
+                    "PN puts a +1/+1 counter on SN."):
                 MagicEvent.NONE;
         }
         @Override
