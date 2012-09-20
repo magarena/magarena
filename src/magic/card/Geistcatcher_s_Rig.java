@@ -19,10 +19,7 @@ public class Geistcatcher_s_Rig {
             return new MagicEvent(
                     permanent,
                     player,
-                    new MagicMayChoice(
-                        "You may have " + permanent + " deal 4 damage " +
-                        "to target creature with flying.",
-                        MagicTargetChoice.NEG_TARGET_CREATURE_WITH_FLYING),
+                    new MagicMayChoice(MagicTargetChoice.NEG_TARGET_CREATURE_WITH_FLYING),
                     new MagicDamageTargetPicker(4),
                     this,
                     "PN may$ have SN deal 4 damage " +
