@@ -13,16 +13,14 @@ public class Champion_of_the_Parish {
     public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
             return (otherPermanent != permanent &&
                     otherPermanent.isCreature() && 
-                    otherPermanent.getController() == player &&
+                    otherPermanent.hasSameController(permanent) &&
                     otherPermanent.hasSubType(MagicSubType.Human)) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    "Put a +1/+1 counter on " + permanent + ".") :
+                    "PN puts a +1/+1 counter on SN.") :
                 MagicEvent.NONE;
         }
         
