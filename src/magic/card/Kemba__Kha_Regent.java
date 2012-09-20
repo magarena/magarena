@@ -11,15 +11,13 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 public class Kemba__Kha_Regent {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-            final MagicPlayer player = permanent.getController();
-            return (player == data) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+            return permanent.isController(upkeepPlayer) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        player + " puts a 2/2 white Cat creature token onto the " +
-                        "battlefield for each Equipment attached to " + permanent + "."):
+                    permanent,
+                    this,
+                    "PN puts a 2/2 white Cat creature token onto the " +
+                    "battlefield for each Equipment attached to SN."):
                 MagicEvent.NONE;
         }
         @Override
