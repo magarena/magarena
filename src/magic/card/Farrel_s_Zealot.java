@@ -21,10 +21,7 @@ public class Farrel_s_Zealot {
             return (creature == permanent) ?
                 new MagicEvent(
                     permanent,
-                    new MagicMayChoice(
-                        "You may have " + permanent +
-                        " deal 3 damage to target creature.",
-                        MagicTargetChoice.NEG_TARGET_CREATURE),
+                    new MagicMayChoice(MagicTargetChoice.NEG_TARGET_CREATURE),
                     new MagicDamageTargetPicker(3),
                     this,
                     "PN may$ have SN deal 3 damage to target creature$."
