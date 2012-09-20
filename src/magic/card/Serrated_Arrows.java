@@ -39,13 +39,12 @@ public class Serrated_Arrows {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPlayer upkeepPlayer) {
-            final MagicPlayer player = permanent.getController();    
-            return (player == upkeepPlayer && permanent.getCounters(MagicCounterType.Charge) == 0) ?
+            return (permanent.isController(upkeepPlayer) && 
+                    permanent.getCounters(MagicCounterType.Charge) == 0) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    "Sacrifice " + permanent + "."):
+                    "Sacrifice SN."):
                 MagicEvent.NONE;
         }
         @Override
