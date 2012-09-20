@@ -14,21 +14,18 @@ public class Kresh_the_Bloodbraided {
     public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
             final int power = otherPermanent.getPower();
             return (permanent != otherPermanent &&
                     otherPermanent.isCreature()) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new MagicSimpleMayChoice(
-                        player + " may put " + power + " +1/+1 counters on " + permanent + ".",
                         MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
                         1,
                         MagicSimpleMayChoice.DEFAULT_YES),
                     new Object[]{power},
                     this,
-                    player + " may put " + power + " +1/+1 counters on " + permanent + ".") :
+                    "PN may$ put " + power + " +1/+1 counters on SN.") :
                 MagicEvent.NONE;
         }
         @Override
