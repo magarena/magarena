@@ -22,9 +22,7 @@ public class Mordant_Dragon {
                     damage.isCombat()) ?
                 new MagicEvent(
                     permanent,
-                    new MagicMayChoice(
-                        "You may have " + permanent + " deal " + amount + " damage to target creature.",
-                        MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS),
+                    new MagicMayChoice(MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS),
                     new MagicDamageTargetPicker(amount),
                     new Object[]{amount},
                     this,
