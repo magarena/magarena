@@ -14,10 +14,9 @@ public class Archon_of_Redemption {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    this,
-                    player + " gains life equal to " + permanent + "'s power.");
+                permanent,
+                this,
+                "PN gains life equal to SN's power.");
         }
         @Override
         public void executeEvent(
@@ -32,17 +31,15 @@ public class Archon_of_Redemption {
     public static final MagicWhenOtherComesIntoPlayTrigger T2 = new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            final MagicPlayer player=permanent.getController();
             return (otherPermanent!=permanent && 
-                    otherPermanent.getController()==player && 
                     otherPermanent.isCreature() &&
-                    otherPermanent.hasAbility(MagicAbility.Flying)) ?
+                    otherPermanent.hasAbility(MagicAbility.Flying) &&
+                    otherPermanent.hasSameController(permanent)) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{otherPermanent},
-                        this,
-                        player + " gains life equal to the power of "+otherPermanent+'.'):
+                    permanent,
+                    new Object[]{otherPermanent},
+                    this,
+                    "PN gains life equal to the power of "+otherPermanent+'.'):
                 MagicEvent.NONE;
         }
         @Override

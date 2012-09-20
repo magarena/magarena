@@ -23,13 +23,11 @@ public class Twilight_Drover {
     public static final MagicWhenLeavesPlayTrigger T2 = new MagicWhenLeavesPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent left) {
-            final MagicPlayer player = permanent.getController();
             return (left.isCreature() && left.isToken()) ?
                 new MagicEvent(
                         permanent,
-                        player,
                         this,
-                        player + " puts a +1/+1 counter on " + permanent + "."):
+                        "PN puts a +1/+1 counter on SN."):
                 MagicEvent.NONE;
         }
         @Override
@@ -60,12 +58,10 @@ public class Twilight_Drover {
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicPlayer player = source.getController();
             return new MagicEvent(
                     source,
-                    player,
                     this,
-                    player + " puts two 1/1 white Spirit creature " +
+                    "PN puts two 1/1 white Spirit creature " +
                     "tokens with flying onto the battlefield.");
         }
         @Override

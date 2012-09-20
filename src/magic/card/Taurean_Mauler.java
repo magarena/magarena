@@ -16,18 +16,15 @@ public class Taurean_Mauler {
     public static final MagicWhenOtherSpellIsCastTrigger T = new MagicWhenOtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
-            final MagicPlayer player = permanent.getController();
-            return (cardOnStack.getController() != player) ?
+            return cardOnStack.getController() != permanent.getController() ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new MagicSimpleMayChoice(
-                        player + " may put a +1/+1 counter on " + permanent + ".",
                         MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
                         1,
                         MagicSimpleMayChoice.DEFAULT_YES),
                     this,
-                    player + " may put a +1/+1 counter on " + permanent + "."):
+                    "PN may put a +1/+1 counter on SN."):
                 MagicEvent.NONE;
         }
         @Override

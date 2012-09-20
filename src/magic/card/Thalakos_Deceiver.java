@@ -16,21 +16,16 @@ public class Thalakos_Deceiver {
     public static final MagicWhenAttacksUnblockedTrigger T = new MagicWhenAttacksUnblockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            if (creature == permanent) {
-                final MagicPlayer player = permanent.getController();
-                return new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicMayChoice(
-                                player + " may sacrifice " + permanent +
-                                ". If you do, gain control of target creature.",
-                                MagicTargetChoice.NEG_TARGET_CREATURE),
-                        MagicExileTargetPicker.create(),
-                        this,
-                        player + " may$ sacrifice " + permanent +
-                        ". If you do, gain control of target creature$.");
-            }
-            return MagicEvent.NONE;
+            return (creature == permanent) ?
+                new MagicEvent(
+                    permanent,
+                    new MagicMayChoice(MagicTargetChoice.NEG_TARGET_CREATURE),
+                    MagicExileTargetPicker.create(),
+                    this,
+                    "PN may$ sacrifice SN. " +
+                    "If you do, gain control of target creature$."
+                ):
+                MagicEvent.NONE;
         }
         
         @Override

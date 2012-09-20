@@ -23,9 +23,8 @@ public class War_Elemental {
             return (!opponent.hasState(MagicPlayerState.WasDealtDamage)) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     this,
-                    "Sacrifice " + permanent + "."):
+                    "Sacrifice SN."):
                 MagicEvent.NONE;
         }
         @Override
@@ -47,13 +46,12 @@ public class War_Elemental {
             final MagicPlayer player = permanent.getController();
             final MagicPlayer opponent = player.getOpponent();
             final int amount = damage.getDealtAmount();
-            return (damage.getTarget() == opponent) ?
+            return damage.getTarget() == opponent ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new Object[]{amount},
                     this,
-                    player + " puts " + amount + " +1/+1 counters on " + permanent + "."):
+                    "PN puts " + amount + " +1/+1 counters on SN."):
                 MagicEvent.NONE;
         }
         @Override

@@ -13,17 +13,15 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 public class Drifter_il_Dal {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-            final MagicPlayer player = permanent.getController();
-            return (player == data) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+            return permanent.isController(upkeepPlayer) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new MagicMayChoice(
-                        "You may pay {U}.",
-                        new MagicPayManaCostChoice(MagicManaCost.BLUE)),
+                        new MagicPayManaCostChoice(MagicManaCost.BLUE)
+                    ),
                     this,
-                    "You may$ pay {U}$. If you don't, sacrifice " + permanent + ".") :
+                    "You may$ pay {U}$. If you don't, sacrifice SN.") :
                 MagicEvent.NONE;
         }
 

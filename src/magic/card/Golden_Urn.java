@@ -22,19 +22,16 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 public class Golden_Urn {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-            final MagicPlayer player = permanent.getController();
-            return (player == data) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+            return permanent.isController(upkeepPlayer) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicSimpleMayChoice(
-                            player + " may put a charge counter on " + permanent + ".",
-                            MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
-                            1,
-                            MagicSimpleMayChoice.DEFAULT_YES),
-                        this,
-                        "PN may$ put a charge counter on SN."):
+                    permanent,
+                    new MagicSimpleMayChoice(
+                        MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_YES),
+                    this,
+                    "PN may$ put a charge counter on SN."):
                 MagicEvent.NONE;
         }
         @Override
