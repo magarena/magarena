@@ -18,13 +18,12 @@ public class Retaliator_Griffin {
             final MagicPlayer player=permanent.getController();
             return (amount > 0 && 
                     damage.getTarget() == player &&
-                    damage.getSource().getController()!=player) ?
+                    damage.getSource().getController() != player) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{amount},
-                        this,
-                        "Put "+amount+" +1/+1 counters on " + permanent + "."):
+                    permanent,
+                    new Object[]{amount},
+                    this,
+                    "Put "+amount+" +1/+1 counters on SN."):
                 MagicEvent.NONE;
         }
         @Override
