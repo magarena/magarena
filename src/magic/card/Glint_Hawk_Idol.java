@@ -53,16 +53,12 @@ public class Glint_Hawk_Idol {
     public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
             return (otherPermanent != permanent &&
                     otherPermanent.isArtifact() && 
-                    otherPermanent.getController() == player) ?
+                    otherPermanent.hasSameController(permanent)) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new MagicSimpleMayChoice(
-                        player + " may have " + permanent + " become a 2/2 Bird " +
-                        "artifact creature with flying until end of turn.",
                         MagicSimpleMayChoice.BECOME_CREATURE,
                         0,
                         MagicSimpleMayChoice.DEFAULT_YES),

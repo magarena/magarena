@@ -11,14 +11,12 @@ import magic.model.trigger.MagicWhenLeavesPlayTrigger;
 public class Arctic_Nishoba {
     public static final MagicWhenLeavesPlayTrigger T2 = new MagicWhenLeavesPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            final MagicPlayer player = permanent.getController();
-            return (permanent == data) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent left) {
+            return (permanent == left) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    player + " gains 2 life for each age counter on " + permanent + "."):
+                    "PN gains 2 life for each age counter on SN."):
                 MagicEvent.NONE;
         }
         @Override

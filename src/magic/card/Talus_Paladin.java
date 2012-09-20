@@ -21,20 +21,16 @@ public class Talus_Paladin {
     public static final MagicWhenOtherComesIntoPlayTrigger T1 = new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
-            return (otherPermanent.getController() == player &&
+            return (otherPermanent.hasSameController(permanent) &&
                     otherPermanent.hasSubType(MagicSubType.Ally)) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new MagicSimpleMayChoice(
-                        player + " may have Ally creatures he or " +
-                        "she controls gain lifelink until end of turn.",
                         MagicSimpleMayChoice.PUMP,
                         1,
                         MagicSimpleMayChoice.DEFAULT_YES),
                     this,
-                    player + " may$ have Ally creatures he or " +
+                    "PN may$ have Ally creatures he or " +
                     "she controls gain lifelink until end of turn.") :
                 MagicEvent.NONE;
         }
@@ -59,19 +55,16 @@ public class Talus_Paladin {
     public static final MagicWhenOtherComesIntoPlayTrigger T2 = new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
-            return (otherPermanent.getController() == player &&
+            return (otherPermanent.hasSameController(permanent) &&
                     otherPermanent.hasSubType(MagicSubType.Ally)) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new MagicSimpleMayChoice(
-                        player + " may put a +1/+1 counter on " + permanent + ".",
                         MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
                         1,
                         MagicSimpleMayChoice.DEFAULT_YES),
                     this,
-                    player + " may$ put a +1/+1 counter on " + permanent + ".") :
+                    "PN may$ put a +1/+1 counter on SN.") :
                 MagicEvent.NONE;
         }
         

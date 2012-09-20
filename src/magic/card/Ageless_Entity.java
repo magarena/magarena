@@ -13,17 +13,16 @@ public class Ageless_Entity {
     public static final MagicWhenLifeIsGainedTrigger T = new MagicWhenLifeIsGainedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicLifeChangeTriggerData lifeChange) {
-            final MagicPlayer player = permanent.getController();
             final int amount = lifeChange.amount;
-            return (player == lifeChange.player) ?
+            return permanent.isController(lifeChange.player) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new Object[]{amount},
                     this,
                     amount > 1 ?
-                        "Put " + amount + " +1/+1 counters on " + permanent + "." :
-                        "Put a +1/+1 counter on " + permanent + ".") :
+                        "Put " + amount + " +1/+1 counters on SN." :
+                        "Put a +1/+1 counter on SN."
+                ) :
                 MagicEvent.NONE;
         }
         @Override

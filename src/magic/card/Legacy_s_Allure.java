@@ -25,16 +25,13 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 public class Legacy_s_Allure {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-            final MagicPlayer player = permanent.getController();
-            return (player == data) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+            return permanent.isController(upkeepPlayer) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicMayChoice(
-                                player + " may put a treasure counter on " + permanent + "."),
-                        this,
-                        "PN may$ put a treasure counter on SN."):
+                    permanent,
+                    new MagicMayChoice(),
+                    this,
+                    "PN may$ put a treasure counter on SN."):
                 MagicEvent.NONE;
         }
         @Override

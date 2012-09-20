@@ -12,16 +12,15 @@ public class Juniper_Order_Ranger {
     public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            final MagicPlayer player=permanent.getController();
-            return (otherPermanent!=permanent&&otherPermanent.isCreature() && 
-                    otherPermanent.getController()==player) ?
+            return (otherPermanent!=permanent && 
+                    otherPermanent.isCreature() && 
+                    otherPermanent.hasSameController(permanent)) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{otherPermanent},
-                        this,
-                        "Put a +1/+1 counter on "+otherPermanent+" and a +1/+1 counter on " + 
-                        permanent + "."):
+                    permanent,
+                    new Object[]{otherPermanent},
+                    this,
+                    "Put a +1/+1 counter on "+otherPermanent+" and a +1/+1 counter on SN."
+                ):
                 MagicEvent.NONE;
         }
         
