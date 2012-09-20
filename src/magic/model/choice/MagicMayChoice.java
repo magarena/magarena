@@ -45,6 +45,10 @@ public class MagicMayChoice extends MagicChoice {
         targetChoice = localTargetChoice;
         manaChoiceResultIndex = localManaChoiceResultIndex;
     }
+    
+    public MagicMayChoice(final MagicChoice... choices) {
+        this("Proceed with \"may\" action?", choices);
+    }
             
     private MagicChoice[] getChoices() {
         return choices;
