@@ -21,9 +21,7 @@ public class Ronin_Cliffrider {
             return (permanent == creature) ?
                 new MagicEvent(
                     permanent,
-                    new MagicMayChoice(
-                        "You may$ have " + permanent + " deal 1 damage " +
-                        "to each creature defending player controls."),
+                    new MagicMayChoice(),
                     this,
                     "PN may$ have SN deal 1 damage " +
                     "to each creature defending player controls.") :
