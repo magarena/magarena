@@ -22,9 +22,7 @@ public class Rhox {
             return (permanent == attacker) ?
                 new MagicEvent(
                     permanent,
-                    new MagicMayChoice(
-                        "You may have " + permanent + " deal its combat damage " +
-                        "to defending player as though it weren't blocked."),
+                    new MagicMayChoice(),
                     this,
                     "PN may$ have SN deal its combat damage " +
                     "to defending player as though it weren't blocked."):
