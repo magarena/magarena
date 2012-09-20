@@ -15,15 +15,11 @@ public class Calcite_Snapper {
     public static final MagicLandfallTrigger T = new MagicLandfallTrigger() {
         @Override
         public MagicEvent getEvent(final MagicPermanent permanent) {
-            final MagicPlayer player = permanent.getController();
             return new MagicEvent(
                     permanent,
-                    player,
-                    new MagicMayChoice(
-                            player + " may switch " + permanent + "'s " +
-                            "power and toughness until end of turn."),
+                    new MagicMayChoice(),
                     this,
-                    player + " may$ switch " + permanent + "'s " +
+                    "PN may$ switch SN's " +
                     "power and toughness until end of turn.");
         }
         
