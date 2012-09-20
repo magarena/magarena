@@ -58,9 +58,8 @@ public class Amphibious_Kavu {
                     MagicColor.Black.hasColor(blocked.getColorFlags()))) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     this,
-                    permanent + " gets +3/+3 until end of turn."):
+                    "SN gets +3/+3 until end of turn."):
                 MagicEvent.NONE;
         }
         @Override
