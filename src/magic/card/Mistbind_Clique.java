@@ -35,10 +35,7 @@ public class Mistbind_Clique {
                     new MagicTargetChoice(
                     targetFilter,false,MagicTargetHint.None,"another Faerie to exile");
             final MagicChoice championChoice = 
-                    new MagicMayChoice(
-                    "You may exile another Faerie you control. " +
-                    "If you don't, sacrifice " + permanent + ".",
-                    targetChoice);
+                    new MagicMayChoice(targetChoice);
             return new MagicEvent(
                     permanent,
                     player,
