@@ -14,16 +14,15 @@ public class Lavacore_Elemental {
     public static final MagicWhenDamageIsDealtTrigger T3 = new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            final MagicPlayer player = permanent.getController();
             final MagicSource source = damage.getSource();
-            return (damage.isCombat() && 
-                    damage.getTarget().isPlayer() &&
-                    source.getController() == player) ?
+            return (source.isCreature() &&
+                    permanent.hasSameController(source) &&
+                    damage.isCombat() && 
+                    damage.getTarget().isPlayer()) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    player + " puts a time counter on " + permanent + ".") :
+                    "PN puts a time counter on SN.") :
                 MagicEvent.NONE;
         }
         @Override
