@@ -39,7 +39,6 @@ public class Quest_for_the_Gemblades {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
                     MagicPumpTargetPicker.create(),
                     this,
@@ -62,25 +61,22 @@ public class Quest_for_the_Gemblades {
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            final MagicPlayer player=permanent.getController();
             final MagicSource source=damage.getSource();
             final MagicTarget target=damage.getTarget();
             return (damage.isCombat() && 
-                    source.getController()==player && 
+                    permanent.hasSameController(source) && 
                     source.isPermanent() && 
                     target.isPermanent() &&
                     ((MagicPermanent)source).isCreature() && 
                     ((MagicPermanent)target).isCreature()) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicSimpleMayChoice(
-                                player + " may put a quest counter on " + permanent + ".",
-                                MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
-                                1,
-                                MagicSimpleMayChoice.DEFAULT_YES),
-                        this,
-                        "PN may$ put a quest counter on SN."):
+                    permanent,
+                    new MagicSimpleMayChoice(
+                        MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_YES),
+                    this,
+                    "PN may$ put a quest counter on SN."):
                 MagicEvent.NONE;
         }
         @Override

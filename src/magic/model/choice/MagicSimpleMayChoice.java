@@ -44,6 +44,10 @@ public class MagicSimpleMayChoice extends MagicChoice {
         this.defaultChoice = defaultChoice;
     }
     
+    public MagicSimpleMayChoice(final int action,final int amount,final int defaultChoice) {
+        this("Proceed with \"may\" action?", action, amount, defaultChoice);
+    }
+    
     @Override
     Collection<Object> getArtificialOptions(final MagicGame game,final MagicEvent event,final MagicPlayer player,final MagicSource source) {
         throw new UnsupportedOperationException();
