@@ -53,10 +53,9 @@ public class Crescendo_of_War {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             return new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        this,
-                        "Put a strife counter on " + permanent + ".");
+                permanent,
+                this,
+                "PN puts a strife counter on SN.");
         }    
         @Override
         public void executeEvent(

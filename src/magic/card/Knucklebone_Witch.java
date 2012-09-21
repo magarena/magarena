@@ -17,20 +17,17 @@ public class Knucklebone_Witch {
             final MagicGame game,
             final MagicPermanent permanent, 
             final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
             return (permanent != otherPermanent &&
-                    otherPermanent.getController() == player &&
+                    otherPermanent.hasSameController(permanent) &&
                     otherPermanent.hasSubType(MagicSubType.Goblin)) ? 
                 new MagicEvent(
                     permanent, 
-                    player,
                     new MagicSimpleMayChoice(
-                        player + " may put a +1/+1 counter on " + permanent + ".",
                         MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
                         1,
                         MagicSimpleMayChoice.DEFAULT_YES),
                     this, 
-                    player + " may$ put a +1/+1 counter on " + permanent + ".") : 
+                    "PN may$ put a +1/+1 counter on SN.") : 
                 MagicEvent.NONE;
         }
 

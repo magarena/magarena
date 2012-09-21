@@ -15,22 +15,18 @@ import magic.model.trigger.MagicWhenOtherSpellIsCastTrigger;
 public class Nettle_Sentinel {
     public static final MagicWhenOtherSpellIsCastTrigger T = new MagicWhenOtherSpellIsCastTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
-            final MagicPlayer player = permanent.getController();
-            final MagicCard card = data.getCard();
-            return (card.getOwner() == player &&
-                    MagicColor.Green.hasColor(card.getColorFlags()) &&
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack spell) {
+            return (permanent.hasSameController(spell) &&
+                    MagicColor.Green.hasColor(spell.getColorFlags()) &&
                     permanent.isTapped()) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new MagicSimpleMayChoice(
-                        player + " may untap " + permanent + ".",
                         MagicSimpleMayChoice.UNTAP,
                         1,
                         MagicSimpleMayChoice.DEFAULT_YES),
                     this,
-                    player + " may$ untap " + permanent + ".") :
+                    "PN may$ untap SN.") :
                 MagicEvent.NONE;
         }
         @Override

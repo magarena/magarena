@@ -34,18 +34,15 @@ public class Beastmaster_Ascension {
     public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            final MagicPlayer player = permanent.getController();
-            return (creature.getController() == player) ?
+            return creature.hasSameController(permanent) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicSimpleMayChoice(
-                                player + " may put a quest counter on " + permanent + ".",
-                                MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
-                                1,
-                                MagicSimpleMayChoice.DEFAULT_YES),
-                        this,
-                        player + " may$ put a quest counter on " + permanent + ".") :
+                    permanent,
+                    new MagicSimpleMayChoice(
+                        MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_YES),
+                    this,
+                    "PN may$ put a quest counter on SN.") :
                 MagicEvent.NONE;
         }
         

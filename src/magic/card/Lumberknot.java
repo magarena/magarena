@@ -17,9 +17,8 @@ public class Lumberknot {
             return (otherPermanent.isCreature()) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     this,
-                    "Put a +1/+1 counter on " + permanent + ".") :
+                    "PN puts a +1/+1 counter on SN.") :
                 MagicEvent.NONE;
         }
         @Override

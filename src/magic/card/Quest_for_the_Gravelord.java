@@ -33,10 +33,8 @@ public class Quest_for_the_Gravelord {
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicPlayer player=source.getController();
             return new MagicEvent(
                     source,
-                    player,
                     this,
                     "Put a 5/5 black Zombie Giant creature token onto the battlefield.");
         }
@@ -53,18 +51,15 @@ public class Quest_for_the_Gravelord {
     public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
             return (otherPermanent.isCreature()) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new MagicSimpleMayChoice(
-                        player + " may put a quest counter on " + permanent + ".",
                         MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
                         1,
                         MagicSimpleMayChoice.DEFAULT_YES),
                     this,
-                    player + " may$ put a quest counter on " + permanent + "."):
+                    "PN may$ put a quest counter on SN."):
                 MagicEvent.NONE;
         }
         @Override

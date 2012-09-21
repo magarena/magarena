@@ -29,7 +29,7 @@ public class Master_Thief {
                     MagicExileTargetPicker.create(),
                     this,
                     "Gain control of target artifact$ " +
-                    "for as long as you control " + permanent + ".");
+                    "for as long as you control SN.");
         }
         
         @Override

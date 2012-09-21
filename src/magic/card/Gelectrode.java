@@ -15,13 +15,12 @@ public class Gelectrode {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicCardOnStack cardOnStack) {
-            final MagicPlayer player=permanent.getController();
-            return (cardOnStack.getController()==player&&cardOnStack.getCardDefinition().isSpell()) ?
+            return (permanent.isController(cardOnStack.getController()) && 
+                    cardOnStack.getCardDefinition().isSpell()) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    "Untap " + permanent + "."):
+                    "Untap SN."):
                 MagicEvent.NONE;
         }
         @Override

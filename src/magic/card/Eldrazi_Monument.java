@@ -38,14 +38,12 @@ public class Eldrazi_Monument {
 
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-            final MagicPlayer player=permanent.getController();
-            return (player==data) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+            return permanent.isController(upkeepPlayer) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        "Sacrifice a creature. If you can't, sacrifice " + permanent + "."):
+                    permanent,
+                    this,
+                    "PN sacrifices a creature. If you can't, sacrifice SN."):
                 MagicEvent.NONE;
         }
 
