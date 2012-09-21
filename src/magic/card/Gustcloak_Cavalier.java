@@ -21,9 +21,7 @@ public class Gustcloak_Cavalier {
             return (permanent == creature) ?
                 new MagicEvent(
                     permanent,
-                    new MagicMayChoice(
-                        "You may tap target creature.",
-                        MagicTargetChoice.NEG_TARGET_CREATURE),
+                    new MagicMayChoice(MagicTargetChoice.NEG_TARGET_CREATURE),
                     new MagicTapTargetPicker(true,false),
                     this,
                     "PN may$ tap target creature$."):
@@ -48,14 +46,10 @@ public class Gustcloak_Cavalier {
     public static final MagicWhenBecomesBlockedTrigger T3 = new MagicWhenBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            final MagicPlayer player = permanent.getController();
             return (creature == permanent) ?
                 new MagicEvent(
                     permanent,
-                    player,
-                    new MagicMayChoice(
-                        player + " may untap " + permanent +
-                        " and remove it from combat."),
+                    new MagicMayChoice(),
                     this, 
                     "PN may$ untap SN and remove it from combat.") :
                 MagicEvent.NONE;

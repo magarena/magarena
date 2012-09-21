@@ -20,11 +20,11 @@ public class Quest_for_Renewal {
     public static final MagicWhenBecomesTappedTrigger T1 = new MagicWhenBecomesTappedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent tapped) {
-            return (tapped.getController() == permanent.getController() && tapped.isCreature()) ?
+            return (tapped.hasSameController(permanent) && 
+                    tapped.isCreature()) ?
                 new MagicEvent(
                     permanent,
                     new MagicSimpleMayChoice(
-                        "You may put a quest counter on " + permanent + ".",
                         MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
                         1,
                         MagicSimpleMayChoice.DEFAULT_YES),
@@ -52,12 +52,10 @@ public class Quest_for_Renewal {
     public static final MagicAtUpkeepTrigger T2 = new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            final MagicPlayer player = permanent.getController();
-            return (player != upkeepPlayer &&
+            return (permanent.isOpponent(upkeepPlayer) &&
                     permanent.getCounters(MagicCounterType.Charge) >= 4) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
                     "Untap all creatures you control."):
                 MagicEvent.NONE;

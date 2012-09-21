@@ -25,12 +25,11 @@ public class Golem_Foundry {
     public static final MagicWhenOtherSpellIsCastTrigger T = new MagicWhenOtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
-            final MagicCard card = cardOnStack.getCard();
-            return (card.getOwner() == permanent.getController() && cardOnStack.getCardDefinition().isArtifact()) ?
+            return (permanent.hasSameController(cardOnStack) && 
+                    cardOnStack.getCardDefinition().isArtifact()) ?
                 new MagicEvent(
                     permanent,
                     new MagicSimpleMayChoice(
-                        "You may put a charge counter on " + permanent + ".",
                         MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
                         1,
                         MagicSimpleMayChoice.DEFAULT_YES),
@@ -62,12 +61,10 @@ public class Golem_Foundry {
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicPlayer player = source.getController();
             return new MagicEvent(
                     source,
-                    player,
                     this,
-                    player + " puts a 3/3 colorless Golem artifact creature token onto the battlefield.");
+                    "PN puts a 3/3 colorless Golem artifact creature token onto the battlefield.");
         }
         @Override
         public void executeEvent(

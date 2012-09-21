@@ -24,9 +24,8 @@ public class Deathrender {
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        "You may put a creature card from you " +
-                        "hand onto the battlefield and attach " + permanent + " to it.",
-                        MagicTargetChoice.TARGET_CREATURE_CARD_FROM_HAND),
+                        MagicTargetChoice.TARGET_CREATURE_CARD_FROM_HAND
+                    ),
                     new MagicGraveyardTargetPicker(true),
                     this,
                     "PN may$ put a creature card$ from his or her hand " +

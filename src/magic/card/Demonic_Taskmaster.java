@@ -15,7 +15,7 @@ public class Demonic_Taskmaster {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return (permanent.getController() == upkeepPlayer) ?
+            return permanent.isController(upkeepPlayer) ?
                 new MagicEvent(
                     permanent,
                     this,

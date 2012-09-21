@@ -284,6 +284,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return getController() == player;
     }
     
+    public boolean isOpponent(final MagicPlayer player) {
+        return getController() != player;
+    }
+    
     public static void update(final MagicGame game) {
         MagicPermanent.updateProperties(game);
         MagicPermanent.updateScoreFixController(game);
