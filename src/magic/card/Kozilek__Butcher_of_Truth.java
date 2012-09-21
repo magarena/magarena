@@ -14,13 +14,12 @@ public class Kozilek__Butcher_of_Truth {
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicCardOnStack data) {
-            final MagicPlayer player = data.getController();
+                final MagicCardOnStack spell) {
             return new MagicEvent(
-                    data.getSource(),
-                    player,
-                    this,
-                    player + " draws four cards.");
+                spell,
+                this,
+                "PN draws four cards."
+            );
         }
         
         @Override

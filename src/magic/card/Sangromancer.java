@@ -15,19 +15,17 @@ public class Sangromancer {
     public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T1 = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
-            final MagicPlayer otherController = otherPermanent.getController();
-            return (otherController != player && otherPermanent.isCreature()) ?
+            return (otherPermanent.hasDifferentController(permanent) && 
+                    otherPermanent.isCreature()) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new MagicSimpleMayChoice(
-                            player + " may gain 3 life.",
-                            MagicSimpleMayChoice.GAIN_LIFE,
-                            3,
-                            MagicSimpleMayChoice.DEFAULT_YES),
+                        MagicSimpleMayChoice.GAIN_LIFE,
+                        3,
+                        MagicSimpleMayChoice.DEFAULT_YES
+                    ),
                     this,
-                    player + " may$ gain 3 life.") :
+                    "PN may$ gain 3 life.") :
                 MagicEvent.NONE;
         }
         @Override
@@ -44,20 +42,16 @@ public class Sangromancer {
     
     public static final MagicWhenDiscardedTrigger T2 =new MagicWhenDiscardedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard data) {
-            final MagicPlayer otherController = data.getOwner();
-            final MagicPlayer player = permanent.getController();
-            return (otherController != player) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard card) {
+            return permanent.hasDifferentController(card) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new MagicSimpleMayChoice(
-                            player + " may gain 3 life.",
-                            MagicSimpleMayChoice.GAIN_LIFE,
-                            3,
-                            MagicSimpleMayChoice.DEFAULT_YES),
+                        MagicSimpleMayChoice.GAIN_LIFE,
+                        3,
+                        MagicSimpleMayChoice.DEFAULT_YES),
                     this,
-                    player + " may$ gain 3 life.") :
+                    "PN may$ gain 3 life.") :
                 MagicEvent.NONE;
         }
 

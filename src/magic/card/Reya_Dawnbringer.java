@@ -17,20 +17,17 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 public class Reya_Dawnbringer {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-            final MagicPlayer player = permanent.getController();
-            return (player != data) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+            return permanent.isController(upkeepPlayer) ?
                 MagicEvent.NONE :
                 new MagicEvent(
                     permanent,
-                    player,
                     new MagicMayChoice(
-                            player + " may return target creature card " +
-                            "from his or her graveyard to the battlefield.",
-                            MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD),
+                        MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD
+                    ),
                     new MagicGraveyardTargetPicker(true),
                     this,
-                    player + " may$ return target creature card$ from " +
+                    "PN may$ return target creature card$ from " +
                     "his or her graveyard to the battlefield.");
         }
         @Override

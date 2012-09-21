@@ -13,16 +13,15 @@ import magic.model.trigger.MagicAtEndOfTurnTrigger;
 public class Wall_of_Reverence {
     public static final MagicAtEndOfTurnTrigger T = new MagicAtEndOfTurnTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-            final MagicPlayer player=permanent.getController();
-            return (player==data) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eotPlayer) {
+            return permanent.isController(eotPlayer) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
                     MagicPowerTargetPicker.getInstance(),
                     this,
-                    player + " gains life equal to the power of target creature$ he or she controls."):
+                    "PN gains life equal to the power of target creature$ he or she controls."
+                ):
                 MagicEvent.NONE;
         }
         @Override

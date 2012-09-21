@@ -57,13 +57,12 @@ public class Ghost_Council_of_Orzhova {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-            
             return new MagicEvent(
                     permanent,
                     player,
                     MagicTargetChoice.TARGET_OPPONENT,
                     this,
-                    "Target opponent$ loses 1 life and " + player + " gains 1 life.");
+                    "Target opponent$ loses 1 life and PN gains 1 life.");
         }
         @Override
         public void executeEvent(

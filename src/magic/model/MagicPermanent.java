@@ -280,12 +280,16 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return getController() == other.getController();
     }
     
-    public boolean isController(final MagicPlayer player) {
+    public boolean hasDifferentController(final MagicSource other) {
+        return getController() != other.getController();
+    }
+    
+    public boolean isController(final MagicTarget player) {
         return getController() == player;
     }
     
-    public boolean isOpponent(final MagicPlayer player) {
-        return getController() != player;
+    public boolean isOpponent(final MagicTarget player) {
+        return getController().getOpponent() == player;
     }
     
     public static void update(final MagicGame game) {

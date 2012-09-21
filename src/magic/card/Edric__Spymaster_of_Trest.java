@@ -15,21 +15,20 @@ public class Edric__Spymaster_of_Trest {
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            final MagicPlayer player = permanent.getController();
-            return (damage.getTarget() == player.getOpponent() && 
+            return (permanent.isOpponent(damage.getTarget()) && 
                     damage.getSource().isCreature() &&
                     damage.isCombat()) ?
-                            new MagicEvent(
-                                    permanent,
-                                    player,
-                                    new MagicSimpleMayChoice(
-                                        player + " may draw a card.",
-                                        MagicSimpleMayChoice.DRAW_CARDS,
-                                        1,
-                                        MagicSimpleMayChoice.DEFAULT_NONE),
-                                    this,
-                                    player + " may$ draw a card.") :
-                                MagicEvent.NONE;
+                new MagicEvent(
+                    permanent,
+                    damage.getSource().getController(),
+                    new MagicSimpleMayChoice(
+                        MagicSimpleMayChoice.DRAW_CARDS,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_NONE),
+                    this,
+                    "PN may$ draw a card."
+                ) :
+                MagicEvent.NONE;
         }
         
         @Override
