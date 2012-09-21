@@ -15,19 +15,17 @@ public class Snake_Umbra {
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            final MagicPlayer player=permanent.getController();
-            final MagicTarget target=damage.getTarget();
-            return (damage.getSource() == permanent.getEnchantedCreature() && target.isPlayer()&&target!=player) ?
+            final MagicPermanent enchanted = permanent.getEnchantedCreature();
+            return (enchanted == damage.getSource() && 
+                    enchanted.isOpponent(damage.getTarget())) ?
                 new MagicEvent(
-                    permanent,
-                    player,
+                    enchanted,
                     new MagicSimpleMayChoice(
-                        player + " may draw a card.",
                         MagicSimpleMayChoice.DRAW_CARDS,
                         1,
                         MagicSimpleMayChoice.DEFAULT_NONE),
                     this,
-                    player + " may$ draw a card.") :
+                    "PN may$ draw a card.") :
                 MagicEvent.NONE;
         }
         @Override

@@ -13,22 +13,19 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 public class Awakening_Zone {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-            final MagicPlayer player = permanent.getController();
-            return (player == data) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+            return permanent.isController(upkeepPlayer) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicSimpleMayChoice(
-                                player + " may put a 0/1 colorless Eldrazi " +
-                                "Spawn creature token onto the battlefield.",
-                                MagicSimpleMayChoice.PLAY_TOKEN,
-                                1,
-                                MagicSimpleMayChoice.DEFAULT_YES),
-                        this,
-                        player + " may$ put a 0/1 colorless Eldrazi Spawn " +
-                        "creature token onto the battlefield. It has " +
-                        "\"Sacrifice this creature: Add {1} to your mana pool.\""):
+                    permanent,
+                    new MagicSimpleMayChoice(
+                        MagicSimpleMayChoice.PLAY_TOKEN,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_YES),
+                    this,
+                    "PN may$ put a 0/1 colorless Eldrazi Spawn " +
+                    "creature token onto the battlefield. It has " +
+                    "\"Sacrifice this creature: Add {1} to your mana pool.\""
+                ):
                 MagicEvent.NONE;
         }
         @Override

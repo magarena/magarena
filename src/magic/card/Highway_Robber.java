@@ -15,11 +15,10 @@ public class Highway_Robber {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.TARGET_OPPONENT,
-                    this,
-                    "Target opponent$ loses 2 life and " + player + " gains 2 life.");
+                permanent,
+                MagicTargetChoice.TARGET_OPPONENT,
+                this,
+                "Target opponent$ loses 2 life and PN gains 2 life.");
         }
         @Override
         public void executeEvent(

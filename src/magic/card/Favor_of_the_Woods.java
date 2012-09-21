@@ -14,14 +14,13 @@ public class Favor_of_the_Woods {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPermanent creature) {
-            final MagicPlayer player = permanent.getController();
             return (creature == permanent.getEnchantedCreature()) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        player + " gains 3 life.") :
-            MagicEvent.NONE;
+                    permanent,
+                    this,
+                    "PN gains 3 life."
+                ):
+                MagicEvent.NONE;
         }
         
         @Override

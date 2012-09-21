@@ -17,16 +17,14 @@ public class Triumph_of_Ferocity {
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicPlayer data) {
-            final MagicPlayer player = permanent.getController();
-            return (player == data) ?
-                    new MagicEvent(
-                            permanent,
-                            player,
-                            this,
-                            player + " draws a card if he or she " +
-                            "controls the creature with the greatest " +
-                            "power or tied for the greatest power.") :
+                final MagicPlayer upkeepPlayer) {
+            return permanent.isController(upkeepPlayer) ?
+                new MagicEvent(
+                    permanent,
+                    this,
+                    "PN draws a card if he or she " +
+                    "controls the creature with the greatest " +
+                    "power or tied for the greatest power.") :
                 MagicEvent.NONE;
         }
         @Override

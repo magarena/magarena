@@ -22,14 +22,12 @@ public class Leonin_Relic_Warder {
                     MagicTargetFilter.TARGET_ARTIFACT_OR_ENCHANTMENT,permanent);
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
                     targetFilter,true,MagicTargetHint.Negative,"another artifact or enchantment to exile");
-            final MagicChoice mayChoice = new MagicMayChoice(player + " may exile another artifact or enchantment.",targetChoice);
             return new MagicEvent(
                     permanent,
-                    player,
-                    mayChoice,
+                    new MagicMayChoice(targetChoice),
                     MagicExileTargetPicker.create(),
                     this,
-                    player + " may$ exile another artifact or enchantment$.");
+                    "PN may$ exile another artifact or enchantment$.");
         }
         @Override
         public void executeEvent(
