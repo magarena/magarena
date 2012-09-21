@@ -23,11 +23,10 @@ public class Hunting_Moa {
                 final MagicPlayer player) {
             return new MagicEvent(
                 permanent,
-                player,
                 MagicTargetChoice.TARGET_CREATURE,
                 MagicPumpTargetPicker.create(),
                 this,
-                player + " puts a +1/+1 counter on target creature$."
+                "PN puts a +1/+1 counter on target creature$."
             );
         }    
         @Override
@@ -51,14 +50,12 @@ public class Hunting_Moa {
     public static final MagicWhenDiesTrigger T3 = new MagicWhenDiesTrigger() {
         @Override
         public MagicEvent getEvent(final MagicPermanent permanent) {
-            final MagicPlayer player = permanent.getController();
             return new MagicEvent(
                 permanent,
-                player,
                 MagicTargetChoice.TARGET_CREATURE,
                 MagicPumpTargetPicker.create(),
                 this,
-                player + " puts a +1/+1 counter on target creature$."
+                "PN puts a +1/+1 counter on target creature$."
             );
         }
         

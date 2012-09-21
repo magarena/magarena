@@ -18,20 +18,18 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 public class Wort__Boggart_Auntie {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-            final MagicPlayer player = permanent.getController();
-            return (player == data) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+            return permanent.isController(upkeepPlayer) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicMayChoice(
-                            player + " may return target Goblin card " +
-                            "from his or her graveyard to his or her hand.",
-                            MagicTargetChoice.TARGET_GOBLIN_CARD_FROM_GRAVEYARD),
-                        new MagicGraveyardTargetPicker(false),
-                        this,
-                        player + " may$ return target Goblin card$ from " +
-                        "his or her graveyard to his or her hand."):
+                    permanent,
+                    new MagicMayChoice(
+                        MagicTargetChoice.TARGET_GOBLIN_CARD_FROM_GRAVEYARD
+                    ),
+                    new MagicGraveyardTargetPicker(false),
+                    this,
+                    "PN may$ return target Goblin card$ from " +
+                    "his or her graveyard to his or her hand."
+                ):
                 MagicEvent.NONE;
         }
         @Override

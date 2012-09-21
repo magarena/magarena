@@ -18,14 +18,12 @@ public class Deadly_Grub {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicGraveyardTriggerData triggerData) {
-            final MagicPlayer player = permanent.getController();
             return (MagicLocationType.Play == triggerData.fromLocation &&
                     permanent.getCounters(MagicCounterType.Charge) == 0) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    player + " puts a 6/1 green Insect creature token " +
+                    "PN puts a 6/1 green Insect creature token " +
                     "with shroud onto the battlefield.") :
                 MagicEvent.NONE;
         }

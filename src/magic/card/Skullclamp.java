@@ -11,13 +11,11 @@ public class Skullclamp {
     public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            final MagicPlayer player=permanent.getController();
             return (permanent.getEquippedCreature()==data)?
                 new MagicEvent(
                         permanent,
-                        player,
                         this,
-                        player + " draws two cards.") :
+                        "PN draws two cards.") :
                 MagicEvent.NONE;
         }
         @Override

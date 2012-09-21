@@ -13,19 +13,16 @@ public class Deathgreeter {
     public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
             return (permanent != otherPermanent &&
                     otherPermanent.isCreature()) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new MagicSimpleMayChoice(
-                            player + " may gain 1 life.",
-                            MagicSimpleMayChoice.GAIN_LIFE,
-                            1,
-                            MagicSimpleMayChoice.DEFAULT_YES),
+                        MagicSimpleMayChoice.GAIN_LIFE,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_YES),
                     this,
-                    player + " may$ gain 1 life.") :
+                    "PN may$ gain 1 life.") :
                 MagicEvent.NONE;
         }
         @Override

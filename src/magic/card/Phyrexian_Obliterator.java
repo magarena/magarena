@@ -16,16 +16,15 @@ public class Phyrexian_Obliterator {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicDamage damage) {
-            final MagicPlayer player = damage.getSource().getController();
             final int amount = damage.getDealtAmount();
-            return (damage.getTarget() == permanent) ?
-                    new MagicEvent(
-                            permanent,
-                            player,
-                            new Object[]{amount},
-                            this,
-                            player + " sacrifices " + amount + " permanents."):
-                    MagicEvent.NONE;
+            return damage.getTarget() == permanent ?
+                new MagicEvent(
+                    permanent,
+                    damage.getSource().getController(),
+                    new Object[]{amount},
+                    this,
+                    "PN sacrifices " + amount + " permanents."):
+                MagicEvent.NONE;
         }
         
         @Override
@@ -39,9 +38,10 @@ public class Phyrexian_Obliterator {
             int amount = (Integer)data[0];
             while (amount > 0 && player.getPermanents().size() > 0) {
                 game.addEvent(new MagicSacrificePermanentEvent(
-                        permanent,
-                        player,
-                        MagicTargetChoice.SACRIFICE_PERMANENT));
+                    permanent,
+                    player,
+                    MagicTargetChoice.SACRIFICE_PERMANENT
+                ));
                 amount--;
             }
         }
