@@ -13,17 +13,13 @@ public class Gustcloak_Savior {
     public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            final MagicPlayer player = permanent.getController();
-            return (creature.getController() == player) ?
-                    new MagicEvent(
-                            permanent,
-                            player,
-                            new MagicMayChoice(player + " may untap " + creature +
-                                    " and remove it from combat."),
-                            new Object[]{creature},
-                            this, 
-                            player + " may$ untap " + creature +
-                            " and remove it from combat.") :
+            return permanent.hasSameController(creature) ?
+                new MagicEvent(
+                    permanent,
+                    new MagicMayChoice(),
+                    new Object[]{creature},
+                    this, 
+                    "PN may$ untap " + creature + " and remove it from combat.") :
             MagicEvent.NONE;
         }
         

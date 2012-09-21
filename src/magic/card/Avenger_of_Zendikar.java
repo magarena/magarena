@@ -29,7 +29,7 @@ public class Avenger_of_Zendikar {
                     permanent,
                     player,
                     this,
-                    player + " puts a 0/1 green Plant creature token onto " +
+                    "PN puts a 0/1 green Plant creature token onto " +
                     "the battlefield for each land he or she controls.");
         }
         @Override
@@ -51,19 +51,15 @@ public class Avenger_of_Zendikar {
     public static final MagicLandfallTrigger T2 = new MagicLandfallTrigger() {
         @Override
         public MagicEvent getEvent(final MagicPermanent permanent) {
-            final MagicPlayer player = permanent.getController();
             return new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicSimpleMayChoice(
-                                player + " may put a +1/+1 counter on each " +
-                                "Plant creature he or she controls.",
-                                MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
-                                1,
-                                MagicSimpleMayChoice.DEFAULT_YES),
-                        this,
-                        player + " may$ put a +1/+1 counter on each " +
-                        "Plant creature he or she controls.");
+                permanent,
+                new MagicSimpleMayChoice(
+                    MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
+                    1,
+                    MagicSimpleMayChoice.DEFAULT_YES),
+                this,
+                "PN may$ put a +1/+1 counter on each " +
+                "Plant creature he or she controls.");
         }
         @Override
         public void executeEvent(

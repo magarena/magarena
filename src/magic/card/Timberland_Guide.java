@@ -24,7 +24,7 @@ public class Timberland_Guide {
                     MagicTargetChoice.TARGET_CREATURE,
                     MagicPumpTargetPicker.create(),
                     this,
-                    player + " puts a +1/+1 counter on target creature$.");
+                    "PN puts a +1/+1 counter on target creature$.");
         }    
         @Override
         public void executeEvent(

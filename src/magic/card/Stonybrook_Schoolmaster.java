@@ -12,13 +12,11 @@ public class Stonybrook_Schoolmaster {
     public static final MagicWhenBecomesTappedTrigger T = new MagicWhenBecomesTappedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            final MagicPlayer player = permanent.getController();
             return (permanent == data) ?
                 new MagicEvent(
                         permanent,
-                        player,
                         this,
-                        player + " puts a 1/1 blue Merfolk Wizard creature token onto the battlefield.") :
+                        "PN puts a 1/1 blue Merfolk Wizard creature token onto the battlefield.") :
                 MagicEvent.NONE;
         }
         @Override

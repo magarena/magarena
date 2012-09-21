@@ -29,7 +29,7 @@ public class Maul_Splicer {
                     permanent,
                     player,
                     this,
-                    player + " puts two 3/3 colorless Golem artifact creature tokens onto the battlefield.");
+                    "PN puts two 3/3 colorless Golem artifact creature tokens onto the battlefield.");
         }
         
         @Override

@@ -25,7 +25,7 @@ public class Flame_Kin_Zealot {
                     permanent,
                     player,
                     this,
-                    "Creatures " + player + " controls get " +
+                    "Creatures PN controls get " +
                     "+1/+1 and gain haste until end of turn.");
         }
         @Override

@@ -26,15 +26,13 @@ public class Lighthouse_Chronologist {
     
     public static final MagicAtEndOfTurnTrigger T = new MagicAtEndOfTurnTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-            final MagicPlayer player = permanent.getController();
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eotPlayer) {
             return (permanent.getCounters(MagicCounterType.Charge) >= 7 &&
-                    player != data) ?
+                    permanent.isOpponent(eotPlayer)) ?
                     new MagicEvent(
                         permanent,
-                        player,
                         this,
-                        player + " takes an extra turn after this one.") :
+                        "PN takes an extra turn after this one.") :
                     MagicEvent.NONE;
         }    
         @Override

@@ -15,14 +15,12 @@ public class Seraph_Sanctuary {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
-            return (otherPermanent.getController() == player &&
+            return (otherPermanent.hasSameController(permanent) &&
                     otherPermanent.hasSubType(MagicSubType.Angel)) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        player + " gains 1 life.") :
+                    permanent,
+                    this,
+                    "PN gains 1 life.") :
                 MagicEvent.NONE;
         }
         
