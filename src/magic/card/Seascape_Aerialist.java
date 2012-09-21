@@ -19,21 +19,17 @@ public class Seascape_Aerialist {
     public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
-            return (otherPermanent.getController() == player &&
+            return (otherPermanent.hasSameController(permanent) &&
                     otherPermanent.hasSubType(MagicSubType.Ally)) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicSimpleMayChoice(
-                                player + " may have Ally creatures he or " +
-                                "she controls gain flying until end of turn.",
-                                MagicSimpleMayChoice.PUMP,
-                                1,
-                                MagicSimpleMayChoice.DEFAULT_YES),
-                        this,
-                        player + " may$ have Ally creatures he or " +
-                        "she controls gain flying until end of turn.") :
+                    permanent,
+                    new MagicSimpleMayChoice(
+                        MagicSimpleMayChoice.PUMP,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_YES),
+                    this,
+                    "PN may$ have Ally creatures he or she controls " + 
+                    "gain flying until end of turn.") :
                 MagicEvent.NONE;
         }
         

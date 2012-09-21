@@ -15,15 +15,13 @@ public class Demonic_Rising {
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicPlayer data) {
-            final MagicPlayer player = permanent.getController();
-            return (player == data &&
-                    player.getNrOfPermanentsWithType(MagicType.Creature) == 1) ?
+                final MagicPlayer eotPlayer) {
+            return (permanent.isController(eotPlayer) &&
+                    eotPlayer.getNrOfPermanentsWithType(MagicType.Creature) == 1) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    player + " puts a 5/5 black Demon creature " +
+                    "PN puts a 5/5 black Demon creature " +
                     "token with flying onto the battlefield."):
                 MagicEvent.NONE;
         }

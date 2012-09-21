@@ -12,12 +12,10 @@ public class Verdant_Force {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-            final MagicPlayer player = permanent.getController();
             return new MagicEvent(
                         permanent,
-                        player,
                         this,
-                        player + " puts a 1/1 green Saproling creature token onto the battlefield.");
+                        "PN puts a 1/1 green Saproling creature token onto the battlefield.");
         }    
         @Override
         public void executeEvent(

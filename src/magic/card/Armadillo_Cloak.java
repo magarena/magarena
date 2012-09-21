@@ -12,15 +12,13 @@ public class Armadillo_Cloak {
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            final MagicPlayer player = permanent.getController();
             final int amount = damage.getDealtAmount();
             return (permanent.getEnchantedCreature() == damage.getSource()) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new Object[]{amount},
                     this,
-                    player + "gains " + amount + " life."):
+                    "PN gains " + amount + " life."):
                 MagicEvent.NONE;
         }
         @Override

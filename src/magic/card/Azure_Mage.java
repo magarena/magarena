@@ -28,12 +28,10 @@ public class Azure_Mage {
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicPlayer player = source.getController();
             return new MagicEvent(
                     source,
-                    player,
                     this,
-                    player + " draws a card.");
+                    "PN draws a card.");
         }
         
         @Override

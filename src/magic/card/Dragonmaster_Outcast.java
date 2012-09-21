@@ -13,14 +13,13 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 public class Dragonmaster_Outcast {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-            final MagicPlayer player=permanent.getController();
-            return (player==data&&player.getNrOfPermanentsWithType(MagicType.Land)>=6) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+            return (permanent.isController(upkeepPlayer) && 
+                    upkeepPlayer.getNrOfPermanentsWithType(MagicType.Land) >= 6) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        player + " puts a 5/5 red Dragon creature token with flying onto the battlefield."):
+                    permanent,
+                    this,
+                    "PN puts a 5/5 red Dragon creature token with flying onto the battlefield."):
                 MagicEvent.NONE;
         }
         @Override
