@@ -14,18 +14,15 @@ public class Veteran_of_the_Depths {
     public static final MagicWhenBecomesTappedTrigger T = new MagicWhenBecomesTappedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            final MagicPlayer player = permanent.getController();
             return (permanent == data) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new MagicSimpleMayChoice(
-                        player + " may put a +1/+1 counter on " + permanent + ".",
                         MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
                         1,
                         MagicSimpleMayChoice.DEFAULT_YES),
                     this,
-                    "Put a +1/+1 counter on SN.") :
+                    "PN puts a +1/+1 counter on SN.") :
                 MagicEvent.NONE;
         }
         @Override

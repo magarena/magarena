@@ -18,19 +18,13 @@ public class Zealot_il_Vec {
     public static final MagicWhenAttacksUnblockedTrigger T = new MagicWhenAttacksUnblockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            final MagicPlayer player = permanent.getController();
             return (creature == permanent) ?
                 new MagicEvent(
                     permanent,
-                    player,
-                    new MagicMayChoice(
-                        player + " may have " + permanent +
-                        " deal 1 damage to target creature.",
-                        MagicTargetChoice.NEG_TARGET_CREATURE),
-                    new MagicDamageTargetPicker(3),
+                    new MagicMayChoice(MagicTargetChoice.NEG_TARGET_CREATURE),
+                    new MagicDamageTargetPicker(1),
                     this,
-                    player + " may$ have " + permanent +
-                    " deal 1 damage to target creature$."
+                    "PN may$ have SN deal 1 damage to target creature$."
                 ):
                 MagicEvent.NONE;
         }

@@ -43,9 +43,8 @@ public class Ageless_Sentinels {
            return (permanent == blocker) ?
                 new MagicEvent(
                    permanent,
-                   permanent.getController(),
                    this,
-                   permanent + " becomes a Bird Giant and loses defender."):
+                   "SN becomes a Bird Giant and loses defender."):
                 MagicEvent.NONE;
        }
        @Override

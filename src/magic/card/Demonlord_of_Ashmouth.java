@@ -29,18 +29,13 @@ public class Demonlord_of_Ashmouth {
             final MagicTargetChoice targetChoice = 
                     new MagicTargetChoice(
                     targetFilter,false,MagicTargetHint.None,"another creature to sacrifice");
-            final MagicChoice magicChoice = 
-                    new MagicMayChoice(
-                    "You may sacrifice another creature. If you don't," +
-                    " exile " + permanent + ".",targetChoice);
             return new MagicEvent(
                     permanent,
                     player,
-                    magicChoice,
+                    new MagicMayChoice(targetChoice),
                     MagicSacrificeTargetPicker.create(),
                     this,
-                    "You may$ sacrifice another creature$. If you don't," +
-                    " exile SN.");
+                    "PN may$ sacrifice another creature$. If you don't, exile SN.");
         }
         @Override
         public void executeEvent(

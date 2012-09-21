@@ -18,17 +18,15 @@ public class Binding_Grasp {
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicPlayer data) {
-            final MagicPlayer player = permanent.getController();
-            return (player == data) ?
+                final MagicPlayer upkeepPlayer) {
+            return permanent.isController(upkeepPlayer) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new MagicMayChoice(
-                        "You may pay {1}{U}.",
-                        new MagicPayManaCostChoice(MagicManaCost.ONE_BLUE)),
+                        new MagicPayManaCostChoice(MagicManaCost.ONE_BLUE)
+                    ),
                     this,
-                    "You may$ pay {1}{U}$. If you don't, sacrifice " + permanent + ".") :
+                    "PN may$ pay {1}{U}$. If you don't, sacrifice SN.") :
             MagicEvent.NONE;
         }
 

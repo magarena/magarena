@@ -76,15 +76,11 @@ public class Angel_s_Tomb {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
-            return (otherPermanent.getController() == player &&
+            return (otherPermanent.hasSameController(permanent) &&
                     otherPermanent.isCreature()) ?
                 new MagicEvent(
                         permanent,
-                        player,
                         new MagicSimpleMayChoice(
-                            player + " may have " + permanent + " become a 3/3 white " +
-                            "Angel artifact creature with flying until end of turn.",
                             MagicSimpleMayChoice.BECOME_CREATURE,
                             0,
                             MagicSimpleMayChoice.DEFAULT_YES),

@@ -27,15 +27,12 @@ public class Scrib_Nibblers {
     public static final MagicLandfallTrigger T = new MagicLandfallTrigger() {
         @Override
         public MagicEvent getEvent(final MagicPermanent permanent) {
-            final MagicPlayer player = permanent.getController();
             return new MagicEvent(
                     permanent,
-                    player,
                     new MagicSimpleMayChoice(
-                            player + " may untap " + permanent + ".",
-                            MagicSimpleMayChoice.UNTAP,
-                            1,
-                            MagicSimpleMayChoice.DEFAULT_YES),
+                        MagicSimpleMayChoice.UNTAP,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_YES),
                     this,
                     "PN may$ untap SN.");
         }
@@ -64,14 +61,12 @@ public class Scrib_Nibblers {
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicPlayer player = source.getController();
             return new MagicEvent(
                     source,
-                    player,
                     MagicTargetChoice.NEG_TARGET_PLAYER,
                     this,
                     "Exile the top card of target player's$ library. " +
-                    "If it's a land card, " + player + " gains 1 life.");
+                    "If it's a land card, PN gains 1 life.");
         }
 
         @Override
