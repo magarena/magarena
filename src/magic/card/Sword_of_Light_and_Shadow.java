@@ -21,18 +21,17 @@ public class Sword_of_Light_and_Shadow {
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            final MagicPlayer player=permanent.getController();
-            return (damage.getSource()==permanent.getEquippedCreature()&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
+            return (damage.getSource() == permanent.getEquippedCreature() && 
+                    damage.getTarget().isPlayer() && 
+                    damage.isCombat()) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new MagicMayChoice(
-                        player + " may return target creature card from " +
-                        "his or her graveyard to his or her hand.",
-                        MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD),
+                        MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD
+                    ),
                     new MagicGraveyardTargetPicker(false),
                     this,
-                    player + " gains 3 life and may$ return target creature card$ " +
+                    "PN gains 3 life and may$ return target creature card$ " +
                     "from his or her graveyard to his or her hand."):
                 MagicEvent.NONE;
         }

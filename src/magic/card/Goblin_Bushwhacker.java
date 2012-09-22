@@ -26,10 +26,9 @@ public class Goblin_Bushwhacker {
             return permanent.isKicked() ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    "Creatures " + player +
-                    " controls get +1/+0 and gain haste until end of turn."):
+                    "Creatures PN controls get +1/+0 and gain haste until end of turn."
+                ):
                 MagicEvent.NONE;
         }
                         

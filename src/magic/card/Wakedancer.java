@@ -18,9 +18,8 @@ public class Wakedancer {
             return (game.getCreatureDiedThisTurn()) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    player + " puts a 2/2 black Zombie creature token onto the battlefield."):
+                    "PN puts a 2/2 black Zombie creature token onto the battlefield."):
                 MagicEvent.NONE;
         }
         @Override

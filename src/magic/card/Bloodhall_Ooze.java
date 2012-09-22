@@ -15,21 +15,20 @@ public class Bloodhall_Ooze {
     public static final MagicAtUpkeepTrigger T1 = new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            final MagicPlayer player = permanent.getController();
-            return (player == upkeepPlayer &&
+            return (permanent.isController(upkeepPlayer) &&
                     game.filterTargets(
-                        player,
-                        MagicTargetFilter.TARGET_BLACK_PERMANENT_YOU_CONTROL).size() > 0) ?
+                        upkeepPlayer,
+                        MagicTargetFilter.TARGET_BLACK_PERMANENT_YOU_CONTROL
+                    ).size() > 0) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new MagicSimpleMayChoice(
-                        player + " may put a +1/+1 counter on " + permanent,
                         MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
                         1,
                         MagicSimpleMayChoice.DEFAULT_YES),
                     this,
-                    player + " may$ put a +1/+1 counter on " + permanent) :
+                    "PN may$ put a +1/+1 counter on SN."
+                ) :
                 MagicEvent.NONE;
         }
         @Override
@@ -51,21 +50,20 @@ public class Bloodhall_Ooze {
     public static final MagicAtUpkeepTrigger T2 = new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            final MagicPlayer player = permanent.getController();
-            return (player == upkeepPlayer &&
+            return (permanent.isController(upkeepPlayer) &&
                     game.filterTargets(
-                        player,
-                        MagicTargetFilter.TARGET_GREEN_PERMANENT_YOU_CONTROL).size() > 0) ?
+                        upkeepPlayer,
+                        MagicTargetFilter.TARGET_GREEN_PERMANENT_YOU_CONTROL
+                    ).size() > 0) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new MagicSimpleMayChoice(
-                        player + " may put a +1/+1 counter on " + permanent,
                         MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
                         1,
                         MagicSimpleMayChoice.DEFAULT_YES),
                     this,
-                    player + " may$ put a +1/+1 counter on " + permanent) :
+                    "PN may$ put a +1/+1 counter on SN."
+                ) :
                 MagicEvent.NONE;
         }
         @Override

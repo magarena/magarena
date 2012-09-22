@@ -36,13 +36,10 @@ public class Scroll_of_Avacyn {
         public MagicEvent getPermanentEvent(
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
-            final MagicPlayer player = source.getController();
             return new MagicEvent(
                 source,
-                player,
                 this,
-                player + " draws a card. If he or she controls an Angel, " +
-                player + " gains 5 life.");
+                "PN draws a card. If he or she controls an Angel, SN gains 5 life.");
         }
 
         @Override
