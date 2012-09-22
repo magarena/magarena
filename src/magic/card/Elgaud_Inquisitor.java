@@ -14,12 +14,10 @@ public class Elgaud_Inquisitor {
     public static final MagicWhenDiesTrigger T = new MagicWhenDiesTrigger() {
         @Override
         public MagicEvent getEvent(final MagicPermanent permanent) {
-            final MagicPlayer player = permanent.getController();
             return new MagicEvent(
                 permanent,
-                player,
                 this,
-                player + " puts a 1/1 white Spirit creature " +
+                "PN puts a 1/1 white Spirit creature " +
                 "token with flying onto the battlefield."
             );
         }

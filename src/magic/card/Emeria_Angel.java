@@ -14,19 +14,16 @@ public class Emeria_Angel {
     public static final MagicLandfallTrigger T = new MagicLandfallTrigger() {
         @Override
         protected MagicEvent getEvent(final MagicPermanent permanent) {
-            final MagicPlayer player = permanent.getController();
             return new MagicEvent(
-                    permanent,
-                    player,
-                    new MagicSimpleMayChoice(
-                            player + " may put a 1/1 white Bird creature " +
-                            "token with flying onto the battlefield.",
-                            MagicSimpleMayChoice.PLAY_TOKEN,
-                            1,
-                            MagicSimpleMayChoice.DEFAULT_YES),
-                    this,
-                    player + " may$ put a 1/1 white Bird creature " +
-                    "token with flying onto the battlefield.");
+                permanent,
+                new MagicSimpleMayChoice(
+                    MagicSimpleMayChoice.PLAY_TOKEN,
+                    1,
+                    MagicSimpleMayChoice.DEFAULT_YES),
+                this,
+                "PN may$ put a 1/1 white Bird creature " +
+                "token with flying onto the battlefield."
+            );
         }
         
         @Override

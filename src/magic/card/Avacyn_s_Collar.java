@@ -15,16 +15,14 @@ public class Avacyn_s_Collar {
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicPermanent data) {
-            final MagicPlayer player = permanent.getController();
+                final MagicPermanent died) {
             final MagicPermanent equipped = permanent.getEquippedCreature();
-            return (equipped == data &&
+            return (equipped == died &&
                     equipped.hasSubType(MagicSubType.Human)) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    player + " puts a 1/1 white Spirit creature " +
+                    "PN puts a 1/1 white Spirit creature " +
                     "token with flying onto the battlefield."):
                 MagicEvent.NONE;
         }

@@ -25,12 +25,11 @@ public class Sea_Gate_Loremaster {
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicPlayer player = source.getController();
             return new MagicEvent(
-                    source,
-                    player,
-                    this,
-                    player + " draws a card for each Ally he or she controls.");
+                source,
+                this,
+                "PN draws a card for each Ally he or she controls."
+            );
         }
         @Override
         public void executeEvent(

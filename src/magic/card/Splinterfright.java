@@ -21,15 +21,14 @@ public class Splinterfright {
     
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-            final MagicPlayer player = permanent.getController();
-            return (player == data) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+            return permanent.isController(upkeepPlayer) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        player + " puts the top two cards of " +
-                        "his or her library into his or her graveyard."):
+                    permanent,
+                    this,
+                    "PN puts the top two cards of " +
+                    "his or her library into his or her graveyard."
+                ):
                 MagicEvent.NONE;
         }
         @Override

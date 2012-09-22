@@ -11,15 +11,14 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 public class Followed_Footsteps {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-            final MagicPlayer player=permanent.getController();
-            final MagicPermanent enchantedCreature=permanent.getEnchantedCreature();
-            return (player==data && enchantedCreature.isValid()) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+            final MagicPermanent enchanted = permanent.getEnchantedCreature();
+            return permanent.isController(upkeepPlayer) && enchanted.isValid() ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    player + " puts a token that's a copy of enchanted creature onto the battlefield."):
+                    "PN puts a token that's a copy of enchanted creature onto the battlefield."
+                ):
                 MagicEvent.NONE;
         }
         
@@ -30,9 +29,9 @@ public class Followed_Footsteps {
                 final Object data[],
                 final Object[] choiceResults) {
             final MagicPermanent permanent=event.getPermanent();
-            final MagicPermanent enchantedCreature=permanent.getEnchantedCreature();
-            if (enchantedCreature.isValid()) {
-                game.doAction(new MagicPlayTokenAction(event.getPlayer(),enchantedCreature.getCardDefinition()));
+            final MagicPermanent enchanted=permanent.getEnchantedCreature();
+            if (enchanted.isValid()) {
+                game.doAction(new MagicPlayTokenAction(event.getPlayer(),enchanted.getCardDefinition()));
             }
         }        
     };

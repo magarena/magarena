@@ -17,17 +17,17 @@ public class Angelic_Benediction {
     public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            final MagicPlayer player=permanent.getController();
-            return (creature.getController()==player&&player.getNrOfAttackers()==1) ?
+            return (creature.isFriend(permanent) && 
+                    creature.getController().getNrOfAttackers() == 1) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicMayChoice(
-                            player + " may tap target creature.",
-                            MagicTargetChoice.NEG_TARGET_CREATURE),
-                        new MagicTapTargetPicker(true,false),
-                        this,
-                        player + " may$ tap target creature$."):
+                    permanent,
+                    new MagicMayChoice(
+                        MagicTargetChoice.NEG_TARGET_CREATURE
+                    ),
+                    new MagicTapTargetPicker(true,false),
+                    this,
+                    "PN may$ tap target creature$."
+                ):
                 MagicEvent.NONE;
         }
         @Override

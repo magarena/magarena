@@ -22,18 +22,19 @@ public class Treva__the_Renewer {
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            final MagicPlayer player=permanent.getController();
-            return (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
+            return (damage.getSource() == permanent && 
+                    damage.getTarget().isPlayer() && 
+                    damage.isCombat()) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicMayChoice(
-                            "You may pay {2}{W}.",
-                            new MagicPayManaCostChoice(MagicManaCost.TWO_WHITE),
-                            MagicColorChoice.MOST_INSTANCE),
-                        this,
-                        "You may$ pay {2}{W}$. If you do, choose a color$. " + 
-                        player + " gains 1 life for each permanent of that color."):
+                    permanent,
+                    new MagicMayChoice(
+                        new MagicPayManaCostChoice(MagicManaCost.TWO_WHITE),
+                        MagicColorChoice.MOST_INSTANCE
+                    ),
+                    this,
+                    "PN may$ pay {2}{W}$. If you do, choose a color$. " + 
+                    "PN gains 1 life for each permanent of that color."
+                ):
                 MagicEvent.NONE;
         }
         @Override
