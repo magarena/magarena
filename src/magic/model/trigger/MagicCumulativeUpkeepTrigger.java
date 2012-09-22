@@ -29,9 +29,8 @@ public class MagicCumulativeUpkeepTrigger extends MagicAtUpkeepTrigger {
     public MagicEvent executeTrigger(
             final MagicGame game,
             final MagicPermanent permanent,
-            final MagicPlayer data) {
-        final MagicPlayer player = permanent.getController();
-        if (player == data) {
+            final MagicPlayer upkeepPlayer) {
+        if (permanent.isController(upkeepPlayer)) {
             game.doAction(new MagicChangeCountersAction(
                     permanent,
                     MagicCounterType.Charge,
@@ -44,15 +43,14 @@ public class MagicCumulativeUpkeepTrigger extends MagicAtUpkeepTrigger {
             }
             return new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     new MagicMayChoice(
-                            player + " may " + genDescription(amount),
-                            new MagicPayManaCostChoice(
-                                    MagicManaCost.create(totalCost.toString()))),
-                    new Object[]{permanent},
+                        new MagicPayManaCostChoice(
+                            MagicManaCost.create(totalCost.toString())
+                        )
+                    ),
                     this,
-                    player + " may$ " + genDescription(amount) +
-                    " If he or she doesn't, sacrifice " + permanent + ".");
+                    "PN may$ " + genDescription(amount) +  
+                    " If he or she doesn't, sacrifice SN.");
         }
         return MagicEvent.NONE;
     }
@@ -64,7 +62,7 @@ public class MagicCumulativeUpkeepTrigger extends MagicAtUpkeepTrigger {
             final Object data[],
             final Object[] choiceResults) {
         if (MagicMayChoice.isNoChoice(choiceResults[0])) {
-            game.doAction(new MagicSacrificeAction((MagicPermanent)data[0]));
+            game.doAction(new MagicSacrificeAction(event.getPermanent()));
         }
     }
 }

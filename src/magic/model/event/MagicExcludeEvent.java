@@ -20,6 +20,12 @@ public class MagicExcludeEvent extends MagicEvent {
     };
     
     public MagicExcludeEvent(final MagicPlayer player) {
-        super(MagicEvent.NO_SOURCE,player,MagicExcludeChoice.getInstance(),MagicEvent.NO_DATA,EVENT_ACTION,"");
+        super(
+            MagicEvent.NO_SOURCE,
+            player,
+            MagicExcludeChoice.getInstance(),
+            EVENT_ACTION,
+            ""
+        );
     }
 }

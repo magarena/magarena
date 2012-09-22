@@ -30,9 +30,9 @@ public class MagicRavnicaLandTrigger extends MagicWhenComesIntoPlayTrigger {
                 permanent,
                 player,
                 RAVNICA_CHOICE,
-                new Object[]{player,permanent},
                 this,
-                "You may$ pay 2 life. If you don't, "+permanent.getName()+" enters the battlefield tapped.");
+                "You may$ pay 2 life. If you don't, "+permanent.getName()+" enters the battlefield tapped."
+            );
         }
     }
 
@@ -43,9 +43,9 @@ public class MagicRavnicaLandTrigger extends MagicWhenComesIntoPlayTrigger {
             final Object[] data,
             final Object[] choices) {
         if (MagicMayChoice.isYesChoice(choices[0])) {
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],-2));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),-2));
         } else {
-            game.doAction(new MagicTapAction((MagicPermanent)data[1],false));
+            game.doAction(new MagicTapAction(event.getPermanent(),false));
         }
     }
     

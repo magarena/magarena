@@ -15,7 +15,7 @@ public class MagicDeclareAttackersEvent extends MagicEvent {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[0];
+            final MagicPlayer player = event.getPlayer();
             final MagicDeclareAttackersResult result = (MagicDeclareAttackersResult)choiceResults[0];
             game.doAction(new MagicDeclareAttackersAction(player,result));
             game.logAttackers(player,result);
@@ -23,6 +23,12 @@ public class MagicDeclareAttackersEvent extends MagicEvent {
     };
     
     public MagicDeclareAttackersEvent(final MagicPlayer player) {
-        super(MagicEvent.NO_SOURCE,player,MagicDeclareAttackersChoice.getInstance(),new Object[]{player},EVENT_ACTION,"");
+        super(
+            MagicEvent.NO_SOURCE,
+            player,
+            MagicDeclareAttackersChoice.getInstance(),
+            EVENT_ACTION,
+            ""
+        );
     }
 }

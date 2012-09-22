@@ -20,7 +20,7 @@ public class MagicMulliganEvent extends MagicEvent {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[0];
+            final MagicPlayer player = event.getPlayer();
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 final MagicCardList hand = new MagicCardList(player.getHand());
                 final int size = hand.size();
@@ -46,7 +46,6 @@ public class MagicMulliganEvent extends MagicEvent {
             MagicEvent.NO_SOURCE,
             player,
             new MagicMulliganChoice(),
-            new Object[]{player},
             EVENT_ACTION,
             player + " may$ take a mulligan."
         );

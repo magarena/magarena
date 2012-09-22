@@ -26,11 +26,11 @@ public class MagicMiracleTrigger extends MagicWhenDrawnTrigger {
                 card,
                 card.getOwner(),
                 new MagicMayChoice(
-                        "You may pay " + cost + ".",
-                        new MagicPayManaCostChoice(cost)),
-                MagicEvent.NO_DATA,
+                    new MagicPayManaCostChoice(cost)
+                ),
                 this,
-                "You may$ cast this card for its miracle cost") :
+                "You may$ cast this card for its miracle cost"
+            ):
             MagicEvent.NONE;
     }
     @Override
@@ -40,7 +40,7 @@ public class MagicMiracleTrigger extends MagicWhenDrawnTrigger {
             final Object[] data,
             final Object[] choiceResults) {
         if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-            final MagicCard card = (MagicCard)event.getSource();
+            final MagicCard card = event.getCard();
             final MagicCardActivation act = card.getCardDefinition().getCardActivation();
             game.doAction(new MagicAddEventAction(act.getEvent(card)));
         }

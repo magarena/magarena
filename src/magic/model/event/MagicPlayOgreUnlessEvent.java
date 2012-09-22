@@ -12,21 +12,27 @@ import magic.model.choice.MagicPayManaCostChoice;
 public class MagicPlayOgreUnlessEvent extends MagicEvent {
 
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
-    
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object choiceResults[]) {
-
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                MagicEvent.payManaCost(game,(MagicPlayer)data[0],choiceResults,1);
+                MagicEvent.payManaCost(game,event.getPlayer(),choiceResults,1);
             } else {
-                game.doAction(new MagicPlayTokenAction((MagicPlayer)data[1],TokenCardDefinitions.get("Ogre")));
+                game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Ogre")));
             }
         }
     };
 
     public MagicPlayOgreUnlessEvent(final MagicSource source,final MagicPlayer player,final MagicPlayer controller,final MagicManaCost cost) {
-    
-        super(source,player,new MagicMayChoice("You may pay "+cost.getText()+'.',new MagicPayManaCostChoice(cost)),
-            new Object[]{player,controller},EVENT_ACTION,"You may$ pay "+cost.getText()+"$.");
+        super(
+            source,
+            player,
+            new MagicMayChoice(
+                "You may pay "+cost.getText()+'.',
+                new MagicPayManaCostChoice(cost)
+            ),
+            new Object[]{controller},
+            EVENT_ACTION,
+            "You may$ pay "+cost.getText()+"$."
+        );
     }
 }

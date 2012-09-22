@@ -23,21 +23,18 @@ public class MagicEchoTrigger extends MagicAtUpkeepTrigger {
     public MagicEvent executeTrigger(
             final MagicGame game,
             final MagicPermanent permanent,
-            final MagicPlayer data) {
-        final MagicPlayer player = permanent.getController();
-        return (player == data &&
-            permanent.hasState(MagicPermanentState.MustPayEchoCost)) ?
+            final MagicPlayer upkeepPlayer) {
+        return (permanent.isController(upkeepPlayer) &&
+                permanent.hasState(MagicPermanentState.MustPayEchoCost)) ?
             new MagicEvent(
-                    permanent,
-                    player,
-                    new MagicMayChoice(
-                            player + " may pay " + manaCost + ".",
-                            new MagicPayManaCostChoice(manaCost)),
-                    new Object[]{permanent},
-                    this,
-                    player + " may$ pay " + manaCost +
-                    ". If he or she doesn't, sacrifice " + permanent + ".") :
-           MagicEvent.NONE;
+                permanent,
+                new MagicMayChoice(
+                    new MagicPayManaCostChoice(manaCost)
+                ),
+                this,
+                "PN may$ pay " + manaCost +  ". If he or she doesn't, sacrifice SN."
+            ):
+            MagicEvent.NONE;
     }
 
     @Override
@@ -46,14 +43,14 @@ public class MagicEchoTrigger extends MagicAtUpkeepTrigger {
             final MagicEvent event,
             final Object data[],
             final Object[] choiceResults) {
-        final MagicPermanent permanent = (MagicPermanent)data[0];
+        final MagicPermanent permanent = event.getPermanent();
         if (MagicMayChoice.isYesChoice(choiceResults[0])) {
             game.doAction(new MagicChangeStateAction(
-                    permanent,
-                    MagicPermanentState.MustPayEchoCost,false));
+                permanent,
+                MagicPermanentState.MustPayEchoCost,false
+            ));
         } else {
             game.doAction(new MagicSacrificeAction(permanent));
         }
     }
 }
-

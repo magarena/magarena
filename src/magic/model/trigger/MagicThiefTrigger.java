@@ -26,32 +26,26 @@ public class MagicThiefTrigger extends MagicWhenDamageIsDealtTrigger {
         if (damage.getSource() == permanent &&
             damage.getTarget().isPlayer() &&
             (!combat || damage.isCombat())) {
-            final MagicPlayer player = permanent.getController();
-            if (mustDraw) {
-                return new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{player},
-                        this,
-                        (amount > 1) ?
-                            player + " draws " + amount + " cards." :
-                            player + " draws a card.");
-            }
-            else {
-                return new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicSimpleMayChoice(
-                                player + " may draw a card.",
-                                MagicSimpleMayChoice.DRAW_CARDS,
-                                amount,
-                                MagicSimpleMayChoice.DEFAULT_NONE),
-                        new Object[]{player},
-                        this,
-                        (amount > 1) ?
-                                player + " may$ draw " + amount + " cards." :
-                                player + " may$ draw a card.");
-            }
+            return (mustDraw) ?
+                new MagicEvent(
+                    permanent,
+                    this,
+                    (amount > 1) ?
+                        "PN draws " + amount + " cards." :
+                        "PN draws a card."
+                ):
+                new MagicEvent(
+                    permanent,
+                    new MagicSimpleMayChoice(
+                        MagicSimpleMayChoice.DRAW_CARDS,
+                        amount,
+                        MagicSimpleMayChoice.DEFAULT_NONE
+                    ),
+                    this,
+                    (amount > 1) ?
+                        "PN may$ draw " + amount + " cards." :
+                        "PN may$ draw a card."
+                );
         }
         return MagicEvent.NONE;
     }
@@ -63,9 +57,9 @@ public class MagicThiefTrigger extends MagicWhenDamageIsDealtTrigger {
             final Object data[],
             final Object[] choiceResults) {
         if (mustDraw) {
-            game.doAction(new MagicDrawAction((MagicPlayer)data[0],amount));
+            game.doAction(new MagicDrawAction(event.getPlayer(),amount));
         } else if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-            game.doAction(new MagicDrawAction((MagicPlayer)data[0],amount));
+            game.doAction(new MagicDrawAction(event.getPlayer(),amount));
         }
     }
 }

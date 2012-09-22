@@ -30,9 +30,14 @@ public class MagicCounterUnlessEvent extends MagicEvent {
         super(
             source,
             itemOnStack.getController(),
-            new MagicMayChoice("You may pay "+cost.getText()+'.',new MagicPayManaCostChoice(cost)),
+            new MagicMayChoice(
+                "You may pay "+cost.getText()+'.',
+                new MagicPayManaCostChoice(cost)
+            ),
             new Object[]{itemOnStack},
-            EVENT_ACTION,"You may$ pay "+cost.getText()+"$. If you don't, counter "+itemOnStack.getName()+"."
+            EVENT_ACTION,
+            "You may$ pay "+cost.getText()+"$. " + 
+            "If you don't, counter "+itemOnStack.getName()+"."
         );
     }
 }

@@ -25,20 +25,18 @@ public class MagicAllyGrowTrigger extends MagicWhenOtherComesIntoPlayTrigger {
             final MagicGame game,
             final MagicPermanent permanent,
             final MagicPermanent otherPermanent) {
-        final MagicPlayer player = permanent.getController();
-        return (otherPermanent.getController() == player &&
+        return (otherPermanent.isFriend(permanent) &&
                 otherPermanent.hasSubType(MagicSubType.Ally)) ?
             new MagicEvent(
-                    permanent,
-                    player,
-                    new MagicSimpleMayChoice(
-                            player + " may put a +1/+1 counter on " + permanent + ".",
-                            MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
-                            1,
-                            MagicSimpleMayChoice.DEFAULT_YES),
-                    new Object[]{permanent},
-                    this,
-                    player + " may$ put a +1/+1 counter on " + permanent + ".") :
+                permanent,
+                new MagicSimpleMayChoice(
+                    MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
+                    1,
+                    MagicSimpleMayChoice.DEFAULT_YES
+                ),
+                this,
+                "PN may$ put a +1/+1 counter on SN."
+            ):
             MagicEvent.NONE;
     }
     
@@ -50,10 +48,11 @@ public class MagicAllyGrowTrigger extends MagicWhenOtherComesIntoPlayTrigger {
             final Object[] choiceResults) {
         if (MagicMayChoice.isYesChoice(choiceResults[0])) {
             game.doAction(new MagicChangeCountersAction(
-                    (MagicPermanent)data[0],
-                    MagicCounterType.PlusOne,
-                    1,
-                    true));
+                event.getPermanent(),
+                MagicCounterType.PlusOne,
+                1,
+                true
+            ));
         }            
     }        
 }

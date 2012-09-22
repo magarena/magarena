@@ -22,12 +22,14 @@ public class MagicExileCardEvent extends MagicEvent {
             event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard card) {
                     game.doAction(new MagicRemoveCardAction(
-                            card,
-                            MagicLocationType.Graveyard));
+                        card,
+                        MagicLocationType.Graveyard
+                    ));
                     game.doAction(new MagicMoveCardAction(
-                            card,
-                            MagicLocationType.Graveyard,
-                            MagicLocationType.Exile));
+                        card,
+                        MagicLocationType.Graveyard,
+                        MagicLocationType.Exile
+                    ));
                 }
             });
         }
@@ -41,7 +43,6 @@ public class MagicExileCardEvent extends MagicEvent {
             source,
             player,
             targetChoice,
-            MagicEvent.NO_DATA,
             EVENT_ACTION,
             "Choose " + targetChoice.getTargetDescription() + "$."
         );

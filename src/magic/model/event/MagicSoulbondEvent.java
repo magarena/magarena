@@ -19,7 +19,7 @@ public class MagicSoulbondEvent extends MagicEvent {
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 game.doAction(new MagicSoulbondAction(
-                        (MagicPermanent)data[0],
+                        event.getPermanent(),
                         (MagicPermanent)choiceResults[1],
                         true));
             }
@@ -29,22 +29,22 @@ public class MagicSoulbondEvent extends MagicEvent {
     public MagicSoulbondEvent(final MagicPermanent permanent,final boolean hasSoulbond) {
         super(
             MagicEvent.NO_SOURCE,
-            permanent.getController(),
             new MagicMayChoice(
-                    permanent.getController() + " may pair two creatures (Soulbond).",
-                    hasSoulbond ?
-                        new MagicTargetChoice(
-                            new MagicTargetFilter.MagicOtherPermanentTargetFilter(
-                                    MagicTargetFilter.TARGET_UNPAIRED_CREATURE_YOU_CONTROL,
-                                    permanent),
-                            false,
-                            MagicTargetHint.None,
-                            "a creature other than " + permanent) 
-                        :
-                        MagicTargetChoice.TARGET_UNPAIRED_SOULBOND_CREATURE),
-            new Object[]{permanent},
+                permanent.getController() + " may pair two creatures (Soulbond).",
+                hasSoulbond ?
+                    new MagicTargetChoice(
+                        new MagicTargetFilter.MagicOtherPermanentTargetFilter(
+                            MagicTargetFilter.TARGET_UNPAIRED_CREATURE_YOU_CONTROL,
+                            permanent
+                        ),
+                        false,
+                        MagicTargetHint.None,
+                        "a creature other than " + permanent
+                    ):
+                    MagicTargetChoice.TARGET_UNPAIRED_SOULBOND_CREATURE
+            ),
             EVENT_ACTION,
-            permanent.getController() + " may$ pair a creature$ with " + permanent + "."
+            "PN may$ pair a creature$ with SN."
         );
     }
 }
