@@ -37,13 +37,13 @@ public class Mistbind_Clique {
             final MagicChoice championChoice = 
                     new MagicMayChoice(targetChoice);
             return new MagicEvent(
-                    permanent,
-                    player,
-                    championChoice,
-                    MagicExileTargetPicker.create(),
-                    this,
-                    "PN may$ exile another Faerie you control$. " +
-                    "If you don't, sacrifice SN.");
+                permanent,
+                championChoice,
+                MagicExileTargetPicker.create(),
+                this,
+                "PN may$ exile another Faerie you control$. " +
+                "If you don't, sacrifice SN."
+            );
         }
         @Override
         public void executeEvent(

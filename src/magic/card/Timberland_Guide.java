@@ -19,12 +19,12 @@ public class Timberland_Guide {
                 final MagicPermanent permanent,
                 final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.TARGET_CREATURE,
-                    MagicPumpTargetPicker.create(),
-                    this,
-                    "PN puts a +1/+1 counter on target creature$.");
+                permanent,
+                MagicTargetChoice.TARGET_CREATURE,
+                MagicPumpTargetPicker.create(),
+                this,
+                "PN puts a +1/+1 counter on target creature$."
+            );
         }    
         @Override
         public void executeEvent(

@@ -16,12 +16,12 @@ public class Affa_Guard_Hound {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.TARGET_CREATURE,
-                    MagicPumpTargetPicker.create(),
-                    this,
-                    "Target creature$ gets +0/+3 until end of turn.");
+                permanent,
+                MagicTargetChoice.TARGET_CREATURE,
+                MagicPumpTargetPicker.create(),
+                this,
+                "Target creature$ gets +0/+3 until end of turn."
+            );
         }
 
         @Override

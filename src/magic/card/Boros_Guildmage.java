@@ -20,9 +20,10 @@ import magic.model.target.MagicHasteTargetPicker;
 
 public class Boros_Guildmage {
     public static final MagicPermanentActivation A1 = new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.ONE_RED.getCondition()},
-            new MagicActivationHints(MagicTiming.Pump,true),
-            "Haste") {
+        new MagicCondition[]{MagicManaCost.ONE_RED.getCondition()},
+        new MagicActivationHints(MagicTiming.Pump,true),
+        "Haste"
+    ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -32,12 +33,12 @@ public class Boros_Guildmage {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicHasteTargetPicker.create(),
-                    this,
-                    "Target creature$ gains haste until end of turn.");
+                source,
+                MagicTargetChoice.POS_TARGET_CREATURE,
+                MagicHasteTargetPicker.create(),
+                this,
+                "Target creature$ gains haste until end of turn."
+            );
         }
 
         @Override
@@ -55,9 +56,10 @@ public class Boros_Guildmage {
     };
 
     public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.ONE_WHITE.getCondition()},
-            new MagicActivationHints(MagicTiming.Block,true),
-            "First strike") {
+        new MagicCondition[]{MagicManaCost.ONE_WHITE.getCondition()},
+        new MagicActivationHints(MagicTiming.Block,true),
+        "First strike"
+    ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -67,12 +69,12 @@ public class Boros_Guildmage {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicFirstStrikeTargetPicker.create(),
-                    this,
-                    "Target creature$ gains first strike until end of turn.");
+                source,
+                MagicTargetChoice.POS_TARGET_CREATURE,
+                MagicFirstStrikeTargetPicker.create(),
+                this,
+                "Target creature$ gains first strike until end of turn."
+            );
         }
         @Override
         public void executeEvent(

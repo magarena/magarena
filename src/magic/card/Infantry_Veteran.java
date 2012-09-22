@@ -17,9 +17,10 @@ import magic.model.target.MagicPumpTargetPicker;
 
 public class Infantry_Veteran {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
-            new MagicActivationHints(MagicTiming.Pump),
-            "Pump") {
+        new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
+        new MagicActivationHints(MagicTiming.Pump),
+        "Pump"
+    ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -29,12 +30,12 @@ public class Infantry_Veteran {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.POS_TARGET_ATTACKING_CREATURE,
-                    MagicPumpTargetPicker.create(),
-                    this,
-                    "Target creature$ gets +1/+1 until end of turn.");
+                source,
+                MagicTargetChoice.POS_TARGET_ATTACKING_CREATURE,
+                MagicPumpTargetPicker.create(),
+                this,
+                "Target creature$ gets +1/+1 until end of turn."
+            );
         }
 
         @Override

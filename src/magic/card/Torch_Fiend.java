@@ -30,18 +30,19 @@ public class Torch_Fiend {
         public MagicEvent[] getCostEvent(final MagicSource source) {
             return new MagicEvent[]{
                 new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.RED),
-                new MagicSacrificeEvent((MagicPermanent)source)};
+                new MagicSacrificeEvent((MagicPermanent)source)
+            };
         }
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.TARGET_ARTIFACT,
-                    new MagicDestroyTargetPicker(false),
-                    this,
-                    "Destroy target artifact$.");
+                source,
+                MagicTargetChoice.TARGET_ARTIFACT,
+                new MagicDestroyTargetPicker(false),
+                this,
+                "Destroy target artifact$."
+            );
         }
 
         @Override

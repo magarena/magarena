@@ -30,18 +30,19 @@ public class Skarrg__the_Rage_Pits {
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
             return new MagicEvent[]{
-                    new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.RED_GREEN)};
+                new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.RED_GREEN)
+            };
         }
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicPumpTargetPicker.create(),
-                    this,
-                    "Target creature$ gets +1/+1 and gains trample until end of turn.");
+                source,
+                MagicTargetChoice.POS_TARGET_CREATURE,
+                MagicPumpTargetPicker.create(),
+                this,
+                "Target creature$ gets +1/+1 and gains trample until end of turn."
+            );
         }
 
         @Override

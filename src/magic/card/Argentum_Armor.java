@@ -13,17 +13,15 @@ import magic.model.trigger.MagicWhenAttacksTrigger;
 public class Argentum_Armor {
     public static final MagicWhenAttacksTrigger T =new MagicWhenAttacksTrigger(1) {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            final MagicPermanent equippedCreature = permanent.getEquippedCreature();
-            return (equippedCreature.isValid() &&
-                    equippedCreature == creature) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
+            return permanent.getEquippedCreature() == attacker ?
                 new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        MagicTargetChoice.TARGET_PERMANENT,
-                        new MagicDestroyTargetPicker(false),
-                        this,
-                        "Destroy target permanent$."):
+                    permanent,
+                    MagicTargetChoice.TARGET_PERMANENT,
+                    new MagicDestroyTargetPicker(false),
+                    this,
+                    "Destroy target permanent$."
+                ):
                 MagicEvent.NONE;
         }
         @Override

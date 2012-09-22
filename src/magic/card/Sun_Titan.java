@@ -18,13 +18,13 @@ public class Sun_Titan {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.TARGET_PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD,
-                    new MagicGraveyardTargetPicker(true),
-                    this,
-                    "Return target permanent card$ with converted mana cost 3 or less " + 
-                    "from your graveyard to the battlefield.");
+                permanent,
+                MagicTargetChoice.TARGET_PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD,
+                new MagicGraveyardTargetPicker(true),
+                this,
+                "Return target permanent card$ with converted mana cost 3 or less " + 
+                "from your graveyard to the battlefield."
+            );
         }
         
         @Override
@@ -44,16 +44,15 @@ public class Sun_Titan {
     public static final MagicWhenAttacksTrigger T2 = new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            final MagicPlayer player = permanent.getController(); 
             return (permanent==data) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     MagicTargetChoice.TARGET_PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD,
                     new MagicGraveyardTargetPicker(true),
                     this,
                     "Return target permanent card$ with converted mana cost 3 or less " + 
-                    "from your graveyard to the battlefield."):
+                    "from your graveyard to the battlefield."
+                ):
                 MagicEvent.NONE;
         }
         

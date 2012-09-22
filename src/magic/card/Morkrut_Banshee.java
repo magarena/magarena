@@ -16,13 +16,13 @@ public class Morkrut_Banshee {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return game.getCreatureDiedThisTurn() ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        MagicTargetChoice.TARGET_CREATURE,
-                        new MagicWeakenTargetPicker(4,4),
-                        this,
-                        "Target creature$ gets -4/-4 until end of turn.") :
-               MagicEvent.NONE;
+                    permanent,
+                    MagicTargetChoice.TARGET_CREATURE,
+                    new MagicWeakenTargetPicker(4,4),
+                    this,
+                    "Target creature$ gets -4/-4 until end of turn."
+                ) :
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(

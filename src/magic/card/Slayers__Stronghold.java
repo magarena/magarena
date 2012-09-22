@@ -30,10 +30,11 @@ public class Slayers__Stronghold {
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
             return new MagicEvent[]{
-                    new MagicPayManaCostTapEvent(
-                            source,
-                            source.getController(),
-                            MagicManaCost.RED_WHITE)
+                new MagicPayManaCostTapEvent(
+                    source,
+                    source.getController(),
+                    MagicManaCost.RED_WHITE
+                )
             };
         }
 
@@ -42,13 +43,13 @@ public class Slayers__Stronghold {
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicPumpTargetPicker.create(),
-                    this,
-                    "Target creature gets +2/+0 and gains " +
-                    "vigilance and haste until end of turn.");
+                source,
+                MagicTargetChoice.POS_TARGET_CREATURE,
+                MagicPumpTargetPicker.create(),
+                this,
+                "Target creature gets +2/+0 and gains " +
+                "vigilance and haste until end of turn."
+            );
         }
 
         @Override

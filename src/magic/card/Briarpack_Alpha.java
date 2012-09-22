@@ -19,12 +19,12 @@ public class Briarpack_Alpha {
                 final MagicPermanent permanent,
                 final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.TARGET_CREATURE,
-                    MagicPumpTargetPicker.create(),
-                    this,
-                    "Target creature$ gets +2/+2 until end of turn.");
+                permanent,
+                MagicTargetChoice.TARGET_CREATURE,
+                MagicPumpTargetPicker.create(),
+                this,
+                "Target creature$ gets +2/+2 until end of turn."
+            );
         }
 
         @Override

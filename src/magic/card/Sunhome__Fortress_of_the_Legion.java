@@ -30,19 +30,20 @@ public class Sunhome__Fortress_of_the_Legion {
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
             return new MagicEvent[]{
-                    new MagicTapEvent((MagicPermanent)source),
-                    new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_RED_WHITE)};
+                new MagicTapEvent((MagicPermanent)source),
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_RED_WHITE)
+            };
         }
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicFirstStrikeTargetPicker.create(),
-                    this,
-                    "Target creature$ gains double strike until end of turn.");
+                source,
+                MagicTargetChoice.POS_TARGET_CREATURE,
+                MagicFirstStrikeTargetPicker.create(),
+                this,
+                "Target creature$ gains double strike until end of turn."
+            );
         }
 
         @Override

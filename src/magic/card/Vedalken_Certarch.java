@@ -31,12 +31,12 @@ public class Vedalken_Certarch {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_CREATURE_OR_LAND,
-                    new MagicTapTargetPicker(true,false),
-                    this,
-                    "Tap target artifact, creature, or land$.");
+                source,
+                MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_CREATURE_OR_LAND,
+                new MagicTapTargetPicker(true,false),
+                this,
+                "Tap target artifact, creature, or land$."
+            );
         }
         @Override
         public void executeEvent(

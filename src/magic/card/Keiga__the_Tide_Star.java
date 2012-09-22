@@ -18,12 +18,12 @@ public class Keiga__the_Tide_Star {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
             return (MagicLocationType.Play==triggerData.fromLocation) ?
                 new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        MagicTargetChoice.TARGET_CREATURE,
-                        MagicExileTargetPicker.create(),
-                        this,
-                        "Gain control of target creature$."):
+                    permanent,
+                    MagicTargetChoice.TARGET_CREATURE,
+                    MagicExileTargetPicker.create(),
+                    this,
+                    "Gain control of target creature$."
+                ):
                 MagicEvent.NONE;
         }
         

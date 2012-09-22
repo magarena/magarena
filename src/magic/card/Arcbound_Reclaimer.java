@@ -21,23 +21,25 @@ import magic.model.target.MagicGraveyardTargetPicker;
 
 public class Arcbound_Reclaimer {
     public static final MagicPermanentActivation A = new MagicPermanentActivation( 
-            new MagicCondition[] {MagicCondition.PLUS_COUNTER_CONDITION},
-            new MagicActivationHints(MagicTiming.Main),
-            "Card") {
+        new MagicCondition[] {MagicCondition.PLUS_COUNTER_CONDITION},
+        new MagicActivationHints(MagicTiming.Main),
+        "Card"
+    ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
             return new MagicEvent[]{
-                new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.PlusOne,1)};
+                new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.PlusOne,1)
+            };
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.TARGET_ARTIFACT_CARD_FROM_GRAVEYARD,
-                    new MagicGraveyardTargetPicker(false),
-                    this,
-                    "Put target artifact card$ from your graveyard on top of your library");
+                source,
+                MagicTargetChoice.TARGET_ARTIFACT_CARD_FROM_GRAVEYARD,
+                new MagicGraveyardTargetPicker(false),
+                this,
+                "Put target artifact card$ from your graveyard on top of your library"
+            );
         }
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
@@ -45,9 +47,10 @@ public class Arcbound_Reclaimer {
                 public void doAction(final MagicCard targetCard) {
                     game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
                     game.doAction(new MagicMoveCardAction(
-                            targetCard,
-                            MagicLocationType.Graveyard,
-                            MagicLocationType.TopOfOwnersLibrary));
+                        targetCard,
+                        MagicLocationType.Graveyard,
+                        MagicLocationType.TopOfOwnersLibrary
+                    ));
                 }
             });
         }

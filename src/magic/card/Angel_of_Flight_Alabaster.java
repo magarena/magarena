@@ -17,17 +17,16 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 public class Angel_of_Flight_Alabaster {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-            final MagicPlayer player = permanent.getController();
-            return (player != data) ?
-                MagicEvent.NONE :
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+            return permanent.isController(upkeepPlayer) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     MagicTargetChoice.TARGET_SPIRIT_CARD_FROM_GRAVEYARD,
                     new MagicGraveyardTargetPicker(false),
                     this,
-                    "Return target Spirit card$ from your graveyard to your hand.");
+                    "Return target Spirit card$ from your graveyard to your hand."
+                ):
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(

@@ -18,9 +18,10 @@ import magic.model.target.MagicShadowTargetPicker;
 
 public class Dauthi_Trapper {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
-            new MagicActivationHints(MagicTiming.Animate,false),
-            "Shadow") {
+        new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
+        new MagicActivationHints(MagicTiming.Animate,false),
+        "Shadow"
+    ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -30,12 +31,12 @@ public class Dauthi_Trapper {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.TARGET_CREATURE,
-                    MagicShadowTargetPicker.getInstance(),
-                    this,
-                    "Target creature$ gains shadow until end of turn.");
+                source,
+                MagicTargetChoice.TARGET_CREATURE,
+                MagicShadowTargetPicker.getInstance(),
+                this,
+                "Target creature$ gains shadow until end of turn."
+            );
         }
 
         @Override

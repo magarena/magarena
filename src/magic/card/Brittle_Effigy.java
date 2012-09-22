@@ -20,26 +20,28 @@ import magic.model.target.MagicExileTargetPicker;
 
 public class Brittle_Effigy {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.FOUR.getCondition()},
-            new MagicActivationHints(MagicTiming.Removal),
-            "Exile") {
+        new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.FOUR.getCondition()},
+        new MagicActivationHints(MagicTiming.Removal),
+        "Exile"
+    ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
             return new MagicEvent[]{
                 new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.FOUR),
-                new MagicExileEvent((MagicPermanent)source)};
+                new MagicExileEvent((MagicPermanent)source)
+            };
         }
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.NEG_TARGET_CREATURE,
-                    MagicExileTargetPicker.create(),
-                    this,
-                    "Exile target creature$.");
+                source,
+                MagicTargetChoice.NEG_TARGET_CREATURE,
+                MagicExileTargetPicker.create(),
+                this,
+                "Exile target creature$."
+            );
         }
 
         @Override

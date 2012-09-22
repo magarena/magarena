@@ -18,12 +18,12 @@ public class Farbog_Boneflinger {
                 final MagicPermanent permanent,
                 final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.TARGET_CREATURE,
-                    new MagicWeakenTargetPicker(2,2),
-                    this,
-                    "Target creature$ gets -2/-2 until end of turn.");
+                permanent,
+                MagicTargetChoice.TARGET_CREATURE,
+                new MagicWeakenTargetPicker(2,2),
+                this,
+                "Target creature$ gets -2/-2 until end of turn."
+            );
         }
 
         @Override

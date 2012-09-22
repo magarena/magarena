@@ -14,15 +14,14 @@ public class Sidar_Jabari {
     public static final MagicWhenAttacksTrigger T2 = new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            final MagicPlayer player = permanent.getController();
             return (permanent == creature) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
-                        new MagicTapTargetPicker(true,false),
-                        this,
-                        "Tap target creature defending player controls."):
+                    permanent,
+                    MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
+                    new MagicTapTargetPicker(true,false),
+                    this,
+                    "Tap target creature defending player controls."
+                ):
                 MagicEvent.NONE;
         }
         @Override

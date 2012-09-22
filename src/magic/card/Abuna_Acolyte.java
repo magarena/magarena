@@ -30,12 +30,12 @@ public class Abuna_Acolyte {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.POS_TARGET_CREATURE_OR_PLAYER,
-                    MagicPreventTargetPicker.getInstance(),
-                    this,
-                    "Prevent the next 1 damage that would be dealt to target creature or player$ this turn.");
+                source,
+                MagicTargetChoice.POS_TARGET_CREATURE_OR_PLAYER,
+                MagicPreventTargetPicker.getInstance(),
+                this,
+                "Prevent the next 1 damage that would be dealt to target creature or player$ this turn."
+            );
         }
 
         @Override
@@ -61,12 +61,12 @@ public class Abuna_Acolyte {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.POS_TARGET_ARTIFACT_CREATURE,
-                    MagicPreventTargetPicker.getInstance(),
-                    this,
-                    "Prevent the next 2 damage that would be dealt to target artifact creature$ this turn");
+                source,
+                MagicTargetChoice.POS_TARGET_ARTIFACT_CREATURE,
+                MagicPreventTargetPicker.getInstance(),
+                this,
+                "Prevent the next 2 damage that would be dealt to target artifact creature$ this turn"
+            );
         }
 
         @Override

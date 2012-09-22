@@ -20,12 +20,12 @@ public class Polluted_Dead {
                 final MagicGraveyardTriggerData triggerData) {
             return (MagicLocationType.Play == triggerData.fromLocation) ?
                 new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        MagicTargetChoice.TARGET_LAND,
-                        new MagicDestroyTargetPicker(false),
-                        this,
-                        "Destroy target land$."):
+                    permanent,
+                    MagicTargetChoice.TARGET_LAND,
+                    new MagicDestroyTargetPicker(false),
+                    this,
+                    "Destroy target land$."
+                ):
                 MagicEvent.NONE;
         }
         

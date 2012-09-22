@@ -19,10 +19,10 @@ import magic.model.target.MagicLifelinkTargetPicker;
 
 public class Alabaster_Mage {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.ONE_WHITE.getCondition()},
-            new MagicActivationHints(MagicTiming.Pump,true),
-            "Lifelink"
-            ) {
+        new MagicCondition[]{MagicManaCost.ONE_WHITE.getCondition()},
+        new MagicActivationHints(MagicTiming.Pump,true),
+        "Lifelink"
+    ) {
         
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -32,12 +32,12 @@ public class Alabaster_Mage {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
-                    MagicLifelinkTargetPicker.create(),
-                    this,
-                    "Target creature$ you control gains lifelink until end of turn.");
+                source,
+                MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
+                MagicLifelinkTargetPicker.create(),
+                this,
+                "Target creature$ you control gains lifelink until end of turn."
+            );
         }
 
         @Override

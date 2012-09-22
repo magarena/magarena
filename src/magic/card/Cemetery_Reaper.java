@@ -45,34 +45,38 @@ public class Cemetery_Reaper {
             return source != target;
         }
     };
+
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{
-                    MagicCondition.CAN_TAP_CONDITION,
-                    MagicManaCost.TWO_BLACK.getCondition()
-            },
-            new MagicActivationHints(MagicTiming.Token),
-            "Token") {
+        new MagicCondition[]{
+                MagicCondition.CAN_TAP_CONDITION,
+                MagicManaCost.TWO_BLACK.getCondition()
+        },
+        new MagicActivationHints(MagicTiming.Token),
+        "Token"
+    ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
             return new MagicEvent[]{
                 new MagicPayManaCostTapEvent(
-                        source,
-                        source.getController(),
-                        MagicManaCost.TWO_BLACK)};
+                    source,
+                    source.getController(),
+                    MagicManaCost.TWO_BLACK
+                )
+            };
         }
         @Override
         public MagicEvent getPermanentEvent(
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS,
-                    // exiling a high cost card is good here
-                    new MagicGraveyardTargetPicker(true),
-                    this,
-                    "Exile target creature card from a graveyard. " +
-                    "Put a 2/2 black Zombie creature token onto the battlefield.");
+                source,
+                MagicTargetChoice.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS,
+                // exiling a high cost card is good here
+                new MagicGraveyardTargetPicker(true),
+                this,
+                "Exile target creature card from a graveyard. " +
+                "Put a 2/2 black Zombie creature token onto the battlefield."
+            );
         }
         @Override
         public void executeEvent(

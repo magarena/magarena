@@ -28,12 +28,12 @@ public class Scepter_of_Dominance {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.NEG_TARGET_PERMANENT,
-                    new MagicTapTargetPicker(true,false),
-                    this,
-                    "Tap target permanent$.");
+                source,
+                MagicTargetChoice.NEG_TARGET_PERMANENT,
+                new MagicTapTargetPicker(true,false),
+                this,
+                "Tap target permanent$."
+            );
         }
         @Override
         public void executeEvent(

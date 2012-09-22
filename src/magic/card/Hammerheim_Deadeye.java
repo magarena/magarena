@@ -15,12 +15,12 @@ public class Hammerheim_Deadeye {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.TARGET_CREATURE_WITH_FLYING,
-                    new MagicDestroyTargetPicker(false),
-                    this,
-                    "Destroy target creature with flying$.");
+                permanent,
+                MagicTargetChoice.TARGET_CREATURE_WITH_FLYING,
+                new MagicDestroyTargetPicker(false),
+                this,
+                "Destroy target creature with flying$."
+            );
         }
 
         @Override

@@ -19,29 +19,31 @@ import magic.model.target.MagicPumpTargetPicker;
 
 public class Goblin_Burrows {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{
-                MagicManaCost.TWO_RED.getCondition(), //add ONE for the card itself
-                MagicCondition.CAN_TAP_CONDITION    
-            },
-            new MagicActivationHints(MagicTiming.Pump),
-            "Pump") {
+        new MagicCondition[]{
+            MagicManaCost.TWO_RED.getCondition(), //add ONE for the card itself
+            MagicCondition.CAN_TAP_CONDITION    
+        },
+        new MagicActivationHints(MagicTiming.Pump),
+        "Pump"
+    ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
             return new MagicEvent[]{
-                    new MagicTapEvent((MagicPermanent)source),
-                    new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_RED)};
+                new MagicTapEvent((MagicPermanent)source),
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_RED)
+            };
         }
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.POS_TARGET_GOBLIN_CREATURE,
-                    MagicPumpTargetPicker.create(),
-                    this,
-                    "Target Goblin creature$ gets +2/+0 until end of turn.");
+                source,
+                MagicTargetChoice.POS_TARGET_GOBLIN_CREATURE,
+                MagicPumpTargetPicker.create(),
+                this,
+                "Target Goblin creature$ gets +2/+0 until end of turn."
+            );
         }
 
         @Override

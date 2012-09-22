@@ -21,16 +21,15 @@ public class Wanderwine_Prophets {
                     damage.getTarget().isPlayer() &&
                     damage.isCombat()) ?
                 new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        new MagicMayChoice(
-                            "You may sacrifice a Merfolk. " +
-                            "If you do, take an extra turn after this one.",
-                            MagicTargetChoice.SACRIFICE_MERFOLK),
-                        MagicSacrificeTargetPicker.create(),
-                        this,
-                        "You may$ sacrifice a Merfolk$. " +
-                        "If you do, take an extra turn after this one"):
+                    permanent,
+                    new MagicMayChoice(
+                        MagicTargetChoice.SACRIFICE_MERFOLK
+                    ),
+                    MagicSacrificeTargetPicker.create(),
+                    this,
+                    "PN may$ sacrifice a Merfolk$. " +
+                    "If you do, take an extra turn after this one"
+                ):
                 MagicEvent.NONE;
         }
         

@@ -45,13 +45,13 @@ public class Nephalia_Smuggler {
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
                     targetFilter,true,MagicTargetHint.None,"another creature to exile");
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    targetChoice,
-                    MagicBounceTargetPicker.getInstance(),
-                    this,
-                    "Exile another target creature you control$, then " +
-                    "return that card to the battlefield under your control.");
+                source,
+                targetChoice,
+                MagicBounceTargetPicker.getInstance(),
+                this,
+                "Exile another target creature you control$, then " +
+                "return that card to the battlefield under your control."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {

@@ -30,17 +30,18 @@ public class Wickerbough_Elder {
         public MagicEvent[] getCostEvent(final MagicSource source) {
             return new MagicEvent[]{
                 new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.GREEN),
-                new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.MinusOne,1)};
+                new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.MinusOne,1)
+            };
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_ENCHANTMENT,
-                    new MagicDestroyTargetPicker(false),
-                    this,
-                    "Destroy target artifact or enchantment$.");
+                source,
+                MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_ENCHANTMENT,
+                new MagicDestroyTargetPicker(false),
+                this,
+                "Destroy target artifact or enchantment$."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {

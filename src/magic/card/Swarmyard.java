@@ -29,12 +29,12 @@ public class Swarmyard {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.POS_TARGET_INSECT_RAT_SPIDER_OR_SQUIRREL,
-                    MagicRegenerateTargetPicker.getInstance(),
-                    this,
-                    "Regenerate target Insect, Rat, Spider, or Squirrel$.");
+                source,
+                MagicTargetChoice.POS_TARGET_INSECT_RAT_SPIDER_OR_SQUIRREL,
+                MagicRegenerateTargetPicker.getInstance(),
+                this,
+                "Regenerate target Insect, Rat, Spider, or Squirrel$."
+            );
         }
 
         @Override

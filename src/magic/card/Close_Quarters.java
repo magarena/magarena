@@ -16,15 +16,14 @@ public class Close_Quarters {
     public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
-            final MagicPlayer player = permanent.getController();
-            return (player == attacker.getController()) ?
+            return permanent.isFriend(attacker) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(1),
                     this,
-                    "SN deals 1 damage to target creature or player$."):
+                    "SN deals 1 damage to target creature or player$."
+                ):
                 MagicEvent.NONE;
         }
         

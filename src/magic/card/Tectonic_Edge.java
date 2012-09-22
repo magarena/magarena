@@ -33,19 +33,20 @@ public class Tectonic_Edge {
             return new MagicEvent[]{
                 new MagicTapEvent((MagicPermanent)source),
                 new MagicSacrificeEvent((MagicPermanent)source),
-                new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.ONE)};
+                new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.ONE)
+            };
         }
         @Override
         public MagicEvent getPermanentEvent(
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.TARGET_NONBASIC_LAND,
-                    new MagicDestroyTargetPicker(false),
-                    this,
-                    "Destroy target nonbasic land$.");
+                source,
+                MagicTargetChoice.TARGET_NONBASIC_LAND,
+                new MagicDestroyTargetPicker(false),
+                this,
+                "Destroy target nonbasic land$."
+            );
         }
         @Override
         public void executeEvent(

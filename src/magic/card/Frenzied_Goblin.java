@@ -19,18 +19,17 @@ public class Frenzied_Goblin {
     public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            final MagicPlayer player=permanent.getController();
             return (permanent==creature) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicMayChoice(
-                            "You may pay {R}.",
-                            new MagicPayManaCostChoice(MagicManaCost.RED),
-                            MagicTargetChoice.NEG_TARGET_CREATURE),
-                        new MagicNoCombatTargetPicker(false,true,false),
-                        this,
-                        "You may$ pay {R}$. If you do, target creature$ can't block this turn."):
+                    permanent,
+                    new MagicMayChoice(
+                        new MagicPayManaCostChoice(MagicManaCost.RED),
+                        MagicTargetChoice.NEG_TARGET_CREATURE
+                    ),
+                    new MagicNoCombatTargetPicker(false,true,false),
+                    this,
+                    "You may$ pay {R}$. If you do, target creature$ can't block this turn."
+                ):
                 MagicEvent.NONE;
         }
         

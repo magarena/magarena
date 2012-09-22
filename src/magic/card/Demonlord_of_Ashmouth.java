@@ -23,19 +23,22 @@ public class Demonlord_of_Ashmouth {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPlayer player) {
-            final MagicTargetFilter targetFilter = 
-                    new MagicTargetFilter.MagicOtherPermanentTargetFilter(
-                    MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,permanent);
-            final MagicTargetChoice targetChoice = 
-                    new MagicTargetChoice(
-                    targetFilter,false,MagicTargetHint.None,"another creature to sacrifice");
+            final MagicTargetFilter targetFilter = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
+                MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,permanent
+            );
+            final MagicTargetChoice targetChoice = new MagicTargetChoice(
+                targetFilter,
+                false,
+                MagicTargetHint.None,
+                "another creature to sacrifice"
+            );
             return new MagicEvent(
-                    permanent,
-                    player,
-                    new MagicMayChoice(targetChoice),
-                    MagicSacrificeTargetPicker.create(),
-                    this,
-                    "PN may$ sacrifice another creature$. If you don't, exile SN.");
+                permanent,
+                new MagicMayChoice(targetChoice),
+                MagicSacrificeTargetPicker.create(),
+                this,
+                "PN may$ sacrifice another creature$. If you don't, exile SN."
+            );
         }
         @Override
         public void executeEvent(

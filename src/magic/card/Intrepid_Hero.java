@@ -19,9 +19,10 @@ import magic.model.target.MagicTargetFilter;
 public class Intrepid_Hero {
 
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
-            new MagicActivationHints(MagicTiming.Removal),
-            "Destroy") {
+        new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
+        new MagicActivationHints(MagicTiming.Removal),
+        "Destroy"
+    ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
             return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
@@ -29,12 +30,12 @@ public class Intrepid_Hero {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.NEG_TARGET_CREATURE_POWER_4_OR_MORE,
-                    new MagicDestroyTargetPicker(true),
-                    this,
-                    "Destroy target creature$ with power 4 or greater.");
+                source,
+                MagicTargetChoice.NEG_TARGET_CREATURE_POWER_4_OR_MORE,
+                new MagicDestroyTargetPicker(true),
+                this,
+                "Destroy target creature$ with power 4 or greater."
+            );
         }
         @Override
         public void executeEvent(

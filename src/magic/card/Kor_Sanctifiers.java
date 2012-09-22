@@ -20,14 +20,14 @@ public class Kor_Sanctifiers {
             final MagicGame game,
             final MagicPermanent permanent,
             final MagicPlayer player) {   
-            return (permanent.isKicked()) ?
+            return permanent.isKicked() ?
                 new MagicEvent(
                     permanent,
-                    player,
                     MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_ENCHANTMENT,
                     new MagicDestroyTargetPicker(false),
                     this,
-                    "Destroy target artifact or enchantment$."):
+                    "Destroy target artifact or enchantment$."
+                ):
                 MagicEvent.NONE;
         }
                     

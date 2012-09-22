@@ -18,12 +18,12 @@ public class Shivan_Wurm {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.RED_OR_GREEN_CREATURE_YOU_CONTROL,
-                    MagicBounceTargetPicker.getInstance(),
-                    this,
-                    "Return a red or green creature you control$ to its owner's hand.");
+                permanent,
+                MagicTargetChoice.RED_OR_GREEN_CREATURE_YOU_CONTROL,
+                MagicBounceTargetPicker.getInstance(),
+                this,
+                "Return a red or green creature you control$ to its owner's hand."
+            );
         }
 
         @Override

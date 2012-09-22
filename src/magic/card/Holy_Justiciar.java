@@ -21,18 +21,22 @@ import magic.model.target.MagicTapTargetPicker;
 
 public class Holy_Justiciar {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{
-                    MagicCondition.CAN_TAP_CONDITION,
-                    MagicManaCost.TWO_WHITE.getCondition()},
-            new MagicActivationHints(MagicTiming.Tapping),
-            "Tap") {
+        new MagicCondition[]{
+            MagicCondition.CAN_TAP_CONDITION,
+            MagicManaCost.TWO_WHITE.getCondition()
+        },
+        new MagicActivationHints(MagicTiming.Tapping),
+        "Tap"
+    ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
-            return new MagicEvent[]{new MagicPayManaCostTapEvent(
+            return new MagicEvent[]{
+                new MagicPayManaCostTapEvent(
                     source,
                     source.getController(),
-                    MagicManaCost.TWO_WHITE)
+                    MagicManaCost.TWO_WHITE
+                )
             };
         }
 
@@ -41,12 +45,12 @@ public class Holy_Justiciar {
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.NEG_TARGET_CREATURE,
-                    new MagicTapTargetPicker(true,false),
-                    this,
-                    "Tap target creature$. If that creature is a Zombie, exile it.");
+                source,
+                MagicTargetChoice.NEG_TARGET_CREATURE,
+                new MagicTapTargetPicker(true,false),
+                this,
+                "Tap target creature$. If that creature is a Zombie, exile it."
+            );
         }
 
         @Override

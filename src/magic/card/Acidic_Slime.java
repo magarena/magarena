@@ -15,12 +15,12 @@ public class Acidic_Slime {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND,
-                    new MagicDestroyTargetPicker(false),
-                    this,
-                    "Destroy target artifact, enchantment or land$.");
+                permanent,
+                MagicTargetChoice.TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND,
+                new MagicDestroyTargetPicker(false),
+                this,
+                "Destroy target artifact, enchantment or land$."
+            );
         }
 
         @Override

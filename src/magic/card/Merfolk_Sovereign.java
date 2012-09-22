@@ -46,12 +46,12 @@ public class Merfolk_Sovereign {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.POS_TARGET_MERFOLK_CREATURE,
-                    MagicUnblockableTargetPicker.create(),
-                    this,
-                    "Target Merfolk creature$ is unblockable this turn.");
+                source,
+                MagicTargetChoice.POS_TARGET_MERFOLK_CREATURE,
+                MagicUnblockableTargetPicker.create(),
+                this,
+                "Target Merfolk creature$ is unblockable this turn."
+            );
         }
 
         @Override

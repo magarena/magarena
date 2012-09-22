@@ -16,23 +16,18 @@ public class Soltari_Visionary {
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            if (damage.getSource() == permanent &&
-                damage.getTarget().isPlayer()) {
-                final MagicPlayer target = (MagicPlayer)damage.getTarget();
-                if (target.controlsPermanentWithType(MagicType.Enchantment)) {
-                    final MagicPlayer player = permanent.getController();
-                    return new MagicEvent(
-                        permanent,
-                        player,
-                        damage.getTarget() == player ?
-                            MagicTargetChoice.TARGET_ENCHANTMENT_YOU_CONTROL :
-                            MagicTargetChoice.TARGET_ENCHANTMENT_YOUR_OPPONENT_CONTROLS,
-                        new MagicDestroyTargetPicker(false),
-                        this,
-                        "Destroy target enchantment$.");
-                }
-            }
-            return MagicEvent.NONE;
+            return (damage.getSource() == permanent &&
+                    damage.getTarget().isPlayer()) ?
+                new MagicEvent(
+                    permanent,
+                    permanent.isController(damage.getTarget()) ?
+                        MagicTargetChoice.TARGET_ENCHANTMENT_YOU_CONTROL :
+                        MagicTargetChoice.TARGET_ENCHANTMENT_YOUR_OPPONENT_CONTROLS,
+                    new MagicDestroyTargetPicker(false),
+                    this,
+                    "Destroy target enchantment$."
+                ):
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(

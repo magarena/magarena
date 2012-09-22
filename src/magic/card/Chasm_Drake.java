@@ -16,15 +16,14 @@ public class Chasm_Drake {
     public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            final MagicPlayer player = permanent.getController();
             return (permanent == creature) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
                     MagicFlyingTargetPicker.create(),
                     this,
-                    "Target creature$ you control gains flying until end of turn."):
+                    "Target creature$ you control gains flying until end of turn."
+                ):
                 MagicEvent.NONE;           
         }
         

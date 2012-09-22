@@ -19,14 +19,14 @@ public class Glint_Hawk {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
                 permanent,
-                player,
                 new MagicMayChoice(
-                    "You may return an artifact you control to its owner's hand.",
-                    MagicTargetChoice.ARTIFACT_YOU_CONTROL),
+                    MagicTargetChoice.ARTIFACT_YOU_CONTROL
+                ),
                 MagicBounceTargetPicker.getInstance(),
                 this,
                 "You may$ return an artifact you control to its owner's hand. " +
-                "If you don't, sacrifice SN.");
+                "If you don't, sacrifice SN."
+            );
         }
         @Override
         public void executeEvent(

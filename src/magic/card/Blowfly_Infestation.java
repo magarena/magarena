@@ -18,11 +18,11 @@ public class Blowfly_Infestation {
                     otherPermanent.getCounters(MagicCounterType.MinusOne) > 0) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     MagicTargetChoice.TARGET_CREATURE,
                     new MagicWeakenTargetPicker(1,1),
                     this,
-                    "Put a -1/-1 counter on target creature$."):
+                    "Put a -1/-1 counter on target creature$."
+                ):
                 MagicEvent.NONE;
         }
         @Override

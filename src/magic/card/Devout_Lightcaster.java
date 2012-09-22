@@ -16,12 +16,12 @@ public class Devout_Lightcaster {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.TARGET_BLACK_PERMANENT,
-                    MagicExileTargetPicker.create(),
-                    this,
-                    "Exile target black permanent$.");
+                permanent,
+                MagicTargetChoice.TARGET_BLACK_PERMANENT,
+                MagicExileTargetPicker.create(),
+                this,
+                "Exile target black permanent$."
+            );
         }
         @Override
         public void executeEvent(

@@ -15,12 +15,12 @@ public class Woodfall_Primus {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.TARGET_NONCREATURE,
-                    new MagicDestroyTargetPicker(false),
-                    this,
-                    "Destroy target noncreature permanent$.");
+                permanent,
+                MagicTargetChoice.TARGET_NONCREATURE,
+                new MagicDestroyTargetPicker(false),
+                this,
+                "Destroy target noncreature permanent$."
+            );
         }
 
         @Override

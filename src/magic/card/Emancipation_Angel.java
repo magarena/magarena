@@ -19,12 +19,12 @@ public class Emancipation_Angel {
                 final MagicPermanent permanent,
                 final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.TARGET_PERMANENT_YOU_CONTROL,
-                    MagicBounceTargetPicker.getInstance(),
-                    this,
-                    "Return a permanent$ you control to its owner's hand.");
+                permanent,
+                MagicTargetChoice.TARGET_PERMANENT_YOU_CONTROL,
+                MagicBounceTargetPicker.getInstance(),
+                this,
+                "Return a permanent$ you control to its owner's hand."
+            );
         }
         @Override
         public void executeEvent(

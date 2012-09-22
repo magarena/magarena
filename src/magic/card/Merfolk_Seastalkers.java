@@ -30,12 +30,12 @@ public class Merfolk_Seastalkers {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.NEG_TARGET_CREATURE_WITHOUT_FLYING,
-                    new MagicTapTargetPicker(true,false),
-                    this,
-                    "Tap target creature$ without flying.");
+                source,
+                MagicTargetChoice.NEG_TARGET_CREATURE_WITHOUT_FLYING,
+                new MagicTapTargetPicker(true,false),
+                this,
+                "Tap target creature$ without flying."
+            );
         }
 
         @Override

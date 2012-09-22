@@ -22,13 +22,13 @@ public class Kessig_Malcontents {
                 final MagicPlayer player) {
             final int amount = player.getNrOfPermanentsWithSubType(MagicSubType.Human);
             return new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.NEG_TARGET_PLAYER,
-                    new MagicDamageTargetPicker(amount),
-                    this,
-                    "SN deals damage to target player$ " +
-                    "equal to the number of Humans PN controls.");
+                permanent,
+                MagicTargetChoice.NEG_TARGET_PLAYER,
+                new MagicDamageTargetPicker(amount),
+                this,
+                "SN deals damage to target player$ " +
+                "equal to the number of Humans PN controls."
+            );
         }
         
         @Override
@@ -41,10 +41,11 @@ public class Kessig_Malcontents {
                 public void doAction(final MagicPlayer player) {
                     final int amount = event.getPlayer().getNrOfPermanentsWithSubType(MagicSubType.Human);
                     final MagicDamage damage = new MagicDamage(
-                            event.getSource(),
-                            player,
-                            amount,
-                            false);
+                        event.getSource(),
+                        player,
+                        amount,
+                        false
+                    );
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });

@@ -18,9 +18,10 @@ import magic.model.target.MagicTapTargetPicker;
 
 public class Air_Servant {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.TWO_BLUE.getCondition()},
-            new MagicActivationHints(MagicTiming.Tapping),
-            "Tap") {
+        new MagicCondition[]{MagicManaCost.TWO_BLUE.getCondition()},
+        new MagicActivationHints(MagicTiming.Tapping),
+        "Tap"
+    ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -30,12 +31,12 @@ public class Air_Servant {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.NEG_TARGET_CREATURE_WITH_FLYING,
-                    new MagicTapTargetPicker(true,false),
-                    this,
-                    "Tap target creature$ with flying.");
+                source,
+                MagicTargetChoice.NEG_TARGET_CREATURE_WITH_FLYING,
+                new MagicTapTargetPicker(true,false),
+                this,
+                "Tap target creature$ with flying."
+            );
         }
 
         @Override

@@ -15,14 +15,14 @@ public class Reaper_from_the_Abyss {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
             return game.getCreatureDiedThisTurn() ?
-                    new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        MagicTargetChoice.TARGET_NON_DEMON,
-                        new MagicDestroyTargetPicker(false),
-                        this,
-                        "Destroy target non-Demon creature.") :
-                    MagicEvent.NONE;
+                new MagicEvent(
+                    permanent,
+                    MagicTargetChoice.TARGET_NON_DEMON,
+                    new MagicDestroyTargetPicker(false),
+                    this,
+                    "Destroy target non-Demon creature."
+                ) :
+                MagicEvent.NONE;
         }    
         @Override
         public void executeEvent(

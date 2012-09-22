@@ -23,13 +23,13 @@ public class Master_Thief {
                 final MagicPermanent permanent,
                 final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.TARGET_ARTIFACT,
-                    MagicExileTargetPicker.create(),
-                    this,
-                    "Gain control of target artifact$ " +
-                    "for as long as you control SN.");
+                permanent,
+                MagicTargetChoice.TARGET_ARTIFACT,
+                MagicExileTargetPicker.create(),
+                this,
+                "Gain control of target artifact$ " +
+                "for as long as you control SN."
+            );
         }
         
         @Override

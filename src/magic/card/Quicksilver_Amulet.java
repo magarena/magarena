@@ -22,7 +22,8 @@ public class Quicksilver_Amulet {
             final MagicPermanent permanent=(MagicPermanent)source;
             return new MagicEvent[]{
                 new MagicTapEvent(permanent),
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.FOUR)};
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.FOUR)
+            };
         }
 
         @Override
@@ -30,12 +31,12 @@ public class Quicksilver_Amulet {
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.TARGET_CREATURE_CARD_FROM_HAND,
-                    new MagicGraveyardTargetPicker(true),
-                    this,
-                    "Put a creature card$ from your hand onto the battlefield.");
+                source,
+                MagicTargetChoice.TARGET_CREATURE_CARD_FROM_HAND,
+                new MagicGraveyardTargetPicker(true),
+                this,
+                "Put a creature card$ from your hand onto the battlefield."
+            );
         }
 
         @Override

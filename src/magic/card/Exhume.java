@@ -20,10 +20,11 @@ public class Exhume {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack,
-                    this,
-                    "Each player puts a creature card from " +
-                    "his or her graveyard onto the battlefield.");
+                cardOnStack,
+                this,
+                "Each player puts a creature card from " +
+                "his or her graveyard onto the battlefield."
+            );
         }
 
         @Override
@@ -39,7 +40,7 @@ public class Exhume {
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
                     new MagicGraveyardTargetPicker(true),
                     EVENT_ACTION,
-                    ""
+                    "PN puts a creature card from his or her graveyard onto the battlefield."
                 ));
             }
         }

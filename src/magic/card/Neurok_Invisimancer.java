@@ -16,12 +16,12 @@ public class Neurok_Invisimancer {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.TARGET_CREATURE,
-                    MagicUnblockableTargetPicker.create(),
-                    this,
-                    "Target creature$ is unblockable this turn.");
+                permanent,
+                MagicTargetChoice.TARGET_CREATURE,
+                MagicUnblockableTargetPicker.create(),
+                this,
+                "Target creature$ is unblockable this turn."
+            );
         }
         
         @Override

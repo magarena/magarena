@@ -19,8 +19,8 @@ import magic.model.target.MagicRegenerateTargetPicker;
 public class Yavimaya_Hollow {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
-                    MagicCondition.CAN_TAP_CONDITION,
-                    MagicManaCost.GREEN.getCondition()
+                MagicCondition.CAN_TAP_CONDITION,
+                MagicManaCost.GREEN.getCondition()
             },
             new MagicActivationHints(MagicTiming.Pump,false),
             "Regen") {
@@ -28,18 +28,19 @@ public class Yavimaya_Hollow {
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
             return new MagicEvent[]{
-                    new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.GREEN)};
+                new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.GREEN)
+            };
         }
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicRegenerateTargetPicker.getInstance(),
-                    this,
-                    "Regenerate target creature$.");
+                source,
+                MagicTargetChoice.POS_TARGET_CREATURE,
+                MagicRegenerateTargetPicker.getInstance(),
+                this,
+                "Regenerate target creature$."
+            );
         }
 
         @Override

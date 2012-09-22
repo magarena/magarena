@@ -28,12 +28,12 @@ public class Thundersong_Trumpeter {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.NEG_TARGET_CREATURE,
-                    new MagicNoCombatTargetPicker(true,true,false),
-                    this,
-                    "Target creature$ can't attack or block this turn.");
+                source,
+                MagicTargetChoice.NEG_TARGET_CREATURE,
+                new MagicNoCombatTargetPicker(true,true,false),
+                this,
+                "Target creature$ can't attack or block this turn."
+            );
         }
         @Override
         public void executeEvent(

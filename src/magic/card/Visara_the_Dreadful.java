@@ -30,12 +30,12 @@ public class Visara_the_Dreadful {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.NEG_TARGET_CREATURE,
-                    new MagicDestroyTargetPicker(true),
-                    this,
-                    "Destroy target creature$. It can't be regenerated.");
+                source,
+                MagicTargetChoice.NEG_TARGET_CREATURE,
+                new MagicDestroyTargetPicker(true),
+                this,
+                "Destroy target creature$. It can't be regenerated."
+            );
         }
         @Override
         public void executeEvent(

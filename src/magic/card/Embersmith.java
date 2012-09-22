@@ -20,22 +20,21 @@ import magic.model.trigger.MagicWhenOtherSpellIsCastTrigger;
 public class Embersmith {
     public static final MagicWhenOtherSpellIsCastTrigger T = new MagicWhenOtherSpellIsCastTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
-            final MagicPlayer player = permanent.getController();
-            final MagicCard card = cardOnStack.getCard();
-            return (card.getOwner() == player && cardOnStack.getCardDefinition().isArtifact()) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack spell) {
+            return (permanent.isFriend(spell) && 
+                    spell.getCardDefinition().isArtifact()) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new MagicMayChoice(
-                        "You may pay {1}.",
                         new MagicPayManaCostChoice(MagicManaCost.ONE),
-                        MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER),
-                        new MagicDamageTargetPicker(2),
+                        MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER
+                    ),
+                    new MagicDamageTargetPicker(2),
                     this,
                     "PN may$ pay {1}$. If you do, SN deals 1 " +
-                    "damage to target creature or player$."):
-               MagicEvent.NONE;
+                    "damage to target creature or player$."
+                ):
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(

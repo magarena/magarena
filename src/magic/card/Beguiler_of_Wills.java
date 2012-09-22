@@ -21,9 +21,10 @@ import magic.model.target.MagicTargetHint;
 
 public class Beguiler_of_Wills {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
-            new MagicActivationHints(MagicTiming.Removal),
-            "Control") {
+        new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
+        new MagicActivationHints(MagicTiming.Removal),
+        "Control"
+    ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -34,22 +35,24 @@ public class Beguiler_of_Wills {
         public MagicEvent getPermanentEvent(
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
-            final MagicPlayer player = source.getController();
-            final MagicTargetFilter targetFilter =
-                    new MagicTargetFilter.MagicPowerTargetFilter(
-                    MagicTargetFilter.TARGET_CREATURE,
-                    player.getNrOfPermanentsWithType(MagicType.Creature));
-            final MagicTargetChoice targetChoice = 
-                    new MagicTargetChoice(
-                    targetFilter,true,MagicTargetHint.Negative,"target creature to gain control of");
+            final MagicTargetFilter targetFilter = new MagicTargetFilter.MagicPowerTargetFilter(
+                MagicTargetFilter.TARGET_CREATURE,
+                source.getController().getNrOfPermanentsWithType(MagicType.Creature)
+            );
+            final MagicTargetChoice targetChoice = new MagicTargetChoice(
+                targetFilter,
+                true,
+                MagicTargetHint.Negative,
+                "target creature to gain control of"
+            );
             return new MagicEvent(
-                    source,
-                    player,
-                    targetChoice,
-                    MagicExileTargetPicker.create(),
-                    this,
-                    "Gain control of target creature$ with power less " +
-                    "than or equal to the number of creatures you control.");
+                source,
+                targetChoice,
+                MagicExileTargetPicker.create(),
+                this,
+                "Gain control of target creature$ with power less " +
+                "than or equal to the number of creatures you control."
+            );
         }
 
         @Override

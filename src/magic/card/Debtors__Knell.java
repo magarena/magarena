@@ -16,16 +16,15 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 public class Debtors__Knell {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-            final MagicPlayer player=permanent.getController();
-            return (player==data) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+            return permanent.isController(upkeepPlayer) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        MagicTargetChoice.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS,
-                        new MagicGraveyardTargetPicker(true),
-                        this,
-                        "Put target creature card$ in a graveyard onto the battlefield under your control."):
+                    permanent,
+                    MagicTargetChoice.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS,
+                    new MagicGraveyardTargetPicker(true),
+                    this,
+                    "Put target creature card$ in a graveyard onto the battlefield under your control."
+                ):
                 MagicEvent.NONE;
         }
         

@@ -12,17 +12,19 @@ import magic.model.target.MagicGraveyardTargetPicker;
 public class Dragon_Arch {
 
     public static final MagicPermanentActivation A1 = new MagicPermanentActivation(
-            new MagicCondition[]{
-                MagicCondition.CAN_TAP_CONDITION,
-                MagicManaCost.TWO.getCondition()},
-            new MagicActivationHints(MagicTiming.Token),
-            "Token") {
+        new MagicCondition[]{
+            MagicCondition.CAN_TAP_CONDITION,
+            MagicManaCost.TWO.getCondition()},
+        new MagicActivationHints(MagicTiming.Token),
+        "Token"
+    ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
             final MagicPermanent permanent=(MagicPermanent)source;
             return new MagicEvent[]{
                 new MagicTapEvent(permanent),
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO)};
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO)
+            };
         }
 
         @Override
@@ -30,12 +32,12 @@ public class Dragon_Arch {
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.TARGET_MULTICOLOR_CREATURE_CARD_FROM_HAND,
-                    new MagicGraveyardTargetPicker(true),
-                    this,
-                    "Put a multicolored creature card$ from your hand onto the battlefield.");
+                source,
+                MagicTargetChoice.TARGET_MULTICOLOR_CREATURE_CARD_FROM_HAND,
+                new MagicGraveyardTargetPicker(true),
+                this,
+                "Put a multicolored creature card$ from your hand onto the battlefield."
+            );
         }
 
         @Override

@@ -33,12 +33,12 @@ public class Wasteland {
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.TARGET_NONBASIC_LAND,
-                    new MagicDestroyTargetPicker(false),
-                    this,
-                    "Destroy target nonbasic land$.");
+                source,
+                MagicTargetChoice.TARGET_NONBASIC_LAND,
+                new MagicDestroyTargetPicker(false),
+                this,
+                "Destroy target nonbasic land$."
+            );
         }
         @Override
         public void executeEvent(

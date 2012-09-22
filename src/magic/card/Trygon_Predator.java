@@ -16,16 +16,18 @@ public class Trygon_Predator {
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            return (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
+            return (damage.getSource() == permanent && 
+                    damage.getTarget().isPlayer() && 
+                    damage.isCombat()) ?
                 new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        new MagicMayChoice(
-                            "You may destroy target artifact or enchantment.",
-                            MagicTargetChoice.TARGET_ARTIFACT_OR_ENCHANTMENT_YOUR_OPPONENT_CONTROLS),
-                        new MagicDestroyTargetPicker(false),
-                        this,
-                        "You may$ destroy target artifact or enchantment$ your opponent controls."):
+                    permanent,
+                    new MagicMayChoice(
+                        MagicTargetChoice.TARGET_ARTIFACT_OR_ENCHANTMENT_YOUR_OPPONENT_CONTROLS
+                    ),
+                    new MagicDestroyTargetPicker(false),
+                    this,
+                    "PN may$ destroy target artifact or enchantment$ your opponent controls."
+                ):
                 MagicEvent.NONE;
         }
         

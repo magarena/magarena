@@ -22,15 +22,15 @@ public class Restoration_Angel {
                 final MagicPermanent permanent,
                 final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    new MagicMayChoice(
-                            "You may exile target non-Angel creature you control.",
-                            MagicTargetChoice.TARGET_NON_ANGEL_CREATURE_YOU_CONTROL),
-                    MagicBounceTargetPicker.getInstance(),
-                    this,
-                    "You may$ exile target non-Angel creature$ you control, then return " +
-                    "that card to the battlefield under your control.");
+                permanent,
+                new MagicMayChoice(
+                    MagicTargetChoice.TARGET_NON_ANGEL_CREATURE_YOU_CONTROL
+                ),
+                MagicBounceTargetPicker.getInstance(),
+                this,
+                "You may$ exile target non-Angel creature$ you control, then return " +
+                "that card to the battlefield under your control."
+            );
         }
         @Override
         public void executeEvent(

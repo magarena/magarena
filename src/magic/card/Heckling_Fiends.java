@@ -19,28 +19,31 @@ import magic.model.target.MagicMustAttackTargetPicker;
 
 public class Heckling_Fiends {
     public static final MagicPermanentActivation A = new MagicPermanentActivation( 
-            new MagicCondition[]{MagicManaCost.TWO_RED.getCondition()},
-            new MagicActivationHints(MagicTiming.MustAttack),
-            "Attacks") {
+        new MagicCondition[]{MagicManaCost.TWO_RED.getCondition()},
+        new MagicActivationHints(MagicTiming.MustAttack),
+        "Attacks"
+    ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
             return new MagicEvent[] {
-                    new MagicPayManaCostEvent(
+                new MagicPayManaCostEvent(
                     source,
                     source.getController(),
-                    MagicManaCost.TWO_RED)};
+                    MagicManaCost.TWO_RED
+                )
+            };
         }
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.NEG_TARGET_CREATURE,
-                    MagicMustAttackTargetPicker.create(),
-                    this,
-                    "Target creature$ attacks this turn if able.");
+                source,
+                MagicTargetChoice.NEG_TARGET_CREATURE,
+                MagicMustAttackTargetPicker.create(),
+                this,
+                "Target creature$ attacks this turn if able."
+            );
         }
 
         @Override

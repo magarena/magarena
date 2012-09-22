@@ -18,9 +18,10 @@ import magic.model.target.MagicRegenerateTargetPicker;
 
 public class Isao__Enlightened_Bushi {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.TWO.getCondition()},
-            new MagicActivationHints(MagicTiming.Pump,true),
-            "Regen") {
+        new MagicCondition[]{MagicManaCost.TWO.getCondition()},
+        new MagicActivationHints(MagicTiming.Pump,true),
+        "Regen"
+    ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -30,12 +31,12 @@ public class Isao__Enlightened_Bushi {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.POS_TARGET_SAMURAI,
-                    MagicRegenerateTargetPicker.getInstance(),
-                    this,
-                    "Regenerate target Samurai$.");
+                source,
+                MagicTargetChoice.POS_TARGET_SAMURAI,
+                MagicRegenerateTargetPicker.getInstance(),
+                this,
+                "Regenerate target Samurai$."
+            );
         }
 
         @Override

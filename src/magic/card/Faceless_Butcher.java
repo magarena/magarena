@@ -21,12 +21,12 @@ public class Faceless_Butcher {
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
                     targetFilter,true,MagicTargetHint.None,"another creature to exile");
             return new MagicEvent(
-                    permanent,
-                    player,
-                    targetChoice,
-                    MagicExileTargetPicker.create(),
-                    this,
-                    "Exile another creature$.");
+                permanent,
+                targetChoice,
+                MagicExileTargetPicker.create(),
+                this,
+                "Exile another creature$."
+            );
         }
         @Override
         public void executeEvent(

@@ -22,27 +22,29 @@ import magic.model.target.MagicGraveyardTargetPicker;
 
 public class Academy_Ruins {
     public static final MagicPermanentActivation A = new MagicPermanentActivation( 
-            new MagicCondition[] {
-                    MagicManaCost.TWO_BLUE.getCondition(),
-                    MagicCondition.CAN_TAP_CONDITION,
-            },
-            new MagicActivationHints(MagicTiming.Main),
-            "Card") {
+        new MagicCondition[] {
+            MagicManaCost.TWO_BLUE.getCondition(),
+            MagicCondition.CAN_TAP_CONDITION,
+        },
+        new MagicActivationHints(MagicTiming.Main),
+        "Card"
+    ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
             return new MagicEvent[]{
-                    new MagicTapEvent((MagicPermanent)source),
-                    new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_BLUE)};
+                new MagicTapEvent((MagicPermanent)source),
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_BLUE)
+            };
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.TARGET_ARTIFACT_CARD_FROM_GRAVEYARD,
-                    new MagicGraveyardTargetPicker(false),
-                    this,
-                    "Put target artifact card$ from your graveyard on top of your library");
+                source,
+                MagicTargetChoice.TARGET_ARTIFACT_CARD_FROM_GRAVEYARD,
+                new MagicGraveyardTargetPicker(false),
+                this,
+                "Put target artifact card$ from your graveyard on top of your library"
+            );
         }
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
@@ -50,9 +52,10 @@ public class Academy_Ruins {
                 public void doAction(final MagicCard targetCard) {
                     game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
                     game.doAction(new MagicMoveCardAction(
-                            targetCard,
-                            MagicLocationType.Graveyard,
-                            MagicLocationType.TopOfOwnersLibrary));
+                        targetCard,
+                        MagicLocationType.Graveyard,
+                        MagicLocationType.TopOfOwnersLibrary
+                    ));
                 }
             });
         }

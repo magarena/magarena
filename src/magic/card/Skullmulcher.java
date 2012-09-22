@@ -39,13 +39,13 @@ public class Skullmulcher {
                     targetFilter,false,MagicTargetHint.None,"a creature other than "+permanent+" to sacrifice");
             final MagicChoice devourChoice=new MagicMayChoice("You may sacrifice a creature to "+permanent+".",targetChoice);
             if (player.getNrOfPermanentsWithType(MagicType.Creature)>1) {
-                    return new MagicEvent(
-                            permanent,
-                            player,
-                            devourChoice,
-                            MagicSacrificeTargetPicker.create(),
-                            this,
-                            "You may$ sacrifice a creature$ to "+permanent+".");
+                return new MagicEvent(
+                    permanent,
+                    devourChoice,
+                    MagicSacrificeTargetPicker.create(),
+                    this,
+                    "You may$ sacrifice a creature$ to "+permanent+"."
+                );
             }
             drawCards(game,permanent);
             return MagicEvent.NONE;

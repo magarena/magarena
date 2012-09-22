@@ -58,15 +58,14 @@ public class Karn__Silver_Golem {
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicPlayer player=source.getController();
             return new MagicEvent(
-                    source,
-                    player,
-                    MagicTargetChoice.POS_TARGET_NONCREATURE_ARTIFACT,
-                    TP,
-                    this,
-                    "Target noncreature artifact$ becomes an artifact creature with " + 
-                    "power and toughness each equal to its converted mana cost until end of turn");
+                source,
+                MagicTargetChoice.POS_TARGET_NONCREATURE_ARTIFACT,
+                TP,
+                this,
+                "Target noncreature artifact$ becomes an artifact creature with " + 
+                "power and toughness each equal to its converted mana cost until end of turn"
+            );
         }
 
         @Override

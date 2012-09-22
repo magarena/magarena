@@ -22,11 +22,11 @@ public class Oblivion_Ring {
                     targetFilter,true,MagicTargetHint.None,"another target nonland permanent to exile");
             return new MagicEvent(
                 permanent,
-                player,
                 targetChoice,
                 MagicExileTargetPicker.create(),
                 this,
-                "Exile another target nonland permanent$.");
+                "Exile another target nonland permanent$."
+            );
         }
         @Override
         public void executeEvent(

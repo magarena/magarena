@@ -18,11 +18,13 @@ import magic.model.target.MagicTapTargetPicker;
 
 public class Avacynian_Priest {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{
-                    MagicCondition.CAN_TAP_CONDITION,
-                    MagicManaCost.ONE.getCondition()},
-            new MagicActivationHints(MagicTiming.Tapping),
-            "Tap") {
+        new MagicCondition[]{
+            MagicCondition.CAN_TAP_CONDITION,
+            MagicManaCost.ONE.getCondition()
+        },
+        new MagicActivationHints(MagicTiming.Tapping),
+        "Tap"
+    ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -32,12 +34,12 @@ public class Avacynian_Priest {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.NEG_TARGET_NONHUMAN_CREATURE,
-                    new MagicTapTargetPicker(true,false),
-                    this,
-                    "Tap target non-Human creature$.");
+                source,
+                MagicTargetChoice.NEG_TARGET_NONHUMAN_CREATURE,
+                new MagicTapTargetPicker(true,false),
+                this,
+                "Tap target non-Human creature$."
+            );
         }
 
         @Override

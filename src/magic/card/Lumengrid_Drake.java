@@ -19,11 +19,11 @@ public class Lumengrid_Drake {
             return MagicCondition.METALCRAFT_CONDITION.accept(permanent) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     MagicTargetChoice.TARGET_CREATURE,
                     MagicBounceTargetPicker.getInstance(),
                     this,
-                    "Return target creature$ to its owner's hand.") :
+                    "Return target creature$ to its owner's hand."
+                ) :
                 MagicEvent.NONE;
         }
         @Override

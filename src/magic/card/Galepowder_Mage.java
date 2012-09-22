@@ -15,18 +15,17 @@ public class Galepowder_Mage {
     public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            final MagicPlayer player = permanent.getController();
             return (permanent == creature &&
                     game.getNrOfPermanents(MagicType.Creature) > 1) ?
-                    new MagicEvent(
-                            permanent,
-                            player,
-                            MagicTargetChoice.TARGET_CREATURE,
-                            MagicExileTargetPicker.create(),
-                            this,
-                            "Exile target creature$. Return that card to the " +
-                            "battlefield under its owner's control at end of turn.") :
-                    MagicEvent.NONE;         
+                new MagicEvent(
+                    permanent,
+                    MagicTargetChoice.TARGET_CREATURE,
+                    MagicExileTargetPicker.create(),
+                    this,
+                    "Exile target creature$. Return that card to the " +
+                    "battlefield under its owner's control at end of turn."
+                ) :
+                MagicEvent.NONE;         
         }
         @Override
         public void executeEvent(

@@ -17,12 +17,12 @@ public class Festering_Goblin {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
             return (MagicLocationType.Play == triggerData.fromLocation) ?
                 new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        MagicTargetChoice.TARGET_CREATURE,
-                        new MagicWeakenTargetPicker(1,1),
-                        this,
-                        "Target creature$ gets -1/-1 until end of turn.") :
+                    permanent,
+                    MagicTargetChoice.TARGET_CREATURE,
+                    new MagicWeakenTargetPicker(1,1),
+                    this,
+                    "Target creature$ gets -1/-1 until end of turn."
+                ) :
                 MagicEvent.NONE;
         }
         

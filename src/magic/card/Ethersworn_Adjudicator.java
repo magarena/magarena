@@ -21,25 +21,29 @@ import magic.model.target.MagicDestroyTargetPicker;
 
 public class Ethersworn_Adjudicator {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.ONE_WHITE_BLACK.getCondition()},
-            new MagicActivationHints(MagicTiming.Removal),
-            "Destroy") {
+        new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.ONE_WHITE_BLACK.getCondition()},
+        new MagicActivationHints(MagicTiming.Removal),
+        "Destroy"
+    ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
-            return new MagicEvent[]{new MagicPayManaCostTapEvent(
+            return new MagicEvent[]{
+                new MagicPayManaCostTapEvent(
                     source,
                     source.getController(),
-                    MagicManaCost.ONE_WHITE_BLACK)};
+                    MagicManaCost.ONE_WHITE_BLACK
+                )
+            };
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.NEG_TARGET_CREATURE_OR_ENCHANTMENT,
-                    new MagicDestroyTargetPicker(false),
-                    this,
-                    "Destroy target creature or enchantment$.");
+                source,
+                MagicTargetChoice.NEG_TARGET_CREATURE_OR_ENCHANTMENT,
+                new MagicDestroyTargetPicker(false),
+                this,
+                "Destroy target creature or enchantment$."
+            );
         }
         @Override
         public void executeEvent(
@@ -56,12 +60,14 @@ public class Ethersworn_Adjudicator {
     };
 
     public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
-            new MagicCondition[]{
-                MagicCondition.TAPPED_CONDITION,
-                MagicManaCost.TWO_BLUE.getCondition(),
-                new MagicSingleActivationCondition()},
-            new MagicActivationHints(MagicTiming.Tapping),
-            "Untap") {
+        new MagicCondition[]{
+            MagicCondition.TAPPED_CONDITION,
+            MagicManaCost.TWO_BLUE.getCondition(),
+            new MagicSingleActivationCondition()
+        },
+        new MagicActivationHints(MagicTiming.Tapping),
+        "Untap"
+    ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
             return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_BLUE)};

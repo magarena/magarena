@@ -18,9 +18,10 @@ import magic.model.target.MagicMustAttackTargetPicker;
 
 public class Alluring_Siren {
     public static final MagicPermanentActivation A = new MagicPermanentActivation( 
-            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
-            new MagicActivationHints(MagicTiming.MustAttack),
-            "Attacks") {
+        new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
+        new MagicActivationHints(MagicTiming.MustAttack),
+        "Attacks"
+    ) {
         
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -30,12 +31,12 @@ public class Alluring_Siren {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
-                    MagicMustAttackTargetPicker.create(),
-                    this,
-                    "Target creature$ an opponent controls attacks you this turn if able.");
+                source,
+                MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
+                MagicMustAttackTargetPicker.create(),
+                this,
+                "Target creature$ an opponent controls attacks you this turn if able."
+            );
         }
 
         @Override

@@ -41,21 +41,18 @@ public class Lim_Dul_the_Necromancer {
    public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();    
-            final MagicPlayer otherController = otherPermanent.getController();
-            return (otherController != player &&
+            return (otherPermanent.isEnemy(permanent) &&
                     otherPermanent.isCreature()) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicMayChoice(
-                                "You may pay {1}{B}.",
-                                new MagicPayManaCostChoice(MagicManaCost.ONE_BLACK)),
-                        new Object[]{otherPermanent.getCard()},
-                        this,
-                        "You may$ pay {1}{B}$. If you do, return " + otherPermanent + 
-                        " to the battlefield under your control. If it's a " +
-                        "creature, it's a Zombie in addition to its other creature types."):
+                    permanent,
+                    new MagicMayChoice(
+                        new MagicPayManaCostChoice(MagicManaCost.ONE_BLACK)
+                    ),
+                    new Object[]{otherPermanent.getCard()},
+                    this,
+                    "You may$ pay {1}{B}$. If you do, return " + otherPermanent + 
+                    " to the battlefield under your control. If it's a " +
+                    "creature, it's a Zombie in addition to its other creature types."):
                 MagicEvent.NONE;
         }
         @Override
@@ -80,9 +77,10 @@ public class Lim_Dul_the_Necromancer {
     };
     
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.ONE_BLACK.getCondition()},
-            new MagicActivationHints(MagicTiming.Pump,true),
-            "Regen") {
+        new MagicCondition[]{MagicManaCost.ONE_BLACK.getCondition()},
+        new MagicActivationHints(MagicTiming.Pump,true),
+        "Regen"
+    ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -92,12 +90,12 @@ public class Lim_Dul_the_Necromancer {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.POS_TARGET_ZOMBIE,
-                    MagicRegenerateTargetPicker.getInstance(),
-                    this,
-                    "Regenerate target Zombie$.");
+                source,
+                MagicTargetChoice.POS_TARGET_ZOMBIE,
+                MagicRegenerateTargetPicker.getInstance(),
+                this,
+                "Regenerate target Zombie$."
+            );
         }
 
         @Override

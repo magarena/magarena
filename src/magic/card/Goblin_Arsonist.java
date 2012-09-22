@@ -20,14 +20,14 @@ public class Goblin_Arsonist {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
             return (MagicLocationType.Play == triggerData.fromLocation) ?
                 new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        new MagicMayChoice(
-                                "You may deal 1 damage to target creature or player.",
-                                MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER),
-                        new MagicDamageTargetPicker(1),
-                        this,
-                        "You may$ deal 1 damage to target creature or player$") :
+                    permanent,
+                    new MagicMayChoice(
+                        MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER
+                    ),
+                    new MagicDamageTargetPicker(1),
+                    this,
+                    "PN may$ have SN deal 1 damage to target creature or player$"
+                ) :
                 MagicEvent.NONE;
         }
         

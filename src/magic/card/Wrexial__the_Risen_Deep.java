@@ -22,19 +22,19 @@ public class Wrexial__the_Risen_Deep {
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            final MagicPlayer player=permanent.getController();
-            return (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
+            return (damage.getSource()==permanent && 
+                    damage.getTarget().isPlayer() && 
+                    damage.isCombat()) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new MagicMayChoice(
-                        "You may cast target instant or sorcery card from your opponent's graveyard.",
-                        MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD),
+                        MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD
+                    ),
                     new MagicGraveyardTargetPicker(true),
                     this,
-                    "You may$ cast target instant or sorcery card$ from your opponent's graveyard " + 
-                    "without paying its mana cost. "+
-                    "If that card would be put into a graveyard this turn, exile it instead."):
+                    "PN may$ cast target instant or sorcery card$ from your opponent's graveyard without paying its mana cost. "+
+                    "If that card would be put into a graveyard this turn, exile it instead."
+                ):
                 MagicEvent.NONE;
         }
         @Override

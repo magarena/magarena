@@ -20,12 +20,12 @@ public class Archon_of_Justice {
                 final MagicGraveyardTriggerData triggerData) {
             return (MagicLocationType.Play==triggerData.fromLocation) ?
                 new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        MagicTargetChoice.TARGET_PERMANENT,
-                        MagicExileTargetPicker.create(),
-                        this,
-                        "Exile target permanent$."):
+                    permanent,
+                    MagicTargetChoice.TARGET_PERMANENT,
+                    MagicExileTargetPicker.create(),
+                    this,
+                    "Exile target permanent$."
+                ):
                 MagicEvent.NONE;
         }
 

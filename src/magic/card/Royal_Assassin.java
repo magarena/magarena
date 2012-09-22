@@ -29,14 +29,13 @@ public class Royal_Assassin {
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicPlayer player = source.getController();
             return new MagicEvent(
-                    source,
-                    player,
-                    MagicTargetChoice.NEG_TARGET_TAPPED_CREATURE,
-                    new MagicDestroyTargetPicker(false),
-                    this,
-                    "Destroy target tapped creature$.");
+                source,
+                MagicTargetChoice.NEG_TARGET_TAPPED_CREATURE,
+                new MagicDestroyTargetPicker(false),
+                this,
+                "Destroy target tapped creature$."
+            );
         }
 
         @Override

@@ -20,11 +20,13 @@ import magic.model.target.MagicWeakenTargetPicker;
 
 public class Esper_Battlemage {
     public static final MagicPermanentActivation A =new MagicPermanentActivation(
-            new MagicCondition[]{
-                MagicCondition.CAN_TAP_CONDITION,
-                MagicManaCost.WHITE.getCondition()},
-            new MagicActivationHints(MagicTiming.Pump),
-            "Prevent") {
+        new MagicCondition[]{
+            MagicCondition.CAN_TAP_CONDITION,
+            MagicManaCost.WHITE.getCondition()
+        },
+        new MagicActivationHints(MagicTiming.Pump),
+        "Prevent"
+    ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -33,12 +35,11 @@ public class Esper_Battlemage {
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicPlayer player=source.getController();
             return new MagicEvent(
-                    source,
-                    player,
-                    this,
-                    "Prevent the next 2 damage that would be dealt to you this turn.");
+                source,
+                this,
+                "Prevent the next 2 damage that would be dealt to PN this turn."
+            );
         }
 
         @Override
@@ -64,12 +65,12 @@ public class Esper_Battlemage {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.NEG_TARGET_CREATURE,
-                    new MagicWeakenTargetPicker(1,1),
-                    this,
-                    "Target creature$ gets -1/-1 until end of turn.");
+                source,
+                MagicTargetChoice.NEG_TARGET_CREATURE,
+                new MagicWeakenTargetPicker(1,1),
+                this,
+                "Target creature$ gets -1/-1 until end of turn."
+            );
         }
 
         @Override

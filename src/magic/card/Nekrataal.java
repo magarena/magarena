@@ -17,13 +17,13 @@ public class Nekrataal {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.TARGET_NONARTIFACT_NONBLACK_CREATURE,
-                    new MagicDestroyTargetPicker(true),
-                    this,
-                    "Destroy target nonartifact, nonblack creature$. " +
-                    "That creature can't be regenerated.");
+                permanent,
+                MagicTargetChoice.TARGET_NONARTIFACT_NONBLACK_CREATURE,
+                new MagicDestroyTargetPicker(true),
+                this,
+                "Destroy target nonartifact, nonblack creature$. " +
+                "That creature can't be regenerated."
+            );
         }
 
         @Override

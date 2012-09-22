@@ -66,12 +66,12 @@ public class Umezawa_s_Jitte {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.NEG_TARGET_CREATURE,
-                    new MagicWeakenTargetPicker(1,1),
-                    this,
-                    "Target creature$ gets -1/-1 until end of turn.");
+                source,
+                MagicTargetChoice.NEG_TARGET_CREATURE,
+                new MagicWeakenTargetPicker(1,1),
+                this,
+                "Target creature$ gets -1/-1 until end of turn."
+            );
         }
 
         @Override

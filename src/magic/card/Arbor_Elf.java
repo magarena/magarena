@@ -18,11 +18,12 @@ import magic.model.target.MagicTapTargetPicker;
 
 public class Arbor_Elf {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{
-                MagicCondition.CAN_TAP_CONDITION
-            },
-            new MagicActivationHints(MagicTiming.Tapping),
-            "Untap") {
+        new MagicCondition[]{
+            MagicCondition.CAN_TAP_CONDITION
+        },
+        new MagicActivationHints(MagicTiming.Tapping),
+        "Untap"
+    ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -32,12 +33,12 @@ public class Arbor_Elf {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.POS_TARGET_FOREST,
-                    new MagicTapTargetPicker(false,true),
-                    this,
-                    "Untap target Forest$.");
+                source,
+                MagicTargetChoice.POS_TARGET_FOREST,
+                new MagicTapTargetPicker(false,true),
+                this,
+                "Untap target Forest$."
+            );
         }
 
         @Override

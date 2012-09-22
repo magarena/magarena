@@ -32,12 +32,12 @@ public class Onyx_Mage {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
-                    MagicDeathtouchTargetPicker.getInstance(),
-                    this,
-                    "Target creature$ you control gains deathtouch until end of turn.");
+                source,
+                MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
+                MagicDeathtouchTargetPicker.getInstance(),
+                this,
+                "Target creature$ you control gains deathtouch until end of turn."
+            );
         }
 
         @Override

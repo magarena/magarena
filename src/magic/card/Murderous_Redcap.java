@@ -20,7 +20,6 @@ public class Murderous_Redcap {
             final int power=permanent.getPower();
             return new MagicEvent(
                 permanent,
-                player,
                 MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                 new MagicDamageTargetPicker(power),
                 this,

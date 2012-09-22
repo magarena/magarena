@@ -28,12 +28,12 @@ public class Vampire_Hexmage {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.TARGET_PERMANENT,
-                    MagicCountersTargetPicker.getInstance(),
-                    this,
-                    "Remove all counters from target permanent$.");
+                source,
+                MagicTargetChoice.TARGET_PERMANENT,
+                MagicCountersTargetPicker.getInstance(),
+                this,
+                "Remove all counters from target permanent$."
+            );
         }
         @Override
         public void executeEvent(

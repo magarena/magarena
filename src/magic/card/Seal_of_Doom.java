@@ -31,12 +31,12 @@ public class Seal_of_Doom {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.NEG_TARGET_NONBLACK_CREATURE,
-                    new MagicDestroyTargetPicker(true),
-                    this,
-                    "Destroy target nonblack creature$. It can't be regenerated.");
+                source,
+                MagicTargetChoice.NEG_TARGET_NONBLACK_CREATURE,
+                new MagicDestroyTargetPicker(true),
+                this,
+                "Destroy target nonblack creature$. It can't be regenerated."
+            );
         }
 
         @Override

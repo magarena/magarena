@@ -18,9 +18,10 @@ import magic.model.target.MagicDestroyTargetPicker;
 
 public class Dauthi_Cutthroat {
     public static final MagicPermanentActivation A = new MagicPermanentActivation( 
-            new MagicCondition[]{MagicManaCost.ONE_BLACK.getCondition()},
-            new MagicActivationHints(MagicTiming.Removal),
-            "destroy") {
+        new MagicCondition[]{MagicManaCost.ONE_BLACK.getCondition()},
+        new MagicActivationHints(MagicTiming.Removal),
+        "Destroy"
+    ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
             return new MagicEvent[]{
@@ -29,12 +30,12 @@ public class Dauthi_Cutthroat {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.NEG_TARGET_CREATURE_WITH_SHADOW,
-                    new MagicDestroyTargetPicker(false),
-                    this,
-                    "Destroy target creature with shadow$.");
+                source,
+                MagicTargetChoice.NEG_TARGET_CREATURE_WITH_SHADOW,
+                new MagicDestroyTargetPicker(false),
+                this,
+                "Destroy target creature with shadow$."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {

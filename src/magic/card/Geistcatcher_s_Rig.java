@@ -17,13 +17,13 @@ public class Geistcatcher_s_Rig {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    new MagicMayChoice(MagicTargetChoice.NEG_TARGET_CREATURE_WITH_FLYING),
-                    new MagicDamageTargetPicker(4),
-                    this,
-                    "PN may$ have SN deal 4 damage " +
-                    "to target creature with flying$.");
+                permanent,
+                new MagicMayChoice(MagicTargetChoice.NEG_TARGET_CREATURE_WITH_FLYING),
+                new MagicDamageTargetPicker(4),
+                this,
+                "PN may$ have SN deal 4 damage " +
+                "to target creature with flying$."
+            );
         }
         @Override
         public void executeEvent(

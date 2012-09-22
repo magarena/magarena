@@ -19,15 +19,14 @@ public class Sheoldred__Whispering_One {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            final MagicPlayer player=permanent.getController();
-            return (player == upkeepPlayer) ?
+            return permanent.isController(upkeepPlayer) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
                     new MagicGraveyardTargetPicker(true),
                     this,
-                    "Return target creature card$ from your graveyard to the battlefield."):
+                    "Return target creature card$ from your graveyard to the battlefield."
+                ):
                 MagicEvent.NONE;
         }
         @Override

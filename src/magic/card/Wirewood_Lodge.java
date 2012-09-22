@@ -28,18 +28,19 @@ public class Wirewood_Lodge {
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
             return new MagicEvent[]{
-                    new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.GREEN)};
+                new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.GREEN)
+            };
         }
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.POS_TARGET_ELF,
-                    new MagicTapTargetPicker(false,true),
-                    this,
-                    "Untap target Elf$.");
+                source,
+                MagicTargetChoice.POS_TARGET_ELF,
+                new MagicTapTargetPicker(false,true),
+                this,
+                "Untap target Elf$."
+            );
         }
 
         @Override

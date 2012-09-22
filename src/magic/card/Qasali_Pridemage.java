@@ -30,12 +30,12 @@ public class Qasali_Pridemage {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_ENCHANTMENT,
-                    new MagicDestroyTargetPicker(false),
-                    this,
-                    "Destroy target artifact or enchantment$.");
+                source,
+                MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_ENCHANTMENT,
+                new MagicDestroyTargetPicker(false),
+                this,
+                "Destroy target artifact or enchantment$."
+            );
         }
 
         @Override

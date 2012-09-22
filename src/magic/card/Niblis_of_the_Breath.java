@@ -58,12 +58,12 @@ public class Niblis_of_the_Breath {
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.POS_TARGET_CREATURE,
-                    new MagicTapTargetPicker(false,true),
-                    this,
-                    "Untap target creature$.");
+                source,
+                MagicTargetChoice.POS_TARGET_CREATURE,
+                new MagicTapTargetPicker(false,true),
+                this,
+                "Untap target creature$."
+            );
         }
 
         @Override

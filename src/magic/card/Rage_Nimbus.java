@@ -31,12 +31,12 @@ public class Rage_Nimbus {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.NEG_TARGET_CREATURE,
-                    MagicMustAttackTargetPicker.create(),
-                    this,
-                    "Target creature$ attacks this turn if able.");
+                source,
+                MagicTargetChoice.NEG_TARGET_CREATURE,
+                MagicMustAttackTargetPicker.create(),
+                this,
+                "Target creature$ attacks this turn if able."
+            );
         }
 
         @Override

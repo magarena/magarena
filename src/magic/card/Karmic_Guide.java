@@ -20,13 +20,13 @@ public class Karmic_Guide {
                 final MagicPermanent permanent,
                 final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
-                    new MagicGraveyardTargetPicker(true),
-                    this,
-                    "Return target creature card$ from " +
-                    "your graveyard to the battlefield.");
+                permanent,
+                MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
+                new MagicGraveyardTargetPicker(true),
+                this,
+                "Return target creature card$ from " +
+                "your graveyard to the battlefield."
+            );
         }
         
         @Override

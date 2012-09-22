@@ -18,19 +18,18 @@ public class Surgespanner {
     public static final MagicWhenBecomesTappedTrigger T = new MagicWhenBecomesTappedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            final MagicPlayer player = permanent.getController();
             return (permanent == data) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicMayChoice(
-                            "Pay {1}{U}?",
-                            new MagicPayManaCostChoice(MagicManaCost.ONE_BLUE),
-                            MagicTargetChoice.TARGET_PERMANENT),
-                        MagicBounceTargetPicker.getInstance(),
-                        this,
-                        "You may$ pay {1}{U}$. If you do, " +
-                        "return target permanent$ to its owner's hand.") :
+                    permanent,
+                    new MagicMayChoice(
+                        new MagicPayManaCostChoice(MagicManaCost.ONE_BLUE),
+                        MagicTargetChoice.TARGET_PERMANENT
+                    ),
+                    MagicBounceTargetPicker.getInstance(),
+                    this,
+                    "PN may$ pay {1}{U}$. If you do, " +
+                    "return target permanent$ to its owner's hand."
+                ) :
                 MagicEvent.NONE;
         }
         @Override

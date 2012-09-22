@@ -19,12 +19,12 @@ public class Deadwood_Treefolk {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
-                    new MagicGraveyardTargetPicker(false),
-                    this,
-                    "Return another target creature card$ from your graveyard to your hand.");
+                permanent,
+                MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
+                new MagicGraveyardTargetPicker(false),
+                this,
+                "Return another target creature card$ from your graveyard to your hand."
+            );
         }
         @Override
         public void executeEvent(
@@ -45,14 +45,14 @@ public class Deadwood_Treefolk {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent left) {
             return (permanent == left) ? 
-                    new MagicEvent(
+                new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
                     new MagicGraveyardTargetPicker(false),
                     this,
-                    "Return another target creature card$ from your graveyard to your hand.") :
-            MagicEvent.NONE;
+                    "Return another target creature card$ from your graveyard to your hand."
+                ) :
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(

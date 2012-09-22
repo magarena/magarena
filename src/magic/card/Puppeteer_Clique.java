@@ -17,15 +17,14 @@ public class Puppeteer_Clique {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-            
             return new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.TARGET_CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD,
-                    new MagicGraveyardTargetPicker(true),
-                    this,
-                    "Put target creature card$ in an opponent's graveyard onto the battlefield under your control. "+
-                    "It has haste. At the end of your turn, exile it.");
+                permanent,
+                MagicTargetChoice.TARGET_CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD,
+                new MagicGraveyardTargetPicker(true),
+                this,
+                "Put target creature card$ in an opponent's graveyard onto the battlefield under your control. "+
+                "It has haste. At the end of your turn, exile it."
+            );
         }
         
         @Override

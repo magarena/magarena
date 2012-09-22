@@ -21,19 +21,20 @@ public class Flameblast_Dragon {
     public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            final MagicPlayer player=permanent.getController();
             return (permanent==creature) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicMayChoice(
-                            "You may pay {X}{R}.",
-                            new MagicPayManaCostChoice(MagicManaCost.X_RED),
-                            MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER), 
-                        new MagicDamageTargetPicker(player.getMaximumX(game,MagicManaCost.X_RED)),
-                        this,
-                        "You may pay$ {X}{R}$. If you do, SN " + 
-                        "deals X damage to target creature or player$."):
+                    permanent,
+                    new MagicMayChoice(
+                        new MagicPayManaCostChoice(MagicManaCost.X_RED),
+                        MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER
+                    ), 
+                    new MagicDamageTargetPicker(
+                        permanent.getController().getMaximumX(game,MagicManaCost.X_RED)
+                    ),
+                    this,
+                    "You may pay$ {X}{R}$. If you do, SN " + 
+                    "deals X damage to target creature or player$."
+                ):
                 MagicEvent.NONE;
         }
         

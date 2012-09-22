@@ -20,12 +20,12 @@ public class Forge_Devil {
                 final MagicPermanent permanent,
                 final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.TARGET_CREATURE,
-                    new MagicDamageTargetPicker(1),
-                    this,
-                    "SN deals 1 damage to target creature$ and 1 damage to PN.");
+                permanent,
+                MagicTargetChoice.TARGET_CREATURE,
+                new MagicDamageTargetPicker(1),
+                this,
+                "SN deals 1 damage to target creature$ and 1 damage to PN."
+            );
         }
         @Override
         public void executeEvent(

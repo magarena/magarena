@@ -30,12 +30,12 @@ public class Pus_Kami {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.NEG_TARGET_NONBLACK_CREATURE,
-                    new MagicDestroyTargetPicker(false),
-                    this,
-                    "Destroy target nonblack creature$.");
+                source,
+                MagicTargetChoice.NEG_TARGET_NONBLACK_CREATURE,
+                new MagicDestroyTargetPicker(false),
+                this,
+                "Destroy target nonblack creature$."
+            );
         }
 
         @Override

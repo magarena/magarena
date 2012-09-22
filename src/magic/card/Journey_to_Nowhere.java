@@ -15,12 +15,12 @@ public class Journey_to_Nowhere {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.TARGET_CREATURE,
-                    MagicExileTargetPicker.create(),
-                    this,
-                    "Exile target creature$.");
+                permanent,
+                MagicTargetChoice.TARGET_CREATURE,
+                MagicExileTargetPicker.create(),
+                this,
+                "Exile target creature$."
+            );
         }
         @Override
         public void executeEvent(

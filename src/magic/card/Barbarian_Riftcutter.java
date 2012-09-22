@@ -18,16 +18,20 @@ import magic.model.target.MagicDestroyTargetPicker;
 
 public class Barbarian_Riftcutter {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.RED.getCondition()},
-            new MagicActivationHints(MagicTiming.Removal),
-            "Destroy") {
+        new MagicCondition[]{MagicManaCost.RED.getCondition()},
+        new MagicActivationHints(MagicTiming.Removal),
+        "Destroy"
+) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
-            return new MagicEvent[] {new MagicPayManaCostSacrificeEvent(
+            return new MagicEvent[] {
+                new MagicPayManaCostSacrificeEvent(
                     source,
                     source.getController(),
-                    MagicManaCost.RED)};
+                    MagicManaCost.RED
+                )
+            };
         }
 
         @Override
@@ -35,12 +39,12 @@ public class Barbarian_Riftcutter {
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.NEG_TARGET_LAND,
-                    new MagicDestroyTargetPicker(false),
-                    this,
-                    "Destroy target land$.");
+                source,
+                MagicTargetChoice.NEG_TARGET_LAND,
+                new MagicDestroyTargetPicker(false),
+                this,
+                "Destroy target land$."
+            );
         }
 
         @Override

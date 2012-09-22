@@ -19,9 +19,10 @@ import magic.model.target.MagicShadowTargetPicker;
 
 public class Dauthi_Embrace {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.BLACK_BLACK.getCondition()},
-            new MagicActivationHints(MagicTiming.Animate,true),
-            "Shadow") {
+        new MagicCondition[]{MagicManaCost.BLACK_BLACK.getCondition()},
+        new MagicActivationHints(MagicTiming.Animate,true),
+        "Shadow"
+    ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -31,12 +32,12 @@ public class Dauthi_Embrace {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.TARGET_CREATURE,
-                    MagicShadowTargetPicker.getInstance(),
-                    this,
-                    "Target creature$ gains shadow until end of turn.");
+                source,
+                MagicTargetChoice.TARGET_CREATURE,
+                MagicShadowTargetPicker.getInstance(),
+                this,
+                "Target creature$ gains shadow until end of turn."
+            );
         }
 
         @Override

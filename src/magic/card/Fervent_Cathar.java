@@ -20,12 +20,12 @@ public class Fervent_Cathar {
                 final MagicPermanent permanent,
                 final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.TARGET_CREATURE,
-                    new MagicNoCombatTargetPicker(false,true,false),
-                    this,
-                    "Target creature$ can't block this turn.");
+                permanent,
+                MagicTargetChoice.TARGET_CREATURE,
+                new MagicNoCombatTargetPicker(false,true,false),
+                this,
+                "Target creature$ can't block this turn."
+            );
         }
 
         @Override

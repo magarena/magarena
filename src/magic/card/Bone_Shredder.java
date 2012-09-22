@@ -15,12 +15,12 @@ public class Bone_Shredder {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.TARGET_NONARTIFACT_NONBLACK_CREATURE,
-                    new MagicDestroyTargetPicker(false),
-                    this,
-                    "Destroy target nonartifact, nonblack creature$.");
+                permanent,
+                MagicTargetChoice.TARGET_NONARTIFACT_NONBLACK_CREATURE,
+                new MagicDestroyTargetPicker(false),
+                this,
+                "Destroy target nonartifact, nonblack creature$."
+            );
         }
 
         @Override

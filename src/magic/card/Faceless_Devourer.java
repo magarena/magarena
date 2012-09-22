@@ -21,12 +21,12 @@ public class Faceless_Devourer {
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
                     targetFilter,true,MagicTargetHint.None,"another creature with shadow to exile");
             return new MagicEvent(
-                    permanent,
-                    player,
-                    targetChoice,
-                    MagicExileTargetPicker.create(),
-                    this,
-                    "Exile another creature with shadow$.");
+                permanent,
+                targetChoice,
+                MagicExileTargetPicker.create(),
+                this,
+                "Exile another creature with shadow$."
+            );
         }
         @Override
         public void executeEvent(

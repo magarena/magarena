@@ -19,10 +19,10 @@ import magic.model.target.MagicHasteTargetPicker;
 
 public class Crimson_Mage {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.RED.getCondition()},
-            new MagicActivationHints(MagicTiming.Pump,true),
-            "Haste"
-            ) {
+        new MagicCondition[]{MagicManaCost.RED.getCondition()},
+        new MagicActivationHints(MagicTiming.Pump,true),
+        "Haste"
+    ) {
         
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -32,12 +32,12 @@ public class Crimson_Mage {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
-                    MagicHasteTargetPicker.create(),
-                    this,
-                    "Target creature$ you control gains haste until end of turn.");
+                source,
+                MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
+                MagicHasteTargetPicker.create(),
+                this,
+                "Target creature$ you control gains haste until end of turn."
+            );
         }
 
         @Override

@@ -17,13 +17,13 @@ public class Phyrexian_Bloodstock {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
             return (permanent == data) ?
                 new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        MagicTargetChoice.TARGET_WHITE_CREATURE,
-                        new MagicDestroyTargetPicker(true),
-                        this,
-                        "Destroy target white creature$. It can't be regenerated.") :
-            MagicEvent.NONE;
+                    permanent,
+                    MagicTargetChoice.TARGET_WHITE_CREATURE,
+                    new MagicDestroyTargetPicker(true),
+                    this,
+                    "Destroy target white creature$. It can't be regenerated."
+                ) :
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(

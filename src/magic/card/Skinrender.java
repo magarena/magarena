@@ -17,12 +17,12 @@ public class Skinrender {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.TARGET_CREATURE,
-                    new MagicWeakenTargetPicker(3,3),
-                    this,
-                    "Put three -1/-1 counters on target creature$.");
+                permanent,
+                MagicTargetChoice.TARGET_CREATURE,
+                new MagicWeakenTargetPicker(3,3),
+                this,
+                "Put three -1/-1 counters on target creature$."
+            );
         }
         @Override
         public void executeEvent(

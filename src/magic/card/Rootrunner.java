@@ -31,12 +31,12 @@ public class Rootrunner {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.NEG_TARGET_LAND,
-                    MagicBounceTargetPicker.getInstance(),
-                    this,
-                    "Put target land$ on top of its owner's library.");
+                source,
+                MagicTargetChoice.NEG_TARGET_LAND,
+                MagicBounceTargetPicker.getInstance(),
+                this,
+                "Put target land$ on top of its owner's library."
+            );
         }
 
         @Override

@@ -20,19 +20,18 @@ public class Conjurer_s_Closet {
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicPlayer data) {
-            final MagicPlayer player = permanent.getController();
-            return (player == data) ?
+                final MagicPlayer eotPlayer) {
+            return permanent.isController(eotPlayer) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new MagicMayChoice(
-                            "You may exile target creature you control.",
-                            MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL),
+                        MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL
+                    ),
                     MagicBounceTargetPicker.getInstance(),
                     this,
                     "You may$ exile target creature$ you control, then return " +
-                    "that card to the battlefield under your control."):
+                    "that card to the battlefield under your control."
+                ):
                 MagicEvent.NONE;
         }
         @Override
@@ -45,15 +44,18 @@ public class Conjurer_s_Closet {
                 event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
                         game.doAction(new MagicRemoveFromPlayAction(
-                                creature,
-                                MagicLocationType.Exile));
+                            creature,
+                            MagicLocationType.Exile
+                        ));
                         game.doAction(new MagicRemoveCardAction(
-                                creature.getCard(),
-                                MagicLocationType.Exile));
+                            creature.getCard(),
+                            MagicLocationType.Exile
+                        ));
                         game.doAction(new MagicPlayCardAction(
-                                creature.getCard(),
-                                event.getPlayer(),
-                                MagicPlayCardAction.NONE));
+                            creature.getCard(),
+                            event.getPlayer(),
+                            MagicPlayCardAction.NONE
+                        ));
                     }
                 });
             }

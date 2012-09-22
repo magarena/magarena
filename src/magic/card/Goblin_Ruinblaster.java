@@ -24,7 +24,6 @@ public class Goblin_Ruinblaster {
             return permanent.isKicked() ?
                 new MagicEvent(
                     permanent,
-                    player,
                     MagicTargetChoice.NEG_TARGET_NONBASIC_LAND,
                     new MagicDestroyTargetPicker(false),
                     this,

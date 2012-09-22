@@ -27,17 +27,18 @@ public class Tumble_Magnet {
             final MagicPermanent permanent=(MagicPermanent)source;
             return new MagicEvent[]{
                 new MagicTapEvent(permanent),
-                new MagicRemoveCounterEvent(permanent,MagicCounterType.Charge,1)};
+                new MagicRemoveCounterEvent(permanent,MagicCounterType.Charge,1)
+            };
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_CREATURE,
-                    new MagicTapTargetPicker(true,false),
-                    this,
-                    "Tap target artifact or creature$.");
+                source,
+                MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_CREATURE,
+                new MagicTapTargetPicker(true,false),
+                this,
+                "Tap target artifact or creature$."
+            );
         }
         @Override
         public void executeEvent(

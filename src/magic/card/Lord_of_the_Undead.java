@@ -38,11 +38,13 @@ public class Lord_of_the_Undead {
     };
         
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{
-                    MagicCondition.CAN_TAP_CONDITION,
-                    MagicManaCost.ONE_BLACK.getCondition()},
-            new MagicActivationHints(MagicTiming.FirstMain),
-            "Return") {
+        new MagicCondition[]{
+            MagicCondition.CAN_TAP_CONDITION,
+            MagicManaCost.ONE_BLACK.getCondition()
+        },
+        new MagicActivationHints(MagicTiming.FirstMain),
+        "Return"
+    ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
             return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.ONE_BLACK)};
@@ -50,12 +52,12 @@ public class Lord_of_the_Undead {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.TARGET_ZOMBIE_CARD_FROM_GRAVEYARD,
-                    new MagicGraveyardTargetPicker(false),
-                    this,
-                    "Return target Zombie card$ from your graveyard to your hand.");
+                source,
+                MagicTargetChoice.TARGET_ZOMBIE_CARD_FROM_GRAVEYARD,
+                new MagicGraveyardTargetPicker(false),
+                this,
+                "Return target Zombie card$ from your graveyard to your hand."
+            );
         }
         @Override
         public void executeEvent(

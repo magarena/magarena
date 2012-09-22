@@ -20,33 +20,36 @@ import magic.model.target.MagicDestroyTargetPicker;
 public class Skirsdag_Flayer {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
-                    MagicManaCost.THREE_BLACK.getCondition(),
-                    MagicCondition.ONE_CREATURE_CONDITION,
-                    MagicCondition.CAN_TAP_CONDITION,
-                },
+                MagicManaCost.THREE_BLACK.getCondition(),
+                MagicCondition.ONE_CREATURE_CONDITION,
+                MagicCondition.CAN_TAP_CONDITION,
+            },
             new MagicActivationHints(MagicTiming.Removal),
             "Destroy") {
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
             return new MagicEvent[]{
-                    new MagicPayManaCostTapEvent(
-                            source,
-                            source.getController(),
-                            MagicManaCost.THREE_BLACK),
-                    new MagicSacrificePermanentEvent(
-                            source,
-                            source.getController(),
-                            MagicTargetChoice.SACRIFICE_HUMAN)};
+                new MagicPayManaCostTapEvent(
+                    source,
+                    source.getController(),
+                    MagicManaCost.THREE_BLACK
+                ),
+                new MagicSacrificePermanentEvent(
+                    source,
+                    source.getController(),
+                    MagicTargetChoice.SACRIFICE_HUMAN
+                )
+            };
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.NEG_TARGET_CREATURE,
-                    new MagicDestroyTargetPicker(false),
-                    this,
-                    "Destroy target creature$.");
+                source,
+                MagicTargetChoice.NEG_TARGET_CREATURE,
+                new MagicDestroyTargetPicker(false),
+                this,
+                "Destroy target creature$."
+            );
         }
         @Override
         public void executeEvent(

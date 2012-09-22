@@ -21,12 +21,12 @@ public class Venser__Shaper_Savant {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.NEG_TARGET_SPELL_OR_PERMANENT,
-                    MagicBounceTargetPicker.getInstance(),
-                    this,
-                    "Return target spell or permanent$ to its owner's hand.");
+                permanent,
+                MagicTargetChoice.NEG_TARGET_SPELL_OR_PERMANENT,
+                MagicBounceTargetPicker.getInstance(),
+                this,
+                "Return target spell or permanent$ to its owner's hand."
+            );
         }
         @Override
         public void executeEvent(

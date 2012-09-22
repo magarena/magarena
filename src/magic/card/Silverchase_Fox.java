@@ -25,18 +25,24 @@ public class Silverchase_Fox {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
-            return new MagicEvent[]{new MagicPayManaCostSacrificeEvent(source,source.getController(),MagicManaCost.ONE_WHITE)};
+            return new MagicEvent[]{
+                new MagicPayManaCostSacrificeEvent(
+                    source,
+                    source.getController(),
+                    MagicManaCost.ONE_WHITE
+                )
+            };
         }
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.NEG_TARGET_ENCHANTMENT,
-                    new MagicDestroyTargetPicker(false),
-                    this,
-                    "Exile target enchantment$.");
+                source,
+                MagicTargetChoice.NEG_TARGET_ENCHANTMENT,
+                new MagicDestroyTargetPicker(false),
+                this,
+                "Exile target enchantment$."
+            );
         }
 
         @Override

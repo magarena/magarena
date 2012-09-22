@@ -32,9 +32,10 @@ public class Asceticism {
     };
 
     public static final MagicPermanentActivation A1 = new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.ONE_GREEN.getCondition()},
-            new MagicActivationHints(MagicTiming.Pump,true),
-            "Regen") {
+        new MagicCondition[]{MagicManaCost.ONE_GREEN.getCondition()},
+        new MagicActivationHints(MagicTiming.Pump,true),
+        "Regen"
+    ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -44,12 +45,12 @@ public class Asceticism {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicRegenerateTargetPicker.getInstance(),
-                    this,
-                    "Regenerate target creature$.");
+                source,
+                MagicTargetChoice.POS_TARGET_CREATURE,
+                MagicRegenerateTargetPicker.getInstance(),
+                this,
+                "Regenerate target creature$."
+            );
         }
 
         @Override

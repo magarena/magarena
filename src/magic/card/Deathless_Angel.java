@@ -19,9 +19,10 @@ import magic.model.target.MagicIndestructibleTargetPicker;
 
 public class Deathless_Angel {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.WHITE_WHITE.getCondition()},
-            new MagicActivationHints(MagicTiming.Pump,true),
-            "Indestr") {
+        new MagicCondition[]{MagicManaCost.WHITE_WHITE.getCondition()},
+        new MagicActivationHints(MagicTiming.Pump,true),
+        "Indestr"
+    ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -31,12 +32,12 @@ public class Deathless_Angel {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicIndestructibleTargetPicker.create(),
-                    this,
-                    "Target creature$ is indestructible this turn.");
+                source,
+                MagicTargetChoice.POS_TARGET_CREATURE,
+                MagicIndestructibleTargetPicker.create(),
+                this,
+                "Target creature$ is indestructible this turn."
+            );
         }
 
         @Override

@@ -17,12 +17,12 @@ public class Nulltread_Gargantuan {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.CREATURE_YOU_CONTROL,
-                    MagicBounceTargetPicker.getInstance(),
-                    this,
-                    "Put a creature you control$ on top of its owner's library.");
+                permanent,
+                MagicTargetChoice.CREATURE_YOU_CONTROL,
+                MagicBounceTargetPicker.getInstance(),
+                this,
+                "Put a creature you control$ on top of its owner's library."
+            );
         }
 
         @Override

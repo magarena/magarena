@@ -28,12 +28,12 @@ public class Pendelhaven {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.POS_TARGET_1_1_CREATURE,
-                    MagicPumpTargetPicker.create(),
-                    this,
-                    "Target 1/1 creature$ gets +1/+2 until end of turn.");
+                source,
+                MagicTargetChoice.POS_TARGET_1_1_CREATURE,
+                MagicPumpTargetPicker.create(),
+                this,
+                "Target 1/1 creature$ gets +1/+2 until end of turn."
+            );
         }
         @Override
         public void executeEvent(

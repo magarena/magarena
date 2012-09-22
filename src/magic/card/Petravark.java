@@ -15,12 +15,12 @@ public class Petravark {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.TARGET_LAND,
-                    MagicExileTargetPicker.create(),
-                    this,
-                    "Exile target land$.");
+                permanent,
+                MagicTargetChoice.TARGET_LAND,
+                MagicExileTargetPicker.create(),
+                this,
+                "Exile target land$."
+            );
         }
         @Override
         public void executeEvent(

@@ -15,12 +15,12 @@ public class Indrik_Stomphowler {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.TARGET_ARTIFACT_OR_ENCHANTMENT,
-                    new MagicDestroyTargetPicker(false),
-                    this,
-                    "Destroy target artifact or enchantment$.");
+                permanent,
+                MagicTargetChoice.TARGET_ARTIFACT_OR_ENCHANTMENT,
+                new MagicDestroyTargetPicker(false),
+                this,
+                "Destroy target artifact or enchantment$."
+            );
         }
 
         @Override

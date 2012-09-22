@@ -18,9 +18,10 @@ import magic.model.target.MagicUnblockableTargetPicker;
 
 public class Crafty_Pathmage {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
-            new MagicActivationHints(MagicTiming.Attack),
-            "Unblockable") {
+        new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
+        new MagicActivationHints(MagicTiming.Attack),
+        "Unblockable"
+    ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -30,12 +31,12 @@ public class Crafty_Pathmage {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.TARGET_CREATURE_POWER_2_OR_LESS,
-                    MagicUnblockableTargetPicker.create(),
-                    this,
-                    "Target creature$ with power 2 or less is unblockable this turn.");
+                source,
+                MagicTargetChoice.TARGET_CREATURE_POWER_2_OR_LESS,
+                MagicUnblockableTargetPicker.create(),
+                this,
+                "Target creature$ with power 2 or less is unblockable this turn."
+            );
         }
 
         @Override

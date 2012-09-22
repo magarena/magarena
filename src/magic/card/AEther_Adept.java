@@ -16,12 +16,12 @@ public class AEther_Adept {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.TARGET_CREATURE,
-                    MagicBounceTargetPicker.getInstance(),
-                    this,
-                    "Return target creature$ to its owner's hand.");
+                permanent,
+                MagicTargetChoice.TARGET_CREATURE,
+                MagicBounceTargetPicker.getInstance(),
+                this,
+                "Return target creature$ to its owner's hand."
+            );
         }
         @Override
         public void executeEvent(

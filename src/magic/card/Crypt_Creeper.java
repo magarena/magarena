@@ -20,9 +20,10 @@ import magic.model.target.MagicGraveyardTargetPicker;
 
 public class Crypt_Creeper {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            MagicActivation.NO_COND,
-            new MagicActivationHints(MagicTiming.Removal),
-            "Exile") {
+        MagicActivation.NO_COND,
+        new MagicActivationHints(MagicTiming.Removal),
+        "Exile"
+    ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
             return new MagicEvent[]{
@@ -34,13 +35,13 @@ public class Crypt_Creeper {
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.NEG_TARGET_CARD_FROM_ALL_GRAVEYARDS,
-                    // exiling a high cost card is good here
-                    new MagicGraveyardTargetPicker(true),
-                    this,
-                    "Exile target card$ from a graveyard.");
+                source,
+                MagicTargetChoice.NEG_TARGET_CARD_FROM_ALL_GRAVEYARDS,
+                // exiling a high cost card is good here
+                new MagicGraveyardTargetPicker(true),
+                this,
+                "Exile target card$ from a graveyard."
+            );
         }
         @Override
         public void executeEvent(
@@ -51,12 +52,14 @@ public class Crypt_Creeper {
             event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard card) {
                     game.doAction(new MagicRemoveCardAction(
-                            card,
-                            MagicLocationType.Graveyard));
+                        card,
+                        MagicLocationType.Graveyard
+                    ));
                     game.doAction(new MagicMoveCardAction(
-                            card,
-                            MagicLocationType.Graveyard,
-                            MagicLocationType.Exile));
+                        card,
+                        MagicLocationType.Graveyard,
+                        MagicLocationType.Exile
+                    ));
                 }
             });
         }

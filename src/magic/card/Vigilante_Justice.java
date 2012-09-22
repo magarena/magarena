@@ -20,17 +20,16 @@ public class Vigilante_Justice {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
             return (otherPermanent.isCreature() && 
-                    otherPermanent.getController() == player &&
+                    otherPermanent.isFriend(permanent) &&
                     otherPermanent.hasSubType(MagicSubType.Human)) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
-                        new MagicDamageTargetPicker(1),
-                        this,
-                        "SN deals 1 damage to target creature or player$.") :
+                    permanent,
+                    MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                    new MagicDamageTargetPicker(1),
+                    this,
+                    "SN deals 1 damage to target creature or player$."
+                ) :
                 MagicEvent.NONE;
         }
         

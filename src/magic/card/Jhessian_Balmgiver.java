@@ -20,9 +20,10 @@ public class Jhessian_Balmgiver {
     public static final MagicPermanentActivation A1 = Abuna_Acolyte.A1;
 
     public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
-            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
-            new MagicActivationHints(MagicTiming.Attack),
-            "Unblockable") {
+        new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
+        new MagicActivationHints(MagicTiming.Attack),
+        "Unblockable"
+    ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -32,12 +33,12 @@ public class Jhessian_Balmgiver {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicUnblockableTargetPicker.create(),
-                    this,
-                    "Target creature$ is unblockable this turn.");
+                source,
+                MagicTargetChoice.POS_TARGET_CREATURE,
+                MagicUnblockableTargetPicker.create(),
+                this,
+                "Target creature$ is unblockable this turn."
+            );
         }
 
         @Override

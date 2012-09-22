@@ -19,13 +19,13 @@ public class Stingscourger {
                 final MagicPermanent permanent,
                 final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
-                    MagicBounceTargetPicker.getInstance(),
-                    this,
-                    "Return target creature$ your opponent " +
-                    "controls to its owner's hand.");
+                permanent,
+                MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
+                MagicBounceTargetPicker.getInstance(),
+                this,
+                "Return target creature$ your opponent " +
+                "controls to its owner's hand."
+            );
         }
         @Override
         public void executeEvent(

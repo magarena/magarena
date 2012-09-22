@@ -29,9 +29,10 @@ public class Fires_of_Yavimaya {
         }
     };
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            MagicActivation.NO_COND,
-            new MagicActivationHints(MagicTiming.Pump),
-            "Pump") {
+        MagicActivation.NO_COND,
+        new MagicActivationHints(MagicTiming.Pump),
+        "Pump"
+    ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -41,12 +42,12 @@ public class Fires_of_Yavimaya {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicPumpTargetPicker.create(),
-                    this,
-                    "Target creature$ gets +2/+2 until end of turn.");
+                source,
+                MagicTargetChoice.POS_TARGET_CREATURE,
+                MagicPumpTargetPicker.create(),
+                this,
+                "Target creature$ gets +2/+2 until end of turn."
+            );
         }
 
         @Override

@@ -22,11 +22,13 @@ import magic.model.target.MagicSacrificeTargetPicker;
 
 public class Stitcher_s_Apprentice {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{
-                    MagicCondition.CAN_TAP_CONDITION,
-                    MagicManaCost.ONE_BLUE.getCondition()},
-            new MagicActivationHints(MagicTiming.Token),
-            "Token") {
+        new MagicCondition[]{
+            MagicCondition.CAN_TAP_CONDITION,
+            MagicManaCost.ONE_BLUE.getCondition()
+        },
+        new MagicActivationHints(MagicTiming.Token),
+        "Token"
+    ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
             return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.ONE_BLUE)};
@@ -49,12 +51,13 @@ public class Stitcher_s_Apprentice {
             final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Homunculus2")));
             game.addEvent(new MagicEvent(
-                    event.getPermanent(),
-                    player,
-                    MagicTargetChoice.SACRIFICE_CREATURE,
-                    MagicSacrificeTargetPicker.create(),
-                    EVENT_ACTION,
-                    "Choose a creature to sacrifice$."));
+                event.getSource(),
+                player,
+                MagicTargetChoice.SACRIFICE_CREATURE,
+                MagicSacrificeTargetPicker.create(),
+                EVENT_ACTION,
+                "Choose a creature to sacrifice$."
+            ));
         }
     };
     

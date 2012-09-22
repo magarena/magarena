@@ -15,12 +15,12 @@ public class Angel_of_Despair {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.TARGET_PERMANENT,
-                    new MagicDestroyTargetPicker(false),
-                    this,
-                    "Destroy target permanent$.");
+                permanent,
+                MagicTargetChoice.TARGET_PERMANENT,
+                new MagicDestroyTargetPicker(false),
+                this,
+                "Destroy target permanent$."
+            );
         }
 
         @Override

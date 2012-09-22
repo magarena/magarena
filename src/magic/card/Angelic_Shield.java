@@ -31,9 +31,10 @@ public class Angelic_Shield {
     };
     
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            MagicActivation.NO_COND,
-            new MagicActivationHints(MagicTiming.Removal),
-            "Return") {
+        MagicActivation.NO_COND,
+        new MagicActivationHints(MagicTiming.Removal),
+        "Return"
+    ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -43,12 +44,12 @@ public class Angelic_Shield {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.TARGET_CREATURE,
-                    MagicBounceTargetPicker.getInstance(),
-                    this,
-                    "Return target creature$ to its owner's hand.");
+                source,
+                MagicTargetChoice.TARGET_CREATURE,
+                MagicBounceTargetPicker.getInstance(),
+                this,
+                "Return target creature$ to its owner's hand."
+            );
         }
 
         @Override

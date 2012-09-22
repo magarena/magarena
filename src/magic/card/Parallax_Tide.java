@@ -35,12 +35,12 @@ public class Parallax_Tide {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.NEG_TARGET_LAND,
-                    MagicExileTargetPicker.create(),
-                    this,
-                    "Exile target land$.");
+                source,
+                MagicTargetChoice.NEG_TARGET_LAND,
+                MagicExileTargetPicker.create(),
+                this,
+                "Exile target land$."
+            );
         }
 
         @Override

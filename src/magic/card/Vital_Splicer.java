@@ -34,12 +34,12 @@ public class Vital_Splicer {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.POS_TARGET_GOLEM_YOU_CONTROL,
-                    MagicRegenerateTargetPicker.getInstance(),
-                    this,
-                    "Regenerate target Golem$ you control.");
+                source,
+                MagicTargetChoice.POS_TARGET_GOLEM_YOU_CONTROL,
+                MagicRegenerateTargetPicker.getInstance(),
+                this,
+                "Regenerate target Golem$ you control."
+            );
         }
 
         @Override
