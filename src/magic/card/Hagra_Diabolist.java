@@ -15,19 +15,17 @@ public class Hagra_Diabolist {
     public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
-            return (otherPermanent.getController() == player &&
+            return (otherPermanent.isFriend(permanent) &&
                     otherPermanent.hasSubType(MagicSubType.Ally)) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicMayChoice(
-                                player + " may have target player lose life " +
-                                "equal to the number of Allies he or she controls.",
-                                MagicTargetChoice.NEG_TARGET_PLAYER),
-                        this,
-                        player + " may$ have target player$ lose life " +
-                        "equal to the number of Allies he or she controls.") :
+                    permanent,
+                    new MagicMayChoice(
+                        MagicTargetChoice.NEG_TARGET_PLAYER
+                    ),
+                    this,
+                    "PN may$ have target player$ lose life " +
+                    "equal to the number of Allies he or she controls."
+                ) :
                 MagicEvent.NONE;
         }
         

@@ -12,10 +12,10 @@ public class Armored_Skaab {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    this,
-                    player + " puts the top four cards of his or her library into his or her graveyard.");
+                permanent,
+                this,
+                "PN puts the top four cards of his or her library into his or her graveyard."
+            );
         }
         @Override
         public void executeEvent(

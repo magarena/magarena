@@ -13,14 +13,13 @@ public class Falkenrath_Noble {
     public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
-            return (otherPermanent.isCreature()) ?
+            return otherPermanent.isCreature() ?
                 new MagicEvent(
                     permanent,
-                    player,
                     MagicTargetChoice.NEG_TARGET_PLAYER,
                     this,
-                    "Target player$ loses 1 life and " + player + " gains 1 life.") :
+                    "Target player$ loses 1 life and PN gains 1 life."
+                ) :
                 MagicEvent.NONE;
         }
         @Override

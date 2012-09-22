@@ -19,18 +19,17 @@ public class Tuktuk_Scrapper {
     public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
-            return (otherPermanent.getController() == player &&
+            return (otherPermanent.isFriend(permanent) &&
                     otherPermanent.hasSubType(MagicSubType.Ally)) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicMayChoice(
-                                player + " may destroy target artifact.",
-                                MagicTargetChoice.NEG_TARGET_ARTIFACT),
-                        new MagicDestroyTargetPicker(false),
-                        this,
-                        player + " may$ destroy target artifact$.") :
+                    permanent,
+                    new MagicMayChoice(
+                        MagicTargetChoice.NEG_TARGET_ARTIFACT
+                    ),
+                    new MagicDestroyTargetPicker(false),
+                    this,
+                    "PN may$ destroy target artifact$."
+                ) :
                 MagicEvent.NONE;
         }
         

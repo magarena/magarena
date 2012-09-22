@@ -11,14 +11,13 @@ public class Sacred_Prey {
     public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            final MagicPlayer player = permanent.getController();
-            return (permanent == data ) ?
-                    new MagicEvent(
-                            permanent,
-                            player,
-                            this,
-                            player + " gains 1 life."):
-                    MagicEvent.NONE;
+            return (permanent == data) ?
+                new MagicEvent(
+                    permanent,
+                    this,
+                    "PN gains 1 life."
+                ):
+                MagicEvent.NONE;
         }
         
         @Override

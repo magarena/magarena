@@ -33,17 +33,19 @@ public class Siege_Gang_Commander {
             final MagicPlayer player=source.getController();
             return new MagicEvent[]{                    
                 new MagicPayManaCostEvent(source,player,MagicManaCost.ONE_RED),
-                new MagicSacrificePermanentEvent(source,player,MagicTargetChoice.SACRIFICE_GOBLIN)};
+                new MagicSacrificePermanentEvent(source,player,MagicTargetChoice.SACRIFICE_GOBLIN)
+            };
         }
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
-                    new MagicDamageTargetPicker(2),
-                    this,
-                    "SN deals 2 damage to target creature or player$.");
+                source,
+                MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                new MagicDamageTargetPicker(2),
+                this,
+                "SN deals 2 damage to target creature or player$."
+            );
         }
         @Override
         public void executeEvent(
@@ -64,10 +66,10 @@ public class Siege_Gang_Commander {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    this,
-                    player + " puts three 1/1 red Goblin creature tokens onto the battlefield.");
+                permanent,
+                this,
+                "PN puts three 1/1 red Goblin creature tokens onto the battlefield."
+            );
         }
         @Override
         public void executeEvent(
