@@ -19,21 +19,18 @@ public class Kazuul_Warlord {
     public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
-            return (otherPermanent.getController() == player &&
+            return (otherPermanent.isFriend(permanent) &&
                     otherPermanent.hasSubType(MagicSubType.Ally)) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicSimpleMayChoice(
-                                player + " may put a +1/+1 counter on " +
-                                "each Ally creature he or she controls.",
-                                MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
-                                1,
-                                MagicSimpleMayChoice.DEFAULT_YES),
-                        this,
-                        player + " may$ put a +1/+1 counter on " +
-                        "each Ally creature he or she controls.") :
+                    permanent,
+                    new MagicSimpleMayChoice(
+                        MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_YES),
+                    this,
+                    "PN may$ put a +1/+1 counter on " +
+                    "each Ally creature he or she controls."
+                ) :
                 MagicEvent.NONE;
         }
         

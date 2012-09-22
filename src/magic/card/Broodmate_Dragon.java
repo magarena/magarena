@@ -13,10 +13,10 @@ public class Broodmate_Dragon {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    this,
-                    player + " puts a 4/4 red Dragon creature token with flying onto the battlefield.");
+                permanent,
+                this,
+                "PN puts a 4/4 red Dragon creature token with flying onto the battlefield."
+            );
         }
         @Override
         public void executeEvent(

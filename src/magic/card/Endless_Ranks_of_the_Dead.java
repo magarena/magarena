@@ -14,15 +14,14 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 public class Endless_Ranks_of_the_Dead {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-            final MagicPlayer player = permanent.getController();
-            return (player == data) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+            return permanent.isController(upkeepPlayer) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        player + " puts X 2/2 black Zombie creature tokens onto the " +
-                        "battlefield, where X is half the number of Zombies you control, rounded down"):
+                    permanent,
+                    this,
+                    "PN puts X 2/2 black Zombie creature tokens onto the " +
+                    "battlefield, where X is half the number of Zombies you control, rounded down"
+                ):
                 MagicEvent.NONE;
         }
         @Override

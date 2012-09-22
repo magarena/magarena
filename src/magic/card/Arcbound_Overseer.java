@@ -15,15 +15,13 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 public class Arcbound_Overseer {
     public static final MagicAtUpkeepTrigger T3 = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-            final MagicPlayer player = permanent.getController();
-            return (player == data) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+            return permanent.isController(upkeepPlayer) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        player + " puts a +1/+1 counter on each creature " +
-                        "with modular he or she controls."):
+                    permanent,
+                    this,
+                    "PN puts a +1/+1 counter on each creature " +
+                    "with modular he or she controls."):
                 MagicEvent.NONE;
         }
         @Override

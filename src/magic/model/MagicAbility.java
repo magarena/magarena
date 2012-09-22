@@ -603,7 +603,7 @@ public enum MagicAbility {
     }
     
     public long getMask() {
-        assert !hasImpl() : this + " cannot be used in given_ability";
+        assert !hasImpl() : this + " ability cannot be used in given_ability";
         return mask;
     }
     
@@ -618,7 +618,7 @@ public enum MagicAbility {
     }
 
     public boolean hasAbility(final long flags) {
-        return (flags&mask)!=0;
+        return (flags & getMask()) != 0;
     }
     
     public static int getScore(final long flags) {

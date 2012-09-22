@@ -20,19 +20,17 @@ public class Artisan_of_Kozilek {
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicCardOnStack data) {
-            final MagicPlayer player = data.getController();
+                final MagicCardOnStack spell) {
             return new MagicEvent(
-                    data.getSource(),
-                    player,
-                    new MagicMayChoice(
-                            player + " may return target creature card " +
-                            "from his or her graveyard to the battlefield.",
-                            MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD),
-                    new MagicGraveyardTargetPicker(true),
-                    this,
-                    player + " may$ return target creature card$ from " +
-                    "his or her graveyard to the battlefield.");
+                spell,
+                new MagicMayChoice(
+                    MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD
+                ),
+                new MagicGraveyardTargetPicker(true),
+                this,
+                "PN may$ return target creature card$ from " +
+                "his or her graveyard to the battlefield."
+            );
         }
         
         @Override
@@ -45,9 +43,10 @@ public class Artisan_of_Kozilek {
                 event.processTargetCard(game,choiceResults,1,new MagicCardAction() {
                     public void doAction(final MagicCard card) {
                         game.doAction(new MagicReanimateAction(
-                                event.getPlayer(),
-                                card,
-                                MagicPlayCardAction.NONE));
+                            event.getPlayer(),
+                            card,
+                            MagicPlayCardAction.NONE
+                        ));
                     }
                 });
             }

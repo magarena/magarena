@@ -13,22 +13,20 @@ import magic.model.trigger.MagicWhenBecomesTappedTrigger;
 public class Judge_of_Currents {
     public static final MagicWhenBecomesTappedTrigger T = new MagicWhenBecomesTappedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            final MagicPlayer player = permanent.getController();
-            return (data.getController() == player &&
-                    data.isCreature() &&
-                    data.hasSubType(MagicSubType.Merfolk)) ?
-                            new MagicEvent(
-                                    permanent,
-                                    player,
-                                    new MagicSimpleMayChoice(
-                                        player + " may gain 1 life.",
-                                        MagicSimpleMayChoice.GAIN_LIFE,
-                                        1,
-                                        MagicSimpleMayChoice.DEFAULT_YES),
-                                    this,
-                                    player + " may$ gain 1 life.") :
-                            MagicEvent.NONE;
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent tapped) {
+            return (tapped.isFriend(permanent) &&
+                    tapped.isCreature() &&
+                    tapped.hasSubType(MagicSubType.Merfolk)) ?
+                new MagicEvent(
+                    permanent,
+                    new MagicSimpleMayChoice(
+                        MagicSimpleMayChoice.GAIN_LIFE,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_YES),
+                    this,
+                    "PN may$ gain 1 life."
+                ) :
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(
