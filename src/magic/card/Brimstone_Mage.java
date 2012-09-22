@@ -52,12 +52,13 @@ public class Brimstone_Mage {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             final int amount = source.getCounters(MagicCounterType.Charge) >= 3 ? 3:1;
             return new MagicEvent(
-                    source,
-                    MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
-                    new MagicDamageTargetPicker(amount),
-                    new Object[]{source,amount},
-                    this,
-                    "SN deals " + amount + " damage to target creature or player$.");
+                source,
+                MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                new MagicDamageTargetPicker(amount),
+                new Object[]{amount},
+                this,
+                "SN deals " + amount + " damage to target creature or player$."
+            );
         }
 
         @Override
@@ -69,10 +70,11 @@ public class Brimstone_Mage {
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicDamage damage = new MagicDamage(
-                            (MagicSource)data[0],
-                            target,
-                            (Integer)data[1],
-                            false);
+                        event.getSource(),
+                        target,
+                        (Integer)data[0],
+                        false
+                    );
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });

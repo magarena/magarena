@@ -4,6 +4,7 @@ import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
+import magic.model.MagicSource;
 import magic.model.action.MagicDestroyAction;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
@@ -12,15 +13,15 @@ public class Dread {
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            final MagicPlayer player=permanent.getController();
-            return (damage.getTarget()==player && 
-                    damage.getSource().isCreature()) ?
+            final MagicSource dmgSource = damage.getSource();
+            return (permanent.isController(damage.getTarget()) && 
+                    dmgSource.isCreature()) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{damage.getSource()},
-                        this,
-                        "Destroy "+damage.getSource()+"."):
+                    permanent,
+                    new Object[]{dmgSource},
+                    this,
+                    "Destroy "+dmgSource+"."
+                ):
                 MagicEvent.NONE;
         }
         

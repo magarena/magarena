@@ -40,7 +40,7 @@ public class Mirror_Entity {
             final int x=payedCost.getX();
             return new MagicEvent(
                     source,
-                    new Object[]{source,x},
+                    new Object[]{x},
                     this,
                     "Creatures PN controls become "+
                     x+"/"+x+" and gain all creature types until end of turn.");
@@ -51,8 +51,8 @@ public class Mirror_Entity {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanent permanent=(MagicPermanent)data[0];
-            final Integer X = (Integer)data[1];
+            final int X = (Integer)data[0];
+            final MagicPermanent permanent = event.getPermanent();
             final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
                 @Override
                 public void modPowerToughness(

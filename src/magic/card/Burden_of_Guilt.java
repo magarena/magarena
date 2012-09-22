@@ -24,21 +24,21 @@ public class Burden_of_Guilt {
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
             return new MagicEvent[]{new MagicPayManaCostEvent(
-                    source,
-                    source.getController(),
-                    MagicManaCost.ONE)
-            };
+                source,
+                source.getController(),
+                MagicManaCost.ONE
+            )};
         }
         @Override
         public MagicEvent getPermanentEvent(
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    new Object[]{source.getEnchantedCreature()},
-                    this,
-                    "Tap " + source.getEnchantedCreature() + ".");
+                source,
+                new Object[]{source.getEnchantedCreature()},
+                this,
+                "Tap " + source.getEnchantedCreature() + "."
+            );
         }
         @Override
         public void executeEvent(

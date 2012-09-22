@@ -16,15 +16,13 @@ public class Circle_of_Flame {
     public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            final MagicPlayer controller = creature.getController();
-            return (controller != permanent.getController() &&
+            return (permanent.isEnemy(creature) &&
                     !creature.hasAbility(MagicAbility.Flying)) ?
                 new MagicEvent(
-                        permanent,
-                        controller,
-                        new Object[]{creature},
-                        this,
-                        "SN deals 1 damage to attacking creature without flying."):
+                    permanent,
+                    new Object[]{creature},
+                    this,
+                    "SN deals 1 damage to attacking creature without flying."):
                 MagicEvent.NONE;
         }
         

@@ -15,15 +15,14 @@ public class Dissipation_Field {
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            final MagicPlayer player=permanent.getController();
             final MagicSource dmgSource=damage.getSource();
-            return (damage.getTarget()==player && dmgSource.isPermanent()) ?
+            return (permanent.isController(damage.getTarget()) && dmgSource.isPermanent()) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{dmgSource},
-                        this,
-                        "Return "+dmgSource+" to its owner's hand."):
+                    permanent,
+                    new Object[]{dmgSource},
+                    this,
+                    "Return "+dmgSource+" to its owner's hand."
+                ):
                 MagicEvent.NONE;
         }
         @Override
@@ -33,8 +32,9 @@ public class Dissipation_Field {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicRemoveFromPlayAction(
-                    (MagicPermanent)data[0],
-                    MagicLocationType.OwnersHand));
+                (MagicPermanent)data[0],
+                MagicLocationType.OwnersHand
+            ));
         }
     };
 }

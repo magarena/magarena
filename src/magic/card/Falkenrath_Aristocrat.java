@@ -49,10 +49,11 @@ public class Falkenrath_Aristocrat {
                 }
             }
             return new MagicEvent(
-                    source,
-                    new Object[]{source,isHuman},
-                    this,
-                    message);
+                source,
+                new Object[]{isHuman},
+                this,
+                message
+            );
         }
         @Override
         public void executeEvent(
@@ -61,14 +62,16 @@ public class Falkenrath_Aristocrat {
                 final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicSetAbilityAction(
-                    (MagicPermanent)data[0],
-                    MagicAbility.Indestructible));
-            if ((Boolean)data[1]) {
+                event.getPermanent(),
+                MagicAbility.Indestructible
+            ));
+            if ((Boolean)data[0]) {
                 game.doAction(new MagicChangeCountersAction(
-                        (MagicPermanent)data[0],
-                        MagicCounterType.PlusOne,
-                        1,
-                        true));
+                    event.getPermanent(),
+                    MagicCounterType.PlusOne,
+                    1,
+                    true
+                ));
             }
         }
     };

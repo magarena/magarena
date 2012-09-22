@@ -31,24 +31,25 @@ public class Drana__Kalastria_Bloodchief {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             final int amount=payedCost.getX();
             return new MagicEvent(
-                    source,
-                    MagicTargetChoice.TARGET_CREATURE,
-                    new MagicWeakenTargetPicker(0,amount),
-                    new Object[]{source,amount},
-                    this,
-                    "Target creature$ gets -0/-"+amount+" until end of turn and " + 
-                    "SN gets +"+amount+"/+0 until end of turn.");
+                source,
+                MagicTargetChoice.TARGET_CREATURE,
+                new MagicWeakenTargetPicker(0,amount),
+                new Object[]{amount},
+                this,
+                "Target creature$ gets -0/-"+amount+" until end of turn and " + 
+                "SN gets +"+amount+"/+0 until end of turn."
+            );
         }
 
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-            final int amount=(Integer)data[1];
+            final int amount=(Integer)data[0];
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeTurnPTAction(creature,0,-amount));
+                    game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),amount,0));
                 }
             });
-            game.doAction(new MagicChangeTurnPTAction((MagicPermanent)data[0],amount,0));
         }
     };
 }
