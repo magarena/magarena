@@ -55,25 +55,25 @@ public class Gwafa_Hazid__Profiteer {
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
             return new MagicEvent[]{
-                    new MagicPayManaCostTapEvent(
+                new MagicPayManaCostTapEvent(
                     source,
                     source.getController(),
-                    MagicManaCost.WHITE_BLUE)};
+                    MagicManaCost.WHITE_BLUE
+                )
+            };
         }
 
         @Override
                 public MagicEvent getPermanentEvent(
                         final MagicPermanent source,
                         final MagicPayedCost payedCost) {
-            final MagicPlayer player = source.getController();
             return new MagicEvent(
                     source,
-                    player,
                     MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
                     new MagicNoCombatTargetPicker(true,true,true),
                     this,
-                    player + " puts a bribery counter on target creature$. " +
-                        "Its controller draws a card.");
+                    "PN puts a bribery counter on target creature$. " +
+                    "Its controller draws a card.");
         }
 
         @Override

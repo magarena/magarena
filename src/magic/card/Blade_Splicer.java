@@ -27,9 +27,8 @@ public class Blade_Splicer {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
             return new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    player + " puts a 3/3 colorless Golem artifact creature token onto the battlefield.");
+                    "PN puts a 3/3 colorless Golem artifact creature token onto the battlefield.");
         }
         
         @Override

@@ -20,22 +20,16 @@ public class Bone_Dancer {
     public static final MagicWhenAttacksUnblockedTrigger T = new MagicWhenAttacksUnblockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            if (creature == permanent) {
-                final MagicPlayer player = permanent.getController();
-                final MagicPlayer opponent = player.getOpponent();
-                return new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicMayChoice(
-                                player + " may put the top creature card of " +
-                                opponent + "'s graveyard onto the " +
-                                "battlefield under his or her control."),
-                        this,
-                        player + " may$ put the top creature card of " +
-                        opponent + "'s graveyard onto the " +
-                        "battlefield under his or her control.");
-            }
-            return MagicEvent.NONE;
+            return (creature == permanent) ?
+                new MagicEvent(
+                    permanent,
+                    new MagicMayChoice(),
+                    this,
+                    "PN may$ put the top creature card of " +
+                    "opponent's graveyard onto the " +
+                    "battlefield under his or her control."
+                ):
+                MagicEvent.NONE;
         }
         
         @Override

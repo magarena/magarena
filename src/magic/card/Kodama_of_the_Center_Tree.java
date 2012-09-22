@@ -48,19 +48,12 @@ public class Kodama_of_the_Center_Tree {
                         new MagicTargetChoice(
                         targetFilter,false,MagicTargetHint.None,
                         "a Spirit card from your graveyard)");
-                final MagicChoice mayChoice = 
-                        new MagicMayChoice(
-                        player + " may return target Spirit card with " +
-                        "converted mana cost " + cmc + " or less " +
-                        "from his or her graveyard to his or her hand.",
-                        targetChoice);
                 return new MagicEvent(
                         permanent,
-                        player,
-                        mayChoice,
+                        new MagicMayChoice(targetChoice),
                         new MagicGraveyardTargetPicker(false),
                         this,
-                        player + " may$ return target Spirit card$ with " +
+                        "PN may$ return target Spirit card$ with " +
                         "converted mana cost " + cmc + " or less " +
                         "from his or her graveyard to his or her hand.");
             }

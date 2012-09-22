@@ -13,15 +13,13 @@ public class Looter_il_Kor {
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            final MagicPlayer player = permanent.getController();
             return (damage.getSource() == permanent &&
-                    damage.getTarget().isPlayer() &&
-                    damage.getTarget() != player) ?
+                    permanent.isOpponent(damage.getTarget())) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        player + " draws a card, then discards a card."):
+                    permanent,
+                    this,
+                    "PN draws a card, then discards a card."
+                ):
                 MagicEvent.NONE;
         }
         @Override
