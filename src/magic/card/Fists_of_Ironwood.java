@@ -13,12 +13,11 @@ public class Fists_of_Ironwood {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-            
             return new MagicEvent(
-                    permanent,
-                    player,
-                    this,
-                    player + " puts two 1/1 green Saproling creature tokens onto the battlefield.");
+                permanent,
+                this,
+                "PN puts two 1/1 green Saproling creature tokens onto the battlefield."
+            );
         }
         @Override
         public void executeEvent(

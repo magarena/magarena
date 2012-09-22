@@ -14,14 +14,13 @@ public class Tuktuk_the_Explorer {
     public static final MagicWhenPutIntoGraveyardTrigger T = new MagicWhenPutIntoGraveyardTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
-            final MagicPlayer player = permanent.getController();
             return (MagicLocationType.Play==triggerData.fromLocation) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    player + " puts a legendary 5/5 colorless Goblin Golem artifact creature token " + 
-                            "named Tuktuk the Returned onto the battlefield."):
+                    "PN puts a legendary 5/5 colorless Goblin Golem artifact creature token " + 
+                    "named Tuktuk the Returned onto the battlefield."
+                ):
                 MagicEvent.NONE;
         }
         

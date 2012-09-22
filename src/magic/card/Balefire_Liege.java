@@ -45,16 +45,15 @@ public class Balefire_Liege {
     };
     public static final MagicWhenOtherSpellIsCastTrigger T = new MagicWhenOtherSpellIsCastTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
-            final MagicPlayer player=permanent.getController();
-            final MagicCard card=cardOnStack.getCard();
-            return (card.getOwner()==player&&MagicColor.Red.hasColor(card.getColorFlags())) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack spell) {
+            return (permanent.isFriend(spell) && 
+                    MagicColor.Red.hasColor(spell.getColorFlags())) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     MagicTargetChoice.NEG_TARGET_PLAYER,
                     this,
-                    "SN deals 3 damage to target player$."):
+                    "SN deals 3 damage to target player$."
+                ):
                 MagicEvent.NONE;
         }
         @Override
@@ -74,15 +73,14 @@ public class Balefire_Liege {
     
     public static final MagicWhenOtherSpellIsCastTrigger T2 = new MagicWhenOtherSpellIsCastTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
-            final MagicPlayer player=permanent.getController();
-            final MagicCard card=cardOnStack.getCard();
-            return (card.getOwner()==player&&MagicColor.White.hasColor(card.getColorFlags())) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack spell) {
+            return (permanent.isFriend(spell) && 
+                    MagicColor.White.hasColor(spell.getColorFlags())) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    player + " gains 3 life."):
+                    "PN gains 3 life."
+                ):
                 MagicEvent.NONE;
         }
         @Override

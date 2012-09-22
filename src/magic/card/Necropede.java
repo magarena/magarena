@@ -18,17 +18,16 @@ public class Necropede {
     public static final MagicWhenPutIntoGraveyardTrigger T = new MagicWhenPutIntoGraveyardTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
-            final MagicPlayer player = permanent.getController();
             return (MagicLocationType.Play == triggerData.fromLocation) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new MagicMayChoice(
-                            player + " may put a -1/-1 counter on target creature.",
-                            MagicTargetChoice.NEG_TARGET_CREATURE),
+                        MagicTargetChoice.NEG_TARGET_CREATURE
+                    ),
                     new MagicWeakenTargetPicker(1,1),
                     this,
-                    player + " may put a -1/-1 counter on target creature.") :
+                    "PN may put a -1/-1 counter on target creature."
+                ) :
                 MagicEvent.NONE;
         }
         

@@ -17,16 +17,14 @@ public class Druid_s_Call {
                 final MagicPermanent permanent,
                 final MagicDamage damage) {
             final int amount = damage.getDealtAmount();
-            final MagicPermanent enchantedCreature = permanent.getEnchantedCreature();
-            final MagicPlayer player = enchantedCreature.getController();
-            return (damage.getTarget() == enchantedCreature) ?
+            final MagicPermanent enchanted = permanent.getEnchantedCreature();
+            return damage.getTarget() == enchanted ?
                 new MagicEvent(
                     permanent,
-                    player,
+                    enchanted.getController(),
                     new Object[]{amount},
                     this,
-                    player + " puts " + amount +
-                    " 1/1 green Squirrel creature tokens onto the battlefield.") :
+                    "PN puts " + amount + " 1/1 green Squirrel creature tokens onto the battlefield.") :
                 MagicEvent.NONE;
         }
         @Override

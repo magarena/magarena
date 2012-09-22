@@ -11,17 +11,16 @@ public class Proper_Burial {
     public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
             final int toughness = otherPermanent.getToughness();
             return (otherPermanent.isCreature() &&
-                    otherPermanent.getController() == player &&
+                    otherPermanent.isFriend(permanent) &&
                     toughness > 0) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new Object[]{toughness},
                     this,
-                    player + " gains " + toughness + " life.") :
+                    "PN gains " + toughness + " life."
+                ) :
                 MagicEvent.NONE;
         }
         @Override
