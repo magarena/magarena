@@ -26,10 +26,12 @@ public class Desolate_Lighthouse {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
-            return new MagicEvent[] { new MagicPayManaCostTapEvent(
-                            source,
-                            source.getController(),
-                            MagicManaCost.ONE_BLUE_RED)
+            return new MagicEvent[] {
+                new MagicPayManaCostTapEvent(
+                    source,
+                    source.getController(),
+                    MagicManaCost.ONE_BLUE_RED
+                )
             };
         }
 
@@ -37,12 +39,11 @@ public class Desolate_Lighthouse {
         public MagicEvent getPermanentEvent(
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
-            final MagicPlayer player = source.getController();
             return new MagicEvent(
-                    source,
-                    player,
-                    this,
-                    player + " draws a card, then discards a card.");
+                source,
+                this,
+                "PN draws a card, then discards a card."
+            );
         }
 
         @Override
@@ -54,7 +55,6 @@ public class Desolate_Lighthouse {
             final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicDrawAction(player,1));
             game.addEvent(new MagicDiscardEvent(event.getPermanent(),player,1,false));
-            
         }
     };
 }

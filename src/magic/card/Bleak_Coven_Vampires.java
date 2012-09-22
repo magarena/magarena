@@ -17,11 +17,10 @@ public class Bleak_Coven_Vampires {
             return MagicCondition.METALCRAFT_CONDITION.accept(permanent) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     MagicTargetChoice.NEG_TARGET_PLAYER,
                     this,
-                    "Target player$ loses 4 life and " +
-                    player + " gains 4 life.") :
+                    "Target player$ loses 4 life and PN gains 4 life."
+                ) :
                 MagicEvent.NONE;
         }
         @Override

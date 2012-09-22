@@ -11,14 +11,13 @@ public class Deepwood_Tantiv {
     public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            final MagicPlayer player = permanent.getController();
             return (permanent == data ) ?
-                    new MagicEvent(
-                            permanent,
-                            player,
-                            this,
-                            player + " gains 2 life."):
-                    MagicEvent.NONE;
+                new MagicEvent(
+                    permanent,
+                    this,
+                    "PN gains 2 life."
+                ):
+                MagicEvent.NONE;
         }
         
         @Override

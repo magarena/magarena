@@ -16,17 +16,16 @@ public class Biting_Tether {
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicPlayer data) {
-            final MagicPlayer player = permanent.getController();
-            return (player == data) ?
+                final MagicPlayer upkeepPlayer) {
+            return permanent.isController(upkeepPlayer) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new Object[]{permanent.getEnchantedCreature()},
                     this,
-                    player + " puts a -1/-1 counter on " +
-                    permanent.getEnchantedCreature() + ".") :
-            MagicEvent.NONE;
+                    "PN puts a -1/-1 counter on " +
+                    permanent.getEnchantedCreature() + "."
+                ) :
+                MagicEvent.NONE;
         }
 
         @Override

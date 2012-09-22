@@ -19,16 +19,15 @@ public class Cathars__Crusade {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
             return (otherPermanent.isCreature() && 
-                otherPermanent.getController() == player) ?
+                    otherPermanent.isFriend(permanent)) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        player + " puts a +1/+1 counter on " +
-                        "each creature he or she controls.") :
-               MagicEvent.NONE;
+                    permanent,
+                    this,
+                    "PN puts a +1/+1 counter on " +
+                    "each creature he or she controls."
+                ) :
+                MagicEvent.NONE;
         }
         
         @Override

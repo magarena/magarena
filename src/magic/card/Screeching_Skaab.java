@@ -15,11 +15,11 @@ public class Screeching_Skaab {
                 final MagicPermanent permanent,
                 final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    this,
-                    player + " puts the top two cards of his " +
-                    "or her library into his or her graveyard.");
+                permanent,
+                this,
+                "PN puts the top two cards of his " +
+                "or her library into his or her graveyard."
+            );
         }
         @Override
         public void executeEvent(

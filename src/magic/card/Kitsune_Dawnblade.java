@@ -16,12 +16,12 @@ public class Kitsune_Dawnblade {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    new MagicMayChoice(player + " may tap target creature.",MagicTargetChoice.NEG_TARGET_CREATURE),
-                    new MagicTapTargetPicker(true,false),
-                    this,
-                    player + " may$ tap target creature$.");
+                permanent,
+                new MagicMayChoice(MagicTargetChoice.NEG_TARGET_CREATURE),
+                new MagicTapTargetPicker(true,false),
+                this,
+                "PN may$ tap target creature$."
+            );
         }
         @Override
         public void executeEvent(
