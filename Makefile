@@ -172,6 +172,9 @@ clean/%: Magarena-%.zip Magarena-%.app.zip
 	-rm Magarena-$*.zip
 	-rm Magarena-$*.app.zip
 
+log.clean:
+	-rm -f *.log
+
 inf: $(MAG)
 	-while true; do make `date +%s`.t; done
 
@@ -412,5 +415,6 @@ check_data: scripts/check_data.awk
 	done > $@
 	flip -u $@
 
-check_movespellcard:
-	diff <(grep MagicSpellCardEvent -lr src/magic/card | sort) <(grep MagicMoveCardAction -l $$(grep MagicSpellCardEvent -lr src/magic/card) | sort)
+# every aura must have an enchant property
+check_aura:
+	diff <(grep "subtype.*Aura" -lr release/Magarena/scripts | sort) <(grep enchant= -lr release/Magarena/scripts | sort)
