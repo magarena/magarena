@@ -28,7 +28,7 @@ public class MagicSoulbondEvent extends MagicEvent {
     
     public MagicSoulbondEvent(final MagicPermanent permanent,final boolean hasSoulbond) {
         super(
-            MagicEvent.NO_SOURCE,
+            permanent,
             new MagicMayChoice(
                 permanent.getController() + " may pair two creatures (Soulbond).",
                 hasSoulbond ?
