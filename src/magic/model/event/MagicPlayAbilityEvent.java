@@ -5,7 +5,13 @@ import magic.model.MagicPermanent;
 import magic.model.action.MagicPlayAbilityAction;
 
 public class MagicPlayAbilityEvent extends MagicEvent {
-
+    public MagicPlayAbilityEvent(final MagicPermanent source) {
+        super(
+            source,
+            EVENT_ACTION,
+            ""
+        );
+    }
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(
@@ -13,11 +19,7 @@ public class MagicPlayAbilityEvent extends MagicEvent {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicPlayAbilityAction((MagicPermanent)event.getSource()));
+            game.doAction(new MagicPlayAbilityAction(event.getPermanent()));
         }
     };
-    
-    public MagicPlayAbilityEvent(final MagicPermanent source) {
-        super(source,source.getController(),MagicEvent.NO_DATA,EVENT_ACTION,"");
-    }
 }

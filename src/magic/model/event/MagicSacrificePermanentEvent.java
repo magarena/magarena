@@ -11,6 +11,20 @@ import magic.model.target.MagicSacrificeTargetPicker;
 
 public class MagicSacrificePermanentEvent extends MagicEvent {
 
+    public MagicSacrificePermanentEvent(
+            final MagicSource source,
+            final MagicPlayer player,
+            final MagicTargetChoice targetChoice) {
+        super(
+            source,
+            player,
+            targetChoice,
+            MagicSacrificeTargetPicker.create(),
+            EVENT_ACTION,
+            "Choose "+targetChoice.getTargetDescription()+"$."
+        );
+    }
+    
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(
@@ -26,18 +40,4 @@ public class MagicSacrificePermanentEvent extends MagicEvent {
         }
     };
 
-    public MagicSacrificePermanentEvent(
-            final MagicSource source,
-            final MagicPlayer player,
-            final MagicTargetChoice targetChoice) {
-        super(
-            source,
-            player,
-            targetChoice,
-            MagicSacrificeTargetPicker.create(),
-            MagicEvent.NO_DATA,
-            EVENT_ACTION,
-            "Choose "+targetChoice.getTargetDescription()+"$."
-        );
-    }
 }

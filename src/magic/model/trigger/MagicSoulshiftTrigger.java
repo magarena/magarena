@@ -41,20 +41,12 @@ public class MagicSoulshiftTrigger extends MagicWhenPutIntoGraveyardTrigger {
                     new MagicTargetChoice(
                     targetFilter,false,MagicTargetHint.None,
                     "a Spirit card from your graveyard)");
-            final MagicChoice mayChoice = 
-                    new MagicMayChoice(
-                    player + " may return target Spirit card with " +
-                    "converted mana cost " + cmc + " or less " +
-                    "from his or her graveyard to his or her hand.",
-                    targetChoice);
             return new MagicEvent(
                     permanent,
-                    player,
-                    mayChoice,
+                    new MagicMayChoice(targetChoice),
                     new MagicGraveyardTargetPicker(false),
-                    MagicEvent.NO_DATA,
                     this,
-                    player + " may$ return target Spirit card$ with " +
+                    "PN may$ return target Spirit card$ with " +
                     "converted mana cost " + cmc + " or less " +
                     "from his or her graveyard to his or her hand.");
         }
@@ -70,12 +62,14 @@ public class MagicSoulshiftTrigger extends MagicWhenPutIntoGraveyardTrigger {
             event.processTargetCard(game,choiceResults,1,new MagicCardAction() {
                 public void doAction(final MagicCard card) {
                     game.doAction(new MagicRemoveCardAction(
-                            card,
-                            MagicLocationType.Graveyard));
+                        card,
+                        MagicLocationType.Graveyard
+                    ));
                     game.doAction(new MagicMoveCardAction(
-                            card,
-                            MagicLocationType.Graveyard,
-                            MagicLocationType.OwnersHand));
+                        card,
+                        MagicLocationType.Graveyard,
+                        MagicLocationType.OwnersHand
+                    ));
                 }
             });
         }

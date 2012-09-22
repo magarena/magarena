@@ -24,13 +24,12 @@ public abstract class MagicWeakenCreatureActivation extends MagicPermanentActiva
             final MagicPermanent source,
             final MagicPayedCost payedCost) {
         return new MagicEvent(
-                source,
-                source.getController(),
-                MagicTargetChoice.NEG_TARGET_CREATURE,
-                new MagicWeakenTargetPicker(1,1),
-                MagicEvent.NO_DATA,
-                this,
-                "Put a -1/-1 counter on target creature$.");
+            source,
+            MagicTargetChoice.NEG_TARGET_CREATURE,
+            new MagicWeakenTargetPicker(1,1),
+            this,
+            "Put a -1/-1 counter on target creature$."
+        );
     }
 
     @Override
@@ -42,10 +41,11 @@ public abstract class MagicWeakenCreatureActivation extends MagicPermanentActiva
         event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
             public void doAction(final MagicPermanent creature) {
                 game.doAction(new MagicChangeCountersAction(
-                            creature,
-                            MagicCounterType.MinusOne,
-                            1,
-                            true));
+                    creature,
+                    MagicCounterType.MinusOne,
+                    1,
+                    true
+                ));
             }
         });
     }

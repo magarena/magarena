@@ -41,14 +41,13 @@ public class MagicEntersDamageTargetTrigger extends MagicWhenComesIntoPlayTrigge
             final MagicPermanent permanent,
             final MagicPlayer player) {
         return new MagicEvent(
-                permanent,
-                player,
-                targetChoice,
-                new MagicDamageTargetPicker(n),
-                MagicEvent.NO_DATA,
-                this,
-                permanent + " deals " + n + " damage to target " +
-                        genDescription(targetChoice));
+            permanent,
+            player,
+            targetChoice,
+            new MagicDamageTargetPicker(n),
+            this,
+            "SN deals " + n + " damage to target " + genDescription(targetChoice)
+        );
     }
     @Override
     public void executeEvent(
@@ -59,10 +58,11 @@ public class MagicEntersDamageTargetTrigger extends MagicWhenComesIntoPlayTrigge
         event.processTarget(game,choiceResults,0,new MagicTargetAction() {
             public void doAction(final MagicTarget target) {
                 final MagicDamage damage = new MagicDamage(
-                        event.getSource(),
-                        target,
-                        n,
-                        false);
+                    event.getSource(),
+                    target,
+                    n,
+                    false
+                );
                 game.doAction(new MagicDealDamageAction(damage));
             }
         });

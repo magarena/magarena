@@ -35,17 +35,14 @@ public class MagicLeavesDamageTargetTrigger extends MagicWhenLeavesPlayTrigger {
     
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent data) {
-        final MagicPlayer player = permanent.getController();
         return (permanent == data) ?
             new MagicEvent(
                 permanent,
-                player,
                 targetChoice,
                 new MagicDamageTargetPicker(n),
-                MagicEvent.NO_DATA,
                 this,
-                permanent + " deals " + n + " damage to target " +
-                        genDescription(targetChoice)) :
+                "SN deals " + n + " damage to target " + genDescription(targetChoice)
+            ):
             MagicEvent.NONE;
     }
     @Override

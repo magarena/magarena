@@ -21,13 +21,12 @@ public abstract class MagicTapCreatureActivation extends MagicPermanentActivatio
     @Override
     public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
         return new MagicEvent(
-                source,
-                source.getController(),
-                MagicTargetChoice.NEG_TARGET_CREATURE,
-                new MagicTapTargetPicker(true,false),
-                MagicEvent.NO_DATA,
-                this,
-                "Tap target creature$.");
+            source,
+            MagicTargetChoice.NEG_TARGET_CREATURE,
+            new MagicTapTargetPicker(true,false),
+            this,
+            "Tap target creature$."
+        );
     }
 
     @Override

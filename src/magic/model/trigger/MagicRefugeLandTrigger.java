@@ -21,11 +21,11 @@ public class MagicRefugeLandTrigger extends MagicWhenComesIntoPlayTrigger {
         return new MagicEvent(
             permanent,
             player,
-            MagicEvent.NO_DATA,
             this,
             player + 
             (life > 0 ? " gains " + life : " loses " + -life) + 
-             " life.");
+            " life."
+        );
     }
     @Override
     public void executeEvent(

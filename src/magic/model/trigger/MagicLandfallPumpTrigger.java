@@ -19,12 +19,12 @@ public class MagicLandfallPumpTrigger extends MagicLandfallTrigger {
     @Override
     protected MagicEvent getEvent(final MagicPermanent permanent) {
         return new MagicEvent(
-                permanent,
-                permanent.getController(),
-                MagicEvent.NO_DATA,
-                this,
-                permanent + " gets " + getString(power) + 
-                "/" + getString(toughness) + " until end of turn.");
+            permanent,
+            this,
+            "SN gets " + 
+            getString(power) + "/" + getString(toughness) + 
+            " until end of turn."
+        );
     }
     
     @Override
@@ -34,14 +34,13 @@ public class MagicLandfallPumpTrigger extends MagicLandfallTrigger {
             final Object data[],
             final Object[] choiceResults) {
         game.doAction(new MagicChangeTurnPTAction(
-                (MagicPermanent)event.getSource(),
-                power,
-                toughness));
+            event.getPermanent(),
+            power,
+            toughness
+        ));
     }
     
     private String getString(final int pt) {
-        return pt >= 0 ?
-                "+" + pt :
-                Integer.toString(pt);
+        return pt >= 0 ? "+" + pt : Integer.toString(pt);
     }
 }
