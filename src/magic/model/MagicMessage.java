@@ -62,10 +62,10 @@ public class MagicMessage {
         }
     }
     
-    public static String replaceName(final String sourceText,final MagicEvent event) {
+    public static String replaceName(final String sourceText,final MagicSource source, final MagicPlayer player) {
         return sourceText
-            .replaceAll("PN", event.getPlayer().toString())
-            .replaceAll("SN", event.getSource().toString());
+            .replaceAll("PN", player.toString())
+            .replaceAll("SN", source.toString());
     }
     
     public static String replaceChoices(final String sourceText,final Object choices[]) {
