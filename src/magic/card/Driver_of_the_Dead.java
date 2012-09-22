@@ -19,40 +19,32 @@ import magic.model.trigger.MagicGraveyardTriggerData;
 import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 
 public class Driver_of_the_Dead {
+    private static final MagicTargetFilter targetFilter = new MagicTargetFilter.MagicCMCTargetFilter(
+        MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
+        MagicTargetFilter.MagicCMCTargetFilter.LESS_THAN_OR_EQUAL,
+        2
+    );
+    private static final MagicTargetChoice targetChoice = new MagicTargetChoice(
+        targetFilter,false,MagicTargetHint.None,
+        "target creature card from your graveyard)"
+    );
     public static final MagicWhenPutIntoGraveyardTrigger T = new MagicWhenPutIntoGraveyardTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicGraveyardTriggerData triggerData) {
-            if (MagicLocationType.Play == triggerData.fromLocation) {
-                final MagicPlayer player = permanent.getController();
-                final MagicTargetFilter targetFilter =
-                        new MagicTargetFilter.MagicCMCTargetFilter(
-                        MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
-                        MagicTargetFilter.MagicCMCTargetFilter.LESS_THAN_OR_EQUAL,
-                        2);
-                final MagicTargetChoice targetChoice = 
-                        new MagicTargetChoice(
-                        targetFilter,false,MagicTargetHint.None,
-                        "target creature card from your graveyard)");
-                final MagicChoice mayChoice = 
-                        new MagicMayChoice(
-                        player + " may return target creature card with " +
-                        "converted mana cost 2 or less " +
-                        "from his or her graveyard to the battlefield.",
-                        targetChoice);
-                return new MagicEvent(
-                        permanent,
-                        player,
-                        mayChoice,
-                        new MagicGraveyardTargetPicker(false),
-                        this,
-                        player + " may$ return target creature card$ with " +
-                        "converted mana cost 2 or less " +
-                        "from his or her graveyard to the battlefield.");
-            }
-            return MagicEvent.NONE;
+            return (MagicLocationType.Play == triggerData.fromLocation) ?
+                new MagicEvent(
+                    permanent,
+                    new MagicMayChoice(targetChoice),
+                    new MagicGraveyardTargetPicker(false),
+                    this,
+                    "PN may$ return target creature card$ with " +
+                    "converted mana cost 2 or less " +
+                    "from his or her graveyard to the battlefield."
+                ):
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(

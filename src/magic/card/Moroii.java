@@ -11,14 +11,13 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 public class Moroii {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-            final MagicPlayer player=permanent.getController();
-            return (player==data) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+            return permanent.isController(upkeepPlayer) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        player + " loses 1 life.") :
+                    permanent,
+                    this,
+                    "PN loses 1 life."
+                ):
                 MagicEvent.NONE;
         }
         

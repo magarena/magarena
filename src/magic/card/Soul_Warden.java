@@ -11,13 +11,13 @@ public class Soul_Warden {
     public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
-            return (otherPermanent != permanent && otherPermanent.isCreature()) ?
+            return (otherPermanent != permanent && 
+                    otherPermanent.isCreature()) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        player + " gains 1 life."):
+                    permanent,
+                    this,
+                    "PN gains 1 life."
+                ):
                 MagicEvent.NONE;
         }
         

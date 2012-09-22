@@ -17,15 +17,13 @@ public class Soltari_Champion {
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicPermanent data) {
-            final MagicPlayer player = permanent.getController();
-            return (permanent == data) ?
+                final MagicPermanent attacker) {
+            return (permanent == attacker) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    "Other creatures " + player +
-                    " controls get +1/+1 until end of turn."):
+                    "Other creatures PN controls get +1/+1 until end of turn."
+                ):
                 MagicEvent.NONE;
         }    
         @Override
