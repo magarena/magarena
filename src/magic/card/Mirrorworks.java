@@ -22,15 +22,15 @@ public class Mirrorworks {
                     otherPermanent.isNonToken() &&
                     otherPermanent.isArtifact()) ?
                 new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        new MagicMayChoice(
-                            "You may pay {2}.",
-                            new MagicPayManaCostChoice(MagicManaCost.TWO)),
-                        new Object[]{otherPermanent.getCardDefinition()},
-                        this,
-                        "You may$ pay {2}. If you do, put a token that's a " +
-                        "copy of " + otherPermanent + " onto the battlefield."):
+                    permanent,
+                    new MagicMayChoice(
+                        new MagicPayManaCostChoice(MagicManaCost.TWO)
+                    ),
+                    new Object[]{otherPermanent.getCardDefinition()},
+                    this,
+                    "You may$ pay {2}. If you do, put a token that's a " +
+                    "copy of " + otherPermanent + " onto the battlefield."
+                ):
                 MagicEvent.NONE;
         }
         
@@ -42,8 +42,9 @@ public class Mirrorworks {
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 game.doAction(new MagicPlayTokenAction(
-                        event.getPlayer(),
-                        (MagicCardDefinition)data[0]));
+                    event.getPlayer(),
+                    (MagicCardDefinition)data[0]
+                ));
             }            
         }        
     };
