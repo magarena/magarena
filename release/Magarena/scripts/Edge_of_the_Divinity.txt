@@ -8,3 +8,4 @@ subtype=Aura
 cost={W/B}
 timing=aura
 requires_card_code
+enchant=pump,pos creature
