@@ -15,14 +15,12 @@ public class Nagao__Bound_by_Honor {
     public static final MagicWhenAttacksTrigger T3 = new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            final MagicPlayer player = creature.getController();
             return (permanent == creature) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        "Samurai creatures " + player +
-                        " controls get +1/+1 until end of turn.") :
+                    permanent,
+                    this,
+                    "Samurai creatures PN controls get +1/+1 until end of turn."
+                ) :
                 MagicEvent.NONE;
         }
         

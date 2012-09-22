@@ -13,15 +13,13 @@ public class Soul_Link {
     public static final MagicWhenDamageIsDealtTrigger T1 = new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            final MagicPlayer player=permanent.getController();
             final int amount=damage.getDealtAmount();
             return (damage.getSource()==permanent.getEnchantedCreature()) ?
                 new MagicEvent(
                         permanent,
-                        player,
                         new Object[]{amount},
                         this,
-                        player + " gains " + amount + " life.") :
+                        "PN gains " + amount + " life.") :
                 MagicEvent.NONE;
         }
         @Override
@@ -38,15 +36,13 @@ public class Soul_Link {
     public static final MagicWhenDamageIsDealtTrigger T2 = new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            final MagicPlayer player=permanent.getController();
             final int amount=damage.getDealtAmount();
             return (damage.getTarget()==permanent.getEnchantedCreature()) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new Object[]{amount},
                     this,
-                    player + " gains " + amount + " life.") :
+                    "PN gains " + amount + " life.") :
                 MagicEvent.NONE;
         }
         @Override

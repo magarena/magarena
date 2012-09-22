@@ -17,13 +17,11 @@ public class Maalfeld_Twins {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicGraveyardTriggerData triggerData) {
-            final MagicPlayer player = permanent.getController();
             return (MagicLocationType.Play == triggerData.fromLocation) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    player + " puts two 2/2 black Zombie " +
+                    "PN puts two 2/2 black Zombie " +
                     "creature tokens onto the battlefield.") :
                 MagicEvent.NONE;
         }

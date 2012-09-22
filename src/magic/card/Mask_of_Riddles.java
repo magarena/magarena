@@ -17,21 +17,19 @@ public class Mask_of_Riddles {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicDamage damage) {
-            final MagicPlayer player = permanent.getController();
             return (permanent.getEquippedCreature() == damage.getSource() &&
                     damage.getTarget().isPlayer() &&
                     damage.isCombat()) ?
-                    new MagicEvent(
-                            permanent,
-                            player,
-                            new MagicSimpleMayChoice(
-                                    player + " may draw a card.",
-                                    MagicSimpleMayChoice.DRAW_CARDS,
-                                    1,
-                                    MagicSimpleMayChoice.DEFAULT_NONE),
-                            this,
-                            player + " may$ draw a card.") :
-                    MagicEvent.NONE;
+                new MagicEvent(
+                    permanent,
+                    new MagicSimpleMayChoice(
+                        MagicSimpleMayChoice.DRAW_CARDS,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_NONE),
+                    this,
+                    "PN may$ draw a card."
+                ) :
+                MagicEvent.NONE;
         }
 
         @Override

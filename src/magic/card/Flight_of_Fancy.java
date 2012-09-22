@@ -12,10 +12,10 @@ public class Flight_of_Fancy {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    this,
-                    player + " draws two cards.");
+                permanent,
+                this,
+                "PN draws two cards."
+            );
         }
         @Override
         public void executeEvent(

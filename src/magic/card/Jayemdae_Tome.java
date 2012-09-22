@@ -22,10 +22,12 @@ public class Jayemdae_Tome {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
-            return new MagicEvent[] { new MagicPayManaCostTapEvent(
-                            source,
-                            source.getController(),
-                            MagicManaCost.FOUR)
+            return new MagicEvent[] {
+                new MagicPayManaCostTapEvent(
+                    source,
+                    source.getController(),
+                    MagicManaCost.FOUR
+                )
             };
         }
 
@@ -33,12 +35,10 @@ public class Jayemdae_Tome {
         public MagicEvent getPermanentEvent(
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
-            final MagicPlayer player = source.getController();
             return new MagicEvent(
                     source,
-                    player,
                     this,
-                    player + " draws a card.");
+                    "PN draws a card.");
         }
 
         @Override

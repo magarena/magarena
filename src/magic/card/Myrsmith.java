@@ -16,20 +16,18 @@ import magic.model.trigger.MagicWhenOtherSpellIsCastTrigger;
 public class Myrsmith {
     public static final MagicWhenOtherSpellIsCastTrigger T = new MagicWhenOtherSpellIsCastTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
-            final MagicPlayer player = permanent.getController();
-            final MagicCard card = data.getCard();
-            return (card.getOwner() == player &&
-                    data.getCardDefinition().isArtifact()) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack spell) {
+            return (permanent.isFriend(spell) &&
+                    spell.getCardDefinition().isArtifact()) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicMayChoice(
-                                "You may pay {1}.",
-                                new MagicPayManaCostChoice(MagicManaCost.ONE)),
-                        this,
-                        player + " may$ pay {1}$. If you do, put a 1/1 " +
-                        "colorless Myr artifact creature token onto the battlefield."):
+                    permanent,
+                    new MagicMayChoice(
+                        new MagicPayManaCostChoice(MagicManaCost.ONE)
+                    ),
+                    this,
+                    "PN may$ pay {1}$. If you do, put a 1/1 " +
+                    "colorless Myr artifact creature token onto the battlefield."
+                ) :
                 MagicEvent.NONE;
         }
         
