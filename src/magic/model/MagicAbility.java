@@ -92,17 +92,6 @@ public enum MagicAbility {
     Undying("undying",60),
     Soulbond("soulbond",30),
     
-    // 60 core ability (do not override addAbilityImpl)
-    // the rest override addAbilityImpl
-
-    // Ability should either be stored in abilityFlags OR override addAbilityImpl, but not both
-    
-    Changeling("changeling",10) {
-        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            card.add(MagicCDA.Changeling);
-        }
-    },
-    
     Modular("modular", 10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             final int n = Integer.parseInt(arg);
@@ -113,6 +102,15 @@ public enum MagicAbility {
     Flanking("flanking",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             card.add(MagicFlankingTrigger.create());
+        }
+    },
+
+    // 62 core ability that are tracked in permanent's abilityFlags
+    // see MagicAbility.CORE
+    
+    Changeling("changeling",10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(MagicCDA.Changeling);
         }
     },
     Exalted("exalted",10) {
@@ -551,6 +549,8 @@ public enum MagicAbility {
         }
     },
     None("",0);
+    
+    public static final EnumSet<MagicAbility> CORE = EnumSet.range(AttacksEachTurnIfAble, Flanking);
 
     public static final long PROTECTION_FLAGS=
         ProtectionFromBlack.getMask()|
@@ -605,7 +605,7 @@ public enum MagicAbility {
     }
     
     public long getMask() {
-        assert !hasImpl() : this + " ability cannot be used in given_ability";
+        assert CORE.contains(this) : this + " ability has no mask";
         return mask;
     }
     
@@ -654,6 +654,4 @@ public enum MagicAbility {
         }
         return flags;
     }
-    
-    public static final EnumSet<MagicAbility> CORE = EnumSet.range(AttacksEachTurnIfAble, Soulbond);
 }
