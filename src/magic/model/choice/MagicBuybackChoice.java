@@ -22,16 +22,14 @@ public class MagicBuybackChoice extends MagicChoice {
     private final MagicChoice otherChoice;
     private final MagicManaCost cost;
     
-    public MagicBuybackChoice(final MagicManaCost cost) {
-        super("");
-        this.otherChoice = MagicChoice.NONE;
-        this.cost = cost;
-    }
-    
     public MagicBuybackChoice(final MagicChoice otherChoice,final MagicManaCost cost) {
         super("");
         this.otherChoice = otherChoice;
         this.cost = cost;
+    }
+    
+    public MagicBuybackChoice(final MagicManaCost cost) {
+        this(MagicChoice.NONE, cost);
     }
 
     @Override
