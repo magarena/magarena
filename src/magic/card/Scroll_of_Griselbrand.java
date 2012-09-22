@@ -29,20 +29,19 @@ public class Scroll_of_Griselbrand {
             final MagicPermanent permanent = (MagicPermanent)source;
             return new MagicEvent[]{
                 new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE),
-                new MagicSacrificeEvent(permanent)};
+                new MagicSacrificeEvent(permanent)
+            };
         }
 
         @Override
         public MagicEvent getPermanentEvent(
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
-            final MagicPlayer player = source.getController();
             return new MagicEvent(
                 source,
-                player,
                 this,
-                "Opponent discards a card. If " + player +
-                " controls a Demon, opponent loses 3 life.");
+                "Opponent discards a card. If PN controls a Demon, opponent loses 3 life."
+            );
         }
 
         @Override

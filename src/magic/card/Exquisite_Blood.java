@@ -15,15 +15,13 @@ public class Exquisite_Blood {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicLifeChangeTriggerData lifeChange) {
-            final MagicPlayer player = permanent.getController();
             final int amount = lifeChange.amount;
-            return (player.getOpponent() == lifeChange.player) ?
+            return permanent.isOpponent(lifeChange.player) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new Object[]{amount},
                     this,
-                    player + " gains " + amount + " life."):
+                    "PN gains " + amount + " life."):
                 MagicEvent.NONE;
         }
         @Override

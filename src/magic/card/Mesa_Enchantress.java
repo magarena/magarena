@@ -15,20 +15,18 @@ import magic.model.trigger.MagicWhenOtherSpellIsCastTrigger;
 public class Mesa_Enchantress {
     public static final MagicWhenOtherSpellIsCastTrigger T = new MagicWhenOtherSpellIsCastTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
-            final MagicPlayer player = permanent.getController();
-            final MagicCard card = data.getCard();
-            return (card.getOwner() == player && card.getCardDefinition().isEnchantment()) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack spell) {
+            return (permanent.isFriend(spell) && 
+                    spell.getCardDefinition().isEnchantment()) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicSimpleMayChoice(
-                                player + " may draw a card.",
-                                MagicSimpleMayChoice.DRAW_CARDS,
-                                1,
-                                MagicSimpleMayChoice.DEFAULT_NONE),
-                        this,
-                        player + " may$ draw a card."):
+                    permanent,
+                    new MagicSimpleMayChoice(
+                        MagicSimpleMayChoice.DRAW_CARDS,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_NONE),
+                    this,
+                    "PN may$ draw a card."
+                ):
                 MagicEvent.NONE;
         }
         

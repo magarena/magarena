@@ -19,15 +19,13 @@ public class Sphinx_of_Lost_Truths {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-            final boolean kicked=permanent.isKicked();
             return new MagicEvent(
-                    permanent,
-                    player,
-                    new Object[]{kicked},
-                    this,
-                    kicked ? 
-                    player + " draws three cards." :
-                    player + " draws three cards. Then discards three cards.");
+                permanent,
+                this,
+                permanent.isKicked() ? 
+                    "PN draws three cards." :
+                    "PN draws three cards. Then discards three cards."
+            );
         }
         @Override
         public void executeEvent(
@@ -37,8 +35,7 @@ public class Sphinx_of_Lost_Truths {
                 final Object[] choiceResults) {
             final MagicPlayer player=event.getPlayer();
             game.doAction(new MagicDrawAction(player,3));
-            final boolean kicked=(Boolean)data[0];
-            if (!kicked) {
+            if (event.getPermanent().isKicked()) {
                 game.addEvent(new MagicDiscardEvent(event.getPermanent(),player,3,false));
             }
         }        

@@ -12,15 +12,14 @@ public class Kami_of_the_Honored_Dead {
     public static final MagicWhenDamageIsDealtTrigger T2 = new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            final MagicPlayer player = permanent.getController();
             final int amount = damage.getDealtAmount();
             return (damage.getTarget() == permanent) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{amount},
-                        this,
-                        player + " gains " + amount + " life.") :
+                    permanent,
+                    new Object[]{amount},
+                    this,
+                    "PN gains " + amount + " life."
+                ) :
                 MagicEvent.NONE;
         }
         

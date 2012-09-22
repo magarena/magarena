@@ -15,16 +15,15 @@ public class Caustic_Crawler {
     public static final MagicLandfallTrigger T = new MagicLandfallTrigger() {
         @Override
         public MagicEvent getEvent(final MagicPermanent permanent) {
-            final MagicPlayer player = permanent.getController();
             return new MagicEvent(
-                    permanent,
-                    player,
-                    new MagicMayChoice(
-                            player + " may have target creature get -1/-1 until end of turn.",
-                            MagicTargetChoice.NEG_TARGET_CREATURE),
-                    new MagicWeakenTargetPicker(1,1),
-                    this,
-                    player + " may$ have target creature$ get -1/-1 until end of turn.");
+                permanent,
+                new MagicMayChoice(
+                    MagicTargetChoice.NEG_TARGET_CREATURE
+                ),
+                new MagicWeakenTargetPicker(1,1),
+                this,
+                "PN may$ have target creature$ get -1/-1 until end of turn."
+            );
         }
         
         @Override
