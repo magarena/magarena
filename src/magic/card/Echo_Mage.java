@@ -48,18 +48,17 @@ public class Echo_Mage {
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicPlayer player=source.getController();
             final int amount=source.getCounters(MagicCounterType.Charge)>=4?2:1;
             final String description = amount == 2 ?
                     "Copy target instant or sorcery spell$ twice. You may choose new targets for the copies.":
                     "Copy target instant or sorcery spell$. You may choose new targets for the copy.";
             return new MagicEvent(
-                    source,
-                    player,
-                    MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_SPELL,
-                    new Object[]{amount},
-                    this,
-                    description);
+                source,
+                MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_SPELL,
+                new Object[]{amount},
+                this,
+                description
+            );
         }
 
         @Override
