@@ -19,7 +19,7 @@ public class Seascape_Aerialist {
     public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            return (otherPermanent.hasSameController(permanent) &&
+            return (otherPermanent.isFriend(permanent) &&
                     otherPermanent.hasSubType(MagicSubType.Ally)) ?
                 new MagicEvent(
                     permanent,

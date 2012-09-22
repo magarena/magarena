@@ -16,7 +16,7 @@ public class Nettle_Sentinel {
     public static final MagicWhenOtherSpellIsCastTrigger T = new MagicWhenOtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack spell) {
-            return (permanent.hasSameController(spell) &&
+            return (permanent.isFriend(spell) &&
                     MagicColor.Green.hasColor(spell.getColorFlags()) &&
                     permanent.isTapped()) ?
                 new MagicEvent(

@@ -15,7 +15,7 @@ public class Sangromancer {
     public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T1 = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            return (otherPermanent.hasDifferentController(permanent) && 
+            return (otherPermanent.isEnemy(permanent) && 
                     otherPermanent.isCreature()) ?
                 new MagicEvent(
                     permanent,
@@ -43,7 +43,7 @@ public class Sangromancer {
     public static final MagicWhenDiscardedTrigger T2 =new MagicWhenDiscardedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard card) {
-            return permanent.hasDifferentController(card) ?
+            return permanent.isEnemy(card) ?
                 new MagicEvent(
                     permanent,
                     new MagicSimpleMayChoice(

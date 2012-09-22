@@ -13,7 +13,7 @@ public class Gustcloak_Savior {
     public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            return permanent.hasSameController(creature) ?
+            return permanent.isFriend(creature) ?
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(),

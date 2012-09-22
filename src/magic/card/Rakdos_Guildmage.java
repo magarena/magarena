@@ -39,7 +39,6 @@ public class Rakdos_Guildmage {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     new MagicWeakenTargetPicker(2,2),
                     this,
@@ -69,12 +68,10 @@ public class Rakdos_Guildmage {
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicPlayer player=source.getController();
             return new MagicEvent(
                     source,
-                    player,
                     this,
-                    player + " puts a 2/1 red Goblin creature token with haste onto the battlefield. Exile it at end of turn.");
+                    "PN puts a 2/1 red Goblin creature token with haste onto the battlefield. Exile it at end of turn.");
         }
         @Override
         public void executeEvent(

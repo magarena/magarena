@@ -15,7 +15,7 @@ public class Seraph_Sanctuary {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPermanent otherPermanent) {
-            return (otherPermanent.hasSameController(permanent) &&
+            return (otherPermanent.isFriend(permanent) &&
                     otherPermanent.hasSubType(MagicSubType.Angel)) ?
                 new MagicEvent(
                     permanent,

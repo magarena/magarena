@@ -18,7 +18,7 @@ public class Knucklebone_Witch {
             final MagicPermanent permanent, 
             final MagicPermanent otherPermanent) {
             return (permanent != otherPermanent &&
-                    otherPermanent.hasSameController(permanent) &&
+                    otherPermanent.isFriend(permanent) &&
                     otherPermanent.hasSubType(MagicSubType.Goblin)) ? 
                 new MagicEvent(
                     permanent, 

@@ -34,7 +34,7 @@ public class Beastmaster_Ascension {
     public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            return creature.hasSameController(permanent) ?
+            return creature.isFriend(permanent) ?
                 new MagicEvent(
                     permanent,
                     new MagicSimpleMayChoice(

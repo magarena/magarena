@@ -16,7 +16,7 @@ public class Aura_Shards {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
             return (otherPermanent.isCreature() && 
-                    otherPermanent.hasSameController(permanent)) ?
+                    otherPermanent.isFriend(permanent)) ?
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(

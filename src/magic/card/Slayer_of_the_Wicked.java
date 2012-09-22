@@ -17,14 +17,13 @@ public class Slayer_of_the_Wicked {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    new MagicMayChoice(
-                        player + " may destroy target Vampire, Werewolf, or Zombie.",
-                        MagicTargetChoice.NEG_TARGET_VAMPIRE_WEREWOLF_OR_ZOMBIE),
-                    new MagicDestroyTargetPicker(false),
-                    this,
-                    player + " may$ destroy target Vampire, Werewolf, or Zombie$.");
+                permanent,
+                new MagicMayChoice(
+                    MagicTargetChoice.NEG_TARGET_VAMPIRE_WEREWOLF_OR_ZOMBIE
+                ),
+                new MagicDestroyTargetPicker(false),
+                this,
+                "PN may$ destroy target Vampire, Werewolf, or Zombie$.");
         }
                     
         @Override

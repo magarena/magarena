@@ -18,19 +18,16 @@ public class Glissa__the_Traitor {
     public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
-            return (otherPermanent.getController() != player &&
+            return (otherPermanent.isEnemy(permanent) &&
                     otherPermanent.isCreature()) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new MagicMayChoice(
-                            player + " may return target artifact card " +
-                            "from his or her graveyard to his or her hand.",
-                            MagicTargetChoice.TARGET_ARTIFACT_CARD_FROM_GRAVEYARD),
-                        new MagicGraveyardTargetPicker(false),
+                        MagicTargetChoice.TARGET_ARTIFACT_CARD_FROM_GRAVEYARD
+                    ),
+                    new MagicGraveyardTargetPicker(false),
                     this,
-                    player + " may$ return target artifact card$ " +
+                    "PN may$ return target artifact card$ " +
                     "from his or her graveyard to his or her hand.") :
                 MagicEvent.NONE;
         }

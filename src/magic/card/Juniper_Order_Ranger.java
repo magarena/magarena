@@ -14,7 +14,7 @@ public class Juniper_Order_Ranger {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
             return (otherPermanent!=permanent && 
                     otherPermanent.isCreature() && 
-                    otherPermanent.hasSameController(permanent)) ?
+                    otherPermanent.isFriend(permanent)) ?
                 new MagicEvent(
                     permanent,
                     new Object[]{otherPermanent},

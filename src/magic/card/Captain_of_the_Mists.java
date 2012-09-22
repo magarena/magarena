@@ -29,7 +29,7 @@ public class Captain_of_the_Mists {
                 final MagicPermanent otherPermanent) {
             return (otherPermanent != permanent &&
                     otherPermanent.isCreature() && 
-                    otherPermanent.hasSameController(permanent) &&
+                    otherPermanent.isFriend(permanent) &&
                     otherPermanent.hasSubType(MagicSubType.Human)) ?
                 new MagicEvent(
                     permanent,

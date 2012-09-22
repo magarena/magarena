@@ -25,7 +25,7 @@ public class Golem_Foundry {
     public static final MagicWhenOtherSpellIsCastTrigger T = new MagicWhenOtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
-            return (permanent.hasSameController(cardOnStack) && 
+            return (permanent.isFriend(cardOnStack) && 
                     cardOnStack.getCardDefinition().isArtifact()) ?
                 new MagicEvent(
                     permanent,

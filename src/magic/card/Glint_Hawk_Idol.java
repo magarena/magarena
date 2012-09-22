@@ -55,7 +55,7 @@ public class Glint_Hawk_Idol {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
             return (otherPermanent != permanent &&
                     otherPermanent.isArtifact() && 
-                    otherPermanent.hasSameController(permanent)) ?
+                    otherPermanent.isFriend(permanent)) ?
                 new MagicEvent(
                     permanent,
                     new MagicSimpleMayChoice(

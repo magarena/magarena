@@ -20,7 +20,7 @@ public class Quest_for_Renewal {
     public static final MagicWhenBecomesTappedTrigger T1 = new MagicWhenBecomesTappedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent tapped) {
-            return (tapped.hasSameController(permanent) && 
+            return (tapped.isFriend(permanent) && 
                     tapped.isCreature()) ?
                 new MagicEvent(
                     permanent,

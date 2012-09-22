@@ -18,7 +18,7 @@ public class Tajuru_Archer {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent other) {
             final int numAllies = permanent.getController().getNrOfPermanentsWithSubType(MagicSubType.Ally);
-            return (other.hasSameController(permanent) &&
+            return (other.isFriend(permanent) &&
                     other.hasSubType(MagicSubType.Ally)) ?
                 new MagicEvent(
                     permanent,

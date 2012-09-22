@@ -16,7 +16,7 @@ public class Indebted_Samurai {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
             return (otherPermanent.isCreature() &&
-                    otherPermanent.hasSameController(permanent) &&
+                    otherPermanent.isFriend(permanent) &&
                     otherPermanent.hasSubType(MagicSubType.Samurai)) ?
                 new MagicEvent(
                     permanent,

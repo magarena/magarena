@@ -39,16 +39,14 @@ public class Seance {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPlayer data) {
-            final MagicPlayer player = permanent.getController();
             return new MagicEvent(
                 permanent,
-                player,
                 new MagicMayChoice(
-                        player + " may exile target creature card from your graveyard.",
-                        MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD),
-                        new MagicGraveyardTargetPicker(true),
+                    MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD
+                ),
+                new MagicGraveyardTargetPicker(true),
                 this,
-                player + " may$ exile target creature card$ from his or her graveyard. " +
+                "PN may$ exile target creature card$ from his or her graveyard. " +
                 "If he or she does, put a token onto the battlefield that's a copy " +
                 "of that card except it's a Spirit in addition to its other types. " +
                 "Exile it at the beginning of the next end step.");

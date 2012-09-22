@@ -76,7 +76,7 @@ public class Angel_s_Tomb {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPermanent otherPermanent) {
-            return (otherPermanent.hasSameController(permanent) &&
+            return (otherPermanent.isFriend(permanent) &&
                     otherPermanent.isCreature()) ?
                 new MagicEvent(
                         permanent,

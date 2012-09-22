@@ -64,7 +64,7 @@ public class Quest_for_the_Gemblades {
             final MagicSource source=damage.getSource();
             final MagicTarget target=damage.getTarget();
             return (damage.isCombat() && 
-                    permanent.hasSameController(source) && 
+                    permanent.isFriend(source) && 
                     source.isPermanent() && 
                     target.isPermanent() &&
                     ((MagicPermanent)source).isCreature() && 

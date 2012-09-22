@@ -43,7 +43,7 @@ public class Mycoid_Shepherd {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
             return (otherPermanent!=permanent &&
-                    otherPermanent.hasSameController(permanent) &&
+                    otherPermanent.isFriend(permanent) &&
                     otherPermanent.isCreature() && 
                     otherPermanent.getPower()>=5) ?
                 new MagicEvent(
