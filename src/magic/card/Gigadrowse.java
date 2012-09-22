@@ -20,11 +20,16 @@ public class Gigadrowse {
                 final MagicCardOnStack cardOnStack,
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack,
-                    new MagicKickerChoice(MagicTargetChoice.NEG_TARGET_PERMANENT, MagicManaCost.BLUE, true, true),
-                    new MagicTapTargetPicker(true,false),
-                    this,
-                    "Tap target permanent$.");
+                cardOnStack,
+                new MagicKickerChoice(
+                    MagicTargetChoice.NEG_TARGET_PERMANENT, 
+                    MagicManaCost.BLUE, 
+                    true, 
+                    true
+                ),
+                new MagicTapTargetPicker(true,false),
+                this,
+                "Tap target permanent$.");
         }
         @Override
         public void executeEvent(
