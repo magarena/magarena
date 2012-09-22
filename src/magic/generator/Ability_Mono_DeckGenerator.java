@@ -48,19 +48,18 @@ public class Ability_Mono_DeckGenerator extends DefaultDeckGenerator {
     }
     
     private void getPossibleTribes() {
-        for(MagicAbility ab : MagicAbility.values()) {
+        for(MagicAbility ab : MagicAbility.CORE) {
             HashMap<MagicColor, Integer> countColors = new HashMap<MagicColor, Integer>();
-            countColors.put(MagicColor.Black, new Integer(0));
-            countColors.put(MagicColor.White, new Integer(0));
-            countColors.put(MagicColor.Green, new Integer(0));
-            countColors.put(MagicColor.Red, new Integer(0));
-            countColors.put(MagicColor.Blue, new Integer(0));
+            countColors.put(MagicColor.Black, 0);
+            countColors.put(MagicColor.White, 0);
+            countColors.put(MagicColor.Green, 0);
+            countColors.put(MagicColor.Red,   0);
+            countColors.put(MagicColor.Blue,  0);
             
             // count colors
             for(MagicCardDefinition card : CardDefinitions.getCards()) {
-                if(card.hasAbility(ab)) {
+                if (card.hasAbility(ab)) {
                     int colorFlags = card.getColorFlags();
-                    
                     for(MagicColor c : countColors.keySet()) {
                         if (c.hasColor(colorFlags)) {
                             countColors.put(c, new Integer(countColors.get(c).intValue() + 1));

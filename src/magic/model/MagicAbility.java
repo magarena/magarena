@@ -1,6 +1,8 @@
 package magic.model;
 
 import java.util.List;
+import java.util.EnumSet;
+
 import magic.model.MagicCardDefinition;
 import magic.model.MagicManaCost;
 import magic.model.MagicManaType;
@@ -623,7 +625,7 @@ public enum MagicAbility {
     
     public static int getScore(final long flags) {
         int score=0;
-        for (final MagicAbility ability : values()) {
+        for (final MagicAbility ability : CORE) {
             if (ability.hasAbility(flags)) {
                 score+=ability.getScore();
             }
@@ -652,4 +654,6 @@ public enum MagicAbility {
         }
         return flags;
     }
+    
+    public static final EnumSet<MagicAbility> CORE = EnumSet.range(AttacksEachTurnIfAble, Soulbond);
 }
