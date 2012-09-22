@@ -177,7 +177,7 @@ inf: $(MAG)
 
 %.t: $(MAG)
 	echo `hg id -n` > $*.log
-	$(JAVAEA) -DrndSeed=$* -DselfMode -jar $^ >> $*.log 2>&1
+	$(JAVAEA) -DrndSeed=$* -Dmagarena.dir=`pwd`/release -DselfMode -jar $^ >> $*.log 2>&1
 
 test: $(MAG)
 	-make `date +%s`.d
