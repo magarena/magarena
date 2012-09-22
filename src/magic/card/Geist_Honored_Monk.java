@@ -25,9 +25,8 @@ public class Geist_Honored_Monk {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
             return new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    player + " puts two 1/1 white Spirit creature tokens with flying onto the battlefield.");
+                    "PN puts two 1/1 white Spirit creature tokens with flying onto the battlefield.");
         }
         
         @Override

@@ -21,12 +21,12 @@ public class Craterhoof_Behemoth {
                 final MagicPermanent permanent,
                 final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    this,
-                    "Creatures " + player + " controls gain trample " +
-                    "and get +X/+X until end of turn, where X is " +
-                    "the number of creatures " + player + " controls.");
+                permanent,
+                this,
+                "Creatures PN controls gain trample " +
+                "and get +X/+X until end of turn, where X is " +
+                "the number of creatures PN controls."
+            );
         }
         @Override
         public void executeEvent(

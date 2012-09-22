@@ -47,19 +47,18 @@ public class Deathbringer_Liege {
     };
     public static final MagicWhenOtherSpellIsCastTrigger T = new MagicWhenOtherSpellIsCastTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
-            final MagicPlayer player=permanent.getController();
-            final MagicCard card=data.getCard();
-            return (card.getOwner()==player&&MagicColor.Black.hasColor(card.getColorFlags())) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack spell) {
+            return (permanent.isFriend(spell) && 
+                    MagicColor.Black.hasColor(spell.getColorFlags())) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicMayChoice(
-                            player + " may destroy target creature if it's tapped.",
-                            MagicTargetChoice.NEG_TARGET_CREATURE),
-                        new MagicDestroyTargetPicker(false),
-                        this,
-                        player + " may$ destroy target creature$ if it's tapped."):
+                    permanent,
+                    new MagicMayChoice(
+                        MagicTargetChoice.NEG_TARGET_CREATURE
+                    ),
+                    new MagicDestroyTargetPicker(false),
+                    this,
+                    "PN may$ destroy target creature$ if it's tapped."
+                ):
                 MagicEvent.NONE;
         }
         
@@ -79,19 +78,18 @@ public class Deathbringer_Liege {
     
     public static final MagicWhenOtherSpellIsCastTrigger T2 = new MagicWhenOtherSpellIsCastTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
-            final MagicPlayer player=permanent.getController();
-            final MagicCard card=data.getCard();
-            return (card.getOwner()==player&&MagicColor.White.hasColor(card.getColorFlags())) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack spell) {
+            return (permanent.isFriend(spell) && 
+                    MagicColor.White.hasColor(spell.getColorFlags())) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicMayChoice(
-                            player + " may tap target creature.",
-                            MagicTargetChoice.NEG_TARGET_CREATURE),
-                        new MagicTapTargetPicker(true,false),
-                        this,
-                        player + " may$ tap target creature$."):
+                    permanent,
+                    new MagicMayChoice(
+                        MagicTargetChoice.NEG_TARGET_CREATURE
+                    ),
+                    new MagicTapTargetPicker(true,false),
+                    this,
+                    "PN may$ tap target creature$."
+                ):
                 MagicEvent.NONE;
         }
         @Override

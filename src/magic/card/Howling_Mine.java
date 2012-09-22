@@ -10,13 +10,14 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 public class Howling_Mine {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
-            return (permanent.isUntapped()) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+            return permanent.isUntapped() ?
                 new MagicEvent(
                     permanent,
-                    player,
+                    upkeepPlayer,
                     this,
-                    player + " draws a card."):
+                    "PN draws a card."
+                ):
                 MagicEvent.NONE;
         }
         

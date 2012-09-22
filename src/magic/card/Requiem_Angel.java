@@ -16,17 +16,15 @@ public class Requiem_Angel {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
             return (permanent != otherPermanent &&
-                    otherPermanent.getController() == player &&
+                    otherPermanent.isFriend(permanent) &&
                     otherPermanent.isCreature() &&
                     !otherPermanent.hasSubType(MagicSubType.Spirit)) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    player + " puts a 1/1 white Spirit creature " +
-                        "token with flying onto the battlefield."):
+                    "PN puts a 1/1 white Spirit creature " +
+                    "token with flying onto the battlefield."):
                 MagicEvent.NONE;
         }
         @Override
