@@ -20,20 +20,18 @@ public class Goblin_Lackey {
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            final MagicPlayer player = permanent.getController();
             return (damage.getSource() == permanent &&
                     damage.getTarget().isPlayer()) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicMayChoice(
-                            player + " may put a Goblin permanent card from " +
-                            "his or her hand onto the battlefield.",
-                            MagicTargetChoice.TARGET_GOBLIN_CARD_FROM_HAND),
-                        new MagicGraveyardTargetPicker(true),
-                        this,
-                        player + " may$ put a Goblin permanent card$ from " +
-                        "his or her hand onto the battlefield."):
+                    permanent,
+                    new MagicMayChoice(
+                        MagicTargetChoice.TARGET_GOBLIN_CARD_FROM_HAND
+                    ),
+                    new MagicGraveyardTargetPicker(true),
+                    this,
+                    "PN may$ put a Goblin permanent card$ from " +
+                    "his or her hand onto the battlefield."
+                ):
                 MagicEvent.NONE;
         }
         

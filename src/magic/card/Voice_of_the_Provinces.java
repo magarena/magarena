@@ -16,11 +16,11 @@ public class Voice_of_the_Provinces {
                 final MagicPermanent permanent,
                 final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    this,
-                    player + " puts a 1/1 white Human " +
-                    "creature token onto the battlefield.");
+                permanent,
+                this,
+                "PN puts a 1/1 white Human " +
+                "creature token onto the battlefield."
+            );
         }
         
         @Override

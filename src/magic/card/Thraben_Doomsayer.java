@@ -52,12 +52,10 @@ public class Thraben_Doomsayer {
         public MagicEvent getPermanentEvent(
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
-            final MagicPlayer player = source.getController();
             return new MagicEvent(
                     source,
-                    player,
                     this,
-                    player + " puts a 1/1 white Human " +
+                    "PN puts a 1/1 white Human " +
                     "creature token onto the battlefield.");
         }
 

@@ -29,12 +29,10 @@ public class Dauntless_Escort {
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicPlayer player=source.getController();
             return new MagicEvent(
                     source,
-                    player,
                     this,
-                    "Creatures " + player + " control are indestructible this turn.");
+                    "Creatures PN control are indestructible this turn.");
         }
         @Override
         public void executeEvent(

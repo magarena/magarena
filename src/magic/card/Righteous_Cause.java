@@ -12,12 +12,11 @@ public class Righteous_Cause {
     public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            final MagicPlayer player = permanent.getController();
             return new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        player + " gains 1 life.");
+                permanent,
+                this,
+                "PN gains 1 life."
+            );
         }
         
         @Override
