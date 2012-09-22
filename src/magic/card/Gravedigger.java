@@ -20,16 +20,15 @@ public class Gravedigger {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    new MagicMayChoice(
-                        player + " may return target creature card from " +
-                        "his or her graveyard to his or her hand.",
-                        MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD),
-                    new MagicGraveyardTargetPicker(false),
-                    this,
-                    player + " may$ return target creature card$ from" +
-                    " his or her graveyard to his or her hand.");
+                permanent,
+                new MagicMayChoice(
+                    MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD
+                ),
+                new MagicGraveyardTargetPicker(false),
+                this,
+                "PN may$ return target creature card$ from" +
+                " his or her graveyard to his or her hand."
+            );
         }
         
         @Override

@@ -17,14 +17,14 @@ public class Acid_Web_Spider {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    new MagicMayChoice(
-                            player + " may destroy target Equipment.",
-                            MagicTargetChoice.NEG_TARGET_EQUIPMENT),
-                    new MagicDestroyTargetPicker(false),
-                    this,
-                    player + " may$ destroy target Equipment$.");
+                permanent,
+                new MagicMayChoice(
+                    MagicTargetChoice.NEG_TARGET_EQUIPMENT
+                ),
+                new MagicDestroyTargetPicker(false),
+                this,
+                "PN may$ destroy target Equipment$."
+            );
         }
                     
         @Override

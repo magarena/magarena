@@ -13,10 +13,10 @@ public class Khalni_Garden {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    this,
-                    player + " puts a 0/1 green Plant creature token onto the battlefield.");
+                permanent,
+                this,
+                "PN puts a 0/1 green Plant creature token onto the battlefield."
+            );
         }
         @Override
         public void executeEvent(

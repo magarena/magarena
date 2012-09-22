@@ -5,24 +5,24 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSubType;
 import magic.model.action.MagicChangeLifeAction;
+import magic.model.action.MagicPlayerAction;
+import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.trigger.MagicWhenOtherSpellIsCastTrigger;
 
-// this card ignores the part that deals with Arcane spells
 public class Thief_of_Hope {
     public static final MagicWhenOtherSpellIsCastTrigger T2 = new MagicWhenOtherSpellIsCastTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
-            final MagicPlayer player = permanent.getController();
-            return (data.getCard().getOwner() == player &&
-                    data.getCardDefinition().hasSubType(MagicSubType.Spirit)) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack spell) {
+            return (permanent.isFriend(spell) &&
+                    (spell.getCardDefinition().hasSubType(MagicSubType.Spirit) || 
+                     spell.getCardDefinition().hasSubType(MagicSubType.Arcane))) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        player.getOpponent() + " loses 1 life and " +
-                        player + " gains 1 life."):
+                    permanent,
+                    MagicTargetChoice.TARGET_OPPONENT,
+                    this,
+                    "Target opponent$ loses 1 life and PN gains 1 life."):
                 MagicEvent.NONE;
         }
         @Override
@@ -31,9 +31,12 @@ public class Thief_of_Hope {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player = event.getPlayer();
-            game.doAction(new MagicChangeLifeAction(player.getOpponent(),-1));
-            game.doAction(new MagicChangeLifeAction(player,1));
+            event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
+                public void doAction(final MagicPlayer player) {
+                    game.doAction(new MagicChangeLifeAction(player,-1));
+                    game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
+                }
+            });
         }        
     };
 }
