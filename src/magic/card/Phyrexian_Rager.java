@@ -13,12 +13,10 @@ public class Phyrexian_Rager {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-            
             return new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    player +  " draws a card and loses 1 life.");
+                    "PN draws a card and loses 1 life.");
         }
         @Override
         public void executeEvent(

@@ -14,14 +14,13 @@ public class Hero_of_Bladehold {
     public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            final MagicPlayer player=permanent.getController();
             return (permanent==creature) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        player + " puts two 1/1 white Soldier creature tokens " + 
-                        "onto the battlefield tapped and attacking."):
+                    permanent,
+                    this,
+                    "PN puts two 1/1 white Soldier creature tokens " + 
+                    "onto the battlefield tapped and attacking."
+                ) :
                 MagicEvent.NONE;
         }
         @Override

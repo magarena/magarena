@@ -13,21 +13,17 @@ public class Jotun_Owl_Keeper {
     public static final MagicWhenLeavesPlayTrigger T2 = new MagicWhenLeavesPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            if (permanent == data) {
-                final MagicPlayer player = permanent.getController();
-                final int amount = permanent.getCounters(MagicCounterType.Charge);
-                if (amount > 0) {
-                return new MagicEvent(
+            final int amount = permanent.getCounters(MagicCounterType.Charge);
+            return (permanent == data && amount > 0) ?
+                new MagicEvent(
                     permanent,
-                    player,
                     new Object[]{amount},
                     this,
                     amount > 1 ?
-                        player + " puts " + amount + " 1/1 white Bird creature tokens with flying onto the battlefield." :
-                        player + " puts a 1/1 white Bird creature token with flying onto the battlefield.");
-                }
-            }
-            return MagicEvent.NONE;
+                        "PN puts " + amount + " 1/1 white Bird creature tokens with flying onto the battlefield." :
+                        "PN puts a 1/1 white Bird creature token with flying onto the battlefield."
+                ):
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(

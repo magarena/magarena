@@ -31,12 +31,11 @@ public class Sunspring_Expedition {
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicPlayer player=source.getController();
             return new MagicEvent(
-                    source,
-                    player,
-                    this,
-                    player + " gains 8 life");
+                source,
+                this,
+                "PN gains 8 life"
+            );
         }
         @Override
         public void executeEvent(

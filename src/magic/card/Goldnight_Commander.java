@@ -18,15 +18,14 @@ public class Goldnight_Commander {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
             return (otherPermanent != permanent &&
-                    otherPermanent.getController() == player &&
+                    otherPermanent.isFriend(permanent) &&
                     otherPermanent.isCreature()) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        "Creatures " + player + " controls get +1/+1 until end of turn."):
+                    permanent,
+                    this,
+                    "Creatures PN controls get +1/+1 until end of turn."
+                ):
                 MagicEvent.NONE;
         }
         @Override
