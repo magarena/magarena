@@ -28,21 +28,20 @@ public class Disciple_of_Griselbrand {
             "Pump") {
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
-            final MagicPlayer player = source.getController();
             return new MagicEvent[]{
-                    new MagicPayManaCostEvent(source,player,MagicManaCost.ONE)};
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE)
+            };
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicPlayer player = source.getController();
             return new MagicEvent(
-                    source,
-                    player,
-                    MagicTargetChoice.SACRIFICE_CREATURE,
-                    MagicSacrificeTargetPicker.create(),
-                    this,
-                    "Sacrifice a creature. " + player + " gains life " +
-                    "equal to sacrificed creature's toughness.");
+                source,
+                MagicTargetChoice.SACRIFICE_CREATURE,
+                MagicSacrificeTargetPicker.create(),
+                this,
+                "Sacrifice a creature. PN gains life " +
+                "equal to sacrificed creature's toughness."
+            );
         }
         @Override
         public void executeEvent(

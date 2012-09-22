@@ -14,13 +14,12 @@ public class Sprouting_Thrinax {
     public static final MagicWhenPutIntoGraveyardTrigger T = new MagicWhenPutIntoGraveyardTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
-            final MagicPlayer player = permanent.getController();
             return (MagicLocationType.Play==triggerData.fromLocation) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        player + " puts three 1/1 green Saproling creature tokens onto the battlefield.") :
+                    permanent,
+                    this,
+                    "PN puts three 1/1 green Saproling creature tokens onto the battlefield."
+                ) :
                 MagicEvent.NONE;
         }
         @Override

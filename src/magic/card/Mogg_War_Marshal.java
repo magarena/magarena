@@ -17,9 +17,8 @@ public class Mogg_War_Marshal {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
             return new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    player + " puts a 1/1 red Goblin creature token onto the battlefield.");
+                    "PN puts a 1/1 red Goblin creature token onto the battlefield.");
         }    
         @Override
         public void executeEvent(
@@ -37,13 +36,11 @@ public class Mogg_War_Marshal {
     public static final MagicWhenPutIntoGraveyardTrigger T3 = new MagicWhenPutIntoGraveyardTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
-            final MagicPlayer player = permanent.getController();
             return (MagicLocationType.Play == triggerData.fromLocation) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    player + " puts a 1/1 red Goblin creature token onto the battlefield.") :
+                    "PN puts a 1/1 red Goblin creature token onto the battlefield.") :
                 MagicEvent.NONE;
         }    
         @Override

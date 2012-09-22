@@ -20,17 +20,16 @@ public class Undead_Executioner {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicGraveyardTriggerData triggerData) {
-            final MagicPlayer player = permanent.getController();
             return (MagicLocationType.Play == triggerData.fromLocation) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new MagicMayChoice(
-                            player + " may have target creature get -2/-2 until end of turn.",
-                            MagicTargetChoice.NEG_TARGET_CREATURE),
+                        MagicTargetChoice.NEG_TARGET_CREATURE
+                    ),
                     new MagicWeakenTargetPicker(2,2),
                     this,
-                    player + " may$ have target creature$ get -2/-2 until end of turn.") :
+                    "PN may$ have target creature$ get -2/-2 until end of turn."
+                ) :
                 MagicEvent.NONE;
         }
         

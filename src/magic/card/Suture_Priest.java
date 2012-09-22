@@ -13,31 +13,29 @@ public class Suture_Priest {
     public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
             final MagicPlayer controller = otherPermanent.getController();
-            final boolean same = controller == player;
+            final boolean same = permanent.isFriend(otherPermanent);
             final int lifeChange = same ? 1 : -1;
             return (otherPermanent != permanent &&
                     otherPermanent.isCreature()) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     same ?
                         new MagicSimpleMayChoice(
-                            player + " may gain 1 life.",
                             MagicSimpleMayChoice.GAIN_LIFE,
                             1,
-                            MagicSimpleMayChoice.DEFAULT_YES) :
+                            MagicSimpleMayChoice.DEFAULT_YES
+                        ) :
                         new MagicSimpleMayChoice(
-                            player + " may have " + controller + " lose 1 life.",
                             MagicSimpleMayChoice.OPPONENT_LOSE_LIFE,
                             1,
-                            MagicSimpleMayChoice.DEFAULT_YES),
+                            MagicSimpleMayChoice.DEFAULT_YES
+                        ),
                     new Object[]{controller,lifeChange},
                     this,
                     same ?
-                        controller + " may$ gain 1 life." :
-                        player + " may$ have " + controller + " lose 1 life.") :
+                        "PN may$ gain 1 life." :
+                        "PN may$ have " + controller + " lose 1 life.") :
                 MagicEvent.NONE;
         }
         @Override

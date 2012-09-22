@@ -11,14 +11,13 @@ public class Thalakos_Seer {
     public static final MagicWhenLeavesPlayTrigger T = new MagicWhenLeavesPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent data) {
-            final MagicPlayer player = permanent.getController();
             return (permanent == data) ?
-                    new MagicEvent(
-                            permanent,
-                            player,
-                            this,
-                            player + " draws a card.") :
-                    MagicEvent.NONE;
+                new MagicEvent(
+                    permanent,
+                    this,
+                    "PN draws a card."
+                ) :
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(
