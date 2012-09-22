@@ -20,14 +20,14 @@ public class Elvish_Pioneer {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    new MagicMayChoice(
-                            player + " may put a basic land card from his or her hand into play tapped.",
-                            MagicTargetChoice.TARGET_BASIC_LAND_CARD_FROM_HAND),
-                    new MagicGraveyardTargetPicker(true),
-                    this,
-                    player + " may$ put a basic land card$ from his or her hand into play tapped.");
+                permanent,
+                new MagicMayChoice(
+                    MagicTargetChoice.TARGET_BASIC_LAND_CARD_FROM_HAND
+                ),
+                new MagicGraveyardTargetPicker(true),
+                this,
+                "PN may$ put a basic land card$ from his or her hand into play tapped."
+            );
         }
         @Override
         public void executeEvent(

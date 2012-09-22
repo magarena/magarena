@@ -20,16 +20,15 @@ public class Mnemonic_Wall {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    new MagicMayChoice(
-                        player + " may return target instant or sorcery card " +
-                        "from his or her graveyard to his or her hand.",
-                        MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD),
-                    new MagicGraveyardTargetPicker(false),
-                    this,
-                    player + " may$ return target instant or sorcery card$ " +
-                    "from his or her graveyard to his or her hand.");
+                permanent,
+                new MagicMayChoice(
+                    MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD
+                ),
+                new MagicGraveyardTargetPicker(false),
+                this,
+                "PN may$ return target instant or sorcery card$ " +
+                "from his or her graveyard to his or her hand."
+            );
         }
         
         @Override

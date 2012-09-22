@@ -12,19 +12,16 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 public class Ajani_s_Mantra {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-            final MagicPlayer player = permanent.getController();
-            return (player == data) ?
-                    new MagicEvent(
-                            permanent,
-                            player,
-                            new MagicSimpleMayChoice(
-                                    player + " may gain 1 life.",
-                                    MagicSimpleMayChoice.GAIN_LIFE,
-                                    1,
-                                    MagicSimpleMayChoice.DEFAULT_YES),
-                            this,
-                            player + " may$ gain 1 life.") :
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+            return permanent.isController(upkeepPlayer) ?
+                new MagicEvent(
+                    permanent,
+                    new MagicSimpleMayChoice(
+                        MagicSimpleMayChoice.GAIN_LIFE,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_YES),
+                    this,
+                    "PN may$ gain 1 life.") :
                 MagicEvent.NONE;
         }
         @Override

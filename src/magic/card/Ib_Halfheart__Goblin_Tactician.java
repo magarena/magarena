@@ -28,17 +28,15 @@ public class Ib_Halfheart__Goblin_Tactician {
     public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
             return (permanent != otherPermanent &&
-                    otherPermanent.getController() == player &&
+                    otherPermanent.isFriend(permanent) &&
                     otherPermanent.isCreature() &&
                     otherPermanent.hasSubType(MagicSubType.Goblin)) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new Object[]{otherPermanent},
                     this,
-                    player + " sacrifices " + otherPermanent + ". If " + player + " does, " + otherPermanent + " deals 4 damage to each creature blocking it."
+                    "PN sacrifices " + otherPermanent + ". If PN does, " + otherPermanent + " deals 4 damage to each creature blocking it."
                 ):
                 MagicEvent.NONE;
         }
@@ -76,12 +74,10 @@ public class Ib_Halfheart__Goblin_Tactician {
     
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
-            MagicPlayer player = source.getController();
             return new MagicEvent(
                 source,
-                player,
                 this,
-                player + " puts two 1/1 red Goblin creature tokens into play."
+                "PN puts two 1/1 red Goblin creature tokens into play."
             );
         }
     
