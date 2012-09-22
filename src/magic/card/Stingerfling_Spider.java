@@ -17,14 +17,14 @@ public class Stingerfling_Spider {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    new MagicMayChoice(
-                            player + " may destroy target creature with flying.",
-                            MagicTargetChoice.NEG_TARGET_CREATURE_WITH_FLYING),
-                    new MagicDestroyTargetPicker(false),
-                    this,
-                    player + " may$ destroy target creature$ with flying.");
+                permanent,
+                new MagicMayChoice(
+                    MagicTargetChoice.NEG_TARGET_CREATURE_WITH_FLYING
+                ),
+                new MagicDestroyTargetPicker(false),
+                this,
+                "PN may$ destroy target creature$ with flying."
+            );
         }
                     
         @Override

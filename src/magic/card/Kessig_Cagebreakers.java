@@ -15,15 +15,14 @@ public class Kessig_Cagebreakers {
     public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            final MagicPlayer player = permanent.getController();
-            return (permanent == creature) ?
+            return permanent == creature ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        player + " puts a 2/2 green Wolf creature token onto " +
-                        "the battlefield tapped and attacking for each creature " +
-                        "card in his or her graveyard."):
+                    permanent,
+                    this,
+                    "PN puts a 2/2 green Wolf creature token onto " +
+                    "the battlefield tapped and attacking for each creature " +
+                    "card in his or her graveyard."
+                ):
                 MagicEvent.NONE;
         }
         @Override

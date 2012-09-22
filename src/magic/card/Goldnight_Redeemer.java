@@ -17,11 +17,10 @@ public class Goldnight_Redeemer {
                 final MagicPermanent permanent,
                 final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    this,
-                    player + " gains 2 life for each " +
-                    "other creature he or she controls.");
+                permanent,
+                this,
+                "PN gains 2 life for each other creature he or she controls."
+            );
         }
                     
         @Override

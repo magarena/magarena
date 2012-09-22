@@ -14,10 +14,10 @@ public class Rites_of_Flourishing {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    this,
-                    player + " may play an additional land this turn.");
+                permanent,
+                this,
+                "PN may play an additional land this turn."
+            );
         }
         @Override
         public void executeEvent(
@@ -31,12 +31,13 @@ public class Rites_of_Flourishing {
     
     public static final MagicAtUpkeepTrigger T2 = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
-                return new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        this,
-                        player + " may play an additional land this turn.");
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+            return new MagicEvent(
+                permanent,
+                upkeepPlayer,
+                this,
+                "PN may play an additional land this turn."
+            );
         }
         
         @Override
@@ -51,12 +52,13 @@ public class Rites_of_Flourishing {
     
     public static final MagicAtUpkeepTrigger T3 = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
-                return new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        player + " draws a card.");
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+            return new MagicEvent(
+                permanent,
+                upkeepPlayer,
+                this,
+                "PN draws a card."
+            );
         }
         
         @Override
