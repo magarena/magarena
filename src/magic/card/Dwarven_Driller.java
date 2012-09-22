@@ -22,9 +22,10 @@ import magic.model.target.MagicDestroyTargetPicker;
 
 public class Dwarven_Driller {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
-            new MagicActivationHints(MagicTiming.Removal),
-            "Destroy") {
+        new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
+        new MagicActivationHints(MagicTiming.Removal),
+        "Destroy"
+    ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -61,8 +62,8 @@ public class Dwarven_Driller {
                             event.getSource() + " deal 2 damage to him or her."),
                         new Object[]{permanent},
                         EVENT_ACTION,
-                        controller + " may$ have " +
-                        event.getSource() + " deal 2 damage to him or her."));
+                        "PN may$ have SN deal 2 damage to him or her."
+                    ));
                 }
             });
         }
@@ -75,10 +76,11 @@ public class Dwarven_Driller {
                     final Object[] choiceResults) {
                 if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                     final MagicDamage damage = new MagicDamage(
-                            event.getSource(),
-                            event.getPlayer(),
-                            2,
-                            false);
+                        event.getSource(),
+                        event.getPlayer(),
+                        2,
+                        false
+                    );
                     game.doAction(new MagicDealDamageAction(damage));
                 } else {
                     game.doAction(new MagicDestroyAction((MagicPermanent)data[0]));
