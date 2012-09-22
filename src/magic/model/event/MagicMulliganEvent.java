@@ -47,7 +47,7 @@ public class MagicMulliganEvent extends MagicEvent {
             player,
             new MagicMulliganChoice(),
             EVENT_ACTION,
-            player + " may$ take a mulligan."
+            "PN may$ take a mulligan."
         );
     }
 }
