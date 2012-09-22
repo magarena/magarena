@@ -15,8 +15,22 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 
 
 public class Doomgape {
-    
-    private static final MagicEventAction EAT = new MagicEventAction() {
+
+    public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+            return permanent.isController(upkeepPlayer) ?
+                new MagicEvent(
+                    permanent,
+                    MagicTargetChoice.SACRIFICE_CREATURE,
+                    MagicSacrificeTargetPicker.create(),
+                    this,
+                    "Sacrifice a creature. " + 
+                    "PN gains life equal to that creature's toughness."
+                ):
+                MagicEvent.NONE;
+        }
+
         @Override
         public void executeEvent(
             final MagicGame game,
@@ -30,39 +44,6 @@ public class Doomgape {
                     game.doAction(new MagicChangeLifeAction(event.getPlayer(),toughness));
                 }
             });
-        }
-    };
-
-    public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-            final MagicPlayer player=permanent.getController();
-            return (player==data) ?
-                new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        "Sacrifice a creature. " + player + 
-                          " gains life equal to that creature's toughness."):
-                MagicEvent.NONE;
-        }
-
-        @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event,
-                final Object data[],
-                final Object[] choiceResults) {
-            final MagicPlayer player=event.getPlayer();
-            if (player.controlsPermanentWithType(MagicType.Creature)) {
-                game.addEvent(new MagicEvent(
-                    event.getPermanent(),
-                    player,
-                    MagicTargetChoice.SACRIFICE_CREATURE,
-                    MagicSacrificeTargetPicker.create(),
-                    EAT,
-                    "Choose a creature to sacrifice$."));
-            }
         }
     };
 }

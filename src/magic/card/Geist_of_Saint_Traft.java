@@ -16,15 +16,14 @@ public class Geist_of_Saint_Traft {
     public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            final MagicPlayer player = permanent.getController();
             return (permanent == creature) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        player + " puts a 4/4 white Angel creature token with " +
-                        "flying onto the battlefield tapped and attacking. " +
-                        "Exile that token at end of combat."):
+                    permanent,
+                    this,
+                    "PN puts a 4/4 white Angel creature token with " +
+                    "flying onto the battlefield tapped and attacking. " +
+                    "Exile that token at end of combat."
+                ):
                 MagicEvent.NONE;
         }
         @Override

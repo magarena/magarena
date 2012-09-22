@@ -17,24 +17,22 @@ public class Boggart_Mob {
     public static final MagicWhenDamageIsDealtTrigger T3 = new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            final MagicPlayer player = permanent.getController();
             final MagicSource source = damage.getSource();
             return (damage.isCombat() && 
                     damage.getTarget().isPlayer() &&
-                    source.getController() == player &&
+                    permanent.isFriend(source) &&
+                    source.isPermanent() &&
                     ((MagicPermanent)source).hasSubType(MagicSubType.Goblin)) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicSimpleMayChoice(
-                                player + " may put a 1/1 black Goblin Rogue " +
-                                        "creature token onto the battlefield.",
-                                MagicSimpleMayChoice.PLAY_TOKEN,
-                                1,
-                                MagicSimpleMayChoice.DEFAULT_YES),
-                        this,
-                        player + " may$ put a 1/1 black Goblin Rogue " +
-                        "creature token onto the battlefield."):
+                    permanent,
+                    new MagicSimpleMayChoice(
+                        MagicSimpleMayChoice.PLAY_TOKEN,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_YES),
+                    this,
+                    "PN may$ put a 1/1 black Goblin Rogue " +
+                    "creature token onto the battlefield."
+                ):
                 MagicEvent.NONE;
         }
         @Override
