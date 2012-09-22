@@ -21,18 +21,17 @@ public class MagicStormTrigger extends MagicWhenSpellIsCastTrigger {
     public MagicEvent executeTrigger(
             final MagicGame game,
             final MagicPermanent permanent,
-            final MagicCardOnStack data) {
-        final MagicPlayer player = data.getController();
+            final MagicCardOnStack spell) {
         final int count = game.getSpellsPlayed();
         return (count > 0) ?
-                new MagicEvent(
-                        data.getSource(),
-                        player,
-                        new Object[]{player,data,count},
-                        this,
-                        "Copy " + data.getSource() + " " +
-                        count + (count == 1 ? " time." : " times.")) :
-                MagicEvent.NONE;
+            new MagicEvent(
+                spell,
+                new Object[]{count},
+                this,
+                "Copy SN " + count + 
+                (count == 1 ? " time." : " times.")
+            ) :
+            MagicEvent.NONE;
     }
     
     @Override
@@ -41,11 +40,12 @@ public class MagicStormTrigger extends MagicWhenSpellIsCastTrigger {
             final MagicEvent event,
             final Object data[],
             final Object[] choiceResults) {
-        int count = (Integer)data[2];
+        int count = (Integer)data[0];
         for (;count>0;count--) {
             game.doAction(new MagicCopyCardOnStackAction(
-                    (MagicPlayer)data[0],
-                    (MagicCardOnStack)data[1]));
+                event.getPlayer(),
+                event.getCardOnStack()
+            ));
         }
     }
     

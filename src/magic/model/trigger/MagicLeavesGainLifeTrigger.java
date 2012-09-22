@@ -17,16 +17,14 @@ public class MagicLeavesGainLifeTrigger extends MagicWhenLeavesPlayTrigger {
 
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent data) {
-        final MagicPlayer player = permanent.getController();
         return (permanent == data) ?
             new MagicEvent(
-                    permanent,
-                    player,
-                    new Object[]{player},
-                    this,
-                    player + 
-                    (life > 0 ? " gains " + life : " loses " + -life) + 
-                     " life."):
+                permanent,
+                this,
+                "PN " + 
+                (life > 0 ? " gains " + life : " loses " + -life) + 
+                 " life."
+            ):
             MagicEvent.NONE;
     }
     @Override
@@ -35,6 +33,6 @@ public class MagicLeavesGainLifeTrigger extends MagicWhenLeavesPlayTrigger {
             final MagicEvent event,
             final Object data[],
             final Object[] choiceResults) {
-        game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],life));
+        game.doAction(new MagicChangeLifeAction(event.getPlayer(),life));
     }
 };

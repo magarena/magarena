@@ -22,12 +22,12 @@ public class MagicAttacksPumpTrigger extends MagicWhenAttacksTrigger {
             final MagicPermanent creature) {
         return (permanent == creature) ?
             new MagicEvent(
-                    permanent,
-                    permanent.getController(),
-                    new Object[]{permanent},
-                    this,
-                    permanent + " gets " + getString(power) + 
-                    "/" + getString(toughness) + " until end of turn.") :
+                permanent,
+                this,
+                "SN gets " + 
+                getString(power) + "/" + getString(toughness) + 
+                " until end of turn."
+            ) :
             MagicEvent.NONE;
     }
     @Override
@@ -37,14 +37,13 @@ public class MagicAttacksPumpTrigger extends MagicWhenAttacksTrigger {
             final Object data[],
             final Object[] choiceResults) {
         game.doAction(new MagicChangeTurnPTAction(
-                (MagicPermanent)data[0],
-                power,
-                toughness));
+            event.getPermanent(),
+            power,
+            toughness
+        ));
     }
     
     private String getString(final int pt) {
-        return pt >= 0 ?
-                "+" + pt :
-                Integer.toString(pt);
+        return pt >= 0 ? "+" + pt : Integer.toString(pt);
     }
 }

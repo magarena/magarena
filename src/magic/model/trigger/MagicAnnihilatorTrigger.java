@@ -23,12 +23,11 @@ public class MagicAnnihilatorTrigger extends MagicWhenAttacksTrigger {
         final MagicPlayer opponent = permanent.getController().getOpponent();
         return (permanent == creature) ?
             new MagicEvent(
-                    permanent,
-                    permanent.getController(),
-                    new Object[]{permanent,opponent},
-                    this,
-                    opponent + " sacrifices " + amount +
-                    (amount == 1 ? " permanent." : " permanents.")):
+                permanent,
+                opponent,
+                this,
+                "PN sacrifices " + amount + (amount == 1 ? " permanent." : " permanents.")
+            ):
             MagicEvent.NONE;
     }
     @Override
@@ -37,14 +36,14 @@ public class MagicAnnihilatorTrigger extends MagicWhenAttacksTrigger {
             final MagicEvent event,
             final Object data[],
             final Object[] choiceResults) {
-        final MagicPermanent permanent = (MagicPermanent)data[0];
-        final MagicPlayer player = (MagicPlayer)data[1];
+        final MagicPlayer player = event.getPlayer();
         int count = amount;
         while (count > 0 && player.getPermanents().size() > 0) {
             game.addEvent(new MagicSacrificePermanentEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.SACRIFICE_PERMANENT));
+                event.getSource(),
+                player,
+                MagicTargetChoice.SACRIFICE_PERMANENT
+            ));
             count--;
         }
     }

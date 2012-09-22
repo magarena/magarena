@@ -28,13 +28,13 @@ public class MagicFlankingTrigger extends MagicWhenBecomesBlockedTrigger {
             }
             if (!plist.isEmpty()) {
                 return new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        new Object[]{plist},
-                        this,
-                        plist.size() > 1 ?
-                            "Blocking creatures get -1/-1 until end of turn." :
-                            plist.get(0) + " gets -1/-1 until end of turn.");
+                    permanent,
+                    new Object[]{plist},
+                    this,
+                    plist.size() > 1 ?
+                        "Blocking creatures get -1/-1 until end of turn." :
+                        plist.get(0) + " gets -1/-1 until end of turn."
+                );
             }
         }
         return MagicEvent.NONE;
@@ -51,4 +51,3 @@ public class MagicFlankingTrigger extends MagicWhenBecomesBlockedTrigger {
         }
     }
 }
-
