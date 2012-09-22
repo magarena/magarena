@@ -12,13 +12,12 @@ public class Drogskol_Reaver {
     public static final MagicWhenLifeIsGainedTrigger T = new MagicWhenLifeIsGainedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicLifeChangeTriggerData lifeChange) {
-            final MagicPlayer player = permanent.getController();
-            return (player == lifeChange.player) ?
+            return permanent.isController(lifeChange.player) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    player + " draws a card.") :
+                    "PN draws a card."
+                ) :
                 MagicEvent.NONE;
         }
         @Override
