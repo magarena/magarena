@@ -24,15 +24,14 @@ public class Ulamog__the_Infinite_Gyre {
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicCardOnStack data) {
-            final MagicPlayer player = data.getController();
+                final MagicCardOnStack spell) {
             return new MagicEvent(
-                    data.getSource(),
-                    player,
-                    MagicTargetChoice.TARGET_PERMANENT,
-                    new MagicDestroyTargetPicker(false),
-                    this,
-                    "Destroy target permanent$.");
+                spell,
+                MagicTargetChoice.TARGET_PERMANENT,
+                new MagicDestroyTargetPicker(false),
+                this,
+                "Destroy target permanent$."
+            );
         }
         
         @Override
@@ -55,13 +54,14 @@ public class Ulamog__the_Infinite_Gyre {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicGraveyardTriggerData triggerData) {
-            final MagicPlayer player = triggerData.card.getController();
+            final MagicPlayer owner = triggerData.card.getOwner();
             return new MagicEvent(
                 //source may be permanent if on battlefield or card (exile, hand)
                 permanent.isValid() ? permanent : triggerData.card,
-                player,
+                owner,
                 this,
-                player + " shuffles his or her graveyard into his or her library.");
+                "PN shuffles his or her graveyard into his or her library."
+            );
         }
         
         @Override

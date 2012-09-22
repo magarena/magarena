@@ -11,16 +11,15 @@ public class Angelic_Chorus {
     public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
             return (otherPermanent.isCreature() && 
-                otherPermanent.getController() == player) ?
+                    otherPermanent.isFriend(permanent)) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{otherPermanent},
-                        this,
-                        player + " gains life equal to the toughness of " + otherPermanent + ".") :
-               MagicEvent.NONE;
+                    permanent,
+                    new Object[]{otherPermanent},
+                    this,
+                    "PN gains life equal to the toughness of " + otherPermanent + "."
+                ) :
+                MagicEvent.NONE;
         }
         
         @Override

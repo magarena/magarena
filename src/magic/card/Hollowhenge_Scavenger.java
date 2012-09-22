@@ -12,12 +12,12 @@ public class Hollowhenge_Scavenger {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return game.getCreatureDiedThisTurn() ?
-                    new MagicEvent(
-                            permanent,
-                            player,
-                            this,
-                            player + " gains 5 life.") :
-               MagicEvent.NONE;
+                new MagicEvent(
+                    permanent,
+                    this,
+                    "PN gains 5 life."
+                ) :
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(

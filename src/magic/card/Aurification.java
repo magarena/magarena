@@ -25,15 +25,13 @@ public class Aurification {
     public static final MagicWhenDamageIsDealtTrigger T1 = new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            final MagicPlayer player = permanent.getController();
-            return (damage.getTarget() == player && 
+            return (permanent.isController(damage.getTarget()) && 
                     damage.getSource().isCreature()) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new Object[]{damage.getSource()},
                     this,
-                    player + " puts a gold counter on " + damage.getSource() + "."
+                    "PN puts a gold counter on " + damage.getSource() + "."
                 ) :
                 MagicEvent.NONE;
         }
@@ -86,7 +84,6 @@ public class Aurification {
             return (permanent == left) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     this,
                     "Remove all gold counters from all creatures."
                 ):

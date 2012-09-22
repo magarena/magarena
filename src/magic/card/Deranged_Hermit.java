@@ -26,10 +26,10 @@ public class Deranged_Hermit {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    this,
-                    player + " puts four 1/1 green Squirrel creature tokens onto the battlefield.");
+                permanent,
+                this,
+                "PN puts four 1/1 green Squirrel creature tokens onto the battlefield."
+            );
         }
         
         @Override

@@ -4,7 +4,6 @@ import magic.model.MagicCardList;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.action.MagicExileUntilThisLeavesPlayAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicReturnExiledUntilThisLeavesPlayAction;
@@ -22,7 +21,6 @@ public class Admonition_Angel {
     public static final MagicLandfallTrigger T1 = new MagicLandfallTrigger() {
         @Override
         protected MagicEvent getEvent(final MagicPermanent permanent) {
-            final MagicPlayer player = permanent.getController();
             final MagicTargetFilter targetFilter = 
                     new MagicTargetFilter.MagicOtherPermanentTargetFilter(
                         MagicTargetFilter.TARGET_NONLAND_PERMANENT,
@@ -33,17 +31,12 @@ public class Admonition_Angel {
                         true,
                         MagicTargetHint.None,
                         "another target nonland permanent to exile");
-            final MagicChoice mayChoice = 
-                    new MagicMayChoice(
-                        player + " may exile another target nonland permanent.",
-                        targetChoice);
             return new MagicEvent(
                 permanent,
-                player,
-                mayChoice,
+                new MagicMayChoice(targetChoice),
                 MagicExileTargetPicker.create(),
                 this,
-                player + " may$ exile another target nonland permanent$.");
+                "PN may$ exile another target nonland permanent$.");
         }
         
         @Override

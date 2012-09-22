@@ -34,14 +34,13 @@ public class Graveyard_Shovel {
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicPlayer player = source.getController();
             return new MagicEvent(
-                    source,
-                    player,
-                    MagicTargetChoice.TARGET_PLAYER,
-                    this,
-                    "Target player$ exiles a card from his or her graveyard. " +
-                    "If it's a creature card, " + player + " gains 2 life.");
+                source,
+                MagicTargetChoice.TARGET_PLAYER,
+                this,
+                "Target player$ exiles a card from his or her graveyard. " +
+                "If it's a creature card, PN gains 2 life."
+            );
         }
         @Override
         public void executeEvent(
@@ -54,13 +53,14 @@ public class Graveyard_Shovel {
                     if (targetPlayer.getGraveyard().size() > 0) {
                         final MagicPlayer player = event.getPlayer();
                         game.addEvent(new MagicEvent(
-                                event.getSource(),
-                                targetPlayer,
-                                MagicTargetChoice.TARGET_CARD_FROM_GRAVEYARD,
-                                new MagicGraveyardTargetPicker(true),
-                                new Object[]{player},
-                                EVENT_ACTION,
-                                targetPlayer + " exiles a card$ from his or her graveyard."));
+                            event.getSource(),
+                            targetPlayer,
+                            MagicTargetChoice.TARGET_CARD_FROM_GRAVEYARD,
+                            new MagicGraveyardTargetPicker(true),
+                            new Object[]{player},
+                            EVENT_ACTION,
+                            "PN exiles a card$ from his or her graveyard."
+                        ));
                     }
                 }
             });
