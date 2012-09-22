@@ -14,20 +14,18 @@ public class Perimeter_Captain {
     public static final MagicWhenBlocksTrigger T = new MagicWhenBlocksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            final MagicPlayer player=permanent.getController();
-            return (creature.getController() == player &&
+            return (creature.isFriend(permanent) &&
                     creature.hasAbility(MagicAbility.Defender)) ?
-                            new MagicEvent(
-                                    permanent,
-                                    player,
-                                    new MagicSimpleMayChoice(
-                                            player + " may gain 2 life.",
-                                            MagicSimpleMayChoice.GAIN_LIFE,
-                                            2,
-                                            MagicSimpleMayChoice.DEFAULT_YES),
-                                    this,
-                                    player + " may$ gain 2 life.") :
-                                MagicEvent.NONE;
+                new MagicEvent(
+                    permanent,
+                    new MagicSimpleMayChoice(
+                        MagicSimpleMayChoice.GAIN_LIFE,
+                        2,
+                        MagicSimpleMayChoice.DEFAULT_YES),
+                    this,
+                    "PN may$ gain 2 life."
+                ) :
+                MagicEvent.NONE;
         }
         
         @Override

@@ -19,16 +19,15 @@ public class Auramancer {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    new MagicMayChoice(
-                        player + " may return target enchantment card from " +
-                        "his or her graveyard to his or her hand.",
-                        MagicTargetChoice.TARGET_ENCHANTMENT_CARD_FROM_GRAVEYARD),
-                    new MagicGraveyardTargetPicker(false),
-                    this,
-                    player + " may$ return target enchantment card$ from " +
-                    "his or her graveyard to his or her hand.");
+                permanent,
+                new MagicMayChoice(
+                    MagicTargetChoice.TARGET_ENCHANTMENT_CARD_FROM_GRAVEYARD
+                ),
+                new MagicGraveyardTargetPicker(false),
+                this,
+                "PN may$ return target enchantment card$ from " +
+                "his or her graveyard to his or her hand."
+            );
         }
         
         @Override

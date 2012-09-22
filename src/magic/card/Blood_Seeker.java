@@ -13,23 +13,17 @@ public class Blood_Seeker {
     public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
-            final MagicPlayer controller = otherPermanent.getController();
-            return (otherPermanent != permanent &&
-                    otherPermanent.isCreature() &&
-                    controller != player) ?
+            return (otherPermanent.isCreature() &&
+                    otherPermanent.isEnemy(permanent)) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new MagicSimpleMayChoice(
-                        player + " may have " + controller + " lose 1 life.",
                         MagicSimpleMayChoice.OPPONENT_LOSE_LIFE,
                         1,
                         MagicSimpleMayChoice.DEFAULT_YES
                     ),
-                    new Object[]{controller},
                     this,
-                    "PN may$ have " + controller + " lose 1 life."):
+                    "PN may$ have " + otherPermanent.getController() + " lose 1 life."):
                 MagicEvent.NONE;
         }
         @Override
@@ -39,7 +33,7 @@ public class Blood_Seeker {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],-1));
+                game.doAction(new MagicChangeLifeAction(event.getPlayer().getOpponent(),-1));
             }
         }        
     };

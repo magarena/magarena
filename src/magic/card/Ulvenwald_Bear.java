@@ -15,16 +15,15 @@ public class Ulvenwald_Bear {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-            if (game.getCreatureDiedThisTurn()) {
-                return new MagicEvent(
-                        permanent,
-                        player,
-                        MagicTargetChoice.POS_TARGET_CREATURE,
-                        MagicPumpTargetPicker.create(),
-                        this,
-                        player + " puts two +1/+1 counters on target creature$.");
-            }
-            return MagicEvent.NONE;
+            return (game.getCreatureDiedThisTurn()) ?
+                new MagicEvent(
+                    permanent,
+                    MagicTargetChoice.POS_TARGET_CREATURE,
+                    MagicPumpTargetPicker.create(),
+                    this,
+                    "PN puts two +1/+1 counters on target creature$."
+                ):
+                MagicEvent.NONE;
         }
 
         @Override

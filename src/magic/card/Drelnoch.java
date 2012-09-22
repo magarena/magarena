@@ -13,19 +13,17 @@ public class Drelnoch {
     public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            final MagicPlayer player = permanent.getController();
-            return (permanent == data ) ?
-                    new MagicEvent(
-                            permanent,
-                            player,
-                            new MagicSimpleMayChoice(
-                                    player + " may draw two cards.",
-                                    MagicSimpleMayChoice.DRAW_CARDS,
-                                    2,
-                                    MagicSimpleMayChoice.DEFAULT_NONE),
-                            this,
-                            player + " may$ draw two cards."):
-                    MagicEvent.NONE;
+            return (permanent == data) ?
+                new MagicEvent(
+                    permanent,
+                    new MagicSimpleMayChoice(
+                        MagicSimpleMayChoice.DRAW_CARDS,
+                        2,
+                        MagicSimpleMayChoice.DEFAULT_NONE),
+                    this,
+                    "PN may$ draw two cards."
+                ):
+                MagicEvent.NONE;
         }
         
         @Override

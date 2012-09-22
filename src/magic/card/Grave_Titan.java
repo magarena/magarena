@@ -14,10 +14,10 @@ public class Grave_Titan {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    this,
-                    player + " puts two 2/2 black Zombie creature tokens onto the battlefield.");
+                permanent,
+                this,
+                "PN puts two 2/2 black Zombie creature tokens onto the battlefield."
+            );
         }
         @Override
         public void executeEvent(
@@ -34,13 +34,12 @@ public class Grave_Titan {
     public static final MagicWhenAttacksTrigger T2 = new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            final MagicPlayer player=permanent.getController();
             return (permanent==creature) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        player + " puts two 2/2 black Zombie creature tokens onto the battlefield."):
+                    permanent,
+                    this,
+                    "PN puts two 2/2 black Zombie creature tokens onto the battlefield."
+                ):
                 MagicEvent.NONE;
         }
         @Override

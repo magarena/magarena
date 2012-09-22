@@ -32,21 +32,19 @@ public class Kor_Spiritdancer {
     
     public static final MagicWhenOtherSpellIsCastTrigger T = new MagicWhenOtherSpellIsCastTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
-            final MagicPlayer player = permanent.getController();
-            return (data.getController() == player &&
-                    data.getCardDefinition().isAura()) ?
-                    new MagicEvent(
-                            permanent,
-                            player,
-                            new MagicSimpleMayChoice(
-                                    player + " may draw a card.",
-                                    MagicSimpleMayChoice.DRAW_CARDS,
-                                    1,
-                                    MagicSimpleMayChoice.DEFAULT_NONE),
-                            this,
-                            player + " may$ draw a card.") :
-                    MagicEvent.NONE;
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack spell) {
+            return (permanent.isFriend(spell) &&
+                    spell.getCardDefinition().isAura()) ?
+                new MagicEvent(
+                    permanent,
+                    new MagicSimpleMayChoice(
+                        MagicSimpleMayChoice.DRAW_CARDS,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_NONE),
+                    this,
+                    "PN may$ draw a card."
+                ) :
+                MagicEvent.NONE;
         }
         
         @Override

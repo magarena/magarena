@@ -29,12 +29,11 @@ public class Jade_Mage {
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicPlayer player = source.getController();
             return new MagicEvent(
-                    source,
-                    player,
-                    this,
-                    player + " puts a 1/1 green Saproling creature token onto the battlefield.");
+                source,
+                this,
+                "PN puts a 1/1 green Saproling creature token onto the battlefield."
+            );
         }
         
         @Override

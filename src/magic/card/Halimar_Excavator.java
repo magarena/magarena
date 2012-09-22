@@ -14,17 +14,16 @@ public class Halimar_Excavator {
     public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
-            return (otherPermanent.getController() == player &&
+            return (otherPermanent.isFriend(permanent) &&
                     otherPermanent.hasSubType(MagicSubType.Ally)) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        MagicTargetChoice.NEG_TARGET_PLAYER,
-                        this,
-                        "Target player$ puts the top X cards of his or her " +
-                        "library into his or her graveyard, where X is the " +
-                        "number of Allies " + player + " controls.") :
+                    permanent,
+                    MagicTargetChoice.NEG_TARGET_PLAYER,
+                    this,
+                    "Target player$ puts the top X cards of his or her " +
+                    "library into his or her graveyard, where X is the " +
+                    "number of Allies PN controls."
+                ) :
                 MagicEvent.NONE;
         }
         
