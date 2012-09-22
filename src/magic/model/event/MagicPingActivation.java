@@ -31,13 +31,12 @@ public class MagicPingActivation extends MagicPermanentActivation {
     @Override
     public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
         return new MagicEvent(
-                source,
-                source.getController(),
-                MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
-                new MagicDamageTargetPicker(n),
-                new Object[]{source},
-                this,
-                source + " deals " + n + " damage to target creature or player$.");
+            source,
+            MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+            new MagicDamageTargetPicker(n),
+            this,
+            "SN deals " + n + " damage to target creature or player$."
+        );
     }
     @Override
     public void executeEvent(
@@ -47,7 +46,7 @@ public class MagicPingActivation extends MagicPermanentActivation {
             final Object[] choiceResults) {
         event.processTarget(game,choiceResults,0,new MagicTargetAction() {
             public void doAction(final MagicTarget target) {
-                final MagicDamage damage=new MagicDamage((MagicSource)data[0],target,n,false);
+                final MagicDamage damage=new MagicDamage(event.getSource(),target,n,false);
                 game.doAction(new MagicDealDamageAction(damage));
             }
         });

@@ -10,6 +10,21 @@ import magic.model.stack.MagicItemOnStack;
 
 public class MagicCounterUnlessEvent extends MagicEvent {
 
+    public MagicCounterUnlessEvent(final MagicSource source,final MagicItemOnStack itemOnStack,final MagicManaCost cost) {
+        super(
+            source,
+            itemOnStack.getController(),
+            new MagicMayChoice(
+                "You may pay "+cost.getText()+'.',
+                new MagicPayManaCostChoice(cost)
+            ),
+            new Object[]{itemOnStack},
+            EVENT_ACTION,
+            "You may$ pay "+cost.getText()+"$. " + 
+            "If you don't, counter "+itemOnStack.getName()+"."
+        );
+    }
+    
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(
@@ -25,19 +40,4 @@ public class MagicCounterUnlessEvent extends MagicEvent {
             }
         }
     };
-
-    public MagicCounterUnlessEvent(final MagicSource source,final MagicItemOnStack itemOnStack,final MagicManaCost cost) {
-        super(
-            source,
-            itemOnStack.getController(),
-            new MagicMayChoice(
-                "You may pay "+cost.getText()+'.',
-                new MagicPayManaCostChoice(cost)
-            ),
-            new Object[]{itemOnStack},
-            EVENT_ACTION,
-            "You may$ pay "+cost.getText()+"$. " + 
-            "If you don't, counter "+itemOnStack.getName()+"."
-        );
-    }
 }

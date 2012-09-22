@@ -23,11 +23,13 @@ public class MagicLevelUpActivation extends MagicPermanentActivation {
                 MagicCondition.SORCERY_CONDITION,
                 new MagicArtificialCondition(
                     MagicCondition.NONE,
-                    new MaximumCondition(maximum)),
-                    cost.getCondition()
+                    new MaximumCondition(maximum)
+                ),
+                cost.getCondition()
             },
             ACTIVATION_HINTS,
-            "Level");
+            "Level"
+        );
         this.cost=cost;
     }
     
@@ -39,16 +41,15 @@ public class MagicLevelUpActivation extends MagicPermanentActivation {
     @Override
     public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
         return new MagicEvent(
-                source,
-                source.getController(),
-                new Object[]{source},
-                this,
-                "Put a level counter on "+source+'.');
+            source,
+            this,
+            "Put a level counter on SN."
+        );
     }
 
     @Override
     public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choices) {
-        game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.Charge,1,true));
+        game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,1,true));
     }
     
     private static final class MaximumCondition implements MagicCondition {

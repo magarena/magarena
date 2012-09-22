@@ -22,7 +22,8 @@ public class MagicRegenerationActivation extends MagicPermanentActivation {
                 new MagicSingleActivationCondition(),
             },
             ACTIVATION_HINTS, 
-            "Regen");
+            "Regen"
+        );
         this.cost=cost;
     }
     
@@ -34,15 +35,14 @@ public class MagicRegenerationActivation extends MagicPermanentActivation {
     @Override
     public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
         return new MagicEvent(
-                source,
-                source.getController(),
-                new Object[]{source},
-                this,
-                "Regenerate "+source+".");
+            source,
+            this,
+            "Regenerate SN."
+        );
     }
 
     @Override
     public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choices) {
-        game.doAction(new MagicRegenerateAction((MagicPermanent)data[0]));
+        game.doAction(new MagicRegenerateAction(event.getPermanent()));
     }
 }

@@ -18,13 +18,15 @@ import magic.model.mstatic.MagicLayer;
 public class MagicCardActivation extends MagicActivation {
     
     public MagicCardActivation(final MagicCardDefinition cdef) {
-        super(0,
-              new MagicCondition[]{
-                  MagicCondition.CARD_CONDITION,
-                  cdef.getCost().getCondition()},
-              cdef.getActivationHints(),
-              "Play"
-             );
+        super(
+            0,
+            new MagicCondition[]{
+                MagicCondition.CARD_CONDITION,
+                cdef.getCost().getCondition()
+            },
+            cdef.getActivationHints(),
+            "Play"
+        );
         setCardDefinition(cdef);
     }
     
@@ -46,12 +48,16 @@ public class MagicCardActivation extends MagicActivation {
 
     @Override
     public MagicEvent getEvent(final MagicSource source) {
-        return new MagicEvent(source,source.getController(),new Object[]{source},this,"Play "+source.getName()+".");
+        return new MagicEvent(
+            source,
+            this,
+            "Play SN."
+        );
     }
 
     @Override
     public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choices) {
-        final MagicCard card=(MagicCard)data[0];
+        final MagicCard card = event.getCard();
         if (card.getCardDefinition().isLand()) {
             game.incLandPlayed();
         }

@@ -23,22 +23,22 @@ public class MagicGainActivation extends MagicPermanentActivation {
     @Override
     public MagicEvent[] getCostEvent(final MagicSource source) {
         return new MagicEvent[]{
-                new MagicPayManaCostEvent(source,source.getController(),cost),
-                new MagicPlayAbilityEvent((MagicPermanent)source)};
+            new MagicPayManaCostEvent(source,source.getController(),cost),
+            new MagicPlayAbilityEvent((MagicPermanent)source)
+        };
     }
 
     @Override
     public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
         return new MagicEvent(
-                source,
-                source.getController(),
-                new Object[]{source},
-                this,
-                source + " gains "+ability+" until end of turn.");
+            source,
+            this,
+            "SN gains "+ability+" until end of turn."
+        );
     }
 
     @Override
     public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choices) {
-        game.doAction(new MagicSetAbilityAction((MagicPermanent)data[0],ability));
+        game.doAction(new MagicSetAbilityAction(event.getPermanent(),ability));
     }
 }
