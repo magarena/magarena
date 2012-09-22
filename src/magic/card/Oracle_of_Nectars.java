@@ -26,13 +26,12 @@ public class Oracle_of_Nectars {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             final int amount=payedCost.getX();
-            final MagicPlayer player=source.getController();
             return new MagicEvent(
-                    source,
-                    player,
-                    new Object[]{amount},
-                    this,
-                    player + " gains " + amount + " life.");
+                source,
+                new Object[]{amount},
+                this,
+                "PN gains " + amount + " life."
+            );
         }
         @Override
         public void executeEvent(

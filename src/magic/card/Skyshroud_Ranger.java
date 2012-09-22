@@ -35,16 +35,15 @@ public class Skyshroud_Ranger {
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicPlayer player = source.getController();
             return new MagicEvent(
-                    source,
-                    player,
-                    new MagicMayChoice(
-                            player + " may put a land card from his or her hand into play.",
-                            MagicTargetChoice.TARGET_LAND_CARD_FROM_HAND),
-                    new MagicGraveyardTargetPicker(true),
-                    this,
-                    player + " may$ put a land card$ from his or her hand into play.");
+                source,
+                new MagicMayChoice(
+                    MagicTargetChoice.TARGET_LAND_CARD_FROM_HAND
+                ),
+                new MagicGraveyardTargetPicker(true),
+                this,
+                "PN may$ put a land card$ from his or her hand into play."
+            );
         }
 
         @Override

@@ -24,12 +24,11 @@ public class Bottle_Gnomes {
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicPlayer player=source.getController();
             return new MagicEvent(
-                    source,
-                    player,
-                    this,
-                    player + " gains 3 life.");
+                source,
+                this,
+                "PN gains 3 life."
+            );
         }
         @Override
         public void executeEvent(

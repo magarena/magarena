@@ -14,21 +14,17 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 public class Custody_Battle {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             final MagicPermanent enchanted = permanent.getEnchantedCreature();
-            final MagicPlayer player = enchanted.getController();
-            final MagicPlayer opponent = player.getOpponent();
-            return (player == data) ?
+            return enchanted.isController(upkeepPlayer) ?
                 new MagicEvent(
-                        enchanted,
-                        player,
-                        new MagicMayChoice(
-                                player + " may sacrifice a land. If you don't, " +
-                                opponent + " gains control of " + enchanted + ".",
-                                MagicTargetChoice.SACRIFICE_LAND),
-                        this,
-                        player + " may$ sacrifice a land$. If you don't, " +
-                        opponent + " gains control of " + enchanted + ".") :
+                    enchanted,
+                    new MagicMayChoice(
+                        MagicTargetChoice.SACRIFICE_LAND
+                    ),
+                    this,
+                    "PN may$ sacrifice a land$. If you don't, " +
+                    upkeepPlayer.getOpponent() + " gains control of SN.") :
                 MagicEvent.NONE;
         }
         @Override
@@ -45,8 +41,9 @@ public class Custody_Battle {
                 });
             } else {
                 game.doAction(new MagicGainControlAction(
-                            event.getPlayer().getOpponent(),
-                            event.getPermanent()));
+                    event.getPlayer().getOpponent(),
+                    event.getPermanent()
+                ));
             }
         }
     };

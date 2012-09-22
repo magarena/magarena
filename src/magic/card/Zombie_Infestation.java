@@ -28,12 +28,11 @@ public class Zombie_Infestation {
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicPlayer player = source.getController();
             return new MagicEvent(
-                    source,
-                    player,
-                    this,
-                    player + " puts a 2/2 black Zombie creature token onto the battlefield.");
+                source,
+                this,
+                "PN puts a 2/2 black Zombie creature token onto the battlefield."
+            );
         }
         @Override
         public void executeEvent(

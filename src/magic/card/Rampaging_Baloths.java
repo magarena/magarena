@@ -14,19 +14,16 @@ public class Rampaging_Baloths {
     public static final MagicLandfallTrigger T = new MagicLandfallTrigger() {
         @Override
         public MagicEvent getEvent(final MagicPermanent permanent) {
-            final MagicPlayer player = permanent.getController();
             return new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicSimpleMayChoice(
-                                player + " may put a 4/4 green Beast " +
-                                "creature token onto the battlefield.",
-                                MagicSimpleMayChoice.PLAY_TOKEN,
-                                1,
-                                MagicSimpleMayChoice.DEFAULT_YES),
-                        this,
-                        player + " may$ put a 4/4 green Beast " +
-                        "creature token onto the battlefield.");
+                permanent,
+                new MagicSimpleMayChoice(
+                    MagicSimpleMayChoice.PLAY_TOKEN,
+                    1,
+                    MagicSimpleMayChoice.DEFAULT_YES),
+                this,
+                "PN may$ put a 4/4 green Beast " +
+                "creature token onto the battlefield."
+            );
         }
         @Override
         public void executeEvent(
