@@ -3,7 +3,6 @@ package magic.card;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicTapAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;

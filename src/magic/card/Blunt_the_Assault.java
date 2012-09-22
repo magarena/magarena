@@ -7,7 +7,6 @@ import magic.model.MagicPlayerState;
 import magic.model.MagicType;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.action.MagicChangePlayerStateAction;
-import magic.model.action.MagicMoveCardAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;

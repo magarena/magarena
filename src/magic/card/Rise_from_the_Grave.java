@@ -11,7 +11,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSubType;
 import magic.model.action.MagicCardAction;
-import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicPlayCardAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.action.MagicAddStaticAction;

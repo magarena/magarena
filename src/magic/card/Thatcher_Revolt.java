@@ -8,7 +8,6 @@ import magic.model.MagicPlayer;
 import magic.model.MagicCardDefinition;
 import magic.model.action.MagicAction;
 import magic.model.action.MagicChangeStateAction;
-import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.action.MagicPutIntoPlayAction;
 import magic.model.event.MagicEvent;

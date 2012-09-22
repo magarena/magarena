@@ -9,7 +9,6 @@ import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
 import magic.model.action.MagicBecomesCreatureAction;
 import magic.model.action.MagicChangeStateAction;
-import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;

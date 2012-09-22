@@ -8,7 +8,6 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicDealDamageAction;
-import magic.model.action.MagicMoveCardAction;
 import magic.model.choice.MagicKickerChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;

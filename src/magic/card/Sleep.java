@@ -6,7 +6,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeStateAction;
-import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicPlayerAction;
 import magic.model.action.MagicTapAction;
 import magic.model.choice.MagicTargetChoice;

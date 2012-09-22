@@ -5,7 +5,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.action.MagicCardOnStackAction;
 import magic.model.action.MagicCounterItemOnStackAction;
-import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;

@@ -11,7 +11,6 @@ import magic.model.MagicPlayerState;
 import magic.model.condition.MagicCondition;
 import magic.model.action.MagicChangePlayerStateAction;
 import magic.model.action.MagicChangeStateAction;
-import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicTapAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;

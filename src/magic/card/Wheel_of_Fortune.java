@@ -7,7 +7,6 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicDiscardCardAction;
 import magic.model.action.MagicDrawAction;
-import magic.model.action.MagicMoveCardAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;

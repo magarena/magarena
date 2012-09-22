@@ -10,7 +10,6 @@ import magic.model.MagicSubType;
 import magic.model.action.MagicAction;
 import magic.model.action.MagicCardAction;
 import magic.model.action.MagicChangeCountersAction;
-import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicPlayCardAction;
 import magic.model.action.MagicPutIntoPlayAction;
 import magic.model.action.MagicRemoveCardAction;

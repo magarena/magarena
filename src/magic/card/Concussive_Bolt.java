@@ -11,7 +11,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.condition.MagicCondition;
 import magic.model.action.MagicDealDamageAction;
-import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicPlayerAction;
 import magic.model.action.MagicSetAbilityAction;
 import magic.model.choice.MagicTargetChoice;

@@ -4,7 +4,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicLocationType;
 import magic.model.action.MagicChangeExtraTurnsAction;
-import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicChangeCardDestinationAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
