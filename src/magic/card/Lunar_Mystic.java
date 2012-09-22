@@ -18,19 +18,16 @@ public class Lunar_Mystic {
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicCardOnStack data) {
-            final MagicPlayer player = permanent.getController();
-            final MagicCard card = data.getCard();
-            return (card.getOwner() == player &&
-                    data.getCardDefinition().isInstant()) ?
+                final MagicCardOnStack spell) {
+            return (permanent.isFriend(spell) &&
+                    spell.getCardDefinition().isInstant()) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicMayChoice(
-                                "You may pay {1}.",
-                                new MagicPayManaCostChoice(MagicManaCost.ONE)),
-                        this,
-                        player + " may$ pay {1}$. If you do, draw a card."):
+                    permanent,
+                    new MagicMayChoice(
+                        new MagicPayManaCostChoice(MagicManaCost.ONE)
+                    ),
+                    this,
+                    "PN may$ pay {1}$. If you do, draw a card."):
                 MagicEvent.NONE;
         }
         

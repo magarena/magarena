@@ -13,17 +13,15 @@ public class Grazing_Gladehart {
     public static final MagicLandfallTrigger T = new MagicLandfallTrigger() {
         @Override
         public MagicEvent getEvent(final MagicPermanent permanent) {
-            final MagicPlayer player = permanent.getController();
             return new MagicEvent(
-                    permanent,
-                    player,
-                    new MagicSimpleMayChoice(
-                            player + " may gain 2 life.",
-                            MagicSimpleMayChoice.GAIN_LIFE,
-                            2,
-                            MagicSimpleMayChoice.DEFAULT_YES),
-                    this,
-                    player + " may gain 2 life.");
+                permanent,
+                new MagicSimpleMayChoice(
+                    MagicSimpleMayChoice.GAIN_LIFE,
+                    2,
+                    MagicSimpleMayChoice.DEFAULT_YES),
+                this,
+                "PN may gain 2 life."
+            );
         }
         
         @Override

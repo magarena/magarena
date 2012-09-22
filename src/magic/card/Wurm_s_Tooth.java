@@ -16,21 +16,18 @@ import magic.model.trigger.MagicWhenOtherSpellIsCastTrigger;
 public class Wurm_s_Tooth {
     public static final MagicWhenOtherSpellIsCastTrigger T = new MagicWhenOtherSpellIsCastTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
-            final MagicPlayer player = permanent.getController();
-            final MagicCard card = data.getCard();
-            return (MagicColor.Green.hasColor(card.getColorFlags())) ?
-                    new MagicEvent(
-                            permanent,
-                            player,
-                            new MagicSimpleMayChoice(
-                                    player + " may gain 1 life.",
-                                    MagicSimpleMayChoice.GAIN_LIFE,
-                                    1,
-                                    MagicSimpleMayChoice.DEFAULT_YES),
-                            this,
-                            player + " may$ gain 1 life.") :
-                    MagicEvent.NONE;
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack spell) {
+            return (MagicColor.Green.hasColor(spell.getColorFlags())) ?
+                new MagicEvent(
+                    permanent,
+                    new MagicSimpleMayChoice(
+                        MagicSimpleMayChoice.GAIN_LIFE,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_YES
+                    ),
+                    this,
+                    "PN may$ gain 1 life.") :
+                MagicEvent.NONE;
         }
         
         @Override

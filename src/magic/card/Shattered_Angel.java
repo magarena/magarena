@@ -13,17 +13,15 @@ public class Shattered_Angel {
     public static final MagicLandfallTrigger T = new MagicLandfallTrigger() {
         @Override
         public MagicEvent getEvent(final MagicPermanent permanent) {
-            final MagicPlayer player = permanent.getController();
             return new MagicEvent(
-                            permanent,
-                            player,
-                            new MagicSimpleMayChoice(
-                                    player + " may gain 3 life.",
-                                    MagicSimpleMayChoice.GAIN_LIFE,
-                                    3,
-                                    MagicSimpleMayChoice.DEFAULT_YES),
-                            this,
-                            player + " may$ gain 3 life.");
+                permanent,
+                new MagicSimpleMayChoice(
+                    MagicSimpleMayChoice.GAIN_LIFE,
+                    3,
+                    MagicSimpleMayChoice.DEFAULT_YES),
+                this,
+                "PN may$ gain 3 life."
+            );
         }
         
         @Override
