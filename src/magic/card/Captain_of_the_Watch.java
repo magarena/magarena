@@ -45,9 +45,8 @@ public class Captain_of_the_Watch {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    player + " puts three 1/1 white Soldier creature tokens onto the battlefield.");
+                    "PN puts three 1/1 white Soldier creature tokens onto the battlefield.");
         }
         @Override
         public void executeEvent(

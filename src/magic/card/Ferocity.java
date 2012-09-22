@@ -16,20 +16,18 @@ public class Ferocity {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             final MagicPermanent enchantedCreature = permanent.getEnchantedCreature();
-            final MagicPlayer player = permanent.getController();
             return (creature == enchantedCreature) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicSimpleMayChoice(
-                                player + " may put a +1/+1 counter on " + enchantedCreature + ".",
-                                MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
-                                1,
-                                MagicSimpleMayChoice.DEFAULT_YES),
-                        new Object[]{enchantedCreature},
-                        this,
-                        player + " may put a +1/+1 counter on " + enchantedCreature + ".") :
-            MagicEvent.NONE;
+                    permanent,
+                    new MagicSimpleMayChoice(
+                        MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_YES),
+                    new Object[]{enchantedCreature},
+                    this,
+                    "PN may put a +1/+1 counter on " + enchantedCreature + "."
+                ) :
+                MagicEvent.NONE;
         }
         
         @Override
@@ -48,20 +46,18 @@ public class Ferocity {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             final MagicPermanent enchantedCreature = permanent.getEnchantedCreature();
-            final MagicPlayer player = permanent.getController();
             return (creature == enchantedCreature) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicSimpleMayChoice(
-                                player + " may put a +1/+1 counter on " + enchantedCreature + ".",
-                                MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
-                                1,
-                                MagicSimpleMayChoice.DEFAULT_YES),
-                        new Object[]{enchantedCreature},
-                        this,
-                        player + " may put a +1/+1 counter on " + enchantedCreature + ".") :
-            MagicEvent.NONE;
+                    permanent,
+                    new MagicSimpleMayChoice(
+                        MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_YES),
+                    new Object[]{enchantedCreature},
+                    this,
+                    "PN may put a +1/+1 counter on " + enchantedCreature + "."
+                ) :
+                MagicEvent.NONE;
         }
         
         @Override

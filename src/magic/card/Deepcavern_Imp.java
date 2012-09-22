@@ -16,23 +16,16 @@ public class Deepcavern_Imp {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            final MagicPlayer player = permanent.getController();
-            if (player == upkeepPlayer && permanent.hasState(MagicPermanentState.MustPayEchoCost)) {
-                return player.getHandSize() > 0 ?
-                    new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicMayChoice(
-                            player + " may discard a card."
-                        ),
-                        this,
-                        "PN may$ discard a card. " +
-                        "If he or she doesn't, sacrifice SN."
-                    ):
-                    new MagicSacrificeEvent(permanent);
-            } else {
-                return MagicEvent.NONE;
-            }
+            return (permanent.isController(upkeepPlayer) && 
+                    permanent.hasState(MagicPermanentState.MustPayEchoCost)) ?
+                new MagicEvent(
+                    permanent,
+                    new MagicMayChoice(),
+                    this,
+                    "PN may$ discard a card. " +
+                    "If he or she doesn't, sacrifice SN."
+                ):
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(
@@ -41,7 +34,7 @@ public class Deepcavern_Imp {
                 final Object data[],
                 final Object[] choiceResults) {
             final MagicPermanent permanent = event.getPermanent();
-            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            if (MagicMayChoice.isYesChoice(choiceResults[0]) && event.getPlayer().getHandSize() > 0) {
                 game.addEvent(new MagicDiscardEvent(
                         permanent,
                         event.getPlayer(),

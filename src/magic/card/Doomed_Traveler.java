@@ -14,13 +14,12 @@ public class Doomed_Traveler {
     public static final MagicWhenPutIntoGraveyardTrigger T = new MagicWhenPutIntoGraveyardTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
-            final MagicPlayer player = permanent.getController();
             return (MagicLocationType.Play == triggerData.fromLocation) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    player + " puts a 1/1 white Spirit creature token with flying onto the battlefield.") :
+                    "PN puts a 1/1 white Spirit creature token with flying onto the battlefield."
+                ) :
                 MagicEvent.NONE;
         }
         
