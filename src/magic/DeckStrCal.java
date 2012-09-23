@@ -13,8 +13,10 @@ import java.io.File;
 public class DeckStrCal {
         
     private static int games = 10;
+    private static int repeat = 1;
     private static int str1 = 6;
     private static int str2 = 6;
+    private static int life = 20;
     private static String deck1 = "";
     private static String deck2 = "";
     private static MagicAIImpl ai1 = MagicAIImpl.MMAB;
@@ -65,24 +67,35 @@ public class DeckStrCal {
                     System.err.println("Error: " + next + " is not valid AI");
                     validArgs = false;
                 }
-            }
-            else {
+            } else if ("--life".equals(curr)) {
+                try { //parse CLI option
+                    life = Integer.parseInt(next);
+                } catch (final NumberFormatException ex) {
+                    System.err.println("ERROR! starting life is not an integer");
+                    validArgs = false;
+                }
+            } else if ("--repeat".equals(curr)) {
+                try { //parse CLI option
+                    repeat = Integer.parseInt(next);
+                } catch (final NumberFormatException ex) {
+                    System.err.println("ERROR! repeat is not an integer");
+                    validArgs = false;
+                }
+            } else {
                 System.err.println("Error: unknown option " + curr);
                 validArgs = false;
             }
         }
       
         if (deck1.length() == 0) {
-            System.err.println("Error: no file specified for deck 1");
-            validArgs = false;
+            System.err.println("Using player profile to generate deck 1");
         } else if (!(new File(deck1)).exists()) {
             System.err.println("Error: file " + deck1 + " does not exist");
             validArgs = false;
         }
         
         if (deck2.length() == 0) {
-            System.err.println("Error: no file specified for deck 2");
-            validArgs = false;
+            System.err.println("Using player profile to generate deck 2");
         } else if (!(new File(deck2)).exists()) {
             System.err.println("Error: file " + deck2 + " does not exist");
             validArgs = false;
@@ -92,12 +105,10 @@ public class DeckStrCal {
     }
 
     private static MagicDuel setupDuel() {
-        // Load cards and cubes.
-        MagicMain.initializeEngine();
-
         // Set number of games.
         final DuelConfig config=new DuelConfig();
         config.setNrOfGames(games);
+        config.setStartLife(life);
 
         // Set difficulty.
         final MagicDuel testDuel=new MagicDuel(config);
@@ -111,8 +122,12 @@ public class DeckStrCal {
         testDuel.getPlayer(1).setArtificial(true);
 
         // Set the deck.
-        DeckUtils.loadDeck(deck1, testDuel.getPlayer(0)); 
-        DeckUtils.loadDeck(deck2, testDuel.getPlayer(1));
+        if (deck1.length() > 0) {
+            DeckUtils.loadDeck(deck1, testDuel.getPlayer(0)); 
+        }
+        if (deck2.length() > 0) {
+            DeckUtils.loadDeck(deck2, testDuel.getPlayer(1));
+        }
 
         return testDuel;
     }
@@ -127,7 +142,16 @@ public class DeckStrCal {
             System.err.println("--games    <1-*>                 (number of games to play, default 10)");
             System.exit(1);
         }
+        
+        // Load cards and cubes.
+        MagicMain.initializeEngine();
 
+        for (int i = 0; i < repeat; i++) {
+            runDuel();
+        }
+    }
+        
+    private static void runDuel() {
         final MagicDuel testDuel = setupDuel();
         
         System.out.println(
