@@ -1114,6 +1114,16 @@ public interface MagicTargetFilter {
         }        
     };
     
+    MagicTargetFilter TARGET_SLIVER = new MagicTargetFilter() {
+    	public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+            return ((MagicPermanent)target).isCreature() && 
+                   ((MagicPermanent)target).hasSubType(MagicSubType.Sliver);
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType == MagicTargetType.Permanent;
+        }  
+	   };	
+    
     MagicTargetFilter TARGET_ELF = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
             return ((MagicPermanent)target).isCreature() && 
