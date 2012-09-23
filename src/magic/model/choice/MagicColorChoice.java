@@ -31,7 +31,7 @@ public class MagicColorChoice extends MagicChoice {
     private static final List<Object> BLUE_RED_WHITE_OPTIONS=Arrays.<Object>asList(
             MagicColor.Blue,MagicColor.Red,MagicColor.White);
     
-    private static final MagicColorChoice ALL_INSTANCE=new MagicColorChoice(ALL);
+    public static final MagicColorChoice ALL_INSTANCE=new MagicColorChoice(ALL);
     public static final MagicColorChoice MOST_INSTANCE=new MagicColorChoice(MOST);
     public static final MagicColorChoice UNSUMMON_INSTANCE=new MagicColorChoice(UNSUMMON);
     public static final MagicColorChoice BLUE_RED_WHITE_INSTANCE=new MagicColorChoice(BLUE_RED_WHITE);
