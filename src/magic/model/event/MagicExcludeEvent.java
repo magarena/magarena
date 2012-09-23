@@ -7,6 +7,16 @@ import magic.model.choice.MagicExcludeResult;
 
 public class MagicExcludeEvent extends MagicEvent {
 
+    public MagicExcludeEvent(final MagicPlayer player) {
+        super(
+            MagicEvent.NO_SOURCE,
+            player,
+            MagicExcludeChoice.getInstance(),
+            EVENT_ACTION,
+            ""
+        );
+    }
+        
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(
@@ -18,14 +28,4 @@ public class MagicExcludeEvent extends MagicEvent {
             result.exclude(game);            
         }
     };
-    
-    public MagicExcludeEvent(final MagicPlayer player) {
-        super(
-            MagicEvent.NO_SOURCE,
-            player,
-            MagicExcludeChoice.getInstance(),
-            EVENT_ACTION,
-            ""
-        );
-    }
 }

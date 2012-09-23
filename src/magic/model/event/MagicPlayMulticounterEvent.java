@@ -24,13 +24,13 @@ public class MagicPlayMulticounterEvent extends MagicSpellCardEvent {
 
     @Override
     public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-        final MagicCard card = cardOnStack.getCard();
         return new MagicEvent(
-                cardOnStack,
-                new MagicKickerChoice(cost,true),
-                this,
-                "$Play " + card + ". " + card + " enters the battlefield " + 
-                "with a +1/+1 counter on it for each time it was kicked$");
+            cardOnStack,
+            new MagicKickerChoice(cost,true),
+            this,
+            "$Play SN. SN enters the battlefield " + 
+            "with a +1/+1 counter on it for each time it was kicked$"
+        );
     }
     @Override
     public void executeEvent(
@@ -38,17 +38,19 @@ public class MagicPlayMulticounterEvent extends MagicSpellCardEvent {
             final MagicEvent event,
             final Object[] data,
             final Object[] choiceResults) {
-        final int kickerCount = (Integer)choiceResults[1];
         final MagicCardOnStack cardOnStack = event.getCardOnStack();
         final MagicPlayCardFromStackAction action = new MagicPlayCardFromStackAction(cardOnStack);
         game.doAction(action);
+        
+        final int kickerCount = (Integer)choiceResults[1];
         if (kickerCount > 0) {
             final MagicPermanent permanent = action.getPermanent();
             game.doAction(new MagicChangeCountersAction(
-                    permanent,
-                    MagicCounterType.PlusOne,
-                    kickerCount,
-                    true));
+                permanent,
+                MagicCounterType.PlusOne,
+                kickerCount,
+                true
+            ));
         }
     }
 }

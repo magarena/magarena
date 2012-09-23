@@ -13,7 +13,16 @@ import magic.model.choice.MagicMulliganChoice;
 
 public class MagicMulliganEvent extends MagicEvent {
 
-    private static final MagicEventAction EVENT_ACTION = new MagicEventAction() {
+    public MagicMulliganEvent(final MagicPlayer player) {
+        super(
+            MagicEvent.NO_SOURCE,
+            player,
+            new MagicMulliganChoice(),
+            EVENT_ACTION,
+            "PN may$ take a mulligan."
+        );
+    }
+    private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(
                 final MagicGame game,
@@ -26,12 +35,14 @@ public class MagicMulliganEvent extends MagicEvent {
                 final int size = hand.size();
                 for (final MagicCard card : hand) {
                     game.doAction(new MagicMoveCardAction(
-                            card,
-                            MagicLocationType.OwnersHand,
-                            MagicLocationType.OwnersLibrary));
+                        card,
+                        MagicLocationType.OwnersHand,
+                        MagicLocationType.OwnersLibrary
+                    ));
                     game.doAction(new MagicRemoveCardAction(
-                            card,
-                            MagicLocationType.OwnersHand));
+                        card,
+                        MagicLocationType.OwnersHand
+                    ));
                 }
                 final MagicCardList library = player.getLibrary();
                 library.shuffle();
@@ -40,14 +51,4 @@ public class MagicMulliganEvent extends MagicEvent {
             }
         }
     };
-    
-    public MagicMulliganEvent(final MagicPlayer player) {
-        super(
-            MagicEvent.NO_SOURCE,
-            player,
-            new MagicMulliganChoice(),
-            EVENT_ACTION,
-            "PN may$ take a mulligan."
-        );
-    }
 }

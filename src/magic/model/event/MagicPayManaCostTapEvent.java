@@ -10,21 +10,20 @@ import magic.model.choice.MagicPayManaCostChoice;
 
 public class MagicPayManaCostTapEvent extends MagicEvent {
     
-    private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-            MagicEvent.payManaCost(game,event.getPlayer(),choiceResults,0);
-            game.doAction(new MagicTapAction(event.getPermanent(),true));
-        }        
-    };
-    
     public MagicPayManaCostTapEvent(final MagicSource source,final MagicPlayer player,final MagicManaCost cost) {
         super(
             source,
             player,
             new MagicPayManaCostChoice(cost),
             EVENT_ACTION,
-            "Pay "+cost.getText()+"$. Tap "+source.getName()+"."
+            "Pay "+cost.getText()+"$. Tap SN."
         );
     }            
+    private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
+        @Override
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+            MagicEvent.payManaCost(game,event.getPlayer(),choiceResults,0);
+            game.doAction(new MagicTapAction(event.getPermanent(),true));
+        }
+    };
 }

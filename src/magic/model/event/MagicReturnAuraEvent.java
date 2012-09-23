@@ -2,7 +2,6 @@ package magic.model.event;
 
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicPlayCardFromStackAction;
 import magic.model.choice.MagicTargetChoice;
@@ -13,15 +12,18 @@ import magic.model.stack.MagicCardOnStack;
  */
 public class MagicReturnAuraEvent extends MagicEvent {
     public MagicReturnAuraEvent(final MagicCardOnStack cardOnStack) {
-        super(cardOnStack,
-              new MagicTargetChoice(
-                    cardOnStack.getEvent().getTargetChoice().getTargetFilter(),
-                    false,
-                    cardOnStack.getEvent().getTargetChoice().getTargetHint(true),
-                    cardOnStack.getEvent().getTargetChoice().getDescription()),
-              cardOnStack.getEvent().getTargetPicker(),
-              EVENT_ACTION,
-              cardOnStack.getEvent().getChoiceDescription());        
+        super(
+            cardOnStack,
+            new MagicTargetChoice(
+                cardOnStack.getEvent().getTargetChoice().getTargetFilter(),
+                false,
+                cardOnStack.getEvent().getTargetChoice().getTargetHint(true),
+                cardOnStack.getEvent().getTargetChoice().getDescription()
+            ),
+            cardOnStack.getEvent().getTargetPicker(),
+            EVENT_ACTION,
+            cardOnStack.getEvent().getChoiceDescription()
+        );        
     }    
     
     private static final MagicEventAction EVENT_ACTION = new MagicEventAction() {
@@ -32,14 +34,11 @@ public class MagicReturnAuraEvent extends MagicEvent {
                 final Object[] data,
                 final Object[] choiceResults) {
             final MagicCardOnStack cardOnStack = event.getCardOnStack();
-            final boolean success = event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicPlayCardFromStackAction(cardOnStack,creature));
                 }
             });
-            if (!success) {
-                game.doAction(new MagicMoveCardAction(cardOnStack));
-            }
         }
     };
 }

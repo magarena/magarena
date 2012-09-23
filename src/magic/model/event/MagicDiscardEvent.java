@@ -11,6 +11,16 @@ import magic.model.choice.MagicRandomCardChoice;
 
 public class MagicDiscardEvent extends MagicEvent {
 
+    public MagicDiscardEvent(final MagicSource source,final MagicPlayer player,final int amount,final boolean random) {
+        super(
+            source,
+            player,
+            random ? new MagicRandomCardChoice(amount) : new MagicCardChoice(amount),
+            EVENT_ACTION,
+            "PN " + genDescription(player,amount)
+        );
+    }
+    
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choices) {
@@ -21,16 +31,6 @@ public class MagicDiscardEvent extends MagicEvent {
             }
         }
     };
-    
-    public MagicDiscardEvent(final MagicSource source,final MagicPlayer player,final int amount,final boolean random) {
-        super(
-            source,
-            player,
-            random ? new MagicRandomCardChoice(amount) : new MagicCardChoice(amount),
-            EVENT_ACTION,
-            player.getName() + genDescription(player,amount)
-        );
-    }
     
     private static final String genDescription(final MagicPlayer player,final int amount) {
         final int actualAmount = Math.min(amount,player.getHandSize());

@@ -8,6 +8,16 @@ import magic.model.choice.MagicDeclareAttackersResult;
 
 public class MagicDeclareAttackersEvent extends MagicEvent {
     
+    public MagicDeclareAttackersEvent(final MagicPlayer player) {
+        super(
+            MagicEvent.NO_SOURCE,
+            player,
+            MagicDeclareAttackersChoice.getInstance(),
+            EVENT_ACTION,
+            ""
+        );
+    }
+    
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(
@@ -21,14 +31,4 @@ public class MagicDeclareAttackersEvent extends MagicEvent {
             game.logAttackers(player,result);
         }
     };
-    
-    public MagicDeclareAttackersEvent(final MagicPlayer player) {
-        super(
-            MagicEvent.NO_SOURCE,
-            player,
-            MagicDeclareAttackersChoice.getInstance(),
-            EVENT_ACTION,
-            ""
-        );
-    }
 }

@@ -9,22 +9,6 @@ import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetHint;
 
 public class MagicSoulbondEvent extends MagicEvent {
-
-    private static final MagicEventAction EVENT_ACTION = new MagicEventAction() {
-        @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event,
-                final Object[] data,
-                final Object[] choiceResults) {
-            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                game.doAction(new MagicSoulbondAction(
-                        event.getPermanent(),
-                        (MagicPermanent)choiceResults[1],
-                        true));
-            }
-        }
-    };
     
     public MagicSoulbondEvent(final MagicPermanent permanent,final boolean hasSoulbond) {
         super(
@@ -47,4 +31,21 @@ public class MagicSoulbondEvent extends MagicEvent {
             "PN may$ pair a creature$ with SN."
         );
     }
+
+    private static final MagicEventAction EVENT_ACTION = new MagicEventAction() {
+        @Override
+        public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                game.doAction(new MagicSoulbondAction(
+                    event.getPermanent(),
+                    (MagicPermanent)choiceResults[1],
+                    true
+                ));
+            }
+        }
+    };
 }

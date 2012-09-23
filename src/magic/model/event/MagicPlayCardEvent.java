@@ -20,9 +20,10 @@ public class MagicPlayCardEvent {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack,
-                    this,
-                    "Put " + cardOnStack.getName() + " onto the battlefield.");
+                cardOnStack,
+                this,
+                "Put SN onto the battlefield."
+            );
         }
 
         @Override
@@ -39,12 +40,12 @@ public class MagicPlayCardEvent {
         return new MagicSpellCardEvent() {
             @Override
             public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-                final MagicCard card = cardOnStack.getCard();
                 return new MagicEvent(
-                        cardOnStack,
-                        new MagicKickerChoice(kickerCost,multi),
-                        this,
-                        "$Play " + card + ". If " + card + " was kicked$, " + desc + ".");
+                    cardOnStack,
+                    new MagicKickerChoice(kickerCost,multi),
+                    this,
+                    "$Play SN. If SN was kicked$, " + desc + "."
+                );
             }
             @Override
             public void executeEvent(
@@ -62,12 +63,12 @@ public class MagicPlayCardEvent {
         return new MagicSpellCardEvent() {
             @Override
             public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-                final MagicCard card = cardOnStack.getCard();
                 return new MagicEvent(
-                        cardOnStack,
-                        new Object[]{payedCost.getX()},
-                        this,
-                        "$Play " + card + ". " + desc + ".");
+                    cardOnStack,
+                    new Object[]{payedCost.getX()},
+                    this,
+                    "$Play SN. " + desc + "."
+                );
             }
             @Override
             public void executeEvent(

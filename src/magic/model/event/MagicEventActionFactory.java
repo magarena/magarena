@@ -7,7 +7,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicLocationType;
 import magic.model.stack.MagicCardOnStack;
-import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicCardOnStackAction;
 import magic.model.action.MagicDestroyAction;
@@ -38,7 +37,6 @@ public class MagicEventActionFactory {
                     final MagicEvent event,
                     final Object[] data,
                     final Object[] choiceResults) {
-                game.doAction(new MagicMoveCardAction(event.getCardOnStack()));
                 event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
                         game.doAction(new MagicDestroyAction(creature));
@@ -55,7 +53,6 @@ public class MagicEventActionFactory {
                     final MagicEvent event,
                     final Object[] data,
                     final Object[] choiceResults) {
-                game.doAction(new MagicMoveCardAction(event.getCardOnStack()));
                 event.processTargetCardOnStack(game,choiceResults,0,new MagicCardOnStackAction() {
                     public void doAction(final MagicCardOnStack targetSpell) {
                         game.doAction(new MagicCounterItemOnStackAction(targetSpell));
@@ -72,7 +69,6 @@ public class MagicEventActionFactory {
                     final MagicEvent event,
                     final Object[] data,
                     final Object[] choiceResults) {
-                game.doAction(new MagicMoveCardAction(event.getCardOnStack()));
                 event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent perm) {
                         game.doAction(new MagicRemoveFromPlayAction(perm,MagicLocationType.Exile));

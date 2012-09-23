@@ -12,7 +12,20 @@ import magic.model.choice.MagicTargetChoice;
 
 public class MagicExileCardEvent extends MagicEvent {
 
-    private static final MagicEventAction EVENT_ACTION = new MagicEventAction() {
+    public MagicExileCardEvent(
+            final MagicSource source,
+            final MagicPlayer player,
+            final MagicTargetChoice targetChoice) {
+        super(
+            source,
+            player,
+            targetChoice,
+            EVENT_ACTION,
+            "Choose " + targetChoice.getTargetDescription() + "$."
+        );
+    }
+     
+    private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(
                 final MagicGame game,
@@ -34,17 +47,4 @@ public class MagicExileCardEvent extends MagicEvent {
             });
         }
     };
-
-    public MagicExileCardEvent(
-            final MagicSource source,
-            final MagicPlayer player,
-            final MagicTargetChoice targetChoice) {
-        super(
-            source,
-            player,
-            targetChoice,
-            EVENT_ACTION,
-            "Choose " + targetChoice.getTargetDescription() + "$."
-        );
-    }
 }

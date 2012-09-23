@@ -3,7 +3,6 @@ package magic.model.event;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicPlayCardFromStackAction;
 import magic.model.choice.MagicTargetChoice;
@@ -29,11 +28,12 @@ public class MagicPlayAuraEvent extends MagicSpellCardEvent {
     @Override
     public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
         return new MagicEvent(
-                cardOnStack,
-                targetChoice,
-                targetPicker,
-                this,
-                "Enchant "+targetChoice.getTargetDescription()+"$ with "+cardOnStack.getName()+".");
+            cardOnStack,
+            targetChoice,
+            targetPicker,
+            this,
+            "Enchant "+targetChoice.getTargetDescription()+"$ with SN."
+        );
     }
 
     @Override
@@ -42,15 +42,11 @@ public class MagicPlayAuraEvent extends MagicSpellCardEvent {
             final MagicEvent event,
             final Object[] data,
             final Object[] choiceResults) {
-        final MagicCardOnStack cardOnStack = event.getCardOnStack();
-        final boolean success = event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+        event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
             public void doAction(final MagicPermanent creature) {
-                game.doAction(new MagicPlayCardFromStackAction(cardOnStack,creature));
+                game.doAction(new MagicPlayCardFromStackAction(event.getCardOnStack(),creature));
             }
         });
-        if (!success) {
-            game.doAction(new MagicMoveCardAction(cardOnStack));
-        }
     }
 
     public static MagicPlayAuraEvent create(String script) {

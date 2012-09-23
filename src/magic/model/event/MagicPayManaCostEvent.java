@@ -7,17 +7,6 @@ import magic.model.MagicSource;
 import magic.model.choice.MagicPayManaCostChoice;
 
 public class MagicPayManaCostEvent extends MagicEvent {
-    private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
-        @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event,
-                final Object data[],
-                final Object[] choiceResults) {
-            MagicEvent.payManaCost(game,event.getPlayer(),choiceResults,0);
-        }        
-    };
-    
     public MagicPayManaCostEvent(final MagicSource source,final MagicPlayer player,final MagicManaCost cost) {
         super(
             source,
@@ -27,4 +16,15 @@ public class MagicPayManaCostEvent extends MagicEvent {
             "Pay "+cost.getText()+"$."
         );
     }
+    
+    private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
+        @Override
+        public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
+            MagicEvent.payManaCost(game,event.getPlayer(),choiceResults,0);
+        }
+    };
 }
