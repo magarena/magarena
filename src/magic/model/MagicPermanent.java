@@ -838,6 +838,12 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
                 return false;
             }
         }
+        
+        if(MagicAbility.CannotBeBlockedExceptBySliver.hasAbility(attackerFlags)) {
+            if (!this.hasSubType(MagicSubType.Sliver)) {
+                return false;
+            }
+        }
 
         // Can't be blocked by a color
         for (final MagicColor color : MagicColor.values()) {
