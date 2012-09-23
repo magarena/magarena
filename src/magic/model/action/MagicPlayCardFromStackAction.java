@@ -3,6 +3,7 @@ package magic.model.action;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
+import magic.model.MagicLocationType;
 import magic.model.stack.MagicCardOnStack;
 
 public class MagicPlayCardFromStackAction extends MagicPutIntoPlayAction {
@@ -12,6 +13,7 @@ public class MagicPlayCardFromStackAction extends MagicPutIntoPlayAction {
     
     public MagicPlayCardFromStackAction(final MagicCardOnStack aCardOnStack, final int aKicker) {
         cardOnStack = aCardOnStack;
+        cardOnStack.setMoveLocation(MagicLocationType.Play);
         kicker = aKicker;
     }
     
