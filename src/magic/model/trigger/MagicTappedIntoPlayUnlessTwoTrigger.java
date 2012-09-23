@@ -22,16 +22,15 @@ public class MagicTappedIntoPlayUnlessTwoTrigger extends MagicWhenComesIntoPlayT
         return (player.getNrOfPermanentsWithType(MagicType.Land) > 3) ?
             new MagicEvent(
                 permanent,
-                player,
-                new Object[]{permanent},
                 this,
-                permanent+" enters the battlefield tapped."):
+                "SN enters the battlefield tapped."
+            ):
             MagicEvent.NONE;
     }
     
     @Override
     public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choices) {
-        game.doAction(new MagicTapAction((MagicPermanent)data[0],false));
+        game.doAction(new MagicTapAction(event.getPermanent(),false));
     }
     
     @Override

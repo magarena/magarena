@@ -6,14 +6,18 @@ import magic.model.action.MagicSacrificeAction;
 
 public class MagicSacrificeEvent extends MagicEvent {
 
+    public MagicSacrificeEvent(final MagicPermanent permanent) {
+        super(
+            permanent,
+            EVENT_ACTION,
+            "Sacrifice SN."
+        );
+    }    
+    
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choices) {
-            game.doAction(new MagicSacrificeAction((MagicPermanent)data[0]));
+            game.doAction(new MagicSacrificeAction(event.getPermanent()));
         }
     };
-        
-    public MagicSacrificeEvent(final MagicPermanent permanent) {
-        super(permanent,permanent.getController(),new Object[]{permanent},EVENT_ACTION,"Sacrifice "+permanent.getName()+".");
-    }    
 }

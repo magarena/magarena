@@ -28,11 +28,10 @@ public class MagicDamageGrowTrigger extends MagicWhenDamageIsDealtTrigger {
                 ((MagicPermanent)damage.getTarget()).isCreature())) &&
                 (!combat || damage.isCombat())) ?
             new MagicEvent(
-                    permanent,
-                    permanent.getController(),
-                    new Object[]{permanent},
-                    this,
-                    "Put a +1/+1 counter on " + permanent + "."):
+                permanent,
+                this,
+                "Put a +1/+1 counter on SN."
+            ):
             MagicEvent.NONE;
     }
     @Override
@@ -42,9 +41,10 @@ public class MagicDamageGrowTrigger extends MagicWhenDamageIsDealtTrigger {
             final Object data[],
             final Object[] choiceResults) {
         game.doAction(new MagicChangeCountersAction(
-                (MagicPermanent)data[0],
-                MagicCounterType.PlusOne,
-                1,
-                true));
+            event.getPermanent(),
+            MagicCounterType.PlusOne,
+            1,
+            true
+        ));
     }
 }

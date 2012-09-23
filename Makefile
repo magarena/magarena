@@ -180,7 +180,8 @@ inf: $(MAG)
 
 %.t: $(MAG)
 	echo `hg id -n` > $*.log
-	$(JAVAEA) -DrndSeed=$* -Dmagarena.dir=`pwd`/release -DselfMode -jar $^ >> $*.log 2>&1
+	$(JAVA) -DrndSeed=$* -Dmagarena.dir=`pwd`/release magic.DeckStrCal --str1 1 --str2 1 --life 10 --games 1 --repeat 1000000  >> $*.log 2>&1
+	#$(JAVAEA) -DrndSeed=$* -Dmagarena.dir=`pwd`/release -DselfMode -jar $^ >> $*.log 2>&1
 
 test: $(MAG)
 	-make `date +%s`.d
@@ -409,7 +410,7 @@ update_value_from_rankings: cards/gatherer_rankings
 	hg add $^
 
 check_data: scripts/check_data.awk
-	for i in src/magic/card/*; do \
+	for i in src/magic/card/* src/magic/model/event/* src/magic/model/trigger/* ; do \
 			grep "new Object\|data\[[0-9\]" $$i > /dev/null && echo $$i; \
 			grep "new Object\|data\[[0-9\]" $$i  | awk -f $^ | sed 's/  //g' | sed 's/:/:\t/'; \
 	done > $@

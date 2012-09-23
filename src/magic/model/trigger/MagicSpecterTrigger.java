@@ -23,7 +23,6 @@ public class MagicSpecterTrigger extends MagicWhenDamageIsDealtTrigger {
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
         final MagicTarget target = damage.getTarget();
-        final String prefix = target + " discards a card";
         return (damage.getSource() == permanent && 
                 target.isPlayer() && 
                 ((MagicPlayer)target).getHandSize() > 0 &&
@@ -31,19 +30,20 @@ public class MagicSpecterTrigger extends MagicWhenDamageIsDealtTrigger {
                 (!combat || damage.isCombat())) ?
             new MagicEvent(
                 permanent,
-                permanent.getController(),
-                new Object[]{permanent,target},
+                (MagicPlayer)target,
                 this,
-                random ? prefix + " at random." : prefix + "."):
+                "PN discards a card" + (random ? " at random." : ".")
+            ):
             MagicEvent.NONE;
     }
 
     @Override
     public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choices) {
         game.addEvent(new MagicDiscardEvent(
-                (MagicPermanent)data[0],
-                (MagicPlayer)data[1],
-                1,
-                random));
+            event.getSource(),
+            event.getPlayer(),
+            1,
+            random
+        ));
     }
 }

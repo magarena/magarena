@@ -33,12 +33,13 @@ public class Kjeldoran_Javelineer {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             final int amount = source.getCounters(MagicCounterType.Charge);
             return new MagicEvent(
-                    source,
-                    MagicTargetChoice.NEG_TARGET_ATTACKING_OR_BLOCKING_CREATURE,
-                    new MagicDamageTargetPicker(amount),
-                    new Object[]{source,amount},
-                    this,
-                    "SN deals " + amount + " damage to target creature$.");
+                source,
+                MagicTargetChoice.NEG_TARGET_ATTACKING_OR_BLOCKING_CREATURE,
+                new MagicDamageTargetPicker(amount),
+                new Object[]{amount},
+                this,
+                "SN deals " + amount + " damage to target creature$."
+            );
         }
 
         @Override
@@ -46,10 +47,10 @@ public class Kjeldoran_Javelineer {
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicDamage damage = new MagicDamage(
-                            (MagicSource)data[0],
-                            target,
-                            (Integer)data[1],
-                            false);
+                        event.getSource(),
+                        target,
+                        (Integer)data[0],
+                        false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });

@@ -28,29 +28,27 @@ public class MagicDevourTrigger extends MagicWhenComesIntoPlayTrigger {
     @Override
     public MagicEvent executeTrigger(
             final MagicGame game,
-            final MagicPermanent permanent,
+            final MagicPermanent perm,
             final MagicPlayer player) {
-        final String name = getCardDefinition().getFullName();
         final MagicTargetFilter targetFilter = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
                 MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,
-                permanent);
+                perm);
         final MagicTargetChoice targetChoice = new MagicTargetChoice(
                 targetFilter,
                 false,
                 MagicTargetHint.None,
-                "a creature other than " + name + " to sacrifice");
+                "a creature other than " + perm + " to sacrifice");
         final MagicChoice devourChoice = new MagicMayChoice(
-                "You may sacrifice a creature to " + name + ".",
+                "You may sacrifice a creature to " + perm + ".",
                 targetChoice);
         return (player.getNrOfPermanentsWithType(MagicType.Creature) > 1) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        devourChoice,
-                        MagicSacrificeTargetPicker.create(),
-                        new Object[] {permanent},
-                        this,
-                        "You may$ sacrifice a creature$ to " + name + ".") :
+                    perm,
+                    devourChoice,
+                    MagicSacrificeTargetPicker.create(),
+                    this,
+                    "You may$ sacrifice a creature$ to SN."
+                ) :
                 MagicEvent.NONE;
     }
 
@@ -68,7 +66,7 @@ public class MagicDevourTrigger extends MagicWhenComesIntoPlayTrigger {
         if (MagicMayChoice.isYesChoice(choiceResults[0])) {
             event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    final MagicPermanent permanent = (MagicPermanent)data[0];
+                    final MagicPermanent permanent = event.getPermanent();
                     game.doAction(new MagicSacrificeAction(creature));
                     game.doAction(new MagicChangeCountersAction(
                             permanent,

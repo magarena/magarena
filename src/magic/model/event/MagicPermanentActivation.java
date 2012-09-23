@@ -13,22 +13,6 @@ import magic.model.stack.MagicAbilityOnStack;
 
 public abstract class MagicPermanentActivation extends MagicActivation implements MagicChangeCardDefinition {
     
-    private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
-        @Override
-        public final void executeEvent(
-                final MagicGame game,
-                final MagicEvent event,
-                final Object[] data,
-                final Object[] choiceResults) {
-
-            final MagicPermanentActivation permanentActivation = (MagicPermanentActivation)data[0];
-            final MagicPermanent permanent = (MagicPermanent)data[1];
-            final MagicAbilityOnStack abilityOnStack = 
-                new MagicAbilityOnStack(permanentActivation,permanent,game.getPayedCost());
-            game.doAction(new MagicPutItemOnStackAction(abilityOnStack));
-        }
-    };
-
     private static int currentIndex = 1;
 
     public MagicPermanentActivation(
@@ -46,13 +30,30 @@ public abstract class MagicPermanentActivation extends MagicActivation implement
     @Override
     public final MagicEvent getEvent(final MagicSource source) {
         return new MagicEvent(
-                source,
-                source.getController(),
-                new Object[]{this,source},
-                EVENT_ACTION,
-                "Play activated ability of "+source.getName()+"."
-                );
+            source,
+            new Object[]{this},
+            EVENT_ACTION,
+            "Play activated ability of SN."
+        );
     }
+    
+    private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
+        @Override
+        public final void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
+            final MagicPermanentActivation permanentActivation = (MagicPermanentActivation)data[0];
+            final MagicPermanent permanent = event.getPermanent();
+            final MagicAbilityOnStack abilityOnStack = new MagicAbilityOnStack(
+                permanentActivation,
+                permanent,
+                game.getPayedCost()
+            );
+            game.doAction(new MagicPutItemOnStackAction(abilityOnStack));
+        }
+    };
 
     @Override
     public final MagicTargetChoice getTargetChoice(final MagicSource source) {

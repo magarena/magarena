@@ -24,7 +24,7 @@ public class MagicEquipActivation extends MagicPermanentActivation {
             },
             new MagicActivationHints(MagicTiming.Equipment,false,2),
             "Equip"
-            );
+        );
         this.equipCost=equipCost;
     }
 
@@ -36,20 +36,19 @@ public class MagicEquipActivation extends MagicPermanentActivation {
     @Override
     public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
         return new MagicEvent(
-                source,
-                source.getController(),
-                MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
-                new MagicEquipTargetPicker(source),
-                new Object[]{source},
-                this,
-                "Attach " + source + " to target creature$ you control.");
+            source,
+            MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
+            new MagicEquipTargetPicker(source),
+            this,
+            "Attach SN to target creature$ you control."
+        );
     }
 
     @Override
     public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
         event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
             public void doAction(final MagicPermanent creature) {
-                game.doAction(new MagicAttachEquipmentAction((MagicPermanent)data[0],creature));
+                game.doAction(new MagicAttachEquipmentAction(event.getPermanent(),creature));
             }
         });
     }

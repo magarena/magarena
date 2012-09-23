@@ -24,10 +24,8 @@ public class MagicEntersDrawCardTrigger extends MagicWhenComesIntoPlayTrigger {
             final MagicPlayer player) {
         return new MagicEvent(
                 permanent,
-                player,
-                new Object[]{player},
                 this,
-                player + " draws a card.");
+                "PN draws a card.");
     }
     @Override
     public void executeEvent(
@@ -35,7 +33,7 @@ public class MagicEntersDrawCardTrigger extends MagicWhenComesIntoPlayTrigger {
             final MagicEvent event,
             final Object data[],
             final Object[] choiceResults) {
-        game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
+        game.doAction(new MagicDrawAction(event.getPlayer(),1));
     }
 }
 

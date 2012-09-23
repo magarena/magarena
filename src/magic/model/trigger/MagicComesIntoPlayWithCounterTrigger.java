@@ -28,16 +28,12 @@ public class MagicComesIntoPlayWithCounterTrigger extends MagicWhenComesIntoPlay
             final MagicPermanent permanent,
             final MagicPlayer player) {
         return new MagicEvent(
-                permanent,
-                player,
-                new Object[]{permanent},
-                this,
-                amount > 1 ?
-                    permanent + " enters the battlefield with " + amount + 
-                        " " + description + " counters on it."
-                    :
-                    permanent + " enters the battlefield with a " + 
-                        description + " counter on it.");
+            permanent,
+            this,
+            amount > 1 ?
+                "SN enters the battlefield with " + amount + " " + description + " counters on it." :
+                "SN enters the battlefield with a " + description + " counter on it."
+        );
     }
     @Override
     public void executeEvent(
@@ -46,10 +42,11 @@ public class MagicComesIntoPlayWithCounterTrigger extends MagicWhenComesIntoPlay
             final Object data[],
             final Object[] choiceResults) {
         game.doAction(new MagicChangeCountersAction(
-                (MagicPermanent)data[0],
-                counterType,
-                amount,
-                false));
+            event.getPermanent(),
+            counterType,
+            amount,
+            false
+        ));
     }
     @Override
     public boolean usesStack() {

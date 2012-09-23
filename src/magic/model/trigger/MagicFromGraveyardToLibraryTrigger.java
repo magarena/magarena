@@ -24,16 +24,15 @@ public class MagicFromGraveyardToLibraryTrigger extends MagicWhenPutIntoGraveyar
         return (!card.isToken()) ?
             new MagicEvent(
                 card,
-                triggerData.card.getController(),
-                new Object[]{card},
                 this,
-                "Shuffle "+card.getName()+" into its owners library."):
+                "Shuffle SN into its owners library."
+            ):
             MagicEvent.NONE;
     }
 
     @Override
     public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-        final MagicCard card=(MagicCard)data[0];
+        final MagicCard card = event.getCard();
         if (card.getOwner().getGraveyard().contains(card)) {
             game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
             game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
