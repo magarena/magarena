@@ -18,14 +18,14 @@ public class MagicExaltedTrigger extends MagicWhenAttacksTrigger {
 
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-        final MagicPlayer player=permanent.getController();
-        return (creature.getController()==player&&player.getNrOfAttackers()==1) ?
+        return (permanent.isFriend(creature) && 
+                permanent.getController().getNrOfAttackers()==1) ?
             new MagicEvent(
-                    permanent,
-                    player,
-                    new Object[]{creature},
-                    this,
-                    creature.getName() + " gets +1/+1 until end of turn."):
+                permanent,
+                new Object[]{creature},
+                this,
+                creature + " gets +1/+1 until end of turn."
+            ):
             MagicEvent.NONE;
     }
 

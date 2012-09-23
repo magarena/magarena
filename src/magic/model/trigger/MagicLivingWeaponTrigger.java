@@ -26,9 +26,9 @@ public class MagicLivingWeaponTrigger extends MagicWhenComesIntoPlayTrigger {
         return new MagicEvent(
             permanent,
             player,
-            new Object[]{permanent,player},
             this,
-            player + " puts a 0/0 black Germ creature token onto the battlefield, then attaches this to it.");
+            "PN puts a 0/0 black Germ creature token onto the battlefield, then attaches SN to it."
+        );
     }
     
     @Override
@@ -40,14 +40,16 @@ public class MagicLivingWeaponTrigger extends MagicWhenComesIntoPlayTrigger {
 
         //create the token
         final MagicPlayTokenAction play_token=new MagicPlayTokenAction(
-                (MagicPlayer)data[1],
-                TokenCardDefinitions.get("Germ"));
+            event.getPlayer(),
+            TokenCardDefinitions.get("Germ")
+        );
         game.doAction(play_token);
 
         //attach the equipment to the token
         final MagicAttachEquipmentAction attach_equip = new MagicAttachEquipmentAction(
-                (MagicPermanent)data[0],
-                play_token.getPermanent());
+            event.getPermanent(),
+            play_token.getPermanent()
+        );
         game.doAction(attach_equip);
     }
 }

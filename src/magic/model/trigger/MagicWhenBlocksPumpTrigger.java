@@ -17,14 +17,14 @@ public class MagicWhenBlocksPumpTrigger extends MagicWhenBlocksTrigger {
 
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-        return (permanent == data ) ?
+        return (permanent == data) ?
             new MagicEvent(
-                    permanent,
-                    permanent.getController(),
-                    new Object[]{permanent},
-                    this,
-                    permanent + " gets " + getString(amountPower) + 
-                    "/" + getString(amountToughness) + " until end of turn.") :
+                permanent,
+                this,
+                "SN gets " + 
+                getString(amountPower) + "/" + getString(amountToughness) + 
+                " until end of turn."
+            ):
             MagicEvent.NONE;
     }
     @Override
@@ -34,15 +34,13 @@ public class MagicWhenBlocksPumpTrigger extends MagicWhenBlocksTrigger {
             final Object data[],
             final Object[] choiceResults) {
         game.doAction(new MagicChangeTurnPTAction(
-                (MagicPermanent)data[0],
-                amountPower,
-                amountToughness));
+            event.getPermanent(),
+            amountPower,
+            amountToughness
+        ));
     }
     
     private String getString(final int pt) {
-        return pt >= 0 ?
-                "+" + pt :
-                Integer.toString(pt);
+        return pt >= 0 ? "+" + pt : Integer.toString(pt);
     }
 }
-

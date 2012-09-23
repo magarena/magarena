@@ -27,14 +27,12 @@ public class MagicBattleCryTrigger extends MagicWhenAttacksTrigger {
             final MagicGame game,
             final MagicPermanent permanent,
             final MagicPermanent data) {
-        final MagicPlayer player = permanent.getController();
         return (permanent == data) ?
             new MagicEvent(
-                    permanent,
-                    player,
-                    new Object[]{permanent,player},
-                    this,
-                    "Each other attacking creature gets +1/+0 until end of turn."):
+                permanent,
+                this,
+                "Each other attacking creature gets +1/+0 until end of turn."
+            ):
             MagicEvent.NONE;
     }
 
@@ -44,9 +42,9 @@ public class MagicBattleCryTrigger extends MagicWhenAttacksTrigger {
             final MagicEvent event,
             final Object[] data,
             final Object[] choiceResults) {
-        final MagicPermanent permanent = (MagicPermanent)data[0];
+        final MagicPermanent permanent = event.getPermanent();
         final Collection<MagicTarget> targets = game.filterTargets(
-                (MagicPlayer)data[1],
+                event.getPlayer(),
                 MagicTargetFilter.TARGET_ATTACKING_CREATURE);
         for (final MagicTarget target : targets) {
             final MagicPermanent creature = (MagicPermanent)target;

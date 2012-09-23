@@ -67,13 +67,11 @@ public class MagicEntersExileCreatureOrSacrificeTrigger extends MagicWhenComesIn
                     targetChoice);
         return new MagicEvent(
                 permanent,
-                player,
                 championChoice,
                 MagicExileTargetPicker.create(),
-                new Object[]{permanent},
                 this,
                 "You may$ exile another " + targets + " you control$. " +
-                "If you don't, sacrifice " + permanent + ".");
+                "If you don't, sacrifice SN.");
     }
 
     @Override
@@ -82,7 +80,7 @@ public class MagicEntersExileCreatureOrSacrificeTrigger extends MagicWhenComesIn
             final MagicEvent event,
             final Object data[],
             final Object[] choiceResults) {
-        final MagicPermanent permanent = (MagicPermanent)data[0];
+        final MagicPermanent permanent = event.getPermanent();
         if (MagicMayChoice.isYesChoice(choiceResults[0])) {
             event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {

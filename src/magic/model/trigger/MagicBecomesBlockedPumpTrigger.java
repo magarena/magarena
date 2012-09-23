@@ -25,19 +25,19 @@ public class MagicBecomesBlockedPumpTrigger extends MagicWhenBecomesBlockedTrigg
             final MagicGame game,
             final MagicPermanent permanent,
             final MagicPermanent data) {
-        if (permanent == data ) {
+        if (permanent == data) {
             int size = forEachBlocker ?
                     permanent.getBlockingCreatures().size() :
                     1;
             final int totalAmountPower = amountPower * size;
             final int totalAmountToughness = amountToughness * size;
             return new MagicEvent(
-                    permanent,
-                    permanent.getController(),
-                    new Object[]{permanent},
-                    this,
-                    permanent + " gets " + getString(totalAmountPower) + 
-                    "/" + getString(totalAmountToughness) + " until end of turn.");
+                permanent,
+                this,
+                "SN gets " + 
+                getString(totalAmountPower) + "/" + getString(totalAmountToughness) + 
+                " until end of turn."
+            );
         }
         return MagicEvent.NONE;
     }
@@ -48,9 +48,10 @@ public class MagicBecomesBlockedPumpTrigger extends MagicWhenBecomesBlockedTrigg
             final Object data[],
             final Object[] choiceResults) {
         game.doAction(new MagicChangeTurnPTAction(
-                (MagicPermanent)data[0],
-                amountPower,
-                amountToughness));
+            event.getPermanent(),
+            amountPower,
+            amountToughness
+        ));
     }
     
     private String getString(final int pt) {

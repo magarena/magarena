@@ -17,9 +17,8 @@ public class MagicFadeVanishCounterTrigger extends MagicAtUpkeepTrigger {
     }
 
     @Override
-    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer data) {
-        final MagicPlayer player = permanent.getController();
-        if (player == data) {
+    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
+        if (permanent.isController(upkeepPlayer)) {
             boolean sacrifice = false;
             final int amount = permanent.getCounters(MagicCounterType.Charge);
             if (counterType == "fade") {
@@ -29,13 +28,13 @@ public class MagicFadeVanishCounterTrigger extends MagicAtUpkeepTrigger {
                 game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.Charge,-1,true));
             }
             return new MagicEvent(
-                    permanent,
-                    player,
-                    new Object[]{permanent,sacrifice},
-                    this,
-                    sacrifice ?
-                    player + " sacrifices " + permanent + "." :
-                    player + " removes a " + counterType + " counter from " + permanent + ".");
+                permanent,
+                new Object[]{sacrifice},
+                this,
+                sacrifice ?
+                    "PN sacrifices SN." :
+                    "PN removes a " + counterType + " counter from SN."
+            );
         }
         return MagicEvent.NONE;
     }
@@ -45,15 +44,16 @@ public class MagicFadeVanishCounterTrigger extends MagicAtUpkeepTrigger {
             final MagicEvent event,
             final Object data[],
             final Object[] choiceResults) {
-        final boolean sacrifice = (Boolean)data[1];
+        final boolean sacrifice = (Boolean)data[0];
         if (sacrifice) {
-            game.doAction(new MagicSacrificeAction((MagicPermanent)data[0]));
+            game.doAction(new MagicSacrificeAction(event.getPermanent()));
         } else {
             game.doAction(new MagicChangeCountersAction(
-                    (MagicPermanent)data[0],
-                    MagicCounterType.Charge,
-                    -1,
-                    true));
+                event.getPermanent(),
+                MagicCounterType.Charge,
+                -1,
+                true
+            ));
         }
     }
 }

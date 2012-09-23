@@ -19,16 +19,16 @@ public class MagicLeavesReturnExileTrigger extends MagicWhenLeavesPlayTrigger {
     }
 
     @Override
-    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent data) {
-        if (permanent == data &&
+    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent left) {
+        if (permanent == left &&
             !permanent.getExiledCards().isEmpty()) {
             final MagicCard exiledCard = permanent.getExiledCards().get(0);
             return new MagicEvent(
-                    permanent,
-                    permanent.getController(),
-                    new Object[]{exiledCard,permanent.getController()},
-                    this,
-                    "Return " + exiledCard + " to the battlefield");
+                permanent,
+                new Object[]{exiledCard},
+                this,
+                "Return " + exiledCard + " to the battlefield"
+            );
         }
         return MagicEvent.NONE;
     }

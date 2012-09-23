@@ -17,18 +17,19 @@ public class MagicPersistTrigger extends MagicWhenPutIntoGraveyardTrigger {
     
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
-        if (triggerData.fromLocation==MagicLocationType.Play&&permanent.getCounters(MagicCounterType.MinusOne)==0) {
-            final MagicCard card=triggerData.card;
-            return new MagicEvent(permanent,permanent.getController(),new Object[]{card},this,
-                "Return "+card.getName()+" to play under its owner's control with a -1/-1 counter on it.");
-        }
-        return MagicEvent.NONE;
+        return (triggerData.fromLocation==MagicLocationType.Play && 
+                permanent.getCounters(MagicCounterType.MinusOne)==0) ?
+            new MagicEvent(
+                permanent,
+                this,
+                "Return SN to play under its owner's control with a -1/-1 counter on it."
+            ):
+            MagicEvent.NONE;
     }
 
     @Override
     public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
-        final MagicCard card=(MagicCard)data[0];
+        final MagicCard card = event.getPermanent().getCard();
         game.doAction(new MagicReanimateAction(card.getOwner(),card,MagicPlayCardAction.PERSIST));
     }
     
