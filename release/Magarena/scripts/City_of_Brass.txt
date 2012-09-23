@@ -1,11 +1,10 @@
 name=City of Brass
-url=http://magiccards.info/an/en/85.html
-image=http://magiccards.info/scans/en/an/85.jpg
+url=http://magiccards.info/me4/en/243.html
+image=http://magiccards.info/scans/en/me4/243.jpg
 value=4.679
-rarity=U
+rarity=R
 type=Land
 mana=b1g1r1u1w1
 timing=land
 ability=tap add mana any
 requires_card_code
-		
