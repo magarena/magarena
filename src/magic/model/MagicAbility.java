@@ -106,7 +106,7 @@ public enum MagicAbility {
         }
     },
 
-    // 62 core ability that are tracked in permanent's abilityFlags
+    // 63 core abilities that are tracked in MagicPermanent's abilityFlags
     // see MagicAbility.CORE
     
     Changeling("changeling",10) {
