@@ -180,7 +180,8 @@ inf: $(MAG)
 
 %.t: $(MAG)
 	echo `hg id -n` > $*.log
-	$(JAVAEA) -DrndSeed=$* -Dmagarena.dir=`pwd`/release -DselfMode -jar $^ >> $*.log 2>&1
+	$(JAVA) -DrndSeed=$* -Dmagarena.dir=`pwd`/release magic.DeckStrCal --str1 1 --str2 1 --life 10 --games 1 --repeat 1000000  >> $*.log 2>&1
+	#$(JAVAEA) -DrndSeed=$* -Dmagarena.dir=`pwd`/release -DselfMode -jar $^ >> $*.log 2>&1
 
 test: $(MAG)
 	-make `date +%s`.d
