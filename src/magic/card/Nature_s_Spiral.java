@@ -19,11 +19,12 @@ public class Nature_s_Spiral {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack,
-                    MagicTargetChoice.TARGET_PERMANENT_CARD_FROM_GRAVEYARD,
-                    new MagicGraveyardTargetPicker(false),
-                    this,
-                    "Return target permanent card$ from your graveyard to your hand.");
+                cardOnStack,
+                MagicTargetChoice.TARGET_PERMANENT_CARD_FROM_GRAVEYARD,
+                new MagicGraveyardTargetPicker(false),
+                this,
+                "Return target permanent card$ from your graveyard to your hand."
+            );
         }
         @Override
         public void executeEvent(

@@ -24,13 +24,14 @@ public class Stitch_Together {
             // estimated number of cards in the graveyard. this may change
             // before resolution but we need to make a choice here
             return new MagicEvent(
-                    cardOnStack,
-                    MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
-                    new MagicGraveyardTargetPicker(MagicCondition.THRESHOLD_CONDITION.accept(cardOnStack)),
-                    this,
-                    "Return target creature card$ from your graveyard to your hand. " +
-                    "Return that card from your graveyard to the battlefield instead " +
-                    "if seven or more cards are in your graveyard.");
+                cardOnStack,
+                MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
+                new MagicGraveyardTargetPicker(MagicCondition.THRESHOLD_CONDITION.accept(cardOnStack)),
+                this,
+                "Return target creature card$ from your graveyard to your hand. " +
+                "Return that card from your graveyard to the battlefield instead " +
+                "if seven or more cards are in your graveyard."
+            );
         }
         @Override
         public void executeEvent(

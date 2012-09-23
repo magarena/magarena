@@ -32,9 +32,10 @@ public class Puppeteer_Clique {
             event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard card) {
                     game.doAction(new MagicReanimateAction(
-                                event.getPlayer(),
-                                card,
-                                MagicPlayCardAction.HASTE_REMOVE_AT_END_OF_YOUR_TURN));
+                        event.getPlayer(),
+                        card,
+                        MagicPlayCardAction.HASTE_REMOVE_AT_END_OF_YOUR_TURN
+                    ));
                 }
             });
         }

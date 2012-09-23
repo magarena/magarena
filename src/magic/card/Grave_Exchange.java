@@ -43,12 +43,14 @@ public class Grave_Exchange {
             event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard targetCard) {
                     game.doAction(new MagicRemoveCardAction(
-                            targetCard,
-                            MagicLocationType.Graveyard));
+                        targetCard,
+                        MagicLocationType.Graveyard
+                    ));
                     game.doAction(new MagicMoveCardAction(
-                            targetCard,
-                            MagicLocationType.Graveyard,
-                            MagicLocationType.OwnersHand));
+                        targetCard,
+                        MagicLocationType.Graveyard,
+                        MagicLocationType.OwnersHand
+                    ));
                 }
             });
             game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(new MagicEvent(

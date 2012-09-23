@@ -17,9 +17,10 @@ public class Make_a_Wish {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack,
-                    this,
-                    "Return two cards at random from your graveyard to your hand.");
+                cardOnStack,
+                this,
+                "Return two cards at random from your graveyard to your hand."
+            );
         }
         @Override
         public void executeEvent(

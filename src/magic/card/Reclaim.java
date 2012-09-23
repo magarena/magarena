@@ -19,11 +19,12 @@ public class Reclaim {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack,
-                    MagicTargetChoice.TARGET_CARD_FROM_GRAVEYARD,
-                    new MagicGraveyardTargetPicker(false),
-                    this,
-                    "Put target card$ from your graveyard on top of your library.");
+                cardOnStack,
+                MagicTargetChoice.TARGET_CARD_FROM_GRAVEYARD,
+                new MagicGraveyardTargetPicker(false),
+                this,
+                "Put target card$ from your graveyard on top of your library."
+            );
         }
         @Override
         public void executeEvent(
@@ -35,9 +36,10 @@ public class Reclaim {
                 public void doAction(final MagicCard targetCard) {
                     game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
                     game.doAction(new MagicMoveCardAction(
-                            targetCard,
-                            MagicLocationType.Graveyard,
-                            MagicLocationType.TopOfOwnersLibrary));
+                        targetCard,
+                        MagicLocationType.Graveyard,
+                        MagicLocationType.TopOfOwnersLibrary
+                    ));
                 }
             });
         }

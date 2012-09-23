@@ -19,13 +19,15 @@ public class Brush_with_Death {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack,
-                    new MagicBuybackChoice(
-                            MagicTargetChoice.TARGET_OPPONENT,
-                            MagicManaCost.TWO_BLACK_BLACK),
-                    this,
-                    "Target opponent$ loses 2 life and PN gains 2 life. " + 
-                    "If the buyback cost was payed$, return SN to its owner's hand as it resolves.");
+                cardOnStack,
+                new MagicBuybackChoice(
+                    MagicTargetChoice.TARGET_OPPONENT,
+                    MagicManaCost.TWO_BLACK_BLACK
+                ),
+                this,
+                "Target opponent$ loses 2 life and PN gains 2 life. " + 
+                "If the buyback cost was payed$, return SN to its owner's hand as it resolves."
+            );
         }
 
         @Override

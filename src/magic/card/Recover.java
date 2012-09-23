@@ -20,11 +20,12 @@ public class Recover {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack,
-                    MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
-                    new MagicGraveyardTargetPicker(false),
-                    this,
-                    "Return target creature card$ from your graveyard to your hand. Draw a card.");
+                cardOnStack,
+                MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
+                new MagicGraveyardTargetPicker(false),
+                this,
+                "Return target creature card$ from your graveyard to your hand. Draw a card."
+            );
         }
         @Override
         public void executeEvent(

@@ -5,7 +5,6 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicDestroyAction;
-import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.choice.MagicKickerChoice;
