@@ -1,0 +1,11 @@
+name=Shifting Sliver
+url=http://magiccards.info/le/en/52.html
+image=http://magiccards.info/scans/en/le/52.jpg
+value=4.485
+rarity=U
+type=Creature
+subtype=Sliver
+cost={3}{U}
+pt=2/2
+timing=main
+requires_card_code
