@@ -38,6 +38,7 @@ public enum MagicAbility {
     CannotBeBlockedByFlying("can't be blocked by creatures with flying",20),
     CannotBeBlockedExceptWithFlying("can't be blocked except by creatures with flying",30),
     CannotBeBlockedExceptWithFlyingOrReach("can't be blocked except by creatures with flying or reach",25),
+    CannotBeBlockedExceptBySliver("can't be blocked except by Slivers", 90), 
     CannotBeBlockedByHumans("can't be blocked by humans",10),
     CannotBeBlockedByBlack("can't be blocked by black creatures",10),
     CannotBeBlockedByBlue("can't be blocked by blue creatures",10),
