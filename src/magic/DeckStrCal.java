@@ -5,6 +5,7 @@ import magic.ai.MagicAIImpl;
 import magic.data.DeckUtils;
 import magic.data.DuelConfig;
 import magic.model.MagicGame;
+import magic.model.MagicGameReport;
 import magic.model.MagicDuel;
 import magic.ui.GameController;
 
@@ -133,6 +134,9 @@ public class DeckStrCal {
     }
    
     public static void main(final String[] args) {
+        // setup the handler for any uncaught exception
+        Thread.setDefaultUncaughtExceptionHandler(new magic.model.MagicGameReport());
+        
         if (!parseArguments(args)) {
             System.err.println("Usage: java -cp <path to Magarena.jar/exe> magic.DeckStrCal --deck1 <.dec file> --deck2 <.dec file> [options]");
             System.err.println("Options:");
