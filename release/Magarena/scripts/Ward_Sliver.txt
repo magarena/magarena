@@ -1,0 +1,11 @@
+name=Ward Sliver
+url=http://magiccards.info/le/en/25.html
+image=http://magiccards.info/scans/en/le/25.jpg
+value=4.155
+rarity=U
+type=Creature
+subtype=Sliver
+cost={4}{W}
+pt=2/2
+timing=main
+requires_card_code
