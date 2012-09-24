@@ -22,12 +22,13 @@ public class MagicReplicateTrigger extends MagicWhenSpellIsCastTrigger {
             final MagicGame game,
             final MagicPermanent permanent,
             final MagicCardOnStack cardOnStack) {
-        int kickerCount = (Integer)cardOnStack.getChoiceResults()[1];
+        final int kickerCount = (Integer)cardOnStack.getChoiceResults()[1];
         return (kickerCount > 0) ?
             new MagicEvent(
                 cardOnStack,
                 this,
-                "Copy " + cardOnStack + " for each time its replicate cost was paid.") :
+                "Copy SN for each time its replicate cost was paid."
+            ):
             MagicEvent.NONE;
     }
     
@@ -38,11 +39,12 @@ public class MagicReplicateTrigger extends MagicWhenSpellIsCastTrigger {
             final Object data[],
             final Object[] choiceResults) {
         final MagicCardOnStack cardOnStack = event.getCardOnStack();
-        int kickerCount = (Integer)cardOnStack.getChoiceResults()[1];
-        for (;kickerCount>0;kickerCount--) {
+        final int kickerCount = (Integer)cardOnStack.getChoiceResults()[1];
+        for (int i = 0; i < kickerCount; i++) {
             game.doAction(new MagicCopyCardOnStackAction(
-                    cardOnStack.getController(),
-                    cardOnStack));
+                cardOnStack.getController(),
+                cardOnStack
+            ));
         }
     }
 }

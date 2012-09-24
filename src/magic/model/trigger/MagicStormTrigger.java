@@ -21,11 +21,11 @@ public class MagicStormTrigger extends MagicWhenSpellIsCastTrigger {
     public MagicEvent executeTrigger(
             final MagicGame game,
             final MagicPermanent permanent,
-            final MagicCardOnStack spell) {
+            final MagicCardOnStack cardOnStack) {
         final int count = game.getSpellsPlayed();
         return (count > 0) ?
             new MagicEvent(
-                spell,
+                cardOnStack,
                 new Object[]{count},
                 this,
                 "Copy SN " + count + 
@@ -40,17 +40,12 @@ public class MagicStormTrigger extends MagicWhenSpellIsCastTrigger {
             final MagicEvent event,
             final Object data[],
             final Object[] choiceResults) {
-        int count = (Integer)data[0];
-        for (;count>0;count--) {
+        final int count = (Integer)data[0];
+        for (int i = 0; i < count; i++) {
             game.doAction(new MagicCopyCardOnStackAction(
                 event.getPlayer(),
                 event.getCardOnStack()
             ));
         }
-    }
-    
-    @Override
-    public boolean usesStack() {
-        return false;
     }
 }
