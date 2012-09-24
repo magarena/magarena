@@ -67,13 +67,15 @@ public class MagicPayManaCostChoice extends MagicChoice {
             final MagicEvent event,
             final MagicPlayer player,
             final MagicSource source) {
-        if (game.getFastChoices()) {
-            return buildDelayedPayManaCostResults(game,player);
-        } else {
-            final MagicPayManaCostResultBuilder builder = 
-                new MagicPayManaCostResultBuilder(game,player,cost.getBuilderCost());        
-            return builder.getResults();
-        }
+        
+        final Collection<Object> options = 
+            game.getFastChoices() ?
+                buildDelayedPayManaCostResults(game,player) :
+                new MagicPayManaCostResultBuilder(game,player,cost.getBuilderCost()).getResults();
+
+        assert options.size() > 0 : "No options to pay mana cost";
+
+        return options;
     }
     
     @Override
