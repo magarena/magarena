@@ -22,13 +22,15 @@ public class Into_the_Roil {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack,
-                    new MagicKickerChoice(
-                        MagicTargetChoice.TARGET_NONLAND_PERMANENT,
-                        MagicManaCost.ONE_BLUE,false),
-                    MagicBounceTargetPicker.getInstance(),
-                    this,
-                    "Return target nonland permanent$ to its owner's hand. If SN was kicked$, draw a card.");
+                cardOnStack,
+                new MagicKickerChoice(
+                    MagicTargetChoice.TARGET_NONLAND_PERMANENT,
+                    MagicManaCost.ONE_BLUE,false
+                ),
+                MagicBounceTargetPicker.getInstance(),
+                this,
+                "Return target nonland permanent$ to its owner's hand. If SN was kicked$, draw a card."
+            );
         }
         @Override
         public void executeEvent(
