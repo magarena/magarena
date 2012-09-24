@@ -40,7 +40,9 @@ public class MagicCardActivation extends MagicActivation {
         final MagicManaCost cost = ((MagicCard)source).getCost();
 
         if (cost!=MagicManaCost.ZERO) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),cost)};
+            return new MagicEvent[]{
+                new MagicPayManaCostEvent(source,source.getController(),cost)
+            };
         } else {
             return MagicEvent.NO_EVENTS;
         }
