@@ -24,15 +24,6 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
     }
     
     @Override
-    public void executeEvent(
-            final MagicGame game, 
-            final MagicEvent event, 
-            final Object data[], 
-            final Object[] choiceResults) {
-        throw new RuntimeException(getClass() + " did not override executeEvent");
-    }
-   
-    @Override
     public void change(MagicCardDefinition cdef) {
         cdef.setEvent(this);
         setCardDefinition(cdef);
@@ -52,9 +43,17 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
                     cardOnStack,
                     choice,
                     (picker != null ? picker : MagicDefaultTargetPicker.create()),
-                    action,
+                    this,
                     effect + "$."
                 );
+            }
+            @Override
+            public void executeEvent(
+                    final MagicGame game, 
+                    final MagicEvent event, 
+                    final Object data[], 
+                    final Object[] choiceResults) {
+                action.executeEvent(game, event, data, choiceResults);
             }
         };
     }

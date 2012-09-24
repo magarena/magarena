@@ -32,8 +32,9 @@ public class MagicEvent implements MagicCopyable {
 
     public static final MagicSource NO_SOURCE = MagicCard.NONE;
     public static final Object NO_CHOICE_RESULTS[] = new Object[0];
-    public static final Object NO_DATA[] = new Object[0];
     public static final MagicEvent NO_EVENTS[] = new MagicEvent[0];
+    
+    private static final Object NO_DATA[] = new Object[0];
     private static final MagicChoice NO_CHOICES = MagicChoice.NONE;
     private static final MagicEventAction NO_ACTION = new MagicEventAction() {
         public void executeEvent(
@@ -389,7 +390,9 @@ public class MagicEvent implements MagicCopyable {
     public final void executeEvent(final MagicGame game,final Object choiceResults[]) {
         action.executeEvent(game,this,data,choiceResults);
         //move card to move location that is not play 
-        if (source instanceof MagicCardOnStack && getCardOnStack().getMoveLocation() != MagicLocationType.Play) {
+        if (source instanceof MagicCardOnStack &&
+            action instanceof MagicSpellCardEvent &&
+            getCardOnStack().getMoveLocation() != MagicLocationType.Play) {
             game.doAction(new MagicMoveCardAction(getCardOnStack()));
         }
     }
