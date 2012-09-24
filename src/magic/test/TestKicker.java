@@ -40,6 +40,7 @@ class TestKicker extends TestGameBuilder {
         addToHand(P,"Lightkeeper of Emeria",1); 
         addToHand(P,"Bloodhusk Ritualist",1); 
         addToHand(P,"Deathforge Shaman",1); 
+        addToHand(P,"Into the Roil",1); 
 
         P = opponent;
         
