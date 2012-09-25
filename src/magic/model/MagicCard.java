@@ -40,7 +40,7 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
         cardDefinition = sourceCard.cardDefinition;
         owner = copyMap.copy(sourceCard.owner);
         id = sourceCard.id;
-        imageIndex = (int)Math.abs(id % 1000);
+        imageIndex = sourceCard.imageIndex;
         token = sourceCard.token;
         known = sourceCard.known;
     }
