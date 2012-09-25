@@ -737,6 +737,11 @@ public class MagicCardDefinition {
             getText().toLowerCase().contains(s)
         );
     }
+    
+    @Override
+    public String toString() {
+        return getName();
+    }
 
     public static final Comparator<MagicCardDefinition> NAME_COMPARATOR_DESC=new Comparator<MagicCardDefinition>() {
         @Override
