@@ -16,6 +16,8 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.mstatic.MagicLayer;
 
 public class MagicCardActivation extends MagicActivation {
+
+    final boolean usesStack;
     
     public MagicCardActivation(final MagicCardDefinition cdef) {
         super(
@@ -27,12 +29,12 @@ public class MagicCardActivation extends MagicActivation {
             cdef.getActivationHints(),
             "Play"
         );
-        setCardDefinition(cdef);
+        usesStack = cdef.usesStack();
     }
-    
+  
     @Override
     boolean usesStack() {
-        return getCardDefinition().usesStack();
+        return usesStack;
     }
 
     @Override

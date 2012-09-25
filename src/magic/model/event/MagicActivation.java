@@ -22,8 +22,7 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
     private final MagicCondition conditions[];
     private final MagicActivationHints hints;
     
-    private MagicCardDefinition cdef;
-    private long id;
+    private final long id;
 
     MagicActivation(
         final int index,
@@ -45,20 +44,10 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
             }
         }
         
-        //depends on the card
-        this.cdef = null;
-        this.id = -1;
+        //randomly assigned, used for ordering activations
+        this.id = hashCode();
     }
     
-    public void setCardDefinition(final MagicCardDefinition cdef) {
-        this.cdef = cdef;
-        this.id = (cdef.hashCode() << 16) + index;
-    }
-    
-    final MagicCardDefinition getCardDefinition() {
-        return cdef;
-    }
-        
     private final MagicCondition[] getConditions() {
         return conditions;
     }
@@ -66,11 +55,7 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
     public final MagicActivationHints getActivationHints() {
         return hints;
     }
-    
-    public final long getId() {
-        return id;
-    }
-
+   
     public final String getText() {
         return text;
     }
@@ -97,28 +82,32 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
             final MagicPlayer player,
             final MagicSource source,
             final boolean useHints) {
-        
-        if (useHints && 
-            (!checkActivationPriority(source) || 
-             !hints.getTiming().canPlay(game,source) || 
-             hints.isMaximum(source)
-            )
-           ) {
+       
+        if (useHints && !checkActivationPriority(source)) {
             return false;
         }
 
+        if (useHints && !hints.getTiming().canPlay(game, source)) {
+            return false;
+        }
+
+        if (useHints && hints.isMaximum(source)) {
+            return false;
+        }
+
+        if (source.isPermanent() && ((MagicPermanent)source).hasState(MagicPermanentState.LosesAllAbilities)) {
+            return false;
+        }
+        
+        if (source.isSpell() && player.hasState(MagicPlayerState.CantCastSpells)) {
+            return false;
+        }
+
+        // Check conditions for activation
         for (final MagicCondition condition : conditions) {
             if (!condition.accept(source)) {
                 return false;
             }
-        }
-        
-        if ((source instanceof MagicPermanent &&
-            ((MagicPermanent)source).hasState(MagicPermanentState.LosesAllAbilities))
-            ||
-            (source.isSpell() &&
-            player.hasState(MagicPlayerState.CantCastSpells))) {
-            return false;
         }
         
         // Check for legal targets.
