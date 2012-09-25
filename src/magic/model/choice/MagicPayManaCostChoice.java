@@ -40,8 +40,14 @@ public class MagicPayManaCostChoice extends MagicChoice {
 
     @Override
     boolean hasOptions(final MagicGame game,final MagicPlayer player,final MagicSource source,final boolean hints) {
-        final MagicPayManaCostResultBuilder builder=new MagicPayManaCostResultBuilder(game,player,cost.getBuilderCost());
-        return builder.hasResults();
+        final Collection<Object> options = genOptions(game, player);
+        return !options.isEmpty();
+    }
+            
+    private Collection<Object> genOptions(final MagicGame game, final MagicPlayer player) {
+        return game.getFastChoices() ?
+            buildDelayedPayManaCostResults(game,player) :
+            new MagicPayManaCostResultBuilder(game,player,cost.getBuilderCost()).getResults();
     }
     
     private Collection<Object> buildDelayedPayManaCostResults(final MagicGame game,final MagicPlayer player) {
@@ -68,12 +74,14 @@ public class MagicPayManaCostChoice extends MagicChoice {
             final MagicPlayer player,
             final MagicSource source) {
         
-        final Collection<Object> options = 
-            game.getFastChoices() ?
-                buildDelayedPayManaCostResults(game,player) :
-                new MagicPayManaCostResultBuilder(game,player,cost.getBuilderCost()).getResults();
+        final Collection<Object> options = genOptions(game, player); 
 
-        assert options.size() > 0 : "No options to pay mana cost";
+        assert !options.isEmpty() : 
+            "No options to pay mana cost\n" + 
+            "fastChoices = " + game.getFastChoices() + "\n" +
+            "source = " + source + "\n" +
+            "player = " + player + "\n" +
+            "event = " + event + "\n"; 
 
         return options;
     }
