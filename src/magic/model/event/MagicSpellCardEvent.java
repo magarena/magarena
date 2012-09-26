@@ -11,22 +11,11 @@ import magic.model.target.MagicDefaultTargetPicker;
 
 public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAction,MagicChangeCardDefinition {
 
-    private MagicCardDefinition cdef;
-    
     public MagicSpellCardEvent() {}
 
-    public void setCardDefinition(final MagicCardDefinition cdef) {
-        this.cdef = cdef;
-    }
-    
-    public final MagicCardDefinition getCardDefinition() {
-        return cdef;
-    }
-    
     @Override
     public void change(MagicCardDefinition cdef) {
         cdef.setEvent(this);
-        setCardDefinition(cdef);
     }
 
     //first part is action/picker, rest is target
