@@ -20,9 +20,6 @@ public abstract class MagicStatic extends MagicDummyPermanentModifier implements
     //layer where this effect operate
     private final MagicLayer layer;
 
-    //card definition providing the effect
-    private MagicCardDefinition cdef;
-
     private boolean isUntilEOT;
 
     protected MagicStatic(final MagicLayer aLayer, final MagicTargetFilter aFilter, final boolean aIsUntilEOT) {
@@ -42,19 +39,10 @@ public abstract class MagicStatic extends MagicDummyPermanentModifier implements
     protected MagicStatic(final MagicLayer aLayer) {
         this(aLayer, MagicTargetFilter.SELF, false);
     }
-
-    public void setCardDefinition(final MagicCardDefinition cdef) {
-        this.cdef = cdef;
-    }
-    
-    final MagicCardDefinition getCardDefinition() {
-        return cdef;
-    }
     
     @Override
     public void change(MagicCardDefinition cdef) {
         cdef.addStatic(this);
-        setCardDefinition(cdef);
     }
         
     public final MagicLayer getLayer() {
