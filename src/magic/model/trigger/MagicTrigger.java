@@ -13,7 +13,6 @@ public abstract class MagicTrigger<T> implements MagicEventAction,MagicChangeCar
     private static final int DEFAULT_PRIORITY=10;
     
     private final int priority;
-    private MagicCardDefinition cdef;
 
     protected MagicTrigger(final int priority) {
         this.priority = priority;
@@ -23,14 +22,6 @@ public abstract class MagicTrigger<T> implements MagicEventAction,MagicChangeCar
         this(DEFAULT_PRIORITY);
     }
 
-    public void setCardDefinition(final MagicCardDefinition cdef) {
-        this.cdef = cdef;
-    }
-    
-    final MagicCardDefinition getCardDefinition() {
-        return cdef;
-    }
-        
     public final int getPriority() {
         return priority;
     }
@@ -55,6 +46,5 @@ public abstract class MagicTrigger<T> implements MagicEventAction,MagicChangeCar
     @Override
     public void change(MagicCardDefinition cdef) {
         cdef.addTrigger(this);
-        setCardDefinition(cdef);
     }
 }
