@@ -5,6 +5,7 @@ import magic.ai.MagicAIImpl;
 import magic.data.DeckUtils;
 import magic.data.DuelConfig;
 import magic.model.MagicGame;
+import magic.model.MagicRandom;
 import magic.model.MagicGameReport;
 import magic.model.MagicDuel;
 import magic.ui.GameController;
@@ -18,6 +19,7 @@ public class DeckStrCal {
     private static int str1 = 6;
     private static int str2 = 6;
     private static int life = 20;
+    private static int seed = 0; 
     private static String deck1 = "";
     private static String deck2 = "";
     private static MagicAIImpl ai1 = MagicAIImpl.MMAB;
@@ -82,6 +84,13 @@ public class DeckStrCal {
                     System.err.println("ERROR! repeat is not an integer");
                     validArgs = false;
                 }
+            } else if ("--seed".equals(curr)) {
+                try { //parse CLI option
+                    seed = Integer.parseInt(next);
+                } catch (final NumberFormatException ex) {
+                    System.err.println("ERROR! seed is not an integer");
+                    validArgs = false;
+                }
             } else {
                 System.err.println("Error: unknown option " + curr);
                 validArgs = false;
@@ -106,6 +115,12 @@ public class DeckStrCal {
     }
 
     private static MagicDuel setupDuel() {
+        // Set the random seed
+        if (seed != 0) {
+            MagicRandom.setSeed(seed);
+            seed = MagicRandom.nextInt(1000000) + 1;
+        }
+
         // Set number of games.
         final DuelConfig config=new DuelConfig();
         config.setNrOfGames(games);
