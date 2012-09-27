@@ -1,9 +1,9 @@
 package magic.model.trigger;
 
-import magic.model.MagicPermanent;
 import magic.model.MagicGame;
-import magic.model.event.MagicEvent;
 import magic.model.MagicLocationType;
+import magic.model.MagicPermanent;
+import magic.model.event.MagicEvent;
 
 public abstract class MagicWhenDiesTrigger extends MagicWhenPutIntoGraveyardTrigger {
     public MagicWhenDiesTrigger(final int priority) {

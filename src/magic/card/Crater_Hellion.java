@@ -1,7 +1,5 @@
 package magic.card;
 
-import java.util.Collection;
-
 import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
@@ -12,6 +10,8 @@ import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
+
+import java.util.Collection;
 
 public class Crater_Hellion {
     public static final MagicWhenComesIntoPlayTrigger T2 = new MagicWhenComesIntoPlayTrigger() {

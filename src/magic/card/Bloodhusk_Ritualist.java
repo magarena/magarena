@@ -1,9 +1,7 @@
 package magic.card;
 
-import magic.model.MagicPermanent;
 import magic.model.MagicGame;
-import magic.model.MagicManaCost;
-import magic.model.MagicPayedCost;
+import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicPlayerAction;
 import magic.model.choice.MagicTargetChoice;

@@ -1,8 +1,6 @@
 package magic.card;
 
 
-import java.util.Iterator;
-
 import magic.data.TokenCardDefinitions;
 import magic.model.MagicDamage;
 import magic.model.MagicGame;

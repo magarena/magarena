@@ -6,8 +6,8 @@ import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLandPlayedAction;
 import magic.model.action.MagicDrawAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 import magic.model.trigger.MagicAtUpkeepTrigger;
+import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Rites_of_Flourishing {
     public static final MagicWhenComesIntoPlayTrigger T1 = new MagicWhenComesIntoPlayTrigger() {

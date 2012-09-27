@@ -1,33 +1,61 @@
 package magic.model;
 
-import java.util.List;
-import java.util.EnumSet;
-
-import magic.model.MagicCardDefinition;
-import magic.model.MagicManaCost;
-import magic.model.MagicManaType;
-import magic.model.MagicSubType;
-
 import magic.model.choice.MagicTargetChoice;
-
 import magic.model.event.MagicActivationHints;
-import magic.model.event.MagicTiming;
-
-import magic.model.event.MagicRegenerationActivation;
-import magic.model.event.MagicPumpActivation;
-import magic.model.event.MagicPingActivation;
-import magic.model.event.MagicLevelUpActivation;
-import magic.model.event.MagicSacrificeManaActivation;
-import magic.model.event.MagicTapManaActivation;
-import magic.model.event.MagicVividManaActivation;
-import magic.model.event.MagicSacrificeTapManaActivation;
 import magic.model.event.MagicGainActivation;
-import magic.model.event.MagicPlayMulticounterEvent;
+import magic.model.event.MagicLevelUpActivation;
+import magic.model.event.MagicPingActivation;
 import magic.model.event.MagicPlayCardEvent;
-
+import magic.model.event.MagicPlayMulticounterEvent;
+import magic.model.event.MagicPumpActivation;
+import magic.model.event.MagicRegenerationActivation;
+import magic.model.event.MagicSacrificeManaActivation;
+import magic.model.event.MagicSacrificeTapManaActivation;
+import magic.model.event.MagicTapManaActivation;
+import magic.model.event.MagicTiming;
+import magic.model.event.MagicVividManaActivation;
 import magic.model.mstatic.MagicCDA;
+import magic.model.trigger.MagicAllyGrowTrigger;
+import magic.model.trigger.MagicAnnihilatorTrigger;
+import magic.model.trigger.MagicAttacksPumpTrigger;
+import magic.model.trigger.MagicBattleCryTrigger;
+import magic.model.trigger.MagicBecomesBlockedPumpTrigger;
+import magic.model.trigger.MagicBloodthirstTrigger;
+import magic.model.trigger.MagicComesIntoPlayWithCounterTrigger;
+import magic.model.trigger.MagicCumulativeUpkeepTrigger;
+import magic.model.trigger.MagicDamageGrowTrigger;
+import magic.model.trigger.MagicDevourTrigger;
+import magic.model.trigger.MagicDieDrawCardTrigger;
+import magic.model.trigger.MagicEchoTrigger;
+import magic.model.trigger.MagicEntersDamageTargetTrigger;
+import magic.model.trigger.MagicEntersDrawCardTrigger;
+import magic.model.trigger.MagicEntersExileCreatureOrSacrificeTrigger;
+import magic.model.trigger.MagicExaltedTrigger;
+import magic.model.trigger.MagicFadeVanishCounterTrigger;
+import magic.model.trigger.MagicFlankingTrigger;
+import magic.model.trigger.MagicFromGraveyardToLibraryTrigger;
+import magic.model.trigger.MagicLandfallPumpTrigger;
+import magic.model.trigger.MagicLeavesDamageTargetTrigger;
+import magic.model.trigger.MagicLeavesGainLifeTrigger;
+import magic.model.trigger.MagicLeavesReturnExileTrigger;
+import magic.model.trigger.MagicLivingWeaponTrigger;
+import magic.model.trigger.MagicMiracleTrigger;
+import magic.model.trigger.MagicModularTrigger;
+import magic.model.trigger.MagicRampageTrigger;
+import magic.model.trigger.MagicRavnicaLandTrigger;
+import magic.model.trigger.MagicRefugeLandTrigger;
+import magic.model.trigger.MagicReplicateTrigger;
+import magic.model.trigger.MagicSoulshiftTrigger;
+import magic.model.trigger.MagicSpecterTrigger;
+import magic.model.trigger.MagicStormTrigger;
+import magic.model.trigger.MagicTappedIntoPlayTrigger;
+import magic.model.trigger.MagicTappedIntoPlayUnlessTrigger;
+import magic.model.trigger.MagicTappedIntoPlayUnlessTwoTrigger;
+import magic.model.trigger.MagicThiefTrigger;
+import magic.model.trigger.MagicWhenBlocksPumpTrigger;
 
-import magic.model.trigger.*;
+import java.util.EnumSet;
+import java.util.List;
 
 public enum MagicAbility {
 

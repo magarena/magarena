@@ -2,11 +2,11 @@ package magic.ui.viewer;
 
 import magic.ai.MagicAI;
 import magic.ai.MagicAIImpl;
+import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
-import magic.data.DuelConfig;
-import magic.model.MagicGame;
 import magic.model.MagicDuel;
+import magic.model.MagicGame;
 import magic.ui.GameController;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;

@@ -3,8 +3,8 @@ package magic.model.action;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicLayer;
+import magic.model.mstatic.MagicStatic;
 
 public class MagicGainControlAction extends MagicAction {
 

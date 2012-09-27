@@ -4,14 +4,15 @@ import magic.model.MagicColor;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
+import magic.model.MagicPowerToughness;
 import magic.model.action.MagicUntapAction;
 import magic.model.event.MagicEvent;
+import magic.model.mstatic.MagicLayer;
+import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicAtUpkeepTrigger;
-import magic.model.MagicPowerToughness;
-import magic.model.mstatic.MagicLayer;
-import magic.model.mstatic.MagicStatic;
+
 import java.util.Collection;
 
 public class Murkfiend_Liege {

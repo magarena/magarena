@@ -6,8 +6,8 @@ import magic.model.MagicCardList;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.trigger.MagicTriggerType;
 import magic.model.trigger.MagicTrigger;
+import magic.model.trigger.MagicTriggerType;
 
 import java.util.ArrayList;
 import java.util.List;

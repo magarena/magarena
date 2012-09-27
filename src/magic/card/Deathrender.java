@@ -4,7 +4,6 @@ import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.action.MagicAttachEquipmentAction;
 import magic.model.action.MagicCardAction;
 import magic.model.action.MagicPlayCardAction;

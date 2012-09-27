@@ -1,17 +1,17 @@
 package magic.model.event;
 
-import java.util.Map;
-import java.util.HashMap;
-
 import magic.model.MagicGame;
-import magic.model.MagicPermanent;
 import magic.model.MagicLocationType;
-import magic.model.stack.MagicCardOnStack;
-import magic.model.action.MagicPermanentAction;
+import magic.model.MagicPermanent;
 import magic.model.action.MagicCardOnStackAction;
-import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicCounterItemOnStackAction;
+import magic.model.action.MagicDestroyAction;
+import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicRemoveFromPlayAction;
+import magic.model.stack.MagicCardOnStack;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class MagicEventActionFactory {
     private static Map<String, MagicEventAction> factory = 

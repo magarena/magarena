@@ -2,14 +2,14 @@ package magic.card;
 
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
-import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicPermanentAction;
-import magic.model.event.MagicEvent;
 import magic.model.choice.MagicTargetChoice;
-import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
+import magic.model.event.MagicEvent;
 import magic.model.target.MagicPumpTargetPicker;
+import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Ulvenwald_Bear {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {

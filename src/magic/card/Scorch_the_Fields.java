@@ -1,7 +1,5 @@
 package magic.card;
 
-import java.util.Collection;
-
 import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
@@ -16,6 +14,8 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicDestroyTargetPicker;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
+
+import java.util.Collection;
 
 public class Scorch_the_Fields {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {

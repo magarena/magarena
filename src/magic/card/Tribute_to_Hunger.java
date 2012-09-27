@@ -4,7 +4,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicType;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicPlayerAction;

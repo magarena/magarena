@@ -1,15 +1,15 @@
 package magic.card;
 
-import java.util.Collection;
-
 import magic.model.MagicGame;
-import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
 import magic.model.action.MagicUntapAction;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
+
+import java.util.Collection;
 
 public class Village_Bell_Ringer {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {

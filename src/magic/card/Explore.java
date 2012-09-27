@@ -2,7 +2,6 @@ package magic.card;
 
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
-import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLandPlayedAction;
 import magic.model.action.MagicDrawAction;
 import magic.model.event.MagicEvent;

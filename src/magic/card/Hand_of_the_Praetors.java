@@ -1,18 +1,18 @@
 package magic.card;
 
+import magic.model.MagicAbility;
 import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.mstatic.MagicLayer;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 import magic.model.action.MagicChangePoisonAction;
 import magic.model.event.MagicEvent;
+import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenOtherSpellIsCastTrigger;
-import magic.model.MagicAbility;
 
 public class Hand_of_the_Praetors {
     public static final MagicStatic S = new MagicStatic(

@@ -15,10 +15,10 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTapEvent;
 import magic.model.event.MagicTiming;
-import magic.model.target.MagicUnblockableTargetPicker;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicUnblockableTargetPicker;
 
 public class Merfolk_Sovereign {
     public static final MagicStatic S = new MagicStatic(

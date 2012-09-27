@@ -1,11 +1,10 @@
 package magic.card;
 
 import magic.model.MagicAbility;
-import magic.model.MagicGame;
 import magic.model.MagicPermanent;
+import magic.model.condition.MagicCondition;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
-import magic.model.condition.MagicCondition;
 
 public class Cutthroat_il_Dal {
     public static final MagicStatic S = new MagicStatic(MagicLayer.Ability) {

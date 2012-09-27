@@ -1,12 +1,9 @@
 package magic.card;
 
-import java.util.Collection;
-
 import magic.model.MagicAbility;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.MagicSubType;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicSetAbilityAction;
@@ -16,6 +13,8 @@ import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
+
+import java.util.Collection;
 
 public class Talus_Paladin {
     public static final MagicWhenOtherComesIntoPlayTrigger T1 = new MagicWhenOtherComesIntoPlayTrigger() {

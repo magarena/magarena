@@ -1,9 +1,8 @@
 package magic.model.action;
 
 import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPermanentState;
 import magic.model.MagicLocationType;
+import magic.model.MagicPermanent;
 import magic.model.stack.MagicCardOnStack;
 
 public class MagicPlayCardFromStackAction extends MagicPutIntoPlayAction {

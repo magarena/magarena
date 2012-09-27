@@ -1,15 +1,15 @@
 package magic.data;
 
 import magic.model.MagicAbility;
-import magic.model.MagicColor;
-import magic.model.MagicType;
-import magic.model.MagicSubType;
 import magic.model.MagicCardDefinition;
+import magic.model.MagicColor;
 import magic.model.MagicManaCost;
 import magic.model.MagicStaticType;
-import magic.model.event.MagicTiming;
+import magic.model.MagicSubType;
+import magic.model.MagicType;
 import magic.model.event.MagicPlayAuraEvent;
 import magic.model.event.MagicSpellCardEvent;
+import magic.model.event.MagicTiming;
 import magic.model.mstatic.MagicStatic;
 
 public enum CardProperty {

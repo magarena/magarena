@@ -1,9 +1,8 @@
 package magic.card;
 
-import magic.model.MagicGame;
+import magic.model.MagicAbility;
 import magic.model.MagicPermanent;
 import magic.model.MagicSubType;
-import magic.model.MagicAbility;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 

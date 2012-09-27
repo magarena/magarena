@@ -1,22 +1,22 @@
 package magic.card;
 
+import magic.model.MagicAbility;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
-import magic.model.MagicPlayer;
-import magic.model.MagicAbility;
 import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
+import magic.model.MagicPowerToughness;
+import magic.model.action.MagicAddStaticAction;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicPermanentAction;
-import magic.model.action.MagicAddStaticAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
-import magic.model.target.MagicBecomeTargetPicker;
-import magic.model.trigger.MagicAtUpkeepTrigger;
-import magic.model.MagicPowerToughness;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
+import magic.model.target.MagicBecomeTargetPicker;
 import magic.model.target.MagicTargetFilter;
+import magic.model.trigger.MagicAtUpkeepTrigger;
 
 public class Aven_Mimeomancer {
 

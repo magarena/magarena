@@ -1,8 +1,8 @@
 package magic.card;
 
 import magic.model.MagicGame;
-import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
 import magic.model.action.MagicChangePoisonAction;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;

@@ -5,8 +5,8 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenLifeIsGainedTrigger;
 import magic.model.trigger.MagicLifeChangeTriggerData;
+import magic.model.trigger.MagicWhenLifeIsGainedTrigger;
 
 public class Sanguine_Bond {
     public static final MagicWhenLifeIsGainedTrigger T = new MagicWhenLifeIsGainedTrigger() {

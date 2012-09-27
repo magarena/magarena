@@ -1,7 +1,6 @@
 package magic.card;
 
 import magic.model.MagicGame;
-import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
 import magic.model.MagicType;
 import magic.model.action.MagicExileUntilEndOfTurnAction;

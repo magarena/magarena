@@ -5,8 +5,8 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 import magic.model.event.MagicEvent;
-import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicLayer;
+import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Nyxathid {

@@ -4,21 +4,21 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
+import magic.model.MagicPowerToughness;
 import magic.model.MagicSource;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.choice.MagicTargetChoice;
-import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicActivation;
+import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicSacrificeEvent;
 import magic.model.event.MagicTiming;
+import magic.model.mstatic.MagicLayer;
+import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicBounceTargetPicker;
 import magic.model.target.MagicTargetFilter;
-import magic.model.mstatic.MagicStatic;
-import magic.model.MagicPowerToughness;
-import magic.model.mstatic.MagicLayer;
 
 public class Angelic_Shield {
     public static final MagicStatic S = new MagicStatic(

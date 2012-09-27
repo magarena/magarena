@@ -1,6 +1,5 @@
 package magic.model.mstatic;
 
-import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;

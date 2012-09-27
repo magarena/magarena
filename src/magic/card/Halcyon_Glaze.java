@@ -9,10 +9,10 @@ import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.action.MagicBecomesCreatureAction;
 import magic.model.event.MagicEvent;
+import magic.model.mstatic.MagicLayer;
+import magic.model.mstatic.MagicStatic;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.trigger.MagicWhenOtherSpellIsCastTrigger;
-import magic.model.mstatic.MagicStatic;
-import magic.model.mstatic.MagicLayer;
 
 import java.util.EnumSet;
 

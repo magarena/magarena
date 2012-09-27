@@ -1,7 +1,6 @@
 package magic.model;
 
 import magic.model.phase.MagicPhaseType;
-import magic.model.event.MagicEvent;
 
 import java.util.Collection;
 import java.util.Iterator;

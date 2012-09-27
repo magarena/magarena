@@ -10,7 +10,6 @@ import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayLifeEvent;
 import magic.model.event.MagicPermanentActivation;
-import magic.model.event.MagicPlayAbilityEvent;
 import magic.model.event.MagicTiming;
 
 public class Griselbrand {

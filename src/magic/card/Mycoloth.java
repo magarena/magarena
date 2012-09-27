@@ -1,13 +1,12 @@
 package magic.card;
 
 import magic.data.TokenCardDefinitions;
+import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicPlayTokenAction;
-import magic.model.action.MagicSacrificeAction;
 import magic.model.event.MagicEvent;
-import magic.model.MagicCounterType;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 
 public class Mycoloth {

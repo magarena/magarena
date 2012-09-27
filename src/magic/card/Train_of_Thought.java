@@ -1,14 +1,13 @@
 package magic.card;
 
 import magic.model.MagicGame;
-import magic.model.MagicPayedCost;
 import magic.model.MagicManaCost;
-import magic.model.MagicPlayer;
+import magic.model.MagicPayedCost;
 import magic.model.action.MagicDrawAction;
+import magic.model.choice.MagicKickerChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
-import magic.model.choice.MagicKickerChoice;
 
 public class Train_of_Thought {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {

@@ -1,12 +1,9 @@
 package magic.card;
 
-import java.util.EnumSet;
-
 import magic.model.MagicAbility;
 import magic.model.MagicColor;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
@@ -17,6 +14,8 @@ import magic.model.event.MagicEvent;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
+
+import java.util.EnumSet;
 
 public class Angel_s_Tomb {
 

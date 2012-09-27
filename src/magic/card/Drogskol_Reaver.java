@@ -2,11 +2,10 @@ package magic.card;
 
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.action.MagicDrawAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenLifeIsGainedTrigger;
 import magic.model.trigger.MagicLifeChangeTriggerData;
+import magic.model.trigger.MagicWhenLifeIsGainedTrigger;
 
 public class Drogskol_Reaver {
     public static final MagicWhenLifeIsGainedTrigger T = new MagicWhenLifeIsGainedTrigger() {

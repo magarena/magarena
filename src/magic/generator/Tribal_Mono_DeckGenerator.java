@@ -1,15 +1,15 @@
 package magic.generator;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Random;
-
 import magic.data.CardDefinitions;
 import magic.data.CubeDefinitions;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicPlayerProfile;
 import magic.model.MagicSubType;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Random;
 
 public class Tribal_Mono_DeckGenerator extends DefaultDeckGenerator {
 

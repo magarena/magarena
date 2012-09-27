@@ -1,7 +1,5 @@
 package magic.card;
 
-import java.util.Collection;
-
 import magic.data.TokenCardDefinitions;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
@@ -15,8 +13,10 @@ import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
-import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 import magic.model.trigger.MagicLandfallTrigger;
+import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
+
+import java.util.Collection;
 
 public class Avenger_of_Zendikar {
     public static final MagicWhenComesIntoPlayTrigger T1 =new MagicWhenComesIntoPlayTrigger() {

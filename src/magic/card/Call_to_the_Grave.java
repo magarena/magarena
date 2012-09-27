@@ -3,15 +3,14 @@ package magic.card;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicType;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSacrificePermanentEvent;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
-import magic.model.trigger.MagicAtUpkeepTrigger;
 import magic.model.trigger.MagicAtEndOfTurnTrigger;
+import magic.model.trigger.MagicAtUpkeepTrigger;
 
 import java.util.Collection;
 

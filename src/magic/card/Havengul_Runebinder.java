@@ -1,7 +1,5 @@
 package magic.card;
 
-import java.util.Collection;
-
 import magic.data.TokenCardDefinitions;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
@@ -22,6 +20,8 @@ import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
+
+import java.util.Collection;
 
 public class Havengul_Runebinder {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(

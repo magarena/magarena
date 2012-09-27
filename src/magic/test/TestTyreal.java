@@ -3,12 +3,12 @@ package magic.test;
 import magic.ai.MagicAI;
 import magic.ai.MagicAIImpl;
 import magic.model.MagicCounterType;
+import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPlayerDefinition;
 import magic.model.MagicPlayerProfile;
-import magic.model.MagicDuel;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.phase.MagicMainPhase;
 

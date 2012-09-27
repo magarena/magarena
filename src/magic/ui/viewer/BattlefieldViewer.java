@@ -3,9 +3,9 @@ package magic.ui.viewer;
 import magic.ui.GameController;
 import magic.ui.widget.TitleBar;
 
+import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 import javax.swing.border.Border;
-import javax.swing.BorderFactory;
 import java.awt.BorderLayout;
 import java.util.Collection;
 

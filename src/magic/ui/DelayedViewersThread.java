@@ -1,8 +1,8 @@
 package magic.ui;
 
 import java.util.HashMap;
-import java.util.Map;
 import java.util.Iterator;
+import java.util.Map;
 
 public final class DelayedViewersThread extends Thread {
 

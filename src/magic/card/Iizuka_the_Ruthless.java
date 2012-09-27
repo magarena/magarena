@@ -1,13 +1,10 @@
 package magic.card;
 
-import java.util.Collection;
-
 import magic.model.MagicAbility;
 import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicSetAbilityAction;
 import magic.model.choice.MagicTargetChoice;
@@ -20,6 +17,8 @@ import magic.model.event.MagicSacrificePermanentEvent;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
+
+import java.util.Collection;
 
 public class Iizuka_the_Ruthless {
     

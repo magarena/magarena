@@ -1,17 +1,17 @@
 package magic.card;
 
+import magic.model.MagicAbility;
 import magic.model.MagicColor;
 import magic.model.MagicGame;
-import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
+import magic.model.action.MagicAddStaticAction;
 import magic.model.choice.MagicColorChoice;
 import magic.model.event.MagicEvent;
-import magic.model.target.MagicTargetFilter;
-import magic.model.MagicAbility;
-import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicLayer;
+import magic.model.mstatic.MagicStatic;
+import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
-import magic.model.action.MagicAddStaticAction;
 
 public class Ward_Sliver {
       public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {

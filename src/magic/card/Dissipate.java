@@ -1,9 +1,8 @@
 package magic.card;
 
 import magic.model.MagicGame;
-import magic.model.MagicPayedCost;
-import magic.model.MagicPlayer;
 import magic.model.MagicLocationType;
+import magic.model.MagicPayedCost;
 import magic.model.action.MagicCardOnStackAction;
 import magic.model.action.MagicCounterItemOnStackAction;
 import magic.model.choice.MagicTargetChoice;

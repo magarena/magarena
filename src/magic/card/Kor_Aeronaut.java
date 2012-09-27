@@ -1,17 +1,13 @@
 package magic.card;
 
 import magic.model.MagicAbility;
-import magic.model.MagicCard;
 import magic.model.MagicGame;
-import magic.model.MagicManaCost;
-import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicPermanentAction;
-import magic.model.choice.MagicKickerChoice;
+import magic.model.action.MagicSetAbilityAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
-import magic.model.action.MagicSetAbilityAction;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Kor_Aeronaut {

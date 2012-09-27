@@ -1,7 +1,7 @@
 package magic.ui.viewer;
 
-import magic.model.MagicPlayerDefinition;
 import magic.model.MagicDuel;
+import magic.model.MagicPlayerDefinition;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.PlayerAvatarPanel;
 

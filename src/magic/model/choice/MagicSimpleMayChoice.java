@@ -8,10 +8,10 @@ import magic.model.event.MagicEvent;
 import magic.ui.GameController;
 import magic.ui.choice.MayChoicePanel;
 
-import java.util.concurrent.Callable;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
+import java.util.concurrent.Callable;
 
 public class MagicSimpleMayChoice extends MagicChoice {
 

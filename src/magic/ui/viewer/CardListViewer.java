@@ -1,20 +1,15 @@
 package magic.ui.viewer;
 
 import magic.model.MagicCard;
-import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.ui.GameController;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
-import magic.ui.widget.CostPanel;
 import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.PanelButton;
 
-import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import java.awt.BorderLayout;
-import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.util.ArrayList;

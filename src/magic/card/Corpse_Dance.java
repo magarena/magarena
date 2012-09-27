@@ -1,7 +1,5 @@
 package magic.card;
 
-import java.util.List;
-
 import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
@@ -18,6 +16,8 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicGraveyardTargetPicker;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
+
+import java.util.List;
 
 public class Corpse_Dance {
     public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {

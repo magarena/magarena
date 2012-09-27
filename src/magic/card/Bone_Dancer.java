@@ -1,7 +1,5 @@
 package magic.card;
 
-import java.util.List;
-
 import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
@@ -15,6 +13,8 @@ import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenAttacksUnblockedTrigger;
+
+import java.util.List;
 
 public class Bone_Dancer {
     public static final MagicWhenAttacksUnblockedTrigger T = new MagicWhenAttacksUnblockedTrigger() {

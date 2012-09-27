@@ -4,12 +4,10 @@ import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
-import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeStateAction;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
-import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
 
 public class Rhox {

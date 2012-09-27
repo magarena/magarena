@@ -7,7 +7,6 @@ import magic.model.MagicPermanent;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicGraveyardTriggerData;
 import magic.model.trigger.MagicWhenDiesTrigger;
 
 public class Rancor {

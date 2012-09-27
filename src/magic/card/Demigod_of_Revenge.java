@@ -1,7 +1,5 @@
 package magic.card;
 
-import java.util.List;
-
 import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
@@ -13,6 +11,8 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenSpellIsCastTrigger;
+
+import java.util.List;
 
 public class Demigod_of_Revenge {
     public static final MagicWhenSpellIsCastTrigger T = new MagicWhenSpellIsCastTrigger() {

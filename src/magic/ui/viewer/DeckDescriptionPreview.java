@@ -1,5 +1,11 @@
 package magic.ui.viewer;
 
+import magic.data.FileIO;
+
+import javax.swing.JComponent;
+import javax.swing.JFileChooser;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.beans.PropertyChangeEvent;
@@ -7,13 +13,6 @@ import java.beans.PropertyChangeListener;
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
-
-import javax.swing.JComponent;
-import javax.swing.JFileChooser;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
-
-import magic.data.FileIO;
 
 
 public class DeckDescriptionPreview extends JComponent implements PropertyChangeListener {

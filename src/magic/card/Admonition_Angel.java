@@ -7,15 +7,14 @@ import magic.model.MagicPermanent;
 import magic.model.action.MagicExileUntilThisLeavesPlayAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicReturnExiledUntilThisLeavesPlayAction;
-import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicExileTargetPicker;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetHint;
-import magic.model.trigger.MagicWhenLeavesPlayTrigger;
 import magic.model.trigger.MagicLandfallTrigger;
+import magic.model.trigger.MagicWhenLeavesPlayTrigger;
 
 public class Admonition_Angel {
     public static final MagicLandfallTrigger T1 = new MagicLandfallTrigger() {

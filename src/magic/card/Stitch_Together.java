@@ -11,11 +11,11 @@ import magic.model.action.MagicPlayCardAction;
 import magic.model.action.MagicReanimateAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.choice.MagicTargetChoice;
+import magic.model.condition.MagicCondition;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicGraveyardTargetPicker;
-import magic.model.condition.MagicCondition;
 
 public class Stitch_Together {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {

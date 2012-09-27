@@ -1,17 +1,16 @@
 package magic.card;
 
 import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.MagicPayedCost;
-import magic.model.action.MagicPermanentAction;
-import magic.model.stack.MagicCardOnStack;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.target.MagicTargetPicker;
+import magic.model.MagicPermanent;
 import magic.model.action.MagicBecomesCreatureAction;
+import magic.model.action.MagicPermanentAction;
+import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.mstatic.MagicStatic;
+import magic.model.stack.MagicCardOnStack;
+import magic.model.target.MagicTargetPicker;
 
 public class Karn_s_Touch {
 

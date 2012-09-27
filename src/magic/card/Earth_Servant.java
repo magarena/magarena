@@ -3,10 +3,10 @@ package magic.card;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
+import magic.model.mstatic.MagicLayer;
+import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
-import magic.model.mstatic.MagicStatic;
-import magic.model.mstatic.MagicLayer;
 
 import java.util.Collection;
 

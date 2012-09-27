@@ -6,8 +6,8 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicSource;
-import magic.model.action.MagicPlayAbilityAction;
 import magic.model.action.MagicAddStaticAction;
+import magic.model.action.MagicPlayAbilityAction;
 import magic.model.choice.MagicColorChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicActivationHints;
@@ -16,8 +16,8 @@ import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicPlayAbilityEvent;
 import magic.model.event.MagicTiming;
-import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicLayer;
+import magic.model.mstatic.MagicStatic;
 
 public class Spiritmonger {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(

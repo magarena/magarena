@@ -13,7 +13,6 @@ import magic.model.action.MagicRemoveCardAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicCardOnStack;
-import magic.model.mstatic.MagicLayer;
 
 public class MagicCardActivation extends MagicActivation {
 

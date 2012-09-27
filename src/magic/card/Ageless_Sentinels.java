@@ -1,7 +1,5 @@
 package magic.card;
 
-import java.util.EnumSet;
-
 import magic.model.MagicAbility;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
@@ -11,6 +9,8 @@ import magic.model.event.MagicEvent;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicWhenBlocksTrigger;
+
+import java.util.EnumSet;
 
 public class Ageless_Sentinels {
     private static final MagicStatic ST = new MagicStatic(MagicLayer.Type) {

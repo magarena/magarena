@@ -1,7 +1,5 @@
 package magic.card;
 
-import java.util.Collection;
-
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
@@ -15,6 +13,8 @@ import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 import magic.model.trigger.MagicWhenBecomesTappedTrigger;
+
+import java.util.Collection;
 
 public class Quest_for_Renewal {
     public static final MagicWhenBecomesTappedTrigger T1 = new MagicWhenBecomesTappedTrigger() {

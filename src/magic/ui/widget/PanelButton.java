@@ -1,12 +1,12 @@
 package magic.ui.widget;
 
+import javax.swing.JComponent;
+import javax.swing.JPanel;
+import javax.swing.OverlayLayout;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import javax.swing.JComponent;
-import javax.swing.JPanel;
-import javax.swing.OverlayLayout;
 
 public abstract class PanelButton extends TexturedPanel {
 

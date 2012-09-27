@@ -1,33 +1,23 @@
 package magic.ui;
 
 import magic.data.DeckUtils;
+import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
-import magic.data.DuelConfig;
 import magic.data.OSXAdapter;
 import magic.data.URLUtils;
 import magic.model.MagicCubeDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
+import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicGameLog;
 import magic.model.MagicPlayerDefinition;
 import magic.model.MagicPlayerProfile;
-import magic.model.MagicDuel;
 import magic.test.TestGameBuilder;
 import magic.ui.viewer.DeckDescriptionPreview;
 import magic.ui.widget.ZoneBackgroundLabel;
 
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-import java.awt.Font;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
-import java.io.File;
-import java.io.IOException;
-import java.util.LinkedList;
 import javax.swing.ButtonGroup;
 import javax.swing.JCheckBox;
 import javax.swing.JComponent;
@@ -39,6 +29,16 @@ import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JRadioButtonMenuItem;
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.io.File;
+import java.io.IOException;
+import java.util.LinkedList;
 
 public class MagicFrame extends JFrame implements ActionListener {
     

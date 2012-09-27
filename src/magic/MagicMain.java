@@ -8,10 +8,11 @@ import magic.data.History;
 import magic.data.KeywordDefinitions;
 import magic.model.MagicGameLog;
 import magic.ui.MagicFrame;
-import java.io.File;
+
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.UIManager.LookAndFeelInfo;
+import java.io.File;
 
 public class MagicMain {
     

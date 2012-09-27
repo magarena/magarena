@@ -3,12 +3,11 @@ package magic.card;
 import magic.data.TokenCardDefinitions;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
-import magic.model.MagicPlayer;
 import magic.model.action.MagicPlayTokenAction;
+import magic.model.condition.MagicCondition;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
-import magic.model.condition.MagicCondition;
 
 public class Gather_the_Townsfolk {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {

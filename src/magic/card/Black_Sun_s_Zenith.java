@@ -1,14 +1,12 @@
 package magic.card;
 
-import magic.model.MagicCard;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
+import magic.model.MagicLocationType;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.MagicLocationType;
-import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicChangeCardDestinationAction;
+import magic.model.action.MagicChangeCountersAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;

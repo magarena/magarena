@@ -1,7 +1,5 @@
 package magic.card;
 
-import java.util.EnumSet;
-
 import magic.model.MagicCard;
 import magic.model.MagicColor;
 import magic.model.MagicGame;
@@ -10,17 +8,19 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSubType;
+import magic.model.action.MagicAddStaticAction;
 import magic.model.action.MagicCardAction;
 import magic.model.action.MagicPlayCardAction;
 import magic.model.action.MagicRemoveCardAction;
-import magic.model.action.MagicAddStaticAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
+import magic.model.mstatic.MagicLayer;
+import magic.model.mstatic.MagicStatic;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicGraveyardTargetPicker;
-import magic.model.mstatic.MagicStatic;
-import magic.model.mstatic.MagicLayer;
+
+import java.util.EnumSet;
 
 public class Rise_from_the_Grave {
     private static final MagicStatic Zombie = new MagicStatic(MagicLayer.Type) {

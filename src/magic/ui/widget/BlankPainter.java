@@ -1,8 +1,9 @@
 package magic.ui.widget;
 
 import com.sun.java.swing.plaf.nimbus.AbstractRegionPainter;
-import java.awt.Graphics2D;
+
 import javax.swing.JComponent;
+import java.awt.Graphics2D;
 
 // for overriding painters that can't be configured to paint nothing
 public class BlankPainter extends AbstractRegionPainter {

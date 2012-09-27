@@ -1,7 +1,7 @@
 package magic.model.target;
 
-import magic.model.MagicCopyable;
 import magic.model.MagicCardDefinition;
+import magic.model.MagicCopyable;
 import magic.model.MagicMappable;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;

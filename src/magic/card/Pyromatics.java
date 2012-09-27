@@ -2,12 +2,12 @@ package magic.card;
 
 import magic.model.MagicDamage;
 import magic.model.MagicGame;
-import magic.model.MagicPayedCost;
 import magic.model.MagicManaCost;
+import magic.model.MagicPayedCost;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicTargetAction;
-import magic.model.choice.MagicTargetChoice;
 import magic.model.choice.MagicKickerChoice;
+import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;

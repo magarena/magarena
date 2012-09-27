@@ -1,14 +1,14 @@
 package magic.card;
 
+import magic.model.MagicAbility;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicTapEvent;
-import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
 import magic.model.mstatic.MagicLayer;
-import magic.model.MagicAbility;
 import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTargetFilter;
+import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
 
 public class Urabrask_the_Hidden {
     public static final MagicStatic S = new MagicStatic(

@@ -1,12 +1,10 @@
 package magic.test;
 
-import magic.ai.MCTSAI;
-import magic.ai.MagicAI;
+import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicPlayerDefinition;
 import magic.model.MagicPlayerProfile;
-import magic.model.MagicDuel;
 import magic.model.phase.MagicMainPhase;
 
 class TestEquipBug extends TestGameBuilder {    

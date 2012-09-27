@@ -2,11 +2,10 @@ package magic.card;
 
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenLifeIsLostTrigger;
 import magic.model.trigger.MagicLifeChangeTriggerData;
+import magic.model.trigger.MagicWhenLifeIsLostTrigger;
 
 public class Exquisite_Blood {
     public static final MagicWhenLifeIsLostTrigger T = new MagicWhenLifeIsLostTrigger() {

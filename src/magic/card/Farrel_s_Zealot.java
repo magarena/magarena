@@ -4,7 +4,6 @@ import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
-import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeStateAction;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicPermanentAction;

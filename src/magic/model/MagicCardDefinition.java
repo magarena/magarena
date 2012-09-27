@@ -12,9 +12,9 @@ import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicPlayCardEvent;
 import magic.model.event.MagicTapManaActivation;
 import magic.model.event.MagicTiming;
-import magic.model.trigger.MagicTrigger;
-import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicCDA;
+import magic.model.mstatic.MagicStatic;
+import magic.model.trigger.MagicTrigger;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 

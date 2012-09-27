@@ -1,7 +1,6 @@
 package magic.card;
 
 import magic.model.MagicGame;
-import magic.model.mstatic.MagicLayer;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
@@ -14,6 +13,7 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTiming;
+import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 
 public class Fledgling_Dragon {

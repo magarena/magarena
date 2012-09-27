@@ -8,9 +8,8 @@ import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.event.MagicEvent;
-import magic.model.target.MagicTarget;
-import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 import magic.model.trigger.MagicAtEndOfTurnTrigger;
+import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
 public class Lightning_Reaver {
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {

@@ -12,10 +12,10 @@ import magic.model.target.MagicTargetType;
 import magic.ui.GameController;
 
 import java.util.Collection;
-import java.util.Map;
 import java.util.HashMap;
-import java.util.Set;
 import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice TARGET_NONE =

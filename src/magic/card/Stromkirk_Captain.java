@@ -1,12 +1,12 @@
 package magic.card;
 
+import magic.model.MagicAbility;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTargetFilter;
-import magic.model.MagicAbility;
 
 public class Stromkirk_Captain {
     public static final MagicStatic S1 = new MagicStatic(

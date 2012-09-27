@@ -1,19 +1,19 @@
 package magic.card;
 
+import magic.model.MagicAbility;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicType;
-import magic.model.mstatic.MagicLayer;
 import magic.model.MagicPowerToughness;
+import magic.model.MagicType;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSacrificePermanentEvent;
-import magic.model.trigger.MagicAtUpkeepTrigger;
-import magic.model.target.MagicTargetFilter;
+import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
-import magic.model.MagicAbility;
+import magic.model.target.MagicTargetFilter;
+import magic.model.trigger.MagicAtUpkeepTrigger;
 
 public class Eldrazi_Monument {
     public static final MagicStatic S1 = new MagicStatic(

@@ -3,7 +3,6 @@ package magic.card;
 import magic.data.TokenCardDefinitions;
 import magic.model.MagicDamage;
 import magic.model.MagicGame;
-import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.MagicSubType;

@@ -3,14 +3,14 @@ package magic.card;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
+import magic.model.MagicPowerToughness;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.event.MagicEvent;
-import magic.model.stack.MagicItemOnStack;
-import magic.model.trigger.MagicWhenTargetedTrigger;
-import magic.model.MagicPowerToughness;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
+import magic.model.stack.MagicItemOnStack;
 import magic.model.target.MagicTargetFilter;
+import magic.model.trigger.MagicWhenTargetedTrigger;
 
 public class Ashenmoor_Liege {
     public static final MagicStatic S1 = new MagicStatic(

@@ -2,7 +2,6 @@ package magic.card;
 
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
-import magic.model.MagicPlayer;
 import magic.model.action.MagicCardOnStackAction;
 import magic.model.action.MagicCopyCardOnStackAction;
 import magic.model.choice.MagicTargetChoice;

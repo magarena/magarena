@@ -5,9 +5,9 @@ import magic.model.MagicManaCost;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.SpringLayout;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
-import javax.swing.SpringLayout;
 import java.util.List;
 
 public class CostPanel extends JPanel {

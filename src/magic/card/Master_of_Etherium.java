@@ -1,13 +1,13 @@
 package magic.card;
 
 import magic.model.MagicGame;
-import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
-import magic.model.target.MagicTargetFilter;
 import magic.model.mstatic.MagicCDA;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
+import magic.model.target.MagicTargetFilter;
 
 public class Master_of_Etherium {
     public static final MagicCDA CDA = new MagicCDA() {

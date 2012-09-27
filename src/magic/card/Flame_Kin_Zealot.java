@@ -11,7 +11,6 @@ import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
-
 import java.util.Collection;
 
 public class Flame_Kin_Zealot {

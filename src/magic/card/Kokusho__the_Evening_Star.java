@@ -1,12 +1,10 @@
 package magic.card;
 
 import magic.model.MagicGame;
-import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicGraveyardTriggerData;
 import magic.model.trigger.MagicWhenDiesTrigger;
 
 public class Kokusho__the_Evening_Star {

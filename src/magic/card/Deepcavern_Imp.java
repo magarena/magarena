@@ -8,7 +8,6 @@ import magic.model.action.MagicChangeStateAction;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicDiscardEvent;
-import magic.model.event.MagicSacrificeEvent;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 

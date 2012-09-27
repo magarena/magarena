@@ -4,7 +4,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenAttacksTrigger;
 
 public class MagicAttacksPumpTrigger extends MagicWhenAttacksTrigger {
     private final int power;

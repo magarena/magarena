@@ -1,15 +1,10 @@
 package magic.card;
 
 import magic.data.TokenCardDefinitions;
-import magic.model.MagicCard;
 import magic.model.MagicGame;
-import magic.model.MagicManaCost;
-import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.action.MagicPlayCardFromStackAction;
 import magic.model.action.MagicPlayTokenAction;
-import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 

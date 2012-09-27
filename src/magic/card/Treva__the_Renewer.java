@@ -15,7 +15,6 @@ import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
-
 import java.util.Collection;
 
 public class Treva__the_Renewer {

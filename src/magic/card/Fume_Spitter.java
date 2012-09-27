@@ -2,8 +2,8 @@ package magic.card;
 
 import magic.model.MagicPermanent;
 import magic.model.MagicSource;
-import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicActivation;
+import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicSacrificeEvent;

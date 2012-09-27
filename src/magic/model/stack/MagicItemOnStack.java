@@ -1,8 +1,8 @@
 package magic.model.stack;
 
+import magic.model.MagicCardDefinition;
 import magic.model.MagicCopyMap;
 import magic.model.MagicGame;
-import magic.model.MagicCardDefinition;
 import magic.model.MagicMappable;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;

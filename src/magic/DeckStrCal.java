@@ -4,10 +4,9 @@ import magic.ai.MagicAI;
 import magic.ai.MagicAIImpl;
 import magic.data.DeckUtils;
 import magic.data.DuelConfig;
+import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicRandom;
-import magic.model.MagicGameReport;
-import magic.model.MagicDuel;
 import magic.ui.GameController;
 
 import java.io.File;

@@ -1,9 +1,9 @@
 package magic.model.trigger;
 
 import magic.model.MagicCardDefinition;
+import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicChangeCardDefinition;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventAction;
 

@@ -16,6 +16,7 @@ import magic.model.event.MagicRemoveCounterEvent;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
+
 import java.util.Collection;
 
 public class Carnifex_Demon {

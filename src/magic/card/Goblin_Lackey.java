@@ -5,7 +5,6 @@ import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.action.MagicCardAction;
 import magic.model.action.MagicPlayCardAction;
 import magic.model.action.MagicRemoveCardAction;

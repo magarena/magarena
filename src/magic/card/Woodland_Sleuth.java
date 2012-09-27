@@ -1,18 +1,18 @@
 package magic.card;
 
-import java.util.List;
-
 import magic.model.MagicCard;
 import magic.model.MagicGame;
-import magic.model.MagicPlayer;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
+
+import java.util.List;
 
 public class Woodland_Sleuth {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {

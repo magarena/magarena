@@ -14,7 +14,6 @@ import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTapEvent;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicDestroyTargetPicker;
-import magic.model.target.MagicTargetFilter;
 
 public class Intrepid_Hero {
 

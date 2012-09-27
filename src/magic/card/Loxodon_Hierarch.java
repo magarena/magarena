@@ -15,6 +15,7 @@ import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
+
 import java.util.Collection;
 
 public class Loxodon_Hierarch {

@@ -7,6 +7,7 @@ import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
+
 import java.util.Collection;
 
 public class Ballynock_Cohort {

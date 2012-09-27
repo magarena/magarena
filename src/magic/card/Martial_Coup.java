@@ -14,7 +14,6 @@ import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 
 import java.util.Collection;
-import java.util.Collections;
 
 public class Martial_Coup {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {

@@ -13,6 +13,7 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicBounceTargetPicker;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
+
 import java.util.Collection;
 
 public class Echoing_Truth {

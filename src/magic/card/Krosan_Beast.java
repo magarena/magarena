@@ -1,10 +1,9 @@
 package magic.card;
 
-import magic.model.MagicGame;
-import magic.model.mstatic.MagicLayer;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
 import magic.model.condition.MagicCondition;
+import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 
 public class Krosan_Beast {

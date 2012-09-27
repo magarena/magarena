@@ -5,13 +5,12 @@ import magic.model.MagicCondensedCardDefinition;
 import magic.model.MagicCondensedDeck;
 import magic.model.MagicManaCost;
 
-import java.lang.Integer;
+import javax.swing.event.TableModelListener;
+import javax.swing.table.TableModel;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-import javax.swing.event.TableModelListener;
-import javax.swing.table.TableModel;
 
 public class CardTableModel implements TableModel {    
     /**

@@ -8,6 +8,8 @@ import magic.model.MagicPlayerDefinition;
 import magic.model.MagicPlayerProfile;
 import magic.model.MagicRandom;
 
+import javax.swing.JOptionPane;
+import javax.swing.filechooser.FileFilter;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -18,8 +20,6 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.SortedMap;
 import java.util.TreeMap;
-import javax.swing.JOptionPane;
-import javax.swing.filechooser.FileFilter;
 
 public class DeckUtils {
 

@@ -3,7 +3,6 @@ package magic.card;
 import magic.data.TokenCardDefinitions;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
-import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.event.MagicEvent;

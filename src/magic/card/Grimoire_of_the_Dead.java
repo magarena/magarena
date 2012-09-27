@@ -1,8 +1,5 @@
 package magic.card;
 
-import java.util.Collection;
-import java.util.EnumSet;
-
 import magic.model.MagicCard;
 import magic.model.MagicColor;
 import magic.model.MagicCounterType;
@@ -32,6 +29,9 @@ import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
+
+import java.util.Collection;
+import java.util.EnumSet;
 
 public class Grimoire_of_the_Dead {
     private static final MagicStatic Zombie = new MagicStatic(MagicLayer.Type) {

@@ -1,10 +1,7 @@
 package magic.card;
 
-import java.util.Collection;
-
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.MagicSubType;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.choice.MagicMayChoice;
@@ -13,6 +10,8 @@ import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
+
+import java.util.Collection;
 
 public class Akoum_Battlesinger {
     public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {

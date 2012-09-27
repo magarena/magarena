@@ -1,19 +1,18 @@
 package magic.model.stack;
 
 import magic.model.MagicAbility;
-import magic.model.MagicGame;
 import magic.model.MagicCard;
-import magic.model.MagicSource;
 import magic.model.MagicCopyMap;
+import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPlayer;
+import magic.model.MagicSource;
 import magic.model.event.MagicActivation;
 
+import javax.swing.ImageIcon;
 import java.util.Arrays;
 import java.util.Collection;
-
-import javax.swing.ImageIcon;
 public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
 
     private MagicLocationType moveLocation=MagicLocationType.Graveyard;

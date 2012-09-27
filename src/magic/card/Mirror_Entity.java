@@ -16,10 +16,10 @@ import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicPlayAbilityEvent;
 import magic.model.event.MagicTiming;
+import magic.model.mstatic.MagicLayer;
+import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
-import magic.model.mstatic.MagicStatic;
-import magic.model.mstatic.MagicLayer;
 
 import java.util.Collection;
 import java.util.EnumSet;

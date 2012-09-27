@@ -8,10 +8,10 @@ import magic.model.choice.MagicBuilderPayManaCostResult;
 import magic.model.event.MagicEvent;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Collections;
 
 /*
 AI using Monte Carlo Tree Search

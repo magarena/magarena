@@ -1,7 +1,5 @@
 package magic.card;
 
-import java.util.List;
-
 import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
@@ -16,6 +14,8 @@ import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 import magic.model.trigger.MagicWhenOtherSpellIsCastTrigger;
+
+import java.util.List;
 
 
 public class Charmbreaker_Devils {

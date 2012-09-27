@@ -4,7 +4,6 @@ import magic.MagicMain;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicColor;
-import magic.model.event.MagicTiming;
 
 import java.io.File;
 import java.io.IOException;

@@ -3,10 +3,8 @@ package magic.model.trigger;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentList;
-import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
 
 public class MagicRampageTrigger extends MagicWhenBecomesBlockedTrigger {
     private final int n;

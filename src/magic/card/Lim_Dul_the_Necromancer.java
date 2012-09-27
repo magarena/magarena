@@ -1,14 +1,11 @@
 package magic.card;
 
-import java.util.EnumSet;
-
 import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.action.MagicAddStaticAction;
@@ -29,6 +26,8 @@ import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicRegenerateTargetPicker;
 import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
+
+import java.util.EnumSet;
 
 public class Lim_Dul_the_Necromancer {
     private static final MagicStatic Zombie = new MagicStatic(MagicLayer.Type) {

@@ -3,12 +3,10 @@ package magic.card;
 import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.action.MagicDrawAction;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.event.MagicEvent;
-import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
 public class Snake_Umbra {

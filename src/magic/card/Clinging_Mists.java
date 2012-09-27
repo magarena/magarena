@@ -1,22 +1,22 @@
 package magic.card;
 
-import java.util.Collection;
-
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
 import magic.model.MagicPlayerState;
-import magic.model.condition.MagicCondition;
 import magic.model.action.MagicChangePlayerStateAction;
 import magic.model.action.MagicChangeStateAction;
 import magic.model.action.MagicTapAction;
+import magic.model.condition.MagicCondition;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
+
+import java.util.Collection;
 
 public class Clinging_Mists {
     public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {

@@ -1,16 +1,15 @@
 package magic.card;
 
-import magic.model.MagicPlayer;
 import magic.model.MagicCounterType;
 import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicDealDamageAction;
-import magic.model.action.MagicPlayCardFromStackAction;
 import magic.model.action.MagicTargetAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;

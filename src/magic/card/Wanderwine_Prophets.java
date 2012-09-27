@@ -2,7 +2,6 @@ package magic.card;
 
 import magic.model.MagicDamage;
 import magic.model.MagicGame;
-import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicChangeExtraTurnsAction;
 import magic.model.action.MagicPermanentAction;

@@ -1,12 +1,12 @@
 package magic.model.action;
 
+import magic.model.MagicAbility;
 import magic.model.MagicGame;
-import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
-import magic.model.MagicAbility;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.MagicPlayer;
 import magic.model.choice.MagicDeclareAttackersResult;
+import magic.model.trigger.MagicTriggerType;
 
 public class MagicDeclareAttackersAction extends MagicAction {
 

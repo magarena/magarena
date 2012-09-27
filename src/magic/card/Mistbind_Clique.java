@@ -1,12 +1,10 @@
 package magic.card;
 
-import java.util.Collection;
-
 import magic.model.MagicCard;
 import magic.model.MagicGame;
-import magic.model.MagicPlayer;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
 import magic.model.action.MagicExileUntilThisLeavesPlayAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicPlayCardAction;
@@ -23,6 +21,8 @@ import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetHint;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 import magic.model.trigger.MagicWhenLeavesPlayTrigger;
+
+import java.util.Collection;
 
 public class Mistbind_Clique {
     public static final MagicWhenComesIntoPlayTrigger T1 = new MagicWhenComesIntoPlayTrigger() {

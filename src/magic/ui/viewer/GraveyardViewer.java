@@ -1,6 +1,5 @@
 package magic.ui.viewer;
 
-import magic.model.MagicCardList;
 import magic.ui.GameController;
 import magic.ui.theme.Theme;
 

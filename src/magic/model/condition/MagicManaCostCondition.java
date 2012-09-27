@@ -1,6 +1,5 @@
 package magic.model.condition;
 
-import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;

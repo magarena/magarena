@@ -10,9 +10,9 @@ import magic.model.action.MagicSetAbilityAction;
 import magic.model.action.MagicUntapAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
+import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicExileTargetPicker;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
-import magic.model.mstatic.MagicStatic;
 
 public class Zealous_Conscripts {
     public static final Object T = new MagicWhenComesIntoPlayTrigger() {

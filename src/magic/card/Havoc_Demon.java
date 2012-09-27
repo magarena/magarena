@@ -1,14 +1,11 @@
 package magic.card;
 
 import magic.model.MagicGame;
-import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
-import magic.model.trigger.MagicGraveyardTriggerData;
 import magic.model.trigger.MagicWhenDiesTrigger;
 
 import java.util.Collection;

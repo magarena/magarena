@@ -3,8 +3,8 @@ package magic.model.action;
 import magic.ai.ArtificialScoringSystem;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.model.trigger.MagicTriggerType;
 import magic.model.trigger.MagicLifeChangeTriggerData;
+import magic.model.trigger.MagicTriggerType;
 
 /** Keeping the player life is done in the marker action. */
 public class MagicChangeLifeAction extends MagicAction {

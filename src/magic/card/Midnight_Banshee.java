@@ -10,7 +10,6 @@ import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 
-
 import java.util.Collection;
 
 public class Midnight_Banshee {

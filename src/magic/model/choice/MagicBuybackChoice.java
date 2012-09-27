@@ -7,12 +7,13 @@ import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.ui.GameController;
 import magic.ui.choice.MayChoicePanel;
-import java.util.concurrent.Callable;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
+import java.util.concurrent.Callable;
 
 // Buyback choice results : 0 = other choice, 1 = is buyback payed, 2 = buyback mana cost result
 public class MagicBuybackChoice extends MagicChoice {

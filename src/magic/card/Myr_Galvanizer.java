@@ -1,12 +1,9 @@
 package magic.card;
 
-import java.util.Collection;
-
 import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSource;
 import magic.model.action.MagicUntapAction;
@@ -20,6 +17,8 @@ import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
+
+import java.util.Collection;
 
 public class Myr_Galvanizer {
     public static final MagicStatic S = new MagicStatic(

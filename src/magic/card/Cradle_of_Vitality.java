@@ -12,8 +12,8 @@ import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicPumpTargetPicker;
-import magic.model.trigger.MagicWhenLifeIsGainedTrigger;
 import magic.model.trigger.MagicLifeChangeTriggerData;
+import magic.model.trigger.MagicWhenLifeIsGainedTrigger;
 
 public class Cradle_of_Vitality {
     public static final MagicWhenLifeIsGainedTrigger T = new MagicWhenLifeIsGainedTrigger() {

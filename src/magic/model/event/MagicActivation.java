@@ -1,7 +1,6 @@
 package magic.model.event;
 
 import magic.data.GeneralConfig;
-import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;

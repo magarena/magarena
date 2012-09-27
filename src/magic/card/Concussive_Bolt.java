@@ -1,25 +1,24 @@
 package magic.card;
 
-import java.util.Collection;
-
 import magic.model.MagicAbility;
-import magic.model.MagicCard;
 import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.condition.MagicCondition;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicPlayerAction;
 import magic.model.action.MagicSetAbilityAction;
 import magic.model.choice.MagicTargetChoice;
+import magic.model.condition.MagicCondition;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
+
+import java.util.Collection;
 
 public class Concussive_Bolt {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {

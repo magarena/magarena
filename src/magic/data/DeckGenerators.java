@@ -4,8 +4,6 @@ import magic.generator.DefaultDeckGenerator;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.lang.ClassCastException;
-import java.lang.InstantiationException;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;

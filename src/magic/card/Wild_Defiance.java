@@ -1,7 +1,5 @@
 package magic.card;
 
-import java.util.Collection;
-
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicChangeTurnPTAction;
@@ -10,6 +8,8 @@ import magic.model.stack.MagicItemOnStack;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenTargetedTrigger;
+
+import java.util.Collection;
 
 public class Wild_Defiance {
     public static final MagicWhenTargetedTrigger T = new MagicWhenTargetedTrigger() {

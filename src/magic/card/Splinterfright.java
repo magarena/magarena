@@ -4,11 +4,11 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
-import magic.model.target.MagicTargetFilter;
-import magic.model.trigger.MagicAtUpkeepTrigger;
 import magic.model.action.MagicMillLibraryAction;
 import magic.model.event.MagicEvent;
 import magic.model.mstatic.MagicCDA;
+import magic.model.target.MagicTargetFilter;
+import magic.model.trigger.MagicAtUpkeepTrigger;
 
 public class Splinterfright {
     public static final MagicCDA CDA = new MagicCDA() {

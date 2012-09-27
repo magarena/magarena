@@ -3,13 +3,12 @@ package magic.card;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenLifeIsGainedTrigger;
 import magic.model.trigger.MagicLifeChangeTriggerData;
+import magic.model.trigger.MagicWhenLifeIsGainedTrigger;
 
 public class Ajani_s_Pridemate {
     public static final MagicWhenLifeIsGainedTrigger T = new MagicWhenLifeIsGainedTrigger() {

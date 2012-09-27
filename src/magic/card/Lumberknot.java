@@ -3,8 +3,8 @@ package magic.card;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.event.MagicEvent;
 import magic.model.action.MagicChangeCountersAction;
+import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
 
 public class Lumberknot {

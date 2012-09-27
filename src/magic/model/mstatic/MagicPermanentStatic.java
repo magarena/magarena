@@ -1,10 +1,9 @@
 package magic.model.mstatic;
 
 import magic.model.MagicCopyMap;
-import magic.model.MagicGame;
+import magic.model.MagicCounterType;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
-import magic.model.MagicCounterType;
 import magic.model.target.MagicTargetFilter;
 
 public class MagicPermanentStatic implements Comparable<MagicPermanentStatic> {

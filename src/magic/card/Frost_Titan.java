@@ -13,9 +13,9 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicCounterUnlessEvent;
 import magic.model.event.MagicEvent;
 import magic.model.stack.MagicItemOnStack;
-import magic.model.trigger.MagicWhenTargetedTrigger;
-import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 import magic.model.trigger.MagicWhenAttacksTrigger;
+import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
+import magic.model.trigger.MagicWhenTargetedTrigger;
 
 public class Frost_Titan {
     //counter opponent spell or ability unless its controller pay {2}

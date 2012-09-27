@@ -1,10 +1,10 @@
 package magic.model.event;
 
+import magic.model.MagicCardDefinition;
+import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicManaType;
 import magic.model.MagicSource;
-import magic.model.MagicChangeCardDefinition;
-import magic.model.MagicCardDefinition;
 import magic.model.condition.MagicCondition;
 
 import java.util.List;

@@ -5,7 +5,6 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
-import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeCardDestinationAction;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.choice.MagicBuybackChoice;

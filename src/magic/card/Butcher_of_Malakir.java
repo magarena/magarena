@@ -9,8 +9,8 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSacrificePermanentEvent;
 import magic.model.trigger.MagicGraveyardTriggerData;
-import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
+import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 
 public class Butcher_of_Malakir {
 

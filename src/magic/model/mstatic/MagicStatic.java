@@ -3,10 +3,11 @@ package magic.model.mstatic;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicGame;
+import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
-import magic.model.MagicPermanent;
 import magic.model.target.MagicTargetFilter;
+
 import java.util.EnumSet;
 
 public abstract class MagicStatic extends MagicDummyPermanentModifier implements MagicChangeCardDefinition {

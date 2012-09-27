@@ -1,7 +1,5 @@
 package magic.card;
 
-import java.util.List;
-
 import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
@@ -14,6 +12,8 @@ import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
+
+import java.util.List;
 
 public class Zombie_Apocalypse {
     public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {

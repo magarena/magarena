@@ -1,10 +1,10 @@
 package magic.model;
 
 import magic.model.event.MagicActivation;
-import magic.model.target.MagicTarget;
 import magic.model.mstatic.MagicLayer;
-import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicPermanentStatic;
+import magic.model.mstatic.MagicStatic;
+import magic.model.target.MagicTarget;
 
 import java.util.Collection;
 import java.util.Collections;

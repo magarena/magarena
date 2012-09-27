@@ -1,12 +1,12 @@
 package magic.card;
 
 import magic.model.MagicGame;
-import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
-import magic.model.condition.MagicCondition;
+import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.action.MagicPlayerAction;
 import magic.model.choice.MagicTargetChoice;
+import magic.model.condition.MagicCondition;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 

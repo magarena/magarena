@@ -4,7 +4,6 @@ import magic.data.TokenCardDefinitions;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.MagicSubType;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicPlayTokenAction;

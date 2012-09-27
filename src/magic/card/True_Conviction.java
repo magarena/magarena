@@ -1,11 +1,10 @@
 package magic.card;
 
-import magic.model.MagicGame;
+import magic.model.MagicAbility;
 import magic.model.MagicPermanent;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTargetFilter;
-import magic.model.MagicAbility;
 
 public class True_Conviction {
     public static final MagicStatic S = new MagicStatic(

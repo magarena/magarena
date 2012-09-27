@@ -1,22 +1,21 @@
 package magic.card;
 
-import java.util.Collection;
-
 import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPlayer;
-import magic.model.MagicSource;
-import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicChangeCardDestinationAction;
+import magic.model.action.MagicDealDamageAction;
 import magic.model.choice.MagicBuybackChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
+
+import java.util.Collection;
 
 public class Evincar_s_Justice {
     public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {

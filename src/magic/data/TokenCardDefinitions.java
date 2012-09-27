@@ -3,8 +3,8 @@ package magic.data;
 import magic.model.MagicCardDefinition;
 
 import java.util.Collection;
-import java.util.Map;
 import java.util.HashMap;
+import java.util.Map;
 
 public class TokenCardDefinitions {
 

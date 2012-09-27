@@ -3,9 +3,9 @@ package magic.card;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
-import magic.model.target.MagicTargetFilter;
-import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicLayer;
+import magic.model.mstatic.MagicStatic;
+import magic.model.target.MagicTargetFilter;
 
 public class Yavimaya_Enchantress {
     public static final MagicStatic S = new MagicStatic(MagicLayer.ModPT) {

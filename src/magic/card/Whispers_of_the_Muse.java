@@ -1,13 +1,11 @@
 package magic.card;
 
-import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicDrawAction;
 import magic.model.action.MagicChangeCardDestinationAction;
+import magic.model.action.MagicDrawAction;
 import magic.model.choice.MagicBuybackChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;

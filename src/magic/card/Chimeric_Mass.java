@@ -1,11 +1,11 @@
 package magic.card;
 
-import magic.model.MagicPlayer;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSource;
 import magic.model.MagicSubType;
@@ -19,8 +19,8 @@ import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicPlayAbilityEvent;
 import magic.model.event.MagicTiming;
-import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicLayer;
+import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 import java.util.EnumSet;

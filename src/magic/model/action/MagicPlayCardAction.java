@@ -8,7 +8,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
 import magic.model.mstatic.MagicStatic;
-import magic.model.action.MagicSetAbilityAction;
 
 public class MagicPlayCardAction extends MagicPutIntoPlayAction {
 

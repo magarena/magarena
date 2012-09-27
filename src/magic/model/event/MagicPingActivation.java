@@ -1,16 +1,16 @@
 package magic.model.event;
 
-import magic.model.MagicGame;
 import magic.model.MagicDamage;
-import magic.model.MagicSource;
-import magic.model.MagicPermanent;
+import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
-import magic.model.action.MagicTargetAction;
+import magic.model.MagicPermanent;
+import magic.model.MagicSource;
 import magic.model.action.MagicDealDamageAction;
+import magic.model.action.MagicTargetAction;
 import magic.model.choice.MagicTargetChoice;
+import magic.model.condition.MagicCondition;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
-import magic.model.condition.MagicCondition;
 
 public class MagicPingActivation extends MagicPermanentActivation {
     

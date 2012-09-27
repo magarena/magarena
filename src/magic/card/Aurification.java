@@ -1,14 +1,10 @@
 package magic.card;
 
-import java.util.Collection;
-import java.util.EnumSet;
-
 import magic.model.MagicAbility;
 import magic.model.MagicCounterType;
 import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.MagicSubType;
 import magic.model.action.MagicAddStaticAction;
 import magic.model.action.MagicChangeCountersAction;
@@ -19,6 +15,9 @@ import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 import magic.model.trigger.MagicWhenLeavesPlayTrigger;
+
+import java.util.Collection;
+import java.util.EnumSet;
 
 
 public class Aurification {

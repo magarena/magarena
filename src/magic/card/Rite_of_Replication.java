@@ -1,6 +1,5 @@
 package magic.card;
 
-import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicManaCost;

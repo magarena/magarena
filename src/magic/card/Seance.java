@@ -1,7 +1,5 @@
 package magic.card;
 
-import java.util.EnumSet;
-
 import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
@@ -24,6 +22,8 @@ import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicGraveyardTargetPicker;
 import magic.model.trigger.MagicAtUpkeepTrigger;
+
+import java.util.EnumSet;
 
 public class Seance {
     private static final MagicStatic Spirit = new MagicStatic(MagicLayer.Type) {

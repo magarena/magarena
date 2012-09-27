@@ -1,13 +1,14 @@
 package magic.model.action;
 
-import java.util.ArrayList;
-import java.util.Collection;
 import magic.model.MagicAbility;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.target.MagicTarget;
+
+import java.util.ArrayList;
+import java.util.Collection;
 
 public class MagicDestroyAction extends MagicAction {
     

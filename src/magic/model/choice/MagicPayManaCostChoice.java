@@ -12,12 +12,12 @@ import magic.model.event.MagicEvent;
 import magic.ui.GameController;
 import magic.ui.choice.ManaCostXChoicePanel;
 
-import java.util.concurrent.Callable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.Callable;
 
 /** X must be at least one in a mana cost. */
 public class MagicPayManaCostChoice extends MagicChoice {

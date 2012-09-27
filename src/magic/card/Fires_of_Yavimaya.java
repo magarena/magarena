@@ -1,5 +1,6 @@
 package magic.card;
 
+import magic.model.MagicAbility;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
@@ -7,16 +8,15 @@ import magic.model.MagicSource;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
-import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicActivation;
+import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicSacrificeEvent;
 import magic.model.event.MagicTiming;
-import magic.model.target.MagicPumpTargetPicker;
 import magic.model.mstatic.MagicLayer;
-import magic.model.MagicAbility;
 import magic.model.mstatic.MagicStatic;
+import magic.model.target.MagicPumpTargetPicker;
 import magic.model.target.MagicTargetFilter;
 
 public class Fires_of_Yavimaya {

@@ -9,7 +9,6 @@ import magic.ui.widget.TitleBar;
 
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
-
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;

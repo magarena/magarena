@@ -1,10 +1,10 @@
 package magic.data;
 
+import magic.model.MagicCardDefinition;
+
 import java.io.File;
 import java.net.Proxy;
 import java.net.URL;
-
-import magic.model.MagicCardDefinition;
 
 public class DownloadImageFile extends WebDownloader {
 

@@ -9,8 +9,8 @@ import magic.model.MagicSource;
 import java.util.Map;
 import java.util.Set;
 import java.util.SortedSet;
-import java.util.TreeSet;
 import java.util.TreeMap;
+import java.util.TreeSet;
 
 public class MagicActivationMap extends TreeMap<MagicActivation,SortedSet<MagicSource>> {
 

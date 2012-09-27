@@ -1,10 +1,10 @@
 package magic.card;
 
 import magic.model.MagicGame;
-import magic.model.MagicPayedCost;
 import magic.model.MagicLocationType;
-import magic.model.action.MagicChangeExtraTurnsAction;
+import magic.model.MagicPayedCost;
 import magic.model.action.MagicChangeCardDestinationAction;
+import magic.model.action.MagicChangeExtraTurnsAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;

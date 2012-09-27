@@ -1,10 +1,8 @@
 package magic.card;
 
-import magic.model.MagicCard;
 import magic.model.MagicColor;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.action.MagicUntapAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicSimpleMayChoice;

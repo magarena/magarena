@@ -1,7 +1,5 @@
 package magic.card;
 
-import java.util.Collection;
-
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
@@ -11,6 +9,8 @@ import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicAtUpkeepTrigger;
+
+import java.util.Collection;
 
 public class Arcbound_Overseer {
     public static final MagicAtUpkeepTrigger T3 = new MagicAtUpkeepTrigger() {

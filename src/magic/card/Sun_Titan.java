@@ -10,8 +10,8 @@ import magic.model.action.MagicReanimateAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicGraveyardTargetPicker;
-import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 import magic.model.trigger.MagicWhenAttacksTrigger;
+import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Sun_Titan {
     public static final MagicWhenComesIntoPlayTrigger T1 = new MagicWhenComesIntoPlayTrigger() {

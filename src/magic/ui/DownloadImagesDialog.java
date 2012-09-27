@@ -1,35 +1,31 @@
 package magic.ui;
 
 import magic.MagicMain;
-
 import magic.data.CardDefinitions;
 import magic.data.DownloadMissingFiles;
+import magic.data.FileIO;
 import magic.data.History;
 import magic.data.IconImages;
 import magic.data.WebDownloader;
-import magic.data.FileIO;
 
-import java.awt.Container;
-import java.awt.Dimension;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
+import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JProgressBar;
 import javax.swing.JTextField;
+import javax.swing.SpringLayout;
 import javax.swing.SwingUtilities;
-import javax.swing.JFileChooser;
-
-import java.io.File;
-import java.io.IOException;
-
+import java.awt.Container;
+import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
+import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.Proxy;
-
-import javax.swing.SpringLayout;
 
 public class DownloadImagesDialog extends JFrame implements Runnable,ActionListener {
     private static final long serialVersionUID = 1L;

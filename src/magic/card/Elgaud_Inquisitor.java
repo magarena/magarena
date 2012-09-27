@@ -2,12 +2,9 @@ package magic.card;
 
 import magic.data.TokenCardDefinitions;
 import magic.model.MagicGame;
-import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicGraveyardTriggerData;
 import magic.model.trigger.MagicWhenDiesTrigger;
 
 public class Elgaud_Inquisitor {

@@ -1,13 +1,13 @@
 package magic.model.event;
 
 import magic.model.MagicCardDefinition;
-import magic.model.MagicGame;
 import magic.model.MagicChangeCardDefinition;
+import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
-import magic.model.stack.MagicCardOnStack;
 import magic.model.choice.MagicTargetChoice;
-import magic.model.target.MagicTargetPicker;
+import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicDefaultTargetPicker;
+import magic.model.target.MagicTargetPicker;
 
 public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAction,MagicChangeCardDefinition {
 

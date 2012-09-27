@@ -1,9 +1,9 @@
 package magic.model.target;
 
+import magic.model.MagicCardDefinition;
 import magic.model.MagicCopyMap;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.model.MagicCardDefinition;
 import magic.model.MagicSource;
 
 public class MagicTargetNone implements MagicTarget {

@@ -6,7 +6,6 @@ import magic.model.MagicPlayer;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSacrificePermanentEvent;
-import magic.model.trigger.MagicWhenAttacksTrigger;
 
 public class MagicAnnihilatorTrigger extends MagicWhenAttacksTrigger {
     final private int amount;
