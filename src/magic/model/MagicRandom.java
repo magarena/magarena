@@ -20,5 +20,10 @@ public class MagicRandom {
     
     public static int nextInt(final int n) {
         return RNG.nextInt(n);
-    }    
+    }
+
+    public static void setSeed(final int seed) {
+        RNG.setSeed(seed);
+        System.err.println("Using random seed " + seed);
+    }
 }
