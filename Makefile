@@ -186,7 +186,7 @@ inf: $(MAG)
 	--ai2 MMAB --str2 1 \
 	--life 10 \
 	--games 1 \
-	--repeat 10000  >> $*.log 2>&1
+	--repeat 1000000 >> $*.log 2>&1
 	#$(JAVAEA) -DrndSeed=$* -Dmagarena.dir=`pwd`/release -DselfMode -jar $^ >> $*.log 2>&1
 
 test: $(MAG)
