@@ -118,7 +118,7 @@ public class DeckStrCal {
         // Set the random seed
         if (seed != 0) {
             MagicRandom.setSeed(seed);
-            seed = MagicRandom.nextInt(1000000) + 1;
+            seed = MagicRandom.nextInt(Integer.MAX_VALUE) + 1;
         }
 
         // Set number of games.
