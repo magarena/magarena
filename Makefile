@@ -182,8 +182,8 @@ inf: $(MAG)
 	echo `hg id -n` > $*.log
 	$(JAVA) -Dmagarena.dir=`pwd`/release magic.DeckStrCal \
 	--seed $* \
-	--ai1 MMAB --str1 0 \
-	--ai2 MMAB --str2 0 \
+	--ai1 MMAB --str1 1 \
+	--ai2 MMAB --str2 1 \
 	--life 10 \
 	--games 1 \
 	--repeat 10000  >> $*.log 2>&1
