@@ -8,7 +8,7 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSacrificePermanentEvent;
 
 public class MagicAnnihilatorTrigger extends MagicWhenAttacksTrigger {
-    final private int amount;
+    private final int amount;
 
     public MagicAnnihilatorTrigger(final int amount) {
         this.amount = amount;

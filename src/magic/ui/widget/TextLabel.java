@@ -163,7 +163,7 @@ public class TextLabel extends JPanel {
         }
     }
     
-    private static abstract class TComponent {
+    private abstract static class TComponent {
 
         int lx=0;
         int ly=0;

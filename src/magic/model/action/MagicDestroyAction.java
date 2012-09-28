@@ -12,7 +12,7 @@ import java.util.Collection;
 
 public class MagicDestroyAction extends MagicAction {
     
-    final private Collection<MagicTarget> targets = new ArrayList<MagicTarget>();
+    private final Collection<MagicTarget> targets = new ArrayList<MagicTarget>();
     
     public MagicDestroyAction(final MagicPermanent permanent) {
         this.targets.add(permanent);
