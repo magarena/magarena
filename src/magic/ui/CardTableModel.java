@@ -29,8 +29,9 @@ public class CardTableModel implements TableModel {
     @Override
     public void addTableModelListener(final TableModelListener l)
     {
-        if (listeners.contains(l))
+        if (listeners.contains(l)) {
             return;
+        }
         listeners.add(l);
     }
     
