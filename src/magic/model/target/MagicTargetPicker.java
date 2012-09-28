@@ -31,7 +31,7 @@ public abstract class MagicTargetPicker<T> {
         return Collections.singletonList(bestTarget);
     }
     
-    private static Map<String, MagicTargetPicker<MagicPermanent>> factory = 
+    private static final Map<String, MagicTargetPicker<MagicPermanent>> factory =
         new HashMap<String, MagicTargetPicker<MagicPermanent>>();
 
     static {

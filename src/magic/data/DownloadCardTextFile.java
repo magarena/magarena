@@ -11,7 +11,7 @@ public class DownloadCardTextFile extends WebDownloader {
     private static final String endPattern = "</p>";
     
     private final File file;
-    private URL url;
+    private final URL url;
     
     DownloadCardTextFile(final File file, final URL url) {
         this.file = file;

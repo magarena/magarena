@@ -14,10 +14,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MagicEventActionFactory {
-    private static Map<String, MagicEventAction> factory = 
+    private static final Map<String, MagicEventAction> factory =
         new HashMap<String, MagicEventAction>();
     
-    private static Map<String, String> hint = 
+    private static final Map<String, String> hint =
         new HashMap<String, String>();
     
     private static void register(String key, MagicEventAction action) {

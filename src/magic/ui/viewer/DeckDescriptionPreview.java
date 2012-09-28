@@ -21,8 +21,8 @@ public class DeckDescriptionPreview extends JComponent implements PropertyChange
     
     File file = null;
     String description;
-    private JTextArea textArea = new JTextArea();
-    private JScrollPane scrollPane = new JScrollPane(textArea);
+    private final JTextArea textArea = new JTextArea();
+    private final JScrollPane scrollPane = new JScrollPane(textArea);
 
     public DeckDescriptionPreview(JFileChooser fc) {
         setPreferredSize(new Dimension(200, 50));

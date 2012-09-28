@@ -13,7 +13,7 @@ import magic.model.event.MagicEvent;
 
 public class MagicEchoTrigger extends MagicAtUpkeepTrigger {
 
-    private MagicManaCost manaCost;
+    private final MagicManaCost manaCost;
     
     public MagicEchoTrigger(final MagicManaCost manaCost) {
         this.manaCost = manaCost;

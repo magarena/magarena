@@ -21,7 +21,7 @@ public abstract class MagicStatic extends MagicDummyPermanentModifier implements
     //layer where this effect operate
     private final MagicLayer layer;
 
-    private boolean isUntilEOT;
+    private final boolean isUntilEOT;
 
     protected MagicStatic(final MagicLayer aLayer, final MagicTargetFilter aFilter, final boolean aIsUntilEOT) {
         filter = aFilter;

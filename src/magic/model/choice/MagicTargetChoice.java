@@ -477,7 +477,7 @@ public class MagicTargetChoice extends MagicChoice {
     }
    
 
-    private static Map<String, MagicTargetChoice> factory =
+    private static final Map<String, MagicTargetChoice> factory =
         new HashMap<String, MagicTargetChoice>();
 
     static {

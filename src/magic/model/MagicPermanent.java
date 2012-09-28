@@ -85,7 +85,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     private MagicPermanent blockedCreature = MagicPermanent.NONE;
     private final MagicPermanentList blockingCreatures;    
     private MagicPermanent pairedCreature = MagicPermanent.NONE;
-    private MagicCardList exiledCards;
+    private final MagicCardList exiledCards;
     private MagicTarget chosenTarget;
     private int counters[]=new int[MagicCounterType.NR_COUNTERS];
     private int stateFlags = 

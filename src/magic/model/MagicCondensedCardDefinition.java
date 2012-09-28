@@ -5,7 +5,7 @@ import java.util.Comparator;
 // basically a wrapper for MagicCardDefinition that adds number of copies of card
 public class MagicCondensedCardDefinition {
     private int copies;
-    private MagicCardDefinition card;
+    private final MagicCardDefinition card;
     
     public MagicCondensedCardDefinition(MagicCardDefinition card) {
         this.card = card;
