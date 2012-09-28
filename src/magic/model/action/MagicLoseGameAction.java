@@ -24,7 +24,7 @@ public class MagicLoseGameAction extends MagicAction {
     public void doAction(final MagicGame game) {
         oldLosingPlayer=game.getLosingPlayer();
         if (!oldLosingPlayer.isValid()) {
-            final MagicPlayer[] playerRef = new MagicPlayer[]{player};
+            final MagicPlayer[] playerRef = {player};
             game.executeTrigger(MagicTriggerType.IfPlayerWouldLose, playerRef);
             if (playerRef[0].isValid()) {
                 setScore(player,ArtificialScoringSystem.getLoseGameScore(game));

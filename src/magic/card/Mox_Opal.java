@@ -9,7 +9,7 @@ import magic.model.event.MagicManaActivation;
 import magic.model.event.MagicTapEvent;
 
 public class Mox_Opal {
-    private static final MagicCondition[] CONDITIONS=new MagicCondition[]{
+    private static final MagicCondition[] CONDITIONS= {
         MagicCondition.CAN_TAP_CONDITION,
         MagicCondition.METALCRAFT_CONDITION};
     

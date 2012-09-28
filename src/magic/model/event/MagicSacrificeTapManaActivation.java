@@ -9,7 +9,7 @@ import java.util.List;
 
 public class MagicSacrificeTapManaActivation extends MagicManaActivation {
 
-    private static final MagicCondition[] CONDITIONS=new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION};
+    private static final MagicCondition[] CONDITIONS= {MagicCondition.CAN_TAP_CONDITION};
             
     public MagicSacrificeTapManaActivation(final List<MagicManaType> manaTypes) {
         super(manaTypes,CONDITIONS,3);

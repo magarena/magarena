@@ -10,7 +10,7 @@ import java.util.List;
 
 public class MagicVividManaActivation extends MagicManaActivation {
 
-    private static final MagicCondition[] CONDITIONS=new MagicCondition[]{
+    private static final MagicCondition[] CONDITIONS= {
         MagicCondition.CAN_TAP_CONDITION,
         MagicCondition.CHARGE_COUNTER_CONDITION};
             

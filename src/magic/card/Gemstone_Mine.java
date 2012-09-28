@@ -12,7 +12,7 @@ import magic.model.event.MagicSacrificeEvent;
 import magic.model.event.MagicTapEvent;
 
 public class Gemstone_Mine {
-    private static final MagicCondition[] CONDITIONS = new MagicCondition[]{
+    private static final MagicCondition[] CONDITIONS = {
         MagicCondition.CAN_TAP_CONDITION,
         MagicCondition.CHARGE_COUNTER_CONDITION};
     

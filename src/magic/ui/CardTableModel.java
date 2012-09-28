@@ -47,7 +47,7 @@ public class CardTableModel implements TableModel {
         listeners.remove(l);
     }
     
-    static final String[] COLUMN_NAMES = new String[] {   
+    static final String[] COLUMN_NAMES = {
                                                 "#",       // 0
                                                 "Name",    // 1
                                                 "CC",      // 2
@@ -58,7 +58,7 @@ public class CardTableModel implements TableModel {
                                                 "Rarity",  // 7
                                                 "Text"};   // 8
 
-    static final int[] COLUMN_MIN_WIDTHS = new int[] {   
+    static final int[] COLUMN_MIN_WIDTHS = {
                                                 40,    // 0 #
                                                 180,   // 1 name
                                                 140,   // 2 cc
@@ -73,7 +73,7 @@ public class CardTableModel implements TableModel {
     
     private final boolean isDeck;
     
-    private boolean[] isDesc = new boolean[] {false, false, false, false, false, false, false, false, false, false, false, false, false};
+    private boolean[] isDesc = {false, false, false, false, false, false, false, false, false, false, false, false, false};
     private MagicCondensedDeck cardDefinitions;
     private Comparator<MagicCondensedCardDefinition> comp;
     

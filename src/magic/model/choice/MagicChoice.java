@@ -17,7 +17,7 @@ public abstract class MagicChoice {
     static final String YES_CHOICE="yes";
     static final String NO_CHOICE="no";
     
-    public static final Object[] UNDO_CHOICE_RESULTS=new Object[]{"Undo"};
+    public static final Object[] UNDO_CHOICE_RESULTS= {"Undo"};
 
     public static final MagicChoice NONE = new MagicChoice("none") {
         @Override
