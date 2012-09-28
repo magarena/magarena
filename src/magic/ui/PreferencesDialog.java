@@ -72,10 +72,15 @@ public class PreferencesDialog extends JDialog implements ActionListener {
         final GeneralConfig config=GeneralConfig.getInstance();
        
         int Y=20;
-        final int X=28, W=70, H=25;
-        final int X2=100, W2=255;
-        final int X3=25, H3=20, W3=350;
-        
+        final int X=28;
+        final int W=70;
+        final int H=25;
+        final int X2=100;
+        final int W2=255;
+        final int X3=25;
+        final int H3=20;
+        final int W3=350;
+
         final JLabel themeLabel=new JLabel("Theme");
         themeLabel.setBounds(X,Y,W,H);
         themeLabel.setIcon(IconImages.PICTURE);

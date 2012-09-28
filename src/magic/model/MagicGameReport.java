@@ -73,7 +73,8 @@ public class MagicGameReport implements Thread.UncaughtExceptionHandler {
     }
 
     private static void buildScore(final MagicGame game,final StringBuilder report) {
-        int totalScore=0,count=0;
+        int totalScore=0;
+        int count=0;
         for (final MagicAction action : game.getActions()) {
             final int score=action.getScore(game.getScorePlayer());
             totalScore+=score;

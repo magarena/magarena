@@ -97,7 +97,8 @@ public class GraphicsUtilities {
         final int type = (img.getTransparency() == Transparency.OPAQUE) ?
             BufferedImage.TYPE_INT_RGB : BufferedImage.TYPE_INT_ARGB;
         BufferedImage ret = img;
-        int w, h;
+        int w;
+        int h;
         if (higherQuality && (img.getWidth() > targetWidth && img.getHeight() > targetHeight)) {
             // Use multi-step technique: start with original size, then
             // scale down in multiple passes with drawImage()
