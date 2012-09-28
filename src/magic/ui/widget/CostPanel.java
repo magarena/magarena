@@ -28,10 +28,10 @@ public class CostPanel extends JPanel {
         final JPanel centerPanel=new JPanel();
         centerPanel.setOpaque(false);
         
-        SpringLayout springLayout = new SpringLayout();
+        final SpringLayout springLayout = new SpringLayout();
         centerPanel.setLayout(springLayout);
         
-        List<ImageIcon> icons = cost.getIcons();
+        final List<ImageIcon> icons = cost.getIcons();
         
         final JLabel manaLabels[]=new JLabel[icons.size()];
         for (int i=0;i<manaLabels.length;i++) {

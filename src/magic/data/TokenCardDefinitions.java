@@ -14,7 +14,7 @@ public class TokenCardDefinitions {
         return tokensMap.values();
     }
     
-    public static MagicCardDefinition get(String name) {
+    public static MagicCardDefinition get(final String name) {
         if (tokensMap.containsKey(name)) {
             return tokensMap.get(name);
         } else {
@@ -22,7 +22,7 @@ public class TokenCardDefinitions {
         }
     }
     
-    public static void add(MagicCardDefinition token, String fullName) {        
+    public static void add(final MagicCardDefinition token, final String fullName) {
         tokensMap.put(fullName, token);
     }
 }

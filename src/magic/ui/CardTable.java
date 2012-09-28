@@ -58,7 +58,7 @@ public class CardTable extends JPanel implements ListSelectionListener {
         table.addMouseMotionListener(new RowMouseOverListener());
         
         // set column widths
-        TableColumnModel model = table.getColumnModel();
+        final TableColumnModel model = table.getColumnModel();
         for (int i = 0; i < model.getColumnCount(); i++) {
             model.getColumn(i).setMinWidth(CardTableModel.COLUMN_MIN_WIDTHS[i]);
             model.getColumn(i).setPreferredWidth(CardTableModel.COLUMN_MIN_WIDTHS[i]);
@@ -72,13 +72,13 @@ public class CardTable extends JPanel implements ListSelectionListener {
         model.getSelectionModel().addListSelectionListener(this);
         
         // listener to sort on column header click
-        JTableHeader header = table.getTableHeader();
+        final JTableHeader header = table.getTableHeader();
         header.setUpdateTableInRealTime(true);
         header.addMouseListener(new ColumnListener());
         header.setReorderingAllowed(true);
         
         // add table to scroll pane
-        JScrollPane scrollpane = new JScrollPane(table);
+        final JScrollPane scrollpane = new JScrollPane(table);
         scrollpane.setBorder(FontsAndBorders.NO_BORDER);
         scrollpane.setOpaque(false);
         scrollpane.getViewport().setOpaque(false);
@@ -92,15 +92,15 @@ public class CardTable extends JPanel implements ListSelectionListener {
         }            
     }
     
-    public void addMouseListener(MouseListener m) {
+    public void addMouseListener(final MouseListener m) {
         table.addMouseListener(m);
     }
     
     public List<MagicCardDefinition> getSelectedCards() {
-        List<MagicCardDefinition> selectedCards = new ArrayList<MagicCardDefinition>();
+        final List<MagicCardDefinition> selectedCards = new ArrayList<MagicCardDefinition>();
         
-        for(int row : table.getSelectedRows()) {
-            MagicCardDefinition card = tableModel.getCardDef(row);
+        for(final int row : table.getSelectedRows()) {
+            final MagicCardDefinition card = tableModel.getCardDef(row);
             if(card != null) {
                 selectedCards.add(card);
             }
@@ -112,10 +112,10 @@ public class CardTable extends JPanel implements ListSelectionListener {
     void reselectLastCards() {
         // select previous card if possible
         if (lastSelectedCards.size() > 0) {
-            List<MagicCardDefinition> newSelectedCards = new ArrayList<MagicCardDefinition>();
+            final List<MagicCardDefinition> newSelectedCards = new ArrayList<MagicCardDefinition>();
             
-            for(MagicCardDefinition card : lastSelectedCards) { 
-                int index = tableModel.findCardIndex(card);
+            for(final MagicCardDefinition card : lastSelectedCards) {
+                final int index = tableModel.findCardIndex(card);
                 if(index != -1) {
                     // previous card still in list
                     table.getSelectionModel().addSelectionInterval(index,index);
@@ -127,14 +127,14 @@ public class CardTable extends JPanel implements ListSelectionListener {
         }        
     }
     
-    public void setCards(List<MagicCardDefinition> defs) {
+    public void setCards(final List<MagicCardDefinition> defs) {
         tableModel.setCards(defs);
         table.tableChanged(new TableModelEvent(tableModel));
         table.repaint();
         reselectLastCards();
     }
     
-    public void setTitle(String title) {
+    public void setTitle(final String title) {
         if (titleBar != null) {
             titleBar.setText(title);
         } else {
@@ -150,7 +150,7 @@ public class CardTable extends JPanel implements ListSelectionListener {
                 // If cell selection is enabled, both row and column change events are fired
                 if (e.getSource() == table.getSelectionModel() && table.getRowSelectionAllowed()) {
                     // Row selection changed                
-                    MagicCardDefinition card = tableModel.getCardDef(selectionModel.getLeadSelectionIndex());
+                    final MagicCardDefinition card = tableModel.getCardDef(selectionModel.getLeadSelectionIndex());
                     if (card != null) {
                         cardViewer.setCard(card,0);
                     }
@@ -168,10 +168,10 @@ public class CardTable extends JPanel implements ListSelectionListener {
     }
     
     private class ColumnListener extends MouseAdapter {
-        public void mouseClicked(MouseEvent e) {
-            TableColumnModel colModel = table.getColumnModel();
-            int columnModelIndex = colModel.getColumnIndexAtX(e.getX());
-            int modelIndex = colModel.getColumn(columnModelIndex).getModelIndex();
+        public void mouseClicked(final MouseEvent e) {
+            final TableColumnModel colModel = table.getColumnModel();
+            final int columnModelIndex = colModel.getColumnIndexAtX(e.getX());
+            final int modelIndex = colModel.getColumn(columnModelIndex).getModelIndex();
 
             if (modelIndex < 0) {
                 return;
@@ -189,11 +189,11 @@ public class CardTable extends JPanel implements ListSelectionListener {
     }
     
     private class RowMouseOverListener extends MouseAdapter {        
-        public void mouseMoved(MouseEvent e) {
-             Point p = e.getPoint();
+        public void mouseMoved(final MouseEvent e) {
+             final Point p = e.getPoint();
             if (p != null) {
-                int row = table.rowAtPoint(p);
-                MagicCardDefinition card = tableModel.getCardDef(row);
+                final int row = table.rowAtPoint(p);
+                final MagicCardDefinition card = tableModel.getCardDef(row);
                 if (card != null) {
                     cardViewer.setCard(card,0);
                 }
@@ -205,11 +205,11 @@ public class CardTable extends JPanel implements ListSelectionListener {
         private static final long serialVersionUID = 113245L;
         
         @Override
-        public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int col) {
-            CostPanel myRender = new CostPanel((MagicManaCost) value);
+        public Component getTableCellRendererComponent(final JTable table, final Object value, final boolean isSelected, final boolean hasFocus, final int row, final int col) {
+            final CostPanel myRender = new CostPanel((MagicManaCost) value);
             
             // match border and background formatting with default
-            JComponent defaultRender = (JComponent) super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, col);
+            final JComponent defaultRender = (JComponent) super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, col);
             
             myRender.setOpaque(defaultRender.isOpaque());
             myRender.setBorder(defaultRender.getBorder());

@@ -12,7 +12,7 @@ public class BlankPainter extends AbstractRegionPainter {
     }
 
     @Override
-    protected void doPaint(Graphics2D g, JComponent c, int width, int height, Object[] extendedCacheKeys) {
+    protected void doPaint(final Graphics2D g, final JComponent c, final int width, final int height, final Object[] extendedCacheKeys) {
         
     }
 

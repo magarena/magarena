@@ -272,7 +272,7 @@ public class DuelDialog extends JDialog implements ActionListener {
             
             if(DeckGenerators.getInstance().getNrGenerators() > 0) {
                 model.addElement(SEPARATOR);
-                for(String generatorName : DeckGenerators.getInstance().getGeneratorNames()) {
+                for(final String generatorName : DeckGenerators.getInstance().getGeneratorNames()) {
                     model.addElement(generatorName);
                 }
             }
@@ -302,7 +302,7 @@ public class DuelDialog extends JDialog implements ActionListener {
                     panel.setBackground(Color.LIGHT_GRAY);
                 }
                 
-                JLabel label = new JLabel(selectedVal, JLabel.CENTER);
+                final JLabel label = new JLabel(selectedVal, JLabel.CENTER);
                 label.setFont(FontsAndBorders.FONT1);
                 panel.add(label);
                 
@@ -328,8 +328,8 @@ public class DuelDialog extends JDialog implements ActionListener {
             }
         }
         
-        public void actionPerformed(ActionEvent e) {
-            String tempItem = (String) getSelectedItem();
+        public void actionPerformed(final ActionEvent e) {
+            final String tempItem = (String) getSelectedItem();
             
             if (SEPARATOR.equals(tempItem)) {
                 // don't select separator

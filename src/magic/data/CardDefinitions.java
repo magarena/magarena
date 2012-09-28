@@ -69,7 +69,7 @@ public class CardDefinitions {
         final MagicCardDefinition cardDefinition=new MagicCardDefinition();
 
         //run through the list of properties
-        for (String key : content.stringPropertyNames()) {
+        for (final String key : content.stringPropertyNames()) {
             setProperty(cardDefinition, key, content.getProperty(key));
         }
 
@@ -115,7 +115,7 @@ public class CardDefinitions {
         //load all files in card directory
         final File cardDir = new File(MagicMain.getScriptsPath());
         final File[] files = cardDir.listFiles();
-        for (File file : files) {
+        for (final File file : files) {
             loadCardDefinition(file);
         }
 
@@ -148,7 +148,7 @@ public class CardDefinitions {
     }
     
     public static void loadCardTexts() {
-        for(MagicCardDefinition card : getCards()) {
+        for(final MagicCardDefinition card : getCards()) {
             if(card != MagicCardDefinition.UNKNOWN && card.getText().length() == 0) {
                 // try to load text from file
                 final StringBuilder buffer = new StringBuilder();
@@ -160,7 +160,7 @@ public class CardDefinitions {
                 buffer.append(CARD_TEXT_EXT);
                 
                 try {
-                    String text = FileIO.toStr(new File(buffer.toString()));
+                    final String text = FileIO.toStr(new File(buffer.toString()));
                     if(text != null) {
                         card.setText(text);                        
                     }

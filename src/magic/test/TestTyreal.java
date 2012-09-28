@@ -52,7 +52,7 @@ class TestTyreal extends TestGameBuilder {
     addToLibrary(P, "Plains", 10);
     createPermanent(game, P, "Rupture Spire", false, 10);
     createPermanent(game, P, "Mad Auntie", false, 1);
-    MagicPermanent la = createPermanent(game, P, "Legacy's Allure", false, 1);
+    final MagicPermanent la = createPermanent(game, P, "Legacy's Allure", false, 1);
     game.doAction(new MagicChangeCountersAction(la, MagicCounterType.Charge, 1, true));
     //game.doAction(new MagicChangeCountersAction(la, MagicCounterType.Charge, 1, true));
     //createPermanent(game, P, "Mad Auntie", false, 1);

@@ -316,7 +316,7 @@ public class MagicFrame extends JFrame implements ActionListener {
         // view menu        
         final JMenu viewMenu = new JMenu("View");
         
-        ButtonGroup modeGroup = new ButtonGroup();
+        final ButtonGroup modeGroup = new ButtonGroup();
         
         textModeItem = new JRadioButtonMenuItem("Text Mode");
         textModeItem.setSelected(GeneralConfig.getInstance().getTextView());
@@ -393,7 +393,7 @@ public class MagicFrame extends JFrame implements ActionListener {
         }
     }
     
-    public void showDuel(int tab) {
+    public void showDuel(final int tab) {
         showDuel();
         duelPanel.setSelectedTab(tab);
     }
@@ -511,8 +511,8 @@ public class MagicFrame extends JFrame implements ActionListener {
         }
     }
     
-    public boolean isLegalDeckAndShowErrors(MagicDeck deck, String playerName) {
-        String brokenRulesText =
+    public boolean isLegalDeckAndShowErrors(final MagicDeck deck, final String playerName) {
+        final String brokenRulesText =
                 MagicDeckConstructionRule.getRulesText(MagicDeckConstructionRule.checkDeck(deck));
         
         if(brokenRulesText.length() > 0) {
@@ -761,7 +761,7 @@ public class MagicFrame extends JFrame implements ActionListener {
         
         //restart the app
         final String javaBin = System.getProperty("java.home") + "/bin/java";
-        File jarFile;
+        final File jarFile;
         try { //get File object of jar
             jarFile = new File(this.getClass().
                     getProtectionDomain().

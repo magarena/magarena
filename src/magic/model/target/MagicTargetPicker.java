@@ -59,11 +59,11 @@ public abstract class MagicTargetPicker<T> {
         register("counter", null);
     }
     
-    public MagicTargetPicker<MagicPermanent> create(String arg) {
+    public MagicTargetPicker<MagicPermanent> create(final String arg) {
         throw new UnsupportedOperationException();
     }
 
-    public static MagicTargetPicker<MagicPermanent> build(String arg) {
+    public static MagicTargetPicker<MagicPermanent> build(final String arg) {
         if (factory.containsKey(arg)) {
             return factory.get(arg);
         } else {
@@ -72,7 +72,7 @@ public abstract class MagicTargetPicker<T> {
         }
     }
 
-    public static void register(String key, MagicTargetPicker<MagicPermanent> tp) {
+    public static void register(final String key, final MagicTargetPicker<MagicPermanent> tp) {
         factory.put(key, tp);
     }
 }

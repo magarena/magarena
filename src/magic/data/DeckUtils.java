@@ -59,7 +59,7 @@ public class DeckUtils {
         
         for (final MagicCardDefinition cardDefinition : player.getDeck()) {
             final String name=cardDefinition.getName();
-            int index;
+            final int index;
             if (cardDefinition.isLand()) {
                 index=2;
             } else if (cardDefinition.isCreature()) {
@@ -180,7 +180,7 @@ public class DeckUtils {
         }
 
         // show error message for unsupported cards
-        StringBuilder sb = new StringBuilder();
+        final StringBuilder sb = new StringBuilder();
         sb.append("The loaded deck contained unsupported card(s): ");
         
         // generate list of unsupported cards
@@ -194,7 +194,7 @@ public class DeckUtils {
         // options panel doesn't have automatic text wrapping 
         // because the method that provides max char limit isn't 
         // coded, so override that method
-        JOptionPane cleanupPane = new JOptionPane(sb.toString(), JOptionPane.ERROR_MESSAGE) { 
+        final JOptionPane cleanupPane = new JOptionPane(sb.toString(), JOptionPane.ERROR_MESSAGE) {
             private static final long serialVersionUID = 232L;
 
             @Override

@@ -68,7 +68,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
         setLayout(springLayout);
         
         // buttons
-        JPanel buttonsPanel = new JPanel();
+        final JPanel buttonsPanel = new JPanel();
         buttonsPanel.setLayout(new BoxLayout(buttonsPanel, BoxLayout.X_AXIS));
         buttonsPanel.setOpaque(false);
         
@@ -104,7 +104,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
         add(buttonsPanel);
         
         // left side (everything but buttons)
-        JPanel leftPanel = new JPanel();
+        final JPanel leftPanel = new JPanel();
         leftPanel.setLayout(new BoxLayout(leftPanel, BoxLayout.Y_AXIS));
         leftPanel.setOpaque(false);
         
@@ -125,7 +125,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
         }
         
         // add scrolling to left side
-        JScrollPane leftScrollPane = new JScrollPane(leftPanel);
+        final JScrollPane leftScrollPane = new JScrollPane(leftPanel);
         leftScrollPane.setBorder(FontsAndBorders.NO_BORDER);
         leftScrollPane.setBackground(java.awt.Color.green);
         leftPanel.setOpaque(false);
@@ -164,7 +164,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
             deckTable = new CardTable(deckDefs, cardViewer, generateDeckTitle(deckDefs), true);
             deckTable.addMouseListener(new DeckMouseListener());
             
-            JSplitPane cardsSplitPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
+            final JSplitPane cardsSplitPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
             cardsSplitPane.setOneTouchExpandable(true);
             cardsSplitPane.setLeftComponent(cardPoolTable);
             cardsSplitPane.setRightComponent(deckTable);
@@ -191,7 +191,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
         add(backgroundImage);
         
         // set sizes by defining gaps between components
-        Container contentPane = this;
+        final Container contentPane = this;
         
         // background's gaps with top left bottom and right are 0
         // (i.e., it fills the window)
@@ -261,7 +261,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
         return player;
     }
     
-    String generateDeckTitle(MagicDeck deck) {
+    String generateDeckTitle(final MagicDeck deck) {
         return "Deck (" + deck.getName() + ") - " + deck.size() + " cards";
     }
     
@@ -282,10 +282,10 @@ public class ExplorerPanel extends JPanel implements ActionListener {
     }
     
     private void removeSelectedFromDeck() {
-        List<MagicCardDefinition> deckCards = deckTable.getSelectedCards();
+        final List<MagicCardDefinition> deckCards = deckTable.getSelectedCards();
         
         if (deckCards.size() > 0) {
-            for(MagicCardDefinition card : deckCards) { 
+            for(final MagicCardDefinition card : deckCards) {
                 getPlayer().getDeck().remove(card);
             }
             
@@ -298,10 +298,10 @@ public class ExplorerPanel extends JPanel implements ActionListener {
     }
     
     private void addSelectedToDeck() {
-        List<MagicCardDefinition> cardPoolCards = cardPoolTable.getSelectedCards();
+        final List<MagicCardDefinition> cardPoolCards = cardPoolTable.getSelectedCards();
         
         if (cardPoolCards.size() > 0) {
-            for(MagicCardDefinition card : cardPoolCards) { 
+            for(final MagicCardDefinition card : cardPoolCards) {
                 getPlayer().getDeck().add(card);
             }
             
@@ -335,7 +335,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
     
     private class CardPoolMouseListener extends MouseAdapter {
         @Override
-        public void mouseClicked(MouseEvent e) {
+        public void mouseClicked(final MouseEvent e) {
             if(isEditingDeck() && e.getClickCount() > 1) {
                 addSelectedToDeck();
             }
@@ -344,7 +344,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
     
     private class DeckMouseListener extends MouseAdapter {
         @Override
-        public void mouseClicked(MouseEvent e) {
+        public void mouseClicked(final MouseEvent e) {
             if(isEditingDeck()) {
                 if (e.getClickCount() > 1) {
                     if (e.getButton() == MouseEvent.BUTTON1) {
@@ -352,7 +352,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
                     } else if (e.getButton() == MouseEvent.BUTTON3) {
                         final List<MagicCardDefinition> deckCards = deckTable.getSelectedCards();
                         if (deckCards.size() > 0) {
-                            for(MagicCardDefinition card : deckCards) { 
+                            for(final MagicCardDefinition card : deckCards) {
                                 getPlayer().getDeck().add(card);
                             }
 
@@ -362,7 +362,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
                     }
                 }
                 if (e.getButton() == MouseEvent.BUTTON3) {
-                    JTable table = (JTable)(e.getSource());
+                    final JTable table = (JTable)(e.getSource());
                     final int row = table.rowAtPoint(e.getPoint());
                     table.clearSelection();
                     table.addRowSelectionInterval(row,row);

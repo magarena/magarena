@@ -20,11 +20,11 @@ public class MagicEventActionFactory {
     private static final Map<String, String> hint =
         new HashMap<String, String>();
     
-    private static void register(String key, MagicEventAction action) {
+    private static void register(final String key, final MagicEventAction action) {
         factory.put(key, action);
     }
     
-    private static void hint(String key, String value) {
+    private static void hint(final String key, final String value) {
         hint.put(key, value);
     }
     
@@ -78,7 +78,7 @@ public class MagicEventActionFactory {
         });
     }
 
-    public static String hint(String action) {
+    public static String hint(final String action) {
         if (hint.containsKey(action)) {
             return hint.get(action);
         } else {
@@ -86,7 +86,7 @@ public class MagicEventActionFactory {
         }
     }
 
-    public static MagicEventAction build(String action) {
+    public static MagicEventAction build(final String action) {
         if (factory.containsKey(action)) {
             return factory.get(action);
         } else {

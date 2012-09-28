@@ -110,7 +110,7 @@ public class MagicPlayerDefinition {
     }    
     
     public DefaultDeckGenerator getDeckGenerator() {
-        String name = getProfile().getDeckGeneratorName();
+        final String name = getProfile().getDeckGeneratorName();
         
         if (name == null) {
             return null;
@@ -120,7 +120,7 @@ public class MagicPlayerDefinition {
     }
     
     void generateDeck(final DefaultDeckGenerator defaultGenerator) {
-        DefaultDeckGenerator customGenerator =  getDeckGenerator();
+        final DefaultDeckGenerator customGenerator =  getDeckGenerator();
         
         if(customGenerator == null) {
             defaultGenerator.generateDeck(DECK_SIZE, profile, deck);

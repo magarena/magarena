@@ -45,7 +45,7 @@ public class History {
     private static String name = "";
     private final MagicDuel duel;
     
-    public History(MagicDuel duel) {
+    public History(final MagicDuel duel) {
         this.duel = duel;
     }
     
@@ -157,7 +157,7 @@ public class History {
         }
     }
 
-    private static void setName(String aName) {
+    private static void setName(final String aName) {
         History.name = aName;
     }
     

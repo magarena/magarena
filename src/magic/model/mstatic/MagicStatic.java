@@ -42,7 +42,7 @@ public abstract class MagicStatic extends MagicDummyPermanentModifier implements
     }
     
     @Override
-    public void change(MagicCardDefinition cdef) {
+    public void change(final MagicCardDefinition cdef) {
         cdef.addStatic(this);
     }
         
@@ -99,7 +99,7 @@ public abstract class MagicStatic extends MagicDummyPermanentModifier implements
             public long getAbilityFlags(
                 final MagicPermanent source,
                 final MagicPermanent permanent,
-                long flags) {
+                final long flags) {
                 return flags | givenAbilityFlags;
             }
             @Override

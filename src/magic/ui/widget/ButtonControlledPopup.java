@@ -27,7 +27,7 @@ public class ButtonControlledPopup extends TexturedPanel implements ActionListen
     
     private boolean popupJustToggled;
     
-    public ButtonControlledPopup(JFrame frame, JButton toggleButton, String hidePopupButtonText, String showPopupButtonText) {
+    public ButtonControlledPopup(final JFrame frame, final JButton toggleButton, final String hidePopupButtonText, final String showPopupButtonText) {
         this.invokePopupButton = toggleButton;
         this.hidePopupButtonText = hidePopupButtonText;
         this.showPopupButtonText = showPopupButtonText;
@@ -44,14 +44,14 @@ public class ButtonControlledPopup extends TexturedPanel implements ActionListen
         dialog.add(this);
     }
     
-    public void setPopupSize(int width, int height) {
+    public void setPopupSize(final int width, final int height) {
         // jdialog will not resize by itself
         dialog.setSize(width, height);
     }
     
     public void showPopup() {
         // set location relative to button
-        Point location = invokePopupButton.getLocation();
+        final Point location = invokePopupButton.getLocation();
         SwingUtilities.convertPointToScreen(location, invokePopupButton.getParent());
         location.translate(0, invokePopupButton.getHeight()
                 + (invokePopupButton.getBorder() == null ? 0
@@ -91,7 +91,7 @@ public class ButtonControlledPopup extends TexturedPanel implements ActionListen
     }
     
     @Override
-    public void windowLostFocus(WindowEvent e) {
+    public void windowLostFocus(final WindowEvent e) {
         popupJustToggled = true;
         timer.schedule(new ResponsePreventer(), 300); // don't allow clicks on hide button to reshow popup immediately by disabling response for < 1 s
         
@@ -101,6 +101,6 @@ public class ButtonControlledPopup extends TexturedPanel implements ActionListen
     }
 
     @Override
-    public void windowGainedFocus(WindowEvent e) {
+    public void windowGainedFocus(final WindowEvent e) {
     }
 }

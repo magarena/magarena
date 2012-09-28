@@ -287,7 +287,7 @@ public interface MagicCondition {
     
     MagicCondition GRAVEYARD_CONTAINS_CREATURE = new MagicCondition() {
         public boolean accept(final MagicSource source) {
-            for (MagicCard card : source.getController().getGraveyard()) {
+            for (final MagicCard card : source.getController().getGraveyard()) {
                 if (card.getCardDefinition().isCreature()) {
                     return true;
                 }

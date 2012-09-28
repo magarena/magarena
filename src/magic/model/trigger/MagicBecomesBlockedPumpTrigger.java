@@ -26,7 +26,7 @@ public class MagicBecomesBlockedPumpTrigger extends MagicWhenBecomesBlockedTrigg
             final MagicPermanent permanent,
             final MagicPermanent data) {
         if (permanent == data) {
-            int size = forEachBlocker ?
+            final int size = forEachBlocker ?
                     permanent.getBlockingCreatures().size() :
                     1;
             final int totalAmountPower = amountPower * size;

@@ -31,14 +31,14 @@ public class DownloadCardTextFile extends WebDownloader {
     }
     
     public void download(final Proxy proxy) {
-        String html = WebDownloader.getHTML(proxy, url);
+        final String html = WebDownloader.getHTML(proxy, url);
         
         // find text in html
         int iStart =  html.indexOf(startPattern);
         String foundText = null;
         if(iStart > -1) {
             iStart += startPattern.length();
-            int iEnd = html.indexOf(endPattern, iStart);
+            final int iEnd = html.indexOf(endPattern, iStart);
             foundText = html.substring(iStart, iEnd) + " ";
             
             foundText = foundText.replace((char) 195, 'A').replace((char) 8224, 'E');; // replace Æ character with AE

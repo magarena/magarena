@@ -27,7 +27,7 @@ public class CardTableModel implements TableModel {
      *            the TableModelListener
      */
     @Override
-    public void addTableModelListener(TableModelListener l)
+    public void addTableModelListener(final TableModelListener l)
     {
         if (listeners.contains(l))
             return;
@@ -42,7 +42,7 @@ public class CardTableModel implements TableModel {
      *            the TableModelListener
      */
     @Override
-    public void removeTableModelListener(TableModelListener l)
+    public void removeTableModelListener(final TableModelListener l)
     {
         listeners.remove(l);
     }
@@ -84,14 +84,14 @@ public class CardTableModel implements TableModel {
         setCards(cardDefs);
     }
     
-    public MagicCardDefinition getCardDef(int row) {
+    public MagicCardDefinition getCardDef(final int row) {
         if (row < 0 || row >= cardDefinitions.size()) {
             return null;
         }
         return cardDefinitions.get(row).getCard();
     }
     
-    public int findCardIndex(MagicCardDefinition card) {
+    public int findCardIndex(final MagicCardDefinition card) {
         for (int i = 0; i < cardDefinitions.size(); i++) {
             if(MagicCardDefinition.NAME_COMPARATOR_ASC.compare(cardDefinitions.get(i).getCard(), card) == 0) {
                 return i;
@@ -101,7 +101,7 @@ public class CardTableModel implements TableModel {
         return -1;
     }
     
-    public void setCards(List<MagicCardDefinition> defs) {
+    public void setCards(final List<MagicCardDefinition> defs) {
         this.cardDefinitions = new MagicCondensedDeck(defs);
         
         // re-sort if necessary
@@ -110,8 +110,8 @@ public class CardTableModel implements TableModel {
         }
     }
     
-    public void sort(int column) {
-        Comparator<MagicCondensedCardDefinition> oldComp = comp;
+    public void sort(final int column) {
+        final Comparator<MagicCondensedCardDefinition> oldComp = comp;
         comp = null;
         
         switch(column) {
@@ -151,7 +151,7 @@ public class CardTableModel implements TableModel {
      * @return the common ancestor class of the object values in the model.
      */
     @Override
-    public Class<?> getColumnClass(int columnIndex)
+    public Class<?> getColumnClass(final int columnIndex)
     {
         switch (columnIndex) {
             case 1:        return MagicManaCost.class;
@@ -182,7 +182,7 @@ public class CardTableModel implements TableModel {
      * @return the name of the column
      */
     @Override
-    public String getColumnName(int columnIndex)
+    public String getColumnName(final int columnIndex)
     {
         return COLUMN_NAMES[columnIndex];
     }
@@ -211,9 +211,9 @@ public class CardTableModel implements TableModel {
      * @return the value Object at the specified cell
      */
     @Override
-    public Object getValueAt(int rowIndex, int columnIndex)
+    public Object getValueAt(final int rowIndex, final int columnIndex)
     {
-        MagicCardDefinition card = cardDefinitions.get(rowIndex).getCard();
+        final MagicCardDefinition card = cardDefinitions.get(rowIndex).getCard();
         
         switch(columnIndex) {
             case 0:        if(isDeck) {
@@ -254,7 +254,7 @@ public class CardTableModel implements TableModel {
      * @see #setValueAt
      */
     @Override
-    public boolean isCellEditable(int rowIndex, int columnIndex)
+    public boolean isCellEditable(final int rowIndex, final int columnIndex)
     {
         return false; // don't allow editing
     }
@@ -272,7 +272,7 @@ public class CardTableModel implements TableModel {
      * @see #isCellEditable
      */
     @Override
-    public void setValueAt(Object value, int rowIndex, int columnIndex)
+    public void setValueAt(final Object value, final int rowIndex, final int columnIndex)
     {
     }
 

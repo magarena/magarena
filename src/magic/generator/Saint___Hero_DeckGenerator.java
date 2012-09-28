@@ -48,15 +48,15 @@ public class Saint___Hero_DeckGenerator extends DefaultDeckGenerator {
         return 2;
     }
     
-    public void addRequiredSpells(MagicCondensedDeck deck) {
+    public void addRequiredSpells(final MagicCondensedDeck deck) {
         addRequiredCards(deck, spells);
     }
     
-    public void addRequiredLands(MagicCondensedDeck deck) {
+    public void addRequiredLands(final MagicCondensedDeck deck) {
         addRequiredCards(deck, lands);
     }
     
-    public void setColors(MagicPlayerProfile profile) {
+    public void setColors(final MagicPlayerProfile profile) {
         profile.setColors(getColorText());
     }
 }

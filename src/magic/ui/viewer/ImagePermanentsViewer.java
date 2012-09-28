@@ -48,7 +48,7 @@ public class ImagePermanentsViewer extends JPanel {
         int numCardsThisRow = 0;
         int currentRow = startingRow;
         
-        for(ImagePermanentViewer card : cards) {
+        for(final ImagePermanentViewer card : cards) {
             if(numCardsThisRow + 1 > maxCardsPerRow) {
                 // goto next row
                 currentRow++;
@@ -81,7 +81,7 @@ public class ImagePermanentsViewer extends JPanel {
         int maxWidth=0;
         int rowHeight=0;
         
-        List<ImagePermanentViewer> aViewers = new ArrayList<ImagePermanentViewer>();
+        final List<ImagePermanentViewer> aViewers = new ArrayList<ImagePermanentViewer>();
         if(isTop) {
             aViewers.addAll(nonCreatures);
             aViewers.addAll(creatures);
@@ -182,7 +182,7 @@ public class ImagePermanentsViewer extends JPanel {
         final List<ImagePermanentViewer> newViewers = new ArrayList<ImagePermanentViewer>();
         
         for (final PermanentViewerInfo permanentInfo : permanentInfos) {
-            ImagePermanentViewer perm = new ImagePermanentViewer(this,permanentInfo);
+            final ImagePermanentViewer perm = new ImagePermanentViewer(this,permanentInfo);
             if(permanentInfo.creature) {
                 creatures.add(perm);
             } else {

@@ -408,7 +408,7 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
         } else if (source==dirButton) {
             final JFileChooser fc = new JFileChooser();
             fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-            int returnVal = fc.showOpenDialog(this);
+            final int returnVal = fc.showOpenDialog(this);
             if (returnVal == JFileChooser.APPROVE_OPTION) {
                 oldDataFolder = fc.getSelectedFile();
                 final File subFolder = new File(oldDataFolder, MagicMain.getGameFolder());

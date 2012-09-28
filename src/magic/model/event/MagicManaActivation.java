@@ -45,7 +45,7 @@ public abstract class MagicManaActivation implements MagicChangeCardDefinition {
     public abstract MagicEvent[] getCostEvent(final MagicSource source);
     
     @Override
-    public void change(MagicCardDefinition cdef) {
+    public void change(final MagicCardDefinition cdef) {
         cdef.addManaAct(this);
     }
 }

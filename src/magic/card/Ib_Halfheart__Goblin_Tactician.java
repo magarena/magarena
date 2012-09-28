@@ -51,7 +51,7 @@ public class Ib_Halfheart__Goblin_Tactician {
             game.doAction(sac);
             if (sac.isValid()) {
                 for (final MagicPermanent blocker : blockingCreatures) {
-                    MagicDamage damage = new MagicDamage(goblin, blocker, 4, false);
+                    final MagicDamage damage = new MagicDamage(goblin, blocker, 4, false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             }

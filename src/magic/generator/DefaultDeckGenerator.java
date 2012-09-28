@@ -51,7 +51,7 @@ public class DefaultDeckGenerator {
         return 4;
     }
     
-    public boolean acceptPossibleSpellCard(MagicCardDefinition card) {
+    public boolean acceptPossibleSpellCard(final MagicCardDefinition card) {
         return true;
     }
 
@@ -72,14 +72,14 @@ public class DefaultDeckGenerator {
         }            
     }
     
-    public boolean acceptPossibleLandCard(MagicCardDefinition card) {
+    public boolean acceptPossibleLandCard(final MagicCardDefinition card) {
         return true;
     }
     
     public void generateDeck(final int size, final MagicPlayerProfile profile, final MagicDeck deck) {
         setColors(profile);
         
-        MagicCondensedDeck condensedDeck = new MagicCondensedDeck();
+        final MagicCondensedDeck condensedDeck = new MagicCondensedDeck();
 
         genSpells();
         genLands();
@@ -102,7 +102,7 @@ public class DefaultDeckGenerator {
         addRequiredSpells(condensedDeck);
         
         // count required cards added
-        for(MagicCardDefinition card : condensedDeck.toMagicDeck()) {
+        for(final MagicCardDefinition card : condensedDeck.toMagicDeck()) {
             if(card.isCreature()) {
                 countCreatures++;
             } else if(!card.isLand()) {
@@ -177,8 +177,8 @@ public class DefaultDeckGenerator {
         deck.setContent(condensedDeck.toMagicDeck());
     }
     
-    protected void addRequiredCards(MagicCondensedDeck deck, String[] cards) {        
-        for(String name : cards) {
+    protected void addRequiredCards(final MagicCondensedDeck deck, final String[] cards) {
+        for(final String name : cards) {
             final MagicCardDefinition cardDef = CardDefinitions.getCard(name);
             if (cardDef.isValid()) {
                 deck.addCard(cardDef, false);
@@ -188,11 +188,11 @@ public class DefaultDeckGenerator {
         }
     }
     
-    public void addRequiredSpells(MagicCondensedDeck deck) { }
+    public void addRequiredSpells(final MagicCondensedDeck deck) { }
     
-    public void addRequiredLands(MagicCondensedDeck deck) { }
+    public void addRequiredLands(final MagicCondensedDeck deck) { }
     
-    public void setColors(MagicPlayerProfile profile) {    }
+    public void setColors(final MagicPlayerProfile profile) {    }
     
     public boolean ignoreMaxColorless() {
         return false;

@@ -175,8 +175,8 @@ public class MagicManaCost {
         }
     }
     
-    private static boolean isNumeric(String str) {
-        for (char c : str.toCharArray()) {
+    private static boolean isNumeric(final String str) {
+        for (final char c : str.toCharArray()) {
             if (!Character.isDigit(c)) {
                 return false;
             }
@@ -260,7 +260,7 @@ public class MagicManaCost {
 
     private List<MagicCostManaType> getCanonicalOrder() {
         final List<MagicCostManaType> order = new ArrayList<MagicCostManaType>();
-        for (MagicCostManaType type : MagicCostManaType.NON_MONO) {
+        for (final MagicCostManaType type : MagicCostManaType.NON_MONO) {
             final int amt = amounts[type.ordinal()];
             if (amt > 0) {
                 order.add(type);
@@ -282,7 +282,7 @@ public class MagicManaCost {
     //find the first mono color in the mana cost order
     private MagicCostManaType findFirstMonoSymbol() {
         //keep color with amount > 0 and has no prev
-        List<MagicCostManaType> cand = new ArrayList<MagicCostManaType>();
+        final List<MagicCostManaType> cand = new ArrayList<MagicCostManaType>();
         for (final MagicCostManaType color : MagicCostManaType.MONO) {
             final int amt_c = amounts[color.ordinal()];
             final int amt_p = amounts[color.prev().ordinal()];

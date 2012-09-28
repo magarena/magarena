@@ -198,7 +198,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
         {
         try
             {
-            MersenneTwisterFast f = (MersenneTwisterFast)(super.clone());
+            final MersenneTwisterFast f = (MersenneTwisterFast)(super.clone());
             f.mt = mt.clone();
             f.mag01 = mag01.clone();
             return f;
@@ -206,12 +206,12 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
         catch (CloneNotSupportedException e) { throw new InternalError(); } // should never happen
         }
     
-    public boolean stateEquals(Object o)
+    public boolean stateEquals(final Object o)
         {
         if (o==this) return true;
         if (o == null || !(o instanceof MersenneTwisterFast))
             return false;
-        MersenneTwisterFast other = (MersenneTwisterFast) o;
+        final MersenneTwisterFast other = (MersenneTwisterFast) o;
         if (mti != other.mti) return false;
         for(int x=0;x<mag01.length;x++)
             if (mag01[x] != other.mag01[x]) return false;
@@ -221,7 +221,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
         }
 
     /** Reads the entire state of the MersenneTwister RNG from the stream */
-    public void readState(DataInputStream stream) throws IOException
+    public void readState(final DataInputStream stream) throws IOException
         {
         int len = mt.length;
         for(int x=0;x<len;x++) mt[x] = stream.readInt();
@@ -235,7 +235,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
         }
         
     /** Writes the entire state of the MersenneTwister RNG to the stream */
-    public void writeState(DataOutputStream stream) throws IOException
+    public void writeState(final DataOutputStream stream) throws IOException
         {
         int len = mt.length;
         for(int x=0;x<len;x++) stream.writeInt(mt[x]);
@@ -653,7 +653,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
         }
 
 
-    public final void nextBytes(byte[] bytes)
+    public final void nextBytes(final byte[] bytes)
         {
         int y;
         
@@ -914,7 +914,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
         
         <p>This version preserves all possible random values in the double range.
         */
-    public double nextDouble(boolean includeZero, boolean includeOne)
+    public double nextDouble(final boolean includeZero, final boolean includeOne)
         {
         double d = 0.0;
         do
@@ -1066,7 +1066,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
                     - 1;
                 s = v1 * v1 + v2 * v2;
                 } while (s >= 1 || s==0);
-            double multiplier = StrictMath.sqrt(-2 * StrictMath.log(s)/s);
+            final double multiplier = StrictMath.sqrt(-2 * StrictMath.log(s)/s);
             __nextNextGaussian = v2 * multiplier;
             __haveNextNextGaussian = true;
             return v1 * multiplier;
@@ -1127,7 +1127,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
         
         <p>This version preserves all possible random values in the float range.
         */
-    public double nextFloat(boolean includeZero, boolean includeOne)
+    public double nextFloat(final boolean includeZero, final boolean includeOne)
         {
         float d = 0.0f;
         do

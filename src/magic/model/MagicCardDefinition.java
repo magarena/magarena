@@ -126,7 +126,7 @@ public class MagicCardDefinition {
         return name;
     }
     
-    public void setName(String name) {
+    public void setName(final String name) {
         this.name = name;
     }
     
@@ -134,7 +134,7 @@ public class MagicCardDefinition {
         return fullName;
     }
     
-    public void setFullName(String name) {
+    public void setFullName(final String name) {
         fullName = name;
     }
     
@@ -325,7 +325,7 @@ public class MagicCardDefinition {
     }
     
     public String getTypeString() {
-        StringBuilder sb = new StringBuilder();
+        final StringBuilder sb = new StringBuilder();
         if (isLand()) {
             sb.append(MagicType.Land.toString());
         } 
@@ -395,7 +395,7 @@ public class MagicCardDefinition {
     }
     
     public String getSubTypeString() {
-        String brackets = getSubTypeFlags().toString(); // [...,...]
+        final String brackets = getSubTypeFlags().toString(); // [...,...]
         if (brackets.length() <= 2) {
             return "";
         }
@@ -426,7 +426,7 @@ public class MagicCardDefinition {
         return cost.getConvertedCost();
     }
     
-    public boolean hasConvertedCost(int c) {
+    public boolean hasConvertedCost(final int c) {
         return getConvertedCost() == c;
     }
     
@@ -561,7 +561,7 @@ public class MagicCardDefinition {
         return ability.hasAbility(abilityFlags);
     }
     
-    public void setText(String text) {
+    public void setText(final String text) {
         this.text = text;
     }
     
@@ -778,7 +778,7 @@ public class MagicCardDefinition {
     public static final Comparator<MagicCardDefinition> TYPE_COMPARATOR_DESC=new Comparator<MagicCardDefinition>() {
         @Override
         public int compare(final MagicCardDefinition cardDefinition1,final MagicCardDefinition cardDefinition2) {        
-            int c = cardDefinition1.getTypeString().compareTo(cardDefinition2.getTypeString());
+            final int c = cardDefinition1.getTypeString().compareTo(cardDefinition2.getTypeString());
             if(c == 0) {
                 return cardDefinition1.getLongTypeString().compareTo(cardDefinition2.getLongTypeString());
             }

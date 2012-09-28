@@ -37,7 +37,7 @@ public class MagicCumulativeUpkeepTrigger extends MagicAtUpkeepTrigger {
                     1,
                     true));
             final int amount = permanent.getCounters(MagicCounterType.Charge);
-            StringBuilder totalCost = new StringBuilder();
+            final StringBuilder totalCost = new StringBuilder();
             for (int i=0;i<amount;i++) {
                 totalCost.append(manaCost.toString());
             }

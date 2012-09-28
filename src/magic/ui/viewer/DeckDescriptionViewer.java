@@ -42,12 +42,12 @@ public class DeckDescriptionViewer extends JPanel implements FocusListener {
         textArea.setForeground(ThemeFactory.getInstance().getCurrentTheme().getTextColor());
         textArea.addFocusListener(this);
         
-        JScrollPane scrollPane = new JScrollPane(textArea);
+        final JScrollPane scrollPane = new JScrollPane(textArea);
         scrollPane.getVerticalScrollBar().setUnitIncrement(8);
         mainPanel.add(scrollPane,BorderLayout.CENTER);
     }
 
-    public void setPlayer(MagicPlayerDefinition playerDef) {
+    public void setPlayer(final MagicPlayerDefinition playerDef) {
         this.player = playerDef;
         textArea.setText(playerDef.getDeck().getDescription());
         textArea.setCaretPosition(0);
@@ -55,10 +55,10 @@ public class DeckDescriptionViewer extends JPanel implements FocusListener {
     }
 
     @Override
-    public void focusGained(FocusEvent event) {}
+    public void focusGained(final FocusEvent event) {}
 
     @Override
-    public void focusLost(FocusEvent event) {
+    public void focusLost(final FocusEvent event) {
         player.getDeck().setDescription(textArea.getText());
     }
     

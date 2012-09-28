@@ -51,7 +51,7 @@ public abstract class WebDownloader {
     public static String getHTML(final Proxy proxy, final URL url) {
         InputStream inputStream = null;
         BufferedReader dataStream = null;
-        StringBuilder sb = new StringBuilder();
+        final StringBuilder sb = new StringBuilder();
         String line;
         
         try {

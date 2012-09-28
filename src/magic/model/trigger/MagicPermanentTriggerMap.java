@@ -17,13 +17,13 @@ public class MagicPermanentTriggerMap {
         new EnumMap<MagicTriggerType,SortedSet<MagicPermanentTrigger>>(MagicTriggerType.class);
     
     public MagicPermanentTriggerMap() {
-        for (MagicTriggerType type : MagicTriggerType.values()) {
+        for (final MagicTriggerType type : MagicTriggerType.values()) {
             effects.put(type, new TreeSet<MagicPermanentTrigger>());
         }
     }
     
     public MagicPermanentTriggerMap(final MagicCopyMap copyMap, final MagicPermanentTriggerMap sourceMap) {
-        for (MagicTriggerType type : MagicTriggerType.values()) {
+        for (final MagicTriggerType type : MagicTriggerType.values()) {
             effects.put(type, new TreeSet<MagicPermanentTrigger>());
         }
         

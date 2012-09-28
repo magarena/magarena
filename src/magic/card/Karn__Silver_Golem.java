@@ -41,7 +41,7 @@ public class Karn__Silver_Golem {
             final MagicPowerToughness pt=permanent.getPowerToughness();
             final int power = permanent.getCardDefinition().getConvertedCost();
             final int toughness = permanent.getCardDefinition().getConvertedCost();
-            int score = (pt.power()-power)*2+(pt.toughness()-toughness);
+            final int score = (pt.power()-power)*2+(pt.toughness()-toughness);
             return permanent.getController() == player ? -score:score;
         }
     };

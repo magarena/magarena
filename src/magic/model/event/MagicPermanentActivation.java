@@ -74,7 +74,7 @@ public abstract class MagicPermanentActivation extends MagicActivation implement
     }
     
     @Override
-    public void change(MagicCardDefinition cdef) {
+    public void change(final MagicCardDefinition cdef) {
         cdef.addAct(this);
     }
 }

@@ -22,15 +22,15 @@ public enum MagicDeckConstructionRule {
         return text;
     }
     
-    public static List<MagicDeckConstructionRule> checkDeck(MagicDeck deck) {
-        ArrayList<MagicDeckConstructionRule> brokenRules = new ArrayList<MagicDeckConstructionRule>();
+    public static List<MagicDeckConstructionRule> checkDeck(final MagicDeck deck) {
+        final ArrayList<MagicDeckConstructionRule> brokenRules = new ArrayList<MagicDeckConstructionRule>();
         
         if(deck.size() < MIN_DECK_SIZE) {
             brokenRules.add(MinDeckSize);
         }
         
-        MagicCondensedDeck countedDeck = new MagicCondensedDeck(deck);
-        for(MagicCondensedCardDefinition countedCard : countedDeck) {
+        final MagicCondensedDeck countedDeck = new MagicCondensedDeck(deck);
+        for(final MagicCondensedCardDefinition countedCard : countedDeck) {
             if(countedCard.getNumCopies() > 4 && !countedCard.getCard().isBasic() && !countedCard.getCard().getName().equals("Relentless Rats")) {
                 brokenRules.add(FourCopyLimit);
                 break;
@@ -40,10 +40,10 @@ public enum MagicDeckConstructionRule {
         return brokenRules;
     }
     
-    public static String getRulesText(List<MagicDeckConstructionRule> rules) {
-        StringBuilder sb = new StringBuilder();
+    public static String getRulesText(final List<MagicDeckConstructionRule> rules) {
+        final StringBuilder sb = new StringBuilder();
         
-        for(MagicDeckConstructionRule rule : rules) {
+        for(final MagicDeckConstructionRule rule : rules) {
             sb.append(rule.getRuleText());
             sb.append("\n");
         }

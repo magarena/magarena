@@ -7,7 +7,7 @@ public class MagicCondensedCardDefinition {
     private int copies;
     private final MagicCardDefinition card;
     
-    public MagicCondensedCardDefinition(MagicCardDefinition card) {
+    public MagicCondensedCardDefinition(final MagicCardDefinition card) {
         this.card = card;
         copies = 1;
     }
@@ -26,7 +26,7 @@ public class MagicCondensedCardDefinition {
         }
     }
     
-    public void setNumCopies(int i) {
+    public void setNumCopies(final int i) {
         copies = i;
     }
     

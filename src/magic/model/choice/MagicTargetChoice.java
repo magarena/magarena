@@ -521,7 +521,7 @@ public class MagicTargetChoice extends MagicChoice {
         factory.put("neg target creature spell", NEG_TARGET_CREATURE_SPELL);
     }
 
-    public static MagicTargetChoice build(String arg) {
+    public static MagicTargetChoice build(final String arg) {
         if (factory.containsKey(arg)) {
             return factory.get(arg);
         } else {

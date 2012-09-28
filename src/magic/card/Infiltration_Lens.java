@@ -45,7 +45,7 @@ public class Infiltration_Lens {
                 final Object[] data,
                 final Object[] choiceResults) {
             final MagicPermanent permanent = event.getPermanent();
-            int amount = (Integer)data[0];
+            final int amount = (Integer)data[0];
             if (MagicChoice.isYesChoice(choiceResults[0])) {
                 game.doAction(new MagicDrawAction(event.getPlayer(),2));
             }        

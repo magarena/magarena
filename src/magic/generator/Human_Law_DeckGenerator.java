@@ -40,15 +40,15 @@ public class Human_Law_DeckGenerator extends DefaultDeckGenerator {
         return 2;
     }
     
-    public boolean acceptPossibleSpellCard(MagicCardDefinition card) {
+    public boolean acceptPossibleSpellCard(final MagicCardDefinition card) {
         return !card.isCreature() || card.hasSubType(MagicSubType.Human);
     }
     
-    public void addRequiredSpells(MagicCondensedDeck deck) {
+    public void addRequiredSpells(final MagicCondensedDeck deck) {
         addRequiredCards(deck, cards);
     }
     
-    public void setColors(MagicPlayerProfile profile) {
+    public void setColors(final MagicPlayerProfile profile) {
         profile.setColors(getColorText());
     }
 }

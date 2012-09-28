@@ -23,8 +23,8 @@ public class FileIO {
 
     private static String toStr(final FileInputStream stream) throws IOException {
         try {
-            FileChannel fc = stream.getChannel();
-            MappedByteBuffer bb = fc.map(FileChannel.MapMode.READ_ONLY, 0, fc.size());
+            final FileChannel fc = stream.getChannel();
+            final MappedByteBuffer bb = fc.map(FileChannel.MapMode.READ_ONLY, 0, fc.size());
             /* Instead of using default, pass in a decoder. */
             return Charset.defaultCharset().decode(bb).toString();
         } finally {
@@ -168,7 +168,7 @@ public class FileIO {
         }
     }
 
-    public static void copyFile(File sourceFile, File destFile) throws IOException {
+    public static void copyFile(final File sourceFile, final File destFile) throws IOException {
         if (!destFile.exists()) {
             destFile.createNewFile();
         }
@@ -182,7 +182,7 @@ public class FileIO {
             fOut = new FileOutputStream(destFile);
             destination = fOut.getChannel();
             long transfered = 0;
-            long bytes = source.size();
+            final long bytes = source.size();
             while (transfered < bytes) {
                 transfered += destination.transferFrom(source, 0, source.size());
                 destination.position(transfered);

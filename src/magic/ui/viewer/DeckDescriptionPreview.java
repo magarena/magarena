@@ -24,7 +24,7 @@ public class DeckDescriptionPreview extends JComponent implements PropertyChange
     private final JTextArea textArea = new JTextArea();
     private final JScrollPane scrollPane = new JScrollPane(textArea);
 
-    public DeckDescriptionPreview(JFileChooser fc) {
+    public DeckDescriptionPreview(final JFileChooser fc) {
         setPreferredSize(new Dimension(200, 50));
         setLayout(new BorderLayout());
         textArea.setEditable(false);
@@ -62,8 +62,8 @@ public class DeckDescriptionPreview extends JComponent implements PropertyChange
         textArea.setCaretPosition(0);
     }
     
-    public void propertyChange(PropertyChangeEvent e) {
-        String prop = e.getPropertyName();
+    public void propertyChange(final PropertyChangeEvent e) {
+        final String prop = e.getPropertyName();
         if (JFileChooser.SELECTED_FILE_CHANGED_PROPERTY.equals(prop)) {
             file = (File) e.getNewValue();
             if (isShowing()) {

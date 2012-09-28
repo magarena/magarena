@@ -44,7 +44,7 @@ public abstract class MagicTrigger<T> implements MagicEventAction,MagicChangeCar
     public abstract MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final T data);
     
     @Override
-    public void change(MagicCardDefinition cdef) {
+    public void change(final MagicCardDefinition cdef) {
         cdef.addTrigger(this);
     }
 }

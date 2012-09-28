@@ -754,14 +754,14 @@ public class MagicGame {
         return spellsPlayed;
     }
     
-    public void setSpellsPlayed(int spells) {
+    public void setSpellsPlayed(final int spells) {
         spellsPlayed = spells;
     }
     public boolean getCreatureDiedThisTurn() {
         return creatureDiedThisTurn;
     }
     
-    public void setCreatureDiedThisTurn(boolean died) {
+    public void setCreatureDiedThisTurn(final boolean died) {
         this.creatureDiedThisTurn = died;
     }
     
@@ -1076,7 +1076,7 @@ public class MagicGame {
         }
     }
     
-    public Collection<MagicPermanentStatic> getStatics(MagicLayer layer) {
+    public Collection<MagicPermanentStatic> getStatics(final MagicLayer layer) {
         return statics.get(layer);
     }
     

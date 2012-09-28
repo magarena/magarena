@@ -38,7 +38,7 @@ public class MagicMain {
         
         // try to set the look and feel
         try {
-            for (LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
+            for (final LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
                     UIManager.setLookAndFeel(info.getClassName());
                     break;

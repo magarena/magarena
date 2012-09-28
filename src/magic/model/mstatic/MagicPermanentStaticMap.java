@@ -17,7 +17,7 @@ public class MagicPermanentStaticMap {
         new EnumMap<MagicLayer,SortedSet<MagicPermanentStatic>>(MagicLayer.class);
     
     public MagicPermanentStaticMap() {
-        for (MagicLayer layer : MagicLayer.values()) {
+        for (final MagicLayer layer : MagicLayer.values()) {
             effects.put(layer, new TreeSet<MagicPermanentStatic>());
         }
         //changes to power and toughness due to +1/+1 and -1/-1 counters
@@ -25,7 +25,7 @@ public class MagicPermanentStaticMap {
     }
     
     public MagicPermanentStaticMap(final MagicCopyMap copyMap, final MagicPermanentStaticMap sourceMap) {
-        for (MagicLayer layer : MagicLayer.values()) {
+        for (final MagicLayer layer : MagicLayer.values()) {
             effects.put(layer, new TreeSet<MagicPermanentStatic>());
         }
         

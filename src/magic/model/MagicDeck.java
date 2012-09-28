@@ -34,7 +34,7 @@ public class MagicDeck extends ArrayList<MagicCardDefinition> {
         return description;
     }
 
-    public void setDescription(String desc) {
+    public void setDescription(final String desc) {
         this.description = desc;
     }
 }

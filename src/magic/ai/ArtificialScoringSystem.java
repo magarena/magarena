@@ -44,7 +44,7 @@ public class ArtificialScoringSystem {
         return getCardDefinitionScore(cardDefinition, 0);
     }
     
-    private static int getCardDefinitionScore(final MagicCardDefinition cardDefinition, int costFactor) {
+    private static int getCardDefinitionScore(final MagicCardDefinition cardDefinition, final int costFactor) {
         if (cardDefinition.isLand()) {
             int score=(int)(cardDefinition.getValue()*50);
             for (final MagicColor color : MagicColor.values()) {

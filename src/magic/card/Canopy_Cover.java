@@ -12,7 +12,7 @@ public class Canopy_Cover {
         public long getAbilityFlags(
             final MagicPermanent source,
             final MagicPermanent target,
-            long flags) {
+            final long flags) {
             return flags | 
                 ((source.getController().getIndex() == 0) ?
                  MagicAbility.CannotBeTheTarget1 :

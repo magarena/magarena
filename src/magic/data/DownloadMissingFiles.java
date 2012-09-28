@@ -63,7 +63,7 @@ public class DownloadMissingFiles extends ArrayList<WebDownloader> {
                     final File imageFile=new File(imagesPathFile,parts[0]);
 
                     try { //create URL
-                        WebDownloader dl = new DownloadImageFile(imageFile,new URL(parts[1]));
+                        final WebDownloader dl = new DownloadImageFile(imageFile,new URL(parts[1]));
                         if (!dl.exists()) {
                             add(dl);
                         }
@@ -97,7 +97,7 @@ public class DownloadMissingFiles extends ArrayList<WebDownloader> {
                              cardDefinition.getImageName() + CardDefinitions.CARD_IMAGE_EXT);
 
                 try { //create URL
-                    WebDownloader dl = new DownloadImageFile(imageFile,new URL(imageURL),cardDefinition);
+                    final WebDownloader dl = new DownloadImageFile(imageFile,new URL(imageURL),cardDefinition);
                     if (!dl.exists()) {
                         add(dl);
                     }

@@ -30,7 +30,7 @@ public class Recurring_Nightmare {
             "Return") {
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
-            MagicTargetChoice creatureChoice = MagicTargetChoice.SACRIFICE_CREATURE;
+            final MagicTargetChoice creatureChoice = MagicTargetChoice.SACRIFICE_CREATURE;
             return new MagicEvent[]{new MagicSacrificePermanentEvent(
                     source,
                     source.getController(),

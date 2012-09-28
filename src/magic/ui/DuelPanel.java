@@ -69,7 +69,7 @@ public class DuelPanel extends JPanel implements ActionListener {
         setLayout(springLayout);
         
         // buttons
-        JPanel buttonsPanel = new JPanel();
+        final JPanel buttonsPanel = new JPanel();
         buttonsPanel.setLayout(new BoxLayout(buttonsPanel, BoxLayout.X_AXIS));
         buttonsPanel.setOpaque(false);
         
@@ -111,7 +111,7 @@ public class DuelPanel extends JPanel implements ActionListener {
         add(buttonsPanel);
         
         // left top
-        JPanel leftPanel = new JPanel();
+        final JPanel leftPanel = new JPanel();
         leftPanel.setLayout(new BoxLayout(leftPanel, BoxLayout.Y_AXIS));
         leftPanel.setOpaque(false);
         
@@ -132,7 +132,7 @@ public class DuelPanel extends JPanel implements ActionListener {
         leftPanel.add(duelDifficultyViewer);    
         
         // add scrolling to left side
-        JScrollPane leftScrollPane = new JScrollPane(leftPanel);
+        final JScrollPane leftScrollPane = new JScrollPane(leftPanel);
         leftScrollPane.setBorder(FontsAndBorders.NO_BORDER);
         leftScrollPane.setOpaque(false);
         leftScrollPane.getViewport().setOpaque(false);
@@ -143,7 +143,7 @@ public class DuelPanel extends JPanel implements ActionListener {
         tabbedPane = new JTabbedPane(JTabbedPane.TOP);
         final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
         
-        MagicPlayerDefinition players[] = duel.getPlayers();
+        final MagicPlayerDefinition[] players = duel.getPlayers();
         cardTables = new CardTable[players.length];
         deckDescriptionViewers = new DeckDescriptionViewer[players.length];
         statsViewers = new DeckStatisticsViewer[players.length];
@@ -198,7 +198,7 @@ public class DuelPanel extends JPanel implements ActionListener {
             });
             
             // right side
-            JPanel rightPanel = new JPanel();
+            final JPanel rightPanel = new JPanel();
             rightPanel.setLayout(new BoxLayout(rightPanel, BoxLayout.Y_AXIS));
             rightPanel.setOpaque(false);
             
@@ -220,7 +220,7 @@ public class DuelPanel extends JPanel implements ActionListener {
             }
             
             // buttons right
-            JPanel buttonsRightPanel = new JPanel();
+            final JPanel buttonsRightPanel = new JPanel();
             buttonsRightPanel.setLayout(new BoxLayout(buttonsRightPanel, BoxLayout.X_AXIS));
             buttonsRightPanel.setOpaque(false);
             buttonsRightPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
@@ -233,15 +233,15 @@ public class DuelPanel extends JPanel implements ActionListener {
             cardTables[i] = new CardTable(player.getDeck(), cardViewer, generateTitle(player.getDeck()), true);
     
             // add scrolling to right side
-            JScrollPane rightScrollPane = new JScrollPane(rightPanel);
+            final JScrollPane rightScrollPane = new JScrollPane(rightPanel);
             rightScrollPane.setBorder(FontsAndBorders.NO_BORDER);
             rightScrollPane.setOpaque(false);
             rightScrollPane.getViewport().setOpaque(false);
             rightScrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
             
             // contents of tab
-            JPanel tabPanel = new JPanel();
-            SpringLayout tabLayout = new SpringLayout();
+            final JPanel tabPanel = new JPanel();
+            final SpringLayout tabLayout = new SpringLayout();
             tabPanel.setLayout(tabLayout);            
             tabPanel.add(cardTables[i]);
             tabPanel.add(rightScrollPane);
@@ -275,7 +275,7 @@ public class DuelPanel extends JPanel implements ActionListener {
         add(backgroundImage);
         
         // set sizes by defining gaps between components
-        Container contentPane = this;
+        final Container contentPane = this;
         
         // background's gaps with top left bottom and right are 0
         // (i.e., it fills the window)
@@ -318,7 +318,7 @@ public class DuelPanel extends JPanel implements ActionListener {
         
     }
 
-    String generateTitle(MagicDeck deck) {
+    String generateTitle(final MagicDeck deck) {
         return "Deck (" + deck.getName() + ") - " + deck.size() + " cards";
     }
     
@@ -334,7 +334,7 @@ public class DuelPanel extends JPanel implements ActionListener {
         return duel.getPlayers()[tabbedPane.getSelectedIndex()];
     }
     
-    public void setSelectedTab(int tab) {
+    public void setSelectedTab(final int tab) {
         tabbedPane.setSelectedIndex(tab);
     }
     

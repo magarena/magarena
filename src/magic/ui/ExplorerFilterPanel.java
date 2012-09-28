@@ -127,7 +127,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         colorsPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
         colorPopup.add(colorsPanel);
         
-        ButtonGroup colorFilterBg = new ButtonGroup();
+        final ButtonGroup colorFilterBg = new ButtonGroup();
         colorFilterChoices = new JRadioButton[FILTER_CHOICES.length];
         for (int i = 0; i < FILTER_CHOICES.length; i++) {
             colorFilterChoices[i] = new JRadioButton(FILTER_CHOICES[i]);
@@ -198,12 +198,12 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         filterPanel.setPreferredSize(BUTTON_HOLDER_PANEL_SIZE);
         add(filterPanel);
         
-        JButton selectButton = new JButton(FILTER_BUTTON_TEXT);
+        final JButton selectButton = new JButton(FILTER_BUTTON_TEXT);
         selectButton.setFont(FontsAndBorders.FONT1);
         selectButton.setPreferredSize(BUTTON_SIZE);
         filterPanel.add(selectButton, BorderLayout.CENTER);
         
-        ButtonControlledPopup pop = new ButtonControlledPopup(frame, selectButton, HIDE_BUTTON_TEXT, FILTER_BUTTON_TEXT);
+        final ButtonControlledPopup pop = new ButtonControlledPopup(frame, selectButton, HIDE_BUTTON_TEXT, FILTER_BUTTON_TEXT);
         pop.setLayout(new BoxLayout(pop, BoxLayout.Y_AXIS));
         selectButton.addActionListener(new PopupCloser(pop));
         return pop;
@@ -212,7 +212,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     private class PopupCloser implements ActionListener {
         private final ButtonControlledPopup p;
         
-        public PopupCloser(ButtonControlledPopup p) {
+        public PopupCloser(final ButtonControlledPopup p) {
             this.p = p;
         }
     
@@ -238,7 +238,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     }
     
     private void populateCheckboxPopup(final ButtonControlledPopup popup, final Object[] checkboxValues, final JCheckBox[] newCheckboxes, final JRadioButton[] newFilterButtons, final boolean hideAND) {
-        JPanel checkboxesPanel = new JPanel(new GridLayout(newCheckboxes.length, 1));
+        final JPanel checkboxesPanel = new JPanel(new GridLayout(newCheckboxes.length, 1));
         checkboxesPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
         checkboxesPanel.setOpaque(false);        
         for (int i=0;i<checkboxValues.length;i++) {
@@ -251,7 +251,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
             checkboxesPanel.add(newCheckboxes[i]);
         }
         
-        JScrollPane scrollPane = new JScrollPane(checkboxesPanel);
+        final JScrollPane scrollPane = new JScrollPane(checkboxesPanel);
         scrollPane.setAlignmentX(Component.LEFT_ALIGNMENT);
         scrollPane.setBorder(FontsAndBorders.DOWN_BORDER);
         scrollPane.setOpaque(false);
@@ -259,7 +259,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         scrollPane.setPreferredSize(POPUP_CHECKBOXES_SIZE);
         popup.add(scrollPane);
         
-        ButtonGroup bg = new ButtonGroup();
+        final ButtonGroup bg = new ButtonGroup();
         for (int i = 0; i < FILTER_CHOICES.length; i++) {
             newFilterButtons[i] = new JRadioButton(FILTER_CHOICES[i]);
             newFilterButtons[i].addActionListener(this);
@@ -318,7 +318,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         // type
         if (!filterCheckboxes(cardDefinition, typeCheckBoxes, typeFilterChoices, 
             new CardChecker() {
-                public boolean checkCard(MagicCardDefinition card, int i) {
+                public boolean checkCard(final MagicCardDefinition card, final int i) {
                     return card.hasType((MagicType)MagicType.FILTER_TYPES.toArray()[i]);
                 }
             })) {
@@ -328,7 +328,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         // color
         if (!filterCheckboxes(cardDefinition, colorCheckBoxes, colorFilterChoices, 
             new CardChecker() {
-                public boolean checkCard(MagicCardDefinition card, int i) {
+                public boolean checkCard(final MagicCardDefinition card, final int i) {
                     return card.hasColor(MagicColor.values()[i]);
                 }
             })) {
@@ -338,7 +338,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         // cost
         if (!filterCheckboxes(cardDefinition, costCheckBoxes, costFilterChoices, 
             new CardChecker() {
-                public boolean checkCard(MagicCardDefinition card, int i) {
+                public boolean checkCard(final MagicCardDefinition card, final int i) {
                     return card.hasConvertedCost(Integer.parseInt(COST_VALUES[i]));
                 }
             })) {
@@ -348,7 +348,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         // subtype
         if (!filterCheckboxes(cardDefinition, subtypeCheckBoxes, subtypeFilterChoices, 
             new CardChecker() {
-                public boolean checkCard(MagicCardDefinition card, int i) {
+                public boolean checkCard(final MagicCardDefinition card, final int i) {
                     return card.hasSubType(MagicSubType.values()[i]);
                 }
             })) {
@@ -358,7 +358,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         // rarity
         if (!filterCheckboxes(cardDefinition, rarityCheckBoxes, rarityFilterChoices, 
             new CardChecker() {
-                public boolean checkCard(MagicCardDefinition card, int i) {
+                public boolean checkCard(final MagicCardDefinition card, final int i) {
                     return card.isRarity(MagicRarity.values()[i]);
                 }
             })) {
@@ -368,7 +368,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         return true;
     }
     
-    private boolean filterCheckboxes(final MagicCardDefinition cardDefinition, final JCheckBox[] checkboxes, final JRadioButton[] filterButtons, CardChecker func) {
+    private boolean filterCheckboxes(final MagicCardDefinition cardDefinition, final JCheckBox[] checkboxes, final JRadioButton[] filterButtons, final CardChecker func) {
         boolean somethingSelected = false;
         boolean resultOR = false;
         boolean resultAND = true;
@@ -428,7 +428,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         disableUpdate = false;
     }
     
-    private void unselectFilterSet(JCheckBox boxes[], JRadioButton filterButtons[]) {
+    private void unselectFilterSet(final JCheckBox[] boxes, final JRadioButton[] filterButtons) {
         // uncheck all checkboxes
         for (int i = 0; i < boxes.length; i++){
             boxes[i].setSelected(false);
