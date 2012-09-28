@@ -36,7 +36,7 @@ public class Avenger_of_Zendikar {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
             int amount = player.getNrOfPermanentsWithType(MagicType.Land);
@@ -65,7 +65,7 @@ public class Avenger_of_Zendikar {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 final Collection<MagicTarget> targets = game.filterTargets(

@@ -30,8 +30,8 @@ public class MagicDuel {
     
     private final DuelConfig configuration;
     private final History history;
-    private MagicPlayerDefinition playerDefinitions[];
-    private MagicAI ais[];
+    private MagicPlayerDefinition[] playerDefinitions;
+    private MagicAI[] ais;
     private int opponentIndex;
     private int gameNr;
     private int gamesPlayed;
@@ -161,7 +161,7 @@ public class MagicDuel {
         final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
         final List<Integer> avatars=getAvatarIndices(theme.getNumberOfAvatars());
 
-        final MagicPlayerDefinition players[]=new MagicPlayerDefinition[2];
+        final MagicPlayerDefinition[] players=new MagicPlayerDefinition[2];
 
         final int playerFace=configuration.getAvatar()%theme.getNumberOfAvatars();
         final MagicPlayerDefinition player=new MagicPlayerDefinition(configuration.getName(),false,configuration.getPlayerProfile(),playerFace);
@@ -212,7 +212,7 @@ public class MagicDuel {
         return playerDefinitions;
     }
     
-    public void setPlayers(final MagicPlayerDefinition aPlayerDefinitions[]) {
+    public void setPlayers(final MagicPlayerDefinition[] aPlayerDefinitions) {
         this.playerDefinitions=aPlayerDefinitions;
     }
     

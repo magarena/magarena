@@ -31,10 +31,10 @@ import java.util.List;
 public class MagicEvent implements MagicCopyable {
 
     public static final MagicSource NO_SOURCE = MagicCard.NONE;
-    public static final Object NO_CHOICE_RESULTS[] = new Object[0];
-    public static final MagicEvent NO_EVENTS[] = new MagicEvent[0];
+    public static final Object[] NO_CHOICE_RESULTS = new Object[0];
+    public static final MagicEvent[] NO_EVENTS = new MagicEvent[0];
     
-    private static final Object NO_DATA[] = new Object[0];
+    private static final Object[] NO_DATA = new Object[0];
     private static final MagicChoice NO_CHOICES = MagicChoice.NONE;
     private static final MagicEventAction NO_ACTION = new MagicEventAction() {
         public void executeEvent(
@@ -75,7 +75,7 @@ public class MagicEvent implements MagicCopyable {
             final MagicPlayer player,
             final MagicChoice choice,
             final MagicTargetPicker targetPicker,
-            final Object data[],
+            final Object[] data,
             final MagicEventAction action,
             final String description) {
         this.source=source;
@@ -91,7 +91,7 @@ public class MagicEvent implements MagicCopyable {
             final MagicSource source,
             final MagicChoice choice,
             final MagicTargetPicker targetPicker,
-            final Object data[],
+            final Object[] data,
             final MagicEventAction action,
             final String description) {
         this(source,source.getController(),choice,targetPicker,data,action,description);
@@ -120,7 +120,7 @@ public class MagicEvent implements MagicCopyable {
             final MagicSource source,
             final MagicPlayer player,
             final MagicChoice choice,
-            final Object data[],
+            final Object[] data,
             final MagicEventAction action,
             final String description) {
         this(source,player,choice,MagicDefaultTargetPicker.create(),data,action,description);
@@ -129,7 +129,7 @@ public class MagicEvent implements MagicCopyable {
     public MagicEvent(
             final MagicSource source,
             final MagicChoice choice,
-            final Object data[],
+            final Object[] data,
             final MagicEventAction action,
             final String description) {
         this(source,source.getController(),choice,MagicDefaultTargetPicker.create(),data,action,description);
@@ -155,7 +155,7 @@ public class MagicEvent implements MagicCopyable {
     public MagicEvent(
             final MagicSource source,
             final MagicPlayer player,
-            final Object data[],
+            final Object[] data,
             final MagicEventAction action,
             final String description) {
         this(source,player,NO_CHOICES,MagicDefaultTargetPicker.create(),data,action,description);
@@ -163,7 +163,7 @@ public class MagicEvent implements MagicCopyable {
     
     public MagicEvent(
             final MagicSource source,
-            final Object data[],
+            final Object[] data,
             final MagicEventAction action,
             final String description) {
         this(source,source.getController(),NO_CHOICES,MagicDefaultTargetPicker.create(),data,action,description);
@@ -269,7 +269,7 @@ public class MagicEvent implements MagicCopyable {
         return data;
     }
     
-    public final String getDescription(final Object choiceResults[]) {
+    public final String getDescription(final Object[] choiceResults) {
         return MagicMessage.replaceChoices(description,choiceResults);
     }
 
@@ -281,7 +281,7 @@ public class MagicEvent implements MagicCopyable {
         return hasChoice()?choice.getDescription():"";
     }
     
-    private final MagicTarget getTarget(final MagicGame game,final Object choiceResults[],final int index) {
+    private final MagicTarget getTarget(final MagicGame game,final Object[] choiceResults,final int index) {
         final MagicTargetChoice targetChoice=getTargetChoice();
         final MagicTarget target=(MagicTarget)choiceResults[index];
         if (game.isLegalTarget(player,source,targetChoice,target)) {
@@ -293,7 +293,7 @@ public class MagicEvent implements MagicCopyable {
     
     public final boolean processTarget(
             final MagicGame game,
-            final Object choiceResults[],
+            final Object[] choiceResults,
             final int index,
             final MagicTargetAction effect
             ) {
@@ -308,7 +308,7 @@ public class MagicEvent implements MagicCopyable {
     
     public final boolean processTargetPermanent(
             final MagicGame game,
-            final Object choiceResults[],
+            final Object[] choiceResults,
             final int index,
             final MagicPermanentAction effect
             ) {
@@ -323,7 +323,7 @@ public class MagicEvent implements MagicCopyable {
 
     public final boolean processTargetCardOnStack(
             final MagicGame game,
-            final Object choiceResults[],
+            final Object[] choiceResults,
             final int index,
             final MagicCardOnStackAction effect
             ) {
@@ -338,7 +338,7 @@ public class MagicEvent implements MagicCopyable {
     
     public final boolean processTargetCard(
             final MagicGame game,
-            final Object choiceResults[],
+            final Object[] choiceResults,
             final int index,
             final MagicCardAction effect
             ) {
@@ -353,7 +353,7 @@ public class MagicEvent implements MagicCopyable {
 
     public final boolean processTargetPlayer(
             final MagicGame game,
-            final Object choiceResults[],
+            final Object[] choiceResults,
             final int index,
             final MagicPlayerAction effect
             ) {
@@ -369,7 +369,7 @@ public class MagicEvent implements MagicCopyable {
     static final void payManaCost(
             final MagicGame game,
             final MagicPlayer player,
-            final Object choiceResults[],
+            final Object[] choiceResults,
             final int index) {
         final MagicPayManaCostResult result=(MagicPayManaCostResult)choiceResults[index];
         // Result can be null when paying cost is optional.
@@ -380,14 +380,14 @@ public class MagicEvent implements MagicCopyable {
         }
     }
     
-    final void payManaCost(final MagicGame game,final MagicPlayer aPlayer,final Object choiceResults[]) {
+    final void payManaCost(final MagicGame game,final MagicPlayer aPlayer,final Object[] choiceResults) {
         final int manaIndex=getManaChoiceResultIndex();
         if (manaIndex>=0) {
             payManaCost(game,aPlayer,choiceResults,manaIndex);
         }
     }
     
-    public final void executeEvent(final MagicGame game,final Object choiceResults[]) {
+    public final void executeEvent(final MagicGame game,final Object[] choiceResults) {
         action.executeEvent(game,this,data,choiceResults);
         //move card to move location that is not play 
         if (source instanceof MagicCardOnStack &&

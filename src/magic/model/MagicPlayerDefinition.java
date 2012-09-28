@@ -57,8 +57,8 @@ public class MagicPlayerDefinition {
                 
     private void addBasicLandsToDeck() {
         // Calculate statistics per color.
-        final int colorCount[]=new int[MagicColor.NR_COLORS];
-        final int colorSource[]=new int[MagicColor.NR_COLORS];
+        final int[] colorCount=new int[MagicColor.NR_COLORS];
+        final int[] colorSource=new int[MagicColor.NR_COLORS];
         for (final MagicCardDefinition cardDefinition : deck) {
             if (cardDefinition.isLand()) {
                 for (final MagicColor color : MagicColor.values()) {

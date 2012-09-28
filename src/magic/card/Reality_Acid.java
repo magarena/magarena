@@ -25,7 +25,7 @@ public class Reality_Acid {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPermanent permanent = (MagicPermanent)data[0];
             game.doAction(new MagicSacrificeAction(permanent));

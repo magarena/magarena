@@ -44,7 +44,7 @@ public class ThemeFactory {
         themes.add(new DefaultTheme("granite",IconImages.GRANITE,IconImages.GRANITE2,Color.BLACK));
         themes.add(new DefaultTheme("opal",IconImages.OPAL,IconImages.OPAL2,Color.BLUE));
         
-        final File files[]=new File(MagicMain.getModsPath()).listFiles(THEME_FILE_FILTER);
+        final File[] files=new File(MagicMain.getModsPath()).listFiles(THEME_FILE_FILTER);
         if (files!=null) {
             for (final File file : files) {
                 
@@ -66,7 +66,7 @@ public class ThemeFactory {
     
     public String[] getThemeNames() {
         
-        final String names[]=new String[themes.size()];
+        final String[] names=new String[themes.size()];
         for (int index=0;index<names.length;index++) {
             
             names[index]=themes.get(index).getName();

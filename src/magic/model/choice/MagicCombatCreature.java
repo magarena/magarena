@@ -19,7 +19,7 @@ public class MagicCombatCreature {
     public final int power;
     public final int lethalDamage;
     public final boolean normalDamage;
-    public MagicCombatCreature candidateBlockers[] = new MagicCombatCreature[0];
+    public MagicCombatCreature[] candidateBlockers = new MagicCombatCreature[0];
     int attackerScore=0;
     private final long flags;
     

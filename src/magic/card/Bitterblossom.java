@@ -25,7 +25,7 @@ public class Bitterblossom {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPlayer player=event.getPlayer();
             game.doAction(new MagicChangeLifeAction(player,-1));

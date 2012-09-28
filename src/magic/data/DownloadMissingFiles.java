@@ -58,7 +58,7 @@ public class DownloadMissingFiles extends ArrayList<WebDownloader> {
                     System.err.println("WARNING. Unable to create " + imagesPathFile);
                 }
             } else {
-                final String parts[]=line.trim().split(";");
+                final String[] parts=line.trim().split(";");
                 if (parts.length==2&&!parts[1].isEmpty()) {
                     final File imageFile=new File(imagesPathFile,parts[0]);
 

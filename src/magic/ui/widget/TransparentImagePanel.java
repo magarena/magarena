@@ -19,8 +19,8 @@ public class TransparentImagePanel extends JPanel {
             rescaleOp=null;
         } else {
             setOpaque(false);
-            final float scales[]=new float[]{1.0f,1.0f,1.0f,opacity};
-            final float offsets[]=new float[4];
+            final float[] scales=new float[]{1.0f,1.0f,1.0f,opacity};
+            final float[] offsets=new float[4];
             rescaleOp=new RescaleOp(scales, offsets, null);
         }
     }

@@ -21,7 +21,7 @@ public class PlayerViewer extends JPanel implements ChoiceViewer {
 
     private static final long serialVersionUID = 1L;
 
-    private static final String ICON_NAMES[]={
+    private static final String[] ICON_NAMES={
         Theme.ICON_LIFE,Theme.ICON_PREVENT,Theme.ICON_LAND,
         Theme.ICON_HAND,Theme.ICON_LIBRARY,Theme.ICON_GRAVEYARD
     };
@@ -31,7 +31,7 @@ public class PlayerViewer extends JPanel implements ChoiceViewer {
     private final boolean opponent;
     private final PanelButton avatarButton;
     private final PlayerAvatarPanel avatarPanel;
-    private final JLabel labels[];
+    private final JLabel[] labels;
     private final JPanel labelsPanel;
     private final ImageIcon preventIcon;
     private final ImageIcon poisonIcon;

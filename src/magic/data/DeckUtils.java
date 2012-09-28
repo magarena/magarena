@@ -36,7 +36,7 @@ public class DeckUtils {
         }
     };
     
-    private static final String CARD_TYPES[]={"creatures","spells","lands"};
+    private static final String[] CARD_TYPES={"creatures","spells","lands"};
     
     public static String getDeckFolder() {
         return MagicMain.getGamePath()+File.separator+"decks";
@@ -115,7 +115,7 @@ public class DeckUtils {
         }
 
         final Scanner sc = new Scanner(content);
-        final int colorCount[] = new int[MagicColor.NR_COLORS];
+        final int[] colorCount = new int[MagicColor.NR_COLORS];
         final MagicDeck deck = player.getDeck();
         final MagicDeck unsupported = new MagicDeck();
         
@@ -208,7 +208,7 @@ public class DeckUtils {
     }
     
     private static void retrieveDeckFiles(final File folder,final List<File> deckFiles) {
-        final File files[]=folder.listFiles();
+        final File[] files=folder.listFiles();
         for (final File file : files) {
             
             if (file.isDirectory()) {

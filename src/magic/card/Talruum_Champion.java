@@ -42,7 +42,7 @@ public class Talruum_Champion {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPermanentList plist = (MagicPermanentList)data[0];
             for (final MagicPermanent blocker : plist) {
@@ -68,7 +68,7 @@ public class Talruum_Champion {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicAddStaticAction((MagicPermanent)data[0],AB));
         }

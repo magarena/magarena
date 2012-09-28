@@ -31,7 +31,7 @@ public class The_Rack {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
             final int amount = 3 - player.getHandSize();

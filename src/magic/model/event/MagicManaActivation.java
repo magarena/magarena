@@ -12,10 +12,10 @@ import java.util.List;
 public abstract class MagicManaActivation implements MagicChangeCardDefinition {
     
     private final List<MagicManaType> manaTypes;
-    private final MagicCondition conditions[];
+    private final MagicCondition[] conditions;
     private final int weight;
 
-    public MagicManaActivation(final List<MagicManaType> manaTypes, final MagicCondition conditions[], final int weight) {
+    public MagicManaActivation(final List<MagicManaType> manaTypes, final MagicCondition[] conditions, final int weight) {
         this.manaTypes=manaTypes;
         this.conditions=conditions;
         this.weight=weight;

@@ -20,10 +20,10 @@ public class MagicManaCost {
 
     private static final Pattern PATTERN=Pattern.compile("\\{[A-Z\\d/]+\\}");
 
-    private static final int SINGLE_PENALTY[]={0,1,1,3,6,9};
-    private static final int DOUBLE_PENALTY[]={0,0,1,2,4,6};
+    private static final int[] SINGLE_PENALTY={0,1,1,3,6,9};
+    private static final int[] DOUBLE_PENALTY={0,0,1,2,4,6};
     
-    private static final ImageIcon COLORLESS_ICONS[]={
+    private static final ImageIcon[] COLORLESS_ICONS={
         IconImages.COST_ZERO,
         IconImages.COST_ONE,
         IconImages.COST_TWO,
@@ -124,7 +124,7 @@ public class MagicManaCost {
     public static final MagicManaCost WHITE_OR_BLACK_WHITE_OR_BLACK=MagicManaCost.create("{W/B}{W/B}");
 
     private final String costText;
-    private final int amounts[];
+    private final int[] amounts;
     private final int converted;
     private final int XCount;
     private final List<MagicCostManaType> order;
@@ -136,8 +136,8 @@ public class MagicManaCost {
         amounts = new int[MagicCostManaType.NR_OF_TYPES];
         order = new ArrayList<MagicCostManaType>();
 
-        final int XCountArr[] = {0}; 
-        final int convertedArr[] = {0};
+        final int[] XCountArr = {0};
+        final int[] convertedArr = {0};
 
         final Matcher matcher = PATTERN.matcher(costText);
         while (matcher.find()) {
@@ -150,7 +150,7 @@ public class MagicManaCost {
         //assert getCanonicalText().equals(costText) : "canonical: " + getCanonicalText() + " != cost: " + costText;
     }
     
-    private void addType(final MagicCostManaType type,final int amount,final int convertedArr[]) {
+    private void addType(final MagicCostManaType type,final int amount,final int[] convertedArr) {
         convertedArr[0] += amount;
         amounts[type.ordinal()] += amount;
         if (!order.contains(type)) {
@@ -158,7 +158,7 @@ public class MagicManaCost {
         }
     }
     
-    private void addType(final String typeText, final int XCountArr[], final int convertedArr[]) {
+    private void addType(final String typeText, final int[] XCountArr, final int[] convertedArr) {
         final String symbol = typeText.substring(1, typeText.length() - 1);
         if (symbol.equals("X")) {
             XCountArr[0]++;
@@ -338,7 +338,7 @@ public class MagicManaCost {
     }
     
     int getCostScore(final MagicPlayerProfile profile) {
-        final int singleCounts[]=new int[MagicManaType.NR_OF_TYPES];
+        final int[] singleCounts=new int[MagicManaType.NR_OF_TYPES];
         int doubleCount=0;
         int maxSingleCount=0;
         for (final MagicCostManaType type : order) {
@@ -346,7 +346,7 @@ public class MagicManaCost {
             if (type == MagicCostManaType.Colorless || amount == 0) {
                 continue;
             }
-            final MagicManaType profileTypes[] = type.getTypes(profile);
+            final MagicManaType[] profileTypes = type.getTypes(profile);
             switch (profileTypes.length) {
                 case 0:
                     return 0;

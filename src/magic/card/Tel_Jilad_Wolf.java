@@ -33,7 +33,7 @@ public class Tel_Jilad_Wolf {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeTurnPTAction(
                 event.getPermanent(),

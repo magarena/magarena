@@ -14,7 +14,7 @@ public class MagicDeclareAttackersResult extends ArrayList<MagicPermanent> imple
     
     MagicDeclareAttackersResult() {}
 
-    MagicDeclareAttackersResult(final MagicPermanent attackers[],final int length,final int position,final int score) {
+    MagicDeclareAttackersResult(final MagicPermanent[] attackers,final int length,final int position,final int score) {
         for (int index=0;index<length;index++) {
             add(attackers[index]);
         }

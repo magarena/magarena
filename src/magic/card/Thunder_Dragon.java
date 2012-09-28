@@ -27,7 +27,7 @@ public class Thunder_Dragon {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final MagicSource source=event.getSource();
             final Collection<MagicTarget> creatures=

@@ -2,11 +2,11 @@ package magic.ai;
 
 public class VegasScore {
 
-    private final Object choiceResults[];
+    private final Object[] choiceResults;
     private long totalScore=0;
     private int count=0;
     
-    VegasScore(final Object choiceResults[]) {
+    VegasScore(final Object[] choiceResults) {
         this.choiceResults=choiceResults;
     }
     

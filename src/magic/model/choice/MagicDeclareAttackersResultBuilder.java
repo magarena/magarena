@@ -14,7 +14,7 @@ import java.util.SortedSet;
 public class MagicDeclareAttackersResultBuilder {
 
     private static final Collection<Object> EMPTY_RESULT=Collections.<Object>singletonList(new MagicDeclareAttackersResult());
-    private static final int MAX_ATTACKERS[]={5,4,3,2,1,0,0,0};
+    private static final int[] MAX_ATTACKERS={5,4,3,2,1,0,0,0};
 
     static Collection<Object> buildResults(final MagicGame game, final MagicPlayer attackingPlayer) {
         final MagicPlayer defendingPlayer = attackingPlayer.getOpponent();
@@ -29,7 +29,7 @@ public class MagicDeclareAttackersResultBuilder {
         // Remove creatures that have zero power.
         // Remove creatures that must attack if able and add them to result.
         final SortedSet<MagicCombatCreature> attackersSet=creatureBuilder.getAttackers();
-        final MagicPermanent current[]=new MagicPermanent[attackersSet.size()];
+        final MagicPermanent[] current=new MagicPermanent[attackersSet.size()];
         int count=0;
         for (final Iterator<MagicCombatCreature> iterator=attackersSet.iterator();iterator.hasNext();) {
             final MagicCombatCreature attacker=iterator.next();             
@@ -65,11 +65,11 @@ public class MagicDeclareAttackersResultBuilder {
             attackersSet.remove(attackersSet.first());
         }
 
-        final MagicCombatCreature attackers[]=new MagicCombatCreature[size];
+        final MagicCombatCreature[] attackers=new MagicCombatCreature[size];
         attackersSet.toArray(attackers);
         
         // Build all possible combinations of attackers.
-        final int step[]=new int[size];
+        final int[] step=new int[size];
         int index=0;
         while (index>=0) {
             if (index==size) {

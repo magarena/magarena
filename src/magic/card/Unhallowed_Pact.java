@@ -29,7 +29,7 @@ public class Unhallowed_Pact {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final MagicCard card = (MagicCard)data[0];
             if (card.getOwner().getGraveyard().contains(card)) {

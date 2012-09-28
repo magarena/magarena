@@ -9,7 +9,7 @@ public enum MagicAIImpl {
     RND("random", new RandomAI()),
     ;
     
-    private static final MagicAIImpl SUPPORTED_AIS[] = new MagicAIImpl[]{MMAB, MMABC, MCTS, VEGAS, RND};
+    private static final MagicAIImpl[] SUPPORTED_AIS = new MagicAIImpl[]{MMAB, MMABC, MCTS, VEGAS, RND};
     
     private final String name;
     private final MagicAI ai;
@@ -37,7 +37,7 @@ public enum MagicAIImpl {
     }
     
     public static String[] getNames() {
-        final String names[]=new String[SUPPORTED_AIS.length];
+        final String[] names=new String[SUPPORTED_AIS.length];
         int index=0;
         for (final MagicAIImpl ai : SUPPORTED_AIS) {
             names[index++]=ai.getName();

@@ -26,7 +26,7 @@ public class MagicMain {
          File.separatorChar +
          GAME_FOLDER;
     
-    public static void main(final String args[]) {
+    public static void main(final String[] args) {
         // setup the handler for any uncaught exception
         Thread.setDefaultUncaughtExceptionHandler(new magic.model.MagicGameReport());
         

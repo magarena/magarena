@@ -152,7 +152,7 @@ public class DeckViewer extends JPanel {
             
             setOpaque(false);
             setLayout(new GridLayout(1,3));
-            final JLabel colorLabels[]=new JLabel[3];
+            final JLabel[] colorLabels=new JLabel[3];
             for (int i=0;i<colorLabels.length;i++) {
                 
                 colorLabels[i]=new JLabel();

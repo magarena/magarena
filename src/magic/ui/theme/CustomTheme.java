@@ -69,7 +69,7 @@ public class CustomTheme extends AbstractTheme {
         if ("value".equals(type)) {
             typeValue=Integer.parseInt(value);
         } else if ("color".equals(type)) {
-            final String parts[]=value.split(",");
+            final String[] parts=value.split(",");
             final int r=Integer.parseInt(parts[0],16);
             final int g=Integer.parseInt(parts[1],16);
             final int b=Integer.parseInt(parts[2],16);

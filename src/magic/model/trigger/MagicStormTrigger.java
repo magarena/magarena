@@ -37,7 +37,7 @@ public class MagicStormTrigger extends MagicWhenSpellIsCastTrigger {
     public void executeEvent(
             final MagicGame game,
             final MagicEvent event,
-            final Object data[],
+            final Object[] data,
             final Object[] choiceResults) {
         final int count = (Integer)data[0];
         for (int i = 0; i < count; i++) {

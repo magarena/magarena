@@ -29,7 +29,7 @@ public class Endless_Ranks_of_the_Dead {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
             final Collection<MagicTarget> targets =

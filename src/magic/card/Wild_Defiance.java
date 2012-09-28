@@ -50,7 +50,7 @@ public class Wild_Defiance {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeTurnPTAction((MagicPermanent)data[0],3,3));
         }

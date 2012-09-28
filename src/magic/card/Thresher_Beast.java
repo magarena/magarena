@@ -27,7 +27,7 @@ public class Thresher_Beast {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPlayer opponent = event.getPlayer().getOpponent();
             if (opponent.controlsPermanentWithType(MagicType.Land)) {

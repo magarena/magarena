@@ -2,12 +2,12 @@ package magic.ai;
 
 public class ArtificialChoiceResults {
     
-    final Object choiceResults[];
+    final Object[] choiceResults;
     ArtificialScore aiScore=ArtificialScore.INVALID_SCORE;
     int worker=-1;
     int gameCount=1;
 
-    ArtificialChoiceResults(final Object choiceResults[]) {
+    ArtificialChoiceResults(final Object[] choiceResults) {
         this.choiceResults=choiceResults;
     }
     

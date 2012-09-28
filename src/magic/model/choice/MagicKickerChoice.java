@@ -110,7 +110,7 @@ public class MagicKickerChoice extends MagicChoice {
         final List<Object[]> choiceResultsList=new ArrayList<Object[]>();
         final int maximumCount=getMaximumCount(game,player);
         for (int count=0;count<=maximumCount;count++) {
-            final Object choiceResults[]=new Object[3];
+            final Object[] choiceResults=new Object[3];
             choiceResults[1]=count;
             
             final Collection<Object> manaOptions;
@@ -168,12 +168,12 @@ public class MagicKickerChoice extends MagicChoice {
             count=0;
         }
 
-        final Object choiceResults[]=new Object[3];
+        final Object[] choiceResults=new Object[3];
         choiceResults[1]=count;
         // Pay kicker.
         if (count>0) {
             final MagicPayManaCostChoice manaChoice=new MagicPayManaCostChoice(getCost(count));
-            final Object manaChoiceResults[]=manaChoice.getPlayerChoiceResults(controller,game,player,source);
+            final Object[] manaChoiceResults=manaChoice.getPlayerChoiceResults(controller,game,player,source);
             if (manaChoiceResults==UNDO_CHOICE_RESULTS) {
                 return UNDO_CHOICE_RESULTS;
             }            
@@ -182,7 +182,7 @@ public class MagicKickerChoice extends MagicChoice {
 
         // Pick other choice.
         if (otherChoice.isValid()) {
-            final Object otherChoiceResults[]=otherChoice.getPlayerChoiceResults(controller,game,player,source);
+            final Object[] otherChoiceResults=otherChoice.getPlayerChoiceResults(controller,game,player,source);
             if (otherChoiceResults==UNDO_CHOICE_RESULTS) {
                 return UNDO_CHOICE_RESULTS;
             }

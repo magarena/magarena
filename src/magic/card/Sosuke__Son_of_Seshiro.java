@@ -49,7 +49,7 @@ public class Sosuke__Son_of_Seshiro {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeStateAction((MagicPermanent)data[0],MagicPermanentState.DestroyAtEndOfCombat,true));
         }

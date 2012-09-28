@@ -28,7 +28,7 @@ public class Jotun_Owl_Keeper {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             int amount = (Integer)data[0];
             for (;amount>0;amount--) {

@@ -27,7 +27,7 @@ public class Mycoloth {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPermanent permanent=event.getPermanent();
             final MagicPlayer player=event.getPlayer();

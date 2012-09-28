@@ -30,7 +30,7 @@ public class Ashmouth_Hound {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPermanentList plist = (MagicPermanentList)data[0];
             for (final MagicPermanent blocker : plist) {
@@ -56,7 +56,7 @@ public class Ashmouth_Hound {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final MagicDamage damage = new MagicDamage(
                     event.getSource(),

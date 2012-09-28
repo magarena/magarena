@@ -40,7 +40,7 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
             public void executeEvent(
                     final MagicGame game, 
                     final MagicEvent event, 
-                    final Object data[], 
+                    final Object[] data,
                     final Object[] choiceResults) {
                 action.executeEvent(game, event, data, choiceResults);
             }

@@ -31,7 +31,7 @@ public class Mark_of_the_Oni {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicSacrificeAction((MagicPermanent)event.getSource()));
         }

@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class MagicCardCounter {
 
-    private final int counts[];
+    private final int[] counts;
     
     MagicCardCounter() {
         counts=new int[CardDefinitions.getNumberOfCards()];

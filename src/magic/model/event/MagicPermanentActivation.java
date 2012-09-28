@@ -16,7 +16,7 @@ public abstract class MagicPermanentActivation extends MagicActivation implement
     private static int currentIndex = 1;
 
     public MagicPermanentActivation(
-            final MagicCondition conditions[],
+            final MagicCondition[] conditions,
             final MagicActivationHints hints,
             final String txt) {
         super(currentIndex++,conditions,hints,txt);
@@ -68,7 +68,7 @@ public abstract class MagicPermanentActivation extends MagicActivation implement
     public void executeEvent(
             final MagicGame game, 
             final MagicEvent event, 
-            final Object data[], 
+            final Object[] data,
             final Object[] choiceResults) {
         throw new RuntimeException(getClass() + " did not override executeEvent");
     }

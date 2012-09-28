@@ -31,7 +31,7 @@ public class Goldnight_Commander {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final Collection<MagicTarget> targets = game.filterTargets(
                     event.getPlayer(),

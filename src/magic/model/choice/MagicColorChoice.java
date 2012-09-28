@@ -47,7 +47,7 @@ public class MagicColorChoice extends MagicChoice {
     private static Collection<Object> getArtificialMostOptions(final MagicGame game,final MagicPlayer player) {
 
         final Collection<MagicTarget> targets=game.filterTargets(player,MagicTargetFilter.TARGET_PERMANENT);
-        final int counts[]=new int[MagicColor.NR_COLORS];
+        final int[] counts=new int[MagicColor.NR_COLORS];
         for (final MagicTarget target : targets) {
             
             final MagicPermanent permanent=(MagicPermanent)target;
@@ -76,7 +76,7 @@ public class MagicColorChoice extends MagicChoice {
     private static Collection<Object> getArtificialUnsummonOptions(final MagicGame game,final MagicPlayer player) {
 
         final Collection<MagicTarget> targets=game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE);
-        final int scores[]=new int[MagicColor.NR_COLORS];
+        final int[] scores=new int[MagicColor.NR_COLORS];
         for (final MagicTarget target : targets) {
             
             final MagicPermanent permanent=(MagicPermanent)target;

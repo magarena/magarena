@@ -80,7 +80,7 @@ public enum MagicCostManaType {
     
     public MagicManaType[] getTypes(final MagicPlayerProfile profile) {
         int count=0;
-        final MagicManaType profileTypes[]=new MagicManaType[types.size()];
+        final MagicManaType[] profileTypes=new MagicManaType[types.size()];
         for (final MagicManaType manaType : types) {
             if (profile.allowsManaType(manaType)) {
                 profileTypes[count++]=manaType;

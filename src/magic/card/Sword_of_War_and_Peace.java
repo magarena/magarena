@@ -29,7 +29,7 @@ public class Sword_of_War_and_Peace {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPlayer targetPlayer=(MagicPlayer)data[0];
             final int amount1=targetPlayer.getHand().size();

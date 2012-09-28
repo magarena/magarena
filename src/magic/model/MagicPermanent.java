@@ -87,7 +87,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     private MagicPermanent pairedCreature = MagicPermanent.NONE;
     private final MagicCardList exiledCards;
     private MagicTarget chosenTarget;
-    private int counters[]=new int[MagicCounterType.NR_COUNTERS];
+    private int[] counters=new int[MagicCounterType.NR_COUNTERS];
     private int stateFlags = 
             MagicPermanentState.Summoned.getMask() |
             MagicPermanentState.MustPayEchoCost.getMask();

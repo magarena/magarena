@@ -21,8 +21,8 @@ public class MagicPayManaCostResultBuilder {
     private final MagicGame game;
     private final MagicBuilderManaCost cost;
     private final List<MagicSourceManaActivation> activations;
-    private MagicCostManaType types[];
-    private int amounts[];
+    private MagicCostManaType[] types;
+    private int[] amounts;
     private int activationsSize;
     private Map<MagicBuilderPayManaCostResult,MagicBuilderPayManaCostResult> results;
     
@@ -52,8 +52,8 @@ public class MagicPayManaCostResultBuilder {
 
         // Generate all available activations for mana cost type.
         final MagicCostManaType costManaType=types[index];
-        final MagicSourceManaActivation typeActivations[]=new MagicSourceManaActivation[activationsSize];
-        final MagicManaType producedTypes[]=new MagicManaType[activationsSize];
+        final MagicSourceManaActivation[] typeActivations=new MagicSourceManaActivation[activationsSize];
+        final MagicManaType[] producedTypes=new MagicManaType[activationsSize];
         int typeActivationSize=0;
         for (final MagicSourceManaActivation activation : activations) {
             final MagicManaType manaType=activation.canProduce(costManaType);
@@ -109,7 +109,7 @@ public class MagicPayManaCostResultBuilder {
         }
         
         // Generate all possible combinations with at least the minimum number of sources.
-        final int optionIndices[]=new int[typeActivationSize];
+        final int[] optionIndices=new int[typeActivationSize];
         int activationIndex=0;
         int count=0;
         optionIndices[0]=-1;

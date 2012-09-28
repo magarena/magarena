@@ -69,7 +69,7 @@ public class MagicBuybackChoice extends MagicChoice {
         }
         
         final List<Object[]> choiceResultsList = new ArrayList<Object[]>();
-        final Object choiceResults[] = new Object[3];
+        final Object[] choiceResults = new Object[3];
         final Collection<Object> manaOptions;
         if (!new MagicPayManaCostResultBuilder(game,player,cost.getBuilderCost()).hasResults()) {
             choiceResults[1] = NO_CHOICE;
@@ -115,13 +115,13 @@ public class MagicBuybackChoice extends MagicChoice {
             isYesClicked = kickerPanel.isYesClicked();                
         }
 
-        final Object choiceResults[] = new Object[3];
+        final Object[] choiceResults = new Object[3];
         
         // Pay buyback cost.
         if (isYesClicked) {
             choiceResults[1] = YES_CHOICE;
             final MagicPayManaCostChoice manaChoice = new MagicPayManaCostChoice(cost);
-            final Object manaChoiceResults[] = 
+            final Object[] manaChoiceResults =
                     manaChoice.getPlayerChoiceResults(controller,game,player,source);
             if (manaChoiceResults == UNDO_CHOICE_RESULTS) {
                 return UNDO_CHOICE_RESULTS;
@@ -133,7 +133,7 @@ public class MagicBuybackChoice extends MagicChoice {
 
         // Pick other choice.
         if (otherChoice.isValid()) {
-            final Object otherChoiceResults[] = 
+            final Object[] otherChoiceResults =
                     otherChoice.getPlayerChoiceResults(controller,game,player,source);
             if (otherChoiceResults == UNDO_CHOICE_RESULTS) {
                 return UNDO_CHOICE_RESULTS;

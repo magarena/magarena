@@ -27,7 +27,7 @@ public class Stonebrow__Krosan_Hero {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeTurnPTAction((MagicPermanent)data[0],2,2));
         }

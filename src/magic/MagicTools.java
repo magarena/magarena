@@ -24,7 +24,7 @@ public class MagicTools {
     }
     
     private static void checkCards() {
-        final String filenames[] = new File(MagicMain.getGamePath(),"cards").list();
+        final String[] filenames = new File(MagicMain.getGamePath(),"cards").list();
         final Set<MagicCardDefinition> remaining = new HashSet<MagicCardDefinition>(CardDefinitions.getCards());
         for (final String filename : filenames) {
             final String name = filename.substring(0,filename.length()-4);
@@ -42,7 +42,7 @@ public class MagicTools {
         }
     }
         
-    public static void main(final String args[]) {
+    public static void main(final String[] args) {
         MagicMain.initializeEngine();
         checkCards();
     }

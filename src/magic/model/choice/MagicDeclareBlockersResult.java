@@ -22,7 +22,7 @@ public class MagicDeclareBlockersResult extends LinkedList<MagicCombatCreature[]
     
     MagicDeclareBlockersResult(final MagicDeclareBlockersResult result,final int position,final int score) {
         this(position,score);
-        for (final MagicCombatCreature creatures[] : result) {
+        for (final MagicCombatCreature[] creatures : result) {
             add(Arrays.copyOf(creatures,creatures.length));
         }
     }
@@ -30,9 +30,9 @@ public class MagicDeclareBlockersResult extends LinkedList<MagicCombatCreature[]
     @Override
     public MagicDeclareBlockersResult map(final MagicGame game) {
         final MagicDeclareBlockersResult result=new MagicDeclareBlockersResult(position,score);
-        for (final MagicCombatCreature creatures[] : this) {
+        for (final MagicCombatCreature[] creatures : this) {
             final int size=creatures.length;
-            final MagicCombatCreature mappedCreatures[]=new MagicCombatCreature[size];
+            final MagicCombatCreature[] mappedCreatures=new MagicCombatCreature[size];
             for (int index=size-1;index>=0;index--) {
                 mappedCreatures[index]=new MagicCombatCreature(game,creatures[index]);
             }
@@ -55,7 +55,7 @@ public class MagicDeclareBlockersResult extends LinkedList<MagicCombatCreature[]
     public String toString() {
         final StringBuilder builder=new StringBuilder();
         //builder.append(score);
-        for (final MagicCombatCreature creatures[] : this) {
+        for (final MagicCombatCreature[] creatures : this) {
             if (creatures.length>1) {
                 builder.append(' ');
                 builder.append(creatures[0].getName());

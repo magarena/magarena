@@ -34,7 +34,7 @@ public class CubeDefinitions {
     }
             
     public static String[] getCubeNames() {
-        final String names[]=new String[cubeDefinitions.size()];
+        final String[] names=new String[cubeDefinitions.size()];
         for (int index=0;index<names.length;index++) {
             names[index]=cubeDefinitions.get(index).getName();
         }
@@ -72,7 +72,7 @@ public class CubeDefinitions {
     }
     
     public static void loadCubeDefinitions() {
-        final File cubeFiles[]=new File(MagicMain.getModsPath()).listFiles(CUBE_FILE_FILTER);
+        final File[] cubeFiles=new File(MagicMain.getModsPath()).listFiles(CUBE_FILE_FILTER);
         if (cubeFiles!=null) {
             for (final File file : cubeFiles) {
                 final String name = file.getName();

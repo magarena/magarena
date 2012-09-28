@@ -29,7 +29,7 @@ public class Quietus_Spike {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicChangeLifeAction(player,-(player.getLife()+1)/2));

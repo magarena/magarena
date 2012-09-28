@@ -36,7 +36,7 @@ public class Deranged_Hermit {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             for (int i=4;i>0;i--) {
                 game.doAction(new MagicPlayTokenAction(

@@ -37,7 +37,7 @@ public class MagicDeclareBlockersResultBuilder {
     private MagicScoreRanking results;
     private MagicDeclareBlockersResult result;
     private MagicCombatScore combatScore;
-    private MagicCombatCreature attackers[];
+    private MagicCombatCreature[] attackers;
     private Set<MagicCombatCreature> blockers;
     private int position;
         
@@ -117,7 +117,7 @@ public class MagicDeclareBlockersResultBuilder {
         
         // Get the remaining candidate blockers.
         final MagicCombatCreature attacker=attackers[index];
-        final MagicCombatCreature candidateBlockers[]=new MagicCombatCreature[attacker.candidateBlockers.length];
+        final MagicCombatCreature[] candidateBlockers=new MagicCombatCreature[attacker.candidateBlockers.length];
         int blockersSize=0;
         for (final MagicCombatCreature blocker : attacker.candidateBlockers) {
             if (blockers.contains(blocker)) {
@@ -174,7 +174,7 @@ public class MagicDeclareBlockersResultBuilder {
         
         // Get the remaining candidate blockers.
         final MagicCombatCreature attacker=attackers[index];
-        final MagicCombatCreature candidateBlockers[]=new MagicCombatCreature[attacker.candidateBlockers.length];
+        final MagicCombatCreature[] candidateBlockers=new MagicCombatCreature[attacker.candidateBlockers.length];
         int blockersSize=0;
         for (final MagicCombatCreature blocker : attacker.candidateBlockers) {
             if (blockers.contains(blocker)) {
@@ -218,10 +218,10 @@ public class MagicDeclareBlockersResultBuilder {
         }
         
         // All combinations of blockers that deal lethal damage to the attacker.
-        final MagicCombatCreature creatures[] = new MagicCombatCreature[blockersSize+1];
+        final MagicCombatCreature[] creatures = new MagicCombatCreature[blockersSize+1];
         creatures[0] = attacker;
         int size = 1;
-        final int blockerSteps[] = new int[blockersSize];
+        final int[] blockerSteps = new int[blockersSize];
         final int lastBlockerIndex = blockersSize-1;
         int blockerIndex = 0;
         MagicCombatCreature blocker;

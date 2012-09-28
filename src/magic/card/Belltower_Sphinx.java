@@ -22,7 +22,7 @@ public class Belltower_Sphinx {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
         }
     };

@@ -41,7 +41,7 @@ public class Lord_of_Shatterskull_Pass {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final MagicSource source=event.getPermanent();
             final MagicPlayer defendingPlayer=event.getPlayer().getOpponent();

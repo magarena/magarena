@@ -36,7 +36,7 @@ public class MagicLeavesReturnExileTrigger extends MagicWhenLeavesPlayTrigger {
     public void executeEvent(
             final MagicGame game,
             final MagicEvent event,
-            final Object data[],
+            final Object[] data,
             final Object[] choiceResults) {
         final MagicCard exiledCard = (MagicCard)data[0];
         game.doAction(new MagicRemoveCardAction(exiledCard,MagicLocationType.Exile));

@@ -31,7 +31,7 @@ public class Butcher_of_Malakir {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPlayer opponent=event.getPlayer().getOpponent();
             if (opponent.controlsPermanentWithType(MagicType.Creature)) {
@@ -62,7 +62,7 @@ public class Butcher_of_Malakir {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPlayer opponent=event.getPlayer().getOpponent();
             if (opponent.controlsPermanentWithType(MagicType.Creature)) {

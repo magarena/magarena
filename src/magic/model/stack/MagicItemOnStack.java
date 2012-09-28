@@ -19,7 +19,7 @@ public abstract class MagicItemOnStack implements MagicTarget {
     private MagicPlayer controller;
     private MagicEvent event;
     private MagicActivation activation; //may be null
-    private Object choiceResults[]=MagicEvent.NO_CHOICE_RESULTS;
+    private Object[] choiceResults=MagicEvent.NO_CHOICE_RESULTS;
     private long id;
    
     MagicItemOnStack() {}
@@ -80,7 +80,7 @@ public abstract class MagicItemOnStack implements MagicTarget {
         return event.hasChoice();
     }
 
-    public void setChoiceResults(final Object choiceResults[]) {
+    public void setChoiceResults(final Object[] choiceResults) {
         this.choiceResults=choiceResults;
     }
     

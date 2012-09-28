@@ -27,7 +27,7 @@ public class Massacre_Wurm {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final Collection<MagicTarget> targets=
                 game.filterTargets(event.getPlayer().getOpponent(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
@@ -54,7 +54,7 @@ public class Massacre_Wurm {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeLifeAction(event.getPlayer().getOpponent(),-2));
         }

@@ -42,7 +42,7 @@ public class Wooden_Stake {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPermanentList plist = (MagicPermanentList)data[0];
             for (final MagicPermanent blocker : plist) {
@@ -72,7 +72,7 @@ public class Wooden_Stake {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPermanent creature = (MagicPermanent)data[0];
             game.doAction(new MagicChangeStateAction(creature,MagicPermanentState.CannotBeRegenerated,true));

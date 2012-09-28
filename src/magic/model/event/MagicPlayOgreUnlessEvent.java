@@ -27,7 +27,7 @@ public class MagicPlayOgreUnlessEvent extends MagicEvent {
     
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object choiceResults[]) {
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 MagicEvent.payManaCost(game,event.getPlayer(),choiceResults,1);
             } else {

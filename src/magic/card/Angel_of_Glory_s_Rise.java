@@ -33,7 +33,7 @@ public class Angel_of_Glory_s_Rise {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
             final List<MagicTarget> zombies =

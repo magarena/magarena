@@ -28,7 +28,7 @@ public class Ghoulraiser {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
             final List<MagicTarget> targets =

@@ -36,7 +36,7 @@ public class Charmbreaker_Devils {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
             final List<MagicTarget> targets =
@@ -70,7 +70,7 @@ public class Charmbreaker_Devils {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),4,0));
         }

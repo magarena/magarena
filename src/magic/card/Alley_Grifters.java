@@ -25,7 +25,7 @@ public class Alley_Grifters {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             game.addEvent(new MagicDiscardEvent(
                     event.getPermanent(),

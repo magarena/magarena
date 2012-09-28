@@ -32,7 +32,7 @@ public class Engulfing_Slagwurm {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPermanentList plist = (MagicPermanentList)data[0];
             for (final MagicPermanent blocker : plist) {
@@ -62,7 +62,7 @@ public class Engulfing_Slagwurm {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPermanent attacker = (MagicPermanent)data[0];
             game.doAction(new MagicDestroyAction(attacker));

@@ -18,14 +18,14 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
     private final int priority;
     private final int index;
     private final String text;
-    private final MagicCondition conditions[];
+    private final MagicCondition[] conditions;
     private final MagicActivationHints hints;
     
     private final long id;
 
     MagicActivation(
         final int index,
-        final MagicCondition conditions[],
+        final MagicCondition[] conditions,
         final MagicActivationHints hints,
         final String txt) {
         

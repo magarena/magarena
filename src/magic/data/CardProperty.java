@@ -45,7 +45,7 @@ public enum CardProperty {
     },
     TYPE() {
         void setProperty(final MagicCardDefinition card, final String value) {
-            final String names[]=value.split(",");
+            final String[] names=value.split(",");
             for (final String name : names) {
                 card.addType(MagicType.getType(name));
             }
@@ -90,7 +90,7 @@ public enum CardProperty {
     },
     ABILITY() {
         void setProperty(final MagicCardDefinition card, final String value) {
-            final String names[]=value.split(",");
+            final String[] names=value.split(",");
             for (final String name : names) {
                 final MagicAbility ability = MagicAbility.getAbility(name);
                 final String arg = name.substring(ability.toString().length()).trim();
@@ -131,7 +131,7 @@ public enum CardProperty {
     },
     IGNORE() {
         void setProperty(final MagicCardDefinition card, final String value) {
-            final String sizes[]=value.split(",");
+            final String[] sizes=value.split(",");
             for (final String size : sizes) {
                 card.addIgnore(Long.parseLong(size));
             }

@@ -15,7 +15,7 @@ public class AvatarImages {
     private final File avatarPath;
     private final Vector<String> names;
     private String current = "";
-    private PlayerAvatar avatars[];
+    private PlayerAvatar[] avatars;
     
     private AvatarImages() {
         avatarPath=new File(MagicMain.getGamePath(),"avatars");
@@ -42,7 +42,7 @@ public class AvatarImages {
         final String avatar=GeneralConfig.getInstance().getAvatar();
         if (!avatar.equals(current)) {
             current=avatar;
-            final File files[]=new File(avatarPath,current).listFiles();
+            final File[] files=new File(avatarPath,current).listFiles();
             if (files!=null&&files.length>=2) {
                 Arrays.sort(files);
                 avatars=new PlayerAvatar[files.length];

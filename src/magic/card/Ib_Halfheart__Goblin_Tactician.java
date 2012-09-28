@@ -43,7 +43,7 @@ public class Ib_Halfheart__Goblin_Tactician {
         public void executeEvent(
             final MagicGame game,
             final MagicEvent event,
-            final Object data[],
+            final Object[] data,
             final Object[] choiceResults) {
             final MagicPermanent goblin = (MagicPermanent)data[0];
             final MagicSacrificeAction sac = new MagicSacrificeAction(goblin);
@@ -83,7 +83,7 @@ public class Ib_Halfheart__Goblin_Tactician {
         public void executeEvent(
             final MagicGame game,
             final MagicEvent event,
-            final Object data[],
+            final Object[] data,
             final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicPlayTokenAction(player, TokenCardDefinitions.get("Goblin1")));

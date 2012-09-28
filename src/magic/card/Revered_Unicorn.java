@@ -22,7 +22,7 @@ public class Revered_Unicorn {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final int amount = event.getPermanent().getCounters(MagicCounterType.Charge);
             game.doAction(new MagicChangeLifeAction(

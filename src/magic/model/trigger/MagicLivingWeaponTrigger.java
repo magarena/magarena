@@ -35,7 +35,7 @@ public class MagicLivingWeaponTrigger extends MagicWhenComesIntoPlayTrigger {
     public void executeEvent(
             final MagicGame game,
             final MagicEvent event,
-            final Object data[],
+            final Object[] data,
             final Object[] choiceResults) {
 
         //create the token

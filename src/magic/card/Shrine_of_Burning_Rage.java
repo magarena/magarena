@@ -96,7 +96,7 @@ public class Shrine_of_Burning_Rage {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
                         event.getPermanent(),
@@ -127,7 +127,7 @@ public class Shrine_of_Burning_Rage {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
                         event.getPermanent(),

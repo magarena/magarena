@@ -173,7 +173,7 @@ public class IconImages {
     }
     
     private static ImageIcon loadAnimatedIcon(final String name) {
-        final byte data[] = new byte[1<<16];
+        final byte[] data = new byte[1<<16];
         int size = 0;
         final InputStream inputStream = IconImages.class.getResourceAsStream("icons/"+name);
         try { //load animated icon

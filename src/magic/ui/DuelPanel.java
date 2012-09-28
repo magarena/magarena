@@ -52,13 +52,13 @@ public class DuelPanel extends JPanel implements ActionListener {
     private final ZoneBackgroundLabel backgroundImage;
     private final DeckStrengthViewer strengthViewer;
     private final HistoryViewer historyViewer;
-    private final DeckDescriptionViewer deckDescriptionViewers[];
+    private final DeckDescriptionViewer[] deckDescriptionViewers;
     private final CardViewer cardViewer;
     private final DuelDifficultyViewer duelDifficultyViewer;
-    private final CardTable cardTables[];
-    private final JButton editButtons[];
-    private final JButton generateButtons[];
-    private final DeckStatisticsViewer statsViewers[];
+    private final CardTable[] cardTables;
+    private final JButton[] editButtons;
+    private final JButton[] generateButtons;
+    private final DeckStatisticsViewer[] statsViewers;
 
     public DuelPanel(final MagicFrame frame,final MagicDuel duel) {
 

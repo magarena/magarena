@@ -39,7 +39,7 @@ public class Gloom_Surgeon {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final int amount = (Integer)data[0];
             final MagicPlayer player = event.getPlayer();

@@ -24,7 +24,7 @@ public class Dwarven_Berserker {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPermanent creature = event.getPermanent();
             game.doAction(new MagicChangeTurnPTAction(creature,3,0));

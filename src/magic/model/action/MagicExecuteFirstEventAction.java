@@ -5,10 +5,10 @@ import magic.model.event.MagicEvent;
 
 public class MagicExecuteFirstEventAction extends MagicAction {
 
-    private final Object choiceResults[];
+    private final Object[] choiceResults;
     private MagicEvent firstEvent;
     
-    public MagicExecuteFirstEventAction(final Object choiceResults[]) {
+    public MagicExecuteFirstEventAction(final Object[] choiceResults) {
         this.choiceResults=choiceResults;
     }
     

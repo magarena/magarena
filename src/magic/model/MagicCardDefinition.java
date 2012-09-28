@@ -71,7 +71,7 @@ public class MagicCardDefinition {
     private int colorFlags=0;
     private MagicManaCost cost=MagicManaCost.ZERO;
     private String manaSourceText="";
-    private final int manaSource[]=new int[MagicColor.NR_COLORS];
+    private final int[] manaSource=new int[MagicColor.NR_COLORS];
     private int power=0;
     private int toughness=0;
     private long abilityFlags=0;

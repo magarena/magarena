@@ -28,7 +28,7 @@ public class ArtificialWorker {
         this.scoreBoard=scoreBoard;
     }
     
-    private ArtificialScore runGame(final Object nextChoiceResults[],final ArtificialPruneScore pruneScore,int depth) {
+    private ArtificialScore runGame(final Object[] nextChoiceResults,final ArtificialPruneScore pruneScore,int depth) {
         game.startActions();
         
         if (nextChoiceResults!=null) {
@@ -85,7 +85,7 @@ public class ArtificialWorker {
             final boolean best=game.getScorePlayer()==event.getPlayer();
             ArtificialScore bestScore=ArtificialScore.INVALID_SCORE;
             ArtificialPruneScore newPruneScore=pruneScore;
-            for (final Object choiceResults[] : choiceResultsList) {
+            for (final Object[] choiceResults : choiceResultsList) {
                 final ArtificialScore score=runGame(choiceResults,newPruneScore,depth);
                 if (bestScore.isBetter(score,best)) {
                     bestScore=score;

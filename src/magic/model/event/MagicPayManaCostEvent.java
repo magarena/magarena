@@ -22,7 +22,7 @@ public class MagicPayManaCostEvent extends MagicEvent {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             MagicEvent.payManaCost(game,event.getPlayer(),choiceResults,0);
         }

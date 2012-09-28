@@ -36,7 +36,7 @@ public class MagicCardChoice extends MagicChoice {
     private void createOptions(
             final Collection<Object> options,
             final MagicCardList hand,
-            final MagicCard cards[],
+            final MagicCard[] cards,
             final int count,
             final int aAmount,
             final int index) {

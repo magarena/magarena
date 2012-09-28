@@ -25,7 +25,7 @@ public class Claustrophobia {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPermanent permanent= event.getPermanent();
             final MagicPermanent enchantedCreature = permanent.getEnchantedCreature();

@@ -42,8 +42,8 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     
     private static final long serialVersionUID = 1L;
     
-    private static final String COST_VALUES[] = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"};
-    private static final String FILTER_CHOICES[] = {"Match any selected", "Match all selected", "Exclude selected"};
+    private static final String[] COST_VALUES = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"};
+    private static final String[] FILTER_CHOICES = {"Match any selected", "Match all selected", "Exclude selected"};
     private static final String FILTER_BUTTON_TEXT = "Filter";
     private static final String HIDE_BUTTON_TEXT = "Hide";
     private static final String RESET_BUTTON_TEXT = "Reset";
@@ -57,20 +57,20 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     private final JFrame frame;
     private final ExplorerPanel explorerPanel;
     private final ButtonControlledPopup typePopup;
-    private final JCheckBox typeCheckBoxes[];
-    private final JRadioButton typeFilterChoices[];
+    private final JCheckBox[] typeCheckBoxes;
+    private final JRadioButton[] typeFilterChoices;
     private final ButtonControlledPopup colorPopup;
-    private final JCheckBox colorCheckBoxes[];
-    private final JRadioButton colorFilterChoices[];
+    private final JCheckBox[] colorCheckBoxes;
+    private final JRadioButton[] colorFilterChoices;
     private final ButtonControlledPopup costPopup;
-    private final JCheckBox costCheckBoxes[];
-    private final JRadioButton costFilterChoices[];
+    private final JCheckBox[] costCheckBoxes;
+    private final JRadioButton[] costFilterChoices;
     private final ButtonControlledPopup subtypePopup;
-    private final JCheckBox subtypeCheckBoxes[];
-    private final JRadioButton subtypeFilterChoices[];
+    private final JCheckBox[] subtypeCheckBoxes;
+    private final JRadioButton[] subtypeFilterChoices;
     private final ButtonControlledPopup rarityPopup;
-    private final JCheckBox rarityCheckBoxes[];
-    private final JRadioButton rarityFilterChoices[];
+    private final JCheckBox[] rarityCheckBoxes;
+    private final JRadioButton[] rarityFilterChoices;
     private final JTextField nameTextField;
     private final JButton resetButton;
     private final int mode;

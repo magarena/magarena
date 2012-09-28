@@ -183,9 +183,9 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
     private static final int TEMPERING_MASK_B = 0x9d2c5680;
     private static final int TEMPERING_MASK_C = 0xefc60000;
     
-    private int mt[]; // the array for the state vector
+    private int[] mt; // the array for the state vector
     private int mti; // mti==N+1 means mt[N] is not initialized
-    private int mag01[];
+    private int[] mag01;
     
     // a good initial seed (of int size, though stored in a long)
     //private static final long GOOD_SEED = 4357;

@@ -26,7 +26,7 @@ public class Dingus_Egg {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final MagicDamage damage = new MagicDamage(
                     event.getSource(),

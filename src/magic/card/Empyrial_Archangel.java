@@ -17,7 +17,7 @@ public class Empyrial_Archangel {
             return MagicEvent.NONE;
         }
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
             
         }
     };

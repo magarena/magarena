@@ -29,7 +29,7 @@ public class Call_to_the_Grave {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
             game.addEvent(new MagicSacrificePermanentEvent(
@@ -56,7 +56,7 @@ public class Call_to_the_Grave {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicSacrificeAction(event.getPermanent()));
         }    

@@ -12,7 +12,7 @@ public class MagicPayLifeEvent extends MagicEvent {
             player,
             new MagicEventAction() {
                 @Override
-                public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choices) {
+                public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choices) {
                     game.doAction(new MagicChangeLifeAction(event.getPlayer(),-amount));
                 }
             },

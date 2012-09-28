@@ -24,7 +24,7 @@ public class Kemba__Kha_Regent {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPermanent permanent = event.getPermanent();
             int amount = permanent.getEquipmentPermanents().size();

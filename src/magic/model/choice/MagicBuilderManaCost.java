@@ -9,9 +9,9 @@ public class MagicBuilderManaCost {
 
     public static final MagicBuilderManaCost ZERO_COST=new MagicBuilderManaCost();
     
-    private final int amounts[];
-    private MagicCostManaType compressedTypes[];
-    private int compressedAmounts[];
+    private final int[] amounts;
+    private MagicCostManaType[] compressedTypes;
+    private int[] compressedAmounts;
     private int typeCount;
     private int minimumAmount;
     private int XCount;

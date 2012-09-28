@@ -31,7 +31,7 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
     private final JPanel topPanel;
     private final JPanel linesPanel;
     private final List<JLabel> lines;
-    private final JLabel curveLabels[];
+    private final JLabel[] curveLabels;
     private final Color textColor;
     
     public DeckStatisticsViewer() {

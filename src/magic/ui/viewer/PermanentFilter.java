@@ -35,9 +35,9 @@ public class PermanentFilter implements ActionListener {
         }
     };
     
-    private static final ImageIcon FILTER_ICONS[]={
+    private static final ImageIcon[] FILTER_ICONS={
         IconImages.ALL,IconImages.LAND,IconImages.CREATURE,IconImages.ARTIFACT,IconImages.ENCHANTMENT,IconImages.VALID};
-    private static final String FILTER_TOOLTIPS[]={
+    private static final String[] FILTER_TOOLTIPS={
         "All","Mana","Creatures","Artifacts","Enchantments","Choices"
     };
     
@@ -46,7 +46,7 @@ public class PermanentFilter implements ActionListener {
 
     private final JPanel viewer;
     private final GameController controller;
-    private final JToggleButton filterButtons[];
+    private final JToggleButton[] filterButtons;
     private int filter=0;
     
     public PermanentFilter(final JPanel viewer,final GameController controller) {

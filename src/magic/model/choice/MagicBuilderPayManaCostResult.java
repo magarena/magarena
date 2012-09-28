@@ -13,8 +13,8 @@ import java.util.List;
 public class MagicBuilderPayManaCostResult implements 
     MagicPayManaCostResult, MagicMappable, Comparable<MagicBuilderPayManaCostResult> {
 
-    private MagicSourceManaActivationResult results[];
-    private short amountLeft[];
+    private MagicSourceManaActivationResult[] results;
+    private short[] amountLeft;
     private int weight;
     private int count;
     private int x;

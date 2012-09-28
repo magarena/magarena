@@ -92,12 +92,12 @@ public class DefaultDeckGenerator {
         final int maxColorless = spells/6;
         final int maxHigh = spells/6;
         final int maxOther = (spells-maxHigh)/2;
-        final int maxCost[] = new int[]{maxOther,maxOther+1,maxHigh};
+        final int[] maxCost = new int[]{maxOther,maxOther+1,maxHigh};
         
         int countCreatures = 0;
         int countColorless = 0;
         int countNonlandNoncreature = 0;
-        final int countCost[] = new int[3];
+        final int[] countCost = new int[3];
         
         addRequiredSpells(condensedDeck);
         

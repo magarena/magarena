@@ -23,7 +23,7 @@ public class MagicMayChoice extends MagicChoice {
             new Object[]{YES_CHOICE},
             new Object[]{NO_CHOICE});
     
-    private final MagicChoice choices[];
+    private final MagicChoice[] choices;
     private final MagicTargetChoice targetChoice; 
     private final int manaChoiceResultIndex;
     
@@ -86,7 +86,7 @@ public class MagicMayChoice extends MagicChoice {
         }
         
         final int nrOfChoiceResults=nrOfChoices+1;
-        final Object noChoiceResults[]=new Object[nrOfChoiceResults];
+        final Object[] noChoiceResults=new Object[nrOfChoiceResults];
         noChoiceResults[0]=NO_CHOICE;
         
         final List<Collection<Object>> optionsList=new ArrayList<Collection<Object>>(nrOfChoices);
@@ -98,7 +98,7 @@ public class MagicMayChoice extends MagicChoice {
         }
 
         final List<Object[]> choiceResultsList=new ArrayList<Object[]>();
-        final Object yesChoiceResults[]=new Object[nrOfChoiceResults];
+        final Object[] yesChoiceResults=new Object[nrOfChoiceResults];
         yesChoiceResults[0]=YES_CHOICE;        
 
         int index=0;
@@ -132,7 +132,7 @@ public class MagicMayChoice extends MagicChoice {
             final MagicPlayer player,
             final MagicSource source) {
 
-        final Object choiceResults[]=new Object[choices.length+1];
+        final Object[] choiceResults=new Object[choices.length+1];
         choiceResults[0]=NO_CHOICE;
 
         final boolean hints = GeneralConfig.getInstance().getSmartTarget();
@@ -159,7 +159,7 @@ public class MagicMayChoice extends MagicChoice {
         choiceResults[0]=YES_CHOICE;
         for (int index=0;index<choices.length;index++) {
             
-            final Object partialChoiceResults[]=choices[index].getPlayerChoiceResults(controller,game,player,source);
+            final Object[] partialChoiceResults=choices[index].getPlayerChoiceResults(controller,game,player,source);
             if (partialChoiceResults==UNDO_CHOICE_RESULTS) {
                 return UNDO_CHOICE_RESULTS;
             }

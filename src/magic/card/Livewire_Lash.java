@@ -34,7 +34,7 @@ public class Livewire_Lash {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPermanent source = (MagicPermanent)data[0];
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {

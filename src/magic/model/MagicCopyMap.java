@@ -34,7 +34,7 @@ public class MagicCopyMap extends HashMap<MagicCopyable,MagicCopyable> {
         if (sources==null||sources.length==0) {
             return sources;
         }
-        final E targets[]=(E[])Array.newInstance(clazz,sources.length);
+        final E[] targets=(E[])Array.newInstance(clazz,sources.length);
         for (int index=0;index<targets.length;index++) {
             targets[index]=(E)copyObject(sources[index]);
         }

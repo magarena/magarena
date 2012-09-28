@@ -55,7 +55,7 @@ public class MagicGame {
     private static MagicGame INSTANCE;
     
     private final MagicDuel duel;
-    private final MagicPlayer players[];
+    private final MagicPlayer[] players;
     private final MagicPermanentTriggerMap triggers;
     private final MagicPermanentTriggerList turnTriggers;
     private final MagicPermanentStaticMap statics;
@@ -106,7 +106,7 @@ public class MagicGame {
     static MagicGame create(
             final MagicDuel duel,
             final MagicGameplay gameplay,
-            final MagicPlayer players[],
+            final MagicPlayer[] players,
             final MagicPlayer startPlayer,
             final boolean sound) {
         COUNT++;
@@ -117,7 +117,7 @@ public class MagicGame {
     private MagicGame(
             final MagicDuel duel,
             final MagicGameplay gameplay,
-            final MagicPlayer players[],
+            final MagicPlayer[] players,
             final MagicPlayer startPlayer,
             final boolean sound) {
 
@@ -553,7 +553,7 @@ public class MagicGame {
         logMessageBuilder.logMessages();
     }
 
-    private void logAppendEvent(final MagicEvent event,final Object choiceResults[]) {
+    private void logAppendEvent(final MagicEvent event,final Object[] choiceResults) {
         if (disableLog) {
             return;
         }
@@ -611,7 +611,7 @@ public class MagicGame {
         logBook.add(new MagicMessage(this,player,builder.toString()));
     }
 
-    public void executeEvent(final MagicEvent event,final Object choiceResults[]) {
+    public void executeEvent(final MagicEvent event,final Object[] choiceResults) {
         if (choiceResults == null) {
             throw new RuntimeException("choiceResults is null");
         }
@@ -642,7 +642,7 @@ public class MagicGame {
         doAction(new MagicAddEventAction(event));
     }
         
-    public void executeNextEvent(final Object choiceResults[]) {
+    public void executeNextEvent(final Object[] choiceResults) {
         doAction(new MagicExecuteFirstEventAction(choiceResults));
     }
     
@@ -852,9 +852,9 @@ public class MagicGame {
         }
     }
         
-    public Object[] map(final Object data[]) {
+    public Object[] map(final Object[] data) {
         final int length=data.length;
-        final Object mappedData[]=new Object[length];
+        final Object[] mappedData=new Object[length];
         for (int index=0;index<length;index++) {
             final Object obj=data[index];
             if (obj != null && obj instanceof MagicMappable) {

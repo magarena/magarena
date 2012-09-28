@@ -26,7 +26,7 @@ public class Raking_Canopy {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final MagicDamage damage=new MagicDamage(event.getSource(),(MagicTarget)data[0],4,false);
             game.doAction(new MagicDealDamageAction(damage));

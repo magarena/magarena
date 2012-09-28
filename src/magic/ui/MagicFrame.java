@@ -498,7 +498,7 @@ public class MagicFrame extends JFrame implements ActionListener {
     private void swapDecks() {
         if (duel!=null) {
             duel.restart();
-            final MagicPlayerDefinition players[]=duel.getPlayers();
+            final MagicPlayerDefinition[] players=duel.getPlayers();
             final MagicPlayerProfile profile1=players[0].getProfile();
             final MagicPlayerProfile profile2=players[1].getProfile();
             final MagicDeck deck1 = new MagicDeck(players[0].getDeck());            
@@ -542,7 +542,7 @@ public class MagicFrame extends JFrame implements ActionListener {
     public void nextGame() {
         duel.updateDifficulty();
         
-        final MagicPlayerDefinition players[]=duel.getPlayers();
+        final MagicPlayerDefinition[] players=duel.getPlayers();
         if(isLegalDeckAndShowErrors(
                 players[0].getDeck(),
                 players[0].getName()) && isLegalDeckAndShowErrors(players[1].getDeck(),
@@ -780,7 +780,7 @@ public class MagicFrame extends JFrame implements ActionListener {
             return false;
         }
 
-        final String toExec[] = new String[] {javaBin, "-jar", jarFile.getPath()};
+        final String[] toExec = new String[] {javaBin, "-jar", jarFile.getPath()};
         try { //restart the application 
             final Process p = Runtime.getRuntime().exec(toExec);
         } catch (final IOException ex) {

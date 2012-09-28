@@ -25,7 +25,7 @@ public class Angelic_Chorus {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             // get toughness here so counters on the creature are considered
             final int toughness = ((MagicPermanent)data[0]).getToughness();

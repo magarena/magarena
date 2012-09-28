@@ -8,7 +8,7 @@ import magic.model.mstatic.MagicStatic;
 public class MagicBecomesCreatureAction extends MagicAction {
 
     private final MagicPermanent permanent;
-    private final MagicStatic mstatics[];
+    private final MagicStatic[] mstatics;
     private boolean oldState;
     
     public MagicBecomesCreatureAction(final MagicPermanent aPermanent,final MagicStatic... aMstatics) {

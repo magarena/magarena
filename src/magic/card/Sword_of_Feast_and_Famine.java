@@ -34,7 +34,7 @@ public class Sword_of_Feast_and_Famine {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             game.addEvent(new MagicDiscardEvent(event.getPermanent(),(MagicPlayer)data[0],1,false));
             final Collection<MagicTarget> targets = 

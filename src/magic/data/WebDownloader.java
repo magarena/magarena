@@ -26,7 +26,7 @@ public abstract class WebDownloader {
         try {
             outputStream = new BufferedOutputStream(new FileOutputStream(file));
             inputStream = url.openConnection(proxy).getInputStream();
-            final byte buffer[]=new byte[65536];
+            final byte[] buffer=new byte[65536];
             while (true) {
                 final int len=inputStream.read(buffer);
                 if (len<0) {

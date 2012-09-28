@@ -53,7 +53,7 @@ public class MagicThiefTrigger extends MagicWhenDamageIsDealtTrigger {
     public void executeEvent(
             final MagicGame game,
             final MagicEvent event,
-            final Object data[],
+            final Object[] data,
             final Object[] choiceResults) {
         if (mustDraw) {
             game.doAction(new MagicDrawAction(event.getPlayer(),amount));

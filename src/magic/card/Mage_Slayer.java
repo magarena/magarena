@@ -27,7 +27,7 @@ public class Mage_Slayer {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPermanent permanent=event.getPermanent();
             final MagicDamage damage=new MagicDamage(permanent,event.getPlayer(),permanent.getPower(),false);

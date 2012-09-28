@@ -45,7 +45,7 @@ public class RandomAI implements MagicAI {
 
         //build a list of artificial choice results
         final List<ArtificialChoiceResults> achoices=new ArrayList<ArtificialChoiceResults>();
-        for (final Object choice[] : choices) {
+        for (final Object[] choice : choices) {
             achoices.add(new ArtificialChoiceResults(choice));
         }
     

@@ -14,7 +14,7 @@ public class VegasWorker implements Runnable {
     private final MagicGame sourceGame;
     private final MagicPlayer scorePlayer;
     private final VegasScore score;
-    private final Object choiceResults[];
+    private final Object[] choiceResults;
     private final Random random;
     private final int simulations;
     

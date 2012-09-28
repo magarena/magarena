@@ -23,7 +23,7 @@ public class Fists_of_Ironwood {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Saproling")));
             game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Saproling")));

@@ -12,8 +12,8 @@ public class MagicStack extends LinkedList<MagicItemOnStack> {
 
     private static final long serialVersionUID = 1L;
     
-    private final int spells[];
-    private final int counts[];
+    private final int[] spells;
+    private final int[] counts;
     
     public MagicStack() {
         spells=new int[2];

@@ -36,7 +36,7 @@ public class Fumiko_the_Lowblood {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final int amount = event.getPlayer().getOpponent().getNrOfAttackers();
             game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),amount,amount));
@@ -58,7 +58,7 @@ public class Fumiko_the_Lowblood {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final int amount = event.getPlayer().getNrOfAttackers();
             game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),amount,amount));

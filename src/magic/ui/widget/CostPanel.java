@@ -33,7 +33,7 @@ public class CostPanel extends JPanel {
         
         final List<ImageIcon> icons = cost.getIcons();
         
-        final JLabel manaLabels[]=new JLabel[icons.size()];
+        final JLabel[] manaLabels=new JLabel[icons.size()];
         for (int i=0;i<manaLabels.length;i++) {
             
             manaLabels[i]=new JLabel();

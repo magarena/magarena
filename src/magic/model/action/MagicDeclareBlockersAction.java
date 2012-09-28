@@ -19,7 +19,7 @@ public class MagicDeclareBlockersAction extends MagicAction {
     
     @Override
     public void doAction(final MagicGame game) {
-        for (final MagicCombatCreature creatures[] : result) {
+        for (final MagicCombatCreature[] creatures : result) {
             if (creatures.length>1) {
                 final MagicPermanent attacker=creatures[0].permanent;
                 for (int index=1;index<creatures.length;index++) {

@@ -23,7 +23,7 @@ public class PlayersViewer extends JPanel {
     
     private final MagicDuel duel;
     private final List<ChangeListener> changeListeners;
-    private PlayerAvatarPanel playerPanels[];
+    private PlayerAvatarPanel[] playerPanels;
     
     public PlayersViewer(final MagicDuel duel) {
         
@@ -67,7 +67,7 @@ public class PlayersViewer extends JPanel {
         scrollPane.getVerticalScrollBar().setBlockIncrement(100);
         add(scrollPane,BorderLayout.CENTER);
         
-        final MagicPlayerDefinition players[]=duel.getPlayers();
+        final MagicPlayerDefinition[] players=duel.getPlayers();
         final JPanel scrollPanel=new JPanel();
         scrollPanel.setOpaque(false);
         scrollPanel.setLayout(new BorderLayout());

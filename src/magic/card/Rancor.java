@@ -25,7 +25,7 @@ public class Rancor {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final MagicCard card = event.getCard();
             game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));

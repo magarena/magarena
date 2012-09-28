@@ -26,7 +26,7 @@ public class AEther_Membrane {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPermanent creature = (MagicPermanent)data[0];
             game.doAction(new MagicChangeStateAction(creature,MagicPermanentState.ReturnToHandOfOwnerAtEndOfCombat,true));

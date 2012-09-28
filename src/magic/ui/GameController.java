@@ -388,7 +388,7 @@ public class GameController {
     private Object[] getPlayerNextEventChoiceResults(final MagicEvent event) {
         final MagicSource source=event.getSource();
         setSourceCardDefinition(source);
-        final Object choiceResults[]=event.getChoice().getPlayerChoiceResults(this,game,event.getPlayer(),source);
+        final Object[] choiceResults=event.getChoice().getPlayerChoiceResults(this,game,event.getPlayer(),source);
         clearValidChoices();
         setSourceCardDefinition(MagicEvent.NO_SOURCE);
         return choiceResults;

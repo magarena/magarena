@@ -24,7 +24,7 @@ public class MagicFastCombatScore implements MagicCombatScore {
         final int startLife=defendingPlayer.getLife();
         int score=-ArtificialScoringSystem.getLifeScore(startLife);
         int life=startLife;
-        for (final MagicCombatCreature creatures[] : result) {
+        for (final MagicCombatCreature[] creatures : result) {
 
             final MagicCombatCreature attacker=creatures[0];
             if (creatures.length==1) {

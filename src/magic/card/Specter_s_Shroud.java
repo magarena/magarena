@@ -28,7 +28,7 @@ public class Specter_s_Shroud {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             game.addEvent(new MagicDiscardEvent(event.getSource(),(MagicPlayer)data[0],1,false));
         }

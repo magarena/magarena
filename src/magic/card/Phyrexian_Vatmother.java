@@ -24,7 +24,7 @@ public class Phyrexian_Vatmother {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangePoisonAction(event.getPlayer(),1));
         }

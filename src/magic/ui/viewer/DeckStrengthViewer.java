@@ -48,7 +48,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
     private static final Color MEDIUM_COLOR=new Color(0xFF,0x7F,0x00);
     private static final Color LOW_COLOR=new Color(0xEE,0x2C,0x2C);
     
-    private static final MagicAI DEFAULT_AIS[]=new MagicAI[]{MagicAIImpl.MMAB.getAI(),MagicAIImpl.MMAB.getAI()};
+    private static final MagicAI[] DEFAULT_AIS=new MagicAI[]{MagicAIImpl.MMAB.getAI(),MagicAIImpl.MMAB.getAI()};
 
     private final MagicDuel duel;
     private final JProgressBar progressBar;
@@ -91,7 +91,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
         gamesPanel.setBorder(INPUT_BORDER);
         gamesPanel.setOpaque(false);    
         gamesTextField=new JTextField(String.valueOf(config.getStrengthGames()));
-        final Integer levels[]=new Integer[MagicAI.MAX_LEVEL];
+        final Integer[] levels=new Integer[MagicAI.MAX_LEVEL];
         for (int level=1;level<=levels.length;level++) {
             levels[level-1]=level;
         }

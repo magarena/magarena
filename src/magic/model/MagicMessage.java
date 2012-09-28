@@ -67,8 +67,8 @@ public class MagicMessage {
             .replaceAll("SN", source.toString());
     }
     
-    public static String replaceChoices(final String sourceText,final Object choices[]) {
-        final String parts[]=sourceText.split("\\$");
+    public static String replaceChoices(final String sourceText,final Object[] choices) {
+        final String[] parts=sourceText.split("\\$");
         
         if (parts.length<2) {
             return sourceText;

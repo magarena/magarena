@@ -9,7 +9,7 @@ import magic.model.MagicPermanent;
 public class MagicSourceManaActivation {
     
     public final MagicPermanent permanent;
-    public final MagicManaActivation activations[];
+    public final MagicManaActivation[] activations;
     public boolean available;
     public MagicManaType manaType;
     

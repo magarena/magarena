@@ -3,7 +3,7 @@ package magic.model;
 public class MagicLogMessageBuilder {
 
     private final MagicGame game;
-    private final StringBuilder messageBuilders[];
+    private final StringBuilder[] messageBuilders;
     
     MagicLogMessageBuilder(final MagicGame game) {
         this.game=game;

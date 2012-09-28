@@ -39,7 +39,7 @@ public class Aurification {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPermanent creature = (MagicPermanent)data[0];
             game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.Gold,1,true));
@@ -92,7 +92,7 @@ public class Aurification {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             final Collection<MagicTarget> targets =
                     game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE);

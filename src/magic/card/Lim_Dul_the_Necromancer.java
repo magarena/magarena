@@ -58,7 +58,7 @@ public class Lim_Dul_the_Necromancer {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
+                final Object[] data,
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 final MagicCard card = (MagicCard)data[0];

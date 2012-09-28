@@ -71,7 +71,7 @@ public class MagicCombatDamageAction extends MagicAction {
                             // Determine what damage must be dealt to each blocker.
                             final boolean deathtouch=MagicAbility.Deathtouch.hasAbility(flags);
                             final MagicPermanentList blockers=attacker.getBlockingCreatures();
-                            final int attackerDamage[]=new int[blockers.size()];
+                            final int[] attackerDamage=new int[blockers.size()];
                             for (int index=0;power>0&&index<attackerDamage.length;index++) {
                                 
                                 final MagicPermanent blocker=blockers.get(index);

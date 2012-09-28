@@ -21,7 +21,7 @@ public class Guardian_Seraph {
         }
         
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
         
         }
     };
