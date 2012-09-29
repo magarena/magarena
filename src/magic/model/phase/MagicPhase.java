@@ -51,6 +51,8 @@ public abstract class MagicPhase {
                         } else {
                             game.setStep(MagicStep.NextPhase);
                         }
+                    } else {
+                        game.checkState();
                     }
                 } else {
                     game.setStep(MagicStep.ActivePlayer);                        
