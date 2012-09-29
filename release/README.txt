@@ -54,6 +54,42 @@ Thank you for your support and have fun!
 
 
 
+Release 1.30 (September 30, 2012)
+============
+includes contributions from melvin, a. benedict balbuena, and kdesmond
+
+- mulligan option is always available
+- added "effect" property to card script to allow spells to be scripted, 
+  currently supports destroy, exile and counter
+- added "kicker", "multikicker", and "enters with x" to "ability" property in card script,
+  specific effect needs to be implemented as triggers in card code
+
+- fixed: wrong URL of card image for Air Bladder, Horn of Ramos, and Mox Jet
+- fixed: Twilight Drover's ability did not trigger for some types of tokens
+- fixed: Berserker Murlodont was only affecting Beasts you control
+- fixed: Edge of Divinity was missing "enchant" property in card script
+
+- added the following cards:
+Alaborn Musketeer, Armored Pegasus, Arrogant Vampire, Battlefield Percher,
+Belbe's Percher, Bird Maiden, Bloodied Ghost, City of Brass, Cloud Djinn,
+Cloud Dragon, Cloud Pirates, Cloud Spirit, Cobalt Golem, Craterize,
+Crazed Skirge, Dakmor Bat, Darklit Gargoyle, Death Stroke, Desert Drake,
+Desert Twister, Djinn of the Lamp, Dread Reaper, Dungeon Shade,
+Emerald Dragonfly, False Summoning, Firefly, Flying Men, Ghostly Visit,
+Griselbrand, Gust-Skimmer, Hand of Death, Ice Storm, Killer Bees,
+Killer Whale, Last Word, Lava Flow, Lotus Guardian, Mawcor, Mesa Falcon,
+Misshapen Fiend, Moaning Spirit, Moon Sprite, Moonwing Moth, Murder,
+Nightwing Shade, Patagia Golem, Pearl Dragon, Phantom Monster,
+Preemptive Strike, Quiet Purity, Rishadan Airship, Roofstalker Wight,
+Royal Falcon, Rune-Cervin Rider, Sabertooth Wyvern, Shifting Sliver,
+Shriek Raptor, Silver Erne, Sinkhole, Sky Spirit, Spotted Griffin,
+Starlit Angel, Stone Spirit, Stream Hopper, Sunder from Within,
+Talas Air Ship, Talas Scout, Talonrend, Thornling, Thornwind Faeries,
+Thunder Spirit, Thunder Wall, Torch Drake, Tormented Angel, Tower Drake,
+Treetop Rangers, Vampiric Spirit, Vengeance, Venser's Sliver,
+Viashivan Dragon, Volcanic Awakening, Volcano Imp, Ward Sliver,
+Whiptongue Frog, Willow Faerie, Wing Snare, Winter's Grasp, Wreak Havoc
+
 Release 1.29 (August 25, 2012)
 ============
 includes contributions from melvin, a. benedict balbuena, spartan vi, Braullynn
