@@ -154,6 +154,7 @@ Corrupted Conscience
 Corrupted Harvester
 Corrupted Resolve
 Craterhoof Behemoth
+Craterize
 Crimson Mage
 Crippling Blight
 Crippling Chill
@@ -347,12 +348,14 @@ Grim Flowering
 Grimgrin, Corpse-Born
 Grimoire of the Dead
 Griptide
+Griselbrand
 Grounded
 Gryff Vanguard
 Guardian Lions
 Guardians of Akrasa
 Guardians' Pledge
 Guise of Fire
+Gust-Skimmer
 Halt Order
 Hamlet Captain
 Hand of the Praetors
@@ -492,6 +495,7 @@ Moriok Reaver
 Morkrut Banshee
 Mountain
 Mox Opal
+Murder
 Murder of Crows
 Myr Galvanizer
 Myr Propagator
@@ -622,6 +626,7 @@ Shattered Angel
 Sheoldred, Whispering One
 Shock
 Shriekgeist
+Shriek Raptor
 Shrine of Burning Rage
 Sickleslicer
 Siege Mastodon

@@ -240,6 +240,7 @@ Countersquall
 Court Archers
 Cradle of Vitality
 Craterhoof Behemoth
+Craterize
 Craw Wurm
 Creeping Tar Pit
 Crimson Mage
@@ -259,6 +260,7 @@ Cylian Elf
 Cystbearer
 Daggerback Basilisk
 Dark Favor
+Darklit Gargoyle
 Darkslick Drake
 Darkslick Shores
 Darksteel Axe
@@ -509,6 +511,7 @@ Grim Flowering
 Grimgrin, Corpse-Born
 Grimoire of the Dead
 Griptide
+Griselbrand
 Grixis Grimblade
 Grizzled Leotau
 Grounded
@@ -520,6 +523,7 @@ Guardian Seraph
 Guardians of Akrasa
 Guardians' Pledge
 Guise of Fire
+Gust-Skimmer
 Guul Draz Assassin
 Guul Draz Specter
 Guul Draz Vampire
@@ -770,6 +774,7 @@ Morkrut Banshee
 Mountain
 Mox Opal
 Murasa Pyromancer
+Murder
 Murder of Crows
 Mycoid Shepherd
 Mycoloth
@@ -807,6 +812,7 @@ Niblis of the Urn
 Nightmare
 Night Revelers
 Nightshade Peddler
+Nightwing Shade
 Nimana Sell-Sword
 Nimbus Wings
 Nirkana Cutthroat
@@ -988,6 +994,7 @@ Shivan Dragon
 Shock
 Shore Snapper
 Shriekgeist
+Shriek Raptor
 Shrine of Burning Rage
 Sickleslicer
 Siege-Gang Commander
@@ -1120,6 +1127,7 @@ Terminus
 Terra Stomper
 Territorial Baloth
 Thatcher Revolt
+Thornling
 Thought Scour
 Thraben Doomsayer
 Thraben Purebloods

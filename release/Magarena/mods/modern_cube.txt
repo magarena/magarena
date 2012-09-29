@@ -210,6 +210,7 @@ Bloodflow Connoisseur
 Bloodgift Demon
 Bloodhall Ooze
 Bloodhusk Ritualist
+Bloodied Ghost
 Blood Knight
 Bloodmark Mentor
 Blood Ogre
@@ -330,6 +331,7 @@ Chrome Steed
 Chronozoa
 Cinderbones
 Circle of Flame
+City of Brass
 Claustrophobia
 Cliff Threader
 Clifftop Retreat
@@ -341,6 +343,7 @@ Cloud Elemental
 Cloudheath Drake
 Cloudshift
 Cloud Sprite
+Cobalt Golem
 Cobbled Wings
 Colossal Might
 Coma Veil
@@ -372,6 +375,7 @@ Crabapple Cohort
 Cradle of Vitality
 Crafty Pathmage
 Craterhoof Behemoth
+Craterize
 Craw Giant
 Crawling Filth
 Craw Wurm
@@ -403,6 +407,7 @@ Daggerclaw Imp
 Damnation
 Dancing Scimitar
 Dark Favor
+Darklit Gargoyle
 Darkslick Drake
 Darkslick Shores
 Darksteel Axe
@@ -632,6 +637,7 @@ Flight
 Flight of Fancy
 Flowstone Crusher
 Flowstone Shambler
+Flying Men
 Fog
 Followed Footsteps
 Fomori Nomad
@@ -788,6 +794,7 @@ Grim Flowering
 Grimgrin, Corpse-Born
 Grimoire of the Dead
 Griptide
+Griselbrand
 Gristleback
 Grixis Grimblade
 Grizzled Leotau
@@ -803,6 +810,7 @@ Guardians of Akrasa
 Guardians' Pledge
 Guise of Fire
 Gustcloak Cavalier
+Gust-Skimmer
 Guul Draz Assassin
 Guul Draz Specter
 Guul Draz Vampire
@@ -1023,6 +1031,7 @@ Lagac Lizard
 Lantern Kami
 Lantern Spirit
 Last Gasp
+Last Word
 Latch Seeker
 Lava Axe
 Lavaborn Muse
@@ -1176,6 +1185,7 @@ Moonglove Winnower
 Moon Heron
 Moonsilver Spear
 Moonveil Dragon
+Moonwing Moth
 Moorland Inquisitor
 Mordant Dragon
 Moriok Reaver
@@ -1192,6 +1202,7 @@ Mox Opal
 Mudbrawler Cohort
 Mudbrawler Raiders
 Murasa Pyromancer
+Murder
 Murder of Crows
 Murderous Redcap
 Murkfiend Liege
@@ -1247,6 +1258,7 @@ Nightshade Peddler
 Nightshade Stinger
 Nightsoil Kami
 Night's Whisper
+Nightwing Shade
 Nimana Sell-Sword
 Nimbus Wings
 Nip Gwyllion
@@ -1295,6 +1307,7 @@ Pacifism
 Paladin en-Vec
 Paralyzing Grasp
 Paraselene
+Patagia Golem
 Pathbreaker Wurm
 Peace Strider
 Pegasus Charger
@@ -1370,6 +1383,7 @@ Quest for Renewal
 Quest for the Gemblades
 Quest for the Gravelord
 Quicksilver Amulet
+Quiet Purity
 Quietus Spike
 Quirion Dryad
 Rabble-Rouser
@@ -1451,6 +1465,7 @@ Ronin Cavekeeper
 Ronin Cliffrider
 Ronin Houndmaster
 Ronin Warclub
+Roofstalker Wight
 Rootbound Crag
 Rootbreaker Wurm
 Rootrunner
@@ -1462,6 +1477,7 @@ Rotting Legion
 Roughshod Mentor
 Royal Assassin
 Rumbling Slum
+Rune-Cervin Rider
 Runeclaw Bear
 Rupture Spire
 Rush of Blood
@@ -1554,6 +1570,7 @@ Shivan Hellkite
 Shock
 Shore Snapper
 Shriekgeist
+Shriek Raptor
 Shrine of Burning Rage
 Sickle Ripper
 Sickleslicer
@@ -1708,6 +1725,7 @@ Stormfront Pegasus
 Strandwalker
 Strangleroot Geist
 Stratozeppelid
+Stream Hopper
 Streetbreaker Wurm
 Strider Harness
 Stromgald Crusader
@@ -1727,6 +1745,7 @@ Sudden Disappearance
 Sudden Impact
 Sulfur Falls
 Sunblast Angel
+Sunder from Within
 Sunhome, Fortress of the Legion
 Sunpetal Grove
 Sunspear Shikari
@@ -1754,6 +1773,7 @@ Sylvok Lifestaff
 Szadek, Lord of Secrets
 Tajuru Archer
 Takeno's Cavalry
+Talonrend
 Talon Trooper
 Talus Paladin
 Tangle Asp
@@ -1783,6 +1803,7 @@ Thatcher Revolt
 The Rack
 Thief of Hope
 Thieving Magpie
+Thornling
 Thornweald Archer
 Thought Scour
 Thoughtweft Gambit
@@ -1812,6 +1833,7 @@ Titanic Growth
 Titanic Ultimatum
 To Arms!
 Tolsimir Wolfblood
+Torch Drake
 Torch Fiend
 Torii Watchward
 Tormented Soul
@@ -1885,6 +1907,7 @@ Vampire Interloper
 Vampire Nighthawk
 Vampire Outcasts
 Vampiric Fury
+Vampiric Spirit
 Vanishment
 Vapor Snag
 Vastwood Gorger
@@ -1897,8 +1920,10 @@ Vedalken Mastermind
 Vedalken Outlander
 Venerable Kumo
 Venerable Monk
+Vengeance
 Vengeful Vampire
 Venser, Shaper Savant
+Venser's Sliver
 Verdant Force
 Vessel of Endless Rest
 Veteran Armorer
@@ -1932,6 +1957,7 @@ Vivid Meadow
 Vizzerdrix
 Voiceless Spirit
 Voice of the Provinces
+Volcanic Awakening
 Volcanic Dragon
 Volcanic Fallout
 Volcanic Hammer
@@ -1999,6 +2025,7 @@ Wind Drake
 Windrider Eel
 Wingcrafter
 Winged Coatl
+Wing Snare
 Wing Splicer
 Wistful Selkie
 Witherscale Wurm
@@ -2018,6 +2045,7 @@ Wort, Boggart Auntie
 Wrack with Madness
 Wrap in Vigor
 Wrath of God
+Wreak Havoc
 Wreath of Geists
 Wrecking Ball
 Wren's Run Packmaster
