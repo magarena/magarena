@@ -13,9 +13,6 @@ all: $(MAG) $(EXE) tags
 zips:
 	make M`grep Release release/README.txt | head -1 | cut -d' ' -f2`
 
-check_literals:
-	grep "\"" src/magic/card/* | awk -f scripts/check_literals.awk
-
 cubes: \
 	cards/standard_all.txt \
 	cards/extended_all.txt \
@@ -328,15 +325,6 @@ up:
 	hg pull -u
 	cd wiki; hg pull -u; cd ..
 
-cards/with_card_code:
-	ls -1 src/magic/card/*.java | cut -d'/' -f 4 | sed 's/.java//' | sort > $@
-
-cards/require_card_code:
-	grep requires_card_code release/Magarena/scripts/* | cut -d'/' -f4 | sed 's/.txt:.*//' | sort > $@
-
-check_requires_card_code: cards/with_card_code cards/require_card_code
-	diff $^
-
 code_clones:
 	~/App/pmd-bin-5.0-alpha/bin/run.sh cpd \
 			--minimum-tokens 100 \
@@ -425,3 +413,13 @@ check_data: scripts/check_data.awk
 # every aura must have an enchant property
 check_aura:
 	diff <(grep "subtype.*Aura" -lr release/Magarena/scripts | sort) <(grep enchant= -lr release/Magarena/scripts | sort)
+
+# every card that requires card code has a corresponding card class
+# every card class has a corresponding card script that requires card code
+check_requires_card_code:
+	diff \
+	<(ls -1 src/magic/card/*.java | cut -d'/' -f 4 | sed 's/.java//' | sort) \
+	<(grep requires_card_code release/Magarena/scripts/* | cut -d'/' -f4 | sed 's/.txt:.*//' | sort)
+
+check_literals:
+	grep "\"" src/magic/card/* | awk -f scripts/check_literals.awk
