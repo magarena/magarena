@@ -334,6 +334,10 @@ public class MagicGame {
         return artificial;
     }
     
+    public boolean isReal() {
+        return !artificial;
+    }
+    
     public void setArtificial(final boolean art) {
         artificial = art;
     }
