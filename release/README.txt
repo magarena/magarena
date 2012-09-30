@@ -68,6 +68,7 @@ includes contributions from melvin, a. benedict balbuena, and kdesmond
 - fixed: Twilight Drover's ability did not trigger for some types of tokens
 - fixed: Berserker Murlodont was only affecting Beasts you control
 - fixed: Edge of Divinity was missing "enchant" property in card script
+- fixed: Arcbound Overseer's trigger not working on creatures with Modular
 
 - added the following cards:
 Alaborn Musketeer, Armored Pegasus, Arrogant Vampire, Battlefield Percher,
