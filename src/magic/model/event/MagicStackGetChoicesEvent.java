@@ -11,7 +11,7 @@ import magic.model.trigger.MagicTriggerType;
 public class MagicStackGetChoicesEvent extends MagicEvent {
     public MagicStackGetChoicesEvent(final MagicItemOnStack itemOnStack) {
         super(
-            itemOnStack.getSource(),
+            itemOnStack.getEvent().getSource(),
             itemOnStack.getController(),
             itemOnStack.getEvent().getChoice(),
             itemOnStack.getEvent().getTargetPicker(),
