@@ -126,11 +126,13 @@ public enum MagicAbility {
             final int n = Integer.parseInt(arg);
             card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.PlusOne,"+1/+1",n));
             card.add(MagicModularTrigger.create());
+            card.setAbilityFlags(card.getAbilityFlags() | getMask());
         }
     },
     Flanking("flanking",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             card.add(MagicFlankingTrigger.create());
+            card.setAbilityFlags(card.getAbilityFlags() | getMask());
         }
     },
 
