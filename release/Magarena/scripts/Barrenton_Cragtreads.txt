@@ -1,7 +1,7 @@
 name=Barrenton Cragtreads
 url=http://magiccards.info/shm/en/138.html
 image=http://magiccards.info/scans/en/shm/138.jpg
-value=2.000
+value=1.950
 rarity=C
 type=Creature
 subtype=Kithkin,Scout

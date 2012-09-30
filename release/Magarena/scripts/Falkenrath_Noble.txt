@@ -1,7 +1,7 @@
 name=Falkenrath Noble
 url=http://magiccards.info/isd/en/100.html
 image=http://magiccards.info/scans/en/isd/100.jpg
-value=3.877
+value=3.880
 rarity=U
 type=Creature
 subtype=Vampire

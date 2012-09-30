@@ -1,7 +1,7 @@
 name=Coral Eel
 url=http://magiccards.info/9eb/en/3.html
 image=http://magiccards.info/scans/en/9eb/3.jpg 
-value=2.170
+value=2.133
 rarity=C
 type=Creature
 subtype=Fish

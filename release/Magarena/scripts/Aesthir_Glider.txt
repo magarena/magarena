@@ -1,7 +1,7 @@
 name=Aesthir Glider
 url=http://magiccards.info/me4/en/176.html
 image=http://magiccards.info/scans/en/me4/176.jpg
-value=2.625
+value=2.560
 rarity=C
 type=Artifact,Creature
 subtype=Bird

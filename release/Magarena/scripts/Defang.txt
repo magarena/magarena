@@ -1,7 +1,7 @@
 name=Defang
 url=http://magiccards.info/avr/en/15.html
 image=http://magiccards.info/scans/en/avr/15.jpg
-value=2.241
+value=2.179
 rarity=C
 type=Enchantment
 subtype=Aura

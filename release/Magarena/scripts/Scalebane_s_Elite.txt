@@ -1,7 +1,7 @@
 name=Scalebane's Elite
 url=http://magiccards.info/vi/en/135.html
 image=http://magiccards.info/scans/en/vi/135.jpg
-value=2.966
+value=2.950
 rarity=U
 type=Creature
 subtype=Human,Soldier

@@ -1,7 +1,7 @@
 name=Sabertooth Wyvern
 url=http://magiccards.info/ex/en/99.html
 image=http://magiccards.info/scans/en/ex/99.jpg 
-value=2.339
+value=2.328
 rarity=U
 type=Creature
 subtype=Drake

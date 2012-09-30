@@ -1,7 +1,7 @@
 name=Vacuumelt
 url=http://magiccards.info/gp/en/40.html
 image=http://magiccards.info/scans/en/gp/40.jpg
-value=1.872
+value=1.312
 removal=2
 rarity=U
 type=Sorcery

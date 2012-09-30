@@ -1,7 +1,7 @@
 name=Engulfing Slagwurm
 url=http://magiccards.info/som/en/118.html
 image=http://magiccards.info/scans/en/som/118.jpg
-value=4.270
+value=4.275
 rarity=R
 type=Creature
 subtype=Wurm

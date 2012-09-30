@@ -1,7 +1,7 @@
 name=Mask of Law and Grace
 url=http://magiccards.info/ud/en/11.html
 image=http://magiccards.info/scans/en/ud/11.jpg
-value=3.315
+value=3.357
 rarity=C
 type=Enchantment
 subtype=Aura

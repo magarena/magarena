@@ -1,7 +1,7 @@
 name=Stream Hopper
 url=http://magiccards.info/eve/en/113.html
 image=http://magiccards.info/scans/en/eve/113.jpg
-value=2.549
+value=2.596
 rarity=C
 type=Creature
 subtype=Goblin

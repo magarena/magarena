@@ -1,7 +1,7 @@
 name=Thornling
 url=http://magiccards.info/cfx/en/95.html
 image=http://magiccards.info/scans/en/cfx/95.jpg
-value=3.823
+value=3.825
 rarity=M
 type=Creature
 subtype=Elemental,Shapeshifter

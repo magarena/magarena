@@ -1,7 +1,7 @@
 name=Gorehorn Minotaurs
 url=http://magiccards.info/m12/en/144.html
 image=http://magiccards.info/scans/en/m12/144.jpg
-value=3.578
+value=3.565
 rarity=C
 type=Creature
 subtype=Minotaur,Warrior

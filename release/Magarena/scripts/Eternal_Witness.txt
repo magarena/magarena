@@ -1,7 +1,7 @@
 name=Eternal Witness
 url=http://magiccards.info/cmd/en/152.html
 image=http://magiccards.info/scans/en/cmd/152.jpg
-value=4.663
+value=4.765
 rarity=U
 type=Creature
 subtype=Human,Shaman

@@ -1,7 +1,7 @@
 name=Ihsan's Shade
 url=http://magiccards.info/me2/en/95.html
 image=http://magiccards.info/scans/en/me2/95.jpg
-value=3.892
+value=3.877
 rarity=R
 type=Legendary,Creature
 subtype=Shade,Knight

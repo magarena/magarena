@@ -1,7 +1,7 @@
 name=Ravaging Riftwurm
 url=http://magiccards.info/fut/en/135.html
 image=http://magiccards.info/scans/en/fut/135.jpg
-value=2.706
+value=2.714
 rarity=U
 type=Creature
 subtype=Wurm

@@ -1,7 +1,7 @@
 name=Ardent Recruit
 url=http://magiccards.info/mbs/en/2.html
 image=http://magiccards.info/scans/en/mbs/2.jpg
-value=3.713
+value=3.728
 rarity=C
 type=Creature
 subtype=Human,Soldier

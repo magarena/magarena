@@ -1,7 +1,7 @@
 name=Myr Galvanizer
 url=http://magiccards.info/som/en/181.html
 image=http://magiccards.info/scans/en/som/181.jpg
-value=4.363
+value=4.368
 rarity=U
 type=Artifact,Creature
 subtype=Myr

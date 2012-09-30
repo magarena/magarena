@@ -1,7 +1,7 @@
 name=Cloud Dragon
 url=http://magiccards.info/me4/en/41.html
 image=http://magiccards.info/scans/en/me4/41.jpg
-value=2.850
+value=2.857
 rarity=R
 type=Creature
 subtype=Illusion,Dragon
