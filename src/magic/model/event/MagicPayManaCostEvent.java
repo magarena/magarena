@@ -24,7 +24,7 @@ public class MagicPayManaCostEvent extends MagicEvent {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            MagicEvent.payManaCost(game,event.getPlayer(),choiceResults,0);
+            event.payManaCost(game,event.getPlayer(),choiceResults);
         }
     };
 }

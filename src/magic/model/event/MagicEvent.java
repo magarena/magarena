@@ -366,7 +366,7 @@ public class MagicEvent implements MagicCopyable {
         }
     }
 
-    static final void payManaCost(
+    private static final void payManaCost(
             final MagicGame game,
             final MagicPlayer player,
             final Object[] choiceResults,

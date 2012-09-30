@@ -22,7 +22,7 @@ public class MagicPayManaCostSacrificeEvent extends MagicEvent {
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-            MagicEvent.payManaCost(game,event.getPlayer(),choiceResults,0);
+            event.payManaCost(game,event.getPlayer(),choiceResults);
             game.doAction(new MagicSacrificeAction(event.getPermanent()));
         }
     };

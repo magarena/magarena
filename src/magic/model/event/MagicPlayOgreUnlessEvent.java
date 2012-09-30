@@ -29,7 +29,7 @@ public class MagicPlayOgreUnlessEvent extends MagicEvent {
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                MagicEvent.payManaCost(game,event.getPlayer(),choiceResults,1);
+                event.payManaCost(game,event.getPlayer(),choiceResults);
             } else {
                 game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Ogre")));
             }
