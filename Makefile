@@ -423,3 +423,8 @@ check_requires_card_code:
 
 check_literals:
 	grep "\"" src/magic/card/* | awk -f scripts/check_literals.awk
+
+crash.txt: $(wildcard *.log)
+	for i in `grep "^Excep" -l $^`; do \
+		tail -n +`grep -n "random seed" $$i | tail -1 | cut -d':' -f1` $$i; \
+	done > $@
