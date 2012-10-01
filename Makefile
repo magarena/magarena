@@ -183,7 +183,7 @@ inf: $(MAG)
 	--ai2 MMAB --str2 1 \
 	--life 10 \
 	--games 1 \
-	--repeat 1000000 >> $*.log 2>&1
+	--repeat 50000 >> $*.log 2>&1
 	#$(JAVAEA) -DrndSeed=$* -Dmagarena.dir=`pwd`/release -DselfMode -jar $^ >> $*.log 2>&1
 
 test: $(MAG)
@@ -411,4 +411,4 @@ check_literals:
 crash.txt: $(wildcard *.log)
 	for i in `grep "^Excep" -l $^`; do \
 		tail -n +`grep -n "random seed" $$i | tail -1 | cut -d':' -f1` $$i; \
-	done > $@
+	done >> $@
