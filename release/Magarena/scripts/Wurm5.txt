@@ -1,0 +1,9 @@
+name=Wurm
+token=Wurm5
+image=http://magiccards.info/extras/token/return-to-ravnica/wurm.jpg
+value=4
+type=Creature
+subtype=Wurm
+color=g
+cost={0}
+pt=5/5
