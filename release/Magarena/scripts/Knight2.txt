@@ -1,0 +1,9 @@
+name=Knight
+token=Knight2
+image=http://magiccards.info/extras/token/return-to-ravnica/knight.jpg
+value=3
+type=Creature
+subtype=Knight
+color=w
+cost={0}
+pt=2/2

@@ -1,0 +1,13 @@
+name=Knightly Valor
+url=http://magiccards.info/rtr/en/13.html
+image=http://magiccards.info/scans/en/rtr/13.jpg
+value=3.850
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={4}{W}
+given_pt=+2/+2
+given_ability=vigilance
+timing=aura
+enchant=pump,pos creature
+requires_card_code
