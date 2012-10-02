@@ -13,17 +13,13 @@ public class Blade_of_the_Bloodchief {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
             final MagicPermanent equippedCreature = permanent.getEquippedCreature();
-            final boolean isVampire = equippedCreature.hasSubType(MagicSubType.Vampire);
-            final int numCounters = isVampire ? 2 : 1;
-            return (equippedCreature != MagicPermanent.NONE && otherPermanent.isCreature()) ?
+            return (equippedCreature.isValid() && otherPermanent.isCreature()) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
-                    new Object[]{equippedCreature,numCounters},
                     this,
-                    isVampire ?
-                        "Put two +1/+1 counters on " + equippedCreature + "." :
-                        "Put a +1/+1 counter on " + equippedCreature + ".") :
+                    "Put a +1/+1 counter on equipped creature. " + 
+                    "If equipped creature is a Vampire, put two +1/+1 counters on it instead."
+                ):
                 MagicEvent.NONE;
         }
         @Override
@@ -32,11 +28,14 @@ public class Blade_of_the_Bloodchief {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
+            final MagicPermanent equippedCreature = event.getPermanent().getEquippedCreature();
+            final int amount = equippedCreature.hasSubType(MagicSubType.Vampire) ? 2 : 1;
             game.doAction(new MagicChangeCountersAction(
-                    (MagicPermanent)data[0],
-                    MagicCounterType.PlusOne,
-                    (Integer)data[1],
-                    true));
+                equippedCreature,
+                MagicCounterType.PlusOne,
+                amount,
+                true
+            ));
         }
     };
 }
