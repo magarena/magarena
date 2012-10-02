@@ -27,16 +27,13 @@ public class Beastmaster_s_Magemark {
     
     public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
-            final MagicPlayer player = permanent.getController();
-            final int amount = blocker.getBlockingCreatures().size();
-            return (player == blocker.getController() && blocker.isEnchanted()) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocked) {
+            return (blocked.isFriend(permanent) && blocked.isEnchanted()) ?
                 new MagicEvent(
                     permanent,
-                    player,
-                    new Object[]{blocker,amount},
+                    new Object[]{blocked},
                     this,
-                    blocker + " gets +" + amount + "/+" +  amount + " until end of turn."
+                    blocked + " gets +1/+1 until end of turn for each creature blocking it."
                 ):
                 MagicEvent.NONE;
         }
@@ -47,10 +44,12 @@ public class Beastmaster_s_Magemark {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
+            final MagicPermanent blocked = (MagicPermanent)data[0];
+            final int amount = blocked.getBlockingCreatures().size();
             game.doAction(new MagicChangeTurnPTAction(
-                (MagicPermanent)data[0],
-                (Integer)data[1],
-                (Integer)data[1]
+                blocked,
+                amount,
+                amount
             ));
         }
     };
