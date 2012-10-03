@@ -160,7 +160,7 @@ public class MagicManaCost {
     
     private void addType(final String typeText, final int[] XCountArr, final int[] convertedArr) {
         final String symbol = typeText.substring(1, typeText.length() - 1);
-        if (symbol.equals("X")) {
+        if ("X".equals(symbol)) {
             XCountArr[0]++;
         } else if (isNumeric(symbol)) {
             addType(MagicCostManaType.Colorless,Integer.parseInt(symbol),convertedArr);
