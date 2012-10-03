@@ -82,13 +82,11 @@ public class Witherscale_Wurm {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicDamage damage) {
-            final MagicPlayer player = permanent.getController();
-            return (damage.getSource() == permanent &&
-                    damage.getTarget() == player.getOpponent() &&
+            return (permanent == damage.getSource() &&
+                    permanent.isOpponent(damage.getTarget()) &&
                     permanent.getCounters(MagicCounterType.MinusOne) > 0) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
                     "Remove all -1/-1 counters from SN."):
                 MagicEvent.NONE;
