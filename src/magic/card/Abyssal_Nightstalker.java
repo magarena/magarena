@@ -11,16 +11,14 @@ public class Abyssal_Nightstalker {
     public static final MagicWhenAttacksUnblockedTrigger T = new MagicWhenAttacksUnblockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            if (creature == permanent) {
-                final MagicPlayer player = permanent.getController();
-                final MagicPlayer opponent = player.getOpponent();
-                return new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        opponent + " discards a card.");
-            }
-            return MagicEvent.NONE;
+            return (creature == permanent) ?
+                new MagicEvent(
+                    permanent,
+                    permanent.getController().getOpponent(),
+                    this,
+                    "PN discards a card."
+                ):
+                MagicEvent.NONE;
         }
         
         @Override
@@ -30,10 +28,11 @@ public class Abyssal_Nightstalker {
                 final Object[] data,
                 final Object[] choiceResults) {
             game.addEvent(new MagicDiscardEvent(
-                    event.getPermanent(),
-                    event.getPlayer().getOpponent(),
-                    1,
-                    false));
+                event.getPermanent(),
+                event.getPlayer(),
+                1,
+                false
+            ));
         }
     };
 }
