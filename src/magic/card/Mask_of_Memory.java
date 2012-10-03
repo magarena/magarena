@@ -18,21 +18,21 @@ public class Mask_of_Memory {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicDamage damage) {
-            final MagicPlayer player = permanent.getController();
             return (permanent.getEquippedCreature() == damage.getSource() &&
                     damage.getTarget().isPlayer() &&
                     damage.isCombat()) ?
-                    new MagicEvent(
-                            permanent,
-                            player,
-                            new MagicSimpleMayChoice(
-                                    "You may draw two cards.",
-                                    MagicSimpleMayChoice.DRAW_CARDS,
-                                    2,
-                                    MagicSimpleMayChoice.DEFAULT_NONE),
-                            this,
-                            "You may$ draw two cards. If you do, discard a card.") :
-                    MagicEvent.NONE;
+                new MagicEvent(
+                    permanent,
+                    new MagicSimpleMayChoice(
+                        "You may draw two cards.",
+                        MagicSimpleMayChoice.DRAW_CARDS,
+                        2,
+                        MagicSimpleMayChoice.DEFAULT_NONE
+                    ),
+                    this,
+                    "You may$ draw two cards. If you do, discard a card."
+                ) :
+                MagicEvent.NONE;
         }
 
         @Override
