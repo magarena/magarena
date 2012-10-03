@@ -47,7 +47,7 @@ public class PermanentFilter implements ActionListener {
     private final JPanel viewer;
     private final GameController controller;
     private final JToggleButton[] filterButtons;
-    private int filter=0;
+    private int filter;
     
     public PermanentFilter(final JPanel viewer,final GameController controller) {
 

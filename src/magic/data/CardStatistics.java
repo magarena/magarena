@@ -45,21 +45,21 @@ public class CardStatistics {
     
     private final Collection<MagicCardDefinition> cards;
     
-    private int totalCards=0;
+    private int totalCards;
     public final int[] totalTypes=new int[NR_OF_TYPES];
     
     private final int[] totalRarity=new int[MagicRarity.length];
     
-    private double averageCost=0;
-    private double averageValue=0;
+    private double averageCost;
+    private double averageValue;
     
     public final int[] colorCount=new int[MagicColor.NR_COLORS];
     public final int[] colorMono=new int[MagicColor.NR_COLORS];
     public final int[] colorLands=new int[MagicColor.NR_COLORS];
     public final int[] manaCurve=new int[MANA_CURVE_SIZE];
-    public int monoColor=0;
-    public int multiColor=0;
-    public int colorless=0;
+    public int monoColor;
+    public int multiColor;
+    public int colorless;
     
     public CardStatistics(final Collection<MagicCardDefinition> cards) {
         this.cards=cards;

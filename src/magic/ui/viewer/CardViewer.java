@@ -25,7 +25,7 @@ public class CardViewer extends JPanel implements DelayedViewer {
 
     private final TransparentImagePanel cardPanel;
     private MagicCardDefinition currentCardDefinition;
-    private int currentIndex=0;
+    private int currentIndex;
     private final boolean image;
     private final boolean opaque;
     

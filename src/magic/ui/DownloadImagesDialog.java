@@ -48,7 +48,7 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
     private final Thread downloader;
     private File oldDataFolder = new File("");
     private Proxy proxy;
-    private boolean cancelDownload = false;
+    private boolean cancelDownload;
 
     public DownloadImagesDialog(final MagicFrame frame) {
         super("Download card images and text");

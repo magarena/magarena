@@ -19,7 +19,7 @@ public class DeckDescriptionPreview extends JComponent implements PropertyChange
 
     private static final long serialVersionUID = 1L;
     
-    File file = null;
+    File file;
     String description;
     private final JTextArea textArea = new JTextArea();
     private final JScrollPane scrollPane = new JScrollPane(textArea);

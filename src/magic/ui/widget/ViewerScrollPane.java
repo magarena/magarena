@@ -13,7 +13,7 @@ public class ViewerScrollPane extends JScrollPane {
 
     private static final long serialVersionUID = 1L;
 
-    private JPanel contentPanel=null;
+    private JPanel contentPanel;
     
     public ViewerScrollPane() {
         

@@ -51,7 +51,7 @@ public class MagicGame {
     private static final int LOSING_POISON=10;
     private static final long ID_FACTOR=31;
     
-    private static int COUNT = 0;
+    private static int COUNT;
     private static MagicGame INSTANCE;
     
     private final MagicDuel duel;
@@ -64,21 +64,21 @@ public class MagicGame {
     private final MagicStack stack;
     private final MagicPlayer scorePlayer;
     private final boolean sound;
-    private int score=0;
+    private int score;
     private int turn=1;
-    private int startTurn=0;
+    private int startTurn;
     private int mainPhaseCount=100000000;
-    private int landPlayed=0;
-    private int spellsPlayed = 0;
-    private boolean creatureDiedThisTurn = false;
-    private boolean priorityPassed=false;
-    private int priorityPassedCount=0;
-    private boolean skipTurn=false;
-    private boolean stateCheckRequired=false;
+    private int landPlayed;
+    private int spellsPlayed;
+    private boolean creatureDiedThisTurn;
+    private boolean priorityPassed;
+    private int priorityPassedCount;
+    private boolean skipTurn;
+    private boolean stateCheckRequired;
     private boolean artificial;
-    private boolean fastChoices=false;
-    private boolean immediate=false;
-    private boolean disableLog = false; 
+    private boolean fastChoices;
+    private boolean immediate;
+    private boolean disableLog;
     private MagicPlayer visiblePlayer;
     private MagicPlayer turnPlayer;
     private MagicPlayer losingPlayer = MagicPlayer.NONE;

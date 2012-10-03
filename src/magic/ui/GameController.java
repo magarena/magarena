@@ -47,10 +47,10 @@ public class GameController {
     private CardViewer cardViewer;
     private CardViewer imageCardViewer;
     private GameViewer gameViewer;
-    private boolean undoClicked=false;
-    private boolean actionClicked=false;
-    private boolean combatChoice=false;
-    private boolean resetGame=false;
+    private boolean undoClicked;
+    private boolean actionClicked;
+    private boolean combatChoice;
+    private boolean resetGame;
     private MagicTarget choiceClicked = MagicTargetNone.getInstance();
     private MagicCardDefinition sourceCardDefinition = MagicCardDefinition.UNKNOWN ;
     

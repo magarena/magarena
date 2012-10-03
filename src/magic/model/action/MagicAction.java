@@ -6,7 +6,7 @@ import magic.model.MagicPlayer;
 public abstract class MagicAction {
     
     private MagicPlayer scorePlayer;
-    private int score=0;
+    private int score;
     
     final void setScore(final MagicPlayer aScorePlayer, final int aScore) {
         this.scorePlayer=aScorePlayer;

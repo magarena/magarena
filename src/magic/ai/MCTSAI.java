@@ -475,14 +475,14 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     private final LinkedList<MCTSGameTree> children = new LinkedList<MCTSGameTree>();
     private final int choice;
     private boolean isAI;
-    private boolean isCached = false;
+    private boolean isCached;
     private int maxChildren = -1;
-    private int numLose = 0;
-    private int numSim = 0;
-    private int evalScore = 0;
-    private int steps = 0;
-    private double sum = 0;
-    private double S = 0;
+    private int numLose;
+    private int numSim;
+    private int evalScore;
+    private int steps;
+    private double sum;
+    private double S;
     String desc;
     private String[] choicesStr;
     

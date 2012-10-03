@@ -21,9 +21,9 @@ public class CustomTheme extends AbstractTheme {
     private static final int MAX_AVATARS=100;
     
     private final File file;
-    private ZipFile zipFile=null;
+    private ZipFile zipFile;
     private final PlayerAvatar[] playerAvatars;    
-    private int nrOfAvatars=0;
+    private int nrOfAvatars;
     
     public CustomTheme(final File file,final String name) {
         super(name);

@@ -10,8 +10,8 @@ public class TransparentImagePanel extends JPanel {
 
     private static final long serialVersionUID = 1L;
 
-    private BufferedImage image=null;
-    private RescaleOp rescaleOp=null;
+    private BufferedImage image;
+    private RescaleOp rescaleOp;
 
     public void setOpacity(final float opacity) {
         if (opacity>=1.0f) {

@@ -41,7 +41,7 @@ public class GameViewer extends TexturedPanel implements ActionListener {
     private final CardLayout actionCardLayout;
     private final JPanel contentPanel;
     private JComponent content;
-    private boolean actionEnabled=false;
+    private boolean actionEnabled;
     
     public GameViewer(final MagicGame game,final GameController controller) {
 

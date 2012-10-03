@@ -18,7 +18,7 @@ public class DeckStrCal {
     private static int str1 = 6;
     private static int str2 = 6;
     private static int life = 20;
-    private static int seed = 0; 
+    private static int seed;
     private static String deck1 = "";
     private static String deck2 = "";
     private static MagicAIImpl ai1 = MagicAIImpl.MMAB;

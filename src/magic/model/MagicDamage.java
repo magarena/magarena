@@ -8,10 +8,10 @@ public class MagicDamage {
     private final MagicSource source;
     private MagicTarget target;
     private int amount;
-    private int dealtAmount=0;
+    private int dealtAmount;
     private final boolean combat;
-    private boolean unpreventable=false;
-    private boolean noRegeneration=false;
+    private boolean unpreventable;
+    private boolean noRegeneration;
 
     public MagicDamage(final MagicSource source,final MagicTarget target,final int amount,final boolean combat) {
         this.source=source;

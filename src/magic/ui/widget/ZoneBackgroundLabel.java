@@ -16,10 +16,10 @@ public class ZoneBackgroundLabel extends JLabel {
 
     private static final long serialVersionUID = 1L;
 
-    private boolean game=false;
+    private boolean game;
     private boolean image=true;
-    private int playerX=0;
-    private int handY=0;
+    private int playerX;
+    private int handY;
     
     public void setGame(final boolean game) {
         this.game=game;

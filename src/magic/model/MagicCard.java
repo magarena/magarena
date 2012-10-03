@@ -24,7 +24,7 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
     private final MagicPlayer owner;
     private final long id;
     private final int imageIndex;
-    private boolean token=false;
+    private boolean token;
     private boolean known=true;
     
     public MagicCard(final MagicCardDefinition aCardDefinition,final MagicPlayer aOwner,final long aId) {

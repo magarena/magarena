@@ -16,7 +16,7 @@ import java.util.Collection;
 public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
 
     private MagicLocationType moveLocation=MagicLocationType.Graveyard;
-    private int x=0;
+    private int x;
     
     public MagicCardOnStack(final MagicCard card,final MagicPlayer controller,final MagicPayedCost payedCost) {
         setSource(card);

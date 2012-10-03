@@ -25,7 +25,7 @@ public class MayChoicePanel extends JPanel implements ActionListener {
     
     private final GameController controller;
     private final JButton yesButton;
-    private boolean yes=false;
+    private boolean yes;
     
     public MayChoicePanel(final GameController controller,final MagicSource source,final String message) {
         

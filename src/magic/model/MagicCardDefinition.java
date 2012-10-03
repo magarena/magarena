@@ -46,12 +46,12 @@ public class MagicCardDefinition {
         }
     };
 
-    private static int numTriggers = 0;
-    private static int numStatics = 0;
-    private static int numPermanentActivations = 0;
-    private static int numManaActivations = 0;
-    private static int numSpellEvent = 0;
-    private static int numCDAs = 0;
+    private static int numTriggers;
+    private static int numStatics;
+    private static int numPermanentActivations;
+    private static int numManaActivations;
+    private static int numSpellEvent;
+    private static int numCDAs;
 
     private String name;
     private String fullName;
@@ -60,21 +60,21 @@ public class MagicCardDefinition {
     private int imageCount = 1;
     private Collection<Long> ignore;
     private int index=-1;
-    private double value=0;
-    private int removal=0;
+    private double value;
+    private int removal;
     private int score=-1; // not initialized
     private MagicRarity rarity;
-    private boolean token=false;
-    private boolean hasCode=false;
-    private int typeFlags=0;
+    private boolean token;
+    private boolean hasCode;
+    private int typeFlags;
     private EnumSet<MagicSubType> subTypeFlags = EnumSet.noneOf(MagicSubType.class);
-    private int colorFlags=0;
+    private int colorFlags;
     private MagicManaCost cost=MagicManaCost.ZERO;
     private String manaSourceText="";
     private final int[] manaSource=new int[MagicColor.NR_COLORS];
-    private int power=0;
-    private int toughness=0;
-    private long abilityFlags=0;
+    private int power;
+    private int toughness;
+    private long abilityFlags;
     private String text = "";
     private MagicStaticType staticType=MagicStaticType.None;
     private MagicTiming timing=MagicTiming.None;
@@ -89,7 +89,7 @@ public class MagicCardDefinition {
     private final Collection<MagicTrigger<?>> putIntoGraveyardTriggers = new ArrayList<MagicTrigger<?>>();
     private final Collection<MagicActivation> activations=new ArrayList<MagicActivation>();
     private final Collection<MagicManaActivation> manaActivations=new ArrayList<MagicManaActivation>();
-    private boolean excludeManaOrCombat=false;
+    private boolean excludeManaOrCombat;
     
     public MagicCardDefinition() {
         initialize();    

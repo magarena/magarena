@@ -42,7 +42,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
     private MagicCardList cardList;
     private List<Point> cardPoints;
     private Set<Object> validChoices;
-    private boolean showInfo=false;
+    private boolean showInfo;
     
     public ImageCardListViewer(final GameController controller) {
         setOpaque(false);

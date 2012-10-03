@@ -91,20 +91,20 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     private int stateFlags = 
             MagicPermanentState.Summoned.getMask() |
             MagicPermanentState.MustPayEchoCost.getMask();
-    private int abilityPlayedThisTurn=0;
-    private int damage=0;
-    private int preventDamage=0;
-    private int kicker=0;
+    private int abilityPlayedThisTurn;
+    private int damage;
+    private int preventDamage;
+    private int kicker;
     private final int fixedScore;
     private int score;
 
     // Allows cached retrieval of controller, type, subtype, color, abilites, and p/t
     // also acts as last known information
     private MagicPlayer cachedController;
-    private int cachedTypeFlags=0;
+    private int cachedTypeFlags;
     private EnumSet<MagicSubType> cachedSubTypeFlags;
-    private int cachedColorFlags=0;
-    private long cachedAbilityFlags=0;
+    private int cachedColorFlags;
+    private long cachedAbilityFlags;
     private MagicPowerToughness cachedPowerToughness;
 
     // remember order among blockers (blockedName + id + block order)

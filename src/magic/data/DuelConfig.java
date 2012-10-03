@@ -30,7 +30,7 @@ public class DuelConfig {
     private static final String CUBE="cube";
     private static final String AI="ai";
 
-    private int avatar=0;
+    private int avatar;
     private String name="Player";
     private int startLife=20;
     private int handSize=7;
