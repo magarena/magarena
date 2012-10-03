@@ -18,7 +18,6 @@ public class Black_Vise {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPlayer upkeepPlayer) {
-            final MagicPlayer player = permanent.getController();
             final MagicTarget target = permanent.getChosenTarget();
             return (upkeepPlayer == target) ?
                 new MagicEvent(

@@ -21,7 +21,6 @@ public class Boggart_Shenanigans {
         final MagicGame game,
         final MagicPermanent permanent, 
         final MagicPermanent died) {
-        final MagicPlayer player = permanent.getController();
         return (died != permanent &&
                 died.hasSubType(MagicSubType.Goblin) &&
                 died.isFriend(permanent)) ?

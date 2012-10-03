@@ -18,7 +18,6 @@ public class Balefire_Dragon {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final int amount = damage.getDealtAmount();
-            final MagicPlayer player = permanent.getController();
             return (amount > 0 &&
                     damage.getSource() == permanent &&
                     damage.getTarget().isPlayer() &&
