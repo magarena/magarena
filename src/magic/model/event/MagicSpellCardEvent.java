@@ -11,8 +11,6 @@ import magic.model.target.MagicTargetPicker;
 
 public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAction,MagicChangeCardDefinition {
 
-    public MagicSpellCardEvent() {}
-
     @Override
     public void change(final MagicCardDefinition cdef) {
         cdef.setEvent(this);

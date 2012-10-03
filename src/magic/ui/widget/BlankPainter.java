@@ -7,9 +7,6 @@ import java.awt.Graphics2D;
 
 // for overriding painters that can't be configured to paint nothing
 public class BlankPainter extends AbstractRegionPainter {
-    public BlankPainter() {
-        super();
-    }
 
     @Override
     protected void doPaint(final Graphics2D g, final JComponent c, final int width, final int height, final Object[] extendedCacheKeys) {
