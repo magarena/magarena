@@ -24,7 +24,7 @@ public class MagicModularTrigger extends MagicWhenPutIntoGraveyardTrigger {
 
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
-        if (MagicLocationType.Play == triggerData.fromLocation) {
+        if (triggerData.fromLocation == MagicLocationType.Play) {
             final int amount = permanent.getCounters(MagicCounterType.PlusOne);
             return new MagicEvent(
                 permanent,

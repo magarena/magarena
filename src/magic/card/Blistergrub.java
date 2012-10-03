@@ -14,7 +14,7 @@ public class Blistergrub {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
             final MagicPlayer player = permanent.getController();
-            return (MagicLocationType.Play == triggerData.fromLocation) ?
+            return (triggerData.fromLocation == MagicLocationType.Play) ?
                 new MagicEvent(
                         permanent,
                         player,

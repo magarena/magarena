@@ -117,10 +117,10 @@ public abstract class MagicChoice {
             final MagicSource source);
 
     public static boolean isYesChoice(final Object choiceResult) {
-        return YES_CHOICE==choiceResult;
+        return choiceResult == YES_CHOICE;
     }
 
     public static boolean isNoChoice(final Object choiceResult) {
-        return NO_CHOICE==choiceResult;
+        return choiceResult == NO_CHOICE;
     }
 }

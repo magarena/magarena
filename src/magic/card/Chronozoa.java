@@ -14,7 +14,7 @@ public class Chronozoa {
     public static final MagicWhenPutIntoGraveyardTrigger T3 = new MagicWhenPutIntoGraveyardTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
-            return (MagicLocationType.Play == triggerData.fromLocation &&
+            return (triggerData.fromLocation == MagicLocationType.Play &&
                     permanent.getCounters(MagicCounterType.Charge) == 0) ?
                 new MagicEvent(
                     permanent,

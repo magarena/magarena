@@ -16,7 +16,7 @@ public class Soulcage_Fiend {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicGraveyardTriggerData triggerData) {
-            return (MagicLocationType.Play == triggerData.fromLocation) ?
+            return (triggerData.fromLocation == MagicLocationType.Play) ?
                 new MagicEvent(
                         permanent,
                         permanent.getController(),

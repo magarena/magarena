@@ -18,7 +18,7 @@ public class Goblin_Arsonist {
     public static final MagicWhenPutIntoGraveyardTrigger T = new MagicWhenPutIntoGraveyardTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
-            return (MagicLocationType.Play == triggerData.fromLocation) ?
+            return (triggerData.fromLocation == MagicLocationType.Play) ?
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(

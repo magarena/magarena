@@ -34,7 +34,7 @@ public class Kodama_of_the_Center_Tree {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicGraveyardTriggerData triggerData) {
-            if (MagicLocationType.Play == triggerData.fromLocation) {
+            if (triggerData.fromLocation == MagicLocationType.Play) {
                 final MagicPlayer player = permanent.getController();
                 final int cmc = game.filterTargets(player,
                         MagicTargetFilter.TARGET_SPIRIT_YOU_CONTROL).size()+1;

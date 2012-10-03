@@ -29,7 +29,7 @@ public class MagicSoulshiftTrigger extends MagicWhenPutIntoGraveyardTrigger {
             final MagicGame game,
             final MagicPermanent permanent,
             final MagicGraveyardTriggerData triggerData) {
-        if (MagicLocationType.Play == triggerData.fromLocation) {
+        if (triggerData.fromLocation == MagicLocationType.Play) {
             final MagicPlayer player = permanent.getController();
             final MagicTargetFilter targetFilter =
                     new MagicTargetFilter.MagicCMCTargetFilter(

@@ -18,7 +18,7 @@ public class Polluted_Dead {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicGraveyardTriggerData triggerData) {
-            return (MagicLocationType.Play == triggerData.fromLocation) ?
+            return (triggerData.fromLocation == MagicLocationType.Play) ?
                 new MagicEvent(
                     permanent,
                     MagicTargetChoice.TARGET_LAND,

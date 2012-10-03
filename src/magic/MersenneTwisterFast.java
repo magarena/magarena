@@ -326,7 +326,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
         int i, j, k;
         setSeed(19650218);
         i=1; j=0;
-        k = (N>array.length ? N : array.length);
+        k = (array.length < N ? N : array.length);
         for (; k!=0; k--) 
             {
             mt[i] = (mt[i] ^ ((mt[i-1] ^ (mt[i-1] >>> 30)) * 1664525)) + array[j] + j; /* non linear */

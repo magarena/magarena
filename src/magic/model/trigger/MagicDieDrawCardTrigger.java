@@ -22,7 +22,7 @@ public class MagicDieDrawCardTrigger extends MagicWhenPutIntoGraveyardTrigger {
             final MagicGame game,
             final MagicPermanent permanent,
             final MagicGraveyardTriggerData triggerData) {
-        if (MagicLocationType.Play == triggerData.fromLocation) {
+        if (triggerData.fromLocation == MagicLocationType.Play) {
             return mustDraw ?
                 new MagicEvent(
                     permanent,

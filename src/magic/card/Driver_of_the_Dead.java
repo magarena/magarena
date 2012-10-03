@@ -32,7 +32,7 @@ public class Driver_of_the_Dead {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicGraveyardTriggerData triggerData) {
-            return (MagicLocationType.Play == triggerData.fromLocation) ?
+            return (triggerData.fromLocation == MagicLocationType.Play) ?
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(targetChoice),
