@@ -229,7 +229,7 @@ public class DuelDialog extends JDialog implements ActionListener {
         }
     }
         
-    private static class ColorsChooser extends JComboBox implements ListCellRenderer, ActionListener {
+    private static class ColorsChooser extends JComboBox implements ListCellRenderer {
 
         private static final long serialVersionUID = 1L;
         
