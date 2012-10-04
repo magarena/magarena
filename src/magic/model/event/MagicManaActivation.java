@@ -4,7 +4,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicManaType;
-import magic.model.MagicSource;
+import magic.model.MagicPermanent;
 import magic.model.condition.MagicCondition;
 
 import java.util.List;
@@ -33,16 +33,16 @@ public abstract class MagicManaActivation implements MagicChangeCardDefinition {
         return weight;
     }
     
-    public final boolean canPlay(final MagicGame game,final MagicSource source) {
+    public final boolean canPlay(final MagicGame game,final MagicPermanent perm) {
         for (final MagicCondition condition : conditions) {
-            if (!condition.accept(source)) {
+            if (!condition.accept(perm)) {
                 return false;
             }
         }
         return true;
     }
     
-    public abstract MagicEvent[] getCostEvent(final MagicSource source);
+    public abstract MagicEvent[] getCostEvent(final MagicPermanent perm);
     
     @Override
     public void change(final MagicCardDefinition cdef) {

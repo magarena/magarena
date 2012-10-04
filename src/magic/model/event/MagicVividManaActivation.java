@@ -19,10 +19,10 @@ public class MagicVividManaActivation extends MagicManaActivation {
     }
         
     @Override
-    public MagicEvent[] getCostEvent(final MagicSource source) {
-        final MagicPermanent permanent=(MagicPermanent)source;
+    public MagicEvent[] getCostEvent(final MagicPermanent permanent) {
         return new MagicEvent[]{
             new MagicTapEvent(permanent),
-            new MagicRemoveCounterEvent(permanent,MagicCounterType.Charge,1)};
+            new MagicRemoveCounterEvent(permanent,MagicCounterType.Charge,1)
+        };
     }    
 }

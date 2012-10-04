@@ -16,8 +16,10 @@ public class MagicSacrificeTapManaActivation extends MagicManaActivation {
     }
 
     @Override
-    public MagicEvent[] getCostEvent(final MagicSource source) {
-        final MagicPermanent permanent=(MagicPermanent)source;
-        return new MagicEvent[]{new MagicTapEvent(permanent),new MagicSacrificeEvent(permanent)};
+    public MagicEvent[] getCostEvent(final MagicPermanent permanent) {
+        return new MagicEvent[]{
+            new MagicTapEvent(permanent),
+            new MagicSacrificeEvent(permanent)
+        };
     }    
 }

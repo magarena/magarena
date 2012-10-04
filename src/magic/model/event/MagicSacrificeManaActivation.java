@@ -16,7 +16,9 @@ public class MagicSacrificeManaActivation extends MagicManaActivation {
     }
 
     @Override
-    public MagicEvent[] getCostEvent(final MagicSource source) {
-        return new MagicEvent[]{new MagicSacrificeEvent((MagicPermanent)source)};
+    public MagicEvent[] getCostEvent(final MagicPermanent perm) {
+        return new MagicEvent[]{
+            new MagicSacrificeEvent(perm)
+        };
     }    
 }
