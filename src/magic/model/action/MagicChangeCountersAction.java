@@ -21,7 +21,7 @@ public class MagicChangeCountersAction extends MagicAction {
         
         // number of counters cannot become negative
         this.amount = (permanent.getCounters(counterType) + amount >= 0) ?
-            amount : 0;
+            amount : -permanent.getCounters(counterType);
         
         this.hasScore=hasScore;
     }
