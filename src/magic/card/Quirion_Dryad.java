@@ -15,18 +15,17 @@ public class Quirion_Dryad {
     public static final MagicWhenOtherSpellIsCastTrigger T = new MagicWhenOtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
-            final MagicPlayer player = permanent.getController();
-            final MagicCard card = cardOnStack.getCard();
-            return (card.getOwner() == player &&
-                    (MagicColor.White.hasColor(card.getColorFlags()) ||
-                    MagicColor.Blue.hasColor(card.getColorFlags()) ||
-                    MagicColor.Black.hasColor(card.getColorFlags()) ||
-                    MagicColor.Red.hasColor(card.getColorFlags())) ) ?
+            final int color = cardOnStack.getColorFlags();
+            return (permanent.isFriend(cardOnStack) &&
+                    (MagicColor.White.hasColor(color) ||
+                     MagicColor.Blue.hasColor(color)  ||
+                     MagicColor.Black.hasColor(color) ||
+                     MagicColor.Red.hasColor(color))) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        "Put a +1/+1 counter on SN.") :
+                    permanent,
+                    this,
+                    "Put a +1/+1 counter on SN."
+                ) :
                 MagicEvent.NONE;
         }
         @Override

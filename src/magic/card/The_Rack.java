@@ -17,14 +17,13 @@ public class The_Rack {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPlayer upkeepPlayer) {
-            final MagicPlayer player = permanent.getController();
-            final MagicTarget target = permanent.getChosenTarget();
-            return (upkeepPlayer == target) ?
+            return (upkeepPlayer == permanent.getChosenTarget()) ?
                 new MagicEvent(
                     permanent,
                     upkeepPlayer,
                     this,
-                    "SN deals X damage to PN where X is 3 minus the number of cards in his or her hand."):
+                    "SN deals X damage to PN where X is 3 minus the number of cards in his or her hand."
+                ):
                 MagicEvent.NONE;
         }
         @Override
@@ -37,10 +36,11 @@ public class The_Rack {
             final int amount = 3 - player.getHandSize();
             if (amount > 0) {
                 final MagicDamage damage = new MagicDamage(
-                        event.getSource(),
-                        player,
-                        amount,
-                        false);
+                    event.getSource(),
+                    player,
+                    amount,
+                    false
+                );
                 game.doAction(new MagicDealDamageAction(damage));
             }
         }

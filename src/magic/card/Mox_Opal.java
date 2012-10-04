@@ -15,10 +15,8 @@ public class Mox_Opal {
     
     public static final MagicManaActivation MANA = new MagicManaActivation(MagicManaType.ALL_TYPES,CONDITIONS,2) {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
-            final MagicPermanent permanent=(MagicPermanent)source;
+        public MagicEvent[] getCostEvent(final MagicPermanent permanent) {
             return new MagicEvent[]{new MagicTapEvent(permanent)};
         }    
     };
-    
 }

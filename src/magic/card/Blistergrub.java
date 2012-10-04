@@ -12,14 +12,17 @@ import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 public class Blistergrub {
     public static final MagicWhenPutIntoGraveyardTrigger T = new MagicWhenPutIntoGraveyardTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
-            final MagicPlayer player = permanent.getController();
+        public MagicEvent executeTrigger(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final MagicGraveyardTriggerData triggerData) {
             return (triggerData.fromLocation == MagicLocationType.Play) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        player.getOpponent()+ " loses 2 life."):
+                    permanent,
+                    permanent.getController().getOpponent(),
+                    this,
+                    "PN loses 2 life."
+                ):
                 MagicEvent.NONE;
         }
         @Override
@@ -28,8 +31,7 @@ public class Blistergrub {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPlayer player=event.getPlayer();
-            game.doAction(new MagicChangeLifeAction(player.getOpponent(),-2));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),-2));
         }
     };
 }
