@@ -12,6 +12,7 @@ import magic.model.event.MagicRegenerationActivation;
 import magic.model.event.MagicSacrificeManaActivation;
 import magic.model.event.MagicSacrificeTapManaActivation;
 import magic.model.event.MagicTapManaActivation;
+import magic.model.event.MagicPainTapManaActivation;
 import magic.model.event.MagicTiming;
 import magic.model.event.MagicVividManaActivation;
 import magic.model.mstatic.MagicCDA;
@@ -295,6 +296,12 @@ public enum MagicAbility {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             final List<MagicManaType> manatype = MagicManaType.getList(arg);
             card.add(new MagicVividManaActivation(manatype));
+        }
+    },
+    TapPainAddMana("tap pain add mana", 10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final List<MagicManaType> manatype = MagicManaType.getList(arg);
+            card.add(new MagicPainTapManaActivation(manatype));
         }
     },
     SacAddMana("sac add mana",10) {
