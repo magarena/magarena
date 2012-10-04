@@ -17,25 +17,21 @@ public class Vigor {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicDamage damage) {
-            final MagicPlayer player=permanent.getController();
             final MagicTarget target=damage.getTarget();
             final int amount=damage.getAmount();
             if (!damage.isUnpreventable() && 
                 amount > 0 && 
                 target != permanent && 
-                target.isPermanent() && 
-                target.getController()==player) {
-                final MagicPermanent creature=(MagicPermanent)target;
-                if (creature.isCreature()) {
-                    // Prevention effect.
-                    damage.setAmount(0);
-                    return new MagicEvent(
-                            permanent,
-                            player,
-                            new Object[]{creature,amount},
-                            this,
-                            "Put "+amount+" +1/+1 counters on "+creature+".");
-                }
+                target.isCreature() && 
+                permanent.isFriend(target)) {
+                // Prevention effect.
+                damage.setAmount(0);
+                return new MagicEvent(
+                    permanent,
+                    new Object[]{target,amount},
+                    this,
+                    "Put "+amount+" +1/+1 counters on "+target+"."
+                );
             }
             return MagicEvent.NONE;
         }
