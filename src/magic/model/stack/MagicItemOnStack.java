@@ -134,6 +134,11 @@ public abstract class MagicItemOnStack implements MagicTarget {
     public boolean isPlayer() {
         return false;
     }
+    
+    @Override
+    public boolean isCreature() {
+        return false;
+    }
 
     @Override
     public int getPreventDamage() {

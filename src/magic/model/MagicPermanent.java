@@ -273,11 +273,11 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return cachedController;
     }
 
-    public boolean isFriend(final MagicSource other) {
+    public boolean isFriend(final MagicObject other) {
         return getController() == other.getController();
     }
     
-    public boolean isEnemy(final MagicSource other) {
+    public boolean isEnemy(final MagicObject other) {
         return getController() != other.getController();
     }
     

@@ -5,15 +5,10 @@ import magic.model.MagicCopyable;
 import magic.model.MagicMappable;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
+import magic.model.MagicObject;
 
-public interface MagicTarget extends MagicCopyable, MagicMappable {
-    boolean     isPlayer();
-    boolean     isSpell();
-    boolean     isPermanent();
-    boolean     isValidTarget(final MagicSource source);
-    int         getPreventDamage();
-    String      getName();
-    MagicPlayer getController();
-    void        setPreventDamage(int amount);
-    MagicCardDefinition getCardDefinition();
+public interface MagicTarget extends MagicCopyable, MagicMappable, MagicObject {
+    boolean isValidTarget(final MagicSource source);
+    int     getPreventDamage();
+    void    setPreventDamage(int amount);
 }

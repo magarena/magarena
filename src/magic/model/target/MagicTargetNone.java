@@ -48,6 +48,11 @@ public class MagicTargetNone implements MagicTarget {
     }
     
     @Override
+    public boolean isCreature() {
+        return false;
+    }
+    
+    @Override
     public int getPreventDamage() {
         return 0;
     }

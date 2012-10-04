@@ -463,6 +463,11 @@ public class MagicPlayer implements MagicTarget {
     public boolean isPermanent() {
         return false;
     }
+    
+    @Override
+    public boolean isCreature() {
+        return false;
+    }
 
     @Override
     public boolean isPlayer() {
