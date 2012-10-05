@@ -1164,18 +1164,27 @@ public class MagicGame {
             final MagicPermanent permanent,
             final MagicSource source,
             final Object data) {
+    
+        @SuppressWarnings("unchecked")
+        final boolean accept = trigger.accept(permanent, data);
+        if (!accept) {
+            return;
+        }
+        
         @SuppressWarnings("unchecked")
         final MagicEvent event=trigger.executeTrigger(this,permanent,data);
-        if (event.isValid()) {
-            if (immediate) {
-                if (!event.hasChoice()) {
-                    event.executeEvent(this,MagicEvent.NO_CHOICE_RESULTS);
-                }                
-            } else if (trigger.usesStack()) {
-                doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(event)));
-            } else {
-                addEvent(event);        
-            }
+        if (!event.isValid()) {
+            return;
+        }
+        
+        if (immediate) {
+            if (!event.hasChoice()) {
+                event.executeEvent(this,MagicEvent.NO_CHOICE_RESULTS);
+            }                
+        } else if (trigger.usesStack()) {
+            doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(event)));
+        } else {
+            addEvent(event);        
         }
     }
     
