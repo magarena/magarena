@@ -13,27 +13,34 @@ import magic.model.trigger.MagicIfDamageWouldBeDealtTrigger;
 public class Vigor {
     public static final MagicIfDamageWouldBeDealtTrigger T1 = new MagicIfDamageWouldBeDealtTrigger(4) {
         @Override
+        public boolean accept(final MagicPermanent permanent, final MagicDamage damage) {
+            final MagicTarget target=damage.getTarget();
+            final int amount=damage.getAmount();
+            return 
+                !damage.isUnpreventable() &&
+                amount > 0 && 
+                target != permanent && 
+                target.isCreature() && 
+                permanent.isFriend(target);
+        }
+
+        @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicDamage damage) {
             final MagicTarget target=damage.getTarget();
             final int amount=damage.getAmount();
-            if (!damage.isUnpreventable() && 
-                amount > 0 && 
-                target != permanent && 
-                target.isCreature() && 
-                permanent.isFriend(target)) {
-                // Prevention effect.
-                damage.setAmount(0);
-                return new MagicEvent(
-                    permanent,
-                    new Object[]{target,amount},
-                    this,
-                    "Put "+amount+" +1/+1 counters on "+target+"."
-                );
-            }
-            return MagicEvent.NONE;
+        
+            // Prevention effect.
+            damage.setAmount(0);
+            
+            return new MagicEvent(
+                permanent,
+                new Object[]{target,amount},
+                this,
+                "Put "+amount+" +1/+1 counters on "+target+"."
+            );
         }
         
         @Override
