@@ -42,6 +42,10 @@ public abstract class MagicTrigger<T> implements MagicEventAction,MagicChangeCar
     public abstract MagicTriggerType getType();
     
     public abstract MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final T data);
+
+    public boolean accept(final MagicPermanent permanent, final T data) {
+        return true;
+    }
     
     @Override
     public void change(final MagicCardDefinition cdef) {
