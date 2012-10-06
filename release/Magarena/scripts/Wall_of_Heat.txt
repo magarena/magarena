@@ -1,0 +1,11 @@
+name=Wall of Heat
+url=http://magiccards.info/br/en/95.html
+image=http://magiccards.info/scans/en/br/95.jpg
+value=3.207
+rarity=C
+type=Creature
+subtype=Wall
+cost={2}{R}
+pt=2/6
+ability=defender
+timing=main
