@@ -1,0 +1,10 @@
+name=Shivan Oasis
+url=http://magiccards.info/pvc/en/65.html
+image=http://magiccards.info/scans/en/pvc/65.jpg
+value=3.315
+rarity=U
+type=Land
+mana=r3g3
+ability=tap add mana {R} or {G},\
+        enters tapped
+timing=tapland
