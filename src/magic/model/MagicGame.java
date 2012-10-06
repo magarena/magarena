@@ -478,6 +478,12 @@ public class MagicGame {
     public void addDelayedAction(final MagicAction action) {
         delayedActions.add(action);
     }
+    
+    public void doAction(final MagicAction action, final int count) {
+        for (int i = 0; i < count; i++) {
+            doAction(action);
+        }
+    }
         
     public void doAction(final MagicAction action) {
         actions.add(action);
