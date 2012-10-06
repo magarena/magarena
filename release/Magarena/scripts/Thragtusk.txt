@@ -1,0 +1,12 @@
+name=Thragtusk
+url=http://magiccards.info/m13/en/193.html
+image=http://magiccards.info/scans/en/m13/193.jpg
+value=4.000
+rarity=R
+type=Creature
+subtype=Beast
+cost={4}{G}
+pt=5/3
+ability=enters gain 5 life
+timing=main
+requires_card_code
