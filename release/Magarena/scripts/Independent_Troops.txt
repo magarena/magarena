@@ -1,0 +1,10 @@
+name=Independent Troops
+url=http://magiccards.info/p3k/en/114.html
+image=http://magiccards.info/scans/en/p3k/114.jpg
+value=1.600
+rarity=C
+type=Creature
+subtype=Soldier,Human
+pt=2/1
+cost={1}{R}
+timing=main
