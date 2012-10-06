@@ -6,5 +6,6 @@ rarity=C
 type=Creature
 subtype=Spirit
 cost={1}{W/U}{W/U}
+ability=flying
 pt=2/2
 timing=main
