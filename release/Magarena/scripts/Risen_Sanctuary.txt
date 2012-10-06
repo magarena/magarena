@@ -1,0 +1,11 @@
+name=Risen Sanctuary
+url=http://magiccards.info/rtr/en/190.html
+image=http://magiccards.info/scans/en/rtr/190.jpg
+value=3.000
+rarity=U
+type=Creature
+subtype=Elemental
+ability=vigilance
+cost={5}{G}{W}
+pt=8/8
+timing=main
