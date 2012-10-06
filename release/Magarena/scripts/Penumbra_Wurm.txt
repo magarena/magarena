@@ -1,0 +1,12 @@
+name=Penumbra Wurm
+url=http://magiccards.info/ap/en/84.html
+image=http://magiccards.info/scans/en/ap/84.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Wurm
+cost={5}{G}{G}
+pt=6/6
+ability=trample
+timing=main
+requires_card_code
