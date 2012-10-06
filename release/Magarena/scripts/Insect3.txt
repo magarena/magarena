@@ -1,0 +1,10 @@
+name=Insect
+token=Insect3
+image=http://i167.photobucket.com/albums/u148/Ruja/Magic%20Tokens/Insect.jpg
+value=3
+type=Creature
+subtype=Insect
+color=g
+cost={0}
+ability=flying,deathtouch
+pt=1/1
