@@ -1,0 +1,10 @@
+name=Golgari Longlegs
+url=http://magiccards.info/rtr/en/216.html
+image=http://magiccards.info/scans/en/rtr/216.jpg
+value=2.188
+rarity=C
+type=Creature
+subtype=Insect
+cost={3}{B/G}{B/G}
+pt=5/4
+timing=main
