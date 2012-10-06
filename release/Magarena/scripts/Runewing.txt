@@ -1,0 +1,11 @@
+name=Runewing
+url=http://magiccards.info/rtr/en/48.html
+image=http://magiccards.info/scans/en/rtr/48.jpg
+value=2.353
+ability=flying,die draw card
+rarity=C
+type=Creature
+subtype=Bird
+cost={3}{U}
+pt=2/2
+timing=main
