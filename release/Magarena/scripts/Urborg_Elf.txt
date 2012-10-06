@@ -1,0 +1,11 @@
+name=Urborg Elf
+url=http://magiccards.info/ap/en/90.html
+image=http://magiccards.info/scans/en/ap/90.jpg
+value=3.964
+rarity=C
+type=Creature
+subtype=Elf
+cost={1}{G}
+pt=1/1
+ability=tap add mana {G} or {U} or {B}
+timing=main
