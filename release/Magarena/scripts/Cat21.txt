@@ -1,0 +1,9 @@
+name=Cat
+token=Cat21
+image=http://forums.mtgsalvation.com/attachment.php?attachmentid=19957&amp;d=1143667949
+value=2
+type=Creature
+subtype=Cat
+color=b
+cost={0}
+pt=2/1
