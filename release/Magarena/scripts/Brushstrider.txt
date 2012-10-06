@@ -1,0 +1,11 @@
+name=Brushstrider
+url=http://magiccards.info/rtr/en/117.html
+image=http://magiccards.info/scans/en/rtr/117.jpg
+value=
+rarity=U
+type=Creature
+subtype=Beast
+ability=vigilance
+cost={1}{G}
+pt=3/1
+timing=main
