@@ -1,0 +1,11 @@
+name=Symbiotic Wurm
+url=http://magiccards.info/cmd/en/174.html
+image=http://magiccards.info/scans/en/cmd/174.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Wurm
+cost={5}{G}{G}{G}
+pt=7/7
+timing=main
+requires_card_code
