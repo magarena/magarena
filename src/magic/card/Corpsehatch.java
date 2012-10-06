@@ -36,9 +36,10 @@ public class Corpsehatch {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicDestroyAction(creature));
-                    final MagicPlayer player=event.getPlayer();
-                    game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Eldrazi Spawn")));
-                    game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Eldrazi Spawn")));
+                    game.doAction(2, new MagicPlayTokenAction(
+                        event.getPlayer(),
+                        TokenCardDefinitions.get("Eldrazi Spawn")
+                    ));
                 }
             });
         }

@@ -25,9 +25,10 @@ public class Grave_Titan {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPlayer player=event.getPlayer();
-            game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Zombie")));
-            game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Zombie")));
+            game.doAction(2, new MagicPlayTokenAction(
+                event.getPlayer(),
+                TokenCardDefinitions.get("Zombie")
+            ));
         }        
     };
 
@@ -48,9 +49,10 @@ public class Grave_Titan {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPlayer player=event.getPlayer();
-            game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Zombie")));
-            game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Zombie")));
+            game.doAction(2, new MagicPlayTokenAction(
+                event.getPlayer(),
+                TokenCardDefinitions.get("Zombie")
+            ));
         }        
     };
 }

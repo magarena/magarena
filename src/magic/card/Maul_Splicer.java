@@ -38,9 +38,10 @@ public class Maul_Splicer {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPlayer player=event.getPlayer();
-            game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Golem3")));
-            game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Golem3")));
+            game.doAction(2, new MagicPlayTokenAction(
+                event.getPlayer(),
+                TokenCardDefinitions.get("Golem3")
+            ));
         }        
     };
 }

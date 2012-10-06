@@ -38,11 +38,10 @@ public class Deranged_Hermit {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            for (int i=4;i>0;i--) {
-                game.doAction(new MagicPlayTokenAction(
-                        event.getPlayer(),
-                        TokenCardDefinitions.get("Squirrel1")));
-            }
+            game.doAction(2, new MagicPlayTokenAction(
+                event.getPlayer(),
+                TokenCardDefinitions.get("Squirrel1")
+            ));
         }        
     };
 }

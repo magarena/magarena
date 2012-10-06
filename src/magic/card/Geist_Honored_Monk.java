@@ -35,9 +35,10 @@ public class Geist_Honored_Monk {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPlayer player = event.getPlayer();
-            game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Spirit2")));
-            game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Spirit2")));
+            game.doAction(2, new MagicPlayTokenAction(
+                event.getPlayer(),
+                TokenCardDefinitions.get("Spirit2")
+            ));
         }        
     };
 }

@@ -28,10 +28,10 @@ public class Chronozoa {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPlayer player = event.getPlayer();
-            final MagicPermanent permanent = event.getPermanent();
-            game.doAction(new MagicPlayTokenAction(player,permanent.getCardDefinition()));
-            game.doAction(new MagicPlayTokenAction(player,permanent.getCardDefinition()));
+            game.doAction(2, new MagicPlayTokenAction(
+                event.getPlayer(),
+                event.getPermanent().getCardDefinition()
+            ));
         }
     };
 }

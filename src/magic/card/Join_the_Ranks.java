@@ -24,9 +24,10 @@ public class Join_the_Ranks {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPlayer player=event.getPlayer();
-            game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Soldier Ally")));
-            game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Soldier Ally")));
+            game.doAction(2, new MagicPlayTokenAction(
+                event.getPlayer(),
+                TokenCardDefinitions.get("Soldier Ally")
+            ));
         }
     };
 }

@@ -25,7 +25,10 @@ public class Symbiotic_Wurm {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicPlayTokenAction(event.getPlayer(), TokenCardDefinitions.get("Insect4")),7);
+            game.doAction(7, new MagicPlayTokenAction(
+                event.getPlayer(), 
+                TokenCardDefinitions.get("Insect4")
+            ));
         }
     };
 }

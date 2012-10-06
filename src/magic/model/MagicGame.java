@@ -479,7 +479,7 @@ public class MagicGame {
         delayedActions.add(action);
     }
     
-    public void doAction(final MagicAction action, final int count) {
+    public void doAction(final int count, final MagicAction action) {
         for (int i = 0; i < count; i++) {
             doAction(action);
         }

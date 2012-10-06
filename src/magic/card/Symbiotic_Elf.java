@@ -25,8 +25,10 @@ public class Symbiotic_Elf {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicPlayTokenAction(event.getPlayer(), TokenCardDefinitions.get("Insect4")));
-            game.doAction(new MagicPlayTokenAction(event.getPlayer(), TokenCardDefinitions.get("Insect4")));
+            game.doAction(2, new MagicPlayTokenAction(
+                event.getPlayer(), 
+                TokenCardDefinitions.get("Insect4")
+            ));
         }
     };
 }

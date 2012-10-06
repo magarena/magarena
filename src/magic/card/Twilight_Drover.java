@@ -36,10 +36,11 @@ public class Twilight_Drover {
                 final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
-                    event.getPermanent(),
-                    MagicCounterType.PlusOne,
-                    1,
-                    true));            
+                event.getPermanent(),
+                MagicCounterType.PlusOne,
+                1,
+                true
+            ));            
         }    
     };
     
@@ -65,12 +66,10 @@ public class Twilight_Drover {
         }
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-            game.doAction(new MagicPlayTokenAction(
-                    event.getPlayer(),
-                    TokenCardDefinitions.get("Spirit2")));
-            game.doAction(new MagicPlayTokenAction(
-                    event.getPlayer(),
-                    TokenCardDefinitions.get("Spirit2")));
+            game.doAction(2, new MagicPlayTokenAction(
+                event.getPlayer(),
+                TokenCardDefinitions.get("Spirit2")
+            ));
         }
     };
 }
