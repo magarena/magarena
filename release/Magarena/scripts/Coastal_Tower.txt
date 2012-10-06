@@ -1,0 +1,10 @@
+name=Coastal Tower
+url=http://magiccards.info/in/en/321.html
+image=http://magiccards.info/scans/en/in/321.jpg
+value=3.628
+rarity=U
+type=Land
+mana=w3u3
+ability=tap add mana {W} or {U},\
+        enters tapped
+timing=tapland
