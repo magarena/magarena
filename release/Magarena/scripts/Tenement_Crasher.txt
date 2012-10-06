@@ -1,0 +1,11 @@
+name=Tenement Crasher
+url=http://magiccards.info/rtr/en/108.html
+image=http://magiccards.info/scans/en/rtr/108.jpg
+value=1.818
+rarity=C
+type=Creature
+subtype=Beast
+cost={5}{R}
+ability=haste
+pt=5/4
+timing=main
