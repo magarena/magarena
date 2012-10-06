@@ -1,0 +1,11 @@
+name=Azorius Guildgate
+url=http://magiccards.info/rtr/en/237.html
+image=http://magiccards.info/scans/en/rtr/237.jpg
+value=2.796
+rarity=C
+type=Land
+subtype=Gate
+mana=w3u3
+ability=tap add mana {W} or {U},\
+        enters tapped
+timing=tapland
