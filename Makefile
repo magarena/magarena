@@ -100,7 +100,7 @@ cards/existing_%.txt: cards/existing_scripts_%.txt cards/existing_tokens_%.txt
 %_full.txt: %.txt cards/mtg-data.txt
 	awk -f scripts/extract_existing.awk $^ > $@
 
-cards/candidates_full.txt: scripts/extract_candidates.awk cards/scored_by_dd.tsv cards/mtg-data.txt
+cards/candidates_full.txt: scripts/extract_candidates.awk cards/scored_by_dec.tsv cards/mtg-data.txt
 	awk -f $^ | sort -rg | sed 's/\t/\n/g' > $@
 
 %.out: $(MAG)
@@ -205,23 +205,24 @@ test: $(MAG)
 exp/%.log: $(MAG)
 	scripts/evaluate_ai.sh $* > $@
 
-decks/dd:
+decks/dec:
 	for i in `curl http://www.wizards.com/magic/magazine/archive.aspx?tag=dailydeck | grep -o mtg/daily/deck/[0-9]* | cut -d'/' -f4`; do make decks/dd_$$i.dec; done
-
-decks/td:
 	for i in `curl http://www.wizards.com/magic/magazine/archive.aspx?tag=topdeck | grep -o mtg/daily/td/[0-9]* | cut -d'/' -f4`; do make decks/td_$$i.dec; done
 
 # Daily Deck
-decks/dd_%.dec: scripts/dailyhtml2dec.awk
-	curl "http://www.wizards.com/Magic/Magazine/Article.aspx?x=mtg/daily/deck/$*" | awk -f $^ > $@
-
-# Mike Flores
-decks/mf_%.dec: scripts/dailyhtml2dec.awk
-	curl http://www.wizards.com/Magic/Magazine/Article.aspx?x=mtgcom/daily/mf$* | awk -f $^ > $@
+decks/dd_%.dec:
+	curl "http://www.wizards.com/Magic/Magazine/Article.aspx?x=mtg/daily/deck/$*" | awk -f scripts/dailyhtml2dec.awk > $@
+	make $@.fix_date
 
 # Top Decks
-decks/td_%.dec: scripts/dailyhtml2dec.awk
-	curl http://www.wizards.com/Magic/Magazine/Article.aspx?x=mtg/daily/td/$* | awk -f $^ > $@
+decks/td_%.dec: 
+	curl http://www.wizards.com/Magic/Magazine/Article.aspx?x=mtg/daily/td/$* | awk -f scripts/dailyhtml2dec.awk > $@
+	make $@.fix_date
+
+# Mike Flores
+decks/mf_%.dec:
+	curl http://www.wizards.com/Magic/Magazine/Article.aspx?x=mtgcom/daily/mf$* | awk -f scripts/dailyhtml2dec.awk > $@
+	make $@.fix_date
 
 decks/ml_%.dec: scripts/apprentice2dec.awk
 	wget "http://www.magic-league.com/decks/download.php?deck=$*&index=1" -O - | flip -u - | awk -f $^ > $@
@@ -345,13 +346,8 @@ github/push:
 unique_property:
 	 grep "=" release/Magarena/scripts/*.txt| cut -d'=' -f1  | sort | uniq -c | sort -n
 
-cards/scored_by_dd.tsv: cards/existing_tip.txt $(wildcard decks/dd*)
-	./scripts/score_card.awk `ls -1 decks/dd* | sort -n -t_ -k2` |\
-	sort -rg |\
-	./scripts/keep_unimplemented.awk $(word 1,$^) /dev/stdin  > $@
-
-cards/scored_by_td.tsv: cards/existing_tip.txt $(wildcard decks/td*)
-	./scripts/score_card.awk `ls -1 decks/td* | sort -n -t_ -k2` |\
+cards/scored_by_dec.tsv: cards/existing_tip.txt $(wildcard decks/*.dec)
+	./scripts/score_card.awk `ls -1tr decks/*.dec` |\
 	sort -rg |\
 	./scripts/keep_unimplemented.awk $(word 1,$^) /dev/stdin  > $@
 	
@@ -417,3 +413,6 @@ crash.txt: $(wildcard *.log)
 	for i in `grep "^Excep" -l $^`; do \
 		tail -n +`grep -n "random seed" $$i | tail -1 | cut -d':' -f1` $$i; \
 	done >> $@
+
+%.fix_date:
+	touch $* -d "`cat $* | head -2 | tail -1 | sed 's/# //'`"
