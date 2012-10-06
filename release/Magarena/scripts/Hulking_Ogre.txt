@@ -1,0 +1,11 @@
+name=Hulking Ogre
+url=http://magiccards.info/st/en/108.html
+image=http://magiccards.info/scans/en/st/108.jpg
+value=2.458
+rarity=U
+type=Creature
+subtype=Ogre
+pt=3/3
+cost={2}{R}
+ability=can't block
+timing=main
