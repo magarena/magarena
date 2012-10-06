@@ -1,0 +1,10 @@
+name=Headless Horseman
+url=http://magiccards.info/lg/en/16.html
+image=http://magiccards.info/scans/en/lg/16.jpg
+value=2.255
+rarity=C
+type=Creature
+subtype=Zombie,Knight
+pt=2/2
+cost={2}{B}
+timing=main
