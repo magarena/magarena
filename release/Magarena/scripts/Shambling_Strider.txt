@@ -1,0 +1,11 @@
+name=Shambling Strider
+url=http://magiccards.info/med/en/129.html
+image=http://magiccards.info/scans/en/med/129.jpg
+value=2.708
+rarity=C
+type=Creature
+subtype=Yeti
+pt=5/5
+cost={4}{G}{G}
+ability=pump {R}{G} +1/-1
+timing=main
