@@ -1,0 +1,10 @@
+name=Golgari Guildgate
+url=http://magiccards.info/rtr/en/239.html
+image=http://magiccards.info/scans/en/rtr/239.jpg
+value=3.152
+rarity=C
+type=Land
+mana=b3g3
+ability=tap add mana {B} or {G},\
+        enters tapped
+timing=tapland
