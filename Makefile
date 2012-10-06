@@ -410,8 +410,8 @@ check_literals:
 
 check_scripts:
 	diff \
-	<(ls -1 release/Magarena/scripts | sort) \
-	<(grep "name=" -r release/Magarena/scripts/ | sort | sed 's/.*name=//;s/[^A-Za-z0-9]/_/g;s/$$/.txt/')
+	<(ls -1 release/Magarena/scripts | sort | sed 's/[0-9]//g') \
+	<(grep "name=" -r release/Magarena/scripts/ | sort | sed 's/.*name=//;s/[^A-Za-z]/_/g;s/$$/.txt/')
 
 crash.txt: $(wildcard *.log)
 	for i in `grep "^Excep" -l $^`; do \
