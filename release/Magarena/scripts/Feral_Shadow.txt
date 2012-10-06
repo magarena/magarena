@@ -1,0 +1,11 @@
+name=Feral Shadow
+url=http://magiccards.info/bd/en/26.html
+image=http://magiccards.info/scans/en/bd/26.jpg
+value=2.920
+rarity=C
+type=Creature
+subtype=Nightstalker
+pt=2/1
+cost={2}{B}
+ability=flying
+timing=main
