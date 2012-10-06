@@ -1,5 +1,5 @@
-name=Cat
-token=Cat2
+name=Cat2
+token=Cat
 image=http://magiccards.info/extras/token/scars-of-mirrodin/cat.jpg
 value=2
 type=Creature

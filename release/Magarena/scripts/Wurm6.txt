@@ -1,5 +1,5 @@
-name=Wurm
-token=Wurm6
+name=Wurm6
+token=Wurm
 image=http://forums.mtgsalvation.com/attachment.php?attachmentid=19960&amp;d=1143667963
 value=4
 type=Creature

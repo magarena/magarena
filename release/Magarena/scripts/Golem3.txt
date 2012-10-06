@@ -1,5 +1,5 @@
-name=Golem
-token=Golem3
+name=Golem3
+token=Golem
 image=http://magiccards.info/extras/token/scars-of-mirrodin/golem.jpg
 value=3
 type=Artifact,Creature

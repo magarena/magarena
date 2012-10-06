@@ -1,5 +1,5 @@
-name=Goblin
-token=Goblin1
+name=Goblin1
+token=Goblin
 image=http://img.photobucket.com/albums/v237/Xand0r/goblin-token_ravnica_300.jpg
 value=1
 type=Creature

@@ -1,5 +1,5 @@
-name=Spirit
-token=Spirit1 Blue
+name=Spirit1 Blue
+token=Spirit
 image=http://magiccards.info/extras/token/avacyn-restored/spirit-2.jpg
 value=1
 type=Creature

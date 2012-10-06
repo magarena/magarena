@@ -1,5 +1,5 @@
-name=Cat
-token=Cat21
+name=Cat21
+token=Cat
 image=http://forums.mtgsalvation.com/attachment.php?attachmentid=19957&amp;d=1143667949
 value=2
 type=Creature

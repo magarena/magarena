@@ -1,5 +1,5 @@
-name=Angel
-token=Angel4
+name=Angel4
+token=Angel
 image=http://magiccards.info/extras/token/conflux/angel.jpg
 value=4
 type=Creature

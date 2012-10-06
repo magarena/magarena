@@ -1,5 +1,5 @@
-name=Myr
-token=Myr1
+name=Myr1
+token=Myr
 image=http://magiccards.info/extras/token/scars-of-mirrodin/myr.jpg
 value=1
 type=Artifact,Creature

@@ -1,5 +1,5 @@
-name=Goblin Rogue
-token=Goblin Rogue1
+name=Goblin Rogue1
+token=Goblin Rogue
 image=http://magiccards.info/extras/token/lorwyn/goblin-rogue.jpg
 value=1
 type=Creature

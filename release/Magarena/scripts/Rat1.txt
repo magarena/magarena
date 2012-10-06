@@ -1,5 +1,5 @@
-name=Rat
-token=Rat1
+name=Rat1
+token=Rat
 image=http://magiccards.info/extras/token/shadowmoor/rat.jpg
 value=1
 type=Creature

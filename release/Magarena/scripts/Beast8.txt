@@ -1,5 +1,5 @@
-name=Beast
-token=Beast8
+name=Beast8
+token=Beast
 image=http://magiccards.info/extras/token/shards-of-alara/beast.jpg
 value=3
 type=Creature

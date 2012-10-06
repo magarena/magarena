@@ -1,5 +1,5 @@
-name=Insect
-token=Insect4
+name=Insect4
+token=Insect
 image=http://magiccards.info/extras/token/magic-2010/insect.jpg
 value=2
 type=Creature

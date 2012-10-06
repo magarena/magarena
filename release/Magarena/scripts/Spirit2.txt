@@ -1,5 +1,5 @@
-name=Spirit
-token=Spirit2
+name=Spirit2
+token=Spirit
 image=http://magiccards.info/extras/token/shadowmoor/spirit.jpg
 value=1
 type=Creature

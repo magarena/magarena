@@ -1,5 +1,5 @@
-name=Goblin
-token=Goblin2
+name=Goblin2
+token=Goblin
 image=http://forums.mtgsalvation.com/attachment.php?attachmentid=30596&d=1157620938
 value=1
 type=Creature

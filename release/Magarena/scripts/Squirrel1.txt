@@ -1,5 +1,5 @@
-name=Squirrel
-token=Squirrel1
+name=Squirrel1
+token=Squirrel
 image=http://magiccards.info/extras/token/player-rewards-2002/squirrel.jpg
 value=1
 type=Creature

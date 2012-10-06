@@ -1,5 +1,5 @@
-name=Demon
-token=Demon5
+name=Demon5
+token=Demon
 image=http://magiccards.info/extras/token/avacyn-restored/demon.jpg
 value=4
 type=Creature

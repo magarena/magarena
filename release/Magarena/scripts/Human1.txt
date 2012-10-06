@@ -1,5 +1,5 @@
-name=Human
-token=Human1
+name=Human1
+token=Human
 image=http://magiccards.info/extras/token/dark-ascension/human.jpg
 value=1
 type=Creature

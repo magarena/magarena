@@ -1,5 +1,5 @@
-name=Human
-token=Human2
+name=Human2
+token=Human
 image=http://magiccards.info/extras/token/avacyn-restored/human-2.jpg
 value=1
 type=Creature

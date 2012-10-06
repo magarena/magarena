@@ -1,5 +1,5 @@
-name=Kavu
-token=Kavu3
+name=Kavu3
+token=Kavu
 image=http://forums.mtgsalvation.com/attachment.php?attachmentid=19958&amp;d=1143667953
 value=3
 type=Creature

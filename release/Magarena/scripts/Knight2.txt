@@ -1,5 +1,5 @@
-name=Knight
-token=Knight2
+name=Knight2
+token=Knight
 image=http://magiccards.info/extras/token/return-to-ravnica/knight.jpg
 value=3
 type=Creature

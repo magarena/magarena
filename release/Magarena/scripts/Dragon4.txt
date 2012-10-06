@@ -1,5 +1,5 @@
-name=Dragon
-token=Dragon4
+name=Dragon4
+token=Dragon
 image=http://magiccards.info/extras/token/shards-of-alara/dragon.jpg
 value=4
 type=Creature

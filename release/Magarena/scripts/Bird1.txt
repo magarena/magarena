@@ -1,5 +1,5 @@
-name=Bird
-token=Bird1
+name=Bird1
+token=Bird
 image=http://magiccards.info/extras/token/zendikar/bird.jpg
 value=1
 type=Creature

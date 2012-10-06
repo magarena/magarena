@@ -1,5 +1,5 @@
-name=Insect
-token=Insect1
+name=Insect1
+token=Insect
 image=http://magiccards.info/extras/token/scars-of-mirrodin/insect.jpg
 value=1
 type=Creature

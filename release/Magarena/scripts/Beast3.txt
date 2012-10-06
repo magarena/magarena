@@ -1,5 +1,5 @@
-name=Beast
-token=Beast3
+name=Beast3
+token=Beast
 image=http://magiccards.info/extras/token/magic-2011/beast.jpg
 value=3
 type=Creature

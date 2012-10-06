@@ -1,5 +1,5 @@
-name=Beast
-token=Beast4
+name=Beast4
+token=Beast
 image=http://magiccards.info/extras/token/zendikar/beast.jpg
 value=3
 type=Creature

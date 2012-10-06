@@ -1,5 +1,5 @@
-name=Wurm
-token=Wurm5
+name=Wurm5
+token=Wurm
 image=http://magiccards.info/extras/token/return-to-ravnica/wurm.jpg
 value=4
 type=Creature
