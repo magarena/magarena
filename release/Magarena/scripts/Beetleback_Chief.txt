@@ -1,0 +1,11 @@
+name=Beetleback Chief
+url=http://magiccards.info/pc2/en/40.html
+image=http://magiccards.info/scans/en/pc2/40.jpg
+value=3.577
+rarity=U
+type=Creature
+subtype=Goblin,Warrior
+cost={2}{R}{R}
+pt=2/2
+timing=main
+requires_card_code
