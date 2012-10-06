@@ -1,9 +1,0 @@
-name=Drake-Skull Cameo
-url=http://magiccards.info/in/en/302.html
-image=http://magiccards.info/scans/en/in/302.jpg
-value=2.609
-rarity=U
-type=Artifact
-cost={3}
-ability=tap add mana {U} or {B}
-timing=artifact
