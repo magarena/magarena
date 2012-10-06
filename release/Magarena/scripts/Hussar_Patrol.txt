@@ -1,0 +1,11 @@
+name=Hussar Patrol
+url=http://magiccards.info/rtr/en/169.html
+image=http://magiccards.info/scans/en/rtr/169.jpg
+value=3.021
+rarity=C
+type=Creature
+subtype=Human,Knight
+ability=flash,vigilance
+cost={2}{W}{U}
+pt=2/4
+timing=main
