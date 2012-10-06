@@ -1,0 +1,9 @@
+name=Obelisk of Naya
+url=http://magiccards.info/ala/en/216.html
+image=http://magiccards.info/scans/en/ala/216.jpg
+value=2.222
+rarity=C
+type=Artifact
+cost={3}
+ability=tap add mana {R} or {G} or {W}
+timing=artifact
