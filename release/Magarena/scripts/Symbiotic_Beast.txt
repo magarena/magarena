@@ -1,0 +1,11 @@
+name=Symbiotic Beast
+url=http://magiccards.info/on/en/287.html
+image=http://magiccards.info/scans/en/on/287.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Insect,Beast
+cost={4}{G}{G}
+pt=4/4
+timing=main
+requires_card_code
