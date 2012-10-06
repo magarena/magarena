@@ -34,7 +34,7 @@ public class DeckGenerators {
     
     private void addDeckGenerator(final String name) {
         // find class
-        final String cname = name.replaceAll("[^A-Za-z]", "_");
+        final String cname = name.replaceAll("[^A-Za-z0-9]", "_");
         try { // reflection
             final Class c = Class.forName("magic.generator." + cname + "_DeckGenerator");
             

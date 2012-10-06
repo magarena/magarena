@@ -137,6 +137,10 @@ public class MagicCardDefinition {
     public String getFullName() {
         return fullName;
     }
+
+    public String getCanonicalName() {
+        return fullName.replaceAll("[^A-Za-z0-9]", "_");
+    }
     
     public void setFullName(final String name) {
         fullName = name;

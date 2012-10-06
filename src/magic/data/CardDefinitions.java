@@ -59,7 +59,7 @@ public class CardDefinitions {
 
         //add to tokens or all (vintage) cube
         if (cardDefinition.isToken()) {
-            TokenCardDefinitions.add(cardDefinition, cardDefinition.getFullName());
+            TokenCardDefinitions.add(cardDefinition);
         } else {
             CubeDefinitions.getCubeDefinition("all").add(cardDefinition.getName());
         }
@@ -83,10 +83,8 @@ public class CardDefinitions {
         
     //link to companion object containing static variables
     private static void addCardSpecificCode(final MagicCardDefinition cardDefinition) {
-        final String fname = cardDefinition.getFullName();
-        final String cname = fname.replaceAll("[^A-Za-z]", "_");
         try { //reflection
-            final Class c = Class.forName("magic.card." + cname);
+            final Class c = Class.forName("magic.card." + cardDefinition.getCanonicalName());
             final Field[] fields = c.getDeclaredFields();
             for (final Field field : fields) {
                 if (Modifier.isPublic(field.getModifiers())) {

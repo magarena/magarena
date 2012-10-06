@@ -22,7 +22,7 @@ public class TokenCardDefinitions {
         }
     }
     
-    public static void add(final MagicCardDefinition token, final String fullName) {
-        tokensMap.put(fullName, token);
+    public static void add(final MagicCardDefinition token) {
+        tokensMap.put(token.getFullName(), token);
     }
 }
