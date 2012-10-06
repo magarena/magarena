@@ -1,0 +1,11 @@
+name=Perilous Shadow
+url=http://magiccards.info/rtr/en/74.html
+image=http://magiccards.info/scans/en/rtr/74.jpg
+value=2.609
+rarity=C
+type=Creature
+subtype=Insect,Shade
+cost={2}{B}{B}
+ability=pump {1}{B} +2/+2
+pt=0/4
+timing=main
