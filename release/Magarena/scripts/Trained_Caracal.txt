@@ -1,0 +1,11 @@
+name=Trained Caracal
+url=http://magiccards.info/rtr/en/27.html
+image=http://magiccards.info/scans/en/rtr/27.jpg
+value=2.865
+ability=lifelink
+rarity=C
+type=Creature
+subtype=Cat
+cost={W}
+pt=1/1
+timing=main
