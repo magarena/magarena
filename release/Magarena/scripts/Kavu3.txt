@@ -1,0 +1,9 @@
+name=Kavu
+token=Kavu3
+image=http://forums.mtgsalvation.com/attachment.php?attachmentid=19958&amp;d=1143667953
+value=3
+type=Creature
+subtype=Kavu
+color=b
+cost={0}
+pt=3/3
