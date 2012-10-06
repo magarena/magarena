@@ -1,0 +1,11 @@
+name=Blistering Barrier
+url=http://magiccards.info/mr/en/159.html
+image=http://magiccards.info/scans/en/mr/159.jpg
+value=2.769
+rarity=C
+type=Creature
+subtype=Wall
+pt=5/2
+cost={2}{R}
+ability=defender
+timing=main
