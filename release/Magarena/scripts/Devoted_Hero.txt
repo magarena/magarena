@@ -1,0 +1,10 @@
+name=Devoted Hero
+url=http://magiccards.info/st/en/13.html
+image=http://magiccards.info/scans/en/st/13.jpg
+value=3.045
+rarity=C
+type=Creature
+subtype=Soldier,Elf
+pt=1/2
+cost={W}
+timing=main
