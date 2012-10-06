@@ -1,0 +1,10 @@
+name=Obsianus Golem
+url=http://magiccards.info/me4/en/218.html
+image=http://magiccards.info/scans/en/me4/218.jpg
+value=
+rarity=U
+type=Artifact,Creature
+subtype=Golem
+pt=4/6
+cost={6}
+timing=main
