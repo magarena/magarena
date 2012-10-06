@@ -1,0 +1,9 @@
+name=Obelisk of Esper
+url=http://magiccards.info/arc/en/113.html
+image=http://magiccards.info/scans/en/arc/113.jpg
+value=2.479
+rarity=C
+type=Artifact
+cost={3}
+ability=tap add mana {W} or {U} or {B}
+timing=artifact
