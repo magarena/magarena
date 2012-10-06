@@ -1,0 +1,10 @@
+name=Elfhame Palace
+url=http://magiccards.info/pvc/en/64.html
+image=http://magiccards.info/scans/en/pvc/64.jpg
+value=3.370
+rarity=U
+type=Land
+mana=w3g3
+ability=tap add mana {G} or {W},\
+        enters tapped
+timing=tapland
