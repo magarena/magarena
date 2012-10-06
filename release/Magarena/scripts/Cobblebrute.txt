@@ -1,0 +1,10 @@
+name=Cobblebrute
+url=http://magiccards.info/rtr/en/91.html
+image=http://magiccards.info/scans/en/rtr/91.jpg
+value=1.761
+rarity=C
+type=Creature
+subtype=Elemental
+cost={3}{R}
+pt=5/2
+timing=main
