@@ -1,0 +1,11 @@
+name=Yavimaya Ancients
+url=http://magiccards.info/me2/en/190.html
+image=http://magiccards.info/scans/en/me2/190.jpg
+value=2.790
+rarity=U
+type=Creature
+subtype=Treefolk
+cost={3}{G}{G}
+ability=pump {G} +1/-2
+pt=2/7
+timing=main
