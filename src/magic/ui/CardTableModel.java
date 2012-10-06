@@ -222,7 +222,7 @@ public class CardTableModel implements TableModel {
                         } else {
                             return "";
                         }
-            case 1:        return card.getFullName();
+            case 1:        return card.getName();
             case 2:        return card.getCost();
             case 3:        if(card.isCreature()) {
                             return card.getCardPower();
