@@ -1,0 +1,10 @@
+name=Bird
+token=Bird4
+image=http://magiccards.info/extras/token/player-rewards-2003/rukh.jpg
+value=3
+type=Creature
+subtype=Bird
+color=r
+cost={0}
+ability=flying
+pt=4/4
