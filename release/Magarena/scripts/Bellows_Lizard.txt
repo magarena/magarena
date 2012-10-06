@@ -1,0 +1,11 @@
+name=Bellows Lizard
+url=http://magiccards.info/rtr/en/88.html
+image=http://magiccards.info/scans/en/rtr/88.jpg
+value=1.964
+rarity=C
+type=Creature
+subtype=Lizard
+ability=pump {1}{R} +1/+0
+cost={1}{R}
+pt=1/1
+timing=main
