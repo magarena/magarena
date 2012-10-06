@@ -1,0 +1,11 @@
+name=Rakdos Guildgate
+url=http://magiccards.info/rtr/en/244.html
+image=http://magiccards.info/scans/en/rtr/244.jpg
+value=2.921
+rarity=C
+type=Land
+subtype=Gate
+mana=b3r3
+ability=tap add mana {B} or {R},\
+        enters tapped
+timing=tapland
