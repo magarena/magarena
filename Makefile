@@ -408,10 +408,10 @@ check_requires_card_code:
 check_literals:
 	grep "\"" src/magic/card/* | awk -f scripts/check_literals.awk
 
-check_scripts:
+check_script_name:
 	diff \
-	<(ls -1 release/Magarena/scripts | sort | sed 's/[0-9]//g') \
-	<(grep "name=" -r release/Magarena/scripts/ | sort | sed 's/.*name=//;s/[^A-Za-z]/_/g;s/$$/.txt/')
+	<(ls -1 release/Magarena/scripts | sort) \
+	<(grep "name=" -r release/Magarena/scripts/ | sort | sed 's/.*name=//;s/[^A-Za-z0-9]/_/g;s/$$/.txt/')
 
 crash.txt: $(wildcard *.log)
 	for i in `grep "^Excep" -l $^`; do \
