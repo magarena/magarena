@@ -1,0 +1,9 @@
+name=Marble Diamond
+url=http://magiccards.info/dvd/en/24.html
+image=http://magiccards.info/scans/en/dvd/24.jpg
+value=3.176
+rarity=U
+type=Artifact
+cost={2}
+ability=enters tapped,tap add mana {W}
+timing=artifact
