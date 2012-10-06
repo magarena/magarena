@@ -1,0 +1,11 @@
+name=Rakdos Ringleader
+url=http://magiccards.info/rtr/en/186.html
+image=http://magiccards.info/scans/en/rtr/186.jpg
+value=1.259
+rarity=U
+type=Creature
+subtype=Skeleton,Warrior
+ability=first strike,regenerate {B},combat damage discard random card
+cost={4}{B}{R}
+pt=3/1
+timing=main
