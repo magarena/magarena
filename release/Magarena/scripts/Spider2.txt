@@ -1,0 +1,10 @@
+name=Spider
+token=Spider2
+image=http://i167.photobucket.com/albums/u148/Ruja/Magic%20Tokens/Time%20Spiral/15.jpg
+value=3
+type=Creature
+subtype=Spider
+color=b
+cost={0}
+ability=reach
+pt=2/4

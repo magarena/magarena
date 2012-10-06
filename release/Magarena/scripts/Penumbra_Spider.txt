@@ -1,0 +1,11 @@
+name=Penumbra Spider
+url=http://magiccards.info/pc2/en/73.html
+image=http://magiccards.info/scans/en/pc2/73.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Spider
+cost={2}{G}{G}
+pt=2/4
+timing=main
+requires_card_code
