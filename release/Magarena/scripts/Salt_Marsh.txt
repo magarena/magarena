@@ -1,0 +1,10 @@
+name=Salt Marsh
+url=http://magiccards.info/in/en/326.html
+image=http://magiccards.info/scans/en/in/326.jpg
+value=3.917
+rarity=U
+type=Land
+mana=u3b3
+ability=tap add mana {U} or {B},\
+        enters tapped
+timing=tapland
