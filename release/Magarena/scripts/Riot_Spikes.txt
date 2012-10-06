@@ -1,0 +1,11 @@
+name=Riot Spikes
+url=http://magiccards.info/di/en/146.html
+image=http://magiccards.info/scans/en/di/146.jpg
+value=2.512
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={B/R}
+given_pt=+2/-1
+timing=aura
+enchant=pump,creature
