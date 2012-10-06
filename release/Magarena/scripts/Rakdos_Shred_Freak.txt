@@ -1,0 +1,11 @@
+name=Rakdos Shred-Freak
+url=http://magiccards.info/rtr/en/221.html
+image=http://magiccards.info/scans/en/rtr/221.jpg
+value=3.424
+ability=haste
+rarity=C
+type=Creature
+subtype=Human,Berserker
+cost={B/R}{B/R}
+pt=2/1
+timing=main
