@@ -1,0 +1,11 @@
+name=Centaur Healer
+url=http://magiccards.info/rtr/en/148.html
+image=http://magiccards.info/scans/en/rtr/148.jpg
+value=3.824
+rarity=C
+type=Creature
+subtype=Centaur,Cleric
+ability=enters gain life 3
+cost={1}{G}{W}
+pt=3/3
+timing=main
