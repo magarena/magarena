@@ -1,0 +1,10 @@
+name=Lady Orca
+url=http://magiccards.info/me3/en/159.html
+image=http://magiccards.info/scans/en/me3/159.jpg
+value=1.625
+rarity=U
+type=Legendary,Creature
+subtype=Demon
+pt=7/4
+cost={5}{B}{R}
+timing=main
