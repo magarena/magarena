@@ -18,6 +18,7 @@ public enum MagicSubType {
     Power_Plant, 
     Tower, 
     Urza_s,
+    Gate,
 
     //artifact subtypes
     Contraption, 
