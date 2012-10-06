@@ -1,0 +1,11 @@
+name=Lightning Hounds
+url=http://magiccards.info/mm/en/201.html
+image=http://magiccards.info/scans/en/mm/201.jpg
+value=3.143
+rarity=C
+type=Creature
+subtype=Hound
+pt=3/2
+cost={2}{R}{R}
+ability=first strike
+timing=main
