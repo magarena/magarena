@@ -1,0 +1,9 @@
+name=Charcoal Diamond
+url=http://magiccards.info/7e/en/289.html
+image=http://magiccards.info/scans/en/7e/289.jpg
+value=3.019
+rarity=U
+type=Artifact
+cost={2}
+ability=enters tapped,tap add mana {B}
+timing=artifact
