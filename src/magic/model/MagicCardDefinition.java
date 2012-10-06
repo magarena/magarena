@@ -53,8 +53,12 @@ public class MagicCardDefinition {
     private static int numSpellEvent;
     private static int numCDAs;
 
+    // name displayed in UI, may be repeated in tokens
     private String name;
+
+    // name used for mapping and persistence, must be unique
     private String fullName;
+
     private String imageURL;
     private String cardInfoUrl = "";
     private int imageCount = 1;
