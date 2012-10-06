@@ -1,0 +1,11 @@
+name=Vector Asp
+url=http://magiccards.info/som/en/219.html
+image=http://magiccards.info/scans/en/som/219.jpg
+value=3.197
+rarity=C
+type=Artifact,Creature
+subtype=Snake
+cost={1}
+ability=gains {B} infect
+pt=1/1
+timing=main
