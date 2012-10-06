@@ -6,17 +6,19 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenDiesTrigger;
+import magic.model.trigger.MagicWhenLeavesPlayTrigger;
 
 public class Thragtusk {
-    public static final Object T = new MagicWhenDiesTrigger() {
+    public static final Object T = new MagicWhenLeavesPlayTrigger() {
         @Override
-        public MagicEvent getEvent(final MagicPermanent permanent) {
-            return new MagicEvent(
-                permanent,
-                this,
-                "PN puts a 3/3 green Beast creature token onto the battlefield."
-            );
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent left) {
+            return (permanent == left) ?
+                new MagicEvent(
+                    permanent,
+                    this,
+                    "PN puts a 3/3 green Beast creature token onto the battlefield."
+                ):
+                MagicEvent.NONE;
         }
 
         @Override
