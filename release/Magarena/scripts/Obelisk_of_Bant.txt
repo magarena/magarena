@@ -1,0 +1,9 @@
+name=Obelisk of Bant
+url=http://magiccards.info/ala/en/212.html
+image=http://magiccards.info/scans/en/ala/212.jpg
+value=2.688
+rarity=C
+type=Artifact
+cost={3}
+ability=tap add mana {G} or {W} or {U}
+timing=artifact
