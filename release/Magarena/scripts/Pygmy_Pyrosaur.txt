@@ -1,0 +1,11 @@
+name=Pygmy Pyrosaur
+url=http://magiccards.info/ddi/en/46.html
+image=http://magiccards.info/scans/en/ddi/46.jpg
+value=3.429
+rarity=C
+type=Creature
+subtype=Lizard
+pt=1/1
+cost={1}{R}
+ability=can't block,pump {R} +1/+0
+timing=main
