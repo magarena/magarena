@@ -1,0 +1,11 @@
+name=Brindle Shoat
+url=http://magiccards.info/pc2/en/60.html
+image=http://magiccards.info/scans/en/pc2/60.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Boar
+cost={1}{G}
+pt=1/1
+timing=main
+requires_card_code

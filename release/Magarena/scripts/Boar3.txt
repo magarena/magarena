@@ -1,0 +1,9 @@
+name=Boar
+token=Boar3
+image=
+value=3
+type=Creature
+subtype=Boar
+color=g
+cost={0}
+pt=3/3
