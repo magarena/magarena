@@ -1,0 +1,11 @@
+name=Rakdos Ragemutt
+url=http://magiccards.info/rtr/en/185.html
+image=http://magiccards.info/scans/en/rtr/185.jpg
+value=2.652
+rarity=U
+type=Creature
+subtype=Elemental,Hound
+ability=haste,lifelink
+cost={3}{B}{R}
+pt=3/3
+timing=main
