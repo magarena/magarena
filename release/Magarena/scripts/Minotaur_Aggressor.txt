@@ -1,0 +1,11 @@
+name=Minotaur Aggressor
+url=http://magiccards.info/rtr/en/100.html
+image=http://magiccards.info/scans/en/rtr/100.jpg
+value=2.093
+rarity=U
+type=Creature
+subtype=Minotaur,Berserker
+ability=first strike,haste
+cost={6}{R}
+pt=6/2
+timing=main
