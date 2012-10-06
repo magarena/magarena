@@ -1,0 +1,9 @@
+name=Seashell Cameo
+url=http://magiccards.info/in/en/311.html
+image=http://magiccards.info/scans/en/in/311.jpg
+value=2.880
+rarity=U
+type=Artifact
+cost={3}
+ability=tap add mana {W} or {U}
+timing=artifact
