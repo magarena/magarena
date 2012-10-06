@@ -1,0 +1,9 @@
+name=Obelisk of Grixis
+url=http://magiccards.info/ddh/en/60.html
+image=http://magiccards.info/scans/en/ddh/60.jpg
+value=2.342
+rarity=C
+type=Artifact
+cost={3}
+ability=tap add mana {U} or {B} or {R}
+timing=artifact
