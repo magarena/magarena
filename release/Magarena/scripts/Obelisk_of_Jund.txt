@@ -1,0 +1,9 @@
+name=Obelisk of Jund
+url=http://magiccards.info/ala/en/215.html
+image=http://magiccards.info/scans/en/ala/215.jpg
+value=2.729
+rarity=C
+type=Artifact
+cost={3}
+ability=tap add mana {B} or {R} or {G}
+timing=artifact
