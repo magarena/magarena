@@ -150,15 +150,15 @@ public enum CardProperty {
     TOKEN() {
         void setProperty(final MagicCardDefinition card, final String value) {
             card.setToken();
-            card.setFullName(value);
+            card.setName(value);
         }
     },
     NAME() {
         void setProperty(final MagicCardDefinition card, final String value) {
+            assert card.getName() == null;
+            assert card.getFullName() == null;
             card.setName(value);
-            if (card.getFullName() == null) {
-                card.setFullName(value);
-            }
+            card.setFullName(value);
         }
     },
     EFFECT() {
