@@ -342,6 +342,11 @@ public enum MagicAbility {
             card.add(new MagicSpecterTrigger(true,false,false));
         }
     },
+    CombatDamageDiscardRandomCard("combat damage discard random card",10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(new MagicSpecterTrigger(true,false,true));
+        }
+    },
     DamageOpponentDiscardRandomCard("damage opponent discard random card",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             card.add(new MagicSpecterTrigger(false,true,true));
