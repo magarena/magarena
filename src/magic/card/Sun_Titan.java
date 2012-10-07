@@ -42,8 +42,8 @@ public class Sun_Titan {
     
     public static final MagicWhenAttacksTrigger T2 = new MagicWhenAttacksTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            return (permanent==data) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
+            return (permanent==attacker) ?
                 new MagicEvent(
                     permanent,
                     MagicTargetChoice.TARGET_PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD,
