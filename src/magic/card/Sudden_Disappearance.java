@@ -34,10 +34,9 @@ public class Sudden_Disappearance {
                 final Object[] choiceResults) {
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
-                    final Collection<MagicTarget> targets =
-                            game.filterTargets(player,MagicTargetFilter.TARGET_PERMANENT_YOU_CONTROL);
-                    for (final MagicTarget target : targets) {
-                        final MagicPermanent permanent = (MagicPermanent)target;
+                    final Collection<MagicPermanent> targets =
+                            game.filterPermanents(player,MagicTargetFilter.TARGET_PERMANENT_YOU_CONTROL);
+                    for (final MagicPermanent permanent : targets) {
                         if (!permanent.isLand()) {
                             game.doAction(new MagicExileUntilEndOfTurnAction(permanent));    
                         }
