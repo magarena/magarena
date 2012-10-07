@@ -10,14 +10,14 @@ import magic.model.trigger.MagicWhenAttacksTrigger;
 public class Septic_Rats {
     public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            final MagicPlayer player=permanent.getController();
-            return (permanent==data && player.getOpponent().getPoison()>0) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
+            return (permanent==attacker && 
+                    permanent.getOpponent().getPoison()>0) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    "SN gets +1/+1 until end of turn.") :
+                    "SN gets +1/+1 until end of turn."
+                ):
                 MagicEvent.NONE;
         }
         @Override
