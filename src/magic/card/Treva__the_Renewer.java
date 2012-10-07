@@ -45,9 +45,8 @@ public class Treva__the_Renewer {
                 int life=0;
                 final MagicPlayer player=event.getPlayer();
                 final MagicColor color=(MagicColor)choiceResults[2];
-                final Collection<MagicTarget> targets=game.filterTargets(player,MagicTargetFilter.TARGET_PERMANENT);
-                for (final MagicTarget target : targets) {
-                    final MagicPermanent permanent=(MagicPermanent)target;
+                final Collection<MagicPermanent> targets=game.filterPermanents(player,MagicTargetFilter.TARGET_PERMANENT);
+                for (final MagicPermanent permanent : targets) {
                     if (color.hasColor(permanent.getColorFlags())) {
                         life++;
                     }
