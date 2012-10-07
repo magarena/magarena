@@ -29,11 +29,10 @@ public class Timbermare {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            final Collection<MagicTarget> targets = game.filterTargets(
+            final Collection<MagicPermanent> targets = game.filterPermanents(
                     event.getPlayer(),
                     MagicTargetFilter.TARGET_CREATURE);
-            for (final MagicTarget target : targets) {
-                final MagicPermanent creature = (MagicPermanent)target;
+            for (final MagicPermanent creature : targets) {
                 if (creature != event.getPermanent()) {
                     game.doAction(new MagicTapAction(creature,true));
                 }
