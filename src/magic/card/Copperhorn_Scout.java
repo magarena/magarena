@@ -17,14 +17,13 @@ public class Copperhorn_Scout {
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicPermanent data) {
-            final MagicPlayer player = permanent.getController();
-            return (permanent == data) ?
+                final MagicPermanent attacker) {
+            return (permanent == attacker) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    "Untap each other creature you control."):
+                    "Untap each other creature you control."
+                ):
                 MagicEvent.NONE;
         }    
         @Override
