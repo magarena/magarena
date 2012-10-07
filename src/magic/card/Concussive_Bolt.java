@@ -41,11 +41,11 @@ public class Concussive_Bolt {
                     final MagicDamage damage = new MagicDamage(event.getSource(),targetPlayer,4,false);
                     game.doAction(new MagicDealDamageAction(damage));
                     if (MagicCondition.METALCRAFT_CONDITION.accept(event.getSource())) {
-                        final Collection<MagicTarget> targets =
-                                game.filterTargets(targetPlayer,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-                        for (final MagicTarget target : targets) {
+                        final Collection<MagicPermanent> targets =
+                                game.filterPermanents(targetPlayer,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+                        for (final MagicPermanent target : targets) {
                             game.doAction(new MagicSetAbilityAction(
-                                    (MagicPermanent)target,
+                                    target,
                                     MagicAbility.CannotBlock));
                         }
                     }
