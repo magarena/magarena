@@ -20,14 +20,12 @@ public class Demigod_of_Revenge {
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicCardOnStack data) {
-            final MagicPlayer player = data.getController();
+                final MagicCardOnStack cardOnStack) {
             return new MagicEvent(
-                    data.getSource(),
-                    player,
-                    this,
-                    "Return all cards named " + data.getSource() +
-                    " from your graveyard to the battlefield.");
+                cardOnStack,
+                this,
+                "Return all cards named SN from your graveyard to the battlefield."
+            );
         }
         
         @Override
@@ -42,9 +40,10 @@ public class Demigod_of_Revenge {
                 final MagicCard card = (MagicCard)target;
                 if (card.getName().equals(event.getSource().getName())) {
                     game.doAction(new MagicReanimateAction(
-                            event.getPlayer(),
-                            card,
-                            MagicPlayCardAction.NONE));
+                        event.getPlayer(),
+                        card,
+                        MagicPlayCardAction.NONE
+                    ));
                 }    
             }
         }
