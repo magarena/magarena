@@ -27,8 +27,8 @@ public class Sunblast_Angel {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            final Collection<MagicTarget> targets =
-                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_TAPPED_CREATURE);
+            final Collection<MagicPermanent> targets =
+                game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_TAPPED_CREATURE);
             game.doAction(new MagicDestroyAction(targets));
         }
     };
