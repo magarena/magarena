@@ -29,10 +29,10 @@ public class Turn_the_Tide {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicPlayer opponent=event.getPlayer().getOpponent();
-            final Collection<MagicTarget> targets=
-                game.filterTargets(opponent,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-            for (final MagicTarget target : targets) {
-                game.doAction(new MagicChangeTurnPTAction((MagicPermanent)target,-2,0));
+            final Collection<MagicPermanent> targets=
+                game.filterPermanents(opponent,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+            for (final MagicPermanent target : targets) {
+                game.doAction(new MagicChangeTurnPTAction(target,-2,0));
             }
         }
     };
