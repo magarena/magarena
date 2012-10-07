@@ -30,14 +30,15 @@ public class Arcbound_Overseer {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
-            final Collection<MagicTarget> targets =
-                    game.filterTargets(player,MagicTargetFilter.TARGET_MODULAR_CREATURE_YOU_CONTROL);
-            for (final MagicTarget target : targets) {
+            final Collection<MagicPermanent> targets =
+                    game.filterPermanents(player,MagicTargetFilter.TARGET_MODULAR_CREATURE_YOU_CONTROL);
+            for (final MagicPermanent target : targets) {
                 game.doAction(new MagicChangeCountersAction(
-                        (MagicPermanent)target,
-                        MagicCounterType.PlusOne,
-                        1,
-                        true));
+                    target,
+                    MagicCounterType.PlusOne,
+                    1,
+                    true
+                ));
             }
         }
     };
