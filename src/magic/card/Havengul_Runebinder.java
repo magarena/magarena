@@ -65,12 +65,12 @@ public class Havengul_Runebinder {
             game.doAction(new MagicPlayTokenAction(
                     player,
                     TokenCardDefinitions.get("Zombie")));
-            final Collection<MagicTarget> targets = game.filterTargets(
+            final Collection<MagicPermanent> targets = game.filterPermanents(
                     player,
                     MagicTargetFilter.TARGET_ZOMBIE_YOU_CONTROL);        
-                for (final MagicTarget target : targets) {
+                for (final MagicPermanent target : targets) {
                     game.doAction(new MagicChangeCountersAction(
-                            (MagicPermanent)target,
+                            target,
                             MagicCounterType.PlusOne,
                             1,
                             true));
