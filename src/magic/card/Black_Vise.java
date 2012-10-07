@@ -32,7 +32,6 @@ public class Black_Vise {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
             final int amount = player.getHandSize() - 4;
@@ -61,7 +60,6 @@ public class Black_Vise {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
         }
     };

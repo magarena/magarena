@@ -45,7 +45,7 @@ public class Stronghold_Overseer {
         }
 
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
             Collection<MagicTarget> targets =
                     game.filterTargets(game.getPlayer(0),MagicTargetFilter.TARGET_CREATURE_WITH_SHADOW);
             for (final MagicTarget target : targets) {

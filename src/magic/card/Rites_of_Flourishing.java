@@ -23,7 +23,6 @@ public class Rites_of_Flourishing {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeLandPlayedAction(-1));
         }
@@ -44,7 +43,6 @@ public class Rites_of_Flourishing {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeLandPlayedAction(-1));
         }        
@@ -62,7 +60,7 @@ public class Rites_of_Flourishing {
         }
         
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicDrawAction(player,1));
         }

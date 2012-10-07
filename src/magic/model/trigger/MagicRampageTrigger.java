@@ -20,7 +20,7 @@ public class MagicRampageTrigger extends MagicWhenBecomesBlockedTrigger {
         return (creature == permanent && amount > 0) ?
             new MagicEvent(
                 permanent,
-                new Object[]{amount},
+                amount,
                 this,
                 "SN gets +" + amount + "/+" +  amount + " until end of turn."
             ):
@@ -31,9 +31,8 @@ public class MagicRampageTrigger extends MagicWhenBecomesBlockedTrigger {
     public void executeEvent(
             final MagicGame game,
             final MagicEvent event,
-            final Object[] data,
             final Object[] choiceResults) {
-        final int amount = (Integer)data[0];
+        final int amount = event.getRefInt();
         game.doAction(new MagicChangeTurnPTAction(
             event.getPermanent(),
             amount,

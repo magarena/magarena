@@ -16,7 +16,7 @@ public class Ageless_Entity {
             return permanent.isController(lifeChange.player) ?
                 new MagicEvent(
                     permanent,
-                    new Object[]{amount},
+                    amount,
                     this,
                     amount > 1 ?
                         "Put " + amount + " +1/+1 counters on SN." :
@@ -28,12 +28,11 @@ public class Ageless_Entity {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
                     event.getPermanent(),
                     MagicCounterType.PlusOne,
-                    (Integer)data[0],
+                    event.getRefInt(),
                     true));
         }
     };

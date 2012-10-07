@@ -46,7 +46,6 @@ public class MagicDieDrawCardTrigger extends MagicWhenPutIntoGraveyardTrigger {
     public void executeEvent(
             final MagicGame game,
             final MagicEvent event,
-            final Object[] data,
             final Object[] choiceResults) {
         if (mustDraw) {
             game.doAction(new MagicDrawAction(event.getPlayer(),1));

@@ -27,7 +27,6 @@ public class Hysterical_Blindness {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPlayer opponent = event.getPlayer().getOpponent();
             final Collection<MagicTarget> targets =

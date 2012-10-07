@@ -19,7 +19,7 @@ public class Elven_Warhounds {
             return new MagicEvent(
                 permanent,
                 permanent.getController(),
-                new Object[]{plist},
+                plist,
                 this,
                 plist.size() > 1 ?
                     "Put blocking creatures on top of their owner's library." :
@@ -30,9 +30,8 @@ public class Elven_Warhounds {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanentList plist = (MagicPermanentList)data[0];
+            final MagicPermanentList plist = event.getRefPermanentList();
             for (final MagicPermanent blocker : plist) {
                 game.doAction(new MagicRemoveFromPlayAction(blocker,MagicLocationType.TopOfOwnersLibrary));
             }

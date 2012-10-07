@@ -24,7 +24,6 @@ public class Sphinx_of_Lost_Truths {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPlayer player=event.getPlayer();
             game.doAction(new MagicDrawAction(player,3));

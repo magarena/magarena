@@ -40,7 +40,6 @@ public class Orim_s_Thunder {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent target) {
@@ -61,7 +60,6 @@ public class Orim_s_Thunder {
                     public void executeEvent(
                         final MagicGame game,
                         final MagicEvent event,
-                        final Object[] data,
                         final Object[] choiceResults) {
                         event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                             public void doAction(final MagicTarget target) {

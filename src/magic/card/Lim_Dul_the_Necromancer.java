@@ -47,7 +47,7 @@ public class Lim_Dul_the_Necromancer {
                     new MagicMayChoice(
                         new MagicPayManaCostChoice(MagicManaCost.ONE_BLACK)
                     ),
-                    new Object[]{otherPermanent.getCard()},
+                    otherPermanent.getCard(),
                     this,
                     "You may$ pay {1}{B}$. If you do, return " + otherPermanent + 
                     " to the battlefield under your control. If it's a " +
@@ -58,10 +58,9 @@ public class Lim_Dul_the_Necromancer {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                final MagicCard card = (MagicCard)data[0];
+                final MagicCard card = event.getRefCard();
                 if (card.getOwner().getGraveyard().contains(card)) {
                     final MagicPlayCardAction action = new MagicPlayCardAction(card,event.getPlayer(),MagicPlayCardAction.NONE);
                     game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
@@ -101,7 +100,6 @@ public class Lim_Dul_the_Necromancer {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {

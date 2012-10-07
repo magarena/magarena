@@ -37,7 +37,6 @@ public class Stitch_Together {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
             event.processTargetCard(game,choiceResults,0,new MagicCardAction() {

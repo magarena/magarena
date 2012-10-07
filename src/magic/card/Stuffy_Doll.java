@@ -38,7 +38,6 @@ public class Stuffy_Doll {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPermanent permanent=event.getPermanent();
             final MagicDamage damage=new MagicDamage(permanent,permanent,1,false);
@@ -54,7 +53,7 @@ public class Stuffy_Doll {
                 final MagicTarget target = permanent.getChosenTarget();
                 return new MagicEvent(
                         permanent,
-                        new Object[]{amount},
+                        amount,
                         this,
                         "SN deals " + amount + " damage to " + target + ".");
             }
@@ -64,12 +63,11 @@ public class Stuffy_Doll {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicDamage damage = new MagicDamage(
                     event.getPermanent(),
                     event.getPermanent().getChosenTarget(),
-                    (Integer)data[0],
+                    event.getRefInt(),
                     false);
             game.doAction(new MagicDealDamageAction(damage));
         }
@@ -89,7 +87,6 @@ public class Stuffy_Doll {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
         }
     };

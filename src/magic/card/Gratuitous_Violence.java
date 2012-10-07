@@ -22,7 +22,7 @@ public class Gratuitous_Violence {
             return MagicEvent.NONE;
         }
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
         
         }
     };

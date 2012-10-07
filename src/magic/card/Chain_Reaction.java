@@ -26,7 +26,6 @@ public class Chain_Reaction {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final int amount=game.getNrOfPermanents(MagicType.Creature);
             final Collection<MagicTarget> targets=

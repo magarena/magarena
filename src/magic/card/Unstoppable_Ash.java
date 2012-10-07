@@ -16,7 +16,7 @@ public class Unstoppable_Ash {
                     new MagicEvent(
                             permanent,
                             player,
-                            new Object[]{attacker},
+                            attacker,
                             this,
                             attacker + " gets +0/+5 until end of turn."):
                     MagicEvent.NONE;
@@ -26,10 +26,9 @@ public class Unstoppable_Ash {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeTurnPTAction(
-                    (MagicPermanent)data[0],
+                    event.getRefPermanent(),
                     0,
                     5));
         }

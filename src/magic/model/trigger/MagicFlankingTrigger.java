@@ -29,7 +29,7 @@ public class MagicFlankingTrigger extends MagicWhenBecomesBlockedTrigger {
             if (!plist.isEmpty()) {
                 return new MagicEvent(
                     permanent,
-                    new Object[]{plist},
+                    plist,
                     this,
                     plist.size() > 1 ?
                         "Blocking creatures get -1/-1 until end of turn." :
@@ -43,10 +43,8 @@ public class MagicFlankingTrigger extends MagicWhenBecomesBlockedTrigger {
     public void executeEvent(
             final MagicGame game,
             final MagicEvent event,
-            final Object[] data,
             final Object[] choiceResults) {
-        final MagicPermanentList plist = (MagicPermanentList)data[0];
-        for (final MagicPermanent blocker : plist) {
+        for (final MagicPermanent blocker : event.getRefPermanentList()) {
             game.doAction(new MagicChangeTurnPTAction(blocker,-1,-1));
         }
     }

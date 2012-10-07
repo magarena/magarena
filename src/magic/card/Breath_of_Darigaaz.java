@@ -30,7 +30,6 @@ public class Breath_of_Darigaaz {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final int amount=(Integer)choiceResults[1]>0?4:1;
             final Collection<MagicTarget> targets=

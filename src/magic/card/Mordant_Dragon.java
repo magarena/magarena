@@ -24,7 +24,7 @@ public class Mordant_Dragon {
                     permanent,
                     new MagicMayChoice(MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS),
                     new MagicDamageTargetPicker(amount),
-                    new Object[]{amount},
+                    amount,
                     this,
                     "PN may$ have SN deal " + amount + " damage to target creature$ your opponent controls."):
                 MagicEvent.NONE;
@@ -34,12 +34,11 @@ public class Mordant_Dragon {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    final MagicDamage damage=new MagicDamage(event.getSource(),creature,(Integer)data[0],false);
+                    final MagicDamage damage=new MagicDamage(event.getSource(),creature,event.getRefInt(),false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
                 });

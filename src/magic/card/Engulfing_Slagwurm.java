@@ -20,7 +20,7 @@ public class Engulfing_Slagwurm {
             return new MagicEvent(
                 permanent,
                 permanent.getController(),
-                new Object[]{plist},
+                plist,
                 this,
                 plist.size() > 1 ?
                     "Destroy blocking creatures. You gain life equal to those creatures toughness." :
@@ -32,9 +32,8 @@ public class Engulfing_Slagwurm {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanentList plist = (MagicPermanentList)data[0];
+            final MagicPermanentList plist = event.getRefPermanentList();
             for (final MagicPermanent blocker : plist) {
                 game.doAction(new MagicDestroyAction(blocker));
                 game.doAction(new MagicChangeLifeAction(
@@ -53,7 +52,7 @@ public class Engulfing_Slagwurm {
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
-                    new Object[]{attacker},
+                    attacker,
                     this,
                     "Destroy " + attacker + ". You gain life equal to its toughness."):
                 MagicEvent.NONE;
@@ -62,9 +61,8 @@ public class Engulfing_Slagwurm {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanent attacker = (MagicPermanent)data[0];
+            final MagicPermanent attacker = event.getRefPermanent();
             game.doAction(new MagicDestroyAction(attacker));
             game.doAction(new MagicChangeLifeAction(
                 event.getPlayer(),

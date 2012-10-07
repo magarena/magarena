@@ -21,7 +21,7 @@ public class Druid_s_Call {
                 new MagicEvent(
                     permanent,
                     enchanted.getController(),
-                    new Object[]{amount},
+                    amount,
                     this,
                     "PN puts " + amount + " 1/1 green Squirrel creature tokens onto the battlefield.") :
                 MagicEvent.NONE;
@@ -30,9 +30,8 @@ public class Druid_s_Call {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            for (int i=(Integer)data[0];i>0;i--) {
+            for (int i=event.getRefInt();i>0;i--) {
                 game.doAction(new MagicPlayTokenAction(
                         event.getPlayer(),
                         TokenCardDefinitions.get("Squirrel1")));

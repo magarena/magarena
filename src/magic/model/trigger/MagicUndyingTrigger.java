@@ -35,7 +35,6 @@ public class MagicUndyingTrigger extends MagicWhenPutIntoGraveyardTrigger {
     public void executeEvent(
             final MagicGame game,
             final MagicEvent event,
-            final Object[] data,
             final Object[] choiceResults) {
         final MagicCard card = event.getPermanent().getCard();
         game.doAction(new MagicReanimateAction(

@@ -54,7 +54,7 @@ public class Brimstone_Mage {
                 source,
                 MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                 new MagicDamageTargetPicker(amount),
-                new Object[]{amount},
+                amount,
                 this,
                 "SN deals " + amount + " damage to target creature or player$."
             );
@@ -64,14 +64,13 @@ public class Brimstone_Mage {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicDamage damage = new MagicDamage(
                         event.getSource(),
                         target,
-                        (Integer)data[0],
+                        event.getRefInt(),
                         false
                     );
                     game.doAction(new MagicDealDamageAction(damage));

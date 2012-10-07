@@ -41,15 +41,15 @@ public class Kessig_Wolf_Run {
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
                     MagicPumpTargetPicker.create(),
-                    new Object[]{amount},
+                    amount,
                     this,
                     "Target creature$ gets +" + amount +
                     "/+0 and gains trample until end of turn.");
         }
 
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-            final int amount = (Integer)data[0];
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+            final int amount = event.getRefInt();
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeTurnPTAction(creature,amount,0));

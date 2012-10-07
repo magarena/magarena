@@ -34,7 +34,6 @@ public class Demigod_of_Revenge {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final List<MagicTarget> cards = game.filterTargets(
                     event.getPlayer(),

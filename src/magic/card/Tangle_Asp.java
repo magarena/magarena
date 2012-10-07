@@ -20,7 +20,7 @@ public class Tangle_Asp {
             return new MagicEvent(
                 permanent,
                 permanent.getController(),
-                new Object[]{plist},
+                plist,
                 this,
                 plist.size() > 1 ?
                     "Destroy blocking creatures at end of combat." :
@@ -32,9 +32,8 @@ public class Tangle_Asp {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanentList plist = (MagicPermanentList)data[0];
+            final MagicPermanentList plist = event.getRefPermanentList();
             for (final MagicPermanent blocker : plist) {
                 game.doAction(new MagicChangeStateAction(blocker,MagicPermanentState.DestroyAtEndOfCombat,true));
             }
@@ -49,7 +48,7 @@ public class Tangle_Asp {
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
-                    new Object[]{blocked},
+                    blocked,
                     this,
                     "Destroy " + blocked + " at end of combat."):
                 MagicEvent.NONE;
@@ -58,9 +57,8 @@ public class Tangle_Asp {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanent blocker = (MagicPermanent)data[0];
+            final MagicPermanent blocker = event.getRefPermanent();
             game.doAction(new MagicChangeStateAction(blocker,MagicPermanentState.DestroyAtEndOfCombat,true));
         }
     };

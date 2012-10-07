@@ -28,7 +28,7 @@ public class Aurification {
                     damage.getSource().isCreature()) ?
                 new MagicEvent(
                     permanent,
-                    new Object[]{damage.getSource()},
+                    damage.getSource(),
                     this,
                     "PN puts a gold counter on " + damage.getSource() + "."
                 ) :
@@ -39,9 +39,8 @@ public class Aurification {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanent creature = (MagicPermanent)data[0];
+            final MagicPermanent creature = event.getRefPermanent();
             game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.Gold,1,true));
             game.doAction(new MagicAddStaticAction(creature, new MagicStatic(MagicLayer.Ability) {
                 @Override
@@ -92,7 +91,6 @@ public class Aurification {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final Collection<MagicTarget> targets =
                     game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE);

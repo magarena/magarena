@@ -30,7 +30,7 @@ public class Talruum_Champion {
             return new MagicEvent(
                 permanent,
                 permanent.getController(),
-                new Object[]{plist},
+                plist,
                 this,
                 plist.size() > 1 ?
                     "Blocking creatures lose first strike until end of turn." :
@@ -42,9 +42,8 @@ public class Talruum_Champion {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanentList plist = (MagicPermanentList)data[0];
+            final MagicPermanentList plist = event.getRefPermanentList();
             for (final MagicPermanent blocker : plist) {
                 game.doAction(new MagicAddStaticAction(blocker,AB));
             }
@@ -59,7 +58,7 @@ public class Talruum_Champion {
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
-                    new Object[]{blocked},
+                    blocked,
                     this,
                     blocked + " loses first strike until end of turn."):
                 MagicEvent.NONE;
@@ -68,9 +67,8 @@ public class Talruum_Champion {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicAddStaticAction((MagicPermanent)data[0],AB));
+            game.doAction(new MagicAddStaticAction(event.getRefPermanent(),AB));
         }
     };
 }

@@ -21,7 +21,7 @@ public class Inferno_Elemental {
             
             return new MagicEvent(
                 permanent,
-                new Object[]{plist},
+                plist,
                 this,
                 "SN deals 3 damage to each blocking creature."
             );
@@ -31,9 +31,8 @@ public class Inferno_Elemental {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanentList plist = (MagicPermanentList)data[0];
+            final MagicPermanentList plist = event.getRefPermanentList();
             for (final MagicPermanent blocker : plist) {
                 final MagicDamage damage = new MagicDamage(event.getSource(),blocker,3,false);
                 game.doAction(new MagicDealDamageAction(damage));
@@ -48,7 +47,7 @@ public class Inferno_Elemental {
             return (permanent == blocker && blocked.isValid()) ?
                 new MagicEvent(
                     permanent,
-                    new Object[]{blocked},
+                    blocked,
                     this,
                     "SN deals 3 damage to " + blocked + "."):
                 MagicEvent.NONE;
@@ -57,11 +56,10 @@ public class Inferno_Elemental {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicDamage damage = new MagicDamage(
                     event.getPermanent(),
-                    (MagicPermanent)data[0],
+                    event.getRefPermanent(),
                     3,
                     false);
             game.doAction(new MagicDealDamageAction(damage));

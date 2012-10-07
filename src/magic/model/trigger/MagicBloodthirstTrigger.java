@@ -35,7 +35,6 @@ public class MagicBloodthirstTrigger extends MagicWhenComesIntoPlayTrigger {
     public void executeEvent(
             final MagicGame game,
             final MagicEvent event,
-            final Object[] data,
             final Object[] choiceResults) {
         game.doAction(new MagicChangeCountersAction(
             event.getPermanent(),

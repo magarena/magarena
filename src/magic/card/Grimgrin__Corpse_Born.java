@@ -50,7 +50,7 @@ public class Grimgrin__Corpse_Born {
         }
 
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
             game.doAction(new MagicUntapAction(event.getPermanent()));
             game.doAction(new MagicChangeCountersAction(
                     event.getPermanent(),
@@ -78,7 +78,6 @@ public class Grimgrin__Corpse_Born {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {

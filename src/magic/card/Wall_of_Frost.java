@@ -16,7 +16,7 @@ public class Wall_of_Frost {
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
-                    new Object[]{blocked},
+                    blocked,
                     this,
                     blocked+" doesn't untap during its controller's next untap step."):
                 MagicEvent.NONE;
@@ -25,9 +25,8 @@ public class Wall_of_Frost {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeStateAction((MagicPermanent)data[0],MagicPermanentState.DoesNotUntapDuringNext,true));
+            game.doAction(new MagicChangeStateAction(event.getRefPermanent(),MagicPermanentState.DoesNotUntapDuringNext,true));
         }
     };
 }

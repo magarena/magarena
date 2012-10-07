@@ -22,7 +22,7 @@ public class Somberwald_Vigilante {
             final MagicPermanentList plist = new MagicPermanentList(permanent.getBlockingCreatures());
             return new MagicEvent(
                 permanent,
-                new Object[]{plist},
+                plist,
                 this,
                 "SN deals 1 damage to each blocking creature."
             );
@@ -32,9 +32,8 @@ public class Somberwald_Vigilante {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanentList plist = (MagicPermanentList)data[0];
+            final MagicPermanentList plist = event.getRefPermanentList();
             for (final MagicPermanent blocker : plist) {
                 final MagicDamage damage = new MagicDamage(event.getSource(),blocker,1,false);
                 game.doAction(new MagicDealDamageAction(damage));

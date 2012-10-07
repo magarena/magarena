@@ -62,7 +62,6 @@ public class Thraben_Doomsayer {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicPlayTokenAction(
                     event.getPlayer(),

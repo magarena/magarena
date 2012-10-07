@@ -51,7 +51,7 @@ public class Parallax_Nexus {
         }
 
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
             event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard card) {
                     game.doAction(new MagicExileUntilThisLeavesPlayAction(
@@ -83,7 +83,6 @@ public class Parallax_Nexus {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPermanent permanent = event.getPermanent();
             game.doAction(new MagicReturnExiledUntilThisLeavesPlayAction(permanent,MagicLocationType.OwnersHand));

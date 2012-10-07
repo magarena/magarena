@@ -30,7 +30,6 @@ public class Geist_of_Saint_Traft {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
             final MagicCard card = MagicCard.createTokenCard(TokenCardDefinitions.get("Angel4"),player);

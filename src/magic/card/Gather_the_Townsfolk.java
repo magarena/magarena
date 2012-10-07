@@ -25,7 +25,6 @@ public class Gather_the_Townsfolk {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             int amount = MagicCondition.FATEFUL_HOUR.accept(event.getSource()) ? 5 : 2;
             for (;amount>0;amount--) {

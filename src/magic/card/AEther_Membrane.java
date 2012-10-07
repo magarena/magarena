@@ -17,7 +17,7 @@ public class AEther_Membrane {
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
-                    new Object[]{blocked},
+                    blocked,
                     this,
                     "Return " + blocked + " to its owner's hand at end of combat."):
                 MagicEvent.NONE;
@@ -26,9 +26,8 @@ public class AEther_Membrane {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanent creature = (MagicPermanent)data[0];
+            final MagicPermanent creature = event.getRefPermanent();
             game.doAction(new MagicChangeStateAction(creature,MagicPermanentState.ReturnToHandOfOwnerAtEndOfCombat,true));
         }
     };

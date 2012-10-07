@@ -14,7 +14,7 @@ public class Loyal_Sentry {
             return (permanent == defender && blocked.isValid()) ?
                 new MagicEvent(
                     permanent,
-                    new Object[]{blocked},
+                    blocked,
                     this,
                     "Destroy both " + blocked + "and SN."):
                 MagicEvent.NONE;
@@ -23,9 +23,8 @@ public class Loyal_Sentry {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicDestroyAction((MagicPermanent)data[0]));
+            game.doAction(new MagicDestroyAction(event.getRefPermanent()));
             game.doAction(new MagicDestroyAction(event.getPermanent()));
         }
     };

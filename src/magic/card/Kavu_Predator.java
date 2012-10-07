@@ -19,7 +19,7 @@ public class Kavu_Predator {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{amount},
+                    amount,
                     this,
                     amount > 1 ?
                         "Put " + amount + " +1/+1 counters on SN." :
@@ -30,12 +30,11 @@ public class Kavu_Predator {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
                     event.getPermanent(),
                     MagicCounterType.PlusOne,
-                    (Integer)data[0],
+                    event.getRefInt(),
                     true));
         }
     };

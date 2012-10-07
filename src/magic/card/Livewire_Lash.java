@@ -24,7 +24,7 @@ public class Livewire_Lash {
                     permanent.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(2),
-                    new Object[]{equippedCreature},
+                    equippedCreature,
                     this,
                     equippedCreature + " deals 2 damage to target creature or player$."):
                 MagicEvent.NONE;
@@ -34,9 +34,8 @@ public class Livewire_Lash {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanent source = (MagicPermanent)data[0];
+            final MagicPermanent source = event.getRefPermanent();
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicDamage damage=new MagicDamage(source,target,2,false);

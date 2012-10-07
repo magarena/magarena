@@ -30,7 +30,6 @@ public class Death_Grasp {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final int amount = event.getCardOnStack().getX();
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {

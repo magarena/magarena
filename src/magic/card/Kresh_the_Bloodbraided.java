@@ -22,7 +22,7 @@ public class Kresh_the_Bloodbraided {
                         MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
                         1,
                         MagicSimpleMayChoice.DEFAULT_YES),
-                    new Object[]{power},
+                    power,
                     this,
                     "PN may$ put " + power + " +1/+1 counters on SN.") :
                 MagicEvent.NONE;
@@ -31,13 +31,12 @@ public class Kresh_the_Bloodbraided {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 game.doAction(new MagicChangeCountersAction(
                         event.getPermanent(),
                         MagicCounterType.PlusOne,
-                        (Integer)data[0],
+                        event.getRefInt(),
                         true));
             }
         }

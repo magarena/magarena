@@ -20,7 +20,7 @@ public class Biting_Tether {
             return permanent.isController(upkeepPlayer) ?
                 new MagicEvent(
                     permanent,
-                    new Object[]{permanent.getEnchantedCreature()},
+                    permanent.getEnchantedCreature(),
                     this,
                     "PN puts a -1/-1 counter on " +
                     permanent.getEnchantedCreature() + "."
@@ -32,10 +32,9 @@ public class Biting_Tether {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
-                    (MagicPermanent)data[0],
+                    event.getRefPermanent(),
                     MagicCounterType.MinusOne,1,true));            
         }
     };

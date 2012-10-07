@@ -33,7 +33,7 @@ public class Witherscale_Wurm {
             final MagicPermanentList plist = new MagicPermanentList(permanent.getBlockingCreatures());
             return new MagicEvent(
                 permanent,
-                new Object[]{plist},
+                plist,
                 this,
                 plist.size() > 1 ?
                     "Blocking creatures gain wither until end of turn." :
@@ -45,9 +45,8 @@ public class Witherscale_Wurm {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanentList plist = (MagicPermanentList)data[0]; 
+            final MagicPermanentList plist = event.getRefPermanentList(); 
             for (final MagicPermanent blocker : plist) {
                 game.doAction(new MagicAddStaticAction(blocker,AB));
             }
@@ -61,7 +60,7 @@ public class Witherscale_Wurm {
             return (permanent == blocker && attacker.isValid()) ?
                 new MagicEvent(
                     permanent,
-                    new Object[]{attacker},
+                    attacker,
                     this,
                     attacker + " gains wither until end of turn."):
                 MagicEvent.NONE;
@@ -70,9 +69,8 @@ public class Witherscale_Wurm {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicAddStaticAction((MagicPermanent)data[0],AB));
+            game.doAction(new MagicAddStaticAction(event.getRefPermanent(),AB));
         }
     };
     
@@ -95,7 +93,6 @@ public class Witherscale_Wurm {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPermanent permanent = event.getPermanent();
             final int amount = permanent.getCounters(MagicCounterType.MinusOne);

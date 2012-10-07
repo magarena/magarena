@@ -46,7 +46,6 @@ public class Graveyard_Shovel {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer targetPlayer) {
@@ -57,7 +56,7 @@ public class Graveyard_Shovel {
                             targetPlayer,
                             MagicTargetChoice.TARGET_CARD_FROM_GRAVEYARD,
                             new MagicGraveyardTargetPicker(true),
-                            new Object[]{player},
+                            player,
                             EVENT_ACTION,
                             "PN exiles a card$ from his or her graveyard."
                         ));
@@ -70,14 +69,13 @@ public class Graveyard_Shovel {
             public void executeEvent(
                     final MagicGame game,
                     final MagicEvent event,
-                    final Object[] data,
                     final Object[] choiceResults) {
                 event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                     public void doAction(final MagicCard card) {
                         game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
                         game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.Exile));
                         if (card.getCardDefinition().isCreature()) {
-                            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],2));
+                            game.doAction(new MagicChangeLifeAction(event.getRefPlayer(),2));
                         }
                     }
                 });

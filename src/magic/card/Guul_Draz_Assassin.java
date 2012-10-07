@@ -58,7 +58,7 @@ public class Guul_Draz_Assassin {
                     player,
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     new MagicWeakenTargetPicker(amount,amount),
-                    new Object[]{amount},
+                    amount,
                     this,
                     "Target creature$ gets " + amount + "/" + amount + " until end of turn.");
         }
@@ -67,9 +67,8 @@ public class Guul_Draz_Assassin {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            final int amount = (Integer)data[0];
+            final int amount = event.getRefInt();
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeTurnPTAction(creature,amount,amount));

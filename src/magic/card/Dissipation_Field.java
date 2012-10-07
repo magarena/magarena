@@ -18,7 +18,7 @@ public class Dissipation_Field {
             return (permanent.isController(damage.getTarget()) && dmgSource.isPermanent()) ?
                 new MagicEvent(
                     permanent,
-                    new Object[]{dmgSource},
+                    dmgSource,
                     this,
                     "Return "+dmgSource+" to its owner's hand."
                 ):
@@ -28,10 +28,9 @@ public class Dissipation_Field {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicRemoveFromPlayAction(
-                (MagicPermanent)data[0],
+                event.getRefPermanent(),
                 MagicLocationType.OwnersHand
             ));
         }

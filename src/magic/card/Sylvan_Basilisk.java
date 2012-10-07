@@ -19,7 +19,7 @@ public class Sylvan_Basilisk {
             return new MagicEvent(
                 permanent,
                 permanent.getController(),
-                new Object[]{plist},
+                plist,
                 this,
                 plist.size() > 1 ?
                     "Destroy blocking creatures." :
@@ -31,10 +31,8 @@ public class Sylvan_Basilisk {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanentList plist = (MagicPermanentList)data[0];
-            for (final MagicPermanent blocker : plist) {
+            for (final MagicPermanent blocker : event.getRefPermanentList()) {
                 game.doAction(new MagicDestroyAction(blocker));
             }
         }

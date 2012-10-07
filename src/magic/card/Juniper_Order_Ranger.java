@@ -16,7 +16,7 @@ public class Juniper_Order_Ranger {
                     otherPermanent.isFriend(permanent)) ?
                 new MagicEvent(
                     permanent,
-                    new Object[]{otherPermanent},
+                    otherPermanent,
                     this,
                     "Put a +1/+1 counter on "+otherPermanent+" and a +1/+1 counter on SN."
                 ):
@@ -27,9 +27,8 @@ public class Juniper_Order_Ranger {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.PlusOne,1,true));
+            game.doAction(new MagicChangeCountersAction(event.getRefPermanent(),MagicCounterType.PlusOne,1,true));
             game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,1,true));            
         }        
     };

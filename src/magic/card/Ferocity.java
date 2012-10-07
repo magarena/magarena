@@ -22,7 +22,7 @@ public class Ferocity {
                         MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
                         1,
                         MagicSimpleMayChoice.DEFAULT_YES),
-                    new Object[]{enchantedCreature},
+                    enchantedCreature,
                     this,
                     "PN may put a +1/+1 counter on " + enchantedCreature + "."
                 ) :
@@ -33,10 +33,9 @@ public class Ferocity {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.PlusOne,1,true));
+                game.doAction(new MagicChangeCountersAction(event.getRefPermanent(),MagicCounterType.PlusOne,1,true));
             }
         }
     };
@@ -52,7 +51,7 @@ public class Ferocity {
                         MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
                         1,
                         MagicSimpleMayChoice.DEFAULT_YES),
-                    new Object[]{enchantedCreature},
+                    enchantedCreature,
                     this,
                     "PN may put a +1/+1 counter on " + enchantedCreature + "."
                 ) :
@@ -63,10 +62,9 @@ public class Ferocity {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.PlusOne,1,true));
+                game.doAction(new MagicChangeCountersAction(event.getRefPermanent(),MagicCounterType.PlusOne,1,true));
             }
         }
     };

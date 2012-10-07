@@ -17,7 +17,7 @@ public class Rafiq_of_the_Many {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{creature},
+                        creature,
                         this,
                         creature + " gains double strike until end of turn."):
                 MagicEvent.NONE;
@@ -26,9 +26,8 @@ public class Rafiq_of_the_Many {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicSetAbilityAction((MagicPermanent)data[0],MagicAbility.DoubleStrike));
+            game.doAction(new MagicSetAbilityAction(event.getRefPermanent(),MagicAbility.DoubleStrike));
         }
     };
 }

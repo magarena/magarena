@@ -30,7 +30,6 @@ public class Black_Sun_s_Zenith {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final int amount = event.getCardOnStack().getX();
             final Collection<MagicTarget> targets = 

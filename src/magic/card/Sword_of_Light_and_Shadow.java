@@ -38,7 +38,6 @@ public class Sword_of_Light_and_Shadow {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeLifeAction(event.getPlayer(),3));
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {

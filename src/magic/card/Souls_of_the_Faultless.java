@@ -25,7 +25,6 @@ public class Souls_of_the_Faultless {
                         public void executeEvent(
                                 final MagicGame game,
                                 final MagicEvent event,
-                                final Object[] data,
                                 final Object[] choiceResults) {
                             game.doAction(new MagicChangeLifeAction(event.getPlayer(),amount));
                             game.doAction(new MagicChangeLifeAction(game.getPlayer(pIndex),-amount));

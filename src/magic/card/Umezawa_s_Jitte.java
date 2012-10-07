@@ -38,7 +38,7 @@ public class Umezawa_s_Jitte {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{equippedCreature},
+                    equippedCreature,
                     this,
                     equippedCreature + " gets +2/+2 until end of turn.");
         }
@@ -46,9 +46,8 @@ public class Umezawa_s_Jitte {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeTurnPTAction((MagicPermanent)data[0],2,2));
+            game.doAction(new MagicChangeTurnPTAction(event.getRefPermanent(),2,2));
         }
     };
     
@@ -77,7 +76,6 @@ public class Umezawa_s_Jitte {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
@@ -108,7 +106,6 @@ public class Umezawa_s_Jitte {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeLifeAction(event.getPlayer(),2));
         }
@@ -129,7 +126,6 @@ public class Umezawa_s_Jitte {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
                     event.getPermanent(),

@@ -22,7 +22,6 @@ public class Attended_Knight {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicPlayTokenAction(event.getPlayer(), TokenCardDefinitions.get("Soldier")));
         }

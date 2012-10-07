@@ -16,7 +16,7 @@ public class Raking_Canopy {
             return (creature.getController()!=permanent.getController()&&creature.hasAbility(MagicAbility.Flying)) ?
                 new MagicEvent(
                         permanent,
-                        new Object[]{creature},
+                        creature,
                         this,
                         "SN deals 4 damage to "+creature+".") :
                 MagicEvent.NONE;
@@ -26,9 +26,8 @@ public class Raking_Canopy {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            final MagicDamage damage=new MagicDamage(event.getSource(),(MagicTarget)data[0],4,false);
+            final MagicDamage damage=new MagicDamage(event.getSource(),event.getRefPermanent(),4,false);
             game.doAction(new MagicDealDamageAction(damage));
         }
     };

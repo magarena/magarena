@@ -20,7 +20,6 @@ public class Fettergeist {
         public void executeEvent(
             final MagicGame game,
             final MagicEvent event,
-            final Object[] data,
             final Object[] choiceResults) {
             if (MagicMayChoice.isNoChoice(choiceResults[0])) {
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));
@@ -49,7 +48,6 @@ public class Fettergeist {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final int x = event.getPlayer().controlsPermanent((MagicPermanent)event.getSource()) ? 1 : 0;
             final int amount = event.getPlayer().getNrOfPermanentsWithType(MagicType.Creature) - x;

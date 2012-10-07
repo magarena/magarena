@@ -46,7 +46,6 @@ public class Raging_Ravine {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
                 event.getPermanent(),
@@ -116,7 +115,6 @@ public class Raging_Ravine {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPermanent permanent=event.getPermanent();
             game.doAction(new MagicBecomesCreatureAction(permanent,PT,ST,C));

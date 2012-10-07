@@ -30,7 +30,6 @@ public class Tribute_to_Hunger {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer opponent) {
@@ -39,7 +38,7 @@ public class Tribute_to_Hunger {
                         opponent,
                         MagicTargetChoice.SACRIFICE_CREATURE,
                         MagicSacrificeTargetPicker.create(),
-                        new Object[]{event.getPlayer()},
+                        event.getPlayer(),
                         EVENT_ACTION,
                         "Choose a creature to sacrifice$."));
                 }
@@ -52,13 +51,12 @@ public class Tribute_to_Hunger {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicSacrificeAction(permanent));
                     final int toughness = permanent.getToughness();
-                    game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],toughness));
+                    game.doAction(new MagicChangeLifeAction(event.getRefPlayer(),toughness));
                 }
             });
         }

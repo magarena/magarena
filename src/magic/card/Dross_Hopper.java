@@ -39,7 +39,6 @@ public class Dross_Hopper {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicSetAbilityAction(event.getPermanent(),MagicAbility.Flying));
         }

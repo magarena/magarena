@@ -22,7 +22,6 @@ public class Reviving_Dose {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicChangeLifeAction(player,3));

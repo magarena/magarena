@@ -29,7 +29,7 @@ public class Wooden_Stake {
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
-                    new Object[]{plist},
+                    plist,
                     this,
                     plist.size() > 1 ?
                         "Destroy blocking Vampires. They can't be regenerated." :
@@ -42,9 +42,8 @@ public class Wooden_Stake {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanentList plist = (MagicPermanentList)data[0];
+            final MagicPermanentList plist = event.getRefPermanentList();
             for (final MagicPermanent blocker : plist) {
                 game.doAction(new MagicChangeStateAction(blocker,MagicPermanentState.CannotBeRegenerated,true));
                 game.doAction(new MagicDestroyAction(blocker));
@@ -63,7 +62,7 @@ public class Wooden_Stake {
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
-                    new Object[]{blocked},
+                    blocked,
                     this,
                     "Destroy " + blocked + ". It can't be regenerated."):
                 MagicEvent.NONE;
@@ -72,9 +71,8 @@ public class Wooden_Stake {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanent creature = (MagicPermanent)data[0];
+            final MagicPermanent creature = event.getRefPermanent();
             game.doAction(new MagicChangeStateAction(creature,MagicPermanentState.CannotBeRegenerated,true));
             game.doAction(new MagicDestroyAction(creature));
         }

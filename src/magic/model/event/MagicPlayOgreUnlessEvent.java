@@ -19,7 +19,7 @@ public class MagicPlayOgreUnlessEvent extends MagicEvent {
                 "You may pay "+cost.getText()+'.',
                 new MagicPayManaCostChoice(cost)
             ),
-            new Object[]{controller},
+            controller,
             EVENT_ACTION,
             "You may$ pay "+cost.getText()+"$."
         );
@@ -27,11 +27,11 @@ public class MagicPlayOgreUnlessEvent extends MagicEvent {
     
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.payManaCost(game,event.getPlayer(),choiceResults);
             } else {
-                game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Ogre")));
+                game.doAction(new MagicPlayTokenAction(event.getRefPlayer(),TokenCardDefinitions.get("Ogre")));
             }
         }
     };

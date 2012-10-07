@@ -29,7 +29,6 @@ public class Wheel_of_Fortune {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             for (final MagicPlayer player : game.getPlayers()) {
                 final MagicCardList hand = new MagicCardList(player.getHand());

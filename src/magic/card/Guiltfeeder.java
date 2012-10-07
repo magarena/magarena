@@ -27,7 +27,6 @@ public class Guiltfeeder {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer().getOpponent();
             game.doAction(new MagicChangeLifeAction(

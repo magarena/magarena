@@ -16,7 +16,7 @@ public class Soul_Link {
             return (damage.getSource()==permanent.getEnchantedCreature()) ?
                 new MagicEvent(
                         permanent,
-                        new Object[]{amount},
+                        amount,
                         this,
                         "PN gains " + amount + " life.") :
                 MagicEvent.NONE;
@@ -25,9 +25,8 @@ public class Soul_Link {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(),(Integer)data[0]));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),event.getRefInt()));
         }
     };
     
@@ -39,7 +38,7 @@ public class Soul_Link {
             return (damage.getTarget()==permanent.getEnchantedCreature()) ?
                 new MagicEvent(
                     permanent,
-                    new Object[]{amount},
+                    amount,
                     this,
                     "PN gains " + amount + " life.") :
                 MagicEvent.NONE;
@@ -48,9 +47,8 @@ public class Soul_Link {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(),(Integer)data[0]));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),event.getRefInt()));
         }
     };
 }

@@ -15,7 +15,7 @@ public class MagicStackGetChoicesEvent extends MagicEvent {
             itemOnStack.getController(),
             itemOnStack.getEvent().getChoice(),
             itemOnStack.getEvent().getTargetPicker(),
-            new Object[]{itemOnStack},
+            itemOnStack,
             EVENT_ACTION,
             ""
         );
@@ -26,9 +26,8 @@ public class MagicStackGetChoicesEvent extends MagicEvent {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            final MagicItemOnStack itemOnStack=(MagicItemOnStack)data[0];
+            final MagicItemOnStack itemOnStack = event.getRefItemOnStack();
             itemOnStack.setChoiceResults(choiceResults);
 
             // pay mana cost when there is one.

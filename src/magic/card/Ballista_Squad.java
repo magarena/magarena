@@ -48,7 +48,7 @@ public class Ballista_Squad {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_ATTACKING_OR_BLOCKING_CREATURE,
                     new MagicDamageTargetPicker(amount),
-                    new Object[]{amount},
+                    amount,
                     this,
                     "SN deals " + amount + " damage to target creature$.");
         }
@@ -57,14 +57,13 @@ public class Ballista_Squad {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicDamage damage = new MagicDamage(
                             event.getSource(),
                             target,
-                            (Integer)data[0],
+                            event.getRefInt(),
                             false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }

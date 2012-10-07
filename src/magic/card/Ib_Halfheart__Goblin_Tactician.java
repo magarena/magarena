@@ -32,7 +32,7 @@ public class Ib_Halfheart__Goblin_Tactician {
                     otherPermanent.hasSubType(MagicSubType.Goblin)) ?
                 new MagicEvent(
                     permanent,
-                    new Object[]{otherPermanent},
+                    otherPermanent,
                     this,
                     "PN sacrifices " + otherPermanent + ". If PN does, " + otherPermanent + " deals 4 damage to each creature blocking it."
                 ):
@@ -43,9 +43,8 @@ public class Ib_Halfheart__Goblin_Tactician {
         public void executeEvent(
             final MagicGame game,
             final MagicEvent event,
-            final Object[] data,
             final Object[] choiceResults) {
-            final MagicPermanent goblin = (MagicPermanent)data[0];
+            final MagicPermanent goblin = event.getRefPermanent();
             final MagicSacrificeAction sac = new MagicSacrificeAction(goblin);
             final MagicPermanentList blockingCreatures = goblin.getBlockingCreatures();
             game.doAction(sac);
@@ -83,7 +82,6 @@ public class Ib_Halfheart__Goblin_Tactician {
         public void executeEvent(
             final MagicGame game,
             final MagicEvent event,
-            final Object[] data,
             final Object[] choiceResults) {
             game.doAction(2, new MagicPlayTokenAction(
                 event.getPlayer(), 

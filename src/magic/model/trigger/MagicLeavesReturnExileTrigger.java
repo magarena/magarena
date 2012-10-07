@@ -25,7 +25,7 @@ public class MagicLeavesReturnExileTrigger extends MagicWhenLeavesPlayTrigger {
             final MagicCard exiledCard = permanent.getExiledCards().get(0);
             return new MagicEvent(
                 permanent,
-                new Object[]{exiledCard},
+                exiledCard,
                 this,
                 "Return " + exiledCard + " to the battlefield"
             );
@@ -36,9 +36,8 @@ public class MagicLeavesReturnExileTrigger extends MagicWhenLeavesPlayTrigger {
     public void executeEvent(
             final MagicGame game,
             final MagicEvent event,
-            final Object[] data,
             final Object[] choiceResults) {
-        final MagicCard exiledCard = (MagicCard)data[0];
+        final MagicCard exiledCard = event.getRefCard();
         game.doAction(new MagicRemoveCardAction(exiledCard,MagicLocationType.Exile));
         game.doAction(new MagicPlayCardAction(exiledCard,exiledCard.getOwner(),MagicPlayCardAction.NONE));
     }

@@ -17,7 +17,7 @@ public class Dread {
                     dmgSource.isCreature()) ?
                 new MagicEvent(
                     permanent,
-                    new Object[]{dmgSource},
+                    dmgSource,
                     this,
                     "Destroy "+dmgSource+"."
                 ):
@@ -28,9 +28,8 @@ public class Dread {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicDestroyAction((MagicPermanent)data[0]));
+            game.doAction(new MagicDestroyAction(event.getRefPermanent()));
         }
     };
 }

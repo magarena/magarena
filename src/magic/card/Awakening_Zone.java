@@ -32,7 +32,6 @@ public class Awakening_Zone {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Eldrazi Spawn")));

@@ -41,7 +41,7 @@ public class Falkenrath_Exterminator {
                     source,
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     new MagicDamageTargetPicker(amount),
-                    new Object[]{amount},
+                    amount,
                     this,
                     "SN deals " + amount + " damage to target creature$.");
         }
@@ -49,14 +49,13 @@ public class Falkenrath_Exterminator {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     final MagicDamage damage = new MagicDamage(
                             event.getSource(),
                             creature,
-                            (Integer)data[0],
+                            event.getRefInt(),
                             false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }

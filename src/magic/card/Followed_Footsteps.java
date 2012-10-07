@@ -26,7 +26,6 @@ public class Followed_Footsteps {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPermanent permanent=event.getPermanent();
             final MagicPermanent enchanted=permanent.getEnchantedCreature();

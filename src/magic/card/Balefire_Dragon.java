@@ -25,7 +25,7 @@ public class Balefire_Dragon {
                 new MagicEvent(
                         permanent,
                         (MagicPlayer)damage.getTarget(),
-                        new Object[]{amount},
+                        amount,
                         this,
                         "SN deals " + amount + " damage to each creature defending player controls."):
                 MagicEvent.NONE;
@@ -34,7 +34,6 @@ public class Balefire_Dragon {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final Collection<MagicTarget> creatures=
                     game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
@@ -42,7 +41,7 @@ public class Balefire_Dragon {
                 final MagicDamage damage = new MagicDamage(
                         event.getSource(),
                         creature,
-                        (Integer)data[0],
+                        event.getRefInt(),
                         false);
                 game.doAction(new MagicDealDamageAction(damage));
             }

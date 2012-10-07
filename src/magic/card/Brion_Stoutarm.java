@@ -47,17 +47,17 @@ public class Brion_Stoutarm {
             return new MagicEvent(
                 source,
                 MagicTargetChoice.NEG_TARGET_PLAYER,
-                new Object[]{sacrificed},
+                sacrificed,
                 this,
                 "SN deals damage equal to the power of "+sacrificed+" to target player$."
             );
         }
 
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
-                    final MagicPermanent sacrificed=(MagicPermanent)data[0];
+                    final MagicPermanent sacrificed=event.getRefPermanent();
                     final MagicDamage damage=new MagicDamage(event.getSource(),player,sacrificed.getPower(),false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }

@@ -6,12 +6,14 @@ import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicSource;
+import magic.model.MagicCopyable;
+import magic.model.MagicCopyMap;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicAbilityOnStack;
 
-public abstract class MagicPermanentActivation extends MagicActivation implements MagicChangeCardDefinition {
+public abstract class MagicPermanentActivation extends MagicActivation implements MagicChangeCardDefinition, MagicCopyable {
     
     private static int currentIndex = 1;
 
@@ -31,10 +33,15 @@ public abstract class MagicPermanentActivation extends MagicActivation implement
     public final MagicEvent getEvent(final MagicSource source) {
         return new MagicEvent(
             source,
-            new Object[]{this},
+            this,
             EVENT_ACTION,
             "Play activated ability of SN."
         );
+    }
+
+    @Override
+    public MagicCopyable copy(final MagicCopyMap copyMap) {
+        return this;
     }
     
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
@@ -42,9 +49,8 @@ public abstract class MagicPermanentActivation extends MagicActivation implement
         public final void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanentActivation permanentActivation = (MagicPermanentActivation)data[0];
+            final MagicPermanentActivation permanentActivation = event.getRefPermanentActivation();
             final MagicPermanent permanent = event.getPermanent();
             final MagicAbilityOnStack abilityOnStack = new MagicAbilityOnStack(
                 permanentActivation,
@@ -68,7 +74,6 @@ public abstract class MagicPermanentActivation extends MagicActivation implement
     public void executeEvent(
             final MagicGame game, 
             final MagicEvent event, 
-            final Object[] data,
             final Object[] choiceResults) {
         throw new RuntimeException(getClass() + " did not override executeEvent");
     }

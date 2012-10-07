@@ -22,7 +22,6 @@ public class Arctic_Nishoba {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final int amount = event.getPermanent().getCounters(MagicCounterType.Charge) * 2;
             game.doAction(new MagicChangeLifeAction(

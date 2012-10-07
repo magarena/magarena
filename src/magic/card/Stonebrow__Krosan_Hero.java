@@ -18,7 +18,7 @@ public class Stonebrow__Krosan_Hero {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{creature},
+                    creature,
                     this,
                     creature + " gets +2/+2 until end of turn."):
                 MagicEvent.NONE;
@@ -27,9 +27,8 @@ public class Stonebrow__Krosan_Hero {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeTurnPTAction((MagicPermanent)data[0],2,2));
+            game.doAction(new MagicChangeTurnPTAction(event.getRefPermanent(),2,2));
         }
     };
 }

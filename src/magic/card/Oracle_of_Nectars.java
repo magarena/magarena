@@ -27,7 +27,7 @@ public class Oracle_of_Nectars {
             final int amount=payedCost.getX();
             return new MagicEvent(
                 source,
-                new Object[]{amount},
+                amount,
                 this,
                 "PN gains " + amount + " life."
             );
@@ -36,9 +36,8 @@ public class Oracle_of_Nectars {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(),(Integer)data[0]));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),event.getRefInt()));
         }
     };
 }

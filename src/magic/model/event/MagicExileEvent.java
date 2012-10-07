@@ -17,7 +17,7 @@ public class MagicExileEvent extends MagicEvent {
     
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choices) {
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choices) {
             game.doAction(new MagicRemoveFromPlayAction(event.getPermanent(),MagicLocationType.Exile));
         }
     };

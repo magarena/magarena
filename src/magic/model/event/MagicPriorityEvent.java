@@ -15,7 +15,6 @@ public class MagicPriorityEvent extends MagicEvent {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             
             final MagicPlayChoiceResult playChoiceResult=(MagicPlayChoiceResult)choiceResults[0];

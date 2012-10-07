@@ -28,7 +28,6 @@ public class Smallpox {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             for (final MagicPlayer player : game.getPlayers()) {
                 game.doAction(new MagicChangeLifeAction(player,-1));

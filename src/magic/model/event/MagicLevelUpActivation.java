@@ -48,7 +48,7 @@ public class MagicLevelUpActivation extends MagicPermanentActivation {
     }
 
     @Override
-    public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choices) {
+    public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choices) {
         game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,1,true));
     }
     

@@ -30,7 +30,6 @@ public class Martial_Coup {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPlayer player=event.getPlayer();
             int x = event.getCardOnStack().getX();

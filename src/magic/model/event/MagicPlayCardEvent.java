@@ -28,7 +28,6 @@ public class MagicPlayCardEvent {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choices) {
             game.doAction(new MagicPlayCardFromStackAction(event.getCardOnStack()));
         }
@@ -49,7 +48,6 @@ public class MagicPlayCardEvent {
             public void executeEvent(
                     final MagicGame game,
                     final MagicEvent event,
-                    final Object[] data,
                     final Object[] choiceResults) {
                 final int kicker = (Integer)choiceResults[1];
                 game.doAction(new MagicPlayCardFromStackAction(event.getCardOnStack(), kicker));
@@ -63,7 +61,7 @@ public class MagicPlayCardEvent {
             public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
                 return new MagicEvent(
                     cardOnStack,
-                    new Object[]{payedCost.getX()},
+                    payedCost.getX(),
                     this,
                     "$Play SN. " + desc + "."
                 );
@@ -72,9 +70,8 @@ public class MagicPlayCardEvent {
             public void executeEvent(
                     final MagicGame game,
                     final MagicEvent event,
-                    final Object[] data,
                     final Object[] choiceResults) {
-                final int X = (Integer)data[0];
+                final int X = event.getRefInt();
                 game.doAction(new MagicPlayCardFromStackAction(event.getCardOnStack(), X));
             }
         };

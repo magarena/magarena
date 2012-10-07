@@ -24,7 +24,6 @@ public class Mogg_War_Marshal {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicPlayTokenAction(
                 event.getPlayer(),
@@ -47,7 +46,6 @@ public class Mogg_War_Marshal {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicPlayTokenAction(
                 event.getPlayer(),

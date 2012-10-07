@@ -44,7 +44,7 @@ public class Parallax_Wave {
         }
 
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicExileUntilThisLeavesPlayAction(
@@ -75,7 +75,6 @@ public class Parallax_Wave {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPermanent permanent = event.getPermanent();
             game.doAction(new MagicReturnExiledUntilThisLeavesPlayAction(permanent,MagicLocationType.Play));

@@ -22,7 +22,6 @@ public class Bountiful_Harvest {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
             final int amount = player.getNrOfPermanentsWithType(MagicType.Land);

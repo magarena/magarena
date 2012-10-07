@@ -19,7 +19,7 @@ public class Specter_s_Shroud {
                 new MagicEvent(
                         permanent,
                         permanent.getController(),
-                        new Object[]{damage.getTarget()},
+                        damage.getTarget(),
                         this,
                         damage.getTarget() + " discards a card.") :
                 MagicEvent.NONE;
@@ -28,9 +28,8 @@ public class Specter_s_Shroud {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            game.addEvent(new MagicDiscardEvent(event.getSource(),(MagicPlayer)data[0],1,false));
+            game.addEvent(new MagicDiscardEvent(event.getSource(),event.getRefPlayer(),1,false));
         }
     };
 }

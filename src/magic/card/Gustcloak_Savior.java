@@ -16,7 +16,7 @@ public class Gustcloak_Savior {
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(),
-                    new Object[]{creature},
+                    creature,
                     this, 
                     "PN may$ untap " + creature + " and remove it from combat.") :
             MagicEvent.NONE;
@@ -26,10 +26,9 @@ public class Gustcloak_Savior {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                final MagicPermanent permanent = (MagicPermanent)data[0];
+                final MagicPermanent permanent = event.getRefPermanent();
                 game.doAction(new MagicUntapAction(permanent));
                 game.doAction(new MagicRemoveFromCombatAction(permanent));
             }

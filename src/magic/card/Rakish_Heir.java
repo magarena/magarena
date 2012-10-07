@@ -25,7 +25,7 @@ public class Rakish_Heir {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{dmgSource},
+                        dmgSource,
                         this,
                         "Put a +1/+1 counter on " + dmgSource + "."):
                 MagicEvent.NONE;
@@ -34,9 +34,8 @@ public class Rakish_Heir {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.PlusOne,1,true));
+            game.doAction(new MagicChangeCountersAction(event.getRefPermanent(),MagicCounterType.PlusOne,1,true));
         }
     };
 }

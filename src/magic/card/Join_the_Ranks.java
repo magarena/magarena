@@ -22,7 +22,6 @@ public class Join_the_Ranks {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(2, new MagicPlayTokenAction(
                 event.getPlayer(),

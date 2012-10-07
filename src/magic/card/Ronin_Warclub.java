@@ -17,7 +17,7 @@ public class Ronin_Warclub {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{otherPermanent},
+                        otherPermanent,
                         this,
                          "Attach SN to " + otherPermanent + ".") :
                 MagicEvent.NONE;
@@ -27,11 +27,10 @@ public class Ronin_Warclub {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicAttachEquipmentAction(
                     event.getPermanent(),
-                    (MagicPermanent)data[0]));
+                    event.getRefPermanent()));
         }
     };
 }

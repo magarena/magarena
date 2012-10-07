@@ -54,7 +54,6 @@ public class Ezuri__Renegade_Leader {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
@@ -87,7 +86,6 @@ public class Ezuri__Renegade_Leader {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final Collection<MagicTarget> targets =
                     game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_ELF_YOU_CONTROL);

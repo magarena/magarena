@@ -40,7 +40,7 @@ public class Wild_Defiance {
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
-                    new Object[]{targetedPerm},
+                    targetedPerm,
                     this,
                     targetedPerm + " gets +3/+3 until end of turn."):
                 MagicEvent.NONE;
@@ -50,9 +50,8 @@ public class Wild_Defiance {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeTurnPTAction((MagicPermanent)data[0],3,3));
+            game.doAction(new MagicChangeTurnPTAction(event.getRefPermanent(),3,3));
         }
     };
 }

@@ -23,7 +23,7 @@ public class Warstorm_Surge {
                         player,
                         MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                         new MagicDamageTargetPicker(otherPermanent.getPower()),
-                        new Object[]{otherPermanent},
+                        otherPermanent,
                         this,
                         "Whenever a creature enters the battlefield under your control, " +
                         "it deals damage equal to its power to target creature or player$.") :
@@ -31,8 +31,8 @@ public class Warstorm_Surge {
         }
         
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-            final MagicPermanent permanent = (MagicPermanent)data[0];
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+            final MagicPermanent permanent = event.getRefPermanent();
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicDamage damage = new MagicDamage(permanent,target,permanent.getPower(),false);

@@ -25,17 +25,17 @@ public class Kaervek_the_Merciless {
                         permanent,
                         MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                         new MagicDamageTargetPicker(damage),
-                        new Object[]{damage},
+                        damage,
                         this,
                         "SN deals "+damage+" damage to target creature or player$."):
                 MagicEvent.NONE;
         }
         
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
-                    final MagicDamage damage=new MagicDamage(event.getSource(),target,(Integer)data[0],false);
+                    final MagicDamage damage=new MagicDamage(event.getSource(),target,event.getRefInt(),false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });

@@ -27,7 +27,6 @@ public class Hero_of_Bladehold {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPlayer player=event.getPlayer();
             for (int count=2;count>0;count--) {

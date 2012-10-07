@@ -49,7 +49,6 @@ public class Dwarven_Driller {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
@@ -60,7 +59,7 @@ public class Dwarven_Driller {
                         new MagicMayChoice(
                             controller + " may have " +
                             event.getSource() + " deal 2 damage to him or her."),
-                        new Object[]{permanent},
+                        permanent,
                         EVENT_ACTION,
                         "PN may$ have SN deal 2 damage to him or her."
                     ));
@@ -72,7 +71,6 @@ public class Dwarven_Driller {
             public void executeEvent(
                     final MagicGame game,
                     final MagicEvent event,
-                    final Object[] data,
                     final Object[] choiceResults) {
                 if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                     final MagicDamage damage = new MagicDamage(
@@ -83,7 +81,7 @@ public class Dwarven_Driller {
                     );
                     game.doAction(new MagicDealDamageAction(damage));
                 } else {
-                    game.doAction(new MagicDestroyAction((MagicPermanent)data[0]));
+                    game.doAction(new MagicDestroyAction(event.getRefPermanent()));
                 }
             }
         };

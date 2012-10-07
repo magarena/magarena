@@ -31,7 +31,6 @@ public class MagicReturnAuraEvent extends MagicEvent {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicCardOnStack cardOnStack = event.getCardOnStack();
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {

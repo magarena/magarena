@@ -26,7 +26,7 @@ public class Ward_Sliver {
             );
         }
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
             final MagicColor color=(MagicColor)choiceResults[0];
             final MagicAbility protection = color.getProtectionAbility();
             game.doAction(new MagicAddStaticAction((MagicPermanent)event.getSource(), new MagicStatic(

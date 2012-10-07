@@ -27,7 +27,6 @@ public class Thoughtweft_Gambit {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPlayer player=event.getPlayer();
             final Collection<MagicTarget> targets=

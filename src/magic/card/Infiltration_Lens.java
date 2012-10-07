@@ -32,7 +32,7 @@ public class Infiltration_Lens {
                 MagicSimpleMayChoice.DRAW_CARDS,
                 2,
                 MagicSimpleMayChoice.DEFAULT_NONE),
-            new Object[]{amount},
+            amount,
             DRAW,
             "PN may$ draw two cards.");
     }
@@ -42,10 +42,9 @@ public class Infiltration_Lens {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPermanent permanent = event.getPermanent();
-            final int amount = (Integer)data[0];
+            final int amount = event.getRefInt();
             if (MagicChoice.isYesChoice(choiceResults[0])) {
                 game.doAction(new MagicDrawAction(event.getPlayer(),2));
             }        

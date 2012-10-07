@@ -43,7 +43,6 @@ public class Mikaeus__the_Lunarch {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,1,true));
         }
@@ -73,7 +72,6 @@ public class Mikaeus__the_Lunarch {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPermanent creature = event.getPermanent();
             final Collection<MagicTarget> targets =

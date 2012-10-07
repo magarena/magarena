@@ -15,7 +15,7 @@ public class Brink_of_Disaster {
                 new MagicEvent(
                         permanent,
                         permanent.getController(),
-                        new Object[]{enchantedPermanent},
+                        enchantedPermanent,
                         this,
                         "Destroy " + enchantedPermanent + ".") :
                 MagicEvent.NONE;
@@ -24,9 +24,8 @@ public class Brink_of_Disaster {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicDestroyAction((MagicPermanent)data[0]));
+            game.doAction(new MagicDestroyAction(event.getRefPermanent()));
         }
     };
 }

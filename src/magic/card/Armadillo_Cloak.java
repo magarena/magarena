@@ -15,7 +15,7 @@ public class Armadillo_Cloak {
             return (permanent.getEnchantedCreature() == damage.getSource()) ?
                 new MagicEvent(
                     permanent,
-                    new Object[]{amount},
+                    amount,
                     this,
                     "PN gains " + amount + " life."):
                 MagicEvent.NONE;
@@ -24,11 +24,10 @@ public class Armadillo_Cloak {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeLifeAction(
                     event.getPlayer(),
-                    (Integer)data[0]));
+                    event.getRefInt()));
         }
     };
 }

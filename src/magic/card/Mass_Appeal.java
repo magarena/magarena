@@ -24,7 +24,6 @@ public class Mass_Appeal {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicDrawAction(

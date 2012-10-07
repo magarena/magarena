@@ -15,7 +15,7 @@ public class Kami_of_the_Honored_Dead {
             return (damage.getTarget() == permanent) ?
                 new MagicEvent(
                     permanent,
-                    new Object[]{amount},
+                    amount,
                     this,
                     "PN gains " + amount + " life."
                 ) :
@@ -26,11 +26,10 @@ public class Kami_of_the_Honored_Dead {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeLifeAction(
                     event.getPlayer(),
-                    (Integer)data[0]));
+                    event.getRefInt()));
         }
     };
 }

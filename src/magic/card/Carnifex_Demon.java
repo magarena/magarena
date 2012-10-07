@@ -45,7 +45,6 @@ public class Carnifex_Demon {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPermanent creature=event.getPermanent();
             final Collection<MagicTarget> targets=

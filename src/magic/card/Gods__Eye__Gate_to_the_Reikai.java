@@ -25,7 +25,6 @@ public class Gods__Eye__Gate_to_the_Reikai {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicPlayTokenAction(
                     event.getPlayer(),

@@ -27,7 +27,6 @@ public class Bar_the_Door {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final Collection<MagicTarget> targets = game.filterTargets(
                     event.getPlayer(),

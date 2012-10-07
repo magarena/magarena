@@ -18,7 +18,7 @@ public class MagicCounterUnlessEvent extends MagicEvent {
                 "You may pay "+cost.getText()+'.',
                 new MagicPayManaCostChoice(cost)
             ),
-            new Object[]{itemOnStack},
+            itemOnStack,
             EVENT_ACTION,
             "You may$ pay "+cost.getText()+"$. " + 
             "If you don't, counter "+itemOnStack.getName()+"."
@@ -30,9 +30,8 @@ public class MagicCounterUnlessEvent extends MagicEvent {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            final MagicItemOnStack itemOnStack=(MagicItemOnStack)data[0];
+            final MagicItemOnStack itemOnStack = event.getRefItemOnStack();
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.payManaCost(game,itemOnStack.getController(),choiceResults);
             } else {

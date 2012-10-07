@@ -7,6 +7,7 @@ import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicEventAction;
 
 public class MagicFadeVanishCounterTrigger extends MagicAtUpkeepTrigger {
 
@@ -15,39 +16,51 @@ public class MagicFadeVanishCounterTrigger extends MagicAtUpkeepTrigger {
     public MagicFadeVanishCounterTrigger(final String counterType) {
         this.counterType = counterType;
     }
+    
+    @Override
+    public boolean accept(final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
+        return permanent.isController(upkeepPlayer);
+    }
 
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
-        if (permanent.isController(upkeepPlayer)) {
-            boolean sacrifice = false;
-            final int amount = permanent.getCounters(MagicCounterType.Charge);
-            if (counterType == "fade") {
-                sacrifice = amount == 0;
-            } else if (amount == 1){
-                sacrifice = true;
-                game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.Charge,-1,true));
-            }
-            return new MagicEvent(
-                permanent,
-                new Object[]{sacrifice},
-                this,
-                sacrifice ?
-                    "PN sacrifices SN." :
-                    "PN removes a " + counterType + " counter from SN."
-            );
+        boolean sacrifice = false;
+        final int amount = permanent.getCounters(MagicCounterType.Charge);
+        if (counterType == "fade") {
+            sacrifice = amount == 0;
+        } else if (amount == 1){
+            sacrifice = true;
+            game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.Charge,-1,true));
         }
-        return MagicEvent.NONE;
+        return sacrifice ?
+            new MagicEvent(
+                permanent,
+                SAC_PERM,
+                "PN sacrifices SN."
+            ):
+            new MagicEvent(
+                permanent,
+                REMOVE_COUNTER,
+                "PN removes a " + counterType + " counter from SN."
+            );
     }
-    @Override
-    public void executeEvent(
-            final MagicGame game,
-            final MagicEvent event,
-            final Object[] data,
-            final Object[] choiceResults) {
-        final boolean sacrifice = (Boolean)data[0];
-        if (sacrifice) {
+
+    private static final MagicEventAction SAC_PERM = new MagicEventAction() {
+        @Override
+        public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] choiceResults) {
             game.doAction(new MagicSacrificeAction(event.getPermanent()));
-        } else {
+        }
+    };
+    
+    private static final MagicEventAction REMOVE_COUNTER = new MagicEventAction() {
+        @Override
+        public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
                 event.getPermanent(),
                 MagicCounterType.Charge,
@@ -55,6 +68,5 @@ public class MagicFadeVanishCounterTrigger extends MagicAtUpkeepTrigger {
                 true
             ));
         }
-    }
+    };
 }
-

@@ -20,7 +20,7 @@ public class Unhallowed_Pact {
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
-                    new Object[]{enchanted.getCard()},
+                    enchanted.getCard(),
                     this,
                     "Return " + enchanted + " to the battlefield under your control."):
                 MagicEvent.NONE;
@@ -29,9 +29,8 @@ public class Unhallowed_Pact {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCard card = (MagicCard)data[0];
+            final MagicCard card = event.getRefCard();
             if (card.getOwner().getGraveyard().contains(card)) {
                 game.doAction(new MagicReanimateAction(
                         event.getPlayer(),

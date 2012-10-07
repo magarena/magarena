@@ -21,7 +21,7 @@ public class MagicExaltedTrigger extends MagicWhenAttacksTrigger {
                 permanent.getController().getNrOfAttackers()==1) ?
             new MagicEvent(
                 permanent,
-                new Object[]{creature},
+                creature,
                 this,
                 creature + " gets +1/+1 until end of turn."
             ):
@@ -29,7 +29,7 @@ public class MagicExaltedTrigger extends MagicWhenAttacksTrigger {
     }
 
     @Override
-    public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-        game.doAction(new MagicChangeTurnPTAction((MagicPermanent)data[0],1,1));
+    public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+        game.doAction(new MagicChangeTurnPTAction(event.getRefPermanent(),1,1));
     }
 }

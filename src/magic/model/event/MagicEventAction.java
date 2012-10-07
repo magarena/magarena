@@ -6,6 +6,5 @@ public interface MagicEventAction {
     void executeEvent(
             final MagicGame game,
             final MagicEvent event,
-            final Object[] data,
             final Object[] choiceResults);
 }

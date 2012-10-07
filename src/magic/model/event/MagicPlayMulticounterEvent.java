@@ -32,7 +32,6 @@ public class MagicPlayMulticounterEvent extends MagicSpellCardEvent {
     public void executeEvent(
             final MagicGame game,
             final MagicEvent event,
-            final Object[] data,
             final Object[] choiceResults) {
         final MagicCardOnStack cardOnStack = event.getCardOnStack();
         final MagicPlayCardFromStackAction action = new MagicPlayCardFromStackAction(cardOnStack);

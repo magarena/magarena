@@ -24,7 +24,7 @@ public class Ogre_Leadfoot {
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
-                    new Object[]{plist},
+                    plist,
                     this,
                     plist.size() > 1 ?
                         "Destroy blocking artifact creatures." :
@@ -37,9 +37,8 @@ public class Ogre_Leadfoot {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanentList plist = (MagicPermanentList)data[0];
+            final MagicPermanentList plist = event.getRefPermanentList();
             for (final MagicPermanent blocker : plist) {
                 game.doAction(new MagicDestroyAction(blocker));
             }

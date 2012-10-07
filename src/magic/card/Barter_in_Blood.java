@@ -25,7 +25,6 @@ public class Barter_in_Blood {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             for (final MagicPlayer player : game.getPlayers()) {
                 for (int i=2;i>0;i--) {

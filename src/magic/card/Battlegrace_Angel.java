@@ -18,7 +18,7 @@ public class Battlegrace_Angel {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{creature},
+                        creature,
                         this,
                         creature+" gains lifelink until end of turn."):
                 MagicEvent.NONE;
@@ -27,9 +27,8 @@ public class Battlegrace_Angel {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {            
-            game.doAction(new MagicSetAbilityAction((MagicPermanent)data[0],MagicAbility.LifeLink));
+            game.doAction(new MagicSetAbilityAction(event.getRefPermanent(),MagicAbility.LifeLink));
         }
     };
 }

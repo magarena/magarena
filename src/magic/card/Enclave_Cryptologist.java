@@ -39,7 +39,7 @@ public class Enclave_Cryptologist {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{amount},
+                    amount,
                     this,
                     player + description);
         }
@@ -48,11 +48,10 @@ public class Enclave_Cryptologist {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicDrawAction(player,1));
-            if ((Integer)data[0] <= 2) {
+            if (event.getRefInt() <= 2) {
                 game.addEvent(new MagicDiscardEvent(
                         event.getSource(),
                         player,

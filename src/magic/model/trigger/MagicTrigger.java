@@ -34,7 +34,6 @@ public abstract class MagicTrigger<T> implements MagicEventAction,MagicChangeCar
     public void executeEvent(
             final MagicGame game, 
             final MagicEvent event, 
-            final Object[] data,
             final Object[] choiceResults) {
         throw new RuntimeException(getClass() + " did not override executeEvent");
     }

@@ -25,7 +25,7 @@ public class Mirrorworks {
                     new MagicMayChoice(
                         new MagicPayManaCostChoice(MagicManaCost.TWO)
                     ),
-                    new Object[]{otherPermanent.getCardDefinition()},
+                    otherPermanent,
                     this,
                     "You may$ pay {2}. If you do, put a token that's a " +
                     "copy of " + otherPermanent + " onto the battlefield."
@@ -37,12 +37,11 @@ public class Mirrorworks {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 game.doAction(new MagicPlayTokenAction(
                     event.getPlayer(),
-                    (MagicCardDefinition)data[0]
+                    event.getRefPermanent().getCardDefinition()
                 ));
             }            
         }        

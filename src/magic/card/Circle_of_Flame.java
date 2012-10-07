@@ -19,7 +19,7 @@ public class Circle_of_Flame {
                     !creature.hasAbility(MagicAbility.Flying)) ?
                 new MagicEvent(
                     permanent,
-                    new Object[]{creature},
+                    creature,
                     this,
                     "SN deals 1 damage to attacking creature without flying."):
                 MagicEvent.NONE;
@@ -29,9 +29,8 @@ public class Circle_of_Flame {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            final MagicDamage damage = new MagicDamage(event.getSource(),(MagicTarget)data[0],1,false);
+            final MagicDamage damage = new MagicDamage(event.getSource(),event.getRefPermanent(),1,false);
             game.doAction(new MagicDealDamageAction(damage));
         }
     };

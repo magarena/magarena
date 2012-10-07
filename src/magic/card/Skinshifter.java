@@ -73,7 +73,6 @@ public class Skinshifter {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT1,AB1,ST1));
         }
@@ -130,7 +129,6 @@ public class Skinshifter {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT2,AB2,ST2));
         }
@@ -181,7 +179,6 @@ public class Skinshifter {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT3,ST3));
         }

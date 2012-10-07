@@ -30,7 +30,6 @@ public class Realm_Razer {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final Collection<MagicTarget> targets =
                     game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_LAND);
@@ -62,7 +61,6 @@ public class Realm_Razer {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicReturnExiledUntilThisLeavesPlayAction(
                     event.getPermanent(),

@@ -24,7 +24,7 @@ public class Sword_of_Feast_and_Famine {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{damage.getTarget()},
+                    damage.getTarget(),
                     this,
                     damage.getTarget() + " discards a card and you untap all lands you control."):
                 MagicEvent.NONE;
@@ -34,9 +34,8 @@ public class Sword_of_Feast_and_Famine {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            game.addEvent(new MagicDiscardEvent(event.getPermanent(),(MagicPlayer)data[0],1,false));
+            game.addEvent(new MagicDiscardEvent(event.getPermanent(),event.getRefPlayer(),1,false));
             final Collection<MagicTarget> targets = 
                 game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_LAND_YOU_CONTROL);
             for (final MagicTarget target : targets) {

@@ -46,7 +46,6 @@ public class Ratchet_Bomb {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
                         event.getPermanent(),
@@ -83,7 +82,6 @@ public class Ratchet_Bomb {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPermanent source=event.getPermanent();
             final int amount=source.getCounters(MagicCounterType.Charge);

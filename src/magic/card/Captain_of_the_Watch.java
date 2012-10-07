@@ -52,7 +52,6 @@ public class Captain_of_the_Watch {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPlayer player=event.getPlayer();
             for (int count=3;count>0;count--) {

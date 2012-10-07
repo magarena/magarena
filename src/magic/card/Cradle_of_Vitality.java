@@ -30,7 +30,7 @@ public class Cradle_of_Vitality {
                             new MagicPayManaCostChoice(MagicManaCost.ONE_WHITE),
                             MagicTargetChoice.POS_TARGET_CREATURE),
                             MagicPumpTargetPicker.create(),
-                    new Object[]{amount},
+                    amount,
                     this,
                     "You may$ pay {1}{W}$. If you do, put a +1/+1 counter " +
                     "on target creature$ for each 1 life you gained."):
@@ -40,7 +40,6 @@ public class Cradle_of_Vitality {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTargetPermanent(game,choiceResults,2,new MagicPermanentAction() {
@@ -48,7 +47,7 @@ public class Cradle_of_Vitality {
                         game.doAction(new MagicChangeCountersAction(
                                 creature,
                                 MagicCounterType.PlusOne,
-                                (Integer)data[0],
+                                event.getRefInt(),
                                 true));
                     }
                 });

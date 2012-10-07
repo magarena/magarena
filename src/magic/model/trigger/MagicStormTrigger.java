@@ -25,7 +25,7 @@ public class MagicStormTrigger extends MagicWhenSpellIsCastTrigger {
         return (count > 0) ?
             new MagicEvent(
                 cardOnStack,
-                new Object[]{count},
+                count,
                 this,
                 "Copy SN " + count + 
                 (count == 1 ? " time." : " times.")
@@ -37,9 +37,8 @@ public class MagicStormTrigger extends MagicWhenSpellIsCastTrigger {
     public void executeEvent(
             final MagicGame game,
             final MagicEvent event,
-            final Object[] data,
             final Object[] choiceResults) {
-        final int count = (Integer)data[0];
+        final int count = event.getRefInt();
         for (int i = 0; i < count; i++) {
             game.doAction(new MagicCopyCardOnStackAction(
                 event.getPlayer(),

@@ -21,7 +21,6 @@ public class Safe_Passage {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangePlayerStateAction(event.getPlayer(),MagicPlayerState.PreventAllDamage,true));
         }

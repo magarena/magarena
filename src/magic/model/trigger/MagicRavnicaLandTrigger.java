@@ -40,7 +40,6 @@ public class MagicRavnicaLandTrigger extends MagicWhenComesIntoPlayTrigger {
     public void executeEvent(
             final MagicGame game,
             final MagicEvent event,
-            final Object[] data,
             final Object[] choices) {
         if (MagicMayChoice.isYesChoice(choices[0])) {
             game.doAction(new MagicChangeLifeAction(event.getPlayer(),-2));

@@ -34,7 +34,7 @@ public class Phyrexian_Prowler {
         }
 
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
             game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),1,1));
         }
     };

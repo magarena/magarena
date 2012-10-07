@@ -27,7 +27,6 @@ public class Wurmcoil_Engine {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPlayer player=event.getPlayer();
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Wurm1")));

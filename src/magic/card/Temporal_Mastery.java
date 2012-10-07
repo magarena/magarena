@@ -22,7 +22,6 @@ public class Temporal_Mastery {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeExtraTurnsAction(event.getPlayer(),1));
             game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(),MagicLocationType.Exile));

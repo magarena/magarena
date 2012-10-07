@@ -34,7 +34,7 @@ public class Drana__Kalastria_Bloodchief {
                 source,
                 MagicTargetChoice.TARGET_CREATURE,
                 new MagicWeakenTargetPicker(0,amount),
-                new Object[]{amount},
+                amount,
                 this,
                 "Target creature$ gets -0/-"+amount+" until end of turn and " + 
                 "SN gets +"+amount+"/+0 until end of turn."
@@ -42,8 +42,8 @@ public class Drana__Kalastria_Bloodchief {
         }
 
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-            final int amount=(Integer)data[0];
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+            final int amount=event.getRefInt();
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeTurnPTAction(creature,0,-amount));

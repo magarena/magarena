@@ -21,7 +21,7 @@ public class Retaliator_Griffin {
                     damage.getSource().getController() != player) ?
                 new MagicEvent(
                     permanent,
-                    new Object[]{amount},
+                    amount,
                     this,
                     "Put "+amount+" +1/+1 counters on SN."):
                 MagicEvent.NONE;
@@ -30,12 +30,11 @@ public class Retaliator_Griffin {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
                         event.getPermanent(),
                         MagicCounterType.PlusOne,
-                        (Integer)data[0],true));
+                        event.getRefInt(),true));
         }        
     };
 }

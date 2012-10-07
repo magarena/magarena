@@ -39,7 +39,7 @@ public class Kazandu_Tuskcaller {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{amount >= 6 ? 2 : 1},
+                    amount >= 6 ? 2 : 1,
                     this,
                     player + description);
         }
@@ -48,9 +48,8 @@ public class Kazandu_Tuskcaller {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction((Integer)data[0], new MagicPlayTokenAction(
+            game.doAction(event.getRefInt(), new MagicPlayTokenAction(
                 event.getPlayer(),
                 TokenCardDefinitions.get("Elephant")
             ));

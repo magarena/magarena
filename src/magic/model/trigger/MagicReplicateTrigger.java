@@ -35,7 +35,6 @@ public class MagicReplicateTrigger extends MagicWhenSpellIsCastTrigger {
     public void executeEvent(
             final MagicGame game,
             final MagicEvent event,
-            final Object[] data,
             final Object[] choiceResults) {
         final MagicCardOnStack cardOnStack = event.getCardOnStack();
         final int kickerCount = (Integer)cardOnStack.getChoiceResults()[1];

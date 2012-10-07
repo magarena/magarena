@@ -25,7 +25,6 @@ public class Rumbling_Slum {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicSource source=event.getSource();
             for (final MagicPlayer player : game.getPlayers()) {

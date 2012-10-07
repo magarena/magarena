@@ -14,7 +14,7 @@ public class Angelic_Chorus {
                     otherPermanent.isFriend(permanent)) ?
                 new MagicEvent(
                     permanent,
-                    new Object[]{otherPermanent},
+                    otherPermanent,
                     this,
                     "PN gains life equal to the toughness of " + otherPermanent + "."
                 ) :
@@ -25,10 +25,9 @@ public class Angelic_Chorus {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             // get toughness here so counters on the creature are considered
-            final int toughness = ((MagicPermanent)data[0]).getToughness();
+            final int toughness = (event.getRefPermanent()).getToughness();
             game.doAction(new MagicChangeLifeAction(event.getPlayer(),toughness));
         }
     };

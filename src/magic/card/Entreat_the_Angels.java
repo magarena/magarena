@@ -25,7 +25,6 @@ public class Entreat_the_Angels {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             int x = event.getCardOnStack().getX();
             for (;x>0;x--) {

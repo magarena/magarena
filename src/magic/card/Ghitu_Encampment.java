@@ -75,7 +75,6 @@ public class Ghitu_Encampment {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT,AB,ST,C));
         }

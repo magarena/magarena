@@ -56,7 +56,6 @@ public class Angelheart_Vial {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeLifeAction(event.getPlayer(),2));
             game.doAction(new MagicDrawAction(event.getPlayer(),1));
@@ -74,7 +73,7 @@ public class Angelheart_Vial {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{amount},
+                        amount,
                         this,
                         "Put " + amount + " charge counters on SN."):
                 MagicEvent.NONE;
@@ -83,12 +82,11 @@ public class Angelheart_Vial {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
                     event.getPermanent(),
                     MagicCounterType.Charge,
-                    (Integer)data[0],
+                    event.getRefInt(),
                     false));
         }
     };

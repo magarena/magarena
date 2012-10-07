@@ -26,7 +26,6 @@ public class Petravark {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPermanent permanent = event.getPermanent();
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {

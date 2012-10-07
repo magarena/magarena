@@ -26,7 +26,6 @@ public class Lightning_Reaver {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,1,true));
         }
@@ -50,7 +49,6 @@ public class Lightning_Reaver {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPermanent permanent=event.getPermanent();
             final int counters=permanent.getCounters(MagicCounterType.Charge);

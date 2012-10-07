@@ -28,7 +28,7 @@ public class Phyrexian_Slayer {
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
-                    new Object[]{plist},
+                    plist,
                     this,
                     plist.size() > 1 ?
                         "Destroy blocking white creatures. They can't be regenerated." :
@@ -41,9 +41,8 @@ public class Phyrexian_Slayer {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanentList plist = (MagicPermanentList)data[0];
+            final MagicPermanentList plist = event.getRefPermanentList();
             for (final MagicPermanent blocker : plist) {
                 game.doAction(new MagicChangeStateAction(blocker,MagicPermanentState.CannotBeRegenerated,true));
                 game.doAction(new MagicDestroyAction(blocker));

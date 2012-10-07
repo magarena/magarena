@@ -30,7 +30,7 @@ public class MagicTappedIntoPlayUnlessTrigger extends MagicWhenComesIntoPlayTrig
     }
     
     @Override
-    public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choices) {
+    public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choices) {
         game.doAction(new MagicTapAction(event.getPermanent(),false));
     }
     

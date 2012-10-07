@@ -21,7 +21,6 @@ public class Visions_of_Beyond {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final int amount = (game.getPlayer(0).getGraveyard().size() >= 20 ||
                                 game.getPlayer(1).getGraveyard().size() >= 20) ? 3 : 1;

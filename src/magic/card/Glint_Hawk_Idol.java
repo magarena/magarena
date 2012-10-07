@@ -71,7 +71,6 @@ public class Glint_Hawk_Idol {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT,AB,ST));
@@ -104,7 +103,6 @@ public class Glint_Hawk_Idol {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT,AB,ST));
         }

@@ -18,7 +18,7 @@ public class Lowland_Basilisk {
                 new MagicEvent(
                         permanent,
                         permanent.getController(),
-                        new Object[]{damage.getTarget()},
+                        damage.getTarget(),
                         this,
                         "Destroy " + damage.getTarget() + " at end of combat."):
                 MagicEvent.NONE;
@@ -28,9 +28,8 @@ public class Lowland_Basilisk {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeStateAction((MagicPermanent)data[0],MagicPermanentState.DestroyAtEndOfCombat,true));
+            game.doAction(new MagicChangeStateAction(event.getRefPermanent(),MagicPermanentState.DestroyAtEndOfCombat,true));
         }
     };
 }

@@ -25,7 +25,6 @@ public class Pyroclasm {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final int amount=2;
             final Collection<MagicTarget> targets=

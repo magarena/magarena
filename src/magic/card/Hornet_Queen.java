@@ -22,7 +22,6 @@ public class Hornet_Queen {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
                 final Object[] choiceResults) {
             for (int i = 0 ; i < 4; i++) {
                 game.doAction(new MagicPlayTokenAction(event.getPlayer(), TokenCardDefinitions.get("Insect3")));

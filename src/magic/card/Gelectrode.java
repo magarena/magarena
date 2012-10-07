@@ -26,7 +26,6 @@ public class Gelectrode {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicUntapAction(event.getPermanent()));
         }

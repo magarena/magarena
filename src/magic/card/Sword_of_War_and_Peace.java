@@ -19,7 +19,7 @@ public class Sword_of_War_and_Peace {
             return (damage.getSource()==permanent.getEquippedCreature()&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
                 new MagicEvent(
                     permanent,
-                    new Object[]{targetPlayer},
+                    targetPlayer,
                     this,
                     "SN deals damage to " + targetPlayer + " equal to the number of cards in his or her hand and " +
                     "PN gains 1 life for each card in his or her hand."):
@@ -29,9 +29,8 @@ public class Sword_of_War_and_Peace {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPlayer targetPlayer=(MagicPlayer)data[0];
+            final MagicPlayer targetPlayer=event.getRefPlayer();
             final int amount1=targetPlayer.getHand().size();
             if (amount1>0) {
                 final MagicDamage damage=new MagicDamage(event.getSource(),targetPlayer,amount1,false);

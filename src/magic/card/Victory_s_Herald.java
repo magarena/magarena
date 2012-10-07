@@ -38,7 +38,6 @@ public class Victory_s_Herald {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
 
             final Collection<MagicTarget> targets = game.filterTargets(

@@ -38,7 +38,6 @@ public class Alchemist_s_Apprentice {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicDrawAction(event.getPlayer(),1));
         }

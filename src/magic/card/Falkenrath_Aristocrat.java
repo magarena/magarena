@@ -50,7 +50,7 @@ public class Falkenrath_Aristocrat {
             }
             return new MagicEvent(
                 source,
-                new Object[]{isHuman},
+                isHuman ? 1 : 0,
                 this,
                 message
             );
@@ -59,13 +59,12 @@ public class Falkenrath_Aristocrat {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicSetAbilityAction(
                 event.getPermanent(),
                 MagicAbility.Indestructible
             ));
-            if ((Boolean)data[0]) {
+            if (event.getRefInt() == 1) {
                 game.doAction(new MagicChangeCountersAction(
                     event.getPermanent(),
                     MagicCounterType.PlusOne,

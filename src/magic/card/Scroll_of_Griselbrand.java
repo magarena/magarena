@@ -48,7 +48,6 @@ public class Scroll_of_Griselbrand {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
             game.addEvent(new MagicDiscardEvent(

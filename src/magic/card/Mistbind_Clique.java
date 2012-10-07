@@ -49,7 +49,6 @@ public class Mistbind_Clique {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPermanent permanent = event.getPermanent();
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
@@ -80,7 +79,7 @@ public class Mistbind_Clique {
                 return new MagicEvent(
                         permanent,
                         permanent.getController(),
-                        new Object[]{exiledCard},
+                        exiledCard,
                         this,
                         "Return " + exiledCard + " to the battlefield");
             }
@@ -90,9 +89,8 @@ public class Mistbind_Clique {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            final MagicCard exiledCard = (MagicCard)data[0];
+            final MagicCard exiledCard = event.getRefCard();
             game.doAction(new MagicRemoveCardAction(exiledCard,MagicLocationType.Exile));
             game.doAction(new MagicPlayCardAction(exiledCard,exiledCard.getOwner(),MagicPlayCardAction.NONE));
         }

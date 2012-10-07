@@ -31,7 +31,6 @@ public class Szadek__Lord_of_Secrets {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
         
         }

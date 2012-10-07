@@ -35,7 +35,7 @@ public class Burden_of_Guilt {
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                new Object[]{source.getEnchantedCreature()},
+                source.getEnchantedCreature(),
                 this,
                 "Tap " + source.getEnchantedCreature() + "."
             );
@@ -44,9 +44,8 @@ public class Burden_of_Guilt {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicTapAction((MagicPermanent)data[0],true));
+            game.doAction(new MagicTapAction(event.getRefPermanent(),true));
         }
     };
 }

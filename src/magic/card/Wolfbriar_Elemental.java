@@ -19,7 +19,7 @@ public class Wolfbriar_Elemental {
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
-                    new Object[]{permanent.getKicker()},
+                    permanent.getKicker(),
                     this,
                     "Put " + permanent.getKicker() + " 2/2 green Wolf creature tokens onto the battlefield."):
                 MagicEvent.NONE;
@@ -29,10 +29,9 @@ public class Wolfbriar_Elemental {
         public void executeEvent(
             final MagicGame game,
             final MagicEvent event,
-            final Object[] data,
             final Object[] choiceResults) {
             final MagicPlayer player=event.getPlayer();
-            int count=(Integer)data[0];
+            int count=event.getRefInt();
             for (;count>0;count--) {
                 game.doAction(new MagicPlayTokenAction(
                         player,

@@ -31,7 +31,7 @@ public class Beastmaster_s_Magemark {
             return (blocked.isFriend(permanent) && blocked.isEnchanted()) ?
                 new MagicEvent(
                     permanent,
-                    new Object[]{blocked},
+                    blocked,
                     this,
                     blocked + " gets +1/+1 until end of turn for each creature blocking it."
                 ):
@@ -42,9 +42,8 @@ public class Beastmaster_s_Magemark {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanent blocked = (MagicPermanent)data[0];
+            final MagicPermanent blocked = event.getRefPermanent();
             final int amount = blocked.getBlockingCreatures().size();
             game.doAction(new MagicChangeTurnPTAction(
                 blocked,

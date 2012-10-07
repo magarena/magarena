@@ -18,7 +18,7 @@ public class Sanguine_Bond {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{amount},
+                    amount,
                     this,
                     player.getOpponent() + " loses " + amount + " life."):
                 MagicEvent.NONE;
@@ -27,11 +27,10 @@ public class Sanguine_Bond {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeLifeAction(
                     event.getPlayer().getOpponent(),
-                    -(Integer)data[0]));
+                    -event.getRefInt()));
         }
     };
 }

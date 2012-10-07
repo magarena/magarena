@@ -38,7 +38,6 @@ public class Deathknell_Kami {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPermanent permanent = event.getPermanent();
             game.doAction(new MagicChangeTurnPTAction(permanent,1,1));

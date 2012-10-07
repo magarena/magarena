@@ -76,7 +76,6 @@ public class Kargan_Dragonlord {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),1,0));
         }

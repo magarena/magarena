@@ -16,7 +16,7 @@ public class Jotun_Owl_Keeper {
             return (permanent == data && amount > 0) ?
                 new MagicEvent(
                     permanent,
-                    new Object[]{amount},
+                    amount,
                     this,
                     amount > 1 ?
                         "PN puts " + amount + " 1/1 white Bird creature tokens with flying onto the battlefield." :
@@ -28,9 +28,8 @@ public class Jotun_Owl_Keeper {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            int amount = (Integer)data[0];
+            int amount = event.getRefInt();
             for (;amount>0;amount--) {
                 game.doAction(new MagicPlayTokenAction(
                         event.getPlayer(),

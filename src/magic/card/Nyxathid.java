@@ -33,7 +33,6 @@ public class Nyxathid {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
         }
     };

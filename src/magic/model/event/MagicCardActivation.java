@@ -59,7 +59,7 @@ public class MagicCardActivation extends MagicActivation {
     }
 
     @Override
-    public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choices) {
+    public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choices) {
         final MagicCard card = event.getCard();
         if (card.getCardDefinition().isLand()) {
             game.incLandPlayed();

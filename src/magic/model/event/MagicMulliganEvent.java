@@ -27,7 +27,6 @@ public class MagicMulliganEvent extends MagicEvent {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {

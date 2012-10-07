@@ -25,7 +25,6 @@ public class Abyssal_Nightstalker {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.addEvent(new MagicDiscardEvent(
                 event.getPermanent(),

@@ -39,7 +39,6 @@ public class Scattershot_Archer {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPermanent permanent=event.getPermanent();
             final Collection<MagicTarget> targets=

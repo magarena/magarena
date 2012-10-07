@@ -43,7 +43,6 @@ public class Demonlord_of_Ashmouth {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPermanent permanent = event.getPermanent();
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {

@@ -29,7 +29,7 @@ public class Gloom_Surgeon {
                     return new MagicEvent(
                             permanent,
                             permanent.getController(),
-                            new Object[]{amount},
+                            amount,
                             this,
                             "Exile " + amount + " cards from the top of your library.");
             }
@@ -39,9 +39,8 @@ public class Gloom_Surgeon {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            final int amount = (Integer)data[0];
+            final int amount = event.getRefInt();
             final MagicPlayer player = event.getPlayer();
             final MagicCardList library = player.getLibrary();
             final int size = library.size();

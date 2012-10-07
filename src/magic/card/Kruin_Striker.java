@@ -31,7 +31,6 @@ public class Kruin_Striker {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicPermanent permanent = (MagicPermanent)event.getSource();
             game.doAction(new MagicChangeTurnPTAction(permanent,1,0));

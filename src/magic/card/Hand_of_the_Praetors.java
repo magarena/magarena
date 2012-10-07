@@ -47,7 +47,6 @@ public class Hand_of_the_Praetors {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangePoisonAction(event.getPlayer().getOpponent(),1));
         }        

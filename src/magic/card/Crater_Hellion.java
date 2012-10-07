@@ -27,7 +27,6 @@ public class Crater_Hellion {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicSource permanent = event.getPermanent();
             final Collection<MagicTarget> creatures =

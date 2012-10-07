@@ -51,7 +51,7 @@ public class Primordial_Hydra {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{amount},
+                        amount,
                         this,
                         "Put " + amount + " +1/+1 counters on SN.") :
                 MagicEvent.NONE;
@@ -60,12 +60,11 @@ public class Primordial_Hydra {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
                     event.getPermanent(),
                     MagicCounterType.PlusOne,
-                    (Integer)data[0],
+                    event.getRefInt(),
                     true));
         }
     };

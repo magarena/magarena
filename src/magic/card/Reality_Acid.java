@@ -16,7 +16,7 @@ public class Reality_Acid {
                     new MagicEvent(
                     permanent,
                     permanent.getController(),
-                    new Object[]{enchantedPermanent},
+                    enchantedPermanent,
                     this,
                     enchantedPermanent.getController() + " sacrifices " + enchantedPermanent + ".") :
             MagicEvent.NONE;
@@ -25,9 +25,8 @@ public class Reality_Acid {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanent permanent = (MagicPermanent)data[0];
+            final MagicPermanent permanent = event.getRefPermanent();
             game.doAction(new MagicSacrificeAction(permanent));
         }
     };

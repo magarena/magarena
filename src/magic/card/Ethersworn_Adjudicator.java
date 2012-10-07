@@ -49,7 +49,6 @@ public class Ethersworn_Adjudicator {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
@@ -83,7 +82,6 @@ public class Ethersworn_Adjudicator {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicUntapAction(event.getPermanent()));
         }

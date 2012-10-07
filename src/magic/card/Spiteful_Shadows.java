@@ -22,7 +22,7 @@ public class Spiteful_Shadows {
                 new MagicEvent(
                     enchantedCreature,
                     enchantedCreature.getController(),
-                    new Object[]{amount},
+                    amount,
                     this,
                     enchantedCreature + " deals " + amount +
                     " damage to " + enchantedCreature.getController() + ".") :
@@ -32,12 +32,11 @@ public class Spiteful_Shadows {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             final MagicDamage damage = new MagicDamage(
                     event.getSource(),
                     event.getPlayer(),
-                    (Integer)data[0],
+                    event.getRefInt(),
                     false);
             game.doAction(new MagicDealDamageAction(damage));
         }

@@ -34,7 +34,6 @@ public class Binding_Grasp {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             if (MagicMayChoice.isNoChoice(choiceResults[0])) {
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));

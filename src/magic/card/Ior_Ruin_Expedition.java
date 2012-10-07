@@ -36,7 +36,6 @@ public class Ior_Ruin_Expedition {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 game.doAction(new MagicChangeCountersAction(
@@ -69,7 +68,6 @@ public class Ior_Ruin_Expedition {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicDrawAction(event.getPlayer(),2));
         }

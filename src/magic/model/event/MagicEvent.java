@@ -9,6 +9,7 @@ import magic.model.MagicLocationType;
 import magic.model.MagicMappable;
 import magic.model.MagicMessage;
 import magic.model.MagicPermanent;
+import magic.model.MagicPermanentList;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicCardAction;
@@ -21,6 +22,7 @@ import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicPayManaCostResult;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.stack.MagicCardOnStack;
+import magic.model.stack.MagicItemOnStack;
 import magic.model.target.MagicDefaultTargetPicker;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetNone;
@@ -34,17 +36,32 @@ public class MagicEvent implements MagicCopyable {
     public static final Object[] NO_CHOICE_RESULTS = new Object[0];
     public static final MagicEvent[] NO_EVENTS = new MagicEvent[0];
     
-    private static final Object[] NO_DATA = new Object[0];
+    private static final MagicCopyable NO_DATA = new MagicInteger(-1);
     private static final MagicChoice NO_CHOICES = MagicChoice.NONE;
     private static final MagicEventAction NO_ACTION = new MagicEventAction() {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] data,
                 final Object[] choiceResults) {
             //do nothing
         }
     };
+
+    static class MagicInteger implements MagicCopyable {
+        public final int value;
+
+        public MagicInteger(final int v) {
+            value = v;
+        }
+    
+        public MagicCopyable copy(final MagicCopyMap copyMap) {
+            return this;
+        }
+
+        public int hashCode() {
+            return value;
+        }
+    }
     
     public static final MagicEvent NONE = new MagicEvent(NO_SOURCE, MagicPlayer.NONE, NO_DATA, NO_ACTION, "") {
         @Override
@@ -68,14 +85,14 @@ public class MagicEvent implements MagicCopyable {
     private final MagicEventAction action;
     private final String description;
     
-    private final Object[] data;
+    private final MagicCopyable data;
 
     public MagicEvent(
             final MagicSource source,
             final MagicPlayer player,
             final MagicChoice choice,
             final MagicTargetPicker targetPicker,
-            final Object[] data,
+            final MagicCopyable data,
             final MagicEventAction action,
             final String description) {
         this.source=source;
@@ -89,12 +106,34 @@ public class MagicEvent implements MagicCopyable {
     
     public MagicEvent(
             final MagicSource source,
+            final MagicPlayer player,
             final MagicChoice choice,
             final MagicTargetPicker targetPicker,
-            final Object[] data,
+            final int data,
+            final MagicEventAction action,
+            final String description) {
+        this(source,player,choice,targetPicker,new MagicInteger(data),action,description);
+    }
+    
+    
+    public MagicEvent(
+            final MagicSource source,
+            final MagicChoice choice,
+            final MagicTargetPicker targetPicker,
+            final MagicCopyable data,
             final MagicEventAction action,
             final String description) {
         this(source,source.getController(),choice,targetPicker,data,action,description);
+    }
+    
+    public MagicEvent(
+            final MagicSource source,
+            final MagicChoice choice,
+            final MagicTargetPicker targetPicker,
+            final int data,
+            final MagicEventAction action,
+            final String description) {
+        this(source,source.getController(),choice,targetPicker,new MagicInteger(data),action,description);
     }
     
     public MagicEvent(
@@ -120,7 +159,7 @@ public class MagicEvent implements MagicCopyable {
             final MagicSource source,
             final MagicPlayer player,
             final MagicChoice choice,
-            final Object[] data,
+            final MagicCopyable data,
             final MagicEventAction action,
             final String description) {
         this(source,player,choice,MagicDefaultTargetPicker.create(),data,action,description);
@@ -128,11 +167,31 @@ public class MagicEvent implements MagicCopyable {
     
     public MagicEvent(
             final MagicSource source,
+            final MagicPlayer player,
             final MagicChoice choice,
-            final Object[] data,
+            final int data,
+            final MagicEventAction action,
+            final String description) {
+        this(source,player,choice,MagicDefaultTargetPicker.create(),new MagicInteger(data),action,description);
+    }
+    
+    
+    public MagicEvent(
+            final MagicSource source,
+            final MagicChoice choice,
+            final MagicCopyable data,
             final MagicEventAction action,
             final String description) {
         this(source,source.getController(),choice,MagicDefaultTargetPicker.create(),data,action,description);
+    }
+    
+    public MagicEvent(
+            final MagicSource source,
+            final MagicChoice choice,
+            final int data,
+            final MagicEventAction action,
+            final String description) {
+        this(source,source.getController(),choice,MagicDefaultTargetPicker.create(),new MagicInteger(data),action,description);
     }
     
     public MagicEvent(
@@ -155,7 +214,7 @@ public class MagicEvent implements MagicCopyable {
     public MagicEvent(
             final MagicSource source,
             final MagicPlayer player,
-            final Object[] data,
+            final MagicCopyable data,
             final MagicEventAction action,
             final String description) {
         this(source,player,NO_CHOICES,MagicDefaultTargetPicker.create(),data,action,description);
@@ -163,10 +222,27 @@ public class MagicEvent implements MagicCopyable {
     
     public MagicEvent(
             final MagicSource source,
-            final Object[] data,
+            final MagicPlayer player,
+            final int data,
+            final MagicEventAction action,
+            final String description) {
+        this(source,player,NO_CHOICES,MagicDefaultTargetPicker.create(),new MagicInteger(data),action,description);
+    }
+    
+    public MagicEvent(
+            final MagicSource source,
+            final MagicCopyable data,
             final MagicEventAction action,
             final String description) {
         this(source,source.getController(),NO_CHOICES,MagicDefaultTargetPicker.create(),data,action,description);
+    }
+    
+    public MagicEvent(
+            final MagicSource source,
+            final int data,
+            final MagicEventAction action,
+            final String description) {
+        this(source,source.getController(),NO_CHOICES,MagicDefaultTargetPicker.create(),new MagicInteger(data),action,description);
     }
     
     public MagicEvent(
@@ -191,7 +267,7 @@ public class MagicEvent implements MagicCopyable {
         player = copyMap.copy(sourceEvent.player);
         choice = sourceEvent.choice;
         targetPicker = sourceEvent.targetPicker;
-        data = copyMap.copyObjects(sourceEvent.data,Object.class);
+        data = copyMap.copy(sourceEvent.data);
         action = sourceEvent.action;
         description = sourceEvent.description;
     }
@@ -214,7 +290,31 @@ public class MagicEvent implements MagicCopyable {
     }
     
     public final MagicPermanent getRefPermanent() {
-        return (MagicPermanent)data[0];
+        return (MagicPermanent)data;
+    }
+    
+    public final MagicPermanentList getRefPermanentList() {
+        return (MagicPermanentList)data;
+    }
+    
+    public final MagicPlayer getRefPlayer() {
+        return (MagicPlayer)data;
+    }
+    
+    public final MagicItemOnStack getRefItemOnStack() {
+        return (MagicItemOnStack)data;
+    }
+    
+    public final MagicCard getRefCard() {
+        return (MagicCard)data;
+    }
+    
+    public final MagicPermanentActivation getRefPermanentActivation() {
+        return (MagicPermanentActivation)data;
+    }
+    
+    public final int getRefInt() {
+        return ((MagicInteger)data).value;
     }
     
     public final MagicCard getCard() {
@@ -269,10 +369,6 @@ public class MagicEvent implements MagicCopyable {
         return choice.getManaChoiceResultIndex();
     }
 
-    private final Object[] getData() {
-        return data;
-    }
-    
     public final String getDescription(final Object[] choiceResults) {
         return MagicMessage.replaceChoices(description,choiceResults);
     }
@@ -392,7 +488,7 @@ public class MagicEvent implements MagicCopyable {
     }
     
     public final void executeEvent(final MagicGame game,final Object[] choiceResults) {
-        action.executeEvent(game,this,data,choiceResults);
+        action.executeEvent(game,this,choiceResults);
         //move card to move location that is not play 
         if (source instanceof MagicCardOnStack &&
             action instanceof MagicSpellCardEvent &&
@@ -410,14 +506,9 @@ public class MagicEvent implements MagicCopyable {
             (source != null ? source.getId() : -1L),
             (player != null ? player.getIndex() : -1L),
             (choice != null ? choice.hashCode() : -1L),
-            (targetPicker != null ? targetPicker.hashCode() : -1L),
             (action != null ? action.hashCode() : -1L),
-            (data != null && data.length > 0 && data[0] != null) ?
-                ((data[0] instanceof MagicMappable) ? ((MagicMappable)data[0]).getId() : data[0].hashCode()) : -1L,
-            (data != null && data.length > 1 && data[1] != null) ?
-                ((data[1] instanceof MagicMappable) ? ((MagicMappable)data[1]).getId() : data[1].hashCode()) : -1L,
-            (data != null && data.length > 2 && data[2] != null) ?
-                ((data[2] instanceof MagicMappable) ? ((MagicMappable)data[2]).getId() : data[2].hashCode()) : -1L,
+            (data   != null ? data.hashCode() : -1L), 
+            (targetPicker != null ? targetPicker.hashCode() : -1L),
         };
         return magic.MurmurHash3.hash(keys);
     }

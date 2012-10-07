@@ -23,7 +23,6 @@ public class Symbiotic_Wurm {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object data[],
                 final Object[] choiceResults) {
             game.doAction(7, new MagicPlayTokenAction(
                 event.getPlayer(), 

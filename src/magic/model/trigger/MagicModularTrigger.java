@@ -35,7 +35,7 @@ public class MagicModularTrigger extends MagicWhenPutIntoGraveyardTrigger {
                     MagicTargetChoice.POS_TARGET_ARTIFACT_CREATURE
                 ),
                 MagicPumpTargetPicker.create(),
-                new Object[]{amount},
+                amount,
                 this,
                 amount > 1 ?
                     "PN may$ put " + amount + " +1/+1 counters on target artifact creature$." :
@@ -49,7 +49,6 @@ public class MagicModularTrigger extends MagicWhenPutIntoGraveyardTrigger {
     public void executeEvent(
             final MagicGame game,
             final MagicEvent event,
-            final Object[] data,
             final Object[] choiceResults) {
         if (MagicMayChoice.isYesChoice(choiceResults[0])) {
             event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
@@ -57,7 +56,7 @@ public class MagicModularTrigger extends MagicWhenPutIntoGraveyardTrigger {
                     game.doAction(new MagicChangeCountersAction(
                         creature,
                         MagicCounterType.PlusOne,
-                        (Integer)data[0],
+                        event.getRefInt(),
                         true
                     ));
                 }

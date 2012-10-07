@@ -28,7 +28,7 @@ public class MagicPersistTrigger extends MagicWhenPutIntoGraveyardTrigger {
     }
 
     @Override
-    public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+    public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
         final MagicCard card = event.getPermanent().getCard();
         game.doAction(new MagicReanimateAction(card.getOwner(),card,MagicPlayCardAction.PERSIST));
     }
