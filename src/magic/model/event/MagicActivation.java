@@ -16,21 +16,17 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
     public static final MagicCondition[] NO_COND = new MagicCondition[0];
     
     private final int priority;
-    private final int index;
+    private final long id;
     private final String text;
     private final MagicCondition[] conditions;
     private final MagicActivationHints hints;
-    
-    private final long id;
 
     MagicActivation(
-        final int index,
         final MagicCondition[] conditions,
         final MagicActivationHints hints,
         final String txt) {
         
         this.text = txt;
-        this.index = index;
         this.conditions=conditions;
         this.hints=hints;
         this.priority=hints.getTiming().getPriority();

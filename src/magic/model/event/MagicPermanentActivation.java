@@ -15,13 +15,11 @@ import magic.model.stack.MagicAbilityOnStack;
 
 public abstract class MagicPermanentActivation extends MagicActivation implements MagicChangeCardDefinition, MagicCopyable {
     
-    private static int currentIndex = 1;
-
     public MagicPermanentActivation(
             final MagicCondition[] conditions,
             final MagicActivationHints hints,
             final String txt) {
-        super(currentIndex++,conditions,hints,txt);
+        super(conditions,hints,txt);
     }
 
     @Override

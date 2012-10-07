@@ -20,7 +20,6 @@ public class MagicCardActivation extends MagicActivation {
     
     public MagicCardActivation(final MagicCardDefinition cdef) {
         super(
-            0,
             new MagicCondition[]{
                 MagicCondition.CARD_CONDITION,
                 cdef.getCost().getCondition()
