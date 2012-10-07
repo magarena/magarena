@@ -38,7 +38,7 @@ public class Seance {
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicPlayer data) {
+                final MagicPlayer upkeepPlayer) {
             return new MagicEvent(
                 permanent,
                 new MagicMayChoice(
