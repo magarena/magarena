@@ -42,7 +42,7 @@ public class Parallax_Nexus {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                source.getController().getOpponent(),
+                source.getOpponent(),
                 MagicTargetChoice.TARGET_CARD_FROM_HAND,
                 new MagicGraveyardTargetPicker(false),
                 this,
@@ -66,8 +66,8 @@ public class Parallax_Nexus {
     
     public static final MagicWhenLeavesPlayTrigger T3 = new MagicWhenLeavesPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent data) {
-            if (permanent == data && !permanent.getExiledCards().isEmpty()) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent left) {
+            if (permanent == left && !permanent.getExiledCards().isEmpty()) {
                 final MagicCardList clist = new MagicCardList(permanent.getExiledCards());
                 return new MagicEvent(
                     permanent,
