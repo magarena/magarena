@@ -92,17 +92,17 @@ public class Aurification {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            final Collection<MagicTarget> targets =
-                    game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE);
-            for (final MagicTarget target : targets) {
-                final MagicPermanent permanent = (MagicPermanent)target;
+            final Collection<MagicPermanent> targets =
+                    game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE);
+            for (final MagicPermanent permanent : targets) {
                 final int amount = permanent.getCounters(MagicCounterType.Gold);
                 if (amount > 0) {
                     game.doAction(new MagicChangeCountersAction(
-                            permanent,
-                            MagicCounterType.Gold,
-                            -amount,
-                            true));
+                        permanent,
+                        MagicCounterType.Gold,
+                        -amount,
+                        true
+                    ));
                 }
             }
         }
