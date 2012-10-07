@@ -85,8 +85,8 @@ public class Ratchet_Bomb {
                 final Object[] choiceResults) {
             final MagicPermanent source=event.getPermanent();
             final int amount=source.getCounters(MagicCounterType.Charge);
-            final Collection<MagicTarget> targets=
-                game.filterTargets(source.getController(), 
+            final Collection<MagicPermanent> targets=
+                game.filterPermanents(source.getController(), 
                         new MagicTargetFilter.MagicCMCTargetFilter(
                             MagicTargetFilter.TARGET_NONLAND_PERMANENT, 
                             MagicTargetFilter.MagicCMCTargetFilter.EQUAL, 
