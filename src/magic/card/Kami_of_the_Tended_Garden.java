@@ -13,17 +13,17 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 public class Kami_of_the_Tended_Garden {
     public static final MagicAtUpkeepTrigger T2 = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-            final MagicPlayer player = permanent.getController();
-            return (player == data) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+            return permanent.isController(upkeepPlayer) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new MagicMayChoice(
                         "You may pay {G}.",
-                        new MagicPayManaCostChoice(MagicManaCost.GREEN)),
+                        new MagicPayManaCostChoice(MagicManaCost.GREEN)
+                    ),
                     this,
-                    "You may$ pay {G}$. If you don't, sacrifice SN.") :
+                    "You may$ pay {G}$. If you don't, sacrifice SN."
+                ):
                 MagicEvent.NONE;
         }
 
