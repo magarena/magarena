@@ -37,10 +37,10 @@ public class Aggravate {
                 final Object[] choiceResults) {
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer targetPlayer) {
-                    final Collection<MagicTarget> targets = game.filterTargets(
+                    final Collection<MagicPermanent> targets = game.filterPermanents(
                             targetPlayer,
                             MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-                    for (final MagicTarget target : targets) {
+                    for (final MagicPermanent target : targets) {
                         final MagicDamage damage = new MagicDamage(
                                 event.getSource(),
                                 target,
@@ -49,8 +49,9 @@ public class Aggravate {
                         game.doAction(new MagicDealDamageAction(damage));
                         if (damage.getDealtAmount() > 0) {
                             game.doAction(new MagicSetAbilityAction(
-                                    (MagicPermanent)target,
-                                    MagicAbility.AttacksEachTurnIfAble));
+                                target,
+                                MagicAbility.AttacksEachTurnIfAble
+                            ));
                         }
                     }
                 }
