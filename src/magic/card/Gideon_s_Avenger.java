@@ -11,15 +11,13 @@ import magic.model.trigger.MagicWhenBecomesTappedTrigger;
 public class Gideon_s_Avenger {
     public static final MagicWhenBecomesTappedTrigger T = new MagicWhenBecomesTappedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            final MagicPlayer otherController = data.getController();
-            final MagicPlayer player = permanent.getController();
-            return (otherController != player && data.isCreature()) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent tapped) {
+            return (permanent.isEnemy(tapped) && tapped.isCreature()) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        "Put a +1/+1 counter on SN.") :
+                    permanent,
+                    this,
+                    "Put a +1/+1 counter on SN."
+                ):
                 MagicEvent.NONE;
         }
         @Override
