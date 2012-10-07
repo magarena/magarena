@@ -12,22 +12,21 @@ import java.util.Collection;
 
 public class MagicDestroyAction extends MagicAction {
     
-    private final Collection<MagicTarget> targets = new ArrayList<MagicTarget>();
+    private final Collection<MagicPermanent> targets = new ArrayList<MagicPermanent>();
     
     public MagicDestroyAction(final MagicPermanent permanent) {
         this.targets.add(permanent);
     }
     
-    public MagicDestroyAction(final Collection<MagicTarget> targets) {
+    public MagicDestroyAction(final Collection<MagicPermanent> targets) {
         this.targets.addAll(targets);
     }
     
     @Override
     public void doAction(final MagicGame game) {
         final Collection<MagicPermanent> toBeDestroyed = new ArrayList<MagicPermanent>();
-        for (final MagicTarget target : targets) {
+        for (final MagicPermanent permanent : targets) {
             boolean destroy = true;
-            final MagicPermanent permanent = (MagicPermanent)target;
             
             // Indestructible
             if (destroy && permanent.hasAbility(MagicAbility.Indestructible)) {
