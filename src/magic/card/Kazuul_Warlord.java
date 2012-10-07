@@ -39,14 +39,15 @@ public class Kazuul_Warlord {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                final Collection<MagicTarget> targets =
-                        game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_ALLY_YOU_CONTROL);
-                for (final MagicTarget target : targets) {
+                final Collection<MagicPermanent> targets =
+                        game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_ALLY_YOU_CONTROL);
+                for (final MagicPermanent target : targets) {
                     game.doAction(new MagicChangeCountersAction(
-                            (MagicPermanent)target,
-                            MagicCounterType.PlusOne,
-                            1,
-                            true));
+                        target,
+                        MagicCounterType.PlusOne,
+                        1,
+                        true
+                    ));
                 }
             }            
         }        
