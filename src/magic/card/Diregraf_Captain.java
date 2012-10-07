@@ -32,7 +32,7 @@ public class Diregraf_Captain {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPermanent otherPermanent) {
-            final MagicPlayer opponent = permanent.getController().getOpponent();
+            final MagicPlayer opponent = permanent.getOpponent();
             return (permanent != otherPermanent &&
                     otherPermanent.getController() == permanent.getController() &&
                     otherPermanent.isCreature() &&
