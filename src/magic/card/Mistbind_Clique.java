@@ -57,11 +57,10 @@ public class Mistbind_Clique {
                         game.doAction(new MagicExileUntilThisLeavesPlayAction(permanent,creature));
                     }
                 });
-                final Collection<MagicTarget> targets = game.filterTargets(
+                final Collection<MagicPermanent> targets = game.filterPermanents(
                         event.getPlayer().getOpponent(),
                         MagicTargetFilter.TARGET_LAND_YOU_CONTROL);
-                for (final MagicTarget target : targets) {
-                    final MagicPermanent land = (MagicPermanent)target;
+                for (final MagicPermanent land : targets) {
                     game.doAction(new MagicTapAction(land,true));
                 }
             } else {
