@@ -13,14 +13,13 @@ public class Subversion {
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicPlayer data) {
-            final MagicPlayer player = permanent.getController();
-            return (player == data) ?
+                final MagicPlayer upkeepPlayer) {
+            return permanent.isController(upkeepPlayer) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        "Your opponent loses 1 life. You gain 1 life."):
+                    permanent,
+                    this,
+                    "Your opponent loses 1 life. You gain 1 life."
+                ):
                 MagicEvent.NONE;
         }
         @Override
