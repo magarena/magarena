@@ -27,10 +27,10 @@ public class Village_Bell_Ringer {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
-            final Collection<MagicTarget> targets=
-                game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-            for (final MagicTarget target : targets) {
-                game.doAction(new MagicUntapAction((MagicPermanent)target));
+            final Collection<MagicPermanent> targets=
+                game.filterPermanents(player,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+            for (final MagicPermanent target : targets) {
+                game.doAction(new MagicUntapAction(target));
             }
         }
     };
