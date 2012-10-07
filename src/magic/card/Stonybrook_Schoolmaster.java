@@ -10,12 +10,13 @@ import magic.model.trigger.MagicWhenBecomesTappedTrigger;
 public class Stonybrook_Schoolmaster {
     public static final MagicWhenBecomesTappedTrigger T = new MagicWhenBecomesTappedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            return (permanent == data) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent tapped) {
+            return (permanent == tapped) ?
                 new MagicEvent(
-                        permanent,
-                        this,
-                        "PN puts a 1/1 blue Merfolk Wizard creature token onto the battlefield.") :
+                    permanent,
+                    this,
+                    "PN puts a 1/1 blue Merfolk Wizard creature token onto the battlefield."
+                ):
                 MagicEvent.NONE;
         }
         @Override
