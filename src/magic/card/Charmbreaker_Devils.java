@@ -21,15 +21,14 @@ import java.util.List;
 public class Charmbreaker_Devils {
     public static final MagicAtUpkeepTrigger T1 = new MagicAtUpkeepTrigger() {       
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-            final MagicPlayer player = permanent.getController();
-            return (player == data) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+            return permanent.isController(upkeepPlayer) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
                     "Return an instant or sorcery card at random " +
-                    "from your graveyard to your hand.") :
+                    "from your graveyard to your hand."
+                ) :
                 MagicEvent.NONE;
         }
         @Override
