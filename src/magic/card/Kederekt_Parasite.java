@@ -12,9 +12,9 @@ import magic.model.trigger.MagicWhenOtherDrawnTrigger;
 
 public class Kederekt_Parasite {
     
-    private static boolean isValid(final MagicPermanent owner) {
-        for (final MagicPermanent permanent : owner.getController().getPermanents()) {
-            if (permanent != owner && MagicColor.Red.hasColor(permanent.getColorFlags())) {
+    private static boolean controlsRedPermanent(final MagicPlayer player) {
+        for (final MagicPermanent permanent : player.getPermanents()) {
+            if (MagicColor.Red.hasColor(permanent.getColorFlags())) {
                 return true;
             }
         }
@@ -23,14 +23,15 @@ public class Kederekt_Parasite {
 
     public static final Object T = new MagicWhenOtherDrawnTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard data) {
-            final MagicPlayer player = data.getOwner();
-            return (permanent.getController() != player && isValid(permanent)) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard card) {
+            return (permanent.isEnemy(card) && 
+                    controlsRedPermanent(permanent.getController())) ?
                 new MagicEvent(
                     permanent,
-                    player,
+                    card.getController(),
                     this,
-                    "SN deals 1 damage to PN."):
+                    "SN deals 1 damage to PN."
+                ):
                 MagicEvent.NONE;
         }
         
