@@ -32,11 +32,10 @@ public class Flame_Kin_Zealot {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            final Collection<MagicTarget> targets = game.filterTargets(
+            final Collection<MagicPermanent> targets = game.filterPermanents(
                     event.getPlayer(),
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-            for (final MagicTarget target : targets) {
-                final MagicPermanent creature=(MagicPermanent)target;
+            for (final MagicPermanent creature : targets) {
                 game.doAction(new MagicChangeTurnPTAction(creature,1,1));
                 game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Haste));
             }
