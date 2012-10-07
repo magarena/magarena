@@ -11,11 +11,12 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 public class Verdant_Force {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             return new MagicEvent(
-                        permanent,
-                        this,
-                        "PN puts a 1/1 green Saproling creature token onto the battlefield.");
+                permanent,
+                this,
+                "PN puts a 1/1 green Saproling creature token onto the battlefield."
+            );
         }    
         @Override
         public void executeEvent(
