@@ -33,12 +33,11 @@ public class Triumph_of_Cruelty {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
-            final Collection<MagicTarget> targets = game.filterTargets(
+            final Collection<MagicPermanent> targets = game.filterPermanents(
                     player,
                     MagicTargetFilter.TARGET_CREATURE);
             MagicPermanent highest = MagicPermanent.NONE;     
-            for (final MagicTarget target : targets) {
-                final MagicPermanent creature = (MagicPermanent)target;
+            for (final MagicPermanent creature : targets) {
                 if (creature.getPower() > highest.getPower()) {
                     highest = creature;
                 }
