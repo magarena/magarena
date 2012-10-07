@@ -33,12 +33,11 @@ public class Essence_Harvest {
                 final Object[] choiceResults) {
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
-                    final Collection<MagicTarget> targets = game.filterTargets(
+                    final Collection<MagicPermanent> targets = game.filterPermanents(
                             event.getPlayer(),
                             MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
                     int power = 0;
-                    for (final MagicTarget target : targets) {
-                        final MagicPermanent creature = (MagicPermanent)target;
+                    for (final MagicPermanent creature : targets) {
                         power = Math.max(power,creature.getPower());
                     }
                     game.doAction(new MagicChangeLifeAction(player,-power));
