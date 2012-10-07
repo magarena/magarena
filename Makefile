@@ -42,7 +42,7 @@ code_to_remove: $(MAG)
 	cat src/magic/card/*.java | sed 's/\s\+//g' | sed 's/(.*)/(...)/g' | sort | uniq -c | sort -n | grep publicstaticfinal | grep ");" > $@
 
 casts: $(MAG)
-	grep -n "([A-Z]\+[a-z]\+[A-Za-z]*)" -r src/ | flip -u > $@
+	grep -n "([A-Za-z]\+)[A-Za-z]\+" -r src/ > $@
 
 warnings_H.txt: warnings.txt
 	grep "(H)" $^ | grep -v System.out | grep -v System.err | grep -v EXS > $@
