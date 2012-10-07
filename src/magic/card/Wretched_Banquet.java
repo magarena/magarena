@@ -36,13 +36,12 @@ public class Wretched_Banquet {
                 final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    final Collection<MagicTarget> targets = game.filterTargets(
+                    final Collection<MagicPermanent> targets = game.filterPermanents(
                             event.getPlayer(),
                             MagicTargetFilter.TARGET_CREATURE);
                     final int power = creature.getPower();
                     boolean least = true;
-                    for (final MagicTarget target : targets) {
-                        final MagicPermanent permanent = (MagicPermanent)target;
+                    for (final MagicPermanent permanent : targets) {
                         if (permanent.getPower() < power) {
                             least = false;
                             break;
