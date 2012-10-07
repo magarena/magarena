@@ -9,7 +9,7 @@ public class Viridian_Betrayers {
     public static final MagicStatic S = new MagicStatic(MagicLayer.Ability) {
         @Override
         public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
-            return permanent.getController().getOpponent().getPoison() > 0 ?
+            return permanent.getOpponent().getPoison() > 0 ?
                 flags | MagicAbility.Infect.getMask() :
                 flags;
         }
