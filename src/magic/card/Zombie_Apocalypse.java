@@ -4,6 +4,7 @@ import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPlayer;
+import magic.model.MagicPermanent;
 import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicPlayCardAction;
 import magic.model.action.MagicReanimateAction;
@@ -42,8 +43,8 @@ public class Zombie_Apocalypse {
                         (MagicCard)target,
                         MagicPlayCardAction.TAPPED));
             }
-            final List<MagicTarget> humans =
-                    game.filterTargets(player,MagicTargetFilter.TARGET_HUMAN);
+            final List<MagicPermanent> humans =
+                    game.filterPermanents(player,MagicTargetFilter.TARGET_HUMAN);
             game.doAction(new MagicDestroyAction(humans));
         }
     };
