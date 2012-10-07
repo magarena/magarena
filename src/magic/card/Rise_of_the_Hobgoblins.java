@@ -62,11 +62,10 @@ public class Rise_of_the_Hobgoblins {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicPlayer player=event.getPlayer();
-            final Collection<MagicTarget> targets=game.filterTargets(
+            final Collection<MagicPermanent> targets=game.filterPermanents(
                     player,
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-            for (final MagicTarget target : targets) {
-                final MagicPermanent creature=(MagicPermanent)target;
+            for (final MagicPermanent creature : targets) {
                 final int colorFlags=creature.getColorFlags();
                 if (MagicColor.Red.hasColor(colorFlags)||MagicColor.White.hasColor(colorFlags)) {
                     game.doAction(new MagicSetAbilityAction(creature,MagicAbility.FirstStrike));
