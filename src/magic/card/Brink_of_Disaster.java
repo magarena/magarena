@@ -9,15 +9,15 @@ import magic.model.trigger.MagicWhenBecomesTappedTrigger;
 public class Brink_of_Disaster {
     public static final MagicWhenBecomesTappedTrigger T = new MagicWhenBecomesTappedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent tapped) {
             final MagicPermanent enchantedPermanent = permanent.getEnchantedCreature();
-            return (enchantedPermanent == data) ?
+            return (enchantedPermanent == tapped) ?
                 new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        enchantedPermanent,
-                        this,
-                        "Destroy " + enchantedPermanent + ".") :
+                    permanent,
+                    enchantedPermanent,
+                    this,
+                    "Destroy RN."
+                ):
                 MagicEvent.NONE;
         }
         @Override
