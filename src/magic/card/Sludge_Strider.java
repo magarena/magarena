@@ -18,7 +18,8 @@ public class Sludge_Strider {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
             return (otherPermanent != permanent &&
-                    otherPermanent.isArtifact()) ?
+                    otherPermanent.isArtifact() &&
+                    otherPermanent.isFriend(permanent)) ?
                 new MagicEvent(
                         permanent,
                         permanent.getController(),
@@ -39,27 +40,29 @@ public class Sludge_Strider {
                 event.processTargetPlayer(game,choiceResults,2,new MagicPlayerAction() {
                     public void doAction(final MagicPlayer player) {
                         game.doAction(new MagicChangeLifeAction(player,-1));
+                        game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
                     }
                 });
-                game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
             }            
         }    
     };
     
     public static final MagicWhenLeavesPlayTrigger T2 = new MagicWhenLeavesPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent data) {
-            return (data != permanent &&
-                    data.isArtifact()) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent left) {
+            return (left != permanent &&
+                    left.isArtifact() &&
+                    left.isFriend(permanent)) ?
                 new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        new MagicMayChoice(
-                                "You may pay {1}.",
-                                new MagicPayManaCostChoice(MagicManaCost.ONE),
-                                MagicTargetChoice.NEG_TARGET_PLAYER),
-                        this,
-                        "You may$ pay {1}$. If you do, target player$ loses 1 life and you gain 1 life."):
+                    permanent,
+                    new MagicMayChoice(
+                        "You may pay {1}.",
+                        new MagicPayManaCostChoice(MagicManaCost.ONE),
+                        MagicTargetChoice.NEG_TARGET_PLAYER
+                    ),
+                    this,
+                    "You may$ pay {1}$. If you do, target player$ loses 1 life and you gain 1 life."
+                ):
                 MagicEvent.NONE;
         }
         @Override
@@ -71,9 +74,9 @@ public class Sludge_Strider {
                 event.processTargetPlayer(game,choiceResults,2,new MagicPlayerAction() {
                     public void doAction(final MagicPlayer player) {
                         game.doAction(new MagicChangeLifeAction(player,-1));
+                        game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
                     }
                 });
-                game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
             }            
         }    
     };
