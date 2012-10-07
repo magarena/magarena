@@ -41,9 +41,8 @@ public class Dromar__the_Banisher {
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 final MagicColor color=(MagicColor)choiceResults[2];
-                final Collection<MagicTarget> targets=game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE);
-                for (final MagicTarget target : targets) {
-                    final MagicPermanent creature=(MagicPermanent)target;
+                final Collection<MagicPermanent> targets=game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE);
+                for (final MagicPermanent creature : targets) {
                     if (color.hasColor(creature.getColorFlags())) {
                         game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.OwnersHand));
                     }
