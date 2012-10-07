@@ -23,12 +23,11 @@ public class Wild_Defiance {
                 return MagicEvent.NONE;
             }
                     
-            final Collection<MagicTarget> targets = game.filterTargets(
+            final Collection<MagicPermanent> targets = game.filterPermanents(
                     permanent.getController(),
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             MagicPermanent targetedPerm = MagicPermanent.NONE;
-            for (final MagicTarget target : targets) {
-                final MagicPermanent perm = (MagicPermanent)target;
+            for (final MagicPermanent perm : targets) {
                 if (itemOnStack.containsInChoiceResults(perm) &&
                     perm.isCreature() &&
                     perm.getController() == permanent.getController()) {
