@@ -11,14 +11,15 @@ import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
 public class Saprazzan_Heir {
     public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            return (permanent == data ) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocked) {
+            return (permanent == blocked) ?
                 new MagicEvent(
                     permanent,
                     new MagicSimpleMayChoice(
                         MagicSimpleMayChoice.DRAW_CARDS,
                         1,
-                        MagicSimpleMayChoice.DEFAULT_NONE),
+                        MagicSimpleMayChoice.DEFAULT_NONE
+                    ),
                     this,
                     "PN may$ draw three cards."
                 ):
