@@ -5,7 +5,6 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
-import magic.model.target.MagicTarget;
 
 import java.util.ArrayList;
 import java.util.Collection;
