@@ -14,7 +14,7 @@ public class Vedalken_Ghoul {
             return (permanent == blocked) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController().getOpponent(),
+                    permanent.getOpponent(),
                     this,
                     "PN loses 4 life."
                 ):
