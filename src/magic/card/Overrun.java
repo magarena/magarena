@@ -28,10 +28,9 @@ public class Overrun {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            final Collection<MagicTarget> targets=
-                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-            for (final MagicTarget target : targets) {
-                final MagicPermanent creature=(MagicPermanent)target;
+            final Collection<MagicPermanent> targets=
+                game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+            for (final MagicPermanent creature : targets) {
                 game.doAction(new MagicChangeTurnPTAction(creature,3,3));
                 game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Trample));
             }
