@@ -13,15 +13,14 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 public class Bloodgift_Demon {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-            final MagicPlayer player = permanent.getController();
-            return (player == data) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+            return permanent.isController(upkeepPlayer) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        MagicTargetChoice.TARGET_PLAYER,
-                        this,
-                        "Target player$ draws a card and loses 1 life.") :
+                    permanent,
+                    MagicTargetChoice.TARGET_PLAYER,
+                    this,
+                    "Target player$ draws a card and loses 1 life."
+                ):
                 MagicEvent.NONE;
         }
         @Override
