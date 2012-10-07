@@ -26,10 +26,10 @@ public class Inspired_Charge {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            final Collection<MagicTarget> targets=
-                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-            for (final MagicTarget target : targets) {
-                game.doAction(new MagicChangeTurnPTAction((MagicPermanent)target,2,1));
+            final Collection<MagicPermanent> targets=
+                game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+            for (final MagicPermanent target : targets) {
+                game.doAction(new MagicChangeTurnPTAction(target,2,1));
             }
         }
     };
