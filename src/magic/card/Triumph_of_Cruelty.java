@@ -17,16 +17,14 @@ public class Triumph_of_Cruelty {
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicPlayer data) {
-            final MagicPlayer player = permanent.getController();
-            return (player == data) ?
-                    new MagicEvent(
-                            permanent,
-                            player,
-                            this,
-                            player.getOpponent() + " discards a card " +
-                            "if you control the creature with the greatest " +
-                            "power or tied for the greatest power.") :
+                final MagicPlayer upkeepPlayer) {
+            return permanent.isController(upkeepPlayer) ?
+                new MagicEvent(
+                    permanent,
+                    this,
+                    upkeepPlayer.getOpponent() + " discards a card " +
+                    "if you control the creature with the greatest " +
+                    "power or tied for the greatest power.") :
                 MagicEvent.NONE;
         }
         @Override
@@ -47,10 +45,11 @@ public class Triumph_of_Cruelty {
             }
             if (highest.getController() == player) {
                 game.addEvent(new MagicDiscardEvent(
-                        event.getSource(),
-                        player.getOpponent(),
-                        1,
-                        false));
+                    event.getSource(),
+                    player.getOpponent(),
+                    1,
+                    false
+                ));
             }
         }        
     };
