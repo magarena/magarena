@@ -18,14 +18,13 @@ public class Telim_Tor {
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicPermanent data) {
-            final MagicPlayer player = permanent.getController();
-            return (permanent == data) ?
+                final MagicPermanent attacker) {
+            return (permanent == attacker) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    "Attacking creatures with flanking get +1/+1 until end of turn."):
+                    "Attacking creatures with flanking get +1/+1 until end of turn."
+                ):
                 MagicEvent.NONE;
         }
         
