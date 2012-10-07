@@ -10,15 +10,14 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 public class Pillory_of_the_Sleepless {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             final MagicPermanent enchanted = permanent.getEnchantedCreature();
-            final MagicPlayer player = enchanted.getController();
-            return (player == data) ?
+            return enchanted.isController(upkeepPlayer) ?
                 new MagicEvent(
-                        enchanted,
-                        player,
-                        this,
-                        enchanted.getController() + " loses 1 life.") :
+                    enchanted,
+                    this,
+                    "PN loses 1 life."
+                ):
                 MagicEvent.NONE;
         }
         @Override
