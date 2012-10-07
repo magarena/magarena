@@ -12,15 +12,14 @@ import magic.model.trigger.MagicWhenDiscardedTrigger;
 public class Megrim {
     public static final MagicWhenDiscardedTrigger T = new MagicWhenDiscardedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard data) {
-            final MagicPlayer otherController = data.getOwner();
-            final MagicPlayer player = permanent.getController();
-            return (otherController != player) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard card) {
+            return permanent.isEnemy(card) ?
                 new MagicEvent(
-                        permanent,
-                        otherController,
-                        this,
-                        "SN deals 2 damage to PN."):
+                    permanent,
+                    card.getController(),
+                    this,
+                    "SN deals 2 damage to PN."
+                ):
                 MagicEvent.NONE;
         }
         @Override
@@ -29,10 +28,11 @@ public class Megrim {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicDamage damage = new MagicDamage(
-                    event.getSource(),
-                    event.getPlayer(),
-                    2,
-                    false);
+                event.getSource(),
+                event.getPlayer(),
+                2,
+                false
+            );
             game.doAction(new MagicDealDamageAction(damage));
         }
     };
