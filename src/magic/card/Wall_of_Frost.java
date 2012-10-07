@@ -10,15 +10,15 @@ import magic.model.trigger.MagicWhenBlocksTrigger;
 public class Wall_of_Frost {
     public static final MagicWhenBlocksTrigger T = new MagicWhenBlocksTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
             final MagicPermanent blocked=permanent.getBlockedCreature();
-            return (permanent==data && blocked.isValid()) ?
+            return (permanent==blocker && blocked.isValid()) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     blocked,
                     this,
-                    blocked+" doesn't untap during its controller's next untap step."):
+                    "RN doesn't untap during its controller's next untap step."
+                ):
                 MagicEvent.NONE;
         }
         @Override
