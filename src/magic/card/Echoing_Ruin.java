@@ -36,10 +36,9 @@ public class Echoing_Ruin {
                 public void doAction(final MagicPermanent targetPermanent) {
                     final MagicTargetFilter targetFilter = 
                         new MagicTargetFilter.NameTargetFilter(targetPermanent.getName());
-                    final Collection<MagicTarget> targets = 
-                        game.filterTargets(event.getPlayer(),targetFilter);
-                    for (final MagicTarget target : targets) {
-                        final MagicPermanent permanent = (MagicPermanent)target;
+                    final Collection<MagicPermanent> targets = 
+                        game.filterPermanents(event.getPlayer(),targetFilter);
+                    for (final MagicPermanent permanent : targets) {
                         if (permanent.isArtifact()) {
                             game.doAction(new MagicDestroyAction(permanent));
                         }
