@@ -29,10 +29,10 @@ public class Midnight_Banshee {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            final Collection<MagicTarget> targets=
-                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_NONBLACK_CREATURE);
-            for (final MagicTarget target : targets) {
-                game.doAction(new MagicChangeCountersAction((MagicPermanent)target,MagicCounterType.MinusOne,1,true));
+            final Collection<MagicPermanent> targets=
+                game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_NONBLACK_CREATURE);
+            for (final MagicPermanent target : targets) {
+                game.doAction(new MagicChangeCountersAction(target,MagicCounterType.MinusOne,1,true));
             }
         }
     };
