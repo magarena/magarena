@@ -25,12 +25,13 @@ public class Elder_Land_Wurm {
        public MagicEvent executeTrigger(
                final MagicGame game,
                final MagicPermanent permanent,
-               final MagicPermanent data) {
-           return (permanent == data) ?
+               final MagicPermanent blocker) {
+           return (permanent == blocker) ?
                 new MagicEvent(
-                   permanent,
-                   this,
-                   "SN loses defender."):
+                    permanent,
+                    this,
+                    "SN loses defender."
+                ):
                 MagicEvent.NONE;
        }
        @Override
