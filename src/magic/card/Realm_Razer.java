@@ -31,12 +31,12 @@ public class Realm_Razer {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            final Collection<MagicTarget> targets =
-                    game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_LAND);
-            for (final MagicTarget target : targets) {
+            final Collection<MagicPermanent> targets =
+                    game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_LAND);
+            for (final MagicPermanent target : targets) {
                 game.doAction(new MagicExileUntilThisLeavesPlayAction(
                         event.getPermanent(),
-                        (MagicPermanent)target));
+                        target));
             }
         }
     };
