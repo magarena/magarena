@@ -36,10 +36,10 @@ public class Sword_of_Feast_and_Famine {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             game.addEvent(new MagicDiscardEvent(event.getPermanent(),event.getRefPlayer(),1,false));
-            final Collection<MagicTarget> targets = 
-                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_LAND_YOU_CONTROL);
-            for (final MagicTarget target : targets) {
-                game.doAction(new MagicUntapAction((MagicPermanent)target));
+            final Collection<MagicPermanent> targets = 
+                game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_LAND_YOU_CONTROL);
+            for (final MagicPermanent target : targets) {
+                game.doAction(new MagicUntapAction(target));
             }
         }
     };
