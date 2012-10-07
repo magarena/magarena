@@ -58,12 +58,12 @@ public class Myr_Galvanizer {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicPermanent permanent = event.getPermanent();
-            final Collection<MagicTarget> targets = game.filterTargets(
+            final Collection<MagicPermanent> targets = game.filterPermanents(
                     event.getPlayer(),
                     MagicTargetFilter.TARGET_MYR_YOU_CONTROL);
-            for (final MagicTarget target : targets) {
+            for (final MagicPermanent target : targets) {
                 if (target != permanent) {
-                    game.doAction(new MagicUntapAction((MagicPermanent)target));
+                    game.doAction(new MagicUntapAction(target));
                 }
             }
         }
