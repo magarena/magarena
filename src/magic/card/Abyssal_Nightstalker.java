@@ -14,7 +14,7 @@ public class Abyssal_Nightstalker {
             return (creature == permanent) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController().getOpponent(),
+                    permanent.getOpponent(),
                     this,
                     "PN discards a card."
                 ):
