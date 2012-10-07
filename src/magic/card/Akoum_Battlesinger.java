@@ -38,12 +38,11 @@ public class Akoum_Battlesinger {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                final Collection<MagicTarget> targets =
-                        game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_ALLY_YOU_CONTROL);
-                    for (final MagicTarget target : targets) {
-                        final MagicPermanent creature = (MagicPermanent)target;
-                        game.doAction(new MagicChangeTurnPTAction(creature,1,0));
-                    }
+                final Collection<MagicPermanent> targets =
+                        game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_ALLY_YOU_CONTROL);
+                for (final MagicPermanent creature : targets) {
+                    game.doAction(new MagicChangeTurnPTAction(creature,1,0));
+                }
             }            
         }        
     };
