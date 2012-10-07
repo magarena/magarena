@@ -35,11 +35,11 @@ public class Angel_of_Glory_s_Rise {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
-            final List<MagicTarget> zombies =
-                    game.filterTargets(player,MagicTargetFilter.TARGET_ZOMBIE);
-            for (final MagicTarget target : zombies) {
+            final List<MagicPermanent> zombies =
+                    game.filterPermanents(player,MagicTargetFilter.TARGET_ZOMBIE);
+            for (final MagicPermanent target : zombies) {
                 game.doAction(new MagicRemoveFromPlayAction(
-                        (MagicPermanent)target,
+                        target,
                         MagicLocationType.Exile));
             }        
             final List<MagicTarget> humans =
