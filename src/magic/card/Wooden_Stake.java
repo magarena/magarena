@@ -53,18 +53,18 @@ public class Wooden_Stake {
     
     public static final MagicWhenBlocksTrigger T2 = new MagicWhenBlocksTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
             final MagicPermanent equippedCreature = permanent.getEquippedCreature();
             final MagicPermanent blocked = equippedCreature.getBlockedCreature();
-            return (equippedCreature == data &&
+            return (equippedCreature == blocker &&
                     blocked.isValid() &&
                     blocked.hasSubType(MagicSubType.Vampire)) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     blocked,
                     this,
-                    "Destroy " + blocked + ". It can't be regenerated."):
+                    "Destroy RN. It can't be regenerated."
+                ):
                 MagicEvent.NONE;
         }
         @Override
