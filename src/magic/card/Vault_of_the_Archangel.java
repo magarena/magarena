@@ -51,14 +51,14 @@ public class Vault_of_the_Archangel {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            final Collection<MagicTarget> targets = game.filterTargets(
+            final Collection<MagicPermanent> targets = game.filterPermanents(
                     event.getPlayer(),
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-            for (final MagicTarget target : targets) {
-                final MagicPermanent creature = (MagicPermanent)target;
+            for (final MagicPermanent creature : targets) {
                 game.doAction(new MagicSetAbilityAction(
-                        creature,
-                        MagicAbility.Deathtouch.getMask()|MagicAbility.LifeLink.getMask()));
+                    creature,
+                    MagicAbility.Deathtouch.getMask()|MagicAbility.LifeLink.getMask()
+                ));
             }
         }
     };
