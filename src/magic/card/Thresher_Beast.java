@@ -16,7 +16,7 @@ public class Thresher_Beast {
             return (permanent == blocked) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController().getOpponent(),
+                    permanent.getOpponent(),
                     this,
                     "PN sacrifices a land."
                 ):
