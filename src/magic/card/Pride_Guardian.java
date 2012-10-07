@@ -9,8 +9,8 @@ import magic.model.trigger.MagicWhenBlocksTrigger;
 public class Pride_Guardian {
     public static final MagicWhenBlocksTrigger T = new MagicWhenBlocksTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            return (permanent == data && permanent.getBlockedCreature().isValid()) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
+            return (permanent == blocker && permanent.getBlockedCreature().isValid()) ?
                 new MagicEvent(
                     permanent,
                     this,
