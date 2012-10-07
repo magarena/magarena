@@ -2,6 +2,7 @@ package magic.card;
 
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
+import magic.model.MagicPermanent;
 import magic.model.action.MagicDestroyAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
@@ -25,8 +26,8 @@ public class Day_of_Judgment {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            final Collection<MagicTarget> targets=
-                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE);
+            final Collection<MagicPermanent> targets=
+                game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE);
             game.doAction(new MagicDestroyAction(targets));
         }
     };
