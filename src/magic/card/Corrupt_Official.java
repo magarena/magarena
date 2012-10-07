@@ -10,15 +10,15 @@ import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
 public class Corrupt_Official {
     public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            final MagicPlayer defendingPlayer = permanent.getController().getOpponent();
-            return (permanent == data ) ?
-                    new MagicEvent(
-                            permanent,
-                            permanent.getController(),
-                            this,
-                            defendingPlayer + " discards a card at random."):
-                    MagicEvent.NONE;
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocked) {
+            return (permanent == blocked) ?
+                new MagicEvent(
+                    permanent,
+                    permanent.getOpponent(),
+                    this,
+                    "PN discards a card at random."
+                ):
+                MagicEvent.NONE;
         }
         
         @Override
@@ -27,10 +27,11 @@ public class Corrupt_Official {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             game.addEvent(new MagicDiscardEvent(
-                    event.getSource(),
-                    event.getPlayer().getOpponent(),
-                    1,
-                    true));
+                event.getSource(),
+                event.getPlayer(),
+                1,
+                true
+            ));
         }
     };
 }
