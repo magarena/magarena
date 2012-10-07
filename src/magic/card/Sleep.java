@@ -34,10 +34,9 @@ public class Sleep {
                 final Object[] choiceResults) {
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
-                    final Collection<MagicTarget> targets=
-                        game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-                    for (final MagicTarget target : targets) {
-                        final MagicPermanent creature=(MagicPermanent)target;
+                    final Collection<MagicPermanent> targets=
+                        game.filterPermanents(player,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+                    for (final MagicPermanent creature : targets) {
                         game.doAction(new MagicTapAction(creature,true));
                         game.doAction(new MagicChangeStateAction(
                                     creature,
