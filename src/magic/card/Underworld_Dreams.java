@@ -12,12 +12,11 @@ import magic.model.trigger.MagicWhenOtherDrawnTrigger;
 public class Underworld_Dreams {
     public static final Object T1 = new MagicWhenOtherDrawnTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard data) {
-            final MagicPlayer player = data.getOwner();
-            return (permanent.getController() != player) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard card) {
+            return permanent.isEnemy(card) ?
                 new MagicEvent(
                     permanent,
-                    player,
+                    card.getController(),
                     this,
                     "SN deals 1 damage to PN."):
                 MagicEvent.NONE;
