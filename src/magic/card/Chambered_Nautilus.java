@@ -11,8 +11,8 @@ import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
 public class Chambered_Nautilus {
     public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            return (permanent == data ) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocked) {
+            return (permanent == blocked) ?
                 new MagicEvent(
                     permanent,
                     new MagicSimpleMayChoice(
@@ -20,7 +20,8 @@ public class Chambered_Nautilus {
                         1,
                         MagicSimpleMayChoice.DEFAULT_NONE),
                     this,
-                    "PN may$ draw a card."):
+                    "PN may$ draw a card."
+                ):
                 MagicEvent.NONE;
         }
         
