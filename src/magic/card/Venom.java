@@ -51,18 +51,18 @@ public class Venom {
     
     public static final MagicWhenBlocksTrigger T2 = new MagicWhenBlocksTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
             final MagicPermanent enchantedCreature = permanent.getEnchantedCreature();
             final MagicPermanent blocked = enchantedCreature.getBlockedCreature();
-            return (enchantedCreature == data &&
+            return (enchantedCreature == blocker &&
                     blocked.isValid() &&
                     !blocked.hasSubType(MagicSubType.Wall)) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     blocked,
                     this,
-                    "Destroy " + blocked + " at end of combat."):
+                    "Destroy RN at end of combat."
+                ):
                 MagicEvent.NONE;
         }
         @Override
