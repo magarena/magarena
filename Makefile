@@ -209,6 +209,9 @@ decks/dec:
 	for i in `curl http://www.wizards.com/magic/magazine/archive.aspx?tag=dailydeck | grep -o mtg/daily/deck/[0-9]* | cut -d'/' -f4`; do make decks/dd_$$i.dec; done
 	for i in `curl http://www.wizards.com/magic/magazine/archive.aspx?tag=topdeck | grep -o mtg/daily/td/[0-9]* | cut -d'/' -f4`; do make decks/td_$$i.dec; done
 
+%.fix_date:
+	touch $* -d "`cat $* | head -2 | tail -1 | sed 's/# //'`"
+
 # Daily Deck
 decks/dd_%.dec:
 	curl "http://www.wizards.com/Magic/Magazine/Article.aspx?x=mtg/daily/deck/$*" | awk -f scripts/dailyhtml2dec.awk > $@
@@ -392,7 +395,9 @@ check_event_data: scripts/check_data.awk
 
 # every aura must have an enchant property
 check_aura:
-	diff <(grep "subtype.*Aura" -lr release/Magarena/scripts | sort) <(grep enchant= -lr release/Magarena/scripts | sort)
+	diff \
+	<(grep "subtype.*Aura" -lr release/Magarena/scripts | sort) \
+	<(grep enchant= -lr release/Magarena/scripts | sort)
 
 # every card that requires card code has a corresponding card class
 # every card class has a corresponding card script that requires card code
@@ -413,6 +418,3 @@ crash.txt: $(wildcard *.log)
 	for i in `grep "^Excep" -l $^`; do \
 		tail -n +`grep -n "random seed" $$i | tail -1 | cut -d':' -f1` $$i; \
 	done >> $@
-
-%.fix_date:
-	touch $* -d "`cat $* | head -2 | tail -1 | sed 's/# //'`"
