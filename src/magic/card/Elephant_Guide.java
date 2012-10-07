@@ -11,14 +11,13 @@ import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
 public class Elephant_Guide {
     public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            final MagicPlayer player=permanent.getController();
-            return (permanent.getEnchantedCreature()==data) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent died) {
+            return (permanent.getEnchantedCreature()==died) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    "Put a 3/3 green Elephant creature token onto the battlefield."):
+                    "Put a 3/3 green Elephant creature token onto the battlefield."
+                ):
                 MagicEvent.NONE;
         }
         @Override
