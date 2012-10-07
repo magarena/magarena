@@ -42,14 +42,13 @@ public class Murkfiend_Liege {
     };
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-            final MagicPlayer player=permanent.getController();
-            return (player!=data) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+            return permanent.isOpponent(upkeepPlayer) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        "Untap all green and/or blue creatures you control."):
+                    permanent,
+                    this,
+                    "Untap all green and/or blue creatures you control."
+                ):
                 MagicEvent.NONE;
         }
         @Override
