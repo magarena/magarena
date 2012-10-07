@@ -996,17 +996,11 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     @Override
     public int compareTo(final MagicPermanent permanent) {
         // Important for sorting of permanent mana activations.
-        final int dif=cardDefinition.getIndex()-permanent.cardDefinition.getIndex();
-        if (dif!=0) {
-            return dif;
-        }
-                
-        if (id<permanent.id) {
-            return -1;
-        } else if (id>permanent.id) {
-            return 1;
+        final int diff = cardDefinition.getIndex() - permanent.cardDefinition.getIndex();
+        if (diff != 0) {
+            return diff;
         } else {
-            return 0;
+            return Long.signum(id - permanent.id);
         }
     }
 
