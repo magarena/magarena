@@ -61,10 +61,11 @@ public class MagicMessage {
         }
     }
     
-    public static String replaceName(final String sourceText,final MagicSource source, final MagicPlayer player) {
+    public static String replaceName(final String sourceText,final Object source, final Object player, final Object ref) {
         return sourceText
             .replaceAll("PN", player.toString())
-            .replaceAll("SN", source.toString());
+            .replaceAll("SN", source.toString())
+            .replaceAll("RN", ref.toString());
     }
     
     public static String replaceChoices(final String sourceText,final Object[] choices) {

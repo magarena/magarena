@@ -32,12 +32,10 @@ import java.util.List;
 
 public class MagicEvent implements MagicCopyable {
 
-    public static final MagicSource NO_SOURCE = MagicCard.NONE;
     public static final Object[] NO_CHOICE_RESULTS = new Object[0];
+    public static final MagicSource NO_SOURCE = MagicCard.NONE;
     public static final MagicEvent[] NO_EVENTS = new MagicEvent[0];
-    
     private static final MagicCopyable NO_REF = new MagicInteger(-1);
-    private static final MagicChoice NO_CHOICES = MagicChoice.NONE;
     private static final MagicEventAction NO_ACTION = new MagicEventAction() {
         public void executeEvent(
                 final MagicGame game,
@@ -84,7 +82,6 @@ public class MagicEvent implements MagicCopyable {
     private final MagicTargetPicker targetPicker;
     private final MagicEventAction action;
     private final String description;
-    
     private final MagicCopyable ref;
 
     public MagicEvent(
@@ -101,7 +98,7 @@ public class MagicEvent implements MagicCopyable {
         this.targetPicker=targetPicker;
         this.ref=ref;
         this.action=action;
-        this.description=MagicMessage.replaceName(description,source,player);
+        this.description=MagicMessage.replaceName(description,source,player,ref);
     }
     
     public MagicEvent(
@@ -217,7 +214,7 @@ public class MagicEvent implements MagicCopyable {
             final MagicCopyable ref,
             final MagicEventAction action,
             final String description) {
-        this(source,player,NO_CHOICES,MagicDefaultTargetPicker.create(),ref,action,description);
+        this(source,player,MagicChoice.NONE,MagicDefaultTargetPicker.create(),ref,action,description);
     }
     
     public MagicEvent(
@@ -226,7 +223,7 @@ public class MagicEvent implements MagicCopyable {
             final int ref,
             final MagicEventAction action,
             final String description) {
-        this(source,player,NO_CHOICES,MagicDefaultTargetPicker.create(),new MagicInteger(ref),action,description);
+        this(source,player,MagicChoice.NONE,MagicDefaultTargetPicker.create(),new MagicInteger(ref),action,description);
     }
     
     public MagicEvent(
@@ -234,7 +231,7 @@ public class MagicEvent implements MagicCopyable {
             final MagicCopyable ref,
             final MagicEventAction action,
             final String description) {
-        this(source,source.getController(),NO_CHOICES,MagicDefaultTargetPicker.create(),ref,action,description);
+        this(source,source.getController(),MagicChoice.NONE,MagicDefaultTargetPicker.create(),ref,action,description);
     }
     
     public MagicEvent(
@@ -242,7 +239,7 @@ public class MagicEvent implements MagicCopyable {
             final int ref,
             final MagicEventAction action,
             final String description) {
-        this(source,source.getController(),NO_CHOICES,MagicDefaultTargetPicker.create(),new MagicInteger(ref),action,description);
+        this(source,source.getController(),MagicChoice.NONE,MagicDefaultTargetPicker.create(),new MagicInteger(ref),action,description);
     }
     
     public MagicEvent(
@@ -250,14 +247,14 @@ public class MagicEvent implements MagicCopyable {
             final MagicPlayer player,
             final MagicEventAction action,
             final String description) {
-        this(source,player,NO_CHOICES,MagicDefaultTargetPicker.create(),NO_REF,action,description);
+        this(source,player,MagicChoice.NONE,MagicDefaultTargetPicker.create(),NO_REF,action,description);
     }
     
     public MagicEvent(
             final MagicSource source,
             final MagicEventAction action,
             final String description) {
-        this(source,source.getController(),NO_CHOICES,MagicDefaultTargetPicker.create(),NO_REF,action,description);
+        this(source,source.getController(),MagicChoice.NONE,MagicDefaultTargetPicker.create(),NO_REF,action,description);
     }
     
     private MagicEvent(final MagicCopyMap copyMap, final MagicEvent sourceEvent) {
@@ -502,14 +499,13 @@ public class MagicEvent implements MagicCopyable {
     }
 
     public long getEventId() {
-        final long[] keys = {
-            (source != null ? source.getId() : -1L),
-            (player != null ? player.getIndex() : -1L),
-            (choice != null ? choice.hashCode() : -1L),
-            (action != null ? action.hashCode() : -1L),
-            (ref    != null ? ref.hashCode() : -1L), 
-            (targetPicker != null ? targetPicker.hashCode() : -1L),
-        };
-        return magic.MurmurHash3.hash(keys);
+        return magic.MurmurHash3.hash(new long[] {
+            source.getId(),
+            player.getIndex(),
+            choice.hashCode(),
+            action.hashCode(),
+            targetPicker.hashCode(),
+            ref.hashCode(), 
+        });
     }
 }
