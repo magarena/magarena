@@ -10,15 +10,16 @@ import magic.model.trigger.MagicWhenBlocksTrigger;
 public class Ezuri_s_Archers {
     public static final MagicWhenBlocksTrigger T = new MagicWhenBlocksTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
             final MagicPermanent blocked=permanent.getBlockedCreature();
-            return (permanent==data && 
+            return (permanent==blocker && 
                     blocked.isValid() &&
                     blocked.hasAbility(MagicAbility.Flying)) ?
                 new MagicEvent(
                     permanent,
                     this,
-                    "SN gets +3/+0 until end of turn."):
+                    "SN gets +3/+0 until end of turn."
+                ):
                 MagicEvent.NONE;
         }
         @Override
