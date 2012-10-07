@@ -10,15 +10,15 @@ import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
 public class Alley_Grifters {
     public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            final MagicPlayer defendingPlayer = permanent.getController().getOpponent();
-            return (permanent == data ) ?
-                    new MagicEvent(
-                            permanent,
-                            defendingPlayer,
-                            this,
-                            defendingPlayer + " discards a card."):
-                    MagicEvent.NONE;
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocked) {
+            return (permanent == blocked) ?
+                new MagicEvent(
+                    permanent,
+                    permanent.getOpponent(),
+                    this,
+                    "PN discards a card."
+                ):
+                MagicEvent.NONE;
         }
         
         @Override
@@ -27,10 +27,11 @@ public class Alley_Grifters {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             game.addEvent(new MagicDiscardEvent(
-                    event.getPermanent(),
-                    event.getPlayer(),
-                    1,
-                    false));
+                event.getPermanent(),
+                event.getPlayer(),
+                1,
+                false
+            ));
         }
     };
 }
