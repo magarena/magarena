@@ -45,14 +45,15 @@ public class Rabble_Rouser {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicPermanent permanent = event.getPermanent();
-            final Collection<MagicTarget> targets = game.filterTargets(
+            final Collection<MagicPermanent> targets = game.filterPermanents(
                     permanent.getController(),
                     MagicTargetFilter.TARGET_ATTACKING_CREATURE);
-            for (final MagicTarget target : targets) {
+            for (final MagicPermanent target : targets) {
                 game.doAction(new MagicChangeTurnPTAction(
-                        (MagicPermanent)target,
-                        permanent.getPower(),
-                        0));
+                    target,
+                    permanent.getPower(),
+                    0
+                ));
             }
         }
     };
