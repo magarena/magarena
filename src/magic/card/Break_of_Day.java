@@ -31,11 +31,10 @@ public class Break_of_Day {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
-            final Collection<MagicTarget> targets = game.filterTargets(
+            final Collection<MagicPermanent> targets = game.filterPermanents(
                     player,
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-            for (final MagicTarget target : targets) {
-                final MagicPermanent creature = (MagicPermanent)target;
+            for (final MagicPermanent creature : targets) {
                 game.doAction(new MagicChangeTurnPTAction(creature,1,1));
                 if (MagicCondition.FATEFUL_HOUR.accept(event.getSource())) {
                     game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Indestructible));
