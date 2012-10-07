@@ -44,10 +44,9 @@ public class Clinging_Mists {
                     MagicPlayerState.PreventAllCombatDamage,
                     true));
             if (MagicCondition.FATEFUL_HOUR.accept(event.getSource())) {
-                final Collection<MagicTarget> targets =
-                        game.filterTargets(player,MagicTargetFilter.TARGET_ATTACKING_CREATURE);
-                for (final MagicTarget target : targets) {
-                    final MagicPermanent perm = (MagicPermanent)target;
+                final Collection<MagicPermanent> targets =
+                        game.filterPermanents(player,MagicTargetFilter.TARGET_ATTACKING_CREATURE);
+                for (final MagicPermanent perm : targets) {
                     game.doAction(new MagicTapAction(perm,true));
                     game.doAction(new MagicChangeStateAction(
                             perm,
