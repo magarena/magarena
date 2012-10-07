@@ -44,10 +44,9 @@ public class Loxodon_Hierarch {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            final Collection<MagicTarget> targets=
-                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-            for (final MagicTarget target : targets) {
-                final MagicPermanent permanent=(MagicPermanent)target;
+            final Collection<MagicPermanent> targets=
+                game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+            for (final MagicPermanent permanent : targets) {
                 game.doAction(new MagicRegenerateAction(permanent));
             }
         }
