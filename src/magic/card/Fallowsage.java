@@ -11,14 +11,15 @@ import magic.model.trigger.MagicWhenBecomesTappedTrigger;
 public class Fallowsage {
     public static final MagicWhenBecomesTappedTrigger T = new MagicWhenBecomesTappedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            return permanent == data ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent tapped) {
+            return permanent == tapped ?
                 new MagicEvent(
                     permanent,
                     new MagicSimpleMayChoice(
                         MagicSimpleMayChoice.DRAW_CARDS,
                         1,
-                        MagicSimpleMayChoice.DEFAULT_NONE),
+                        MagicSimpleMayChoice.DEFAULT_NONE
+                    ),
                     this,
                     "PN may$ draw a card."
                 ) :
