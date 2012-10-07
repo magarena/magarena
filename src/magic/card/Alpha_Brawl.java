@@ -39,9 +39,9 @@ public class Alpha_Brawl {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 final MagicPlayer player = event.getPlayer();
                 public void doAction(final MagicPermanent permanent) {
-                    final Collection<MagicTarget> creatures = 
-                            game.filterTargets(player.getOpponent(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-                    for (final MagicTarget creature : creatures) {
+                    final Collection<MagicPermanent> creatures = 
+                            game.filterPermanents(player.getOpponent(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+                    for (final MagicPermanent creature : creatures) {
                         final MagicDamage damage = new MagicDamage(
                                 permanent,
                                 creature,
@@ -49,12 +49,11 @@ public class Alpha_Brawl {
                                 false);
                         game.doAction(new MagicDealDamageAction(damage));
                     }
-                    for (final MagicTarget creature : creatures) {
-                        final MagicPermanent source = (MagicPermanent)creature;
+                    for (final MagicPermanent creature : creatures) {
                         final MagicDamage damage = new MagicDamage(
-                                source,
+                                creature,
                                 permanent,
-                                source.getPower(),
+                                creature.getPower(),
                                 false);
                         game.doAction(new MagicDealDamageAction(damage));
                     }
