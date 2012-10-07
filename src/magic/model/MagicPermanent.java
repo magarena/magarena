@@ -272,6 +272,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         assert cachedController != null : "cachedController is null in " + this;
         return cachedController;
     }
+    
+    public MagicPlayer getOpponent() {
+        return getController().getOpponent();
+    }
 
     public boolean isFriend(final MagicObject other) {
         return getController() == other.getController();
@@ -286,7 +290,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
     
     public boolean isOpponent(final MagicTarget player) {
-        return getController().getOpponent() == player;
+        return getOpponent() == player;
     }
     
     public static void update(final MagicGame game) {
