@@ -40,14 +40,15 @@ public class Call_to_the_Grave {
     
     public static final MagicAtEndOfTurnTrigger T2 = new MagicAtEndOfTurnTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eotPlayer) {
             final Collection<MagicTarget> targets =
                     game.filterTargets(permanent.getController(),MagicTargetFilter.TARGET_CREATURE);
             return (targets.size() == 0) ?
                 new MagicEvent(
                     permanent,
                     this,
-                    "Sacrifice SN."):
+                    "Sacrifice SN."
+                ):
                 MagicEvent.NONE;
         }
         
