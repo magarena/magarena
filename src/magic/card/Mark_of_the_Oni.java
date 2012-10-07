@@ -16,15 +16,14 @@ public class Mark_of_the_Oni {
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicPlayer data) {
-            final MagicPlayer player = permanent.getController();
-            return (player == data &&
-                    player.getNrOfPermanentsWithSubType(MagicSubType.Demon) == 0) ?
+                final MagicPlayer eotPlayer) {
+            return (permanent.isController(eotPlayer) &&
+                    eotPlayer.getNrOfPermanentsWithSubType(MagicSubType.Demon) == 0) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    "Sacrifice SN."):
+                    "Sacrifice SN."
+                ):
                 MagicEvent.NONE;
         }
         @Override
@@ -32,7 +31,7 @@ public class Mark_of_the_Oni {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            game.doAction(new MagicSacrificeAction((MagicPermanent)event.getSource()));
+            game.doAction(new MagicSacrificeAction(event.getPermanent()));
         }
     };
 }
