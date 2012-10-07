@@ -28,10 +28,10 @@ public class Hideous_Visage {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            final Collection<MagicTarget> targets =
-                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-            for (final MagicTarget target : targets) {
-                game.doAction(new MagicSetAbilityAction((MagicPermanent)target,MagicAbility.Intimidate));
+            final Collection<MagicPermanent> targets =
+                game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+            for (final MagicPermanent target : targets) {
+                game.doAction(new MagicSetAbilityAction(target,MagicAbility.Intimidate));
             }
         }
     };
