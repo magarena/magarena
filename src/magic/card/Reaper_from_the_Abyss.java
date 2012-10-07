@@ -13,7 +13,7 @@ import magic.model.trigger.MagicAtEndOfTurnTrigger;
 public class Reaper_from_the_Abyss {
     public static final MagicAtEndOfTurnTrigger T = new MagicAtEndOfTurnTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eotPlayer) {
             return game.getCreatureDiedThisTurn() ?
                 new MagicEvent(
                     permanent,
@@ -21,7 +21,7 @@ public class Reaper_from_the_Abyss {
                     new MagicDestroyTargetPicker(false),
                     this,
                     "Destroy target non-Demon creature."
-                ) :
+                ):
                 MagicEvent.NONE;
         }    
         @Override
