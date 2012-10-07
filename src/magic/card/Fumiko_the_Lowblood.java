@@ -23,8 +23,8 @@ public class Fumiko_the_Lowblood {
         
     public static final MagicWhenBlocksTrigger T1 = new MagicWhenBlocksTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            if (permanent == data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
+            if (permanent == blocker) {
                 return new MagicEvent(
                         permanent,
                         this,
@@ -44,8 +44,8 @@ public class Fumiko_the_Lowblood {
     
     public static final MagicWhenBecomesBlockedTrigger T2 = new MagicWhenBecomesBlockedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            if (permanent == data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocked) {
+            if (permanent == blocked) {
                 return new MagicEvent(
                         permanent,
                         this,
