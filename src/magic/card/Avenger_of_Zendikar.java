@@ -66,15 +66,16 @@ public class Avenger_of_Zendikar {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                final Collection<MagicTarget> targets = game.filterTargets(
+                final Collection<MagicPermanent> targets = game.filterPermanents(
                         event.getPlayer(),
                         MagicTargetFilter.TARGET_PLANT_YOU_CONTROL);
-                for (final MagicTarget target : targets) {
+                for (final MagicPermanent target : targets) {
                     game.doAction(new MagicChangeCountersAction(
-                            (MagicPermanent)target,
-                            MagicCounterType.PlusOne,
-                            1,
-                            true));
+                        target,
+                        MagicCounterType.PlusOne,
+                        1,
+                        true
+                    ));
                 }
             }
         }        
