@@ -16,8 +16,8 @@ import magic.model.trigger.MagicWhenBecomesTappedTrigger;
 public class Surgespanner {
     public static final MagicWhenBecomesTappedTrigger T = new MagicWhenBecomesTappedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            return (permanent == data) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent tapped) {
+            return (permanent == tapped) ?
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
