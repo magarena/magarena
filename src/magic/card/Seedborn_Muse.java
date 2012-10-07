@@ -14,14 +14,13 @@ import java.util.Collection;
 public class Seedborn_Muse {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-            final MagicPlayer player = permanent.getController();
-            return (player != data) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+            return permanent.isOpponent(upkeepPlayer) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        "Untap all permanents you control."):
+                    permanent,
+                    this,
+                    "Untap all permanents you control."
+                ):
                 MagicEvent.NONE;
         }    
         @Override
