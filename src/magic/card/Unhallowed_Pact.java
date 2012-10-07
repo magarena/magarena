@@ -14,15 +14,15 @@ public class Unhallowed_Pact {
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicPermanent data) {
+                final MagicPermanent died) {
             final MagicPermanent enchanted = permanent.getEnchantedCreature();
-            return (enchanted == data) ?
+            return (enchanted == died) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     enchanted.getCard(),
                     this,
-                    "Return " + enchanted + " to the battlefield under your control."):
+                    "Return RN to the battlefield under your control."
+                ):
                 MagicEvent.NONE;
         }
         @Override
@@ -33,9 +33,10 @@ public class Unhallowed_Pact {
             final MagicCard card = event.getRefCard();
             if (card.getOwner().getGraveyard().contains(card)) {
                 game.doAction(new MagicReanimateAction(
-                        event.getPlayer(),
-                        card,
-                        MagicPlayCardAction.NONE));
+                    event.getPlayer(),
+                    card,
+                    MagicPlayCardAction.NONE
+                ));
             }
         }
     };
