@@ -9,16 +9,15 @@ import magic.model.trigger.MagicWhenLeavesPlayTrigger;
 public class Reality_Acid {
     public static final MagicWhenLeavesPlayTrigger T = new MagicWhenLeavesPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent left) {
             final MagicPermanent enchantedPermanent = permanent.getEnchantedCreature();
-            return (permanent == data &&
-                    enchantedPermanent != MagicPermanent.NONE) ? 
-                    new MagicEvent(
+            return (permanent == left && enchantedPermanent != MagicPermanent.NONE) ? 
+                new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     enchantedPermanent,
                     this,
-                    enchantedPermanent.getController() + " sacrifices " + enchantedPermanent + ".") :
+                    enchantedPermanent.getController() + " sacrifices RN."
+                ) :
             MagicEvent.NONE;
         }
         @Override
@@ -26,8 +25,7 @@ public class Reality_Acid {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            final MagicPermanent permanent = event.getRefPermanent();
-            game.doAction(new MagicSacrificeAction(permanent));
+            game.doAction(new MagicSacrificeAction(event.getRefPermanent()));
         }
     };
 }
