@@ -29,13 +29,14 @@ public class Devastation_Tide {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            final Collection<MagicTarget> targets = game.filterTargets(
+            final Collection<MagicPermanent> targets = game.filterPermanents(
                     event.getPlayer(),
                     MagicTargetFilter.TARGET_NONLAND_PERMANENT);
-            for (final MagicTarget target : targets) {
+            for (final MagicPermanent target : targets) {
                 game.doAction(new MagicRemoveFromPlayAction(
-                        (MagicPermanent)target,
-                        MagicLocationType.OwnersHand));
+                    target,
+                    MagicLocationType.OwnersHand
+                ));
             }
         }
     };
