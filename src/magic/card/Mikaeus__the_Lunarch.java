@@ -74,11 +74,11 @@ public class Mikaeus__the_Lunarch {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicPermanent creature = event.getPermanent();
-            final Collection<MagicTarget> targets =
-                game.filterTargets(creature.getController(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-            for (final MagicTarget target : targets) {
+            final Collection<MagicPermanent> targets =
+                game.filterPermanents(creature.getController(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+            for (final MagicPermanent target : targets) {
                 if (target != creature) {
-                    game.doAction(new MagicChangeCountersAction((MagicPermanent)target,MagicCounterType.PlusOne,1,true));
+                    game.doAction(new MagicChangeCountersAction(target,MagicCounterType.PlusOne,1,true));
                 }
             }
         }
