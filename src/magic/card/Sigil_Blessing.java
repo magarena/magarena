@@ -33,11 +33,10 @@ public class Sigil_Blessing {
                 final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    final Collection<MagicTarget> targets=game.filterTargets(
+                    final Collection<MagicPermanent> targets=game.filterPermanents(
                             event.getPlayer(),
                             MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-                    for (final MagicTarget target : targets) {
-                        final MagicPermanent permanent=(MagicPermanent)target;
+                    for (final MagicPermanent permanent : targets) {
                         if (permanent==creature) {
                             game.doAction(new MagicChangeTurnPTAction(permanent,3,3));
                         } else {
