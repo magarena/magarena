@@ -44,16 +44,15 @@ public class Primordial_Hydra {
     
     public static final MagicAtUpkeepTrigger T2 = new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-            final MagicPlayer player = permanent.getController();
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             final int amount = permanent.getCounters(MagicCounterType.PlusOne);
-            return (data == player) ?
+            return permanent.isController(upkeepPlayer) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        amount,
-                        this,
-                        "Put " + amount + " +1/+1 counters on SN.") :
+                    permanent,
+                    amount,
+                    this,
+                    "Put " + amount + " +1/+1 counters on SN."
+                ) :
                 MagicEvent.NONE;
         }
         @Override
@@ -62,10 +61,11 @@ public class Primordial_Hydra {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
-                    event.getPermanent(),
-                    MagicCounterType.PlusOne,
-                    event.getRefInt(),
-                    true));
+                event.getPermanent(),
+                MagicCounterType.PlusOne,
+                event.getRefInt(),
+                true
+            ));
         }
     };
 }
