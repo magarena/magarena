@@ -34,12 +34,13 @@ public class Day_of_the_Dragons {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            final Collection<MagicTarget> targets =
-                    game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-            for (final MagicTarget target : targets) {
+            final Collection<MagicPermanent> targets =
+                    game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+            for (final MagicPermanent target : targets) {
                 game.doAction(new MagicExileUntilThisLeavesPlayAction(
-                        event.getPermanent(),
-                        (MagicPermanent)target));
+                    event.getPermanent(),
+                    target
+                ));
             }
             int amount = targets.size();
             for (;amount>0;amount--) {
@@ -71,10 +72,10 @@ public class Day_of_the_Dragons {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            final Collection<MagicTarget> targets =
-                    game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_DRAGON_YOU_CONTROL);
-            for (final MagicTarget target : targets) {
-                game.doAction(new MagicSacrificeAction((MagicPermanent)target));
+            final Collection<MagicPermanent> targets =
+                    game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_DRAGON_YOU_CONTROL);
+            for (final MagicPermanent target : targets) {
+                game.doAction(new MagicSacrificeAction(target));
             }
             final MagicPermanent permanent = event.getPermanent();
             game.doAction(new MagicReturnExiledUntilThisLeavesPlayAction(
