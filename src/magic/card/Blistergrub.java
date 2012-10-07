@@ -19,7 +19,7 @@ public class Blistergrub {
             return (triggerData.fromLocation == MagicLocationType.Play) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController().getOpponent(),
+                    permanent.getOpponent(),
                     this,
                     "PN loses 2 life."
                 ):
