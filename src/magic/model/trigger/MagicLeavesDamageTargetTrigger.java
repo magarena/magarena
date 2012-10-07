@@ -32,8 +32,8 @@ public class MagicLeavesDamageTargetTrigger extends MagicWhenLeavesPlayTrigger {
     }
     
     @Override
-    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent data) {
-        return (permanent == data) ?
+    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent left) {
+        return (permanent == left) ?
             new MagicEvent(
                 permanent,
                 targetChoice,

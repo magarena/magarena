@@ -24,8 +24,8 @@ public class MagicBecomesBlockedPumpTrigger extends MagicWhenBecomesBlockedTrigg
     public MagicEvent executeTrigger(
             final MagicGame game,
             final MagicPermanent permanent,
-            final MagicPermanent data) {
-        if (permanent == data) {
+            final MagicPermanent blocked) {
+        if (permanent == blocked) {
             final int size = forEachBlocker ?
                     permanent.getBlockingCreatures().size() :
                     1;

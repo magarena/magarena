@@ -25,8 +25,8 @@ public class MagicBattleCryTrigger extends MagicWhenAttacksTrigger {
     public MagicEvent executeTrigger(
             final MagicGame game,
             final MagicPermanent permanent,
-            final MagicPermanent data) {
-        return (permanent == data) ?
+            final MagicPermanent attacker) {
+        return (permanent == attacker) ?
             new MagicEvent(
                 permanent,
                 this,

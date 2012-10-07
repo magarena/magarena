@@ -18,8 +18,8 @@ public class MagicFlankingTrigger extends MagicWhenBecomesBlockedTrigger {
     }
 
     @Override
-    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-        if (data == permanent) {
+    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocked) {
+        if (permanent == blocked) {
             final MagicPermanentList plist = new MagicPermanentList();
             for (final MagicPermanent blocker : permanent.getBlockingCreatures()) {
                 if (!blocker.hasAbility(MagicAbility.Flanking)) {

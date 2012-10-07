@@ -16,8 +16,8 @@ public class MagicWhenBlocksPumpTrigger extends MagicWhenBlocksTrigger {
     }
 
     @Override
-    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-        return (permanent == data) ?
+    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
+        return (permanent == blocker) ?
             new MagicEvent(
                 permanent,
                 this,
