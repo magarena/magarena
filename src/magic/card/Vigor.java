@@ -7,6 +7,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicEventAction;
 import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicIfDamageWouldBeDealtTrigger;
 
@@ -37,23 +38,24 @@ public class Vigor {
             
             return new MagicEvent(
                 permanent,
-                new Object[]{target,amount},
-                this,
+                new Object[]{target},
+                new MagicEventAction() {
+                    @Override
+                    public void executeEvent(
+                            final MagicGame game,
+                            final MagicEvent event,
+                            final Object[] data,
+                            final Object[] choiceResults) {
+                        game.doAction(new MagicChangeCountersAction(
+                            event.getRefPermanent(),
+                            MagicCounterType.PlusOne,
+                            amount,
+                            true
+                        ));
+                    }
+                },
                 "Put "+amount+" +1/+1 counters on "+target+"."
             );
-        }
-        
-        @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event,
-                final Object[] data,
-                final Object[] choiceResults) {
-            game.doAction(new MagicChangeCountersAction(
-                        (MagicPermanent)data[0],
-                        MagicCounterType.PlusOne,
-                        (Integer)data[1],
-                        true));
         }
     };
 }
