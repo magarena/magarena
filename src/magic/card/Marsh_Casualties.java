@@ -36,10 +36,10 @@ public class Marsh_Casualties {
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     final int amount=(Integer)choiceResults[1]>0?-2:-1;
-                    final Collection<MagicTarget> targets=
-                        game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-                    for (final MagicTarget target : targets) {
-                        game.doAction(new MagicChangeTurnPTAction((MagicPermanent)target,amount,amount));
+                    final Collection<MagicPermanent> targets=
+                        game.filterPermanents(player,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+                    for (final MagicPermanent target : targets) {
+                        game.doAction(new MagicChangeTurnPTAction(target,amount,amount));
                     }
                 }
             });
