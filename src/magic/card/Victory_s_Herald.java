@@ -23,14 +23,13 @@ public class Victory_s_Herald {
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicPermanent data) {
-            final MagicPlayer player = permanent.getController();
-            return (permanent==data) ?
+                final MagicPermanent attacker) {
+            return (permanent==attacker) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    "Attacking creatures gain flying and lifelink until end of turn."):
+                    "Attacking creatures gain flying and lifelink until end of turn."
+                ):
                 MagicEvent.NONE;
         }
         
