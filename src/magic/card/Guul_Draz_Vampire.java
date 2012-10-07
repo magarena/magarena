@@ -10,7 +10,7 @@ public class Guul_Draz_Vampire {
     public static final MagicStatic S1 = new MagicStatic(MagicLayer.ModPT) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            if (permanent.getController().getOpponent().getLife() <= 10) {
+            if (permanent.getOpponent().getLife() <= 10) {
                 pt.add(2,1);
             }
         }        
@@ -18,7 +18,7 @@ public class Guul_Draz_Vampire {
     public static final MagicStatic S2 = new MagicStatic(MagicLayer.Ability) {
         @Override
         public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
-            return permanent.getController().getOpponent().getLife() <= 10 ? 
+            return permanent.getOpponent().getLife() <= 10 ? 
                 flags|MagicAbility.Intimidate.getMask():
                 flags;
         }
