@@ -11,9 +11,9 @@ import magic.model.trigger.MagicWhenLeavesPlayTrigger;
 public class Jotun_Owl_Keeper {
     public static final MagicWhenLeavesPlayTrigger T2 = new MagicWhenLeavesPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent left) {
             final int amount = permanent.getCounters(MagicCounterType.Charge);
-            return (permanent == data && amount > 0) ?
+            return (permanent == left && amount > 0) ?
                 new MagicEvent(
                     permanent,
                     amount,
@@ -29,12 +29,10 @@ public class Jotun_Owl_Keeper {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            int amount = event.getRefInt();
-            for (;amount>0;amount--) {
-                game.doAction(new MagicPlayTokenAction(
-                        event.getPlayer(),
-                        TokenCardDefinitions.get("Bird1")));
-            }
+            game.doAction(event.getRefInt(), new MagicPlayTokenAction(
+                event.getPlayer(),
+                TokenCardDefinitions.get("Bird1")
+            ));
         }
     };
 }
