@@ -29,10 +29,9 @@ public class Zealous_Persecution {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicPlayer player=event.getPlayer();
-            final Collection<MagicTarget> targets=
-                game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE);
-            for (final MagicTarget target : targets) {
-                final MagicPermanent creature=(MagicPermanent)target;
+            final Collection<MagicPermanent> targets=
+                game.filterPermanents(player,MagicTargetFilter.TARGET_CREATURE);
+            for (final MagicPermanent creature : targets) {
                 if (creature.getController()==player) {
                     game.doAction(new MagicChangeTurnPTAction(creature,1,1));
                 } else {
