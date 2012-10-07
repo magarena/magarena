@@ -69,11 +69,11 @@ public class Mirror_Entity {
                     flags.addAll(MagicSubType.ALL_CREATURES);
                 }
             };
-            final Collection<MagicTarget> creatures=game.filterTargets(
+            final Collection<MagicPermanent> creatures=game.filterPermanents(
                     permanent.getController(),
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-            for (final MagicTarget creature : creatures) {
-                game.doAction(new MagicBecomesCreatureAction((MagicPermanent)creature,PT,ST));
+            for (final MagicPermanent creature : creatures) {
+                game.doAction(new MagicBecomesCreatureAction(creature,PT,ST));
             }
             game.doAction(new MagicPlayAbilityAction(permanent));
         }
