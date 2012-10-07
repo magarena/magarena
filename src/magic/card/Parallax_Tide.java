@@ -57,17 +57,17 @@ public class Parallax_Tide {
     
     public static final MagicWhenLeavesPlayTrigger T3 = new MagicWhenLeavesPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent data) {
-            if (permanent == data &&
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent left) {
+            if (permanent == left &&
                 !permanent.getExiledCards().isEmpty()) {
                 final MagicCardList clist = new MagicCardList(permanent.getExiledCards());
                 return new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        this,
-                        clist.size() > 1 ?
-                                "Return exiled cards to the battlefield " :
-                                "Return " + clist.get(0) + " to the battlefield ");
+                    permanent,
+                    this,
+                    clist.size() > 1 ?
+                        "Return exiled cards to the battlefield " :
+                        "Return " + clist.get(0) + " to the battlefield "
+                );
             }
             return MagicEvent.NONE;
         }
