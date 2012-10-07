@@ -10,16 +10,15 @@ import magic.model.trigger.MagicWhenBlocksTrigger;
 public class Shield_of_the_Righteous {
     public static final MagicWhenBlocksTrigger T = new MagicWhenBlocksTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
             final MagicPermanent equippedCreature = permanent.getEquippedCreature();
             final MagicPermanent blocked = equippedCreature.getBlockedCreature();
-            return (equippedCreature == data && blocked.isValid()) ?
+            return (equippedCreature == blocked && blocked.isValid()) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     blocked,
                     this,
-                    blocked + " doesn't untap during its controller's next untap step.") :
+                    "RN doesn't untap during its controller's next untap step.") :
                 MagicEvent.NONE;
         }
         @Override
