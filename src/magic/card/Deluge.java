@@ -26,10 +26,10 @@ public class Deluge {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            final Collection<MagicTarget> targets=
-                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING);
-            for (final MagicTarget target : targets) {
-                game.doAction(new MagicTapAction((MagicPermanent)target,true));
+            final Collection<MagicPermanent> targets=
+                game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING);
+            for (final MagicPermanent target : targets) {
+                game.doAction(new MagicTapAction(target,true));
             }
         }
     };
