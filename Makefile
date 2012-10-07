@@ -383,8 +383,8 @@ verify_mana_cost_order: cards/mtg_mana_costs cards/mag_mana_costs
 	vim $^
 	hg add $^
 
-check_data: scripts/check_data.awk
-	for i in src/magic/card/* src/magic/model/event/* src/magic/model/trigger/* ; do \
+check_event_data: scripts/check_data.awk
+	for i in `grep "new MagicEvent(" -lr src`; do \
 			grep "new Object\|data\[[0-9\]" $$i > /dev/null && echo $$i; \
 			grep "new Object\|data\[[0-9\]" $$i  | awk -f $^ | sed 's/  //g' | sed 's/:/:\t/'; \
 	done > $@
