@@ -953,6 +953,28 @@ public class MagicGame {
     public List<MagicTarget> filterTargets(final MagicPlayer player,final MagicTargetFilter targetFilter) {
         return filterTargets(player,targetFilter,MagicTargetHint.None);
     }
+   
+    private List<MagicPermanent> filterPermanents(
+            final MagicPlayer player,
+            final MagicTargetFilter targetFilter,
+            final MagicTargetHint targetHint) {
+        final List<MagicPermanent> targets=new ArrayList<MagicPermanent>();
+        if (targetFilter.acceptType(MagicTargetType.Permanent)) {
+            for (final MagicPlayer controller : players) {
+                for (final MagicPermanent targetPermanent : controller.getPermanents()) {
+                    if (targetFilter.accept(this,player,targetPermanent) && 
+                        targetHint.accept(player,targetPermanent)) {
+                        targets.add(targetPermanent);
+                    }
+                }
+            }
+        }        
+        return targets;
+    }
+    
+    public List<MagicPermanent> filterPermanents(final MagicPlayer player,final MagicTargetFilter targetFilter) {
+        return filterPermanents(player,targetFilter,MagicTargetHint.None);
+    }
 
     public boolean hasLegalTargets(
             final MagicPlayer player,
