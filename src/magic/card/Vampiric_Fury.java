@@ -31,11 +31,10 @@ public class Vampiric_Fury {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            final Collection<MagicTarget> targets = game.filterTargets(
+            final Collection<MagicPermanent> targets = game.filterPermanents(
                     event.getPlayer(),
                     MagicTargetFilter.TARGET_VAMPIRE_YOU_CONTROL);
-            for (final MagicTarget target : targets) {
-                final MagicPermanent creature = (MagicPermanent)target;
+            for (final MagicPermanent creature : targets) {
                 game.doAction(new MagicChangeTurnPTAction(creature,2,0));
                 game.doAction(new MagicSetAbilityAction(creature,MagicAbility.FirstStrike.getMask()));
             }
