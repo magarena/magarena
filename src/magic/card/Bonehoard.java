@@ -16,7 +16,7 @@ public class Bonehoard {
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
             final MagicGame game = source.getGame();
             final int amount = game.filterTargets(
-                        game.getPlayer(0),
+                        permanent.getController(),
                         MagicTargetFilter.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS).size();
             pt.add(amount,amount);
         }
