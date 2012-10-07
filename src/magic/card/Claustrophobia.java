@@ -10,12 +10,11 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 public class Claustrophobia {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
             final MagicPermanent enchantedCreature = permanent.getEnchantedCreature();
-            return (enchantedCreature.isValid()) ?
+            return enchantedCreature.isValid() ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     this,
                     "Tap " + enchantedCreature + ". It doesn't " +
                     "untap during its controller's untap step") :
