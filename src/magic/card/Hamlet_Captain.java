@@ -30,10 +30,9 @@ public class Hamlet_Captain {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            final Collection<MagicTarget> targets =
-                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_HUMAN_YOU_CONTROL);
-            for (final MagicTarget target : targets) {
-                final MagicPermanent creature = (MagicPermanent)target;
+            final Collection<MagicPermanent> targets =
+                game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_HUMAN_YOU_CONTROL);
+            for (final MagicPermanent creature : targets) {
                 if (creature != event.getPermanent()) {
                     game.doAction(new MagicChangeTurnPTAction(creature,1,1));
                 }
@@ -58,10 +57,9 @@ public class Hamlet_Captain {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            final Collection<MagicTarget> targets =
-                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_HUMAN_YOU_CONTROL);
-            for (final MagicTarget target : targets) {
-                final MagicPermanent creature = (MagicPermanent)target;
+            final Collection<MagicPermanent> targets =
+                game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_HUMAN_YOU_CONTROL);
+            for (final MagicPermanent creature : targets) {
                 if (creature != event.getPermanent()) {
                     game.doAction(new MagicChangeTurnPTAction(creature,1,1));
                 }
