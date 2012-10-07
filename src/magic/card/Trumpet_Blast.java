@@ -26,11 +26,11 @@ public class Trumpet_Blast {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            final Collection<MagicTarget> targets=game.filterTargets(
+            final Collection<MagicPermanent> targets=game.filterPermanents(
                     event.getPlayer(),
                     MagicTargetFilter.TARGET_ATTACKING_CREATURE);
-            for (final MagicTarget target : targets) {
-                game.doAction(new MagicChangeTurnPTAction((MagicPermanent)target,2,0));
+            for (final MagicPermanent target : targets) {
+                game.doAction(new MagicChangeTurnPTAction(target,2,0));
             }
         }
     };
