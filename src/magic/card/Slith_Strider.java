@@ -9,8 +9,8 @@ import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
 public class Slith_Strider {
     public static final MagicWhenBecomesBlockedTrigger T1 = new MagicWhenBecomesBlockedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            return (permanent == data ) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocked) {
+            return (permanent == blocked) ?
                 new MagicEvent(
                     permanent,
                     this,
