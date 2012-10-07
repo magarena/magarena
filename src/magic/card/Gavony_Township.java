@@ -48,11 +48,15 @@ public class Gavony_Township {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
-            final Collection<MagicTarget> targets =
-                game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-            for (final MagicTarget target : targets) {
-                    game.doAction(new MagicChangeCountersAction(
-                            (MagicPermanent)target,MagicCounterType.PlusOne,1,true));
+            final Collection<MagicPermanent> targets =
+                game.filterPermanents(player,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+            for (final MagicPermanent target : targets) {
+                game.doAction(new MagicChangeCountersAction(
+                    target,
+                    MagicCounterType.PlusOne,
+                    1,
+                    true
+                ));
             }
         }
     };
