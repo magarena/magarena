@@ -11,14 +11,13 @@ import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
 public class Griffin_Guide {
     public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            final MagicPlayer player=permanent.getController();
-            return (permanent.getEnchantedCreature()==data) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent died) {
+            return permanent.getEnchantedCreature() == died ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
-                    "Put a 2/2 white Griffin creature token with flying onto the battlefield."):
+                    "Put a 2/2 white Griffin creature token with flying onto the battlefield."
+                ):
                 MagicEvent.NONE;
         }
         @Override
