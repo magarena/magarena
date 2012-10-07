@@ -34,9 +34,9 @@ public class Martial_Coup {
             final MagicPlayer player=event.getPlayer();
             int x = event.getCardOnStack().getX();
             if (x >= 5) {
-                final Collection<MagicTarget> targets = game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE);
-                for (final MagicTarget target : targets) {
-                    game.doAction(new MagicDestroyAction((MagicPermanent)target));
+                final Collection<MagicPermanent> targets = game.filterPermanents(player,MagicTargetFilter.TARGET_CREATURE);
+                for (final MagicPermanent target : targets) {
+                    game.doAction(new MagicDestroyAction(target));
                 }
             } 
             for (;x>0;x--) {
