@@ -12,15 +12,15 @@ import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
 public class Thresher_Beast {
     public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            final MagicPlayer player = permanent.getController();
-            return (permanent == data ) ?
-                    new MagicEvent(
-                            permanent,
-                            player,
-                            this,
-                            player.getOpponent() + " sacrifices a land."):
-                    MagicEvent.NONE;
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocked) {
+            return (permanent == blocked) ?
+                new MagicEvent(
+                    permanent,
+                    permanent.getController().getOpponent(),
+                    this,
+                    "PN sacrifices a land."
+                ):
+                MagicEvent.NONE;
         }
         
         @Override
@@ -28,12 +28,13 @@ public class Thresher_Beast {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            final MagicPlayer opponent = event.getPlayer().getOpponent();
+            final MagicPlayer opponent = event.getPlayer();
             if (opponent.controlsPermanentWithType(MagicType.Land)) {
                 game.addEvent(new MagicSacrificePermanentEvent(
                     event.getPermanent(),
                     opponent,
-                    MagicTargetChoice.SACRIFICE_LAND));
+                    MagicTargetChoice.SACRIFICE_LAND
+                ));
             }
         }
     };
