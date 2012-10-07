@@ -32,12 +32,12 @@ public class Copperhorn_Scout {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicPermanent permanent = event.getPermanent();
-            final Collection<MagicTarget> targets = game.filterTargets(
+            final Collection<MagicPermanent> targets = game.filterPermanents(
                     event.getPlayer(),
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-            for (final MagicTarget target : targets) {
-                if (target != permanent) {
-                    game.doAction(new MagicUntapAction((MagicPermanent)target));
+            for (final MagicPermanent other : targets) {
+                if (other != permanent) {
+                    game.doAction(new MagicUntapAction(other));
                 }
             }
         }        
