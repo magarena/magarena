@@ -11,7 +11,7 @@ public class Black_Cat {
     public static final MagicWhenDiesTrigger T = new MagicWhenDiesTrigger() {
         @Override
         public MagicEvent getEvent(final MagicPermanent permanent) {
-            final MagicPlayer opponent = permanent.getController().getOpponent();
+            final MagicPlayer opponent = permanent.getOpponent();
             return new MagicEvent(
                     permanent,
                     opponent,
