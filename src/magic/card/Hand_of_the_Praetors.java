@@ -7,7 +7,9 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 import magic.model.action.MagicChangePoisonAction;
+import magic.model.action.MagicPlayerAction;
 import magic.model.event.MagicEvent;
+import magic.model.choice.MagicTargetChoice;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.stack.MagicCardOnStack;
@@ -30,17 +32,16 @@ public class Hand_of_the_Praetors {
     
     public static final MagicWhenOtherSpellIsCastTrigger T = new MagicWhenOtherSpellIsCastTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
-            final MagicPlayer player = permanent.getController();
-            final MagicCard card = data.getCard();
-            return (card.getOwner() == player &&
-                    data.getCardDefinition().isCreature() &&
-                    data.getCardDefinition().hasAbility(MagicAbility.Infect)) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
+            return (permanent.isFriend(cardOnStack) &&
+                    cardOnStack.getCardDefinition().isCreature() &&
+                    cardOnStack.getCardDefinition().hasAbility(MagicAbility.Infect)) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        player.getOpponent() + " gets a poison counter."):
+                    permanent,
+                    MagicTargetChoice.NEG_TARGET_PLAYER,
+                    this,
+                    "Target player$ gets a poison counter."
+                ):
                 MagicEvent.NONE;
         }
         @Override
@@ -48,7 +49,11 @@ public class Hand_of_the_Praetors {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangePoisonAction(event.getPlayer().getOpponent(),1));
+            event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
+                public void doAction(final MagicPlayer player) {
+                    game.doAction(new MagicChangePoisonAction(player,1));
+                }
+            });
         }        
     };
 }
