@@ -39,13 +39,14 @@ public class Victory_s_Herald {
                 final MagicEvent event,
                 final Object[] choiceResults) {
 
-            final Collection<MagicTarget> targets = game.filterTargets(
+            final Collection<MagicPermanent> targets = game.filterPermanents(
                     event.getPlayer(),
                     MagicTargetFilter.TARGET_ATTACKING_CREATURE);
-            for (final MagicTarget target : targets) {
+            for (final MagicPermanent target : targets) {
                 game.doAction(new MagicSetAbilityAction(
-                            (MagicPermanent)target,
-                            VICTORYS_HERALD_FLAGS));
+                    target,
+                    VICTORYS_HERALD_FLAGS
+                ));
             }
         }        
     };
