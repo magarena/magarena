@@ -38,10 +38,10 @@ public class Dauntless_Escort {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            final Collection<MagicTarget> creatures=
-                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-            for (final MagicTarget creature : creatures) {
-                game.doAction(new MagicSetAbilityAction((MagicPermanent)creature,MagicAbility.Indestructible));
+            final Collection<MagicPermanent> creatures=
+                game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+            for (final MagicPermanent creature : creatures) {
+                game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Indestructible));
             }
         }
     };
