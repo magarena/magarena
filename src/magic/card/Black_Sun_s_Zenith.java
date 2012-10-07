@@ -32,11 +32,11 @@ public class Black_Sun_s_Zenith {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final int amount = event.getCardOnStack().getX();
-            final Collection<MagicTarget> targets = 
-                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE);
-            for (final MagicTarget target : targets) {
+            final Collection<MagicPermanent> targets = 
+                game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE);
+            for (final MagicPermanent target : targets) {
                 game.doAction(new MagicChangeCountersAction(
-                            (MagicPermanent)target,
+                            target,
                             MagicCounterType.MinusOne,amount,true));
             }
             game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(),MagicLocationType.OwnersLibrary));
