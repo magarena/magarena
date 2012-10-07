@@ -32,14 +32,15 @@ public class Riot_Ringleader {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            final Collection<MagicTarget> targets = game.filterTargets(
+            final Collection<MagicPermanent> targets = game.filterPermanents(
                     event.getPlayer(),
                     MagicTargetFilter.TARGET_HUMAN_YOU_CONTROL);
-            for (final MagicTarget target : targets) {
+            for (final MagicPermanent target : targets) {
                 game.doAction(new MagicChangeTurnPTAction(
-                        (MagicPermanent)target,
-                        1,
-                        0));
+                    target,
+                    1,
+                    0
+                ));
             }
         }
     };
