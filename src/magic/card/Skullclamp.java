@@ -9,12 +9,13 @@ import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
 public class Skullclamp {
     public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            return (permanent.getEquippedCreature()==data)?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent died) {
+            return (permanent.getEquippedCreature()==died)?
                 new MagicEvent(
-                        permanent,
-                        this,
-                        "PN draws two cards.") :
+                    permanent,
+                    this,
+                    "PN draws two cards."
+                ):
                 MagicEvent.NONE;
         }
         @Override
