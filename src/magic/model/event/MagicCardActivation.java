@@ -14,7 +14,7 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicCardOnStack;
 
-public class MagicCardActivation extends MagicActivation {
+public class MagicCardActivation extends MagicActivation<MagicCard> {
 
     final boolean usesStack;
     
@@ -75,8 +75,7 @@ public class MagicCardActivation extends MagicActivation {
     @Override
     final MagicTargetChoice getTargetChoice(final MagicSource source) {
         // Not the cleanest way to do this by far...
-        final MagicCard card=(MagicCard)source;
-        final MagicCardOnStack cardOnStack=new MagicCardOnStack(card,MagicPayedCost.NO_COST);
+        final MagicCardOnStack cardOnStack=new MagicCardOnStack((MagicCard)source,MagicPayedCost.NO_COST);
         return cardOnStack.getEvent().getTargetChoice();
     }    
 }

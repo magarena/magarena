@@ -11,7 +11,7 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicSingleActivationCondition;
 
-public abstract class MagicActivation implements MagicEventAction, Comparable<MagicActivation> {
+public abstract class MagicActivation<T extends MagicSource> implements MagicEventAction, Comparable<MagicActivation> {
 
     public static final MagicCondition[] NO_COND = new MagicCondition[0];
     
@@ -117,6 +117,8 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
     }
     
     abstract boolean usesStack();
+
+    abstract MagicEvent[] getCostEvent(final T source);
     
     abstract MagicEvent getEvent(final MagicSource source);
     

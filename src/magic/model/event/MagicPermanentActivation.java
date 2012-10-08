@@ -13,7 +13,7 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicAbilityOnStack;
 
-public abstract class MagicPermanentActivation extends MagicActivation implements MagicChangeCardDefinition, MagicCopyable {
+public abstract class MagicPermanentActivation extends MagicActivation<MagicPermanent> implements MagicChangeCardDefinition, MagicCopyable {
     
     public MagicPermanentActivation(
             final MagicCondition[] conditions,
@@ -62,8 +62,7 @@ public abstract class MagicPermanentActivation extends MagicActivation implement
     @Override
     public final MagicTargetChoice getTargetChoice(final MagicSource source) {
         // Not the cleanest way to do this by far...
-        final MagicPermanent permanent=(MagicPermanent)source;
-        return getPermanentEvent(permanent,MagicPayedCost.NO_COST).getTargetChoice();
+        return getPermanentEvent((MagicPermanent)source,MagicPayedCost.NO_COST).getTargetChoice();
     }
    
     public abstract MagicEvent[] getCostEvent(final MagicPermanent source);
