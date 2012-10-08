@@ -30,7 +30,7 @@ public class Culling_Dais {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                    new MagicTapEvent((MagicPermanent)source),
+                    new MagicTapEvent(source),
                     new MagicSacrificePermanentEvent(
                     source,
                     source.getController(),
@@ -64,7 +64,7 @@ public class Culling_Dais {
             "Draw") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            final MagicPermanent permanent = (MagicPermanent)source;
+            final MagicPermanent permanent = source;
             return new MagicEvent[]{
                 new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE),
                 new MagicSacrificeEvent(permanent)};

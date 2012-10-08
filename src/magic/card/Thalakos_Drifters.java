@@ -23,7 +23,7 @@ public class Thalakos_Drifters {
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicDiscardEvent(source,source.getController(),1,false),
-                new MagicPlayAbilityEvent((MagicPermanent)source)
+                new MagicPlayAbilityEvent(source)
             };
         }
         @Override

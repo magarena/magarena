@@ -21,7 +21,7 @@ public class Silkbind_Faerie {
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_WHITE_OR_BLUE),
-                new MagicUntapEvent((MagicPermanent)source)};
+                new MagicUntapEvent(source)};
         }
     };
 }

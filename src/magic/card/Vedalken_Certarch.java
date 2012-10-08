@@ -25,7 +25,7 @@ public class Vedalken_Certarch {
             "Tap") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            final MagicPermanent permanent=(MagicPermanent)source;
+            final MagicPermanent permanent=source;
             return new MagicEvent[]{new MagicTapEvent(permanent)};
         }
         @Override

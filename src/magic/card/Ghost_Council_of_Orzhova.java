@@ -34,7 +34,7 @@ public class Ghost_Council_of_Orzhova {
             final MagicPlayer player=source.getController();
             return new MagicEvent[]{                    
                 new MagicPayManaCostEvent(source,player,MagicManaCost.ONE),
-                new MagicPlayAbilityEvent((MagicPermanent)source),
+                new MagicPlayAbilityEvent(source),
                 new MagicSacrificePermanentEvent(source,player,MagicTargetChoice.SACRIFICE_CREATURE)};
         }
         @Override

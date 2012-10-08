@@ -31,8 +31,8 @@ public class Tectonic_Edge {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicTapEvent((MagicPermanent)source),
-                new MagicSacrificeEvent((MagicPermanent)source),
+                new MagicTapEvent(source),
+                new MagicSacrificeEvent(source),
                 new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.ONE)
             };
         }

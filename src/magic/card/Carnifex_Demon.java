@@ -31,7 +31,7 @@ public class Carnifex_Demon {
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.BLACK),
-                new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.MinusOne,1)};
+                new MagicRemoveCounterEvent(source,MagicCounterType.MinusOne,1)};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

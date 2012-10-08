@@ -86,9 +86,9 @@ public class Grimoire_of_the_Dead {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicTapEvent((MagicPermanent)source),
-                new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,3),
-                new MagicSacrificeEvent((MagicPermanent)source)};
+                new MagicTapEvent(source),
+                new MagicRemoveCounterEvent(source,MagicCounterType.Charge,3),
+                new MagicSacrificeEvent(source)};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

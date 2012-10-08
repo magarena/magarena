@@ -32,7 +32,7 @@ public class Barrage_Ogre {
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             final MagicPlayer player = source.getController();
             return new MagicEvent[]{
-                new MagicTapEvent((MagicPermanent)source),
+                new MagicTapEvent(source),
                 new MagicSacrificePermanentEvent(source,player,MagicTargetChoice.SACRIFICE_ARTIFACT)};
         }
         @Override

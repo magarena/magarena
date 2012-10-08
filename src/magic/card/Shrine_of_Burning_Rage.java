@@ -38,7 +38,7 @@ public class Shrine_of_Burning_Rage {
             "Damage") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            final MagicPermanent permanent=(MagicPermanent)source;
+            final MagicPermanent permanent=source;
             return new MagicEvent[]{
                 new MagicTapEvent(permanent),
                 new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.THREE),

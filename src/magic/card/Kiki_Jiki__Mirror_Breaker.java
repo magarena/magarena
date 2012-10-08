@@ -26,7 +26,7 @@ public class Kiki_Jiki__Mirror_Breaker {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
+            return new MagicEvent[]{new MagicTapEvent(source)};
         }
 
         @Override

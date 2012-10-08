@@ -25,7 +25,7 @@ public class Mad_Prophet {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                    new MagicTapEvent((MagicPermanent)source),
+                    new MagicTapEvent(source),
                     new MagicDiscardEvent(source,source.getController(),1,false)
             };
         }

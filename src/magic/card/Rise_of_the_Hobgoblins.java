@@ -41,7 +41,7 @@ public class Rise_of_the_Hobgoblins {
                         source,
                         source.getController(),
                         MagicManaCost.RED_OR_WHITE),
-                    new MagicPlayAbilityEvent((MagicPermanent)source)};
+                    new MagicPlayAbilityEvent(source)};
         }
 
         @Override

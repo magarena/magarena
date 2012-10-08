@@ -31,7 +31,7 @@ public class Stronghold_Overseer {
                             source,
                             source.getController(),
                             MagicManaCost.BLACK_BLACK),
-                    new MagicPlayAbilityEvent((MagicPermanent)source)};
+                    new MagicPlayAbilityEvent(source)};
         }
 
         @Override

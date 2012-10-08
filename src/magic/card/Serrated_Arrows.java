@@ -26,7 +26,7 @@ public class Serrated_Arrows {
             "-1/-1") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            final MagicPermanent permanent=(MagicPermanent)source;
+            final MagicPermanent permanent=source;
             return new MagicEvent[]{
                 new MagicTapEvent(permanent),
                 new MagicRemoveCounterEvent(permanent,MagicCounterType.Charge,1)};

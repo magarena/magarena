@@ -37,7 +37,7 @@ public class Angelheart_Vial {
                     source.getController(),
                     MagicManaCost.TWO),
                     new MagicRemoveCounterEvent(
-                        (MagicPermanent)source,
+                        source,
                         MagicCounterType.Charge,
                         4)};
         }

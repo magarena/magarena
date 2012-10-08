@@ -29,7 +29,7 @@ public class Argent_Sphinx {
             final MagicPlayer player=source.getController();
             return new MagicEvent[]{                    
                 new MagicPayManaCostEvent(source,player,MagicManaCost.BLUE),
-                new MagicPlayAbilityEvent((MagicPermanent)source)};
+                new MagicPlayAbilityEvent(source)};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

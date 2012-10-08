@@ -23,7 +23,7 @@ public class Swarmyard {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
+            return new MagicEvent[]{new MagicTapEvent(source)};
         }
 
         @Override

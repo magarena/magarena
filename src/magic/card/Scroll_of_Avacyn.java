@@ -26,7 +26,7 @@ public class Scroll_of_Avacyn {
             "Draw") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            final MagicPermanent permanent = (MagicPermanent)source;
+            final MagicPermanent permanent = source;
             return new MagicEvent[]{
                 new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE),
                 new MagicSacrificeEvent(permanent)};

@@ -21,7 +21,7 @@ public class Alchemist_s_Apprentice {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicSacrificeEvent((MagicPermanent)source)};
+            return new MagicEvent[]{new MagicSacrificeEvent(source)};
         }
 
         @Override

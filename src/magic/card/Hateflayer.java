@@ -29,7 +29,7 @@ public class Hateflayer {
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_RED),
-                new MagicUntapEvent((MagicPermanent)source)};
+                new MagicUntapEvent(source)};
         }
 
         @Override

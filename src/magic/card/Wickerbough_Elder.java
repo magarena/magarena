@@ -30,7 +30,7 @@ public class Wickerbough_Elder {
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.GREEN),
-                new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.MinusOne,1)
+                new MagicRemoveCounterEvent(source,MagicCounterType.MinusOne,1)
             };
         }
         @Override

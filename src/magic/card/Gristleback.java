@@ -19,7 +19,7 @@ public class Gristleback {
             "Life") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicSacrificeEvent((MagicPermanent)source)};
+            return new MagicEvent[]{new MagicSacrificeEvent(source)};
         }
         @Override
         public MagicEvent getPermanentEvent(

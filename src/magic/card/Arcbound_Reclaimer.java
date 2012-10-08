@@ -28,7 +28,7 @@ public class Arcbound_Reclaimer {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.PlusOne,1)
+                new MagicRemoveCounterEvent(source,MagicCounterType.PlusOne,1)
             };
         }
         @Override

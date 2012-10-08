@@ -30,7 +30,7 @@ public class Sunhome__Fortress_of_the_Legion {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicTapEvent((MagicPermanent)source),
+                new MagicTapEvent(source),
                 new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_RED_WHITE)
             };
         }

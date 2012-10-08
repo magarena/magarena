@@ -30,7 +30,7 @@ public class Quicksilver_Amulet {
             "Token") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            final MagicPermanent permanent=(MagicPermanent)source;
+            final MagicPermanent permanent=source;
             return new MagicEvent[]{
                 new MagicTapEvent(permanent),
                 new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.FOUR)

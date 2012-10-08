@@ -25,7 +25,7 @@ public class Rootwalla {
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_GREEN),
-                new MagicPlayAbilityEvent((MagicPermanent)source)};
+                new MagicPlayAbilityEvent(source)};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

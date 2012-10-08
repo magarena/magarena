@@ -19,7 +19,7 @@ public class Jolting_Merfolk {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,1)};
+                new MagicRemoveCounterEvent(source,MagicCounterType.Charge,1)};
         }
     };
 }

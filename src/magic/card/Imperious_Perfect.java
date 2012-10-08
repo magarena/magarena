@@ -39,7 +39,7 @@ public class Imperious_Perfect {
             "Token") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source), 
+            return new MagicEvent[]{new MagicTapEvent(source), 
                 new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.GREEN)};
         }
         @Override

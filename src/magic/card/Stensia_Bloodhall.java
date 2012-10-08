@@ -31,7 +31,7 @@ public class Stensia_Bloodhall {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                    new MagicTapEvent((MagicPermanent)source),
+                    new MagicTapEvent(source),
                     new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.THREE_BLACK_RED)};
         }
 

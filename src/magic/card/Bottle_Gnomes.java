@@ -19,7 +19,7 @@ public class Bottle_Gnomes {
             "Life+3") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicSacrificeEvent((MagicPermanent)source)};
+            return new MagicEvent[]{new MagicSacrificeEvent(source)};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

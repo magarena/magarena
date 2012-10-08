@@ -29,7 +29,7 @@ public class Brittle_Effigy {
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.FOUR),
-                new MagicExileEvent((MagicPermanent)source)
+                new MagicExileEvent(source)
             };
         }
 

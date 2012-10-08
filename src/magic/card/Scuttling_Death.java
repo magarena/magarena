@@ -23,7 +23,7 @@ public class Scuttling_Death {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicSacrificeEvent((MagicPermanent)source)};
+            return new MagicEvent[]{new MagicSacrificeEvent(source)};
         }
 
         @Override

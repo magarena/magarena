@@ -19,7 +19,7 @@ public class Brindle_Boar {
             "Life+4") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicSacrificeEvent((MagicPermanent)source)};
+            return new MagicEvent[]{new MagicSacrificeEvent(source)};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

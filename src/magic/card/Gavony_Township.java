@@ -31,7 +31,7 @@ public class Gavony_Township {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                    new MagicTapEvent((MagicPermanent)source),
+                    new MagicTapEvent(source),
                     new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_GREEN_WHITE)};
         }
         @Override

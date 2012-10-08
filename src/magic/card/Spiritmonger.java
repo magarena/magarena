@@ -31,7 +31,7 @@ public class Spiritmonger {
                     source,source.getController(),
                     MagicManaCost.GREEN
                 ),
-                new MagicPlayAbilityEvent((MagicPermanent)source)
+                new MagicPlayAbilityEvent(source)
             };
         }
         @Override

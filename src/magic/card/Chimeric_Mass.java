@@ -62,7 +62,7 @@ public class Chimeric_Mass {
                     source,
                     source.getController(),
                     MagicManaCost.ONE),
-                    new MagicPlayAbilityEvent((MagicPermanent)source)};
+                    new MagicPlayAbilityEvent(source)};
         }
 
         @Override

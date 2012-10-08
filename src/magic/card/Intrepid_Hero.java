@@ -24,7 +24,7 @@ public class Intrepid_Hero {
     ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
+            return new MagicEvent[]{new MagicTapEvent(source)};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

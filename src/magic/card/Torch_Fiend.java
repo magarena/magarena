@@ -30,7 +30,7 @@ public class Torch_Fiend {
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.RED),
-                new MagicSacrificeEvent((MagicPermanent)source)
+                new MagicSacrificeEvent(source)
             };
         }
 

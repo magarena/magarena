@@ -27,7 +27,7 @@ public class Defender_en_Vec {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,1)
+                new MagicRemoveCounterEvent(source,MagicCounterType.Charge,1)
             };
         }
 

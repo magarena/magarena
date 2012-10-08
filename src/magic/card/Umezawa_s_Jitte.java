@@ -30,7 +30,7 @@ public class Umezawa_s_Jitte {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,1)};
+                new MagicRemoveCounterEvent(source,MagicCounterType.Charge,1)};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
@@ -59,7 +59,7 @@ public class Umezawa_s_Jitte {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,1)};
+                new MagicRemoveCounterEvent(source,MagicCounterType.Charge,1)};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
@@ -93,7 +93,7 @@ public class Umezawa_s_Jitte {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                    new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,1)};
+                    new MagicRemoveCounterEvent(source,MagicCounterType.Charge,1)};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

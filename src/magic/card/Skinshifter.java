@@ -56,7 +56,7 @@ public class Skinshifter {
                     source,
                     source.getController(),
                     MagicManaCost.GREEN),
-                    new MagicPlayAbilityEvent((MagicPermanent)source)};
+                    new MagicPlayAbilityEvent(source)};
         }
 
         @Override
@@ -112,7 +112,7 @@ public class Skinshifter {
                     source,
                     source.getController(),
                     MagicManaCost.GREEN),
-                    new MagicPlayAbilityEvent((MagicPermanent)source)};
+                    new MagicPlayAbilityEvent(source)};
         }
 
         @Override
@@ -162,7 +162,7 @@ public class Skinshifter {
                     source,
                     source.getController(),
                     MagicManaCost.GREEN),
-                    new MagicPlayAbilityEvent((MagicPermanent)source)};
+                    new MagicPlayAbilityEvent(source)};
         }
 
         @Override

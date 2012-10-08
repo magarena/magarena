@@ -54,7 +54,7 @@ public class Golem_Foundry {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,3)};
+                new MagicRemoveCounterEvent(source,MagicCounterType.Charge,3)};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

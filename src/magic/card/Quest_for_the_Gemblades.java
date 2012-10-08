@@ -31,8 +31,8 @@ public class Quest_for_the_Gemblades {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,1),
-                new MagicSacrificeEvent((MagicPermanent)source)};
+                new MagicRemoveCounterEvent(source,MagicCounterType.Charge,1),
+                new MagicSacrificeEvent(source)};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
@@ -65,7 +65,7 @@ public class Quest_for_the_Gemblades {
                     permanent.isFriend(source) && 
                     source.isPermanent() && 
                     target.isPermanent() &&
-                    ((MagicPermanent)source).isCreature() && 
+                    (source).isCreature() && 
                     ((MagicPermanent)target).isCreature()) ?
                 new MagicEvent(
                     permanent,
