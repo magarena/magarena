@@ -13,14 +13,13 @@ public class Lowland_Basilisk {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             return (damage.getSource() == permanent &&
-                    damage.getTarget().isPermanent() &&
-                    ((MagicPermanent)damage.getTarget()).isCreature()) ?
+                    damage.getTarget().isCreature()) ?
                 new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        damage.getTarget(),
-                        this,
-                        "Destroy " + damage.getTarget() + " at end of combat."):
+                    permanent,
+                    damage.getTarget(),
+                    this,
+                    "Destroy RN at end of combat."
+                ):
                 MagicEvent.NONE;
         }
         
