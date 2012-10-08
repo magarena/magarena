@@ -5,7 +5,7 @@ BEGIN {
 }
 
 FILENAME ~ /mtg-data/ {
-    if ($1 in score) {
+    if ($1 in score && !($1 in ignore)) {
         found[$1] = 1
         print score[$1] "\t"
         print "NOTE:"comment[$1] "\t"
@@ -19,6 +19,10 @@ FILENAME ~ /mtg-data/ {
         print "\n"
     }
     next
+}
+
+FILENAME ~ /unimplementable/ {
+    ignore[$1] = 1
 }
 
 {
