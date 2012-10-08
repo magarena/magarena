@@ -22,11 +22,12 @@ public class Shriekgeist {
                     target.isPlayer() && 
                     damage.isCombat()) ?
                 new MagicEvent(
-                        permanent,
-                        (MagicPlayer)target,
-                        this,
-                        target + " puts the top two cards of " +
-                        "his or her library into his or her graveyard."):
+                    permanent,
+                    (MagicPlayer)target,
+                    this,
+                    "PN puts the top two cards of " +
+                    "his or her library into his or her graveyard."
+                ):
                 MagicEvent.NONE;
         }
         @Override
