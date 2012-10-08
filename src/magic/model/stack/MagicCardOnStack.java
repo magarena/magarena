@@ -118,9 +118,4 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
     public boolean isCreature() {
         return getSource().isCreature();
     }
-
-    @Override
-    public MagicEvent[] getCostEvent(final MagicActivation act) {
-        return getSource().getCostEvent(act);
-    }
 }

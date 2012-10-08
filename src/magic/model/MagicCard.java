@@ -230,9 +230,4 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
     public MagicGame getGame() {
         return owner.getGame();
     }
-
-    @Override
-    public MagicEvent[] getCostEvent(final MagicActivation act) {
-        return ((MagicCardActivation)act).getCostEvent(this);
-    }
 }

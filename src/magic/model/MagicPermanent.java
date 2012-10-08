@@ -1044,9 +1044,4 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         }
         return cardDefinition.getIcon();
     }
-    
-    @Override
-    public MagicEvent[] getCostEvent(final MagicActivation act) {
-        return ((MagicPermanentActivation)act).getCostEvent(this);
-    }
 }

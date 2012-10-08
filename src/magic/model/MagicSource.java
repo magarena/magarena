@@ -10,5 +10,4 @@ public interface MagicSource extends MagicCopyable, MagicMappable, MagicObject {
     int       getColorFlags();
     MagicGame getGame();
     Collection<MagicActivation> getActivations();
-    MagicEvent[] getCostEvent(final MagicActivation act);
 }
