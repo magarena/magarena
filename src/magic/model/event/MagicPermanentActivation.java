@@ -65,7 +65,9 @@ public abstract class MagicPermanentActivation extends MagicActivation implement
         final MagicPermanent permanent=(MagicPermanent)source;
         return getPermanentEvent(permanent,MagicPayedCost.NO_COST).getTargetChoice();
     }
-    
+   
+    public abstract MagicEvent[] getCostEvent(final MagicPermanent source);
+
     public abstract MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost);
     
     @Override

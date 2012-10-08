@@ -35,17 +35,17 @@ public class MagicCardActivation extends MagicActivation {
         return usesStack;
     }
 
-    @Override
-    protected MagicEvent[] getCostEvent(final MagicSource source) {
-        final MagicManaCost cost = ((MagicCard)source).getCost();
-
-        if (cost!=MagicManaCost.ZERO) {
-            return new MagicEvent[]{
-                new MagicPayManaCostEvent(source,source.getController(),cost)
+    public MagicEvent[] getCostEvent(final MagicCard source) {
+        final MagicManaCost cost = source.getCost();
+        return cost == MagicManaCost.ZERO ?
+            MagicEvent.NO_EVENTS :
+            new MagicEvent[]{
+                new MagicPayManaCostEvent(
+                    source,
+                    source.getController(),
+                    cost
+                )
             };
-        } else {
-            return MagicEvent.NO_EVENTS;
-        }
     }
 
     @Override
