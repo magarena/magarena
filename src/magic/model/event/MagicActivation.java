@@ -118,8 +118,6 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
     
     abstract boolean usesStack();
     
-    protected abstract MagicEvent[] getCostEvent(final MagicSource source);
-    
     abstract MagicEvent getEvent(final MagicSource source);
     
     abstract MagicTargetChoice getTargetChoice(final MagicSource source);    
