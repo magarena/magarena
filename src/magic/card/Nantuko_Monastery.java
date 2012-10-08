@@ -61,7 +61,7 @@ public class Nantuko_Monastery {
             new MagicActivationHints(MagicTiming.Animate),
             "Animate") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.GREEN_WHITE)};
         }
         @Override

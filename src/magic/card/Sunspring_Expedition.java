@@ -23,7 +23,7 @@ public class Sunspring_Expedition {
             new MagicActivationHints(MagicTiming.Pump),
             "Life") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,3),
                 new MagicSacrificeEvent((MagicPermanent)source)};

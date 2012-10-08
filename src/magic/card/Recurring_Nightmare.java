@@ -29,7 +29,7 @@ public class Recurring_Nightmare {
             new MagicActivationHints(MagicTiming.Pump),
             "Return") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             final MagicTargetChoice creatureChoice = MagicTargetChoice.SACRIFICE_CREATURE;
             return new MagicEvent[]{new MagicSacrificePermanentEvent(
                     source,

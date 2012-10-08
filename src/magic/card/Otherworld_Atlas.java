@@ -24,7 +24,7 @@ public class Otherworld_Atlas {
             "Charge") {
 
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
         }
 
@@ -62,7 +62,7 @@ public class Otherworld_Atlas {
             "Draw") {
 
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
         }
 

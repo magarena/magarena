@@ -30,7 +30,7 @@ public class Grimgrin__Corpse_Born {
             "Pump") {
 
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             final MagicTargetFilter targetFilter = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,(MagicPermanent)source);
             final MagicTargetChoice targetChoice = new MagicTargetChoice(

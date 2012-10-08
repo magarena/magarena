@@ -55,7 +55,7 @@ public class Grimoire_of_the_Dead {
             new MagicActivationHints(MagicTiming.Main,true),
             "Add counter") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.ONE),
                 new MagicDiscardEvent(source,source.getController(),1,false)
@@ -84,7 +84,7 @@ public class Grimoire_of_the_Dead {
             new MagicActivationHints(MagicTiming.Token),
             "Reanimate") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicTapEvent((MagicPermanent)source),
                 new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,3),

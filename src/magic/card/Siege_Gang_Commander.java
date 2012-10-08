@@ -29,7 +29,7 @@ public class Siege_Gang_Commander {
             new MagicActivationHints(MagicTiming.Removal,true),
             "Damage") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             final MagicPlayer player=source.getController();
             return new MagicEvent[]{                    
                 new MagicPayManaCostEvent(source,player,MagicManaCost.ONE_RED),

@@ -33,7 +33,7 @@ public class Havengul_Runebinder {
             new MagicActivationHints(MagicTiming.Token),
             "Token") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                     new MagicPayManaCostTapEvent(
                             source,

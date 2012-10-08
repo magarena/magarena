@@ -20,7 +20,7 @@ public class Thalakos_Drifters {
             new MagicActivationHints(MagicTiming.Pump,false,1),
             "Shadow") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicDiscardEvent(source,source.getController(),1,false),
                 new MagicPlayAbilityEvent((MagicPermanent)source)

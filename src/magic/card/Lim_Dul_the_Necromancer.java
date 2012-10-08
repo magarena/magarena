@@ -81,7 +81,7 @@ public class Lim_Dul_the_Necromancer {
     ) {
 
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_BLACK)};
         }
 

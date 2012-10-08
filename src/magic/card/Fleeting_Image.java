@@ -20,7 +20,7 @@ public class Fleeting_Image {
             new MagicActivationHints(MagicTiming.Removal),
             "Return") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_BLUE)};
         }
         @Override

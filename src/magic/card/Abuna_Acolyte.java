@@ -23,7 +23,7 @@ public class Abuna_Acolyte {
             "Prevent 1") {
 
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
         }
 
@@ -54,7 +54,7 @@ public class Abuna_Acolyte {
             "Prevent 2") {
 
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
         }
 

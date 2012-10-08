@@ -1,7 +1,7 @@
 package magic.card;
 
 import magic.model.MagicManaCost;
-import magic.model.MagicSource;
+import magic.model.MagicPermanent;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
@@ -18,7 +18,7 @@ public class Gnarled_Effigy {
             new MagicActivationHints(MagicTiming.Removal),
             "-1/-1") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{new MagicPayManaCostTapEvent(
                     source,
                     source.getController(),

@@ -55,7 +55,7 @@ public class AEther_Vial {
             ) {
 
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
         }
 

@@ -30,7 +30,7 @@ public class Stitcher_s_Apprentice {
         "Token"
     ) {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.ONE_BLUE)};
         }
         @Override

@@ -45,7 +45,7 @@ public class Dread_Statuary {
             new MagicActivationHints(MagicTiming.Animate),
             "Animate") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.FOUR)};
         }
         @Override

@@ -27,7 +27,7 @@ public class Mikaeus__the_Lunarch {
             "Add") {
 
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
         }
 
@@ -56,7 +56,7 @@ public class Mikaeus__the_Lunarch {
             new MagicActivationHints(MagicTiming.Pump),
             "Remove") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicTapEvent((MagicPermanent)source),
                 new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.PlusOne,1)};

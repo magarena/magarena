@@ -24,7 +24,7 @@ public class Silverchase_Fox {
             "Exile") {
 
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicPayManaCostSacrificeEvent(
                     source,

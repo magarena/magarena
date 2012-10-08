@@ -17,7 +17,7 @@ public class Jolting_Merfolk {
             new MagicActivationHints(MagicTiming.Tapping),
             "Tap") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,1)};
         }

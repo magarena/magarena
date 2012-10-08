@@ -26,7 +26,7 @@ public class Ethersworn_Adjudicator {
         "Destroy"
     ) {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicPayManaCostTapEvent(
                     source,
@@ -68,7 +68,7 @@ public class Ethersworn_Adjudicator {
         "Untap"
     ) {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_BLUE)};
         }
         @Override

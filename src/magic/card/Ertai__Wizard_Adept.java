@@ -26,7 +26,7 @@ public class Ertai__Wizard_Adept {
             "Counter") {
 
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                     new MagicPayManaCostTapEvent(source,source.getController(),
                     MagicManaCost.TWO_BLUE_BLUE)};

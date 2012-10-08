@@ -50,7 +50,7 @@ public class Apocalypse_Hydra {
             new MagicActivationHints(MagicTiming.Removal),
             "Damage") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_RED),
                 new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.PlusOne,1)};

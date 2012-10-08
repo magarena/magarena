@@ -52,7 +52,7 @@ public class Gwafa_Hazid__Profiteer {
             ) {
         
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicPayManaCostTapEvent(
                     source,

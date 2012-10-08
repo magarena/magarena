@@ -28,7 +28,7 @@ public class Skarrg__the_Rage_Pits {
             "Pump") {
 
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.RED_GREEN)
             };

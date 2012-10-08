@@ -28,7 +28,7 @@ public class Culling_Dais {
             new MagicActivationHints(MagicTiming.Pump),
             "Charge") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                     new MagicTapEvent((MagicPermanent)source),
                     new MagicSacrificePermanentEvent(
@@ -63,7 +63,7 @@ public class Culling_Dais {
             new MagicActivationHints(MagicTiming.Pump),
             "Draw") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             final MagicPermanent permanent = (MagicPermanent)source;
             return new MagicEvent[]{
                 new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE),

@@ -41,7 +41,7 @@ public class Myr_Galvanizer {
             new MagicActivationHints(MagicTiming.Tapping),
             "Untap") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.ONE)};
         }
         @Override

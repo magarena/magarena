@@ -29,7 +29,7 @@ public class Rakdos_Guildmage {
             new MagicActivationHints(MagicTiming.Removal,true),
             "-2/-2") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.THREE_BLACK),
                 new MagicDiscardEvent(source,source.getController(),1,false)
@@ -62,7 +62,7 @@ public class Rakdos_Guildmage {
             new MagicActivationHints(MagicTiming.Token,true),
             "Token") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.THREE_RED)};
         }
         @Override

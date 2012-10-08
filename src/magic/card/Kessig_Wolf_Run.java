@@ -28,7 +28,7 @@ public class Kessig_Wolf_Run {
             "Pump") {
 
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                     new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.X_RED_GREEN)};
         }

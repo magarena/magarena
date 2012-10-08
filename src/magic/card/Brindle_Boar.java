@@ -18,7 +18,7 @@ public class Brindle_Boar {
             new MagicActivationHints(MagicTiming.Removal),
             "Life+4") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{new MagicSacrificeEvent((MagicPermanent)source)};
         }
         @Override

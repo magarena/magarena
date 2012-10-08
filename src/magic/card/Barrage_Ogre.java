@@ -29,7 +29,7 @@ public class Barrage_Ogre {
             new MagicActivationHints(MagicTiming.Removal),
             "Damage") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             final MagicPlayer player = source.getController();
             return new MagicEvent[]{
                 new MagicTapEvent((MagicPermanent)source),

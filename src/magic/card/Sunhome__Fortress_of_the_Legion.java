@@ -28,7 +28,7 @@ public class Sunhome__Fortress_of_the_Legion {
             "Pump") {
 
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicTapEvent((MagicPermanent)source),
                 new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_RED_WHITE)

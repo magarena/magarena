@@ -19,7 +19,7 @@ public class Ravenous_Baloth {
             new MagicActivationHints(MagicTiming.Pump,true),
             "Life+4") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{new MagicSacrificePermanentEvent(
                     source,
                     source.getController(),

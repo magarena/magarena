@@ -23,7 +23,7 @@ public class Mind_Stone {
             "Draw") {
 
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             final MagicPermanent permanent=(MagicPermanent)source;
             return new MagicEvent[]{
                 new MagicTapEvent(permanent),

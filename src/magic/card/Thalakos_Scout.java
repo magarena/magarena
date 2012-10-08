@@ -19,7 +19,7 @@ public class Thalakos_Scout {
             new MagicActivationHints(MagicTiming.Removal),
             "Return") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicDiscardEvent(source,source.getController(),1,false)
             };

@@ -23,7 +23,7 @@ public class Goblin_Bombardment {
         new MagicActivationHints(MagicTiming.Removal), "Damage") {
 
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[] { new MagicSacrificePermanentEvent(source,
                 source.getController(),
                 MagicTargetChoice.SACRIFICE_CREATURE) };

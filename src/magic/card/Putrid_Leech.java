@@ -20,7 +20,7 @@ public class Putrid_Leech {
             "Pump") {
 
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicPayLifeEvent(source,source.getController(),2),
                 new MagicPlayAbilityEvent((MagicPermanent)source)};

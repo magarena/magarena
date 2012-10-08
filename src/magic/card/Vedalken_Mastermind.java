@@ -23,7 +23,7 @@ public class Vedalken_Mastermind {
             new MagicActivationHints(MagicTiming.Removal),
             "Return") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.BLUE)};
         }
         @Override

@@ -22,7 +22,7 @@ public class Arcanis_the_Omnipotent {
             new MagicActivationHints(MagicTiming.Token),
             "Draw") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
         }
         @Override
@@ -46,7 +46,7 @@ public class Arcanis_the_Omnipotent {
             new MagicActivationHints(MagicTiming.Removal),
             "Return") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_BLUE_BLUE)};
         }
         @Override

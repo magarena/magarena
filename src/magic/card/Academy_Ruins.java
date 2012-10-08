@@ -30,7 +30,7 @@ public class Academy_Ruins {
         "Card"
     ) {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicTapEvent((MagicPermanent)source),
                 new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_BLUE)

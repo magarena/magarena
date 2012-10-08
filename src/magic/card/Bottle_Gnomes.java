@@ -18,7 +18,7 @@ public class Bottle_Gnomes {
             new MagicActivationHints(MagicTiming.Removal),
             "Life+3") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{new MagicSacrificeEvent((MagicPermanent)source)};
         }
         @Override

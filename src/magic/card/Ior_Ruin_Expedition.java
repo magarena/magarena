@@ -52,7 +52,7 @@ public class Ior_Ruin_Expedition {
             new MagicActivationHints(MagicTiming.Draw),
             "Draw") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,3),
                 new MagicSacrificeEvent((MagicPermanent)source)};

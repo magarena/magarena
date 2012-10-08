@@ -55,7 +55,7 @@ public class Cemetery_Reaper {
         "Token"
     ) {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicPayManaCostTapEvent(
                     source,

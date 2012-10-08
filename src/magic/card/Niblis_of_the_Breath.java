@@ -26,7 +26,7 @@ public class Niblis_of_the_Breath {
             new MagicActivationHints(MagicTiming.Tapping),
             "Tap") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicPayManaCostTapEvent(
                         source,
@@ -44,7 +44,7 @@ public class Niblis_of_the_Breath {
             new MagicActivationHints(MagicTiming.Tapping),
             "Untap") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicPayManaCostTapEvent(
                         source,

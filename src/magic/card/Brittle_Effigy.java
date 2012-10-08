@@ -26,7 +26,7 @@ public class Brittle_Effigy {
     ) {
 
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.FOUR),
                 new MagicExileEvent((MagicPermanent)source)

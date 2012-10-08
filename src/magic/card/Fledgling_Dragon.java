@@ -37,7 +37,7 @@ public class Fledgling_Dragon {
                 "Pump") {
 
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{new MagicPayManaCostEvent(
                     source,
                     source.getController(),

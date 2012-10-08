@@ -28,7 +28,7 @@ public class Umezawa_s_Jitte {
             new MagicActivationHints(MagicTiming.Pump),
             "+2/+2") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,1)};
         }
@@ -57,7 +57,7 @@ public class Umezawa_s_Jitte {
             new MagicActivationHints(MagicTiming.Removal),
             "-1/-1") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,1)};
         }
@@ -91,7 +91,7 @@ public class Umezawa_s_Jitte {
             new MagicActivationHints(MagicTiming.Pump),
             "life + 2") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                     new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,1)};
         }

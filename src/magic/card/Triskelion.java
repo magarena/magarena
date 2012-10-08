@@ -24,7 +24,7 @@ public class Triskelion {
             new MagicActivationHints(MagicTiming.Removal),
             "Damage") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.PlusOne,1)};
         }

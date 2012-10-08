@@ -27,7 +27,7 @@ public class Ratchet_Bomb {
             "Charge") {
 
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             final MagicPermanent permanent=(MagicPermanent)source;
             return new MagicEvent[]{new MagicTapEvent(permanent)};
         }
@@ -61,7 +61,7 @@ public class Ratchet_Bomb {
             "Destroy") {
 
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             final MagicPermanent permanent=(MagicPermanent)source;
             return new MagicEvent[]{
                 new MagicTapEvent(permanent),

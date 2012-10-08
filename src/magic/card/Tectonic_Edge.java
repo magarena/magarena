@@ -29,7 +29,7 @@ public class Tectonic_Edge {
             new MagicActivationHints(MagicTiming.Removal),
             "Destroy") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicTapEvent((MagicPermanent)source),
                 new MagicSacrificeEvent((MagicPermanent)source),

@@ -30,7 +30,7 @@ public class Mirror_Entity {
             new MagicActivationHints(MagicTiming.Pump,true,1),
             "X/X") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                     new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.X),
                     new MagicPlayAbilityEvent((MagicPermanent)source)};

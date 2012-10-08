@@ -29,7 +29,7 @@ public class Graveyard_Shovel {
             new MagicActivationHints(MagicTiming.Main),
             "Exile") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.TWO)};
         }
         @Override

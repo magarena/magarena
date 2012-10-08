@@ -19,7 +19,7 @@ public class Oracle_of_Nectars {
             new MagicActivationHints(MagicTiming.Draw),
             "Life+X") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.X)};
         }
         @Override

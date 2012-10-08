@@ -62,7 +62,7 @@ public class Ib_Halfheart__Goblin_Tactician {
         new MagicActivationHints(MagicTiming.Token, false), "Token") {
 
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[] {
                 new MagicSacrificePermanentEvent(source, source.getController(), MagicTargetChoice.SACRIFICE_MOUNTAIN),
                 new MagicSacrificePermanentEvent(source, source.getController(), MagicTargetChoice.SACRIFICE_MOUNTAIN)

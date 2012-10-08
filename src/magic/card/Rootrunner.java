@@ -24,7 +24,7 @@ public class Rootrunner {
             "Bounce") {
 
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{new MagicPayManaCostSacrificeEvent(source,source.getController(),MagicManaCost.GREEN_GREEN)};
         }
 

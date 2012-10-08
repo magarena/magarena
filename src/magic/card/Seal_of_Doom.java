@@ -24,7 +24,7 @@ public class Seal_of_Doom {
             "Destroy") {
 
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{new MagicSacrificeEvent((MagicPermanent)source)};
         }
 

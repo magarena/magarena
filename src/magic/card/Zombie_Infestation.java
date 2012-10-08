@@ -20,7 +20,7 @@ public class Zombie_Infestation {
             new MagicActivationHints(MagicTiming.Token,true),
             "Token") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicDiscardEvent(source,source.getController(),2,false)
             };

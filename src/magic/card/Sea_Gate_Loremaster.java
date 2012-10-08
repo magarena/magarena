@@ -20,7 +20,7 @@ public class Sea_Gate_Loremaster {
             new MagicActivationHints(MagicTiming.Token),
             "Draw") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
         }
         @Override

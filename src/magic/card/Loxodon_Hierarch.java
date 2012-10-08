@@ -24,7 +24,7 @@ public class Loxodon_Hierarch {
             new MagicActivationHints(MagicTiming.Pump),
             "Regen") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{new MagicPayManaCostSacrificeEvent(
                     source,
                     source.getController(),

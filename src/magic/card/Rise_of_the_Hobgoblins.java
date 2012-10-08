@@ -35,7 +35,7 @@ public class Rise_of_the_Hobgoblins {
             "First strike") {
 
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                     new MagicPayManaCostEvent(
                         source,

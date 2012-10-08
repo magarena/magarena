@@ -28,7 +28,7 @@ public class Carnifex_Demon {
             new MagicActivationHints(MagicTiming.Removal),
             "-1/-1") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.BLACK),
                 new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.MinusOne,1)};

@@ -16,7 +16,7 @@ public class Fume_Spitter {
             new MagicActivationHints(MagicTiming.Removal),
             "-1/-1") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{new MagicSacrificeEvent((MagicPermanent)source)};
         }
     };

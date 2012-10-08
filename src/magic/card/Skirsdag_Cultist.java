@@ -31,7 +31,7 @@ public class Skirsdag_Cultist {
             new MagicActivationHints(MagicTiming.Removal),
             "Exile") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             final MagicPlayer player = source.getController();
             return new MagicEvent[]{
                 new MagicPayManaCostTapEvent(source,player,MagicManaCost.RED),

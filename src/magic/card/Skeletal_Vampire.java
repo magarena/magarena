@@ -30,7 +30,7 @@ public class Skeletal_Vampire {
             "Token") {
 
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             final MagicPlayer player=source.getController();
             return new MagicEvent[]{                    
                 new MagicPayManaCostEvent(source,player,MagicManaCost.THREE_BLACK_BLACK),
@@ -68,7 +68,7 @@ public class Skeletal_Vampire {
             "Regen") {
 
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicSacrificePermanentEvent(
                         source,

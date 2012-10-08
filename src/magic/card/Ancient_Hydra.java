@@ -28,7 +28,7 @@ public class Ancient_Hydra {
             new MagicActivationHints(MagicTiming.Removal),
             "Damage") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE),
                 new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,1)};

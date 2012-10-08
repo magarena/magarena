@@ -22,7 +22,7 @@ public class Dross_Hopper {
             new MagicActivationHints(MagicTiming.Pump),
             "Flying") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{new MagicSacrificePermanentEvent(
                     source,
                     source.getController(),

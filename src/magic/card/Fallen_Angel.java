@@ -21,7 +21,7 @@ public class Fallen_Angel {
             new MagicActivationHints(MagicTiming.Pump),
             "Pump") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{new MagicSacrificePermanentEvent(
                     source,
                     source.getController(),

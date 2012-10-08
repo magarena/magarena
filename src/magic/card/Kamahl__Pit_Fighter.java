@@ -23,7 +23,7 @@ public class Kamahl__Pit_Fighter {
             new MagicActivationHints(MagicTiming.Removal),
             "Damage") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
         }
         @Override

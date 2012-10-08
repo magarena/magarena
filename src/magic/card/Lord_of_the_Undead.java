@@ -46,7 +46,7 @@ public class Lord_of_the_Undead {
         "Return"
     ) {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.ONE_BLACK)};
         }
         @Override

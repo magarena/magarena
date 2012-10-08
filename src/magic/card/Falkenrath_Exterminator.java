@@ -24,7 +24,7 @@ public class Falkenrath_Exterminator {
             new MagicActivationHints(MagicTiming.Pump),
             "Pump") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                     new MagicPayManaCostEvent(
                             source,

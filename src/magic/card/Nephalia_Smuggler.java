@@ -31,7 +31,7 @@ public class Nephalia_Smuggler {
             new MagicActivationHints(MagicTiming.Main),
             "Card") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                     new MagicTapEvent((MagicPermanent)source),
                     new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.THREE_BLUE)};

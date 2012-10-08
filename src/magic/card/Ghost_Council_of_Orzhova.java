@@ -30,7 +30,7 @@ public class Ghost_Council_of_Orzhova {
             new MagicActivationHints(MagicTiming.Removal,false,1),
             "Exile") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             final MagicPlayer player=source.getController();
             return new MagicEvent[]{                    
                 new MagicPayManaCostEvent(source,player,MagicManaCost.ONE),

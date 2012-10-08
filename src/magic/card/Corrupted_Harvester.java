@@ -27,7 +27,7 @@ public class Corrupted_Harvester {
             new MagicActivationHints(MagicTiming.Pump),
             "Regen") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                     new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.BLACK),
                     new MagicSacrificePermanentEvent(

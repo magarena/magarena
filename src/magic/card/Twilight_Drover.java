@@ -50,7 +50,7 @@ public class Twilight_Drover {
             new MagicActivationHints(MagicTiming.Token),
             "Token") {
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_WHITE),
                 new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.PlusOne,1)};

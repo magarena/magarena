@@ -26,7 +26,7 @@ public class Yavimaya_Hollow {
             "Regen") {
 
         @Override
-        public MagicEvent[] getCostEvent(final MagicSource source) {
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.GREEN)
             };
