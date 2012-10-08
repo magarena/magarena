@@ -13,7 +13,9 @@ import magic.model.action.MagicSacrificeAction;
 import magic.model.action.MagicSoulbondAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicActivation;
+import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicPlayAuraEvent;
+import magic.model.event.MagicEvent;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicPermanentStatic;
 import magic.model.mstatic.MagicStatic;
@@ -1041,5 +1043,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             return IconImages.CREATURE;
         }
         return cardDefinition.getIcon();
+    }
+    
+    @Override
+    public MagicEvent[] getCostEvent(final MagicActivation act) {
+        return ((MagicPermanentActivation)act).getCostEvent(this);
     }
 }

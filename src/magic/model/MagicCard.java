@@ -1,6 +1,8 @@
 package magic.model;
 
 import magic.model.event.MagicActivation;
+import magic.model.event.MagicCardActivation;
+import magic.model.event.MagicEvent;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicPermanentStatic;
 import magic.model.mstatic.MagicStatic;
@@ -227,5 +229,10 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
     @Override
     public MagicGame getGame() {
         return owner.getGame();
+    }
+
+    @Override
+    public MagicEvent[] getCostEvent(final MagicActivation act) {
+        return ((MagicCardActivation)act).getCostEvent(this);
     }
 }

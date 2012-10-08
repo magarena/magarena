@@ -9,10 +9,12 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicActivation;
+import magic.model.event.MagicEvent;
 
 import javax.swing.ImageIcon;
 import java.util.Arrays;
 import java.util.Collection;
+
 public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
 
     private MagicLocationType moveLocation=MagicLocationType.Graveyard;
@@ -115,5 +117,10 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
     @Override
     public boolean isCreature() {
         return getSource().isCreature();
+    }
+
+    @Override
+    public MagicEvent[] getCostEvent(final MagicActivation act) {
+        return getSource().getCostEvent(act);
     }
 }
