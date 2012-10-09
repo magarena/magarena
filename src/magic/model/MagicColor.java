@@ -145,19 +145,25 @@ public enum MagicColor {
         return colorText.toString();
     }
 
-    public static boolean isMono(final int flag) {
-        return flag == Black.getMask() || 
-               flag == Blue.getMask() || 
-               flag == Green.getMask() || 
-               flag == Red.getMask() || 
-               flag == White.getMask();
+    private static int numColors(final MagicSource source) {
+        int numColors = 0;
+        for (final MagicColor color : values()) {
+            if (source.hasColor(color)) {
+                numColors++;
+            }
+        }
+        return numColors;
+    }
+    
+    private static boolean isColorless(final MagicSource source) {
+        return numColors(source) == 0;
     }
 
-    private static boolean isColorless(final int flag) {
-        return flag == 0;
+    public static boolean isMono(final MagicSource source) {
+        return numColors(source) == 1;
     }
 
-    public static boolean isMulti(final int flag) {
-        return !isMono(flag) && !isColorless(flag);
+    public static boolean isMulti(final MagicSource source) {
+        return numColors(source) > 1;
     }
 }
