@@ -19,7 +19,7 @@ import java.util.concurrent.Callable;
 // Kicker choice results : 0 = other choice, 1 = number of times kicked, 2 = kicker mana cost result
 public class MagicKickerChoice extends MagicChoice {
 
-    private static final List<Object> NO_OPTIONS_LIST = Collections.<Object>singletonList(null);
+    private static final List<Object> NO_OPTIONS_LIST = Collections.singletonList(null);
     
     private final MagicChoice otherChoice;
     private final MagicManaCost cost;

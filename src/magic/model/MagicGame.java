@@ -1174,7 +1174,7 @@ public class MagicGame {
 
     public List<MagicPermanentTrigger> removeTurnTriggers() {
         if (turnTriggers.isEmpty()) {
-            return Collections.<MagicPermanentTrigger>emptyList();
+            return Collections.emptyList();
         }
         final MagicPermanentTriggerList removedTriggers = new MagicPermanentTriggerList(turnTriggers);
         for (final MagicPermanentTrigger permanentTrigger : removedTriggers) {

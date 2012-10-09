@@ -18,7 +18,7 @@ import java.util.concurrent.Callable;
 // Buyback choice results : 0 = other choice, 1 = is buyback payed, 2 = buyback mana cost result
 public class MagicBuybackChoice extends MagicChoice {
 
-    private static final List<Object> NO_OPTIONS_LIST = Collections.<Object>singletonList(null);
+    private static final List<Object> NO_OPTIONS_LIST = Collections.singletonList(null);
     
     private final MagicChoice otherChoice;
     private final MagicManaCost cost;
