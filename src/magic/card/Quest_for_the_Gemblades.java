@@ -66,7 +66,7 @@ public class Quest_for_the_Gemblades {
                     source.isPermanent() && 
                     target.isPermanent() &&
                     (source).isCreature() && 
-                    ((MagicPermanent)target).isCreature()) ?
+                    target.isCreature()) ?
                 new MagicEvent(
                     permanent,
                     new MagicSimpleMayChoice(

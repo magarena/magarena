@@ -364,7 +364,7 @@ public interface MagicTargetFilter {
         
     MagicTargetFilter TARGET_CREATURE=new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            return ((MagicPermanent)target).isCreature();
+            return target.isCreature();
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType==MagicTargetType.Permanent;
@@ -383,7 +383,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_NONCREATURE=new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            return !((MagicPermanent)target).isCreature();
+            return !target.isCreature();
         }
         
         public boolean acceptType(final MagicTargetType targetType) {
@@ -393,7 +393,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_CREATURE_OR_PLAYER=new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            return target.isPlayer()||((MagicPermanent)target).isCreature();
+            return target.isPlayer()|| target.isCreature();
         }    
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType==MagicTargetType.Permanent||targetType==MagicTargetType.Player;
@@ -545,7 +545,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_CREATURE_YOU_CONTROL=new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            return target.getController()==player&&((MagicPermanent)target).isCreature();
+            return target.getController()==player&& target.isCreature();
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType==MagicTargetType.Permanent;
@@ -742,7 +742,7 @@ public interface MagicTargetFilter {
     MagicTargetFilter TARGET_DRAGON_YOU_CONTROL = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
             return target.getController() == player && 
-                   ((MagicPermanent)target).isCreature() && 
+                   target.isCreature() &&
                    ((MagicPermanent)target).hasSubType(MagicSubType.Dragon);
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -753,7 +753,7 @@ public interface MagicTargetFilter {
     MagicTargetFilter TARGET_ELEMENTAL_YOU_CONTROL = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
             return target.getController() == player && 
-                   ((MagicPermanent)target).isCreature() && 
+                   target.isCreature() &&
                    ((MagicPermanent)target).hasSubType(MagicSubType.Elemental);
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -764,7 +764,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_GOBLIN_CREATURE = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            return ((MagicPermanent)target).isCreature() && 
+            return target.isCreature() &&
                    ((MagicPermanent)target).hasSubType(MagicSubType.Goblin);
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -775,7 +775,7 @@ public interface MagicTargetFilter {
     MagicTargetFilter TARGET_GOBLIN_YOU_CONTROL=new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
             return target.getController()==player && 
-                   ((MagicPermanent)target).isCreature() && 
+                   target.isCreature() &&
                    ((MagicPermanent)target).hasSubType(MagicSubType.Goblin);
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -799,7 +799,7 @@ public interface MagicTargetFilter {
     MagicTargetFilter TARGET_GOLEM_YOU_CONTROL = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
             return target.getController() == player && 
-                   ((MagicPermanent)target).isCreature() && 
+                   target.isCreature() &&
                    ((MagicPermanent)target).hasSubType(MagicSubType.Golem);
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -809,7 +809,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_SQUIRREL_CREATURE = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            return ((MagicPermanent)target).isCreature() && 
+            return target.isCreature() &&
                    ((MagicPermanent)target).hasSubType(MagicSubType.Squirrel);
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -820,7 +820,7 @@ public interface MagicTargetFilter {
     MagicTargetFilter TARGET_CAT_YOU_CONTROL = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
             return target.getController() == player && 
-                   ((MagicPermanent)target).isCreature() && 
+                   target.isCreature() &&
                    ((MagicPermanent)target).hasSubType(MagicSubType.Cat);
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -830,7 +830,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_KNIGHT_CREATURE = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            return ((MagicPermanent)target).isCreature() && 
+            return target.isCreature() &&
                    ((MagicPermanent)target).hasSubType(MagicSubType.Knight);
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -841,7 +841,7 @@ public interface MagicTargetFilter {
     MagicTargetFilter TARGET_KNIGHT_YOU_CONTROL=new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
             return target.getController()==player && 
-                   ((MagicPermanent)target).isCreature() && 
+                   target.isCreature() &&
                    ((MagicPermanent)target).hasSubType(MagicSubType.Knight);
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -852,7 +852,7 @@ public interface MagicTargetFilter {
     MagicTargetFilter TARGET_ILLUSION_YOU_CONTROL=new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
             return target.getController()==player &&
-                   ((MagicPermanent)target).isCreature() && 
+                   target.isCreature() &&
                    ((MagicPermanent)target).hasSubType(MagicSubType.Illusion);
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -872,7 +872,7 @@ public interface MagicTargetFilter {
     MagicTargetFilter TARGET_MYR_YOU_CONTROL = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
             return target.getController() == player &&
-                   ((MagicPermanent)target).isCreature() && 
+                   target.isCreature() &&
                    ((MagicPermanent)target).hasSubType(MagicSubType.Myr);
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -882,7 +882,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_SAMURAI = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            return ((MagicPermanent)target).isCreature() && 
+            return target.isCreature() &&
                    ((MagicPermanent)target).hasSubType(MagicSubType.Samurai);
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -893,7 +893,7 @@ public interface MagicTargetFilter {
     MagicTargetFilter TARGET_SAMURAI_YOU_CONTROL = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
             return target.getController() == player && 
-                   ((MagicPermanent)target).isCreature() && 
+                   target.isCreature() &&
                    ((MagicPermanent)target).hasSubType(MagicSubType.Samurai);
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -904,7 +904,7 @@ public interface MagicTargetFilter {
     MagicTargetFilter TARGET_SNAKE_YOU_CONTROL = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
             return target.getController() == player && 
-                   ((MagicPermanent)target).isCreature() && 
+                   target.isCreature() &&
                    ((MagicPermanent)target).hasSubType(MagicSubType.Snake);
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -928,7 +928,7 @@ public interface MagicTargetFilter {
     MagicTargetFilter TARGET_LEGENDARY_SAMURAI_YOU_CONTROL = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
             return target.getController() == player && 
-                   ((MagicPermanent)target).isCreature() && 
+                   target.isCreature() &&
                    ((MagicPermanent)target).hasSubType(MagicSubType.Samurai) &&
                    ((MagicPermanent)target).hasType(MagicType.Legendary);
         }
@@ -989,7 +989,7 @@ public interface MagicTargetFilter {
     MagicTargetFilter TARGET_MERFOLK_YOU_CONTROL = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
             return target.getController() == player &&
-                    ((MagicPermanent)target).isCreature() &&
+                    target.isCreature() &&
                     ((MagicPermanent)target).hasSubType(MagicSubType.Merfolk);
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -999,7 +999,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_HUMAN = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {        
-            return ((MagicPermanent)target).isCreature() &&
+            return target.isCreature() &&
                     ((MagicPermanent)target).hasSubType(MagicSubType.Human);
         }
         public boolean acceptType(final MagicTargetType targetType) {    
@@ -1010,7 +1010,7 @@ public interface MagicTargetFilter {
     MagicTargetFilter TARGET_HUMAN_YOU_CONTROL = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {        
             return target.getController() == player &&
-                    ((MagicPermanent)target).isCreature() &&
+                    target.isCreature() &&
                     ((MagicPermanent)target).hasSubType(MagicSubType.Human);
         }
         public boolean acceptType(final MagicTargetType targetType) {    
@@ -1020,7 +1020,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_NONHUMAN_CREATURE = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {        
-            return ((MagicPermanent)target).isCreature() &&
+            return target.isCreature() &&
                     !((MagicPermanent)target).hasSubType(MagicSubType.Human);
         }
         public boolean acceptType(final MagicTargetType targetType) {    
@@ -1031,7 +1031,7 @@ public interface MagicTargetFilter {
     MagicTargetFilter TARGET_NONHUMAN_CREATURE_YOU_CONTROL = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {        
             return target.getController() == player &&
-                    ((MagicPermanent)target).isCreature() &&
+                    target.isCreature() &&
                     !((MagicPermanent)target).hasSubType(MagicSubType.Human);
         }
         public boolean acceptType(final MagicTargetType targetType) {    
@@ -1041,7 +1041,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_SOLDIER = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            return ((MagicPermanent)target).isCreature() &&
+            return target.isCreature() &&
                     ((MagicPermanent)target).hasSubType(MagicSubType.Soldier);
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -1052,7 +1052,7 @@ public interface MagicTargetFilter {
     MagicTargetFilter TARGET_SOLDIER_YOU_CONTROL = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
             return target.getController() == player &&
-                    ((MagicPermanent)target).isCreature() &&
+                    target.isCreature() &&
                     ((MagicPermanent)target).hasSubType(MagicSubType.Soldier);
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -1063,7 +1063,7 @@ public interface MagicTargetFilter {
     MagicTargetFilter TARGET_NON_ZOMBIE_YOU_CONTROL = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
             return target.getController() == player &&
-                    ((MagicPermanent)target).isCreature() &&
+                    target.isCreature() &&
                     !((MagicPermanent)target).hasSubType(MagicSubType.Zombie);
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -1074,7 +1074,7 @@ public interface MagicTargetFilter {
     MagicTargetFilter TARGET_ZOMBIE_YOU_CONTROL = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
             return target.getController() == player &&
-                    ((MagicPermanent)target).isCreature() &&
+                    target.isCreature() &&
                     ((MagicPermanent)target).hasSubType(MagicSubType.Zombie);
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -1084,7 +1084,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_ZOMBIE = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            return ((MagicPermanent)target).isCreature() &&
+            return target.isCreature() &&
                     ((MagicPermanent)target).hasSubType(MagicSubType.Zombie);
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -1095,7 +1095,7 @@ public interface MagicTargetFilter {
     MagicTargetFilter TARGET_KOR_YOU_CONTROL=new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
             return target.getController()==player && 
-                   ((MagicPermanent)target).isCreature() && 
+                   target.isCreature() &&
                    ((MagicPermanent)target).hasSubType(MagicSubType.Kor);
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -1106,7 +1106,7 @@ public interface MagicTargetFilter {
     MagicTargetFilter TARGET_WOLF_YOU_CONTROL = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
             return target.getController() == player && 
-                   ((MagicPermanent)target).isCreature() && 
+                   target.isCreature() &&
                    ((MagicPermanent)target).hasSubType(MagicSubType.Wolf);
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -1116,7 +1116,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_SLIVER = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            return ((MagicPermanent)target).isCreature() && 
+            return target.isCreature() &&
                    ((MagicPermanent)target).hasSubType(MagicSubType.Sliver);
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -1126,7 +1126,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_ELF = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            return ((MagicPermanent)target).isCreature() && 
+            return target.isCreature() &&
                    ((MagicPermanent)target).hasSubType(MagicSubType.Elf);
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -1137,7 +1137,7 @@ public interface MagicTargetFilter {
     MagicTargetFilter TARGET_ELF_YOU_CONTROL = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
             return target.getController() == player && 
-                   ((MagicPermanent)target).isCreature() && 
+                   target.isCreature() &&
                    ((MagicPermanent)target).hasSubType(MagicSubType.Elf);
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -1148,7 +1148,7 @@ public interface MagicTargetFilter {
     MagicTargetFilter TARGET_ALLY_YOU_CONTROL = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
             return target.getController() == player && 
-                   ((MagicPermanent)target).isCreature() && 
+                   target.isCreature() &&
                    ((MagicPermanent)target).hasSubType(MagicSubType.Ally);
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -1169,7 +1169,7 @@ public interface MagicTargetFilter {
     MagicTargetFilter TARGET_FAERIE_CREATURE_YOU_CONTROL = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
             return target.getController() == player && 
-                   ((MagicPermanent)target).isCreature() && 
+                   target.isCreature() &&
                    ((MagicPermanent)target).hasSubType(MagicSubType.Faerie);
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -1180,7 +1180,7 @@ public interface MagicTargetFilter {
     MagicTargetFilter TARGET_SPIRIT_YOU_CONTROL = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
             return target.getController() == player && 
-                   ((MagicPermanent)target).isCreature() && 
+                   target.isCreature() &&
                    ((MagicPermanent)target).hasSubType(MagicSubType.Spirit);
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -1191,7 +1191,7 @@ public interface MagicTargetFilter {
     MagicTargetFilter TARGET_MODULAR_CREATURE_YOU_CONTROL = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
             return target.getController() == player && 
-                   ((MagicPermanent)target).isCreature() && 
+                   target.isCreature() &&
                    ((MagicPermanent)target).hasAbility(MagicAbility.Modular);
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -1202,7 +1202,7 @@ public interface MagicTargetFilter {
     MagicTargetFilter TARGET_PLANT_YOU_CONTROL = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
             return target.getController() == player && 
-                   ((MagicPermanent)target).isCreature() && 
+                   target.isCreature() &&
                    ((MagicPermanent)target).hasSubType(MagicSubType.Plant);
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -1212,7 +1212,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_CREATURE_YOUR_OPPONENT_CONTROLS=new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            return target.getController()!=player&&((MagicPermanent)target).isCreature();
+            return target.getController()!=player&& target.isCreature();
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType==MagicTargetType.Permanent;
@@ -1516,7 +1516,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_CREATURE_CARD_FROM_GRAVEYARD=new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            return ((MagicCard)target).getCardDefinition().isCreature();
+            return target.getCardDefinition().isCreature();
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType==MagicTargetType.Graveyard;
@@ -1525,7 +1525,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_CREATURE_CARD_WITH_INFECT_FROM_GRAVEYARD = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            final MagicCardDefinition cardDefinition = ((MagicCard)target).getCardDefinition();
+            final MagicCardDefinition cardDefinition = target.getCardDefinition();
             return cardDefinition.isCreature() &&
                     cardDefinition.hasAbility(MagicAbility.Infect);
         }
@@ -1536,7 +1536,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_PERMANENT_CARD_FROM_GRAVEYARD = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            return !((MagicCard)target).getCardDefinition().isSpell();
+            return !target.getCardDefinition().isSpell();
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType == MagicTargetType.Graveyard;
@@ -1545,7 +1545,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD=new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            final MagicCardDefinition cardDefinition = ((MagicCard)target).getCardDefinition();
+            final MagicCardDefinition cardDefinition = target.getCardDefinition();
             return cardDefinition.getConvertedCost() <= 3 && !cardDefinition.isSpell();
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -1555,7 +1555,7 @@ public interface MagicTargetFilter {
 
     MagicTargetFilter TARGET_CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD=new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            return ((MagicCard)target).getCardDefinition().isCreature();
+            return target.getCardDefinition().isCreature();
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType==MagicTargetType.OpponentsGraveyard;
@@ -1564,7 +1564,7 @@ public interface MagicTargetFilter {
 
     MagicTargetFilter TARGET_INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD=new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            final MagicCardDefinition cardDefinition=((MagicCard)target).getCardDefinition();
+            final MagicCardDefinition cardDefinition= target.getCardDefinition();
             return cardDefinition.hasType(MagicType.Instant)||cardDefinition.hasType(MagicType.Sorcery);
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -1574,7 +1574,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD=new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            final MagicCardDefinition cardDefinition=((MagicCard)target).getCardDefinition();
+            final MagicCardDefinition cardDefinition= target.getCardDefinition();
             return cardDefinition.hasType(MagicType.Instant)||cardDefinition.hasType(MagicType.Sorcery);
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -1584,7 +1584,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_ENCHANTMENT_CARD_FROM_GRAVEYARD = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            return ((MagicCard)target).getCardDefinition().hasType(MagicType.Enchantment);
+            return target.getCardDefinition().hasType(MagicType.Enchantment);
         }
         public boolean acceptType(final MagicTargetType targetType) {    
             return targetType == MagicTargetType.Graveyard;
@@ -1593,7 +1593,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_ARTIFACT_CARD_FROM_GRAVEYARD = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            return ((MagicCard)target).getCardDefinition().hasType(MagicType.Artifact);
+            return target.getCardDefinition().hasType(MagicType.Artifact);
         }
         public boolean acceptType(final MagicTargetType targetType) {    
             return targetType == MagicTargetType.Graveyard;
@@ -1602,7 +1602,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS=new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            return ((MagicCard)target).getCardDefinition().isCreature();
+            return target.getCardDefinition().isCreature();
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType==MagicTargetType.Graveyard||targetType==MagicTargetType.OpponentsGraveyard;
@@ -1611,7 +1611,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_ENCHANTMENT_CARD_FROM_ALL_GRAVEYARDS=new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            return ((MagicCard)target).getCardDefinition().isEnchantment();
+            return target.getCardDefinition().isEnchantment();
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType==MagicTargetType.Graveyard||targetType==MagicTargetType.OpponentsGraveyard;
@@ -1620,7 +1620,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_INSTANT_CARD_FROM_ALL_GRAVEYARDS=new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            return ((MagicCard)target).getCardDefinition().isInstant();
+            return target.getCardDefinition().isInstant();
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType==MagicTargetType.Graveyard||targetType==MagicTargetType.OpponentsGraveyard;
@@ -1629,7 +1629,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_SORCERY_CARD_FROM_ALL_GRAVEYARDS=new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            return ((MagicCard)target).getCardDefinition().isSorcery();
+            return target.getCardDefinition().isSorcery();
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType==MagicTargetType.Graveyard||targetType==MagicTargetType.OpponentsGraveyard;
@@ -1638,7 +1638,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_LAND_CARD_FROM_ALL_GRAVEYARDS=new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            return ((MagicCard)target).getCardDefinition().isLand();
+            return target.getCardDefinition().isLand();
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType==MagicTargetType.Graveyard||targetType==MagicTargetType.OpponentsGraveyard;
@@ -1647,7 +1647,7 @@ public interface MagicTargetFilter {
 
     MagicTargetFilter TARGET_ARTIFACT_OR_CREATURE_CARD_FROM_ALL_GRAVEYARDS=new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            final MagicCardDefinition cardDefinition=((MagicCard)target).getCardDefinition();
+            final MagicCardDefinition cardDefinition= target.getCardDefinition();
             return cardDefinition.isCreature()||cardDefinition.isArtifact();
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -1657,7 +1657,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_GOBLIN_CARD_FROM_GRAVEYARD=new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            return ((MagicCard)target).getCardDefinition().hasSubType(MagicSubType.Goblin);
+            return target.getCardDefinition().hasSubType(MagicSubType.Goblin);
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType==MagicTargetType.Graveyard;
@@ -1666,7 +1666,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_ZOMBIE_CARD_FROM_GRAVEYARD = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            return ((MagicCard)target).getCardDefinition().hasSubType(MagicSubType.Zombie);
+            return target.getCardDefinition().hasSubType(MagicSubType.Zombie);
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType == MagicTargetType.Graveyard;
@@ -1675,7 +1675,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_SPIRIT_CARD_FROM_GRAVEYARD = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            return ((MagicCard)target).getCardDefinition().hasSubType(MagicSubType.Spirit);
+            return target.getCardDefinition().hasSubType(MagicSubType.Spirit);
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType == MagicTargetType.Graveyard;
@@ -1684,7 +1684,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_HUMAN_CARD_FROM_GRAVEYARD = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            return ((MagicCard)target).getCardDefinition().hasSubType(MagicSubType.Human);
+            return target.getCardDefinition().hasSubType(MagicSubType.Human);
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType == MagicTargetType.Graveyard;
@@ -1702,7 +1702,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_CREATURE_CARD_FROM_HAND = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            return ((MagicCard)target).getCardDefinition().isCreature();
+            return target.getCardDefinition().isCreature();
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType == MagicTargetType.Hand;
@@ -1711,7 +1711,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_GREEN_CREATURE_CARD_FROM_HAND = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            final MagicCardDefinition cardDefinition = ((MagicCard)target).getCardDefinition();
+            final MagicCardDefinition cardDefinition = target.getCardDefinition();
             return cardDefinition.isCreature() && MagicColor.Green.hasColor(cardDefinition.getColorFlags());
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -1721,7 +1721,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_MULTICOLOR_CREATURE_CARD_FROM_HAND = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            final MagicCardDefinition cardDefinition = ((MagicCard)target).getCardDefinition();
+            final MagicCardDefinition cardDefinition = target.getCardDefinition();
             return cardDefinition.isCreature() && MagicColor.isMulti(cardDefinition.getColorFlags());
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -1731,7 +1731,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_BASIC_LAND_CARD_FROM_HAND = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            final MagicCardDefinition cardDefinition = ((MagicCard)target).getCardDefinition();
+            final MagicCardDefinition cardDefinition = target.getCardDefinition();
             return cardDefinition.isLand()&&cardDefinition.isBasic();
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -1741,7 +1741,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_LAND_CARD_FROM_HAND = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            final MagicCardDefinition cardDefinition = ((MagicCard)target).getCardDefinition();
+            final MagicCardDefinition cardDefinition = target.getCardDefinition();
             return cardDefinition.isLand();
         }    
         public boolean acceptType(final MagicTargetType targetType) {
@@ -1751,7 +1751,7 @@ public interface MagicTargetFilter {
     
     MagicTargetFilter TARGET_GOBLIN_CARD_FROM_HAND = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            final MagicCardDefinition cardDefinition = ((MagicCard)target).getCardDefinition();
+            final MagicCardDefinition cardDefinition = target.getCardDefinition();
             return cardDefinition.hasSubType(MagicSubType.Goblin);
         }    
         public boolean acceptType(final MagicTargetType targetType) {
@@ -1762,7 +1762,7 @@ public interface MagicTargetFilter {
     MagicTargetFilter TARGET_UNPAIRED_CREATURE_YOU_CONTROL = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
             return target.getController() == player && 
-                   ((MagicPermanent)target).isCreature() &&
+                   target.isCreature() &&
                    !((MagicPermanent)target).isPaired();
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -1773,7 +1773,7 @@ public interface MagicTargetFilter {
     MagicTargetFilter TARGET_UNPAIRED_SOULBOND_CREATURE = new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
             return target.getController() == player && 
-                   ((MagicPermanent)target).isCreature() && 
+                   target.isCreature() &&
                    ((MagicPermanent)target).hasAbility(MagicAbility.Soulbond) &&
                    !((MagicPermanent)target).isPaired();
         }
@@ -1795,7 +1795,7 @@ public interface MagicTargetFilter {
 
         @Override
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            return targetFilter.accept(game,player,target)&&((MagicPermanent)target).getId()!=id;
+            return targetFilter.accept(game,player,target)&& target.getId()!=id;
         }
         
         @Override
@@ -1815,7 +1815,7 @@ public interface MagicTargetFilter {
 
         @Override
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            return target.isPermanent() && ((MagicPermanent)target).getId() == id;
+            return target.isPermanent() && target.getId() == id;
         }
         
         @Override
@@ -1894,7 +1894,7 @@ public interface MagicTargetFilter {
 
         @Override
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            return (((MagicPermanent)target).getCardDefinition()==cardDefinition);
+            return (target.getCardDefinition()==cardDefinition);
         }
         
         public boolean acceptType(final MagicTargetType targetType) {

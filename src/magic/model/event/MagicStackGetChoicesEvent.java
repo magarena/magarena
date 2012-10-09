@@ -42,7 +42,7 @@ public class MagicStackGetChoicesEvent extends MagicEvent {
             if (itemOnStack.isSpell()) {
                 // execute spell is cast triggers
                 for (final MagicTrigger<?> trigger : itemOnStack.getSource().getCardDefinition().getSpellIsCastTriggers()) {
-                    game.executeTrigger(trigger,MagicPermanent.NONE,itemOnStack.getSource(),(MagicCardOnStack)itemOnStack);
+                    game.executeTrigger(trigger,MagicPermanent.NONE,itemOnStack.getSource(), itemOnStack);
                 }
                 
                 // execute other spell is cast triggers
