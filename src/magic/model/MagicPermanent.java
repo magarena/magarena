@@ -51,8 +51,8 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             return MagicPlayer.NONE;
         }
         @Override
-        public int getColorFlags() {
-            return 0;
+        public boolean hasColor(final MagicColor color) {
+            return false;
         }
         @Override
         public boolean hasType(final MagicType type) {
@@ -407,9 +407,13 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return !hasState(MagicPermanentState.Tapped);
     }
     
-    @Override
     public int getColorFlags() {
         return cachedColorFlags;
+    }
+
+    @Override
+    public boolean hasColor(final MagicColor color) {
+        return color.hasColor(getColorFlags()); 
     }
         
     public void changeCounters(final MagicCounterType counterType,final int amount) {
@@ -672,72 +676,65 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
     
     private static boolean hasProtectionFrom(final long abilityFlags,final MagicSource source) {
-        
         // Check if there is a protection ability.
-        if ((abilityFlags&MagicAbility.PROTECTION_FLAGS)==0) {
+        if ((abilityFlags & MagicAbility.PROTECTION_FLAGS) == 0) {
             return false;
         }
         
+        // From a color.
+        int numColors = 0;
+        for (final MagicColor color : MagicColor.values()) {
+            if (source.hasColor(color)) {
+                numColors++;
+                if (color.getProtectionAbility().hasAbility(abilityFlags) ||
+                    MagicAbility.ProtectionFromAllColors.hasAbility(abilityFlags)) {
+                    return true;
+                }
+            }
+        }
+        
         // From monocolored.
-        if (//source.getColoredType() == MagicColoredType.MonoColored &&
-            //added to fix bug with Raging Raving creature not able to block
-            //creature with protection from monocolored
-            MagicColor.isMono(source.getColorFlags()) &&
+        if (numColors == 1 &&
             MagicAbility.ProtectionFromMonoColored.hasAbility(abilityFlags)) {
             return true;
         }
-        
-        final int colorFlags=source.getColorFlags();
-        if (colorFlags>0) {
-            // From all colors.
-            if (MagicAbility.ProtectionFromAllColors.hasAbility(abilityFlags)) {
-                return true;
-            }
-            
-            // From a color.
-            for (final MagicColor color : MagicColor.values()) {
-                
-                if (color.hasColor(colorFlags)&&color.getProtectionAbility().hasAbility(abilityFlags)) {
-                    return true;
-                }
-            }
-        }
-                
-        if (source.isPermanent()) {
-            final MagicPermanent sourcePermanent=(MagicPermanent)source;
-            if (sourcePermanent.isCreature()) {
-                // From creatures.
-                if (MagicAbility.ProtectionFromCreatures.hasAbility(abilityFlags)) {
-                    return true;
-                }
-                // From Demons.
-                if (sourcePermanent.hasSubType(MagicSubType.Demon) &&
-                    MagicAbility.ProtectionFromDemons.hasAbility(abilityFlags)) {
-                    return true;
-                }
-                // From Dragons.
-                if (sourcePermanent.hasSubType(MagicSubType.Dragon) &&
-                    MagicAbility.ProtectionFromDragons.hasAbility(abilityFlags)) {
-                    return true;
-                }
-                // From Vampires.
-                if (sourcePermanent.hasSubType(MagicSubType.Vampire) &&
-                    MagicAbility.ProtectionFromVampires.hasAbility(abilityFlags)) {
-                    return true;
-                }
-                // From Werewolves.
-                if (sourcePermanent.hasSubType(MagicSubType.Werewolf) &&
-                    MagicAbility.ProtectionFromWerewolves.hasAbility(abilityFlags)) {
-                    return true;
-                }
-                // From Zombies.
-                if (sourcePermanent.hasSubType(MagicSubType.Zombie) &&
-                    MagicAbility.ProtectionFromZombies.hasAbility(abilityFlags)) {
-                    return true;
-                }
-            }
+
+        if (!source.isCreature()) {
+            return false;
         }
 
+        final MagicPermanent creature = (MagicPermanent)source;
+                
+        // From creatures.
+        if (MagicAbility.ProtectionFromCreatures.hasAbility(abilityFlags)) {
+            return true;
+        }
+        // From Demons.
+        if (creature.hasSubType(MagicSubType.Demon) &&
+            MagicAbility.ProtectionFromDemons.hasAbility(abilityFlags)) {
+            return true;
+        }
+        // From Dragons.
+        if (creature.hasSubType(MagicSubType.Dragon) &&
+            MagicAbility.ProtectionFromDragons.hasAbility(abilityFlags)) {
+            return true;
+        }
+        // From Vampires.
+        if (creature.hasSubType(MagicSubType.Vampire) &&
+            MagicAbility.ProtectionFromVampires.hasAbility(abilityFlags)) {
+            return true;
+        }
+        // From Werewolves.
+        if (creature.hasSubType(MagicSubType.Werewolf) &&
+            MagicAbility.ProtectionFromWerewolves.hasAbility(abilityFlags)) {
+            return true;
+        }
+        // From Zombies.
+        if (creature.hasSubType(MagicSubType.Zombie) &&
+            MagicAbility.ProtectionFromZombies.hasAbility(abilityFlags)) {
+            return true;
+        }
+        
         return false;
     }
     

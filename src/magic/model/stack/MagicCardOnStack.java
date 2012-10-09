@@ -1,6 +1,7 @@
 package magic.model.stack;
 
 import magic.model.MagicAbility;
+import magic.model.MagicColor;
 import magic.model.MagicCard;
 import magic.model.MagicCopyMap;
 import magic.model.MagicGame;
@@ -105,8 +106,8 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
     }
     
     @Override
-    public int getColorFlags() {
-        return getSource().getColorFlags();
+    public boolean hasColor(final MagicColor color) {
+        return getSource().hasColor(color);
     }
     
     @Override

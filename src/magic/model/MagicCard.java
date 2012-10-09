@@ -206,9 +206,13 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
         return true;
     }
     
-    @Override
     public int getColorFlags() {
         return getCardDefinition().getColorFlags();
+    }
+    
+    @Override
+    public boolean hasColor(final MagicColor color) {
+        return color.hasColor(getColorFlags()); 
     }
     
     @Override
