@@ -147,10 +147,10 @@ public enum MagicColor {
 
     public static boolean isMono(final int flag) {
         return flag == Black.getMask() || 
-            flag == Blue.getMask() || 
-            flag == Green.getMask() || 
-            flag == Red.getMask() || 
-            flag == White.getMask();
+               flag == Blue.getMask() || 
+               flag == Green.getMask() || 
+               flag == Red.getMask() || 
+               flag == White.getMask();
     }
 
     private static boolean isColorless(final int flag) {
