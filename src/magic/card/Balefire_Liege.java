@@ -44,9 +44,9 @@ public class Balefire_Liege {
     };
     public static final MagicWhenOtherSpellIsCastTrigger T = new MagicWhenOtherSpellIsCastTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack spell) {
-            return (permanent.isFriend(spell) && 
-                    MagicColor.Red.hasColor(spell.getColorFlags())) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
+            return (permanent.isFriend(cardOnStack) && 
+                    cardOnStack.hasColor(MagicColor.Red)) ?
                 new MagicEvent(
                     permanent,
                     MagicTargetChoice.NEG_TARGET_PLAYER,
@@ -71,9 +71,9 @@ public class Balefire_Liege {
     
     public static final MagicWhenOtherSpellIsCastTrigger T2 = new MagicWhenOtherSpellIsCastTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack spell) {
-            return (permanent.isFriend(spell) && 
-                    MagicColor.White.hasColor(spell.getColorFlags())) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
+            return (permanent.isFriend(cardOnStack) && 
+                    cardOnStack.hasColor(MagicColor.White)) ?
                 new MagicEvent(
                     permanent,
                     this,

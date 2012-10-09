@@ -14,8 +14,8 @@ import magic.model.trigger.MagicWhenOtherSpellIsCastTrigger;
 public class Kraken_s_Eye {
     public static final MagicWhenOtherSpellIsCastTrigger T = new MagicWhenOtherSpellIsCastTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack spell) {
-            return MagicColor.Blue.hasColor(spell.getColorFlags()) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
+            return cardOnStack.hasColor(MagicColor.Blue) ?
                 new MagicEvent(
                     permanent,
                     new MagicSimpleMayChoice(

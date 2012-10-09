@@ -15,12 +15,11 @@ public class Quirion_Dryad {
     public static final MagicWhenOtherSpellIsCastTrigger T = new MagicWhenOtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
-            final int color = cardOnStack.getColorFlags();
             return (permanent.isFriend(cardOnStack) &&
-                    (MagicColor.White.hasColor(color) ||
-                     MagicColor.Blue.hasColor(color)  ||
-                     MagicColor.Black.hasColor(color) ||
-                     MagicColor.Red.hasColor(color))) ?
+                    (cardOnStack.hasColor(MagicColor.White) ||
+                     cardOnStack.hasColor(MagicColor.Blue) ||
+                     cardOnStack.hasColor(MagicColor.Black) ||
+                     cardOnStack.hasColor(MagicColor.Red))) ?
                 new MagicEvent(
                     permanent,
                     this,

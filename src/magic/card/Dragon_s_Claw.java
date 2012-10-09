@@ -13,8 +13,8 @@ import magic.model.trigger.MagicWhenOtherSpellIsCastTrigger;
 public class Dragon_s_Claw {
     public static final MagicWhenOtherSpellIsCastTrigger T = new MagicWhenOtherSpellIsCastTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack spell) {
-            return MagicColor.Red.hasColor(spell.getColorFlags()) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
+            return cardOnStack.hasColor(MagicColor.Red) ?
                 new MagicEvent(
                     permanent,
                     new MagicSimpleMayChoice(

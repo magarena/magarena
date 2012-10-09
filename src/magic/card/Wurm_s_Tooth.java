@@ -14,8 +14,8 @@ import magic.model.trigger.MagicWhenOtherSpellIsCastTrigger;
 public class Wurm_s_Tooth {
     public static final MagicWhenOtherSpellIsCastTrigger T = new MagicWhenOtherSpellIsCastTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack spell) {
-            return (MagicColor.Green.hasColor(spell.getColorFlags())) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
+            return cardOnStack.hasColor(MagicColor.Green) ?
                 new MagicEvent(
                     permanent,
                     new MagicSimpleMayChoice(

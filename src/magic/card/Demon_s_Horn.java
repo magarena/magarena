@@ -14,8 +14,8 @@ import magic.model.trigger.MagicWhenOtherSpellIsCastTrigger;
 public class Demon_s_Horn {
     public static final MagicWhenOtherSpellIsCastTrigger T = new MagicWhenOtherSpellIsCastTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack spell) {
-            return MagicColor.Black.hasColor(spell.getColorFlags()) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
+            return cardOnStack.hasColor(MagicColor.Black) ?
                 new MagicEvent(
                     permanent,
                     new MagicSimpleMayChoice(
