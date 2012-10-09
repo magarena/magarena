@@ -407,7 +407,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return !hasState(MagicPermanentState.Tapped);
     }
     
-    public int getColorFlags() {
+    private int getColorFlags() {
         return cachedColorFlags;
     }
 
