@@ -206,7 +206,7 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
         return true;
     }
     
-    public int getColorFlags() {
+    private int getColorFlags() {
         return getCardDefinition().getColorFlags();
     }
     
