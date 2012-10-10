@@ -16,15 +16,14 @@ public class Kruin_Striker {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
             return (otherPermanent != permanent &&
-                    otherPermanent.getController() == player &&
+                    otherPermanent.isFriend(permanent) &&
                     otherPermanent.isCreature()) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        "SN gets +1/+0 and gains trample until end of turn."):
+                    permanent,
+                    this,
+                    "SN gets +1/+0 and gains trample until end of turn."
+                ):
                 MagicEvent.NONE;
         }
         @Override
@@ -32,7 +31,7 @@ public class Kruin_Striker {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            final MagicPermanent permanent = (MagicPermanent)event.getSource();
+            final MagicPermanent permanent = event.getPermanent();
             game.doAction(new MagicChangeTurnPTAction(permanent,1,0));
             game.doAction(new MagicSetAbilityAction(permanent,MagicAbility.Trample));
         }        
