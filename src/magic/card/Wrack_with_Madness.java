@@ -5,7 +5,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicDealDamageAction;
-import magic.model.action.MagicTargetAction;
+import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
@@ -29,9 +29,8 @@ public class Wrack_with_Madness {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTarget(game,choiceResults,0,new MagicTargetAction() {
-                public void doAction(final MagicTarget target) {
-                    final MagicPermanent creature = (MagicPermanent)target;
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
                     final MagicDamage damage = new MagicDamage(
                             creature,
                             creature,
