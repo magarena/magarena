@@ -90,7 +90,7 @@ public abstract class MagicActivation<T extends MagicSource> implements MagicEve
             return false;
         }
 
-        if (source.isPermanent() && ((MagicPermanent)source).hasState(MagicPermanentState.LosesAllAbilities)) {
+        if (source.isPermanent() && ((MagicPermanent)source).hasState(MagicPermanentState.LosesActivatedAbilities)) {
             return false;
         }
         

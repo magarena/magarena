@@ -66,7 +66,8 @@ public class Turn_to_Frog {
                 final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    game.doAction(new MagicChangeStateAction(creature,MagicPermanentState.LosesAllAbilities,true));
+                    //Does not lose static or triggers
+                    game.doAction(new MagicChangeStateAction(creature,MagicPermanentState.LosesActivatedAbilities,true));
                     game.doAction(new MagicBecomesCreatureAction(creature,PT,AB,ST,C));
                 }
             });
