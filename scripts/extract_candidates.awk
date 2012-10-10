@@ -5,8 +5,12 @@ BEGIN {
 }
 
 FILENAME ~ /mtg-data/ {
-    if ($1 in score && !($1 in ignore)) {
-        found[$1] = 1
+    if ($1 in score) {
+        found[$1] = 1;
+        cnt++
+    }
+
+    if ($1 in found && !($1 in ignore)) {
         print score[$1] "\t"
         print "NOTE:"comment[$1] "\t"
         print "NAME:"$1 "\t"
@@ -15,14 +19,15 @@ FILENAME ~ /mtg-data/ {
             getline
             print $0 "\t"
         }
-        cnt++
         print "\n"
     }
+
     next
 }
 
 FILENAME ~ /unimplementable/ {
     ignore[$1] = 1
+    next
 }
 
 {
