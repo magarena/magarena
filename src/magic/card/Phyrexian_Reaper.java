@@ -20,8 +20,7 @@ public class Phyrexian_Reaper {
 
             final MagicPermanentList plist = new MagicPermanentList();
             for (final MagicPermanent blocker : permanent.getBlockingCreatures()) {
-                final int colorFlags = blocker.getColorFlags();
-                if (MagicColor.Green.hasColor(colorFlags)) {
+                if (blocker.hasColor(MagicColor.Green)) {
                     plist.add(blocker);
                 }
             }

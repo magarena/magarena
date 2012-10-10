@@ -66,8 +66,8 @@ public class Rise_of_the_Hobgoblins {
                     player,
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicPermanent creature : targets) {
-                final int colorFlags=creature.getColorFlags();
-                if (MagicColor.Red.hasColor(colorFlags)||MagicColor.White.hasColor(colorFlags)) {
+                if (creature.hasColor(MagicColor.Red) ||
+                    creature.hasColor(MagicColor.White)) {
                     game.doAction(new MagicSetAbilityAction(creature,MagicAbility.FirstStrike));
                 }
             }

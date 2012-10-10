@@ -13,11 +13,12 @@ import magic.model.event.MagicEvent;
 import magic.model.target.MagicGraveyardTargetPicker;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetHint;
+import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicGraveyardTriggerData;
 import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 
 public class Driver_of_the_Dead {
-    private static final MagicTargetFilter targetFilter = new MagicTargetFilter.MagicCMCTargetFilter(
+    private static final MagicTargetFilter targetFilter = new MagicTargetFilter.MagicCMCTargetFilter<MagicTarget>(
         MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
         MagicTargetFilter.MagicCMCTargetFilter.LESS_THAN_OR_EQUAL,
         2

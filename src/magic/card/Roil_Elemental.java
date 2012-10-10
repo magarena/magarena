@@ -36,8 +36,8 @@ public class Roil_Elemental {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent perm) {
-                        final MagicPermanent source = (MagicPermanent)event.getSource();
-                        final MagicTargetFilter filter = new MagicTargetFilter.MagicPermanentTargetFilter(perm);
+                        final MagicPermanent source = event.getPermanent();
+                        final MagicTargetFilter<MagicPermanent> filter = new MagicTargetFilter.MagicPermanentTargetFilter(perm);
                         final MagicStatic S = new MagicStatic(MagicLayer.Control,filter) {
                                 final int you = source.getController().getIndex();
                                 @Override

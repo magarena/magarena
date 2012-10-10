@@ -19,8 +19,7 @@ public class Deathgazer {
             }
             final MagicPermanentList plist = new MagicPermanentList();
             for (final MagicPermanent blocker : permanent.getBlockingCreatures()) {
-                final int colorFlags = blocker.getColorFlags();
-                if (!MagicColor.Black.hasColor(colorFlags)) {
+                if (!blocker.hasColor(MagicColor.Black)) {
                     plist.add(blocker);
                 }
             }
@@ -55,7 +54,7 @@ public class Deathgazer {
             final MagicPermanent blocked = permanent.getBlockedCreature();
             return (permanent == blocker &&
                     blocked.isValid() &&
-                    !MagicColor.Black.hasColor(blocked.getColorFlags())) ?
+                    !blocked.hasColor(MagicColor.Black)) ?
                 new MagicEvent(
                     permanent,
                     permanent.getController(),

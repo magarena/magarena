@@ -87,7 +87,7 @@ public class Ratchet_Bomb {
             final int amount=source.getCounters(MagicCounterType.Charge);
             final Collection<MagicPermanent> targets=
                 game.filterPermanents(source.getController(), 
-                        new MagicTargetFilter.MagicCMCTargetFilter(
+                        new MagicTargetFilter.MagicCMCTargetFilter<MagicPermanent>(
                             MagicTargetFilter.TARGET_NONLAND_PERMANENT, 
                             MagicTargetFilter.MagicCMCTargetFilter.EQUAL, 
                             amount));

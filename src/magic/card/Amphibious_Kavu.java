@@ -19,9 +19,8 @@ public class Amphibious_Kavu {
             final MagicPermanentList plist = permanent.getBlockingCreatures();
             boolean pump = false;
             for (final MagicPermanent blocker : plist) {
-                final int colorFlags = blocker.getColorFlags();
-                if (MagicColor.Blue.hasColor(colorFlags) ||
-                    MagicColor.Black.hasColor(colorFlags)) {
+                if (blocker.hasColor(MagicColor.Blue) ||
+                    blocker.hasColor(MagicColor.Black)) {
                     pump = true;
                 }
             }
@@ -53,8 +52,8 @@ public class Amphibious_Kavu {
             final MagicPermanent blocked = permanent.getBlockedCreature();
             return (permanent == blocker &&
                     blocked.isValid() &&
-                    (MagicColor.Blue.hasColor(blocked.getColorFlags()) ||
-                    MagicColor.Black.hasColor(blocked.getColorFlags()))) ?
+                    (blocked.hasColor(MagicColor.Blue) ||
+                     blocked.hasColor(MagicColor.Black))) ?
                 new MagicEvent(
                     permanent,
                     this,

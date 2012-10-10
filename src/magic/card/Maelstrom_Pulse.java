@@ -33,7 +33,7 @@ public class Maelstrom_Pulse {
                 final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent targetPermanent) {
-                    final MagicTargetFilter targetFilter = 
+                    final MagicTargetFilter<MagicPermanent> targetFilter = 
                         new MagicTargetFilter.NameTargetFilter(targetPermanent.getName());
                     final Collection<MagicPermanent> targets = 
                         game.filterPermanents(event.getPlayer(),targetFilter);

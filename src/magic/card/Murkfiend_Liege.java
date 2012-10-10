@@ -59,8 +59,9 @@ public class Murkfiend_Liege {
             final Collection<MagicPermanent> targets=
                 game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicPermanent creature : targets) {
-                final int colorFlags=creature.getColorFlags();
-                if (creature.isTapped()&&(MagicColor.Blue.hasColor(colorFlags)||MagicColor.Green.hasColor(colorFlags))) {
+                if (creature.isTapped() && 
+                    (creature.hasColor(MagicColor.Blue) || 
+                     creature.hasColor(MagicColor.Green))) {
                     game.doAction(new MagicUntapAction(creature));
                 }
             }

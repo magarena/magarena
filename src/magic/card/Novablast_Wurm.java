@@ -28,7 +28,7 @@ public class Novablast_Wurm {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicPermanent permanent=event.getPermanent();
-            final MagicTargetFilter targetFilter = 
+            final MagicTargetFilter<MagicPermanent> targetFilter = 
                     new MagicTargetFilter.MagicOtherPermanentTargetFilter(
                     MagicTargetFilter.TARGET_CREATURE,permanent);
             final Collection<MagicPermanent> targets=

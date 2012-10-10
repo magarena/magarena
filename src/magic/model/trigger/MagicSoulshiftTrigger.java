@@ -14,7 +14,7 @@ import magic.model.event.MagicEvent;
 import magic.model.target.MagicGraveyardTargetPicker;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetHint;
-
+import magic.model.target.MagicTarget;
 
 public class MagicSoulshiftTrigger extends MagicWhenPutIntoGraveyardTrigger {
     
@@ -32,7 +32,7 @@ public class MagicSoulshiftTrigger extends MagicWhenPutIntoGraveyardTrigger {
         if (triggerData.fromLocation == MagicLocationType.Play) {
             final MagicPlayer player = permanent.getController();
             final MagicTargetFilter targetFilter =
-                    new MagicTargetFilter.MagicCMCTargetFilter(
+                    new MagicTargetFilter.MagicCMCTargetFilter<MagicTarget>(
                     MagicTargetFilter.TARGET_SPIRIT_CARD_FROM_GRAVEYARD,
                     MagicTargetFilter.MagicCMCTargetFilter.LESS_THAN_OR_EQUAL,
                     cmc);

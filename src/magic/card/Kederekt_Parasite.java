@@ -14,7 +14,7 @@ public class Kederekt_Parasite {
     
     private static boolean controlsRedPermanent(final MagicPlayer player) {
         for (final MagicPermanent permanent : player.getPermanents()) {
-            if (MagicColor.Red.hasColor(permanent.getColorFlags())) {
+            if (permanent.hasColor(MagicColor.Red)) {
                 return true;
             }
         }

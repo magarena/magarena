@@ -19,8 +19,7 @@ public class Phyrexian_Slayer {
             }
             final MagicPermanentList plist = new MagicPermanentList();
             for (final MagicPermanent blocker : permanent.getBlockingCreatures()) {
-                final int colorFlags = blocker.getColorFlags();
-                if (MagicColor.White.hasColor(colorFlags)) {
+                if (blocker.hasColor(MagicColor.White)) {
                     plist.add(blocker);
                 }
             }

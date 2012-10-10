@@ -16,6 +16,7 @@ import magic.model.mstatic.MagicCDA;
 import magic.model.target.MagicGraveyardTargetPicker;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetHint;
+import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicGraveyardTriggerData;
 import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 
@@ -39,7 +40,7 @@ public class Kodama_of_the_Center_Tree {
                 final int cmc = game.filterTargets(player,
                         MagicTargetFilter.TARGET_SPIRIT_YOU_CONTROL).size()+1;
                 final MagicTargetFilter targetFilter =
-                        new MagicTargetFilter.MagicCMCTargetFilter(
+                        new MagicTargetFilter.MagicCMCTargetFilter<MagicTarget>(
                         MagicTargetFilter.TARGET_SPIRIT_CARD_FROM_GRAVEYARD,
                         MagicTargetFilter.MagicCMCTargetFilter.LESS_THAN_OR_EQUAL,
                         cmc);

@@ -23,6 +23,7 @@ import magic.model.event.MagicTiming;
 import magic.model.target.MagicGraveyardTargetPicker;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetHint;
+import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 
 public class AEther_Vial {
@@ -62,7 +63,7 @@ public class AEther_Vial {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             final MagicTargetFilter targetFilter =
-                    new MagicTargetFilter.MagicCMCTargetFilter(
+                    new MagicTargetFilter.MagicCMCTargetFilter<MagicTarget>(
                     MagicTargetFilter.TARGET_CREATURE_CARD_FROM_HAND,
                     MagicTargetFilter.MagicCMCTargetFilter.EQUAL,
                     source.getCounters(MagicCounterType.Charge));

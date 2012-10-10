@@ -47,7 +47,7 @@ public class Treva__the_Renewer {
                 final MagicColor color=(MagicColor)choiceResults[2];
                 final Collection<MagicPermanent> targets=game.filterPermanents(player,MagicTargetFilter.TARGET_PERMANENT);
                 for (final MagicPermanent permanent : targets) {
-                    if (color.hasColor(permanent.getColorFlags())) {
+                    if (permanent.hasColor(color)) {
                         life++;
                     }
                 }                

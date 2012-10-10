@@ -855,12 +855,11 @@ public class MagicGame {
         if (cardDefinition.hasType(MagicType.Legendary) && 
             getCount(cardDefinition.getIndex()) > 1) {
             final String message="Put "+cardDefinition.getName()+" into its owner's graveyard (legend rule).";
-            final MagicTargetFilter targetFilter=new MagicTargetFilter.CardTargetFilter(cardDefinition);
-            final Collection<MagicTarget> targets=filterTargets(permanent.getController(),targetFilter);
-            for (final MagicTarget target : targets) {
-                final MagicPermanent targetPermanent=(MagicPermanent)target;
-                logAppendMessage(targetPermanent.getController(),message);
-                doAction(new MagicRemoveFromPlayAction(targetPermanent,MagicLocationType.Graveyard));
+            final MagicTargetFilter<MagicPermanent> targetFilter=new MagicTargetFilter.CardTargetFilter(cardDefinition);
+            final Collection<MagicPermanent> targets=filterPermanents(permanent.getController(),targetFilter);
+            for (final MagicPermanent target : targets) {
+                logAppendMessage(target.getController(),message);
+                doAction(new MagicRemoveFromPlayAction(target,MagicLocationType.Graveyard));
             }
         }
     }
@@ -956,7 +955,7 @@ public class MagicGame {
    
     private List<MagicPermanent> filterPermanents(
             final MagicPlayer player,
-            final MagicTargetFilter targetFilter,
+            final MagicTargetFilter<MagicPermanent> targetFilter,
             final MagicTargetHint targetHint) {
         final List<MagicPermanent> targets=new ArrayList<MagicPermanent>();
         if (targetFilter.acceptType(MagicTargetType.Permanent)) {
@@ -972,7 +971,7 @@ public class MagicGame {
         return targets;
     }
     
-    public List<MagicPermanent> filterPermanents(final MagicPlayer player,final MagicTargetFilter targetFilter) {
+    public List<MagicPermanent> filterPermanents(final MagicPlayer player,final MagicTargetFilter<MagicPermanent> targetFilter) {
         return filterPermanents(player,targetFilter,MagicTargetHint.None);
     }
 

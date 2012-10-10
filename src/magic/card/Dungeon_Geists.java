@@ -35,9 +35,9 @@ public class Dungeon_Geists {
                 final Object[] choiceResults) {
             event.processTargetPermanent(game, choiceResults, 0, new MagicPermanentAction() {
                 public void doAction(final MagicPermanent perm) {
-                    final MagicPermanent source = (MagicPermanent)event.getSource();
+                    final MagicPermanent source = event.getPermanent();
                     game.doAction(new MagicTapAction(perm, true));
-                    final MagicTargetFilter filter = new MagicTargetFilter.MagicPermanentTargetFilter(perm);
+                    final MagicTargetFilter<MagicPermanent> filter = new MagicTargetFilter.MagicPermanentTargetFilter(perm);
                     final MagicStatic S = new MagicStatic(MagicLayer.Ability,filter) {
                             final int you = source.getController().getIndex();
                             @Override
