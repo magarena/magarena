@@ -68,11 +68,11 @@ public class Seance {
                                 card,
                                 MagicLocationType.Graveyard,
                                 MagicLocationType.Exile));
-                        final MagicAction action = new MagicPlayTokenAction(
+                        final MagicPutIntoPlayAction action = new MagicPlayTokenAction(
                                 player,
                                 card.getCardDefinition());
                         game.doAction(action);
-                        final MagicPermanent permanent = ((MagicPutIntoPlayAction)action).getPermanent();
+                        final MagicPermanent permanent = action.getPermanent();
                         game.doAction(new MagicChangeStateAction(
                                 permanent,
                                 MagicPermanentState.SacrificeAtEndOfTurn,
