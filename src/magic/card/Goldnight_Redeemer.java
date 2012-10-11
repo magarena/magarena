@@ -29,7 +29,7 @@ public class Goldnight_Redeemer {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
-            final int x = player.controlsPermanent((MagicPermanent)event.getSource()) ? 1 : 0;
+            final int x = player.controlsPermanent(event.getPermanent()) ? 1 : 0;
             final int amount = player.getNrOfPermanentsWithType(MagicType.Creature) - x;
             if (amount > 0) {
                 game.doAction(new MagicChangeLifeAction(player,amount * 2));
