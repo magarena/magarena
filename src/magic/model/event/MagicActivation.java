@@ -75,7 +75,7 @@ public abstract class MagicActivation<T extends MagicSource> implements MagicEve
     public final boolean canPlay(
             final MagicGame game,
             final MagicPlayer player,
-            final MagicSource source,
+            final T source,
             final boolean useHints) {
        
         if (useHints && !checkActivationPriority(source)) {
@@ -122,5 +122,5 @@ public abstract class MagicActivation<T extends MagicSource> implements MagicEve
     
     abstract MagicEvent getEvent(final MagicSource source);
     
-    abstract MagicTargetChoice getTargetChoice(final MagicSource source);    
+    abstract MagicTargetChoice getTargetChoice(final T source);    
 }

@@ -60,9 +60,8 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
     };
 
     @Override
-    public final MagicTargetChoice getTargetChoice(final MagicSource source) {
-        // Not the cleanest way to do this by far...
-        return getPermanentEvent((MagicPermanent)source,MagicPayedCost.NO_COST).getTargetChoice();
+    public final MagicTargetChoice getTargetChoice(final MagicPermanent source) {
+        return getPermanentEvent(source,MagicPayedCost.NO_COST).getTargetChoice();
     }
    
     public abstract MagicEvent[] getCostEvent(final MagicPermanent source);
