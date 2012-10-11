@@ -36,9 +36,9 @@ public class Oros__the_Avenger {
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                final Collection<MagicTarget> targets=
-                    game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_NONWHITE_CREATURE);
-                for (final MagicTarget target : targets) {
+                final Collection<MagicPermanent> targets=
+                    game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_NONWHITE_CREATURE);
+                for (final MagicPermanent target : targets) {
                     final MagicDamage damage=new MagicDamage(event.getPermanent(),target,3,false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }

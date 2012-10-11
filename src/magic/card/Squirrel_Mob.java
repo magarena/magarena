@@ -15,7 +15,7 @@ public class Squirrel_Mob {
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
             final MagicGame game = source.getGame();
-            final int size = game.filterTargets(
+            final int size = game.filterPermanents(
                     permanent.getController(),
                     MagicTargetFilter.TARGET_SQUIRREL_CREATURE).size() - 1;
             pt.add(size,size);

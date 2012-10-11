@@ -36,9 +36,9 @@ public class Ronin_Cliffrider {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 final MagicSource source = event.getSource();
                 final MagicPlayer defendingPlayer = event.getPlayer().getOpponent();
-                final Collection<MagicTarget> creatures =
-                        game.filterTargets(defendingPlayer,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-                for (final MagicTarget creature : creatures) {
+                final Collection<MagicPermanent> creatures =
+                        game.filterPermanents(defendingPlayer,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+                for (final MagicPermanent creature : creatures) {
                     final MagicDamage damage = new MagicDamage(source,creature,1,false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }

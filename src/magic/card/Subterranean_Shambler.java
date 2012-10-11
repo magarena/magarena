@@ -33,9 +33,9 @@ public class Subterranean_Shambler {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicSource source = event.getSource();
-            final Collection<MagicTarget> creatures =
-                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING);
-            for (final MagicTarget creature : creatures) {
+            final Collection<MagicPermanent> creatures =
+                game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING);
+            for (final MagicPermanent creature : creatures) {
                 final MagicDamage damage = new MagicDamage(source,creature,1,false);
                 game.doAction(new MagicDealDamageAction(damage));
             }
@@ -61,9 +61,9 @@ public class Subterranean_Shambler {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicSource source = event.getSource();
-            final Collection<MagicTarget> creatures =
-                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING);
-            for (final MagicTarget creature : creatures) {
+            final Collection<MagicPermanent> creatures =
+                game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING);
+            for (final MagicPermanent creature : creatures) {
                 final MagicDamage damage = new MagicDamage(source,creature,1,false);
                 game.doAction(new MagicDealDamageAction(damage));
             }

@@ -11,7 +11,7 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicDamageTargetPicker;
-import magic.model.target.MagicTarget;
+import magic.model.MagicPermanent;
 import magic.model.target.MagicTargetFilter;
 
 import java.util.Collection;
@@ -45,10 +45,10 @@ public class Bonfire_of_the_Damned {
                             amount,
                             false);
                     game.doAction(new MagicDealDamageAction(damage));
-                    final Collection<MagicTarget> targets = game.filterTargets(
+                    final Collection<MagicPermanent> targets = game.filterPermanents(
                             player,
                             MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-                    for (final MagicTarget target : targets) {
+                    for (final MagicPermanent target : targets) {
                         damage = new MagicDamage(
                                 event.getSource(),
                                 target,

@@ -27,7 +27,7 @@ public class Tidewalker {
     public static final MagicWhenComesIntoPlayTrigger T2 = new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-            final int amount = game.filterTargets(player,MagicTargetFilter.TARGET_ISLAND_YOU_CONTROL).size();
+            final int amount = game.filterPermanents(player,MagicTargetFilter.TARGET_ISLAND_YOU_CONTROL).size();
             return (amount > 0) ?
                 new MagicEvent(
                     permanent,

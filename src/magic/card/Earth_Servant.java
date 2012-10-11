@@ -15,8 +15,8 @@ public class Earth_Servant {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
             final MagicGame game = source.getGame();
-            final Collection<MagicTarget> targets =
-                    game.filterTargets(permanent.getController(),MagicTargetFilter.TARGET_MOUNTAIN_YOU_CONTROL);
+            final Collection<MagicPermanent> targets =
+                    game.filterPermanents(permanent.getController(),MagicTargetFilter.TARGET_MOUNTAIN_YOU_CONTROL);
             pt.add(0,targets.size());
         }
     };

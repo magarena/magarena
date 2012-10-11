@@ -502,10 +502,6 @@ public class MagicPlayer implements MagicTarget {
         return currGame.getOpponent(this);
     }
     
-    public List<MagicTarget> filterTargets(final MagicTargetFilter targetFilter) {
-        return currGame.filterTargets(this, targetFilter);
-    }
-    
     @Override
     public boolean isValidTarget(final MagicSource source) {
         final int SPIRIT_OF_THE_HEARTH = CardDefinitions.getCard("Spirit of the Hearth").getIndex();

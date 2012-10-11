@@ -24,7 +24,7 @@ public class Kodama_of_the_Center_Tree {
     public static final MagicCDA CDA = new MagicCDA() {
         @Override
         public void modPowerToughness(final MagicGame game, final MagicPlayer player, final MagicPowerToughness pt) {
-            final int amount = game.filterTargets(player,MagicTargetFilter.TARGET_SPIRIT_YOU_CONTROL).size();
+            final int amount = game.filterPermanents(player,MagicTargetFilter.TARGET_SPIRIT_YOU_CONTROL).size();
             pt.set(amount, amount);
         }
     };
@@ -37,7 +37,7 @@ public class Kodama_of_the_Center_Tree {
                 final MagicGraveyardTriggerData triggerData) {
             if (triggerData.fromLocation == MagicLocationType.Play) {
                 final MagicPlayer player = permanent.getController();
-                final int cmc = game.filterTargets(player,
+                final int cmc = game.filterPermanents(player,
                         MagicTargetFilter.TARGET_SPIRIT_YOU_CONTROL).size()+1;
                 final MagicTargetFilter targetFilter =
                         new MagicTargetFilter.MagicCMCTargetFilter<MagicTarget>(

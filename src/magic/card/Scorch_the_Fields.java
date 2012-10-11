@@ -40,10 +40,10 @@ public class Scorch_the_Fields {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicDestroyAction(permanent));
-                    final Collection<MagicTarget> targets = game.filterTargets(
+                    final Collection<MagicPermanent> targets = game.filterPermanents(
                             event.getPlayer(),
                             MagicTargetFilter.TARGET_HUMAN);
-                    for (final MagicTarget target : targets) {
+                    for (final MagicPermanent target : targets) {
                         final MagicDamage damage = new MagicDamage(
                                 event.getSource(),
                                 target,

@@ -15,10 +15,10 @@ public class Unbreathing_Horde {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-            final MagicTargetFilter targetFilter = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
+            final MagicTargetFilter<MagicPermanent> targetFilter = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
                     MagicTargetFilter.TARGET_ZOMBIE_YOU_CONTROL,permanent);
-            final int amount = game.filterTargets(player,targetFilter).size() +
-                               game.filterTargets(player,MagicTargetFilter.TARGET_ZOMBIE_CARD_FROM_GRAVEYARD).size();
+            final int amount = game.filterPermanents(player,targetFilter).size() +
+                               game.filterCards(player,MagicTargetFilter.TARGET_ZOMBIE_CARD_FROM_GRAVEYARD).size();
             game.doAction(new MagicChangeCountersAction(
                 permanent,
                 MagicCounterType.PlusOne,

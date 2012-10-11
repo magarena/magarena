@@ -6,6 +6,7 @@ import magic.model.MagicLocationType;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPlayer;
+import magic.model.MagicPermanent;
 import magic.model.action.MagicChangeCardDestinationAction;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.choice.MagicBuybackChoice;
@@ -34,9 +35,9 @@ public class Evincar_s_Justice {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            final Collection<MagicTarget> targets = 
-                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE);
-            for (final MagicTarget target : targets) {
+            final Collection<MagicPermanent> targets = 
+                game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE);
+            for (final MagicPermanent target : targets) {
                 final MagicDamage damage = new MagicDamage(event.getSource(),target,2,false);
                 game.doAction(new MagicDealDamageAction(damage));
             }

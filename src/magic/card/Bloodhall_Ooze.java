@@ -16,7 +16,7 @@ public class Bloodhall_Ooze {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             return (permanent.isController(upkeepPlayer) &&
-                    game.filterTargets(
+                    game.filterPermanents(
                         upkeepPlayer,
                         MagicTargetFilter.TARGET_BLACK_PERMANENT_YOU_CONTROL
                     ).size() > 0) ?
@@ -50,7 +50,7 @@ public class Bloodhall_Ooze {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             return (permanent.isController(upkeepPlayer) &&
-                    game.filterTargets(
+                    game.filterPermanents(
                         upkeepPlayer,
                         MagicTargetFilter.TARGET_GREEN_PERMANENT_YOU_CONTROL
                     ).size() > 0) ?

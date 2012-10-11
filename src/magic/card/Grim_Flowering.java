@@ -25,7 +25,7 @@ public class Grim_Flowering {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
-            final int amount = game.filterTargets(
+            final int amount = game.filterCards(
                     player,
                     MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD).size();
             game.doAction(new MagicDrawAction(player,amount));

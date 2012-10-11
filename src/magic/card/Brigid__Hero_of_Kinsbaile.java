@@ -45,9 +45,9 @@ public class Brigid__Hero_of_Kinsbaile {
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     final MagicSource source=event.getSource();
-                    final Collection<MagicTarget> targets=
-                        game.filterTargets(player,MagicTargetFilter.TARGET_ATTACKING_OR_BLOCKING_CREATURE_YOU_CONTROL);
-                    for (final MagicTarget target : targets) {
+                    final Collection<MagicPermanent> targets=
+                        game.filterPermanents(player,MagicTargetFilter.TARGET_ATTACKING_OR_BLOCKING_CREATURE_YOU_CONTROL);
+                    for (final MagicPermanent target : targets) {
                         final MagicDamage damage=new MagicDamage(source,target,2,false);
                         game.doAction(new MagicDealDamageAction(damage));
                     }

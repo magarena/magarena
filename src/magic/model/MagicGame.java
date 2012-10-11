@@ -882,7 +882,7 @@ public class MagicGame {
 
     private List<MagicTarget> filterTargets(
             final MagicPlayer player,
-            final MagicTargetFilter targetFilter,
+            final MagicTargetFilter<MagicTarget> targetFilter,
             final MagicTargetHint targetHint) {
 
         final List<MagicTarget> targets=new ArrayList<MagicTarget>();
@@ -949,7 +949,7 @@ public class MagicGame {
         return targets;
     }
         
-    public List<MagicTarget> filterTargets(final MagicPlayer player,final MagicTargetFilter targetFilter) {
+    public List<MagicTarget> filterTargets(final MagicPlayer player,final MagicTargetFilter<MagicTarget> targetFilter) {
         return filterTargets(player,targetFilter,MagicTargetHint.None);
     }
    

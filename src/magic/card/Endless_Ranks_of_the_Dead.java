@@ -31,8 +31,8 @@ public class Endless_Ranks_of_the_Dead {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
-            final Collection<MagicTarget> targets =
-                    game.filterTargets(player,MagicTargetFilter.TARGET_ZOMBIE_YOU_CONTROL);
+            final Collection<MagicPermanent> targets =
+                    game.filterPermanents(player,MagicTargetFilter.TARGET_ZOMBIE_YOU_CONTROL);
             final int amount = targets.size() / 2;
             for (int count=amount;count>0;count--) {
                 game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Zombie")));;

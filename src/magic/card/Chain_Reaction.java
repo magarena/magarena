@@ -4,11 +4,11 @@ import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicType;
+import magic.model.MagicPermanent;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 
 import java.util.Collection;
@@ -28,9 +28,9 @@ public class Chain_Reaction {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final int amount=game.getNrOfPermanents(MagicType.Creature);
-            final Collection<MagicTarget> targets=
-                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE);
-            for (final MagicTarget target : targets) {
+            final Collection<MagicPermanent> targets=
+                game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE);
+            for (final MagicPermanent target : targets) {
                 final MagicDamage damage=new MagicDamage(event.getSource(),target,amount,false);
                 game.doAction(new MagicDealDamageAction(damage));
             }

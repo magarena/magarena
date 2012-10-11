@@ -27,8 +27,8 @@ public class Goblin_Piledriver {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicPermanent creature=event.getPermanent();
-            final Collection<MagicTarget> targets=
-                game.filterTargets(creature.getController(),MagicTargetFilter.TARGET_ATTACKING_GOBLIN);
+            final Collection<MagicPermanent> targets=
+                game.filterPermanents(creature.getController(),MagicTargetFilter.TARGET_ATTACKING_GOBLIN);
             //excluding itself
             final int power = targets.size() - 1;
             if (power>0) {

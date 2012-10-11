@@ -17,7 +17,7 @@ public class Konda_s_Hatamoto {
         @Override
         public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
             final MagicGame game = source.getGame();
-            return game.filterTargets(permanent.getController(),
+            return game.filterPermanents(permanent.getController(),
                     MagicTargetFilter.TARGET_LEGENDARY_SAMURAI_YOU_CONTROL).size() > 0 ?
                 flags | MagicAbility.Vigilance.getMask() :
                 flags;
@@ -28,8 +28,8 @@ public class Konda_s_Hatamoto {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
             final MagicGame game = source.getGame();
-            final Collection<MagicTarget> targets =
-                    game.filterTargets(permanent.getController(),MagicTargetFilter.TARGET_LEGENDARY_SAMURAI_YOU_CONTROL);
+            final Collection<MagicPermanent> targets =
+                    game.filterPermanents(permanent.getController(),MagicTargetFilter.TARGET_LEGENDARY_SAMURAI_YOU_CONTROL);
             if (targets.size() > 0) {
                 pt.add(1,2);
             }        

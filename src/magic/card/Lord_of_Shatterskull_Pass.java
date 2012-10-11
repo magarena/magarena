@@ -44,9 +44,9 @@ public class Lord_of_Shatterskull_Pass {
                 final Object[] choiceResults) {
             final MagicSource source=event.getPermanent();
             final MagicPlayer defendingPlayer=event.getPlayer().getOpponent();
-            final Collection<MagicTarget> creatures=
-                game.filterTargets(defendingPlayer,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-            for (final MagicTarget creature : creatures) {
+            final Collection<MagicPermanent> creatures=
+                game.filterPermanents(defendingPlayer,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+            for (final MagicPermanent creature : creatures) {
                 final MagicDamage damage=new MagicDamage(source,creature,6,false);
                 game.doAction(new MagicDealDamageAction(damage));
             }

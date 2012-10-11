@@ -3,11 +3,11 @@ package magic.card;
 import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
+import magic.model.MagicPermanent;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 
 import java.util.Collection;
@@ -26,9 +26,9 @@ public class Shadowstorm {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            final Collection<MagicTarget> targets =
-                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_WITH_SHADOW);
-            for (final MagicTarget target : targets) {
+            final Collection<MagicPermanent> targets =
+                game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_WITH_SHADOW);
+            for (final MagicPermanent target : targets) {
                 final MagicDamage damage = new MagicDamage(event.getSource(),target,2,false);
                 game.doAction(new MagicDealDamageAction(damage));
             }

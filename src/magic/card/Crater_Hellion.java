@@ -29,9 +29,9 @@ public class Crater_Hellion {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicSource permanent = event.getPermanent();
-            final Collection<MagicTarget> creatures =
-                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE);
-            for (final MagicTarget creature : creatures) {
+            final Collection<MagicPermanent> creatures =
+                game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE);
+            for (final MagicPermanent creature : creatures) {
                 if (permanent != creature) {
                     final MagicDamage damage=new MagicDamage(permanent,creature,4,false);
                     game.doAction(new MagicDealDamageAction(damage));
