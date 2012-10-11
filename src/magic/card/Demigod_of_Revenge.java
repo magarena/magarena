@@ -33,11 +33,10 @@ public class Demigod_of_Revenge {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            final List<MagicTarget> cards = game.filterTargets(
+            final List<MagicCard> cards = game.filterCards(
                     event.getPlayer(),
                     MagicTargetFilter.TARGET_CARD_FROM_GRAVEYARD);
-            for (final MagicTarget target : cards) {
-                final MagicCard card = (MagicCard)target;
+            for (final MagicCard card : cards) {
                 if (card.getName().equals(event.getSource().getName())) {
                     game.doAction(new MagicReanimateAction(
                         event.getPlayer(),

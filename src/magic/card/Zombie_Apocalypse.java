@@ -35,12 +35,12 @@ public class Zombie_Apocalypse {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
-            final List<MagicTarget> zombies =
-                    game.filterTargets(player,MagicTargetFilter.TARGET_ZOMBIE_CARD_FROM_GRAVEYARD);
-            for (final MagicTarget target : zombies) {
+            final List<MagicCard> zombies =
+                    game.filterCards(player,MagicTargetFilter.TARGET_ZOMBIE_CARD_FROM_GRAVEYARD);
+            for (final MagicCard target : zombies) {
                 game.doAction(new MagicReanimateAction(
                         player,
-                        (MagicCard)target,
+                        target,
                         MagicPlayCardAction.TAPPED));
             }
             final List<MagicPermanent> humans =

@@ -974,6 +974,46 @@ public class MagicGame {
     public List<MagicPermanent> filterPermanents(final MagicPlayer player,final MagicTargetFilter<MagicPermanent> targetFilter) {
         return filterPermanents(player,targetFilter,MagicTargetHint.None);
     }
+    
+    private List<MagicCard> filterCards(
+            final MagicPlayer player,
+            final MagicTargetFilter<MagicCard> targetFilter,
+            final MagicTargetHint targetHint) {
+        final List<MagicCard> targets=new ArrayList<MagicCard>();
+            
+        // Cards in graveyard
+        if (targetFilter.acceptType(MagicTargetType.Graveyard)) {
+            for (final MagicCard targetCard : player.getGraveyard()) {
+                if (targetFilter.accept(this,player,targetCard)) {
+                    targets.add(targetCard);
+                }                
+            }
+        }
+
+        // Cards in opponent's graveyard
+        if (targetFilter.acceptType(MagicTargetType.OpponentsGraveyard)) {
+            for (final MagicCard targetCard : getOpponent(player).getGraveyard()) {
+                if (targetFilter.accept(this,player,targetCard)) {
+                    targets.add(targetCard);
+                }                
+            }
+        }
+        
+        // Cards in hand
+        if (targetFilter.acceptType(MagicTargetType.Hand)) {
+            for (final MagicCard targetCard : player.getHand()) {
+                if (targetFilter.accept(this,player,targetCard)) {
+                    targets.add(targetCard);
+                }                
+            }
+        }
+        
+        return targets;
+    }
+    
+    public List<MagicCard> filterCards(final MagicPlayer player,final MagicTargetFilter<MagicCard> targetFilter) {
+        return filterCards(player,targetFilter,MagicTargetHint.None);
+    }
 
     public boolean hasLegalTargets(
             final MagicPlayer player,

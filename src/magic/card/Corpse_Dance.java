@@ -40,10 +40,10 @@ public class Corpse_Dance {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
-            final List<MagicTarget> targets =
-                    game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD);
+            final List<MagicCard> targets =
+                    game.filterCards(player,MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD);
             if (targets.size() > 0) {
-                final MagicCard card = (MagicCard)targets.get(targets.size()-1);
+                final MagicCard card = targets.get(targets.size()-1);
                 game.doAction(new MagicReanimateAction(
                         player,
                         card,

@@ -21,6 +21,7 @@ public class Rakish_Heir {
             return (damage.isCombat() && 
                     damage.getTarget().isPlayer() &&
                     dmgSource.getController() == player &&
+                    dmgSource.isPermanent() &&
                     ((MagicPermanent)dmgSource).hasSubType(MagicSubType.Vampire)) ?
                 new MagicEvent(
                         permanent,

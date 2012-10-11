@@ -42,12 +42,12 @@ public class Angel_of_Glory_s_Rise {
                         target,
                         MagicLocationType.Exile));
             }        
-            final List<MagicTarget> humans =
-                    game.filterTargets(player,MagicTargetFilter.TARGET_HUMAN_CARD_FROM_GRAVEYARD);
-            for (final MagicTarget target : humans) {
+            final List<MagicCard> humans =
+                    game.filterCards(player,MagicTargetFilter.TARGET_HUMAN_CARD_FROM_GRAVEYARD);
+            for (final MagicCard target : humans) {
                 game.doAction(new MagicReanimateAction(
                         player,
-                        (MagicCard)target,
+                        target,
                         MagicPlayCardAction.NONE));
             }
         }
