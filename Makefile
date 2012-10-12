@@ -97,8 +97,8 @@ cards/existing_tokens_%.txt: $(wildcard release/Magarena/scripts/*.txt)
 cards/existing_%.txt: cards/existing_scripts_%.txt cards/existing_tokens_%.txt
 	join -v1 -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
 
-%_full.txt: %.txt cards/mtg-data.txt
-	awk -f scripts/extract_existing.awk $^ > $@
+%_full.txt: scripts/extract_candidates.awk  %.txt cards/mtg-data.txt
+	awk -f $^ | sed 's/\t/\n/g'  > $@
 
 cards/candidates_full.txt: scripts/extract_candidates.awk cards/scored_by_dec.tsv cards/unimplementable.tsv cards/mtg-data.txt
 	awk -f $^ | sort -rg | sed 's/\t/\n/g' > $@
