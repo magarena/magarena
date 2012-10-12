@@ -23,9 +23,14 @@ public class ArtificialScoringSystem {
         4500,5000,5500,6000,6500, 
         7000,7400,7800,8200,8600, 
         9000,9200,9400,9600,9800, 
-        10000};
+        10000
+    };
     
-    private static final int[] POISON_SCORES={5000,4700,4400,4100,3800,3400,3000,2500,2000,1000,0};
+    private static final int[] POISON_SCORES={
+        5000,4700,4400,4100,3800,
+        3400,3000,2500,2000,1000,
+        0
+    };
 
     private static final int MAX_LIFE=LIFE_SCORES.length-1;
 
