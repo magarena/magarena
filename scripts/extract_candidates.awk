@@ -11,7 +11,7 @@ FILENAME ~ /mtg-data/ {
     }
 
     if ($1 in found && !($1 in ignore)) {
-        print "SCORE:"score[$1] "\t"
+        print score[$1] "\t"
         print "NOTE:"comment[$1] "\t"
         print "NAME:"$1 "\t"
         print "TEXT:" "\t"
