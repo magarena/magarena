@@ -7,6 +7,9 @@ import magic.model.MagicMappable;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
+import magic.model.MagicColor;
+import magic.model.MagicAbility;
+import magic.model.MagicType;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
@@ -154,6 +157,16 @@ public abstract class MagicItemOnStack implements MagicTarget {
     public boolean isValidTarget(final MagicSource aSource) {
         return aSource!=this.source;
     }
+    
+    @Override
+    public boolean hasColor(final MagicColor color) {
+        return source.hasColor(color); 
+    }
+    
+    @Override
+    public boolean hasAbility(final MagicAbility ability) {
+        return source.hasAbility(ability);
+    }
 
     long getItemId() {
         final Object[] CR = choiceResults;
@@ -175,8 +188,12 @@ public abstract class MagicItemOnStack implements MagicTarget {
         };
         return magic.MurmurHash3.hash(keys);
     }
-
+    
     public abstract boolean isSpell();
+
+    public boolean isSpell(MagicType type) {
+        return isSpell() && getCardDefinition().hasType(type);
+    }
 
     public abstract boolean canBeCountered();
 

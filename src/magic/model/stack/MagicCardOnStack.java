@@ -9,12 +9,14 @@ import magic.model.MagicLocationType;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
+import magic.model.MagicType;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicEvent;
 
 import javax.swing.ImageIcon;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Collections;
 
 public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
 
@@ -79,12 +81,12 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
     public int getX() {
         return x;
     }
-
+    
     @Override
     public boolean isSpell() {
         return true;
     }
-    
+
     @Override
     public boolean canBeCountered() {
         return !getCardDefinition().hasAbility(MagicAbility.CannotBeCountered);
@@ -102,21 +104,6 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
     
     @Override
     public Collection<MagicActivation> getActivations() {
-        return getSource().getActivations();
-    }
-    
-    @Override
-    public boolean hasColor(final MagicColor color) {
-        return getSource().hasColor(color);
-    }
-    
-    @Override
-    public boolean hasAbility(final MagicAbility ability) {
-        return getSource().hasAbility(ability);
-    }
-    
-    @Override
-    public boolean isCreature() {
-        return getSource().isCreature();
+        return Collections.emptyList();
     }
 }
