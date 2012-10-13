@@ -5,6 +5,8 @@ import magic.model.MagicCopyMap;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
+import magic.model.MagicAbility;
+import magic.model.MagicColor;
 
 public class MagicTargetNone implements MagicTarget {
 
@@ -44,6 +46,16 @@ public class MagicTargetNone implements MagicTarget {
     
     @Override
     public boolean isPermanent() {
+        return false;
+    }
+    
+    @Override
+    public boolean hasAbility(final MagicAbility ability) {
+        return false;
+    }
+    
+    @Override
+    public boolean hasColor(final MagicColor color) {
         return false;
     }
     
