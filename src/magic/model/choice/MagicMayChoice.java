@@ -31,7 +31,7 @@ public class MagicMayChoice extends MagicChoice {
         super(description);
         this.choices=choices;
 
-        MagicTargetChoice localTargetChoice = MagicTargetChoice.TARGET_NONE;
+        MagicTargetChoice localTargetChoice = MagicTargetChoice.NONE;
         int localManaChoiceResultIndex = -1;
         for (int index=0;index<choices.length;index++) {
             final MagicChoice choice=choices[index];

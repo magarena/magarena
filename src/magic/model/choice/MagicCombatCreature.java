@@ -28,7 +28,7 @@ public class MagicCombatCreature {
         this.score = permanent.getScore();
         final MagicPowerToughness pt = permanent.getPowerToughness();
         lethalDamage = permanent.getLethalDamage(pt.toughness());
-        flags = permanent.getAllAbilityFlags();
+        flags = permanent.getAbilityFlags();
         power = MagicAbility.DoubleStrike.hasAbility(flags) ? 
             pt.getPositivePower() * 2 : 
             pt.getPositivePower();

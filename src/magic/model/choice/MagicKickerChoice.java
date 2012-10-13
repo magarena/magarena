@@ -48,7 +48,7 @@ public class MagicKickerChoice extends MagicChoice {
 
     @Override
     public MagicTargetChoice getTargetChoice() {
-        return (otherChoice instanceof MagicTargetChoice) ? (MagicTargetChoice)otherChoice : MagicTargetChoice.TARGET_NONE;
+        return (otherChoice instanceof MagicTargetChoice) ? (MagicTargetChoice)otherChoice : MagicTargetChoice.NONE;
     }
     
     @Override

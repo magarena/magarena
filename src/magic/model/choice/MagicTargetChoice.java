@@ -18,8 +18,8 @@ import java.util.Map;
 import java.util.Set;
 
 public class MagicTargetChoice extends MagicChoice {
-    public static final MagicTargetChoice TARGET_NONE =
-        new MagicTargetChoice(MagicTargetFilter.ALL,false,MagicTargetHint.None,"nothing") {
+    public static final MagicTargetChoice NONE =
+        new MagicTargetChoice(MagicTargetFilter.NONE,false,MagicTargetHint.None,"nothing") {
             @Override
             public boolean isValid() {
                 return false;

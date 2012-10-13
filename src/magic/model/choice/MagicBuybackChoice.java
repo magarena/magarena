@@ -37,7 +37,7 @@ public class MagicBuybackChoice extends MagicChoice {
     public MagicTargetChoice getTargetChoice() {
         return (otherChoice instanceof MagicTargetChoice) ?
                 (MagicTargetChoice)otherChoice :
-                MagicTargetChoice.TARGET_NONE;
+                MagicTargetChoice.NONE;
     }
     
     @Override

@@ -53,7 +53,7 @@ public abstract class MagicChoice {
     }
     
     public MagicTargetChoice getTargetChoice() {
-        return MagicTargetChoice.TARGET_NONE;
+        return MagicTargetChoice.NONE;
     }
     
     public int getManaChoiceResultIndex() {
