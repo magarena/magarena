@@ -501,11 +501,25 @@ public class MagicPlayer implements MagicTarget {
     public MagicPlayer getOpponent() {
         return currGame.getOpponent(this);
     }
+
+    @Override
+    public boolean hasAbility(final MagicAbility ability) {
+        if (ability == MagicAbility.Hexproof) {
+            final int SPIRIT_OF_THE_HEARTH = CardDefinitions.getCard("Spirit of the Hearth").getIndex();
+            return getCount(SPIRIT_OF_THE_HEARTH) > 0;
+        } else {
+            return false;
+        }
+    }
+    
+    @Override
+    public boolean hasColor(final MagicColor color) {
+        return false;
+    }
     
     @Override
     public boolean isValidTarget(final MagicSource source) {
-        final int SPIRIT_OF_THE_HEARTH = CardDefinitions.getCard("Spirit of the Hearth").getIndex();
-        return source.getController() == this || getCount(SPIRIT_OF_THE_HEARTH) == 0;
+        return source.getController() == this || !hasAbility(MagicAbility.Hexproof);
     }
 
     public void incDrawnCards() {
