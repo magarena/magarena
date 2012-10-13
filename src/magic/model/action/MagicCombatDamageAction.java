@@ -31,9 +31,13 @@ public class MagicCombatDamageAction extends MagicAction {
         this.first = first;
     }
 
-    private boolean dealsCombatDamage(final long flags) {
-        return first ? MagicAbility.FirstStrike.hasAbility(flags) || MagicAbility.DoubleStrike.hasAbility(flags) :
-                      !MagicAbility.FirstStrike.hasAbility(flags) || MagicAbility.DoubleStrike.hasAbility(flags);
+    private boolean dealsCombatDamage(final MagicPermanent blocker) {
+        return first ? 
+            blocker.hasAbility(MagicAbility.FirstStrike) || 
+            blocker.hasAbility(MagicAbility.DoubleStrike) 
+            :
+            !blocker.hasAbility(MagicAbility.FirstStrike) || 
+            blocker.hasAbility(MagicAbility.DoubleStrike);
     }
     
     private void combatDamage(
@@ -51,8 +55,7 @@ public class MagicCombatDamageAction extends MagicAction {
                 for (final MagicPermanent blocker : attacker.getBlockingCreatures()) {
 
                     // Checks if blocker deals first strike or regular combat damage.
-                    final long flags=blocker.getAllAbilityFlags();
-                    if (dealsCombatDamage(flags)) {
+                    if (dealsCombatDamage(blocker)) {
                         final int power=blocker.getPower();
                         // Checks if blocker has power > 0.
                         if (power>0) {
@@ -62,14 +65,13 @@ public class MagicCombatDamageAction extends MagicAction {
                 }
 
                 // Check if attacker deals first strike or regular combat damage.
-                final long flags=attacker.getAllAbilityFlags();
-                if (dealsCombatDamage(flags)) {
+                if (dealsCombatDamage(attacker)) {
                     // Checks if attacker has power > 0.
                     int power=attacker.getPower();
                     if (power>0 && !attacker.hasState(MagicPermanentState.NoCombatDamage)) {
                         if (attacker.hasState(MagicPermanentState.Blocked)) {
                             // Determine what damage must be dealt to each blocker.
-                            final boolean deathtouch=MagicAbility.Deathtouch.hasAbility(flags);
+                            final boolean deathtouch = attacker.hasAbility(MagicAbility.Deathtouch);
                             final MagicPermanentList blockers=attacker.getBlockingCreatures();
                             final int[] attackerDamage=new int[blockers.size()];
                             for (int index=0;power>0&&index<attackerDamage.length;index++) {
@@ -82,7 +84,7 @@ public class MagicCombatDamageAction extends MagicAction {
                             
                             // Check what to do with the remaining damage from attacker.
                             if (power>0) {
-                                if (MagicAbility.Trample.hasAbility(flags)) {
+                                if (attacker.hasAbility(MagicAbility.Trample)) {
                                     combatDamage.add(new MagicDamage(attacker,aDefendingPlayer,power,true));
                                 } else if (attackerDamage.length>0) {
                                     attackerDamage[0]+=power;
