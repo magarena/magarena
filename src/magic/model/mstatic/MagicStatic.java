@@ -34,11 +34,11 @@ public abstract class MagicStatic extends MagicDummyPermanentModifier implements
     }
     
     protected MagicStatic(final MagicLayer aLayer, final boolean aIsUntilEOT) {
-        this(aLayer, MagicTargetFilter.SELF, aIsUntilEOT);
+        this(aLayer, MagicTargetFilter.NONE, aIsUntilEOT);
     }
     
     protected MagicStatic(final MagicLayer aLayer) {
-        this(aLayer, MagicTargetFilter.SELF, false);
+        this(aLayer, MagicTargetFilter.NONE, false);
     }
     
     @Override
@@ -55,7 +55,7 @@ public abstract class MagicStatic extends MagicDummyPermanentModifier implements
     }
 
     public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-        if (filter == MagicTargetFilter.SELF) {
+        if (filter == MagicTargetFilter.NONE) {
             return source == target && condition(game, source, target);
         } else {
             return filter.accept(game, source.getController(), target) && condition(game, source, target);
