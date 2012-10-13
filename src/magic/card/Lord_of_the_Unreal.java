@@ -21,7 +21,7 @@ public class Lord_of_the_Unreal {
         MagicTargetFilter.TARGET_ILLUSION_YOU_CONTROL) {
         @Override
         public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
-            return flags | MagicAbility.CannotBeTheTarget.getMask();
+            return flags | MagicAbility.Hexproof.getMask();
         }
     };
 }

@@ -13,7 +13,7 @@ public class Angelic_Overseer {
             for (final MagicPermanent target : permanent.getController().getPermanents()) {
                 if (target != permanent && target.hasSubType(MagicSubType.Human)) {
                     return flags | 
-                            MagicAbility.CannotBeTheTarget.getMask() |
+                            MagicAbility.Hexproof.getMask() |
                             MagicAbility.Indestructible.getMask();
                 }
             }

@@ -27,7 +27,7 @@ public class Drogskol_Captain {
             MagicTargetFilter.TARGET_SPIRIT_YOU_CONTROL) {
         @Override
         public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
-            return flags | MagicAbility.CannotBeTheTarget.getMask();
+            return flags | MagicAbility.Hexproof.getMask();
         }
         @Override
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {

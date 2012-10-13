@@ -27,7 +27,7 @@ public class Asceticism {
         MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL) {
         @Override
         public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
-            return flags | MagicAbility.CannotBeTheTarget.getMask();
+            return flags | MagicAbility.Hexproof.getMask();
         }
     };
 

@@ -89,7 +89,7 @@ public class Ratchet_Bomb {
                 game.filterPermanents(source.getController(), 
                         new MagicTargetFilter.MagicCMCTargetFilter<MagicPermanent>(
                             MagicTargetFilter.TARGET_NONLAND_PERMANENT, 
-                            MagicTargetFilter.MagicCMCTargetFilter.EQUAL, 
+                            MagicTargetFilter.Operator.EQUAL, 
                             amount));
             game.doAction(new MagicDestroyAction(targets));
         }
