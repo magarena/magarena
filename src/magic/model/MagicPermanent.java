@@ -67,7 +67,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             return false;
         }
         @Override
-        public long getAllAbilityFlags() {
+        public long getAbilityFlags() {
             return 0L;
         }
         @Override
@@ -453,7 +453,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return getPowerToughness().getPositiveToughness();
     }
     
-    public long getAllAbilityFlags() {
+    public long getAbilityFlags() {
         return cachedAbilityFlags;
     }
 
@@ -675,19 +675,14 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         }
     }
     
-    private static boolean hasProtectionFrom(final long abilityFlags,final MagicSource source) {
-        // Check if there is a protection ability.
-        if ((abilityFlags & MagicAbility.PROTECTION_FLAGS) == 0) {
-            return false;
-        }
-        
+    public boolean hasProtectionFrom(final MagicSource source) {
         // From a color.
         int numColors = 0;
         for (final MagicColor color : MagicColor.values()) {
             if (source.hasColor(color)) {
                 numColors++;
-                if (color.getProtectionAbility().hasAbility(abilityFlags) ||
-                    MagicAbility.ProtectionFromAllColors.hasAbility(abilityFlags)) {
+                if (hasAbility(color.getProtectionAbility()) ||
+                    hasAbility(MagicAbility.ProtectionFromAllColors)) {
                     return true;
                 }
             }
@@ -695,7 +690,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         
         // From monocolored.
         if (numColors == 1 &&
-            MagicAbility.ProtectionFromMonoColored.hasAbility(abilityFlags)) {
+            hasAbility(MagicAbility.ProtectionFromMonoColored)) {
             return true;
         }
 
@@ -706,41 +701,36 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         final MagicPermanent creature = (MagicPermanent)source;
                 
         // From creatures.
-        if (MagicAbility.ProtectionFromCreatures.hasAbility(abilityFlags)) {
+        if (hasAbility(MagicAbility.ProtectionFromCreatures)) {
             return true;
         }
         // From Demons.
         if (creature.hasSubType(MagicSubType.Demon) &&
-            MagicAbility.ProtectionFromDemons.hasAbility(abilityFlags)) {
+            hasAbility(MagicAbility.ProtectionFromDemons)) {
             return true;
         }
         // From Dragons.
         if (creature.hasSubType(MagicSubType.Dragon) &&
-            MagicAbility.ProtectionFromDragons.hasAbility(abilityFlags)) {
+            hasAbility(MagicAbility.ProtectionFromDragons)) {
             return true;
         }
         // From Vampires.
         if (creature.hasSubType(MagicSubType.Vampire) &&
-            MagicAbility.ProtectionFromVampires.hasAbility(abilityFlags)) {
+            hasAbility(MagicAbility.ProtectionFromVampires)) {
             return true;
         }
         // From Werewolves.
         if (creature.hasSubType(MagicSubType.Werewolf) &&
-            MagicAbility.ProtectionFromWerewolves.hasAbility(abilityFlags)) {
+            hasAbility(MagicAbility.ProtectionFromWerewolves)) {
             return true;
         }
         // From Zombies.
         if (creature.hasSubType(MagicSubType.Zombie) &&
-            MagicAbility.ProtectionFromZombies.hasAbility(abilityFlags)) {
+            hasAbility(MagicAbility.ProtectionFromZombies)) {
             return true;
         }
         
         return false;
-    }
-    
-    public boolean hasProtectionFrom(final MagicSource source) {
-        final long abilityFlags=getAllAbilityFlags();
-        return hasProtectionFrom(abilityFlags,source);
     }
     
     public boolean canAttack() {
@@ -750,22 +740,30 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             hasState(MagicPermanentState.CannotAttack)) {
             return false;
         }
-        final long flags=getAllAbilityFlags();
-        return !MagicAbility.CannotAttackOrBlock.hasAbility(flags) && !MagicAbility.Defender.hasAbility(flags);
+        return !hasAbility(MagicAbility.CannotAttackOrBlock) && 
+               !hasAbility(MagicAbility.Defender);
     }
     
-    public boolean canBeBlocked(final MagicPlayer player) {
-        final long flags=getAllAbilityFlags();
-        
+    public boolean canBlock() {
+        if (!isCreature() || 
+            isTapped() || 
+            hasState(MagicPermanentState.ExcludeFromCombat)) {
+            return false;
+        }
+        return !hasAbility(MagicAbility.CannotAttackOrBlock) &&
+               !hasAbility(MagicAbility.CannotBlock);
+    }
+    
+    public boolean canBeBlocked(final MagicPlayer defendingPlayer) {
         // Unblockable
-        if (MagicAbility.Unblockable.hasAbility(flags)) {
+        if (hasAbility(MagicAbility.Unblockable)) {
             return false;
         }        
         
         // Landwalk
         for (final MagicColor color : MagicColor.values()) {
-            if (color.getLandwalkAbility().hasAbility(flags) && 
-                player.controlsPermanentWithSubType(color.getLandSubType())) {
+            if (hasAbility(color.getLandwalkAbility()) && 
+                defendingPlayer.controlsPermanentWithSubType(color.getLandSubType())) {
                 return false;
             }
         }
@@ -773,88 +771,79 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return true;
     }
     
-    public boolean canBlock() {
-        if (!isCreature()||isTapped()||hasState(MagicPermanentState.ExcludeFromCombat)) {
-            return false;
-        }
-        final long flags=getAllAbilityFlags();
-        return !MagicAbility.CannotAttackOrBlock.hasAbility(flags)&&!MagicAbility.CannotBlock.hasAbility(flags);
-    }
-    
     public boolean canBlock(final MagicPermanent attacker) {
-        final long attackerFlags=attacker.getAllAbilityFlags();
-
         // Fear and Intimidate
         if (!isArtifact()) {
-            final int colorFlags=getColorFlags();
-            if (MagicAbility.Fear.hasAbility(attackerFlags)&&!MagicColor.Black.hasColor(colorFlags)) {
+            if (attacker.hasAbility(MagicAbility.Fear) &&
+                !hasColor(MagicColor.Black)) {
                 return false;
             }
-            if (MagicAbility.Intimidate.hasAbility(attackerFlags)&&((colorFlags&attacker.getColorFlags())==0)) {
+            if (attacker.hasAbility(MagicAbility.Intimidate) &&
+                ((getColorFlags() & attacker.getColorFlags())==0)) {
                 return false;
             }
         }
         
         // Shadow
-        final long blockerFlags = getAllAbilityFlags();
-        if (MagicAbility.Shadow.hasAbility(attackerFlags)) {
-            if (!MagicAbility.Shadow.hasAbility(blockerFlags) &&
-                !MagicAbility.CanBlockShadow.hasAbility(blockerFlags)) {
+        if (attacker.hasAbility(MagicAbility.Shadow)) {
+            if (!hasAbility(MagicAbility.Shadow) &&
+                !hasAbility(MagicAbility.CanBlockShadow)) {
                 return false;
             }
-        } else if (MagicAbility.Shadow.hasAbility(blockerFlags)){
+        } else if (hasAbility(MagicAbility.Shadow)) {
             return false;
         }
         
-        // Flying and Reach
-        final boolean blockerFlying=MagicAbility.Flying.hasAbility(blockerFlags);
-        if (blockerFlying) {
-            if (MagicAbility.CannotBeBlockedByFlying.hasAbility(attackerFlags)) {
-                return false;
-            }
-        } else {
-            if (MagicAbility.CannotBeBlockedExceptWithFlying.hasAbility(attackerFlags)) {
-                return false;
-            }
+        // Flying
+        if (attacker.hasAbility(MagicAbility.CannotBeBlockedByFlying) &&
+            hasAbility(MagicAbility.Flying)) {
+            return false;
         }
-        if (MagicAbility.Flying.hasAbility(attackerFlags)) {
-            if (!blockerFlying&&!MagicAbility.Reach.hasAbility(blockerFlags)) {
-                return false;
-            }
-        } else {
-            if (MagicAbility.CannotBlockWithoutFlying.hasAbility(blockerFlags)) {
-                return false;
-            }
+            
+        if (attacker.hasAbility(MagicAbility.CannotBeBlockedExceptWithFlying) &&
+            !hasAbility(MagicAbility.Flying)) {
+            return false;
         }
-        if (MagicAbility.CannotBeBlockedExceptWithFlyingOrReach.hasAbility(attackerFlags)) {
-            if (!MagicAbility.Flying.hasAbility(blockerFlags) && !MagicAbility.Reach.hasAbility(blockerFlags)) {
-                return false;
-            }
+        
+        if (!attacker.hasAbility(MagicAbility.Flying) &&
+            hasAbility(MagicAbility.CannotBlockWithoutFlying)) {
+            return false;
+        }
+
+        // Reach
+        if (attacker.hasAbility(MagicAbility.Flying) &&
+            !hasAbility(MagicAbility.Flying) &&
+            !hasAbility(MagicAbility.Reach)) {
+            return false;
+        } 
+
+        if (attacker.hasAbility(MagicAbility.CannotBeBlockedExceptWithFlyingOrReach) &&
+            !hasAbility(MagicAbility.Flying) &&
+            !hasAbility(MagicAbility.Reach)) {
+            return false;
         }
         
         // Subtype
-        if (MagicAbility.CannotBeBlockedByHumans.hasAbility(attackerFlags)) {
-            if (this.hasSubType(MagicSubType.Human)) {
-                return false;
-            }
+        if (attacker.hasAbility(MagicAbility.CannotBeBlockedByHumans) &&
+            hasSubType(MagicSubType.Human)) {
+            return false;
         }
         
-        if(MagicAbility.CannotBeBlockedExceptBySliver.hasAbility(attackerFlags)) {
-            if (!this.hasSubType(MagicSubType.Sliver)) {
-                return false;
-            }
+        if (attacker.hasAbility(MagicAbility.CannotBeBlockedExceptBySliver) &&
+            !hasSubType(MagicSubType.Sliver)) {
+            return false;
         }
 
         // Can't be blocked by a color
         for (final MagicColor color : MagicColor.values()) {
-            if (color.hasColor(this.getColorFlags()) &&
-                color.getCannotBeBlockedByAbility().hasAbility(attackerFlags)) {
+            if (attacker.hasAbility(color.getCannotBeBlockedByAbility()) &&
+                hasColor(color)) {
                 return false;
             }
         }
              
         // Protection
-        return !hasProtectionFrom(attackerFlags,this);
+        return !attacker.hasProtectionFrom(this);
     }
         
     public MagicPermanent getEquippedCreature() {
@@ -970,30 +959,28 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     
     @Override
     public boolean isValidTarget(final MagicSource source) {
-        final long flags=getAllAbilityFlags();
-
         // Can't be the target of spells or abilities.
-        if (MagicAbility.Shroud.hasAbility(flags)) {
+        if (hasAbility(MagicAbility.Shroud)) {
             return false;
         }
 
         // Can't be the target of spells or abilities your opponents controls.
-        if (MagicAbility.CannotBeTheTarget.hasAbility(flags) && source.getController() != getController()) {
+        if (hasAbility(MagicAbility.Hexproof) && source.getController() != getController()) {
             return false;
         }
 
         // Can't be the target of spells or abilities player 0 controls.
-        if (MagicAbility.CannotBeTheTarget0.hasAbility(flags) && source.getController().getIndex() == 0) {
+        if (hasAbility(MagicAbility.CannotBeTheTarget0) && source.getController().getIndex() == 0) {
             return false;
         }
         
         // Can't be the target of spells or abilities player 1 controls.
-        if (MagicAbility.CannotBeTheTarget1.hasAbility(flags) && source.getController().getIndex() == 1) {
+        if (hasAbility(MagicAbility.CannotBeTheTarget1) && source.getController().getIndex() == 1) {
             return false;
         }
 
         // Protection.
-        return !hasProtectionFrom(flags,source);
+        return !hasProtectionFrom(source);
     }
 
     @Override
