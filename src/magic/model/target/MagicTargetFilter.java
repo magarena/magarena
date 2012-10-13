@@ -16,7 +16,7 @@ import magic.model.stack.MagicItemOnStack;
 
 public interface MagicTargetFilter<T extends MagicTarget> {
     
-    MagicTargetFilter<MagicPermanent> SELF = new MagicTargetFilter<MagicPermanent>() {
+    MagicTargetFilter<MagicPermanent> NONE = new MagicTargetFilter<MagicPermanent>() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return false;
         }
@@ -25,17 +25,8 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }
     };
     
-    MagicTargetFilter<MagicTarget> ALL = new MagicTargetFilter<MagicTarget>() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-            return true;
-        }
-        public boolean acceptType(final MagicTargetType targetType) {
-            return true;
-        }
-    };
-    
-    MagicTargetFilter<MagicTarget> TARGET_SPELL=new MagicTargetFilter<MagicTarget>() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+    MagicTargetFilter<MagicItemOnStack> TARGET_SPELL=new MagicTargetFilter<MagicItemOnStack>() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack target) {
             return target.isSpell();
         }
         public boolean acceptType(final MagicTargetType targetType) {
@@ -44,12 +35,10 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     };
     
     MagicTargetFilter<MagicItemOnStack> TARGET_RED_GREEN_SPELL=new MagicTargetFilter<MagicItemOnStack>() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack cardOnStack) {
-            if (cardOnStack.isSpell()) { 
-                final int colors = cardOnStack.getCardDefinition().getColorFlags();
-                return MagicColor.Red.hasColor(colors) || MagicColor.Green.hasColor(colors);
-            }
-            return false;
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            return itemOnStack.isSpell() &&
+                   (itemOnStack.hasColor(MagicColor.Red) ||
+                    itemOnStack.hasColor(MagicColor.Green));
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType==MagicTargetType.Stack;
@@ -57,12 +46,8 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     };
 
     MagicTargetFilter<MagicItemOnStack> TARGET_CREATURE_SPELL=new MagicTargetFilter<MagicItemOnStack>() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack cardOnStack) {
-            if (cardOnStack.isSpell()) {
-                final MagicCardDefinition card=cardOnStack.getCardDefinition();
-                return card.isCreature();
-            }
-            return false;
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            return itemOnStack.isSpell(MagicType.Creature);
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType==MagicTargetType.Stack;
@@ -70,12 +55,9 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     };
 
     MagicTargetFilter<MagicItemOnStack> TARGET_NONCREATURE_SPELL=new MagicTargetFilter<MagicItemOnStack>() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack cardOnStack) {
-            if (cardOnStack.isSpell()) {
-                final MagicCardDefinition card=cardOnStack.getCardDefinition();
-                return !card.isCreature();
-            }
-            return false;
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            return itemOnStack.isSpell() &&
+                   !itemOnStack.isSpell(MagicType.Creature);
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType==MagicTargetType.Stack;
@@ -83,12 +65,9 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     };
         
     MagicTargetFilter<MagicItemOnStack> TARGET_INSTANT_OR_SORCERY_SPELL=new MagicTargetFilter<MagicItemOnStack>() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack cardOnStack) {
-            if (cardOnStack.isSpell()) {
-                final MagicCardDefinition card=cardOnStack.getCardDefinition();
-                return card.hasType(MagicType.Instant)||card.hasType(MagicType.Sorcery);
-            }
-            return false;
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            return itemOnStack.isSpell(MagicType.Instant) ||
+                   itemOnStack.isSpell(MagicType.Sorcery);
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType==MagicTargetType.Stack;
@@ -96,12 +75,8 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     };
     
     MagicTargetFilter<MagicItemOnStack> TARGET_ARTIFACT_SPELL = new MagicTargetFilter<MagicItemOnStack>() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack cardOnStack) {
-            if (cardOnStack.isSpell()) {
-                final MagicCardDefinition card = cardOnStack.getCardDefinition();
-                return card.isArtifact();
-            }
-            return false;
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            return itemOnStack.isSpell(MagicType.Artifact);
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType == MagicTargetType.Stack;
@@ -1281,18 +1256,33 @@ public interface MagicTargetFilter<T extends MagicTarget> {
             return targetFilter.acceptType(targetType);
         }        
     };
-    
-    public static final class MagicCMCTargetFilter<T extends MagicTarget> implements MagicTargetFilter<T> {
 
-        public static final int LESS_THAN = 1;
-        public static final int LESS_THAN_OR_EQUAL = 2;
-        public static final int EQUAL = 3;
+    enum Operator {
+        LESS_THAN() {
+            public boolean cmp(final int v1, final int v2) {
+                return v1 < v2;
+            }
+        },
+        LESS_THAN_OR_EQUAL() {
+            public boolean cmp(final int v1, final int v2) {
+                return v1 <= v2;
+            }
+        },
+        EQUAL() {
+            public boolean cmp(final int v1, final int v2) {
+                return v1 == v2;
+            }
+        };
+        public abstract boolean cmp(final int v1, final int v2);
+    }
+
+    public static final class MagicCMCTargetFilter<T extends MagicTarget> implements MagicTargetFilter<T> {
         
         private final MagicTargetFilter<T> targetFilter;
-        private final int operator;
+        private final Operator operator;
         private final int cmc;
 
-        public MagicCMCTargetFilter(final MagicTargetFilter<T> targetFilter,final int operator,final int cmc) {    
+        public MagicCMCTargetFilter(final MagicTargetFilter<T> targetFilter,final Operator operator,final int cmc) {    
             this.targetFilter = targetFilter;
             this.operator = operator;
             this.cmc = cmc;
@@ -1300,20 +1290,8 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         
         @Override
         public boolean accept(final MagicGame game,final MagicPlayer player,final T target) {
-            final MagicCardDefinition cDef = target.getCardDefinition();
-            boolean accept = false;
-            switch (operator) {
-            case LESS_THAN:
-                accept = cDef.getConvertedCost() < cmc;
-                break;
-            case LESS_THAN_OR_EQUAL:
-                accept = cDef.getConvertedCost() <= cmc;
-                break;
-            case EQUAL:
-                accept = cDef.hasConvertedCost(cmc);
-                break;
-            }
-            return targetFilter.accept(game,player,target) && accept;
+            return targetFilter.accept(game,player,target) && 
+                   operator.cmp(target.getCardDefinition().getConvertedCost(), cmc) ;
         }
 
         @Override
