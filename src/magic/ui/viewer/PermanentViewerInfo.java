@@ -79,7 +79,7 @@ public class PermanentViewerInfo {
         icon=permanent.getIcon();
         index=permanent.getCard().getImageIndex();
         powerToughness=getPowerToughness(permanent);
-        abilityFlags=permanent.getAllAbilityFlags();
+        abilityFlags=permanent.getAbilityFlags();
         chargeCounters=permanent.getCounters(MagicCounterType.Charge);
         text=getText(game,permanent,abilityFlags);
         damage=permanent.getDamage();
