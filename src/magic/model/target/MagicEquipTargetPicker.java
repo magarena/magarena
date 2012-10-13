@@ -31,7 +31,7 @@ public class MagicEquipTargetPicker extends MagicTargetPicker<MagicPermanent> {
         int penalty = permanent.isEquipped() ? 3 : 0;
         
         // penalty when there is an overlap between abilities.
-        if ((permanent.getAllAbilityFlags() & givenAbilityFlags) != 0) {
+        if ((permanent.getAbilityFlags() & givenAbilityFlags) != 0) {
             penalty+=6;
         }
         

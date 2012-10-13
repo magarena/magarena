@@ -17,8 +17,8 @@ public class MagicShroudTargetPicker extends MagicTargetPicker<MagicPermanent> {
     
     @Override
     protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
-        final long flags=permanent.getAllAbilityFlags();
-        if (MagicAbility.Shroud.hasAbility(flags)||MagicAbility.CannotBeTheTarget.hasAbility(flags)) {
+        if (permanent.hasAbility(MagicAbility.Shroud) || 
+            permanent.hasAbility(MagicAbility.Hexproof)) {
             return 0;
         }
         return permanent.getScore();

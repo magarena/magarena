@@ -22,7 +22,7 @@ public class MagicNoCombatTargetPicker extends MagicTargetPicker<MagicPermanent>
     protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
         // For each turn.
         if (forever) {
-            final long flags=permanent.getAllAbilityFlags();
+            final long flags=permanent.getAbilityFlags();
             final MagicPowerToughness pt=permanent.getPowerToughness();
             int score=pt.power()*2+pt.toughness();
             if (!MagicAbility.CannotAttackOrBlock.hasAbility(flags)) {            

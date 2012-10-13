@@ -17,7 +17,7 @@ public class MagicTrampleTargetPicker extends MagicTargetPicker<MagicPermanent> 
 
     @Override
     protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
-        final long flags=permanent.getAllAbilityFlags();
+        final long flags=permanent.getAbilityFlags();
         if (!MagicAbility.Trample.hasAbility(flags)&&
             !MagicAbility.Defender.hasAbility(flags)&&
             !MagicAbility.CannotAttackOrBlock.hasAbility(flags)) {

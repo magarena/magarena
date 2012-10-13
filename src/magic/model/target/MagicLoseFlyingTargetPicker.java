@@ -20,7 +20,7 @@ public class MagicLoseFlyingTargetPicker extends MagicTargetPicker<MagicPermanen
             final MagicGame game,
             final MagicPlayer player,
             final MagicPermanent permanent) {
-        final long flags = permanent.getAllAbilityFlags();
+        final long flags = permanent.getAbilityFlags();
         if (MagicAbility.CannotAttackOrBlock.hasAbility(flags)) {
             return 0;
         }

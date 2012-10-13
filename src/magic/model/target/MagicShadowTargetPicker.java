@@ -14,7 +14,7 @@ public class MagicShadowTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
     @Override
     protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
-        final long flags = permanent.getAllAbilityFlags();
+        final long flags = permanent.getAbilityFlags();
 
         // no score for ability overlap, not being able to deal combat damage,
         // being blocked or blocking

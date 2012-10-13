@@ -20,7 +20,7 @@ public class MagicFirstStrikeTargetPicker extends MagicTargetPicker<MagicPermane
         if (permanent.getController()!=player) {
             return -50-permanent.getPower();
         }
-        final long flags=permanent.getAllAbilityFlags();
+        final long flags=permanent.getAbilityFlags();
         if (MagicAbility.FirstStrike.hasAbility(flags)||MagicAbility.DoubleStrike.hasAbility(flags)) {
             return 0;
         }
