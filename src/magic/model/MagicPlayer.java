@@ -519,7 +519,11 @@ public class MagicPlayer implements MagicTarget {
     
     @Override
     public boolean isValidTarget(final MagicSource source) {
-        return source.getController() == this || !hasAbility(MagicAbility.Hexproof);
+        // Can't be the target of spells or abilities your opponents controls.
+        if (hasAbility(MagicAbility.Hexproof) && source.getController() != this) {
+            return false;
+        }
+        return true;
     }
 
     public void incDrawnCards() {
