@@ -76,7 +76,7 @@ public enum MagicAbility {
     CannotBeBlockedByWhite("can't be blocked by white creatures",10),
     CanBlockShadow("can block creatures with shadow",10),
     CannotBeCountered("can't be countered",0),
-    CannotBeTheTarget("hexproof",80),
+    Hexproof("hexproof",80),
     CannotBeTheTarget0("can't be the target of spells or abilities your opponents control",80),
     CannotBeTheTarget1("can't be the target of spells or abilities your opponents control",80),
     Deathtouch("deathtouch",60),
