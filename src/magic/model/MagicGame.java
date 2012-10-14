@@ -1024,9 +1024,10 @@ public class MagicGame {
         }
     
         final Collection<MagicTarget> targets = filterTargets(
-                player,
-                targetChoice.getTargetFilter(),
-                targetChoice.getTargetHint(hints));
+            player,
+            targetChoice.getTargetFilter(),
+            targetChoice.getTargetHint(hints)
+        );
 
         if (!targetChoice.isTargeted()) {
             return !targets.isEmpty();
@@ -1037,6 +1038,7 @@ public class MagicGame {
                 return true;
             }
         }
+
         return false;
     }
     
