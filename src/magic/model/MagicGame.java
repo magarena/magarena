@@ -946,10 +946,6 @@ public class MagicGame {
                 
         return targets;
     }
-        
-    private List<MagicTarget> filterTargets(final MagicPlayer player,final MagicTargetFilter<MagicTarget> targetFilter) {
-        return filterTargets(player,targetFilter,MagicTargetHint.None);
-    }
    
     private List<MagicPermanent> filterPermanents(
             final MagicPlayer player,
