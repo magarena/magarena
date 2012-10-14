@@ -878,8 +878,7 @@ public class MagicGame {
         return mappedData;
     }
     
-    // ***** TARGETS *****
-
+    @SuppressWarnings("unchecked")
     private List<MagicTarget> filterTargets(
             final MagicPlayer player,
             final MagicTargetFilter targetFilter,
