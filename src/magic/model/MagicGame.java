@@ -1018,6 +1018,10 @@ public class MagicGame {
             final MagicSource source,
             final MagicTargetChoice targetChoice,
             final boolean hints) {
+
+        if (targetChoice == MagicTargetChoice.NONE) {
+            return true;
+        }
     
         final Collection<MagicTarget> targets = filterTargets(
                 player,
