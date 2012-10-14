@@ -29,11 +29,7 @@ public class MagicTools {
         for (final String filename : filenames) {
             final String name = filename.substring(0,filename.length()-4);
             final MagicCardDefinition cardDefinition = CardDefinitions.getCard(name);
-            if (cardDefinition == null) {
-                System.out.println(">"+name);
-            } else {
-                remaining.remove(cardDefinition);
-            }
+            remaining.remove(cardDefinition);
         }
         for (final MagicCardDefinition card : remaining) {
             if (!card.isToken()) {
