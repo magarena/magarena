@@ -39,8 +39,8 @@ public class Kodama_of_the_Center_Tree {
                 final MagicPlayer player = permanent.getController();
                 final int cmc = game.filterPermanents(player,
                         MagicTargetFilter.TARGET_SPIRIT_YOU_CONTROL).size()+1;
-                final MagicTargetFilter<MagicTarget> targetFilter =
-                        new MagicTargetFilter.MagicCMCTargetFilter<MagicTarget>(
+                final MagicTargetFilter<MagicCard> targetFilter =
+                        new MagicTargetFilter.MagicCMCTargetFilter<MagicCard>(
                             MagicTargetFilter.TARGET_SPIRIT_CARD_FROM_GRAVEYARD,
                             MagicTargetFilter.Operator.LESS_THAN_OR_EQUAL,
                             cmc

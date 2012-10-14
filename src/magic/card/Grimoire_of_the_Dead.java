@@ -105,8 +105,8 @@ public class Grimoire_of_the_Dead {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
-            final Collection<MagicTarget> targets =
-                    game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS);
+            final Collection<MagicCard> targets =
+                    game.filterCards(player,MagicTargetFilter.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS);
             for (final MagicTarget target : targets) {
                 final MagicCard card = (MagicCard) target;
                 if (card.getOwner().getGraveyard().contains(card)) {

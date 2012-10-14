@@ -62,8 +62,8 @@ public class AEther_Vial {
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicTargetFilter<MagicTarget> targetFilter =
-                    new MagicTargetFilter.MagicCMCTargetFilter<MagicTarget>(
+            final MagicTargetFilter<MagicCard> targetFilter =
+                    new MagicTargetFilter.MagicCMCTargetFilter<MagicCard>(
                         MagicTargetFilter.TARGET_CREATURE_CARD_FROM_HAND,
                         MagicTargetFilter.Operator.EQUAL,
                         source.getCounters(MagicCounterType.Charge)
