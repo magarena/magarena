@@ -49,10 +49,7 @@ nulls: $(MAG)
 	grep -n "null" -r src/ > $@
 	flip -u $@
 
-warnings_H.txt: warnings.txt
-	grep "(H)" $^ | grep -v System.out | grep -v System.err | grep -v EXS > $@
-
-warnings.txt: $(MAG)
+findbugs_warnings.txt: $(MAG)
 	~/App/findbugs/bin/findbugs \
 			-textui \
 			-progress \
@@ -62,6 +59,9 @@ warnings.txt: $(MAG)
 			-output $@ \
 			-sourcepath src \
 			build
+
+build_warnings.txt:
+	make clean all > $@
 
 cards/legacy_banned.txt:
 	curl https://www.wizards.com/Magic/TCG/Resources.aspx?x=judge/resources/sfrlegacy | grep nodec | grep -o ">[^<]*</a" | sed 's/>//g;s/<\/a//;' > $@
