@@ -134,10 +134,6 @@ public class MCTSAI implements MagicAI {
         int MAX_TIME = 1000 * startGame.getArtificialLevel(scorePlayer.getIndex());
         int MAX_SIM = Integer.MAX_VALUE;
         
-        //assert enabled: max sim is 1000
-        assert (MAX_TIME = Integer.MAX_VALUE) != 1;
-        assert (MAX_SIM = 1000) != 1;
-        
         final long START_TIME = System.currentTimeMillis();
        
         //root represents the start state
