@@ -43,6 +43,11 @@ code_to_remove: $(MAG)
 
 casts: $(MAG)
 	grep -n "([A-Za-z]\+)[A-Za-z]\+" -r src/ > $@
+	flip -u $@
+
+nulls: $(MAG)
+	grep -n "null" -r src/ > $@
+	flip -u $@
 
 warnings_H.txt: warnings.txt
 	grep "(H)" $^ | grep -v System.out | grep -v System.err | grep -v EXS > $@
