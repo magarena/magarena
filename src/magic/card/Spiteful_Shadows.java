@@ -15,7 +15,6 @@ public class Spiteful_Shadows {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicDamage damage) {
-            final MagicPlayer player = permanent.getController();
             final int amount = damage.getDealtAmount();
             final MagicPermanent enchantedCreature = permanent.getEnchantedCreature();
             return (damage.getTarget() == enchantedCreature) ?

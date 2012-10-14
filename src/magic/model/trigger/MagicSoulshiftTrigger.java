@@ -30,7 +30,6 @@ public class MagicSoulshiftTrigger extends MagicWhenPutIntoGraveyardTrigger {
             final MagicPermanent permanent,
             final MagicGraveyardTriggerData triggerData) {
         if (triggerData.fromLocation == MagicLocationType.Play) {
-            final MagicPlayer player = permanent.getController();
             final MagicTargetFilter<MagicCard> targetFilter =
                     new MagicTargetFilter.MagicCMCTargetFilter<MagicCard>(
                         MagicTargetFilter.TARGET_SPIRIT_CARD_FROM_GRAVEYARD,

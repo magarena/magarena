@@ -46,9 +46,6 @@ public class HandGraveyardExileViewer extends JPanel implements ChangeListener {
         }
         add(cardPanel,BorderLayout.CENTER);
 
-        final String playerName = viewerInfo.getPlayerInfo(false).name;
-        final String opponentName = viewerInfo.getPlayerInfo(true).name;
-
         tabSelector = new TabSelector(this, false);
         for (final CardListViewer viewer : viewers) {
             tabSelector.addTab(theme.getIcon(viewer.getIcon()), viewer.getTitle());

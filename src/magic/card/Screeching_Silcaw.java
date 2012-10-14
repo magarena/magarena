@@ -16,7 +16,6 @@ public class Screeching_Silcaw {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicTarget target = damage.getTarget();
-            final MagicPlayer player = permanent.getController();
             return (MagicCondition.METALCRAFT_CONDITION.accept(permanent) &&
                     permanent == damage.getSource() && 
                     target.isPlayer() && 

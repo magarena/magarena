@@ -17,7 +17,6 @@ public class Shriekgeist {
                 final MagicPermanent permanent,
                 final MagicDamage damage) {
             final MagicTarget target = damage.getTarget();
-            final MagicPlayer player = permanent.getController();
             return (permanent == damage.getSource() && 
                     target.isPlayer() && 
                     damage.isCombat()) ?

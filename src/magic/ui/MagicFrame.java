@@ -782,7 +782,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 
         final String[] toExec = {javaBin, "-jar", jarFile.getPath()};
         try { //restart the application 
-            final Process p = Runtime.getRuntime().exec(toExec);
+            Runtime.getRuntime().exec(toExec);
         } catch (final IOException ex) {
             System.err.println(ex.getMessage());
             ex.printStackTrace();
