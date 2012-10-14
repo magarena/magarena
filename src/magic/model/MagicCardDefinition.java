@@ -630,18 +630,22 @@ public class MagicCardDefinition {
 
     public void addTrigger(final MagicWhenSpellIsCastTrigger trigger) {
         spellIsCastTriggers.add(trigger);
+        numTriggers++;
     }
 
     public void addTrigger(final MagicWhenComesIntoPlayTrigger trigger) {
         comeIntoPlayTriggers.add(trigger);
+        numTriggers++;
     }
 
     public void addTrigger(final MagicWhenPutIntoGraveyardTrigger trigger) {
         putIntoGraveyardTriggers.add(trigger);
+        numTriggers++;
     }
 
     public void addTrigger(final MagicWhenDrawnTrigger trigger) {
         drawnTriggers.add(trigger);
+        numTriggers++;
     }
         
     public void addTrigger(final MagicTrigger<?> trigger) {
