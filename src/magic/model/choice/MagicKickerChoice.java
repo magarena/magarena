@@ -100,7 +100,7 @@ public class MagicKickerChoice extends MagicChoice {
             final MagicPlayer player,
             final MagicSource source) {
 
-        final Collection<Object> otherOptions;
+        final Collection<?> otherOptions;
         if (otherChoice.isValid()) {
             otherOptions=otherChoice.getArtificialOptions(game,event,player,source);            
         } else {

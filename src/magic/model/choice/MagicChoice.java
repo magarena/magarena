@@ -70,7 +70,7 @@ public abstract class MagicChoice {
     }
     
     /** Gets the available options for AI. */
-    abstract Collection<Object> getArtificialOptions(
+    abstract Collection<?> getArtificialOptions(
             final MagicGame game,final MagicEvent event,final MagicPlayer player,final MagicSource source);
     
     /** Gets the choice results for AI. */
@@ -79,7 +79,7 @@ public abstract class MagicChoice {
             final MagicEvent event,
             final MagicPlayer player,
             final MagicSource source) {
-        final Collection<Object> options=getArtificialOptions(game,event,player,source);
+        final Collection<?> options=getArtificialOptions(game,event,player,source);
         final int size=options.size();
         if (size == 0) {
             throw new RuntimeException("no artificial choice result");

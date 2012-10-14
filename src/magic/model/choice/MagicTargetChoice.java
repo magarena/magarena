@@ -426,16 +426,16 @@ public class MagicTargetChoice extends MagicChoice {
     }
     
     @Override
-    @SuppressWarnings("unchecked")
-    final Collection<Object> getArtificialOptions(
+    final Collection<?> getArtificialOptions(
             final MagicGame game,
             final MagicEvent event,
             final MagicPlayer player,
             final MagicSource source) {
-        final Collection<Object> targets=game.getLegalTargets(player,source,this,targetHint);
-        return (game.getFastChoices()) ?
-            event.getTargetPicker().pickTargets(game,player,targets):
-            targets;
+        Collection<?> targets = game.getLegalTargets(player,source,this,targetHint);
+        if (game.getFastChoices()) {
+            targets = event.getTargetPicker().pickTargets(game,player,targets);
+        }
+        return targets;
     }
 
     @Override

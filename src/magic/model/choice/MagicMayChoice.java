@@ -89,7 +89,7 @@ public class MagicMayChoice extends MagicChoice {
         final Object[] noChoiceResults=new Object[nrOfChoiceResults];
         noChoiceResults[0]=NO_CHOICE;
         
-        final List<Collection<Object>> optionsList=new ArrayList<Collection<Object>>(nrOfChoices);
+        final List<Collection<?>> optionsList=new ArrayList<Collection<?>>(nrOfChoices);
         for (int index=0;index<nrOfChoices;index++) {
             if (!choices[index].hasOptions(game,player,source,true)) {
                 return Collections.singletonList(noChoiceResults);                
@@ -102,10 +102,10 @@ public class MagicMayChoice extends MagicChoice {
         yesChoiceResults[0]=YES_CHOICE;        
 
         int index=0;
-        final LinkedList<Iterator<Object>> iterators=new LinkedList<Iterator<Object>>();
+        final LinkedList<Iterator<?>> iterators=new LinkedList<Iterator<?>>();
         iterators.addLast(optionsList.get(0).iterator());
         while (index>=0) {
-            final Iterator<Object> iterator=iterators.getLast();
+            final Iterator<?> iterator=iterators.getLast();
             if (iterator.hasNext()) {
                 index++;
                 yesChoiceResults[index]=iterator.next(); // Starts from index 1.
