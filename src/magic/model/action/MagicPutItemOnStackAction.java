@@ -8,6 +8,7 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.stack.MagicItemOnStack;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenSpellIsCastTrigger;
 
 public class MagicPutItemOnStackAction extends MagicAction {
 
@@ -27,8 +28,13 @@ public class MagicPutItemOnStackAction extends MagicAction {
         if (itemOnStack.isSpell()) {
             if (!itemOnStack.hasChoices()) {
                 // execute spell is cast triggers
-                for (final MagicTrigger<?> trigger : itemOnStack.getSource().getCardDefinition().getSpellIsCastTriggers()) {
-                    game.executeTrigger(trigger,MagicPermanent.NONE,itemOnStack.getSource(), itemOnStack);
+                for (final MagicWhenSpellIsCastTrigger trigger : itemOnStack.getSource().getCardDefinition().getSpellIsCastTriggers()) {
+                    game.executeTrigger(
+                        trigger,
+                        MagicPermanent.NONE,
+                        itemOnStack.getSource(),
+                        (MagicCardOnStack)itemOnStack
+                    );
                 }
                 
                 // execute other spell is cast triggers

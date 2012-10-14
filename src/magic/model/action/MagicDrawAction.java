@@ -40,7 +40,7 @@ public class MagicDrawAction extends MagicAction {
             player.incDrawnCards();
             drawnCards.add(card);
             score+=ArtificialScoringSystem.getCardScore(card);
-            for (final MagicTrigger<?> trigger : card.getCardDefinition().getDrawnTriggers()) {
+            for (final MagicTrigger<MagicCard> trigger : card.getCardDefinition().getDrawnTriggers()) {
                 game.executeTrigger(trigger,MagicPermanent.NONE,card,card);
             }
             game.executeTrigger(MagicTriggerType.WhenOtherDrawn,card);

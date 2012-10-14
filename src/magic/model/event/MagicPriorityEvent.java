@@ -56,9 +56,7 @@ public class MagicPriorityEvent extends MagicEvent {
                 // reset activation/priority of opponent
                 player.getOpponent().getActivationPriority().clear();
 
-                @SuppressWarnings("unchecked")
-                final MagicEvent[] events = activation.getCostEvent(source);
-                for (final MagicEvent costEvent : events) {
+                for (final MagicEvent costEvent : activation.getCostEvent(source)) {
                     game.addEvent(costEvent);
                 }
 

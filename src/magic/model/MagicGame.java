@@ -878,10 +878,9 @@ public class MagicGame {
         return mappedData;
     }
     
-    @SuppressWarnings("unchecked")
     private List<MagicTarget> filterTargets(
             final MagicPlayer player,
-            final MagicTargetFilter targetFilter,
+            final MagicTargetFilter<MagicTarget> targetFilter,
             final MagicTargetHint targetHint) {
 
         final List<MagicTarget> targets=new ArrayList<MagicTarget>();
@@ -1062,7 +1061,7 @@ public class MagicGame {
         return options;
     }
     
-    private boolean filterTarget(final MagicPlayer player,final MagicTargetFilter targetFilter,final MagicTarget target) {
+    private boolean filterTarget(final MagicPlayer player,final MagicTargetFilter<MagicTarget> targetFilter,final MagicTarget target) {
         if (target==null || 
             target==MagicTargetNone.getInstance() || 
             !targetFilter.accept(this,player,target)) {
@@ -1225,20 +1224,18 @@ public class MagicGame {
         return triggers.remove(permanent);
     }
 
-    public void executeTrigger(
-            final MagicTrigger trigger,
+    public <T> void executeTrigger(
+            final MagicTrigger<T> trigger,
             final MagicPermanent permanent,
             final MagicSource source,
-            final Object data) {
+            final T data) {
     
-        @SuppressWarnings("unchecked")
-        final boolean accept = trigger.accept(permanent, data);
-        if (!accept) {
+        if (!trigger.accept(permanent, data)) {
             return;
         }
         
-        @SuppressWarnings("unchecked")
         final MagicEvent event=trigger.executeTrigger(this,permanent,data);
+        
         if (!event.isValid()) {
             return;
         }
@@ -1254,7 +1251,7 @@ public class MagicGame {
         }
     }
     
-    public void executeTrigger(final MagicTriggerType type,final Object data) {
+    public <T> void executeTrigger(final MagicTriggerType type,final T data) {
         final SortedSet<MagicPermanentTrigger> typeTriggers=triggers.get(type);
         if (typeTriggers.isEmpty()) {
             return;
@@ -1262,8 +1259,9 @@ public class MagicGame {
         
         final Collection<MagicPermanentTrigger> copiedTriggers=new ArrayList<MagicPermanentTrigger>(typeTriggers);
         for (final MagicPermanentTrigger permanentTrigger : copiedTriggers) {
-            final MagicPermanent permanent=permanentTrigger.getPermanent();
-            executeTrigger(permanentTrigger.getTrigger(),permanent,permanent,data);
+            final MagicPermanent permanent = permanentTrigger.getPermanent();
+            final MagicTrigger<T> trigger = (MagicTrigger<T>)permanentTrigger.getTrigger();
+            executeTrigger(trigger,permanent,permanent,data);
         }
     }
 }

@@ -15,6 +15,12 @@ import magic.model.event.MagicTiming;
 import magic.model.mstatic.MagicCDA;
 import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicTrigger;
+import magic.model.trigger.MagicWhenSpellIsCastTrigger;
+import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
+import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
+import magic.model.trigger.MagicWhenDrawnTrigger;
+import magic.model.trigger.MagicGraveyardTriggerData ;
+import magic.model.stack.MagicItemOnStack;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 
@@ -87,10 +93,10 @@ public class MagicCardDefinition {
     private final Collection<MagicCDA> CDAs = new ArrayList<MagicCDA>();
     private final Collection<MagicTrigger<?>> triggers = new ArrayList<MagicTrigger<?>>();
     private final Collection<MagicStatic> statics=new ArrayList<MagicStatic>();
-    private final Collection<MagicTrigger<?>> comeIntoPlayTriggers = new ArrayList<MagicTrigger<?>>();
-    private final Collection<MagicTrigger<?>> spellIsCastTriggers = new ArrayList<MagicTrigger<?>>();
-    private final Collection<MagicTrigger<?>> drawnTriggers = new ArrayList<MagicTrigger<?>>();
-    private final Collection<MagicTrigger<?>> putIntoGraveyardTriggers = new ArrayList<MagicTrigger<?>>();
+    private final Collection<MagicWhenComesIntoPlayTrigger> comeIntoPlayTriggers = new ArrayList<MagicWhenComesIntoPlayTrigger>();
+    private final Collection<MagicWhenSpellIsCastTrigger> spellIsCastTriggers = new ArrayList<MagicWhenSpellIsCastTrigger>();
+    private final Collection<MagicWhenDrawnTrigger> drawnTriggers = new ArrayList<MagicWhenDrawnTrigger>();
+    private final Collection<MagicWhenPutIntoGraveyardTrigger> putIntoGraveyardTriggers = new ArrayList<MagicWhenPutIntoGraveyardTrigger>();
     private final Collection<MagicActivation> activations=new ArrayList<MagicActivation>();
     private final Collection<MagicManaActivation> manaActivations=new ArrayList<MagicManaActivation>();
     private boolean excludeManaOrCombat;
@@ -621,25 +627,25 @@ public class MagicCardDefinition {
         CDAs.add(cda);
         numCDAs++;
     }
+
+    public void addTrigger(final MagicWhenSpellIsCastTrigger trigger) {
+        spellIsCastTriggers.add(trigger);
+    }
+
+    public void addTrigger(final MagicWhenComesIntoPlayTrigger trigger) {
+        comeIntoPlayTriggers.add(trigger);
+    }
+
+    public void addTrigger(final MagicWhenPutIntoGraveyardTrigger trigger) {
+        putIntoGraveyardTriggers.add(trigger);
+    }
+
+    public void addTrigger(final MagicWhenDrawnTrigger trigger) {
+        drawnTriggers.add(trigger);
+    }
         
     public void addTrigger(final MagicTrigger<?> trigger) {
-        switch (trigger.getType()) {
-            case WhenSpellIsCast:
-                spellIsCastTriggers.add(trigger);
-                break;
-            case WhenComesIntoPlay:
-                comeIntoPlayTriggers.add(trigger);
-                break;
-            case WhenPutIntoGraveyard:
-                putIntoGraveyardTriggers.add(trigger);
-                break;
-            case WhenDrawn:
-                drawnTriggers.add(trigger);
-                break;
-            default:
-                triggers.add(trigger);
-                break;
-        }
+        triggers.add(trigger);
         numTriggers++;
     }
     
@@ -656,19 +662,19 @@ public class MagicCardDefinition {
         return statics;
     }
     
-    public Collection<MagicTrigger<?>> getSpellIsCastTriggers() {
+    public Collection<MagicWhenSpellIsCastTrigger> getSpellIsCastTriggers() {
         return spellIsCastTriggers;
     }
     
-    public Collection<MagicTrigger<?>> getComeIntoPlayTriggers() {
+    public Collection<MagicWhenComesIntoPlayTrigger> getComeIntoPlayTriggers() {
         return comeIntoPlayTriggers;
     }
     
-    public Collection<MagicTrigger<?>> getPutIntoGraveyardTriggers() {
+    public Collection<MagicWhenPutIntoGraveyardTrigger> getPutIntoGraveyardTriggers() {
         return putIntoGraveyardTriggers;
     }
     
-    public Collection<MagicTrigger<?>> getDrawnTriggers() {
+    public Collection<MagicWhenDrawnTrigger> getDrawnTriggers() {
         return drawnTriggers;
     }
     

@@ -6,6 +6,7 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.stack.MagicItemOnStack;
 import magic.model.trigger.MagicTrigger;
+import magic.model.trigger.MagicWhenSpellIsCastTrigger;
 import magic.model.trigger.MagicTriggerType;
 
 public class MagicStackGetChoicesEvent extends MagicEvent {
@@ -41,8 +42,13 @@ public class MagicStackGetChoicesEvent extends MagicEvent {
                 
             if (itemOnStack.isSpell()) {
                 // execute spell is cast triggers
-                for (final MagicTrigger<?> trigger : itemOnStack.getSource().getCardDefinition().getSpellIsCastTriggers()) {
-                    game.executeTrigger(trigger,MagicPermanent.NONE,itemOnStack.getSource(), itemOnStack);
+                for (final MagicWhenSpellIsCastTrigger trigger : itemOnStack.getSource().getCardDefinition().getSpellIsCastTriggers()) {
+                    game.executeTrigger(
+                        trigger,
+                        MagicPermanent.NONE,
+                        itemOnStack.getSource(),
+                        (MagicCardOnStack)itemOnStack
+                    );
                 }
                 
                 // execute other spell is cast triggers

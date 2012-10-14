@@ -9,6 +9,7 @@ import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetHint;
 import magic.model.target.MagicTargetNone;
 import magic.model.target.MagicTargetType;
+import magic.model.target.MagicTarget;
 import magic.ui.GameController;
 
 import java.util.Collection;
@@ -369,7 +370,7 @@ public class MagicTargetChoice extends MagicChoice {
             "an unpaired Soulbond creature");
         
     private final String targetDescription;
-    private final MagicTargetFilter targetFilter;
+    private final MagicTargetFilter<MagicTarget> targetFilter;
     private final boolean targeted;
     private final MagicTargetHint targetHint;
     
@@ -399,7 +400,7 @@ public class MagicTargetChoice extends MagicChoice {
         return targetDescription;
     }
 
-    public final MagicTargetFilter getTargetFilter() {
+    public final MagicTargetFilter<MagicTarget> getTargetFilter() {
         return targetFilter;
     }
     
