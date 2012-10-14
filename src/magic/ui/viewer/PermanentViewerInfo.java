@@ -191,8 +191,7 @@ public class PermanentViewerInfo {
         boolean first=true;
 
         // Sub types.
-        final EnumSet<MagicSubType> subTypeFlags=permanent.getSubTypeFlags();
-        if (subTypeFlags.equals(MagicSubType.ALL_CREATURES)) {
+        if (permanent.hasAllCreatureTypes()) {
             if (first) {
                 first = false;
                 if (textBuffer.length() > 0) {
@@ -204,7 +203,7 @@ public class PermanentViewerInfo {
             textBuffer.append("All creature types");
         } else {
             for (final MagicSubType subType : MagicSubType.values()) {
-                if (subType.hasSubType(subTypeFlags)) {
+                if (permanent.hasSubType(subType)) {
                     if (first) {
                         first=false;
                         if (textBuffer.length()>0) {
@@ -258,9 +257,8 @@ public class PermanentViewerInfo {
     }
     
     private static MagicColor getManaColor(final MagicPermanent permanent) {
-        final EnumSet<MagicSubType> flags=permanent.getSubTypeFlags();
         for (final MagicColor color : MagicColor.values()) {
-            if (color.getLandSubType().hasSubType(flags)) {
+            if (permanent.hasSubType(color.getLandSubType())) {
                 return color;
             }
         }

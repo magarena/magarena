@@ -59,10 +59,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             return false;
         }
         @Override
-        public EnumSet<MagicSubType> getSubTypeFlags() {
-            return EnumSet.noneOf(MagicSubType.class);
-        }
-        @Override
         public boolean hasSubType(final MagicSubType type) {
             return false;
         }
@@ -433,12 +429,12 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return false;
     }
     
-    public EnumSet<MagicSubType> getSubTypeFlags() {
-        return cachedSubTypeFlags;
+    public boolean hasSubType(final MagicSubType subType) {
+        return subType.hasSubType(cachedSubTypeFlags);
     }
 
-    public boolean hasSubType(final MagicSubType subType) {
-        return subType.hasSubType(getSubTypeFlags());
+    public boolean hasAllCreatureTypes() {
+        return cachedSubTypeFlags.equals(MagicSubType.ALL_CREATURES);
     }
 
     public MagicPowerToughness getPowerToughness() {
