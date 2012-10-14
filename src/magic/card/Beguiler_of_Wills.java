@@ -34,7 +34,7 @@ public class Beguiler_of_Wills {
         public MagicEvent getPermanentEvent(
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
-            final MagicTargetFilter targetFilter = new MagicTargetFilter.MagicPowerTargetFilter(
+            final MagicTargetFilter<MagicPermanent> targetFilter = new MagicTargetFilter.MagicPowerTargetFilter(
                 MagicTargetFilter.TARGET_CREATURE,
                 source.getController().getNrOfPermanentsWithType(MagicType.Creature)
             );

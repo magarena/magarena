@@ -16,7 +16,7 @@ public class Oblivion_Ring {
     public static final MagicWhenComesIntoPlayTrigger T1 = new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-            final MagicTargetFilter targetFilter = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
+            final MagicTargetFilter<MagicPermanent> targetFilter = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
                     MagicTargetFilter.TARGET_NONLAND_PERMANENT,permanent);
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
                     targetFilter,true,MagicTargetHint.None,"another target nonland permanent to exile");

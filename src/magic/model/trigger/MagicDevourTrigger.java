@@ -30,7 +30,7 @@ public class MagicDevourTrigger extends MagicWhenComesIntoPlayTrigger {
             final MagicGame game,
             final MagicPermanent perm,
             final MagicPlayer player) {
-        final MagicTargetFilter targetFilter = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
+        final MagicTargetFilter<MagicPermanent> targetFilter = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
                 MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,
                 perm);
         final MagicTargetChoice targetChoice = new MagicTargetChoice(

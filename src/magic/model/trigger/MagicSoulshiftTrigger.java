@@ -31,11 +31,12 @@ public class MagicSoulshiftTrigger extends MagicWhenPutIntoGraveyardTrigger {
             final MagicGraveyardTriggerData triggerData) {
         if (triggerData.fromLocation == MagicLocationType.Play) {
             final MagicPlayer player = permanent.getController();
-            final MagicTargetFilter targetFilter =
+            final MagicTargetFilter<MagicTarget> targetFilter =
                     new MagicTargetFilter.MagicCMCTargetFilter<MagicTarget>(
-                    MagicTargetFilter.TARGET_SPIRIT_CARD_FROM_GRAVEYARD,
-                    MagicTargetFilter.Operator.LESS_THAN_OR_EQUAL,
-                    cmc);
+                        MagicTargetFilter.TARGET_SPIRIT_CARD_FROM_GRAVEYARD,
+                        MagicTargetFilter.Operator.LESS_THAN_OR_EQUAL,
+                        cmc
+                    );
             final MagicTargetChoice targetChoice = 
                     new MagicTargetChoice(
                     targetFilter,false,MagicTargetHint.None,

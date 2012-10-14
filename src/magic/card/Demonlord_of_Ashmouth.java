@@ -22,7 +22,7 @@ public class Demonlord_of_Ashmouth {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPlayer player) {
-            final MagicTargetFilter targetFilter = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
+            final MagicTargetFilter<MagicPermanent> targetFilter = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
                 MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,permanent
             );
             final MagicTargetChoice targetChoice = new MagicTargetChoice(

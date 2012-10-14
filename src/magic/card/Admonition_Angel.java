@@ -20,7 +20,7 @@ public class Admonition_Angel {
     public static final MagicLandfallTrigger T1 = new MagicLandfallTrigger() {
         @Override
         protected MagicEvent getEvent(final MagicPermanent permanent) {
-            final MagicTargetFilter targetFilter = 
+            final MagicTargetFilter<MagicPermanent> targetFilter = 
                     new MagicTargetFilter.MagicOtherPermanentTargetFilter(
                         MagicTargetFilter.TARGET_NONLAND_PERMANENT,
                         permanent);

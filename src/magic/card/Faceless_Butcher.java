@@ -16,7 +16,7 @@ public class Faceless_Butcher {
     public static final MagicWhenComesIntoPlayTrigger T1 = new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-            final MagicTargetFilter targetFilter = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
+            final MagicTargetFilter<MagicPermanent> targetFilter = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
                     MagicTargetFilter.TARGET_CREATURE,permanent);
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
                     targetFilter,true,MagicTargetHint.None,"another creature to exile");

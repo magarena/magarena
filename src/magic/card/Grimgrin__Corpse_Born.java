@@ -31,7 +31,7 @@ public class Grimgrin__Corpse_Born {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            final MagicTargetFilter targetFilter = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
+            final MagicTargetFilter<MagicPermanent> targetFilter = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,source);
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
                     targetFilter,false,MagicTargetHint.None,"a creature other than " + source + " to sacrifice");

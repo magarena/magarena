@@ -30,7 +30,7 @@ public class Demonic_Taskmaster {
                 final Object[] choiceResults) {
             final MagicPermanent permanent = event.getPermanent();
             final MagicPlayer player = event.getPlayer();
-            final MagicTargetFilter targetFilter = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
+            final MagicTargetFilter<MagicPermanent> targetFilter = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
                 MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,
                 permanent
             );

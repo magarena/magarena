@@ -62,11 +62,12 @@ public class AEther_Vial {
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicTargetFilter targetFilter =
+            final MagicTargetFilter<MagicTarget> targetFilter =
                     new MagicTargetFilter.MagicCMCTargetFilter<MagicTarget>(
-                    MagicTargetFilter.TARGET_CREATURE_CARD_FROM_HAND,
-                    MagicTargetFilter.Operator.EQUAL,
-                    source.getCounters(MagicCounterType.Charge));
+                        MagicTargetFilter.TARGET_CREATURE_CARD_FROM_HAND,
+                        MagicTargetFilter.Operator.EQUAL,
+                        source.getCounters(MagicCounterType.Charge)
+                    );
             final MagicTargetChoice targetChoice = 
                     new MagicTargetChoice(
                     targetFilter,false,MagicTargetHint.None,"a creature card from your hand");

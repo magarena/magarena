@@ -28,7 +28,7 @@ public class Mistbind_Clique {
     public static final MagicWhenComesIntoPlayTrigger T1 = new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-            final MagicTargetFilter targetFilter = 
+            final MagicTargetFilter<MagicPermanent> targetFilter = 
                     new MagicTargetFilter.MagicOtherPermanentTargetFilter(
                     MagicTargetFilter.TARGET_FAERIE_YOU_CONTROL,permanent);
             final MagicTargetChoice targetChoice = 

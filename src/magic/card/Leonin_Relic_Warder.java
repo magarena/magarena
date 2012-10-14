@@ -17,7 +17,7 @@ public class Leonin_Relic_Warder {
     public static final MagicWhenComesIntoPlayTrigger T1 = new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-            final MagicTargetFilter targetFilter = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
+            final MagicTargetFilter<MagicPermanent> targetFilter = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
                     MagicTargetFilter.TARGET_ARTIFACT_OR_ENCHANTMENT,permanent);
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
                     targetFilter,true,MagicTargetHint.Negative,"another artifact or enchantment to exile");

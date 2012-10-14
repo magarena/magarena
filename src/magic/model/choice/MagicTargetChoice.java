@@ -370,12 +370,12 @@ public class MagicTargetChoice extends MagicChoice {
             "an unpaired Soulbond creature");
         
     private final String targetDescription;
-    private final MagicTargetFilter<MagicTarget> targetFilter;
+    private final MagicTargetFilter<? extends MagicTarget> targetFilter;
     private final boolean targeted;
     private final MagicTargetHint targetHint;
     
     public MagicTargetChoice(
-            final MagicTargetFilter targetFilter,
+            final MagicTargetFilter<? extends MagicTarget> targetFilter,
             final boolean targeted,
             final MagicTargetHint hint,
             final String targetDescription) {
@@ -401,7 +401,7 @@ public class MagicTargetChoice extends MagicChoice {
     }
 
     public final MagicTargetFilter<MagicTarget> getTargetFilter() {
-        return targetFilter;
+        return (MagicTargetFilter<MagicTarget>)targetFilter;
     }
     
     public final boolean isTargeted() {

@@ -33,7 +33,7 @@ public class Skullmulcher {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-            final MagicTargetFilter targetFilter=new MagicTargetFilter.MagicOtherPermanentTargetFilter(
+            final MagicTargetFilter<MagicPermanent> targetFilter=new MagicTargetFilter.MagicOtherPermanentTargetFilter(
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,permanent);
             final MagicTargetChoice targetChoice=new MagicTargetChoice(
                     targetFilter,false,MagicTargetHint.None,"a creature other than "+permanent+" to sacrifice");

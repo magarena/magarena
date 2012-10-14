@@ -58,10 +58,11 @@ public class Legacy_s_Allure {
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicTargetFilter targetFilter =
+            final MagicTargetFilter<MagicPermanent> targetFilter =
                     new MagicTargetFilter.MagicPowerTargetFilter(
-                    MagicTargetFilter.TARGET_CREATURE,
-                    source.getCounters(MagicCounterType.Charge));
+                        MagicTargetFilter.TARGET_CREATURE,
+                        source.getCounters(MagicCounterType.Charge)
+                    );
             final MagicTargetChoice targetChoice = 
                     new MagicTargetChoice(
                     targetFilter,true,MagicTargetHint.Negative,"target creature to gain control of");
