@@ -882,7 +882,7 @@ public class MagicGame {
 
     private List<MagicTarget> filterTargets(
             final MagicPlayer player,
-            final MagicTargetFilter<MagicTarget> targetFilter,
+            final MagicTargetFilter targetFilter,
             final MagicTargetHint targetHint) {
 
         final List<MagicTarget> targets=new ArrayList<MagicTarget>();
