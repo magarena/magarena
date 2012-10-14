@@ -54,14 +54,11 @@ public class CostPanel extends JPanel {
             
             centerPanel.add(manaLabels[i]);
         }            
-        if (cost!=null) {
-            int index=0;
-            for (final ImageIcon icon : icons) {
-                
-                manaLabels[index++].setIcon(icon);
-                if (index==manaLabels.length) {
-                    break;
-                }
+        int index=0;
+        for (final ImageIcon icon : icons) {
+            manaLabels[index++].setIcon(icon);
+            if (index==manaLabels.length) {
+                break;
             }
         }
         add(centerPanel,BorderLayout.CENTER);
