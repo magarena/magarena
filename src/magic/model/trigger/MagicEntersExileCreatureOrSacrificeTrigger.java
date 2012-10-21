@@ -14,6 +14,7 @@ import magic.model.event.MagicEvent;
 import magic.model.target.MagicExileTargetPicker;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicPermanentFilterImpl;
 import magic.model.target.MagicTargetHint;
 import magic.model.target.MagicTargetType;
 
@@ -37,7 +38,7 @@ public class MagicEntersExileCreatureOrSacrificeTrigger extends MagicWhenComesIn
 
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-        final MagicTargetFilter<MagicPermanent> targetFilter = new MagicTargetFilter<MagicPermanent>() {
+        final MagicTargetFilter<MagicPermanent> targetFilter = new MagicPermanentFilterImpl() {
             public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent creature) {        
                 boolean hasSubType = subtypes.length == 0;
                 for (final MagicSubType subtype : subtypes) {

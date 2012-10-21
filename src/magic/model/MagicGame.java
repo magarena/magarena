@@ -878,135 +878,15 @@ public class MagicGame {
         return mappedData;
     }
     
-    private List<MagicTarget> filterTargets(
-            final MagicPlayer player,
-            final MagicTargetFilter<MagicTarget> targetFilter,
-            final MagicTargetHint targetHint) {
-
-        final List<MagicTarget> targets=new ArrayList<MagicTarget>();
-        
-        // Players
-        if (targetFilter.acceptType(MagicTargetType.Player)) {
-            for (final MagicPlayer targetPlayer : players) {
-                if (targetFilter.accept(this,player,targetPlayer) &&
-                    targetHint.accept(player,targetPlayer)) {
-                    targets.add(targetPlayer);
-                }                
-            }
-        }
-        
-        // Permanents
-        if (targetFilter.acceptType(MagicTargetType.Permanent)) {
-            for (final MagicPlayer controller : players) {
-                for (final MagicPermanent targetPermanent : controller.getPermanents()) {
-                    if (targetFilter.accept(this,player,targetPermanent) && 
-                        targetHint.accept(player,targetPermanent)) {
-                        targets.add(targetPermanent);
-                    }
-                }
-            }
-        }        
-
-        // Items on stack
-        if (targetFilter.acceptType(MagicTargetType.Stack)) {
-            for (final MagicItemOnStack targetItemOnStack : stack) {
-                if (targetFilter.accept(this,player,targetItemOnStack) && 
-                    targetHint.accept(player,targetItemOnStack)) {
-                    targets.add(targetItemOnStack);
-                }
-            }
-        }
-            
-        // Cards in graveyard
-        if (targetFilter.acceptType(MagicTargetType.Graveyard)) {
-            for (final MagicCard targetCard : player.getGraveyard()) {
-                if (targetFilter.accept(this,player,targetCard)) {
-                    targets.add(targetCard);
-                }                
-            }
-        }
-
-        // Cards in opponent's graveyard
-        if (targetFilter.acceptType(MagicTargetType.OpponentsGraveyard)) {
-            for (final MagicCard targetCard : getOpponent(player).getGraveyard()) {
-                if (targetFilter.accept(this,player,targetCard)) {
-                    targets.add(targetCard);
-                }                
-            }
-        }
-        
-        // Cards in hand
-        if (targetFilter.acceptType(MagicTargetType.Hand)) {
-            for (final MagicCard targetCard : player.getHand()) {
-                if (targetFilter.accept(this,player,targetCard)) {
-                    targets.add(targetCard);
-                }                
-            }
-        }
-                
-        return targets;
-    }
-   
-    private List<MagicPermanent> filterPermanents(
-            final MagicPlayer player,
-            final MagicTargetFilter<MagicPermanent> targetFilter,
-            final MagicTargetHint targetHint) {
-        final List<MagicPermanent> targets=new ArrayList<MagicPermanent>();
-        if (targetFilter.acceptType(MagicTargetType.Permanent)) {
-            for (final MagicPlayer controller : players) {
-                for (final MagicPermanent targetPermanent : controller.getPermanents()) {
-                    if (targetFilter.accept(this,player,targetPermanent) && 
-                        targetHint.accept(player,targetPermanent)) {
-                        targets.add(targetPermanent);
-                    }
-                }
-            }
-        }        
-        return targets;
-    }
+    // ***** TARGETTING *****
     
     public List<MagicPermanent> filterPermanents(final MagicPlayer player,final MagicTargetFilter<MagicPermanent> targetFilter) {
-        return filterPermanents(player,targetFilter,MagicTargetHint.None);
+        return targetFilter.filter(this, player, MagicTargetHint.None);
     }
     
-    private List<MagicCard> filterCards(
-            final MagicPlayer player,
-            final MagicTargetFilter<MagicCard> targetFilter,
-            final MagicTargetHint targetHint) {
-        final List<MagicCard> targets=new ArrayList<MagicCard>();
-            
-        // Cards in graveyard
-        if (targetFilter.acceptType(MagicTargetType.Graveyard)) {
-            for (final MagicCard targetCard : player.getGraveyard()) {
-                if (targetFilter.accept(this,player,targetCard)) {
-                    targets.add(targetCard);
-                }                
-            }
-        }
-
-        // Cards in opponent's graveyard
-        if (targetFilter.acceptType(MagicTargetType.OpponentsGraveyard)) {
-            for (final MagicCard targetCard : getOpponent(player).getGraveyard()) {
-                if (targetFilter.accept(this,player,targetCard)) {
-                    targets.add(targetCard);
-                }                
-            }
-        }
-        
-        // Cards in hand
-        if (targetFilter.acceptType(MagicTargetType.Hand)) {
-            for (final MagicCard targetCard : player.getHand()) {
-                if (targetFilter.accept(this,player,targetCard)) {
-                    targets.add(targetCard);
-                }                
-            }
-        }
-        
-        return targets;
-    }
     
     public List<MagicCard> filterCards(final MagicPlayer player,final MagicTargetFilter<MagicCard> targetFilter) {
-        return filterCards(player,targetFilter,MagicTargetHint.None);
+        return targetFilter.filter(this, player, MagicTargetHint.None);
     }
 
     public boolean hasLegalTargets(
@@ -1019,9 +899,9 @@ public class MagicGame {
             return true;
         }
     
-        final Collection<MagicTarget> targets = filterTargets(
+        final Collection<? extends MagicTarget> targets = targetChoice.getTargetFilter().filter(
+            this,
             player,
-            targetChoice.getTargetFilter(),
             targetChoice.getTargetHint(hints)
         );
 
@@ -1044,7 +924,11 @@ public class MagicGame {
             final MagicTargetChoice targetChoice,
             final MagicTargetHint targetHint) {
 
-        final Collection<MagicTarget> targets=filterTargets(player,targetChoice.getTargetFilter(),targetHint);
+        final Collection<? extends MagicTarget> targets = targetChoice.getTargetFilter().filter(
+            this,
+            player,
+            targetHint
+        );
         final List<Object> options;
         if (targetChoice.isTargeted()) {
             options=new ArrayList<Object>();
@@ -1063,62 +947,12 @@ public class MagicGame {
         return options;
     }
     
-    private boolean filterTarget(final MagicPlayer player,final MagicTargetFilter<MagicTarget> targetFilter,final MagicTarget target) {
-        if (target==null || 
-            target==MagicTargetNone.getInstance() || 
-            !targetFilter.accept(this,player,target)) {
-            return false;
-        }            
-        
-        // Player
-        if (target.isPlayer()) {
-            return true;
-        }
-
-        // Permanent
-        if (target.isPermanent()) {
-            final MagicPermanent permanent=(MagicPermanent)target;
-            return permanent.getController().controlsPermanent(permanent);
-        }
-        
-        // Card
-        if (target instanceof MagicCard) {
-            // Card in graveyard
-            if (targetFilter.acceptType(MagicTargetType.Graveyard) && 
-                player.getGraveyard().contains(target)) {
-                return true;
-            }
-                    
-            // Card in opponent's graveyard
-            if (targetFilter.acceptType(MagicTargetType.OpponentsGraveyard) && 
-                getOpponent(player).getGraveyard().contains(target)) {
-                return true;
-            }
-            
-            // Card in hand
-            if (targetFilter.acceptType(MagicTargetType.Hand) && 
-                player.getHand().contains(target)) {
-                return true;
-            }
-                        
-            return false;
-        }
-                
-        // Item on stack
-        if (target instanceof MagicItemOnStack) {
-            return stack.contains(target);
-        }
-                
-        return false;
-    }
-    
     public boolean isLegalTarget(
             final MagicPlayer player,
             final MagicSource source,
             final MagicTargetChoice targetChoice,
             final MagicTarget target) {
-        
-        if (filterTarget(player,targetChoice.getTargetFilter(),target)) {
+        if (targetChoice.getTargetFilter().isLegal(this, player, target)) {
             return !targetChoice.isTargeted()||target.isValidTarget(source);
         }
         return false;

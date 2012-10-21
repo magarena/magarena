@@ -18,7 +18,7 @@ import magic.model.trigger.MagicGraveyardTriggerData;
 import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 
 public class Driver_of_the_Dead {
-    private static final MagicTargetFilter<MagicCard> targetFilter = new MagicTargetFilter.MagicCMCTargetFilter<MagicCard>(
+    private static final MagicTargetFilter<MagicCard> targetFilter = new MagicTargetFilter.MagicCMCCardFilter(
         MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
         MagicTargetFilter.Operator.LESS_THAN_OR_EQUAL,
         2
