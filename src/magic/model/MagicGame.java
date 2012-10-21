@@ -947,12 +947,13 @@ public class MagicGame {
         return options;
     }
     
-    public boolean isLegalTarget(
+    public <T extends MagicTarget> boolean isLegalTarget(
             final MagicPlayer player,
             final MagicSource source,
             final MagicTargetChoice targetChoice,
-            final MagicTarget target) {
-        if (targetChoice.getTargetFilter().isLegal(this, player, target)) {
+            final T target) {
+        MagicTargetFilter<T> targetFilter = (MagicTargetFilter<T>)targetChoice.getTargetFilter();
+        if (targetFilter.isLegal(this, player, target)) {
             return !targetChoice.isTargeted()||target.isValidTarget(source);
         }
         return false;

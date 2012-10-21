@@ -167,10 +167,10 @@ abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard> {
         return targets;
     }
     
-    public boolean isLegal(final MagicGame game, final MagicPlayer player, final MagicTarget target) {
+    public boolean isLegal(final MagicGame game, final MagicPlayer player, final MagicCard target) {
         if (target==null || 
             target==MagicTargetNone.getInstance() || 
-            !accept(game,player,(MagicCard)target)) {
+            !accept(game,player,target)) {
             return false;
         }            
         
@@ -213,10 +213,10 @@ abstract class MagicStackFilterImpl implements MagicTargetFilter<MagicItemOnStac
         return targets;
     }
     
-    public boolean isLegal(final MagicGame game, final MagicPlayer player, final MagicTarget target) {
+    public boolean isLegal(final MagicGame game, final MagicPlayer player, final MagicItemOnStack target) {
         if (target==null || 
             target==MagicTargetNone.getInstance() || 
-            !accept(game,player,(MagicItemOnStack)target)) {
+            !accept(game,player,target)) {
             return false;
         }            
         return game.getStack().contains(target);
@@ -240,10 +240,10 @@ abstract class MagicPlayerFilterImpl implements MagicTargetFilter<MagicPlayer> {
         return targets;
     }
     
-    public boolean isLegal(final MagicGame game, final MagicPlayer player, final MagicTarget target) {
+    public boolean isLegal(final MagicGame game, final MagicPlayer player, final MagicPlayer target) {
         if (target==null || 
             target==MagicTargetNone.getInstance() || 
-            !accept(game,player,(MagicPlayer)target)) {
+            !accept(game,player,target)) {
             return false;
         }            
         
@@ -257,7 +257,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     
     boolean accept(final MagicGame game,final MagicPlayer player,final T target);
     
-    boolean isLegal(final MagicGame game, final MagicPlayer player, final MagicTarget target);
+    boolean isLegal(final MagicGame game, final MagicPlayer player, final T target);
 
     List<T> filter(final MagicGame game, final MagicPlayer player, final MagicTargetHint targetHint);
     
