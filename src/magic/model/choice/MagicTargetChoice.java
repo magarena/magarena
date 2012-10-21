@@ -10,6 +10,7 @@ import magic.model.target.MagicTargetHint;
 import magic.model.target.MagicTargetNone;
 import magic.model.target.MagicTargetType;
 import magic.model.target.MagicTarget;
+import magic.model.target.MagicTargetPicker;
 import magic.ui.GameController;
 
 import java.util.Collection;
@@ -17,6 +18,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
+import java.util.List;
 
 public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice NONE =
@@ -432,9 +434,10 @@ public class MagicTargetChoice extends MagicChoice {
             final MagicEvent event,
             final MagicPlayer player,
             final MagicSource source) {
-        Collection<?> targets = game.getLegalTargets(player,source,this,targetHint);
+        Collection<MagicTarget> targets = game.getLegalTargets(player,source,this,targetHint);
         if (game.getFastChoices()) {
-            targets = event.getTargetPicker().pickTargets(game,player,targets);
+            final MagicTargetPicker<MagicTarget> targetPicker = (MagicTargetPicker<MagicTarget>)event.getTargetPicker();
+            targets = targetPicker.pickTargets(game,player,targets);
         }
         return targets;
     }
