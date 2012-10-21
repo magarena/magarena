@@ -918,7 +918,7 @@ public class MagicGame {
         return false;
     }
     
-    public List<Object> getLegalTargets(
+    public List<MagicTarget> getLegalTargets(
             final MagicPlayer player,
             final MagicSource source,
             final MagicTargetChoice targetChoice,
@@ -929,18 +929,18 @@ public class MagicGame {
             player,
             targetHint
         );
-        final List<Object> options;
+        final List<MagicTarget> options;
         if (targetChoice.isTargeted()) {
-            options=new ArrayList<Object>();
+            options=new ArrayList<MagicTarget>();
             for (final MagicTarget target : targets) {
                 if (target.isValidTarget(source)) {
                     options.add(target);
                 }
             }
         } else {
-            options=new ArrayList<Object>(targets);
+            options=new ArrayList<MagicTarget>(targets);
         }
-        // Add none when there are no legal targets. Should be only the case with triggers.
+        // Add none when there are no legal targets. Only for triggers.
         if (options.isEmpty()) {
             options.add(MagicTargetNone.getInstance());
         }
