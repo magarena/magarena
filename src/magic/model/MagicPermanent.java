@@ -20,6 +20,7 @@ import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicPermanentStatic;
 import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTarget;
+import magic.model.target.MagicTargetFilter;
 
 import javax.swing.ImageIcon;
 import java.util.Arrays;
@@ -1023,5 +1024,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             return IconImages.CREATURE;
         }
         return cardDefinition.getIcon();
+    }
+    
+    @Override
+    public boolean isLegalTarget(final MagicPlayer player, final MagicTargetFilter<? extends MagicTarget> targetFilter) {
+        return getController().controlsPermanent(this);
     }
 }

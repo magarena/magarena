@@ -952,10 +952,19 @@ public class MagicGame {
             final MagicSource source,
             final MagicTargetChoice targetChoice,
             final T target) {
+        
         MagicTargetFilter<T> targetFilter = (MagicTargetFilter<T>)targetChoice.getTargetFilter();
-        if (targetFilter.isLegal(this, player, target)) {
-            return !targetChoice.isTargeted()||target.isValidTarget(source);
+        
+        if (target==null || 
+            target==MagicTargetNone.getInstance() || 
+            !targetFilter.accept(this,player,target)) {
+            return false;
+        }            
+        
+        if (target.isLegalTarget(player, targetFilter)) {
+            return !targetChoice.isTargeted() || target.isValidTarget(source);
         }
+
         return false;
     }
     

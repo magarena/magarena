@@ -82,55 +82,6 @@ abstract class MagicTargetFilterImpl implements MagicTargetFilter<MagicTarget> {
                 
         return targets;
     }
-
-    public boolean isLegal(final MagicGame game, final MagicPlayer player, final MagicTarget target) {
-        if (target==null || 
-            target==MagicTargetNone.getInstance() || 
-            !accept(game,player,target)) {
-            return false;
-        }            
-        
-        // Player
-        if (target.isPlayer()) {
-            return true;
-        }
-
-        // Permanent
-        if (target.isPermanent()) {
-            final MagicPermanent permanent=(MagicPermanent)target;
-            return permanent.getController().controlsPermanent(permanent);
-        }
-        
-        // Card
-        if (target instanceof MagicCard) {
-            // Card in graveyard
-            if (acceptType(MagicTargetType.Graveyard) && 
-                player.getGraveyard().contains(target)) {
-                return true;
-            }
-                    
-            // Card in opponent's graveyard
-            if (acceptType(MagicTargetType.OpponentsGraveyard) && 
-                player.getOpponent().getGraveyard().contains(target)) {
-                return true;
-            }
-            
-            // Card in hand
-            if (acceptType(MagicTargetType.Hand) && 
-                player.getHand().contains(target)) {
-                return true;
-            }
-                        
-            return false;
-        }
-                
-        // Item on stack
-        if (target instanceof MagicItemOnStack) {
-            return game.getStack().contains(target);
-        }
-                
-        return false;
-    }
 }
 
 abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard> {
@@ -166,34 +117,6 @@ abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard> {
         
         return targets;
     }
-    
-    public boolean isLegal(final MagicGame game, final MagicPlayer player, final MagicCard target) {
-        if (target==null || 
-            target==MagicTargetNone.getInstance() || 
-            !accept(game,player,target)) {
-            return false;
-        }            
-        
-        // Card in graveyard
-        if (acceptType(MagicTargetType.Graveyard) && 
-            player.getGraveyard().contains(target)) {
-            return true;
-        }
-                
-        // Card in opponent's graveyard
-        if (acceptType(MagicTargetType.OpponentsGraveyard) && 
-            player.getOpponent().getGraveyard().contains(target)) {
-            return true;
-        }
-        
-        // Card in hand
-        if (acceptType(MagicTargetType.Hand) && 
-            player.getHand().contains(target)) {
-            return true;
-        }
-                    
-        return false;
-    }
 }
 
 abstract class MagicStackFilterImpl implements MagicTargetFilter<MagicItemOnStack> {
@@ -211,15 +134,6 @@ abstract class MagicStackFilterImpl implements MagicTargetFilter<MagicItemOnStac
         }
                 
         return targets;
-    }
-    
-    public boolean isLegal(final MagicGame game, final MagicPlayer player, final MagicItemOnStack target) {
-        if (target==null || 
-            target==MagicTargetNone.getInstance() || 
-            !accept(game,player,target)) {
-            return false;
-        }            
-        return game.getStack().contains(target);
     }
 }
 
@@ -239,16 +153,6 @@ abstract class MagicPlayerFilterImpl implements MagicTargetFilter<MagicPlayer> {
                 
         return targets;
     }
-    
-    public boolean isLegal(final MagicGame game, final MagicPlayer player, final MagicPlayer target) {
-        if (target==null || 
-            target==MagicTargetNone.getInstance() || 
-            !accept(game,player,target)) {
-            return false;
-        }            
-        
-        return true;
-    }
 }
 
 public interface MagicTargetFilter<T extends MagicTarget> {
@@ -256,8 +160,6 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     boolean acceptType(final MagicTargetType targetType);
     
     boolean accept(final MagicGame game,final MagicPlayer player,final T target);
-    
-    boolean isLegal(final MagicGame game, final MagicPlayer player, final T target);
 
     List<T> filter(final MagicGame game, final MagicPlayer player, final MagicTargetHint targetHint);
     

@@ -13,6 +13,7 @@ import magic.model.MagicType;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
+import magic.model.target.MagicTargetFilter;
 
 import javax.swing.ImageIcon;
 
@@ -166,6 +167,11 @@ public abstract class MagicItemOnStack implements MagicTarget {
     @Override
     public boolean hasAbility(final MagicAbility ability) {
         return source.hasAbility(ability);
+    }
+    
+    @Override
+    public boolean isLegalTarget(final MagicPlayer player, final MagicTargetFilter<? extends MagicTarget> targetFilter) {
+        return source.getGame().getStack().contains(this);
     }
 
     long getItemId() {

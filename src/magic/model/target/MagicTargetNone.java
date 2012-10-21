@@ -7,6 +7,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.MagicAbility;
 import magic.model.MagicColor;
+import magic.model.target.MagicTargetFilter;
 
 public class MagicTargetNone implements MagicTarget {
 
@@ -31,6 +32,11 @@ public class MagicTargetNone implements MagicTarget {
     
     @Override
     public boolean isValidTarget(final MagicSource source) {
+        return false;
+    }
+    
+    @Override
+    public boolean isLegalTarget(final MagicPlayer player, final MagicTargetFilter<? extends MagicTarget> targetFilter) {
         return false;
     }
     

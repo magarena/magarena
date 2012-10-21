@@ -525,6 +525,11 @@ public class MagicPlayer implements MagicTarget {
         }
         return true;
     }
+    
+    @Override
+    public boolean isLegalTarget(final MagicPlayer player, final MagicTargetFilter<? extends MagicTarget> targetFilter) {
+        return true;
+    }
 
     public void incDrawnCards() {
         drawnCards++;

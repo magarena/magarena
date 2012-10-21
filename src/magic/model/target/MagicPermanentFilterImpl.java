@@ -32,14 +32,4 @@ public abstract class MagicPermanentFilterImpl implements MagicTargetFilter<Magi
         }        
         return targets;
     }
-    
-    public boolean isLegal(final MagicGame game, final MagicPlayer player, final MagicPermanent target) {
-        if (target==null || 
-            target==MagicTargetNone.getInstance() || 
-            !accept(game,player,target)) {
-            return false;
-        }            
-
-        return target.getController().controlsPermanent(target);
-    }
 }

@@ -7,6 +7,8 @@ import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicPermanentStatic;
 import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTarget;
+import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicTargetType;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -233,5 +235,28 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
     @Override
     public MagicGame getGame() {
         return owner.getGame();
+    }
+    
+    @Override
+    public boolean isLegalTarget(final MagicPlayer player, final MagicTargetFilter<? extends MagicTarget> targetFilter) {
+        // Card in graveyard
+        if (targetFilter.acceptType(MagicTargetType.Graveyard) && 
+            player.getGraveyard().contains(this)) {
+            return true;
+        }
+                
+        // Card in opponent's graveyard
+        if (targetFilter.acceptType(MagicTargetType.OpponentsGraveyard) && 
+            player.getOpponent().getGraveyard().contains(this)) {
+            return true;
+        }
+        
+        // Card in hand
+        if (targetFilter.acceptType(MagicTargetType.Hand) && 
+            player.getHand().contains(this)) {
+            return true;
+        }
+                    
+        return false;
     }
 }
