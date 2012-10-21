@@ -253,13 +253,13 @@ abstract class MagicPlayerFilterImpl implements MagicTargetFilter<MagicPlayer> {
 
 public interface MagicTargetFilter<T extends MagicTarget> {
     
+    boolean acceptType(final MagicTargetType targetType);
+    
     boolean accept(final MagicGame game,final MagicPlayer player,final T target);
     
-    boolean acceptType(final MagicTargetType targetType);
+    boolean isLegal(final MagicGame game, final MagicPlayer player, final MagicTarget target);
 
     List<T> filter(final MagicGame game, final MagicPlayer player, final MagicTargetHint targetHint);
-    
-    boolean isLegal(final MagicGame game, final MagicPlayer player, final MagicTarget target);
     
     MagicPermanentFilterImpl NONE = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
