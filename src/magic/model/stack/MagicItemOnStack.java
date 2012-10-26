@@ -10,8 +10,11 @@ import magic.model.MagicSource;
 import magic.model.MagicColor;
 import magic.model.MagicAbility;
 import magic.model.MagicType;
+import magic.model.MagicPayedCost;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicCardEvent;
+import magic.model.event.MagicCardEvent;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 
@@ -19,14 +22,31 @@ import javax.swing.ImageIcon;
 
 public abstract class MagicItemOnStack implements MagicTarget {
     
-    private MagicSource source;
-    private MagicPlayer controller;
-    private MagicEvent event;
-    private MagicActivation activation; //may be null
+    private final MagicSource source;
+    private final MagicPlayer controller;
+    private final MagicEvent event;
+    private final MagicActivation activation; //may be null
     private Object[] choiceResults=MagicEvent.NO_CHOICE_RESULTS;
     private long id;
-   
-    MagicItemOnStack() {}
+    
+    MagicItemOnStack(final MagicSource aSource, final MagicPlayer aController, final MagicEvent aEvent, final MagicActivation act) {
+        source = aSource;
+        controller = aController;
+        event = aEvent;
+        activation = act;
+    }
+    
+    MagicItemOnStack(final MagicSource aSource, final MagicPlayer aController, final MagicEvent aEvent) {
+        this(aSource, aController, aEvent, null);
+    }
+
+    //hack for MagicCardOnStack
+    MagicItemOnStack(final MagicSource aSource, final MagicPlayer aController, final MagicCardEvent cardEvent, final MagicPayedCost payedCost) {
+        source = aSource;
+        controller = aController;
+        event = cardEvent.getEvent((MagicCardOnStack)this, payedCost);
+        activation = null;
+    }
 
     MagicItemOnStack(final MagicCopyMap copyMap, final MagicItemOnStack sourceItem) {
         source = copyMap.copy(sourceItem.source);
@@ -41,17 +61,9 @@ public abstract class MagicItemOnStack implements MagicTarget {
     public MagicItemOnStack map(final MagicGame game) {
         return game.getStack().getItemOnStack(id);
     }
-
-    void setSource(final MagicSource source) {
-        this.source=source;
-    }
         
     public MagicSource getSource() {
         return source;
-    }
-    
-    void setController(final MagicPlayer controller) {
-        this.controller=controller;
     }
     
     @Override
@@ -64,18 +76,10 @@ public abstract class MagicItemOnStack implements MagicTarget {
         return getSource().getCardDefinition();
     }
     
-    void setActivation(final MagicActivation activation) {
-        this.activation=activation;
-    }
-    
     MagicActivation getActivation() {
         return activation;
     }
             
-    void setEvent(final MagicEvent event) {
-        this.event=event;
-    }
-    
     public MagicEvent getEvent() {
         return event;
     }
@@ -106,7 +110,7 @@ public abstract class MagicItemOnStack implements MagicTarget {
     public void setId(final long id) {
         this.id=id;
     }
-    
+   
     public long getId() {
         return id;
     }

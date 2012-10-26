@@ -24,9 +24,7 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
     private int x;
     
     public MagicCardOnStack(final MagicCard card,final MagicPlayer controller,final MagicPayedCost payedCost) {
-        setSource(card);
-        setController(controller);
-        setEvent(card.getCardDefinition().getCardEvent().getEvent(this,payedCost));
+        super(card, controller, card.getCardDefinition().getCardEvent(), payedCost);
         x=payedCost.getX();
     }
     

@@ -14,10 +14,7 @@ public class MagicAbilityOnStack extends MagicItemOnStack {
             final MagicPermanentActivation activation,
             final MagicPermanent permanent,
             final MagicPayedCost payedCost) {
-        setSource(permanent);
-        setController(permanent.getController());
-        setActivation(activation);
-        setEvent(activation.getPermanentEvent(permanent,payedCost));
+        super(permanent, permanent.getController(), activation.getPermanentEvent(permanent,payedCost), activation);
     }
     
     private MagicAbilityOnStack(final MagicCopyMap copyMap, final MagicAbilityOnStack source) {
