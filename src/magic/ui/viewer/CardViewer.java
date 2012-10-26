@@ -57,7 +57,7 @@ public class CardViewer extends JPanel implements DelayedViewer {
             float opacity=1.0f;
             if (image&&GeneralConfig.getInstance().isHighQuality()) {
                 if (!opaque) {
-                    opacity=((float)ThemeFactory.getInstance().getCurrentTheme().getValue(Theme.VALUE_POPUP_OPACITY))/100.0f;
+                    opacity=ThemeFactory.getInstance().getCurrentTheme().getValue(Theme.VALUE_POPUP_OPACITY)/100.0f;
                 }
                 final BufferedImage sourceImage = 
                     HighQualityCardImagesProvider.getInstance().getImage(cardDefinition,index,true);
