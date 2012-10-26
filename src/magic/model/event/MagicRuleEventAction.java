@@ -12,6 +12,7 @@ import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.action.MagicChangeStateAction;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTargetPicker;
+import magic.model.target.MagicDefaultTargetPicker;
 import magic.model.target.MagicDestroyTargetPicker;
 import magic.model.target.MagicExileTargetPicker;
 import magic.model.choice.MagicTargetChoice;
@@ -49,7 +50,7 @@ public enum MagicRuleEventAction {
             });
         }
     }),
-    Counter("counter ([^\\.]*).", "neg", null, new MagicEventAction() {
+    Counter("counter ([^\\.]*).", "neg", MagicDefaultTargetPicker.create(), new MagicEventAction() {
         @Override
         public void executeEvent(
                 final MagicGame game,

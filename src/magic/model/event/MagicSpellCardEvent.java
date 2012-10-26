@@ -29,7 +29,7 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
                 return new MagicEvent(
                     cardOnStack,
                     choice,
-                    (picker != null ? picker : MagicDefaultTargetPicker.create()),
+                    picker,
                     this,
                     rule + "$"
                 );
