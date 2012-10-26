@@ -1,0 +1,11 @@
+name=Rootwater Hunter
+url=http://magiccards.info/tp/en/82.html
+image=http://magiccards.info/scans/en/tp/82.jpg
+value=3.515
+rarity=C
+type=Creature
+subtype=Merfolk
+cost={2}{U}
+pt=1/1
+ability=ping 1
+timing=main
