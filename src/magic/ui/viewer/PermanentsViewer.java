@@ -18,7 +18,7 @@ import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
-public abstract class PermanentsViewer extends JPanel implements ChoiceViewer {
+public abstract class PermanentsViewer extends JPanel implements ChoiceViewer, Updatable {
 
     private static final long serialVersionUID = 1L;
     

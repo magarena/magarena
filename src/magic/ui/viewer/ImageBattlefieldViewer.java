@@ -11,7 +11,7 @@ import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.util.Set;
 
-public class ImageBattlefieldViewer extends JPanel implements ChoiceViewer {
+public class ImageBattlefieldViewer extends JPanel implements ChoiceViewer, Updatable {
 
     private static final long serialVersionUID = 1L;
     

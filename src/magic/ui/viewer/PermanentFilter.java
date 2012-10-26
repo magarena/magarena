@@ -44,15 +44,14 @@ public class PermanentFilter implements ActionListener {
     private static final Dimension HORIZONTAL_BUTTON_DIMENSION=new Dimension(28,20);
     private static final Dimension VERTICAL_BUTTON_DIMENSION=new Dimension(24,24);
 
-    private final JPanel viewer;
+    private final Updatable viewer;
     private final GameController controller;
     private final JToggleButton[] filterButtons;
     private int filter;
     
-    public PermanentFilter(final JPanel viewer,final GameController controller) {
-
-        this.viewer=viewer;
-        this.controller=controller;
+    public PermanentFilter(final Updatable aViewer,final GameController aController) {
+        viewer = aViewer;
+        controller = aController;
         filterButtons=new JToggleButton[PermanentFilter.FILTER_ICONS.length];
     }
     
@@ -130,12 +129,8 @@ public class PermanentFilter implements ActionListener {
             for (int index=0;index<filterButtons.length;index++) {
                 
                 filterButtons[index].setSelected(index==newFilter);
-            }        
-            if (viewer instanceof BattlefieldViewer) {
-                ((BattlefieldViewer)viewer).update();
-            } else if (viewer instanceof ImageBattlefieldViewer) {
-                ((ImageBattlefieldViewer)viewer).update();
-            }
+            }       
+            viewer.update();
         } else {
             filterButtons[newFilter].setSelected(true);
         }
