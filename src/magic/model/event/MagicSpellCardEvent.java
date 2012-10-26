@@ -16,12 +16,12 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
         cdef.setEvent(this);
     }
 
-    //first part is action/picker, rest is target
-    public static MagicSpellCardEvent create(final String effect) {
-        final String[] args = effect.toLowerCase().split(" ", 2);
-        final MagicEventAction action = MagicEventActionFactory.build(args[0]);
-        final MagicTargetPicker picker = MagicTargetPicker.build(args[0]); 
-        final MagicTargetChoice choice = MagicTargetChoice.build(MagicEventActionFactory.hint(args[0]) + args[1]);
+    public static MagicSpellCardEvent create(final String rule) {
+        final String effect = rule.toLowerCase();
+        final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
+        final MagicEventAction action  = ruleAction.action;
+        final MagicTargetPicker picker = ruleAction.picker; 
+        final MagicTargetChoice choice = ruleAction.getChoice(effect);
 
         return new MagicSpellCardEvent() {
             @Override
@@ -31,7 +31,7 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
                     choice,
                     (picker != null ? picker : MagicDefaultTargetPicker.create()),
                     this,
-                    effect + "$."
+                    rule + "$"
                 );
             }
             @Override

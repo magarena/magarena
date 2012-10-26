@@ -7,4 +7,4 @@ rarity=C
 type=Instant
 cost={B}{R}
 timing=removal
-requires_card_code
+effect=Destroy target creature. It can't be regenerated.

@@ -7,4 +7,4 @@ rarity=U
 type=Instant
 cost={1}{B}
 timing=removal
-effect=Destroy target nonartifact creature
+effect=Destroy target nonartifact creature.

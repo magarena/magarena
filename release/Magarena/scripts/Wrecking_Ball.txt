@@ -7,4 +7,4 @@ rarity=C
 type=Instant
 cost={2}{B}{R}
 timing=removal
-effect=Destroy target creature or land
+effect=Destroy target creature or land.

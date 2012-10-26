@@ -509,6 +509,7 @@ public class MagicTargetChoice extends MagicChoice {
         factory.put("neg target creature with flying", NEG_TARGET_CREATURE_WITH_FLYING);
         factory.put("neg target nonartifact creature", NEG_TARGET_NONARTIFACT_CREATURE); 
         factory.put("neg target nonblack creature", NEG_TARGET_NONBLACK_CREATURE); 
+        factory.put("neg target nonartifact, nonblack creature", NEG_TARGET_NONARTIFACT_NONBLACK_CREATURE); 
         factory.put("neg target noncreature permanent", NEG_TARGET_NONCREATURE);
         factory.put("neg target human creature", NEG_TARGET_HUMAN_CREATURE); 
         factory.put("neg target green or white creature", NEG_TARGET_GREEN_OR_WHITE_CREATURE);
@@ -518,6 +519,8 @@ public class MagicTargetChoice extends MagicChoice {
         factory.put("neg target permanent", NEG_TARGET_PERMANENT);
         factory.put("neg target enchantment", NEG_TARGET_ENCHANTMENT);
         factory.put("neg target non-vampire, non-werewolf, non-zombie creature", NEG_TARGET_NONVAMPIRE_NONWEREWOLF_NONZOMBIE);
+        factory.put("neg target creature with converted mana cost 3 or less", NEG_TARGET_CREATURE_CONVERTED_3_OR_LESS);
+        factory.put("neg target artifact or creature", NEG_TARGET_ARTIFACT_OR_CREATURE);
 
         factory.put("neg target spell", NEG_TARGET_SPELL);
         factory.put("neg target red or green spell", NEG_TARGET_RED_GREEN_SPELL);

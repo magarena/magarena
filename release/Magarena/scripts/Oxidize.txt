@@ -7,4 +7,4 @@ rarity=U
 type=Instant
 cost={G}
 timing=removal
-requires_card_code
+effect=Destroy target artifact. It can't be regenerated.

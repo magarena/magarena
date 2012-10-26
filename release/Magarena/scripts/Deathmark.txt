@@ -7,4 +7,4 @@ rarity=U
 type=Sorcery
 cost={B}
 timing=removal
-effect=Destroy target green or white creature
+effect=Destroy target green or white creature.

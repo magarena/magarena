@@ -8,4 +8,4 @@ type=Sorcery
 cost={2}{R}{G}
 ability=can't be countered
 timing=main
-effect=Destroy target artifact or land
+effect=Destroy target artifact or land.

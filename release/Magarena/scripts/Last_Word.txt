@@ -7,4 +7,4 @@ type=Instant
 cost={2}{U}{U}
 timing=counter
 ability=can't be countered
-effect=Counter target spell
+effect=Counter target spell.

@@ -7,4 +7,4 @@ rarity=C
 type=Instant
 cost={W}
 timing=removal
-effect=Destroy target enchantment
+effect=Destroy target enchantment.

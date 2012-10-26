@@ -7,4 +7,4 @@ type=Sorcery
 cost={4}{R}{R}
 timing=main
 ability=storm
-effect=Destroy target land
+effect=Destroy target land.
