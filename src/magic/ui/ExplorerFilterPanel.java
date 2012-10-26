@@ -319,7 +319,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         if (!filterCheckboxes(cardDefinition, typeCheckBoxes, typeFilterChoices, 
             new CardChecker() {
                 public boolean checkCard(final MagicCardDefinition card, final int i) {
-                    return card.hasType((MagicType)MagicType.FILTER_TYPES.toArray()[i]);
+                    return card.hasType(MagicType.FILTER_TYPES.toArray(new MagicType[0])[i]);
                 }
             })) {
             return false;
