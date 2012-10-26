@@ -394,12 +394,18 @@ verify_mana_cost_order: cards/mtg_mana_costs cards/mag_mana_costs
 	vim $^
 	hg add $^
 
-check_event_data: scripts/check_data.awk
+find_event_data: scripts/check_data.awk
 	for i in `grep "new MagicEvent(" -lr src`; do \
 			grep "new Object\|data\[[0-9\]" $$i > /dev/null && echo $$i; \
 			grep "new Object\|data\[[0-9\]" $$i  | awk -f $^ | sed 's/  //g' | sed 's/:/:\t/'; \
 	done > $@
 	flip -u $@
+
+find_literals:
+	grep "\"" src/magic/card/* | awk -f scripts/check_literals.awk
+
+# meta check
+check: check_aura check_requires_card_code check_script_name
 
 # every aura must have an enchant property
 check_aura:
@@ -414,9 +420,7 @@ check_requires_card_code:
 	<(ls -1 src/magic/card/*.java | cut -d'/' -f 4 | sed 's/.java//' | sort) \
 	<(grep requires_card_code release/Magarena/scripts/* | cut -d'/' -f4 | sed 's/.txt:.*//' | sort)
 
-check_literals:
-	grep "\"" src/magic/card/* | awk -f scripts/check_literals.awk
-
+# script name is canoical card name
 check_script_name:
 	diff \
 	<(ls -1 release/Magarena/scripts | sort) \
