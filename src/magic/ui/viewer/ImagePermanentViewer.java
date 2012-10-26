@@ -189,7 +189,7 @@ public class ImagePermanentViewer extends JPanel {
 
             if (linkedInfo.tapped) {
                 final AffineTransform transform=new AffineTransform();
-                final float scale=((float)linkedRect.width)/CardImagesProvider.CARD_HEIGHT;
+                final double scale = linkedRect.width * 1.0 / CardImagesProvider.CARD_HEIGHT;
                 transform.translate(x1,y1);
                 transform.scale(scale,scale);            
                 transform.translate(CardImagesProvider.CARD_HEIGHT/2,CardImagesProvider.CARD_WIDTH/2);
