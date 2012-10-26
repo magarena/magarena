@@ -10,21 +10,20 @@ import magic.model.trigger.MagicFadeVanishCounterTrigger;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Ravaging_Riftwurm {
-    public static final MagicFadeVanishCounterTrigger T = new MagicFadeVanishCounterTrigger("time");
-    
     public static final MagicWhenComesIntoPlayTrigger T2 = new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(
             final MagicGame game,
             final MagicPermanent permanent,
             final MagicPlayer player) {    
-            final int amount = permanent.isKicked() ? 5 : 2;
-            game.doAction(new MagicChangeCountersAction(
-                permanent,
-                MagicCounterType.Charge,
-                amount,
-                true
-            ));
+            if (permanent.isKicked()) {
+                game.doAction(new MagicChangeCountersAction(
+                    permanent,
+                    MagicCounterType.Charge,
+                    3,
+                    true
+                ));
+            }
             return MagicEvent.NONE;
         }
     };

@@ -22,8 +22,6 @@ public class Tidewalker {
         }
     };
     
-    public static final MagicFadeVanishCounterTrigger T1 = new MagicFadeVanishCounterTrigger("time");
-    
     public static final MagicWhenComesIntoPlayTrigger T2 = new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {

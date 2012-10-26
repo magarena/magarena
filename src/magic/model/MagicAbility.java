@@ -189,7 +189,9 @@ public enum MagicAbility {
     Vanishing("vanishing",-20) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             final int n = Integer.parseInt(arg);
-            card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,"time",n));
+            if (n > 0) {
+                card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,"time",n));
+            }
             card.add(new MagicFadeVanishCounterTrigger("time"));
         }
     },

@@ -38,17 +38,6 @@ themes: \
 cards_diff: $(MAG)
 	for i in `hg stat -q src/magic/card release/Magarena/scripts | cut -d' ' -f2 | sort -t'/' -k4`; do hg diff $$i; done | flip -u - > $@
 
-code_to_remove: $(MAG)
-	cat src/magic/card/*.java | sed 's/\s\+//g' | sed 's/(.*)/(...)/g' | sort | uniq -c | sort -n | grep publicstaticfinal | grep ");" > $@
-
-casts: $(MAG)
-	grep -n "([A-Za-z]\+)[A-Za-z]\+" -r src/ > $@
-	flip -u $@
-
-nulls: $(MAG)
-	grep -n "null" -r src/ > $@
-	flip -u $@
-
 findbugs_warnings.txt: $(MAG)
 	~/App/findbugs/bin/findbugs \
 			-textui \
@@ -403,6 +392,17 @@ find_event_data: scripts/check_data.awk
 
 find_literals:
 	grep "\"" src/magic/card/* | awk -f scripts/check_literals.awk
+
+find_single_line_card_code: $(MAG)
+	cat src/magic/card/*.java | sed 's/\s\+//g' | sed 's/(.*)/(...)/g' | sort | uniq -c | sort -n | grep publicstaticfinal | grep ");" > $@
+
+find_casts: $(MAG)
+	grep -n "([A-Za-z]\+)[A-Za-z]\+" -r src/ > $@
+	flip -u $@
+
+find_nulls: $(MAG)
+	grep -n "null" -r src/ > $@
+	flip -u $@
 
 # meta check
 check: check_aura check_requires_card_code check_script_name
