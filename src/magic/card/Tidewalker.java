@@ -26,31 +26,13 @@ public class Tidewalker {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             final int amount = game.filterPermanents(player,MagicTargetFilter.TARGET_ISLAND_YOU_CONTROL).size();
-            return (amount > 0) ?
-                new MagicEvent(
-                    permanent,
-                    player,
-                    amount,
-                    this,
-                    amount > 1 ?
-                        "SN enters the battlefield with " + amount + " time counters on it." :
-                        "SN enters the battlefield with a time counter on it.") :
-                MagicEvent.NONE;
-        }
-        @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
-                    event.getPermanent(),
-                    MagicCounterType.Charge,
-                    event.getRefInt(),
-                    true));
-        }
-        @Override
-        public boolean usesStack() {
-            return false;
+                permanent,
+                MagicCounterType.Charge,
+                amount,
+                true
+            ));
+            return MagicEvent.NONE;
         }
     };
 }
