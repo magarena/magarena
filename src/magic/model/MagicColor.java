@@ -136,11 +136,11 @@ public enum MagicColor {
     }    
     
     public static String getRandomColors(final int count) {
-        final List<Character> colors=new ArrayList<Character>(Arrays.<Character>asList('b','u','g','r','w'));
+        final List<MagicColor> colors = Arrays.asList(values());
         final StringBuilder colorText=new StringBuilder();
         for (int c=count;c>0;c--) {
             final int index=MagicRandom.nextInt(colors.size());
-            colorText.append((char)colors.remove(index));            
+            colorText.append(colors.remove(index).getSymbol());            
         }
         return colorText.toString();
     }
