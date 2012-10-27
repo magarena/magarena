@@ -25,7 +25,7 @@ public class City_of_Brass {
 							player,
 							new Object[]{permanent,player},
 							this,
-							permanent + " deals 1 damage to you.") :
+							permanent + " deals 1 damage to " + player) :
 				    MagicEvent.NONE;
 
 		}
