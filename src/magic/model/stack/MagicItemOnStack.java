@@ -26,14 +26,16 @@ public abstract class MagicItemOnStack implements MagicTarget {
     private final MagicPlayer controller;
     private final MagicEvent event;
     private final MagicActivation activation; //may be null
+    private final long id;
+    
     private Object[] choiceResults=MagicEvent.NO_CHOICE_RESULTS;
-    private long id;
     
     MagicItemOnStack(final MagicSource aSource, final MagicPlayer aController, final MagicEvent aEvent, final MagicActivation act) {
         source = aSource;
         controller = aController;
         event = aEvent;
         activation = act;
+        id = aSource.getGame().getUniqueId();
     }
     
     MagicItemOnStack(final MagicSource aSource, final MagicPlayer aController, final MagicEvent aEvent) {
@@ -46,6 +48,7 @@ public abstract class MagicItemOnStack implements MagicTarget {
         controller = aController;
         event = cardEvent.getEvent((MagicCardOnStack)this, payedCost);
         activation = null;
+        id = aSource.getGame().getUniqueId();
     }
 
     MagicItemOnStack(final MagicCopyMap copyMap, final MagicItemOnStack sourceItem) {
@@ -107,10 +110,6 @@ public abstract class MagicItemOnStack implements MagicTarget {
         return false;
     }
     
-    public void setId(final long id) {
-        this.id=id;
-    }
-   
     public long getId() {
         return id;
     }
