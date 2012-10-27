@@ -21,11 +21,12 @@ public class Screeching_Silcaw {
                     target.isPlayer() && 
                     damage.isCombat()) ?
                 new MagicEvent(
-                        permanent,
-                        (MagicPlayer)target,
-                        this,
-                        target + " puts the top four cards of " +
-                        "his or her library into his or her graveyard."):
+                    permanent,
+                    (MagicPlayer)target,
+                    this,
+                    "PN puts the top four cards of " +
+                    "his or her library into his or her graveyard."
+                ):
                 MagicEvent.NONE;
         }
         @Override
