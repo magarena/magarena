@@ -10,7 +10,7 @@ public class Empyrial_Archangel {
     public static final MagicIfDamageWouldBeDealtTrigger T = new MagicIfDamageWouldBeDealtTrigger(2) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            if (damage.getTarget()==permanent.getController()) {
+            if (permanent.isController(damage.getTarget())) {
                 // Replacement effect. Generates no event or action.
                 damage.setTarget(permanent);                
             }
