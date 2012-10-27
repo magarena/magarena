@@ -34,10 +34,6 @@ public class MagicActivationHints {
         return independent;
     }
     
-    private int getMaximum() {
-        return maximum;
-    }
-    
     boolean isMaximum(final MagicSource source) {
         if (maximum==0) {
             return false;
