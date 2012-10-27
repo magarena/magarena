@@ -12,12 +12,13 @@ import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.TitleBar;
+import support.ui.GenericJComboBox;
 
+import java.util.Arrays;
 import javax.swing.BorderFactory;
 import javax.swing.ComboBoxModel;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
-import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JProgressBar;
@@ -55,7 +56,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
     private final JLabel gameLabel;
     private final JLabel strengthLabel;
     private final JTextField gamesTextField;
-    private final JComboBox difficultyComboBox;
+    private final GenericJComboBox<Integer> difficultyComboBox;
     private final JButton startButton;
     private final Color textColor;
     private static CalculateThread calculateThread;
@@ -91,19 +92,19 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
         gamesPanel.setBorder(INPUT_BORDER);
         gamesPanel.setOpaque(false);    
         gamesTextField=new JTextField(String.valueOf(config.getStrengthGames()));
-        final Integer[] levels=new Integer[MagicAI.MAX_LEVEL];
-        for (int level=1;level<=levels.length;level++) {
-            levels[level-1]=level;
-        }
         gamesPanel.add(new JLabel(IconImages.TROPHY),BorderLayout.WEST);
         gamesPanel.add(gamesTextField,BorderLayout.CENTER);
 
         final JPanel difficultyPanel=new JPanel(new BorderLayout(6,0));
         difficultyPanel.setBorder(INPUT_BORDER);
         difficultyPanel.setOpaque(false);
-        final ComboBoxModel difficultyModel=new DefaultComboBoxModel(levels);
-        difficultyComboBox=new JComboBox(difficultyModel);
-        difficultyComboBox.setSelectedItem(Integer.valueOf(config.getStrengthDifficulty()));
+
+        final Integer[] levels=new Integer[MagicAI.MAX_LEVEL];
+        for (int level=1;level<=levels.length;level++) {
+            levels[level-1]=level;
+        }
+        difficultyComboBox=new GenericJComboBox<Integer>(Arrays.asList(levels));
+        difficultyComboBox.setGenericSelectedItem(Integer.valueOf(config.getStrengthDifficulty()));
         difficultyComboBox.setFocusable(false);
         difficultyPanel.add(new JLabel(IconImages.DIFFICULTY),BorderLayout.WEST);
         difficultyPanel.add(difficultyComboBox,BorderLayout.CENTER);
@@ -161,7 +162,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
             halt();
         } else {
             final GeneralConfig generalConfig=GeneralConfig.getInstance();
-            generalConfig.setStrengthDifficulty((Integer)difficultyComboBox.getSelectedItem());
+            generalConfig.setStrengthDifficulty(difficultyComboBox.getSelectedItem());
             try { //parse number of games
                 final int games=Integer.parseInt(gamesTextField.getText());
                 if (games > 0 && games < 1000) {
