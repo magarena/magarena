@@ -74,10 +74,11 @@ cards/%_all.out:
 cards/%_all.txt: cards/%_all.out
 	sort $^ | uniq > $@
 
-cards/new.txt:
+cards/new.txt: cards/existing_tip.txt
 	$(eval LAST := $(shell hg tags | grep "^[[:digit:]]" | head -1 | cut -d' ' -f1))
 	make cards/new_$(LAST).txt
 	mv cards/new_$(LAST).txt $@
+	make wiki/UpcomingCards.wiki
 
 cards/new_%.txt: cards/existing_tip.txt cards/existing_%.txt
 	join -v1 -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
@@ -441,6 +442,4 @@ support/ui:
 
 wiki/UpcomingCards.wiki: cards/new.txt
 	echo "#summary New cards in the next release" > $@
-	echo "{{{" >> $@
-	cat cards/new.txt >> $@
-	echo "}}}" >> $@
+	cat <(echo "{{{") $^ <(echo "}}}") >> $@
