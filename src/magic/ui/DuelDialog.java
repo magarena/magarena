@@ -13,6 +13,8 @@ import magic.ui.widget.SliderPanel;
 import support.ui.GenericJComboBox;
 
 import java.util.Arrays;
+import java.util.List;
+import java.util.ArrayList;
 import javax.swing.ComboBoxModel;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.ImageIcon;
@@ -153,8 +155,8 @@ public class DuelDialog extends JDialog implements ActionListener {
         final Object source=event.getSource();
         if (source==okButton) {            
             final DuelConfig config=DuelConfig.getInstance();
-            final String playerColors=(String)playerColorsChooser.getSelectedItem();
-            final String opponentColors=(String)opponentColorsChooser.getSelectedItem();
+            final String playerColors=playerColorsChooser.getSelectedItem();
+            final String opponentColors=opponentColorsChooser.getSelectedItem();
             config.setAvatar(avatarPanel.getAvatar());
             config.setName(nameTextField.getText());
             config.setStartLife(lifeSlider.getValue());
@@ -229,7 +231,7 @@ public class DuelDialog extends JDialog implements ActionListener {
         }
     }
         
-    private static class ColorsChooser extends JComboBox implements ListCellRenderer {
+    private static class ColorsChooser extends GenericJComboBox<String> implements ListCellRenderer {
 
         private static final long serialVersionUID = 1L;
         
@@ -239,46 +241,46 @@ public class DuelDialog extends JDialog implements ActionListener {
             
             this.setRenderer(this);
             
-            final DefaultComboBoxModel model = new DefaultComboBoxModel();
-            model.addElement("bug");
-            model.addElement("bur");
-            model.addElement("buw");
-            model.addElement("bgr");
-            model.addElement("bgw");
-            model.addElement("brw");
-            model.addElement("ugw");
-            model.addElement("ugr");
-            model.addElement("urw");
-            model.addElement("grw");
-            model.addElement("***");
-            model.addElement("bu");
-            model.addElement("bg");
-            model.addElement("br");
-            model.addElement("bw");
-            model.addElement("ug");
-            model.addElement("ur");
-            model.addElement("uw");
-            model.addElement("gr");
-            model.addElement("gw");
-            model.addElement("rw");
-            model.addElement("**");
-            model.addElement("b");
-            model.addElement("u");
-            model.addElement("g");
-            model.addElement("r");
-            model.addElement("w");
-            model.addElement("*");
-            model.addElement("@");
+            final List<String> items = new ArrayList<String>();
+            items.add("bug");
+            items.add("bur");
+            items.add("buw");
+            items.add("bgr");
+            items.add("bgw");
+            items.add("brw");
+            items.add("ugw");
+            items.add("ugr");
+            items.add("urw");
+            items.add("grw");
+            items.add("***");
+            items.add("bu");
+            items.add("bg");
+            items.add("br");
+            items.add("bw");
+            items.add("ug");
+            items.add("ur");
+            items.add("uw");
+            items.add("gr");
+            items.add("gw");
+            items.add("rw");
+            items.add("**");
+            items.add("b");
+            items.add("u");
+            items.add("g");
+            items.add("r");
+            items.add("w");
+            items.add("*");
+            items.add("@");
             
-            if(DeckGenerators.getInstance().getNrGenerators() > 0) {
-                model.addElement(SEPARATOR);
+            if (DeckGenerators.getInstance().getNrGenerators() > 0) {
+                items.add(SEPARATOR);
                 for(final String generatorName : DeckGenerators.getInstance().getGeneratorNames()) {
-                    model.addElement(generatorName);
+                    items.add(generatorName);
                 }
             }
             
-            setModel(model);
-            setSelectedItem(colors);
+            setItems(items);
+            setGenericSelectedItem(colors);
             lastSelected = colors;
             this.setFocusable(false);
             addActionListener(this);
@@ -329,11 +331,11 @@ public class DuelDialog extends JDialog implements ActionListener {
         }
         
         public void actionPerformed(final ActionEvent e) {
-            final String tempItem = (String) getSelectedItem();
+            final String tempItem = getSelectedItem();
             
             if (SEPARATOR.equals(tempItem)) {
                 // don't select separator
-                setSelectedItem(lastSelected);
+                setGenericSelectedItem(lastSelected);
             } else {
                 lastSelected = tempItem;
             }
