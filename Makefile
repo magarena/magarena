@@ -74,6 +74,11 @@ cards/%_all.out:
 cards/%_all.txt: cards/%_all.out
 	sort $^ | uniq > $@
 
+cards/new.txt:
+	$(eval LAST := $(shell hg tags | grep "^[[:digit:]]" | head -1 | cut -d' ' -f1))
+	make cards/new_$(LAST).txt
+	mv cards/new_$(LAST).txt $@
+
 cards/new_%.txt: cards/existing_tip.txt cards/existing_%.txt
 	join -v1 -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
 
@@ -434,3 +439,8 @@ crash.txt: $(wildcard *.log)
 support/ui:
 	for i in src/$@/*.java; do wget https://cakehat.googlecode.com/svn/trunk/$$i -O $$i; done
 
+wiki/UpcomingCards.wiki: cards/new.txt
+	echo "#summary New cards in the next release" > $@
+	echo "{{{" >> $@
+	cat cards/new.txt >> $@
+	echo "}}}" >> $@
