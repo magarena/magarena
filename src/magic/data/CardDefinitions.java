@@ -85,12 +85,9 @@ public class CardDefinitions {
     private static void addCardSpecificCode(final MagicCardDefinition cardDefinition) {
         try { //reflection
             final Class c = Class.forName("magic.card." + cardDefinition.getCanonicalName());
-            final Field[] fields = c.getDeclaredFields();
-            for (final Field field : fields) {
-                if (Modifier.isPublic(field.getModifiers())) {
-                    final MagicChangeCardDefinition ccd = (MagicChangeCardDefinition)field.get(null);
-                    ccd.change(cardDefinition);
-                }
+            for (final Field field : c.getFields()) {
+                final MagicChangeCardDefinition ccd = (MagicChangeCardDefinition)field.get(null);
+                ccd.change(cardDefinition);
             }
         } catch (final ClassNotFoundException ex) {
             throw new RuntimeException(ex);
