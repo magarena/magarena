@@ -613,7 +613,7 @@ public class MagicCardDefinition {
     }
 
     public MagicActivationHints getActivationHints() {
-        return new MagicActivationHints(timing,true,0);
+        return new MagicActivationHints(timing,true);
     }
     
     public MagicCardActivation getCardActivation() {
