@@ -38,16 +38,10 @@ public class Falkenrath_Aristocrat {
         public MagicEvent getPermanentEvent(
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
-            String message = "SN is indestructible this turn.";
-            boolean isHuman = false;
-            final MagicTarget target = payedCost.getTarget();
-            if (target != MagicTargetNone.getInstance()) {
-                final MagicPermanent sacrificed = (MagicPermanent)payedCost.getTarget();
-                isHuman = sacrificed.getCardDefinition().hasSubType(MagicSubType.Human);
-                if (isHuman) {
-                    message += " Put a +1/+1 counter on SN.";
-                }
-            }
+            final boolean isHuman = payedCost.getTarget().hasSubType(MagicSubType.Human);
+            final String message = 
+                "SN is indestructible this turn." + 
+                (isHuman ? " Put a +1/+1 counter on SN." : "");
             return new MagicEvent(
                 source,
                 isHuman ? 1 : 0,
@@ -64,14 +58,12 @@ public class Falkenrath_Aristocrat {
                 event.getPermanent(),
                 MagicAbility.Indestructible
             ));
-            if (event.getRefInt() == 1) {
-                game.doAction(new MagicChangeCountersAction(
-                    event.getPermanent(),
-                    MagicCounterType.PlusOne,
-                    1,
-                    true
-                ));
-            }
+            game.doAction(new MagicChangeCountersAction(
+                event.getPermanent(),
+                MagicCounterType.PlusOne,
+                event.getRefInt(),
+                true
+            ));
         }
     };
 }
