@@ -223,6 +223,16 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
     }
     
     @Override
+    public boolean hasType(final MagicType type) {
+        return getCardDefinition().hasType(type);
+    }
+    
+    @Override
+    public boolean hasSubType(final MagicSubType subType) {
+        return getCardDefinition().hasSubType(subType);
+    }
+    
+    @Override
     public Collection<MagicActivation> getActivations() {
         return Collections.singletonList((MagicActivation)cardDefinition.getCardActivation());
     }

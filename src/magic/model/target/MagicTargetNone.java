@@ -3,6 +3,8 @@ package magic.model.target;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCopyMap;
 import magic.model.MagicGame;
+import magic.model.MagicType;
+import magic.model.MagicSubType;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.MagicAbility;
@@ -57,6 +59,16 @@ public class MagicTargetNone implements MagicTarget {
     
     @Override
     public boolean hasAbility(final MagicAbility ability) {
+        return false;
+    }
+    
+    @Override
+    public boolean hasType(final MagicType type) {
+        return false;
+    }
+    
+    @Override
+    public boolean hasSubType(final MagicSubType subType) {
         return false;
     }
     

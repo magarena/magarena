@@ -513,6 +513,16 @@ public class MagicPlayer implements MagicTarget {
     }
     
     @Override
+    public boolean hasType(final MagicType type) {
+        return false;
+    }
+    
+    @Override
+    public boolean hasSubType(final MagicSubType subType) {
+        return false;
+    }
+    
+    @Override
     public boolean hasColor(final MagicColor color) {
         return false;
     }

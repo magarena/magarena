@@ -21,7 +21,7 @@ public class Boggart_Mob {
                     damage.getTarget().isPlayer() &&
                     permanent.isFriend(source) &&
                     source.isPermanent() &&
-                    ((MagicPermanent)source).hasSubType(MagicSubType.Goblin)) ?
+                    source.hasSubType(MagicSubType.Goblin)) ?
                 new MagicEvent(
                     permanent,
                     new MagicSimpleMayChoice(

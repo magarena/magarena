@@ -10,6 +10,7 @@ import magic.model.MagicSource;
 import magic.model.MagicColor;
 import magic.model.MagicAbility;
 import magic.model.MagicType;
+import magic.model.MagicSubType;
 import magic.model.MagicPayedCost;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicEvent;
@@ -170,6 +171,16 @@ public abstract class MagicItemOnStack implements MagicTarget {
     @Override
     public boolean hasAbility(final MagicAbility ability) {
         return source.hasAbility(ability);
+    }
+    
+    @Override
+    public boolean hasType(final MagicType type) {
+        return source.hasType(type);
+    }
+    
+    @Override
+    public boolean hasSubType(final MagicSubType subType) {
+        return source.hasSubType(subType);
     }
     
     @Override

@@ -12,7 +12,9 @@ public interface MagicObject extends MagicCopyable, MagicMappable {
     boolean     isCreature();
     boolean     isPlayer();
     boolean     hasColor(final MagicColor color);
-    boolean     hasAbility(final MagicAbility ability);    
+    boolean     hasAbility(final MagicAbility ability);
+    boolean     hasType(final MagicType type);
+    boolean     hasSubType(final MagicSubType subType);
     String      getName();
     MagicPlayer getController();
     MagicCardDefinition getCardDefinition();
