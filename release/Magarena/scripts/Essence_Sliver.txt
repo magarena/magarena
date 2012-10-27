@@ -1,0 +1,11 @@
+name=Essence Sliver
+url=http://magiccards.info/tsts/en/8.html
+image=http://magiccards.info/scans/en/tsts/8.jpg
+value=4.457
+rarity=R
+type=Creature
+subtype=Sliver
+cost={3}{W}
+pt=3/3
+timing=main
+requires_card_code

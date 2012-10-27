@@ -15,7 +15,7 @@ public class City_of_Brass {
                 new MagicEvent(
                     permanent,
                     this,
-                    "SN deals 1 damage to you."
+                    "SN deals 1 damage to PN."
                 ) :
                 MagicEvent.NONE;
 		}

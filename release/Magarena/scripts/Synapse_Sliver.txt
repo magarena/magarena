@@ -1,0 +1,11 @@
+name=Synapse Sliver
+url=http://magiccards.info/le/en/53.html
+image=http://magiccards.info/scans/en/le/53.jpg
+value=4.261
+rarity=R
+type=Creature
+subtype=Sliver
+cost={4}{U}
+pt=3/3
+timing=main
+requires_card_code
