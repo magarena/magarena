@@ -405,7 +405,7 @@ find_nulls: $(MAG)
 	flip -u $@
 
 # meta check
-check: check_aura check_requires_card_code check_script_name
+check_all: check_aura check_requires_card_code check_script_name
 
 # every aura must have an enchant property
 check_aura:
