@@ -35,19 +35,10 @@ public class MagicPermanentTrigger implements Comparable<MagicPermanentTrigger> 
     
     @Override
     public int compareTo(final MagicPermanentTrigger permanentTrigger) {
-        final int priorityDif=trigger.getPriority()-permanentTrigger.trigger.getPriority();
-        if (priorityDif<0) {
-            return -1;
-        } else if (priorityDif>0) {
-            return 1;
-        }
-        final long idDif=id-permanentTrigger.id;
-        if (idDif<0) {
-            return -1;
-        } else if (idDif>0) {
-            return 1;
-        } else {
-            return 0;
-        }
+        //sort by priority, break ties by id
+        final int priorityDiff = trigger.getPriority() - permanentTrigger.trigger.getPriority();
+        return (priorityDiff != 0) ?
+            priorityDiff :
+            Long.signum(id-permanentTrigger.id);
     }
 }

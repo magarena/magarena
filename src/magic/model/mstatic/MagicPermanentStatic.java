@@ -54,13 +54,10 @@ public class MagicPermanentStatic implements Comparable<MagicPermanentStatic> {
     
     @Override
     public int compareTo(final MagicPermanentStatic permanentStatic) {
-        //sort by layer
-        final int layerDif = mstatic.getLayer().compareTo(permanentStatic.mstatic.getLayer());
-        if (layerDif != 0) {
-            return layerDif;
-        } 
-        
-        //break ties by id
-        return Long.signum(id-permanentStatic.id);
+        //sort by layer, break ties by id
+        final int layerDiff = mstatic.getLayer().compareTo(permanentStatic.mstatic.getLayer());
+        return (layerDiff != 0) ?
+            layerDiff :
+            Long.signum(id-permanentStatic.id);
     }
 }
