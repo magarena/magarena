@@ -1,0 +1,11 @@
+name=Plated Sliver
+url=http://magiccards.info/le/en/19.html
+image=http://magiccards.info/scans/en/le/19.jpg
+value=4.053
+rarity=C
+type=Creature
+subtype=Sliver
+cost={W}
+pt=1/1
+timing=main
+requires_card_code
