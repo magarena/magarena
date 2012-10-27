@@ -1,0 +1,9 @@
+name=Mass Hysteria
+url=http://magiccards.info/mi/en/99.html
+image=http://magiccards.info/scans/en/mi/99.jpg
+value=3.849
+rarity=R
+type=Enchantment
+cost={R}
+timing=enchantment
+requires_card_code
