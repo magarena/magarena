@@ -74,6 +74,7 @@ Keyword
     / "Bushido" SPACE Number
     / "Bloodthirst" SPACE Number
     / "Buyback" SPACE ManaCost
+    / "Cumulative upkeep" SPACE ManaCost
     / "@ is unblockable."
     / "@ attacks each turn if able."
     / "@ is indestructible."
