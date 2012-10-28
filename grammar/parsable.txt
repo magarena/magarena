@@ -2,6 +2,7 @@
 {1}{B}: @ gets +1/+0 until end of turn.
 {1}{B}: @ gets +1/+1 until end of turn.
 {1}{B}: @ gets +2/+2 until end of turn.
+{1}{B}{G}: Regenerate @.
 {1}{B}: Regenerate @.
 {1}{G}: Add one mana of any color to your mana pool.
 {1}: @ gets +0/+1 until end of turn.
@@ -23,6 +24,7 @@
 {1}{W}: @ gets +1/+0 until end of turn.
 {2}{B}: @ gets +1/+1 until end of turn.
 {2}{B}: @ gets +2/+2 until end of turn.
+{2}{B}{G}, {T}, Sacrifice a creature: Draw a card.
 {2}{B}: Regenerate @.
 {2}: @ gets +1/+0 until end of turn.
 {2}{G}: Regenerate @.
@@ -33,6 +35,7 @@
 {2}, {T}: Tap target creature.
 {2}{U}, Sacrifice a land: Draw a card.
 {2}{U}: Tap target creature with flying.
+{2}{U}{U}: Draw a card.
 {2}{W}: Tap target creature.
 {3}{B}: Regenerate @.
 {3}: @ deals 1 damage to target creature or player.
@@ -51,20 +54,26 @@
 {7}{G}: @ gets +5/+5 until end of turn.
 Affinity for artifacts
 @ attacks each turn if able.
+{B}{B}: @ gets +1/+0 until end of turn.
 {B}: @ gets +1/+0 until end of turn.
 {B}: @ gets +1/+1 until end of turn.
+{B}{G}: @ gets +1/+1 until end of turn.
+{B}{G}: Regenerate @.
 Bloodthirst 1
 Bloodthirst 2
 Bloodthirst 3
 Bloodthirst 6
 {B}: Regenerate @.
+{B}{R}: @ gets +1/+0 until end of turn.
 {B}, {T}: Tap target creature.
 Bushido 1
 Bushido 2
 Bushido 5
 Buyback {2}
+Buyback {2}{B}{B}
 Buyback {2}{G}
 Buyback {2}{U}
+Buyback {2}{W}{W}
 Buyback {3}
 Buyback {4}
 Buyback {5}
@@ -77,13 +86,16 @@ Counter target red or green spell.
 Counter target spell.
 Cumulative upkeep {1}
 Cumulative upkeep {1}{B}
+Cumulative upkeep {1}{U}{U}
 Cumulative upkeep {1}{W}
 Cumulative upkeep {2}
 Cumulative upkeep {3}
 Cumulative upkeep {B}
 Cumulative upkeep {G}
+Cumulative upkeep {G}{G}
 Cumulative upkeep {R}
 Cumulative upkeep {U}
+Cumulative upkeep {U}{R}
 Cumulative upkeep {W}
 @ deals 10 damage to target creature or player.
 @ deals 1 damage to target creature or player.
@@ -171,6 +183,7 @@ Forestwalk
 {G}: Add one mana of any color to your mana pool.
 {G}: @ gets +0/+1 until end of turn.
 {G}: @ gets +1/+1 until end of turn.
+{G}{G}: Tap target creature with flying.
 {G}: Regenerate @.
 Haste
 Hexproof
@@ -179,6 +192,37 @@ Intimidate
 @ is indestructible.
 Islandwalk
 @ is unblockable.
+Kicker {1}
+Kicker {1}{B}
+Kicker {1}{G}
+Kicker {1}{R}
+Kicker {1}{U}
+Kicker {1}{W}
+Kicker {2}
+Kicker {2}{B}
+Kicker {2}{G}
+Kicker {2}{R}
+Kicker {2}{U}
+Kicker {2}{W}
+Kicker {3}
+Kicker {3}{B}
+Kicker {3}{G}
+Kicker {3}{R}
+Kicker {3}{U}
+Kicker {3}{W}
+Kicker {4}
+Kicker {4}{U}
+Kicker {5}
+Kicker {6}
+Kicker {7}
+Kicker {8}
+Kicker {8}{R}
+Kicker {B}
+Kicker {G}
+Kicker {R}
+Kicker {U}
+Kicker {W}
+Kicker {W}{W}
 Lifelink
 Living weapon
 Mountainwalk
@@ -194,6 +238,7 @@ Reach
 {R}: @ gets +1/+0 until end of turn.
 {R}: @ gets +1/+1 until end of turn.
 {R}: Regenerate @.
+{R}{R}{R}: Regenerate @.
 Sacrifice a creature: Add one mana of any color to your mana pool.
 Sacrifice a creature: Add {R} to your mana pool.
 Sacrifice a creature: @ deals 1 damage to target creature or player.
@@ -241,6 +286,9 @@ Trample
 Undying
 {U}: Regenerate @.
 {U}, Sacrifice @: Return target creature to its owner's hand.
+{U}{U}, {T}: Return target creature to its owner's hand.
+{U}{U}{U}: Regenerate @.
+{U}{U}{U}, {T}: Return target permanent to its owner's hand.
 Vigilance
 {W}: @ gets +0/+1 until end of turn.
 {W}: @ gets +1/+1 until end of turn.
@@ -249,3 +297,5 @@ Wither
 {W}, {T}: Tap target artifact.
 {W}, {T}: Tap target creature.
 {W}, {T}: Tap target permanent.
+{W}{W}: @ gets +1/+0 until end of turn.
+{W}{W}{W}: Regenerate @.
