@@ -96,6 +96,7 @@
 {3}: Return target creature card from your graveyard to your hand.
 {3}{R}, Sacrifice @: Destroy target artifact.
 {3}, Sacrifice a creature: Draw a card.
+{3}, Sacrifice a creature: Return target creature card from your graveyard to the battlefield.
 {3}, {T}: @ deals 1 damage to target creature or player.
 {3}, {T}, Sacrifice @: Destroy target land.
 {3}, {T}, Sacrifice @: Draw three cards.
@@ -142,6 +143,7 @@ Bloodthirst 6
 {B}, Sacrifice a creature: Destroy target nonblack creature.
 {B}, Sacrifice a creature: Regenerate @.
 {B}, Sacrifice @: Destroy target nonblack creature.
+{B}, {T}, Sacrifice @: Return target creature card from your graveyard to the battlefield.
 {B}, {T}: Tap target creature.
 Bushido 1
 Bushido 2
@@ -392,8 +394,10 @@ Reach
 Return target artifact to its owner's hand.
 Return target attacking creature to its owner's hand.
 Return target card from your graveyard to your hand.
+Return target creature card from your graveyard to the battlefield.
 Return target creature card from your graveyard to your hand.
 Return target creature to its owner's hand.
+Return target instant or sorcery card from your graveyard to your hand.
 Return target permanent to its owner's hand.
 {R}: @ gets +0/+1 until end of turn.
 {R}: @ gets +1/+0 until end of turn.

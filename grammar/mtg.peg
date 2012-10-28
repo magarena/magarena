@@ -137,6 +137,7 @@ ManaCost
 
 ReturnAction
     = "Return " SelectOp SPACE SelectCard SPACE "from your graveyard to your hand." 
+    / "Return " SelectOp SPACE SelectCard SPACE "from your graveyard to the battlefield." 
     ;
 
 BounceAction
@@ -245,8 +246,9 @@ SelectPermanent
     / SelectTribal
     ;
 
-SelectCreature
-    = (CreatureRestriction SPACE)? Creature (SPACE CreatureRestriction)?
+PermanentRestriction
+    = "black or red"
+    / "noncreature"
     ;
 
 SelectArtifact
@@ -269,8 +271,23 @@ SelectSpell
     = (SpellRestriction SPACE)? Spell
     ;
 
+SpellRestriction
+    = "creature"
+    / "red or green"
+    / "noncreature"
+    ;
+
 SelectCard
     = (CardRestriction SPACE)? Card
+    ;
+
+CardRestriction
+    = "creature"
+    / "instant or sorcery"
+    ;
+
+SelectCreature
+    = (CreatureRestriction SPACE)? Creature (SPACE CreatureRestriction)?
     ;
 
 CreatureRestriction
@@ -287,21 +304,6 @@ CreatureRestriction
     / "non-Vampire, non-Werewolf, non-Zombie"
     / "nonartifact"
     / "you control"
-    ;
-
-SpellRestriction
-    = "creature"
-    / "red or green"
-    / "noncreature"
-    ;
-
-PermanentRestriction
-    = "black or red"
-    / "noncreature"
-    ;
-
-CardRestriction
-    = "creature"
     ;
 
 Tribal
