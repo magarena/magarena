@@ -18,6 +18,7 @@ SpellEffect
     / PumpAction
     / BounceAction
     / AddManaAction
+    / ReturnAction
     ;
 
 KeywordAbility
@@ -134,6 +135,10 @@ ManaCost
     / HybridSingleCost+
     ;
 
+ReturnAction
+    = "Return " SelectOp SPACE SelectCard SPACE "from your graveyard to your hand." 
+    ;
+
 BounceAction
     = "Return " SelectOp SPACE SelectPermanent SPACE "to its owner's hand."
     ;
@@ -141,6 +146,7 @@ BounceAction
 PreventAction
     = "Prevent the next " Number " damage that would be dealt to target creature or player this turn."
     ;
+
 TapAction
     = "Tap" SPACE SelectOp SPACE SelectPermanent EOS
     ;
@@ -263,6 +269,10 @@ SelectSpell
     = (SpellRestriction SPACE)? Spell
     ;
 
+SelectCard
+    = (CardRestriction SPACE)? Card
+    ;
+
 CreatureRestriction
     = "with converted mana cost 3 or less"
     / "with power 4 or greater"
@@ -290,6 +300,10 @@ PermanentRestriction
     / "noncreature"
     ;
 
+CardRestriction
+    = "creature"
+    ;
+
 Tribal
     = "Spirit"
     ;
@@ -312,6 +326,10 @@ Enchantment
 
 Permanent
     = "permanent"
+    ;
+
+Card
+    = "card"
     ;
 
 Spell

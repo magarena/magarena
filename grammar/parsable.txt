@@ -1,10 +1,12 @@
 {0}: @ gets +1/-1 until end of turn.
 {1}: Add {B} to your mana pool.
 {1}{B}{B}: Regenerate @.
+{1}{B}{B}, Sacrifice a creature: Return target creature card from your graveyard to your hand.
 {1}{B}: @ gets +1/+0 until end of turn.
 {1}{B}: @ gets +1/+1 until end of turn.
 {1}{B}: @ gets +2/+2 until end of turn.
 {1}{B}{G}: Regenerate @.
+{1}{B}, Pay 2 life: Return target creature card from your graveyard to your hand.
 {1}{B}: Regenerate @.
 {1}{B}, Sacrifice a creature: Regenerate @.
 {1}{B}, {T}, Sacrifice @: Destroy target nonblack creature.
@@ -91,6 +93,7 @@
 {3}{G}, Sacrifice @: Destroy target artifact.
 {3}{R}: @ deals 1 damage to target creature or player.
 {3}: Regenerate @.
+{3}: Return target creature card from your graveyard to your hand.
 {3}{R}, Sacrifice @: Destroy target artifact.
 {3}, Sacrifice a creature: Draw a card.
 {3}, {T}: @ deals 1 damage to target creature or player.
@@ -102,6 +105,7 @@
 {3}{U}, {T}: Tap target creature.
 {3}{W}: @ gets +0/+5 until end of turn.
 {3}{W}: Tap target creature.
+{4}{B}, Sacrifice a creature: Return target creature card from your graveyard to your hand.
 {4}{G}, Sacrifice a creature: Destroy target creature with flying.
 {4}{R}, {T}, Sacrifice a creature: @ deals 2 damage to target creature or player.
 {4}, {T}: Draw a card.
@@ -111,6 +115,7 @@
 {5}{G}: Regenerate @.
 {5}, {T}: Destroy target creature with flying.
 {5}, {T}: Draw a card.
+{5}, {T}, Sacrifice @: Return target card from your graveyard to your hand.
 {7}{G}: @ gets +5/+5 until end of turn.
 {8}, {T}: @ deals 4 damage to target creature or player.
 Affinity for artifacts
@@ -133,6 +138,7 @@ Bloodthirst 6
 {B}, Pay 5 life: Regenerate @.
 {B}: Regenerate @.
 {B}{R}: @ gets +1/+0 until end of turn.
+{B}{R}{G}, {T}: Return target creature card from your graveyard to your hand.
 {B}, Sacrifice a creature: Destroy target nonblack creature.
 {B}, Sacrifice a creature: Regenerate @.
 {B}, Sacrifice @: Destroy target nonblack creature.
@@ -385,6 +391,8 @@ Protection from white
 Reach
 Return target artifact to its owner's hand.
 Return target attacking creature to its owner's hand.
+Return target card from your graveyard to your hand.
+Return target creature card from your graveyard to your hand.
 Return target creature to its owner's hand.
 Return target permanent to its owner's hand.
 {R}: @ gets +0/+1 until end of turn.
