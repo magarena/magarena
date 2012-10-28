@@ -556,8 +556,11 @@ Prevent the next 1 damage that would be dealt to target creature or player this 
 Prevent the next 2 damage that would be dealt to target creature or player this turn.
 Prevent the next 3 damage that would be dealt to target creature or player this turn.
 Prevent the next 4 damage that would be dealt to target creature or player this turn.
+Protection from artifacts
 Protection from black
 Protection from blue
+Protection from creatures
+Protection from everything
 Protection from green
 Protection from red
 Protection from white
