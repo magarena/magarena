@@ -204,6 +204,7 @@
 {7}{G}: @ gets +5/+5 until end of turn.
 {8}: Target player loses 3 life and you gain 3 life.
 {8}, {T}: @ deals 4 damage to target creature or player.
+{8}, {T}: Draw four cards.
 Affinity for artifacts
 @ attacks each turn if able.
 {B}{B}: Draw a card.
@@ -325,6 +326,7 @@ Discard a card: Regenerate @.
 Discard a card: Return @ to its owner's hand.
 Double strike
 Draw a card.
+Draw four cards.
 Draw three cards.
 Draw two cards.
 Enchant artifact
@@ -370,6 +372,17 @@ Enchant permanent
 Enchant player
 Enchant tapped creature
 @ enters the battlefield tapped.
+@ enters the battlefield with a -1/-1 counter on it.
+@ enters the battlefield with a +1/+1 counter on it.
+@ enters the battlefield with a charge counter on it.
+@ enters the battlefield with eight +1/+1 counters on it.
+@ enters the battlefield with five -1/-1 counters on it.
+@ enters the battlefield with five +1/+1 counters on it.
+@ enters the battlefield with four -1/-1 counters on it.
+@ enters the battlefield with four +1/+1 counters on it.
+@ enters the battlefield with seven +1/+1 counters on it.
+@ enters the battlefield with six +1/+1 counters on it.
+@ enters the battlefield with six charge counters on it.
 @ enters the battlefield with three -1/-1 counters on it.
 @ enters the battlefield with three +1/+1 counters on it.
 @ enters the battlefield with three charge counters on it.
@@ -497,6 +510,7 @@ Pay 2 life: Return @ to its owner's hand.
 Pay 3 life: Put a +1/+1 counter on @.
 Pay 3 life: Put a +1/+1 counter on target creature.
 Pay 4 life: Regenerate @.
+Pay 7 life: Draw seven cards.
 Pay 8 life: Untap @.
 Persist
 Prevent the next 1 damage that would be dealt to target creature or player this turn.

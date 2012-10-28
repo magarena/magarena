@@ -193,7 +193,8 @@ EntersTapped
     ;
 
 EntersWithCounter
-    = "@ enters the battlefield with " Count SPACE CounterType " counters on it."
+    = "@ enters the battlefield with a " CounterType " counter on it."
+    / "@ enters the battlefield with " Count SPACE CounterType " counters on it."
     ;
 
 CounterType
@@ -208,6 +209,13 @@ Count
     = "one"
     / "two"
     / "three"
+    / "four"
+    / "five"
+    / "six"
+    / "seven"
+    / "eight"
+    / "nine"
+    / "ten"
     ;
 
 Enchant
