@@ -279,6 +279,7 @@ CounterAction
 
 SelectOp
     = "target"
+    / "all"
     / "a"
     ;
 
@@ -367,6 +368,7 @@ CreatureRestriction
     / "nonblack"
     / "nonartifact, nonblack"
     / "attacking"
+    / "attacking or blocking"
     / "green or white"
     / "Human"
     / "non-Vampire, non-Werewolf, non-Zombie"
@@ -379,31 +381,31 @@ Tribal
     ;
 
 Creature
-    = "creature"
+    = "creature" "s"?
     ;
 
 Artifact
-    = "artifact"
+    = "artifact" "s"?
     ;
 
 Land
-    = "land"
+    = "land" "s"?
     ;
 
 Enchantment
-    = "enchantment"
+    = "enchantment" "s"?
     ;
 
 Permanent
-    = "permanent"
+    = "permanent" "s"?
     ;
 
 Card
-    = "card"
+    = "card" "s"?
     ;
 
 Spell
-    = "spell"
+    = "spell" "s"?
     ;
 
 NoRegen 
