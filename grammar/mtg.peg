@@ -58,6 +58,7 @@ Keyword
     / "Lifelink"
     / "Exalted"
     / "Shroud"
+    / "Persist"
     / "Protection from black"
     / "Protection from red"
     / "Protection from white"
@@ -72,6 +73,7 @@ Keyword
     / "Living weapon"
     / "Bushido" SPACE Number
     / "Bloodthirst" SPACE Number
+    / "Buyback" SPACE ManaCost
     / "@ is unblockable."
     / "@ attacks each turn if able."
     / "@ is indestructible."

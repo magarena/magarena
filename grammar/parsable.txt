@@ -62,6 +62,12 @@ Bloodthirst 6
 Bushido 1
 Bushido 2
 Bushido 5
+Buyback {2}
+Buyback {2}{G}
+Buyback {2}{U}
+Buyback {3}
+Buyback {4}
+Buyback {5}
 @ can't be countered.
 @ can't block.
 Changeling
@@ -166,6 +172,7 @@ Islandwalk
 Lifelink
 Living weapon
 Mountainwalk
+Persist
 Protection from black
 Protection from blue
 Protection from green
