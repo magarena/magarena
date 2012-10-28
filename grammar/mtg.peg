@@ -1,8 +1,8 @@
 MagicRule 
-    = SpellEffect EOT
-    / KeywordAbility EOT
-    / StaticAbility EOT
-    / ActivatedAbility EOT
+    = SpellEffect EOR
+    / KeywordAbility EOR
+    / StaticAbility EOR
+    / ActivatedAbility EOR
     ;
 
 SpellEffect
@@ -30,6 +30,8 @@ ActivatedAbility
     / RegenerateActivation
     / PingActivation
     / TapActivation
+    / DrawActivation
+    / BounceActivation
     ;
 
 Keyword
@@ -80,11 +82,26 @@ ActivationCosts
     
 ActivationCost
     = "{T}"
+    / "Sacrifice @"
+    / "{1}"
     / "{R}"
     / "{B}"
     / "{G}"
     / "{W}"
+    / "{U}"
     / "{1}{B}"
+    ;
+
+BounceActivation
+    = ActivationCosts ": " BounceAction
+    ;
+
+BounceAction
+    = "Return " SelectionOp SPACE SelectPermanent SPACE "to its owner's hand."
+    ;
+
+DrawActivation
+    = ActivationCosts ": " DrawAction
     ;
 
 TapActivation
@@ -92,7 +109,7 @@ TapActivation
     ;
 
 TapAction
-    = "Tap" SPACE SelectionOp SPACE SelectPermanent EOR
+    = "Tap" SPACE SelectionOp SPACE SelectPermanent EOS
     ;
 
 RegenerateActivation
@@ -117,7 +134,7 @@ Enchant
     ;
 
 AddManaActivation
-    = ActivationCost ": " AddManaAction EOR
+    = ActivationCost ": " AddManaAction EOS
     ;
 
 PumpActivation
@@ -143,19 +160,19 @@ DrawAction
     ;
 
 DestroyNoRegenAction
-    = Destroy SPACE SelectionOp SPACE SelectPermanentUnion EOR SPACE NoRegen EOR
+    = Destroy SPACE SelectionOp SPACE SelectPermanentUnion EOS SPACE NoRegen EOS
     ;
 
 DestroyAction 
-    = Destroy SPACE SelectionOp SPACE SelectPermanentUnion EOR
+    = Destroy SPACE SelectionOp SPACE SelectPermanentUnion EOS
     ;
 
 ExileAction
-    = Exile SPACE SelectionOp SPACE SelectPermanentUnion EOR
+    = Exile SPACE SelectionOp SPACE SelectPermanentUnion EOS
     ;
 
 CounterAction
-    = Counter SPACE SelectionOp SPACE SelectSpell EOR
+    = Counter SPACE SelectionOp SPACE SelectSpell EOS
     ;
 
 SelectionOp
@@ -281,10 +298,10 @@ SPACE
     = " "
     ;
     
-EOR 
+EOS 
     = "."
     ;
 
-EOT
+EOR
     = !_
     ;
