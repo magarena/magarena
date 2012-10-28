@@ -238,7 +238,7 @@ SelectPermanentUnion
     ;
 
 SelectPermanent
-    = (PermanentRestriction SPACE)? Permanent
+    = (PermanentRestriction SPACE)? Permanent (SPACE PermanentRestriction)?
     / SelectCreature
     / SelectArtifact
     / SelectEnchantment
@@ -249,6 +249,7 @@ SelectPermanent
 PermanentRestriction
     = "black or red"
     / "noncreature"
+    / "you control"
     ;
 
 SelectArtifact
@@ -283,7 +284,10 @@ SelectCard
 
 CardRestriction
     = "creature"
+    / "artifact"
     / "instant or sorcery"
+    / "instant"
+    / "sorcery"
     ;
 
 SelectCreature

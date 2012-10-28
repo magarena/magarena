@@ -44,6 +44,7 @@
 {1}, {T}: Exile target creature you control.
 {1}, {T}, Pay 1 life: Add one mana of any color to your mana pool.
 {1}, {T}, Sacrifice a creature: @ deals 2 damage to target creature or player.
+{1}, {T}, Sacrifice a creature: Return target artifact card from your graveyard to your hand.
 {1}, {T}, Sacrifice @: Add one mana of any color to your mana pool.
 {1}, {T}, Sacrifice @: @ deals 2 damage to target creature or player.
 {1}, {T}, Sacrifice @: Draw a card.
@@ -74,8 +75,10 @@
 {2}, Sacrifice @: Draw a card.
 {2}, {T}: Add one mana of any color to your mana pool.
 {2}, {T}: Exile target creature you control.
+{2}, {T}: Exile target permanent you control.
 {2}, {T}: Prevent the next 1 damage that would be dealt to target creature or player this turn.
 {2}, {T}, Sacrifice a creature: Draw a card.
+{2}, {T}, Sacrifice @: Return target artifact card from your graveyard to your hand.
 {2}, {T}: Tap target creature.
 {2}{U}, Sacrifice a land: Draw a card.
 {2}{U}: Tap target creature with flying.
@@ -113,6 +116,7 @@
 {4}, {T}, Sacrifice a land: @ deals 1 damage to target creature or player.
 {4}, {T}: Tap target creature.
 {4}{W}: @ gets +1/+2 until end of turn.
+{4}{W}, {T}, Sacrifice @: Return target artifact card from your graveyard to the battlefield.
 {5}{G}: Regenerate @.
 {5}, {T}: Destroy target creature with flying.
 {5}, {T}: Draw a card.
@@ -391,6 +395,8 @@ Protection from red
 Protection from white
 {R}: Add {B} to your mana pool.
 Reach
+Return target artifact card from your graveyard to the battlefield.
+Return target artifact card from your graveyard to your hand.
 Return target artifact to its owner's hand.
 Return target attacking creature to its owner's hand.
 Return target card from your graveyard to your hand.
@@ -399,6 +405,8 @@ Return target creature card from your graveyard to your hand.
 Return target creature to its owner's hand.
 Return target instant or sorcery card from your graveyard to your hand.
 Return target permanent to its owner's hand.
+Return target permanent you control to its owner's hand.
+Return target sorcery card from your graveyard to your hand.
 {R}: @ gets +0/+1 until end of turn.
 {R}: @ gets +1/+0 until end of turn.
 {R}: @ gets +1/-1 until end of turn.
@@ -481,6 +489,7 @@ Trample
 {T}, Sacrifice @: Counter target spell.
 {T}, Sacrifice @: Destroy target attacking creature.
 {T}, Sacrifice @: Destroy target land.
+{T}, Sacrifice @: Return target artifact card from your graveyard to your hand.
 {T}: Tap target artifact.
 {T}: Tap target creature.
 {T}: Tap target creature with converted mana cost 3 or less.
@@ -498,6 +507,7 @@ Undying
 {U}, Sacrifice @: Return target creature to its owner's hand.
 {U}, {T}: @ deals 1 damage to target creature or player.
 {U}, {T}: Draw two cards.
+{U}, {T}: Return target permanent you control to its owner's hand.
 {U}{U}, {T}: Return target creature to its owner's hand.
 {U}{U}{U}: Regenerate @.
 {U}{U}{U}, {T}: Return target permanent to its owner's hand.
@@ -515,6 +525,7 @@ Wither
 {W}, Sacrifice a creature: Prevent the next 1 damage that would be dealt to target creature or player this turn.
 {W}, Sacrifice @: Prevent the next 2 damage that would be dealt to target creature or player this turn.
 {W}, Sacrifice @: Prevent the next 3 damage that would be dealt to target creature or player this turn.
+{W}, Sacrifice @: Return target artifact card from your graveyard to your hand.
 {W}, {T}: @ gets +0/+3 until end of turn.
 {W}, {T}: Prevent the next 1 damage that would be dealt to target creature or player this turn.
 {W}, {T}: Prevent the next 2 damage that would be dealt to target creature or player this turn.
@@ -524,4 +535,5 @@ Wither
 {W}{U}{B}{R}{G}: Exile target permanent.
 {W}{W}: @ gets +0/+2 until end of turn.
 {W}{W}: @ gets +1/+0 until end of turn.
+{W}{W}, {T}: Return target artifact card from your graveyard to your hand.
 {W}{W}{W}: Regenerate @.
