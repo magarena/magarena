@@ -25,8 +25,7 @@ Action
     / AddManaAction
     / ReturnAction
     / SacrificeAction
-    / LoseLifeAction
-    / GainLifeAction
+    / ChangeLifeAction
     ;
 
 KeywordAbility
@@ -143,12 +142,10 @@ ManaCost
     / HybridSingleCost+
     ;
 
-LoseLifeAction
-    = "Target player loses " Number " life"
-    ;
-
-GainLifeAction
-    = "Target player gains " Number " life"
+ChangeLifeAction
+    = "Target player loses " Number " life and you gain " Number " life"
+    / "Target player loses " Number " life"
+    / "Target player gains " Number " life"
     ;
 
 ReturnAction

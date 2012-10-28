@@ -118,6 +118,7 @@
 {3}{U}, Sacrifice a permanent: Return target permanent to its owner's hand.
 {3}{U}, {T}: Draw a card.
 {3}{U}, {T}: Tap target creature.
+{3}{W}{B}, {T}: Target player loses 1 life and you gain 1 life.
 {3}{W}: @ gets +0/+5 until end of turn.
 {3}{W}: Tap target creature.
 {4}{B}, Sacrifice a creature: Return target creature card from your graveyard to your hand.
@@ -133,11 +134,13 @@
 {5}, {T}: Draw a card.
 {5}, {T}, Sacrifice @: Return target card from your graveyard to your hand.
 {7}{G}: @ gets +5/+5 until end of turn.
+{8}: Target player loses 3 life and you gain 3 life.
 {8}, {T}: @ deals 4 damage to target creature or player.
 Affinity for artifacts
 @ attacks each turn if able.
 {B}{B}: Draw a card.
 {B}{B}: @ gets +1/+0 until end of turn.
+{B}{B}, {T}: Target player loses 2 life and you gain 2 life.
 {B}, Discard a card: Regenerate @.
 {B}: @ gets +1/+0 until end of turn.
 {B}: @ gets +1/-1 until end of turn.
@@ -160,6 +163,7 @@ Bloodthirst 6
 {B}, Sacrifice a creature: Regenerate @.
 {B}, Sacrifice a creature: Target player loses 1 life.
 {B}, Sacrifice @: Destroy target nonblack creature.
+{B}, Sacrifice @: Target player loses 1 life and you gain 1 life.
 {B}, {T}, Discard a card: Return target creature card from your graveyard to your hand.
 {B}, {T}, Sacrifice @: Return target creature card from your graveyard to the battlefield.
 {B}, {T}: Tap target creature.
@@ -473,6 +477,7 @@ Sacrifice @: Draw a card.
 Sacrifice @: Return target creature to its owner's hand.
 Sacrifice @: Return target creature you control to its owner's hand.
 Sacrifice @: Target player loses 1 life.
+Sacrifice @: Target player loses 1 life and you gain 1 life.
 Shadow
 Shroud
 Soulbond
@@ -491,7 +496,11 @@ Target player gains 5 life.
 Target player gains 6 life.
 Target player gains 7 life.
 Target player gains 8 life.
+Target player loses 1 life and you gain 1 life.
+Target player loses 2 life and you gain 2 life.
+Target player loses 4 life and you gain 4 life.
 Target player loses 5 life.
+Target player loses 5 life and you gain 5 life.
 {T}: @ deals 1 damage to target creature or player.
 {T}: @ deals 3 damage to target creature or player.
 {T}: Destroy target creature. It can't be regenerated.
