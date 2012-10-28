@@ -1,12 +1,140 @@
 MagicRule 
-    = SpellRule EOT
+    = SpellEffect EOT
+    / KeywordAbility EOT
+    / StaticAbility EOT
+    / ActivatedAbility EOT
     ;
 
-SpellRule
+SpellEffect
     = DestroyNoRegenAction
     / DestroyAction 
     / ExileAction 
     / CounterAction
+    / DamageAction
+    / DrawAction
+    / TapAction
+    ;
+
+KeywordAbility
+    = Keyword
+    / Enchant
+    ;
+
+StaticAbility
+    = EntersTapped
+    ;
+
+ActivatedAbility
+    = AddManaActivation
+    / PumpActivation
+    / RegenerateActivation
+    / PingActivation
+    / TapActivation
+    ;
+
+Keyword
+    = "Flash"
+    / "Flying"
+    / "Haste"
+    / "Defender"
+    / "Vigilance"
+    / "Reach"
+    / "Trample"
+    / "First strike"
+    / "Double strike"
+    / "Infect"
+    / "Wither"
+    / "Fear"
+    / "Shadow"
+    / "Swampwalk"
+    / "Forestwalk"
+    / "Islandwalk"
+    / "Mountainwalk"
+    / "Changeling"
+    / "Deathtouch"
+    / "Lifelink"
+    / "Exalted"
+    / "Shroud"
+    / "Protection from black"
+    / "Protection from red"
+    / "Protection from white"
+    / "Protection from blue"
+    / "@ can't block."
+    / "Hexproof"
+    / "Soulbond"
+    / "Undying"
+    / "Intimidate"
+    / "Living weapon"
+    / "Bushido" SPACE Number
+    / "Bloodthirst" SPACE Number
+    / "@ is unblockable."
+    / "@ attacks each turn if able."
+    / "@ is indestructible."
+    / "@ can't be countered."
+    ;
+
+ActivationCosts
+    = ActivationCost ("," SPACE ActivationCost)*
+    ;
+    
+ActivationCost
+    = "{T}"
+    / "{R}"
+    / "{B}"
+    / "{G}"
+    / "{W}"
+    / "{1}{B}"
+    ;
+
+TapActivation
+    = ActivationCosts ": " TapAction
+    ;
+
+TapAction
+    = "Tap" SPACE SelectionOp SPACE SelectPermanent EOR
+    ;
+
+RegenerateActivation
+    = ActivationCost ": Regenerate @."
+    ;
+
+PingActivation
+    = ActivationCost ": " DamageAction
+    ;
+
+DamageAction
+    = "@ deals " Number " damage to target creature or player."
+    ;
+
+EntersTapped
+    = "@ enters the battlefield tapped."
+    ;
+
+Enchant
+    = "Enchant" SPACE SelectPermanent
+    / "Enchant player"
+    ;
+
+AddManaActivation
+    = ActivationCost ": " AddManaAction EOR
+    ;
+
+PumpActivation
+    = ActivationCost ": @ gets +" Number "/+" Number " until end of turn."
+    ;
+
+AddManaAction
+    = "Add {1} to your mana pool"
+    / "Add {G} to your mana pool"
+    / "Add {B} to your mana pool"
+    / "Add {U} to your mana pool"
+    / "Add {W} to your mana pool"
+    / "Add {R} to your mana pool"
+    / "Add one mana of any color to your mana pool"
+    ;
+
+DrawAction
+    = "Draw a card."
     ;
 
 DestroyNoRegenAction
@@ -37,7 +165,7 @@ SelectPermanentUnion
     ;
 
 SelectPermanent
-    = PermanentRestrictionBefore? Permanent
+    = (PermanentRestriction SPACE)? Permanent
     / SelectCreature
     / SelectArtifact
     / SelectEnchantment
@@ -46,7 +174,7 @@ SelectPermanent
     ;
 
 SelectCreature
-    = CreatureRestrictionBefore? Creature CreatureRestrictionAfter?
+    = (CreatureRestriction SPACE)? Creature (SPACE CreatureRestriction)?
     ;
 
 SelectArtifact
@@ -66,15 +194,7 @@ SelectTribal
     ;
 
 SelectSpell
-    = SpellRestrictionBefore? Spell
-    ;
-    
-CreatureRestrictionBefore
-    = CreatureRestriction SPACE
-    ;
-
-CreatureRestrictionAfter
-    = SPACE CreatureRestriction
+    = (SpellRestriction SPACE)? Spell
     ;
 
 CreatureRestriction
@@ -90,20 +210,13 @@ CreatureRestriction
     / "Human"
     / "non-Vampire, non-Werewolf, non-Zombie"
     / "nonartifact"
-    ;
-
-SpellRestrictionBefore
-    = SpellRestriction SPACE
+    / "you control"
     ;
 
 SpellRestriction
     = "creature"
     / "red or green"
     / "noncreature"
-    ;
-
-PermanentRestrictionBefore
-    = PermanentRestriction SPACE
     ;
 
 PermanentRestriction
@@ -153,6 +266,10 @@ Exile
 
 Counter 
     = "Counter"
+    ;
+
+Number 
+    = [0-9]+
     ;
 
 SPACE 
