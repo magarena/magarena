@@ -200,6 +200,7 @@ EntersWithCounter
 CounterType
     = "+1/+1"
     / "-1/-1"
+    / "+1/+0"
     / "charge"
     / "spore"
     / "storage"
@@ -216,6 +217,7 @@ Count
     / "eight"
     / "nine"
     / "ten"
+    / "X"
     ;
 
 Enchant

@@ -329,6 +329,7 @@ Draw a card.
 Draw four cards.
 Draw three cards.
 Draw two cards.
+Draw X cards.
 Enchant artifact
 Enchant creature
 Enchant creature you control
@@ -378,8 +379,10 @@ Enchant tapped creature
 @ enters the battlefield with eight +1/+1 counters on it.
 @ enters the battlefield with five -1/-1 counters on it.
 @ enters the battlefield with five +1/+1 counters on it.
+@ enters the battlefield with four +1/+0 counters on it.
 @ enters the battlefield with four -1/-1 counters on it.
 @ enters the battlefield with four +1/+1 counters on it.
+@ enters the battlefield with seven +1/+0 counters on it.
 @ enters the battlefield with seven +1/+1 counters on it.
 @ enters the battlefield with six +1/+1 counters on it.
 @ enters the battlefield with six charge counters on it.
@@ -389,6 +392,9 @@ Enchant tapped creature
 @ enters the battlefield with two -1/-1 counters on it.
 @ enters the battlefield with two +1/+1 counters on it.
 @ enters the battlefield with two charge counters on it.
+@ enters the battlefield with X +1/+0 counters on it.
+@ enters the battlefield with X +1/+1 counters on it.
+@ enters the battlefield with X charge counters on it.
 Equip {0}
 Equip {1}
 Equip {2}
