@@ -94,13 +94,14 @@ ActivationCosts
     
 SacrificeAction
     = "Sacrifice " SelectOp SPACE SelectPermanent
+    / "Sacrifice @"
     ;
 
 ActivationCost
     = "{T}"
-    / "Sacrifice @"
     / SacrificeAction 
     / ManaCost
+    / "Pay " Number " life"
     ;
 
 ColorlessCost

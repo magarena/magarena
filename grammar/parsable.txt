@@ -19,6 +19,7 @@
 {1}{G}: Regenerate @.
 {1}{G}, Sacrifice @: Destroy target artifact or enchantment.
 {1}{G}, Sacrifice @: Destroy target enchantment.
+{1}, Pay 2 life: @ deals 1 damage to target creature or player.
 {1}{R}: @ deals 1 damage to target creature or player.
 {1}: Regenerate @.
 {1}{R}: @ gets +1/+0 until end of turn.
@@ -39,6 +40,7 @@
 {1}, {T}: Add {U} to your mana pool.
 {1}, {T}: Add {W} to your mana pool.
 {1}, {T}: Exile target creature you control.
+{1}, {T}, Pay 1 life: Add one mana of any color to your mana pool.
 {1}, {T}, Sacrifice a creature: @ deals 2 damage to target creature or player.
 {1}, {T}, Sacrifice @: Add one mana of any color to your mana pool.
 {1}, {T}, Sacrifice @: @ deals 2 damage to target creature or player.
@@ -64,6 +66,7 @@
 {2}{B}: Regenerate @.
 {2}: @ gets +1/+0 until end of turn.
 {2}{G}: Regenerate @.
+{2}, Pay 2 life: Draw a card.
 {2}: Regenerate @.
 {2}, Sacrifice a permanent: Return target creature to its owner's hand.
 {2}, Sacrifice @: Draw a card.
@@ -124,6 +127,10 @@ Bloodthirst 1
 Bloodthirst 2
 Bloodthirst 3
 Bloodthirst 6
+{B}, Pay 1 life: Add one mana of any color to your mana pool.
+{B}, Pay 1 life: @ gets +1/+1 until end of turn.
+{B}, Pay 2 life: Draw a card.
+{B}, Pay 5 life: Regenerate @.
 {B}: Regenerate @.
 {B}{R}: @ gets +1/+0 until end of turn.
 {B}, Sacrifice a creature: Destroy target nonblack creature.
@@ -358,6 +365,12 @@ Modular 3
 Modular 4
 Modular 6
 Mountainwalk
+Pay 1 life: Draw a card.
+Pay 1 life: @ gets +1/+1 until end of turn.
+Pay 1 life: @ gets +2/-1 until end of turn.
+Pay 1 life: Regenerate @.
+Pay 2 life: Regenerate @.
+Pay 4 life: Regenerate @.
 Persist
 Prevent the next 1 damage that would be dealt to target creature or player this turn.
 Prevent the next 2 damage that would be dealt to target creature or player this turn.
@@ -442,6 +455,8 @@ Tap target permanent.
 {T}: @ gets +0/+4 until end of turn.
 {T}: @ gets +3/+3 until end of turn.
 Totem armor
+{T}, Pay 1 life: Add {G} to your mana pool.
+{T}, Pay 1 life: Add one mana of any color to your mana pool.
 {T}: Prevent the next 1 damage that would be dealt to target creature or player this turn.
 {T}: Prevent the next 2 damage that would be dealt to target creature or player this turn.
 {T}: Prevent the next 3 damage that would be dealt to target creature or player this turn.
