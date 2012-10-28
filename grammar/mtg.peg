@@ -81,9 +81,14 @@ ActivationCosts
     = ActivationCost ("," SPACE ActivationCost)*
     ;
     
+SacrificeAction
+    = "Sacrifice " SelectOp SPACE SelectPermanent
+    ;
+
 ActivationCost
     = "{T}"
     / "Sacrifice @"
+    / SacrificeAction 
     / ManaCost
     ;
 
@@ -110,7 +115,7 @@ BounceActivation
     ;
 
 BounceAction
-    = "Return " SelectionOp SPACE SelectPermanent SPACE "to its owner's hand."
+    = "Return " SelectOp SPACE SelectPermanent SPACE "to its owner's hand."
     ;
 
 DrawActivation
@@ -122,7 +127,7 @@ TapActivation
     ;
 
 TapAction
-    = "Tap" SPACE SelectionOp SPACE SelectPermanent EOS
+    = "Tap" SPACE SelectOp SPACE SelectPermanent EOS
     ;
 
 RegenerateActivation
@@ -173,22 +178,22 @@ DrawAction
     ;
 
 DestroyNoRegenAction
-    = Destroy SPACE SelectionOp SPACE SelectPermanentUnion EOS SPACE NoRegen EOS
+    = Destroy SPACE SelectOp SPACE SelectPermanentUnion EOS SPACE NoRegen EOS
     ;
 
 DestroyAction 
-    = Destroy SPACE SelectionOp SPACE SelectPermanentUnion EOS
+    = Destroy SPACE SelectOp SPACE SelectPermanentUnion EOS
     ;
 
 ExileAction
-    = Exile SPACE SelectionOp SPACE SelectPermanentUnion EOS
+    = Exile SPACE SelectOp SPACE SelectPermanentUnion EOS
     ;
 
 CounterAction
-    = Counter SPACE SelectionOp SPACE SelectSpell EOS
+    = Counter SPACE SelectOp SPACE SelectSpell EOS
     ;
 
-SelectionOp
+SelectOp
     = "target"
     / "a"
     ;
