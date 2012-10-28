@@ -104,7 +104,7 @@ ActivationCosts
     ;
     
 SacrificeAction
-    = "Sacrifice " SelectOp SPACE SelectPermanent
+    = "Sacrifice " SelectPermanent
     / "Sacrifice @"
     ;
 
@@ -163,12 +163,12 @@ ChangeLifeAction
     ;
 
 ReturnAction
-    = "Return " SelectOp SPACE SelectCard SPACE "from your graveyard to your hand" 
-    / "Return " SelectOp SPACE SelectCard SPACE "from your graveyard to the battlefield" 
+    = "Return " SelectCard " from your graveyard to your hand" 
+    / "Return " SelectCard " from your graveyard to the battlefield" 
     ;
 
 BounceAction
-    = "Return " SelectOp SPACE SelectPermanent SPACE "to its owner's hand"
+    = "Return " SelectPermanent SPACE "to its owner's hand"
     ;
 
 PreventAction
@@ -176,7 +176,7 @@ PreventAction
     ;
 
 TapAction
-    = "Tap" SPACE SelectOp SPACE SelectPermanent
+    = "Tap" SPACE SelectPermanent
     ;
 
 RegenerateAction
@@ -200,6 +200,7 @@ CounterType
     / "-1/-1"
     / "charge"
     / "spore"
+    / "storage"
     ;
 
 Count
@@ -209,7 +210,7 @@ Count
     ;
 
 Enchant
-    = "Enchant" SPACE SelectPermanent
+    = "Enchant" SPACE RestrictedPermanent
     / "Enchant player"
     ;
 
@@ -250,19 +251,19 @@ DiscardAction
     ;
 
 DestroyNoRegenAction
-    = Destroy SPACE SelectOp SPACE SelectPermanentUnion EOS SPACE NoRegen
+    = Destroy SPACE SelectPermanent EOS SPACE NoRegen
     ;
 
 DestroyAction 
-    = Destroy SPACE SelectOp SPACE SelectPermanentUnion
+    = Destroy SPACE SelectPermanent
     ;
 
 ExileAction
-    = Exile SPACE SelectOp SPACE SelectPermanentUnion
+    = Exile SPACE SelectPermanent
     ;
 
 CounterAction
-    = Counter SPACE SelectOp SPACE SelectSpell
+    = Counter SPACE SelectSpell
     ;
 
 SelectOp
@@ -270,15 +271,24 @@ SelectOp
     / "a"
     ;
 
-SelectPermanentUnion
-    = SelectPermanent ", " SelectPermanent ", or " SelectPermanent
-    / SelectPermanent " or " SelectPermanent
-    / SelectPermanent 
-    ;
+SelectCard
+    = SelectOp SPACE RestrictedCard
 
 SelectPermanent
+    = SelectOp SPACE RestrictedPermanentUnion
+
+SelectSpell
+    = SelectOp SPACE RestrictedSpell
+
+RestrictedPermanentUnion
+    = RestrictedPermanent ", " RestrictedPermanent ", or " RestrictedPermanent
+    / RestrictedPermanent " or " RestrictedPermanent
+    / RestrictedPermanent 
+    ;
+
+RestrictedPermanent
     = (PermanentRestriction SPACE)? Permanent (SPACE PermanentRestriction)?
-    / SelectCreature
+    / RestrictedCreature
     / SelectArtifact
     / SelectEnchantment
     / SelectLand
@@ -307,7 +317,7 @@ SelectTribal
     = Tribal
     ;
 
-SelectSpell
+RestrictedSpell
     = (SpellRestriction SPACE)? Spell
     ;
 
@@ -317,7 +327,7 @@ SpellRestriction
     / "noncreature"
     ;
 
-SelectCard
+RestrictedCard
     = (CardRestriction SPACE)? Card
     ;
 
@@ -329,7 +339,7 @@ CardRestriction
     / "sorcery"
     ;
 
-SelectCreature
+RestrictedCreature
     = (CreatureRestriction SPACE)? Creature (SPACE CreatureRestriction)?
     ;
 
