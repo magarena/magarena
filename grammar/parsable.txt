@@ -47,6 +47,7 @@
 {1}{U}, Sacrifice @: Counter target creature spell.
 {1}{U}, Sacrifice @: Draw a card.
 {1}{U}, Sacrifice @: Return target creature to its owner's hand.
+{1}{U}, {T}, Sacrifice @: Draw two cards.
 {1}{U}{U}, Sacrifice a creature: Counter target creature spell.
 {1}{W}{B}, {T}: Destroy target creature or enchantment.
 {1}{W}: @ gets +0/+1 until end of turn.
@@ -91,6 +92,7 @@
 {3}, Sacrifice a creature: Draw a card.
 {3}, {T}: @ deals 1 damage to target creature or player.
 {3}, {T}, Sacrifice @: Destroy target land.
+{3}, {T}, Sacrifice @: Draw three cards.
 {3}{U}: Draw a card.
 {3}{U}, Sacrifice a permanent: Return target permanent to its owner's hand.
 {3}{U}, {T}: Draw a card.
@@ -206,6 +208,8 @@ Destroy target Spirit or enchantment.
 Destroy target tapped creature.
 Double strike
 Draw a card.
+Draw three cards.
+Draw two cards.
 Enchant artifact
 Enchant creature
 Enchant creature you control
@@ -434,6 +438,7 @@ Tap target permanent.
 {T}: Destroy target land.
 {T}: Destroy target tapped creature.
 {T}: Draw a card.
+{T}: Draw three cards.
 {T}: @ gets +0/+4 until end of turn.
 {T}: @ gets +3/+3 until end of turn.
 Totem armor
@@ -465,6 +470,7 @@ Undying
 {U}, Sacrifice @: Counter target noncreature spell.
 {U}, Sacrifice @: Return target creature to its owner's hand.
 {U}, {T}: @ deals 1 damage to target creature or player.
+{U}, {T}: Draw two cards.
 {U}{U}, {T}: Return target creature to its owner's hand.
 {U}{U}{U}: Regenerate @.
 {U}{U}{U}, {T}: Return target permanent to its owner's hand.

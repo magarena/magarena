@@ -199,6 +199,7 @@ ManaSource
 
 DrawAction
     = "Draw a card."
+    / "Draw " Count " cards."
     ;
 
 DestroyNoRegenAction
