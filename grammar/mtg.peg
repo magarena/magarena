@@ -6,13 +6,17 @@ MagicRule
     ;
 
 SpellEffect
+    = Action EOS
+    ;
+
+Action
     = DestroyNoRegenAction
     / DestroyAction 
-    / ExileAction 
+    / ExileAction
     / CounterAction
     / DamageAction
-    / DrawAction EOS
-    / DiscardAction EOS
+    / DrawAction
+    / DiscardAction
     / TapAction
     / PreventAction
     / RegenerateAction
@@ -20,6 +24,7 @@ SpellEffect
     / BounceAction
     / AddManaAction
     / ReturnAction
+    / SacrificeAction
     ;
 
 KeywordAbility
@@ -101,9 +106,8 @@ SacrificeAction
 
 ActivationCost
     = "{T}"
-    / SacrificeAction 
-    / DiscardAction 
     / ManaCost
+    / Action
     / "Pay " Number " life"
     ;
 
@@ -138,28 +142,28 @@ ManaCost
     ;
 
 ReturnAction
-    = "Return " SelectOp SPACE SelectCard SPACE "from your graveyard to your hand." 
-    / "Return " SelectOp SPACE SelectCard SPACE "from your graveyard to the battlefield." 
+    = "Return " SelectOp SPACE SelectCard SPACE "from your graveyard to your hand" 
+    / "Return " SelectOp SPACE SelectCard SPACE "from your graveyard to the battlefield" 
     ;
 
 BounceAction
-    = "Return " SelectOp SPACE SelectPermanent SPACE "to its owner's hand."
+    = "Return " SelectOp SPACE SelectPermanent SPACE "to its owner's hand"
     ;
 
 PreventAction
-    = "Prevent the next " Number " damage that would be dealt to target creature or player this turn."
+    = "Prevent the next " Number " damage that would be dealt to target creature or player this turn"
     ;
 
 TapAction
-    = "Tap" SPACE SelectOp SPACE SelectPermanent EOS
+    = "Tap" SPACE SelectOp SPACE SelectPermanent
     ;
 
 RegenerateAction
-    = "Regenerate @."
+    = "Regenerate @"
     ;
 
 DamageAction
-    = "@ deals " Number " damage to target creature or player."
+    = "@ deals " Number " damage to target creature or player"
     ;
 
 EntersTapped
@@ -190,11 +194,11 @@ EquippedPump
     ;
 
 PumpAction
-    = "@ gets " SignedNumber "/" SignedNumber " until end of turn."
+    = "@ gets " SignedNumber "/" SignedNumber " until end of turn"
     ;
 
 AddManaAction
-    = "Add " ManaSource " to your mana pool."
+    = "Add " ManaSource " to your mana pool"
     ;
 
 ManaSource
@@ -218,19 +222,19 @@ DiscardAction
     ;
 
 DestroyNoRegenAction
-    = Destroy SPACE SelectOp SPACE SelectPermanentUnion EOS SPACE NoRegen EOS
+    = Destroy SPACE SelectOp SPACE SelectPermanentUnion EOS SPACE NoRegen
     ;
 
 DestroyAction 
-    = Destroy SPACE SelectOp SPACE SelectPermanentUnion EOS
+    = Destroy SPACE SelectOp SPACE SelectPermanentUnion
     ;
 
 ExileAction
-    = Exile SPACE SelectOp SPACE SelectPermanentUnion EOS
+    = Exile SPACE SelectOp SPACE SelectPermanentUnion
     ;
 
 CounterAction
-    = Counter SPACE SelectOp SPACE SelectSpell EOS
+    = Counter SPACE SelectOp SPACE SelectSpell
     ;
 
 SelectOp
