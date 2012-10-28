@@ -6,7 +6,7 @@ MagicRule
     ;
 
 SpellEffect
-    = Action EOS
+    = Action EOS (SPACE Action EOS)*
     ;
 
 Action
@@ -313,9 +313,9 @@ RestrictedPermanentCombination
 RestrictedPermanent
     = (PermanentRestriction SPACE)? Permanent (SPACE PermanentRestriction)?
     / RestrictedCreature
+    / RestrictedLand
     / SelectArtifact
     / SelectEnchantment
-    / RestrictedLand
     / SelectTribal
     ;
 
@@ -333,10 +333,6 @@ SelectArtifact
 
 SelectEnchantment
     = Enchantment
-    ;
-
-SelectLand
-    = SelectOp SPACE RestrictedLand
     ;
 
 RestrictedLand

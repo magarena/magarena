@@ -66,6 +66,7 @@
 {1}, {T}, Sacrifice a creature: @ deals 2 damage to target creature or player.
 {1}, {T}, Sacrifice a creature: Return target artifact card from your graveyard to your hand.
 {1}, {T}, Sacrifice @: Add one mana of any color to your mana pool.
+{1}, {T}, Sacrifice @: Add one mana of any color to your mana pool. Draw a card.
 {1}, {T}, Sacrifice @: @ deals 2 damage to target creature or player.
 {1}, {T}, Sacrifice @: Draw a card.
 {1}, {T}: Tap target artifact, creature, or land.
@@ -103,6 +104,7 @@
 {2}{B}{G}, {T}, Sacrifice a creature: Draw a card.
 {2}{B}: Regenerate @.
 {2}{B}, {T}, Discard a card: Destroy target nonblack creature. It can't be regenerated.
+{2}: @ deals 1 damage to target creature or player. Sacrifice @.
 {2}: Discard a card.
 {2}: @ gets +1/+0 until end of turn.
 {2}{G}: Put a 1/1 green Saproling creature token onto the battlefield.
@@ -267,6 +269,7 @@ Counter target creature spell.
 Counter target noncreature spell.
 Counter target red or green spell.
 Counter target spell.
+Counter target spell. Return target permanent to its owner's hand.
 Cumulative upkeep {1}
 Cumulative upkeep {1}{B}
 Cumulative upkeep {1}{U}
@@ -581,6 +584,7 @@ Return target artifact, enchantment, or land to its owner's hand.
 Return target artifact to its owner's hand.
 Return target attacking creature to its owner's hand.
 Return target card from your graveyard to your hand.
+Return target card from your graveyard to your hand. Exile @.
 Return target creature card from your graveyard to the battlefield.
 Return target creature card from your graveyard to your hand.
 Return target creature to its owner's hand.
