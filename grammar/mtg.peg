@@ -243,7 +243,7 @@ EquippedPump
     ;
 
 PumpAction
-    = "@ gets " SignedNumber "/" SignedNumber " until end of turn"
+    = SelectCreature " gets " SignedNumber "/" SignedNumber " until end of turn"
     ;
 
 AddManaAction
@@ -294,6 +294,11 @@ SelectOp
 
 SelectCard
     = SelectOp SPACE RestrictedCard
+    ;
+
+SelectCreature
+    = "@"
+    / "Target " RestrictedCreature
     ;
 
 SelectPermanent
