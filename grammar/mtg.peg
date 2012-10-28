@@ -150,10 +150,10 @@ PutTokenAction
     ;
 
 ChangeCounterAction
-    = "Remove a " CounterType " counter from @"
-    / "Remove " Count SPACE CounterType " counters from @"
-    / "Put a " CounterType " counter on @"
-    / "Put " Count SPACE CounterType " counters on @"
+    = "Remove a " CounterType " counter from " SelectPermanent
+    / "Remove " Count SPACE CounterType " counters from " SelectPermanent
+    / "Put a " CounterType " counter on " SelectPermanent
+    / "Put " Count SPACE CounterType " counters on " SelectPermanent
     ;
 
 ChangeLifeAction
@@ -273,12 +273,16 @@ SelectOp
 
 SelectCard
     = SelectOp SPACE RestrictedCard
+    ;
 
 SelectPermanent
-    = SelectOp SPACE RestrictedPermanentUnion
+    = "@"
+    / SelectOp SPACE RestrictedPermanentUnion
+    ;
 
 SelectSpell
     = SelectOp SPACE RestrictedSpell
+    ;
 
 RestrictedPermanentUnion
     = RestrictedPermanent ", " RestrictedPermanent ", or " RestrictedPermanent
