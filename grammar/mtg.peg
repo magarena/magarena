@@ -71,6 +71,7 @@ Keyword
     / "@ attacks each turn if able."
     / "@ is indestructible."
     / "@ can't be countered."
+    / "Affinity for artifacts"
     ;
 
 ActivationCosts
@@ -124,13 +125,17 @@ PumpActivation
     ;
 
 AddManaAction
-    = "Add {1} to your mana pool"
-    / "Add {G} to your mana pool"
-    / "Add {B} to your mana pool"
-    / "Add {U} to your mana pool"
-    / "Add {W} to your mana pool"
-    / "Add {R} to your mana pool"
-    / "Add one mana of any color to your mana pool"
+    = "Add " ManaSource " to your mana pool"
+    ;
+
+ManaSource
+    = "{1}"
+    / "{G}"
+    / "{B}"
+    / "{U}"
+    / "{W}"
+    / "{R}"
+    / "one mana of any color"
     ;
 
 DrawAction
