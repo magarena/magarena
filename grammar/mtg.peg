@@ -108,7 +108,6 @@ ActivationCosts
     
 SacrificeAction
     = "Sacrifice " SelectPermanent
-    / "Sacrifice @"
     ;
 
 ActivationCost
@@ -289,6 +288,7 @@ CounterAction
 SelectOp
     = "target"
     / "all"
+    / "an"
     / "a"
     ;
 
@@ -388,6 +388,7 @@ CreatureRestriction
     / "with flying"
     / "tapped or blocking"
     / "tapped"
+    / "untapped"
     / "blocked"
     / "nonblack"
     / "nonartifact, nonblack"

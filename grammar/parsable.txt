@@ -73,9 +73,12 @@
 {1}, {T}, Sacrifice a creature: Return target artifact card from your graveyard to your hand.
 {1}, {T}, Sacrifice @: Add one mana of any color to your mana pool.
 {1}, {T}, Sacrifice @: Add one mana of any color to your mana pool. Draw a card.
+{1}, {T}, Sacrifice an artifact: Draw a card.
 {1}, {T}, Sacrifice @: @ deals 2 damage to target creature or player.
 {1}, {T}, Sacrifice @: Draw a card.
 {1}, {T}, Sacrifice @: Target creature gets +2/+2 until end of turn.
+{1}, {T}, Tap an untapped creature you control: Put a 1/1 green Saproling creature token onto the battlefield.
+{1}, {T}, Tap an untapped creature you control: Target creature gets +1/+1 until end of turn.
 {1}, {T}: Tap target artifact, creature, or land.
 {1}, {T}: Tap target land.
 {1}, {T}: Untap target artifact.
@@ -272,6 +275,7 @@ Bloodthirst 6
 {B}, Sacrifice @: Target player loses 1 life and you gain 1 life.
 {B}, {T}, Discard a card: Return target creature card from your graveyard to your hand.
 {B}, {T}, Discard a card: Target creature gets -1/-1 until end of turn.
+{B}, {T}, Sacrifice an artifact: Draw a card.
 {B}, {T}, Sacrifice @: Return target creature card from your graveyard to the battlefield.
 {B}, {T}: Tap target creature.
 {B}, {T}: Target creature gets +1/+0 until end of turn.
@@ -648,6 +652,7 @@ Return target sorcery card from your graveyard to your hand.
 {R}{R}{R}: Regenerate @.
 {R}{R}: Target creature gets +1/-1 until end of turn.
 {R}{R}, {T}: Put a charge counter on @.
+{R}, Sacrifice an artifact: @ gets +3/+0 until end of turn.
 {R}, Sacrifice @: @ deals 2 damage to target creature or player.
 {R}, Sacrifice @: Destroy target artifact.
 {R}, Sacrifice @: Destroy target land.
@@ -683,6 +688,13 @@ Sacrifice a land: @ gets +0/+3 until end of turn.
 Sacrifice a land: @ gets +1/+1 until end of turn.
 Sacrifice a land: Prevent the next 2 damage that would be dealt to target creature or player this turn.
 Sacrifice a land: Return @ to its owner's hand.
+Sacrifice an artifact: @ gets +1/+1 until end of turn.
+Sacrifice an artifact: @ gets +2/+2 until end of turn.
+Sacrifice an artifact: Put a +1/+1 counter on @.
+Sacrifice an artifact: Put a +1/+1 counter on target creature.
+Sacrifice an artifact: Regenerate @.
+Sacrifice an enchantment: @ gets +1/+1 until end of turn.
+Sacrifice an enchantment: @ gets +2/+2 until end of turn.
 Sacrifice a permanent: Return target creature to its owner's hand.
 Sacrifice @: @ deals 1 damage to target creature or player.
 Sacrifice @: @ deals 2 damage to target creature or player.
@@ -719,6 +731,9 @@ Swampwalk
 {T}: Add {W} to your mana pool.
 Tap all artifacts.
 Tap all creatures.
+Tap an untapped creature you control: @ gets +1/+1 until end of turn.
+Tap an untapped creature you control: Tap target artifact, creature, or land.
+Tap an untapped creature you control: Tap target artifact or creature.
 Tap target artifact, creature, or land.
 Tap target creature.
 Tap target permanent.
@@ -797,6 +812,8 @@ Trample
 {T}, Sacrifice a creature: Target creature gets +2/+2 until end of turn.
 {T}, Sacrifice @: Add one mana of any color to your mana pool.
 {T}, Sacrifice a land: Destroy target land.
+{T}, Sacrifice an artifact: @ deals 2 damage to target creature or player.
+{T}, Sacrifice an artifact: Draw a card.
 {T}, Sacrifice @: Counter target spell.
 {T}, Sacrifice @: Destroy target attacking creature.
 {T}, Sacrifice @: Destroy target attacking or blocking creature with flying.
@@ -808,6 +825,7 @@ Trample
 {T}, Sacrifice @: Target creature gets -2/-2 until end of turn.
 {T}, Sacrifice @: Target creature gets -3/-3 until end of turn.
 {T}, Sacrifice @: Target creature gets -4/-4 until end of turn.
+{T}, Tap an untapped creature you control: Add one mana of any color to your mana pool.
 {T}: Tap target artifact.
 {T}: Tap target creature.
 {T}: Tap target creature with converted mana cost 3 or less.
@@ -879,6 +897,7 @@ Wither
 {W}: Regenerate @.
 {W}: Return @ to its owner's hand.
 {W}, Sacrifice a creature: Prevent the next 1 damage that would be dealt to target creature or player this turn.
+{W}, Sacrifice an enchantment: Destroy target enchantment.
 {W}, Sacrifice @: Prevent the next 2 damage that would be dealt to target creature or player this turn.
 {W}, Sacrifice @: Prevent the next 3 damage that would be dealt to target creature or player this turn.
 {W}, Sacrifice @: Return target artifact card from your graveyard to your hand.
