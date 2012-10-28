@@ -12,6 +12,7 @@
 {1}{B}: Regenerate @.
 {1}{B}, Sacrifice a creature: Regenerate @.
 {1}{B}, {T}, Sacrifice @: Destroy target nonblack creature.
+{1}{B}, {T}: Target player loses 1 life.
 {1}, Discard a card: @ gets +1/+1 until end of turn.
 {1}{G}: Add one mana of any color to your mana pool.
 {1}: @ gets +0/+1 until end of turn.
@@ -156,10 +157,12 @@ Bloodthirst 6
 {B}{R}{G}, {T}: Return target creature card from your graveyard to your hand.
 {B}, Sacrifice a creature: Destroy target nonblack creature.
 {B}, Sacrifice a creature: Regenerate @.
+{B}, Sacrifice a creature: Target player loses 1 life.
 {B}, Sacrifice @: Destroy target nonblack creature.
 {B}, {T}, Discard a card: Return target creature card from your graveyard to your hand.
 {B}, {T}, Sacrifice @: Return target creature card from your graveyard to the battlefield.
 {B}, {T}: Tap target creature.
+{B}, {T}: Target player loses 1 life.
 Bushido 1
 Bushido 2
 Bushido 5
@@ -468,6 +471,7 @@ Sacrifice @: Destroy target nonblack creature. It can't be regenerated.
 Sacrifice @: Draw a card.
 Sacrifice @: Return target creature to its owner's hand.
 Sacrifice @: Return target creature you control to its owner's hand.
+Sacrifice @: Target player loses 1 life.
 Shadow
 Shroud
 Soulbond
@@ -481,6 +485,7 @@ Swampwalk
 {T}: Add {W} to your mana pool.
 Tap target creature.
 Tap target permanent.
+Target player loses 5 life.
 {T}: @ deals 1 damage to target creature or player.
 {T}: @ deals 3 damage to target creature or player.
 {T}: Destroy target creature. It can't be regenerated.
@@ -513,6 +518,7 @@ Trample
 {T}: Tap target creature.
 {T}: Tap target creature with converted mana cost 3 or less.
 {T}: Tap target Spirit.
+{T}: Target player loses 1 life.
 {U/B}: @ gets +1/+1 until end of turn.
 {U}, Discard a card: Draw a card.
 {U}: @ gets +1/+0 until end of turn.

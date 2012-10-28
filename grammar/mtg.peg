@@ -25,6 +25,7 @@ Action
     / AddManaAction
     / ReturnAction
     / SacrificeAction
+    / LoseLifeAction
     ;
 
 KeywordAbility
@@ -139,6 +140,10 @@ ManaCost
     = ColorlessCost MonoSingleCost*
     / MonoSingleCost+
     / HybridSingleCost+
+    ;
+
+LoseLifeAction
+    = "Target player loses " Number " life"
     ;
 
 ReturnAction
