@@ -28,9 +28,11 @@
 {1}, Pay 2 life: @ deals 1 damage to target creature or player.
 {1}{R}: @ deals 1 damage to target creature or player.
 {1}: Regenerate @.
+{1}, Remove a +1/+1 counter from @: Regenerate @.
 {1}{R}: @ gets +1/+0 until end of turn.
 {1}{R}: @ gets +2/+0 until end of turn.
 {1}{R}: @ gets +3/-3 until end of turn.
+{1}{R}, Remove a +1/+1 counter from @: @ deals 1 damage to target creature or player.
 {1}{R}{R}, Sacrifice @: @ deals 2 damage to target creature or player.
 {1}{R}, Sacrifice a creature: @ deals 2 damage to target creature or player.
 {1}{R}, Sacrifice @: @ deals 1 damage to target creature or player.
@@ -64,6 +66,7 @@
 {1}{W}: @ gets +0/+3 until end of turn.
 {1}{W}: @ gets +1/+0 until end of turn.
 {1}{W}: Prevent the next 1 damage that would be dealt to target creature or player this turn.
+{1}{W}, Remove a +1/+1 counter from @: Destroy target enchantment.
 {1}{W}, Sacrifice @: Destroy target enchantment.
 {1}{W}, Sacrifice @: Exile target attacking creature.
 {1}{W}, Sacrifice @: Exile target enchantment.
@@ -113,6 +116,7 @@
 {3}{R}: @ deals 1 damage to target creature or player.
 {3}: Regenerate @.
 {3}: Return target creature card from your graveyard to your hand.
+{3}{R}, Remove a +1/+1 counter from @: Destroy target artifact or land.
 {3}{R}, Sacrifice @: Destroy target artifact.
 {3}, Sacrifice a creature: Draw a card.
 {3}, Sacrifice a creature: Return target creature card from your graveyard to the battlefield.
@@ -131,6 +135,7 @@
 {4}{G}, Sacrifice a creature: Destroy target creature with flying.
 {4}{R}, {T}, Sacrifice a creature: @ deals 2 damage to target creature or player.
 {4}, {T}: Draw a card.
+{4}, {T}, Remove a +1/+1 counter from @: Destroy target creature.
 {4}, {T}, Sacrifice a land: @ deals 1 damage to target creature or player.
 {4}, {T}: Tap target creature.
 {4}{W}: @ gets +1/+2 until end of turn.
@@ -154,6 +159,7 @@ Affinity for artifacts
 {B}: @ gets +2/-1 until end of turn.
 {B}{G}: @ gets +1/+1 until end of turn.
 {B}{G}: Regenerate @.
+{B/G}, Remove a -1/-1 counter from @: Regenerate @.
 Bloodthirst 1
 Bloodthirst 2
 Bloodthirst 3
@@ -301,8 +307,12 @@ Enchant permanent
 Enchant player
 Enchant tapped creature
 @ enters the battlefield tapped.
+@ enters the battlefield with three -1/-1 counters on it.
 @ enters the battlefield with three +1/+1 counters on it.
+@ enters the battlefield with three charge counters on it.
+@ enters the battlefield with two -1/-1 counters on it.
 @ enters the battlefield with two +1/+1 counters on it.
+@ enters the battlefield with two charge counters on it.
 Equip {0}
 Equip {1}
 Equip {2}
@@ -353,6 +363,7 @@ Forestwalk
 {G}: @ gets +1/-2 until end of turn.
 {G}{G}: Tap target creature with flying.
 {G}: Regenerate @.
+{G}, Remove a -1/-1 counter from @: Destroy target artifact or enchantment.
 {G}, Sacrifice @: Destroy target artifact or enchantment.
 {G}, {T}: Add one mana of any color to your mana pool.
 {G}, {T}: Add {R} to your mana pool.
@@ -428,11 +439,17 @@ Protection from white
 Put a 1/1 green Saproling creature token onto the battlefield.
 {R}: Add {B} to your mana pool.
 Reach
+Remove a +1/+1 counter from @: Add {1} to your mana pool.
+Remove a -1/-1 counter from @: Add one mana of any color to your mana pool.
+Remove a +1/+1 counter from @: @ deals 1 damage to target creature or player.
+Remove a +1/+1 counter from @: @ gets +2/+2 until end of turn.
 Remove a charge counter from @: Add one mana of any color to your mana pool.
 Remove three charge counters from @: Draw a card.
 Remove three spore counters from @: @ deals 1 damage to target creature or player.
 Remove three spore counters from @: Put a 1/1 green Saproling creature token onto the battlefield.
 Remove three spore counters from @: Regenerate @.
+Remove two +1/+1 counters from @: Draw a card.
+Remove two +1/+1 counters from @: @ gets +4/+4 until end of turn.
 Return target artifact card from your graveyard to the battlefield.
 Return target artifact card from your graveyard to your hand.
 Return target artifact to its owner's hand.

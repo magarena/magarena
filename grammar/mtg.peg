@@ -151,8 +151,8 @@ PutTokenAction
 
 ChangeCounterAction
     = "Remove " Count " spore counters from @"
-    / "Remove a charge counter from @"
-    / "Remove " Count " charge counters from @"
+    / "Remove a " CounterType " counter from @"
+    / "Remove " Count SPACE CounterType " counters from @"
     ;
 
 ChangeLifeAction
@@ -191,7 +191,13 @@ EntersTapped
     ;
 
 EntersWithCounter
-    = "@ enters the battlefield with " Count " +1/+1 counters on it."
+    = "@ enters the battlefield with " Count SPACE CounterType " counters on it."
+    ;
+
+CounterType
+    = "+1/+1"
+    / "-1/-1"
+    / "charge"
     ;
 
 Count
