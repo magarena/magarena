@@ -177,6 +177,7 @@ PreventAction
 
 TapAction
     = "Tap" SPACE SelectPermanent
+    / "Untap" SPACE SelectPermanent
     ;
 
 RegenerateAction

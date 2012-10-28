@@ -68,8 +68,12 @@
 {1}, {T}, Sacrifice @: Draw a card.
 {1}, {T}: Tap target artifact, creature, or land.
 {1}, {T}: Tap target land.
+{1}, {T}: Untap target artifact.
+{1}, {T}: Untap target creature.
+{1}, {T}: Untap target land.
 {1}{U}, Discard a card: Draw a card.
 {1}{U}, Discard a card: Return @ to its owner's hand.
+{1}: Untap @.
 {1}{U}: Return @ to its owner's hand.
 {1}{U}{R}: Return @ to its owner's hand.
 {1}{U}, Sacrifice @: Counter target creature spell.
@@ -100,6 +104,7 @@
 {2}: @ gets +1/+0 until end of turn.
 {2}{G}: Put a 1/1 green Saproling creature token onto the battlefield.
 {2}{G}: Regenerate @.
+{2}{G}, {T}: Untap target creature.
 {2}{G}{W}, {T}: Put a 1/1 green Saproling creature token onto the battlefield.
 {2}, Pay 2 life: Draw a card.
 {2}: Put a charge counter on @.
@@ -128,6 +133,8 @@
 {2}{U}, Sacrifice a land: Draw a card.
 {2}{U}: Tap target creature with flying.
 {2}{U}{U}: Draw a card.
+{2}{U}: Untap @.
+{2}{U}: Untap target artifact.
 {2}{U}{U}: Return @ to its owner's hand.
 {2}{U}{U}, {T}: Counter target spell.
 {2}{W}, Discard a card: @ gets +1/+2 until end of turn.
@@ -161,11 +168,15 @@
 {3}, {T}, Remove a charge counter from @: Draw a card.
 {3}, {T}, Sacrifice @: Destroy target land.
 {3}, {T}, Sacrifice @: Draw three cards.
+{3}, {T}: Untap target artifact.
+{3}, {T}: Untap target creature.
 {3}{U}: Draw a card.
+{3}: Untap @.
 {3}{U}: Return @ to its owner's hand.
 {3}{U}, Sacrifice a permanent: Return target permanent to its owner's hand.
 {3}{U}, {T}: Draw a card.
 {3}{U}, {T}: Tap target creature.
+{3}{U}: Untap @.
 {3}{W}{B}, {T}: Target player loses 1 life and you gain 1 life.
 {3}{W}: @ gets +0/+5 until end of turn.
 {3}{W}: Tap target creature.
@@ -181,6 +192,7 @@
 {4}, {T}, Remove a +1/+1 counter from @: Destroy target creature.
 {4}, {T}, Sacrifice a land: @ deals 1 damage to target creature or player.
 {4}, {T}: Tap target creature.
+{4}: Untap @.
 {4}{U}: Return @ to its owner's hand.
 {4}{W}: Exile @.
 {4}{W}: @ gets +1/+2 until end of turn.
@@ -485,6 +497,7 @@ Pay 2 life: Return @ to its owner's hand.
 Pay 3 life: Put a +1/+1 counter on @.
 Pay 3 life: Put a +1/+1 counter on target creature.
 Pay 4 life: Regenerate @.
+Pay 8 life: Untap @.
 Persist
 Prevent the next 1 damage that would be dealt to target creature or player this turn.
 Prevent the next 2 damage that would be dealt to target creature or player this turn.
@@ -497,6 +510,7 @@ Protection from red
 Protection from white
 Put a -1/-1 counter on target creature.
 Put a +1/+1 counter on target creature.
+Put a -1/-1 counter on @: Untap @.
 Put a 1/1 green Saproling creature token onto the battlefield.
 {R}: Add {B} to your mana pool.
 Reach
@@ -541,6 +555,7 @@ Return target sorcery card from your graveyard to your hand.
 {R}, {T}: @ deals 1 damage to target creature or player.
 {R}, {T}, Discard a card: @ deals 1 damage to target creature or player.
 {R}, {T}, Sacrifice a creature: @ deals 2 damage to target creature or player.
+{R}: Untap @.
 {R/W}: @ gets +1/+0 until end of turn.
 {R}{W}: @ gets +1/+1 until end of turn.
 Sacrifice a creature: Add one mana of any color to your mana pool.
@@ -649,6 +664,10 @@ Trample
 {T}: Tap target creature with converted mana cost 3 or less.
 {T}: Tap target Spirit.
 {T}: Target player loses 1 life.
+{T}: Untap target artifact or creature.
+{T}: Untap target creature.
+{T}: Untap target land.
+{T}: Untap target permanent.
 {U/B}: @ gets +1/+1 until end of turn.
 {U}{B}, Pay 1 life: Return @ to its owner's hand.
 {U}, Discard a card: Draw a card.
@@ -658,6 +677,8 @@ Trample
 {U}: @ gets +1/-1 until end of turn.
 {U}: @ gets +1/+1 until end of turn.
 Undying
+Untap target artifact, creature, or land.
+Untap target permanent.
 {U}{R}: @ deals 1 damage to target creature or player.
 {U}: Regenerate @.
 {U}: Return @ to its owner's hand.
@@ -670,6 +691,7 @@ Undying
 {U}, {T}: Draw two cards.
 {U}, {T}: Return target permanent you control to its owner's hand.
 {U}, {T}, Sacrifice a creature or enchantment: Counter target spell.
+{U}: Untap @.
 {U}{U}, {T}, Discard a card: Counter target creature spell.
 {U}{U}, {T}, Discard a card: Counter target noncreature spell.
 {U}{U}, {T}: Put a charge counter on @.
