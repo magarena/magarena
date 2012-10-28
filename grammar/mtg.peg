@@ -13,6 +13,7 @@ SpellEffect
     / DamageAction
     / DrawAction
     / TapAction
+    / PreventAction
     ;
 
 KeywordAbility
@@ -35,6 +36,7 @@ ActivatedAbility
     / TapActivation
     / DrawActivation
     / BounceActivation
+    / PreventActivation
     ;
 
 Keyword
@@ -140,6 +142,14 @@ BounceActivation
 
 BounceAction
     = "Return " SelectOp SPACE SelectPermanent SPACE "to its owner's hand."
+    ;
+
+PreventActivation
+    = ActivationCosts ": " PreventAction
+    ;
+
+PreventAction
+    = "Prevent the next " Number " damage that would be dealt to target creature or player this turn."
     ;
 
 DrawActivation
