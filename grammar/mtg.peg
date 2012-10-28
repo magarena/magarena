@@ -14,6 +14,10 @@ SpellEffect
     / DrawAction
     / TapAction
     / PreventAction
+    / RegenerateAction
+    / PumpAction
+    / BounceAction
+    / AddManaAction
     ;
 
 KeywordAbility
@@ -29,14 +33,7 @@ StaticAbility
     ;
 
 ActivatedAbility
-    = AddManaActivation
-    / PumpActivation
-    / RegenerateActivation
-    / PingActivation
-    / TapActivation
-    / DrawActivation
-    / BounceActivation
-    / PreventActivation
+    = ActivationCosts ": " SpellEffect
     ;
 
 Keyword
@@ -136,40 +133,19 @@ ManaCost
     / HybridSingleCost+
     ;
 
-BounceActivation
-    = ActivationCosts ": " BounceAction
-    ;
-
 BounceAction
     = "Return " SelectOp SPACE SelectPermanent SPACE "to its owner's hand."
-    ;
-
-PreventActivation
-    = ActivationCosts ": " PreventAction
     ;
 
 PreventAction
     = "Prevent the next " Number " damage that would be dealt to target creature or player this turn."
     ;
-
-DrawActivation
-    = ActivationCosts ": " DrawAction
-    ;
-
-TapActivation
-    = ActivationCosts ": " TapAction
-    ;
-
 TapAction
     = "Tap" SPACE SelectOp SPACE SelectPermanent EOS
     ;
 
-RegenerateActivation
-    = ActivationCost ": Regenerate @."
-    ;
-
-PingActivation
-    = ActivationCost ": " DamageAction
+RegenerateAction
+    = "Regenerate @."
     ;
 
 DamageAction
@@ -203,17 +179,12 @@ EquippedPump
     = "Equipped creature gets " SignedNumber "/" SignedNumber "."
     ;
 
-AddManaActivation
-    = ActivationCost ": " AddManaAction EOS
-    ;
-
-
-PumpActivation
-    = ActivationCost ": @ gets " SignedNumber "/" SignedNumber " until end of turn."
+PumpAction
+    = "@ gets " SignedNumber "/" SignedNumber " until end of turn."
     ;
 
 AddManaAction
-    = "Add " ManaSource " to your mana pool"
+    = "Add " ManaSource " to your mana pool."
     ;
 
 ManaSource
