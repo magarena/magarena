@@ -2,6 +2,8 @@
 {1}: Add {B} to your mana pool.
 {1}{B}{B}: Regenerate @.
 {1}{B}{B}, Sacrifice a creature: Return target creature card from your graveyard to your hand.
+{1}{B}, Discard a card: @ gets +2/+2 until end of turn.
+{1}{B}, Discard a card: Regenerate @.
 {1}{B}: @ gets +1/+0 until end of turn.
 {1}{B}: @ gets +1/+1 until end of turn.
 {1}{B}: @ gets +2/+2 until end of turn.
@@ -10,6 +12,7 @@
 {1}{B}: Regenerate @.
 {1}{B}, Sacrifice a creature: Regenerate @.
 {1}{B}, {T}, Sacrifice @: Destroy target nonblack creature.
+{1}, Discard a card: @ gets +1/+1 until end of turn.
 {1}{G}: Add one mana of any color to your mana pool.
 {1}: @ gets +0/+1 until end of turn.
 {1}: @ gets +1/+0 until end of turn.
@@ -49,6 +52,7 @@
 {1}, {T}, Sacrifice @: @ deals 2 damage to target creature or player.
 {1}, {T}, Sacrifice @: Draw a card.
 {1}, {T}: Tap target land.
+{1}{U}, Discard a card: Draw a card.
 {1}{U}, Sacrifice @: Counter target creature spell.
 {1}{U}, Sacrifice @: Draw a card.
 {1}{U}, Sacrifice @: Return target creature to its owner's hand.
@@ -62,15 +66,19 @@
 {1}{W}, Sacrifice @: Destroy target enchantment.
 {1}{W}, Sacrifice @: Exile target attacking creature.
 {1}{W}, Sacrifice @: Exile target enchantment.
+{1}{W}, {T}, Discard a card: Destroy target artifact or enchantment.
 {1}{W}, {T}, Sacrifice @: Destroy target artifact or enchantment.
 {2}{B}: @ gets +1/+1 until end of turn.
 {2}{B}: @ gets +2/+2 until end of turn.
 {2}{B}{G}, {T}, Sacrifice a creature: Draw a card.
 {2}{B}: Regenerate @.
+{2}{B}, {T}, Discard a card: Destroy target nonblack creature. It can't be regenerated.
+{2}: Discard a card.
 {2}: @ gets +1/+0 until end of turn.
 {2}{G}: Regenerate @.
 {2}, Pay 2 life: Draw a card.
 {2}: Regenerate @.
+{2}{R}, {T}, Discard a card: Destroy target land.
 {2}, Sacrifice a permanent: Return target creature to its owner's hand.
 {2}, Sacrifice @: Draw a card.
 {2}, {T}: Add one mana of any color to your mana pool.
@@ -84,6 +92,7 @@
 {2}{U}: Tap target creature with flying.
 {2}{U}{U}: Draw a card.
 {2}{U}{U}, {T}: Counter target spell.
+{2}{W}, Discard a card: @ gets +1/+2 until end of turn.
 {2}{W}: Tap target creature.
 {2}{W}, {T}: Prevent the next 2 damage that would be dealt to target creature or player this turn.
 {2}{W}, {T}, Sacrifice @: Destroy target artifact or enchantment.
@@ -127,6 +136,7 @@ Affinity for artifacts
 @ attacks each turn if able.
 {B}{B}: Draw a card.
 {B}{B}: @ gets +1/+0 until end of turn.
+{B}, Discard a card: Regenerate @.
 {B}: @ gets +1/+0 until end of turn.
 {B}: @ gets +1/-1 until end of turn.
 {B}: @ gets +1/+1 until end of turn.
@@ -147,6 +157,7 @@ Bloodthirst 6
 {B}, Sacrifice a creature: Destroy target nonblack creature.
 {B}, Sacrifice a creature: Regenerate @.
 {B}, Sacrifice @: Destroy target nonblack creature.
+{B}, {T}, Discard a card: Return target creature card from your graveyard to your hand.
 {B}, {T}, Sacrifice @: Return target creature card from your graveyard to the battlefield.
 {B}, {T}: Tap target creature.
 Bushido 1
@@ -225,6 +236,10 @@ Destroy target permanent.
 Destroy target Spirit.
 Destroy target Spirit or enchantment.
 Destroy target tapped creature.
+Discard a card: Add {B} to your mana pool.
+Discard a card: @ gets +0/+4 until end of turn.
+Discard a card: @ gets +1/+1 until end of turn.
+Discard a card: Regenerate @.
 Double strike
 Draw a card.
 Draw three cards.
@@ -316,6 +331,8 @@ Flash
 Flying
 Forestwalk
 {G}: Add one mana of any color to your mana pool.
+{G}, Discard a card: @ gets +0/+2 until end of turn.
+{G}, Discard a card: Regenerate @.
 {G}: @ gets +0/+1 until end of turn.
 {G}: @ gets +1/+0 until end of turn.
 {G}: @ gets +1/+1 until end of turn.
@@ -420,6 +437,7 @@ Return target sorcery card from your graveyard to your hand.
 {R}, Sacrifice @: Destroy target artifact.
 {R}, Sacrifice @: Destroy target land.
 {R}, {T}: @ deals 1 damage to target creature or player.
+{R}, {T}, Discard a card: @ deals 1 damage to target creature or player.
 {R}, {T}, Sacrifice a creature: @ deals 2 damage to target creature or player.
 {R/W}: @ gets +1/+0 until end of turn.
 {R}{W}: @ gets +1/+1 until end of turn.
@@ -470,6 +488,7 @@ Tap target permanent.
 {T}: Destroy target creature with power 4 or greater.
 {T}: Destroy target land.
 {T}: Destroy target tapped creature.
+{T}, Discard a card: Draw a card.
 {T}: Draw a card.
 {T}: Draw three cards.
 {T}: @ gets +0/+4 until end of turn.
@@ -495,6 +514,7 @@ Trample
 {T}: Tap target creature with converted mana cost 3 or less.
 {T}: Tap target Spirit.
 {U/B}: @ gets +1/+1 until end of turn.
+{U}, Discard a card: Draw a card.
 {U}: @ gets +1/+0 until end of turn.
 {U}: @ gets -1/+1 until end of turn.
 {U}: @ gets +1/-1 until end of turn.
@@ -506,8 +526,12 @@ Undying
 {U}, Sacrifice @: Counter target noncreature spell.
 {U}, Sacrifice @: Return target creature to its owner's hand.
 {U}, {T}: @ deals 1 damage to target creature or player.
+{U}, {T}, Discard a card: Return target creature to its owner's hand.
+{U}, {T}, Discard a card: Return target permanent you control to its owner's hand.
 {U}, {T}: Draw two cards.
 {U}, {T}: Return target permanent you control to its owner's hand.
+{U}{U}, {T}, Discard a card: Counter target creature spell.
+{U}{U}, {T}, Discard a card: Counter target noncreature spell.
 {U}{U}, {T}: Return target creature to its owner's hand.
 {U}{U}{U}: Regenerate @.
 {U}{U}{U}, {T}: Return target permanent to its owner's hand.
@@ -518,6 +542,7 @@ Vanishing 4
 Vigilance
 {W/B}{W/B}: @ gets +1/+0 until end of turn.
 {W/B}{W/B}{W/B}: @ gets +3/+3 until end of turn.
+{W}, Discard a card: Prevent the next 3 damage that would be dealt to target creature or player this turn.
 {W}: @ gets +0/+1 until end of turn.
 {W}: @ gets +1/+1 until end of turn.
 Wither

@@ -11,7 +11,8 @@ SpellEffect
     / ExileAction 
     / CounterAction
     / DamageAction
-    / DrawAction
+    / DrawAction EOS
+    / DiscardAction EOS
     / TapAction
     / PreventAction
     / RegenerateAction
@@ -101,6 +102,7 @@ SacrificeAction
 ActivationCost
     = "{T}"
     / SacrificeAction 
+    / DiscardAction 
     / ManaCost
     / "Pay " Number " life"
     ;
@@ -206,8 +208,13 @@ ManaSource
     ;
 
 DrawAction
-    = "Draw a card."
-    / "Draw " Count " cards."
+    = "Draw a card"
+    / "Draw " Count " cards"
+    ;
+
+DiscardAction
+    = "Discard a card"
+    / "Discard " Count " cards"
     ;
 
 DestroyNoRegenAction
