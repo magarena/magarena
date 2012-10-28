@@ -348,6 +348,10 @@ Undying
 {U}{U}, {T}: Return target creature to its owner's hand.
 {U}{U}{U}: Regenerate @.
 {U}{U}{U}, {T}: Return target permanent to its owner's hand.
+Vanishing 1
+Vanishing 2
+Vanishing 3
+Vanishing 4
 Vigilance
 {W/B}{W/B}: @ gets +1/+0 until end of turn.
 {W/B}{W/B}{W/B}: @ gets +3/+3 until end of turn.

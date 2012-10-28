@@ -74,6 +74,7 @@ Keyword
     / "Living weapon"
     / "Bushido" SPACE Number
     / "Modular" SPACE Number
+    / "Vanishing" SPACE Number
     / "Bloodthirst" SPACE Number
     / "Buyback" SPACE ManaCost
     / "Kicker" SPACE ManaCost
