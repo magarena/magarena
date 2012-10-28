@@ -1,0 +1,166 @@
+{1}: Add {B} to your mana pool.
+{1}: @ gets +0/+1 until end of turn.
+{1}: @ gets +1/+0 until end of turn.
+{1}: @ gets +1/+1 until end of turn.
+{1}: Regenerate @.
+{1}, Sacrifice @: Draw a card.
+{1}, {T}, Sacrifice @: Draw a card.
+{1}, {T}: Tap target land.
+Affinity for artifacts
+@ attacks each turn if able.
+{B}: @ gets +1/+0 until end of turn.
+{B}: @ gets +1/+1 until end of turn.
+Bloodthirst 1
+Bloodthirst 2
+Bloodthirst 3
+Bloodthirst 6
+{B}: Regenerate @.
+{B}, {T}: Tap target creature.
+Bushido 1
+Bushido 2
+Bushido 5
+@ can't be countered.
+@ can't block.
+Changeling
+Counter target creature spell.
+Counter target noncreature spell.
+Counter target red or green spell.
+Counter target spell.
+@ deals 10 damage to target creature or player.
+@ deals 1 damage to target creature or player.
+@ deals 2 damage to target creature or player.
+@ deals 3 damage to target creature or player.
+@ deals 4 damage to target creature or player.
+@ deals 5 damage to target creature or player.
+@ deals 7 damage to target creature or player.
+Deathtouch
+Defender
+Destroy target artifact.
+Destroy target artifact, enchantment, or land.
+Destroy target artifact. It can't be regenerated.
+Destroy target artifact or creature. It can't be regenerated.
+Destroy target artifact or enchantment.
+Destroy target artifact or land.
+Destroy target artifact or land. It can't be regenerated.
+Destroy target attacking creature.
+Destroy target blocked creature.
+Destroy target creature.
+Destroy target creature. It can't be regenerated.
+Destroy target creature or enchantment.
+Destroy target creature or land.
+Destroy target creature or land. It can't be regenerated.
+Destroy target creature with converted mana cost 3 or less. It can't be regenerated.
+Destroy target creature with flying.
+Destroy target creature with power 4 or greater.
+Destroy target creature with power 4 or greater. It can't be regenerated.
+Destroy target enchantment.
+Destroy target green or white creature.
+Destroy target Human creature.
+Destroy target land.
+Destroy target land or nonblack creature.
+Destroy target land or nonblack creature. It can't be regenerated.
+Destroy target nonartifact creature.
+Destroy target nonartifact, nonblack creature. It can't be regenerated.
+Destroy target nonblack creature.
+Destroy target nonblack creature. It can't be regenerated.
+Destroy target noncreature permanent.
+Destroy target non-Vampire, non-Werewolf, non-Zombie creature.
+Destroy target permanent.
+Destroy target Spirit.
+Destroy target Spirit or enchantment.
+Destroy target tapped creature.
+Double strike
+Draw a card.
+Enchant artifact
+Enchant creature
+Enchant creature you control
+Enchant enchantment
+Enchant green or white creature
+Enchant land
+Enchant nonblack creature
+Enchant permanent
+Enchant player
+Enchant tapped creature
+@ enters the battlefield tapped.
+Exalted
+Exile target artifact or enchantment.
+Exile target attacking creature.
+Exile target black or red permanent.
+Exile target creature.
+Exile target creature or enchantment.
+Exile target enchantment.
+Exile target land.
+Fear
+First strike
+Flash
+Flying
+Forestwalk
+{G}: Add one mana of any color to your mana pool.
+{G}: @ gets +0/+1 until end of turn.
+{G}: @ gets +1/+1 until end of turn.
+{G}: Regenerate @.
+Haste
+Hexproof
+Infect
+Intimidate
+@ is indestructible.
+Islandwalk
+@ is unblockable.
+Lifelink
+Living weapon
+Mountainwalk
+Protection from black
+Protection from blue
+Protection from red
+Protection from white
+{R}: Add {B} to your mana pool.
+Reach
+{R}: @ gets +0/+1 until end of turn.
+{R}: @ gets +1/+0 until end of turn.
+{R}: @ gets +1/+1 until end of turn.
+{R}: Regenerate @.
+Sacrifice @: Add {B} to your mana pool.
+Sacrifice @: Add {G} to your mana pool.
+Sacrifice @: Add one mana of any color to your mana pool.
+Sacrifice @: Add {R} to your mana pool.
+Sacrifice @: Add {U} to your mana pool.
+Sacrifice @: Add {W} to your mana pool.
+Sacrifice @: @ deals 1 damage to target creature or player.
+Sacrifice @: @ deals 2 damage to target creature or player.
+Sacrifice @: Draw a card.
+Sacrifice @: Return target creature to its owner's hand.
+Sacrifice @: Return target creature you control to its owner's hand.
+Shadow
+Shroud
+Soulbond
+Swampwalk
+{T}: Add {1} to your mana pool.
+{T}: Add {B} to your mana pool.
+{T}: Add {G} to your mana pool.
+{T}: Add one mana of any color to your mana pool.
+{T}: Add {R} to your mana pool.
+{T}: Add {U} to your mana pool.
+{T}: Add {W} to your mana pool.
+Tap target creature.
+{T}: @ deals 1 damage to target creature or player.
+{T}: @ deals 3 damage to target creature or player.
+{T}: Draw a card.
+{T}: @ gets +0/+4 until end of turn.
+{T}: @ gets +3/+3 until end of turn.
+Trample
+{T}: Tap target artifact.
+{T}: Tap target creature.
+{T}: Tap target Spirit.
+{U}: @ gets +1/+0 until end of turn.
+{U}: @ gets +1/+1 until end of turn.
+Undying
+{U}: Regenerate @.
+{U}, Sacrifice @: Return target creature to its owner's hand.
+Vigilance
+{W}: @ gets +0/+1 until end of turn.
+{W}: @ gets +1/+1 until end of turn.
+Wither
+{W}: Regenerate @.
+{W}, {T}: Tap target artifact.
+{W}, {T}: Tap target creature.
+{W}, {T}: Tap target permanent.
