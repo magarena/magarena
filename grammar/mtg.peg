@@ -157,9 +157,15 @@ ChangeCounterAction
     ;
 
 ChangeLifeAction
-    = "Target player loses " Number " life and you gain " Number " life"
-    / "Target player loses " Number " life"
-    / "Target player gains " Number " life"
+    = SelectPlayer " loses " Number " life and you gain " Number " life"
+    / SelectPlayer " loses " Number " life"
+    / SelectPlayer " gains " Number " life"
+    ;
+
+SelectPlayer
+    = "Target player"
+    / "Target opponent"
+    / "You"
     ;
 
 ReturnAction

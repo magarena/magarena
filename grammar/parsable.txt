@@ -97,6 +97,7 @@
 {1}{W}, {T}, Discard a card: Destroy target artifact or enchantment.
 {1}{W}, {T}, Sacrifice @: Destroy target artifact or enchantment.
 {2}{B}{B}: Put a -1/-1 counter on target creature.
+{2}{B}, Discard a card: Target opponent loses 1 life and you gain 1 life.
 {2}{B}: @ gets +1/+1 until end of turn.
 {2}{B}: @ gets +2/+2 until end of turn.
 {2}{B}{G}, {T}, Sacrifice a creature: Draw a card.
@@ -663,6 +664,7 @@ Tap all creatures.
 Tap target artifact, creature, or land.
 Tap target creature.
 Tap target permanent.
+Target opponent loses 3 life.
 Target player gains 4 life.
 Target player gains 5 life.
 Target player gains 6 life.
