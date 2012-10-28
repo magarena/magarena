@@ -22,6 +22,7 @@ KeywordAbility
 
 StaticAbility
     = EntersTapped
+    / EntersWithCounter
     / EnchantedPump
     / EquippedPump
     ;
@@ -72,6 +73,7 @@ Keyword
     / "Flanking"
     / "Intimidate"
     / "Living weapon"
+    / "Totem armor"
     / "Bushido" SPACE Number
     / "Modular" SPACE Number
     / "Vanishing" SPACE Number
@@ -166,6 +168,16 @@ DamageAction
 
 EntersTapped
     = "@ enters the battlefield tapped."
+    ;
+
+EntersWithCounter
+    = "@ enters the battlefield with " Count " +1/+1 counters on it."
+    ;
+
+Count
+    = "one"
+    / "two"
+    / "three"
     ;
 
 Enchant

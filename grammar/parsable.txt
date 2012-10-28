@@ -1,5 +1,6 @@
 {0}: @ gets +1/-1 until end of turn.
 {1}: Add {B} to your mana pool.
+{1}{B}{B}: Regenerate @.
 {1}{B}: @ gets +1/+0 until end of turn.
 {1}{B}: @ gets +1/+1 until end of turn.
 {1}{B}: @ gets +2/+2 until end of turn.
@@ -44,6 +45,7 @@
 {2}{W}: Tap target creature.
 {3}{B}: Regenerate @.
 {3}: @ deals 1 damage to target creature or player.
+{3}: @ gets +1/+0 until end of turn.
 {3}{R}: @ deals 1 damage to target creature or player.
 {3}: Regenerate @.
 {3}, Sacrifice a creature: Draw a card.
@@ -54,11 +56,14 @@
 {3}{W}: @ gets +0/+5 until end of turn.
 {3}{W}: Tap target creature.
 {4}, {T}: Draw a card.
+{4}, {T}: Tap target creature.
 {4}{W}: @ gets +1/+2 until end of turn.
 {5}{G}: Regenerate @.
+{5}, {T}: Draw a card.
 {7}{G}: @ gets +5/+5 until end of turn.
 Affinity for artifacts
 @ attacks each turn if able.
+{B}{B}: Draw a card.
 {B}{B}: @ gets +1/+0 until end of turn.
 {B}: @ gets +1/+0 until end of turn.
 {B}: @ gets +1/-1 until end of turn.
@@ -93,6 +98,7 @@ Counter target red or green spell.
 Counter target spell.
 Cumulative upkeep {1}
 Cumulative upkeep {1}{B}
+Cumulative upkeep {1}{U}
 Cumulative upkeep {1}{U}{U}
 Cumulative upkeep {1}{W}
 Cumulative upkeep {2}
@@ -121,6 +127,7 @@ Destroy target artifact or enchantment.
 Destroy target artifact or land.
 Destroy target artifact or land. It can't be regenerated.
 Destroy target attacking creature.
+Destroy target attacking creature with flying.
 Destroy target blocked creature.
 Destroy target creature.
 Destroy target creature. It can't be regenerated.
@@ -153,8 +160,10 @@ Enchant artifact
 Enchant creature
 Enchant creature you control
 Enchanted creature gets -0/-1.
+Enchanted creature gets +0/+1.
 Enchanted creature gets +0/+2.
 Enchanted creature gets +0/+4.
+Enchanted creature gets -1/-0.
 Enchanted creature gets +1/+0.
 Enchanted creature gets -1/-1.
 Enchanted creature gets -1/+1.
@@ -175,10 +184,13 @@ Enchanted creature gets +2/+2.
 Enchanted creature gets +2/+5.
 Enchanted creature gets -3/-0.
 Enchanted creature gets +3/-1.
+Enchanted creature gets +3/+1.
+Enchanted creature gets +3/+2.
 Enchanted creature gets +3/-3.
 Enchanted creature gets +3/+3.
 Enchanted creature gets +4/+0.
 Enchanted creature gets -4/-1.
+Enchanted creature gets +6/+6.
 Enchant enchantment
 Enchant green or white creature
 Enchant land
@@ -187,15 +199,22 @@ Enchant permanent
 Enchant player
 Enchant tapped creature
 @ enters the battlefield tapped.
+@ enters the battlefield with three +1/+1 counters on it.
+@ enters the battlefield with two +1/+1 counters on it.
+Equip {0}
 Equip {1}
 Equip {2}
+Equip {3}
 Equip {4}
+Equip {5}
+Equip {6}
 Equipped creature gets +0/+3.
 Equipped creature gets +0/+6.
 Equipped creature gets +1/+0.
 Equipped creature gets +1/-1.
 Equipped creature gets +1/+1.
 Equipped creature gets +1/+2.
+Equipped creature gets +1/+5.
 Equipped creature gets +2/+0.
 Equipped creature gets +2/+1.
 Equipped creature gets +2/+2.
@@ -225,6 +244,7 @@ Flying
 Forestwalk
 {G}: Add one mana of any color to your mana pool.
 {G}: @ gets +0/+1 until end of turn.
+{G}: @ gets +1/+0 until end of turn.
 {G}: @ gets +1/+1 until end of turn.
 {G}: @ gets +1/-2 until end of turn.
 {G}{G}: Tap target creature with flying.
@@ -275,6 +295,7 @@ Modular 1
 Modular 2
 Modular 3
 Modular 4
+Modular 6
 Mountainwalk
 Persist
 Protection from black
@@ -294,6 +315,7 @@ Reach
 {R}: Regenerate @.
 {R}{R}{R}: Regenerate @.
 {R/W}: @ gets +1/+0 until end of turn.
+{R}{W}: @ gets +1/+1 until end of turn.
 Sacrifice a creature: Add one mana of any color to your mana pool.
 Sacrifice a creature: Add {R} to your mana pool.
 Sacrifice a creature: @ deals 1 damage to target creature or player.
@@ -327,14 +349,17 @@ Swampwalk
 {T}: Add {U} to your mana pool.
 {T}: Add {W} to your mana pool.
 Tap target creature.
+Tap target permanent.
 {T}: @ deals 1 damage to target creature or player.
 {T}: @ deals 3 damage to target creature or player.
 {T}: Draw a card.
 {T}: @ gets +0/+4 until end of turn.
 {T}: @ gets +3/+3 until end of turn.
+Totem armor
 Trample
 {T}: Tap target artifact.
 {T}: Tap target creature.
+{T}: Tap target creature with converted mana cost 3 or less.
 {T}: Tap target Spirit.
 {U/B}: @ gets +1/+1 until end of turn.
 {U}: @ gets +1/+0 until end of turn.
@@ -342,6 +367,7 @@ Trample
 {U}: @ gets +1/-1 until end of turn.
 {U}: @ gets +1/+1 until end of turn.
 Undying
+{U}{R}: @ deals 1 damage to target creature or player.
 {U}: Regenerate @.
 {U/R}: @ gets +1/-1 until end of turn.
 {U}, Sacrifice @: Return target creature to its owner's hand.
@@ -362,5 +388,6 @@ Wither
 {W}, {T}: Tap target artifact.
 {W}, {T}: Tap target creature.
 {W}, {T}: Tap target permanent.
+{W}{W}: @ gets +0/+2 until end of turn.
 {W}{W}: @ gets +1/+0 until end of turn.
 {W}{W}{W}: Regenerate @.
