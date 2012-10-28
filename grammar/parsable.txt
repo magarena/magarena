@@ -1,3 +1,4 @@
+{0}: @ gets +1/-1 until end of turn.
 {1}: Add {B} to your mana pool.
 {1}{B}: @ gets +1/+0 until end of turn.
 {1}{B}: @ gets +1/+1 until end of turn.
@@ -7,13 +8,17 @@
 {1}{G}: Add one mana of any color to your mana pool.
 {1}: @ gets +0/+1 until end of turn.
 {1}: @ gets +1/+0 until end of turn.
+{1}: @ gets -1/+1 until end of turn.
+{1}: @ gets +1/-1 until end of turn.
 {1}: @ gets +1/+1 until end of turn.
 {1}{G}: @ gets +1/+0 until end of turn.
+{1}{G}: @ gets -1/+1 until end of turn.
 {1}{G}: Regenerate @.
 {1}{R}: @ deals 1 damage to target creature or player.
 {1}: Regenerate @.
 {1}{R}: @ gets +1/+0 until end of turn.
 {1}{R}: @ gets +2/+0 until end of turn.
+{1}{R}: @ gets +3/-3 until end of turn.
 {1}, Sacrifice @: Draw a card.
 {1}, {T}, Sacrifice @: Draw a card.
 {1}, {T}: Tap target land.
@@ -56,7 +61,9 @@ Affinity for artifacts
 @ attacks each turn if able.
 {B}{B}: @ gets +1/+0 until end of turn.
 {B}: @ gets +1/+0 until end of turn.
+{B}: @ gets +1/-1 until end of turn.
 {B}: @ gets +1/+1 until end of turn.
+{B}: @ gets +2/-1 until end of turn.
 {B}{G}: @ gets +1/+1 until end of turn.
 {B}{G}: Regenerate @.
 Bloodthirst 1
@@ -145,19 +152,33 @@ Draw a card.
 Enchant artifact
 Enchant creature
 Enchant creature you control
+Enchanted creature gets -0/-1.
 Enchanted creature gets +0/+2.
 Enchanted creature gets +0/+4.
 Enchanted creature gets +1/+0.
+Enchanted creature gets -1/-1.
+Enchanted creature gets -1/+1.
+Enchanted creature gets +1/-1.
 Enchanted creature gets +1/+1.
 Enchanted creature gets +1/+2.
 Enchanted creature gets +1/+3.
+Enchanted creature gets -13/-0.
 Enchanted creature gets +1/+5.
+Enchanted creature gets -2/-0.
 Enchanted creature gets +2/+0.
+Enchanted creature gets -2/-1.
+Enchanted creature gets +2/-1.
 Enchanted creature gets +2/+1.
+Enchanted creature gets -2/-2.
+Enchanted creature gets +2/-2.
 Enchanted creature gets +2/+2.
 Enchanted creature gets +2/+5.
+Enchanted creature gets -3/-0.
+Enchanted creature gets +3/-1.
+Enchanted creature gets +3/-3.
 Enchanted creature gets +3/+3.
 Enchanted creature gets +4/+0.
+Enchanted creature gets -4/-1.
 Enchant enchantment
 Enchant green or white creature
 Enchant land
@@ -183,8 +204,10 @@ Forestwalk
 {G}: Add one mana of any color to your mana pool.
 {G}: @ gets +0/+1 until end of turn.
 {G}: @ gets +1/+1 until end of turn.
+{G}: @ gets +1/-2 until end of turn.
 {G}{G}: Tap target creature with flying.
 {G}: Regenerate @.
+{G/W}{G/W}: @ gets +1/+1 until end of turn.
 Haste
 Hexproof
 Infect
@@ -223,6 +246,7 @@ Kicker {R}
 Kicker {U}
 Kicker {W}
 Kicker {W}{W}
+Kicker {X}
 Lifelink
 Living weapon
 Mountainwalk
@@ -236,7 +260,11 @@ Protection from white
 Reach
 {R}: @ gets +0/+1 until end of turn.
 {R}: @ gets +1/+0 until end of turn.
+{R}: @ gets +1/-1 until end of turn.
 {R}: @ gets +1/+1 until end of turn.
+{R}: @ gets +2/-2 until end of turn.
+{R}{G}: @ gets +1/-1 until end of turn.
+{R/G}{R/G}{R/G}: @ gets +3/+0 until end of turn.
 {R}: Regenerate @.
 {R}{R}{R}: Regenerate @.
 Sacrifice a creature: Add one mana of any color to your mana pool.
@@ -282,14 +310,19 @@ Trample
 {T}: Tap target creature.
 {T}: Tap target Spirit.
 {U}: @ gets +1/+0 until end of turn.
+{U}: @ gets -1/+1 until end of turn.
+{U}: @ gets +1/-1 until end of turn.
 {U}: @ gets +1/+1 until end of turn.
 Undying
 {U}: Regenerate @.
+{U/R}: @ gets +1/-1 until end of turn.
 {U}, Sacrifice @: Return target creature to its owner's hand.
 {U}{U}, {T}: Return target creature to its owner's hand.
 {U}{U}{U}: Regenerate @.
 {U}{U}{U}, {T}: Return target permanent to its owner's hand.
 Vigilance
+{W/B}{W/B}: @ gets +1/+0 until end of turn.
+{W/B}{W/B}{W/B}: @ gets +3/+3 until end of turn.
 {W}: @ gets +0/+1 until end of turn.
 {W}: @ gets +1/+1 until end of turn.
 Wither

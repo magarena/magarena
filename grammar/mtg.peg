@@ -100,6 +100,7 @@ ActivationCost
 
 ColorlessCost
     = "{" Number "}"
+    / "{X}"
     ;
 
 MonoSingleCost
@@ -110,9 +111,18 @@ MonoSingleCost
     / "{W}"
     ;
 
+HybridSingleCost
+    = "{G/U}"
+    / "{G/W}"
+    / "{R/G}"
+    / "{W/B}"
+    / "{U/R}"
+    ;
+
 ManaCost
     = ColorlessCost MonoSingleCost*
     / MonoSingleCost+
+    / HybridSingleCost+
     ;
 
 BounceActivation
@@ -157,7 +167,7 @@ Enchant
     ;
 
 EnchantedPump
-    = "Enchanted creature gets +" Number "/+" Number "."
+    = "Enchanted creature gets " SignedNumber "/" SignedNumber "."
     ;
 
 AddManaActivation
@@ -166,7 +176,7 @@ AddManaActivation
 
 
 PumpActivation
-    = ActivationCost ": @ gets +" Number "/+" Number " until end of turn."
+    = ActivationCost ": @ gets " SignedNumber "/" SignedNumber " until end of turn."
     ;
 
 AddManaAction
@@ -318,8 +328,17 @@ Counter
     = "Counter"
     ;
 
+SignedNumber
+    = Sign Number
+    ;
+
 Number 
     = [0-9]+
+    ;
+
+Sign
+    = "+"
+    / "\-"
     ;
 
 SPACE 
