@@ -40,6 +40,7 @@
 {1}{R}{R}: Put a +1/+1 counter on @.
 {1}{R}{R}, Sacrifice @: @ deals 2 damage to target creature or player.
 {1}{R}, Sacrifice a creature: @ deals 2 damage to target creature or player.
+{1}{R}, Sacrifice a creature: Destroy target nonbasic land.
 {1}{R}, Sacrifice a land: Put a +1/+1 counter on @.
 {1}{R}, Sacrifice @: @ deals 1 damage to target creature or player.
 {1}{R}, {T}: @ deals 1 damage to target creature or player.
@@ -55,6 +56,7 @@
 {1}, {T}: Add {R} to your mana pool.
 {1}, {T}: Add {U} to your mana pool.
 {1}, {T}: Add {W} to your mana pool.
+{1}, {T}: Destroy all artifacts, creatures, and enchantments.
 {1}, {T}: Exile target creature you control.
 {1}, {T}, Pay 1 life: Add one mana of any color to your mana pool.
 {1}, {T}: Put a +1/+1 counter on @.
@@ -113,6 +115,7 @@
 {2}, Remove a +1/+1 counter from a creature you control: Put a +1/+1 counter on @.
 {2}, Remove a +1/+1 counter from @: Put a +1/+1 counter on target creature.
 {2}, Remove a +1/+1 counter from @: Return @ to its owner's hand.
+{2}{R}, {T}: Destroy target nonbasic land.
 {2}{R}, {T}, Discard a card: Destroy target land.
 {2}{R}, {T}, Put a -1/-1 counter on a creature you control: @ deals 2 damage to target creature or player.
 {2}, Sacrifice a permanent: Return target creature to its owner's hand.
@@ -167,6 +170,7 @@
 {3}, {T}: Put a charge counter on @.
 {3}, {T}: Remove a -1/-1 counter from target creature.
 {3}, {T}, Remove a charge counter from @: Draw a card.
+{3}, {T}, Sacrifice a land: Destroy target nonbasic land.
 {3}, {T}, Sacrifice @: Destroy target land.
 {3}, {T}, Sacrifice @: Draw three cards.
 {3}, {T}: Untap target artifact.
@@ -286,10 +290,19 @@ Cumulative upkeep {W}
 Deathtouch
 Defender
 Destroy all artifacts.
+Destroy all artifacts and enchantments.
+Destroy all artifacts, creatures, and enchantments.
+Destroy all artifacts, creatures, and lands. They can't be regenerated.
+Destroy all artifacts. They can't be regenerated.
 Destroy all creatures.
+Destroy all creatures and lands.
+Destroy all creatures. They can't be regenerated.
 Destroy all creatures with flying.
+Destroy all creatures with power 4 or greater. They can't be regenerated.
 Destroy all enchantments.
+Destroy all Islands.
 Destroy all lands.
+Destroy all nonbasic lands.
 Destroy all tapped creatures.
 Destroy target artifact.
 Destroy target artifact, enchantment, or land.
@@ -300,6 +313,7 @@ Destroy target artifact or land.
 Destroy target artifact or land. It can't be regenerated.
 Destroy target attacking creature.
 Destroy target attacking creature with flying.
+Destroy target attacking or blocking creature.
 Destroy target blocked creature.
 Destroy target creature.
 Destroy target creature. It can't be regenerated.
@@ -308,6 +322,7 @@ Destroy target creature or land.
 Destroy target creature or land. It can't be regenerated.
 Destroy target creature with converted mana cost 3 or less. It can't be regenerated.
 Destroy target creature with flying.
+Destroy target creature with power 2 or less.
 Destroy target creature with power 4 or greater.
 Destroy target creature with power 4 or greater. It can't be regenerated.
 Destroy target enchantment.
@@ -326,6 +341,7 @@ Destroy target permanent.
 Destroy target Spirit.
 Destroy target Spirit or enchantment.
 Destroy target tapped creature.
+Destroy target Wall. It can't be regenerated.
 Discard a card: Add {B} to your mana pool.
 Discard a card: @ gets +0/+4 until end of turn.
 Discard a card: @ gets +1/+1 until end of turn.
@@ -374,11 +390,14 @@ Enchanted creature gets -4/-1.
 Enchanted creature gets +6/+6.
 Enchant enchantment
 Enchant green or white creature
+Enchant Island
 Enchant land
+Enchant nonbasic land
 Enchant nonblack creature
 Enchant permanent
 Enchant player
 Enchant tapped creature
+Enchant Wall
 @ enters the battlefield tapped.
 @ enters the battlefield with a -1/-1 counter on it.
 @ enters the battlefield with a +1/+1 counter on it.
@@ -434,6 +453,7 @@ Exile @.
 Exile all creatures.
 Exile target artifact or enchantment.
 Exile target attacking creature.
+Exile target attacking or blocking creature.
 Exile target black or red permanent.
 Exile target creature.
 Exile target creature or enchantment.
@@ -458,6 +478,7 @@ Forestwalk
 {G}: Regenerate @.
 {G}, Remove a -1/-1 counter from @: Destroy target artifact or enchantment.
 {G}: Return @ to its owner's hand.
+{G}, Sacrifice a Wall: Draw a card.
 {G}, Sacrifice @: Destroy target artifact or enchantment.
 {G}, {T}: Add one mana of any color to your mana pool.
 {G}, {T}: Add {R} to your mana pool.
@@ -580,8 +601,10 @@ Return target sorcery card from your graveyard to your hand.
 {R}, Sacrifice @: @ deals 2 damage to target creature or player.
 {R}, Sacrifice @: Destroy target artifact.
 {R}, Sacrifice @: Destroy target land.
+{R}: Tap target Wall.
 {R}, {T}: @ deals 1 damage to target creature or player.
 {R}, {T}, Discard a card: @ deals 1 damage to target creature or player.
+{R}, {T}, Discard a card: Destroy target Wall.
 {R}, {T}, Sacrifice a creature: @ deals 2 damage to target creature or player.
 {R}: Untap @.
 {R/W}: @ gets +1/+0 until end of turn.
@@ -612,6 +635,7 @@ Sacrifice @: @ deals 1 damage to target creature or player.
 Sacrifice @: @ deals 2 damage to target creature or player.
 Sacrifice @: Destroy target artifact or enchantment.
 Sacrifice @: Destroy target enchantment.
+Sacrifice @: Destroy target nonbasic land.
 Sacrifice @: Destroy target nonblack creature.
 Sacrifice @: Destroy target nonblack creature. It can't be regenerated.
 Sacrifice @: Draw a card.
@@ -656,6 +680,7 @@ Target player loses 5 life and you gain 5 life.
 {T}: Destroy target creature with power 4 or greater.
 {T}: Destroy target land.
 {T}: Destroy target tapped creature.
+{T}: Destroy target Wall.
 {T}, Discard a card: Draw a card.
 {T}: Draw a card.
 {T}: Draw three cards.
@@ -687,17 +712,22 @@ Trample
 {T}, Sacrifice a land: Destroy target land.
 {T}, Sacrifice @: Counter target spell.
 {T}, Sacrifice @: Destroy target attacking creature.
+{T}, Sacrifice @: Destroy target attacking or blocking creature with flying.
 {T}, Sacrifice @: Destroy target land.
+{T}, Sacrifice @: Destroy target nonbasic land.
+{T}, Sacrifice @: Destroy target Wall.
 {T}, Sacrifice @: Return target artifact card from your graveyard to your hand.
 {T}: Tap target artifact.
 {T}: Tap target creature.
 {T}: Tap target creature with converted mana cost 3 or less.
+{T}: Tap target creature with power 2 or less.
 {T}: Tap target Spirit.
 {T}: Target player loses 1 life.
 {T}: Untap target artifact or creature.
 {T}: Untap target creature.
 {T}: Untap target land.
 {T}: Untap target permanent.
+{U}{B}{B}{R}, {T}: Destroy target tapped or blocking creature.
 {U/B}: @ gets +1/+1 until end of turn.
 {U}{B}, Pay 1 life: Return @ to its owner's hand.
 {U}, Discard a card: Draw a card.
@@ -758,6 +788,8 @@ Wither
 {W}{U}{B}{R}{G}: Exile target permanent.
 {W}{W}: @ gets +0/+2 until end of turn.
 {W}{W}: @ gets +1/+0 until end of turn.
+{W}{W}, {T}: Destroy target black permanent.
+{W}{W}, {T}: Destroy target red permanent.
 {W}{W}, {T}: Put a charge counter on @.
 {W}{W}, {T}: Return target artifact card from your graveyard to your hand.
 {W}{W}{W}: Regenerate @.

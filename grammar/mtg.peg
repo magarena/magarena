@@ -289,16 +289,18 @@ SelectCard
 
 SelectPermanent
     = "@"
-    / SelectOp SPACE RestrictedPermanentUnion
+    / SelectOp SPACE RestrictedPermanentCombination
     ;
 
 SelectSpell
     = SelectOp SPACE RestrictedSpell
     ;
 
-RestrictedPermanentUnion
+RestrictedPermanentCombination
     = RestrictedPermanent ", " RestrictedPermanent ", or " RestrictedPermanent
+    / RestrictedPermanent ", " RestrictedPermanent ", and " RestrictedPermanent
     / RestrictedPermanent " or " RestrictedPermanent
+    / RestrictedPermanent " and " RestrictedPermanent
     / RestrictedPermanent 
     ;
 
@@ -307,12 +309,14 @@ RestrictedPermanent
     / RestrictedCreature
     / SelectArtifact
     / SelectEnchantment
-    / SelectLand
+    / RestrictedLand
     / SelectTribal
     ;
 
 PermanentRestriction
     = "black or red"
+    / "black"
+    / "red"
     / "noncreature"
     / "you control"
     ;
@@ -326,7 +330,15 @@ SelectEnchantment
     ;
 
 SelectLand
-    = Land
+    = SelectOp SPACE RestrictedLand
+    ;
+
+RestrictedLand
+    = (LandRestriction SPACE)? Land
+    ;
+
+LandRestriction
+    = "nonbasic"
     ;
 
 SelectTribal
@@ -362,13 +374,15 @@ RestrictedCreature
 CreatureRestriction
     = "with converted mana cost 3 or less"
     / "with power 4 or greater"
+    / "with power 2 or less"
     / "with flying"
+    / "tapped or blocking"
     / "tapped"
     / "blocked"
     / "nonblack"
     / "nonartifact, nonblack"
-    / "attacking"
     / "attacking or blocking"
+    / "attacking"
     / "green or white"
     / "Human"
     / "non-Vampire, non-Werewolf, non-Zombie"
@@ -377,7 +391,9 @@ CreatureRestriction
     ;
 
 Tribal
-    = "Spirit"
+    = "Spirit" "s"?
+    / "Island" "s"?
+    / "Wall" "s"?
     ;
 
 Creature
@@ -410,6 +426,7 @@ Spell
 
 NoRegen 
     = "It can't be regenerated"
+    / "They can't be regenerated"
     ;
 
 Destroy 
