@@ -150,9 +150,10 @@ PutTokenAction
     ;
 
 ChangeCounterAction
-    = "Remove " Count " spore counters from @"
-    / "Remove a " CounterType " counter from @"
+    = "Remove a " CounterType " counter from @"
     / "Remove " Count SPACE CounterType " counters from @"
+    / "Put a " CounterType " counter on @"
+    / "Put " Count SPACE CounterType " counters on @"
     ;
 
 ChangeLifeAction
@@ -198,6 +199,7 @@ CounterType
     = "+1/+1"
     / "-1/-1"
     / "charge"
+    / "spore"
     ;
 
 Count
