@@ -72,6 +72,7 @@ Keyword
     / "Intimidate"
     / "Living weapon"
     / "Bushido" SPACE Number
+    / "Modular" SPACE Number
     / "Bloodthirst" SPACE Number
     / "Buyback" SPACE ManaCost
     / "Kicker" SPACE ManaCost
@@ -115,8 +116,11 @@ HybridSingleCost
     = "{G/U}"
     / "{G/W}"
     / "{R/G}"
-    / "{W/B}"
+    / "{R/W}"
     / "{U/R}"
+    / "{U/B}"
+    / "{B/G}"
+    / "{W/B}"
     ;
 
 ManaCost
@@ -338,7 +342,7 @@ Number
 
 Sign
     = "+"
-    / "\-"
+    / "-"
     ;
 
 SPACE 

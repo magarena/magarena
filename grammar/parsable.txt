@@ -249,6 +249,10 @@ Kicker {W}{W}
 Kicker {X}
 Lifelink
 Living weapon
+Modular 1
+Modular 2
+Modular 3
+Modular 4
 Mountainwalk
 Persist
 Protection from black
@@ -267,6 +271,7 @@ Reach
 {R/G}{R/G}{R/G}: @ gets +3/+0 until end of turn.
 {R}: Regenerate @.
 {R}{R}{R}: Regenerate @.
+{R/W}: @ gets +1/+0 until end of turn.
 Sacrifice a creature: Add one mana of any color to your mana pool.
 Sacrifice a creature: Add {R} to your mana pool.
 Sacrifice a creature: @ deals 1 damage to target creature or player.
@@ -309,6 +314,7 @@ Trample
 {T}: Tap target artifact.
 {T}: Tap target creature.
 {T}: Tap target Spirit.
+{U/B}: @ gets +1/+1 until end of turn.
 {U}: @ gets +1/+0 until end of turn.
 {U}: @ gets -1/+1 until end of turn.
 {U}: @ gets +1/-1 until end of turn.
