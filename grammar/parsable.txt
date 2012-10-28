@@ -723,11 +723,21 @@ Soulbond
 Storm
 Swampwalk
 {T}: Add {1} to your mana pool.
+{T}: Add {B} or {R} to your mana pool.
+{T}: Add {B} or {R} to your mana pool. Put a depletion counter on @.
 {T}: Add {B} to your mana pool.
+{T}: Add {G} or {W} to your mana pool.
+{T}: Add {G} or {W} to your mana pool. Put a depletion counter on @.
 {T}: Add {G} to your mana pool.
 {T}: Add one mana of any color to your mana pool.
+{T}: Add {R} or {G} to your mana pool.
+{T}: Add {R} or {G} to your mana pool. Put a depletion counter on @.
 {T}: Add {R} to your mana pool.
+{T}: Add {U} or {B} to your mana pool.
+{T}: Add {U} or {B} to your mana pool. Put a depletion counter on @.
 {T}: Add {U} to your mana pool.
+{T}: Add {W} or {U} to your mana pool.
+{T}: Add {W} or {U} to your mana pool. Put a depletion counter on @.
 {T}: Add {W} to your mana pool.
 Tap all artifacts.
 Tap all creatures.
@@ -789,6 +799,7 @@ Target player loses 5 life and you gain 5 life.
 {T}: @ gets +0/+4 until end of turn.
 {T}: @ gets +3/+3 until end of turn.
 Totem armor
+{T}, Pay 1 life: Add {G} or {W} to your mana pool.
 {T}, Pay 1 life: Add {G} to your mana pool.
 {T}, Pay 1 life: Add one mana of any color to your mana pool.
 {T}: Prevent the next 1 damage that would be dealt to target creature or player this turn.

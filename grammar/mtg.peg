@@ -210,6 +210,7 @@ CounterType
     / "-1/-1"
     / "+1/+0"
     / "charge"
+    / "depletion"
     / "spore"
     / "storage"
     ;
@@ -251,6 +252,11 @@ AddManaAction
 
 ManaSource
     = "{1}"
+    / "{B} or {R}"
+    / "{G} or {W}"
+    / "{R} or {G}"
+    / "{U} or {B}"
+    / "{W} or {U}"
     / "{G}"
     / "{B}"
     / "{U}"
