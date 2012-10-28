@@ -10,73 +10,63 @@ SpellRule
     ;
 
 DestroyNoRegenAction
-    = Destroy SPACE TargetPerm EOR SPACE NoRegen EOR
+    = Destroy SPACE SelectionOp SPACE SelectPermanentUnion EOR SPACE NoRegen EOR
     ;
 
 DestroyAction 
-    = Destroy SPACE TargetPerm EOR
+    = Destroy SPACE SelectionOp SPACE SelectPermanentUnion EOR
     ;
 
 ExileAction
-    = Exile SPACE TargetPerm EOR
+    = Exile SPACE SelectionOp SPACE SelectPermanentUnion EOR
     ;
 
 CounterAction
-    = Counter SPACE TargetSpell EOR
+    = Counter SPACE SelectionOp SPACE SelectSpell EOR
     ;
 
-NoRegen 
-    = "It can't be regenerated"
-    ;
-
-Destroy 
-    = "Destroy"
-    ;
-
-Exile 
-    = "Exile"
-    ;
-
-Counter 
-    = "Counter"
-    ;
-
-// Need &EOR to avoid matching target creature spell
-TargetCreature
-    = Target SPACE CreatureRestrictionBefore? Creature CreatureRestrictionAfter? &EOR
-    ;
-
-TargetPerm
-    = TargetCreature
-    / "target artifact, enchantment, or land"
-    / "target artifact or creature"
-    / "target artifact or enchantment"
-    / "target artifact or land"
-    / "target artifact"
-    / "target creature or enchantment"
-    / "target creature or land"
-    / "target Spirit or enchantment"
-    / "target enchantment"
-    / "target noncreature permanent"
-    / "target black or red permanent"
-    / "target permanent"
-    / "target land"
-    ;
-
-TargetSpell
-    = Target SPACE SpellRestrictionBefore? Spell
-    ;
-
-Creature
-    = "creature"
-    ;
-
-Spell
-    = "spell"
-    ;
-
-Target
+SelectionOp
     = "target"
+    / "a"
+    ;
+
+SelectPermanentUnion
+    = SelectPermanent ", " SelectPermanent ", or " SelectPermanent
+    / SelectPermanent " or " SelectPermanent
+    / SelectPermanent 
+    ;
+
+SelectPermanent
+    = PermanentRestrictionBefore? Permanent
+    / SelectCreature
+    / SelectArtifact
+    / SelectEnchantment
+    / SelectLand
+    / SelectTribal
+    ;
+
+SelectCreature
+    = CreatureRestrictionBefore? Creature CreatureRestrictionAfter?
+    ;
+
+SelectArtifact
+    = Artifact
+    ;
+
+SelectEnchantment
+    = Enchantment
+    ;
+
+SelectLand
+    = Land
+    ;
+
+SelectTribal
+    = Tribal
+    ;
+
+SelectSpell
+    = SpellRestrictionBefore? Spell
     ;
     
 CreatureRestrictionBefore
@@ -110,6 +100,59 @@ SpellRestriction
     = "creature"
     / "red or green"
     / "noncreature"
+    ;
+
+PermanentRestrictionBefore
+    = PermanentRestriction SPACE
+    ;
+
+PermanentRestriction
+    = "black or red"
+    / "noncreature"
+    ;
+
+Tribal
+    = "Spirit"
+    ;
+
+Creature
+    = "creature"
+    ;
+
+Artifact
+    = "artifact"
+    ;
+
+Land
+    = "land"
+    ;
+
+Enchantment
+    = "enchantment"
+    ;
+
+Permanent
+    = "permanent"
+    ;
+
+Spell
+    = "spell"
+    ;
+
+NoRegen 
+    = "It can't be regenerated"
+    ;
+
+Destroy 
+    = "Destroy"
+    ;
+
+Exile 
+    = "Exile"
+    ;
+
+Counter 
+    = "Counter"
     ;
 
 SPACE 
