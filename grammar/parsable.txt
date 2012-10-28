@@ -187,6 +187,28 @@ Enchant permanent
 Enchant player
 Enchant tapped creature
 @ enters the battlefield tapped.
+Equip {1}
+Equip {2}
+Equip {4}
+Equipped creature gets +0/+3.
+Equipped creature gets +0/+6.
+Equipped creature gets +1/+0.
+Equipped creature gets +1/-1.
+Equipped creature gets +1/+1.
+Equipped creature gets +1/+2.
+Equipped creature gets +2/+0.
+Equipped creature gets +2/+1.
+Equipped creature gets +2/+2.
+Equipped creature gets +3/+0.
+Equipped creature gets +3/+1.
+Equipped creature gets +3/+2.
+Equipped creature gets +3/+3.
+Equipped creature gets +4/+0.
+Equipped creature gets +4/-1.
+Equipped creature gets +4/+2.
+Equipped creature gets +5/+0.
+Equipped creature gets +5/+5.
+Equipped creature gets +6/+6.
 Exalted
 Exile target artifact or enchantment.
 Exile target attacking creature.

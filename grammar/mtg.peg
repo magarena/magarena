@@ -23,6 +23,7 @@ KeywordAbility
 StaticAbility
     = EntersTapped
     / EnchantedPump
+    / EquippedPump
     ;
 
 ActivatedAbility
@@ -76,6 +77,7 @@ Keyword
     / "Bloodthirst" SPACE Number
     / "Buyback" SPACE ManaCost
     / "Kicker" SPACE ManaCost
+    / "Equip" SPACE ManaCost
     / "Cumulative upkeep" SPACE ManaCost
     / "@ is unblockable."
     / "@ attacks each turn if able."
@@ -172,6 +174,10 @@ Enchant
 
 EnchantedPump
     = "Enchanted creature gets " SignedNumber "/" SignedNumber "."
+    ;
+
+EquippedPump
+    = "Equipped creature gets " SignedNumber "/" SignedNumber "."
     ;
 
 AddManaActivation
