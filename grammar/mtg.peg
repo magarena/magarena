@@ -65,6 +65,7 @@ Keyword
     / "Hexproof"
     / "Soulbond"
     / "Undying"
+    / "Flanking"
     / "Intimidate"
     / "Living weapon"
     / "Bushido" SPACE Number
@@ -83,13 +84,25 @@ ActivationCosts
 ActivationCost
     = "{T}"
     / "Sacrifice @"
-    / "{1}"
-    / "{R}"
-    / "{B}"
-    / "{G}"
-    / "{W}"
+    / ManaCost
+    ;
+
+ColorlessCost
+    = "{" Number "}"
+    ;
+
+MonoSingleCost
+    = "{B}"
     / "{U}"
-    / "{1}{B}"
+    / "{G}"
+    / "{R}"
+    / "{W}"
+    ;
+
+ManaCost
+    = ColorlessCost MonoSingleCost
+    / ColorlessCost
+    / MonoSingleCost
     ;
 
 BounceActivation
