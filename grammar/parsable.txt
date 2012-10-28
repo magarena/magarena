@@ -76,7 +76,9 @@
 {2}{B}, {T}, Discard a card: Destroy target nonblack creature. It can't be regenerated.
 {2}: Discard a card.
 {2}: @ gets +1/+0 until end of turn.
+{2}{G}: Put a 1/1 green Saproling creature token onto the battlefield.
 {2}{G}: Regenerate @.
+{2}{G}{W}, {T}: Put a 1/1 green Saproling creature token onto the battlefield.
 {2}, Pay 2 life: Draw a card.
 {2}: Regenerate @.
 {2}{R}, {T}, Discard a card: Destroy target land.
@@ -86,6 +88,8 @@
 {2}, {T}: Exile target creature you control.
 {2}, {T}: Exile target permanent you control.
 {2}, {T}: Prevent the next 1 damage that would be dealt to target creature or player this turn.
+{2}, {T}, Remove a charge counter from @: Draw a card.
+{2}, {T}, Remove a charge counter from @: Target player gains 3 life.
 {2}, {T}, Sacrifice a creature: Draw a card.
 {2}, {T}, Sacrifice @: Return target artifact card from your graveyard to your hand.
 {2}, {T}: Tap target creature.
@@ -103,6 +107,7 @@
 {3}: @ deals 1 damage to target creature or player.
 {3}: Exile target creature you control.
 {3}: @ gets +1/+0 until end of turn.
+{3}{G}: Put a 1/1 green Saproling creature token onto the battlefield.
 {3}{G}, Sacrifice @: @ deals 2 damage to target creature or player.
 {3}{G}, Sacrifice @: Destroy target artifact.
 {3}{R}: @ deals 1 damage to target creature or player.
@@ -112,6 +117,7 @@
 {3}, Sacrifice a creature: Draw a card.
 {3}, Sacrifice a creature: Return target creature card from your graveyard to the battlefield.
 {3}, {T}: @ deals 1 damage to target creature or player.
+{3}, {T}, Remove a charge counter from @: Draw a card.
 {3}, {T}, Sacrifice @: Destroy target land.
 {3}, {T}, Sacrifice @: Draw three cards.
 {3}{U}: Draw a card.
@@ -350,6 +356,7 @@ Forestwalk
 {G}, Sacrifice @: Destroy target artifact or enchantment.
 {G}, {T}: Add one mana of any color to your mana pool.
 {G}, {T}: Add {R} to your mana pool.
+{G}, {T}: Put a 1/1 green Saproling creature token onto the battlefield.
 {G}, {T}, Sacrifice a creature: Destroy target enchantment.
 {G}, {T}, Sacrifice @: Destroy target artifact.
 {G}, {T}, Sacrifice @: Destroy target enchantment.
@@ -418,8 +425,14 @@ Protection from blue
 Protection from green
 Protection from red
 Protection from white
+Put a 1/1 green Saproling creature token onto the battlefield.
 {R}: Add {B} to your mana pool.
 Reach
+Remove a charge counter from @: Add one mana of any color to your mana pool.
+Remove three charge counters from @: Draw a card.
+Remove three spore counters from @: @ deals 1 damage to target creature or player.
+Remove three spore counters from @: Put a 1/1 green Saproling creature token onto the battlefield.
+Remove three spore counters from @: Regenerate @.
 Return target artifact card from your graveyard to the battlefield.
 Return target artifact card from your graveyard to your hand.
 Return target artifact to its owner's hand.
@@ -481,6 +494,7 @@ Sacrifice @: Target player loses 1 life and you gain 1 life.
 Shadow
 Shroud
 Soulbond
+Storm
 Swampwalk
 {T}: Add {1} to your mana pool.
 {T}: Add {B} to your mana pool.
@@ -521,6 +535,9 @@ Totem armor
 {T}: Prevent the next 3 damage that would be dealt to target creature or player this turn.
 {T}: Prevent the next 4 damage that would be dealt to target creature or player this turn.
 Trample
+{T}, Remove a charge counter from @: Add one mana of any color to your mana pool.
+{T}, Remove a charge counter from @: Target player loses 2 life.
+{T}, Remove three charge counters from @: Destroy target permanent.
 {T}, Sacrifice a creature: @ deals 1 damage to target creature or player.
 {T}, Sacrifice a creature: Destroy target nonblack creature.
 {T}, Sacrifice @: Add one mana of any color to your mana pool.

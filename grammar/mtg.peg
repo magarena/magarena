@@ -26,6 +26,8 @@ Action
     / ReturnAction
     / SacrificeAction
     / ChangeLifeAction
+    / ChangeCounterAction
+    / PutTokenAction
     ;
 
 KeywordAbility
@@ -58,6 +60,7 @@ Keyword
     / "Wither"
     / "Fear"
     / "Shadow"
+    / "Storm"
     / "Swampwalk"
     / "Forestwalk"
     / "Islandwalk"
@@ -140,6 +143,16 @@ ManaCost
     = ColorlessCost MonoSingleCost*
     / MonoSingleCost+
     / HybridSingleCost+
+    ;
+
+PutTokenAction
+    = "Put a 1/1 green Saproling creature token onto the battlefield"
+    ;
+
+ChangeCounterAction
+    = "Remove " Count " spore counters from @"
+    / "Remove a charge counter from @"
+    / "Remove " Count " charge counters from @"
     ;
 
 ChangeLifeAction
