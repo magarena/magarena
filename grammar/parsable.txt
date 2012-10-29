@@ -45,6 +45,7 @@
 {1}: @ gets +1/-1 until end of turn.
 {1}: @ gets +1/+1 until end of turn.
 {1}{g}: @ gains deathtouch until end of turn.
+{1}{g}: @ gains flying and loses trample until end of turn.
 {1}{g}: @ gains reach until end of turn.
 {1}{g}: @ gains trample until end of turn.
 {1}{g}: @ gets -0/-1 and gains flying until end of turn.
@@ -954,6 +955,7 @@ equipped creature gets +2/+2.
 equipped creature gets +2/+2 and has flying.
 equipped creature gets +2/+2 and has infect.
 equipped creature gets +2/+4 and has reach.
+equipped creature gets +2/+4 and loses flying.
 equipped creature gets +3/+0.
 equipped creature gets +3/+0 and has trample.
 equipped creature gets +3/+1.
@@ -1523,6 +1525,7 @@ target player loses 5 life and you gain 5 life.
 {t}: enchanted creature gets +2/-2 until end of turn.
 {t}, exile a creature you control: put a storage counter on @.
 {t}: @ gets +0/+4 until end of turn.
+{t}: @ gets -2/+2 and loses flying until end of turn.
 {t}: @ gets +3/+3 until end of turn.
 totem armor
 {t}, pay 1 life: add {g} or {w} to your mana pool.
