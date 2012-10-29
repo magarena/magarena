@@ -493,6 +493,7 @@ CreatureRestriction
     / "nonartifact"
     / "artifact"
     / "you control"
+    / "ally"
     ;
 
 Tribal
