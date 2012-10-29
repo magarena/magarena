@@ -17,6 +17,7 @@
 {1}{b}: regenerate @.
 {1}{b}, sacrifice a creature: regenerate @.
 {1}{b}, sacrifice a land: target creature gets +2/+0 until end of turn.
+{1}{b}, sacrifice @: you draw two cards and lose 2 life.
 {1}{b}: target creature you control gains deathtouch until end of turn.
 {1}{b}, {t}, sacrifice @: destroy target nonblack creature.
 {1}{b}, {t}: target creature gets -1/-1 until end of turn.
@@ -65,6 +66,7 @@
 {1}{r}: @ gets +1/+0 until end of turn.
 {1}{r}: @ gets +2/+0 until end of turn.
 {1}{r}: @ gets +3/-3 until end of turn.
+{1}{r}{r}: @ deals 2 damage to target creature with flying and that creature loses flying until end of turn.
 {1}{r}, remove a +1/+1 counter from @: @ deals 1 damage to target creature.
 {1}{r}, remove a +1/+1 counter from @: @ deals 1 damage to target creature or player.
 {1}{r}{r}: put a +1/+1 counter on @.
@@ -246,7 +248,9 @@
 {2}, {t}, remove a charge counter from @: put a -1/-1 counter on target creature.
 {2}, {t}, remove a charge counter from @: target creature gets +3/+0 until end of turn.
 {2}, {t}, remove a charge counter from @: target player gains 3 life.
+{2}, {t}, remove four charge counters from @: you gain 2 life and draw a card.
 {2}, {t}, sacrifice a creature: draw a card.
+{2}, {t}, sacrifice a land: draw a card and put a charge counter on @.
 {2}, {t}, sacrifice @: return target artifact card from your graveyard to your hand.
 {2}, {t}: shuffle your library.
 {2}, {t}: tap target creature.
@@ -336,7 +340,9 @@
 {3}{w}: @ gets +0/+5 until end of turn.
 {3}{w}: tap target creature.
 {3}{w}{w}, sacrifice @: exile all black creatures.
+{3}{w}{w}: you draw a card and target opponent gains 3 life.
 {3}: you may tap or untap equipped creature.
+{4}{b}{b}: exile target creature and put a +1/+1 counter on @.
 {4}{b}{b}, {t}, sacrifice @: target creature gets -6/-6 until end of turn.
 {4}{b}, sacrifice a creature: return target creature card from your graveyard to your hand.
 {4}: @ gains flying until end of turn.
@@ -437,7 +443,9 @@ at the beginning of your upkeep, sacrifice a creature.
 at the beginning of your upkeep, sacrifice a nonblack creature.
 at the beginning of your upkeep, sacrifice a permanent.
 at the beginning of your upkeep, tap target creature.
+at the beginning of your upkeep, target player draws a card and loses 1 life.
 at the beginning of your upkeep, target player loses 1 life.
+at the beginning of your upkeep, you draw a card and you lose 1 life.
 at the beginning of your upkeep, you lose 1 life.
 at the beginning of your upkeep, you lose 2 life.
 at the beginning of your upkeep, you lose 3 life.
@@ -540,6 +548,7 @@ counter target creature spell.
 counter target noncreature spell.
 counter target red or green spell.
 counter target spell.
+counter target spell and @ deals 3 damage to target creature.
 counter target spell. return target permanent to its owner's hand.
 counter target spell. you gain 3 life.
 counter target spell. you gain 5 life.
@@ -609,12 +618,14 @@ cumulative upkeep {w}
 @ deals 2 damage to each nonartifact creature.
 @ deals 2 damage to target attacking or blocking creature.
 @ deals 2 damage to target creature.
+@ deals 2 damage to target creature and you gain 2 life.
 @ deals 2 damage to target creature or player.
 @ deals 2 damage to target creature with flying. that creature loses flying until end of turn.
 @ deals 3 damage to each creature.
 @ deals 3 damage to target attacking or blocking creature.
 @ deals 3 damage to target creature.
 @ deals 3 damage to target creature or player.
+@ deals 3 damage to target creature or player and you gain 3 life.
 @ deals 3 damage to target creature or player. you gain 3 life.
 @ deals 3 damage to target creature with flying.
 @ deals 3 damage to target nonblack creature. you gain 3 life.
@@ -622,6 +633,7 @@ cumulative upkeep {w}
 @ deals 4 damage to each creature with flying.
 @ deals 4 damage to target creature.
 @ deals 4 damage to target creature or player.
+@ deals 4 damage to target creature or player and you gain 4 life.
 @ deals 5 damage to each creature with flying.
 @ deals 5 damage to target creature.
 @ deals 5 damage to target creature or player.
@@ -629,7 +641,9 @@ cumulative upkeep {w}
 @ deals x damage to each creature.
 @ deals x damage to each creature with flying.
 @ deals x damage to target creature.
+@ deals x damage to target creature and you gain x life.
 @ deals x damage to target creature or player.
+@ deals x damage to target creature or player and you gain x life.
 @ deals x damage to target creature or player. you gain x life.
 deathtouch
 defender
@@ -1320,12 +1334,15 @@ target player discards x cards at random.
 target player draws a card.
 target player draws four cards.
 target player draws three cards.
+target player draws three cards and loses 3 life.
 target player draws two cards.
+target player draws two cards and loses 2 life.
 target player draws x cards.
 target player gains 4 life.
 target player gains 5 life.
 target player gains 6 life.
 target player gains 7 life.
+target player gains 7 life and draws two cards.
 target player gains 8 life.
 target player gains x life.
 target player loses 1 life and you gain 1 life.
@@ -1540,6 +1557,7 @@ when @ dies, each player draws a card.
 when @ dies, each player loses 3 life.
 when @ dies, each player loses 4 life.
 when @ dies, exile all creatures.
+when @ dies, exile @ and return target creature card from your graveyard to the battlefield.
 when @ dies, exile it.
 when @ dies, exile target permanent.
 when @ dies, put a 1/1 green saproling creature token onto the battlefield.
@@ -1646,6 +1664,8 @@ when @ enters the battlefield, target player loses 3 life.
 when @ enters the battlefield, target player loses 6 life.
 when @ enters the battlefield, untap all creatures you control.
 when @ enters the battlefield, untap enchanted creature.
+when @ enters the battlefield, you draw a card and you lose 1 life.
+when @ enters the battlefield, you draw two cards and you lose 2 life.
 when @ enters the battlefield, you gain 10 life.
 when @ enters the battlefield, you gain 1 life.
 when @ enters the battlefield, you gain 20 life.
@@ -1710,6 +1730,7 @@ whenever @ deals combat damage to a player, put a +1/+1 counter on it.
 whenever @ deals combat damage to a player, put a charge counter on it.
 whenever @ deals combat damage to a player, put two +1/+1 counters on it.
 whenever @ deals combat damage to a player, that player discards a card.
+whenever @ deals combat damage to a player, that player discards a card and you draw a card.
 whenever @ deals combat damage to a player, that player discards a card at random.
 whenever @ deals combat damage to a player, you may draw a card.
 whenever @ deals combat damage to a player, you may return target creature card from your graveyard to your hand.
@@ -1852,6 +1873,7 @@ wither
 {w}{w}, {t}: put a charge counter on @.
 {w}{w}, {t}: return target artifact card from your graveyard to your hand.
 {w}{w}{w}: regenerate @.
+{x}{b}{b}: target creature gets -0/-x until end of turn and @ gets +x/+0 until end of turn.
 {x}{b}, {t}, discard a card: target creature gets +x/+0 until end of turn.
 {x}: equipped creature gets +x/+0 until end of turn.
 {x}{g}{g}: @ deals x damage to each creature with flying.
@@ -1870,6 +1892,9 @@ you control enchanted enchantment.
 you control enchanted equipment.
 you control enchanted land.
 you control enchanted permanent.
+you draw three cards and you lose 3 life.
+you draw two cards and you lose 2 life.
+you draw x cards and you lose x life.
 you gain 1 life.
 you gain 20 life.
 you gain 2 life.
@@ -1880,6 +1905,7 @@ you gain 6 life.
 you gain 7 life.
 you gain 8 life.
 you gain x life.
+you gain x life and draw x cards.
 you may tap or untap target artifact, creature, or land.
 you may tap or untap target creature.
 you may tap or untap target permanent.
