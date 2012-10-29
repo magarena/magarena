@@ -18,10 +18,6 @@ KeywordAbility
 StaticAbility
     = EntersTapped
     / EntersWithCounter
-    / EnchantedPump
-    / EnchantedHas
-    / EquippedPump
-    / EquippedHas
     ;
 
 ActivatedAbility
@@ -53,6 +49,7 @@ Action
     / PreventAction
     / RegenerateAction
     / PumpAction
+    / GainsAction
     / BounceAction
     / AddManaAction
     / ReturnAction
@@ -280,24 +277,13 @@ Enchant
     / "enchant player"
     ;
 
-EnchantedPump
-    = "enchanted creature gets " SignedNumber "/" SignedNumber EOS
-    ;
-
-EnchantedHas
-    = "enchanted creature has " Keyword EOS
-    ;
-
-EquippedPump
-    = "equipped creature has " Keyword EOS
-    ;
-
-EquippedHas
-    = "equipped creature gets " SignedNumber "/" SignedNumber EOS
+GainsAction
+    = SelectCreature " has " Keyword " until end of turn"?
+    / SelectCreature " gains " Keyword " until end of turn"?
     ;
 
 PumpAction
-    = SelectCreature " gets " SignedNumber "/" SignedNumber " until end of turn"
+    = SelectCreature " gets " SignedNumber "/" SignedNumber " until end of turn"?
     ;
 
 AddManaAction
@@ -352,6 +338,8 @@ SelectOp
     / "all"
     / "an"
     / "a"
+    / "enchanted"
+    / "equipped"
     ;
 
 SelectCard
@@ -360,7 +348,7 @@ SelectCard
 
 SelectCreature
     = "@"
-    / "target " RestrictedCreature
+    / SelectOp SPACE RestrictedCreature
     ;
 
 SelectPermanent
