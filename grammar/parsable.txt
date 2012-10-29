@@ -112,6 +112,7 @@
 {1}, {t}: untap target creature.
 {1}, {t}: untap target land.
 {1}, {t}: you gain 1 life.
+{1}{u}: counter target red spell.
 {1}{u}, discard a card: draw a card.
 {1}{u}, discard a card: return @ to its owner's hand.
 {1}{u}: @ gains flying until end of turn.
@@ -278,6 +279,7 @@
 {3}{u}, sacrifice a permanent: return target permanent to its owner's hand.
 {3}{u}, {t}: draw a card.
 {3}{u}, {t}: tap target creature.
+{3}{u}{u}: counter target enchantment spell.
 {3}{u}: untap @.
 {3}{w}{b}, {t}: target player loses 1 life and you gain 1 life.
 {3}{w}: @ gets +0/+5 until end of turn.
@@ -334,6 +336,7 @@ at the beginning of your upkeep, sacrifice a nonblack creature.
 at the beginning of your upkeep, sacrifice a permanent.
 at the beginning of your upkeep, tap target creature.
 at the beginning of your upkeep, target player loses 1 life.
+{b}{b}: counter target green spell.
 {b}{b}: draw a card.
 {b}{b}: @ gets +1/+0 until end of turn.
 {b}{b}: return @ to its owner's hand.
@@ -404,6 +407,7 @@ buyback {5}
 @ can't be countered.
 @ can't block.
 changeling
+counter target blue spell.
 counter target creature spell.
 counter target noncreature spell.
 counter target red or green spell.
@@ -411,6 +415,7 @@ counter target spell.
 counter target spell. return target permanent to its owner's hand.
 counter target spell. you gain 3 life.
 counter target spell. you gain 5 life.
+counter target spirit or arcane spell.
 cumulative upkeep {1}
 cumulative upkeep {1}{b}
 cumulative upkeep {1}{u}
@@ -680,6 +685,7 @@ forestwalk
 {g}: @ gains haste until end of turn.
 {g}: @ gains reach until end of turn.
 {g}: @ gains trample until end of turn.
+{g}{g}: counter target black spell.
 {g}: @ gets +0/+1 until end of turn.
 {g}: @ gets +1/+0 until end of turn.
 {g}: @ gets +1/+1 until end of turn.
@@ -1060,6 +1066,8 @@ totem armor
 {t}, pay 1 life: add {g} or {w} to your mana pool.
 {t}, pay 1 life: add {g} to your mana pool.
 {t}, pay 1 life: add one mana of any color to your mana pool.
+{t}, pay 1 life: counter target black spell.
+{t}, pay 1 life: counter target white spell.
 {t}: prevent the next 1 damage that would be dealt to target creature or player this turn.
 {t}: prevent the next 2 damage that would be dealt to target creature or player this turn.
 {t}: prevent the next 3 damage that would be dealt to target creature or player this turn.
@@ -1330,6 +1338,47 @@ whenever @ deals combat damage to a player, that player discards a card at rando
 whenever @ deals combat damage, you gain that much life.
 whenever @ deals damage to a player, that player discards a card.
 whenever @ deals damage, you gain that much life.
+whenever you cast a black spell, @ gains fear until end of turn.
+whenever you cast a black spell, @ gets +1/+1 until end of turn.
+whenever you cast a black spell, remove a -1/-1 counter from @.
+whenever you cast a blue spell, @ gains flying until end of turn.
+whenever you cast a blue spell, @ gets +1/+1 until end of turn.
+whenever you cast a blue spell, remove a -1/-1 counter from @.
+whenever you cast a blue spell, target creature gains flying until end of turn.
+whenever you cast a creature spell, put a +1/+1 counter on @.
+whenever you cast a creature spell, put a 1/1 green saproling creature token onto the battlefield.
+whenever you cast a creature spell, tap target creature.
+whenever you cast a green spell, @ gains forestwalk until end of turn.
+whenever you cast a green spell, @ gets +1/+1 until end of turn.
+whenever you cast a green spell, remove a -1/-1 counter from @.
+whenever you cast a multicolored spell, @ deals 2 damage to target creature or player.
+whenever you cast a multicolored spell, @ gets +3/+3 until end of turn.
+whenever you cast a multicolored spell, untap @.
+whenever you cast an enchantment spell, draw a card.
+whenever you cast a red spell, @ gains first strike until end of turn.
+whenever you cast a red spell, @ gets +1/+1 until end of turn.
+whenever you cast a red spell, remove a -1/-1 counter from @.
+whenever you cast a spell, equipped creature gets +2/+2 until end of turn.
+whenever you cast a spell, return target permanent to its owner's hand.
+whenever you cast a spell, you gain 1 life.
+whenever you cast a spell, you gain 2 life.
+whenever you cast a spirit or arcane spell, @ gains flying until end of turn.
+whenever you cast a spirit or arcane spell, @ gains forestwalk until end of turn.
+whenever you cast a spirit or arcane spell, @ gets +1/+1 until end of turn.
+whenever you cast a spirit or arcane spell, @ gets +2/+2 until end of turn.
+whenever you cast a spirit or arcane spell, put a +1/+1 counter on target creature.
+whenever you cast a spirit or arcane spell, regenerate @.
+whenever you cast a spirit or arcane spell, target creature gains fear until end of turn.
+whenever you cast a spirit or arcane spell, target creature gains flying until end of turn.
+whenever you cast a spirit or arcane spell, target opponent loses 1 life and you gain 1 life.
+whenever you cast a spirit or arcane spell, untap @.
+whenever you cast a treefolk spell, @ gets +2/+2 until end of turn.
+whenever you cast a vampire creature spell, it gains bloodthirst 3.
+whenever you cast a white, blue, black, or red spell, put a +1/+1 counter on @.
+whenever you cast a white spell, @ gains vigilance until end of turn.
+whenever you cast a white spell, @ gets +1/+1 until end of turn.
+whenever you cast a white spell, remove a -1/-1 counter from @.
+whenever you cast a white spell, you gain 3 life.
 when @ leaves the battlefield, draw a card.
 when @ leaves the battlefield, return the exiled card to the battlefield under its owner's control.
 when @ leaves the battlefield, sacrifice a creature.

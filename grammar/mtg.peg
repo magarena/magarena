@@ -35,6 +35,7 @@ Trigger
     / DiesTrigger
     / DealsDamageTrigger
     / AttacksTrigger 
+    / CastTrigger
     ;
 
 Action
@@ -164,6 +165,9 @@ ManaCost
     / HybridSingleCost+
     ;
 
+CastTrigger
+    = "whenever you cast " SelectSpell
+    ;
 
 LeavesBattlefieldTrigger
     = "when @ leaves the battlefield"
@@ -263,6 +267,7 @@ CounterType
     / "depletion"
     / "spore"
     / "storage"
+    / "ki"
     ;
 
 Count
@@ -422,8 +427,19 @@ RestrictedSpell
 
 SpellRestriction
     = "creature"
+    / "white, blue, black, or red"
     / "red or green"
+    / "red"
+    / "white"
+    / "black"
+    / "blue"
+    / "green"
+    / "multicolored"
     / "noncreature"
+    / "enchantment"
+    / "spirit or arcane"
+    / "treefolk"
+    / "vampire creature"
     ;
 
 RestrictedCard
