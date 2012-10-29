@@ -1347,6 +1347,11 @@ wither
 {w}{w}, {t}: put a charge counter on @.
 {w}{w}, {t}: return target artifact card from your graveyard to your hand.
 {w}{w}{w}: regenerate @.
+you control enchanted artifact.
+you control enchanted creature.
+you control enchanted enchantment.
+you control enchanted land.
+you control enchanted permanent.
 you gain 1 life.
 you gain 20 life.
 you gain 2 life.

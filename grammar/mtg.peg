@@ -57,6 +57,7 @@ Action
     / ChangeLifeAction
     / ChangeCounterAction
     / PutTokenAction
+    / ControlAction
     ;
 
 Keyword
@@ -190,6 +191,10 @@ AttacksTrigger
 
 PutTokenAction
     = "put a 1/1 green saproling creature token onto the battlefield"
+    ;
+
+ControlAction
+    = SelectPlayer " control" "s"? SPACE SelectPermanent
     ;
 
 ChangeCounterAction
