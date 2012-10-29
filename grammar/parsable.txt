@@ -39,6 +39,7 @@
 {1}{r}, discard a card at random: @ deals 1 damage to target creature or player.
 {1}: regenerate @.
 {1}, remove a +1/+1 counter from a creature you control: put a 1/1 green saproling creature token onto the battlefield.
+{1}, remove a +1/+1 counter from @: prevent all combat damage that would be dealt this turn.
 {1}, remove a +1/+1 counter from @: regenerate @.
 {1}: return @ to its owner's hand.
 {1}{r}: @ gets +1/+0 until end of turn.
@@ -572,6 +573,7 @@ forestwalk
 {g}, {t}: add one mana of any color to your mana pool.
 {g}, {t}: add {r} to your mana pool.
 {g}: target creature gets +1/+1 until end of turn.
+{g}, {t}, discard a card: prevent all combat damage that would be dealt this turn.
 {g}, {t}, discard a card: target creature gets +2/+2 until end of turn.
 {g}, {t}: put a 1/1 green saproling creature token onto the battlefield.
 {g}, {t}, sacrifice a creature: destroy target enchantment.
@@ -645,6 +647,7 @@ pay 4 life: regenerate @.
 pay 7 life: draw seven cards.
 pay 8 life: untap @.
 persist
+prevent all combat damage that would be dealt this turn.
 prevent the next 1 damage that would be dealt to target creature or player this turn.
 prevent the next 2 damage that would be dealt to target creature or player this turn.
 prevent the next 3 damage that would be dealt to target creature or player this turn.
@@ -673,6 +676,7 @@ remove a charge counter from @: add one mana of any color to your mana pool.
 remove a charge counter from @: target creature gets +1/+1 until end of turn.
 remove three charge counters from @: draw a card.
 remove three spore counters from @: @ deals 1 damage to target creature or player.
+remove three spore counters from @: prevent all combat damage that would be dealt this turn.
 remove three spore counters from @: put a 1/1 green saproling creature token onto the battlefield.
 remove three spore counters from @: regenerate @.
 remove two +1/+1 counters from @: draw a card.
@@ -756,6 +760,7 @@ sacrifice @: destroy target nonbasic land.
 sacrifice @: destroy target nonblack creature.
 sacrifice @: destroy target nonblack creature. it can't be regenerated.
 sacrifice @: draw a card.
+sacrifice @: prevent all combat damage that would be dealt this turn.
 sacrifice @: put a -1/-1 counter on target creature.
 sacrifice @: put a +1/+1 counter on target creature.
 sacrifice @: put two charge counters on target artifact.
