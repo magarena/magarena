@@ -211,6 +211,7 @@ ChangeLifeAction
 SelectPlayer
     = "target player"
     / "target opponent"
+    / "that player"
     / "you"
     ;
 

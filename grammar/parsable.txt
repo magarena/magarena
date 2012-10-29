@@ -1069,9 +1069,13 @@ when @ enters the battlefield, untap all creatures you control.
 whenever @ attacks, tap all artifacts.
 whenever @ attacks, target creature gets +0/+3 until end of turn.
 whenever @ deals combat damage to a player, draw a card.
+whenever @ deals combat damage to a player, that player discards a card.
+whenever @ deals combat damage to a player, that player discards a card at random.
 when @ leaves the battlefield, draw a card.
 when @ leaves the battlefield, sacrifice a creature.
 when @ leaves the battlefield, sacrifice a land.
+when @ leaves the battlefield, that player gains 3 life.
+when @ leaves the battlefield, that player gains 6 life.
 wither
 {w}: regenerate @.
 {w}: return @ to its owner's hand.
