@@ -90,6 +90,7 @@ Keyword
     / "Bushido" SPACE Number
     / "Soulshift" SPACE Number
     / "Fading" SPACE Number
+    / "Devour" SPACE Number
     / "Modular" SPACE Number
     / "Vanishing" SPACE Number
     / "Bloodthirst" SPACE Number

@@ -379,6 +379,9 @@ Destroy target Spirit.
 Destroy target Spirit or enchantment.
 Destroy target tapped creature.
 Destroy target Wall. It can't be regenerated.
+Devour 1
+Devour 2
+Devour 3
 Discard a card: Add {B} to your mana pool.
 Discard a card: @ gets +0/+4 until end of turn.
 Discard a card: @ gets +1/+1 until end of turn.
