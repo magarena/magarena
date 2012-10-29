@@ -357,6 +357,7 @@ SelectOp
     / "all"
     / "an"
     / "a"
+    / "each"
     / "enchanted"
     / "equipped"
     / "the"
