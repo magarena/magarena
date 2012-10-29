@@ -135,6 +135,7 @@
 {1}{u}, sacrifice @: counter target creature spell.
 {1}{u}, sacrifice @: draw a card.
 {1}{u}, sacrifice @: return target creature to its owner's hand.
+{1}{u}, {t}: put target green creature on top of its owner's library.
 {1}{u}, {t}, sacrifice @: draw two cards.
 {1}{u}, {t}: target creature gains flying until end of turn.
 {1}{u}, {t}: you may tap or untap target creature.
@@ -159,6 +160,7 @@
 {1}{w}, sacrifice @: exile target enchantment.
 {1}{w}: target creature gains first strike until end of turn.
 {1}{w}: target creature you control gains lifelink until end of turn.
+{1}{w}: target green creature gains first strike until end of turn.
 {1}{w}, {t}, discard a card: destroy target artifact or enchantment.
 {1}{w}, {t}, sacrifice @: destroy target artifact or enchantment.
 {1}{w}, {t}: you gain 5 life.
@@ -191,6 +193,7 @@
 {2}{g}: put a 1/1 green saproling creature token onto the battlefield.
 {2}{g}: regenerate @.
 {2}{g}, sacrifice @: @ deals 2 damage to target creature with flying.
+{2}{g}: target green creature gains protection from black until end of turn.
 {2}{g}, {t}: target creature gets +2/+2 until end of turn.
 {2}{g}, {t}: untap target creature.
 {2}{g}{w}, {t}: put a +1/+1 counter on each creature you control.
@@ -221,6 +224,8 @@
 {2}: target artifact creature gets +1/+1 until end of turn.
 {2}: target creature gains flying until end of turn.
 {2}: target creature you control gains flying until end of turn.
+{2}: target red creature gains haste until end of turn.
+{2}: target white creature gains persist until end of turn.
 {2}, {t}: each player draws a card.
 {2}, {t}: exile target creature you control.
 {2}, {t}: exile target permanent you control.
@@ -287,8 +292,10 @@
 {3}{r}, sacrifice @: destroy target artifact.
 {3}, sacrifice a creature: draw a card.
 {3}, sacrifice a creature: return target creature card from your graveyard to the battlefield.
+{3}: target blue creature gains shroud until end of turn.
 {3}: target creature doesn't untap during its controller's next untap step.
 {3}: target creature gets +3/+3 until end of turn.
+{3}: target green creature gets +1/+1 until end of turn.
 {3}, {t}: @ deals 1 damage to target creature or player.
 {3}, {t}: put a +1/+1 counter on target creature.
 {3}, {t}: put a charge counter on @.
@@ -380,8 +387,12 @@ at the beginning of your upkeep, put a spore counter on @.
 at the beginning of your upkeep, remove a -1/-1 counter from @.
 at the beginning of your upkeep, remove a -1/-1 counter from each creature you control.
 at the beginning of your upkeep, remove a depletion counter from @.
+at the beginning of your upkeep, return a blue creature you control to its owner's hand.
 at the beginning of your upkeep, return a creature you control to its owner's hand.
+at the beginning of your upkeep, return a green creature you control to its owner's hand.
 at the beginning of your upkeep, return a permanent you control to its owner's hand.
+at the beginning of your upkeep, return a red creature you control to its owner's hand.
+at the beginning of your upkeep, return a white creature you control to its owner's hand.
 at the beginning of your upkeep, return target creature card from your graveyard to the battlefield.
 at the beginning of your upkeep, sacrifice a creature.
 at the beginning of your upkeep, sacrifice a nonblack creature.
@@ -408,6 +419,8 @@ battle cry
 {b}{b}: @ gets +1/+0 until end of turn.
 {b}{b}: return @ to its owner's hand.
 {b}{b}: target creature gains shadow until end of turn.
+{b}{b}, {t}: destroy target green creature.
+{b}{b}, {t}: destroy target white creature.
 {b}{b}, {t}: put a charge counter on @.
 {b}{b}, {t}: target player loses 2 life and you gain 2 life.
 {b}: destroy target artifact, creature, or land you control.
@@ -444,6 +457,7 @@ bloodthirst 6
 {b}{r}: @ gets +1/+0 until end of turn.
 {b}{r}{g}, {t}: return target creature card from your graveyard to your hand.
 {b}{r}{g}, {t}: target player draws a card.
+{b}{r}, {t}: @ deals 2 damage to target white creature.
 {b}, sacrifice a creature: destroy target nonblack creature.
 {b}, sacrifice a creature: regenerate @.
 {b}, sacrifice a creature: target creature gets -1/-1 until end of turn.
@@ -540,10 +554,13 @@ destroy all creatures. they can't be regenerated.
 destroy all creatures with flying.
 destroy all creatures with power 4 or greater. they can't be regenerated.
 destroy all enchantments.
+destroy all green creatures.
+destroy all green creatures. they can't be regenerated.
 destroy all islands.
 destroy all lands.
 destroy all nonbasic lands.
 destroy all tapped creatures.
+destroy all white creatures.
 destroy each creature with converted mana cost 3 or less.
 destroy each creature with converted mana cost 3 or less. they can't be regenerated.
 destroy target artifact.
@@ -576,6 +593,7 @@ destroy target creature. you gain 4 life.
 destroy target enchantment.
 destroy target enchantment. you gain 2 life.
 destroy target equipment. add {g} to your mana pool.
+destroy target green creature. it can't be regenerated.
 destroy target green or white creature.
 destroy target human creature.
 destroy target land.
@@ -597,6 +615,7 @@ destroy target spirit.
 destroy target spirit or enchantment.
 destroy target tapped creature.
 destroy target wall. it can't be regenerated.
+destroy target white creature. it can't be regenerated.
 devour 1
 devour 2
 devour 3
@@ -686,6 +705,7 @@ enchanted creature loses flying.
 enchanted permanent doesn't untap during its controller's untap step.
 enchant enchantment
 enchant equipment
+enchant green creature
 enchant green or white creature
 enchant island
 enchant land
@@ -877,12 +897,17 @@ modular 4
 modular 6
 mountainwalk
 other artifact creatures you control get +1/+1.
+other blue creatures you control get +1/+1.
 other creatures you control get +0/+1.
 other creatures you control get -1/-1.
 other creatures you control get +1/+1.
 other creatures you control get +2/+2.
+other green creatures you control get +1/+1.
 other human creatures you control get +1/+1.
 other nonblack creatures you control get +1/+1.
+other red creatures you control get +1/+1.
+other white creatures get +1/+1.
+other white creatures you control get +1/+1.
 pay 1 life: draw a card.
 pay 1 life: @ gets +1/+1 until end of turn.
 pay 1 life: @ gets +2/-1 until end of turn.
@@ -995,6 +1020,7 @@ return target sorcery card from your graveyard to your hand.
 {r}: target creature you control gains haste until end of turn.
 {r}, {t}: @ deals 1 damage to target attacking or blocking creature.
 {r}, {t}: @ deals 1 damage to target creature or player.
+{r}, {t}: @ deals 2 damage to target blue creature.
 {r}, {t}, discard a card: @ deals 1 damage to target creature or player.
 {r}, {t}, discard a card: destroy target wall.
 {r}, {t}, sacrifice a creature: @ deals 2 damage to target creature or player.
@@ -1108,6 +1134,7 @@ swampwalk
 {t}: add {w} or {u} to your mana pool. put a depletion counter on @.
 {t}: add {w} to your mana pool.
 tap all artifacts.
+tap all blue creatures.
 tap all creatures.
 tap an untapped creature you control: @ gains flying until end of turn.
 tap an untapped creature you control: @ gets +1/+1 until end of turn.
@@ -1191,6 +1218,7 @@ target player loses 5 life and you gain 5 life.
 {t}: @ deals 3 damage to target attacking or blocking creature.
 {t}: @ deals 3 damage to target creature or player.
 {t}: @ deals 4 damage to target attacking creature with flying.
+{t}: destroy target blue creature.
 {t}: destroy target creature. it can't be regenerated.
 {t}: destroy target creature or land.
 {t}: destroy target creature with power 4 or greater.
@@ -1246,6 +1274,7 @@ trample
 {t}, sacrifice @: destroy target land.
 {t}, sacrifice @: destroy target nonbasic land.
 {t}, sacrifice @: destroy target wall.
+{t}, sacrifice @: exile target red creature.
 {t}, sacrifice @: return target artifact card from your graveyard to your hand.
 {t}, sacrifice @: target creature gains flying until end of turn.
 {t}, sacrifice @: target creature gets -1/-1 until end of turn.
@@ -1283,6 +1312,7 @@ trample
 {t}: target player loses 1 life.
 {t}: untap enchanted creature.
 {t}: untap target artifact or creature.
+{t}: untap target blue creature.
 {t}: untap target creature.
 {t}: untap target land.
 {t}: untap target permanent.
@@ -1308,6 +1338,7 @@ undying
 untap all artifacts.
 untap all creatures you control.
 untap all lands you control.
+untap all white creatures you control.
 untap target artifact, creature, or land.
 untap target creature. it gets +2/+4 until end of turn.
 untap target creature. it gets +3/+3 until end of turn.
@@ -1322,6 +1353,7 @@ untap target permanent.
 {u}, sacrifice @: counter target noncreature spell.
 {u}, sacrifice @: return target creature to its owner's hand.
 {u}: tap enchanted creature.
+{u}: tap target green creature.
 {u}, {t}: @ deals 1 damage to target creature or player.
 {u}, {t}, discard a card: return target creature to its owner's hand.
 {u}, {t}, discard a card: return target permanent you control to its owner's hand.
@@ -1453,6 +1485,7 @@ when @ enters the battlefield, sacrifice a land.
 when @ enters the battlefield, sacrifice all creatures you control.
 when @ enters the battlefield, tap all islands.
 when @ enters the battlefield, tap all lands you control.
+when @ enters the battlefield, tap all red creatures.
 when @ enters the battlefield, tap enchanted creature.
 when @ enters the battlefield, tap enchanted permanent.
 when @ enters the battlefield, target creature gains fear until end of turn.
@@ -1618,6 +1651,7 @@ when @ is put into a graveyard from the battlefield, draw a card.
 when @ is put into a graveyard from the battlefield, draw three cards.
 when @ is put into a graveyard from the battlefield, exile equipped creature.
 when @ is put into a graveyard from the battlefield, return @ to its owner's hand.
+when @ leaves the battlefield, destroy target white creature. it can't be regenerated.
 when @ leaves the battlefield, draw a card.
 when @ leaves the battlefield, return the exiled card to the battlefield under its owner's control.
 when @ leaves the battlefield, sacrifice a creature.
