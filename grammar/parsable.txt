@@ -229,6 +229,7 @@
 {2}, sacrifice a permanent: return target creature to its owner's hand.
 {2}, sacrifice @: draw a card.
 {2}, sacrifice @: target player draws a card.
+{2}, {t}: add {b} or {g} to your mana pool.
 {2}, {t}: add one mana of any color to your mana pool.
 {2}, {t}: all creatures get -1/-0 until end of turn.
 {2}: target artifact creature gets +1/+1 until end of turn.
@@ -1247,13 +1248,16 @@ storm
 swampwalk
 {t}: add {1} to your mana pool.
 {t}: add {1} to your mana pool. you gain 1 life.
+{t}: add {b} or {g} to your mana pool.
 {t}: add {b} or {r} to your mana pool.
 {t}: add {b} or {r} to your mana pool. put a depletion counter on @.
 {t}: add {b} to your mana pool.
 {t}: add {g} or {w} to your mana pool.
 {t}: add {g} or {w} to your mana pool. put a depletion counter on @.
 {t}: add {g} to your mana pool.
+{t}: add {g}, {w}, or {u} to your mana pool.
 {t}: add one mana of any color to your mana pool.
+{t}: add {r}, {g}, or {w} to your mana pool.
 {t}: add {r} or {g} to your mana pool.
 {t}: add {r} or {g} to your mana pool. put a depletion counter on @.
 {t}: add {r} to your mana pool.

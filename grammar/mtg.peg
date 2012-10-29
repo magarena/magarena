@@ -351,7 +351,10 @@ AddManaAction
 
 ManaSource
     = "{1}"
+    / "{g}, {w}, or {u}"
+    / "{r}, {g}, or {w}" 
     / "{b} or {r}"
+    / "{b} or {g}"
     / "{g} or {w}"
     / "{r} or {g}"
     / "{u} or {b}"
