@@ -156,7 +156,7 @@ ColorlessCost
     / "{x}"
     ;
 
-MonoSingleCost
+SingleColor
     = "{b}"
     / "{u}"
     / "{g}"
@@ -176,8 +176,8 @@ HybridSingleCost
     ;
 
 ManaCost
-    = ColorlessCost MonoSingleCost*
-    / MonoSingleCost+
+    = ColorlessCost SingleColor*
+    / SingleColor+
     / HybridSingleCost+
     ;
 
@@ -351,19 +351,9 @@ AddManaAction
 
 ManaSource
     = "{1}"
-    / "{g}, {w}, or {u}"
-    / "{r}, {g}, or {w}" 
-    / "{b} or {r}"
-    / "{b} or {g}"
-    / "{g} or {w}"
-    / "{r} or {g}"
-    / "{u} or {b}"
-    / "{w} or {u}"
-    / "{g}"
-    / "{b}"
-    / "{u}"
-    / "{w}"
-    / "{r}"
+    / SingleColor (", " SingleColor)* ", or " SingleColor
+    / SingleColor " or " SingleColor
+    / SingleColor
     / "one mana of any color"
     ;
 

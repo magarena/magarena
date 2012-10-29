@@ -3,6 +3,7 @@
 {0}: @ loses flying.
 {0}: return @ to its owner's hand.
 {1}: add {b} to your mana pool.
+{1}: add {r} or {w} to your mana pool.
 {1}{b}{b}: regenerate @.
 {1}{b}{b}, sacrifice a creature: return target creature card from your graveyard to your hand.
 {1}{b}, discard a card: @ gets +2/+2 until end of turn.
@@ -230,7 +231,11 @@
 {2}, sacrifice @: draw a card.
 {2}, sacrifice @: target player draws a card.
 {2}, {t}: add {b} or {g} to your mana pool.
+{2}, {t}: add {g} or {u} to your mana pool.
 {2}, {t}: add one mana of any color to your mana pool.
+{2}, {t}: add {r} or {w} to your mana pool.
+{2}, {t}: add {u} or {r} to your mana pool.
+{2}, {t}: add {w} or {b} to your mana pool.
 {2}, {t}: all creatures get -1/-0 until end of turn.
 {2}: target artifact creature gets +1/+1 until end of turn.
 {2}: target black creature gains wither until end of turn.
@@ -1251,22 +1256,30 @@ swampwalk
 {t}: add {b} or {g} to your mana pool.
 {t}: add {b} or {r} to your mana pool.
 {t}: add {b} or {r} to your mana pool. put a depletion counter on @.
+{t}: add {b}, {r}, or {g} to your mana pool.
 {t}: add {b} to your mana pool.
+{t}: add {g} or {u} to your mana pool.
 {t}: add {g} or {w} to your mana pool.
 {t}: add {g} or {w} to your mana pool. put a depletion counter on @.
 {t}: add {g} to your mana pool.
+{t}: add {g}, {u}, or {b} to your mana pool.
 {t}: add {g}, {w}, or {u} to your mana pool.
 {t}: add one mana of any color to your mana pool.
 {t}: add {r}, {g}, or {w} to your mana pool.
 {t}: add {r} or {g} to your mana pool.
 {t}: add {r} or {g} to your mana pool. put a depletion counter on @.
+{t}: add {r} or {w} to your mana pool.
 {t}: add {r} to your mana pool.
+{t}: add {u}, {b}, or {r} to your mana pool.
 {t}: add {u} or {b} to your mana pool.
 {t}: add {u} or {b} to your mana pool. put a depletion counter on @.
+{t}: add {u} or {r} to your mana pool.
 {t}: add {u} to your mana pool.
+{t}: add {w} or {b} to your mana pool.
 {t}: add {w} or {u} to your mana pool.
 {t}: add {w} or {u} to your mana pool. put a depletion counter on @.
 {t}: add {w} to your mana pool.
+{t}: add {w}, {u}, or {b} to your mana pool.
 tap all artifacts.
 tap all blue creatures.
 tap all creatures.
