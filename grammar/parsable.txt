@@ -127,6 +127,8 @@
 {1}{u}, sacrifice @: return target creature to its owner's hand.
 {1}{u}, {t}, sacrifice @: draw two cards.
 {1}{u}, {t}: target creature gains flying until end of turn.
+{1}{u}, {t}: you may tap or untap target creature.
+{1}{u}, {t}: you may tap or untap target permanent.
 {1}{u}{u}: @ gains shroud until end of turn.
 {1}{u}{u}, sacrifice a creature: counter target creature spell.
 {1}{u}{u}: target creature gains flying until end of turn.
@@ -215,6 +217,7 @@
 {2}, {t}: tap target creature.
 {2}, {t}: target creature gains flying until end of turn.
 {2}, {t}: you gain 1 life.
+{2}, {t}: you may tap or untap target creature.
 {2}{u}, discard a card: return @ to its owner's hand.
 {2}: untap target artifact creature.
 {2}{u}, sacrifice a land: draw a card.
@@ -251,6 +254,7 @@
 {3}{g}, sacrifice @: @ deals 2 damage to target creature or player.
 {3}{g}, sacrifice @: destroy target artifact.
 {3}{g}: target creature gets +2/+2 until end of turn.
+{3}{g}, {t}: you may tap or untap target artifact, creature, or land.
 {3}: put a +1/+1 counter on @.
 {3}{r}: @ deals 1 damage to target creature or player.
 {3}: regenerate @.
@@ -288,6 +292,7 @@
 {3}{w}{b}, {t}: target player loses 1 life and you gain 1 life.
 {3}{w}: @ gets +0/+5 until end of turn.
 {3}{w}: tap target creature.
+{3}: you may tap or untap equipped creature.
 {4}{b}{b}, {t}, sacrifice @: target creature gets -6/-6 until end of turn.
 {4}{b}, sacrifice a creature: return target creature card from your graveyard to your hand.
 {4}: @ gains flying until end of turn.
@@ -538,6 +543,7 @@ discard a card: @ gets +1/+1 until end of turn.
 discard a card: regenerate @.
 discard a card: return enchanted creature to its owner's hand.
 discard a card: return @ to its owner's hand.
+discard a card: you may tap or untap target artifact, creature, or land.
 discard a creature card: @ gets +2/+2 until end of turn.
 discard a creature card: put a +1/+1 counter on @.
 discard an artifact card: @ gets +2/+2 until end of turn.
@@ -972,6 +978,7 @@ sacrifice @: target player loses 1 life.
 sacrifice @: target player loses 1 life and you gain 1 life.
 sacrifice @: you gain 3 life.
 sacrifice @: you gain 4 life.
+sacrifice @: you may tap or untap target creature.
 shadow
 shroud
 soulbond
@@ -1197,11 +1204,13 @@ untap target permanent.
 {u}, {t}, discard a card: return target creature to its owner's hand.
 {u}, {t}, discard a card: return target permanent you control to its owner's hand.
 {u}, {t}, discard a card: target creature gains flying until end of turn.
+{u}, {t}, discard a card: you may tap or untap target artifact, creature, or land.
 {u}, {t}: draw two cards.
 {u}, {t}: put target creature you control on top of its owner's library.
 {u}, {t}: return target permanent you control to its owner's hand.
 {u}, {t}, sacrifice a creature or enchantment: counter target spell.
 {u}, {t}: target creature gains flying until end of turn.
+{u}, {t}: you may tap or untap target creature.
 {u}: untap @.
 {u}: untap enchanted creature.
 {u}{u}, {t}, discard a card: counter target creature spell.
@@ -1359,6 +1368,7 @@ when @ enters the battlefield, you may return target instant or sorcery card fro
 when @ enters the battlefield, you may return target land to its owner's hand.
 when @ enters the battlefield, you may return target sorcery card from your graveyard to your hand.
 when @ enters the battlefield, you may return target tapped creature to its owner's hand.
+when @ enters the battlefield, you may tap or untap target permanent.
 when @ enters the battlefield, you may tap target creature.
 whenever @ attacks, it gets +0/+2 until end of turn.
 whenever @ attacks, it gets +0/+3 until end of turn.
@@ -1436,6 +1446,7 @@ whenever you cast a spirit or arcane spell, you may destroy target nonbasic land
 whenever you cast a spirit or arcane spell, you may draw a card.
 whenever you cast a spirit or arcane spell, you may put a ki counter on @.
 whenever you cast a spirit or arcane spell, you may return @ to its owner's hand.
+whenever you cast a spirit or arcane spell, you may tap or untap target creature.
 whenever you cast a treefolk spell, @ gets +2/+2 until end of turn.
 whenever you cast a treefolk spell, you may have target creature get +3/-3 until end of turn.
 whenever you cast a vampire creature spell, it gains bloodthirst 3.
@@ -1505,3 +1516,6 @@ you gain 5 life.
 you gain 6 life.
 you gain 7 life.
 you gain 8 life.
+you may tap or untap target artifact, creature, or land.
+you may tap or untap target creature.
+you may tap or untap target permanent.
