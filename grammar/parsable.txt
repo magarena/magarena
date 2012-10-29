@@ -609,6 +609,8 @@ enchant artifact
 enchant artifact creature
 enchant creature
 enchant creature you control
+enchanted artifact doesn't untap during its controller's untap step.
+enchanted creature doesn't untap during its controller's untap step.
 enchanted creature gets -0/-1.
 enchanted creature gets +0/+1.
 enchanted creature gets +0/+2.
@@ -661,6 +663,7 @@ enchanted creature has swampwalk.
 enchanted creature has trample.
 enchanted creature has vigilance.
 enchanted creature loses flying.
+enchanted permanent doesn't untap during its controller's untap step.
 enchant enchantment
 enchant equipment
 enchant green or white creature
@@ -703,6 +706,7 @@ equip {3}
 equip {4}
 equip {5}
 equip {6}
+equipped creature doesn't untap during its controller's untap step.
 equipped creature gets +0/+3.
 equipped creature gets +0/+6.
 equipped creature gets +1/+0.

@@ -66,6 +66,7 @@ Action
     / PutTokenAction
     / ControlAction
     / ShuffleAction
+    / DoesntUntapAction
     ;
 
 Keyword
@@ -205,6 +206,10 @@ DealsDamageTrigger
 
 AttacksTrigger
     = "whenever @ attacks"
+    ;
+
+DoesntUntapAction
+    = SelectPermanent " doesn't untap during its controller's untap step"
     ;
 
 ShuffleAction
