@@ -557,6 +557,8 @@ Tribal
     = "spirit" "s"?
     / "island" "s"?
     / "wall" "s"?
+    / "human"
+    / "elf"
     ;
 
 Creature

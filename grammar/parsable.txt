@@ -57,6 +57,8 @@
 {1}{g}: regenerate enchanted creature.
 {1}{g}: regenerate target creature.
 {1}{g}: regenerate target green creature.
+{1}{g}, sacrifice a human: put two +1/+1 counters on target creature.
+{1}{g}, sacrifice an elf: target creature gets +3/+3 until end of turn.
 {1}{g}, sacrifice @: destroy target artifact or enchantment.
 {1}{g}, sacrifice @: destroy target enchantment.
 {1}{g}, {t}: @ deals 5 damage to target attacking or blocking creature with flying.
@@ -319,6 +321,7 @@
 {3}{b}: @ gains deathtouch until end of turn.
 {3}{b}: regenerate @.
 {3}{b}, {t}: destroy target tapped creature.
+{3}{b}, {t}, sacrifice a human: destroy target creature.
 {3}{b}, {t}: target creature gains swampwalk until end of turn.
 {3}: @ deals 1 damage to target creature or player.
 {3}, discard a card at random: target creature gets +2/+2 until end of turn.
@@ -558,6 +561,7 @@ blue creatures get +1/+1.
 {b}, sacrifice a creature: regenerate @.
 {b}, sacrifice a creature: target creature gets -1/-1 until end of turn.
 {b}, sacrifice a creature: target player loses 1 life.
+{b}, sacrifice an elf: regenerate @.
 {b}, sacrifice @: destroy target nonblack creature.
 {b}, sacrifice @: target player discards a card.
 {b}, sacrifice @: target player loses 1 life and you gain 1 life.
@@ -1070,6 +1074,7 @@ green creatures you control have trample.
 {g}, {t}: target creature gets +1/+1 until end of turn.
 {g}, {t}: target creature gets +2/+2 until end of turn.
 {g}, {t}: target creature gets +5/+5 until end of turn.
+{g}, {t}: untap target elf.
 {g/u}: @ gains shroud until end of turn.
 {g}{u}: put @ on top of its owner's library.
 {g/w}{g/w}: @ gets +1/+1 until end of turn.
@@ -1302,6 +1307,7 @@ sacrifice @: add one mana of any color to your mana pool.
 sacrifice @: add {r} to your mana pool.
 sacrifice @: add {u} to your mana pool.
 sacrifice @: add {w} to your mana pool.
+sacrifice a human: regenerate @.
 sacrifice a land: @ deals 1 damage to each creature with flying.
 sacrifice a land: destroy target enchantment.
 sacrifice a land: @ gains flying until end of turn.
