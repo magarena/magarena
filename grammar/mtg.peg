@@ -530,6 +530,7 @@ CreatureRestriction
     / "white"
     / "green"
     / "red"
+    / "black"
     / "human"
     / "non-vampire, non-werewolf, non-zombie"
     / "nonartifact"

@@ -161,6 +161,7 @@
 {1}{w}: target creature gains first strike until end of turn.
 {1}{w}: target creature you control gains lifelink until end of turn.
 {1}{w}: target green creature gains first strike until end of turn.
+{1}{w}, {t}: destroy target black creature.
 {1}{w}, {t}, discard a card: destroy target artifact or enchantment.
 {1}{w}, {t}, sacrifice @: destroy target artifact or enchantment.
 {1}{w}, {t}: you gain 5 life.
@@ -222,6 +223,7 @@
 {2}, {t}: add one mana of any color to your mana pool.
 {2}, {t}: all creatures get -1/-0 until end of turn.
 {2}: target artifact creature gets +1/+1 until end of turn.
+{2}: target black creature gains wither until end of turn.
 {2}: target creature gains flying until end of turn.
 {2}: target creature you control gains flying until end of turn.
 {2}: target red creature gains haste until end of turn.
@@ -322,6 +324,7 @@
 {3}{w}{b}, {t}: target player loses 1 life and you gain 1 life.
 {3}{w}: @ gets +0/+5 until end of turn.
 {3}{w}: tap target creature.
+{3}{w}{w}, sacrifice @: exile all black creatures.
 {3}: you may tap or untap equipped creature.
 {4}{b}{b}, {t}, sacrifice @: target creature gets -6/-6 until end of turn.
 {4}{b}, sacrifice a creature: return target creature card from your graveyard to your hand.
@@ -387,6 +390,7 @@ at the beginning of your upkeep, put a spore counter on @.
 at the beginning of your upkeep, remove a -1/-1 counter from @.
 at the beginning of your upkeep, remove a -1/-1 counter from each creature you control.
 at the beginning of your upkeep, remove a depletion counter from @.
+at the beginning of your upkeep, return a black creature you control to its owner's hand.
 at the beginning of your upkeep, return a blue creature you control to its owner's hand.
 at the beginning of your upkeep, return a creature you control to its owner's hand.
 at the beginning of your upkeep, return a green creature you control to its owner's hand.
@@ -548,6 +552,7 @@ destroy all artifacts and enchantments.
 destroy all artifacts, creatures, and enchantments.
 destroy all artifacts, creatures, and lands. they can't be regenerated.
 destroy all artifacts. they can't be regenerated.
+destroy all black creatures.
 destroy all creatures.
 destroy all creatures and lands.
 destroy all creatures. they can't be regenerated.
@@ -565,6 +570,7 @@ destroy each creature with converted mana cost 3 or less.
 destroy each creature with converted mana cost 3 or less. they can't be regenerated.
 destroy target artifact.
 destroy target artifact creature.
+destroy target artifact creature or black creature. it can't be regenerated.
 destroy target artifact, enchantment, or land.
 destroy target artifact. it can't be regenerated.
 destroy target artifact or creature. it can't be regenerated.
@@ -646,6 +652,7 @@ each player draws two cards.
 each player draws x cards.
 enchant artifact
 enchant artifact creature
+enchant black creature
 enchant creature
 enchant creature you control
 enchanted artifact doesn't untap during its controller's untap step.
@@ -897,6 +904,9 @@ modular 4
 modular 6
 mountainwalk
 other artifact creatures you control get +1/+1.
+other black creatures get -1/-1.
+other black creatures get +1/+1.
+other black creatures you control get +1/+1.
 other blue creatures you control get +1/+1.
 other creatures you control get +0/+1.
 other creatures you control get -1/-1.
@@ -1077,6 +1087,7 @@ sacrifice @: @ deals 1 damage to target creature or player.
 sacrifice @: @ deals 2 damage to each creature with flying.
 sacrifice @: @ deals 2 damage to target creature or player.
 sacrifice @: destroy target artifact or enchantment.
+sacrifice @: destroy target black creature.
 sacrifice @: destroy target enchantment.
 sacrifice @: destroy target nonbasic land.
 sacrifice @: destroy target nonblack creature.
@@ -1274,6 +1285,7 @@ trample
 {t}, sacrifice @: destroy target land.
 {t}, sacrifice @: destroy target nonbasic land.
 {t}, sacrifice @: destroy target wall.
+{t}, sacrifice @: exile target black creature.
 {t}, sacrifice @: exile target red creature.
 {t}, sacrifice @: return target artifact card from your graveyard to your hand.
 {t}, sacrifice @: target creature gains flying until end of turn.
@@ -1292,6 +1304,7 @@ trample
 {t}: target attacking creature gets +1/+1 until end of turn.
 {t}: target attacking or blocking creature gets +1/+1 until end of turn.
 {t}: target attacking or blocking creature gets +2/+2 until end of turn.
+{t}: target black creature gets -2/-0 until end of turn.
 {t}: target black or red creature gains haste until end of turn.
 {t}: target creature gains flying until end of turn.
 {t}: target creature gains forestwalk until end of turn.
