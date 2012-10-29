@@ -550,6 +550,7 @@ destroy target creature or enchantment.
 destroy target creature or land.
 destroy target creature or land. it can't be regenerated.
 destroy target creature with converted mana cost 3 or less. it can't be regenerated.
+destroy target creature with converted mana cost x.
 destroy target creature with flying.
 destroy target creature with flying. you gain 2 life.
 destroy target creature with power 2 or less.
@@ -1607,6 +1608,7 @@ wither
 {w}{w}, {t}: put a charge counter on @.
 {w}{w}, {t}: return target artifact card from your graveyard to your hand.
 {w}{w}{w}: regenerate @.
+{x}{u}{u}, {t}: return target creature with converted mana cost x to its owner's hand.
 you control enchanted artifact.
 you control enchanted artifact creature.
 you control enchanted creature.

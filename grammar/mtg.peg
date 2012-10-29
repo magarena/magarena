@@ -488,6 +488,7 @@ RestrictedCreature
 
 CreatureRestriction
     = "with converted mana cost 3 or less"
+    / "with converted mana cost x"
     / "with power 4 or greater"
     / "with power 2 or less"
     / "with flying"
