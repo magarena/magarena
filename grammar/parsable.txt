@@ -1507,6 +1507,8 @@ whenever you cast a red spell, @ gains first strike until end of turn.
 whenever you cast a red spell, @ gets +1/+1 until end of turn.
 whenever you cast a red spell, remove a -1/-1 counter from @.
 whenever you cast a red spell, you may untap @.
+whenever you cast a spell during an opponent's turn, you may have target creature get -1/-1 until end of turn.
+whenever you cast a spell during an opponent's turn, you may return target creature you control to its owner's hand.
 whenever you cast a spell, equipped creature gets +2/+2 until end of turn.
 whenever you cast a spell, return target permanent to its owner's hand.
 whenever you cast a spell, you gain 1 life.

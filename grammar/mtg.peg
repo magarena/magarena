@@ -432,7 +432,7 @@ SelectTribal
     ;
 
 RestrictedSpell
-    = (SpellRestriction SPACE)? Spell
+    = (SpellRestriction SPACE)? Spell (SPACE SpellRestriction)?
     ;
 
 SpellRestriction
@@ -451,6 +451,7 @@ SpellRestriction
     / "treefolk"
     / "vampire creature"
     / "wizard"
+    / "during an opponent's turn"
     ;
 
 RestrictedCard
