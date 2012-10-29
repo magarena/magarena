@@ -1,330 +1,330 @@
 {0}: @ gets +1/-1 until end of turn.
-{0}: Return @ to its owner's hand.
-{1}: Add {B} to your mana pool.
-{1}{B}{B}: Regenerate @.
-{1}{B}{B}, Sacrifice a creature: Return target creature card from your graveyard to your hand.
-{1}{B}, Discard a card: @ gets +2/+2 until end of turn.
-{1}{B}, Discard a card: Regenerate @.
-{1}{B}: @ gets +1/+0 until end of turn.
-{1}{B}: @ gets +1/+1 until end of turn.
-{1}{B}: @ gets +2/+2 until end of turn.
-{1}{B}{G}: Regenerate @.
-{1}{B}, Pay 2 life: Return target creature card from your graveyard to your hand.
-{1}{B}: Regenerate @.
-{1}{B}, Sacrifice a creature: Regenerate @.
-{1}{B}, Sacrifice a land: Target creature gets +2/+0 until end of turn.
-{1}{B}, {T}, Sacrifice @: Destroy target nonblack creature.
-{1}{B}, {T}: Target creature gets -1/-1 until end of turn.
-{1}{B}, {T}: Target creature gets -2/-2 until end of turn.
-{1}{B}, {T}: Target player loses 1 life.
-{1}, Discard a card at random: @ gets +2/+0 until end of turn.
-{1}, Discard a card at random: Put a +1/+1 counter on target creature.
-{1}, Discard a card: @ gets +1/+1 until end of turn.
-{1}, Discard a card: Put a +1/+1 counter on @.
-{1}{G}: Add one mana of any color to your mana pool.
+{0}: return @ to its owner's hand.
+{1}: add {b} to your mana pool.
+{1}{b}{b}: regenerate @.
+{1}{b}{b}, sacrifice a creature: return target creature card from your graveyard to your hand.
+{1}{b}, discard a card: @ gets +2/+2 until end of turn.
+{1}{b}, discard a card: regenerate @.
+{1}{b}: @ gets +1/+0 until end of turn.
+{1}{b}: @ gets +1/+1 until end of turn.
+{1}{b}: @ gets +2/+2 until end of turn.
+{1}{b}{g}: regenerate @.
+{1}{b}, pay 2 life: return target creature card from your graveyard to your hand.
+{1}{b}: regenerate @.
+{1}{b}, sacrifice a creature: regenerate @.
+{1}{b}, sacrifice a land: target creature gets +2/+0 until end of turn.
+{1}{b}, {t}, sacrifice @: destroy target nonblack creature.
+{1}{b}, {t}: target creature gets -1/-1 until end of turn.
+{1}{b}, {t}: target creature gets -2/-2 until end of turn.
+{1}{b}, {t}: target player loses 1 life.
+{1}, discard a card at random: @ gets +2/+0 until end of turn.
+{1}, discard a card at random: put a +1/+1 counter on target creature.
+{1}, discard a card: @ gets +1/+1 until end of turn.
+{1}, discard a card: put a +1/+1 counter on @.
+{1}{g}: add one mana of any color to your mana pool.
 {1}: @ gets +0/+1 until end of turn.
 {1}: @ gets +1/+0 until end of turn.
 {1}: @ gets -1/+1 until end of turn.
 {1}: @ gets +1/-1 until end of turn.
 {1}: @ gets +1/+1 until end of turn.
-{1}{G}: @ gets +1/+0 until end of turn.
-{1}{G}: @ gets -1/+1 until end of turn.
-{1}{G}: Regenerate @.
-{1}{G}, Sacrifice @: Destroy target artifact or enchantment.
-{1}{G}, Sacrifice @: Destroy target enchantment.
-{1}{G}, {T}: Target creature gets -2/-0 until end of turn.
-{1}{G}, {T}: Target creature gets +4/+4 until end of turn.
-{1}, Pay 2 life: @ deals 1 damage to target creature or player.
-{1}{R}: @ deals 1 damage to target creature or player.
-{1}{R}, Discard a card at random: @ deals 1 damage to target creature or player.
-{1}: Regenerate @.
-{1}, Remove a +1/+1 counter from a creature you control: Put a 1/1 green Saproling creature token onto the battlefield.
-{1}, Remove a +1/+1 counter from @: Regenerate @.
-{1}: Return @ to its owner's hand.
-{1}{R}: @ gets +1/+0 until end of turn.
-{1}{R}: @ gets +2/+0 until end of turn.
-{1}{R}: @ gets +3/-3 until end of turn.
-{1}{R}, Remove a +1/+1 counter from @: @ deals 1 damage to target creature or player.
-{1}{R}{R}: Put a +1/+1 counter on @.
-{1}{R}{R}, Sacrifice @: @ deals 2 damage to target creature or player.
-{1}{R}, Sacrifice a creature: @ deals 2 damage to target creature or player.
-{1}{R}, Sacrifice a creature: Destroy target nonbasic land.
-{1}{R}, Sacrifice a land: Put a +1/+1 counter on @.
-{1}{R}, Sacrifice @: @ deals 1 damage to target creature or player.
-{1}{R}, {T}: @ deals 1 damage to target creature or player.
-{1}, Sacrifice a creature: @ deals 1 damage to target creature or player.
-{1}, Sacrifice a creature: Put a +1/+1 counter on @.
-{1}, Sacrifice a creature: Put a +1/+1 counter on target creature.
-{1}, Sacrifice a land: Target creature gets +1/+1 until end of turn.
-{1}, Sacrifice @: @ deals 2 damage to target creature or player.
-{1}, Sacrifice @: Destroy target artifact or enchantment.
-{1}, Sacrifice @: Draw a card.
-{1}, {T}: Add {B} to your mana pool.
-{1}, {T}: Add {G} to your mana pool.
-{1}, {T}: Add one mana of any color to your mana pool.
-{1}, {T}: Add {R} to your mana pool.
-{1}, {T}: Add {U} to your mana pool.
-{1}, {T}: Add {W} to your mana pool.
-{1}, {T}: Destroy all artifacts, creatures, and enchantments.
-{1}, {T}: Exile target creature you control.
-{1}, {T}, Pay 1 life: Add one mana of any color to your mana pool.
-{1}, {T}: Put a +1/+1 counter on @.
-{1}, {T}: Put a charge counter on @.
-{1}, {T}: Put a storage counter on @.
-{1}, {T}, Remove a charge counter from @: Put a charge counter on target artifact.
-{1}, {T}, Sacrifice a creature: @ deals 2 damage to target creature or player.
-{1}, {T}, Sacrifice a creature: Return target artifact card from your graveyard to your hand.
-{1}, {T}, Sacrifice @: Add one mana of any color to your mana pool.
-{1}, {T}, Sacrifice @: Add one mana of any color to your mana pool. Draw a card.
-{1}, {T}, Sacrifice an artifact: Draw a card.
-{1}, {T}, Sacrifice @: @ deals 2 damage to target creature or player.
-{1}, {T}, Sacrifice @: Draw a card.
-{1}, {T}, Sacrifice @: Target creature gets +2/+2 until end of turn.
-{1}, {T}, Tap an untapped creature you control: Put a 1/1 green Saproling creature token onto the battlefield.
-{1}, {T}, Tap an untapped creature you control: Target creature gets +1/+1 until end of turn.
-{1}, {T}: Tap target artifact, creature, or land.
-{1}, {T}: Tap target land.
-{1}, {T}: Untap target artifact.
-{1}, {T}: Untap target creature.
-{1}, {T}: Untap target land.
-{1}{U}, Discard a card: Draw a card.
-{1}{U}, Discard a card: Return @ to its owner's hand.
-{1}: Untap @.
-{1}{U}: Return @ to its owner's hand.
-{1}{U}{R}: Return @ to its owner's hand.
-{1}{U}, Sacrifice @: Counter target creature spell.
-{1}{U}, Sacrifice @: Draw a card.
-{1}{U}, Sacrifice @: Return target creature to its owner's hand.
-{1}{U}, {T}, Sacrifice @: Draw two cards.
-{1}{U}{U}, Sacrifice a creature: Counter target creature spell.
-{1}{W}{B}, {T}: Destroy target creature or enchantment.
-{1}{W}: @ gets +0/+1 until end of turn.
-{1}{W}: @ gets +0/+3 until end of turn.
-{1}{W}: @ gets +1/+0 until end of turn.
-{1}{W}: Prevent the next 1 damage that would be dealt to target creature or player this turn.
-{1}{W}: Put a +1/+1 counter on @.
-{1}{W}, Remove a +1/+1 counter from @: Destroy target enchantment.
-{1}{W}: Return @ to its owner's hand.
-{1}{W}, Sacrifice @: Destroy target enchantment.
-{1}{W}, Sacrifice @: Exile target attacking creature.
-{1}{W}, Sacrifice @: Exile target enchantment.
-{1}{W}, {T}, Discard a card: Destroy target artifact or enchantment.
-{1}{W}, {T}, Sacrifice @: Destroy target artifact or enchantment.
-{1}{W}{W}: Target creature gets +1/+1 until end of turn.
-{2}{B}{B}: Put a -1/-1 counter on target creature.
-{2}{B}{B}: Target creature gets -1/-1 until end of turn. Put a +1/+1 counter on @.
-{2}{B}, Discard a card: Target opponent loses 1 life and you gain 1 life.
-{2}{B}: @ gets +1/+1 until end of turn.
-{2}{B}: @ gets +2/+2 until end of turn.
-{2}{B}{G}, {T}, Sacrifice a creature: Draw a card.
-{2}{B}: Regenerate @.
-{2}{B}, Sacrifice a creature: Target creature gets -2/-2 until end of turn.
-{2}{B}, Sacrifice @: Target creature gets -1/-1 until end of turn.
-{2}{B}, {T}, Discard a card: Destroy target nonblack creature. It can't be regenerated.
-{2}: @ deals 1 damage to target creature or player. Sacrifice @.
-{2}: Discard a card.
-{2}, Discard a card at random: @ deals 2 damage to target creature or player.
+{1}{g}: @ gets +1/+0 until end of turn.
+{1}{g}: @ gets -1/+1 until end of turn.
+{1}{g}: regenerate @.
+{1}{g}, sacrifice @: destroy target artifact or enchantment.
+{1}{g}, sacrifice @: destroy target enchantment.
+{1}{g}, {t}: target creature gets -2/-0 until end of turn.
+{1}{g}, {t}: target creature gets +4/+4 until end of turn.
+{1}, pay 2 life: @ deals 1 damage to target creature or player.
+{1}{r}: @ deals 1 damage to target creature or player.
+{1}{r}, discard a card at random: @ deals 1 damage to target creature or player.
+{1}: regenerate @.
+{1}, remove a +1/+1 counter from a creature you control: put a 1/1 green saproling creature token onto the battlefield.
+{1}, remove a +1/+1 counter from @: regenerate @.
+{1}: return @ to its owner's hand.
+{1}{r}: @ gets +1/+0 until end of turn.
+{1}{r}: @ gets +2/+0 until end of turn.
+{1}{r}: @ gets +3/-3 until end of turn.
+{1}{r}, remove a +1/+1 counter from @: @ deals 1 damage to target creature or player.
+{1}{r}{r}: put a +1/+1 counter on @.
+{1}{r}{r}, sacrifice @: @ deals 2 damage to target creature or player.
+{1}{r}, sacrifice a creature: @ deals 2 damage to target creature or player.
+{1}{r}, sacrifice a creature: destroy target nonbasic land.
+{1}{r}, sacrifice a land: put a +1/+1 counter on @.
+{1}{r}, sacrifice @: @ deals 1 damage to target creature or player.
+{1}{r}, {t}: @ deals 1 damage to target creature or player.
+{1}, sacrifice a creature: @ deals 1 damage to target creature or player.
+{1}, sacrifice a creature: put a +1/+1 counter on @.
+{1}, sacrifice a creature: put a +1/+1 counter on target creature.
+{1}, sacrifice a land: target creature gets +1/+1 until end of turn.
+{1}, sacrifice @: @ deals 2 damage to target creature or player.
+{1}, sacrifice @: destroy target artifact or enchantment.
+{1}, sacrifice @: draw a card.
+{1}, {t}: add {b} to your mana pool.
+{1}, {t}: add {g} to your mana pool.
+{1}, {t}: add one mana of any color to your mana pool.
+{1}, {t}: add {r} to your mana pool.
+{1}, {t}: add {u} to your mana pool.
+{1}, {t}: add {w} to your mana pool.
+{1}, {t}: destroy all artifacts, creatures, and enchantments.
+{1}, {t}: exile target creature you control.
+{1}, {t}, pay 1 life: add one mana of any color to your mana pool.
+{1}, {t}: put a +1/+1 counter on @.
+{1}, {t}: put a charge counter on @.
+{1}, {t}: put a storage counter on @.
+{1}, {t}, remove a charge counter from @: put a charge counter on target artifact.
+{1}, {t}, sacrifice a creature: @ deals 2 damage to target creature or player.
+{1}, {t}, sacrifice a creature: return target artifact card from your graveyard to your hand.
+{1}, {t}, sacrifice @: add one mana of any color to your mana pool.
+{1}, {t}, sacrifice @: add one mana of any color to your mana pool. draw a card.
+{1}, {t}, sacrifice an artifact: draw a card.
+{1}, {t}, sacrifice @: @ deals 2 damage to target creature or player.
+{1}, {t}, sacrifice @: draw a card.
+{1}, {t}, sacrifice @: target creature gets +2/+2 until end of turn.
+{1}, {t}, tap an untapped creature you control: put a 1/1 green saproling creature token onto the battlefield.
+{1}, {t}, tap an untapped creature you control: target creature gets +1/+1 until end of turn.
+{1}, {t}: tap target artifact, creature, or land.
+{1}, {t}: tap target land.
+{1}, {t}: untap target artifact.
+{1}, {t}: untap target creature.
+{1}, {t}: untap target land.
+{1}{u}, discard a card: draw a card.
+{1}{u}, discard a card: return @ to its owner's hand.
+{1}: untap @.
+{1}{u}: return @ to its owner's hand.
+{1}{u}{r}: return @ to its owner's hand.
+{1}{u}, sacrifice @: counter target creature spell.
+{1}{u}, sacrifice @: draw a card.
+{1}{u}, sacrifice @: return target creature to its owner's hand.
+{1}{u}, {t}, sacrifice @: draw two cards.
+{1}{u}{u}, sacrifice a creature: counter target creature spell.
+{1}{w}{b}, {t}: destroy target creature or enchantment.
+{1}{w}: @ gets +0/+1 until end of turn.
+{1}{w}: @ gets +0/+3 until end of turn.
+{1}{w}: @ gets +1/+0 until end of turn.
+{1}{w}: prevent the next 1 damage that would be dealt to target creature or player this turn.
+{1}{w}: put a +1/+1 counter on @.
+{1}{w}, remove a +1/+1 counter from @: destroy target enchantment.
+{1}{w}: return @ to its owner's hand.
+{1}{w}, sacrifice @: destroy target enchantment.
+{1}{w}, sacrifice @: exile target attacking creature.
+{1}{w}, sacrifice @: exile target enchantment.
+{1}{w}, {t}, discard a card: destroy target artifact or enchantment.
+{1}{w}, {t}, sacrifice @: destroy target artifact or enchantment.
+{1}{w}{w}: target creature gets +1/+1 until end of turn.
+{2}{b}{b}: put a -1/-1 counter on target creature.
+{2}{b}{b}: target creature gets -1/-1 until end of turn. put a +1/+1 counter on @.
+{2}{b}, discard a card: target opponent loses 1 life and you gain 1 life.
+{2}{b}: @ gets +1/+1 until end of turn.
+{2}{b}: @ gets +2/+2 until end of turn.
+{2}{b}{g}, {t}, sacrifice a creature: draw a card.
+{2}{b}: regenerate @.
+{2}{b}, sacrifice a creature: target creature gets -2/-2 until end of turn.
+{2}{b}, sacrifice @: target creature gets -1/-1 until end of turn.
+{2}{b}, {t}, discard a card: destroy target nonblack creature. it can't be regenerated.
+{2}: @ deals 1 damage to target creature or player. sacrifice @.
+{2}: discard a card.
+{2}, discard a card at random: @ deals 2 damage to target creature or player.
 {2}: @ gets +1/+0 until end of turn.
-{2}{G}: Put a 1/1 green Saproling creature token onto the battlefield.
-{2}{G}: Regenerate @.
-{2}{G}, {T}: Target creature gets +2/+2 until end of turn.
-{2}{G}, {T}: Untap target creature.
-{2}{G}{W}, {T}: Put a 1/1 green Saproling creature token onto the battlefield.
-{2}, Pay 2 life: Draw a card.
-{2}: Put a charge counter on @.
-{2}: Regenerate @.
-{2}, Remove a +1/+1 counter from a creature you control: Draw a card.
-{2}, Remove a +1/+1 counter from a creature you control: Put a +1/+1 counter on @.
-{2}, Remove a +1/+1 counter from @: Put a +1/+1 counter on target creature.
-{2}, Remove a +1/+1 counter from @: Return @ to its owner's hand.
-{2}{R}{G}, Discard two cards at random: @ deals 4 damage to target creature or player.
-{2}{R}: Target creature gets +1/+0 until end of turn.
-{2}{R}, {T}: Destroy target nonbasic land.
-{2}{R}, {T}, Discard a card: Destroy target land.
-{2}{R}, {T}, Put a -1/-1 counter on a creature you control: @ deals 2 damage to target creature or player.
-{2}, Sacrifice a permanent: Return target creature to its owner's hand.
-{2}, Sacrifice @: Draw a card.
-{2}, {T}: Add one mana of any color to your mana pool.
-{2}, {T}: Exile target creature you control.
-{2}, {T}: Exile target permanent you control.
-{2}, {T}: Prevent the next 1 damage that would be dealt to target creature or player this turn.
-{2}, {T}: Put a +1/+1 counter on @.
-{2}, {T}: Put a charge counter on @.
-{2}, {T}, Remove a charge counter from @: Draw a card.
-{2}, {T}, Remove a charge counter from @: Put a -1/-1 counter on target creature.
-{2}, {T}, Remove a charge counter from @: Target creature gets +3/+0 until end of turn.
-{2}, {T}, Remove a charge counter from @: Target player gains 3 life.
-{2}, {T}, Sacrifice a creature: Draw a card.
-{2}, {T}, Sacrifice @: Return target artifact card from your graveyard to your hand.
-{2}, {T}: Tap target creature.
-{2}{U}, Discard a card: Return @ to its owner's hand.
-{2}{U}, Sacrifice a land: Draw a card.
-{2}{U}: Tap target creature with flying.
-{2}{U}, {T}: Target creature gets -2/-0 until end of turn.
-{2}{U}{U}: Draw a card.
-{2}{U}: Untap @.
-{2}{U}: Untap target artifact.
-{2}{U}{U}: Return @ to its owner's hand.
-{2}{U}{U}, {T}: Counter target spell.
-{2}{W}, Discard a card: @ gets +1/+2 until end of turn.
-{2}{W}: Return @ to its owner's hand.
-{2}{W}: Tap target creature.
-{2}{W}: Target player gains 1 life.
-{2}{W}, {T}: Prevent the next 2 damage that would be dealt to target creature or player this turn.
-{2}{W}, {T}, Sacrifice @: Destroy all enchantments.
-{2}{W}, {T}, Sacrifice @: Destroy target artifact or enchantment.
-{2}{W}{U}: Put a +1/+1 counter on @.
-{3}{B}, Discard a card: Target creature gets -2/-2 until end of turn.
-{3}{B}: Regenerate @.
-{3}{B}, {T}: Destroy target tapped creature.
+{2}{g}: put a 1/1 green saproling creature token onto the battlefield.
+{2}{g}: regenerate @.
+{2}{g}, {t}: target creature gets +2/+2 until end of turn.
+{2}{g}, {t}: untap target creature.
+{2}{g}{w}, {t}: put a 1/1 green saproling creature token onto the battlefield.
+{2}, pay 2 life: draw a card.
+{2}: put a charge counter on @.
+{2}: regenerate @.
+{2}, remove a +1/+1 counter from a creature you control: draw a card.
+{2}, remove a +1/+1 counter from a creature you control: put a +1/+1 counter on @.
+{2}, remove a +1/+1 counter from @: put a +1/+1 counter on target creature.
+{2}, remove a +1/+1 counter from @: return @ to its owner's hand.
+{2}{r}{g}, discard two cards at random: @ deals 4 damage to target creature or player.
+{2}{r}: target creature gets +1/+0 until end of turn.
+{2}{r}, {t}: destroy target nonbasic land.
+{2}{r}, {t}, discard a card: destroy target land.
+{2}{r}, {t}, put a -1/-1 counter on a creature you control: @ deals 2 damage to target creature or player.
+{2}, sacrifice a permanent: return target creature to its owner's hand.
+{2}, sacrifice @: draw a card.
+{2}, {t}: add one mana of any color to your mana pool.
+{2}, {t}: exile target creature you control.
+{2}, {t}: exile target permanent you control.
+{2}, {t}: prevent the next 1 damage that would be dealt to target creature or player this turn.
+{2}, {t}: put a +1/+1 counter on @.
+{2}, {t}: put a charge counter on @.
+{2}, {t}, remove a charge counter from @: draw a card.
+{2}, {t}, remove a charge counter from @: put a -1/-1 counter on target creature.
+{2}, {t}, remove a charge counter from @: target creature gets +3/+0 until end of turn.
+{2}, {t}, remove a charge counter from @: target player gains 3 life.
+{2}, {t}, sacrifice a creature: draw a card.
+{2}, {t}, sacrifice @: return target artifact card from your graveyard to your hand.
+{2}, {t}: tap target creature.
+{2}{u}, discard a card: return @ to its owner's hand.
+{2}{u}, sacrifice a land: draw a card.
+{2}{u}: tap target creature with flying.
+{2}{u}, {t}: target creature gets -2/-0 until end of turn.
+{2}{u}{u}: draw a card.
+{2}{u}: untap @.
+{2}{u}: untap target artifact.
+{2}{u}{u}: return @ to its owner's hand.
+{2}{u}{u}, {t}: counter target spell.
+{2}{w}, discard a card: @ gets +1/+2 until end of turn.
+{2}{w}: return @ to its owner's hand.
+{2}{w}: tap target creature.
+{2}{w}: target player gains 1 life.
+{2}{w}, {t}: prevent the next 2 damage that would be dealt to target creature or player this turn.
+{2}{w}, {t}, sacrifice @: destroy all enchantments.
+{2}{w}, {t}, sacrifice @: destroy target artifact or enchantment.
+{2}{w}{u}: put a +1/+1 counter on @.
+{3}{b}, discard a card: target creature gets -2/-2 until end of turn.
+{3}{b}: regenerate @.
+{3}{b}, {t}: destroy target tapped creature.
 {3}: @ deals 1 damage to target creature or player.
-{3}, Discard a card at random: Target creature gets +2/+2 until end of turn.
-{3}: Exile target creature you control.
+{3}, discard a card at random: target creature gets +2/+2 until end of turn.
+{3}: exile target creature you control.
 {3}: @ gets +1/+0 until end of turn.
-{3}{G}: Put a 1/1 green Saproling creature token onto the battlefield.
-{3}{G}, Sacrifice @: @ deals 2 damage to target creature or player.
-{3}{G}, Sacrifice @: Destroy target artifact.
-{3}{G}: Target creature gets +2/+2 until end of turn.
-{3}: Put a +1/+1 counter on @.
-{3}{R}: @ deals 1 damage to target creature or player.
-{3}: Regenerate @.
-{3}: Return target creature card from your graveyard to your hand.
-{3}: Return @ to its owner's hand.
-{3}{R}, Remove a +1/+1 counter from @: Destroy target artifact or land.
-{3}{R}, Sacrifice @: Destroy target artifact.
-{3}, Sacrifice a creature: Draw a card.
-{3}, Sacrifice a creature: Return target creature card from your graveyard to the battlefield.
-{3}: Target creature gets +3/+3 until end of turn.
-{3}, {T}: @ deals 1 damage to target creature or player.
-{3}, {T}: Put a +1/+1 counter on target creature.
-{3}, {T}: Put a charge counter on @.
-{3}, {T}: Remove a -1/-1 counter from target creature.
-{3}, {T}, Remove a charge counter from @: Draw a card.
-{3}, {T}, Sacrifice a land: Destroy target nonbasic land.
-{3}, {T}, Sacrifice @: Destroy target land.
-{3}, {T}, Sacrifice @: Draw three cards.
-{3}, {T}: Target creature gets -2/-0 until end of turn.
-{3}, {T}: Untap target artifact.
-{3}, {T}: Untap target creature.
-{3}{U}: Draw a card.
-{3}: Untap @.
-{3}{U}: Return @ to its owner's hand.
-{3}{U}, Sacrifice a permanent: Return target permanent to its owner's hand.
-{3}{U}, {T}: Draw a card.
-{3}{U}, {T}: Tap target creature.
-{3}{U}: Untap @.
-{3}{W}{B}, {T}: Target player loses 1 life and you gain 1 life.
-{3}{W}: @ gets +0/+5 until end of turn.
-{3}{W}: Tap target creature.
-{4}{B}{B}, {T}, Sacrifice @: Target creature gets -6/-6 until end of turn.
-{4}{B}, Sacrifice a creature: Return target creature card from your graveyard to your hand.
-{4}{G}: Put a +1/+1 counter on target creature.
-{4}{G}, Sacrifice a creature: Destroy target creature with flying.
-{4}{R}: Exile @.
-{4}{R}, {T}, Sacrifice a creature: @ deals 2 damage to target creature or player.
-{4}, {T}: Draw a card.
-{4}, {T}, Exile @: Exile target creature.
-{4}, {T}: Put a -1/-1 counter on target creature.
-{4}, {T}: Put a charge counter on @.
-{4}, {T}, Remove a +1/+1 counter from @: Destroy target creature.
-{4}, {T}, Sacrifice a land: @ deals 1 damage to target creature or player.
-{4}, {T}: Tap target creature.
-{4}: Untap @.
-{4}{U}: Return @ to its owner's hand.
-{4}{W}: Exile @.
-{4}{W}: @ gets +1/+2 until end of turn.
-{4}{W}, {T}, Sacrifice @: Return target artifact card from your graveyard to the battlefield.
-{5}{G}: Regenerate @.
-{5}, {T}: Destroy target creature with flying.
-{5}, {T}: Draw a card.
-{5}, {T}, Sacrifice @: Return target card from your graveyard to your hand.
-{7}{B}: Target creature gets -3/-3 until end of turn.
-{7}{G}: @ gets +5/+5 until end of turn.
-{8}: Target player loses 3 life and you gain 3 life.
-{8}, {T}: @ deals 4 damage to target creature or player.
-{8}, {T}: Draw four cards.
-{8}, {T}: Target creature gets +6/+6 until end of turn.
-Affinity for artifacts
+{3}{g}: put a 1/1 green saproling creature token onto the battlefield.
+{3}{g}, sacrifice @: @ deals 2 damage to target creature or player.
+{3}{g}, sacrifice @: destroy target artifact.
+{3}{g}: target creature gets +2/+2 until end of turn.
+{3}: put a +1/+1 counter on @.
+{3}{r}: @ deals 1 damage to target creature or player.
+{3}: regenerate @.
+{3}: return target creature card from your graveyard to your hand.
+{3}: return @ to its owner's hand.
+{3}{r}, remove a +1/+1 counter from @: destroy target artifact or land.
+{3}{r}, sacrifice @: destroy target artifact.
+{3}, sacrifice a creature: draw a card.
+{3}, sacrifice a creature: return target creature card from your graveyard to the battlefield.
+{3}: target creature gets +3/+3 until end of turn.
+{3}, {t}: @ deals 1 damage to target creature or player.
+{3}, {t}: put a +1/+1 counter on target creature.
+{3}, {t}: put a charge counter on @.
+{3}, {t}: remove a -1/-1 counter from target creature.
+{3}, {t}, remove a charge counter from @: draw a card.
+{3}, {t}, sacrifice a land: destroy target nonbasic land.
+{3}, {t}, sacrifice @: destroy target land.
+{3}, {t}, sacrifice @: draw three cards.
+{3}, {t}: target creature gets -2/-0 until end of turn.
+{3}, {t}: untap target artifact.
+{3}, {t}: untap target creature.
+{3}{u}: draw a card.
+{3}: untap @.
+{3}{u}: return @ to its owner's hand.
+{3}{u}, sacrifice a permanent: return target permanent to its owner's hand.
+{3}{u}, {t}: draw a card.
+{3}{u}, {t}: tap target creature.
+{3}{u}: untap @.
+{3}{w}{b}, {t}: target player loses 1 life and you gain 1 life.
+{3}{w}: @ gets +0/+5 until end of turn.
+{3}{w}: tap target creature.
+{4}{b}{b}, {t}, sacrifice @: target creature gets -6/-6 until end of turn.
+{4}{b}, sacrifice a creature: return target creature card from your graveyard to your hand.
+{4}{g}: put a +1/+1 counter on target creature.
+{4}{g}, sacrifice a creature: destroy target creature with flying.
+{4}{r}: exile @.
+{4}{r}, {t}, sacrifice a creature: @ deals 2 damage to target creature or player.
+{4}, {t}: draw a card.
+{4}, {t}, exile @: exile target creature.
+{4}, {t}: put a -1/-1 counter on target creature.
+{4}, {t}: put a charge counter on @.
+{4}, {t}, remove a +1/+1 counter from @: destroy target creature.
+{4}, {t}, sacrifice a land: @ deals 1 damage to target creature or player.
+{4}, {t}: tap target creature.
+{4}: untap @.
+{4}{u}: return @ to its owner's hand.
+{4}{w}: exile @.
+{4}{w}: @ gets +1/+2 until end of turn.
+{4}{w}, {t}, sacrifice @: return target artifact card from your graveyard to the battlefield.
+{5}{g}: regenerate @.
+{5}, {t}: destroy target creature with flying.
+{5}, {t}: draw a card.
+{5}, {t}, sacrifice @: return target card from your graveyard to your hand.
+{7}{b}: target creature gets -3/-3 until end of turn.
+{7}{g}: @ gets +5/+5 until end of turn.
+{8}: target player loses 3 life and you gain 3 life.
+{8}, {t}: @ deals 4 damage to target creature or player.
+{8}, {t}: draw four cards.
+{8}, {t}: target creature gets +6/+6 until end of turn.
+affinity for artifacts
 @ attacks each turn if able.
-{B}{B}: Draw a card.
-{B}{B}: @ gets +1/+0 until end of turn.
-{B}{B}: Return @ to its owner's hand.
-{B}{B}, {T}: Put a charge counter on @.
-{B}{B}, {T}: Target player loses 2 life and you gain 2 life.
-{B}, Discard a card: Regenerate @.
-{B}, Discard a creature card: Return target creature card from your graveyard to your hand.
-{B}: @ gets +1/+0 until end of turn.
-{B}: @ gets +1/-1 until end of turn.
-{B}: @ gets +1/+1 until end of turn.
-{B}: @ gets +2/-1 until end of turn.
-{B}{G}: @ gets +1/+1 until end of turn.
-{B}{G}: Regenerate @.
-{B/G}, Remove a -1/-1 counter from a creature you control: @ gets +3/+3 until end of turn.
-{B/G}, Remove a -1/-1 counter from @: Regenerate @.
-Bloodthirst 1
-Bloodthirst 2
-Bloodthirst 3
-Bloodthirst 6
-{B}, Pay 1 life: Add one mana of any color to your mana pool.
-{B}, Pay 1 life: @ gets +1/+1 until end of turn.
-{B}, Pay 1 life: Return @ to its owner's hand.
-{B}, Pay 2 life: Draw a card.
-{B}, Pay 5 life: Regenerate @.
-{B}: Regenerate @.
-{B}: Return @ to its owner's hand.
-{B}{R}: @ gets +1/+0 until end of turn.
-{B}{R}{G}, {T}: Return target creature card from your graveyard to your hand.
-{B}, Sacrifice a creature: Destroy target nonblack creature.
-{B}, Sacrifice a creature: Regenerate @.
-{B}, Sacrifice a creature: Target creature gets -1/-1 until end of turn.
-{B}, Sacrifice a creature: Target player loses 1 life.
-{B}, Sacrifice @: Destroy target nonblack creature.
-{B}, Sacrifice @: Target player discards a card.
-{B}, Sacrifice @: Target player loses 1 life and you gain 1 life.
-{B}, {T}, Discard a card: Return target creature card from your graveyard to your hand.
-{B}, {T}, Discard a card: Target creature gets -1/-1 until end of turn.
-{B}, {T}, Sacrifice an artifact: Draw a card.
-{B}, {T}, Sacrifice @: Return target creature card from your graveyard to the battlefield.
-{B}, {T}: Tap target creature.
-{B}, {T}: Target creature gets +1/+0 until end of turn.
-{B}, {T}: Target creature gets -1/-1 until end of turn.
-{B}, {T}: Target creature gets -2/-0 until end of turn.
-{B}, {T}: Target creature gets -2/-2 until end of turn.
-{B}, {T}: Target creature gets -4/-4 until end of turn.
-{B}, {T}: Target player loses 1 life.
-Bushido 1
-Bushido 2
-Bushido 5
-Buyback {2}
-Buyback {2}{B}{B}
-Buyback {2}{G}
-Buyback {2}{U}
-Buyback {2}{W}{W}
-Buyback {3}
-Buyback {4}
-Buyback {5}
+{b}{b}: draw a card.
+{b}{b}: @ gets +1/+0 until end of turn.
+{b}{b}: return @ to its owner's hand.
+{b}{b}, {t}: put a charge counter on @.
+{b}{b}, {t}: target player loses 2 life and you gain 2 life.
+{b}, discard a card: regenerate @.
+{b}, discard a creature card: return target creature card from your graveyard to your hand.
+{b}: @ gets +1/+0 until end of turn.
+{b}: @ gets +1/-1 until end of turn.
+{b}: @ gets +1/+1 until end of turn.
+{b}: @ gets +2/-1 until end of turn.
+{b}{g}: @ gets +1/+1 until end of turn.
+{b}{g}: regenerate @.
+{b/g}, remove a -1/-1 counter from a creature you control: @ gets +3/+3 until end of turn.
+{b/g}, remove a -1/-1 counter from @: regenerate @.
+bloodthirst 1
+bloodthirst 2
+bloodthirst 3
+bloodthirst 6
+{b}, pay 1 life: add one mana of any color to your mana pool.
+{b}, pay 1 life: @ gets +1/+1 until end of turn.
+{b}, pay 1 life: return @ to its owner's hand.
+{b}, pay 2 life: draw a card.
+{b}, pay 5 life: regenerate @.
+{b}: regenerate @.
+{b}: return @ to its owner's hand.
+{b}{r}: @ gets +1/+0 until end of turn.
+{b}{r}{g}, {t}: return target creature card from your graveyard to your hand.
+{b}, sacrifice a creature: destroy target nonblack creature.
+{b}, sacrifice a creature: regenerate @.
+{b}, sacrifice a creature: target creature gets -1/-1 until end of turn.
+{b}, sacrifice a creature: target player loses 1 life.
+{b}, sacrifice @: destroy target nonblack creature.
+{b}, sacrifice @: target player discards a card.
+{b}, sacrifice @: target player loses 1 life and you gain 1 life.
+{b}, {t}, discard a card: return target creature card from your graveyard to your hand.
+{b}, {t}, discard a card: target creature gets -1/-1 until end of turn.
+{b}, {t}, sacrifice an artifact: draw a card.
+{b}, {t}, sacrifice @: return target creature card from your graveyard to the battlefield.
+{b}, {t}: tap target creature.
+{b}, {t}: target creature gets +1/+0 until end of turn.
+{b}, {t}: target creature gets -1/-1 until end of turn.
+{b}, {t}: target creature gets -2/-0 until end of turn.
+{b}, {t}: target creature gets -2/-2 until end of turn.
+{b}, {t}: target creature gets -4/-4 until end of turn.
+{b}, {t}: target player loses 1 life.
+bushido 1
+bushido 2
+bushido 5
+buyback {2}
+buyback {2}{b}{b}
+buyback {2}{g}
+buyback {2}{u}
+buyback {2}{w}{w}
+buyback {3}
+buyback {4}
+buyback {5}
 @ can't be countered.
 @ can't block.
-Changeling
-Counter target creature spell.
-Counter target noncreature spell.
-Counter target red or green spell.
-Counter target spell.
-Counter target spell. Return target permanent to its owner's hand.
-Cumulative upkeep {1}
-Cumulative upkeep {1}{B}
-Cumulative upkeep {1}{U}
-Cumulative upkeep {1}{U}{U}
-Cumulative upkeep {1}{W}
-Cumulative upkeep {2}
-Cumulative upkeep {3}
-Cumulative upkeep {B}
-Cumulative upkeep {G}
-Cumulative upkeep {G}{G}
-Cumulative upkeep {R}
-Cumulative upkeep {U}
-Cumulative upkeep {U}{R}
-Cumulative upkeep {W}
+changeling
+counter target creature spell.
+counter target noncreature spell.
+counter target red or green spell.
+counter target spell.
+counter target spell. return target permanent to its owner's hand.
+cumulative upkeep {1}
+cumulative upkeep {1}{b}
+cumulative upkeep {1}{u}
+cumulative upkeep {1}{u}{u}
+cumulative upkeep {1}{w}
+cumulative upkeep {2}
+cumulative upkeep {3}
+cumulative upkeep {b}
+cumulative upkeep {g}
+cumulative upkeep {g}{g}
+cumulative upkeep {r}
+cumulative upkeep {u}
+cumulative upkeep {u}{r}
+cumulative upkeep {w}
 @ deals 10 damage to target creature or player.
 @ deals 1 damage to target creature or player.
 @ deals 2 damage to target creature or player.
@@ -332,124 +332,124 @@ Cumulative upkeep {W}
 @ deals 4 damage to target creature or player.
 @ deals 5 damage to target creature or player.
 @ deals 7 damage to target creature or player.
-Deathtouch
-Defender
-Destroy all artifacts.
-Destroy all artifacts and enchantments.
-Destroy all artifacts, creatures, and enchantments.
-Destroy all artifacts, creatures, and lands. They can't be regenerated.
-Destroy all artifacts. They can't be regenerated.
-Destroy all creatures.
-Destroy all creatures and lands.
-Destroy all creatures. They can't be regenerated.
-Destroy all creatures with flying.
-Destroy all creatures with power 4 or greater. They can't be regenerated.
-Destroy all enchantments.
-Destroy all Islands.
-Destroy all lands.
-Destroy all nonbasic lands.
-Destroy all tapped creatures.
-Destroy target artifact.
-Destroy target artifact, enchantment, or land.
-Destroy target artifact. It can't be regenerated.
-Destroy target artifact or creature. It can't be regenerated.
-Destroy target artifact or enchantment.
-Destroy target artifact or land.
-Destroy target artifact or land. It can't be regenerated.
-Destroy target attacking creature.
-Destroy target attacking creature with flying.
-Destroy target attacking or blocking creature.
-Destroy target blocked creature.
-Destroy target creature.
-Destroy target creature. It can't be regenerated.
-Destroy target creature or enchantment.
-Destroy target creature or land.
-Destroy target creature or land. It can't be regenerated.
-Destroy target creature with converted mana cost 3 or less. It can't be regenerated.
-Destroy target creature with flying.
-Destroy target creature with power 2 or less.
-Destroy target creature with power 4 or greater.
-Destroy target creature with power 4 or greater. It can't be regenerated.
-Destroy target enchantment.
-Destroy target green or white creature.
-Destroy target Human creature.
-Destroy target land.
-Destroy target land or nonblack creature.
-Destroy target land or nonblack creature. It can't be regenerated.
-Destroy target nonartifact creature.
-Destroy target nonartifact, nonblack creature. It can't be regenerated.
-Destroy target nonblack creature.
-Destroy target nonblack creature. It can't be regenerated.
-Destroy target noncreature permanent.
-Destroy target non-Vampire, non-Werewolf, non-Zombie creature.
-Destroy target permanent.
-Destroy target Spirit.
-Destroy target Spirit or enchantment.
-Destroy target tapped creature.
-Destroy target Wall. It can't be regenerated.
-Devour 1
-Devour 2
-Devour 3
-Discard a card: Add {B} to your mana pool.
-Discard a card: @ gets +0/+4 until end of turn.
-Discard a card: @ gets +1/+1 until end of turn.
-Discard a card: Regenerate @.
-Discard a card: Return @ to its owner's hand.
-Discard a creature card: @ gets +2/+2 until end of turn.
-Discard a creature card: Put a +1/+1 counter on @.
-Discard an artifact card: @ gets +2/+2 until end of turn.
-Discard an artifact card: Return @ to its owner's hand.
-Double strike
-Draw a card.
-Draw four cards.
-Draw three cards.
-Draw two cards.
-Draw X cards.
-Enchant artifact
-Enchant creature
-Enchant creature you control
-Enchanted creature gets -0/-1.
-Enchanted creature gets +0/+1.
-Enchanted creature gets +0/+2.
-Enchanted creature gets +0/+4.
-Enchanted creature gets -1/-0.
-Enchanted creature gets +1/+0.
-Enchanted creature gets -1/-1.
-Enchanted creature gets -1/+1.
-Enchanted creature gets +1/-1.
-Enchanted creature gets +1/+1.
-Enchanted creature gets +1/+2.
-Enchanted creature gets +1/+3.
-Enchanted creature gets -13/-0.
-Enchanted creature gets +1/+5.
-Enchanted creature gets -2/-0.
-Enchanted creature gets +2/+0.
-Enchanted creature gets -2/-1.
-Enchanted creature gets +2/-1.
-Enchanted creature gets +2/+1.
-Enchanted creature gets -2/-2.
-Enchanted creature gets +2/-2.
-Enchanted creature gets +2/+2.
-Enchanted creature gets +2/+5.
-Enchanted creature gets -3/-0.
-Enchanted creature gets +3/-1.
-Enchanted creature gets +3/+1.
-Enchanted creature gets +3/+2.
-Enchanted creature gets +3/-3.
-Enchanted creature gets +3/+3.
-Enchanted creature gets +4/+0.
-Enchanted creature gets -4/-1.
-Enchanted creature gets +6/+6.
-Enchant enchantment
-Enchant green or white creature
-Enchant Island
-Enchant land
-Enchant nonbasic land
-Enchant nonblack creature
-Enchant permanent
-Enchant player
-Enchant tapped creature
-Enchant Wall
+deathtouch
+defender
+destroy all artifacts.
+destroy all artifacts and enchantments.
+destroy all artifacts, creatures, and enchantments.
+destroy all artifacts, creatures, and lands. they can't be regenerated.
+destroy all artifacts. they can't be regenerated.
+destroy all creatures.
+destroy all creatures and lands.
+destroy all creatures. they can't be regenerated.
+destroy all creatures with flying.
+destroy all creatures with power 4 or greater. they can't be regenerated.
+destroy all enchantments.
+destroy all islands.
+destroy all lands.
+destroy all nonbasic lands.
+destroy all tapped creatures.
+destroy target artifact.
+destroy target artifact, enchantment, or land.
+destroy target artifact. it can't be regenerated.
+destroy target artifact or creature. it can't be regenerated.
+destroy target artifact or enchantment.
+destroy target artifact or land.
+destroy target artifact or land. it can't be regenerated.
+destroy target attacking creature.
+destroy target attacking creature with flying.
+destroy target attacking or blocking creature.
+destroy target blocked creature.
+destroy target creature.
+destroy target creature. it can't be regenerated.
+destroy target creature or enchantment.
+destroy target creature or land.
+destroy target creature or land. it can't be regenerated.
+destroy target creature with converted mana cost 3 or less. it can't be regenerated.
+destroy target creature with flying.
+destroy target creature with power 2 or less.
+destroy target creature with power 4 or greater.
+destroy target creature with power 4 or greater. it can't be regenerated.
+destroy target enchantment.
+destroy target green or white creature.
+destroy target human creature.
+destroy target land.
+destroy target land or nonblack creature.
+destroy target land or nonblack creature. it can't be regenerated.
+destroy target nonartifact creature.
+destroy target nonartifact, nonblack creature. it can't be regenerated.
+destroy target nonblack creature.
+destroy target nonblack creature. it can't be regenerated.
+destroy target noncreature permanent.
+destroy target non-vampire, non-werewolf, non-zombie creature.
+destroy target permanent.
+destroy target spirit.
+destroy target spirit or enchantment.
+destroy target tapped creature.
+destroy target wall. it can't be regenerated.
+devour 1
+devour 2
+devour 3
+discard a card: add {b} to your mana pool.
+discard a card: @ gets +0/+4 until end of turn.
+discard a card: @ gets +1/+1 until end of turn.
+discard a card: regenerate @.
+discard a card: return @ to its owner's hand.
+discard a creature card: @ gets +2/+2 until end of turn.
+discard a creature card: put a +1/+1 counter on @.
+discard an artifact card: @ gets +2/+2 until end of turn.
+discard an artifact card: return @ to its owner's hand.
+double strike
+draw a card.
+draw four cards.
+draw three cards.
+draw two cards.
+draw x cards.
+enchant artifact
+enchant creature
+enchant creature you control
+enchanted creature gets -0/-1.
+enchanted creature gets +0/+1.
+enchanted creature gets +0/+2.
+enchanted creature gets +0/+4.
+enchanted creature gets -1/-0.
+enchanted creature gets +1/+0.
+enchanted creature gets -1/-1.
+enchanted creature gets -1/+1.
+enchanted creature gets +1/-1.
+enchanted creature gets +1/+1.
+enchanted creature gets +1/+2.
+enchanted creature gets +1/+3.
+enchanted creature gets -13/-0.
+enchanted creature gets +1/+5.
+enchanted creature gets -2/-0.
+enchanted creature gets +2/+0.
+enchanted creature gets -2/-1.
+enchanted creature gets +2/-1.
+enchanted creature gets +2/+1.
+enchanted creature gets -2/-2.
+enchanted creature gets +2/-2.
+enchanted creature gets +2/+2.
+enchanted creature gets +2/+5.
+enchanted creature gets -3/-0.
+enchanted creature gets +3/-1.
+enchanted creature gets +3/+1.
+enchanted creature gets +3/+2.
+enchanted creature gets +3/-3.
+enchanted creature gets +3/+3.
+enchanted creature gets +4/+0.
+enchanted creature gets -4/-1.
+enchanted creature gets +6/+6.
+enchant enchantment
+enchant green or white creature
+enchant island
+enchant land
+enchant nonbasic land
+enchant nonblack creature
+enchant permanent
+enchant player
+enchant tapped creature
+enchant wall
 @ enters the battlefield tapped.
 @ enters the battlefield with a -1/-1 counter on it.
 @ enters the battlefield with a +1/+1 counter on it.
@@ -470,499 +470,560 @@ Enchant Wall
 @ enters the battlefield with two -1/-1 counters on it.
 @ enters the battlefield with two +1/+1 counters on it.
 @ enters the battlefield with two charge counters on it.
-@ enters the battlefield with X +1/+0 counters on it.
-@ enters the battlefield with X +1/+1 counters on it.
-@ enters the battlefield with X charge counters on it.
-Equip {0}
-Equip {1}
-Equip {2}
-Equip {3}
-Equip {4}
-Equip {5}
-Equip {6}
-Equipped creature gets +0/+3.
-Equipped creature gets +0/+6.
-Equipped creature gets +1/+0.
-Equipped creature gets +1/-1.
-Equipped creature gets +1/+1.
-Equipped creature gets +1/+2.
-Equipped creature gets +1/+5.
-Equipped creature gets +2/+0.
-Equipped creature gets +2/+1.
-Equipped creature gets +2/+2.
-Equipped creature gets +3/+0.
-Equipped creature gets +3/+1.
-Equipped creature gets +3/+2.
-Equipped creature gets +3/+3.
-Equipped creature gets +4/+0.
-Equipped creature gets +4/-1.
-Equipped creature gets +4/+2.
-Equipped creature gets +5/+0.
-Equipped creature gets +5/+5.
-Equipped creature gets +6/+6.
-Exalted
-Exile @.
-Exile all creatures.
-Exile target artifact or enchantment.
-Exile target attacking creature.
-Exile target attacking or blocking creature.
-Exile target black or red permanent.
-Exile target creature.
-Exile target creature or enchantment.
-Exile target enchantment.
-Exile target land.
-Fading 1
-Fading 2
-Fading 3
-Fading 4
-Fading 5
-Fading 7
-Fear
-First strike
-Flanking
-Flash
-Flying
-Forestwalk
-{G}: Add one mana of any color to your mana pool.
-{G}, Discard a card: @ gets +0/+2 until end of turn.
-{G}, Discard a card: Regenerate @.
-{G}, Discard a card: Target creature gets +2/+2 until end of turn.
-{G}: @ gets +0/+1 until end of turn.
-{G}: @ gets +1/+0 until end of turn.
-{G}: @ gets +1/+1 until end of turn.
-{G}: @ gets +1/-2 until end of turn.
-{G}{G}: Return @ to its owner's hand.
-{G}{G}: Tap target creature with flying.
-{G}{G}, {T}: Put a charge counter on @.
-{G}: Regenerate @.
-{G}, Remove a -1/-1 counter from @: Destroy target artifact or enchantment.
-{G}: Return @ to its owner's hand.
-{G}, Sacrifice a Wall: Draw a card.
-{G}, Sacrifice @: Destroy target artifact or enchantment.
-{G}, Sacrifice @: Target creature gets +2/+2 until end of turn.
-{G}, {T}: Add one mana of any color to your mana pool.
-{G}, {T}: Add {R} to your mana pool.
-{G}: Target creature gets +1/+1 until end of turn.
-{G}, {T}, Discard a card: Target creature gets +2/+2 until end of turn.
-{G}, {T}: Put a 1/1 green Saproling creature token onto the battlefield.
-{G}, {T}, Sacrifice a creature: Destroy target enchantment.
-{G}, {T}, Sacrifice @: Destroy target artifact.
-{G}, {T}, Sacrifice @: Destroy target enchantment.
-{G}, {T}: Target attacking creature gets +2/+2 until end of turn.
-{G}, {T}: Target creature gets +0/+1 until end of turn.
-{G}, {T}: Target creature gets +1/+1 until end of turn.
-{G}, {T}: Target creature gets +2/+2 until end of turn.
-{G}, {T}: Target creature gets +5/+5 until end of turn.
-{G/W}{G/W}: @ gets +1/+1 until end of turn.
-{G/W}, {T}, Sacrifice @: Destroy target enchantment.
-Haste
-Hexproof
-Infect
-Intimidate
+@ enters the battlefield with x +1/+0 counters on it.
+@ enters the battlefield with x +1/+1 counters on it.
+@ enters the battlefield with x charge counters on it.
+equip {0}
+equip {1}
+equip {2}
+equip {3}
+equip {4}
+equip {5}
+equip {6}
+equipped creature gets +0/+3.
+equipped creature gets +0/+6.
+equipped creature gets +1/+0.
+equipped creature gets +1/-1.
+equipped creature gets +1/+1.
+equipped creature gets +1/+2.
+equipped creature gets +1/+5.
+equipped creature gets +2/+0.
+equipped creature gets +2/+1.
+equipped creature gets +2/+2.
+equipped creature gets +3/+0.
+equipped creature gets +3/+1.
+equipped creature gets +3/+2.
+equipped creature gets +3/+3.
+equipped creature gets +4/+0.
+equipped creature gets +4/-1.
+equipped creature gets +4/+2.
+equipped creature gets +5/+0.
+equipped creature gets +5/+5.
+equipped creature gets +6/+6.
+exalted
+exile @.
+exile all creatures.
+exile target artifact or enchantment.
+exile target attacking creature.
+exile target attacking or blocking creature.
+exile target black or red permanent.
+exile target creature.
+exile target creature or enchantment.
+exile target enchantment.
+exile target land.
+fading 1
+fading 2
+fading 3
+fading 4
+fading 5
+fading 7
+fear
+first strike
+flanking
+flash
+flying
+forestwalk
+{g}: add one mana of any color to your mana pool.
+{g}, discard a card: @ gets +0/+2 until end of turn.
+{g}, discard a card: regenerate @.
+{g}, discard a card: target creature gets +2/+2 until end of turn.
+{g}: @ gets +0/+1 until end of turn.
+{g}: @ gets +1/+0 until end of turn.
+{g}: @ gets +1/+1 until end of turn.
+{g}: @ gets +1/-2 until end of turn.
+{g}{g}: return @ to its owner's hand.
+{g}{g}: tap target creature with flying.
+{g}{g}, {t}: put a charge counter on @.
+{g}: regenerate @.
+{g}, remove a -1/-1 counter from @: destroy target artifact or enchantment.
+{g}: return @ to its owner's hand.
+{g}, sacrifice a wall: draw a card.
+{g}, sacrifice @: destroy target artifact or enchantment.
+{g}, sacrifice @: target creature gets +2/+2 until end of turn.
+{g}, {t}: add one mana of any color to your mana pool.
+{g}, {t}: add {r} to your mana pool.
+{g}: target creature gets +1/+1 until end of turn.
+{g}, {t}, discard a card: target creature gets +2/+2 until end of turn.
+{g}, {t}: put a 1/1 green saproling creature token onto the battlefield.
+{g}, {t}, sacrifice a creature: destroy target enchantment.
+{g}, {t}, sacrifice @: destroy target artifact.
+{g}, {t}, sacrifice @: destroy target enchantment.
+{g}, {t}: target attacking creature gets +2/+2 until end of turn.
+{g}, {t}: target creature gets +0/+1 until end of turn.
+{g}, {t}: target creature gets +1/+1 until end of turn.
+{g}, {t}: target creature gets +2/+2 until end of turn.
+{g}, {t}: target creature gets +5/+5 until end of turn.
+{g/w}{g/w}: @ gets +1/+1 until end of turn.
+{g/w}, {t}, sacrifice @: destroy target enchantment.
+haste
+hexproof
+infect
+intimidate
 @ is indestructible.
-Islandwalk
+islandwalk
 @ is unblockable.
-Kicker {1}
-Kicker {1}{B}
-Kicker {1}{G}
-Kicker {1}{R}
-Kicker {1}{U}
-Kicker {1}{W}
-Kicker {2}
-Kicker {2}{B}
-Kicker {2}{G}
-Kicker {2}{R}
-Kicker {2}{U}
-Kicker {2}{W}
-Kicker {3}
-Kicker {3}{B}
-Kicker {3}{G}
-Kicker {3}{R}
-Kicker {3}{U}
-Kicker {3}{W}
-Kicker {4}
-Kicker {4}{U}
-Kicker {5}
-Kicker {6}
-Kicker {7}
-Kicker {8}
-Kicker {8}{R}
-Kicker {B}
-Kicker {G}
-Kicker {R}
-Kicker {U}
-Kicker {W}
-Kicker {W}{W}
-Kicker {X}
-Lifelink
-Living weapon
-Modular 1
-Modular 2
-Modular 3
-Modular 4
-Modular 6
-Mountainwalk
-Pay 1 life: Draw a card.
-Pay 1 life: @ gets +1/+1 until end of turn.
-Pay 1 life: @ gets +2/-1 until end of turn.
-Pay 1 life: Regenerate @.
-Pay 1 life: Return @ to its owner's hand.
-Pay 1 life: Target creature gets -1/-1 until end of turn.
-Pay 2 life: Regenerate @.
-Pay 2 life: Return @ to its owner's hand.
-Pay 3 life: Put a +1/+1 counter on @.
-Pay 3 life: Put a +1/+1 counter on target creature.
-Pay 4 life: Regenerate @.
-Pay 7 life: Draw seven cards.
-Pay 8 life: Untap @.
-Persist
-Prevent the next 1 damage that would be dealt to target creature or player this turn.
-Prevent the next 2 damage that would be dealt to target creature or player this turn.
-Prevent the next 3 damage that would be dealt to target creature or player this turn.
-Prevent the next 4 damage that would be dealt to target creature or player this turn.
-Protection from artifacts
-Protection from black
-Protection from blue
-Protection from creatures
-Protection from everything
-Protection from green
-Protection from red
-Protection from white
-Put a -1/-1 counter on target creature.
-Put a +1/+1 counter on target creature.
-Put a -1/-1 counter on @: Untap @.
-Put a 1/1 green Saproling creature token onto the battlefield.
-{R}: Add {B} to your mana pool.
-{R}, Discard a card at random: @ gets +2/+0 until end of turn.
-{R}, Discard a card at random: @ gets +3/+0 until end of turn.
-Reach
-Remove a +1/+1 counter from @: Add {1} to your mana pool.
-Remove a -1/-1 counter from @: Add one mana of any color to your mana pool.
-Remove a +1/+1 counter from @: @ deals 1 damage to target creature or player.
-Remove a +1/+1 counter from @: @ gets +2/+2 until end of turn.
-Remove a charge counter from @: Add one mana of any color to your mana pool.
-Remove a charge counter from @: Target creature gets +1/+1 until end of turn.
-Remove three charge counters from @: Draw a card.
-Remove three spore counters from @: @ deals 1 damage to target creature or player.
-Remove three spore counters from @: Put a 1/1 green Saproling creature token onto the battlefield.
-Remove three spore counters from @: Regenerate @.
-Remove two +1/+1 counters from @: Draw a card.
-Remove two +1/+1 counters from @: @ gets +4/+4 until end of turn.
-Return target artifact card from your graveyard to the battlefield.
-Return target artifact card from your graveyard to your hand.
-Return target artifact, enchantment, or land to its owner's hand.
-Return target artifact to its owner's hand.
-Return target attacking creature to its owner's hand.
-Return target card from your graveyard to your hand.
-Return target card from your graveyard to your hand. Exile @.
-Return target creature card from your graveyard to the battlefield.
-Return target creature card from your graveyard to your hand.
-Return target creature to its owner's hand.
-Return target instant or sorcery card from your graveyard to your hand.
-Return target permanent to its owner's hand.
-Return target permanent you control to its owner's hand.
-Return target sorcery card from your graveyard to your hand.
-{R}: @ gets +0/+1 until end of turn.
-{R}: @ gets +1/+0 until end of turn.
-{R}: @ gets +1/-1 until end of turn.
-{R}: @ gets +1/+1 until end of turn.
-{R}: @ gets +2/-2 until end of turn.
-{R}{G}: @ gets +1/-1 until end of turn.
-{R/G}{R/G}{R/G}: @ gets +3/+0 until end of turn.
-{R}{G}, {T}: Target creature gets +2/+2 until end of turn.
-{R}: Regenerate @.
-{R}: Return @ to its owner's hand.
-{R}{R}{R}: Regenerate @.
-{R}{R}: Target creature gets +1/-1 until end of turn.
-{R}{R}, {T}: Put a charge counter on @.
-{R}, Sacrifice an artifact: @ gets +3/+0 until end of turn.
-{R}, Sacrifice @: @ deals 2 damage to target creature or player.
-{R}, Sacrifice @: Destroy target artifact.
-{R}, Sacrifice @: Destroy target land.
-{R}: Tap target Wall.
-{R}: Target creature gets +1/+0 until end of turn.
-{R}, {T}: @ deals 1 damage to target creature or player.
-{R}, {T}, Discard a card: @ deals 1 damage to target creature or player.
-{R}, {T}, Discard a card: Destroy target Wall.
-{R}, {T}, Sacrifice a creature: @ deals 2 damage to target creature or player.
-{R}, {T}: Target creature gets +2/+0 until end of turn.
-{R}: Untap @.
-{R/W}: @ gets +1/+0 until end of turn.
-{R}{W}: @ gets +1/+1 until end of turn.
-Sacrifice a creature: Add one mana of any color to your mana pool.
-Sacrifice a creature: Add {R} to your mana pool.
-Sacrifice a creature: @ deals 1 damage to target creature or player.
-Sacrifice a creature: @ gets +1/+1 until end of turn.
-Sacrifice a creature: @ gets +2/+1 until end of turn.
-Sacrifice a creature: @ gets +2/+2 until end of turn.
-Sacrifice a creature or land.
-Sacrifice a creature: Put a +1/+1 counter on @.
-Sacrifice a creature: Put a charge counter on @.
-Sacrifice a creature: Regenerate @.
-Sacrifice a creature: Target creature gets -1/-1 until end of turn.
-Sacrifice @: Add {B} to your mana pool.
-Sacrifice @: Add {G} to your mana pool.
-Sacrifice @: Add one mana of any color to your mana pool.
-Sacrifice @: Add {R} to your mana pool.
-Sacrifice @: Add {U} to your mana pool.
-Sacrifice @: Add {W} to your mana pool.
-Sacrifice a land: Destroy target enchantment.
-Sacrifice a land: @ gets +0/+3 until end of turn.
-Sacrifice a land: @ gets +1/+1 until end of turn.
-Sacrifice a land: Prevent the next 2 damage that would be dealt to target creature or player this turn.
-Sacrifice a land: Return @ to its owner's hand.
-Sacrifice an artifact: @ gets +1/+1 until end of turn.
-Sacrifice an artifact: @ gets +2/+2 until end of turn.
-Sacrifice an artifact: Put a +1/+1 counter on @.
-Sacrifice an artifact: Put a +1/+1 counter on target creature.
-Sacrifice an artifact: Regenerate @.
-Sacrifice an enchantment: @ gets +1/+1 until end of turn.
-Sacrifice an enchantment: @ gets +2/+2 until end of turn.
-Sacrifice a permanent: Return target creature to its owner's hand.
-Sacrifice @: @ deals 1 damage to target creature or player.
-Sacrifice @: @ deals 2 damage to target creature or player.
-Sacrifice @: Destroy target artifact or enchantment.
-Sacrifice @: Destroy target enchantment.
-Sacrifice @: Destroy target nonbasic land.
-Sacrifice @: Destroy target nonblack creature.
-Sacrifice @: Destroy target nonblack creature. It can't be regenerated.
-Sacrifice @: Draw a card.
-Sacrifice @: Put a -1/-1 counter on target creature.
-Sacrifice @: Put a +1/+1 counter on target creature.
-Sacrifice @: Put two charge counters on target artifact.
-Sacrifice @: Return target creature to its owner's hand.
-Sacrifice @: Return target creature you control to its owner's hand.
-Sacrifice @: Target creature gets +0/+4 until end of turn.
-Sacrifice @: Target creature gets -1/-1 until end of turn.
-Sacrifice @: Target creature gets +1/+1 until end of turn.
-Sacrifice @: Target creature gets -2/-0 until end of turn.
-Sacrifice @: Target creature gets +2/+2 until end of turn.
-Sacrifice @: Target creature gets +3/+3 until end of turn.
-Sacrifice @: Target player loses 1 life.
-Sacrifice @: Target player loses 1 life and you gain 1 life.
-Shadow
-Shroud
-Soulbond
-Soulshift 1
-Soulshift 2
-Soulshift 3
-Soulshift 4
-Soulshift 5
-Soulshift 6
-Soulshift 7
-Soulshift 8
-Storm
-Swampwalk
-{T}: Add {1} to your mana pool.
-{T}: Add {B} or {R} to your mana pool.
-{T}: Add {B} or {R} to your mana pool. Put a depletion counter on @.
-{T}: Add {B} to your mana pool.
-{T}: Add {G} or {W} to your mana pool.
-{T}: Add {G} or {W} to your mana pool. Put a depletion counter on @.
-{T}: Add {G} to your mana pool.
-{T}: Add one mana of any color to your mana pool.
-{T}: Add {R} or {G} to your mana pool.
-{T}: Add {R} or {G} to your mana pool. Put a depletion counter on @.
-{T}: Add {R} to your mana pool.
-{T}: Add {U} or {B} to your mana pool.
-{T}: Add {U} or {B} to your mana pool. Put a depletion counter on @.
-{T}: Add {U} to your mana pool.
-{T}: Add {W} or {U} to your mana pool.
-{T}: Add {W} or {U} to your mana pool. Put a depletion counter on @.
-{T}: Add {W} to your mana pool.
-Tap all artifacts.
-Tap all creatures.
-Tap an untapped creature you control: @ gets +1/+1 until end of turn.
-Tap an untapped creature you control: Tap target artifact, creature, or land.
-Tap an untapped creature you control: Tap target artifact or creature.
-Tap target artifact, creature, or land.
-Tap target creature.
-Tap target permanent.
-Target creature gets -0/-3 until end of turn.
-Target creature gets +0/+4 until end of turn.
-Target creature gets -1/-0 until end of turn.
-Target creature gets -1/-1 until end of turn.
-Target creature gets +1/+1 until end of turn.
-Target creature gets +1/+2 until end of turn.
-Target creature gets +2/+0 until end of turn.
-Target creature gets -2/-2 until end of turn.
-Target creature gets +2/+2 until end of turn.
-Target creature gets +2/+4 until end of turn.
-Target creature gets -3/-0 until end of turn.
-Target creature gets +3/+0 until end of turn.
-Target creature gets -3/-1 until end of turn.
-Target creature gets -3/-3 until end of turn.
-Target creature gets +3/+3 until end of turn.
-Target creature gets +4/+0 until end of turn.
-Target creature gets +4/+2 until end of turn.
-Target creature gets -4/-4 until end of turn.
-Target creature gets +4/-4 until end of turn.
-Target creature gets +4/+4 until end of turn.
-Target creature gets -5/-0 until end of turn.
-Target creature gets -5/-5 until end of turn.
-Target creature gets -7/-0 until end of turn.
-Target creature gets +7/+7 until end of turn.
-Target creature you control gets +2/+0 until end of turn.
-Target nonblack creature gets -1/-1 until end of turn.
-Target opponent discards a card at random.
-Target opponent loses 3 life.
-Target player discards a card.
-Target player discards a card at random.
-Target player discards two cards at random.
-Target player discards X cards at random.
-Target player gains 4 life.
-Target player gains 5 life.
-Target player gains 6 life.
-Target player gains 7 life.
-Target player gains 8 life.
-Target player loses 1 life and you gain 1 life.
-Target player loses 2 life and you gain 2 life.
-Target player loses 4 life and you gain 4 life.
-Target player loses 5 life.
-Target player loses 5 life and you gain 5 life.
-{T}: @ deals 1 damage to target creature or player.
-{T}: @ deals 3 damage to target creature or player.
-{T}: Destroy target creature. It can't be regenerated.
-{T}: Destroy target creature or land.
-{T}: Destroy target creature with power 4 or greater.
-{T}: Destroy target land.
-{T}: Destroy target tapped creature.
-{T}: Destroy target Wall.
-{T}, Discard a card at random: @ deals 1 damage to target creature or player.
-{T}, Discard a card: Draw a card.
-{T}: Draw a card.
-{T}: Draw three cards.
-{T}, Exile a creature you control: Put a storage counter on @.
-{T}: @ gets +0/+4 until end of turn.
-{T}: @ gets +3/+3 until end of turn.
-Totem armor
-{T}, Pay 1 life: Add {G} or {W} to your mana pool.
-{T}, Pay 1 life: Add {G} to your mana pool.
-{T}, Pay 1 life: Add one mana of any color to your mana pool.
-{T}: Prevent the next 1 damage that would be dealt to target creature or player this turn.
-{T}: Prevent the next 2 damage that would be dealt to target creature or player this turn.
-{T}: Prevent the next 3 damage that would be dealt to target creature or player this turn.
-{T}: Prevent the next 4 damage that would be dealt to target creature or player this turn.
-{T}: Put a +1/+1 counter on @.
-{T}: Put a -1/-1 counter on target creature.
-{T}: Put a +1/+1 counter on target creature.
-{T}: Put a charge counter on @.
-{T}: Put a charge counter on target artifact.
-{T}: Put a storage counter on @.
-Trample
-{T}, Remove a charge counter from @: Add one mana of any color to your mana pool.
-{T}, Remove a charge counter from @: Tap target artifact or creature.
-{T}, Remove a charge counter from @: Target player loses 2 life.
-{T}, Remove three charge counters from @: Destroy target permanent.
-{T}, Sacrifice a creature: @ deals 1 damage to target creature or player.
-{T}, Sacrifice a creature: Destroy target nonblack creature.
-{T}, Sacrifice a creature: Put a charge counter on @.
-{T}, Sacrifice a creature: Target creature gets +2/+2 until end of turn.
-{T}, Sacrifice @: Add one mana of any color to your mana pool.
-{T}, Sacrifice a land: Destroy target land.
-{T}, Sacrifice an artifact: @ deals 2 damage to target creature or player.
-{T}, Sacrifice an artifact: Draw a card.
-{T}, Sacrifice @: Counter target spell.
-{T}, Sacrifice @: Destroy target attacking creature.
-{T}, Sacrifice @: Destroy target attacking or blocking creature with flying.
-{T}, Sacrifice @: Destroy target land.
-{T}, Sacrifice @: Destroy target nonbasic land.
-{T}, Sacrifice @: Destroy target Wall.
-{T}, Sacrifice @: Return target artifact card from your graveyard to your hand.
-{T}, Sacrifice @: Target creature gets -1/-1 until end of turn.
-{T}, Sacrifice @: Target creature gets -2/-2 until end of turn.
-{T}, Sacrifice @: Target creature gets -3/-3 until end of turn.
-{T}, Sacrifice @: Target creature gets -4/-4 until end of turn.
-{T}, Tap an untapped creature you control: Add one mana of any color to your mana pool.
-{T}: Tap target artifact.
-{T}: Tap target creature.
-{T}: Tap target creature with converted mana cost 3 or less.
-{T}: Tap target creature with power 2 or less.
-{T}: Tap target Spirit.
-{T}: Target attacking creature gets +1/+1 until end of turn.
-{T}: Target attacking or blocking creature gets +1/+1 until end of turn.
-{T}: Target attacking or blocking creature gets +2/+2 until end of turn.
-{T}: Target creature gets +0/+1 until end of turn.
-{T}: Target creature gets +0/+4 until end of turn.
-{T}: Target creature gets -1/-0 until end of turn.
-{T}: Target creature gets +1/+0 until end of turn.
-{T}: Target creature gets -1/-1 until end of turn.
-{T}: Target creature gets +1/+1 until end of turn.
-{T}: Target creature gets +1/+2 until end of turn.
-{T}: Target creature gets -2/-0 until end of turn.
-{T}: Target creature gets +3/-2 until end of turn.
-{T}: Target creature with flying gets -1/-1 until end of turn.
-{T}: Target player loses 1 life.
-{T}: Untap target artifact or creature.
-{T}: Untap target creature.
-{T}: Untap target land.
-{T}: Untap target permanent.
-{U}{B}{B}{R}, {T}: Destroy target tapped or blocking creature.
-{U/B}: @ gets +1/+1 until end of turn.
-{U}{B}, Pay 1 life: Return @ to its owner's hand.
-{U}{B}, {T}, Sacrifice @: Target creature gets -3/-3 until end of turn. Draw a card.
-{U}, Discard a card: Draw a card.
-{U}, Discard a card: Return @ to its owner's hand.
-{U}: @ gets +1/+0 until end of turn.
-{U}: @ gets -1/+1 until end of turn.
-{U}: @ gets +1/-1 until end of turn.
-{U}: @ gets +1/+1 until end of turn.
-Undying
-Untap all artifacts.
-Untap all creatures you control.
-Untap target artifact, creature, or land.
-Untap target permanent.
-{U}{R}: @ deals 1 damage to target creature or player.
-{U}: Regenerate @.
-{U}: Return @ to its owner's hand.
-{U/R}: @ gets +1/-1 until end of turn.
-{U}, Sacrifice @: Counter target noncreature spell.
-{U}, Sacrifice @: Return target creature to its owner's hand.
-{U}, {T}: @ deals 1 damage to target creature or player.
-{U}, {T}, Discard a card: Return target creature to its owner's hand.
-{U}, {T}, Discard a card: Return target permanent you control to its owner's hand.
-{U}, {T}: Draw two cards.
-{U}, {T}: Return target permanent you control to its owner's hand.
-{U}, {T}, Sacrifice a creature or enchantment: Counter target spell.
-{U}: Untap @.
-{U}{U}, {T}, Discard a card: Counter target creature spell.
-{U}{U}, {T}, Discard a card: Counter target noncreature spell.
-{U}{U}, {T}: Put a charge counter on @.
-{U}{U}, {T}: Return target creature to its owner's hand.
-{U}{U}{U}: Regenerate @.
-{U}{U}{U}, {T}: Return target permanent to its owner's hand.
-Vanishing 1
-Vanishing 2
-Vanishing 3
-Vanishing 4
-Vigilance
-{W/B}{W/B}: @ gets +1/+0 until end of turn.
-{W/B}{W/B}{W/B}: @ gets +3/+3 until end of turn.
-{W}, Discard a card: Prevent the next 3 damage that would be dealt to target creature or player this turn.
-{W}: @ gets +0/+1 until end of turn.
-{W}: @ gets +1/+1 until end of turn.
-Wither
-{W}: Regenerate @.
-{W}: Return @ to its owner's hand.
-{W}, Sacrifice a creature: Prevent the next 1 damage that would be dealt to target creature or player this turn.
-{W}, Sacrifice an enchantment: Destroy target enchantment.
-{W}, Sacrifice @: Prevent the next 2 damage that would be dealt to target creature or player this turn.
-{W}, Sacrifice @: Prevent the next 3 damage that would be dealt to target creature or player this turn.
-{W}, Sacrifice @: Return target artifact card from your graveyard to your hand.
-{W}, {T}, Discard a card: Target player gains 3 life.
-{W}, {T}: @ gets +0/+3 until end of turn.
-{W}, {T}: Prevent the next 1 damage that would be dealt to target creature or player this turn.
-{W}, {T}: Prevent the next 2 damage that would be dealt to target creature or player this turn.
-{W}, {T}: Tap target artifact.
-{W}, {T}: Tap target creature.
-{W}, {T}: Tap target permanent.
-{W}, {T}: Target player gains 1 life.
-{W}{U}{B}{R}{G}: Exile target permanent.
-{W}{W}: @ gets +0/+2 until end of turn.
-{W}{W}: @ gets +1/+0 until end of turn.
-{W}{W}: Target attacking creature gets -1/-0 until end of turn.
-{W}{W}, {T}: Destroy target black permanent.
-{W}{W}, {T}: Destroy target red permanent.
-{W}{W}, {T}: Put a charge counter on @.
-{W}{W}, {T}: Return target artifact card from your graveyard to your hand.
-{W}{W}{W}: Regenerate @.
+kicker {1}
+kicker {1}{b}
+kicker {1}{g}
+kicker {1}{r}
+kicker {1}{u}
+kicker {1}{w}
+kicker {2}
+kicker {2}{b}
+kicker {2}{g}
+kicker {2}{r}
+kicker {2}{u}
+kicker {2}{w}
+kicker {3}
+kicker {3}{b}
+kicker {3}{g}
+kicker {3}{r}
+kicker {3}{u}
+kicker {3}{w}
+kicker {4}
+kicker {4}{u}
+kicker {5}
+kicker {6}
+kicker {7}
+kicker {8}
+kicker {8}{r}
+kicker {b}
+kicker {g}
+kicker {r}
+kicker {u}
+kicker {w}
+kicker {w}{w}
+kicker {x}
+lifelink
+living weapon
+modular 1
+modular 2
+modular 3
+modular 4
+modular 6
+mountainwalk
+pay 1 life: draw a card.
+pay 1 life: @ gets +1/+1 until end of turn.
+pay 1 life: @ gets +2/-1 until end of turn.
+pay 1 life: regenerate @.
+pay 1 life: return @ to its owner's hand.
+pay 1 life: target creature gets -1/-1 until end of turn.
+pay 2 life: regenerate @.
+pay 2 life: return @ to its owner's hand.
+pay 3 life: put a +1/+1 counter on @.
+pay 3 life: put a +1/+1 counter on target creature.
+pay 4 life: regenerate @.
+pay 7 life: draw seven cards.
+pay 8 life: untap @.
+persist
+prevent the next 1 damage that would be dealt to target creature or player this turn.
+prevent the next 2 damage that would be dealt to target creature or player this turn.
+prevent the next 3 damage that would be dealt to target creature or player this turn.
+prevent the next 4 damage that would be dealt to target creature or player this turn.
+protection from artifacts
+protection from black
+protection from blue
+protection from creatures
+protection from everything
+protection from green
+protection from red
+protection from white
+put a -1/-1 counter on target creature.
+put a +1/+1 counter on target creature.
+put a -1/-1 counter on @: untap @.
+put a 1/1 green saproling creature token onto the battlefield.
+{r}: add {b} to your mana pool.
+{r}, discard a card at random: @ gets +2/+0 until end of turn.
+{r}, discard a card at random: @ gets +3/+0 until end of turn.
+reach
+remove a +1/+1 counter from @: add {1} to your mana pool.
+remove a -1/-1 counter from @: add one mana of any color to your mana pool.
+remove a +1/+1 counter from @: @ deals 1 damage to target creature or player.
+remove a +1/+1 counter from @: @ gets +2/+2 until end of turn.
+remove a charge counter from @: add one mana of any color to your mana pool.
+remove a charge counter from @: target creature gets +1/+1 until end of turn.
+remove three charge counters from @: draw a card.
+remove three spore counters from @: @ deals 1 damage to target creature or player.
+remove three spore counters from @: put a 1/1 green saproling creature token onto the battlefield.
+remove three spore counters from @: regenerate @.
+remove two +1/+1 counters from @: draw a card.
+remove two +1/+1 counters from @: @ gets +4/+4 until end of turn.
+return target artifact card from your graveyard to the battlefield.
+return target artifact card from your graveyard to your hand.
+return target artifact, enchantment, or land to its owner's hand.
+return target artifact to its owner's hand.
+return target attacking creature to its owner's hand.
+return target card from your graveyard to your hand.
+return target card from your graveyard to your hand. exile @.
+return target creature card from your graveyard to the battlefield.
+return target creature card from your graveyard to your hand.
+return target creature to its owner's hand.
+return target instant or sorcery card from your graveyard to your hand.
+return target permanent to its owner's hand.
+return target permanent you control to its owner's hand.
+return target sorcery card from your graveyard to your hand.
+{r}: @ gets +0/+1 until end of turn.
+{r}: @ gets +1/+0 until end of turn.
+{r}: @ gets +1/-1 until end of turn.
+{r}: @ gets +1/+1 until end of turn.
+{r}: @ gets +2/-2 until end of turn.
+{r}{g}: @ gets +1/-1 until end of turn.
+{r/g}{r/g}{r/g}: @ gets +3/+0 until end of turn.
+{r}{g}, {t}: target creature gets +2/+2 until end of turn.
+{r}: regenerate @.
+{r}: return @ to its owner's hand.
+{r}{r}{r}: regenerate @.
+{r}{r}: target creature gets +1/-1 until end of turn.
+{r}{r}, {t}: put a charge counter on @.
+{r}, sacrifice an artifact: @ gets +3/+0 until end of turn.
+{r}, sacrifice @: @ deals 2 damage to target creature or player.
+{r}, sacrifice @: destroy target artifact.
+{r}, sacrifice @: destroy target land.
+{r}: tap target wall.
+{r}: target creature gets +1/+0 until end of turn.
+{r}, {t}: @ deals 1 damage to target creature or player.
+{r}, {t}, discard a card: @ deals 1 damage to target creature or player.
+{r}, {t}, discard a card: destroy target wall.
+{r}, {t}, sacrifice a creature: @ deals 2 damage to target creature or player.
+{r}, {t}: target creature gets +2/+0 until end of turn.
+{r}: untap @.
+{r/w}: @ gets +1/+0 until end of turn.
+{r}{w}: @ gets +1/+1 until end of turn.
+sacrifice a creature: add one mana of any color to your mana pool.
+sacrifice a creature: add {r} to your mana pool.
+sacrifice a creature: @ deals 1 damage to target creature or player.
+sacrifice a creature: @ gets +1/+1 until end of turn.
+sacrifice a creature: @ gets +2/+1 until end of turn.
+sacrifice a creature: @ gets +2/+2 until end of turn.
+sacrifice a creature or land.
+sacrifice a creature: put a +1/+1 counter on @.
+sacrifice a creature: put a charge counter on @.
+sacrifice a creature: regenerate @.
+sacrifice a creature: target creature gets -1/-1 until end of turn.
+sacrifice @: add {b} to your mana pool.
+sacrifice @: add {g} to your mana pool.
+sacrifice @: add one mana of any color to your mana pool.
+sacrifice @: add {r} to your mana pool.
+sacrifice @: add {u} to your mana pool.
+sacrifice @: add {w} to your mana pool.
+sacrifice a land: destroy target enchantment.
+sacrifice a land: @ gets +0/+3 until end of turn.
+sacrifice a land: @ gets +1/+1 until end of turn.
+sacrifice a land: prevent the next 2 damage that would be dealt to target creature or player this turn.
+sacrifice a land: return @ to its owner's hand.
+sacrifice an artifact: @ gets +1/+1 until end of turn.
+sacrifice an artifact: @ gets +2/+2 until end of turn.
+sacrifice an artifact: put a +1/+1 counter on @.
+sacrifice an artifact: put a +1/+1 counter on target creature.
+sacrifice an artifact: regenerate @.
+sacrifice an enchantment: @ gets +1/+1 until end of turn.
+sacrifice an enchantment: @ gets +2/+2 until end of turn.
+sacrifice a permanent: return target creature to its owner's hand.
+sacrifice @: @ deals 1 damage to target creature or player.
+sacrifice @: @ deals 2 damage to target creature or player.
+sacrifice @: destroy target artifact or enchantment.
+sacrifice @: destroy target enchantment.
+sacrifice @: destroy target nonbasic land.
+sacrifice @: destroy target nonblack creature.
+sacrifice @: destroy target nonblack creature. it can't be regenerated.
+sacrifice @: draw a card.
+sacrifice @: put a -1/-1 counter on target creature.
+sacrifice @: put a +1/+1 counter on target creature.
+sacrifice @: put two charge counters on target artifact.
+sacrifice @: return target creature to its owner's hand.
+sacrifice @: return target creature you control to its owner's hand.
+sacrifice @: target creature gets +0/+4 until end of turn.
+sacrifice @: target creature gets -1/-1 until end of turn.
+sacrifice @: target creature gets +1/+1 until end of turn.
+sacrifice @: target creature gets -2/-0 until end of turn.
+sacrifice @: target creature gets +2/+2 until end of turn.
+sacrifice @: target creature gets +3/+3 until end of turn.
+sacrifice @: target player loses 1 life.
+sacrifice @: target player loses 1 life and you gain 1 life.
+shadow
+shroud
+soulbond
+soulshift 1
+soulshift 2
+soulshift 3
+soulshift 4
+soulshift 5
+soulshift 6
+soulshift 7
+soulshift 8
+storm
+swampwalk
+{t}: add {1} to your mana pool.
+{t}: add {b} or {r} to your mana pool.
+{t}: add {b} or {r} to your mana pool. put a depletion counter on @.
+{t}: add {b} to your mana pool.
+{t}: add {g} or {w} to your mana pool.
+{t}: add {g} or {w} to your mana pool. put a depletion counter on @.
+{t}: add {g} to your mana pool.
+{t}: add one mana of any color to your mana pool.
+{t}: add {r} or {g} to your mana pool.
+{t}: add {r} or {g} to your mana pool. put a depletion counter on @.
+{t}: add {r} to your mana pool.
+{t}: add {u} or {b} to your mana pool.
+{t}: add {u} or {b} to your mana pool. put a depletion counter on @.
+{t}: add {u} to your mana pool.
+{t}: add {w} or {u} to your mana pool.
+{t}: add {w} or {u} to your mana pool. put a depletion counter on @.
+{t}: add {w} to your mana pool.
+tap all artifacts.
+tap all creatures.
+tap an untapped creature you control: @ gets +1/+1 until end of turn.
+tap an untapped creature you control: tap target artifact, creature, or land.
+tap an untapped creature you control: tap target artifact or creature.
+tap target artifact, creature, or land.
+tap target creature.
+tap target permanent.
+target creature gets -0/-3 until end of turn.
+target creature gets +0/+4 until end of turn.
+target creature gets -1/-0 until end of turn.
+target creature gets -1/-1 until end of turn.
+target creature gets +1/+1 until end of turn.
+target creature gets +1/+2 until end of turn.
+target creature gets +2/+0 until end of turn.
+target creature gets -2/-2 until end of turn.
+target creature gets +2/+2 until end of turn.
+target creature gets +2/+4 until end of turn.
+target creature gets -3/-0 until end of turn.
+target creature gets +3/+0 until end of turn.
+target creature gets -3/-1 until end of turn.
+target creature gets -3/-3 until end of turn.
+target creature gets +3/+3 until end of turn.
+target creature gets +4/+0 until end of turn.
+target creature gets +4/+2 until end of turn.
+target creature gets -4/-4 until end of turn.
+target creature gets +4/-4 until end of turn.
+target creature gets +4/+4 until end of turn.
+target creature gets -5/-0 until end of turn.
+target creature gets -5/-5 until end of turn.
+target creature gets -7/-0 until end of turn.
+target creature gets +7/+7 until end of turn.
+target creature you control gets +2/+0 until end of turn.
+target nonblack creature gets -1/-1 until end of turn.
+target opponent discards a card at random.
+target opponent loses 3 life.
+target player discards a card.
+target player discards a card at random.
+target player discards two cards at random.
+target player discards x cards at random.
+target player gains 4 life.
+target player gains 5 life.
+target player gains 6 life.
+target player gains 7 life.
+target player gains 8 life.
+target player loses 1 life and you gain 1 life.
+target player loses 2 life and you gain 2 life.
+target player loses 4 life and you gain 4 life.
+target player loses 5 life.
+target player loses 5 life and you gain 5 life.
+{t}: @ deals 1 damage to target creature or player.
+{t}: @ deals 3 damage to target creature or player.
+{t}: destroy target creature. it can't be regenerated.
+{t}: destroy target creature or land.
+{t}: destroy target creature with power 4 or greater.
+{t}: destroy target land.
+{t}: destroy target tapped creature.
+{t}: destroy target wall.
+{t}, discard a card at random: @ deals 1 damage to target creature or player.
+{t}, discard a card: draw a card.
+{t}: draw a card.
+{t}: draw three cards.
+{t}, exile a creature you control: put a storage counter on @.
+{t}: @ gets +0/+4 until end of turn.
+{t}: @ gets +3/+3 until end of turn.
+totem armor
+{t}, pay 1 life: add {g} or {w} to your mana pool.
+{t}, pay 1 life: add {g} to your mana pool.
+{t}, pay 1 life: add one mana of any color to your mana pool.
+{t}: prevent the next 1 damage that would be dealt to target creature or player this turn.
+{t}: prevent the next 2 damage that would be dealt to target creature or player this turn.
+{t}: prevent the next 3 damage that would be dealt to target creature or player this turn.
+{t}: prevent the next 4 damage that would be dealt to target creature or player this turn.
+{t}: put a +1/+1 counter on @.
+{t}: put a -1/-1 counter on target creature.
+{t}: put a +1/+1 counter on target creature.
+{t}: put a charge counter on @.
+{t}: put a charge counter on target artifact.
+{t}: put a storage counter on @.
+trample
+{t}, remove a charge counter from @: add one mana of any color to your mana pool.
+{t}, remove a charge counter from @: tap target artifact or creature.
+{t}, remove a charge counter from @: target player loses 2 life.
+{t}, remove three charge counters from @: destroy target permanent.
+{t}, sacrifice a creature: @ deals 1 damage to target creature or player.
+{t}, sacrifice a creature: destroy target nonblack creature.
+{t}, sacrifice a creature: put a charge counter on @.
+{t}, sacrifice a creature: target creature gets +2/+2 until end of turn.
+{t}, sacrifice @: add one mana of any color to your mana pool.
+{t}, sacrifice a land: destroy target land.
+{t}, sacrifice an artifact: @ deals 2 damage to target creature or player.
+{t}, sacrifice an artifact: draw a card.
+{t}, sacrifice @: counter target spell.
+{t}, sacrifice @: destroy target attacking creature.
+{t}, sacrifice @: destroy target attacking or blocking creature with flying.
+{t}, sacrifice @: destroy target land.
+{t}, sacrifice @: destroy target nonbasic land.
+{t}, sacrifice @: destroy target wall.
+{t}, sacrifice @: return target artifact card from your graveyard to your hand.
+{t}, sacrifice @: target creature gets -1/-1 until end of turn.
+{t}, sacrifice @: target creature gets -2/-2 until end of turn.
+{t}, sacrifice @: target creature gets -3/-3 until end of turn.
+{t}, sacrifice @: target creature gets -4/-4 until end of turn.
+{t}, tap an untapped creature you control: add one mana of any color to your mana pool.
+{t}: tap target artifact.
+{t}: tap target creature.
+{t}: tap target creature with converted mana cost 3 or less.
+{t}: tap target creature with power 2 or less.
+{t}: tap target spirit.
+{t}: target attacking creature gets +1/+1 until end of turn.
+{t}: target attacking or blocking creature gets +1/+1 until end of turn.
+{t}: target attacking or blocking creature gets +2/+2 until end of turn.
+{t}: target creature gets +0/+1 until end of turn.
+{t}: target creature gets +0/+4 until end of turn.
+{t}: target creature gets -1/-0 until end of turn.
+{t}: target creature gets +1/+0 until end of turn.
+{t}: target creature gets -1/-1 until end of turn.
+{t}: target creature gets +1/+1 until end of turn.
+{t}: target creature gets +1/+2 until end of turn.
+{t}: target creature gets -2/-0 until end of turn.
+{t}: target creature gets +3/-2 until end of turn.
+{t}: target creature with flying gets -1/-1 until end of turn.
+{t}: target player loses 1 life.
+{t}: untap target artifact or creature.
+{t}: untap target creature.
+{t}: untap target land.
+{t}: untap target permanent.
+{u}{b}{b}{r}, {t}: destroy target tapped or blocking creature.
+{u/b}: @ gets +1/+1 until end of turn.
+{u}{b}, pay 1 life: return @ to its owner's hand.
+{u}{b}, {t}, sacrifice @: target creature gets -3/-3 until end of turn. draw a card.
+{u}, discard a card: draw a card.
+{u}, discard a card: return @ to its owner's hand.
+{u}: @ gets +1/+0 until end of turn.
+{u}: @ gets -1/+1 until end of turn.
+{u}: @ gets +1/-1 until end of turn.
+{u}: @ gets +1/+1 until end of turn.
+undying
+untap all artifacts.
+untap all creatures you control.
+untap target artifact, creature, or land.
+untap target permanent.
+{u}{r}: @ deals 1 damage to target creature or player.
+{u}: regenerate @.
+{u}: return @ to its owner's hand.
+{u/r}: @ gets +1/-1 until end of turn.
+{u}, sacrifice @: counter target noncreature spell.
+{u}, sacrifice @: return target creature to its owner's hand.
+{u}, {t}: @ deals 1 damage to target creature or player.
+{u}, {t}, discard a card: return target creature to its owner's hand.
+{u}, {t}, discard a card: return target permanent you control to its owner's hand.
+{u}, {t}: draw two cards.
+{u}, {t}: return target permanent you control to its owner's hand.
+{u}, {t}, sacrifice a creature or enchantment: counter target spell.
+{u}: untap @.
+{u}{u}, {t}, discard a card: counter target creature spell.
+{u}{u}, {t}, discard a card: counter target noncreature spell.
+{u}{u}, {t}: put a charge counter on @.
+{u}{u}, {t}: return target creature to its owner's hand.
+{u}{u}{u}: regenerate @.
+{u}{u}{u}, {t}: return target permanent to its owner's hand.
+vanishing 1
+vanishing 2
+vanishing 3
+vanishing 4
+vigilance
+{w/b}{w/b}: @ gets +1/+0 until end of turn.
+{w/b}{w/b}{w/b}: @ gets +3/+3 until end of turn.
+{w}, discard a card: prevent the next 3 damage that would be dealt to target creature or player this turn.
+{w}: @ gets +0/+1 until end of turn.
+{w}: @ gets +1/+1 until end of turn.
+when @ enters the battlefield, add one mana of any color to your mana pool.
+when @ enters the battlefield, add {r} to your mana pool.
+when @ enters the battlefield, counter target spell.
+when @ enters the battlefield, destroy all tapped creatures.
+when @ enters the battlefield, destroy target artifact.
+when @ enters the battlefield, destroy target artifact, enchantment, or land.
+when @ enters the battlefield, destroy target artifact or enchantment.
+when @ enters the battlefield, destroy target creature with flying.
+when @ enters the battlefield, destroy target creature with power 4 or greater. it can't be regenerated.
+when @ enters the battlefield, destroy target enchantment.
+when @ enters the battlefield, destroy target land.
+when @ enters the battlefield, destroy target nonartifact, nonblack creature.
+when @ enters the battlefield, destroy target nonbasic land.
+when @ enters the battlefield, destroy target nonblack creature.
+when @ enters the battlefield, destroy target nonblack creature. it can't be regenerated.
+when @ enters the battlefield, destroy target noncreature permanent.
+when @ enters the battlefield, destroy target permanent.
+when @ enters the battlefield, discard a card at random.
+when @ enters the battlefield, draw a card.
+when @ enters the battlefield, draw two cards.
+when @ enters the battlefield, exile all lands.
+when @ enters the battlefield, exile target black permanent.
+when @ enters the battlefield, exile target creature.
+when @ enters the battlefield, exile target land.
+when @ enters the battlefield, prevent the next 3 damage that would be dealt to target creature or player this turn.
+when @ enters the battlefield, put a -1/-1 counter on target creature.
+when @ enters the battlefield, put a +1/+1 counter on target creature.
+when @ enters the battlefield, put three -1/-1 counters on target creature.
+when @ enters the battlefield, return a creature you control to its owner's hand.
+when @ enters the battlefield, return a green or white creature you control to its owner's hand.
+when @ enters the battlefield, return a permanent you control to its owner's hand.
+when @ enters the battlefield, return target artifact or enchantment to its owner's hand.
+when @ enters the battlefield, return target creature card from your graveyard to the battlefield.
+when @ enters the battlefield, return target creature to its owner's hand.
+when @ enters the battlefield, return target instant or sorcery card from your graveyard to your hand.
+when @ enters the battlefield, return target land to its owner's hand.
+when @ enters the battlefield, return target permanent to its owner's hand.
+when @ enters the battlefield, sacrifice a creature.
+when @ enters the battlefield, sacrifice a land.
+when @ enters the battlefield, sacrifice all creatures you control.
+when @ enters the battlefield, tap all islands.
+when @ enters the battlefield, target creature gets +0/+3 until end of turn.
+when @ enters the battlefield, target creature gets -1/-1 until end of turn.
+when @ enters the battlefield, target creature gets +1/+1 until end of turn.
+when @ enters the battlefield, target creature gets +2/+0 until end of turn.
+when @ enters the battlefield, target creature gets -2/-2 until end of turn.
+when @ enters the battlefield, target creature gets +2/+2 until end of turn.
+when @ enters the battlefield, target creature gets +3/+3 until end of turn.
+when @ enters the battlefield, target creature gets +4/+0 until end of turn.
+when @ enters the battlefield, target opponent discards a card.
+when @ enters the battlefield, target opponent loses 1 life and you gain 1 life.
+when @ enters the battlefield, target opponent loses 2 life.
+when @ enters the battlefield, target opponent loses 2 life and you gain 2 life.
+when @ enters the battlefield, target opponent loses 3 life.
+when @ enters the battlefield, target player discards a card.
+when @ enters the battlefield, target player discards a card at random.
+when @ enters the battlefield, target player loses 1 life.
+when @ enters the battlefield, target player loses 2 life and you gain 2 life.
+when @ enters the battlefield, target player loses 3 life.
+when @ enters the battlefield, target player loses 6 life.
+when @ enters the battlefield, untap all creatures you control.
+wither
+{w}: regenerate @.
+{w}: return @ to its owner's hand.
+{w}, sacrifice a creature: prevent the next 1 damage that would be dealt to target creature or player this turn.
+{w}, sacrifice an enchantment: destroy target enchantment.
+{w}, sacrifice @: prevent the next 2 damage that would be dealt to target creature or player this turn.
+{w}, sacrifice @: prevent the next 3 damage that would be dealt to target creature or player this turn.
+{w}, sacrifice @: return target artifact card from your graveyard to your hand.
+{w}, {t}, discard a card: target player gains 3 life.
+{w}, {t}: @ gets +0/+3 until end of turn.
+{w}, {t}: prevent the next 1 damage that would be dealt to target creature or player this turn.
+{w}, {t}: prevent the next 2 damage that would be dealt to target creature or player this turn.
+{w}, {t}: tap target artifact.
+{w}, {t}: tap target creature.
+{w}, {t}: tap target permanent.
+{w}, {t}: target player gains 1 life.
+{w}{u}{b}{r}{g}: exile target permanent.
+{w}{w}: @ gets +0/+2 until end of turn.
+{w}{w}: @ gets +1/+0 until end of turn.
+{w}{w}: target attacking creature gets -1/-0 until end of turn.
+{w}{w}, {t}: destroy target black permanent.
+{w}{w}, {t}: destroy target red permanent.
+{w}{w}, {t}: put a charge counter on @.
+{w}{w}, {t}: return target artifact card from your graveyard to your hand.
+{w}{w}{w}: regenerate @.

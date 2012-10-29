@@ -3,10 +3,35 @@ MagicRule
     / KeywordAbility EOR
     / StaticAbility EOR
     / ActivatedAbility EOR
+    / TriggeredAbility EOR
     ;
 
 SpellEffect
     = Action EOS (SPACE Action EOS)*
+    ;
+
+KeywordAbility
+    = Keyword
+    / Enchant
+    ;
+
+StaticAbility
+    = EntersTapped
+    / EntersWithCounter
+    / EnchantedPump
+    / EquippedPump
+    ;
+
+ActivatedAbility
+    = ActivationCosts ": " SpellEffect
+    ;
+
+TriggeredAbility
+    = Trigger ", " SpellEffect
+    ;
+
+Trigger
+    = EntersBattlefieldTrigger
     ;
 
 Action
@@ -30,79 +55,63 @@ Action
     / PutTokenAction
     ;
 
-KeywordAbility
-    = Keyword
-    / Enchant
-    ;
-
-StaticAbility
-    = EntersTapped
-    / EntersWithCounter
-    / EnchantedPump
-    / EquippedPump
-    ;
-
-ActivatedAbility
-    = ActivationCosts ": " SpellEffect
-    ;
-
 Keyword
-    = "Flash"
-    / "Flying"
-    / "Haste"
-    / "Defender"
-    / "Vigilance"
-    / "Reach"
-    / "Trample"
-    / "First strike"
-    / "Double strike"
-    / "Infect"
-    / "Wither"
-    / "Fear"
-    / "Shadow"
-    / "Storm"
-    / "Swampwalk"
-    / "Forestwalk"
-    / "Islandwalk"
-    / "Mountainwalk"
-    / "Changeling"
-    / "Deathtouch"
-    / "Lifelink"
-    / "Exalted"
-    / "Shroud"
-    / "Persist"
-    / "Protection from black"
-    / "Protection from red"
-    / "Protection from white"
-    / "Protection from blue"
-    / "Protection from green"
-    / "Protection from artifacts"
-    / "Protection from creatures"
-    / "Protection from everything"
+    = "flash"
+    / "flying"
+    / "haste"
+    / "defender"
+    / "vigilance"
+    / "reach"
+    / "trample"
+    / "first strike"
+    / "double strike"
+    / "infect"
+    / "wither"
+    / "fear"
+    / "shadow"
+    / "storm"
+    / "swampwalk"
+    / "forestwalk"
+    / "islandwalk"
+    / "mountainwalk"
+    / "changeling"
+    / "deathtouch"
+    / "lifelink"
+    / "exalted"
+    / "shroud"
+    / "persist"
+    / "protection from black"
+    / "protection from red"
+    / "protection from white"
+    / "protection from blue"
+    / "protection from green"
+    / "protection from artifacts"
+    / "protection from creatures"
+    / "protection from everything"
     / "@ can't block."
-    / "Hexproof"
-    / "Soulbond"
-    / "Undying"
-    / "Flanking"
-    / "Intimidate"
-    / "Living weapon"
-    / "Totem armor"
-    / "Bushido" SPACE Number
-    / "Soulshift" SPACE Number
-    / "Fading" SPACE Number
-    / "Devour" SPACE Number
-    / "Modular" SPACE Number
-    / "Vanishing" SPACE Number
-    / "Bloodthirst" SPACE Number
-    / "Buyback" SPACE ManaCost
-    / "Kicker" SPACE ManaCost
-    / "Equip" SPACE ManaCost
-    / "Cumulative upkeep" SPACE ManaCost
+    / "hexproof"
+    / "soulbond"
+    / "undying"
+    / "flanking"
+    / "intimidate"
+    / "living weapon"
+    / "totem armor"
+    / "bushido" SPACE Number
+    / "soulshift" SPACE Number
+    / "fading" SPACE Number
+    / "devour" SPACE Number
+    / "modular" SPACE Number
+    / "vanishing" SPACE Number
+    / "bloodthirst" SPACE Number
+    / "buyback" SPACE ManaCost
+    / "kicker" SPACE ManaCost
+    / "equip" SPACE ManaCost
+    / "cumulative upkeep" SPACE ManaCost
     / "@ is unblockable."
     / "@ attacks each turn if able."
     / "@ is indestructible."
     / "@ can't be countered."
-    / "Affinity for artifacts"
+    / "affinity for artifacts"
     ;
 
 ActivationCosts
@@ -110,38 +119,38 @@ ActivationCosts
     ;
     
 SacrificeAction
-    = "Sacrifice " SelectPermanent
+    = "sacrifice " SelectPermanent
     ;
 
 ActivationCost
-    = "{T}"
+    = "{t}"
     / ManaCost
     / Action
-    / "Pay " Number " life"
+    / "pay " Number " life"
     ;
 
 ColorlessCost
     = "{" Number "}"
-    / "{X}"
+    / "{x}"
     ;
 
 MonoSingleCost
-    = "{B}"
-    / "{U}"
-    / "{G}"
-    / "{R}"
-    / "{W}"
+    = "{b}"
+    / "{u}"
+    / "{g}"
+    / "{r}"
+    / "{w}"
     ;
 
 HybridSingleCost
-    = "{G/U}"
-    / "{G/W}"
-    / "{R/G}"
-    / "{R/W}"
-    / "{U/R}"
-    / "{U/B}"
-    / "{B/G}"
-    / "{W/B}"
+    = "{g/u}"
+    / "{g/w}"
+    / "{r/g}"
+    / "{r/w}"
+    / "{u/r}"
+    / "{u/b}"
+    / "{b/g}"
+    / "{w/b}"
     ;
 
 ManaCost
@@ -150,15 +159,19 @@ ManaCost
     / HybridSingleCost+
     ;
 
+EntersBattlefieldTrigger
+    = "when @ enters the battlefield"
+    ;
+
 PutTokenAction
-    = "Put a 1/1 green Saproling creature token onto the battlefield"
+    = "put a 1/1 green saproling creature token onto the battlefield"
     ;
 
 ChangeCounterAction
-    = "Remove a " CounterType " counter from " SelectPermanent
-    / "Remove " Count SPACE CounterType " counters from " SelectPermanent
-    / "Put a " CounterType " counter on " SelectPermanent
-    / "Put " Count SPACE CounterType " counters on " SelectPermanent
+    = "remove a " CounterType " counter from " SelectPermanent
+    / "remove " Count SPACE CounterType " counters from " SelectPermanent
+    / "put a " CounterType " counter on " SelectPermanent
+    / "put " Count SPACE CounterType " counters on " SelectPermanent
     ;
 
 ChangeLifeAction
@@ -168,31 +181,31 @@ ChangeLifeAction
     ;
 
 SelectPlayer
-    = "Target player"
-    / "Target opponent"
-    / "You"
+    = "target player"
+    / "target opponent"
+    / "you"
     ;
 
 ReturnAction
-    = "Return " SelectCard " from your graveyard to your hand" 
-    / "Return " SelectCard " from your graveyard to the battlefield" 
+    = "return " SelectCard " from your graveyard to your hand" 
+    / "return " SelectCard " from your graveyard to the battlefield" 
     ;
 
 BounceAction
-    = "Return " SelectPermanent SPACE "to its owner's hand"
+    = "return " SelectPermanent SPACE "to its owner's hand"
     ;
 
 PreventAction
-    = "Prevent the next " Number " damage that would be dealt to target creature or player this turn"
+    = "prevent the next " Number " damage that would be dealt to target creature or player this turn"
     ;
 
 TapAction
-    = "Tap" SPACE SelectPermanent
-    / "Untap" SPACE SelectPermanent
+    = "tap" SPACE SelectPermanent
+    / "untap" SPACE SelectPermanent
     ;
 
 RegenerateAction
-    = "Regenerate @"
+    = "regenerate @"
     ;
 
 DamageAction
@@ -229,20 +242,20 @@ Count
     / "eight"
     / "nine"
     / "ten"
-    / "X"
+    / "x"
     ;
 
 Enchant
-    = "Enchant" SPACE RestrictedPermanent
-    / "Enchant player"
+    = "enchant" SPACE RestrictedPermanent
+    / "enchant player"
     ;
 
 EnchantedPump
-    = "Enchanted creature gets " SignedNumber "/" SignedNumber "."
+    = "enchanted creature gets " SignedNumber "/" SignedNumber "."
     ;
 
 EquippedPump
-    = "Equipped creature gets " SignedNumber "/" SignedNumber "."
+    = "equipped creature gets " SignedNumber "/" SignedNumber "."
     ;
 
 PumpAction
@@ -250,50 +263,50 @@ PumpAction
     ;
 
 AddManaAction
-    = "Add " ManaSource " to your mana pool"
+    = "add " ManaSource " to your mana pool"
     ;
 
 ManaSource
     = "{1}"
-    / "{B} or {R}"
-    / "{G} or {W}"
-    / "{R} or {G}"
-    / "{U} or {B}"
-    / "{W} or {U}"
-    / "{G}"
-    / "{B}"
-    / "{U}"
-    / "{W}"
-    / "{R}"
+    / "{b} or {r}"
+    / "{g} or {w}"
+    / "{r} or {g}"
+    / "{u} or {b}"
+    / "{w} or {u}"
+    / "{g}"
+    / "{b}"
+    / "{u}"
+    / "{w}"
+    / "{r}"
     / "one mana of any color"
     ;
 
 DrawAction
-    = "Draw a card"
-    / "Draw " Count " cards"
+    = "draw a card"
+    / "draw " Count " cards"
     ;
 
 DiscardAction
-    = "Discard " SelectCard " at random"?
-    / "Discard " Count SPACE RestrictedCard " at random"
+    = "discard " SelectCard " at random"?
+    / "discard " Count SPACE RestrictedCard " at random"
     / SelectPlayer " discards " SelectCard " at random"?
     / SelectPlayer " discards " Count SPACE RestrictedCard " at random"
     ;
 
 DestroyNoRegenAction
-    = Destroy SPACE SelectPermanent EOS SPACE NoRegen
+    = "destroy " SelectPermanent EOS SPACE NoRegen
     ;
 
 DestroyAction 
-    = Destroy SPACE SelectPermanent
+    = "destroy " SelectPermanent
     ;
 
 ExileAction
-    = Exile SPACE SelectPermanent
+    = "exile " SelectPermanent
     ;
 
 CounterAction
-    = Counter SPACE SelectSpell
+    = "counter " SelectSpell
     ;
 
 SelectOp
@@ -309,7 +322,7 @@ SelectCard
 
 SelectCreature
     = "@"
-    / "Target " RestrictedCreature
+    / "target " RestrictedCreature
     ;
 
 SelectPermanent
@@ -406,16 +419,16 @@ CreatureRestriction
     / "attacking or blocking"
     / "attacking"
     / "green or white"
-    / "Human"
-    / "non-Vampire, non-Werewolf, non-Zombie"
+    / "human"
+    / "non-vampire, non-werewolf, non-zombie"
     / "nonartifact"
     / "you control"
     ;
 
 Tribal
-    = "Spirit" "s"?
-    / "Island" "s"?
-    / "Wall" "s"?
+    = "spirit" "s"?
+    / "island" "s"?
+    / "wall" "s"?
     ;
 
 Creature
@@ -447,20 +460,8 @@ Spell
     ;
 
 NoRegen 
-    = "It can't be regenerated"
-    / "They can't be regenerated"
-    ;
-
-Destroy 
-    = "Destroy"
-    ;
-
-Exile 
-    = "Exile"
-    ;
-
-Counter 
-    = "Counter"
+    = "it can't be regenerated"
+    / "they can't be regenerated"
     ;
 
 SignedNumber
