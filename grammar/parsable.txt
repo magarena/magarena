@@ -27,6 +27,7 @@
 {1}, discard a card: put a +1/+1 counter on @.
 {1}{g}: add one mana of any color to your mana pool.
 {1}: @ gains first strike until end of turn.
+{1}{g}: all creatures get -1/-0 until end of turn.
 {1}: @ gets +0/+1 until end of turn.
 {1}: @ gets +1/+0 until end of turn.
 {1}: @ gets -1/+1 until end of turn.
@@ -196,6 +197,7 @@
 {2}, sacrifice a permanent: return target creature to its owner's hand.
 {2}, sacrifice @: draw a card.
 {2}, {t}: add one mana of any color to your mana pool.
+{2}, {t}: all creatures get -1/-0 until end of turn.
 {2}: target artifact creature gets +1/+1 until end of turn.
 {2}: target creature gains flying until end of turn.
 {2}: target creature you control gains flying until end of turn.
@@ -320,6 +322,15 @@
 {8}, {t}: target creature gets +6/+6 until end of turn.
 {8}, {t}: you gain 10 life.
 affinity for artifacts
+all creatures get -1/-0.
+all creatures get -1/-0 until end of turn.
+all creatures get -1/-1.
+all creatures get -1/-1 until end of turn.
+all creatures get +1/+1 until end of turn.
+all creatures get -2/-0 until end of turn.
+all creatures get +2/+2.
+all creatures get -2/-2 until end of turn.
+all creatures get -5/-0.
 @ attacks each turn if able.
 at the beginning of your upkeep, @ deals 5 damage to target creature or player.
 at the beginning of your upkeep, destroy all artifacts and enchantments. they can't be regenerated.
@@ -1222,6 +1233,8 @@ vigilance
 {w}: @ gets +0/+1 until end of turn.
 {w}: @ gets +1/+1 until end of turn.
 when @ dies, add {1} to your mana pool.
+when @ dies, all creatures get -1/-1 until end of turn.
+when @ dies, all creatures get -5/-5 until end of turn.
 when @ dies, destroy target artifact or enchantment.
 when @ dies, destroy target land.
 when @ dies, destroy target wall.
@@ -1244,6 +1257,7 @@ when @ dies, you gain 2 life.
 when @ dies, you gain 3 life.
 when @ dies, you gain 4 life.
 when @ dies, you may draw a card.
+when @ dies, you may have target creature get -2/-2 until end of turn.
 when @ dies, you may put a -1/-1 counter on target creature.
 when @ dies, you may put it on top of its owner's library.
 when @ enters the battlefield, add one mana of any color to your mana pool.
@@ -1423,6 +1437,7 @@ whenever you cast a spirit or arcane spell, you may draw a card.
 whenever you cast a spirit or arcane spell, you may put a ki counter on @.
 whenever you cast a spirit or arcane spell, you may return @ to its owner's hand.
 whenever you cast a treefolk spell, @ gets +2/+2 until end of turn.
+whenever you cast a treefolk spell, you may have target creature get +3/-3 until end of turn.
 whenever you cast a vampire creature spell, it gains bloodthirst 3.
 whenever you cast a white, blue, black, or red spell, put a +1/+1 counter on @.
 whenever you cast a white spell, @ gains vigilance until end of turn.

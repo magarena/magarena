@@ -300,7 +300,7 @@ GainsAction
     ;
 
 PumpAction
-    = SelectCreature " gets " SignedNumber "/" SignedNumber " until end of turn"?
+    = SelectCreature " get" "s"? SPACE SignedNumber "/" SignedNumber " until end of turn"?
     ;
 
 AddManaAction
