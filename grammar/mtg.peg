@@ -274,9 +274,9 @@ DrawAction
     ;
 
 DiscardAction
-    = "Discard " SelectCard
+    = "Discard " SelectCard " at random"?
     / "Discard " Count SPACE RestrictedCard " at random"
-    / SelectPlayer " discards " SelectCard
+    / SelectPlayer " discards " SelectCard " at random"?
     / SelectPlayer " discards " Count SPACE RestrictedCard " at random"
     ;
 

@@ -17,6 +17,8 @@
 {1}{B}, {T}: Target creature gets -1/-1 until end of turn.
 {1}{B}, {T}: Target creature gets -2/-2 until end of turn.
 {1}{B}, {T}: Target player loses 1 life.
+{1}, Discard a card at random: @ gets +2/+0 until end of turn.
+{1}, Discard a card at random: Put a +1/+1 counter on target creature.
 {1}, Discard a card: @ gets +1/+1 until end of turn.
 {1}, Discard a card: Put a +1/+1 counter on @.
 {1}{G}: Add one mana of any color to your mana pool.
@@ -34,6 +36,7 @@
 {1}{G}, {T}: Target creature gets +4/+4 until end of turn.
 {1}, Pay 2 life: @ deals 1 damage to target creature or player.
 {1}{R}: @ deals 1 damage to target creature or player.
+{1}{R}, Discard a card at random: @ deals 1 damage to target creature or player.
 {1}: Regenerate @.
 {1}, Remove a +1/+1 counter from a creature you control: Put a 1/1 green Saproling creature token onto the battlefield.
 {1}, Remove a +1/+1 counter from @: Regenerate @.
@@ -120,6 +123,7 @@
 {2}{B}, {T}, Discard a card: Destroy target nonblack creature. It can't be regenerated.
 {2}: @ deals 1 damage to target creature or player. Sacrifice @.
 {2}: Discard a card.
+{2}, Discard a card at random: @ deals 2 damage to target creature or player.
 {2}: @ gets +1/+0 until end of turn.
 {2}{G}: Put a 1/1 green Saproling creature token onto the battlefield.
 {2}{G}: Regenerate @.
@@ -174,6 +178,7 @@
 {3}{B}: Regenerate @.
 {3}{B}, {T}: Destroy target tapped creature.
 {3}: @ deals 1 damage to target creature or player.
+{3}, Discard a card at random: Target creature gets +2/+2 until end of turn.
 {3}: Exile target creature you control.
 {3}: @ gets +1/+0 until end of turn.
 {3}{G}: Put a 1/1 green Saproling creature token onto the battlefield.
@@ -628,6 +633,8 @@ Put a +1/+1 counter on target creature.
 Put a -1/-1 counter on @: Untap @.
 Put a 1/1 green Saproling creature token onto the battlefield.
 {R}: Add {B} to your mana pool.
+{R}, Discard a card at random: @ gets +2/+0 until end of turn.
+{R}, Discard a card at random: @ gets +3/+0 until end of turn.
 Reach
 Remove a +1/+1 counter from @: Add {1} to your mana pool.
 Remove a -1/-1 counter from @: Add one mana of any color to your mana pool.
@@ -797,8 +804,10 @@ Target creature gets -7/-0 until end of turn.
 Target creature gets +7/+7 until end of turn.
 Target creature you control gets +2/+0 until end of turn.
 Target nonblack creature gets -1/-1 until end of turn.
+Target opponent discards a card at random.
 Target opponent loses 3 life.
 Target player discards a card.
+Target player discards a card at random.
 Target player discards two cards at random.
 Target player discards X cards at random.
 Target player gains 4 life.
@@ -819,6 +828,7 @@ Target player loses 5 life and you gain 5 life.
 {T}: Destroy target land.
 {T}: Destroy target tapped creature.
 {T}: Destroy target Wall.
+{T}, Discard a card at random: @ deals 1 damage to target creature or player.
 {T}, Discard a card: Draw a card.
 {T}: Draw a card.
 {T}: Draw three cards.
