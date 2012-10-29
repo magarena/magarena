@@ -57,6 +57,7 @@
 {1}, remove a +1/+1 counter from a creature you control: put a 1/1 green saproling creature token onto the battlefield.
 {1}, remove a +1/+1 counter from @: prevent all combat damage that would be dealt this turn.
 {1}, remove a +1/+1 counter from @: regenerate @.
+{1}, remove four +1/+1 counters from @: target player draws three cards.
 {1}: return target land you control to its owner's hand.
 {1}: return @ to its owner's hand.
 {1}{r}: @ gains first strike until end of turn.
@@ -214,11 +215,13 @@
 {2}{r}{w}, {t}: target creature gains double strike until end of turn.
 {2}, sacrifice a permanent: return target creature to its owner's hand.
 {2}, sacrifice @: draw a card.
+{2}, sacrifice @: target player draws a card.
 {2}, {t}: add one mana of any color to your mana pool.
 {2}, {t}: all creatures get -1/-0 until end of turn.
 {2}: target artifact creature gets +1/+1 until end of turn.
 {2}: target creature gains flying until end of turn.
 {2}: target creature you control gains flying until end of turn.
+{2}, {t}: each player draws a card.
 {2}, {t}: exile target creature you control.
 {2}, {t}: exile target permanent you control.
 {2}, {t}: prevent the next 1 damage that would be dealt to target creature or player this turn.
@@ -389,6 +392,8 @@ at the beginning of your upkeep, you lose 1 life.
 at the beginning of your upkeep, you lose 2 life.
 at the beginning of your upkeep, you lose 3 life.
 at the beginning of your upkeep, you may draw two cards.
+at the beginning of your upkeep, you may gain 1 life.
+at the beginning of your upkeep, you may have target opponent discard a card at random.
 at the beginning of your upkeep, you may put a +1/+1 counter on @.
 at the beginning of your upkeep, you may put a +1/+1 counter on target creature you control.
 at the beginning of your upkeep, you may put a charge counter on @.
@@ -438,6 +443,7 @@ bloodthirst 6
 {b}: return @ to its owner's hand.
 {b}{r}: @ gets +1/+0 until end of turn.
 {b}{r}{g}, {t}: return target creature card from your graveyard to your hand.
+{b}{r}{g}, {t}: target player draws a card.
 {b}, sacrifice a creature: destroy target nonblack creature.
 {b}, sacrifice a creature: regenerate @.
 {b}, sacrifice a creature: target creature gets -1/-1 until end of turn.
@@ -617,6 +623,8 @@ draw three cards.
 draw two cards.
 draw x cards.
 each attacking creature doesn't untap during its controller's next untap step.
+each player draws two cards.
+each player draws x cards.
 enchant artifact
 enchant artifact creature
 enchant creature
@@ -1150,12 +1158,18 @@ target creature loses shadow until end of turn.
 target creature you control gets +2/+0 until end of turn.
 target nonblack creature gets -1/-1 until end of turn.
 target opponent discards a card at random.
+target opponent draws a card.
 target opponent loses 2 life. you gain 2 life.
 target opponent loses 3 life.
 target player discards a card.
 target player discards a card at random.
 target player discards two cards at random.
 target player discards x cards at random.
+target player draws a card.
+target player draws four cards.
+target player draws three cards.
+target player draws two cards.
+target player draws x cards.
 target player gains 4 life.
 target player gains 5 life.
 target player gains 6 life.
@@ -1188,6 +1202,7 @@ target player loses 5 life and you gain 5 life.
 {t}, discard a card: you gain 3 life.
 {t}: draw a card.
 {t}: draw three cards.
+{t}: each player draws a card.
 {t}: enchanted creature gets +2/-2 until end of turn.
 {t}, exile a creature you control: put a storage counter on @.
 {t}: @ gets +0/+4 until end of turn.
@@ -1359,6 +1374,7 @@ when @ dies, destroy target wall.
 when @ dies, discard a card.
 when @ dies, draw a card.
 when @ dies, each player discards a card.
+when @ dies, each player draws a card.
 when @ dies, each player loses 3 life.
 when @ dies, each player loses 4 life.
 when @ dies, exile all creatures.
@@ -1379,6 +1395,7 @@ when @ dies, you gain 2 life.
 when @ dies, you gain 3 life.
 when @ dies, you gain 4 life.
 when @ dies, you may draw a card.
+when @ dies, you may gain 3 life.
 when @ dies, you may have target creature get -2/-2 until end of turn.
 when @ dies, you may put a -1/-1 counter on target creature.
 when @ dies, you may put it on top of its owner's library.
@@ -1481,6 +1498,8 @@ when @ enters the battlefield, you may destroy target enchantment.
 when @ enters the battlefield, you may destroy target equipment.
 when @ enters the battlefield, you may destroy target nonblack creature.
 when @ enters the battlefield, you may exile target artifact or enchantment.
+when @ enters the battlefield, you may have target opponent discard a card.
+when @ enters the battlefield, you may have target opponent sacrifice a creature.
 when @ enters the battlefield, you may return target artifact card from your graveyard to the battlefield.
 when @ enters the battlefield, you may return target artifact card from your graveyard to your hand.
 when @ enters the battlefield, you may return target card from your graveyard to your hand.
@@ -1635,6 +1654,7 @@ wither
 {w}, {t}: target player gains 1 life.
 {w}, {t}: you gain 2 life.
 {w}{u}{b}{r}{g}: exile target permanent.
+{w}{u}{b}{r}{g}, remove five -1/-1 counters from @: target player draws three cards.
 {w}{u}: target creature gains flying until end of turn.
 {w}{w}: @ gains first strike until end of turn.
 {w}{w}: @ gets +0/+2 until end of turn.

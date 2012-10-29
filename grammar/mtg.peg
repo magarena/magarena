@@ -7,12 +7,12 @@ MagicRule
     ;
 
 SpellEffect
-    = Optional? Action EOS (SPACE Action EOS)*
+    = (Optional SPACE)? (SelectPlayer SPACE)? Action EOS (SPACE (SelectPlayer SPACE)? Action EOS)*
     ;
 
 Optional
-    = "you may have "
-    / "you may "
+    = "you may have"
+    / "you may"
     ;
 
 KeywordAbility
@@ -234,7 +234,7 @@ PutTokenAction
     ;
 
 ControlAction
-    = SelectPlayer " control" "s"? SPACE SelectPermanent
+    = "control" "s"? SPACE SelectPermanent
     ;
 
 ChangeCounterAction
@@ -245,9 +245,9 @@ ChangeCounterAction
     ;
 
 ChangeLifeAction
-    = SelectPlayer " loses " Number " life and you gain " Number " life"
-    / SelectPlayer " lose" "s"? SPACE Number " life"
-    / SelectPlayer " gain" "s"? SPACE Number " life"
+    = "loses " Number " life and you gain " Number " life"
+    / "lose" "s"? SPACE Number " life"
+    / "gain" "s"? SPACE Number " life"
     ;
 
 SelectPlayer
@@ -357,15 +357,21 @@ ManaSource
     ;
 
 DrawAction
-    = "draw a card"
-    / "draw " Count " cards"
+    = Draw " a card"
+    / Draw " " Count " cards"
+    ;
+
+Draw
+    = "draw" "s"?
     ;
 
 DiscardAction
-    = "discard " SelectCard " at random"?
-    / "discard " Count SPACE RestrictedCard " at random"
-    / SelectPlayer " discards " SelectCard " at random"?
-    / SelectPlayer " discards " Count SPACE RestrictedCard " at random"
+    = Discard SPACE SelectCard " at random"?
+    / Discard SPACE Count SPACE RestrictedCard " at random"
+    ;
+
+Discard
+    = "discard" "s"?
     ;
 
 DestroyNoRegenAction
