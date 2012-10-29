@@ -52,6 +52,7 @@
 {1}{g}, {t}: target creature gets +4/+4 until end of turn.
 {1}{g}{u}: creatures you control gain shroud until end of turn.
 {1}: @ loses flying until end of turn.
+{1}, pay 1 life: draw a card, then discard a card.
 {1}, pay 2 life: @ deals 1 damage to target creature or player.
 {1}{r}: @ deals 1 damage to target creature.
 {1}{r}: @ deals 1 damage to target creature or player.
@@ -137,11 +138,14 @@
 {1}{u}: @ gains flying until end of turn.
 {1}{u}: @ gains shroud until end of turn.
 {1}: untap @.
+{1}{u}{r}: draw a card, then discard a card.
 {1}{u}: return @ to its owner's hand.
 {1}{u}{r}: return @ to its owner's hand.
+{1}{u}{r}, {t}: draw a card, then discard a card.
 {1}{u}, sacrifice @: counter target creature spell.
 {1}{u}, sacrifice @: draw a card.
 {1}{u}, sacrifice @: return target creature to its owner's hand.
+{1}{u}, {t}: draw a card, then discard a card.
 {1}{u}, {t}: put target green creature on top of its owner's library.
 {1}{u}, {t}, sacrifice @: draw two cards.
 {1}{u}, {t}: target creature gains flying until end of turn.
@@ -216,6 +220,7 @@
 {2}, remove a +1/+1 counter from a creature you control: put a +1/+1 counter on @.
 {2}, remove a +1/+1 counter from @: put a +1/+1 counter on target creature.
 {2}, remove a +1/+1 counter from @: return @ to its owner's hand.
+{2}, return a land you control to its owner's hand: draw a card, then discard a card.
 {2}, return a land you control to its owner's hand: tap target land.
 {2}, return a land you control to its owner's hand: untap target land.
 {2}{r}: @ gains first strike until end of turn.
@@ -244,6 +249,7 @@
 {2}: target red creature gains haste until end of turn.
 {2}: target white creature gains persist until end of turn.
 {2}, {t}: attacking creatures get +1/+0 until end of turn.
+{2}, {t}: draw a card, then discard a card.
 {2}, {t}: each player draws a card.
 {2}, {t}: exile target creature you control.
 {2}, {t}: exile target permanent you control.
@@ -264,6 +270,7 @@
 {2}, {t}: you gain 1 life.
 {2}, {t}: you may tap or untap target creature.
 {2}{u}, discard a card: return @ to its owner's hand.
+{2}{u}: draw a card, then put a +1/+1 counter on @.
 {2}: untap target artifact creature.
 {2}{u}, sacrifice a land: draw a card.
 {2}{u}: tap target creature with flying.
@@ -326,6 +333,7 @@
 {3}, {t}, sacrifice a land: destroy target nonbasic land.
 {3}, {t}, sacrifice @: destroy target land.
 {3}, {t}, sacrifice @: draw three cards.
+{3}, {t}: tap target creature, then return @ to its owner's hand.
 {3}, {t}: target creature gains first strike until end of turn.
 {3}, {t}: target creature gains trample until end of turn.
 {3}, {t}: target creature gets -2/-0 until end of turn.
@@ -343,6 +351,7 @@
 {3}{u}{u}: shuffle your library.
 {3}{w}{b}, {t}: target player loses 1 life and you gain 1 life.
 {3}{w}: creatures you control get +1/+1 until end of turn.
+{3}{w}: exile @, then return it to the battlefield under its owner's control.
 {3}{w}: @ gets +0/+5 until end of turn.
 {3}{w}: tap target creature.
 {3}{w}{w}, sacrifice @: exile all black creatures.
@@ -373,7 +382,9 @@
 {4}{w}, {t}, sacrifice @: return target artifact card from your graveyard to the battlefield.
 {5}{g}: regenerate @.
 {5}, {t}: destroy target creature with flying.
+{5}, {t}: discard a card at random, then draw two cards.
 {5}, {t}: draw a card.
+{5}, {t}: draw two cards, then discard a card.
 {5}, {t}, sacrifice @: return target card from your graveyard to your hand.
 {7}{b}: target creature gets -3/-3 until end of turn.
 {7}{g}: @ gets +5/+5 until end of turn.
@@ -751,10 +762,16 @@ discard an artifact card: return @ to its owner's hand.
 double strike
 draw a card.
 draw four cards.
+draw four cards, then discard three cards at random.
 draw three cards.
+draw three cards, then discard a card.
 draw two cards.
+draw two cards, then discard a card.
+draw two cards, then discard a card at random.
+draw two cards, then sacrifice a permanent.
 draw x cards.
 each attacking creature doesn't untap during its controller's next untap step.
+each player draws three cards, then discards three cards at random.
 each player draws two cards.
 each player draws x cards.
 enchant artifact
@@ -901,6 +918,7 @@ exile target attacking or blocking creature.
 exile target black or red permanent.
 exile target creature.
 exile target creature or enchantment.
+exile target creature you control, then return it to the battlefield under its owner's control.
 exile target enchantment.
 exile target land.
 fading 1
@@ -1052,6 +1070,7 @@ pay 4 life: regenerate @.
 pay 7 life: draw seven cards.
 pay 8 life: untap @.
 persist
+plainswalk
 prevent all combat damage that would be dealt this turn.
 prevent the next 1 damage that would be dealt to target creature or player this turn.
 prevent the next 2 damage that would be dealt to target creature or player this turn.
@@ -1222,6 +1241,7 @@ sacrifice @: destroy target nonbasic land.
 sacrifice @: destroy target nonblack creature.
 sacrifice @: destroy target nonblack creature. it can't be regenerated.
 sacrifice @: draw a card.
+sacrifice @: draw a card, then discard a card.
 sacrifice enchanted creature: creatures you control get +2/+0 until end of turn.
 sacrifice @: enchanted creature gets +3/+3 until end of turn.
 sacrifice @: prevent all combat damage that would be dealt this turn.
@@ -1346,6 +1366,7 @@ target creature loses shadow until end of turn.
 target creature you control gets +2/+0 until end of turn.
 target nonblack creature gets -1/-1 until end of turn.
 target opponent discards a card at random.
+target opponent discards a card at random, then discards a card.
 target opponent draws a card.
 target opponent loses 2 life. you gain 2 life.
 target opponent loses 3 life.
@@ -1394,8 +1415,11 @@ target player loses 5 life and you gain 5 life.
 {t}, discard a card: draw a card.
 {t}, discard a card: you gain 3 life.
 {t}: draw a card.
+{t}: draw a card, then discard a card.
+{t}: draw a card, then put @ on top of its owner's library.
 {t}: draw three cards.
 {t}: each player draws a card.
+{t}: each player draws a card, then discards a card.
 {t}: enchanted creature gets +2/-2 until end of turn.
 {t}, exile a creature you control: put a storage counter on @.
 {t}: @ gets +0/+4 until end of turn.
@@ -1477,6 +1501,7 @@ trample
 {t}: target creature loses flying until end of turn.
 {t}: target creature loses forestwalk until end of turn.
 {t}: target creature with flying gets -1/-1 until end of turn.
+{t}: target player draws a card, then discards a card.
 {t}: target player loses 1 life.
 {t}: untap enchanted creature.
 {t}: untap target artifact or creature.
@@ -1519,6 +1544,7 @@ untap target permanent.
 {u/r}: @ gains flying until end of turn.
 {u}{r}: @ gains flying until end of turn.
 {u/r}: @ gets +1/-1 until end of turn.
+{u}, sacrifice a creature: discard a card, then draw a card.
 {u}, sacrifice @: counter target noncreature spell.
 {u}, sacrifice @: return target creature to its owner's hand.
 {u}: tap enchanted creature.
@@ -1528,6 +1554,7 @@ untap target permanent.
 {u}, {t}, discard a card: return target permanent you control to its owner's hand.
 {u}, {t}, discard a card: target creature gains flying until end of turn.
 {u}, {t}, discard a card: you may tap or untap target artifact, creature, or land.
+{u}, {t}: draw a card, then discard a card.
 {u}, {t}: draw two cards.
 {u}, {t}: put target creature you control on top of its owner's library.
 {u}, {t}: return target permanent you control to its owner's hand.
@@ -1624,8 +1651,10 @@ when @ enters the battlefield, destroy target noncreature permanent.
 when @ enters the battlefield, destroy target permanent.
 when @ enters the battlefield, discard a card at random.
 when @ enters the battlefield, draw a card.
+when @ enters the battlefield, draw a card, then discard a card.
 when @ enters the battlefield, draw two cards.
 when @ enters the battlefield, each player discards a card.
+when @ enters the battlefield, each player draws two cards, then discards a card at random.
 when @ enters the battlefield, each player loses 1 life.
 when @ enters the battlefield, each player loses 3 life.
 when @ enters the battlefield, exile a land you control.
@@ -1862,6 +1891,7 @@ white creatures get -1/-1.
 white creatures get +1/-1.
 white creatures get +1/+1.
 white creatures get +2/+0 until end of turn.
+white creatures have plainswalk.
 white creatures you control get +1/+1.
 white creatures you control get +2/+2 until end of turn.
 white creatures you control have protection from black.

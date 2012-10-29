@@ -9,6 +9,7 @@ MagicRule
 SpellEffect
     = SingleEffect EOS (SPACE SingleEffect EOS)*
     / SingleEffect " and " SingleEffect EOS
+    / SingleEffect ", then " SingleEffect EOS
     ;
 
 SingleEffect
@@ -93,6 +94,7 @@ Keyword
     / "shadow"
     / "storm"
     / "swampwalk"
+    / "plainswalk"
     / "forestwalk"
     / "islandwalk"
     / "mountainwalk"
