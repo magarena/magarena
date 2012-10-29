@@ -276,6 +276,8 @@ DrawAction
 DiscardAction
     = "Discard a card"
     / "Discard " Count " cards"
+    / SelectPlayer " discards " Count " cards"
+    / SelectPlayer " discards a card"
     ;
 
 DestroyNoRegenAction
