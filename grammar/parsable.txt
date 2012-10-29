@@ -1,5 +1,6 @@
 {0}: @ gains flying.
 {0}: @ gets +1/-1 until end of turn.
+{0}: @ loses flying.
 {0}: return @ to its owner's hand.
 {1}: add {b} to your mana pool.
 {1}{b}{b}: regenerate @.
@@ -44,6 +45,7 @@
 {1}{g}, sacrifice @: destroy target enchantment.
 {1}{g}, {t}: target creature gets -2/-0 until end of turn.
 {1}{g}, {t}: target creature gets +4/+4 until end of turn.
+{1}: @ loses flying until end of turn.
 {1}, pay 2 life: @ deals 1 damage to target creature or player.
 {1}{r}: @ deals 1 damage to target creature or player.
 {1}{r}, discard a card at random: @ deals 1 damage to target creature or player.
@@ -298,6 +300,7 @@
 {4}: @ gains flying until end of turn.
 {4}{g}: put a +1/+1 counter on target creature.
 {4}{g}, sacrifice a creature: destroy target creature with flying.
+{4}: @ loses defender until end of turn.
 {4}, return a land you control to its owner's hand: draw a card.
 {4}{r}: exile @.
 {4}{r}, {t}, sacrifice a creature: @ deals 2 damage to target creature or player.
@@ -609,6 +612,7 @@ enchanted creature has shroud.
 enchanted creature has swampwalk.
 enchanted creature has trample.
 enchanted creature has vigilance.
+enchanted creature loses flying.
 enchant enchantment
 enchant equipment
 enchant green or white creature
@@ -736,6 +740,7 @@ forestwalk
 {g}, {t}: add {r} to your mana pool.
 {g}: target creature gains trample until end of turn.
 {g}: target creature gets +1/+1 until end of turn.
+{g}: target creature loses flying until end of turn.
 {g}, {t}, discard a card: prevent all combat damage that would be dealt this turn.
 {g}, {t}, discard a card: target creature gets +2/+2 until end of turn.
 {g}, {t}: put a 1/1 green saproling creature token onto the battlefield.
@@ -974,6 +979,7 @@ sacrifice @: target creature gets +1/+1 until end of turn.
 sacrifice @: target creature gets -2/-0 until end of turn.
 sacrifice @: target creature gets +2/+2 until end of turn.
 sacrifice @: target creature gets +3/+3 until end of turn.
+sacrifice @: target creature loses protection from black until end of turn.
 sacrifice @: target player loses 1 life.
 sacrifice @: target player loses 1 life and you gain 1 life.
 sacrifice @: you gain 3 life.
@@ -1055,6 +1061,8 @@ target creature gets -5/-0 until end of turn.
 target creature gets -5/-5 until end of turn.
 target creature gets -7/-0 until end of turn.
 target creature gets +7/+7 until end of turn.
+target creature loses flying until end of turn.
+target creature loses shadow until end of turn.
 target creature you control gets +2/+0 until end of turn.
 target nonblack creature gets -1/-1 until end of turn.
 target opponent discards a card at random.
@@ -1157,6 +1165,8 @@ trample
 {t}: target creature gets +1/+2 until end of turn.
 {t}: target creature gets -2/-0 until end of turn.
 {t}: target creature gets +3/-2 until end of turn.
+{t}: target creature loses flying until end of turn.
+{t}: target creature loses forestwalk until end of turn.
 {t}: target creature with flying gets -1/-1 until end of turn.
 {t}: target player loses 1 life.
 {t}: untap enchanted creature.
@@ -1453,6 +1463,7 @@ whenever you cast a vampire creature spell, it gains bloodthirst 3.
 whenever you cast a white, blue, black, or red spell, put a +1/+1 counter on @.
 whenever you cast a white spell, @ gains vigilance until end of turn.
 whenever you cast a white spell, @ gets +1/+1 until end of turn.
+whenever you cast a white spell, @ loses defender until end of turn.
 whenever you cast a white spell, remove a -1/-1 counter from @.
 whenever you cast a white spell, you gain 3 life.
 whenever you cast a white spell, you may tap target creature.

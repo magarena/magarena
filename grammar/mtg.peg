@@ -298,6 +298,7 @@ Enchant
 GainsAction
     = SelectCreature " has " Keyword " until end of turn"?
     / SelectCreature " gains " Keyword " until end of turn"?
+    / SelectCreature " loses " Keyword " until end of turn"?
     ;
 
 PumpAction
