@@ -33,7 +33,7 @@ Trigger
     / LeavesBattlefieldTrigger
     / BeginningUpkeepTrigger
     / DiesTrigger
-    / DealsCombatDamageTrigger
+    / DealsDamageTrigger
     / AttacksTrigger 
     ;
 
@@ -180,8 +180,8 @@ DiesTrigger
     = "when @ dies"
     ;
 
-DealsCombatDamageTrigger
-    = "whenever @ deals combat damage to a player"
+DealsDamageTrigger
+    = "whenever @ deals " "combat "? "damage" " to a player"?
     ;
 
 AttacksTrigger
@@ -202,7 +202,7 @@ ChangeCounterAction
 ChangeLifeAction
     = SelectPlayer " loses " Number " life and you gain " Number " life"
     / SelectPlayer " loses " Number " life"
-    / SelectPlayer " gains " Number " life"
+    / SelectPlayer " gain" "s"? SPACE Number " life"
     ;
 
 SelectPlayer
@@ -502,6 +502,7 @@ SignedNumber
 
 Number 
     = [0-9]+
+    / "that much"
     ;
 
 Sign
