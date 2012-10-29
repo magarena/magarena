@@ -19,7 +19,9 @@ StaticAbility
     = EntersTapped
     / EntersWithCounter
     / EnchantedPump
+    / EnchantedHas
     / EquippedPump
+    / EquippedHas
     ;
 
 ActivatedAbility
@@ -251,11 +253,19 @@ Enchant
     ;
 
 EnchantedPump
-    = "enchanted creature gets " SignedNumber "/" SignedNumber "."
+    = "enchanted creature gets " SignedNumber "/" SignedNumber EOS
+    ;
+
+EnchantedHas
+    = "enchanted creature has " Keyword EOS
     ;
 
 EquippedPump
-    = "equipped creature gets " SignedNumber "/" SignedNumber "."
+    = "equipped creature has " Keyword EOS
+    ;
+
+EquippedHas
+    = "equipped creature gets " SignedNumber "/" SignedNumber EOS
     ;
 
 PumpAction

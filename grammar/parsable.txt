@@ -440,6 +440,25 @@ enchanted creature gets +3/+3.
 enchanted creature gets +4/+0.
 enchanted creature gets -4/-1.
 enchanted creature gets +6/+6.
+enchanted creature has defender.
+enchanted creature has double strike.
+enchanted creature has fear.
+enchanted creature has first strike.
+enchanted creature has flying.
+enchanted creature has forestwalk.
+enchanted creature has haste.
+enchanted creature has infect.
+enchanted creature has intimidate.
+enchanted creature has islandwalk.
+enchanted creature has lifelink.
+enchanted creature has mountainwalk.
+enchanted creature has protection from creatures.
+enchanted creature has reach.
+enchanted creature has shadow.
+enchanted creature has shroud.
+enchanted creature has swampwalk.
+enchanted creature has trample.
+enchanted creature has vigilance.
 enchant enchantment
 enchant green or white creature
 enchant island
@@ -500,6 +519,16 @@ equipped creature gets +4/+2.
 equipped creature gets +5/+0.
 equipped creature gets +5/+5.
 equipped creature gets +6/+6.
+equipped creature has deathtouch.
+equipped creature has double strike.
+equipped creature has fear.
+equipped creature has first strike.
+equipped creature has flying.
+equipped creature has haste.
+equipped creature has intimidate.
+equipped creature has shroud.
+equipped creature has trample.
+equipped creature has vigilance.
 exalted
 exile @.
 exile all creatures.
