@@ -38,6 +38,7 @@ Trigger
     / LeavesBattlefieldTrigger
     / EntersGraveyardTrigger
     / BeginningUpkeepTrigger
+    / BeginningEndStepTrigger
     / DiesTrigger
     / DealsDamageTrigger
     / AttacksTrigger 
@@ -195,6 +196,10 @@ EntersGraveyardTrigger
 EntersBattlefieldTrigger
     = "when @ enters the battlefield"
     / "whenever @ or another ally enters the battlefield under your control"
+    ;
+
+BeginningEndStepTrigger
+    = "at the beginning of the end step"
     ;
 
 BeginningUpkeepTrigger

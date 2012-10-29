@@ -359,6 +359,8 @@ all creatures get +2/+2.
 all creatures get -2/-2 until end of turn.
 all creatures get -5/-0.
 @ attacks each turn if able.
+at the beginning of the end step, return @ to its owner's hand.
+at the beginning of the end step, sacrifice @.
 at the beginning of your upkeep, @ deals 3 damage to target creature you control.
 at the beginning of your upkeep, @ deals 4 damage to enchanted creature.
 at the beginning of your upkeep, @ deals 5 damage to target creature or player.
