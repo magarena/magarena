@@ -181,6 +181,7 @@ LeavesBattlefieldTrigger
 
 EntersBattlefieldTrigger
     = "when @ enters the battlefield"
+    / "whenever @ or another ally enters the battlefield under your control"
     ;
 
 BeginningUpkeepTrigger
