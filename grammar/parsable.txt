@@ -58,6 +58,7 @@
 {1}{r}: @ gets +3/-3 until end of turn.
 {1}{r}, remove a +1/+1 counter from @: @ deals 1 damage to target creature or player.
 {1}{r}{r}: put a +1/+1 counter on @.
+{1}{r}{r}{r}: return @ from your graveyard to your hand.
 {1}{r}{r}, sacrifice @: @ deals 2 damage to target creature or player.
 {1}{r}{r}, {t}: target creature gains mountainwalk until end of turn.
 {1}{r}, sacrifice a creature: @ deals 2 damage to target creature or player.
@@ -255,6 +256,7 @@
 {3}: return target creature card from your graveyard to your hand.
 {3}: return @ to its owner's hand.
 {3}{r}, remove a +1/+1 counter from @: destroy target artifact or land.
+{3}{r}{r}: return @ from your graveyard to your hand.
 {3}{r}, sacrifice @: destroy target artifact.
 {3}, sacrifice a creature: draw a card.
 {3}, sacrifice a creature: return target creature card from your graveyard to the battlefield.
@@ -342,6 +344,7 @@ at the beginning of your upkeep, you may put a +1/+1 counter on target creature 
 at the beginning of your upkeep, you may put a charge counter on @.
 at the beginning of your upkeep, you may put a charge counter on target artifact.
 at the beginning of your upkeep, you may put a charge counter on target permanent you control.
+at the beginning of your upkeep, you may return @ from your graveyard to your hand.
 at the beginning of your upkeep, you may return target artifact card from your graveyard to the battlefield.
 at the beginning of your upkeep, you may return target creature card from your graveyard to the battlefield.
 {b}{b}: counter target green spell.
@@ -1391,6 +1394,7 @@ whenever you cast a green spell, you may untap @.
 whenever you cast a multicolored spell, @ deals 2 damage to target creature or player.
 whenever you cast a multicolored spell, @ gets +3/+3 until end of turn.
 whenever you cast a multicolored spell, untap @.
+whenever you cast a multicolored spell, you may return @ from your graveyard to your hand.
 whenever you cast an enchantment spell, draw a card.
 whenever you cast an enchantment spell, you may draw a card.
 whenever you cast a red spell, @ gains first strike until end of turn.
@@ -1427,6 +1431,7 @@ whenever you cast a white spell, remove a -1/-1 counter from @.
 whenever you cast a white spell, you gain 3 life.
 whenever you cast a white spell, you may tap target creature.
 whenever you cast a white spell, you may untap @.
+whenever you cast a wizard spell, you may untap @.
 when @ leaves the battlefield, draw a card.
 when @ leaves the battlefield, return the exiled card to the battlefield under its owner's control.
 when @ leaves the battlefield, sacrifice a creature.

@@ -7,7 +7,12 @@ MagicRule
     ;
 
 SpellEffect
-    = "you may "? Action EOS (SPACE Action EOS)*
+    = Optional? Action EOS (SPACE Action EOS)*
+    ;
+
+Optional
+    = "you may have "
+    / "you may "
     ;
 
 KeywordAbility
@@ -356,7 +361,9 @@ SelectOp
     ;
 
 SelectCard
-    = SelectOp SPACE RestrictedCard
+    = "@"
+    / "it"
+    / SelectOp SPACE RestrictedCard
     ;
 
 SelectCreature
@@ -440,6 +447,7 @@ SpellRestriction
     / "spirit or arcane"
     / "treefolk"
     / "vampire creature"
+    / "wizard"
     ;
 
 RestrictedCard
