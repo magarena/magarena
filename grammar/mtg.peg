@@ -36,6 +36,8 @@ Trigger
     = EntersBattlefieldTrigger
     / BeginningUpkeepTrigger
     / DiesTrigger
+    / DealsCombatDamageTrigger
+    / AttacksTrigger 
     ;
 
 Action
@@ -173,6 +175,14 @@ BeginningUpkeepTrigger
 
 DiesTrigger
     = "when @ dies"
+    ;
+
+DealsCombatDamageTrigger
+    = "whenever @ deals combat damage to a player"
+    ;
+
+AttacksTrigger
+    = "whenever @ attacks"
     ;
 
 PutTokenAction

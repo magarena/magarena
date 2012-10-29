@@ -1066,6 +1066,9 @@ when @ enters the battlefield, target player loses 2 life and you gain 2 life.
 when @ enters the battlefield, target player loses 3 life.
 when @ enters the battlefield, target player loses 6 life.
 when @ enters the battlefield, untap all creatures you control.
+whenever @ attacks, tap all artifacts.
+whenever @ attacks, target creature gets +0/+3 until end of turn.
+whenever @ deals combat damage to a player, draw a card.
 wither
 {w}: regenerate @.
 {w}: return @ to its owner's hand.
