@@ -1,9 +1,13 @@
 {0}: @ gains flying.
+{0}: @ gets -1/-0 and gains flying until end of turn.
+{0}: @ gets -1/-0 and gains swampwalk until end of turn.
+{0}: @ gets -1/-1 and gains flying until end of turn.
 {0}: @ gets +1/-1 until end of turn.
 {0}: @ loses flying.
 {0}: return @ to its owner's hand.
 {1}: add {b} to your mana pool.
 {1}: add {r} or {w} to your mana pool.
+{1}{b}{b}: @ gets -3/-0 and gains forestwalk until end of turn.
 {1}{b}{b}: regenerate @.
 {1}{b}{b}, sacrifice a creature: return target creature card from your graveyard to your hand.
 {1}{b}, discard a card: @ gets +2/+2 until end of turn.
@@ -13,6 +17,7 @@
 {1}{b}: @ gets +1/+1 until end of turn.
 {1}{b}: @ gets +2/+2 until end of turn.
 {1}{b}{g}: regenerate @.
+{1}{b}{g}: target creature gets +1/+1 and gains intimidate until end of turn.
 {1}{b}, pay 2 life: return target creature card from your graveyard to your hand.
 {1}{b}: put a -1/-1 counter on enchanted creature.
 {1}{b}: regenerate @.
@@ -20,6 +25,7 @@
 {1}{b}, sacrifice a land: target creature gets +2/+0 until end of turn.
 {1}{b}, sacrifice @: you draw two cards and lose 2 life.
 {1}{b}: target creature you control gains deathtouch until end of turn.
+{1}{b}, {t}, discard a card: target creature gets +1/+0 and gains first strike until end of turn.
 {1}{b}, {t}, sacrifice @: destroy target nonblack creature.
 {1}{b}, {t}: target creature gets -1/-1 until end of turn.
 {1}{b}, {t}: target creature gets -2/-2 until end of turn.
@@ -34,12 +40,14 @@
 {1}{g}: @ deals 1 damage to target creature with flying.
 {1}: @ gets +0/+1 until end of turn.
 {1}: @ gets +1/+0 until end of turn.
+{1}: @ gets +1/-1 and gains flying until end of turn.
 {1}: @ gets -1/+1 until end of turn.
 {1}: @ gets +1/-1 until end of turn.
 {1}: @ gets +1/+1 until end of turn.
 {1}{g}: @ gains deathtouch until end of turn.
 {1}{g}: @ gains reach until end of turn.
 {1}{g}: @ gains trample until end of turn.
+{1}{g}: @ gets -0/-1 and gains flying until end of turn.
 {1}{g}: @ gets +1/+0 until end of turn.
 {1}{g}: @ gets -1/+1 until end of turn.
 {1}{g}{g}: target creature gains forestwalk until end of turn.
@@ -81,6 +89,7 @@
 {1}{r}, sacrifice @: @ deals 1 damage to target creature or player.
 {1}{r}: target creature gains haste until end of turn.
 {1}{r}, {t}: @ deals 1 damage to target creature or player.
+{1}{r}, {t}, discard a card: target creature gets +1/-1 and gains haste until end of turn.
 {1}, sacrifice a creature: @ deals 1 damage to target creature or player.
 {1}, sacrifice a creature: put a +1/+1 counter on @.
 {1}, sacrifice a creature: put a +1/+1 counter on target creature.
@@ -140,6 +149,7 @@
 {1}: untap @.
 {1}{u}{r}: draw a card, then discard a card.
 {1}{u}: return @ to its owner's hand.
+{1}{u}{r}: @ gets +3/+0 and gains flying until end of turn.
 {1}{u}{r}: return @ to its owner's hand.
 {1}{u}{r}, {t}: draw a card, then discard a card.
 {1}{u}, sacrifice @: counter target creature spell.
@@ -277,6 +287,7 @@
 {2}{u}, {t}: put a -1/-1 counter on target creature. you may tap or untap that creature.
 {2}{u}, {t}: target creature gets -2/-0 until end of turn.
 {2}{u}{u}: draw a card.
+{2}{u}{u}: @ gets +2/+2 and gains flying until end of turn.
 {2}{u}: untap @.
 {2}{u}: untap enchanted creature.
 {2}{u}: untap target artifact.
@@ -388,9 +399,11 @@
 {5}, {t}, sacrifice @: return target card from your graveyard to your hand.
 {7}{b}: target creature gets -3/-3 until end of turn.
 {7}{g}: @ gets +5/+5 until end of turn.
+{7}{u}: @ gets +3/+3 and gains flying until end of turn.
 {7}{w}: you gain 5 life.
 {8}: creatures you control gain flying until end of turn.
 {8}: creatures you control get +3/+0 until end of turn.
+{8}: target creature gets +5/+5 and gains trample until end of turn.
 {8}: target player loses 3 life and you gain 3 life.
 {8}, {t}: @ deals 12 damage to target creature.
 {8}, {t}: @ deals 4 damage to target creature or player.
@@ -745,6 +758,7 @@ devour 2
 devour 3
 discard a card: add {b} to your mana pool.
 discard a card at random: @ gains protection from white until end of turn.
+discard a card at random: @ gets +1/+0 and gains first strike until end of turn.
 discard a card: @ gains first strike until end of turn.
 discard a card: @ gains flying until end of turn.
 discard a card: @ gains shadow until end of turn.
@@ -1201,6 +1215,7 @@ return target sorcery card from your graveyard to your hand.
 {r}: @ gains flying until end of turn.
 {r}: @ gains haste until end of turn.
 {r}: @ gains protection from red until end of turn.
+{r}{g}: each blocked creature gets +1/+0 and gains trample until end of turn.
 {r}: @ gets +0/+1 until end of turn.
 {r}: @ gets +1/+0 until end of turn.
 {r}: @ gets +1/-1 until end of turn.
@@ -1208,6 +1223,7 @@ return target sorcery card from your graveyard to your hand.
 {r}: @ gets +2/-2 until end of turn.
 {r}{g}: @ gets +1/-1 until end of turn.
 {r/g}{r/g}{r/g}: @ gets +3/+0 until end of turn.
+{r}{g}, {t}: target creature gets +1/+1 and gains trample until end of turn.
 {r}{g}, {t}: target creature gets +2/+2 until end of turn.
 {r}: regenerate @.
 {r}: return @ to its owner's hand.
@@ -1223,6 +1239,8 @@ return target sorcery card from your graveyard to your hand.
 {r}, sacrifice @: @ deals 2 damage to target creature or player.
 {r}, sacrifice @: destroy target artifact.
 {r}, sacrifice @: destroy target land.
+{r}, sacrifice @: target black creature gets +1/+0 and gains first strike until end of turn.
+{r}, sacrifice @: target green creature gets +1/+0 and gains first strike until end of turn.
 {r}: tap target wall.
 {r}: target creature gains haste until end of turn.
 {r}: target creature gets +1/+0 until end of turn.
@@ -1272,8 +1290,10 @@ sacrifice a land: you gain 3 life.
 sacrifice an artifact: @ gains flying until end of turn.
 sacrifice an artifact: @ gains haste until end of turn.
 sacrifice an artifact: @ gains trample until end of turn.
+sacrifice an artifact: @ gets +1/+0 and gains first strike until end of turn.
 sacrifice an artifact: @ gets +1/+1 until end of turn.
 sacrifice an artifact: @ gets +2/+2 until end of turn.
+sacrifice an artifact: @ gets +3/+3 and gains trample until end of turn.
 sacrifice an artifact: put a +1/+1 counter on @.
 sacrifice an artifact: put a +1/+1 counter on target creature.
 sacrifice an artifact: regenerate @.
@@ -1385,30 +1405,54 @@ target creature gains swampwalk until end of turn.
 target creature gains undying until end of turn.
 target creature gets -0/-3 until end of turn.
 target creature gets +0/+4 until end of turn.
+target creature gets +1/+0 and gains first strike until end of turn.
+target creature gets +1/+0 and gains infect until end of turn.
 target creature gets -1/-0 until end of turn.
+target creature gets +1/+1 and gains first strike until end of turn.
+target creature gets +1/-1 and gains haste until end of turn.
+target creature gets +1/+1 and gains reach until end of turn.
+target creature gets +1/+1 and gains trample until end of turn.
 target creature gets -1/-1 until end of turn.
 target creature gets +1/+1 until end of turn.
 target creature gets -1/-1 until end of turn. tap that creature.
 target creature gets +1/+1 until end of turn. untap that creature.
 target creature gets +1/+2 until end of turn.
 target creature gets +1/+3 until end of turn. untap that creature.
+target creature gets +2/+0 and gains deathtouch until end of turn.
+target creature gets +2/+0 and gains fear until end of turn.
+target creature gets +2/+0 and gains first strike until end of turn.
 target creature gets +2/+0 until end of turn.
 target creature gets +2/+0 until end of turn. @ deals 2 damage to that creature.
+target creature gets +2/+2 and gains first strike until end of turn.
+target creature gets +2/+2 and gains flying until end of turn.
+target creature gets +2/+2 and gains lifelink until end of turn.
+target creature gets +2/+2 and gains trample until end of turn.
 target creature gets -2/-2 until end of turn.
 target creature gets +2/+2 until end of turn.
 target creature gets +2/+2 until end of turn. untap that creature.
 target creature gets +2/+4 until end of turn.
+target creature gets +3/+0 and gains first strike until end of turn.
+target creature gets +3/+0 and gains haste until end of turn.
+target creature gets +3/+0 and gains trample until end of turn.
 target creature gets -3/-0 until end of turn.
 target creature gets +3/+0 until end of turn.
+target creature gets +3/+1 and gains trample until end of turn.
 target creature gets -3/-1 until end of turn.
+target creature gets +3/+3 and gains double strike until end of turn.
+target creature gets +3/+3 and gains first strike until end of turn.
+target creature gets +3/+3 and gains flying until end of turn.
+target creature gets +3/+3 and gains trample until end of turn.
 target creature gets -3/-3 until end of turn.
 target creature gets +3/+3 until end of turn.
 target creature gets +4/+0 until end of turn.
+target creature gets +4/+2 and gains trample until end of turn.
 target creature gets +4/+2 until end of turn.
 target creature gets -4/-4 until end of turn.
 target creature gets +4/-4 until end of turn.
 target creature gets +4/+4 until end of turn.
+target creature gets +5/+0 and gains haste until end of turn.
 target creature gets -5/-0 until end of turn.
+target creature gets +5/+5 and gains shroud until end of turn.
 target creature gets -5/-5 until end of turn.
 target creature gets -7/-0 until end of turn.
 target creature gets +7/+7 until end of turn.
@@ -1417,6 +1461,8 @@ target creature gets -x/-x until end of turn.
 target creature gets +x/+x until end of turn.
 target creature loses flying until end of turn.
 target creature loses shadow until end of turn.
+target creature you control gets +0/+1 and gains hexproof until end of turn.
+target creature you control gets +1/+1 and gains hexproof until end of turn.
 target creature you control gets +2/+0 until end of turn.
 target nonblack creature gets -1/-1 until end of turn.
 target opponent discards a card at random.
@@ -1751,7 +1797,9 @@ when @ enters the battlefield, target creature gains flying until end of turn.
 when @ enters the battlefield, target creature gets +0/+3 until end of turn.
 when @ enters the battlefield, target creature gets -1/-1 until end of turn.
 when @ enters the battlefield, target creature gets +1/+1 until end of turn.
+when @ enters the battlefield, target creature gets +2/+0 and gains haste until end of turn.
 when @ enters the battlefield, target creature gets +2/+0 until end of turn.
+when @ enters the battlefield, target creature gets +2/+2 and gains flying until end of turn.
 when @ enters the battlefield, target creature gets -2/-2 until end of turn.
 when @ enters the battlefield, target creature gets +2/+2 until end of turn.
 when @ enters the battlefield, target creature gets +3/+3 until end of turn.
@@ -1993,6 +2041,7 @@ wither
 {x}: equipped creature gets +x/+0 until end of turn.
 {x}{g}{g}: @ deals x damage to each creature with flying.
 {x}{g}, {t}: @ deals x damage to target creature with flying.
+{x}{r}{g}, {t}: target creature gets +x/+0 and gains trample until end of turn.
 {x}{r}, sacrifice @: @ deals x damage to target creature.
 {x}{r}, {t}, sacrifice @: @ deals x damage to target creature or player.
 {x}, {t}, remove x charge counters from @: @ deals x damage to target creature or player.
