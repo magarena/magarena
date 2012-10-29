@@ -247,6 +247,21 @@
 {8}, {t}: target creature gets +6/+6 until end of turn.
 affinity for artifacts
 @ attacks each turn if able.
+at the beginning of your upkeep, @ deals 5 damage to target creature or player.
+at the beginning of your upkeep, destroy all artifacts and enchantments. they can't be regenerated.
+at the beginning of your upkeep, draw a card.
+at the beginning of your upkeep, put a +1/+1 counter on @.
+at the beginning of your upkeep, put a spore counter on @.
+at the beginning of your upkeep, remove a -1/-1 counter from @.
+at the beginning of your upkeep, remove a depletion counter from @.
+at the beginning of your upkeep, return a creature you control to its owner's hand.
+at the beginning of your upkeep, return a permanent you control to its owner's hand.
+at the beginning of your upkeep, return target creature card from your graveyard to the battlefield.
+at the beginning of your upkeep, sacrifice a creature.
+at the beginning of your upkeep, sacrifice a nonblack creature.
+at the beginning of your upkeep, sacrifice a permanent.
+at the beginning of your upkeep, tap target creature.
+at the beginning of your upkeep, target player loses 1 life.
 {b}{b}: draw a card.
 {b}{b}: @ gets +1/+0 until end of turn.
 {b}{b}: return @ to its owner's hand.
