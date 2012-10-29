@@ -783,36 +783,70 @@ enchanted artifact doesn't untap during its controller's untap step.
 enchanted creature doesn't untap during its controller's untap step.
 enchanted creature gets -0/-1.
 enchanted creature gets +0/+1.
+enchanted creature gets +0/+1 and has flying.
 enchanted creature gets +0/+2.
+enchanted creature gets +0/+2 and has reach.
+enchanted creature gets +0/+3 and has reach.
 enchanted creature gets +0/+4.
 enchanted creature gets -1/-0.
 enchanted creature gets +1/+0.
+enchanted creature gets +1/+0 and has fear.
+enchanted creature gets +1/+0 and has first strike.
+enchanted creature gets +1/+0 and has trample.
 enchanted creature gets -1/-1.
 enchanted creature gets -1/+1.
 enchanted creature gets +1/-1.
 enchanted creature gets +1/+1.
+enchanted creature gets -1/-1 and has fear.
+enchanted creature gets +1/+1 and has first strike.
+enchanted creature gets +1/+1 and has flanking.
+enchanted creature gets +1/+1 and has flying.
+enchanted creature gets +1/+1 and has mountainwalk.
+enchanted creature gets +1/+1 and has protection from creatures.
+enchanted creature gets +1/+1 and has reach.
+enchanted creature gets +1/+1 and has trample.
+enchanted creature gets +1/+1 and has vigilance.
 enchanted creature gets +1/+2.
+enchanted creature gets +1/+2 and has flying.
+enchanted creature gets +1/+2 and has protection from black.
+enchanted creature gets +1/+2 and has vigilance.
 enchanted creature gets +1/+3.
 enchanted creature gets -13/-0.
+enchanted creature gets +1/+3 and has flying.
 enchanted creature gets +1/+5.
 enchanted creature gets -2/-0.
 enchanted creature gets +2/+0.
+enchanted creature gets +2/+0 and has flying.
+enchanted creature gets +2/+0 and has trample.
 enchanted creature gets -2/-1.
 enchanted creature gets +2/-1.
 enchanted creature gets +2/+1.
+enchanted creature gets +2/+1 and has protection from white.
 enchanted creature gets -2/-2.
 enchanted creature gets +2/-2.
 enchanted creature gets +2/+2.
+enchanted creature gets +2/+2 and has flying.
+enchanted creature gets +2/+2 and has haste.
+enchanted creature gets +2/+2 and has lifelink.
+enchanted creature gets +2/+2 and has mountainwalk.
+enchanted creature gets +2/+2 and has trample.
+enchanted creature gets +2/+2 and has vigilance.
 enchanted creature gets +2/+5.
 enchanted creature gets -3/-0.
+enchanted creature gets +3/+0 and has first strike.
 enchanted creature gets +3/-1.
 enchanted creature gets +3/+1.
 enchanted creature gets +3/+2.
 enchanted creature gets +3/-3.
 enchanted creature gets +3/+3.
+enchanted creature gets +3/+3 and has flying.
+enchanted creature gets +3/+3 and has trample.
+enchanted creature gets +3/+3 and has vigilance.
 enchanted creature gets +4/+0.
 enchanted creature gets -4/-1.
+enchanted creature gets +5/+5 and has trample.
 enchanted creature gets +6/+6.
+enchanted creature gets +8/+8 and has trample.
 enchanted creature has defender.
 enchanted creature has double strike.
 enchanted creature has fear.
@@ -879,20 +913,40 @@ equip {4}
 equip {5}
 equip {6}
 equipped creature doesn't untap during its controller's untap step.
+equipped creature gets +0/+2 and has reach.
+equipped creature gets +0/+2 and has vigilance.
 equipped creature gets +0/+3.
+equipped creature gets +0/+3 and has vigilance.
 equipped creature gets +0/+6.
 equipped creature gets +1/+0.
+equipped creature gets +1/+0 and has first strike.
+equipped creature gets +1/+0 and has flying.
+equipped creature gets +1/+0 and has vigilance.
+equipped creature gets +1/+0 and has wither.
 equipped creature gets +1/-1.
 equipped creature gets +1/+1.
+equipped creature gets +1/+1 and has deathtouch.
+equipped creature gets +1/+1 and has haste.
+equipped creature gets +1/+1 and has trample.
 equipped creature gets +1/+2.
+equipped creature gets +1/+2 and has hexproof.
 equipped creature gets +1/+5.
 equipped creature gets +2/+0.
+equipped creature gets +2/+0 and has first strike.
+equipped creature gets +2/+0 and has shroud.
 equipped creature gets +2/+1.
+equipped creature gets +2/+1 and has haste.
 equipped creature gets +2/+2.
+equipped creature gets +2/+2 and has flying.
+equipped creature gets +2/+2 and has infect.
+equipped creature gets +2/+4 and has reach.
 equipped creature gets +3/+0.
+equipped creature gets +3/+0 and has trample.
 equipped creature gets +3/+1.
+equipped creature gets +3/+1 and has haste.
 equipped creature gets +3/+2.
 equipped creature gets +3/+3.
+equipped creature gets +3/+3 and has first strike.
 equipped creature gets +4/+0.
 equipped creature gets +4/-1.
 equipped creature gets +4/+2.

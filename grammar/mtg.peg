@@ -344,7 +344,7 @@ Enchant
     ;
 
 GainsAction
-    = SelectCreature " has " Keyword " until end of turn"?
+    = (SelectCreature SPACE)? "has " Keyword " until end of turn"?
     / SelectCreature " have " Keyword " until end of turn"?
     / SelectCreature " gains " Keyword " until end of turn"?
     / SelectCreature " gain " Keyword " until end of turn"?
