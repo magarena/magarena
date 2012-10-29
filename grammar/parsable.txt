@@ -336,6 +336,14 @@ at the beginning of your upkeep, sacrifice a nonblack creature.
 at the beginning of your upkeep, sacrifice a permanent.
 at the beginning of your upkeep, tap target creature.
 at the beginning of your upkeep, target player loses 1 life.
+at the beginning of your upkeep, you may draw two cards.
+at the beginning of your upkeep, you may put a +1/+1 counter on @.
+at the beginning of your upkeep, you may put a +1/+1 counter on target creature you control.
+at the beginning of your upkeep, you may put a charge counter on @.
+at the beginning of your upkeep, you may put a charge counter on target artifact.
+at the beginning of your upkeep, you may put a charge counter on target permanent you control.
+at the beginning of your upkeep, you may return target artifact card from your graveyard to the battlefield.
+at the beginning of your upkeep, you may return target creature card from your graveyard to the battlefield.
 {b}{b}: counter target green spell.
 {b}{b}: draw a card.
 {b}{b}: @ gets +1/+0 until end of turn.
@@ -1232,6 +1240,9 @@ when @ dies, you gain 1 life.
 when @ dies, you gain 2 life.
 when @ dies, you gain 3 life.
 when @ dies, you gain 4 life.
+when @ dies, you may draw a card.
+when @ dies, you may put a -1/-1 counter on target creature.
+when @ dies, you may put it on top of its owner's library.
 when @ enters the battlefield, add one mana of any color to your mana pool.
 when @ enters the battlefield, add {r} to your mana pool.
 when @ enters the battlefield, counter target spell.
@@ -1315,6 +1326,23 @@ when @ enters the battlefield, you gain 3 life.
 when @ enters the battlefield, you gain 4 life.
 when @ enters the battlefield, you gain 5 life.
 when @ enters the battlefield, you gain 7 life.
+when @ enters the battlefield, you may destroy target artifact.
+when @ enters the battlefield, you may destroy target creature with flying.
+when @ enters the battlefield, you may destroy target enchantment.
+when @ enters the battlefield, you may destroy target equipment.
+when @ enters the battlefield, you may destroy target nonblack creature.
+when @ enters the battlefield, you may exile target artifact or enchantment.
+when @ enters the battlefield, you may return target artifact card from your graveyard to the battlefield.
+when @ enters the battlefield, you may return target artifact card from your graveyard to your hand.
+when @ enters the battlefield, you may return target card from your graveyard to your hand.
+when @ enters the battlefield, you may return target creature card from your graveyard to your hand.
+when @ enters the battlefield, you may return target creature to its owner's hand.
+when @ enters the battlefield, you may return target instant card from your graveyard to your hand.
+when @ enters the battlefield, you may return target instant or sorcery card from your graveyard to your hand.
+when @ enters the battlefield, you may return target land to its owner's hand.
+when @ enters the battlefield, you may return target sorcery card from your graveyard to your hand.
+when @ enters the battlefield, you may return target tapped creature to its owner's hand.
+when @ enters the battlefield, you may tap target creature.
 whenever @ attacks, it gets +0/+2 until end of turn.
 whenever @ attacks, it gets +0/+3 until end of turn.
 whenever @ attacks, it gets +1/+1 until end of turn.
@@ -1328,6 +1356,7 @@ whenever @ attacks, put a +1/+1 counter on it.
 whenever @ attacks, tap all artifacts.
 whenever @ attacks, target creature gets +0/+3 until end of turn.
 whenever @ attacks, target creature you control gains flying until end of turn.
+whenever @ attacks, you may tap target creature.
 whenever @ deals combat damage, sacrifice a permanent.
 whenever @ deals combat damage to a player, draw a card.
 whenever @ deals combat damage to a player, put a +1/+1 counter on it.
@@ -1335,33 +1364,46 @@ whenever @ deals combat damage to a player, put a charge counter on it.
 whenever @ deals combat damage to a player, put two +1/+1 counters on it.
 whenever @ deals combat damage to a player, that player discards a card.
 whenever @ deals combat damage to a player, that player discards a card at random.
+whenever @ deals combat damage to a player, you may draw a card.
+whenever @ deals combat damage to a player, you may return target creature card from your graveyard to your hand.
+whenever @ deals combat damage to a player, you may untap target creature.
 whenever @ deals combat damage, you gain that much life.
 whenever @ deals damage to a player, that player discards a card.
+whenever @ deals damage to a player, you may draw a card.
 whenever @ deals damage, you gain that much life.
 whenever you cast a black spell, @ gains fear until end of turn.
 whenever you cast a black spell, @ gets +1/+1 until end of turn.
 whenever you cast a black spell, remove a -1/-1 counter from @.
+whenever you cast a black spell, you may untap @.
 whenever you cast a blue spell, @ gains flying until end of turn.
 whenever you cast a blue spell, @ gets +1/+1 until end of turn.
 whenever you cast a blue spell, remove a -1/-1 counter from @.
 whenever you cast a blue spell, target creature gains flying until end of turn.
+whenever you cast a blue spell, you may untap @.
 whenever you cast a creature spell, put a +1/+1 counter on @.
 whenever you cast a creature spell, put a 1/1 green saproling creature token onto the battlefield.
 whenever you cast a creature spell, tap target creature.
+whenever you cast a creature spell, you may draw a card.
 whenever you cast a green spell, @ gains forestwalk until end of turn.
 whenever you cast a green spell, @ gets +1/+1 until end of turn.
 whenever you cast a green spell, remove a -1/-1 counter from @.
+whenever you cast a green spell, you may untap @.
 whenever you cast a multicolored spell, @ deals 2 damage to target creature or player.
 whenever you cast a multicolored spell, @ gets +3/+3 until end of turn.
 whenever you cast a multicolored spell, untap @.
 whenever you cast an enchantment spell, draw a card.
+whenever you cast an enchantment spell, you may draw a card.
 whenever you cast a red spell, @ gains first strike until end of turn.
 whenever you cast a red spell, @ gets +1/+1 until end of turn.
 whenever you cast a red spell, remove a -1/-1 counter from @.
+whenever you cast a red spell, you may untap @.
 whenever you cast a spell, equipped creature gets +2/+2 until end of turn.
 whenever you cast a spell, return target permanent to its owner's hand.
 whenever you cast a spell, you gain 1 life.
 whenever you cast a spell, you gain 2 life.
+whenever you cast a spell, you may put two +1/+1 counters on @.
+whenever you cast a spell, you may return @ to its owner's hand.
+whenever you cast a spell, you may untap @.
 whenever you cast a spirit or arcane spell, @ gains flying until end of turn.
 whenever you cast a spirit or arcane spell, @ gains forestwalk until end of turn.
 whenever you cast a spirit or arcane spell, @ gets +1/+1 until end of turn.
@@ -1372,6 +1414,10 @@ whenever you cast a spirit or arcane spell, target creature gains fear until end
 whenever you cast a spirit or arcane spell, target creature gains flying until end of turn.
 whenever you cast a spirit or arcane spell, target opponent loses 1 life and you gain 1 life.
 whenever you cast a spirit or arcane spell, untap @.
+whenever you cast a spirit or arcane spell, you may destroy target nonbasic land.
+whenever you cast a spirit or arcane spell, you may draw a card.
+whenever you cast a spirit or arcane spell, you may put a ki counter on @.
+whenever you cast a spirit or arcane spell, you may return @ to its owner's hand.
 whenever you cast a treefolk spell, @ gets +2/+2 until end of turn.
 whenever you cast a vampire creature spell, it gains bloodthirst 3.
 whenever you cast a white, blue, black, or red spell, put a +1/+1 counter on @.
@@ -1379,6 +1425,8 @@ whenever you cast a white spell, @ gains vigilance until end of turn.
 whenever you cast a white spell, @ gets +1/+1 until end of turn.
 whenever you cast a white spell, remove a -1/-1 counter from @.
 whenever you cast a white spell, you gain 3 life.
+whenever you cast a white spell, you may tap target creature.
+whenever you cast a white spell, you may untap @.
 when @ leaves the battlefield, draw a card.
 when @ leaves the battlefield, return the exiled card to the battlefield under its owner's control.
 when @ leaves the battlefield, sacrifice a creature.

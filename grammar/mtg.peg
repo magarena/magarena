@@ -7,7 +7,7 @@ MagicRule
     ;
 
 SpellEffect
-    = Action EOS (SPACE Action EOS)*
+    = "you may "? Action EOS (SPACE Action EOS)*
     ;
 
 KeywordAbility
