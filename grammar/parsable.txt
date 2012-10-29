@@ -363,6 +363,7 @@
 {8}, {t}: target creature gets +6/+6 until end of turn.
 {8}, {t}: you gain 10 life.
 affinity for artifacts
+all creatures gain fear until end of turn.
 all creatures get -1/-0.
 all creatures get -1/-0 until end of turn.
 all creatures get -1/-1.
@@ -372,6 +373,15 @@ all creatures get -2/-0 until end of turn.
 all creatures get +2/+2.
 all creatures get -2/-2 until end of turn.
 all creatures get -5/-0.
+all creatures have exalted.
+all creatures have forestwalk.
+all creatures have haste.
+all creatures have protection from black.
+all creatures have protection from red.
+all creatures have vigilance.
+all creatures have wither.
+all creatures lose flying.
+all creatures lose flying until end of turn.
 @ attacks each turn if able.
 at the beginning of the end step, return @ to its owner's hand.
 at the beginning of the end step, sacrifice @.
@@ -709,6 +719,7 @@ enchanted creature has swampwalk.
 enchanted creature has trample.
 enchanted creature has vigilance.
 enchanted creature loses flying.
+enchanted creatures you control have shroud.
 enchanted permanent doesn't untap during its controller's untap step.
 enchant enchantment
 enchant equipment
@@ -912,7 +923,10 @@ other creatures you control get +0/+1.
 other creatures you control get -1/-1.
 other creatures you control get +1/+1.
 other creatures you control get +2/+2.
+other creatures you control have exalted.
+other creatures you control have intimidate.
 other green creatures you control get +1/+1.
+other green creatures you control have intimidate.
 other human creatures you control get +1/+1.
 other nonblack creatures you control get +1/+1.
 other red creatures you control get +1/+1.
@@ -1573,6 +1587,8 @@ whenever @ attacks, put a +1/+1 counter on it.
 whenever @ attacks, tap all artifacts.
 whenever @ attacks, target creature gets +0/+3 until end of turn.
 whenever @ attacks, target creature you control gains flying until end of turn.
+whenever @ attacks, you may have target creature gain flying until end of turn.
+whenever @ attacks, you may have target creature lose flying until end of turn.
 whenever @ attacks, you may tap target creature.
 whenever @ deals combat damage, sacrifice a permanent.
 whenever @ deals combat damage to a player, draw a card.
