@@ -1416,6 +1416,7 @@ tap an untapped creature you control: @ gains flying until end of turn.
 tap an untapped creature you control: @ gets +1/+1 until end of turn.
 tap an untapped creature you control: tap target artifact, creature, or land.
 tap an untapped creature you control: tap target artifact or creature.
+tap an untapped creature you control: untap target basic land.
 tap target artifact, creature, or land.
 tap target creature.
 tap target creature. it doesn't untap during its controller's next untap step.
