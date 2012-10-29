@@ -194,6 +194,7 @@
 {2}, sacrifice a permanent: return target creature to its owner's hand.
 {2}, sacrifice @: draw a card.
 {2}, {t}: add one mana of any color to your mana pool.
+{2}: target artifact creature gets +1/+1 until end of turn.
 {2}: target creature gains flying until end of turn.
 {2}: target creature you control gains flying until end of turn.
 {2}, {t}: exile target creature you control.
@@ -211,6 +212,7 @@
 {2}, {t}: target creature gains flying until end of turn.
 {2}, {t}: you gain 1 life.
 {2}{u}, discard a card: return @ to its owner's hand.
+{2}: untap target artifact creature.
 {2}{u}, sacrifice a land: draw a card.
 {2}{u}: tap target creature with flying.
 {2}{u}, {t}: target creature gets -2/-0 until end of turn.
@@ -449,6 +451,7 @@ destroy all lands.
 destroy all nonbasic lands.
 destroy all tapped creatures.
 destroy target artifact.
+destroy target artifact creature.
 destroy target artifact, enchantment, or land.
 destroy target artifact. it can't be regenerated.
 destroy target artifact or creature. it can't be regenerated.
@@ -518,6 +521,7 @@ draw three cards.
 draw two cards.
 draw x cards.
 enchant artifact
+enchant artifact creature
 enchant creature
 enchant creature you control
 enchanted creature gets -0/-1.
@@ -842,6 +846,7 @@ return target sorcery card from your graveyard to your hand.
 {r}{r}: @ gains first strike until end of turn.
 {r}{r}: @ gains flying until end of turn.
 {r}{r}{r}: regenerate @.
+{r}{r}{r}, {t}: destroy target artifact creature.
 {r}{r}: target creature gets +1/-1 until end of turn.
 {r}{r}, {t}: put a charge counter on @.
 {r}, sacrifice an artifact: @ gets +3/+0 until end of turn.
@@ -1348,6 +1353,7 @@ wither
 {w}{w}, {t}: return target artifact card from your graveyard to your hand.
 {w}{w}{w}: regenerate @.
 you control enchanted artifact.
+you control enchanted artifact creature.
 you control enchanted creature.
 you control enchanted enchantment.
 you control enchanted land.

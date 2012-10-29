@@ -459,6 +459,7 @@ CreatureRestriction
     / "human"
     / "non-vampire, non-werewolf, non-zombie"
     / "nonartifact"
+    / "artifact"
     / "you control"
     ;
 
