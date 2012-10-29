@@ -1234,6 +1234,7 @@ whenever @ deals combat damage to a player, draw a card.
 whenever @ deals combat damage to a player, that player discards a card.
 whenever @ deals combat damage to a player, that player discards a card at random.
 when @ leaves the battlefield, draw a card.
+when @ leaves the battlefield, return the exiled card to the battlefield under its owner's control.
 when @ leaves the battlefield, sacrifice a creature.
 when @ leaves the battlefield, sacrifice a land.
 when @ leaves the battlefield, that player gains 3 life.

@@ -215,6 +215,7 @@ SelectPlayer
 ReturnAction
     = "return " SelectCard " from your graveyard to your hand" 
     / "return " SelectCard " from your graveyard to the battlefield" 
+    / "return " SelectCard " to the battlefield under its owner's control" 
     ;
 
 BounceAction
@@ -340,6 +341,7 @@ SelectOp
     / "a"
     / "enchanted"
     / "equipped"
+    / "the"
     ;
 
 SelectCard
@@ -426,6 +428,7 @@ CardRestriction
     / "instant or sorcery"
     / "instant"
     / "sorcery"
+    / "exiled"
     ;
 
 RestrictedCreature
