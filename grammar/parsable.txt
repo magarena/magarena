@@ -1554,6 +1554,11 @@ whenever you cast a white spell, you gain 3 life.
 whenever you cast a white spell, you may tap target creature.
 whenever you cast a white spell, you may untap @.
 whenever you cast a wizard spell, you may untap @.
+when @ is put into a graveyard from the battlefield, destroy target nonblack creature.
+when @ is put into a graveyard from the battlefield, draw a card.
+when @ is put into a graveyard from the battlefield, draw three cards.
+when @ is put into a graveyard from the battlefield, exile equipped creature.
+when @ is put into a graveyard from the battlefield, return @ to its owner's hand.
 when @ leaves the battlefield, draw a card.
 when @ leaves the battlefield, return the exiled card to the battlefield under its owner's control.
 when @ leaves the battlefield, sacrifice a creature.

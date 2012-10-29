@@ -36,6 +36,7 @@ TriggeredAbility
 Trigger
     = EntersBattlefieldTrigger
     / LeavesBattlefieldTrigger
+    / EntersGraveyardTrigger
     / BeginningUpkeepTrigger
     / DiesTrigger
     / DealsDamageTrigger
@@ -177,6 +178,10 @@ CastTrigger
 
 LeavesBattlefieldTrigger
     = "when @ leaves the battlefield"
+    ;
+
+EntersGraveyardTrigger
+    = "when @ is put into a graveyard" " from the battlefield"?
     ;
 
 EntersBattlefieldTrigger
