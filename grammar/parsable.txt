@@ -29,6 +29,7 @@
 {1}{g}: add one mana of any color to your mana pool.
 {1}: @ gains first strike until end of turn.
 {1}{g}: all creatures get -1/-0 until end of turn.
+{1}{g}: @ deals 1 damage to target creature with flying.
 {1}: @ gets +0/+1 until end of turn.
 {1}: @ gets +1/+0 until end of turn.
 {1}: @ gets -1/+1 until end of turn.
@@ -43,10 +44,12 @@
 {1}{g}: regenerate @.
 {1}{g}, sacrifice @: destroy target artifact or enchantment.
 {1}{g}, sacrifice @: destroy target enchantment.
+{1}{g}, {t}: @ deals 5 damage to target attacking or blocking creature with flying.
 {1}{g}, {t}: target creature gets -2/-0 until end of turn.
 {1}{g}, {t}: target creature gets +4/+4 until end of turn.
 {1}: @ loses flying until end of turn.
 {1}, pay 2 life: @ deals 1 damage to target creature or player.
+{1}{r}: @ deals 1 damage to target creature.
 {1}{r}: @ deals 1 damage to target creature or player.
 {1}{r}, discard a card at random: @ deals 1 damage to target creature or player.
 {1}: regenerate @.
@@ -59,6 +62,7 @@
 {1}{r}: @ gets +1/+0 until end of turn.
 {1}{r}: @ gets +2/+0 until end of turn.
 {1}{r}: @ gets +3/-3 until end of turn.
+{1}{r}, remove a +1/+1 counter from @: @ deals 1 damage to target creature.
 {1}{r}, remove a +1/+1 counter from @: @ deals 1 damage to target creature or player.
 {1}{r}{r}: put a +1/+1 counter on @.
 {1}{r}{r}{r}: return @ from your graveyard to your hand.
@@ -88,6 +92,7 @@
 {1}, tap an untapped creature you control: untap enchanted creature.
 {1}: tap enchanted creature.
 {1}: target creature gains flying until end of turn.
+{1}, {t}: @ deals 1 damage to target attacking creature.
 {1}, {t}: destroy all artifacts, creatures, and enchantments.
 {1}, {t}, discard a card: you gain 4 life.
 {1}, {t}: exile target creature you control.
@@ -103,6 +108,7 @@
 {1}, {t}, sacrifice an artifact: draw a card.
 {1}, {t}, sacrifice an artifact: you gain 1 life.
 {1}, {t}, sacrifice @: @ deals 2 damage to target creature or player.
+{1}, {t}, sacrifice @: @ deals 4 damage to target artifact creature.
 {1}, {t}, sacrifice @: draw a card.
 {1}, {t}, sacrifice @: target creature gets +2/+2 until end of turn.
 {1}, {t}, tap an untapped creature you control: put a 1/1 green saproling creature token onto the battlefield.
@@ -145,6 +151,7 @@
 {1}{w}: put a +1/+1 counter on enchanted creature.
 {1}{w}, remove a +1/+1 counter from @: destroy target enchantment.
 {1}{w}: return @ to its owner's hand.
+{1}{w}, sacrifice @: @ deals 3 damage to target attacking or blocking creature.
 {1}{w}, sacrifice @: destroy target enchantment.
 {1}{w}, sacrifice @: exile target attacking creature.
 {1}{w}, sacrifice @: exile target enchantment.
@@ -168,6 +175,7 @@
 {2}{b}, sacrifice a creature: target creature gets -2/-2 until end of turn.
 {2}{b}, sacrifice @: target creature gets -1/-1 until end of turn.
 {2}{b}, {t}, discard a card: destroy target nonblack creature. it can't be regenerated.
+{2}: @ deals 1 damage to target creature.
 {2}: @ deals 1 damage to target creature or player. sacrifice @.
 {2}: discard a card.
 {2}, discard a card at random: @ deals 2 damage to target creature or player.
@@ -179,6 +187,7 @@
 {2}: @ gets +1/+0 until end of turn.
 {2}{g}: put a 1/1 green saproling creature token onto the battlefield.
 {2}{g}: regenerate @.
+{2}{g}, sacrifice @: @ deals 2 damage to target creature with flying.
 {2}{g}, {t}: target creature gets +2/+2 until end of turn.
 {2}{g}, {t}: untap target creature.
 {2}{g}{w}, {t}: put a 1/1 green saproling creature token onto the battlefield.
@@ -193,7 +202,9 @@
 {2}, return a land you control to its owner's hand: untap target land.
 {2}{r}: @ gains first strike until end of turn.
 {2}{r}{g}, discard two cards at random: @ deals 4 damage to target creature or player.
+{2}{r}, sacrifice @: @ deals 2 damage to target creature.
 {2}{r}: target creature gets +1/+0 until end of turn.
+{2}{r}, {t}: @ deals 2 damage to target creature.
 {2}{r}, {t}: destroy target nonbasic land.
 {2}{r}, {t}, discard a card: destroy target land.
 {2}{r}, {t}, put a -1/-1 counter on a creature you control: @ deals 2 damage to target creature or player.
@@ -236,6 +247,7 @@
 {2}{w}: return @ to its owner's hand.
 {2}{w}: tap target creature.
 {2}{w}: target player gains 1 life.
+{2}{w}, {t}: @ deals 2 damage to target attacking or blocking creature.
 {2}{w}, {t}: prevent the next 2 damage that would be dealt to target creature or player this turn.
 {2}{w}, {t}, sacrifice @: destroy all enchantments.
 {2}{w}, {t}, sacrifice @: destroy target artifact or enchantment.
@@ -309,6 +321,7 @@
 {4}, {t}: put a -1/-1 counter on target creature.
 {4}, {t}: put a charge counter on @.
 {4}, {t}, remove a +1/+1 counter from @: destroy target creature.
+{4}, {t}, sacrifice a creature: @ deals 4 damage to target creature.
 {4}, {t}, sacrifice a land: @ deals 1 damage to target creature or player.
 {4}, {t}: tap target creature.
 {4}: untap @.
@@ -324,6 +337,7 @@
 {7}{g}: @ gets +5/+5 until end of turn.
 {7}{w}: you gain 5 life.
 {8}: target player loses 3 life and you gain 3 life.
+{8}, {t}: @ deals 12 damage to target creature.
 {8}, {t}: @ deals 4 damage to target creature or player.
 {8}, {t}: draw four cards.
 {8}, {t}, sacrifice @: you gain 8 life.
@@ -340,6 +354,8 @@ all creatures get +2/+2.
 all creatures get -2/-2 until end of turn.
 all creatures get -5/-0.
 @ attacks each turn if able.
+at the beginning of your upkeep, @ deals 3 damage to target creature you control.
+at the beginning of your upkeep, @ deals 4 damage to enchanted creature.
 at the beginning of your upkeep, @ deals 5 damage to target creature or player.
 at the beginning of your upkeep, destroy all artifacts and enchantments. they can't be regenerated.
 at the beginning of your upkeep, draw a card.
@@ -461,11 +477,21 @@ cumulative upkeep {u}
 cumulative upkeep {u}{r}
 cumulative upkeep {w}
 @ deals 10 damage to target creature or player.
+@ deals 13 damage to target creature.
+@ deals 1 damage to target creature.
 @ deals 1 damage to target creature or player.
+@ deals 2 damage to target attacking or blocking creature.
+@ deals 2 damage to target creature.
 @ deals 2 damage to target creature or player.
+@ deals 3 damage to target attacking or blocking creature.
+@ deals 3 damage to target creature.
 @ deals 3 damage to target creature or player.
 @ deals 3 damage to target creature or player. you gain 3 life.
+@ deals 3 damage to target creature with flying.
+@ deals 3 damage to target nonblack creature. you gain 3 life.
+@ deals 4 damage to target creature.
 @ deals 4 damage to target creature or player.
+@ deals 5 damage to target creature.
 @ deals 5 damage to target creature or player.
 @ deals 7 damage to target creature or player.
 deathtouch
@@ -517,6 +543,7 @@ destroy target equipment. add {g} to your mana pool.
 destroy target green or white creature.
 destroy target human creature.
 destroy target land.
+destroy target land. @ deals 13 damage to target creature.
 destroy target land or nonblack creature.
 destroy target land or nonblack creature. it can't be regenerated.
 destroy target land. you gain 2 life.
@@ -899,6 +926,7 @@ return target sorcery card from your graveyard to your hand.
 {r}{r}{r}: regenerate @.
 {r}{r}{r}, {t}: destroy target artifact creature.
 {r}{r}: target creature gets +1/-1 until end of turn.
+{r}{r}, {t}: @ deals 2 damage to target creature.
 {r}{r}, {t}: put a charge counter on @.
 {r}, sacrifice an artifact: @ gets +3/+0 until end of turn.
 {r}, sacrifice @: @ deals 2 damage to target creature or player.
@@ -908,6 +936,7 @@ return target sorcery card from your graveyard to your hand.
 {r}: target creature gains haste until end of turn.
 {r}: target creature gets +1/+0 until end of turn.
 {r}: target creature you control gains haste until end of turn.
+{r}, {t}: @ deals 1 damage to target attacking or blocking creature.
 {r}, {t}: @ deals 1 damage to target creature or player.
 {r}, {t}, discard a card: @ deals 1 damage to target creature or player.
 {r}, {t}, discard a card: destroy target wall.
@@ -917,6 +946,7 @@ return target sorcery card from your graveyard to your hand.
 {r}: untap @.
 {r/w}: @ gets +1/+0 until end of turn.
 {r}{w}: @ gets +1/+1 until end of turn.
+{r}{w}, {t}: @ deals 2 damage to target attacking or blocking creature.
 sacrifice a creature: add one mana of any color to your mana pool.
 sacrifice a creature: add {r} to your mana pool.
 sacrifice a creature: @ deals 1 damage to target creature or player.
@@ -957,6 +987,8 @@ sacrifice an enchantment: @ gets +1/+1 until end of turn.
 sacrifice an enchantment: @ gets +2/+2 until end of turn.
 sacrifice an untapped creature: enchanted creature gets +2/+0 until end of turn.
 sacrifice a permanent: return target creature to its owner's hand.
+sacrifice @: @ deals 1 damage to target attacking or blocking creature.
+sacrifice @: @ deals 1 damage to target creature.
 sacrifice @: @ deals 1 damage to target creature or player.
 sacrifice @: @ deals 2 damage to target creature or player.
 sacrifice @: destroy target artifact or enchantment.
@@ -1082,8 +1114,16 @@ target player loses 2 life and you gain 2 life.
 target player loses 4 life and you gain 4 life.
 target player loses 5 life.
 target player loses 5 life and you gain 5 life.
+{t}: @ deals 1 damage to target attacking or blocking creature.
+{t}: @ deals 1 damage to target creature.
 {t}: @ deals 1 damage to target creature or player.
+{t}: @ deals 1 damage to target creature with flying.
+{t}: @ deals 2 damage to target attacking or blocking creature.
+{t}: @ deals 2 damage to target creature.
+{t}: @ deals 2 damage to target creature with flying.
+{t}: @ deals 3 damage to target attacking or blocking creature.
 {t}: @ deals 3 damage to target creature or player.
+{t}: @ deals 4 damage to target attacking creature with flying.
 {t}: destroy target creature. it can't be regenerated.
 {t}: destroy target creature or land.
 {t}: destroy target creature with power 4 or greater.
@@ -1130,6 +1170,8 @@ trample
 {t}, sacrifice an artifact: @ deals 2 damage to target creature or player.
 {t}, sacrifice an artifact: draw a card.
 {t}, sacrifice @: counter target spell.
+{t}, sacrifice @: @ deals 2 damage to target attacking or blocking creature.
+{t}, sacrifice @: @ deals 3 damage to target attacking or blocking creature.
 {t}, sacrifice @: destroy target attacking creature.
 {t}, sacrifice @: destroy target attacking or blocking creature with flying.
 {t}, sacrifice @: destroy target land.
@@ -1442,6 +1484,7 @@ whenever you cast a spell, you gain 2 life.
 whenever you cast a spell, you may put two +1/+1 counters on @.
 whenever you cast a spell, you may return @ to its owner's hand.
 whenever you cast a spell, you may untap @.
+whenever you cast a spirit or arcane spell, @ deals 1 damage to target creature.
 whenever you cast a spirit or arcane spell, @ gains flying until end of turn.
 whenever you cast a spirit or arcane spell, @ gains forestwalk until end of turn.
 whenever you cast a spirit or arcane spell, @ gets +1/+1 until end of turn.
@@ -1490,6 +1533,7 @@ wither
 {w}: target creature gains first strike until end of turn.
 {w}: target creature gains protection from black until end of turn.
 {w}: target creature gains protection from red until end of turn.
+{w}, {t}: @ deals 1 damage to target attacking or blocking creature.
 {w}, {t}, discard a card: target player gains 3 life.
 {w}, {t}: @ gets +0/+3 until end of turn.
 {w}, {t}: prevent the next 1 damage that would be dealt to target creature or player this turn.

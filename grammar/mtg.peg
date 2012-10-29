@@ -253,7 +253,7 @@ RegenerateAction
     ;
 
 DamageAction
-    = "@ deals " Number " damage to target creature or player"
+    = "@ deals " Number " damage to " SelectCreature " or player"?
     ;
 
 EntersTapped
