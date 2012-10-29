@@ -34,6 +34,7 @@ TriggeredAbility
 
 Trigger
     = EntersBattlefieldTrigger
+    / LeavesBattlefieldTrigger
     / BeginningUpkeepTrigger
     / DiesTrigger
     / DealsCombatDamageTrigger
@@ -163,6 +164,11 @@ ManaCost
     = ColorlessCost MonoSingleCost*
     / MonoSingleCost+
     / HybridSingleCost+
+    ;
+
+
+LeavesBattlefieldTrigger
+    = "when @ leaves the battlefield"
     ;
 
 EntersBattlefieldTrigger
