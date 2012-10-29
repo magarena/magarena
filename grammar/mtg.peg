@@ -7,7 +7,11 @@ MagicRule
     ;
 
 SpellEffect
-    = (Optional SPACE)? (SelectPlayer SPACE)? Action EOS (SPACE (SelectPlayer SPACE)? Action EOS)*
+    = SingleEffect (SPACE SingleEffect)*
+    ;
+
+SingleEffect
+    = (Optional SPACE)? (SelectPlayer SPACE)? Action EOS
     ;
 
 Optional
