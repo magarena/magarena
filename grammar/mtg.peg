@@ -88,6 +88,8 @@ Keyword
     / "Living weapon"
     / "Totem armor"
     / "Bushido" SPACE Number
+    / "Soulshift" SPACE Number
+    / "Fading" SPACE Number
     / "Modular" SPACE Number
     / "Vanishing" SPACE Number
     / "Bloodthirst" SPACE Number

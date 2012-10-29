@@ -496,6 +496,12 @@ Exile target creature.
 Exile target creature or enchantment.
 Exile target enchantment.
 Exile target land.
+Fading 1
+Fading 2
+Fading 3
+Fading 4
+Fading 5
+Fading 7
 Fear
 First strike
 Flanking
@@ -720,6 +726,14 @@ Sacrifice @: Target player loses 1 life and you gain 1 life.
 Shadow
 Shroud
 Soulbond
+Soulshift 1
+Soulshift 2
+Soulshift 3
+Soulshift 4
+Soulshift 5
+Soulshift 6
+Soulshift 7
+Soulshift 8
 Storm
 Swampwalk
 {T}: Add {1} to your mana pool.
