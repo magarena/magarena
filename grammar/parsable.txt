@@ -386,6 +386,7 @@ at the beginning of your upkeep, you may put a charge counter on target permanen
 at the beginning of your upkeep, you may return @ from your graveyard to your hand.
 at the beginning of your upkeep, you may return target artifact card from your graveyard to the battlefield.
 at the beginning of your upkeep, you may return target creature card from your graveyard to the battlefield.
+battle cry
 {b}{b}: counter target green spell.
 {b}{b}: draw a card.
 {b}{b}: @ gets +1/+0 until end of turn.
@@ -848,6 +849,13 @@ modular 3
 modular 4
 modular 6
 mountainwalk
+other artifact creatures you control get +1/+1.
+other creatures you control get +0/+1.
+other creatures you control get -1/-1.
+other creatures you control get +1/+1.
+other creatures you control get +2/+2.
+other human creatures you control get +1/+1.
+other nonblack creatures you control get +1/+1.
 pay 1 life: draw a card.
 pay 1 life: @ gets +1/+1 until end of turn.
 pay 1 life: @ gets +2/-1 until end of turn.

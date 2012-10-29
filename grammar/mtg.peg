@@ -73,6 +73,7 @@ Keyword
     / "defender"
     / "vigilance"
     / "reach"
+    / "battle cry"
     / "trample"
     / "first strike"
     / "double strike"
@@ -361,6 +362,7 @@ SelectOp
     / "enchanted"
     / "equipped"
     / "the"
+    / "other"
     ;
 
 SelectCard
