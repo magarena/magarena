@@ -589,6 +589,7 @@ SignedNumber
 Number 
     = [0-9]+
     / "that much"
+    / "x"
     ;
 
 Sign

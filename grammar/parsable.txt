@@ -105,6 +105,7 @@
 {1}, {t}: put a charge counter on @.
 {1}, {t}: put a storage counter on @.
 {1}, {t}, remove a charge counter from @: put a charge counter on target artifact.
+{1}, {t}, remove x ki counters from @: target creature gets -x/-x until end of turn.
 {1}, {t}, sacrifice a creature: @ deals 2 damage to target creature or player.
 {1}, {t}, sacrifice a creature: return target artifact card from your graveyard to your hand.
 {1}, {t}, sacrifice @: add one mana of any color to your mana pool.
@@ -382,6 +383,7 @@ all creatures get -2/-0 until end of turn.
 all creatures get +2/+2.
 all creatures get -2/-2 until end of turn.
 all creatures get -5/-0.
+all creatures get +x/-x until end of turn.
 all creatures have exalted.
 all creatures have forestwalk.
 all creatures have haste.
@@ -484,6 +486,7 @@ bloodthirst 1
 bloodthirst 2
 bloodthirst 3
 bloodthirst 6
+bloodthirst x
 blue creatures get +1/+1.
 {b}, pay 1 life: add one mana of any color to your mana pool.
 {b}, pay 1 life: @ gets +1/+1 until end of turn.
@@ -618,6 +621,11 @@ cumulative upkeep {w}
 @ deals 5 damage to target creature.
 @ deals 5 damage to target creature or player.
 @ deals 7 damage to target creature or player.
+@ deals x damage to each creature.
+@ deals x damage to each creature with flying.
+@ deals x damage to target creature.
+@ deals x damage to target creature or player.
+@ deals x damage to target creature or player. you gain x life.
 deathtouch
 defender
 destroy all artifacts.
@@ -1246,6 +1254,7 @@ tap target artifact, creature, or land.
 tap target creature.
 tap target creature. it doesn't untap during its controller's next untap step.
 tap target permanent.
+target attacking creature gets +x/+0 until end of turn.
 target creature gains deathtouch until end of turn.
 target creature gains double strike until end of turn.
 target creature gains fear until end of turn.
@@ -1282,6 +1291,9 @@ target creature gets -5/-0 until end of turn.
 target creature gets -5/-5 until end of turn.
 target creature gets -7/-0 until end of turn.
 target creature gets +7/+7 until end of turn.
+target creature gets +x/+0 until end of turn.
+target creature gets -x/-x until end of turn.
+target creature gets +x/+x until end of turn.
 target creature loses flying until end of turn.
 target creature loses shadow until end of turn.
 target creature you control gets +2/+0 until end of turn.
@@ -1304,6 +1316,7 @@ target player gains 5 life.
 target player gains 6 life.
 target player gains 7 life.
 target player gains 8 life.
+target player gains x life.
 target player loses 1 life and you gain 1 life.
 target player loses 2 life and you gain 2 life.
 target player loses 4 life and you gain 4 life.
@@ -1359,6 +1372,7 @@ trample
 {t}, remove a charge counter from @: tap target artifact or creature.
 {t}, remove a charge counter from @: target player loses 2 life.
 {t}, remove three charge counters from @: destroy target permanent.
+{t}, remove x charge counters from @: target creature gets -x/-x until end of turn.
 {t}, sacrifice a creature: @ deals 1 damage to target creature or player.
 {t}, sacrifice a creature: destroy target nonblack creature.
 {t}, sacrifice a creature: put a charge counter on @.
@@ -1827,7 +1841,17 @@ wither
 {w}{w}, {t}: put a charge counter on @.
 {w}{w}, {t}: return target artifact card from your graveyard to your hand.
 {w}{w}{w}: regenerate @.
+{x}{b}, {t}, discard a card: target creature gets +x/+0 until end of turn.
+{x}: equipped creature gets +x/+0 until end of turn.
+{x}{g}{g}: @ deals x damage to each creature with flying.
+{x}{g}, {t}: @ deals x damage to target creature with flying.
+{x}{r}, sacrifice @: @ deals x damage to target creature.
+{x}{r}, {t}, sacrifice @: @ deals x damage to target creature or player.
+{x}, {t}, remove x charge counters from @: @ deals x damage to target creature or player.
+{x}, {t}: target creature gets -x/+x until end of turn.
+{x}, {t}: you gain x life.
 {x}{u}{u}, {t}: return target creature with converted mana cost x to its owner's hand.
+{x}{w}, {t}: @ deals x damage to target attacking or blocking creature.
 you control enchanted artifact.
 you control enchanted artifact creature.
 you control enchanted creature.
@@ -1844,6 +1868,7 @@ you gain 5 life.
 you gain 6 life.
 you gain 7 life.
 you gain 8 life.
+you gain x life.
 you may tap or untap target artifact, creature, or land.
 you may tap or untap target creature.
 you may tap or untap target permanent.
