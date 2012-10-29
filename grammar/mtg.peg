@@ -35,6 +35,7 @@ TriggeredAbility
 Trigger
     = EntersBattlefieldTrigger
     / BeginningUpkeepTrigger
+    / DiesTrigger
     ;
 
 Action
@@ -168,6 +169,10 @@ EntersBattlefieldTrigger
 
 BeginningUpkeepTrigger
     = "at the beginning of your upkeep"
+    ;
+
+DiesTrigger
+    = "when @ dies"
     ;
 
 PutTokenAction
