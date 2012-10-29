@@ -350,11 +350,13 @@ SelectCard
 
 SelectCreature
     = "@"
+    / "it"
     / SelectOp SPACE RestrictedCreature
     ;
 
 SelectPermanent
     = "@"
+    / "it"
     / SelectOp SPACE RestrictedPermanentCombination
     ;
 

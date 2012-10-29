@@ -792,6 +792,7 @@ return target attacking creature to its owner's hand.
 return target card from your graveyard to your hand.
 return target card from your graveyard to your hand. exile @.
 return target creature card from your graveyard to the battlefield.
+return target creature card from your graveyard to the battlefield. put a +1/+1 counter on it.
 return target creature card from your graveyard to your hand.
 return target creature to its owner's hand.
 return target instant or sorcery card from your graveyard to your hand.
@@ -940,6 +941,7 @@ target creature gains double strike until end of turn.
 target creature gains fear until end of turn.
 target creature gains first strike until end of turn.
 target creature gains flying until end of turn.
+target creature gains flying until end of turn. untap it.
 target creature gains haste until end of turn.
 target creature gains protection from artifacts until end of turn.
 target creature gains shadow until end of turn.
@@ -1094,6 +1096,8 @@ untap all artifacts.
 untap all creatures you control.
 untap all lands you control.
 untap target artifact, creature, or land.
+untap target creature. it gets +2/+4 until end of turn.
+untap target creature. it gets +3/+3 until end of turn.
 untap target permanent.
 {u}{r}: @ deals 1 damage to target creature or player.
 {u}: regenerate @.
@@ -1148,8 +1152,10 @@ when @ dies, destroy target wall.
 when @ dies, discard a card.
 when @ dies, draw a card.
 when @ dies, exile all creatures.
+when @ dies, exile it.
 when @ dies, exile target permanent.
 when @ dies, put a 1/1 green saproling creature token onto the battlefield.
+when @ dies, return it to its owner's hand.
 when @ dies, return @ to its owner's hand.
 when @ dies, target creature gets -1/-1 until end of turn.
 when @ dies, target creature gets +1/+1 until end of turn.
@@ -1227,10 +1233,23 @@ when @ enters the battlefield, target player loses 3 life.
 when @ enters the battlefield, target player loses 6 life.
 when @ enters the battlefield, untap all creatures you control.
 when @ enters the battlefield, untap enchanted creature.
+whenever @ attacks, it gets +0/+2 until end of turn.
+whenever @ attacks, it gets +0/+3 until end of turn.
+whenever @ attacks, it gets +1/+1 until end of turn.
+whenever @ attacks, it gets +1/-2 until end of turn.
+whenever @ attacks, it gets +2/+0 until end of turn.
+whenever @ attacks, it gets +3/+0 until end of turn.
+whenever @ attacks, it gets +3/-3 until end of turn.
+whenever @ attacks, it gets +3/+3 until end of turn.
+whenever @ attacks, it gets +5/+0 until end of turn.
+whenever @ attacks, put a +1/+1 counter on it.
 whenever @ attacks, tap all artifacts.
 whenever @ attacks, target creature gets +0/+3 until end of turn.
 whenever @ attacks, target creature you control gains flying until end of turn.
 whenever @ deals combat damage to a player, draw a card.
+whenever @ deals combat damage to a player, put a +1/+1 counter on it.
+whenever @ deals combat damage to a player, put a charge counter on it.
+whenever @ deals combat damage to a player, put two +1/+1 counters on it.
 whenever @ deals combat damage to a player, that player discards a card.
 whenever @ deals combat damage to a player, that player discards a card at random.
 when @ leaves the battlefield, draw a card.
