@@ -501,6 +501,7 @@ CreatureRestriction
     / "attacking or blocking"
     / "attacking"
     / "green or white"
+    / "black or red"
     / "human"
     / "non-vampire, non-werewolf, non-zombie"
     / "nonartifact"

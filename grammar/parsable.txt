@@ -1231,6 +1231,7 @@ trample
 {t}: target attacking creature gets +1/+1 until end of turn.
 {t}: target attacking or blocking creature gets +1/+1 until end of turn.
 {t}: target attacking or blocking creature gets +2/+2 until end of turn.
+{t}: target black or red creature gains haste until end of turn.
 {t}: target creature gains flying until end of turn.
 {t}: target creature gains forestwalk until end of turn.
 {t}: target creature gains haste until end of turn.
@@ -1394,6 +1395,7 @@ when @ enters the battlefield, put six +1/+1 counters on enchanted creature.
 when @ enters the battlefield, put target artifact on top of its owner's library.
 when @ enters the battlefield, put target creature on top of its owner's library.
 when @ enters the battlefield, put three -1/-1 counters on target creature.
+when @ enters the battlefield, return a black or red creature you control to its owner's hand.
 when @ enters the battlefield, return a creature you control to its owner's hand.
 when @ enters the battlefield, return a green or white creature you control to its owner's hand.
 when @ enters the battlefield, return a land you control to its owner's hand.
