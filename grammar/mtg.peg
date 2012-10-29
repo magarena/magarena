@@ -295,7 +295,7 @@ TapAction
     ;
 
 RegenerateAction
-    = "regenerate @"
+    = "regenerate" SPACE SelectCreature
     ;
 
 DamageAction
@@ -476,6 +476,7 @@ RestrictedLand
 
 LandRestriction
     = "nonbasic"
+    / "basic"
     / "you control"
     ;
 

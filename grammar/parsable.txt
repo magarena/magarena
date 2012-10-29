@@ -4,6 +4,7 @@
 {0}: @ gets -1/-1 and gains flying until end of turn.
 {0}: @ gets +1/-1 until end of turn.
 {0}: @ loses flying.
+{0}: regenerate enchanted creature.
 {0}: return @ to its owner's hand.
 {1}: add {b} to your mana pool.
 {1}: add {r} or {w} to your mana pool.
@@ -53,6 +54,9 @@
 {1}{g}: @ gets -1/+1 until end of turn.
 {1}{g}{g}: target creature gains forestwalk until end of turn.
 {1}{g}: regenerate @.
+{1}{g}: regenerate enchanted creature.
+{1}{g}: regenerate target creature.
+{1}{g}: regenerate target green creature.
 {1}{g}, sacrifice @: destroy target artifact or enchantment.
 {1}{g}, sacrifice @: destroy target enchantment.
 {1}{g}, {t}: @ deals 5 damage to target attacking or blocking creature with flying.
@@ -113,6 +117,7 @@
 {1}, {t}: @ deals 1 damage to target attacking creature.
 {1}, {t}: @ deals 1 damage to target creature. tap that creature.
 {1}, {t}: destroy all artifacts, creatures, and enchantments.
+{1}, {t}, discard a card: regenerate target creature.
 {1}, {t}, discard a card: you gain 4 life.
 {1}, {t}: exile target creature you control.
 {1}, {t}, pay 1 life: add one mana of any color to your mana pool.
@@ -227,6 +232,8 @@
 {2}, pay 2 life: draw a card.
 {2}: put a charge counter on @.
 {2}: regenerate @.
+{2}: regenerate equipped creature.
+{2}: regenerate target artifact creature.
 {2}, remove a +1/+1 counter from a creature you control: draw a card.
 {2}, remove a +1/+1 counter from a creature you control: put a +1/+1 counter on @.
 {2}, remove a +1/+1 counter from @: put a +1/+1 counter on target creature.
@@ -260,6 +267,7 @@
 {2}: target red creature gains haste until end of turn.
 {2}: target white creature gains persist until end of turn.
 {2}, {t}: attacking creatures get +1/+0 until end of turn.
+{2}, {t}, discard a card at random: regenerate target creature.
 {2}, {t}: draw a card, then discard a card.
 {2}, {t}: each player draws a card.
 {2}, {t}: exile target creature you control.
@@ -333,6 +341,7 @@
 {3}{r}, sacrifice @: destroy target artifact.
 {3}, sacrifice a creature: draw a card.
 {3}, sacrifice a creature: return target creature card from your graveyard to the battlefield.
+{3}, sacrifice @: regenerate target creature.
 {3}: target blue creature gains shroud until end of turn.
 {3}: target creature doesn't untap during its controller's next untap step.
 {3}: target creature gets +3/+3 until end of turn.
@@ -340,6 +349,7 @@
 {3}, {t}: @ deals 1 damage to target creature or player.
 {3}, {t}: put a +1/+1 counter on target creature.
 {3}, {t}: put a charge counter on @.
+{3}, {t}: regenerate target artifact creature.
 {3}, {t}: remove a -1/-1 counter from target creature.
 {3}, {t}, remove a charge counter from @: draw a card.
 {3}, {t}, sacrifice a land: destroy target nonbasic land.
@@ -538,6 +548,7 @@ blue creatures get +1/+1.
 {b}, pay 5 life: regenerate @.
 {b}{r}: each player loses 1 life.
 {b}: regenerate @.
+{b}: regenerate enchanted creature.
 {b}: return @ to its owner's hand.
 {b}{r}: @ gets +1/+0 until end of turn.
 {b}{r}{g}, {t}: return target creature card from your graveyard to your hand.
@@ -1018,6 +1029,7 @@ forestwalk
 {g}: @ gets +1/+1 until end of turn.
 {g}: @ gets +1/-2 until end of turn.
 {g}{g}: @ gains first strike until end of turn.
+{g}{g}{g}{g}, {t}: regenerate target creature.
 {g}{g}{g}{g}, {t}: target creature gains forestwalk until end of turn.
 {g}{g}{g}, {t}: target creature gains flying until end of turn.
 {g}{g}: return @ to its owner's hand.
@@ -1032,6 +1044,7 @@ green creatures you control get +1/+1.
 green creatures you control get +1/+1 until end of turn.
 green creatures you control have trample.
 {g}: regenerate @.
+{g}: regenerate enchanted creature.
 {g}, remove a -1/-1 counter from @: destroy target artifact or enchantment.
 {g}: return @ to its owner's hand.
 {g}, sacrifice a creature: you gain 1 life.
@@ -1044,8 +1057,10 @@ green creatures you control have trample.
 {g}: target creature gets +1/+1 until end of turn.
 {g}: target creature loses flying until end of turn.
 {g}, {t}, discard a card: prevent all combat damage that would be dealt this turn.
+{g}, {t}, discard a card: regenerate target creature.
 {g}, {t}, discard a card: target creature gets +2/+2 until end of turn.
 {g}, {t}: put a 1/1 green saproling creature token onto the battlefield.
+{g}, {t}: regenerate target creature.
 {g}, {t}, sacrifice a creature: destroy target enchantment.
 {g}, {t}, sacrifice @: destroy target artifact.
 {g}, {t}, sacrifice @: destroy target enchantment.
@@ -1058,7 +1073,9 @@ green creatures you control have trample.
 {g/u}: @ gains shroud until end of turn.
 {g}{u}: put @ on top of its owner's library.
 {g/w}{g/w}: @ gets +1/+1 until end of turn.
+{g}{w}, sacrifice @: regenerate each creature you control.
 {g/w}, {t}, sacrifice @: destroy target enchantment.
+{g}{w}{u}, {t}: regenerate target creature.
 haste
 hexproof
 infect
@@ -1133,6 +1150,7 @@ pay 1 life: regenerate @.
 pay 1 life: return @ to its owner's hand.
 pay 1 life: target creature gets -1/-1 until end of turn.
 pay 2 life: regenerate @.
+pay 2 life: regenerate enchanted creature.
 pay 2 life: return @ to its owner's hand.
 pay 3 life: put a +1/+1 counter on @.
 pay 3 life: put a +1/+1 counter on target creature.
@@ -1180,6 +1198,8 @@ reach
 {r}: each creature you control gets +1/+0 until end of turn.
 red creatures get +1/+1.
 red creatures you control have first strike.
+regenerate each creature you control.
+regenerate target creature.
 remove a +1/+1 counter from @: add {1} to your mana pool.
 remove a -1/-1 counter from @: add one mana of any color to your mana pool.
 remove a +1/+1 counter from @: @ deals 1 damage to target creature or player.
@@ -1213,6 +1233,7 @@ return target permanent to its owner's hand.
 return target permanent you control to its owner's hand.
 return target permanent you control to its owner's hand. you gain 4 life.
 return target sorcery card from your graveyard to your hand.
+return @ to its owner's hand: regenerate target creature.
 {r}: @ gains first strike until end of turn.
 {r}: @ gains flying until end of turn.
 {r}: @ gains haste until end of turn.
@@ -1232,6 +1253,7 @@ return target sorcery card from your graveyard to your hand.
 {r}{r}: @ gains first strike until end of turn.
 {r}{r}: @ gains flying until end of turn.
 {r}{r}{r}: regenerate @.
+{r}{r}{r}: regenerate enchanted creature.
 {r}{r}{r}, {t}: destroy target artifact creature.
 {r}{r}: target creature gets +1/-1 until end of turn.
 {r}{r}, {t}: @ deals 2 damage to target creature.
@@ -1271,6 +1293,8 @@ sacrifice a creature or land.
 sacrifice a creature: put a +1/+1 counter on @.
 sacrifice a creature: put a charge counter on @.
 sacrifice a creature: regenerate @.
+sacrifice a creature: regenerate enchanted creature.
+sacrifice a creature: regenerate target creature.
 sacrifice a creature: target creature gets -1/-1 until end of turn.
 sacrifice @: add {b} to your mana pool.
 sacrifice @: add {g} to your mana pool.
@@ -1302,6 +1326,8 @@ sacrifice an artifact: regenerate @.
 sacrifice an enchantment: @ gets +1/+1 until end of turn.
 sacrifice an enchantment: @ gets +2/+2 until end of turn.
 sacrifice an untapped creature: enchanted creature gets +2/+0 until end of turn.
+sacrifice a permanent: regenerate target creature.
+sacrifice a permanent: regenerate target creature you control.
 sacrifice a permanent: return target creature to its owner's hand.
 sacrifice @: creatures you control gain flying until end of turn.
 sacrifice @: @ deals 1 damage to target attacking or blocking creature.
@@ -1324,6 +1350,8 @@ sacrifice @: prevent all combat damage that would be dealt this turn.
 sacrifice @: put a -1/-1 counter on target creature.
 sacrifice @: put a +1/+1 counter on target creature.
 sacrifice @: put two charge counters on target artifact.
+sacrifice @: regenerate enchanted creature.
+sacrifice @: regenerate target creature.
 sacrifice @: return enchanted creature to its owner's hand.
 sacrifice @: return target creature to its owner's hand.
 sacrifice @: return target creature you control to its owner's hand.
@@ -1394,6 +1422,7 @@ tap target creature. it doesn't untap during its controller's next untap step.
 tap target permanent.
 target attacking creature gets +x/+0 until end of turn.
 target creature gains deathtouch until end of turn.
+target creature gains deathtouch until end of turn. regenerate it.
 target creature gains double strike until end of turn.
 target creature gains fear until end of turn.
 target creature gains first strike until end of turn.
@@ -1681,6 +1710,7 @@ vigilance
 {w/b}: @ gains flying until end of turn.
 {w/b}{w/b}: @ gets +1/+0 until end of turn.
 {w/b}{w/b}{w/b}: @ gets +3/+3 until end of turn.
+{w/b}{w/b}{w/b}: regenerate target creature.
 {w}, discard a card: prevent the next 3 damage that would be dealt to target creature or player this turn.
 {w}, discard a card: you gain 3 life.
 {w}: enchanted creature gains vigilance until end of turn.
@@ -1955,6 +1985,7 @@ whenever you cast a spirit or arcane spell, @ gets +1/+1 until end of turn.
 whenever you cast a spirit or arcane spell, @ gets +2/+2 until end of turn.
 whenever you cast a spirit or arcane spell, put a +1/+1 counter on target creature.
 whenever you cast a spirit or arcane spell, regenerate @.
+whenever you cast a spirit or arcane spell, regenerate target creature.
 whenever you cast a spirit or arcane spell, target creature gains fear until end of turn.
 whenever you cast a spirit or arcane spell, target creature gains flying until end of turn.
 whenever you cast a spirit or arcane spell, target opponent loses 1 life and you gain 1 life.
