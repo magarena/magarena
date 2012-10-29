@@ -41,6 +41,7 @@
 {1}, remove a +1/+1 counter from a creature you control: put a 1/1 green saproling creature token onto the battlefield.
 {1}, remove a +1/+1 counter from @: prevent all combat damage that would be dealt this turn.
 {1}, remove a +1/+1 counter from @: regenerate @.
+{1}: return target land you control to its owner's hand.
 {1}: return @ to its owner's hand.
 {1}{r}: @ gets +1/+0 until end of turn.
 {1}{r}: @ gets +2/+0 until end of turn.
@@ -138,6 +139,8 @@
 {2}, remove a +1/+1 counter from a creature you control: put a +1/+1 counter on @.
 {2}, remove a +1/+1 counter from @: put a +1/+1 counter on target creature.
 {2}, remove a +1/+1 counter from @: return @ to its owner's hand.
+{2}, return a land you control to its owner's hand: tap target land.
+{2}, return a land you control to its owner's hand: untap target land.
 {2}{r}{g}, discard two cards at random: @ deals 4 damage to target creature or player.
 {2}{r}: target creature gets +1/+0 until end of turn.
 {2}{r}, {t}: destroy target nonbasic land.
@@ -221,6 +224,7 @@
 {4}{b}, sacrifice a creature: return target creature card from your graveyard to your hand.
 {4}{g}: put a +1/+1 counter on target creature.
 {4}{g}, sacrifice a creature: destroy target creature with flying.
+{4}, return a land you control to its owner's hand: draw a card.
 {4}{r}: exile @.
 {4}{r}, {t}, sacrifice a creature: @ deals 2 damage to target creature or player.
 {4}, {t}: draw a card.
@@ -267,6 +271,7 @@ at the beginning of your upkeep, target player loses 1 life.
 {b}{b}: return @ to its owner's hand.
 {b}{b}, {t}: put a charge counter on @.
 {b}{b}, {t}: target player loses 2 life and you gain 2 life.
+{b}: destroy target artifact, creature, or land you control.
 {b}, discard a card: regenerate @.
 {b}, discard a creature card: return target creature card from your graveyard to your hand.
 {b}: @ gets +1/+0 until end of turn.
@@ -479,6 +484,7 @@ enchant enchantment
 enchant green or white creature
 enchant island
 enchant land
+enchant land you control
 enchant nonbasic land
 enchant nonblack creature
 enchant permanent
@@ -959,6 +965,7 @@ trample
 undying
 untap all artifacts.
 untap all creatures you control.
+untap all lands you control.
 untap target artifact, creature, or land.
 untap target permanent.
 {u}{r}: @ deals 1 damage to target creature or player.
@@ -1025,6 +1032,7 @@ when @ enters the battlefield, destroy target permanent.
 when @ enters the battlefield, discard a card at random.
 when @ enters the battlefield, draw a card.
 when @ enters the battlefield, draw two cards.
+when @ enters the battlefield, exile a land you control.
 when @ enters the battlefield, exile all lands.
 when @ enters the battlefield, exile target black permanent.
 when @ enters the battlefield, exile target creature.
@@ -1035,6 +1043,7 @@ when @ enters the battlefield, put a +1/+1 counter on target creature.
 when @ enters the battlefield, put three -1/-1 counters on target creature.
 when @ enters the battlefield, return a creature you control to its owner's hand.
 when @ enters the battlefield, return a green or white creature you control to its owner's hand.
+when @ enters the battlefield, return a land you control to its owner's hand.
 when @ enters the battlefield, return a permanent you control to its owner's hand.
 when @ enters the battlefield, return target artifact or enchantment to its owner's hand.
 when @ enters the battlefield, return target creature card from your graveyard to the battlefield.
@@ -1046,6 +1055,7 @@ when @ enters the battlefield, sacrifice a creature.
 when @ enters the battlefield, sacrifice a land.
 when @ enters the battlefield, sacrifice all creatures you control.
 when @ enters the battlefield, tap all islands.
+when @ enters the battlefield, tap all lands you control.
 when @ enters the battlefield, target creature gets +0/+3 until end of turn.
 when @ enters the battlefield, target creature gets -1/-1 until end of turn.
 when @ enters the battlefield, target creature gets +1/+1 until end of turn.

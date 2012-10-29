@@ -406,11 +406,12 @@ SelectEnchantment
     ;
 
 RestrictedLand
-    = (LandRestriction SPACE)? Land
+    = (LandRestriction SPACE)? Land (SPACE LandRestriction)?
     ;
 
 LandRestriction
     = "nonbasic"
+    / "you control"
     ;
 
 SelectTribal
