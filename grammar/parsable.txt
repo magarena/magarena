@@ -383,6 +383,9 @@ at the beginning of your upkeep, sacrifice a nonblack creature.
 at the beginning of your upkeep, sacrifice a permanent.
 at the beginning of your upkeep, tap target creature.
 at the beginning of your upkeep, target player loses 1 life.
+at the beginning of your upkeep, you lose 1 life.
+at the beginning of your upkeep, you lose 2 life.
+at the beginning of your upkeep, you lose 3 life.
 at the beginning of your upkeep, you may draw two cards.
 at the beginning of your upkeep, you may put a +1/+1 counter on @.
 at the beginning of your upkeep, you may put a +1/+1 counter on target creature you control.
@@ -1458,6 +1461,11 @@ when @ enters the battlefield, you gain 3 life.
 when @ enters the battlefield, you gain 4 life.
 when @ enters the battlefield, you gain 5 life.
 when @ enters the battlefield, you gain 7 life.
+when @ enters the battlefield, you lose 1 life.
+when @ enters the battlefield, you lose 2 life.
+when @ enters the battlefield, you lose 3 life.
+when @ enters the battlefield, you lose 4 life.
+when @ enters the battlefield, you lose 5 life.
 when @ enters the battlefield, you may destroy target artifact.
 when @ enters the battlefield, you may destroy target creature with flying.
 when @ enters the battlefield, you may destroy target enchantment.
@@ -1507,6 +1515,7 @@ whenever @ deals combat damage, you gain that much life.
 whenever @ deals damage to a player, that player discards a card.
 whenever @ deals damage to a player, you may draw a card.
 whenever @ deals damage, you gain that much life.
+whenever @ deals damage, you lose that much life.
 whenever @ or another ally enters the battlefield under your control, you may put a +1/+1 counter on @.
 whenever @ or another ally enters the battlefield under your control, you may put a +1/+1 counter on each ally creature you control.
 whenever you cast a black spell, @ gains fear until end of turn.
@@ -1587,6 +1596,8 @@ when @ leaves the battlefield, sacrifice a land.
 when @ leaves the battlefield, shuffle your library.
 when @ leaves the battlefield, that player gains 3 life.
 when @ leaves the battlefield, that player gains 6 life.
+when @ leaves the battlefield, you lose 10 life.
+when @ leaves the battlefield, you lose 20 life.
 wither
 {w}: put @ on top of its owner's library.
 {w}: regenerate @.
