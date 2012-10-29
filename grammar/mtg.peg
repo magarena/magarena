@@ -65,6 +65,7 @@ Action
     / ChangeCounterAction
     / PutTokenAction
     / ControlAction
+    / ShuffleAction
     ;
 
 Keyword
@@ -181,7 +182,8 @@ LeavesBattlefieldTrigger
     ;
 
 EntersGraveyardTrigger
-    = "when @ is put into a graveyard" " from the battlefield"?
+    = "when @ is put into a graveyard from the battlefield"
+    / "when @ is put into a graveyard from anywhere"
     ;
 
 EntersBattlefieldTrigger
@@ -203,6 +205,11 @@ DealsDamageTrigger
 
 AttacksTrigger
     = "whenever @ attacks"
+    ;
+
+ShuffleAction
+    = "shuffle it into its owner's library"
+    / "shuffle your library"
     ;
 
 PutTokenAction

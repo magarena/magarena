@@ -228,6 +228,7 @@
 {2}, {t}, remove a charge counter from @: target player gains 3 life.
 {2}, {t}, sacrifice a creature: draw a card.
 {2}, {t}, sacrifice @: return target artifact card from your graveyard to your hand.
+{2}, {t}: shuffle your library.
 {2}, {t}: tap target creature.
 {2}, {t}: target creature gains flying until end of turn.
 {2}, {t}: you gain 1 life.
@@ -304,6 +305,7 @@
 {3}{u}, {t}: tap target creature.
 {3}{u}{u}: counter target enchantment spell.
 {3}{u}: untap @.
+{3}{u}{u}: shuffle your library.
 {3}{w}{b}, {t}: target player loses 1 life and you gain 1 life.
 {3}{w}: @ gets +0/+5 until end of turn.
 {3}{w}: tap target creature.
@@ -1342,6 +1344,7 @@ when @ dies, put a 1/1 green saproling creature token onto the battlefield.
 when @ dies, put it on top of its owner's library.
 when @ dies, return it to its owner's hand.
 when @ dies, return @ to its owner's hand.
+when @ dies, shuffle it into its owner's library.
 when @ dies, target creature gets -1/-1 until end of turn.
 when @ dies, target creature gets +1/+1 until end of turn.
 when @ dies, target creature gets -2/-2 until end of turn.
@@ -1554,6 +1557,7 @@ whenever you cast a white spell, you gain 3 life.
 whenever you cast a white spell, you may tap target creature.
 whenever you cast a white spell, you may untap @.
 whenever you cast a wizard spell, you may untap @.
+when @ is put into a graveyard from anywhere, shuffle it into its owner's library.
 when @ is put into a graveyard from the battlefield, destroy target nonblack creature.
 when @ is put into a graveyard from the battlefield, draw a card.
 when @ is put into a graveyard from the battlefield, draw three cards.
@@ -1563,6 +1567,7 @@ when @ leaves the battlefield, draw a card.
 when @ leaves the battlefield, return the exiled card to the battlefield under its owner's control.
 when @ leaves the battlefield, sacrifice a creature.
 when @ leaves the battlefield, sacrifice a land.
+when @ leaves the battlefield, shuffle your library.
 when @ leaves the battlefield, that player gains 3 life.
 when @ leaves the battlefield, that player gains 6 life.
 wither
