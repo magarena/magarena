@@ -119,6 +119,7 @@ Keyword
     / "living weapon"
     / "totem armor"
     / "bushido" SPACE Number
+    / "rampage" SPACE Number
     / "soulshift" SPACE Number
     / "fading" SPACE Number
     / "devour" SPACE Number

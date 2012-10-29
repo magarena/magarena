@@ -1080,6 +1080,10 @@ put target enchantment on top of its owner's library.
 put target land on top of its owner's library.
 put target permanent on top of its owner's library.
 {r}: add {b} to your mana pool.
+rampage 1
+rampage 2
+rampage 3
+rampage 4
 {r}, discard a card at random: @ gets +2/+0 until end of turn.
 {r}, discard a card at random: @ gets +3/+0 until end of turn.
 reach
