@@ -406,6 +406,7 @@ SelectOp
     / "enchanted"
     / "equipped"
     / "the"
+    / "that"
     / "other"
     ;
 

@@ -97,6 +97,7 @@
 {1}: target creature gains flying until end of turn.
 {1}, {t}: attacking creatures get +1/+0 until end of turn.
 {1}, {t}: @ deals 1 damage to target attacking creature.
+{1}, {t}: @ deals 1 damage to target creature. tap that creature.
 {1}, {t}: destroy all artifacts, creatures, and enchantments.
 {1}, {t}, discard a card: you gain 4 life.
 {1}, {t}: exile target creature you control.
@@ -202,6 +203,7 @@
 {2}{g}: target green creature gains protection from black until end of turn.
 {2}{g}, {t}: target creature gets +2/+2 until end of turn.
 {2}{g}, {t}: untap target creature.
+{2}{g}{w}: target creature gets +3/+3 until end of turn. untap that creature.
 {2}{g}{w}, {t}: put a +1/+1 counter on each creature you control.
 {2}{g}{w}, {t}: put a 1/1 green saproling creature token onto the battlefield.
 {2}, pay 2 life: draw a card.
@@ -255,6 +257,7 @@
 {2}: untap target artifact creature.
 {2}{u}, sacrifice a land: draw a card.
 {2}{u}: tap target creature with flying.
+{2}{u}, {t}: put a -1/-1 counter on target creature. you may tap or untap that creature.
 {2}{u}, {t}: target creature gets -2/-0 until end of turn.
 {2}{u}{u}: draw a card.
 {2}{u}: untap @.
@@ -600,12 +603,14 @@ cumulative upkeep {w}
 @ deals 1 damage to each creature.
 @ deals 1 damage to target creature.
 @ deals 1 damage to target creature or player.
+@ deals 1 damage to target creature. put a -1/-1 counter on that creature.
 @ deals 2 damage to each creature.
 @ deals 2 damage to each creature with flying.
 @ deals 2 damage to each nonartifact creature.
 @ deals 2 damage to target attacking or blocking creature.
 @ deals 2 damage to target creature.
 @ deals 2 damage to target creature or player.
+@ deals 2 damage to target creature with flying. that creature loses flying until end of turn.
 @ deals 3 damage to each creature.
 @ deals 3 damage to target attacking or blocking creature.
 @ deals 3 damage to target creature.
@@ -1184,6 +1189,7 @@ sacrifice @: @ deals 1 damage to target creature.
 sacrifice @: @ deals 1 damage to target creature or player.
 sacrifice @: @ deals 2 damage to each creature with flying.
 sacrifice @: @ deals 2 damage to target creature or player.
+sacrifice @: @ deals 2 damage to target creature with flying. that creature loses flying until end of turn.
 sacrifice @: destroy target artifact or enchantment.
 sacrifice @: destroy target black creature.
 sacrifice @: destroy target enchantment.
@@ -1272,10 +1278,15 @@ target creature gets +0/+4 until end of turn.
 target creature gets -1/-0 until end of turn.
 target creature gets -1/-1 until end of turn.
 target creature gets +1/+1 until end of turn.
+target creature gets -1/-1 until end of turn. tap that creature.
+target creature gets +1/+1 until end of turn. untap that creature.
 target creature gets +1/+2 until end of turn.
+target creature gets +1/+3 until end of turn. untap that creature.
 target creature gets +2/+0 until end of turn.
+target creature gets +2/+0 until end of turn. @ deals 2 damage to that creature.
 target creature gets -2/-2 until end of turn.
 target creature gets +2/+2 until end of turn.
+target creature gets +2/+2 until end of turn. untap that creature.
 target creature gets +2/+4 until end of turn.
 target creature gets -3/-0 until end of turn.
 target creature gets +3/+0 until end of turn.
