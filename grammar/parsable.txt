@@ -478,6 +478,7 @@ destroy target creature with power 4 or greater. it can't be regenerated.
 destroy target creature. you gain 4 life.
 destroy target enchantment.
 destroy target enchantment. you gain 2 life.
+destroy target equipment. add {g} to your mana pool.
 destroy target green or white creature.
 destroy target human creature.
 destroy target land.
@@ -576,6 +577,7 @@ enchanted creature has swampwalk.
 enchanted creature has trample.
 enchanted creature has vigilance.
 enchant enchantment
+enchant equipment
 enchant green or white creature
 enchant island
 enchant land
@@ -1219,6 +1221,7 @@ when @ enters the battlefield, destroy target artifact or enchantment.
 when @ enters the battlefield, destroy target creature with flying.
 when @ enters the battlefield, destroy target creature with power 4 or greater. it can't be regenerated.
 when @ enters the battlefield, destroy target enchantment.
+when @ enters the battlefield, destroy target equipment.
 when @ enters the battlefield, destroy target land.
 when @ enters the battlefield, destroy target nonartifact, nonblack creature.
 when @ enters the battlefield, destroy target nonbasic land.
@@ -1356,6 +1359,7 @@ you control enchanted artifact.
 you control enchanted artifact creature.
 you control enchanted creature.
 you control enchanted enchantment.
+you control enchanted equipment.
 you control enchanted land.
 you control enchanted permanent.
 you gain 1 life.

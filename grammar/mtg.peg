@@ -475,6 +475,7 @@ Creature
 
 Artifact
     = "artifact" "s"?
+    / "equipment" "s"?
     ;
 
 Land
