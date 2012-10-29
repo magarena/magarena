@@ -45,6 +45,7 @@
 {1}{g}, sacrifice @: destroy target artifact or enchantment.
 {1}{g}, sacrifice @: destroy target enchantment.
 {1}{g}, {t}: @ deals 5 damage to target attacking or blocking creature with flying.
+{1}{g}, {t}: target creature doesn't untap during its controller's next untap step.
 {1}{g}, {t}: target creature gets -2/-0 until end of turn.
 {1}{g}, {t}: target creature gets +4/+4 until end of turn.
 {1}: @ loses flying until end of turn.
@@ -282,6 +283,7 @@
 {3}{r}, sacrifice @: destroy target artifact.
 {3}, sacrifice a creature: draw a card.
 {3}, sacrifice a creature: return target creature card from your graveyard to the battlefield.
+{3}: target creature doesn't untap during its controller's next untap step.
 {3}: target creature gets +3/+3 until end of turn.
 {3}, {t}: @ deals 1 damage to target creature or player.
 {3}, {t}: put a +1/+1 counter on target creature.
@@ -599,12 +601,14 @@ discard a creature card: @ gets +2/+2 until end of turn.
 discard a creature card: put a +1/+1 counter on @.
 discard an artifact card: @ gets +2/+2 until end of turn.
 discard an artifact card: return @ to its owner's hand.
+@ doesn't untap during your untap step.
 double strike
 draw a card.
 draw four cards.
 draw three cards.
 draw two cards.
 draw x cards.
+each attacking creature doesn't untap during its controller's next untap step.
 enchant artifact
 enchant artifact creature
 enchant creature
@@ -1095,6 +1099,7 @@ tap an untapped creature you control: tap target artifact, creature, or land.
 tap an untapped creature you control: tap target artifact or creature.
 tap target artifact, creature, or land.
 tap target creature.
+tap target creature. it doesn't untap during its controller's next untap step.
 tap target permanent.
 target creature gains deathtouch until end of turn.
 target creature gains double strike until end of turn.
@@ -1467,6 +1472,7 @@ when @ enters the battlefield, you may return target sorcery card from your grav
 when @ enters the battlefield, you may return target tapped creature to its owner's hand.
 when @ enters the battlefield, you may tap or untap target permanent.
 when @ enters the battlefield, you may tap target creature.
+whenever @ attacks, it doesn't untap during its controller's next untap step.
 whenever @ attacks, it gets +0/+2 until end of turn.
 whenever @ attacks, it gets +0/+3 until end of turn.
 whenever @ attacks, it gets +1/+1 until end of turn.

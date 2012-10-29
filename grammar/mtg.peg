@@ -210,6 +210,8 @@ AttacksTrigger
 
 DoesntUntapAction
     = SelectPermanent " doesn't untap during its controller's untap step"
+    / SelectPermanent " doesn't untap during its controller's next untap step"
+    / SelectPermanent " doesn't untap during your untap step"
     ;
 
 ShuffleAction
