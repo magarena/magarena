@@ -167,6 +167,7 @@
 {2}{b}{b}: target creature gets -1/-1 until end of turn. put a +1/+1 counter on @.
 {2}{b}, discard a card: @ gains fear until end of turn.
 {2}{b}, discard a card: target opponent loses 1 life and you gain 1 life.
+{2}{b}: each player loses 1 life.
 {2}{b}: @ gains deathtouch until end of turn.
 {2}{b}: @ gains lifelink until end of turn.
 {2}{b}: @ gets +1/+1 until end of turn.
@@ -366,6 +367,7 @@ at the beginning of your upkeep, @ deals 4 damage to enchanted creature.
 at the beginning of your upkeep, @ deals 5 damage to target creature or player.
 at the beginning of your upkeep, destroy all artifacts and enchantments. they can't be regenerated.
 at the beginning of your upkeep, draw a card.
+at the beginning of your upkeep, each player discards a card.
 at the beginning of your upkeep, put a +1/+1 counter on @.
 at the beginning of your upkeep, put a -1/-1 counter on each creature.
 at the beginning of your upkeep, put a -1/-1 counter on each nonblack creature.
@@ -431,6 +433,7 @@ bloodthirst 6
 {b}, pay 1 life: return @ to its owner's hand.
 {b}, pay 2 life: draw a card.
 {b}, pay 5 life: regenerate @.
+{b}{r}: each player loses 1 life.
 {b}: regenerate @.
 {b}: return @ to its owner's hand.
 {b}{r}: @ gets +1/+0 until end of turn.
@@ -1355,6 +1358,9 @@ when @ dies, destroy target land.
 when @ dies, destroy target wall.
 when @ dies, discard a card.
 when @ dies, draw a card.
+when @ dies, each player discards a card.
+when @ dies, each player loses 3 life.
+when @ dies, each player loses 4 life.
 when @ dies, exile all creatures.
 when @ dies, exile it.
 when @ dies, exile target permanent.
@@ -1397,6 +1403,9 @@ when @ enters the battlefield, destroy target permanent.
 when @ enters the battlefield, discard a card at random.
 when @ enters the battlefield, draw a card.
 when @ enters the battlefield, draw two cards.
+when @ enters the battlefield, each player discards a card.
+when @ enters the battlefield, each player loses 1 life.
+when @ enters the battlefield, each player loses 3 life.
 when @ enters the battlefield, exile a land you control.
 when @ enters the battlefield, exile all lands.
 when @ enters the battlefield, exile target black permanent.
@@ -1502,6 +1511,7 @@ whenever @ attacks, target creature you control gains flying until end of turn.
 whenever @ attacks, you may tap target creature.
 whenever @ deals combat damage, sacrifice a permanent.
 whenever @ deals combat damage to a player, draw a card.
+whenever @ deals combat damage to a player, each player discards a card.
 whenever @ deals combat damage to a player, put a +1/+1 counter on each creature you control.
 whenever @ deals combat damage to a player, put a +1/+1 counter on it.
 whenever @ deals combat damage to a player, put a charge counter on it.

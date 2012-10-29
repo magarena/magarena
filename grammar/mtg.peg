@@ -254,6 +254,7 @@ SelectPlayer
     = "target player"
     / "target opponent"
     / "that player"
+    / "each player"
     / "you"
     ;
 
