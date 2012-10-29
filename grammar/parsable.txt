@@ -133,6 +133,7 @@
 {2}, Remove a +1/+1 counter from a creature you control: Put a +1/+1 counter on @.
 {2}, Remove a +1/+1 counter from @: Put a +1/+1 counter on target creature.
 {2}, Remove a +1/+1 counter from @: Return @ to its owner's hand.
+{2}{R}{G}, Discard two cards at random: @ deals 4 damage to target creature or player.
 {2}{R}: Target creature gets +1/+0 until end of turn.
 {2}{R}, {T}: Destroy target nonbasic land.
 {2}{R}, {T}, Discard a card: Destroy target land.
@@ -212,7 +213,6 @@
 {3}{W}: Tap target creature.
 {4}{B}{B}, {T}, Sacrifice @: Target creature gets -6/-6 until end of turn.
 {4}{B}, Sacrifice a creature: Return target creature card from your graveyard to your hand.
-{4}{B}, Sacrifice @: Target player discards two cards.
 {4}{G}: Put a +1/+1 counter on target creature.
 {4}{G}, Sacrifice a creature: Destroy target creature with flying.
 {4}{R}: Exile @.
@@ -247,6 +247,7 @@ Affinity for artifacts
 {B}{B}, {T}: Put a charge counter on @.
 {B}{B}, {T}: Target player loses 2 life and you gain 2 life.
 {B}, Discard a card: Regenerate @.
+{B}, Discard a creature card: Return target creature card from your graveyard to your hand.
 {B}: @ gets +1/+0 until end of turn.
 {B}: @ gets +1/-1 until end of turn.
 {B}: @ gets +1/+1 until end of turn.
@@ -389,6 +390,10 @@ Discard a card: @ gets +0/+4 until end of turn.
 Discard a card: @ gets +1/+1 until end of turn.
 Discard a card: Regenerate @.
 Discard a card: Return @ to its owner's hand.
+Discard a creature card: @ gets +2/+2 until end of turn.
+Discard a creature card: Put a +1/+1 counter on @.
+Discard an artifact card: @ gets +2/+2 until end of turn.
+Discard an artifact card: Return @ to its owner's hand.
 Double strike
 Draw a card.
 Draw four cards.
@@ -792,11 +797,10 @@ Target creature gets -7/-0 until end of turn.
 Target creature gets +7/+7 until end of turn.
 Target creature you control gets +2/+0 until end of turn.
 Target nonblack creature gets -1/-1 until end of turn.
-Target opponent discards two cards.
 Target opponent loses 3 life.
 Target player discards a card.
-Target player discards three cards.
-Target player discards two cards.
+Target player discards two cards at random.
+Target player discards X cards at random.
 Target player gains 4 life.
 Target player gains 5 life.
 Target player gains 6 life.

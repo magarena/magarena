@@ -274,10 +274,10 @@ DrawAction
     ;
 
 DiscardAction
-    = "Discard a card"
-    / "Discard " Count " cards"
-    / SelectPlayer " discards " Count " cards"
-    / SelectPlayer " discards a card"
+    = "Discard " SelectCard
+    / "Discard " Count SPACE RestrictedCard " at random"
+    / SelectPlayer " discards " SelectCard
+    / SelectPlayer " discards " Count SPACE RestrictedCard " at random"
     ;
 
 DestroyNoRegenAction
