@@ -688,6 +688,7 @@ forestwalk
 {g}{g}{g}{g}, {t}: target creature gains forestwalk until end of turn.
 {g}{g}{g}, {t}: target creature gains flying until end of turn.
 {g}{g}: return @ to its owner's hand.
+{g}{g}, sacrifice @: put target land on top of its owner's library.
 {g}{g}: tap target creature with flying.
 {g}{g}, {t}: put a charge counter on @.
 {g}: regenerate @.
@@ -714,6 +715,7 @@ forestwalk
 {g}, {t}: target creature gets +2/+2 until end of turn.
 {g}, {t}: target creature gets +5/+5 until end of turn.
 {g/u}: @ gains shroud until end of turn.
+{g}{u}: put @ on top of its owner's library.
 {g/w}{g/w}: @ gets +1/+1 until end of turn.
 {g/w}, {t}, sacrifice @: destroy target enchantment.
 haste
@@ -794,6 +796,14 @@ put a -1/-1 counter on target creature.
 put a +1/+1 counter on target creature.
 put a -1/-1 counter on @: untap @.
 put a 1/1 green saproling creature token onto the battlefield.
+put target artifact, creature, or enchantment on top of its owner's library.
+put target artifact or enchantment on top of its owner's library.
+put target attacking or blocking creature on top of its owner's library.
+put target creature on top of its owner's library.
+put target creature or land on top of its owner's library.
+put target enchantment on top of its owner's library.
+put target land on top of its owner's library.
+put target permanent on top of its owner's library.
 {r}: add {b} to your mana pool.
 {r}, discard a card at random: @ gets +2/+0 until end of turn.
 {r}, discard a card at random: @ gets +3/+0 until end of turn.
@@ -1143,6 +1153,7 @@ untap target artifact, creature, or land.
 untap target creature. it gets +2/+4 until end of turn.
 untap target creature. it gets +3/+3 until end of turn.
 untap target permanent.
+{u}: put @ on top of its owner's library.
 {u}{r}: @ deals 1 damage to target creature or player.
 {u}: regenerate @.
 {u}: return @ to its owner's hand.
@@ -1157,6 +1168,7 @@ untap target permanent.
 {u}, {t}, discard a card: return target permanent you control to its owner's hand.
 {u}, {t}, discard a card: target creature gains flying until end of turn.
 {u}, {t}: draw two cards.
+{u}, {t}: put target creature you control on top of its owner's library.
 {u}, {t}: return target permanent you control to its owner's hand.
 {u}, {t}, sacrifice a creature or enchantment: counter target spell.
 {u}, {t}: target creature gains flying until end of turn.
@@ -1200,6 +1212,7 @@ when @ dies, exile all creatures.
 when @ dies, exile it.
 when @ dies, exile target permanent.
 when @ dies, put a 1/1 green saproling creature token onto the battlefield.
+when @ dies, put it on top of its owner's library.
 when @ dies, return it to its owner's hand.
 when @ dies, return @ to its owner's hand.
 when @ dies, target creature gets -1/-1 until end of turn.
@@ -1240,7 +1253,10 @@ when @ enters the battlefield, exile target land.
 when @ enters the battlefield, prevent the next 3 damage that would be dealt to target creature or player this turn.
 when @ enters the battlefield, put a -1/-1 counter on target creature.
 when @ enters the battlefield, put a +1/+1 counter on target creature.
+when @ enters the battlefield, put a creature you control on top of its owner's library.
 when @ enters the battlefield, put six +1/+1 counters on enchanted creature.
+when @ enters the battlefield, put target artifact on top of its owner's library.
+when @ enters the battlefield, put target creature on top of its owner's library.
 when @ enters the battlefield, put three -1/-1 counters on target creature.
 when @ enters the battlefield, return a creature you control to its owner's hand.
 when @ enters the battlefield, return a green or white creature you control to its owner's hand.
@@ -1321,6 +1337,7 @@ when @ leaves the battlefield, sacrifice a land.
 when @ leaves the battlefield, that player gains 3 life.
 when @ leaves the battlefield, that player gains 6 life.
 wither
+{w}: put @ on top of its owner's library.
 {w}: regenerate @.
 {w}: return enchanted creature to its owner's hand.
 {w}: return @ to its owner's hand.

@@ -225,6 +225,7 @@ ReturnAction
 
 BounceAction
     = "return " SelectPermanent SPACE "to its owner's hand"
+    / "put " SelectPermanent SPACE "on top of its owner's library"
     ;
 
 PreventAction
