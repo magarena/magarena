@@ -414,7 +414,7 @@ SelectCard
 SelectCreature
     = "@"
     / "it"
-    / SelectOp SPACE RestrictedCreature
+    / (SelectOp SPACE)? RestrictedCreature
     ;
 
 SelectPermanent
