@@ -1340,6 +1340,8 @@ vigilance
 {w}: @ gains vigilance until end of turn.
 {w}: @ gets +0/+1 until end of turn.
 {w}: @ gets +1/+1 until end of turn.
+when @ becomes the target of a spell or ability, return @ to its owner's hand.
+when @ becomes the target of a spell or ability, sacrifice it.
 when @ dies, add {1} to your mana pool.
 when @ dies, all creatures get -1/-1 until end of turn.
 when @ dies, all creatures get -5/-5 until end of turn.

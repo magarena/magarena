@@ -42,6 +42,7 @@ Trigger
     / DealsDamageTrigger
     / AttacksTrigger 
     / CastTrigger
+    / BecomesTargetTrigger
     ;
 
 Action
@@ -172,6 +173,10 @@ ManaCost
     = ColorlessCost MonoSingleCost*
     / MonoSingleCost+
     / HybridSingleCost+
+    ;
+
+BecomesTargetTrigger
+    = "when @ becomes the target of a spell or ability"
     ;
 
 CastTrigger
