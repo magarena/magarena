@@ -217,7 +217,12 @@ DiesTrigger
     ;
 
 DealsDamageTrigger
-    = "whenever @ deals " "combat "? "damage" " to a player"?
+    = "whenever @ deals" " combat"? " damage" (" to a " DamageReceiver)?
+    ;
+
+DamageReceiver
+    = "player"
+    / "creature"
     ;
 
 AttacksTrigger
@@ -237,6 +242,7 @@ ShuffleAction
 
 PutTokenAction
     = "put a 1/1 green saproling creature token onto the battlefield"
+    / "put a 1/1 gnome artifact creature token onto the battlefield"
     ;
 
 ControlAction
@@ -312,6 +318,8 @@ CounterType
     / "spore"
     / "storage"
     / "ki"
+    / "verse"
+    / "quest"
     ;
 
 Count
