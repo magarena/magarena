@@ -6,4 +6,4 @@ rarity=U
 type=Instant
 cost={3}{U}{U}
 timing=draw
-requires_card_code
+requires_card_code=Harmonize
