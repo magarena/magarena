@@ -1,0 +1,12 @@
+name=Battering Sliver
+url=http://magiccards.info/pc/en/95.html
+image=http://magiccards.info/scans/en/pc/95.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Sliver
+cost={5}{R}
+pt=4/4
+static=all
+timing=main
+requires_card_code
