@@ -1,0 +1,12 @@
+name=Muscle Sliver
+url=http://magiccards.info/pds/en/9.html
+image=http://magiccards.info/scans/en/pds/9.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Sliver
+cost={1}{G}
+pt=1/1
+static=all
+timing=main
+requires_card_code
