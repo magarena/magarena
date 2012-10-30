@@ -1,0 +1,12 @@
+name=Wizened Cenn
+url=http://magiccards.info/lw/en/49.html
+image=http://magiccards.info/scans/en/lw/49.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Kithkin,Cleric
+cost={W}{W}
+pt=2/2
+static=player
+timing=main
+requires_card_code
