@@ -9,4 +9,4 @@ cost={B}
 pt=0/1
 timing=main
 ability=regenerate {B},kicker {3} it enters the battlefield with a +1/+1 counter on it
-requires_card_code
+requires_card_code=Pincer Spider
