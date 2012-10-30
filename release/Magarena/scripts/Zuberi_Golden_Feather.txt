@@ -1,0 +1,12 @@
+name=Zuberi, Golden Feather
+url=http://magiccards.info/mr/en/255.html
+image=http://magiccards.info/scans/en/mr/255.jpg
+value=3
+rarity=R
+type=Legendary,Creature
+subtype=Griffin
+cost={4}{W}
+pt=3/3
+static=all
+timing=main
+requires_card_code
