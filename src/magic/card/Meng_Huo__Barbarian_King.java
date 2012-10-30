@@ -1,17 +1,16 @@
 package magic.card;
 
+import magic.model.MagicPowerToughness;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicPowerToughness;
 import magic.model.mstatic.MagicLayer;
-import magic.model.MagicAbility;
 import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTargetFilter;
 
-public class Zuberi_Golden_Feather {
-    public static final MagicStatic S1 = new MagicStatic(
+public class Meng_Huo__Barbarian_King {
+    public static final MagicStatic S2 = new MagicStatic(
         MagicLayer.ModPT,
-        MagicTargetFilter.TARGET_GRIFFIN) {
+        MagicTargetFilter.TARGET_GREEN_CREATURE_YOU_CONTROL) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
             pt.add(1,1);
