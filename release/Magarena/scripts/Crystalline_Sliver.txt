@@ -1,0 +1,12 @@
+name=Crystalline Sliver
+url=http://magiccards.info/pds/en/11.html
+image=http://magiccards.info/scans/en/pds/11.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Sliver
+cost={W}{U}
+pt=2/2
+static=all
+timing=main
+requires_card_code
