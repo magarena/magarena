@@ -73,18 +73,13 @@ public class CardDefinitions {
             setProperty(cardDefinition, key, content.getProperty(key));
         }
 
-        //add card specific code
-        if (cardDefinition.hasCode()) {
-            addCardSpecificCode(cardDefinition);
-        }
-
         return cardDefinition;
     }
-        
+
     //link to companion object containing static variables
-    private static void addCardSpecificCode(final MagicCardDefinition cardDefinition) {
+    static void addCardSpecificCode(final MagicCardDefinition cardDefinition, final String cardName) {
         try { //reflection
-            final Class c = Class.forName("magic.card." + cardDefinition.getCanonicalName());
+            final Class c = Class.forName("magic.card." + getCanonicalName(cardName));
             for (final Field field : c.getFields()) {
                 final MagicChangeCardDefinition ccd = (MagicChangeCardDefinition)field.get(null);
                 ccd.change(cardDefinition);
@@ -94,6 +89,10 @@ public class CardDefinitions {
         } catch (final IllegalAccessException ex) {
             throw new RuntimeException(ex);
         }
+    }
+    
+    private static String getCanonicalName(String fullName) {
+        return fullName.replaceAll("[^A-Za-z0-9]", "_");
     }
     
     private static void loadCardDefinition(final File file) {

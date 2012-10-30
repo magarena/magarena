@@ -168,7 +168,8 @@ public enum CardProperty {
     },
     REQUIRES_CARD_CODE() {
         void setProperty(final MagicCardDefinition card, final String value) {
-            card.setHasCode();
+            final String cardName = !value.isEmpty() ? value : card.getFullName();
+            CardDefinitions.addCardSpecificCode(card, cardName);
         }
     };
     

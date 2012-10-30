@@ -75,7 +75,6 @@ public class MagicCardDefinition {
     private int score=-1; // not initialized
     private MagicRarity rarity;
     private boolean token;
-    private boolean hasCode;
     private int typeFlags;
     private EnumSet<MagicSubType> subTypeFlags = EnumSet.noneOf(MagicSubType.class);
     private int colorFlags;
@@ -144,20 +143,8 @@ public class MagicCardDefinition {
         return fullName;
     }
 
-    public String getCanonicalName() {
-        return fullName.replaceAll("[^A-Za-z0-9]", "_");
-    }
-    
     public void setFullName(final String name) {
         fullName = name;
-    }
-    
-    public void setHasCode() {
-        hasCode = true;
-    }
-    
-    public boolean hasCode() {
-        return hasCode;
     }
     
     public void setIndex(final int index) {
