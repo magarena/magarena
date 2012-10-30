@@ -1,0 +1,12 @@
+name=Synchronous Sliver
+url=http://magiccards.info/pc/en/48.html
+image=http://magiccards.info/scans/en/pc/48.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Sliver
+cost={4}{U}
+pt=3/3
+static=all
+timing=main
+requires_card_code
