@@ -8,4 +8,4 @@ subtype=Aura
 cost={4}{U}{U}
 timing=aura
 enchant=gain control,neg permanent
-requires_card_code
+requires_card_code=Control Magic
