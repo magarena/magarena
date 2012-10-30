@@ -1,0 +1,13 @@
+name=Sublime Archangel
+url=http://magiccards.info/m13/en/36.html
+image=http://magiccards.info/scans/en/m13/36.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Angel
+cost={2}{W}{W}
+pt=4/3
+ability=flying,exalted
+static=player
+timing=main
+requires_card_code
