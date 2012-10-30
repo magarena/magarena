@@ -1,0 +1,12 @@
+name=Spinneret Sliver
+url=http://magiccards.info/ts/en/219.html
+image=http://magiccards.info/scans/en/ts/219.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Sliver
+cost={1}{G}
+pt=2/2
+static=all
+timing=main
+requires_card_code
