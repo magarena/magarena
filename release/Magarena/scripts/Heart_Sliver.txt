@@ -1,0 +1,12 @@
+name=Heart Sliver
+url=http://magiccards.info/pds/en/7.html
+image=http://magiccards.info/scans/en/pds/7.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Sliver
+cost={1}{R}
+pt=1/1
+static=all
+timing=fmain
+requires_card_code
