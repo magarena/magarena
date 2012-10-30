@@ -13,11 +13,11 @@ public class Master_of_the_Pearl_Trident {
         MagicLayer.Ability,
         MagicTargetFilter.TARGET_MERFOLK_YOU_CONTROL) {
         @Override
-        public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
+        public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
             return flags | MagicAbility.Islandwalk.getMask();
         }
         @Override
-        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+        public boolean condition(final MagicGame game, final MagicPermanent source,final MagicPermanent target) {
             return source != target;
         }
     };
@@ -26,11 +26,11 @@ public class Master_of_the_Pearl_Trident {
         MagicLayer.ModPT,
         MagicTargetFilter.TARGET_MERFOLK_YOU_CONTROL) {
         @Override
-        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+        public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
             pt.add(1,1);
         }
         @Override
-        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+        public boolean condition(final MagicGame game, final MagicPermanent source,final MagicPermanent target) {
             return source != target;
         }
     };
