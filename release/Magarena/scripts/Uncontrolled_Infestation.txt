@@ -9,4 +9,4 @@ subtype=Aura
 cost={1}{R}
 timing=removal
 enchant=destroy,neg nonbasic land
-requires_card_code
+requires_card_code=Brink of Disaster

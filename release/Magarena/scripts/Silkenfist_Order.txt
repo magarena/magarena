@@ -8,4 +8,4 @@ subtype=Kor,Soldier
 cost={3}{W}{W}
 pt=3/5
 timing=main
-requires_card_code
+requires_card_code=Silkenfist Fighter
