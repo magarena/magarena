@@ -427,7 +427,7 @@ check_aura:
 check_requires_card_code:
 	diff \
 	<(ls -1 src/magic/card/*.java | cut -d'/' -f 4 | sed 's/.java//' | sort) \
-	<(grep requires_card_code release/Magarena/scripts/* | cut -d'/' -f4 | sed 's/.txt:.*//' | sort)
+	<(grep "requires_card_code$$" release/Magarena/scripts/* | cut -d'/' -f4 | sed 's/.txt:.*//' | sort)
 
 # script name is canoical card name
 check_script_name:
