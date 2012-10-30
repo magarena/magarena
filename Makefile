@@ -429,7 +429,7 @@ check_requires_card_code:
 	<(ls -1 src/magic/card/*.java | cut -d'/' -f 4 | sed 's/.java//' | sort) \
 	<(grep "requires_card_code$$" release/Magarena/scripts/* | cut -d'/' -f4 | sed 's/.txt:.*//' | sort)
 
-# script name is canoical card name
+# script name is canonical card name
 check_script_name:
 	diff \
 	<(ls -1 release/Magarena/scripts | sort) \
