@@ -1,0 +1,12 @@
+name=Blade Sliver
+url=http://magiccards.info/le/en/88.html
+image=http://magiccards.info/scans/en/le/88.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Sliver
+cost={2}{R}
+pt=2/2
+static=all
+timing=main
+requires_card_code
