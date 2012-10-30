@@ -6,4 +6,4 @@ rarity=C
 type=Sorcery
 cost={2}{U}
 timing=draw
-requires_card_code
+requires_card_code=Divination
