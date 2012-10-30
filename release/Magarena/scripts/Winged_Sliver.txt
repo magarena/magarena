@@ -1,0 +1,12 @@
+name=Winged Sliver
+url=http://magiccards.info/pds/en/4.html
+image=http://magiccards.info/scans/en/pds/4.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Sliver
+cost={1}{U}
+pt=1/1
+static=all
+timing=main
+requires_card_code
