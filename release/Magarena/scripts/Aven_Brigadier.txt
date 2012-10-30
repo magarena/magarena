@@ -1,0 +1,13 @@
+name=Aven Brigadier
+url=http://magiccards.info/on/en/7.html
+image=http://magiccards.info/scans/en/on/7.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Bird,Soldier
+cost={3}{W}{W}{W}
+ability=flying
+pt=3/5
+static=all
+timing=main
+requires_card_code
