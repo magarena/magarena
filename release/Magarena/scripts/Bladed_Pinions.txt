@@ -1,7 +1,7 @@
 name=Bladed Pinions
 url=http://magiccards.info/som/en/140.html
 image=http://magiccards.info/scans/en/som/140.jpg
-value=3.521
+value=3.527
 rarity=C
 type=Artifact
 subtype=Equipment

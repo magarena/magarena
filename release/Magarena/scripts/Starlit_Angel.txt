@@ -1,7 +1,7 @@
 name=Starlit Angel
 url=http://magiccards.info/po/en/192.html
 image=http://magiccards.info/scans/en/po/192.jpg 
-value=2.218
+value=2.205
 rarity=U
 type=Creature
 subtype=Angel

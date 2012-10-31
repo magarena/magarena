@@ -1,7 +1,7 @@
 name=Yavimaya Ancients
 url=http://magiccards.info/me2/en/190.html
 image=http://magiccards.info/scans/en/me2/190.jpg
-value=2.790
+value=2.828
 rarity=U
 type=Creature
 subtype=Treefolk

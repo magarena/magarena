@@ -1,7 +1,7 @@
 name=Ghostly Visit
 url=http://magiccards.info/me3/en/67.html
 image=http://magiccards.info/scans/en/me3/67.jpg
-value=2.477
+value=2.587
 removal=4
 rarity=C
 type=Sorcery

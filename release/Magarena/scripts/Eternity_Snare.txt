@@ -1,7 +1,7 @@
 name=Eternity Snare
 url=http://magiccards.info/ts/en/61.html
 image=http://magiccards.info/scans/en/ts/61.jpg
-value=0.976
+value=0.964
 removal=3
 rarity=C
 type=Enchantment

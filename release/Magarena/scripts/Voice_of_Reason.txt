@@ -1,7 +1,7 @@
 name=Voice of Reason
 url=http://magiccards.info/ud/en/24.html
 image=http://magiccards.info/scans/en/ud/24.jpg
-value=3.457
+value=3.438
 rarity=U
 type=Creature
 subtype=Angel

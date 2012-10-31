@@ -1,7 +1,7 @@
 name=Silver Erne
 url=http://magiccards.info/ia/en/98.html
 image=http://magiccards.info/scans/en/ia/98.jpg 
-value=2.539
+value=2.603
 rarity=U
 type=Creature
 subtype=Bird

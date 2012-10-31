@@ -1,7 +1,7 @@
 name=Grimgrin, Corpse-Born
 url=http://magiccards.info/isd/en/214.html
 image=http://magiccards.info/scans/en/isd/214.jpg
-value=4.013
+value=4.026
 rarity=M
 type=Legendary,Creature
 subtype=Zombie,Warrior

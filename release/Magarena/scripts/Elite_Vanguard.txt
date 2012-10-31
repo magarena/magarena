@@ -1,7 +1,7 @@
 name=Elite Vanguard
 url=http://magiccards.info/m12/en/15.html
 image=http://magiccards.info/scans/en/ddf/2.jpg
-value=4.013
+value=4.032
 rarity=U
 type=Creature
 subtype=Human,Soldier

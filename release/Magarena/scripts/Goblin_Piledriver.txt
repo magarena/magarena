@@ -1,7 +1,7 @@
 name=Goblin Piledriver
 url=http://magiccards.info/on/en/205.html
 image=http://magiccards.info/scans/en/on/205.jpg
-value=4.777
+value=4.781
 rarity=R
 type=Creature
 subtype=Goblin

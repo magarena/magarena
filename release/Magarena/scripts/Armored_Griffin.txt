@@ -1,7 +1,7 @@
 name=Armored Griffin
 url=http://magiccards.info/pc2/en/1.html
 image=http://magiccards.info/scans/en/pc2/1.jpg
-value=4.100
+value=3.708
 rarity=U
 type=Creature
 subtype=Griffin

@@ -1,7 +1,7 @@
 name=Kessig Recluse
 url=http://magiccards.info/dka/en/121.html
 image=http://magiccards.info/scans/en/dka/121.jpg
-value=3.151
+value=3.089
 rarity=C
 type=Creature
 subtype=Spider

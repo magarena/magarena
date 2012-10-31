@@ -1,7 +1,7 @@
 name=Thunder-Thrash Elder
 url=http://magiccards.info/pc2/en/53.html
 image=http://magiccards.info/scans/en/pc2/53.jpg
-value=3.100
+value=3.206
 rarity=U
 type=Creature
 subtype=Viashino,Warrior

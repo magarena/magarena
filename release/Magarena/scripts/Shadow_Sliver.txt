@@ -1,7 +1,7 @@
 name=Shadow Sliver
 url=http://magiccards.info/ts/en/76.html
 image=http://magiccards.info/scans/en/ts/76.jpg
-value=3
+value=3.122
 rarity=C
 type=Creature
 subtype=Sliver

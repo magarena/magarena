@@ -1,7 +1,7 @@
 name=Talonrend
 url=http://magiccards.info/eve/en/30.html
 image=http://magiccards.info/scans/en/eve/30.jpg
-value=1.202
+value=1.209
 rarity=U
 type=Creature
 subtype=Elemental

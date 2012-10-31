@@ -1,7 +1,7 @@
 name=Briarberry Cohort
 url=http://magiccards.info/shm/en/30.html
 image=http://magiccards.info/scans/en/shm/30.jpg
-value=2.717
+value=2.710
 rarity=C
 type=Creature
 subtype=Faerie,Soldier

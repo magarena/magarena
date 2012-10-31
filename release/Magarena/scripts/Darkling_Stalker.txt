@@ -1,7 +1,7 @@
 name=Darkling Stalker
 url=http://magiccards.info/tp/en/13.html
 image=http://magiccards.info/scans/en/tp/13.jpg
-value=3.308
+value=3.325
 rarity=C
 type=Creature
 subtype=Shade,Spirit

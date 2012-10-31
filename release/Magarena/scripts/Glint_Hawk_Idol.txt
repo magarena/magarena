@@ -1,7 +1,7 @@
 name=Glint Hawk Idol
 url=http://magiccards.info/som/en/156.html
 image=http://magiccards.info/scans/en/som/156.jpg
-value=3.974
+value=3.983
 rarity=C
 type=Artifact
 cost={2}

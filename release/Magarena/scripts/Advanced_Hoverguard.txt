@@ -1,7 +1,7 @@
 name=Advanced Hoverguard
 url=http://magiccards.info/5dn/en/22.html
 image=http://magiccards.info/scans/en/5dn/22.jpg
-value=2.474
+value=2.500
 rarity=C
 type=Creature
 subtype=Drone

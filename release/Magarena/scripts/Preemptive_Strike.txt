@@ -1,7 +1,7 @@
 name=Preemptive Strike
 url=http://magiccards.info/p3k/en/50.html
 image=http://magiccards.info/scans/en/p3k/50.jpg
-value=3.952
+value=4.000
 rarity=C
 type=Instant
 cost={1}{U}

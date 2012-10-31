@@ -1,7 +1,7 @@
 name=Urborg Volcano
 url=http://magiccards.info/in/en/330.html
 image=http://magiccards.info/scans/en/in/330.jpg
-value=3.683
+value=3.677
 rarity=U
 type=Land
 mana=b3r3

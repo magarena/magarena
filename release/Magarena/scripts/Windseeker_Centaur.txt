@@ -1,7 +1,7 @@
 name=Windseeker Centaur
 url=http://magiccards.info/mbp/en/7.html
 image=http://magiccards.info/scans/en/mbp/7.jpg
-value=3.212
+value=3.231
 rarity=R
 type=Creature
 subtype=Centaur

@@ -1,7 +1,7 @@
 name=Unquestioned Authority
 url=http://magiccards.info/ju/en/31.html
 image=http://magiccards.info/scans/en/ju/31.jpg
-value=4.204
+value=4.191
 rarity=U
 type=Enchantment
 subtype=Aura

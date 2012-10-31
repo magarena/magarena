@@ -1,7 +1,7 @@
 name=Rootbound Crag
 url=http://magiccards.info/m12/en/228.html
 image=http://magiccards.info/scans/en/m11/227.jpg
-value=4.148
+value=3.917
 rarity=R
 type=Land
 mana=r3g3

@@ -1,7 +1,7 @@
 name=Quiet Purity
 url=http://magiccards.info/chk/en/39.html
 image=http://magiccards.info/scans/en/chk/39.jpg
-value=3.750
+value=3.741
 removal=1
 rarity=C
 type=Instant

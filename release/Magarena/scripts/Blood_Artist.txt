@@ -1,7 +1,7 @@
 name=Blood Artist
 url=http://magiccards.info/avr/en/86.html
 image=http://magiccards.info/scans/en/avr/86.jpg
-value=4.113
+value=4.000
 rarity=U
 type=Creature
 subtype=Vampire

@@ -1,7 +1,7 @@
 name=Bull Cerodon
 url=http://magiccards.info/pch/en/84.html
 image=http://magiccards.info/scans/en/pch/84.jpg
-value=4.069
+value=4.017
 rarity=U
 type=Creature
 subtype=Beast

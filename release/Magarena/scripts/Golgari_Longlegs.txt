@@ -1,7 +1,7 @@
 name=Golgari Longlegs
 url=http://magiccards.info/rtr/en/216.html
 image=http://magiccards.info/scans/en/rtr/216.jpg
-value=2.188
+value=2.244
 rarity=C
 type=Creature
 subtype=Insect

@@ -1,7 +1,7 @@
 name=Mox Pearl
 url=http://magiccards.info/cedi/en/265.html
 image=http://magiccards.info/scans/en/cedi/265.jpg
-value=4.752
+value=4.756
 rarity=R
 type=Artifact
 cost={0}

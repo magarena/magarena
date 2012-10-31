@@ -1,7 +1,7 @@
 name=Winter's Grasp
 url=http://magiccards.info/tp/en/159.html
 image=http://magiccards.info/scans/en/tp/159.jpg
-value=3.600
+value=3.639
 removal=3
 rarity=U
 type=Sorcery

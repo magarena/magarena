@@ -1,7 +1,7 @@
 name=Calciderm
 url=http://magiccards.info/pc/en/23.html
 image=http://magiccards.info/scans/en/pc/23.jpg
-value=3.927
+value=3.966
 rarity=U
 type=Creature
 subtype=Beast

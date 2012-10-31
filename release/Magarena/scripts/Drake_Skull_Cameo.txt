@@ -1,7 +1,7 @@
 name=Drake-Skull Cameo
 url=http://magiccards.info/in/en/302.html
 image=http://magiccards.info/scans/en/in/302.jpg
-value=2.609
+value=2.625
 rarity=U
 type=Artifact
 cost={3}

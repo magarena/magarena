@@ -1,7 +1,7 @@
 name=Knightly Valor
 url=http://magiccards.info/rtr/en/13.html
 image=http://magiccards.info/scans/en/rtr/13.jpg
-value=3.850
+value=2.452
 rarity=C
 type=Enchantment
 subtype=Aura

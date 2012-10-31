@@ -1,7 +1,7 @@
 name=Eldrazi Monument
 url=http://magiccards.info/zen/en/199.html
 image=http://magiccards.info/scans/en/zen/199.jpg
-value=4.287
+value=4.289
 rarity=M
 type=Artifact
 cost={5}

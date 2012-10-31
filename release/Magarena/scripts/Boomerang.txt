@@ -1,7 +1,7 @@
 name=Boomerang
 url=http://magiccards.info/dpa/en/2.html
 image=http://magiccards.info/scans/en/10e/70.jpg
-value=4.379
+value=4.382
 rarity=C
 type=Instant
 cost={U}{U}

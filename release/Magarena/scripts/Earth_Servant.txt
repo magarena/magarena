@@ -1,7 +1,7 @@
 name=Earth Servant
 url=http://magiccards.info/m11/en/134.html
 image=http://magiccards.info/scans/en/m11/134.jpg
-value=2.636
+value=2.667
 rarity=U
 type=Creature
 subtype=Elemental

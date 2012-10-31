@@ -1,7 +1,7 @@
 name=Righteous Avengers
 url=http://magiccards.info/med/en/25.html
 image=http://magiccards.info/scans/en/med/25.jpg
-value=1.188
+value=1.161
 rarity=C
 type=Creature
 subtype=Human,Soldier

@@ -1,7 +1,7 @@
 name=Ravenous Baloth
 url=http://magiccards.info/gvl/en/8.html
 image=http://magiccards.info/scans/en/gvl/8.jpg
-value=4.481
+value=4.491
 rarity=R
 type=Creature
 subtype=Beast

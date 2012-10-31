@@ -1,7 +1,7 @@
 name=Nimbus Wings
 url=http://magiccards.info/zen/en/28.html
 image=http://magiccards.info/scans/en/zen/28.jpg
-value=2.984
+value=2.985
 rarity=C
 type=Enchantment
 subtype=Aura

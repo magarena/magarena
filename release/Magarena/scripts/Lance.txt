@@ -1,7 +1,7 @@
 name=Lance
 url=http://magiccards.info/ced/en/213.html
 image=http://magiccards.info/scans/en/ced/213.jpg
-value=2.351
+value=2.329
 rarity=U
 type=Enchantment
 subtype=Aura

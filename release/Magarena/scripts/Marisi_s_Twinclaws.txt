@@ -1,7 +1,7 @@
 name=Marisi's Twinclaws
 url=http://magiccards.info/ddh/en/17.html
 image=http://magiccards.info/scans/en/arb/140.jpg
-value=3.263
+value=3.300
 rarity=U
 type=Creature
 subtype=Cat,Warrior

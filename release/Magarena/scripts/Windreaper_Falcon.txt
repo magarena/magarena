@@ -1,7 +1,7 @@
 name=Windreaper Falcon
 url=http://magiccards.info/mr/en/349.html
 image=http://magiccards.info/scans/en/mr/349.jpg
-value=2.342
+value=2.412
 rarity=U
 type=Creature
 subtype=Bird

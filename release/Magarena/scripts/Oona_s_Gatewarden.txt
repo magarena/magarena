@@ -1,7 +1,7 @@
 name=Oona's Gatewarden
 url=http://magiccards.info/shm/en/173.html
 image=http://magiccards.info/scans/en/shm/173.jpg 
-value=3.717
+value=3.741
 ability=defender,flying,wither
 rarity=C
 type=Creature

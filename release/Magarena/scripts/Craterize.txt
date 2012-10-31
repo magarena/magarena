@@ -1,7 +1,7 @@
 name=Craterize
 url=http://magiccards.info/m13/en/126.html
 image=http://magiccards.info/scans/en/m13/126.jpg
-value=1.044
+value=1.109
 removal=3
 rarity=C
 type=Sorcery

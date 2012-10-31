@@ -1,7 +1,7 @@
 name=Glen Elendra Liege
 url=http://magiccards.info/shm/en/163.html
 image=http://magiccards.info/scans/en/shm/163.jpg
-value=3.633
+value=3.438
 rarity=R
 type=Creature
 subtype=Faerie,Knight

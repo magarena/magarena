@@ -1,7 +1,7 @@
 name=Bellows Lizard
 url=http://magiccards.info/rtr/en/88.html
 image=http://magiccards.info/scans/en/rtr/88.jpg
-value=1.964
+value=1.919
 rarity=C
 type=Creature
 subtype=Lizard

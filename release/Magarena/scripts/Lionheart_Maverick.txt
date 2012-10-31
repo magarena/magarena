@@ -1,7 +1,7 @@
 name=Lionheart Maverick
 url=http://magiccards.info/ddg/en/3.html
 image=http://magiccards.info/scans/en/ddg/3.jpg
-value=3.159
+value=3.220
 rarity=C
 type=Creature
 subtype=Human,Knight
