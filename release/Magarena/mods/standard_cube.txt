@@ -42,6 +42,7 @@ Asceticism
 Ashmouth Hound
 Assault Griffin
 Assault Strobe
+Attended Knight
 Auramancer
 Auriok Edgewright
 Auriok Sunchaser
@@ -172,6 +173,7 @@ Darksteel Axe
 Darksteel Juggernaut
 Darksteel Myr
 Darksteel Plate
+Darksteel Relic
 Darksteel Sentinel
 Darkthicket Wolf
 Day of Judgment
@@ -269,6 +271,7 @@ Fiery Hellhound
 Fire Elemental
 Flameblast Dragon
 Flameborn Hellion
+Flameborn Viron
 Flashfreeze
 Flayer Husk
 Fleeting Distraction
@@ -460,6 +463,7 @@ Markov Patrician
 Mask of Avacyn
 Massacre Wurm
 Mass Appeal
+Master of the Pearl Trident
 Master Splicer
 Master Thief
 Maul Splicer
@@ -499,6 +503,7 @@ Murder
 Murder of Crows
 Myr Galvanizer
 Myr Propagator
+Myr Sire
 Myrsmith
 Narstad Scrapper
 Natural End
@@ -710,6 +715,7 @@ Thought Scour
 Thraben Doomsayer
 Thraben Purebloods
 Thraben Valiant
+Thragtusk
 Thran Golem
 Thrun, the Last Troll
 Thunderous Wrath
@@ -753,6 +759,7 @@ Vapor Snag
 Vastwood Gorger
 Vault of the Archangel
 Vault Skyward
+Vector Asp
 Vedalken Certarch
 Vengeful Vampire
 Vessel of Endless Rest

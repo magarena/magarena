@@ -67,6 +67,7 @@ Ashmouth Hound
 Assassinate
 Assault Griffin
 Assault Strobe
+Attended Knight
 Auramancer
 Auriok Edgewright
 Auriok Sunchaser
@@ -267,6 +268,7 @@ Darksteel Axe
 Darksteel Juggernaut
 Darksteel Myr
 Darksteel Plate
+Darksteel Relic
 Darksteel Sentinel
 Darkthicket Wolf
 Dauntless Escort
@@ -402,6 +404,7 @@ Fire Elemental
 Fire Servant
 Flameblast Dragon
 Flameborn Hellion
+Flameborn Viron
 Flame Slash
 Flashfreeze
 Flayer Husk
@@ -728,6 +731,7 @@ Mask of Riddles
 Massacre Wurm
 Mass Appeal
 Master of Etherium
+Master of the Pearl Trident
 Master Splicer
 Master Thief
 Maul Splicer
@@ -780,6 +784,7 @@ Mycoid Shepherd
 Mycoloth
 Myr Galvanizer
 Myr Propagator
+Myr Sire
 Myrsmith
 Nacatl Outlander
 Nantuko Shade
@@ -821,6 +826,11 @@ Novablast Wurm
 Null Champion
 Nulltread Gargantuan
 Nyxathid
+Obelisk of Bant
+Obelisk of Esper
+Obelisk of Grixis
+Obelisk of Jund
+Obelisk of Naya
 Oblivion Ring
 Oculus
 Offering to Asha
@@ -1132,10 +1142,12 @@ Thought Scour
 Thraben Doomsayer
 Thraben Purebloods
 Thraben Valiant
+Thragtusk
 Thran Golem
 Thrun, the Last Troll
 Thunderous Wrath
 Thunder Strike
+Thunder-Thrash Elder
 Tidehollow Strix
 Timberland Guide
 Timely Reinforcements
@@ -1161,6 +1173,7 @@ True Conviction
 Trumpet Blast
 Trusted Forcemage
 Trusty Machete
+Tukatongue Thallid
 Tuktuk Grunts
 Tuktuk Scrapper
 Tuktuk the Explorer
@@ -1199,6 +1212,7 @@ Vastwood Gorger
 Vault of the Archangel
 Vault Skyward
 Vectis Silencers
+Vector Asp
 Vedalken Certarch
 Vedalken Ghoul
 Vedalken Outlander

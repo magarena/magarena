@@ -109,6 +109,7 @@ Assassinate
 Assault Griffin
 Assault Strobe
 Assault Zeppelid
+Attended Knight
 Augur il-Vec
 Auramancer
 Auriok Edgewright
@@ -154,6 +155,7 @@ Bar the Door
 Basalt Gargoyle
 Basilisk Collar
 Battered Golem
+Battering Sliver
 Batterskull
 Battlegrace Angel
 Battleground Geist
@@ -241,6 +243,7 @@ Bonebreaker Giant
 Bonehoard
 Bone Saw
 Bonesplitter
+Bonesplitter Sliver
 Bone to Ash
 Boneyard Wurm
 Bonfire of the Damned
@@ -343,6 +346,7 @@ Cloud Elemental
 Cloudheath Drake
 Cloudshift
 Cloud Sprite
+Coastal Tower
 Cobalt Golem
 Cobbled Wings
 Colossal Might
@@ -417,6 +421,7 @@ Darksteel Ingot
 Darksteel Juggernaut
 Darksteel Myr
 Darksteel Plate
+Darksteel Relic
 Darksteel Sentinel
 Darkthicket Wolf
 Dauntless Escort
@@ -538,6 +543,7 @@ Elder Cathar
 Elder of Laurels
 Eldrazi Monument
 Elesh Norn, Grand Cenobite
+Elfhame Palace
 Elgaud Inquisitor
 Elgaud Shieldmate
 Elite Inquisitor
@@ -572,6 +578,7 @@ Esper Stormblade
 Essence Drain
 Essence Harvest
 Essence Scatter
+Essence Sliver
 Etched Champion
 Eternal Witness
 Eternity Snare
@@ -624,6 +631,7 @@ Fists of Ironwood
 Fists of the Anvil
 Flameblast Dragon
 Flameborn Hellion
+Flameborn Viron
 Flamecore Elemental
 Flame-Kin Zealot
 Flame Slash
@@ -784,6 +792,7 @@ Graypelt Refuge
 Grayscaled Gharial
 Grazing Gladehart
 Greater Basilisk
+Greater Forgeling
 Great Sable Stag
 Greatsword
 Griffin Guide
@@ -934,6 +943,7 @@ Isolated Chapel
 Jace's Ingenuity
 Jade Mage
 Jagwasp Swarm
+Jasmine Boreal
 Jayemdae Tome
 Jedit's Dragoons
 Jenara, Asura of War
@@ -1071,6 +1081,7 @@ Loam Lion
 Lone Missionary
 Looming Shade
 Looter il-Kor
+Lord of Atlantis
 Lord of Extinction
 Lord of Shatterskull Pass
 Lord of the Undead
@@ -1127,8 +1138,9 @@ Mask of Memory
 Mask of Riddles
 Massacre Wurm
 Mass Appeal
-Mass of Ghouls
+Mass Hysteria
 Master of Etherium
+Master of the Pearl Trident
 Master Splicer
 Master Thief
 Maul Splicer
@@ -1152,6 +1164,7 @@ Midnight Duelist
 Midnight Guard
 Midnight Haunting
 Might of Oaks
+Might Sliver
 Mighty Leap
 Mikaeus, the Lunarch
 Mikaeus, the Unhallowed
@@ -1211,6 +1224,7 @@ Mycoid Shepherd
 Mycoloth
 Myr Galvanizer
 Myr Propagator
+Myr Sire
 Myrsmith
 Mystic Snake
 Nacatl Outlander
@@ -1272,6 +1286,11 @@ Null Champion
 Nulltread Gargantuan
 Nyxathid
 Oakgnarl Warrior
+Obelisk of Bant
+Obelisk of Esper
+Obelisk of Grixis
+Obelisk of Jund
+Obelisk of Naya
 Oblivion Ring
 Oculus
 Odious Trow
@@ -1313,6 +1332,7 @@ Peace Strider
 Pegasus Charger
 Pelakka Wurm
 Pendelhaven
+Penumbra Spider
 Peregrine Griffin
 Peregrine Mask
 Perilous Myr
@@ -1423,6 +1443,7 @@ Reclaim
 Recollect
 Recover
 Reflexes
+Reflex Sliver
 Reforge the Soul
 Reiterate
 Relentless Rats
@@ -1448,6 +1469,7 @@ Righteous Blow
 Righteousness
 Riot Devils
 Riot Ringleader
+Riot Spikes
 Rip-Clan Crasher
 Rise from the Grave
 Rise of the Hobgoblins
@@ -1491,9 +1513,11 @@ Sacred Foundry
 Sacred Wolf
 Safehold Elite
 Safe Passage
+Salt Marsh
 Samite Healer
 Samurai Enforcers
 Sanctuary Cat
+Sandstone Warrior
 Sangromancer
 Sanguine Bond
 Savage Lands
@@ -1557,6 +1581,7 @@ Servant of Nefarox
 Severed Legion
 Sewn-Eye Drake
 Shadowmage Infiltrator
+Shadow Sliver
 Sharpened Pitchfork
 Shattered Angel
 Shattering Spree
@@ -1567,6 +1592,7 @@ Shepherd of the Lost
 Shield of the Righteous
 Shivan Dragon
 Shivan Hellkite
+Shivan Oasis
 Shock
 Shore Snapper
 Shriekgeist
@@ -1596,6 +1622,7 @@ Silver-Inlaid Dagger
 Silver Myr
 Silverstorm Samurai
 Simic Sky Swallower
+Sinew Sliver
 Skarrg, the Rage Pits
 Skeletal Changeling
 Skeletal Vampire
@@ -1683,6 +1710,7 @@ Spiked Baloth
 Spiketail Hatchling
 Spined Wurm
 Spineless Thug
+Spinneret Sliver
 Spiraling Duelist
 Spire Monitor
 Spirit Away
@@ -1770,6 +1798,7 @@ Sword of Vengeance
 Sword of War and Peace
 Sylvan Basilisk
 Sylvok Lifestaff
+Synchronous Sliver
 Szadek, Lord of Secrets
 Tajuru Archer
 Takeno's Cavalry
@@ -1811,6 +1840,7 @@ Thousand-legged Kami
 Thraben Doomsayer
 Thraben Purebloods
 Thraben Valiant
+Thragtusk
 Thran Golem
 Threaten
 Thrun, the Last Troll
@@ -1818,6 +1848,7 @@ Thundering Giant
 Thunderous Wrath
 Thundersong Trumpeter
 Thunder Strike
+Thunder-Thrash Elder
 Tidal Kraken
 Tidehollow Strix
 Tidewalker
@@ -1852,6 +1883,7 @@ Tree of Redemption
 Treetop Bracers
 Treetop Village
 Trespasser il-Vec
+Tresserhorn Sinks
 Tribute to Hunger
 Tricks of the Trade
 Trip Noose
@@ -1864,6 +1896,7 @@ Trumpet Blast
 Trusted Forcemage
 Trusty Machete
 Trygon Predator
+Tukatongue Thallid
 Tuktuk Grunts
 Tuktuk Scrapper
 Tuktuk the Explorer
@@ -1894,6 +1927,7 @@ Unstoppable Ash
 Unsummon
 Untamed Might
 Urabrask the Hidden
+Urborg Volcano
 Urgent Exorcism
 Ursapine
 Uthden Troll
@@ -1914,6 +1948,7 @@ Vastwood Gorger
 Vault of the Archangel
 Vault Skyward
 Vectis Silencers
+Vector Asp
 Vedalken Certarch
 Vedalken Ghoul
 Vedalken Mastermind
@@ -1932,6 +1967,7 @@ Veteran Cavalier
 Veteran of the Depths
 Veteran's Reflexes
 Veteran Swordsmith
+Viashino Fangtail
 Viashino Spearhunter
 Victim of Night
 Victory's Herald
@@ -1999,6 +2035,7 @@ Warpath Ghoul
 War-Spike Changeling
 Warstorm Surge
 Wasp Lancer
+Watcher Sliver
 Watchwolf
 Watercourser
 Watery Grave
@@ -2031,6 +2068,7 @@ Wistful Selkie
 Witherscale Wurm
 Withstand
 Withstand Death
+Wizened Cenn
 Wolfbriar Elemental
 Wolfir Avenger
 Wolfir Silverheart
