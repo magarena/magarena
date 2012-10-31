@@ -13,6 +13,10 @@ public class MagicPlayTokenAction extends MagicPutIntoPlayAction {
     public MagicPlayTokenAction(final MagicPlayer player,final MagicCardDefinition cardDefinition) {
         card=MagicCard.createTokenCard(cardDefinition,player);
     }
+    
+    public MagicPlayTokenAction(final MagicCard aCard) {
+        card=aCard;
+    }
 
     @Override
     protected MagicPermanent createPermanent(final MagicGame game) {

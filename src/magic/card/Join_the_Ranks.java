@@ -4,7 +4,7 @@ import magic.data.TokenCardDefinitions;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPlayer;
-import magic.model.action.MagicPlayTokenAction;
+import magic.model.action.MagicPlayTokensAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
@@ -23,9 +23,10 @@ public class Join_the_Ranks {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            game.doAction(2, new MagicPlayTokenAction(
+            game.doAction(new MagicPlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("Soldier Ally")
+                TokenCardDefinitions.get("Soldier Ally"),
+                2
             ));
         }
     };

@@ -4,7 +4,7 @@ import magic.data.TokenCardDefinitions;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.action.MagicPlayTokenAction;
+import magic.model.action.MagicPlayTokensAction;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicWhenAttacksTrigger;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
@@ -24,9 +24,10 @@ public class Grave_Titan {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            game.doAction(2, new MagicPlayTokenAction(
+            game.doAction(new MagicPlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("Zombie")
+                TokenCardDefinitions.get("Zombie"),
+                2
             ));
         }        
     };
@@ -47,9 +48,10 @@ public class Grave_Titan {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            game.doAction(2, new MagicPlayTokenAction(
+            game.doAction(new MagicPlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("Zombie")
+                TokenCardDefinitions.get("Zombie"),
+                2
             ));
         }        
     };

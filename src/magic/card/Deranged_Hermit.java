@@ -5,7 +5,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
-import magic.model.action.MagicPlayTokenAction;
+import magic.model.action.MagicPlayTokensAction;
 import magic.model.event.MagicEvent;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
@@ -37,9 +37,10 @@ public class Deranged_Hermit {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            game.doAction(2, new MagicPlayTokenAction(
+            game.doAction(new MagicPlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("Squirrel1")
+                TokenCardDefinitions.get("Squirrel1"),
+                4
             ));
         }        
     };

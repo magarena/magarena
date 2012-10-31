@@ -8,7 +8,7 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.action.MagicChangeCountersAction;
-import magic.model.action.MagicPlayTokenAction;
+import magic.model.action.MagicPlayTokensAction;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
@@ -65,9 +65,10 @@ public class Twilight_Drover {
         }
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
-            game.doAction(2, new MagicPlayTokenAction(
+            game.doAction(new MagicPlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("Spirit2")
+                TokenCardDefinitions.get("Spirit2"),
+                2
             ));
         }
     };

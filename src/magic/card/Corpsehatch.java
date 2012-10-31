@@ -7,7 +7,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicPermanentAction;
-import magic.model.action.MagicPlayTokenAction;
+import magic.model.action.MagicPlayTokensAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
@@ -35,9 +35,10 @@ public class Corpsehatch {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicDestroyAction(creature));
-                    game.doAction(2, new MagicPlayTokenAction(
+                    game.doAction(new MagicPlayTokensAction(
                         event.getPlayer(),
-                        TokenCardDefinitions.get("Eldrazi Spawn")
+                        TokenCardDefinitions.get("Eldrazi Spawn"),
+                        2
                     ));
                 }
             });

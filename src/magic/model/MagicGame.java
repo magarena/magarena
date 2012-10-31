@@ -479,12 +479,6 @@ public class MagicGame {
         delayedActions.add(action);
     }
     
-    public void doAction(final int count, final MagicAction action) {
-        for (int i = 0; i < count; i++) {
-            doAction(action);
-        }
-    }
-        
     public void doAction(final MagicAction action) {
         actions.add(action);
 
@@ -519,7 +513,15 @@ public class MagicGame {
         MagicAction action;
         do {
             action = actions.removeLast();
-            action.undoAction(this);
+            try {
+                action.undoAction(this);
+            } catch (Throwable ex) {
+                MagicGameReport.buildReport(INSTANCE, Thread.currentThread(), ex);
+                if (this != INSTANCE) {
+                    MagicGameReport.buildReport(this, Thread.currentThread(), ex);
+                }
+                System.exit(1);
+            }
         } while (!(action instanceof MagicMarkerAction));
     }
     

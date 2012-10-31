@@ -5,7 +5,7 @@ import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.action.MagicPlayTokenAction;
+import magic.model.action.MagicPlayTokensAction;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 
@@ -29,9 +29,10 @@ public class Mycoloth {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final int amt = event.getPermanent().getCounters(MagicCounterType.PlusOne); 
-            game.doAction(amt, new MagicPlayTokenAction(
+            game.doAction(new MagicPlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("Saproling")
+                TokenCardDefinitions.get("Saproling"),
+                amt
             ));
         }
     };

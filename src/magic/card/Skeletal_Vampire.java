@@ -7,7 +7,7 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.action.MagicPlayTokenAction;
+import magic.model.action.MagicPlayTokensAction;
 import magic.model.action.MagicRegenerateAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
@@ -52,9 +52,10 @@ public class Skeletal_Vampire {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            game.doAction(2, new MagicPlayTokenAction(
+            game.doAction(new MagicPlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("Bat")
+                TokenCardDefinitions.get("Bat"),
+                2
             ));
         }
     };
@@ -110,9 +111,10 @@ public class Skeletal_Vampire {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            game.doAction(2, new MagicPlayTokenAction(
+            game.doAction(new MagicPlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("Bat")
+                TokenCardDefinitions.get("Bat"),
+                2
             ));
         }        
     };

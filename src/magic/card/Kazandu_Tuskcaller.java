@@ -7,7 +7,7 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.action.MagicPlayTokenAction;
+import magic.model.action.MagicPlayTokensAction;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
@@ -49,9 +49,10 @@ public class Kazandu_Tuskcaller {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            game.doAction(event.getRefInt(), new MagicPlayTokenAction(
+            game.doAction(new MagicPlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("Elephant")
+                TokenCardDefinitions.get("Elephant"),
+                event.getRefInt()
             ));
         }
     };

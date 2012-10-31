@@ -4,7 +4,7 @@ import magic.data.TokenCardDefinitions;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicPlayTokenAction;
+import magic.model.action.MagicPlayTokensAction;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicWhenLeavesPlayTrigger;
 
@@ -29,9 +29,10 @@ public class Jotun_Owl_Keeper {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            game.doAction(event.getRefInt(), new MagicPlayTokenAction(
+            game.doAction(new MagicPlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("Bird1")
+                TokenCardDefinitions.get("Bird1"),
+                event.getRefInt()
             ));
         }
     };
