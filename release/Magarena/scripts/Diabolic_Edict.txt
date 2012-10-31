@@ -1,0 +1,10 @@
+name=Diabolic Edict
+url=http://magiccards.info/tp/en/22.html
+image=http://magiccards.info/scans/en/tp/22.jpg
+value=4.800
+removal=3
+rarity=C
+type=Instant
+cost={1}{B}
+timing=removal
+requires_card_code=Cruel Edict
