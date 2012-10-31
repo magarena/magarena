@@ -54,6 +54,50 @@ Thank you for your support and have fun!
 
 
 
+Release 1.31 (October 31, 2012)
+============
+includes contributions from melvin, a. benedict balbuena, kdesmond, and Erkcan Özcan
+
+- added ability "tap pain add mana" to card script
+- added ability "combat damage discard random card" to card script
+- requires_card_code property can now specify a card name to reuse the card
+  code for another card, e.g. requires_card_code=Cruel Edict
+
+- fixed: Essence Drain only gains life if target is valid on resolution
+
+- added the following cards:
+Archweaver, Armada Wurm, Attended Knight, Aven Brigadier, Axebane Stag,
+Azorius Guildgate, Barbtooth Wurm, Battering Sliver, Beetleback Chief,
+Bellows Lizard, Blade Sliver, Blistering Barrier, Bloodstone Cameo,
+Bonesplitter Sliver, Brushstrider, Catacomb Slug, Centaur Healer,
+Charcoal Diamond, Coastal Tower, Cobblebrute, Concordia Pegasus,
+Crash of Rhinos, Crystalline Sliver, Daggerdrome Imp, Darksteel Relic,
+Devoted Hero, Diabolic Edict, Elfhame Palace, Essence Sliver, Fencing Ace,
+Feral Shadow, Fire Diamond, Flameborn Viron, Frostburn Weird,
+Golgari Guildgate, Golgari Longlegs, Grand Coliseum, Greater Forgeling,
+Headless Horseman, Heart Sliver, Horned Sliver, Hornet Queen, Hover Barrier,
+Hulking Goblin, Hulking Ogre, Hussar Patrol, Independent Troops,
+Izzet Guildgate, Jasmine Boreal, Knightly Valor, Lady Orca, Lightning Hounds,
+Lord of Atlantis, Marble Diamond, Mass Hysteria, Master of the Pearl Trident,
+Meng Huo, Barbarian King, Metathran Soldier, Might Sliver, Minotaur Aggressor,
+Moss Diamond, Muscle Sliver, Myr Sire, Obelisk of Bant, Obelisk of Esper,
+Obelisk of Grixis, Obelisk of Jund, Obelisk of Naya, Obsianus Golem,
+Penumbra Bobcat, Penumbra Kavu, Penumbra Spider, Penumbra Wurm,
+Perilous Shadow, Plated Sliver, Pygmy Pyrosaur, Rakdos Guildgate,
+Rakdos Ragemutt, Rakdos Ringleader, Rakdos Shred-Freak, Razorfin Hunter,
+Reflex Sliver, Riot Spikes, Risen Sanctuary, Rootwater Hunter,
+Rubbleback Rhino, Runewing, Salt Marsh, Sandstone Warrior, Seashell Cameo,
+Selesnya Guildgate, Selesnya Sentry, Seller of Songbirds, Shadow Sliver,
+Shambling Strider, Shivan Oasis, Sinew Sliver, Sky Diamond, Skyline Predator,
+Southern Elephant, Spinneret Sliver, Stonefare Crocodile, Sunspire Griffin,
+Symbiotic Beast, Symbiotic Elf, Symbiotic Wurm, Synapse Sliver,
+Synchronous Sliver, Tenement Crasher, Thragtusk, Thunder-Thrash Elder,
+Tigereye Cameo, Towering Indrik, Trained Caracal, Tresserhorn Sinks,
+Trestle Troll, Troll-Horn Cameo, Tukatongue Thallid, Twisted Experiment,
+Urborg Elf, Urborg Volcano, Vassal Soul, Vector Asp, Viashino Fangtail,
+Wall of Heat, Watcher Sliver, Winged Sliver, Wizened Cenn, Yavimaya Ancients,
+Zuberi, Golden Feather, Zuran Spellcaster
+
 Release 1.30 (September 30, 2012)
 ============
 includes contributions from melvin, a. benedict balbuena, and kdesmond
