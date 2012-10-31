@@ -84,6 +84,7 @@ Archangel
 Archangel's Light
 Archon of Justice
 Archon of Redemption
+Archweaver
 Archwing Dragon
 Arc Runner
 Arctic Nishoba
@@ -91,6 +92,7 @@ Ardent Militia
 Ardent Recruit
 Argent Sphinx
 Argentum Armor
+Armada Wurm
 Armament Master
 Armored Cancrix
 Armored Skaab
@@ -130,7 +132,9 @@ Aven Riftwatcher
 Aven Squire
 Avian Changeling
 Awakening Zone
+Axebane Stag
 Axegrinder Giant
+Azorius Guildgate
 Azure Drake
 Azure Mage
 Back to Nature
@@ -171,6 +175,7 @@ Beastmaster's Magemark
 Beguiler of Wills
 Behemoth Sledge
 Bellowing Tanglewurm
+Bellows Lizard
 Belltower Sphinx
 Benalish Cavalry
 Benalish Knight
@@ -270,6 +275,7 @@ Brink of Disaster
 Brion Stoutarm
 Brittle Effigy
 Broodmate Dragon
+Brushstrider
 Bull Cerodon
 Burden of Guilt
 Burning Inquiry
@@ -302,6 +308,7 @@ Carnifex Demon
 Carrion Call
 Carrion Wall
 Carven Caryatid
+Catacomb Slug
 Cathars' Crusade
 Cathedral of War
 Cathedral Sanctifier
@@ -311,6 +318,7 @@ Celestial Colonnade
 Celestial Purge
 Cemetery Reaper
 Centaur Courser
+Centaur Healer
 Cerodon Yearling
 Chain Reaction
 Chameleon Colossus
@@ -348,11 +356,13 @@ Cloudshift
 Cloud Sprite
 Coastal Tower
 Cobalt Golem
+Cobblebrute
 Cobbled Wings
 Colossal Might
 Coma Veil
 Combust
 Commander's Authority
+Concordia Pegasus
 Concussive Bolt
 Condemn
 Confiscate
@@ -408,6 +418,7 @@ Cylian Elf
 Cystbearer
 Daggerback Basilisk
 Daggerclaw Imp
+Daggerdrome Imp
 Damnation
 Dancing Scimitar
 Dark Favor
@@ -612,6 +623,7 @@ Favor of the Woods
 Fear
 Feebleness
 Femeref Archers
+Fencing Ace
 Feral Ridgewolf
 Ferrovore
 Fervent Cathar
@@ -659,6 +671,7 @@ Fortress Crab
 Foul Imp
 Frenzied Goblin
 Frightful Delusion
+Frostburn Weird
 Frost Ogre
 Frost Titan
 Fugitive Wizard
@@ -771,6 +784,8 @@ Goldnight Commander
 Goldnight Redeemer
 Golem Foundry
 Golem's Heart
+Golgari Guildgate
+Golgari Longlegs
 Goliath Sphinx
 Goliath Spider
 Gorehorn Minotaurs
@@ -860,6 +875,7 @@ Heirs of Stromkirk
 Hellkite Overlord
 Hellrider
 Henchfiend of Ukor
+Heroes' Reunion
 Hero of Bladehold
 Hideous End
 Hideous Visage
@@ -887,6 +903,7 @@ Horned Turtle
 Hornet Sting
 Horseshoe Crab
 Hound of Griselbrand
+Hover Barrier
 Hoverguard Observer
 Hovermyr
 Howling Mine
@@ -898,6 +915,7 @@ Hunger of the Howlpack
 Hungry Spriggan
 Hunting Moa
 Hurricane
+Hussar Patrol
 Hyena Umbra
 Hypnotic Specter
 Hysterical Blindness
@@ -940,6 +958,7 @@ Isamaru, Hound of Konda
 Isao, Enlightened Bushi
 Island
 Isolated Chapel
+Izzet Guildgate
 Jace's Ingenuity
 Jade Mage
 Jagwasp Swarm
@@ -1013,6 +1032,7 @@ Kitsune Blademaster
 Kitsune Dawnblade
 Kjeldoran Javelineer
 Knight Exemplar
+Knightly Valor
 Knight of Cliffhaven
 Knight of Glory
 Knight of Infamy
@@ -1173,6 +1193,7 @@ Mind Rot
 Mindshrieker
 Mind Spring
 Mind Stone
+Minotaur Aggressor
 Mire Boa
 Mirran Crusader
 Mirri, Cat Warrior
@@ -1336,6 +1357,7 @@ Penumbra Spider
 Peregrine Griffin
 Peregrine Mask
 Perilous Myr
+Perilous Shadow
 Perimeter Captain
 Persuasion
 Pestilent Kathari
@@ -1416,7 +1438,11 @@ Raging Poltergeist
 Raging Ravine
 Rain of Tears
 Raise Dead
+Rakdos Guildgate
 Rakdos Guildmage
+Rakdos Ragemutt
+Rakdos Ringleader
+Rakdos Shred-Freak
 Raking Canopy
 Rakish Heir
 Raksha Golden Cub
@@ -1472,6 +1498,7 @@ Riot Ringleader
 Riot Spikes
 Rip-Clan Crasher
 Rise from the Grave
+Risen Sanctuary
 Rise of the Hobgoblins
 Rite of Replication
 Rites of Flourishing
@@ -1498,9 +1525,11 @@ Rotting Fensnake
 Rotting Legion
 Roughshod Mentor
 Royal Assassin
+Rubbleback Rhino
 Rumbling Slum
 Rune-Cervin Rider
 Runeclaw Bear
+Runewing
 Rupture Spire
 Rush of Blood
 Rushwood Dryad
@@ -1562,8 +1591,11 @@ Seaside Citadel
 Seedborn Muse
 Seer's Sundial
 Sejiri Refuge
+Selesnya Guildgate
+Selesnya Sentry
 Selfless Cathar
 Selhoff Occultist
+Seller of Songbirds
 Sensor Splicer
 Sensory Deprivation
 Sentinels of Glen Elendra
@@ -1642,6 +1674,7 @@ Skyhunter Patrol
 Skyhunter Prowler
 Skyhunter Skirmisher
 Skyknight Legionnaire
+Skyline Predator
 Sky Ruin Drake
 Skyshroud Ranger
 Skywatcher Adept
@@ -1743,6 +1776,7 @@ Stitcher's Apprentice
 Stomper Cub
 Stomping Ground
 Stonebrow, Krosan Hero
+Stonefare Crocodile
 Stone Golem
 Stone Rain
 Stonework Puma
@@ -1777,6 +1811,7 @@ Sunder from Within
 Sunhome, Fortress of the Legion
 Sunpetal Grove
 Sunspear Shikari
+Sunspire Griffin
 Sunspring Expedition
 Suntail Hawk
 Sun Titan
@@ -1823,6 +1858,7 @@ Temple Garden
 Temporal Isolation
 Temporal Mastery
 Teneb, the Harvester
+Tenement Crasher
 Terminate
 Terminus
 Terra Stomper
@@ -1869,10 +1905,13 @@ Torch Fiend
 Torii Watchward
 Tormented Soul
 Torpor Dust
+Tower Drake
 Tower Gargoyle
+Towering Indrik
 Toxic Nim
 Tragic Slip
 Trained Armodon
+Trained Caracal
 Train of Thought
 Traitorous Blood
 Transcendent Master
@@ -1884,6 +1923,7 @@ Treetop Bracers
 Treetop Village
 Trespasser il-Vec
 Tresserhorn Sinks
+Trestle Troll
 Tribute to Hunger
 Tricks of the Trade
 Trip Noose
@@ -1944,6 +1984,7 @@ Vampiric Fury
 Vampiric Spirit
 Vanishment
 Vapor Snag
+Vassal Soul
 Vastwood Gorger
 Vault of the Archangel
 Vault Skyward
