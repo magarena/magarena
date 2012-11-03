@@ -1169,6 +1169,22 @@ kicker {u}
 kicker {w}
 kicker {w}{w}
 kicker {x}
+level up {1}
+level up {1}{b}
+level up {1}{g}
+level up {1}{r}
+level up {1}{u}
+level up {2}
+level up {2}{b}
+level up {2}{g}
+level up {2}{u}
+level up {2}{w}
+level up {3}
+level up {3}{r}
+level up {4}
+level up {r}
+level up {u}
+level up {w}
 lifelink
 living weapon
 modular 1

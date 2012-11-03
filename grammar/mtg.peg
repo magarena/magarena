@@ -132,6 +132,7 @@ Keyword
     / "equip" SPACE ManaCost
     / "cumulative upkeep" SPACE ManaCost
     / "replicate" SPACE ManaCost
+    / "level up" SPACE ManaCost
     / "@ can't block."
     / "@ is unblockable."
     / "@ attacks each turn if able."
