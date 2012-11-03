@@ -42,9 +42,11 @@ Trigger
     / BeginningEndStepTrigger
     / DiesTrigger
     / DealsDamageTrigger
-    / AttacksTrigger 
     / CastTrigger
     / BecomesTargetTrigger
+    / BlocksTrigger
+    / AttacksTrigger
+    / BlockedTrigger
     ;
 
 Action
@@ -183,6 +185,14 @@ ManaCost
 
 BecomesTargetTrigger
     = "when @ becomes the target of a spell or ability"
+    ;
+
+BlocksTrigger
+    = "whenever @ blocks"
+    ;
+
+BlockedTrigger
+    = "whenever @ becomes blocked"
     ;
 
 CastTrigger

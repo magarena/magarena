@@ -1949,6 +1949,30 @@ whenever @ attacks, target creature you control gains flying until end of turn.
 whenever @ attacks, you may have target creature gain flying until end of turn.
 whenever @ attacks, you may have target creature lose flying until end of turn.
 whenever @ attacks, you may tap target creature.
+whenever @ becomes blocked, draw a card.
+whenever @ becomes blocked, it gets +1/+1 until end of turn.
+whenever @ becomes blocked, it gets +2/+0 until end of turn.
+whenever @ becomes blocked, it gets +2/+2 until end of turn.
+whenever @ becomes blocked, it gets +3/+0 and gains trample until end of turn.
+whenever @ becomes blocked, it gets +6/+3 until end of turn.
+whenever @ becomes blocked, prevent all combat damage that would be dealt this turn.
+whenever @ becomes blocked, regenerate it.
+whenever @ becomes blocked, untap it.
+whenever @ becomes blocked, you gain 1 life.
+whenever @ becomes blocked, you gain 2 life.
+whenever @ becomes blocked, you may draw a card.
+whenever @ becomes blocked, you may draw three cards.
+whenever @ becomes blocked, you may draw two cards.
+whenever @ blocks, it gets +0/+2 until end of turn.
+whenever @ blocks, it gets +1/+0 and gains first strike until end of turn.
+whenever @ blocks, it gets +1/+1 until end of turn.
+whenever @ blocks, it gets +2/+0 until end of turn.
+whenever @ blocks, it gets +2/+2 until end of turn.
+whenever @ blocks, it gets +7/+7 until end of turn.
+whenever @ blocks, put a +1/+1 counter on it.
+whenever @ blocks, you gain 3 life.
+whenever @ blocks, you may draw a card.
+whenever @ blocks, you may gain 4 life.
 whenever @ deals combat damage, sacrifice a permanent.
 whenever @ deals combat damage to a creature, destroy that creature.
 whenever @ deals combat damage to a creature, destroy that creature. it can't be regenerated.
