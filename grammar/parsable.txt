@@ -1454,7 +1454,9 @@ put a -1/-1 counter on @: untap @.
 put a 1/1 green saproling creature token onto the battlefield.
 put a token that's a copy of target creature onto the battlefield.
 put four +1/+1 counters on each creature you control.
+put target artifact, creature, or enchantment on the bottom of its owner's library.
 put target artifact, creature, or enchantment on top of its owner's library.
+put target artifact or enchantment on the bottom of its owner's library.
 put target artifact or enchantment on top of its owner's library.
 put target attacking or blocking creature on top of its owner's library.
 put target creature card from a graveyard onto the battlefield under your control.

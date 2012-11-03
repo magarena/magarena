@@ -316,6 +316,7 @@ ReturnAction
 BounceAction
     = "return" "s"? SPACE SelectPermanent SPACE "to its owner's hand"
     / "put" "s"? SPACE SelectPermanent SPACE "on top of its owner's library"
+    / "put" "s"? SPACE SelectPermanent SPACE "on the bottom of its owner's library"
     ;
 
 PreventAction
