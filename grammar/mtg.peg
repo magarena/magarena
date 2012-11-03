@@ -290,7 +290,9 @@ SelectPlayer
     / "that player"
     / "each player"
     / "each opponent"
+    / "an opponent"
     / "you"
+    / "he or she"
     / "its controller"
     / "player"
     ;
@@ -302,8 +304,8 @@ ReturnAction
     ;
 
 BounceAction
-    = "return " SelectPermanent SPACE "to its owner's hand"
-    / "put " SelectPermanent SPACE "on top of its owner's library"
+    = "return" "s"? SPACE SelectPermanent SPACE "to its owner's hand"
+    / "put" "s"? SPACE SelectPermanent SPACE "on top of its owner's library"
     ;
 
 PreventAction
@@ -375,7 +377,7 @@ Enchant
 
 Duration
     = "until end of turn"
-    / "for as long as you control @"
+    / "for as long as " SelectPlayer " control @"
     ;
 
 GainsAction
@@ -504,12 +506,6 @@ RestrictedLand
     = (LandRestriction SPACE)? Land (SPACE LandRestriction)?
     ;
 
-LandRestriction
-    = "nonbasic"
-    / "basic"
-    / "you control"
-    ;
-
 SelectTribal
     = Tribal
     ;
@@ -568,9 +564,8 @@ PermanentRestriction
     / "tapped"
     / "untapped"
     / "noncreature"
-    / "you control"
-    / "you don't control"
-    / "an opponent controls"
+    / SelectPlayer " control" "s"?
+    / SelectPlayer " don't control"
     / "nonblack"
     / "nonartifact, nonblack"
     / "nonartifact"
@@ -590,6 +585,12 @@ CreatureRestriction
     / "attacking or blocking"
     / "attacking"
     / Tribal
+    / PermanentRestriction
+    ;
+
+LandRestriction
+    = "nonbasic"
+    / "basic"
     / PermanentRestriction
     ;
 

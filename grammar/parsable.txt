@@ -481,6 +481,7 @@
 {7}{w}: you gain 5 life.
 {8}: creatures you control gain flying until end of turn.
 {8}: creatures you control get +3/+0 until end of turn.
+{8}: tap all creatures target player controls.
 {8}: target creature gets +5/+5 and gains trample until end of turn.
 {8}: target player loses 3 life and you gain 3 life.
 {8}, {t}: @ deals 12 damage to target creature.
@@ -532,6 +533,7 @@ at the beginning of each player's upkeep, that player discards a card at random.
 at the beginning of each player's upkeep, that player loses 1 life.
 at the beginning of each player's upkeep, that player loses 1 life and discards a card.
 at the beginning of each player's upkeep, that player loses 2 life and draws two cards.
+at the beginning of each player's upkeep, that player returns a creature he or she controls to its owner's hand.
 at the beginning of each player's upkeep, that player sacrifices a green or white permanent.
 at the beginning of each player's upkeep, that player sacrifices a land.
 at the beginning of each player's upkeep, that player sacrifices an artifact.
@@ -551,6 +553,7 @@ at the beginning of your upkeep, draw a card.
 at the beginning of your upkeep, each player discards a card.
 at the beginning of your upkeep, put a +1/+1 counter on @.
 at the beginning of your upkeep, put a -1/-1 counter on each creature.
+at the beginning of your upkeep, put a +1/+1 counter on each creature each opponent controls.
 at the beginning of your upkeep, put a -1/-1 counter on each nonblack creature.
 at the beginning of your upkeep, put a -1/-1 counter on enchanted creature.
 at the beginning of your upkeep, put a +1/+1 counter on enchanted creature.
@@ -800,12 +803,14 @@ cumulative upkeep {w}
 @ deals 13 damage to target creature.
 @ deals 1 damage to each attacking creature.
 @ deals 1 damage to each creature.
+@ deals 1 damage to each creature target opponent controls.
 @ deals 1 damage to each creature without flying.
 @ deals 1 damage to target creature.
 @ deals 1 damage to target creature and 1 damage to target player.
 @ deals 1 damage to target creature or player.
 @ deals 1 damage to target creature. put a -1/-1 counter on that creature.
 @ deals 1 damage to target creature you don't control.
+@ deals 1 damage to target player and 1 damage to target creature that player controls.
 @ deals 1 damage to target player and you gain 1 life.
 @ deals 1 damage to target player. you gain 1 life.
 @ deals 2 damage to each creature.
@@ -841,6 +846,7 @@ cumulative upkeep {w}
 @ deals 4 damage to target creature you don't control.
 @ deals 4 damage to target opponent. you gain 4 life.
 @ deals 4 damage to target player.
+@ deals 4 damage to target player and 1 damage to each creature that player controls.
 @ deals 5 damage to each creature with flying.
 @ deals 5 damage to each opponent.
 @ deals 5 damage to target creature.
@@ -992,6 +998,7 @@ each player draws three cards, then discards three cards at random.
 each player draws two cards.
 each player draws x cards.
 each player puts the top five cards of his or her library into his or her graveyard.
+each player returns a creature he or she controls to its owner's hand.
 each player sacrifices a creature.
 each player sacrifices a land.
 each player sacrifices an enchantment.
@@ -1874,6 +1881,7 @@ target player sacrifices a permanent.
 {t}: @ deals 1 damage to target creature or player and 1 damage to you.
 {t}: @ deals 1 damage to target creature with flying.
 {t}: @ deals 1 damage to target player.
+{t}: @ deals 2 damage to each attacking or blocking creature target player controls.
 {t}: @ deals 2 damage to target attacking or blocking creature.
 {t}: @ deals 2 damage to target creature.
 {t}: @ deals 2 damage to target creature or player and 3 damage to itself.
@@ -2220,6 +2228,7 @@ when @ enters the battlefield, it deals 6 damage to each creature with flying.
 when @ enters the battlefield, it deals damage equal to its power to target creature or player.
 when @ enters the battlefield, prevent the next 3 damage that would be dealt to target creature or player this turn.
 when @ enters the battlefield, put a -1/-1 counter on each creature.
+when @ enters the battlefield, put a -1/-1 counter on each creature target player controls.
 when @ enters the battlefield, put a -1/-1 counter on target creature.
 when @ enters the battlefield, put a +1/+1 counter on target creature.
 when @ enters the battlefield, put a +1/+1 counter on target creature you don't control.
@@ -2253,6 +2262,7 @@ when @ enters the battlefield, sacrifice it unless you return an enchantment to 
 when @ enters the battlefield, sacrifice it unless you sacrifice a land.
 when @ enters the battlefield, sacrifice it unless you sacrifice an artifact.
 when @ enters the battlefield, tap all islands.
+when @ enters the battlefield, tap all lands target player controls.
 when @ enters the battlefield, tap all lands you control.
 when @ enters the battlefield, tap all other creatures.
 when @ enters the battlefield, tap all red creatures.
@@ -2389,8 +2399,10 @@ whenever @ deals combat damage to a creature, destroy that creature. it can't be
 whenever @ deals combat damage to a creature, put a +1/+1 counter on @.
 whenever @ deals combat damage to a creature, tap that creature and it doesn't untap during its controller's next untap step.
 whenever @ deals combat damage to a creature, tap that creature. that creature doesn't untap during its controller's next untap step.
+whenever @ deals combat damage to a player, destroy target nonblack creature that player controls.
 whenever @ deals combat damage to a player, draw a card.
 whenever @ deals combat damage to a player, each player discards a card.
+whenever @ deals combat damage to a player, it deals that much damage to each creature that player controls.
 whenever @ deals combat damage to a player, put a +1/+1 counter on each creature you control.
 whenever @ deals combat damage to a player, put a +1/+1 counter on it.
 whenever @ deals combat damage to a player, put a charge counter on it.
@@ -2403,15 +2415,20 @@ whenever @ deals combat damage to a player, that player sacrifices a creature.
 whenever @ deals combat damage to a player, that player sacrifices a permanent.
 whenever @ deals combat damage to a player, you may draw a card.
 whenever @ deals combat damage to a player, you may draw a card. if you do, discard a card.
+whenever @ deals combat damage to a player, you may exile target black or red permanent that player controls.
 whenever @ deals combat damage to a player, you may pay {2}{g}. if you do, put six +1/+1 counters on @.
 whenever @ deals combat damage to a player, you may return target creature card from your graveyard to your hand.
+whenever @ deals combat damage to a player, you may return target creature that player controls to its owner's hand.
 whenever @ deals combat damage to a player, you may sacrifice it. if you do, @ deals 3 damage to that player.
+whenever @ deals combat damage to a player, you may sacrifice it. if you do, destroy target creature that player controls.
 whenever @ deals combat damage to a player, you may sacrifice it. if you do, draw three cards.
+whenever @ deals combat damage to a player, you may sacrifice it. if you do, gain control of target creature that player controls.
 whenever @ deals combat damage to a player, you may untap target creature.
 whenever @ deals combat damage, you gain that much life.
 whenever @ deals damage to a creature, exile that creature.
 whenever @ deals damage to a creature, put a +1/+1 counter on @.
 whenever @ deals damage to a creature, tap that creature and it doesn't untap during its controller's next untap step.
+whenever @ deals damage to a player, tap target land that player controls. that land doesn't untap during its controller's next untap step.
 whenever @ deals damage to a player, that player discards a card.
 whenever @ deals damage to a player, you may draw a card.
 whenever @ deals damage, you gain that much life.
@@ -2516,6 +2533,7 @@ when @ leaves the battlefield, draw a card.
 when @ leaves the battlefield, it deals 1 damage to each goblin creature.
 when @ leaves the battlefield, it deals 4 damage to target creature.
 when @ leaves the battlefield, it deals 6 damage to target creature.
+when @ leaves the battlefield, put a +1/+1 counter on each creature target player controls.
 when @ leaves the battlefield, return the exiled card to the battlefield under its owner's control.
 when @ leaves the battlefield, sacrifice a creature.
 when @ leaves the battlefield, sacrifice a land.
