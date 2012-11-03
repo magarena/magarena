@@ -448,6 +448,8 @@ all creatures lose flying.
 all creatures lose flying until end of turn.
 artifact creatures you control gain flying until end of turn.
 artifact creatures you control get +2/+2.
+as @ enters the battlefield, sacrifice all lands you control.
+as @ enters the battlefield, you may pay 2 life. if you don't, @ enters the battlefield tapped.
 attacking creatures gain first strike until end of turn.
 attacking creatures get -1/-0.
 attacking creatures get +1/+0.

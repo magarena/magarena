@@ -1,7 +1,6 @@
 MagicRule 
     = SpellEffect EOR
     / KeywordAbility EOR
-    / StaticAbility EOR
     / ActivatedAbility EOR
     / TriggeredAbility EOR
     ;
@@ -19,16 +18,12 @@ SingleEffect
 Optional
     = "you may have"
     / "you may"
+    / "if you don't,"
     ;
 
 KeywordAbility
     = Keyword
     / Enchant
-    ;
-
-StaticAbility
-    = EntersTapped
-    / EntersWithCounter
     ;
 
 ActivatedAbility
@@ -75,6 +70,8 @@ Action
     / ControlAction
     / ShuffleAction
     / DoesntUntapAction
+    / EntersTapped
+    / EntersWithCounter
     ;
 
 Keyword
@@ -203,6 +200,7 @@ EntersGraveyardTrigger
 
 EntersBattlefieldTrigger
     = "when @ enters the battlefield"
+    / "as @ enters the battlefield"
     / "whenever @ or another ally enters the battlefield under your control"
     ;
 
@@ -262,6 +260,7 @@ ChangeLifeAction
     = "loses " Number " life and you gain " Number " life"
     / "lose" "s"? SPACE Number " life"
     / "gain" "s"? SPACE Number " life"
+    / "pay" SPACE Number " life"
     ;
 
 SelectPlayer
@@ -303,12 +302,12 @@ DamageAction
     ;
 
 EntersTapped
-    = "@ enters the battlefield tapped."
+    = "@ enters the battlefield tapped"
     ;
 
 EntersWithCounter
-    = "@ enters the battlefield with a " CounterType " counter on it."
-    / "@ enters the battlefield with " Count SPACE CounterType " counters on it."
+    = "@ enters the battlefield with a " CounterType " counter on it"
+    / "@ enters the battlefield with " Count SPACE CounterType " counters on it"
     ;
 
 CounterType
