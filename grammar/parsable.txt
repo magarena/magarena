@@ -542,6 +542,7 @@ battle cry
 {b}{b}: creatures with shadow get +1/+0 until end of turn and creatures without shadow get -1/-0 until end of turn.
 {b}{b}: draw a card.
 {b}{b}: @ gets +1/+0 until end of turn.
+{b}{b}: regenerate @.
 {b}{b}: return @ to its owner's hand.
 {b}{b}: target creature gains shadow until end of turn.
 {b}{b}, {t}: destroy target green creature.
@@ -1689,6 +1690,7 @@ target player sacrifices a permanent.
 {t}: each player draws a card, then discards a card.
 {t}: enchanted creature gets +2/-2 until end of turn.
 {t}, exile a creature you control: put a storage counter on @.
+{t}: exile target creature and put a +1/+1 counter on @.
 {t}: @ gets +0/+4 until end of turn.
 {t}: @ gets -2/+2 and loses flying until end of turn.
 {t}: @ gets +3/+3 until end of turn.
@@ -1906,6 +1908,7 @@ when @ dies, you gain 1 life.
 when @ dies, you gain 2 life.
 when @ dies, you gain 3 life.
 when @ dies, you gain 4 life.
+when @ dies, you lose 2 life.
 when @ dies, you may draw a card.
 when @ dies, you may gain 3 life.
 when @ dies, you may have target creature get -2/-2 until end of turn.
