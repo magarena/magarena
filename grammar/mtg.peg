@@ -141,7 +141,7 @@ ActivationCosts
     ;
     
 SacrificeAction
-    = "sacrifice" "s"? SPACE SelectPermanent
+    = "sacrifice" "s"? SPACE SelectPermanent (SPACE "unless you" SPACE Action)?
     ;
 
 ActivationCost
@@ -539,6 +539,7 @@ CreatureRestriction
     / "attacking"
     / "green or white"
     / "black or red"
+    / "blue or black"
     / "blue"
     / "white"
     / "green"

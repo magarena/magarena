@@ -488,6 +488,14 @@ at the beginning of your upkeep, return target creature card from your graveyard
 at the beginning of your upkeep, sacrifice a creature.
 at the beginning of your upkeep, sacrifice a nonblack creature.
 at the beginning of your upkeep, sacrifice a permanent.
+at the beginning of your upkeep, sacrifice @ unless you discard a card.
+at the beginning of your upkeep, sacrifice @ unless you pay 2 life.
+at the beginning of your upkeep, sacrifice @ unless you remove a +1/+1 counter from it.
+at the beginning of your upkeep, sacrifice @ unless you return a land you control to its owner's hand.
+at the beginning of your upkeep, sacrifice @ unless you sacrifice a creature.
+at the beginning of your upkeep, sacrifice @ unless you sacrifice a land.
+at the beginning of your upkeep, sacrifice @ unless you sacrifice an enchantment.
+at the beginning of your upkeep, sacrifice @ unless you tap an untapped creature you control.
 at the beginning of your upkeep, tap target creature.
 at the beginning of your upkeep, target player draws a card and loses 1 life.
 at the beginning of your upkeep, target player loses 1 life.
@@ -732,6 +740,7 @@ destroy target attacking creature.
 destroy target attacking creature with flying.
 destroy target attacking or blocking creature.
 destroy target blocked creature.
+destroy target blue or black creature with flying.
 destroy target creature.
 destroy target creature. it can't be regenerated.
 destroy target creature or enchantment.
@@ -1831,6 +1840,7 @@ when @ enters the battlefield, put target artifact on top of its owner's library
 when @ enters the battlefield, put target creature on top of its owner's library.
 when @ enters the battlefield, put three -1/-1 counters on target creature.
 when @ enters the battlefield, return a black or red creature you control to its owner's hand.
+when @ enters the battlefield, return a blue or black creature you control to its owner's hand.
 when @ enters the battlefield, return a creature you control to its owner's hand.
 when @ enters the battlefield, return a green or white creature you control to its owner's hand.
 when @ enters the battlefield, return a land you control to its owner's hand.
@@ -1844,6 +1854,11 @@ when @ enters the battlefield, return target permanent to its owner's hand.
 when @ enters the battlefield, sacrifice a creature.
 when @ enters the battlefield, sacrifice a land.
 when @ enters the battlefield, sacrifice all creatures you control.
+when @ enters the battlefield, sacrifice it unless you discard a card at random.
+when @ enters the battlefield, sacrifice it unless you discard a creature card.
+when @ enters the battlefield, sacrifice it unless you return an enchantment to its owner's hand.
+when @ enters the battlefield, sacrifice it unless you sacrifice a land.
+when @ enters the battlefield, sacrifice it unless you sacrifice an artifact.
 when @ enters the battlefield, tap all islands.
 when @ enters the battlefield, tap all lands you control.
 when @ enters the battlefield, tap all red creatures.
@@ -1927,6 +1942,7 @@ whenever @ attacks, it gets +3/+3 until end of turn.
 whenever @ attacks, it gets +5/+0 until end of turn.
 whenever @ attacks, put a +1/+1 counter on each attacking creature.
 whenever @ attacks, put a +1/+1 counter on it.
+whenever @ attacks, sacrifice it unless you sacrifice an island.
 whenever @ attacks, tap all artifacts.
 whenever @ attacks, target creature gets +0/+3 until end of turn.
 whenever @ attacks, target creature you control gains flying until end of turn.
