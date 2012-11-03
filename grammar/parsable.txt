@@ -73,9 +73,11 @@
 {1}{r}: @ deals 1 damage to each creature without flying.
 {1}{r}: @ deals 1 damage to target creature.
 {1}{r}: @ deals 1 damage to target creature or player.
+{1}{r}: @ deals 1 damage to target creature or player and 1 damage to itself.
 {1}{r}: @ deals 2 damage to each creature without flying.
 {1}{r}, discard a card at random: @ deals 1 damage to target creature or player.
 {1}: regenerate @.
+{1}: regenerate target creature with power 5 or greater.
 {1}, remove a +1/+1 counter from a creature you control: put a 1/1 green saproling creature token onto the battlefield.
 {1}, remove a +1/+1 counter from @: prevent all combat damage that would be dealt this turn.
 {1}, remove a +1/+1 counter from @: regenerate @.
@@ -120,6 +122,9 @@
 {1}, tap an untapped creature you control: untap enchanted creature.
 {1}: tap enchanted creature.
 {1}: target creature gains flying until end of turn.
+{1}: target creature with power 5 or greater gains first strike until end of turn.
+{1}: target creature with power 5 or greater gains trample until end of turn.
+{1}: target creature with power 5 or greater gains vigilance until end of turn.
 {1}, {t}: attacking creatures get +1/+0 until end of turn.
 {1}, {t}: @ deals 1 damage to target attacking creature.
 {1}, {t}: @ deals 1 damage to target creature. tap that creature.
@@ -132,6 +137,7 @@
 {1}, {t}: put a charge counter on @.
 {1}, {t}: put a storage counter on @.
 {1}, {t}, remove a charge counter from @: put a charge counter on target artifact.
+{1}, {t}, remove x ki counters from @: return target creature with converted mana cost x or less to its owner's hand.
 {1}, {t}, remove x ki counters from @: target creature gets -x/-x until end of turn.
 {1}, {t}, sacrifice a creature: @ deals 2 damage to target creature or player.
 {1}, {t}, sacrifice a creature: return target artifact card from your graveyard to your hand.
@@ -295,6 +301,7 @@
 {2}, {t}: shuffle your library.
 {2}, {t}: tap target creature.
 {2}, {t}: target creature gains flying until end of turn.
+{2}, {t}: target creature with power 3 or less gains flying until end of turn.
 {2}, {t}: you gain 1 life.
 {2}, {t}: you may tap or untap target creature.
 {2}{u}, discard a card: return @ to its owner's hand.
@@ -728,6 +735,7 @@ destroy all black creatures.
 destroy all creatures.
 destroy all creatures and lands.
 destroy all creatures. they can't be regenerated.
+destroy all creatures with converted mana cost x or less.
 destroy all creatures with flying.
 destroy all creatures with power 4 or greater. they can't be regenerated.
 destroy all enchantments.
@@ -754,7 +762,9 @@ destroy target artifact or land. it can't be regenerated.
 destroy target attacking creature.
 destroy target attacking creature with flying.
 destroy target attacking creature without flying.
+destroy target attacking creature with power 3 or less.
 destroy target attacking or blocking creature.
+destroy target attacking or blocking creature with power 3 or less.
 destroy target blocked creature.
 destroy target blue or black creature with flying.
 destroy target creature.
@@ -839,6 +849,7 @@ enchant artifact
 enchant artifact creature
 enchant black creature
 enchant creature
+enchant creature with converted mana cost 2 or less
 enchant creature without flying
 enchant creature you control
 enchanted artifact doesn't untap during its controller's untap step.
@@ -1585,12 +1596,14 @@ target player sacrifices an attacking creature.
 target player sacrifices a permanent.
 {t}: @ deals 1 damage to each creature with flying.
 {t}: @ deals 1 damage to each creature without flying.
+{t}: @ deals 1 damage to itself.
 {t}: @ deals 1 damage to target attacking or blocking creature.
 {t}: @ deals 1 damage to target creature.
 {t}: @ deals 1 damage to target creature or player.
 {t}: @ deals 1 damage to target creature with flying.
 {t}: @ deals 2 damage to target attacking or blocking creature.
 {t}: @ deals 2 damage to target creature.
+{t}: @ deals 2 damage to target creature or player and 3 damage to itself.
 {t}: @ deals 2 damage to target creature with flying.
 {t}: @ deals 3 damage to target attacking or blocking creature.
 {t}: @ deals 3 damage to target creature or player.
@@ -1673,6 +1686,7 @@ trample
 {t}: tap target creature.
 {t}: tap target creature with converted mana cost 3 or less.
 {t}: tap target creature with power 2 or less.
+{t}: tap target creature with power 3 or less.
 {t}: tap target spirit.
 {t}: target attacking creature gets +1/+1 until end of turn.
 {t}: target attacking or blocking creature gets +1/+1 until end of turn.
@@ -1695,6 +1709,7 @@ trample
 {t}: target creature loses flying until end of turn.
 {t}: target creature loses forestwalk until end of turn.
 {t}: target creature with flying gets -1/-1 until end of turn.
+{t}: target creature with power 5 or greater gains haste until end of turn.
 {t}: target player draws a card, then discards a card.
 {t}: target player loses 1 life.
 {t}: target red or green creature gets -2/-0 until end of turn.
@@ -1960,6 +1975,7 @@ when @ enters the battlefield, you lose 4 life.
 when @ enters the battlefield, you lose 5 life.
 when @ enters the battlefield, you may destroy target artifact.
 when @ enters the battlefield, you may destroy target creature with flying.
+when @ enters the battlefield, you may destroy target creature with power 1 or less.
 when @ enters the battlefield, you may destroy target enchantment.
 when @ enters the battlefield, you may destroy target equipment.
 when @ enters the battlefield, you may destroy target nonblack creature.

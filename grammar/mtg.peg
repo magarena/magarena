@@ -232,8 +232,9 @@ DealsDamageTrigger
     ;
 
 DamageReceiver
-    = "player"
-    / "creature"
+    = "itself"
+    / "player"
+    / SelectCreature " or player"?
     ;
 
 AttacksTrigger
@@ -309,7 +310,8 @@ RegenerateAction
     ;
 
 DamageAction
-    = SelectPermanent " deals " Number " damage to " SelectCreature " or player"?
+    = SelectPermanent " deals " Number " damage to " DamageReceiver
+    / Number " damage to " DamageReceiver
     ;
 
 EntersTapped
@@ -538,10 +540,11 @@ RestrictedCreature
     ;
 
 CreatureRestriction
-    = "with converted mana cost 3 or less"
-    / "with converted mana cost x"
-    / "with power 4 or greater"
-    / "with power 2 or less"
+    = "with converted mana cost " Number " or less"
+    / "with converted mana cost " Number " or greater"
+    / "with converted mana cost " Number
+    / "with power " Number " or less"
+    / "with power " Number " or greater"
     / "with " Keyword
     / "without " Keyword
     / "tapped or blocking"
