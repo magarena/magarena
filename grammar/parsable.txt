@@ -103,6 +103,7 @@
 {1}{r}{r}: put a +1/+1 counter on @.
 {1}{r}{r}{r}: return @ from your graveyard to your hand.
 {1}{r}{r}, sacrifice @: @ deals 2 damage to target creature or player.
+{1}{r}{r}, {t}: gain control of target artifact for as long as you control @.
 {1}{r}{r}, {t}: target creature gains mountainwalk until end of turn.
 {1}{r}, sacrifice a creature: @ deals 2 damage to target creature or player.
 {1}{r}, sacrifice a creature: destroy target nonbasic land.
@@ -415,6 +416,7 @@
 {3}, {t}: untap target creature.
 {3}{u}: all other creatures lose flying until end of turn.
 {3}{u}: draw a card.
+{3}{u}: gain control of target artifact.
 {3}{u}: @ gains flying until end of turn.
 {3}: untap @.
 {3}{u}: return @ to its owner's hand.
@@ -576,6 +578,7 @@ at the beginning of your upkeep, sacrifice @ unless you tap an untapped creature
 at the beginning of your upkeep, tap target creature.
 at the beginning of your upkeep, target player draws a card and loses 1 life.
 at the beginning of your upkeep, target player loses 1 life.
+at the beginning of your upkeep, untap enchanted land. you gain control of that land until end of turn.
 at the beginning of your upkeep, you draw a card and you lose 1 life.
 at the beginning of your upkeep, you lose 1 life.
 at the beginning of your upkeep, you lose 2 life.
@@ -1190,6 +1193,11 @@ flash
 flying
 forestwalk
 {g}: add one mana of any color to your mana pool.
+gain control of target artifact until end of turn. untap that artifact. it gains haste until end of turn.
+gain control of target creature an opponent controls until end of turn. untap that creature. it gains haste until end of turn.
+gain control of target creature until end of turn. untap that creature. it gains haste until end of turn.
+gain control of target creature with converted mana cost x or less.
+gain control of target nonartifact, nonblack creature.
 {g}, discard a card: @ gains trample until end of turn.
 {g}, discard a card: @ gets +0/+2 until end of turn.
 {g}, discard a card: regenerate @.
@@ -2079,6 +2087,7 @@ when @ dies, exile all creatures.
 when @ dies, exile @ and return target creature card from your graveyard to the battlefield.
 when @ dies, exile it.
 when @ dies, exile target permanent.
+when @ dies, gain control of target creature.
 when @ dies, it deals 2 damage to target creature.
 when @ dies, it deals 2 damage to target creature or player.
 when @ dies, it deals 2 damage to you.
@@ -2098,6 +2107,7 @@ when @ dies, you gain 1 life.
 when @ dies, you gain 2 life.
 when @ dies, you gain 3 life.
 when @ dies, you gain 4 life.
+when @ dies, you gain control of all enchantments.
 when @ dies, you lose 2 life.
 when @ dies, you may draw a card.
 when @ dies, you may gain 3 life.
@@ -2148,6 +2158,10 @@ when @ enters the battlefield, exile target black permanent.
 when @ enters the battlefield, exile target creature.
 when @ enters the battlefield, exile target green or white creature an opponent controls.
 when @ enters the battlefield, exile target land.
+when @ enters the battlefield, gain control of enchanted land until end of turn.
+when @ enters the battlefield, gain control of target artifact for as long as you control @.
+when @ enters the battlefield, gain control of target creature an opponent controls until end of turn. untap that creature. it gains haste until end of turn.
+when @ enters the battlefield, gain control of target permanent until end of turn. untap that permanent. it gains haste until end of turn.
 when @ enters the battlefield, goblin creatures get +3/+0 until end of turn.
 when @ enters the battlefield, green creatures get -1/-1 until end of turn.
 when @ enters the battlefield, it deals 1 damage to target creature and 1 damage to you.
@@ -2210,6 +2224,7 @@ when @ enters the battlefield, tap all red creatures.
 when @ enters the battlefield, tap enchanted creature.
 when @ enters the battlefield, tap enchanted permanent.
 when @ enters the battlefield, tap target creature an opponent controls. that creature doesn't untap during its controller's next untap step.
+when @ enters the battlefield, tap target creature an opponent controls. that creature doesn't untap during its controller's untap step for as long as you control @.
 when @ enters the battlefield, target creature an opponent controls deals damage equal to its power to that player.
 when @ enters the battlefield, target creature gains fear until end of turn.
 when @ enters the battlefield, target creature gains first strike until end of turn.

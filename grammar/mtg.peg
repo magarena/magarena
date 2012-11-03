@@ -264,6 +264,7 @@ PutTokenAction
 
 ControlAction
     = "control" "s"? SPACE SelectPermanent
+    / "gain control of " SelectPermanent 
     ;
 
 ChangeCounterAction
@@ -373,6 +374,7 @@ Enchant
 
 Duration
     = "until end of turn"
+    / "for as long as you control @"
     ;
 
 GainsAction
