@@ -1441,6 +1441,7 @@ pay 8 life: untap @.
 persist
 plainswalk
 prevent all combat damage that would be dealt this turn.
+prevent all damage that would be dealt by creatures this turn.
 prevent all damage that would be dealt to creatures this turn.
 prevent all damage that would be dealt to target creature this turn.
 prevent the next 1 damage that would be dealt to target creature or player this turn.
