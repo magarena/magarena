@@ -323,6 +323,7 @@ BounceAction
 PreventAction
     = "prevent the next " Number SPACE Damage " that would be dealt to " DamageReceiver " this turn"
     / "prevent all " Damage " that would be dealt this turn"
+    / "prevent all " Damage " that would be dealt to and dealt by " DamageReceiver " this turn"
     / "prevent all " Damage " that would be dealt to " DamageReceiver " this turn"
     / "prevent all " Damage " that would be dealt by " DamageReceiver " this turn"
     ;
