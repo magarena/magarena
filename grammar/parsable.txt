@@ -1277,6 +1277,13 @@ remove two +1/+1 counters from @: @ gets +4/+4 until end of turn.
 {r}: enchanted creature deals 1 damage to target creature with flying.
 {r}: enchanted creature gets +1/+0 until end of turn.
 {r}: enchanted creature gets +1/-1 until end of turn.
+replicate {1}{r}
+replicate {1}{u}
+replicate {2}{u}
+replicate {3}{u}
+replicate {r}
+replicate {u}
+replicate {u}{r}
 return target artifact card from your graveyard to the battlefield.
 return target artifact card from your graveyard to your hand.
 return target artifact, enchantment, or land to its owner's hand.

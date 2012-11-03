@@ -131,6 +131,7 @@ Keyword
     / "kicker" SPACE ManaCost
     / "equip" SPACE ManaCost
     / "cumulative upkeep" SPACE ManaCost
+    / "replicate" SPACE ManaCost
     / "@ can't block."
     / "@ is unblockable."
     / "@ attacks each turn if able."
