@@ -263,6 +263,7 @@ ShuffleAction
 PutTokenAction
     = "put a 1/1 green saproling creature token onto the battlefield"
     / "put a 1/1 gnome artifact creature token onto the battlefield"
+    / "put a token that's a copy of " SelectPermanent " onto the battlefield"
     ;
 
 ControlAction

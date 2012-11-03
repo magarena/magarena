@@ -410,6 +410,7 @@
 {3}, {t}: prevent the next 2 damage that would be dealt to you this turn.
 {3}, {t}: put a +1/+1 counter on target creature.
 {3}, {t}: put a charge counter on @.
+{3}, {t}: put a token that's a copy of @ onto the battlefield.
 {3}, {t}: regenerate target artifact creature.
 {3}, {t}: remove a -1/-1 counter from target creature.
 {3}, {t}, remove a charge counter from @: draw a card.
@@ -559,6 +560,7 @@ at the beginning of your upkeep, put a -1/-1 counter on each nonblack creature.
 at the beginning of your upkeep, put a -1/-1 counter on enchanted creature.
 at the beginning of your upkeep, put a +1/+1 counter on enchanted creature.
 at the beginning of your upkeep, put a spore counter on @.
+at the beginning of your upkeep, put a token that's a copy of enchanted creature onto the battlefield.
 at the beginning of your upkeep, remove a -1/-1 counter from @.
 at the beginning of your upkeep, remove a -1/-1 counter from each creature you control.
 at the beginning of your upkeep, remove a depletion counter from @.
@@ -1449,6 +1451,7 @@ put a -1/-1 counter on target creature.
 put a +1/+1 counter on target creature.
 put a -1/-1 counter on @: untap @.
 put a 1/1 green saproling creature token onto the battlefield.
+put a token that's a copy of target creature onto the battlefield.
 put four +1/+1 counters on each creature you control.
 put target artifact, creature, or enchantment on top of its owner's library.
 put target artifact or enchantment on top of its owner's library.
@@ -2429,6 +2432,7 @@ whenever @ deals combat damage to a player, it deals that much damage to each cr
 whenever @ deals combat damage to a player, put a +1/+1 counter on each creature you control.
 whenever @ deals combat damage to a player, put a +1/+1 counter on it.
 whenever @ deals combat damage to a player, put a charge counter on it.
+whenever @ deals combat damage to a player, put a token that's a copy of @ onto the battlefield.
 whenever @ deals combat damage to a player, put two +1/+1 counters on it.
 whenever @ deals combat damage to a player, that player discards a card.
 whenever @ deals combat damage to a player, that player discards a card and you draw a card.
