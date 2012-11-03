@@ -806,6 +806,10 @@ each attacking creature doesn't untap during its controller's next untap step.
 each player draws three cards, then discards three cards at random.
 each player draws two cards.
 each player draws x cards.
+each player sacrifices a creature.
+each player sacrifices a land.
+each player sacrifices an enchantment.
+each player sacrifices a permanent.
 enchant artifact
 enchant artifact creature
 enchant black creature
@@ -1233,6 +1237,7 @@ return target card from your graveyard to your hand. exile @.
 return target creature card from your graveyard to the battlefield.
 return target creature card from your graveyard to the battlefield. put a +1/+1 counter on it.
 return target creature card from your graveyard to your hand.
+return target creature card from your graveyard to your hand. target player sacrifices a creature.
 return target creature to its owner's hand.
 return target creature to its owner's hand. you gain 2 life.
 return target instant or sorcery card from your graveyard to your hand.
@@ -1510,6 +1515,7 @@ target opponent discards a card at random, then discards a card.
 target opponent draws a card.
 target opponent loses 2 life. you gain 2 life.
 target opponent loses 3 life.
+target opponent sacrifices a creature.
 target player discards a card.
 target player discards a card at random.
 target player discards two cards at random.
@@ -1533,6 +1539,12 @@ target player loses 2 life and you gain 2 life.
 target player loses 4 life and you gain 4 life.
 target player loses 5 life.
 target player loses 5 life and you gain 5 life.
+target player sacrifices a creature.
+target player sacrifices a creature and loses 1 life.
+target player sacrifices a creature with converted mana cost 3 or less.
+target player sacrifices a land.
+target player sacrifices an attacking creature.
+target player sacrifices a permanent.
 {t}: @ deals 1 damage to each creature with flying.
 {t}: @ deals 1 damage to target attacking or blocking creature.
 {t}: @ deals 1 damage to target creature.
@@ -1747,6 +1759,8 @@ when @ dies, each player discards a card.
 when @ dies, each player draws a card.
 when @ dies, each player loses 3 life.
 when @ dies, each player loses 4 life.
+when @ dies, each player sacrifices a creature.
+when @ dies, each player sacrifices a land.
 when @ dies, exile all creatures.
 when @ dies, exile @ and return target creature card from your graveyard to the battlefield.
 when @ dies, exile it.
@@ -1799,6 +1813,8 @@ when @ enters the battlefield, each player discards a card.
 when @ enters the battlefield, each player draws two cards, then discards a card at random.
 when @ enters the battlefield, each player loses 1 life.
 when @ enters the battlefield, each player loses 3 life.
+when @ enters the battlefield, each player sacrifices a creature.
+when @ enters the battlefield, each player sacrifices a land.
 when @ enters the battlefield, exile a land you control.
 when @ enters the battlefield, exile all lands.
 when @ enters the battlefield, exile target black permanent.
@@ -1932,6 +1948,8 @@ whenever @ deals combat damage to a player, put two +1/+1 counters on it.
 whenever @ deals combat damage to a player, that player discards a card.
 whenever @ deals combat damage to a player, that player discards a card and you draw a card.
 whenever @ deals combat damage to a player, that player discards a card at random.
+whenever @ deals combat damage to a player, that player sacrifices a creature.
+whenever @ deals combat damage to a player, that player sacrifices a permanent.
 whenever @ deals combat damage to a player, you may draw a card.
 whenever @ deals combat damage to a player, you may return target creature card from your graveyard to your hand.
 whenever @ deals combat damage to a player, you may untap target creature.

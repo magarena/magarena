@@ -141,7 +141,7 @@ ActivationCosts
     ;
     
 SacrificeAction
-    = "sacrifice " SelectPermanent
+    = "sacrifice" "s"? SPACE SelectPermanent
     ;
 
 ActivationCost
