@@ -224,6 +224,7 @@
 {1}{w}, {t}, sacrifice @: destroy target artifact or enchantment.
 {1}{w}, {t}: you gain 5 life.
 {1}{w}{w}: target creature gets +1/+1 until end of turn.
+{1}{w}{w}, {t}: return target creature an opponent controls to its owner's hand.
 {1}{w}{w}, {t}: target creature gains vigilance until end of turn.
 {2}{b}{b}: put a -1/-1 counter on target creature.
 {2}{b}{b}: target creature gets -1/-1 until end of turn. put a +1/+1 counter on @.
@@ -588,6 +589,7 @@ at the beginning of your upkeep, you may return @ from your graveyard to your ha
 at the beginning of your upkeep, you may return target artifact card from your graveyard to the battlefield.
 at the beginning of your upkeep, you may return target creature card from your graveyard to the battlefield.
 at the beginning of your upkeep, you may sacrifice a nonartifact creature. if you do, put a +1/+1 counter on @. if you don't, tap @.
+at the beginning of your upkeep, you may untap target tapped creature an opponent controls. if you do, untap @.
 battle cry
 {b}{b}: counter target green spell.
 {b}{b}: creatures with shadow get +1/+0 until end of turn and creatures without shadow get -1/-0 until end of turn.
@@ -960,6 +962,7 @@ enchant artifact
 enchant artifact creature
 enchant black creature
 enchant creature
+enchant creature an opponent controls
 enchant creature with converted mana cost 2 or less
 enchant creature without flying
 enchant creature you control
@@ -2110,6 +2113,7 @@ when @ enters the battlefield, exile all lands.
 when @ enters the battlefield, exile all other permanents you control.
 when @ enters the battlefield, exile target black permanent.
 when @ enters the battlefield, exile target creature.
+when @ enters the battlefield, exile target green or white creature an opponent controls.
 when @ enters the battlefield, exile target land.
 when @ enters the battlefield, goblin creatures get +3/+0 until end of turn.
 when @ enters the battlefield, green creatures get -1/-1 until end of turn.
@@ -2150,6 +2154,7 @@ when @ enters the battlefield, return a land you control to its owner's hand.
 when @ enters the battlefield, return a permanent you control to its owner's hand.
 when @ enters the battlefield, return a red or green creature you control to its owner's hand.
 when @ enters the battlefield, return target artifact or enchantment to its owner's hand.
+when @ enters the battlefield, return target creature an opponent controls to its owner's hand.
 when @ enters the battlefield, return target creature card from your graveyard to the battlefield.
 when @ enters the battlefield, return target creature to its owner's hand.
 when @ enters the battlefield, return target instant or sorcery card from your graveyard to your hand.
@@ -2170,6 +2175,7 @@ when @ enters the battlefield, tap all other creatures.
 when @ enters the battlefield, tap all red creatures.
 when @ enters the battlefield, tap enchanted creature.
 when @ enters the battlefield, tap enchanted permanent.
+when @ enters the battlefield, tap target creature an opponent controls. that creature doesn't untap during its controller's next untap step.
 when @ enters the battlefield, target creature gains fear until end of turn.
 when @ enters the battlefield, target creature gains first strike until end of turn.
 when @ enters the battlefield, target creature gains flying until end of turn.
