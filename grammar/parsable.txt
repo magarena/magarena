@@ -284,6 +284,7 @@
 {2}{r}{g}, discard two cards at random: @ deals 4 damage to target creature or player.
 {2}{r}, sacrifice @: @ deals 2 damage to target creature.
 {2}{r}: target creature gets +1/+0 until end of turn.
+{2}{r}, {t}: @ deals 1 damage to each opponent.
 {2}{r}, {t}: @ deals 2 damage to target creature.
 {2}{r}, {t}: destroy target nonbasic land.
 {2}{r}, {t}, discard a card: destroy target land.
@@ -512,6 +513,7 @@ attacking creatures you control have lifelink.
 @ attacks each turn if able.
 at the beginning of the end step, return @ to its owner's hand.
 at the beginning of the end step, sacrifice @.
+at the beginning of your upkeep, @ deals 1 damage to each opponent.
 at the beginning of your upkeep, @ deals 1 damage to each player.
 at the beginning of your upkeep, @ deals 1 damage to you.
 at the beginning of your upkeep, @ deals 2 damage to you.
@@ -793,6 +795,7 @@ cumulative upkeep {w}
 @ deals 2 damage to target creature with flying. that creature loses flying until end of turn.
 @ deals 2 damage to target opponent and you gain 2 life.
 @ deals 3 damage to each creature.
+@ deals 3 damage to each opponent.
 @ deals 3 damage to target attacking or blocking creature.
 @ deals 3 damage to target creature.
 @ deals 3 damage to target creature or player.
@@ -812,6 +815,7 @@ cumulative upkeep {w}
 @ deals 4 damage to target opponent. you gain 4 life.
 @ deals 4 damage to target player.
 @ deals 5 damage to each creature with flying.
+@ deals 5 damage to each opponent.
 @ deals 5 damage to target creature.
 @ deals 5 damage to target creature or player.
 @ deals 5 damage to target opponent.
@@ -955,6 +959,8 @@ draw two cards, then discard a card at random.
 draw two cards, then sacrifice a permanent.
 draw x cards.
 each attacking creature doesn't untap during its controller's next untap step.
+each opponent sacrifices a land.
+each opponent sacrifices an artifact or enchantment.
 each player draws three cards, then discards three cards at random.
 each player draws two cards.
 each player draws x cards.
@@ -1663,6 +1669,7 @@ swampwalk
 {t}: add {r}, {g}, or {w} to your mana pool.
 {t}: add {r} or {g} to your mana pool.
 {t}: add {r} or {g} to your mana pool. @ deals 1 damage to you.
+{t}: add {r} or {g} to your mana pool. each opponent gains 1 life.
 {t}: add {r} or {g} to your mana pool. put a depletion counter on @.
 {t}: add {r} or {w} to your mana pool.
 {t}: add {r} or {w} to your mana pool. @ deals 1 damage to you.
@@ -1819,6 +1826,7 @@ target player sacrifices a permanent.
 {t}: counter target spell unless its controller pays {1}.
 {t}: @ deals 1 damage to each creature with flying.
 {t}: @ deals 1 damage to each creature without flying.
+{t}: @ deals 1 damage to each opponent.
 {t}: @ deals 1 damage to itself.
 {t}: @ deals 1 damage to target attacking or blocking creature.
 {t}: @ deals 1 damage to target creature.
@@ -2054,6 +2062,8 @@ when @ dies, destroy target land.
 when @ dies, destroy target wall.
 when @ dies, discard a card.
 when @ dies, draw a card.
+when @ dies, each opponent discards a card.
+when @ dies, each opponent loses 2 life.
 when @ dies, each player discards a card.
 when @ dies, each player draws a card.
 when @ dies, each player loses 3 life.
@@ -2119,6 +2129,7 @@ when @ enters the battlefield, discard a card at random.
 when @ enters the battlefield, draw a card.
 when @ enters the battlefield, draw a card, then discard a card.
 when @ enters the battlefield, draw two cards.
+when @ enters the battlefield, each opponent discards a card.
 when @ enters the battlefield, each player discards a card.
 when @ enters the battlefield, each player draws two cards, then discards a card at random.
 when @ enters the battlefield, each player loses 1 life.
@@ -2266,6 +2277,8 @@ whenever @ attacks, attacking creatures gain trample until end of turn.
 whenever @ attacks, attacking creatures get +1/+1 until end of turn.
 whenever @ attacks, creatures you control get +2/+0 until end of turn.
 whenever @ attacks, destroy all other creatures.
+whenever @ attacks, each opponent loses 1 life.
+whenever @ attacks, each opponent loses 2 life.
 whenever @ attacks, goblin creatures you control get +1/+1 until end of turn.
 whenever @ attacks, human creatures you control get +1/+0 until end of turn.
 whenever @ attacks, it doesn't untap during its controller's next untap step.
@@ -2388,6 +2401,7 @@ whenever you cast a red spell, @ gains first strike until end of turn.
 whenever you cast a red spell, @ gets +1/+1 until end of turn.
 whenever you cast a red spell, remove a -1/-1 counter from @.
 whenever you cast a red spell, you may untap @.
+whenever you cast a spell during an opponent's turn, you may have each opponent lose 1 life.
 whenever you cast a spell during an opponent's turn, you may have target creature get -1/-1 until end of turn.
 whenever you cast a spell during an opponent's turn, you may return target creature you control to its owner's hand.
 whenever you cast a spell, equipped creature gets +2/+2 until end of turn.
