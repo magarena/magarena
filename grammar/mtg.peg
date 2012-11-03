@@ -306,7 +306,7 @@ TapAction
     ;
 
 RegenerateAction
-    = "regenerate" SPACE SelectCreature
+    = "regenerate" SPACE SelectPermanent
     ;
 
 DamageAction
@@ -578,6 +578,7 @@ Tribal
     / "wall" "s"?
     / "human"
     / "elf"
+    / "golem"
     ;
 
 Creature
