@@ -99,6 +99,8 @@
 {1}{r}{r}, {t}: target creature gains mountainwalk until end of turn.
 {1}{r}, sacrifice a creature: @ deals 2 damage to target creature or player.
 {1}{r}, sacrifice a creature: destroy target nonbasic land.
+{1}{r}, sacrifice a goblin: @ deals 2 damage to target creature or player.
+{1}{r}, sacrifice a goblin: @ deals 4 damage to target creature.
 {1}{r}, sacrifice a land: put a +1/+1 counter on @.
 {1}{r}, sacrifice @: @ deals 1 damage to target creature or player.
 {1}{r}: target creature gains haste until end of turn.
@@ -110,6 +112,7 @@
 {1}, sacrifice a creature: you gain 2 life.
 {1}, sacrifice a land: target creature gets +1/+1 until end of turn.
 {1}, sacrifice a permanent: you gain 1 life.
+{1}, sacrifice a saproling: draw a card.
 {1}, sacrifice @: @ deals 2 damage to target creature or player.
 {1}, sacrifice @: destroy target artifact or enchantment.
 {1}, sacrifice @: draw a card.
@@ -223,6 +226,7 @@
 {2}{b}, sacrifice a creature: target creature gets -2/-2 until end of turn.
 {2}{b}, sacrifice @: target creature gets -1/-1 until end of turn.
 {2}{b}, {t}, discard a card: destroy target nonblack creature. it can't be regenerated.
+{2}{b}, {t}, sacrifice a goblin: destroy target land.
 {2}: @ deals 1 damage to target creature.
 {2}: @ deals 1 damage to target creature or player. sacrifice @.
 {2}: discard a card.
@@ -587,6 +591,7 @@ blue creatures get +1/+1.
 {b}, sacrifice a creature: regenerate @.
 {b}, sacrifice a creature: target creature gets -1/-1 until end of turn.
 {b}, sacrifice a creature: target player loses 1 life.
+{b}, sacrifice a goblin: @ gets +2/+2 until end of turn.
 {b}, sacrifice an elf: regenerate @.
 {b}, sacrifice @: destroy target nonblack creature.
 {b}, sacrifice @: target player discards a card.
@@ -1335,6 +1340,7 @@ return @ to its owner's hand: regenerate target creature.
 {r}, {t}, discard a card: @ deals 1 damage to target creature or player.
 {r}, {t}, discard a card: destroy target wall.
 {r}, {t}, sacrifice a creature: @ deals 2 damage to target creature or player.
+{r}, {t}, sacrifice a goblin: red creatures get +1/+1 until end of turn.
 {r}, {t}: target creature gains first strike until end of turn.
 {r}, {t}: target creature gets +2/+0 until end of turn.
 {r}: untap @.
@@ -1361,6 +1367,11 @@ sacrifice @: add one mana of any color to your mana pool.
 sacrifice @: add {r} to your mana pool.
 sacrifice @: add {u} to your mana pool.
 sacrifice @: add {w} to your mana pool.
+sacrifice a goblin: add {r} to your mana pool.
+sacrifice a goblin: @ gets +2/+2 and gains trample until end of turn.
+sacrifice a goblin: regenerate @.
+sacrifice a goblin: regenerate target creature.
+sacrifice a goblin: target creature gets +1/+1 until end of turn.
 sacrifice a human: regenerate @.
 sacrifice a land: @ deals 1 damage to each creature with flying.
 sacrifice a land: destroy target enchantment.
@@ -1390,6 +1401,12 @@ sacrifice an untapped creature: enchanted creature gets +2/+0 until end of turn.
 sacrifice a permanent: regenerate target creature.
 sacrifice a permanent: regenerate target creature you control.
 sacrifice a permanent: return target creature to its owner's hand.
+sacrifice a saproling: add one mana of any color to your mana pool.
+sacrifice a saproling: @ gets +1/+2 until end of turn.
+sacrifice a saproling: target creature gains haste until end of turn.
+sacrifice a saproling: target creature gets -1/-1 until end of turn.
+sacrifice a saproling: target creature gets +1/+1 until end of turn.
+sacrifice a saproling: you gain 2 life.
 sacrifice @: creatures you control gain flying until end of turn.
 sacrifice @: @ deals 1 damage to target attacking or blocking creature.
 sacrifice @: @ deals 1 damage to target creature.
@@ -1661,6 +1678,7 @@ trample
 {t}, sacrifice a creature: target creature gets +2/+2 until end of turn.
 {t}, sacrifice a creature: you gain 1 life.
 {t}, sacrifice @: add one mana of any color to your mana pool.
+{t}, sacrifice a goblin: @ deals 2 damage to target creature or player.
 {t}, sacrifice a land: destroy target land.
 {t}, sacrifice an artifact: @ deals 2 damage to target creature or player.
 {t}, sacrifice an artifact: draw a card.
@@ -1864,6 +1882,7 @@ when @ enters the battlefield, destroy target creature with flying.
 when @ enters the battlefield, destroy target creature with power 4 or greater. it can't be regenerated.
 when @ enters the battlefield, destroy target enchantment.
 when @ enters the battlefield, destroy target equipment.
+when @ enters the battlefield, destroy target goblin.
 when @ enters the battlefield, destroy target land.
 when @ enters the battlefield, destroy target nonartifact, nonblack creature.
 when @ enters the battlefield, destroy target nonbasic land.
