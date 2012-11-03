@@ -12,7 +12,7 @@ SpellEffect
     ;
 
 SingleEffect
-    = (Optional SPACE)? (SelectPlayer SPACE)? Action
+    = (Optional SPACE)? (SelectPlayer SPACE)? Action (SPACE Duration)?
     ;
 
 Optional
@@ -367,17 +367,21 @@ Enchant
     / "enchant player"
     ;
 
+Duration
+    = "until end of turn"
+    ;
+
 GainsAction
-    = (SelectCreature SPACE)? "has " Keyword " until end of turn"?
-    / (SelectCreature SPACE)? "gains " Keyword " until end of turn"?
-    / (SelectCreature SPACE)? "loses " Keyword " until end of turn"?
-    / SelectCreature " have " Keyword " until end of turn"?
-    / SelectCreature " gain " Keyword " until end of turn"?
-    / SelectCreature " lose " Keyword " until end of turn"?
+    = (SelectCreature SPACE)? "has " Keyword
+    / (SelectCreature SPACE)? "gains " Keyword
+    / (SelectCreature SPACE)? "loses " Keyword
+    / SelectCreature " have " Keyword
+    / SelectCreature " gain " Keyword
+    / SelectCreature " lose " Keyword
     ;
 
 PumpAction
-    = SelectCreature " get" "s"? SPACE SignedNumber "/" SignedNumber " until end of turn"?
+    = SelectCreature " get" "s"? SPACE SignedNumber "/" SignedNumber 
     ;
 
 AddManaAction
