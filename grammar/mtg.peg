@@ -566,12 +566,10 @@ CreatureRestriction
     / "green"
     / "red"
     / "black"
-    / "human"
-    / "non-vampire, non-werewolf, non-zombie"
     / "nonartifact"
     / "artifact"
     / "you control"
-    / "ally"
+    / Tribal
     ;
 
 Tribal
@@ -581,8 +579,11 @@ Tribal
     / "human"
     / "elf"
     / "golem"
+    / "bird"
     / "goblin"
     / "saproling"
+    / "ally"
+    / "non-vampire, non-werewolf, non-zombie"
     ;
 
 Creature

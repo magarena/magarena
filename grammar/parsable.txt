@@ -104,8 +104,10 @@
 {1}{r}, sacrifice a land: put a +1/+1 counter on @.
 {1}{r}, sacrifice @: @ deals 1 damage to target creature or player.
 {1}{r}: target creature gains haste until end of turn.
+{1}{r}: target goblin creature gets +1/+0 until end of turn.
 {1}{r}, {t}: @ deals 1 damage to target creature or player.
 {1}{r}, {t}, discard a card: target creature gets +1/-1 and gains haste until end of turn.
+{1}{r}, {t}: target goblin creature gets +2/+0 until end of turn.
 {1}, sacrifice a creature: @ deals 1 damage to target creature or player.
 {1}, sacrifice a creature: put a +1/+1 counter on @.
 {1}, sacrifice a creature: put a +1/+1 counter on target creature.
@@ -240,6 +242,7 @@
 {2}{g}: put a 1/1 green saproling creature token onto the battlefield.
 {2}{g}: regenerate @.
 {2}{g}, sacrifice @: @ deals 2 damage to target creature with flying.
+{2}{g}: target elf creature gains forestwalk until end of turn.
 {2}{g}: target green creature gains protection from black until end of turn.
 {2}{g}, {t}: target creature gets +2/+2 until end of turn.
 {2}{g}, {t}: untap target creature.
@@ -564,6 +567,7 @@ battle cry
 {b}{g}: regenerate @.
 {b/g}, remove a -1/-1 counter from a creature you control: @ gets +3/+3 until end of turn.
 {b/g}, remove a -1/-1 counter from @: regenerate @.
+bird creatures get +1/+1.
 black creatures get +1/+1.
 black creatures get +2/+0 until end of turn.
 black creatures you control have protection from white.
@@ -1090,6 +1094,13 @@ forestwalk
 {g}{g}: tap target creature with flying.
 {g}{g}, {t}: creatures you control get +2/+2 until end of turn.
 {g}{g}, {t}: put a charge counter on @.
+goblin creatures get +1/+1.
+goblin creatures you control have haste.
+golem creatures you control get +1/+1.
+golem creatures you control have first strike.
+golem creatures you control have flying.
+golem creatures you control have trample.
+golem creatures you control have vigilance.
 green creatures have forestwalk.
 green creatures you control gain forestwalk until end of turn.
 green creatures you control get +0/+2.
@@ -1196,6 +1207,7 @@ mountainwalk
 nonartifact creatures get -1/-1 until end of turn.
 nonblack creatures get -1/-1.
 other artifact creatures you control get +1/+1.
+other bird creatures get +1/+1.
 other black creatures get -1/-1.
 other black creatures get +1/+1.
 other black creatures you control get +1/+1.
@@ -1206,11 +1218,16 @@ other creatures you control get +1/+1.
 other creatures you control get +2/+2.
 other creatures you control have exalted.
 other creatures you control have intimidate.
+other elf creatures have forestwalk.
+other elf creatures you control get +1/+1.
+other goblin creatures you control get +1/+1.
 other green creatures you control get +1/+1.
 other green creatures you control have intimidate.
 other human creatures you control get +1/+1.
 other nonblack creatures you control get +1/+1.
 other red creatures you control get +1/+1.
+other spirit creatures you control get +0/+1.
+other spirit creatures you control get +1/+0.
 other white creatures get +1/+1.
 other white creatures you control get +1/+1.
 pay 1 life: draw a card.
@@ -1426,6 +1443,7 @@ sacrifice a permanent: regenerate target creature you control.
 sacrifice a permanent: return target creature to its owner's hand.
 sacrifice a saproling: add one mana of any color to your mana pool.
 sacrifice a saproling: @ gets +1/+2 until end of turn.
+sacrifice a saproling: saproling creatures get +1/+1 until end of turn.
 sacrifice a saproling: target creature gains haste until end of turn.
 sacrifice a saproling: target creature gets -1/-1 until end of turn.
 sacrifice a saproling: target creature gets +1/+1 until end of turn.
@@ -1470,6 +1488,7 @@ sacrifice @: target player loses 1 life and you gain 1 life.
 sacrifice @: you gain 3 life.
 sacrifice @: you gain 4 life.
 sacrifice @: you may tap or untap target creature.
+saproling creatures get +1/+1.
 shadow
 shroud
 soulbond
@@ -1481,6 +1500,7 @@ soulshift 5
 soulshift 6
 soulshift 7
 soulshift 8
+spirit creatures you control get +1/+1.
 storm
 swampwalk
 {t}: add {1} to your mana pool.
@@ -1702,6 +1722,7 @@ trample
 {t}, sacrifice a creature: you gain 1 life.
 {t}, sacrifice @: add one mana of any color to your mana pool.
 {t}, sacrifice a goblin: @ deals 2 damage to target creature or player.
+{t}, sacrifice a goblin: goblin creatures get +2/+0 until end of turn.
 {t}, sacrifice a land: destroy target land.
 {t}, sacrifice an artifact: @ deals 2 damage to target creature or player.
 {t}, sacrifice an artifact: draw a card.
@@ -1928,6 +1949,7 @@ when @ enters the battlefield, exile all lands.
 when @ enters the battlefield, exile target black permanent.
 when @ enters the battlefield, exile target creature.
 when @ enters the battlefield, exile target land.
+when @ enters the battlefield, goblin creatures get +3/+0 until end of turn.
 when @ enters the battlefield, green creatures get -1/-1 until end of turn.
 when @ enters the battlefield, it deals 1 damage to target creature or player.
 when @ enters the battlefield, it deals 2 damage to enchanted creature.
@@ -2043,6 +2065,7 @@ whenever @ attacks, attacking creatures gain first strike until end of turn.
 whenever @ attacks, attacking creatures gain trample until end of turn.
 whenever @ attacks, attacking creatures get +1/+1 until end of turn.
 whenever @ attacks, creatures you control get +2/+0 until end of turn.
+whenever @ attacks, goblin creatures you control get +1/+1 until end of turn.
 whenever @ attacks, human creatures you control get +1/+0 until end of turn.
 whenever @ attacks, it doesn't untap during its controller's next untap step.
 whenever @ attacks, it gets +0/+2 until end of turn.
@@ -2199,6 +2222,7 @@ when @ is put into a graveyard from the battlefield, exile equipped creature.
 when @ is put into a graveyard from the battlefield, return @ to its owner's hand.
 when @ leaves the battlefield, destroy target white creature. it can't be regenerated.
 when @ leaves the battlefield, draw a card.
+when @ leaves the battlefield, it deals 1 damage to each goblin creature.
 when @ leaves the battlefield, it deals 4 damage to target creature.
 when @ leaves the battlefield, it deals 6 damage to target creature.
 when @ leaves the battlefield, return the exiled card to the battlefield under its owner's control.
@@ -2254,6 +2278,7 @@ wither
 {w}{u}{b}{r}{g}: exile target permanent.
 {w}{u}{b}{r}{g}, remove five -1/-1 counters from @: target player draws three cards.
 {w}{u}: target creature gains flying until end of turn.
+{w}{u}, {t}, sacrifice a bird: draw a card.
 {w}{w}: @ gains first strike until end of turn.
 {w}{w}: @ gets +0/+2 until end of turn.
 {w}{w}: @ gets +1/+0 until end of turn.
