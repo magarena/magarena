@@ -419,6 +419,7 @@ CounterAction
 
 SelectOp
     = "target"
+    / "all other"
     / "all"
     / "an"
     / "a"

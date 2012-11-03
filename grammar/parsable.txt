@@ -22,6 +22,7 @@
 {1}{b}, pay 2 life: return target creature card from your graveyard to your hand.
 {1}{b}: put a -1/-1 counter on enchanted creature.
 {1}{b}: regenerate @.
+{1}{b}, remove a +1/+1 counter from @: all other creatures get -1/-1 until end of turn.
 {1}{b}, sacrifice a creature: regenerate @.
 {1}{b}, sacrifice a land: target creature gets +2/+0 until end of turn.
 {1}{b}, sacrifice @: you draw two cards and lose 2 life.
@@ -50,6 +51,7 @@
 {1}{g}: @ gains flying and loses trample until end of turn.
 {1}{g}: @ gains reach until end of turn.
 {1}{g}: @ gains trample until end of turn.
+{1}{g}{g}: destroy all other enchantments.
 {1}{g}: @ gets -0/-1 and gains flying until end of turn.
 {1}{g}: @ gets +1/+0 until end of turn.
 {1}{g}: @ gets -1/+1 until end of turn.
@@ -388,6 +390,7 @@
 {3}, {t}: target creature gets -2/-0 until end of turn.
 {3}, {t}: untap target artifact.
 {3}, {t}: untap target creature.
+{3}{u}: all other creatures lose flying until end of turn.
 {3}{u}: draw a card.
 {3}{u}: @ gains flying until end of turn.
 {3}: untap @.
@@ -1952,6 +1955,7 @@ when @ enters the battlefield, each player sacrifices a creature.
 when @ enters the battlefield, each player sacrifices a land.
 when @ enters the battlefield, exile a land you control.
 when @ enters the battlefield, exile all lands.
+when @ enters the battlefield, exile all other permanents you control.
 when @ enters the battlefield, exile target black permanent.
 when @ enters the battlefield, exile target creature.
 when @ enters the battlefield, exile target land.
@@ -2001,6 +2005,7 @@ when @ enters the battlefield, sacrifice it unless you sacrifice a land.
 when @ enters the battlefield, sacrifice it unless you sacrifice an artifact.
 when @ enters the battlefield, tap all islands.
 when @ enters the battlefield, tap all lands you control.
+when @ enters the battlefield, tap all other creatures.
 when @ enters the battlefield, tap all red creatures.
 when @ enters the battlefield, tap enchanted creature.
 when @ enters the battlefield, tap enchanted permanent.
@@ -2067,10 +2072,12 @@ when @ enters the battlefield, you may return target tapped creature to its owne
 when @ enters the battlefield, you may tap or untap target permanent.
 when @ enters the battlefield, you may tap target creature.
 whenever @ attacks, all attacking creatures with flanking get +1/+1 until end of turn.
+whenever @ attacks, all other creatures you control get +1/+1 until end of turn.
 whenever @ attacks, attacking creatures gain first strike until end of turn.
 whenever @ attacks, attacking creatures gain trample until end of turn.
 whenever @ attacks, attacking creatures get +1/+1 until end of turn.
 whenever @ attacks, creatures you control get +2/+0 until end of turn.
+whenever @ attacks, destroy all other creatures.
 whenever @ attacks, goblin creatures you control get +1/+1 until end of turn.
 whenever @ attacks, human creatures you control get +1/+0 until end of turn.
 whenever @ attacks, it doesn't untap during its controller's next untap step.
