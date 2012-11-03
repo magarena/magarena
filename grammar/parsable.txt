@@ -362,6 +362,7 @@
 {3}: put a +1/+1 counter on @.
 {3}{r}: @ deals 1 damage to target creature or player.
 {3}: regenerate @.
+{3}, return a land you control to its owner's hand: counter target spell unless its controller pays {3}.
 {3}, return a land you control to its owner's hand: target creature you control gains shroud until end of turn.
 {3}: return target creature card from your graveyard to your hand.
 {3}: return @ to its owner's hand.
@@ -396,6 +397,7 @@
 {3}: untap @.
 {3}{u}: return @ to its owner's hand.
 {3}{u}, sacrifice a permanent: return target permanent to its owner's hand.
+{3}{u}, {t}: counter target spell unless its controller pays {2}.
 {3}{u}, {t}: draw a card.
 {3}{u}, {t}: tap target creature.
 {3}{u}{u}: counter target enchantment spell.
@@ -516,7 +518,27 @@ at the beginning of your upkeep, sacrifice a creature.
 at the beginning of your upkeep, sacrifice a nonblack creature.
 at the beginning of your upkeep, sacrifice a permanent.
 at the beginning of your upkeep, sacrifice @ unless you discard a card.
+at the beginning of your upkeep, sacrifice @ unless you pay {1}{u}.
+at the beginning of your upkeep, sacrifice @ unless you pay {1}{w}.
+at the beginning of your upkeep, sacrifice @ unless you pay {2}.
+at the beginning of your upkeep, sacrifice @ unless you pay {2}{b}{b}.
 at the beginning of your upkeep, sacrifice @ unless you pay 2 life.
+at the beginning of your upkeep, sacrifice @ unless you pay {3}.
+at the beginning of your upkeep, sacrifice @ unless you pay {b}.
+at the beginning of your upkeep, sacrifice @ unless you pay {b}{b}.
+at the beginning of your upkeep, sacrifice @ unless you pay {b}{b}{b}{b}.
+at the beginning of your upkeep, sacrifice @ unless you pay {b}{r}{g}.
+at the beginning of your upkeep, sacrifice @ unless you pay {g}.
+at the beginning of your upkeep, sacrifice @ unless you pay {g}{g}.
+at the beginning of your upkeep, sacrifice @ unless you pay {g}{w}{u}.
+at the beginning of your upkeep, sacrifice @ unless you pay {r}{g}{w}.
+at the beginning of your upkeep, sacrifice @ unless you pay {r}{r}{r}{r}.
+at the beginning of your upkeep, sacrifice @ unless you pay {u}.
+at the beginning of your upkeep, sacrifice @ unless you pay {u}{b}{r}.
+at the beginning of your upkeep, sacrifice @ unless you pay {u}{u}.
+at the beginning of your upkeep, sacrifice @ unless you pay {w}{u}.
+at the beginning of your upkeep, sacrifice @ unless you pay {w}{u}{b}.
+at the beginning of your upkeep, sacrifice @ unless you pay {w}{w}.
 at the beginning of your upkeep, sacrifice @ unless you remove a +1/+1 counter from it.
 at the beginning of your upkeep, sacrifice @ unless you return a land you control to its owner's hand.
 at the beginning of your upkeep, sacrifice @ unless you sacrifice a creature.
@@ -633,11 +655,26 @@ buyback {5}
 changeling
 counter target blue spell.
 counter target creature spell.
+counter target creature spell. its controller loses 1 life.
 counter target noncreature spell.
+counter target noncreature spell. its controller loses 2 life.
+counter target noncreature spell unless its controller pays {2}.
 counter target red or green spell.
 counter target spell.
 counter target spell and @ deals 3 damage to target creature.
+counter target spell. its controller discards a card.
+counter target spell. its controller draws a card.
+counter target spell. its controller loses 3 life.
+counter target spell. its controller loses 3 life and you gain 3 life.
 counter target spell. return target permanent to its owner's hand.
+counter target spell unless its controller pays {1}.
+counter target spell unless its controller pays {1}. that player discards a card.
+counter target spell unless its controller pays {2}.
+counter target spell unless its controller pays {3}.
+counter target spell unless its controller pays {4}.
+counter target spell unless its controller pays {4}. you gain 4 life.
+counter target spell unless its controller pays {x}.
+counter target spell unless its controller pays {x}. you gain x life.
 counter target spell. you gain 3 life.
 counter target spell. you gain 5 life.
 counter target spirit or arcane spell.
@@ -768,12 +805,15 @@ destroy target artifact creature.
 destroy target artifact creature or black creature. it can't be regenerated.
 destroy target artifact, enchantment, or land.
 destroy target artifact. it can't be regenerated.
+destroy target artifact. its controller loses 1 life.
 destroy target artifact or creature. it can't be regenerated.
 destroy target artifact or enchantment.
+destroy target artifact or enchantment. its controller gains 4 life.
 destroy target artifact or enchantment. you gain 3 life.
 destroy target artifact or enchantment. you gain 4 life.
 destroy target artifact or land.
 destroy target artifact or land. it can't be regenerated.
+destroy target artifact or land. its controller loses 1 life.
 destroy target attacking creature.
 destroy target attacking creature with flying.
 destroy target attacking creature without flying.
@@ -784,6 +824,8 @@ destroy target blocked creature.
 destroy target blue or black creature with flying.
 destroy target creature.
 destroy target creature. it can't be regenerated.
+destroy target creature. its controller discards a card.
+destroy target creature. its controller loses 2 life.
 destroy target creature or enchantment.
 destroy target creature or land.
 destroy target creature or land. it can't be regenerated.
@@ -804,6 +846,8 @@ destroy target human creature.
 destroy target land.
 destroy target land. @ deals 13 damage to target creature.
 destroy target land. @ deals 1 damage to each human creature.
+destroy target land. its controller discards a card.
+destroy target land. its controller loses 2 life.
 destroy target land or nonblack creature.
 destroy target land or nonblack creature. it can't be regenerated.
 destroy target land. you gain 2 life.
@@ -812,6 +856,8 @@ destroy target nonartifact creature.
 destroy target nonartifact, nonblack creature. it can't be regenerated.
 destroy target nonblack creature.
 destroy target nonblack creature. it can't be regenerated.
+destroy target nonblack creature. it can't be regenerated. its controller loses 2 life.
+destroy target nonblack creature. its controller loses 2 life.
 destroy target nonblack creature. you gain 3 life.
 destroy target noncreature permanent.
 destroy target non-vampire, non-werewolf, non-zombie creature.
@@ -1062,6 +1108,7 @@ exile target attacking or blocking creature.
 exile target black or red permanent.
 exile target creature.
 exile target creature or enchantment.
+exile target creature with power 2 or less. its controller gains 4 life.
 exile target creature you control, then return it to the battlefield under its owner's control.
 exile target enchantment.
 exile target land.
@@ -1336,9 +1383,12 @@ return target creature card from your graveyard to the battlefield. put a +1/+1 
 return target creature card from your graveyard to your hand.
 return target creature card from your graveyard to your hand. target player sacrifices a creature.
 return target creature to its owner's hand.
+return target creature to its owner's hand. its controller draws a card.
+return target creature to its owner's hand. its controller loses 1 life.
 return target creature to its owner's hand. you gain 2 life.
 return target instant or sorcery card from your graveyard to your hand.
 return target permanent to its owner's hand.
+return target permanent to its owner's hand. its controller loses 3 life.
 return target permanent you control to its owner's hand.
 return target permanent you control to its owner's hand. you gain 4 life.
 return target sorcery card from your graveyard to your hand.
@@ -1455,6 +1505,9 @@ sacrifice a saproling: target creature gains haste until end of turn.
 sacrifice a saproling: target creature gets -1/-1 until end of turn.
 sacrifice a saproling: target creature gets +1/+1 until end of turn.
 sacrifice a saproling: you gain 2 life.
+sacrifice @: counter target spell unless its controller pays {1}.
+sacrifice @: counter target spell unless its controller pays {2}.
+sacrifice @: counter target spell unless its controller pays {3}.
 sacrifice @: creatures you control gain flying until end of turn.
 sacrifice @: @ deals 1 damage to target attacking or blocking creature.
 sacrifice @: @ deals 1 damage to target creature.
@@ -1663,6 +1716,7 @@ target player sacrifices a creature with converted mana cost 3 or less.
 target player sacrifices a land.
 target player sacrifices an attacking creature.
 target player sacrifices a permanent.
+{t}: counter target spell unless its controller pays {1}.
 {t}: @ deals 1 damage to each creature with flying.
 {t}: @ deals 1 damage to each creature without flying.
 {t}: @ deals 1 damage to itself.
@@ -1828,9 +1882,11 @@ untap target permanent.
 {u/r}: @ gets +1/-1 until end of turn.
 {u}, sacrifice a creature: discard a card, then draw a card.
 {u}, sacrifice @: counter target noncreature spell.
+{u}, sacrifice @: counter target spell unless its controller pays {2}.
 {u}, sacrifice @: return target creature to its owner's hand.
 {u}: tap enchanted creature.
 {u}: tap target green creature.
+{u}, {t}: counter target spell unless its controller pays {1}.
 {u}, {t}: @ deals 1 damage to target creature or player.
 {u}, {t}, discard a card: return target creature to its owner's hand.
 {u}, {t}, discard a card: return target permanent you control to its owner's hand.
@@ -2000,6 +2056,7 @@ when @ enters the battlefield, sacrifice a land.
 when @ enters the battlefield, sacrifice all creatures you control.
 when @ enters the battlefield, sacrifice it unless you discard a card at random.
 when @ enters the battlefield, sacrifice it unless you discard a creature card.
+when @ enters the battlefield, sacrifice it unless you pay {1}.
 when @ enters the battlefield, sacrifice it unless you return an enchantment to its owner's hand.
 when @ enters the battlefield, sacrifice it unless you sacrifice a land.
 when @ enters the battlefield, sacrifice it unless you sacrifice an artifact.
@@ -2183,6 +2240,7 @@ whenever you cast a multicolored spell, you may return @ from your graveyard to 
 whenever you cast an enchantment spell, draw a card.
 whenever you cast an enchantment spell, put a +1/+1 counter on each creature you control.
 whenever you cast an enchantment spell, you may draw a card.
+whenever you cast a noncreature spell, counter that spell unless you sacrifice a creature.
 whenever you cast a red spell, @ deals 1 damage to each creature without flying.
 whenever you cast a red spell, @ gains first strike until end of turn.
 whenever you cast a red spell, @ gets +1/+1 until end of turn.
@@ -2249,6 +2307,7 @@ when @ leaves the battlefield, you lose 20 life.
 when you cast a creature spell, sacrifice @.
 when you cast a spell, return @ to its owner's hand.
 when you cast a spell, sacrifice @.
+when you cast @, counter it unless you sacrifice a land.
 when you cast @, destroy target permanent.
 when you cast @, draw four cards.
 when you cast @, you may return target creature card from your graveyard to the battlefield.

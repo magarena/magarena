@@ -74,6 +74,7 @@ Action
     / DoesntUntapAction
     / EntersTapped
     / EntersWithCounter
+    / PayManaAction
     ;
 
 Keyword
@@ -270,11 +271,15 @@ ChangeCounterAction
     / "put " Count SPACE CounterType " counters on " SelectPermanent
     ;
 
+PayManaAction
+    = "pay" "s"? SPACE ManaCost
+    ;
+
 ChangeLifeAction
     = "loses " Number " life and you gain " Number " life"
     / "lose" "s"? SPACE Number " life"
     / "gain" "s"? SPACE Number " life"
-    / "pay" SPACE Number " life"
+    / "pay" "s"? SPACE Number " life"
     ;
 
 SelectPlayer
@@ -283,6 +288,7 @@ SelectPlayer
     / "that player"
     / "each player"
     / "you"
+    / "its controller"
     ;
 
 ReturnAction
@@ -414,7 +420,7 @@ ExileAction
     ;
 
 CounterAction
-    = "counter " SelectSpell
+    = "counter " SelectSpell (" unless " SingleEffect)?
     ;
 
 SelectOp
