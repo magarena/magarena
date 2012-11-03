@@ -151,6 +151,7 @@ SacrificeAction
 
 ActivationCost
     = "{t}"
+    / "tap " SelectPermanent
     / ManaCost
     / Action
     / "pay " Number " life"
@@ -237,6 +238,7 @@ DealsDamageTrigger
 DamageReceiver
     = "itself"
     / "player"
+    / SelectPlayer
     / SelectCreature " or player"?
     ;
 
@@ -482,6 +484,7 @@ PermanentRestriction
     = "black or red"
     / "black"
     / "red"
+    / "untapped"
     / "noncreature"
     / "you control"
     ;
