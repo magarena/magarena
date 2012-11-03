@@ -227,6 +227,8 @@
 {1}{w}: target green creature gains first strike until end of turn.
 {1}{w}, {t}: destroy target black creature.
 {1}{w}, {t}, discard a card: destroy target artifact or enchantment.
+{1}{w}, {t}: prevent all combat damage that would be dealt by target attacking creature this turn.
+{1}{w}, {t}: prevent all combat damage that would be dealt by target blocked creature this turn.
 {1}{w}, {t}: prevent all damage that would be dealt to target creature with power 5 or greater this turn.
 {1}{w}, {t}, sacrifice @: destroy target artifact or enchantment.
 {1}{w}, {t}: you gain 5 life.
@@ -322,6 +324,7 @@
 {2}, {t}: each player draws a card.
 {2}, {t}: exile target creature you control.
 {2}, {t}: exile target permanent you control.
+{2}, {t}: prevent all combat damage that would be dealt by target creature this turn.
 {2}, {t}: prevent the next 1 damage that would be dealt to target creature or player this turn.
 {2}, {t}: put a +1/+1 counter on @.
 {2}, {t}: put a charge counter on @.
@@ -359,6 +362,7 @@
 {2}{w}: creatures you control get +1/+1 until end of turn.
 {2}{w}, discard a card: @ gets +1/+2 until end of turn.
 {2}{w}: @ gains first strike until end of turn.
+{2}{w}: prevent all combat damage that would be dealt by target creature this turn.
 {2}{w}, {q}: @ gets +0/+2 until end of turn.
 {2}{w}: return @ to its owner's hand.
 {2}{w}: tap target creature.
@@ -1440,7 +1444,10 @@ pay 7 life: draw seven cards.
 pay 8 life: untap @.
 persist
 plainswalk
+prevent all combat damage that would be dealt by target attacking creature this turn.
+prevent all combat damage that would be dealt by target creature this turn.
 prevent all combat damage that would be dealt this turn.
+prevent all combat damage that would be dealt to target creature this turn.
 prevent all damage that would be dealt by creatures this turn.
 prevent all damage that would be dealt to creatures this turn.
 prevent all damage that would be dealt to target creature this turn.
@@ -2136,6 +2143,7 @@ vanishing 4
 vigilance
 {w/b}: @ gains first strike until end of turn.
 {w/b}: @ gains flying until end of turn.
+{w}{b}, {t}: prevent all combat damage that would be dealt by target creature this turn.
 {w/b}{w/b}: @ gets +1/+0 until end of turn.
 {w/b}{w/b}{w/b}: @ gets +3/+3 until end of turn.
 {w/b}{w/b}{w/b}: regenerate target creature.
@@ -2420,6 +2428,7 @@ whenever @ becomes blocked, it gets +2/+0 until end of turn.
 whenever @ becomes blocked, it gets +2/+2 until end of turn.
 whenever @ becomes blocked, it gets +3/+0 and gains trample until end of turn.
 whenever @ becomes blocked, it gets +6/+3 until end of turn.
+whenever @ becomes blocked, prevent all combat damage that would be dealt by it this turn.
 whenever @ becomes blocked, prevent all combat damage that would be dealt this turn.
 whenever @ becomes blocked, regenerate it.
 whenever @ becomes blocked, untap it.

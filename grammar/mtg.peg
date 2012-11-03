@@ -321,10 +321,15 @@ BounceAction
     ;
 
 PreventAction
-    = "prevent the next " Number " damage that would be dealt to " DamageReceiver " this turn"
-    / "prevent all combat damage that would be dealt this turn"
-    / "prevent all damage that would be dealt to " DamageReceiver " this turn"
-    / "prevent all damage that would be dealt by " DamageReceiver " this turn"
+    = "prevent the next " Number SPACE Damage " that would be dealt to " DamageReceiver " this turn"
+    / "prevent all " Damage " that would be dealt this turn"
+    / "prevent all " Damage " that would be dealt to " DamageReceiver " this turn"
+    / "prevent all " Damage " that would be dealt by " DamageReceiver " this turn"
+    ;
+
+Damage
+    = "damage"
+    / "combat damage"
     ;
 
 TapAction
