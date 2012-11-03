@@ -185,6 +185,7 @@
 {1}{u}: @ gains flying until end of turn.
 {1}{u}: @ gains shroud until end of turn.
 {1}: untap @.
+{1}{u}, {q}: @ gains flying until end of turn.
 {1}{u}{r}: draw a card, then discard a card.
 {1}{u}: return @ to its owner's hand.
 {1}{u}{r}: @ gets +3/+0 and gains flying until end of turn.
@@ -270,6 +271,7 @@
 {2}, pay 2 life: draw a card.
 {2}: prevent the next 1 damage that would be dealt to you this turn.
 {2}: put a charge counter on @.
+{2}, {q}: add one mana of any color to your mana pool.
 {2}{r}: @ deals 1 damage to target player.
 {2}: regenerate @.
 {2}: regenerate equipped creature.
@@ -283,6 +285,7 @@
 {2}, return a land you control to its owner's hand: untap target land.
 {2}{r}: @ gains first strike until end of turn.
 {2}{r}{g}, discard two cards at random: @ deals 4 damage to target creature or player.
+{2}{r}, {q}: @ deals damage equal to its power to target creature or player.
 {2}{r}, sacrifice @: @ deals 2 damage to target creature.
 {2}{r}: target creature gets +1/+0 until end of turn.
 {2}{r}, {t}: @ deals 1 damage to each opponent.
@@ -352,6 +355,7 @@
 {2}{w}: creatures you control get +1/+1 until end of turn.
 {2}{w}, discard a card: @ gets +1/+2 until end of turn.
 {2}{w}: @ gains first strike until end of turn.
+{2}{w}, {q}: @ gets +0/+2 until end of turn.
 {2}{w}: return @ to its owner's hand.
 {2}{w}: tap target creature.
 {2}{w}: target player gains 1 life.
