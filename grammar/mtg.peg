@@ -349,6 +349,7 @@ CounterType
     / "verse"
     / "quest"
     / "fade"
+    / "age"
     ;
 
 Count
