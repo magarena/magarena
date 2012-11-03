@@ -332,6 +332,7 @@ CounterType
     / "ki"
     / "verse"
     / "quest"
+    / "fade"
     ;
 
 Count
