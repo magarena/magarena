@@ -292,6 +292,7 @@
 {2}{r}{w}, {t}: target creature gains double strike until end of turn.
 {2}, sacrifice a permanent: return target creature to its owner's hand.
 {2}, sacrifice @: @ deals 2 damage to each attacking creature without flying.
+{2}, sacrifice @: @ deals damage equal to the number of charge counters on it to target creature or player.
 {2}, sacrifice @: draw a card.
 {2}, sacrifice @: target player draws a card.
 {2}, {t}: add {b} or {g} to your mana pool.
@@ -403,6 +404,7 @@
 {3}, {t}: remove a -1/-1 counter from target creature.
 {3}, {t}, remove a charge counter from @: draw a card.
 {3}, {t}, sacrifice a land: destroy target nonbasic land.
+{3}, {t}, sacrifice @: @ deals damage equal to the number of charge counters on it to target creature or player.
 {3}, {t}, sacrifice @: destroy target land.
 {3}, {t}, sacrifice @: draw three cards.
 {3}, {t}: tap target creature, then return @ to its owner's hand.
@@ -1844,6 +1846,8 @@ target player sacrifices a permanent.
 {t}: @ deals 4 damage to target attacking creature with flying.
 {t}: @ deals damage equal to its power to target creature. that creature deals damage equal to its power to @.
 {t}: @ deals damage equal to its power to target creature with flying.
+{t}: @ deals damage equal to the number of +1/+1 counters on it to target attacking or blocking creature.
+{t}: @ deals damage equal to the number of +1/+1 counters on it to target creature or player.
 {t}: destroy target blue creature.
 {t}: destroy target creature. it can't be regenerated.
 {t}: destroy target creature or land.
