@@ -457,6 +457,7 @@
 {7}{b}: target creature gets -3/-3 until end of turn.
 {7}{g}: @ gets +5/+5 until end of turn.
 {7}{r}: @ deals 5 damage to target player.
+{7}, {t}: exile target creature you don't control.
 {7}{u}: @ gets +3/+3 and gains flying until end of turn.
 {7}{w}: you gain 5 life.
 {8}: creatures you control gain flying until end of turn.
@@ -764,6 +765,7 @@ cumulative upkeep {w}
 @ deals 1 damage to target creature and 1 damage to target player.
 @ deals 1 damage to target creature or player.
 @ deals 1 damage to target creature. put a -1/-1 counter on that creature.
+@ deals 1 damage to target creature you don't control.
 @ deals 1 damage to target player and you gain 1 life.
 @ deals 1 damage to target player. you gain 1 life.
 @ deals 2 damage to each creature.
@@ -795,6 +797,7 @@ cumulative upkeep {w}
 @ deals 4 damage to target creature or player.
 @ deals 4 damage to target creature or player and 2 damage to you.
 @ deals 4 damage to target creature or player and you gain 4 life.
+@ deals 4 damage to target creature you don't control.
 @ deals 4 damage to target opponent. you gain 4 life.
 @ deals 4 damage to target player.
 @ deals 5 damage to each creature with flying.
@@ -828,14 +831,17 @@ destroy all creatures. they can't be regenerated.
 destroy all creatures with converted mana cost x or less.
 destroy all creatures with flying.
 destroy all creatures with power 4 or greater. they can't be regenerated.
+destroy all creatures you don't control. they can't be regenerated.
 destroy all enchantments.
 destroy all green creatures.
 destroy all green creatures. they can't be regenerated.
 destroy all islands.
 destroy all lands.
+destroy all nonartifact permanents.
 destroy all nonbasic lands.
 destroy all tapped creatures.
 destroy all white creatures.
+destroy all white permanents.
 destroy each creature with converted mana cost 3 or less.
 destroy each creature with converted mana cost 3 or less. they can't be regenerated.
 destroy target artifact.
@@ -1484,6 +1490,7 @@ return @ to its owner's hand: regenerate target creature.
 {r}, {t}: @ deals 1 damage to target creature or player and 1 damage to you.
 {r}, {t}: @ deals 2 damage to target blue creature.
 {r}, {t}, discard a card: @ deals 1 damage to target creature or player.
+{r}, {t}, discard a card: destroy target blue permanent.
 {r}, {t}, discard a card: destroy target wall.
 {r}, {t}, sacrifice a creature: @ deals 2 damage to target creature or player.
 {r}, {t}, sacrifice a goblin: red creatures get +1/+1 until end of turn.
@@ -1673,6 +1680,7 @@ tap an untapped creature you control: untap target basic land.
 tap target artifact, creature, or land.
 tap target creature.
 tap target creature. it doesn't untap during its controller's next untap step.
+tap target creature you don't control.
 tap target permanent.
 target attacking creature gets +x/+0 until end of turn.
 target creature gains deathtouch until end of turn.
@@ -1749,6 +1757,7 @@ target creature loses shadow until end of turn.
 target creature you control gets +0/+1 and gains hexproof until end of turn.
 target creature you control gets +1/+1 and gains hexproof until end of turn.
 target creature you control gets +2/+0 until end of turn.
+target creature you don't control gets -4/-0 until end of turn.
 target nonblack creature gets -1/-1 until end of turn.
 target opponent discards a card at random.
 target opponent discards a card at random, then discards a card.
@@ -2118,6 +2127,7 @@ when @ enters the battlefield, prevent the next 3 damage that would be dealt to 
 when @ enters the battlefield, put a -1/-1 counter on each creature.
 when @ enters the battlefield, put a -1/-1 counter on target creature.
 when @ enters the battlefield, put a +1/+1 counter on target creature.
+when @ enters the battlefield, put a +1/+1 counter on target creature you don't control.
 when @ enters the battlefield, put a creature you control on top of its owner's library.
 when @ enters the battlefield, put six +1/+1 counters on enchanted creature.
 when @ enters the battlefield, put target artifact on top of its owner's library.

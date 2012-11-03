@@ -480,15 +480,6 @@ RestrictedPermanent
     / SelectTribal
     ;
 
-PermanentRestriction
-    = "black or red"
-    / "black"
-    / "red"
-    / "untapped"
-    / "noncreature"
-    / "you control"
-    ;
-
 SelectArtifact
     = Artifact
     ;
@@ -551,22 +542,8 @@ RestrictedCreature
     = (CreatureRestriction SPACE)? Creature (SPACE CreatureRestriction)?
     ;
 
-CreatureRestriction
-    = "with converted mana cost " Number " or less"
-    / "with converted mana cost " Number " or greater"
-    / "with converted mana cost " Number
-    / "with power " Number " or less"
-    / "with power " Number " or greater"
-    / "with " Keyword
-    / "without " Keyword
-    / "tapped or blocking"
-    / "tapped"
-    / "untapped"
-    / "blocked"
-    / "nonblack"
-    / "nonartifact, nonblack"
-    / "attacking or blocking"
-    / "attacking"
+PermanentRestriction
+    = "black or red"
     / "green or white"
     / "black or red"
     / "blue or black"
@@ -576,10 +553,31 @@ CreatureRestriction
     / "green"
     / "red"
     / "black"
+    / "tapped"
+    / "untapped"
+    / "noncreature"
+    / "you control"
+    / "you don't control"
+    / "nonblack"
+    / "nonartifact, nonblack"
     / "nonartifact"
     / "artifact"
-    / "you control"
+    / "with converted mana cost " Number " or less"
+    / "with converted mana cost " Number " or greater"
+    / "with converted mana cost " Number
+    ;
+
+CreatureRestriction
+    = "with power " Number " or less"
+    / "with power " Number " or greater"
+    / "with " Keyword
+    / "without " Keyword
+    / "tapped or blocking"
+    / "blocked"
+    / "attacking or blocking"
+    / "attacking"
     / Tribal
+    / PermanentRestriction
     ;
 
 Tribal
