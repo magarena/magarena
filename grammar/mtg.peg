@@ -140,6 +140,7 @@ Keyword
     / "bloodthirst" SPACE Number
     / "buyback" SPACE ManaCost
     / "kicker" SPACE ManaCost
+    / "multikicker" SPACE ManaCost
     / "equip" SPACE ManaCost
     / "cumulative upkeep" SPACE ManaCost
     / "replicate" SPACE ManaCost

@@ -1370,6 +1370,18 @@ modular 3
 modular 4
 modular 6
 mountainwalk
+multikicker {1}
+multikicker {1}{b}
+multikicker {1}{g}
+multikicker {1}{r}
+multikicker {1}{u}
+multikicker {1}{w}
+multikicker {2}
+multikicker {b}
+multikicker {g}
+multikicker {r}
+multikicker {u}
+multikicker {w}
 nonartifact creatures get -1/-1 until end of turn.
 nonblack creatures get -1/-1.
 other artifact creatures you control get +1/+1.
