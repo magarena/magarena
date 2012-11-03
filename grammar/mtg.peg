@@ -444,7 +444,9 @@ SelectPermanent
     ;
 
 SelectSpell
-    = SelectOp SPACE RestrictedSpell
+    = "@"
+    / "it"
+    / SelectOp SPACE RestrictedSpell
     ;
 
 RestrictedPermanentCombination

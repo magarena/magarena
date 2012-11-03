@@ -2114,6 +2114,9 @@ when @ leaves the battlefield, you lose 20 life.
 when you cast a creature spell, sacrifice @.
 when you cast a spell, return @ to its owner's hand.
 when you cast a spell, sacrifice @.
+when you cast @, destroy target permanent.
+when you cast @, draw four cards.
+when you cast @, you may return target creature card from your graveyard to the battlefield.
 white creatures get -1/-1.
 white creatures get +1/-1.
 white creatures get +1/+1.
