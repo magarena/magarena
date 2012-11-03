@@ -326,6 +326,7 @@ PreventAction
     / "prevent all " Damage " that would be dealt to " DamageReceiver
     / "prevent all " Damage " that would be dealt by " DamageReceiver
     / "prevent all " Damage " that would be dealt" 
+    / "if damage would be dealt to " DamageReceiver ", prevent that damage"
     ;
 
 Damage

@@ -1324,6 +1324,7 @@ green creatures you control have trample.
 {g}{w}{u}, {t}: regenerate target creature.
 haste
 hexproof
+if damage would be dealt to @, prevent that damage. remove a +1/+1 counter from @.
 infect
 intimidate
 @ is indestructible.
