@@ -595,6 +595,9 @@ Tribal
     / "ally"
     / "scarecrow"
     / "pentavite"
+    / "wizard" "s"?
+    / "beast" "s"?
+    / "cleric" "s"?
     / "non-vampire, non-werewolf, non-zombie"
     ;
 

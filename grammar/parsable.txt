@@ -58,6 +58,7 @@
 {1}{g}{g}: target creature gains forestwalk until end of turn.
 {1}{g}: regenerate @.
 {1}{g}: regenerate enchanted creature.
+{1}{g}: regenerate target beast.
 {1}{g}: regenerate target creature.
 {1}{g}: regenerate target green creature.
 {1}{g}, sacrifice a human: put two +1/+1 counters on target creature.
@@ -252,6 +253,7 @@
 {2}{g}: put a 1/1 green saproling creature token onto the battlefield.
 {2}{g}: regenerate @.
 {2}{g}, sacrifice @: @ deals 2 damage to target creature with flying.
+{2}{g}: target beast creature gets +1/+1 until end of turn.
 {2}{g}: target elf creature gains forestwalk until end of turn.
 {2}{g}: target green creature gains protection from black until end of turn.
 {2}{g}, {t}: target creature gets +2/+2 until end of turn.
@@ -636,6 +638,7 @@ blue creatures get +1/+1.
 {b}{r}{g}, {t}: return target creature card from your graveyard to your hand.
 {b}{r}{g}, {t}: target player draws a card.
 {b}{r}, {t}: @ deals 2 damage to target white creature.
+{b}, sacrifice a cleric: target player loses 2 life and you gain 2 life.
 {b}, sacrifice a creature: destroy target nonblack creature.
 {b}, sacrifice a creature: regenerate @.
 {b}, sacrifice a creature: target creature gets -1/-1 until end of turn.
@@ -670,6 +673,7 @@ buyback {5}
 @ can't be countered.
 @ can't block.
 changeling
+cleric creatures have vigilance.
 counter target blue spell.
 counter target creature spell.
 counter target creature spell. its controller loses 1 life.
@@ -1205,6 +1209,7 @@ green creatures you control have trample.
 {g}, sacrifice @: target creature gets +2/+2 until end of turn.
 {g}, {t}: add one mana of any color to your mana pool.
 {g}, {t}: add {r} to your mana pool.
+{g}: target beast creature gains trample until end of turn.
 {g}: target creature gains trample until end of turn.
 {g}: target creature gets +1/+1 until end of turn.
 {g}: target creature loses flying until end of turn.
@@ -1488,6 +1493,7 @@ return @ to its owner's hand: regenerate target creature.
 {r/w}: @ gets +1/+0 until end of turn.
 {r}{w}: @ gets +1/+1 until end of turn.
 {r}{w}, {t}: @ deals 2 damage to target attacking or blocking creature.
+sacrifice a beast: you gain 4 life.
 sacrifice a creature: add one mana of any color to your mana pool.
 sacrifice a creature: add {r} to your mana pool.
 sacrifice a creature: @ deals 1 damage to target creature or player.
@@ -1972,6 +1978,7 @@ untap target permanent.
 {u}, {t}: you may tap or untap target creature.
 {u}: untap @.
 {u}: untap enchanted creature.
+{u}{u}, sacrifice a wizard: counter target spell.
 {u}{u}: tap target creature without flying.
 {u}{u}, {t}, discard a card: counter target creature spell.
 {u}{u}, {t}, discard a card: counter target noncreature spell.
