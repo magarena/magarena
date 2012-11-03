@@ -31,7 +31,7 @@ def showNormalize(name:String, rule:String):Unit = {
     //replace name (without part after comma) with @
     val no_name_2 = if (name.contains(',')) {
         val nameBeforeComma = name.substring(0, name.indexOf(','));
-        rule.replace(nameBeforeComma, "@")
+        no_name.replace(nameBeforeComma, "@")
     } else {
         no_name
     }
