@@ -113,8 +113,10 @@
 {1}, sacrifice a creature: put a +1/+1 counter on target creature.
 {1}, sacrifice a creature: you gain 2 life.
 {1}, sacrifice a land: target creature gets +1/+1 until end of turn.
+{1}, sacrifice a pentavite: put a +1/+1 counter on @.
 {1}, sacrifice a permanent: you gain 1 life.
 {1}, sacrifice a saproling: draw a card.
+{1}, sacrifice a scarecrow: draw a card.
 {1}, sacrifice @: @ deals 2 damage to target creature or player.
 {1}, sacrifice @: destroy target artifact or enchantment.
 {1}, sacrifice @: draw a card.
@@ -1227,6 +1229,7 @@ other green creatures you control have intimidate.
 other human creatures you control get +1/+1.
 other nonblack creatures you control get +1/+1.
 other red creatures you control get +1/+1.
+other scarecrow creatures you control get +1/+1.
 other spirit creatures you control get +0/+1.
 other spirit creatures you control get +1/+0.
 other white creatures get +1/+1.

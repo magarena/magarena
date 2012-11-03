@@ -583,6 +583,8 @@ Tribal
     / "goblin"
     / "saproling"
     / "ally"
+    / "scarecrow"
+    / "pentavite"
     / "non-vampire, non-werewolf, non-zombie"
     ;
 
