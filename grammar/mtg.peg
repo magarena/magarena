@@ -197,6 +197,7 @@ BlockedTrigger
 
 CastTrigger
     = "whenever you cast " SelectSpell
+    / "when you cast " SelectSpell
     ;
 
 LeavesBattlefieldTrigger
@@ -550,6 +551,7 @@ CreatureRestriction
     / "green or white"
     / "black or red"
     / "blue or black"
+    / "red or green"
     / "blue"
     / "white"
     / "green"
