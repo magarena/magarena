@@ -85,6 +85,7 @@ Action
     / EntersWithCounter
     / PayManaAction
     / MillAction
+    / ReanimateAction
     ;
 
 Keyword
@@ -243,6 +244,10 @@ DamageReceiver
 
 AttacksTrigger
     = "whenever @ attacks"
+    ;
+
+ReanimateAction
+    = "put " SelectCard " from a graveyard onto the battlefield under your control"
     ;
 
 MillAction
