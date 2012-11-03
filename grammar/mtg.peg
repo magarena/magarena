@@ -219,6 +219,7 @@ BeginningEndStepTrigger
 
 BeginningUpkeepTrigger
     = "at the beginning of your upkeep"
+    / "at the beginning of each player's upkeep" 
     ;
 
 DiesTrigger

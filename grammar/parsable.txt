@@ -525,6 +525,18 @@ attacking creatures you control get +1/+0.
 attacking creatures you control get +2/+0.
 attacking creatures you control have lifelink.
 @ attacks each turn if able.
+at the beginning of each player's upkeep, @ deals 1 damage to that player.
+at the beginning of each player's upkeep, @ deals 2 damage to that player.
+at the beginning of each player's upkeep, that player discards a card.
+at the beginning of each player's upkeep, that player discards a card at random.
+at the beginning of each player's upkeep, that player loses 1 life.
+at the beginning of each player's upkeep, that player loses 1 life and discards a card.
+at the beginning of each player's upkeep, that player loses 2 life and draws two cards.
+at the beginning of each player's upkeep, that player sacrifices a green or white permanent.
+at the beginning of each player's upkeep, that player sacrifices a land.
+at the beginning of each player's upkeep, that player sacrifices an artifact.
+at the beginning of each player's upkeep, that player sacrifices an artifact, creature, or land.
+at the beginning of each player's upkeep, that player sacrifices a nonbasic land.
 at the beginning of the end step, return @ to its owner's hand.
 at the beginning of the end step, sacrifice @.
 at the beginning of your upkeep, @ deals 1 damage to each opponent.
