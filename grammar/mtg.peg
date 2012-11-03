@@ -543,6 +543,7 @@ CreatureRestriction
     / "with power 4 or greater"
     / "with power 2 or less"
     / "with " Keyword
+    / "without " Keyword
     / "tapped or blocking"
     / "tapped"
     / "untapped"

@@ -70,8 +70,10 @@
 {1}: @ loses flying until end of turn.
 {1}, pay 1 life: draw a card, then discard a card.
 {1}, pay 2 life: @ deals 1 damage to target creature or player.
+{1}{r}: @ deals 1 damage to each creature without flying.
 {1}{r}: @ deals 1 damage to target creature.
 {1}{r}: @ deals 1 damage to target creature or player.
+{1}{r}: @ deals 2 damage to each creature without flying.
 {1}{r}, discard a card at random: @ deals 1 damage to target creature or player.
 {1}: regenerate @.
 {1}, remove a +1/+1 counter from a creature you control: put a 1/1 green saproling creature token onto the battlefield.
@@ -256,6 +258,7 @@
 {2}{r}, {t}, put a -1/-1 counter on a creature you control: @ deals 2 damage to target creature or player.
 {2}{r}{w}, {t}: target creature gains double strike until end of turn.
 {2}, sacrifice a permanent: return target creature to its owner's hand.
+{2}, sacrifice @: @ deals 2 damage to each attacking creature without flying.
 {2}, sacrifice @: draw a card.
 {2}, sacrifice @: target player draws a card.
 {2}, {t}: add {b} or {g} to your mana pool.
@@ -287,6 +290,7 @@
 {2}, {t}, remove four charge counters from @: you gain 2 life and draw a card.
 {2}, {t}, sacrifice a creature: draw a card.
 {2}, {t}, sacrifice a land: draw a card and put a charge counter on @.
+{2}, {t}, sacrifice @: destroy target attacking creature without flying. it can't be regenerated.
 {2}, {t}, sacrifice @: return target artifact card from your graveyard to your hand.
 {2}, {t}: shuffle your library.
 {2}, {t}: tap target creature.
@@ -298,6 +302,7 @@
 {2}: untap target artifact creature.
 {2}{u}, sacrifice a land: draw a card.
 {2}{u}: tap target creature with flying.
+{2}{u}: tap target creature without flying.
 {2}{u}, {t}: put a -1/-1 counter on target creature. you may tap or untap that creature.
 {2}{u}, {t}: target creature gets -2/-0 until end of turn.
 {2}{u}{u}: draw a card.
@@ -520,6 +525,7 @@ at the beginning of your upkeep, you may return target artifact card from your g
 at the beginning of your upkeep, you may return target creature card from your graveyard to the battlefield.
 battle cry
 {b}{b}: counter target green spell.
+{b}{b}: creatures with shadow get +1/+0 until end of turn and creatures without shadow get -1/-0 until end of turn.
 {b}{b}: draw a card.
 {b}{b}: @ gets +1/+0 until end of turn.
 {b}{b}: return @ to its owner's hand.
@@ -616,6 +622,8 @@ counter target spirit or arcane spell.
 creatures with flying get +1/+1.
 creatures with flying get -2/-0.
 creatures with flying get +2/+0.
+creatures without flying get -2/-0.
+creatures without flying have reach.
 creatures you control gain double strike until end of turn.
 creatures you control gain haste until end of turn.
 creatures you control gain intimidate until end of turn.
@@ -670,11 +678,13 @@ cumulative upkeep {w}
 @ deals 13 damage to target creature.
 @ deals 1 damage to each attacking creature.
 @ deals 1 damage to each creature.
+@ deals 1 damage to each creature without flying.
 @ deals 1 damage to target creature.
 @ deals 1 damage to target creature or player.
 @ deals 1 damage to target creature. put a -1/-1 counter on that creature.
 @ deals 2 damage to each creature.
 @ deals 2 damage to each creature with flying.
+@ deals 2 damage to each creature without flying.
 @ deals 2 damage to each creature with shadow.
 @ deals 2 damage to each nonartifact creature.
 @ deals 2 damage to target attacking or blocking creature.
@@ -701,6 +711,7 @@ cumulative upkeep {w}
 @ deals 7 damage to target creature or player.
 @ deals x damage to each creature.
 @ deals x damage to each creature with flying.
+@ deals x damage to each creature without flying.
 @ deals x damage to target creature.
 @ deals x damage to target creature and you gain x life.
 @ deals x damage to target creature or player.
@@ -742,6 +753,7 @@ destroy target artifact or land.
 destroy target artifact or land. it can't be regenerated.
 destroy target attacking creature.
 destroy target attacking creature with flying.
+destroy target attacking creature without flying.
 destroy target attacking or blocking creature.
 destroy target blocked creature.
 destroy target blue or black creature with flying.
@@ -827,6 +839,7 @@ enchant artifact
 enchant artifact creature
 enchant black creature
 enchant creature
+enchant creature without flying
 enchant creature you control
 enchanted artifact doesn't untap during its controller's untap step.
 enchanted creature doesn't untap during its controller's untap step.
@@ -1290,7 +1303,9 @@ return @ to its owner's hand: regenerate target creature.
 {r}{r}: target creature gets +1/-1 until end of turn.
 {r}{r}, {t}: @ deals 2 damage to target creature.
 {r}{r}, {t}: put a charge counter on @.
+{r}, sacrifice a land: @ deals 1 damage to each creature without flying.
 {r}, sacrifice an artifact: @ gets +3/+0 until end of turn.
+{r}, sacrifice @: @ deals 1 damage to each creature without flying.
 {r}, sacrifice @: @ deals 2 damage to each creature.
 {r}, sacrifice @: @ deals 2 damage to target creature or player.
 {r}, sacrifice @: destroy target artifact.
@@ -1346,6 +1361,7 @@ sacrifice a land: target creature gains haste until end of turn.
 sacrifice a land: target creature you control gains shroud until end of turn.
 sacrifice a land: you gain 2 life.
 sacrifice a land: you gain 3 life.
+sacrifice an artifact: @ deals 1 damage to each creature without flying.
 sacrifice an artifact: @ gains flying until end of turn.
 sacrifice an artifact: @ gains haste until end of turn.
 sacrifice an artifact: @ gains trample until end of turn.
@@ -1367,6 +1383,7 @@ sacrifice @: @ deals 1 damage to target attacking or blocking creature.
 sacrifice @: @ deals 1 damage to target creature.
 sacrifice @: @ deals 1 damage to target creature or player.
 sacrifice @: @ deals 2 damage to each creature with flying.
+sacrifice @: @ deals 2 damage to each creature without flying.
 sacrifice @: @ deals 2 damage to target creature or player.
 sacrifice @: @ deals 2 damage to target creature with flying. that creature loses flying until end of turn.
 sacrifice @: destroy target artifact or enchantment.
@@ -1445,6 +1462,7 @@ swampwalk
 tap all artifacts.
 tap all blue creatures.
 tap all creatures.
+tap all creatures without flying.
 tap an untapped creature you control: @ gains flying until end of turn.
 tap an untapped creature you control: @ gets +1/+1 until end of turn.
 tap an untapped creature you control: tap target artifact, creature, or land.
@@ -1566,6 +1584,7 @@ target player sacrifices a land.
 target player sacrifices an attacking creature.
 target player sacrifices a permanent.
 {t}: @ deals 1 damage to each creature with flying.
+{t}: @ deals 1 damage to each creature without flying.
 {t}: @ deals 1 damage to target attacking or blocking creature.
 {t}: @ deals 1 damage to target creature.
 {t}: @ deals 1 damage to target creature or player.
@@ -1641,6 +1660,7 @@ trample
 {t}, sacrifice @: exile target black creature.
 {t}, sacrifice @: exile target red creature.
 {t}, sacrifice @: return target artifact card from your graveyard to your hand.
+{t}, sacrifice @: target attacking creature without flying gets -1/-2 until end of turn.
 {t}, sacrifice @: target creature gains flying until end of turn.
 {t}, sacrifice @: target creature gets -1/-1 until end of turn.
 {t}, sacrifice @: target creature gets -2/-2 until end of turn.
@@ -1738,11 +1758,13 @@ untap target permanent.
 {u}, {t}: you may tap or untap target creature.
 {u}: untap @.
 {u}: untap enchanted creature.
+{u}{u}: tap target creature without flying.
 {u}{u}, {t}, discard a card: counter target creature spell.
 {u}{u}, {t}, discard a card: counter target noncreature spell.
 {u}{u}, {t}: put a charge counter on @.
 {u}{u}, {t}: return target creature to its owner's hand.
 {u}{u}{u}: regenerate @.
+{u}{u}{u}: tap all creatures without flying.
 {u}{u}{u}, {t}: return target permanent to its owner's hand.
 vanishing 1
 vanishing 2
@@ -1790,6 +1812,7 @@ when @ dies, exile target permanent.
 when @ dies, it deals 2 damage to target creature.
 when @ dies, it deals 2 damage to target creature or player.
 when @ dies, it deals 3 damage to target creature or player.
+when @ dies, it deals 5 damage to each creature without flying.
 when @ dies, put a 1/1 green saproling creature token onto the battlefield.
 when @ dies, put it on top of its owner's library.
 when @ dies, return it to its owner's hand.
@@ -1852,6 +1875,7 @@ when @ enters the battlefield, it deals 2 damage to enchanted creature.
 when @ enters the battlefield, it deals 2 damage to target creature.
 when @ enters the battlefield, it deals 2 damage to target creature or player.
 when @ enters the battlefield, it deals 3 damage to each creature.
+when @ enters the battlefield, it deals 3 damage to each creature without flying.
 when @ enters the battlefield, it deals 3 damage to target creature or player.
 when @ enters the battlefield, it deals 3 damage to target creature with flying.
 when @ enters the battlefield, it deals 3 damage to target creature you control.
@@ -2063,6 +2087,7 @@ whenever you cast a multicolored spell, you may return @ from your graveyard to 
 whenever you cast an enchantment spell, draw a card.
 whenever you cast an enchantment spell, put a +1/+1 counter on each creature you control.
 whenever you cast an enchantment spell, you may draw a card.
+whenever you cast a red spell, @ deals 1 damage to each creature without flying.
 whenever you cast a red spell, @ gains first strike until end of turn.
 whenever you cast a red spell, @ gets +1/+1 until end of turn.
 whenever you cast a red spell, remove a -1/-1 counter from @.
@@ -2077,6 +2102,7 @@ whenever you cast a spell, you may put two +1/+1 counters on @.
 whenever you cast a spell, you may return @ to its owner's hand.
 whenever you cast a spell, you may untap @.
 whenever you cast a spirit or arcane spell, @ deals 1 damage to target creature.
+whenever you cast a spirit or arcane spell, @ deals 2 damage to each creature without flying.
 whenever you cast a spirit or arcane spell, @ gains flying until end of turn.
 whenever you cast a spirit or arcane spell, @ gains forestwalk until end of turn.
 whenever you cast a spirit or arcane spell, @ gets +1/+1 until end of turn.
@@ -2183,6 +2209,7 @@ wither
 {x}{g}, {t}: @ deals x damage to target creature with flying.
 {x}{r}{g}, {t}: target creature gets +x/+0 and gains trample until end of turn.
 {x}{r}, sacrifice @: @ deals x damage to target creature.
+{x}{r}, {t}: @ deals x damage to target creature without flying.
 {x}{r}, {t}, sacrifice @: @ deals x damage to target creature or player.
 {x}, {t}, remove x charge counters from @: @ deals x damage to target creature or player.
 {x}, {t}: target creature gets -x/+x until end of turn.
