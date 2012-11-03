@@ -26,6 +26,7 @@
 {1}{b}, sacrifice a land: target creature gets +2/+0 until end of turn.
 {1}{b}, sacrifice @: you draw two cards and lose 2 life.
 {1}{b}: target creature you control gains deathtouch until end of turn.
+{1}{b}, {t}: destroy target creature with shadow.
 {1}{b}, {t}, discard a card: target creature gets +1/+0 and gains first strike until end of turn.
 {1}{b}, {t}, sacrifice @: destroy target nonblack creature.
 {1}{b}, {t}: target creature gets -1/-1 until end of turn.
@@ -674,6 +675,7 @@ cumulative upkeep {w}
 @ deals 1 damage to target creature. put a -1/-1 counter on that creature.
 @ deals 2 damage to each creature.
 @ deals 2 damage to each creature with flying.
+@ deals 2 damage to each creature with shadow.
 @ deals 2 damage to each nonartifact creature.
 @ deals 2 damage to target attacking or blocking creature.
 @ deals 2 damage to target creature.
@@ -1577,6 +1579,7 @@ target player sacrifices a permanent.
 {t}: destroy target blue creature.
 {t}: destroy target creature. it can't be regenerated.
 {t}: destroy target creature or land.
+{t}: destroy target creature with islandwalk.
 {t}: destroy target creature with power 4 or greater.
 {t}: destroy target land.
 {t}: destroy target tapped creature.
@@ -1816,6 +1819,7 @@ when @ enters the battlefield, destroy all tapped creatures.
 when @ enters the battlefield, destroy target artifact.
 when @ enters the battlefield, destroy target artifact, enchantment, or land.
 when @ enters the battlefield, destroy target artifact or enchantment.
+when @ enters the battlefield, destroy target creature with defender.
 when @ enters the battlefield, destroy target creature with flying.
 when @ enters the battlefield, destroy target creature with power 4 or greater. it can't be regenerated.
 when @ enters the battlefield, destroy target enchantment.
@@ -1950,6 +1954,7 @@ when @ enters the battlefield, you may return target sorcery card from your grav
 when @ enters the battlefield, you may return target tapped creature to its owner's hand.
 when @ enters the battlefield, you may tap or untap target permanent.
 when @ enters the battlefield, you may tap target creature.
+whenever @ attacks, all attacking creatures with flanking get +1/+1 until end of turn.
 whenever @ attacks, attacking creatures gain first strike until end of turn.
 whenever @ attacks, attacking creatures gain trample until end of turn.
 whenever @ attacks, attacking creatures get +1/+1 until end of turn.

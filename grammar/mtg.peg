@@ -111,7 +111,6 @@ Keyword
     / "protection from artifacts"
     / "protection from creatures"
     / "protection from everything"
-    / "@ can't block."
     / "hexproof"
     / "soulbond"
     / "undying"
@@ -119,6 +118,7 @@ Keyword
     / "intimidate"
     / "living weapon"
     / "totem armor"
+    / "affinity for artifacts"
     / "bushido" SPACE Number
     / "rampage" SPACE Number
     / "soulshift" SPACE Number
@@ -131,11 +131,11 @@ Keyword
     / "kicker" SPACE ManaCost
     / "equip" SPACE ManaCost
     / "cumulative upkeep" SPACE ManaCost
+    / "@ can't block."
     / "@ is unblockable."
     / "@ attacks each turn if able."
     / "@ is indestructible."
     / "@ can't be countered."
-    / "affinity for artifacts"
     ;
 
 ActivationCosts
@@ -542,7 +542,7 @@ CreatureRestriction
     / "with converted mana cost x"
     / "with power 4 or greater"
     / "with power 2 or less"
-    / "with flying"
+    / "with " Keyword
     / "tapped or blocking"
     / "tapped"
     / "untapped"
