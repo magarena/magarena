@@ -1367,6 +1367,14 @@ level up {u}
 level up {w}
 lifelink
 living weapon
+miracle {1}{r}
+miracle {1}{u}
+miracle {g}
+miracle {r}
+miracle {u}
+miracle {w}
+miracle {x}{r}
+miracle {x}{w}{w}
 modular 1
 modular 2
 modular 3

@@ -145,6 +145,7 @@ Keyword
     / "equip" SPACE ManaCost
     / "cumulative upkeep" SPACE ManaCost
     / "replicate" SPACE ManaCost
+    / "miracle" SPACE ManaCost
     / "level up" SPACE ManaCost
     / "@ can't block."
     / "@ is unblockable."
