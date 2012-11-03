@@ -179,6 +179,7 @@
 {1}, {t}: untap target creature.
 {1}, {t}: untap target land.
 {1}, {t}: you gain 1 life.
+{1}{u}{b}, {t}: target player puts the top three cards of his or her library into his or her graveyard.
 {1}{u}: counter target red spell.
 {1}{u}, discard a card: draw a card.
 {1}{u}, discard a card: return @ to its owner's hand.
@@ -282,6 +283,7 @@
 {2}, remove a +1/+1 counter from @: return @ to its owner's hand.
 {2}, return a land you control to its owner's hand: draw a card, then discard a card.
 {2}, return a land you control to its owner's hand: tap target land.
+{2}, return a land you control to its owner's hand: target player puts the top two cards of his or her library into his or her graveyard.
 {2}, return a land you control to its owner's hand: untap target land.
 {2}{r}: @ gains first strike until end of turn.
 {2}{r}{g}, discard two cards at random: @ deals 4 damage to target creature or player.
@@ -335,6 +337,7 @@
 {2}, {t}: tap target creature.
 {2}, {t}: target creature gains flying until end of turn.
 {2}, {t}: target creature with power 3 or less gains flying until end of turn.
+{2}, {t}: target player puts the top two cards of his or her library into his or her graveyard.
 {2}, {t}: you gain 1 life.
 {2}, {t}: you may tap or untap target creature.
 {2}{u}, discard a card: return @ to its owner's hand.
@@ -375,6 +378,7 @@
 {3}{b}, {t}: target creature gains swampwalk until end of turn.
 {3}: @ deals 1 damage to target creature or player.
 {3}, discard a card at random: target creature gets +2/+2 until end of turn.
+{3}: each player puts the top two cards of his or her library into his or her graveyard.
 {3}: exile target creature you control.
 {3}: @ gains flying until end of turn.
 {3}: @ gets +1/+0 until end of turn.
@@ -401,6 +405,7 @@
 {3}: target creature doesn't untap during its controller's next untap step.
 {3}: target creature gets +3/+3 until end of turn.
 {3}: target green creature gets +1/+1 until end of turn.
+{3}: target player puts the top three cards of his or her library into his or her graveyard.
 {3}, {t}: @ deals 1 damage to target creature or player.
 {3}, {t}: prevent the next 2 damage that would be dealt to you this turn.
 {3}, {t}: put a +1/+1 counter on target creature.
@@ -483,6 +488,7 @@
 {8}, {t}: draw four cards.
 {8}, {t}, sacrifice @: you gain 8 life.
 {8}, {t}: target creature gets +6/+6 until end of turn.
+{8}, {t}: target player puts the top eight cards of his or her library into his or her graveyard.
 {8}, {t}: you gain 10 life.
 affinity for artifacts
 all creatures gain fear until end of turn.
@@ -973,6 +979,7 @@ each opponent sacrifices an artifact or enchantment.
 each player draws three cards, then discards three cards at random.
 each player draws two cards.
 each player draws x cards.
+each player puts the top five cards of his or her library into his or her graveyard.
 each player sacrifices a creature.
 each player sacrifices a land.
 each player sacrifices an enchantment.
@@ -1807,6 +1814,7 @@ target opponent discards a card at random, then discards a card.
 target opponent draws a card.
 target opponent loses 2 life. you gain 2 life.
 target opponent loses 3 life.
+target opponent puts the top seven cards of his or her library into his or her graveyard.
 target opponent sacrifices a creature.
 target player discards a card.
 target player discards a card at random.
@@ -1831,6 +1839,12 @@ target player loses 2 life and you gain 2 life.
 target player loses 4 life and you gain 4 life.
 target player loses 5 life.
 target player loses 5 life and you gain 5 life.
+target player puts the top five cards of his or her library into his or her graveyard.
+target player puts the top four cards of his or her library into his or her graveyard.
+target player puts the top ten cards of his or her library into his or her graveyard.
+target player puts the top three cards of his or her library into his or her graveyard.
+target player puts the top two cards of his or her library into his or her graveyard.
+target player puts the top x cards of his or her library into his or her graveyard and you gain x life.
 target player sacrifices a creature.
 target player sacrifices a creature and loses 1 life.
 target player sacrifices a creature with converted mana cost 3 or less.
@@ -1910,6 +1924,7 @@ trample
 {t}, remove a charge counter from @: add one mana of any color to your mana pool.
 {t}, remove a charge counter from @: tap target artifact or creature.
 {t}, remove a charge counter from @: target player loses 2 life.
+{t}, remove a charge counter from @: target player puts the top two cards of his or her library into his or her graveyard.
 {t}, remove three charge counters from @: destroy target permanent.
 {t}, remove x charge counters from @: target creature gets -x/-x until end of turn.
 {t}, sacrifice a creature: @ deals 1 damage to target creature or player.
@@ -1923,6 +1938,7 @@ trample
 {t}, sacrifice a land: destroy target land.
 {t}, sacrifice an artifact: @ deals 2 damage to target creature or player.
 {t}, sacrifice an artifact: draw a card.
+{t}, sacrifice an artifact: target player puts the top three cards of his or her library into his or her graveyard.
 {t}, sacrifice @: counter target spell.
 {t}, sacrifice @: @ deals 2 damage to target attacking or blocking creature.
 {t}, sacrifice @: @ deals 3 damage to target attacking or blocking creature.
@@ -2020,6 +2036,7 @@ untap target permanent.
 {u}, sacrifice @: counter target noncreature spell.
 {u}, sacrifice @: counter target spell unless its controller pays {2}.
 {u}, sacrifice @: return target creature to its owner's hand.
+{u}, sacrifice @: target player puts the top three cards of his or her library into his or her graveyard.
 {u}: tap enchanted creature.
 {u}: tap target green creature.
 {u}, {t}: counter target spell unless its controller pays {1}.
@@ -2034,6 +2051,7 @@ untap target permanent.
 {u}, {t}: return target permanent you control to its owner's hand.
 {u}, {t}, sacrifice a creature or enchantment: counter target spell.
 {u}, {t}: target creature gains flying until end of turn.
+{u}, {t}: target player puts the top two cards of his or her library into his or her graveyard.
 {u}, {t}: you may tap or untap target creature.
 {u}: untap @.
 {u}: untap enchanted creature.
@@ -2107,6 +2125,7 @@ when @ dies, target creature gets +1/+1 until end of turn.
 when @ dies, target creature gets -2/-2 until end of turn.
 when @ dies, target opponent discards a card at random.
 when @ dies, target player loses 2 life.
+when @ dies, target player puts the top five cards of his or her library into his or her graveyard.
 when @ dies, you gain 1 life.
 when @ dies, you gain 2 life.
 when @ dies, you gain 3 life.
@@ -2254,6 +2273,7 @@ when @ enters the battlefield, target player loses 1 life.
 when @ enters the battlefield, target player loses 2 life and you gain 2 life.
 when @ enters the battlefield, target player loses 3 life.
 when @ enters the battlefield, target player loses 6 life.
+when @ enters the battlefield, target player puts the top five cards of his or her library into his or her graveyard.
 when @ enters the battlefield, untap all creatures you control.
 when @ enters the battlefield, untap enchanted creature.
 when @ enters the battlefield, you draw a card and you lose 1 life.
@@ -2366,6 +2386,7 @@ whenever @ deals combat damage to a player, put two +1/+1 counters on it.
 whenever @ deals combat damage to a player, that player discards a card.
 whenever @ deals combat damage to a player, that player discards a card and you draw a card.
 whenever @ deals combat damage to a player, that player discards a card at random.
+whenever @ deals combat damage to a player, that player puts the top two cards of his or her library into his or her graveyard.
 whenever @ deals combat damage to a player, that player sacrifices a creature.
 whenever @ deals combat damage to a player, that player sacrifices a permanent.
 whenever @ deals combat damage to a player, you may draw a card.
@@ -2564,6 +2585,7 @@ wither
 {x}{r}, {t}, sacrifice @: @ deals x damage to target creature or player.
 {x}, {t}, remove x charge counters from @: @ deals x damage to target creature or player.
 {x}, {t}: target creature gets -x/+x until end of turn.
+{x}, {t}: target player puts the top x cards of his or her library into his or her graveyard.
 {x}, {t}: you gain x life.
 {x}{u}{u}, {t}: return target creature with converted mana cost x to its owner's hand.
 {x}{w}, {t}: @ deals x damage to target attacking or blocking creature.
