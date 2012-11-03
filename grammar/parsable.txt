@@ -431,6 +431,7 @@
 {3}{u}: return @ to its owner's hand.
 {3}{u}, sacrifice a permanent: return target permanent to its owner's hand.
 {3}{u}, {t}: counter target spell unless its controller pays {2}.
+{3}{u}, {t}, discard a card: untap target creature and gain control of it until end of turn. that creature gains haste until end of turn.
 {3}{u}, {t}: draw a card.
 {3}{u}, {t}: tap target creature.
 {3}{u}{u}: counter target enchantment spell.
@@ -608,8 +609,10 @@ at the beginning of your upkeep, you draw a card and you lose 1 life.
 at the beginning of your upkeep, you lose 1 life.
 at the beginning of your upkeep, you lose 2 life.
 at the beginning of your upkeep, you lose 3 life.
+at the beginning of your upkeep, you may discard a card. if you don't, sacrifice @ and draw a card.
 at the beginning of your upkeep, you may draw two cards.
 at the beginning of your upkeep, you may gain 1 life.
+at the beginning of your upkeep, you may gain control of target permanent until end of turn. if you do, untap it and it gains haste until end of turn.
 at the beginning of your upkeep, you may have target opponent discard a card at random.
 at the beginning of your upkeep, you may pay {1}. if you do, untap @.
 at the beginning of your upkeep, you may pay {2}. if you do, untap @.
@@ -624,7 +627,9 @@ at the beginning of your upkeep, you may put a verse counter on @.
 at the beginning of your upkeep, you may return @ from your graveyard to your hand.
 at the beginning of your upkeep, you may return target artifact card from your graveyard to the battlefield.
 at the beginning of your upkeep, you may return target creature card from your graveyard to the battlefield.
+at the beginning of your upkeep, you may sacrifice an artifact. if you don't, tap @ and it deals 2 damage to you.
 at the beginning of your upkeep, you may sacrifice a nonartifact creature. if you do, put a +1/+1 counter on @. if you don't, tap @.
+at the beginning of your upkeep, you may untap target creature and gain control of it until end of turn. that creature gains haste until end of turn.
 at the beginning of your upkeep, you may untap target tapped creature an opponent controls. if you do, untap @.
 battle cry
 {b}{b}: counter target green spell.
@@ -824,6 +829,7 @@ cumulative upkeep {w}
 @ deals 2 damage to target creature and you gain 2 life.
 @ deals 2 damage to target creature or player.
 @ deals 2 damage to target creature or player and 3 damage to you.
+@ deals 2 damage to target creature or player. return @ to its owner's hand, then discard a card at random.
 @ deals 2 damage to target creature with flying. that creature loses flying until end of turn.
 @ deals 2 damage to target opponent and you gain 2 life.
 @ deals 3 damage to each creature.
@@ -1225,7 +1231,9 @@ forestwalk
 {g}: add one mana of any color to your mana pool.
 gain control of target artifact until end of turn. untap that artifact. it gains haste until end of turn.
 gain control of target creature an opponent controls until end of turn. untap that creature. it gains haste until end of turn.
+gain control of target creature until end of turn. put a +1/+1 counter on it and untap it. that creature gains haste until end of turn.
 gain control of target creature until end of turn. untap that creature. it gains haste until end of turn.
+gain control of target creature until end of turn. untap that creature. it gets +x/+0 and gains haste until end of turn.
 gain control of target creature with converted mana cost x or less.
 gain control of target nonartifact, nonblack creature.
 {g}, discard a card: @ gains trample until end of turn.
@@ -2042,9 +2050,12 @@ untap all lands you control.
 untap all white creatures you control.
 untapped creatures you control get +0/+2.
 untap target artifact, creature, or land.
+untap target creature and gain control of it until end of turn. that creature gains haste until end of turn.
+untap target creature. it gets +2/+4 and gains reach until end of turn.
 untap target creature. it gets +2/+4 until end of turn.
 untap target creature. it gets +3/+3 until end of turn.
 untap target permanent.
+untap target permanent and gain control of it until end of turn. it gains haste until end of turn.
 {u}: put @ on top of its owner's library.
 {u}{r}: @ deals 1 damage to target creature or player.
 {u}: regenerate @.
@@ -2454,6 +2465,7 @@ whenever you cast a creature spell, put a 1/1 green saproling creature token ont
 whenever you cast a creature spell, tap target creature.
 whenever you cast a creature spell, you may draw a card.
 whenever you cast a creature spell, you may pay {1}. if you do, draw a card.
+whenever you cast a creature spell, you may pay {1}. if you do, draw a card, then discard a card.
 whenever you cast a creature spell, you may pay {1}. if you do, return target creature to its owner's hand.
 whenever you cast a creature spell, you may pay {g}{g}. if you do, return @ from your graveyard to your hand.
 whenever you cast a creature spell, you may put a quest counter on @.

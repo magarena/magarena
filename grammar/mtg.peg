@@ -6,9 +6,13 @@ MagicRule
     ;
 
 SpellEffect
-    = SingleEffect EOS (SPACE SingleEffect EOS)*
-    / SingleEffect " and " SingleEffect EOS
-    / SingleEffect ", then " SingleEffect EOS
+    = Effect EOS (SPACE Effect EOS)*
+    ;
+
+Effect
+    = SingleEffect " and " SingleEffect
+    / SingleEffect ", then " SingleEffect
+    / SingleEffect
     ;
 
 SingleEffect
@@ -194,8 +198,8 @@ BlockedTrigger
     ;
 
 CastTrigger
-    = "whenever you cast " SelectSpell
-    / "when you cast " SelectSpell
+    = "whenever " SelectPlayer " cast " SelectSpell
+    / "when " SelectPlayer " cast " SelectSpell
     ;
 
 LeavesBattlefieldTrigger
@@ -278,8 +282,7 @@ PayManaAction
     ;
 
 ChangeLifeAction
-    = "loses " Number " life and you gain " Number " life"
-    / "lose" "s"? SPACE Number " life"
+    = "lose" "s"? SPACE Number " life"
     / "gain" "s"? SPACE Number " life"
     / "pay" "s"? SPACE Number " life"
     ;
