@@ -322,6 +322,7 @@ RegenerateAction
 
 DamageAction
     = SelectPermanent " deals " Number " damage to " DamageReceiver
+    / SelectPermanent " deals damage equal to its power to " DamageReceiver
     / Number " damage to " DamageReceiver
     ;
 

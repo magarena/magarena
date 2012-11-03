@@ -97,6 +97,7 @@
 {1}{r}: @ gets +3/-3 until end of turn.
 {1}{r}{r}: @ deals 1 damage to target creature or player and 1 damage to you.
 {1}{r}{r}: @ deals 2 damage to target creature with flying and that creature loses flying until end of turn.
+{1}{r}{r}: @ deals damage equal to its power to target creature or player.
 {1}{r}, remove a +1/+1 counter from @: @ deals 1 damage to target creature.
 {1}{r}, remove a +1/+1 counter from @: @ deals 1 damage to target creature or player.
 {1}{r}{r}: put a +1/+1 counter on @.
@@ -114,6 +115,7 @@
 {1}{r}: target goblin creature gets +1/+0 until end of turn.
 {1}{r}, {t}: @ deals 1 damage to target creature or player.
 {1}{r}, {t}: @ deals 3 damage to target player.
+{1}{r}, {t}: @ deals damage equal to its power to target creature. that creature deals damage equal to its power to @.
 {1}{r}, {t}, discard a card: target creature gets +1/-1 and gains haste until end of turn.
 {1}{r}, {t}: target goblin creature gets +2/+0 until end of turn.
 {1}, sacrifice a creature: @ deals 1 damage to target creature or player.
@@ -126,6 +128,7 @@
 {1}, sacrifice a saproling: draw a card.
 {1}, sacrifice a scarecrow: draw a card.
 {1}, sacrifice @: @ deals 2 damage to target creature or player.
+{1}, sacrifice @: @ deals damage equal to its power to target creature or player.
 {1}, sacrifice @: destroy target artifact or enchantment.
 {1}, sacrifice @: draw a card.
 {1}, {t}: add {b} to your mana pool.
@@ -237,6 +240,7 @@
 {2}{b}: @ gets +2/+2 until end of turn.
 {2}{b}{g}, {t}, sacrifice a creature: draw a card.
 {2}{b}: regenerate @.
+{2}{b}{r}, sacrifice @: @ deals damage equal to its power to target player.
 {2}{b}, sacrifice a creature: target creature gets -2/-2 until end of turn.
 {2}{b}, sacrifice @: target creature gets -1/-1 until end of turn.
 {2}{b}, {t}, discard a card: destroy target nonblack creature. it can't be regenerated.
@@ -1199,6 +1203,7 @@ forestwalk
 {g}{g}, sacrifice @: put target land on top of its owner's library.
 {g}{g}: tap target creature with flying.
 {g}{g}, {t}: creatures you control get +2/+2 until end of turn.
+{g}{g}, {t}: @ deals damage equal to its power to target creature. that creature deals damage equal to its power to @.
 {g}{g}, {t}: put a charge counter on @.
 goblin creatures get +1/+1.
 goblin creatures you control have haste.
@@ -1484,6 +1489,7 @@ return @ to its owner's hand: regenerate target creature.
 {r}, sacrifice @: @ deals 1 damage to each creature without flying.
 {r}, sacrifice @: @ deals 2 damage to each creature.
 {r}, sacrifice @: @ deals 2 damage to target creature or player.
+{r}, sacrifice @: @ deals damage equal to its power to target creature.
 {r}, sacrifice @: destroy target artifact.
 {r}, sacrifice @: destroy target land.
 {r}, sacrifice @: target black creature gets +1/+0 and gains first strike until end of turn.
@@ -1497,11 +1503,14 @@ return @ to its owner's hand: regenerate target creature.
 {r}, {t}: @ deals 1 damage to target creature or player.
 {r}, {t}: @ deals 1 damage to target creature or player and 1 damage to you.
 {r}, {t}: @ deals 2 damage to target blue creature.
+{r}, {t}: @ deals damage equal to its power to target creature or player.
+{r}, {t}: @ deals damage equal to its power to target creature. that creature deals damage equal to its power to @.
 {r}, {t}, discard a card: @ deals 1 damage to target creature or player.
 {r}, {t}, discard a card: destroy target blue permanent.
 {r}, {t}, discard a card: destroy target wall.
 {r}, {t}, sacrifice a creature: @ deals 2 damage to target creature or player.
 {r}, {t}, sacrifice a goblin: red creatures get +1/+1 until end of turn.
+{r}, {t}, sacrifice @: @ deals damage equal to its power to target creature.
 {r}, {t}: target creature gains first strike until end of turn.
 {r}, {t}: target creature gets +2/+0 until end of turn.
 {r}: untap @.
@@ -1581,6 +1590,7 @@ sacrifice @: @ deals 2 damage to each creature with flying.
 sacrifice @: @ deals 2 damage to each creature without flying.
 sacrifice @: @ deals 2 damage to target creature or player.
 sacrifice @: @ deals 2 damage to target creature with flying. that creature loses flying until end of turn.
+sacrifice @: @ deals damage equal to its power to target creature with flying.
 sacrifice @: destroy target artifact or enchantment.
 sacrifice @: destroy target black creature.
 sacrifice @: destroy target enchantment.
@@ -1690,6 +1700,9 @@ tap target creature.
 tap target creature. it doesn't untap during its controller's next untap step.
 tap target creature you don't control.
 tap target permanent.
+tap target untapped creature. it deals damage equal to its power to its controller.
+tap target untapped creature. that creature deals damage equal to its power to its controller.
+tap target untapped creature you control. if you do, it deals damage equal to its power to target attacking or blocking creature an opponent controls.
 target attacking creature gets +x/+0 until end of turn.
 target creature gains deathtouch until end of turn.
 target creature gains deathtouch until end of turn. regenerate it.
@@ -1762,6 +1775,7 @@ target creature gets -x/-x until end of turn.
 target creature gets +x/+x until end of turn.
 target creature loses flying until end of turn.
 target creature loses shadow until end of turn.
+target creature you control deals damage equal to its power to target creature with flying.
 target creature you control gets +0/+1 and gains hexproof until end of turn.
 target creature you control gets +1/+1 and gains hexproof until end of turn.
 target creature you control gets +2/+0 until end of turn.
@@ -1820,6 +1834,8 @@ target player sacrifices a permanent.
 {t}: @ deals 3 damage to target attacking or blocking creature.
 {t}: @ deals 3 damage to target creature or player.
 {t}: @ deals 4 damage to target attacking creature with flying.
+{t}: @ deals damage equal to its power to target creature. that creature deals damage equal to its power to @.
+{t}: @ deals damage equal to its power to target creature with flying.
 {t}: destroy target blue creature.
 {t}: destroy target creature. it can't be regenerated.
 {t}: destroy target creature or land.
@@ -1885,6 +1901,7 @@ trample
 {t}, sacrifice @: counter target spell.
 {t}, sacrifice @: @ deals 2 damage to target attacking or blocking creature.
 {t}, sacrifice @: @ deals 3 damage to target attacking or blocking creature.
+{t}, sacrifice @: @ deals damage equal to its power to target creature or player.
 {t}, sacrifice @: destroy target attacking creature.
 {t}, sacrifice @: destroy target attacking or blocking creature with flying.
 {t}, sacrifice @: destroy target land.
@@ -2135,6 +2152,7 @@ when @ enters the battlefield, it deals 4 damage to target creature.
 when @ enters the battlefield, it deals 4 damage to target player.
 when @ enters the battlefield, it deals 4 damage to you.
 when @ enters the battlefield, it deals 6 damage to each creature with flying.
+when @ enters the battlefield, it deals damage equal to its power to target creature or player.
 when @ enters the battlefield, prevent the next 3 damage that would be dealt to target creature or player this turn.
 when @ enters the battlefield, put a -1/-1 counter on each creature.
 when @ enters the battlefield, put a -1/-1 counter on target creature.
@@ -2176,6 +2194,7 @@ when @ enters the battlefield, tap all red creatures.
 when @ enters the battlefield, tap enchanted creature.
 when @ enters the battlefield, tap enchanted permanent.
 when @ enters the battlefield, tap target creature an opponent controls. that creature doesn't untap during its controller's next untap step.
+when @ enters the battlefield, target creature an opponent controls deals damage equal to its power to that player.
 when @ enters the battlefield, target creature gains fear until end of turn.
 when @ enters the battlefield, target creature gains first strike until end of turn.
 when @ enters the battlefield, target creature gains flying until end of turn.
