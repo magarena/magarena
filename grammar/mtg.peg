@@ -321,11 +321,11 @@ BounceAction
     ;
 
 PreventAction
-    = "prevent the next " Number SPACE Damage " that would be dealt to " DamageReceiver " this turn"
-    / "prevent all " Damage " that would be dealt this turn"
-    / "prevent all " Damage " that would be dealt to and dealt by " DamageReceiver " this turn"
-    / "prevent all " Damage " that would be dealt to " DamageReceiver " this turn"
-    / "prevent all " Damage " that would be dealt by " DamageReceiver " this turn"
+    = "prevent the next " Number SPACE Damage " that would be dealt to " DamageReceiver 
+    / "prevent all " Damage " that would be dealt to and dealt by " DamageReceiver 
+    / "prevent all " Damage " that would be dealt to " DamageReceiver
+    / "prevent all " Damage " that would be dealt by " DamageReceiver
+    / "prevent all " Damage " that would be dealt" 
     ;
 
 Damage
@@ -398,6 +398,7 @@ Enchant
 Duration
     = "until end of turn"
     / "for as long as " SelectPlayer " control @"
+    / "this turn"
     ;
 
 GainsAction
