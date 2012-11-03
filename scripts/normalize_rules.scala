@@ -27,7 +27,16 @@ for (card <- src \ "card") {
 def showNormalize(name:String, rule:String):Unit = {
     //replace name with @
     val no_name = rule.trim.replace(name, "@")
-    Console.println(no_name);
+
+    //replace name (without part after comma) with @
+    val no_name_2 = if (name.contains(',')) {
+        val nameBeforeComma = name.substring(0, name.indexOf(','));
+        rule.replace(nameBeforeComma, "@")
+    } else {
+        no_name
+    }
+
+    Console.println(no_name_2);
 }
 
 /*
