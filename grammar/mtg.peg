@@ -308,7 +308,7 @@ RegenerateAction
     ;
 
 DamageAction
-    = "@ deals " Number " damage to " SelectCreature " or player"?
+    = SelectPermanent " deals " Number " damage to " SelectCreature " or player"?
     ;
 
 EntersTapped
