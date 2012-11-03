@@ -19,6 +19,7 @@ Optional
     = "you may have"
     / "you may"
     / "if you don't,"
+    / "if you do,"
     ;
 
 KeywordAbility

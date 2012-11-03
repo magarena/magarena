@@ -574,6 +574,10 @@ at the beginning of your upkeep, you lose 3 life.
 at the beginning of your upkeep, you may draw two cards.
 at the beginning of your upkeep, you may gain 1 life.
 at the beginning of your upkeep, you may have target opponent discard a card at random.
+at the beginning of your upkeep, you may pay {1}. if you do, untap @.
+at the beginning of your upkeep, you may pay {2}. if you do, untap @.
+at the beginning of your upkeep, you may pay {4}. if you do, untap @.
+at the beginning of your upkeep, you may pay {u}{u}{u}. if you do, untap @.
 at the beginning of your upkeep, you may put a +1/+1 counter on @.
 at the beginning of your upkeep, you may put a +1/+1 counter on target creature you control.
 at the beginning of your upkeep, you may put a charge counter on @.
@@ -583,6 +587,7 @@ at the beginning of your upkeep, you may put a verse counter on @.
 at the beginning of your upkeep, you may return @ from your graveyard to your hand.
 at the beginning of your upkeep, you may return target artifact card from your graveyard to the battlefield.
 at the beginning of your upkeep, you may return target creature card from your graveyard to the battlefield.
+at the beginning of your upkeep, you may sacrifice a nonartifact creature. if you do, put a +1/+1 counter on @. if you don't, tap @.
 battle cry
 {b}{b}: counter target green spell.
 {b}{b}: creatures with shadow get +1/+0 until end of turn and creatures without shadow get -1/-0 until end of turn.
@@ -2062,6 +2067,9 @@ when @ dies, you lose 2 life.
 when @ dies, you may draw a card.
 when @ dies, you may gain 3 life.
 when @ dies, you may have target creature get -2/-2 until end of turn.
+when @ dies, you may pay {1}{b}. if you do, target player discards a card at random.
+when @ dies, you may pay {1}{u}. if you do, draw a card.
+when @ dies, you may pay {b}. if you do, target player discards a card.
 when @ dies, you may put a -1/-1 counter on target creature.
 when @ dies, you may put it on top of its owner's library.
 when @ enters the battlefield, add one mana of any color to your mana pool.
@@ -2209,9 +2217,11 @@ when @ enters the battlefield, you may destroy target creature with power 1 or l
 when @ enters the battlefield, you may destroy target enchantment.
 when @ enters the battlefield, you may destroy target equipment.
 when @ enters the battlefield, you may destroy target nonblack creature.
+when @ enters the battlefield, you may discard a card. if you do, draw a card.
 when @ enters the battlefield, you may exile target artifact or enchantment.
 when @ enters the battlefield, you may have target opponent discard a card.
 when @ enters the battlefield, you may have target opponent sacrifice a creature.
+when @ enters the battlefield, you may pay {x}. if you do, target creature gets +x/+0 until end of turn.
 when @ enters the battlefield, you may return target artifact card from your graveyard to the battlefield.
 when @ enters the battlefield, you may return target artifact card from your graveyard to your hand.
 when @ enters the battlefield, you may return target card from your graveyard to your hand.
@@ -2251,6 +2261,8 @@ whenever @ attacks, target creature gets +0/+3 until end of turn.
 whenever @ attacks, target creature you control gains flying until end of turn.
 whenever @ attacks, you may have target creature gain flying until end of turn.
 whenever @ attacks, you may have target creature lose flying until end of turn.
+whenever @ attacks, you may pay {w}. if you do, it gains flying until end of turn.
+whenever @ attacks, you may pay {x}{r}. if you do, @ deals x damage to target creature or player.
 whenever @ attacks, you may tap target creature.
 whenever @ becomes blocked, draw a card.
 whenever @ becomes blocked, it gets +1/+1 until end of turn.
@@ -2295,7 +2307,11 @@ whenever @ deals combat damage to a player, that player discards a card at rando
 whenever @ deals combat damage to a player, that player sacrifices a creature.
 whenever @ deals combat damage to a player, that player sacrifices a permanent.
 whenever @ deals combat damage to a player, you may draw a card.
+whenever @ deals combat damage to a player, you may draw a card. if you do, discard a card.
+whenever @ deals combat damage to a player, you may pay {2}{g}. if you do, put six +1/+1 counters on @.
 whenever @ deals combat damage to a player, you may return target creature card from your graveyard to your hand.
+whenever @ deals combat damage to a player, you may sacrifice it. if you do, @ deals 3 damage to that player.
+whenever @ deals combat damage to a player, you may sacrifice it. if you do, draw three cards.
 whenever @ deals combat damage to a player, you may untap target creature.
 whenever @ deals combat damage, you gain that much life.
 whenever @ deals damage to a creature, exile that creature.
@@ -2325,6 +2341,9 @@ whenever you cast a creature spell, put a +1/+1 counter on @.
 whenever you cast a creature spell, put a 1/1 green saproling creature token onto the battlefield.
 whenever you cast a creature spell, tap target creature.
 whenever you cast a creature spell, you may draw a card.
+whenever you cast a creature spell, you may pay {1}. if you do, draw a card.
+whenever you cast a creature spell, you may pay {1}. if you do, return target creature to its owner's hand.
+whenever you cast a creature spell, you may pay {g}{g}. if you do, return @ from your graveyard to your hand.
 whenever you cast a creature spell, you may put a quest counter on @.
 whenever you cast a green spell, @ gains forestwalk until end of turn.
 whenever you cast a green spell, @ gets +1/+1 until end of turn.
@@ -2350,6 +2369,7 @@ whenever you cast a spell, equipped creature gets +2/+2 until end of turn.
 whenever you cast a spell, return target permanent to its owner's hand.
 whenever you cast a spell, you gain 1 life.
 whenever you cast a spell, you gain 2 life.
+whenever you cast a spell, you may pay {1}. if you do, @ deals 1 damage to target player.
 whenever you cast a spell, you may put two +1/+1 counters on @.
 whenever you cast a spell, you may return @ to its owner's hand.
 whenever you cast a spell, you may untap @.
@@ -2370,6 +2390,7 @@ whenever you cast a spirit or arcane spell, you may destroy target nonbasic land
 whenever you cast a spirit or arcane spell, you may draw a card.
 whenever you cast a spirit or arcane spell, you may put a ki counter on @.
 whenever you cast a spirit or arcane spell, you may return @ to its owner's hand.
+whenever you cast a spirit or arcane spell, you may sacrifice @. if you do, draw a card.
 whenever you cast a spirit or arcane spell, you may tap or untap target creature.
 whenever you cast a treefolk spell, @ gets +2/+2 until end of turn.
 whenever you cast a treefolk spell, you may have target creature get +3/-3 until end of turn.
@@ -2389,6 +2410,11 @@ when @ is put into a graveyard from the battlefield, draw a card.
 when @ is put into a graveyard from the battlefield, draw three cards.
 when @ is put into a graveyard from the battlefield, exile equipped creature.
 when @ is put into a graveyard from the battlefield, return @ to its owner's hand.
+when @ is put into a graveyard from the battlefield, you may pay {b}. if you do, draw a card.
+when @ is put into a graveyard from the battlefield, you may pay {g}. if you do, draw a card.
+when @ is put into a graveyard from the battlefield, you may pay {r}. if you do, draw a card.
+when @ is put into a graveyard from the battlefield, you may pay {u}. if you do, draw a card.
+when @ is put into a graveyard from the battlefield, you may pay {w}. if you do, draw a card.
 when @ leaves the battlefield, destroy target white creature. it can't be regenerated.
 when @ leaves the battlefield, draw a card.
 when @ leaves the battlefield, it deals 1 damage to each goblin creature.
@@ -2444,6 +2470,7 @@ wither
 {w}, {t}: prevent the next 2 damage that would be dealt to target creature or player this turn.
 {w}, {t}: prevent the next 2 damage that would be dealt to you this turn.
 {w}, {t}: regenerate target artifact.
+{w}, {t}: remove a -1/-1 counter from target creature. if you do, you gain 2 life.
 {w}, {t}: tap target artifact.
 {w}, {t}: tap target creature.
 {w}, {t}: tap target permanent.
