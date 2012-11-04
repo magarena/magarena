@@ -297,6 +297,7 @@
 {2}{r}{g}, discard two cards at random: @ deals 4 damage to target creature or player.
 {2}{r}, {q}: @ deals damage equal to its power to target creature or player.
 {2}{r}, sacrifice @: @ deals 2 damage to target creature.
+{2}{r}, sacrifice @: destroy target scarecrow or plains.
 {2}{r}: target creature gets +1/+0 until end of turn.
 {2}{r}, {t}: @ deals 1 damage to each opponent.
 {2}{r}, {t}: @ deals 2 damage to target creature.
@@ -651,6 +652,7 @@ at the beginning of your upkeep, sacrifice @ unless you remove a +1/+1 counter f
 at the beginning of your upkeep, sacrifice @ unless you return a land you control to its owner's hand.
 at the beginning of your upkeep, sacrifice @ unless you sacrifice a creature.
 at the beginning of your upkeep, sacrifice @ unless you sacrifice a land.
+at the beginning of your upkeep, sacrifice @ unless you sacrifice a mountain.
 at the beginning of your upkeep, sacrifice @ unless you sacrifice an enchantment.
 at the beginning of your upkeep, sacrifice @ unless you tap an untapped creature you control.
 at the beginning of your upkeep, tap target creature.
@@ -691,6 +693,7 @@ battle cry
 {b}{b}: creatures with shadow get +1/+0 until end of turn and creatures without shadow get -1/-0 until end of turn.
 {b}{b}: draw a card.
 {b}{b}: @ gets +1/+0 until end of turn.
+{b}{b}, pay 2 life, sacrifice a swamp: return target creature card from your graveyard to the battlefield.
 {b}{b}: regenerate @.
 {b}{b}: return @ to its owner's hand.
 {b}{b}: target creature gains shadow until end of turn.
@@ -955,12 +958,14 @@ destroy all creatures with power 4 or greater. they can't be regenerated.
 destroy all creatures you don't control. they can't be regenerated.
 destroy all enchantments.
 destroy all enchantments target player controls.
+destroy all forests.
 destroy all green creatures.
 destroy all green creatures. they can't be regenerated.
 destroy all islands.
 destroy all lands.
 destroy all nonartifact permanents.
 destroy all nonbasic lands.
+destroy all plains.
 destroy all tapped creatures.
 destroy all white creatures.
 destroy all white permanents.
@@ -1215,16 +1220,20 @@ enchanted land has shroud.
 enchanted permanent doesn't untap during its controller's untap step.
 enchant enchantment
 enchant equipment
+enchant forest
 enchant green creature
 enchant green or white creature
 enchant island
 enchant land
 enchant land you control
+enchant mountain
 enchant nonbasic land
 enchant nonblack creature
 enchant permanent
+enchant plains
 enchant player
 enchant red or green creature
+enchant swamp
 enchant tapped creature
 enchant wall
 @ enters the battlefield tapped.
@@ -1385,6 +1394,8 @@ green creatures you control have trample.
 {g}, remove a -1/-1 counter from @: destroy target artifact or enchantment.
 {g}: return @ to its owner's hand.
 {g}, sacrifice a creature: you gain 1 life.
+{g}, sacrifice a forest: @ gets +2/+2 until end of turn.
+{g}, sacrifice a forest: regenerate @.
 {g}, sacrifice a wall: draw a card.
 {g}, sacrifice @: destroy target artifact or enchantment.
 {g}, sacrifice @: target creature gets +2/+2 until end of turn.
@@ -1400,6 +1411,7 @@ green creatures you control have trample.
 {g}, {t}: put a 1/1 green saproling creature token onto the battlefield.
 {g}, {t}: regenerate target creature.
 {g}, {t}, sacrifice a creature: destroy target enchantment.
+{g}, {t}, sacrifice a forest: regenerate target creature.
 {g}, {t}, sacrifice @: destroy target artifact.
 {g}, {t}, sacrifice @: destroy target enchantment.
 {g}, {t}: target attacking creature gets +2/+2 until end of turn.
@@ -1768,6 +1780,10 @@ sacrifice @: add one mana of any color to your mana pool.
 sacrifice @: add {r} to your mana pool.
 sacrifice @: add {u} to your mana pool.
 sacrifice @: add {w} to your mana pool.
+sacrifice a forest: regenerate @.
+sacrifice a forest: regenerate enchanted creature.
+sacrifice a forest: target attacking creature gets -3/-0 until end of turn.
+sacrifice a forest: you gain 3 life.
 sacrifice a goblin: add {r} to your mana pool.
 sacrifice a goblin: @ gets +2/+2 and gains trample until end of turn.
 sacrifice a goblin: regenerate @.
@@ -1809,6 +1825,8 @@ sacrifice a saproling: target creature gains haste until end of turn.
 sacrifice a saproling: target creature gets -1/-1 until end of turn.
 sacrifice a saproling: target creature gets +1/+1 until end of turn.
 sacrifice a saproling: you gain 2 life.
+sacrifice a swamp: @ gains fear until end of turn.
+sacrifice a swamp: regenerate target black creature.
 sacrifice @: counter target instant or sorcery spell unless its controller pays {1}.
 sacrifice @: counter target spell unless its controller pays {1}.
 sacrifice @: counter target spell unless its controller pays {2}.
@@ -2148,12 +2166,15 @@ trample
 {t}, sacrifice a creature: target creature gets +2/+2 until end of turn.
 {t}, sacrifice a creature: you gain 1 life.
 {t}, sacrifice @: add one mana of any color to your mana pool.
+{t}, sacrifice a forest: @ deals 2 damage to target player.
 {t}, sacrifice a goblin: @ deals 2 damage to target creature or player.
 {t}, sacrifice a goblin: goblin creatures get +2/+0 until end of turn.
 {t}, sacrifice a land: destroy target land.
+{t}, sacrifice a mountain: @ deals 3 damage to target creature.
 {t}, sacrifice an artifact: @ deals 2 damage to target creature or player.
 {t}, sacrifice an artifact: draw a card.
 {t}, sacrifice an artifact: target player puts the top three cards of his or her library into his or her graveyard.
+{t}, sacrifice a swamp: target creature gets +1/+1 until end of turn.
 {t}, sacrifice @: counter target spell.
 {t}, sacrifice @: @ deals 2 damage to target attacking or blocking creature.
 {t}, sacrifice @: @ deals 3 damage to target attacking or blocking creature.
@@ -2173,6 +2194,7 @@ trample
 {t}, sacrifice @: target creature gets -2/-2 until end of turn.
 {t}, sacrifice @: target creature gets -3/-3 until end of turn.
 {t}, sacrifice @: target creature gets -4/-4 until end of turn.
+{t}, sacrifice @: untap all forests.
 {t}, sacrifice @: you gain 4 life.
 {t}, tap an untapped creature you control: add one mana of any color to your mana pool.
 {t}: tap enchanted creature.
@@ -2215,6 +2237,7 @@ trample
 {t}: untap target attacking creature with shadow. prevent all combat damage that would be dealt to and dealt by that creature this turn.
 {t}: untap target blue creature.
 {t}: untap target creature.
+{t}: untap target forest.
 {t}: untap target land.
 {t}: untap target permanent.
 {t}: you gain 1 life.
@@ -2478,6 +2501,7 @@ when @ enters the battlefield, sacrifice it unless you discard a noncreature car
 when @ enters the battlefield, sacrifice it unless you pay {1}.
 when @ enters the battlefield, sacrifice it unless you return an artifact you control to its owner's hand.
 when @ enters the battlefield, sacrifice it unless you return an enchantment to its owner's hand.
+when @ enters the battlefield, sacrifice it unless you sacrifice a forest.
 when @ enters the battlefield, sacrifice it unless you sacrifice a land.
 when @ enters the battlefield, sacrifice it unless you sacrifice an artifact.
 when @ enters the battlefield, tap all islands.

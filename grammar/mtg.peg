@@ -651,6 +651,10 @@ LandRestriction
 Tribal
     = "spirit" "s"?
     / "island" "s"?
+    / "forest" "s"?
+    / "swamp" "s"?
+    / "mountain" "s"?
+    / "plains"
     / "wall" "s"?
     / "human"
     / "elf"
