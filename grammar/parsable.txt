@@ -129,6 +129,8 @@
 {1}{r}, {t}: @ deals damage equal to its power to target creature. that creature deals damage equal to its power to @.
 {1}{r}, {t}: @ deals damage to target player equal to the number of creatures with defender you control.
 {1}{r}, {t}, discard a card: target creature gets +1/-1 and gains haste until end of turn.
+{1}{r}, {t}: put a mine counter on target land.
+{1}{r}, {t}: put a pressure counter on @.
 {1}{r}, {t}: target dwarf creature gains mountainwalk until end of turn.
 {1}{r}, {t}: target goblin creature gets +2/+0 until end of turn.
 {1}, sacrifice a creature: @ deals 1 damage to target creature or player.
@@ -161,6 +163,7 @@
 {1}, {t}: @ deals 1 damage to target attacking creature.
 {1}, {t}: @ deals 1 damage to target creature. tap that creature.
 {1}, {t}: destroy all artifacts, creatures, and enchantments.
+{1}, {t}, discard a card: put a study counter on @.
 {1}, {t}, discard a card: regenerate target creature.
 {1}, {t}, discard a card: you gain 4 life.
 {1}, {t}: exile target creature you control.
@@ -168,7 +171,9 @@
 {1}, {t}, pay 1 life: put a 0/1 white goat creature token onto the battlefield.
 {1}, {t}: put a +1/+1 counter on @.
 {1}, {t}: put a charge counter on @.
+{1}, {t}: put a magnet counter on target creature.
 {1}, {t}: put a storage counter on @.
+{1}, {t}: put a winch counter on @.
 {1}, {t}, remove a charge counter from @: put a charge counter on target artifact.
 {1}, {t}, remove x ki counters from @: return target creature with converted mana cost x or less to its owner's hand.
 {1}, {t}, remove x ki counters from @: target creature gets -x/-x until end of turn.
@@ -323,6 +328,7 @@
 {2}, remove a +1/+1 counter from @: put a +1/+1 counter on target creature.
 {2}, remove a +1/+1 counter from @: put a 1/1 green spike creature token onto the battlefield.
 {2}, remove a +1/+1 counter from @: return @ to its owner's hand.
+{2}, remove a cube counter from @: regenerate target creature.
 {2}, return a land you control to its owner's hand: draw a card, then discard a card.
 {2}, return a land you control to its owner's hand: tap target land.
 {2}, return a land you control to its owner's hand: target creature with power 2 or less is unblockable this turn.
@@ -418,6 +424,7 @@
 {2}{w}: @ gains first strike until end of turn.
 {2}{w}: prevent all combat damage that would be dealt by target creature this turn.
 {2}{w}: put a 1/1 white soldier creature token onto the battlefield.
+{2}{w}: put a healing counter on @.
 {2}{w}, {q}: @ gets +0/+2 until end of turn.
 {2}{w}, remove a +1/+1 counter from @: put two 1/1 white spirit creature tokens with flying onto the battlefield.
 {2}{w}: return @ to its owner's hand.
@@ -425,6 +432,7 @@
 {2}{w}: target player gains 1 life.
 {2}{w}, {t}: @ deals 2 damage to target attacking or blocking creature.
 {2}{w}, {t}: prevent the next 2 damage that would be dealt to target creature or player this turn.
+{2}{w}, {t}: put a trap counter on target land you control.
 {2}{w}, {t}, sacrifice @: destroy all enchantments.
 {2}{w}, {t}, sacrifice @: destroy target artifact or enchantment.
 {2}{w}{u}: put a +1/+1 counter on @.
@@ -474,6 +482,7 @@
 {3}, {t}: prevent the next 2 damage that would be dealt to you this turn.
 {3}, {t}: put a +1/+1 counter on target creature.
 {3}, {t}: put a charge counter on @.
+{3}, {t}: put a hatchling counter on @.
 {3}, {t}: put a token that's a copy of @ onto the battlefield.
 {3}, {t}: regenerate target artifact creature.
 {3}, {t}: remove a -1/-1 counter from target creature.
@@ -521,6 +530,7 @@
 {4}{g}, sacrifice a creature: destroy target creature with flying.
 {4}{g}{w}: put a 3/3 green centaur creature token onto the battlefield.
 {4}: @ loses defender until end of turn.
+{4}: put a pressure counter on @.
 {4}, return a land you control to its owner's hand: draw a card.
 {4}{r}: exile @.
 {4}{r}, {t}, sacrifice a creature: @ deals 2 damage to target creature or player.
@@ -529,6 +539,8 @@
 {4}, {t}: put a 0/1 white goat creature token onto the battlefield.
 {4}, {t}: put a -1/-1 counter on target creature.
 {4}, {t}: put a charge counter on @.
+{4}, {t}: put a divinity counter on target permanent other than @.
+{4}, {t}: put a fate counter on target permanent.
 {4}, {t}, remove a +1/+1 counter from @: destroy target creature.
 {4}, {t}, sacrifice a creature: @ deals 4 damage to target creature.
 {4}, {t}, sacrifice a land: @ deals 1 damage to target creature or player.
@@ -610,6 +622,7 @@ artifact creatures you control gain flying until end of turn.
 artifact creatures you control get +2/+2.
 artifacts and enchantments you control have shroud.
 artifacts you control have hexproof.
+as @ enters the battlefield, put a phylactery counter on an artifact you control.
 as @ enters the battlefield, sacrifice all lands you control.
 as @ enters the battlefield, you may pay 2 life. if you don't, @ enters the battlefield tapped.
 attacking creatures gain first strike until end of turn.
@@ -667,6 +680,13 @@ at the beginning of your upkeep, put a -1/-1 counter on enchanted creature.
 at the beginning of your upkeep, put a +1/+1 counter on enchanted creature.
 at the beginning of your upkeep, put a 1/1 red goblin creature token with haste onto the battlefield.
 at the beginning of your upkeep, put a 2/2 green wolf creature token onto the battlefield.
+at the beginning of your upkeep, put a credit counter on @.
+at the beginning of your upkeep, put a currency counter on @.
+at the beginning of your upkeep, put a doom counter on @.
+at the beginning of your upkeep, put a growth counter on @.
+at the beginning of your upkeep, put a pain counter on @.
+at the beginning of your upkeep, put a pin counter on @.
+at the beginning of your upkeep, put a plague counter on @.
 at the beginning of your upkeep, put a spore counter on @.
 at the beginning of your upkeep, put a tide counter on @.
 at the beginning of your upkeep, put a time counter on @.
@@ -675,6 +695,7 @@ at the beginning of your upkeep, put target creature card from a graveyard onto 
 at the beginning of your upkeep, remove a -1/-1 counter from @.
 at the beginning of your upkeep, remove a -1/-1 counter from each creature you control.
 at the beginning of your upkeep, remove a depletion counter from @.
+at the beginning of your upkeep, remove a shell counter from @.
 at the beginning of your upkeep, return a black creature you control to its owner's hand.
 at the beginning of your upkeep, return a blue creature you control to its owner's hand.
 at the beginning of your upkeep, return a creature you control to its owner's hand.
@@ -752,8 +773,13 @@ at the beginning of your upkeep, you may put a charge counter on @.
 at the beginning of your upkeep, you may put a charge counter on target artifact.
 at the beginning of your upkeep, you may put a charge counter on target permanent you control.
 at the beginning of your upkeep, you may put a fuse counter on @.
+at the beginning of your upkeep, you may put a growth counter on @.
 at the beginning of your upkeep, you may put a page counter on @.
+at the beginning of your upkeep, you may put a petal counter on @.
+at the beginning of your upkeep, you may put a soot counter on @.
+at the beginning of your upkeep, you may put a treasure counter on @.
 at the beginning of your upkeep, you may put a verse counter on @.
+at the beginning of your upkeep, you may remove a vitality counter from @. if you do, you gain 1 life.
 at the beginning of your upkeep, you may return @ from your graveyard to your hand.
 at the beginning of your upkeep, you may return target artifact card from your graveyard to the battlefield.
 at the beginning of your upkeep, you may return target creature card from your graveyard to the battlefield.
@@ -1380,6 +1406,8 @@ enchant wall
 @ enters the battlefield with a -1/-1 counter on it.
 @ enters the battlefield with a +1/+1 counter on it.
 @ enters the battlefield with a charge counter on it.
+@ enters the battlefield with a javelin counter on it.
+@ enters the battlefield with a sleight counter on it.
 @ enters the battlefield with a tide counter on it.
 @ enters the battlefield with eight +1/+1 counters on it.
 @ enters the battlefield with five -1/-1 counters on it.
@@ -1387,19 +1415,35 @@ enchant wall
 @ enters the battlefield with four +1/+0 counters on it.
 @ enters the battlefield with four -1/-1 counters on it.
 @ enters the battlefield with four +1/+1 counters on it.
+@ enters the battlefield with four healing counters on it.
+@ enters the battlefield with four polyp counters on it.
+@ enters the battlefield with four shell counters on it.
 @ enters the battlefield with seven +1/+0 counters on it.
 @ enters the battlefield with seven +1/+1 counters on it.
+@ enters the battlefield with seven dream counters on it.
+@ enters the battlefield with seven omen counters on it.
 @ enters the battlefield with six +1/+1 counters on it.
 @ enters the battlefield with six charge counters on it.
+@ enters the battlefield with ten ice counters on it.
 @ enters the battlefield with three -1/-1 counters on it.
 @ enters the battlefield with three +1/+1 counters on it.
 @ enters the battlefield with three charge counters on it.
+@ enters the battlefield with three credit counters on it.
+@ enters the battlefield with three ice counters on it.
+@ enters the battlefield with three mining counters on it.
+@ enters the battlefield with three net counters on it.
+@ enters the battlefield with three ore counters on it.
+@ enters the battlefield with three wish counters on it.
 @ enters the battlefield with two -1/-1 counters on it.
 @ enters the battlefield with two +1/+1 counters on it.
 @ enters the battlefield with two charge counters on it.
+@ enters the battlefield with two intervention counters on it.
 @ enters the battlefield with x +1/+0 counters on it.
 @ enters the battlefield with x +1/+1 counters on it.
 @ enters the battlefield with x charge counters on it.
+@ enters the battlefield with x echo counters on it.
+@ enters the battlefield with x ice counters on it.
+@ enters the battlefield with x scream counters on it.
 equip {0}
 equip {1}
 equip {2}
@@ -1893,19 +1937,27 @@ remove a +1/+1 counter from @: @ is unblockable this turn.
 remove a +1/+1 counter from @: you gain 2 life.
 remove a charge counter from @: add one mana of any color to your mana pool.
 remove a charge counter from @: target creature gets +1/+1 until end of turn.
+remove a corpse counter from @: regenerate @.
+remove a divinity counter from @: destroy all lands.
+remove a divinity counter from @: destroy all other creatures.
 remove a fade counter from @: exile target creature.
 remove a fade counter from @: exile target land.
 remove a fade counter from @: @ gets +1/+1 until end of turn.
 remove a fade counter from @: prevent the next 2 damage that would be dealt to target creature or player this turn.
 remove a fade counter from @: tap target creature.
+remove a healing counter from @: prevent the next 1 damage that would be dealt to enchanted creature this turn.
+remove a healing counter from @: prevent the next 1 damage that would be dealt to @ this turn.
+remove a shield counter from @: prevent the next 1 damage that would be dealt to you this turn.
 remove five fuse counters from @, sacrifice @: @ deals 20 damage to target player.
 remove three charge counters from @: draw a card.
 remove three spore counters from @: @ deals 1 damage to target creature or player.
 remove three spore counters from @: prevent all combat damage that would be dealt this turn.
 remove three spore counters from @: put a 1/1 green saproling creature token onto the battlefield.
 remove three spore counters from @: regenerate @.
+remove three study counters from @, sacrifice @: draw seven cards.
 remove two +1/+1 counters from @: draw a card.
 remove two +1/+1 counters from @: @ gets +4/+4 until end of turn.
+remove two carrion counters from @: @ gets +1/+1 until end of turn.
 {r}: enchanted creature can't block this turn.
 {r}: enchanted creature deals 1 damage to target creature with flying.
 {r}: enchanted creature gets +1/+0 until end of turn.
@@ -2071,6 +2123,7 @@ sacrifice an elemental: @ gets +2/+0 and gains first strike until end of turn.
 sacrifice an elemental: target giant creature gets +3/+1 until end of turn.
 sacrifice an enchantment: @ gets +1/+1 until end of turn.
 sacrifice an enchantment: @ gets +2/+2 until end of turn.
+sacrifice an island: put two polyp counters on @.
 sacrifice an untapped creature: enchanted creature gets +2/+0 until end of turn.
 sacrifice a permanent: regenerate target creature.
 sacrifice a permanent: regenerate target creature you control.
@@ -2449,8 +2502,10 @@ totem armor
 {t}: put a 1/1 white human creature token onto the battlefield.
 {t}: put a 2/2 black vampire creature token with flying onto the battlefield.
 {t}: put a 3/3 green elephant creature token onto the battlefield.
+{t}: put a bounty counter on target nonblack creature.
 {t}: put a charge counter on @.
 {t}: put a charge counter on target artifact.
+{t}: put a devotion counter on @.
 {t}: put a fuse counter on target creature.
 {t}: put a storage counter on @.
 {t}: put two 3/3 green elephant creature tokens onto the battlefield.
@@ -2461,6 +2516,8 @@ trample
 {t}, remove a charge counter from @: tap target artifact or creature.
 {t}, remove a charge counter from @: target player loses 2 life.
 {t}, remove a charge counter from @: target player puts the top two cards of his or her library into his or her graveyard.
+{t}, remove a devotion counter from @: you gain 1 life.
+{t}, remove a javelin counter from @: @ deals 1 damage to target creature or player.
 {t}, remove three charge counters from @: destroy target permanent.
 {t}, remove x charge counters from @: target creature gets -x/-x until end of turn.
 {t}: return target legendary creature to its owner's hand.
@@ -2485,6 +2542,7 @@ trample
 {t}, sacrifice @: @ deals 2 damage to target attacking or blocking creature.
 {t}, sacrifice @: @ deals 3 damage to target attacking or blocking creature.
 {t}, sacrifice @: @ deals damage equal to its power to target creature or player.
+{t}, sacrifice @: @ deals damage equal to the number of pressure counters on it to target creature or player.
 {t}, sacrifice @: destroy target attacking creature.
 {t}, sacrifice @: destroy target attacking or blocking creature with flying.
 {t}, sacrifice @: destroy target land.
@@ -2563,6 +2621,7 @@ trample
 {u/b}: @ gets +1/+1 until end of turn.
 {u}{b}: @ gets -2/-0 until end of turn and is unblockable this turn.
 {u}{b}, pay 1 life: return @ to its owner's hand.
+{u}{b}: remove a blood counter from @.
 {u}{b}, {t}, sacrifice @: target creature gets -3/-3 until end of turn. draw a card.
 {u}{b}, {t}: target player puts the top card of his or her library into his or her graveyard.
 {u}, discard a card: draw a card.
@@ -2882,6 +2941,8 @@ when @ enters the battlefield, tap all nonwhite creatures.
 when @ enters the battlefield, tap all other creatures.
 when @ enters the battlefield, tap all red creatures.
 when @ enters the battlefield, tap enchanted creature.
+when @ enters the battlefield, tap enchanted creature and put three pupa counters on @.
+when @ enters the battlefield, tap enchanted creature and put x sleep counters on it.
 when @ enters the battlefield, tap enchanted permanent.
 when @ enters the battlefield, tap target creature an opponent controls. that creature doesn't untap during its controller's next untap step.
 when @ enters the battlefield, tap target creature an opponent controls. that creature doesn't untap during its controller's untap step for as long as you control @.
@@ -3279,6 +3340,7 @@ wither
 {w}{u}{b}{r}{g}: exile target permanent.
 {w}{u}{b}{r}{g}, remove five -1/-1 counters from @: target player draws three cards.
 {w}{u}: target creature gains flying until end of turn.
+{w}{u}, {t}: put a bribery counter on target creature you don't control. its controller draws a card.
 {w}{u}, {t}, sacrifice a bird: draw a card.
 {w}{w}: @ gains first strike until end of turn.
 {w}{w}: @ gets +0/+2 until end of turn.
