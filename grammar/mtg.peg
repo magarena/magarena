@@ -161,11 +161,6 @@ Keyword
     / "replicate" SPACE ManaCost
     / "miracle" SPACE ManaCost
     / "level up" SPACE ManaCost
-    / "@ can't block."
-    / "@ is unblockable."
-    / "@ attacks each turn if able."
-    / "@ is indestructible."
-    / "@ can't be countered."
     ;
 
 ColorlessCost
@@ -264,6 +259,8 @@ ChangeStateAction
     / SelectPermanent " can't block" 
     / SelectPermanent " is indestructible" 
     / SelectPermanent " is unblockable" 
+    / SelectPermanent " attacks each turn if able"
+    / SelectPermanent " can't be countered"
     ;
 
 SetPTAction

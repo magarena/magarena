@@ -1159,6 +1159,7 @@ enchant creature without flying
 enchant creature you control
 enchanted artifact doesn't untap during its controller's untap step.
 enchanted artifact has shroud.
+enchanted creature attacks each turn if able.
 enchanted creature can't attack.
 enchanted creature can't attack or block.
 enchanted creature can't block.
