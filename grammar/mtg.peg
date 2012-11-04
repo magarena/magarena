@@ -698,6 +698,7 @@ ColorSpec
     / Color " and " Color
     / Color
     / "non" Color
+    / "colorless"
     ;
 
 SpellRestriction

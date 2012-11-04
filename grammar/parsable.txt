@@ -337,6 +337,7 @@
 {2}, pay 2 life: draw a card.
 {2}: prevent all combat damage that would be dealt to and dealt by target creature you control this turn.
 {2}: prevent the next 1 damage that would be dealt to you this turn.
+{2}: put a 1/1 colorless sliver creature token onto the battlefield.
 {2}: put a charge counter on @.
 {2}, {q}: add one mana of any color to your mana pool.
 {2}{r}: @ deals 1 damage to target player.
@@ -409,6 +410,7 @@
 {2}, {t}, remove a charge counter from @: put a 1/1 green insect creature token with infect onto the battlefield.
 {2}, {t}, remove a charge counter from @: target creature gets +3/+0 until end of turn.
 {2}, {t}, remove a charge counter from @: target player gains 3 life.
+{2}, {t}, remove a ki counter from @: put a 1/1 colorless spirit creature token onto the battlefield.
 {2}, {t}, remove four charge counters from @: you gain 2 life and draw a card.
 {2}, {t}, sacrifice a creature: draw a card.
 {2}, {t}, sacrifice a land: draw a card and put a charge counter on @.
@@ -485,6 +487,7 @@
 {3}{g}, sacrifice @: destroy target artifact.
 {3}{g}: target creature gets +2/+2 until end of turn.
 {3}{g}, {t}: you may tap or untap target artifact, creature, or land.
+{3}: put a 1/1 colorless sliver creature token onto the battlefield.
 {3}: put a +1/+1 counter on @.
 {3}{r}: @ deals 1 damage to target creature or player.
 {3}: regenerate @.
@@ -1909,6 +1912,7 @@ protection from vampires
 protection from white
 protection from zombies
 put a 1/1 black rat creature token onto the battlefield.
+put a 1/1 colorless spirit creature token onto the battlefield.
 put a -1/-1 counter on each attacking creature.
 put a +1/+1 counter on each creature you control.
 put a -1/-1 counter on target creature.
@@ -2563,6 +2567,7 @@ totem armor
 {t}: put a +1/+1 counter on target creature.
 {t}: put a 1/1 white human creature token onto the battlefield.
 {t}: put a 2/2 black vampire creature token with flying onto the battlefield.
+{t}: put a 2/2 colorless pincher creature token onto the battlefield.
 {t}: put a 3/3 green elephant creature token onto the battlefield.
 {t}: put a bounty counter on target nonblack creature.
 {t}: put a charge counter on @.
@@ -3333,6 +3338,7 @@ when @ is put into a graveyard from the battlefield, destroy target nonblack cre
 when @ is put into a graveyard from the battlefield, draw a card.
 when @ is put into a graveyard from the battlefield, draw three cards.
 when @ is put into a graveyard from the battlefield, exile equipped creature.
+when @ is put into a graveyard from the battlefield, put a 1/1 colorless spirit creature token onto the battlefield.
 when @ is put into a graveyard from the battlefield, return @ to its owner's hand.
 when @ is put into a graveyard from the battlefield, you may pay {b}. if you do, draw a card.
 when @ is put into a graveyard from the battlefield, you may pay {g}. if you do, draw a card.
