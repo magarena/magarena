@@ -19,24 +19,32 @@ for (card <- src \ "card") {
     val types = card \ "typelist" \ "type"
     val rules = card \ "rulelist" \ "rule"
     
-    rules.filter(_.text.trim() != "")
-         .foreach(x => showNormalize(name, x.text))
+    val normalized_rules = rules
+         .filter(_.text.trim() != "")
+         .map(x => normalize(name, x.text))
+         .foreach(x => Console.println(x))
 }
+Console.err.println("complete analysis")
 
 //normalize the rule text
-def showNormalize(name:String, rule:String):Unit = {
-    //replace name with @
-    val no_name = rule.trim.replace(name, "@")
-
-    //replace name (without part after comma) with @
-    val no_name_2 = if (name.contains(',')) {
-        val nameBeforeComma = name.substring(0, name.indexOf(','));
-        no_name.replace(nameBeforeComma, "@")
+def normalize(name:String, rule:String):String = {
+    val nameBeforeComma = if (name.contains(',')) {
+        name.substring(0, name.indexOf(','));
     } else {
-        no_name
+        name
     }
 
-    Console.println(no_name_2);
+    val abilityWord = if (!rule.startsWith("Choose") && rule.contains('—')) {
+        rule.substring(0, rule.indexOf('—') + 1)
+    } else {
+        name
+    }
+
+    rule
+        .trim
+        .replace(name, "@")
+        .replace(nameBeforeComma, "@")
+        .trim
 }
 
 /*
