@@ -740,6 +740,7 @@ buyback {5}
 @ can't block.
 changeling
 cleric creatures have vigilance.
+counter target artifact spell.
 counter target blue spell.
 counter target creature spell.
 counter target creature spell. its controller loses 1 life.
@@ -2587,6 +2588,12 @@ whenever you cast a multicolored spell, @ deals 2 damage to target creature or p
 whenever you cast a multicolored spell, @ gets +3/+3 until end of turn.
 whenever you cast a multicolored spell, untap @.
 whenever you cast a multicolored spell, you may return @ from your graveyard to your hand.
+whenever you cast an artifact spell, draw a card.
+whenever you cast an artifact spell, you may draw a card. if you do, discard a card.
+whenever you cast an artifact spell, you may pay {1}. if you do, @ deals 1 damage to target creature or player.
+whenever you cast an artifact spell, you may pay {1}. if you do, you gain 3 life.
+whenever you cast an artifact spell, you may put a charge counter on @.
+whenever you cast an artifact spell, you may untap target creature.
 whenever you cast an enchantment spell, draw a card.
 whenever you cast an enchantment spell, put a +1/+1 counter on each creature you control.
 whenever you cast an enchantment spell, you may draw a card.
