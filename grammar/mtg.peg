@@ -571,8 +571,7 @@ RestrictedSpell
     ;
 
 SpellRestriction
-    = Color ", " Color ", " Color ", or " Color
-    / Color ", " Color ", or " Color
+    = Color (", " Color)+ ", or " Color
     / Color " or " Color
     / Color
     / "non" Color
@@ -609,8 +608,7 @@ RestrictedCreature
     ;
 
 PermanentRestriction
-    = Color ", " Color ", " Color ", or " Color
-    / Color ", " Color ", or " Color
+    = Color (", " Color)+ ", or " Color
     / Color " or " Color
     / Color
     / "non" Color
