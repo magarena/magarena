@@ -570,6 +570,7 @@ SpellRestriction
     / "vampire creature"
     / "wizard"
     / "during an opponent's turn"
+    / "instant or sorcery"
     / "with infect"
     / "with converted mana cost " Number " or less"
     / "with converted mana cost " Number " or greater"

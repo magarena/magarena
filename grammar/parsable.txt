@@ -743,6 +743,8 @@ cleric creatures have vigilance.
 counter target blue spell.
 counter target creature spell.
 counter target creature spell. its controller loses 1 life.
+counter target instant or sorcery spell.
+counter target instant or sorcery spell unless its controller pays {1}.
 counter target noncreature spell.
 counter target noncreature spell. its controller loses 2 life.
 counter target noncreature spell unless its controller pays {2}.
@@ -1715,6 +1717,7 @@ sacrifice a saproling: target creature gains haste until end of turn.
 sacrifice a saproling: target creature gets -1/-1 until end of turn.
 sacrifice a saproling: target creature gets +1/+1 until end of turn.
 sacrifice a saproling: you gain 2 life.
+sacrifice @: counter target instant or sorcery spell unless its controller pays {1}.
 sacrifice @: counter target spell unless its controller pays {1}.
 sacrifice @: counter target spell unless its controller pays {2}.
 sacrifice @: counter target spell unless its controller pays {3}.
@@ -2587,6 +2590,14 @@ whenever you cast a multicolored spell, you may return @ from your graveyard to 
 whenever you cast an enchantment spell, draw a card.
 whenever you cast an enchantment spell, put a +1/+1 counter on each creature you control.
 whenever you cast an enchantment spell, you may draw a card.
+whenever you cast an instant or sorcery spell, @ deals 2 damage to each opponent.
+whenever you cast an instant or sorcery spell, @ gets +1/+1 until end of turn. untap it.
+whenever you cast an instant or sorcery spell, @ gets +2/+0 until end of turn.
+whenever you cast an instant or sorcery spell, @ gets +3/+0 until end of turn.
+whenever you cast an instant or sorcery spell, @ gets +4/+0 until end of turn.
+whenever you cast an instant or sorcery spell, you may put a charge counter on @.
+whenever you cast an instant or sorcery spell, you may put a charge counter on @. if you do, @ deals damage equal to the number of charge counters on it to target creature or player.
+whenever you cast an instant or sorcery spell, you may untap @.
 whenever you cast a noncreature spell, counter that spell unless you sacrifice a creature.
 whenever you cast a red spell, @ deals 1 damage to each creature without flying.
 whenever you cast a red spell, @ deals 3 damage to target player.
