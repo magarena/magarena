@@ -393,6 +393,7 @@
 {3}, discard a card at random: target creature gets +2/+2 until end of turn.
 {3}: each player puts the top two cards of his or her library into his or her graveyard.
 {3}: exile target creature you control.
+{3}: gain control of target sliver.
 {3}: @ gains flying until end of turn.
 {3}: @ gets +1/+0 until end of turn.
 {3}{g}: put a 1/1 green saproling creature token onto the battlefield.
@@ -533,6 +534,23 @@ all creatures have vigilance.
 all creatures have wither.
 all creatures lose flying.
 all creatures lose flying until end of turn.
+all sliver creatures get +0/+1.
+all sliver creatures get +0/+2.
+all sliver creatures get +1/+0.
+all sliver creatures get +1/+1.
+all sliver creatures get +2/+0.
+all sliver creatures get +2/+2.
+all sliver creatures have defender.
+all sliver creatures have double strike.
+all sliver creatures have first strike.
+all sliver creatures have flanking.
+all sliver creatures have flying.
+all sliver creatures have haste.
+all sliver creatures have reach.
+all sliver creatures have shadow.
+all sliver creatures have trample.
+all sliver creatures have vigilance.
+all slivers have shroud.
 artifact creatures you control gain flying until end of turn.
 artifact creatures you control get +2/+2.
 artifacts and enchantments you control have shroud.
@@ -2409,6 +2427,7 @@ when @ enters the battlefield, return target enchantment card from your graveyar
 when @ enters the battlefield, return target instant or sorcery card from your graveyard to your hand.
 when @ enters the battlefield, return target land to its owner's hand.
 when @ enters the battlefield, return target permanent to its owner's hand.
+when @ enters the battlefield, return target sliver to its owner's hand.
 when @ enters the battlefield, sacrifice a creature.
 when @ enters the battlefield, sacrifice a land.
 when @ enters the battlefield, sacrifice all creatures you control.

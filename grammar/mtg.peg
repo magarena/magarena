@@ -657,6 +657,7 @@ Tribal
     / "beast" "s"?
     / "cleric" "s"?
     / "zombie" "s"?
+    / "sliver" "s"?
     / "non-vampire, non-werewolf, non-zombie"
     ;
 
