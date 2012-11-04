@@ -794,6 +794,7 @@ buyback {5}
 @ can't attack or block.
 @ can't be countered.
 @ can't block.
+@ can't block and is unblockable.
 changeling
 cleric creatures have vigilance.
 counter target artifact spell.
@@ -1086,6 +1087,7 @@ discard a card at random: @ gets +1/+0 and gains first strike until end of turn.
 discard a card: @ gains first strike until end of turn.
 discard a card: @ gains flying until end of turn.
 discard a card: @ gains shadow until end of turn.
+discard a card: @ gains shroud until end of turn and is unblockable this turn.
 discard a card: @ gets +0/+4 until end of turn.
 discard a card: @ gets +1/+1 until end of turn.
 discard a card: prevent all damage that would be dealt to @ this turn.
@@ -1180,6 +1182,8 @@ enchanted creature gets -1/-1.
 enchanted creature gets -1/+1.
 enchanted creature gets +1/-1.
 enchanted creature gets +1/+1.
+enchanted creature gets +1/-1 and attacks each turn if able.
+enchanted creature gets -1/-1 and can't block.
 enchanted creature gets -1/-1 and has fear.
 enchanted creature gets +1/+1 and has first strike.
 enchanted creature gets +1/+1 and has flanking.
@@ -1201,6 +1205,7 @@ enchanted creature gets -2/-0.
 enchanted creature gets +2/+0.
 enchanted creature gets +2/+0 and has flying.
 enchanted creature gets +2/+0 and has trample.
+enchanted creature gets +2/+0 and is unblockable.
 enchanted creature gets -2/-1.
 enchanted creature gets +2/-1.
 enchanted creature gets +2/+1.
@@ -1208,6 +1213,9 @@ enchanted creature gets +2/+1 and has protection from white.
 enchanted creature gets -2/-2.
 enchanted creature gets +2/-2.
 enchanted creature gets +2/+2.
+enchanted creature gets +2/+2 and attacks each turn if able.
+enchanted creature gets +2/+2 and can't attack.
+enchanted creature gets +2/+2 and can't block.
 enchanted creature gets +2/+2 and has flying.
 enchanted creature gets +2/+2 and has haste.
 enchanted creature gets +2/+2 and has lifelink.
@@ -1330,11 +1338,13 @@ equipped creature gets +2/+0 and has shroud.
 equipped creature gets +2/+1.
 equipped creature gets +2/+1 and has haste.
 equipped creature gets +2/+2.
+equipped creature gets +2/+2 and can't block.
 equipped creature gets +2/+2 and has flying.
 equipped creature gets +2/+2 and has infect.
 equipped creature gets +2/+4 and has reach.
 equipped creature gets +2/+4 and loses flying.
 equipped creature gets +3/+0.
+equipped creature gets +3/+0 and attacks each turn if able.
 equipped creature gets +3/+0 and has trample.
 equipped creature gets +3/+1.
 equipped creature gets +3/+1 and has haste.
@@ -1476,6 +1486,7 @@ if damage would be dealt to @, prevent that damage. remove a +1/+1 counter from 
 infect
 intimidate
 @ is indestructible.
+@ is indestructible and attacks each turn if able.
 islandwalk
 @ is unblockable.
 kicker {1}
@@ -2034,6 +2045,7 @@ target creature gains haste until end of turn.
 target creature gains protection from artifacts until end of turn.
 target creature gains shadow until end of turn.
 target creature gains shroud until end of turn.
+target creature gains shroud until end of turn and is unblockable this turn.
 target creature gains swampwalk until end of turn.
 target creature gains undying until end of turn.
 target creature gets -0/-3 until end of turn.
@@ -2041,6 +2053,7 @@ target creature gets +0/+4 until end of turn.
 target creature gets +1/+0 and gains first strike until end of turn.
 target creature gets +1/+0 and gains infect until end of turn.
 target creature gets -1/-0 until end of turn.
+target creature gets +1/+0 until end of turn and is unblockable this turn.
 target creature gets +1/+1 and gains first strike until end of turn.
 target creature gets +1/-1 and gains haste until end of turn.
 target creature gets +1/+1 and gains reach until end of turn.
@@ -2100,6 +2113,7 @@ target creature with flying loses flying until end of turn. @ deals damage to th
 target creature without flying can't block this turn.
 target creature you control deals damage equal to its power to target creature with flying.
 target creature you control gets +0/+1 and gains hexproof until end of turn.
+target creature you control gets +1/+0 until end of turn and is unblockable this turn.
 target creature you control gets +1/+1 and gains hexproof until end of turn.
 target creature you control gets +2/+0 until end of turn.
 target creature you don't control gets -4/-0 until end of turn.
@@ -2322,6 +2336,7 @@ trample
 {t}: you may tap or untap target artifact an opponent controls.
 {u}{b}{b}{r}, {t}: destroy target tapped or blocking creature.
 {u/b}: @ gets +1/+1 until end of turn.
+{u}{b}: @ gets -2/-0 until end of turn and is unblockable this turn.
 {u}{b}, pay 1 life: return @ to its owner's hand.
 {u}{b}, {t}, sacrifice @: target creature gets -3/-3 until end of turn. draw a card.
 {u}{b}, {t}: target player puts the top card of his or her library into his or her graveyard.
