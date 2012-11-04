@@ -739,6 +739,7 @@ blue creatures get +1/+1.
 {b}: regenerate enchanted creature.
 {b}, remove a -1/-1 counter from @: put a -1/-1 counter on each other creature.
 {b}: return @ to its owner's hand.
+{b/r}: @ gets +1/+0 until end of turn.
 {b}{r}: @ gets +1/+0 until end of turn.
 {b}{r}{g}, {t}: return target creature card from your graveyard to your hand.
 {b}{r}{g}, {t}: target player draws a card.

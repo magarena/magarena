@@ -190,6 +190,7 @@ HybridSingleCost
     / "{u/r}"
     / "{u/b}"
     / "{b/g}"
+    / "{b/r}"
     / "{w/b}"
     ;
 
