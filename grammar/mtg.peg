@@ -311,7 +311,7 @@ PutTokenAction
     ;
 
 CreatureTokenSpec
-    = PowerToughness SPACE ColorSpec (SPACE CreatureType)* " creature token" "s"? (SPACE WithAbilitySpec)?
+    = PowerToughness SPACE ColorSpec (SPACE CreatureType)* " artifact"? " creature token" "s"? (SPACE WithAbilitySpec)?
     ;
 
 WithAbilitySpec
@@ -320,8 +320,7 @@ WithAbilitySpec
     ;
 
 CreatureSpec
-    = PowerToughness (SPACE ColorSpec)? (SPACE CreatureType)* " creature" (SPACE WithAbilitySpec)? 
-    / PowerToughness (SPACE ColorSpec)? (SPACE CreatureType)* " artifact creature" (SPACE WithAbilitySpec)?
+    = PowerToughness (SPACE ColorSpec)? (SPACE CreatureType)* " artifact"? " creature" (SPACE WithAbilitySpec)? 
     ;
 
 ControlAction

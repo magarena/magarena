@@ -101,10 +101,12 @@
 {1}: regenerate target creature with power 5 or greater.
 {1}, remove a +1/+1 counter from a creature you control: put a 1/1 green saproling creature token onto the battlefield.
 {1}, remove a +1/+1 counter from @: prevent all combat damage that would be dealt this turn.
+{1}, remove a +1/+1 counter from @: put a 1/1 colorless pentavite artifact creature token with flying onto the battlefield.
 {1}, remove a +1/+1 counter from @: regenerate @.
 {1}, remove a fade counter from @: @ deals 1 damage to target creature or player.
 {1}, remove a fade counter from @: destroy target artifact.
 {1}, remove four +1/+1 counters from @: target player draws three cards.
+{1}, remove two charge counters from @: put a 2/2 colorless spawn artifact creature token onto the battlefield.
 {1}, return a land you control to its owner's hand: put a 1/1 blue illusion creature token with flying onto the battlefield.
 {1}: return target land you control to its owner's hand.
 {1}: return @ to its owner's hand.
@@ -195,6 +197,7 @@
 {1}, {t}, sacrifice @: @ deals 2 damage to target creature or player.
 {1}, {t}, sacrifice @: @ deals 4 damage to target artifact creature.
 {1}, {t}, sacrifice @: draw a card.
+{1}, {t}, sacrifice @: put a 1/1 colorless myr artifact creature token onto the battlefield.
 {1}, {t}, sacrifice @: target creature gets +2/+2 until end of turn.
 {1}, {t}, tap an untapped creature you control: put a 1/1 green saproling creature token onto the battlefield.
 {1}, {t}, tap an untapped creature you control: target creature gets +1/+1 until end of turn.
@@ -403,11 +406,13 @@
 {2}, {t}: exile target permanent you control.
 {2}, {t}: prevent all combat damage that would be dealt by target creature this turn.
 {2}, {t}: prevent the next 1 damage that would be dealt to target creature or player this turn.
+{2}, {t}: put a 0/1 colorless pest artifact creature token onto the battlefield.
 {2}, {t}: put a +1/+1 counter on @.
 {2}, {t}: put a charge counter on @.
 {2}, {t}, remove a charge counter from @: draw a card.
 {2}, {t}, remove a charge counter from @: put a -1/-1 counter on target creature.
 {2}, {t}, remove a charge counter from @: put a 1/1 green insect creature token with infect onto the battlefield.
+{2}, {t}, remove a charge counter from @: put a 3/3 colorless golem artifact creature token onto the battlefield.
 {2}, {t}, remove a charge counter from @: target creature gets +3/+0 until end of turn.
 {2}, {t}, remove a charge counter from @: target player gains 3 life.
 {2}, {t}, remove a ki counter from @: put a 1/1 colorless spirit creature token onto the battlefield.
@@ -511,6 +516,7 @@
 {3}: target player puts the top three cards of his or her library into his or her graveyard.
 {3}, {t}: @ deals 1 damage to target creature or player.
 {3}, {t}: prevent the next 2 damage that would be dealt to you this turn.
+{3}, {t}: put a 0/1 colorless prism artifact creature token onto the battlefield.
 {3}, {t}: put a +1/+1 counter on target creature.
 {3}, {t}: put a charge counter on @.
 {3}, {t}: put a hatchling counter on @.
@@ -572,6 +578,7 @@
 {4}, {t}: draw a card.
 {4}, {t}, exile @: exile target creature.
 {4}, {t}: put a 0/1 white goat creature token onto the battlefield.
+{4}, {t}: put a 1/1 colorless gnome artifact creature token onto the battlefield.
 {4}, {t}: put a -1/-1 counter on target creature.
 {4}, {t}: put a charge counter on @.
 {4}, {t}: put a divinity counter on target permanent other than @.
@@ -587,6 +594,7 @@
 {4}{w}: @ gets +1/+2 until end of turn.
 {4}{w}, {t}, sacrifice @: return target artifact card from your graveyard to the battlefield.
 {5}{g}: regenerate @.
+{5}: put a 1/1 colorless myr artifact creature token onto the battlefield.
 {5}{r}: @ deals 6 damage to each other creature with flying.
 {5}{r}{r}: put a 5/5 red dragon creature token with flying onto the battlefield.
 {5}, {t}: destroy target creature with flying.
@@ -594,11 +602,13 @@
 {5}, {t}: draw a card.
 {5}, {t}: draw two cards, then discard a card.
 {5}, {t}: return target enchantment card from your graveyard to your hand.
+{5}, {t}, sacrifice @: put a 3/4 colorless gargoyle artifact creature token with flying onto the battlefield.
 {5}, {t}, sacrifice @: return target card from your graveyard to your hand.
 {7}{b}: target creature gets -3/-3 until end of turn.
 {7}{g}: @ gets +5/+5 until end of turn.
 {7}{r}: @ deals 5 damage to target player.
 {7}, {t}: exile target creature you don't control.
+{7}, {t}: put a 2/2 colorless assembly-worker artifact creature token onto the battlefield.
 {7}{u}: @ gets +3/+3 and gains flying until end of turn.
 {7}{w}: you gain 5 life.
 {8}: creatures you control gain flying until end of turn.
@@ -1960,6 +1970,7 @@ put three 1/1 white soldier creature tokens onto the battlefield.
 put three 1/1 white spirit creature tokens with flying onto the battlefield.
 put three 6/6 green wurm creature tokens onto the battlefield.
 put two 1/1 blue merfolk wizard creature tokens onto the battlefield.
+put two 1/1 colorless myr artifact creature tokens onto the battlefield.
 put two 1/1 green insect creature tokens with infect onto the battlefield.
 put two 1/1 green snake creature tokens onto the battlefield.
 put two 1/1 green squirrel creature tokens onto the battlefield.
@@ -2017,6 +2028,7 @@ remove a shield counter from @: prevent the next 1 damage that would be dealt to
 remove five fuse counters from @, sacrifice @: @ deals 20 damage to target player.
 remove three charge counters from @: @ becomes a 6/6 construct artifact creature with trample until end of turn.
 remove three charge counters from @: draw a card.
+remove three charge counters from @: put a 3/3 colorless golem artifact creature token onto the battlefield.
 remove three spore counters from @: @ deals 1 damage to target creature or player.
 remove three spore counters from @: prevent all combat damage that would be dealt this turn.
 remove three spore counters from @: put a 1/1 green saproling creature token onto the battlefield.
@@ -2568,6 +2580,7 @@ totem armor
 {t}: prevent the next 2 damage that would be dealt to target creature this turn.
 {t}: prevent the next 3 damage that would be dealt to target creature or player this turn.
 {t}: prevent the next 4 damage that would be dealt to target creature or player this turn.
+{t}: put a 1/1 colorless myr artifact creature token onto the battlefield.
 {t}: put a +1/+1 counter on @.
 {t}: put a +1/+1 counter on each artifact creature you control.
 {t}: put a -1/-1 counter on target creature.
@@ -2593,6 +2606,7 @@ trample
 {t}, remove a devotion counter from @: you gain 1 life.
 {t}, remove a javelin counter from @: @ deals 1 damage to target creature or player.
 {t}, remove three charge counters from @: destroy target permanent.
+{t}, remove three charge counters from @: put a 9/9 colorless golem artifact creature token onto the battlefield.
 {t}, remove x charge counters from @: target creature gets -x/-x until end of turn.
 {t}: return target legendary creature to its owner's hand.
 {t}, sacrifice a creature: @ deals 1 damage to target creature or player.
@@ -2754,6 +2768,7 @@ until end of turn, target creature you control gets +3/+3 and other creatures yo
 {u}, {t}, discard a card: you may tap or untap target artifact, creature, or land.
 {u}, {t}: draw a card, then discard a card.
 {u}, {t}: draw two cards.
+{u}, {t}: put a 0/1 blue homunculus artifact creature token onto the battlefield.
 {u}, {t}: put target creature you control on top of its owner's library.
 {u}, {t}: return target permanent you control to its owner's hand.
 {u}, {t}, sacrifice a creature or enchantment: counter target spell.
@@ -2829,6 +2844,7 @@ when @ dies, it deals 2 damage to target creature or player.
 when @ dies, it deals 2 damage to you.
 when @ dies, it deals 3 damage to target creature or player.
 when @ dies, it deals 5 damage to each creature without flying.
+when @ dies, put a 1/1 colorless myr artifact creature token onto the battlefield.
 when @ dies, put a 1/1 green saproling creature token onto the battlefield.
 when @ dies, put a 1/1 white spirit creature token with flying onto the battlefield.
 when @ dies, put a 2/1 black cat creature token onto the battlefield.
@@ -2959,9 +2975,11 @@ when @ enters the battlefield, put a 1/1 white human creature token onto the bat
 when @ enters the battlefield, put a 1/1 white soldier creature token onto the battlefield.
 when @ enters the battlefield, put a 2/2 black zombie creature token onto the battlefield.
 when @ enters the battlefield, put a 2/2 white knight creature token with vigilance onto the battlefield.
+when @ enters the battlefield, put a 3/3 colorless golem artifact creature token onto the battlefield.
 when @ enters the battlefield, put a 4/4 red dragon creature token with flying onto the battlefield.
 when @ enters the battlefield, put a 5/5 green wurm creature token with trample onto the battlefield.
 when @ enters the battlefield, put a creature you control on top of its owner's library.
+when @ enters the battlefield, put four 1/1 colorless myr artifact creature tokens onto the battlefield.
 when @ enters the battlefield, put four 1/1 green insect creature tokens with flying and deathtouch onto the battlefield.
 when @ enters the battlefield, put four 1/1 green squirrel creature tokens onto the battlefield.
 when @ enters the battlefield, put six +1/+1 counters on enchanted creature.
@@ -2983,6 +3001,7 @@ when @ enters the battlefield, put two 1/1 red goblin creature tokens onto the b
 when @ enters the battlefield, put two 1/1 white soldier creature tokens onto the battlefield.
 when @ enters the battlefield, put two 1/1 white spirit creature tokens with flying onto the battlefield.
 when @ enters the battlefield, put two 3/1 red elemental shaman creature tokens onto the battlefield.
+when @ enters the battlefield, put two 3/3 colorless golem artifact creature tokens onto the battlefield.
 when @ enters the battlefield, return a black or red creature you control to its owner's hand.
 when @ enters the battlefield, return a blue or black creature you control to its owner's hand.
 when @ enters the battlefield, return a creature you control to its owner's hand.
@@ -3269,6 +3288,7 @@ whenever you cast an artifact spell, draw a card.
 whenever you cast an artifact spell, you may draw a card. if you do, discard a card.
 whenever you cast an artifact spell, you may have target creature get +2/+0 and gain deathtouch until end of turn.
 whenever you cast an artifact spell, you may pay {1}. if you do, @ deals 1 damage to target creature or player.
+whenever you cast an artifact spell, you may pay {1}. if you do, put a 1/1 colorless myr artifact creature token onto the battlefield.
 whenever you cast an artifact spell, you may pay {1}. if you do, you gain 3 life.
 whenever you cast an artifact spell, you may put a charge counter on @.
 whenever you cast an artifact spell, you may untap target creature.
