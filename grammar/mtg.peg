@@ -96,6 +96,7 @@ Action
     / MillAction
     / ReanimateAction
     / PoisonAction
+    / PTStatic
     ;
 
 Keyword
@@ -164,10 +165,6 @@ Keyword
     / "@ attacks each turn if able."
     / "@ is indestructible."
     / "@ can't be countered."
-    ;
-
-SacrificeAction
-    = "sacrifice" "s"? SPACE SelectPermanent (SPACE "unless you" SPACE Action)?
     ;
 
 ColorlessCost
@@ -258,6 +255,14 @@ DamageReceiver
 
 AttacksTrigger
     = "whenever @ attacks"
+    ;
+
+PTStatic
+    = "@'s power and toughness are each equal to the number of " SelectPermanent
+    ;
+
+SacrificeAction
+    = "sacrifice" "s"? SPACE SelectPermanent (SPACE "unless you" SPACE Action)?
     ;
 
 PoisonAction
