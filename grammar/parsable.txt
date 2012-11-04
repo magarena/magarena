@@ -765,6 +765,7 @@ at the beginning of your upkeep, you may pay {1}. if you do, untap @.
 at the beginning of your upkeep, you may pay {2}. if you do, untap @.
 at the beginning of your upkeep, you may pay {4}. if you do, untap @.
 at the beginning of your upkeep, you may pay {u}{u}{u}. if you do, untap @.
+at the beginning of your upkeep, you may put a 1/1 black and green worm creature token onto the battlefield.
 at the beginning of your upkeep, you may put a +1/+1 counter on @.
 at the beginning of your upkeep, you may put a +1/+1 counter on target creature you control.
 at the beginning of your upkeep, you may put a 1/1 green squirrel creature token onto the battlefield.
@@ -1577,6 +1578,7 @@ golem creatures you control have flying.
 golem creatures you control have trample.
 golem creatures you control have vigilance.
 green creatures and white creatures can't block this turn.
+green creatures and white creatures have protection from gorgons.
 green creatures have forestwalk.
 green creatures you control gain forestwalk until end of turn.
 green creatures you control get +0/+2.
@@ -1854,13 +1856,22 @@ prevent the next 4 damage that would be dealt to target creature or player this 
 prevent the next x damage that would be dealt to you this turn.
 protection from all colors
 protection from artifacts
+protection from beasts
 protection from black
 protection from blue
+protection from clerics
 protection from creatures
+protection from demons
+protection from dragons
 protection from everything
+protection from goblins
 protection from green
+protection from kavu
 protection from red
+protection from spirits
+protection from vampires
 protection from white
+protection from zombies
 put a 1/1 black rat creature token onto the battlefield.
 put a -1/-1 counter on each attacking creature.
 put a +1/+1 counter on each creature you control.
@@ -1876,6 +1887,7 @@ put a 3/3 green centaur creature token onto the battlefield.
 put a 3/3 green elephant creature token onto the battlefield.
 put a 4/4 green beast creature token onto the battlefield.
 put a 4/4 red giant creature token onto the battlefield.
+put a 5/5 blue and red elemental creature token with flying onto the battlefield.
 put a 6/6 green wurm creature token onto the battlefield.
 put a token that's a copy of target creature onto the battlefield.
 put four +1/+1 counters on each creature you control.
@@ -2899,6 +2911,7 @@ when @ enters the battlefield, put three -1/-1 counters on target creature.
 when @ enters the battlefield, put three 1/1 red goblin creature tokens onto the battlefield.
 when @ enters the battlefield, put three 1/1 white soldier creature tokens onto the battlefield.
 when @ enters the battlefield, put two 1/1 black bat creature tokens with flying onto the battlefield.
+when @ enters the battlefield, put two 1/1 green and blue snake creature tokens onto the battlefield.
 when @ enters the battlefield, put two 1/1 green saproling creature tokens onto the battlefield.
 when @ enters the battlefield, put two 1/1 red goblin creature tokens onto the battlefield.
 when @ enters the battlefield, put two 1/1 white soldier creature tokens onto the battlefield.

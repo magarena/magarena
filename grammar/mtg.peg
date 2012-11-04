@@ -98,6 +98,7 @@ Action
     / PoisonAction
     / SetPTAction
     / ChangeStateAction
+    / AnimateAction
     ;
 
 Keyword
@@ -129,6 +130,7 @@ Keyword
     / "persist"
     / "protection from all colors"
     / "protection from " Color
+    / "protection from " Tribal 
     / "protection from artifacts"
     / "protection from creatures"
     / "protection from everything"
@@ -249,6 +251,10 @@ AttacksTrigger
     = "whenever @ attacks"
     ;
 
+AnimateAction
+    = SelectPermanent " becomes a " CreatureSpec " creature"
+    ;
+
 ChangeStateAction
     = (SelectPermanent SPACE)? "can't attack or block" 
     / (SelectPermanent SPACE)? "can't attack" 
@@ -294,9 +300,13 @@ ShuffleAction
     ;
 
 PutTokenAction
-    = "put a " PowerToughness SPACE Color SPACE CreatureType " creature token " ("with " Keyword SPACE)? "onto the battlefield"
-    / "put " Count SPACE PowerToughness SPACE Color SPACE CreatureType " creature tokens " ("with " Keyword SPACE)? "onto the battlefield"
+    = "put a " CreatureSpec  " creature token " ("with " Keyword SPACE)? "onto the battlefield"
+    / "put " Count SPACE CreatureSpec " creature tokens " ("with " Keyword SPACE)? "onto the battlefield"
     / "put a token that's a copy of " SelectPermanent " onto the battlefield"
+    ;
+
+CreatureSpec
+    = PowerToughness SPACE ColorSpec SPACE CreatureType
     ;
 
 ControlAction
@@ -667,11 +677,16 @@ RestrictedSpell
     = (SpellRestriction SPACE)? Spell (SPACE SpellRestriction)?
     ;
 
-SpellRestriction
+ColorSpec
     = Color (", " Color)+ ", or " Color
     / Color " or " Color
+    / Color " and " Color
     / Color
     / "non" Color
+    ;
+
+SpellRestriction
+    = ColorSpec
     / "creature"
     / "multicolored"
     / "noncreature"
@@ -705,10 +720,7 @@ RestrictedCreature
     ;
 
 PermanentRestriction
-    = Color (", " Color)+ ", or " Color
-    / Color " or " Color
-    / Color
-    / "non" Color
+    = ColorSpec
     / "tapped"
     / "untapped"
     / "noncreature"
