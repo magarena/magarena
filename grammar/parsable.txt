@@ -1620,6 +1620,7 @@ other black creatures get -1/-1.
 other black creatures get +1/+1.
 other black creatures you control get +1/+1.
 other blue creatures you control get +1/+1.
+other creatures are 1/1.
 other creatures you control get +0/+1.
 other creatures you control get +0/+2 and have vigilance.
 other creatures you control get -1/-1.
