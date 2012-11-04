@@ -16,6 +16,8 @@
 {1}{b}{b}, {t}: destroy target tapped nonblack creature.
 {1}{b}, discard a card: @ gets +2/+2 until end of turn.
 {1}{b}, discard a card: regenerate @.
+{1}: @ becomes a 1/1 blinkmoth artifact creature with flying until end of turn. it's still a land.
+{1}: @ becomes a 2/2 assembly-worker artifact creature until end of turn. it's still a land.
 {1}{b}: enchanted creature gets +2/+2 until end of turn.
 {1}{b}: @ gets +1/+0 until end of turn.
 {1}{b}: @ gets +1/+1 until end of turn.
@@ -45,6 +47,7 @@
 {1}{g}: add one mana of any color to your mana pool.
 {1}: @ gains first strike until end of turn.
 {1}{g}: all creatures get -1/-0 until end of turn.
+{1}{g}: @ becomes a 3/3 green ape creature with trample until end of turn. it's still a land.
 {1}{g}: @ deals 1 damage to target creature with flying.
 {1}: @ gets +0/+1 until end of turn.
 {1}: @ gets +1/+0 until end of turn.
@@ -86,6 +89,7 @@
 {1}, pay 2 life: @ deals 1 damage to target creature or player.
 {1}: prevent the next 1 damage that would be dealt to target creature you control this turn.
 {1}: prevent the next 1 damage that would be dealt to @ this turn.
+{1}{r}: @ becomes a 2/1 red warrior creature with first strike until end of turn. it's still a land.
 {1}{r}: @ deals 1 damage to each creature without flying.
 {1}{r}: @ deals 1 damage to target creature.
 {1}{r}: @ deals 1 damage to target creature or player.
@@ -205,7 +209,9 @@
 {1}, {t}: untap target land.
 {1}, {t}: you gain 1 life.
 {1}{u}: @ becomes a 1/2 blue atog artifact creature until end of turn.
+{1}{u}: @ becomes a 2/1 blue faerie creature with flying until end of turn. it's still a land.
 {1}{u}{b}, {t}: target player puts the top three cards of his or her library into his or her graveyard.
+{1}{u}{b}: until end of turn, @ becomes a 3/2 blue and black elemental creature and is unblockable. it's still a land.
 {1}{u}: counter target red spell.
 {1}{u}, discard a card: draw a card.
 {1}{u}, discard a card: return @ to its owner's hand.
@@ -234,6 +240,7 @@
 {1}{u}{u}: @ gains shroud until end of turn.
 {1}{u}{u}, sacrifice a creature: counter target creature spell.
 {1}{u}{u}: target creature gains flying until end of turn.
+{1}{w}: @ becomes a 1/5 white soldier creature until end of turn. it's still a land.
 {1}{w}{b}, {t}: destroy target creature or enchantment.
 {1}{w}: creatures you control get +1/+1 until end of turn.
 {1}{w}: @ gains first strike until end of turn.
@@ -298,6 +305,9 @@
 {2}: discard a card.
 {2}, discard a card at random: @ deals 2 damage to target creature or player.
 {2}, discard a card: put a 1/1 white pegasus creature token with flying onto the battlefield.
+{2}: enchanted forest becomes a 4/4 green spirit creature until end of turn. it's still a land.
+{2}: enchanted island becomes a 3/2 blue spirit creature with flying until end of turn. it's still a land.
+{2}: enchanted mountain becomes a 6/1 red spirit creature until end of turn. it's still a land.
 {2}: equipped creature gains hexproof until end of turn.
 {2}: @ gains first strike until end of turn.
 {2}: @ gains flying until end of turn.
@@ -538,6 +548,7 @@
 {3}: you may tap or untap equipped creature.
 {4}{b}{b}: exile target creature and put a +1/+1 counter on @.
 {4}{b}{b}, {t}, sacrifice @: target creature gets -6/-6 until end of turn.
+{4}: @ becomes a 4/2 golem artifact creature until end of turn. it's still a land.
 {4}{b}, sacrifice a creature: return target creature card from your graveyard to your hand.
 {4}: @ gains flying until end of turn.
 {4}{g}: put a +1/+1 counter on target creature.
@@ -1621,6 +1632,7 @@ green creatures you control have trample.
 {g}: target creature gains trample until end of turn.
 {g}: target creature gets +1/+1 until end of turn.
 {g}: target creature loses flying until end of turn.
+{g}: target land becomes a 1/1 creature until end of turn. it's still a land.
 {g}, {t}, discard a card: prevent all combat damage that would be dealt this turn.
 {g}, {t}, discard a card: regenerate target creature.
 {g}, {t}, discard a card: target creature gets +2/+2 until end of turn.
@@ -2421,6 +2433,7 @@ target creature you control gets +1/+0 until end of turn and is unblockable this
 target creature you control gets +1/+1 and gains hexproof until end of turn.
 target creature you control gets +2/+0 until end of turn.
 target creature you don't control gets -4/-0 until end of turn.
+target land becomes a 3/3 creature until end of turn. it's still a land.
 target mountain becomes a 3/1 creature. it's still a land.
 target nonblack creature gets -1/-1 until end of turn.
 target opponent discards a card at random.
@@ -3290,6 +3303,7 @@ whenever you cast a spirit or arcane spell, regenerate target creature.
 whenever you cast a spirit or arcane spell, target creature can't block this turn.
 whenever you cast a spirit or arcane spell, target creature gains fear until end of turn.
 whenever you cast a spirit or arcane spell, target creature gains flying until end of turn.
+whenever you cast a spirit or arcane spell, target land becomes a 3/3 creature until end of turn. it's still a land.
 whenever you cast a spirit or arcane spell, target opponent loses 1 life and you gain 1 life.
 whenever you cast a spirit or arcane spell, untap @.
 whenever you cast a spirit or arcane spell, you may destroy target nonbasic land.

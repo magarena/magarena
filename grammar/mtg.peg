@@ -99,6 +99,7 @@ Action
     / SetPTAction
     / ChangeStateAction
     / AnimateAction
+    / AnimateActionReminder
     ;
 
 Keyword
@@ -252,8 +253,11 @@ AttacksTrigger
     ;
 
 AnimateAction
-    = SelectPermanent " becomes a " CreatureSpec ". it's still a land"
-    / SelectPermanent " becomes a " CreatureSpec 
+    = SelectPermanent " becomes a " CreatureSpec
+    ;
+
+AnimateActionReminder
+    = "it's still a land"
     ;
 
 ChangeStateAction
