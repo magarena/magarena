@@ -151,6 +151,7 @@ Keyword
     / "vanishing" SPACE Number
     / "bloodthirst" SPACE Number
     / "buyback" SPACE ManaCost
+    / "echo" SPACE ManaCost
     / "kicker" SPACE ManaCost
     / "multikicker" SPACE ManaCost
     / "equip" SPACE ManaCost

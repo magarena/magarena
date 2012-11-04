@@ -1085,6 +1085,33 @@ each player sacrifices a creature.
 each player sacrifices a land.
 each player sacrifices an enchantment.
 each player sacrifices a permanent.
+echo {0}
+echo {1}{b}
+echo {1}{g}
+echo {1}{g}{g}
+echo {1}{r}
+echo {1}{r}{r}
+echo {2}{b}
+echo {2}{g}
+echo {2}{r}
+echo {2}{r}{r}
+echo {2}{u}
+echo {2}{w}{w}
+echo {3}
+echo {3}{g}
+echo {3}{g}{g}
+echo {3}{r}
+echo {3}{w}
+echo {3}{w}{w}
+echo {4}
+echo {4}{g}
+echo {4}{r}{r}
+echo {5}{g}
+echo {5}{r}
+echo {6}
+echo {g}
+echo {g}{g}
+echo {r}
 enchant artifact
 enchant artifact an opponent controls
 enchant artifact creature
