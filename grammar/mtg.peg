@@ -193,7 +193,7 @@ HybridSingleCost
     ;
 
 ManaCost
-    = ColorlessCost SingleColor*
+    = ColorlessCost+ SingleColor*
     / SingleColor+
     / HybridSingleCost+
     ;
