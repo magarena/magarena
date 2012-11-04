@@ -1380,6 +1380,10 @@ level up {u}
 level up {w}
 lifelink
 living weapon
+metalcraft — creatures you control get +3/+0 as long as you control three or more artifacts.
+metalcraft — @ gets +2/+2 as long as you control three or more artifacts.
+metalcraft — @ has double strike as long as you control three or more artifacts.
+metalcraft — @ has flying as long as you control three or more artifacts.
 miracle {1}{r}
 miracle {1}{u}
 miracle {g}

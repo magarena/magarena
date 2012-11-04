@@ -1,4 +1,8 @@
-MagicRule 
+Rule
+    = (AbilityWord " — ")? Ability
+    ;
+
+Ability
     = SpellEffect EOR
     / KeywordAbility EOR
     / ActivatedAbility EOR
@@ -24,6 +28,10 @@ Optional
     / "you may"
     / "if you don't,"
     / "if you do,"
+    ;
+
+AbilityWord
+    = "metalcraft"
     ;
 
 KeywordAbility
@@ -399,6 +407,7 @@ Enchant
 Duration
     = "until end of turn"
     / "for as long as " SelectPlayer " control @"
+    / "as long as you control three or more artifacts"
     / "this turn"
     ;
 
