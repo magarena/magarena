@@ -535,6 +535,7 @@ SelectSpell
 RestrictedPermanentCombination
     = RestrictedPermanent ", " RestrictedPermanent ", or " RestrictedPermanent
     / RestrictedPermanent ", " RestrictedPermanent ", and " RestrictedPermanent
+    / RestrictedPermanent ", " RestrictedPermanent ", " RestrictedPermanent
     / RestrictedPermanent " or " RestrictedPermanent
     / RestrictedPermanent " and " RestrictedPermanent
     / RestrictedPermanent 
@@ -883,7 +884,6 @@ CreatureType
     / "yeti"
     / "zombie"
     / "zubera"
-    / "non-vampire, non-werewolf, non-zombie"
     ;
 
 Creature
