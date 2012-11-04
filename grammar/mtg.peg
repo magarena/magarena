@@ -94,6 +94,7 @@ Action
     / PayManaAction
     / MillAction
     / ReanimateAction
+    / PoisonAction
     ;
 
 Keyword
@@ -254,6 +255,10 @@ DamageReceiver
 
 AttacksTrigger
     = "whenever @ attacks"
+    ;
+
+PoisonAction
+    = "gets " Count " poison counters"
     ;
 
 ReanimateAction

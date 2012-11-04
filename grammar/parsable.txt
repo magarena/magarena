@@ -2530,6 +2530,7 @@ whenever @ deals damage to a creature, put a +1/+1 counter on @.
 whenever @ deals damage to a creature, tap that creature and it doesn't untap during its controller's next untap step.
 whenever @ deals damage to a player, tap target land that player controls. that land doesn't untap during its controller's next untap step.
 whenever @ deals damage to a player, that player discards a card.
+whenever @ deals damage to a player, that player gets two poison counters.
 whenever @ deals damage to a player, you may draw a card.
 whenever @ deals damage, you gain that much life.
 whenever @ deals damage, you lose that much life.
