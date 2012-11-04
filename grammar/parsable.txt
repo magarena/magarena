@@ -22,6 +22,7 @@
 {1}{b}, pay 2 life: return target creature card from your graveyard to your hand.
 {1}{b}: put a -1/-1 counter on enchanted creature.
 {1}{b}: regenerate @.
+{1}{b}: regenerate target zombie.
 {1}{b}, remove a +1/+1 counter from @: all other creatures get -1/-1 until end of turn.
 {1}{b}, sacrifice a creature: regenerate @.
 {1}{b}, sacrifice a land: target creature gets +2/+0 until end of turn.
@@ -1482,6 +1483,9 @@ other spirit creatures you control get +0/+1.
 other spirit creatures you control get +1/+0.
 other white creatures get +1/+1.
 other white creatures you control get +1/+1.
+other zombie creatures get +1/+1.
+other zombie creatures have swampwalk.
+other zombie creatures you control get +1/+1.
 pay 1 life: draw a card.
 pay 1 life: @ gets +1/+1 until end of turn.
 pay 1 life: @ gets +2/-1 until end of turn.
@@ -1654,6 +1658,7 @@ return @ to its owner's hand: regenerate target creature.
 {r}, sacrifice a creature: @ deals 1 damage to target player.
 {r}, sacrifice a land: @ deals 1 damage to each creature without flying.
 {r}, sacrifice an artifact: @ gets +3/+0 until end of turn.
+{r}, sacrifice a zombie: @ deals 2 damage to target creature or player.
 {r}, sacrifice @: @ deals 1 damage to each creature without flying.
 {r}, sacrifice @: @ deals 2 damage to each creature.
 {r}, sacrifice @: @ deals 2 damage to target creature or player.
@@ -2841,3 +2846,4 @@ you gain x life and draw x cards.
 you may tap or untap target artifact, creature, or land.
 you may tap or untap target creature.
 you may tap or untap target permanent.
+zombie creatures you control get +2/+1.
