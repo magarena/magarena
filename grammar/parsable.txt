@@ -22,6 +22,7 @@
 {1}{b}: @ gets +2/+2 until end of turn.
 {1}{b}{g}: regenerate @.
 {1}{b}{g}: target creature gets +1/+1 and gains intimidate until end of turn.
+{1}{b}{g}, {t}: target forest becomes a 4/4 black and green elemental horror creature. it's still a land.
 {1}{b}, pay 2 life: return target creature card from your graveyard to your hand.
 {1}{b}: put a -1/-1 counter on enchanted creature.
 {1}{b}: regenerate @.
@@ -79,6 +80,7 @@
 {1}{g}, {t}: target creature gets -2/-0 until end of turn.
 {1}{g}, {t}: target creature gets +4/+4 until end of turn.
 {1}{g}{u}: creatures you control gain shroud until end of turn.
+{1}{g}{w}: until end of turn, @ becomes a 3/4 green and white elemental creature with reach. it's still a land.
 {1}: @ loses flying until end of turn.
 {1}, pay 1 life: draw a card, then discard a card.
 {1}, pay 2 life: @ deals 1 damage to target creature or player.
@@ -2419,6 +2421,7 @@ target creature you control gets +1/+0 until end of turn and is unblockable this
 target creature you control gets +1/+1 and gains hexproof until end of turn.
 target creature you control gets +2/+0 until end of turn.
 target creature you don't control gets -4/-0 until end of turn.
+target mountain becomes a 3/1 creature. it's still a land.
 target nonblack creature gets -1/-1 until end of turn.
 target opponent discards a card at random.
 target opponent discards a card at random, then discards a card.
