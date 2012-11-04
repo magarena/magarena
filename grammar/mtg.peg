@@ -573,6 +573,8 @@ SpellRestriction
     / "artifact"
     / "during an opponent's turn"
     / "instant or sorcery"
+    / "instant"
+    / "sorcery"
     / "with infect"
     / "with converted mana cost " Number " or less"
     / "with converted mana cost " Number " or greater"
@@ -584,12 +586,8 @@ RestrictedCard
     ;
 
 CardRestriction
-    = "creature"
-    / "artifact"
-    / "instant or sorcery"
-    / "instant"
-    / "sorcery"
-    / "exiled"
+    = "exiled"
+    / SpellRestriction
     ;
 
 RestrictedCreature

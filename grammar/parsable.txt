@@ -269,6 +269,7 @@
 {2}{g}: target beast creature gets +1/+1 until end of turn.
 {2}{g}: target elf creature gains forestwalk until end of turn.
 {2}{g}: target green creature gains protection from black until end of turn.
+{2}{g}, {t}: return target enchantment card from your graveyard to your hand.
 {2}{g}, {t}: target creature gets +2/+2 until end of turn.
 {2}{g}, {t}: untap target creature.
 {2}{g}{w}: target creature gets +3/+3 until end of turn. untap that creature.
@@ -428,6 +429,7 @@
 {3}, {t}, sacrifice @: @ deals damage equal to the number of charge counters on it to target creature or player.
 {3}, {t}, sacrifice @: destroy target land.
 {3}, {t}, sacrifice @: draw three cards.
+{3}, {t}, sacrifice @: return all enchantment cards from your graveyard to your hand.
 {3}, {t}: tap target creature, then return @ to its owner's hand.
 {3}, {t}: target creature gains first strike until end of turn.
 {3}, {t}: target creature gains trample until end of turn.
@@ -487,6 +489,7 @@
 {5}, {t}: discard a card at random, then draw two cards.
 {5}, {t}: draw a card.
 {5}, {t}: draw two cards, then discard a card.
+{5}, {t}: return target enchantment card from your graveyard to your hand.
 {5}, {t}, sacrifice @: return target card from your graveyard to your hand.
 {7}{b}: target creature gets -3/-3 until end of turn.
 {7}{g}: @ gets +5/+5 until end of turn.
@@ -749,10 +752,12 @@ counter target creature spell.
 counter target creature spell. its controller loses 1 life.
 counter target instant or sorcery spell.
 counter target instant or sorcery spell unless its controller pays {1}.
+counter target instant spell.
 counter target noncreature spell.
 counter target noncreature spell. its controller loses 2 life.
 counter target noncreature spell unless its controller pays {2}.
 counter target red or green spell.
+counter target sorcery spell.
 counter target spell.
 counter target spell and @ deals 3 damage to target creature.
 counter target spell. its controller discards a card.
@@ -1579,6 +1584,7 @@ replicate {3}{u}
 replicate {r}
 replicate {u}
 replicate {u}{r}
+return all enchantment cards from your graveyard to the battlefield.
 return target artifact card from your graveyard to the battlefield.
 return target artifact card from your graveyard to your hand.
 return target artifact, enchantment, or land to its owner's hand.
@@ -1594,7 +1600,9 @@ return target creature to its owner's hand.
 return target creature to its owner's hand. its controller draws a card.
 return target creature to its owner's hand. its controller loses 1 life.
 return target creature to its owner's hand. you gain 2 life.
+return target green card from your graveyard to your hand.
 return target instant or sorcery card from your graveyard to your hand.
+return target multicolored card from your graveyard to your hand.
 return target permanent to its owner's hand.
 return target permanent to its owner's hand. its controller loses 3 life.
 return target permanent you control to its owner's hand.
@@ -2077,6 +2085,7 @@ trample
 {t}, sacrifice @: exile target black creature.
 {t}, sacrifice @: exile target red creature.
 {t}, sacrifice @: return target artifact card from your graveyard to your hand.
+{t}, sacrifice @: return target enchantment card from your graveyard to your hand.
 {t}, sacrifice @: target attacking creature without flying gets -1/-2 until end of turn.
 {t}, sacrifice @: target creature gains flying until end of turn.
 {t}, sacrifice @: target creature gets -1/-1 until end of turn.
@@ -2370,6 +2379,7 @@ when @ enters the battlefield, return target artifact or enchantment to its owne
 when @ enters the battlefield, return target creature an opponent controls to its owner's hand.
 when @ enters the battlefield, return target creature card from your graveyard to the battlefield.
 when @ enters the battlefield, return target creature to its owner's hand.
+when @ enters the battlefield, return target enchantment card from your graveyard to your hand.
 when @ enters the battlefield, return target instant or sorcery card from your graveyard to your hand.
 when @ enters the battlefield, return target land to its owner's hand.
 when @ enters the battlefield, return target permanent to its owner's hand.
@@ -2378,6 +2388,7 @@ when @ enters the battlefield, sacrifice a land.
 when @ enters the battlefield, sacrifice all creatures you control.
 when @ enters the battlefield, sacrifice it unless you discard a card at random.
 when @ enters the battlefield, sacrifice it unless you discard a creature card.
+when @ enters the battlefield, sacrifice it unless you discard a noncreature card.
 when @ enters the battlefield, sacrifice it unless you pay {1}.
 when @ enters the battlefield, sacrifice it unless you return an enchantment to its owner's hand.
 when @ enters the battlefield, sacrifice it unless you sacrifice a land.
@@ -2451,6 +2462,7 @@ when @ enters the battlefield, you may return target artifact card from your gra
 when @ enters the battlefield, you may return target card from your graveyard to your hand.
 when @ enters the battlefield, you may return target creature card from your graveyard to your hand.
 when @ enters the battlefield, you may return target creature to its owner's hand.
+when @ enters the battlefield, you may return target enchantment card from your graveyard to your hand.
 when @ enters the battlefield, you may return target instant card from your graveyard to your hand.
 when @ enters the battlefield, you may return target instant or sorcery card from your graveyard to your hand.
 when @ enters the battlefield, you may return target land to its owner's hand.
@@ -2617,6 +2629,7 @@ whenever you cast an instant or sorcery spell, @ gets +4/+0 until end of turn.
 whenever you cast an instant or sorcery spell, you may put a charge counter on @.
 whenever you cast an instant or sorcery spell, you may put a charge counter on @. if you do, @ deals damage equal to the number of charge counters on it to target creature or player.
 whenever you cast an instant or sorcery spell, you may untap @.
+whenever you cast an instant spell, you may pay {1}. if you do, draw a card.
 whenever you cast a noncreature spell, counter that spell unless you sacrifice a creature.
 whenever you cast a red spell, @ deals 1 damage to each creature without flying.
 whenever you cast a red spell, @ deals 3 damage to target player.
