@@ -321,6 +321,7 @@ SelectPlayer
     / "you"
     / "he or she"
     / "its controller"
+    / "its owner"
     / "player"
     ;
 

@@ -575,6 +575,7 @@ at the beginning of your upkeep, @ deals 5 damage to target creature or player.
 at the beginning of your upkeep, destroy all artifacts and enchantments. they can't be regenerated.
 at the beginning of your upkeep, draw a card.
 at the beginning of your upkeep, each player discards a card.
+at the beginning of your upkeep, enchanted creature deals 1 damage to its owner.
 at the beginning of your upkeep, put a +1/+1 counter on @.
 at the beginning of your upkeep, put a -1/-1 counter on each creature.
 at the beginning of your upkeep, put a +1/+1 counter on each creature each opponent controls.
@@ -967,6 +968,7 @@ destroy target creature an opponent controls. each other creature that player co
 destroy target creature. it can't be regenerated.
 destroy target creature. its controller discards a card.
 destroy target creature. its controller loses 2 life.
+destroy target creature. its owner gains 4 life.
 destroy target creature or enchantment.
 destroy target creature or land.
 destroy target creature or land. it can't be regenerated.
