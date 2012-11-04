@@ -7,6 +7,7 @@
 {0}: @ loses flying.
 {0}: regenerate enchanted creature.
 {0}: return @ to its owner's hand.
+{0}: tap all lands you control. @ becomes a 3/3 turtle artifact creature until end of turn.
 {1}: add {b} to your mana pool.
 {1}: add {r} or {w} to your mana pool.
 {1}{b}{b}: @ gets -3/-0 and gains forestwalk until end of turn.
@@ -101,6 +102,7 @@
 {1}: return target land you control to its owner's hand.
 {1}: return @ to its owner's hand.
 {1}{r}: @ gains first strike until end of turn.
+{1}{r}{g}: @ becomes a 4/4 juggernaut artifact creature until end of turn.
 {1}{r}: @ gets +1/+0 until end of turn.
 {1}{r}: @ gets +2/+0 until end of turn.
 {1}{r}: @ gets +3/-3 until end of turn.
@@ -200,6 +202,7 @@
 {1}, {t}: untap target creature.
 {1}, {t}: untap target land.
 {1}, {t}: you gain 1 life.
+{1}{u}: @ becomes a 1/2 blue atog artifact creature until end of turn.
 {1}{u}{b}, {t}: target player puts the top three cards of his or her library into his or her graveyard.
 {1}{u}: counter target red spell.
 {1}{u}, discard a card: draw a card.
@@ -268,11 +271,13 @@
 {1}{w}{w}: target knight creature gets +1/+1 until end of turn.
 {1}{w}{w}, {t}: return target creature an opponent controls to its owner's hand.
 {1}{w}{w}, {t}: target creature gains vigilance until end of turn.
+{2}{b}: @ becomes a 5/5 black horror artifact creature with trample until end of turn.
 {2}{b}{b}: put a -1/-1 counter on target creature.
 {2}{b}{b}: target creature gets -1/-1 until end of turn. put a +1/+1 counter on @.
 {2}{b}, discard a card: @ gains fear until end of turn.
 {2}{b}, discard a card: target opponent loses 1 life and you gain 1 life.
 {2}{b}: each player loses 1 life.
+{2}: @ becomes a 2/2 golem artifact creature until end of turn.
 {2}{b}: @ gains deathtouch until end of turn.
 {2}{b}: @ gains lifelink until end of turn.
 {2}{b}: @ gets +1/+1 until end of turn.
@@ -297,6 +302,7 @@
 {2}: @ gains mountainwalk until end of turn.
 {2}: @ gains trample until end of turn.
 {2}: @ gets +1/+0 until end of turn.
+{2}{g}{g}{g}: @ becomes a 5/3 green treefolk artifact creature with trample until end of turn.
 {2}{g}{g}{g}: creatures you control get +3/+3 and gain trample until end of turn.
 {2}{g}{g}{g}: elf creatures you control get +3/+3 and gain trample until end of turn.
 {2}{g}{g}: put a 3/3 green centaur creature token onto the battlefield.
@@ -407,6 +413,7 @@
 {2}{u}, discard a card: return @ to its owner's hand.
 {2}{u}: draw a card, then put a +1/+1 counter on @.
 {2}: untap target artifact creature.
+{2}: until end of turn, @ becomes a 2/1 construct artifact creature with flying.
 {2}{u}: return target white or black creature you control to its owner's hand.
 {2}{u}, sacrifice a land: draw a card.
 {2}{u}: tap target creature with flying.
@@ -443,6 +450,8 @@
 {3}{b}{b}, sacrifice a bat: put two 1/1 black bat creature tokens with flying onto the battlefield.
 {3}{b}: destroy enchanted land.
 {3}{b}, discard a card: target creature gets -2/-2 until end of turn.
+{3}: @ becomes a 1/5 spirit artifact creature with flying until end of turn.
+{3}: @ becomes a 2/2 beast artifact creature until end of turn.
 {3}{b}: @ gains deathtouch until end of turn.
 {3}{b}: regenerate @.
 {3}{b}{r}, {t}: @ deals 2 damage to target player.
@@ -534,6 +543,7 @@
 {4}{g}{w}: put a 3/3 green centaur creature token onto the battlefield.
 {4}: @ loses defender until end of turn.
 {4}: put a pressure counter on @.
+{4}{r}: @ becomes a 4/4 red giant artifact creature with trample until end of turn.
 {4}, return a land you control to its owner's hand: draw a card.
 {4}{r}: exile @.
 {4}{r}, {t}, sacrifice a creature: @ deals 2 damage to target creature or player.
@@ -820,6 +830,7 @@ beasts can't block.
 {b}: @ gains flying until end of turn.
 {b}: @ gains haste until end of turn.
 {b}: @ gains infect until end of turn.
+{b}{g}: @ becomes a 2/2 black and green insect artifact creature with deathtouch until end of turn.
 {b}: @ gets +1/+0 until end of turn.
 {b}: @ gets +1/-1 until end of turn.
 {b}: @ gets +1/+1 until end of turn.
@@ -847,6 +858,7 @@ blue creatures get +1/+1.
 {b}, pay 2 life: draw a card.
 {b}, pay 5 life: regenerate @.
 {b}, put a -1/-1 counter on a creature you control: prevent the next 2 damage that would be dealt to target player this turn.
+{b}{r}: @ becomes a 3/1 black and red devil artifact creature with first strike until end of turn.
 {b}{r}: dragon creatures get +1/+1 until end of turn.
 {b}{r}: each player loses 1 life.
 {b}: regenerate @.
@@ -1628,6 +1640,7 @@ green creatures you control have trample.
 {g}, {t}: untap target elf.
 {g/u}: @ gains shroud until end of turn.
 {g}{u}: put @ on top of its owner's library.
+{g}{w}: @ becomes a 3/3 green and white wolf artifact creature until end of turn.
 {g/w}{g/w}: @ gets +1/+1 until end of turn.
 {g}{w}, sacrifice @: regenerate each creature you control.
 {g/w}, {t}, sacrifice @: destroy target enchantment.
@@ -1974,6 +1987,7 @@ remove a healing counter from @: prevent the next 1 damage that would be dealt t
 remove a healing counter from @: prevent the next 1 damage that would be dealt to @ this turn.
 remove a shield counter from @: prevent the next 1 damage that would be dealt to you this turn.
 remove five fuse counters from @, sacrifice @: @ deals 20 damage to target player.
+remove three charge counters from @: @ becomes a 6/6 construct artifact creature with trample until end of turn.
 remove three charge counters from @: draw a card.
 remove three spore counters from @: @ deals 1 damage to target creature or player.
 remove three spore counters from @: prevent all combat damage that would be dealt this turn.
@@ -2692,6 +2706,7 @@ until end of turn, target creature you control gets +3/+3 and other creatures yo
 {u/r}: @ gains flying until end of turn.
 {u}{r}: @ gains flying until end of turn.
 {u/r}: @ gets +1/-1 until end of turn.
+{u}{r}: until end of turn, @ becomes a 2/1 blue and red elemental artifact creature.
 {u}, sacrifice a creature: discard a card, then draw a card.
 {u}, sacrifice @: counter target noncreature spell.
 {u}, sacrifice @: counter target spell unless its controller pays {2}.
@@ -2734,6 +2749,7 @@ vanishing 2
 vanishing 3
 vanishing 4
 vigilance
+{w}: @ becomes a 2/2 bird artifact creature with flying until end of turn.
 {w/b}: @ gains first strike until end of turn.
 {w/b}: @ gains flying until end of turn.
 {w}{b}, {t}: prevent all combat damage that would be dealt by target creature this turn.
@@ -3256,6 +3272,7 @@ whenever you cast a spell, you may pay {1}. if you do, @ deals 1 damage to targe
 whenever you cast a spell, you may put two +1/+1 counters on @.
 whenever you cast a spell, you may return @ to its owner's hand.
 whenever you cast a spell, you may untap @.
+whenever you cast a spirit or arcane spell, @ becomes a 4/4 spirit artifact creature until end of turn.
 whenever you cast a spirit or arcane spell, @ deals 1 damage to target creature.
 whenever you cast a spirit or arcane spell, @ deals 2 damage to each creature without flying.
 whenever you cast a spirit or arcane spell, each other creature you control gets +1/+1 and gains trample until end of turn.
@@ -3378,6 +3395,7 @@ wither
 {w}, {t}: target player gains 1 life.
 {w}, {t}: target soldier creature gets +1/+1 until end of turn.
 {w}, {t}: you gain 2 life.
+{w}{u}: @ becomes a 2/2 white and blue bird artifact creature with flying until end of turn.
 {w}{u}{b}{r}{g}: exile target permanent.
 {w}{u}{b}{r}{g}, remove five -1/-1 counters from @: target player draws three cards.
 {w}{u}: target creature gains flying until end of turn.

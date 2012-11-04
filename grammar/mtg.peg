@@ -252,7 +252,7 @@ AttacksTrigger
     ;
 
 AnimateAction
-    = SelectPermanent " becomes a " CreatureSpec " creature"
+    = SelectPermanent " becomes a " CreatureSpec 
     ;
 
 ChangeStateAction
@@ -300,13 +300,18 @@ ShuffleAction
     ;
 
 PutTokenAction
-    = "put a " CreatureSpec  " creature token " ("with " Keyword SPACE)? "onto the battlefield"
-    / "put " Count SPACE CreatureSpec " creature tokens " ("with " Keyword SPACE)? "onto the battlefield"
+    = "put a " CreatureTokenSpec " onto the battlefield"
+    / "put " Count SPACE CreatureTokenSpec " onto the battlefield"
     / "put a token that's a copy of " SelectPermanent " onto the battlefield"
     ;
 
+CreatureTokenSpec
+    = PowerToughness SPACE ColorSpec (SPACE CreatureType)* " creature token" "s"? (" with " Keyword)?
+    ;
+
 CreatureSpec
-    = PowerToughness SPACE ColorSpec (SPACE CreatureType)*
+    = PowerToughness (SPACE ColorSpec)? (SPACE CreatureType)* " creature" (" with " Keyword)?
+    / PowerToughness (SPACE ColorSpec)? (SPACE CreatureType)* " artifact creature" (" with " Keyword)?
     ;
 
 ControlAction
