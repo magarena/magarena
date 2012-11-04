@@ -187,6 +187,7 @@
 {1}{u}, discard a card: return @ to its owner's hand.
 {1}{u}: @ gains flying until end of turn.
 {1}{u}: @ gains shroud until end of turn.
+{1}{u}: @ is unblockable this turn.
 {1}: untap @.
 {1}: until end of turn, @ loses defender and gains flying.
 {1}{u}, {q}: @ gains flying until end of turn.
@@ -292,6 +293,7 @@
 {2}, remove a +1/+1 counter from @: return @ to its owner's hand.
 {2}, return a land you control to its owner's hand: draw a card, then discard a card.
 {2}, return a land you control to its owner's hand: tap target land.
+{2}, return a land you control to its owner's hand: target creature with power 2 or less is unblockable this turn.
 {2}, return a land you control to its owner's hand: target player puts the top two cards of his or her library into his or her graveyard.
 {2}, return a land you control to its owner's hand: untap target land.
 {2}{r}: @ gains first strike until end of turn.
@@ -348,6 +350,7 @@
 {2}, {t}: tap target creature.
 {2}, {t}: tap target noncreature artifact.
 {2}, {t}: target creature gains flying until end of turn.
+{2}, {t}: target creature with power 2 or less is unblockable this turn.
 {2}, {t}: target creature with power 3 or less gains flying until end of turn.
 {2}, {t}: target player puts the top two cards of his or her library into his or her graveyard.
 {2}, {t}: untap target attacking creature you control. prevent all combat damage that would be dealt to and dealt by that creature this turn.
@@ -483,6 +486,7 @@
 {4}, {t}, sacrifice a creature: @ deals 4 damage to target creature.
 {4}, {t}, sacrifice a land: @ deals 1 damage to target creature or player.
 {4}, {t}: tap target creature.
+{4}, {t}: target creature is unblockable this turn.
 {4}: untap @.
 {4}{u}: return @ to its owner's hand.
 {4}{w}: exile @.
@@ -1244,6 +1248,8 @@ enchanted creature has shroud.
 enchanted creature has swampwalk.
 enchanted creature has trample.
 enchanted creature has vigilance.
+enchanted creature is unblockable.
+enchanted creature is unblockable and has shroud.
 enchanted creature loses flying.
 enchanted creatures you control have shroud.
 enchanted land has shroud.
@@ -1351,6 +1357,7 @@ equipped creature has shroud.
 equipped creature has trample.
 equipped creature has vigilance.
 equipped creature is indestructible.
+equipped creature is unblockable and has shroud.
 exalted
 exile @.
 exile all creatures.
@@ -1682,6 +1689,7 @@ remove a +1/+1 counter from @: add {1} to your mana pool.
 remove a -1/-1 counter from @: add one mana of any color to your mana pool.
 remove a +1/+1 counter from @: @ deals 1 damage to target creature or player.
 remove a +1/+1 counter from @: @ gets +2/+2 until end of turn.
+remove a +1/+1 counter from @: @ is unblockable this turn.
 remove a +1/+1 counter from @: you gain 2 life.
 remove a charge counter from @: add one mana of any color to your mana pool.
 remove a charge counter from @: target creature gets +1/+1 until end of turn.
@@ -2084,6 +2092,7 @@ target creature gets +x/+0 until end of turn.
 target creature gets -x/-x until end of turn.
 target creature gets +x/+x until end of turn.
 target creature is indestructible this turn.
+target creature is unblockable this turn.
 target creature loses flying until end of turn.
 target creature loses shadow until end of turn.
 target creature with flying loses flying until end of turn. @ deals damage to that creature equal to the number of forests you control.
@@ -2256,6 +2265,7 @@ trample
 {t}, sacrifice @: target creature gets -2/-2 until end of turn.
 {t}, sacrifice @: target creature gets -3/-3 until end of turn.
 {t}, sacrifice @: target creature gets -4/-4 until end of turn.
+{t}, sacrifice @: target creature is unblockable this turn.
 {t}, sacrifice @: untap all forests.
 {t}, sacrifice @: you gain 4 life.
 {t}, tap an untapped creature you control: add one mana of any color to your mana pool.
@@ -2287,9 +2297,11 @@ trample
 {t}: target creature gets +1/+2 until end of turn.
 {t}: target creature gets -2/-0 until end of turn.
 {t}: target creature gets +3/-2 until end of turn.
+{t}: target creature is unblockable this turn.
 {t}: target creature loses flying until end of turn.
 {t}: target creature loses forestwalk until end of turn.
 {t}: target creature with flying gets -1/-1 until end of turn.
+{t}: target creature with power 2 or less is unblockable this turn.
 {t}: target creature with power 5 or greater gains haste until end of turn.
 {t}: target player draws a card, then discards a card.
 {t}: target player loses 1 life.
@@ -2324,6 +2336,7 @@ trample
 {u}: @ gets -1/+1 until end of turn.
 {u}: @ gets +1/-1 until end of turn.
 {u}: @ gets +1/+1 until end of turn.
+{u}: @ is unblockable this turn.
 undying
 untap all artifacts.
 untap all creatures you control.
@@ -2366,6 +2379,7 @@ until end of turn, target creature you control gets +3/+3 and other creatures yo
 {u}, {t}: return target permanent you control to its owner's hand.
 {u}, {t}, sacrifice a creature or enchantment: counter target spell.
 {u}, {t}: target creature gains flying until end of turn.
+{u}, {t}: target creature is unblockable this turn.
 {u}, {t}: target player puts the top two cards of his or her library into his or her graveyard.
 {u}, {t}: you may tap or untap target creature.
 {u}: untap @.
@@ -2599,6 +2613,7 @@ when @ enters the battlefield, target creature gets -2/-2 until end of turn.
 when @ enters the battlefield, target creature gets +2/+2 until end of turn.
 when @ enters the battlefield, target creature gets +3/+3 until end of turn.
 when @ enters the battlefield, target creature gets +4/+0 until end of turn.
+when @ enters the battlefield, target creature is unblockable this turn.
 when @ enters the battlefield, target opponent discards a card.
 when @ enters the battlefield, target opponent loses 1 life and you gain 1 life.
 when @ enters the battlefield, target opponent loses 2 life.
@@ -2980,6 +2995,7 @@ wither
 {x}, {t}: each creature with converted mana cost x can't attack or block this turn.
 {x}, {t}, remove x charge counters from @: @ deals x damage to target creature or player.
 {x}, {t}: target creature gets -x/+x until end of turn.
+{x}, {t}: target creature with power x or less is unblockable this turn.
 {x}, {t}: target player puts the top x cards of his or her library into his or her graveyard.
 {x}, {t}: you gain x life.
 {x}{u}{u}, {t}: return target creature with converted mana cost x to its owner's hand.
