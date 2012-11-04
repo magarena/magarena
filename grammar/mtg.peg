@@ -395,6 +395,8 @@ CounterType
     / "age"
     / "tide"
     / "time"
+    / "fuse"
+    / "page"
     ;
 
 Count
