@@ -619,6 +619,10 @@ at the beginning of your upkeep, return a red creature you control to its owner'
 at the beginning of your upkeep, return a white creature you control to its owner's hand.
 at the beginning of your upkeep, return target creature card from your graveyard to the battlefield.
 at the beginning of your upkeep, sacrifice a creature.
+at the beginning of your upkeep, sacrifice a creature. if you can't, sacrifice @.
+at the beginning of your upkeep, sacrifice a creature other than @.
+at the beginning of your upkeep, sacrifice a creature other than @. if you can't, @ deals 7 damage to you.
+at the beginning of your upkeep, sacrifice an artifact other than @. if you can't, tap @ and you lose 4 life.
 at the beginning of your upkeep, sacrifice a nonblack creature.
 at the beginning of your upkeep, sacrifice a permanent.
 at the beginning of your upkeep, sacrifice @ unless you discard a card.
@@ -650,6 +654,7 @@ at the beginning of your upkeep, sacrifice @ unless you sacrifice a land.
 at the beginning of your upkeep, sacrifice @ unless you sacrifice an enchantment.
 at the beginning of your upkeep, sacrifice @ unless you tap an untapped creature you control.
 at the beginning of your upkeep, tap target creature.
+at the beginning of your upkeep, target creature other than @ gets -1/-1 until end of turn.
 at the beginning of your upkeep, target player draws a card and loses 1 life.
 at the beginning of your upkeep, target player loses 1 life.
 at the beginning of your upkeep, untap enchanted land. you gain control of that land until end of turn.
@@ -2372,6 +2377,7 @@ when @ enters the battlefield, exile all lands.
 when @ enters the battlefield, exile all other permanents you control.
 when @ enters the battlefield, exile target black permanent.
 when @ enters the battlefield, exile target creature.
+when @ enters the battlefield, exile target creature other than @.
 when @ enters the battlefield, exile target green or white creature an opponent controls.
 when @ enters the battlefield, exile target land.
 when @ enters the battlefield, gain control of enchanted land until end of turn.

@@ -27,6 +27,7 @@ Optional
     = "you may have"
     / "you may"
     / "if you don't,"
+    / "if you can't,"
     / "if you do,"
     ;
 
@@ -618,6 +619,7 @@ PermanentRestriction
     / "nonartifact, nonblack"
     / "nonartifact"
     / "artifact"
+    / "other than @"
     / "with converted mana cost " Number " or less"
     / "with converted mana cost " Number " or greater"
     / "with converted mana cost " Number
