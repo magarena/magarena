@@ -294,7 +294,7 @@ ShuffleAction
     ;
 
 PutTokenAction
-    = "put a " PowerToughness SPACE Color SPACE CreatureType " creature token onto the battlefield"
+    = "put a " PowerToughness SPACE Color SPACE CreatureType " creature token " ("with " Keyword SPACE)? "onto the battlefield"
     / "put a token that's a copy of " SelectPermanent " onto the battlefield"
     ;
 
