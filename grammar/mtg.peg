@@ -655,11 +655,6 @@ LandRestriction
 
 Tribal
     = "spirit" "s"?
-    / "island" "s"?
-    / "forest" "s"?
-    / "swamp" "s"?
-    / "mountain" "s"?
-    / "plains"
     / "wall" "s"?
     / "human"
     / "elf"
@@ -689,6 +684,11 @@ Artifact
 
 Land
     = "land" "s"?
+    / "swamp" "s"?
+    / "island" "s"?
+    / "forest" "s"?
+    / "mountain" "s"?
+    / "plains"
     ;
 
 Enchantment

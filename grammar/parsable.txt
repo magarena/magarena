@@ -650,6 +650,7 @@ at the beginning of your upkeep, sacrifice @ unless you pay {w}{u}{b}.
 at the beginning of your upkeep, sacrifice @ unless you pay {w}{w}.
 at the beginning of your upkeep, sacrifice @ unless you remove a +1/+1 counter from it.
 at the beginning of your upkeep, sacrifice @ unless you return a land you control to its owner's hand.
+at the beginning of your upkeep, sacrifice @ unless you return an untapped island you control to its owner's hand.
 at the beginning of your upkeep, sacrifice @ unless you sacrifice a creature.
 at the beginning of your upkeep, sacrifice @ unless you sacrifice a land.
 at the beginning of your upkeep, sacrifice @ unless you sacrifice a mountain.
@@ -1889,9 +1890,12 @@ spirit creatures you control get +1/+1.
 @'s power and toughness are each equal to the number of black permanents you control.
 @'s power and toughness are each equal to the number of blue permanents you control.
 @'s power and toughness are each equal to the number of creatures you control.
+@'s power and toughness are each equal to the number of forests you control.
 @'s power and toughness are each equal to the number of green permanents you control.
+@'s power and toughness are each equal to the number of islands you control.
 @'s power and toughness are each equal to the number of lands you control.
 @'s power and toughness are each equal to the number of red permanents you control.
+@'s power and toughness are each equal to the number of swamps you control.
 @'s power and toughness are each equal to the number of untapped artifacts, creatures, and lands you control.
 @'s power and toughness are each equal to the number of white permanents you control.
 storm
@@ -1956,6 +1960,7 @@ tap an untapped creature you control: tap target artifact, creature, or land.
 tap an untapped creature you control: tap target artifact or creature.
 tap an untapped creature you control: target player puts the top card of his or her library into his or her graveyard.
 tap an untapped creature you control: untap target basic land.
+tap an untapped swamp you control: @ deals 1 damage to target creature or player.
 tap target artifact, creature, or land.
 tap target creature.
 tap target creature. it doesn't untap during its controller's next untap step.
@@ -2417,6 +2422,7 @@ when @ enters the battlefield, destroy target creature with power 4 or greater. 
 when @ enters the battlefield, destroy target enchantment.
 when @ enters the battlefield, destroy target equipment.
 when @ enters the battlefield, destroy target goblin.
+when @ enters the battlefield, destroy target island or swamp an opponent controls.
 when @ enters the battlefield, destroy target land.
 when @ enters the battlefield, destroy target nonartifact, nonblack creature.
 when @ enters the battlefield, destroy target nonbasic land.
@@ -2510,6 +2516,11 @@ when @ enters the battlefield, sacrifice it unless you discard a noncreature car
 when @ enters the battlefield, sacrifice it unless you pay {1}.
 when @ enters the battlefield, sacrifice it unless you return an artifact you control to its owner's hand.
 when @ enters the battlefield, sacrifice it unless you return an enchantment to its owner's hand.
+when @ enters the battlefield, sacrifice it unless you return an untapped forest you control to its owner's hand.
+when @ enters the battlefield, sacrifice it unless you return an untapped island you control to its owner's hand.
+when @ enters the battlefield, sacrifice it unless you return an untapped mountain you control to its owner's hand.
+when @ enters the battlefield, sacrifice it unless you return an untapped plains you control to its owner's hand.
+when @ enters the battlefield, sacrifice it unless you return an untapped swamp you control to its owner's hand.
 when @ enters the battlefield, sacrifice it unless you sacrifice a forest.
 when @ enters the battlefield, sacrifice it unless you sacrifice a land.
 when @ enters the battlefield, sacrifice it unless you sacrifice an artifact.
