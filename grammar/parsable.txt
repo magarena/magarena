@@ -343,6 +343,7 @@
 {2}, {t}, sacrifice @: return target artifact card from your graveyard to your hand.
 {2}, {t}: shuffle your library.
 {2}, {t}: tap target creature.
+{2}, {t}: tap target noncreature artifact.
 {2}, {t}: target creature gains flying until end of turn.
 {2}, {t}: target creature with power 3 or less gains flying until end of turn.
 {2}, {t}: target player puts the top two cards of his or her library into his or her graveyard.
@@ -533,6 +534,8 @@ all creatures lose flying.
 all creatures lose flying until end of turn.
 artifact creatures you control gain flying until end of turn.
 artifact creatures you control get +2/+2.
+artifacts and enchantments you control have shroud.
+artifacts you control have hexproof.
 as @ enters the battlefield, sacrifice all lands you control.
 as @ enters the battlefield, you may pay 2 life. if you don't, @ enters the battlefield tapped.
 attacking creatures gain first strike until end of turn.
@@ -588,6 +591,7 @@ at the beginning of your upkeep, return a black creature you control to its owne
 at the beginning of your upkeep, return a blue creature you control to its owner's hand.
 at the beginning of your upkeep, return a creature you control to its owner's hand.
 at the beginning of your upkeep, return a green creature you control to its owner's hand.
+at the beginning of your upkeep, return an artifact you control to its owner's hand.
 at the beginning of your upkeep, return a permanent you control to its owner's hand.
 at the beginning of your upkeep, return a red creature you control to its owner's hand.
 at the beginning of your upkeep, return a white creature you control to its owner's hand.
@@ -920,6 +924,7 @@ destroy all creatures with flying.
 destroy all creatures with power 4 or greater. they can't be regenerated.
 destroy all creatures you don't control. they can't be regenerated.
 destroy all enchantments.
+destroy all enchantments target player controls.
 destroy all green creatures.
 destroy all green creatures. they can't be regenerated.
 destroy all islands.
@@ -929,6 +934,7 @@ destroy all nonbasic lands.
 destroy all tapped creatures.
 destroy all white creatures.
 destroy all white permanents.
+destroy each artifact with converted mana cost x or less.
 destroy each creature with converted mana cost 3 or less.
 destroy each creature with converted mana cost 3 or less. they can't be regenerated.
 destroy target artifact.
@@ -941,11 +947,13 @@ destroy target artifact. its controller loses 1 life.
 destroy target artifact or creature. it can't be regenerated.
 destroy target artifact or enchantment.
 destroy target artifact or enchantment. its controller gains 4 life.
+destroy target artifact or enchantment with converted mana cost x. it can't be regenerated. you gain x life.
 destroy target artifact or enchantment. you gain 3 life.
 destroy target artifact or enchantment. you gain 4 life.
 destroy target artifact or land.
 destroy target artifact or land. it can't be regenerated.
 destroy target artifact or land. its controller loses 1 life.
+destroy target artifact you don't control.
 destroy target attacking creature.
 destroy target attacking creature with flying.
 destroy target attacking creature without flying.
@@ -993,6 +1001,7 @@ destroy target nonblack creature. it can't be regenerated.
 destroy target nonblack creature. it can't be regenerated. its controller loses 2 life.
 destroy target nonblack creature. its controller loses 2 life.
 destroy target nonblack creature. you gain 3 life.
+destroy target noncreature artifact.
 destroy target noncreature permanent.
 destroy target non-vampire, non-werewolf, non-zombie creature.
 destroy target permanent.
@@ -1046,6 +1055,7 @@ each player sacrifices a land.
 each player sacrifices an enchantment.
 each player sacrifices a permanent.
 enchant artifact
+enchant artifact an opponent controls
 enchant artifact creature
 enchant black creature
 enchant creature
@@ -1405,9 +1415,11 @@ level up {u}
 level up {w}
 lifelink
 living weapon
+metalcraft — artifacts you control have shroud as long as you control three or more artifacts.
 metalcraft — as long as you control three or more artifacts, @ gets +2/+2 and has flying.
 metalcraft — as long as you control three or more artifacts, @ gets +4/+4 and has trample.
 metalcraft — creatures you control get +3/+0 as long as you control three or more artifacts.
+metalcraft — equipment you control have equip {0} as long as you control three or more artifacts.
 metalcraft — @ gets +2/+2 as long as you control three or more artifacts.
 metalcraft — @ has double strike as long as you control three or more artifacts.
 metalcraft — @ has flying as long as you control three or more artifacts.
@@ -1454,6 +1466,7 @@ other creatures you control have exalted.
 other creatures you control have intimidate.
 other elf creatures have forestwalk.
 other elf creatures you control get +1/+1.
+other enchantments you control have shroud.
 other goblin creatures you control get +1/+1.
 other green creatures you control get +1/+1.
 other green creatures you control have intimidate.
@@ -1631,6 +1644,7 @@ return @ to its owner's hand: regenerate target creature.
 {r}{r}{r}: regenerate @.
 {r}{r}{r}: regenerate enchanted creature.
 {r}{r}{r}, {t}: destroy target artifact creature.
+{r}{r}{r}, {t}: destroy target noncreature artifact.
 {r}{r}: target creature gets +1/-1 until end of turn.
 {r}{r}, {t}: @ deals 2 damage to target creature.
 {r}{r}, {t}: put a charge counter on @.
@@ -1841,6 +1855,7 @@ tap all artifacts.
 tap all blue creatures.
 tap all creatures.
 tap all creatures without flying.
+tap an untapped artifact you control: @ gets +1/+1 until end of turn.
 tap an untapped creature you control: @ deals 1 damage to target player.
 tap an untapped creature you control: @ gains flying until end of turn.
 tap an untapped creature you control: @ gets +1/+1 until end of turn.
@@ -2096,6 +2111,7 @@ trample
 {t}, tap an untapped creature you control: add one mana of any color to your mana pool.
 {t}: tap enchanted creature.
 {t}: tap target artifact.
+{t}: tap target artifact you don't control.
 {t}: tap target creature.
 {t}: tap target creature with converted mana cost 3 or less.
 {t}: tap target creature with power 2 or less.
@@ -2137,6 +2153,7 @@ trample
 {t}: untap target permanent.
 {t}: you gain 1 life.
 {t}: you gain 2 life.
+{t}: you may tap or untap target artifact an opponent controls.
 {u}{b}{b}{r}, {t}: destroy target tapped or blocking creature.
 {u/b}: @ gets +1/+1 until end of turn.
 {u}{b}, pay 1 life: return @ to its owner's hand.
@@ -2374,6 +2391,7 @@ when @ enters the battlefield, return a green or white creature you control to i
 when @ enters the battlefield, return a land you control to its owner's hand.
 when @ enters the battlefield, return a permanent you control to its owner's hand.
 when @ enters the battlefield, return a red or green creature you control to its owner's hand.
+when @ enters the battlefield, return a red or green enchantment you control to its owner's hand.
 when @ enters the battlefield, return each other creature you control to its owner's hand.
 when @ enters the battlefield, return target artifact or enchantment to its owner's hand.
 when @ enters the battlefield, return target creature an opponent controls to its owner's hand.
@@ -2390,6 +2408,7 @@ when @ enters the battlefield, sacrifice it unless you discard a card at random.
 when @ enters the battlefield, sacrifice it unless you discard a creature card.
 when @ enters the battlefield, sacrifice it unless you discard a noncreature card.
 when @ enters the battlefield, sacrifice it unless you pay {1}.
+when @ enters the battlefield, sacrifice it unless you return an artifact you control to its owner's hand.
 when @ enters the battlefield, sacrifice it unless you return an enchantment to its owner's hand.
 when @ enters the battlefield, sacrifice it unless you sacrifice a land.
 when @ enters the battlefield, sacrifice it unless you sacrifice an artifact.
@@ -2554,6 +2573,9 @@ whenever @ deals combat damage to a player, that player discards a card at rando
 whenever @ deals combat damage to a player, that player puts the top two cards of his or her library into his or her graveyard.
 whenever @ deals combat damage to a player, that player sacrifices a creature.
 whenever @ deals combat damage to a player, that player sacrifices a permanent.
+whenever @ deals combat damage to a player, you may destroy target artifact or enchantment that player controls.
+whenever @ deals combat damage to a player, you may destroy target artifact that player controls.
+whenever @ deals combat damage to a player, you may destroy target enchantment that player controls.
 whenever @ deals combat damage to a player, you may draw a card.
 whenever @ deals combat damage to a player, you may draw a card. if you do, discard a card.
 whenever @ deals combat damage to a player, you may exile target black or red permanent that player controls.
@@ -2570,6 +2592,7 @@ whenever @ deals combat damage, you gain that much life.
 whenever @ deals damage to a creature, exile that creature.
 whenever @ deals damage to a creature, put a +1/+1 counter on @.
 whenever @ deals damage to a creature, tap that creature and it doesn't untap during its controller's next untap step.
+whenever @ deals damage to a player, destroy target enchantment that player controls.
 whenever @ deals damage to a player, tap target land that player controls. that land doesn't untap during its controller's next untap step.
 whenever @ deals damage to a player, that player discards a card.
 whenever @ deals damage to a player, that player gets a poison counter.
@@ -2775,7 +2798,11 @@ wither
 {x}{r}{g}, {t}: target creature gets +x/+0 and gains trample until end of turn.
 {x}{r}, sacrifice @: @ deals x damage to target creature.
 {x}{r}, {t}: @ deals x damage to target creature without flying.
+{x}{r}, {t}, discard a card: destroy all artifacts with converted mana cost x or less.
 {x}{r}, {t}, sacrifice @: @ deals x damage to target creature or player.
+{x}, sacrifice an artifact with converted mana cost x: @ deals x damage to target creature or player.
+{x}, sacrifice @: destroy each artifact, creature, and enchantment with converted mana cost x or less.
+{x}, sacrifice @: destroy target artifact with converted mana cost x.
 {x}, {t}, remove x charge counters from @: @ deals x damage to target creature or player.
 {x}, {t}: target creature gets -x/+x until end of turn.
 {x}, {t}: target player puts the top x cards of his or her library into his or her graveyard.

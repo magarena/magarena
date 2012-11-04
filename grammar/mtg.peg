@@ -529,24 +529,25 @@ RestrictedPermanent
     = (PermanentRestriction SPACE)? Permanent (SPACE PermanentRestriction)?
     / RestrictedCreature
     / RestrictedLand
-    / SelectArtifact
-    / SelectEnchantment
-    / SelectTribal
+    / RestrictedArtifact
+    / RestrictedEnchantment
+    / RestrictedTribal
     ;
 
-SelectArtifact
-    = Artifact
+RestrictedArtifact
+    = Artifact (SPACE PermanentRestriction)?
+    / (PermanentRestriction SPACE)? Artifact (SPACE PermanentRestriction)?
     ;
 
-SelectEnchantment
-    = Enchantment
+RestrictedEnchantment
+    = (PermanentRestriction SPACE)? Enchantment (SPACE PermanentRestriction)?
     ;
 
 RestrictedLand
     = (LandRestriction SPACE)? Land (SPACE LandRestriction)?
     ;
 
-SelectTribal
+RestrictedTribal
     = Tribal
     ;
 
