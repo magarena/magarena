@@ -570,6 +570,9 @@ attacking creatures you control have lifelink.
 @ attacks each turn if able.
 at the beginning of each player's upkeep, @ deals 1 damage to that player.
 at the beginning of each player's upkeep, @ deals 2 damage to that player.
+at the beginning of each player's upkeep, @ deals damage to that player equal to the number of artifacts he or she controls.
+at the beginning of each player's upkeep, @ deals damage to that player equal to the number of nonbasic lands he or she controls.
+at the beginning of each player's upkeep, @ deals damage to that player equal to the number of swamps he or she controls.
 at the beginning of each player's upkeep, that player discards a card.
 at the beginning of each player's upkeep, that player discards a card at random.
 at the beginning of each player's upkeep, that player loses 1 life.
@@ -933,6 +936,15 @@ cumulative upkeep {w}
 @ deals 5 damage to target player.
 @ deals 7 damage to target creature or player.
 @ deals 7 damage to target opponent.
+@ deals damage to each opponent equal to the number of islands that player controls.
+@ deals damage to each player equal to the number of lands he or she controls.
+@ deals damage to target attacking creature equal to the number of attacking creatures.
+@ deals damage to target attacking creature equal to the number of equipment you control.
+@ deals damage to target creature equal to the number of mountains you control.
+@ deals damage to target creature or player equal to the number of attacking creatures you control.
+@ deals damage to target creature or player equal to the number of mountains you control.
+@ deals damage to target player equal to the number of artifacts you control.
+@ deals damage to target player equal to the number of creatures you control.
 @ deals x damage to each creature.
 @ deals x damage to each creature with flying.
 @ deals x damage to each creature without flying.
@@ -2042,6 +2054,7 @@ target creature gets -x/-x until end of turn.
 target creature gets +x/+x until end of turn.
 target creature loses flying until end of turn.
 target creature loses shadow until end of turn.
+target creature with flying loses flying until end of turn. @ deals damage to that creature equal to the number of forests you control.
 target creature you control deals damage equal to its power to target creature with flying.
 target creature you control gets +0/+1 and gains hexproof until end of turn.
 target creature you control gets +1/+1 and gains hexproof until end of turn.
@@ -2118,6 +2131,7 @@ target player sacrifices a permanent.
 {t}: @ deals damage equal to the number of +1/+1 counters on it to target attacking or blocking creature.
 {t}: @ deals damage equal to the number of +1/+1 counters on it to target creature or player.
 {t}: @ deals damage equal to the number of age counters on it to target attacking or blocking creature.
+{t}: @ deals damage to target attacking creature equal to the number of untapped mountains you control.
 {t}: destroy target blue creature.
 {t}: destroy target creature. it can't be regenerated.
 {t}: destroy target creature or land.
@@ -2476,6 +2490,7 @@ when @ enters the battlefield, it deals 4 damage to target player.
 when @ enters the battlefield, it deals 4 damage to you.
 when @ enters the battlefield, it deals 6 damage to each creature with flying.
 when @ enters the battlefield, it deals damage equal to its power to target creature or player.
+when @ enters the battlefield, it deals damage to target player equal to the number of nonbasic lands that player controls.
 when @ enters the battlefield, prevent all damage that would be dealt to artifact creatures this turn.
 when @ enters the battlefield, prevent the next 3 damage that would be dealt to target creature or player this turn.
 when @ enters the battlefield, put a -1/-1 counter on each creature.

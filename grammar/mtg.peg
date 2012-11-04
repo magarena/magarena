@@ -375,6 +375,7 @@ DamageAction
     = SelectPermanent " deals " Number " damage to " DamageReceiver
     / SelectPermanent " deals damage equal to its power to " DamageReceiver
     / SelectPermanent " deals damage equal to the number of " CounterType " counters on it to " DamageReceiver
+    / SelectPermanent " deals damage to " DamageReceiver " equal to the number of " SelectPermanent
     / Number " damage to " DamageReceiver
     ;
 
