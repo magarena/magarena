@@ -145,6 +145,7 @@
 {1}: target creature with power 5 or greater gains first strike until end of turn.
 {1}: target creature with power 5 or greater gains trample until end of turn.
 {1}: target creature with power 5 or greater gains vigilance until end of turn.
+{1}: target creature with power 5 or greater is indestructible this turn.
 {1}, {t}: attacking creatures get +1/+0 until end of turn.
 {1}, {t}: @ deals 1 damage to target attacking creature.
 {1}, {t}: @ deals 1 damage to target creature. tap that creature.
@@ -1247,6 +1248,7 @@ enchanted creature loses flying.
 enchanted creatures you control have shroud.
 enchanted land has shroud.
 enchanted permanent doesn't untap during its controller's untap step.
+enchanted permanent is indestructible.
 enchant enchantment
 enchant equipment
 enchant forest
@@ -1348,6 +1350,7 @@ equipped creature has intimidate.
 equipped creature has shroud.
 equipped creature has trample.
 equipped creature has vigilance.
+equipped creature is indestructible.
 exalted
 exile @.
 exile all creatures.
@@ -1405,6 +1408,7 @@ gain control of target nonartifact, nonblack creature.
 {g}{g}, {t}: creatures you control get +2/+2 until end of turn.
 {g}{g}, {t}: @ deals damage equal to its power to target creature. that creature deals damage equal to its power to @.
 {g}{g}, {t}: put a charge counter on @.
+{g}: @ is indestructible this turn.
 goblin creatures get +1/+1.
 goblin creatures you control have haste.
 golem creatures you control get +1/+1.
@@ -1848,6 +1852,7 @@ sacrifice an artifact: @ gets +3/+3 and gains trample until end of turn.
 sacrifice an artifact: put a +1/+1 counter on @.
 sacrifice an artifact: put a +1/+1 counter on target creature.
 sacrifice an artifact: regenerate @.
+sacrifice an artifact: target artifact is indestructible this turn.
 sacrifice an enchantment: @ gets +1/+1 until end of turn.
 sacrifice an enchantment: @ gets +2/+2 until end of turn.
 sacrifice an untapped creature: enchanted creature gets +2/+0 until end of turn.
@@ -2078,6 +2083,7 @@ target creature gets +7/+7 until end of turn.
 target creature gets +x/+0 until end of turn.
 target creature gets -x/-x until end of turn.
 target creature gets +x/+x until end of turn.
+target creature is indestructible this turn.
 target creature loses flying until end of turn.
 target creature loses shadow until end of turn.
 target creature with flying loses flying until end of turn. @ deals damage to that creature equal to the number of forests you control.
@@ -2952,6 +2958,7 @@ wither
 {w}{w}: @ gets +0/+2 until end of turn.
 {w}{w}: @ gets +1/+0 until end of turn.
 {w}{w}: target attacking creature gets -1/-0 until end of turn.
+{w}{w}: target creature is indestructible this turn.
 {w}{w}, {t}: destroy target black permanent.
 {w}{w}, {t}: destroy target red permanent.
 {w}{w}, {t}: put a charge counter on @.

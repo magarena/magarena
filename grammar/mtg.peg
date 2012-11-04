@@ -262,6 +262,7 @@ ChangeStateAction
     = SelectPermanent " can't attack or block" 
     / SelectPermanent " can't attack" 
     / SelectPermanent " can't block" 
+    / SelectPermanent " is indestructible" 
     ;
 
 SetPTAction
