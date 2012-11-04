@@ -679,6 +679,7 @@ at the beginning of your upkeep, put a -1/-1 counter on each nonblack creature.
 at the beginning of your upkeep, put a -1/-1 counter on enchanted creature.
 at the beginning of your upkeep, put a +1/+1 counter on enchanted creature.
 at the beginning of your upkeep, put a 1/1 red goblin creature token with haste onto the battlefield.
+at the beginning of your upkeep, put a -2/-2 counter on @.
 at the beginning of your upkeep, put a 2/2 green wolf creature token onto the battlefield.
 at the beginning of your upkeep, put a credit counter on @.
 at the beginning of your upkeep, put a currency counter on @.
@@ -2167,6 +2168,10 @@ sacrifice @: enchanted creature gets +3/+3 until end of turn.
 sacrifice @: prevent all combat damage that would be dealt this turn.
 sacrifice @: put a -1/-1 counter on target creature.
 sacrifice @: put a +1/+1 counter on target creature.
+sacrifice @: put a +2/+2 counter on target chimera creature. it gains first strike.
+sacrifice @: put a +2/+2 counter on target chimera creature. it gains flying.
+sacrifice @: put a +2/+2 counter on target chimera creature. it gains trample.
+sacrifice @: put a +2/+2 counter on target chimera creature. it gains vigilance.
 sacrifice @: put two charge counters on target artifact.
 sacrifice @: regenerate all werewolf creatures you control.
 sacrifice @: regenerate enchanted creature.
@@ -2550,6 +2555,7 @@ trample
 {t}, sacrifice @: destroy target wall.
 {t}, sacrifice @: exile target black creature.
 {t}, sacrifice @: exile target red creature.
+{t}, sacrifice @: put a +1/+2 counter on target creature.
 {t}, sacrifice @: return target artifact card from your graveyard to your hand.
 {t}, sacrifice @: return target enchantment card from your graveyard to your hand.
 {t}, sacrifice @: target attacking creature without flying gets -1/-2 until end of turn.
@@ -2666,6 +2672,7 @@ until end of turn, target creature you control gets +3/+3 and other creatures yo
 {u}, sacrifice @: counter target spell unless its controller pays {2}.
 {u}, sacrifice @: return target creature to its owner's hand.
 {u}, sacrifice @: target player puts the top three cards of his or her library into his or her graveyard.
+{u}, tap an untapped blue creature you control, remove a polyp counter from @: put a +0/+1 counter on target creature.
 {u}: tap enchanted creature.
 {u}: tap target green creature.
 {u}, {t}: counter target spell unless its controller pays {1}.
@@ -3082,6 +3089,7 @@ whenever @ blocks, it gets +2/+0 until end of turn.
 whenever @ blocks, it gets +2/+2 until end of turn.
 whenever @ blocks, it gets +7/+7 until end of turn.
 whenever @ blocks, prevent all combat damage that would be dealt to and dealt by it this turn.
+whenever @ blocks, put a -0/-1 counter on it.
 whenever @ blocks, put a +1/+1 counter on it.
 whenever @ blocks, you gain 3 life.
 whenever @ blocks, you may draw a card.
