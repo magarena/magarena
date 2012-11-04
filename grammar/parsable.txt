@@ -16,6 +16,7 @@
 {1}{b}{b}, {t}: destroy target tapped nonblack creature.
 {1}{b}, discard a card: @ gets +2/+2 until end of turn.
 {1}{b}, discard a card: regenerate @.
+{1}: @ becomes a 1/1 blinkmoth artifact creature with flying and infect until end of turn. it's still a land.
 {1}: @ becomes a 1/1 blinkmoth artifact creature with flying until end of turn. it's still a land.
 {1}: @ becomes a 2/2 assembly-worker artifact creature until end of turn. it's still a land.
 {1}{b}: enchanted creature gets +2/+2 until end of turn.
@@ -276,6 +277,7 @@
 {1}{w}, {t}: put a 1/1 white soldier creature token onto the battlefield.
 {1}{w}, {t}, sacrifice @: destroy target artifact or enchantment.
 {1}{w}, {t}: you gain 5 life.
+{1}{w}{w}: @ becomes a 2/2 white spirit artifact creature with flying and first strike until end of turn.
 {1}{w}{w}: target creature gets +1/+1 until end of turn.
 {1}{w}{w}: target knight creature gets +1/+1 until end of turn.
 {1}{w}{w}, {t}: return target creature an opponent controls to its owner's hand.
@@ -543,6 +545,7 @@
 {3}{w}: @ gets +0/+5 until end of turn.
 {3}{w}: prevent all combat damage that would be dealt to and dealt by @ this turn.
 {3}{w}: tap target creature.
+{3}{w}{u}: until end of turn, @ becomes a 4/4 white and blue elemental creature with flying and vigilance. it's still a land.
 {3}{w}{w}, sacrifice @: exile all black creatures.
 {3}{w}{w}: you draw a card and target opponent gains 3 life.
 {3}: you may tap or untap equipped creature.
@@ -2947,6 +2950,7 @@ when @ enters the battlefield, put a 2/2 white knight creature token with vigila
 when @ enters the battlefield, put a 4/4 red dragon creature token with flying onto the battlefield.
 when @ enters the battlefield, put a 5/5 green wurm creature token with trample onto the battlefield.
 when @ enters the battlefield, put a creature you control on top of its owner's library.
+when @ enters the battlefield, put four 1/1 green insect creature tokens with flying and deathtouch onto the battlefield.
 when @ enters the battlefield, put four 1/1 green squirrel creature tokens onto the battlefield.
 when @ enters the battlefield, put six +1/+1 counters on enchanted creature.
 when @ enters the battlefield, put target artifact on top of its owner's library.
