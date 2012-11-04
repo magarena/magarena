@@ -128,11 +128,7 @@ Keyword
     / "shroud"
     / "persist"
     / "protection from all colors"
-    / "protection from black"
-    / "protection from red"
-    / "protection from white"
-    / "protection from blue"
-    / "protection from green"
+    / "protection from " Color
     / "protection from artifacts"
     / "protection from creatures"
     / "protection from everything"
@@ -576,12 +572,9 @@ RestrictedSpell
 SpellRestriction
     = "creature"
     / "white, blue, black, or red"
-    / "red or green"
-    / "red"
-    / "white"
-    / "black"
-    / "blue"
-    / "green"
+    / Color " or " Color
+    / Color
+    / "non" Color
     / "multicolored"
     / "noncreature"
     / "enchantment"
@@ -614,22 +607,16 @@ RestrictedCreature
     ;
 
 PermanentRestriction
-    = "black or red"
-    / "green or white"
-    / "black or red"
-    / "blue or black"
-    / "red or green"
-    / "blue"
-    / "white"
-    / "green"
-    / "red"
-    / "black"
+    = Color " or " Color
+    / Color
+    / "non" Color
     / "tapped"
     / "untapped"
     / "noncreature"
+    / "nongreen"
+    / "nonwhite"
     / SelectPlayer " control" "s"?
     / SelectPlayer " don't control"
-    / "nonblack"
     / "nonartifact, nonblack"
     / "nonartifact"
     / "artifact"
@@ -656,6 +643,14 @@ LandRestriction
     = "nonbasic"
     / "basic"
     / PermanentRestriction
+    ;
+
+Color
+    = "black"
+    / "blue"
+    / "green"
+    / "red"
+    / "white"
     ;
 
 Tribal
