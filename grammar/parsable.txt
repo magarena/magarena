@@ -482,6 +482,7 @@
 {4}{w}: @ gets +1/+2 until end of turn.
 {4}{w}, {t}, sacrifice @: return target artifact card from your graveyard to the battlefield.
 {5}{g}: regenerate @.
+{5}{r}: @ deals 6 damage to each other creature with flying.
 {5}, {t}: destroy target creature with flying.
 {5}, {t}: discard a card at random, then draw two cards.
 {5}, {t}: draw a card.
@@ -560,6 +561,7 @@ at the beginning of the end step, sacrifice @.
 at the beginning of your upkeep, @ deals 1 damage to each opponent.
 at the beginning of your upkeep, @ deals 1 damage to each player.
 at the beginning of your upkeep, @ deals 1 damage to you.
+at the beginning of your upkeep, @ deals 2 damage to each other creature you control.
 at the beginning of your upkeep, @ deals 2 damage to you.
 at the beginning of your upkeep, @ deals 3 damage to target creature you control.
 at the beginning of your upkeep, @ deals 4 damage to enchanted creature.
@@ -699,6 +701,7 @@ blue creatures get +1/+1.
 {b}{r}: each player loses 1 life.
 {b}: regenerate @.
 {b}: regenerate enchanted creature.
+{b}, remove a -1/-1 counter from @: put a -1/-1 counter on each other creature.
 {b}: return @ to its owner's hand.
 {b}{r}: @ gets +1/+0 until end of turn.
 {b}{r}{g}, {t}: return target creature card from your graveyard to your hand.
@@ -947,6 +950,7 @@ destroy target attacking or blocking creature with power 3 or less.
 destroy target blocked creature.
 destroy target blue or black creature with flying.
 destroy target creature.
+destroy target creature an opponent controls. each other creature that player controls gets -2/-0 until end of turn.
 destroy target creature. it can't be regenerated.
 destroy target creature. its controller discards a card.
 destroy target creature. its controller loses 2 life.
@@ -1972,6 +1976,7 @@ target player sacrifices a permanent.
 {t}: @ deals 1 damage to each creature with flying.
 {t}: @ deals 1 damage to each creature without flying.
 {t}: @ deals 1 damage to each opponent.
+{t}: @ deals 1 damage to each other creature without flying.
 {t}: @ deals 1 damage to itself.
 {t}: @ deals 1 damage to target attacking or blocking creature.
 {t}: @ deals 1 damage to target creature.
@@ -2041,6 +2046,7 @@ totem armor
 {t}: put a charge counter on target artifact.
 {t}: put a storage counter on @.
 trample
+{t}, remove a +1/+1 counter from @: put a +1/+1 counter on each other creature you control.
 {t}, remove a charge counter from @: add one mana of any color to your mana pool.
 {t}, remove a charge counter from @: tap target artifact or creature.
 {t}, remove a charge counter from @: target player loses 2 life.
@@ -2333,6 +2339,7 @@ when @ enters the battlefield, it deals 3 damage to target creature with flying.
 when @ enters the battlefield, it deals 3 damage to target creature you control.
 when @ enters the battlefield, it deals 3 damage to target player.
 when @ enters the battlefield, it deals 3 damage to you.
+when @ enters the battlefield, it deals 4 damage to each other creature.
 when @ enters the battlefield, it deals 4 damage to target creature.
 when @ enters the battlefield, it deals 4 damage to target player.
 when @ enters the battlefield, it deals 4 damage to you.
@@ -2358,6 +2365,7 @@ when @ enters the battlefield, return a green or white creature you control to i
 when @ enters the battlefield, return a land you control to its owner's hand.
 when @ enters the battlefield, return a permanent you control to its owner's hand.
 when @ enters the battlefield, return a red or green creature you control to its owner's hand.
+when @ enters the battlefield, return each other creature you control to its owner's hand.
 when @ enters the battlefield, return target artifact or enchantment to its owner's hand.
 when @ enters the battlefield, return target creature an opponent controls to its owner's hand.
 when @ enters the battlefield, return target creature card from your graveyard to the battlefield.
@@ -2459,6 +2467,9 @@ whenever @ attacks, creatures you control get +2/+0 until end of turn.
 whenever @ attacks, destroy all other creatures.
 whenever @ attacks, each opponent loses 1 life.
 whenever @ attacks, each opponent loses 2 life.
+whenever @ attacks, each other attacking creature gains fear until end of turn.
+whenever @ attacks, each other attacking creature gets +1/+0 until end of turn.
+whenever @ attacks, each other creature you control gets +1/+0 until end of turn.
 whenever @ attacks, goblin creatures you control get +1/+1 until end of turn.
 whenever @ attacks, human creatures you control get +1/+0 until end of turn.
 whenever @ attacks, it doesn't untap during its controller's next untap step.
@@ -2477,6 +2488,7 @@ whenever @ attacks, sacrifice it unless you sacrifice an island.
 whenever @ attacks, tap all artifacts.
 whenever @ attacks, target creature gets +0/+3 until end of turn.
 whenever @ attacks, target creature you control gains flying until end of turn.
+whenever @ attacks, untap each other creature you control.
 whenever @ attacks, you may have target creature gain flying until end of turn.
 whenever @ attacks, you may have target creature lose flying until end of turn.
 whenever @ attacks, you may pay {w}. if you do, it gains flying until end of turn.
@@ -2625,6 +2637,7 @@ whenever you cast a spell, you may return @ to its owner's hand.
 whenever you cast a spell, you may untap @.
 whenever you cast a spirit or arcane spell, @ deals 1 damage to target creature.
 whenever you cast a spirit or arcane spell, @ deals 2 damage to each creature without flying.
+whenever you cast a spirit or arcane spell, each other creature you control gets +1/+1 and gains trample until end of turn.
 whenever you cast a spirit or arcane spell, @ gains flying until end of turn.
 whenever you cast a spirit or arcane spell, @ gains forestwalk until end of turn.
 whenever you cast a spirit or arcane spell, @ gets +1/+1 until end of turn.
