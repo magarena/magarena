@@ -306,7 +306,7 @@ PutTokenAction
     ;
 
 CreatureSpec
-    = PowerToughness SPACE ColorSpec SPACE CreatureType
+    = PowerToughness SPACE ColorSpec (SPACE CreatureType)*
     ;
 
 ControlAction

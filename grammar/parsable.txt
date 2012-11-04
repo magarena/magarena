@@ -242,6 +242,7 @@
 {1}{w}: put a +1/+1 counter on @.
 {1}{w}: put a +1/+1 counter on enchanted creature.
 {1}{w}: put a 1/1 white pegasus creature token with flying onto the battlefield.
+{1}{w}, {q}: put a 1/1 white kithkin soldier creature token onto the battlefield.
 {1}{w}, remove a +1/+1 counter from @: destroy target enchantment.
 {1}{w}: return @ to its owner's hand.
 {1}{w}, sacrifice @: creatures you control get +1/+1 until end of turn.
@@ -347,6 +348,7 @@
 {2}{r}, {t}, discard a card: destroy target land.
 {2}{r}, {t}, put a -1/-1 counter on a creature you control: @ deals 2 damage to target creature or player.
 {2}{r}{w}, {t}: target creature gains double strike until end of turn.
+{2}, sacrifice a land: put two 1/1 red and white goblin soldier creature tokens onto the battlefield.
 {2}, sacrifice a permanent: return target creature to its owner's hand.
 {2}, sacrifice @: @ deals 2 damage to each attacking creature without flying.
 {2}, sacrifice @: @ deals damage equal to the number of charge counters on it to target creature or player.
@@ -444,6 +446,7 @@
 {3}{b}: @ gains deathtouch until end of turn.
 {3}{b}: regenerate @.
 {3}{b}{r}, {t}: @ deals 2 damage to target player.
+{3}{b}, sacrifice a goblin: put two 1/1 black goblin rogue creature tokens onto the battlefield.
 {3}{b}, {t}: destroy target tapped creature.
 {3}{b}, {t}, sacrifice a human: destroy target creature.
 {3}{b}, {t}: target creature gains swampwalk until end of turn.
@@ -754,6 +757,7 @@ at the beginning of your upkeep, target player loses 1 life.
 at the beginning of your upkeep, untap enchanted land. you gain control of that land until end of turn.
 at the beginning of your upkeep, you draw a card and you lose 1 life.
 at the beginning of your upkeep, you lose 1 life.
+at the beginning of your upkeep, you lose 1 life and put a 1/1 black faerie rogue creature token with flying onto the battlefield.
 at the beginning of your upkeep, you lose 2 life.
 at the beginning of your upkeep, you lose 3 life.
 at the beginning of your upkeep, you may discard a card. if you don't, sacrifice @ and draw a card.
@@ -1182,6 +1186,7 @@ destroy target nonblack creature.
 destroy target nonblack creature. it can't be regenerated.
 destroy target nonblack creature. it can't be regenerated. its controller loses 2 life.
 destroy target nonblack creature. its controller loses 2 life.
+destroy target nonblack creature. put a 1/1 black faerie rogue creature token with flying onto the battlefield.
 destroy target nonblack creature. you gain 3 life.
 destroy target noncreature artifact.
 destroy target noncreature permanent.
@@ -1605,6 +1610,7 @@ green creatures you control have trample.
 {g}, {t}, discard a card: prevent all combat damage that would be dealt this turn.
 {g}, {t}, discard a card: regenerate target creature.
 {g}, {t}, discard a card: target creature gets +2/+2 until end of turn.
+{g}, {t}: put a 1/1 green elf warrior creature token onto the battlefield.
 {g}, {t}: put a 1/1 green saproling creature token onto the battlefield.
 {g}, {t}: regenerate target creature.
 {g}, {t}, sacrifice a creature: destroy target enchantment.
@@ -1882,6 +1888,7 @@ put a 1/1 green saproling creature token onto the battlefield.
 put a 1/1 green squirrel creature token onto the battlefield.
 put a 1/1 white pegasus creature token with flying onto the battlefield.
 put a 2/2 black zombie creature token onto the battlefield.
+put a 2/5 green treefolk shaman creature token onto the battlefield.
 put a 3/3 green beast creature token onto the battlefield.
 put a 3/3 green centaur creature token onto the battlefield.
 put a 3/3 green elephant creature token onto the battlefield.
@@ -1905,17 +1912,22 @@ put target creature or land on top of its owner's library.
 put target enchantment on top of its owner's library.
 put target land on top of its owner's library.
 put target permanent on top of its owner's library.
+put three 1/1 green elf warrior creature tokens onto the battlefield.
 put three 1/1 green saproling creature tokens onto the battlefield.
 put three 1/1 red goblin creature tokens onto the battlefield.
+put three 1/1 red goblin scout creature tokens with mountainwalk onto the battlefield.
 put three 1/1 white soldier creature tokens onto the battlefield.
 put three 1/1 white spirit creature tokens with flying onto the battlefield.
 put three 6/6 green wurm creature tokens onto the battlefield.
+put two 1/1 blue merfolk wizard creature tokens onto the battlefield.
 put two 1/1 green insect creature tokens with infect onto the battlefield.
 put two 1/1 green snake creature tokens onto the battlefield.
 put two 1/1 green squirrel creature tokens onto the battlefield.
 put two 1/1 red goblin creature tokens onto the battlefield.
 put two 1/1 white bird creature tokens with flying onto the battlefield.
 put two 1/1 white human creature tokens onto the battlefield.
+put two 1/1 white kithkin soldier creature tokens onto the battlefield.
+put two 1/1 white soldier ally creature tokens onto the battlefield.
 put two 1/1 white soldier creature tokens onto the battlefield.
 put two 1/1 white spirit creature tokens with flying onto the battlefield.
 put two 2/2 black zombie creature tokens onto the battlefield.
@@ -2640,6 +2652,7 @@ trample
 {u}{b}: @ gets -2/-0 until end of turn and is unblockable this turn.
 {u}{b}, pay 1 life: return @ to its owner's hand.
 {u}{b}: remove a blood counter from @.
+{u}{b}, {t}: put a 1/1 blue and black zombie wizard creature token onto the battlefield.
 {u}{b}, {t}, sacrifice @: target creature gets -3/-3 until end of turn. draw a card.
 {u}{b}, {t}: target player puts the top card of his or her library into his or her graveyard.
 {u}, discard a card: draw a card.
@@ -2893,6 +2906,7 @@ when @ enters the battlefield, put a +1/+1 counter on each other shaman creature
 when @ enters the battlefield, put a -1/-1 counter on target creature.
 when @ enters the battlefield, put a +1/+1 counter on target creature.
 when @ enters the battlefield, put a +1/+1 counter on target creature you don't control.
+when @ enters the battlefield, put a 1/1 green elf warrior creature token onto the battlefield.
 when @ enters the battlefield, put a 1/1 white bird creature token with flying onto the battlefield.
 when @ enters the battlefield, put a 1/1 white human creature token onto the battlefield.
 when @ enters the battlefield, put a 1/1 white soldier creature token onto the battlefield.
@@ -2909,13 +2923,18 @@ when @ enters the battlefield, put target red or green creature on top of its ow
 when @ enters the battlefield, put three 0/1 black serf creature tokens onto the battlefield.
 when @ enters the battlefield, put three -1/-1 counters on target creature.
 when @ enters the battlefield, put three 1/1 red goblin creature tokens onto the battlefield.
+when @ enters the battlefield, put three 1/1 white kithkin soldier creature tokens onto the battlefield.
 when @ enters the battlefield, put three 1/1 white soldier creature tokens onto the battlefield.
 when @ enters the battlefield, put two 1/1 black bat creature tokens with flying onto the battlefield.
+when @ enters the battlefield, put two 1/1 black goblin rogue creature tokens onto the battlefield.
+when @ enters the battlefield, put two 1/1 blue merfolk wizard creature tokens onto the battlefield.
 when @ enters the battlefield, put two 1/1 green and blue snake creature tokens onto the battlefield.
 when @ enters the battlefield, put two 1/1 green saproling creature tokens onto the battlefield.
+when @ enters the battlefield, put two 1/1 red and green goblin warrior creature tokens onto the battlefield.
 when @ enters the battlefield, put two 1/1 red goblin creature tokens onto the battlefield.
 when @ enters the battlefield, put two 1/1 white soldier creature tokens onto the battlefield.
 when @ enters the battlefield, put two 1/1 white spirit creature tokens with flying onto the battlefield.
+when @ enters the battlefield, put two 3/1 red elemental shaman creature tokens onto the battlefield.
 when @ enters the battlefield, return a black or red creature you control to its owner's hand.
 when @ enters the battlefield, return a blue or black creature you control to its owner's hand.
 when @ enters the battlefield, return a creature you control to its owner's hand.
@@ -3024,6 +3043,7 @@ when @ enters the battlefield, you may discard a card. if you do, draw a card.
 when @ enters the battlefield, you may exile target artifact or enchantment.
 when @ enters the battlefield, you may have target opponent discard a card.
 when @ enters the battlefield, you may have target opponent sacrifice a creature.
+when @ enters the battlefield, you may pay {x}. if you do, put x 1/1 red and white goblin soldier creature tokens onto the battlefield.
 when @ enters the battlefield, you may pay {x}. if you do, target creature gets +x/+0 until end of turn.
 when @ enters the battlefield, you may return target artifact card from your graveyard to the battlefield.
 when @ enters the battlefield, you may return target artifact card from your graveyard to your hand.
