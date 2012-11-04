@@ -182,6 +182,7 @@
 {1}, {t}, tap an untapped creature you control: target creature gets +1/+1 until end of turn.
 {1}, {t}: tap target artifact, creature, or land.
 {1}, {t}: tap target land.
+{1}, {t}: tap target non-human creature.
 {1}, {t}: target blinkmoth creature gets +1/+1 until end of turn.
 {1}, {t}: target creature gains first strike until end of turn.
 {1}, {t}: target creature gains flanking until end of turn.
@@ -621,6 +622,7 @@ at the beginning of each player's upkeep, that player sacrifices a land.
 at the beginning of each player's upkeep, that player sacrifices an artifact.
 at the beginning of each player's upkeep, that player sacrifices an artifact, creature, or land.
 at the beginning of each player's upkeep, that player sacrifices a nonbasic land.
+at the beginning of each player's upkeep, that player sacrifices a non-zombie creature.
 at the beginning of the end step, destroy all goblins.
 at the beginning of the end step, return @ to its owner's hand.
 at the beginning of the end step, sacrifice @.
@@ -635,6 +637,7 @@ at the beginning of your upkeep, @ deals 5 damage to target creature or player.
 at the beginning of your upkeep, destroy all artifacts and enchantments. they can't be regenerated.
 at the beginning of your upkeep, draw a card.
 at the beginning of your upkeep, each player discards a card.
+at the beginning of your upkeep, each player sacrifices a non-vampire creature.
 at the beginning of your upkeep, enchanted creature deals 1 damage to its owner.
 at the beginning of your upkeep, put a +1/+1 counter on @.
 at the beginning of your upkeep, put a -1/-1 counter on each creature.
@@ -1122,7 +1125,9 @@ destroy target nonblack creature. its controller loses 2 life.
 destroy target nonblack creature. you gain 3 life.
 destroy target noncreature artifact.
 destroy target noncreature permanent.
+destroy target non-elf creature.
 destroy target nongreen creature. it can't be regenerated.
+destroy target non-spirit creature.
 destroy target non-vampire, non-werewolf, non-zombie creature.
 destroy target nonwhite permanent.
 destroy target permanent.
@@ -1330,6 +1335,8 @@ enchant land you control
 enchant mountain
 enchant nonbasic land
 enchant nonblack creature
+enchant non-wall creature
+enchant non-wall creature you control
 enchant permanent
 enchant plains
 enchant player
@@ -1644,6 +1651,7 @@ nightmare creatures get +1/+1.
 nonartifact creatures can't block this turn.
 nonartifact creatures get -1/-1 until end of turn.
 nonblack creatures get -1/-1.
+non-eye creatures you control can't attack.
 nongreen creatures you control get +1/+0 until end of turn.
 nonwhite creatures get -1/-1.
 nonwhite creatures get -1/-1 until end of turn.
@@ -1692,6 +1700,7 @@ other merfolk creatures you control get +1/+1.
 other merfolk creatures you control get +1/+1 and have islandwalk.
 other myr creatures you control get +1/+1.
 other nonblack creatures you control get +1/+1.
+other non-human creatures you control get +1/+1 and have undying.
 other permanents you control have hexproof.
 other red creatures you control get +1/+1.
 other rigger creatures you control get +1/+0 and have haste.
@@ -1735,6 +1744,7 @@ pay 8 life: untap @.
 persist
 plainswalk
 prevent all combat damage that would be dealt by enchanted creature.
+prevent all combat damage that would be dealt by non-werewolf creatures.
 prevent all combat damage that would be dealt by target attacking creature this turn.
 prevent all combat damage that would be dealt by target creature this turn.
 prevent all combat damage that would be dealt this turn.
@@ -2076,6 +2086,7 @@ spirit creatures you control get +1/+1.
 @'s power and toughness are each equal to the number of green permanents you control.
 @'s power and toughness are each equal to the number of islands you control.
 @'s power and toughness are each equal to the number of lands you control.
+@'s power and toughness are each equal to the number of non-wall creatures you control.
 @'s power and toughness are each equal to the number of red permanents you control.
 @'s power and toughness are each equal to the number of swamps you control.
 @'s power and toughness are each equal to the number of untapped artifacts, creatures, and lands you control.
@@ -3078,6 +3089,7 @@ when @ leaves the battlefield, return the exiled card to the battlefield under i
 when @ leaves the battlefield, sacrifice a creature.
 when @ leaves the battlefield, sacrifice a land.
 when @ leaves the battlefield, sacrifice a land and @ deals 1 damage to you.
+when @ leaves the battlefield, sacrifice all non-ogre creatures you control.
 when @ leaves the battlefield, shuffle your library.
 when @ leaves the battlefield, that player gains 3 life.
 when @ leaves the battlefield, that player gains 6 life.

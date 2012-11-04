@@ -655,6 +655,7 @@ Color
 
 Tribal
     = CreatureType "s"?
+    / "non-" CreatureType
     ;
 
 CreatureType
