@@ -186,6 +186,7 @@
 {1}{u}: @ gains flying until end of turn.
 {1}{u}: @ gains shroud until end of turn.
 {1}: untap @.
+{1}: until end of turn, @ loses defender and gains flying.
 {1}{u}, {q}: @ gains flying until end of turn.
 {1}{u}{r}: draw a card, then discard a card.
 {1}{u}: return @ to its owner's hand.
@@ -438,6 +439,7 @@
 {3}{u}: gain control of target artifact.
 {3}{u}: @ gains flying until end of turn.
 {3}: untap @.
+{3}: until end of turn, @ loses defender and gains flying.
 {3}{u}: return @ to its owner's hand.
 {3}{u}, sacrifice a permanent: return target permanent to its owner's hand.
 {3}{u}, {t}: counter target spell unless its controller pays {2}.
@@ -1248,6 +1250,7 @@ gain control of target creature an opponent controls until end of turn. untap th
 gain control of target creature until end of turn. put a +1/+1 counter on it and untap it. that creature gains haste until end of turn.
 gain control of target creature until end of turn. untap that creature. it gains haste until end of turn.
 gain control of target creature until end of turn. untap that creature. it gets +x/+0 and gains haste until end of turn.
+gain control of target creature until end of turn. untap that creature. until end of turn, it gets +2/+0 and gains haste.
 gain control of target creature with converted mana cost x or less.
 gain control of target nonartifact, nonblack creature.
 {g}, discard a card: @ gains trample until end of turn.
@@ -1380,6 +1383,8 @@ level up {u}
 level up {w}
 lifelink
 living weapon
+metalcraft — as long as you control three or more artifacts, @ gets +2/+2 and has flying.
+metalcraft — as long as you control three or more artifacts, @ gets +4/+4 and has trample.
 metalcraft — creatures you control get +3/+0 as long as you control three or more artifacts.
 metalcraft — @ gets +2/+2 as long as you control three or more artifacts.
 metalcraft — @ has double strike as long as you control three or more artifacts.
@@ -2125,6 +2130,7 @@ untap target creature. it gets +2/+4 until end of turn.
 untap target creature. it gets +3/+3 until end of turn.
 untap target permanent.
 untap target permanent and gain control of it until end of turn. it gains haste until end of turn.
+until end of turn, target creature you control gets +3/+3 and other creatures you control get +1/+1.
 {u}: prevent all combat damage that would be dealt to and dealt by @ this turn.
 {u}: put @ on top of its owner's library.
 {u}{r}: @ deals 1 damage to target creature or player.
