@@ -441,11 +441,9 @@ Duration
 
 GainAction
     = (SelectPermanent SPACE)? "has " Keyword
-    / (SelectCreature SPACE)? "gains " Keyword
-    / (SelectCreature SPACE)? "loses " Keyword
-    / SelectPermanent " have " Keyword
-    / SelectCreature " gain " Keyword
-    / SelectCreature " lose " Keyword
+    / (SelectPermanent SPACE)? "have " Keyword
+    / (SelectPermanent SPACE)? "gain" "s"? SPACE Keyword
+    / (SelectPermanent SPACE)? "lose" "s"? SPACE Keyword
     ;
 
 PumpAction

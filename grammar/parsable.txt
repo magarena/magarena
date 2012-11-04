@@ -67,6 +67,7 @@
 {1}{g}, sacrifice @: destroy target artifact or enchantment.
 {1}{g}, sacrifice @: destroy target enchantment.
 {1}{g}, {t}: @ deals 5 damage to target attacking or blocking creature with flying.
+{1}{g}, {t}, discard a card: creatures you control get +1/+1 and gain trample until end of turn.
 {1}{g}, {t}: target creature doesn't untap during its controller's next untap step.
 {1}{g}, {t}: target creature gets -2/-0 until end of turn.
 {1}{g}, {t}: target creature gets +4/+4 until end of turn.
@@ -230,6 +231,7 @@
 {1}{w}: target creature gains first strike until end of turn.
 {1}{w}: target creature you control gains lifelink until end of turn.
 {1}{w}: target green creature gains first strike until end of turn.
+{1}{w}: target permanent you control gains protection from white until end of turn.
 {1}{w}, {t}: destroy target black creature.
 {1}{w}, {t}, discard a card: destroy target artifact or enchantment.
 {1}{w}, {t}: prevent all combat damage that would be dealt by target attacking creature this turn.
@@ -266,6 +268,8 @@
 {2}: @ gains mountainwalk until end of turn.
 {2}: @ gains trample until end of turn.
 {2}: @ gets +1/+0 until end of turn.
+{2}{g}{g}{g}: creatures you control get +3/+3 and gain trample until end of turn.
+{2}{g}{g}{g}: elf creatures you control get +3/+3 and gain trample until end of turn.
 {2}{g}: put a 1/1 green saproling creature token onto the battlefield.
 {2}{g}: regenerate @.
 {2}{g}, sacrifice @: @ deals 2 damage to target creature with flying.
@@ -524,6 +528,7 @@ all creatures gain fear until end of turn.
 all creatures get -1/-0.
 all creatures get -1/-0 until end of turn.
 all creatures get -1/-1.
+all creatures get +1/+1 and have haste.
 all creatures get -1/-1 until end of turn.
 all creatures get +1/+1 until end of turn.
 all creatures get -2/-0 until end of turn.
@@ -566,9 +571,12 @@ as @ enters the battlefield, you may pay 2 life. if you don't, @ enters the batt
 attacking creatures gain first strike until end of turn.
 attacking creatures get -1/-0.
 attacking creatures get +1/+0.
+attacking creatures get +1/+0 and gain first strike until end of turn.
+attacking creatures get +1/+0 and gain trample until end of turn.
 attacking creatures get +1/+1 until end of turn.
 attacking creatures get +2/+0 until end of turn.
 attacking creatures get -3/-0 until end of turn.
+attacking creatures with flying get -2/-2 and lose flying until end of turn.
 attacking creatures you control get +1/+0.
 attacking creatures you control get +2/+0.
 attacking creatures you control have lifelink.
@@ -850,22 +858,27 @@ creatures you control gain intimidate until end of turn.
 creatures you control gain reach until end of turn.
 creatures you control gain shroud until end of turn.
 creatures you control get +0/+1.
+creatures you control get +0/+1 and have reach.
 creatures you control get +0/+2.
 creatures you control get +0/+2 until end of turn.
 creatures you control get +0/+3 until end of turn.
 creatures you control get +0/+4 until end of turn.
 creatures you control get +0/+5 until end of turn.
 creatures you control get +1/+0.
+creatures you control get +1/+0 and gain fear until end of turn.
 creatures you control get +1/+0 until end of turn.
 creatures you control get -1/-1.
 creatures you control get +1/-1.
 creatures you control get +1/+1.
+creatures you control get +1/+1 and gain vigilance until end of turn.
 creatures you control get +1/+1 until end of turn.
 creatures you control get +2/+0 until end of turn.
 creatures you control get +2/+1 until end of turn.
 creatures you control get +2/+2.
+creatures you control get +2/+2 and have trample.
 creatures you control get +2/+2 until end of turn.
 creatures you control get +3/+3.
+creatures you control get +3/+3 and gain trample until end of turn.
 creatures you control get +3/+3 until end of turn.
 creatures you control get +7/+7 until end of turn.
 creatures you control have double strike.
@@ -1369,6 +1382,7 @@ equipped creature has trample.
 equipped creature has vigilance.
 equipped creature is indestructible.
 equipped creature is unblockable and has shroud.
+equipped creatures you control get +1/+0 and have first strike.
 exalted
 exile @.
 exile all creatures.
@@ -1522,6 +1536,7 @@ kicker {w}
 kicker {w}{w}
 kicker {x}
 kicker {x}{2}
+lands gain shroud until end of turn.
 level up {1}
 level up {1}{b}
 level up {1}{g}
@@ -1585,15 +1600,19 @@ other black creatures get +1/+1.
 other black creatures you control get +1/+1.
 other blue creatures you control get +1/+1.
 other creatures you control get +0/+1.
+other creatures you control get +0/+2 and have vigilance.
 other creatures you control get -1/-1.
 other creatures you control get +1/+1.
 other creatures you control get +2/+2.
 other creatures you control have exalted.
 other creatures you control have intimidate.
+other elf creatures get +1/+1 and have forestwalk.
 other elf creatures have forestwalk.
 other elf creatures you control get +1/+1.
 other enchantments you control have shroud.
+other goblin creatures get +1/+1 and have mountainwalk.
 other goblin creatures you control get +1/+1.
+other goblin creatures you control get +1/+1 and have haste.
 other green creatures you control get +1/+1.
 other green creatures you control have intimidate.
 other human creatures you control get +1/+1.
@@ -1603,6 +1622,7 @@ other red creatures you control get +1/+1.
 other scarecrow creatures you control get +1/+1.
 other spirit creatures you control get +0/+1.
 other spirit creatures you control get +1/+0.
+other spirit creatures you control get +1/+1 and have hexproof.
 other white creatures get +1/+1.
 other white creatures you control get +1/+1.
 other zombie creatures get +1/+1.
@@ -1798,6 +1818,7 @@ return @ to its owner's hand: regenerate target creature.
 {r}: target creature gains haste until end of turn.
 {r}: target creature gets +1/+0 until end of turn.
 {r}: target creature you control gains haste until end of turn.
+{r}: target goblin gains protection from white until end of turn.
 {r}, {t}: attacking creatures gain first strike until end of turn.
 {r}, {t}: @ deals 1 damage to target attacking or blocking creature.
 {r}, {t}: @ deals 1 damage to target creature or player.
@@ -1818,6 +1839,7 @@ return @ to its owner's hand: regenerate target creature.
 {r}: untap @.
 {r/w}: @ gets +1/+0 until end of turn.
 {r}{w}: @ gets +1/+1 until end of turn.
+{r/w}: red creatures and white creatures you control gain first strike until end of turn.
 {r}{w}, {t}: @ deals 2 damage to target attacking or blocking creature.
 sacrifice a beast: you gain 4 life.
 sacrifice a creature: add one mana of any color to your mana pool.
@@ -2491,6 +2513,7 @@ when @ enters the battlefield, add {r} to your mana pool.
 when @ enters the battlefield, counter target spell.
 when @ enters the battlefield, creatures you control gain shroud until end of turn.
 when @ enters the battlefield, creatures you control get +1/+0 until end of turn.
+when @ enters the battlefield, creatures you control get +1/+1 and gain haste until end of turn.
 when @ enters the battlefield, creatures you control get +1/+1 until end of turn.
 when @ enters the battlefield, destroy all tapped creatures.
 when @ enters the battlefield, destroy target artifact.
@@ -2835,6 +2858,7 @@ whenever you cast a multicolored spell, untap @.
 whenever you cast a multicolored spell, you may return @ from your graveyard to your hand.
 whenever you cast an artifact spell, draw a card.
 whenever you cast an artifact spell, you may draw a card. if you do, discard a card.
+whenever you cast an artifact spell, you may have target creature get +2/+0 and gain deathtouch until end of turn.
 whenever you cast an artifact spell, you may pay {1}. if you do, @ deals 1 damage to target creature or player.
 whenever you cast an artifact spell, you may pay {1}. if you do, you gain 3 life.
 whenever you cast an artifact spell, you may put a charge counter on @.
@@ -3040,8 +3064,11 @@ you gain 5 life.
 you gain 6 life.
 you gain 7 life.
 you gain 8 life.
+you gain shroud until end of turn.
 you gain x life.
 you gain x life and draw x cards.
+you have hexproof.
+you have shroud.
 you may tap or untap target artifact, creature, or land.
 you may tap or untap target creature.
 you may tap or untap target permanent.
