@@ -506,6 +506,7 @@
 {8}, {t}: target player puts the top eight cards of his or her library into his or her graveyard.
 {8}, {t}: you gain 10 life.
 affinity for artifacts
+all artifacts have shroud.
 all creatures gain fear until end of turn.
 all creatures get -1/-0.
 all creatures get -1/-0 until end of turn.
@@ -763,6 +764,7 @@ counter target spell unless its controller pays {x}. you gain x life.
 counter target spell. you gain 3 life.
 counter target spell. you gain 5 life.
 counter target spirit or arcane spell.
+creatures and lands you control have shroud.
 creatures with flying get +1/+1.
 creatures with flying get -2/-0.
 creatures with flying get +2/+0.
@@ -1034,6 +1036,7 @@ enchant creature with converted mana cost 2 or less
 enchant creature without flying
 enchant creature you control
 enchanted artifact doesn't untap during its controller's untap step.
+enchanted artifact has shroud.
 enchanted creature doesn't untap during its controller's untap step.
 enchanted creature gets -0/-1.
 enchanted creature gets +0/+1.
@@ -1122,6 +1125,7 @@ enchanted creature has trample.
 enchanted creature has vigilance.
 enchanted creature loses flying.
 enchanted creatures you control have shroud.
+enchanted land has shroud.
 enchanted permanent doesn't untap during its controller's untap step.
 enchant enchantment
 enchant equipment
@@ -1389,6 +1393,7 @@ metalcraft — creatures you control get +3/+0 as long as you control three or m
 metalcraft — @ gets +2/+2 as long as you control three or more artifacts.
 metalcraft — @ has double strike as long as you control three or more artifacts.
 metalcraft — @ has flying as long as you control three or more artifacts.
+metalcraft — @ has protection from all colors as long as you control three or more artifacts.
 miracle {1}{r}
 miracle {1}{u}
 miracle {g}
@@ -1436,6 +1441,7 @@ other green creatures you control get +1/+1.
 other green creatures you control have intimidate.
 other human creatures you control get +1/+1.
 other nonblack creatures you control get +1/+1.
+other permanents you control have hexproof.
 other red creatures you control get +1/+1.
 other scarecrow creatures you control get +1/+1.
 other spirit creatures you control get +0/+1.
@@ -1488,6 +1494,7 @@ prevent the next 3 damage that would be dealt to target creature or player this 
 prevent the next 3 damage that would be dealt to target creature this turn.
 prevent the next 4 damage that would be dealt to target creature or player this turn.
 prevent the next x damage that would be dealt to you this turn.
+protection from all colors
 protection from artifacts
 protection from black
 protection from blue

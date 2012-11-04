@@ -78,7 +78,7 @@ Action
     / PreventAction
     / RegenerateAction
     / PumpAction
-    / GainsAction
+    / GainAction
     / BounceAction
     / AddManaAction
     / ReturnAction
@@ -123,6 +123,7 @@ Keyword
     / "exalted"
     / "shroud"
     / "persist"
+    / "protection from all colors"
     / "protection from black"
     / "protection from red"
     / "protection from white"
@@ -411,11 +412,11 @@ Duration
     / "this turn"
     ;
 
-GainsAction
-    = (SelectCreature SPACE)? "has " Keyword
+GainAction
+    = (SelectPermanent SPACE)? "has " Keyword
     / (SelectCreature SPACE)? "gains " Keyword
     / (SelectCreature SPACE)? "loses " Keyword
-    / SelectCreature " have " Keyword
+    / SelectPermanent " have " Keyword
     / SelectCreature " gain " Keyword
     / SelectCreature " lose " Keyword
     ;
@@ -499,7 +500,7 @@ SelectCreature
 SelectPermanent
     = "@"
     / "it"
-    / SelectOp SPACE RestrictedPermanentCombination
+    / (SelectOp SPACE)? RestrictedPermanentCombination
     ;
 
 SelectSpell
