@@ -41,10 +41,16 @@
 {1}{b}, {t}: target creature gets -1/-1 until end of turn.
 {1}{b}, {t}: target creature gets -2/-2 until end of turn.
 {1}{b}, {t}: target player loses 1 life.
++1: creatures you control get +1/+1 and gain haste until end of turn.
++1: @ deals 1 damage to target creature or player.
++1: @ deals 1 damage to target player.
 {1}, discard a card at random: @ gets +2/+0 until end of turn.
 {1}, discard a card at random: put a +1/+1 counter on target creature.
 {1}, discard a card: @ gets +1/+1 until end of turn.
 {1}, discard a card: put a +1/+1 counter on @.
++1: draw a card. target player puts the top card of his or her library into his or her graveyard.
++1: draw a card, then discard a card at random.
++1: each player discards a card.
 {1}{g}: add one mana of any color to your mana pool.
 {1}: @ gains first strike until end of turn.
 {1}{g}: all creatures get -1/-0 until end of turn.
@@ -90,6 +96,10 @@
 {1}, pay 2 life: @ deals 1 damage to target creature or player.
 {1}: prevent the next 1 damage that would be dealt to target creature you control this turn.
 {1}: prevent the next 1 damage that would be dealt to @ this turn.
++1: put a 1/1 black vampire creature token with lifelink onto the battlefield.
++1: put a 1/1 white soldier creature token onto the battlefield.
+-1: put a 3/3 green beast creature token onto the battlefield.
++1: put a 3/3 green beast creature token onto the battlefield.
 {1}{r}: @ becomes a 2/1 red warrior creature with first strike until end of turn. it's still a land.
 {1}{r}: @ deals 1 damage to each creature without flying.
 {1}{r}: @ deals 1 damage to target creature.
@@ -109,6 +119,7 @@
 {1}, remove four +1/+1 counters from @: target player draws three cards.
 {1}, remove two charge counters from @: put a 2/2 colorless spawn artifact creature token onto the battlefield.
 {1}, return a land you control to its owner's hand: put a 1/1 blue illusion creature token with flying onto the battlefield.
+-1: return target creature to its owner's hand.
 {1}: return target land you control to its owner's hand.
 {1}: return @ to its owner's hand.
 {1}{r}: @ gains first strike until end of turn.
@@ -166,11 +177,17 @@
 {1}, {t}: add {w} to your mana pool.
 {1}, tap an untapped creature you control: untap enchanted creature.
 {1}: tap enchanted creature.
++1: tap target permanent. it doesn't untap during its controller's next untap step.
+-1: target artifact becomes a 5/5 artifact creature.
 {1}: target creature gains flying until end of turn.
++1: target creature gets +3/+3 and gains flying until end of turn.
 {1}: target creature with power 5 or greater gains first strike until end of turn.
 {1}: target creature with power 5 or greater gains trample until end of turn.
 {1}: target creature with power 5 or greater gains vigilance until end of turn.
 {1}: target creature with power 5 or greater is indestructible this turn.
++1: target permanent doesn't untap during its controller's next untap step.
++1: target player discards a card.
+-1: target player draws a card.
 {1}, {t}: attacking creatures get +1/+0 until end of turn.
 {1}, {t}: @ deals 1 damage to target attacking creature.
 {1}, {t}: @ deals 1 damage to target creature. tap that creature.
@@ -225,6 +242,7 @@
 {1}{u}: @ gains shroud until end of turn.
 {1}{u}: @ is unblockable this turn.
 {1}: untap @.
++1: untap target mountain. it becomes a 4/4 red elemental creature until end of turn. it's still a land.
 {1}: until end of turn, @ loses defender and gains flying.
 {1}{u}, {q}: @ gains flying until end of turn.
 {1}{u}{r}: draw a card, then discard a card.
@@ -288,6 +306,7 @@
 {1}{w}{w}: target knight creature gets +1/+1 until end of turn.
 {1}{w}{w}, {t}: return target creature an opponent controls to its owner's hand.
 {1}{w}{w}, {t}: target creature gains vigilance until end of turn.
++1: you gain 2 life.
 {2}{b}: @ becomes a 5/5 black horror artifact creature with trample until end of turn.
 {2}{b}{b}: put a -1/-1 counter on target creature.
 {2}{b}{b}: target creature gets -1/-1 until end of turn. put a +1/+1 counter on @.
@@ -310,13 +329,19 @@
 {2}{b}, {t}, sacrifice a goblin: destroy target land.
 {2}: @ deals 1 damage to target creature.
 {2}: @ deals 1 damage to target creature or player. sacrifice @.
++2: @ deals 2 damage to target creature or player and you gain 2 life.
+-2: @ deals 3 damage to target creature or player and you gain 3 life.
+-2: destroy target tapped creature.
 {2}: discard a card.
 {2}, discard a card at random: @ deals 2 damage to target creature or player.
 {2}, discard a card: put a 1/1 white pegasus creature token with flying onto the battlefield.
++2: each player draws a card.
 {2}: enchanted forest becomes a 4/4 green spirit creature until end of turn. it's still a land.
 {2}: enchanted island becomes a 3/2 blue spirit creature with flying until end of turn. it's still a land.
 {2}: enchanted mountain becomes a 6/1 red spirit creature until end of turn. it's still a land.
 {2}: equipped creature gains hexproof until end of turn.
+-2: gain control of target creature.
+-2: gain control of target creature until end of turn. untap that creature. it gains haste until end of turn.
 {2}: @ gains first strike until end of turn.
 {2}: @ gains flying until end of turn.
 {2}: @ gains mountainwalk until end of turn.
@@ -345,6 +370,7 @@
 {2}: prevent the next 1 damage that would be dealt to you this turn.
 {2}: put a 1/1 colorless sliver creature token onto the battlefield.
 {2}: put a charge counter on @.
+-2: put three 1/1 white soldier creature tokens onto the battlefield.
 {2}, {q}: add one mana of any color to your mana pool.
 {2}{r}: @ deals 1 damage to target player.
 {2}: regenerate @.
@@ -396,6 +422,7 @@
 {2}: target creature you control gains flying until end of turn.
 {2}: target green or blue creature gets +0/+1 until end of turn.
 {2}: target ninja creature is unblockable this turn.
+-2: target player sacrifices a creature.
 {2}: target red creature gains haste until end of turn.
 {2}: target red or white creature gains trample until end of turn.
 {2}: target white creature gains persist until end of turn.
@@ -484,9 +511,11 @@
 {3}{b}, {t}, sacrifice a human: destroy target creature.
 {3}{b}, {t}: target creature gains swampwalk until end of turn.
 {3}: @ deals 1 damage to target creature or player.
++3: destroy target noncreature permanent.
 {3}, discard a card at random: target creature gets +2/+2 until end of turn.
 {3}: each player puts the top two cards of his or her library into his or her graveyard.
 {3}: exile target creature you control.
+-3: exile target permanent.
 {3}: gain control of target sliver.
 {3}: @ gains flying until end of turn.
 {3}: @ gets +1/+0 until end of turn.
@@ -568,6 +597,8 @@
 {4}{b}{b}, {t}, sacrifice @: target creature gets -6/-6 until end of turn.
 {4}: @ becomes a 4/2 golem artifact creature until end of turn. it's still a land.
 {4}{b}, sacrifice a creature: return target creature card from your graveyard to your hand.
+-4: creatures you control get +3/+3 and gain trample until end of turn.
+-4: each dragon creature you control deals damage equal to its power to target player.
 {4}: @ gains flying until end of turn.
 {4}{g}: put a +1/+1 counter on target creature.
 {4}{g}, sacrifice a creature: destroy target creature with flying.
@@ -607,7 +638,9 @@
 {5}, {t}: return target enchantment card from your graveyard to your hand.
 {5}, {t}, sacrifice @: put a 3/4 colorless gargoyle artifact creature token with flying onto the battlefield.
 {5}, {t}, sacrifice @: return target card from your graveyard to your hand.
+-6: put five 4/4 red dragon creature tokens with flying onto the battlefield.
 {7}{b}: target creature gets -3/-3 until end of turn.
+-7: destroy all lands target player controls.
 {7}{g}: @ gets +5/+5 until end of turn.
 {7}{r}: @ deals 5 damage to target player.
 {7}, {t}: exile target creature you don't control.
@@ -3489,6 +3522,7 @@ wither
 {w}{w}{w}: regenerate @.
 {x}{b}{b}: target creature gets -0/-x until end of turn and @ gets +x/+0 until end of turn.
 {x}{b}, {t}, discard a card: target creature gets +x/+0 until end of turn.
+-x: @ deals x damage to target creature.
 {x}: equipped creature gets +x/+0 until end of turn.
 {x}{g}{g}: @ deals x damage to each creature with flying.
 {x}{g}, {t}: @ deals x damage to target creature with flying.

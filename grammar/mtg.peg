@@ -46,6 +46,7 @@ ActivatedAbility
 
 ActivationCosts
     = Action ("," SPACE Action)*
+    / SignedNumber
     ;
 
 TriggeredAbility
