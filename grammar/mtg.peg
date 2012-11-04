@@ -570,11 +570,12 @@ RestrictedSpell
     ;
 
 SpellRestriction
-    = "creature"
-    / "white, blue, black, or red"
+    = Color ", " Color ", " Color ", or " Color
+    / Color ", " Color ", or " Color
     / Color " or " Color
     / Color
     / "non" Color
+    / "creature"
     / "multicolored"
     / "noncreature"
     / "enchantment"
@@ -607,14 +608,14 @@ RestrictedCreature
     ;
 
 PermanentRestriction
-    = Color " or " Color
+    = Color ", " Color ", " Color ", or " Color
+    / Color ", " Color ", or " Color
+    / Color " or " Color
     / Color
     / "non" Color
     / "tapped"
     / "untapped"
     / "noncreature"
-    / "nongreen"
-    / "nonwhite"
     / SelectPlayer " control" "s"?
     / SelectPlayer " don't control"
     / "nonartifact, nonblack"
