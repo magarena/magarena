@@ -684,7 +684,7 @@ RestrictedLand
     ;
 
 RestrictedTribal
-    = Tribal
+    = (PermanentRestriction SPACE)? Tribal (SPACE PermanentRestriction)?
     ;
 
 RestrictedSpell

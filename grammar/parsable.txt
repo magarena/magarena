@@ -99,6 +99,7 @@
 {1}{r}, discard a card at random: @ deals 1 damage to target creature or player.
 {1}: regenerate @.
 {1}: regenerate target creature with power 5 or greater.
+{1}: regenerate target golem you control.
 {1}, remove a +1/+1 counter from a creature you control: put a 1/1 green saproling creature token onto the battlefield.
 {1}, remove a +1/+1 counter from @: prevent all combat damage that would be dealt this turn.
 {1}, remove a +1/+1 counter from @: put a 1/1 colorless pentavite artifact creature token with flying onto the battlefield.
@@ -208,6 +209,7 @@
 {1}, {t}: target creature gains first strike until end of turn.
 {1}, {t}: target creature gains flanking until end of turn.
 {1}, {t}: target creature gains protection from artifacts until end of turn.
+{1}, {t}: untap each other myr you control.
 {1}, {t}: untap target artifact.
 {1}, {t}: untap target creature.
 {1}, {t}: untap target land.
@@ -237,6 +239,7 @@
 {1}{u}, {t}: put a 2/2 blue homunculus creature token onto the battlefield, then sacrifice a creature.
 {1}{u}, {t}: put target green creature on top of its owner's library.
 {1}{u}, {t}: return target kavu to its owner's hand.
+{1}{u}, {t}: return target wizard you control to its owner's hand.
 {1}{u}, {t}, sacrifice @: draw two cards.
 {1}{u}, {t}: target creature gains flying until end of turn.
 {1}{u}, {t}: you may tap or untap target creature.
@@ -734,6 +737,7 @@ at the beginning of your upkeep, put a pain counter on @.
 at the beginning of your upkeep, put a pin counter on @.
 at the beginning of your upkeep, put a plague counter on @.
 at the beginning of your upkeep, put a spore counter on @.
+at the beginning of your upkeep, put a spore counter on each fungus you control.
 at the beginning of your upkeep, put a tide counter on @.
 at the beginning of your upkeep, put a time counter on @.
 at the beginning of your upkeep, put a token that's a copy of enchanted creature onto the battlefield.
@@ -1294,6 +1298,7 @@ each player sacrifices a creature.
 each player sacrifices a land.
 each player sacrifices an enchantment.
 each player sacrifices a permanent.
+each wolf you control has deathtouch.
 echo {0}
 echo {1}{b}
 echo {1}{g}
@@ -1728,6 +1733,7 @@ kicker {x}{2}
 knight creatures you control have double strike.
 lands gain shroud until end of turn.
 legendary creatures you control get +2/+2.
+legendary snakes you control have shroud.
 level up {1}
 level up {1}{b}
 level up {1}{g}
@@ -1820,6 +1826,7 @@ other elf creatures you control get +1/+1.
 other enchantments you control have shroud.
 other faerie creatures you control get +0/+1.
 other faerie creatures you control get +1/+1.
+other faeries you control have shroud.
 other giant creatures you control get +2/+2 and have trample.
 other goblin creatures get +1/+1 and have mountainwalk.
 other goblin creatures you control get +1/+1.
@@ -2294,7 +2301,10 @@ spirit creatures you control get +1/+1.
 @'s power and toughness are each equal to the number of islands you control.
 @'s power and toughness are each equal to the number of lands you control.
 @'s power and toughness are each equal to the number of non-wall creatures you control.
+@'s power and toughness are each equal to the number of rats you control.
 @'s power and toughness are each equal to the number of red permanents you control.
+@'s power and toughness are each equal to the number of soldiers you control.
+@'s power and toughness are each equal to the number of spirits you control.
 @'s power and toughness are each equal to the number of swamps you control.
 @'s power and toughness are each equal to the number of untapped artifacts, creatures, and lands you control.
 @'s power and toughness are each equal to the number of white permanents you control.
@@ -2354,6 +2364,8 @@ tap all creatures.
 tap all creatures without flying.
 tap all nonwhite creatures.
 tap an untapped artifact you control: @ gets +1/+1 until end of turn.
+tap an untapped cephalid you control: tap target permanent.
+tap an untapped cleric you control: prevent the next 2 damage that would be dealt to target creature or player this turn.
 tap an untapped creature you control: @ deals 1 damage to target player.
 tap an untapped creature you control: @ gains flying until end of turn.
 tap an untapped creature you control: @ gets +1/+1 until end of turn.
@@ -2362,7 +2374,14 @@ tap an untapped creature you control: tap target artifact, creature, or land.
 tap an untapped creature you control: tap target artifact or creature.
 tap an untapped creature you control: target player puts the top card of his or her library into his or her graveyard.
 tap an untapped creature you control: untap target basic land.
+tap an untapped druid you control: add {g} to your mana pool.
+tap an untapped dwarf you control: target creature gets +2/+0 until end of turn.
+tap an untapped merfolk you control: @ gets +2/+1 until end of turn.
+tap an untapped merfolk you control: target player puts the top card of his or her library into his or her graveyard.
 tap an untapped swamp you control: @ deals 1 damage to target creature or player.
+tap an untapped wizard you control: counter target spell unless its controller pays {1}.
+tap an untapped wizard you control: draw a card.
+tap an untapped zombie you control: target creature gains swampwalk until end of turn.
 tap target artifact, creature, or land.
 tap target creature.
 tap target creature. it doesn't untap during its controller's next untap step.
@@ -2958,6 +2977,7 @@ when @ enters the battlefield, it deals 4 damage to target player.
 when @ enters the battlefield, it deals 4 damage to you.
 when @ enters the battlefield, it deals 6 damage to each creature with flying.
 when @ enters the battlefield, it deals damage equal to its power to target creature or player.
+when @ enters the battlefield, it deals damage to target player equal to the number of humans you control.
 when @ enters the battlefield, it deals damage to target player equal to the number of nonbasic lands that player controls.
 when @ enters the battlefield, other mercenary creatures get +1/+1 until end of turn.
 when @ enters the battlefield, prevent all damage that would be dealt to artifact creatures this turn.
@@ -3521,3 +3541,4 @@ you may tap or untap target artifact, creature, or land.
 you may tap or untap target creature.
 you may tap or untap target permanent.
 zombie creatures you control get +2/+1.
+zombies you control have lifelink.
