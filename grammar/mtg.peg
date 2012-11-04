@@ -259,6 +259,7 @@ AttacksTrigger
 
 PoisonAction
     = "gets " Count " poison counters"
+    / "gets a poison counter"
     ;
 
 ReanimateAction
@@ -267,6 +268,7 @@ ReanimateAction
 
 MillAction
     = "put" "s"? " the top " Count " cards of his or her library into his or her graveyard"
+    / "put" "s"? " the top card of his or her library into his or her graveyard"
     ;
 
 DoesntUntapAction

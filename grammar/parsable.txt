@@ -548,6 +548,7 @@ at the beginning of each player's upkeep, that player discards a card at random.
 at the beginning of each player's upkeep, that player loses 1 life.
 at the beginning of each player's upkeep, that player loses 1 life and discards a card.
 at the beginning of each player's upkeep, that player loses 2 life and draws two cards.
+at the beginning of each player's upkeep, that player puts the top card of his or her library into his or her graveyard.
 at the beginning of each player's upkeep, that player returns a creature he or she controls to its owner's hand.
 at the beginning of each player's upkeep, that player sacrifices a green or white permanent.
 at the beginning of each player's upkeep, that player sacrifices a land.
@@ -948,6 +949,7 @@ destroy target creature or land. it can't be regenerated.
 destroy target creature with converted mana cost 3 or less. it can't be regenerated.
 destroy target creature with converted mana cost x.
 destroy target creature with flying.
+destroy target creature with flying. its controller gets a poison counter.
 destroy target creature with flying. you gain 2 life.
 destroy target creature with power 2 or less.
 destroy target creature with power 4 or greater.
@@ -1825,6 +1827,7 @@ tap an untapped creature you control: @ gets +1/+1 until end of turn.
 tap an untapped creature you control: prevent the next 1 damage that would be dealt to target creature this turn.
 tap an untapped creature you control: tap target artifact, creature, or land.
 tap an untapped creature you control: tap target artifact or creature.
+tap an untapped creature you control: target player puts the top card of his or her library into his or her graveyard.
 tap an untapped creature you control: untap target basic land.
 tap target artifact, creature, or land.
 tap target creature.
@@ -1922,6 +1925,7 @@ target opponent puts the top seven cards of his or her library into his or her g
 target opponent sacrifices a creature.
 target player discards a card.
 target player discards a card at random.
+target player discards a card, then puts the top card of his or her library into his or her graveyard.
 target player discards two cards at random.
 target player discards x cards at random.
 target player draws a card.
@@ -1943,6 +1947,7 @@ target player loses 2 life and you gain 2 life.
 target player loses 4 life and you gain 4 life.
 target player loses 5 life.
 target player loses 5 life and you gain 5 life.
+target player puts the top card of his or her library into his or her graveyard.
 target player puts the top five cards of his or her library into his or her graveyard.
 target player puts the top four cards of his or her library into his or her graveyard.
 target player puts the top ten cards of his or her library into his or her graveyard.
@@ -1997,6 +2002,7 @@ target player sacrifices a permanent.
 {t}: draw three cards.
 {t}: each player draws a card.
 {t}: each player draws a card, then discards a card.
+{t}: each player puts the top card of his or her library into his or her graveyard.
 {t}: enchanted creature gets +2/-2 until end of turn.
 {t}, exile a creature you control: put a storage counter on @.
 {t}: exile target creature and put a +1/+1 counter on @.
@@ -2096,6 +2102,7 @@ trample
 {t}: target creature with power 5 or greater gains haste until end of turn.
 {t}: target player draws a card, then discards a card.
 {t}: target player loses 1 life.
+{t}: target player puts the top card of his or her library into his or her graveyard.
 {t}: target red or green creature gets -2/-0 until end of turn.
 {t}: untap enchanted creature.
 {t}: untap target artifact or creature.
@@ -2111,6 +2118,7 @@ trample
 {u/b}: @ gets +1/+1 until end of turn.
 {u}{b}, pay 1 life: return @ to its owner's hand.
 {u}{b}, {t}, sacrifice @: target creature gets -3/-3 until end of turn. draw a card.
+{u}{b}, {t}: target player puts the top card of his or her library into his or her graveyard.
 {u}, discard a card: draw a card.
 {u}, discard a card: return @ to its owner's hand.
 {u}: enchanted creature gains flying until end of turn.
@@ -2285,6 +2293,7 @@ when @ enters the battlefield, draw two cards.
 when @ enters the battlefield, each opponent discards a card.
 when @ enters the battlefield, each player discards a card.
 when @ enters the battlefield, each player draws two cards, then discards a card at random.
+when @ enters the battlefield, each player gets a poison counter.
 when @ enters the battlefield, each player loses 1 life.
 when @ enters the battlefield, each player loses 3 life.
 when @ enters the battlefield, each player sacrifices a creature.
@@ -2391,6 +2400,7 @@ when @ enters the battlefield, target player loses 1 life.
 when @ enters the battlefield, target player loses 2 life and you gain 2 life.
 when @ enters the battlefield, target player loses 3 life.
 when @ enters the battlefield, target player loses 6 life.
+when @ enters the battlefield, target player puts the top card of his or her library into his or her graveyard.
 when @ enters the battlefield, target player puts the top five cards of his or her library into his or her graveyard.
 when @ enters the battlefield, untap all creatures you control.
 when @ enters the battlefield, untap enchanted creature.
@@ -2530,6 +2540,7 @@ whenever @ deals damage to a creature, put a +1/+1 counter on @.
 whenever @ deals damage to a creature, tap that creature and it doesn't untap during its controller's next untap step.
 whenever @ deals damage to a player, tap target land that player controls. that land doesn't untap during its controller's next untap step.
 whenever @ deals damage to a player, that player discards a card.
+whenever @ deals damage to a player, that player gets a poison counter.
 whenever @ deals damage to a player, that player gets two poison counters.
 whenever @ deals damage to a player, you may draw a card.
 whenever @ deals damage, you gain that much life.
