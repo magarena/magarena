@@ -622,6 +622,7 @@ PermanentRestriction
     / "nonartifact"
     / "artifact"
     / "other than @"
+    / "legendary"
     / "with converted mana cost " Number " or less"
     / "with converted mana cost " Number " or greater"
     / "with converted mana cost " Number
