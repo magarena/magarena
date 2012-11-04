@@ -709,6 +709,7 @@ battle cry
 {b}, discard a card: @ gains flying until end of turn.
 {b}, discard a card: regenerate @.
 {b}, discard a creature card: return target creature card from your graveyard to your hand.
+beasts can't block.
 {b}: enchanted creature gets -1/-1 until end of turn.
 {b}: @ gains deathtouch until end of turn.
 {b}: @ gains fear until end of turn.
@@ -725,6 +726,8 @@ battle cry
 {b/g}, remove a -1/-1 counter from a creature you control: @ gets +3/+3 until end of turn.
 {b/g}, remove a -1/-1 counter from @: regenerate @.
 bird creatures get +1/+1.
+black creatures can't attack or block.
+black creatures can't block.
 black creatures get +1/+1.
 black creatures get +2/+0 until end of turn.
 black creatures you control have protection from white.
@@ -783,6 +786,7 @@ buyback {2}{w}{w}
 buyback {3}
 buyback {4}
 buyback {5}
+@ can't attack or block.
 @ can't be countered.
 @ can't block.
 changeling
@@ -822,11 +826,18 @@ counter target spell. you gain 3 life.
 counter target spell. you gain 5 life.
 counter target spirit or arcane spell.
 creatures and lands you control have shroud.
+creatures can't attack.
+creatures can't attack this turn.
+creatures can't block.
 creatures with flying get +1/+1.
 creatures with flying get -2/-0.
 creatures with flying get +2/+0.
+creatures without flying can't attack.
+creatures without flying can't block this turn.
 creatures without flying get -2/-0.
 creatures without flying have reach.
+creatures with power 7 or greater can't attack or block.
+creatures you control can't attack.
 creatures you control gain double strike until end of turn.
 creatures you control gain haste until end of turn.
 creatures you control gain intimidate until end of turn.
@@ -913,6 +924,7 @@ cumulative upkeep {w}
 @ deals 3 damage to target creature or player.
 @ deals 3 damage to target creature or player and you gain 3 life.
 @ deals 3 damage to target creature or player. you gain 3 life.
+@ deals 3 damage to target creature. other creatures can't attack this turn.
 @ deals 3 damage to target creature with flying.
 @ deals 3 damage to target nonblack creature. you gain 3 life.
 @ deals 3 damage to target player.
@@ -1035,6 +1047,7 @@ destroy target green creature. it can't be regenerated.
 destroy target green or white creature.
 destroy target human creature.
 destroy target land.
+destroy target land. creatures without flying can't block this turn.
 destroy target land. @ deals 13 damage to target creature.
 destroy target land. @ deals 1 damage to each human creature.
 destroy target land. its controller discards a card.
@@ -1141,6 +1154,9 @@ enchant creature without flying
 enchant creature you control
 enchanted artifact doesn't untap during its controller's untap step.
 enchanted artifact has shroud.
+enchanted creature can't attack.
+enchanted creature can't attack or block.
+enchanted creature can't block.
 enchanted creature doesn't untap during its controller's untap step.
 enchanted creature gets -0/-1.
 enchanted creature gets +0/+1.
@@ -1396,6 +1412,7 @@ golem creatures you control have first strike.
 golem creatures you control have flying.
 golem creatures you control have trample.
 golem creatures you control have vigilance.
+green creatures and white creatures can't block this turn.
 green creatures have forestwalk.
 green creatures you control gain forestwalk until end of turn.
 green creatures you control get +0/+2.
@@ -1535,6 +1552,7 @@ multikicker {g}
 multikicker {r}
 multikicker {u}
 multikicker {w}
+nonartifact creatures can't block this turn.
 nonartifact creatures get -1/-1 until end of turn.
 nonblack creatures get -1/-1.
 other artifact creatures you control get +1/+1.
@@ -1676,6 +1694,7 @@ remove three spore counters from @: put a 1/1 green saproling creature token ont
 remove three spore counters from @: regenerate @.
 remove two +1/+1 counters from @: draw a card.
 remove two +1/+1 counters from @: @ gets +4/+4 until end of turn.
+{r}: enchanted creature can't block this turn.
 {r}: enchanted creature deals 1 damage to target creature with flying.
 {r}: enchanted creature gets +1/+0 until end of turn.
 {r}: enchanted creature gets +1/-1 until end of turn.
@@ -1740,6 +1759,7 @@ return @ to its owner's hand: regenerate target creature.
 {r}, sacrifice a creature: @ deals 1 damage to target player.
 {r}, sacrifice a land: @ deals 1 damage to each creature without flying.
 {r}, sacrifice an artifact: @ gets +3/+0 until end of turn.
+{r}, sacrifice an artifact: target creature can't block this turn.
 {r}, sacrifice a zombie: @ deals 2 damage to target creature or player.
 {r}, sacrifice @: @ deals 1 damage to each creature without flying.
 {r}, sacrifice @: @ deals 2 damage to each creature.
@@ -1748,6 +1768,7 @@ return @ to its owner's hand: regenerate target creature.
 {r}, sacrifice @: destroy target artifact.
 {r}, sacrifice @: destroy target land.
 {r}, sacrifice @: target black creature gets +1/+0 and gains first strike until end of turn.
+{r}, sacrifice @: target creature can't block this turn.
 {r}, sacrifice @: target green creature gets +1/+0 and gains first strike until end of turn.
 {r}: tap target wall.
 {r}: target creature gains haste until end of turn.
@@ -1763,9 +1784,11 @@ return @ to its owner's hand: regenerate target creature.
 {r}, {t}, discard a card: @ deals 1 damage to target creature or player.
 {r}, {t}, discard a card: destroy target blue permanent.
 {r}, {t}, discard a card: destroy target wall.
+{r}, {t}, discard a card: target creature can't block this turn.
 {r}, {t}, sacrifice a creature: @ deals 2 damage to target creature or player.
 {r}, {t}, sacrifice a goblin: red creatures get +1/+1 until end of turn.
 {r}, {t}, sacrifice @: @ deals damage equal to its power to target creature.
+{r}, {t}: target creature can't block this turn.
 {r}, {t}: target creature gains first strike until end of turn.
 {r}, {t}: target creature gets +2/+0 until end of turn.
 {r}: untap @.
@@ -1982,6 +2005,9 @@ tap target untapped creature. it deals damage equal to its power to its controll
 tap target untapped creature. that creature deals damage equal to its power to its controller.
 tap target untapped creature you control. if you do, it deals damage equal to its power to target attacking or blocking creature an opponent controls.
 target attacking creature gets +x/+0 until end of turn.
+target creature can't attack or block this turn.
+target creature can't attack this turn.
+target creature can't block this turn.
 target creature gains deathtouch until end of turn.
 target creature gains deathtouch until end of turn. regenerate it.
 target creature gains double strike until end of turn.
@@ -2055,6 +2081,7 @@ target creature gets +x/+x until end of turn.
 target creature loses flying until end of turn.
 target creature loses shadow until end of turn.
 target creature with flying loses flying until end of turn. @ deals damage to that creature equal to the number of forests you control.
+target creature without flying can't block this turn.
 target creature you control deals damage equal to its power to target creature with flying.
 target creature you control gets +0/+1 and gains hexproof until end of turn.
 target creature you control gets +1/+1 and gains hexproof until end of turn.
@@ -2217,6 +2244,7 @@ trample
 {t}, sacrifice @: return target artifact card from your graveyard to your hand.
 {t}, sacrifice @: return target enchantment card from your graveyard to your hand.
 {t}, sacrifice @: target attacking creature without flying gets -1/-2 until end of turn.
+{t}, sacrifice @: target creature can't block this turn.
 {t}, sacrifice @: target creature gains flying until end of turn.
 {t}, sacrifice @: target creature gets -1/-1 until end of turn.
 {t}, sacrifice @: target creature gets -2/-2 until end of turn.
@@ -2238,6 +2266,8 @@ trample
 {t}: target attacking or blocking creature gets +2/+2 until end of turn.
 {t}: target black creature gets -2/-0 until end of turn.
 {t}: target black or red creature gains haste until end of turn.
+{t}: target creature can't attack or block this turn.
+{t}: target creature can't block this turn.
 {t}: target creature gains flying until end of turn.
 {t}: target creature gains forestwalk until end of turn.
 {t}: target creature gains haste until end of turn.
@@ -2549,6 +2579,7 @@ when @ enters the battlefield, tap enchanted permanent.
 when @ enters the battlefield, tap target creature an opponent controls. that creature doesn't untap during its controller's next untap step.
 when @ enters the battlefield, tap target creature an opponent controls. that creature doesn't untap during its controller's untap step for as long as you control @.
 when @ enters the battlefield, target creature an opponent controls deals damage equal to its power to that player.
+when @ enters the battlefield, target creature can't block this turn.
 when @ enters the battlefield, target creature gains fear until end of turn.
 when @ enters the battlefield, target creature gains first strike until end of turn.
 when @ enters the battlefield, target creature gains flying until end of turn.
@@ -2621,6 +2652,7 @@ whenever @ attacks, all other creatures you control get +1/+1 until end of turn.
 whenever @ attacks, attacking creatures gain first strike until end of turn.
 whenever @ attacks, attacking creatures gain trample until end of turn.
 whenever @ attacks, attacking creatures get +1/+1 until end of turn.
+whenever @ attacks, creatures with power 1 or less can't block this turn.
 whenever @ attacks, creatures you control get +2/+0 until end of turn.
 whenever @ attacks, destroy all other creatures.
 whenever @ attacks, each opponent loses 1 life.
@@ -2644,11 +2676,13 @@ whenever @ attacks, put a +1/+1 counter on each attacking creature.
 whenever @ attacks, put a +1/+1 counter on it.
 whenever @ attacks, sacrifice it unless you sacrifice an island.
 whenever @ attacks, tap all artifacts.
+whenever @ attacks, target creature can't block this turn.
 whenever @ attacks, target creature gets +0/+3 until end of turn.
 whenever @ attacks, target creature you control gains flying until end of turn.
 whenever @ attacks, untap each other creature you control.
 whenever @ attacks, you may have target creature gain flying until end of turn.
 whenever @ attacks, you may have target creature lose flying until end of turn.
+whenever @ attacks, you may pay {r}. if you do, target creature can't block this turn.
 whenever @ attacks, you may pay {w}. if you do, it gains flying until end of turn.
 whenever @ attacks, you may pay {x}{r}. if you do, @ deals x damage to target creature or player.
 whenever @ attacks, you may tap target creature.
@@ -2786,6 +2820,7 @@ whenever you cast a red spell, @ deals 3 damage to target player.
 whenever you cast a red spell, @ gains first strike until end of turn.
 whenever you cast a red spell, @ gets +1/+1 until end of turn.
 whenever you cast a red spell, remove a -1/-1 counter from @.
+whenever you cast a red spell, target creature can't block this turn.
 whenever you cast a red spell, you may untap @.
 whenever you cast a spell during an opponent's turn, you may have each opponent lose 1 life.
 whenever you cast a spell during an opponent's turn, you may have target creature get -1/-1 until end of turn.
@@ -2808,6 +2843,7 @@ whenever you cast a spirit or arcane spell, @ gets +2/+2 until end of turn.
 whenever you cast a spirit or arcane spell, put a +1/+1 counter on target creature.
 whenever you cast a spirit or arcane spell, regenerate @.
 whenever you cast a spirit or arcane spell, regenerate target creature.
+whenever you cast a spirit or arcane spell, target creature can't block this turn.
 whenever you cast a spirit or arcane spell, target creature gains fear until end of turn.
 whenever you cast a spirit or arcane spell, target creature gains flying until end of turn.
 whenever you cast a spirit or arcane spell, target opponent loses 1 life and you gain 1 life.
@@ -2863,6 +2899,7 @@ when you cast @, counter it unless you sacrifice a land.
 when you cast @, destroy target permanent.
 when you cast @, draw four cards.
 when you cast @, you may return target creature card from your graveyard to the battlefield.
+white creatures and blue creatures can't block.
 white creatures get -1/-1.
 white creatures get +1/-1.
 white creatures get +1/+1.
@@ -2879,6 +2916,7 @@ wither
 {w}: return enchanted creature to its owner's hand.
 {w}: return @ to its owner's hand.
 {w}, sacrifice a creature: prevent the next 1 damage that would be dealt to target creature or player this turn.
+{w}, sacrifice a creature: target creature can't attack this turn.
 {w}, sacrifice an enchantment: destroy target enchantment.
 {w}, sacrifice @: prevent the next 1 damage that would be dealt to each creature you control this turn.
 {w}, sacrifice @: prevent the next 2 damage that would be dealt to target creature or player this turn.
@@ -2891,6 +2929,7 @@ wither
 {w}: target creature gains protection from red until end of turn.
 {w}, {t}: @ deals 1 damage to target attacking or blocking creature.
 {w}, {t}, discard a card: creatures you control get +1/+0 until end of turn.
+{w}, {t}, discard a card: target creature can't attack this turn.
 {w}, {t}, discard a card: target player gains 3 life.
 {w}, {t}: @ gets +0/+3 until end of turn.
 {w}, {t}: prevent the next 1 damage that would be dealt to target creature or player this turn.
@@ -2901,6 +2940,7 @@ wither
 {w}, {t}: tap target artifact.
 {w}, {t}: tap target creature.
 {w}, {t}: tap target permanent.
+{w}, {t}: target creature can't block this turn.
 {w}, {t}: target creature gains first strike until end of turn.
 {w}, {t}: target player gains 1 life.
 {w}, {t}: you gain 2 life.
@@ -2930,6 +2970,7 @@ wither
 {x}, sacrifice an artifact with converted mana cost x: @ deals x damage to target creature or player.
 {x}, sacrifice @: destroy each artifact, creature, and enchantment with converted mana cost x or less.
 {x}, sacrifice @: destroy target artifact with converted mana cost x.
+{x}, {t}: each creature with converted mana cost x can't attack or block this turn.
 {x}, {t}, remove x charge counters from @: @ deals x damage to target creature or player.
 {x}, {t}: target creature gets -x/+x until end of turn.
 {x}, {t}: target player puts the top x cards of his or her library into his or her graveyard.

@@ -97,6 +97,7 @@ Action
     / ReanimateAction
     / PoisonAction
     / SetPTAction
+    / ChangeStateAction
     ;
 
 Keyword
@@ -255,6 +256,12 @@ DamageReceiver
 
 AttacksTrigger
     = "whenever @ attacks"
+    ;
+
+ChangeStateAction
+    = SelectPermanent " can't attack or block" 
+    / SelectPermanent " can't attack" 
+    / SelectPermanent " can't block" 
     ;
 
 SetPTAction
