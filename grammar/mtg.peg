@@ -294,8 +294,7 @@ ShuffleAction
     ;
 
 PutTokenAction
-    = "put a 1/1 green saproling creature token onto the battlefield"
-    / "put a 1/1 gnome artifact creature token onto the battlefield"
+    = "put a " PowerToughness SPACE Color SPACE CreatureType " creature token onto the battlefield"
     / "put a token that's a copy of " SelectPermanent " onto the battlefield"
     ;
 
@@ -923,6 +922,10 @@ Spell
 NoRegen 
     = "it can't be regenerated"
     / "they can't be regenerated"
+    ;
+
+PowerToughness
+    = Number "/" Number
     ;
 
 SignedNumber

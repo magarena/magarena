@@ -59,6 +59,7 @@
 {1}{g}: @ gets +1/+0 until end of turn.
 {1}{g}: @ gets -1/+1 until end of turn.
 {1}{g}{g}: target creature gains forestwalk until end of turn.
+{1}{g}: put a 1/1 green insect creature token onto the battlefield.
 {1}{g}: regenerate @.
 {1}{g}: regenerate enchanted creature.
 {1}{g}: regenerate target beast.
@@ -162,6 +163,7 @@
 {1}, {t}, discard a card: you gain 4 life.
 {1}, {t}: exile target creature you control.
 {1}, {t}, pay 1 life: add one mana of any color to your mana pool.
+{1}, {t}, pay 1 life: put a 0/1 white goat creature token onto the battlefield.
 {1}, {t}: put a +1/+1 counter on @.
 {1}, {t}: put a charge counter on @.
 {1}, {t}: put a storage counter on @.
@@ -210,6 +212,7 @@
 {1}{u}, sacrifice @: draw a card.
 {1}{u}, sacrifice @: return target creature to its owner's hand.
 {1}{u}, {t}: draw a card, then discard a card.
+{1}{u}, {t}: put a 2/2 blue homunculus creature token onto the battlefield, then sacrifice a creature.
 {1}{u}, {t}: put target green creature on top of its owner's library.
 {1}{u}, {t}: return target kavu to its owner's hand.
 {1}{u}, {t}, sacrifice @: draw two cards.
@@ -248,6 +251,7 @@
 {1}{w}, {t}: prevent all combat damage that would be dealt by target attacking creature this turn.
 {1}{w}, {t}: prevent all combat damage that would be dealt by target blocked creature this turn.
 {1}{w}, {t}: prevent all damage that would be dealt to target creature with power 5 or greater this turn.
+{1}{w}, {t}: put a 1/1 white soldier creature token onto the battlefield.
 {1}{w}, {t}, sacrifice @: destroy target artifact or enchantment.
 {1}{w}, {t}: you gain 5 life.
 {1}{w}{w}: target creature gets +1/+1 until end of turn.
@@ -284,9 +288,12 @@
 {2}: @ gets +1/+0 until end of turn.
 {2}{g}{g}{g}: creatures you control get +3/+3 and gain trample until end of turn.
 {2}{g}{g}{g}: elf creatures you control get +3/+3 and gain trample until end of turn.
+{2}{g}{g}: put a 3/3 green centaur creature token onto the battlefield.
 {2}{g}: put a 1/1 green saproling creature token onto the battlefield.
+{2}{g}: put a 2/2 green wolf creature token onto the battlefield.
 {2}{g}: regenerate @.
 {2}{g}, sacrifice @: @ deals 2 damage to target creature with flying.
+{2}{g}, sacrifice @: put a 3/3 green centaur creature token onto the battlefield.
 {2}{g}: target beast creature gets +1/+1 until end of turn.
 {2}{g}: target elf creature gains forestwalk until end of turn.
 {2}{g}: target green creature gains protection from black until end of turn.
@@ -309,6 +316,7 @@
 {2}, remove a +1/+1 counter from a creature you control: draw a card.
 {2}, remove a +1/+1 counter from a creature you control: put a +1/+1 counter on @.
 {2}, remove a +1/+1 counter from @: put a +1/+1 counter on target creature.
+{2}, remove a +1/+1 counter from @: put a 1/1 green spike creature token onto the battlefield.
 {2}, remove a +1/+1 counter from @: return @ to its owner's hand.
 {2}, return a land you control to its owner's hand: draw a card, then discard a card.
 {2}, return a land you control to its owner's hand: tap target land.
@@ -403,6 +411,7 @@
 {2}{w}, discard a card: @ gets +1/+2 until end of turn.
 {2}{w}: @ gains first strike until end of turn.
 {2}{w}: prevent all combat damage that would be dealt by target creature this turn.
+{2}{w}: put a 1/1 white soldier creature token onto the battlefield.
 {2}{w}, {q}: @ gets +0/+2 until end of turn.
 {2}{w}: return @ to its owner's hand.
 {2}{w}: tap target creature.
@@ -502,12 +511,14 @@
 {4}: @ gains flying until end of turn.
 {4}{g}: put a +1/+1 counter on target creature.
 {4}{g}, sacrifice a creature: destroy target creature with flying.
+{4}{g}{w}: put a 3/3 green centaur creature token onto the battlefield.
 {4}: @ loses defender until end of turn.
 {4}, return a land you control to its owner's hand: draw a card.
 {4}{r}: exile @.
 {4}{r}, {t}, sacrifice a creature: @ deals 2 damage to target creature or player.
 {4}, {t}: draw a card.
 {4}, {t}, exile @: exile target creature.
+{4}, {t}: put a 0/1 white goat creature token onto the battlefield.
 {4}, {t}: put a -1/-1 counter on target creature.
 {4}, {t}: put a charge counter on @.
 {4}, {t}, remove a +1/+1 counter from @: destroy target creature.
@@ -645,6 +656,7 @@ at the beginning of your upkeep, put a +1/+1 counter on each creature each oppon
 at the beginning of your upkeep, put a -1/-1 counter on each nonblack creature.
 at the beginning of your upkeep, put a -1/-1 counter on enchanted creature.
 at the beginning of your upkeep, put a +1/+1 counter on enchanted creature.
+at the beginning of your upkeep, put a 2/2 green wolf creature token onto the battlefield.
 at the beginning of your upkeep, put a spore counter on @.
 at the beginning of your upkeep, put a tide counter on @.
 at the beginning of your upkeep, put a time counter on @.
@@ -669,6 +681,7 @@ at the beginning of your upkeep, sacrifice a creature other than @. if you can't
 at the beginning of your upkeep, sacrifice a homunculus.
 at the beginning of your upkeep, sacrifice an artifact other than @. if you can't, tap @ and you lose 4 life.
 at the beginning of your upkeep, sacrifice a nonblack creature.
+at the beginning of your upkeep, sacrifice a non-zombie creature, then put a 2/2 black zombie creature token onto the battlefield.
 at the beginning of your upkeep, sacrifice a permanent.
 at the beginning of your upkeep, sacrifice a snake.
 at the beginning of your upkeep, sacrifice @ unless you discard a card.
@@ -722,6 +735,8 @@ at the beginning of your upkeep, you may pay {4}. if you do, untap @.
 at the beginning of your upkeep, you may pay {u}{u}{u}. if you do, untap @.
 at the beginning of your upkeep, you may put a +1/+1 counter on @.
 at the beginning of your upkeep, you may put a +1/+1 counter on target creature you control.
+at the beginning of your upkeep, you may put a 1/1 green squirrel creature token onto the battlefield.
+at the beginning of your upkeep, you may put a 3/3 green beast creature token onto the battlefield.
 at the beginning of your upkeep, you may put a charge counter on @.
 at the beginning of your upkeep, you may put a charge counter on target artifact.
 at the beginning of your upkeep, you may put a charge counter on target permanent you control.
@@ -842,6 +857,7 @@ counter target artifact spell.
 counter target blue spell.
 counter target creature spell.
 counter target creature spell. its controller loses 1 life.
+counter target creature spell. put a 2/2 blue illusion creature token onto the battlefield.
 counter target instant or sorcery spell.
 counter target instant or sorcery spell unless its controller pays {1}.
 counter target instant spell.
@@ -1113,6 +1129,7 @@ destroy target land. its controller discards a card.
 destroy target land. its controller loses 2 life.
 destroy target land or nonblack creature.
 destroy target land or nonblack creature. it can't be regenerated.
+destroy target land. put a 1/1 red goblin creature token onto the battlefield.
 destroy target land. you gain 2 life.
 destroy target land. you gain 4 life.
 destroy target nonartifact creature.
@@ -1482,6 +1499,7 @@ gain control of target nonartifact, nonblack creature.
 {g}{g}: @ gains first strike until end of turn.
 {g}{g}{g}{g}, {t}: regenerate target creature.
 {g}{g}{g}{g}, {t}: target creature gains forestwalk until end of turn.
+{g}{g}{g}, sacrifice @: put a 6/6 green wurm creature token onto the battlefield.
 {g}{g}{g}, {t}: target creature gains flying until end of turn.
 {g}{g}: put a spore counter on target fungus.
 {g}{g}: return @ to its owner's hand.
@@ -1781,12 +1799,21 @@ protection from everything
 protection from green
 protection from red
 protection from white
+put a 1/1 black rat creature token onto the battlefield.
 put a -1/-1 counter on each attacking creature.
 put a +1/+1 counter on each creature you control.
 put a -1/-1 counter on target creature.
 put a +1/+1 counter on target creature.
 put a -1/-1 counter on @: untap @.
 put a 1/1 green saproling creature token onto the battlefield.
+put a 1/1 green squirrel creature token onto the battlefield.
+put a 2/2 black zombie creature token onto the battlefield.
+put a 3/3 green beast creature token onto the battlefield.
+put a 3/3 green centaur creature token onto the battlefield.
+put a 3/3 green elephant creature token onto the battlefield.
+put a 4/4 green beast creature token onto the battlefield.
+put a 4/4 red giant creature token onto the battlefield.
+put a 6/6 green wurm creature token onto the battlefield.
 put a token that's a copy of target creature onto the battlefield.
 put four +1/+1 counters on each creature you control.
 put target artifact, creature, or enchantment on the bottom of its owner's library.
@@ -2374,6 +2401,8 @@ totem armor
 {t}: put a +1/+1 counter on each artifact creature you control.
 {t}: put a -1/-1 counter on target creature.
 {t}: put a +1/+1 counter on target creature.
+{t}: put a 1/1 white human creature token onto the battlefield.
+{t}: put a 3/3 green elephant creature token onto the battlefield.
 {t}: put a charge counter on @.
 {t}: put a charge counter on target artifact.
 {t}: put a fuse counter on target creature.
@@ -2398,6 +2427,7 @@ trample
 {t}, sacrifice a goblin: goblin creatures get +2/+0 until end of turn.
 {t}, sacrifice a land: destroy target land.
 {t}, sacrifice a mountain: @ deals 3 damage to target creature.
+{t}, sacrifice a mountain: put a 3/3 red elemental creature token onto the battlefield.
 {t}, sacrifice an artifact: @ deals 2 damage to target creature or player.
 {t}, sacrifice an artifact: draw a card.
 {t}, sacrifice an artifact: target player puts the top three cards of his or her library into his or her graveyard.
@@ -2610,6 +2640,9 @@ when @ dies, it deals 2 damage to you.
 when @ dies, it deals 3 damage to target creature or player.
 when @ dies, it deals 5 damage to each creature without flying.
 when @ dies, put a 1/1 green saproling creature token onto the battlefield.
+when @ dies, put a 2/1 black cat creature token onto the battlefield.
+when @ dies, put a 3/3 black kavu creature token onto the battlefield.
+when @ dies, put a 3/3 green boar creature token onto the battlefield.
 when @ dies, put it on top of its owner's library.
 when @ dies, return it to its owner's hand.
 when @ dies, return @ to its owner's hand.
@@ -2712,12 +2745,16 @@ when @ enters the battlefield, it deals damage to target player equal to the num
 when @ enters the battlefield, other mercenary creatures get +1/+1 until end of turn.
 when @ enters the battlefield, prevent all damage that would be dealt to artifact creatures this turn.
 when @ enters the battlefield, prevent the next 3 damage that would be dealt to target creature or player this turn.
+when @ enters the battlefield, put a 0/1 green plant creature token onto the battlefield.
 when @ enters the battlefield, put a -1/-1 counter on each creature.
 when @ enters the battlefield, put a -1/-1 counter on each creature target player controls.
 when @ enters the battlefield, put a +1/+1 counter on each other shaman creature you control.
 when @ enters the battlefield, put a -1/-1 counter on target creature.
 when @ enters the battlefield, put a +1/+1 counter on target creature.
 when @ enters the battlefield, put a +1/+1 counter on target creature you don't control.
+when @ enters the battlefield, put a 1/1 white human creature token onto the battlefield.
+when @ enters the battlefield, put a 1/1 white soldier creature token onto the battlefield.
+when @ enters the battlefield, put a 2/2 black zombie creature token onto the battlefield.
 when @ enters the battlefield, put a creature you control on top of its owner's library.
 when @ enters the battlefield, put six +1/+1 counters on enchanted creature.
 when @ enters the battlefield, put target artifact on top of its owner's library.
@@ -2923,6 +2960,7 @@ whenever @ deals combat damage to a player, each player discards a card.
 whenever @ deals combat damage to a player, it deals that much damage to each creature that player controls.
 whenever @ deals combat damage to a player, put a +1/+1 counter on each creature you control.
 whenever @ deals combat damage to a player, put a +1/+1 counter on it.
+whenever @ deals combat damage to a player, put a 1/1 white soldier creature token onto the battlefield.
 whenever @ deals combat damage to a player, put a charge counter on it.
 whenever @ deals combat damage to a player, put a token that's a copy of @ onto the battlefield.
 whenever @ deals combat damage to a player, put two +1/+1 counters on it.
@@ -2966,6 +3004,7 @@ whenever @ or another ally enters the battlefield under your control, you may ha
 whenever @ or another ally enters the battlefield under your control, you may have ally creatures you control get +1/+0 until end of turn.
 whenever @ or another ally enters the battlefield under your control, you may put a +1/+1 counter on @.
 whenever @ or another ally enters the battlefield under your control, you may put a +1/+1 counter on each ally creature you control.
+whenever @ or another ally enters the battlefield under your control, you may put a 2/2 green wolf creature token onto the battlefield. if you do, put a +1/+1 counter on @.
 whenever you cast a black spell, @ gains fear until end of turn.
 whenever you cast a black spell, @ gets +1/+1 until end of turn.
 whenever you cast a black spell, remove a -1/-1 counter from @.
@@ -2990,6 +3029,7 @@ whenever you cast a creature spell, you may put a quest counter on @.
 whenever you cast a green spell, @ gains forestwalk until end of turn.
 whenever you cast a green spell, @ gets +1/+1 until end of turn.
 whenever you cast a green spell, remove a -1/-1 counter from @.
+whenever you cast a green spell, you may put a 2/2 green wolf creature token onto the battlefield.
 whenever you cast a green spell, you may untap @.
 whenever you cast a multicolored spell, @ deals 2 damage to target creature or player.
 whenever you cast a multicolored spell, @ gets +3/+3 until end of turn.
@@ -3085,6 +3125,9 @@ when @ leaves the battlefield, it deals 1 damage to each goblin creature.
 when @ leaves the battlefield, it deals 4 damage to target creature.
 when @ leaves the battlefield, it deals 6 damage to target creature.
 when @ leaves the battlefield, put a +1/+1 counter on each creature target player controls.
+when @ leaves the battlefield, put a 2/2 black zombie creature token onto the battlefield.
+when @ leaves the battlefield, put a 3/3 green beast creature token onto the battlefield.
+when @ leaves the battlefield, put a 4/4 green elemental creature token onto the battlefield.
 when @ leaves the battlefield, return the exiled card to the battlefield under its owner's control.
 when @ leaves the battlefield, sacrifice a creature.
 when @ leaves the battlefield, sacrifice a land.
