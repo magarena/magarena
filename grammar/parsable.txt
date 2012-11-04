@@ -2564,6 +2564,7 @@ whenever you cast a creature spell, @ deals 1 damage to target player.
 whenever you cast a creature spell, put a +1/+1 counter on @.
 whenever you cast a creature spell, put a 1/1 green saproling creature token onto the battlefield.
 whenever you cast a creature spell, tap target creature.
+whenever you cast a creature spell with infect, target player gets a poison counter.
 whenever you cast a creature spell, you may draw a card.
 whenever you cast a creature spell, you may pay {1}. if you do, draw a card.
 whenever you cast a creature spell, you may pay {1}. if you do, draw a card, then discard a card.

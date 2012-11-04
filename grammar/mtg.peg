@@ -570,6 +570,7 @@ SpellRestriction
     / "vampire creature"
     / "wizard"
     / "during an opponent's turn"
+    / "with infect"
     ;
 
 RestrictedCard
