@@ -762,6 +762,10 @@ counter target spell unless its controller pays {4}.
 counter target spell unless its controller pays {4}. you gain 4 life.
 counter target spell unless its controller pays {x}.
 counter target spell unless its controller pays {x}. you gain x life.
+counter target spell with converted mana cost 1.
+counter target spell with converted mana cost 2.
+counter target spell with converted mana cost 4 or less.
+counter target spell with converted mana cost x.
 counter target spell. you gain 3 life.
 counter target spell. you gain 5 life.
 counter target spirit or arcane spell.
@@ -2564,6 +2568,7 @@ whenever you cast a creature spell, @ deals 1 damage to target player.
 whenever you cast a creature spell, put a +1/+1 counter on @.
 whenever you cast a creature spell, put a 1/1 green saproling creature token onto the battlefield.
 whenever you cast a creature spell, tap target creature.
+whenever you cast a creature spell with converted mana cost 6 or greater, put three +1/+1 counters on @.
 whenever you cast a creature spell with infect, target player gets a poison counter.
 whenever you cast a creature spell, you may draw a card.
 whenever you cast a creature spell, you may pay {1}. if you do, draw a card.

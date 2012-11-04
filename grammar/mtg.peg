@@ -571,6 +571,9 @@ SpellRestriction
     / "wizard"
     / "during an opponent's turn"
     / "with infect"
+    / "with converted mana cost " Number " or less"
+    / "with converted mana cost " Number " or greater"
+    / "with converted mana cost " Number
     ;
 
 RestrictedCard
