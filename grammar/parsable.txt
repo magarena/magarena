@@ -489,8 +489,10 @@
 {3}{g}, {t}: you may tap or untap target artifact, creature, or land.
 {3}: put a 1/1 colorless sliver creature token onto the battlefield.
 {3}: put a +1/+1 counter on @.
+{3}: put an ice counter on @.
 {3}{r}: @ deals 1 damage to target creature or player.
 {3}: regenerate @.
+{3}: remove an ice counter from @.
 {3}, return a land you control to its owner's hand: counter target spell unless its controller pays {3}.
 {3}, return a land you control to its owner's hand: target creature you control gains shroud until end of turn.
 {3}: return target creature card from your graveyard to your hand.
@@ -512,6 +514,7 @@
 {3}, {t}: put a +1/+1 counter on target creature.
 {3}, {t}: put a charge counter on @.
 {3}, {t}: put a hatchling counter on @.
+{3}, {t}: put an elixir counter on @.
 {3}, {t}: put a token that's a copy of @ onto the battlefield.
 {3}, {t}: regenerate target artifact creature.
 {3}, {t}: remove a -1/-1 counter from target creature.
@@ -728,6 +731,7 @@ at the beginning of your upkeep, put target creature card from a graveyard onto 
 at the beginning of your upkeep, remove a -1/-1 counter from @.
 at the beginning of your upkeep, remove a -1/-1 counter from each creature you control.
 at the beginning of your upkeep, remove a depletion counter from @.
+at the beginning of your upkeep, remove an intervention counter from @.
 at the beginning of your upkeep, remove a shell counter from @.
 at the beginning of your upkeep, return a black creature you control to its owner's hand.
 at the beginning of your upkeep, return a blue creature you control to its owner's hand.
@@ -809,6 +813,8 @@ at the beginning of your upkeep, you may put a charge counter on target artifact
 at the beginning of your upkeep, you may put a charge counter on target permanent you control.
 at the beginning of your upkeep, you may put a fuse counter on @.
 at the beginning of your upkeep, you may put a growth counter on @.
+at the beginning of your upkeep, you may put an arrow counter on @.
+at the beginning of your upkeep, you may put an infection counter on @.
 at the beginning of your upkeep, you may put a page counter on @.
 at the beginning of your upkeep, you may put a petal counter on @.
 at the beginning of your upkeep, you may put a soot counter on @.
@@ -2006,6 +2012,7 @@ remove a fade counter from @: prevent the next 2 damage that would be dealt to t
 remove a fade counter from @: tap target creature.
 remove a healing counter from @: prevent the next 1 damage that would be dealt to enchanted creature this turn.
 remove a healing counter from @: prevent the next 1 damage that would be dealt to @ this turn.
+remove an ice counter from @: add {1} to your mana pool.
 remove a shield counter from @: prevent the next 1 damage that would be dealt to you this turn.
 remove five fuse counters from @, sacrifice @: @ deals 20 damage to target player.
 remove three charge counters from @: @ becomes a 6/6 construct artifact creature with trample until end of turn.
@@ -3165,6 +3172,7 @@ whenever @ blocks, it gets +7/+7 until end of turn.
 whenever @ blocks, prevent all combat damage that would be dealt to and dealt by it this turn.
 whenever @ blocks, put a -0/-1 counter on it.
 whenever @ blocks, put a +1/+1 counter on it.
+whenever @ blocks, remove an ice counter from it.
 whenever @ blocks, you gain 3 life.
 whenever @ blocks, you may draw a card.
 whenever @ blocks, you may gain 4 life.
@@ -3182,6 +3190,7 @@ whenever @ deals combat damage to a player, put a +1/+1 counter on each creature
 whenever @ deals combat damage to a player, put a +1/+1 counter on it.
 whenever @ deals combat damage to a player, put a 1/1 white soldier creature token onto the battlefield.
 whenever @ deals combat damage to a player, put a charge counter on it.
+whenever @ deals combat damage to a player, put an infection counter on it.
 whenever @ deals combat damage to a player, put a token that's a copy of @ onto the battlefield.
 whenever @ deals combat damage to a player, put two +1/+1 counters on it.
 whenever @ deals combat damage to a player, that player discards a card.

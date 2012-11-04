@@ -330,9 +330,9 @@ ControlAction
     ;
 
 ChangeCounterAction
-    = "remove a " CounterType " counter from " SelectPermanent
+    = "remove a" "n"? SPACE CounterType " counter from " SelectPermanent
     / "remove " Count SPACE CounterType " counters from " SelectPermanent
-    / "put a " CounterType " counter on " SelectPermanent
+    / "put a" "n"? SPACE CounterType " counter on " SelectPermanent
     / "put " Count SPACE CounterType " counters on " SelectPermanent
     ;
 
