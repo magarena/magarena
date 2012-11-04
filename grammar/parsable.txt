@@ -11,6 +11,7 @@
 {1}{b}{b}: @ gets -3/-0 and gains forestwalk until end of turn.
 {1}{b}{b}: regenerate @.
 {1}{b}{b}, sacrifice a creature: return target creature card from your graveyard to your hand.
+{1}{b}{b}, {t}: destroy target tapped nonblack creature.
 {1}{b}, discard a card: @ gets +2/+2 until end of turn.
 {1}{b}, discard a card: regenerate @.
 {1}{b}: enchanted creature gets +2/+2 until end of turn.
@@ -119,6 +120,7 @@
 {1}{r}, {t}: @ deals 1 damage to target creature or player.
 {1}{r}, {t}: @ deals 3 damage to target player.
 {1}{r}, {t}: @ deals damage equal to its power to target creature. that creature deals damage equal to its power to @.
+{1}{r}, {t}: @ deals damage to target player equal to the number of creatures with defender you control.
 {1}{r}, {t}, discard a card: target creature gets +1/-1 and gains haste until end of turn.
 {1}{r}, {t}: target goblin creature gets +2/+0 until end of turn.
 {1}, sacrifice a creature: @ deals 1 damage to target creature or player.
@@ -892,6 +894,7 @@ creatures you control have reach.
 creatures you control have shadow.
 creatures you control have trample.
 creatures you control have vigilance.
+creatures you control with flying get +1/+1.
 cumulative upkeep {1}
 cumulative upkeep {1}{b}
 cumulative upkeep {1}{u}
@@ -984,6 +987,7 @@ cumulative upkeep {w}
 @ deals x damage to target creature or player.
 @ deals x damage to target creature or player and you gain x life.
 @ deals x damage to target creature or player. you gain x life.
+@ deals x damage to target creature without flying you don't control.
 @ deals x damage to target player.
 deathtouch
 defender
@@ -1077,6 +1081,7 @@ destroy target land. you gain 2 life.
 destroy target land. you gain 4 life.
 destroy target nonartifact creature.
 destroy target nonartifact, nonblack creature. it can't be regenerated.
+destroy target nonblack attacking creature.
 destroy target nonblack creature.
 destroy target nonblack creature. it can't be regenerated.
 destroy target nonblack creature. it can't be regenerated. its controller loses 2 life.
@@ -1606,6 +1611,10 @@ other creatures you control get +1/+1.
 other creatures you control get +2/+2.
 other creatures you control have exalted.
 other creatures you control have intimidate.
+other creatures you control with defender get +0/+2.
+other creatures you control with flanking have flanking.
+other creatures you control with flying get +0/+1.
+other creatures you control with infect get +1/+1.
 other elf creatures get +1/+1 and have forestwalk.
 other elf creatures have forestwalk.
 other elf creatures you control get +1/+1.
@@ -1915,6 +1924,7 @@ sacrifice @: counter target spell unless its controller pays {1}.
 sacrifice @: counter target spell unless its controller pays {2}.
 sacrifice @: counter target spell unless its controller pays {3}.
 sacrifice @: creatures you control gain flying until end of turn.
+sacrifice @: creatures you control with power 5 or greater gain flying until end of turn.
 sacrifice @: @ deals 1 damage to target attacking or blocking creature.
 sacrifice @: @ deals 1 damage to target creature.
 sacrifice @: @ deals 1 damage to target creature or player.
@@ -2236,6 +2246,7 @@ target player sacrifices a permanent.
 {t}: @ gets -2/+2 and loses flying until end of turn.
 {t}: @ gets +3/+3 until end of turn.
 totem armor
+{t}: other creatures you control with flying get +1/+0 until end of turn.
 {t}, pay 1 life: add {g} or {w} to your mana pool.
 {t}, pay 1 life: add {g} to your mana pool.
 {t}, pay 1 life: add one mana of any color to your mana pool.
@@ -2617,6 +2628,7 @@ when @ enters the battlefield, sacrifice all creatures you control.
 when @ enters the battlefield, sacrifice it unless you discard a card at random.
 when @ enters the battlefield, sacrifice it unless you discard a creature card.
 when @ enters the battlefield, sacrifice it unless you discard a noncreature card.
+when @ enters the battlefield, sacrifice it unless you exile a creature you control other than @.
 when @ enters the battlefield, sacrifice it unless you pay {1}.
 when @ enters the battlefield, sacrifice it unless you return an artifact you control to its owner's hand.
 when @ enters the battlefield, sacrifice it unless you return an enchantment to its owner's hand.
@@ -2712,6 +2724,7 @@ whenever @ attacks, all other creatures you control get +1/+1 until end of turn.
 whenever @ attacks, attacking creatures gain first strike until end of turn.
 whenever @ attacks, attacking creatures gain trample until end of turn.
 whenever @ attacks, attacking creatures get +1/+1 until end of turn.
+whenever @ attacks, attacking red creatures get +2/+0 and attacking white creatures get +0/+2 until end of turn.
 whenever @ attacks, creatures with power 1 or less can't block this turn.
 whenever @ attacks, creatures you control get +2/+0 until end of turn.
 whenever @ attacks, destroy all other creatures.

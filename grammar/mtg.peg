@@ -610,7 +610,7 @@ CardRestriction
     ;
 
 RestrictedCreature
-    = (CreatureRestriction SPACE)? Creature (SPACE CreatureRestriction)?
+    = (CreatureRestriction SPACE)* Creature (SPACE CreatureRestriction)*
     ;
 
 PermanentRestriction
