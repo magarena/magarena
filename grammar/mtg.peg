@@ -46,7 +46,6 @@ ActivatedAbility
 
 ActivationCosts
     = Action ("," SPACE Action)*
-    / SignedNumber
     ;
 
 TriggeredAbility
@@ -101,6 +100,7 @@ Action
     / ChangeStateAction
     / AnimateAction
     / AnimateActionReminder
+    / ChangeLoyaltyAction
     ;
 
 Keyword
@@ -246,7 +246,10 @@ DealsDamageTrigger
 DamageReceiver
     = "itself"
     / SelectPlayer
-    / SelectCreature (" or " SelectPlayer)?
+    / SelectCreature &(" and " SingleEffect)
+    / SelectCreature " or " SelectPlayer
+    / SelectCreature " and " SelectPlayer
+    / SelectCreature
     ;
 
 AttacksTrigger
@@ -259,6 +262,10 @@ AnimateAction
 
 AnimateActionReminder
     = "it's still a land"
+    ;
+
+ChangeLoyaltyAction
+    = SignedNumber
     ;
 
 ChangeStateAction

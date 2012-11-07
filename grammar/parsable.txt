@@ -143,6 +143,7 @@
 {1}{r}, sacrifice a goblin: @ deals 4 damage to target creature.
 {1}{r}, sacrifice a land: put a +1/+1 counter on @.
 {1}{r}, sacrifice @: @ deals 1 damage to target creature or player.
+{1}{r}, sacrifice @: @ deals 3 damage to each tapped creature and each player.
 {1}{r}, sacrifice @: @ deals 3 damage to target player.
 {1}{r}: target creature gains haste until end of turn.
 {1}{r}: target dwarf creature gets +1/+0 until end of turn.
@@ -214,6 +215,7 @@
 {1}, {t}, sacrifice an artifact: you gain 1 life.
 {1}, {t}, sacrifice @: @ deals 2 damage to target creature or player.
 {1}, {t}, sacrifice @: @ deals 4 damage to target artifact creature.
+{1}, {t}, sacrifice @: @ deals damage equal to the number of time counters on it to each creature and each player.
 {1}, {t}, sacrifice @: draw a card.
 {1}, {t}, sacrifice @: put a 1/1 colorless myr artifact creature token onto the battlefield.
 {1}, {t}, sacrifice @: target creature gets +2/+2 until end of turn.
@@ -310,6 +312,7 @@
 {2}{b}: @ becomes a 5/5 black horror artifact creature with trample until end of turn.
 {2}{b}{b}: put a -1/-1 counter on target creature.
 {2}{b}{b}: target creature gets -1/-1 until end of turn. put a +1/+1 counter on @.
+{2}{b}: @ deals 1 damage to each creature and each player.
 {2}{b}, discard a card: @ gains fear until end of turn.
 {2}{b}, discard a card: target opponent loses 1 life and you gain 1 life.
 {2}{b}: each player loses 1 life.
@@ -327,6 +330,7 @@
 {2}{b}, sacrifice @: target creature gets -1/-1 until end of turn.
 {2}{b}, {t}, discard a card: destroy target nonblack creature. it can't be regenerated.
 {2}{b}, {t}, sacrifice a goblin: destroy target land.
+{2}: @ deals 1 damage to each creature and each player.
 {2}: @ deals 1 damage to target creature.
 {2}: @ deals 1 damage to target creature or player. sacrifice @.
 +2: @ deals 2 damage to target creature or player and you gain 2 life.
@@ -600,6 +604,7 @@
 -4: creatures you control get +3/+3 and gain trample until end of turn.
 -4: each dragon creature you control deals damage equal to its power to target player.
 {4}: @ gains flying until end of turn.
+{4}{g}: @ deals 2 damage to each creature with flying and each player.
 {4}{g}: put a +1/+1 counter on target creature.
 {4}{g}, sacrifice a creature: destroy target creature with flying.
 {4}{g}{w}: put a 3/3 green centaur creature token onto the battlefield.
@@ -631,6 +636,7 @@
 {5}: put a 1/1 colorless myr artifact creature token onto the battlefield.
 {5}{r}: @ deals 6 damage to each other creature with flying.
 {5}{r}{r}: put a 5/5 red dragon creature token with flying onto the battlefield.
+{5}{r}{r}, {t}, discard a card: @ deals 6 damage to each creature and each player.
 {5}, {t}: destroy target creature with flying.
 {5}, {t}: discard a card at random, then draw two cards.
 {5}, {t}: draw a card.
@@ -740,6 +746,7 @@ at the beginning of each player's upkeep, that player sacrifices a non-zombie cr
 at the beginning of the end step, destroy all goblins.
 at the beginning of the end step, return @ to its owner's hand.
 at the beginning of the end step, sacrifice @.
+at the beginning of your upkeep, @ deals 1 damage to each creature and each player.
 at the beginning of your upkeep, @ deals 1 damage to each opponent.
 at the beginning of your upkeep, @ deals 1 damage to each player.
 at the beginning of your upkeep, @ deals 1 damage to you.
@@ -867,6 +874,7 @@ at the beginning of your upkeep, you may put a petal counter on @.
 at the beginning of your upkeep, you may put a soot counter on @.
 at the beginning of your upkeep, you may put a treasure counter on @.
 at the beginning of your upkeep, you may put a verse counter on @.
+at the beginning of your upkeep, you may remove a +1/+1 counter from @. if you don't, sacrifice @ and it deals damage equal to the number of +1/+1 counters on it to each creature without flying and each player.
 at the beginning of your upkeep, you may remove a vitality counter from @. if you do, you gain 1 life.
 at the beginning of your upkeep, you may return @ from your graveyard to your hand.
 at the beginning of your upkeep, you may return target artifact card from your graveyard to the battlefield.
@@ -884,12 +892,14 @@ battle cry
 {b}{b}: regenerate @.
 {b}{b}: return @ to its owner's hand.
 {b}{b}{r}, {t}: regenerate target black or green creature.
+{b}{b}, sacrifice @: @ deals 3 damage to each creature and each player.
 {b}{b}: target creature gains shadow until end of turn.
 {b}{b}, {t}: destroy target green creature.
 {b}{b}, {t}: destroy target legendary creature. it can't be regenerated.
 {b}{b}, {t}: destroy target white creature.
 {b}{b}, {t}: put a charge counter on @.
 {b}{b}, {t}: target player loses 2 life and you gain 2 life.
+{b}: @ deals 1 damage to each creature and each player.
 {b}: destroy target artifact, creature, or land you control.
 {b}, discard a card: @ gains flying until end of turn.
 {b}, discard a card: regenerate @.
@@ -1093,8 +1103,11 @@ cumulative upkeep {w}
 @ deals 13 damage to target creature.
 @ deals 1 damage to each attacking creature.
 @ deals 1 damage to each creature.
+@ deals 1 damage to each creature and each player.
 @ deals 1 damage to each creature target opponent controls.
+@ deals 1 damage to each creature with flying and each player.
 @ deals 1 damage to each creature without flying.
+@ deals 1 damage to each creature without flying and each player.
 @ deals 1 damage to target creature.
 @ deals 1 damage to target creature and 1 damage to target player.
 @ deals 1 damage to target creature or player.
@@ -1104,6 +1117,7 @@ cumulative upkeep {w}
 @ deals 1 damage to target player and you gain 1 life.
 @ deals 1 damage to target player. you gain 1 life.
 @ deals 2 damage to each creature.
+@ deals 2 damage to each creature and each player.
 @ deals 2 damage to each creature with flying.
 @ deals 2 damage to each creature without flying.
 @ deals 2 damage to each creature with shadow.
@@ -1118,6 +1132,8 @@ cumulative upkeep {w}
 @ deals 2 damage to target creature with flying. that creature loses flying until end of turn.
 @ deals 2 damage to target opponent and you gain 2 life.
 @ deals 3 damage to each creature.
+@ deals 3 damage to each creature and each player.
+@ deals 3 damage to each creature with flying and each player.
 @ deals 3 damage to each opponent.
 @ deals 3 damage to target attacking or blocking creature.
 @ deals 3 damage to target creature.
@@ -1148,6 +1164,7 @@ cumulative upkeep {w}
 @ deals 5 damage to target opponent.
 @ deals 5 damage to target opponent. you gain 5 life.
 @ deals 5 damage to target player.
+@ deals 6 damage to each creature and each player.
 @ deals 7 damage to target creature or player.
 @ deals 7 damage to target opponent.
 @ deals damage to each opponent equal to the number of islands that player controls.
@@ -1160,8 +1177,11 @@ cumulative upkeep {w}
 @ deals damage to target player equal to the number of artifacts you control.
 @ deals damage to target player equal to the number of creatures you control.
 @ deals x damage to each creature.
+@ deals x damage to each creature and each player.
 @ deals x damage to each creature with flying.
+@ deals x damage to each creature with flying and each player.
 @ deals x damage to each creature without flying.
+@ deals x damage to each creature without flying and each player.
 @ deals x damage to target creature.
 @ deals x damage to target creature and you gain x life.
 @ deals x damage to target creature or player.
@@ -1254,6 +1274,7 @@ destroy target human creature.
 destroy target land.
 destroy target land. creatures without flying can't block this turn.
 destroy target land. @ deals 13 damage to target creature.
+destroy target land. @ deals 1 damage to each creature and each player.
 destroy target land. @ deals 1 damage to each human creature.
 destroy target land. its controller discards a card.
 destroy target land. its controller loses 2 life.
@@ -2035,6 +2056,7 @@ rampage 2
 rampage 3
 rampage 4
 rat creatures have fear.
+{r}: @ deals 1 damage to each creature and each player.
 {r}, discard a card at random: @ gets +2/+0 until end of turn.
 {r}, discard a card at random: @ gets +3/+0 until end of turn.
 reach
@@ -2148,6 +2170,7 @@ return @ to its owner's hand: regenerate target creature.
 {r}, sacrifice @: @ deals 1 damage to each creature without flying.
 {r}, sacrifice @: @ deals 2 damage to each creature.
 {r}, sacrifice @: @ deals 2 damage to target creature or player.
+{r}, sacrifice @: @ deals 6 damage to each creature and each player.
 {r}, sacrifice @: @ deals damage equal to its power to target creature.
 {r}, sacrifice @: destroy target artifact.
 {r}, sacrifice @: destroy target land.
@@ -2578,6 +2601,7 @@ target player sacrifices a permanent.
 {t}: @ deals 2 damage to target creature with flying.
 {t}: @ deals 3 damage to target attacking or blocking creature.
 {t}: @ deals 3 damage to target creature or player.
+{t}: @ deals 4 damage to each creature without flying and each player.
 {t}: @ deals 4 damage to target attacking creature with flying.
 {t}: @ deals damage equal to its power to target creature. that creature deals damage equal to its power to @.
 {t}: @ deals damage equal to its power to target creature with flying.
@@ -2623,6 +2647,7 @@ totem armor
 {t}, pay 1 life: counter target white spell.
 {t}: prevent all damage that would be dealt to target creature this turn.
 {t}: prevent all damage that would be dealt to target legendary creature this turn.
+{t}: prevent the next 1 damage that would be dealt to each creature and each player this turn.
 {t}: prevent the next 1 damage that would be dealt to target creature or player this turn.
 {t}: prevent the next 1 damage that would be dealt to target creature this turn.
 {t}: prevent the next 1 damage that would be dealt to target player this turn.
@@ -2873,6 +2898,7 @@ when @ becomes the target of a spell or ability, sacrifice it.
 when @ dies, add {1} to your mana pool.
 when @ dies, all creatures get -1/-1 until end of turn.
 when @ dies, all creatures get -5/-5 until end of turn.
+when @ dies, @ deals 1 damage to each creature and each player.
 when @ dies, destroy target artifact or enchantment.
 when @ dies, destroy target land.
 when @ dies, destroy target wall.
@@ -2894,6 +2920,7 @@ when @ dies, gain control of target creature.
 when @ dies, it deals 2 damage to target creature.
 when @ dies, it deals 2 damage to target creature or player.
 when @ dies, it deals 2 damage to you.
+when @ dies, it deals 3 damage to each creature and each player.
 when @ dies, it deals 3 damage to target creature or player.
 when @ dies, it deals 5 damage to each creature without flying.
 when @ dies, put a 1/1 colorless myr artifact creature token onto the battlefield.
@@ -2994,6 +3021,8 @@ when @ enters the battlefield, it deals 1 damage to target creature and 1 damage
 when @ enters the battlefield, it deals 1 damage to target creature or player.
 when @ enters the battlefield, it deals 1 damage to target player.
 when @ enters the battlefield, it deals 1 damage to you.
+when @ enters the battlefield, it deals 2 damage to each creature and each player.
+when @ enters the battlefield, it deals 2 damage to each creature with flying and each player.
 when @ enters the battlefield, it deals 2 damage to enchanted creature.
 when @ enters the battlefield, it deals 2 damage to target creature.
 when @ enters the battlefield, it deals 2 damage to target creature or player.
