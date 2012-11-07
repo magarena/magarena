@@ -20,7 +20,7 @@ Effect
     ;
 
 SingleEffect
-    = (Duration ", ")? (Optional SPACE)? (SelectPlayer SPACE)? Action (SPACE Duration)?
+    = (Duration ", ")? (Optional SPACE)? (SelectPlayer SPACE)? (Optional SPACE)? Action (SPACE Duration)?
     ;
 
 Optional
@@ -29,6 +29,7 @@ Optional
     / "if you don't,"
     / "if you can't,"
     / "if you do,"
+    / "may"
     ;
 
 AbilityWord
