@@ -102,6 +102,7 @@ Action
     / AnimateAction
     / AnimateActionReminder
     / ChangeLoyaltyAction
+    / AbilityRestriction
     ;
 
 Keyword
@@ -255,6 +256,10 @@ DamageReceiver
 
 AttacksTrigger
     = "whenever @ attacks"
+    ;
+
+AbilityRestriction
+    = "activate this ability only any time you could cast a sorcery"
     ;
 
 AnimateAction

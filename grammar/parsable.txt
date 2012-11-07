@@ -31,6 +31,7 @@
 {1}{b}: regenerate @.
 {1}{b}: regenerate target zombie.
 {1}{b}, remove a +1/+1 counter from @: all other creatures get -1/-1 until end of turn.
+{1}{b}{r}, {t}: each player discards a card. activate this ability only any time you could cast a sorcery.
 {1}{b}, sacrifice a creature: regenerate @.
 {1}{b}, sacrifice a land: target creature gets +2/+0 until end of turn.
 {1}{b}, sacrifice @: you draw two cards and lose 2 life.
@@ -114,6 +115,7 @@
 {1}, remove a +1/+1 counter from a creature you control: put a 1/1 green saproling creature token onto the battlefield.
 {1}, remove a +1/+1 counter from @: prevent all combat damage that would be dealt this turn.
 {1}, remove a +1/+1 counter from @: put a 1/1 colorless pentavite artifact creature token with flying onto the battlefield.
+{1}, remove a +1/+1 counter from @: put a 1/1 colorless thopter artifact creature token with flying onto the battlefield. activate this ability only any time you could cast a sorcery.
 {1}, remove a +1/+1 counter from @: regenerate @.
 {1}, remove a fade counter from @: @ deals 1 damage to target creature or player.
 {1}, remove a fade counter from @: destroy target artifact.
@@ -325,12 +327,15 @@
 {2}{b}{g}, {t}, sacrifice a creature: draw a card.
 {2}{b}: regenerate @.
 {2}{b}: regenerate target treefolk.
+{2}{b}, remove a +1/+1 counter from @: target player discards a card. activate this ability only any time you could cast a sorcery.
 {2}{b}{r}, sacrifice @: @ deals damage equal to its power to target player.
 {2}{b}, sacrifice a creature: target creature gets -2/-2 until end of turn.
 {2}{b}, sacrifice @: destroy target treefolk or forest.
 {2}{b}, sacrifice @: target creature gets -1/-1 until end of turn.
 {2}{b}, {t}, discard a card: destroy target nonblack creature. it can't be regenerated.
 {2}{b}, {t}, sacrifice a goblin: destroy target land.
+{2}{b}, {t}, sacrifice a zombie: destroy target non-zombie creature. it can't be regenerated. activate this ability only any time you could cast a sorcery.
+{2}{b}, {t}: target player discards a card. activate this ability only any time you could cast a sorcery.
 {2}: @ deals 1 damage to each creature and each player.
 {2}: @ deals 1 damage to target creature.
 {2}: @ deals 1 damage to target creature or player. sacrifice @.
@@ -420,6 +425,7 @@
 {2}, {t}: add {u} or {r} to your mana pool.
 {2}, {t}: add {w} or {b} to your mana pool.
 {2}, {t}: all creatures get -1/-0 until end of turn.
+{2}, tap an untapped creature you control: you gain 2 life. activate this ability only any time you could cast a sorcery.
 {2}: target artifact creature gets +1/+1 until end of turn.
 {2}: target black creature gains wither until end of turn.
 {2}: target black or green creature gains haste until end of turn.
@@ -513,6 +519,7 @@
 {3}{b}: regenerate @.
 {3}{b}{r}, {t}: @ deals 2 damage to target player.
 {3}{b}, sacrifice a goblin: put two 1/1 black goblin rogue creature tokens onto the battlefield.
+{3}{b}: target player discards a card. activate this ability only any time you could cast a sorcery.
 {3}{b}, {t}: destroy target tapped creature.
 {3}{b}, {t}, sacrifice a human: destroy target creature.
 {3}{b}, {t}: target creature gains swampwalk until end of turn.
@@ -582,6 +589,7 @@
 {3}: until end of turn, @ loses defender and gains flying.
 {3}{u}: return @ to its owner's hand.
 {3}{u}, sacrifice a permanent: return target permanent to its owner's hand.
+{3}{u}: target player draws a card. activate this ability only any time you could cast a sorcery.
 {3}{u}, {t}: counter target spell unless its controller pays {2}.
 {3}{u}, {t}, discard a card: untap target creature and gain control of it until end of turn. that creature gains haste until end of turn.
 {3}{u}, {t}: draw a card.
@@ -643,6 +651,7 @@
 {5}, {t}: discard a card at random, then draw two cards.
 {5}, {t}: draw a card.
 {5}, {t}: draw two cards, then discard a card.
+{5}, {t}, exile @: exile target artifact, creature, or land. activate this ability only any time you could cast a sorcery.
 {5}, {t}: return target enchantment card from your graveyard to your hand.
 {5}, {t}, sacrifice @: put a 3/4 colorless gargoyle artifact creature token with flying onto the battlefield.
 {5}, {t}, sacrifice @: return target card from your graveyard to your hand.
@@ -958,10 +967,13 @@ blue creatures get +1/+1.
 {b}, sacrifice a creature: destroy target nonblack creature.
 {b}, sacrifice a creature: regenerate @.
 {b}, sacrifice a creature: target creature gets -1/-1 until end of turn.
+{b}, sacrifice a creature: target player discards a card. activate this ability only any time you could cast a sorcery.
 {b}, sacrifice a creature: target player loses 1 life.
 {b}, sacrifice a goblin: @ gets +2/+2 until end of turn.
 {b}, sacrifice an elf: regenerate @.
+{b}, sacrifice a swamp: put a +1/+1 counter on @. activate this ability only any time you could cast a sorcery.
 {b}, sacrifice @: destroy target nonblack creature.
+{b}, sacrifice @: target opponent discards a card at random. activate this ability only any time you could cast a sorcery.
 {b}, sacrifice @: target player discards a card.
 {b}, sacrifice @: target player loses 1 life and you gain 1 life.
 {b}, {t}, discard a card: return target creature card from your graveyard to your hand.
@@ -2231,6 +2243,7 @@ sacrifice a creature: put a charge counter on @.
 sacrifice a creature: regenerate @.
 sacrifice a creature: regenerate enchanted creature.
 sacrifice a creature: regenerate target creature.
+sacrifice a creature, return @ to its owner's hand: return target creature card from your graveyard to the battlefield. activate this ability only any time you could cast a sorcery.
 sacrifice a creature: target creature gets -1/-1 until end of turn.
 sacrifice @: add {b} to your mana pool.
 sacrifice @: add {g} to your mana pool.
@@ -2304,6 +2317,7 @@ sacrifice @: @ deals 2 damage to each creature with flying.
 sacrifice @: @ deals 2 damage to each creature without flying.
 sacrifice @: @ deals 2 damage to target creature or player.
 sacrifice @: @ deals 2 damage to target creature with flying. that creature loses flying until end of turn.
+sacrifice @: @ deals 4 damage to target creature. activate this ability only any time you could cast a sorcery.
 sacrifice @: @ deals damage equal to its power to target creature with flying.
 sacrifice @: destroy target artifact or enchantment.
 sacrifice @: destroy target black creature.
@@ -3566,6 +3580,7 @@ wither
 {w}{w}, {t}: put a charge counter on @.
 {w}{w}, {t}: return target artifact card from your graveyard to your hand.
 {w}{w}{w}: regenerate @.
+{x}{1}, {t}: put x charge counters on @. activate this ability only any time you could cast a sorcery.
 {x}{b}{b}: target creature gets -0/-x until end of turn and @ gets +x/+0 until end of turn.
 {x}{b}, {t}, discard a card: target creature gets +x/+0 until end of turn.
 -x: @ deals x damage to target creature.
@@ -3580,6 +3595,7 @@ wither
 {x}, sacrifice an artifact with converted mana cost x: @ deals x damage to target creature or player.
 {x}, sacrifice @: destroy each artifact, creature, and enchantment with converted mana cost x or less.
 {x}, sacrifice @: destroy target artifact with converted mana cost x.
+{x}, sacrifice @: put x 1/1 green snake creature tokens onto the battlefield. activate this ability only any time you could cast a sorcery.
 {x}, {t}: each creature with converted mana cost x can't attack or block this turn.
 {x}, {t}, remove x charge counters from @: @ deals x damage to target creature or player.
 {x}, {t}: target creature gets -x/+x until end of turn.
