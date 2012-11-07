@@ -360,6 +360,7 @@ SelectPlayer
     / "that player"
     / "each player"
     / "each opponent"
+    / "your opponents"
     / "an opponent"
     / "you"
     / "he or she"
@@ -634,6 +635,7 @@ SelectOp
     / "the"
     / "that"
     / "other"
+    / "those"
     ;
 
 SelectCard

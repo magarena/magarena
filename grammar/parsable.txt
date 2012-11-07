@@ -97,6 +97,7 @@
 {1}: prevent the next 1 damage that would be dealt to target creature you control this turn.
 {1}: prevent the next 1 damage that would be dealt to @ this turn.
 +1: put a 1/1 black vampire creature token with lifelink onto the battlefield.
+-1: put a +1/+1 counter on each creature you control. those creatures gain vigilance until end of turn.
 +1: put a 1/1 white soldier creature token onto the battlefield.
 -1: put a 3/3 green beast creature token onto the battlefield.
 +1: put a 3/3 green beast creature token onto the battlefield.
@@ -1036,6 +1037,7 @@ creatures can't block.
 creatures with flying get +1/+1.
 creatures with flying get -2/-0.
 creatures with flying get +2/+0.
+creatures with flying your opponents control get -1/-0.
 creatures without flying can't attack.
 creatures without flying can't block this turn.
 creatures without flying get -2/-0.
@@ -1062,6 +1064,7 @@ creatures you control get +1/-1.
 creatures you control get +1/+1.
 creatures you control get +1/+1 and gain vigilance until end of turn.
 creatures you control get +1/+1 until end of turn.
+creatures you control get +1/+2 until end of turn. untap those creatures.
 creatures you control get +2/+0 until end of turn.
 creatures you control get +2/+1 until end of turn.
 creatures you control get +2/+2.
@@ -1083,6 +1086,12 @@ creatures you control have shadow.
 creatures you control have trample.
 creatures you control have vigilance.
 creatures you control with flying get +1/+1.
+creatures your opponents control get -1/-0.
+creatures your opponents control get -1/-1 until end of turn.
+creatures your opponents control get -2/-0 until end of turn.
+creatures your opponents control get -2/-2.
+creatures your opponents control get -4/-0 until end of turn.
+creatures your opponents control lose infect.
 cumulative upkeep {1}
 cumulative upkeep {1}{b}
 cumulative upkeep {1}{u}
@@ -2418,6 +2427,7 @@ tap all artifacts.
 tap all blue creatures.
 tap all creatures.
 tap all creatures without flying.
+tap all creatures your opponents control and untap all creatures you control.
 tap all nonwhite creatures.
 tap an untapped artifact you control: @ gets +1/+1 until end of turn.
 tap an untapped cephalid you control: tap target permanent.
@@ -2819,6 +2829,7 @@ untap target creature. it gets +2/+4 until end of turn.
 untap target creature. it gets +3/+3 until end of turn.
 untap target permanent.
 untap target permanent and gain control of it until end of turn. it gains haste until end of turn.
+until end of turn, creatures you control get +1/+1 and creatures your opponents control get -1/-1.
 until end of turn, target creature you control gets +3/+3 and other creatures you control get +1/+1.
 {u}: prevent all combat damage that would be dealt to and dealt by @ this turn.
 {u}: put @ on top of its owner's library.
@@ -2970,6 +2981,7 @@ when @ enters the battlefield, creatures you control gain shroud until end of tu
 when @ enters the battlefield, creatures you control get +1/+0 until end of turn.
 when @ enters the battlefield, creatures you control get +1/+1 and gain haste until end of turn.
 when @ enters the battlefield, creatures you control get +1/+1 until end of turn.
+when @ enters the battlefield, creatures your opponents control get -2/-2 until end of turn.
 when @ enters the battlefield, destroy all djinns and efreets. they can't be regenerated.
 when @ enters the battlefield, destroy all tapped creatures.
 when @ enters the battlefield, destroy target angel.
@@ -3017,6 +3029,7 @@ when @ enters the battlefield, gain control of target creature an opponent contr
 when @ enters the battlefield, gain control of target permanent until end of turn. untap that permanent. it gains haste until end of turn.
 when @ enters the battlefield, goblin creatures get +3/+0 until end of turn.
 when @ enters the battlefield, green creatures get -1/-1 until end of turn.
+when @ enters the battlefield, it deals 1 damage to each creature with flying your opponents control. tap those creatures.
 when @ enters the battlefield, it deals 1 damage to target creature and 1 damage to you.
 when @ enters the battlefield, it deals 1 damage to target creature or player.
 when @ enters the battlefield, it deals 1 damage to target player.
