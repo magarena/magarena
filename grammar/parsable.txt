@@ -372,6 +372,7 @@
 {2}{g}{w}, {t}: put a 1/1 green saproling creature token onto the battlefield.
 {2}, pay 2 life: draw a card.
 {2}: prevent all combat damage that would be dealt to and dealt by target creature you control this turn.
+{2}: prevent the next 1 damage that would be dealt by @ this turn.
 {2}: prevent the next 1 damage that would be dealt to you this turn.
 {2}: put a 1/1 colorless sliver creature token onto the battlefield.
 {2}: put a charge counter on @.

@@ -383,6 +383,7 @@ BounceAction
 
 PreventAction
     = "prevent the next " Number SPACE Damage " that would be dealt to " DamageReceiver 
+    / "prevent the next " Number SPACE Damage " that would be dealt by " DamageReceiver 
     / "prevent all " Damage " that would be dealt to and dealt by " DamageReceiver 
     / "prevent all " Damage " that would be dealt to " DamageReceiver
     / "prevent all " Damage " that would be dealt by " DamageReceiver
