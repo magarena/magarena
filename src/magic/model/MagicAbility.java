@@ -364,19 +364,19 @@ public enum MagicAbility {
             card.add(new MagicDieDrawCardTrigger(false));
         }
     },
-    DamageDrawCard("damage draw card",10) {
+    DamageOpponentDrawCard("damage opponent draw card",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            card.add(new MagicThiefTrigger(false,true,1));
+            card.add(new MagicThiefTrigger(false,true,true));
         }
     },
     CombatDamageDrawCard("combat damage draw card",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            card.add(new MagicThiefTrigger(true,true,1));
+            card.add(new MagicThiefTrigger(true,true,false));
         }
     },
     CombatDamageMayDrawCard("combat damage may draw card",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            card.add(new MagicThiefTrigger(true,false,1));
+            card.add(new MagicThiefTrigger(true,false,false));
         }
     },
     DamageGrow("damage grow",10) {

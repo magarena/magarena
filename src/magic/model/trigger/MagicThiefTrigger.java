@@ -12,18 +12,20 @@ public class MagicThiefTrigger extends MagicWhenDamageIsDealtTrigger {
 
     private final boolean combat;
     private final boolean mustDraw;
-    private final int amount;
+    private final boolean onlyOpponent;
+    private final int amount = 1;
     
-    public MagicThiefTrigger(final boolean combat,final boolean mustDraw,final int amount) {
+    public MagicThiefTrigger(final boolean combat,final boolean mustDraw,final boolean onlyOpponent) {
         this.combat = combat;
         this.mustDraw = mustDraw;
-        this.amount = amount;
+        this.onlyOpponent = onlyOpponent;
     }
     
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
         if (damage.getSource() == permanent &&
             damage.getTarget().isPlayer() &&
+            (!onlyOpponent || permanent.isOpponent(damage.getTarget())) &&
             (!combat || damage.isCombat())) {
             return (mustDraw) ?
                 new MagicEvent(
