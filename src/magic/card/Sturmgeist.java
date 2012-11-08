@@ -18,26 +18,4 @@ public class Sturmgeist {
             pt.set(amount,amount);
         }
     };
-    
-    public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            return (damage.getSource() == permanent &&
-                    damage.getTarget().isPlayer() &&
-                    damage.isCombat()) ?
-                new MagicEvent(
-                    permanent,
-                    this,
-                    "PN draws a card."
-                ):
-                MagicEvent.NONE;
-        }
-        @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
-            game.doAction(new MagicDrawAction(event.getPlayer(),1));
-        }
-    };
 }

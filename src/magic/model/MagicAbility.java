@@ -369,6 +369,11 @@ public enum MagicAbility {
             card.add(new MagicThiefTrigger(false,true,1));
         }
     },
+    CombatDamageDrawCard("combat damage draw card",10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(new MagicThiefTrigger(true,true,1));
+        }
+    },
     CombatDamageMayDrawCard("combat damage may draw card",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             card.add(new MagicThiefTrigger(true,false,1));
