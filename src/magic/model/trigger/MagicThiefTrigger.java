@@ -10,24 +10,39 @@ import magic.model.event.MagicEvent;
 
 public class MagicThiefTrigger extends MagicWhenDamageIsDealtTrigger {
 
-    private final boolean combat;
-    private final boolean mustDraw;
-    private final boolean onlyOpponent;
+    public static enum Choice {
+        May,
+        Must
+    }
+
+    public static enum Type {
+        Combat,
+        Any
+    }
+
+    public static enum Player {
+        Opponent,
+        Any
+    }
+
+    private final Type type;
+    private final Choice choice;
+    private final Player player;
     private final int amount = 1;
     
-    public MagicThiefTrigger(final boolean combat,final boolean mustDraw,final boolean onlyOpponent) {
-        this.combat = combat;
-        this.mustDraw = mustDraw;
-        this.onlyOpponent = onlyOpponent;
+    public MagicThiefTrigger(final Type type,final Choice choice,final Player player) {
+        this.type = type;
+        this.choice = choice;
+        this.player = player;
     }
     
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
         if (damage.getSource() == permanent &&
             damage.getTarget().isPlayer() &&
-            (!onlyOpponent || permanent.isOpponent(damage.getTarget())) &&
-            (!combat || damage.isCombat())) {
-            return (mustDraw) ?
+            (player == Player.Any || permanent.isOpponent(damage.getTarget())) &&
+            (type == Type.Any || damage.isCombat())) {
+            return (choice == Choice.Must) ?
                 new MagicEvent(
                     permanent,
                     this,
@@ -56,7 +71,7 @@ public class MagicThiefTrigger extends MagicWhenDamageIsDealtTrigger {
             final MagicGame game,
             final MagicEvent event,
             final Object[] choiceResults) {
-        if (mustDraw) {
+        if (choice == choice.Must) {
             game.doAction(new MagicDrawAction(event.getPlayer(),amount));
         } else if (MagicMayChoice.isYesChoice(choiceResults[0])) {
             game.doAction(new MagicDrawAction(event.getPlayer(),amount));

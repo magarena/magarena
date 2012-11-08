@@ -53,6 +53,9 @@ import magic.model.trigger.MagicTappedIntoPlayTrigger;
 import magic.model.trigger.MagicTappedIntoPlayUnlessTrigger;
 import magic.model.trigger.MagicTappedIntoPlayUnlessTwoTrigger;
 import magic.model.trigger.MagicThiefTrigger;
+import magic.model.trigger.MagicThiefTrigger.Type;
+import magic.model.trigger.MagicThiefTrigger.Choice;
+import magic.model.trigger.MagicThiefTrigger.Player;
 import magic.model.trigger.MagicWhenBlocksPumpTrigger;
 
 import java.util.EnumSet;
@@ -366,17 +369,17 @@ public enum MagicAbility {
     },
     DamageOpponentDrawCard("damage opponent draw card",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            card.add(new MagicThiefTrigger(false,true,true));
+            card.add(new MagicThiefTrigger(Type.Any, Choice.Must, Player.Opponent));
         }
     },
     CombatDamageDrawCard("combat damage draw card",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            card.add(new MagicThiefTrigger(true,true,false));
+            card.add(new MagicThiefTrigger(Type.Combat, Choice.Must, Player.Any));
         }
     },
     CombatDamageMayDrawCard("combat damage may draw card",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            card.add(new MagicThiefTrigger(true,false,false));
+            card.add(new MagicThiefTrigger(Type.Combat, Choice.May, Player.Any));
         }
     },
     DamageGrow("damage grow",10) {
