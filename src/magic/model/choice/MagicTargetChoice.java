@@ -50,6 +50,12 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice NEG_TARGET_INSTANT_OR_SORCERY_SPELL=
         new MagicTargetChoice(MagicTargetFilter.TARGET_INSTANT_OR_SORCERY_SPELL,true,MagicTargetHint.Negative,
                 "target instant or sorcery spell");
+    public static final MagicTargetChoice TARGET_INSTANT_SPELL=
+        new MagicTargetChoice(MagicTargetFilter.TARGET_INSTANT_SPELL,true,MagicTargetHint.None,
+                "target instant spell");
+    public static final MagicTargetChoice NEG_TARGET_INSTANT_SPELL=
+        new MagicTargetChoice(MagicTargetFilter.TARGET_INSTANT_SPELL,true,MagicTargetHint.Negative,
+                "target instant spell");
     public static final MagicTargetChoice NEG_TARGET_ARTIFACT_SPELL =
             new MagicTargetChoice(MagicTargetFilter.TARGET_ARTIFACT_SPELL,true,MagicTargetHint.Negative,
                     "target artifact spell");
@@ -526,6 +532,7 @@ public class MagicTargetChoice extends MagicChoice {
         factory.put("neg target red or green spell", NEG_TARGET_RED_GREEN_SPELL);
         factory.put("neg target noncreature spell", NEG_TARGET_NONCREATURE_SPELL);
         factory.put("neg target creature spell", NEG_TARGET_CREATURE_SPELL);
+        factory.put("neg target instant spell", NEG_TARGET_INSTANT_SPELL);
     }
 
     public static MagicTargetChoice build(final String arg) {

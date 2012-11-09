@@ -221,7 +221,16 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }
     };
     
-    MagicStackFilterImpl TARGET_ARTIFACT_SPELL = new MagicStackFilterImpl() {
+    MagicStackFilterImpl TARGET_INSTANT_SPELL=new MagicStackFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            return itemOnStack.isSpell(MagicType.Instant);
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType==MagicTargetType.Stack;
+        }
+    };
+
+     MagicStackFilterImpl TARGET_ARTIFACT_SPELL = new MagicStackFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell(MagicType.Artifact);
         }
