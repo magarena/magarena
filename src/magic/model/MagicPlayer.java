@@ -36,7 +36,7 @@ public class MagicPlayer implements MagicTarget {
         }
         @Override
         public MagicPlayer getOpponent() {
-            throw new RuntimeException("getOpponent called for MagicPlayer.NONE");
+            return this;
         }
     };
 
