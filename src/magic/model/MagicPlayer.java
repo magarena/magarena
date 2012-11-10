@@ -34,6 +34,10 @@ public class MagicPlayer implements MagicTarget {
         public MagicGame getGame() {
             throw new RuntimeException("getGame called for MagicPlayer.NONE");
         }
+        @Override
+        public MagicPlayer getOpponent() {
+            throw new RuntimeException("getOpponent called for MagicPlayer.NONE");
+        }
     };
 
     private static final long ID_FACTOR=31;
