@@ -61,12 +61,9 @@ public class MagicBuybackChoice extends MagicChoice {
             final MagicPlayer player,
             final MagicSource source) {
 
-        final Collection<?> otherOptions;
-        if (otherChoice.isValid()) {
-            otherOptions = otherChoice.getArtificialOptions(game,event,player,source);            
-        } else {
-            otherOptions = NO_OPTIONS_LIST;
-        }
+        final Collection<?> otherOptions = otherChoice.isValid() ?
+            otherChoice.getArtificialOptions(game,event,player,source) :
+            NO_OPTIONS_LIST;
         
         final List<Object[]> choiceResultsList = new ArrayList<Object[]>();
         final Object[] choiceResults = new Object[3];
@@ -74,8 +71,7 @@ public class MagicBuybackChoice extends MagicChoice {
         if (!new MagicPayManaCostResultBuilder(game,player,cost.getBuilderCost()).hasResults()) {
             choiceResults[1] = NO_CHOICE;
             manaOptions = NO_OPTIONS_LIST;
-        }
-        else {
+        } else {
             choiceResults[1] = YES_CHOICE;
             final MagicPayManaCostChoice manaChoice = new MagicPayManaCostChoice(cost);
             manaOptions = manaChoice.getArtificialOptions(game,event,player,source);
