@@ -19,6 +19,9 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
     @Override
     public void doAction(final MagicGame game) {
         permanent=createPermanent(game);
+        permanent.getFirstController().addPermanent(permanent);
+        game.update();
+
         final int score=ArtificialScoringSystem.getTurnScore(game)-permanent.getStaticScore();
                 
         if (enchantedPermanent.isValid()) {

@@ -7,6 +7,7 @@ import magic.model.event.MagicActivationPriority;
 import magic.model.event.MagicSourceManaActivation;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
+import magic.model.action.MagicLoseGameAction;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,6 +41,7 @@ public class MagicPlayer implements MagicTarget {
         }
     };
 
+    private static final int LOSING_POISON=10;
     private static final long ID_FACTOR=31;
     
     private final MagicPlayerDefinition playerDefinition;
@@ -559,5 +561,14 @@ public class MagicPlayer implements MagicTarget {
 
     public int getDrawnCards() {
         return drawnCards;
+    }
+
+    public void generateStateBasedActions() {
+        if (getLife() <= 0) {
+            currGame.addDelayedAction(new MagicLoseGameAction(this,MagicLoseGameAction.LIFE_REASON));
+        }
+        if (getPoison() >= LOSING_POISON) {
+            currGame.addDelayedAction(new MagicLoseGameAction(this,MagicLoseGameAction.POISON_REASON));
+        }
     }
 }

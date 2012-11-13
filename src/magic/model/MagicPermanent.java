@@ -120,11 +120,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         blockingCreatures=new MagicPermanentList();
         exiledCards = new MagicCardList();
         fixedScore=ArtificialScoringSystem.getFixedPermanentScore(this);
-        
-        if (firstController != MagicPlayer.NONE) {
-            firstController.addPermanent(this);
-            firstController.getGame().update();
-        }
     }
 
     private MagicPermanent(final MagicCopyMap copyMap, final MagicPermanent sourcePermanent) {
@@ -621,7 +616,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         chosenTarget = target;
     }
     
-    void checkState() {
+    void generateStateBasedActions() {
         final MagicGame game = getGame();
         if (isCreature()) {
             final int toughness=getToughness();

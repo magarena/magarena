@@ -6,7 +6,6 @@ import magic.model.action.MagicActionList;
 import magic.model.action.MagicAddEventAction;
 import magic.model.action.MagicExecuteFirstEventAction;
 import magic.model.action.MagicLogMarkerAction;
-import magic.model.action.MagicLoseGameAction;
 import magic.model.action.MagicMarkerAction;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.action.MagicRemoveFromPlayAction;
@@ -48,7 +47,6 @@ import java.util.TreeSet;
 public class MagicGame {
 
     public static final boolean LOSE_DRAW_EMPTY_LIBRARY=true;
-    private static final int LOSING_POISON=10;
     private static final long ID_FACTOR=31;
     
     private static int COUNT;
@@ -485,10 +483,7 @@ public class MagicGame {
         try {
             action.doAction(this);
         } catch (Throwable ex) {
-            MagicGameReport.buildReport(INSTANCE, Thread.currentThread(), ex);
-            if (this != INSTANCE) {
-                MagicGameReport.buildReport(this, Thread.currentThread(), ex);
-            }
+            MagicGameReport.buildReport(this, Thread.currentThread(), ex);
             System.exit(1);
         }
 
@@ -832,19 +827,13 @@ public class MagicGame {
            
             // Check if a player has lost
             for (final MagicPlayer player : players) {
-                if (player.getLife() <= 0) {
-                    addDelayedAction(new MagicLoseGameAction(player,MagicLoseGameAction.LIFE_REASON));
-                }
-                if (player.getPoison() >= LOSING_POISON) {
-                    addDelayedAction(new MagicLoseGameAction(player,MagicLoseGameAction.POISON_REASON));
-                }
+                player.generateStateBasedActions();
             }
 
             // Check permanents' state
             for (final MagicPlayer player : players) {
             for (final MagicPermanent permanent : player.getPermanents()) {
-                permanent.checkState();
-                
+                permanent.generateStateBasedActions();
             }}
             
             doDelayedActions();
