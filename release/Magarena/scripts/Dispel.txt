@@ -1,0 +1,9 @@
+name=Dispel
+url=http://magiccards.info/rtr/en/36.html
+image=http://magiccards.info/scans/en/rtr/36.jpg
+value=3.257
+rarity=C
+type=Instant
+cost={U}
+timing=counter
+effect=Counter target instant spell.
