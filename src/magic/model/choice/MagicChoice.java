@@ -47,7 +47,12 @@ public abstract class MagicChoice {
     MagicChoice(final String description) {
         this.description=description;
     }
-    
+
+    @Override
+    public String toString() {
+        return getClass().toString();
+    }
+
     public final String getDescription() {
         return description;
     }

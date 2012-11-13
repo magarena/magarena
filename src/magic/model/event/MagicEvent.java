@@ -466,21 +466,23 @@ public class MagicEvent implements MagicCopyable {
     private static final void payManaCost(
             final MagicGame game,
             final MagicPlayer player,
-            final Object[] choiceResults,
-            final int index) {
-        final MagicPayManaCostResult result=(MagicPayManaCostResult)choiceResults[index];
-        // Result can be null when paying cost is optional.
-        if (result!=null) {
-            result.doAction(game,player);
-            // Let each payed mana cost influence score.
-            game.changeScore(ArtificialScoringSystem.getManaScore(result.getConverted()));
-        }
+            final MagicPayManaCostResult result) { 
+        result.doAction(game,player);
+        // Let each payed mana cost influence score.
+        game.changeScore(ArtificialScoringSystem.getManaScore(result.getConverted()));
     }
     
     final void payManaCost(final MagicGame game,final MagicPlayer aPlayer,final Object[] choiceResults) {
         final int manaIndex=getManaChoiceResultIndex();
-        if (manaIndex>=0) {
-            payManaCost(game,aPlayer,choiceResults,manaIndex);
+        assert manaIndex < choiceResults.length : 
+            this + "\n" +
+            "manaIndex " + manaIndex + " from " + choice + " is outside of choiceResults with size " + choiceResults.length;
+        // Result can be null when paying cost is optional.
+        if (manaIndex >= 0 && choiceResults[manaIndex] != null) {
+            assert choiceResults[manaIndex] instanceof MagicPayManaCostResult : 
+                this + "\n" +
+                "manaIndex " + manaIndex + " from " + choice + " is " + choiceResults[manaIndex].getClass() + " instead of MagicPayManaCostResult";
+            payManaCost(game,aPlayer,(MagicPayManaCostResult)choiceResults[manaIndex]);
         }
     }
     
