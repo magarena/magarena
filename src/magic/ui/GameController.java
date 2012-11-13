@@ -491,6 +491,7 @@ public class GameController {
                     game.logMessages();
                 }
                 if (event.hasChoice()) {
+                    game.update();
                     executeNextEventWithChoices(event);
                 } else {
                     game.executeNextEvent(MagicEvent.NO_CHOICE_RESULTS);
