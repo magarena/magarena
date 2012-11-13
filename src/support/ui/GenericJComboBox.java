@@ -18,6 +18,7 @@ import javax.swing.plaf.basic.BasicComboBoxRenderer;
  */
 public class GenericJComboBox<E> extends JComboBox implements DescriptionProviderCellRenderer.ItemInfoProvider<E>
 {
+    private static final long serialVersionUID = 1L;
     private GenericComboBoxModel<E> _model;
     private DescriptionProviderCellRenderer _renderer;
 
@@ -64,6 +65,7 @@ public class GenericJComboBox<E> extends JComboBox implements DescriptionProvide
      * @see #setGenericSelectedItem(java.lang.Object)
      */
     @Override
+    @Deprecated
     public void setSelectedItem(Object obj)
     {
         _model.setSelectedItem(obj);

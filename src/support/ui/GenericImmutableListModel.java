@@ -11,6 +11,7 @@ import java.util.List;
  */
 public class GenericImmutableListModel<T> extends GenericAbstractListModel<T>
 {
+    private static final long serialVersionUID = 1L;
     private final List<T> _elements;
 
     public GenericImmutableListModel(Iterable<T> data)

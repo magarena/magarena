@@ -15,6 +15,7 @@ import support.ui.SelectionListener.SelectionAction;
  */
 public class GenericComboBoxModel<T> extends GenericImmutableListModel<T> implements ComboBoxModel
 {
+    private static final long serialVersionUID = 1L;
     private T _selectedItem;
     private boolean _isSelectionInProgress;
 
