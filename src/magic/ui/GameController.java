@@ -495,11 +495,11 @@ public class GameController {
                 } else {
                     game.executeNextEvent(MagicEvent.NO_CHOICE_RESULTS);
                 }
-                game.update();
             } else {
                 game.getPhase().executePhase(game);
             }
-
+                
+            game.update();
 
             if (testMode) {
                 if (System.currentTimeMillis() - startTime > MAX_TEST_MODE_DURATION) {
