@@ -325,7 +325,6 @@ public class GameController {
     }
 
     public void update() {
-        game.update();
         gamePanel.updateInfo();
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
@@ -496,6 +495,7 @@ public class GameController {
                 } else {
                     game.executeNextEvent(MagicEvent.NO_CHOICE_RESULTS);
                 }
+                game.update();
             } else {
                 game.getPhase().executePhase(game);
             }
