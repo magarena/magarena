@@ -8,13 +8,6 @@ import java.util.List;
 
 public class ArtificialWorker {
     
-    private static final class MaximumExceededException extends RuntimeException {
-        private static final long serialVersionUID = 1L;
-        public MaximumExceededException() {
-            super("Maximum is exceeded.");
-        }
-    };
-    
     private final int id;
     private final MagicGame game;
     private final ArtificialScoreBoard scoreBoard;
@@ -45,8 +38,7 @@ public class ArtificialWorker {
         // Play game until given end turn for all possible choices.
         while (!game.isFinished()) {
             if (!game.hasNextEvent()) {
-                final MagicPhase phase=game.getPhase();
-                phase.executePhase(game);
+                game.getPhase().executePhase(game);
                                 
                 // Caching of best score for game situations.
                 if (game.cacheState()) {
@@ -104,11 +96,6 @@ public class ArtificialWorker {
         final ArtificialScore aiScore=new ArtificialScore(game.getScore(),depth);
         game.undoActions();
         gameCount++;
-        /*
-        if (gameCount>maxGames) {
-            throw new MaximumExceededException();
-        }
-        */
         return aiScore;
     }
 
@@ -118,19 +105,16 @@ public class ArtificialWorker {
             final int mainPhases,
             final int aMaxDepth,
             final int aMaxGames) {
-        gameCount=0;
-        this.maxDepth=aMaxDepth;
-        this.maxGames=aMaxGames;
+        gameCount = 0;
+        maxDepth  = aMaxDepth;
+        maxGames  = aMaxGames;
+        
         game.setMainPhases(mainPhases);
-        aiChoiceResults.worker=id;
+        
+        aiChoiceResults.worker    = id;
+        aiChoiceResults.aiScore   = runGame(game.map(aiChoiceResults.choiceResults),pruneScore,0);
+        aiChoiceResults.gameCount = gameCount;
 
-        try { //check depth exceeded
-            aiChoiceResults.aiScore=runGame(game.map(aiChoiceResults.choiceResults),pruneScore,0);
-        } catch (final MaximumExceededException ex) {
-            aiChoiceResults.aiScore=ArtificialScore.MAXIMUM_DEPTH_EXCEEDED_SCORE;
-        } 
-
-        aiChoiceResults.gameCount=gameCount;
         game.undoAllActions();
-    }    
+    }
 }
