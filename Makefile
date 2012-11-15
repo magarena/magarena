@@ -183,7 +183,7 @@ inf: $(MAG)
 	$(JAVA) -Dmagarena.dir=`pwd`/release magic.DeckStrCal \
 	--seed $* \
 	--ai1 MMAB --str1 1 \
-	--ai2 MMAB --str2 1 \
+	--ai2 MMABC --str2 1 \
 	--life 10 \
 	--games 1 \
 	--repeat 50000 >> $*.log 2>&1
