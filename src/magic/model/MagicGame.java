@@ -492,6 +492,7 @@ public class MagicGame {
     }
     
     public void update() {
+        doDelayedActions();
         MagicPermanent.update(this);
         doDelayedActions();
     }
@@ -823,8 +824,6 @@ public class MagicGame {
         while (stateCheckRequired) {
             stateCheckRequired = false;
             
-            update();
-           
             // Check if a player has lost
             for (final MagicPlayer player : players) {
                 player.generateStateBasedActions();
@@ -836,7 +835,7 @@ public class MagicGame {
                 permanent.generateStateBasedActions();
             }}
             
-            doDelayedActions();
+            update();
             //some action may set stateCheckRequired to true, if so loop again
         }
     }
