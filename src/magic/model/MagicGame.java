@@ -113,20 +113,20 @@ public class MagicGame {
     }
 
     private MagicGame(
-            final MagicDuel duel,
-            final MagicGameplay gameplay,
-            final MagicPlayer[] players,
+            final MagicDuel aDuel,
+            final MagicGameplay aGameplay,
+            final MagicPlayer[] aPlayers,
             final MagicPlayer startPlayer,
-            final boolean sound) {
+            final boolean aSound) {
 
         artificial=false;
-        this.duel=duel;
-        this.gameplay=gameplay;
-        this.players=players;
+        duel = aDuel;
+        gameplay = aGameplay;
+        players = aPlayers;
         for (final MagicPlayer player : players) {
             player.setGame(this);
         }
-        this.sound=sound;
+        sound = aSound;
         
         triggers=new MagicPermanentTriggerMap();
         turnTriggers=new MagicPermanentTriggerList();
@@ -146,49 +146,49 @@ public class MagicGame {
         changePhase(gameplay.getStartPhase(this));
     }
     
-    public MagicGame(final MagicGame game,final MagicPlayer scorePlayer) {
+    public MagicGame(final MagicGame game,final MagicPlayer aScorePlayer) {
         
         artificial=true;
         sound=false;
        
         //copy the reference, these are singletons
-        this.duel=game.duel;
-        this.gameplay=game.gameplay;
-        this.phase=game.phase;
-        this.step=game.step;
+        duel=game.duel;
+        gameplay=game.gameplay;
+        phase=game.phase;
+        step=game.step;
 
         //copying primitives, array of primitive
-        this.time = game.time;
-        this.turn = game.turn;
-        this.startTurn = game.startTurn;
-        this.landPlayed = game.landPlayed;
-        this.spellsPlayed = game.spellsPlayed;
-        this.creatureDiedThisTurn = game.creatureDiedThisTurn;
-        this.priorityPassed = game.priorityPassed;
-        this.priorityPassedCount = game.priorityPassedCount;
-        this.stateCheckRequired = game.stateCheckRequired;
+        time = game.time;
+        turn = game.turn;
+        startTurn = game.startTurn;
+        landPlayed = game.landPlayed;
+        spellsPlayed = game.spellsPlayed;
+        creatureDiedThisTurn = game.creatureDiedThisTurn;
+        priorityPassed = game.priorityPassed;
+        priorityPassedCount = game.priorityPassedCount;
+        stateCheckRequired = game.stateCheckRequired;
         
         //copied and stored in copyMap
         final MagicCopyMap copyMap=new MagicCopyMap();        
-        this.players=copyMap.copyObjects(game.players,MagicPlayer.class);        
+        players=copyMap.copyObjects(game.players,MagicPlayer.class);        
         for (final MagicPlayer player : players) {
             player.setGame(this);
         }
-        this.scorePlayer=copyMap.copy(scorePlayer);
-        this.visiblePlayer=copyMap.copy(game.visiblePlayer);
-        this.turnPlayer=copyMap.copy(game.turnPlayer);
-        //this.losingPlayer
+        scorePlayer=copyMap.copy(aScorePlayer);
+        visiblePlayer=copyMap.copy(game.visiblePlayer);
+        turnPlayer=copyMap.copy(game.turnPlayer);
+        losingPlayer=copyMap.copy(game.losingPlayer);
         
         //construct a new object using copyMap to copy internals
-        this.events=new MagicEventQueue(copyMap, game.events);
-        this.stack=new MagicStack(copyMap, game.stack);
-        this.triggers=new MagicPermanentTriggerMap(copyMap, game.triggers);
-        this.statics=new MagicPermanentStaticMap(copyMap, game.statics);
-        this.payedCost=new MagicPayedCost(copyMap, game.payedCost);
-        this.exiledUntilEndOfTurn=new MagicCardList(copyMap, game.exiledUntilEndOfTurn);
+        events=new MagicEventQueue(copyMap, game.events);
+        stack=new MagicStack(copyMap, game.stack);
+        triggers=new MagicPermanentTriggerMap(copyMap, game.triggers);
+        statics=new MagicPermanentStaticMap(copyMap, game.statics);
+        payedCost=new MagicPayedCost(copyMap, game.payedCost);
+        exiledUntilEndOfTurn=new MagicCardList(copyMap, game.exiledUntilEndOfTurn);
        
         //construct a new object
-        this.turnTriggers=new MagicPermanentTriggerList(triggers, game.turnTriggers);
+        turnTriggers=new MagicPermanentTriggerList(triggers, game.turnTriggers);
    
         //the following are NOT copied when game state is cloned
         //fastChoices
@@ -197,21 +197,20 @@ public class MagicGame {
         //mainPhaseCount
     
         //score is RESET to zero
-        this.score=0;
+        score=0;
         
         //historical actions are not carried over
-        this.actions=new MagicActionList();
+        actions=new MagicActionList();
 
         //there should be no pending actions
         assert game.delayedActions.isEmpty() : "delayedActions: " + game.delayedActions; 
-        this.delayedActions=new MagicActionList();
+        delayedActions=new MagicActionList();
 
-        this.disableLog = true;
-        /*
-        this.undoPoints=null;
-        this.logBook=null;
-        this.logMessageBuilder=null;
-        */
+        //no logging
+        disableLog = true;
+        undoPoints=null;
+        logBook=null;
+        logMessageBuilder=null;
     }
     
     public void setSkipTurn(final boolean skip) {
@@ -222,8 +221,8 @@ public class MagicGame {
         return skipTurn;
     }
 
-    public void setScore(final int score) {
-        this.score=score;
+    public void setScore(final int aScore) {
+        score = aScore;
     }
     
     public void changeScore(final int amount) {
@@ -344,16 +343,16 @@ public class MagicGame {
         return sound;
     }
     
-    public void setFastChoices(final boolean fastChoices) {
-        this.fastChoices=fastChoices;
+    public void setFastChoices(final boolean aFastChoices) {
+        fastChoices = aFastChoices;
     }
     
     public boolean getFastChoices() {
         return fastChoices;
     }
             
-    public void setTurn(final int turn) {
-        this.turn=turn;
+    public void setTurn(final int aTurn) {
+        turn = aTurn;
     }
     
     public int getTurn() {
@@ -385,12 +384,12 @@ public class MagicGame {
         return gameplay;
     }
     
-    public void setPhase(final MagicPhase phase) {
-        this.phase=phase;
+    public void setPhase(final MagicPhase aPhase) {
+        phase = aPhase;
     }
     
     public void changePhase(final MagicPhase aPhase) {
-        this.phase=aPhase;
+        phase = aPhase;
         step=MagicStep.Begin;
         priorityPassedCount=0;
         players[0].getActivationPriority().clear();
@@ -409,8 +408,8 @@ public class MagicGame {
         return phase.getType().isMain();
     }
     
-    public void setStep(final MagicStep step) {
-        this.step=step;
+    public void setStep(final MagicStep aStep) {
+        step = aStep;
     }
         
     public MagicStep getStep() {
@@ -678,16 +677,16 @@ public class MagicGame {
         return players[1-player.getIndex()];        
     }
     
-    private void setVisiblePlayer(final MagicPlayer visiblePlayer) {
-        this.visiblePlayer = visiblePlayer;
+    private void setVisiblePlayer(final MagicPlayer aVisiblePlayer) {
+        visiblePlayer = aVisiblePlayer;
     }
     
     public MagicPlayer getVisiblePlayer() {
         return visiblePlayer;
     }
         
-    public void setTurnPlayer(final MagicPlayer turnPlayer) {
-        this.turnPlayer = turnPlayer;
+    public void setTurnPlayer(final MagicPlayer aTurnPlayer) {
+        turnPlayer = aTurnPlayer;
     }
         
     public MagicPlayer getTurnPlayer() {
@@ -747,19 +746,19 @@ public class MagicGame {
     }
     
     public void incLandPlayed() {
-        this.landPlayed++;
+        landPlayed++;
     }
     
     public void decLandPlayed() {
-        this.landPlayed--;
+        landPlayed--;
     }
     
     public void resetLandPlayed() {
-        this.landPlayed = 0;
+        landPlayed = 0;
     }
 
     public void setLandPlayed(final int lp) {
-        this.landPlayed = lp;
+        landPlayed = lp;
     }
     
     public int getSpellsPlayed() {
@@ -774,7 +773,7 @@ public class MagicGame {
     }
     
     public void setCreatureDiedThisTurn(final boolean died) {
-        this.creatureDiedThisTurn = died;
+        creatureDiedThisTurn = died;
     }
     
     public MagicStack getStack() {
@@ -1005,8 +1004,8 @@ public class MagicGame {
     // ***** TRIGGERS *****
     
     /** Executes triggers immediately when they have no choices, otherwise ignore them. */
-    public void setImmediate(final boolean immediate) {
-        this.immediate=immediate;
+    public void setImmediate(final boolean aImmediate) {
+        immediate = aImmediate;
     }
     
     public void addTriggers(final MagicPermanent permanent) {
