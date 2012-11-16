@@ -27,6 +27,7 @@ public abstract class MagicPhase {
         switch (game.getStep()) {
             case Begin:
                 executeBeginStep(game);
+                game.update();
                 break;
             case ActivePlayer:
                 game.checkState();
@@ -64,6 +65,7 @@ public abstract class MagicPhase {
                 break;
             case NextPhase:
                 executeEndOfPhase(game);
+                game.update();
                 game.changePhase(game.getGameplay().getNextPhase(game));
                 break;
         }

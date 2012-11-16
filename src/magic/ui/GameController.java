@@ -499,8 +499,6 @@ public class GameController {
                 game.getPhase().executePhase(game);
             }
                 
-            game.update();
-
             if (testMode) {
                 if (System.currentTimeMillis() - startTime > MAX_TEST_MODE_DURATION) {
                     System.err.println("WARNING. Max time for AI game exceeded");

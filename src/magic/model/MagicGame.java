@@ -655,6 +655,7 @@ public class MagicGame {
         
     public void executeNextEvent(final Object[] choiceResults) {
         doAction(new MagicExecuteFirstEventAction(choiceResults));
+        update();
     }
     
     public MagicDuel getDuel() {
