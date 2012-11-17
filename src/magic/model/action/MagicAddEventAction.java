@@ -18,7 +18,8 @@ public class MagicAddEventAction extends MagicAction {
 
     @Override
     public void undoAction(final MagicGame game) {
-        game.getEvents().removeLast();
+        final MagicEvent lastEvent = game.getEvents().removeLast();
+        assert lastEvent == event : "removed event " + lastEvent + " different from added event " + event;
     }
     
     @Override

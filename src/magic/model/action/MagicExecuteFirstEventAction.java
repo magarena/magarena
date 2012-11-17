@@ -8,14 +8,14 @@ public class MagicExecuteFirstEventAction extends MagicAction {
     private final Object[] choiceResults;
     private MagicEvent firstEvent;
     
-    public MagicExecuteFirstEventAction(final Object[] choiceResults) {
-        this.choiceResults=choiceResults;
+    public MagicExecuteFirstEventAction(final Object[] aChoiceResults) {
+        choiceResults = aChoiceResults;
     }
     
     @Override
     public void doAction(final MagicGame game) {
-        firstEvent=game.getEvents().removeFirst();
-        game.executeEvent(firstEvent,choiceResults);
+        firstEvent = game.getEvents().removeFirst();
+        game.executeEvent(firstEvent, choiceResults);
     }
 
     @Override
