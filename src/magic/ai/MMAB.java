@@ -19,9 +19,6 @@ public class MMAB implements MagicAI {
     // maximum of 4 artificial worker threads.
     private final int THREADS = Math.min(4,Runtime.getRuntime().availableProcessors());
     
-    // list of workers
-    private final LinkedList<ArtificialWorker> workers = new LinkedList<ArtificialWorker>();
-    
     private final boolean LOGGING;
     private final boolean CHEAT;
 
@@ -74,7 +71,7 @@ public class MMAB implements MagicAI {
         }
         
         // create workers
-        workers.clear();
+        final LinkedList<ArtificialWorker> workers = new LinkedList<ArtificialWorker>();
         final ArtificialScoreBoard scoreBoard=new ArtificialScoreBoard();
         final int workerSize = Math.min(size, THREADS);
         for (int index = 0; index < workerSize; index++) {
@@ -104,7 +101,7 @@ public class MMAB implements MagicAI {
             pruneScore = createPruneScore();
             processingLeft = 1;
             scoreBoard.clear();
-            startWorker(firstChoice,mainPhases,INITIAL_MAX_DEPTH,INITIAL_MAX_GAMES);
+            startWorker(workers,firstChoice,mainPhases,INITIAL_MAX_DEPTH,INITIAL_MAX_GAMES);
             waitUntilProcessed();
             if (mainPhases >= MAX_MAIN_PHASES || 
                 firstChoice.aiScore.getScore() > ArtificialScoringSystem.WIN_GAME_SCORE / 2) {
@@ -114,16 +111,13 @@ public class MMAB implements MagicAI {
         } 
         
         // find best score for the other choice results multi-threaded.
-        if (size > 1) {
-            processingLeft = size-1;
-            for (final ArtificialChoiceResults acr : achoices) {
-                if (acr.aiScore == ArtificialScore.INVALID_SCORE) {
-                    startWorker(acr,mainPhases,MAX_DEPTH,MAX_GAMES);
-                }
+        processingLeft = size-1;
+        for (final ArtificialChoiceResults acr : achoices) {
+            if (acr.aiScore == ArtificialScore.INVALID_SCORE) {
+                startWorker(workers,acr,mainPhases,MAX_DEPTH,MAX_GAMES);
             }
-            waitUntilProcessed();
-            workers.clear();
         }
+        waitUntilProcessed();
         
         // select the best scoring choice result.
         ArtificialScore bestScore = ArtificialScore.INVALID_SCORE;
@@ -138,11 +132,11 @@ public class MMAB implements MagicAI {
         // Logging.
         final long time_taken = System.currentTimeMillis() - start_time;
         log("MMAB" + 
-                " index=" + scorePlayer.getIndex() +
-                " life=" + scorePlayer.getLife() +
-                " time=" + time_taken + 
-                " workers=" + workerSize + 
-                " main=" + mainPhases);
+            " index=" + scorePlayer.getIndex() +
+            " life=" + scorePlayer.getLife() +
+            " time=" + time_taken + 
+            " workers=" + workerSize + 
+            " main=" + mainPhases);
         for (final ArtificialChoiceResults achoice : achoices) {
             log((achoice == bestAchoice ? "* " : "  ") + achoice);
         }
@@ -151,6 +145,7 @@ public class MMAB implements MagicAI {
     }
     
     private synchronized void startWorker(
+            final LinkedList<ArtificialWorker> workers,
             final ArtificialChoiceResults aiChoiceResults,
             final int mainPhases,
             final int maxDepth,
@@ -163,10 +158,23 @@ public class MMAB implements MagicAI {
             }
         }
         final ArtificialWorker worker=workers.removeLast();
-        new ArtificialWorkerThread(worker,aiChoiceResults,pruneScore,mainPhases,maxDepth,maxGames).start();
+        new Thread() {
+            @Override
+            public void run() {
+                worker.evaluateGame(aiChoiceResults,pruneScore,mainPhases,maxDepth,maxGames);
+                releaseWorker(workers,worker,aiChoiceResults);
+            }
+        }.start();
+        /*
+        worker.evaluateGame(aiChoiceResults,pruneScore,mainPhases,maxDepth,maxGames);
+        releaseWorker(workers, worker,aiChoiceResults);
+        */
     }
     
-    private synchronized void releaseWorker(final ArtificialWorker worker,final ArtificialChoiceResults aiChoiceResults) {
+    private synchronized void releaseWorker(
+            final LinkedList<ArtificialWorker> workers,
+            final ArtificialWorker worker,
+            final ArtificialChoiceResults aiChoiceResults) {
         pruneScore = pruneScore.getPruneScore(aiChoiceResults.aiScore.getScore(),true);
         processingLeft--;
         workers.add(worker);
@@ -180,37 +188,6 @@ public class MMAB implements MagicAI {
             } catch (final InterruptedException ex) {
                 throw new RuntimeException(ex);
             }            
-        }
-    }
-    
-    private final class ArtificialWorkerThread extends Thread {
-        private final ArtificialWorker worker;
-        private final ArtificialChoiceResults aiChoiceResults;
-        private final ArtificialPruneScore pruneScore;
-        private final int mainPhases;
-        private final int maxDepth;
-        private final int maxGames;
-        
-        public ArtificialWorkerThread(
-                final ArtificialWorker worker,
-                final ArtificialChoiceResults aiChoiceResults,
-                final ArtificialPruneScore pruneScore,
-                final int mainPhases,
-                final int maxDepth,
-                final int maxGames) {
-            
-            this.worker=worker;
-            this.aiChoiceResults=aiChoiceResults;
-            this.pruneScore=pruneScore;
-            this.mainPhases=mainPhases;
-            this.maxDepth=maxDepth;
-            this.maxGames=maxGames;
-        }
-                
-        @Override
-        public void run() {
-            worker.evaluateGame(aiChoiceResults,pruneScore,mainPhases,maxDepth,maxGames);
-            releaseWorker(worker,aiChoiceResults);
         }
     }
 }
