@@ -26,11 +26,12 @@ import magic.ui.theme.ThemeFactory;
 
 import javax.swing.ImageIcon;
 import java.awt.Color;
-import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
+import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.EnumSet;
-import java.util.List;
 
 public class MagicCardDefinition {
 
@@ -92,7 +93,7 @@ public class MagicCardDefinition {
     private final Collection<MagicCDA> CDAs = new ArrayList<MagicCDA>();
     private final Collection<MagicTrigger<?>> triggers = new ArrayList<MagicTrigger<?>>();
     private final Collection<MagicStatic> statics=new ArrayList<MagicStatic>();
-    private final Collection<MagicWhenComesIntoPlayTrigger> comeIntoPlayTriggers = new ArrayList<MagicWhenComesIntoPlayTrigger>();
+    private final LinkedList<MagicWhenComesIntoPlayTrigger> comeIntoPlayTriggers = new LinkedList<MagicWhenComesIntoPlayTrigger>();
     private final Collection<MagicWhenSpellIsCastTrigger> spellIsCastTriggers = new ArrayList<MagicWhenSpellIsCastTrigger>();
     private final Collection<MagicWhenDrawnTrigger> drawnTriggers = new ArrayList<MagicWhenDrawnTrigger>();
     private final Collection<MagicWhenPutIntoGraveyardTrigger> putIntoGraveyardTriggers = new ArrayList<MagicWhenPutIntoGraveyardTrigger>();
@@ -621,7 +622,11 @@ public class MagicCardDefinition {
     }
 
     public void addTrigger(final MagicWhenComesIntoPlayTrigger trigger) {
-        comeIntoPlayTriggers.add(trigger);
+        if (trigger.usesStack()) {
+            comeIntoPlayTriggers.add(trigger);
+        } else {
+            comeIntoPlayTriggers.addFirst(trigger);
+        }
         numTriggers++;
     }
 
