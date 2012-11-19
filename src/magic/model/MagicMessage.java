@@ -70,12 +70,9 @@ public class MagicMessage {
     
     public static String replaceChoices(final String sourceText,final Object[] choices) {
         String result = sourceText;
-        int idx = 0;
-        while (result.indexOf('$') > 0) {
-            final String choiceStr = (idx < choices.length && choices[idx] != null) ? choices[idx].toString() : "";
-            idx++;
-
-            final String replacement = (!choiceStr.isEmpty()) ? " (" + choiceStr + ")" : "";
+        for (int idx = 0; result.indexOf('$') > 0; idx++) {
+            final String choice = (idx < choices.length && choices[idx] != null) ? choices[idx].toString() : "";
+            final String replacement = (!choice.isEmpty()) ? " (" + choice + ")" : "";
             result = result.replaceFirst("\\$", replacement);
         }
         return result;
