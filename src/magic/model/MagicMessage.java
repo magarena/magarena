@@ -70,7 +70,7 @@ public class MagicMessage {
     
     public static String replaceChoices(final String sourceText,final Object[] choices) {
         String result = sourceText;
-        for (int idx = 0; result.indexOf('$') > 0; idx++) {
+        for (int idx = 0; result.indexOf('$') >= 0; idx++) {
             final String choice = (idx < choices.length && choices[idx] != null) ? choices[idx].toString() : "";
             final String replacement = (!choice.isEmpty()) ? " (" + choice + ")" : "";
             result = result.replaceFirst("\\$", replacement);
