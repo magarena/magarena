@@ -69,28 +69,15 @@ public class MagicMessage {
     }
     
     public static String replaceChoices(final String sourceText,final Object[] choices) {
-        final String[] parts=sourceText.split("\\$");
-        
-        if (parts.length<2) {
-            return sourceText;
-        }
+        String result = sourceText;
+        int idx = 0;
+        while (result.indexOf('$') > 0) {
+            final String choiceStr = (idx < choices.length && choices[idx] != null) ? choices[idx].toString() : "";
+            idx++;
 
-        int delimPos = 0;
-        final StringBuilder text=new StringBuilder();
-        for (int index=0;index<parts.length;index++) {
-            text.append(parts[index]);
-            if (choices!=null && index<choices.length && sourceText.indexOf('$', delimPos) >= 0) {
-                delimPos = sourceText.indexOf('$', delimPos) + 1;
-                final Object choice=choices[index];
-                if (choice!=null) {
-                    final String choiceText=choice.toString();
-                    if (!choiceText.isEmpty()) {
-                        text.append(" (").append(choiceText).append(")");
-                    }
-                }
-            }
+            final String replacement = (!choiceStr.isEmpty()) ? " (" + choiceStr + ")" : "";
+            result = result.replaceFirst("\\$", replacement);
         }
-
-        return text.toString();
-    }    
+        return result;
+    }
 }
