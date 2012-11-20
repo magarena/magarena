@@ -439,6 +439,7 @@ crash.txt: $(wildcard *.log)
 	for i in `grep "^Excep" -l $^`; do \
 		tail -n +`grep -n "random seed" $$i | tail -1 | cut -d':' -f1` $$i; \
 	done >> $@
+	rm $^
 
 support/ui:
 	for i in src/$@/*.java; do wget https://cakehat.googlecode.com/svn/trunk/$$i -O $$i; done
