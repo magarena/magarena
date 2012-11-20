@@ -25,16 +25,18 @@ public class Orim_s_Thunder {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack,
-                    new MagicKickerChoice(
-                        MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_ENCHANTMENT,
-                        MagicManaCost.RED,
-                        false),
-                    new MagicDestroyTargetPicker(false),
-                    this,
-                    "Destroy target artifact or enchantment$." + 
-                    "If SN was kicked$, " + 
-                    "it deals damage equal to that permanent's converted mana cost to target creature.");
+                cardOnStack,
+                new MagicKickerChoice(
+                    MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_ENCHANTMENT,
+                    MagicManaCost.RED,
+                    false
+                ),
+                new MagicDestroyTargetPicker(false),
+                this,
+                "Destroy target artifact or enchantment$." + 
+                "If SN was kicked$, " + 
+                "it deals damage equal to that permanent's converted mana cost to target creature."
+            );
         }
         @Override
         public void executeEvent(
@@ -44,33 +46,33 @@ public class Orim_s_Thunder {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent target) {
                     game.doAction(new MagicDestroyAction(target));
+                    final boolean kicked = (Integer)choiceResults[1] > 0;
+                    if (!kicked) {
+                        return;
+                    }
+                    final int amount = target.getCardDefinition().getConvertedCost();
+                    game.addEvent(new MagicEvent(
+                        event.getSource(),
+                        MagicTargetChoice.NEG_TARGET_CREATURE,
+                        new MagicDamageTargetPicker(amount),
+                        new MagicEventAction() {
+                            @Override
+                            public void executeEvent(
+                                final MagicGame game,
+                                final MagicEvent event,
+                                final Object[] choiceResults) {
+                                event.processTarget(game,choiceResults,0,new MagicTargetAction() {
+                                    public void doAction(final MagicTarget target) {
+                                        final MagicDamage damage = new MagicDamage(event.getSource(),target,amount,false);
+                                        game.doAction(new MagicDealDamageAction(damage));
+                                    }
+                                });
+                            }
+                        },
+                        "SN deals " + amount + " damage to target creature$."
+                    ));
                 }
             });
-            final boolean kicked = (Integer)choiceResults[1] > 0;
-            if (!kicked) {
-                return;
-            }
-            final int amount = ((MagicPermanent)choiceResults[0]).getCardDefinition().getConvertedCost();
-            game.addEvent(new MagicEvent(
-                event.getSource(),
-                MagicTargetChoice.NEG_TARGET_CREATURE,
-                new MagicDamageTargetPicker(amount),
-                new MagicEventAction() {
-                    @Override
-                    public void executeEvent(
-                        final MagicGame game,
-                        final MagicEvent event,
-                        final Object[] choiceResults) {
-                        event.processTarget(game,choiceResults,0,new MagicTargetAction() {
-                            public void doAction(final MagicTarget target) {
-                                final MagicDamage damage = new MagicDamage(event.getSource(),target,amount,false);
-                                game.doAction(new MagicDealDamageAction(damage));
-                            }
-                        });
-                    }
-                },
-                "SN deals " + amount + " damage to target creature$."
-            ));
         }
     };
 }
