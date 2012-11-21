@@ -63,6 +63,10 @@ public class MagicRemoveCardAction extends MagicAction {
                 break;
         }
     }
+
+    public boolean isSuccessful() {
+        return index >= 0;
+    }
     
     @Override
     public String toString() {

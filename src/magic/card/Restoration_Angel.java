@@ -41,15 +41,18 @@ public class Restoration_Angel {
                 event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
                         game.doAction(new MagicRemoveFromPlayAction(
-                                creature,
-                                MagicLocationType.Exile));
-                        game.doAction(new MagicRemoveCardAction(
-                                creature.getCard(),
-                                MagicLocationType.Exile));
-                        game.doAction(new MagicPlayCardAction(
+                            creature,
+                            MagicLocationType.Exile
+                        ));
+                        final MagicRemoveCardAction removeCard = new MagicRemoveCardAction(creature.getCard(), MagicLocationType.Exile);
+                        game.doAction(removeCard);
+                        if (removeCard.isSuccessful()) {
+                            game.doAction(new MagicPlayCardAction(
                                 creature.getCard(),
                                 event.getPlayer(),
-                                MagicPlayCardAction.NONE));
+                                MagicPlayCardAction.NONE
+                            ));
+                        }
                     }
                 });
             }
