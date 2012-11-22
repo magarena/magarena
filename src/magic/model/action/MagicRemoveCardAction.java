@@ -64,7 +64,7 @@ public class MagicRemoveCardAction extends MagicAction {
         }
     }
 
-    public boolean isSuccessful() {
+    public boolean isValid() {
         return index >= 0;
     }
     

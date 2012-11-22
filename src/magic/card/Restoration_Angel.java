@@ -46,7 +46,7 @@ public class Restoration_Angel {
                         ));
                         final MagicRemoveCardAction removeCard = new MagicRemoveCardAction(creature.getCard(), MagicLocationType.Exile);
                         game.doAction(removeCard);
-                        if (removeCard.isSuccessful()) {
+                        if (removeCard.isValid()) {
                             game.doAction(new MagicPlayCardAction(
                                 creature.getCard(),
                                 event.getPlayer(),
