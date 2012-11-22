@@ -14,8 +14,6 @@ public class MagicRemoveFromPlayAction extends MagicAction {
 
     private final MagicPermanent permanent;
     private final MagicLocationType toLocation;
-    private Collection<MagicPermanentTrigger> removedTriggers;
-    private Collection<MagicPermanentStatic> removedStatics;
     private boolean valid;
     
     public MagicRemoveFromPlayAction(final MagicPermanent permanent,final MagicLocationType toLocation) {
@@ -76,13 +74,8 @@ public class MagicRemoveFromPlayAction extends MagicAction {
 
         setScore(controller,permanent.getStaticScore()-score);
         
-        // Trigger
-        removedTriggers = game.removeTriggers(permanent);
-        
-        // Static
-        removedStatics = game.removeAllStatics(permanent);
-        
         game.doAction(new MagicMoveCardAction(permanent,toLocation));
+        game.addDelayedAction(new MagicRemoveTriggersStaticsAction(permanent));
         game.setStateCheckRequired();
     }
 
@@ -109,16 +102,6 @@ public class MagicRemoveFromPlayAction extends MagicAction {
         }
         for (final MagicPermanent aura : permanent.getAuraPermanents()) {
             aura.setEnchantedCreature(permanent);
-        }
-
-        // Trigger
-        for (final MagicPermanentTrigger permanentTrigger : removedTriggers) {
-            game.addTrigger(permanentTrigger);
-        }
-
-        // Static
-        for (final MagicPermanentStatic permanentStatic : removedStatics) {
-            game.addStatic(permanentStatic);
         }
     }
 
