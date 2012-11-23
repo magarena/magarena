@@ -134,6 +134,7 @@ public class MMAB implements MagicAI {
         log("MMAB" + 
             " index=" + scorePlayer.getIndex() +
             " life=" + scorePlayer.getLife() +
+            " phase=" + sourceGame.getPhase().getType() + 
             " time=" + time_taken + 
             " workers=" + workerSize + 
             " main=" + mainPhases);
