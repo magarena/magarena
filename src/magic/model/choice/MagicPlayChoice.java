@@ -96,13 +96,16 @@ public class MagicPlayChoice extends MagicChoice {
             return PASS_CHOICE_RESULTS;
         } 
        
-        //skip all combat phases if nobody is attacking
+        //skip all combat phases if 
+        //  nobody is attacking and 
+        //  stack is empty
         if ((game.isPhase(MagicPhaseType.DeclareAttackers) ||
              game.isPhase(MagicPhaseType.DeclareBlockers) ||
              game.isPhase(MagicPhaseType.CombatDamage) ||
              game.isPhase(MagicPhaseType.EndOfCombat)) &&
             player.getNrOfAttackers() == 0 && 
-            player.getOpponent().getNrOfAttackers() == 0) {
+            player.getOpponent().getNrOfAttackers() == 0 &&
+            game.getStack().isEmpty()) {
             return PASS_CHOICE_RESULTS;
         }
 
