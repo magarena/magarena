@@ -278,6 +278,7 @@ Diregraf Ghoul
 Disciple of Griselbrand
 Disentomb
 Disfigure
+Dispel
 Disperse
 Dissipate
 Dissipation Field
@@ -955,6 +956,7 @@ Spiteful Shadows
 Splinterfright
 Sporecap Spider
 Stampeding Rhino
+Stealer of Secrets
 Steam Vents
 Stensia Bloodhall
 Steppe Lynx

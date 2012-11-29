@@ -112,6 +112,7 @@ Diregraf Escort
 Diregraf Ghoul
 Disciple of Griselbrand
 Disentomb
+Dispel
 Dissipate
 Divination
 Divine Favor
@@ -420,6 +421,7 @@ Spiked Baloth
 Spirit Away
 Spiteful Shadows
 Splinterfright
+Stealer of Secrets
 Steam Vents
 Stensia Bloodhall
 Stitcher's Apprentice

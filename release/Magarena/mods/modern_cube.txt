@@ -487,6 +487,7 @@ Disenchant
 Disentomb
 Disfigure
 Dismal Failure
+Dispel
 Disperse
 Dissipate
 Dissipation Field
@@ -1762,6 +1763,7 @@ Standing Troops
 Starlight Invoker
 Staunch Defenders
 Steadfast Guard
+Stealer of Secrets
 Steam Spitter
 Steam Vents
 Steel Wall

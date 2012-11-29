@@ -646,6 +646,7 @@ Disenchant
 Disentomb
 Disfigure
 Dismal Failure
+Dispel
 Disperse
 Dissipate
 Dissipation Field
@@ -2285,6 +2286,7 @@ Starlight Invoker
 Starlit Angel
 Staunch Defenders
 Steadfast Guard
+Stealer of Secrets
 Steam Spitter
 Steam Vents
 Steel Wall
@@ -2366,6 +2368,7 @@ Sylvok Lifestaff
 Symbiotic Beast
 Symbiotic Elf
 Symbiotic Wurm
+Symbol of Unsummoning
 Synapse Sliver
 Synchronous Sliver
 Szadek, Lord of Secrets
