@@ -214,6 +214,7 @@
 {1}, {t}, sacrifice a creature: return target artifact card from your graveyard to your hand.
 {1}, {t}, sacrifice @: add one mana of any color to your mana pool.
 {1}, {t}, sacrifice @: add one mana of any color to your mana pool. draw a card.
+{1}, {t}, sacrifice @: add one mana of any color to your mana pool. draw a card at the beginning of the next turn's upkeep.
 {1}, {t}, sacrifice an artifact: draw a card.
 {1}, {t}, sacrifice an artifact: you gain 1 life.
 {1}, {t}, sacrifice @: @ deals 2 damage to target creature or player.
@@ -720,6 +721,7 @@ artifact creatures you control gain flying until end of turn.
 artifact creatures you control get +2/+2.
 artifacts and enchantments you control have shroud.
 artifacts you control have hexproof.
+as an additional cost to cast @, sacrifice a creature.
 as @ enters the battlefield, put a phylactery counter on an artifact you control.
 as @ enters the battlefield, sacrifice all lands you control.
 as @ enters the battlefield, you may pay 2 life. if you don't, @ enters the battlefield tapped.
@@ -1353,6 +1355,7 @@ discard an artifact card: return @ to its owner's hand.
 double strike
 dragon creatures you control get +3/+3.
 draw a card.
+draw a card at the beginning of the next turn's upkeep.
 draw four cards.
 draw four cards, then discard three cards at random.
 draw three cards.
@@ -3021,6 +3024,7 @@ when @ enters the battlefield, destroy target noncreature permanent.
 when @ enters the battlefield, destroy target permanent.
 when @ enters the battlefield, discard a card at random.
 when @ enters the battlefield, draw a card.
+when @ enters the battlefield, draw a card at the beginning of the next turn's upkeep.
 when @ enters the battlefield, draw a card, then discard a card.
 when @ enters the battlefield, draw two cards.
 when @ enters the battlefield, each opponent discards a card.
@@ -3616,6 +3620,7 @@ you control enchanted enchantment.
 you control enchanted equipment.
 you control enchanted land.
 you control enchanted permanent.
+you draw a card at the beginning of the next turn's upkeep.
 you draw three cards and you lose 3 life.
 you draw two cards and you lose 2 life.
 you draw x cards and you lose x life.

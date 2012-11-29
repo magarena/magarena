@@ -7,6 +7,7 @@ Ability
     / KeywordAbility EOR
     / ActivatedAbility EOR
     / TriggeredAbility EOR
+    / AdditionalCost EOR
     ;
 
 SpellEffect
@@ -51,6 +52,10 @@ ActivationCosts
 
 TriggeredAbility
     = Trigger ", " SpellEffect
+    ;
+
+AdditionalCost
+    = "as an additional cost to cast @, sacrifice a creature."
     ;
 
 Trigger
@@ -570,6 +575,7 @@ Duration
     / "for as long as " SelectPlayer " control @"
     / "as long as you control three or more artifacts"
     / "this turn"
+    / "at the beginning of the next turn's upkeep"
     ;
 
 GainAction
