@@ -55,7 +55,7 @@ TriggeredAbility
     ;
 
 AdditionalCost
-    = "as an additional cost to cast @, sacrifice a creature."
+    = "as an additional cost to cast @, " Effect EOS
     ;
 
 Trigger

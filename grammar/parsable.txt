@@ -721,7 +721,25 @@ artifact creatures you control gain flying until end of turn.
 artifact creatures you control get +2/+2.
 artifacts and enchantments you control have shroud.
 artifacts you control have hexproof.
+as an additional cost to cast @, discard a card.
+as an additional cost to cast @, discard a card at random.
+as an additional cost to cast @, discard a red or green card.
+as an additional cost to cast @, discard x cards at random.
+as an additional cost to cast @, exile a creature you control.
+as an additional cost to cast @, pay 3 life.
+as an additional cost to cast @, pay x life.
+as an additional cost to cast @, put a -1/-1 counter on a creature you control.
+as an additional cost to cast @, return a creature you control to its owner's hand.
+as an additional cost to cast @, return a land you control to its owner's hand.
+as an additional cost to cast @, sacrifice a blue permanent.
 as an additional cost to cast @, sacrifice a creature.
+as an additional cost to cast @, sacrifice a goblin.
+as an additional cost to cast @, sacrifice a green creature.
+as an additional cost to cast @, sacrifice a land.
+as an additional cost to cast @, sacrifice all creatures you control.
+as an additional cost to cast @, sacrifice an artifact.
+as an additional cost to cast @, sacrifice an artifact or creature.
+as an additional cost to cast @, you may pay {2}{r}.
 as @ enters the battlefield, put a phylactery counter on an artifact you control.
 as @ enters the battlefield, sacrifice all lands you control.
 as @ enters the battlefield, you may pay 2 life. if you don't, @ enters the battlefield tapped.
