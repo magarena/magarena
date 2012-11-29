@@ -478,16 +478,15 @@ public class MagicCardDefinition {
     }
     
     public MagicEvent[] getCostEvent(final MagicCard source) {
-        final MagicManaCost cost = getCost();
-        return cost == MagicManaCost.ZERO ?
-            MagicEvent.NO_EVENTS :
-            new MagicEvent[]{
-                new MagicPayManaCostEvent(
-                    source,
-                    source.getController(),
-                    cost
-                )
-            };
+        List<MagicEvent> costEvent = new ArrayList<MagicEvent>();
+        if (cost != MagicManaCost.ZERO) {
+            costEvent.add(new MagicPayManaCostEvent(
+                source,
+                source.getController(),
+                cost
+            ));
+        }
+        return costEvent.toArray(new MagicEvent[0]);
     }
     
     public boolean isPlayable(final MagicPlayerProfile profile) {
