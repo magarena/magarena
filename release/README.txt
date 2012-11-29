@@ -54,6 +54,19 @@ Thank you for your support and have fun!
 
 
 
+Release 1.32 (November 30, 2012)
+============
+includes contributions from melvin
+
+- added 
+
+- fixed: 
+
+- added the following cards:
+Dispel
+Stealer of Secrets
+Symbol of Unsummoning
+
 Release 1.31 (October 31, 2012)
 ============
 includes contributions from melvin, a. benedict balbuena, kdesmond, and Erkcan Özcan
