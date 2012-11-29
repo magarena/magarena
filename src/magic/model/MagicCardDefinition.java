@@ -2,6 +2,8 @@ package magic.model;
 
 import magic.ai.ArtificialScoringSystem;
 import magic.data.IconImages;
+import magic.model.event.MagicEvent;
+import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicCardActivation;
@@ -473,6 +475,19 @@ public class MagicCardDefinition {
 
     public MagicManaCost getCost() {
         return cost;
+    }
+    
+    public MagicEvent[] getCostEvent(final MagicCard source) {
+        final MagicManaCost cost = getCost();
+        return cost == MagicManaCost.ZERO ?
+            MagicEvent.NO_EVENTS :
+            new MagicEvent[]{
+                new MagicPayManaCostEvent(
+                    source,
+                    source.getController(),
+                    cost
+                )
+            };
     }
     
     public boolean isPlayable(final MagicPlayerProfile profile) {

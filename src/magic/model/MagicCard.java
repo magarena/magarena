@@ -127,21 +127,11 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
     }
     
     public MagicManaCost getCost() {
-        final MagicManaCost cost = getCardDefinition().getCost();
-        final MagicGame game = getGame();
-
-        //cost modifications due to continous effects
-        for (final MagicPermanentStatic mpstatic : game.getStatics(MagicLayer.Game)) {
-            final MagicStatic mstatic = mpstatic.getStatic();
-            final MagicPermanent source = mpstatic.getPermanent();
-            /*
-            if (mstatic.accept(game, source, this)) {
-               mstatic.modManaCost(soure, this, cost);
-            }
-            */
-        }
-
-        return cost;
+        return getCardDefinition().getCost();
+    }
+    
+    public MagicEvent[] getCostEvent() {
+        return getCardDefinition().getCostEvent(this);
     }
     
     public static MagicCard createTokenCard(final MagicCardDefinition cardDefinition,final MagicPlayer owner) {

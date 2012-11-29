@@ -36,16 +36,7 @@ public class MagicCardActivation extends MagicActivation<MagicCard> {
     }
 
     public MagicEvent[] getCostEvent(final MagicCard source) {
-        final MagicManaCost cost = source.getCost();
-        return cost == MagicManaCost.ZERO ?
-            MagicEvent.NO_EVENTS :
-            new MagicEvent[]{
-                new MagicPayManaCostEvent(
-                    source,
-                    source.getController(),
-                    cost
-                )
-            };
+        return source.getCostEvent();
     }
 
     @Override
