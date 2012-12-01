@@ -47,7 +47,7 @@ Thanks to
   wait321 for creating a deck editor and other UI improvements
   missalexis for creating an application bundle to improve Mac installation
   goonjamin for contributing a patch that makes Magarena easier to use on touchscreens
-  a. benedict balbuena, spartan vi, Braullynn, mecheng, pcastellazzi, rasdel, and Tyrael for implementing new cards
+  nado18, Erkcan Özcan, kdesmond, a. benedict balbuena, spartan vi, Braullynn, mecheng, pcastellazzi, rasdel, and Tyrael for implementing new cards
   everyone on the CCGHQ forum (http://slightlymagic.net/forum/)
 
 Thank you for your support and have fun!
@@ -56,11 +56,19 @@ Thank you for your support and have fun!
 
 Release 1.32 (November 30, 2012)
 ============
-includes contributions from melvin
+includes contributions from melvin, Erkcan Özcan, and nado18
 
-- added 
+- added official rules text parser based on Parsing Expression Grammar,
+  not integrated into game engine yet
 
-- fixed: 
+- fixed: Penumbra Spider missing reach
+- fixed: Bonehoard crashes when played
+- fixed: Ruptire Spire able to pay for itself
+- fixed: Orim's Thunder crashes if initial target is invalid
+- fixed: Restoration Angel able to return tokens
+- fixed: Blood Artist triggers too few times after wrath effect
+- fixed: unable to counter spells cast during declare attackers phase when no
+         attackers were declared
 
 - added the following cards:
 Dispel
