@@ -280,13 +280,17 @@ ChangeLoyaltyAction
     ;
 
 ChangeStateAction
-    = (SelectPermanent SPACE)? "can't attack or block" 
-    / (SelectPermanent SPACE)? "can't attack" 
-    / (SelectPermanent SPACE)? "can't block" 
-    / (SelectPermanent SPACE)? "is indestructible" 
-    / (SelectPermanent SPACE)? "is unblockable" 
-    / (SelectPermanent SPACE)? "attacks each turn if able"
-    / (SelectPermanent SPACE)? "can't be countered"
+    = (SelectPermanent SPACE)? PermanentState
+    ;
+
+PermanentState
+    = "can't attack or block" 
+    / "can't attack" 
+    / "can't block" 
+    / "is indestructible" 
+    / "is unblockable" 
+    / "attacks each turn if able"
+    / "can't be countered"
     ;
 
 SetPTAction
