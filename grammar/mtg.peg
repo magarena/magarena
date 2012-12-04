@@ -364,9 +364,9 @@ PayManaAction
     ;
 
 ChangeLifeAction
-    = "lose" "s"? SPACE Number " life"
-    / "gain" "s"? SPACE Number " life"
-    / "pay" "s"? SPACE Number " life"
+    = "lose" "s"? SPACE Number SPACE "life"
+    / "gain" "s"? SPACE Number SPACE "life"
+    / "pay" "s"? SPACE Number SPACE "life"
     ;
 
 SelectPlayer
