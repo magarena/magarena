@@ -556,7 +556,8 @@ CounterType
     ;
 
 Count
-    = "one"
+    = "a"
+    / "one"
     / "two"
     / "three"
     / "four"
@@ -606,8 +607,7 @@ ManaSource
     ;
 
 DrawAction
-    = Draw " a card"
-    / Draw " " Count " cards"
+    = Draw SPACE Count SPACE "card" "s"?
     ;
 
 Draw
