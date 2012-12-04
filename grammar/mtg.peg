@@ -636,11 +636,11 @@ Discard
     ;
 
 DestroyNoRegenAction
-    = "destroy " SelectPermanent EOS SPACE NoRegen
+    = "destroy" SPACE SelectPermanent EOS SPACE NoRegen
     ;
 
 DestroyAction 
-    = "destroy " SelectPermanent
+    = "destroy" SPACE SelectPermanent
     ;
 
 ExileAction

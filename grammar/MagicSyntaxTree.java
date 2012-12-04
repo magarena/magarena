@@ -25,7 +25,8 @@ class MagicSyntaxTree extends mouse.runtime.SemanticsBase {
             lhs().rule().endsWith("Number") || 
             lhs().rule().endsWith("Count") || 
             lhs().rule().endsWith("Duration") || 
-            lhs().rule().endsWith("Keyword")) {
+            lhs().rule().endsWith("Keyword") || 
+            lhs().rule().equals("ManaCost")) {
             node.clear();
             node.text = lhs().text();
         }
