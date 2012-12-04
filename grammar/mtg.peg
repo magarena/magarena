@@ -697,12 +697,7 @@ SelectSpell
     ;
 
 RestrictedPermanentCombination
-    = RestrictedPermanent SEP RestrictedPermanent SEP RestrictedPermanent
-    / RestrictedPermanent SEP RestrictedPermanent ", and " RestrictedPermanent
-    / RestrictedPermanent SEP RestrictedPermanent SEP RestrictedPermanent
-    / RestrictedPermanent SEP RestrictedPermanent
-    / RestrictedPermanent SEP RestrictedPermanent
-    / RestrictedPermanent 
+    = RestrictedPermanent (SEP RestrictedPermanent)*
     ;
 
 RestrictedPermanent
@@ -1111,6 +1106,7 @@ Sign
 
 SEP
     = ", or "
+    / ", and "
     / ", "
     / " or "
     / " and "
