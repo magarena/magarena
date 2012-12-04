@@ -610,7 +610,7 @@ GainVerb
     ;
 
 PumpAction
-    = SelectCreature " get" "s"? SPACE SignedNumber "/" SignedNumber 
+    = SelectCreature SPACE "get" "s"? SPACE SignedNumber "/" SignedNumber 
     ;
 
 AddManaAction
