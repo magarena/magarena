@@ -414,13 +414,15 @@ BounceVerb
     ;
 
 PreventAction
-    = "prevent the next " Number SPACE Damage " that would be dealt to " DamageReceiver 
-    / "prevent the next " Number SPACE Damage " that would be dealt by " DamageReceiver 
-    / "prevent all " Damage " that would be dealt to and dealt by " DamageReceiver 
-    / "prevent all " Damage " that would be dealt to " DamageReceiver
-    / "prevent all " Damage " that would be dealt by " DamageReceiver
-    / "prevent all " Damage " that would be dealt" 
+    = "prevent the next " Number SPACE Damage SPACE "that would be dealt" (SPACE DamageRestriction)?
+    / "prevent all " Damage SPACE "that would be dealt" (SPACE DamageRestriction)?
     / "if damage would be dealt to " DamageReceiver ", prevent that damage"
+    ;
+
+DamageRestriction
+    = "to" SPACE DamageReceiver
+    / "by" SPACE DamageReceiver 
+    / "to and dealt by " DamageReceiver
     ;
 
 Damage
