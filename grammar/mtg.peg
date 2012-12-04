@@ -302,8 +302,7 @@ SacrificeAction
     ;
 
 PoisonAction
-    = "gets " Count " poison counters"
-    / "gets a poison counter"
+    = "gets" SPACE Count SPACE "poison counter" "s"?
     ;
 
 ReanimateAction
