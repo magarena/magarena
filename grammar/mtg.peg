@@ -310,8 +310,7 @@ ReanimateAction
     ;
 
 MillAction
-    = "put" "s"? " the top " Count " cards of his or her library into his or her graveyard"
-    / "put" "s"? " the top card of his or her library into his or her graveyard"
+    = "put" "s"? " the top " (Count SPACE)? Card " of his or her library into his or her graveyard"
     ;
 
 DoesntUntapAction
