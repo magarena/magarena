@@ -4,18 +4,24 @@ class MagicSyntaxTree extends mouse.runtime.SemanticsBase {
         final Node node = new Node();
         node.rule = lhs().rule();
 
+        int numTerm = 0;
+        int numRule = 0;
+
         for (int i = 0; i < rhsSize(); i++) {
             if (rhs(i).get() != null && rhs(i).get() instanceof Node) {
                 node.add((Node)rhs(i).get());
+                numRule++;
             } else if (rhs(i).isTerm()) {
                 final Node child = new Node();
                 child.rule = "T";
                 child.text = rhs(i).text();
                 node.add(child);
+                numTerm++;
             }
         }
 
-        if (lhs().rule().startsWith("Select") ||
+        if (numRule == 0 ||
+            lhs().rule().startsWith("Select") ||
             lhs().rule().endsWith("Number") || 
             lhs().rule().endsWith("Count") || 
             lhs().rule().endsWith("Duration") || 
