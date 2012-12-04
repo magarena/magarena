@@ -325,8 +325,7 @@ ShuffleAction
     ;
 
 PutTokenAction
-    = "put a " CreatureTokenSpec " onto the battlefield"
-    / "put " Count SPACE CreatureTokenSpec " onto the battlefield"
+    = "put " Count SPACE CreatureTokenSpec " onto the battlefield"
     / "put a token that's a copy of " SelectPermanent " onto the battlefield"
     ;
 
