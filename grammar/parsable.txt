@@ -643,6 +643,7 @@
 {4}, {t}, sacrifice a land: @ deals 1 damage to target creature or player.
 {4}, {t}: tap target creature.
 {4}, {t}: target creature is unblockable this turn.
+{4}, {t}: target opponent loses 2 life, gets a poison counter, then puts the top six cards of his or her library into his or her graveyard.
 {4}: untap @.
 {4}{u}: return @ to its owner's hand.
 {4}{w}: exile @.
@@ -823,6 +824,7 @@ at the beginning of your upkeep, remove a -1/-1 counter from @.
 at the beginning of your upkeep, remove a -1/-1 counter from each creature you control.
 at the beginning of your upkeep, remove a depletion counter from @.
 at the beginning of your upkeep, remove an intervention counter from @.
+at the beginning of your upkeep, remove a pupa counter from @. if you can't, sacrifice it, put a +1/+1 counter on enchanted creature, and that creature gains flying.
 at the beginning of your upkeep, remove a shell counter from @.
 at the beginning of your upkeep, return a black creature you control to its owner's hand.
 at the beginning of your upkeep, return a blue creature you control to its owner's hand.
@@ -1396,6 +1398,7 @@ each opponent sacrifices an artifact or enchantment.
 each player draws three cards, then discards three cards at random.
 each player draws two cards.
 each player draws x cards.
+each player loses 1 life, discards a card, sacrifices a creature, then sacrifices a land.
 each player puts the top five cards of his or her library into his or her graveyard.
 each player returns a creature he or she controls to its owner's hand.
 each player sacrifices a creature.
@@ -2612,6 +2615,7 @@ target player draws a card.
 target player draws four cards.
 target player draws three cards.
 target player draws three cards and loses 3 life.
+target player draws three cards, loses 3 life, and gets three poison counters.
 target player draws two cards.
 target player draws two cards and loses 2 life.
 target player draws x cards.

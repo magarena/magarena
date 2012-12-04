@@ -15,9 +15,7 @@ SpellEffect
     ;
 
 Effect
-    = SingleEffect SEP SingleEffect
-    / SingleEffect ", then " SingleEffect
-    / SingleEffect
+    = SingleEffect (SEP SingleEffect)*
     ;
 
 SingleEffect
@@ -1114,6 +1112,7 @@ Sign
 SEP
     = ", or "
     / ", and "
+    / ", then "
     / ", "
     / " or "
     / " and "
