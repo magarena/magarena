@@ -391,9 +391,9 @@ SelectPlayer
     ;
 
 ReturnAction
-    = "return " SelectCard " from your graveyard to your hand" 
-    / "return " SelectCard " from your graveyard to the battlefield" 
+    = "return " SelectCard " to your hand" 
     / "return " SelectCard " to the battlefield under its owner's control" 
+    / "return " SelectCard " to the battlefield" 
     ;
 
 BounceAction
@@ -680,7 +680,7 @@ SelectOp
     ;
 
 SelectCard
-    = "@"
+    = "@" (SPACE CardRestriction)?
     / "it"
     / SelectOp SPACE RestrictedCard
     ;
@@ -765,12 +765,13 @@ SpellRestriction
     ;
 
 RestrictedCard
-    = (CardRestriction SPACE)? Card (SPACE CardRestriction)?
+    = (CardRestriction SPACE)* Card (SPACE CardRestriction)*
     ;
 
 CardRestriction
     = "exiled"
     / "from a graveyard"
+    / "from your graveyard"
     / SpellRestriction
     ;
 
