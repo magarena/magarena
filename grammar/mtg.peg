@@ -21,7 +21,7 @@ Effect
     ;
 
 SingleEffect
-    = (Duration ", ")? (Optional SPACE)? (SelectPlayer SPACE)? (Optional SPACE)? Action (SPACE Duration)?
+    = (Duration SEP)? (Optional SPACE)? (SelectPlayer SPACE)? (Optional SPACE)? Action (SPACE Duration)?
     ;
 
 Optional
@@ -43,15 +43,15 @@ KeywordAbility
     ;
 
 ActivatedAbility
-    = ActivationCosts ": " SpellEffect
+    = ActivationCosts EOC SpellEffect
     ;
 
 ActivationCosts
-    = Action ("," SPACE Action)*
+    = Action (SEP Action)*
     ;
 
 TriggeredAbility
-    = Trigger ", " SpellEffect
+    = Trigger SEP SpellEffect
     ;
 
 AdditionalCost
@@ -620,8 +620,8 @@ AddManaAction
 
 ManaSource
     = "{1}"
-    / SingleColor (", " SingleColor)* ", or " SingleColor
     / SingleColor " or " SingleColor
+    / SingleColor (SEP SingleColor)*
     / SingleColor
     / "one mana of any color"
     ;
@@ -700,9 +700,9 @@ SelectSpell
     ;
 
 RestrictedPermanentCombination
-    = RestrictedPermanent ", " RestrictedPermanent ", or " RestrictedPermanent
-    / RestrictedPermanent ", " RestrictedPermanent ", and " RestrictedPermanent
-    / RestrictedPermanent ", " RestrictedPermanent ", " RestrictedPermanent
+    = RestrictedPermanent SEP RestrictedPermanent SEP RestrictedPermanent
+    / RestrictedPermanent SEP RestrictedPermanent ", and " RestrictedPermanent
+    / RestrictedPermanent SEP RestrictedPermanent SEP RestrictedPermanent
     / RestrictedPermanent " or " RestrictedPermanent
     / RestrictedPermanent " and " RestrictedPermanent
     / RestrictedPermanent 
@@ -739,7 +739,7 @@ RestrictedSpell
     ;
 
 ColorSpec
-    = Color (", " Color)+ ", or " Color
+    = Color (SEP Color)+
     / Color " or " Color
     / Color " and " Color
     / Color
@@ -1113,6 +1113,15 @@ Number
 Sign
     = "+"
     / "-"
+    ;
+
+SEP
+    = ", or "
+    / ", "
+    ;
+
+EOC
+    = ": "
     ;
 
 SPACE 
