@@ -14,6 +14,7 @@
 {1}{b}{b}: regenerate @.
 {1}{b}{b}, sacrifice a creature: return target creature card from your graveyard to your hand.
 {1}{b}{b}, {t}: destroy target tapped nonblack creature.
+{1}{b}, discard a card: exile target card from a graveyard.
 {1}{b}, discard a card: @ gets +2/+2 until end of turn.
 {1}{b}, discard a card: regenerate @.
 {1}: @ becomes a 1/1 blinkmoth artifact creature with flying and infect until end of turn. it's still a land.
@@ -35,6 +36,7 @@
 {1}{b}{r}, {t}: each player discards a card. activate this ability only any time you could cast a sorcery.
 {1}{b}, sacrifice a creature: regenerate @.
 {1}{b}, sacrifice a land: target creature gets +2/+0 until end of turn.
+{1}{b}, sacrifice @: exile target card from a graveyard.
 {1}{b}, sacrifice @: you draw two cards and lose 2 life.
 {1}{b}: target creature you control gains deathtouch until end of turn.
 {1}{b}, {t}: destroy target creature with shadow.
@@ -53,6 +55,7 @@
 +1: draw a card. target player puts the top card of his or her library into his or her graveyard.
 +1: draw a card, then discard a card at random.
 +1: each player discards a card.
+{1}: exile target card from a graveyard.
 {1}{g}: add one mana of any color to your mana pool.
 {1}: @ gains first strike until end of turn.
 {1}{g}: all creatures get -1/-0 until end of turn.
@@ -175,6 +178,8 @@
 {1}, sacrifice @: @ deals damage equal to its power to target creature or player.
 {1}, sacrifice @: destroy target artifact or enchantment.
 {1}, sacrifice @: draw a card.
+{1}, sacrifice @: exile target card from a graveyard.
+{1}, sacrifice @: exile target card from a graveyard. draw a card.
 {1}, {t}: add {b} to your mana pool.
 {1}, {t}: add {g} to your mana pool.
 {1}, {t}: add one mana of any color to your mana pool.
@@ -289,6 +294,7 @@
 {1}{w}: put a 1/1 white pegasus creature token with flying onto the battlefield.
 {1}{w}, {q}: put a 1/1 white kithkin soldier creature token onto the battlefield.
 {1}{w}, remove a +1/+1 counter from @: destroy target enchantment.
+{1}{w}: return target artifact card with converted mana cost 1 or less from your graveyard to your hand.
 {1}{w}: return @ to its owner's hand.
 {1}{w}, sacrifice @: creatures you control get +1/+1 until end of turn.
 {1}{w}, sacrifice @: @ deals 3 damage to target attacking or blocking creature.
@@ -310,6 +316,7 @@
 {1}{w}, {t}, sacrifice @: destroy target artifact or enchantment.
 {1}{w}, {t}: you gain 5 life.
 {1}{w}{w}: @ becomes a 2/2 white spirit artifact creature with flying and first strike until end of turn.
+{1}{w}{w}, {q}: return target creature card with converted mana cost 3 or less from your graveyard to the battlefield.
 {1}{w}{w}: target creature gets +1/+1 until end of turn.
 {1}{w}{w}: target knight creature gets +1/+1 until end of turn.
 {1}{w}{w}, {t}: return target creature an opponent controls to its owner's hand.
@@ -447,6 +454,7 @@
 {2}, {t}, discard a card at random: regenerate target creature.
 {2}, {t}: draw a card, then discard a card.
 {2}, {t}: each player draws a card.
+{2}, {t}: exile target card from a graveyard.
 {2}, {t}: exile target creature you control.
 {2}, {t}: exile target permanent you control.
 {2}, {t}: prevent all combat damage that would be dealt by target creature this turn.
@@ -563,6 +571,7 @@
 {3}: target green creature gets +1/+1 until end of turn.
 {3}: target player puts the top three cards of his or her library into his or her graveyard.
 {3}, {t}: @ deals 1 damage to target creature or player.
+{3}, {t}: exile target card from a graveyard.
 {3}, {t} or {g}, {t}: target creature gains trample until end of turn.
 {3}, {t} or {r}, {t}: @ deals 1 damage to target creature or player.
 {3}, {t} or {w}, {t}: prevent the next 2 damage that would be dealt to target creature or player this turn.
@@ -952,6 +961,7 @@ beasts can't block.
 {b}: @ gains haste until end of turn.
 {b}: @ gains infect until end of turn.
 {b}{g}: @ becomes a 2/2 black and green insect artifact creature with deathtouch until end of turn.
+{b/g}{b/g}: exile target card from a graveyard. you gain 1 life.
 {b}: @ gets +1/+0 until end of turn.
 {b}: @ gets +1/-1 until end of turn.
 {b}: @ gets +1/+1 until end of turn.
@@ -1006,6 +1016,7 @@ blue creatures get +1/+1.
 {b}, sacrifice @: target player loses 1 life and you gain 1 life.
 {b}, {t}, discard a card: return target creature card from your graveyard to your hand.
 {b}, {t}, discard a card: target creature gets -1/-1 until end of turn.
+{b}, {t}: exile target instant or sorcery card from a graveyard. each opponent loses 2 life.
 {b}, {t}, sacrifice an artifact: draw a card.
 {b}, {t}, sacrifice @: return target creature card from your graveyard to the battlefield.
 {b}, {t}: tap target creature.
@@ -1681,6 +1692,9 @@ exile target artifact or enchantment.
 exile target attacking creature.
 exile target attacking or blocking creature.
 exile target black or red permanent.
+exile target card from a graveyard.
+exile target card from a graveyard. put a 1/1 white and black spirit creature token with flying onto the battlefield.
+exile target card from a graveyard. you gain 3 life.
 exile target creature.
 exile target creature or enchantment.
 exile target creature with power 2 or less. its controller gains 4 life.
@@ -2181,6 +2195,8 @@ return target creature card from your graveyard to the battlefield.
 return target creature card from your graveyard to the battlefield. put a +1/+1 counter on it.
 return target creature card from your graveyard to your hand.
 return target creature card from your graveyard to your hand. target player sacrifices a creature.
+return target creature card with converted mana cost 3 or less from your graveyard to the battlefield.
+return target creature card with converted mana cost x or less from your graveyard to the battlefield.
 return target creature to its owner's hand.
 return target creature to its owner's hand. its controller draws a card.
 return target creature to its owner's hand. its controller loses 1 life.
@@ -2367,6 +2383,7 @@ sacrifice @: draw a card.
 sacrifice @: draw a card, then discard a card.
 sacrifice enchanted creature: creatures you control get +2/+0 until end of turn.
 sacrifice @: enchanted creature gets +3/+3 until end of turn.
+sacrifice @: exile target card from a graveyard.
 sacrifice @: prevent all combat damage that would be dealt this turn.
 sacrifice @: put a -1/-1 counter on target creature.
 sacrifice @: put a +1/+1 counter on target creature.
@@ -3008,6 +3025,7 @@ when @ dies, put two 1/1 green insect creature tokens onto the battlefield.
 when @ dies, put two 1/1 white spirit creature tokens with flying onto the battlefield.
 when @ dies, put two 2/2 black zombie creature tokens onto the battlefield.
 when @ dies, return it to its owner's hand.
+when @ dies, return target creature card with converted mana cost 2 or less from your graveyard to the battlefield.
 when @ dies, return @ to its owner's hand.
 when @ dies, shuffle it into its owner's library.
 when @ dies, target creature gets -1/-1 until end of turn.
@@ -3075,6 +3093,7 @@ when @ enters the battlefield, exile a land you control.
 when @ enters the battlefield, exile all lands.
 when @ enters the battlefield, exile all other permanents you control.
 when @ enters the battlefield, exile target black permanent.
+when @ enters the battlefield, exile target card from a graveyard.
 when @ enters the battlefield, exile target creature.
 when @ enters the battlefield, exile target creature other than @.
 when @ enters the battlefield, exile target green or white creature an opponent controls.
@@ -3164,6 +3183,7 @@ when @ enters the battlefield, return a red or green creature you control to its
 when @ enters the battlefield, return a red or green enchantment you control to its owner's hand.
 when @ enters the battlefield, return a white or blue creature you control to its owner's hand.
 when @ enters the battlefield, return each other creature you control to its owner's hand.
+when @ enters the battlefield, return target artifact card with converted mana cost 1 or less from your graveyard to your hand.
 when @ enters the battlefield, return target artifact or enchantment to its owner's hand.
 when @ enters the battlefield, return target creature an opponent controls to its owner's hand.
 when @ enters the battlefield, return target creature card from your graveyard to the battlefield.
@@ -3268,6 +3288,7 @@ when @ enters the battlefield, you may return target artifact card from your gra
 when @ enters the battlefield, you may return target artifact card from your graveyard to your hand.
 when @ enters the battlefield, you may return target card from your graveyard to your hand.
 when @ enters the battlefield, you may return target creature card from your graveyard to your hand.
+when @ enters the battlefield, you may return target creature card with infect from your graveyard to your hand.
 when @ enters the battlefield, you may return target creature to its owner's hand.
 when @ enters the battlefield, you may return target enchantment card from your graveyard to your hand.
 when @ enters the battlefield, you may return target instant card from your graveyard to your hand.
@@ -3529,6 +3550,7 @@ when @ is put into a graveyard from the battlefield, you may pay {w}. if you do,
 when @ leaves the battlefield, destroy target white creature. it can't be regenerated.
 when @ leaves the battlefield, draw a card.
 when @ leaves the battlefield, exile all nightmares.
+when @ leaves the battlefield, exile target card from a graveyard.
 when @ leaves the battlefield, it deals 1 damage to each goblin creature.
 when @ leaves the battlefield, it deals 4 damage to target creature.
 when @ leaves the battlefield, it deals 6 damage to target creature.
@@ -3624,6 +3646,7 @@ wither
 {x}{b}{b}: target creature gets -0/-x until end of turn and @ gets +x/+0 until end of turn.
 {x}{b}, {t}, discard a card: target creature gets +x/+0 until end of turn.
 -x: @ deals x damage to target creature.
+{x}, discard a card with converted mana cost x: @ deals x damage to target creature or player.
 {x}: equipped creature gets +x/+0 until end of turn.
 {x}{g}{g}: @ deals x damage to each creature with flying.
 {x}{g}, {t}: @ deals x damage to target creature with flying.

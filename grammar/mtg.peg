@@ -304,7 +304,7 @@ PoisonAction
     ;
 
 ReanimateAction
-    = "put " SelectCard " from a graveyard onto the battlefield under your control"
+    = "put " SelectCard " onto the battlefield under your control"
     ;
 
 MillAction
@@ -655,6 +655,7 @@ DestroyAction
 
 ExileAction
     = "exile " SelectPermanent
+    / "exile " SelectCard
     ;
 
 CounterAction
@@ -763,11 +764,12 @@ SpellRestriction
     ;
 
 RestrictedCard
-    = (CardRestriction SPACE)? Card
+    = (CardRestriction SPACE)? Card (SPACE CardRestriction)?
     ;
 
 CardRestriction
     = "exiled"
+    / "from a graveyard"
     / SpellRestriction
     ;
 
