@@ -5,9 +5,11 @@
 {0}: @ gets -1/-1 and gains flying until end of turn.
 {0}: @ gets +1/-1 until end of turn.
 {0}: @ loses flying.
+0: put a 2/2 green wolf creature token onto the battlefield.
 {0}: regenerate enchanted creature.
 {0}: return @ to its owner's hand.
 {0}: tap all lands you control. @ becomes a 3/3 turtle artifact creature until end of turn.
+0: target player puts the top ten cards of his or her library into his or her graveyard.
 {1}: add {b} to your mana pool.
 {1}: add {r} or {w} to your mana pool.
 {1}{b}{b}: @ gets -3/-0 and gains forestwalk until end of turn.

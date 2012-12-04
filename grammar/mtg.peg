@@ -274,6 +274,7 @@ AnimateActionReminder
 
 ChangeLoyaltyAction
     = SignedNumber
+    / "0"
     ;
 
 ChangeStateAction
