@@ -399,9 +399,18 @@ ReturnAction
     ;
 
 BounceAction
-    = "return" "s"? SPACE SelectPermanent SPACE "to its owner's hand"
-    / "put" "s"? SPACE SelectPermanent SPACE "on top of its owner's library"
-    / "put" "s"? SPACE SelectPermanent SPACE "on the bottom of its owner's library"
+    = BounceVerb SPACE SelectPermanent SPACE BounceLocation
+    ;
+
+BounceLocation
+    = "to its owner's hand"
+    / "on top of its owner's library"
+    / "on the bottom of its owner's library"
+    ;
+
+BounceVerb
+    = "return" "s"? 
+    / "put" "s"?
     ;
 
 PreventAction
