@@ -352,10 +352,17 @@ ControlAction
     ;
 
 ChangeCounterAction
-    = "remove a" "n"? SPACE CounterType " counter from " SelectPermanent
-    / "remove " Count SPACE CounterType " counters from " SelectPermanent
-    / "put a" "n"? SPACE CounterType " counter on " SelectPermanent
-    / "put " Count SPACE CounterType " counters on " SelectPermanent
+    = CounterVerb SPACE Count SPACE CounterType SPACE Counter " from " SelectPermanent
+    / CounterVerb SPACE Count SPACE CounterType SPACE Counter " on " SelectPermanent
+    ;
+
+CounterVerb
+    = "remove"
+    / "put"
+    ;
+
+Counter
+    = "counter" "s"?
     ;
 
 PayManaAction
@@ -564,7 +571,8 @@ CounterType
     ;
 
 Count
-    = "a"
+    = "an"
+    / "a"
     / "one"
     / "two"
     / "three"
