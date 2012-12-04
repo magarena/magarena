@@ -583,8 +583,8 @@ Duration
     ;
 
 GainAction
-    = (SelectPermanent SPACE)? "has " Keyword
-    / (SelectPermanent SPACE)? "have " Keyword
+    = (SelectPermanent SPACE)? "has" SPACE Keyword
+    / (SelectPermanent SPACE)? "have" SPACE Keyword
     / (SelectPermanent SPACE)? "gain" "s"? SPACE Keyword
     / (SelectPermanent SPACE)? "lose" "s"? SPACE Keyword
     ;
