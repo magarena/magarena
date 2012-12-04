@@ -15,7 +15,7 @@ SpellEffect
     ;
 
 Effect
-    = SingleEffect " and " SingleEffect
+    = SingleEffect SEP SingleEffect
     / SingleEffect ", then " SingleEffect
     / SingleEffect
     ;
@@ -254,8 +254,7 @@ DamageReceiver
     = "itself"
     / SelectPlayer
     / SelectCreature &(" and " SingleEffect)
-    / SelectCreature " or " SelectPlayer
-    / SelectCreature " and " SelectPlayer
+    / SelectCreature SEP SelectPlayer
     / SelectCreature
     ;
 
@@ -338,7 +337,7 @@ CreatureTokenSpec
     ;
 
 WithAbilitySpec
-    = "with " Keyword " and " Keyword
+    = "with " Keyword SEP Keyword
     / "with " Keyword
     ;
 
@@ -620,9 +619,7 @@ AddManaAction
 
 ManaSource
     = "{1}"
-    / SingleColor " or " SingleColor
     / SingleColor (SEP SingleColor)*
-    / SingleColor
     / "one mana of any color"
     ;
 
@@ -703,8 +700,8 @@ RestrictedPermanentCombination
     = RestrictedPermanent SEP RestrictedPermanent SEP RestrictedPermanent
     / RestrictedPermanent SEP RestrictedPermanent ", and " RestrictedPermanent
     / RestrictedPermanent SEP RestrictedPermanent SEP RestrictedPermanent
-    / RestrictedPermanent " or " RestrictedPermanent
-    / RestrictedPermanent " and " RestrictedPermanent
+    / RestrictedPermanent SEP RestrictedPermanent
+    / RestrictedPermanent SEP RestrictedPermanent
     / RestrictedPermanent 
     ;
 
@@ -739,10 +736,7 @@ RestrictedSpell
     ;
 
 ColorSpec
-    = Color (SEP Color)+
-    / Color " or " Color
-    / Color " and " Color
-    / Color
+    = Color (SEP Color)*
     / "non" Color
     / "colorless"
     ;
@@ -1118,6 +1112,8 @@ Sign
 SEP
     = ", or "
     / ", "
+    / " or "
+    / " and "
     ;
 
 EOC
