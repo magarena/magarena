@@ -364,9 +364,13 @@ PayManaAction
     ;
 
 ChangeLifeAction
-    = "lose" "s"? SPACE Number SPACE "life"
-    / "gain" "s"? SPACE Number SPACE "life"
-    / "pay" "s"? SPACE Number SPACE "life"
+    = ChangeLifeVerb SPACE Number SPACE "life"
+    ;
+
+ChangeLifeVerb
+    = "lose" "s"?
+    / "gain" "s"?
+    / "pay" "s"?
     ;
 
 SelectPlayer
@@ -412,11 +416,15 @@ Damage
     ;
 
 TapAction
-    = "{t}"
-    / "tap" SPACE SelectPermanent
+    = TapVerb SPACE SelectPermanent
+    / "{t}"
     / "{q}"
-    / "untap" SPACE SelectPermanent
-    / "tap or untap" SPACE SelectPermanent
+    ;
+
+TapVerb
+    = "tap or untap"
+    / "tap"
+    / "untap"
     ;
 
 RegenerateAction
@@ -584,10 +592,10 @@ Duration
     ;
 
 GainAction
-    = (SelectPermanent SPACE)? GainChange SPACE Keyword
+    = (SelectPermanent SPACE)? GainVerb SPACE Keyword
     ;
 
-GainChange
+GainVerb
     = "has"
     / "have"
     / "gain" "s"?
