@@ -276,6 +276,7 @@
 {1}{u}, {t}: draw a card, then discard a card.
 {1}{u}, {t}: put a 2/2 blue homunculus creature token onto the battlefield, then sacrifice a creature.
 {1}{u}, {t}: put target green creature on top of its owner's library.
+{1}{u}, {t}: return target creature with a counter on it to its owner's hand.
 {1}{u}, {t}: return target kavu to its owner's hand.
 {1}{u}, {t}: return target wizard you control to its owner's hand.
 {1}{u}, {t}, sacrifice @: draw two cards.
@@ -350,6 +351,7 @@
 {2}{b}, sacrifice a creature: target creature gets -2/-2 until end of turn.
 {2}{b}, sacrifice @: destroy target treefolk or forest.
 {2}{b}, sacrifice @: target creature gets -1/-1 until end of turn.
+{2}{b}, {t}: destroy target creature with a counter on it.
 {2}{b}, {t}, discard a card: destroy target nonblack creature. it can't be regenerated.
 {2}{b}, {t}, sacrifice a goblin: destroy target land.
 {2}{b}, {t}, sacrifice a zombie: destroy target non-zombie creature. it can't be regenerated. activate this ability only any time you could cast a sorcery.
@@ -814,6 +816,7 @@ at the beginning of your upkeep, @ deals 3 damage to target creature you control
 at the beginning of your upkeep, @ deals 4 damage to enchanted creature.
 at the beginning of your upkeep, @ deals 5 damage to target creature or player.
 at the beginning of your upkeep, destroy all artifacts and enchantments. they can't be regenerated.
+at the beginning of your upkeep, destroy target creature with a -1/-1 counter on it.
 at the beginning of your upkeep, draw a card.
 at the beginning of your upkeep, each player discards a card.
 at the beginning of your upkeep, each player sacrifices a non-vampire creature.
@@ -831,6 +834,7 @@ at the beginning of your upkeep, put a 2/2 green wolf creature token onto the ba
 at the beginning of your upkeep, put a credit counter on @.
 at the beginning of your upkeep, put a currency counter on @.
 at the beginning of your upkeep, put a doom counter on @.
+at the beginning of your upkeep, put a fuse counter on each creature with a fuse counter on it.
 at the beginning of your upkeep, put a growth counter on @.
 at the beginning of your upkeep, put a pain counter on @.
 at the beginning of your upkeep, put a pin counter on @.
@@ -1425,6 +1429,7 @@ draw two cards, then sacrifice a permanent.
 draw x cards.
 each attacking creature doesn't untap during its controller's next untap step.
 each creature you control with a +1/+1 counter on it has trample.
+each creature you control with a level counter on it gets +2/+2.
 each opponent sacrifices a land.
 each opponent sacrifices an artifact or enchantment.
 each player draws three cards, then discards three cards at random.
@@ -2720,6 +2725,7 @@ target player sacrifices a permanent.
 {t}: destroy target blue creature.
 {t}: destroy target creature. it can't be regenerated.
 {t}: destroy target creature or land.
+{t}: destroy target creature with a bounty counter on it.
 {t}: destroy target creature with islandwalk.
 {t}: destroy target creature with power 4 or greater.
 {t}: destroy target djinn or efreet.
@@ -3040,6 +3046,7 @@ when @ dies, it deals 3 damage to each creature and each player.
 when @ dies, it deals 3 damage to target creature or player.
 when @ dies, it deals 5 damage to each creature without flying.
 when @ dies, put a 1/1 colorless myr artifact creature token onto the battlefield.
+when @ dies, put a -1/-1 counter on each creature with a -1/-1 counter on it.
 when @ dies, put a 1/1 green saproling creature token onto the battlefield.
 when @ dies, put a 1/1 white spirit creature token with flying onto the battlefield.
 when @ dies, put a 2/1 black cat creature token onto the battlefield.
