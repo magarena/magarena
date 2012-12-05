@@ -175,6 +175,7 @@
 {1}, sacrifice a creature: put a +1/+1 counter on target creature.
 {1}, sacrifice a creature: you gain 2 life.
 {1}, sacrifice a land: target creature gets +1/+1 until end of turn.
+{1}, sacrifice a nonland permanent: @ deals 1 damage to target creature or player.
 {1}, sacrifice a pentavite: put a +1/+1 counter on @.
 {1}, sacrifice a permanent: you gain 1 life.
 {1}, sacrifice a saproling: draw a card.
@@ -547,6 +548,7 @@
 {3}{b}, {t}: target creature gains swampwalk until end of turn.
 {3}: @ deals 1 damage to target creature or player.
 +3: destroy target noncreature permanent.
+-3: destroy target nonland permanent.
 {3}, discard a card at random: target creature gets +2/+2 until end of turn.
 {3}: each player puts the top two cards of his or her library into his or her graveyard.
 {3}: exile target creature you control.
@@ -1299,6 +1301,7 @@ destroy all islands.
 destroy all lands.
 destroy all nonartifact permanents.
 destroy all nonbasic lands.
+destroy all nonland permanents.
 destroy all nonwhite creatures.
 destroy all plains.
 destroy all tapped creatures.
@@ -1307,6 +1310,7 @@ destroy all white permanents.
 destroy each artifact with converted mana cost x or less.
 destroy each creature with converted mana cost 3 or less.
 destroy each creature with converted mana cost 3 or less. they can't be regenerated.
+destroy each nonland artifact with converted mana cost 4 or less.
 destroy target artifact.
 destroy target artifact creature.
 destroy target artifact creature or black creature. it can't be regenerated.
@@ -1383,6 +1387,7 @@ destroy target noncreature artifact.
 destroy target noncreature permanent.
 destroy target non-elf creature.
 destroy target nongreen creature. it can't be regenerated.
+destroy target nonland permanent with converted mana cost 3 or less.
 destroy target non-spirit creature.
 destroy target non-vampire, non-werewolf, non-zombie creature.
 destroy target nonwhite permanent.
@@ -1596,6 +1601,7 @@ enchant land you control
 enchant mountain
 enchant nonbasic land
 enchant nonblack creature
+enchant nonland permanent
 enchant non-wall creature
 enchant non-wall creature you control
 enchant permanent
@@ -1890,6 +1896,7 @@ landfall — whenever a land enters the battlefield under your control, @ gets +
 landfall — whenever a land enters the battlefield under your control, @ loses defender until end of turn.
 landfall — whenever a land enters the battlefield under your control, target player puts the top three cards of his or her library into his or her graveyard.
 landfall — whenever a land enters the battlefield under your control, you may add one mana of any color to your mana pool.
+landfall — whenever a land enters the battlefield under your control, you may exile target nonland permanent other than @.
 landfall — whenever a land enters the battlefield under your control, you may gain 2 life.
 landfall — whenever a land enters the battlefield under your control, you may gain control of target creature for as long as you control @.
 landfall — whenever a land enters the battlefield under your control, you may have target creature get -1/-1 until end of turn.
@@ -2140,6 +2147,7 @@ put target creature on top of its owner's library.
 put target creature or land on top of its owner's library.
 put target enchantment on top of its owner's library.
 put target land on top of its owner's library.
+put target nonland permanent on top of its owner's library.
 put target permanent on top of its owner's library.
 put three 1/1 green elf warrior creature tokens onto the battlefield.
 put three 1/1 green saproling creature tokens onto the battlefield.
@@ -2254,6 +2262,9 @@ return target creature to its owner's hand. you gain 2 life.
 return target green card from your graveyard to your hand.
 return target instant or sorcery card from your graveyard to your hand.
 return target multicolored card from your graveyard to your hand.
+return target nonland permanent to its owner's hand.
+return target nonland permanent with converted mana cost x to its owner's hand.
+return target nonland permanent you don't control to its owner's hand.
 return target permanent to its owner's hand.
 return target permanent to its owner's hand. its controller loses 3 life.
 return target permanent you control to its owner's hand.
@@ -3071,6 +3082,7 @@ when @ dies, add {1} to your mana pool.
 when @ dies, all creatures get -1/-1 until end of turn.
 when @ dies, all creatures get -5/-5 until end of turn.
 when @ dies, @ deals 1 damage to each creature and each player.
+when @ dies, destroy all nonland permanents. they can't be regenerated.
 when @ dies, destroy target artifact or enchantment.
 when @ dies, destroy target land.
 when @ dies, destroy target wall.
@@ -3281,6 +3293,7 @@ when @ enters the battlefield, return target creature to its owner's hand.
 when @ enters the battlefield, return target enchantment card from your graveyard to your hand.
 when @ enters the battlefield, return target instant or sorcery card from your graveyard to your hand.
 when @ enters the battlefield, return target land to its owner's hand.
+when @ enters the battlefield, return target nonland permanent to its owner's hand.
 when @ enters the battlefield, return target permanent to its owner's hand.
 when @ enters the battlefield, return target sliver to its owner's hand.
 when @ enters the battlefield, sacrifice a creature.
@@ -3653,6 +3666,7 @@ when @ leaves the battlefield, put a +1/+1 counter on each creature target playe
 when @ leaves the battlefield, put a 2/2 black zombie creature token onto the battlefield.
 when @ leaves the battlefield, put a 3/3 green beast creature token onto the battlefield.
 when @ leaves the battlefield, put a 4/4 green elemental creature token onto the battlefield.
+when @ leaves the battlefield, put target nonland permanent on top of its owner's library.
 when @ leaves the battlefield, return the exiled card to the battlefield under its owner's control.
 when @ leaves the battlefield, sacrifice a creature.
 when @ leaves the battlefield, sacrifice a land.

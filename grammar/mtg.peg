@@ -792,6 +792,7 @@ PermanentRestriction
     / SelectPlayer " don't control"
     / "nonartifact, nonblack"
     / "nonartifact"
+    / "nonland"
     / "artifact"
     / "other than @"
     / "legendary"
