@@ -101,7 +101,6 @@ Action
     / EntersWithCounter
     / PayManaAction
     / MillAction
-    / ReanimateAction
     / PoisonAction
     / SetPTAction
     / ChangeStateAction
@@ -312,10 +311,6 @@ PoisonAction
     = "gets" SPACE Count SPACE "poison counter" "s"?
     ;
 
-ReanimateAction
-    = "put " SelectCard " onto the battlefield under your control"
-    ;
-
 MillAction
     = "put" "s"? " the top " (Count SPACE)? Card " of his or her library into his or her graveyard"
     ;
@@ -400,7 +395,8 @@ SelectPlayer
     ;
 
 PutCardAction
-    = "put a " SelectCard " onto the battlefield"
+    = "put " SelectCard " onto the battlefield under your control"
+    / "put " SelectCard " onto the battlefield"
     ;
 
 ReturnAction

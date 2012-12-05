@@ -497,6 +497,7 @@
 {2}, {t}: target player puts the top two cards of his or her library into his or her graveyard.
 {2}, {t}: untap target attacking creature you control. prevent all combat damage that would be dealt to and dealt by that creature this turn.
 {2}, {t}: you gain 1 life.
+{2}, {t}: you may put a multicolored creature card from your hand onto the battlefield.
 {2}, {t}: you may tap or untap target creature.
 {2}{u}, discard a card: return @ to its owner's hand.
 {2}{u}: draw a card, then put a +1/+1 counter on @.
@@ -656,6 +657,7 @@
 {4}, return a land you control to its owner's hand: draw a card.
 {4}{r}: exile @.
 {4}{r}, {t}, sacrifice a creature: @ deals 2 damage to target creature or player.
+{4}, sacrifice @: you may put an artifact card from your hand onto the battlefield.
 {4}, {t}: draw a card.
 {4}, {t}, exile @: exile target creature.
 {4}, {t}: put a 0/1 white goat creature token onto the battlefield.
@@ -671,6 +673,7 @@
 {4}, {t}: tap target creature.
 {4}, {t}: target creature is unblockable this turn.
 {4}, {t}: target opponent loses 2 life, gets a poison counter, then puts the top six cards of his or her library into his or her graveyard.
+{4}, {t}: you may put a creature card from your hand onto the battlefield.
 {4}: untap @.
 {4}{u}: return @ to its owner's hand.
 {4}{w}: exile @.
@@ -1844,6 +1847,8 @@ green creatures you control have trample.
 {g}, {t}: target legendary creature gets +1/+1 until end of turn.
 {g}, {t}: untap target attacking creature you control. prevent all combat damage that would be dealt to and dealt by it this turn.
 {g}, {t}: untap target elf.
+{g}, {t}: you may put a basic land card from your hand onto the battlefield.
+{g}, {t}: you may put a creature card from your hand onto the battlefield.
 {g/u}: @ gains shroud until end of turn.
 {g}{u}: put @ on top of its owner's library.
 {g/u}, sacrifice @: put target card from a graveyard on the bottom of its owner's library.
@@ -2486,6 +2491,7 @@ sacrifice @: target player loses 1 life.
 sacrifice @: target player loses 1 life and you gain 1 life.
 sacrifice @: you gain 3 life.
 sacrifice @: you gain 4 life.
+sacrifice @: you may put a land card from your hand onto the battlefield.
 sacrifice @: you may tap or untap target creature.
 saproling creatures get +1/+1.
 shadow
@@ -2877,6 +2883,7 @@ trample
 {t}, remove three charge counters from @: destroy target permanent.
 {t}, remove three charge counters from @: put a 9/9 colorless golem artifact creature token onto the battlefield.
 {t}, remove x charge counters from @: target creature gets -x/-x until end of turn.
+{t}, remove x winch counters from @: you may put a creature card with converted mana cost x from your hand onto the battlefield.
 {t}: return target legendary creature to its owner's hand.
 {t}: return target noncreature artifact card with converted mana cost 1 or less from your graveyard to the battlefield.
 {t}, sacrifice a creature: @ deals 1 damage to target creature or player.
@@ -2978,6 +2985,8 @@ trample
 {t}: untap target permanent.
 {t}: you gain 1 life.
 {t}: you gain 2 life.
+{t}: you may put a land card from your hand onto the battlefield.
+{t}: you may put a land card from your hand onto the battlefield. activate this ability only any time you could cast a sorcery.
 {t}: you may tap or untap target artifact an opponent controls.
 {u}{b}{b}{r}, {t}: destroy target tapped or blocking creature.
 {u/b}: @ gets +1/+1 until end of turn.
@@ -3028,6 +3037,7 @@ until end of turn, target creature you control gets +3/+3 and other creatures yo
 {u}{r}: @ gains flying until end of turn.
 {u/r}: @ gets +1/-1 until end of turn.
 {u}{r}: until end of turn, @ becomes a 2/1 blue and red elemental artifact creature.
+{u/r}{u/r}{u/r}{u/r}: you may put a blue or red creature card from your hand onto the battlefield.
 {u}, sacrifice a creature: discard a card, then draw a card.
 {u}, sacrifice @: counter target noncreature spell.
 {u}, sacrifice @: counter target spell unless its controller pays {2}.
@@ -3046,6 +3056,7 @@ until end of turn, target creature you control gets +3/+3 and other creatures yo
 {u}, {t}: draw two cards.
 {u}, {t}: put a 0/1 blue homunculus artifact creature token onto the battlefield.
 {u}, {t}: put target creature you control on top of its owner's library.
+{u}, {t}, return an artifact you control to its owner's hand: you may put an artifact card from your hand onto the battlefield.
 {u}, {t}: return target permanent you control to its owner's hand.
 {u}, {t}, sacrifice a creature or enchantment: counter target spell.
 {u}, {t}: target creature gains flying until end of turn.
@@ -3863,6 +3874,7 @@ wither
 {x}, {t}: target player puts the top x cards of his or her library into his or her graveyard.
 {x}, {t}: you gain x life.
 {x}{u}{u}, {t}: return target creature with converted mana cost x to its owner's hand.
+{x}{u}: you may put a creature card with converted mana cost x from your hand onto the battlefield. if you do, return @ to its owner's hand.
 {x}{w}, {t}: @ deals x damage to target attacking or blocking creature.
 {x}{x}{1}: destroy target artifact or creature with converted mana cost x.
 {x}{x}{1}: destroy target noncreature artifact with converted mana cost x.
@@ -3894,6 +3906,7 @@ you gain x life.
 you gain x life and draw x cards.
 you have hexproof.
 you have shroud.
+you may put a green creature card from your hand onto the battlefield.
 you may tap or untap target artifact, creature, or land.
 you may tap or untap target creature.
 you may tap or untap target permanent.
