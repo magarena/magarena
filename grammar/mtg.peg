@@ -801,6 +801,7 @@ CreatureRestriction
     / "with power " Number " or greater"
     / "with " Keyword
     / "without " Keyword
+    / "with a +1/+1 counter on it"
     / "tapped or blocking"
     / "attacking or blocking"
     / "attacking"

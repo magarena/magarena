@@ -84,6 +84,7 @@
 {1}{g}: regenerate enchanted creature.
 {1}{g}: regenerate target beast.
 {1}{g}: regenerate target creature.
+{1}{g}: regenerate target creature with a +1/+1 counter on it.
 {1}{g}: regenerate target green creature.
 {1}{g}, sacrifice a human: put two +1/+1 counters on target creature.
 {1}{g}, sacrifice a land: put two 1/1 green squirrel creature tokens onto the battlefield.
@@ -196,6 +197,7 @@
 -1: target artifact becomes a 5/5 artifact creature.
 {1}: target creature gains flying until end of turn.
 +1: target creature gets +3/+3 and gains flying until end of turn.
+{1}: target creature with a +1/+1 counter on it gains flying until end of turn.
 {1}: target creature with power 5 or greater gains first strike until end of turn.
 {1}: target creature with power 5 or greater gains trample until end of turn.
 {1}: target creature with power 5 or greater gains vigilance until end of turn.
@@ -280,6 +282,7 @@
 {1}{u}, {t}: you may tap or untap target creature.
 {1}{u}, {t}: you may tap or untap target permanent.
 {1}{u}{u}: @ gains shroud until end of turn.
+{1}{u}: untap target creature with a +1/+1 counter on it.
 {1}{u}{u}, sacrifice a creature: counter target creature spell.
 {1}{u}{u}: target creature gains flying until end of turn.
 {1}{w}: @ becomes a 1/5 white soldier creature until end of turn. it's still a land.
@@ -445,6 +448,7 @@
 {2}: target black or green creature gains haste until end of turn.
 {2}: target blue or red creature gets +1/+0 until end of turn.
 {2}: target creature gains flying until end of turn.
+{2}: target creature with a +1/+1 counter on it gains shroud until end of turn.
 {2}: target creature you control gains flying until end of turn.
 {2}: target green or blue creature gets +0/+1 until end of turn.
 {2}: target ninja creature is unblockable this turn.
@@ -1419,6 +1423,7 @@ draw two cards, then discard a card at random.
 draw two cards, then sacrifice a permanent.
 draw x cards.
 each attacking creature doesn't untap during its controller's next untap step.
+each creature you control with a +1/+1 counter on it has trample.
 each opponent sacrifices a land.
 each opponent sacrifices an artifact or enchantment.
 each player draws three cards, then discards three cards at random.
@@ -1795,6 +1800,8 @@ green creatures you control have trample.
 {g}: target creature gains trample until end of turn.
 {g}: target creature gets +1/+1 until end of turn.
 {g}: target creature loses flying until end of turn.
+{g}: target creature with a +1/+1 counter on it gains reach until end of turn.
+{g}: target creature with a +1/+1 counter on it gains trample until end of turn.
 {g}: target land becomes a 1/1 creature until end of turn. it's still a land.
 {g}, {t}, discard a card: prevent all combat damage that would be dealt this turn.
 {g}, {t}, discard a card: regenerate target creature.
