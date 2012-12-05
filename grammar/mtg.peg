@@ -93,6 +93,7 @@ Action
     / ChangeLifeAction
     / ChangeCounterAction
     / PutTokenAction
+    / PutCardAction
     / ControlAction
     / ShuffleAction
     / DoesntUntapAction
@@ -396,6 +397,10 @@ SelectPlayer
     / "its owner"
     / "player"
     / "a player"
+    ;
+
+PutCardAction
+    = "put a " SelectCard " onto the battlefield"
     ;
 
 ReturnAction
@@ -780,6 +785,9 @@ CardRestriction
     = "exiled"
     / "from a graveyard"
     / "from your graveyard"
+    / "from your hand"
+    / "basic land"
+    / "land"
     / SpellRestriction
     ;
 

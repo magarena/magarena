@@ -55,6 +55,7 @@
 {1}, discard a card at random: put a +1/+1 counter on target creature.
 {1}, discard a card: @ gets +1/+1 until end of turn.
 {1}, discard a card: put a +1/+1 counter on @.
+{1}, discard a land card: draw a card.
 +1: draw a card. target player puts the top card of his or her library into his or her graveyard.
 +1: draw a card, then discard a card at random.
 +1: each player discards a card.
@@ -86,6 +87,7 @@
 {1}{g}: regenerate target creature.
 {1}{g}: regenerate target creature with a +1/+1 counter on it.
 {1}{g}: regenerate target green creature.
+{1}{g}: return target basic land card from your graveyard to your hand.
 {1}{g}, sacrifice a human: put two +1/+1 counters on target creature.
 {1}{g}, sacrifice a land: put two 1/1 green squirrel creature tokens onto the battlefield.
 {1}{g}, sacrifice a land: squirrel creatures get +1/+1 until end of turn.
@@ -915,6 +917,7 @@ at the beginning of your upkeep, you lose 2 life.
 at the beginning of your upkeep, you lose 3 life.
 at the beginning of your upkeep, you may discard a card. if you don't, sacrifice @ and draw a card.
 at the beginning of your upkeep, you may draw two cards.
+at the beginning of your upkeep, you may exile a card from your hand. if you do, untap @.
 at the beginning of your upkeep, you may gain 1 life.
 at the beginning of your upkeep, you may gain control of target permanent until end of turn. if you do, untap it and it gains haste until end of turn.
 at the beginning of your upkeep, you may have target opponent discard a card at random.
@@ -1418,6 +1421,8 @@ discard a card: return @ to its owner's hand.
 discard a card: you may tap or untap target artifact, creature, or land.
 discard a creature card: @ gets +2/+2 until end of turn.
 discard a creature card: put a +1/+1 counter on @.
+discard a land card: @ deals 2 damage to target creature or player.
+discard a land card: @ gets +1/+1 until end of turn.
 discard an artifact card: @ gets +2/+2 until end of turn.
 discard an artifact card: return @ to its owner's hand.
 @ doesn't untap during your untap step.
@@ -2901,6 +2906,7 @@ trample
 {t}, sacrifice @: put a +1/+2 counter on target creature.
 {t}, sacrifice @: return target artifact card from your graveyard to your hand.
 {t}, sacrifice @: return target enchantment card from your graveyard to your hand.
+{t}, sacrifice @: return target land card from your graveyard to your hand.
 {t}, sacrifice @: target attacking creature without flying gets -1/-2 until end of turn.
 {t}, sacrifice @: target creature can't block this turn.
 {t}, sacrifice @: target creature gains flying until end of turn.
@@ -3199,6 +3205,7 @@ when @ enters the battlefield, each player loses 3 life.
 when @ enters the battlefield, each player sacrifices a creature.
 when @ enters the battlefield, each player sacrifices a land.
 when @ enters the battlefield, exile a land you control.
+when @ enters the battlefield, exile all cards from your hand.
 when @ enters the battlefield, exile all lands.
 when @ enters the battlefield, exile all other permanents you control.
 when @ enters the battlefield, exile target black permanent.
@@ -3309,9 +3316,11 @@ when @ enters the battlefield, sacrifice a land.
 when @ enters the battlefield, sacrifice all creatures you control.
 when @ enters the battlefield, sacrifice it unless you discard a card at random.
 when @ enters the battlefield, sacrifice it unless you discard a creature card.
+when @ enters the battlefield, sacrifice it unless you discard a land card.
 when @ enters the battlefield, sacrifice it unless you discard a noncreature card.
 when @ enters the battlefield, sacrifice it unless you exile a creature you control other than @.
 when @ enters the battlefield, sacrifice it unless you pay {1}.
+when @ enters the battlefield, sacrifice it unless you return a basic land card from your graveyard to your hand.
 when @ enters the battlefield, sacrifice it unless you return an artifact you control to its owner's hand.
 when @ enters the battlefield, sacrifice it unless you return an enchantment to its owner's hand.
 when @ enters the battlefield, sacrifice it unless you return an untapped forest you control to its owner's hand.
@@ -3406,6 +3415,7 @@ when @ enters the battlefield, you may return target creature to its owner's han
 when @ enters the battlefield, you may return target enchantment card from your graveyard to your hand.
 when @ enters the battlefield, you may return target instant card from your graveyard to your hand.
 when @ enters the battlefield, you may return target instant or sorcery card from your graveyard to your hand.
+when @ enters the battlefield, you may return target land card from your graveyard to your hand.
 when @ enters the battlefield, you may return target land to its owner's hand.
 when @ enters the battlefield, you may return target red sorcery card from your graveyard to your hand.
 when @ enters the battlefield, you may return target sorcery card from your graveyard to your hand.
