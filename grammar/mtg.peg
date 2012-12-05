@@ -413,6 +413,7 @@ BounceLocation
     / "to the battlefield under its owner's control" 
     / "to the battlefield" 
     / "on top of its owner's library"
+    / "on top of your library"
     / "on the bottom of its owner's library"
     ;
 

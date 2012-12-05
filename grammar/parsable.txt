@@ -44,6 +44,7 @@
 {1}{b}: target creature you control gains deathtouch until end of turn.
 {1}{b}, {t}: destroy target creature with shadow.
 {1}{b}, {t}, discard a card: target creature gets +1/+0 and gains first strike until end of turn.
+{1}{b}, {t}: put target creature card from your graveyard on top of your library.
 {1}{b}, {t}, sacrifice @: destroy target nonblack creature.
 {1}{b}, {t}: target creature gets -1/-1 until end of turn.
 {1}{b}, {t}: target creature gets -2/-2 until end of turn.
@@ -237,6 +238,7 @@
 {1}, {t}, sacrifice @: @ deals 4 damage to target artifact creature.
 {1}, {t}, sacrifice @: @ deals damage equal to the number of time counters on it to each creature and each player.
 {1}, {t}, sacrifice @: draw a card.
+{1}, {t}, sacrifice @: draw two cards, then put a card from your hand on top of your library.
 {1}, {t}, sacrifice @: put a 1/1 colorless myr artifact creature token onto the battlefield.
 {1}, {t}, sacrifice @: target creature gets +2/+2 until end of turn.
 {1}, {t}, tap an untapped creature you control: put a 1/1 green saproling creature token onto the battlefield.
@@ -278,6 +280,7 @@
 {1}{u}, sacrifice @: return target creature to its owner's hand.
 {1}{u}, {t}: draw a card, then discard a card.
 {1}{u}, {t}: put a 2/2 blue homunculus creature token onto the battlefield, then sacrifice a creature.
+{1}{u}, {t}: put target artifact card from your graveyard on top of your library.
 {1}{u}, {t}: put target green creature on top of its owner's library.
 {1}{u}, {t}: return target creature with a counter on it to its owner's hand.
 {1}{u}, {t}: return target kavu to its owner's hand.
@@ -1022,6 +1025,7 @@ blue creatures get +1/+1.
 {b}, pay 2 life: draw a card.
 {b}, pay 5 life: regenerate @.
 {b}, put a -1/-1 counter on a creature you control: prevent the next 2 damage that would be dealt to target player this turn.
+{b}: put target creature card from your graveyard on top of your library.
 {b}{r}: @ becomes a 3/1 black and red devil artifact creature with first strike until end of turn.
 {b}{r}: dragon creatures get +1/+1 until end of turn.
 {b}{r}: each player loses 1 life.
@@ -2149,6 +2153,7 @@ put a 4/4 green beast creature token onto the battlefield.
 put a 4/4 red giant creature token onto the battlefield.
 put a 5/5 blue and red elemental creature token with flying onto the battlefield.
 put a 6/6 green wurm creature token onto the battlefield.
+put a card from your hand on top of your library: return @ to its owner's hand.
 put an x/x green ooze creature token onto the battlefield.
 put an x/x green wurm creature token onto the battlefield.
 put a token that's a copy of target creature onto the battlefield.
@@ -2162,6 +2167,7 @@ put target artifact or enchantment on the bottom of its owner's library.
 put target artifact or enchantment on top of its owner's library.
 put target attacking or blocking creature on top of its owner's library.
 put target card from a graveyard on top of its owner's library.
+put target card from your graveyard on top of your library.
 put target creature card from a graveyard onto the battlefield under your control.
 put target creature on top of its owner's library.
 put target creature or land on top of its owner's library.
@@ -2220,6 +2226,7 @@ remove a +1/+1 counter from @: @ deals 1 damage to target creature or player.
 remove a +1/+1 counter from @: @ gets +2/+2 until end of turn.
 remove a +1/+1 counter from @: @ is unblockable this turn.
 remove a -1/-1 counter from @: put a -1/-1 counter on another target creature.
+remove a +1/+1 counter from @: put target artifact card from your graveyard on top of your library.
 remove a +1/+1 counter from @: you gain 2 life.
 remove a charge counter from @: add one mana of any color to your mana pool.
 remove a charge counter from @: target creature gets +1/+1 until end of turn.
@@ -2804,6 +2811,7 @@ target player sacrifices a permanent.
 {t}: draw a card, then discard a card.
 {t}: draw a card, then put @ on top of its owner's library.
 {t}: draw three cards.
+{t}: draw two cards, then put a card from your hand on top of your library.
 {t}: each 1/1 creature you control gets +1/+2 until end of turn.
 {t}: each player draws a card.
 {t}: each player draws a card, then discards a card.
@@ -3168,6 +3176,7 @@ when @ dies, put a 6/6 black wurm creature token with trample onto the battlefie
 when @ dies, put four 1/1 green insect creature tokens onto the battlefield.
 when @ dies, put it on top of its owner's library.
 when @ dies, put seven 1/1 green insect creature tokens onto the battlefield.
+when @ dies, put target creature card from your graveyard on top of your library.
 when @ dies, put three 1/1 green saproling creature tokens onto the battlefield.
 when @ dies, put three 5/5 green wurm creature tokens with trample onto the battlefield.
 when @ dies, put two 1/1 green insect creature tokens onto the battlefield.
