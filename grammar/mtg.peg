@@ -603,6 +603,7 @@ Duration
     = "until end of turn"
     / "for as long as " SelectPlayer " control @"
     / "as long as you control three or more artifacts"
+    / "as long as seven or more cards are in your graveyard"
     / "this turn"
     / "at the beginning of the next turn's upkeep"
     ;
