@@ -1880,6 +1880,27 @@ kicker {w}{w}
 kicker {x}
 kicker {x}{2}
 knight creatures you control have double strike.
+landfall — whenever a land enters the battlefield under your control, equipped creature gets +2/+2 until end of turn.
+landfall — whenever a land enters the battlefield under your control, @ gains flying until end of turn.
+landfall — whenever a land enters the battlefield under your control, @ gains intimidate until end of turn.
+landfall — whenever a land enters the battlefield under your control, @ gains vigilance until end of turn.
+landfall — whenever a land enters the battlefield under your control, @ gets +1/+1 until end of turn.
+landfall — whenever a land enters the battlefield under your control, @ gets +2/+2 until end of turn.
+landfall — whenever a land enters the battlefield under your control, @ gets +4/+4 and gains trample until end of turn.
+landfall — whenever a land enters the battlefield under your control, @ loses defender until end of turn.
+landfall — whenever a land enters the battlefield under your control, target player puts the top three cards of his or her library into his or her graveyard.
+landfall — whenever a land enters the battlefield under your control, you may add one mana of any color to your mana pool.
+landfall — whenever a land enters the battlefield under your control, you may gain 2 life.
+landfall — whenever a land enters the battlefield under your control, you may gain control of target creature for as long as you control @.
+landfall — whenever a land enters the battlefield under your control, you may have target creature get -1/-1 until end of turn.
+landfall — whenever a land enters the battlefield under your control, you may have target player lose 3 life. if you do, put three +1/+1 counters on @.
+landfall — whenever a land enters the battlefield under your control, you may pay {2}. if you do, draw a card.
+landfall — whenever a land enters the battlefield under your control, you may put a +1/+1 counter on each plant creature you control.
+landfall — whenever a land enters the battlefield under your control, you may put a 1/1 white bird creature token with flying onto the battlefield.
+landfall — whenever a land enters the battlefield under your control, you may put a 4/4 green beast creature token onto the battlefield.
+landfall — whenever a land enters the battlefield under your control, you may put a quest counter on @.
+landfall — whenever a land enters the battlefield under your control, you may return @ from your graveyard to the battlefield.
+landfall — whenever a land enters the battlefield under your control, you may untap @.
 lands gain shroud until end of turn.
 legendary creatures you control get +2/+2.
 legendary snakes you control have shroud.
@@ -3341,6 +3362,8 @@ when @ enters the battlefield, you may return target sorcery card from your grav
 when @ enters the battlefield, you may return target tapped creature to its owner's hand.
 when @ enters the battlefield, you may tap or untap target permanent.
 when @ enters the battlefield, you may tap target creature.
+whenever a land enters the battlefield under your control, put a +1/+1 counter on @.
+whenever a land enters the battlefield under your control, untap @.
 whenever @ attacks, all attacking creatures with flanking get +1/+1 until end of turn.
 whenever @ attacks, all other creatures you control get +1/+1 until end of turn.
 whenever @ attacks, attacking creatures gain first strike until end of turn.
