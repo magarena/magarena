@@ -1,13 +1,13 @@
 Rule
-    = (AbilityWord " — ")? Ability
+    = (AbilityWord " — ")? Ability EOR
     ;
 
 Ability
-    = SpellEffect EOR
-    / KeywordAbility EOR
-    / ActivatedAbility EOR
-    / TriggeredAbility EOR
-    / AdditionalCost EOR
+    = SpellEffect
+    / KeywordAbility
+    / ActivatedAbility
+    / TriggeredAbility
+    / AdditionalCost
     ;
 
 SpellEffect
@@ -34,6 +34,7 @@ Optional
 AbilityWord
     = "metalcraft"
     / "landfall"
+    / "threshold"
     ;
 
 KeywordAbility
@@ -42,7 +43,7 @@ KeywordAbility
     ;
 
 ActivatedAbility
-    = ActivationCosts EOC SpellEffect
+    = ActivationCosts EOC SpellEffect (SPACE AbilityRestriction EOS)?
     ;
 
 ActivationCosts
@@ -106,7 +107,6 @@ Action
     / AnimateAction
     / AnimateActionReminder
     / ChangeLoyaltyAction
-    / AbilityRestriction
     ;
 
 Keyword
@@ -264,6 +264,7 @@ AttacksTrigger
 
 AbilityRestriction
     = "activate this ability only any time you could cast a sorcery"
+    / "activate this ability only if seven or more cards are in your graveyard"
     ;
 
 AnimateAction
