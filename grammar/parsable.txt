@@ -3076,6 +3076,8 @@ werewolf creatures you control get +1/+0 and have trample.
 {w}: @ gains vigilance until end of turn.
 {w}: @ gets +0/+1 until end of turn.
 {w}: @ gets +1/+1 until end of turn.
+when an opponent casts a creature spell, sacrifice @.
+when a player casts a spell, sacrifice @ and counter that spell.
 when @ becomes the target of a spell or ability, return @ to its owner's hand.
 when @ becomes the target of a spell or ability, sacrifice it.
 when @ dies, add {1} to your mana pool.
@@ -3406,6 +3408,67 @@ when @ enters the battlefield, you may tap or untap target permanent.
 when @ enters the battlefield, you may tap target creature.
 whenever a land enters the battlefield under your control, put a +1/+1 counter on @.
 whenever a land enters the battlefield under your control, untap @.
+whenever an opponent casts a black spell, you may pay {g}{g}. if you do, you draw a card.
+whenever an opponent casts a blue or black spell, you may put a +1/+1 counter on @.
+whenever an opponent casts a blue or black spell, you may put a 1/1 green snake creature token onto the battlefield.
+whenever an opponent casts a creature spell, @ deals 1 damage to that player.
+whenever an opponent casts a creature spell, put a +1/+1 counter on enchanted creature.
+whenever an opponent casts a green spell, you draw a card.
+whenever an opponent casts a multicolored spell, you gain 4 life.
+whenever an opponent casts an artifact spell, put a +1/+1 counter on @.
+whenever an opponent casts an artifact spell, you may put a 1/1 green insect creature token onto the battlefield.
+whenever an opponent casts a red spell, you gain 2 life.
+whenever an opponent casts a spell, counter it unless that player pays {1}.
+whenever an opponent casts a spell, @ gets +2/+2 until end of turn.
+whenever an opponent casts a spell, put a 1/1 green insect creature token onto the battlefield.
+whenever an opponent casts a spell, that player draws seven cards.
+whenever an opponent casts a spell, that player puts the top two cards of his or her library into his or her graveyard.
+whenever an opponent casts a spell, you may put a +1/+1 counter on @.
+whenever an opponent casts a spirit or arcane spell, @ deals 2 damage to that player.
+whenever an opponent casts a white spell, he or she loses 2 life.
+whenever an opponent casts a white spell, that player loses 1 life and you gain 1 life.
+whenever a player casts a black spell, @ gets +2/+2 until end of turn.
+whenever a player casts a black spell, you gain 1 life.
+whenever a player casts a black spell, you may gain 1 life.
+whenever a player casts a black spell, you may pay {1}. if you do, target player loses 1 life.
+whenever a player casts a black spell, you may pay {1}. if you do, you gain 1 life.
+whenever a player casts a black spell, you may pay {3}. if you do, untap target permanent.
+whenever a player casts a black spell, you may pay {b}. if you do, put a +1/+1 counter on @.
+whenever a player casts a blue spell, @ gets +2/+2 until end of turn.
+whenever a player casts a blue spell, you may gain 1 life.
+whenever a player casts a blue spell, you may pay {1}. if you do, target player puts the top two cards of his or her library into his or her graveyard.
+whenever a player casts a blue spell, you may pay {1}. if you do, you gain 1 life.
+whenever a player casts a blue spell, you may pay {3}. if you do, untap target permanent.
+whenever a player casts a green or white spell, that player discards a card.
+whenever a player casts a green spell, put a +1/+1 counter on @.
+whenever a player casts a green spell, you may gain 1 life.
+whenever a player casts a green spell, you may pay {1}. if you do, target creature gets +1/+1 until end of turn.
+whenever a player casts a green spell, you may pay {1}. if you do, you gain 1 life.
+whenever a player casts a green spell, you may pay {3}. if you do, untap target permanent.
+whenever a player casts an artifact spell, you may gain 1 life.
+whenever a player casts an artifact spell, you may pay {1}. if you do, you gain 1 life.
+whenever a player casts an enchantment spell, counter it.
+whenever a player casts a nonblack spell, that player loses 1 life.
+whenever a player casts a red spell, you may gain 1 life.
+whenever a player casts a red spell, you may pay {1}. if you do, target creature can't block this turn.
+whenever a player casts a red spell, you may pay {1}. if you do, you gain 1 life.
+whenever a player casts a red spell, you may pay {3}. if you do, untap target permanent.
+whenever a player casts a red spell, you may pay {r}. if you do, @ deals 1 damage to target creature or player.
+whenever a player casts a spell, counter it unless that player pays {3}.
+whenever a player casts a spell, @ deals 2 damage to that player.
+whenever a player casts a spell, @ gets -1/-1 until end of turn.
+whenever a player casts a spell, sacrifice a creature.
+whenever a player casts a spell, tap @.
+whenever a player casts a spell, that player discards a card.
+whenever a player casts a spell, that player may draw a card.
+whenever a player casts a spell, that player may gain 2 life.
+whenever a player casts a spell, that player returns a land he or she controls to its owner's hand.
+whenever a player casts a spell with converted mana cost 3 or less, @ deals 2 damage to that player.
+whenever a player casts a spell, you lose 1 life.
+whenever a player casts a spell, you may put a +1/+1 counter on @.
+whenever a player casts a white spell, you may gain 1 life.
+whenever a player casts a white spell, you may pay {1}. if you do, you gain 1 life.
+whenever a player casts a white spell, you may pay {3}. if you do, untap target permanent.
 whenever @ attacks, all attacking creatures with flanking get +1/+1 until end of turn.
 whenever @ attacks, all other creatures you control get +1/+1 until end of turn.
 whenever @ attacks, attacking creatures gain first strike until end of turn.

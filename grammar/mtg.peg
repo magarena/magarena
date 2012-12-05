@@ -213,8 +213,12 @@ BlockedTrigger
     ;
 
 CastTrigger
-    = "whenever " SelectPlayer " cast " SelectSpell
-    / "when " SelectPlayer " cast " SelectSpell
+    = "whenever " SelectPlayer SPACE Cast SPACE SelectSpell
+    / "when " SelectPlayer SPACE Cast SPACE SelectSpell
+    ;
+
+Cast
+    = "cast" "s"?
     ;
 
 LeavesBattlefieldTrigger
@@ -391,6 +395,7 @@ SelectPlayer
     / "its controller"
     / "its owner"
     / "player"
+    / "a player"
     ;
 
 ReturnAction
