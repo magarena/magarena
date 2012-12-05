@@ -953,6 +953,7 @@ battle cry
 {b}{b}: counter target green spell.
 {b}{b}: creatures with shadow get +1/+0 until end of turn and creatures without shadow get -1/-0 until end of turn.
 {b}{b}: draw a card.
+{b}{b}: @ gains swampwalk until end of turn and deals 2 damage to you.
 {b}{b}: @ gets +1/+0 until end of turn.
 {b}{b}, pay 2 life, sacrifice a swamp: return target creature card from your graveyard to the battlefield.
 {b}{b}: regenerate @.
@@ -979,6 +980,7 @@ beasts can't block.
 {b}: @ gains flying until end of turn.
 {b}: @ gains haste until end of turn.
 {b}: @ gains infect until end of turn.
+{b}: @ gains swampwalk until end of turn and deals 1 damage to you.
 {b}{g}: @ becomes a 2/2 black and green insect artifact creature with deathtouch until end of turn.
 {b/g}{b/g}: exile target card from a graveyard. you gain 1 life.
 {b}: @ gets +1/+0 until end of turn.
@@ -1759,6 +1761,7 @@ gain control of target nonartifact, nonblack creature.
 {g}, discard a card: regenerate @.
 {g}, discard a card: target creature gets +2/+2 until end of turn.
 {g}: enchanted creature gains trample until end of turn.
+{g}: @ gains forestwalk until end of turn and deals 1 damage to you.
 {g}: @ gains haste until end of turn.
 {g}: @ gains reach until end of turn.
 {g}: @ gains trample until end of turn.
@@ -1768,6 +1771,7 @@ gain control of target nonartifact, nonblack creature.
 {g}: @ gets +1/+1 until end of turn.
 {g}: @ gets +1/-2 until end of turn.
 {g}{g}: @ gains first strike until end of turn.
+{g}{g}: @ gains forestwalk until end of turn and deals 2 damage to you.
 {g}{g}{g}{g}, {t}: regenerate target creature.
 {g}{g}{g}{g}, {t}: target creature gains forestwalk until end of turn.
 {g}{g}{g}, sacrifice @: put a 6/6 green wurm creature token onto the battlefield.
@@ -2291,6 +2295,7 @@ return @ to its owner's hand: regenerate target creature.
 {r}: return @ to its owner's hand.
 {r}{r}: @ gains first strike until end of turn.
 {r}{r}: @ gains flying until end of turn.
+{r}{r}: @ gets +2/+0 until end of turn and deals 1 damage to you.
 {r}{r}{r}: regenerate @.
 {r}{r}{r}: regenerate enchanted creature.
 {r}{r}{r}, {t}: destroy target artifact creature.
@@ -3037,6 +3042,7 @@ until end of turn, target creature you control gets +3/+3 and other creatures yo
 {u}, {t}: target player puts the top two cards of his or her library into his or her graveyard.
 {u}, {t}: untap target legendary permanent.
 {u}, {t}: you may tap or untap target creature.
+{u}{u}: @ gets -1/-0 until end of turn and deals 1 damage to target attacking creature without flying.
 {u}: untap @.
 {u}: untap enchanted creature.
 {u}{u}, sacrifice a wizard: counter target spell.
