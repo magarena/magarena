@@ -802,9 +802,10 @@ CreatureRestriction
     / "with " Keyword
     / "without " Keyword
     / "tapped or blocking"
-    / "blocked"
     / "attacking or blocking"
     / "attacking"
+    / "blocking"
+    / "blocked"
     / Tribal
     / PermanentRestriction
     ;

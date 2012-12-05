@@ -91,6 +91,7 @@
 {1}{g}, sacrifice an elf: target creature gets +3/+3 until end of turn.
 {1}{g}, sacrifice @: destroy target artifact or enchantment.
 {1}{g}, sacrifice @: destroy target enchantment.
+{1}{g}: target blocking creature gets +0/+1 until end of turn.
 {1}{g}: target kavu creature gets -1/+1 until end of turn.
 {1}{g}, {t}: @ deals 5 damage to target attacking or blocking creature with flying.
 {1}{g}, {t}, discard a card: creatures you control get +1/+1 and gain trample until end of turn.
@@ -947,6 +948,7 @@ battle cry
 {b}{b}: return @ to its owner's hand.
 {b}{b}{r}, {t}: regenerate target black or green creature.
 {b}{b}, sacrifice @: @ deals 3 damage to each creature and each player.
+{b}{b}, sacrifice @: destroy target blocking creature.
 {b}{b}: target creature gains shadow until end of turn.
 {b}{b}, {t}: destroy target green creature.
 {b}{b}, {t}: destroy target legendary creature. it can't be regenerated.
@@ -983,6 +985,10 @@ black creatures get +1/+1.
 black creatures get +2/+0 until end of turn.
 black creatures you control have protection from white.
 black creatures you control have wither.
+blocking creatures gain first strike until end of turn.
+blocking creatures get +0/+3 until end of turn.
+blocking creatures get +1/+1 until end of turn.
+blocking creatures get +7/+7 until end of turn.
 bloodthirst 1
 bloodthirst 2
 bloodthirst 3
@@ -1006,6 +1012,7 @@ blue creatures get +1/+1.
 {b}{r}: @ gets +1/+0 until end of turn.
 {b}{r}{g}, {t}: return target creature card from your graveyard to your hand.
 {b}{r}{g}, {t}: target player draws a card.
+{b}{r}: target blocking creature gets -1/-1 until end of turn.
 {b}{r}, {t}: @ deals 2 damage to target white creature.
 {b}, sacrifice a cleric: target player loses 2 life and you gain 2 life.
 {b}, sacrifice a creature: destroy target nonblack creature.
@@ -1183,6 +1190,7 @@ cumulative upkeep {w}
 @ deals 1 damage to target player and 1 damage to target creature that player controls.
 @ deals 1 damage to target player and you gain 1 life.
 @ deals 1 damage to target player. you gain 1 life.
+@ deals 2 damage to each attacking creature or @ deals 2 damage to each blocking creature.
 @ deals 2 damage to each creature.
 @ deals 2 damage to each creature and each player.
 @ deals 2 damage to each creature with flying.
@@ -1314,6 +1322,7 @@ destroy target attacking creature with power 3 or less.
 destroy target attacking or blocking creature.
 destroy target attacking or blocking creature with power 3 or less.
 destroy target blocked creature.
+destroy target blocking creature.
 destroy target blue or black creature with flying.
 destroy target creature.
 destroy target creature an opponent controls. each other creature that player controls gets -2/-0 until end of turn.
@@ -2251,6 +2260,7 @@ return @ to its owner's hand: regenerate target creature.
 {r}, sacrifice a zombie: @ deals 2 damage to target creature or player.
 {r}, sacrifice @: @ deals 1 damage to each creature without flying.
 {r}, sacrifice @: @ deals 2 damage to each creature.
+{r}, sacrifice @: @ deals 2 damage to target blocking creature.
 {r}, sacrifice @: @ deals 2 damage to target creature or player.
 {r}, sacrifice @: @ deals 6 damage to each creature and each player.
 {r}, sacrifice @: @ deals damage equal to its power to target creature.
@@ -2533,6 +2543,9 @@ tap target untapped creature. it deals damage equal to its power to its controll
 tap target untapped creature. that creature deals damage equal to its power to its controller.
 tap target untapped creature you control. if you do, it deals damage equal to its power to target attacking or blocking creature an opponent controls.
 target attacking creature gets +x/+0 until end of turn.
+target blocking creature gets +3/+1 until end of turn.
+target blocking creature gets +4/+4 until end of turn.
+target blocking creature gets +7/+7 until end of turn.
 target creature can't attack or block this turn.
 target creature can't attack this turn.
 target creature can't block this turn.
@@ -2832,6 +2845,7 @@ trample
 {t}: target attacking or blocking creature gets +2/+2 until end of turn.
 {t}: target black creature gets -2/-0 until end of turn.
 {t}: target black or red creature gains haste until end of turn.
+{t}: target blocking creature gets -1/-1 until end of turn.
 {t}: target creature can't attack or block this turn.
 {t}: target creature can't block this turn.
 {t}: target creature gains flying until end of turn.
@@ -3633,6 +3647,7 @@ wither
 {w}, {t}: tap target artifact.
 {w}, {t}: tap target creature.
 {w}, {t}: tap target permanent.
+{w}, {t}: target blocking creature gets +2/+2 until end of turn.
 {w}, {t}: target creature can't block this turn.
 {w}, {t}: target creature gains first strike until end of turn.
 {w}, {t}: target player gains 1 life.
