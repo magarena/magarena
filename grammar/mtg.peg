@@ -409,6 +409,7 @@ BounceAction
 
 BounceLocation
     = "to its owner's hand"
+    / "to their owners' hands"
     / "to your hand" 
     / "to the battlefield under its owner's control" 
     / "to the battlefield" 

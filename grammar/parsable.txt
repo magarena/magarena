@@ -2269,7 +2269,16 @@ replicate {3}{u}
 replicate {r}
 replicate {u}
 replicate {u}{r}
+return all artifacts and enchantments to their owners' hands.
+return all artifacts to their owners' hands.
+return all creatures to their owners' hands.
 return all enchantment cards from your graveyard to the battlefield.
+return all green permanents to their owners' hands.
+return all islands to their owners' hands.
+return all lands to their owners' hands.
+return all nonblue creatures to their owners' hands.
+return all nonland permanents to their owners' hands.
+return all permanents to their owners' hands.
 return target artifact card from your graveyard to the battlefield.
 return target artifact card from your graveyard to your hand.
 return target artifact, enchantment, or land to its owner's hand.
@@ -3343,6 +3352,8 @@ when @ enters the battlefield, return a blue or black creature you control to it
 when @ enters the battlefield, return a creature you control to its owner's hand.
 when @ enters the battlefield, return a green or white creature you control to its owner's hand.
 when @ enters the battlefield, return a land you control to its owner's hand.
+when @ enters the battlefield, return all blue creatures your opponents control to their owners' hands.
+when @ enters the battlefield, return all other nonland permanents to their owners' hands.
 when @ enters the battlefield, return a permanent you control to its owner's hand.
 when @ enters the battlefield, return a red or green creature you control to its owner's hand.
 when @ enters the battlefield, return a red or green enchantment you control to its owner's hand.
@@ -3798,6 +3809,7 @@ when @ leaves the battlefield, put a 2/2 black zombie creature token onto the ba
 when @ leaves the battlefield, put a 3/3 green beast creature token onto the battlefield.
 when @ leaves the battlefield, put a 4/4 green elemental creature token onto the battlefield.
 when @ leaves the battlefield, put target nonland permanent on top of its owner's library.
+when @ leaves the battlefield, return the exiled cards to their owners' hands.
 when @ leaves the battlefield, return the exiled card to its owner's hand.
 when @ leaves the battlefield, return the exiled card to the battlefield under its owner's control.
 when @ leaves the battlefield, sacrifice a creature.
