@@ -241,6 +241,7 @@
 {1}, {t}: tap target artifact, creature, or land.
 {1}, {t}: tap target land.
 {1}, {t}: tap target non-human creature.
+{1}, {t}: target 1/1 creature gets +1/+2 until end of turn.
 {1}, {t}: target blinkmoth creature gets +1/+1 until end of turn.
 {1}, {t}: target creature gains first strike until end of turn.
 {1}, {t}: target creature gains flanking until end of turn.
@@ -2733,6 +2734,7 @@ target player sacrifices a permanent.
 {t}: draw a card, then discard a card.
 {t}: draw a card, then put @ on top of its owner's library.
 {t}: draw three cards.
+{t}: each 1/1 creature you control gets +1/+2 until end of turn.
 {t}: each player draws a card.
 {t}: each player draws a card, then discards a card.
 {t}: each player puts the top card of his or her library into his or her graveyard.
@@ -2846,6 +2848,7 @@ trample
 {t}: tap target creature with power 2 or less.
 {t}: tap target creature with power 3 or less.
 {t}: tap target spirit.
+{t}: target 1/1 creature gets +1/+2 until end of turn.
 {t}: target assembly-worker creature gets +1/+1 until end of turn.
 {t}: target attacking creature gets +1/+1 until end of turn.
 {t}: target attacking or blocking creature gets +1/+1 until end of turn.
