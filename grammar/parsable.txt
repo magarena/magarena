@@ -566,6 +566,7 @@
 {3}: put a 1/1 colorless sliver creature token onto the battlefield.
 {3}: put a +1/+1 counter on @.
 {3}: put an ice counter on @.
+{3}: put target card from a graveyard on the bottom of its owner's library.
 {3}{r}: @ deals 1 damage to target creature or player.
 {3}: regenerate @.
 {3}: remove an ice counter from @.
@@ -1845,6 +1846,7 @@ green creatures you control have trample.
 {g}, {t}: untap target elf.
 {g/u}: @ gains shroud until end of turn.
 {g}{u}: put @ on top of its owner's library.
+{g/u}, sacrifice @: put target card from a graveyard on the bottom of its owner's library.
 {g}{w}: @ becomes a 3/3 green and white wolf artifact creature until end of turn.
 {g/w}{g/w}: @ gets +1/+1 until end of turn.
 {g}{w}, sacrifice @: regenerate each creature you control.
@@ -2151,6 +2153,7 @@ put target artifact, creature, or enchantment on top of its owner's library.
 put target artifact or enchantment on the bottom of its owner's library.
 put target artifact or enchantment on top of its owner's library.
 put target attacking or blocking creature on top of its owner's library.
+put target card from a graveyard on top of its owner's library.
 put target creature card from a graveyard onto the battlefield under your control.
 put target creature on top of its owner's library.
 put target creature or land on top of its owner's library.
@@ -2258,6 +2261,7 @@ return target attacking creature to its owner's hand.
 return target black creature card from your graveyard to your hand.
 return target card from your graveyard to your hand.
 return target card from your graveyard to your hand. exile @.
+return target creature card from a graveyard to its owner's hand.
 return target creature card from your graveyard to the battlefield.
 return target creature card from your graveyard to the battlefield. put a +1/+1 counter on it.
 return target creature card from your graveyard to your hand.
@@ -2858,6 +2862,7 @@ totem armor
 {t}: put a devotion counter on @.
 {t}: put a fuse counter on target creature.
 {t}: put a storage counter on @.
+{t}: put target card from a graveyard on the bottom of its owner's library.
 {t}: put two 3/3 green elephant creature tokens onto the battlefield.
 trample
 {t}: regenerate target elephant.
@@ -3271,6 +3276,7 @@ when @ enters the battlefield, put four 1/1 green insect creature tokens with fl
 when @ enters the battlefield, put four 1/1 green squirrel creature tokens onto the battlefield.
 when @ enters the battlefield, put six +1/+1 counters on enchanted creature.
 when @ enters the battlefield, put target artifact on top of its owner's library.
+when @ enters the battlefield, put target card from a graveyard on the bottom of its owner's library.
 when @ enters the battlefield, put target creature on top of its owner's library.
 when @ enters the battlefield, put target red or green creature on top of its owner's library.
 when @ enters the battlefield, put three 0/1 black serf creature tokens onto the battlefield.
@@ -3404,6 +3410,7 @@ when @ enters the battlefield, you may have target opponent discard a card.
 when @ enters the battlefield, you may have target opponent sacrifice a creature.
 when @ enters the battlefield, you may pay {x}. if you do, put x 1/1 red and white goblin soldier creature tokens onto the battlefield.
 when @ enters the battlefield, you may pay {x}. if you do, target creature gets +x/+0 until end of turn.
+when @ enters the battlefield, you may put target card from a graveyard on the bottom of its owner's library.
 when @ enters the battlefield, you may return target artifact card from your graveyard to the battlefield.
 when @ enters the battlefield, you may return target artifact card from your graveyard to your hand.
 when @ enters the battlefield, you may return target artifact creature card from your graveyard to your hand.
@@ -3746,6 +3753,7 @@ when @ leaves the battlefield, put a 2/2 black zombie creature token onto the ba
 when @ leaves the battlefield, put a 3/3 green beast creature token onto the battlefield.
 when @ leaves the battlefield, put a 4/4 green elemental creature token onto the battlefield.
 when @ leaves the battlefield, put target nonland permanent on top of its owner's library.
+when @ leaves the battlefield, return the exiled card to its owner's hand.
 when @ leaves the battlefield, return the exiled card to the battlefield under its owner's control.
 when @ leaves the battlefield, sacrifice a creature.
 when @ leaves the battlefield, sacrifice a land.

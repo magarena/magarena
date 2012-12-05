@@ -404,9 +404,7 @@ PutCardAction
     ;
 
 ReturnAction
-    = "return " SelectCard " to your hand" 
-    / "return " SelectCard " to the battlefield under its owner's control" 
-    / "return " SelectCard " to the battlefield" 
+    = BounceVerb SPACE SelectCard SPACE BounceLocation
     ;
 
 BounceAction
@@ -415,6 +413,9 @@ BounceAction
 
 BounceLocation
     = "to its owner's hand"
+    / "to your hand" 
+    / "to the battlefield under its owner's control" 
+    / "to the battlefield" 
     / "on top of its owner's library"
     / "on the bottom of its owner's library"
     ;
