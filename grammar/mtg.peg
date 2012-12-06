@@ -35,6 +35,7 @@ AbilityWord
     = "metalcraft"
     / "landfall"
     / "threshold"
+    / "hellbent"
     ;
 
 KeywordAbility
@@ -272,6 +273,7 @@ AttacksTrigger
 AbilityRestriction
     = "activate this ability only any time you could cast a sorcery"
     / "activate this ability only if seven or more cards are in your graveyard"
+    / "activate this ability only if you have no cards in hand"
     ;
 
 AnimateAction
