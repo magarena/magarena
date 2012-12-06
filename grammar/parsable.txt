@@ -1939,6 +1939,10 @@ green creatures you control have trample.
 haste
 hellbent — {1}, pay 2 life: draw a card. activate this ability only if you have no cards in hand.
 hellbent — {1}{r}, {t}: @ deals 1 damage to target creature or player. activate this ability only if you have no cards in hand.
+hellbent — @ gets +2/+1 as long as you have no cards in hand.
+hellbent — @ gets +2/+2 as long as you have no cards in hand.
+hellbent — @ has double strike as long as you have no cards in hand.
+hellbent — @ has shadow as long as you have no cards in hand.
 hellbent — {t}, sacrifice a creature or land: draw a card. activate this ability only if you have no cards in hand.
 hexproof
 if damage would be dealt to @, prevent that damage. remove a +1/+1 counter from @.

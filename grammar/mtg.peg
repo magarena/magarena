@@ -629,6 +629,7 @@ Duration
     / "for as long as " SelectPlayer " control @"
     / "as long as you control three or more artifacts"
     / "as long as seven or more cards are in your graveyard"
+    / "as long as you have no cards in hand"
     / "this turn"
     / "at the beginning of the next turn's upkeep"
     / "at the beginning of the next end step"
