@@ -36,6 +36,7 @@ AbilityWord
     / "landfall"
     / "threshold"
     / "hellbent"
+    / "morbid"
     ;
 
 KeywordAbility
@@ -52,7 +53,7 @@ ActivationCosts
     ;
 
 TriggeredAbility
-    = Trigger SEP SpellEffect
+    = Trigger (SEP IfCondition)? SEP SpellEffect
     ;
 
 AdditionalCost
@@ -274,6 +275,10 @@ AbilityRestriction
     = "activate this ability only any time you could cast a sorcery"
     / "activate this ability only if seven or more cards are in your graveyard"
     / "activate this ability only if you have no cards in hand"
+    ;
+
+IfCondition
+    = "if a creature died this turn"
     ;
 
 AnimateAction

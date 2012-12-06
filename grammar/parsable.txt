@@ -2075,6 +2075,10 @@ modular 2
 modular 3
 modular 4
 modular 6
+morbid — when @ enters the battlefield, if a creature died this turn, put a 2/2 black zombie creature token onto the battlefield.
+morbid — when @ enters the battlefield, if a creature died this turn, put two +1/+1 counters on target creature.
+morbid — when @ enters the battlefield, if a creature died this turn, target creature gets -4/-4 until end of turn.
+morbid — when @ enters the battlefield, if a creature died this turn, you gain 5 life.
 mountainwalk
 multikicker {1}
 multikicker {1}{b}
