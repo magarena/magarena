@@ -173,7 +173,9 @@
 {1}{r}, {t}, remove two pressure counters from @ and sacrifice it: put a 4/4 red hellion creature token with haste onto the battlefield.
 {1}{r}, {t}: target dwarf creature gains mountainwalk until end of turn.
 {1}{r}, {t}: target goblin creature gets +2/+0 until end of turn.
+{1}{r}, {t}: you may put an elemental creature card from your hand onto the battlefield. that creature gains haste until end of turn. sacrifice it at the beginning of the next end step.
 {1}, sacrifice a creature: @ deals 1 damage to target creature or player.
+{1}, sacrifice a creature: exile @. return it to the battlefield under its owner's control at the beginning of the next end step.
 {1}, sacrifice a creature: put a +1/+1 counter on @.
 {1}, sacrifice a creature: put a +1/+1 counter on target creature.
 {1}, sacrifice a creature: you gain 2 life.
@@ -384,6 +386,7 @@
 {2}: @ gains mountainwalk until end of turn.
 {2}: @ gains trample until end of turn.
 {2}: @ gets +1/+0 until end of turn.
+{2}: @ gets +1/+1 until end of turn. sacrifice it at the beginning of the next end step.
 {2}{g}{g}{g}: @ becomes a 5/3 green treefolk artifact creature with trample until end of turn.
 {2}{g}{g}{g}: creatures you control get +3/+3 and gain trample until end of turn.
 {2}{g}{g}{g}: elf creatures you control get +3/+3 and gain trample until end of turn.
@@ -405,6 +408,7 @@
 {2}, pay 2 life: draw a card.
 {2}: prevent all combat damage that would be dealt to and dealt by target creature you control this turn.
 {2}: prevent the next 1 damage that would be dealt by @ this turn.
+{2}: prevent the next 1 damage that would be dealt to target creature or player this turn. return @ to its owner's hand at the beginning of the next end step.
 {2}: prevent the next 1 damage that would be dealt to you this turn.
 {2}: put a 1/1 colorless sliver creature token onto the battlefield.
 {2}: put a charge counter on @.
@@ -444,6 +448,7 @@
 {2}, sacrifice @: @ deals 2 damage to each attacking creature without flying.
 {2}, sacrifice @: @ deals damage equal to the number of charge counters on it to target creature or player.
 {2}, sacrifice @: draw a card.
+{2}, sacrifice @: exile target creature. return the exiled card to the battlefield under its owner's control at the beginning of the next end step.
 {2}, sacrifice @: target player draws a card.
 {2}, {t}: add {b} or {g} to your mana pool.
 {2}, {t}: add {g} or {u} to your mana pool.
@@ -537,6 +542,7 @@
 {2}{w}, {t}: put a trap counter on target land you control.
 {2}{w}, {t}, sacrifice @: destroy all enchantments.
 {2}{w}, {t}, sacrifice @: destroy target artifact or enchantment.
+{2}{w}{u}: exile target creature. return that card to the battlefield under its owner's control at the beginning of the next end step.
 {2}{w}{u}: put a +1/+1 counter on @.
 {2}: you gain 1 life.
 {3}{b}{b}: gain control of target vampire for as long as you control @.
@@ -579,6 +585,7 @@
 {3}, return a land you control to its owner's hand: target creature you control gains shroud until end of turn.
 {3}: return target creature card from your graveyard to your hand.
 {3}: return @ to its owner's hand.
+{3}{r}: put a 2/1 red goblin creature token with haste onto the battlefield. exile it at the beginning of the next end step.
 {3}{r}, remove a +1/+1 counter from @: destroy target artifact or land.
 {3}{r}{r}: return @ from your graveyard to your hand.
 {3}{r}, sacrifice a land: @ deals 2 damage to target player.
@@ -616,10 +623,13 @@
 {3}, {t}: target creature gains first strike until end of turn.
 {3}, {t}: target creature gains trample until end of turn.
 {3}, {t}: target creature gets -2/-0 until end of turn.
+{3}, {t}: target creature you control gets +2/+2 until end of turn. return it to its owner's hand at the beginning of the next end step.
+{3}, {t}: target creature you control gets +3/+3 until end of turn. its controller sacrifices it at the beginning of the next end step.
 {3}, {t}: untap target artifact.
 {3}, {t}: untap target creature.
 {3}{u}: all other creatures lose flying until end of turn.
 {3}{u}: draw a card.
+{3}{u}, exile @: you may put a creature card from your hand onto the battlefield. if you do, that creature gains haste until end of turn. at the beginning of the next end step, sacrifice that creature. if you do, return @ to the battlefield.
 {3}{u}: gain control of target artifact.
 {3}{u}: @ gains flying until end of turn.
 {3}: untap @.
@@ -956,6 +966,7 @@ at the beginning of your upkeep, you may remove a vitality counter from @. if yo
 at the beginning of your upkeep, you may return @ from your graveyard to your hand.
 at the beginning of your upkeep, you may return target artifact card from your graveyard to the battlefield.
 at the beginning of your upkeep, you may return target creature card from your graveyard to the battlefield.
+at the beginning of your upkeep, you may return target creature card from your graveyard to the battlefield. that creature gains haste until end of turn. exile it at the beginning of the next end step.
 at the beginning of your upkeep, you may sacrifice an artifact. if you don't, tap @ and it deals 2 damage to you.
 at the beginning of your upkeep, you may sacrifice a nonartifact creature. if you do, put a +1/+1 counter on @. if you don't, tap @.
 at the beginning of your upkeep, you may untap target creature and gain control of it until end of turn. that creature gains haste until end of turn.
@@ -1057,6 +1068,7 @@ blue creatures get +1/+1.
 {b}, {t}: exile target instant or sorcery card from a graveyard. each opponent loses 2 life.
 {b}, {t}, sacrifice an artifact: draw a card.
 {b}, {t}, sacrifice @: return target creature card from your graveyard to the battlefield.
+{b}, {t}, sacrifice @: return target creature card from your graveyard to the battlefield. that creature gains haste. at the beginning of the next end step, sacrifice it.
 {b}, {t}: tap target creature.
 {b}, {t}: target creature gets +1/+0 until end of turn.
 {b}, {t}: target creature gets -1/-1 until end of turn.
@@ -1739,6 +1751,7 @@ exile @.
 exile all creatures.
 exile target artifact or enchantment.
 exile target attacking creature.
+exile target attacking creature. put a token that's a copy of that creature onto the battlefield. exile it at the beginning of the next end step.
 exile target attacking or blocking creature.
 exile target black or red permanent.
 exile target card from a graveyard.
@@ -1746,7 +1759,9 @@ exile target card from a graveyard. put a 1/1 white and black spirit creature to
 exile target card from a graveyard. you gain 3 life.
 exile target creature.
 exile target creature or enchantment.
+exile target creature. return that card to the battlefield under its owner's control at the beginning of the next end step.
 exile target creature with power 2 or less. its controller gains 4 life.
+exile target creature you control. return that card to the battlefield under its owner's control at the beginning of the next end step.
 exile target creature you control, then return it to the battlefield under its owner's control.
 exile target enchantment.
 exile target land.
@@ -1765,6 +1780,7 @@ forestwalk
 {g}: add one mana of any color to your mana pool.
 gain control of target artifact until end of turn. untap that artifact. it gains haste until end of turn.
 gain control of target creature an opponent controls until end of turn. untap that creature. it gains haste until end of turn.
+gain control of target creature. untap that creature. it gains haste until end of turn. sacrifice it at the beginning of the next end step.
 gain control of target creature until end of turn. put a +1/+1 counter on it and untap it. that creature gains haste until end of turn.
 gain control of target creature until end of turn. untap that creature. it gains haste until end of turn.
 gain control of target creature until end of turn. untap that creature. it gets +x/+0 and gains haste until end of turn.
@@ -2146,12 +2162,16 @@ put a 1/1 green squirrel creature token onto the battlefield.
 put a 1/1 white pegasus creature token with flying onto the battlefield.
 put a 2/2 black zombie creature token onto the battlefield.
 put a 2/5 green treefolk shaman creature token onto the battlefield.
+put a 3/3 blue weird creature token with defender and flying onto the battlefield. exile it at the beginning of the next end step.
 put a 3/3 green beast creature token onto the battlefield.
 put a 3/3 green centaur creature token onto the battlefield.
 put a 3/3 green elephant creature token onto the battlefield.
 put a 4/4 green beast creature token onto the battlefield.
+put a 4/4 red and green giant warrior creature token with haste onto the battlefield. exile it at the beginning of the next end step.
 put a 4/4 red giant creature token onto the battlefield.
+put a 4/4 white angel creature token with flying onto the battlefield. exile it at the beginning of the next end step.
 put a 5/5 blue and red elemental creature token with flying onto the battlefield.
+put a 5/5 blue wall creature token with defender onto the battlefield. sacrifice it at the beginning of the next end step.
 put a 6/6 green wurm creature token onto the battlefield.
 put a card from your hand on top of your library: return @ to its owner's hand.
 put an x/x green ooze creature token onto the battlefield.
@@ -2249,6 +2269,7 @@ remove three charge counters from @: draw a card.
 remove three charge counters from @: put a 3/3 colorless golem artifact creature token onto the battlefield.
 remove three quest counters from @ and sacrifice it: draw two cards.
 remove three quest counters from @ and sacrifice it: put a 5/5 black zombie giant creature token onto the battlefield.
+remove three quest counters from @ and sacrifice it: put a 7/1 red elemental creature token with trample and haste onto the battlefield. exile it at the beginning of the next end step.
 remove three quest counters from @ and sacrifice it: you gain 8 life.
 remove three spore counters from @: @ deals 1 damage to target creature or player.
 remove three spore counters from @: prevent all combat damage that would be dealt this turn.
@@ -2290,9 +2311,12 @@ return target card from your graveyard to your hand. exile @.
 return target creature card from a graveyard to its owner's hand.
 return target creature card from your graveyard to the battlefield.
 return target creature card from your graveyard to the battlefield. put a +1/+1 counter on it.
+return target creature card from your graveyard to the battlefield. sacrifice that creature at the beginning of the next end step.
+return target creature card from your graveyard to the battlefield. that creature gains haste. return it to your hand at the beginning of the next end step.
 return target creature card from your graveyard to your hand.
 return target creature card from your graveyard to your hand. target player sacrifices a creature.
 return target creature card with converted mana cost 3 or less from your graveyard to the battlefield.
+return target creature card with converted mana cost x from your graveyard to the battlefield. it gains haste. exile it at the beginning of the next end step.
 return target creature card with converted mana cost x or less from your graveyard to the battlefield.
 return target creature to its owner's hand.
 return target creature to its owner's hand. its controller draws a card.
@@ -2300,6 +2324,7 @@ return target creature to its owner's hand. its controller loses 1 life.
 return target creature to its owner's hand. you gain 2 life.
 return target green card from your graveyard to your hand.
 return target instant or sorcery card from your graveyard to your hand.
+return target legendary creature card from your graveyard to the battlefield. that creature gains haste. exile it at the beginning of the next end step.
 return target multicolored card from your graveyard to your hand.
 return target nonland permanent to its owner's hand.
 return target nonland permanent with converted mana cost x to its owner's hand.
@@ -2317,6 +2342,7 @@ return @ to its owner's hand: regenerate target creature.
 {r}{g}: each blocked creature gets +1/+0 and gains trample until end of turn.
 {r}: @ gets +0/+1 until end of turn.
 {r}: @ gets +1/+0 until end of turn.
+{r}: @ gets +1/+0 until end of turn. sacrifice @ at the beginning of the next end step.
 {r}: @ gets +1/-1 until end of turn.
 {r}: @ gets +1/+1 until end of turn.
 {r}: @ gets +2/-2 until end of turn.
@@ -2383,6 +2409,7 @@ return @ to its owner's hand: regenerate target creature.
 {r}{w}: @ gets +1/+1 until end of turn.
 {r/w}: red creatures and white creatures you control gain first strike until end of turn.
 {r}{w}, {t}: @ deals 2 damage to target attacking or blocking creature.
+{r}: you may put a creature card from your hand onto the battlefield. that creature gains haste. sacrifice the creature at the beginning of the next end step.
 sacrifice a bat: regenerate @.
 sacrifice a beast: you gain 4 life.
 sacrifice a creature: add one mana of any color to your mana pool.
@@ -2631,6 +2658,7 @@ tap target untapped creature. it deals damage equal to its power to its controll
 tap target untapped creature. that creature deals damage equal to its power to its controller.
 tap target untapped creature you control. if you do, it deals damage equal to its power to target attacking or blocking creature an opponent controls.
 target attacking creature gets +x/+0 until end of turn.
+target attacking or blocking creature gets +4/+0 until end of turn. destroy that creature at the beginning of the next end step.
 target blocking creature gets +3/+1 until end of turn.
 target blocking creature gets +4/+4 until end of turn.
 target blocking creature gets +7/+7 until end of turn.
@@ -2998,6 +3026,8 @@ trample
 {t}: target creature with flying gets -1/-1 until end of turn.
 {t}: target creature with power 2 or less is unblockable this turn.
 {t}: target creature with power 5 or greater gains haste until end of turn.
+{t}: target creature you control gets +1/+0 and gains flying until end of turn. destroy that creature at the beginning of the next end step.
+{t}: target goblin creature you control gets +1/+0 and gains flying until end of turn. sacrifice that creature at the beginning of the next end step.
 {t}: target legendary creature gets +2/+2 until end of turn.
 {t}: target merfolk creature gets +1/+1 and gains islandwalk until end of turn.
 {t}: target merfolk creature is unblockable this turn.
@@ -3103,6 +3133,7 @@ until end of turn, target creature you control gets +3/+3 and other creatures yo
 {u}: untap enchanted creature.
 {u}{u}, sacrifice a wizard: counter target spell.
 {u}{u}: tap target creature without flying.
+{u}{u}: target creature you control gains flying until end of turn. sacrifice it at the beginning of the next end step.
 {u}{u}, {t}, discard a card: counter target creature spell.
 {u}{u}, {t}, discard a card: counter target noncreature spell.
 {u}{u}, {t}: gain control of target legendary permanent.
@@ -3181,6 +3212,7 @@ when @ dies, put a 2/4 black spider creature token with reach onto the battlefie
 when @ dies, put a 3/3 black kavu creature token onto the battlefield.
 when @ dies, put a 3/3 green boar creature token onto the battlefield.
 when @ dies, put a 3/3 white bird creature token with flying onto the battlefield.
+when @ dies, put a 4/4 red bird creature token with flying onto the battlefield at the beginning of the next end step.
 when @ dies, put a 6/6 black wurm creature token with trample onto the battlefield.
 when @ dies, put four 1/1 green insect creature tokens onto the battlefield.
 when @ dies, put it on top of its owner's library.
@@ -3263,8 +3295,10 @@ when @ enters the battlefield, exile a land you control.
 when @ enters the battlefield, exile all cards from your hand.
 when @ enters the battlefield, exile all lands.
 when @ enters the battlefield, exile all other permanents you control.
+when @ enters the battlefield, exile all zombies, then return all human creature cards from your graveyard to the battlefield.
 when @ enters the battlefield, exile another target creature with shadow.
 when @ enters the battlefield, exile another target nonland permanent.
+when @ enters the battlefield, exile another target permanent. return that card to the battlefield under its owner's control at the beginning of the next end step.
 when @ enters the battlefield, exile target black permanent.
 when @ enters the battlefield, exile target card from a graveyard.
 when @ enters the battlefield, exile target creature.
@@ -3562,6 +3596,7 @@ whenever @ attacks, each opponent loses 2 life.
 whenever @ attacks, each other attacking creature gains fear until end of turn.
 whenever @ attacks, each other attacking creature gets +1/+0 until end of turn.
 whenever @ attacks, each other creature you control gets +1/+0 until end of turn.
+whenever @ attacks, exile another target creature. return that card to the battlefield under its owner's control at the beginning of the next end step.
 whenever @ attacks, goblin creatures you control get +1/+1 until end of turn.
 whenever @ attacks, human creatures you control get +1/+0 until end of turn.
 whenever @ attacks, it doesn't untap during its controller's next untap step.
@@ -3769,6 +3804,7 @@ whenever you cast a spirit or arcane spell, target opponent loses 1 life and you
 whenever you cast a spirit or arcane spell, untap @.
 whenever you cast a spirit or arcane spell, you may destroy target nonbasic land.
 whenever you cast a spirit or arcane spell, you may draw a card.
+whenever you cast a spirit or arcane spell, you may exile @. if you do, return it to the battlefield under its owner's control at the beginning of the next end step.
 whenever you cast a spirit or arcane spell, you may put a ki counter on @.
 whenever you cast a spirit or arcane spell, you may return @ to its owner's hand.
 whenever you cast a spirit or arcane spell, you may sacrifice @. if you do, draw a card.
@@ -3851,6 +3887,7 @@ wither
 {w}, sacrifice @: prevent the next 1 damage that would be dealt to each creature you control this turn.
 {w}, sacrifice @: prevent the next 2 damage that would be dealt to target creature or player this turn.
 {w}, sacrifice @: prevent the next 3 damage that would be dealt to target creature or player this turn.
+{w}, sacrifice @: put a 1/1 white spirit creature token with flying onto the battlefield at the beginning of the next end step.
 {w}, sacrifice @: return target artifact card from your graveyard to your hand.
 {w}, sacrifice @: you gain 3 life.
 {w}, sacrifice @: you gain 5 life.
@@ -3917,6 +3954,7 @@ wither
 {x}, {t}, remove x charge counters from @: @ deals x damage to target creature or player.
 {x}, {t}: target creature gets -x/+x until end of turn.
 {x}, {t}: target creature with power x or less is unblockable this turn.
+{x}, {t}: target creature you control gets +x/+x until end of turn. destroy it at the beginning of the next end step.
 {x}, {t}: target player puts the top x cards of his or her library into his or her graveyard.
 {x}, {t}: you gain x life.
 {x}{u}{u}, {t}: return target creature with converted mana cost x to its owner's hand.
@@ -3952,7 +3990,10 @@ you gain x life.
 you gain x life and draw x cards.
 you have hexproof.
 you have shroud.
+you may put a creature card from your hand onto the battlefield. that creature gains haste. its controller sacrifices it at the beginning of the next end step.
+you may put a creature card from your hand onto the battlefield. that creature gains haste. sacrifice that creature at the beginning of the next end step.
 you may put a green creature card from your hand onto the battlefield.
+you may put a nonwhite creature card from your hand onto the battlefield. at the beginning of the next end step, return that creature to your hand.
 you may tap or untap target artifact, creature, or land.
 you may tap or untap target creature.
 you may tap or untap target permanent.

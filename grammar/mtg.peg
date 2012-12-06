@@ -614,6 +614,7 @@ Duration
     / "as long as seven or more cards are in your graveyard"
     / "this turn"
     / "at the beginning of the next turn's upkeep"
+    / "at the beginning of the next end step"
     ;
 
 GainAction
@@ -789,6 +790,7 @@ CardRestriction
     / "basic land"
     / "land"
     / SpellRestriction
+    / RestrictedCreature
     ;
 
 RestrictedCreature
