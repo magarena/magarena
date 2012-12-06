@@ -831,6 +831,7 @@ attacking creatures you control get +1/+0.
 attacking creatures you control get +2/+0.
 attacking creatures you control have lifelink.
 @ attacks each turn if able.
+at the beginning of each end step, if a creature died this turn, put a carrion counter on @.
 at the beginning of each player's upkeep, @ deals 1 damage to that player.
 at the beginning of each player's upkeep, @ deals 2 damage to that player.
 at the beginning of each player's upkeep, @ deals damage to that player equal to the number of artifacts he or she controls.
@@ -2075,6 +2076,7 @@ modular 2
 modular 3
 modular 4
 modular 6
+morbid — at the beginning of each end step, if a creature died this turn, destroy target non-demon creature.
 morbid — when @ enters the battlefield, if a creature died this turn, put a 2/2 black zombie creature token onto the battlefield.
 morbid — when @ enters the battlefield, if a creature died this turn, put two +1/+1 counters on target creature.
 morbid — when @ enters the battlefield, if a creature died this turn, target creature gets -4/-4 until end of turn.

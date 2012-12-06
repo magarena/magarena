@@ -244,6 +244,7 @@ EntersBattlefieldTrigger
 
 BeginningEndStepTrigger
     = "at the beginning of the end step"
+    / "at the beginning of each end step"
     ;
 
 BeginningUpkeepTrigger
