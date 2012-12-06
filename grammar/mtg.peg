@@ -168,6 +168,8 @@ Keyword
     / "replicate" SPACE ManaCost
     / "miracle" SPACE ManaCost
     / "level up" SPACE ManaCost
+    / "level" SPACE Number "-" Number
+    / "level" SPACE Number "+"
     ;
 
 ColorlessCost
