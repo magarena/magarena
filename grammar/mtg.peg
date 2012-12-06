@@ -436,9 +436,13 @@ PreventAction
     ;
 
 DamageRestriction
-    = "to" SPACE DamageReceiver
-    / "by" SPACE DamageReceiver 
-    / "to and dealt by " DamageReceiver
+    = DamageVerb SPACE DamageReceiver (SPACE "this turn by" SPACE DamageReceiver)?
+    ;
+
+DamageVerb
+    = "to and dealt by"
+    / "to"
+    / "by"
     ;
 
 Damage
