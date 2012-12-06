@@ -256,10 +256,10 @@ DealsDamageTrigger
 
 DamageReceiver
     = "itself"
-    / SelectPlayer
+    / SelectPlayer &(SEP SingleEffect)
+    / SelectPlayer (SEP SelectCreature)?
     / SelectCreature &(SEP SingleEffect)
-    / SelectCreature SEP SelectPlayer
-    / SelectCreature
+    / SelectCreature (SEP SelectPlayer)?
     ;
 
 AttacksTrigger
