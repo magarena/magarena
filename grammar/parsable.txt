@@ -378,6 +378,7 @@
 -2: destroy target tapped creature.
 {2}: discard a card.
 {2}, discard a card at random: @ deals 2 damage to target creature or player.
+{2}, discard a card: put a +1/+1 counter on @ or @ gains flying, first strike, or trample.
 {2}, discard a card: put a 1/1 white pegasus creature token with flying onto the battlefield.
 +2: each player draws a card.
 {2}: enchanted forest becomes a 4/4 green spirit creature until end of turn. it's still a land.
@@ -533,6 +534,7 @@
 {2}{u}: untap target artifact.
 {2}{u}{u}: return @ to its owner's hand.
 {2}{u}{u}, {t}: counter target spell.
+{2}{w}{b}, {t}: creatures you control gain deathtouch and lifelink until end of turn.
 {2}{w}: creatures you control get +1/+1 until end of turn.
 {2}{w}, discard a card: @ gets +1/+2 until end of turn.
 {2}{w}: @ gains first strike until end of turn.
@@ -604,6 +606,7 @@
 {3}, sacrifice @: regenerate target creature.
 {3}: target blue creature gains shroud until end of turn.
 {3}: target creature doesn't untap during its controller's next untap step.
+-3: target creature gains flying and double strike until end of turn.
 {3}: target creature gets +3/+3 until end of turn.
 {3}: target green creature gets +1/+1 until end of turn.
 {3}: target player puts the top three cards of his or her library into his or her graveyard.
@@ -761,6 +764,7 @@ all creatures have protection from red.
 all creatures have vigilance.
 all creatures have wither.
 all creatures lose flying.
+all creatures lose flying and islandwalk.
 all creatures lose flying until end of turn.
 all lands are indestructible.
 all sliver creatures get +0/+1.
@@ -780,6 +784,11 @@ all sliver creatures have shadow.
 all sliver creatures have trample.
 all sliver creatures have vigilance.
 all slivers have shroud.
+annihilator 1
+annihilator 2
+annihilator 3
+annihilator 4
+annihilator 6
 artifact creatures you control gain flying until end of turn.
 artifact creatures you control get +2/+2.
 artifacts and enchantments you control have shroud.
@@ -1194,6 +1203,7 @@ creatures you control get +3/+3 and gain trample until end of turn.
 creatures you control get +3/+3 until end of turn.
 creatures you control get +7/+7 until end of turn.
 creatures you control have double strike.
+creatures you control have double strike and lifelink.
 creatures you control have exalted.
 creatures you control have fear.
 creatures you control have first strike.
@@ -1452,6 +1462,7 @@ devour 1
 devour 2
 devour 3
 discard a card: add {b} to your mana pool.
+discard a card at random: @ gains first strike and haste until end of turn.
 discard a card at random: @ gains protection from white until end of turn.
 discard a card at random: @ gets +1/+0 and gains first strike until end of turn.
 discard a card: @ gains first strike until end of turn.
@@ -1554,8 +1565,10 @@ enchanted creature gets +0/+3 and has reach.
 enchanted creature gets +0/+4.
 enchanted creature gets -1/-0.
 enchanted creature gets +1/+0.
+enchanted creature gets +10/+10 and has trample and annihilator 2.
 enchanted creature gets +1/+0 and has fear.
 enchanted creature gets +1/+0 and has first strike.
+enchanted creature gets +1/+0 and has flying and first strike.
 enchanted creature gets +1/+0 and has trample.
 enchanted creature gets -1/-1.
 enchanted creature gets -1/+1.
@@ -1596,6 +1609,8 @@ enchanted creature gets +2/+2 and attacks each turn if able.
 enchanted creature gets +2/+2 and can't attack.
 enchanted creature gets +2/+2 and can't block.
 enchanted creature gets +2/+2 and has flying.
+enchanted creature gets +2/+2 and has flying and shroud.
+enchanted creature gets +2/+2 and has flying and vigilance.
 enchanted creature gets +2/+2 and has haste.
 enchanted creature gets +2/+2 and has lifelink.
 enchanted creature gets +2/+2 and has mountainwalk.
@@ -1609,6 +1624,7 @@ enchanted creature gets +3/+1.
 enchanted creature gets +3/+2.
 enchanted creature gets +3/-3.
 enchanted creature gets +3/+3.
+enchanted creature gets +3/+3 and has first strike, vigilance, and lifelink.
 enchanted creature gets +3/+3 and has flying.
 enchanted creature gets +3/+3 and has trample.
 enchanted creature gets +3/+3 and has vigilance.
@@ -1618,10 +1634,13 @@ enchanted creature gets +5/+5 and has trample.
 enchanted creature gets +6/+6.
 enchanted creature gets +8/+8 and has trample.
 enchanted creature has defender.
+enchanted creature has defender and flying.
 enchanted creature has double strike.
 enchanted creature has fear.
 enchanted creature has first strike.
+enchanted creature has first strike and trample.
 enchanted creature has flying.
+enchanted creature has flying, first strike, and vigilance.
 enchanted creature has forestwalk.
 enchanted creature has haste.
 enchanted creature has infect.
@@ -1734,6 +1753,7 @@ equipped creature gets +1/+2 and has hexproof.
 equipped creature gets +1/+5.
 equipped creature gets +2/+0.
 equipped creature gets +2/+0 and has first strike.
+equipped creature gets +2/+0 and has first strike, vigilance, trample, and haste.
 equipped creature gets +2/+0 and has shroud.
 equipped creature gets +2/+1.
 equipped creature gets +2/+1 and has haste.
@@ -1741,11 +1761,13 @@ equipped creature gets +2/+2.
 equipped creature gets +2/+2 and can't block.
 equipped creature gets +2/+2 and has flying.
 equipped creature gets +2/+2 and has infect.
+equipped creature gets +2/+2 and has lifelink and trample.
 equipped creature gets +2/+4 and has reach.
 equipped creature gets +2/+4 and loses flying.
 equipped creature gets +3/+0.
 equipped creature gets +3/+0 and attacks each turn if able.
 equipped creature gets +3/+0 and has trample.
+equipped creature gets +3/+0 and has trample and lifelink.
 equipped creature gets +3/+1.
 equipped creature gets +3/+1 and has haste.
 equipped creature gets +3/+2.
@@ -1754,15 +1776,22 @@ equipped creature gets +3/+3 and has first strike.
 equipped creature gets +4/+0.
 equipped creature gets +4/-1.
 equipped creature gets +4/+2.
+equipped creature gets +4/+4 and has vigilance and lifelink.
 equipped creature gets +5/+0.
 equipped creature gets +5/+5.
 equipped creature gets +6/+6.
 equipped creature has deathtouch.
+equipped creature has deathtouch and lifelink.
+equipped creature has defender, flying, and first strike.
 equipped creature has double strike.
 equipped creature has fear.
 equipped creature has first strike.
+equipped creature has first strike, trample, and haste.
 equipped creature has flying.
+equipped creature has flying and first strike.
 equipped creature has haste.
+equipped creature has haste and shroud.
+equipped creature has hexproof and haste.
 equipped creature has intimidate.
 equipped creature has shroud.
 equipped creature has trample.
@@ -1807,6 +1836,7 @@ gain control of target artifact until end of turn. untap that artifact. it gains
 gain control of target creature an opponent controls until end of turn. untap that creature. it gains haste until end of turn.
 gain control of target creature. untap that creature. it gains haste until end of turn. sacrifice it at the beginning of the next end step.
 gain control of target creature until end of turn. put a +1/+1 counter on it and untap it. that creature gains haste until end of turn.
+gain control of target creature until end of turn. untap it. it gains trample and haste until end of turn.
 gain control of target creature until end of turn. untap that creature. it gains haste until end of turn.
 gain control of target creature until end of turn. untap that creature. it gets +x/+0 and gains haste until end of turn.
 gain control of target creature until end of turn. untap that creature. until end of turn, it gets +2/+0 and gains haste.
@@ -2439,6 +2469,7 @@ return @ to its owner's hand: regenerate target creature.
 {r}{w}: @ gets +1/+1 until end of turn.
 {r/w}: red creatures and white creatures you control gain first strike until end of turn.
 {r}{w}, {t}: @ deals 2 damage to target attacking or blocking creature.
+{r}{w}, {t}: target creature gets +2/+0 and gains vigilance and haste until end of turn.
 {r}: you may put a creature card from your hand onto the battlefield. that creature gains haste. sacrifice the creature at the beginning of the next end step.
 sacrifice a bat: regenerate @.
 sacrifice a beast: you gain 4 life.
@@ -2714,10 +2745,12 @@ target creature gains undying until end of turn.
 target creature gets -0/-3 until end of turn.
 target creature gets +0/+4 until end of turn.
 target creature gets +1/+0 and gains first strike until end of turn.
+target creature gets +1/+0 and gains flying and first strike until end of turn.
 target creature gets +1/+0 and gains infect until end of turn.
 target creature gets -1/-0 until end of turn.
 target creature gets +1/+0 until end of turn and is unblockable this turn.
 target creature gets +1/+1 and gains first strike until end of turn.
+target creature gets +1/+1 and gains flying and first strike until end of turn.
 target creature gets +1/-1 and gains haste until end of turn.
 target creature gets +1/+1 and gains reach until end of turn.
 target creature gets +1/+1 and gains trample until end of turn.
@@ -3048,12 +3081,14 @@ trample
 {t}: target creature gets +0/+4 until end of turn.
 {t}: target creature gets -1/-0 until end of turn.
 {t}: target creature gets +1/+0 until end of turn.
+{t}: target creature gets +1/+1 and gains flying, first strike, and trample until end of turn.
 {t}: target creature gets -1/-1 until end of turn.
 {t}: target creature gets +1/+1 until end of turn.
 {t}: target creature gets +1/+2 until end of turn.
 {t}: target creature gets -2/-0 until end of turn.
 {t}: target creature gets +3/-2 until end of turn.
 {t}: target creature is unblockable this turn.
+{t}: target creature loses first strike or swampwalk until end of turn.
 {t}: target creature loses flying until end of turn.
 {t}: target creature loses forestwalk until end of turn.
 {t}: target creature with flying gets -1/-1 until end of turn.
@@ -3122,6 +3157,9 @@ untap target creature. it gets +3/+3 until end of turn.
 untap target permanent.
 untap target permanent and gain control of it until end of turn. it gains haste until end of turn.
 until end of turn, creatures you control get +1/+1 and creatures your opponents control get -1/-1.
+until end of turn, creatures you control get +1/+1 and gain trample and infect.
+until end of turn, creatures you control get +5/+5 and gain first strike, lifelink, and trample.
+until end of turn, target creature gets +1/+0 and gains first strike and lifelink.
 until end of turn, target creature you control gets +3/+3 and other creatures you control get +1/+1.
 {u}: prevent all combat damage that would be dealt to and dealt by @ this turn.
 {u}: put @ on top of its owner's library.
@@ -3182,6 +3220,7 @@ vanishing 3
 vanishing 4
 vigilance
 {w}: @ becomes a 2/2 bird artifact creature with flying until end of turn.
+{w}{b}: @ gains fear and vigilance until end of turn.
 {w/b}: @ gains first strike until end of turn.
 {w/b}: @ gains flying until end of turn.
 {w}{b}, {t}: prevent all combat damage that would be dealt by target creature this turn.
@@ -3619,6 +3658,7 @@ whenever @ attacks, all attacking creatures with flanking get +1/+1 until end of
 whenever @ attacks, all other creatures you control get +1/+1 until end of turn.
 whenever @ attacks, another target attacking creature gets +0/+2 until end of turn. untap that creature.
 whenever @ attacks, attacking creatures gain first strike until end of turn.
+whenever @ attacks, attacking creatures gain flying and lifelink until end of turn.
 whenever @ attacks, attacking creatures gain trample until end of turn.
 whenever @ attacks, attacking creatures get +1/+1 until end of turn.
 whenever @ attacks, attacking red creatures get +2/+0 and attacking white creatures get +0/+2 until end of turn.
