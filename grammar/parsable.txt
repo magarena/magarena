@@ -28,6 +28,7 @@
 {1}{b}: @ gets +1/+1 until end of turn.
 {1}{b}: @ gets +2/+2 until end of turn.
 {1}{b}{g}: put a plague counter on @ or remove a plague counter from it.
+{1}{b/g}: regenerate @.
 {1}{b}{g}: regenerate @.
 {1}{b}{g}: target creature gets +1/+1 and gains intimidate until end of turn.
 {1}{b}{g}, {t}: target forest becomes a 4/4 black and green elemental horror creature. it's still a land.
@@ -174,6 +175,7 @@
 {1}{r}, {t}: target dwarf creature gains mountainwalk until end of turn.
 {1}{r}, {t}: target goblin creature gets +2/+0 until end of turn.
 {1}{r}, {t}: you may put an elemental creature card from your hand onto the battlefield. that creature gains haste until end of turn. sacrifice it at the beginning of the next end step.
+{1}{r/w}, {q}: attacking creatures get +1/+0 until end of turn.
 {1}, sacrifice a creature: @ deals 1 damage to target creature or player.
 {1}, sacrifice a creature: exile @. return it to the battlefield under its owner's control at the beginning of the next end step.
 {1}, sacrifice a creature: put a +1/+1 counter on @.
@@ -260,6 +262,7 @@
 {1}, {t}: you gain 1 life.
 {1}{u}: @ becomes a 1/2 blue atog artifact creature until end of turn.
 {1}{u}: @ becomes a 2/1 blue faerie creature with flying until end of turn. it's still a land.
+{1}{u/b}, {q}: target creature gets -2/-0 until end of turn.
 {1}{u}{b}, {t}: target player puts the top three cards of his or her library into his or her graveyard.
 {1}{u}{b}: until end of turn, @ becomes a 3/2 blue and black elemental creature and is unblockable. it's still a land.
 {1}{u}: counter target red spell.
@@ -404,6 +407,7 @@
 {2}{g}, {t}: untap target creature.
 {2}{g}{w}: target creature gets +3/+3 until end of turn. untap that creature.
 {2}{g}{w}, {t}: put a +1/+1 counter on each creature you control.
+{2}{g/w}, {t}: put a 1/1 green and white elf warrior creature token onto the battlefield.
 {2}{g}{w}, {t}: put a 1/1 green saproling creature token onto the battlefield.
 {2}, pay 2 life: draw a card.
 {2}: prevent all combat damage that would be dealt to and dealt by target creature you control this turn.
