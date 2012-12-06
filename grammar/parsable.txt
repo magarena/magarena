@@ -2265,6 +2265,7 @@ put a 4/4 red giant creature token onto the battlefield.
 put a 4/4 white angel creature token with flying onto the battlefield. exile it at the beginning of the next end step.
 put a 5/5 blue and red elemental creature token with flying onto the battlefield.
 put a 5/5 blue wall creature token with defender onto the battlefield. sacrifice it at the beginning of the next end step.
+put a 6/12 colorless construct artifact creature token with trample onto the battlefield. exile it at the beginning of your next end step.
 put a 6/6 green wurm creature token onto the battlefield.
 put a card from your hand on top of your library: return @ to its owner's hand.
 put an x/x green ooze creature token onto the battlefield.

@@ -643,6 +643,7 @@ Duration
     / "this turn"
     / "at the beginning of the next turn's upkeep"
     / "at the beginning of the next end step"
+    / "at the beginning of your next end step"
     ;
 
 GainAction
