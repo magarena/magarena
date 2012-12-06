@@ -257,7 +257,7 @@ DealsDamageTrigger
 DamageReceiver
     = "itself"
     / SelectPlayer
-    / SelectCreature &(" and " SingleEffect)
+    / SelectCreature &(SEP SingleEffect)
     / SelectCreature SEP SelectPlayer
     / SelectCreature
     ;
@@ -379,6 +379,11 @@ ChangeLifeVerb
     ;
 
 SelectPlayer
+    = Player &(SEP SingleEffect)
+    / Player (SEP Player)*
+    ;
+
+Player
     = "target player"
     / "target opponent"
     / "that player"
@@ -389,6 +394,7 @@ SelectPlayer
     / "you"
     / "he or she"
     / "its controller"
+    / "that creature's controller"
     / "its owner"
     / "player"
     / "a player"

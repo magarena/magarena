@@ -1225,6 +1225,7 @@ cumulative upkeep {w}
 @ deals 1 damage to each creature without flying and each player.
 @ deals 1 damage to target creature.
 @ deals 1 damage to target creature and 1 damage to target player.
+@ deals 1 damage to target creature and 1 damage to that creature's controller.
 @ deals 1 damage to target creature or player.
 @ deals 1 damage to target creature. put a -1/-1 counter on that creature.
 @ deals 1 damage to target creature you don't control.
@@ -1267,6 +1268,7 @@ cumulative upkeep {w}
 @ deals 4 damage to each creature with flying.
 @ deals 4 damage to each player.
 @ deals 4 damage to target creature.
+@ deals 4 damage to target creature and 2 damage to that creature's controller.
 @ deals 4 damage to target creature or player.
 @ deals 4 damage to target creature or player and 2 damage to you.
 @ deals 4 damage to target creature or player and you gain 4 life.
@@ -1289,6 +1291,7 @@ cumulative upkeep {w}
 @ deals damage to target attacking creature equal to the number of attacking creatures.
 @ deals damage to target attacking creature equal to the number of equipment you control.
 @ deals damage to target creature equal to the number of mountains you control.
+@ deals damage to target creature equal to the number of nonbasic lands that creature's controller controls.
 @ deals damage to target creature or player equal to the number of attacking creatures you control.
 @ deals damage to target creature or player equal to the number of mountains you control.
 @ deals damage to target player equal to the number of artifacts you control.
@@ -2380,6 +2383,7 @@ return @ to its owner's hand: regenerate target creature.
 {r}, sacrifice @: @ deals 6 damage to each creature and each player.
 {r}, sacrifice @: @ deals damage equal to its power to target creature.
 {r}, sacrifice @: destroy target artifact.
+{r}, sacrifice @: destroy target creature with defender. @ deals 2 damage to that creature's controller.
 {r}, sacrifice @: destroy target land.
 {r}, sacrifice @: target black creature gets +1/+0 and gains first strike until end of turn.
 {r}, sacrifice @: target creature can't block this turn.
@@ -2740,6 +2744,7 @@ target creature gets +5/+0 and gains haste until end of turn.
 target creature gets -5/-0 until end of turn.
 target creature gets +5/+5 and gains shroud until end of turn.
 target creature gets -5/-5 until end of turn.
+target creature gets -5/-5 until end of turn. @ deals 5 damage to that creature's controller.
 target creature gets -7/-0 until end of turn.
 target creature gets +7/+7 until end of turn.
 target creature gets +x/+0 until end of turn.
@@ -2813,6 +2818,7 @@ target player sacrifices a permanent.
 {t}: @ deals 1 damage to itself.
 {t}: @ deals 1 damage to target attacking or blocking creature.
 {t}: @ deals 1 damage to target creature.
+{t}: @ deals 1 damage to target creature and that creature's controller loses 1 life.
 {t}: @ deals 1 damage to target creature or player.
 {t}: @ deals 1 damage to target creature or player and 1 damage to you.
 {t}: @ deals 1 damage to target creature with flying.
@@ -3663,6 +3669,7 @@ whenever @ deals combat damage to a creature, destroy that creature. it can't be
 whenever @ deals combat damage to a creature, put a +1/+1 counter on @.
 whenever @ deals combat damage to a creature, tap that creature and it doesn't untap during its controller's next untap step.
 whenever @ deals combat damage to a creature, tap that creature. that creature doesn't untap during its controller's next untap step.
+whenever @ deals combat damage to a creature, that creature's controller loses that much life.
 whenever @ deals combat damage to a player, destroy target nonblack creature that player controls.
 whenever @ deals combat damage to a player, draw a card.
 whenever @ deals combat damage to a player, each player discards a card.
@@ -3697,6 +3704,7 @@ whenever @ deals combat damage to a player, you may sacrifice it. if you do, dra
 whenever @ deals combat damage to a player, you may sacrifice it. if you do, gain control of target creature that player controls.
 whenever @ deals combat damage to a player, you may untap target creature.
 whenever @ deals combat damage, you gain that much life.
+whenever @ deals damage to a creature, @ deals 3 damage to that creature's controller and 3 damage to you.
 whenever @ deals damage to a creature, exile that creature.
 whenever @ deals damage to a creature, put a +1/+1 counter on @.
 whenever @ deals damage to a creature, tap that creature and it doesn't untap during its controller's next untap step.
@@ -3961,6 +3969,7 @@ wither
 {x}, {t}: target creature you control gets +x/+x until end of turn. destroy it at the beginning of the next end step.
 {x}, {t}: target player puts the top x cards of his or her library into his or her graveyard.
 {x}, {t}: you gain x life.
+{x}{u}{r}, {t}: @ deals x damage to target creature. that creature's controller draws x cards.
 {x}{u}{u}, {t}: return target creature with converted mana cost x to its owner's hand.
 {x}{u}: you may put a creature card with converted mana cost x from your hand onto the battlefield. if you do, return @ to its owner's hand.
 {x}{w}, {t}: @ deals x damage to target attacking or blocking creature.
