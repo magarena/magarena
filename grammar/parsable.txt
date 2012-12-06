@@ -962,6 +962,7 @@ at the beginning of your upkeep, you may draw two cards.
 at the beginning of your upkeep, you may exile a card from your hand. if you do, untap @.
 at the beginning of your upkeep, you may gain 1 life.
 at the beginning of your upkeep, you may gain control of target permanent until end of turn. if you do, untap it and it gains haste until end of turn.
+at the beginning of your upkeep, you may have @ deal 1 damage to target player.
 at the beginning of your upkeep, you may have target opponent discard a card at random.
 at the beginning of your upkeep, you may pay {1}. if you do, untap @.
 at the beginning of your upkeep, you may pay {2}. if you do, untap @.
@@ -2001,6 +2002,7 @@ landfall — whenever a land enters the battlefield under your control, you may 
 landfall — whenever a land enters the battlefield under your control, you may exile target nonland permanent other than @.
 landfall — whenever a land enters the battlefield under your control, you may gain 2 life.
 landfall — whenever a land enters the battlefield under your control, you may gain control of target creature for as long as you control @.
+landfall — whenever a land enters the battlefield under your control, you may have @ deal 1 damage to target player.
 landfall — whenever a land enters the battlefield under your control, you may have target creature get -1/-1 until end of turn.
 landfall — whenever a land enters the battlefield under your control, you may have target player lose 3 life. if you do, put three +1/+1 counters on @.
 landfall — whenever a land enters the battlefield under your control, you may pay {2}. if you do, draw a card.
@@ -3340,6 +3342,7 @@ when @ dies, you gain control of all enchantments.
 when @ dies, you lose 2 life.
 when @ dies, you may draw a card.
 when @ dies, you may gain 3 life.
+when @ dies, you may have it deal 1 damage to target creature or player.
 when @ dies, you may have target creature get -2/-2 until end of turn.
 when @ dies, you may pay {1}{b}. if you do, target player discards a card at random.
 when @ dies, you may pay {1}{u}. if you do, draw a card.
@@ -3594,6 +3597,7 @@ when @ enters the battlefield, you may destroy target vampire, werewolf, or zomb
 when @ enters the battlefield, you may discard a card. if you do, draw a card.
 when @ enters the battlefield, you may exile another target creature.
 when @ enters the battlefield, you may exile target artifact or enchantment.
+when @ enters the battlefield, you may have it deal 4 damage to target creature with flying.
 when @ enters the battlefield, you may have target opponent discard a card.
 when @ enters the battlefield, you may have target opponent sacrifice a creature.
 when @ enters the battlefield, you may pay {x}. if you do, put x 1/1 red and white goblin soldier creature tokens onto the battlefield.
@@ -3739,6 +3743,7 @@ whenever @ becomes blocked, you gain 2 life.
 whenever @ becomes blocked, you may draw a card.
 whenever @ becomes blocked, you may draw three cards.
 whenever @ becomes blocked, you may draw two cards.
+whenever @ becomes blocked, you may have it deal 1 damage to target creature or player.
 whenever @ blocks, it deals 1 damage to target attacking creature.
 whenever @ blocks, it gets +0/+2 until end of turn.
 whenever @ blocks, it gets +1/+0 and gains first strike until end of turn.
@@ -3783,6 +3788,10 @@ whenever @ deals combat damage to a player, you may destroy target enchantment t
 whenever @ deals combat damage to a player, you may draw a card.
 whenever @ deals combat damage to a player, you may draw a card. if you do, discard a card.
 whenever @ deals combat damage to a player, you may exile target black or red permanent that player controls.
+whenever @ deals combat damage to a player, you may have @ deal 1 damage to target creature that player controls.
+whenever @ deals combat damage to a player, you may have it deal 2 damage to target creature that player controls.
+whenever @ deals combat damage to a player, you may have it deal 3 damage to target creature that player controls.
+whenever @ deals combat damage to a player, you may have it deal that much damage to target creature that player controls.
 whenever @ deals combat damage to a player, you may pay {2}{b}. if you do, put target creature card from a graveyard onto the battlefield under your control.
 whenever @ deals combat damage to a player, you may pay {2}{g}. if you do, put six +1/+1 counters on @.
 whenever @ deals combat damage to a player, you may pay {2}{w}. if you do, @ deals 3 damage to each nonwhite creature.

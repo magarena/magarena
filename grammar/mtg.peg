@@ -474,10 +474,14 @@ RegenerateAction
     ;
 
 DamageAction
-    = (SelectPermanent SPACE)? "deals "? Number " damage to " DamageReceiver
-    / SelectPermanent " deals damage equal to its power to " DamageReceiver
-    / SelectPermanent " deals damage equal to the number of " CounterType " counters on it to " DamageReceiver
-    / SelectPermanent " deals damage to " DamageReceiver " equal to the number of " SelectPermanent
+    = (SelectPermanent SPACE)? (Deal SPACE)? Number " damage to " DamageReceiver
+    / SelectPermanent SPACE Deal " damage equal to its power to " DamageReceiver
+    / SelectPermanent SPACE Deal " damage equal to the number of " CounterType " counters on it to " DamageReceiver
+    / SelectPermanent SPACE Deal " damage to " DamageReceiver " equal to the number of " SelectPermanent
+    ;
+
+Deal
+    = "deal" "s"?
     ;
 
 EntersTapped
