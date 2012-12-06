@@ -183,6 +183,7 @@
 {1}, sacrifice a creature: you gain 2 life.
 {1}, sacrifice a land: target creature gets +1/+1 until end of turn.
 {1}, sacrifice a nonland permanent: @ deals 1 damage to target creature or player.
+{1}, sacrifice a nontoken artifact: put a 1/1 blue thopter artifact creature token with flying onto the battlefield. you gain 1 life.
 {1}, sacrifice a pentavite: put a +1/+1 counter on @.
 {1}, sacrifice a permanent: you gain 1 life.
 {1}, sacrifice a saproling: draw a card.
@@ -448,6 +449,7 @@
 {2}{r}, {t}, put a -1/-1 counter on a creature you control: @ deals 2 damage to target creature or player.
 {2}{r}{w}, {t}: target creature gains double strike until end of turn.
 {2}, sacrifice a land: put two 1/1 red and white goblin soldier creature tokens onto the battlefield.
+{2}, sacrifice a nontoken permanent: draw a card.
 {2}, sacrifice a permanent: return target creature to its owner's hand.
 {2}, sacrifice @: @ deals 2 damage to each attacking creature without flying.
 {2}, sacrifice @: @ deals damage equal to the number of charge counters on it to target creature or player.
@@ -536,6 +538,7 @@
 {2}{w}: prevent all combat damage that would be dealt by target creature this turn.
 {2}{w}: put a 1/1 white soldier creature token onto the battlefield.
 {2}{w}: put a healing counter on @.
+{2}{w}: put target nontoken mercenary on the bottom of its owner's library.
 {2}{w}, {q}: @ gets +0/+2 until end of turn.
 {2}{w}, remove a +1/+1 counter from @: put two 1/1 white spirit creature tokens with flying onto the battlefield.
 {2}{w}: return @ to its owner's hand.
@@ -582,6 +585,7 @@
 {3}: put a +1/+1 counter on @.
 {3}: put an ice counter on @.
 {3}: put target card from a graveyard on the bottom of its owner's library.
+{3}: put target nontoken rebel on the bottom of its owner's library.
 {3}{r}: @ deals 1 damage to target creature or player.
 {3}: regenerate @.
 {3}: remove an ice counter from @.
@@ -959,6 +963,7 @@ at the beginning of your upkeep, you may put a 3/3 green beast creature token on
 at the beginning of your upkeep, you may put a charge counter on @.
 at the beginning of your upkeep, you may put a charge counter on target artifact.
 at the beginning of your upkeep, you may put a charge counter on target permanent you control.
+at the beginning of your upkeep, you may put a fungus counter on target nontoken creature.
 at the beginning of your upkeep, you may put a fuse counter on @.
 at the beginning of your upkeep, you may put a growth counter on @.
 at the beginning of your upkeep, you may put an arrow counter on @.
@@ -1342,6 +1347,7 @@ destroy all lands.
 destroy all nonartifact permanents.
 destroy all nonbasic lands.
 destroy all nonland permanents.
+destroy all nontoken creatures.
 destroy all nonwhite creatures.
 destroy all plains.
 destroy all tapped creatures.
@@ -1778,6 +1784,7 @@ exile target creature you control. return that card to the battlefield under its
 exile target creature you control, then return it to the battlefield under its owner's control.
 exile target enchantment.
 exile target land.
+exile target nontoken permanent, then return it to the battlefield under its owner's control.
 fading 1
 fading 2
 fading 3
@@ -3375,6 +3382,7 @@ when @ enters the battlefield, put a 3/3 colorless golem artifact creature token
 when @ enters the battlefield, put a 4/4 red dragon creature token with flying onto the battlefield.
 when @ enters the battlefield, put a 5/5 green wurm creature token with trample onto the battlefield.
 when @ enters the battlefield, put a creature you control on top of its owner's library.
+when @ enters the battlefield, put a token that's a copy of target nontoken creature onto the battlefield.
 when @ enters the battlefield, put four 1/1 colorless myr artifact creature tokens onto the battlefield.
 when @ enters the battlefield, put four 1/1 green insect creature tokens with flying and deathtouch onto the battlefield.
 when @ enters the battlefield, put four 1/1 green squirrel creature tokens onto the battlefield.

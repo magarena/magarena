@@ -817,6 +817,7 @@ PermanentRestriction
     / "nonartifact, nonblack"
     / "nonartifact"
     / "nonland"
+    / "nontoken"
     / "artifact"
     / "other than @"
     / "legendary"
