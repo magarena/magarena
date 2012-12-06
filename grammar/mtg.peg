@@ -293,7 +293,9 @@ PermanentState
     / "can't attack" 
     / "can't block" 
     / "is indestructible" 
+    / "are indestructible" 
     / "is unblockable" 
+    / "are unblockable" 
     / "attacks each turn if able"
     / "can't be countered"
     ;

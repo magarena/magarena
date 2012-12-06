@@ -50,6 +50,7 @@
 {1}{b}, {t}: target creature gets -1/-1 until end of turn.
 {1}{b}, {t}: target creature gets -2/-2 until end of turn.
 {1}{b}, {t}: target player loses 1 life.
+-1: creatures are unblockable this turn.
 +1: creatures you control get +1/+1 and gain haste until end of turn.
 +1: @ deals 1 damage to target creature or player.
 +1: @ deals 1 damage to target player.
@@ -761,6 +762,7 @@ all creatures have vigilance.
 all creatures have wither.
 all creatures lose flying.
 all creatures lose flying until end of turn.
+all lands are indestructible.
 all sliver creatures get +0/+1.
 all sliver creatures get +0/+2.
 all sliver creatures get +1/+0.
@@ -781,6 +783,7 @@ all slivers have shroud.
 artifact creatures you control gain flying until end of turn.
 artifact creatures you control get +2/+2.
 artifacts and enchantments you control have shroud.
+artifacts you control are indestructible.
 artifacts you control have hexproof.
 as an additional cost to cast @, discard a card.
 as an additional cost to cast @, discard a card at random.
@@ -1042,6 +1045,7 @@ bloodthirst 3
 bloodthirst 6
 bloodthirst x
 blue creatures get +1/+1.
+blue creatures you control are unblockable.
 {b}, pay 1 life: add one mana of any color to your mana pool.
 {b}, pay 1 life: @ gets +1/+1 until end of turn.
 {b}, pay 1 life: return @ to its owner's hand.
@@ -1177,6 +1181,7 @@ creatures you control get -1/-1.
 creatures you control get +1/-1.
 creatures you control get +1/+1.
 creatures you control get +1/+1 and gain vigilance until end of turn.
+creatures you control get +1/+1, have flying, and are indestructible.
 creatures you control get +1/+1 until end of turn.
 creatures you control get +1/+2 until end of turn. untap those creatures.
 creatures you control get +2/+0 until end of turn.
@@ -2072,6 +2077,7 @@ other green creatures you control have intimidate.
 other griffin creatures get +1/+1.
 other human creatures you control get +1/+1.
 other kithkin creatures you control get +1/+1.
+other knight creatures you control get +1/+1 and are indestructible.
 other kobold creatures you control get +0/+1 and have trample.
 other kobold creatures you control get +1/+0.
 other kobold creatures you control have first strike.
@@ -2097,6 +2103,7 @@ other soldier creatures you control have first strike.
 other spirit creatures you control get +0/+1.
 other spirit creatures you control get +1/+0.
 other spirit creatures you control get +1/+1 and have hexproof.
+other treefolk and forests you control are indestructible.
 other treefolk creatures you control get +1/+1.
 other vampire creatures you control get +1/+1.
 other vampire creatures you control get +1/+1 and have first strike.
@@ -2513,6 +2520,7 @@ sacrifice @: counter target instant or sorcery spell unless its controller pays 
 sacrifice @: counter target spell unless its controller pays {1}.
 sacrifice @: counter target spell unless its controller pays {2}.
 sacrifice @: counter target spell unless its controller pays {3}.
+sacrifice @: creatures you control are indestructible this turn.
 sacrifice @: creatures you control gain flying until end of turn.
 sacrifice @: creatures you control with power 5 or greater gain flying until end of turn.
 sacrifice @: @ deals 1 damage to target attacking or blocking creature.
