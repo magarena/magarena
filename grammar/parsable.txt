@@ -46,6 +46,7 @@
 {1}{b}, {t}: destroy target creature with shadow.
 {1}{b}, {t}, discard a card: target creature gets +1/+0 and gains first strike until end of turn.
 {1}{b}, {t}: put target creature card from your graveyard on top of your library.
+{1}{b}, {t}: return target zombie card from your graveyard to your hand.
 {1}{b}, {t}, sacrifice @: destroy target nonblack creature.
 {1}{b}, {t}: target creature gets -1/-1 until end of turn.
 {1}{b}, {t}: target creature gets -2/-2 until end of turn.
@@ -627,6 +628,7 @@
 {3}, {t}: regenerate target artifact creature.
 {3}, {t}: remove a -1/-1 counter from target creature.
 {3}, {t}, remove a charge counter from @: draw a card.
+{3}, {t}: return target myr card from your graveyard to your hand.
 {3}, {t}, sacrifice a land: destroy target nonbasic land.
 {3}, {t}, sacrifice @: @ deals damage equal to the number of charge counters on it to target creature or player.
 {3}, {t}, sacrifice @: destroy target land.
@@ -907,6 +909,7 @@ at the beginning of your upkeep, return a permanent you control to its owner's h
 at the beginning of your upkeep, return a red creature you control to its owner's hand.
 at the beginning of your upkeep, return a white creature you control to its owner's hand.
 at the beginning of your upkeep, return target creature card from your graveyard to the battlefield.
+at the beginning of your upkeep, return target spirit card from your graveyard to your hand.
 at the beginning of your upkeep, sacrifice a creature.
 at the beginning of your upkeep, sacrifice a creature. if you can't, sacrifice @.
 at the beginning of your upkeep, sacrifice a creature other than @.
@@ -994,6 +997,7 @@ at the beginning of your upkeep, you may return @ from your graveyard to your ha
 at the beginning of your upkeep, you may return target artifact card from your graveyard to the battlefield.
 at the beginning of your upkeep, you may return target creature card from your graveyard to the battlefield.
 at the beginning of your upkeep, you may return target creature card from your graveyard to the battlefield. that creature gains haste until end of turn. exile it at the beginning of the next end step.
+at the beginning of your upkeep, you may return target goblin card from your graveyard to your hand.
 at the beginning of your upkeep, you may sacrifice an artifact. if you don't, tap @ and it deals 2 damage to you.
 at the beginning of your upkeep, you may sacrifice a nonartifact creature. if you do, put a +1/+1 counter on @. if you don't, tap @.
 at the beginning of your upkeep, you may untap target creature and gain control of it until end of turn. that creature gains haste until end of turn.
@@ -1094,6 +1098,7 @@ blue creatures you control are unblockable.
 {b}, {t}, discard a card: return target creature card from your graveyard to your hand.
 {b}, {t}, discard a card: target creature gets -1/-1 until end of turn.
 {b}, {t}: exile target instant or sorcery card from a graveyard. each opponent loses 2 life.
+{b}, {t}: put target zombie card from your graveyard on top of your library.
 {b}, {t}, sacrifice an artifact: draw a card.
 {b}, {t}, sacrifice @: return target creature card from your graveyard to the battlefield.
 {b}, {t}, sacrifice @: return target creature card from your graveyard to the battlefield. that creature gains haste. at the beginning of the next end step, sacrifice it.
@@ -1121,6 +1126,13 @@ buyback {5}
 @ can't be countered.
 @ can't block.
 @ can't block and is unblockable.
+champion a creature
+champion a faerie
+champion a goblin
+champion a kithkin
+champion a merfolk
+champion an elemental
+champion an elf
 changeling
 cleric creatures have vigilance.
 counter target artifact spell.
@@ -2416,6 +2428,7 @@ return target creature to its owner's hand.
 return target creature to its owner's hand. its controller draws a card.
 return target creature to its owner's hand. its controller loses 1 life.
 return target creature to its owner's hand. you gain 2 life.
+return target goblin card from your graveyard to your hand.
 return target green card from your graveyard to your hand.
 return target instant or sorcery card from your graveyard to your hand.
 return target legendary creature card from your graveyard to the battlefield. that creature gains haste. exile it at the beginning of the next end step.
@@ -3357,6 +3370,7 @@ when @ dies, you may pay {2}. if you do, return another target creature card fro
 when @ dies, you may pay {b}. if you do, target player discards a card.
 when @ dies, you may put a -1/-1 counter on target creature.
 when @ dies, you may put it on top of its owner's library.
+when @ dies, you may put target zombie card from your graveyard on top of your library.
 when @ enters the battlefield, add one mana of any color to your mana pool.
 when @ enters the battlefield, add {r} to your mana pool.
 when @ enters the battlefield, another target permanent is indestructible for as long as you control @.
@@ -3623,6 +3637,7 @@ when @ enters the battlefield, you may return target instant card from your grav
 when @ enters the battlefield, you may return target instant or sorcery card from your graveyard to your hand.
 when @ enters the battlefield, you may return target land card from your graveyard to your hand.
 when @ enters the battlefield, you may return target land to its owner's hand.
+when @ enters the battlefield, you may return target mercenary card from your graveyard to your hand.
 when @ enters the battlefield, you may return target red sorcery card from your graveyard to your hand.
 when @ enters the battlefield, you may return target sorcery card from your graveyard to your hand.
 when @ enters the battlefield, you may return target tapped creature to its owner's hand.

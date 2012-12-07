@@ -172,6 +172,7 @@ Keyword
     / "level up" SPACE ManaCost
     / "level" SPACE Number "-" Number
     / "level" SPACE Number "+"
+    / "champion" SPACE "a" "n"? SPACE SelectCreature
     ;
 
 ColorlessCost
@@ -824,6 +825,7 @@ CardRestriction
 
 RestrictedCreature
     = (CreatureRestriction SPACE)* Creature (SPACE CreatureRestriction)*
+    / RestrictedTribal
     ;
 
 PermanentRestriction
