@@ -732,7 +732,7 @@ SelectCard
 SelectCreature
     = "@"
     / "it"
-    / (SelectOp SPACE)? RestrictedCreature
+    / (SelectOp SPACE)? RestrictedCreature (" or " RestrictedCreature)?
     ;
 
 SelectPermanent
