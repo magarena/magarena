@@ -726,29 +726,25 @@ SelectOp
 SelectCard
     = "@" (SPACE CardRestriction)?
     / "it"
-    / SelectOp SPACE RestrictedCard
+    / SelectOp SPACE RestrictedCard (SEP RestrictedCard)*
     ;
 
 SelectCreature
     = "@"
     / "it"
-    / (SelectOp SPACE)? RestrictedCreature (" or " RestrictedCreature)?
+    / (SelectOp SPACE)? RestrictedCreature (SEP RestrictedCreature)*
     ;
 
 SelectPermanent
     = "@"
     / "it"
-    / (SelectOp SPACE)? RestrictedPermanentCombination
+    / (SelectOp SPACE)? RestrictedPermanent (SEP RestrictedPermanent)*
     ;
 
 SelectSpell
     = "@"
     / "it"
     / SelectOp SPACE RestrictedSpell
-    ;
-
-RestrictedPermanentCombination
-    = RestrictedPermanent (SEP RestrictedPermanent)*
     ;
 
 RestrictedPermanent

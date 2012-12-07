@@ -2191,6 +2191,7 @@ other vampire creatures you control get +1/+1.
 other vampire creatures you control get +1/+1 and have first strike.
 other white creatures get +1/+1.
 other white creatures you control get +1/+1.
+other wolf and werewolf creatures you control get +1/+1.
 other zombie creatures get +1/+1.
 other zombie creatures have swampwalk.
 other zombie creatures you control get +1/+1.
