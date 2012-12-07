@@ -744,7 +744,7 @@ SelectPermanent
 SelectSpell
     = "@"
     / "it"
-    / SelectOp SPACE RestrictedSpell
+    / (SelectOp SPACE)? RestrictedSpell (SEP RestrictedSpell)*
     ;
 
 RestrictedPermanent
