@@ -1239,6 +1239,9 @@ creatures your opponents control get -2/-0 until end of turn.
 creatures your opponents control get -2/-2.
 creatures your opponents control get -4/-0 until end of turn.
 creatures your opponents control lose infect.
+creature tokens get +1/+1.
+creature tokens you control get +1/+1.
+creature tokens you control get +1/+1 and have vigilance.
 cumulative upkeep {1}
 cumulative upkeep {1}{b}
 cumulative upkeep {1}{u}
@@ -2524,6 +2527,7 @@ return @ to its owner's hand: regenerate target creature.
 {r}: you may put a creature card from your hand onto the battlefield. that creature gains haste. sacrifice the creature at the beginning of the next end step.
 sacrifice a bat: regenerate @.
 sacrifice a beast: you gain 4 life.
+sacrifice a caribou token: you gain 1 life.
 sacrifice a creature: add one mana of any color to your mana pool.
 sacrifice a creature: add {r} to your mana pool.
 sacrifice a creature: @ deals 1 damage to target creature or player.
@@ -2587,6 +2591,7 @@ sacrifice an untapped creature: enchanted creature gets +2/+0 until end of turn.
 sacrifice a permanent: regenerate target creature.
 sacrifice a permanent: regenerate target creature you control.
 sacrifice a permanent: return target creature to its owner's hand.
+sacrifice a prism token: add one mana of any color to your mana pool.
 sacrifice a saproling: add one mana of any color to your mana pool.
 sacrifice a saproling: @ gets +1/+2 until end of turn.
 sacrifice a saproling: regenerate target fungus.
@@ -2950,6 +2955,7 @@ target player sacrifices a permanent.
 {t}: destroy target blue creature.
 {t}: destroy target creature. it can't be regenerated.
 {t}: destroy target creature or land.
+{t}: destroy target creature token.
 {t}: destroy target creature with a bounty counter on it.
 {t}: destroy target creature with islandwalk.
 {t}: destroy target creature with power 4 or greater.
@@ -3971,9 +3977,11 @@ when @ is put into a graveyard from the battlefield, you may pay {g}. if you do,
 when @ is put into a graveyard from the battlefield, you may pay {r}. if you do, draw a card.
 when @ is put into a graveyard from the battlefield, you may pay {u}. if you do, draw a card.
 when @ is put into a graveyard from the battlefield, you may pay {w}. if you do, draw a card.
+when @ leaves the battlefield, destroy all skeleton tokens. they can't be regenerated.
 when @ leaves the battlefield, destroy target white creature. it can't be regenerated.
 when @ leaves the battlefield, draw a card.
 when @ leaves the battlefield, exile all nightmares.
+when @ leaves the battlefield, exile all serf tokens.
 when @ leaves the battlefield, exile target card from a graveyard.
 when @ leaves the battlefield, it deals 1 damage to each goblin creature.
 when @ leaves the battlefield, it deals 4 damage to target creature.

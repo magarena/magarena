@@ -830,15 +830,16 @@ RestrictedCreature
 
 PermanentRestriction
     = ColorSpec
+    / SelectPlayer " control" "s"?
+    / SelectPlayer " don't control"
     / "tapped"
     / "untapped"
     / "noncreature"
-    / SelectPlayer " control" "s"?
-    / SelectPlayer " don't control"
     / "nonartifact, nonblack"
     / "nonartifact"
     / "nonland"
     / "nontoken"
+    / "token" "s"?
     / "artifact"
     / "other than @"
     / "legendary"
