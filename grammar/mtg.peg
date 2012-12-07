@@ -254,7 +254,8 @@ BeginningUpkeepTrigger
     ;
 
 DiesTrigger
-    = "when @ dies"
+    = "when" SPACE SelectCreature SPACE "dies"
+    / "whenever" SPACE SelectCreature SPACE "dies"
     ;
 
 DealsDamageTrigger
@@ -709,6 +710,7 @@ CounterAction
 SelectOp
     = "target"
     / "another target"
+    / "another"
     / "all other"
     / "all"
     / "an"

@@ -186,6 +186,7 @@
 {1}, sacrifice a land: target creature gets +1/+1 until end of turn.
 {1}, sacrifice a nonland permanent: @ deals 1 damage to target creature or player.
 {1}, sacrifice a nontoken artifact: put a 1/1 blue thopter artifact creature token with flying onto the battlefield. you gain 1 life.
+{1}, sacrifice another thopter: put a +1/+1 counter on @. activate this ability only any time you could cast a sorcery.
 {1}, sacrifice a pentavite: put a +1/+1 counter on @.
 {1}, sacrifice a permanent: you gain 1 life.
 {1}, sacrifice a saproling: draw a card.
@@ -1915,6 +1916,7 @@ green creatures you control have trample.
 {g}, sacrifice a forest: @ gets +2/+2 until end of turn.
 {g}, sacrifice a forest: regenerate @.
 {g}, sacrifice a kithkin: you gain 1 life.
+{g}, sacrifice another creature: put a +1/+1 counter on @.
 {g}, sacrifice a wall: draw a card.
 {g}, sacrifice @: destroy target artifact or enchantment.
 {g}, sacrifice @: target creature gets +2/+2 until end of turn.
@@ -2588,6 +2590,7 @@ sacrifice an elemental: target giant creature gets +3/+1 until end of turn.
 sacrifice an enchantment: @ gets +1/+1 until end of turn.
 sacrifice an enchantment: @ gets +2/+2 until end of turn.
 sacrifice an island: put two polyp counters on @.
+sacrifice another creature: untap @ and put a +1/+1 counter on it.
 sacrifice an untapped creature: enchanted creature gets +2/+0 until end of turn.
 sacrifice a permanent: regenerate target creature.
 sacrifice a permanent: regenerate target creature you control.
@@ -3085,6 +3088,7 @@ trample
 {t}, sacrifice an artifact: draw a card.
 {t}, sacrifice an artifact: target player puts the top three cards of his or her library into his or her graveyard.
 {t}, sacrifice an island: put a 2/2 blue elemental creature token with flying onto the battlefield.
+{t}, sacrifice another orc or goblin: other orc creatures get +1/+1 until end of turn.
 {t}, sacrifice a swamp: target creature gets +1/+1 until end of turn.
 {t}, sacrifice @: counter target spell.
 {t}, sacrifice @: @ deals 2 damage to target attacking or blocking creature.
@@ -3301,6 +3305,8 @@ werewolf creatures you control get +1/+0 and have trample.
 {w}: @ gains vigilance until end of turn.
 {w}: @ gets +0/+1 until end of turn.
 {w}: @ gets +1/+1 until end of turn.
+when a creature dies, destroy enchanted creature.
+when a creature you control dies, sacrifice @. if you do, put four 1/1 colorless spirit creature tokens onto the battlefield.
 when an opponent casts a creature spell, sacrifice @.
 when a player casts a spell, sacrifice @ and counter that spell.
 when @ becomes the target of a spell or ability, return @ to its owner's hand.
@@ -3383,6 +3389,14 @@ when @ dies, you may pay {b}. if you do, target player discards a card.
 when @ dies, you may put a -1/-1 counter on target creature.
 when @ dies, you may put it on top of its owner's library.
 when @ dies, you may put target zombie card from your graveyard on top of your library.
+when enchanted creature dies, its controller loses 2 life.
+when enchanted creature dies, put a 2/2 white griffin creature token with flying onto the battlefield.
+when enchanted creature dies, put a 3/3 green elephant creature token onto the battlefield.
+when enchanted creature dies, return @ from your graveyard to the battlefield.
+when enchanted creature dies, return that card to its owner's hand.
+when enchanted creature dies, return that card to the battlefield under its owner's control.
+when enchanted creature dies, return @ to its owner's hand.
+when enchanted creature dies, you draw two cards.
 when @ enters the battlefield, add one mana of any color to your mana pool.
 when @ enters the battlefield, add {r} to your mana pool.
 when @ enters the battlefield, another target permanent is indestructible for as long as you control @.
@@ -3552,6 +3566,7 @@ when @ enters the battlefield, sacrifice it unless you pay {1}.
 when @ enters the battlefield, sacrifice it unless you return a basic land card from your graveyard to your hand.
 when @ enters the battlefield, sacrifice it unless you return an artifact you control to its owner's hand.
 when @ enters the battlefield, sacrifice it unless you return an enchantment to its owner's hand.
+when @ enters the battlefield, sacrifice it unless you return another creature you control to its owner's hand.
 when @ enters the battlefield, sacrifice it unless you return an untapped forest you control to its owner's hand.
 when @ enters the battlefield, sacrifice it unless you return an untapped island you control to its owner's hand.
 when @ enters the battlefield, sacrifice it unless you return an untapped mountain you control to its owner's hand.
@@ -3655,8 +3670,37 @@ when @ enters the battlefield, you may return target sorcery card from your grav
 when @ enters the battlefield, you may return target tapped creature to its owner's hand.
 when @ enters the battlefield, you may tap or untap target permanent.
 when @ enters the battlefield, you may tap target creature.
+whenever a creature an opponent controls dies, that player loses 2 life.
+whenever a creature an opponent controls dies, you may gain 3 life.
+whenever a creature an opponent controls dies, you may return target artifact card from your graveyard to your hand.
+whenever a creature dies, @ deals 2 damage to that creature's controller.
+whenever a creature dies, @ gets +2/+2 until end of turn.
+whenever a creature dies, put a +1/+1 counter on @.
+whenever a creature dies, put a +1/+1 counter on enchanted creature.
+whenever a creature dies, put a charge counter on @.
+whenever a creature dies, that creature's controller may draw a card.
+whenever a creature dies, that creature's controller sacrifices a land.
+whenever a creature dies, untap @.
+whenever a creature dies, you gain 1 life.
+whenever a creature dies, you gain 2 life.
+whenever a creature dies, you may pay {1}. if you do, you gain 1 life.
+whenever a creature dies, you may pay {3}. if you do, draw a card.
+whenever a creature dies, you may put a quest counter on @.
+whenever a creature dies, you may untap @.
+whenever a creature with flying dies, put a +1/+1 counter on @.
+whenever a creature with shadow dies, put a +1/+1 counter on @.
+whenever a creature you control dies, draw a card.
+whenever a creature you control dies, target opponent loses 1 life and you gain 1 life.
+whenever a creature you control dies, you may pay {x}. if you do, you gain x life.
+whenever a goblin you control dies, you may put a +1/+1 counter on @.
+whenever a green creature dies, its controller discards a card.
 whenever a land enters the battlefield under your control, put a +1/+1 counter on @.
 whenever a land enters the battlefield under your control, untap @.
+whenever a nontoken creature dies, put a 1/1 white spirit creature token with flying onto the battlefield.
+whenever a nontoken creature you control dies, put a 1/1 green saproling creature token onto the battlefield.
+whenever a nontoken creature you control dies, put a charge counter on @.
+whenever a nontoken creature you control dies, target opponent discards a card.
+whenever a nonwhite creature dies, return it to its owner's hand at the beginning of the next end step.
 whenever an opponent casts a black spell, you may pay {g}{g}. if you do, you draw a card.
 whenever an opponent casts a blue or black spell, you may put a +1/+1 counter on @.
 whenever an opponent casts a blue or black spell, you may put a 1/1 green snake creature token onto the battlefield.
@@ -3676,6 +3720,22 @@ whenever an opponent casts a spell, you may put a +1/+1 counter on @.
 whenever an opponent casts a spirit or arcane spell, @ deals 2 damage to that player.
 whenever an opponent casts a white spell, he or she loses 2 life.
 whenever an opponent casts a white spell, that player loses 1 life and you gain 1 life.
+whenever another black creature you control dies, put a 1/1 white spirit creature token with flying onto the battlefield.
+whenever another creature dies, @ deals 2 damage to target player.
+whenever another creature dies, put a +1/+1 counter on @.
+whenever another creature dies, untap @.
+whenever another creature dies, you may draw a card. if you do, discard a card.
+whenever another creature dies, you may gain 1 life.
+whenever another creature dies, you may have @ deal 1 damage to target player.
+whenever another creature dies, you may put a +1/+1 counter on @.
+whenever another creature you control dies, it deals damage equal to its power to target player.
+whenever another creature you control dies, put a +1/+1 counter on @.
+whenever another goblin you control dies, you may have @ deal 1 damage to target player.
+whenever another human creature dies, put a +1/+1 counter on @.
+whenever another non-spirit creature you control dies, put a 1/1 white spirit creature token with flying onto the battlefield.
+whenever another nontoken creature dies, you may draw a card.
+whenever another nontoken creature you control dies, put a 3/1 black and red graveborn creature token with haste onto the battlefield.
+whenever another zombie you control dies, target opponent loses 1 life.
 whenever a player casts a black spell, @ gets +2/+2 until end of turn.
 whenever a player casts a black spell, you gain 1 life.
 whenever a player casts a black spell, you may gain 1 life.
@@ -3718,6 +3778,7 @@ whenever a player casts a spell, you may put a +1/+1 counter on @.
 whenever a player casts a white spell, you may gain 1 life.
 whenever a player casts a white spell, you may pay {1}. if you do, you gain 1 life.
 whenever a player casts a white spell, you may pay {3}. if you do, untap target permanent.
+whenever a samurai you control dies, you may put a +1/+1 counter on @.
 whenever @ attacks, all attacking creatures with flanking get +1/+1 until end of turn.
 whenever @ attacks, all other creatures you control get +1/+1 until end of turn.
 whenever @ attacks, another target attacking creature gets +0/+2 until end of turn. untap that creature.
@@ -3749,6 +3810,7 @@ whenever @ attacks, it gets +3/+3 until end of turn.
 whenever @ attacks, it gets +5/+0 until end of turn.
 whenever @ attacks, put a +1/+1 counter on each attacking creature.
 whenever @ attacks, put a +1/+1 counter on it.
+whenever @ attacks, return another creature you control to its owner's hand.
 whenever @ attacks, sacrifice it unless you sacrifice an island.
 whenever @ attacks, samurai creatures you control get +1/+1 until end of turn.
 whenever @ attacks, tap all artifacts.
@@ -3762,6 +3824,7 @@ whenever @ attacks, you may pay {r}. if you do, target creature can't block this
 whenever @ attacks, you may pay {w}. if you do, it gains flying until end of turn.
 whenever @ attacks, you may pay {x}{r}. if you do, @ deals x damage to target creature or player.
 whenever @ attacks, you may tap target creature.
+whenever a white creature dies, return it to the battlefield under its owner's control at the beginning of the next end step.
 whenever @ becomes blocked, draw a card.
 whenever @ becomes blocked, it gets +1/+1 until end of turn.
 whenever @ becomes blocked, it gets +2/+0 until end of turn.
@@ -3849,6 +3912,8 @@ whenever @ deals damage to a player, that player gets two poison counters.
 whenever @ deals damage to a player, you may draw a card.
 whenever @ deals damage, you gain that much life.
 whenever @ deals damage, you lose that much life.
+whenever equipped creature dies, draw two cards.
+whenever equipped creature dies, you gain 3 life.
 whenever @ or another ally enters the battlefield under your control, you may have ally creatures you control gain first strike until end of turn.
 whenever @ or another ally enters the battlefield under your control, you may have ally creatures you control gain flying until end of turn.
 whenever @ or another ally enters the battlefield under your control, you may have ally creatures you control gain vigilance until end of turn.
