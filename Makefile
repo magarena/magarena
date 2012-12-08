@@ -208,7 +208,7 @@ test: $(MAG)
 exp/%.log: $(MAG)
 	scripts/evaluate_ai.sh $* > $@
 
-decks/dec:
+decks/dl:
 	for i in `curl http://www.wizards.com/magic/magazine/archive.aspx?tag=dailydeck | grep -o mtg/daily/deck/[0-9]* | cut -d'/' -f4`; do make decks/dd_$$i.dec; done
 	for i in `curl http://www.wizards.com/magic/magazine/archive.aspx?tag=topdeck | grep -o mtg/daily/td/[0-9]* | cut -d'/' -f4`; do make decks/td_$$i.dec; done
 
@@ -234,7 +234,7 @@ decks/ml_%.dec: scripts/apprentice2dec.awk
 	wget "http://www.magic-league.com/decks/download.php?deck=$*&index=1" -O - | flip -u - | awk -f $^ > $@
 
 ref/rules.txt:
-	curl http://www.wizards.com`wget http://www.wizards.com/magic/rules -O - | grep txt | cut -d'"' -f4` | fmt -s > $@
+	curl `wget http://www.wizards.com/magic/rules -O - | grep txt | cut -d'"' -f4` | fmt -s > $@
 	flip -u $@
 
 resources/magic/data/icons/missing_card.png:
