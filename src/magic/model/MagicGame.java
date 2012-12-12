@@ -650,6 +650,7 @@ public class MagicGame {
     
     public void addEvent(final MagicEvent event) {
         doAction(new MagicAddEventAction(event));
+        update();
     }
         
     public void executeNextEvent(final Object[] choiceResults) {
