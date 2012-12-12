@@ -5,7 +5,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicType;
-import magic.model.action.MagicAddEventAction;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicSacrificeAction;
@@ -77,7 +76,7 @@ public class MagicDevourTrigger extends MagicWhenComesIntoPlayTrigger {
                             permanent,
                             permanent.getController());
                     if (newEvent.isValid()) {
-                        game.doAction(new MagicAddEventAction(newEvent));
+                        game.addEvent(newEvent);
                     }
                 }
             });

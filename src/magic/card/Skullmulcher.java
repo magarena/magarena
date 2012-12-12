@@ -5,7 +5,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicType;
-import magic.model.action.MagicAddEventAction;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicDrawAction;
 import magic.model.action.MagicPermanentAction;
@@ -66,7 +65,7 @@ public class Skullmulcher {
                         game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.PlusOne,1,true));
                         final MagicEvent newEvent=executeTrigger(game,permanent,permanent.getController());
                         if (newEvent.isValid()) {
-                            game.doAction(new MagicAddEventAction(newEvent));
+                            game.addEvent(newEvent);
                         }
                     }
                 });

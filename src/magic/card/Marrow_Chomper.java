@@ -5,7 +5,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicType;
-import magic.model.action.MagicAddEventAction;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.action.MagicPermanentAction;
@@ -53,7 +52,7 @@ public class Marrow_Chomper {
                         game.doAction(new MagicChangeLifeAction(event.getPlayer(),2));
                         final MagicEvent newEvent=executeTrigger(game,permanent,permanent.getController());
                         if (newEvent.isValid()) {
-                            game.doAction(new MagicAddEventAction(newEvent));
+                            game.addEvent(newEvent);
                         }
                     }
                 });

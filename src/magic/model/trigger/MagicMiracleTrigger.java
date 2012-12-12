@@ -4,7 +4,6 @@ import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicAddEventAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.event.MagicCardActivation;
@@ -40,7 +39,7 @@ public class MagicMiracleTrigger extends MagicWhenDrawnTrigger {
         if (MagicMayChoice.isYesChoice(choiceResults[0])) {
             final MagicCard card = event.getCard();
             final MagicCardActivation act = card.getCardDefinition().getCardActivation();
-            game.doAction(new MagicAddEventAction(act.getEvent(card)));
+            game.addEvent(act.getEvent(card));
         }
     }
 }
