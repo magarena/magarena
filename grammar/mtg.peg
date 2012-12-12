@@ -240,7 +240,7 @@ EntersBattlefieldTrigger
     = "when @ enters the battlefield"
     / "as @ enters the battlefield"
     / "whenever @ or another ally enters the battlefield under your control"
-    / "whenever a land enters the battlefield under your control"
+    / "whenever " SelectPermanent " enters the battlefield" " under your control"?
     ;
 
 BeginningEndStepTrigger

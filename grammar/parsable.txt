@@ -3670,6 +3670,11 @@ when @ enters the battlefield, you may return target sorcery card from your grav
 when @ enters the battlefield, you may return target tapped creature to its owner's hand.
 when @ enters the battlefield, you may tap or untap target permanent.
 when @ enters the battlefield, you may tap target creature.
+whenever a beast enters the battlefield under your control, you may have it deal 4 damage to target opponent.
+whenever a beast enters the battlefield, you may draw a card.
+whenever a beast enters the battlefield, you may gain 3 life.
+whenever a black creature enters the battlefield under your control, you may have target player discard a card.
+whenever a blue creature enters the battlefield under your control, you may have target player draw a card.
 whenever a creature an opponent controls dies, that player loses 2 life.
 whenever a creature an opponent controls dies, you may gain 3 life.
 whenever a creature an opponent controls dies, you may return target artifact card from your graveyard to your hand.
@@ -3687,19 +3692,54 @@ whenever a creature dies, you may pay {1}. if you do, you gain 1 life.
 whenever a creature dies, you may pay {3}. if you do, draw a card.
 whenever a creature dies, you may put a quest counter on @.
 whenever a creature dies, you may untap @.
+whenever a creature enters the battlefield, @ deals 2 damage to it.
+whenever a creature enters the battlefield, destroy it.
+whenever a creature enters the battlefield, enchanted creature gets +2/+2 until end of turn.
+whenever a creature enters the battlefield, it gains double strike and haste until end of turn.
+whenever a creature enters the battlefield, its controller sacrifices a creature or land.
+whenever a creature enters the battlefield under your control, it deals damage equal to its power to target creature or player.
+whenever a creature enters the battlefield under your control, it gets +2/+0 and gains haste until end of turn.
+whenever a creature enters the battlefield under your control, put a +1/+1 counter on each creature you control.
+whenever a creature enters the battlefield under your control, you may destroy target artifact or enchantment.
+whenever a creature enters the battlefield under your control, you may gain 1 life.
+whenever a creature enters the battlefield under your control, you may pay {2}{r}. if you do, that creature deals damage equal to its power to target creature or player.
+whenever a creature enters the battlefield, untap all creatures.
+whenever a creature enters the battlefield, you lose 1 life and add {b} to your mana pool.
+whenever a creature enters the battlefield, you may untap @.
 whenever a creature with flying dies, put a +1/+1 counter on @.
+whenever a creature with power 4 or greater enters the battlefield, its controller draws a card.
+whenever a creature with power 5 or greater enters the battlefield under your control, you may have @ deal 5 damage to target creature or player.
+whenever a creature with power 5 or greater enters the battlefield under your control, you may put a +1/+1 counter on @.
+whenever a creature with power 5 or greater enters the battlefield under your control, you may put two +1/+1 counters on it.
 whenever a creature with shadow dies, put a +1/+1 counter on @.
 whenever a creature you control dies, draw a card.
 whenever a creature you control dies, target opponent loses 1 life and you gain 1 life.
 whenever a creature you control dies, you may pay {x}. if you do, you gain x life.
+whenever a demon enters the battlefield under your control, return @ from your graveyard to your hand.
+whenever a djinn or efreet enters the battlefield, destroy it. it can't be regenerated.
+whenever a forest enters the battlefield, green creatures you control get +1/+1 and gain trample until end of turn.
+whenever a forest enters the battlefield under your control, @ gets +2/+2 until end of turn.
+whenever a forest enters the battlefield under your control, you may return @ from your graveyard to your hand.
+whenever a goblin enters the battlefield under your control, you may put a quest counter on @.
 whenever a goblin you control dies, you may put a +1/+1 counter on @.
 whenever a green creature dies, its controller discards a card.
+whenever a human enters the battlefield under your control, @ deals 1 damage to target creature or player.
+whenever a land enters the battlefield, tap all lands its controller controls.
 whenever a land enters the battlefield under your control, put a +1/+1 counter on @.
 whenever a land enters the battlefield under your control, untap @.
+whenever a land enters the battlefield, you may gain 1 life.
+whenever an angel enters the battlefield under your control, you gain 1 life.
+whenever an artifact enters the battlefield, @ gets +4/+4 until end of turn.
+whenever an artifact enters the battlefield, remove a +1/+1 counter from @.
+whenever an artifact enters the battlefield under your control, you may tap target permanent.
+whenever an artifact enters the battlefield, you may gain 1 life.
+whenever an artifact enters the battlefield, you may untap @.
+whenever an equipment enters the battlefield under your control, you may draw a card.
 whenever a nontoken creature dies, put a 1/1 white spirit creature token with flying onto the battlefield.
 whenever a nontoken creature you control dies, put a 1/1 green saproling creature token onto the battlefield.
 whenever a nontoken creature you control dies, put a charge counter on @.
 whenever a nontoken creature you control dies, target opponent discards a card.
+whenever a nontoken snake enters the battlefield under your control, you may return @ from your graveyard to your hand.
 whenever a nonwhite creature dies, return it to its owner's hand at the beginning of the next end step.
 whenever an opponent casts a black spell, you may pay {g}{g}. if you do, you draw a card.
 whenever an opponent casts a blue or black spell, you may put a +1/+1 counter on @.
@@ -3720,6 +3760,9 @@ whenever an opponent casts a spell, you may put a +1/+1 counter on @.
 whenever an opponent casts a spirit or arcane spell, @ deals 2 damage to that player.
 whenever an opponent casts a white spell, he or she loses 2 life.
 whenever an opponent casts a white spell, that player loses 1 life and you gain 1 life.
+whenever another artifact enters the battlefield, put a +1/+1 counter on @.
+whenever another artifact enters the battlefield under your control, @ gets +1/+1 until end of turn and is unblockable this turn.
+whenever another artifact enters the battlefield under your control, @ gets +2/+2 until end of turn.
 whenever another black creature you control dies, put a 1/1 white spirit creature token with flying onto the battlefield.
 whenever another creature dies, @ deals 2 damage to target player.
 whenever another creature dies, put a +1/+1 counter on @.
@@ -3728,13 +3771,40 @@ whenever another creature dies, you may draw a card. if you do, discard a card.
 whenever another creature dies, you may gain 1 life.
 whenever another creature dies, you may have @ deal 1 damage to target player.
 whenever another creature dies, you may put a +1/+1 counter on @.
+whenever another creature enters the battlefield, exile @. return @ to the battlefield under its owner's control at the beginning of the next end step.
+whenever another creature enters the battlefield, its controller loses 1 life.
+whenever another creature enters the battlefield under your control, creatures you control get +1/+1 until end of turn.
+whenever another creature enters the battlefield under your control, @ gets +1/+0 and gains trample until end of turn.
+whenever another creature enters the battlefield under your control, @ gets +1/+1 until end of turn.
+whenever another creature enters the battlefield under your control, @ gets +2/+2 until end of turn.
+whenever another creature enters the battlefield under your control, put a +1/+1 counter on @.
+whenever another creature enters the battlefield under your control, put a time counter on @.
+whenever another creature enters the battlefield under your control, that creature gets +3/+3 until end of turn.
+whenever another creature enters the battlefield under your control, you gain 2 life.
+whenever another creature enters the battlefield under your control, you may gain 1 life.
+whenever another creature enters the battlefield, untap @.
+whenever another creature enters the battlefield, you gain 1 life.
+whenever another creature enters the battlefield, you lose 1 life.
+whenever another creature enters the battlefield, you may gain 1 life.
+whenever another creature with power 2 or less enters the battlefield under your control, you may pay {1}. if you do, draw a card.
+whenever another creature with power 3 or greater enters the battlefield under your control, you may draw a card.
+whenever another creature with power 5 or greater enters the battlefield under your control, you may return target creature card from your graveyard to your hand.
 whenever another creature you control dies, it deals damage equal to its power to target player.
 whenever another creature you control dies, put a +1/+1 counter on @.
+whenever another elf enters the battlefield, put a +1/+1 counter on @.
 whenever another goblin you control dies, you may have @ deal 1 damage to target player.
 whenever another human creature dies, put a +1/+1 counter on @.
+whenever another human enters the battlefield under your control, put a +1/+1 counter on @.
+whenever another human enters the battlefield under your control, untap @.
+whenever another kavu enters the battlefield, put a +1/+1 counter on @.
 whenever another non-spirit creature you control dies, put a 1/1 white spirit creature token with flying onto the battlefield.
+whenever another nontoken artifact enters the battlefield under your control, you may pay {2}. if you do, put a token that's a copy of that artifact onto the battlefield.
 whenever another nontoken creature dies, you may draw a card.
+whenever another nontoken creature enters the battlefield under your control, you may draw a card.
+whenever another nontoken creature enters the battlefield under your control, you may pay {g}{u}. if you do, put a token that's a copy of that creature onto the battlefield.
 whenever another nontoken creature you control dies, put a 3/1 black and red graveborn creature token with haste onto the battlefield.
+whenever another nontoken elf enters the battlefield, you may put a 1/1 green insect creature token onto the battlefield.
+whenever another scarecrow enters the battlefield under your control, destroy target permanent.
 whenever another zombie you control dies, target opponent loses 1 life.
 whenever a player casts a black spell, @ gets +2/+2 until end of turn.
 whenever a player casts a black spell, you gain 1 life.
@@ -3779,6 +3849,7 @@ whenever a player casts a white spell, you may gain 1 life.
 whenever a player casts a white spell, you may pay {1}. if you do, you gain 1 life.
 whenever a player casts a white spell, you may pay {3}. if you do, untap target permanent.
 whenever a samurai you control dies, you may put a +1/+1 counter on @.
+whenever a swamp enters the battlefield under your control, you may return @ from your graveyard to your hand.
 whenever @ attacks, all attacking creatures with flanking get +1/+1 until end of turn.
 whenever @ attacks, all other creatures you control get +1/+1 until end of turn.
 whenever @ attacks, another target attacking creature gets +0/+2 until end of turn. untap that creature.
