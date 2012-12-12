@@ -37,13 +37,13 @@ public class MagicDiscardEvent extends MagicEvent {
         String description = "";
         switch (actualAmount) {
             case 0:
-                description = " has no cards to discard.";
+                description = "has no cards to discard.";
                 break;
             case 1:
-                description = " discards a card$.";
+                description = "discards a card$.";
                 break;
             default :
-                description = " discards " + amount + " cards$.";
+                description = "discards " + amount + " cards$.";
         }
         return description;
     }
