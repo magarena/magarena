@@ -3307,7 +3307,12 @@ werewolf creatures you control get +1/+0 and have trample.
 {w}: @ gets +1/+1 until end of turn.
 when a creature dies, destroy enchanted creature.
 when a creature you control dies, sacrifice @. if you do, put four 1/1 colorless spirit creature tokens onto the battlefield.
+when a dragon enters the battlefield, you may return @ from your graveyard to the battlefield.
+when a nonblack creature enters the battlefield, sacrifice @. if you do, destroy that creature.
 when an opponent casts a creature spell, sacrifice @.
+when another creature enters the battlefield, return @ to its owner's hand.
+when another creature enters the battlefield, sacrifice @ and it deals 3 damage to target player.
+when another creature enters the battlefield, sacrifice @. if you do, @ deals 4 damage to that creature.
 when a player casts a spell, sacrifice @ and counter that spell.
 when @ becomes the target of a spell or ability, return @ to its owner's hand.
 when @ becomes the target of a spell or ability, sacrifice it.

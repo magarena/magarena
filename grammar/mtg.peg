@@ -237,10 +237,14 @@ EntersGraveyardTrigger
     ;
 
 EntersBattlefieldTrigger
-    = "when @ enters the battlefield"
-    / "as @ enters the battlefield"
+    = EntersVerb SPACE SelectPermanent SPACE "enters the battlefield" (SPACE "under your control")?
     / "whenever @ or another ally enters the battlefield under your control"
-    / "whenever " SelectPermanent " enters the battlefield" " under your control"?
+    ;
+
+EntersVerb
+    = "whenever"
+    / "when"
+    / "as"
     ;
 
 BeginningEndStepTrigger
