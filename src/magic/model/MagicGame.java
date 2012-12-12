@@ -823,6 +823,8 @@ public class MagicGame {
     public void checkState() {
         while (stateCheckRequired) {
             stateCheckRequired = false;
+           
+            update();
             
             // Check if a player has lost
             for (final MagicPlayer player : players) {
@@ -835,7 +837,6 @@ public class MagicGame {
                 permanent.generateStateBasedActions();
             }}
             
-            update();
             //some action may set stateCheckRequired to true, if so loop again
         }
     }
