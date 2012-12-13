@@ -728,8 +728,8 @@ SelectOp
     ;
 
 SelectCard
-    = "@" (SPACE CardRestriction)?
-    / "it"
+    = "@" (SPACE CardRestriction)? (SEP RestrictedCard)*
+    / "it"(SEP RestrictedCard)*
     / SelectOp SPACE RestrictedCard (SEP RestrictedCard)*
     ;
 
