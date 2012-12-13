@@ -13,7 +13,7 @@ parsable.txt: mtg.peg
 	cat test_all.out | grep FAILED | sort | uniq -c | sort -n > failed.txt
 
 MagicRuleParser.java: mtg.peg
-	-rm *.class
+	-rm *.class $@
 	java -cp Mouse-1.5.1/build/Mouse-1.5.1.jar mouse.Generate -M -G $^ -P MagicRuleParser -S MagicSyntaxTree
 	sed -i 's/accept()/sem.action() \&\& accept()/g' $@
 

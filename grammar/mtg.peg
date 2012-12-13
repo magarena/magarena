@@ -238,7 +238,6 @@ EntersGraveyardTrigger
 
 EntersBattlefieldTrigger
     = EntersVerb SPACE SelectPermanent SPACE "enters the battlefield" (SPACE "under your control")?
-    / "whenever @ or another ally enters the battlefield under your control"
     ;
 
 EntersVerb
@@ -741,8 +740,8 @@ SelectCreature
     ;
 
 SelectPermanent
-    = "@"
-    / "it"
+    = "@" (SEP RestrictedPermanent)*
+    / "it" (SEP RestrictedPermanent)*
     / (SelectOp SPACE)? RestrictedPermanent (SEP RestrictedPermanent)*
     ;
 

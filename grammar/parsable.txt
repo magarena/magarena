@@ -3998,6 +3998,8 @@ whenever @ or another ally enters the battlefield under your control, you may ha
 whenever @ or another ally enters the battlefield under your control, you may put a +1/+1 counter on @.
 whenever @ or another ally enters the battlefield under your control, you may put a +1/+1 counter on each ally creature you control.
 whenever @ or another ally enters the battlefield under your control, you may put a 2/2 green wolf creature token onto the battlefield. if you do, put a +1/+1 counter on @.
+whenever @ or another artifact enters the battlefield, put a charge counter on @.
+whenever @ or another zombie enters the battlefield, all non-zombie creatures get -1/-1 until end of turn.
 whenever you cast a black spell, @ gains fear until end of turn.
 whenever you cast a black spell, @ gets +1/+1 until end of turn.
 whenever you cast a black spell, remove a -1/-1 counter from @.
