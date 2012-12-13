@@ -315,6 +315,7 @@ PermanentState
     / "attacks each turn if able"
     / "can't be countered"
     / "are " ColorSpec
+    / "are " Tribal " in addition to their other creature types"
     ;
 
 SetPTAction

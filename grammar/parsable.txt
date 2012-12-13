@@ -773,6 +773,7 @@ all creatures have wither.
 all creatures lose flying.
 all creatures lose flying and islandwalk.
 all creatures lose flying until end of turn.
+all goblins are black and are zombies in addition to their other creature types.
 all lands are indestructible.
 all permanents are colorless.
 all sliver creatures get +0/+1.
@@ -1195,6 +1196,7 @@ creatures without flying can't block this turn.
 creatures without flying get -2/-0.
 creatures without flying have reach.
 creatures with power 7 or greater can't attack or block.
+creatures you control are slivers in addition to their other creature types.
 creatures you control can't attack.
 creatures you control gain double strike until end of turn.
 creatures you control gain haste until end of turn.
