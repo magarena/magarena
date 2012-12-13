@@ -789,6 +789,7 @@ all sliver creatures have shadow.
 all sliver creatures have trample.
 all sliver creatures have vigilance.
 all slivers have shroud.
+@ and other permanents you control are indestructible.
 annihilator 1
 annihilator 2
 annihilator 3
@@ -2663,9 +2664,11 @@ sacrifice @: you gain 3 life.
 sacrifice @: you gain 4 life.
 sacrifice @: you may put a land card from your hand onto the battlefield.
 sacrifice @: you may tap or untap target creature.
+saproling creatures and other treefolk creatures get +1/+1.
 saproling creatures get +1/+1.
 shadow
 shroud
+skeleton creatures you control and other zombie creatures you control get +1/+1 and have deathtouch.
 soldier creatures have vigilance.
 soldier creatures you control get +1/+2.
 soulbond
@@ -2764,6 +2767,7 @@ tap an untapped creature you control: target player puts the top card of his or 
 tap an untapped creature you control: untap target basic land.
 tap an untapped druid you control: add {g} to your mana pool.
 tap an untapped dwarf you control: target creature gets +2/+0 until end of turn.
+tap an untapped legendary permanent you control: untap @.
 tap an untapped merfolk you control: @ gets +2/+1 until end of turn.
 tap an untapped merfolk you control: target player puts the top card of his or her library into his or her graveyard.
 tap an untapped swamp you control: @ deals 1 damage to target creature or player.

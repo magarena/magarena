@@ -713,17 +713,14 @@ CounterAction
 SelectOp
     = "target"
     / "another target"
-    / "all other"
     / "all"
     / "an"
     / "a"
-    / "each other"
     / "each"
     / "enchanted"
     / "equipped"
     / "the"
     / "that"
-    / "other"
     / "those"
     ;
 
@@ -752,7 +749,7 @@ SelectSpell
     ;
 
 RestrictedPermanent
-    = (PermanentRestriction SPACE)? Permanent (SPACE PermanentRestriction)?
+    = (PermanentRestriction SPACE)* Permanent (SPACE PermanentRestriction)*
     / RestrictedCreature
     / RestrictedLand
     / RestrictedArtifact
@@ -831,7 +828,6 @@ PermanentRestriction
     = ColorSpec
     / SelectPlayer " control" "s"?
     / SelectPlayer " don't control"
-    / "another"
     / "tapped"
     / "untapped"
     / "noncreature"
@@ -842,6 +838,8 @@ PermanentRestriction
     / "token" "s"?
     / "artifact"
     / "other than @"
+    / "another"
+    / "other"
     / "legendary"
     / "with converted mana cost " Number " or less"
     / "with converted mana cost " Number " or greater"
