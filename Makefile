@@ -447,3 +447,27 @@ support/ui:
 wiki/UpcomingCards.wiki: cards/new.txt
 	echo "#summary New cards in the next release" > $@
 	cat <(echo "{{{") $^ <(echo "}}}") >> $@
+
+parser/test: $(MAG) grammar/parsable.txt
+	$(JAVA) magic.grammar.Check < $(word 2,$^)
+
+parser/test_all: $(MAG) grammar/rules.txt
+	$(JAVA) magic.grammar.Check < $(word 2,$^)
+
+parser/run: $(MAG)
+	$(JAVA) magic.grammar.Check
+
+grammar/parsable.txt: grammar/mtg.peg
+	make parser/test_all > grammar/test_all.out
+	cat grammar/test_all.out | grep PARSED | sed 's/PARSED: //' | sort | uniq > $@
+	cat grammar/test_all.out | grep FAILED | sort | uniq -c | sort -n > grammar/failed.txt
+
+src/magic/grammar/MagicRuleParser.java: grammar/mtg.peg
+	java -cp lib/Mouse-1.5.1.jar mouse.Generate -M -G $^ -P MagicRuleParser -S MagicSyntaxTree -p magic.grammar -r magic.grammar
+	mv MagicRuleParser.java $@
+	sed -i 's/accept()/sem.action() \&\& accept()/g' $@
+
+grammar/CounterType: grammar/rules.txt
+	grep -o "[^ ]* counter \(on\|from\)" $@ | cut -d' ' -f1 | sort | uniq > $@
+	# remove a, each, that
+	# add poison

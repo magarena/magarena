@@ -1,4 +1,6 @@
-class MagicSyntaxTree extends mouse.runtime.SemanticsBase {
+package magic.grammar;
+
+class MagicSyntaxTree extends magic.grammar.SemanticsBase {
     Node tree;
     boolean action() {
         final Node node = new Node();
