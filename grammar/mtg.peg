@@ -717,8 +717,6 @@ SelectOp
     / "an"
     / "a"
     / "each"
-    / "enchanted"
-    / "equipped"
     / "the"
     / "that"
     / "those"
@@ -841,6 +839,7 @@ PermanentRestriction
     / "another"
     / "other"
     / "legendary"
+    / "enchanted"
     / "with converted mana cost " Number " or less"
     / "with converted mana cost " Number " or greater"
     / "with converted mana cost " Number
@@ -857,6 +856,7 @@ CreatureRestriction
     / "attacking"
     / "blocking"
     / "blocked"
+    / "equipped"
     / Tribal
     / PermanentRestriction
     / PowerToughness

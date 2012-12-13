@@ -1181,6 +1181,7 @@ creatures and lands you control have shroud.
 creatures can't attack.
 creatures can't attack this turn.
 creatures can't block.
+creatures enchanted player controls get -1/-1.
 creatures with flying get +1/+1.
 creatures with flying get -2/-0.
 creatures with flying get +2/+0.
@@ -1439,6 +1440,7 @@ destroy target creature with power 2 or less.
 destroy target creature with power 4 or greater.
 destroy target creature with power 4 or greater. it can't be regenerated.
 destroy target creature. you gain 4 life.
+destroy target enchanted permanent.
 destroy target enchantment.
 destroy target enchantment. you gain 2 life.
 destroy target equipment. add {g} to your mana pool.
@@ -2438,6 +2440,7 @@ return target creature to its owner's hand.
 return target creature to its owner's hand. its controller draws a card.
 return target creature to its owner's hand. its controller loses 1 life.
 return target creature to its owner's hand. you gain 2 life.
+return target enchanted permanent to its owner's hand.
 return target goblin card from your graveyard to your hand.
 return target green card from your graveyard to your hand.
 return target instant or sorcery card from your graveyard to your hand.
@@ -2969,6 +2972,7 @@ target player sacrifices a permanent.
 {t}: destroy target creature with islandwalk.
 {t}: destroy target creature with power 4 or greater.
 {t}: destroy target djinn or efreet.
+{t}: destroy target enchanted creature.
 {t}: destroy target land.
 {t}: destroy target tapped creature.
 {t}: destroy target wall.
