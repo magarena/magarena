@@ -734,8 +734,8 @@ SelectCard
     ;
 
 SelectCreature
-    = "@"
-    / "it"
+    = "@" (SEP RestrictedCreature)*
+    / "it" (SEP RestrictedCreature)*
     / (SelectOp SPACE)? RestrictedCreature (SEP RestrictedCreature)*
     ;
 
@@ -746,8 +746,8 @@ SelectPermanent
     ;
 
 SelectSpell
-    = "@"
-    / "it"
+    = "@" (SEP RestrictedSpell)*
+    / "it" (SEP RestrictedSpell)*
     / (SelectOp SPACE)? RestrictedSpell (SEP RestrictedSpell)*
     ;
 

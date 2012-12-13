@@ -3998,7 +3998,15 @@ whenever @ or another ally enters the battlefield under your control, you may ha
 whenever @ or another ally enters the battlefield under your control, you may put a +1/+1 counter on @.
 whenever @ or another ally enters the battlefield under your control, you may put a +1/+1 counter on each ally creature you control.
 whenever @ or another ally enters the battlefield under your control, you may put a 2/2 green wolf creature token onto the battlefield. if you do, put a +1/+1 counter on @.
+whenever @ or another artifact creature dies, you may untap target artifact.
 whenever @ or another artifact enters the battlefield, put a charge counter on @.
+whenever @ or another cleric dies, put a 2/2 black zombie creature token onto the battlefield.
+whenever @ or another creature dies, target player loses 1 life and you gain 1 life.
+whenever @ or another creature dies, target player puts the top card of his or her library into his or her graveyard.
+whenever @ or another creature you control dies, each opponent sacrifices a creature.
+whenever @ or another creature you control with power 5 or greater dies, you may gain 5 life.
+whenever @ or another vampire you control dies, you may pay {b}. if you do, target player loses 2 life and you gain 2 life.
+whenever @ or another zombie dies, each opponent loses 1 life.
 whenever @ or another zombie enters the battlefield, all non-zombie creatures get -1/-1 until end of turn.
 whenever you cast a black spell, @ gains fear until end of turn.
 whenever you cast a black spell, @ gets +1/+1 until end of turn.
