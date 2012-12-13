@@ -2933,6 +2933,7 @@ target player sacrifices a permanent.
 {t}: @ deals 1 damage to each other creature without flying.
 {t}: @ deals 1 damage to itself.
 {t}: @ deals 1 damage to target attacking or blocking creature.
+{t}: @ deals 1 damage to target attacking or blocking spirit.
 {t}: @ deals 1 damage to target creature.
 {t}: @ deals 1 damage to target creature and that creature's controller loses 1 life.
 {t}: @ deals 1 damage to target creature or player.

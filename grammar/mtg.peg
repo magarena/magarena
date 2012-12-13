@@ -714,7 +714,6 @@ CounterAction
 SelectOp
     = "target"
     / "another target"
-    / "another"
     / "all other"
     / "all"
     / "an"
@@ -763,8 +762,7 @@ RestrictedPermanent
     ;
 
 RestrictedArtifact
-    = Artifact (SPACE PermanentRestriction)?
-    / (PermanentRestriction SPACE)? Artifact (SPACE PermanentRestriction)?
+    = (PermanentRestriction SPACE)*+ Artifact (SPACE PermanentRestriction)*
     ;
 
 RestrictedEnchantment
@@ -827,13 +825,14 @@ CardRestriction
 
 RestrictedCreature
     = (CreatureRestriction SPACE)* Creature (SPACE CreatureRestriction)*
-    / RestrictedTribal
+    / (CreatureRestriction SPACE)*+ Tribal (SPACE CreatureRestriction)*
     ;
 
 PermanentRestriction
     = ColorSpec
     / SelectPlayer " control" "s"?
     / SelectPlayer " don't control"
+    / "another"
     / "tapped"
     / "untapped"
     / "noncreature"
