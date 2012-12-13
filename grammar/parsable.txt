@@ -749,6 +749,8 @@
 {8}, {t}: you gain 10 life.
 affinity for artifacts
 all artifacts have shroud.
+all creatures are black.
+all creatures are black and have deathtouch.
 all creatures gain fear until end of turn.
 all creatures get -1/-0.
 all creatures get -1/-0 until end of turn.
@@ -772,6 +774,7 @@ all creatures lose flying.
 all creatures lose flying and islandwalk.
 all creatures lose flying until end of turn.
 all lands are indestructible.
+all permanents are colorless.
 all sliver creatures get +0/+1.
 all sliver creatures get +0/+2.
 all sliver creatures get +1/+0.
@@ -788,6 +791,7 @@ all sliver creatures have reach.
 all sliver creatures have shadow.
 all sliver creatures have trample.
 all sliver creatures have vigilance.
+all slivers are colorless.
 all slivers have shroud.
 @ and other permanents you control are indestructible.
 annihilator 1

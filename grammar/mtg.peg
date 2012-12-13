@@ -314,6 +314,7 @@ PermanentState
     / "are unblockable" 
     / "attacks each turn if able"
     / "can't be countered"
+    / "are " ColorSpec
     ;
 
 SetPTAction
