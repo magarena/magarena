@@ -448,8 +448,8 @@ wiki/UpcomingCards.wiki: cards/new.txt
 	echo "#summary New cards in the next release" > $@
 	cat <(echo "{{{") $^ <(echo "}}}") >> $@
 
-parser/test: $(MAG) grammar/parsable.txt
-	$(JAVA) magic.grammar.Check < $(word 2,$^)
+parser/test: $(MAG) 
+	$(JAVA) magic.grammar.Check < grammar/parsable.txt
 
 parser/test_all: $(MAG) grammar/rules.txt
 	$(JAVA) magic.grammar.Check < $(word 2,$^)

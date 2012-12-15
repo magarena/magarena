@@ -414,7 +414,7 @@ Player
     / "you"
     / "he or she"
     / "its controller"
-    / "that creature's controller"
+    / "that "  SelectPermanent "'s controller"
     / "its owner"
     / "player"
     / "a player"

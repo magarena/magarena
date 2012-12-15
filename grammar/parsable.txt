@@ -1406,6 +1406,7 @@ destroy target artifact.
 destroy target artifact creature.
 destroy target artifact creature or black creature. it can't be regenerated.
 destroy target artifact, creature, or land. @ deals 3 damage to you.
+destroy target artifact. @ deals 3 damage to that artifact's controller.
 destroy target artifact, enchantment, or land.
 destroy target artifact. it can't be regenerated.
 destroy target artifact. its controller loses 1 life.
@@ -1418,6 +1419,7 @@ destroy target artifact or enchantment. you gain 4 life.
 destroy target artifact or land.
 destroy target artifact or land. it can't be regenerated.
 destroy target artifact or land. its controller loses 1 life.
+destroy target artifact with converted mana cost x. it can't be regenerated. @ deals x damage to that artifact's controller.
 destroy target artifact you don't control.
 destroy target attacking creature.
 destroy target attacking creature with flying.
@@ -1458,6 +1460,7 @@ destroy target land. creatures without flying can't block this turn.
 destroy target land. @ deals 13 damage to target creature.
 destroy target land. @ deals 1 damage to each creature and each player.
 destroy target land. @ deals 1 damage to each human creature.
+destroy target land. @ deals 2 damage to that land's controller.
 destroy target land. its controller discards a card.
 destroy target land. its controller loses 2 life.
 destroy target land or nonblack creature.
@@ -1484,6 +1487,7 @@ destroy target non-spirit creature.
 destroy target non-vampire, non-werewolf, non-zombie creature.
 destroy target nonwhite permanent.
 destroy target permanent.
+destroy target plains or island. @ deals 3 damage to that land's controller.
 destroy target spirit.
 destroy target spirit or enchantment.
 destroy target tapped creature.
@@ -3746,6 +3750,7 @@ whenever a goblin enters the battlefield under your control, you may put a quest
 whenever a goblin you control dies, you may put a +1/+1 counter on @.
 whenever a green creature dies, its controller discards a card.
 whenever a human enters the battlefield under your control, @ deals 1 damage to target creature or player.
+whenever a land enters the battlefield, @ deals 2 damage to that land's controller.
 whenever a land enters the battlefield, tap all lands its controller controls.
 whenever a land enters the battlefield under your control, put a +1/+1 counter on @.
 whenever a land enters the battlefield under your control, untap @.
