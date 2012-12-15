@@ -1895,6 +1895,7 @@ gain control of target nonartifact, nonblack creature.
 {g}: @ gains haste until end of turn.
 {g}: @ gains reach until end of turn.
 {g}: @ gains trample until end of turn.
+{g}{g}: @ becomes a 4/3 centaur creature until end of turn. it's still an enchantment.
 {g}{g}: counter target black spell.
 {g}: @ gets +0/+1 until end of turn.
 {g}: @ gets +1/+0 until end of turn.
@@ -4054,6 +4055,7 @@ whenever you cast a blue spell, remove a -1/-1 counter from @.
 whenever you cast a blue spell, target creature gains flying until end of turn.
 whenever you cast a blue spell, you may put a 1/1 blue bird creature token with flying onto the battlefield.
 whenever you cast a blue spell, you may untap @.
+whenever you cast a creature spell, @ becomes a 4/4 illusion creature with flying until end of turn. it's still an enchantment.
 whenever you cast a creature spell, @ deals 1 damage to target player.
 whenever you cast a creature spell, put a +1/+1 counter on @.
 whenever you cast a creature spell, put a 1/1 green saproling creature token onto the battlefield.

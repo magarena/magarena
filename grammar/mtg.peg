@@ -297,8 +297,8 @@ AnimateVerb
     ;
 
 AnimateActionReminder
-    = "it's still a land"
-    / "that's still a land"
+    = "it's still " SelectPermanent
+    / "that's still " SelectPermanent
     ;
 
 ChangeLoyaltyAction
