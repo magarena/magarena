@@ -288,11 +288,17 @@ IfCondition
     ;
 
 AnimateAction
-    = SelectPermanent " becomes a " CreatureSpec
+    = SelectPermanent SPACE AnimateVerb SPACE CreatureSpec (SPACE AnimateActionReminder)?
+    ;
+
+AnimateVerb
+    = "becomes a"
+    / "is a"
     ;
 
 AnimateActionReminder
     = "it's still a land"
+    / "that's still a land"
     ;
 
 ChangeLoyaltyAction
