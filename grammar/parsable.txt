@@ -98,6 +98,7 @@
 {1}{g}, sacrifice an elf: target creature gets +3/+3 until end of turn.
 {1}{g}, sacrifice @: destroy target artifact or enchantment.
 {1}{g}, sacrifice @: destroy target enchantment.
+{1}{g}, sacrifice @: return target arcane card from your graveyard to your hand.
 {1}{g}: target blocking creature gets +0/+1 until end of turn.
 {1}{g}: target kavu creature gets -1/+1 until end of turn.
 {1}{g}, {t}: @ deals 5 damage to target attacking or blocking creature with flying.
@@ -340,6 +341,7 @@
 {1}{w}, {t}: put a 1/1 white soldier creature token onto the battlefield.
 {1}{w}, {t}, sacrifice @: destroy target artifact or enchantment.
 {1}{w}, {t}: you gain 5 life.
+{1}{w}, {t}: you may put an equipment card from your hand onto the battlefield.
 {1}{w}{w}: @ becomes a 2/2 white spirit artifact creature with flying and first strike until end of turn.
 {1}{w}{w}, {q}: return target creature card with converted mana cost 3 or less from your graveyard to the battlefield.
 {1}{w}{w}: target creature gets +1/+1 until end of turn.
@@ -672,6 +674,7 @@
 {3}{w}{u}: until end of turn, @ becomes a 4/4 white and blue elemental creature with flying and vigilance. it's still a land.
 {3}{w}{w}, sacrifice @: exile all black creatures.
 {3}{w}{w}: you draw a card and target opponent gains 3 life.
+{3}: you may put a minotaur permanent card from your hand onto the battlefield.
 {3}: you may tap or untap equipped creature.
 {4}{b}{b}: exile target creature and put a +1/+1 counter on @.
 {4}{b}{b}, {t}, sacrifice @: target creature gets -6/-6 until end of turn.
@@ -729,6 +732,7 @@
 {6}: @ becomes a 3/3 elemental artifact creature that's still a land.
 -6: put five 4/4 red dragon creature tokens with flying onto the battlefield.
 {6}, {t}: prevent all damage that would be dealt to you this turn by creatures with flying.
+{6}, {t}: return target rebel permanent card with converted mana cost 5 or less from your graveyard to the battlefield.
 {7}{b}: target creature gets -3/-3 until end of turn.
 -7: destroy all lands target player controls.
 {7}{g}: @ gets +5/+5 until end of turn.
@@ -2475,6 +2479,7 @@ return target multicolored card from your graveyard to your hand.
 return target nonland permanent to its owner's hand.
 return target nonland permanent with converted mana cost x to its owner's hand.
 return target nonland permanent you don't control to its owner's hand.
+return target permanent card from your graveyard to your hand.
 return target permanent to its owner's hand.
 return target permanent to its owner's hand. its controller loses 3 life.
 return target permanent you control to its owner's hand.
@@ -3216,6 +3221,8 @@ trample
 {t}: untap target permanent.
 {t}: you gain 1 life.
 {t}: you gain 2 life.
+{t}: you may put a faerie permanent card from your hand onto the battlefield.
+{t}: you may put a goblin permanent card from your hand onto the battlefield.
 {t}: you may put a land card from your hand onto the battlefield.
 {t}: you may put a land card from your hand onto the battlefield. activate this ability only any time you could cast a sorcery.
 {t}: you may tap or untap another target permanent.
@@ -3423,6 +3430,7 @@ when @ dies, you gain 4 life.
 when @ dies, you gain control of all enchantments.
 when @ dies, you lose 2 life.
 when @ dies, you may draw a card.
+when @ dies, you may exile it. if you do, return target spirit permanent card from your graveyard to the battlefield.
 when @ dies, you may gain 3 life.
 when @ dies, you may have it deal 1 damage to target creature or player.
 when @ dies, you may have target creature get -2/-2 until end of turn.
@@ -3703,6 +3711,7 @@ when @ enters the battlefield, you may return target card from your graveyard to
 when @ enters the battlefield, you may return target creature card from your graveyard to your hand.
 when @ enters the battlefield, you may return target creature card with infect from your graveyard to your hand.
 when @ enters the battlefield, you may return target creature to its owner's hand.
+when @ enters the battlefield, you may return target dragon permanent card from your graveyard to the battlefield.
 when @ enters the battlefield, you may return target enchantment card from your graveyard to your hand.
 when @ enters the battlefield, you may return target instant card from your graveyard to your hand.
 when @ enters the battlefield, you may return target instant or sorcery card from your graveyard to your hand.
@@ -4012,6 +4021,7 @@ whenever @ deals combat damage to a player, you may have it deal that much damag
 whenever @ deals combat damage to a player, you may pay {2}{b}. if you do, put target creature card from a graveyard onto the battlefield under your control.
 whenever @ deals combat damage to a player, you may pay {2}{g}. if you do, put six +1/+1 counters on @.
 whenever @ deals combat damage to a player, you may pay {2}{w}. if you do, @ deals 3 damage to each nonwhite creature.
+whenever @ deals combat damage to a player, you may return target arcane card from your graveyard to your hand.
 whenever @ deals combat damage to a player, you may return target creature card from your graveyard to your hand.
 whenever @ deals combat damage to a player, you may return target creature that player controls to its owner's hand.
 whenever @ deals combat damage to a player, you may sacrifice it. if you do, @ deals 3 damage to that player.
@@ -4030,6 +4040,7 @@ whenever @ deals damage to a player, that player discards a card.
 whenever @ deals damage to a player, that player gets a poison counter.
 whenever @ deals damage to a player, that player gets two poison counters.
 whenever @ deals damage to a player, you may draw a card.
+whenever @ deals damage to a player, you may put a goblin permanent card from your hand onto the battlefield.
 whenever @ deals damage, you gain that much life.
 whenever @ deals damage, you lose that much life.
 whenever equipped creature dies, draw two cards.
