@@ -342,6 +342,7 @@
 {1}{w}, {t}, sacrifice @: destroy target artifact or enchantment.
 {1}{w}, {t}: you gain 5 life.
 {1}{w}, {t}: you may put an equipment card from your hand onto the battlefield.
+{1}{w}{u}, {t}: return target artifact or enchantment card from your graveyard to your hand.
 {1}{w}{w}: @ becomes a 2/2 white spirit artifact creature with flying and first strike until end of turn.
 {1}{w}{w}, {q}: return target creature card with converted mana cost 3 or less from your graveyard to the battlefield.
 {1}{w}{w}: target creature gets +1/+1 until end of turn.
@@ -1152,6 +1153,7 @@ champion an elf
 champion a treefolk or warrior
 changeling
 cleric creatures have vigilance.
+counter target artifact or enchantment spell.
 counter target artifact spell.
 counter target blue instant spell.
 counter target blue spell.
@@ -2451,6 +2453,8 @@ return all permanents to their owners' hands.
 return target artifact card from your graveyard to the battlefield.
 return target artifact card from your graveyard to your hand.
 return target artifact, enchantment, or land to its owner's hand.
+return target artifact or enchantment card from a graveyard to its owner's hand.
+return target artifact or enchantment card from your graveyard to your hand.
 return target artifact to its owner's hand.
 return target attacking creature to its owner's hand.
 return target black creature card from your graveyard to your hand.

@@ -794,16 +794,12 @@ SpellRestriction
     / "multicolored"
     / "noncreature"
     / "during an opponent's turn"
-    / "instant or sorcery"
-    / "instant"
-    / "sorcery"
-    / "spirit or arcane"
-    / "arcane"
     / "with infect"
     / "with converted mana cost " Number " or less"
     / "with converted mana cost " Number " or greater"
     / "with converted mana cost " Number
-    / RestrictedPermanent 
+    / SpellType (SEP SpellType)*
+    / RestrictedPermanent (SEP RestrictedPermanent)* 
     ;
 
 RestrictedCard
@@ -883,6 +879,14 @@ Color
 Tribal
     = CreatureType "s"?
     / "non-" CreatureType
+    ;
+
+SpellType
+    = "instant"
+    / "sorcery"
+    / "arcane"
+    / "spirit"
+    / "trap"
     ;
 
 CreatureType
