@@ -361,7 +361,7 @@ WithAbilitySpec
     ;
 
 CreatureSpec
-    = PowerToughness (SPACE ColorSpec)? (SPACE CreatureType)* " artifact"? " creature" (SPACE WithAbilitySpec)? 
+    = ("legendary" SPACE)? PowerToughness (SPACE ColorSpec)? (SPACE CreatureType)* " artifact"? " creature" (SPACE WithAbilitySpec)? 
     ;
 
 ControlAction

@@ -386,6 +386,7 @@
 +2: each player draws a card.
 {2}: enchanted forest becomes a 4/4 green spirit creature until end of turn. it's still a land.
 {2}: enchanted island becomes a 3/2 blue spirit creature with flying until end of turn. it's still a land.
+{2}: enchanted land becomes a legendary 8/12 spirit creature with trample until end of turn. it's still a land.
 {2}: enchanted mountain becomes a 6/1 red spirit creature until end of turn. it's still a land.
 {2}: equipped creature gains hexproof until end of turn.
 -2: gain control of target creature.
