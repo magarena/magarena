@@ -780,7 +780,7 @@ RestrictedTribal
     ;
 
 RestrictedSpell
-    = (SpellRestriction SPACE)? Spell (SPACE SpellRestriction)?
+    = (SpellRestriction SPACE)* Spell (SPACE SpellRestriction)*
     ;
 
 ColorSpec
@@ -796,9 +796,6 @@ SpellRestriction
     / "noncreature"
     / "enchantment"
     / "spirit or arcane"
-    / "treefolk"
-    / "vampire creature"
-    / "wizard"
     / "artifact"
     / "during an opponent's turn"
     / "instant or sorcery"
@@ -808,6 +805,8 @@ SpellRestriction
     / "with converted mana cost " Number " or less"
     / "with converted mana cost " Number " or greater"
     / "with converted mana cost " Number
+    / Tribal SPACE "creature"
+    / Tribal
     ;
 
 RestrictedCard

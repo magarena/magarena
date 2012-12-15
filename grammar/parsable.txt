@@ -1149,6 +1149,7 @@ champion a treefolk or warrior
 changeling
 cleric creatures have vigilance.
 counter target artifact spell.
+counter target blue instant spell.
 counter target blue spell.
 counter target creature spell.
 counter target creature spell. its controller loses 1 life.
@@ -2637,6 +2638,7 @@ sacrifice a swamp: @ gains fear until end of turn.
 sacrifice a swamp: regenerate target black creature.
 sacrifice a thrull: put three time counters on @.
 sacrifice @: counter target instant or sorcery spell unless its controller pays {1}.
+sacrifice @: counter target red instant or sorcery spell.
 sacrifice @: counter target spell unless its controller pays {1}.
 sacrifice @: counter target spell unless its controller pays {2}.
 sacrifice @: counter target spell unless its controller pays {3}.
@@ -3849,6 +3851,7 @@ whenever another nontoken creature you control dies, put a 3/1 black and red gra
 whenever another nontoken elf enters the battlefield, you may put a 1/1 green insect creature token onto the battlefield.
 whenever another scarecrow enters the battlefield under your control, destroy target permanent.
 whenever another zombie you control dies, target opponent loses 1 life.
+whenever a player casts a black, red, or green creature spell, it gains devour 5.
 whenever a player casts a black spell, @ gets +2/+2 until end of turn.
 whenever a player casts a black spell, you gain 1 life.
 whenever a player casts a black spell, you may gain 1 life.
@@ -3861,12 +3864,15 @@ whenever a player casts a blue spell, you may gain 1 life.
 whenever a player casts a blue spell, you may pay {1}. if you do, target player puts the top two cards of his or her library into his or her graveyard.
 whenever a player casts a blue spell, you may pay {1}. if you do, you gain 1 life.
 whenever a player casts a blue spell, you may pay {3}. if you do, untap target permanent.
+whenever a player casts a giant spell, you may put a +1/+1 counter on @.
+whenever a player casts a goblin spell, you may pay {g}. if you do, you gain 2 life.
 whenever a player casts a green or white spell, that player discards a card.
 whenever a player casts a green spell, put a +1/+1 counter on @.
 whenever a player casts a green spell, you may gain 1 life.
 whenever a player casts a green spell, you may pay {1}. if you do, target creature gets +1/+1 until end of turn.
 whenever a player casts a green spell, you may pay {1}. if you do, you gain 1 life.
 whenever a player casts a green spell, you may pay {3}. if you do, untap target permanent.
+whenever a player casts a kithkin spell, you may have target player lose 1 life.
 whenever a player casts an artifact spell, you may gain 1 life.
 whenever a player casts an artifact spell, you may pay {1}. if you do, you gain 1 life.
 whenever a player casts an enchantment spell, counter it.
@@ -4068,11 +4074,13 @@ whenever you cast a creature spell, you may pay {1}. if you do, draw a card, the
 whenever you cast a creature spell, you may pay {1}. if you do, return target creature to its owner's hand.
 whenever you cast a creature spell, you may pay {g}{g}. if you do, return @ from your graveyard to your hand.
 whenever you cast a creature spell, you may put a quest counter on @.
+whenever you cast a druid spell, you may draw a card.
 whenever you cast a green spell, @ gains forestwalk until end of turn.
 whenever you cast a green spell, @ gets +1/+1 until end of turn.
 whenever you cast a green spell, remove a -1/-1 counter from @.
 whenever you cast a green spell, you may put a 2/2 green wolf creature token onto the battlefield.
 whenever you cast a green spell, you may untap @.
+whenever you cast a merfolk spell, you may tap or untap target permanent.
 whenever you cast a multicolored spell, @ deals 2 damage to target creature or player.
 whenever you cast a multicolored spell, @ gets +3/+3 until end of turn.
 whenever you cast a multicolored spell, untap @.
@@ -4085,6 +4093,8 @@ whenever you cast an artifact spell, you may pay {1}. if you do, put a 1/1 color
 whenever you cast an artifact spell, you may pay {1}. if you do, you gain 3 life.
 whenever you cast an artifact spell, you may put a charge counter on @.
 whenever you cast an artifact spell, you may untap target creature.
+whenever you cast an elf spell, you may have @ deal 2 damage to target creature with flying.
+whenever you cast an elf spell, you may put a 1/1 green elf warrior creature token onto the battlefield.
 whenever you cast an enchantment spell, draw a card.
 whenever you cast an enchantment spell, put a +1/+1 counter on each creature you control.
 whenever you cast an enchantment spell, put a 4/4 white angel creature token with flying onto the battlefield.
