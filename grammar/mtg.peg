@@ -19,7 +19,7 @@ Effect
     ;
 
 SingleEffect
-    = (Duration SEP)? (Optional SPACE)? (SelectPlayer SPACE)? (Optional SPACE)? Action (SPACE Duration)?
+    = (Duration SEP)? (Optional SPACE)? (SelectPlayer SPACE)? (Optional SPACE)? Action (SPACE Duration)? (SPACE IfCondition)?
     ;
 
 Optional
