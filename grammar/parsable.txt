@@ -3463,6 +3463,8 @@ when @ enters the battlefield, creatures you control get +1/+1 and gain haste un
 when @ enters the battlefield, creatures you control get +1/+1 until end of turn.
 when @ enters the battlefield, creatures your opponents control get -2/-2 until end of turn.
 when @ enters the battlefield, destroy all djinns and efreets. they can't be regenerated.
+when @ enters the battlefield, destroy all lands you control. if it was kicked, destroy all lands instead.
+when @ enters the battlefield, destroy all other creatures you control. if it was kicked, destroy all other creatures instead.
 when @ enters the battlefield, destroy all tapped creatures.
 when @ enters the battlefield, destroy target angel.
 when @ enters the battlefield, destroy target artifact.
@@ -3516,6 +3518,23 @@ when @ enters the battlefield, gain control of target creature an opponent contr
 when @ enters the battlefield, gain control of target permanent until end of turn. untap that permanent. it gains haste until end of turn.
 when @ enters the battlefield, goblin creatures get +3/+0 until end of turn.
 when @ enters the battlefield, green creatures get -1/-1 until end of turn.
+when @ enters the battlefield, if it was kicked, creatures you control get +1/+0 and gain haste until end of turn.
+when @ enters the battlefield, if it was kicked, destroy target artifact. it can't be regenerated.
+when @ enters the battlefield, if it was kicked, destroy target artifact or enchantment.
+when @ enters the battlefield, if it was kicked, destroy target creature.
+when @ enters the battlefield, if it was kicked, destroy target creature with flying.
+when @ enters the battlefield, if it was kicked, destroy target enchantment.
+when @ enters the battlefield, if it was kicked, destroy target land.
+when @ enters the battlefield, if it was kicked, destroy target nonbasic land.
+when @ enters the battlefield, if it was kicked, destroy target nonblack creature. it can't be regenerated.
+when @ enters the battlefield, if it was kicked, destroy target noncreature permanent.
+when @ enters the battlefield, if it was kicked, draw two cards.
+when @ enters the battlefield, if it was kicked, it deals 2 damage to target creature.
+when @ enters the battlefield, if it was kicked, put x 1/1 green saproling creature tokens onto the battlefield.
+when @ enters the battlefield, if it was kicked, put x feather counters on it.
+when @ enters the battlefield, if it was kicked, return target permanent to its owner's hand.
+when @ enters the battlefield, if it was kicked, target creature gains flying until end of turn.
+when @ enters the battlefield, if it was kicked, target player sacrifices a creature.
 when @ enters the battlefield, it deals 1 damage to each creature with flying your opponents control. tap those creatures.
 when @ enters the battlefield, it deals 1 damage to target creature and 1 damage to you.
 when @ enters the battlefield, it deals 1 damage to target creature or player.

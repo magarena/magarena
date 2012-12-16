@@ -109,6 +109,7 @@ Action
     / AnimateAction
     / AnimateActionReminder
     / ChangeLoyaltyAction
+    / KickerAction
     ;
 
 Keyword
@@ -285,6 +286,10 @@ AbilityRestriction
 
 IfCondition
     = "if a creature died this turn"
+    ;
+
+KickerAction
+    = "if it was kicked, " Effect (" instead")?
     ;
 
 AnimateAction
