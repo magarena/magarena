@@ -1172,6 +1172,7 @@ counter target red or green spell.
 counter target sorcery spell.
 counter target spell.
 counter target spell and @ deals 3 damage to target creature.
+counter target spell if it was kicked.
 counter target spell. its controller discards a card.
 counter target spell. its controller draws a card.
 counter target spell. its controller loses 3 life.

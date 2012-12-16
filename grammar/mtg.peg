@@ -286,6 +286,7 @@ AbilityRestriction
 
 IfCondition
     = "if a creature died this turn"
+    / "if it was kicked"
     ;
 
 KickerAction
