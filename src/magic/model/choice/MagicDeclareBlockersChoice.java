@@ -25,7 +25,6 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
     private static final String CONTINUE_MESSAGE="Press {f} to continue.";
     
     private MagicDeclareBlockersChoice() {
-        
         super("Declare blockers.");
     }
     
