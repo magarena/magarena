@@ -380,15 +380,15 @@ public class MagicGame {
         return mainPhaseCount;
     }
     
-    public MagicGameplay getGameplay() {
-        return gameplay;
-    }
-    
     public void setPhase(final MagicPhase aPhase) {
         phase = aPhase;
     }
     
-    public void changePhase(final MagicPhase aPhase) {
+    public void changePhase() {
+        changePhase(gameplay.getNextPhase(this));
+    }
+    
+    private void changePhase(final MagicPhase aPhase) {
         phase = aPhase;
         step=MagicStep.Begin;
         priorityPassedCount=0;
