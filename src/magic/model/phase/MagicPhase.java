@@ -64,7 +64,7 @@ public abstract class MagicPhase {
                 break;
             case NextPhase:
                 executeEndOfPhase(game);
-                game.changePhase();
+                game.nextPhase();
                 break;
         }
     }

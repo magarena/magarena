@@ -384,7 +384,7 @@ public class MagicGame {
         phase = aPhase;
     }
     
-    public void changePhase() {
+    public void nextPhase() {
         changePhase(gameplay.getNextPhase(this));
     }
     
