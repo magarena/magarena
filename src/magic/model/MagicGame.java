@@ -402,7 +402,6 @@ public class MagicGame {
 
     public void executePhase() {
         phase.executePhase(this);
-        update();
     }
     
     public boolean isPhase(final MagicPhaseType type) {
