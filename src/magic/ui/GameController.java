@@ -496,7 +496,7 @@ public class GameController {
                     game.executeNextEvent(MagicEvent.NO_CHOICE_RESULTS);
                 }
             } else {
-                game.getPhase().executePhase(game);
+                game.executePhase();
             }
                 
             if (testMode) {

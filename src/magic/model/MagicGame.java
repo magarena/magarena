@@ -399,6 +399,11 @@ public class MagicGame {
     public MagicPhase getPhase() {
         return phase;
     }
+
+    public void executePhase() {
+        phase.executePhase(this);
+        update();
+    }
     
     public boolean isPhase(final MagicPhaseType type) {
         return phase.getType()==type;
@@ -634,6 +639,7 @@ public class MagicGame {
         }
         
         event.executeEvent(this,choiceResults);
+        update();
     }
 
     public MagicEventQueue getEvents() {
@@ -650,12 +656,10 @@ public class MagicGame {
     
     public void addEvent(final MagicEvent event) {
         doAction(new MagicAddEventAction(event));
-        update();
     }
         
     public void executeNextEvent(final Object[] choiceResults) {
         doAction(new MagicExecuteFirstEventAction(choiceResults));
-        update();
     }
     
     public MagicDuel getDuel() {
@@ -825,8 +829,6 @@ public class MagicGame {
         while (stateCheckRequired) {
             stateCheckRequired = false;
           
-            update();
-            
             // Check if a player has lost
             for (final MagicPlayer player : players) {
                 player.generateStateBasedActions();
@@ -838,7 +840,7 @@ public class MagicGame {
                 permanent.generateStateBasedActions();
             }}
             
-            doDelayedActions();
+            update();
             // some action may set stateCheckRequired to true, if so loop again
         }
     }
@@ -1079,10 +1081,8 @@ public class MagicGame {
             return;
         }
         
-        if (immediate) {
-            if (!event.hasChoice()) {
-                event.executeEvent(this,MagicEvent.NO_CHOICE_RESULTS);
-            }                
+        if (immediate && !event.hasChoice()) {
+            executeEvent(event,MagicEvent.NO_CHOICE_RESULTS);
         } else if (trigger.usesStack()) {
             doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(event)));
         } else {

@@ -50,7 +50,7 @@ public class VegasWorker implements Runnable {
                     game.executeNextEvent(MagicEvent.NO_CHOICE_RESULTS);
                 }
             } else {
-                game.getPhase().executePhase(game);
+                game.executePhase();
             }
         }        
         return true;

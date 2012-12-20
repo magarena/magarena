@@ -38,7 +38,7 @@ public class ArtificialWorker {
         // Play game until given end turn for all possible choices.
         while (!game.isFinished()) {
             if (!game.hasNextEvent()) {
-                game.getPhase().executePhase(game);
+                game.executePhase();
                                 
                 // Caching of best score for game situations.
                 if (game.cacheState()) {

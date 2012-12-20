@@ -378,7 +378,7 @@ public class MCTSAI implements MagicAI {
             }
 
             if (!game.hasNextEvent()) {
-                game.getPhase().executePhase(game);
+                game.executePhase();
                 continue;
             }
 
