@@ -1,0 +1,11 @@
+name=Brimstone Dragon
+url=http://magiccards.info/me2/en/120.html
+image=http://magiccards.info/scans/en/me2/120.jpg
+value=3.375
+rarity=R
+type=Creature
+subtype=Dragon
+cost={6}{R}{R}
+pt=6/6
+ability=flying,haste
+timing=fmain
