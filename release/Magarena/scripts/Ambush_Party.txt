@@ -1,0 +1,11 @@
+name=Ambush Party
+url=http://magiccards.info/me2/en/115.html
+image=http://magiccards.info/scans/en/me2/115.jpg
+value=2.056
+rarity=C
+type=Creature
+subtype=Human,Rogue
+cost={4}{R}
+pt=3/1
+ability=first strike,haste
+timing=fmain
