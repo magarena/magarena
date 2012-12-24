@@ -1,0 +1,11 @@
+name=Capashen Templar
+url=http://magiccards.info/ud/en/5.html
+image=http://magiccards.info/scans/en/ud/5.jpg
+value=2.738
+rarity=C
+type=Creature
+subtype=Human,Knight
+cost={2}{W}
+pt=2/2
+ability=pump {W} +0/+1
+timing=main
