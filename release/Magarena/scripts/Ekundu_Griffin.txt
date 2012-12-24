@@ -1,0 +1,11 @@
+name=Ekundu Griffin
+url=http://magiccards.info/mr/en/217.html
+image=http://magiccards.info/scans/en/mr/217.jpg
+value=2.926
+rarity=C
+type=Creature
+subtype=Griffin
+cost={3}{W}
+pt=2/2
+ability=flying,first strike
+timing=main
