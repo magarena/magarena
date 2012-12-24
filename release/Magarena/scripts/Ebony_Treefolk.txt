@@ -1,0 +1,11 @@
+name=Ebony Treefolk
+url=http://magiccards.info/ap/en/97.html
+image=http://magiccards.info/scans/en/ap/97.jpg
+value=3.962
+rarity=U
+type=Creature
+subtype=Treefolk
+cost={1}{B}{G}
+pt=3/3
+ability=pump {B}{G} +1/+1
+timing=main
