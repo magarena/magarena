@@ -1,0 +1,11 @@
+name=Dryad's Favor
+url=http://magiccards.info/m11/en/169.html
+image=http://magiccards.info/scans/en/m11/169.jpg
+value=1.231
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={G}
+given_ability=forestwalk
+timing=aura
+enchant=unblockable,pos creature
