@@ -1,0 +1,11 @@
+name=Capashen Knight
+url=http://magiccards.info/ud/en/3.html
+image=http://magiccards.info/scans/en/ud/3.jpg
+value=3.037
+rarity=C
+type=Creature
+subtype=Human,Knight
+cost={1}{W}
+pt=1/1
+ability=first strike,pump {1}{W} +1/+0
+timing=main
