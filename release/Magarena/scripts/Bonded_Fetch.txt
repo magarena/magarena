@@ -1,0 +1,12 @@
+name=Bonded Fetch
+url=http://magiccards.info/fut/en/50.html
+image=http://magiccards.info/scans/en/fut/50.jpg
+value=3.179
+rarity=U
+type=Creature
+subtype=Homunculus
+cost={2}{U}
+pt=0/2
+ability=defender,haste
+timing=fmain
+requires_card_code=Merfolk Looter
