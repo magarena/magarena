@@ -1,0 +1,11 @@
+name=Breathstealer
+url=http://magiccards.info/mr/en/7.html
+image=http://magiccards.info/scans/en/mr/7.jpg
+value=2.617
+rarity=C
+type=Creature
+subtype=Nightstalker
+cost={2}{B}
+pt=2/2
+ability=pump {B} +1/-1
+timing=main
