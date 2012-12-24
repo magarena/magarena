@@ -1,0 +1,11 @@
+name=Dross Ripper
+url=http://magiccards.info/mbs/en/106.html
+image=http://magiccards.info/scans/en/mbs/106.jpg
+value=2.265
+rarity=C
+type=Artifact,Creature
+subtype=Hound
+cost={4}
+pt=3/3
+ability=pump {2}{B} +1/+1
+timing=main
