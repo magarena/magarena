@@ -88,11 +88,11 @@ cards/new_scripts_%.txt: release/Magarena/scripts
 	flip -u $@
 
 cards/existing_scripts_%.txt: $(wildcard release/Magarena/scripts/*.txt)
-	hg cat -r $* release/Magarena/scripts | grep "^name=" | sed 's/name=//' | sort > $@
+	hg cat -r $* release/Magarena/scripts | grep "name=" | sed 's/.*name=//' | sort > $@
 	sed -i 's/\r//' $@
 
 cards/existing_tokens_%.txt: $(wildcard release/Magarena/scripts/*.txt)
-	hg cat -r $* release/Magarena/scripts | grep -C 1 "^token=" | grep "^name=" | sed 's/name=//' | sort > $@
+	hg cat -r $* release/Magarena/scripts | grep -C 1 "token=" | grep "name=" | sed 's/.*name=//' | sort > $@
 
 cards/existing_%.txt: cards/existing_scripts_%.txt cards/existing_tokens_%.txt
 	join -v1 -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
