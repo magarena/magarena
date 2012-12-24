@@ -1,0 +1,11 @@
+name=Crypt Ripper
+url=http://magiccards.info/zen/en/85.html
+image=http://magiccards.info/scans/en/zen/85.jpg
+value=3.458
+rarity=C
+type=Creature
+subtype=Shade
+cost={2}{B}{B}
+pt=2/2
+ability=haste,pump {B} +1/+1
+timing=fmain
