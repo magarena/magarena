@@ -1,0 +1,12 @@
+name=Elves of Deep Shadow
+url=http://magiccards.info/ddj/en/47.html
+image=http://magiccards.info/scans/en/ddj/47.jpg
+value=3.929
+rarity=C
+type=Creature
+subtype=Elf,Druid
+cost={G}
+pt=1/1
+ability=tap pain add mana {B}
+timing=main
+mana_or_combat
