@@ -1,0 +1,9 @@
+name=Concentrate
+url=http://magiccards.info/pc2/en/16.html
+image=http://magiccards.info/scans/en/pc2/16.jpg
+value=3.909
+rarity=U
+type=Sorcery
+cost={2}{U}{U}
+timing=draw
+requires_card_code=Harmonize
