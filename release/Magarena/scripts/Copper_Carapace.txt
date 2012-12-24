@@ -1,0 +1,12 @@
+name=Copper Carapace
+url=http://magiccards.info/mbs/en/102.html
+image=http://magiccards.info/scans/en/mbs/102.jpg
+value=2.231
+rarity=C
+type=Artifact
+subtype=Equipment
+cost={1}
+equip={3}
+given_pt=2/2
+given_ability=can't block
+timing=main
