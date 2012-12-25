@@ -1,0 +1,11 @@
+name=Rummaging Goblin
+url=http://magiccards.info/m13/en/146.html
+image=http://magiccards.info/scans/en/m13/146.jpg
+value=2.300
+rarity=C
+type=Creature
+subtype=Goblin,Rogue
+cost={2}{R}
+pt=1/1
+timing=main
+requires_card_code=Mad Prophet
