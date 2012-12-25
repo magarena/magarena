@@ -1,0 +1,11 @@
+name=Hematite Golem
+url=http://magiccards.info/mi/en/185.html
+image=http://magiccards.info/scans/en/mi/185.jpg
+value=2.733
+rarity=C
+type=Artifact,Creature
+subtype=Golem
+cost={4}
+pt=1/4
+ability=pump {1}{R} +2/+0
+timing=main
