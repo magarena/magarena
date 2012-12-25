@@ -1,0 +1,11 @@
+name=Foxfire Oak
+url=http://magiccards.info/shm/en/115.html
+image=http://magiccards.info/scans/en/shm/115.jpg
+value=2.190
+rarity=C
+type=Creature
+subtype=Treefolk,Shaman
+cost={5}{G}
+pt=3/6
+ability=pump {R/G}{R/G}{R/G} +3/+0
+timing=main
