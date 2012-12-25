@@ -1,0 +1,11 @@
+name=Ogre Menial
+url=http://magiccards.info/nph/en/89.html
+image=http://magiccards.info/scans/en/nph/89.jpg
+value=3.270
+rarity=C
+type=Creature
+subtype=Ogre
+cost={3}{R}
+pt=0/4
+ability=infect,pump {R} +1/+0
+timing=main
