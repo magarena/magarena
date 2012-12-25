@@ -1,0 +1,11 @@
+name=Gerrard's Irregulars
+url=http://magiccards.info/mm/en/192.html
+image=http://magiccards.info/scans/en/mm/192.jpg
+value=3.000
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={4}{R}
+pt=4/2
+ability=trample,haste
+timing=fmain
