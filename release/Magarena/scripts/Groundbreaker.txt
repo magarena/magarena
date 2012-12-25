@@ -1,0 +1,12 @@
+name=Groundbreaker
+url=http://magiccards.info/pc/en/148.html
+image=http://magiccards.info/scans/en/pc/148.jpg
+value=4.358
+rarity=R
+type=Creature
+subtype=Elemental
+cost={G}{G}{G}
+pt=6/1
+ability=trample,haste
+timing=fmain
+requires_card_code=Arc Runner
