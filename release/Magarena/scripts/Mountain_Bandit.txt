@@ -1,0 +1,11 @@
+name=Mountain Bandit
+url=http://magiccards.info/p3k/en/117.html
+image=http://magiccards.info/scans/en/p3k/117.jpg
+value=3.786
+rarity=C
+type=Creature
+subtype=Human,Soldier,Rogue
+cost={R}
+pt=1/1
+ability=haste
+timing=fmain
