@@ -1,0 +1,11 @@
+name=Land Leeches
+url=http://magiccards.info/4e/en/139.html
+image=http://magiccards.info/scans/en/4e/139.jpg
+value=3.093
+rarity=C
+type=Creature
+subtype=Leech
+cost={1}{G}{G}
+pt=2/2
+ability=first strike
+timing=main
