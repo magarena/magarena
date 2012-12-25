@@ -1,0 +1,11 @@
+name=Saberclaw Golem
+url=http://magiccards.info/som/en/200.html
+image=http://magiccards.info/scans/en/som/200.jpg
+value=2.346
+rarity=C
+type=Artifact,Creature
+subtype=Golem
+cost={5}
+pt=4/2
+ability=gains {R} first strike
+timing=main
