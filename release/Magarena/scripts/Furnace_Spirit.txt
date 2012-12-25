@@ -1,0 +1,11 @@
+name=Furnace Spirit
+url=http://magiccards.info/sh/en/87.html
+image=http://magiccards.info/scans/en/sh/87.jpg
+value=2.060
+rarity=C
+type=Creature
+subtype=Spirit
+cost={2}{R}
+pt=1/1
+ability=haste,pump {R} +1/+0
+timing=fmain
