@@ -1,0 +1,11 @@
+name=Kranioceros
+url=http://magiccards.info/cfx/en/67.html
+image=http://magiccards.info/scans/en/cfx/67.jpg
+value=2.110
+rarity=C
+type=Creature
+subtype=Beast
+cost={4}{R}
+pt=5/2
+ability=pump {1}{W} +0/+3
+timing=main
