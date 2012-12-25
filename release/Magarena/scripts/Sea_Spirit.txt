@@ -1,0 +1,11 @@
+name=Sea Spirit
+url=http://magiccards.info/me2/en/65.html
+image=http://magiccards.info/scans/en/me2/65.jpg
+value=2.425
+rarity=U
+type=Creature
+subtype=Elemental,Spirit
+cost={4}{U}
+pt=2/3
+ability=pump {U} +1/+0
+timing=main
