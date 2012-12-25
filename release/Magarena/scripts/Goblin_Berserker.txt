@@ -1,0 +1,11 @@
+name=Goblin Berserker
+url=http://magiccards.info/ud/en/82.html
+image=http://magiccards.info/scans/en/ud/82.jpg
+value=2.931
+rarity=U
+type=Creature
+subtype=Goblin,Berserker
+cost={3}{R}
+pt=2/2
+ability=first strike,haste
+timing=fmain
