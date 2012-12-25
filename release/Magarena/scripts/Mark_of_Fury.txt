@@ -1,0 +1,12 @@
+name=Mark of Fury
+url=http://magiccards.info/ud/en/93.html
+image=http://magiccards.info/scans/en/ud/93.jpg
+value=3.581
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={R}
+given_ability=haste
+timing=fmain
+enchant=haste,pos creature
+requires_card_code=Archwing Dragon
