@@ -1,0 +1,10 @@
+name=Gaea's Anthem
+url=http://magiccards.info/pc/en/147.html
+image=http://magiccards.info/scans/en/pc/147.jpg
+value=4.152
+rarity=R
+type=Enchantment
+cost={1}{G}{G}
+static=player
+timing=enchantment
+requires_card_code=Glorious Anthem
