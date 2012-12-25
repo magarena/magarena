@@ -1,0 +1,11 @@
+name=Pygmy Razorback
+url=http://magiccards.info/pr/en/120.html
+image=http://magiccards.info/scans/en/pr/120.jpg
+value=2.597
+rarity=C
+type=Creature
+subtype=Boar
+cost={1}{G}
+pt=2/1
+ability=trample
+timing=main
