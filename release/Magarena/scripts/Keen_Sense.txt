@@ -1,0 +1,11 @@
+name=Keen Sense
+url=http://magiccards.info/pc/en/152.html
+image=http://magiccards.info/scans/en/pc/152.jpg
+value=4.022
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={G}
+timing=aura
+enchant=pump,pos creature
+requires_card_code=Curiosity
