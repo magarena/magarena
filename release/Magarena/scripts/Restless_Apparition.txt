@@ -1,0 +1,11 @@
+name=Restless Apparition
+url=http://magiccards.info/eve/en/94.html
+image=http://magiccards.info/scans/en/eve/94.jpg
+value=3.738
+rarity=U
+type=Creature
+subtype=Spirit
+cost={W/B}{W/B}{W/B}
+pt=2/2
+ability=persist,pump {W/B}{W/B}{W/B} +3/+3
+timing=main
