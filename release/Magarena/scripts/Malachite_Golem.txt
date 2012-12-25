@@ -1,0 +1,11 @@
+name=Malachite Golem
+url=http://magiccards.info/mi/en/202.html
+image=http://magiccards.info/scans/en/mi/202.jpg
+value=1.558
+rarity=C
+type=Artifact,Creature
+subtype=Golem
+cost={6}
+pt=5/3
+ability=gains {1}{G} trample
+timing=main
