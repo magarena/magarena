@@ -1,0 +1,11 @@
+name=Pavel Maliki
+url=http://magiccards.info/me3/en/165.html
+image=http://magiccards.info/scans/en/me3/165.jpg
+value=1.617
+rarity=U
+type=Legendary,Creature
+subtype=Human
+cost={4}{B}{R}
+pt=5/3
+ability=pump {B}{R} +1/+0
+timing=main
