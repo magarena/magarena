@@ -1,0 +1,10 @@
+name=Pearled Unicorn
+url=http://magiccards.info/5e/en/326.html
+image=http://magiccards.info/scans/en/5e/326.jpg
+value=1.812
+rarity=C
+type=Creature
+subtype=Unicorn
+cost={2}{W}
+pt=2/2
+timing=main
