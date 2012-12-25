@@ -1,0 +1,11 @@
+name=Hoar Shade
+url=http://magiccards.info/ia/en/19.html
+image=http://magiccards.info/scans/en/ia/19.jpg
+value=2.758
+rarity=C
+type=Creature
+subtype=Shade
+cost={3}{B}
+pt=1/2
+ability=pump {B} +1/+1
+timing=main
