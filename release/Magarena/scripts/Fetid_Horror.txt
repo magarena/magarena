@@ -1,0 +1,11 @@
+name=Fetid Horror
+url=http://magiccards.info/mr/en/21.html
+image=http://magiccards.info/scans/en/mr/21.jpg
+value=2.978
+rarity=C
+type=Creature
+subtype=Shade,Horror
+cost={3}{B}
+pt=1/2
+ability=pump {B} +1/+1
+timing=main
