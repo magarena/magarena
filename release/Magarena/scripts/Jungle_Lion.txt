@@ -1,0 +1,11 @@
+name=Jungle Lion
+url=http://magiccards.info/me3/en/125.html
+image=http://magiccards.info/scans/en/me3/125.jpg
+value=3.742
+rarity=C
+type=Creature
+subtype=Cat
+cost={G}
+pt=2/1
+ability=can't block
+timing=main
