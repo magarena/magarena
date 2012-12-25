@@ -1,0 +1,11 @@
+name=Puppeteer
+url=http://magiccards.info/10e/en/98.html
+image=http://magiccards.info/scans/en/10e/98.jpg
+value=3.206
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={2}{U}
+pt=1/2
+timing=main
+requires_card_code=Niblis of the Breath
