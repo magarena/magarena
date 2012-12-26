@@ -1,0 +1,10 @@
+name=Border Guard
+url=http://magiccards.info/st/en/9.html
+image=http://magiccards.info/scans/en/st/9.jpg
+value=2.028
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={2}{W}
+pt=1/4
+timing=main
