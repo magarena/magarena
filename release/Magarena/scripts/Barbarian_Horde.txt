@@ -1,0 +1,10 @@
+name=Barbarian Horde
+url=http://magiccards.info/p3k/en/101.html
+image=http://magiccards.info/scans/en/p3k/101.jpg
+value=1.767
+rarity=C
+type=Creature
+subtype=Human,Barbarian,Soldier
+cost={3}{R}
+pt=3/3
+timing=main
