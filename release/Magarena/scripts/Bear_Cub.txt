@@ -1,0 +1,10 @@
+name=Bear Cub
+url=http://magiccards.info/po2/en/63.html
+image=http://magiccards.info/scans/en/po2/63.jpg
+value=4.414
+rarity=C
+type=Creature
+subtype=Bear
+cost={1}{G}
+pt=2/2
+timing=main
