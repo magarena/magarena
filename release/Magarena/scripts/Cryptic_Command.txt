@@ -1,0 +1,9 @@
+name=Cryptic Command
+url=http://magiccards.info/lw/en/56.html
+image=http://magiccards.info/scans/en/lw/56.jpg
+value=4.657
+rarity=R
+type=Instant
+cost={1}{U}{U}{U}
+timing=counter
+requires_card_code
