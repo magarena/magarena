@@ -1,0 +1,10 @@
+name=Barktooth Warbeard
+url=http://magiccards.info/me3/en/144.html
+image=http://magiccards.info/scans/en/me3/144.jpg
+value=2.100
+rarity=C
+type=Legendary,Creature
+subtype=Human,Warrior
+cost={4}{B}{R}{R}
+pt=6/5
+timing=main
