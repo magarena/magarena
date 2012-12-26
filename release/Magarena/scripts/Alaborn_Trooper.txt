@@ -1,0 +1,10 @@
+name=Alaborn Trooper
+url=http://magiccards.info/me4/en/2.html
+image=http://magiccards.info/scans/en/me4/2.jpg
+value=2.133
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={2}{W}
+pt=2/3
+timing=main
