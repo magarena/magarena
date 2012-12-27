@@ -15,12 +15,4 @@ public class Divinity_of_Pride {
             }
         }
     };
-    
-//    public static final MagicStatic S2 = new MagicStatic(MagicLayer.Ability) {
-//        @Override
-//        public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
-//            return permanent.getController().getLife() >= 30 ?
-//                flags|MagicAbility.Flying.getMask() : flags;
-//        }
-//    };
 }
