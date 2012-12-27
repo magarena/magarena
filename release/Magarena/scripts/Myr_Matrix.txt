@@ -1,0 +1,10 @@
+name=Myr Matrix
+url=http://magiccards.info/ds/en/132.html
+image=http://magiccards.info/scans/en/ds/132.jpg
+value=4.153
+rarity=U
+type=Artifact
+cost={5}
+ability=indestructible
+timing=main
+requires_card_code
