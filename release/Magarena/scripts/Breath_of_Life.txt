@@ -1,0 +1,9 @@
+name=Breath of Life
+url=http://magiccards.info/7e/en/4.html
+image=http://magiccards.info/scans/en/7e/4.jpg
+value=4.280
+rarity=U
+type=Sorcery
+cost={3}{W}
+timing=main
+requires_card_code=Zombify
