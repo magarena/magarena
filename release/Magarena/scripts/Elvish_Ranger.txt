@@ -1,0 +1,10 @@
+name=Elvish Ranger
+url=http://magiccards.info/me2/en/158.html
+image=http://magiccards.info/scans/en/me2/158.jpg
+value=2.463
+rarity=C
+type=Creature
+subtype=Elf
+cost={2}{G}
+pt=4/1
+timing=main
