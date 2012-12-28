@@ -471,3 +471,7 @@ grammar/CounterType: grammar/rules.txt
 	grep -o "[^ ]* counter \(on\|from\)" $@ | cut -d' ' -f1 | sort | uniq > $@
 	# remove a, each, that
 	# add poison
+
+fix_noeol:
+	sed -i -e '$$a\' release/Magarena/scripts/*.txt
+	sed -i -e '$$a\' src/**/*.java
