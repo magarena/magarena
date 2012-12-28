@@ -1,0 +1,11 @@
+name=Burrowing
+url=http://magiccards.info/ced/en/140.html
+image=http://magiccards.info/scans/en/ced/140.jpg
+value=1.667
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={R}
+given_ability=mountainwalk
+timing=aura
+enchant=unblockable,pos creature
