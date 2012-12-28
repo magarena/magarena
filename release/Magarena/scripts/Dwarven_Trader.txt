@@ -1,0 +1,10 @@
+name=Dwarven Trader
+url=http://magiccards.info/hl/en/91.html
+image=http://magiccards.info/scans/en/hl/91.jpg
+value=2.152
+rarity=C
+type=Creature
+subtype=Dwarf
+cost={R}
+pt=1/1
+timing=main
