@@ -1,0 +1,11 @@
+name=Defensive Stance
+url=http://magiccards.info/nph/en/34.html
+image=http://magiccards.info/scans/en/nph/34.jpg
+value=0.959
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={U}
+given_pt=-1/+1
+timing=aura
+enchant=weaken -1/+1,creature
