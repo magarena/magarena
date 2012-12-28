@@ -1,0 +1,12 @@
+name=Cave Sense
+url=http://magiccards.info/mm/en/179.html
+image=http://magiccards.info/scans/en/mm/179.jpg
+value=1.750
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{R}
+given_pt=1/1
+given_ability=mountainwalk
+timing=aura
+enchant=unblockable,pos creature
