@@ -1,0 +1,12 @@
+name=Brilliant Halo
+url=http://magiccards.info/us/en/5.html
+image=http://magiccards.info/scans/en/us/5.jpg
+value=3.375
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{W}
+given_pt=1/2
+timing=aura
+enchant=pump,pos creature
+requires_card_code=Rancor
