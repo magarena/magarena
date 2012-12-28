@@ -1,16 +1,11 @@
 name=Dimir Cutpurse
 url=http://magiccards.info/ddh/en/49.html
 image=http://magiccards.info/scans/en/ddh/49.jpg
-
 value=4.606
-
 rarity=R
-
 type=Creature
-
 subtype=Spirit
 cost={1}{U}{B}
-
 pt=2/2
-ability=combat damage may draw card,damage discard card
 timing=main
+requires_card_code
