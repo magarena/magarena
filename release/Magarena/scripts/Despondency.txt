@@ -1,0 +1,12 @@
+name=Despondency
+url=http://magiccards.info/us/en/129.html
+image=http://magiccards.info/scans/en/us/129.jpg
+value=3.727
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{B}
+given_pt=-2/-0
+timing=aura
+enchant=weaken -2/-0,neg creature
+requires_card_code=Rancor
