@@ -1,0 +1,10 @@
+name=Torsten Von Ursus
+url=http://magiccards.info/me3/en/183.html
+image=http://magiccards.info/scans/en/me3/183.jpg
+value=1.941
+rarity=C
+type=Legendary,Creature
+subtype=Human,Soldier
+cost={3}{G}{G}{W}
+pt=5/5
+timing=main
