@@ -1,0 +1,12 @@
+name=Viashino Sandscout
+url=http://magiccards.info/10e/en/246.html
+image=http://magiccards.info/scans/en/10e/246.jpg
+value=3.155
+rarity=C
+type=Creature
+subtype=Viashino,Scout
+cost={1}{R}
+pt=2/1
+ability=haste
+timing=fmain
+requires_card_code=Archwing Dragon
