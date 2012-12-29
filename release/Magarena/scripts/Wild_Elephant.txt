@@ -1,0 +1,11 @@
+name=Wild Elephant
+url=http://magiccards.info/mr/en/152.html
+image=http://magiccards.info/scans/en/mr/152.jpg
+value=2.914
+rarity=C
+type=Creature
+subtype=Elephant
+cost={3}{G}
+pt=3/3
+ability=trample
+timing=main
