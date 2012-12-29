@@ -1,0 +1,10 @@
+name=Straw Soldiers
+url=http://magiccards.info/p3k/en/54.html
+image=http://magiccards.info/scans/en/p3k/54.jpg
+value=2.617
+rarity=C
+type=Creature
+subtype=Scarecrow,Soldier
+cost={1}{U}
+pt=1/3
+timing=main
