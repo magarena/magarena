@@ -1,0 +1,11 @@
+name=Thought Courier
+url=http://magiccards.info/5dn/en/38.html
+image=http://magiccards.info/scans/en/5dn/38.jpg
+value=3.681
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={1}{U}
+pt=1/1
+timing=main
+requires_card_code=Merfolk Looter
