@@ -1,0 +1,10 @@
+name=Whiptail Wurm
+url=http://magiccards.info/me4/en/173.html
+image=http://magiccards.info/scans/en/me4/173.jpg
+value=2.864
+rarity=U
+type=Creature
+subtype=Wurm
+cost={6}{G}
+pt=8/5
+timing=main
