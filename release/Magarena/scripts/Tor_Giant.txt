@@ -1,0 +1,10 @@
+name=Tor Giant
+url=http://magiccards.info/ia/en/220.html
+image=http://magiccards.info/scans/en/ia/220.jpg
+value=2.179
+rarity=C
+type=Creature
+subtype=Giant
+cost={3}{R}
+pt=3/3
+timing=main
