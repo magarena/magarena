@@ -1,0 +1,11 @@
+name=Muzzle
+url=http://magiccards.info/mm/en/30.html
+image=http://magiccards.info/scans/en/mm/30.jpg
+value=3.288
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{W}
+timing=aura
+enchant=can't attack or block,neg creature
+requires_card_code=Defang
