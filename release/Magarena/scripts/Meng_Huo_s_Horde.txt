@@ -1,0 +1,10 @@
+name=Meng Huo's Horde
+url=http://magiccards.info/me3/en/129.html
+image=http://magiccards.info/scans/en/me3/129.jpg
+value=2.100
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={4}{G}
+pt=4/5
+timing=main
