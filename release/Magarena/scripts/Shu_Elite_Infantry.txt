@@ -1,0 +1,10 @@
+name=Shu Elite Infantry
+url=http://magiccards.info/p3k/en/22.html
+image=http://magiccards.info/scans/en/p3k/22.jpg
+value=1.921
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={3}{W}
+pt=3/3
+timing=main
