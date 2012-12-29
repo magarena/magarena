@@ -1,0 +1,10 @@
+name=Fresh Volunteers
+url=http://magiccards.info/mm/en/20.html
+image=http://magiccards.info/scans/en/mm/20.jpg
+value=2.845
+rarity=C
+type=Creature
+subtype=Human,Rebel
+cost={1}{W}
+pt=2/2
+timing=main
