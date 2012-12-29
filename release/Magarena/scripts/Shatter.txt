@@ -1,0 +1,9 @@
+name=Shatter
+url=http://magiccards.info/mi/en/105.html
+image=http://magiccards.info/scans/en/mi/105.jpg
+value=3.672
+rarity=C
+type=Instant
+cost={1}{R}
+timing=removal
+effect=Destroy target artifact.
