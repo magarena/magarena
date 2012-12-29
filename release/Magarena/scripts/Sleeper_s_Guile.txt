@@ -1,0 +1,12 @@
+name=Sleeper's Guile
+url=http://magiccards.info/ul/en/67.html
+image=http://magiccards.info/scans/en/ul/67.jpg
+value=3.611
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{B}
+given_ability=fear
+timing=aura
+enchant=unblockable,pos creature
+requires_card_code=Rancor
