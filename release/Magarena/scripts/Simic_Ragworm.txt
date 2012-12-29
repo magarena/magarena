@@ -1,0 +1,11 @@
+name=Simic Ragworm
+url=http://magiccards.info/di/en/93.html
+image=http://magiccards.info/scans/en/di/93.jpg
+value=2.875
+rarity=C
+type=Creature
+subtype=Worm
+cost={3}{G}
+pt=3/3
+timing=main
+requires_card_code=Horseshoe Crab
