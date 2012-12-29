@@ -1,0 +1,10 @@
+name=Gray Ogre
+url=http://magiccards.info/4e/en/218.html
+image=http://magiccards.info/scans/en/4e/218.jpg
+value=1.356
+rarity=C
+type=Creature
+subtype=Ogre
+cost={2}{R}
+pt=2/2
+timing=main
