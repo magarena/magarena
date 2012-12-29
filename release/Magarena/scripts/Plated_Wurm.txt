@@ -1,0 +1,10 @@
+name=Plated Wurm
+url=http://magiccards.info/po2/en/81.html
+image=http://magiccards.info/scans/en/po2/81.jpg
+value=2.960
+rarity=C
+type=Creature
+subtype=Wurm
+cost={4}{G}
+pt=4/5
+timing=main
