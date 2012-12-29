@@ -1,0 +1,11 @@
+name=Nettletooth Djinn
+url=http://magiccards.info/mr/en/130.html
+image=http://magiccards.info/scans/en/mr/130.jpg
+value=2.243
+rarity=U
+type=Creature
+subtype=Djinn
+cost={3}{G}
+pt=4/4
+timing=main
+requires_card_code=Serendib Efreet
