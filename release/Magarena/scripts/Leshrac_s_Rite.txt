@@ -1,0 +1,11 @@
+name=Leshrac's Rite
+url=http://magiccards.info/7e/en/144.html
+image=http://magiccards.info/scans/en/7e/144.jpg
+value=2.242
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={B}
+given_ability=swampwalk
+timing=aura
+enchant=unblockable,pos creature
