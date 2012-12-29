@@ -1,0 +1,11 @@
+name=Thorn-Thrash Viashino
+url=http://magiccards.info/ala/en/116.html
+image=http://magiccards.info/scans/en/ala/116.jpg
+value=2.000
+rarity=C
+type=Creature
+subtype=Viashino,Warrior
+cost={3}{R}
+pt=2/2
+ability=devour 2,gains {G} trample
+timing=main
