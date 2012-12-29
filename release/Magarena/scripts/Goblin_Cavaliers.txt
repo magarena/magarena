@@ -1,0 +1,10 @@
+name=Goblin Cavaliers
+url=http://magiccards.info/me4/en/118.html
+image=http://magiccards.info/scans/en/me4/118.jpg
+value=3.182
+rarity=C
+type=Creature
+subtype=Goblin
+cost={2}{R}
+pt=3/2
+timing=main
