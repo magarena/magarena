@@ -1,0 +1,10 @@
+name=Skeletal Snake
+url=http://magiccards.info/po/en/34.html
+image=http://magiccards.info/scans/en/po/34.jpg
+value=2.180
+rarity=C
+type=Creature
+subtype=Snake,Skeleton
+cost={1}{B}
+pt=2/1
+timing=main
