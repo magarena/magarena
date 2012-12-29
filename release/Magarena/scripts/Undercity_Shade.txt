@@ -1,0 +1,11 @@
+name=Undercity Shade
+url=http://magiccards.info/rav/en/110.html
+image=http://magiccards.info/scans/en/rav/110.jpg
+value=2.177
+rarity=U
+type=Creature
+subtype=Shade
+cost={4}{B}
+pt=1/1
+ability=fear,pump {B} +1/+1
+timing=main
