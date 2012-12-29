@@ -1,0 +1,10 @@
+name=Wei Infantry
+url=http://magiccards.info/me3/en/80.html
+image=http://magiccards.info/scans/en/me3/80.jpg
+value=2.417
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={1}{B}
+pt=2/1
+timing=main
