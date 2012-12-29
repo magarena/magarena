@@ -1,0 +1,11 @@
+name=Talruum Minotaur
+url=http://magiccards.info/6e/en/210.html
+image=http://magiccards.info/scans/en/6e/210.jpg
+value=3.577
+rarity=C
+type=Creature
+subtype=Minotaur,Berserker
+cost={2}{R}{R}
+pt=3/3
+ability=haste
+timing=fmain
