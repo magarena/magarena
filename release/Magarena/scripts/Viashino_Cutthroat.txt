@@ -1,0 +1,12 @@
+name=Viashino Cutthroat
+url=http://magiccards.info/ul/en/94.html
+image=http://magiccards.info/scans/en/ul/94.jpg
+value=3.757
+rarity=U
+type=Creature
+subtype=Viashino
+cost={2}{R}{R}
+pt=5/3
+ability=haste
+timing=fmain
+requires_card_code=Archwing Dragon
