@@ -1,0 +1,13 @@
+name=Undying Rage
+url=http://magiccards.info/ts/en/184.html
+image=http://magiccards.info/scans/en/ts/184.jpg
+value=2.648
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={2}{R}
+given_pt=2/2
+given_ability=can't block
+timing=aura
+enchant=pump,creature
+requires_card_code=Rancor
