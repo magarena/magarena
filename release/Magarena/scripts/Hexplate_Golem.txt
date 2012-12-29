@@ -1,0 +1,10 @@
+name=Hexplate Golem
+url=http://magiccards.info/mbs/en/109.html
+image=http://magiccards.info/scans/en/mbs/109.jpg
+value=1.841
+rarity=C
+type=Artifact,Creature
+subtype=Golem
+cost={7}
+pt=5/7
+timing=main
