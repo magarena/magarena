@@ -1,0 +1,10 @@
+name=Keepers of the Faith
+url=http://magiccards.info/ch/en/65.html
+image=http://magiccards.info/scans/en/ch/65.jpg
+value=1.789
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={1}{W}{W}
+pt=2/3
+timing=main
