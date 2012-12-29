@@ -1,0 +1,9 @@
+name=Talisman of Indulgence
+url=http://magiccards.info/mi/en/255.html
+image=http://magiccards.info/scans/en/mi/255.jpg
+value=2.917
+rarity=U
+type=Artifact
+cost={2}
+ability=tap add mana {1},tap pain add mana {B} or {R}
+timing=artifact
