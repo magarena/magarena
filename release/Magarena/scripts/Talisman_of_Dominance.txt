@@ -1,0 +1,9 @@
+name=Talisman of Dominance
+url=http://magiccards.info/mi/en/253.html
+image=http://magiccards.info/scans/en/mi/253.jpg
+value=3.767
+rarity=U
+type=Artifact
+cost={2}
+ability=tap add mana {1},tap pain add mana {U} or {B}
+timing=artifact
