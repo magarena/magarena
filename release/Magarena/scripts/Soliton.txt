@@ -1,0 +1,11 @@
+name=Soliton
+url=http://magiccards.info/som/en/204.html
+image=http://magiccards.info/scans/en/som/204.jpg
+value=3.275
+rarity=C
+type=Artifact,Creature
+subtype=Construct
+cost={5}
+pt=3/4
+timing=main
+requires_card_code=Horseshoe Crab
