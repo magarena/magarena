@@ -1,0 +1,11 @@
+name=Viashino Slasher
+url=http://magiccards.info/rav/en/149.html
+image=http://magiccards.info/scans/en/rav/149.jpg
+value=1.548
+rarity=C
+type=Creature
+subtype=Viashino,Warrior
+cost={1}{R}
+pt=1/2
+ability=pump {R} +1/-1
+timing=main
