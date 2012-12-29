@@ -834,12 +834,14 @@ public class MagicCardDefinition {
     public static final Comparator<MagicCardDefinition> POWER_COMPARATOR_DESC=new Comparator<MagicCardDefinition>() {
         @Override
         public int compare(final MagicCardDefinition cardDefinition1,final MagicCardDefinition cardDefinition2) {
-            if(!cardDefinition1.isCreature()) {
-                return 1;
-            } else if (!cardDefinition2.isCreature()) {
-                return -1;
+            final int p1 = cardDefinition1.isCreature() ? cardDefinition1.getCardPower() : -100;
+            final int p2 = cardDefinition2.isCreature() ? cardDefinition2.getCardPower() : -100;
+            
+            if (p1 != p2) {
+                return p1 - p2;
+            } else {
+                return cardDefinition1.getName().compareTo(cardDefinition2.getName());
             }
-            return cardDefinition1.getCardPower() - cardDefinition2.getCardPower();
         }
     };
 
@@ -853,12 +855,14 @@ public class MagicCardDefinition {
     public static final Comparator<MagicCardDefinition> TOUGHNESS_COMPARATOR_DESC=new Comparator<MagicCardDefinition>() {
         @Override
         public int compare(final MagicCardDefinition cardDefinition1,final MagicCardDefinition cardDefinition2) {
-            if(!cardDefinition1.isCreature()) {
-                return 1;
-            } else if (!cardDefinition2.isCreature()) {
-                return -1;
+            final int t1 = cardDefinition1.isCreature() ? cardDefinition1.getCardToughness() : -100;
+            final int t2 = cardDefinition2.isCreature() ? cardDefinition2.getCardToughness() : -100;
+            
+            if (t1 != t2) {
+                return t1 - t2;
+            } else {
+                return cardDefinition1.getName().compareTo(cardDefinition2.getName());
             }
-            return cardDefinition1.getCardToughness() - cardDefinition2.getCardToughness();
         }
     };
 
