@@ -1,0 +1,10 @@
+name=Quilled Slagwurm
+url=http://magiccards.info/mbs/en/89.html
+image=http://magiccards.info/scans/en/mbs/89.jpg
+value=2.350
+rarity=U
+type=Creature
+subtype=Wurm
+cost={4}{G}{G}{G}
+pt=8/8
+timing=main
