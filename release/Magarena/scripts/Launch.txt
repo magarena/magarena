@@ -1,0 +1,12 @@
+name=Launch
+url=http://magiccards.info/us/en/82.html
+image=http://magiccards.info/scans/en/us/82.jpg
+value=3.768
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{U}
+given_ability=flying
+timing=aura
+enchant=flying,pos creature
+requires_card_code=Rancor
