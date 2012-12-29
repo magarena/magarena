@@ -1,0 +1,9 @@
+name=Iona's Judgment
+url=http://magiccards.info/wwk/en/8.html
+image=http://magiccards.info/scans/en/wwk/8.jpg
+value=2.307
+rarity=C
+type=Sorcery
+cost={4}{W}
+timing=removal
+effect=Exile target creature or enchantment.
