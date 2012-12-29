@@ -1,0 +1,10 @@
+name=Loxodon Convert
+url=http://magiccards.info/nph/en/14.html
+image=http://magiccards.info/scans/en/nph/14.jpg
+value=1.821
+rarity=C
+type=Creature
+subtype=Elephant,Soldier
+cost={3}{W}
+pt=4/2
+timing=main
