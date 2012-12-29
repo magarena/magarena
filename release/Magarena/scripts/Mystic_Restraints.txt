@@ -1,0 +1,12 @@
+name=Mystic Restraints
+url=http://magiccards.info/chk/en/76.html
+image=http://magiccards.info/scans/en/chk/76.jpg
+value=2.591
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{U}{U}
+ability=flash
+timing=flash
+enchant=can't attack or block,neg creature
+requires_card_code=Claustrophobia
