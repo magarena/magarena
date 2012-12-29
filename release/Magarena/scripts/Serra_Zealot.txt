@@ -8,4 +8,4 @@ subtype=Human,Soldier
 cost={W}
 pt=1/1
 ability=first strike
-timing=fmain
+timing=main
