@@ -1,0 +1,12 @@
+name=Sluggishness
+url=http://magiccards.info/ul/en/92.html
+image=http://magiccards.info/scans/en/ul/92.jpg
+value=2.720
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{R}
+given_ability=can't block
+timing=aura
+enchant=can't attack or block,neg creature
+requires_card_code=Rancor
