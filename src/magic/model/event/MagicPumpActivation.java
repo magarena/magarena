@@ -32,12 +32,38 @@ public class MagicPumpActivation extends MagicPermanentActivation {
         return new MagicEvent(
             source,
             this,
-            "SN gets +"+power+"/+"+toughness+" until end of turn."
+            "SN gets " + getPTChange() + " until end of turn."
         );
     }
 
     @Override
     public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choices) {
         game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),power,toughness));
+    }
+
+    private String getPTChange() {
+        String pSign = getSign(power);
+        String tSign = getSign(toughness);
+
+        if (tSign.isEmpty() && pSign.isEmpty()) {
+            tSign = "+";
+            pSign = "+";
+        } else if (tSign.isEmpty()) {
+            tSign = pSign;
+        } else if (pSign.isEmpty()) {
+            pSign = tSign;
+        }
+
+        return pSign + power + "/" + tSign + toughness;
+    }
+
+    private String getSign(int v) {
+        if (v > 0) {
+            return "+";
+        } else if (v < 0) {
+            return "-";
+        } else {
+            return "";
+        }
     }
 }
