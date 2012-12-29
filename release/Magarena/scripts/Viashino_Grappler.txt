@@ -1,0 +1,11 @@
+name=Viashino Grappler
+url=http://magiccards.info/in/en/179.html
+image=http://magiccards.info/scans/en/in/179.jpg
+value=2.231
+rarity=C
+type=Creature
+subtype=Viashino
+cost={2}{R}
+pt=3/1
+ability=gains {G} trample
+timing=main
