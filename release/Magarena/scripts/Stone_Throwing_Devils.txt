@@ -1,0 +1,11 @@
+name=Stone-Throwing Devils
+url=http://magiccards.info/an/en/14.html
+image=http://magiccards.info/scans/en/an/14.jpg
+value=3.905
+rarity=C
+type=Creature
+subtype=Devil
+cost={B}
+pt=1/1
+ability=first strike
+timing=main
