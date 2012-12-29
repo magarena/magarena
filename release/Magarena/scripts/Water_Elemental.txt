@@ -1,0 +1,10 @@
+name=Water Elemental
+url=http://magiccards.info/me4/en/70.html
+image=http://magiccards.info/scans/en/me4/70.jpg
+value=3.095
+rarity=U
+type=Creature
+subtype=Elemental
+cost={3}{U}{U}
+pt=5/4
+timing=main
