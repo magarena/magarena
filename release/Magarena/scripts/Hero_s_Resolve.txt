@@ -1,0 +1,11 @@
+name=Hero's Resolve
+url=http://magiccards.info/tp/en/235.html
+image=http://magiccards.info/scans/en/tp/235.jpg
+value=3.429
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{W}
+given_pt=1/5
+timing=aura
+enchant=pump,pos creature
