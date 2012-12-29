@@ -1,0 +1,12 @@
+name=Thundermare
+url=http://magiccards.info/9e/en/224.html
+image=http://magiccards.info/scans/en/9e/224.jpg
+value=4.000
+rarity=R
+type=Creature
+subtype=Elemental,Horse
+cost={5}{R}
+pt=5/5
+ability=haste
+timing=fmain
+requires_card_code=Timbermare
