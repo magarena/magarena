@@ -1,0 +1,11 @@
+name=Juzam Djinn
+url=http://magiccards.info/med/en/74.html
+image=http://magiccards.info/scans/en/med/74.jpg
+value=4.299
+rarity=R
+type=Creature
+subtype=Djinn
+cost={2}{B}{B}
+pt=5/5
+timing=main
+requires_card_code=Serendib Efreet
