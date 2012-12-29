@@ -1,0 +1,9 @@
+name=Talisman of Unity
+url=http://magiccards.info/mi/en/257.html
+image=http://magiccards.info/scans/en/mi/257.jpg
+value=2.906
+rarity=U
+type=Artifact
+cost={2}
+ability=tap add mana {1},tap pain add mana {G} or {W}
+timing=artifact
