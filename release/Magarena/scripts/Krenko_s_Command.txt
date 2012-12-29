@@ -1,0 +1,9 @@
+name=Krenko's Command
+url=http://magiccards.info/m13/en/139.html
+image=http://magiccards.info/scans/en/m13/139.jpg
+value=3.577
+rarity=C
+type=Sorcery
+cost={1}{R}
+timing=main
+requires_card_code=Dragon Fodder
