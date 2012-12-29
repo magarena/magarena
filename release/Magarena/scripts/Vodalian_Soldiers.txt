@@ -1,0 +1,10 @@
+name=Vodalian Soldiers
+url=http://magiccards.info/5e/en/134.html
+image=http://magiccards.info/scans/en/5e/134.jpg
+value=1.821
+rarity=C
+type=Creature
+subtype=Merfolk,Soldier
+cost={1}{U}
+pt=1/2
+timing=main
