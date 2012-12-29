@@ -1,0 +1,10 @@
+name=Ironroot Treefolk
+url=http://magiccards.info/5e/en/167.html
+image=http://magiccards.info/scans/en/5e/167.jpg
+value=1.667
+rarity=C
+type=Creature
+subtype=Treefolk
+cost={4}{G}
+pt=3/5
+timing=main
