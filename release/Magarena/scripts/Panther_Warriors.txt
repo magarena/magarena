@@ -1,0 +1,10 @@
+name=Panther Warriors
+url=http://magiccards.info/6e/en/243.html
+image=http://magiccards.info/scans/en/6e/243.jpg
+value=3.129
+rarity=C
+type=Creature
+subtype=Cat,Warrior
+cost={4}{G}
+pt=6/3
+timing=main
