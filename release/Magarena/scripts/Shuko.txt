@@ -1,0 +1,11 @@
+name=Shuko
+url=http://magiccards.info/bok/en/159.html
+image=http://magiccards.info/scans/en/bok/159.jpg
+value=4.143
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={1}
+equip={0}
+given_pt=1/0
+timing=main
