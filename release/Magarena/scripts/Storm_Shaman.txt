@@ -1,0 +1,11 @@
+name=Storm Shaman
+url=http://magiccards.info/ai/en/119.html
+image=http://magiccards.info/scans/en/ai/119.jpg
+value=3.250
+rarity=U
+type=Creature
+subtype=Human,Cleric,Shaman
+cost={2}{R}
+pt=0/4
+ability=pump {R} +1/+0
+timing=main
