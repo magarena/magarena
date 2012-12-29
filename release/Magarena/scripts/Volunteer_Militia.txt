@@ -1,0 +1,10 @@
+name=Volunteer Militia
+url=http://magiccards.info/po2/en/148.html
+image=http://magiccards.info/scans/en/po2/148.jpg
+value=2.976
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={W}
+pt=1/2
+timing=main
