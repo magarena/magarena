@@ -1,0 +1,11 @@
+name=Oakenform
+url=http://magiccards.info/m10/en/197.html
+image=http://magiccards.info/scans/en/m10/197.jpg
+value=2.859
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{G}
+given_pt=3/3
+timing=aura
+enchant=pump,pos creature
