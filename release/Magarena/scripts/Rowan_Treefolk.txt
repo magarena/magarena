@@ -1,0 +1,10 @@
+name=Rowan Treefolk
+url=http://magiccards.info/po/en/110.html
+image=http://magiccards.info/scans/en/po/110.jpg
+value=2.597
+rarity=C
+type=Creature
+subtype=Treefolk
+cost={3}{G}
+pt=3/4
+timing=main
