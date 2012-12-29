@@ -1,0 +1,10 @@
+name=Empty the Warrens
+url=http://magiccards.info/ts/en/152.html
+image=http://magiccards.info/scans/en/ts/152.jpg
+value=4.292
+rarity=C
+type=Sorcery
+cost={3}{R}
+ability=storm
+timing=main
+requires_card_code=Dragon Fodder
