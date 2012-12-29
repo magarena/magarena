@@ -1,0 +1,10 @@
+name=The Lady of the Mountain
+url=http://magiccards.info/me3/en/180.html
+image=http://magiccards.info/scans/en/me3/180.jpg
+value=2.344
+rarity=C
+type=Legendary,Creature
+subtype=Giant
+cost={4}{R}{G}
+pt=5/5
+timing=main
