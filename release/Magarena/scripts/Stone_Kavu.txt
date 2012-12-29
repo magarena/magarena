@@ -1,0 +1,11 @@
+name=Stone Kavu
+url=http://magiccards.info/ps/en/93.html
+image=http://magiccards.info/scans/en/ps/93.jpg
+value=2.857
+rarity=C
+type=Creature
+subtype=Kavu
+cost={4}{G}
+pt=3/3
+ability=pump {R} +1/+0,pump {W} +0/+1
+timing=main
