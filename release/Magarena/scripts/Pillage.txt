@@ -1,0 +1,9 @@
+name=Pillage
+url=http://magiccards.info/7e/en/207.html
+image=http://magiccards.info/scans/en/7e/207.jpg
+value=4.627
+rarity=U
+type=Sorcery
+cost={1}{R}{R}
+timing=removal
+effect=Destroy target artifact or land. It can't be regenerated.
