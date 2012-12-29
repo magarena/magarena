@@ -1,0 +1,9 @@
+name=Talisman of Impulse
+url=http://magiccards.info/mi/en/254.html
+image=http://magiccards.info/scans/en/mi/254.jpg
+value=3.239
+rarity=U
+type=Artifact
+cost={2}
+ability=tap add mana {1},tap pain add mana {R} or {G}
+timing=artifact
