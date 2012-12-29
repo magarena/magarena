@@ -8,5 +8,5 @@ subtype=Ogre,Samurai,Shaman
 cost={4}{R}
 pt=2/3
 ability=bushido 1
-timing=flash
+timing=main
 requires_card_code
