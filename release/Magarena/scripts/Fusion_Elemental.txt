@@ -1,0 +1,10 @@
+name=Fusion Elemental
+url=http://magiccards.info/cfx/en/107.html
+image=http://magiccards.info/scans/en/cfx/107.jpg
+value=3.447
+rarity=U
+type=Creature
+subtype=Elemental
+cost={W}{U}{B}{R}{G}
+pt=8/8
+timing=main
