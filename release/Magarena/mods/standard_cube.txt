@@ -119,6 +119,7 @@ Divine Favor
 Doomed Traveler
 Dragon Hatchling
 Dragonskull Summit
+Dreadbore
 Dreadwaters
 Driver of the Dead
 Drogskol Captain
@@ -139,6 +140,7 @@ Elvish Visionary
 Emancipation Angel
 Endless Ranks of the Dead
 Entreat the Angels
+Erase
 Erdwal Ripper
 Essence Drain
 Essence Harvest
@@ -209,6 +211,7 @@ Grimoire of the Dead
 Griptide
 Griselbrand
 Grounded
+Gruesome Deformity
 Gryff Vanguard
 Guardian Lions
 Guardians of Akrasa
@@ -260,6 +263,7 @@ Knightly Valor
 Knight of Glory
 Knight of Infamy
 Kraken Hatchling
+Krenko's Command
 Kruin Striker
 Lantern Spirit
 Latch Seeker
@@ -366,6 +370,7 @@ Rootbound Crag
 Rotcrown Ghoul
 Rotting Fensnake
 Rubbleback Rhino
+Rummaging Goblin
 Runewing
 Rush of Blood
 Russet Wolves
@@ -407,6 +412,7 @@ Skyline Predator
 Slayer of the Wicked
 Slayers' Stronghold
 Sleep
+Smelt
 Smite the Monstrous
 Somberwald Dryad
 Somberwald Spider
@@ -453,6 +459,7 @@ Timberland Guide
 Titanic Growth
 Torch Fiend
 Tormented Soul
+Tormentor's Trident
 Tower Drake
 Towering Indrik
 Tragic Slip

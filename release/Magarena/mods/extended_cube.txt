@@ -212,6 +212,7 @@ Concussive Bolt
 Condemn
 Conjurer's Closet
 Contagious Nim
+Copper Carapace
 Copperhorn Scout
 Copperline Gorge
 Copper Myr
@@ -231,6 +232,7 @@ Crippling Blight
 Crippling Chill
 Crossway Vampire
 Crypt Creeper
+Crypt Ripper
 Cudgel Troll
 Culling Dais
 Cunning Sparkmage
@@ -259,6 +261,7 @@ Deathmark
 Death's Caress
 Death Wind
 Defang
+Defensive Stance
 Defy Death
 Demolish
 Demonic Rising
@@ -292,6 +295,7 @@ Dragon's Claw
 Dragonskull Summit
 Drake Umbra
 Drana, Kalastria Bloodchief
+Dreadbore
 Dread Statuary
 Dreadwaters
 Drifting Shade
@@ -299,8 +303,10 @@ Driver of the Dead
 Drogskol Captain
 Drogskol Reaver
 Dross Hopper
+Dross Ripper
 Drowned Catacomb
 Druid's Familiar
+Dryad's Favor
 Dungeon Geists
 Dungrove Elder
 Duskdale Wurm
@@ -331,6 +337,7 @@ Endless Ranks of the Dead
 Engulfing Slagwurm
 Enslave
 Entreat the Angels
+Erase
 Erdwal Ripper
 Escaped Null
 Essence Drain
@@ -471,6 +478,7 @@ Grimoire of the Dead
 Griptide
 Griselbrand
 Grounded
+Gruesome Deformity
 Gryff Vanguard
 Guard Duty
 Guard Gomazoa
@@ -509,6 +517,7 @@ Heirs of Stromkirk
 Hellrider
 Heroes' Reunion
 Hero of Bladehold
+Hexplate Golem
 Hideous End
 Hideous Visage
 Highborn Ghoul
@@ -546,6 +555,7 @@ Intangible Virtue
 Into the Roil
 Intrepid Hero
 Invisible Stalker
+Iona's Judgment
 Ior Ruin Expedition
 Iron Myr
 Island
@@ -598,6 +608,7 @@ Koth's Courier
 Kozilek, Butcher of Truth
 Kraken Hatchling
 Kraken's Eye
+Krenko's Command
 Kruin Striker
 Kuldotha Ringleader
 Lagac Lizard
@@ -626,6 +637,7 @@ Lone Missionary
 Lord of Shatterskull Pass
 Lord of the Unreal
 Lost Leonin
+Loxodon Convert
 Loxodon Partisan
 Loxodon Wayfarer
 Lumberknot
@@ -685,6 +697,7 @@ Mist Raven
 Mnemonic Wall
 Molder Beast
 Moldgraf Monstrosity
+Molten Ravager
 Moment of Heroism
 Moon Heron
 Moonsilver Spear
@@ -723,6 +736,7 @@ Nephalia Seakite
 Nephalia Smuggler
 Nether Horror
 Nettle Swine
+Neurok Commando
 Neurok Invisimancer
 Niblis of the Breath
 Niblis of the Mist
@@ -737,6 +751,8 @@ Novablast Wurm
 Null Champion
 Oblivion Ring
 Oculus
+Ogre Menial
+Ogre Resister
 Ogre's Cleaver
 Ogre Sentry
 Ondu Cleric
@@ -787,12 +803,14 @@ Primal Huntbeast
 Primordial Hydra
 Prodigal Pyromancer
 Psychic Barrier
+Putrefax
 Pyroclasm
 Quag Vampires
 Quest for Renewal
 Quest for the Gemblades
 Quest for the Gravelord
 Quicksilver Amulet
+Quilled Slagwurm
 Quirion Dryad
 Rage Nimbus
 Rage Thrower
@@ -810,6 +828,7 @@ Rapacious One
 Ratchet Bomb
 Ravenous Rats
 Razorfield Rhino
+Razorfield Thresher
 Razor Swine
 Razorverge Thicket
 Reaper from the Abyss
@@ -822,6 +841,7 @@ Renegade Demon
 Requiem Angel
 Restoration Angel
 Reverberate
+Revoke Existence
 Righteous Blow
 Riot Devils
 Riot Ringleader
@@ -834,16 +854,19 @@ Roc Egg
 Roil Elemental
 Rootbound Crag
 Rotcrown Ghoul
+Rotted Hystrix
 Rotting Fensnake
 Rotting Legion
 Royal Assassin
 Rubbleback Rhino
+Rummaging Goblin
 Runeclaw Bear
 Runewing
 Rush of Blood
 Russet Wolves
 Rusted Sentinel
 Ruthless Cullblade
+Saberclaw Golem
 Sacred Wolf
 Safe Passage
 Sanctuary Cat
@@ -882,6 +905,7 @@ Serra Angel
 Serra Ascendant
 Servant of Nefarox
 Sharpened Pitchfork
+Shatter
 Shattered Angel
 Shatterskull Giant
 Sheoldred, Whispering One
@@ -920,6 +944,7 @@ Slayer of the Wicked
 Slayers' Stronghold
 Sleep
 Smallpox
+Smelt
 Smite
 Smite the Monstrous
 Smother
@@ -927,6 +952,7 @@ Snake Umbra
 Snapping Creeper
 Snapsail Glider
 Solemn Offering
+Soliton
 Somberwald Dryad
 Somberwald Spider
 Somberwald Vigilante
@@ -1024,6 +1050,7 @@ Tireless Missionaries
 Titanic Growth
 Torch Fiend
 Tormented Soul
+Tormentor's Trident
 Tower Drake
 Towering Indrik
 Toxic Nim
@@ -1112,6 +1139,7 @@ Warlord's Axe
 Warpath Ghoul
 Warstorm Surge
 Watercourser
+Water Servant
 Welkin Tern
 Whispersilk Cloak
 White Knight
@@ -1141,6 +1169,7 @@ Young Wolf
 Zealous Conscripts
 Zealous Strike
 Zendikar Farguide
+Zof Shade
 Zombie Apocalypse
 Zombie Goliath
 Zombie Infestation
