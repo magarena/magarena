@@ -1,0 +1,10 @@
+name=Skeletal Crocodile
+url=http://magiccards.info/po/en/33.html
+image=http://magiccards.info/scans/en/po/33.jpg
+value=2.459
+rarity=C
+type=Creature
+subtype=Crocodile,Skeleton
+cost={3}{B}
+pt=5/1
+timing=main
