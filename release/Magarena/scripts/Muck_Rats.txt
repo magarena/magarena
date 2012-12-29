@@ -1,0 +1,10 @@
+name=Muck Rats
+url=http://magiccards.info/po2/en/20.html
+image=http://magiccards.info/scans/en/po2/20.jpg
+value=1.829
+rarity=C
+type=Creature
+subtype=Rat
+cost={B}
+pt=1/1
+timing=main
