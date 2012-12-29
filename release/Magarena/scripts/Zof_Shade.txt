@@ -1,0 +1,11 @@
+name=Zof Shade
+url=http://magiccards.info/roe/en/132.html
+image=http://magiccards.info/scans/en/roe/132.jpg
+value=1.885
+rarity=C
+type=Creature
+subtype=Shade
+cost={3}{B}
+pt=2/2
+ability=pump {2}{B} +2/+2
+timing=main
