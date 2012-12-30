@@ -54,8 +54,16 @@ Thank you for your support and have fun!
 
 
 
-Release 1.33 (December 29, 2012)
+Release 1.33 (December 30, 2012)
 ============
+includes contributions from melvin, Aunukia, and PhazedOut
+
+- rules parser is now able to generate a syntax tree from parsed rules text
+- rules parser integrated into main program at src/magic/grammar
+
+- fixed:
+
+- added the following cards:
 
 Release 1.32 (November 30, 2012)
 ============
