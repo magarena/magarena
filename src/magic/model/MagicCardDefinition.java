@@ -466,7 +466,7 @@ public class MagicCardDefinition {
         }
 
         //check colorFlags and color from mana cost matches
-        if (!isToken() && cost.getColorFlags() != colorFlags) {
+        if (cost != MagicManaCost.ZERO && cost.getColorFlags() != colorFlags) {
             throw new RuntimeException(
                 "name=" + name + " costColorFlags: " + cost.getColorFlags() + " != colorFlags: " + colorFlags
             );
