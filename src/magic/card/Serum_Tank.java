@@ -25,12 +25,12 @@ public class Serum_Tank {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPermanent otherPermanent) {
-            return (otherPermanent.getCardDefinition().isArtifact()) ?
+            return (otherPermanent == permanent || otherPermanent.isArtifact()) ?
                 new MagicEvent(
-                        permanent,
-                        this,
-                        "PN put a charge counter on SN."
-                        ):
+                    permanent,
+                    this,
+                    "PN puts a charge counter on SN."
+                ):
                 MagicEvent.NONE;
         }
         
@@ -45,28 +45,34 @@ public class Serum_Tank {
     
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
-            		MagicCondition.CHARGE_COUNTER_CONDITION,
-            		MagicCondition.CAN_TAP_CONDITION,
-            		MagicManaCost.THREE.getCondition()},
+                MagicCondition.CHARGE_COUNTER_CONDITION,
+                MagicCondition.CAN_TAP_CONDITION,
+                MagicManaCost.THREE.getCondition()
+            },
             new MagicActivationHints(MagicTiming.Draw),
             "Draw") {
     	@Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostTapEvent(
+            return new MagicEvent[]{
+                new MagicPayManaCostTapEvent(
                     source,
                     source.getController(),
-                    MagicManaCost.THREE),
-                    new MagicRemoveCounterEvent(
-                        source,
-                        MagicCounterType.Charge,
-                        1)};
+                    MagicManaCost.THREE
+                ),
+                new MagicRemoveCounterEvent(
+                    source,
+                    MagicCounterType.Charge,
+                    1
+                )
+            };
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    this,
-                    "PN drew a card");
+                source,
+                this,
+                "PN draws a card"
+            );
         }
         @Override
         public void executeEvent(
@@ -76,10 +82,4 @@ public class Serum_Tank {
             game.doAction(new MagicDrawAction(event.getPlayer(),1));
         }
     };
-    
-    
-    
-    
-    
-    
 }
