@@ -5,6 +5,5 @@ value=4.585
 rarity=R
 type=Artifact
 cost={9}
-ability=indestructible
 timing=artifact
 requires_card_code

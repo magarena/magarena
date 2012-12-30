@@ -16,9 +16,5 @@ public class Darksteel_Forge {
         public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
             return flags | MagicAbility.Indestructible.getMask();
         }
-        @Override
-        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-            return source != target;
-        }
     };
 }
