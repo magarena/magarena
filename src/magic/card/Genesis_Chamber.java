@@ -14,15 +14,15 @@ public class Genesis_Chamber {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPermanent otherPermanent) {
-            return (otherPermanent != permanent &&
-            		permanent.isUntapped() &&
+            return (permanent.isUntapped() &&
                     otherPermanent.isNonToken() &&
                     otherPermanent.isCreature()) ?
                 new MagicEvent(
-                        permanent,
-                        this,
-                        "PN puts a 1/1 colorless Myr artifact creature token onto the battlefield."
-                        ):
+                    permanent,
+                    otherPermanent.getController(),
+                    this,
+                    "PN puts a 1/1 colorless Myr artifact creature token onto the battlefield."
+                ):
                 MagicEvent.NONE;
         }
         
