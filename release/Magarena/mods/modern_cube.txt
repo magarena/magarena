@@ -723,6 +723,7 @@ Geist Snatch
 Geist Trappers
 Gelectrode
 Gemstone Mine
+Genesis Chamber
 Geralf's Messenger
 Geralf's Mindcrusher
 Geth's Verdict
@@ -1673,6 +1674,7 @@ Serra's Blessing
 Serra's Embrace
 Serra Sphinx
 Serrated Arrows
+Serum Tank
 Servant of Nefarox
 Severed Legion
 Sewn-Eye Drake
@@ -1835,6 +1837,7 @@ Steadfast Guard
 Stealer of Secrets
 Steam Spitter
 Steam Vents
+Steel Overseer
 Steel Wall
 Stensia Bloodhall
 Steppe Lynx
