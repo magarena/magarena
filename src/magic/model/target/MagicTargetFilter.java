@@ -634,6 +634,8 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     
     MagicPermanentFilterImpl TARGET_MYR_YOU_CONTROL = Factory.creature(MagicSubType.Myr, Control.You);
     
+    MagicPermanentFilterImpl TARGET_MYR_CREATURE = Factory.creature(MagicSubType.Myr, Control.Any);
+    
     MagicPermanentFilterImpl TARGET_SAMURAI = Factory.creature(MagicSubType.Samurai, Control.Any);
     
     MagicPermanentFilterImpl TARGET_SAMURAI_YOU_CONTROL = Factory.creature(MagicSubType.Samurai, Control.You);

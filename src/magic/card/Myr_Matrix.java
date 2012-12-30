@@ -27,14 +27,10 @@ import magic.model.target.MagicTargetFilter;
 public class Myr_Matrix {
 	public static final MagicStatic S = new MagicStatic(
 	        MagicLayer.ModPT, 
-	        MagicTargetFilter.TARGET_MYR_YOU_CONTROL) {
+	        MagicTargetFilter.TARGET_MYR_CREATURE) {
 	        @Override
 	        public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
 	            pt.add(1,1);
-	        }
-	        @Override
-	        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-	            return source != target;
 	        }
 	    };
     
