@@ -47,7 +47,9 @@ Thanks to
   wait321 for creating a deck editor and other UI improvements
   missalexis for creating an application bundle to improve Mac installation
   goonjamin for contributing a patch that makes Magarena easier to use on touchscreens
-  nado18, Erkcan Özcan, kdesmond, a. benedict balbuena, spartan vi, Braullynn, mecheng, pcastellazzi, rasdel, and Tyrael for implementing new cards
+  PhazedOut, Aunukia, nado18, Erkcan Özcan, kdesmond, a. benedict balbuena,
+  spartan vi, Braullynn, mecheng, pcastellazzi, rasdel, and Tyrael for
+  implementing new cards
   everyone on the CCGHQ forum (http://slightlymagic.net/forum/)
 
 Thank you for your support and have fun!
@@ -61,9 +63,66 @@ includes contributions from melvin, Aunukia, and PhazedOut
 - rules parser is now able to generate a syntax tree from parsed rules text
 - rules parser integrated into main program at src/magic/grammar
 
-- fixed:
+- fixed: changes to a creature's power and toughness may not be reflected immediately
+- fixed: change of control of a creature in combat was not removing creature from combat 
+- fixed: game crashes when sorting by power or toughness in deck editor
+- fixed: message shown when activating a pump ability shows "+1/+-1" instead of "+1/-1"
+- fixed: Sokenzan Spellblade's timing hint is set of flash, should be main
+- fixed: Glimmerdust Nap was able to enchant untapped creatures
+- fixed: Angelic Armaments doesn't make equipped creature white
+- fixed: Curiosity able to draw card when dealing damage to any player, 
+         should be only for opponent of controller of Curiosity
 
 - added the following cards:
+Alaborn Trooper, Ambush Party, Aspect of Mongoose, Auriok Champion,
+Balduvian Bears, Barbarian Horde, Barbary Apes, Barktooth Warbeard, Bear Cub,
+Blanchwood Treefolk, Bonded Fetch, Border Guard, Breath of Life,
+Breathstealer, Brilliant Halo, Brimstone Dragon, Brute Force, Burrowing,
+Capashen Knight, Capashen Templar, Carnivorous Plant, Caustic Rain,
+Cave Sense, Coiled Tinviper, Concentrate, Copper Carapace, Crypt Ripper,
+Dakmor Scorpion, Dark Banishing, Darksteel Forge, Defensive Stance,
+Despondency, Dimir Cutpurse, Divinity of Pride, Dragon Engine, Dreadbore,
+Dross Ripper, Dryad Arbor, Dryad's Favor, Durkwood Boars, Dwarven Trader,
+Ebony Treefolk, Ekundu Griffin, Elves of Deep Shadow, Elvish Ranger,
+Empty the Warrens, Erase, False Defeat, Femeref Scouts, Fetid Horror,
+Fishliver Oil, Fissure, Flamekin Brawler, Fledgling Djinn, Forest Bear,
+Foxfire Oak, Fractured Powerstone, Fresh Volunteers, Frozen Shade,
+Furnace Spirit, Fusion Elemental, Gaea's Anthem, Genesis Chamber,
+Gerrard's Irregulars, Glitterfang, Goblin Berserker, Goblin Bully,
+Goblin Cavaliers, Goblin Elite Infantry, Goblin Hero, Golden Bear,
+Gorilla Warrior, Gray Ogre, Groundbreaker, Gruesome Deformity, Hematite Golem,
+Hero's Resolve, Hexplate Golem, Hoar Shade, Hornet Cobra, Hurloon Minotaur,
+Iona's Judgment, Ironroot Treefolk, Jedit Ojanen, Jerrard of the Closed Fist,
+Jeska, Warrior Adept, Jungle Lion, Juzam Djinn, Kasimir the Lone Wolf,
+Keen Sense, Keepers of the Faith, Kjeldoran Outrider, Kranioceros,
+Krenko's Command, Krovikan Scoundrel, Land Leeches, Launch, Leshrac's Rite,
+Lizard Warrior, Llanowar Dead, Loch Korrigan, Loxodon Convert,
+Malachite Golem, Mark of Fury, Meng Huo's Horde, Metallic Sliver,
+Minotaur Warrior, Molten Ravager, Mons's Goblin Raiders, Mountain Bandit,
+Muck Rats, Muzzle, Myr Matrix, Mystic Restraints, Narwhal, Nettletooth Djinn,
+Neurok Commando, Oakenform, Ogre Berserker, Ogre Menial, Ogre Resister,
+Ogre Warrior, Ophidian Eye, Panther Warriors, Parapet Watchers,
+Pardic Collaborator, Pavel Maliki, Pearled Unicorn, Pillage, Plated Wurm,
+Primeval Shambler, Puppeteer, Putrefax, Pygmy Razorback, Pyre Charger, Python,
+Quilled Slagwurm, Raging Bull, Raging Cougar, Raging Minotaur,
+Razorfield Thresher, Regal Unicorn, Restless Apparition, Resurrection,
+Revoke Existence, Rotted Hystrix, Rowan Treefolk, Rummaging Goblin,
+Saberclaw Golem, Sangrite Backlash, Scarwood Goblins, Sea Spirit,
+Serra Zealot, Serum Tank, Shatter, Shrieking Mogg, Shu Elite Infantry,
+Shu Foot Soldiers, Shuko, Simic Ragworm, Sir Shandlar of Eberyn,
+Sivitri Scarzam, Skeletal Crocodile, Skeletal Snake, Sleeper's Guile,
+Sluggishness, Smelt, Soliton, Squire, Steel Overseer, Stone Kavu,
+Stone-Throwing Devils, Storm Shaman, Straw Soldiers, Talas Merchant,
+Talisman of Dominance, Talisman of Impulse, Talisman of Indulgence,
+Talisman of Progress, Talisman of Unity, Talruum Minotaur,
+The Lady of the Mountain, Thorn-Thrash Viashino, Thought Courier, Thundermare,
+Titanium Golem, Tobias Andrion, Tor Giant, Torment, Tormentor's Trident,
+Torsten Von Ursus, Trained Jackal, Trokin High Guard, Undercity Shade,
+Undying Rage, Verdigris, Viashino Cutthroat, Viashino Grappler,
+Viashino Sandscout, Viashino Sandstalker, Viashino Slasher, Viashino Warrior,
+Vodalian Soldiers, Volunteer Militia, Wall of Lava, Wall of Razors,
+War Mammoth, Water Elemental, Water Servant, Wei Infantry, Whiptail Wurm,
+Wild Colos, Wild Elephant, Wild Jhovall, Willow Elf, Wu Infantry, Zof Shade
 
 Release 1.32 (November 30, 2012)
 ============
