@@ -48,8 +48,7 @@ Thanks to
   missalexis for creating an application bundle to improve Mac installation
   goonjamin for contributing a patch that makes Magarena easier to use on touchscreens
   PhazedOut, Aunukia, nado18, Erkcan Özcan, kdesmond, a. benedict balbuena,
-  spartan vi, Braullynn, mecheng, pcastellazzi, rasdel, and Tyrael for
-  implementing new cards
+  spartan vi, Braullynn, mecheng, pcastellazzi, rasdel, and Tyrael for implementing new cards
   everyone on the CCGHQ forum (http://slightlymagic.net/forum/)
 
 Thank you for your support and have fun!
