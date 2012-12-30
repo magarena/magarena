@@ -28,15 +28,16 @@ public class Steel_Overseer {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                    new MagicTapEvent(source)};
+                new MagicTapEvent(source)
+            };
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    source.getController(),
-                    this,
-                    "Put a +1/+1 counter on each artifact creature you control.");
+                source,
+                this,
+                "Put a +1/+1 counter on each artifact creature you control."
+            );
         }
         @Override
         public void executeEvent(

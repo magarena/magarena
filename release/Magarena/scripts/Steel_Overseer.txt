@@ -4,6 +4,7 @@ image=http://magiccards.info/scans/en/ddf/44.jpg
 value=4.668
 rarity=R
 type=Artifact,Creature
+subtype=Construct
 cost={2}
 pt=1/1
 timing=main
