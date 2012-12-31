@@ -604,7 +604,6 @@ public enum MagicAbility {
     },
     EntersDestroy("enters destroy", 0) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            System.out.println(arg);
             card.add(MagicWhenComesIntoPlayTrigger.create("Destroy " + arg));
         }
     },
