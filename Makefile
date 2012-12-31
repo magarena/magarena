@@ -414,7 +414,7 @@ find_nulls: $(MAG)
 	flip -u $@
 
 # meta check
-check_all: check_aura check_requires_card_code check_script_name
+check_all: check_aura check_requires_card_code check_script_name check_unique_key
 
 # every aura must have an enchant property
 check_aura:
@@ -434,6 +434,9 @@ check_script_name:
 	diff \
 	<(ls -1 release/Magarena/scripts | sort) \
 	<(grep "name=" -r release/Magarena/scripts/ | sort | sed 's/.*name=//;s/[^A-Za-z0-9]/_/g;s/$$/.txt/')
+
+check_unique_key:
+	grep = -r release/Magarena/scripts | sed 's/=.*//g' | sort | uniq -d
 
 crash.txt: $(wildcard *.log)
 	for i in `grep "^Excep" -l $^`; do \
