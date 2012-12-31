@@ -90,7 +90,7 @@ public enum CardProperty {
     },
     ABILITY() {
         void setProperty(final MagicCardDefinition card, final String value) {
-            final String[] names=value.split(",");
+            final String[] names=value.split(",(?! )");
             for (final String name : names) {
                 final MagicAbility ability = MagicAbility.getAbility(name);
                 final String arg = name.substring(ability.toString().length()).trim();

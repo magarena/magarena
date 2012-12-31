@@ -57,6 +57,7 @@ import magic.model.trigger.MagicThiefTrigger.Type;
 import magic.model.trigger.MagicThiefTrigger.Choice;
 import magic.model.trigger.MagicThiefTrigger.Player;
 import magic.model.trigger.MagicWhenBlocksPumpTrigger;
+import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 import java.util.EnumSet;
 import java.util.List;
@@ -601,6 +602,12 @@ public enum MagicAbility {
             card.add(MagicPlayCardEvent.createX(arg));
         }
     },
+    EntersDestroy("enters destroy", 0) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            System.out.println(arg);
+            card.add(MagicWhenComesIntoPlayTrigger.create("Destroy " + arg));
+        }
+    },
     None("",0);
     
     public static final EnumSet<MagicAbility> CORE = EnumSet.range(AttacksEachTurnIfAble, Flanking);
@@ -660,16 +667,6 @@ public enum MagicAbility {
     public long getMask() {
         assert CORE.contains(this) : this + " ability has no mask";
         return mask;
-    }
-    
-    private boolean hasImpl() {
-        try {
-            return MagicAbility.class
-                   .getMethod("addAbilityImpl", MagicCardDefinition.class, String.class)
-                   .getDeclaringClass() != getClass();
-        } catch (NoSuchMethodException ex) {
-            throw new RuntimeException(ex);
-        }
     }
 
     public boolean hasAbility(final long flags) {
