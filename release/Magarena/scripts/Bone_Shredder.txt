@@ -8,6 +8,5 @@ type=Creature
 subtype=Minion
 cost={2}{B}
 pt=1/1
-ability=flying,echo
+ability=flying,echo,enters destroy target nonartifact, nonblack creature.
 timing=main
-requires_card_code
