@@ -98,6 +98,8 @@ public class MagicTargetChoice extends MagicChoice {
             new MagicTargetChoice(MagicTargetFilter.TARGET_LAND,true,MagicTargetHint.None,"target land");
     public static final MagicTargetChoice NEG_TARGET_LAND =
             new MagicTargetChoice(MagicTargetFilter.TARGET_LAND,true,MagicTargetHint.Negative,"target land");
+    public static final MagicTargetChoice POS_TARGET_LAND =
+            new MagicTargetChoice(MagicTargetFilter.TARGET_LAND,true,MagicTargetHint.Positive,"target land");
 
     public static final MagicTargetChoice TARGET_NONLAND_PERMANENT=
         new MagicTargetChoice(MagicTargetFilter.TARGET_NONLAND_PERMANENT,true,MagicTargetHint.None,"target nonland permanent");
@@ -114,6 +116,8 @@ public class MagicTargetChoice extends MagicChoice {
             new MagicTargetChoice(MagicTargetFilter.TARGET_ARTIFACT,true,MagicTargetHint.None,"target artifact");
     public static final MagicTargetChoice NEG_TARGET_ARTIFACT=
         new MagicTargetChoice(MagicTargetFilter.TARGET_ARTIFACT,true,MagicTargetHint.Negative,"target artifact");
+    public static final MagicTargetChoice POS_TARGET_ARTIFACT=
+        new MagicTargetChoice(MagicTargetFilter.TARGET_ARTIFACT,true,MagicTargetHint.Positive,"target artifact");
     public static final MagicTargetChoice TARGET_NONCREATURE_ARTIFACT=
         new MagicTargetChoice(MagicTargetFilter.TARGET_NONCREATURE_ARTIFACT,true,MagicTargetHint.None,"target noncreature artifact");
     public static final MagicTargetChoice POS_TARGET_NONCREATURE_ARTIFACT=
@@ -147,6 +151,8 @@ public class MagicTargetChoice extends MagicChoice {
                     "target enchantment your opponent controls");
     public static final MagicTargetChoice NEG_TARGET_ENCHANTMENT =
             new MagicTargetChoice(MagicTargetFilter.TARGET_ENCHANTMENT,true,MagicTargetHint.Negative,"target enchantment");
+    public static final MagicTargetChoice POS_TARGET_ENCHANTMENT =
+            new MagicTargetChoice(MagicTargetFilter.TARGET_ENCHANTMENT,true,MagicTargetHint.Positive,"target enchantment");
     public static final MagicTargetChoice NEG_TARGET_SPIRIT_OR_ENCHANTMENT =
             new MagicTargetChoice(MagicTargetFilter.TARGET_SPIRIT_OR_ENCHANTMENT,true,MagicTargetHint.Negative,"target Spirit or enchantment");
     public static final MagicTargetChoice NEG_TARGET_EQUIPMENT =
@@ -491,17 +497,34 @@ public class MagicTargetChoice extends MagicChoice {
         new HashMap<String, MagicTargetChoice>();
 
     static {
+        // used by enchant property
         factory.put("creature", TARGET_CREATURE);
         factory.put("pos creature", POS_TARGET_CREATURE);
         factory.put("neg creature", NEG_TARGET_CREATURE);
         factory.put("neg tapped creature", NEG_TARGET_TAPPED_CREATURE);
-        factory.put("neg creature or land", NEG_TARGET_CREATURE_OR_LAND);
-        factory.put("neg artifact or creature", NEG_TARGET_ARTIFACT_OR_CREATURE);
+        factory.put("pos nonblack creature", POS_TARGET_NONBLACK_CREATURE);
+        
+        factory.put("permanent", TARGET_PERMANENT);
         factory.put("pos permanent", POS_TARGET_PERMANENT);
         factory.put("neg permanent", NEG_TARGET_PERMANENT);
+
+        factory.put("land", TARGET_LAND);
+        factory.put("pos land", POS_TARGET_LAND);
+        factory.put("neg land", NEG_TARGET_LAND);
         factory.put("neg nonbasic land", NEG_TARGET_NONBASIC_LAND);
-        factory.put("pos nonblack creature", POS_TARGET_NONBLACK_CREATURE);
-       
+        
+        factory.put("artifact", TARGET_ARTIFACT);
+        factory.put("pos artifact", POS_TARGET_ARTIFACT);
+        factory.put("neg artifact", NEG_TARGET_ARTIFACT);
+        
+        factory.put("enchantment", TARGET_ENCHANTMENT);
+        factory.put("pos artifact", POS_TARGET_ENCHANTMENT);
+        factory.put("neg artifact", NEG_TARGET_ENCHANTMENT);
+        
+        factory.put("neg creature or land", NEG_TARGET_CREATURE_OR_LAND);
+        factory.put("neg artifact or creature", NEG_TARGET_ARTIFACT_OR_CREATURE);
+
+        // used by effect property
         factory.put("neg target artifact", NEG_TARGET_ARTIFACT);
         factory.put("neg target artifact or enchantment", NEG_TARGET_ARTIFACT_OR_ENCHANTMENT); 
         factory.put("neg target artifact or land", NEG_TARGET_ARTIFACT_OR_LAND);
