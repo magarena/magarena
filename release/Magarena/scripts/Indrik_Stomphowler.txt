@@ -7,5 +7,5 @@ type=Creature
 subtype=Beast
 cost={4}{G}
 pt=4/4
+ability=enters destroy target artifact or enchantment.
 timing=main
-requires_card_code

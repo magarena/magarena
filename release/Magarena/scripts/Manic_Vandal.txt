@@ -8,5 +8,5 @@ type=Creature
 subtype=Human,Warrior
 cost={2}{R}
 pt=2/2
+ability=enters destroy target artifact.
 timing=fmain
-requires_card_code

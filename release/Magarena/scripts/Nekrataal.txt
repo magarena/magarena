@@ -7,6 +7,5 @@ type=Creature
 subtype=Human,Assassin
 cost={2}{B}{B}
 pt=2/1
-ability=first strike
+ability=first strike,enters destroy target nonartifact, nonblack creature. It can't be regenerated.
 timing=fmain
-requires_card_code

@@ -8,6 +8,5 @@ type=Creature
 subtype=Human,Nomad
 cost={3}{R}
 pt=2/2
-ability=haste,echo
+ability=haste,echo,enters destroy target land.
 timing=main
-requires_card_code

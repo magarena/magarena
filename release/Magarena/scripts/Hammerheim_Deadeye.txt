@@ -8,6 +8,5 @@ type=Creature
 subtype=Giant,Warrior
 cost={3}{R}
 pt=3/3
-ability=echo {5}{R}
+ability=echo {5}{R},enters destroy target creature with flying.
 timing=main
-requires_card_code

@@ -8,6 +8,5 @@ type=Creature
 subtype=Ooze
 cost={3}{G}{G}
 pt=2/2
-ability=deathtouch
+ability=deathtouch,enters destroy target artifact, enchantment, or land.
 timing=fmain
-requires_card_code

@@ -7,6 +7,5 @@ type=Creature
 subtype=Treefolk,Shaman
 cost={5}{G}{G}{G}
 pt=6/6
-ability=trample,persist
+ability=trample,persist,enters destroy target noncreature permanent.
 timing=main
-requires_card_code

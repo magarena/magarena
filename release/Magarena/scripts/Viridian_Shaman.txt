@@ -7,5 +7,5 @@ type=Creature
 subtype=Elf,Shaman
 cost={2}{G}
 pt=2/2
+ability=enters destroy target artifact.
 timing=main
-requires_card_code=Manic Vandal
