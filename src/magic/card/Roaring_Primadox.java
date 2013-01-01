@@ -21,7 +21,7 @@ public class Roaring_Primadox {
 					return permanent.isController(upkeepPlayer) ?
 						new MagicEvent(
 							permanent,
-							MagicTargetChoice.TARGET_CREATURE,
+							MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
 							MagicBounceTargetPicker.getInstance(),
 							this,
 							"Return a creature you control to your hand."):

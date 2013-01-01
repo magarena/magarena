@@ -21,7 +21,7 @@ public class Esperzoa {
 					return permanent.isController(upkeepPlayer) ?
 						new MagicEvent(
 							permanent,
-							MagicTargetChoice.TARGET_ARTIFACT,
+							MagicTargetChoice.TARGET_ARTIFACT_YOU_CONTROL,
 							MagicBounceTargetPicker.getInstance(),
 							this,
 							"Return artifact you control to your hand."):
