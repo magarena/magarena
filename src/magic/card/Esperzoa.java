@@ -24,7 +24,7 @@ public class Esperzoa {
 							MagicTargetChoice.TARGET_ARTIFACT_YOU_CONTROL,
 							MagicBounceTargetPicker.getInstance(),
 							this,
-							"Return artifact you control to your hand."):
+							"Return an artifact you control to its owner's hand."):
 						MagicEvent.NONE;
 		}
 
