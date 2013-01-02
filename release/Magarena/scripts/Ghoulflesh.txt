@@ -8,6 +8,7 @@ type=Enchantment
 subtype=Aura
 cost={B}
 given_pt=-1/-1
+given_color=b
 given_subtype=Zombie
 timing=removal
 enchant=weaken -1/-1,neg creature
