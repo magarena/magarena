@@ -6,6 +6,7 @@ rarity=M
 type=Land,Creature
 subtype=Forest,Dryad
 mana=g3
+color=g
 pt=1/1
 ability=tap add mana {G}
 timing=land
