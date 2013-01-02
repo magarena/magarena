@@ -208,14 +208,15 @@ public class ImagePermanentViewer extends JPanel {
             }
             if (permanentInfo.creature) {
                 // Common combat ability icons.
-                final long abilityFlags=linkedInfo.abilityFlags;
                 if (linkedInfo.canNotTap) {
                     g.drawImage(IconImages.CANNOTTAP.getImage(),ax,ay,this);
                     ax+=16;
                 }
+                final long abilityFlags=linkedInfo.abilityFlags;
                 ax=ImageDrawingUtils.drawAbilityInfo(g,this, abilityFlags,ax,ay);
             }
-            if (permanentInfo.cardDefinition.isLand()) {
+            // Mana symbols
+            if (permanentInfo.cardDefinition.isLand() || permanentInfo.cardDefinition.isArtifact()) {
                 ax=ImageDrawingUtils.drawManaInfo(g,this,permanentInfo.cardDefinition,ax,ay);
             }
             
