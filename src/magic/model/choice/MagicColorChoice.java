@@ -23,18 +23,26 @@ public class MagicColorChoice extends MagicChoice {
     private static final int ALL=0;
     private static final int MOST=1;
     private static final int UNSUMMON=2;
-    private static final int BLUE_RED_WHITE=3;
+    private static final int RED_WHITE_BLUE=3;
     
     private static final List<Object> COLOR_OPTIONS=Arrays.<Object>asList(
-            MagicColor.Black,MagicColor.Blue,MagicColor.Green,MagicColor.Red,MagicColor.White);
+            MagicColor.White,
+            MagicColor.Blue,
+            MagicColor.Black,
+            MagicColor.Green,
+            MagicColor.Red
+        );
     
-    private static final List<Object> BLUE_RED_WHITE_OPTIONS=Arrays.<Object>asList(
-            MagicColor.Blue,MagicColor.Red,MagicColor.White);
+    private static final List<Object> RED_WHITE_BLUE_OPTIONS=Arrays.<Object>asList(
+            MagicColor.Red,
+            MagicColor.White,
+            MagicColor.Blue
+        );
     
     public static final MagicColorChoice ALL_INSTANCE=new MagicColorChoice(ALL);
     public static final MagicColorChoice MOST_INSTANCE=new MagicColorChoice(MOST);
     public static final MagicColorChoice UNSUMMON_INSTANCE=new MagicColorChoice(UNSUMMON);
-    public static final MagicColorChoice BLUE_RED_WHITE_INSTANCE=new MagicColorChoice(BLUE_RED_WHITE);
+    public static final MagicColorChoice RED_WHITE_BLUE_INSTANCE=new MagicColorChoice(RED_WHITE_BLUE);
         
     private final int type;
     
@@ -107,7 +115,7 @@ public class MagicColorChoice extends MagicChoice {
         switch (type) {
             case MOST: return getArtificialMostOptions(game,player);
             case UNSUMMON: return getArtificialUnsummonOptions(game,player);
-            case BLUE_RED_WHITE: return BLUE_RED_WHITE_OPTIONS;
+            case RED_WHITE_BLUE: return RED_WHITE_BLUE_OPTIONS;
             default: return COLOR_OPTIONS;
         }
     }    

@@ -40,7 +40,7 @@ public class Spiritmonger {
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
-                    MagicColorChoice.BLUE_RED_WHITE_INSTANCE,
+                    MagicColorChoice.RED_WHITE_BLUE_INSTANCE,
                     this,
                     "SN becomes the color$ of your choice until end of turn.");
         }
