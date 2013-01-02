@@ -9,11 +9,11 @@ import java.util.List;
 
 public enum MagicColor {
 
-    Black("black",'b'),
+    White("white",'w'),
     Blue("blue",'u'),
+    Black("black",'b'),
     Green("green",'g'),
-    Red("red",'r'),
-    White("white",'w')
+    Red("red",'r')
     ;
     
     public static final int NR_COLORS=values().length;
@@ -51,66 +51,66 @@ public enum MagicColor {
     
     public MagicAbility getProtectionAbility() {
         switch (this) {
-            case Black: return MagicAbility.ProtectionFromBlack;
+            case White: return MagicAbility.ProtectionFromWhite;
             case Blue: return MagicAbility.ProtectionFromBlue;
+            case Black: return MagicAbility.ProtectionFromBlack;
             case Green: return MagicAbility.ProtectionFromGreen;
             case Red: return MagicAbility.ProtectionFromRed;
-            case White: return MagicAbility.ProtectionFromWhite;
         }
         throw new RuntimeException("No protection ability for MagicColor " + this);
     }
     
     public MagicAbility getLandwalkAbility() {
         switch (this) {
-            case Black: return MagicAbility.Swampwalk;
+            case White: return MagicAbility.PlainsWalk;
             case Blue: return MagicAbility.Islandwalk;
+            case Black: return MagicAbility.Swampwalk;
             case Green: return MagicAbility.Forestwalk;
             case Red: return MagicAbility.Mountainwalk;
-            case White: return MagicAbility.PlainsWalk;
         }    
         throw new RuntimeException("No landwalk ability for MagicColor " + this);
     }
     
     public MagicAbility getCannotBeBlockedByAbility() {
         switch (this) {
-            case Black: return MagicAbility.CannotBeBlockedByBlack;
+            case White: return MagicAbility.CannotBeBlockedByWhite;
             case Blue: return MagicAbility.CannotBeBlockedByBlue;
+            case Black: return MagicAbility.CannotBeBlockedByBlack;
             case Green: return MagicAbility.CannotBeBlockedByGreen;
             case Red: return MagicAbility.CannotBeBlockedByRed;
-            case White: return MagicAbility.CannotBeBlockedByWhite;
         }    
         throw new RuntimeException("No CannotBeBlockedBy ability for MagicColor " + this);
     }
     
     public MagicSubType getLandSubType() {
         switch (this) {
-            case Black: return MagicSubType.Swamp;
+            case White: return MagicSubType.Plains;        
             case Blue: return MagicSubType.Island;
+            case Black: return MagicSubType.Swamp;
             case Green: return MagicSubType.Forest;
             case Red: return MagicSubType.Mountain;
-            case White: return MagicSubType.Plains;        
         }
         throw new RuntimeException("No land subtype for MagicColor " + this);
     }
     
     public MagicManaType getManaType() {
         switch (this) {
-            case Black: return MagicManaType.Black;
+            case White: return MagicManaType.White;
             case Blue: return MagicManaType.Blue;
+            case Black: return MagicManaType.Black;
             case Green: return MagicManaType.Green;
             case Red: return MagicManaType.Red;
-            case White: return MagicManaType.White;
         }
         return MagicManaType.Colorless;
     }
     
     public ImageIcon getIcon() {
         switch (this) {
-            case Black: return IconImages.BLACK;
+            case White: return IconImages.WHITE;
             case Blue: return IconImages.BLUE;
+            case Black: return IconImages.BLACK;
             case Green: return IconImages.GREEN;
             case Red: return IconImages.RED;
-            case White: return IconImages.WHITE;
         }
         throw new RuntimeException("No icon for MagicColor " + this);
     }
