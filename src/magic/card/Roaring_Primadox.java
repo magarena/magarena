@@ -24,7 +24,7 @@ public class Roaring_Primadox {
 							MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
 							MagicBounceTargetPicker.getInstance(),
 							this,
-							"Return a creature you control to your hand."):
+							"Return a creature you control to its owner's hand."):
 						MagicEvent.NONE;
 		}
 
