@@ -131,11 +131,26 @@ public class MagicPayManaCostChoice extends MagicChoice {
             
             final int costMinAmount = builderCost.getMinimumAmount();
             final Set<Object> validSources=builder.getManaSources(costManaType,!canSkip);
-            MagicPermanent sourcePermanent = (MagicPermanent)validSources.iterator().next();
-            if (canSkip && 
-                (validSources.size() == 1 ||
-                (builder.getActivationsSize() == costMinAmount &&
-                sourcePermanent.getCounters(MagicCounterType.Charge) == 0))) {
+
+            MagicPermanent sourcePermanent = MagicPermanent.NONE;
+            if (validSources.size() == 1) {
+                // only one valid choice
+                sourcePermanent = (MagicPermanent)validSources.iterator().next();
+            } 
+            if (builder.getActivationsSize() == costMinAmount) {
+                // more than one valid choice but number of activations = cost
+                // find permanent with only one mana activation
+                for (final Object obj : validSources) {
+                    final MagicPermanent perm = (MagicPermanent)obj;
+                    if (perm.countManaActivations() == 1) {
+                        sourcePermanent = perm;
+                        break;
+                    }
+                }
+            }
+
+            if (canSkip && sourcePermanent.isValid()) {
+                // skip choice
             } else {
                 controller.setValidChoices(validSources,false);
                 controller.showMessage(source,"Choose a mana source to pay "+costManaType.getText()+".");
@@ -145,6 +160,7 @@ public class MagicPayManaCostChoice extends MagicChoice {
                 controller.clearValidChoices();
                 sourcePermanent=(MagicPermanent)controller.getChoiceClicked();                
             }
+
             builder.useManaSource(sourcePermanent,costManaType);
             controller.update();
         }
