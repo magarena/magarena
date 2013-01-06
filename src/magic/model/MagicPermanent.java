@@ -240,6 +240,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return !cardDefinition.getManaActivations().isEmpty();
     }
     
+    public int countManaActivations() {
+        return cardDefinition.getManaActivations().size();
+    }
+    
     public String getName() {
         return card.getName();
     }
