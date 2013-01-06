@@ -6,10 +6,24 @@
   <property name="debuglevel" value="source,lines,vars"/>
   <property name="target" value="1.6"/>
   <property name="source" value="1.6"/>
+  <property name="lib" value="release/lib" />
+
+  <path id="classpath">
+      <fileset dir="${lib}">
+      <include name="**/*.jar" />
+      </fileset>
+  </path>
+
+  <!-- deps - Download dependencies -->
+  <target name="deps" unless="skip.download">
+      <echo message="downloading groovy to ${lib}"/>
+      <get src="http://repo1.maven.org/maven2/org/codehaus/groovy/groovy-all/2.0.6/groovy-all-2.0.6.jar" dest="${lib}" usetimestamp="true" />
+  </target>
 
   <!-- init - Create temporary directory to build the program -->
   <target name="init">
-    <mkdir dir="build"/>
+      <mkdir dir="build"/>
+      <mkdir dir="${lib}"/>
   </target>
 
   <!-- clean - Remove temporary directory -->
@@ -18,10 +32,11 @@
   </target>
 
   <!-- build - Compile sources and copy resources to build directory -->
-  <target depends="init" name="build">
+  <target depends="init,deps" name="build">
     <javac includeantruntime="false" debug="true" debuglevel="${debuglevel}" destdir="build" source="${source}" target="${target}">
         <src path="src"/>
         <compilerarg value="-Xlint"/>
+        <classpath refid="classpath" />
     </javac>
     <copy includeemptydirs="false" todir="build">
       <fileset dir="resources">
@@ -36,6 +51,7 @@
       <manifest>
         <attribute name="Main-Class" value="magic.MagicMain" />
       	<attribute name="SplashScreen-Image" value="magic/data/textures/logo.jpg" />
+        <attribute name="Class-Path" value="lib/groovy-all-2.0.6.jar" />
       </manifest>
     </jar>
   </target>
