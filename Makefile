@@ -1,9 +1,8 @@
 JAVAEA=java -ea -Xms256M -Xmx256M -Ddebug=true
-LIBS=.:lib/annotations.jar:lib/jsr305.jar
+LIBS=.:lib/annotations.jar:lib/jsr305.jar:release/lib/groovy-all-2.0.6.jar
 JAVA=${JAVAEA} -Dcom.sun.management.jmxremote -cp $(LIBS):release/Magarena.jar
 SHELL=/bin/bash
 BUILD=build
-JOPTS=-Xlint:all -d $(BUILD) -cp $(LIBS):$(BUILD):.
 SRC=$(shell find src -iname *.java)
 MAG:=release/Magarena.jar
 EXE:=release/Magarena.exe
@@ -118,12 +117,13 @@ M1.%: clean $(EXE) cubes release/Magarena/mods/felt_theme.zip
 	-rm Magarena-1.$*.zip
 	-rm Magarena-1.$*.app.zip
 	mkdir -p Magarena-1.$*/Magarena/mods
-	cp \
+	cp -r \
 			release/gpl-3.0.html \
 			release/Magarena.exe \
 			release/Magarena.sh \
 			release/Magarena.command \
 			release/README.txt \
+			release/lib \
 			Magarena-1.$*
 	cp -r \
 			release/Magarena/avatars \
@@ -145,12 +145,6 @@ $(MAG): $(SRC)
 	ant -f build.xml
 
 class: $(BUILD)/javac.last
-
-$(BUILD)/javac.last: $(SRC)
-	-mkdir $(BUILD)
-	javac $(JOPTS) $?
-	cp -r resources/* $(BUILD)
-	touch $@
 
 tags: $(SRC)
 	ctags -R src
@@ -187,7 +181,6 @@ inf: $(MAG)
 	--life 10 \
 	--games 1 \
 	--repeat 10000 >> $*.log 2>&1
-	#$(JAVAEA) -DrndSeed=$* -Dmagarena.dir=`pwd`/release -DselfMode -jar $^ >> $*.log 2>&1
 
 test: $(MAG)
 	-make `date +%s`.d
