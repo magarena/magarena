@@ -6,6 +6,7 @@ import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicColor;
 
 import java.io.File;
+import java.io.FilenameFilter;
 import java.io.IOException;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
@@ -14,6 +15,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
+
+import groovy.lang.GroovyClassLoader;
+import groovy.lang.GroovyShell;
 
 /**
  * Load card definitions from cards.txt
@@ -30,6 +34,7 @@ public class CardDefinitions {
     private static final List<MagicCardDefinition> landCards = new ArrayList<MagicCardDefinition>();
     private static final List<MagicCardDefinition> spellCards = new ArrayList<MagicCardDefinition>();
     private static final Map<String,MagicCardDefinition> cardsMap = new HashMap<String, MagicCardDefinition>();
+    private static final File cardDir = new File(MagicMain.getScriptsPath());
 
     private static void setProperty(final MagicCardDefinition card,final String property,final String value) {
         try {
@@ -91,6 +96,20 @@ public class CardDefinitions {
         }
     }
     
+    //link to groovy script that returns array of MagicChangeCardDefinition objects
+    static void addCardSpecificGroovyCode(final MagicCardDefinition cardDefinition, final String cardName) {
+        try {
+            final GroovyShell shell = new GroovyShell();
+            final File script = new File(cardDir, getCanonicalName(cardName) + ".groovy");
+            final List<MagicChangeCardDefinition> defs = (List<MagicChangeCardDefinition>)shell.evaluate(script);
+            for (MagicChangeCardDefinition ccd : defs) {
+                ccd.change(cardDefinition);
+            }
+        } catch (final IOException ex) {
+            throw new RuntimeException(ex);
+        } 
+    }
+    
     private static String getCanonicalName(String fullName) {
         return fullName.replaceAll("[^A-Za-z0-9]", "_");
     }
@@ -107,8 +126,11 @@ public class CardDefinitions {
     
     public static void loadCardDefinitions() {
         //load all files in card directory
-        final File cardDir = new File(MagicMain.getScriptsPath());
-        final File[] files = cardDir.listFiles();
+        final File[] files = cardDir.listFiles(new FilenameFilter() {
+            public boolean accept(File dir, String name) {
+                return name.toLowerCase().endsWith(".txt");
+            }
+        });
         for (final File file : files) {
             loadCardDefinition(file);
         }
