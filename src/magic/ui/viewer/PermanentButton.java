@@ -71,7 +71,7 @@ public class PermanentButton extends PanelButton implements ChoiceViewer {
     }
     
     @Override
-    public void showValidChoices(final Set<Object> validChoices) {
+    public void showValidChoices(final Set<?> validChoices) {
         setValid(validChoices.contains(permanentInfo.permanent));
     }
 

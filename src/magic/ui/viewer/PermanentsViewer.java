@@ -99,7 +99,7 @@ public abstract class PermanentsViewer extends JPanel implements ChoiceViewer, U
     }
     
     @Override
-    public void showValidChoices(final Set<Object> validChoices) {
+    public void showValidChoices(final Set<?> validChoices) {
         for (final ChoiceViewer targetViewer : targetViewers) {
             targetViewer.showValidChoices(validChoices);
         }

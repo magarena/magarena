@@ -66,7 +66,7 @@ public class ImageCombatViewer extends JPanel implements ChoiceViewer {
     }
     
     @Override
-    public void showValidChoices(final Set<Object> validChoices) {
+    public void showValidChoices(final Set<?> validChoices) {
         permanentsViewer.showValidChoices(validChoices);
     }
 }

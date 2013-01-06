@@ -127,7 +127,7 @@ public class PlayerViewer extends JPanel implements ChoiceViewer {
     }
     
     @Override
-    public void showValidChoices(final Set<Object> validChoices) {
+    public void showValidChoices(final Set<?> validChoices) {
 
         final MagicPlayer player=viewerInfo.getPlayerInfo(opponent).player;
         avatarButton.setValid(validChoices.contains(player));

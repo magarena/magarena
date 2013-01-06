@@ -163,13 +163,13 @@ public class MagicPayManaCostResultBuilder {
     }    
     
     /** Find all possible mana sources to pay one mana of given type for the player. */
-    Set<Object> getManaSources(final MagicCostManaType type,final boolean all) {
+    Set<MagicPermanent> getManaSources(final MagicCostManaType type,final boolean all) {
         cost.removeType(type,1);
         cost.compress();
         types=cost.getTypes();
         amounts=cost.getAmounts();
         
-        final Set<Object> manaSources=new HashSet<Object>();
+        final Set<MagicPermanent> manaSources=new HashSet<MagicPermanent>();
         final Set<Integer> manaIds=new HashSet<Integer>();
         for (final MagicSourceManaActivation currentActivation : activations) {
             currentActivation.available=true;

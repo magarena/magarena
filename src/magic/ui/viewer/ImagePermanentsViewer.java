@@ -27,7 +27,7 @@ public class ImagePermanentsViewer extends JPanel {
     private final boolean isTop;
     
     private List<ImagePermanentViewer> viewers;
-    private Set<Object> validChoices;
+    private Set<?> validChoices;
     
     public ImagePermanentsViewer(final GameController controller) {
         this(controller, false);
@@ -206,7 +206,7 @@ public class ImagePermanentsViewer extends JPanel {
         return controller;
     }
     
-    public void showValidChoices(final Set<Object> aValidChoices) {
+    public void showValidChoices(final Set<?> aValidChoices) {
         this.validChoices=aValidChoices;
         for (final ImagePermanentViewer viewer : viewers) {
             viewer.repaint();

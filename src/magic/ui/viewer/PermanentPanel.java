@@ -58,7 +58,7 @@ public class PermanentPanel extends JPanel implements ChoiceViewer {
     }
 
     @Override
-    public void showValidChoices(final Set<Object> validChoices) {
+    public void showValidChoices(final Set<?> validChoices) {
         button.showValidChoices(validChoices);
         for (final PermanentButton linkedButton : linkedButtons) {
             linkedButton.showValidChoices(validChoices);

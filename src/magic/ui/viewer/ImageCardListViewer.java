@@ -41,7 +41,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
     private final GameController controller;
     private MagicCardList cardList;
     private List<Point> cardPoints;
-    private Set<Object> validChoices;
+    private Set<?> validChoices;
     private boolean showInfo;
     
     public ImageCardListViewer(final GameController controller) {
@@ -195,7 +195,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
     }
 
     @Override
-    public void showValidChoices(final Set<Object> aValidChoices) {
+    public void showValidChoices(final Set<?> aValidChoices) {
         this.validChoices=aValidChoices;
         repaint();
     }

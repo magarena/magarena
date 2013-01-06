@@ -130,18 +130,17 @@ public class MagicPayManaCostChoice extends MagicChoice {
             }
             
             final int costMinAmount = builderCost.getMinimumAmount();
-            final Set<Object> validSources=builder.getManaSources(costManaType,!canSkip);
+            final Set<MagicPermanent> validSources=builder.getManaSources(costManaType,!canSkip);
 
             MagicPermanent sourcePermanent = MagicPermanent.NONE;
             if (validSources.size() == 1) {
                 // only one valid choice
-                sourcePermanent = (MagicPermanent)validSources.iterator().next();
+                sourcePermanent = validSources.iterator().next();
             } 
             if (builder.getActivationsSize() == costMinAmount) {
                 // more than one valid choice but number of activations = cost
                 // find permanent with only one mana activation
-                for (final Object obj : validSources) {
-                    final MagicPermanent perm = (MagicPermanent)obj;
+                for (final MagicPermanent perm : validSources) {
                     if (perm.countManaActivations() == 1) {
                         sourcePermanent = perm;
                         break;

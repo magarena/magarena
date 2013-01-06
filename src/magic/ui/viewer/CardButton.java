@@ -67,7 +67,7 @@ public class CardButton extends PanelButton implements ChoiceViewer {
     }
 
     @Override
-    public void showValidChoices(final Set<Object> validChoices) {
+    public void showValidChoices(final Set<?> validChoices) {
         setValid(validChoices.contains(card));
     }
 

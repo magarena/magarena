@@ -94,7 +94,7 @@ public class StackViewer extends JPanel implements ChoiceViewer {
     }
     
     @Override
-    public void showValidChoices(final Set<Object> validChoices) {
+    public void showValidChoices(final Set<?> validChoices) {
         
         for (final StackButton button : buttons) {
             
@@ -154,7 +154,7 @@ public class StackViewer extends JPanel implements ChoiceViewer {
         }
 
         @Override
-        public void showValidChoices(final Set<Object> validChoices) {
+        public void showValidChoices(final Set<?> validChoices) {
             setValid(validChoices.contains(stackInfo.itemOnStack));
         }
 

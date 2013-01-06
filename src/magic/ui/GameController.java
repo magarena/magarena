@@ -43,7 +43,7 @@ public class GameController {
     private final AtomicBoolean running = new AtomicBoolean(false);
     private final AtomicBoolean gameConceded = new AtomicBoolean(false);
     private final Collection<ChoiceViewer> choiceViewers = new ArrayList<ChoiceViewer>();
-    private Set<Object> validChoices;
+    private Set<?> validChoices;
     private CardViewer cardViewer;
     private CardViewer imageCardViewer;
     private GameViewer gameViewer;
@@ -314,13 +314,13 @@ public class GameController {
         showValidChoices();
     }
     
-    public void setValidChoices(final Set<Object> aValidChoices,final boolean aCombatChoice) {
+    public void setValidChoices(final Set<?> aValidChoices,final boolean aCombatChoice) {
         this.validChoices=aValidChoices;
         this.combatChoice=aCombatChoice;
         showValidChoices();
     }
     
-    public Set<Object> getValidChoices() {
+    public Set<?> getValidChoices() {
         return validChoices;
     }
 

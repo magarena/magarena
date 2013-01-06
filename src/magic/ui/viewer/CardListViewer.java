@@ -107,7 +107,7 @@ public abstract class CardListViewer extends JPanel implements ChoiceViewer {
     }
 
     @Override
-    public void showValidChoices(final Set<Object> validChoices) {
+    public void showValidChoices(final Set<?> validChoices) {
         for (final CardButton button : buttons) {
             button.showValidChoices(validChoices);
         }

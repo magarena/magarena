@@ -57,7 +57,7 @@ public class BasicLandPermanentButton extends PanelButton implements ChoiceViewe
     }
     
     @Override
-    public void showValidChoices(final Set<Object> validChoices) {
+    public void showValidChoices(final Set<?> validChoices) {
 
         setValid(validChoices.contains(permanentInfo.permanent));
     }
