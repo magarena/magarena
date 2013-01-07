@@ -58,6 +58,7 @@ import magic.model.trigger.MagicThiefTrigger.Choice;
 import magic.model.trigger.MagicThiefTrigger.Player;
 import magic.model.trigger.MagicWhenBlocksPumpTrigger;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
+import magic.model.trigger.MagicSacrificeAtEnd;
 
 import java.util.EnumSet;
 import java.util.List;
@@ -314,6 +315,11 @@ public enum MagicAbility {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             final List<MagicManaType> manatype = MagicManaType.getList(arg);
             card.add(new MagicSacrificeManaActivation(manatype));
+        }
+    },
+    SacAtEnd("sac at end",-100) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(MagicSacrificeAtEnd.create());
         }
     },
     TapSacAddMana("tap sac add mana",10) {
