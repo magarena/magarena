@@ -1,0 +1,10 @@
+name=Maro
+url=http://magiccards.info/mr/en/126.html
+image=http://magiccards.info/scans/en/mr/126.jpg
+value=3.635
+rarity=R
+type=Creature
+subtype=Elemental
+cost={2}{G}{G}
+timing=main
+requires_card_code=Sturmgeist
