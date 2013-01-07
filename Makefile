@@ -468,6 +468,7 @@ grammar/CounterType: grammar/rules.txt
 	# remove a, each, that
 	# add poison
 
-fix_noeol:
+fix_eol:
 	sed -i -e '$$a\' release/Magarena/scripts/*.txt
+	sed -i -e 's/\x0D$$//' release/Magarena/scripts/*.txt
 	sed -i -e '$$a\' src/**/*.java
