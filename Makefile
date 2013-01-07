@@ -469,6 +469,6 @@ grammar/CounterType: grammar/rules.txt
 	# add poison
 
 fix_eol:
-	sed -i -e '$$a\' release/Magarena/scripts/*.txt
-	sed -i -e 's/\x0D$$//' release/Magarena/scripts/*.txt
+	sed -i -e '$$a\' release/Magarena/**/*.txt
+	sed -i -e 's/\x0D$$//' release/Magarena/**/*.txt
 	sed -i -e '$$a\' src/**/*.java
