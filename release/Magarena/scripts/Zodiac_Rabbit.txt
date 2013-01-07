@@ -1,0 +1,11 @@
+name=Zodiac Rabbit
+url=http://magiccards.info/p3k/en/162.html
+image=http://magiccards.info/scans/en/p3k/162.jpg
+value=3.083
+rarity=C
+type=Creature
+subtype=Rabbit
+cost={G}
+pt=1/1
+ability=forestwalk
+timing=main
