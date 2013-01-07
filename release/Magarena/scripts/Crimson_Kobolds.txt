@@ -1,0 +1,11 @@
+name=Crimson Kobolds
+url=http://magiccards.info/me3/en/93.html
+image=http://magiccards.info/scans/en/me3/93.jpg
+value=4.208
+rarity=C
+type=Creature
+subtype=Kobold
+color=r
+cost={0}
+pt=0/1
+timing=main
