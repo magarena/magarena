@@ -1,0 +1,11 @@
+name=Cackling Fiend
+url=http://magiccards.info/us/en/121.html
+image=http://magiccards.info/scans/en/us/121.jpg
+value=2.705
+rarity=C
+type=Creature
+subtype=Zombie
+cost={2}{B}{B}
+pt=2/1
+timing=main
+requires_card_code=Liliana's Specter
