@@ -7,6 +7,5 @@ type=Creature
 subtype=Elemental,Ox
 cost={2}{R}
 pt=5/1
-ability=haste
+ability=haste,sac at end
 timing=fmain
-requires_card_code
