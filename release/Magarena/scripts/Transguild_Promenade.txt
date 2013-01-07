@@ -1,0 +1,10 @@
+name=Transguild Promenade
+url=http://magiccards.info/rtr/en/249.html
+image=http://magiccards.info/scans/en/rtr/249.jpg
+value=3.000
+rarity=C
+type=Land
+mana=w3u3b3r3g3
+ability=enters tapped,tap add mana any
+timing=land
+requires_card_code=Rupture Spire
