@@ -1,0 +1,10 @@
+name=Hallowed Burial
+url=http://magiccards.info/eve/en/7.html
+image=http://magiccards.info/scans/en/eve/7.jpg
+value=4.190
+rarity=R
+type=Sorcery
+cost={3}{W}{W}
+timing=removal
+removal=2
+requires_card_code=Terminus
