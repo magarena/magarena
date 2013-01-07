@@ -1,0 +1,11 @@
+name=Scarwood Treefolk
+url=http://magiccards.info/ts/en/214.html
+image=http://magiccards.info/scans/en/ts/214.jpg
+value=1.330
+rarity=C
+type=Creature
+subtype=Treefolk
+cost={3}{G}
+pt=3/5
+ability=enters tapped
+timing=smain
