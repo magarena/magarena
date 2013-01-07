@@ -1,0 +1,9 @@
+name=Karplusan Forest
+url=http://magiccards.info/10e/en/354.html
+image=http://magiccards.info/scans/en/10e/354.jpg
+value=4.348
+rarity=R
+type=Land
+mana=r2g2
+ability=tap add mana {1},tap pain add mana {R} or {G}
+timing=land
