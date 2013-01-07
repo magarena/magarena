@@ -1,0 +1,10 @@
+name=Kiku's Shadow
+url=http://magiccards.info/sok/en/77.html
+image=http://magiccards.info/scans/en/sok/77.jpg
+value=3.944
+rarity=U
+type=Sorcery
+cost={B}{B}
+timing=removal
+removal=3
+requires_card_code=Wrack with Madness
