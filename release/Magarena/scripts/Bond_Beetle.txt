@@ -1,0 +1,11 @@
+name=Bond Beetle
+url=http://magiccards.info/m13/en/161.html
+image=http://magiccards.info/scans/en/m13/161.jpg
+value=3.633
+rarity=C
+type=Creature
+subtype=Insect
+cost={G}
+pt=0/1
+timing=main
+requires_card_code=Timberland Guide
