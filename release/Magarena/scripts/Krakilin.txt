@@ -1,0 +1,11 @@
+name=Krakilin
+url=http://magiccards.info/tp/en/129.html
+image=http://magiccards.info/scans/en/tp/129.jpg
+value=3.946
+rarity=U
+type=Creature
+subtype=Beast
+cost={X}{G}{G}
+ability=enters with x It enters the battlefield with X +1/+1 counters on it,regenerate {1}{G}
+timing=main
+requires_card_code=Ivy Elemental
