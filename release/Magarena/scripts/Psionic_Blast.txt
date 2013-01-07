@@ -1,0 +1,10 @@
+name=Psionic Blast
+url=http://magiccards.info/tsts/en/30.html
+image=http://magiccards.info/scans/en/tsts/30.jpg
+value=4.240
+rarity=U
+type=Instant
+cost={2}{U}
+timing=removal
+removal=3
+requires_card_code=Char
