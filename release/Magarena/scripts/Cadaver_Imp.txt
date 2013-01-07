@@ -1,0 +1,12 @@
+name=Cadaver Imp
+url=http://magiccards.info/roe/en/99.html
+image=http://magiccards.info/scans/en/roe/99.jpg
+value=2.625
+rarity=C
+type=Creature
+subtype=Imp
+cost={1}{B}{B}
+pt=1/1
+ability=flying
+timing=main
+requires_card_code=Gravedigger
