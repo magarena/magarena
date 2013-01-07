@@ -8,4 +8,4 @@ subtype=Treefolk
 cost={3}{G}
 pt=3/5
 ability=enters tapped
-timing=smain
+timing=main
