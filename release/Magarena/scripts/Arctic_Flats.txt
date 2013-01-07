@@ -1,0 +1,9 @@
+name=Arctic Flats
+url=http://magiccards.info/cs/en/143.html
+image=http://magiccards.info/scans/en/cs/143.jpg
+value=3.441
+rarity=U
+type=Snow,Land
+mana=w3g3
+ability=enters tapped,tap add mana {G} or {W}
+timing=tapland
