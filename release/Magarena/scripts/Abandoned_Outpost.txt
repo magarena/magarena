@@ -1,0 +1,9 @@
+name=Abandoned Outpost
+url=http://magiccards.info/od/en/312.html
+image=http://magiccards.info/scans/en/od/312.jpg
+value=2.341
+rarity=C
+type=Land
+mana=w3u1b1r1g1
+ability=enters tapped,tap add mana {W},tap sac add mana any
+timing=tapland
