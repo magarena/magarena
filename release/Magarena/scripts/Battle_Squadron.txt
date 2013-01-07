@@ -1,0 +1,11 @@
+name=Battle Squadron
+url=http://magiccards.info/mm/en/174.html
+image=http://magiccards.info/scans/en/mm/174.jpg
+value=4.000
+rarity=R
+type=Creature
+subtype=Goblin
+cost={3}{R}{R}
+ability=flying
+timing=main
+requires_card_code=Scion of the Wild
