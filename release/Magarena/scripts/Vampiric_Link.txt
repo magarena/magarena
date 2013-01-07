@@ -1,0 +1,11 @@
+name=Vampiric Link
+url=http://magiccards.info/pc/en/92.html
+image=http://magiccards.info/scans/en/pc/92.jpg
+value=4.019
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={B}
+timing=aura
+enchant=lifelink,pos creature
+requires_card_code=Spirit Link
