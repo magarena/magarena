@@ -1,0 +1,11 @@
+name=Deadly Insect
+url=http://magiccards.info/mm/en/238.html
+image=http://magiccards.info/scans/en/mm/238.jpg
+value=3.200
+rarity=C
+type=Creature
+subtype=Insect
+cost={4}{G}
+pt=6/1
+ability=shroud
+timing=main
