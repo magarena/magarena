@@ -1,0 +1,9 @@
+name=Bog Wreckage
+url=http://magiccards.info/od/en/314.html
+image=http://magiccards.info/scans/en/od/314.jpg
+value=2.318
+rarity=C
+type=Land
+mana=w1u1b3r1g1
+ability=enters tapped,tap add mana {B},tap sac add mana any
+timing=tapland
