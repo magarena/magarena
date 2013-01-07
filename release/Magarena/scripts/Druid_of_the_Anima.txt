@@ -1,0 +1,12 @@
+name=Druid of the Anima
+url=http://magiccards.info/ala/en/128.html
+image=http://magiccards.info/scans/en/ala/128.jpg
+value=3.648
+rarity=C
+type=Creature
+subtype=Elf,Druid
+cost={1}{G}
+pt=1/1
+ability=tap add mana {R} or {G} or {W}
+timing=main
+mana_or_combat
