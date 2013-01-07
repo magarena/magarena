@@ -1,0 +1,12 @@
+name=Sisters of the Flame
+url=http://magiccards.info/4e/en/239.html
+image=http://magiccards.info/scans/en/4e/239.jpg
+value=2.575
+rarity=C
+type=Creature
+subtype=Human,Shaman
+cost={1}{R}{R}
+pt=2/2
+ability=tap add mana {R}
+timing=main
+mana_or_combat
