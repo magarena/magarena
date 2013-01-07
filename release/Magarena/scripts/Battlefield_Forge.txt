@@ -1,0 +1,9 @@
+name=Battlefield Forge
+url=http://magiccards.info/10e/en/348.html
+image=http://magiccards.info/scans/en/10e/348.jpg
+value=4.230
+rarity=R
+type=Land
+mana=w2r2
+ability=tap add mana {1},tap pain add mana {R} or {W}
+timing=land
