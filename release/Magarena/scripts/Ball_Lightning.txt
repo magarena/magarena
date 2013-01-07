@@ -7,6 +7,5 @@ type=Creature
 subtype=Elemental
 cost={R}{R}{R}
 pt=6/1
-ability=trample,haste
+ability=trample,haste,sac at end
 timing=fmain
-requires_card_code=Arc Runner

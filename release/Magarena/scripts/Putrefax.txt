@@ -7,6 +7,5 @@ type=Creature
 subtype=Horror
 cost={3}{G}{G}
 pt=5/3
-ability=trample,haste,infect
+ability=trample,haste,infect,sac at end
 timing=fmain
-requires_card_code=Arc Runner
