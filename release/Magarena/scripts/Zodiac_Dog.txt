@@ -1,0 +1,11 @@
+name=Zodiac Dog
+url=http://magiccards.info/p3k/en/130.html
+image=http://magiccards.info/scans/en/p3k/130.jpg
+value=3.268
+rarity=C
+type=Creature
+subtype=Hound
+cost={2}{R}
+pt=2/2
+ability=mountainwalk
+timing=main
