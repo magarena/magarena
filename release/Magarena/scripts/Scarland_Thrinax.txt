@@ -1,0 +1,11 @@
+name=Scarland Thrinax
+url=http://magiccards.info/cfx/en/123.html
+image=http://magiccards.info/scans/en/cfx/123.jpg
+value=3.434
+rarity=U
+type=Creature
+subtype=Lizard
+cost={B}{R}{G}
+pt=2/2
+timing=main
+requires_card_code=Bloodflow Connoisseur
