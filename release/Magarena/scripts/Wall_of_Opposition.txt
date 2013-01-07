@@ -1,0 +1,11 @@
+name=Wall of Opposition
+url=http://magiccards.info/ch/en/56.html
+image=http://magiccards.info/scans/en/ch/56.jpg
+value=2.867
+rarity=U
+type=Creature
+subtype=Wall
+cost={3}{R}{R}
+pt=0/6
+ability=defender,pump {1} +1/+0
+timing=main
