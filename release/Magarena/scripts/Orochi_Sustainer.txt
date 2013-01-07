@@ -1,0 +1,12 @@
+name=Orochi Sustainer
+url=http://magiccards.info/chk/en/236.html
+image=http://magiccards.info/scans/en/chk/236.jpg
+value=2.480
+rarity=C
+type=Creature
+subtype=Snake,Shaman
+cost={1}{G}
+pt=1/2
+ability=tap add mana {G}
+timing=main
+mana_or_combat
