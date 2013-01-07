@@ -1,0 +1,11 @@
+name=Goblin Gardener
+url=http://magiccards.info/7e/en/188.html
+image=http://magiccards.info/scans/en/7e/188.jpg
+value=3.056
+rarity=C
+type=Creature
+subtype=Goblin
+cost={3}{R}
+pt=2/1
+timing=main
+requires_card_code=Polluted Dead
