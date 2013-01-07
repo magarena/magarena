@@ -1,0 +1,9 @@
+name=Scabland
+url=http://magiccards.info/tp/en/331.html
+image=http://magiccards.info/scans/en/tp/331.jpg
+value=2.611
+rarity=R
+type=Land
+mana=w2r2
+ability=enters tapped,tap add mana {1},tap pain add mana {R} or {W}
+timing=tapland
