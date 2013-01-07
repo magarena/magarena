@@ -1,0 +1,11 @@
+name=Revenant
+url=http://magiccards.info/sh/en/18.html
+image=http://magiccards.info/scans/en/sh/18.jpg
+value=3.750
+rarity=R
+type=Creature
+subtype=Spirit
+cost={4}{B}
+ability=flying
+timing=main
+requires_card_code=Boneyard Wurm
