@@ -1,0 +1,12 @@
+name=Gaea's Revenge
+url=http://magiccards.info/m11/en/174.html
+image=http://magiccards.info/scans/en/m11/174.jpg
+value=4.370
+rarity=M
+type=Creature
+subtype=Elemental
+cost={5}{G}{G}
+pt=8/5
+ability=can't be countered,haste
+timing=fmain
+requires_card_code

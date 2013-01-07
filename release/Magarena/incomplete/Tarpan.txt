@@ -1,0 +1,11 @@
+name=Tarpan
+url=http://magiccards.info/5e/en/192.html
+image=http://magiccards.info/scans/en/5e/192.jpg
+value=2.329
+rarity=C
+type=Creature
+subtype=Horse
+cost={G}
+pt=1/1
+ability=die gain life 1
+timing=main

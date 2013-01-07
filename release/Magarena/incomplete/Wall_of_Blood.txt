@@ -1,0 +1,11 @@
+name=Wall of Blood
+url=http://magiccards.info/mi/en/82.html
+image=http://magiccards.info/scans/en/mi/82.jpg
+value=3.500
+rarity=U
+type=Creature
+subtype=Wall
+cost={2}{B}
+pt=0/2
+ability=defender,pump life 1 +1/+1
+timing=main

@@ -1,0 +1,11 @@
+name=Wilt-Leaf Liege
+url=http://magiccards.info/shm/en/245.html
+image=http://magiccards.info/scans/en/shm/245.jpg
+value=4.440
+rarity=R
+type=Creature
+subtype=Elf,Knight
+cost={1}{G/W}{G/W}{G/W}
+pt=4/4
+timing=main
+requires_card_code

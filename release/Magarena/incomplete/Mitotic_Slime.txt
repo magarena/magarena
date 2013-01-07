@@ -1,0 +1,11 @@
+name=Mitotic Slime
+url=http://magiccards.info/m11/en/185.html
+image=http://magiccards.info/scans/en/m11/185.jpg
+value=3.647
+rarity=R
+type=Creature
+subtype=Ooze
+cost={4}{G}
+pt=4/4
+timing=main
+requires_card_code

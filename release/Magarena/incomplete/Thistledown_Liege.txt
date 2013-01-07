@@ -1,0 +1,12 @@
+name=Thistledown Liege
+url=http://magiccards.info/shm/en/153.html
+image=http://magiccards.info/scans/en/shm/153.jpg
+value=3.348
+rarity=R
+type=Creature
+subtype=Kithkin,Knight
+cost={1}{W/U}{W/U}{W/U}
+pt=1/3
+ability=flash
+timing=flash
+requires_card_code

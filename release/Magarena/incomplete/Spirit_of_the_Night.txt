@@ -1,0 +1,11 @@
+name=Spirit of the Night
+url=http://magiccards.info/mr/en/44.html
+image=http://magiccards.info/scans/en/mr/44.jpg
+value=4.437
+rarity=R
+type=Legendary,Creature
+subtype=Demon,Spirit
+cost={6}{B}{B}{B}
+pt=6/5
+ability=flying,trample,haste,protection from black,gains attacking first strike
+timing=main

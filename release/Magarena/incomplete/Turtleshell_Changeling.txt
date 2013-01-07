@@ -1,0 +1,11 @@
+name=Turtleshell Changeling
+url=http://magiccards.info/lw/en/94.html
+image=http://magiccards.info/scans/en/lw/94.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Shapeshifter
+cost={3}{U}
+pt=1/4
+ability=changeling,switch pt {1}{U}
+timing=main

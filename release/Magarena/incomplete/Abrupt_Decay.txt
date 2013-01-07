@@ -1,0 +1,10 @@
+name=Abrupt Decay
+url=http://magiccards.info/rtr/en/141.html
+image=http://magiccards.info/scans/en/rtr/141.jpg
+value=4.365
+rarity=R
+type=Instant
+cost={B}{G}
+abilty=can't be countered
+timing=removal
+effect=Destroy target nonland permanent with converted mana cost 3 or less.

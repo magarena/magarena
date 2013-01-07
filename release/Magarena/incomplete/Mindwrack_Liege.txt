@@ -1,0 +1,11 @@
+name=Mindwrack Liege
+url=http://magiccards.info/eve/en/104.html
+image=http://magiccards.info/scans/en/eve/104.jpg
+value=3.962
+rarity=R
+type=Creature
+subtype=Horror
+cost={3}{U/R}{U/R}{U/R}
+pt=4/4
+timing=main
+requires_card_code

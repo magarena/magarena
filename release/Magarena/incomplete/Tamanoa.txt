@@ -1,0 +1,11 @@
+name=Tamanoa
+url=http://magiccards.info/cs/en/132.html
+image=http://magiccards.info/scans/en/cs/132.jpg
+value=4.250
+rarity=R
+type=Creature
+subtype=Spirit
+cost={R}{G}{W}
+pt=2/4
+timing=main
+requires_card_code

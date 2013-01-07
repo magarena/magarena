@@ -1,0 +1,11 @@
+name=Windreaver
+url=http://magiccards.info/di/en/138.html
+image=http://magiccards.info/scans/en/di/138.jpg
+value=3.738
+rarity=R
+type=Creature
+subtype=Elemental
+cost={3}{W}{U}
+pt=1/3
+ability=flying,gain {W} vigilance,pump {W} +0/+1,switch pt {U},return to hand {U}
+timing=main

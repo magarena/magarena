@@ -1,0 +1,11 @@
+name=Reckless One
+url=http://magiccards.info/evg/en/48.html
+image=http://magiccards.info/scans/en/evg/48.jpg
+value=3.909
+rarity=U
+type=Creature
+subtype=Goblin,Avatar
+cost={3}{R}
+ability=haste
+timing=fmain
+requires_card_code

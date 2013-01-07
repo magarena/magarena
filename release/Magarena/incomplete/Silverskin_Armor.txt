@@ -1,0 +1,12 @@
+name=Silverskin Armor
+url=http://magiccards.info/mbs/en/132.html
+image=http://magiccards.info/scans/en/mbs/132.jpg
+value=2.850
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={2}
+equip={2}
+given_pt=1/1
+given_type=Artifact
+timing=main

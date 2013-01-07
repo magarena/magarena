@@ -1,0 +1,11 @@
+name=Scythe Tiger
+url=http://magiccards.info/zen/en/183.html
+image=http://magiccards.info/scans/en/zen/183.jpg
+value=3.737
+rarity=C
+type=Creature
+subtype=Cat
+cost={G}
+pt=3/2
+ability=shroud,enters sac land or sac self
+timing=main

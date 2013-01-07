@@ -1,0 +1,9 @@
+name=Summer Bloom
+url=http://magiccards.info/9e/en/273.html
+image=http://magiccards.info/scans/en/9e/273.jpg
+value=3.800
+rarity=U
+type=Sorcery
+cost={1}{G}
+timing=main
+requires_card_code

@@ -1,0 +1,11 @@
+name=Knight of the Skyward Eye
+url=http://magiccards.info/ala/en/15.html
+image=http://magiccards.info/scans/en/ala/15.jpg
+value=3.217
+rarity=C
+type=Creature
+subtype=Human,Knight
+cost={1}{W}
+pt=2/2
+ability=pump {3}{G} +3/+3 max 1
+timing=main

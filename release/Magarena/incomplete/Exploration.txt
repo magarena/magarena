@@ -1,0 +1,9 @@
+name=Exploration
+url=http://magiccards.info/us/en/250.html
+image=http://magiccards.info/scans/en/us/250.jpg
+value=4.767
+rarity=R
+type=Enchantment
+cost={G}
+timing=main
+requires_card_code

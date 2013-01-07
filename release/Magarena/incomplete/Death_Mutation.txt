@@ -1,0 +1,10 @@
+name=Death Mutation
+url=http://magiccards.info/cmd/en/192.html
+image=http://magiccards.info/scans/en/cmd/192.jpg
+value=3.135
+rarity=U
+type=Sorcery
+cost={6}{B}{G}
+timing=removal
+effect=Destroy target nonblack creature. It can't be regenerated.
+requires_card_code

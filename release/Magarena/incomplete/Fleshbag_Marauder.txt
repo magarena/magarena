@@ -1,0 +1,11 @@
+name=Fleshbag Marauder
+url=http://magiccards.info/ala/en/76.html
+image=http://magiccards.info/scans/en/ala/76.jpg
+value=4.136
+rarity=U
+type=Creature
+subtype=Zombie,Warrior
+cost={2}{B}
+pt=3/1
+timing=main
+requires_card_code

@@ -1,0 +1,11 @@
+name=Heedless One
+url=http://magiccards.info/evg/en/7.html
+image=http://magiccards.info/scans/en/evg/7.jpg
+value=4.275
+rarity=U
+type=Creature
+subtype=Elf,Avatar
+cost={3}{G}
+ability=trample
+timing=main
+requires_card_code

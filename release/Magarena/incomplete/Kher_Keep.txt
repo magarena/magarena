@@ -1,0 +1,9 @@
+name=Kher Keep
+url=http://magiccards.info/ts/en/275.html
+image=http://magiccards.info/scans/en/ts/275.jpg
+value=4.500
+rarity=R
+type=Legendary,Land
+ability=tap add mana {1}
+timing=land
+requires_card_code

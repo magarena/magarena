@@ -1,0 +1,11 @@
+name=Fungusaur
+url=http://magiccards.info/8e/en/250.html
+image=http://magiccards.info/scans/en/8e/250.jpg
+value=3.837
+rarity=R
+type=Creature
+subtype=Fungus,Lizard
+cost={3}{G}
+pt=2/2
+timing=main
+requires_card_code

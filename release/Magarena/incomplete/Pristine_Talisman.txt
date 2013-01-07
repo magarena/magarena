@@ -1,0 +1,9 @@
+name=Pristine Talisman
+url=http://magiccards.info/nph/en/151.html
+image=http://magiccards.info/scans/en/nph/151.jpg
+value=3.591
+rarity=C
+type=Artifact
+cost={3}
+ability=tap add mana {1} gain life 1
+timing=artifact

@@ -1,0 +1,11 @@
+name=Dreadwing
+url=http://magiccards.info/cfx/en/43.html
+image=http://magiccards.info/scans/en/cfx/43.jpg
+value=2.816
+rarity=U
+type=Creature
+subtype=Zombie
+cost={B}
+pt=1/1
+ability=gains {1}{U}{R} flying and +3/+0? / pump {1}{U}{R} +3/+0 and gains flying?
+timing=main

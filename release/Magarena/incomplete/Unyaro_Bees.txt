@@ -1,0 +1,12 @@
+name=Unyaro Bees
+url=http://magiccards.info/ts/en/231.html
+image=http://magiccards.info/scans/en/ts/231.jpg
+value=4.086
+rarity=R
+type=Creature
+subtype=Insect
+cost={G}{G}{G}
+pt=0/1
+ability=flying,pump {G} +1/+1
+timing=main
+requires_card_code

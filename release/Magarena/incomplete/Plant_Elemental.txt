@@ -1,0 +1,12 @@
+name=Plant Elemental
+url=http://magiccards.info/po/en/107.html
+image=http://magiccards.info/scans/en/po/107.jpg
+value=3.483
+rarity=U
+type=Creature
+subtype=Plant,Elemental
+cost={1}{G}
+pt=3/4
+ability=enters sac forest or sac self
+timing=main
+requires_card_code

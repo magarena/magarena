@@ -1,0 +1,12 @@
+name=Bounteous Kirin
+url=http://magiccards.info/sok/en/123.html
+image=http://magiccards.info/scans/en/sok/123.jpg
+value=3.271
+rarity=R
+type=Legendary,Creature
+subtype=Kirin,Spirit
+cost={5}{G}{G}
+pt=4/4
+ability=flying
+timing=main
+requires_card_code

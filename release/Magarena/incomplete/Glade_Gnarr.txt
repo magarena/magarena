@@ -1,0 +1,11 @@
+name=Glade Gnarr
+url=http://magiccards.info/ap/en/78.html
+image=http://magiccards.info/scans/en/ap/78.jpg
+value=2.621
+rarity=C
+type=Creature
+subtype=Beast
+cost={5}{G}
+pt=4/4
+timing=main
+requires_card_code

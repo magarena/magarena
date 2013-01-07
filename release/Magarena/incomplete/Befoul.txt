@@ -1,0 +1,9 @@
+name=Befoul
+url=http://magiccards.info/chk/en/102.html
+image=http://magiccards.info/scans/en/chk/102.jpg
+value=3.461
+rarity=C
+type=Sorcery
+cost={2}{B}{B}
+timing=removal
+effect=Destroy target land or nonblack creature. It can't be regenerated.
