@@ -1,0 +1,10 @@
+name=Bee Sting
+url=http://magiccards.info/po2/en/64.html
+image=http://magiccards.info/scans/en/po2/64.jpg
+value=2.119
+removal=2
+rarity=U
+type=Sorcery
+cost={3}{G}
+timing=removal
+requires_card_code=Shock
