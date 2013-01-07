@@ -1,0 +1,10 @@
+name=Fault Line
+url=http://magiccards.info/us/en/185.html
+image=http://magiccards.info/scans/en/us/185.jpg
+value=3.921
+rarity=R
+type=Instant
+cost={X}{R}{R}
+timing=removal
+removal=2
+requires_card_code=Earthquake
