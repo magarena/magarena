@@ -1,0 +1,11 @@
+name=Kobolds of Kher Keep
+url=http://magiccards.info/me3/en/107.html
+image=http://magiccards.info/scans/en/me3/107.jpg
+value=3.846
+rarity=C
+type=Creature
+subtype=Kobold
+color=r
+cost={0}
+pt=0/1
+timing=main
