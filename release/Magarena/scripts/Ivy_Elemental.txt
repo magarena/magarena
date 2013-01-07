@@ -1,0 +1,11 @@
+name=Ivy Elemental
+url=http://magiccards.info/pch/en/74.html
+image=http://magiccards.info/scans/en/pch/74.jpg
+value=3.344
+rarity=R
+type=Creature
+subtype=Elemental
+cost={X}{G}
+ability=enters with x It enters the battlefield with X +1/+1 counters on it
+timing=main
+requires_card_code
