@@ -1,0 +1,11 @@
+name=Ironshell Beetle
+url=http://magiccards.info/ju/en/121.html
+image=http://magiccards.info/scans/en/ju/121.jpg
+value=2.963
+rarity=C
+type=Creature
+subtype=Insect
+cost={1}{G}
+pt=1/1
+timing=main
+requires_card_code=Timberland Guide
