@@ -1,0 +1,9 @@
+name=Caves of Koilos
+url=http://magiccards.info/10e/en/350.html
+image=http://magiccards.info/scans/en/10e/350.jpg
+value=4.289
+rarity=R
+type=Land
+mana=w2b2
+ability=tap add mana {1},tap pain add mana {W} or {B}
+timing=land
