@@ -85,19 +85,5 @@ public class Chimeric_Mass {
         }
     };
 
-    public static final MagicWhenComesIntoPlayTrigger ETB = new MagicWhenComesIntoPlayTrigger() {
-        @Override
-        public MagicEvent executeTrigger(
-            final MagicGame game,
-            final MagicPermanent permanent,
-            final MagicPlayer player) {   
-            game.doAction(new MagicChangeCountersAction(
-                permanent,
-                MagicCounterType.Charge,
-                permanent.getKicker(),
-                true
-            ));
-            return MagicEvent.NONE;
-        }
-    };
+    public static final MagicWhenComesIntoPlayTrigger ETB = Ivy_Elemental.ETB;
 }

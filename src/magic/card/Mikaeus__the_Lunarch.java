@@ -19,7 +19,7 @@ import magic.model.target.MagicTargetFilter;
 import java.util.Collection;
 
 public class Mikaeus__the_Lunarch {
-    public static final Object ETB = Primordial_Hydra.ETB;
+    public static final Object ETB = Ivy_Elemental.ETB;
 
     public static final MagicPermanentActivation A1 = new MagicPermanentActivation(
             new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
