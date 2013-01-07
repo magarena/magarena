@@ -1,0 +1,11 @@
+name=Verduran Enchantress
+url=http://magiccards.info/9e/en/279.html
+image=http://magiccards.info/scans/en/9e/279.jpg
+value=3.957
+rarity=R
+type=Creature
+subtype=Human,Druid
+cost={1}{G}{G}
+pt=0/2
+timing=fmain
+requires_card_code=Mesa Enchantress
