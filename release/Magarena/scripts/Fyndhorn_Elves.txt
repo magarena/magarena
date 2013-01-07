@@ -1,0 +1,12 @@
+name=Fyndhorn Elves
+url=http://magiccards.info/med/en/118.html
+image=http://magiccards.info/scans/en/med/118.jpg
+value=4.500
+rarity=C
+type=Creature
+subtype=Elf,Druid
+cost={G}
+pt=1/1
+ability=tap add mana {G}
+timing=main
+mana_or_combat
