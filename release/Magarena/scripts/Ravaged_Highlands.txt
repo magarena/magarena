@@ -1,0 +1,9 @@
+name=Ravaged Highlands
+url=http://magiccards.info/od/en/324.html
+image=http://magiccards.info/scans/en/od/324.jpg
+value=2.694
+rarity=C
+type=Land
+mana=w1u1b1r3g1
+ability=enters tapped,tap add mana {R},tap sac add mana any
+timing=tapland
