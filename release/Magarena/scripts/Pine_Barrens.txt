@@ -1,0 +1,9 @@
+name=Pine Barrens
+url=http://magiccards.info/tp/en/323.html
+image=http://magiccards.info/scans/en/tp/323.jpg
+value=2.333
+rarity=R
+type=Land
+mana=b2g2
+ability=enters tapped,tap add mana {1},tap pain add mana {B} or {G}
+timing=tapland
