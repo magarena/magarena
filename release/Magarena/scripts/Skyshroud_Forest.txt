@@ -1,0 +1,9 @@
+name=Skyshroud Forest
+url=http://magiccards.info/tp/en/332.html
+image=http://magiccards.info/scans/en/tp/332.jpg
+value=2.604
+rarity=R
+type=Land
+mana=u2g2
+ability=enters tapped,tap add mana {1},tap pain add mana {U} or {G}
+timing=tapland
