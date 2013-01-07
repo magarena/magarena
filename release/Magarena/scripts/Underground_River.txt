@@ -1,0 +1,9 @@
+name=Underground River
+url=http://magiccards.info/10e/en/362.html
+image=http://magiccards.info/scans/en/10e/362.jpg
+value=4.138
+rarity=R
+type=Land
+mana=b2u2
+ability=tap add mana {1},tap pain add mana {B} or {U}
+timing=land
