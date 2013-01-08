@@ -105,6 +105,8 @@ public class MagicTargetChoice extends MagicChoice {
         new MagicTargetChoice(MagicTargetFilter.TARGET_NONLAND_PERMANENT,true,MagicTargetHint.None,"target nonland permanent");
     public static final MagicTargetChoice NEG_TARGET_NONLAND_PERMANENT=
         new MagicTargetChoice(MagicTargetFilter.TARGET_NONLAND_PERMANENT,true,MagicTargetHint.Negative,"target nonland permanent");
+    public static final MagicTargetChoice NEG_TARGET_NONLAND_PERMANENT_CMC_LEQ_3=
+        new MagicTargetChoice(MagicTargetFilter.TARGET_NONLAND_PERMANENT_CMC_LEQ_3,true,MagicTargetHint.Negative,"target nonland permanent with converted mana cost 3 or less");
     public static final MagicTargetChoice ARTIFACT_YOU_CONTROL =
             new MagicTargetChoice(MagicTargetFilter.TARGET_ARTIFACT_YOU_CONTROL,false,MagicTargetHint.None,"an artifact you control");
     public static final MagicTargetChoice TARGET_ARTIFACT_YOU_CONTROL=
@@ -551,6 +553,7 @@ public class MagicTargetChoice extends MagicChoice {
         factory.put("neg target non-vampire, non-werewolf, non-zombie creature", NEG_TARGET_NONVAMPIRE_NONWEREWOLF_NONZOMBIE);
         factory.put("neg target creature with converted mana cost 3 or less", NEG_TARGET_CREATURE_CONVERTED_3_OR_LESS);
         factory.put("neg target artifact or creature", NEG_TARGET_ARTIFACT_OR_CREATURE);
+        factory.put("neg target nonland permanent with converted mana cost 3 or less", NEG_TARGET_NONLAND_PERMANENT_CMC_LEQ_3);
 
         factory.put("neg target spell", NEG_TARGET_SPELL);
         factory.put("neg target red or green spell", NEG_TARGET_RED_GREEN_SPELL);

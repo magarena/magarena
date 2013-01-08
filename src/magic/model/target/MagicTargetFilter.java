@@ -1027,6 +1027,12 @@ public interface MagicTargetFilter<T extends MagicTarget> {
             return targetType==MagicTargetType.Graveyard;
         }                        
     };
+    
+    MagicPermanentFilterImpl TARGET_NONLAND_PERMANENT_CMC_LEQ_3 = new MagicTargetFilter.MagicCMCPermanentFilter(
+        MagicTargetFilter.TARGET_NONLAND_PERMANENT, 
+        MagicTargetFilter.Operator.LESS_THAN_OR_EQUAL, 
+        3
+    );
 
     MagicCardFilterImpl TARGET_CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD=new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
