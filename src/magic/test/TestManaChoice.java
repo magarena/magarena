@@ -27,8 +27,9 @@ class TestManaChoice extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Forest",false,2);
-        createPermanent(game,P,"Timberland Ruins",false,2);
+        createPermanent(game,P,"Forest",false,1);
+        createPermanent(game,P,"Timberland Ruins",false,1);
+        createPermanent(game,P,"Forest",false,1);
         addToHand(P, "Verduran Enchantress", 1);
 
         P = opponent;
