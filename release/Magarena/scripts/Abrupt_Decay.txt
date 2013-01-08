@@ -5,6 +5,6 @@ value=4.365
 rarity=R
 type=Instant
 cost={B}{G}
-abilty=can't be countered
+ability=can't be countered
 timing=removal
 effect=Destroy target nonland permanent with converted mana cost 3 or less.
