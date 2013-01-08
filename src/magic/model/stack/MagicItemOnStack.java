@@ -160,7 +160,7 @@ public abstract class MagicItemOnStack implements MagicTarget {
 
     @Override
     public boolean isValidTarget(final MagicSource aSource) {
-        return aSource!=this.source;
+        return aSource != this.source && aSource != this;
     }
     
     @Override
