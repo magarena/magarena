@@ -9,8 +9,6 @@ import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 
 public class Biting_Tether {
-    public static final Object S = Control_Magic.S;
-    
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(

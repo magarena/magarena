@@ -9,8 +9,6 @@ import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicAtEndOfTurnTrigger;
 
 public class Mark_of_the_Oni {
-    public static final Object S = Control_Magic.S;
-    
     public static final MagicAtEndOfTurnTrigger T = new MagicAtEndOfTurnTrigger() {
         @Override
         public MagicEvent executeTrigger(

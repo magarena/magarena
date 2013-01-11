@@ -8,4 +8,5 @@ subtype=Aura
 cost={2}{B}
 timing=aura
 enchant=gain control,neg creature
+ability=control enchanted
 requires_card_code
