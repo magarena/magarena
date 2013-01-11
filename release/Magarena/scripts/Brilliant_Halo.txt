@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={1}{W}
 given_pt=1/2
+ability=die return to owner's hand
 timing=aura
 enchant=pump,pos creature
-requires_card_code=Rancor

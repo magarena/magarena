@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={2}{B}
 given_ability=fear
+ability=die return to owner's hand
 timing=aura
 enchant=unblockable,pos creature
-requires_card_code=Rancor

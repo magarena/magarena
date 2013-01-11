@@ -8,6 +8,6 @@ subtype=Aura
 cost={2}{R}
 given_pt=2/2
 given_ability=can't block
+ability=die return to owner's hand
 timing=aura
 enchant=pump,creature
-requires_card_code=Rancor

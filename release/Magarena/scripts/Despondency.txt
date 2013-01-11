@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={1}{B}
 given_pt=-2/-0
+ability=die return to owner's hand
 timing=aura
 enchant=weaken -2/-0,neg creature
-requires_card_code=Rancor

@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={1}{G}
 given_ability=shroud
+ability=die return to owner's hand
 timing=aura
 enchant=shroud,pos creature
-requires_card_code=Rancor

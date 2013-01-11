@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={1}{U}
 given_ability=flying
+ability=die return to owner's hand
 timing=aura
 enchant=flying,pos creature
-requires_card_code=Rancor

@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={1}{R}
 given_ability=can't block
+ability=die return to owner's hand
 timing=aura
 enchant=can't attack or block,neg creature
-requires_card_code=Rancor

@@ -59,6 +59,7 @@ import magic.model.trigger.MagicThiefTrigger.Player;
 import magic.model.trigger.MagicWhenBlocksPumpTrigger;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 import magic.model.trigger.MagicSacrificeAtEnd;
+import magic.model.trigger.MagicWhenDiesTrigger;
 
 import java.util.EnumSet;
 import java.util.List;
@@ -372,6 +373,11 @@ public enum MagicAbility {
     DieMayDrawCard("die may draw card",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             card.add(new MagicDieDrawCardTrigger(false));
+        }
+    },
+    DieReturnToOwnersHand("die return to owner's hand",10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(MagicWhenDiesTrigger.ReturnToOwnersHand);
         }
     },
     DamageOpponentDrawCard("damage opponent draw card",10) {
