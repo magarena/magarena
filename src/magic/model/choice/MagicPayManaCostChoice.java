@@ -136,15 +136,16 @@ public class MagicPayManaCostChoice extends MagicChoice {
             if (validSources.size() == 1) {
                 // only one valid choice
                 sourcePermanent = validSources.iterator().next();
-            } 
-            if (builder.getActivationsSize() == costMinAmount) {
-                // more than one valid choice but number of activations = cost
-                // find permanent with only one mana activation
+            } else if (builder.getActivationsSize() == costMinAmount) {
+                // number of sources = costMinAmount
+                // check that total mana activations = costMinAmount
+                // which means each permanent has one activation
+                int totalManaActivations = 0;
                 for (final MagicPermanent perm : validSources) {
-                    if (perm.countManaActivations() == 1) {
-                        sourcePermanent = perm;
-                        break;
-                    }
+                    totalManaActivations += perm.countManaActivations();
+                }
+                if (totalManaActivations == costMinAmount) {
+                    sourcePermanent = validSources.iterator().next();
                 }
             }
 
