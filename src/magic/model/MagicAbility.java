@@ -16,6 +16,7 @@ import magic.model.event.MagicPainTapManaActivation;
 import magic.model.event.MagicTiming;
 import magic.model.event.MagicVividManaActivation;
 import magic.model.mstatic.MagicCDA;
+import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicAllyGrowTrigger;
 import magic.model.trigger.MagicAnnihilatorTrigger;
 import magic.model.trigger.MagicAttacksPumpTrigger;
@@ -617,6 +618,11 @@ public enum MagicAbility {
     EntersDestroy("enters destroy", 0) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             card.add(MagicWhenComesIntoPlayTrigger.create("Destroy " + arg));
+        }
+    },
+    ControlEnchanted("control enchanted", 0) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(MagicStatic.ControlEnchanted);
         }
     },
     None("",0);

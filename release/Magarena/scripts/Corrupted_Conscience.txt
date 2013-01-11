@@ -8,5 +8,5 @@ subtype=Aura
 cost={3}{U}{U}
 given_ability=infect
 timing=aura
+ability=control enchanted
 enchant=gain control,neg creature
-requires_card_code=Control Magic

@@ -4,6 +4,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
 import magic.model.target.MagicTargetFilter;
@@ -138,4 +139,21 @@ public abstract class MagicStatic extends MagicDummyPermanentModifier implements
             }
         };
     }
+
+    public static MagicStatic ControlEnchanted = new MagicStatic(MagicLayer.Control) {
+        @Override
+        public MagicPlayer getController(
+                final MagicPermanent source,
+                final MagicPermanent target,
+                final MagicPlayer player) {
+            return source.getController();
+        }
+        @Override
+        public boolean accept(
+                final MagicGame game,
+                final MagicPermanent source,
+                final MagicPermanent target) {
+            return source.getEnchantedCreature() == target;
+        }
+    };
 }

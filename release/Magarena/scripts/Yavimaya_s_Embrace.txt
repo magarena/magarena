@@ -9,5 +9,5 @@ cost={5}{G}{U}{U}
 given_pt=2/2
 given_ability=trample
 timing=aura
+ability=control enchanted
 enchant=gain control,neg creature
-requires_card_code=Control Magic

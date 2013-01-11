@@ -7,5 +7,5 @@ type=Enchantment
 subtype=Aura
 cost={4}{U}{U}
 timing=aura
+ability=control enchanted
 enchant=gain control,neg permanent
-requires_card_code=Control Magic
