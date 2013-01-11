@@ -7,6 +7,5 @@ type=Creature
 subtype=Viashino,Scout
 cost={1}{R}
 pt=2/1
-ability=haste
+ability=haste,return at end
 timing=fmain
-requires_card_code=Archwing Dragon

@@ -7,6 +7,5 @@ type=Creature
 subtype=Dragon
 cost={2}{R}{R}
 pt=4/4
-ability=flying,haste
+ability=flying,haste,return at end
 timing=fmain
-requires_card_code

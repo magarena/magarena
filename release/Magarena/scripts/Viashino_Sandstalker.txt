@@ -7,6 +7,5 @@ type=Creature
 subtype=Viashino,Warrior
 cost={1}{R}{R}
 pt=4/2
-ability=haste
+ability=haste,return at end
 timing=fmain
-requires_card_code=Archwing Dragon

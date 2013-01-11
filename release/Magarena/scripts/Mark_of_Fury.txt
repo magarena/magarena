@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={R}
 given_ability=haste
+ability=return at end
 timing=fmain
 enchant=haste,pos creature
-requires_card_code=Archwing Dragon

@@ -61,6 +61,7 @@ import magic.model.trigger.MagicWhenBlocksPumpTrigger;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 import magic.model.trigger.MagicSacrificeAtEnd;
 import magic.model.trigger.MagicWhenDiesTrigger;
+import magic.model.trigger.MagicAtEndOfTurnTrigger;
 
 import java.util.EnumSet;
 import java.util.List;
@@ -623,6 +624,11 @@ public enum MagicAbility {
     ControlEnchanted("control enchanted", 0) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             card.add(MagicStatic.ControlEnchanted);
+        }
+    },
+    ReturnAtEnd("return at end", 0) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(MagicAtEndOfTurnTrigger.ReturnAtEnd);
         }
     },
     None("",0);
