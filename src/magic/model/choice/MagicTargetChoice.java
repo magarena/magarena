@@ -98,6 +98,8 @@ public class MagicTargetChoice extends MagicChoice {
             new MagicTargetChoice(MagicTargetFilter.TARGET_LAND,true,MagicTargetHint.None,"target land");
     public static final MagicTargetChoice NEG_TARGET_LAND =
             new MagicTargetChoice(MagicTargetFilter.TARGET_LAND,true,MagicTargetHint.Negative,"target land");
+    public static final MagicTargetChoice NEG_TARGET_LAND_OR_NONBLACK_CREATURE =
+            new MagicTargetChoice(MagicTargetFilter.TARGET_LAND_OR_NONBLACK_CREATURE,true,MagicTargetHint.Negative,"target land");
     public static final MagicTargetChoice POS_TARGET_LAND =
             new MagicTargetChoice(MagicTargetFilter.TARGET_LAND,true,MagicTargetHint.Positive,"target land");
 
@@ -554,6 +556,7 @@ public class MagicTargetChoice extends MagicChoice {
         factory.put("neg target creature with converted mana cost 3 or less", NEG_TARGET_CREATURE_CONVERTED_3_OR_LESS);
         factory.put("neg target artifact or creature", NEG_TARGET_ARTIFACT_OR_CREATURE);
         factory.put("neg target nonland permanent with converted mana cost 3 or less", NEG_TARGET_NONLAND_PERMANENT_CMC_LEQ_3);
+        factory.put("neg target land or nonblack creature", NEG_TARGET_LAND_OR_NONBLACK_CREATURE);
 
         factory.put("neg target spell", NEG_TARGET_SPELL);
         factory.put("neg target red or green spell", NEG_TARGET_RED_GREEN_SPELL);
