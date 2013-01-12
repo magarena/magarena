@@ -1,6 +1,7 @@
 package magic.model.event;
 
 import magic.model.MagicCardDefinition;
+import magic.model.MagicManaCost;
 import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
@@ -11,8 +12,10 @@ import magic.model.MagicCopyMap;
 import magic.model.MagicCounterType;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.action.MagicChangeCountersAction;
+import magic.model.action.MagicUntapAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicSingleActivationCondition;
 import magic.model.stack.MagicAbilityOnStack;
 
 public abstract class MagicPermanentActivation extends MagicActivation<MagicPermanent> implements MagicChangeCardDefinition, MagicCopyable {
@@ -115,4 +118,35 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
                         true));
         }        
     };
+    
+    public static final MagicPermanentActivation Untap(final MagicManaCost cost) {
+        return new MagicPermanentActivation(
+            new MagicCondition[]{
+                MagicCondition.TAPPED_CONDITION,
+                cost.getCondition(),
+                new MagicSingleActivationCondition()
+            },
+            new MagicActivationHints(MagicTiming.Tapping),
+            "Untap"
+        ) {
+            @Override
+            public MagicEvent[] getCostEvent(final MagicPermanent source) {
+                return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_BLUE)};
+            }
+            @Override
+            public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+                return new MagicEvent(
+                        source,
+                        this,
+                        "Untap SN.");
+            }
+            @Override
+            public void executeEvent(
+                    final MagicGame game,
+                    final MagicEvent event,
+                    final Object[] choiceResults) {
+                game.doAction(new MagicUntapAction(event.getPermanent()));
+            }
+        };
+    }
 }

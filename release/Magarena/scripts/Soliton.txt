@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Construct
 cost={5}
 pt=3/4
+ability=untap {U}
 timing=main
-requires_card_code=Horseshoe Crab

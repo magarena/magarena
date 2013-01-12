@@ -7,6 +7,6 @@ type=Artifact,Creature
 subtype=Vedalken,Knight
 cost={4}{U}
 pt=4/4
-ability=flying
+ability=flying,untap {2}{U}
 timing=smain
 requires_card_code

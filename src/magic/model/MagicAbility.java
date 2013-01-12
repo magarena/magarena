@@ -346,6 +346,12 @@ public enum MagicAbility {
             card.add(new MagicSacrificeTapManaActivation(manatype));
         }
     },
+    UntapSelf("untap",10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final MagicManaCost manaCost = MagicManaCost.create(arg);
+            card.add(MagicPermanentActivation.Untap(manaCost));
+        }
+    },
     GainAbility("gains",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             final int idx = arg.indexOf(' ');

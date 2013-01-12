@@ -7,7 +7,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicPermanentAction;
-import magic.model.action.MagicUntapAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicSingleActivationCondition;
@@ -55,35 +54,6 @@ public class Ethersworn_Adjudicator {
                     game.doAction(new MagicDestroyAction(permanent));
                 }
             });
-        }
-    };
-
-    public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
-        new MagicCondition[]{
-            MagicCondition.TAPPED_CONDITION,
-            MagicManaCost.TWO_BLUE.getCondition(),
-            new MagicSingleActivationCondition()
-        },
-        new MagicActivationHints(MagicTiming.Tapping),
-        "Untap"
-    ) {
-        @Override
-        public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_BLUE)};
-        }
-        @Override
-        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            return new MagicEvent(
-                    source,
-                    this,
-                    "Untap SN.");
-        }
-        @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
-            game.doAction(new MagicUntapAction(event.getPermanent()));
         }
     };
 }
