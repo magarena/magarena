@@ -6,4 +6,5 @@ rarity=R
 type=Artifact
 cost={4}
 timing=artifact
+ability=tap add charge
 requires_card_code

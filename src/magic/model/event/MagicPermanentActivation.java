@@ -8,7 +8,9 @@ import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.MagicCopyable;
 import magic.model.MagicCopyMap;
+import magic.model.MagicCounterType;
 import magic.model.action.MagicPutItemOnStackAction;
+import magic.model.action.MagicChangeCountersAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicAbilityOnStack;
@@ -80,4 +82,37 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
     public void change(final MagicCardDefinition cdef) {
         cdef.addAct(this);
     }
+    
+    public static final MagicPermanentActivation TapAddCharge = new MagicPermanentActivation(
+            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
+            new MagicActivationHints(MagicTiming.Pump),
+            "Charge") {
+
+        @Override
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
+            return new MagicEvent[]{new MagicTapEvent(source)};
+        }
+
+        @Override
+        public MagicEvent getPermanentEvent(
+                final MagicPermanent source,
+                final MagicPayedCost payedCost) {
+            return new MagicEvent(
+                    source,
+                    this,
+                    "Put a charge counter on SN.");
+        }
+        
+        @Override
+        public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] choiceResults) {
+            game.doAction(new MagicChangeCountersAction(
+                        event.getPermanent(),
+                        MagicCounterType.Charge,
+                        1,
+                        true));
+        }        
+    };
 }
