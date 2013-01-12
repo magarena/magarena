@@ -10,13 +10,17 @@ import magic.model.MagicSource;
 import magic.model.MagicCopyable;
 import magic.model.MagicCopyMap;
 import magic.model.MagicCounterType;
+import magic.model.action.MagicTargetAction;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicUntapAction;
+import magic.model.action.MagicPreventDamageAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicSingleActivationCondition;
 import magic.model.stack.MagicAbilityOnStack;
+import magic.model.target.MagicPreventTargetPicker;
+import magic.model.target.MagicTarget;
 
 public abstract class MagicPermanentActivation extends MagicActivation<MagicPermanent> implements MagicChangeCardDefinition, MagicCopyable {
     
@@ -149,4 +153,35 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
             }
         };
     }
+    
+    public static final MagicPermanentActivation PreventDamage1 = new MagicPermanentActivation(
+            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
+            new MagicActivationHints(MagicTiming.Pump),
+            "Prevent 1") {
+
+        @Override
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
+            return new MagicEvent[]{new MagicTapEvent(source)};
+        }
+
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
+                source,
+                MagicTargetChoice.POS_TARGET_CREATURE_OR_PLAYER,
+                MagicPreventTargetPicker.getInstance(),
+                this,
+                "Prevent the next 1 damage that would be dealt to target creature or player$ this turn."
+            );
+        }
+
+        @Override
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+            event.processTarget(game,choiceResults,0,new MagicTargetAction() {
+                public void doAction(final MagicTarget target) {
+                    game.doAction(new MagicPreventDamageAction(target,1));
+                }
+            });
+        }
+    };
 }

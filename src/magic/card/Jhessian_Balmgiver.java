@@ -17,8 +17,6 @@ import magic.model.event.MagicTiming;
 import magic.model.target.MagicUnblockableTargetPicker;
 
 public class Jhessian_Balmgiver {
-    public static final MagicPermanentActivation A1 = Samite_Healer.A1;
-
     public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
         new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
         new MagicActivationHints(MagicTiming.Attack),

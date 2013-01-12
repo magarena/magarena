@@ -8,4 +8,5 @@ subtype=Human,Cleric
 cost={1}{W}{U}
 pt=1/1
 timing=smain
+ability=tap prevent damage 1
 requires_card_code

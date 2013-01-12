@@ -17,8 +17,6 @@ import magic.model.target.MagicPreventTargetPicker;
 import magic.model.target.MagicTarget;
 
 public class Abuna_Acolyte {
-    public static final Object A1 = Samite_Healer.A1;
-
     public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
             new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
             new MagicActivationHints(MagicTiming.Pump),

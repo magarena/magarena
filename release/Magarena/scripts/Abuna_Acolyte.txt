@@ -8,4 +8,5 @@ subtype=Cat,Cleric
 cost={1}{W}
 pt=1/1
 timing=main
+ability=tap prevent damage 1
 requires_card_code
