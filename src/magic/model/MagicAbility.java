@@ -675,6 +675,7 @@ public enum MagicAbility {
     }
 
     public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+        assert arg.isEmpty() : this + " does not accept arg = " + arg;
         card.setAbilityFlags(card.getAbilityFlags() | getMask());
     }
     
