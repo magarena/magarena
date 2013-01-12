@@ -54,30 +54,4 @@ public class Parallax_Wave {
             });
         }
     };
-    
-    public static final MagicWhenLeavesPlayTrigger T3 = new MagicWhenLeavesPlayTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent left) {
-            if (permanent == left &&
-                !permanent.getExiledCards().isEmpty()) {
-                final MagicCardList clist = new MagicCardList(permanent.getExiledCards());
-                return new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        this,
-                        clist.size() > 1 ?
-                            "Return exiled creatures to the battlefield " :
-                            "Return " + clist.get(0) + " to the battlefield ");
-            }
-            return MagicEvent.NONE;
-        }
-        @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
-            final MagicPermanent permanent = event.getPermanent();
-            game.doAction(new MagicReturnExiledUntilThisLeavesPlayAction(permanent,MagicLocationType.Play));
-        }
-    };
 }

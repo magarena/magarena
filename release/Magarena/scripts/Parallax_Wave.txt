@@ -7,4 +7,5 @@ type=Enchantment
 cost={2}{W}{W}
 ability=fading 5
 timing=enchantment
+ability=leaves return exile
 requires_card_code

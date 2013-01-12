@@ -4,8 +4,8 @@ import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicPlayCardAction;
-import magic.model.action.MagicRemoveCardAction;
+import magic.model.MagicCardList;
+import magic.model.action.MagicReturnExiledUntilThisLeavesPlayAction;
 import magic.model.event.MagicEvent;
 
 public class MagicLeavesReturnExileTrigger extends MagicWhenLeavesPlayTrigger {
@@ -17,17 +17,18 @@ public class MagicLeavesReturnExileTrigger extends MagicWhenLeavesPlayTrigger {
     public static final MagicLeavesReturnExileTrigger create() {
         return INSTANCE;
     }
-
+    
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent left) {
         if (permanent == left &&
             !permanent.getExiledCards().isEmpty()) {
-            final MagicCard exiledCard = permanent.getExiledCards().get(0);
+            final MagicCardList clist = new MagicCardList(permanent.getExiledCards());
             return new MagicEvent(
                 permanent,
-                exiledCard,
                 this,
-                "Return " + exiledCard + " to the battlefield"
+                clist.size() > 1 ?
+                    "Return exiled cards to the battlefield." :
+                    "Return " + clist.get(0) + " to the battlefield."
             );
         }
         return MagicEvent.NONE;
@@ -37,8 +38,6 @@ public class MagicLeavesReturnExileTrigger extends MagicWhenLeavesPlayTrigger {
             final MagicGame game,
             final MagicEvent event,
             final Object[] choiceResults) {
-        final MagicCard exiledCard = event.getRefCard();
-        game.doAction(new MagicRemoveCardAction(exiledCard,MagicLocationType.Exile));
-        game.doAction(new MagicPlayCardAction(exiledCard,exiledCard.getOwner(),MagicPlayCardAction.NONE));
+        game.doAction(new MagicReturnExiledUntilThisLeavesPlayAction(event.getPermanent(),MagicLocationType.Play));
     }
 }

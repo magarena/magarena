@@ -58,26 +58,26 @@ public class MagicReturnExiledUntilThisLeavesPlayAction extends MagicAction {
     public void doAction(final MagicGame game) {
         final MagicCardList cardList = source.getExiledCards();
         exiledList = new MagicCardList(source.getExiledCards());
-            for (final MagicCard card : cardList) {
-                if (card.getOwner().getExile().contains(card)) {
-                    game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Exile));
-                    if (location == MagicLocationType.Play) {
-                        if (card.getCardDefinition().isAura()) {
-                            final MagicCardOnStack cardOnStack = new MagicCardOnStack(card,MagicPayedCost.NO_COST);
-                            game.addEvent(new MagicReturnAuraEvent(cardOnStack));    
-                        } else {
-                            final Boolean newOwner = controller != MagicPlayer.NONE;
-                            game.doAction(new MagicPlayCardAction(
-                                    card,
-                                    newOwner ? controller : card.getOwner(),
-                                    action));
-                        }
+        for (final MagicCard card : cardList) {
+            if (card.getOwner().getExile().contains(card)) {
+                game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Exile));
+                if (location == MagicLocationType.Play) {
+                    if (card.getCardDefinition().isAura()) {
+                        final MagicCardOnStack cardOnStack = new MagicCardOnStack(card,MagicPayedCost.NO_COST);
+                        game.addEvent(new MagicReturnAuraEvent(cardOnStack));    
                     } else {
-                        game.doAction(new MagicMoveCardAction(card,MagicLocationType.Exile,location));
-                    } 
-                }
+                        final Boolean newOwner = controller != MagicPlayer.NONE;
+                        game.doAction(new MagicPlayCardAction(
+                                card,
+                                newOwner ? controller : card.getOwner(),
+                                action));
+                    }
+                } else {
+                    game.doAction(new MagicMoveCardAction(card,MagicLocationType.Exile,location));
+                } 
             }
-            cardList.clear();
+        }
+        cardList.clear();
     }
 
     @Override

@@ -7,6 +7,6 @@ type=Creature
 subtype=Angel
 cost={3}{W}{W}{W}
 pt=6/6
-ability=flying
+ability=flying,leaves return exile
 timing=main
 requires_card_code
