@@ -5,7 +5,6 @@ value=3.986
 rarity=R
 type=Enchantment
 cost={2}{U}{U}
-ability=fading 5
+ability=fading 5,leaves return exile
 timing=enchantment
-ability=leaves return exile
 requires_card_code
