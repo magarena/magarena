@@ -6,4 +6,5 @@ rarity=C
 type=Artifact
 cost={1}
 timing=artifact
+ability=charge at upkeep
 requires_card_code

@@ -63,6 +63,7 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 import magic.model.trigger.MagicSacrificeAtEnd;
 import magic.model.trigger.MagicWhenDiesTrigger;
 import magic.model.trigger.MagicAtEndOfTurnTrigger;
+import magic.model.trigger.MagicAtUpkeepTrigger;
 
 import java.util.EnumSet;
 import java.util.List;
@@ -344,6 +345,12 @@ public enum MagicAbility {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
             card.add(MagicSacrificeAtEnd.create());
+        }
+    },
+    ChargeAtUpkeep("charge at upkeep",10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+            card.add(MagicAtUpkeepTrigger.MayCharge);
         }
     },
     TapSacAddMana("tap sac add mana",10) {

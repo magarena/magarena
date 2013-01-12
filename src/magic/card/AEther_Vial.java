@@ -27,28 +27,6 @@ import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 
 public class AEther_Vial {
-    public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return permanent.isController(upkeepPlayer) ?
-                new MagicEvent(
-                    permanent,
-                    new MagicMayChoice(),
-                    this,
-                    "PN may$ put a charge counter on SN."):
-                MagicEvent.NONE;
-        }
-        @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
-            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,1,true));
-            }    
-        }
-    };
-    
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
             new MagicActivationHints(MagicTiming.Token),
