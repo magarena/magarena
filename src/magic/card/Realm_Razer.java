@@ -52,8 +52,8 @@ public class Realm_Razer {
                     permanent.getController(),
                     this,
                     clist.size() > 1 ?
-                        "Return exiled cards to the battlefield." :
-                        "Return " + clist.get(0) + " to the battlefield."
+                        "Return exiled cards to the battlefield tapped." :
+                        "Return " + clist.get(0) + " to the battlefield tapped."
                 );
             }
             return MagicEvent.NONE;
