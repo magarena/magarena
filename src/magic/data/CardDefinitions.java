@@ -43,7 +43,10 @@ public class CardDefinitions {
         new CompilerConfiguration().addCompilationCustomizers(
             new ImportCustomizer().addStarImports(
                 "magic.model", 
-                "magic.model.mstatic"
+                "magic.model.mstatic",
+                "magic.model.action",
+                "magic.model.condition",
+                "magic.model.event"
             )
         )
     );
