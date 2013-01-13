@@ -22,7 +22,7 @@ public class PlayChoicePanel extends JPanel implements ActionListener {
     private static final long serialVersionUID = 1L;
 
     private static final String MESSAGE="Choose which ability to play.";
-    private static final Dimension BUTTON_DIMENSION=new Dimension(70,35);
+    private static final Dimension BUTTON_DIMENSION=new Dimension(70,25);
     
     private final GameController controller;
     private final List<MagicPlayChoiceResult> results;
@@ -40,12 +40,12 @@ public class PlayChoicePanel extends JPanel implements ActionListener {
         setOpaque(false);
         
         final TextLabel textLabel=new TextLabel(GameController.getMessageWithSource(source,MESSAGE),GameViewer.TEXT_WIDTH,true);
-        add(textLabel,BorderLayout.CENTER);
+        add(textLabel,BorderLayout.NORTH);
         
-        final JPanel buttonPanel=new JPanel(new FlowLayout(FlowLayout.CENTER,5,0));
+        final JPanel buttonPanel=new JPanel(new FlowLayout(FlowLayout.CENTER,5,5));
         buttonPanel.setBorder(FontsAndBorders.EMPTY_BORDER);
         buttonPanel.setOpaque(false);
-        add(buttonPanel,BorderLayout.SOUTH);
+        add(buttonPanel,BorderLayout.CENTER);
         
         for (int index=0;index<results.size();index++) {
             final JButton button=new JButton(results.get(index).getText());
