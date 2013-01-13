@@ -7,5 +7,6 @@ type=Legendary,Creature
 subtype=Demon,Spirit
 cost={6}{B}{B}{B}
 pt=6/5
-ability=flying,trample,haste,protection from black,gains attacking first strike
+ability=flying,trample,haste,protection from black
 timing=main
+requires_groovy_code
