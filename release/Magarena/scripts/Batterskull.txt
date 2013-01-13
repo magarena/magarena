@@ -7,8 +7,7 @@ type=Artifact
 subtype=Equipment
 cost={5}
 equip={5}
-ability=living weapon
+ability=living weapon,return to owner's hand {3}
 given_pt=4/4
 given_ability=vigilance,lifelink
 timing=equipment
-requires_card_code

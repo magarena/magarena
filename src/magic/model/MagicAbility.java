@@ -684,6 +684,12 @@ public enum MagicAbility {
             card.add(MagicAtEndOfTurnTrigger.ReturnAtEnd);
         }
     },
+    ReturnToOwnersHand("return to owner's hand", 0) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final MagicManaCost manaCost = MagicManaCost.create(arg);
+            card.add(MagicPermanentActivation.ReturnToOwnersHand(manaCost));
+        }
+    },
     None("",0);
     
     public static final EnumSet<MagicAbility> CORE = EnumSet.range(AttacksEachTurnIfAble, Flanking);

@@ -7,5 +7,5 @@ type=Creature
 subtype=Spirit
 cost={3}{W}
 pt=2/2
+ability=return to owner's hand {0}
 timing=main
-requires_card_code

@@ -10,11 +10,13 @@ import magic.model.MagicSource;
 import magic.model.MagicCopyable;
 import magic.model.MagicCopyMap;
 import magic.model.MagicCounterType;
+import magic.model.MagicLocationType;
 import magic.model.action.MagicTargetAction;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicUntapAction;
 import magic.model.action.MagicPreventDamageAction;
+import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicSingleActivationCondition;
@@ -131,11 +133,10 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
                 new MagicSingleActivationCondition()
             },
             new MagicActivationHints(MagicTiming.Tapping),
-            "Untap"
-        ) {
+            "Untap") {
             @Override
             public MagicEvent[] getCostEvent(final MagicPermanent source) {
-                return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_BLUE)};
+                return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),cost)};
             }
             @Override
             public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
@@ -184,4 +185,30 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
             });
         }
     };
+    
+    public static final MagicPermanentActivation ReturnToOwnersHand(final MagicManaCost cost) { 
+        return new MagicPermanentActivation(
+                new MagicCondition[]{cost.getCondition()},
+                new MagicActivationHints(MagicTiming.Removal),
+                "Return") {
+            @Override
+            public MagicEvent[] getCostEvent(final MagicPermanent source) {
+                return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),cost)};
+            }
+            @Override
+            public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+                return new MagicEvent(
+                        source,
+                        this,
+                        "Return SN to its owner's hand.");
+            }
+            @Override
+            public void executeEvent(
+                    final MagicGame game,
+                    final MagicEvent event,
+                    final Object[] choiceResults) {
+                game.doAction(new MagicRemoveFromPlayAction(event.getPermanent(),MagicLocationType.OwnersHand));
+            }
+        };
+    }
 }

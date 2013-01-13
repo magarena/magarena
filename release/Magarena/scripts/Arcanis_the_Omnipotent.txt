@@ -8,4 +8,5 @@ subtype=Wizard
 cost={3}{U}{U}{U}
 pt=3/4
 timing=smain
+ability=return to owner's hand {2}{U}{U}
 requires_card_code
