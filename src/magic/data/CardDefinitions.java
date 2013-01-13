@@ -46,6 +46,8 @@ public class CardDefinitions {
                 "magic.model.mstatic",
                 "magic.model.action",
                 "magic.model.condition",
+                "magic.model.choice",
+                "magic.model.trigger",
                 "magic.model.event"
             )
         )
