@@ -16,6 +16,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
+import org.codehaus.groovy.control.customizers.ImportCustomizer;
+import org.codehaus.groovy.control.CompilerConfiguration;
 import groovy.lang.GroovyClassLoader;
 import groovy.lang.GroovyShell;
 
@@ -35,6 +37,16 @@ public class CardDefinitions {
     private static final List<MagicCardDefinition> spellCards = new ArrayList<MagicCardDefinition>();
     private static final Map<String,MagicCardDefinition> cardsMap = new HashMap<String, MagicCardDefinition>();
     private static final File cardDir = new File(MagicMain.getScriptsPath());
+
+    // groovy shell for evaluating groovy card scripts with autmatic imports
+    private static final GroovyShell shell = new GroovyShell(
+        new CompilerConfiguration().addCompilationCustomizers(
+            new ImportCustomizer().addStarImports(
+                "magic.model", 
+                "magic.model.mstatic"
+            )
+        )
+    );
 
     private static void setProperty(final MagicCardDefinition card,final String property,final String value) {
         try {
@@ -99,7 +111,6 @@ public class CardDefinitions {
     //link to groovy script that returns array of MagicChangeCardDefinition objects
     static void addCardSpecificGroovyCode(final MagicCardDefinition cardDefinition, final String cardName) {
         try {
-            final GroovyShell shell = new GroovyShell();
             final File script = new File(cardDir, getCanonicalName(cardName) + ".groovy");
             final List<MagicChangeCardDefinition> defs = (List<MagicChangeCardDefinition>)shell.evaluate(script);
             for (MagicChangeCardDefinition ccd : defs) {
