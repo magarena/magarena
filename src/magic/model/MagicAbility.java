@@ -690,6 +690,12 @@ public enum MagicAbility {
             card.add(MagicPermanentActivation.ReturnToOwnersHand(manaCost));
         }
     },
+    SwitchPT("switch pt", 0) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final MagicManaCost manaCost = MagicManaCost.create(arg);
+            card.add(MagicPermanentActivation.SwitchPT(manaCost));
+        }
+    },
     None("",0);
     
     public static final EnumSet<MagicAbility> CORE = EnumSet.range(AttacksEachTurnIfAble, Flanking);

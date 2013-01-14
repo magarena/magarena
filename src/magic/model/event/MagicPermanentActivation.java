@@ -11,7 +11,9 @@ import magic.model.MagicCopyable;
 import magic.model.MagicCopyMap;
 import magic.model.MagicCounterType;
 import magic.model.MagicLocationType;
+import magic.model.MagicPowerToughness;
 import magic.model.action.MagicTargetAction;
+import magic.model.action.MagicAddStaticAction;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicUntapAction;
@@ -23,6 +25,8 @@ import magic.model.condition.MagicSingleActivationCondition;
 import magic.model.stack.MagicAbilityOnStack;
 import magic.model.target.MagicPreventTargetPicker;
 import magic.model.target.MagicTarget;
+import magic.model.mstatic.MagicStatic;
+import magic.model.mstatic.MagicLayer;
 
 public abstract class MagicPermanentActivation extends MagicActivation<MagicPermanent> implements MagicChangeCardDefinition, MagicCopyable {
     
@@ -208,6 +212,43 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
                     final MagicEvent event,
                     final Object[] choiceResults) {
                 game.doAction(new MagicRemoveFromPlayAction(event.getPermanent(),MagicLocationType.OwnersHand));
+            }
+        };
+    }
+    
+    public static final MagicPermanentActivation SwitchPT(final MagicManaCost cost) {
+        return new MagicPermanentActivation(
+            new MagicCondition[] {cost.getCondition()},
+            new MagicActivationHints(MagicTiming.Pump),
+            "Switch") {
+            @Override
+            public MagicEvent[] getCostEvent(final MagicPermanent source) {
+                return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),cost)};
+            }
+            @Override
+            public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+                return new MagicEvent(
+                    source,
+                    this,
+                    "Switch SN's power and toughness until end of turn."
+                );
+            }
+            @Override
+            public void executeEvent(
+                    final MagicGame game,
+                    final MagicEvent event,
+                    final Object[] choiceResults) {
+                game.doAction(new MagicAddStaticAction(event.getPermanent(), new MagicStatic(
+                        MagicLayer.SwitchPT,
+                        MagicStatic.UntilEOT) {
+                    @Override
+                    public void modPowerToughness(
+                            final MagicPermanent source,
+                            final MagicPermanent permanent,
+                            final MagicPowerToughness pt) {
+                        pt.set(pt.toughness(),pt.power());
+                    }   
+                }));
             }
         };
     }
