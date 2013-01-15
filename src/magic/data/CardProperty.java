@@ -116,7 +116,12 @@ public enum CardProperty {
     },
     GIVEN_COLOR() {
         void setProperty(final MagicCardDefinition card, final String value) {
-            card.add(MagicStatic.genCOStatic(MagicColor.getFlags(value)));
+            card.add(MagicStatic.AddLinkedColor(MagicColor.getFlags(value)));
+        }
+    },
+    OVERWRITE_COLOR() {
+        void setProperty(final MagicCardDefinition card, final String value) {
+            card.add(MagicStatic.SetLinkedColor(MagicColor.getFlags(value)));
         }
     },
     STATIC() {

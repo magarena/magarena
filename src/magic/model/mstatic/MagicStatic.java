@@ -125,13 +125,28 @@ public abstract class MagicStatic extends MagicDummyPermanentModifier implements
         };
     }
     
-    public static MagicStatic genCOStatic(final int givenColorFlags) {
+    public static MagicStatic AddLinkedColor(final int givenColorFlags) {
         return new MagicStatic(MagicLayer.Color) {
             @Override
             public int getColorFlags(
                 final MagicPermanent permanent,
                 final int flags) {
                 return flags | givenColorFlags;
+            }
+            @Override
+            public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+                return MagicStatic.acceptLinked(game, source, target);
+            }
+        };
+    }
+    
+    public static MagicStatic SetLinkedColor(final int givenColorFlags) {
+        return new MagicStatic(MagicLayer.Color) {
+            @Override
+            public int getColorFlags(
+                final MagicPermanent permanent,
+                final int flags) {
+                return givenColorFlags;
             }
             @Override
             public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
