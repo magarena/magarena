@@ -13,6 +13,8 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
+import java.util.Set;
+
 public class Ward_Sliver {
       public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
         @Override
@@ -33,8 +35,8 @@ public class Ward_Sliver {
                 MagicLayer.Ability, 
                 MagicTargetFilter.TARGET_SLIVER) {
                     @Override
-                    public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
-                        return flags | protection.getMask();
+                    public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
+                        flags.add(protection);
                     }
                 } 
             ));

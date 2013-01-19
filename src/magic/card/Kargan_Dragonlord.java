@@ -18,6 +18,8 @@ import magic.model.event.MagicTiming;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 
+import java.util.Set;
+
 public class Kargan_Dragonlord {
     public static final MagicStatic S1 = new MagicStatic(MagicLayer.SetPT) {
         @Override
@@ -33,20 +35,17 @@ public class Kargan_Dragonlord {
     
     public static final MagicStatic S2 = new MagicStatic(MagicLayer.Ability) {
         @Override
-        public long getAbilityFlags(
+        public void modAbilityFlags(
                 final MagicPermanent source,
                 final MagicPermanent permanent,
-                final long flags) {
+                final Set<MagicAbility> flags) {
             final int charges = permanent.getCounters(MagicCounterType.Charge);
             if (charges >= 8) {
-                return flags |
-                    MagicAbility.Flying.getMask() |
-                    MagicAbility.Trample.getMask();
-            } else if (charges >= 4) {
-                return flags | MagicAbility.Flying.getMask();
-            } else {
-                return flags;
-            }
+                flags.add(MagicAbility.Trample);
+            } 
+            if (charges >= 4) {
+                flags.add(MagicAbility.Flying);
+            } 
         }
     };
 

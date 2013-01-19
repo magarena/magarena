@@ -11,13 +11,15 @@ import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
 import magic.model.trigger.MagicWhenBlocksTrigger;
 
+import java.util.Set;
+
 public class Fumiko_the_Lowblood {
     public static final MagicStatic S = new MagicStatic(
             MagicLayer.Ability, 
             MagicTargetFilter.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS) {
         @Override
-        public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
-            return flags | MagicAbility.AttacksEachTurnIfAble.getMask();
+        public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
+            flags.add(MagicAbility.AttacksEachTurnIfAble);
         }
     };
         

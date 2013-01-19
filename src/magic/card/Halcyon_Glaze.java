@@ -15,6 +15,7 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.trigger.MagicWhenOtherSpellIsCastTrigger;
 
 import java.util.EnumSet;
+import java.util.Set;
 
 public class Halcyon_Glaze {
     private static final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
@@ -25,8 +26,8 @@ public class Halcyon_Glaze {
     };
     private static final MagicStatic AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
         @Override
-        public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
-            return flags|MagicAbility.Flying.getMask();
+        public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
+            flags.add(MagicAbility.Flying);
         }
     };
     private static final MagicStatic ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {

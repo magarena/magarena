@@ -18,7 +18,7 @@ import magic.model.trigger.MagicWhenLeavesPlayTrigger;
 
 import java.util.Collection;
 import java.util.EnumSet;
-
+import java.util.Set;
 
 public class Aurification {
     public static final MagicWhenDamageIsDealtTrigger T1 = new MagicWhenDamageIsDealtTrigger() {
@@ -44,11 +44,11 @@ public class Aurification {
             game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.Gold,1,true));
             game.doAction(new MagicAddStaticAction(creature, new MagicStatic(MagicLayer.Ability) {
                 @Override
-                public long getAbilityFlags(
+                public void modAbilityFlags(
                         final MagicPermanent source,
                         final MagicPermanent permanent,
-                        final long flags) {
-                    return flags | MagicAbility.Defender.getMask();
+                        final Set<MagicAbility> flags) {
+                    flags.add(MagicAbility.Defender);
                 }
                 @Override
                 public boolean condition(

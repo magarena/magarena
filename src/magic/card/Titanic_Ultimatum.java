@@ -13,12 +13,14 @@ import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 
 import java.util.Collection;
+import java.util.Set;
 
 public class Titanic_Ultimatum {
-    private static final long TITANIC_ULTIMATUM_FLAGS=
-        MagicAbility.FirstStrike.getMask()|
-        MagicAbility.LifeLink.getMask()|
-        MagicAbility.Trample.getMask();
+    private static final Set<MagicAbility> TITANIC_ULTIMATUM_FLAGS = MagicAbility.of(
+        MagicAbility.FirstStrike,
+        MagicAbility.LifeLink,
+        MagicAbility.Trample
+    );
 
     public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
         @Override

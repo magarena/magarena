@@ -15,6 +15,8 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
+import java.util.Set;
+
 public class Dungeon_Geists {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
         @Override
@@ -41,11 +43,11 @@ public class Dungeon_Geists {
                     final MagicStatic S = new MagicStatic(MagicLayer.Ability,filter) {
                             final int you = source.getController().getIndex();
                             @Override
-                            public long getAbilityFlags(
+                            public void modAbilityFlags(
                                 final MagicPermanent source, 
                                 final MagicPermanent permanent, 
-                                final long flags) {
-                                return flags | MagicAbility.DoesNotUntap.getMask();
+                                final Set<MagicAbility> flags) {
+                                flags.add(MagicAbility.DoesNotUntap);
                             }
                             @Override
                             public boolean condition(

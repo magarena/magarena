@@ -11,11 +11,13 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
 import magic.model.trigger.MagicWhenBlocksTrigger;
 
+import java.util.Set;
+
 public class Talruum_Champion {
     private static final MagicStatic AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
         @Override
-        public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
-            return flags & ~MagicAbility.FirstStrike.getMask();
+        public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
+            flags.remove(MagicAbility.FirstStrike);
         }
     };
     

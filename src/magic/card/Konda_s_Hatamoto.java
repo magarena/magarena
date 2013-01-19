@@ -10,17 +10,17 @@ import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 
 import java.util.Collection;
+import java.util.Set;
 
 public class Konda_s_Hatamoto {
     
     public static final MagicStatic S1 = new MagicStatic(MagicLayer.Ability) {
         @Override
-        public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
+        public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
             final MagicGame game = source.getGame();
-            return game.filterPermanents(permanent.getController(),
-                    MagicTargetFilter.TARGET_LEGENDARY_SAMURAI_YOU_CONTROL).size() > 0 ?
-                flags | MagicAbility.Vigilance.getMask() :
-                flags;
+            if (game.filterPermanents(permanent.getController(), MagicTargetFilter.TARGET_LEGENDARY_SAMURAI_YOU_CONTROL).size() > 0) {
+                flags.add(MagicAbility.Vigilance);
+            }
         }
     };
     

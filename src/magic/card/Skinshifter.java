@@ -20,6 +20,7 @@ import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 
 import java.util.EnumSet;
+import java.util.Set;
 
 public class Skinshifter {
     // becomes a 4/4 Rhino and gains trample
@@ -31,8 +32,8 @@ public class Skinshifter {
     };
     private static final MagicStatic AB1 = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
         @Override
-        public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
-            return flags|MagicAbility.Trample.getMask();
+        public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
+            flags.add(MagicAbility.Trample);
         }
     };
     private static final MagicStatic ST1 = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
@@ -87,8 +88,8 @@ public class Skinshifter {
     };
     private static final MagicStatic AB2 = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
         @Override
-        public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
-            return flags|MagicAbility.Flying.getMask();
+        public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
+            flags.add(MagicAbility.Flying);
         }
     };
     private static final MagicStatic ST2 = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {

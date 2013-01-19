@@ -12,17 +12,19 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
+import java.util.Set;
+
 public class Primordial_Hydra {
     public static final MagicStatic S = new MagicStatic(MagicLayer.Ability) {
         @Override
-        public long getAbilityFlags(
+        public void modAbilityFlags(
                 final MagicPermanent source,
                 final MagicPermanent permanent,
-                final long flags) {
+                final Set<MagicAbility> flags) {
             final int amount = permanent.getCounters(MagicCounterType.PlusOne);
-            return amount >= 10 ?
-                    flags|MagicAbility.Trample.getMask() :
-                    flags;
+            if (amount >= 10) {
+                flags.add(MagicAbility.Trample);
+            }
         }
     };
     

@@ -18,6 +18,8 @@ import magic.model.target.MagicBecomeTargetPicker;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 
+import java.util.Set;
+
 public class Aven_Mimeomancer {
 
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
@@ -66,11 +68,11 @@ public class Aven_Mimeomancer {
                             MagicLayer.Ability,
                             MagicTargetFilter.TARGET_CREATURE) {
                             @Override
-                            public long getAbilityFlags(
+                            public void modAbilityFlags(
                                 final MagicPermanent source,
                                 final MagicPermanent permanent,
-                                final long flags) {
-                                return flags | MagicAbility.Flying.getMask();
+                                final Set<MagicAbility> flags) {
+                                flags.add(MagicAbility.Flying);
                             }
                             @Override
                             public boolean accept(

@@ -1,6 +1,7 @@
 package magic.card;
 
 import magic.model.MagicColor;
+import magic.model.MagicAbility;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
@@ -19,7 +20,7 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicBecomeTargetPicker;
 
 import java.util.EnumSet;
-
+import java.util.Set;
 
 public class Turn_to_Frog {
     private static final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
@@ -30,8 +31,8 @@ public class Turn_to_Frog {
     };
     private static final MagicStatic AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
         @Override
-        public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
-            return 0;
+        public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
+            flags.clear();
         }
     };
     private static final MagicStatic ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {

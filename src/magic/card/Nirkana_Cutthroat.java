@@ -7,6 +7,8 @@ import magic.model.MagicPowerToughness;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 
+import java.util.Set;
+
 public class Nirkana_Cutthroat {
     public static final MagicStatic S1 = new MagicStatic(MagicLayer.SetPT) {
         @Override
@@ -22,18 +24,17 @@ public class Nirkana_Cutthroat {
 
     public static final MagicStatic S2 = new MagicStatic(MagicLayer.Ability) {
         @Override
-        public long getAbilityFlags(
+        public void modAbilityFlags(
                 final MagicPermanent source,
                 final MagicPermanent permanent,
-                final long flags) {
+                final Set<MagicAbility> flags) {
             final int charges=permanent.getCounters(MagicCounterType.Charge);
             if (charges>=3) {
-                return flags|MagicAbility.FirstStrike.getMask()|MagicAbility.Deathtouch.getMask();
-            } else if (charges>=1) {
-                return flags|MagicAbility.Deathtouch.getMask();
-            } else {
-                return flags;
+                flags.add(MagicAbility.FirstStrike);
             }
+            if (charges>=1) {
+                flags.add(MagicAbility.Deathtouch);
+            } 
         }
     };
 }

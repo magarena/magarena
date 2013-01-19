@@ -7,6 +7,8 @@ import magic.model.MagicPowerToughness;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 
+import java.util.Set;
+
 public class Bant_Sureblade {
     static boolean isValid(final MagicPermanent owner) {
         for (final MagicPermanent permanent : owner.getController().getPermanents()) {
@@ -28,10 +30,10 @@ public class Bant_Sureblade {
     
     public static final MagicStatic S2 = new MagicStatic(MagicLayer.Ability) {
         @Override
-        public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
-            return (isValid(permanent)) ?
-                flags | MagicAbility.FirstStrike.getMask() :
-                flags;
+        public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
+            if (isValid(permanent)) {
+                flags.add(MagicAbility.FirstStrike);
+            }
         }
     }; 
 }

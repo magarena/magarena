@@ -9,6 +9,8 @@ import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTargetFilter;
 
+import java.util.Set;
+
 public class Coralhelm_Commander {
     public static final MagicStatic S = new MagicStatic(
             MagicLayer.ModPT, 
@@ -41,14 +43,14 @@ public class Coralhelm_Commander {
 
     public static final MagicStatic S2 = new MagicStatic(MagicLayer.Ability) {
         @Override
-        public long getAbilityFlags(
+        public void modAbilityFlags(
                 final MagicPermanent source,
                 final MagicPermanent permanent,
-                final long flags) {
+                final Set<MagicAbility> flags) {
             final int charges = permanent.getCounters(MagicCounterType.Charge);
-            return (charges >= 2) ?
-                flags|MagicAbility.Flying.getMask():
-                flags;
+            if (charges >= 2) {
+                flags.add(MagicAbility.Flying);
+            }
         }
     };
 }

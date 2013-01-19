@@ -5,13 +5,15 @@ import magic.model.MagicPermanent;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 
+import java.util.Set;
+
 public class Viridian_Betrayers {
     public static final MagicStatic S = new MagicStatic(MagicLayer.Ability) {
         @Override
-        public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
-            return permanent.getOpponent().getPoison() > 0 ?
-                flags | MagicAbility.Infect.getMask() :
-                flags;
+        public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
+            if (permanent.getOpponent().getPoison() > 0) {
+                flags.add(MagicAbility.Infect);
+            }
         }
     };
 }

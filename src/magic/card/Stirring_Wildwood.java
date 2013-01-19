@@ -22,6 +22,7 @@ import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 
 import java.util.EnumSet;
+import java.util.Set;
 
 public class Stirring_Wildwood {
     
@@ -36,11 +37,11 @@ public class Stirring_Wildwood {
     };
     private static final MagicStatic AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
         @Override
-        public long getAbilityFlags(
+        public void modAbilityFlags(
                 final MagicPermanent source,
                 final MagicPermanent permanent,
-                final long flags) {
-            return flags|MagicAbility.Reach.getMask();
+                final Set<MagicAbility> flags) {
+            flags.add(MagicAbility.Reach);
         }
     };
     private static final MagicStatic ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {

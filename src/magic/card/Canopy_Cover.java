@@ -6,17 +6,20 @@ import magic.model.MagicPermanent;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 
+import java.util.Set;
+
 public class Canopy_Cover {
     public static final Object S = new MagicStatic(MagicLayer.Ability) {
         @Override
-        public long getAbilityFlags(
+        public void modAbilityFlags(
             final MagicPermanent source,
             final MagicPermanent target,
-            final long flags) {
-            return flags | 
-                ((source.getController().getIndex() == 0) ?
-                 MagicAbility.CannotBeTheTarget1 :
-                 MagicAbility.CannotBeTheTarget0).getMask();
+            final Set<MagicAbility> flags) {
+            if (source.getController().getIndex() == 0) {
+                flags.add(MagicAbility.CannotBeTheTarget1);
+            } else {
+                flags.add(MagicAbility.CannotBeTheTarget0);
+            }
         }
         @Override
         public boolean accept(

@@ -36,7 +36,7 @@ public class Vampiric_Fury {
                     MagicTargetFilter.TARGET_VAMPIRE_YOU_CONTROL);
             for (final MagicPermanent creature : targets) {
                 game.doAction(new MagicChangeTurnPTAction(creature,2,0));
-                game.doAction(new MagicSetAbilityAction(creature,MagicAbility.FirstStrike.getMask()));
+                game.doAction(new MagicSetAbilityAction(creature,MagicAbility.FirstStrike));
             }
         }
     };

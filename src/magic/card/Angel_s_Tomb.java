@@ -16,6 +16,7 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
 
 import java.util.EnumSet;
+import java.util.Set;
 
 public class Angel_s_Tomb {
 
@@ -36,11 +37,11 @@ public class Angel_s_Tomb {
             MagicStatic.UntilEOT) {
 
         @Override
-        public long getAbilityFlags(
+        public void modAbilityFlags(
                 final MagicPermanent source,
                 final MagicPermanent permanent,
-                final long flags) {
-            return flags | MagicAbility.Flying.getMask();
+                final Set<MagicAbility> flags) {
+            flags.add(MagicAbility.Flying);
         }
     };
     private static final MagicStatic ST = new MagicStatic(

@@ -7,6 +7,8 @@ import magic.model.MagicPowerToughness;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 
+import java.util.Set;
+
 public class Beastbreaker_of_Bala_Ged {
     public static final MagicStatic S1 = new MagicStatic(MagicLayer.SetPT) {
         @Override
@@ -25,14 +27,13 @@ public class Beastbreaker_of_Bala_Ged {
 
     public static final MagicStatic S2 = new MagicStatic(MagicLayer.Ability) {
         @Override
-        public long getAbilityFlags(
+        public void modAbilityFlags(
                 final MagicPermanent source,
                 final MagicPermanent permanent,
-                final long flags) {
+                final Set<MagicAbility> flags) {
             if (permanent.getCounters(MagicCounterType.Charge) >= 4) {
-                return flags|MagicAbility.Trample.getMask();
+                flags.add(MagicAbility.Trample);
             }
-            return flags;
         }
     };
 }

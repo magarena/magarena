@@ -6,13 +6,15 @@ import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTargetFilter;
 
+import java.util.Set;
+
 public class Sensor_Splicer {
     public static final MagicStatic S = new MagicStatic(
             MagicLayer.Ability, 
             MagicTargetFilter.TARGET_GOLEM_YOU_CONTROL) {
         @Override
-        public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
-            return flags | MagicAbility.Vigilance.getMask();
+        public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
+            flags.add(MagicAbility.Vigilance);
         }
     };
     

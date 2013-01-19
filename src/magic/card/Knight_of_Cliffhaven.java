@@ -7,6 +7,8 @@ import magic.model.MagicPowerToughness;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 
+import java.util.Set;
+
 public class Knight_of_Cliffhaven {
     public static final MagicStatic S1 = new MagicStatic(MagicLayer.SetPT) {
         @Override
@@ -22,20 +24,17 @@ public class Knight_of_Cliffhaven {
     
     public static final MagicStatic S2 = new MagicStatic(MagicLayer.Ability) {
         @Override
-        public long getAbilityFlags(
+        public void modAbilityFlags(
                 final MagicPermanent source,
                 final MagicPermanent permanent,
-                final long flags) {
+                final Set<MagicAbility> flags) {
             final int charges = permanent.getCounters(MagicCounterType.Charge);
             if (charges >= 4) {
-                return flags |
-                    MagicAbility.Flying.getMask() |
-                    MagicAbility.Vigilance.getMask();
-            } else if (charges >= 1) {
-                return flags | MagicAbility.Flying.getMask();
-            } else {
-                return flags;
+                flags.add(MagicAbility.Vigilance);
             }
+            if (charges >= 1) {
+                flags.add(MagicAbility.Flying);
+            } 
         }
     };
 }

@@ -11,12 +11,14 @@ import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenAttacksTrigger;
 
 import java.util.Collection;
+import java.util.Set;
 
 public class Victory_s_Herald {
     
-    private static final long VICTORYS_HERALD_FLAGS=
-        MagicAbility.Flying.getMask() |
-        MagicAbility.LifeLink.getMask();
+    private static final Set<MagicAbility> VICTORYS_HERALD_FLAGS = MagicAbility.of(
+        MagicAbility.Flying,
+        MagicAbility.LifeLink
+    );
 
     public static final MagicWhenAttacksTrigger T1 = new MagicWhenAttacksTrigger() {
         @Override
