@@ -18,6 +18,7 @@ import java.util.EnumSet;
 import java.util.List;
 import java.util.SortedSet;
 import java.util.TreeSet;
+import java.util.Set;
 
 public class PermanentViewerInfo {
 
@@ -51,7 +52,7 @@ public class PermanentViewerInfo {
     public final int index;
     public final String powerToughness;
     public final String text;
-    public final long abilityFlags;
+    public final Set<MagicAbility> abilityFlags;
     public final int damage;
     public final int position;
     public final int chargeCounters;
@@ -133,7 +134,7 @@ public class PermanentViewerInfo {
         }
     }
         
-    private static String getText(final MagicGame game,final MagicPermanent permanent,final long abilityFlags) {
+    private static String getText(final MagicGame game,final MagicPermanent permanent,final Set<MagicAbility> abilityFlags) {
         final StringBuilder textBuffer=new StringBuilder();
         
         // States
@@ -219,7 +220,7 @@ public class PermanentViewerInfo {
 
         // Abilities
         for (final MagicAbility ability : MagicAbility.CORE) {
-            if (ability.hasAbility(abilityFlags)) {
+            if (abilityFlags.contains(ability)) {
                 if (first) {
                     first=false;
                     if (textBuffer.length()>0) {

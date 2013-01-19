@@ -5,6 +5,8 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 
+import java.util.Set;
+
 public class MagicLifelinkTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
     private static final MagicLifelinkTargetPicker INSTANCE = new MagicLifelinkTargetPicker();
@@ -23,12 +25,11 @@ public class MagicLifelinkTargetPicker extends MagicTargetPicker<MagicPermanent>
 
     @Override
     protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
-        final long flags = permanent.getAbilityFlags();
         int score = 0;
 
         // no score for ability overlap or not being able to deal combat damage
-        if (MagicAbility.LifeLink.hasAbility(flags) ||
-            MagicAbility.CannotAttackOrBlock.hasAbility(flags)) {
+        if (permanent.hasAbility(MagicAbility.LifeLink) ||
+            permanent.hasAbility(MagicAbility.CannotAttackOrBlock)) {
             return 0;
         }
         
@@ -48,11 +49,11 @@ public class MagicLifelinkTargetPicker extends MagicTargetPicker<MagicPermanent>
             score = CAN_TAP;
         } 
 
-        if (MagicAbility.DoubleStrike.hasAbility(flags)) {
+        if (permanent.hasAbility(MagicAbility.DoubleStrike)) {
             // chance to deal combat damage twice
             score += DOUBLE_STRIKE;
         }
-        if (MagicAbility.FirstStrike.hasAbility(flags)) {
+        if (permanent.hasAbility(MagicAbility.FirstStrike)) {
             // higher chance to deal combat damage
             score += FIRST_STRIKE;
         }

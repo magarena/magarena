@@ -5,6 +5,8 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 
+import java.util.Set;
+
 public class MagicShadowTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
     private static final MagicShadowTargetPicker INSTANCE = new MagicShadowTargetPicker();
@@ -14,12 +16,10 @@ public class MagicShadowTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
     @Override
     protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
-        final long flags = permanent.getAbilityFlags();
-
         // no score for ability overlap, not being able to deal combat damage,
         // being blocked or blocking
-        if (MagicAbility.Shadow.hasAbility(flags) ||
-            MagicAbility.CannotAttackOrBlock.hasAbility(flags) ||
+        if (permanent.hasAbility(MagicAbility.Shadow) ||
+            permanent.hasAbility(MagicAbility.CannotAttackOrBlock) ||
             permanent.isBlocked() ||
             permanent.isBlocking()) {
             return 0;

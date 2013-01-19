@@ -94,7 +94,7 @@ public enum CardProperty {
             for (final String name : names) {
                 final MagicAbility ability = MagicAbility.getAbility(name);
                 final String arg = name.substring(ability.toString().length()).trim();
-                card.setAbility(ability, arg);
+                card.addAbility(ability, arg);
             }
         }
     },

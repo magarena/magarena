@@ -5,6 +5,8 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 
+import java.util.Set;
+
 public class MagicFlyingTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
     private static final MagicFlyingTargetPicker INSTANCE=new MagicFlyingTargetPicker();
@@ -17,18 +19,17 @@ public class MagicFlyingTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
     @Override
     protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
-        final long flags=permanent.getAbilityFlags();
-        if (MagicAbility.CannotAttackOrBlock.hasAbility(flags)) {
+        if (permanent.hasAbility(MagicAbility.CannotAttackOrBlock)) {
             return 0;
         }
         final int power=permanent.getPower();
-        if (MagicAbility.Flying.hasAbility(flags)) {
+        if (permanent.hasAbility(MagicAbility.Flying)) {
             return power;
         } 
-        if (MagicAbility.Defender.hasAbility(flags)) {
+        if (permanent.hasAbility(MagicAbility.Defender)) {
             return 20+power;
         }
-        if (MagicAbility.Reach.hasAbility(flags)) {
+        if (permanent.hasAbility(MagicAbility.Reach)) {
             return 50+power;
         }
         return 100+power;

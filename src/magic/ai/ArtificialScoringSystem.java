@@ -10,6 +10,8 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
 import magic.model.choice.MagicCombatCreature;
 
+import java.util.Set;
+
 public class ArtificialScoringSystem {
 
     public static final int WIN_GAME_SCORE=100000000;
@@ -107,7 +109,7 @@ public class ArtificialScoringSystem {
         if (permanent.isCreature()) {
             // used to consider pt and abilities without EOT effects, now includes EOT effects
             final MagicPowerToughness pt=permanent.getPowerToughness();
-            final long abilityFlags=permanent.getAbilityFlags();
+            final Set<MagicAbility> abilityFlags=permanent.getAbilityFlags();
             score+=pt.power()*300+pt.getPositiveToughness()*200+MagicAbility.getScore(abilityFlags)*(pt.getPositivePower()+1)/2;
             score+=permanent.getEquipmentPermanents().size()*50+permanent.getAuraPermanents().size()*100;
         } 

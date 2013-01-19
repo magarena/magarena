@@ -4,8 +4,10 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
+import magic.model.MagicAbility;
 
 import java.util.EnumSet;
+import java.util.Set;
 
 public class MagicDummyPermanentModifier implements MagicPermanentModifier {
     
@@ -20,8 +22,8 @@ public class MagicDummyPermanentModifier implements MagicPermanentModifier {
     }
 
     @Override
-    public long getAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final long flags) {
-        return flags;
+    public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
+        //leave abilities unchanged
     }
 
     @Override

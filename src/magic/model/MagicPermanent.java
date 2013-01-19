@@ -23,9 +23,12 @@ import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 
 import javax.swing.ImageIcon;
+
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.EnumSet;
+import java.util.Set;
+import java.util.Collections;
 
 public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicPermanent> {
 
@@ -64,8 +67,8 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             return false;
         }
         @Override
-        public long getAbilityFlags() {
-            return 0L;
+        public Set<MagicAbility> getAbilityFlags() {
+            return Collections.emptySet();
         }
         @Override
         public boolean hasAbility(final MagicAbility ability) {
@@ -103,7 +106,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     private int cachedTypeFlags;
     private EnumSet<MagicSubType> cachedSubTypeFlags;
     private int cachedColorFlags;
-    private long cachedAbilityFlags;
+    private Set<MagicAbility> cachedAbilityFlags;
     private MagicPowerToughness cachedPowerToughness;
 
     // remember order among blockers (blockedName + id + block order)
@@ -195,9 +198,9 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             abilityPlayedThisTurn,
             cachedController.getId(),
             cachedTypeFlags,
-            // cachedSubTypeFlags,
+            cachedSubTypeFlags.hashCode(),
             cachedColorFlags,
-            cachedAbilityFlags,
+            cachedAbilityFlags.hashCode(),
             cachedPowerToughness.power(),
             cachedPowerToughness.toughness(),
         };
@@ -332,10 +335,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             case Card:
                 cachedController = firstController;
                 cachedTypeFlags = cdef.getTypeFlags();
-                cachedSubTypeFlags = cdef.genCardSubTypeFlags();
+                cachedSubTypeFlags = cdef.genSubTypeFlags();
                 cachedColorFlags = cdef.getColorFlags();
-                cachedAbilityFlags = cdef.getAbilityFlags() & MagicAbility.EXCLUDE_MASK;
-                cachedPowerToughness = cdef.genCardPowerToughness();
+                cachedAbilityFlags = cdef.genAbilityFlags();
+                cachedPowerToughness = cdef.genPowerToughness();
                 break;
             case CDASubtype:
                 cdef.applyCDASubType(getGame(), getController(), cachedSubTypeFlags);
@@ -362,7 +365,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
                 cachedColorFlags = mstatic.getColorFlags(this, cachedColorFlags);
                 break;
             case Ability:
-                cachedAbilityFlags = mstatic.getAbilityFlags(source, this, cachedAbilityFlags);
+                mstatic.modAbilityFlags(source, this, cachedAbilityFlags);
                 break;
             case SetPT:
             case ModPT:
@@ -449,13 +452,13 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return getPowerToughness().getPositiveToughness();
     }
     
-    public long getAbilityFlags() {
+    public Set<MagicAbility> getAbilityFlags() {
         return cachedAbilityFlags;
     }
 
     @Override
     public boolean hasAbility(final MagicAbility ability) {
-        return ability.hasAbility(cachedAbilityFlags);
+        return cachedAbilityFlags.contains(ability);
     }
         
     private void updateScore() {

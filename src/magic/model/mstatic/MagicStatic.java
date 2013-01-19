@@ -7,9 +7,11 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
+import magic.model.MagicAbility;
 import magic.model.target.MagicTargetFilter;
 
 import java.util.EnumSet;
+import java.util.Set;
 
 public abstract class MagicStatic extends MagicDummyPermanentModifier implements MagicChangeCardDefinition {
 
@@ -94,14 +96,14 @@ public abstract class MagicStatic extends MagicDummyPermanentModifier implements
         };
     }
 
-    public static MagicStatic genABStatic(final long givenAbilityFlags) {
+    public static MagicStatic genABStatic(final Set<MagicAbility> givenAbilityFlags) {
         return new MagicStatic(MagicLayer.Ability) {
             @Override
-            public long getAbilityFlags(
+            public void modAbilityFlags(
                 final MagicPermanent source,
                 final MagicPermanent permanent,
-                final long flags) {
-                return flags | givenAbilityFlags;
+                final Set<MagicAbility> flags) {
+                flags.addAll(givenAbilityFlags);
             }
             @Override
             public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {

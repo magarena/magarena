@@ -66,6 +66,7 @@ import magic.model.trigger.MagicAtEndOfTurnTrigger;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 
 import java.util.EnumSet;
+import java.util.Set;
 import java.util.List;
 
 public enum MagicAbility {
@@ -137,14 +138,12 @@ public enum MagicAbility {
             final int n = Integer.parseInt(arg);
             card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.PlusOne,"+1/+1",n));
             card.add(MagicModularTrigger.create());
-            card.setAbilityFlags(card.getAbilityFlags() | getMask());
         }
     },
     Flanking("flanking",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
             card.add(MagicFlankingTrigger.create());
-            card.setAbilityFlags(card.getAbilityFlags() | getMask());
         }
     },
 
@@ -667,30 +666,30 @@ public enum MagicAbility {
             card.add(MagicPlayCardEvent.createX(arg));
         }
     },
-    EntersDestroy("enters destroy", 0) {
+    EntersDestroy("enters destroy", 10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             card.add(MagicWhenComesIntoPlayTrigger.create("Destroy " + arg));
         }
     },
-    ControlEnchanted("control enchanted", 0) {
+    ControlEnchanted("control enchanted", 10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
             card.add(MagicStatic.ControlEnchanted);
         }
     },
-    ReturnAtEnd("return at end", 0) {
+    ReturnAtEnd("return at end", -50) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
             card.add(MagicAtEndOfTurnTrigger.ReturnAtEnd);
         }
     },
-    ReturnToOwnersHand("return to owner's hand", 0) {
+    ReturnToOwnersHand("return to owner's hand", 10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             final MagicManaCost manaCost = MagicManaCost.create(arg);
             card.add(MagicPermanentActivation.ReturnToOwnersHand(manaCost));
         }
     },
-    SwitchPT("switch pt", 0) {
+    SwitchPT("switch pt", 10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             final MagicManaCost manaCost = MagicManaCost.create(arg);
             card.add(MagicPermanentActivation.SwitchPT(manaCost));
@@ -698,41 +697,40 @@ public enum MagicAbility {
     },
     None("",0);
     
-    public static final EnumSet<MagicAbility> CORE = EnumSet.range(AttacksEachTurnIfAble, Flanking);
+    public static final Set<MagicAbility> CORE = EnumSet.range(AttacksEachTurnIfAble, Flanking);
 
-    public static final long PROTECTION_FLAGS=
-        ProtectionFromBlack.getMask()|
-        ProtectionFromBlue.getMask()|
-        ProtectionFromGreen.getMask()|
-        ProtectionFromRed.getMask()|
-        ProtectionFromWhite.getMask()|
-        ProtectionFromMonoColored.getMask()|
-        ProtectionFromAllColors.getMask()|
-        ProtectionFromCreatures.getMask()|
-        ProtectionFromDemons.getMask()|
-        ProtectionFromDragons.getMask()|
-        ProtectionFromVampires.getMask()|
-        ProtectionFromWerewolves.getMask()|
-        ProtectionFromZombies.getMask();
+    public static final Set<MagicAbility> PROTECTION_FLAGS = EnumSet.of(
+        ProtectionFromBlack,
+        ProtectionFromBlue,
+        ProtectionFromGreen,
+        ProtectionFromRed,
+        ProtectionFromWhite,
+        ProtectionFromMonoColored,
+        ProtectionFromAllColors,
+        ProtectionFromCreatures,
+        ProtectionFromDemons,
+        ProtectionFromDragons,
+        ProtectionFromVampires,
+        ProtectionFromWerewolves,
+        ProtectionFromZombies
+    );
     
-    public static final long LANDWALK_FLAGS=
-        Forestwalk.getMask()|
-        Islandwalk.getMask()|
-        Mountainwalk.getMask()|
-        PlainsWalk.getMask()|
-        Swampwalk.getMask();
+    public static final Set<MagicAbility> LANDWALK_FLAGS = EnumSet.of(
+        Forestwalk,
+        Islandwalk,
+        Mountainwalk,
+        PlainsWalk,
+        Swampwalk
+    );
     
-    public static final long EXCLUDE_MASK = 
-        Long.MAX_VALUE-Flash.getMask()-CannotBeCountered.getMask()-TotemArmor.getMask();
+    //public static final long EXCLUDE_MASK = Long.MAX_VALUE-Flash.getMask()-CannotBeCountered.getMask()-TotemArmor.getMask();
     
     private final String name;
     private final int score;
-    private final long mask;
     
     private MagicAbility(final String aName,final int aScore) {
         name  = aName;
         score = aScore;
-        mask  = 1L<<ordinal();
     }
     
     public String getName() {
@@ -741,7 +739,6 @@ public enum MagicAbility {
 
     public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
         assert arg.isEmpty() : this + " does not accept arg = " + arg;
-        card.setAbilityFlags(card.getAbilityFlags() | getMask());
     }
     
     @Override
@@ -753,21 +750,10 @@ public enum MagicAbility {
         return score;
     }
     
-    public long getMask() {
-        assert CORE.contains(this) : this + " ability has no mask";
-        return mask;
-    }
-
-    public boolean hasAbility(final long flags) {
-        return (flags & getMask()) != 0;
-    }
-    
-    public static int getScore(final long flags) {
+    public static int getScore(final Set<MagicAbility> flags) {
         int score=0;
-        for (final MagicAbility ability : CORE) {
-            if (ability.hasAbility(flags)) {
-                score+=ability.getScore();
-            }
+        for (final MagicAbility ability : flags) {
+            score+=ability.getScore();
         }
         return score;
     }
@@ -786,11 +772,15 @@ public enum MagicAbility {
         }
     }
     
-    public static long getAbilities(final String[] names) {
-        long flags = 0;
+    public static Set<MagicAbility> getAbilities(final String[] names) {
+        Set<MagicAbility> flags = EnumSet.noneOf(MagicAbility.class);
         for (final String name : names) {
-            flags |= getAbility(name).getMask();
+            flags.add(getAbility(name));
         }
         return flags;
+    }
+
+    public static Set<MagicAbility> of(final MagicAbility first, MagicAbility... rest) {
+        return EnumSet.of(first, rest);
     }
 }

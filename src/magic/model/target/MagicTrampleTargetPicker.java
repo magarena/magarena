@@ -5,6 +5,8 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 
+import java.util.Set;
+
 public class MagicTrampleTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
     private static final MagicTrampleTargetPicker INSTANCE=new MagicTrampleTargetPicker();
@@ -17,10 +19,9 @@ public class MagicTrampleTargetPicker extends MagicTargetPicker<MagicPermanent> 
 
     @Override
     protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
-        final long flags=permanent.getAbilityFlags();
-        if (!MagicAbility.Trample.hasAbility(flags)&&
-            !MagicAbility.Defender.hasAbility(flags)&&
-            !MagicAbility.CannotAttackOrBlock.hasAbility(flags)) {
+        if (!permanent.hasAbility(MagicAbility.Trample)&&
+            !permanent.hasAbility(MagicAbility.Defender)&&
+            !permanent.hasAbility(MagicAbility.CannotAttackOrBlock)) {
             return 1+permanent.getPower();
         }
         return 0;

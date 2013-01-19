@@ -1,28 +1,26 @@
 package magic.model.target;
 
 import magic.model.MagicGame;
+import magic.model.MagicAbility;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 import magic.model.mstatic.MagicStatic;
 
+import java.util.EnumSet;
+import java.util.Set;
+
 public class MagicEquipTargetPicker extends MagicTargetPicker<MagicPermanent> {
     
-    private final long givenAbilityFlags;
-    private final MagicPowerToughness givenPT;
+    private final Set<MagicAbility> givenAbilityFlags = EnumSet.noneOf(MagicAbility.class);
+    private final MagicPowerToughness givenPT = new MagicPowerToughness(0,0);
     
     public MagicEquipTargetPicker(final MagicPermanent equipment) {
         // determine given ability and given pt of equipment from list of static abilities
-        long ability = 0;
-        final MagicPowerToughness pt = new MagicPowerToughness(0,0);
-
         for (final MagicStatic mstatic : equipment.getCardDefinition().getStatics()) {
-            ability = mstatic.getAbilityFlags(equipment, MagicPermanent.NONE, ability);
-            mstatic.modPowerToughness(equipment, MagicPermanent.NONE, pt);
+            mstatic.modAbilityFlags(equipment, MagicPermanent.NONE, givenAbilityFlags);
+            mstatic.modPowerToughness(equipment, MagicPermanent.NONE, givenPT);
         }
-
-        givenAbilityFlags = ability;
-        givenPT = pt;
     }
     
     @Override
@@ -30,8 +28,9 @@ public class MagicEquipTargetPicker extends MagicTargetPicker<MagicPermanent> {
         // penalty when already equipped
         int penalty = permanent.isEquipped() ? 3 : 0;
         
-        // penalty when there is an overlap between abilities.
-        if ((permanent.getAbilityFlags() & givenAbilityFlags) != 0) {
+        // penalty when there is an overlap between abilities
+        givenAbilityFlags.retainAll(permanent.getAbilityFlags());
+        if (!givenAbilityFlags.isEmpty()) {
             penalty+=6;
         }
         

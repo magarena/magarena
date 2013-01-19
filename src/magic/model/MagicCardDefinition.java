@@ -30,6 +30,7 @@ import javax.swing.ImageIcon;
 import java.awt.Color;
 import java.util.Collection;
 import java.util.List;
+import java.util.Set;
 import java.util.LinkedList;
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -48,9 +49,9 @@ public class MagicCardDefinition {
             addType(MagicType.Creature);
             setCost(MagicManaCost.EIGHT);
             setPowerToughness(1,1);
-            setAbility(MagicAbility.Defender);
-            setAbility(MagicAbility.CannotBeCountered);
-            setAbility(MagicAbility.Shroud);
+            addAbility(MagicAbility.Defender);
+            addAbility(MagicAbility.CannotBeCountered);
+            addAbility(MagicAbility.Shroud);
             setTiming(MagicTiming.Main);
         }
     };
@@ -80,13 +81,13 @@ public class MagicCardDefinition {
     private boolean token;
     private int typeFlags;
     private EnumSet<MagicSubType> subTypeFlags = EnumSet.noneOf(MagicSubType.class);
+    private EnumSet<MagicAbility> abilityFlags = EnumSet.noneOf(MagicAbility.class);
     private int colorFlags;
     private MagicManaCost cost=MagicManaCost.ZERO;
     private String manaSourceText="";
     private final int[] manaSource=new int[MagicColor.NR_COLORS];
     private int power;
     private int toughness;
-    private long abilityFlags;
     private String text = "";
     private MagicStaticType staticType=MagicStaticType.None;
     private MagicTiming timing=MagicTiming.None;
@@ -379,12 +380,12 @@ public class MagicCardDefinition {
         }
     }
 
-    EnumSet<MagicSubType> genCardSubTypeFlags() {
+    EnumSet<MagicSubType> genSubTypeFlags() {
         return subTypeFlags.clone();
     }
     
     EnumSet<MagicSubType> getSubTypeFlags() {
-        final EnumSet<MagicSubType> subTypes = genCardSubTypeFlags();
+        final EnumSet<MagicSubType> subTypes = genSubTypeFlags();
         applyCDASubType(null, null, subTypes);
         return subTypes;
     }
@@ -543,7 +544,7 @@ public class MagicCardDefinition {
         return toughness;
     }
 
-    public MagicPowerToughness genCardPowerToughness() {
+    public MagicPowerToughness genPowerToughness() {
         return new MagicPowerToughness(power, toughness);
     }
         
@@ -557,24 +558,21 @@ public class MagicCardDefinition {
         }
     }
     
-    public void setAbility(final MagicAbility ability) {
-        setAbility(ability, "");
+    public void addAbility(final MagicAbility ability) {
+        addAbility(ability, "");
     }
     
-    public void setAbility(final MagicAbility ability, final String arg) {
+    public void addAbility(final MagicAbility ability, final String arg) {
         ability.addAbilityImpl(this, arg);
+        abilityFlags.add(ability);
     }
 
-    void setAbilityFlags(final long flags) {
-        abilityFlags = flags;
-    }
-
-    public long getAbilityFlags() {
-        return abilityFlags;
+    public Set<MagicAbility> genAbilityFlags() {
+        return abilityFlags.clone();
     }
     
     public boolean hasAbility(final MagicAbility ability) {
-        return ability.hasAbility(abilityFlags);
+        return abilityFlags.contains(ability);
     }
     
     public void setText(final String text) {

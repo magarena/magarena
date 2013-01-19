@@ -5,6 +5,8 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 
+import java.util.Set;
+
 public class MagicDeathtouchTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
     private static final MagicDeathtouchTargetPicker INSTANCE = new MagicDeathtouchTargetPicker();
@@ -19,12 +21,11 @@ public class MagicDeathtouchTargetPicker extends MagicTargetPicker<MagicPermanen
 
     @Override
     protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
-        final long flags = permanent.getAbilityFlags();
         int score = 0;
 
         // no score for ability overlap or not being able to deal combat damage
-        if (MagicAbility.Deathtouch.hasAbility(flags) ||
-            MagicAbility.CannotAttackOrBlock.hasAbility(flags)) {
+        if (permanent.hasAbility(MagicAbility.Deathtouch) ||
+            permanent.hasAbility(MagicAbility.CannotAttackOrBlock)) {
             return 0;
         }
             
@@ -39,8 +40,8 @@ public class MagicDeathtouchTargetPicker extends MagicTargetPicker<MagicPermanen
             score = CAN_TAP;
         } 
 
-        if (MagicAbility.FirstStrike.hasAbility(flags) ||
-            MagicAbility.DoubleStrike.hasAbility(flags)) {
+        if (permanent.hasAbility(MagicAbility.FirstStrike) ||
+            permanent.hasAbility(MagicAbility.DoubleStrike)) {
             // higher chance to deal combat damage
             score += FIRST_STRIKE;
         }

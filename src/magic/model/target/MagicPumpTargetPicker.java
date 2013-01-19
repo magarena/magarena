@@ -6,6 +6,8 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 
+import java.util.Set;
+
 public class MagicPumpTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
     private static final MagicPumpTargetPicker INSTANCE=new MagicPumpTargetPicker();
@@ -28,13 +30,12 @@ public class MagicPumpTargetPicker extends MagicTargetPicker<MagicPermanent> {
     @Override
     protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
         final MagicPowerToughness pt=permanent.getPowerToughness();
-        final long flags=permanent.getAbilityFlags();
         int score=0;
 
         // First level.
         if (permanent.isAttacking()) {
             if (permanent.isBlocked()) {
-                if (MagicAbility.Trample.hasAbility(flags)) {
+                if (permanent.hasAbility(MagicAbility.Trample)) {
                     score=ATTACKING_TRAMPLE;
                 } else {
                     score=ATTACKING;
@@ -49,9 +50,9 @@ public class MagicPumpTargetPicker extends MagicTargetPicker<MagicPermanent> {
         } 
 
         // Second level.
-        if (MagicAbility.DoubleStrike.hasAbility(flags)) {
+        if (permanent.hasAbility(MagicAbility.DoubleStrike)) {
             score+=DOUBLE_STRIKE;
-        } else if (MagicAbility.LifeLink.hasAbility(flags)) {
+        } else if (permanent.hasAbility(MagicAbility.LifeLink)) {
             score+=LIFELINK;
         }
 

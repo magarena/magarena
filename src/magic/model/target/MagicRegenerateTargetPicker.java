@@ -5,6 +5,8 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 
+import java.util.Set;
+
 public class MagicRegenerateTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
     private static final MagicRegenerateTargetPicker INSTANCE = new MagicRegenerateTargetPicker();
@@ -14,8 +16,8 @@ public class MagicRegenerateTargetPicker extends MagicTargetPicker<MagicPermanen
     @Override
     protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
         if (permanent.canRegenerate()) {
-            final long flags=permanent.getAbilityFlags();
-            if (MagicAbility.Persist.hasAbility(flags)||MagicAbility.Indestructible.hasAbility(flags)) {
+            if (permanent.hasAbility(MagicAbility.Persist) ||
+                permanent.hasAbility(MagicAbility.Indestructible)) {
                 return permanent.getDamage()+1;
             }
             return permanent.getScore();

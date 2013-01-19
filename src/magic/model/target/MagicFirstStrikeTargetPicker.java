@@ -5,6 +5,8 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 
+import java.util.Set;
+
 public class MagicFirstStrikeTargetPicker extends MagicTargetPicker<MagicPermanent> {
     
     private static final MagicFirstStrikeTargetPicker INSTANCE=new MagicFirstStrikeTargetPicker();
@@ -20,8 +22,8 @@ public class MagicFirstStrikeTargetPicker extends MagicTargetPicker<MagicPermane
         if (permanent.getController()!=player) {
             return -50-permanent.getPower();
         }
-        final long flags=permanent.getAbilityFlags();
-        if (MagicAbility.FirstStrike.hasAbility(flags)||MagicAbility.DoubleStrike.hasAbility(flags)) {
+        if (permanent.hasAbility(MagicAbility.FirstStrike) ||
+            permanent.hasAbility(MagicAbility.DoubleStrike)) {
             return 0;
         }
         final int power=permanent.getPower();

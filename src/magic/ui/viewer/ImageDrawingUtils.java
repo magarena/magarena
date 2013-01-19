@@ -16,6 +16,7 @@ import java.awt.Graphics;
 import java.awt.image.ImageObserver;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 public class ImageDrawingUtils {
     public static void drawCostInfo(
@@ -66,25 +67,25 @@ public class ImageDrawingUtils {
     public static int drawAbilityInfo(
             final Graphics g,
             final ImageObserver observer,
-            final long abilityFlags,
+            final Set<MagicAbility> abilityFlags,
             int ax,
             final int ay) {
-        if (MagicAbility.Flying.hasAbility(abilityFlags)) {                
+        if (abilityFlags.contains(MagicAbility.Flying)) {                
             g.drawImage(IconImages.FLYING.getImage(),ax,ay,observer);
             ax+=16;
         }
-        if (MagicAbility.FirstStrike.hasAbility(abilityFlags)||
-            MagicAbility.DoubleStrike.hasAbility(abilityFlags)) {                
+        if (abilityFlags.contains(MagicAbility.FirstStrike)||
+            abilityFlags.contains(MagicAbility.DoubleStrike)) {                
             g.drawImage(IconImages.STRIKE.getImage(),ax,ay,observer);
             ax+=16;
         }
-        if (MagicAbility.Trample.hasAbility(abilityFlags)) {
+        if (abilityFlags.contains(MagicAbility.Trample)) {
             g.drawImage(IconImages.TRAMPLE.getImage(),ax,ay,observer);
             ax+=16;                
         }
-        if (MagicAbility.Deathtouch.hasAbility(abilityFlags)||
-            MagicAbility.Wither.hasAbility(abilityFlags)||
-            MagicAbility.Infect.hasAbility(abilityFlags)) {
+        if (abilityFlags.contains(MagicAbility.Deathtouch)||
+            abilityFlags.contains(MagicAbility.Wither)||
+            abilityFlags.contains(MagicAbility.Infect)) {
             g.drawImage(IconImages.DEATHTOUCH.getImage(),ax,ay,observer);
             ax+=16;                                
         }

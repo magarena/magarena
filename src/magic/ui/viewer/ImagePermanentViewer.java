@@ -4,6 +4,7 @@ import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
 import magic.data.HighQualityCardImagesProvider;
 import magic.data.IconImages;
+import magic.model.MagicAbility;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
@@ -26,6 +27,7 @@ import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Set;
 
 public class ImagePermanentViewer extends JPanel {
 
@@ -212,7 +214,7 @@ public class ImagePermanentViewer extends JPanel {
                     g.drawImage(IconImages.CANNOTTAP.getImage(),ax,ay,this);
                     ax+=16;
                 }
-                final long abilityFlags=linkedInfo.abilityFlags;
+                final Set<MagicAbility> abilityFlags=linkedInfo.abilityFlags;
                 ax=ImageDrawingUtils.drawAbilityInfo(g,this, abilityFlags,ax,ay);
             }
             // Mana symbols

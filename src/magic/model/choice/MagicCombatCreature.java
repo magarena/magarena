@@ -21,7 +21,7 @@ public class MagicCombatCreature {
     public final boolean normalDamage;
     public MagicCombatCreature[] candidateBlockers = new MagicCombatCreature[0];
     int attackerScore;
-    private final long flags;
+    private final Set<MagicAbility> flags;
     
     MagicCombatCreature(final MagicGame game,final MagicPermanent permanent) {
         this.permanent = permanent;
@@ -29,13 +29,13 @@ public class MagicCombatCreature {
         final MagicPowerToughness pt = permanent.getPowerToughness();
         lethalDamage = permanent.getLethalDamage(pt.toughness());
         flags = permanent.getAbilityFlags();
-        power = MagicAbility.DoubleStrike.hasAbility(flags) ? 
+        power = flags.contains(MagicAbility.DoubleStrike) ? 
             pt.getPositivePower() * 2 : 
             pt.getPositivePower();
         normalDamage =
-            !MagicAbility.Deathtouch.hasAbility(flags) &&
-            !MagicAbility.Wither.hasAbility(flags) && 
-            !MagicAbility.Infect.hasAbility(flags);
+            !flags.contains(MagicAbility.Deathtouch) &&
+            !flags.contains(MagicAbility.Wither) && 
+            !flags.contains(MagicAbility.Infect);
     }
     
     MagicCombatCreature(final MagicGame game,final MagicCombatCreature creature) {
@@ -48,7 +48,7 @@ public class MagicCombatCreature {
     }
     
     public boolean hasAbility(final MagicAbility ability) {
-        return ability.hasAbility(flags);
+        return flags.contains(ability);
     }
     
     void setAttacker(final MagicGame game,final Set<MagicCombatCreature> blockers) {

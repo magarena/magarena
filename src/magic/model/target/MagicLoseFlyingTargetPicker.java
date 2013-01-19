@@ -5,6 +5,8 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 
+import java.util.Set;
+
 public class MagicLoseFlyingTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
     private static final MagicLoseFlyingTargetPicker INSTANCE = new MagicLoseFlyingTargetPicker();
@@ -20,12 +22,11 @@ public class MagicLoseFlyingTargetPicker extends MagicTargetPicker<MagicPermanen
             final MagicGame game,
             final MagicPlayer player,
             final MagicPermanent permanent) {
-        final long flags = permanent.getAbilityFlags();
-        if (MagicAbility.CannotAttackOrBlock.hasAbility(flags)) {
+        if (permanent.hasAbility(MagicAbility.CannotAttackOrBlock)) {
             return 0;
         }
         final int power = permanent.getPower();
-        if (MagicAbility.Flying.hasAbility(flags)) {
+        if (permanent.hasAbility(MagicAbility.Flying)) {
             return 100 + power;
         }
         

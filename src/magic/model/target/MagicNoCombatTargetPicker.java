@@ -6,6 +6,8 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 
+import java.util.Set;
+
 public class MagicNoCombatTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
     private final boolean noAttacking;
@@ -22,14 +24,13 @@ public class MagicNoCombatTargetPicker extends MagicTargetPicker<MagicPermanent>
     protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
         // For each turn.
         if (forever) {
-            final long flags=permanent.getAbilityFlags();
             final MagicPowerToughness pt=permanent.getPowerToughness();
             int score=pt.power()*2+pt.toughness();
-            if (!MagicAbility.CannotAttackOrBlock.hasAbility(flags)) {            
-                if (noAttacking&&!MagicAbility.Defender.hasAbility(flags)) {
+            if (!permanent.hasAbility(MagicAbility.CannotAttackOrBlock)) {            
+                if (noAttacking&&!permanent.hasAbility(MagicAbility.Defender)) {
                     score+=100;
                 }
-                if (noBlocking&&!MagicAbility.CannotBlock.hasAbility(flags)) {
+                if (noBlocking&&!permanent.hasAbility(MagicAbility.CannotBlock)) {
                     score+=50;
                 }
             }
