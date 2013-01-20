@@ -62,7 +62,6 @@ public class MagicPlayer implements MagicTarget {
     private final MagicCardList exile;
     private final MagicPermanentSet permanents;
     private final MagicPermanentSet manaPermanents;
-    private final MagicCardCounter cardCounter;
     private final MagicActivationMap activationMap;
     private MagicGame currGame;
     private MagicBuilderManaCost builderCost;
@@ -82,7 +81,6 @@ public class MagicPlayer implements MagicTarget {
         exile=new MagicCardList();
         permanents=new MagicPermanentSet();
         manaPermanents=new MagicPermanentSet();
-        cardCounter=new MagicCardCounter();
         activationMap=new MagicActivationMap();
         builderCost=new MagicBuilderManaCost();
         activationPriority=new MagicActivationPriority();
@@ -105,7 +103,6 @@ public class MagicPlayer implements MagicTarget {
         exile=new MagicCardList(copyMap, sourcePlayer.exile);
         permanents=new MagicPermanentSet(copyMap,sourcePlayer.permanents);
         manaPermanents=new MagicPermanentSet(copyMap,sourcePlayer.manaPermanents);
-        cardCounter=new MagicCardCounter(sourcePlayer.cardCounter);
         activationMap=new MagicActivationMap(copyMap,sourcePlayer.activationMap);
         builderCost=new MagicBuilderManaCost(sourcePlayer.builderCost);
         activationPriority=new MagicActivationPriority(sourcePlayer.activationPriority);
@@ -314,7 +311,6 @@ public class MagicPlayer implements MagicTarget {
         if (permanent.producesMana()) {
             manaPermanents.add(permanent);
         }
-        cardCounter.incrementCount(permanent.getCardDefinition());
         activationMap.addActivations(permanent);
     }
 
@@ -324,7 +320,6 @@ public class MagicPlayer implements MagicTarget {
         if (permanent.producesMana()) {
             manaPermanents.remove(permanent);
         }
-        cardCounter.decrementCount(permanent.getCardDefinition());
         activationMap.removeActivations(permanent);
     }
     
@@ -358,10 +353,6 @@ public class MagicPlayer implements MagicTarget {
             }
         }
         return count;
-    }
-    
-    private int getCount(final int cardDefinitionIndex) {
-        return cardCounter.getCount(cardDefinitionIndex);
     }
     
     public int getNrOfPermanentsWithType(final MagicType type) {
