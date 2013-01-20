@@ -58,8 +58,8 @@ public class MagicAttachEquipmentAction extends MagicAction {
             equipment.setEquippedCreature(creature);
 
             //update the timestamp of the equipment's effects
-            oldStatics = game.removeCardStatics(equipment);
-            game.addCardStatics(equipment);
+            oldStatics = game.removeStatics(equipment);
+            game.addStatics(equipment);
 
             score+=creature.getScore();
         } else {
@@ -77,7 +77,7 @@ public class MagicAttachEquipmentAction extends MagicAction {
 
         if (validCreature) {
             creature.removeEquipment(equipment);
-            game.removeCardStatics(equipment);
+            game.removeStatics(equipment);
             game.addStatics(oldStatics);
         }
 

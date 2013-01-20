@@ -18,7 +18,7 @@ public class MagicSourceManaActivation {
         activations=new MagicManaActivation[MagicManaType.NR_OF_TYPES];
         available=false;
         
-        for (final MagicManaActivation activation: permanent.getCardDefinition().getManaActivations()) {
+        for (final MagicManaActivation activation: permanent.getManaActivations()) {
             if (activation.canPlay(game,permanent)) {
                 available=true;
                 for (final MagicManaType manaType : activation.getManaTypes()) {

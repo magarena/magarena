@@ -60,7 +60,7 @@ public class MagicActivationMap extends TreeMap<MagicActivation,SortedSet<MagicS
     }
 
     public void addActivations(final MagicPermanent permanent) {
-        for (final MagicActivation activation : permanent.getCardDefinition().getActivations()) {
+        for (final MagicActivation activation : permanent.getActivations()) {
             addActivation(activation,permanent);
         }
     }
@@ -76,7 +76,7 @@ public class MagicActivationMap extends TreeMap<MagicActivation,SortedSet<MagicS
     }
     
     public void removeActivations(final MagicPermanent permanent) {
-        for (final MagicActivation activation : permanent.getCardDefinition().getActivations()) {
+        for (final MagicActivation activation : permanent.getActivations()) {
             removeActivation(activation,permanent);
         }
     }
