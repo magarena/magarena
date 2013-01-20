@@ -30,7 +30,7 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
         }
 
         game.addTriggers(permanent);
-        game.addCardStatics(permanent);
+        game.addStatics(permanent);
     
         final MagicPlayer controller = permanent.getController();
 
@@ -69,7 +69,7 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
         }
         permanent.getFirstController().removePermanent(permanent);
         game.removeTriggers(permanent);
-        game.removeCardStatics(permanent);
+        game.removeStatics(permanent);
     }
     
     void setEnchantedPermanent(final MagicPermanent aEnchantedPermanent) {

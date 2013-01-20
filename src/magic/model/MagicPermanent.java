@@ -19,6 +19,7 @@ import magic.model.event.MagicEvent;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicPermanentStatic;
 import magic.model.mstatic.MagicStatic;
+import magic.model.trigger.MagicTrigger;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 
@@ -237,6 +238,14 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     @Override
     public Collection<MagicActivation> getActivations() {
         return cardDefinition.getActivations();
+    }
+
+    public Collection<MagicStatic> getStatics() {
+        return cardDefinition.getStatics();
+    }
+    
+    public Collection<MagicTrigger<?>> getTriggers() {
+        return cardDefinition.getTriggers();
     }
 
     public boolean producesMana() {

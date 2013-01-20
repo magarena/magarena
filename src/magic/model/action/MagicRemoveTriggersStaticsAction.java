@@ -26,7 +26,7 @@ public class MagicRemoveTriggersStaticsAction extends MagicAction {
         removedTriggers = game.removeTriggers(permanent);
         
         // Static
-        removedStatics = game.removeAllStatics(permanent);
+        removedStatics = game.removeStatics(permanent);
     }
     
     @Override
