@@ -13,6 +13,7 @@ import magic.model.action.MagicSacrificeAction;
 import magic.model.action.MagicSoulbondAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicActivation;
+import magic.model.event.MagicManaActivation;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicPlayAuraEvent;
 import magic.model.event.MagicEvent;
@@ -239,6 +240,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     public Collection<MagicActivation> getActivations() {
         return cardDefinition.getActivations();
     }
+    
+    public Collection<MagicManaActivation> getManaActivations() {
+        return cardDefinition.getManaActivations();
+    }
 
     public Collection<MagicStatic> getStatics() {
         return cardDefinition.getStatics();
@@ -246,6 +251,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     
     public Collection<MagicTrigger<?>> getTriggers() {
         return cardDefinition.getTriggers();
+    }
+
+    public int getConvertedCost() {
+        return cardDefinition.getConvertedCost();
     }
 
     public boolean producesMana() {
@@ -339,21 +348,20 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
     
     private void apply(final MagicLayer layer) {
-        final MagicCardDefinition cdef = getCardDefinition();
         switch (layer) {
             case Card:
                 cachedController = firstController;
-                cachedTypeFlags = cdef.getTypeFlags();
-                cachedSubTypeFlags = cdef.genSubTypeFlags();
-                cachedColorFlags = cdef.getColorFlags();
-                cachedAbilityFlags = cdef.genAbilityFlags();
-                cachedPowerToughness = cdef.genPowerToughness();
+                cachedTypeFlags = cardDefinition.getTypeFlags();
+                cachedSubTypeFlags = cardDefinition.genSubTypeFlags();
+                cachedColorFlags = cardDefinition.getColorFlags();
+                cachedAbilityFlags = cardDefinition.genAbilityFlags();
+                cachedPowerToughness = cardDefinition.genPowerToughness();
                 break;
             case CDASubtype:
-                cdef.applyCDASubType(getGame(), getController(), cachedSubTypeFlags);
+                cardDefinition.applyCDASubType(getGame(), getController(), cachedSubTypeFlags);
                 break;
             case CDAPT:
-                cdef.applyCDAPowerToughness(getGame(), getController(), this, cachedPowerToughness);
+                cardDefinition.applyCDAPowerToughness(getGame(), getController(), this, cachedPowerToughness);
                 break;
             default:
                 break;
@@ -480,6 +488,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     
     public int getStaticScore() {
         return cardDefinition.getStaticType().getScore(this);
+    }
+    
+    public int getCardScore() {
+        return cardDefinition.getScore();
     }
     
     void setCached(final boolean aCached) {
