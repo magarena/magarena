@@ -294,7 +294,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
     MagicPermanentFilterImpl TARGET_NONBASIC_LAND=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isLand() && !target.getCardDefinition().isBasic();
+            return target.isLand() && !target.hasType(MagicType.Basic);
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType==MagicTargetType.Permanent;
@@ -878,7 +878,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     MagicPermanentFilterImpl TARGET_CREATURE_CONVERTED_3_OR_LESS=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() && 
-                   target.getCardDefinition().getCost().getConvertedCost() <= 3;
+                   target.getConvertedCost() <= 3;
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType==MagicTargetType.Permanent;
@@ -1501,7 +1501,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         @Override
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return targetFilter.accept(game,player,target) && 
-                   operator.cmp(target.getCardDefinition().getConvertedCost(), cmc) ;
+                   operator.cmp(target.getConvertedCost(), cmc) ;
         }
 
         @Override
@@ -1540,6 +1540,24 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         @Override
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return name.equals(target.getName());
+        }
+        
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType==MagicTargetType.Permanent;
+        }
+    };
+    
+    public static final class LegendaryTargetFilter extends MagicPermanentFilterImpl {
+        
+        private final String name;
+        
+        public LegendaryTargetFilter(final String name) {
+            this.name=name;
+        }
+
+        @Override
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return name.equals(target.getName()) && target.hasType(MagicType.Legendary);
         }
         
         public boolean acceptType(final MagicTargetType targetType) {
