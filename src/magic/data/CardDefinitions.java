@@ -42,13 +42,17 @@ public class CardDefinitions {
     private static final GroovyShell shell = new GroovyShell(
         new CompilerConfiguration().addCompilationCustomizers(
             new ImportCustomizer().addStarImports(
+                "java.util",
+                "magic.data",
                 "magic.model", 
-                "magic.model.mstatic",
                 "magic.model.action",
-                "magic.model.condition",
                 "magic.model.choice",
-                "magic.model.trigger",
-                "magic.model.event"
+                "magic.model.condition",
+                "magic.model.event",
+                "magic.model.mstatic",
+                "magic.model.stack",
+                "magic.model.target",
+                "magic.model.trigger"
             )
         )
     );
