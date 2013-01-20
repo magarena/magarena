@@ -87,14 +87,13 @@ public class ArtificialScoringSystem {
     }
 
     public static int getFixedPermanentScore(final MagicPermanent permanent) {
-        final MagicCardDefinition cardDefinition=permanent.getCardDefinition();
-        int score=cardDefinition.getScore();
-        if (cardDefinition.isCreature()) {
-            score+=cardDefinition.getActivations().size()*50;
-            score+=cardDefinition.getManaActivations().size()*80;            
+        int score = permanent.getCardScore();
+        if (permanent.isCreature()) {
+            score+=permanent.getActivations().size()*50;
+            score+=permanent.getManaActivations().size()*80;            
         } else {
             score+=PERMANENT_SCORE;
-            if (cardDefinition.isEquipment()) {
+            if (permanent.isEquipment()) {
                 score+=100;
             }    
         }
