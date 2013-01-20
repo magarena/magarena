@@ -4,7 +4,7 @@ new MagicWhenComesIntoPlayTrigger() {
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
         return new MagicEvent(
             permanent,
-            new MagicMayChoice(MagicTargetChoice.TARGET_LAND_YOU_CONTROL),
+            new MagicMayChoice(MagicTargetChoice.SACRIFICE_LAND),
             MagicSacrificeTargetPicker.create(),
             this,
             "You may sacrifice a land. If you don't, sacrifice SN."
