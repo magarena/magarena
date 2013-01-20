@@ -845,15 +845,15 @@ public class MagicGame {
     }
 
     public void checkLegendRule(final MagicPermanent permanent) {
-        final MagicCardDefinition cardDefinition=permanent.getCardDefinition();
-        if (cardDefinition.hasType(MagicType.Legendary) && 
-            getCount(cardDefinition.getIndex()) > 1) {
-            final String message="Put "+cardDefinition.getName()+" into its owner's graveyard (legend rule).";
-            final MagicTargetFilter<MagicPermanent> targetFilter=new MagicTargetFilter.CardTargetFilter(cardDefinition);
+        if (permanent.hasType(MagicType.Legendary)) {
+            final MagicTargetFilter<MagicPermanent> targetFilter=new MagicTargetFilter.LegendaryTargetFilter(permanent.getName());
             final Collection<MagicPermanent> targets=filterPermanents(permanent.getController(),targetFilter);
-            for (final MagicPermanent target : targets) {
-                logAppendMessage(target.getController(),message);
-                doAction(new MagicRemoveFromPlayAction(target,MagicLocationType.Graveyard));
+            if (targets.size() > 1) {
+                for (final MagicPermanent target : targets) {
+                    final String message="Put " + target.getName() + " into its owner's graveyard (legend rule).";
+                    logAppendMessage(target.getController(),message);
+                    doAction(new MagicRemoveFromPlayAction(target,MagicLocationType.Graveyard));
+                }
             }
         }
     }
