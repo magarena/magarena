@@ -30,9 +30,9 @@ public class Phyrexian_Reaper {
                     permanent.getController(),
                     plist,
                     this,
-                    plist.size() > 1 ?
-                        "Destroy blocking green creatures. They can't be regenerated." :
-                        "Destroy " + plist.get(0) + ". It can't be regenerated."
+                    plist.size() == 1 ?
+                        "Destroy " + plist.get(0) + ". It can't be regenerated." :
+                        "Destroy blocking green creatures. They can't be regenerated."
                 ):
                 MagicEvent.NONE;
         }

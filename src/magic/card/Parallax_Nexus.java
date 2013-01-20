@@ -72,9 +72,9 @@ public class Parallax_Nexus {
                 return new MagicEvent(
                     permanent,
                     this,
-                    clist.size() > 1 ?
-                        "Return exiled cards to their owner's hand" :
-                        "Return " + clist.get(0) + " to its owner's hand"
+                    clist.size() == 1 ?
+                        "Return " + clist.get(0) + " to its owner's hand" :
+                        "Return exiled cards to their owner's hand"
                 );
             }
             return MagicEvent.NONE;

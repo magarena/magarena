@@ -30,9 +30,9 @@ public class Venom {
                     permanent.getController(),
                     plist,
                     this,
-                    plist.size() > 1 ?
-                        "Destroy blocking non-Wall creatures at end of combat." :
-                        "Destroy " + plist.get(0) + " at end of combat."
+                    plist.size() == 1 ?
+                        "Destroy " + plist.get(0) + " at end of combat." :
+                        "Destroy blocking non-Wall creatures at end of combat."
                 ):
                 MagicEvent.NONE;
         }

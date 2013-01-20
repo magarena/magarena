@@ -37,9 +37,9 @@ public class Witherscale_Wurm {
                 permanent,
                 plist,
                 this,
-                plist.size() > 1 ?
-                    "Blocking creatures gain wither until end of turn." :
-                    plist.get(0) + " gains wither until end of turn."
+                plist.size() == 1 ?
+                    plist.get(0) + " gains wither until end of turn." :
+                    "Blocking creatures gain wither until end of turn."
             );
         }
         

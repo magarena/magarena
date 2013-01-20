@@ -31,9 +31,9 @@ public class Wooden_Stake {
                     permanent.getController(),
                     plist,
                     this,
-                    plist.size() > 1 ?
-                        "Destroy blocking Vampires. They can't be regenerated." :
-                        "Destroy " + plist.get(0) + ". It can't be regenerated."
+                    plist.size() == 1 ?
+                        "Destroy " + plist.get(0) + ". It can't be regenerated." :
+                        "Destroy blocking Vampires. They can't be regenerated."
                 ):
                 MagicEvent.NONE;
         }

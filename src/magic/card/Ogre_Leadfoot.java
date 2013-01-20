@@ -26,9 +26,9 @@ public class Ogre_Leadfoot {
                     permanent.getController(),
                     plist,
                     this,
-                    plist.size() > 1 ?
-                        "Destroy blocking artifact creatures." :
-                        "Destroy " + plist.get(0) + "."
+                    plist.size() == 1 ?
+                        "Destroy " + plist.get(0) + "." :
+                        "Destroy blocking artifact creatures."
                 ):
                 MagicEvent.NONE;
         }

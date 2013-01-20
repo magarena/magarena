@@ -21,9 +21,9 @@ public class Sylvan_Basilisk {
                 permanent.getController(),
                 plist,
                 this,
-                plist.size() > 1 ?
-                    "Destroy blocking creatures." :
-                    "Destroy " + plist.get(0) + "."
+                plist.size() == 1 ?
+                    "Destroy " + plist.get(0) + "." :
+                    "Destroy blocking creatures."
             );
         }
         

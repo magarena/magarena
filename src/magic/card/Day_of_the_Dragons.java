@@ -58,12 +58,13 @@ public class Day_of_the_Dragons {
                 !permanent.getExiledCards().isEmpty()) {
                 final MagicCardList clist = new MagicCardList(permanent.getExiledCards());
                 return new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        this,
-                        clist.size() > 1 ?
-                                "Sacrifice all Dragons. Return exiled cards to the battlefield." :
-                                "Sacrifice all Dragons. Return " + clist.get(0) + " to the battlefield.");
+                    permanent,
+                    permanent.getController(),
+                    this,
+                    clist.size() == 1 ?
+                        "Sacrifice all Dragons. Return " + clist.get(0) + " to the battlefield." :
+                        "Sacrifice all Dragons. Return exiled cards to the battlefield."
+                );
             }
             return MagicEvent.NONE;
         }

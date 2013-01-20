@@ -34,9 +34,9 @@ public class Talruum_Champion {
                 permanent.getController(),
                 plist,
                 this,
-                plist.size() > 1 ?
-                    "Blocking creatures lose first strike until end of turn." :
-                    plist.get(0) + " loses first strike until end of turn."
+                plist.size() == 1 ?
+                    plist.get(0) + " loses first strike until end of turn." :
+                    "Blocking creatures lose first strike until end of turn."
             );
         }
         

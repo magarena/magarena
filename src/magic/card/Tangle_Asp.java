@@ -22,9 +22,9 @@ public class Tangle_Asp {
                 permanent.getController(),
                 plist,
                 this,
-                plist.size() > 1 ?
-                    "Destroy blocking creatures at end of combat." :
-                    "Destroy " + plist.get(0) + " at end of combat."
+                plist.size() == 1 ?
+                    "Destroy " + plist.get(0) + " at end of combat." :
+                    "Destroy blocking creatures at end of combat."
             );
         }
         

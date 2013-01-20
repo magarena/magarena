@@ -21,9 +21,9 @@ public class Elven_Warhounds {
                 permanent.getController(),
                 plist,
                 this,
-                plist.size() > 1 ?
-                    "Put blocking creatures on top of their owner's library." :
-                    "Put " + plist.get(0) + " on top of its owner's library."
+                plist.size() == 1 ?
+                    "Put " + plist.get(0) + " on top of its owner's library." :
+                    "Put blocking creatures on top of their owner's library."
             );
         }
         @Override

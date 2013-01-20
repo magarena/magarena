@@ -22,9 +22,9 @@ public class Engulfing_Slagwurm {
                 permanent.getController(),
                 plist,
                 this,
-                plist.size() > 1 ?
-                    "Destroy blocking creatures. You gain life equal to those creatures toughness." :
-                    "Destroy " + plist.get(0) + ". You gain life equal to its toughness."
+                plist.size() == 1 ?
+                    "Destroy " + plist.get(0) + ". You gain life equal to its toughness." :
+                    "Destroy blocking creatures. You gain life equal to those creatures toughness."
             );
         }
         
