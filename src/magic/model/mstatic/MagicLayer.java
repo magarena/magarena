@@ -15,7 +15,7 @@ public enum MagicLayer {
     ModPT,       //7c. modify p/t
     CountersPT,  //7d. p/t changes due to counters
     SwitchPT,    //7e. switch p/t 
-    Player,      //8.  affect player, not objects
-    Game,        //9.  affect game rules, not objects
+    Player,      //8.  affect player, e.g. you have hexproof 
+    Game,        //9.  affect game rules, e.g. modify maximum hand size, creature is Indestructible  
     ;
 }

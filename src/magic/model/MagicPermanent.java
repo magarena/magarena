@@ -336,9 +336,11 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     public static void updateProperties(final MagicGame game) {
         for (final MagicLayer layer : MagicLayer.values()) {
             for (final MagicPlayer player : game.getPlayers()) {
-            for (final MagicPermanent perm : player.getPermanents()) {
-                perm.apply(layer);
-            }}
+                player.apply(layer);
+                for (final MagicPermanent perm : player.getPermanents()) {
+                    perm.apply(layer);
+                }
+            }
             for (final MagicPermanentStatic mpstatic : game.getStatics(layer)) {
                 final MagicStatic mstatic = mpstatic.getStatic();
                 final MagicPermanent source = mpstatic.getPermanent();
@@ -394,6 +396,9 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             case CountersPT:
             case SwitchPT:
                 mstatic.modPowerToughness(source, this, cachedPowerToughness);
+                break;
+            case Player:
+                mstatic.modPlayer(source, this);
                 break;
             default:
                 throw new RuntimeException("No case for " + layer + " in MagicPermanent.apply");

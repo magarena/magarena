@@ -23,4 +23,6 @@ public interface MagicPermanentModifier {
     int getTypeFlags(final MagicPermanent permanent, final int flags);
     
     int getColorFlags(final MagicPermanent permanent, final int flags);    
+    
+    void modPlayer(final MagicPermanent source, final MagicPermanent permanent);
 }

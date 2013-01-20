@@ -8,9 +8,12 @@ import magic.model.event.MagicSourceManaActivation;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.action.MagicLoseGameAction;
+import magic.model.mstatic.MagicLayer;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
+import java.util.EnumSet;
 
 public class MagicPlayer implements MagicTarget {
 
@@ -64,6 +67,7 @@ public class MagicPlayer implements MagicTarget {
     private MagicGame currGame;
     private MagicBuilderManaCost builderCost;
     private MagicActivationPriority activationPriority;
+    private Set<MagicAbility> cachedAbilityFlags;
 
     private long[] keys;
 
@@ -105,6 +109,7 @@ public class MagicPlayer implements MagicTarget {
         activationMap=new MagicActivationMap(copyMap,sourcePlayer.activationMap);
         builderCost=new MagicBuilderManaCost(sourcePlayer.builderCost);
         activationPriority=new MagicActivationPriority(sourcePlayer.activationPriority);
+        cachedAbilityFlags=sourcePlayer.cachedAbilityFlags;
     }
     
     @Override
@@ -508,14 +513,13 @@ public class MagicPlayer implements MagicTarget {
         return currGame.getOpponent(this);
     }
 
+    public void addAbility(final MagicAbility ability) {
+        cachedAbilityFlags.add(ability);
+    }
+
     @Override
     public boolean hasAbility(final MagicAbility ability) {
-        if (ability == MagicAbility.Hexproof) {
-            final int SPIRIT_OF_THE_HEARTH = CardDefinitions.getCard("Spirit of the Hearth").getIndex();
-            return getCount(SPIRIT_OF_THE_HEARTH) > 0;
-        } else {
-            return false;
-        }
+        return cachedAbilityFlags.contains(ability);
     }
     
     @Override
@@ -569,6 +573,16 @@ public class MagicPlayer implements MagicTarget {
         }
         if (getPoison() >= LOSING_POISON) {
             currGame.addDelayedAction(new MagicLoseGameAction(this,MagicLoseGameAction.POISON_REASON));
+        }
+    }
+    
+    public void apply(final MagicLayer layer) {
+        switch (layer) {
+            case Player:
+                cachedAbilityFlags = EnumSet.noneOf(MagicAbility.class);
+                break;
+            default:
+                break;
         }
     }
 }
