@@ -355,7 +355,7 @@ public class MagicPlayer implements MagicTarget {
         return count;
     }
     
-    public int getCount(final int cardDefinitionIndex) {
+    private int getCount(final int cardDefinitionIndex) {
         return cardCounter.getCount(cardDefinitionIndex);
     }
     

@@ -717,19 +717,6 @@ public class MagicGame {
         return player == turnPlayer;
     }
     
-    public int getCount(final int cardDefinitionIndex) {
-        return players[0].getCount(cardDefinitionIndex) + 
-               players[1].getCount(cardDefinitionIndex);
-    }
-    
-    public int getOtherPlayerCount(final int cardDefinitionIndex,final MagicPlayer player) {
-        if (players[0] != player) {
-            return players[0].getCount(cardDefinitionIndex);
-        } else {
-            return players[1].getCount(cardDefinitionIndex);
-        }
-    }
-    
     public int getNrOfPermanents(final MagicType type) {
         return players[0].getNrOfPermanentsWithType(type) + 
                players[1].getNrOfPermanentsWithType(type);

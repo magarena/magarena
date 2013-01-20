@@ -21,6 +21,7 @@ import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicPermanentStatic;
 import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicTrigger;
+import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 
@@ -251,6 +252,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     
     public Collection<MagicTrigger<?>> getTriggers() {
         return cardDefinition.getTriggers();
+    }
+    
+    public Collection<MagicWhenComesIntoPlayTrigger> getComeIntoPlayTriggers() {
+        return cardDefinition.getComeIntoPlayTriggers();
     }
 
     public int getConvertedCost() {
