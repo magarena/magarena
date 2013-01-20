@@ -17,7 +17,7 @@ public class MagicEquipTargetPicker extends MagicTargetPicker<MagicPermanent> {
     
     public MagicEquipTargetPicker(final MagicPermanent equipment) {
         // determine given ability and given pt of equipment from list of static abilities
-        for (final MagicStatic mstatic : equipment.getCardDefinition().getStatics()) {
+        for (final MagicStatic mstatic : equipment.getStatics()) {
             mstatic.modAbilityFlags(equipment, MagicPermanent.NONE, givenAbilityFlags);
             mstatic.modPowerToughness(equipment, MagicPermanent.NONE, givenPT);
         }

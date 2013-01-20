@@ -1510,25 +1510,6 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }        
     };
 
-    public static final class CardTargetFilter extends MagicPermanentFilterImpl {
-     
-        private final MagicCardDefinition cardDefinition;
-          
-        public CardTargetFilter(final MagicCardDefinition cardDefinition) {
-            this.cardDefinition=cardDefinition;
-        }
-         
-        @Override
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-           return target.getCardDefinition()==cardDefinition;
-        }
-        @Override
-        public boolean acceptType(final MagicTargetType targetType) {
-           return targetType==MagicTargetType.Permanent;
-        }
-    };
-
-
     public static final class NameTargetFilter extends MagicPermanentFilterImpl {
         
         private final String name;

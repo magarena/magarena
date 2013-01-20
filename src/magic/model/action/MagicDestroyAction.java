@@ -45,7 +45,7 @@ public class MagicDestroyAction extends MagicAction {
             // Totem armor
             if (destroy && permanent.isEnchanted()) {
                 for (final MagicPermanent aura : permanent.getAuraPermanents()) {
-                    if (aura.getCardDefinition().hasAbility(MagicAbility.TotemArmor)) {
+                    if (aura.hasAbility(MagicAbility.TotemArmor)) {
                         game.logAppendMessage(permanent.getController(),"Remove all damage from "+permanent.getName()+'.');
                         game.doAction(new MagicRemoveAllDamageAction(permanent));
                         toBeDestroyed.add(aura);

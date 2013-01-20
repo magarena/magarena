@@ -50,7 +50,7 @@ public class Orim_s_Thunder {
                     if (!kicked) {
                         return;
                     }
-                    final int amount = target.getCardDefinition().getConvertedCost();
+                    final int amount = target.getConvertedCost();
                     game.addEvent(new MagicEvent(
                         event.getSource(),
                         MagicTargetChoice.NEG_TARGET_CREATURE,
