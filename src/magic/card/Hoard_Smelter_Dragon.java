@@ -46,7 +46,7 @@ public class Hoard_Smelter_Dragon {
                     game.doAction(new MagicDestroyAction(permanent));
                     game.doAction(new MagicChangeTurnPTAction(
                             event.getPermanent(),
-                            permanent.getCardDefinition().getConvertedCost(),
+                            permanent.getConvertedCost(),
                             0));
                 }
             });

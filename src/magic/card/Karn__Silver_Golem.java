@@ -25,7 +25,7 @@ public class Karn__Silver_Golem {
     static final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            final int cmc = permanent.getCardDefinition().getConvertedCost();
+            final int cmc = permanent.getConvertedCost();
             pt.set(cmc,cmc);
         }
     };
@@ -39,8 +39,8 @@ public class Karn__Silver_Golem {
         @Override
         protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
             final MagicPowerToughness pt=permanent.getPowerToughness();
-            final int power = permanent.getCardDefinition().getConvertedCost();
-            final int toughness = permanent.getCardDefinition().getConvertedCost();
+            final int power = permanent.getConvertedCost();
+            final int toughness = permanent.getConvertedCost();
             final int score = (pt.power()-power)*2+(pt.toughness()-toughness);
             return permanent.getController() == player ? -score:score;
         }

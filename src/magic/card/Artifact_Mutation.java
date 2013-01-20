@@ -36,7 +36,7 @@ public class Artifact_Mutation {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicChangeStateAction(permanent,MagicPermanentState.CannotBeRegenerated,true));
                     game.doAction(new MagicDestroyAction(permanent));
-                    int amount = permanent.getCardDefinition().getConvertedCost();
+                    int amount = permanent.getConvertedCost();
                     for (;amount>0;amount--) {
                         game.doAction(new MagicPlayTokenAction(
                                 event.getPlayer(),
