@@ -19,7 +19,6 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicBecomeTargetPicker;
 
-import java.util.EnumSet;
 import java.util.Set;
 
 public class Turn_to_Frog {
@@ -37,7 +36,7 @@ public class Turn_to_Frog {
     };
     private static final MagicStatic ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         @Override
-        public void modSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
+        public void modSubTypeFlags(final MagicPermanent permanent,final Set<MagicSubType> flags) {
             flags.removeAll(MagicSubType.ALL_CREATURES);
             flags.add(MagicSubType.Frog);
         }

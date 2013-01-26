@@ -27,12 +27,12 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicRegenerateTargetPicker;
 import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
 
-import java.util.EnumSet;
+import java.util.Set;
 
 public class Lim_Dul_the_Necromancer {
     private static final MagicStatic Zombie = new MagicStatic(MagicLayer.Type) {
         @Override
-        public void modSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
+        public void modSubTypeFlags(final MagicPermanent permanent,final Set<MagicSubType> flags) {
             flags.add(MagicSubType.Zombie);
         }
    };

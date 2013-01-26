@@ -21,7 +21,6 @@ import magic.model.event.MagicTiming;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 
-import java.util.EnumSet;
 import java.util.Set;
 
 public class Creeping_Tar_Pit {
@@ -39,7 +38,7 @@ public class Creeping_Tar_Pit {
     };
     private static final MagicStatic ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         @Override
-        public void modSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
+        public void modSubTypeFlags(final MagicPermanent permanent,final Set<MagicSubType> flags) {
             flags.add(MagicSubType.Elemental);
         }
         @Override

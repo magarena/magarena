@@ -6,7 +6,6 @@ import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
 import magic.model.MagicAbility;
 
-import java.util.EnumSet;
 import java.util.Set;
 
 // Determines variable power, toughness, abilities, sub types and colors for a single creature permanent.
@@ -18,7 +17,7 @@ public interface MagicPermanentModifier {
     
     void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags);
 
-    void modSubTypeFlags(final MagicPermanent permanent, final EnumSet<MagicSubType> flags);
+    void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags);
     
     int getTypeFlags(final MagicPermanent permanent, final int flags);
     

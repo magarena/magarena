@@ -10,7 +10,6 @@ import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicWhenBlocksTrigger;
 
-import java.util.EnumSet;
 import java.util.Set;
 
 public class Ageless_Sentinels {
@@ -18,7 +17,7 @@ public class Ageless_Sentinels {
         @Override
         public void modSubTypeFlags(
                 final MagicPermanent permanent,
-                final EnumSet<MagicSubType> flags) {
+                final Set<MagicSubType> flags) {
             flags.remove(MagicSubType.Wall);
             flags.add(MagicSubType.Bird);
             flags.add(MagicSubType.Giant);

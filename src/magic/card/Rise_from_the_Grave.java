@@ -20,12 +20,12 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicGraveyardTargetPicker;
 
-import java.util.EnumSet;
+import java.util.Set;
 
 public class Rise_from_the_Grave {
     private static final MagicStatic Zombie = new MagicStatic(MagicLayer.Type) {
          @Override
-         public void modSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
+         public void modSubTypeFlags(final MagicPermanent permanent,final Set<MagicSubType> flags) {
              flags.add(MagicSubType.Zombie);
          }
     };

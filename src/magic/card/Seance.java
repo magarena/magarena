@@ -23,12 +23,12 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicGraveyardTargetPicker;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 
-import java.util.EnumSet;
+import java.util.Set;
 
 public class Seance {
     private static final MagicStatic Spirit = new MagicStatic(MagicLayer.Type) {
         @Override
-        public void modSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
+        public void modSubTypeFlags(final MagicPermanent permanent,final Set<MagicSubType> flags) {
             flags.add(MagicSubType.Spirit);
         }
     };

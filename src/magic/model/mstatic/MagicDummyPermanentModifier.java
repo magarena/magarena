@@ -6,7 +6,6 @@ import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
 import magic.model.MagicAbility;
 
-import java.util.EnumSet;
 import java.util.Set;
 
 public class MagicDummyPermanentModifier implements MagicPermanentModifier {
@@ -27,7 +26,7 @@ public class MagicDummyPermanentModifier implements MagicPermanentModifier {
     }
 
     @Override
-    public void modSubTypeFlags(final MagicPermanent permanent, final EnumSet<MagicSubType> flags) {
+    public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
         //leave subtype unchanged
     }
     

@@ -14,7 +14,6 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.trigger.MagicWhenOtherSpellIsCastTrigger;
 
-import java.util.EnumSet;
 import java.util.Set;
 
 public class Halcyon_Glaze {
@@ -32,7 +31,7 @@ public class Halcyon_Glaze {
     };
     private static final MagicStatic ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         @Override
-        public void modSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
+        public void modSubTypeFlags(final MagicPermanent permanent,final Set<MagicSubType> flags) {
             flags.add(MagicSubType.Illusion);
         }
         @Override

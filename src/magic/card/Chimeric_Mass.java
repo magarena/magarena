@@ -23,7 +23,7 @@ import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
-import java.util.EnumSet;
+import java.util.Set;
 
 public class Chimeric_Mass {
         
@@ -42,7 +42,7 @@ public class Chimeric_Mass {
         @Override
         public void modSubTypeFlags(
                 final MagicPermanent permanent,
-                final EnumSet<MagicSubType> flags) {
+                final Set<MagicSubType> flags) {
             flags.add(MagicSubType.Construct);
         }
         @Override

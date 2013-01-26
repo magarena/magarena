@@ -10,7 +10,6 @@ import magic.model.MagicSubType;
 import magic.model.MagicAbility;
 import magic.model.target.MagicTargetFilter;
 
-import java.util.EnumSet;
 import java.util.Set;
 
 public abstract class MagicStatic extends MagicDummyPermanentModifier implements MagicChangeCardDefinition {
@@ -112,12 +111,12 @@ public abstract class MagicStatic extends MagicDummyPermanentModifier implements
         };
     }
         
-    public static MagicStatic genSTStatic(final EnumSet<MagicSubType> givenSubTypeFlags) {
+    public static MagicStatic genSTStatic(final Set<MagicSubType> givenSubTypeFlags) {
         return new MagicStatic(MagicLayer.Type) {
             @Override
             public void modSubTypeFlags(
                 final MagicPermanent permanent,
-                final EnumSet<MagicSubType> flags) {
+                final Set<MagicSubType> flags) {
                 flags.addAll(givenSubTypeFlags);
             }
             @Override

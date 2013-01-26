@@ -23,7 +23,6 @@ import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
 
-import java.util.EnumSet;
 import java.util.Set;
 
 public class Glint_Hawk_Idol {
@@ -41,7 +40,7 @@ public class Glint_Hawk_Idol {
     };
     private static final MagicStatic ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         @Override
-        public void modSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
+        public void modSubTypeFlags(final MagicPermanent permanent,final Set<MagicSubType> flags) {
             flags.add(MagicSubType.Bird);
         }
         @Override

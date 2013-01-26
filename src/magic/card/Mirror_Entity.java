@@ -22,7 +22,7 @@ import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 
 import java.util.Collection;
-import java.util.EnumSet;
+import java.util.Set;
 
 public class Mirror_Entity {
     public static final MagicPermanentActivation A  = new MagicPermanentActivation( 
@@ -65,7 +65,7 @@ public class Mirror_Entity {
                 @Override
                 public void modSubTypeFlags(
                         final MagicPermanent permanent,
-                        final EnumSet<MagicSubType> flags) {
+                        final Set<MagicSubType> flags) {
                     flags.addAll(MagicSubType.ALL_CREATURES);
                 }
             };

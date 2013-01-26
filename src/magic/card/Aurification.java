@@ -17,7 +17,6 @@ import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 import magic.model.trigger.MagicWhenLeavesPlayTrigger;
 
 import java.util.Collection;
-import java.util.EnumSet;
 import java.util.Set;
 
 public class Aurification {
@@ -62,7 +61,7 @@ public class Aurification {
                 @Override
                 public void modSubTypeFlags(
                         final MagicPermanent permanent,
-                        final EnumSet<MagicSubType> flags) {
+                        final Set<MagicSubType> flags) {
                     flags.add(MagicSubType.Wall);
                 }
                 @Override

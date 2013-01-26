@@ -19,7 +19,6 @@ import magic.model.event.MagicTiming;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 
-import java.util.EnumSet;
 import java.util.Set;
 
 public class Skinshifter {
@@ -38,7 +37,7 @@ public class Skinshifter {
     };
     private static final MagicStatic ST1 = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         @Override
-        public void modSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
+        public void modSubTypeFlags(final MagicPermanent permanent,final Set<MagicSubType> flags) {
             flags.removeAll(MagicSubType.ALL_CREATURES);
             flags.add(MagicSubType.Rhino);
         }
@@ -94,7 +93,7 @@ public class Skinshifter {
     };
     private static final MagicStatic ST2 = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         @Override
-        public void modSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
+        public void modSubTypeFlags(final MagicPermanent permanent,final Set<MagicSubType> flags) {
             flags.removeAll(MagicSubType.ALL_CREATURES);
             flags.add(MagicSubType.Bird);
         }
@@ -144,7 +143,7 @@ public class Skinshifter {
     };
     private static final MagicStatic ST3 = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         @Override
-        public void modSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
+        public void modSubTypeFlags(final MagicPermanent permanent,final Set<MagicSubType> flags) {
             flags.removeAll(MagicSubType.ALL_CREATURES);
             flags.add(MagicSubType.Plant);
         }

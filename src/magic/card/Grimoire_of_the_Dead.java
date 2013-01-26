@@ -31,12 +31,12 @@ import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 
 import java.util.Collection;
-import java.util.EnumSet;
+import java.util.Set;
 
 public class Grimoire_of_the_Dead {
     private static final MagicStatic Zombie = new MagicStatic(MagicLayer.Type) {
         @Override
-        public void modSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
+        public void modSubTypeFlags(final MagicPermanent permanent,final Set<MagicSubType> flags) {
             flags.add(MagicSubType.Zombie);
         }
     };

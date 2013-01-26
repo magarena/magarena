@@ -19,7 +19,7 @@ import magic.model.event.MagicTiming;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 
-import java.util.EnumSet;
+import java.util.Set;
 
 public class Mutavault {
     private static final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
@@ -32,7 +32,7 @@ public class Mutavault {
         @Override
         public void modSubTypeFlags(
                 final MagicPermanent permanent,
-                final EnumSet<MagicSubType> flags) {
+                final Set<MagicSubType> flags) {
             flags.addAll(MagicSubType.ALL_CREATURES);
         }
         @Override

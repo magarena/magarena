@@ -24,7 +24,7 @@ import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicWhenAttacksTrigger;
 
-import java.util.EnumSet;
+import java.util.Set;
 
 public class Raging_Ravine {
                         
@@ -70,7 +70,7 @@ public class Raging_Ravine {
         @Override
         public void modSubTypeFlags(
                 final MagicPermanent permanent,
-                final EnumSet<MagicSubType> flags) {
+                final Set<MagicSubType> flags) {
             flags.add(MagicSubType.Elemental);
         }
         @Override
