@@ -57,7 +57,57 @@ Thank you for your support and have fun!
 
 Release 1.34 (January 26, 2012)
 ============
-includes contributions from ...
+includes contributions from melvin, Aunukia, and swanninger
+
+- mana symbols shown on artifacts that generate mana
+- improved automatic mana selection heuristic
+- added the following new abilities to card script
+  * enters destroy <target>.
+  * sac at end
+  * return at end
+  * die return to owner's hand
+  * control enchanted
+  * tap add charge
+  * untap <mana cost>
+  * tap prevent damage 1
+  * charge at upkeep
+  * return to owner's hand <mana cost>
+  * switch pt <mana cost>
+- added "overwrite_color" property to card script
+- added "requires_groovy_code" property to card script, card specific code
+  can be written in Groovy and put in the scripts folder to be loaded when the
+  game starts
+
+- fixed: Dryad Arbor script missing color indicator
+- fixed: Ghoulflesh did not make enchanted creature black
+- fixed: Golgari Guildgate missing subtype Gate
+- fixed: wrong URL for Regrowth's card text
+- fixed: Sabertooth Nishoba missing subtype Cat and Warrior
+- fixed: spell on stack can target itself, causes game to crash
+- fixed: Cloudheath Drake missing flying ability
+
+- added the following cards:
+Abandoned Outpost, Abrupt Decay, Adarkar Wastes, Arctic Flats,
+Battlefield Forge, Battle Squadron, Bee Sting, Befoul, Bog Wreckage,
+Bond Beetle, Boreal Shelf, Brushland, Cackling Fiend, Cadaver Imp,
+Caldera Lake, Carrion Feeder, Caves of Koilos, Colossus of Sardia,
+Crimson Kobolds, Crookshank Kobolds, Crusader of Odric, Dakkon Blackblade,
+Deadly Insect, Dreadwing, Druid of the Anima, Entangling Vines, Esperzoa,
+Explosive Impact, Fault Line, Flesh-Eater Imp, Frost Marsh, Fyndhorn Elves,
+Goblin Gardener, Hallowed Burial, Highland Weald, Ironshell Beetle,
+Ivy Elemental, Karplusan Forest, Kiku's Shadow, Kobolds of Kher Keep,
+Krakilin, Last Kiss, Lavalanche, Leaf Gilder, Llanowar Wastes, Manakin, Maro,
+Mirrodin's Core, Morphling, Orochi Sustainer, Phyrexian Ghoul, Pine Barrens,
+Psionic Blast, Ravaged Highlands, Revenant, Roaring Primadox, Salt Flats,
+Scabland, Scarland Thrinax, Scarwood Treefolk, Scythe Tiger, Seafloor Debris,
+Shifting Wall, Shivan Reef, Sinister Strength, Sisters of the Flame,
+Skyshroud Forest, Smoldering Spires, Snow-Covered Forest, Snow-Covered Island,
+Snow-Covered Mountain, Snow-Covered Plains, Snow-Covered Swamp,
+Spirit of the Night, Sulfurous Springs, Supreme Verdict, Tendo Ice Bridge,
+Timberland Ruins, Tranquility, Transguild Promenade, Turtleshell Changeling,
+Underground River, Utopia Tree, Vampiric Link, Verduran Enchantress,
+Wall of Opposition, Windreaver, Wirewood Elf, Yavimaya Coast, Zodiac Dog,
+Zodiac Goat, Zodiac Horse, Zodiac Rabbit
 
 Release 1.33 (December 30, 2012)
 ============
