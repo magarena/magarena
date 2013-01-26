@@ -29,7 +29,6 @@ import javax.swing.ImageIcon;
 
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.EnumSet;
 import java.util.Set;
 import java.util.Collections;
 
@@ -107,7 +106,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     // also acts as last known information
     private MagicPlayer cachedController;
     private int cachedTypeFlags;
-    private EnumSet<MagicSubType> cachedSubTypeFlags;
+    private Set<MagicSubType> cachedSubTypeFlags;
     private int cachedColorFlags;
     private Set<MagicAbility> cachedAbilityFlags;
     private MagicPowerToughness cachedPowerToughness;
@@ -460,7 +459,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
     
     public boolean hasSubType(final MagicSubType subType) {
-        return subType.hasSubType(cachedSubTypeFlags);
+        return cachedSubTypeFlags.contains(subType);
     }
 
     public boolean hasAllCreatureTypes() {

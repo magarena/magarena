@@ -7,12 +7,11 @@ import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 import magic.model.mstatic.MagicStatic;
 
-import java.util.EnumSet;
 import java.util.Set;
 
 public class MagicEquipTargetPicker extends MagicTargetPicker<MagicPermanent> {
     
-    private final Set<MagicAbility> givenAbilityFlags = EnumSet.noneOf(MagicAbility.class);
+    private final Set<MagicAbility> givenAbilityFlags = MagicAbility.noneOf();
     private final MagicPowerToughness givenPT = new MagicPowerToughness(0,0);
     
     public MagicEquipTargetPicker(final MagicPermanent equipment) {

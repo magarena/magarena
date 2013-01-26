@@ -783,4 +783,8 @@ public enum MagicAbility {
     public static Set<MagicAbility> of(final MagicAbility first, MagicAbility... rest) {
         return EnumSet.of(first, rest);
     }
+                
+    public static Set<MagicAbility> noneOf() {
+        return EnumSet.noneOf(MagicAbility.class);
+    }
 }

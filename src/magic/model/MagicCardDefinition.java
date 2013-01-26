@@ -373,11 +373,7 @@ public class MagicCardDefinition {
     }
     
     public void setSubTypes(final String[] subTypeNames) {
-        subTypeFlags = EnumSet.noneOf(MagicSubType.class);
-        for (final String subTypeName : subTypeNames) {
-            final MagicSubType subType=MagicSubType.getSubType(subTypeName); 
-            subTypeFlags.add(subType);
-        }
+        subTypeFlags = MagicSubType.getSubTypes(subTypeNames);
     }
 
     EnumSet<MagicSubType> genSubTypeFlags() {
@@ -393,7 +389,7 @@ public class MagicCardDefinition {
     public void applyCDASubType(
             final MagicGame game, 
             final MagicPlayer player, 
-            final EnumSet<MagicSubType> flags) {
+            final Set<MagicSubType> flags) {
         for (final MagicCDA lv : CDAs) {
             lv.getSubTypeFlags(game, player, flags);
         }
@@ -408,7 +404,7 @@ public class MagicCardDefinition {
     }
     
     public boolean hasSubType(final MagicSubType subType) {
-        return subType.hasSubType(getSubTypeFlags());        
+        return getSubTypeFlags().contains(subType);
     }
     
     public void setColors(final String colors) {
@@ -733,7 +729,7 @@ public class MagicCardDefinition {
     private boolean subTypeHasText(final String s) {
         final MagicSubType[] subTypeValues = MagicSubType.values();
         for (final MagicSubType subtype : subTypeValues) {
-            if(subtype.hasSubType(subTypeFlags) && subtype.toString().toLowerCase().contains(s)) {
+            if(subTypeFlags.contains(subtype) && subtype.toString().toLowerCase().contains(s)) {
                 return true;
             }
         }

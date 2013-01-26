@@ -8,7 +8,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
 
-import java.util.EnumSet;
+import java.util.Set;
 
 /*
 604.3a A static ability is a characteristic-defining ability if it meets
@@ -28,7 +28,7 @@ public abstract class MagicCDA implements MagicChangeCardDefinition {
         public void getSubTypeFlags(
                 final MagicGame game, 
                 final MagicPlayer player,
-                final EnumSet<MagicSubType> flags) {
+                final Set<MagicSubType> flags) {
             flags.addAll(MagicSubType.ALL_CREATURES);
         }
     };
@@ -40,7 +40,7 @@ public abstract class MagicCDA implements MagicChangeCardDefinition {
     public void getSubTypeFlags(
             final MagicGame game, 
             final MagicPlayer player,
-            final EnumSet<MagicSubType> flags) {
+            final Set<MagicSubType> flags) {
     }
     
     public void modPowerToughness(

@@ -85,10 +85,6 @@ public enum MagicSubType {
         return ALL_CREATURES.contains(this);
     }
     
-    public boolean hasSubType(final EnumSet flags) {
-        return flags.contains(this);
-    }
-    
     public static MagicSubType getSubType(final String name) {
         final String cname = name.replaceAll("[^A-Za-z0-9]", "_");
         for (final MagicSubType type : values()) {

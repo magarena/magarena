@@ -13,7 +13,6 @@ import magic.model.mstatic.MagicLayer;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
-import java.util.EnumSet;
 
 public class MagicPlayer implements MagicTarget {
 
@@ -570,7 +569,7 @@ public class MagicPlayer implements MagicTarget {
     public void apply(final MagicLayer layer) {
         switch (layer) {
             case Player:
-                cachedAbilityFlags = EnumSet.noneOf(MagicAbility.class);
+                cachedAbilityFlags = MagicAbility.noneOf();
                 break;
             default:
                 break;
