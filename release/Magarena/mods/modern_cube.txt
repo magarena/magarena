@@ -1,4 +1,5 @@
 Abbey Griffin
+Abrupt Decay
 Abuna Acolyte
 Abyssal Specter
 Academy Ruins
@@ -7,6 +8,7 @@ Accorder's Shield
 Acidic Slime
 Acid Web Spider
 Act of Treason
+Adarkar Wastes
 Admonition Angel
 Advanced Hoverguard
 Adventuring Gear
@@ -87,6 +89,7 @@ Archon of Redemption
 Archweaver
 Archwing Dragon
 Arc Runner
+Arctic Flats
 Arctic Nishoba
 Ardent Militia
 Ardent Recruit
@@ -163,6 +166,7 @@ Basilisk Collar
 Battered Golem
 Battering Sliver
 Batterskull
+Battlefield Forge
 Battlegrace Angel
 Battleground Geist
 Battlegrowth
@@ -174,6 +178,7 @@ Beacon of Unrest
 Beastbreaker of Bala Ged
 Beastmaster Ascension
 Beastmaster's Magemark
+Befoul
 Beguiler of Wills
 Behemoth Sledge
 Bellowing Tanglewurm
@@ -245,6 +250,7 @@ Bog Raiders
 Bog Tatters
 Bog Wraith
 Bojuka Brigand
+Bond Beetle
 Bonded Fetch
 Bonds of Quicksilver
 Bonebreaker Giant
@@ -257,6 +263,7 @@ Boneyard Wurm
 Bonfire of the Damned
 Boomerang
 Boreal Druid
+Boreal Shelf
 Boros Guildmage
 Boros Recruit
 Boros Swiftblade
@@ -278,6 +285,7 @@ Brink of Disaster
 Brion Stoutarm
 Brittle Effigy
 Broodmate Dragon
+Brushland
 Brushstrider
 Brute Force
 Bull Cerodon
@@ -290,6 +298,7 @@ Burst of Speed
 Butcher Ghoul
 Butcher of Malakir
 Butcher's Cleaver
+Cadaver Imp
 Cairn Wanderer
 Calciderm
 Calcite Snapper
@@ -319,6 +328,7 @@ Cathedral Sanctifier
 Caustic Crawler
 Caustic Rain
 Cavern Thoctar
+Caves of Koilos
 Celestial Colonnade
 Celestial Purge
 Cemetery Reaper
@@ -364,6 +374,7 @@ Cobalt Golem
 Cobblebrute
 Cobbled Wings
 Colossal Might
+Colossus of Sardia
 Coma Veil
 Combust
 Commander's Authority
@@ -411,6 +422,7 @@ Crossway Vampire
 Crucible of Fire
 Cruel Edict
 Crumbling Necropolis
+Crusader of Odric
 Crypt Creeper
 Crypt Ripper
 Cudgel Troll
@@ -526,6 +538,7 @@ Dread
 Dreadbore
 Dread Statuary
 Dreadwaters
+Dreadwing
 Dreg Reaver
 Drelnoch
 Drifter il-Dal
@@ -540,6 +553,7 @@ Dross Ripper
 Drowned Catacomb
 Drudge Reavers
 Drudge Skeletons
+Druid of the Anima
 Druid's Familiar
 Dryad Arbor
 Dryad's Favor
@@ -598,6 +612,7 @@ Enfeeblement
 Engulfing Slagwurm
 Enormous Baloth
 Enslave
+Entangling Vines
 Entreat the Angels
 Epic Proportions
 Erase
@@ -607,6 +622,7 @@ Escaped Null
 Esper Battlemage
 Esper Cormorants
 Esper Stormblade
+Esperzoa
 Essence Drain
 Essence Harvest
 Essence Scatter
@@ -621,6 +637,7 @@ Evernight Shade
 Executioner's Hood
 Exhaustion
 Explore
+Explosive Impact
 Exquisite Blood
 Ezuri, Renegade Leader
 Ezuri's Archers
@@ -676,6 +693,7 @@ Fledgling Griffin
 Fleeting Distraction
 Fleeting Image
 Flensermite
+Flesh-Eater Imp
 Flight
 Flight of Fancy
 Flowstone Crusher
@@ -696,6 +714,7 @@ Foxfire Oak
 Frenzied Goblin
 Frightful Delusion
 Frostburn Weird
+Frost Marsh
 Frost Ogre
 Frost Titan
 Fugitive Wizard
@@ -877,6 +896,7 @@ Hagra Diabolist
 Halcyon Glaze
 Halimar Excavator
 Halimar Wavewatch
+Hallowed Burial
 Hallowed Fountain
 Halt Order
 Hamlet Captain
@@ -914,6 +934,7 @@ Hideous End
 Hideous Visage
 Highborn Ghoul
 Highland Berserker
+Highland Weald
 Highway Robber
 Hillcomber Giant
 Hill Giant
@@ -1030,6 +1051,7 @@ Kami of the Honored Dead
 Kami of the Palace Fields
 Kami of the Tended Garden
 Kargan Dragonlord
+Karplusan Forest
 Kavu Climber
 Kavu Predator
 Kazandu Blademaster
@@ -1052,6 +1074,7 @@ Kessig Wolf
 Kessig Wolf Run
 Khalni Garden
 Kiki-Jiki, Mirror Breaker
+Kiku's Shadow
 Kiln Walker
 Kindercatch
 Kindled Fury
@@ -1100,13 +1123,16 @@ Lagac Lizard
 Lantern Kami
 Lantern Spirit
 Last Gasp
+Last Kiss
 Last Word
 Latch Seeker
 Lava Axe
 Lavaborn Muse
 Lavacore Elemental
+Lavalanche
 Leaden Fists
 Leaden Myr
+Leaf Gilder
 Leap of Faith
 Leap of Flame
 Leatherback Baloth
@@ -1135,6 +1161,7 @@ Lingering Tormentor
 Lionheart Maverick
 Livewire Lash
 Llanowar Elves
+Llanowar Wastes
 Loamdragger Giant
 Loam Lion
 Loch Korrigan
@@ -1191,6 +1218,7 @@ Mark of the Oni
 Mark of the Vampire
 Markov Blademaster
 Markov Patrician
+Maro
 Marrow Chomper
 Marsh Casualties
 Marsh Threader
@@ -1241,6 +1269,7 @@ Mire Boa
 Mirran Crusader
 Mirri, Cat Warrior
 Mirri the Cursed
+Mirrodin's Core
 Mirror Entity
 Mirrorworks
 Mistbind Clique
@@ -1384,6 +1413,7 @@ Orchard Spirit
 Orcish Artillery
 Order of the Sacred Bell
 Ornithopter
+Orochi Sustainer
 Oros, the Avenger
 Otherworld Atlas
 Outrider of Jhess
@@ -1461,6 +1491,7 @@ Promised Kannushi
 Promise of Bunrei
 Proper Burial
 Protective Bubble
+Psionic Blast
 Psychic Barrier
 Pulse of the Fields
 Pulse of the Forge
@@ -1566,6 +1597,7 @@ Rites of Flourishing
 River Bear
 River Boa
 River Kaijin
+Roaring Primadox
 Robe of Mirrors
 Roc Egg
 Rock Badger
@@ -1621,6 +1653,8 @@ Scab-Clan Mauler
 Scalding Devil
 Scaled Wurm
 Scar
+Scarland Thrinax
+Scarwood Treefolk
 Scathe Zombies
 Scattershot Archer
 Scavenger Drake
@@ -1644,6 +1678,7 @@ Scute Mob
 Scuttling Death
 Scuzzback Marauders
 Scuzzback Scrapper
+Scythe Tiger
 Seachrome Coast
 Sea Eagle
 Sea Gate Loremaster
@@ -1692,6 +1727,7 @@ Shield of the Righteous
 Shivan Dragon
 Shivan Hellkite
 Shivan Oasis
+Shivan Reef
 Shock
 Shore Snapper
 Shriekgeist
@@ -1769,11 +1805,17 @@ Smelt
 Smite
 Smite the Monstrous
 Smoldering Butcher
+Smoldering Spires
 Smother
 Snake Umbra
 Snapping Creeper
 Snapping Drake
 Snapsail Glider
+Snow-Covered Forest
+Snow-Covered Island
+Snow-Covered Mountain
+Snow-Covered Plains
+Snow-Covered Swamp
 Sokenzan Bruiser
 Sokenzan Spellblade
 Solemn Offering
@@ -1880,6 +1922,7 @@ Subterranean Shambler
 Sudden Disappearance
 Sudden Impact
 Sulfur Falls
+Sulfurous Springs
 Sunblast Angel
 Sunder from Within
 Sunhome, Fortress of the Legion
@@ -1890,6 +1933,7 @@ Sunspring Expedition
 Suntail Hawk
 Sun Titan
 Supreme Exemplar
+Supreme Verdict
 Suq'Ata Lancer
 Surgespanner
 Surrakar Marauder
@@ -1936,6 +1980,7 @@ Tempest of Light
 Temple Garden
 Temporal Isolation
 Temporal Mastery
+Tendo Ice Bridge
 Teneb, the Harvester
 Tenement Crasher
 Terminate
@@ -1999,6 +2044,7 @@ Trained Caracal
 Train of Thought
 Traitorous Blood
 Transcendent Master
+Transguild Promenade
 Trapjaw Kelpie
 Treasure Hunter
 Tree Monkey
@@ -2030,6 +2076,7 @@ Turn the Tide
 Turntimber Ranger
 Turn to Frog
 Turn to Mist
+Turtleshell Changeling
 Twilight Drover
 Twinblade Slasher
 Twincast
@@ -2043,6 +2090,7 @@ Unbreathing Horde
 Uncanny Speed
 Undead Executioner
 Undercity Shade
+Underground River
 Underworld Dreams
 Undying Rage
 Unhallowed Pact
@@ -2057,6 +2105,7 @@ Urborg Volcano
 Urgent Exorcism
 Ursapine
 Uthden Troll
+Utopia Tree
 Utvara Scalper
 Vacuumelt
 Valeron Outlander
@@ -2067,6 +2116,7 @@ Vampire Interloper
 Vampire Nighthawk
 Vampire Outcasts
 Vampiric Fury
+Vampiric Link
 Vampiric Spirit
 Vanishment
 Vapor Snag
@@ -2087,6 +2137,7 @@ Vengeful Vampire
 Venser, Shaper Savant
 Venser's Sliver
 Verdant Force
+Verduran Enchantress
 Vessel of Endless Rest
 Veteran Armorer
 Veteran Armorsmith
@@ -2190,6 +2241,7 @@ Will-o'-the-Wisp
 Wilt-Leaf Cavaliers
 Windbrisk Raptor
 Wind Drake
+Windreaver
 Windrider Eel
 Wingcrafter
 Winged Coatl
@@ -2223,6 +2275,7 @@ Wrexial, the Risen Deep
 Wring Flesh
 Wurmcoil Engine
 Wurm's Tooth
+Yavimaya Coast
 Yavimaya Enchantress
 Yavimaya Wurm
 Yew Spirit

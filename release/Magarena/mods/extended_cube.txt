@@ -1,4 +1,5 @@
 Abbey Griffin
+Abrupt Decay
 Abuna Acolyte
 Accorder Paladin
 Accorder's Shield
@@ -137,6 +138,7 @@ Boar Umbra
 Bog Raiders
 Bog Tatters
 Bojuka Brigand
+Bond Beetle
 Bonds of Quicksilver
 Bonebreaker Giant
 Bonehoard
@@ -147,6 +149,7 @@ Bountiful Harvest
 Brain Weevil
 Bramblecrush
 Break of Day
+Breeding Pool
 Briarpack Alpha
 Brimstone Mage
 Brimstone Volley
@@ -160,6 +163,7 @@ Burst Lightning
 Butcher Ghoul
 Butcher of Malakir
 Butcher's Cleaver
+Cadaver Imp
 Calcite Snapper
 Call to Serve
 Call to the Grave
@@ -195,6 +199,7 @@ Chasm Drake
 Child of Night
 Chimeric Mass
 Chrome Steed
+Cinder Elemental
 Circle of Flame
 Claustrophobia
 Cliff Threader
@@ -231,6 +236,7 @@ Crimson Mage
 Crippling Blight
 Crippling Chill
 Crossway Vampire
+Crusader of Odric
 Crypt Creeper
 Crypt Ripper
 Cudgel Troll
@@ -347,6 +353,7 @@ Etched Champion
 Evernight Shade
 Executioner's Hood
 Explore
+Explosive Impact
 Exquisite Blood
 Ezuri, Renegade Leader
 Ezuri's Archers
@@ -381,6 +388,7 @@ Flayer Husk
 Fledgling Griffin
 Fleeting Distraction
 Flensermite
+Flesh-Eater Imp
 Flight
 Fog
 Forest
@@ -444,6 +452,7 @@ Goblin Shortcutter
 Goblin Tunneler
 Goblin Wardriver
 Goblin War Paint
+Godless Shrine
 Go for the Throat
 Goldenglow Moth
 Golden Urn
@@ -613,6 +622,7 @@ Kruin Striker
 Kuldotha Ringleader
 Lagac Lizard
 Lantern Spirit
+Last Kiss
 Latch Seeker
 Lava Axe
 Leaden Myr
@@ -850,6 +860,7 @@ Risen Sanctuary
 Rite of Replication
 Rites of Flourishing
 River Boa
+Roaring Primadox
 Roc Egg
 Roil Elemental
 Rootbound Crag
@@ -867,6 +878,7 @@ Russet Wolves
 Rusted Sentinel
 Ruthless Cullblade
 Saberclaw Golem
+Sacred Foundry
 Sacred Wolf
 Safe Passage
 Sanctuary Cat
@@ -884,6 +896,7 @@ Scroll of Avacyn
 Scroll of Griselbrand
 Scroll Thief
 Scute Mob
+Scythe Tiger
 Seachrome Coast
 Sea Gate Loremaster
 Searchlight Geist
@@ -935,6 +948,7 @@ Skirsdag Cultist
 Skirsdag Flayer
 Skithiryx, the Blight Dragon
 Skitter of Lizards
+Skyknight Legionnaire
 Skyline Predator
 Sky Ruin Drake
 Skywatcher Adept
@@ -947,6 +961,7 @@ Smallpox
 Smelt
 Smite
 Smite the Monstrous
+Smoldering Spires
 Smother
 Snake Umbra
 Snapping Creeper
@@ -991,6 +1006,7 @@ Stingerfling Spider
 Stirring Wildwood
 Stitcher's Apprentice
 Stomper Cub
+Stomping Ground
 Stonefare Crocodile
 Stone Golem
 Stonework Puma
@@ -1013,6 +1029,7 @@ Sunspear Shikari
 Sunspire Griffin
 Sunspring Expedition
 Sun Titan
+Supreme Verdict
 Surrakar Marauder
 Suture Priest
 Swamp
@@ -1059,6 +1076,7 @@ Tragic Slip
 Trained Caracal
 Traitorous Blood
 Transcendent Master
+Transguild Promenade
 Tree of Redemption
 Trestle Troll
 Tribute to Hunger
@@ -1141,6 +1159,7 @@ Warpath Ghoul
 Warstorm Surge
 Watercourser
 Water Servant
+Watery Grave
 Welkin Tern
 Whispersilk Cloak
 White Knight

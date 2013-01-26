@@ -1,5 +1,7 @@
 Abbey Griffin
+Abrupt Decay
 Acidic Slime
+Act of Treason
 Aggravate
 Ajani's Sunstriker
 Akroma's Memorial
@@ -22,6 +24,7 @@ Archwing Dragon
 Armada Wurm
 Armored Skaab
 Ashmouth Hound
+Assault Griffin
 Attended Knight
 Avacyn, Angel of Hope
 Avacynian Priest
@@ -46,6 +49,7 @@ Blood Crypt
 Bloodflow Connoisseur
 Bloodgift Demon
 Bloodthrone Vampire
+Bond Beetle
 Bone to Ash
 Boneyard Wurm
 Bonfire of the Damned
@@ -53,6 +57,7 @@ Bountiful Harvest
 Brain Weevil
 Bramblecrush
 Break of Day
+Breeding Pool
 Briarpack Alpha
 Brimstone Volley
 Brushstrider
@@ -74,6 +79,7 @@ Champion of the Parish
 Chant of the Skifsang
 Chapel Geist
 Charmbreaker Devils
+Cinder Elemental
 Claustrophobia
 Clifftop Retreat
 Clinging Mists
@@ -88,6 +94,7 @@ Craterize
 Crippling Blight
 Crippling Chill
 Crossway Vampire
+Crusader of Odric
 Crypt Creeper
 Curiosity
 Cursebreak
@@ -147,6 +154,7 @@ Essence Harvest
 Essence Scatter
 Evernight Shade
 Executioner's Hood
+Explosive Impact
 Exquisite Blood
 Faerie Invaders
 Falkenrath Aristocrat
@@ -196,6 +204,7 @@ Gloom Surgeon
 Gloomwidow
 Glorious Charge
 Goblin Arsonist
+Godless Shrine
 Goldnight Commander
 Goldnight Redeemer
 Golgari Guildgate
@@ -366,6 +375,7 @@ Riot Devils
 Riot Ringleader
 Rise from the Grave
 Risen Sanctuary
+Roaring Primadox
 Rootbound Crag
 Rotcrown Ghoul
 Rotting Fensnake
@@ -374,6 +384,7 @@ Rummaging Goblin
 Runewing
 Rush of Blood
 Russet Wolves
+Sacred Foundry
 Safe Passage
 Sanctuary Cat
 Scalding Devil
@@ -408,11 +419,13 @@ Silver-Inlaid Dagger
 Skillful Lunge
 Skirsdag Cultist
 Skirsdag Flayer
+Skyknight Legionnaire
 Skyline Predator
 Slayer of the Wicked
 Slayers' Stronghold
 Sleep
 Smelt
+Smite
 Smite the Monstrous
 Somberwald Dryad
 Somberwald Spider
@@ -431,6 +444,7 @@ Stealer of Secrets
 Steam Vents
 Stensia Bloodhall
 Stitcher's Apprentice
+Stomping Ground
 Stonefare Crocodile
 Stormbound Geist
 Strangleroot Geist
@@ -443,6 +457,7 @@ Sudden Disappearance
 Sulfur Falls
 Sunpetal Grove
 Sunspire Griffin
+Supreme Verdict
 Swamp
 Temple Garden
 Temporal Mastery
@@ -465,6 +480,7 @@ Towering Indrik
 Tragic Slip
 Trained Caracal
 Traitorous Blood
+Transguild Promenade
 Tree of Redemption
 Trestle Troll
 Tribute to Hunger
@@ -506,6 +522,7 @@ Walking Corpse
 Wall of Fire
 Warclamp Mastiff
 Watercourser
+Watery Grave
 Welkin Tern
 Wild Defiance
 Wildwood Geist
