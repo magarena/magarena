@@ -55,7 +55,7 @@ Thank you for your support and have fun!
 
 
 
-Release 1.34 (January 26, 2012)
+Release 1.34 (January 26, 2013)
 ============
 includes contributions from melvin, Aunukia, and swanninger
 
