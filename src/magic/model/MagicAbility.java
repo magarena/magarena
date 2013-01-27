@@ -64,6 +64,7 @@ import magic.model.trigger.MagicSacrificeAtEnd;
 import magic.model.trigger.MagicWhenDiesTrigger;
 import magic.model.trigger.MagicAtEndOfTurnTrigger;
 import magic.model.trigger.MagicAtUpkeepTrigger;
+import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
 
 import java.util.EnumSet;
 import java.util.Set;
@@ -693,6 +694,12 @@ public enum MagicAbility {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             final MagicManaCost manaCost = MagicManaCost.create(arg);
             card.add(MagicPermanentActivation.SwitchPT(manaCost));
+        }
+    },
+    Evolve("evolve", 20) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+            card.add(MagicWhenOtherComesIntoPlayTrigger.Evolve);
         }
     },
     None("",0);
