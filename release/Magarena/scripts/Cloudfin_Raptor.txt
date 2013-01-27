@@ -1,0 +1,11 @@
+name=Cloudfin Raptor
+url=http://magiccards.info/gtc/en/32.html
+image=http://magiccards.info/scans/en/gtc/32.jpg
+value=3.744
+rarity=C
+type=Creature
+subtype=Bird,Mutant
+cost={U}
+pt=0/1
+ability=flying,evolve
+timing=main

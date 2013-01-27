@@ -1,0 +1,11 @@
+name=Shambleshark
+url=http://magiccards.info/gtc/en/193.html
+image=http://magiccards.info/scans/en/gtc/193.jpg
+value=3.744
+rarity=C
+type=Creature
+subtype=Fish,Crab
+cost={G}{U}
+pt=2/1
+ability=flash,evolve
+timing=flash
