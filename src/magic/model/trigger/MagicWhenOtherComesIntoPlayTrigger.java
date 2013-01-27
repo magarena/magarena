@@ -20,7 +20,6 @@ public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<Ma
     public static final MagicWhenOtherComesIntoPlayTrigger Evolve = new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            final int power = otherPermanent.getPower();
             return (permanent != otherPermanent &&
                     otherPermanent.isCreature() &&
                     permanent.isCreature() &&
