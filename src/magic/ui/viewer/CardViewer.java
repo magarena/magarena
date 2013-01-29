@@ -4,7 +4,6 @@ import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
 import magic.data.HighQualityCardImagesProvider;
 import magic.model.MagicCardDefinition;
-import magic.ui.DelayedViewer;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
@@ -13,13 +12,16 @@ import magic.ui.widget.TransparentImagePanel;
 
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
+import javax.swing.Timer;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 import java.awt.BorderLayout;
 import java.awt.image.BufferedImage;
 
 /**
  * Class responsible for showing the card pic popup
  */
-public class CardViewer extends JPanel implements DelayedViewer {
+public class CardViewer extends JPanel {
 
     private static final long serialVersionUID = 1L;
 
@@ -28,6 +30,7 @@ public class CardViewer extends JPanel implements DelayedViewer {
     private int currentIndex;
     private final boolean image;
     private final boolean opaque;
+    private final Timer timer;
     
     public CardViewer(final String title,final boolean image,final boolean opaque) {
         this.image=image;
@@ -47,6 +50,13 @@ public class CardViewer extends JPanel implements DelayedViewer {
         add(cardPanel,BorderLayout.CENTER);
         
         setCard(MagicCardDefinition.UNKNOWN,0);
+
+        timer = new Timer(0, new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                setVisible(true);
+            }
+        });
+        timer.setRepeats(false);
     }
         
     public void setCard(final MagicCardDefinition cardDefinition,final int index) {
@@ -82,17 +92,13 @@ public class CardViewer extends JPanel implements DelayedViewer {
         }
     }
 
-    @Override
-    public void showDelayed() {
-        SwingUtilities.invokeLater(new Runnable() {
-            public void run() {
-                setVisible(true);
-            }
-        });
+    public void showDelayed(final int delay) {
+        timer.setInitialDelay(delay);
+        timer.restart();
     }
     
-    @Override
     public void hideDelayed() {
+        timer.stop();
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 setVisible(false);

@@ -249,7 +249,7 @@ public class GameController {
         }
         imageCardViewer.setCard(cardDefinition,index);
         imageCardViewer.setLocation(x,y);
-        DelayedViewersThread.getInstance().showViewer(imageCardViewer,GeneralConfig.getInstance().getPopupDelay());
+        imageCardViewer.showDelayed(GeneralConfig.getInstance().getPopupDelay());
     }
     
     public void viewInfoRight(final MagicCardDefinition cardDefinition,final int index,final Rectangle rect) {
@@ -267,11 +267,11 @@ public class GameController {
         }
         imageCardViewer.setCard(cardDefinition,index);
         imageCardViewer.setLocation(x,y);
-        DelayedViewersThread.getInstance().showViewer(imageCardViewer,GeneralConfig.getInstance().getPopupDelay());
+        imageCardViewer.showDelayed(GeneralConfig.getInstance().getPopupDelay());
     }
     
     public void hideInfo() {
-        DelayedViewersThread.getInstance().hideViewer(imageCardViewer);
+        imageCardViewer.hideDelayed();
     }
 
     public void setSourceCardDefinition(final MagicSource source) {

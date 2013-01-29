@@ -2,16 +2,17 @@ package magic.ui.viewer;
 
 import magic.MagicMain;
 import magic.model.MagicRandom;
-import magic.ui.DelayedViewer;
-import magic.ui.DelayedViewersThread;
 import magic.ui.theme.ThemeFactory;
 
 import javax.swing.JPanel;
+import javax.swing.Timer;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.ArrayList;
@@ -21,7 +22,7 @@ import java.util.List;
 /**
  *  Landscape image viewer.
  */
-public class ImageViewer extends JPanel implements DelayedViewer {
+public class ImageViewer extends JPanel {
 
     private static final long serialVersionUID = 1L;
     
@@ -45,6 +46,7 @@ public class ImageViewer extends JPanel implements DelayedViewer {
     private int sy1;
     private int sx2;
     private int sy2;
+    private final Timer timer;
     
     static {
         final File imagePathFile=new File(MagicMain.getGamePath()+File.separator+"images");
@@ -94,15 +96,23 @@ public class ImageViewer extends JPanel implements DelayedViewer {
         
         scaledImage=magic.GraphicsUtilities.scale(image,VIEWER_WIDTH,viewerHeight);
         
+        timer = new Timer(DELAY, new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                showScaled=true;
+                repaint();
+            }
+        });
+        timer.setRepeats(false);
+        
         final MouseAdapter mouseListener=new MouseAdapter() {
             @Override
             public void mouseEntered(final MouseEvent e) {
-                DelayedViewersThread.getInstance().showViewer(ImageViewer.this,DELAY);
+                showDelayed();
             }
 
             @Override
             public void mouseExited(final MouseEvent e) {
-                DelayedViewersThread.getInstance().hideViewer(ImageViewer.this);
+                hideDelayed();
             }                
 
             @Override
@@ -138,14 +148,12 @@ public class ImageViewer extends JPanel implements DelayedViewer {
         addMouseMotionListener(mouseListener);
     }
     
-    @Override
-    public void showDelayed() {
-        showScaled=true;
-        repaint();
+    private void showDelayed() {
+        timer.restart();
     }
     
-    @Override
-    public void hideDelayed() {
+    private void hideDelayed() {
+        timer.stop();
         showScaled=false;
         scaled=false;
         repaint();
