@@ -21,7 +21,7 @@ public class MagicPainTapManaActivation extends MagicManaActivation {
     @Override
     public MagicEvent[] getCostEvent(final MagicPermanent perm) {
         return new MagicEvent[] {
-        	new MagicPainTapEvent(perm)
+            new MagicPainTapEvent(perm)
         };
     }
 }

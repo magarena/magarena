@@ -12,24 +12,24 @@ import magic.model.target.MagicBounceTargetPicker;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 
 public class Esperzoa {
-	public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
-		@Override
-		public MagicEvent executeTrigger(
-				final MagicGame game,
-				final MagicPermanent permanent,
-				final MagicPlayer upkeepPlayer) {
-					return permanent.isController(upkeepPlayer) ?
-						new MagicEvent(
-							permanent,
-							MagicTargetChoice.TARGET_ARTIFACT_YOU_CONTROL,
-							MagicBounceTargetPicker.getInstance(),
-							this,
-							"Return an artifact you control to its owner's hand."):
-						MagicEvent.NONE;
-		}
+    public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
+        @Override
+        public MagicEvent executeTrigger(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final MagicPlayer upkeepPlayer) {
+            return permanent.isController(upkeepPlayer) ?
+                new MagicEvent(
+                    permanent,
+                    MagicTargetChoice.TARGET_ARTIFACT_YOU_CONTROL,
+                    MagicBounceTargetPicker.getInstance(),
+                    this,
+                    "Return an artifact you control to its owner's hand."):
+                MagicEvent.NONE;
+        }
 
-		@Override
-		public void executeEvent(
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
@@ -39,6 +39,5 @@ public class Esperzoa {
                 }
             });
         }
-	};
-
+    };
 }

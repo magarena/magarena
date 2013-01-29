@@ -25,14 +25,14 @@ import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 
 public class Myr_Matrix {
-	public static final MagicStatic S = new MagicStatic(
-	        MagicLayer.ModPT, 
-	        MagicTargetFilter.TARGET_MYR_CREATURE) {
-	        @Override
-	        public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
-	            pt.add(1,1);
-	        }
-	    };
+    public static final MagicStatic S = new MagicStatic(
+            MagicLayer.ModPT, 
+            MagicTargetFilter.TARGET_MYR_CREATURE) {
+            @Override
+            public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
+                pt.add(1,1);
+            }
+        };
     
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicManaCost.FIVE.getCondition()},
@@ -41,7 +41,8 @@ public class Myr_Matrix {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-            		new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.FIVE)};
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.FIVE)
+            };
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

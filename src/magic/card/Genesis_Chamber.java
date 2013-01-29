@@ -8,7 +8,7 @@ import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
 
 public class Genesis_Chamber {
-	public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
+    public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -30,8 +30,8 @@ public class Genesis_Chamber {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
-                final Object[] choiceResults) {            
-        	game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Myr1")));
-        }        
-    };	
+                final Object[] choiceResults) {
+            game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Myr1")));
+        }
+    };
 }

@@ -9,12 +9,12 @@ import magic.model.target.MagicTargetFilter;
 import java.util.Set;
 
 public class Shifting_Sliver {
-	public static final MagicStatic S = new MagicStatic(
+    public static final MagicStatic S = new MagicStatic(
         MagicLayer.Ability, 
         MagicTargetFilter.TARGET_SLIVER) {
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
             flags.add(MagicAbility.CannotBeBlockedExceptBySliver);
         }
-	};
+    };
 }

@@ -19,7 +19,7 @@ import magic.model.event.MagicTiming;
 import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
 
 public class Serum_Tank {
-	public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
+    public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -39,7 +39,7 @@ public class Serum_Tank {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {            
-        	game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,1,true));
+            game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,1,true));
         }        
     };
     
@@ -51,7 +51,7 @@ public class Serum_Tank {
             },
             new MagicActivationHints(MagicTiming.Draw),
             "Draw") {
-    	@Override
+        @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicPayManaCostTapEvent(
