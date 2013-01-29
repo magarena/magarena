@@ -230,7 +230,7 @@ public final class GamePanel extends JPanel {
         
         updateView();
 
-        //start runGame in background using SwingWorker
+        //start game logic controller in another thread
         (new Thread(){
             @Override
             public void run() {
