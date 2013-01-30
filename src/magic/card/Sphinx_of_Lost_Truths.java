@@ -27,7 +27,7 @@ public class Sphinx_of_Lost_Truths {
                 final Object[] choiceResults) {
             final MagicPlayer player=event.getPlayer();
             game.doAction(new MagicDrawAction(player,3));
-            if (event.getPermanent().isKicked()) {
+            if (!event.getPermanent().isKicked()) {
                 game.addEvent(new MagicDiscardEvent(event.getPermanent(),player,3,false));
             }
         }        
