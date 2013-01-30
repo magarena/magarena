@@ -9,50 +9,29 @@ import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventAction;
 import magic.model.stack.MagicTriggerOnStack;
-import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
+import magic.model.trigger.MagicWhenBlocksTrigger;
 
 public class Infiltration_Lens {
-    public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
+    public static final MagicWhenBlocksTrigger T = new MagicWhenBlocksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            final MagicPermanent equippedCreature = permanent.getEquippedCreature();
-            return (creature == equippedCreature) ?
-                genEvent(
-                    permanent, 
-                    equippedCreature.getBlockingCreatures().size()
+            return (permanent.getEquippedCreature() == creature.getBlockedCreature()) ?
+                new MagicEvent(
+                    permanent,
+                    new MagicSimpleMayChoice(
+                        MagicSimpleMayChoice.DRAW_CARDS,
+                        2,
+                        MagicSimpleMayChoice.DEFAULT_NONE
+                    ),
+                    this,
+                    "PN may$ draw two cards."
                 ) :
                 MagicEvent.NONE;
         }
-    };
-
-    private static final MagicEvent genEvent(final MagicPermanent permanent, final int amount) {
-        return new MagicEvent(
-            permanent,
-            new MagicSimpleMayChoice(
-                MagicSimpleMayChoice.DRAW_CARDS,
-                2,
-                MagicSimpleMayChoice.DEFAULT_NONE),
-            amount,
-            DRAW,
-            "PN may$ draw two cards.");
-    }
-    
-    private static final MagicEventAction DRAW = new MagicEventAction() {
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
-            final MagicPermanent permanent = event.getPermanent();
-            final int amount = event.getRefInt();
+        public void executeEvent(final MagicGame game, final MagicEvent event, final Object[] choiceResults) {
             if (MagicChoice.isYesChoice(choiceResults[0])) {
                 game.doAction(new MagicDrawAction(event.getPlayer(),2));
-            }        
-            if (amount > 0) {
-                game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(genEvent(
-                    permanent, 
-                    amount - 1
-                ))));
             }
         }
     };
