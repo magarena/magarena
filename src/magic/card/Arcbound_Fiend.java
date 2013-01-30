@@ -18,7 +18,7 @@ public class Arcbound_Fiend {
             return permanent.isController(upkeepPlayer) ?
                 new MagicEvent(
                     permanent,
-                    new MagicMayChoice(MagicTargetChoice.NEG_TARGET_CREATURE_PLUSONE_COUNTER),
+                    new MagicMayChoice(MagicTargetChoice.TARGET_CREATURE_PLUSONE_COUNTER),
                     this,
                     "PN may$ move a +1/+1 counter from " +
                     "target creature$ onto SN."):
