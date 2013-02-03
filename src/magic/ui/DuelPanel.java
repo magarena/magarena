@@ -116,7 +116,7 @@ public class DuelPanel extends JPanel implements ActionListener {
         leftPanel.setOpaque(false);
         
         // card image
-        cardViewer=new CardViewer("",false,true);
+        cardViewer=new CardViewer(false,true);
         cardViewer.setPreferredSize(CardImagesProvider.CARD_DIMENSION);
         cardViewer.setMaximumSize(CardImagesProvider.CARD_DIMENSION);
         cardViewer.setCard(MagicCardDefinition.UNKNOWN,0);

@@ -32,6 +32,10 @@ public class CardViewer extends JPanel {
     private final boolean opaque;
     private final Timer timer;
     
+    public CardViewer(final boolean image,final boolean opaque) {
+        this("", image, opaque);
+    }
+    
     public CardViewer(final String title,final boolean image,final boolean opaque) {
         this.image=image;
         this.opaque=opaque;
@@ -39,11 +43,8 @@ public class CardViewer extends JPanel {
         this.setLayout(new BorderLayout());
         this.setOpaque(false);
 
-        if (title.length() == 0) {
-            setBorder(FontsAndBorders.WHITE_BORDER);
-        } else {
-            final TitleBar titleBar=new TitleBar(title);
-            add(titleBar,BorderLayout.NORTH);
+        if (!title.isEmpty()) {
+            add(new TitleBar(title),BorderLayout.NORTH);
         }
         
         cardPanel=new TransparentImagePanel();
