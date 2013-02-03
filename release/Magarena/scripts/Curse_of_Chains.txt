@@ -1,0 +1,12 @@
+name=Curse of Chains
+url=http://magiccards.info/shm/en/139.html
+image=http://magiccards.info/scans/en/shm/139.jpg
+value=3.977
+removal=2
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{W/U}
+timing=nextturn
+enchant=can't attack or block,neg creature
+requires_card_code=Narcolepsy
