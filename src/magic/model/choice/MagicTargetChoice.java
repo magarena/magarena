@@ -506,6 +506,8 @@ public class MagicTargetChoice extends MagicChoice {
     static {
         // used by enchant property
         factory.put("creature", TARGET_CREATURE);
+        factory.put("creature you control", TARGET_CREATURE_YOU_CONTROL);
+        factory.put("creature opponent control", TARGET_CREATURE_YOUR_OPPONENT_CONTROLS);
         factory.put("pos creature", POS_TARGET_CREATURE);
         factory.put("neg creature", NEG_TARGET_CREATURE);
         factory.put("neg tapped creature", NEG_TARGET_TAPPED_CREATURE);
