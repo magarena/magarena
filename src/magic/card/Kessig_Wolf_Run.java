@@ -14,6 +14,8 @@ import magic.model.condition.MagicCondition;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostTapEvent;
+import magic.model.event.MagicPayManaCostEvent;
+import magic.model.event.MagicTapEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicPumpTargetPicker;
@@ -30,7 +32,9 @@ public class Kessig_Wolf_Run {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                    new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.X_RED_GREEN)};
+                new MagicTapEvent(source),
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.X_RED_GREEN)
+            };
         }
 
         @Override
