@@ -174,15 +174,21 @@ public enum CardProperty {
     REQUIRES_CARD_CODE() {
         void setProperty(final MagicCardDefinition card, final String value) {
             final String cardName = !value.isEmpty() ? value : card.getFullName();
-            CardDefinitions.addCardSpecificCode(card, cardName);
+            final String[] names = cardName.split(",(?! )");
+            for (final String name : names) {
+                CardDefinitions.addCardSpecificCode(card, cardName);
+            }
         }
     },
     REQUIRES_GROOVY_CODE() {
         void setProperty(final MagicCardDefinition card, final String value) {
             final String cardName = !value.isEmpty() ? value : card.getFullName();
-            CardDefinitions.addCardSpecificGroovyCode(card, cardName);
+            final String[] names = cardName.split(",(?! )");
+            for (final String name : names) {
+                CardDefinitions.addCardSpecificGroovyCode(card, name);
+            }
         }
-    };
+    },
     ;
     
     void setProperty(final MagicCardDefinition card, final String value) {
