@@ -759,6 +759,11 @@ public class MagicGame {
     public void setSpellsPlayed(final int spells) {
         spellsPlayed = spells;
     }
+    
+    public void incSpellsPlayed() {
+        spellsPlayed++;
+    }
+    
     public boolean getCreatureDiedThisTurn() {
         return creatureDiedThisTurn;
     }

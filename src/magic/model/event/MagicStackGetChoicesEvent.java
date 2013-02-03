@@ -32,27 +32,13 @@ public class MagicStackGetChoicesEvent extends MagicEvent {
             itemOnStack.setChoiceResults(choiceResults);
 
             // pay mana cost when there is one.
+            // such as "you may pay <mana cost>" in triggers
             event.payManaCost(game,itemOnStack.getController(),choiceResults);
 
             // trigger WhenTargeted
             final MagicTargetChoice tchoice = event.getChoice().getTargetChoice();
             if (tchoice != null && tchoice.isTargeted()) {
                 game.executeTrigger(MagicTriggerType.WhenTargeted,itemOnStack);
-            }
-                
-            if (itemOnStack.isSpell()) {
-                // execute spell is cast triggers
-                for (final MagicWhenSpellIsCastTrigger trigger : itemOnStack.getSource().getCardDefinition().getSpellIsCastTriggers()) {
-                    game.executeTrigger(
-                        trigger,
-                        MagicPermanent.NONE,
-                        itemOnStack.getSource(),
-                        (MagicCardOnStack)itemOnStack
-                    );
-                }
-                
-                // execute other spell is cast triggers
-                game.executeTrigger(MagicTriggerType.WhenOtherSpellIsCast,itemOnStack);
             }
         }
     };

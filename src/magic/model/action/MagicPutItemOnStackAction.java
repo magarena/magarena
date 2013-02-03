@@ -25,21 +25,19 @@ public class MagicPutItemOnStackAction extends MagicAction {
             game.addEvent(new MagicStackGetChoicesEvent(itemOnStack));
         }
         if (itemOnStack.isSpell()) {
-            if (!itemOnStack.hasChoices()) {
-                // execute spell is cast triggers
-                for (final MagicWhenSpellIsCastTrigger trigger : itemOnStack.getSource().getCardDefinition().getSpellIsCastTriggers()) {
-                    game.executeTrigger(
-                        trigger,
-                        MagicPermanent.NONE,
-                        itemOnStack.getSource(),
-                        (MagicCardOnStack)itemOnStack
-                    );
-                }
-                
-                // execute other spell is cast triggers
-                game.executeTrigger(MagicTriggerType.WhenOtherSpellIsCast,itemOnStack);
+            // execute spell is cast triggers
+            for (final MagicWhenSpellIsCastTrigger trigger : itemOnStack.getSource().getCardDefinition().getSpellIsCastTriggers()) {
+                game.executeTrigger(
+                    trigger,
+                    MagicPermanent.NONE,
+                    itemOnStack.getSource(),
+                    (MagicCardOnStack)itemOnStack
+                );
             }
-            game.setSpellsPlayed(game.getSpellsPlayed() + 1);
+            
+            // execute other spell is cast triggers
+            game.executeTrigger(MagicTriggerType.WhenOtherSpellIsCast,itemOnStack);
+            game.incSpellsPlayed();
         }
         // Avoid unnecessary actions on stack by reducing score.
         setScore(itemOnStack.getController(),ArtificialScoringSystem.ITEM_ON_STACK_SCORE);
