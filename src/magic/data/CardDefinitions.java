@@ -52,7 +52,8 @@ public class CardDefinitions {
                 "magic.model.mstatic",
                 "magic.model.stack",
                 "magic.model.target",
-                "magic.model.trigger"
+                "magic.model.trigger",
+                "magic.card"
             )
         )
     );
