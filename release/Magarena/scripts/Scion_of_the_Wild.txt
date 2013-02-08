@@ -7,4 +7,4 @@ type=Creature
 subtype=Avatar
 cost={1}{G}{G}
 timing=smain
-requires_card_code
+requires_groovy_code

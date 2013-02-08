@@ -10,4 +10,4 @@ pt=8/8
 ability=flying,vigilance
 static=player
 timing=fmain
-requires_card_code
+requires_groovy_code

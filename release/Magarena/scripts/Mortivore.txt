@@ -8,4 +8,4 @@ subtype=Lhurgoyf
 cost={2}{B}{B}
 timing=smain
 ability=regenerate {B}
-requires_card_code
+requires_groovy_code

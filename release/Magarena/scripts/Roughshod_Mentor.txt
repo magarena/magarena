@@ -8,4 +8,4 @@ subtype=Giant,Warrior
 cost={5}{G}
 pt=5/4
 timing=main
-requires_card_code
+requires_groovy_code

@@ -8,4 +8,4 @@ subtype=Lhurgoyf
 cost={1}{W}{W}
 ability=vigilance
 timing=main
-requires_card_code
+requires_groovy_code

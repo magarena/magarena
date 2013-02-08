@@ -8,4 +8,4 @@ subtype=Aura
 cost={W}
 timing=aura
 enchant=lifelink,creature
-requires_card_code
+requires_groovy_code

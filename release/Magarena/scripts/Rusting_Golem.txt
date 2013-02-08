@@ -8,4 +8,4 @@ subtype=Golem
 cost={4}
 ability=fading 5
 timing=main
-requires_card_code
+requires_groovy_code

@@ -8,4 +8,4 @@ subtype=Lhurgoyf
 cost={2}{R}{R}
 ability=haste
 timing=fmain
-requires_card_code
+requires_groovy_code

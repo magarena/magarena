@@ -8,4 +8,4 @@ subtype=Spirit
 cost={3}{U}{U}
 ability=flying,combat damage draw card
 timing=main
-requires_card_code
+requires_groovy_code

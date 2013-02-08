@@ -9,4 +9,4 @@ cost={1}{U}
 pt=1/1
 static=all
 timing=main
-requires_card_code
+requires_groovy_code
