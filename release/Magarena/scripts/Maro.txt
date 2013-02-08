@@ -7,4 +7,4 @@ type=Creature
 subtype=Elemental
 cost={2}{G}{G}
 timing=main
-requires_card_code=Sturmgeist
+requires_groovy_code=Sturmgeist

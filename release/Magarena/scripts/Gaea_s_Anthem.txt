@@ -7,4 +7,4 @@ type=Enchantment
 cost={1}{G}{G}
 static=player
 timing=enchantment
-requires_card_code=Glorious Anthem
+requires_groovy_code=Glorious Anthem

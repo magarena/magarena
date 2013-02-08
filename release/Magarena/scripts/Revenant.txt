@@ -8,4 +8,4 @@ subtype=Spirit
 cost={4}{B}
 ability=flying
 timing=main
-requires_card_code=Boneyard Wurm
+requires_groovy_code=Boneyard Wurm

@@ -7,4 +7,4 @@ type=Creature
 subtype=Human,Soldier
 cost={2}{W}
 timing=main
-requires_card_code=Scion of the Wild
+requires_groovy_code=Scion of the Wild

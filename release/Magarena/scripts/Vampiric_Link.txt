@@ -8,4 +8,4 @@ subtype=Aura
 cost={B}
 timing=aura
 enchant=lifelink,pos creature
-requires_card_code=Spirit Link
+requires_groovy_code=Spirit Link
