@@ -9,6 +9,8 @@ import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.action.MagicLoseGameAction;
 import magic.model.mstatic.MagicLayer;
+import magic.model.mstatic.MagicStatic;
+import magic.model.mstatic.MagicPermanentStatic;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -572,7 +574,33 @@ public class MagicPlayer implements MagicTarget {
                 cachedAbilityFlags = MagicAbility.noneOf();
                 break;
             default:
+                throw new RuntimeException("No case for " + layer + " in MagicPlayer.apply");
+        }
+    }
+    
+    private void apply(final MagicPermanent source, final MagicStatic mstatic) {
+        final MagicLayer layer = mstatic.getLayer();
+        switch (layer) {
+            case Player:
+                mstatic.modPlayer(source, this);
                 break;
+            default:
+                throw new RuntimeException("No case for " + layer + " in MagicPlayer.apply");
+        }
+    }
+
+    public static void update(final MagicGame game) {
+        for (final MagicPlayer player : game.getPlayers()) {
+            player.apply(MagicLayer.Player);
+        }
+        for (final MagicPermanentStatic mpstatic : game.getStatics(MagicLayer.Player)) {
+            final MagicStatic mstatic = mpstatic.getStatic();
+            final MagicPermanent source = mpstatic.getPermanent();
+            for (final MagicPlayer player : game.getPlayers()) {
+                if (mstatic.accept(game, source, source)) {
+                   player.apply(source, mstatic);
+                }
+            }
         }
     }
 }

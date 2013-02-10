@@ -12,7 +12,7 @@ import magic.model.target.MagicTargetFilter;
 
 import java.util.Set;
 
-public abstract class MagicStatic extends MagicDummyPermanentModifier implements MagicChangeCardDefinition {
+public abstract class MagicStatic extends MagicDummyModifier implements MagicChangeCardDefinition {
 
     public static final boolean UntilEOT = true;
     public static final boolean Forever = !UntilEOT;

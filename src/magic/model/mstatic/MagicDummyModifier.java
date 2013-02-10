@@ -5,10 +5,11 @@ import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
 import magic.model.MagicAbility;
+import magic.model.MagicGame;
 
 import java.util.Set;
 
-public class MagicDummyPermanentModifier implements MagicPermanentModifier {
+public class MagicDummyModifier implements MagicModifier {
     
     @Override
     public MagicPlayer getController(final MagicPermanent source, final MagicPermanent permanent, final MagicPlayer controller) {
@@ -41,7 +42,12 @@ public class MagicDummyPermanentModifier implements MagicPermanentModifier {
     }    
     
     @Override
-    public void modPlayer(final MagicPermanent source, final MagicPermanent permanent) {
+    public void modPlayer(final MagicPermanent source, final MagicPlayer player) {
         //leave player unchanged
+    }
+    
+    @Override
+    public void modGame(final MagicPermanent source, final MagicGame game) {
+        //leave game unchanged
     }
 }

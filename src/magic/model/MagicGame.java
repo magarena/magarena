@@ -67,6 +67,7 @@ public class MagicGame {
     private int startTurn;
     private int mainPhaseCount=100000000;
     private int landPlayed;
+    private int maxLand;
     private int spellsPlayed;
     private boolean creatureDiedThisTurn;
     private boolean priorityPassed;
@@ -162,6 +163,7 @@ public class MagicGame {
         turn = game.turn;
         startTurn = game.startTurn;
         landPlayed = game.landPlayed;
+        maxLand = game.maxLand;
         spellsPlayed = game.spellsPlayed;
         creatureDiedThisTurn = game.creatureDiedThisTurn;
         priorityPassed = game.priorityPassed;
@@ -246,6 +248,7 @@ public class MagicGame {
             step.hashCode(),
             turnPlayer.getIndex(),
             landPlayed,
+            maxLand,
             priorityPassedCount,
             (priorityPassed ? 1L : -1L),
             (stateCheckRequired ? 1L : -1L),
@@ -497,7 +500,41 @@ public class MagicGame {
     public void update() {
         doDelayedActions();
         MagicPermanent.update(this);
+        MagicPlayer.update(this);
+        MagicGame.update(this);
         doDelayedActions();
+    }
+    
+    public void apply(final MagicLayer layer) {
+        switch (layer) {
+            case Game:
+                maxLand = 1;
+                break;
+            default:
+                throw new RuntimeException("No case for " + layer + " in MagicGame.apply");
+        }
+    }
+    
+    private void apply(final MagicPermanent source, final MagicStatic mstatic) {
+        final MagicLayer layer = mstatic.getLayer();
+        switch (layer) {
+            case Game:
+                mstatic.modGame(source, this);
+                break;
+            default:
+                throw new RuntimeException("No case for " + layer + " in MagicGame.apply");
+        }
+    }
+
+    public static void update(final MagicGame game) {
+        game.apply(MagicLayer.Game);
+        for (final MagicPermanentStatic mpstatic : game.getStatics(MagicLayer.Game)) {
+            final MagicStatic mstatic = mpstatic.getStatic();
+            final MagicPermanent source = mpstatic.getPermanent();
+            if (mstatic.accept(game, source, source)) {
+               game.apply(source, mstatic);
+            }
+        }
     }
 
     private void doDelayedActions() {
@@ -729,7 +766,7 @@ public class MagicGame {
     }
     
     public boolean canPlayLand(final MagicPlayer controller) {
-        return landPlayed < 1 && canPlaySorcery(controller);
+        return landPlayed < maxLand && canPlaySorcery(controller);
     }
 
     public int getLandPlayed() {
@@ -743,9 +780,17 @@ public class MagicGame {
     public void decLandPlayed() {
         landPlayed--;
     }
+
+    public void incMaxLand() {
+        maxLand++;
+    }
     
     public void resetLandPlayed() {
         landPlayed = 0;
+    }
+
+    public void resetMaxLand() {
+        maxLand = 1;
     }
 
     public void setLandPlayed(final int lp) {
