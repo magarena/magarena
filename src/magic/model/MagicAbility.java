@@ -65,6 +65,7 @@ import magic.model.trigger.MagicWhenDiesTrigger;
 import magic.model.trigger.MagicAtEndOfTurnTrigger;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
+import magic.model.trigger.MagicExtortTrigger;
 
 import java.util.EnumSet;
 import java.util.Set;
@@ -700,6 +701,12 @@ public enum MagicAbility {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
             card.add(MagicWhenOtherComesIntoPlayTrigger.Evolve);
+        }
+    },
+    Extort("extort", 20) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+            card.add(MagicExtortTrigger.create());
         }
     },
     None("",0);
