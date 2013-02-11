@@ -9,7 +9,7 @@ import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.stack.MagicCardOnStack;
 
-public class MagicExtortTrigger extends MagicWhenSpellIsCastTrigger {
+public class MagicExtortTrigger extends MagicWhenOtherSpellIsCastTrigger {
 
     private static final MagicExtortTrigger INSTANCE = new MagicExtortTrigger();
 
@@ -24,14 +24,16 @@ public class MagicExtortTrigger extends MagicWhenSpellIsCastTrigger {
             final MagicGame game,
             final MagicPermanent permanent,
             final MagicCardOnStack cardOnStack) {
-        return new MagicEvent(
-            cardOnStack,
-            new MagicMayChoice(
-                new MagicPayManaCostChoice(MagicManaCost.WHITE_OR_BLACK)
-            ),
-            this,
-            "You may$ pay {W/B}. If you do, each opponent loses 1 life and you gain that much life."
-        );
+        return permanent.isFriend(cardOnStack) ?
+            new MagicEvent(
+                permanent,
+                new MagicMayChoice(
+                    new MagicPayManaCostChoice(MagicManaCost.WHITE_OR_BLACK)
+                ),
+                this,
+                "You may$ pay {W/B}. If you do, each opponent loses 1 life and you gain that much life."
+            ):
+            MagicEvent.NONE;
     }
     
     @Override
