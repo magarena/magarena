@@ -14,7 +14,7 @@
                 final MagicGame outerGame,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            game.doAction(new MagicAddStaticAction(MagicPermanent.NONE,  
+            outerGame.doAction(new MagicAddStaticAction(MagicPermanent.NONE,  
                 new MagicStatic(MagicLayer.Game, MagicStatic.UntilEOT) {
                     @Override
                     public void modGame(final MagicPermanent source, final MagicGame game) {
