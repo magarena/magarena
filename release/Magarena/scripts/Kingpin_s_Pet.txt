@@ -1,0 +1,11 @@
+name=Kingpin's Pet
+url=http://magiccards.info/gtc/en/173.html
+image=http://magiccards.info/scans/en/gtc/173.jpg
+value=1.797
+rarity=C
+type=Creature
+subtype=Thrull
+pt=2/2
+cost={1}{W}{B}
+ability=flying,extort
+timing=main
