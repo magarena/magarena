@@ -1,0 +1,11 @@
+name=Basilica Guards
+url=http://magiccards.info/gtc/en/5.html
+image=http://magiccards.info/scans/en/gtc/5.jpg
+value=1.797
+rarity=C
+type=Creature
+subtype=Human,Soldier
+pt=1/4
+cost={2}{W}
+ability=defender,extort
+timing=main
