@@ -208,8 +208,9 @@ public class ImagePermanentViewer extends JPanel {
             if (linkedInfo.permanent.hasCounters()) {
                 ax=ImageDrawingUtils.drawCountersInfo(g,this,linkedInfo.permanent,ax,ay);
             }
-            if (permanentInfo.creature) {
-                // Common combat ability icons.
+
+            // Common combat ability icons.
+            if (linkedInfo.creature) {
                 if (linkedInfo.canNotTap) {
                     g.drawImage(IconImages.CANNOTTAP.getImage(),ax,ay,this);
                     ax+=16;
@@ -217,9 +218,10 @@ public class ImagePermanentViewer extends JPanel {
                 final Set<MagicAbility> abilityFlags=linkedInfo.abilityFlags;
                 ax=ImageDrawingUtils.drawAbilityInfo(g,this, abilityFlags,ax,ay);
             }
+            
             // Mana symbols
-            if (permanentInfo.cardDefinition.isLand() || permanentInfo.cardDefinition.isArtifact()) {
-                ax=ImageDrawingUtils.drawManaInfo(g,this,permanentInfo.cardDefinition,ax,ay);
+            if (linkedInfo.cardDefinition.isLand() || linkedInfo.cardDefinition.isArtifact()) {
+                ax=ImageDrawingUtils.drawManaInfo(g,this,linkedInfo.cardDefinition,ax,ay);
             }
             
             final String pt=linkedInfo.powerToughness;
