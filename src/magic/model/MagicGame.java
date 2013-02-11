@@ -777,26 +777,22 @@ public class MagicGame {
         landPlayed++;
     }
     
-    public void decLandPlayed() {
-        landPlayed--;
+    public void resetLandPlayed() {
+        landPlayed = 0;
+    }
+
+    public void setLandPlayed(final int lp) {
+        landPlayed = lp;
     }
 
     public void incMaxLand() {
         maxLand++;
     }
     
-    public void resetLandPlayed() {
-        landPlayed = 0;
-    }
-
     public void resetMaxLand() {
         maxLand = 1;
     }
 
-    public void setLandPlayed(final int lp) {
-        landPlayed = lp;
-    }
-    
     public int getSpellsPlayed() {
         return spellsPlayed;
     }
