@@ -4,6 +4,7 @@ import magic.ai.ArtificialScoringSystem;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.event.MagicStackGetChoicesEvent;
+import magic.model.event.MagicSpellCastEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.stack.MagicItemOnStack;
 import magic.model.trigger.MagicTrigger;
@@ -25,19 +26,7 @@ public class MagicPutItemOnStackAction extends MagicAction {
             game.addEvent(new MagicStackGetChoicesEvent(itemOnStack));
         }
         if (itemOnStack.isSpell()) {
-            // execute spell is cast triggers
-            for (final MagicWhenSpellIsCastTrigger trigger : itemOnStack.getSource().getCardDefinition().getSpellIsCastTriggers()) {
-                game.executeTrigger(
-                    trigger,
-                    MagicPermanent.NONE,
-                    itemOnStack.getSource(),
-                    (MagicCardOnStack)itemOnStack
-                );
-            }
-            
-            // execute other spell is cast triggers
-            game.executeTrigger(MagicTriggerType.WhenOtherSpellIsCast,itemOnStack);
-            game.incSpellsPlayed();
+            game.addEvent(new MagicSpellCastEvent(itemOnStack));
         }
         // Avoid unnecessary actions on stack by reducing score.
         setScore(itemOnStack.getController(),ArtificialScoringSystem.ITEM_ON_STACK_SCORE);
