@@ -1,5 +1,5 @@
 name=Knight of Obligation
-url=http://magiccards.info/scans/en/gtc/18.jpg
+url=http://magiccards.info/gtc/en/18.html
 image=http://magiccards.info/scans/en/gtc/18.jpg
 value=1.797
 rarity=U
