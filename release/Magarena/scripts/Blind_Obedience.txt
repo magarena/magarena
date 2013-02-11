@@ -1,0 +1,10 @@
+name=Blind Obedience
+url=http://magiccards.info/gtc/en/6.html
+image=http://magiccards.info/scans/en/gtc/6.jpg
+value=1.797
+rarity=R
+type=Enchantment
+cost={1}{W}
+ability=extort
+timing=main
+requires_groovy_code
