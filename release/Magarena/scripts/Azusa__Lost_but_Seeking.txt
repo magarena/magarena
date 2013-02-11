@@ -1,0 +1,11 @@
+name=Azusa, Lost but Seeking
+url=http://magiccards.info/chk/en/201.html
+image=http://magiccards.info/scans/en/chk/201.jpg
+value=4.200
+rarity=R
+type=Legendary,Creature
+subtype=Human,Monk
+cost={2}{G}
+pt=1/2
+timing=fmain
+requires_groovy_code
