@@ -16,6 +16,7 @@ import magic.model.event.MagicPainTapManaActivation;
 import magic.model.event.MagicTiming;
 import magic.model.event.MagicVividManaActivation;
 import magic.model.event.MagicPermanentActivation;
+import magic.model.event.MagicCyclingActivation;
 import magic.model.mstatic.MagicCDA;
 import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicAllyGrowTrigger;
@@ -707,6 +708,12 @@ public enum MagicAbility {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
             card.add(MagicExtortTrigger.create());
+        }
+    },
+    Cycling("cycling", 20) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final MagicManaCost manaCost = MagicManaCost.create(arg);
+            card.add(new MagicCyclingActivation(manaCost));
         }
     },
     None("",0);

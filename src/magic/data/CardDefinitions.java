@@ -4,6 +4,7 @@ import magic.MagicMain;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicColor;
+import magic.model.event.MagicCardActivation;
 
 import java.io.File;
 import java.io.FilenameFilter;
@@ -138,6 +139,7 @@ public class CardDefinitions {
     private static void loadCardDefinition(final File file) {
         try {
             final MagicCardDefinition cdef = prop2carddef(FileIO.toProp(file));
+            cdef.add(new MagicCardActivation(cdef));
             cdef.validate();
             addDefinition(cdef);
         } catch (final Throwable cause) {

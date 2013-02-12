@@ -92,7 +92,7 @@ public class MagicCardDefinition {
     private MagicStaticType staticType=MagicStaticType.None;
     private MagicTiming timing=MagicTiming.None;
     private MagicCardEvent cardEvent=MagicPlayCardEvent.create();
-    private MagicCardActivation cardActivation;
+    private final LinkedList<MagicActivation> cardActivations = new LinkedList<MagicActivation>();
     private final Collection<MagicCDA> CDAs = new ArrayList<MagicCDA>();
     private final Collection<MagicTrigger<?>> triggers = new ArrayList<MagicTrigger<?>>();
     private final Collection<MagicStatic> statics=new ArrayList<MagicStatic>();
@@ -612,11 +612,13 @@ public class MagicCardDefinition {
         return new MagicActivationHints(timing,true);
     }
     
-    public MagicCardActivation getCardActivation() {
-        if (cardActivation==null) {
-            cardActivation=new MagicCardActivation(this);
-        }
-        return cardActivation;
+    // cast card activation is the first element of cardActivations
+    public MagicActivation getCastActivation() {
+        return cardActivations.getFirst();
+    }
+    
+    public Collection<MagicActivation> getCardActivations() {
+        return cardActivations;
     }
     
     public void addCDA(final MagicCDA cda) {
@@ -685,6 +687,10 @@ public class MagicCardDefinition {
     public void addAct(final MagicPermanentActivation activation) {
         activations.add(activation);
         numPermanentActivations++;
+    }
+    
+    public void addCardAct(final MagicCardActivation activation) {
+        cardActivations.addFirst(activation);
     }
     
     public Collection<MagicActivation> getActivations() {

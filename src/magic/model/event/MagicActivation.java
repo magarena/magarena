@@ -120,7 +120,7 @@ public abstract class MagicActivation<T extends MagicSource> implements MagicEve
 
     abstract MagicEvent[] getCostEvent(final T source);
     
-    abstract MagicEvent getEvent(final MagicSource source);
+    public abstract MagicEvent getEvent(final MagicSource source);
     
     abstract MagicTargetChoice getTargetChoice(final T source);    
 }

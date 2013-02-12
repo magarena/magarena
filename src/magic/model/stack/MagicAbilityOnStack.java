@@ -5,6 +5,8 @@ import magic.model.MagicCopyMap;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.event.MagicPermanentActivation;
+import magic.model.event.MagicCardActivation;
+import magic.model.event.MagicEvent;
 
 import javax.swing.ImageIcon;
 
@@ -15,6 +17,13 @@ public class MagicAbilityOnStack extends MagicItemOnStack {
             final MagicPermanent permanent,
             final MagicPayedCost payedCost) {
         super(permanent, permanent.getController(), activation.getPermanentEvent(permanent,payedCost), activation);
+    }
+    
+    public MagicAbilityOnStack(
+            final MagicCardActivation activation,
+            final MagicEvent event,
+            final MagicPayedCost payedCost) {
+        super(event.getSource(), event.getPlayer(), event, activation);
     }
     
     private MagicAbilityOnStack(final MagicCopyMap copyMap, final MagicAbilityOnStack source) {

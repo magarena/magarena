@@ -7,6 +7,7 @@ import magic.model.MagicLocationType;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicSource;
+import magic.model.MagicChangeCardDefinition;
 import magic.model.action.MagicPlayCardAction;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.action.MagicRemoveCardAction;
@@ -14,7 +15,7 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicCardOnStack;
 
-public class MagicCardActivation extends MagicActivation<MagicCard> {
+public class MagicCardActivation extends MagicActivation<MagicCard> implements MagicChangeCardDefinition {
 
     final boolean usesStack;
     
@@ -25,9 +26,17 @@ public class MagicCardActivation extends MagicActivation<MagicCard> {
                 cdef.getCost().getCondition()
             },
             cdef.getActivationHints(),
-            "Play"
+            "Cast"
         );
         usesStack = cdef.usesStack();
+    }
+    
+    protected MagicCardActivation(
+        final MagicCondition[] conditions,
+        final MagicActivationHints hints,
+        final String txt) {
+        super(conditions, hints, txt);
+        usesStack = true;
     }
   
     @Override
@@ -55,7 +64,7 @@ public class MagicCardActivation extends MagicActivation<MagicCard> {
             game.incLandPlayed();
         }
         game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
-        if (card.getCardDefinition().usesStack()) {
+        if (usesStack) {
             final MagicCardOnStack cardOnStack=new MagicCardOnStack(card,game.getPayedCost());
             game.doAction(new MagicPutItemOnStackAction(cardOnStack));
         } else {
@@ -64,8 +73,13 @@ public class MagicCardActivation extends MagicActivation<MagicCard> {
     }
 
     @Override
-    final MagicTargetChoice getTargetChoice(final MagicCard source) {
+    MagicTargetChoice getTargetChoice(final MagicCard source) {
         final MagicCardOnStack cardOnStack=new MagicCardOnStack(source,MagicPayedCost.NO_COST);
         return cardOnStack.getEvent().getTargetChoice();
+    }
+    
+    @Override
+    public void change(final MagicCardDefinition cdef) {
+        cdef.addCardAct(this);
     }
 }

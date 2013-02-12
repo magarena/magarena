@@ -224,7 +224,7 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
     
     @Override
     public Collection<MagicActivation> getActivations() {
-        return Collections.singletonList((MagicActivation)cardDefinition.getCardActivation());
+        return cardDefinition.getCardActivations();
     }
 
     @Override
