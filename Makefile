@@ -172,6 +172,7 @@ log.clean:
 inf: $(MAG)
 	-while true; do make `date +%s`.t; done
 
+games ?= 10000
 %.t: $(MAG)
 	echo `hg id -n` > $*.log
 	$(JAVA) -Dmagarena.dir=`pwd`/release magic.DeckStrCal \
@@ -180,7 +181,7 @@ inf: $(MAG)
 	--ai2 MMABC --str2 1 \
 	--life 10 \
 	--games 1 \
-	--repeat 10000 >> $*.log 2>&1
+	--repeat ${games} >> $*.log 2>&1
 
 test: $(MAG)
 	-make `date +%s`.d
