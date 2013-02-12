@@ -6,6 +6,7 @@ Accorder's Shield
 Acidic Slime
 Acid Web Spider
 Act of Treason
+Adaptive Snapjaw
 Admonition Angel
 Adventuring Gear
 AEther Adept
@@ -89,6 +90,8 @@ Barony Vampire
 Barrage Ogre
 Barter in Blood
 Bar the Door
+Basilica Guards
+Basilica Screecher
 Basilisk Collar
 Batterskull
 Battleground Geist
@@ -120,6 +123,7 @@ Blighted Agent
 Blight Mamba
 Blightwidow
 Blinding Mage
+Blind Obedience
 Blistergrub
 Blisterstick Shaman
 Blood Artist
@@ -204,9 +208,11 @@ Circle of Flame
 Claustrophobia
 Cliff Threader
 Clifftop Retreat
+Clinging Anemones
 Clinging Mists
 Cloud Crusader
 Cloud Elemental
+Cloudfin Raptor
 Cloudshift
 Cobblebrute
 Cobbled Wings
@@ -235,6 +241,7 @@ Creeping Tar Pit
 Crimson Mage
 Crippling Blight
 Crippling Chill
+Crocanura
 Crossway Vampire
 Crusader of Odric
 Crypt Creeper
@@ -332,6 +339,7 @@ Elgaud Inquisitor
 Elgaud Shieldmate
 Elite Inquisitor
 Elite Vanguard
+Elusive Krasis
 Elvish Visionary
 Emancipation Angel
 Ember Hauler
@@ -600,6 +608,7 @@ Khalni Garden
 Kiln Walker
 Kindercatch
 Kindled Fury
+Kingpin's Pet
 Kitesail
 Kitesail Apprentice
 Kite Shield
@@ -608,6 +617,7 @@ Knightly Valor
 Knight of Cliffhaven
 Knight of Glory
 Knight of Infamy
+Knight of Obligation
 Kor Aeronaut
 Kor Duelist
 Kor Firewalker
@@ -917,6 +927,7 @@ Seraph Sanctuary
 Serra Angel
 Serra Ascendant
 Servant of Nefarox
+Shambleshark
 Sharpened Pitchfork
 Shatter
 Shattered Angel
@@ -1039,6 +1050,8 @@ Sword of Feast and Famine
 Sword of Vengeance
 Sword of War and Peace
 Sylvok Lifestaff
+Syndicate Enforcer
+Syndic of Tithes
 Tajuru Archer
 Talus Paladin
 Tangle Hulk
@@ -1109,6 +1122,7 @@ Unruly Mob
 Unsummon
 Untamed Might
 Urabrask the Hidden
+Urban Evolution
 Urgent Exorcism
 Vampire Hexmage
 Vampire Interloper

@@ -2,6 +2,7 @@ Abbey Griffin
 Abrupt Decay
 Acidic Slime
 Act of Treason
+Adaptive Snapjaw
 Aggravate
 Ajani's Sunstriker
 Akroma's Memorial
@@ -37,12 +38,15 @@ Balefire Dragon
 Banners Raised
 Barter in Blood
 Bar the Door
+Basilica Guards
+Basilica Screecher
 Battleground Geist
 Beguiler of Wills
 Bellows Lizard
 Black Cat
 Bladed Bracers
 Bladetusk Boar
+Blind Obedience
 Blood Artist
 Bloodcrazed Neonate
 Blood Crypt
@@ -82,7 +86,9 @@ Charmbreaker Devils
 Cinder Elemental
 Claustrophobia
 Clifftop Retreat
+Clinging Anemones
 Clinging Mists
+Cloudfin Raptor
 Cloudshift
 Cobblebrute
 Cobbled Wings
@@ -93,6 +99,7 @@ Craterhoof Behemoth
 Craterize
 Crippling Blight
 Crippling Chill
+Crocanura
 Crossway Vampire
 Crusader of Odric
 Crypt Creeper
@@ -143,6 +150,7 @@ Elder of Laurels
 Elgaud Inquisitor
 Elgaud Shieldmate
 Elite Inquisitor
+Elusive Krasis
 Elvish Visionary
 Emancipation Angel
 Endless Ranks of the Dead
@@ -267,10 +275,12 @@ Kessig Wolf
 Kessig Wolf Run
 Kindercatch
 Kindled Fury
+Kingpin's Pet
 Kitesail
 Knightly Valor
 Knight of Glory
 Knight of Infamy
+Knight of Obligation
 Kraken Hatchling
 Krenko's Command
 Kruin Striker
@@ -407,6 +417,7 @@ Seraph of Dawn
 Seraph Sanctuary
 Serra Angel
 Servant of Nefarox
+Shambleshark
 Sharpened Pitchfork
 Shriekgeist
 Sightless Ghoul
@@ -459,6 +470,8 @@ Sunpetal Grove
 Sunspire Griffin
 Supreme Verdict
 Swamp
+Syndicate Enforcer
+Syndic of Tithes
 Temple Garden
 Temporal Mastery
 Tenement Crasher
@@ -497,6 +510,7 @@ Undead Executioner
 Unhallowed Pact
 Unruly Mob
 Unsummon
+Urban Evolution
 Urgent Exorcism
 Vampire Interloper
 Vampire Nighthawk

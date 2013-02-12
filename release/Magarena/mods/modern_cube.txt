@@ -142,6 +142,7 @@ Axegrinder Giant
 Azorius Guildgate
 Azure Drake
 Azure Mage
+Azusa, Lost but Seeking
 Back to Nature
 Bad Moon
 Balduvian Barbarians
@@ -433,6 +434,7 @@ Curiosity
 Cursebreak
 Cursecatcher
 Cursed Ronin
+Curse of Chains
 Cutthroat il-Dal
 Cylian Elf
 Cystbearer
@@ -693,6 +695,7 @@ Fledgling Griffin
 Fleeting Distraction
 Fleeting Image
 Flensermite
+Fleshbag Marauder
 Flesh-Eater Imp
 Flight
 Flight of Fancy
@@ -1923,6 +1926,7 @@ Sudden Disappearance
 Sudden Impact
 Sulfur Falls
 Sulfurous Springs
+Summer Bloom
 Sunblast Angel
 Sunder from Within
 Sunhome, Fortress of the Legion

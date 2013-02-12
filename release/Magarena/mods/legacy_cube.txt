@@ -14,6 +14,7 @@ Acid Web Spider
 Acorn Catapult
 Acridian
 Act of Treason
+Adaptive Snapjaw
 Adarkar Wastes
 Admonition Angel
 Advanced Hoverguard
@@ -187,6 +188,7 @@ Axegrinder Giant
 Azorius Guildgate
 Azure Drake
 Azure Mage
+Azusa, Lost but Seeking
 Backlash
 Back to Nature
 Badlands
@@ -217,6 +219,8 @@ Barrenton Cragtreads
 Barter in Blood
 Bar the Door
 Basalt Gargoyle
+Basilica Guards
+Basilica Screecher
 Basilisk Collar
 Battered Golem
 Battering Sliver
@@ -287,6 +291,7 @@ Blightning
 Blight Sickle
 Blightwidow
 Blinding Mage
+Blind Obedience
 Blind Phantasm
 Blinking Spirit
 Blistergrub
@@ -487,6 +492,7 @@ Claustrophobia
 Clay Statue
 Cliff Threader
 Clifftop Retreat
+Clinging Anemones
 Clinging Darkness
 Clinging Mists
 Cloak of Mists
@@ -496,6 +502,7 @@ Cloud Crusader
 Cloud Djinn
 Cloud Dragon
 Cloud Elemental
+Cloudfin Raptor
 Cloudheath Drake
 Cloud Pirates
 Cloudshift
@@ -569,6 +576,7 @@ Crimson Kobolds
 Crimson Mage
 Crippling Blight
 Crippling Chill
+Crocanura
 Crookshank Kobolds
 Crossway Vampire
 Crucible of Fire
@@ -589,6 +597,7 @@ Cursebreak
 Cursecatcher
 Cursed Flesh
 Cursed Ronin
+Curse of Chains
 Custody Battle
 Cutthroat il-Dal
 Cylian Elf
@@ -810,6 +819,7 @@ Elgaud Shieldmate
 Elite Cat Warrior
 Elite Inquisitor
 Elite Vanguard
+Elusive Krasis
 Elven Warhounds
 Elves of Deep Shadow
 Elvish Archers
@@ -869,6 +879,7 @@ Exclude
 Executioner's Hood
 Exhaustion
 Exhume
+Exploration
 Explore
 Explosive Impact
 Exquisite Blood
@@ -955,6 +966,7 @@ Fledgling Griffin
 Fleeting Distraction
 Fleeting Image
 Flensermite
+Fleshbag Marauder
 Flesh-Eater Imp
 Flight
 Flight of Fancy
@@ -1466,6 +1478,7 @@ Kindercatch
 Kindled Fury
 King Cheetah
 Kingfisher
+Kingpin's Pet
 Kinsbaile Cavalier
 Kird Ape
 Kiss of the Amesha
@@ -1485,6 +1498,7 @@ Knight of Cliffhaven
 Knight of Glory
 Knight of Infamy
 Knight of Meadowgrain
+Knight of Obligation
 Knight of Stromgald
 Knucklebone Witch
 Kobolds of Kher Keep
@@ -2310,6 +2324,7 @@ Shadow Rider
 Shadow Rift
 Shadow Sliver
 Shadowstorm
+Shambleshark
 Shambling Strider
 Shanodin Dryads
 Sharpened Pitchfork
@@ -2586,6 +2601,7 @@ Sudden Disappearance
 Sudden Impact
 Sulfur Falls
 Sulfurous Springs
+Summer Bloom
 Sunblast Angel
 Sunder from Within
 Sunhome, Fortress of the Legion
@@ -2622,6 +2638,8 @@ Symbiotic Wurm
 Symbol of Unsummoning
 Synapse Sliver
 Synchronous Sliver
+Syndicate Enforcer
+Syndic of Tithes
 Szadek, Lord of Secrets
 Taiga
 Tajuru Archer
@@ -2829,6 +2847,7 @@ Unsummon
 Untamed Might
 Unworthy Dead
 Urabrask the Hidden
+Urban Evolution
 Urborg Drake
 Urborg Elf
 Urborg Skeleton
