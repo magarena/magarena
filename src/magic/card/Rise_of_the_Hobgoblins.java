@@ -81,8 +81,8 @@ public class Rise_of_the_Hobgoblins {
                     permanent,
                     player,
                     new MagicMayChoice(
-                        "You may pay {X}.",
-                        new MagicPayManaCostChoice(MagicManaCost.X)),
+                        new MagicPayManaCostChoice(MagicManaCost.X)
+                    ),
                     this,
                     "You may pay$ {X}$. If you do, put X 1/1 red and white Goblin Soldier creature tokens onto the battlefield.");
         }

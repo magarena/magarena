@@ -56,9 +56,7 @@ public class Dwarven_Driller {
                     game.addEvent(new MagicEvent(
                         event.getSource(),
                         controller,
-                        new MagicMayChoice(
-                            controller + " may have " +
-                            event.getSource() + " deal 2 damage to him or her."),
+                        new MagicMayChoice(),
                         permanent,
                         EVENT_ACTION,
                         "PN may$ have SN deal 2 damage to him or her."

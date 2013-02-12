@@ -15,7 +15,6 @@ public class MagicCounterUnlessEvent extends MagicEvent {
             source,
             itemOnStack.getController(),
             new MagicMayChoice(
-                "You may pay "+cost.getText()+'.',
                 new MagicPayManaCostChoice(cost)
             ),
             itemOnStack,

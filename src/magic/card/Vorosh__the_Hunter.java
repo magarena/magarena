@@ -27,8 +27,8 @@ public class Vorosh__the_Hunter {
                     permanent,
                     player,
                     new MagicMayChoice(
-                        "You may pay {2}{G}.",
-                        new MagicPayManaCostChoice(MagicManaCost.TWO_GREEN)),
+                        new MagicPayManaCostChoice(MagicManaCost.TWO_GREEN)
+                    ),
                     this,
                     "You may$ pay {2}{G}$. If you do, put six +1/+1 counters on SN."):
                 MagicEvent.NONE;

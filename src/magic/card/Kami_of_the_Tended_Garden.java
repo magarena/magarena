@@ -18,7 +18,6 @@ public class Kami_of_the_Tended_Garden {
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        "You may pay {G}.",
                         new MagicPayManaCostChoice(MagicManaCost.GREEN)
                     ),
                     this,

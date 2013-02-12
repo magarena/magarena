@@ -14,7 +14,6 @@ public class MagicSoulbondEvent extends MagicEvent {
         super(
             permanent,
             new MagicMayChoice(
-                permanent.getController() + " may pair two creatures (Soulbond).",
                 hasSoulbond ?
                     new MagicTargetChoice(
                         new MagicTargetFilter.MagicOtherPermanentTargetFilter(

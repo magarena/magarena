@@ -28,9 +28,9 @@ public class Rith__the_Awakener {
                         permanent,
                         player,
                         new MagicMayChoice(
-                            "You may pay {2}{G}.",
                             new MagicPayManaCostChoice(MagicManaCost.TWO_GREEN),
-                            MagicColorChoice.MOST_INSTANCE),
+                            MagicColorChoice.MOST_INSTANCE
+                        ),
                         this,
                         "You may$ pay {2}{G}$. If you do, choose a color$. "+
                         "Put a 1/1 green Saproling creature token onto the battlefield for each permanent of that color."):

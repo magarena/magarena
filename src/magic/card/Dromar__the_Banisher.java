@@ -28,9 +28,9 @@ public class Dromar__the_Banisher {
                         permanent,
                         player,
                         new MagicMayChoice(
-                            "You may pay {2}{U}.",
                             new MagicPayManaCostChoice(MagicManaCost.TWO_BLUE),
-                            MagicColorChoice.UNSUMMON_INSTANCE),
+                            MagicColorChoice.UNSUMMON_INSTANCE
+                        ),
                         this,
                         "You may$ pay {2}{U}$. If you do, choose a color$. " + 
                         "Return all creatures of that color to their owner's hand."):

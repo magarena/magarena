@@ -30,20 +30,21 @@ public class MagicDevourTrigger extends MagicWhenComesIntoPlayTrigger {
             final MagicPermanent perm,
             final MagicPlayer player) {
         final MagicTargetFilter<MagicPermanent> targetFilter = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
-                MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,
-                perm);
+            MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,
+            perm
+        );
         final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                targetFilter,
-                false,
-                MagicTargetHint.None,
-                "a creature other than " + perm + " to sacrifice");
-        final MagicChoice devourChoice = new MagicMayChoice(
-                "You may sacrifice a creature to " + perm + ".",
-                targetChoice);
+            targetFilter,
+            false,
+            MagicTargetHint.None,
+            "a creature other than " + perm + " to sacrifice"
+        );
         return (player.getNrOfPermanentsWithType(MagicType.Creature) > 1) ?
                 new MagicEvent(
                     perm,
-                    devourChoice,
+                    new MagicMayChoice(
+                        targetChoice
+                    ),
                     MagicSacrificeTargetPicker.create(),
                     this,
                     "You may$ sacrifice a creature$ to SN."

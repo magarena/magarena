@@ -26,9 +26,9 @@ public class Teneb__the_Harvester {
                         permanent,
                         player,
                         new MagicMayChoice(
-                            "You may pay {2}{B}.",
                             new MagicPayManaCostChoice(MagicManaCost.TWO_BLACK),
-                            MagicTargetChoice.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS),
+                            MagicTargetChoice.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS
+                        ),
                         this,
                         "You may$ pay {2}{B}$. If you do, put target creature card$ " + 
                         "in a graveyard into play under your control."):

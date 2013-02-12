@@ -54,20 +54,18 @@ public class MagicEntersExileCreatureOrSacrificeTrigger extends MagicWhenComesIn
             }        
         };
 
-        final MagicTargetChoice targetChoice = 
-                new MagicTargetChoice(
-                    targetFilter,
-                    false,
-                    MagicTargetHint.None,
-                    "another " + targets + " to exile");
-        final MagicChoice championChoice = 
-                new MagicMayChoice(
-                    "You may exile another " + targets + " you control. " +
-                    "If you don't, sacrifice " + permanent + ".",
-                    targetChoice);
+        final MagicTargetChoice targetChoice = new MagicTargetChoice(
+            targetFilter,
+            false,
+            MagicTargetHint.None,
+            "another " + targets + " to exile"
+        );
+
         return new MagicEvent(
                 permanent,
-                championChoice,
+                new MagicMayChoice(
+                    targetChoice
+                ),
                 MagicExileTargetPicker.create(),
                 this,
                 "You may$ exile another " + targets + " you control$. " +

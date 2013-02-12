@@ -26,10 +26,10 @@ public class Cradle_of_Vitality {
                     permanent,
                     player,
                     new MagicMayChoice(
-                            "You may pay {1}{W}.",
-                            new MagicPayManaCostChoice(MagicManaCost.ONE_WHITE),
-                            MagicTargetChoice.POS_TARGET_CREATURE),
-                            MagicPumpTargetPicker.create(),
+                        new MagicPayManaCostChoice(MagicManaCost.ONE_WHITE),
+                        MagicTargetChoice.POS_TARGET_CREATURE
+                    ),
+                    MagicPumpTargetPicker.create(),
                     amount,
                     this,
                     "You may$ pay {1}{W}$. If you do, put a +1/+1 counter " +

@@ -24,9 +24,9 @@ public class Sludge_Strider {
                         permanent,
                         permanent.getController(),
                         new MagicMayChoice(
-                                "You may pay {1}.",
-                                new MagicPayManaCostChoice(MagicManaCost.ONE),
-                                MagicTargetChoice.NEG_TARGET_PLAYER),
+                            new MagicPayManaCostChoice(MagicManaCost.ONE),
+                            MagicTargetChoice.NEG_TARGET_PLAYER
+                        ),
                         this,
                         "You may$ pay {1}$. If you do, target player$ loses 1 life and you gain 1 life."):
                 MagicEvent.NONE;
@@ -56,7 +56,6 @@ public class Sludge_Strider {
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        "You may pay {1}.",
                         new MagicPayManaCostChoice(MagicManaCost.ONE),
                         MagicTargetChoice.NEG_TARGET_PLAYER
                     ),

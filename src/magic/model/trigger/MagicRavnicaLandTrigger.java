@@ -12,7 +12,6 @@ import magic.model.event.MagicEvent;
 public class MagicRavnicaLandTrigger extends MagicWhenComesIntoPlayTrigger {
 
     private static final MagicRavnicaLandTrigger INSTANCE = new MagicRavnicaLandTrigger();
-    private static final MagicChoice RAVNICA_CHOICE = new MagicMayChoice("You may pay 2 life.");
     
     private MagicRavnicaLandTrigger() {}
 
@@ -29,7 +28,7 @@ public class MagicRavnicaLandTrigger extends MagicWhenComesIntoPlayTrigger {
             return new MagicEvent(
                 permanent,
                 player,
-                RAVNICA_CHOICE,
+                new MagicMayChoice(),
                 this,
                 "You may$ pay 2 life. If you don't, "+permanent.getName()+" enters the battlefield tapped."
             );

@@ -16,7 +16,6 @@ public class MagicPlayOgreUnlessEvent extends MagicEvent {
             source,
             player,
             new MagicMayChoice(
-                "You may pay "+cost.getText()+'.',
                 new MagicPayManaCostChoice(cost)
             ),
             controller,

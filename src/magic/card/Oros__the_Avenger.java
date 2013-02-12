@@ -25,8 +25,8 @@ public class Oros__the_Avenger {
                         permanent,
                         player,
                         new MagicMayChoice(
-                            "You may pay {2}{W}.",
-                            new MagicPayManaCostChoice(MagicManaCost.TWO_WHITE)),
+                            new MagicPayManaCostChoice(MagicManaCost.TWO_WHITE)
+                        ),
                         this,
                         "You may$ pay {2}{W}$. If you do, SN " +
                         "deals 3 damage to each nonwhite creature."):

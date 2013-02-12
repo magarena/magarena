@@ -20,13 +20,14 @@ public class Mentor_of_the_Meek {
                     otherPermanent.getController() == player &&
                     otherPermanent.getPower() <= 2) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicMayChoice(
-                                "You may pay {1}.",
-                                new MagicPayManaCostChoice(MagicManaCost.ONE)),
-                        this,
-                        "You may$ pay {1}$. If you do, draw a card."):
+                    permanent,
+                    player,
+                    new MagicMayChoice(
+                        new MagicPayManaCostChoice(MagicManaCost.ONE)
+                    ),
+                    this,
+                    "You may$ pay {1}$. If you do, draw a card."
+                ):
                 MagicEvent.NONE;
         }
         
