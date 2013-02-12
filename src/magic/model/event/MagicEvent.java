@@ -302,6 +302,10 @@ public class MagicEvent implements MagicCopyable {
         return (MagicItemOnStack)ref;
     }
     
+    public final MagicCardOnStack getRefCardOnStack() {
+        return (MagicCardOnStack)ref;
+    }
+    
     public final MagicCard getRefCard() {
         return (MagicCard)ref;
     }
