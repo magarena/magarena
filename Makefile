@@ -23,6 +23,7 @@ cubes: \
 
 themes: \
 	release/Magarena/mods/felt_theme.zip \
+	release/Magarena/mods/brown_theme.zip \
 	release/Magarena/mods/blackswamp_theme.zip \
 	release/Magarena/mods/bluemarble_theme.zip \
 	release/Magarena/mods/darkbattle_theme.zip \
