@@ -11,7 +11,7 @@
                     permanent,
                     new MagicSimpleMayChoice(
                         MagicSimpleMayChoice.GAIN_LIFE,
-                        0,
+                        cardOnStack.getConvertedCost(),
                         MagicSimpleMayChoice.DEFAULT_YES
                     ),
                     cardOnStack,
