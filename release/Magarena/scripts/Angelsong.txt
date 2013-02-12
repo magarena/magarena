@@ -1,0 +1,10 @@
+name=Angelsong
+url=http://magiccards.info/ala/en/4.html
+image=http://magiccards.info/scans/en/ala/4.jpg
+value=4.000
+rarity=C
+type=Instant
+cost={1}{W}
+timing=pump
+ability=cycling {2}
+requires_card_code=Fog
