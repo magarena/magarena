@@ -37,7 +37,7 @@ public class MagicSimpleMayChoice extends MagicChoice {
     private final int amount;
     private int defaultChoice;
     
-    public MagicSimpleMayChoice(final String description,final int action,final int amount,final int defaultChoice) {
+    private MagicSimpleMayChoice(final String description,final int action,final int amount,final int defaultChoice) {
         super(description);
         this.action = action;
         this.amount = amount;

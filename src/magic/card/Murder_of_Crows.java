@@ -19,7 +19,6 @@ public class Murder_of_Crows {
                     permanent,
                     permanent.getController(),
                     new MagicSimpleMayChoice(
-                        "You may draw a card. If you do, discard a card.",
                         MagicSimpleMayChoice.DRAW_CARDS,
                         1,
                         MagicSimpleMayChoice.DEFAULT_NONE

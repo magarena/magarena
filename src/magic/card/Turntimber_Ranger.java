@@ -20,17 +20,18 @@ public class Turntimber_Ranger {
             return (otherPermanent.getController() == permanent.getController() &&
                     otherPermanent.hasSubType(MagicSubType.Ally)) ?
                 new MagicEvent(
-                        permanent,
-                        new MagicSimpleMayChoice(
-                            "Put token?",
-                            MagicSimpleMayChoice.PLAY_TOKEN,
-                            1,
-                            MagicSimpleMayChoice.DEFAULT_YES),
-                        new MagicDestroyTargetPicker(false),
-                        this,
-                        "PN may$ put a 2/2 green Wolf creature " +
-                        "token onto the battlefield. If you do, put a " +
-                        "+1/+1 counter on SN.") :
+                    permanent,
+                    new MagicSimpleMayChoice(
+                        MagicSimpleMayChoice.PLAY_TOKEN,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_YES
+                    ),
+                    new MagicDestroyTargetPicker(false),
+                    this,
+                    "PN may$ put a 2/2 green Wolf creature " +
+                    "token onto the battlefield. If you do, put a " +
+                    "+1/+1 counter on SN."
+                ) :
                 MagicEvent.NONE;
         }
         

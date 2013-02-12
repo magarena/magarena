@@ -24,7 +24,6 @@ public class Mask_of_Memory {
                 new MagicEvent(
                     permanent,
                     new MagicSimpleMayChoice(
-                        "You may draw two cards.",
                         MagicSimpleMayChoice.DRAW_CARDS,
                         2,
                         MagicSimpleMayChoice.DEFAULT_NONE

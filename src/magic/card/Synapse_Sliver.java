@@ -25,7 +25,6 @@ public class Synapse_Sliver {
                         permanent,
                         player,
                         new MagicSimpleMayChoice(
-                            player + " may draw a card.",
                             MagicSimpleMayChoice.DRAW_CARDS,
                             1,
                             MagicSimpleMayChoice.DEFAULT_NONE

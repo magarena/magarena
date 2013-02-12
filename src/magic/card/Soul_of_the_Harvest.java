@@ -23,10 +23,10 @@ public class Soul_of_the_Harvest {
                         permanent,
                         permanent.getController(),
                         new MagicSimpleMayChoice(
-                            "You may draw a card.",
                             MagicSimpleMayChoice.DRAW_CARDS,
                             1,
-                            MagicSimpleMayChoice.DEFAULT_NONE),
+                            MagicSimpleMayChoice.DEFAULT_NONE
+                        ),
                         this,
                         "You may$ draw a card."):
                 MagicEvent.NONE;
