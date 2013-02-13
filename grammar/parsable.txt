@@ -1276,6 +1276,39 @@ cumulative upkeep {r}
 cumulative upkeep {u}
 cumulative upkeep {u}{r}
 cumulative upkeep {w}
+cycling {1}{b}
+cycling {1}{b}{b}
+cycling {1}{r}
+cycling {1}{r}{r}
+cycling {1}{u}
+cycling {1}{w}
+cycling {2}
+cycling {2}{b}
+cycling {2}{g}
+cycling {2}{g}{g}
+cycling {2}{r}
+cycling {2}{u}
+cycling {2}{w}
+cycling {3}
+cycling {3}{b}{b}
+cycling {4}{g}{g}
+cycling {4}{u}{u}
+cycling {5}{b}{r}{g}
+cycling {5}{g}{w}{u}
+cycling {5}{r}{g}{w}
+cycling {5}{r}{r}
+cycling {5}{u}{b}{r}
+cycling {5}{w}{u}{b}
+cycling {b}
+cycling {b}{b}
+cycling {b/r}
+cycling {g}
+cycling {g/w}
+cycling {r}
+cycling {r/g}
+cycling {u}
+cycling {u/b}
+cycling {w}
 @ deals 10 damage to target creature or player.
 @ deals 10 damage to target player and you gain 10 life.
 @ deals 13 damage to each creature.

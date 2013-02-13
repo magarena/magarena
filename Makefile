@@ -466,7 +466,7 @@ parser/test_all: $(MAG) grammar/rules.txt
 parser/run: $(MAG)
 	$(JAVA) magic.grammar.Check
 
-grammar/parsable.txt: grammar/mtg.peg
+grammar/parsable.txt: src/magic/grammar/MagicRuleParser.java
 	make parser/test_all > grammar/test_all.out
 	cat grammar/test_all.out | grep PARSED | sed 's/PARSED: //' | sort | uniq > $@
 	cat grammar/test_all.out | grep FAILED | sort | uniq -c | sort -n > grammar/failed.txt
