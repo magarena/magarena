@@ -1,0 +1,12 @@
+name=Nefarox, Overlord of Grixis
+url=http://magiccards.info/m13/en/103.html
+image=http://magiccards.info/scans/en/m13/103.jpg
+value=2.920
+rarity=R
+type=Legendary,Creature
+subtype=Demon
+cost={4}{B}{B}
+pt=5/5
+ability=exalted
+timing=main
+requires_groovy_code
