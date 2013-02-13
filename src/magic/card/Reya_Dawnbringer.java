@@ -19,7 +19,6 @@ public class Reya_Dawnbringer {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             return permanent.isController(upkeepPlayer) ?
-                MagicEvent.NONE :
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
@@ -28,7 +27,9 @@ public class Reya_Dawnbringer {
                     new MagicGraveyardTargetPicker(true),
                     this,
                     "PN may$ return target creature card$ from " +
-                    "his or her graveyard to the battlefield.");
+                    "his or her graveyard to the battlefield."
+                ):
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(
