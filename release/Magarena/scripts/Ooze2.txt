@@ -1,0 +1,10 @@
+name=Ooze2
+token=Ooze
+image=http://magiccards.info/extras/token/magic-2011/ooze-1.jpg
+value=2
+type=Creature
+subtype=Ooze
+color=g
+cost={0}
+pt=2/2
+requires_groovy_code

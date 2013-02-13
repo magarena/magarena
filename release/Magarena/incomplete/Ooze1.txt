@@ -1,9 +1,0 @@
-name=Ooze1
-token=Ooze1
-image=http://magiccards.info/extra/token/magic-2011/ooze-2.html
-value=1
-type=Creature
-subtype=Ooze
-color=g
-cost={0}
-pt=1/1
