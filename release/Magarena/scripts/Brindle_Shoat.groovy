@@ -1,0 +1,19 @@
+[
+    new MagicWhenDiesTrigger() {
+        @Override
+        public MagicEvent getEvent(final MagicPermanent permanent) {
+            return new MagicEvent(
+                permanent,
+                this,
+                "PN puts a 3/3 green Boar creature token onto the battlefield."
+            );
+        }
+        @Override
+        public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] choiceResults) {
+            game.doAction(new MagicPlayTokenAction(event.getPlayer(), TokenCardDefinitions.get("Boar3")));
+        }
+    }
+]

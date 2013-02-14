@@ -1,0 +1,9 @@
+name=Boar3
+token=Boar
+image=http://forums.mtgsalvation.com/attachment.php?attachmentid=136530&d=1350454367
+value=3
+type=Creature
+subtype=Boar
+color=g
+cost={0}
+pt=3/3
