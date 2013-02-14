@@ -2423,6 +2423,12 @@ red creatures you control have first strike.
 regenerate each creature you control.
 regenerate target creature.
 regenerate target permanent.
+reinforce 1—{1}{g}
+reinforce 1—{1}{r}
+reinforce 1—{1}{w}
+reinforce 2—{2}{w}
+reinforce 3—{3}{g}
+reinforce x—{x}{w}{w}
 remove a +1/+0 counter from @: prevent the next 1 damage that would be dealt to @ this turn.
 remove a +1/+1 counter from @: add {1} to your mana pool.
 remove a -1/-1 counter from @: add one mana of any color to your mana pool.

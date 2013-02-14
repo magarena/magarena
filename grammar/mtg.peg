@@ -175,6 +175,7 @@ Keyword
     / "level" SPACE Number "+"
     / "champion" SPACE "a" "n"? SPACE SelectCreature
     / "cycling" SPACE ManaCost
+    / "reinforce" SPACE Number "—" ManaCost
     ;
 
 ColorlessCost
