@@ -1,0 +1,11 @@
+name=Scorchwalker
+url=http://magiccards.info/gtc/en/104.html
+image=http://magiccards.info/scans/en/gtc/104.jpg
+value=2.365
+rarity=C
+type=Creature
+subtype=Elemental
+cost={3}{R}
+pt=5/1
+timing=main
+requires_groovy_code
