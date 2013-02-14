@@ -13,12 +13,14 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.stack.MagicAbilityOnStack;
+import magic.model.target.MagicPumpTargetPicker;
 
 public abstract class MagicBloodrushActivation extends MagicCardActivation {
 
     final MagicManaCost cost;
+    final String desc;
 
-    public MagicBloodrushActivation(final MagicManaCost aCost) {
+    public MagicBloodrushActivation(final MagicManaCost aCost, final String aDesc) {
         super(
             new MagicCondition[]{
                 aCost.getCondition()
@@ -27,6 +29,7 @@ public abstract class MagicBloodrushActivation extends MagicCardActivation {
             "Bloodrush"
         );
         cost = aCost;
+        desc = aDesc;
     }
   
     public MagicEvent[] getCostEvent(final MagicCard source) {
@@ -63,7 +66,15 @@ public abstract class MagicBloodrushActivation extends MagicCardActivation {
         );
     }
     
-    public abstract MagicEvent getCardEvent(final MagicCard source,final MagicPayedCost payedCost);
+    public MagicEvent getCardEvent(final MagicCard source,final MagicPayedCost payedCost) {
+        return new MagicEvent(
+            source,
+            MagicTargetChoice.POS_TARGET_ATTACKING_CREATURE,
+            MagicPumpTargetPicker.create(),
+            this,
+            desc
+        );
+    }
 
     @Override
     final MagicTargetChoice getTargetChoice(final MagicCard source) {
