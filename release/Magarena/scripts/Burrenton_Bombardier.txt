@@ -1,0 +1,11 @@
+name=Burrenton Bombardier
+url=http://magiccards.info/mt/en/3.html
+image=http://magiccards.info/scans/en/mt/3.jpg
+rarity=C
+value=2.365
+type=Creature
+subtype=Kithkin,Soldier
+cost={2}{W}
+pt=2/2
+ability=flying,reinforce 2 {2}{W}
+timing=main
