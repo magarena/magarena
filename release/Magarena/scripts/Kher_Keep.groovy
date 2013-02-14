@@ -31,7 +31,7 @@
                 final Object[] choiceResults) {
             game.doAction(new MagicPlayTokenAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("Kobolds of Kher Keep")
+                TokenCardDefinitions.get("Kobolds")
             ));
         }
     }

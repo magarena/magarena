@@ -1,4 +1,4 @@
-name=Kobolds of Kher Keep
+name=Kobolds
 token=Kobolds of Kher Keep
 image=http://www.magic-ville.com/pics/big/vir/036.jpg
 value=3.846
