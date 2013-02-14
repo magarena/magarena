@@ -1,0 +1,9 @@
+name=Kobolds of Kher Keep
+token=Kobolds of Kher Keep
+image=http://www.magic-ville.com/pics/big/vir/036.jpg
+value=3.846
+type=Creature
+subtype=Kobold
+color=r
+cost={0}
+pt=0/1
