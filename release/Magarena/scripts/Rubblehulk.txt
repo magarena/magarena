@@ -1,0 +1,10 @@
+name=Rubblehulk
+url=http://magiccards.info/gtc/en/191.html
+image=http://magiccards.info/scans/en/gtc/191.jpg
+value=2.365
+rarity=R
+type=Creature
+subtype=Elemental
+cost={4}{R}{G}
+timing=main
+requires_groovy_code
