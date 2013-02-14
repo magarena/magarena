@@ -1,0 +1,12 @@
+name=Ghor-Clan Rampager
+url=http://magiccards.info/gtc/en/167.html
+image=http://magiccards.info/scans/en/gtc/167.jpg
+value=2.365
+rarity=U
+type=Creature
+subtype=Beast
+cost={2}{R}{G}
+pt=4/4
+ability=trample
+timing=main
+requires_groovy_code
