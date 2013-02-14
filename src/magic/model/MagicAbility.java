@@ -17,6 +17,7 @@ import magic.model.event.MagicTiming;
 import magic.model.event.MagicVividManaActivation;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicCyclingActivation;
+import magic.model.event.MagicReinforceActivation;
 import magic.model.mstatic.MagicCDA;
 import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicAllyGrowTrigger;
@@ -714,6 +715,14 @@ public enum MagicAbility {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             final MagicManaCost manaCost = MagicManaCost.create(arg);
             card.add(new MagicCyclingActivation(manaCost));
+        }
+    },
+    Reinforce("reinforce", 20) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final String[] token = arg.split(" ");
+            final int n = Integer.parseInt(token[0]);
+            final MagicManaCost manaCost = MagicManaCost.create(token[1]);
+            card.add(new MagicReinforceActivation(n, manaCost));
         }
     },
     None("",0);
