@@ -211,6 +211,9 @@ decks/dl:
 	for i in `curl http://www.wizards.com/magic/magazine/archive.aspx?tag=topdeck | grep -o mtg/daily/td/[0-9]* | cut -d'/' -f4`; do make decks/td_$$i.dec; done
 	grep "name=" -r release/Magarena/incomplete | sed 's/.*name=/100 /' > decks/with_scripts.dec
 
+decks/with_scripts.dec: $(wildcard release/Magarena/incomplete/*.txt)
+	cat release/Magarena/incomplete/*.txt | grep "name=" | sed 's/.*name=//;s/^/100 /' | sort > $@
+
 %.fix_date:
 	touch $* -d "`cat $* | head -2 | tail -1 | sed 's/# //'`"
 
@@ -235,7 +238,7 @@ decks/ml_%.dec: scripts/apprentice2dec.awk
 
 # Decks from www.mtgtop8.com
 decks/mtgtop8_%.dec:
-	wget "http://www.mtgtop8.com/export_files/deck$*.mwDeck" -O - > $@
+	wget "http://www.mtgtop8.com/export_files/deck$*.mwDeck" -O $@
 
 ref/rules.txt:
 	curl `wget http://www.wizards.com/magic/rules -O - | grep txt | cut -d'"' -f4` | fmt -s > $@
@@ -359,10 +362,11 @@ github/push:
 unique_property:
 	 grep "=" release/Magarena/scripts/*.txt| cut -d'=' -f1  | sort | uniq -c | sort -n
 
-cards/scored_by_dec.tsv: cards/existing_tip.txt $(wildcard decks/*.dec)
+cards/scored_by_dec.tsv: cards/existing_tip.txt cards/unimplementable.tsv $(wildcard decks/*.dec)
 	./scripts/score_card.awk decks/*.dec |\
 	sort -rg |\
-	./scripts/keep_unimplemented.awk $(word 1,$^) /dev/stdin  > $@
+	./scripts/keep_unimplemented.awk $(word 1,$^) /dev/stdin |\
+	./scripts/keep_unimplemented.awk <(cut -f1 $(word 2,$^)) /dev/stdin > $@
 	
 cards/mtg_mana_costs:
 	grep -ho "\(\{[^\}]\+\}\)\+" -r cards/cards.xml | sort | uniq > $@
