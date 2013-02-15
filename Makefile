@@ -229,8 +229,13 @@ decks/mf_%.dec:
 	curl http://www.wizards.com/Magic/Magazine/Article.aspx?x=mtgcom/daily/mf$* | awk -f scripts/dailyhtml2dec.awk > $@
 	make $@.fix_date
 
+# Decks from magic-league.com
 decks/ml_%.dec: scripts/apprentice2dec.awk
 	wget "http://www.magic-league.com/decks/download.php?deck=$*&index=1" -O - | flip -u - | awk -f $^ > $@
+
+# Decks from www.mtgtop8.com
+decks/mtgtop8_%.dec:
+	wget "http://www.mtgtop8.com/export_files/deck$*.mwDeck" -O - > $@
 
 ref/rules.txt:
 	curl `wget http://www.wizards.com/magic/rules -O - | grep txt | cut -d'"' -f4` | fmt -s > $@
@@ -355,7 +360,7 @@ unique_property:
 	 grep "=" release/Magarena/scripts/*.txt| cut -d'=' -f1  | sort | uniq -c | sort -n
 
 cards/scored_by_dec.tsv: cards/existing_tip.txt $(wildcard decks/*.dec)
-	./scripts/score_card.awk `ls -1tr decks/*.dec` |\
+	./scripts/score_card.awk decks/*.dec |\
 	sort -rg |\
 	./scripts/keep_unimplemented.awk $(word 1,$^) /dev/stdin  > $@
 	
