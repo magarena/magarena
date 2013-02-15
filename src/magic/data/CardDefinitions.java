@@ -89,6 +89,7 @@ public class CardDefinitions {
         if (cardDefinition.isToken()) {
             TokenCardDefinitions.add(cardDefinition);
         } else {
+            cardDefinition.add(new MagicCardActivation(cardDefinition));
             CubeDefinitions.getCubeDefinition("all").add(cardDefinition.getName());
         }
     }
@@ -139,7 +140,6 @@ public class CardDefinitions {
     private static void loadCardDefinition(final File file) {
         try {
             final MagicCardDefinition cdef = prop2carddef(FileIO.toProp(file));
-            cdef.add(new MagicCardActivation(cdef));
             cdef.validate();
             addDefinition(cdef);
         } catch (final Throwable cause) {
