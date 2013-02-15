@@ -8,6 +8,11 @@
     prev = ""
 }
 
+/^\/\// {
+    next
+    prev = ""
+}
+
 {
     # decay of scores
     if (FILENAME != prev) {
@@ -17,6 +22,10 @@
         prev = FILENAME
     }
 
+    # to normalize mwDeck format
+    gsub("\\[.*\\]", "")
+    gsub("SB:", "")
+    gsub("^ *", "")
 
     s = gensub("^([0-9]*) ", "\\1|", "g", $0)
     #print s
