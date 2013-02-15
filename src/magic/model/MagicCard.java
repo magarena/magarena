@@ -141,6 +141,10 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
         return card;
     }
 
+    public void reveal() {
+        setKnown(true);
+    }
+
     void setKnown(final boolean known) {
         this.known=known;
     }
