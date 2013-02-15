@@ -117,12 +117,13 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
     }
 
     public MagicPowerToughness genPowerToughness(final MagicPermanent perm) {
-        final MagicPowerToughness pt = cardDefinition.genPowerToughness();
-        cardDefinition.applyCDAPowerToughness(
-                getGame(), 
-                perm.isValid() ? perm.getController() : getOwner(),
-                perm,
-                pt);
+        final MagicPowerToughness pt = getCardDefinition().genPowerToughness();
+        getCardDefinition().applyCDAPowerToughness(
+            getGame(), 
+            perm.isValid() ? perm.getController() : getOwner(),
+            perm,
+            pt
+        );
         return pt;
     }
     
@@ -224,7 +225,7 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
     
     @Override
     public Collection<MagicActivation> getActivations() {
-        return cardDefinition.getCardActivations();
+        return getCardDefinition().getCardActivations();
     }
 
     @Override
