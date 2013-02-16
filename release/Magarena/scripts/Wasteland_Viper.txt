@@ -1,0 +1,12 @@
+name=Wasteland Viper
+url=http://magiccards.info/gtc/en/139.html
+image=http://magiccards.info/scans/en/gtc/139.jpg
+value=2.365
+rarity=U
+type=Creature
+subtype=Snake
+cost={G}
+pt=1/2
+ability=deathtouch
+timing=main
+requires_groovy_code
