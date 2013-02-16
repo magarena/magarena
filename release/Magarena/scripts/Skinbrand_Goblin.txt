@@ -1,0 +1,11 @@
+name=Skinbrand Goblin
+url=http://magiccards.info/gtc/en/105.html
+image=http://magiccards.info/scans/en/gtc/105.jpg
+value=2.365
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+cost={1}{R}
+pt=2/1
+timing=main
+requires_groovy_code
