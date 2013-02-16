@@ -1,5 +1,5 @@
-name=Bird
-token=Bird4
+name=Bird4
+token=Bird
 image=http://magiccards.info/extras/token/player-rewards-2003/rukh.jpg
 value=3
 type=Creature
