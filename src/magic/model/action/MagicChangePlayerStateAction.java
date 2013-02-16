@@ -30,12 +30,13 @@ public class MagicChangePlayerStateAction extends MagicAction {
                     final MagicPermanent source,
                     final MagicPlayer aPlayer) {
                 if (player.getId() == aPlayer.getId()) {
-                    //remove Exhausted state during upkeep
-                    if (state == MagicPlayerState.Exhausted && aPlayer.getGame().isPhase(MagicPhaseType.Upkeep)) {
+                    //remove Exhausted state during Untap as MagicUntapPhase stores a copy of the state at begin step 
+                    if (state == MagicPlayerState.Exhausted && aPlayer.getGame().isPhase(MagicPhaseType.Untap)) {
                         game.addDelayedAction(new MagicRemoveStaticAction(this));
                         return;
+                    } else {
+                        aPlayer.setState(state);
                     }
-                    aPlayer.setState(state);
                 }
             }   
         }));
