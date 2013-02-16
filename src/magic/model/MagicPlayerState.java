@@ -9,8 +9,6 @@ public enum MagicPlayerState {
     CantCastSpells("can't cast spells this turn"),
     CantActivateAbilities("can't activate abilities this turn"),
     ;
-
-    public static final int CLEANUP_MASK=Exhausted.getMask();
     
     private final String description;
     private final int mask;

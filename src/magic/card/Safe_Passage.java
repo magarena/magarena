@@ -22,7 +22,7 @@ public class Safe_Passage {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangePlayerStateAction(event.getPlayer(),MagicPlayerState.PreventAllDamage,true));
+            game.doAction(new MagicChangePlayerStateAction(event.getPlayer(),MagicPlayerState.PreventAllDamage));
         }
     };
 }

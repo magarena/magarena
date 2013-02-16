@@ -31,9 +31,9 @@ public class Silence {
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer opponent) {
                     game.doAction(new MagicChangePlayerStateAction(
-                            opponent,
-                            MagicPlayerState.CantCastSpells,
-                            true));
+                        opponent,
+                        MagicPlayerState.CantCastSpells
+                    ));
                 }
             });
         }

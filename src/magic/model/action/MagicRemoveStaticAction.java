@@ -13,6 +13,10 @@ public class MagicRemoveStaticAction extends MagicAction {
         permanent = aPermanent;
         mstatic = aStatic;
     }
+    
+    public MagicRemoveStaticAction(final MagicStatic aStatic) {
+        this(MagicPermanent.NONE, aStatic);
+    }
 
     @Override
     public void doAction(final MagicGame game) {

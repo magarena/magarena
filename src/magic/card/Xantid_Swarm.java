@@ -19,10 +19,11 @@ public class Xantid_Swarm {
             final MagicPlayer player = permanent.getController();
             return (permanent == creature) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        this,
-                        player.getOpponent() + " can't cast spells this turn."):
+                    permanent,
+                    player,
+                    this,
+                    player.getOpponent() + " can't cast spells this turn."
+                ):
                 MagicEvent.NONE;           
         }
         
@@ -32,9 +33,9 @@ public class Xantid_Swarm {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangePlayerStateAction(
-                    event.getPlayer().getOpponent(),
-                    MagicPlayerState.CantCastSpells,
-                    true));
+                event.getPlayer().getOpponent(),
+                MagicPlayerState.CantCastSpells
+            ));
         }
     };
 }

@@ -25,9 +25,10 @@ public class Clinging_Mists {
                 final MagicCardOnStack cardOnStack,
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack,
-                    this,
-                    "Prevent all combat damage that would be dealt this turn.");
+                cardOnStack,
+                this,
+                "Prevent all combat damage that would be dealt this turn."
+            );
         }
         @Override
         public void executeEvent(
@@ -36,22 +37,23 @@ public class Clinging_Mists {
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicChangePlayerStateAction(
-                    player,
-                    MagicPlayerState.PreventAllCombatDamage,
-                    true));
+                player,
+                MagicPlayerState.PreventAllCombatDamage
+            ));
             game.doAction(new MagicChangePlayerStateAction(
-                    player.getOpponent(),
-                    MagicPlayerState.PreventAllCombatDamage,
-                    true));
+                player.getOpponent(),
+                MagicPlayerState.PreventAllCombatDamage
+            ));
             if (MagicCondition.FATEFUL_HOUR.accept(event.getSource())) {
                 final Collection<MagicPermanent> targets =
-                        game.filterPermanents(player,MagicTargetFilter.TARGET_ATTACKING_CREATURE);
+                    game.filterPermanents(player,MagicTargetFilter.TARGET_ATTACKING_CREATURE);
                 for (final MagicPermanent perm : targets) {
                     game.doAction(new MagicTapAction(perm,true));
                     game.doAction(new MagicChangeStateAction(
-                            perm,
-                            MagicPermanentState.DoesNotUntapDuringNext,
-                            true));
+                        perm,
+                        MagicPermanentState.DoesNotUntapDuringNext,
+                        true
+                    ));
                 }
             }
         }

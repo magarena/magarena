@@ -28,7 +28,7 @@ public class Exhaustion {
                 final Object[] choiceResults) {
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
-                    game.doAction(new MagicChangePlayerStateAction(player,MagicPlayerState.Exhausted,true));
+                    game.doAction(new MagicChangePlayerStateAction(player,MagicPlayerState.Exhausted));
                 }
             });
         }

@@ -24,8 +24,8 @@ public class Fog {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
-            game.doAction(new MagicChangePlayerStateAction(player,MagicPlayerState.PreventAllCombatDamage,true));
-            game.doAction(new MagicChangePlayerStateAction(player.getOpponent(),MagicPlayerState.PreventAllCombatDamage,true));
+            game.doAction(new MagicChangePlayerStateAction(player,MagicPlayerState.PreventAllCombatDamage));
+            game.doAction(new MagicChangePlayerStateAction(player.getOpponent(),MagicPlayerState.PreventAllCombatDamage));
         }
     };
 }

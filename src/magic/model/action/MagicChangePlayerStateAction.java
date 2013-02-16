@@ -3,7 +3,9 @@ package magic.model.action;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
 import magic.model.MagicPlayerState;
+import magic.model.phase.MagicPhaseType;
 import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicLayer;
 
@@ -11,43 +13,29 @@ public class MagicChangePlayerStateAction extends MagicAction {
 
     private final MagicPlayer player;
     private final MagicPlayerState state;
-    private final boolean set;
-    private boolean changed;
 
-    public MagicChangePlayerStateAction(final MagicPlayer player,final MagicPlayerState state,final boolean set) {
-        this.player=player;
-        this.state=state;
-        this.set=set;
+    public MagicChangePlayerStateAction(final MagicPlayer aPlayer,final MagicPlayerState aState) {
+        player = aPlayer;
+        state = aState;
     }
     
     @Override
     public void doAction(final MagicGame game) {
-        changed = player.hasState(state) != set;
-
-        // special case for Exhaustion state
-        if (state == MagicPlayerState.Exhausted) {
-            if (set) {
-                player.setState(state);
-            } else {
-                player.clearState(state);
-            }
+        if (player.hasState(state)) {
             return;
         }
-
-        // all other states handled by continuous effect layer
-        game.doAction(new MagicAddStaticAction(new MagicStatic(
-                MagicLayer.Player,
-                MagicStatic.UntilEOT) {
+        game.doAction(new MagicAddStaticAction(new MagicStatic(MagicLayer.Player) {
             @Override
             public void modPlayer(
                     final MagicPermanent source,
                     final MagicPlayer aPlayer) {
                 if (player.getId() == aPlayer.getId()) {
-                    if (set) {
-                        aPlayer.setState(state);
-                    } else {
-                        aPlayer.clearState(state);
+                    //remove Exhausted state during upkeep
+                    if (state == MagicPlayerState.Exhausted && aPlayer.getGame().isPhase(MagicPhaseType.Upkeep)) {
+                        game.addDelayedAction(new MagicRemoveStaticAction(this));
+                        return;
                     }
+                    aPlayer.setState(state);
                 }
             }   
         }));
@@ -55,12 +43,5 @@ public class MagicChangePlayerStateAction extends MagicAction {
 
     @Override
     public void undoAction(final MagicGame game) {
-        if (state == MagicPlayerState.Exhausted && changed) {
-            if (set) {
-                player.clearState(state);
-            } else {
-                player.setState(state);
-            }
-        }
     }    
 }
