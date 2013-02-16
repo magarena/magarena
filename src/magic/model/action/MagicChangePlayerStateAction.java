@@ -12,7 +12,6 @@ public class MagicChangePlayerStateAction extends MagicAction {
     private boolean changed;
 
     public MagicChangePlayerStateAction(final MagicPlayer player,final MagicPlayerState state,final boolean set) {
-        
         this.player=player;
         this.state=state;
         this.set=set;
@@ -20,7 +19,6 @@ public class MagicChangePlayerStateAction extends MagicAction {
     
     @Override
     public void doAction(final MagicGame game) {
-
         changed=player.hasState(state)!=set;
         if (changed) {
             if (set) {
@@ -33,7 +31,6 @@ public class MagicChangePlayerStateAction extends MagicAction {
 
     @Override
     public void undoAction(final MagicGame game) {
-
         if (changed) {
             if (set) {
                 player.clearState(state);                
