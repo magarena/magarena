@@ -572,6 +572,7 @@ public class MagicPlayer implements MagicTarget {
         switch (layer) {
             case Player:
                 cachedAbilityFlags = MagicAbility.noneOf();
+                stateFlags &= MagicPlayerState.CLEANUP_MASK;
                 break;
             default:
                 throw new RuntimeException("No case for " + layer + " in MagicPlayer.apply");

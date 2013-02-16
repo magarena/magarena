@@ -8,7 +8,6 @@ import magic.model.MagicPlayerState;
 public class MagicCleanupPlayerAction extends MagicAction {
 
     private final MagicPlayer player;
-    private int oldStateFlags;
     private int oldPreventDamage;
     private int oldDrawnCards;
     
@@ -18,9 +17,6 @@ public class MagicCleanupPlayerAction extends MagicAction {
 
     @Override
     public void doAction(final MagicGame game) {
-        oldStateFlags=player.getStateFlags();
-        player.setStateFlags(oldStateFlags&MagicPlayerState.CLEANUP_MASK);
-
         oldPreventDamage=player.getPreventDamage();
         player.setPreventDamage(0);
 
@@ -40,7 +36,6 @@ public class MagicCleanupPlayerAction extends MagicAction {
 
     @Override
     public void undoAction(final MagicGame game) {
-        player.setStateFlags(oldStateFlags);
         player.setPreventDamage(oldPreventDamage);
         player.setDrawnCards(oldDrawnCards);
     }
