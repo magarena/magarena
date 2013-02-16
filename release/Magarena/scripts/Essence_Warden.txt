@@ -8,4 +8,4 @@ subtype=Elf,Shaman
 cost={G}
 pt=1/1
 timing=main
-requires_card_code - couldn't get this to work by using Soul Warden's card code for some reason
+requires_card_code=Soul Warden
