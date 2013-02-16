@@ -1,0 +1,12 @@
+name=Wrecking Ogre
+url=http://magiccards.info/gtc/en/112.html
+image=http://magiccards.info/scans/en/gtc/112.jpg
+value=2.365
+rarity=R
+type=Creature
+subtype=Ogre,Warrior
+cost={4}{R}
+pt=3/3
+ability=double strike
+timing=main
+requires_groovy_code
