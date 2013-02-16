@@ -1,0 +1,12 @@
+name=Viashino Shanktail
+url=http://magiccards.info/gtc/en/110.html
+image=http://magiccards.info/scans/en/gtc/110.jpg
+value=2.365
+rarity=U
+type=Creature
+subtype=Viashino,Warrior
+cost={3}{R}
+pt=3/1
+ability=first strike
+timing=main
+requires_groovy_code
