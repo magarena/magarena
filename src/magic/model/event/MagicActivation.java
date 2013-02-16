@@ -94,6 +94,10 @@ public abstract class MagicActivation<T extends MagicSource> implements MagicEve
             return false;
         }
         
+        if (source.isPermanent() && player.hasState(MagicPlayerState.CantActivateAbilities)) {
+            return false;
+        }
+        
         if (source.isSpell() && player.hasState(MagicPlayerState.CantCastSpells)) {
             return false;
         }
