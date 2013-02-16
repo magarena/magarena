@@ -1,0 +1,11 @@
+name=Rukh Egg
+url=http://magiccards.info/9e/en/214.html
+image=http://magiccards.info/scans/en/9e/214.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Bird
+cost={3}{R}
+pt=0/3
+timing=main
+requires_groovy_code
