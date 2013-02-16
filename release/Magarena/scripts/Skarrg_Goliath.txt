@@ -1,0 +1,12 @@
+name=Skarrg Goliath
+url=http://magiccards.info/gtc/en/133.html
+image=http://magiccards.info/scans/en/gtc/133.jpg
+value=2.365
+rarity=R
+type=Creature
+subtype=Beast
+cost={6}{G}{G}
+pt=9/9
+ability=trample
+timing=main
+requires_groovy_code
