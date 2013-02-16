@@ -1197,6 +1197,15 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }                        
     };
     
+    MagicCardFilterImpl TARGET_BLUE_CARD_FROM_HAND = new MagicCardFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+            return target.hasColor(MagicColor.Blue);
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType == MagicTargetType.Hand;
+        }                        
+    };
+    
     MagicCardFilterImpl TARGET_CREATURE_CARD_FROM_HAND = new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
             return target.getCardDefinition().isCreature();
@@ -1382,6 +1391,27 @@ public interface MagicTargetFilter<T extends MagicTarget> {
             };
         }
     }
+    
+    // Permanent reference can not be used because game is copied.
+    public static final class MagicOtherCardTargetFilter extends MagicCardFilterImpl {
+
+        private final MagicCardFilterImpl targetFilter;
+        private final long id;        
+
+        public MagicOtherCardTargetFilter(final MagicCardFilterImpl targetFilter,final MagicCard invalidCard) {
+            this.targetFilter=targetFilter;
+            this.id=invalidCard.getId();
+        }
+        @Override
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+            return targetFilter.accept(game,player,target) && 
+                   target.getId() != id;
+        }
+        @Override
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetFilter.acceptType(targetType);
+        }        
+    };
     
     // Permanent reference can not be used because game is copied.
     public static final class MagicOtherPermanentTargetFilter extends MagicPermanentFilterImpl {

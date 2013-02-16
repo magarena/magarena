@@ -1,7 +1,9 @@
 package magic.model.condition;
 
 import magic.model.MagicAbility;
+import magic.model.MagicColor;
 import magic.model.MagicCard;
+import magic.model.MagicCardList;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
@@ -85,6 +87,18 @@ public interface MagicCondition {
             return source.getController().getHandSize() >= 2;
         }
     };
+    
+    MagicCondition HAS_TWO_BLUE_CARDS_CONDITION = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            int numBlue = 0;
+            final MagicCardList hand = source.getController().getHand();
+            for (final MagicCard card : hand) {
+                numBlue += card.hasColor(MagicColor.Blue) ? 1 : 0;
+            }
+            return numBlue >= 2;
+        }
+    };
+    
     
     MagicCondition CAN_TAP_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {
