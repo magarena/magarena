@@ -249,6 +249,12 @@ public interface MagicCondition {
         }
     };
     
+    MagicCondition THREE_ATTACKERS_CONDITION=new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            return source.getController().getNrOfAttackers() >= 3;
+        }
+    };
+    
     MagicCondition TWO_CREATURES_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {
             return source.getController().getNrOfPermanentsWithType(MagicType.Creature)>=2;
