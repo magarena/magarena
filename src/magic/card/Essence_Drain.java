@@ -18,12 +18,13 @@ public class Essence_Drain {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack,
-                    MagicTargetChoice.TARGET_CREATURE_OR_PLAYER,
-                    new MagicDamageTargetPicker(3),
-                    this,
-                    "SN deals 3 damage to target creature or player$ and " +
-                    "PN gains 3 life.");
+                cardOnStack,
+                MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                new MagicDamageTargetPicker(3),
+                this,
+                "SN deals 3 damage to target creature or player$ and " +
+                "PN gains 3 life."
+            );
         }
         @Override
         public void executeEvent(

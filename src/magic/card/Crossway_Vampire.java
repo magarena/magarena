@@ -18,7 +18,7 @@ public class Crossway_Vampire {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
                 permanent,
-                MagicTargetChoice.TARGET_CREATURE,
+                MagicTargetChoice.NEG_TARGET_CREATURE,
                 new MagicNoCombatTargetPicker(false,true,false),
                 this,
                 "Target creature$ can't block this turn."

@@ -18,7 +18,7 @@ public class Skinrender {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
                 permanent,
-                MagicTargetChoice.TARGET_CREATURE,
+                MagicTargetChoice.NEG_TARGET_CREATURE,
                 new MagicWeakenTargetPicker(3,3),
                 this,
                 "Put three -1/-1 counters on target creature$."
