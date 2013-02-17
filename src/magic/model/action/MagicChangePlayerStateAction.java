@@ -22,27 +22,40 @@ public class MagicChangePlayerStateAction extends MagicAction {
     @Override
     public void doAction(final MagicGame game) {
         if (player.hasState(state)) {
-            return;
-        }
-        game.doAction(new MagicAddStaticAction(new MagicStatic(MagicLayer.Player) {
-            @Override
-            public void modPlayer(
-                    final MagicPermanent source,
-                    final MagicPlayer aPlayer) {
-                if (player.getId() == aPlayer.getId()) {
-                    //remove Exhausted state during Untap as MagicUntapPhase stores a copy of the state at begin step 
-                    if (state == MagicPlayerState.Exhausted && aPlayer.getGame().isPhase(MagicPhaseType.Untap)) {
-                        game.addDelayedAction(new MagicRemoveStaticAction(this));
-                        return;
-                    } else {
+            // do nothing
+        } else if (state == MagicPlayerState.Exhausted) {
+            // no duration, manually removed
+            game.doAction(new MagicAddStaticAction(new MagicStatic(MagicLayer.Player) {
+                @Override
+                public void modPlayer(
+                        final MagicPermanent source,
+                        final MagicPlayer aPlayer) {
+                    if (player.getId() == aPlayer.getId()) {
+                        // remove Exhausted state during Untap as MagicUntapPhase 
+                        // stores a copy of the state at begin step of untap phase
+                        if (aPlayer.getGame().isPhase(MagicPhaseType.Untap)) {
+                            game.addDelayedAction(new MagicRemoveStaticAction(this));
+                        } else {
+                            aPlayer.setState(state);
+                        }
+                    }
+                }   
+            }));
+        } else {
+            // until end of turn
+            game.doAction(new MagicAddStaticAction(new MagicStatic(MagicLayer.Player, MagicStatic.UntilEOT) {
+                @Override
+                public void modPlayer(
+                        final MagicPermanent source,
+                        final MagicPlayer aPlayer) {
+                    if (player.getId() == aPlayer.getId()) {
                         aPlayer.setState(state);
                     }
-                }
-            }   
-        }));
+                }   
+            }));
+        }
     }
 
     @Override
-    public void undoAction(final MagicGame game) {
-    }    
+    public void undoAction(final MagicGame game) {}    
 }
