@@ -1,0 +1,11 @@
+name=Azorius Arrester
+url=http://magiccards.info/rtr/en/5.html
+image=http://magiccards.info/scans/en/rtr/5.jpg
+value=3.937
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={1}{W}
+pt=2/1
+timing=main
+requires_groovy_code
