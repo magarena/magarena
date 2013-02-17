@@ -951,7 +951,7 @@ public class MagicGame {
             final MagicTargetChoice targetChoice,
             final MagicTargetHint targetHint) {
 
-        Collection<? extends MagicTarget> targets = targetChoice.getTargetFilter().filter(
+        final Collection<? extends MagicTarget> targets = targetChoice.getTargetFilter().filter(
             this,
             player,
             targetHint
