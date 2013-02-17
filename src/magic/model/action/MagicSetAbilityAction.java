@@ -21,8 +21,8 @@ public class MagicSetAbilityAction extends MagicAction {
         this.duration=duration;
     }
     
-    public MagicSetAbilityAction(final MagicPermanent permanent,final Set<MagicAbility> abilities) {
-        this(permanent,abilities,MagicStatic.UntilEOT);
+    public MagicSetAbilityAction(final MagicPermanent permanent,final MagicAbility first, final MagicAbility ... rest) {
+        this(permanent,MagicAbility.of(first,rest),MagicStatic.UntilEOT);
     }
     
     public MagicSetAbilityAction(final MagicPermanent permanent,final MagicAbility ability,final boolean duration) {

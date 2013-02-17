@@ -16,12 +16,6 @@ import java.util.Collection;
 import java.util.Set;
 
 public class Titanic_Ultimatum {
-    private static final Set<MagicAbility> TITANIC_ULTIMATUM_FLAGS = MagicAbility.of(
-        MagicAbility.FirstStrike,
-        MagicAbility.LifeLink,
-        MagicAbility.Trample
-    );
-
     public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(
@@ -42,7 +36,12 @@ public class Titanic_Ultimatum {
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicPermanent creature : targets) {
                 game.doAction(new MagicChangeTurnPTAction(creature,5,5));
-                game.doAction(new MagicSetAbilityAction(creature,TITANIC_ULTIMATUM_FLAGS));
+                game.doAction(new MagicSetAbilityAction(
+                    creature,
+                    MagicAbility.FirstStrike,
+                    MagicAbility.LifeLink,
+                    MagicAbility.Trample
+                ));
             }
         }
     };

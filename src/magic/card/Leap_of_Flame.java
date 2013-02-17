@@ -39,7 +39,8 @@ public class Leap_of_Flame {
                     game.doAction(new MagicChangeTurnPTAction(creature,1,0));
                     game.doAction(new MagicSetAbilityAction(
                         creature,
-                        MagicAbility.of(MagicAbility.Flying, MagicAbility.FirstStrike)
+                        MagicAbility.Flying, 
+                        MagicAbility.FirstStrike
                     ));
                 }
             });

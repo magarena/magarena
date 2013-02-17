@@ -14,12 +14,6 @@ import java.util.Collection;
 import java.util.Set;
 
 public class Victory_s_Herald {
-    
-    private static final Set<MagicAbility> VICTORYS_HERALD_FLAGS = MagicAbility.of(
-        MagicAbility.Flying,
-        MagicAbility.LifeLink
-    );
-
     public static final MagicWhenAttacksTrigger T1 = new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(
@@ -47,7 +41,8 @@ public class Victory_s_Herald {
             for (final MagicPermanent target : targets) {
                 game.doAction(new MagicSetAbilityAction(
                     target,
-                    VICTORYS_HERALD_FLAGS
+                    MagicAbility.Flying,
+                    MagicAbility.LifeLink
                 ));
             }
         }        

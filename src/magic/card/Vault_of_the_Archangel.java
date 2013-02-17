@@ -57,7 +57,8 @@ public class Vault_of_the_Archangel {
             for (final MagicPermanent creature : targets) {
                 game.doAction(new MagicSetAbilityAction(
                     creature,
-                    MagicAbility.of(MagicAbility.Deathtouch,MagicAbility.LifeLink)
+                    MagicAbility.Deathtouch,
+                    MagicAbility.LifeLink
                 ));
             }
         }
