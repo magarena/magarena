@@ -951,11 +951,12 @@ public class MagicGame {
             final MagicTargetChoice targetChoice,
             final MagicTargetHint targetHint) {
 
-        final Collection<? extends MagicTarget> targets = targetChoice.getTargetFilter().filter(
+        Collection<? extends MagicTarget> targets = targetChoice.getTargetFilter().filter(
             this,
             player,
             targetHint
         );
+
         final List<MagicTarget> options;
         if (targetChoice.isTargeted()) {
             options=new ArrayList<MagicTarget>();
@@ -967,9 +968,15 @@ public class MagicGame {
         } else {
             options=new ArrayList<MagicTarget>(targets);
         }
-        // Add none when there are no legal targets. Only for triggers.
+        
         if (options.isEmpty()) {
-            options.add(MagicTargetNone.getInstance());
+            // Try again without using hints
+            if (targetHint != MagicTargetHint.None) {
+                return getLegalTargets(player, source, targetChoice, MagicTargetHint.None);
+            // Add none when there are no legal targets. Only for triggers.
+            } else {
+                options.add(MagicTargetNone.getInstance());
+            }
         }
         return options;
     }
