@@ -859,6 +859,12 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             return false;
         }
 
+        // Tokens
+        if (attacker.hasAbility(MagicAbility.CannotBeBlockedByTokens) &&
+            isToken()) {
+            return false;
+        }
+
         // Can't be blocked by a color
         for (final MagicColor color : MagicColor.values()) {
             if (attacker.hasAbility(color.getCannotBeBlockedByAbility()) &&
