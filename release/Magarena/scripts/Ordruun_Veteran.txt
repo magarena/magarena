@@ -1,0 +1,11 @@
+name=Ordruun Veteran
+url=http://magiccards.info/gtc/en/184.html
+image=http://magiccards.info/scans/en/gtc/184.jpg
+value=3.937
+rarity=U
+type=Creature
+subtype=Minotaur,Soldier
+cost={2}{R}{W}
+pt=3/1
+timing=main
+requires_groovy_code
