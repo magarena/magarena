@@ -35,6 +35,9 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice NEG_TARGET_SPELL=
         new MagicTargetChoice(MagicTargetFilter.TARGET_SPELL,true,MagicTargetHint.Negative,
                 "target spell");
+    public static final MagicTargetChoice NEG_TARGET_SPELL_WITH_X_COST=
+        new MagicTargetChoice(MagicTargetFilter.TARGET_SPELL_WITH_X_COST,true,MagicTargetHint.Negative,
+                "target spell with {X} in its mana cost");
     public static final MagicTargetChoice NEG_TARGET_RED_GREEN_SPELL=
         new MagicTargetChoice(MagicTargetFilter.TARGET_RED_GREEN_SPELL,true,MagicTargetHint.Negative,
                 "target red or green spell");

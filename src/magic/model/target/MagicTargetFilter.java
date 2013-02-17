@@ -181,6 +181,15 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }
     };
     
+    MagicStackFilterImpl TARGET_SPELL_WITH_X_COST=new MagicStackFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack target) {
+            return target.isSpell() && target.getCardDefinition().hasX();
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType==MagicTargetType.Stack;
+        }
+    };
+    
     MagicStackFilterImpl TARGET_RED_GREEN_SPELL=new MagicStackFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell() &&
