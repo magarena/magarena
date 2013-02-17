@@ -32,6 +32,10 @@ class TestDetain extends TestGameBuilder {
         addToHand(P, "Azorius Arrester", 1);
         addToHand(P, "Isperia's Skywatch", 1);
         addToHand(P, "Soulsworn Spirit", 1);
+        addToHand(P, "Inaction Injunction", 1);
+        addToHand(P, "Lyev Skyknight", 1);
+        addToHand(P, "Martial Law", 1);
+        addToHand(P, "New Prahv Guildmage", 1);
 
         P = opponent;
         
