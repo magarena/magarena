@@ -1,0 +1,11 @@
+name=Bomber Corps
+url=http://magiccards.info/gtc/en/86.html
+image=http://magiccards.info/scans/en/gtc/86.jpg
+value=3.937
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={1}{R}
+pt=1/2
+timing=main
+requires_groovy_code
