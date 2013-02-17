@@ -1,0 +1,12 @@
+name=Soulsworn Spirit
+url=http://magiccards.info/rtr/en/51.html
+image=http://magiccards.info/scans/en/rtr/51.jpg
+value=3.937
+rarity=U
+type=Creature
+subtype=Spirit
+cost={3}{U}
+pt=2/1
+ability=unblockable
+timing=main
+requires_groovy_code=Azorius Arrester
