@@ -454,8 +454,8 @@ public class MagicTargetChoice extends MagicChoice {
             final MagicPlayer player,
             final MagicSource source) {
         Collection<MagicTarget> targets = game.getLegalTargets(player,source,this,targetHint);
-        // try without hint
-        if (targets.isEmpty() && targetHint != MagicTargetHint.None) {
+        // disregard hint if only target is MagicTargetNone
+        if (targets.size() == 1 && targetHint != MagicTargetHint.None) {
             targets = game.getLegalTargets(player,source,this,MagicTargetHint.None); 
         }
         if (game.getFastChoices()) {
