@@ -1,7 +1,7 @@
 name=Kingpin's Pet
 url=http://magiccards.info/gtc/en/173.html
 image=http://magiccards.info/scans/en/gtc/173.jpg
-value=1.797
+value=3.245
 rarity=C
 type=Creature
 subtype=Thrull

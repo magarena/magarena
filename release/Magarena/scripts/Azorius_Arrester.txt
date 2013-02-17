@@ -1,7 +1,7 @@
 name=Azorius Arrester
 url=http://magiccards.info/rtr/en/5.html
 image=http://magiccards.info/scans/en/rtr/5.jpg
-value=3.937
+value=3.185
 rarity=C
 type=Creature
 subtype=Human,Soldier

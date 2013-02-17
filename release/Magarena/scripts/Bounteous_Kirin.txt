@@ -1,7 +1,7 @@
 name=Bounteous Kirin
 url=http://magiccards.info/sok/en/123.html
 image=http://magiccards.info/scans/en/sok/123.jpg
-value=3.271
+value=3.306
 rarity=R
 type=Legendary,Creature
 subtype=Kirin,Spirit

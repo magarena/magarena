@@ -1,7 +1,7 @@
 name=Wasteland Viper
 url=http://magiccards.info/gtc/en/139.html
 image=http://magiccards.info/scans/en/gtc/139.jpg
-value=2.365
+value=3.903
 rarity=U
 type=Creature
 subtype=Snake

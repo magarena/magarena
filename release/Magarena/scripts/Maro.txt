@@ -1,7 +1,7 @@
 name=Maro
 url=http://magiccards.info/mr/en/126.html
 image=http://magiccards.info/scans/en/mr/126.jpg
-value=3.635
+value=3.660
 rarity=R
 type=Creature
 subtype=Elemental

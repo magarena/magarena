@@ -1,7 +1,7 @@
 name=Crystalline Sliver
 url=http://magiccards.info/pds/en/11.html
 image=http://magiccards.info/scans/en/pds/11.jpg
-value=4.736
+value=4.494
 rarity=U
 type=Creature
 subtype=Sliver

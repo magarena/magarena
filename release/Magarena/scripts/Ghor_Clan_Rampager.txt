@@ -1,7 +1,7 @@
 name=Ghor-Clan Rampager
 url=http://magiccards.info/gtc/en/167.html
 image=http://magiccards.info/scans/en/gtc/167.jpg
-value=2.365
+value=4.115
 rarity=U
 type=Creature
 subtype=Beast

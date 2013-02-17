@@ -1,7 +1,7 @@
 name=Mitotic Slime
 url=http://magiccards.info/m11/en/185.html
 image=http://magiccards.info/scans/en/m11/185.jpg
-value=3.647
+value=3.800
 rarity=R
 type=Creature
 subtype=Ooze

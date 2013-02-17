@@ -1,7 +1,7 @@
 name=Soulsworn Spirit
 url=http://magiccards.info/rtr/en/51.html
 image=http://magiccards.info/scans/en/rtr/51.jpg
-value=3.937
+value=2.554
 rarity=U
 type=Creature
 subtype=Spirit

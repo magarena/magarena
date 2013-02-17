@@ -1,7 +1,7 @@
 name=Force of Will
 url=http://magiccards.info/med/en/33.html
 image=http://magiccards.info/scans/en/med/33.jpg
-value=4.801
+value=4.714
 rarity=R
 type=Instant
 cost={3}{U}{U}

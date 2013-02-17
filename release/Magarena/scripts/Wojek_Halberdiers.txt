@@ -1,7 +1,7 @@
 name=Wojek Halberdiers
 url=http://magiccards.info/gtc/en/208.html
 image=http://magiccards.info/scans/en/gtc/208.jpg
-value=3.937
+value=3.984
 rarity=C
 type=Creature
 subtype=Human,Soldier
