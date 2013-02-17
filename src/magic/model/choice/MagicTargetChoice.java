@@ -108,6 +108,8 @@ public class MagicTargetChoice extends MagicChoice {
 
     public static final MagicTargetChoice TARGET_NONLAND_PERMANENT=
         new MagicTargetChoice(MagicTargetFilter.TARGET_NONLAND_PERMANENT,true,MagicTargetHint.None,"target nonland permanent");
+    public static final MagicTargetChoice TARGET_NONLAND_PERMANENT_YOUR_OPPONENT_CONTROLS =
+        new MagicTargetChoice(MagicTargetFilter.TARGET_NONLAND_PERMANENT_YOUR_OPPONENT_CONTROLS,true,MagicTargetHint.None,"target nonland permanent your opponent controls");
     public static final MagicTargetChoice NEG_TARGET_NONLAND_PERMANENT=
         new MagicTargetChoice(MagicTargetFilter.TARGET_NONLAND_PERMANENT,true,MagicTargetHint.Negative,"target nonland permanent");
     public static final MagicTargetChoice NEG_TARGET_NONLAND_PERMANENT_CMC_LEQ_3=
