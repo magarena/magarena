@@ -1,0 +1,12 @@
+name=Legion Loyalist
+url=http://magiccards.info/gtc/en/97.html
+image=http://magiccards.info/scans/en/gtc/97.jpg
+value=3.937
+rarity=R
+type=Creature
+subtype=Goblin,Soldier
+cost={R}
+pt=1/1
+ability=haste
+timing=main
+requires_groovy_code
