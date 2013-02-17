@@ -1,0 +1,12 @@
+name=Firemane Avenger
+url=http://magiccards.info/gtc/en/163.html
+image=http://magiccards.info/scans/en/gtc/163.jpg
+value=3.937
+rarity=R
+type=Creature
+subtype=Angel
+cost={2}{R}{W}
+pt=3/3
+ability=flying
+timing=main
+requires_groovy_code
