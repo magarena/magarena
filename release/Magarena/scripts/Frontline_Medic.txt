@@ -1,0 +1,11 @@
+name=Frontline Medic
+url=http://magiccards.info/gtc/en/12.html
+image=http://magiccards.info/scans/en/gtc/12.jpg
+value=3.937
+rarity=R
+type=Creature
+subtype=Human,Cleric
+cost={2}{W}
+pt=3/3
+timing=main
+requires_groovy_code
