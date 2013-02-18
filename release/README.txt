@@ -57,7 +57,21 @@ Thank you for your support and have fun!
 
 Release 1.35 (February 23, 2013)
 ============
-includes contributions from ...
+includes contributions from melvin
+
+- added 'evolve' to card script 
+- added 'extort' to card script 
+- added 'cycling <mana cost>' to card script 
+- added 'reinforce <n> <mana cost>' to card script 
+- remove white border around card pic pop up
+- fixes targetted storm spells copying one to many times
+- convert 99 cards with small card code to use groovy code
+- allow multiple card names to be specific in required_card_code and requires_groovy_code, separate by a single comma without any space
+- added "creature you control" and "creature opponent control" for enchant
+- fixed: Reya Dawnbringer's ability was triggering during opponent's upkeep instead of your upkeep
+- fixed: able to tap Kessig Wolf Run to pay for the mana cost of its second ability
+- fixed: Sphinx of Lost Truth only cause player to discard if it was NOT kicked.
+- fixed: remove target hint for Arcbound Fiend's ability, fixes issue 328
 
 Release 1.34 (January 26, 2013)
 ============
