@@ -1,0 +1,12 @@
+name=Chaos Imps
+url=http://magiccards.info/rtr/en/90.html
+image=http://magiccards.info/scans/en/rtr/90.jpg
+value=3.037
+rarity=R
+type=Creature
+subtype=Imp
+cost={4}{R}{R}
+pt=6/5
+ability=flying,unleash
+timing=main
+requires_groovy_code
