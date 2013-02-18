@@ -8,6 +8,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
 import magic.model.MagicAbility;
+import magic.model.MagicCounterType;
 import magic.model.target.MagicTargetFilter;
 
 import java.util.Set;
@@ -170,6 +171,20 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
                 final MagicPermanent source,
                 final MagicPermanent target) {
             return source.getEnchantedCreature() == target;
+        }
+    };
+    
+    public static MagicStatic Unleash = new MagicStatic(MagicLayer.Ability) {
+        @Override
+        public void modAbilityFlags(
+            final MagicPermanent source,
+            final MagicPermanent permanent,
+            final Set<MagicAbility> flags) {
+            flags.add(MagicAbility.CannotBlock);
+        }
+        @Override
+        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+            return source.getCounters(MagicCounterType.PlusOne) > 0;
         }
     };
 }

@@ -68,6 +68,7 @@ import magic.model.trigger.MagicAtEndOfTurnTrigger;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
 import magic.model.trigger.MagicExtortTrigger;
+import magic.model.trigger.MagicUnleashTrigger;
 
 import java.util.EnumSet;
 import java.util.Set;
@@ -724,6 +725,13 @@ public enum MagicAbility {
             final int n = Integer.parseInt(token[0]);
             final MagicManaCost manaCost = MagicManaCost.create(token[1]);
             card.add(new MagicReinforceActivation(n, manaCost));
+        }
+    },
+    Unleash("unleash", 20) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+            card.add(MagicUnleashTrigger.create());
+            card.add(MagicStatic.Unleash);
         }
     },
     None("",0);
