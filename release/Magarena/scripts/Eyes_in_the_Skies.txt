@@ -1,0 +1,9 @@
+name=Eyes in the Skies
+url=http://magiccards.info/rtr/en/10.html
+image=http://magiccards.info/scans/en/rtr/10.jpg
+value=4.371
+rarity=C
+type=Instant
+cost={3}{W}
+timing=flash
+requires_groovy_code
