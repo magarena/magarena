@@ -13,7 +13,7 @@ import java.util.Set;
 public class Intangible_Virtue {
     public static final MagicStatic S1 = new MagicStatic(
         MagicLayer.ModPT, 
-        MagicTargetFilter.TARGET_TOKEN_YOU_CONTROL) {
+        MagicTargetFilter.TARGET_CREATURE_TOKEN_YOU_CONTROL) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
             pt.add(1,1);
@@ -22,7 +22,7 @@ public class Intangible_Virtue {
     
     public static final MagicStatic S2 = new MagicStatic(
             MagicLayer.Ability, 
-            MagicTargetFilter.TARGET_TOKEN_YOU_CONTROL) {
+            MagicTargetFilter.TARGET_CREATURE_TOKEN_YOU_CONTROL) {
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
             flags.add(MagicAbility.Vigilance);

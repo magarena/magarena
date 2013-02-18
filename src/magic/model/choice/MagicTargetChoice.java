@@ -384,16 +384,34 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice TARGET_BASIC_LAND_CARD_FROM_HAND =
             new MagicTargetChoice(MagicTargetFilter.TARGET_BASIC_LAND_CARD_FROM_HAND,false,MagicTargetHint.None,
             "a basic land card from your hand");
-    public static final MagicTargetChoice TARGET_LAND_CARD_FROM_HAND =
-            new MagicTargetChoice(MagicTargetFilter.TARGET_LAND_CARD_FROM_HAND,false,MagicTargetHint.None,
-            "a land card from your hand");
-    public static final MagicTargetChoice TARGET_GOBLIN_CARD_FROM_HAND =
-            new MagicTargetChoice(MagicTargetFilter.TARGET_GOBLIN_CARD_FROM_HAND,false,MagicTargetHint.None,
-            "a Goblin permanent card from your hand");
+ 
+    public static final MagicTargetChoice TARGET_LAND_CARD_FROM_HAND = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_LAND_CARD_FROM_HAND,
+        false,
+        MagicTargetHint.None,
+        "a land card from your hand"
+    );
     
-    public static final MagicTargetChoice TARGET_UNPAIRED_SOULBOND_CREATURE =
-            new MagicTargetChoice(MagicTargetFilter.TARGET_UNPAIRED_SOULBOND_CREATURE,false,MagicTargetHint.None,
-            "an unpaired Soulbond creature");
+    public static final MagicTargetChoice TARGET_GOBLIN_CARD_FROM_HAND = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_GOBLIN_CARD_FROM_HAND,
+        false,
+        MagicTargetHint.None,
+        "a Goblin permanent card from your hand"
+    );
+    
+    public static final MagicTargetChoice TARGET_UNPAIRED_SOULBOND_CREATURE = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_UNPAIRED_SOULBOND_CREATURE,
+        false,
+        MagicTargetHint.None,
+        "an unpaired Soulbond creature"
+    );
+    
+    public static final MagicTargetChoice CREATURE_TOKEN_YOU_CONTROL = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_CREATURE_TOKEN_YOU_CONTROL,
+        false,
+        MagicTargetHint.None,
+        "a creature token you control"
+    );
         
     private final String targetDescription;
     private final MagicTargetFilter<? extends MagicTarget> targetFilter;
