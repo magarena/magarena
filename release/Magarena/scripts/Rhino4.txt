@@ -1,0 +1,10 @@
+name=Rhino4
+token=Rhino
+image=http://magiccards.info/extras/token/return-to-ravnica/rhino.jpg
+value=4
+type=Creature
+subtype=Rhino
+color=g
+cost={0}
+pt=4/4
+ability=trample
