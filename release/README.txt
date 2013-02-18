@@ -59,10 +59,12 @@ Release 1.35 (February 23, 2013)
 ============
 includes contributions from melvin
 
-- added 'evolve' to card script 
-- added 'extort' to card script 
-- added 'cycling <mana cost>' to card script 
-- added 'reinforce <n> <mana cost>' to card script 
+- added the following new abilities to card script
+  * cycling <mana cost>
+  * reinforce <n> <mana cost>
+  * evolve
+  * extort
+  * unleash
 - remove white border around card pic pop up
 - fixes targetted storm spells copying one to many times
 - convert 99 cards with small card code to use groovy code
