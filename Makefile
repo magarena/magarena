@@ -7,7 +7,7 @@ SRC=$(shell find src -iname *.java)
 MAG:=release/Magarena.jar
 EXE:=release/Magarena.exe
 
-all: $(MAG) $(EXE) tags
+all: tags $(MAG) $(EXE)
 
 zips:
 	make M`grep Release release/README.txt | head -1 | cut -d' ' -f2`
