@@ -27,7 +27,7 @@ public class MagicUnleashTrigger extends MagicWhenComesIntoPlayTrigger {
             permanent,
             new MagicMayChoice(),
             this,
-            "SN enters the battlefield with a +1/+1 counter on it."
+            "PN may have SN enter the battlefield with a +1/+1 counter on it."
         );
     }
     @Override
