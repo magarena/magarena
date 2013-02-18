@@ -1,0 +1,11 @@
+name=Gore-House Chainwalker
+url=http://magiccards.info/rtr/en/96.html
+image=http://magiccards.info/scans/en/rtr/96.jpg
+value=3.037
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={1}{R}
+pt=2/1
+ability=unleash
+timing=main
