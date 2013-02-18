@@ -1,0 +1,9 @@
+name=Centaur3
+token=Centaur
+image=http://magiccards.info/extras/token/return-to-ravnica/centaur-1.jpg
+value=3
+type=Creature
+subtype=Centaur
+color=g
+cost={0}
+pt=3/3

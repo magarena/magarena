@@ -1,0 +1,9 @@
+name=Coursers' Accord
+url=http://magiccards.info/rtr/en/154.html
+image=http://magiccards.info/scans/en/rtr/154.jpg
+value=4.371
+rarity=C
+type=Sorcery
+cost={4}{G}{W}
+timing=main
+requires_groovy_code
