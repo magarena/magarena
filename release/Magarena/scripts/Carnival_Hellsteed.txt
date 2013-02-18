@@ -1,0 +1,11 @@
+name=Carnival Hellsteed
+url=http://magiccards.info/rtr/en/147.html
+image=http://magiccards.info/scans/en/rtr/147.jpg
+value=3.037
+rarity=R
+type=Creature
+subtype=Nightmare,Horse
+cost={4}{B}{R}
+pt=5/4
+ability=first strike,haste,unleash
+timing=main
