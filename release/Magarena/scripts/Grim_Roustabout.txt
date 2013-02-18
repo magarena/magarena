@@ -1,0 +1,11 @@
+name=Grim Roustabout
+url=http://magiccards.info/rtr/en/68.html
+image=http://magiccards.info/scans/en/rtr/68.jpg
+value=3.037
+rarity=C
+type=Creature
+subtype=Skeleton,Warrior
+cost={1}{B}
+pt=1/1
+ability=unleash,regenerate {1}{B}
+timing=main
