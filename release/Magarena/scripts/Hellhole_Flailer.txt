@@ -1,0 +1,12 @@
+name=Hellhole Flailer
+url=http://magiccards.info/rtr/en/167.html
+image=http://magiccards.info/scans/en/rtr/167.jpg
+value=3.037
+rarity=U
+type=Creature
+subtype=Ogre,Warrior
+cost={1}{B}{R}
+pt=3/2
+ability=unleash
+timing=main
+requires_groovy_code
