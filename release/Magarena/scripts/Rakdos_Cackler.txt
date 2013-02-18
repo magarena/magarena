@@ -1,0 +1,11 @@
+name=Rakdos Cackler
+url=http://magiccards.info/rtr/en/220.html
+image=http://magiccards.info/scans/en/rtr/220.jpg
+value=3.037
+rarity=U
+type=Creature
+subtype=Devil
+cost={B/R}
+pt=1/1
+ability=unleash
+timing=main
