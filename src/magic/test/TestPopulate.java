@@ -28,17 +28,23 @@ class TestPopulate extends TestGameBuilder {
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
         createPermanent(game,P,"Rupture Spire",false,8);
-        addToHand(P, "Coursers' Accord", 1);
         addToHand(P, "Eyes in the Skies", 1);
+        addToHand(P, "Trostani, Selesnya's Voice", 1);
+        addToHand(P, "Vitu-Ghazi Guildmage", 1);
+        addToHand(P, "Wayfaring Temple", 1);
         addToHand(P, "Horncaller's Chant", 1);
+        addToHand(P, "Druid's Deliverance", 1);
 
         P = opponent;
         
         P.setLife(10);
         addToLibrary(P, "Plains", 10);
         createPermanent(game,P,"Rupture Spire",false,8);
-        addToHand(P, "Grizzly Bears", 1);
-        addToHand(P, "Manalith", 1);
+        addToHand(P, "Growing Ranks", 1);
+        addToHand(P, "Rootborn Defenses", 1);
+        addToHand(P, "Sundering Growth", 1);
+        addToHand(P, "Trostani's Judgement", 1);
+        addToHand(P, "Coursers' Accord", 1);
         
         return game;
     }
