@@ -1,0 +1,11 @@
+name=Vitu-Ghazi Guildmage
+url=http://magiccards.info/rtr/en/207.html
+image=http://magiccards.info/scans/en/rtr/207.jpg
+value=3.815
+rarity=U
+type=Creature
+subtype=Dryad,Shaman
+cost={G}{W}
+pt=2/2
+timing=main
+requires_groovy_code
