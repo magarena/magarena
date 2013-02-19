@@ -1,0 +1,10 @@
+name=Wayfaring Temple
+url=http://magiccards.info/rtr/en/209.html
+image=http://magiccards.info/scans/en/rtr/209.jpg
+value=3.815
+rarity=R
+type=Creature
+subtype=Elemental
+cost={1}{G}{W}
+timing=main
+requires_groovy_code
