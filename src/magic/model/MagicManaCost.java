@@ -106,6 +106,7 @@ public class MagicManaCost {
     public static final MagicManaCost THREE_BLACK_BLACK=MagicManaCost.create("{3}{B}{B}");
     public static final MagicManaCost THREE_BLACK_RED=MagicManaCost.create("{3}{B}{R}");
     public static final MagicManaCost FOUR_BLACK_RED=MagicManaCost.create("{4}{B}{R}");
+    public static final MagicManaCost FOUR_GREEN_WHITE=MagicManaCost.create("{4}{G}{W}");
     public static final MagicManaCost ONE_WHITE_BLACK=MagicManaCost.create("{1}{W}{B}");
     public static final MagicManaCost TWO_WHITE_BLACK=MagicManaCost.create("{2}{W}{B}");
     public static final MagicManaCost THREE_WHITE_BLACK=MagicManaCost.create("{3}{W}{B}");
