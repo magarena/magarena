@@ -1,0 +1,9 @@
+name=Rootborn Defenses
+url=http://magiccards.info/rtr/en/19.html
+image=http://magiccards.info/scans/en/rtr/19.jpg
+value=4.371
+rarity=C
+type=Instant
+cost={2}{W}
+timing=pump
+requires_groovy_code
