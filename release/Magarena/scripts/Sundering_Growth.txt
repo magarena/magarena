@@ -1,0 +1,9 @@
+name=Sundering Growth
+url=http://magiccards.info/rtr/en/223.html
+image=http://magiccards.info/scans/en/rtr/223.jpg
+value=4.371
+rarity=C
+type=Instant
+cost={G/W}{G/W}
+timing=removal
+requires_groovy_code
