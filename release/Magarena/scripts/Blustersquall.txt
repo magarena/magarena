@@ -1,0 +1,9 @@
+name=Blustersquall
+url=http://magiccards.info/rtr/en/30.html
+image=http://magiccards.info/scans/en/rtr/30.jpg
+value=4.371
+rarity=U
+type=Instant
+cost={U}
+timing=tapping
+requires_groovy_code
