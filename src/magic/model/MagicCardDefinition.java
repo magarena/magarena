@@ -599,8 +599,9 @@ public class MagicCardDefinition {
         mod.change(this);
     }
     
-    public void setEvent(final MagicCardEvent cardEvent) {
-        this.cardEvent=cardEvent;
+    public void setEvent(final MagicCardEvent aCardEvent) {
+        assert cardEvent == MagicPlayCardEvent.create() : "Attempting to set two MagicCardEvents for " + this;
+        cardEvent = aCardEvent;
         numSpellEvent++;
     }
     
