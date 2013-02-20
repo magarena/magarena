@@ -15,7 +15,7 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicCardOnStack;
 
-public class MagicCardActivation extends MagicActivation<MagicCard> implements MagicChangeCardDefinition {
+public class MagicCardActivation extends MagicActivation<MagicCard> implements MagicChangeCardDefinition, MagicCardEvent {
 
     final boolean usesStack;
     
@@ -52,33 +52,44 @@ public class MagicCardActivation extends MagicActivation<MagicCard> implements M
     public MagicEvent getEvent(final MagicSource source) {
         return new MagicEvent(
             source,
-            this,
+            EVENT_ACTION,
             "Play SN."
         );
     }
 
-    public MagicCardEvent getCardEvent(final MagicCard source,final MagicPayedCost payedCost) {
-        return source.getCardDefinition().getCardEvent();
-    }
-
+    private final MagicEventAction EVENT_ACTION=new MagicEventAction() {
+        @Override
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choices) {
+            final MagicCard card = event.getCard();
+            if (card.getCardDefinition().isLand()) {
+                game.incLandPlayed();
+            }
+            game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
+            if (usesStack) {
+                final MagicCardOnStack cardOnStack=new MagicCardOnStack(
+                    card,
+                    card.getController(),
+                    MagicCardActivation.this,
+                    game.getPayedCost()
+                );
+                game.doAction(new MagicPutItemOnStackAction(cardOnStack));
+            } else {
+                game.doAction(new MagicPlayCardAction(card,card.getController(),MagicPlayCardAction.NONE));
+            }
+        }
+    };
+    
     @Override
-    public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choices) {
-        final MagicCard card = event.getCard();
-        if (card.getCardDefinition().isLand()) {
-            game.incLandPlayed();
-        }
-        game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
-        if (usesStack) {
-            final MagicCardOnStack cardOnStack=new MagicCardOnStack(
-                card,
-                card.getController(),
-                getCardEvent(card, game.getPayedCost()), 
-                game.getPayedCost()
-            );
-            game.doAction(new MagicPutItemOnStackAction(cardOnStack));
-        } else {
-            game.doAction(new MagicPlayCardAction(card,card.getController(),MagicPlayCardAction.NONE));
-        }
+    public void executeEvent(
+            final MagicGame game, 
+            final MagicEvent event, 
+            final Object[] choiceResults) {
+        throw new RuntimeException(getClass() + " did not override executeEvent");
+    }
+    
+    @Override
+    public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+        return cardOnStack.getCardDefinition().getCardEvent().getEvent(cardOnStack, payedCost);
     }
 
     @Override
