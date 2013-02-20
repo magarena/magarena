@@ -1,0 +1,9 @@
+name=Teleportal
+url=http://magiccards.info/rtr/en/111.html
+image=http://magiccards.info/scans/en/rtr/111.jpg
+value=4.371
+rarity=U
+type=Sorcery
+cost={U}{R}
+timing=pump
+requires_groovy_code
