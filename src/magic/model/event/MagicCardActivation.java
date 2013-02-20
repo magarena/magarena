@@ -57,6 +57,10 @@ public class MagicCardActivation extends MagicActivation<MagicCard> implements M
         );
     }
 
+    public MagicCardEvent getCardEvent(final MagicCard source,final MagicPayedCost payedCost) {
+        return source.getCardDefinition().getCardEvent();
+    }
+
     @Override
     public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choices) {
         final MagicCard card = event.getCard();
@@ -65,7 +69,12 @@ public class MagicCardActivation extends MagicActivation<MagicCard> implements M
         }
         game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
         if (usesStack) {
-            final MagicCardOnStack cardOnStack=new MagicCardOnStack(card,game.getPayedCost());
+            final MagicCardOnStack cardOnStack=new MagicCardOnStack(
+                card,
+                card.getController(),
+                getCardEvent(card, game.getPayedCost()), 
+                game.getPayedCost()
+            );
             game.doAction(new MagicPutItemOnStackAction(cardOnStack));
         } else {
             game.doAction(new MagicPlayCardAction(card,card.getController(),MagicPlayCardAction.NONE));

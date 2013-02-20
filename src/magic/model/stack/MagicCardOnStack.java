@@ -12,6 +12,7 @@ import magic.model.MagicSource;
 import magic.model.MagicType;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicCardEvent;
 
 import javax.swing.ImageIcon;
 import java.util.Arrays;
@@ -22,6 +23,11 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
 
     private MagicLocationType moveLocation=MagicLocationType.Graveyard;
     private final int x;
+    
+    public MagicCardOnStack(final MagicCard card,final MagicPlayer controller,final MagicCardEvent cardEvent, final MagicPayedCost payedCost) {
+        super(card, controller, cardEvent, payedCost);
+        x=payedCost.getX();
+    }
     
     public MagicCardOnStack(final MagicCard card,final MagicPlayer controller,final MagicPayedCost payedCost) {
         super(card, controller, card.getCardDefinition().getCardEvent(), payedCost);
