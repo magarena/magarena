@@ -253,8 +253,6 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice TARGET_NON_DEMON =
             new MagicTargetChoice(MagicTargetFilter.TARGET_NON_DEMON,true,MagicTargetHint.None,
                     "target non-Demon creature");
-    public static final MagicTargetChoice TARGET_CREATURE_YOUR_OPPONENT_CONTROLS=
-        new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,true,MagicTargetHint.None,"target creature your opponent controls");
     public static final MagicTargetChoice TARGET_CREATURE_OR_PLAYER=
         new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_OR_PLAYER,true,MagicTargetHint.None,"target creature or player");
     public static final MagicTargetChoice NEG_TARGET_CREATURE_OR_PLAYER=
@@ -412,6 +410,21 @@ public class MagicTargetChoice extends MagicChoice {
         MagicTargetHint.None,
         "a creature token you control"
     );
+    
+    public static final MagicTargetChoice TARGET_CREATURE_YOUR_OPPONENT_CONTROLS = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
+        true,
+        MagicTargetHint.None,
+        "target creature your opponent controls"
+    );
+
+    public static final MagicTargetChoice TARGET_CREATURE_YOU_DONT_CONTROL = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
+        true,
+        MagicTargetHint.None,
+        "target creature you don't control"
+    );
+
         
     private final String targetDescription;
     private final MagicTargetFilter<? extends MagicTarget> targetFilter;
