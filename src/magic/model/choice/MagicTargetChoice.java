@@ -32,6 +32,9 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice TARGET_SPELL=
         new MagicTargetChoice(MagicTargetFilter.TARGET_SPELL,true,MagicTargetHint.None,
                 "target spell");
+    public static final MagicTargetChoice TARGET_SPELL_YOU_DONT_CONTROL=
+        new MagicTargetChoice(MagicTargetFilter.TARGET_SPELL_YOU_DONT_CONTROL,true,MagicTargetHint.None,
+                "target spell you don't control");
     public static final MagicTargetChoice NEG_TARGET_SPELL=
         new MagicTargetChoice(MagicTargetFilter.TARGET_SPELL,true,MagicTargetHint.Negative,
                 "target spell");
@@ -600,6 +603,7 @@ public class MagicTargetChoice extends MagicChoice {
         factory.put("neg target land or nonblack creature", NEG_TARGET_LAND_OR_NONBLACK_CREATURE);
 
         factory.put("neg target spell", NEG_TARGET_SPELL);
+        factory.put("neg target spell you don't control", TARGET_SPELL_YOU_DONT_CONTROL);
         factory.put("neg target red or green spell", NEG_TARGET_RED_GREEN_SPELL);
         factory.put("neg target noncreature spell", NEG_TARGET_NONCREATURE_SPELL);
         factory.put("neg target creature spell", NEG_TARGET_CREATURE_SPELL);

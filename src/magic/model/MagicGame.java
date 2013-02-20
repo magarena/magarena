@@ -915,6 +915,10 @@ public class MagicGame {
     public List<MagicCard> filterCards(final MagicPlayer player,final MagicTargetFilter<MagicCard> targetFilter) {
         return targetFilter.filter(this, player, MagicTargetHint.None);
     }
+   
+    public List<MagicItemOnStack> filterItemOnStack(final MagicPlayer player,final MagicTargetFilter<MagicItemOnStack> targetFilter) {
+        return targetFilter.filter(this, player, MagicTargetHint.None);
+    }
 
     public boolean hasLegalTargets(
             final MagicPlayer player,
