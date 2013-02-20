@@ -1,0 +1,9 @@
+name=Dynacharge
+url=http://magiccards.info/rtr/en/92.html
+image=http://magiccards.info/scans/en/rtr/92.jpg
+value=4.371
+rarity=C
+type=Instant
+cost={R}
+timing=pump
+requires_groovy_code
