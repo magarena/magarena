@@ -111,8 +111,13 @@ public class MagicTargetChoice extends MagicChoice {
 
     public static final MagicTargetChoice TARGET_NONLAND_PERMANENT=
         new MagicTargetChoice(MagicTargetFilter.TARGET_NONLAND_PERMANENT,true,MagicTargetHint.None,"target nonland permanent");
+    
     public static final MagicTargetChoice TARGET_NONLAND_PERMANENT_YOUR_OPPONENT_CONTROLS =
         new MagicTargetChoice(MagicTargetFilter.TARGET_NONLAND_PERMANENT_YOUR_OPPONENT_CONTROLS,true,MagicTargetHint.None,"target nonland permanent your opponent controls");
+
+    public static final MagicTargetChoice TARGET_NONLAND_PERMANENT_YOU_DONT_CONTROL =
+        new MagicTargetChoice(MagicTargetFilter.TARGET_NONLAND_PERMANENT_YOUR_OPPONENT_CONTROLS,true,MagicTargetHint.None,"target nonland permanent you don't control");
+
     public static final MagicTargetChoice NEG_TARGET_NONLAND_PERMANENT=
         new MagicTargetChoice(MagicTargetFilter.TARGET_NONLAND_PERMANENT,true,MagicTargetHint.Negative,"target nonland permanent");
     public static final MagicTargetChoice NEG_TARGET_NONLAND_PERMANENT_CMC_LEQ_3=
@@ -121,9 +126,6 @@ public class MagicTargetChoice extends MagicChoice {
             new MagicTargetChoice(MagicTargetFilter.TARGET_ARTIFACT_YOU_CONTROL,false,MagicTargetHint.None,"an artifact you control");
     public static final MagicTargetChoice TARGET_ARTIFACT_YOU_CONTROL=
             new MagicTargetChoice(MagicTargetFilter.TARGET_ARTIFACT_YOU_CONTROL,true,MagicTargetHint.None,"target artifact you control");
-    public static final MagicTargetChoice TARGET_ARTIFACT_YOUR_OPPONENT_CONTROLS =
-            new MagicTargetChoice(MagicTargetFilter.TARGET_ARTIFACT_YOUR_OPPONENT_CONTROLS,true,MagicTargetHint.None,
-                    "target artifact your opponent controls");
     public static final MagicTargetChoice TARGET_ARTIFACT =
             new MagicTargetChoice(MagicTargetFilter.TARGET_ARTIFACT,true,MagicTargetHint.None,"target artifact");
     public static final MagicTargetChoice NEG_TARGET_ARTIFACT=
@@ -427,7 +429,27 @@ public class MagicTargetChoice extends MagicChoice {
         MagicTargetHint.None,
         "target creature you don't control"
     );
-
+    
+    public static final MagicTargetChoice TARGET_CREATURE_WITHOUT_FLYING_YOU_DONT_CONTROL = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING_YOUR_OPPONENT_CONTROLS,
+        true,
+        MagicTargetHint.Negative,
+        "target creature without flying you don't control"
+    );
+    
+    public static final MagicTargetChoice TARGET_ARTIFACT_YOUR_OPPONENT_CONTROLS = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_ARTIFACT_YOUR_OPPONENT_CONTROLS,
+        true,
+        MagicTargetHint.None,
+        "target artifact your opponent controls"
+    );
+    
+    public static final MagicTargetChoice TARGET_ARTIFACT_YOU_DONT_CONTROL = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_ARTIFACT_YOUR_OPPONENT_CONTROLS,
+        true,
+        MagicTargetHint.None,
+        "target artifact you don't control"
+    );
         
     private final String targetDescription;
     private final MagicTargetFilter<? extends MagicTarget> targetFilter;
@@ -574,6 +596,7 @@ public class MagicTargetChoice extends MagicChoice {
 
         // used by effect property
         factory.put("neg target artifact", NEG_TARGET_ARTIFACT);
+        factory.put("neg target artifact you don't control", TARGET_ARTIFACT_YOU_DONT_CONTROL);
         factory.put("neg target artifact or enchantment", NEG_TARGET_ARTIFACT_OR_ENCHANTMENT); 
         factory.put("neg target artifact or land", NEG_TARGET_ARTIFACT_OR_LAND);
         factory.put("neg target artifact, enchantment, or land", NEG_TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND);

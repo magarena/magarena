@@ -884,6 +884,17 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }        
     };
     
+    MagicPermanentFilterImpl TARGET_CREATURE_WITHOUT_FLYING_YOUR_OPPONENT_CONTROLS =new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() &&
+                   !target.hasAbility(MagicAbility.Flying) &&
+                   target.isOpponent(player);
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType==MagicTargetType.Permanent;
+        }        
+    };
+    
     MagicPermanentFilterImpl TARGET_CREATURE_WITH_FLYING = Factory.creature(MagicAbility.Flying, Control.Any);
     
     MagicPermanentFilterImpl TARGET_CREATURE_WITH_FLYING_YOU_CONTROL = Factory.creature(MagicAbility.Flying, Control.You);
