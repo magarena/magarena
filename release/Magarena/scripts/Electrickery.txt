@@ -1,0 +1,10 @@
+name=Electrickery
+url=http://magiccards.info/rtr/en/93.html
+image=http://magiccards.info/scans/en/rtr/93.jpg
+value=4.371
+rarity=C
+type=Instant
+cost={R}
+timing=removal
+removal=1
+requires_groovy_code
