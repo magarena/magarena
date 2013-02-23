@@ -1,7 +1,7 @@
 name=Garruk's Companion
 url=http://magiccards.info/m12/en/175.html
 image=http://magiccards.info/scans/en/m11/176.jpg
-value=4.013
+value=4.069
 ability=trample
 rarity=C
 type=Creature

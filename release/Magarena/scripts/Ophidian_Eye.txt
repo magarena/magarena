@@ -1,7 +1,7 @@
 name=Ophidian Eye
 url=http://magiccards.info/ts/en/70.html
 image=http://magiccards.info/scans/en/ts/70.jpg
-value=2.975
+value=3.000
 rarity=C
 type=Enchantment
 subtype=Aura

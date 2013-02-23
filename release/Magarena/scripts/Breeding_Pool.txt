@@ -1,7 +1,7 @@
 name=Breeding Pool
 url=http://magiccards.info/di/en/172.html
 image=http://magiccards.info/scans/en/di/172.jpg
-value=4.532
+value=4.378
 rarity=R
 type=Land
 subtype=Forest,Island

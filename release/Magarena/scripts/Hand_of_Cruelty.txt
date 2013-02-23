@@ -1,7 +1,7 @@
 name=Hand of Cruelty
 url=http://magiccards.info/sok/en/71.html
 image=http://magiccards.info/scans/en/sok/71.jpg
-value=4.155
+value=4.167
 rarity=U
 type=Creature
 subtype=Human,Samurai

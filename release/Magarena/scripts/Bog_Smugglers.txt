@@ -1,7 +1,7 @@
 name=Bog Smugglers
 url=http://magiccards.info/mm/en/117.html
 image=http://magiccards.info/scans/en/mm/117.jpg
-value=2.643
+value=2.614
 rarity=C
 type=Creature
 subtype=Human,Mercenary

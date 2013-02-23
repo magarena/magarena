@@ -1,7 +1,7 @@
 name=Talas Air Ship
 url=http://magiccards.info/po2/en/48.html
 image=http://magiccards.info/scans/en/po2/48.jpg
-value=3.000
+value=2.950
 rarity=C
 type=Creature
 subtype=Human,Pirate

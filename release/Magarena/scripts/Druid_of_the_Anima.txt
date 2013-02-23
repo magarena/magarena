@@ -1,7 +1,7 @@
 name=Druid of the Anima
 url=http://magiccards.info/ala/en/128.html
 image=http://magiccards.info/scans/en/ala/128.jpg
-value=3.648
+value=2.993
 rarity=C
 type=Creature
 subtype=Elf,Druid

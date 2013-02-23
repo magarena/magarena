@@ -1,7 +1,7 @@
 name=Cyclonic Rift
 url=http://magiccards.info/rtr/en/35.html
 image=http://magiccards.info/scans/en/rtr/35.jpg
-value=4.371
+value=3.928
 rarity=R
 type=Instant
 cost={1}{U}

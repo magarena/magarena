@@ -1,7 +1,7 @@
 name=Talisman of Impulse
 url=http://magiccards.info/mi/en/254.html
 image=http://magiccards.info/scans/en/mi/254.jpg
-value=3.239
+value=3.250
 rarity=U
 type=Artifact
 cost={2}

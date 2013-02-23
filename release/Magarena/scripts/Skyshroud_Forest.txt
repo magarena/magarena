@@ -1,7 +1,7 @@
 name=Skyshroud Forest
 url=http://magiccards.info/tp/en/332.html
 image=http://magiccards.info/scans/en/tp/332.jpg
-value=2.604
+value=2.580
 rarity=R
 type=Land
 mana=u2g2

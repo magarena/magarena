@@ -1,7 +1,7 @@
 name=Durkwood Boars
 url=http://magiccards.info/itp/en/12.html
 image=http://magiccards.info/scans/en/itp/12.jpg
-value=2.118
+value=2.112
 rarity=C
 type=Creature
 subtype=Boar

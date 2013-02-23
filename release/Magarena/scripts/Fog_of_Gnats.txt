@@ -1,7 +1,7 @@
 name=Fog of Gnats
 url=http://magiccards.info/ul/en/53.html
 image=http://magiccards.info/scans/en/ul/53.jpg
-value=4.273
+value=4.276
 rarity=C
 type=Creature
 subtype=Insect

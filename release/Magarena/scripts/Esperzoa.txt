@@ -1,7 +1,7 @@
 name=Esperzoa
 url=http://magiccards.info/ddf/en/47.html
 image=http://magiccards.info/scans/en/ddf/47.jpg
-value=4.429
+value=4.018
 rarity=U
 type=Creature,Artifact
 subtype=Jellyfish

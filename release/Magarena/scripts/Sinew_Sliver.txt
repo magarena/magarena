@@ -1,7 +1,7 @@
 name=Sinew Sliver
 url=http://magiccards.info/pc/en/30.html
 image=http://magiccards.info/scans/en/pc/30.jpg
-value=4.341
+value=4.336
 rarity=C
 type=Creature
 subtype=Sliver

@@ -1,7 +1,7 @@
 name=Izzet Guildgate
 url=http://magiccards.info/rtr/en/242.html
 image=http://magiccards.info/scans/en/rtr/242.jpg
-value=3.121
+value=3.023
 rarity=C
 type=Land
 subtype=Gate

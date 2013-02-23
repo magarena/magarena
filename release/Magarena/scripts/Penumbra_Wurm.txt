@@ -1,7 +1,7 @@
 name=Penumbra Wurm
 url=http://magiccards.info/ap/en/84.html
 image=http://magiccards.info/scans/en/ap/84.jpg
-value=4.589
+value=4.492
 rarity=R
 type=Creature
 subtype=Wurm

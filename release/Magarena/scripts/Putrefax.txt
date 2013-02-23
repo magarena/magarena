@@ -1,7 +1,7 @@
 name=Putrefax
 url=http://magiccards.info/som/en/126.html
 image=http://magiccards.info/scans/en/som/126.jpg
-value=4.248
+value=3.996
 rarity=R
 type=Creature
 subtype=Horror

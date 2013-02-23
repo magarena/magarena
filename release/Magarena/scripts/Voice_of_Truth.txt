@@ -1,7 +1,7 @@
 name=Voice of Truth
 url=http://magiccards.info/ne/en/25.html
 image=http://magiccards.info/scans/en/ne/25.jpg
-value=3.232
+value=3.224
 rarity=U
 type=Creature
 subtype=Angel

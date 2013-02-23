@@ -1,7 +1,7 @@
 name=Zendikar Farguide
 url=http://magiccards.info/zen/en/194.html
 image=http://magiccards.info/scans/en/zen/194.jpg 
-value=1.330
+value=1.347
 ability=forestwalk
 rarity=C
 type=Creature

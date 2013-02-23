@@ -1,7 +1,7 @@
 name=Simic Ragworm
 url=http://magiccards.info/di/en/93.html
 image=http://magiccards.info/scans/en/di/93.jpg
-value=2.875
+value=2.879
 rarity=C
 type=Creature
 subtype=Worm

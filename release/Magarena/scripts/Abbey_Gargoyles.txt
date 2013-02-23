@@ -1,7 +1,7 @@
 name=Abbey Gargoyles
 url=http://magiccards.info/me2/en/1.html
 image=http://magiccards.info/scans/en/me2/1.jpg
-value=2.476
+value=2.558
 rarity=U
 type=Creature
 subtype=Gargoyle

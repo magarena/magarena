@@ -1,7 +1,7 @@
 name=Dirtwater Wraith
 url=http://magiccards.info/mr/en/15.html
 image=http://magiccards.info/scans/en/mr/15.jpg
-value=2.907
+value=2.906
 rarity=C
 type=Creature
 subtype=Wraith

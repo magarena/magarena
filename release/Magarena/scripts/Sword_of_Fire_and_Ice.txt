@@ -1,7 +1,7 @@
 name=Sword of Fire and Ice
 url=http://magiccards.info/ds/en/148.html
 image=http://magiccards.info/scans/en/ds/148.jpg
-value=4.670
+value=4.603
 rarity=R
 type=Artifact
 subtype=Equipment

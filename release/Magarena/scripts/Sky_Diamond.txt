@@ -1,7 +1,7 @@
 name=Sky Diamond
 url=http://magiccards.info/7e/en/316.html
 image=http://magiccards.info/scans/en/7e/316.jpg
-value=2.968
+value=2.955
 rarity=U
 type=Artifact
 cost={2}

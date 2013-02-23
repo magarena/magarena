@@ -1,7 +1,7 @@
 name=Nettletooth Djinn
 url=http://magiccards.info/mr/en/130.html
 image=http://magiccards.info/scans/en/mr/130.jpg
-value=2.243
+value=2.276
 rarity=U
 type=Creature
 subtype=Djinn

@@ -1,7 +1,7 @@
 name=Fresh Volunteers
 url=http://magiccards.info/mm/en/20.html
 image=http://magiccards.info/scans/en/mm/20.jpg
-value=2.845
+value=2.850
 rarity=C
 type=Creature
 subtype=Human,Rebel

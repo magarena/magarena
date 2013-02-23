@@ -1,7 +1,7 @@
 name=Spawn of Rix Maadi
 url=http://magiccards.info/rtr/en/199.html
 image=http://magiccards.info/scans/en/rtr/199.jpg
-value=3.037
+value=2.109
 rarity=C
 type=Creature
 subtype=Horror

@@ -1,7 +1,7 @@
 name=Keen-Eyed Archers
 url=http://magiccards.info/po/en/181.html
 image=http://magiccards.info/scans/en/po/181.jpg
-value=2.966
+value=3.033
 rarity=C
 type=Creature
 subtype=Elf,Archer

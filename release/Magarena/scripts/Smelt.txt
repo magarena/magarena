@@ -1,7 +1,7 @@
 name=Smelt
 url=http://magiccards.info/m13/en/149.html
 image=http://magiccards.info/scans/en/m13/149.jpg
-value=3.964
+value=4.190
 removal=1
 rarity=C
 type=Instant

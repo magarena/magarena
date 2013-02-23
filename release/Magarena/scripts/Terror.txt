@@ -1,7 +1,7 @@
 name=Terror
 url=http://magiccards.info/dpa/en/34.html
 image=http://magiccards.info/scans/en/dpa/34.jpg
-value=4.125
+value=4.163
 removal=3
 rarity=C
 type=Instant

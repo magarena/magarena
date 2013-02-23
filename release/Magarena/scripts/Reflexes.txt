@@ -1,7 +1,7 @@
 name=Reflexes
 url=http://magiccards.info/9e/en/211.html
 image=http://magiccards.info/scans/en/9e/211.jpg
-value=2.605
+value=2.545
 rarity=C
 type=Enchantment
 subtype=Aura

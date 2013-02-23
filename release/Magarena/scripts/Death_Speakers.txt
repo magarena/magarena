@@ -1,7 +1,7 @@
 name=Death Speakers
 url=http://magiccards.info/med/en/7.html
 image=http://magiccards.info/scans/en/med/7.jpg
-value=3.417
+value=3.197
 rarity=C
 type=Creature
 subtype=Human,Cleric

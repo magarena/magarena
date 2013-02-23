@@ -1,7 +1,7 @@
 name=Meng Huo, Barbarian King
 url=http://magiccards.info/me3/en/128.html
 image=http://magiccards.info/scans/en/me3/128.jpg
-value=3.976
+value=3.935
 rarity=R
 type=Creature
 subtype=Human,Barbarian,Soldier

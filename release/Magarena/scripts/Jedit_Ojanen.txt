@@ -1,7 +1,7 @@
 name=Jedit Ojanen
 url=http://magiccards.info/me3/en/153.html
 image=http://magiccards.info/scans/en/me3/153.jpg
-value=1.202
+value=1.195
 rarity=U
 type=Legendary,Creature
 subtype=Cat,Warrior

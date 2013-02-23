@@ -1,7 +1,7 @@
 name=Ogre Resister
 url=http://magiccards.info/mbs/en/72.html
 image=http://magiccards.info/scans/en/mbs/72.jpg
-value=2.655
+value=2.658
 rarity=C
 type=Creature
 subtype=Ogre

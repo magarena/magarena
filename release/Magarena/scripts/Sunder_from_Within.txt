@@ -1,7 +1,7 @@
 name=Sunder from Within
 url=http://magiccards.info/sok/en/117.html
 image=http://magiccards.info/scans/en/sok/117.jpg
-value=2.673
+value=2.667
 removal=1
 rarity=U
 type=Sorcery

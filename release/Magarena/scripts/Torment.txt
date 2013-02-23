@@ -1,7 +1,7 @@
 name=Torment
 url=http://magiccards.info/sh/en/23.html
 image=http://magiccards.info/scans/en/sh/23.jpg
-value=2.033
+value=1.969
 rarity=C
 type=Enchantment
 subtype=Aura

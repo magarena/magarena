@@ -1,7 +1,7 @@
 name=Urborg Skeleton
 url=http://magiccards.info/in/en/134.html
 image=http://magiccards.info/scans/en/in/134.jpg
-value=3.462
+value=3.500
 rarity=C
 type=Creature
 subtype=Skeleton

@@ -1,7 +1,7 @@
 name=Melesse Spirit
 url=http://magiccards.info/mr/en/231.html
 image=http://magiccards.info/scans/en/mr/231.jpg
-value=2.816
+value=2.750
 rarity=U
 type=Creature
 subtype=Angel,Spirit

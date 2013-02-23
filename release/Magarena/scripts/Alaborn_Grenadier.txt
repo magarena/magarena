@@ -1,7 +1,7 @@
 name=Alaborn Grenadier
 url=http://magiccards.info/po2/en/122.html
 image=http://magiccards.info/scans/en/po2/122.jpg
-value=3.156
+value=3.091
 rarity=C
 type=Creature
 subtype=Human,Soldier

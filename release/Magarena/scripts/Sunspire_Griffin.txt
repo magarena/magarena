@@ -1,7 +1,7 @@
 name=Sunspire Griffin
 url=http://magiccards.info/rtr/en/25.html
 image=http://magiccards.info/scans/en/rtr/25.jpg
-value=2.714
+value=2.737
 ability=flying
 rarity=C
 type=Creature

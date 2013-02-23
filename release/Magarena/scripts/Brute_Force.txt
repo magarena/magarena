@@ -1,7 +1,7 @@
 name=Brute Force
 url=http://magiccards.info/pc/en/116.html
 image=http://magiccards.info/scans/en/pc/116.jpg
-value=4.417
+value=4.428
 rarity=C
 type=Instant
 cost={R}

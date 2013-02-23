@@ -1,7 +1,7 @@
 name=Boros Elite
 url=http://magiccards.info/gtc/en/7.html
 image=http://magiccards.info/scans/en/gtc/7.jpg
-value=3.160
+value=3.189
 rarity=U
 type=Creature
 subtype=Human,Soldier

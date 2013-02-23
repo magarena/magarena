@@ -1,7 +1,7 @@
 name=Raging Minotaur
 url=http://magiccards.info/me3/en/109.html
 image=http://magiccards.info/scans/en/me3/109.jpg
-value=3.523
+value=3.587
 rarity=C
 type=Creature
 subtype=Minotaur,Berserker

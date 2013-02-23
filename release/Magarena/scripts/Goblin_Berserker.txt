@@ -1,7 +1,7 @@
 name=Goblin Berserker
 url=http://magiccards.info/ud/en/82.html
 image=http://magiccards.info/scans/en/ud/82.jpg
-value=2.931
+value=2.875
 rarity=U
 type=Creature
 subtype=Goblin,Berserker

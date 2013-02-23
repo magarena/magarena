@@ -1,7 +1,7 @@
 name=Tenement Crasher
 url=http://magiccards.info/rtr/en/108.html
 image=http://magiccards.info/scans/en/rtr/108.jpg
-value=2.188
+value=2.381
 rarity=C
 type=Creature
 subtype=Beast

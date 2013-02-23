@@ -1,7 +1,7 @@
 name=Barbarian Horde
 url=http://magiccards.info/p3k/en/101.html
 image=http://magiccards.info/scans/en/p3k/101.jpg
-value=1.767
+value=1.742
 rarity=C
 type=Creature
 subtype=Human,Barbarian,Soldier

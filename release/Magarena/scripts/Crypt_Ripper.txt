@@ -1,7 +1,7 @@
 name=Crypt Ripper
 url=http://magiccards.info/zen/en/85.html
 image=http://magiccards.info/scans/en/zen/85.jpg
-value=3.458
+value=3.492
 rarity=C
 type=Creature
 subtype=Shade

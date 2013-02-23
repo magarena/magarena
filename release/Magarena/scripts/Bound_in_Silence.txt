@@ -1,7 +1,7 @@
 name=Bound in Silence
 url=http://magiccards.info/fut/en/20.html
 image=http://magiccards.info/scans/en/fut/20.jpg
-value=2.808
+value=2.810
 removal=3
 rarity=U
 type=Tribal,Enchantment

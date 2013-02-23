@@ -1,7 +1,7 @@
 name=Icy Manipulator
 url=http://magiccards.info/ddh/en/64.html
 image=http://magiccards.info/scans/en/ddh/64.jpg
-value=4.157
+value=4.162
 rarity=U
 type=Artifact
 cost={4}

@@ -1,7 +1,7 @@
 name=Ghostly Changeling
 url=http://magiccards.info/lw/en/116.html
 image=http://magiccards.info/scans/en/lw/116.jpg
-value=2.697
+value=2.706
 rarity=U
 type=Creature
 subtype=Shapeshifter

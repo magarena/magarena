@@ -1,7 +1,7 @@
 name=Woodland Sleuth
 url=http://magiccards.info/isd/en/210.html
 image=http://magiccards.info/scans/en/isd/210.jpg
-value=2.612
+value=2.560
 rarity=C
 type=Creature
 subtype=Human,Scout

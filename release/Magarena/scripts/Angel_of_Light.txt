@@ -1,7 +1,7 @@
 name=Angel of Light
 url=http://magiccards.info/me2/en/3.html
 image=http://magiccards.info/scans/en/me2/3.jpg
-value=2.395
+value=2.412
 rarity=U
 type=Creature
 subtype=Angel

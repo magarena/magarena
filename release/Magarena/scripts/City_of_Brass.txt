@@ -1,7 +1,7 @@
 name=City of Brass
 url=http://magiccards.info/me4/en/243.html
 image=http://magiccards.info/scans/en/me4/243.jpg
-value=4.700
+value=4.661
 rarity=R
 type=Land
 mana=b1g1r1u1w1

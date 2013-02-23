@@ -1,7 +1,7 @@
 name=Flowstone Wyvern
 url=http://magiccards.info/tp/en/176.html
 image=http://magiccards.info/scans/en/tp/176.jpg
-value=2.548
+value=2.516
 rarity=R
 type=Creature
 subtype=Drake

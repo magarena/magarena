@@ -1,7 +1,7 @@
 name=Elusive Krasis
 url=http://magiccards.info/gtc/en/160.html
 image=http://magiccards.info/scans/en/gtc/160.jpg
-value=3.744
+value=3.605
 rarity=U
 type=Creature
 subtype=Fish,Mutant

@@ -1,7 +1,7 @@
 name=Golgari Guildgate
 url=http://magiccards.info/rtr/en/239.html
 image=http://magiccards.info/scans/en/rtr/239.jpg
-value=3.446
+value=3.369
 rarity=C
 type=Land
 subtype=Gate

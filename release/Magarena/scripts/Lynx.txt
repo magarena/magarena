@@ -1,7 +1,7 @@
 name=Lynx
 url=http://magiccards.info/po2/en/72.html
 image=http://magiccards.info/scans/en/po2/72.jpg
-value=3.075
+value=3.045
 rarity=U
 type=Creature
 subtype=Cat

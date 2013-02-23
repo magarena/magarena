@@ -1,7 +1,7 @@
 name=Juzam Djinn
 url=http://magiccards.info/med/en/74.html
 image=http://magiccards.info/scans/en/med/74.jpg
-value=4.299
+value=4.298
 rarity=R
 type=Creature
 subtype=Djinn

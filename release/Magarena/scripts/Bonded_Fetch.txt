@@ -1,7 +1,7 @@
 name=Bonded Fetch
 url=http://magiccards.info/fut/en/50.html
 image=http://magiccards.info/scans/en/fut/50.jpg
-value=3.179
+value=3.195
 rarity=U
 type=Creature
 subtype=Homunculus

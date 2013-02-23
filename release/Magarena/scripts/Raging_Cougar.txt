@@ -1,7 +1,7 @@
 name=Raging Cougar
 url=http://magiccards.info/po/en/149.html
 image=http://magiccards.info/scans/en/po/149.jpg
-value=2.771
+value=2.760
 rarity=C
 type=Creature
 subtype=Cat

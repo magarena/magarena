@@ -1,7 +1,7 @@
 name=Dehydration
 url=http://magiccards.info/10e/en/78.html
 image=http://magiccards.info/scans/en/10e/78.jpg
-value=2.153
+value=2.128
 rarity=C
 type=Enchantment
 subtype=Aura

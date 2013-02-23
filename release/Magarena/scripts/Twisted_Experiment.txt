@@ -1,7 +1,7 @@
 name=Twisted Experiment
 url=http://magiccards.info/ud/en/74.html
 image=http://magiccards.info/scans/en/ud/74.jpg
-value=3.389
+value=3.345
 rarity=C
 type=Enchantment
 subtype=Aura

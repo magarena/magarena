@@ -1,7 +1,7 @@
 name=Scoria Elemental
 url=http://magiccards.info/som/en/102.html
 image=http://magiccards.info/scans/en/som/102.jpg 
-value=1.297
+value=1.509
 rarity=C
 type=Creature
 subtype=Elemental

@@ -1,7 +1,7 @@
 name=Polluted Dead
 url=http://magiccards.info/avr/en/116.html
 image=http://magiccards.info/scans/en/avr/116.jpg
-value=2.850
+value=2.727
 removal=1
 rarity=C
 type=Creature

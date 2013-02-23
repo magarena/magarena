@@ -1,7 +1,7 @@
 name=Dark Banishing
 url=http://magiccards.info/tp/en/11.html
 image=http://magiccards.info/scans/en/tp/11.jpg
-value=3.918
+value=3.899
 rarity=C
 type=Instant
 cost={2}{B}

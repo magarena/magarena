@@ -1,7 +1,7 @@
 name=Cave Sense
 url=http://magiccards.info/mm/en/179.html
 image=http://magiccards.info/scans/en/mm/179.jpg
-value=1.750
+value=1.786
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,7 +1,7 @@
 name=Wolfbriar Elemental
 url=http://magiccards.info/wwk/en/118.html
 image=http://magiccards.info/scans/en/wwk/118.jpg
-value=4.477
+value=4.429
 rarity=R
 type=Creature
 subtype=Elemental

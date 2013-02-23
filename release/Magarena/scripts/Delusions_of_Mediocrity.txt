@@ -1,7 +1,7 @@
 name=Delusions of Mediocrity
 url=http://magiccards.info/7e/en/70.html
 image=http://magiccards.info/scans/en/7e/70.jpg
-value=3.717
+value=3.734
 rarity=R
 type=Enchantment
 cost={3}{U}

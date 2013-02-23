@@ -1,7 +1,7 @@
 name=Goblin Elite Infantry
 url=http://magiccards.info/10e/en/206.html
 image=http://magiccards.info/scans/en/10e/206.jpg
-value=1.373
+value=1.370
 rarity=C
 type=Creature
 subtype=Goblin,Warrior

@@ -1,7 +1,7 @@
 name=Urborg Elf
 url=http://magiccards.info/ap/en/90.html
 image=http://magiccards.info/scans/en/ap/90.jpg
-value=3.964
+value=3.974
 rarity=C
 type=Creature
 subtype=Elf

@@ -1,7 +1,7 @@
 name=Drifting Shade
 url=http://magiccards.info/m12/en/96.html
 image=http://magiccards.info/scans/en/m12/96.jpg
-value=2.929
+value=2.932
 rarity=C
 type=Creature
 subtype=Shade

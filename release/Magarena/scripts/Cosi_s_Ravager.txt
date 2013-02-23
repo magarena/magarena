@@ -1,7 +1,7 @@
 name=Cosi's Ravager
 url=http://magiccards.info/wwk/en/77.html
 image=http://magiccards.info/scans/en/wwk/77.jpg
-value=2.111
+value=2.455
 rarity=C
 type=Creature
 subtype=Elemental

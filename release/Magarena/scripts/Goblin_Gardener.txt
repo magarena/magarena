@@ -1,7 +1,7 @@
 name=Goblin Gardener
 url=http://magiccards.info/7e/en/188.html
 image=http://magiccards.info/scans/en/7e/188.jpg
-value=3.056
+value=3.066
 rarity=C
 type=Creature
 subtype=Goblin

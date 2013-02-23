@@ -1,7 +1,7 @@
 name=Wings of Aesthir
 url=http://magiccards.info/cstd/en/43.html
 image=http://magiccards.info/scans/en/cstd/43.jpg
-value=3.414
+value=3.435
 rarity=C
 type=Enchantment
 subtype=Aura

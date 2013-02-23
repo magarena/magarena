@@ -1,7 +1,7 @@
 name=Keldon Vandals
 url=http://magiccards.info/ud/en/91.html
 image=http://magiccards.info/scans/en/ud/91.jpg
-value=3.283
+value=3.280
 removal=1
 rarity=C
 type=Creature

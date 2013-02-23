@@ -1,7 +1,7 @@
 name=Adaptive Snapjaw
 url=http://magiccards.info/gtc/en/113.html
 image=http://magiccards.info/scans/en/gtc/113.jpg
-value=3.744
+value=2.873
 rarity=C
 type=Creature
 subtype=Lizard,Beast

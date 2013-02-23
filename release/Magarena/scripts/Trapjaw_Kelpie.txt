@@ -1,7 +1,7 @@
 name=Trapjaw Kelpie
 url=http://magiccards.info/eve/en/164.html
 image=http://magiccards.info/scans/en/eve/164.jpg 
-value=2.052
+value=2.061
 ability=flash,persist
 rarity=C
 type=Creature

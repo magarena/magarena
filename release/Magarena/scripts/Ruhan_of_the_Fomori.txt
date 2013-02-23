@@ -1,7 +1,7 @@
 name=Ruhan of the Fomori
 url=http://magiccards.info/cmd/en/221.html
 image=http://magiccards.info/scans/en/cmd/221.jpg
-value=3.797
+value=3.813
 rarity=M
 type=Legendary,Creature
 subtype=Giant,Warrior

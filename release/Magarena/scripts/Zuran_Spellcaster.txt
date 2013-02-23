@@ -1,7 +1,7 @@
 name=Zuran Spellcaster
 url=http://magiccards.info/me2/en/76.html
 image=http://magiccards.info/scans/en/me2/76.jpg
-value=4.089
+value=4.081
 rarity=C
 type=Creature
 subtype=Human,Wizard

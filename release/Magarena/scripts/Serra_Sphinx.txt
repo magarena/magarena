@@ -1,7 +1,7 @@
 name=Serra Sphinx
 url=http://magiccards.info/pc/en/62.html
 image=http://magiccards.info/scans/en/pc/62.jpg
-value=4.140
+value=4.157
 rarity=R
 type=Creature
 subtype=Sphinx

@@ -1,7 +1,7 @@
 name=Chemister's Trick
 url=http://magiccards.info/rtr/en/149.html
 image=http://magiccards.info/scans/en/rtr/149.jpg
-value=4.371
+value=2.568
 rarity=C
 type=Instant
 cost={U}{R}

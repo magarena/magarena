@@ -1,7 +1,7 @@
 name=Symbiotic Wurm
 url=http://magiccards.info/cmd/en/174.html
 image=http://magiccards.info/scans/en/cmd/174.jpg
-value=3.958
+value=3.980
 rarity=R
 type=Creature
 subtype=Wurm

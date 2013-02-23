@@ -1,7 +1,7 @@
 name=Epic Proportions
 url=http://magiccards.info/lw/en/209.html
 image=http://magiccards.info/scans/en/lw/209.jpg
-value=3.724
+value=3.611
 rarity=R
 type=Enchantment
 subtype=Aura

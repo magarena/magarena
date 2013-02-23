@@ -1,7 +1,7 @@
 name=Order of Leitbur
 url=http://magiccards.info/med/en/22.html
 image=http://magiccards.info/scans/en/med/22.jpg
-value=4.024
+value=4.012
 rarity=C
 type=Creature
 subtype=Human,Cleric,Knight

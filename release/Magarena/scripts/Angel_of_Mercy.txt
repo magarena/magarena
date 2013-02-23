@@ -1,7 +1,7 @@
 name=Angel of Mercy
 url=http://magiccards.info/dvd/en/9.html
 image=http://magiccards.info/scans/en/10e/2.jpg
-value=2.798
+value=2.794
 rarity=U
 type=Creature
 subtype=Angel

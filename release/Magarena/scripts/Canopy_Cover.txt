@@ -1,7 +1,7 @@
 name=Canopy Cover
 url=http://magiccards.info/wwk/en/98.html
 image=http://magiccards.info/scans/en/wwk/98.jpg
-value=3.988
+value=4.008
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,7 +1,7 @@
 name=Mudbrawler Cohort
 url=http://magiccards.info/shm/en/100.html
 image=http://magiccards.info/scans/en/shm/100.jpg
-value=2.875
+value=2.923
 rarity=C
 type=Creature
 subtype=Goblin,Warrior

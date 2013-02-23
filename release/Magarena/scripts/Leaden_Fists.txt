@@ -1,7 +1,7 @@
 name=Leaden Fists
 url=http://magiccards.info/fut/en/38.html
 image=http://magiccards.info/scans/en/fut/38.jpg
-value=2.878
+value=2.881
 rarity=C
 type=Enchantment
 subtype=Aura

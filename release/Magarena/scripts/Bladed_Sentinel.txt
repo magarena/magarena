@@ -1,7 +1,7 @@
 name=Bladed Sentinel
 url=http://magiccards.info/mbs/en/98.html
 image=http://magiccards.info/scans/en/mbs/98.jpg
-value=1.950
+value=2.039
 rarity=C
 type=Artifact,Creature
 subtype=Construct

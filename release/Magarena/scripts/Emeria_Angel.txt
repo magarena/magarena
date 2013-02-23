@@ -1,7 +1,7 @@
 name=Emeria Angel
 url=http://magiccards.info/zen/en/11.html
 image=http://magiccards.info/scans/en/zen/11.jpg
-value=4.321
+value=4.289
 rarity=R
 type=Creature
 subtype=Angel

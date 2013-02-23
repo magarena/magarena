@@ -1,7 +1,7 @@
 name=Thornwind Faeries
 url=http://magiccards.info/ul/en/44.html
 image=http://magiccards.info/scans/en/ul/44.jpg
-value=4.000
+value=3.973
 rarity=C
 type=Creature
 subtype=Faerie

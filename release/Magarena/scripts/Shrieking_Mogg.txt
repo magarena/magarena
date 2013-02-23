@@ -1,7 +1,7 @@
 name=Shrieking Mogg
 url=http://magiccards.info/ne/en/99.html
 image=http://magiccards.info/scans/en/ne/99.jpg
-value=3.562
+value=3.515
 rarity=R
 type=Creature
 subtype=Goblin

@@ -1,7 +1,7 @@
 name=Trained Jackal
 url=http://magiccards.info/p3k/en/155.html
 image=http://magiccards.info/scans/en/p3k/155.jpg
-value=3.542
+value=3.440
 rarity=C
 type=Creature
 subtype=Hound

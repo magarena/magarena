@@ -1,7 +1,7 @@
 name=Misshapen Fiend
 url=http://magiccards.info/mm/en/147.html
 image=http://magiccards.info/scans/en/mm/147.jpg 
-value=1.870
+value=1.960
 rarity=C
 type=Creature
 subtype=Horror,Mercenary

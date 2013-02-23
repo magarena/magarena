@@ -1,7 +1,7 @@
 name=Carrion Feeder
 url=http://magiccards.info/pvc/en/2.html
 image=http://magiccards.info/scans/en/pvc/2.jpg
-value=4.109
+value=4.120
 rarity=C
 type=Creature
 subtype=Zombie

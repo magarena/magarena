@@ -1,7 +1,7 @@
 name=Crookshank Kobolds
 url=http://magiccards.info/med/en/90.html
 image=http://magiccards.info/scans/en/med/90.jpg
-value=3.902
+value=3.904
 rarity=C
 type=Creature
 subtype=Kobold

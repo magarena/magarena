@@ -1,7 +1,7 @@
 name=False Defeat
 url=http://magiccards.info/me3/en/11.html
 image=http://magiccards.info/scans/en/me3/11.jpg
-value=4.160
+value=4.154
 rarity=U
 type=Sorcery
 cost={3}{W}

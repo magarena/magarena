@@ -1,7 +1,7 @@
 name=Reflex Sliver
 url=http://magiccards.info/pc/en/138.html
 image=http://magiccards.info/scans/en/pc/138.jpg
-value=3.048
+value=3.047
 rarity=C
 type=Creature
 subtype=Sliver

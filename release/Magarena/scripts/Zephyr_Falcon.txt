@@ -1,7 +1,7 @@
 name=Zephyr Falcon
 url=http://magiccards.info/5e/en/137.html
 image=http://magiccards.info/scans/en/5e/137.jpg
-value=3.333
+value=3.308
 rarity=C
 type=Creature
 subtype=Bird

@@ -1,7 +1,7 @@
 name=Minotaur Aggressor
 url=http://magiccards.info/rtr/en/100.html
 image=http://magiccards.info/scans/en/rtr/100.jpg
-value=2.086
+value=2.277
 rarity=U
 type=Creature
 subtype=Minotaur,Berserker

@@ -1,7 +1,7 @@
 name=Intrepid Hero
 url=http://magiccards.info/m13/en/20.html
 image=http://magiccards.info/scans/en/m13/20.jpg
-value=4.161
+value=4.238
 rarity=R
 type=Creature
 subtype=Human,Soldier

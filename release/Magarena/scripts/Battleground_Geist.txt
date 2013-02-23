@@ -1,7 +1,7 @@
 name=Battleground Geist
 url=http://magiccards.info/isd/en/45.html
 image=http://magiccards.info/scans/en/isd/45.jpg
-value=2.972
+value=2.932
 rarity=U
 type=Creature
 subtype=Spirit

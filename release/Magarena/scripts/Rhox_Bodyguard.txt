@@ -1,7 +1,7 @@
 name=Rhox Bodyguard
 url=http://magiccards.info/cfx/en/122.html
 image=http://magiccards.info/scans/en/cfx/122.jpg
-value=2.000
+value=2.038
 rarity=C
 type=Creature
 subtype=Rhino,Monk,Soldier

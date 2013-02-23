@@ -1,7 +1,7 @@
 name=Pyromatics
 url=http://magiccards.info/gp/en/72.html
 image=http://magiccards.info/scans/en/gp/72.jpg
-value=2.714
+value=2.792
 removal=1
 rarity=C
 type=Instant

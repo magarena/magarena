@@ -1,7 +1,7 @@
 name=Dead Reveler
 url=http://magiccards.info/rtr/en/62.html
 image=http://magiccards.info/scans/en/rtr/62.jpg
-value=3.037
+value=2.689
 rarity=C
 type=Creature
 subtype=Zombie

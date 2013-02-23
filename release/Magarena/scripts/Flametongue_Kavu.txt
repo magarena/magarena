@@ -1,7 +1,7 @@
 name=Flametongue Kavu
 url=http://magiccards.info/cmd/en/123.html
 image=http://magiccards.info/scans/en/pch/54.jpg
-value=4.322
+value=4.346
 removal=2
 rarity=U
 type=Creature

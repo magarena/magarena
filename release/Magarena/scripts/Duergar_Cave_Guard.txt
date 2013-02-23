@@ -1,7 +1,7 @@
 name=Duergar Cave-Guard
 url=http://magiccards.info/eve/en/51.html
 image=http://magiccards.info/scans/en/eve/51.jpg
-value=2.461
+value=2.512
 rarity=U
 type=Creature
 subtype=Dwarf,Warrior

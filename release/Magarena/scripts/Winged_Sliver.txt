@@ -1,7 +1,7 @@
 name=Winged Sliver
 url=http://magiccards.info/pds/en/4.html
 image=http://magiccards.info/scans/en/pds/4.jpg
-value=4.643
+value=4.582
 rarity=C
 type=Creature
 subtype=Sliver

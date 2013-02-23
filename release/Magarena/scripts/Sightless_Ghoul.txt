@@ -1,7 +1,7 @@
 name=Sightless Ghoul
 url=http://magiccards.info/dka/en/73.html
 image=http://magiccards.info/scans/en/dka/73.jpg
-value=2.000
+value=1.929
 rarity=C
 type=Creature
 subtype=Zombie,Soldier

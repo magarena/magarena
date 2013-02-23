@@ -1,7 +1,7 @@
 name=Silvercoat Lion
 url=http://magiccards.info/m11/en/31.html
 image=http://magiccards.info/scans/en/m11/31.jpg 
-value=2.048
+value=2.083
 rarity=C
 type=Creature
 subtype=Cat

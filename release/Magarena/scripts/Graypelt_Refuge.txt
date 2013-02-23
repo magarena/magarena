@@ -1,7 +1,7 @@
 name=Graypelt Refuge
 url=http://magiccards.info/ddh/en/33.html
 image=http://magiccards.info/scans/en/arc/125.jpg
-value=2.944
+value=3.150
 rarity=U
 type=Land
 mana=g3w3

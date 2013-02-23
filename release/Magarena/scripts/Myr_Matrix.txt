@@ -1,7 +1,7 @@
 name=Myr Matrix
 url=http://magiccards.info/ds/en/132.html
 image=http://magiccards.info/scans/en/ds/132.jpg
-value=4.153
+value=4.172
 rarity=R
 type=Artifact
 cost={5}

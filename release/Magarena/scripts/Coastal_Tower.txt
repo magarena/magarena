@@ -1,7 +1,7 @@
 name=Coastal Tower
 url=http://magiccards.info/in/en/321.html
 image=http://magiccards.info/scans/en/in/321.jpg
-value=3.625
+value=3.598
 rarity=U
 type=Land
 mana=w3u3

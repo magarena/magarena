@@ -1,7 +1,7 @@
 name=Balduvian Bears
 url=http://magiccards.info/dm/en/22.html
 image=http://magiccards.info/scans/en/dm/22.jpg
-value=3.133
+value=3.138
 rarity=C
 type=Creature
 subtype=Bear

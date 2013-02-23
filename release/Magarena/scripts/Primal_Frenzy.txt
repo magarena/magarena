@@ -1,7 +1,7 @@
 name=Primal Frenzy
 url=http://magiccards.info/od/en/262.html
 image=http://magiccards.info/scans/en/od/262.jpg
-value=2.091
+value=2.109
 rarity=C
 type=Enchantment
 subtype=Aura
