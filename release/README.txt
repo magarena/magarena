@@ -79,7 +79,29 @@ includes contributions from melvin
 - fixed: Tooth of Ramos was using Skull of Ramos card image
 
 - added the following cards:
-
+Adaptive Snapjaw, Angelsong, Azorius Arrester, Azusa, Lost but Seeking,
+Basilica Guards, Basilica Screecher, Blind Obedience, Bloodfray Giant,
+Blustersquall, Bomber Corps, Boros Elite, Boros Reckoner, Bounteous Kirin,
+Brindle Shoat, Burrenton Bombardier, Carnival Hellsteed, Chaos Imps,
+Chemister's Trick, Clinging Anemones, Cloudfin Raptor, Counterflux,
+Coursers' Accord, Crocanura, Curse of Chains, Cyclonic Rift, Daring Skyjek,
+Dead Reveler, Downsize, Druid's Deliverance, Dynacharge, Electrickery,
+Elusive Krasis, Essence Warden, Exploration, Eyes in the Skies,
+Firefist Striker, Firemane Avenger, Fleshbag Marauder, Force of Will,
+Frontline Medic, Ghor-Clan Rampager, Gore-House Chainwalker, Grand Abolisher,
+Grim Roustabout, Growing Ranks, Hellhole Flailer, Horncaller's Chant,
+Inaction Injunction, Isperia's Skywatch, Kher Keep, Kingpin's Pet,
+Knight of Obligation, Legion Loyalist, Lyev Skyknight, Martial Law,
+Mitotic Slime, Mizzium Mortars, Mizzium Skin, Nav Squad Commandos,
+Nefarox, Overlord of Grixis, New Prahv Guildmage, Ordruun Veteran,
+Rakdos Cackler, Rootborn Defenses, Rubblehulk, Rukh Egg, Scab-Clan Charger,
+Scorchwalker, Shambleshark, Skarrg Goliath, Skinbrand Goblin, Slaughterhorn,
+Soulsworn Spirit, Spawn of Rix Maadi, Splatter Thug, Street Spasm,
+Summer Bloom, Sundering Growth, Syndicate Enforcer, Syndic of Tithes,
+Teleportal, Thrill-Kill Assassin, Trostani, Selesnya's Voice,
+Trostani's Judgment, Urban Evolution, Vandalblast, Viashino Shanktail,
+Vitu-Ghazi Guildmage, Warmind Infantry, Wasteland Viper, Wayfaring Temple,
+Wojek Halberdiers, Wrecking Ogre, Zhur-Taa Swine
 
 Release 1.34 (January 26, 2013)
 ============
