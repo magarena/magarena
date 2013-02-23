@@ -1,0 +1,10 @@
+name=Street Spasm
+url=http://magiccards.info/rtr/en/106.html
+image=http://magiccards.info/scans/en/rtr/106.jpg
+value=4.371
+rarity=U
+type=Instant
+cost={X}{R}
+timing=removal
+removal=1
+requires_groovy_code
