@@ -65,15 +65,21 @@ includes contributions from melvin
   * evolve
   * extort
   * unleash
-- remove white border around card pic pop up
-- fixes targetted storm spells copying one to many times
-- convert 99 cards with small card code to use groovy code
-- allow multiple card names to be specific in required_card_code and requires_groovy_code, separate by a single comma without any space
-- added "creature you control" and "creature opponent control" for enchant
+- added support for "creature you control" and "creature opponent control" to enchant property in card script
+- converted 99 cards with card code to use groovy code
+- added support for multiple card names to be specified in required_card_code and requires_groovy_code. 
+  Card names should be separated by a single comma without any space
+- removed white border around card pic pop up
+
+- fixed: targetted storm spells copying one to many times
 - fixed: Reya Dawnbringer's ability was triggering during opponent's upkeep instead of your upkeep
 - fixed: able to tap Kessig Wolf Run to pay for the mana cost of its second ability
 - fixed: Sphinx of Lost Truth only cause player to discard if it was NOT kicked.
-- fixed: remove target hint for Arcbound Fiend's ability, fixes issue 328
+- fixed: AI able to avoid targetting its own permanent for negative effects
+- fixed: Tooth of Ramos was using Skull of Ramos card image
+
+- added the following cards:
+
 
 Release 1.34 (January 26, 2013)
 ============
