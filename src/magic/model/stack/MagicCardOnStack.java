@@ -29,6 +29,16 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
         x=payedCost.getX();
     }
     
+    public MagicCardOnStack(final MagicCard card,final MagicCardEvent cardEvent, final MagicPayedCost payedCost) {
+        super(card, card.getController(), cardEvent, payedCost);
+        x=payedCost.getX();
+    }
+    
+    public MagicCardOnStack(final MagicCard card,final MagicPlayer controller,final MagicEvent event, final MagicPayedCost payedCost) {
+        super(card, controller, event);
+        x=payedCost.getX();
+    }
+   
     public MagicCardOnStack(final MagicCard card,final MagicPlayer controller,final MagicPayedCost payedCost) {
         super(card, controller, card.getCardDefinition().getCardEvent(), payedCost);
         x=payedCost.getX();
@@ -48,7 +58,7 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
         final MagicPayedCost cost=new MagicPayedCost();
         cost.setX(x);
         final MagicCard card=MagicCard.createTokenCard(getCardDefinition(),player);
-        final MagicCardOnStack copyCardOnStack=new MagicCardOnStack(card,cost);
+        final MagicCardOnStack copyCardOnStack=new MagicCardOnStack(card,player,getEvent(),cost);
         final Object[] choiceResults=getChoiceResults();
         if (choiceResults!=null) {
             copyCardOnStack.setChoiceResults(Arrays.copyOf(choiceResults,choiceResults.length));

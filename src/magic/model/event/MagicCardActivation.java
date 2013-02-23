@@ -94,7 +94,7 @@ public class MagicCardActivation extends MagicActivation<MagicCard> implements M
 
     @Override
     MagicTargetChoice getTargetChoice(final MagicCard source) {
-        final MagicCardOnStack cardOnStack=new MagicCardOnStack(source,MagicPayedCost.NO_COST);
+        final MagicCardOnStack cardOnStack=new MagicCardOnStack(source,this,MagicPayedCost.NO_COST);
         return cardOnStack.getEvent().getTargetChoice();
     }
     
