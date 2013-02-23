@@ -51,7 +51,7 @@
             final Collection<MagicPermanent> targets=
                 game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_NONLAND_PERMANENT_YOUR_OPPONENT_CONTROLS);
             for (final MagicPermanent target : targets) {
-                game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
+                game.doAction(new MagicRemoveFromPlayAction(target,MagicLocationType.OwnersHand));
             }
         }
     }
