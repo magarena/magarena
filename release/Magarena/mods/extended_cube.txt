@@ -1154,6 +1154,7 @@ Triskelion
 Triumph of Cruelty
 Triumph of Ferocity
 Trostani, Selesnya's Voice
+Trostani's Judgment
 True Conviction
 Trumpet Blast
 Trusted Forcemage

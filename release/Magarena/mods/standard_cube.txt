@@ -555,6 +555,7 @@ Tricks of the Trade
 Triumph of Cruelty
 Triumph of Ferocity
 Trostani, Selesnya's Voice
+Trostani's Judgment
 Trumpet Blast
 Trusted Forcemage
 Typhoid Rats
