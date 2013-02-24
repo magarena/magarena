@@ -416,6 +416,13 @@ public class MagicTargetChoice extends MagicChoice {
         "a creature token you control"
     );
     
+    public static final MagicTargetChoice PLANESWALKER_YOUR_OPPONENT_CONTROLS = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_PLANESWALKER_YOUR_OPPONENT_CONTROLS,
+        false,
+        MagicTargetHint.None,
+        "a planeswalker your opponent controls"
+    );
+    
     public static final MagicTargetChoice TARGET_CREATURE_YOUR_OPPONENT_CONTROLS = new MagicTargetChoice(
         MagicTargetFilter.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
         true,

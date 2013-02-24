@@ -323,6 +323,10 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     
     MagicPermanentFilterImpl TARGET_PLANESWALKER = Factory.permanent(MagicType.Planeswalker, Control.Any);
     
+    MagicPermanentFilterImpl TARGET_PLANESWALKER_YOU_CONTROL = Factory.permanent(MagicType.Planeswalker, Control.You);
+    
+    MagicPermanentFilterImpl TARGET_PLANESWALKER_YOUR_OPPONENT_CONTROLS = Factory.permanent(MagicType.Planeswalker, Control.Opp);
+
     MagicPermanentFilterImpl TARGET_LAND_OR_NONBLACK_CREATURE=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isLand() || (!target.hasColor(MagicColor.Black) && target.isCreature());
