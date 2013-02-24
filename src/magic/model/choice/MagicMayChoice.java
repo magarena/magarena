@@ -27,7 +27,7 @@ public class MagicMayChoice extends MagicChoice {
     private final MagicTargetChoice targetChoice; 
     private final int manaChoiceResultIndex;
     
-    private MagicMayChoice(final String description,final MagicChoice... choices) {
+    public MagicMayChoice(final String description,final MagicChoice... choices) {
         super(description);
         this.choices=choices;
 
