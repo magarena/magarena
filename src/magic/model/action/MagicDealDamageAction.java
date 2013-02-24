@@ -9,21 +9,27 @@ import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
 import magic.model.MagicPlayerState;
 import magic.model.MagicSource;
+import magic.model.MagicType;
 import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.event.MagicRedirectDamageEvent;
 
 public class MagicDealDamageAction extends MagicAction {
+    
+    private static final int UNINIT = Integer.MIN_VALUE;
 
     private final MagicDamage damage;
     private MagicTarget target;
-    private int oldDamage;
-    private int oldPrevent;
-    private static final int UNINIT = Integer.MIN_VALUE;
+    private int oldDamage = UNINIT;
+    private int oldPrevent = UNINIT;
     
     public MagicDealDamageAction(final MagicDamage damage) {
         this.damage=damage;
-        oldDamage=UNINIT;
-        oldPrevent=UNINIT;
+    }
+    
+    public MagicDealDamageAction(final MagicDamage damage, final MagicTarget target) {
+        this.damage=damage;
+        this.target=target;
     }
 
     private int preventDamage(final MagicGame game,int amount) {
@@ -61,6 +67,19 @@ public class MagicDealDamageAction extends MagicAction {
     
     @Override
     public void doAction(final MagicGame game) {
+        /*
+        306.7. If damage would be dealt to a player by a source
+        controlled by an opponent, that opponent may have that source deal that
+        damage to a planeswalker the first player controls instead.
+        */
+        if (target == null &&
+            damage.getTarget().isPlayer() && 
+            damage.getSource().getController() != target &&
+            damage.getTarget().getController().getNrOfPermanentsWithType(MagicType.Planeswalker) > 0) {
+            game.addEvent(new MagicRedirectDamageEvent(damage));
+            return;
+        }
+
         game.executeTrigger(MagicTriggerType.IfDamageWouldBeDealt,damage);
         damage.setDealtAmount(0);
         int dealtAmount=damage.getAmount();
@@ -68,14 +87,18 @@ public class MagicDealDamageAction extends MagicAction {
             return;
         }
 
-        target=damage.getTarget();
+        target = damage.getTarget();
         dealtAmount=preventDamage(game,dealtAmount);
         if (dealtAmount<=0) {
             return;
         }
 
         final MagicSource source=damage.getSource();
-        if (target.isPermanent()) {
+        if (target.isPermanent() && target.hasType(MagicType.Planeswalker)) {
+            final MagicPermanent targetPermanent=(MagicPermanent)target;
+            game.doAction(new MagicChangeCountersAction(targetPermanent,MagicCounterType.Charge,-dealtAmount,true));
+
+        } else if (target.isPermanent()) {
             final MagicPermanent targetPermanent=(MagicPermanent)target;
             if (damage.hasNoRegeneration()) {
                 game.doAction(new MagicChangeStateAction(targetPermanent,MagicPermanentState.CannotBeRegenerated,true));
