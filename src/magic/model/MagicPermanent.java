@@ -670,7 +670,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             }
         } 
                 
-        if (cardDefinition.isAura()) {
+        if (isAura()) {
             final MagicPlayAuraEvent auraEvent = (MagicPlayAuraEvent)cardDefinition.getCardEvent();
             //not targeting since Aura is already attached
             final MagicTargetChoice tchoice = new MagicTargetChoice(auraEvent.getTargetChoice(), false);
@@ -682,14 +682,14 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             }
         } 
         
-        if (cardDefinition.isEquipment() && equippedCreature.isValid()) {
+        if (isEquipment() && equippedCreature.isValid()) {
             if (isCreature() || !equippedCreature.isCreature() || equippedCreature.hasProtectionFrom(this)) {
                 game.addDelayedAction(new MagicAttachEquipmentAction(this,MagicPermanent.NONE));
             }
         }
 
         // rule 704.5i If a planeswalker has loyalty 0, it's put into its owner's graveyard.
-        if (cardDefinition.isPlaneswalker() && getCounters(MagicCounterType.Charge) == 0) {
+        if (isPlaneswalker() && getCounters(MagicCounterType.Charge) == 0) {
             game.logAppendMessage(getController(),getName()+" is put into its owner's graveyard.");
             game.addDelayedAction(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
         }
@@ -977,6 +977,14 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     
     public boolean isEnchantment() {
         return hasType(MagicType.Enchantment);
+    }
+    
+    public boolean isAura() {
+        return isEnchantment() && hasSubType(MagicSubType.Aura);
+    }
+    
+    public boolean isPlaneswalker() {
+        return hasType(MagicType.Planeswalker);
     }
     
     @Override
