@@ -55,6 +55,10 @@ Thank you for your support and have fun!
 
 
 
+Release 1.36 (March 30, 2013)
+============
+includes contributions from 
+
 Release 1.35 (February 23, 2013)
 ============
 includes contributions from melvin
