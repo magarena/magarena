@@ -1,0 +1,9 @@
+name=Wurm6G
+token=Wurm
+image=http://magiccards.info/extras/token/magic-2013/wurm.jpg
+value=4
+type=Creature
+subtype=Wurm
+color=g
+cost={0}
+pt=6/6
