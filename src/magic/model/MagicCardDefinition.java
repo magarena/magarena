@@ -287,6 +287,10 @@ public class MagicCardDefinition {
         return isArtifact() && hasSubType(MagicSubType.Equipment);
     }
     
+    public boolean isPlaneswalker() {
+        return hasType(MagicType.Planeswalker);
+    }
+    
     public boolean isEnchantment() {
         return hasType(MagicType.Enchantment);
     }

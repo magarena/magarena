@@ -687,6 +687,12 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
                 game.addDelayedAction(new MagicAttachEquipmentAction(this,MagicPermanent.NONE));
             }
         }
+
+        // rule 704.5i If a planeswalker has loyalty 0, it's put into its owner's graveyard.
+        if (cardDefinition.isPlaneswalker() && getCounters(MagicCounterType.Charge) == 0) {
+            game.logAppendMessage(getController(),getName()+" is put into its owner's graveyard.");
+            game.addDelayedAction(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
+        }
         
         // +1/+1 and -1/-1 counters cancel each other out.
         final int plusCounters=getCounters(MagicCounterType.PlusOne);
