@@ -199,6 +199,13 @@ public interface MagicCondition {
         }
     };
     
+    MagicCondition SIX_CHARGE_COUNTERS_CONDITION=new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicPermanent permanent=(MagicPermanent)source;
+            return permanent.getCounters(MagicCounterType.Charge)>=6;
+        }
+    };
+    
     MagicCondition EIGHT_CHARGE_COUNTERS_CONDITION = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
