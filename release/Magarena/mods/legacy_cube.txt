@@ -841,6 +841,7 @@ Elgaud Shieldmate
 Elite Cat Warrior
 Elite Inquisitor
 Elite Vanguard
+Elspeth, Knight-Errant
 Elusive Krasis
 Elven Warhounds
 Elves of Deep Shadow
@@ -1053,6 +1054,7 @@ Galvanic Arc
 Galvanic Juggernaut
 Game-Trail Changeling
 Gang of Elk
+Garruk, Primal Hunter
 Garruk's Companion
 Gatekeeper of Malakir
 Gather the Townsfolk

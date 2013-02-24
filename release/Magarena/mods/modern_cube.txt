@@ -610,6 +610,7 @@ Elgaud Inquisitor
 Elgaud Shieldmate
 Elite Inquisitor
 Elite Vanguard
+Elspeth, Knight-Errant
 Elves of Deep Shadow
 Elvish Berserker
 Elvish Champion
@@ -752,6 +753,7 @@ Gallows Warden
 Galvanic Arc
 Galvanic Juggernaut
 Game-Trail Changeling
+Garruk, Primal Hunter
 Garruk's Companion
 Gatekeeper of Malakir
 Gather the Townsfolk
