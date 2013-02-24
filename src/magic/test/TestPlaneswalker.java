@@ -31,6 +31,7 @@ class TestPlaneswalker extends TestGameBuilder {
         createPermanent(game,P,"Rupture Spire",false,8);
         addToHand(P, "Grizzly Bears", 2);
         addToHand(P, "Garruk, Primal Hunter", 1);
+        addToHand(P, "Elspeth, Knight-Errant", 1);
         addToHand(P, "Dreadbore", 1);
         addToHand(P, "Lightning Bolt", 1);
 

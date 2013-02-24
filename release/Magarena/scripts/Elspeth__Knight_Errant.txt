@@ -1,0 +1,11 @@
+name=Elspeth, Knight-Errant
+url=http://magiccards.info/ala/en/9.html
+image=http://magiccards.info/scans/en/ala/9.jpg
+value=3.189
+rarity=M
+type=Planeswalker
+subtype=Elspeth
+cost={2}{W}{W}
+ability=enters with charge 8
+timing=main
+requires_groovy_code
