@@ -29,15 +29,17 @@ class TestPlaneswalker extends TestGameBuilder {
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
         createPermanent(game,P,"Rupture Spire",false,8);
-        addToHand(P, "Grizzly Bears", 3);
-        addToHand(P, "Garruk, Primal Hunter", 2);
+        addToHand(P, "Grizzly Bears", 2);
+        addToHand(P, "Garruk, Primal Hunter", 1);
+        addToHand(P, "Dreadbore", 1);
+        addToHand(P, "Lightning Bolt", 1);
 
         P = opponent;
         
         P.setLife(10);
         addToLibrary(P, "Plains", 10);
         createPermanent(game,P,"Rupture Spire",false,8);
-        addToHand(P, "Garruk, Primal Hunter", 2);
+        addToHand(P, "Garruk, Primal Hunter", 1);
         
         return game;
     }
