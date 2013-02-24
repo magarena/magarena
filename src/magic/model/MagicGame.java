@@ -901,7 +901,6 @@ public class MagicGame {
                         permanent.hasSubType(pwType) && 
                         planeswalker.hasSubType(pwType)) {
                         otherPlaneswalker = planeswalker;
-                        System.out.println("found!");
                     }
                 }
             }
