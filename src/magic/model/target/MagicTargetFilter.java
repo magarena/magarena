@@ -172,6 +172,15 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }
     };
     
+    MagicPermanentFilterImpl ANY = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return true;
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return true;
+        }
+    };
+    
     MagicStackFilterImpl TARGET_SPELL=new MagicStackFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack target) {
             return target.isSpell();
@@ -504,6 +513,19 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() ||
                    target.isEnchantment();
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType==MagicTargetType.Permanent;
+        }        
+    };
+    
+    MagicPermanentFilterImpl TARGET_CREATURE_OR_ENCHANTMENT_OR_LAND_YOU_CONTROL=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isController(player) && (
+               target.isCreature() ||
+               target.isEnchantment() ||
+               target.isLand()
+           );
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType==MagicTargetType.Permanent;
