@@ -37,6 +37,8 @@ public class MagicRedirectDamageEvent extends MagicEvent {
                             game.doAction(new MagicDealDamageAction(damage, planeswalker));
                         }
                     });
+                } else {
+                    game.doAction(new MagicDealDamageAction(damage, damage.getTarget()));
                 }
             }
         };
