@@ -21,7 +21,7 @@ public class MagicPutCounterEvent extends MagicEvent {
             MagicTargetChoice.POS_TARGET_CREATURE,
             MagicPumpTargetPicker.create(),
             amount,
-            EventAction(type),
+            EventActionTarget(type),
             "PN puts " + amount + " " + type.getName() + " counters on target creature$."
         );
     }
@@ -30,7 +30,7 @@ public class MagicPutCounterEvent extends MagicEvent {
         this(source, MagicCounterType.PlusOne, amount);
     }
     
-    private static final MagicEventAction EventAction(final MagicCounterType type) {
+    private static final MagicEventAction EventActionTarget(final MagicCounterType type) {
         return new MagicEventAction() {
             @Override
             public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
@@ -44,6 +44,29 @@ public class MagicPutCounterEvent extends MagicEvent {
                         ));
                     }
                 });
+            }
+        };
+    }
+    
+    public static final MagicEvent Self(final MagicSource source, final MagicCounterType type, final int amount) {
+        return new MagicEvent(
+            source,
+            amount,
+            EventAction(type),
+            "PN puts " + amount + " " + type.getName() + " counters on SN."
+        );
+    }
+    
+    private static final MagicEventAction EventAction(final MagicCounterType type) {
+        return new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+                game.doAction(new MagicChangeCountersAction(
+                    event.getPermanent(),
+                    type,
+                    event.getRefInt(),
+                    true
+                ));
             }
         };
     }
