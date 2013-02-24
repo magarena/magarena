@@ -15,30 +15,36 @@ import magic.model.target.MagicPumpTargetPicker;
 
 public class MagicPutCounterEvent extends MagicEvent {
 
-    public MagicPutCounterEvent(final MagicSource source, final int amount) {
+    public MagicPutCounterEvent(final MagicSource source, final MagicCounterType type, final int amount) {
         super(
             source,
             MagicTargetChoice.POS_TARGET_CREATURE,
             MagicPumpTargetPicker.create(),
             amount,
-            EA,
-            "PN puts " + amount + " +1/+1 counters on target creature$."
+            EventAction(type),
+            "PN puts " + amount + " " + type.getName() + " counters on target creature$."
         );
     }
+
+    public MagicPutCounterEvent(final MagicSource source, final int amount) {
+        this(source, MagicCounterType.PlusOne, amount);
+    }
     
-    private static final MagicEventAction EA = new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
-            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent creature) {
-                    game.doAction(new MagicChangeCountersAction(
-                        creature,
-                        MagicCounterType.PlusOne,
-                        event.getRefInt(),
-                        true
-                    ));
-                }
-            });
-        }
-    };
+    private static final MagicEventAction EventAction(final MagicCounterType type) {
+        return new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+                event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                    public void doAction(final MagicPermanent creature) {
+                        game.doAction(new MagicChangeCountersAction(
+                            creature,
+                            type,
+                            event.getRefInt(),
+                            true
+                        ));
+                    }
+                });
+            }
+        };
+    }
 }
