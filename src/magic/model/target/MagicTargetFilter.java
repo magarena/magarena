@@ -489,6 +489,16 @@ public interface MagicTargetFilter<T extends MagicTarget> {
             return targetType==MagicTargetType.Permanent;
         }
     };
+    
+    MagicPermanentFilterImpl TARGET_CREATURE_OR_PLANESWALKER=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() || 
+                   target.isPlaneswalker();
+        }        
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType==MagicTargetType.Permanent;
+        }
+    };
 
     MagicPermanentFilterImpl TARGET_CREATURE_OR_ENCHANTMENT=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
