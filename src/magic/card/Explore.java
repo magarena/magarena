@@ -27,7 +27,7 @@ public class Explore {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            game.doAction(new MagicAddStaticAction(MagicPermanent.NONE,  
+            game.doAction(new MagicAddStaticAction(
                 new MagicStatic(MagicLayer.Game, MagicStatic.UntilEOT) {
                     @Override
                     public void modGame(final MagicPermanent source, final MagicGame game) {
