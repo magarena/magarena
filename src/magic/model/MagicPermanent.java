@@ -35,48 +35,6 @@ import java.util.Collections;
 public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicPermanent> {
 
     public static final int NO_COLOR_FLAGS=-1;
-    public static final MagicPermanent NONE = new MagicPermanent(-1L, MagicCard.NONE, MagicPlayer.NONE) {
-        @Override
-        public boolean isValid() {
-            return false;
-        }
-        @Override
-        public String toString() {
-            return "MagicPermanent.NONE";
-        }
-        @Override
-        public MagicPermanent copy(final MagicCopyMap copyMap) {
-            return this;
-        }
-        @Override
-        public MagicPowerToughness getPowerToughness() {
-            return new MagicPowerToughness(0,0);
-        }
-        @Override
-        public MagicPlayer getController() {
-            return MagicPlayer.NONE;
-        }
-        @Override
-        public boolean hasColor(final MagicColor color) {
-            return false;
-        }
-        @Override
-        public boolean hasType(final MagicType type) {
-            return false;
-        }
-        @Override
-        public boolean hasSubType(final MagicSubType type) {
-            return false;
-        }
-        @Override
-        public Set<MagicAbility> getAbilityFlags() {
-            return Collections.emptySet();
-        }
-        @Override
-        public boolean hasAbility(final MagicAbility ability) {
-            return false;
-        }
-    };
         
     private final long id;
     private final MagicCardDefinition cardDefinition;
@@ -1078,4 +1036,47 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     public boolean isLegalTarget(final MagicPlayer player, final MagicTargetFilter<? extends MagicTarget> targetFilter) {
         return getController().controlsPermanent(this);
     }
+    
+    public static final MagicPermanent NONE = new MagicPermanent(-1L, MagicCard.NONE, MagicPlayer.NONE) {
+        @Override
+        public boolean isValid() {
+            return false;
+        }
+        @Override
+        public String toString() {
+            return "MagicPermanent.NONE";
+        }
+        @Override
+        public MagicPermanent copy(final MagicCopyMap copyMap) {
+            return this;
+        }
+        @Override
+        public MagicPowerToughness getPowerToughness() {
+            return new MagicPowerToughness(0,0);
+        }
+        @Override
+        public MagicPlayer getController() {
+            return MagicPlayer.NONE;
+        }
+        @Override
+        public boolean hasColor(final MagicColor color) {
+            return false;
+        }
+        @Override
+        public boolean hasType(final MagicType type) {
+            return false;
+        }
+        @Override
+        public boolean hasSubType(final MagicSubType type) {
+            return false;
+        }
+        @Override
+        public Set<MagicAbility> getAbilityFlags() {
+            return Collections.emptySet();
+        }
+        @Override
+        public boolean hasAbility(final MagicAbility ability) {
+            return false;
+        }
+    };
 }
