@@ -57,7 +57,7 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
         
         setScore(controller,permanent.getScore()+permanent.getStaticScore()+score);
         
-        game.checkLegendRule(permanent);
+        game.checkUniquenessRule(permanent);
         game.setStateCheckRequired();
     }
 

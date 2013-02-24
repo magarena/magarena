@@ -877,7 +877,8 @@ public class MagicGame {
         }
     }
 
-    public void checkLegendRule(final MagicPermanent permanent) {
+    public void checkUniquenessRule(final MagicPermanent permanent) {
+        // 704.5k "legend rule"
         if (permanent.hasType(MagicType.Legendary)) {
             final MagicTargetFilter<MagicPermanent> targetFilter=new MagicTargetFilter.LegendaryTargetFilter(permanent.getName());
             final Collection<MagicPermanent> targets=filterPermanents(permanent.getController(),targetFilter);
@@ -887,6 +888,34 @@ public class MagicGame {
                     logAppendMessage(target.getController(),message);
                     doAction(new MagicRemoveFromPlayAction(target,MagicLocationType.Graveyard));
                 }
+            }
+        }
+
+        // 704.5j "planeswalker uniqueness rule."
+        if (permanent.hasType(MagicType.Planeswalker)) {
+            final Collection<MagicPermanent> targets=filterPermanents(permanent.getController(),MagicTargetFilter.TARGET_PLANESWALKER);
+            MagicPermanent otherPlaneswalker = permanent;
+            for (final MagicPermanent planeswalker : targets) {
+                for (final MagicSubType pwType : MagicSubType.ALL_PLANESWALKERS) {
+                    if (planeswalker != permanent && 
+                        permanent.hasSubType(pwType) && 
+                        planeswalker.hasSubType(pwType)) {
+                        otherPlaneswalker = planeswalker;
+                        System.out.println("found!");
+                    }
+                }
+            }
+            if (otherPlaneswalker != permanent) {
+                logAppendMessage(
+                    permanent.getController(),
+                    "Put " + permanent + " into its owner's graveyard (planeswalker uniqueness rule)."
+                );
+                doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.Graveyard));
+                logAppendMessage(
+                    otherPlaneswalker.getController(),
+                    "Put " + otherPlaneswalker + " into its owner's graveyard (planeswalker uniqueness rule)."
+                );
+                doAction(new MagicRemoveFromPlayAction(otherPlaneswalker,MagicLocationType.Graveyard));
             }
         }
     }

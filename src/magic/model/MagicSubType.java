@@ -78,6 +78,8 @@ public enum MagicSubType {
     
     public static final EnumSet<MagicSubType> ALL_CREATURES = EnumSet.range(Advisor, Zubera);
     
+    public static final EnumSet<MagicSubType> ALL_PLANESWALKERS = EnumSet.range(Ajani, Venser);
+    
     private MagicSubType() {
     }
     

@@ -321,6 +321,8 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     
     MagicPermanentFilterImpl TARGET_LAND = Factory.permanent(MagicType.Land, Control.Any);
     
+    MagicPermanentFilterImpl TARGET_PLANESWALKER = Factory.permanent(MagicType.Planeswalker, Control.Any);
+    
     MagicPermanentFilterImpl TARGET_LAND_OR_NONBLACK_CREATURE=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isLand() || (!target.hasColor(MagicColor.Black) && target.isCreature());
