@@ -37,7 +37,7 @@ public class DuelPanel extends JPanel implements ActionListener {
     
     private static final int SPACING = 10;
     private static final String PLAY_BUTTON_START_TEXT = "Start Duel";
-    private static final String PLAY_BUTTON_NEXT_TEXT = "Continue Duel";
+    private static final String PLAY_BUTTON_NEXT_TEXT = "Cont. Duel";
     private static final String RESTART_BUTTON_TEXT = "Restart Duel";
     private static final String NEW_BUTTON_TEXT = "New Duel";
     private static final String EDIT_BUTTON_TEXT = "Edit Deck";
