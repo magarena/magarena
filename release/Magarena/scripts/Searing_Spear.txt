@@ -1,0 +1,10 @@
+name=Searing Spear
+url=http://magiccards.info/m13/en/147.html
+image=http://magiccards.info/m13/en/147.html
+value=4.615
+removal=3
+rarity=C
+type=Instant
+cost={1}{R}
+timing=removal
+requires_card_code=Lightning Bolt
