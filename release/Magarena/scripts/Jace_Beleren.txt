@@ -1,0 +1,11 @@
+name=Jace Beleren
+url=http://magiccards.info/m11/en/58.html
+image=http://magiccards.info/scans/en/m11/58.jpg
+value=3.189
+rarity=M
+type=Planeswalker
+subtype=Jace
+cost={1}{U}{U}
+ability=enters with charge 3
+timing=main
+requires_groovy_code
