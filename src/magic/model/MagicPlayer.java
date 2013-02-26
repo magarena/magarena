@@ -476,6 +476,11 @@ public class MagicPlayer implements MagicTarget {
     public boolean isPlayer() {
         return true;
     }
+    
+    @Override
+    public boolean isPlaneswalker() {
+        return false;
+    }
 
     @Override
     public boolean isSpell() {

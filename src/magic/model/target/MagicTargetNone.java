@@ -58,6 +58,11 @@ public class MagicTargetNone implements MagicTarget {
     }
     
     @Override
+    public boolean isPlaneswalker() {
+        return false;
+    }
+    
+    @Override
     public boolean hasAbility(final MagicAbility ability) {
         return false;
     }

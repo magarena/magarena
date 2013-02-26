@@ -192,6 +192,11 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
     public boolean isCreature() {
         return false;
     }
+    
+    @Override
+    public boolean isPlaneswalker() {
+        return false;
+    }
 
     @Override
     public boolean isPlayer() {

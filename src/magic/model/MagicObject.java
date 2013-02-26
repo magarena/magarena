@@ -10,6 +10,7 @@ public interface MagicObject extends MagicCopyable, MagicMappable {
     boolean     isSpell();
     boolean     isPermanent();
     boolean     isCreature();
+    boolean     isPlaneswalker();
     boolean     isPlayer();
     boolean     hasColor(final MagicColor color);
     boolean     hasAbility(final MagicAbility ability);
