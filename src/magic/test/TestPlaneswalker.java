@@ -29,9 +29,9 @@ class TestPlaneswalker extends TestGameBuilder {
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
         createPermanent(game,P,"Rupture Spire",false,8);
-        addToHand(P, "Grizzly Bears", 2);
         addToHand(P, "Garruk, Primal Hunter", 1);
         addToHand(P, "Elspeth, Knight-Errant", 1);
+        addToHand(P, "Gideon, Champion of Justice", 1);
         addToHand(P, "Dreadbore", 1);
         addToHand(P, "Lightning Bolt", 1);
 
@@ -41,6 +41,7 @@ class TestPlaneswalker extends TestGameBuilder {
         addToLibrary(P, "Plains", 10);
         createPermanent(game,P,"Rupture Spire",false,8);
         addToHand(P, "Garruk, Primal Hunter", 1);
+        addToHand(P, "Grizzly Bears", 2);
         
         return game;
     }

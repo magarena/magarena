@@ -1,0 +1,11 @@
+name=Gideon, Champion of Justice
+url=http://magiccards.info/gtc/en/13.html
+image=http://magiccards.info/scans/en/gtc/13.jpg
+value=3.189
+rarity=M
+type=Planeswalker
+subtype=Gideon
+cost={2}{W}{W}
+ability=enters with charge 4
+timing=main
+requires_groovy_code
