@@ -1,12 +1,4 @@
 
-def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
-    @Override
-    public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
-        final int amt = source.getCounters(MagicCounterType.Charge);
-        pt.set(amt,amt);
-    }
-};
-
 def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
     @Override
     public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
@@ -63,8 +55,9 @@ def PreventAllDamage = new MagicIfDamageWouldBeDealtTrigger(1) {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
+                MagicTargetChoice.TARGET_OPPONENT,
                 this,
-                "Put a loyalty counter on SN for each creature target opponent controls."
+                "Put a loyalty counter on SN for each creature target opponent\$ controls."
             );
         }
         @Override
@@ -109,6 +102,15 @@ def PreventAllDamage = new MagicIfDamageWouldBeDealtTrigger(1) {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
+
+            final int amt = event.getPermanent().getCounters(MagicCounterType.Charge); 
+            def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
+                @Override
+                public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
+                    pt.set(amt,amt);
+                }
+            };
+            
             game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT,AB,ST));
             game.doAction(new MagicAddTurnTriggerAction(event.getPermanent(), PreventAllDamage)); 
         }
