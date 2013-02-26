@@ -80,25 +80,37 @@ public class MagicDealDamageAction extends MagicAction {
             return;
         }
 
+        target = damage.getTarget();
+
+        /*
+        119.1. Objects can deal damage to creatures, planeswalkers, and players.
+        */
+        if (!target.isCreature() &&
+            !target.isPlaneswalker() &&
+            !target.isPlayer()) {
+            return;
+        }
+
         game.executeTrigger(MagicTriggerType.IfDamageWouldBeDealt,damage);
         damage.setDealtAmount(0);
         int dealtAmount=damage.getAmount();
         if (dealtAmount<=0) {
             return;
         }
-
-        target = damage.getTarget();
+        
         dealtAmount=preventDamage(game,dealtAmount);
         if (dealtAmount<=0) {
             return;
         }
 
         final MagicSource source=damage.getSource();
-        if (target.isPermanent() && target.hasType(MagicType.Planeswalker)) {
+
+        if (target.isPlaneswalker()) {
             final MagicPermanent targetPermanent=(MagicPermanent)target;
             game.doAction(new MagicChangeCountersAction(targetPermanent,MagicCounterType.Charge,-dealtAmount,true));
-
-        } else if (target.isPermanent()) {
+        } 
+        
+        if (target.isCreature()) {
             final MagicPermanent targetPermanent=(MagicPermanent)target;
             if (damage.hasNoRegeneration()) {
                 game.doAction(new MagicChangeStateAction(targetPermanent,MagicPermanentState.CannotBeRegenerated,true));
@@ -112,7 +124,9 @@ public class MagicDealDamageAction extends MagicAction {
             if (source.hasAbility(MagicAbility.Deathtouch)) {
                 game.doAction(new MagicChangeStateAction(targetPermanent,MagicPermanentState.Destroyed,true));
             }
-        } else if (target.isPlayer()) {
+        } 
+        
+        if (target.isPlayer()) {
             final MagicPlayer targetPlayer = (MagicPlayer)target;
             if (source.hasAbility(MagicAbility.Infect)) {
                 game.doAction(new MagicChangePoisonAction(targetPlayer,dealtAmount));
