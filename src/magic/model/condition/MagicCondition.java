@@ -213,6 +213,13 @@ public interface MagicCondition {
         }
     };
     
+    MagicCondition FIFTEEN_CHARGE_COUNTERS_CONDITION = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicPermanent permanent = (MagicPermanent)source;
+            return permanent.getCounters(MagicCounterType.Charge) >= 15;
+        }
+    };
+    
     MagicCondition CAN_REGENERATE_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent=(MagicPermanent)source;
