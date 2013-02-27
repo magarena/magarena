@@ -43,7 +43,6 @@ public class MagicManaCost {
         IconImages.COST_SIXTEEN
     };
     
-    public static final MagicManaCost X=MagicManaCost.create("{X}");
     public static final MagicManaCost ZERO=MagicManaCost.create("{0}");
 
     private final String costText;

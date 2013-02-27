@@ -10,6 +10,7 @@ import magic.model.MagicSubType;
 import magic.model.action.MagicBecomesCreatureAction;
 import magic.model.action.MagicPlayAbilityAction;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -26,13 +27,13 @@ import java.util.Set;
 
 public class Mirror_Entity {
     public static final MagicPermanentActivation A  = new MagicPermanentActivation( 
-            new MagicCondition[]{MagicManaCost.X.getCondition()},
+            new MagicCondition[]{MagicConditionFactory.ManaCost("{X}")},
             new MagicActivationHints(MagicTiming.Pump,true,1),
             "X/X") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                    new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.X),
+                    new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{X}")),
                     new MagicPlayAbilityEvent(source)};
         }
         @Override
