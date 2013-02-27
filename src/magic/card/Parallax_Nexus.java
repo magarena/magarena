@@ -13,6 +13,7 @@ import magic.model.action.MagicExileUntilThisLeavesPlayAction;
 import magic.model.action.MagicReturnExiledUntilThisLeavesPlayAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPermanentActivation;
@@ -25,7 +26,7 @@ public class Parallax_Nexus {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
         new MagicCondition[]{
             MagicCondition.SORCERY_CONDITION,
-            MagicCondition.CHARGE_COUNTER_CONDITION
+            MagicConditionFactory.ChargeCountersAtLeast(1)
         },
         new MagicActivationHints(MagicTiming.Main),
         "Exile"

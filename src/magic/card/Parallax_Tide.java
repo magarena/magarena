@@ -12,6 +12,7 @@ import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicReturnExiledUntilThisLeavesPlayAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPermanentActivation;
@@ -22,14 +23,15 @@ import magic.model.trigger.MagicWhenLeavesPlayTrigger;
 
 public class Parallax_Tide {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicCondition.CHARGE_COUNTER_CONDITION},
+            new MagicCondition[]{MagicConditionFactory.ChargeCountersAtLeast(1)},
             new MagicActivationHints(MagicTiming.Pump),
             "Exile") {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicRemoveCounterEvent(source,MagicCounterType.Charge,1)};
+                new MagicRemoveCounterEvent(source,MagicCounterType.Charge,1)
+            };
         }
 
         @Override

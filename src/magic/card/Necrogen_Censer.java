@@ -10,6 +10,7 @@ import magic.model.action.MagicChangeLifeAction;
 import magic.model.action.MagicPlayerAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPermanentActivation;
@@ -20,8 +21,9 @@ import magic.model.event.MagicTiming;
 public class Necrogen_Censer {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
-                    MagicCondition.CAN_TAP_CONDITION,
-                    MagicCondition.CHARGE_COUNTER_CONDITION},
+                MagicCondition.CAN_TAP_CONDITION,
+                MagicConditionFactory.ChargeCountersAtLeast(1)
+            },
             new MagicActivationHints(MagicTiming.Removal),
             "Damage") {
         @Override

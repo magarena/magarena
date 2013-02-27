@@ -82,7 +82,7 @@
         [
             MagicCondition.SORCERY_CONDITION,
             MagicCondition.ABILITY_ONCE_CONDITION,
-            MagicCondition.EIGHT_CHARGE_COUNTERS_CONDITION
+            MagicConditionFactory.ChargeCountersAtLeast(8)
         ],
         new MagicActivationHints(MagicTiming.Main),
         "Ultimate") {

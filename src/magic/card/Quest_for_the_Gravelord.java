@@ -11,6 +11,7 @@ import magic.model.action.MagicPlayTokenAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPermanentActivation;
@@ -21,7 +22,7 @@ import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
 
 public class Quest_for_the_Gravelord {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicCondition.THREE_CHARGE_COUNTERS_CONDITION},
+            new MagicCondition[]{MagicConditionFactory.ChargeCountersAtLeast(3)},
             new MagicActivationHints(MagicTiming.Token),
             "Token") {
         @Override

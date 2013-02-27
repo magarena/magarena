@@ -9,6 +9,7 @@ import magic.model.action.MagicPreventDamageAction;
 import magic.model.action.MagicTargetAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPermanentActivation;
@@ -19,7 +20,7 @@ import magic.model.target.MagicTarget;
 
 public class Defender_en_Vec {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-        new MagicCondition[]{MagicCondition.CHARGE_COUNTER_CONDITION},
+        new MagicCondition[]{MagicConditionFactory.ChargeCountersAtLeast(1)},
         new MagicActivationHints(MagicTiming.Pump),
         "Prevent"
     ) {

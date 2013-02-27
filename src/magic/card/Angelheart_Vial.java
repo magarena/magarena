@@ -12,6 +12,7 @@ import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.action.MagicDrawAction;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostTapEvent;
@@ -24,9 +25,11 @@ import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
 public class Angelheart_Vial {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,
-                    MagicCondition.FOUR_CHARGE_COUNTERS_CONDITION,
-                    MagicManaCost.TWO.getCondition()},
+            new MagicCondition[]{
+                MagicCondition.CAN_TAP_CONDITION,
+                MagicConditionFactory.ChargeCountersAtLeast(4),
+                MagicManaCost.TWO.getCondition()
+            },
             new MagicActivationHints(MagicTiming.Draw),
             "Draw") {
 

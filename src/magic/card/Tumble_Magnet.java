@@ -9,6 +9,7 @@ import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicTapAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPermanentActivation;
@@ -19,7 +20,10 @@ import magic.model.target.MagicTapTargetPicker;
 
 public class Tumble_Magnet {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicCondition.CHARGE_COUNTER_CONDITION},
+            new MagicCondition[]{
+                MagicCondition.CAN_TAP_CONDITION,
+                MagicConditionFactory.ChargeCountersAtLeast(1)
+            },
             new MagicActivationHints(MagicTiming.Removal),
             "Tap") {
         @Override

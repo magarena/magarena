@@ -8,8 +8,8 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicDrawAction;
-import magic.model.condition.MagicArtificialCondition;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPermanentActivation;
@@ -19,10 +19,8 @@ import magic.model.event.MagicTiming;
 public class Otherworld_Atlas {
     public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
             new MagicCondition[]{
-                    MagicCondition.CAN_TAP_CONDITION,
-                    new MagicArtificialCondition(
-                        MagicCondition.NONE,
-                        MagicCondition.CHARGE_COUNTER_CONDITION)
+                MagicCondition.CAN_TAP_CONDITION,
+                MagicConditionFactory.ChargeCountersAtLeast(1)
             },
             new MagicActivationHints(MagicTiming.Draw),
             "Draw") {

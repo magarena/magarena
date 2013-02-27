@@ -11,6 +11,7 @@ import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicTargetAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -23,7 +24,7 @@ import magic.model.target.MagicTarget;
 public class Ancient_Hydra {
     public static final MagicPermanentActivation A = new MagicPermanentActivation( 
             new MagicCondition[] {
-                    MagicCondition.CHARGE_COUNTER_CONDITION,
+                    MagicConditionFactory.ChargeCountersAtLeast(1),
                     MagicManaCost.ONE.getCondition()},
             new MagicActivationHints(MagicTiming.Removal),
             "Damage") {

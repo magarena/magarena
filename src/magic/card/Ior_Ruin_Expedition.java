@@ -10,6 +10,7 @@ import magic.model.action.MagicDrawAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPermanentActivation;
@@ -48,7 +49,7 @@ public class Ior_Ruin_Expedition {
     };
     
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicCondition.THREE_CHARGE_COUNTERS_CONDITION},
+            new MagicCondition[]{MagicConditionFactory.ChargeCountersAtLeast(3)},
             new MagicActivationHints(MagicTiming.Draw),
             "Draw") {
         @Override

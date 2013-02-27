@@ -165,61 +165,12 @@ public interface MagicCondition {
         }
     };
     
-    MagicCondition CHARGE_COUNTER_CONDITION=new MagicCondition() {
-        public boolean accept(final MagicSource source) {
-            final MagicPermanent permanent=(MagicPermanent)source;
-            return permanent.getCounters(MagicCounterType.Charge)>0;
-        }
-    };
-
     MagicCondition METALCRAFT_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {
             return source.getController().getNrOfPermanentsWithType(MagicType.Artifact)>=3;
         }
     };
 
-    MagicCondition TWO_CHARGE_COUNTERS_CONDITION=new MagicCondition() {
-        public boolean accept(final MagicSource source) {
-            final MagicPermanent permanent=(MagicPermanent)source;
-            return permanent.getCounters(MagicCounterType.Charge)>=2;
-        }
-    };
-    
-    MagicCondition THREE_CHARGE_COUNTERS_CONDITION=new MagicCondition() {
-        public boolean accept(final MagicSource source) {
-            final MagicPermanent permanent=(MagicPermanent)source;
-            return permanent.getCounters(MagicCounterType.Charge)>=3;
-        }
-    };
-    
-    MagicCondition FOUR_CHARGE_COUNTERS_CONDITION=new MagicCondition() {
-        public boolean accept(final MagicSource source) {
-            final MagicPermanent permanent=(MagicPermanent)source;
-            return permanent.getCounters(MagicCounterType.Charge)>=4;
-        }
-    };
-    
-    MagicCondition SIX_CHARGE_COUNTERS_CONDITION=new MagicCondition() {
-        public boolean accept(final MagicSource source) {
-            final MagicPermanent permanent=(MagicPermanent)source;
-            return permanent.getCounters(MagicCounterType.Charge)>=6;
-        }
-    };
-    
-    MagicCondition EIGHT_CHARGE_COUNTERS_CONDITION = new MagicCondition() {
-        public boolean accept(final MagicSource source) {
-            final MagicPermanent permanent = (MagicPermanent)source;
-            return permanent.getCounters(MagicCounterType.Charge) >= 8;
-        }
-    };
-    
-    MagicCondition FIFTEEN_CHARGE_COUNTERS_CONDITION = new MagicCondition() {
-        public boolean accept(final MagicSource source) {
-            final MagicPermanent permanent = (MagicPermanent)source;
-            return permanent.getCounters(MagicCounterType.Charge) >= 15;
-        }
-    };
-    
     MagicCondition CAN_REGENERATE_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent=(MagicPermanent)source;

@@ -16,6 +16,7 @@ import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicPlayCardAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicDiscardEvent;
 import magic.model.event.MagicEvent;
@@ -79,8 +80,9 @@ public class Grimoire_of_the_Dead {
     
     public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
             new MagicCondition[]{
-                    MagicCondition.CAN_TAP_CONDITION,
-                    MagicCondition.THREE_CHARGE_COUNTERS_CONDITION},
+                MagicCondition.CAN_TAP_CONDITION,
+                MagicConditionFactory.ChargeCountersAtLeast(3)
+            },
             new MagicActivationHints(MagicTiming.Token),
             "Reanimate") {
         @Override

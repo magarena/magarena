@@ -10,6 +10,7 @@ import magic.model.MagicSource;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicDrawAction;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostTapEvent;
@@ -45,7 +46,7 @@ public class Serum_Tank {
     
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
-                MagicCondition.CHARGE_COUNTER_CONDITION,
+                MagicConditionFactory.ChargeCountersAtLeast(1),
                 MagicCondition.CAN_TAP_CONDITION,
                 MagicManaCost.THREE.getCondition()
             },

@@ -39,7 +39,7 @@
         [
             MagicCondition.SORCERY_CONDITION,
             MagicCondition.ABILITY_ONCE_CONDITION,
-            MagicConditionFactory.ChargeCountersMoreThan(1)
+            MagicConditionFactory.ChargeCountersAtLeast(1)
         ],
         new MagicActivationHints(MagicTiming.Main),
         "-1") {
@@ -79,7 +79,7 @@
         [
             MagicCondition.SORCERY_CONDITION,
             MagicCondition.ABILITY_ONCE_CONDITION,
-            MagicConditionFactory.ChargeCountersMoreThan(10)
+            MagicConditionFactory.ChargeCountersAtLeast(10)
         ],
         new MagicActivationHints(MagicTiming.Main),
         "-10") {

@@ -12,6 +12,7 @@ import magic.model.action.MagicCardOnStackAction;
 import magic.model.action.MagicCopyCardOnStackAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostTapEvent;
@@ -36,7 +37,7 @@ public class Echo_Mage {
     
     public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
             new MagicCondition[]{
-                MagicCondition.TWO_CHARGE_COUNTERS_CONDITION,
+                MagicConditionFactory.ChargeCountersAtLeast(2),
                 MagicCondition.CAN_TAP_CONDITION,MagicManaCost.BLUE_BLUE.getCondition()},
             new MagicActivationHints(MagicTiming.Spell),
             "Copy") {

@@ -8,6 +8,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicDrawAction;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicDiscardEvent;
 import magic.model.event.MagicEvent;
@@ -18,7 +19,7 @@ import magic.model.event.MagicTiming;
 public class Enclave_Cryptologist {
     public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
             new MagicCondition[]{
-                MagicCondition.CHARGE_COUNTER_CONDITION,
+                MagicConditionFactory.ChargeCountersAtLeast(1),
                 MagicCondition.CAN_TAP_CONDITION,
             },
             new MagicActivationHints(MagicTiming.Draw),

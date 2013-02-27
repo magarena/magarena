@@ -12,6 +12,7 @@ import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPermanentActivation;
@@ -24,7 +25,7 @@ import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 public class Umezawa_s_Jitte {
     // equipped creature gets +2/+2 until end of turn
     public static final MagicPermanentActivation A1 = new MagicPermanentActivation( 
-            new MagicCondition[] {MagicCondition.CHARGE_COUNTER_CONDITION},
+            new MagicCondition[]{MagicConditionFactory.ChargeCountersAtLeast(1)},
             new MagicActivationHints(MagicTiming.Pump),
             "+2/+2") {
         @Override
@@ -53,7 +54,7 @@ public class Umezawa_s_Jitte {
     
     // target creature gets -1/-1 until end of turn
     public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
-            new MagicCondition[] {MagicCondition.CHARGE_COUNTER_CONDITION},
+            new MagicCondition[]{MagicConditionFactory.ChargeCountersAtLeast(1)},
             new MagicActivationHints(MagicTiming.Removal),
             "-1/-1") {
         @Override
@@ -87,9 +88,9 @@ public class Umezawa_s_Jitte {
     
     // you gain 2 life
     public static final MagicPermanentActivation A3 = new MagicPermanentActivation( 
-            new MagicCondition[] {MagicCondition.CHARGE_COUNTER_CONDITION},
+            new MagicCondition[]{MagicConditionFactory.ChargeCountersAtLeast(1)},
             new MagicActivationHints(MagicTiming.Pump),
-            "life + 2") {
+            "Life + 2") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{

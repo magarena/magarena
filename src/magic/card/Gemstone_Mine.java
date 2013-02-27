@@ -5,6 +5,7 @@ import magic.model.MagicManaType;
 import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicManaActivation;
 import magic.model.event.MagicRemoveCounterEvent;
@@ -12,14 +13,13 @@ import magic.model.event.MagicSacrificeEvent;
 import magic.model.event.MagicTapEvent;
 
 public class Gemstone_Mine {
-    private static final MagicCondition[] CONDITIONS = {
-        MagicCondition.CAN_TAP_CONDITION,
-        MagicCondition.CHARGE_COUNTER_CONDITION
-    };
     
     public static final MagicManaActivation MANA = new MagicManaActivation(
         MagicManaType.ALL_TYPES,
-        CONDITIONS,
+        new MagicCondition[] {
+            MagicCondition.CAN_TAP_CONDITION,
+            MagicConditionFactory.ChargeCountersAtLeast(1)
+        },
         2) {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent permanent) {

@@ -9,6 +9,7 @@ import magic.model.MagicPowerToughness;
 import magic.model.MagicSource;
 import magic.model.action.MagicRegenerateAction;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -32,7 +33,7 @@ public class Null_Champion {
     
     public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
             new MagicCondition[]{
-                MagicCondition.FOUR_CHARGE_COUNTERS_CONDITION,
+                MagicConditionFactory.ChargeCountersAtLeast(4),
                 MagicCondition.CAN_REGENERATE_CONDITION,
                 MagicManaCost.BLACK.getCondition()
             },

@@ -119,7 +119,7 @@ def PreventAllDamage = new MagicIfDamageWouldBeDealtTrigger(1) {
         [
             MagicCondition.SORCERY_CONDITION,
             MagicCondition.ABILITY_ONCE_CONDITION,
-            MagicCondition.FIFTEEN_CHARGE_COUNTERS_CONDITION
+            MagicConditionFactory.ChargeCountersAtLeast(15)
         ],
         new MagicActivationHints(MagicTiming.Main),
         "-15") {

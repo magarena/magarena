@@ -10,6 +10,7 @@ import magic.model.MagicPowerToughness;
 import magic.model.MagicSource;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -51,7 +52,7 @@ public class Kargan_Dragonlord {
 
     public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
             new MagicCondition[]{
-                MagicCondition.EIGHT_CHARGE_COUNTERS_CONDITION,
+                MagicConditionFactory.ChargeCountersAtLeast(8),
                 MagicManaCost.RED.getCondition()
             },
             new MagicActivationHints(MagicTiming.Pump),

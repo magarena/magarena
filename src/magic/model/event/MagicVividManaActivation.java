@@ -5,6 +5,7 @@ import magic.model.MagicManaType;
 import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 
 import java.util.List;
 
@@ -12,7 +13,8 @@ public class MagicVividManaActivation extends MagicManaActivation {
 
     private static final MagicCondition[] CONDITIONS= {
         MagicCondition.CAN_TAP_CONDITION,
-        MagicCondition.CHARGE_COUNTER_CONDITION};
+        MagicConditionFactory.ChargeCountersAtLeast(1)
+    };
             
     public MagicVividManaActivation(final List<MagicManaType> manaTypes) {
         super(manaTypes,CONDITIONS,manaTypes.size() -1);

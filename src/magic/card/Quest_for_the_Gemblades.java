@@ -12,6 +12,7 @@ import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPermanentActivation;
@@ -25,14 +26,15 @@ import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
 public class Quest_for_the_Gemblades {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicCondition.CHARGE_COUNTER_CONDITION},
+            new MagicCondition[]{MagicConditionFactory.ChargeCountersAtLeast(1)},
             new MagicActivationHints(MagicTiming.Pump),
             "Pump") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicRemoveCounterEvent(source,MagicCounterType.Charge,1),
-                new MagicSacrificeEvent(source)};
+                new MagicSacrificeEvent(source)
+            };
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

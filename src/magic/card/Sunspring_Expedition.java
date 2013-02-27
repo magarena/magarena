@@ -7,6 +7,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPermanentActivation;
@@ -19,7 +20,7 @@ public class Sunspring_Expedition {
     public static final MagicWhenOtherComesIntoPlayTrigger T = Ior_Ruin_Expedition.T;
     
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicCondition.THREE_CHARGE_COUNTERS_CONDITION},
+            new MagicCondition[]{MagicConditionFactory.ChargeCountersAtLeast(3)},
             new MagicActivationHints(MagicTiming.Pump),
             "Life") {
         @Override
