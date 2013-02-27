@@ -9,6 +9,7 @@ import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostTapEvent;
@@ -20,7 +21,7 @@ import magic.model.target.MagicDestroyTargetPicker;
 public class Skirsdag_Flayer {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
-                MagicManaCost.THREE_BLACK.getCondition(),
+                MagicConditionFactory.ManaCost("{3}{B}"),
                 MagicCondition.ONE_CREATURE_CONDITION,
                 MagicCondition.CAN_TAP_CONDITION,
             },
@@ -32,7 +33,7 @@ public class Skirsdag_Flayer {
                 new MagicPayManaCostTapEvent(
                     source,
                     source.getController(),
-                    MagicManaCost.THREE_BLACK
+                    MagicManaCost.create("{3}{B}")
                 ),
                 new MagicSacrificePermanentEvent(
                     source,

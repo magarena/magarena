@@ -9,6 +9,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -23,7 +24,7 @@ import java.util.Collection;
 public class Gavony_Township {
     public static final MagicPermanentActivation A = new MagicPermanentActivation( 
             new MagicCondition[]{
-                MagicManaCost.THREE_GREEN_WHITE.getCondition(), //add ONE for the card itself
+                MagicConditionFactory.ManaCost("{3}{G}{W}"), //add ONE for the card itself
                 MagicCondition.CAN_TAP_CONDITION
             },
             new MagicActivationHints(MagicTiming.Pump),
@@ -31,8 +32,9 @@ public class Gavony_Township {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                    new MagicTapEvent(source),
-                    new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_GREEN_WHITE)};
+                new MagicTapEvent(source),
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{2}{G}{W}"))
+            };
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

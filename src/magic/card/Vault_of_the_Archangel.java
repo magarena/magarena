@@ -8,6 +8,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.action.MagicSetAbilityAction;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -22,7 +23,7 @@ import java.util.Collection;
 public class Vault_of_the_Archangel {
     public static final MagicPermanentActivation A = new MagicPermanentActivation( 
             new MagicCondition[]{
-                MagicManaCost.THREE_WHITE_BLACK.getCondition(), //add ONE for the card itself
+                MagicConditionFactory.ManaCost("{3}{W}{B}"), //add ONE for the card itself
                 MagicCondition.CAN_TAP_CONDITION
             },
             new MagicActivationHints(MagicTiming.Pump),
@@ -30,11 +31,12 @@ public class Vault_of_the_Archangel {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                    new MagicTapEvent(source),
-                    new MagicPayManaCostEvent(
-                            source,
-                            source.getController(),
-                            MagicManaCost.TWO_WHITE_BLACK)
+                new MagicTapEvent(source),
+                new MagicPayManaCostEvent(
+                    source,
+                    source.getController(),
+                    MagicManaCost.create("{2}{W}{B}")
+                )
             };
         }
         @Override

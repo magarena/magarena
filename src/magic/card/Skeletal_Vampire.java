@@ -11,6 +11,7 @@ import magic.model.action.MagicPlayTokensAction;
 import magic.model.action.MagicRegenerateAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.condition.MagicSingleActivationCondition;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
@@ -24,7 +25,7 @@ public class Skeletal_Vampire {
 
     public static final MagicPermanentActivation A1 = new MagicPermanentActivation(
             new MagicCondition[]{
-                MagicManaCost.THREE_BLACK_BLACK.getCondition(),
+                MagicConditionFactory.ManaCost("{3}{B}{B}"),
                 MagicCondition.CONTROL_BAT_CONDITION},
             new MagicActivationHints(MagicTiming.Token,true),
             "Token") {
@@ -33,8 +34,9 @@ public class Skeletal_Vampire {
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             final MagicPlayer player=source.getController();
             return new MagicEvent[]{                    
-                new MagicPayManaCostEvent(source,player,MagicManaCost.THREE_BLACK_BLACK),
-                new MagicSacrificePermanentEvent(source,player,MagicTargetChoice.SACRIFICE_BAT)};
+                new MagicPayManaCostEvent(source,player,MagicManaCost.create("{3}{B}{B}")),
+                new MagicSacrificePermanentEvent(source,player,MagicTargetChoice.SACRIFICE_BAT)
+            };
         }
 
         @Override
@@ -42,9 +44,10 @@ public class Skeletal_Vampire {
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    this,
-                    "PN puts two 1/1 black Bat creature tokens with flying onto the battlefield.");
+                source,
+                this,
+                "PN puts two 1/1 black Bat creature tokens with flying onto the battlefield."
+            );
         }
 
         @Override
@@ -72,9 +75,11 @@ public class Skeletal_Vampire {
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicSacrificePermanentEvent(
-                        source,
-                        source.getController(),
-                        MagicTargetChoice.SACRIFICE_BAT)};
+                    source,
+                    source.getController(),
+                    MagicTargetChoice.SACRIFICE_BAT
+                )
+            };
         }
 
         @Override
@@ -82,9 +87,10 @@ public class Skeletal_Vampire {
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    this,
-                    "Regenerate SN.");
+                source,
+                this,
+                "Regenerate SN."
+            );
         }
 
         @Override
@@ -100,10 +106,11 @@ public class Skeletal_Vampire {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    player,
-                    this,
-                    "PN puts two 1/1 black Bat creature tokens with flying onto the battlefield.");
+                permanent,
+                player,
+                this,
+                "PN puts two 1/1 black Bat creature tokens with flying onto the battlefield."
+            );
         }
         
         @Override

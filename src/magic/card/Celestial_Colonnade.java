@@ -13,6 +13,7 @@ import magic.model.MagicType;
 import magic.model.action.MagicBecomesCreatureAction;
 import magic.model.condition.MagicArtificialCondition;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -55,14 +56,17 @@ public class Celestial_Colonnade {
     };
 
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{new MagicArtificialCondition(
-                MagicManaCost.THREE_WHITE_BLUE.getCondition(),
-                MagicManaCost.TWO_WHITE_WHITE_BLUE_BLUE.getCondition())},
+            new MagicCondition[]{
+                new MagicArtificialCondition(
+                    MagicConditionFactory.ManaCost("{3}{W}{U}"),
+                    MagicConditionFactory.ManaCost("{2}{W}{W}{U}{U}")
+                )
+            },
             new MagicActivationHints(MagicTiming.Animate),
             "Animate") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.THREE_WHITE_BLUE)};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{3}{W}{U}"))};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

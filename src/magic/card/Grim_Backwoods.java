@@ -8,6 +8,7 @@ import magic.model.MagicSource;
 import magic.model.action.MagicDrawAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -19,7 +20,7 @@ import magic.model.event.MagicTiming;
 public class Grim_Backwoods {
     public static final MagicPermanentActivation A = new MagicPermanentActivation( 
             new MagicCondition[]{
-                MagicManaCost.THREE_BLACK_GREEN.getCondition(), //add ONE for the card itself
+                MagicConditionFactory.ManaCost("{3}{B}{G}"), //add ONE for the card itself
                 MagicCondition.CAN_TAP_CONDITION,
                 MagicCondition.ONE_CREATURE_CONDITION
             },
@@ -28,15 +29,17 @@ public class Grim_Backwoods {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                    new MagicTapEvent(source),
-                    new MagicPayManaCostEvent(
-                            source,
-                            source.getController(),
-                            MagicManaCost.TWO_BLACK_GREEN),
-                    new MagicSacrificePermanentEvent(
-                            source,
-                            source.getController(),
-                            MagicTargetChoice.SACRIFICE_CREATURE)
+                new MagicTapEvent(source),
+                new MagicPayManaCostEvent(
+                    source,
+                    source.getController(),
+                    MagicManaCost.create("{2}{B}{G}")
+                ),
+                new MagicSacrificePermanentEvent(
+                    source,
+                    source.getController(),
+                    MagicTargetChoice.SACRIFICE_CREATURE
+                )
             };
         }
         @Override
@@ -44,9 +47,10 @@ public class Grim_Backwoods {
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    this,
-                    "PN draws a card.");
+                source,
+                this,
+                "PN draws a card."
+            );
         }
         @Override
         public void executeEvent(

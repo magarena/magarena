@@ -10,6 +10,7 @@ import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicSetAbilityAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -21,7 +22,7 @@ import magic.model.target.MagicFirstStrikeTargetPicker;
 public class Sunhome__Fortress_of_the_Legion {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
-                MagicManaCost.THREE_RED_WHITE.getCondition(), //add ONE for the card itself
+                MagicConditionFactory.ManaCost("{3}{R}{W}"), //add ONE for the card itself
                 MagicCondition.CAN_TAP_CONDITION
             },
             new MagicActivationHints(MagicTiming.Pump),
@@ -31,7 +32,7 @@ public class Sunhome__Fortress_of_the_Legion {
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicTapEvent(source),
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_RED_WHITE)
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{2}{R}{W}"))
             };
         }
 

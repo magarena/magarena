@@ -13,6 +13,7 @@ import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicPlayCardAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicDiscardEvent;
 import magic.model.event.MagicEvent;
@@ -25,13 +26,14 @@ public class Rakdos_Guildmage {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
                 MagicCondition.HAS_CARD_CONDITION,
-                MagicManaCost.THREE_BLACK.getCondition()},
+                MagicConditionFactory.ManaCost("{3}{B}")
+            },
             new MagicActivationHints(MagicTiming.Removal,true),
             "-2/-2") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.THREE_BLACK),
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{3}{B}")),
                 new MagicDiscardEvent(source,source.getController(),1,false)
             };
         }
@@ -58,12 +60,12 @@ public class Rakdos_Guildmage {
     };
 
     public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.THREE_RED.getCondition()},
+            new MagicCondition[]{MagicConditionFactory.ManaCost("{3}{R}")},
             new MagicActivationHints(MagicTiming.Token,true),
             "Token") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.THREE_RED)};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{3}{R}"))};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
