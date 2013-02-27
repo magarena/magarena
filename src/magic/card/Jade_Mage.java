@@ -8,6 +8,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -16,14 +17,14 @@ import magic.model.event.MagicTiming;
 
 public class Jade_Mage {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.TWO_GREEN.getCondition()},
+            new MagicCondition[]{MagicConditionFactory.ManaCost("{2}{G}")},
             new MagicActivationHints(MagicTiming.Token,true),
             "Token"
             ) {
         
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_GREEN)};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{2}{G}"))};
         }
 
         @Override

@@ -27,7 +27,7 @@ public class Treva__the_Renewer {
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        new MagicPayManaCostChoice(MagicManaCost.TWO_WHITE),
+                        new MagicPayManaCostChoice(MagicManaCost.create("{2}{W}")),
                         MagicColorChoice.MOST_INSTANCE
                     ),
                     this,

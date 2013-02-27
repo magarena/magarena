@@ -9,6 +9,7 @@ import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostTapEvent;
@@ -22,7 +23,7 @@ public class Tectonic_Edge {
 
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
-                MagicManaCost.TWO.getCondition(),  //add ONE for the card itself
+                MagicConditionFactory.ManaCost("{2}"),  //add ONE for the card itself
                 MagicCondition.CAN_TAP_CONDITION,
                 MagicCondition.OPP_FOUR_LANDS_CONDITION
             },

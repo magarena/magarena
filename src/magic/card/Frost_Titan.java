@@ -40,7 +40,7 @@ public class Frost_Titan {
                 final Object[] choiceResults) {
             final MagicSource source = event.getSource();
             final MagicItemOnStack target = event.getRefItemOnStack();
-            game.addEvent(new MagicCounterUnlessEvent(source,target,MagicManaCost.TWO));
+            game.addEvent(new MagicCounterUnlessEvent(source,target,MagicManaCost.create("{2}")));
         }
     };
    

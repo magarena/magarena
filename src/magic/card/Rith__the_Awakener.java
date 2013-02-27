@@ -28,7 +28,7 @@ public class Rith__the_Awakener {
                         permanent,
                         player,
                         new MagicMayChoice(
-                            new MagicPayManaCostChoice(MagicManaCost.TWO_GREEN),
+                            new MagicPayManaCostChoice(MagicManaCost.create("{2}{G}")),
                             MagicColorChoice.MOST_INSTANCE
                         ),
                         this,

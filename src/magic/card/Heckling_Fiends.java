@@ -10,6 +10,7 @@ import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicSetAbilityAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -19,7 +20,7 @@ import magic.model.target.MagicMustAttackTargetPicker;
 
 public class Heckling_Fiends {
     public static final MagicPermanentActivation A = new MagicPermanentActivation( 
-        new MagicCondition[]{MagicManaCost.TWO_RED.getCondition()},
+        new MagicCondition[]{MagicConditionFactory.ManaCost("{2}{R}")},
         new MagicActivationHints(MagicTiming.MustAttack),
         "Attacks"
     ) {
@@ -30,7 +31,7 @@ public class Heckling_Fiends {
                 new MagicPayManaCostEvent(
                     source,
                     source.getController(),
-                    MagicManaCost.TWO_RED
+                    MagicManaCost.create("{2}{R}")
                 )
             };
         }

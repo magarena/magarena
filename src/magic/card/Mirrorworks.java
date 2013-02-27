@@ -23,7 +23,7 @@ public class Mirrorworks {
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        new MagicPayManaCostChoice(MagicManaCost.TWO)
+                        new MagicPayManaCostChoice(MagicManaCost.create("{2}"))
                     ),
                     otherPermanent,
                     this,

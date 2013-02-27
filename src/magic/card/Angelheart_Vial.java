@@ -28,7 +28,7 @@ public class Angelheart_Vial {
             new MagicCondition[]{
                 MagicCondition.CAN_TAP_CONDITION,
                 MagicConditionFactory.ChargeCountersAtLeast(4),
-                MagicManaCost.TWO.getCondition()
+                MagicConditionFactory.ManaCost("{2}")
             },
             new MagicActivationHints(MagicTiming.Draw),
             "Draw") {
@@ -38,7 +38,7 @@ public class Angelheart_Vial {
             return new MagicEvent[]{new MagicPayManaCostTapEvent(
                     source,
                     source.getController(),
-                    MagicManaCost.TWO),
+                    MagicManaCost.create("{2}")),
                     new MagicRemoveCounterEvent(
                         source,
                         MagicCounterType.Charge,

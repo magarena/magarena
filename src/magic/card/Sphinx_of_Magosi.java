@@ -9,6 +9,7 @@ import magic.model.MagicSource;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicDrawAction;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -17,13 +18,13 @@ import magic.model.event.MagicTiming;
 
 public class Sphinx_of_Magosi {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.TWO_BLUE.getCondition()},
+            new MagicCondition[]{MagicConditionFactory.ManaCost("{2}{U}")},
             new MagicActivationHints(MagicTiming.Draw),
             "Draw") {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_BLUE)};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{2}{U}"))};
         }
 
         @Override

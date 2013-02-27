@@ -10,6 +10,7 @@ import magic.model.MagicSource;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicPlayTokensAction;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -45,14 +46,14 @@ public class Twilight_Drover {
     
     public static final MagicPermanentActivation A = new MagicPermanentActivation( 
             new MagicCondition[] {
-                    MagicManaCost.TWO_WHITE.getCondition(),
+                    MagicConditionFactory.ManaCost("{2}{W}"),
                     MagicCondition.PLUS_COUNTER_CONDITION},
             new MagicActivationHints(MagicTiming.Token),
             "Token") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_WHITE),
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{2}{W}")),
                 new MagicRemoveCounterEvent(source,MagicCounterType.PlusOne,1)};
         }
         @Override

@@ -23,7 +23,7 @@ public class Mind_Games {
                     cardOnStack,
                     new MagicBuybackChoice(
                         MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_CREATURE_OR_LAND,
-                        MagicManaCost.TWO_BLUE),
+                        MagicManaCost.create("{2}{U}")),
                     new MagicTapTargetPicker(true,false),
                     this,
                     "Tap target artifact, creature, or land$. " +

@@ -25,7 +25,7 @@ public class Oros__the_Avenger {
                         permanent,
                         player,
                         new MagicMayChoice(
-                            new MagicPayManaCostChoice(MagicManaCost.TWO_WHITE)
+                            new MagicPayManaCostChoice(MagicManaCost.create("{2}{W}"))
                         ),
                         this,
                         "You may$ pay {2}{W}$. If you do, SN " +

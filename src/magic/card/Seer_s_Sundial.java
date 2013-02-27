@@ -17,7 +17,7 @@ public class Seer_s_Sundial {
                     permanent,
                     permanent.getController(),
                     new MagicMayChoice(
-                        new MagicPayManaCostChoice(MagicManaCost.TWO)
+                        new MagicPayManaCostChoice(MagicManaCost.create("{2}"))
                     ),
                     this,
                     "You may$ pay {2}$. If you do, draw a card.");

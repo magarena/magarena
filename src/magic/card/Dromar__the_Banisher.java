@@ -28,7 +28,7 @@ public class Dromar__the_Banisher {
                         permanent,
                         player,
                         new MagicMayChoice(
-                            new MagicPayManaCostChoice(MagicManaCost.TWO_BLUE),
+                            new MagicPayManaCostChoice(MagicManaCost.create("{2}{U}")),
                             MagicColorChoice.UNSUMMON_INSTANCE
                         ),
                         this,

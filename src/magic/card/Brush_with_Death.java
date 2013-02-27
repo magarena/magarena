@@ -22,7 +22,7 @@ public class Brush_with_Death {
                 cardOnStack,
                 new MagicBuybackChoice(
                     MagicTargetChoice.TARGET_OPPONENT,
-                    MagicManaCost.TWO_BLACK_BLACK
+                    MagicManaCost.create("{2}{B}{B}")
                 ),
                 this,
                 "Target opponent$ loses 2 life and PN gains 2 life. " + 

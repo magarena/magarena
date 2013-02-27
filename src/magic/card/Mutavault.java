@@ -11,6 +11,7 @@ import magic.model.MagicType;
 import magic.model.action.MagicBecomesCreatureAction;
 import magic.model.condition.MagicArtificialCondition;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -44,7 +45,7 @@ public class Mutavault {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{new MagicArtificialCondition(
             MagicManaCost.ONE.getCondition(),
-            MagicManaCost.TWO.getCondition())},
+            MagicConditionFactory.ManaCost("{2}"))},
             new MagicActivationHints(MagicTiming.Animate),
             "Animate") {
         @Override

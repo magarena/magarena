@@ -22,7 +22,7 @@ public class Mind_Peel {
                 cardOnStack,
                 new MagicBuybackChoice(
                     MagicTargetChoice.NEG_TARGET_PLAYER,
-                    MagicManaCost.TWO_BLACK_BLACK
+                    MagicManaCost.create("{2}{B}{B}")
                 ),
                 this,
                 "Target player$ discards a card. " +

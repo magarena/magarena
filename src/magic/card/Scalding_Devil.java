@@ -11,6 +11,7 @@ import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicPlayerAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -20,7 +21,7 @@ import magic.model.target.MagicDamageTargetPicker;
 
 public class Scalding_Devil {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.TWO_RED.getCondition()},
+            new MagicCondition[]{MagicConditionFactory.ManaCost("{2}{R}")},
             new MagicActivationHints(MagicTiming.Removal),
             "Damage") {
 
@@ -29,7 +30,7 @@ public class Scalding_Devil {
             return new MagicEvent[] {new MagicPayManaCostEvent(
                     source,
                     source.getController(),
-                    MagicManaCost.TWO_RED)};
+                    MagicManaCost.create("{2}{R}"))};
         }
 
         @Override

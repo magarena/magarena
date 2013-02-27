@@ -26,7 +26,7 @@ public class Teneb__the_Harvester {
                         permanent,
                         player,
                         new MagicMayChoice(
-                            new MagicPayManaCostChoice(MagicManaCost.TWO_BLACK),
+                            new MagicPayManaCostChoice(MagicManaCost.create("{2}{B}")),
                             MagicTargetChoice.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS
                         ),
                         this,

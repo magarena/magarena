@@ -9,6 +9,7 @@ import magic.model.action.MagicCardOnStackAction;
 import magic.model.action.MagicCounterItemOnStackAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostTapEvent;
@@ -20,7 +21,7 @@ public class Ertai__Wizard_Adept {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
                     MagicCondition.CAN_TAP_CONDITION,
-                    MagicManaCost.TWO_BLUE_BLUE.getCondition()
+                    MagicConditionFactory.ManaCost("{2}{U}{U}")
                 },
             new MagicActivationHints(MagicTiming.Counter),
             "Counter") {
@@ -29,7 +30,7 @@ public class Ertai__Wizard_Adept {
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                     new MagicPayManaCostTapEvent(source,source.getController(),
-                    MagicManaCost.TWO_BLUE_BLUE)};
+                    MagicManaCost.create("{2}{U}{U}"))};
         }
 
         @Override

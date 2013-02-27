@@ -12,6 +12,7 @@ import magic.model.action.MagicMillLibraryAction;
 import magic.model.action.MagicPlayerAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -20,14 +21,14 @@ import magic.model.event.MagicTiming;
 
 public class Mindshrieker {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.TWO.getCondition()},
+            new MagicCondition[]{MagicConditionFactory.ManaCost("{2}")},
             new MagicActivationHints(MagicTiming.Pump,false),
             "Mill"
             ) {
         
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO)};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{2}"))};
         }
 
         @Override

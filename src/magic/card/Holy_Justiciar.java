@@ -12,6 +12,7 @@ import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.action.MagicTapAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostTapEvent;
@@ -23,7 +24,7 @@ public class Holy_Justiciar {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
         new MagicCondition[]{
             MagicCondition.CAN_TAP_CONDITION,
-            MagicManaCost.TWO_WHITE.getCondition()
+            MagicConditionFactory.ManaCost("{2}{W}")
         },
         new MagicActivationHints(MagicTiming.Tapping),
         "Tap"
@@ -35,7 +36,7 @@ public class Holy_Justiciar {
                 new MagicPayManaCostTapEvent(
                     source,
                     source.getController(),
-                    MagicManaCost.TWO_WHITE
+                    MagicManaCost.create("{2}{W}")
                 )
             };
         }

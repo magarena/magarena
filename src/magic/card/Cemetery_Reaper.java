@@ -16,6 +16,7 @@ import magic.model.action.MagicPlayTokenAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostTapEvent;
@@ -49,7 +50,7 @@ public class Cemetery_Reaper {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
         new MagicCondition[]{
                 MagicCondition.CAN_TAP_CONDITION,
-                MagicManaCost.TWO_BLACK.getCondition()
+                MagicConditionFactory.ManaCost("{2}{B}")
         },
         new MagicActivationHints(MagicTiming.Token),
         "Token"
@@ -60,7 +61,7 @@ public class Cemetery_Reaper {
                 new MagicPayManaCostTapEvent(
                     source,
                     source.getController(),
-                    MagicManaCost.TWO_BLACK
+                    MagicManaCost.create("{2}{B}")
                 )
             };
         }

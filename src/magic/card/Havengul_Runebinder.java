@@ -12,6 +12,7 @@ import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicExileCardEvent;
@@ -27,7 +28,7 @@ public class Havengul_Runebinder {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
                     MagicCondition.CAN_TAP_CONDITION,
-                    MagicManaCost.TWO_BLUE.getCondition(),
+                    MagicConditionFactory.ManaCost("{2}{U}"),
                     MagicCondition.GRAVEYARD_CONTAINS_CREATURE
             },
             new MagicActivationHints(MagicTiming.Token),
@@ -38,7 +39,7 @@ public class Havengul_Runebinder {
                     new MagicPayManaCostTapEvent(
                             source,
                             source.getController(),
-                            MagicManaCost.TWO_BLUE),
+                            MagicManaCost.create("{2}{U}")),
                     new MagicExileCardEvent(
                             source,
                             source.getController(),

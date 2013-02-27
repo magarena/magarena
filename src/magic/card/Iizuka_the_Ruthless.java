@@ -9,6 +9,7 @@ import magic.model.MagicSource;
 import magic.model.action.MagicSetAbilityAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -24,7 +25,7 @@ public class Iizuka_the_Ruthless {
     
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
-                    MagicManaCost.TWO_RED.getCondition(),
+                    MagicConditionFactory.ManaCost("{2}{R}"),
                     MagicCondition.ONE_CREATURE_CONDITION},
             new MagicActivationHints(MagicTiming.Pump),
             "Strike") {
@@ -32,7 +33,7 @@ public class Iizuka_the_Ruthless {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                    new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_RED),
+                    new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{2}{R}")),
                     new MagicSacrificePermanentEvent(
                             source,
                             source.getController(),

@@ -24,7 +24,7 @@ public class Vacuumelt {
                     cardOnStack,
                     new MagicKickerChoice(
                         MagicTargetChoice.TARGET_CREATURE, 
-                        MagicManaCost.TWO_BLUE, 
+                        MagicManaCost.create("{2}{U}"), 
                         true, 
                         true),
                     MagicBounceTargetPicker.getInstance(),

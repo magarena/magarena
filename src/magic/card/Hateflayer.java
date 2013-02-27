@@ -10,6 +10,7 @@ import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicTargetAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -21,14 +22,14 @@ import magic.model.target.MagicTarget;
 
 public class Hateflayer {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicCondition.CAN_UNTAP_CONDITION,MagicManaCost.TWO_RED.getCondition()},
+            new MagicCondition[]{MagicCondition.CAN_UNTAP_CONDITION,MagicConditionFactory.ManaCost("{2}{R}")},
             new MagicActivationHints(MagicTiming.Removal),
             "Damage") {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_RED),
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{2}{R}")),
                 new MagicUntapEvent(source)};
         }
 

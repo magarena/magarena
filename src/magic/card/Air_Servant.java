@@ -9,6 +9,7 @@ import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicTapAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -18,14 +19,14 @@ import magic.model.target.MagicTapTargetPicker;
 
 public class Air_Servant {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-        new MagicCondition[]{MagicManaCost.TWO_BLUE.getCondition()},
+        new MagicCondition[]{MagicConditionFactory.ManaCost("{2}{U}")},
         new MagicActivationHints(MagicTiming.Tapping),
         "Tap"
     ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_BLUE)};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{2}{U}"))};
         }
 
         @Override

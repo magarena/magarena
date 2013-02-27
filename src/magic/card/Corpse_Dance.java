@@ -25,7 +25,7 @@ public class Corpse_Dance {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     cardOnStack,
-                    new MagicBuybackChoice(MagicManaCost.TWO),
+                    new MagicBuybackChoice(MagicManaCost.create("{2}")),
                     new MagicGraveyardTargetPicker(true),
                     this,
                     "Return the top creature card$ of your graveyard to the battlefield. " +

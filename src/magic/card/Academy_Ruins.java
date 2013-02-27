@@ -12,6 +12,7 @@ import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -23,7 +24,7 @@ import magic.model.target.MagicGraveyardTargetPicker;
 public class Academy_Ruins {
     public static final MagicPermanentActivation A = new MagicPermanentActivation( 
         new MagicCondition[] {
-            MagicManaCost.TWO_BLUE.getCondition(),
+            MagicConditionFactory.ManaCost("{2}{U}"),
             MagicCondition.CAN_TAP_CONDITION,
         },
         new MagicActivationHints(MagicTiming.Main),

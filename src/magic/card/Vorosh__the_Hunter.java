@@ -27,7 +27,7 @@ public class Vorosh__the_Hunter {
                     permanent,
                     player,
                     new MagicMayChoice(
-                        new MagicPayManaCostChoice(MagicManaCost.TWO_GREEN)
+                        new MagicPayManaCostChoice(MagicManaCost.create("{2}{G}"))
                     ),
                     this,
                     "You may$ pay {2}{G}$. If you do, put six +1/+1 counters on SN."):

@@ -23,7 +23,7 @@ public class Searing_Meditation {
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        new MagicPayManaCostChoice(MagicManaCost.TWO),
+                        new MagicPayManaCostChoice(MagicManaCost.create("{2}")),
                         MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER
                     ),
                     new MagicDamageTargetPicker(2),
