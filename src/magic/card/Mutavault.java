@@ -44,13 +44,13 @@ public class Mutavault {
 
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{new MagicArtificialCondition(
-            MagicManaCost.ONE.getCondition(),
+            MagicConditionFactory.ManaCost("{1}"),
             MagicConditionFactory.ManaCost("{2}"))},
             new MagicActivationHints(MagicTiming.Animate),
             "Animate") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE)};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{1}"))};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

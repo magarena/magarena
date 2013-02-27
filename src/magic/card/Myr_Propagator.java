@@ -9,6 +9,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicPlayCardAction;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostTapEvent;
@@ -19,13 +20,13 @@ public class Myr_Propagator {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
                     MagicCondition.CAN_TAP_CONDITION,
-                    MagicManaCost.THREE.getCondition()},
+                    MagicConditionFactory.ManaCost("{3}")},
             new MagicActivationHints(MagicTiming.Token),
             "Copy") {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.THREE)};
+            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.create("{3}"))};
         }
 
         @Override

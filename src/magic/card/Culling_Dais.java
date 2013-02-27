@@ -10,6 +10,7 @@ import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicDrawAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -58,7 +59,7 @@ public class Culling_Dais {
     
     public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
             new MagicCondition[]{
-                MagicManaCost.ONE.getCondition()
+                MagicConditionFactory.ManaCost("{1}")
             },
             new MagicActivationHints(MagicTiming.Pump),
             "Draw") {
@@ -66,7 +67,7 @@ public class Culling_Dais {
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             final MagicPermanent permanent = source;
             return new MagicEvent[]{
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE),
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{1}")),
                 new MagicSacrificeEvent(permanent)};
         }
 

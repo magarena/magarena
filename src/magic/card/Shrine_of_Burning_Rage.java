@@ -15,6 +15,7 @@ import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicTargetAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -33,7 +34,7 @@ public class Shrine_of_Burning_Rage {
     public static final MagicPermanentActivation A1 = new MagicPermanentActivation(
             new MagicCondition[]{
                 MagicCondition.CAN_TAP_CONDITION,
-                MagicManaCost.THREE.getCondition()},
+                MagicConditionFactory.ManaCost("{3}")},
             new MagicActivationHints(MagicTiming.Removal),
             "Damage") {
         @Override
@@ -41,7 +42,7 @@ public class Shrine_of_Burning_Rage {
             final MagicPermanent permanent=source;
             return new MagicEvent[]{
                 new MagicTapEvent(permanent),
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.THREE),
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{3}")),
                 new MagicSacrificeEvent(permanent)};
         }
 

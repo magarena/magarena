@@ -28,7 +28,7 @@ public class Mind_Stone {
             final MagicPermanent permanent=source;
             return new MagicEvent[]{
                 new MagicTapEvent(permanent),
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE),
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{1}")),
                 new MagicSacrificeEvent(permanent)};
         }
 

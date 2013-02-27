@@ -23,7 +23,7 @@ public class Anoint {
                     cardOnStack,
                     new MagicBuybackChoice(
                             MagicTargetChoice.POS_TARGET_CREATURE,
-                            MagicManaCost.THREE),
+                            MagicManaCost.create("{3}")),
                     MagicPreventTargetPicker.getInstance(),
                     this,
                     "Prevent the next 3 damage that would be dealt to target creature$ this turn. " + 

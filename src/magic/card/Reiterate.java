@@ -21,7 +21,7 @@ public class Reiterate {
                     cardOnStack,
                     new MagicBuybackChoice(
                             MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_SPELL,
-                            MagicManaCost.THREE),
+                            MagicManaCost.create("{3}")),
                     this,
                     "Copy target instant or sorcery spell$. " + 
                     "You may choose new targets for the copy. " + 

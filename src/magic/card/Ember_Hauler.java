@@ -10,6 +10,7 @@ import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicTargetAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostSacrificeEvent;
@@ -20,13 +21,13 @@ import magic.model.target.MagicTarget;
 
 public class Ember_Hauler {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.ONE.getCondition()},
+            new MagicCondition[]{MagicConditionFactory.ManaCost("{1}")},
             new MagicActivationHints(MagicTiming.Removal),
             "Damage") {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostSacrificeEvent(source,source.getController(),MagicManaCost.ONE)};
+            return new MagicEvent[]{new MagicPayManaCostSacrificeEvent(source,source.getController(),MagicManaCost.create("{1}"))};
         }
 
         @Override

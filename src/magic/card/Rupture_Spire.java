@@ -18,7 +18,7 @@ public class Rupture_Spire {
                     permanent,
                     player,
                     new MagicMayChoice(
-                        new MagicPayManaCostChoice(MagicManaCost.ONE)
+                        new MagicPayManaCostChoice(MagicManaCost.create("{1}"))
                     ),
                     this,
                     "You may$ pay {1}. If you don't, sacrifice SN.");

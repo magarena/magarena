@@ -10,6 +10,7 @@ import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -20,7 +21,7 @@ import magic.model.target.MagicSacrificeTargetPicker;
 public class Disciple_of_Griselbrand {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
-                    MagicManaCost.ONE.getCondition(),
+                    MagicConditionFactory.ManaCost("{1}"),
                     MagicCondition.ONE_CREATURE_CONDITION
             },
             new MagicActivationHints(MagicTiming.Pump),
@@ -28,7 +29,7 @@ public class Disciple_of_Griselbrand {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE)
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{1}"))
             };
         }
         @Override

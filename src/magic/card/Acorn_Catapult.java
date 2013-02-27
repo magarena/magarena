@@ -12,6 +12,7 @@ import magic.model.action.MagicPlayTokenAction;
 import magic.model.action.MagicTargetAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostTapEvent;
@@ -24,7 +25,7 @@ public class Acorn_Catapult {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
                     MagicCondition.CAN_TAP_CONDITION,
-                    MagicManaCost.ONE.getCondition()},
+                    MagicConditionFactory.ManaCost("{1}")},
             new MagicActivationHints(MagicTiming.Removal),
             "Damage") {
 
@@ -33,7 +34,7 @@ public class Acorn_Catapult {
             return new MagicEvent[]{new MagicPayManaCostTapEvent(
                     source,
                     source.getController(),
-                    MagicManaCost.ONE)};
+                    MagicManaCost.create("{1}"))};
         }
 
         @Override

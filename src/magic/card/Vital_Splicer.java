@@ -9,6 +9,7 @@ import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicRegenerateAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -21,14 +22,14 @@ public class Vital_Splicer {
     
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
-                    MagicManaCost.ONE.getCondition(),
+                    MagicConditionFactory.ManaCost("{1}"),
                     MagicCondition.CONTROL_GOLEM_CONDITION},
             new MagicActivationHints(MagicTiming.Pump,true),
             "Regen") {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE)};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{1}"))};
         }
 
         @Override

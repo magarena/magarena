@@ -52,13 +52,13 @@ public class Grimoire_of_the_Dead {
             new MagicCondition[]{
                 MagicCondition.CAN_TAP_CONDITION,
                 MagicCondition.HAS_CARD_CONDITION,
-                MagicManaCost.ONE.getCondition()},
+                MagicConditionFactory.ManaCost("{1}")},
             new MagicActivationHints(MagicTiming.Main,true),
             "Add counter") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.ONE),
+                new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.create("{1}")),
                 new MagicDiscardEvent(source,source.getController(),1,false)
             };
         }

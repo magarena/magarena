@@ -13,6 +13,7 @@ import magic.model.MagicType;
 import magic.model.action.MagicBecomesCreatureAction;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -52,7 +53,7 @@ public class Chimeric_Mass {
     };
 
     public static final MagicPermanentActivation A1 = new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.ONE.getCondition()},
+            new MagicCondition[]{MagicConditionFactory.ManaCost("{1}")},
             new MagicActivationHints(MagicTiming.Animate,false,1),
             "Animate") {
 
@@ -61,7 +62,7 @@ public class Chimeric_Mass {
             return new MagicEvent[]{new MagicPayManaCostEvent(
                     source,
                     source.getController(),
-                    MagicManaCost.ONE),
+                    MagicManaCost.create("{1}")),
                     new MagicPlayAbilityEvent(source)};
         }
 

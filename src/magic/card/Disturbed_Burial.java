@@ -24,7 +24,7 @@ public class Disturbed_Burial {
                 cardOnStack,
                 new MagicBuybackChoice(
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
-                    MagicManaCost.THREE
+                    MagicManaCost.create("{3}")
                 ),
                 new MagicGraveyardTargetPicker(false),
                 this,

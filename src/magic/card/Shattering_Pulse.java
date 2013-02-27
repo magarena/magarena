@@ -23,7 +23,7 @@ public class Shattering_Pulse {
                     cardOnStack,
                     new MagicBuybackChoice(
                             MagicTargetChoice.TARGET_ARTIFACT,
-                            MagicManaCost.THREE),
+                            MagicManaCost.create("{3}")),
                     new MagicDestroyTargetPicker(false),
                     this,
                     "Destroy target artifact$. " + 

@@ -10,6 +10,7 @@ import magic.model.MagicSubType;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.action.MagicDrawAction;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -20,7 +21,7 @@ import magic.model.event.MagicTiming;
 public class Scroll_of_Avacyn {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
-                MagicManaCost.ONE.getCondition()
+                MagicConditionFactory.ManaCost("{1}")
             },
             new MagicActivationHints(MagicTiming.Draw),
             "Draw") {
@@ -28,7 +29,7 @@ public class Scroll_of_Avacyn {
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             final MagicPermanent permanent = source;
             return new MagicEvent[]{
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE),
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{1}")),
                 new MagicSacrificeEvent(permanent)};
         }
 

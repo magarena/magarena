@@ -21,7 +21,7 @@ public class Capsize {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     cardOnStack,
-                    new MagicBuybackChoice(MagicTargetChoice.TARGET_PERMANENT,MagicManaCost.THREE),     
+                    new MagicBuybackChoice(MagicTargetChoice.TARGET_PERMANENT,MagicManaCost.create("{3}")),     
                     MagicBounceTargetPicker.getInstance(),
                     this,
                     "Return target permanent$ to its owner's hand. " + 

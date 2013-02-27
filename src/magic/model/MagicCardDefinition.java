@@ -47,7 +47,7 @@ public class MagicCardDefinition {
             setToken();
             setValue(1);
             addType(MagicType.Creature);
-            setCost(MagicManaCost.EIGHT);
+            setCost(MagicManaCost.create("{15}"));
             setPowerToughness(1,1);
             addAbility(MagicAbility.Defender);
             addAbility(MagicAbility.CannotBeCountered);

@@ -7,6 +7,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.action.MagicTapAction;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -17,7 +18,7 @@ public class Burden_of_Guilt {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
                 MagicCondition.ENCHANTED_IS_UNTAPPED_CONDITION,
-                MagicManaCost.ONE.getCondition(),
+                MagicConditionFactory.ManaCost("{1}")
             },
             new MagicActivationHints(MagicTiming.Tapping),
             "Tap") {
@@ -26,7 +27,7 @@ public class Burden_of_Guilt {
             return new MagicEvent[]{new MagicPayManaCostEvent(
                 source,
                 source.getController(),
-                MagicManaCost.ONE
+                MagicManaCost.create("{1}")
             )};
         }
         @Override

@@ -11,6 +11,7 @@ import magic.model.MagicType;
 import magic.model.action.MagicBecomesCreatureAction;
 import magic.model.condition.MagicArtificialCondition;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -45,14 +46,14 @@ public class Inkmoth_Nexus {
 
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{new MagicArtificialCondition(
-                    MagicManaCost.ONE.getCondition(),
-                    MagicManaCost.ONE.getCondition())},
+                    MagicConditionFactory.ManaCost("{1}"),
+                    MagicConditionFactory.ManaCost("{1}"))},
             new MagicActivationHints(MagicTiming.Animate),
             "Animate") {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE)};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{1}"))};
         }
 
         @Override

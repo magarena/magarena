@@ -24,7 +24,7 @@ public class Evincar_s_Justice {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     cardOnStack,
-                    new MagicBuybackChoice(MagicManaCost.THREE),
+                    new MagicBuybackChoice(MagicManaCost.create("{3}")),
                     this,
                     "SN deals 2 damage to each creature and each player. " + 
                     "If the buyback cost was payed$, return SN to its owner's hand as it resolves.");

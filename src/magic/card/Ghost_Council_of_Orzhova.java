@@ -11,6 +11,7 @@ import magic.model.action.MagicExileUntilEndOfTurnAction;
 import magic.model.action.MagicPlayerAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -24,7 +25,7 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 public class Ghost_Council_of_Orzhova {
     public static final MagicPermanentActivation A =new MagicPermanentActivation(
             new MagicCondition[]{
-                MagicManaCost.ONE.getCondition(),
+                MagicConditionFactory.ManaCost("{1}"),
                 MagicCondition.ONE_CREATURE_CONDITION
             },
             new MagicActivationHints(MagicTiming.Removal,false,1),
@@ -33,7 +34,7 @@ public class Ghost_Council_of_Orzhova {
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             final MagicPlayer player=source.getController();
             return new MagicEvent[]{                    
-                new MagicPayManaCostEvent(source,player,MagicManaCost.ONE),
+                new MagicPayManaCostEvent(source,player,MagicManaCost.create("{1}")),
                 new MagicPlayAbilityEvent(source),
                 new MagicSacrificePermanentEvent(source,player,MagicTargetChoice.SACRIFICE_CREATURE)};
         }

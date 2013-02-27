@@ -32,7 +32,7 @@ public class Kazuul__Tyrant_of_the_Cliffs {
                         event.getPermanent(),
                         player.getOpponent(),
                         player,
-                        MagicManaCost.THREE));
+                        MagicManaCost.create("{3}")));
         }
     };
 }

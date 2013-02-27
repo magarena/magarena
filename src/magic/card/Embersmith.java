@@ -24,7 +24,7 @@ public class Embersmith {
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        new MagicPayManaCostChoice(MagicManaCost.ONE),
+                        new MagicPayManaCostChoice(MagicManaCost.create("{1}")),
                         MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER
                     ),
                     new MagicDamageTargetPicker(2),

@@ -24,7 +24,7 @@ public class Sludge_Strider {
                         permanent,
                         permanent.getController(),
                         new MagicMayChoice(
-                            new MagicPayManaCostChoice(MagicManaCost.ONE),
+                            new MagicPayManaCostChoice(MagicManaCost.create("{1}")),
                             MagicTargetChoice.NEG_TARGET_PLAYER
                         ),
                         this,
@@ -56,7 +56,7 @@ public class Sludge_Strider {
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        new MagicPayManaCostChoice(MagicManaCost.ONE),
+                        new MagicPayManaCostChoice(MagicManaCost.create("{1}")),
                         MagicTargetChoice.NEG_TARGET_PLAYER
                     ),
                     this,

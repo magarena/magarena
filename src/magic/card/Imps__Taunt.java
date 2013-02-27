@@ -24,7 +24,7 @@ public class Imps__Taunt {
                     cardOnStack,
                     new MagicBuybackChoice(
                         MagicTargetChoice.NEG_TARGET_CREATURE,
-                        MagicManaCost.THREE),
+                        MagicManaCost.create("{3}")),
                     MagicMustAttackTargetPicker.create(),
                     this,
                     "Target creature$ attacks this turn if able. " + 

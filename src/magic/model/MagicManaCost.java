@@ -45,16 +45,12 @@ public class MagicManaCost {
     
     public static final MagicManaCost X=MagicManaCost.create("{X}");
     public static final MagicManaCost ZERO=MagicManaCost.create("{0}");
-    public static final MagicManaCost ONE=MagicManaCost.create("{1}");
     public static final MagicManaCost BLACK=MagicManaCost.create("{B}");
     public static final MagicManaCost BLUE=MagicManaCost.create("{U}");
     public static final MagicManaCost GREEN=MagicManaCost.create("{G}");
     public static final MagicManaCost RED=MagicManaCost.create("{R}");
     public static final MagicManaCost WHITE=MagicManaCost.create("{W}");
 
-    public static final MagicManaCost THREE=MagicManaCost.create("{3}");
-    public static final MagicManaCost EIGHT=MagicManaCost.create("{8}");
-    public static final MagicManaCost NINE=MagicManaCost.create("{9}");
     public static final MagicManaCost ONE_BLUE=MagicManaCost.create("{1}{U}");
     public static final MagicManaCost THREE_BLUE=MagicManaCost.create("{3}{U}");
     public static final MagicManaCost THREE_BLUE_RED=MagicManaCost.create("{3}{U}{R}");

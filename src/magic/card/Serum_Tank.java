@@ -48,7 +48,7 @@ public class Serum_Tank {
             new MagicCondition[]{
                 MagicConditionFactory.ChargeCountersAtLeast(1),
                 MagicCondition.CAN_TAP_CONDITION,
-                MagicManaCost.THREE.getCondition()
+                MagicConditionFactory.ManaCost("{3}")
             },
             new MagicActivationHints(MagicTiming.Draw),
             "Draw") {
@@ -58,7 +58,7 @@ public class Serum_Tank {
                 new MagicPayManaCostTapEvent(
                     source,
                     source.getController(),
-                    MagicManaCost.THREE
+                    MagicManaCost.create("{3}")
                 ),
                 new MagicRemoveCounterEvent(
                     source,

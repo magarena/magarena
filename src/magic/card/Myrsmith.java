@@ -20,7 +20,7 @@ public class Myrsmith {
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        new MagicPayManaCostChoice(MagicManaCost.ONE)
+                        new MagicPayManaCostChoice(MagicManaCost.create("{1}"))
                     ),
                     this,
                     "PN may$ pay {1}$. If you do, put a 1/1 " +

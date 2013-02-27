@@ -23,7 +23,7 @@ public class Allay {
                 cardOnStack,
                 new MagicBuybackChoice(
                     MagicTargetChoice.NEG_TARGET_ENCHANTMENT,
-                    MagicManaCost.THREE),     
+                    MagicManaCost.create("{3}")),     
                 new MagicDestroyTargetPicker(false),
                 this,
                 "Destroy target enchantment$. " + 

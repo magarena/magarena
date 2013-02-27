@@ -24,7 +24,7 @@ public class Change_of_Heart {
                     cardOnStack,
                     new MagicBuybackChoice(
                         MagicTargetChoice.NEG_TARGET_CREATURE,
-                        MagicManaCost.THREE),
+                        MagicManaCost.create("{3}")),
                     new MagicNoCombatTargetPicker(true,false,false),
                     this,
                     "Target creature$ can't attack this turn. " + 

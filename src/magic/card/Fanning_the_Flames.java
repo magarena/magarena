@@ -25,7 +25,7 @@ public class Fanning_the_Flames {
                     cardOnStack,
                     new MagicBuybackChoice(
                         MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
-                        MagicManaCost.THREE
+                        MagicManaCost.create("{3}")
                     ),
                     new MagicDamageTargetPicker(amount),
                     this,

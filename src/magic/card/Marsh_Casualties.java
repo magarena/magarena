@@ -23,7 +23,7 @@ public class Marsh_Casualties {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                     cardOnStack,
-                    new MagicKickerChoice(MagicTargetChoice.NEG_TARGET_PLAYER,MagicManaCost.THREE,false),
+                    new MagicKickerChoice(MagicTargetChoice.NEG_TARGET_PLAYER,MagicManaCost.create("{3}"),false),
                     this,
                     "Creatures target player$ controls get -1/-1 until end of turn. " +
                     "If SN was kicked$, those creatures get -2/-2 until end of turn instead.");

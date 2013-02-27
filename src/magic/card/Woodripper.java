@@ -23,14 +23,14 @@ public class Woodripper {
     public static final MagicPermanentActivation A = new MagicPermanentActivation( 
             new MagicCondition[] {
                 MagicConditionFactory.ChargeCountersAtLeast(1),
-                MagicManaCost.ONE.getCondition()
+                MagicConditionFactory.ManaCost("{1}")
             },
             new MagicActivationHints(MagicTiming.Removal),
             "Damage") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE),
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{1}")),
                 new MagicRemoveCounterEvent(source,MagicCounterType.Charge,1)
             };
         }
