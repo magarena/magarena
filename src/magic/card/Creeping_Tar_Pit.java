@@ -13,6 +13,7 @@ import magic.model.MagicType;
 import magic.model.action.MagicBecomesCreatureAction;
 import magic.model.condition.MagicArtificialCondition;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -55,13 +56,14 @@ public class Creeping_Tar_Pit {
 
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{new MagicArtificialCondition(
-                MagicManaCost.ONE_BLUE_BLACK.getCondition(),
-                MagicManaCost.BLUE_BLUE_BLACK_BLACK.getCondition())},
+                MagicConditionFactory.ManaCost("{1}{U}{B}"),
+                MagicConditionFactory.ManaCost("{U}{U}{B}{B}")
+            )},
             new MagicActivationHints(MagicTiming.Animate),
             "Animate") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_BLUE_BLACK)};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{1}{U}{B}"))};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

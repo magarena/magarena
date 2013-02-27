@@ -13,6 +13,7 @@ import magic.model.MagicType;
 import magic.model.action.MagicBecomesCreatureAction;
 import magic.model.condition.MagicArtificialCondition;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -64,22 +65,28 @@ public class Stirring_Wildwood {
 
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{new MagicArtificialCondition(
-                    MagicManaCost.ONE_GREEN_WHITE.getCondition(),
-                    MagicManaCost.GREEN_GREEN_WHITE_WHITE.getCondition())},
+                MagicConditionFactory.ManaCost("{1}{G}{W}"),
+                MagicConditionFactory.ManaCost("{G}{G}{W}{W}")
+            )},
             new MagicActivationHints(MagicTiming.Animate),
             "Animate") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostEvent(source,source.getController(),
-                MagicManaCost.ONE_GREEN_WHITE)};
+                new MagicPayManaCostEvent(
+                    source,
+                    source.getController(),
+                    MagicManaCost.create("{1}{G}{W}")
+                )
+            };
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    this,
-                    "Until end of turn, SN becomes a 3/4 green and white Elemental creature with reach. It's still a land.");
+                source,
+                this,
+                "Until end of turn, SN becomes a 3/4 green and white Elemental creature with reach. It's still a land."
+            );
         }
         @Override
         public void executeEvent(

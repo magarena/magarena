@@ -12,6 +12,7 @@ import magic.model.action.MagicRegenerateAction;
 import magic.model.action.MagicSetAbilityAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -27,13 +28,14 @@ import java.util.Collection;
 public class Ezuri__Renegade_Leader {
     public static final MagicPermanentActivation A1 = new MagicPermanentActivation(
             new MagicCondition[]{
-                    MagicManaCost.GREEN.getCondition()},
+                MagicConditionFactory.ManaCost("{G}")
+            },
             new MagicActivationHints(MagicTiming.Pump,false),
             "Regen") {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.GREEN)};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{G}"))};
         }
 
         @Override
@@ -65,21 +67,23 @@ public class Ezuri__Renegade_Leader {
     
     public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
             new MagicCondition[]{
-                    MagicManaCost.TWO_GREEN_GREEN_GREEN.getCondition()},
+                MagicConditionFactory.ManaCost("{2}{G}{G}{G}")
+            },
             new MagicActivationHints(MagicTiming.Pump,true),
             "Pump") {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_GREEN_GREEN_GREEN)};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{2}{G}{G}{G}"))};
         }
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    this,
-                    "Elf creatures PN controls get +3/+3 and gain trample until end of turn.");
+                source,
+                this,
+                "Elf creatures PN controls get +3/+3 and gain trample until end of turn."
+            );
         }
 
         @Override
@@ -89,10 +93,10 @@ public class Ezuri__Renegade_Leader {
                 final Object[] choiceResults) {
             final Collection<MagicPermanent> targets =
                     game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_ELF_YOU_CONTROL);
-                for (final MagicPermanent creature : targets) {
-                    game.doAction(new MagicChangeTurnPTAction(creature,3,3));
-                    game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Trample));
-                }
+            for (final MagicPermanent creature : targets) {
+                game.doAction(new MagicChangeTurnPTAction(creature,3,3));
+                game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Trample));
+            }
         }
     };
 }

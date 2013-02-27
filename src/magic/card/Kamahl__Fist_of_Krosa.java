@@ -14,6 +14,7 @@ import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicSetAbilityAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -41,13 +42,13 @@ public class Kamahl__Fist_of_Krosa {
     };
     
     public static final MagicPermanentActivation A1 = new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.GREEN.getCondition()},
+            new MagicCondition[]{MagicConditionFactory.ManaCost("{G}")},
             new MagicActivationHints(MagicTiming.Animate),
             "Animate") {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.GREEN)};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{G}"))};
         }
 
         @Override
@@ -74,21 +75,23 @@ public class Kamahl__Fist_of_Krosa {
     
     public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
             new MagicCondition[]{
-                    MagicManaCost.TWO_GREEN_GREEN_GREEN.getCondition()},
+                MagicConditionFactory.ManaCost("{2}{G}{G}{G}")
+            },
             new MagicActivationHints(MagicTiming.Pump,true),
             "Pump") {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_GREEN_GREEN_GREEN)};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{2}{G}{G}{G}"))};
         }
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    this,
-                    "Creatures PN controls get +3/+3 and gain trample until end of turn.");
+                source,
+                this,
+                "Creatures PN controls get +3/+3 and gain trample until end of turn."
+            );
         }
 
         @Override

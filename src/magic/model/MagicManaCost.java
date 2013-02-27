@@ -68,7 +68,6 @@ public class MagicManaCost {
     public static final MagicManaCost TWO_GREEN=MagicManaCost.create("{2}{G}");
     public static final MagicManaCost THREE_GREEN=MagicManaCost.create("{3}{G}");
     public static final MagicManaCost TWO_GREEN_GREEN=MagicManaCost.create("{2}{G}{G}");
-    public static final MagicManaCost TWO_GREEN_GREEN_GREEN=MagicManaCost.create("{2}{G}{G}{G}");
     public static final MagicManaCost GREEN_GREEN=MagicManaCost.create("{G}{G}");
     public static final MagicManaCost ONE_RED=MagicManaCost.create("{1}{R}");
     public static final MagicManaCost TWO_RED=MagicManaCost.create("{2}{R}");
@@ -96,17 +95,12 @@ public class MagicManaCost {
     public static final MagicManaCost RED_WHITE=MagicManaCost.create("{R}{W}");
     public static final MagicManaCost BLACK_OR_RED=MagicManaCost.create("{B/R}");
     public static final MagicManaCost ONE_WHITE_OR_BLUE=MagicManaCost.create("{1}{W/U}");
-    public static final MagicManaCost TWO_WHITE_WHITE_BLUE_BLUE=MagicManaCost.create("{2}{W}{W}{U}{U}");
     public static final MagicManaCost RED_GREEN=MagicManaCost.create("{R}{G}");
     public static final MagicManaCost ONE_RED_GREEN=MagicManaCost.create("{1}{R}{G}");
     public static final MagicManaCost TWO_RED_GREEN=MagicManaCost.create("{2}{R}{G}");
-    public static final MagicManaCost ONE_RED_RED_GREEN_GREEN=MagicManaCost.create("{1}{R}{R}{G}{G}");
     public static final MagicManaCost ONE_BLUE_BLACK=MagicManaCost.create("{1}{U}{B}");
-    public static final MagicManaCost ONE_BLUE_BLUE_RED=MagicManaCost.create("{1}{U}{U}{R}");
     public static final MagicManaCost TWO_BLUE_BLACK=MagicManaCost.create("{2}{U}{B}");
-    public static final MagicManaCost BLUE_BLUE_BLACK_BLACK=MagicManaCost.create("{U}{U}{B}{B}");
     public static final MagicManaCost ONE_GREEN_WHITE=MagicManaCost.create("{1}{G}{W}");
-    public static final MagicManaCost GREEN_GREEN_WHITE_WHITE=MagicManaCost.create("{G}{G}{W}{W}");
     public static final MagicManaCost WHITE_OR_BLACK=MagicManaCost.create("{W/B}");
     public static final MagicManaCost WHITE_OR_BLACK_WHITE_OR_BLACK=MagicManaCost.create("{W/B}{W/B}");
 

@@ -15,6 +15,7 @@ import magic.model.action.MagicBecomesCreatureAction;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.condition.MagicArtificialCondition;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -88,16 +89,20 @@ public class Raging_Ravine {
 
     public static final MagicPermanentActivation A1 = new MagicPermanentActivation(
             new MagicCondition[]{new MagicArtificialCondition(
-                    MagicManaCost.TWO_RED_GREEN.getCondition(),
-                    MagicManaCost.ONE_RED_RED_GREEN_GREEN.getCondition())},
+                MagicConditionFactory.ManaCost("{2}{R}{G}"),
+                MagicConditionFactory.ManaCost("{1}{R}{R}{G}{G}")
+            )},
             new MagicActivationHints(MagicTiming.Animate),
             "Animate") {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostEvent(source,source.getController(),
-                MagicManaCost.TWO_RED_GREEN)};
+                new MagicPayManaCostEvent(
+                    source,source.getController(),
+                    MagicManaCost.create("{2}{R}{G}")
+                )
+            };
         }
 
         @Override
