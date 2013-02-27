@@ -10,6 +10,7 @@ import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -21,7 +22,7 @@ import magic.model.target.MagicPumpTargetPicker;
 public class Deranged_Outcast {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
-                    MagicManaCost.ONE_GREEN.getCondition(),
+                    MagicConditionFactory.ManaCost("{1}{G}"),
                     MagicCondition.ONE_CREATURE_CONDITION,
                 },
             new MagicActivationHints(MagicTiming.Removal),
@@ -32,7 +33,7 @@ public class Deranged_Outcast {
                     new MagicPayManaCostEvent(
                             source,
                             source.getController(),
-                            MagicManaCost.ONE_GREEN),
+                            MagicManaCost.create("{1}{G}")),
                     new MagicSacrificePermanentEvent(
                             source,
                             source.getController(),

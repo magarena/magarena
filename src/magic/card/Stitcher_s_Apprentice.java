@@ -12,6 +12,7 @@ import magic.model.action.MagicPlayTokenAction;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventAction;
@@ -24,14 +25,14 @@ public class Stitcher_s_Apprentice {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
         new MagicCondition[]{
             MagicCondition.CAN_TAP_CONDITION,
-            MagicManaCost.ONE_BLUE.getCondition()
+            MagicConditionFactory.ManaCost("{1}{U}")
         },
         new MagicActivationHints(MagicTiming.Token),
         "Token"
     ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.ONE_BLUE)};
+            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.create("{1}{U}"))};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

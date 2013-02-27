@@ -21,7 +21,7 @@ public class Surgespanner {
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        new MagicPayManaCostChoice(MagicManaCost.ONE_BLUE),
+                        new MagicPayManaCostChoice(MagicManaCost.create("{1}{U}")),
                         MagicTargetChoice.TARGET_PERMANENT
                     ),
                     MagicBounceTargetPicker.getInstance(),

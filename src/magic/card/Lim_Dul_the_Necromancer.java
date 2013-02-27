@@ -17,6 +17,7 @@ import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -45,7 +46,7 @@ public class Lim_Dul_the_Necromancer {
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        new MagicPayManaCostChoice(MagicManaCost.ONE_BLACK)
+                        new MagicPayManaCostChoice(MagicManaCost.create("{1}{B}"))
                     ),
                     otherPermanent.getCard(),
                     this,
@@ -75,14 +76,14 @@ public class Lim_Dul_the_Necromancer {
     };
     
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-        new MagicCondition[]{MagicManaCost.ONE_BLACK.getCondition()},
+        new MagicCondition[]{MagicConditionFactory.ManaCost("{1}{B}")},
         new MagicActivationHints(MagicTiming.Pump,true),
         "Regen"
     ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_BLACK)};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{1}{B}"))};
         }
 
         @Override

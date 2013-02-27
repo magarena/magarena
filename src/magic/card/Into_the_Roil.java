@@ -23,7 +23,7 @@ public class Into_the_Roil {
                 cardOnStack,
                 new MagicKickerChoice(
                     MagicTargetChoice.TARGET_NONLAND_PERMANENT,
-                    MagicManaCost.ONE_BLUE,false
+                    MagicManaCost.create("{1}{U}"),false
                 ),
                 MagicBounceTargetPicker.getInstance(),
                 this,

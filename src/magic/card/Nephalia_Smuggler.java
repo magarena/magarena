@@ -12,6 +12,7 @@ import magic.model.action.MagicRemoveCardAction;
 import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -25,16 +26,17 @@ import magic.model.target.MagicTargetHint;
 public class Nephalia_Smuggler {
     public static final MagicPermanentActivation A = new MagicPermanentActivation( 
             new MagicCondition[] {
-                    MagicManaCost.THREE_BLUE.getCondition(),
-                    MagicCondition.CAN_TAP_CONDITION,
+                MagicConditionFactory.ManaCost("{3}{U}"),
+                MagicCondition.CAN_TAP_CONDITION,
             },
             new MagicActivationHints(MagicTiming.Main),
             "Card") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                    new MagicTapEvent(source),
-                    new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.THREE_BLUE)};
+                new MagicTapEvent(source),
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{3}{U}"))
+            };
         }
         @Override
         public MagicEvent getPermanentEvent(

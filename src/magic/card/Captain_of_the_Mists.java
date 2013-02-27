@@ -10,6 +10,7 @@ import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicUntapAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostTapEvent;
@@ -49,7 +50,7 @@ public class Captain_of_the_Mists {
     public static final MagicPermanentActivation A1 = new MagicTapCreatureActivation(
             new MagicCondition[]{
                     MagicCondition.CAN_TAP_CONDITION,
-                    MagicManaCost.ONE_BLUE.getCondition()
+                    MagicConditionFactory.ManaCost("{1}{U}")
             },
             new MagicActivationHints(MagicTiming.Tapping),
             "Tap") {
@@ -59,7 +60,7 @@ public class Captain_of_the_Mists {
                 new MagicPayManaCostTapEvent(
                         source,
                         source.getController(),
-                        MagicManaCost.ONE_BLUE)
+                        MagicManaCost.create("{1}{U}"))
             };
         }
     };
@@ -67,7 +68,7 @@ public class Captain_of_the_Mists {
     public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
             new MagicCondition[]{
                     MagicCondition.CAN_TAP_CONDITION,
-                    MagicManaCost.ONE_BLUE.getCondition()
+                    MagicConditionFactory.ManaCost("{1}{U}")
             },
             new MagicActivationHints(MagicTiming.Tapping),
             "Untap") {
@@ -77,7 +78,7 @@ public class Captain_of_the_Mists {
                 new MagicPayManaCostTapEvent(
                         source,
                         source.getController(),
-                        MagicManaCost.ONE_BLUE)
+                        MagicManaCost.create("{1}{U}"))
             };
         }
 

@@ -21,7 +21,7 @@ public class Binding_Grasp {
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        new MagicPayManaCostChoice(MagicManaCost.ONE_BLUE)
+                        new MagicPayManaCostChoice(MagicManaCost.create("{1}{U}"))
                     ),
                     this,
                     "PN may$ pay {1}{U}$. If you don't, sacrifice SN.") :

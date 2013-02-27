@@ -17,7 +17,7 @@ public class Train_of_Thought {
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
                     cardOnStack,
-                    new MagicKickerChoice(MagicManaCost.ONE_BLUE, true, true),
+                    new MagicKickerChoice(MagicManaCost.create("{1}{U}"), true, true),
                     this,
                     "Draw a card.");
         }

@@ -24,7 +24,7 @@ public class Pyromatics {
                     cardOnStack,
                     new MagicKickerChoice(
                         MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER, 
-                        MagicManaCost.ONE_RED, 
+                        MagicManaCost.create("{1}{R}"), 
                         true, 
                         true
                     ),

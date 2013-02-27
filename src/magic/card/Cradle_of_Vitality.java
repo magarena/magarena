@@ -26,7 +26,7 @@ public class Cradle_of_Vitality {
                     permanent,
                     player,
                     new MagicMayChoice(
-                        new MagicPayManaCostChoice(MagicManaCost.ONE_WHITE),
+                        new MagicPayManaCostChoice(MagicManaCost.create("{1}{W}")),
                         MagicTargetChoice.POS_TARGET_CREATURE
                     ),
                     MagicPumpTargetPicker.create(),

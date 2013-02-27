@@ -10,6 +10,7 @@ import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostSacrificeEvent;
@@ -19,7 +20,7 @@ import magic.model.target.MagicDestroyTargetPicker;
 
 public class Silverchase_Fox {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.ONE_WHITE.getCondition()},
+            new MagicCondition[]{MagicConditionFactory.ManaCost("{1}{W}")},
             new MagicActivationHints(MagicTiming.Removal),
             "Exile") {
 
@@ -29,7 +30,7 @@ public class Silverchase_Fox {
                 new MagicPayManaCostSacrificeEvent(
                     source,
                     source.getController(),
-                    MagicManaCost.ONE_WHITE
+                    MagicManaCost.create("{1}{W}")
                 )
             };
         }

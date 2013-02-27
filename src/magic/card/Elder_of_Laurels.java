@@ -10,6 +10,7 @@ import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -19,22 +20,23 @@ import magic.model.target.MagicPumpTargetPicker;
 
 public class Elder_of_Laurels {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.THREE_GREEN.getCondition()},
+            new MagicCondition[]{MagicConditionFactory.ManaCost("{3}{G}")},
             new MagicActivationHints(MagicTiming.Pump,true),
             "Pump") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.THREE_GREEN)};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{3}{G}"))};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicPumpTargetPicker.create(),
-                    this,
-                    "Target creature gets +X/+X until end of turn, where X " +
-                    "is the number of creatures PN controls.");
+                source,
+                MagicTargetChoice.POS_TARGET_CREATURE,
+                MagicPumpTargetPicker.create(),
+                this,
+                "Target creature gets +X/+X until end of turn, where X " +
+                "is the number of creatures PN controls."
+            );
         }
         @Override
         public void executeEvent(

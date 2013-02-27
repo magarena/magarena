@@ -13,6 +13,7 @@ import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicTargetAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -45,14 +46,14 @@ public class Apocalypse_Hydra {
     
     public static final MagicPermanentActivation A = new MagicPermanentActivation( 
             new MagicCondition[] {
-                    MagicManaCost.ONE_RED.getCondition(),
+                    MagicConditionFactory.ManaCost("{1}{R}"),
                     MagicCondition.PLUS_COUNTER_CONDITION},
             new MagicActivationHints(MagicTiming.Removal),
             "Damage") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_RED),
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{1}{R}")),
                 new MagicRemoveCounterEvent(source,MagicCounterType.PlusOne,1)};
         }
         @Override

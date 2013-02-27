@@ -7,6 +7,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -18,13 +19,13 @@ public class Rootwalla {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
                     MagicCondition.ABILITY_ONCE_CONDITION,
-                    MagicManaCost.ONE_GREEN.getCondition()},
+                    MagicConditionFactory.ManaCost("{1}{G}")},
             new MagicActivationHints(MagicTiming.Pump),
             "Pump") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_GREEN),
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{1}{G}")),
                 new MagicPlayAbilityEvent(source)};
         }
         @Override

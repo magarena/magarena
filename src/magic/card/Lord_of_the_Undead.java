@@ -13,6 +13,7 @@ import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostTapEvent;
@@ -40,14 +41,14 @@ public class Lord_of_the_Undead {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
         new MagicCondition[]{
             MagicCondition.CAN_TAP_CONDITION,
-            MagicManaCost.ONE_BLACK.getCondition()
+            MagicConditionFactory.ManaCost("{1}{B}")
         },
         new MagicActivationHints(MagicTiming.FirstMain),
         "Return"
     ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.ONE_BLACK)};
+            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.create("{1}{B}"))};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

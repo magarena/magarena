@@ -32,7 +32,7 @@ public class Goblin_Burrows {
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicTapEvent(source),
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_RED)
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{1}{R}"))
             };
         }
 

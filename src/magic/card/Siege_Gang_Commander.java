@@ -13,6 +13,7 @@ import magic.model.action.MagicPlayTokenAction;
 import magic.model.action.MagicTargetAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -25,14 +26,14 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Siege_Gang_Commander {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.ONE_RED.getCondition(),MagicCondition.CONTROL_GOBLIN_CONDITION},
+            new MagicCondition[]{MagicConditionFactory.ManaCost("{1}{R}"),MagicCondition.CONTROL_GOBLIN_CONDITION},
             new MagicActivationHints(MagicTiming.Removal,true),
             "Damage") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             final MagicPlayer player=source.getController();
             return new MagicEvent[]{                    
-                new MagicPayManaCostEvent(source,player,MagicManaCost.ONE_RED),
+                new MagicPayManaCostEvent(source,player,MagicManaCost.create("{1}{R}")),
                 new MagicSacrificePermanentEvent(source,player,MagicTargetChoice.SACRIFICE_GOBLIN)
             };
         }
