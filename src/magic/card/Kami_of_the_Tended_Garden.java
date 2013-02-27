@@ -18,7 +18,7 @@ public class Kami_of_the_Tended_Garden {
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        new MagicPayManaCostChoice(MagicManaCost.GREEN)
+                        new MagicPayManaCostChoice(MagicManaCost.create("{G}"))
                     ),
                     this,
                     "You may$ pay {G}$. If you don't, sacrifice SN."

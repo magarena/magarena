@@ -13,6 +13,7 @@ import magic.model.action.MagicBecomesCreatureAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -79,14 +80,14 @@ public class Glint_Hawk_Idol {
     };
     
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.WHITE.getCondition()},
+            new MagicCondition[]{MagicConditionFactory.ManaCost("{W}")},
             new MagicActivationHints(MagicTiming.Animate,false,1),
             "Animate") {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                    new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.WHITE),
+                    new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{W}")),
                     new MagicPlayAbilityEvent(source)};
         }
 

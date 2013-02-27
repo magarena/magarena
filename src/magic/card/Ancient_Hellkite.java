@@ -10,6 +10,7 @@ import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicTargetAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -20,13 +21,13 @@ import magic.model.target.MagicTarget;
 
 public class Ancient_Hellkite {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicCondition.IS_ATTACKING_CONDITION,MagicManaCost.RED.getCondition()},
+            new MagicCondition[]{MagicCondition.IS_ATTACKING_CONDITION,MagicConditionFactory.ManaCost("{R}")},
             new MagicActivationHints(MagicTiming.Removal),
             "Damage") {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.RED)};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{R}"))};
         }
 
         @Override

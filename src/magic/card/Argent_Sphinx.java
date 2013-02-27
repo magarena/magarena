@@ -8,6 +8,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicExileUntilEndOfTurnAction;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -19,7 +20,7 @@ import magic.model.event.MagicTiming;
 public class Argent_Sphinx {
     public static final MagicPermanentActivation A =new MagicPermanentActivation(
             new MagicCondition[]{
-                MagicManaCost.BLUE.getCondition(),
+                MagicConditionFactory.ManaCost("{U}"),
                 MagicCondition.METALCRAFT_CONDITION
             },
             new MagicActivationHints(MagicTiming.Removal,false,1),
@@ -28,7 +29,7 @@ public class Argent_Sphinx {
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             final MagicPlayer player=source.getController();
             return new MagicEvent[]{                    
-                new MagicPayManaCostEvent(source,player,MagicManaCost.BLUE),
+                new MagicPayManaCostEvent(source,player,MagicManaCost.create("{U}")),
                 new MagicPlayAbilityEvent(source)};
         }
         @Override

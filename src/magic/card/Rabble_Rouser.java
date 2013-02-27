@@ -7,6 +7,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostTapEvent;
@@ -21,7 +22,7 @@ public class Rabble_Rouser {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
                     MagicCondition.CAN_TAP_CONDITION,
-                    MagicManaCost.RED.getCondition()},
+                    MagicConditionFactory.ManaCost("{R}")},
             new MagicActivationHints(MagicTiming.Block),
             "Pump") {
         @Override
@@ -29,7 +30,7 @@ public class Rabble_Rouser {
             return new MagicEvent[] {new MagicPayManaCostTapEvent(
                     source,
                     source.getController(),
-                    MagicManaCost.RED)};
+                    MagicManaCost.create("{R}"))};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

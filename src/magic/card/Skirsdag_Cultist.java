@@ -11,6 +11,7 @@ import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicTargetAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostTapEvent;
@@ -26,7 +27,7 @@ public class Skirsdag_Cultist {
             new MagicCondition[]{
                 MagicCondition.CAN_TAP_CONDITION,
                 MagicCondition.ONE_CREATURE_CONDITION,
-                MagicManaCost.RED.getCondition()
+                MagicConditionFactory.ManaCost("{R}")
             },
             new MagicActivationHints(MagicTiming.Removal),
             "Exile") {
@@ -34,7 +35,7 @@ public class Skirsdag_Cultist {
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             final MagicPlayer player = source.getController();
             return new MagicEvent[]{
-                new MagicPayManaCostTapEvent(source,player,MagicManaCost.RED),
+                new MagicPayManaCostTapEvent(source,player,MagicManaCost.create("{R}")),
                 new MagicSacrificePermanentEvent(source,player,MagicTargetChoice.SACRIFICE_CREATURE)};
         }
         @Override

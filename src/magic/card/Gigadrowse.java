@@ -23,7 +23,7 @@ public class Gigadrowse {
                 cardOnStack,
                 new MagicKickerChoice(
                     MagicTargetChoice.NEG_TARGET_PERMANENT, 
-                    MagicManaCost.BLUE, 
+                    MagicManaCost.create("{U}"), 
                     true, 
                     true
                 ),

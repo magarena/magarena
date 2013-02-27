@@ -9,6 +9,7 @@ import magic.model.MagicPowerToughness;
 import magic.model.MagicSource;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -34,13 +35,13 @@ public class Imperious_Perfect {
     };    
     
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION, MagicManaCost.GREEN.getCondition()},
+            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION, MagicConditionFactory.ManaCost("{G}")},
             new MagicActivationHints(MagicTiming.Token),
             "Token") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{new MagicTapEvent(source), 
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.GREEN)};
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{G}"))};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

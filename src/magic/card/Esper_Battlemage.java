@@ -10,6 +10,7 @@ import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicPreventDamageAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostTapEvent;
@@ -21,7 +22,7 @@ public class Esper_Battlemage {
     public static final MagicPermanentActivation A =new MagicPermanentActivation(
         new MagicCondition[]{
             MagicCondition.CAN_TAP_CONDITION,
-            MagicManaCost.WHITE.getCondition()
+            MagicConditionFactory.ManaCost("{W}")
         },
         new MagicActivationHints(MagicTiming.Pump),
         "Prevent"
@@ -29,7 +30,7 @@ public class Esper_Battlemage {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.WHITE)};
+            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.create("{W}"))};
         }
 
         @Override
@@ -51,13 +52,13 @@ public class Esper_Battlemage {
     };
 
     public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
-            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.BLACK.getCondition()},
+            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicConditionFactory.ManaCost("{B}")},
             new MagicActivationHints(MagicTiming.Removal),
             "-1/-1") {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.BLACK)};
+            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.create("{B}"))};
         }
 
         @Override

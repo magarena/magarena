@@ -8,6 +8,7 @@ import magic.model.MagicSource;
 import magic.model.action.MagicRegenerateAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.condition.MagicSingleActivationCondition;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
@@ -19,7 +20,7 @@ import magic.model.event.MagicTiming;
 public class Corrupted_Harvester {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
-                MagicManaCost.BLACK.getCondition(),
+                MagicConditionFactory.ManaCost("{B}"),
                 MagicCondition.ONE_CREATURE_CONDITION,
                 MagicCondition.CAN_REGENERATE_CONDITION,
                 new MagicSingleActivationCondition()
@@ -29,7 +30,7 @@ public class Corrupted_Harvester {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                    new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.BLACK),
+                    new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{B}")),
                     new MagicSacrificePermanentEvent(
                     source,
                     source.getController(),

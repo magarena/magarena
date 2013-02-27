@@ -9,6 +9,7 @@ import magic.model.action.MagicCardOnStackAction;
 import magic.model.action.MagicCounterItemOnStackAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostSacrificeEvent;
@@ -19,13 +20,13 @@ import magic.model.stack.MagicCardOnStack;
 public class Glen_Elendra_Archmage {
 
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.BLUE.getCondition()},
+            new MagicCondition[]{MagicConditionFactory.ManaCost("{U}")},
             new MagicActivationHints(MagicTiming.Counter),
             "Counter") {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostSacrificeEvent(source,source.getController(),MagicManaCost.BLUE)};
+            return new MagicEvent[]{new MagicPayManaCostSacrificeEvent(source,source.getController(),MagicManaCost.create("{U}"))};
         }
 
         @Override

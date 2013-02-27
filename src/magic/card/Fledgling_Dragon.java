@@ -8,6 +8,7 @@ import magic.model.MagicPowerToughness;
 import magic.model.MagicSource;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -32,7 +33,7 @@ public class Fledgling_Dragon {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
                     MagicCondition.THRESHOLD_CONDITION,
-                    MagicManaCost.GREEN.getCondition()},
+                    MagicConditionFactory.ManaCost("{G}")},
             new MagicActivationHints(MagicTiming.Pump),
                 "Pump") {
 
@@ -41,7 +42,7 @@ public class Fledgling_Dragon {
             return new MagicEvent[]{new MagicPayManaCostEvent(
                     source,
                     source.getController(),
-                    MagicManaCost.GREEN)};
+                    MagicManaCost.create("{G}"))};
         }
 
         @Override

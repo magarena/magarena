@@ -10,6 +10,7 @@ import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicSetAbilityAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -19,14 +20,14 @@ import magic.model.target.MagicHasteTargetPicker;
 
 public class Crimson_Mage {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-        new MagicCondition[]{MagicManaCost.RED.getCondition()},
+        new MagicCondition[]{MagicConditionFactory.ManaCost("{R}")},
         new MagicActivationHints(MagicTiming.Pump,true),
         "Haste"
     ) {
         
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.RED)};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{R}"))};
         }
 
         @Override

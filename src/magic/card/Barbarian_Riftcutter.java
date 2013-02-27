@@ -9,6 +9,7 @@ import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostSacrificeEvent;
@@ -18,7 +19,7 @@ import magic.model.target.MagicDestroyTargetPicker;
 
 public class Barbarian_Riftcutter {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-        new MagicCondition[]{MagicManaCost.RED.getCondition()},
+        new MagicCondition[]{MagicConditionFactory.ManaCost("{R}")},
         new MagicActivationHints(MagicTiming.Removal),
         "Destroy"
 ) {
@@ -29,7 +30,7 @@ public class Barbarian_Riftcutter {
                 new MagicPayManaCostSacrificeEvent(
                     source,
                     source.getController(),
-                    MagicManaCost.RED
+                    MagicManaCost.create("{R}")
                 )
             };
         }

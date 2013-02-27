@@ -9,6 +9,7 @@ import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostSacrificeEvent;
@@ -18,13 +19,13 @@ import magic.model.target.MagicDestroyTargetPicker;
 
 public class Pus_Kami {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.BLACK.getCondition()},
+            new MagicCondition[]{MagicConditionFactory.ManaCost("{B}")},
             new MagicActivationHints(MagicTiming.Removal),
             "Destroy") {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostSacrificeEvent(source,source.getController(),MagicManaCost.BLACK)};
+            return new MagicEvent[]{new MagicPayManaCostSacrificeEvent(source,source.getController(),MagicManaCost.create("{B}"))};
         }
 
         @Override

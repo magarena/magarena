@@ -10,6 +10,7 @@ import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -22,14 +23,14 @@ public class Wickerbough_Elder {
     public static final MagicPermanentActivation A = new MagicPermanentActivation( 
             new MagicCondition[]{
                 MagicCondition.MINUS_COUNTER_CONDITION,
-                MagicManaCost.GREEN.getCondition()
+                MagicConditionFactory.ManaCost("{G}")
             },
             new MagicActivationHints(MagicTiming.Removal),
             "Destroy") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.GREEN),
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{G}")),
                 new MagicRemoveCounterEvent(source,MagicCounterType.MinusOne,1)
             };
         }

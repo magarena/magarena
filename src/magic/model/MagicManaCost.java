@@ -45,11 +45,6 @@ public class MagicManaCost {
     
     public static final MagicManaCost X=MagicManaCost.create("{X}");
     public static final MagicManaCost ZERO=MagicManaCost.create("{0}");
-    public static final MagicManaCost BLACK=MagicManaCost.create("{B}");
-    public static final MagicManaCost BLUE=MagicManaCost.create("{U}");
-    public static final MagicManaCost GREEN=MagicManaCost.create("{G}");
-    public static final MagicManaCost RED=MagicManaCost.create("{R}");
-    public static final MagicManaCost WHITE=MagicManaCost.create("{W}");
 
     private final String costText;
     private final int[] amounts;

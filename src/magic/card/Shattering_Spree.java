@@ -23,7 +23,7 @@ public class Shattering_Spree {
                 cardOnStack,
                 new MagicKickerChoice(
                     MagicTargetChoice.NEG_TARGET_ARTIFACT, 
-                    MagicManaCost.RED, 
+                    MagicManaCost.create("{R}"), 
                     true, 
                     true
                 ),

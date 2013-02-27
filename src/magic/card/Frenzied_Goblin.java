@@ -22,7 +22,7 @@ public class Frenzied_Goblin {
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        new MagicPayManaCostChoice(MagicManaCost.RED),
+                        new MagicPayManaCostChoice(MagicManaCost.create("{R}")),
                         MagicTargetChoice.NEG_TARGET_CREATURE
                     ),
                     new MagicNoCombatTargetPicker(false,true,false),

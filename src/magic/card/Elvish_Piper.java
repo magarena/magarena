@@ -12,6 +12,7 @@ import magic.model.action.MagicPlayCardAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -24,7 +25,7 @@ public class Elvish_Piper {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
         new MagicCondition[]{
             MagicCondition.CAN_TAP_CONDITION,
-            MagicManaCost.GREEN.getCondition()},
+            MagicConditionFactory.ManaCost("{G}")},
         new MagicActivationHints(MagicTiming.Token),
         "Token"
     ) {
@@ -33,7 +34,7 @@ public class Elvish_Piper {
             final MagicPermanent permanent = source;
             return new MagicEvent[]{
                 new MagicTapEvent(permanent),
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.GREEN)
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{G}"))
             };
         }
 

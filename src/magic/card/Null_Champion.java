@@ -35,7 +35,7 @@ public class Null_Champion {
             new MagicCondition[]{
                 MagicConditionFactory.ChargeCountersAtLeast(4),
                 MagicCondition.CAN_REGENERATE_CONDITION,
-                MagicManaCost.BLACK.getCondition()
+                MagicConditionFactory.ManaCost("{B}")
             },
             new MagicActivationHints(MagicTiming.Pump),
             "Regen") {
@@ -43,7 +43,7 @@ public class Null_Champion {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                    new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.BLACK)};
+                    new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{B}"))};
         }
 
         @Override

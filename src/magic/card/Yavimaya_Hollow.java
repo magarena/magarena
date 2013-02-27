@@ -9,6 +9,7 @@ import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicRegenerateAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostTapEvent;
@@ -20,7 +21,7 @@ public class Yavimaya_Hollow {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
                 MagicCondition.CAN_TAP_CONDITION,
-                MagicManaCost.GREEN.getCondition()
+                MagicConditionFactory.ManaCost("{G}")
             },
             new MagicActivationHints(MagicTiming.Pump,false),
             "Regen") {
@@ -28,7 +29,7 @@ public class Yavimaya_Hollow {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.GREEN)
+                new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.create("{G}"))
             };
         }
 

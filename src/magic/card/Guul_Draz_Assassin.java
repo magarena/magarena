@@ -39,7 +39,7 @@ public class Guul_Draz_Assassin {
             new MagicCondition[]{
                 MagicConditionFactory.ChargeCountersAtLeast(2),
                 MagicCondition.CAN_TAP_CONDITION,
-                MagicManaCost.BLACK.getCondition()
+                MagicConditionFactory.ManaCost("{B}")
             },
             new MagicActivationHints(MagicTiming.Removal),
             "Weaken") {
@@ -47,7 +47,7 @@ public class Guul_Draz_Assassin {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                    new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.BLACK)};
+                    new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.create("{B}"))};
         }
 
         @Override

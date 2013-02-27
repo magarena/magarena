@@ -28,7 +28,7 @@ public class Orim_s_Thunder {
                 cardOnStack,
                 new MagicKickerChoice(
                     MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_ENCHANTMENT,
-                    MagicManaCost.RED,
+                    MagicManaCost.create("{R}"),
                     false
                 ),
                 new MagicDestroyTargetPicker(false),

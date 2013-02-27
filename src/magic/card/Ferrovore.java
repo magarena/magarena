@@ -9,6 +9,7 @@ import magic.model.MagicSource;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -19,7 +20,7 @@ import magic.model.event.MagicTiming;
 public class Ferrovore {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
-                MagicManaCost.RED.getCondition(),
+                MagicConditionFactory.ManaCost("{R}"),
                 MagicCondition.ONE_CREATURE_CONDITION,
                 MagicCondition.CONTROL_ARTIFACT_CONDITION
             },
@@ -29,7 +30,7 @@ public class Ferrovore {
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             final MagicPlayer player = source.getController();
             return new MagicEvent[]{
-                    new MagicPayManaCostEvent(source,player,MagicManaCost.RED),
+                    new MagicPayManaCostEvent(source,player,MagicManaCost.create("{R}")),
                     new MagicSacrificePermanentEvent(
                     source,
                     player,

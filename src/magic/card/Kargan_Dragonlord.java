@@ -53,7 +53,7 @@ public class Kargan_Dragonlord {
     public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
             new MagicCondition[]{
                 MagicConditionFactory.ChargeCountersAtLeast(8),
-                MagicManaCost.RED.getCondition()
+                MagicConditionFactory.ManaCost("{R}")
             },
             new MagicActivationHints(MagicTiming.Pump),
             "+1/+0") {
@@ -61,7 +61,7 @@ public class Kargan_Dragonlord {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                    new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.RED)};
+                    new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{R}"))};
         }
 
         @Override

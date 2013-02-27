@@ -10,6 +10,7 @@ import magic.model.action.MagicAddStaticAction;
 import magic.model.action.MagicPlayAbilityAction;
 import magic.model.choice.MagicColorChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -21,7 +22,7 @@ import magic.model.mstatic.MagicStatic;
 
 public class Spiritmonger {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.GREEN.getCondition()},
+            new MagicCondition[]{MagicConditionFactory.ManaCost("{G}")},
             new MagicActivationHints(MagicTiming.Pump,false,1),
             "Color") {
         @Override
@@ -29,7 +30,7 @@ public class Spiritmonger {
             return new MagicEvent[]{
                 new MagicPayManaCostEvent(
                     source,source.getController(),
-                    MagicManaCost.GREEN
+                    MagicManaCost.create("{G}")
                 ),
                 new MagicPlayAbilityEvent(source)
             };

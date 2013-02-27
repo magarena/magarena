@@ -9,6 +9,7 @@ import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -21,7 +22,7 @@ public class Torch_Fiend {
 
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
-                MagicManaCost.RED.getCondition()
+                MagicConditionFactory.ManaCost("{R}")
             },
             new MagicActivationHints(MagicTiming.Removal),
             "Destroy") {
@@ -29,7 +30,7 @@ public class Torch_Fiend {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.RED),
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{R}")),
                 new MagicSacrificeEvent(source)
             };
         }

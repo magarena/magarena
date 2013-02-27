@@ -18,7 +18,7 @@ public class Drifter_il_Dal {
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        new MagicPayManaCostChoice(MagicManaCost.BLUE)
+                        new MagicPayManaCostChoice(MagicManaCost.create("{U}"))
                     ),
                     this,
                     "You may$ pay {U}$. If you don't, sacrifice SN.") :

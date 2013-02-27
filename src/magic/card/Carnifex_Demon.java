@@ -8,6 +8,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -23,14 +24,14 @@ public class Carnifex_Demon {
     public static final MagicPermanentActivation A = new MagicPermanentActivation( 
             new MagicCondition[]{
                 MagicCondition.MINUS_COUNTER_CONDITION,
-                MagicManaCost.BLACK.getCondition()
+                MagicConditionFactory.ManaCost("{B}")
             },
             new MagicActivationHints(MagicTiming.Removal),
             "-1/-1") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.BLACK),
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{B}")),
                 new MagicRemoveCounterEvent(source,MagicCounterType.MinusOne,1)};
         }
         @Override

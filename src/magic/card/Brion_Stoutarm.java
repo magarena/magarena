@@ -11,6 +11,7 @@ import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicPlayerAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostTapEvent;
@@ -24,7 +25,7 @@ import magic.model.target.MagicTargetHint;
 public class Brion_Stoutarm {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
-                MagicCondition.CAN_TAP_CONDITION,MagicManaCost.RED.getCondition(),
+                MagicCondition.CAN_TAP_CONDITION,MagicConditionFactory.ManaCost("{R}"),
                 MagicCondition.TWO_CREATURES_CONDITION
             },
             new MagicActivationHints(MagicTiming.Removal),
@@ -37,7 +38,7 @@ public class Brion_Stoutarm {
             final MagicTargetChoice targetChoice=new MagicTargetChoice(
                     targetFilter,false,MagicTargetHint.None,"a creature other than " + source + " to sacrifice");
             return new MagicEvent[]{
-                new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.RED),
+                new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.create("{R}")),
                 new MagicSacrificePermanentEvent(source,source.getController(),targetChoice)};
         }
 

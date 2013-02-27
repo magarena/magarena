@@ -10,6 +10,7 @@ import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.action.MagicBecomesCreatureAction;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -46,7 +47,7 @@ public class Skinshifter {
     public static final MagicPermanentActivation A1 = new MagicPermanentActivation(
             new MagicCondition[]{
                     MagicCondition.ABILITY_ONCE_CONDITION,
-                    MagicManaCost.GREEN.getCondition()},
+                    MagicConditionFactory.ManaCost("{G}")},
             new MagicActivationHints(MagicTiming.Animate,false,1),
             "Rhino") {
 
@@ -55,7 +56,7 @@ public class Skinshifter {
             return new MagicEvent[]{new MagicPayManaCostEvent(
                     source,
                     source.getController(),
-                    MagicManaCost.GREEN),
+                    MagicManaCost.create("{G}")),
                     new MagicPlayAbilityEvent(source)};
         }
 
@@ -102,7 +103,7 @@ public class Skinshifter {
     public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
             new MagicCondition[]{
                     MagicCondition.ABILITY_ONCE_CONDITION,
-                    MagicManaCost.GREEN.getCondition()},
+                    MagicConditionFactory.ManaCost("{G}")},
             new MagicActivationHints(MagicTiming.Animate,false,1),
             "Bird") {
 
@@ -111,7 +112,7 @@ public class Skinshifter {
             return new MagicEvent[]{new MagicPayManaCostEvent(
                     source,
                     source.getController(),
-                    MagicManaCost.GREEN),
+                    MagicManaCost.create("{G}")),
                     new MagicPlayAbilityEvent(source)};
         }
 
@@ -152,7 +153,7 @@ public class Skinshifter {
     public static final MagicPermanentActivation A3 = new MagicPermanentActivation(
             new MagicCondition[]{
                     MagicCondition.ABILITY_ONCE_CONDITION,
-                    MagicManaCost.GREEN.getCondition()},
+                    MagicConditionFactory.ManaCost("{G}")},
             new MagicActivationHints(MagicTiming.Animate,false,1),
             "Plant") {
 
@@ -161,7 +162,7 @@ public class Skinshifter {
             return new MagicEvent[]{new MagicPayManaCostEvent(
                     source,
                     source.getController(),
-                    MagicManaCost.GREEN),
+                    MagicManaCost.create("{G}")),
                     new MagicPlayAbilityEvent(source)};
         }
 
