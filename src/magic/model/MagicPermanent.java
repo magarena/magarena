@@ -457,9 +457,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return cardDefinition.getScore();
     }
     
-    void setCached(final boolean aCached) {
-    }
-    
     public int getDamage() {
         return damage;
     }

@@ -376,12 +376,6 @@ public class MagicPlayer implements MagicTarget {
         return count;
     }
     
-    public void setCached(final boolean cached) {
-        for (final MagicPermanent permanent : permanents) {
-            permanent.setCached(cached);
-        }
-    }
-    
     public void setBuilderCost(final MagicBuilderManaCost builderCost) {
         this.builderCost=builderCost;
     }
