@@ -8,6 +8,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicRegenerateAction;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostSacrificeEvent;
@@ -20,7 +21,7 @@ import java.util.Collection;
 
 public class Loxodon_Hierarch {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.GREEN_WHITE.getCondition()},
+            new MagicCondition[]{MagicConditionFactory.ManaCost("{G}{W}")},
             new MagicActivationHints(MagicTiming.Pump),
             "Regen") {
         @Override
@@ -28,7 +29,7 @@ public class Loxodon_Hierarch {
             return new MagicEvent[]{new MagicPayManaCostSacrificeEvent(
                     source,
                     source.getController(),
-                    MagicManaCost.GREEN_WHITE)};
+                    MagicManaCost.create("{G}{W}"))};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

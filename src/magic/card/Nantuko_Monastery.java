@@ -12,6 +12,7 @@ import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.action.MagicBecomesCreatureAction;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -56,13 +57,13 @@ public class Nantuko_Monastery {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
                     MagicCondition.THRESHOLD_CONDITION,
-                    MagicManaCost.GREEN_WHITE.getCondition(),
+                    MagicConditionFactory.ManaCost("{G}{W}"),
             },
             new MagicActivationHints(MagicTiming.Animate),
             "Animate") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.GREEN_WHITE)};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{G}{W}"))};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

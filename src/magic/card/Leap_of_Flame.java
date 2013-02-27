@@ -22,12 +22,13 @@ public class Leap_of_Flame {
                 final MagicCardOnStack cardOnStack,
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack,
-                    new MagicKickerChoice(MagicTargetChoice.POS_TARGET_PERMANENT, MagicManaCost.BLUE_RED, true, true),
-                    MagicFirstStrikeTargetPicker.create(),
-                    this,
-                    "Target creature$ gets +1/+0 and gains flying" +
-                    "and first strike until end of turn.");
+                cardOnStack,
+                new MagicKickerChoice(MagicTargetChoice.POS_TARGET_PERMANENT, MagicManaCost.create("{U}{R}"), true, true),
+                MagicFirstStrikeTargetPicker.create(),
+                this,
+                "Target creature$ gets +1/+0 and gains flying" +
+                "and first strike until end of turn."
+            );
         }
         @Override
         public void executeEvent(

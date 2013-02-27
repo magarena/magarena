@@ -12,6 +12,7 @@ import magic.model.action.MagicDrawAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostTapEvent;
@@ -47,7 +48,7 @@ public class Gwafa_Hazid__Profiteer {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
                     MagicCondition.CAN_TAP_CONDITION,
-                    MagicManaCost.WHITE_BLUE.getCondition()
+                    MagicConditionFactory.ManaCost("{W}{U}")
             },
             new MagicActivationHints(MagicTiming.Tapping),
             "Disable"
@@ -59,7 +60,7 @@ public class Gwafa_Hazid__Profiteer {
                 new MagicPayManaCostTapEvent(
                     source,
                     source.getController(),
-                    MagicManaCost.WHITE_BLUE
+                    MagicManaCost.create("{W}{U}")
                 )
             };
         }

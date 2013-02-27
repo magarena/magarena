@@ -57,7 +57,7 @@ public class Faerie_Conclave {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{new MagicArtificialCondition(
                 MagicConditionFactory.ManaCost("{1}{U}"),
-                MagicManaCost.BLUE_BLUE.getCondition())},
+                MagicConditionFactory.ManaCost("{U}{U}"))},
             new MagicActivationHints(MagicTiming.Animate),
             "Animate") {
         @Override

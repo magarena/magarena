@@ -57,7 +57,7 @@ public class Ghitu_Encampment {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{new MagicArtificialCondition(
                 MagicConditionFactory.ManaCost("{1}{R}"),
-                MagicManaCost.RED_RED.getCondition())},
+                MagicConditionFactory.ManaCost("{R}{R}"))},
             new MagicActivationHints(MagicTiming.Animate),
             "Animate") {
         @Override

@@ -11,6 +11,7 @@ import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicSetAbilityAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostTapEvent;
@@ -22,7 +23,7 @@ public class Slayers__Stronghold {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
                 MagicCondition.CAN_TAP_CONDITION,
-                MagicManaCost.RED_WHITE.getCondition()
+                MagicConditionFactory.ManaCost("{R}{W}")
             },
             new MagicActivationHints(MagicTiming.Pump),
             "Pump") {
@@ -33,7 +34,7 @@ public class Slayers__Stronghold {
                 new MagicPayManaCostTapEvent(
                     source,
                     source.getController(),
-                    MagicManaCost.RED_WHITE
+                    MagicManaCost.create("{R}{W}")
                 )
             };
         }

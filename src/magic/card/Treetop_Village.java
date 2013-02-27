@@ -57,7 +57,7 @@ public class Treetop_Village {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{new MagicArtificialCondition(
                 MagicConditionFactory.ManaCost("{1}{G}"),
-                MagicManaCost.GREEN_GREEN.getCondition())},
+                MagicConditionFactory.ManaCost("{G}{G}"))},
             new MagicActivationHints(MagicTiming.Animate),
             "Animate") {
         @Override

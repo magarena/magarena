@@ -50,7 +50,7 @@ public class Forbidding_Watchtower {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{new MagicArtificialCondition(
                 MagicConditionFactory.ManaCost("{1}{W}"),
-                MagicManaCost.WHITE_WHITE.getCondition())},
+                MagicConditionFactory.ManaCost("{W}{W}"))},
             new MagicActivationHints(MagicTiming.Animate),
             "Animate") {
         @Override

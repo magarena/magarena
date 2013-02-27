@@ -38,13 +38,13 @@ public class Echo_Mage {
     public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
             new MagicCondition[]{
                 MagicConditionFactory.ChargeCountersAtLeast(2),
-                MagicCondition.CAN_TAP_CONDITION,MagicManaCost.BLUE_BLUE.getCondition()},
+                MagicCondition.CAN_TAP_CONDITION,MagicConditionFactory.ManaCost("{U}{U}")},
             new MagicActivationHints(MagicTiming.Spell),
             "Copy") {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.BLUE_BLUE)};
+            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.create("{U}{U}"))};
         }
 
         @Override

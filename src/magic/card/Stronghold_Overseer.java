@@ -7,6 +7,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -20,7 +21,7 @@ import java.util.Collection;
 
 public class Stronghold_Overseer {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.BLACK_BLACK.getCondition()},
+            new MagicCondition[]{MagicConditionFactory.ManaCost("{B}{B}")},
             new MagicActivationHints(MagicTiming.Pump,false,1),
             "Pump") {
 
@@ -30,7 +31,7 @@ public class Stronghold_Overseer {
                     new MagicPayManaCostEvent(
                             source,
                             source.getController(),
-                            MagicManaCost.BLACK_BLACK),
+                            MagicManaCost.create("{B}{B}")),
                     new MagicPlayAbilityEvent(source)};
         }
 
