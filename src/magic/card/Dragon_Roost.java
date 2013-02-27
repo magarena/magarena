@@ -9,6 +9,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -17,13 +18,13 @@ import magic.model.event.MagicTiming;
 
 public class Dragon_Roost {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.FIVE_RED_RED.getCondition()},
+            new MagicCondition[]{MagicConditionFactory.ManaCost("{5}{R}{R}")},
             new MagicActivationHints(MagicTiming.Token),
             "Token") {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.FIVE_RED_RED)};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{5}{R}{R}"))};
         }
 
         @Override
