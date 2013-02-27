@@ -61,7 +61,6 @@ public class MagicManaCost {
     public static final MagicManaCost GREEN_GREEN=MagicManaCost.create("{G}{G}");
     public static final MagicManaCost ONE_RED=MagicManaCost.create("{1}{R}");
     public static final MagicManaCost RED_RED=MagicManaCost.create("{R}{R}");
-    public static final MagicManaCost ONE_RED_RED=MagicManaCost.create("{1}{R}{R}");
     public static final MagicManaCost ONE_WHITE=MagicManaCost.create("{1}{W}");
     public static final MagicManaCost WHITE_WHITE=MagicManaCost.create("{W}{W}");
     public static final MagicManaCost WHITE_BLUE=MagicManaCost.create("{W}{U}");
@@ -72,7 +71,6 @@ public class MagicManaCost {
     public static final MagicManaCost RED_OR_WHITE=MagicManaCost.create("{R/W}");
     public static final MagicManaCost RED_WHITE=MagicManaCost.create("{R}{W}");
     public static final MagicManaCost BLACK_OR_RED=MagicManaCost.create("{B/R}");
-    public static final MagicManaCost ONE_WHITE_OR_BLUE=MagicManaCost.create("{1}{W/U}");
     public static final MagicManaCost RED_GREEN=MagicManaCost.create("{R}{G}");
     public static final MagicManaCost WHITE_OR_BLACK=MagicManaCost.create("{W/B}");
     public static final MagicManaCost WHITE_OR_BLACK_WHITE_OR_BLACK=MagicManaCost.create("{W/B}{W/B}");
