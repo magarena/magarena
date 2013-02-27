@@ -11,6 +11,7 @@ import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicSetAbilityAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostTapEvent;
@@ -24,7 +25,7 @@ public class Kessig_Wolf_Run {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
                 MagicCondition.CAN_TAP_CONDITION,
-                MagicManaCost.X_RED_GREEN.getCondition()
+                MagicConditionFactory.ManaCost("{X}{R}{G}")
             },
             new MagicActivationHints(MagicTiming.Pump),
             "Pump") {
@@ -33,7 +34,7 @@ public class Kessig_Wolf_Run {
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicTapEvent(source),
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.X_RED_GREEN)
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{X}{R}{G}"))
             };
         }
 

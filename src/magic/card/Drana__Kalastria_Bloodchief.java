@@ -9,6 +9,7 @@ import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -18,13 +19,13 @@ import magic.model.target.MagicWeakenTargetPicker;
 
 public class Drana__Kalastria_Bloodchief {
     public static final MagicPermanentActivation A =new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.X_BLACK_BLACK.getCondition()},
+            new MagicCondition[]{MagicConditionFactory.ManaCost("{X}{B}{B}")},
             new MagicActivationHints(MagicTiming.Removal),
             "Pump") {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.X_BLACK_BLACK)};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{X}{B}{B}"))};
         }
 
         @Override

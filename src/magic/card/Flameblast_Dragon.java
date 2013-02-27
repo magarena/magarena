@@ -24,11 +24,11 @@ public class Flameblast_Dragon {
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        new MagicPayManaCostChoice(MagicManaCost.X_RED),
+                        new MagicPayManaCostChoice(MagicManaCost.create("{X}{R}")),
                         MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER
                     ), 
                     new MagicDamageTargetPicker(
-                        permanent.getController().getMaximumX(game,MagicManaCost.X_RED)
+                        permanent.getController().getMaximumX(game,MagicManaCost.create("{X}{R}"))
                     ),
                     this,
                     "You may pay$ {X}{R}$. If you do, SN " + 

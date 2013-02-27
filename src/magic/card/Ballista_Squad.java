@@ -10,6 +10,7 @@ import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicTargetAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostTapEvent;
@@ -22,7 +23,7 @@ public class Ballista_Squad {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
                 MagicCondition.CAN_TAP_CONDITION,
-                MagicManaCost.X_WHITE.getCondition()
+                MagicConditionFactory.ManaCost("{X}{W}")
             },
             new MagicActivationHints(MagicTiming.Removal),
             "Damage") {
@@ -33,7 +34,7 @@ public class Ballista_Squad {
                 new MagicPayManaCostTapEvent(
                     source,
                     source.getController(),
-                    MagicManaCost.X_WHITE
+                    MagicManaCost.create("{X}{W}")
                 )
             };
         }
