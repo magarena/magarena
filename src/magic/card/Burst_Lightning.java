@@ -19,12 +19,13 @@ public class Burst_Lightning {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack,
-                    new MagicKickerChoice(MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,MagicManaCost.FOUR,false),
-                    new MagicDamageTargetPicker(2),
-                    this,
-                    "SN deals 2 damage to target creature or player$. "+
-                    "If SN was kicked$, it deals 4 damage to that creature or player instead.");
+                cardOnStack,
+                new MagicKickerChoice(MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,MagicManaCost.create("{4}"),false),
+                new MagicDamageTargetPicker(2),
+                this,
+                "SN deals 2 damage to target creature or player$. "+
+                "If SN was kicked$, it deals 4 damage to that creature or player instead."
+            );
         }
         @Override
         public void executeEvent(

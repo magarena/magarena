@@ -23,8 +23,9 @@ public class Searing_Touch {
             return new MagicEvent(
                     cardOnStack,
                     new MagicBuybackChoice(
-                            MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
-                            MagicManaCost.FOUR),
+                        MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                        MagicManaCost.create("{4}")
+                    ),
                     new MagicDamageTargetPicker(1),
                     this,
                     "SN deals 1 damage to target creature or player$. " + 

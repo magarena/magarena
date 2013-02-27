@@ -17,12 +17,13 @@ public class Lab_Rats {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack,
-                    new MagicBuybackChoice(MagicManaCost.FOUR),
-                    this,
-                    "PN puts a 1/1 black Rat creature token onto the " +
-                    "battlefield. If the buyback cost was payed$, " +
-                    "return SN to its owner's hand as it resolves.");
+                cardOnStack,
+                new MagicBuybackChoice(MagicManaCost.create("{4}")),
+                this,
+                "PN puts a 1/1 black Rat creature token onto the " +
+                "battlefield. If the buyback cost was payed$, " +
+                "return SN to its owner's hand as it resolves."
+            );
         }
 
         @Override

@@ -12,6 +12,7 @@ import magic.model.action.MagicPlayCardAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -25,7 +26,8 @@ public class Quicksilver_Amulet {
     public static final MagicPermanentActivation A1 = new MagicPermanentActivation(
             new MagicCondition[]{
                 MagicCondition.CAN_TAP_CONDITION,
-                MagicManaCost.FOUR.getCondition()},
+                MagicConditionFactory.ManaCost("{4}")
+            },
             new MagicActivationHints(MagicTiming.Token),
             "Token") {
         @Override
@@ -33,7 +35,7 @@ public class Quicksilver_Amulet {
             final MagicPermanent permanent=source;
             return new MagicEvent[]{
                 new MagicTapEvent(permanent),
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.FOUR)
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{4}"))
             };
         }
 

@@ -13,6 +13,7 @@ import magic.model.action.MagicPlayTokenAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPermanentActivation;
@@ -26,22 +27,22 @@ import magic.model.target.MagicTargetFilter;
 
 public class Myr_Matrix {
     public static final MagicStatic S = new MagicStatic(
-            MagicLayer.ModPT, 
-            MagicTargetFilter.TARGET_MYR_CREATURE) {
-            @Override
-            public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
-                pt.add(1,1);
-            }
-        };
+        MagicLayer.ModPT, 
+        MagicTargetFilter.TARGET_MYR_CREATURE) {
+        @Override
+        public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
+            pt.add(1,1);
+        }
+    };
     
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.FIVE.getCondition()},
+            new MagicCondition[]{MagicConditionFactory.ManaCost("{5}")},
             new MagicActivationHints(MagicTiming.Token),
             "Token") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.FIVE)
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{5}"))
             };
         }
         @Override

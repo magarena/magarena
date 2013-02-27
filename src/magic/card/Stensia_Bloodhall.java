@@ -11,6 +11,7 @@ import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicPlayerAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -22,8 +23,8 @@ import magic.model.target.MagicDamageTargetPicker;
 public class Stensia_Bloodhall {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
-                    MagicManaCost.FOUR_BLACK_RED.getCondition(), //add ONE for the card itself
-                    MagicCondition.CAN_TAP_CONDITION
+                MagicConditionFactory.ManaCost("{4}{B}{R}"), //add ONE for the card itself
+                MagicCondition.CAN_TAP_CONDITION
             },
             new MagicActivationHints(MagicTiming.Removal),
             "Damage") {

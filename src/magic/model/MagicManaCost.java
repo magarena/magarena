@@ -54,8 +54,6 @@ public class MagicManaCost {
 
     public static final MagicManaCost TWO=MagicManaCost.create("{2}");
     public static final MagicManaCost THREE=MagicManaCost.create("{3}");
-    public static final MagicManaCost FOUR=MagicManaCost.create("{4}");
-    public static final MagicManaCost FIVE=MagicManaCost.create("{5}");
     public static final MagicManaCost EIGHT=MagicManaCost.create("{8}");
     public static final MagicManaCost NINE=MagicManaCost.create("{9}");
     public static final MagicManaCost ONE_BLUE=MagicManaCost.create("{1}{U}");
@@ -85,7 +83,6 @@ public class MagicManaCost {
     public static final MagicManaCost THREE_RED_WHITE=MagicManaCost.create("{3}{R}{W}");
     public static final MagicManaCost ONE_WHITE=MagicManaCost.create("{1}{W}");
     public static final MagicManaCost TWO_WHITE=MagicManaCost.create("{2}{W}");
-    public static final MagicManaCost SEVEN_WHITE=MagicManaCost.create("{7}{W}");
     public static final MagicManaCost WHITE_WHITE=MagicManaCost.create("{W}{W}");
     public static final MagicManaCost WHITE_BLUE=MagicManaCost.create("{W}{U}");
     public static final MagicManaCost ONE_WHITE_WHITE=MagicManaCost.create("{1}{W}{W}");
@@ -106,9 +103,6 @@ public class MagicManaCost {
     public static final MagicManaCost THREE_BLACK=MagicManaCost.create("{3}{B}");
     public static final MagicManaCost THREE_BLACK_BLACK=MagicManaCost.create("{3}{B}{B}");
     public static final MagicManaCost THREE_BLACK_RED=MagicManaCost.create("{3}{B}{R}");
-    public static final MagicManaCost FOUR_BLACK_RED=MagicManaCost.create("{4}{B}{R}");
-    public static final MagicManaCost FOUR_RED=MagicManaCost.create("{4}{R}");
-    public static final MagicManaCost FOUR_GREEN_WHITE=MagicManaCost.create("{4}{G}{W}");
     public static final MagicManaCost ONE_WHITE_BLACK=MagicManaCost.create("{1}{W}{B}");
     public static final MagicManaCost TWO_WHITE_BLACK=MagicManaCost.create("{2}{W}{B}");
     public static final MagicManaCost THREE_WHITE_BLACK=MagicManaCost.create("{3}{W}{B}");
