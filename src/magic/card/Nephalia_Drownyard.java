@@ -31,7 +31,7 @@ public class Nephalia_Drownyard {
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                     new MagicTapEvent(source),
-                    new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_BLUE_BLACK)};
+                    new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{1}{U}{B}"))};
         }
 
         @Override

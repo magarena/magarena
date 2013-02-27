@@ -9,6 +9,7 @@ import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -18,13 +19,15 @@ import magic.model.target.MagicPumpTargetPicker;
 
 public class Icatian_Priest {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-        new MagicCondition[]{MagicManaCost.ONE_WHITE_WHITE.getCondition()},
+        new MagicCondition[]{
+            MagicConditionFactory.ManaCost("{1}{W}{W}")
+        },
         new MagicActivationHints(MagicTiming.Pump,true),
         "Pump"
     ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_WHITE_WHITE)};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{1}{W}{W}"))};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

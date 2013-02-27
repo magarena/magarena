@@ -8,6 +8,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicDrawAction;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicDiscardEvent;
 import magic.model.event.MagicEvent;
@@ -19,7 +20,7 @@ public class Desolate_Lighthouse {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[] {
                     MagicCondition.CAN_TAP_CONDITION,
-                    MagicManaCost.ONE_BLUE_RED.getCondition()
+                    MagicConditionFactory.ManaCost("{1}{U}{R}")
             },
             new MagicActivationHints(MagicTiming.Draw),
             "Draw") {
@@ -30,7 +31,7 @@ public class Desolate_Lighthouse {
                 new MagicPayManaCostTapEvent(
                     source,
                     source.getController(),
-                    MagicManaCost.ONE_BLUE_RED
+                    MagicManaCost.create("{1}{U}{R}")
                 )
             };
         }

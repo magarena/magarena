@@ -9,6 +9,7 @@ import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.condition.MagicSingleActivationCondition;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
@@ -20,7 +21,10 @@ import magic.model.target.MagicDestroyTargetPicker;
 
 public class Ethersworn_Adjudicator {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-        new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.ONE_WHITE_BLACK.getCondition()},
+        new MagicCondition[]{
+            MagicCondition.CAN_TAP_CONDITION,
+            MagicConditionFactory.ManaCost("{1}{W}{B}")
+        },
         new MagicActivationHints(MagicTiming.Removal),
         "Destroy"
     ) {
@@ -30,7 +34,7 @@ public class Ethersworn_Adjudicator {
                 new MagicPayManaCostTapEvent(
                     source,
                     source.getController(),
-                    MagicManaCost.ONE_WHITE_BLACK
+                    MagicManaCost.create("{1}{W}{B}")
                 )
             };
         }
