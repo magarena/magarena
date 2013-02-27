@@ -15,6 +15,7 @@ import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.choice.MagicPayManaCostResult;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -30,18 +31,20 @@ import java.util.Collection;
 public class Rise_of_the_Hobgoblins {
 
     public static final MagicPermanentActivation A1 = new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.RED_OR_WHITE.getCondition()},
+            new MagicCondition[]{MagicConditionFactory.ManaCost("{R/W}")},
             new MagicActivationHints(MagicTiming.Block,true,1),
             "First strike") {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                    new MagicPayManaCostEvent(
-                        source,
-                        source.getController(),
-                        MagicManaCost.RED_OR_WHITE),
-                    new MagicPlayAbilityEvent(source)};
+                new MagicPayManaCostEvent(
+                    source,
+                    source.getController(),
+                    MagicManaCost.create("{R/W}")
+                ),
+                new MagicPlayAbilityEvent(source)
+            };
         }
 
         @Override

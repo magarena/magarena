@@ -28,7 +28,7 @@ public class MagicExtortTrigger extends MagicWhenOtherSpellIsCastTrigger {
             new MagicEvent(
                 permanent,
                 new MagicMayChoice(
-                    new MagicPayManaCostChoice(MagicManaCost.WHITE_OR_BLACK)
+                    new MagicPayManaCostChoice(MagicManaCost.create("{W/B}"))
                 ),
                 this,
                 "You may$ pay {W/B}. If you do, each opponent loses 1 life and you gain that much life."

@@ -51,10 +51,6 @@ public class MagicManaCost {
     public static final MagicManaCost RED=MagicManaCost.create("{R}");
     public static final MagicManaCost WHITE=MagicManaCost.create("{W}");
 
-    public static final MagicManaCost RED_OR_WHITE=MagicManaCost.create("{R/W}");
-    public static final MagicManaCost BLACK_OR_RED=MagicManaCost.create("{B/R}");
-    public static final MagicManaCost WHITE_OR_BLACK=MagicManaCost.create("{W/B}");
-
     private final String costText;
     private final int[] amounts;
     private final int converted;
