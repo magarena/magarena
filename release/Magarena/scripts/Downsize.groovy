@@ -24,14 +24,14 @@
     },
     new MagicCardActivation(
         [
-            MagicManaCost.TWO_BLUE.getCondition()
+            MagicConditionFactory.ManaCost("{2}{U}")
         ],
         new MagicActivationHints(MagicTiming.Removal,true),
         "Overload"
     ) {
         public MagicEvent[] getCostEvent(final MagicCard source) {
             return [
-                new MagicPayManaCostEvent(source, source.getController(), MagicManaCost.TWO_BLUE)
+                new MagicPayManaCostEvent(source, source.getController(), MagicManaCost.create("{2}{U}"))
             ];
         }
         @Override

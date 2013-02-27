@@ -1,13 +1,13 @@
 [
     new MagicPermanentActivation(
-        [MagicManaCost.TWO_BLACK_RED.getCondition()],
+        [MagicConditionFactory.ManaCost("{2}{B}{R}")],
         new MagicActivationHints(MagicTiming.Removal),
         "Damage") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             final MagicPermanent permanent=source;
             return [
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_BLACK_RED),
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{2}{B}{R}")),
                 new MagicSacrificeEvent(permanent)
             ];
         }

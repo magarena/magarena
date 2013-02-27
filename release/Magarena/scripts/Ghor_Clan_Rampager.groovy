@@ -1,6 +1,6 @@
 [
     new MagicBloodrushActivation(
-        MagicManaCost.RED_GREEN,
+        MagicManaCost.create("{R}{G}"),
         "Target attacking creature\$ gets +4/+4 and gains trample until end of turn.") {
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {

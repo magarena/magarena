@@ -1,13 +1,13 @@
 [
     new MagicPermanentActivation(
         [
-            MagicManaCost.FOUR_GREEN_WHITE.getCondition(),
+            MagicConditionFactory.ManaCost("{4}{G}{W}"),
         ],
         new MagicActivationHints(MagicTiming.Flash),
         "Token") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return [new MagicPayManaCostEvent(source, source.getController(), MagicManaCost.FOUR_GREEN_WHITE)];
+            return [new MagicPayManaCostEvent(source, source.getController(), MagicManaCost.create("{4}{G}{W}"))];
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
@@ -27,13 +27,13 @@
     },
     new MagicPermanentActivation(
         [
-            MagicManaCost.TWO_GREEN_WHITE.getCondition(),
+            MagicConditionFactory.ManaCost("{2}{G}{W}"),
         ],
         new MagicActivationHints(MagicTiming.Flash),
         "Populate") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return [new MagicPayManaCostEvent(source, source.getController(), MagicManaCost.TWO_GREEN_WHITE)];
+            return [new MagicPayManaCostEvent(source, source.getController(), MagicManaCost.create("{2}{G}{W}"))];
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

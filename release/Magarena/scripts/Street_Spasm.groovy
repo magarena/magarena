@@ -27,14 +27,14 @@
     },
     new MagicCardActivation(
         [
-            MagicManaCost.X_X_RED_RED.getCondition()
+            MagicConditionFactory.ManaCost("{X}{X}{R}{R}")
         ],
         new MagicActivationHints(MagicTiming.Tapping,true),
         "Overload"
     ) {
         public MagicEvent[] getCostEvent(final MagicCard source) {
             return [
-                new MagicPayManaCostEvent(source, source.getController(), MagicManaCost.X_X_RED_RED)
+                new MagicPayManaCostEvent(source, source.getController(), MagicManaCost.create("{X}{X}{R}{R}"))
             ];
         }
         @Override

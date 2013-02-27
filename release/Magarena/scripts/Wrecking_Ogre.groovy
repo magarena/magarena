@@ -1,6 +1,6 @@
 [
     new MagicBloodrushActivation(
-        MagicManaCost.THREE_RED_RED,
+        MagicManaCost.create("{3}{R}{R}"),
         "Target attacking creature\$ gets +3/+3 and gains double strike until end of turn.") {
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {

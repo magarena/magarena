@@ -1,6 +1,6 @@
 [
     new MagicBloodrushActivation(
-        MagicManaCost.GREEN,
+        MagicManaCost.create("{G}"),
         "Target attacking creature\$ gets +1/+2 and gains deathtouch until end of turn.") {
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {

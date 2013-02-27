@@ -7,7 +7,7 @@
         }
     },
     new MagicBloodrushActivation(
-        MagicManaCost.ONE_RED_GREEN,
+        MagicManaCost.create("{1}{R}{G}"),
         "Target attacking creature\$ gets +X/+X until end of turn, where X is the number of lands you control.") {
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {

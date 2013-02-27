@@ -2,7 +2,7 @@
     new MagicPermanentActivation(
         [
             MagicCondition.CAN_TAP_CONDITION,
-            MagicManaCost.ONE_RED.getCondition()
+            MagicConditionFactory.ManaCost("{1}{R}")
         ],
         new MagicActivationHints(MagicTiming.Token),
         "Token"
@@ -11,7 +11,7 @@
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             [
                 new MagicTapEvent(source),
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_RED)
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{1}{R}"))
             ];
         }
         @Override

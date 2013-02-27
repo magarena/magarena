@@ -3,14 +3,14 @@ new MagicPermanentActivation(
     [
         MagicCondition.TAPPED_CONDITION,
         MagicCondition.YOUR_UPKEEP_CONDITION,
-        MagicManaCost.NINE.getCondition(),
+        MagicConditionFactory.ManaCost("{9}"),
         new MagicSingleActivationCondition()
     ],
     new MagicActivationHints(MagicTiming.Tapping),
     "Untap") {
     @Override
     public MagicEvent[] getCostEvent(final MagicPermanent source) {
-        return [new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.NINE)];
+        return [new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{9}")];
     }
     @Override
     public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

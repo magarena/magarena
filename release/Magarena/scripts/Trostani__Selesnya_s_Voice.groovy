@@ -26,14 +26,14 @@
     },
     new MagicPermanentActivation(
         [
-            MagicManaCost.ONE_GREEN_WHITE.getCondition(),
+            MagicConditionFactory.ManaCost("{1}{G}{W}"),
             MagicCondition.CAN_TAP_CONDITION
         ],
         new MagicActivationHints(MagicTiming.Flash),
         "Populate") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return [new MagicPayManaCostTapEvent(source, source.getController(), MagicManaCost.ONE_GREEN_WHITE)];
+            return [new MagicPayManaCostTapEvent(source, source.getController(), MagicManaCost.create("{1}{G}{W}"))];
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

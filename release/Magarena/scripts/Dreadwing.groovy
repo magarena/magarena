@@ -1,13 +1,13 @@
 [
 new MagicPermanentActivation(
     [
-        MagicManaCost.ONE_BLUE_RED.getCondition()
+        MagicConditionFactory.ManaCost("{1}{U}{R}")
     ],
     new MagicActivationHints(MagicTiming.Pump),
     "Pump") {
     @Override
     public MagicEvent[] getCostEvent(final MagicPermanent source) {
-        return [new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_BLUE_RED)];
+        return [new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{1}{U}{R}"))];
     }
     @Override
     public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

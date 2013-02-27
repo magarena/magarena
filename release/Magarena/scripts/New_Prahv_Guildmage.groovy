@@ -1,13 +1,13 @@
 [
     new MagicPermanentActivation(
-        [MagicManaCost.WHITE_BLUE.getCondition()],
+        [MagicConditionFactory.ManaCost("{W}{U}")],
         new MagicActivationHints(MagicTiming.Pump,true),
         "Flying"
     ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return [new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.WHITE_BLUE)];
+            return [new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{W}{U}"))];
         }
 
         @Override
@@ -34,14 +34,14 @@
         }
     },
     new MagicPermanentActivation(
-        [MagicManaCost.THREE_WHITE_BLUE.getCondition()],
+        [MagicConditionFactory.ManaCost("{3}{W}{U}")],
         new MagicActivationHints(MagicTiming.FirstMain,true),
         "Detain"
     ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return [new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.THREE_WHITE_BLUE)];
+            return [new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{3}{W}{U}"))];
         }
 
         @Override
