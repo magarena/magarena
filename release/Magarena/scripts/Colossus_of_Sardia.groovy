@@ -10,7 +10,7 @@ new MagicPermanentActivation(
     "Untap") {
     @Override
     public MagicEvent[] getCostEvent(final MagicPermanent source) {
-        return [new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{9}")];
+        return [new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{9}"))];
     }
     @Override
     public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

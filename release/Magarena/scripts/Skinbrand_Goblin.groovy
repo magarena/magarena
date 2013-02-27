@@ -1,6 +1,6 @@
 [
     new MagicBloodrushActivation(
-        MagicConditionFactory.ManaCost("{R}"),
+        MagicManaCost.create("{R}"),
         "Target attacking creature\$ gets +2/+1 until end of turn.") {
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
