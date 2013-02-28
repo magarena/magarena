@@ -40,7 +40,7 @@ public class MagicRedirectDamageEvent extends MagicEvent {
                     });
                 } else {
                     final MagicDamage damage = new MagicDamage(event.getSource(), event.getRefPlayer(), amount, isCombat);
-                    game.doAction(new MagicDealDamageAction(damage, damage.getTarget()));
+                    game.doAction(MagicDealDamageAction.NoRedirect(damage));
                 }
             }
         };

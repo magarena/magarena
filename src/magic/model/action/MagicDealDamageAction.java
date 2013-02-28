@@ -24,12 +24,16 @@ public class MagicDealDamageAction extends MagicAction {
     private int oldPrevent = UNINIT;
     
     public MagicDealDamageAction(final MagicDamage damage) {
-        this.damage=damage;
+        this(damage, null);
+    }
+
+    public static final MagicDealDamageAction NoRedirect(final MagicDamage damage) {
+        return new MagicDealDamageAction(damage, damage.getTarget());
     }
     
-    public MagicDealDamageAction(final MagicDamage damage, final MagicTarget target) {
-        this.damage=damage;
-        this.target=target;
+    private MagicDealDamageAction(final MagicDamage aDamage, final MagicTarget aTarget) {
+        damage = aDamage;
+        target = aTarget;
     }
 
     private int preventDamage(final MagicGame game,int amount) {
