@@ -1,6 +1,7 @@
 name=Teleportal
-url=http://magiccards.info/rtr/en/111.html
-image=http://magiccards.info/scans/en/rtr/111.jpg
+url=http://magiccards.info/rtr/en/202.html
+image=http://magiccards.info/scans/en/rtr/202.jpg
+ignore=108026
 value=3.523
 rarity=U
 type=Sorcery
