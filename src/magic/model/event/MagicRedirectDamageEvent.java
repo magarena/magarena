@@ -17,13 +17,14 @@ public class MagicRedirectDamageEvent extends MagicEvent {
                 "Redirect " + damage.getAmount() + " damage to a planeswalker?",
                 MagicTargetChoice.PLANESWALKER_YOUR_OPPONENT_CONTROLS
             ),
-            EventAction(damage),
+            damage.getTarget(),
+            EventAction(damage.getAmount(), damage.isCombat()),
             "PN may$ redirect " + damage.getAmount() + 
             " damage to a planeswalker$ your opponent controls."
         );
     }
 
-    private static final MagicEventAction EventAction(final MagicDamage damage) {
+    private static final MagicEventAction EventAction(final int amount, final boolean isCombat) {
         return new MagicEventAction() {
             @Override
             public void executeEvent(
@@ -33,11 +34,12 @@ public class MagicRedirectDamageEvent extends MagicEvent {
                 if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                     event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
                         public void doAction(final MagicPermanent planeswalker) {
-                            damage.setTarget(planeswalker);
-                            game.doAction(new MagicDealDamageAction(damage, planeswalker));
+                            final MagicDamage damage = new MagicDamage(event.getSource(), planeswalker, amount, isCombat);
+                            game.doAction(new MagicDealDamageAction(damage));
                         }
                     });
                 } else {
+                    final MagicDamage damage = new MagicDamage(event.getSource(), event.getRefPlayer(), amount, isCombat);
                     game.doAction(new MagicDealDamageAction(damage, damage.getTarget()));
                 }
             }
