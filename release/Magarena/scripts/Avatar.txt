@@ -1,0 +1,9 @@
+name=Avatar
+token=Avatar
+image=http://magiccards.info/extras/token/magic-2011/avatar.jpg
+value=4
+type=Creature
+subtype=Avatar
+color=w
+cost={0}
+requires_groovy_code
