@@ -9,16 +9,19 @@ import magic.model.action.MagicPlayCardAction;
 import magic.model.action.MagicReanimateAction;
 import magic.model.event.MagicEvent;
 
-public class MagicPersistTrigger extends MagicWhenPutIntoGraveyardTrigger {
+public class MagicPersistTrigger extends MagicWhenDiesTrigger {
 
     private static final MagicPersistTrigger INSTANCE = new MagicPersistTrigger();
 
     private MagicPersistTrigger() {}
     
+    public static final MagicPersistTrigger create() {    
+        return INSTANCE;
+    }
+    
     @Override
-    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
-        return (triggerData.fromLocation==MagicLocationType.Play && 
-                permanent.getCounters(MagicCounterType.MinusOne)==0) ?
+    public MagicEvent getEvent(final MagicPermanent permanent) {
+        return permanent.getCounters(MagicCounterType.MinusOne) == 0 ?
             new MagicEvent(
                 permanent,
                 this,
@@ -31,9 +34,5 @@ public class MagicPersistTrigger extends MagicWhenPutIntoGraveyardTrigger {
     public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
         final MagicCard card = event.getPermanent().getCard();
         game.doAction(new MagicReanimateAction(card.getOwner(),card,MagicPlayCardAction.PERSIST));
-    }
-    
-    public static final MagicPersistTrigger getInstance() {    
-        return INSTANCE;
     }
 }

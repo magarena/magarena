@@ -9,19 +9,19 @@ import magic.model.action.MagicPlayCardAction;
 import magic.model.action.MagicReanimateAction;
 import magic.model.event.MagicEvent;
 
-public class MagicUndyingTrigger extends MagicWhenPutIntoGraveyardTrigger {
+public class MagicUndyingTrigger extends MagicWhenDiesTrigger {
 
     private static final MagicUndyingTrigger INSTANCE = new MagicUndyingTrigger();
 
     private MagicUndyingTrigger() {}
     
+    public static final MagicUndyingTrigger create() {    
+        return INSTANCE;
+    }
+    
     @Override
-    public MagicEvent executeTrigger(
-            final MagicGame game,
-            final MagicPermanent permanent,
-            final MagicGraveyardTriggerData triggerData) {
-        return (triggerData.fromLocation == MagicLocationType.Play &&
-                permanent.getCounters(MagicCounterType.PlusOne) == 0) ?
+    public MagicEvent getEvent(final MagicPermanent permanent) {
+        return permanent.getCounters(MagicCounterType.PlusOne) == 0 ?
             new MagicEvent(
                 permanent,
                 this,
@@ -42,9 +42,5 @@ public class MagicUndyingTrigger extends MagicWhenPutIntoGraveyardTrigger {
             card,
             MagicPlayCardAction.UNDYING
         ));
-    }
-    
-    public static final MagicUndyingTrigger getInstance() {    
-        return INSTANCE;
     }
 }

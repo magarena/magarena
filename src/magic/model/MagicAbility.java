@@ -69,6 +69,8 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
 import magic.model.trigger.MagicExtortTrigger;
 import magic.model.trigger.MagicUnleashTrigger;
+import magic.model.trigger.MagicUndyingTrigger;
+import magic.model.trigger.MagicPersistTrigger;
 
 import java.util.EnumSet;
 import java.util.Set;
@@ -110,7 +112,6 @@ public enum MagicAbility {
     Haste("haste",0),
     LifeLink("lifelink",40),
     Mountainwalk("mountainwalk",10),
-    Persist("persist",60),
     PlainsWalk("plainswalk",10),
     ProtectionFromBlack("protection from black",20),
     ProtectionFromBlue("protection from blue",20),
@@ -136,9 +137,20 @@ public enum MagicAbility {
     TotemArmor("totem armor",0),
     Intimidate("intimidate",45),
     Infect("infect",35),
-    Undying("undying",60),
     Soulbond("soulbond",30),
     
+    Undying("undying",60) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+            card.add(MagicUndyingTrigger.create());
+        }
+    },
+    Persist("persist",60) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+            card.add(MagicPersistTrigger.create());
+        }
+    },
     Modular("modular", 10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             final int n = Integer.parseInt(arg);
