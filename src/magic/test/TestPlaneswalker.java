@@ -1,6 +1,7 @@
-
 package magic.test;
 
+import magic.ai.MagicAI;
+import magic.ai.MagicAIImpl;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
@@ -33,14 +34,18 @@ class TestPlaneswalker extends TestGameBuilder {
         addToHand(P, "Elspeth, Knight-Errant", 1);
         addToHand(P, "Gideon, Champion of Justice", 1);
         addToHand(P, "Jace Beleren", 1);
+        addToHand(P, "Ajani Goldmane", 1);
+        addToHand(P, "Ajani Vengeant", 1);
         addToHand(P, "Dreadbore", 1);
         addToHand(P, "Lightning Bolt", 1);
+        addToHand(P, "Blight Mamba", 1);
 
         P = opponent;
         
         P.setLife(10);
         addToLibrary(P, "Plains", 10);
         createPermanent(game,P,"Rupture Spire",false,8);
+        //createPermanent(game,P,"Baneslayer Angel",false,2);
         addToHand(P, "Garruk, Primal Hunter", 1);
         addToHand(P, "Grizzly Bears", 1);
         addToHand(P, "Mirri, Cat Warrior", 1);
