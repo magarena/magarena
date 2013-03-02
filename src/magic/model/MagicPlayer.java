@@ -57,6 +57,7 @@ public class MagicPlayer implements MagicTarget {
     private int preventDamage;
     private int extraTurns;
     private int drawnCards;
+    private int maxHandSize;
     private final MagicCardList hand;
     private final MagicCardList library;
     private final MagicCardList graveyard;
@@ -98,6 +99,7 @@ public class MagicPlayer implements MagicTarget {
         preventDamage=sourcePlayer.preventDamage;
         extraTurns=sourcePlayer.extraTurns;
         drawnCards=sourcePlayer.drawnCards;
+        maxHandSize=sourcePlayer.maxHandSize;
         hand=new MagicCardList(copyMap, sourcePlayer.hand);
         library=new MagicCardList(copyMap, sourcePlayer.library);
         graveyard=new MagicCardList(copyMap, sourcePlayer.graveyard);
@@ -135,6 +137,8 @@ public class MagicPlayer implements MagicTarget {
             stateFlags,
             preventDamage,
             extraTurns,
+            drawnCards,
+            maxHandSize,
             hand.getSortedCardsId(),
             library.getCardsId(),
             graveyard.getCardsId(),
@@ -236,6 +240,14 @@ public class MagicPlayer implements MagicTarget {
         
     public int getHandSize() {
         return hand.size();
+    }
+    
+    public boolean handSizeExceedMax() {
+        return getHandSize() > maxHandSize;
+    }
+    
+    public void noMaxHandSize() {
+        maxHandSize = Integer.MAX_VALUE;
     }
     
     public MagicCardList getHand() {
@@ -572,6 +584,7 @@ public class MagicPlayer implements MagicTarget {
             case Player:
                 cachedAbilityFlags = MagicAbility.noneOf();
                 stateFlags = 0;
+                maxHandSize = 7;
                 break;
             default:
                 throw new RuntimeException("No case for " + layer + " in MagicPlayer.apply");

@@ -34,7 +34,7 @@ public class MagicCleanupPhase extends MagicPhase {
     private static void nextTurn(final MagicGame game) {
         MagicPlayer turnPlayer=game.getTurnPlayer();
         // discard down to 7 cards
-        if (turnPlayer.getHandSize() > 7) {
+        if (turnPlayer.handSizeExceedMax()) {
             final int amount = turnPlayer.getHandSize() - 7;
             game.addEvent(new MagicDiscardEvent(MagicEvent.NO_SOURCE,turnPlayer,amount,false));
         }
