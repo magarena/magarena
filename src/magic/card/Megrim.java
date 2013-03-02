@@ -12,7 +12,7 @@ import magic.model.trigger.MagicWhenDiscardedTrigger;
 public class Megrim {
     public static final MagicWhenDiscardedTrigger T = new MagicWhenDiscardedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard card) {
+        public MagicEvent getEvent(final MagicPermanent permanent,final MagicCard card) {
             return permanent.isEnemy(card) ?
                 new MagicEvent(
                     permanent,

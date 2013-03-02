@@ -11,7 +11,7 @@ import magic.model.trigger.MagicWhenDiscardedTrigger;
 public class Liliana_s_Caress {
     public static final MagicWhenDiscardedTrigger T = new MagicWhenDiscardedTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard card) {
+        public MagicEvent getEvent(final MagicPermanent permanent,final MagicCard card) {
             final MagicPlayer otherController = card.getOwner();
             final MagicPlayer player = permanent.getController();
             return (otherController != player) ?

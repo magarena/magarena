@@ -82,11 +82,6 @@ public class MagicMoveCardAction extends MagicAction {
             }
 
             game.executeTrigger(MagicTriggerType.WhenOtherPutIntoGraveyard, new MagicGraveyardTriggerData(card,fromLocation));
-            
-            // Discard.
-            if (fromLocation == MagicLocationType.OwnersHand) {
-                game.executeTrigger(MagicTriggerType.WhenDiscarded,card);
-            }
         }
         
         game.setStateCheckRequired();

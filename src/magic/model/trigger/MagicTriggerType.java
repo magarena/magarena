@@ -9,7 +9,6 @@ public enum MagicTriggerType {
     WhenComesIntoPlay,      // controller
     WhenLeavesPlay,         // permanent
     WhenBecomesTapped,      // permanent
-    WhenDiscarded,          // card
     WhenDrawn,              // card
     WhenOtherDrawn,         // card
     WhenLifeIsGained,       // player, life gained
