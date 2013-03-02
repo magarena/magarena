@@ -19,7 +19,7 @@
                 final Object[] choiceResults) {
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
-                    final MagicDamage damage=new MagicDamage(event.getSource(),target,event.getRefInt(),false);
+                    final MagicDamage damage=new MagicDamage(event.getSource(),target,event.getRefInt());
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });
@@ -55,7 +55,7 @@
             final Collection<MagicPermanent> targets=
                 game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING_YOUR_OPPONENT_CONTROLS);
             for (final MagicPermanent target : targets) {
-                final MagicDamage damage=new MagicDamage(event.getSource(),target,event.getRefInt(),false);
+                final MagicDamage damage=new MagicDamage(event.getSource(),target,event.getRefInt());
                 game.doAction(new MagicDealDamageAction(damage));
             }
         }

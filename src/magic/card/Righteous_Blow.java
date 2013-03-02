@@ -31,10 +31,10 @@ public class Righteous_Blow {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     final MagicDamage damage = new MagicDamage(
-                            event.getSource(),
-                            creature,
-                            2,
-                            false);
+                        event.getSource(),
+                        creature,
+                        2
+                    );
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });

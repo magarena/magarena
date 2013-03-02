@@ -42,8 +42,7 @@ public class Kessig_Malcontents {
                     final MagicDamage damage = new MagicDamage(
                         event.getSource(),
                         player,
-                        amount,
-                        false
+                        amount
                     );
                     game.doAction(new MagicDealDamageAction(damage));
                 }

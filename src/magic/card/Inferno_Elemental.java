@@ -58,10 +58,10 @@ public class Inferno_Elemental {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicDamage damage = new MagicDamage(
-                    event.getPermanent(),
-                    event.getRefPermanent(),
-                    3,
-                    false);
+                event.getPermanent(),
+                event.getRefPermanent(),
+                3
+            );
             game.doAction(new MagicDealDamageAction(damage));
         }
     };

@@ -50,8 +50,8 @@ public class Goblin_Bombardment {
                     final MagicDamage damage = new MagicDamage(
                         event.getSource(), 
                         target, 
-                        1, 
-                        false);
+                        1 
+                    );
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });

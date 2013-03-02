@@ -38,10 +38,10 @@ public class Zealot_il_Vec {
                     public void doAction(final MagicPermanent creature) {
                         final MagicPermanent permanent = event.getPermanent();
                         final MagicDamage damage = new MagicDamage(
-                                permanent,
-                                creature,
-                                1,
-                                false);
+                            permanent,
+                            creature,
+                            1
+                        );
                         game.doAction(new MagicDealDamageAction(damage));
                         game.doAction(new MagicChangeStateAction(
                                 permanent,

@@ -38,10 +38,10 @@ public class Farrel_s_Zealot {
                     public void doAction(final MagicPermanent creature) {
                         final MagicPermanent permanent = event.getPermanent();
                         final MagicDamage damage = new MagicDamage(
-                                permanent,
-                                creature,
-                                3,
-                                false);
+                            permanent,
+                            creature,
+                            3
+                        );
                         game.doAction(new MagicDealDamageAction(damage));
                         game.doAction(new MagicChangeStateAction(
                                 permanent,

@@ -34,12 +34,16 @@ public class MagicRedirectDamageEvent extends MagicEvent {
                 if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                     event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
                         public void doAction(final MagicPermanent planeswalker) {
-                            final MagicDamage damage = new MagicDamage(event.getSource(), planeswalker, amount, isCombat);
+                            final MagicDamage damage = isCombat ?
+                                MagicDamage.Combat(event.getSource(), planeswalker, amount) :
+                                new MagicDamage(event.getSource(), planeswalker, amount);
                             game.doAction(new MagicDealDamageAction(damage));
                         }
                     });
                 } else {
-                    final MagicDamage damage = new MagicDamage(event.getSource(), event.getRefPlayer(), amount, isCombat);
+                    final MagicDamage damage = isCombat ?
+                        MagicDamage.Combat(event.getSource(), event.getRefPlayer(), amount) :
+                        new MagicDamage(event.getSource(), event.getRefPlayer(), amount);
                     game.doAction(MagicDealDamageAction.NoRedirect(damage));
                 }
             }

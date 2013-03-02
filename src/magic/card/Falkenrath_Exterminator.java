@@ -54,10 +54,10 @@ public class Falkenrath_Exterminator {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     final MagicDamage damage = new MagicDamage(
-                            event.getSource(),
-                            creature,
-                            event.getRefInt(),
-                            false);
+                        event.getSource(),
+                        creature,
+                        event.getRefInt()
+                    );
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });

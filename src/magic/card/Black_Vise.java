@@ -37,10 +37,10 @@ public class Black_Vise {
             final int amount = player.getHandSize() - 4;
             if (amount > 0) {
                 final MagicDamage damage = new MagicDamage(
-                        event.getPermanent(),
-                        player,
-                        amount,
-                        false);
+                    event.getPermanent(),
+                    player,
+                    amount
+                );
                 game.doAction(new MagicDealDamageAction(damage));
             }
         }

@@ -59,7 +59,7 @@ public class MagicCombatDamageAction extends MagicAction {
                         final int power=blocker.getPower();
                         // Checks if blocker has power > 0.
                         if (power>0) {
-                            combatDamage.add(new MagicDamage(blocker,attacker,power,true));
+                            combatDamage.add(MagicDamage.Combat(blocker,attacker,power));
                         }
                     }
                 }
@@ -85,7 +85,7 @@ public class MagicCombatDamageAction extends MagicAction {
                             // Check what to do with the remaining damage from attacker.
                             if (power>0) {
                                 if (attacker.hasAbility(MagicAbility.Trample)) {
-                                    combatDamage.add(new MagicDamage(attacker,aDefendingPlayer,power,true));
+                                    combatDamage.add(MagicDamage.Combat(attacker,aDefendingPlayer,power));
                                 } else if (attackerDamage.length>0) {
                                     attackerDamage[0]+=power;
                                 }
@@ -96,12 +96,12 @@ public class MagicCombatDamageAction extends MagicAction {
     
                                 final int amount=attackerDamage[index];
                                 if (amount>0) {
-                                    combatDamage.add(new MagicDamage(attacker,blockers.get(index),amount,true));
+                                    combatDamage.add(MagicDamage.Combat(attacker,blockers.get(index),amount));
                                 }
                             }
                         } else {
                             // Deal all damage to defending player.
-                            combatDamage.add(new MagicDamage(attacker,aDefendingPlayer,power,true));
+                            combatDamage.add(MagicDamage.Combat(attacker,aDefendingPlayer,power));
                         }
                     }
                 }

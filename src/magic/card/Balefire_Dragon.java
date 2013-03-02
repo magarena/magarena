@@ -39,10 +39,10 @@ public class Balefire_Dragon {
                     game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicPermanent creature : creatures) {
                 final MagicDamage damage = new MagicDamage(
-                        event.getSource(),
-                        creature,
-                        event.getRefInt(),
-                        false);
+                    event.getSource(),
+                    creature,
+                    event.getRefInt()
+                );
                 game.doAction(new MagicDealDamageAction(damage));
             }
         }        

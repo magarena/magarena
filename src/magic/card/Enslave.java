@@ -33,10 +33,10 @@ public class Enslave {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicDamage damage = new MagicDamage(
-                    event.getSource(),
-                    event.getPlayer(),
-                    1,
-                    false);
+                event.getSource(),
+                event.getPlayer(),
+                1
+            );
             game.doAction(new MagicDealDamageAction(damage));            
         }
     };

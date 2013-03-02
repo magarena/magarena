@@ -40,10 +40,10 @@ public class Searing_Touch {
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicDamage damage = new MagicDamage(
-                            event.getSource(),
-                            target,
-                            1,
-                            false);
+                        event.getSource(),
+                        target,
+                        1
+                    );
                     game.doAction(new MagicDealDamageAction(damage));
                     if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
                         game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));

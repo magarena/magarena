@@ -49,8 +49,8 @@ public class Kjeldoran_Javelineer {
                     final MagicDamage damage = new MagicDamage(
                         event.getSource(),
                         target,
-                        event.getRefInt(),
-                        false);
+                        event.getRefInt()
+                    );
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });

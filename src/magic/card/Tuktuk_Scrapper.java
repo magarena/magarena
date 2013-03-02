@@ -53,10 +53,10 @@ public class Tuktuk_Scrapper {
                                     player.getNrOfPermanentsWithSubType(MagicSubType.Ally);
                             if (amount > 0) {
                                 final MagicDamage damage = new MagicDamage(
-                                        event.getPermanent(),
-                                        card.getOwner(),
-                                        amount,
-                                        false);
+                                    event.getPermanent(),
+                                    card.getOwner(),
+                                    amount
+                                );
                                 game.doAction(new MagicDealDamageAction(damage));
                             }
                         }

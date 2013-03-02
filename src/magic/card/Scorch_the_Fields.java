@@ -45,10 +45,10 @@ public class Scorch_the_Fields {
                             MagicTargetFilter.TARGET_HUMAN);
                     for (final MagicPermanent target : targets) {
                         final MagicDamage damage = new MagicDamage(
-                                event.getSource(),
-                                target,
-                                1,
-                                false);
+                            event.getSource(),
+                            target,
+                            1
+                        );
                         game.doAction(new MagicDealDamageAction(damage));
                     }
                 }

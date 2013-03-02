@@ -74,8 +74,7 @@ public class Dwarven_Driller {
                     final MagicDamage damage = new MagicDamage(
                         event.getSource(),
                         event.getPlayer(),
-                        2,
-                        false
+                        2
                     );
                     game.doAction(new MagicDealDamageAction(damage));
                 } else {

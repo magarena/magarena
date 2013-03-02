@@ -44,10 +44,10 @@ public class Murasa_Pyromancer {
                         final int amount = player.getNrOfPermanentsWithSubType(MagicSubType.Ally);
                         if (amount > 0) {
                             final MagicDamage damage = new MagicDamage(
-                                    event.getPermanent(),
-                                    creature,
-                                    amount,
-                                    false);
+                                event.getPermanent(),
+                                creature,
+                                amount
+                            );
                             game.doAction(new MagicDealDamageAction(damage));
                         }
                     }

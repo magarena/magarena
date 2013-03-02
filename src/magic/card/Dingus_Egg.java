@@ -28,10 +28,10 @@ public class Dingus_Egg {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicDamage damage = new MagicDamage(
-                    event.getSource(),
-                    event.getPlayer(),
-                    2,
-                    false);
+                event.getSource(),
+                event.getPlayer(),
+                2
+            );
             game.doAction(new MagicDealDamageAction(damage));
         }
     };

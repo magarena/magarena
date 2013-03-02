@@ -34,16 +34,17 @@ public class Rhox {
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 final MagicPermanent permanent = event.getPermanent();
-                final MagicDamage damage = new MagicDamage(
-                        permanent,
-                        event.getPlayer().getOpponent(),
-                        permanent.getPower(),
-                        true);
+                final MagicDamage damage = MagicDamage.Combat(
+                    permanent,
+                    event.getPlayer().getOpponent(),
+                    permanent.getPower()
+                );
                 game.doAction(new MagicDealDamageAction(damage));
                 game.doAction(new MagicChangeStateAction(
-                        permanent,
-                        MagicPermanentState.NoCombatDamage,
-                        true));
+                    permanent,
+                    MagicPermanentState.NoCombatDamage,
+                    true
+                ));
             }
         }
     };

@@ -32,10 +32,10 @@ public class Wrack_with_Madness {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     final MagicDamage damage = new MagicDamage(
-                            creature,
-                            creature,
-                            creature.getPower(),
-                            false);
+                        creature,
+                        creature,
+                        creature.getPower()
+                    );
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });

@@ -57,10 +57,10 @@ public class Ashmouth_Hound {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicDamage damage = new MagicDamage(
-                    event.getSource(),
-                    event.getRefPermanent(),
-                    1,
-                    false);
+                event.getSource(),
+                event.getRefPermanent(),
+                1
+            );
             game.doAction(new MagicDealDamageAction(damage));
         }
     };

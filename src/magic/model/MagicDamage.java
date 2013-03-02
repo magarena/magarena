@@ -13,7 +13,7 @@ public class MagicDamage {
     private boolean unpreventable;
     private boolean noRegeneration;
 
-    public MagicDamage(final MagicSource source,final MagicTarget target,final int amount,final boolean combat) {
+    private MagicDamage(final MagicSource source,final MagicTarget target,final int amount,final boolean combat) {
         this.source=source;
         this.target=target;
         this.amount=amount;

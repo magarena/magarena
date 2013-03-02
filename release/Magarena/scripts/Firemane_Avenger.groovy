@@ -21,7 +21,7 @@
                 final Object[] choiceResults) {
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
-                    final MagicDamage damage=new MagicDamage(event.getSource(),target,3,false);
+                    final MagicDamage damage=new MagicDamage(event.getSource(),target,3);
                     game.doAction(new MagicDealDamageAction(damage));
                     game.doAction(new MagicChangeLifeAction(event.getPlayer(),3));
                 }

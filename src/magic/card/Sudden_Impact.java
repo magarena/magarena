@@ -30,10 +30,10 @@ public class Sudden_Impact {
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     final MagicDamage damage = new MagicDamage(
-                            event.getSource(),
-                            player,
-                            player.getHandSize(),
-                            false);
+                        event.getSource(),
+                        player,
+                        player.getHandSize()
+                    );
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });

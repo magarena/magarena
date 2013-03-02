@@ -39,21 +39,13 @@ public class Bonfire_of_the_Damned {
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     final int amount = event.getCardOnStack().getX();
-                    MagicDamage damage = new MagicDamage(
-                            event.getSource(),
-                            player,
-                            amount,
-                            false);
+                    MagicDamage damage = new MagicDamage(event.getSource(), player, amount);
                     game.doAction(new MagicDealDamageAction(damage));
                     final Collection<MagicPermanent> targets = game.filterPermanents(
                             player,
                             MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
                     for (final MagicPermanent target : targets) {
-                        damage = new MagicDamage(
-                                event.getSource(),
-                                target,
-                                amount,
-                                false);
+                        damage = new MagicDamage(event.getSource(), target, amount);
                         game.doAction(new MagicDealDamageAction(damage));
                     }
                 }

@@ -31,10 +31,10 @@ public class Hellrider {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicDamage damage = new MagicDamage(
-                    event.getPermanent(),
-                    event.getPlayer(),
-                    1,
-                    false);
+                event.getPermanent(),
+                event.getPlayer(),
+                1
+            );
             game.doAction(new MagicDealDamageAction(damage));
         }
     };

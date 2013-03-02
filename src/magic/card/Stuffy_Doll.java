@@ -65,10 +65,10 @@ public class Stuffy_Doll {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicDamage damage = new MagicDamage(
-                    event.getPermanent(),
-                    event.getPermanent().getChosenTarget(),
-                    event.getRefInt(),
-                    false);
+                event.getPermanent(),
+                event.getPermanent().getChosenTarget(),
+                event.getRefInt()
+            );
             game.doAction(new MagicDealDamageAction(damage));
         }
     };
