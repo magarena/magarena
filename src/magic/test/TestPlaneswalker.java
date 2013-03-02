@@ -32,12 +32,12 @@ class TestPlaneswalker extends TestGameBuilder {
         addToLibrary(P, "Plains", 10);
         createPermanent(game,P,"Rupture Spire",false,8);
         createPermanent(game,P,"Grizzly Bears",false,1);
-        addToHand(P, "Ajani Goldmane", 1);
         addToHand(P, "Ajani Vengeant", 1);
         addToHand(P, "Ajani, Caller of the Pride", 1);
         addToHand(P, "Sarkhan Vol", 1);
         addToHand(P, "Tamiyo, the Moon Sage", 1);
         addToHand(P, "Tibalt, the Fiend-Blooded", 1);
+        addToHand(P, "Elspeth Tirel", 1);
 
         P = opponent;
         
@@ -45,6 +45,7 @@ class TestPlaneswalker extends TestGameBuilder {
         addToLibrary(P, "Plains", 10);
         createPermanent(game,P,"Rupture Spire",false,8);
         createPermanent(game,P,"Grizzly Bears",false,1);
+        addToHand(P, "Ajani Goldmane", 1);
         addToHand(P, "Garruk, Primal Hunter", 1);
         addToHand(P, "Elspeth, Knight-Errant", 1);
         addToHand(P, "Gideon, Champion of Justice", 1);
