@@ -62,7 +62,7 @@ public class Balefire_Liege {
                 final Object[] choiceResults) {
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
-                    final MagicDamage damage=new MagicDamage(event.getSource(),player,3,false);
+                    final MagicDamage damage=new MagicDamage(event.getSource(),player,3);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });

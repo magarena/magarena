@@ -44,7 +44,7 @@ public class Scattershot_Archer {
             final Collection<MagicPermanent> targets=
                 game.filterPermanents(permanent.getController(),MagicTargetFilter.TARGET_CREATURE_WITH_FLYING);
             for (final MagicPermanent target : targets) {
-                final MagicDamage damage=new MagicDamage(permanent,target,1,false);
+                final MagicDamage damage=new MagicDamage(permanent,target,1);
                 game.doAction(new MagicDealDamageAction(damage));
             }
         }

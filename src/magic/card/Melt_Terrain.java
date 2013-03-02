@@ -34,7 +34,7 @@ public class Melt_Terrain {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicDestroyAction(permanent));
-                    final MagicDamage damage = new MagicDamage(event.getSource(),permanent.getController(),2,false);
+                    final MagicDamage damage = new MagicDamage(event.getSource(),permanent.getController(),2);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });

@@ -41,7 +41,7 @@ public class Femeref_Archers {
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    final MagicDamage damage=new MagicDamage(event.getSource(),creature,4,false);
+                    final MagicDamage damage=new MagicDamage(event.getSource(),creature,4);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });

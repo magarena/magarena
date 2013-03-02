@@ -36,7 +36,7 @@ public class Subterranean_Shambler {
             final Collection<MagicPermanent> creatures =
                 game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING);
             for (final MagicPermanent creature : creatures) {
-                final MagicDamage damage = new MagicDamage(source,creature,1,false);
+                final MagicDamage damage = new MagicDamage(source,creature,1);
                 game.doAction(new MagicDealDamageAction(damage));
             }
         }
@@ -64,7 +64,7 @@ public class Subterranean_Shambler {
             final Collection<MagicPermanent> creatures =
                 game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING);
             for (final MagicPermanent creature : creatures) {
-                final MagicDamage damage = new MagicDamage(source,creature,1,false);
+                final MagicDamage damage = new MagicDamage(source,creature,1);
                 game.doAction(new MagicDealDamageAction(damage));
             }
         }

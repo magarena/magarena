@@ -31,7 +31,7 @@ public class Blaze {
                 final Object[] choiceResults) {
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
-                    final MagicDamage damage=new MagicDamage(event.getSource(),target,event.getCardOnStack().getX(),false);
+                    final MagicDamage damage=new MagicDamage(event.getSource(),target,event.getCardOnStack().getX());
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });

@@ -35,7 +35,7 @@ public class Molten_Rain {
                 public void doAction(final MagicPermanent permanent) {
                      game.doAction(new MagicDestroyAction(permanent));
                      if (!permanent.isBasic()) {
-                         final MagicDamage damage = new MagicDamage(event.getSource(),permanent.getController(),2,false);
+                         final MagicDamage damage = new MagicDamage(event.getSource(),permanent.getController(),2);
                          game.doAction(new MagicDealDamageAction(damage));
                      }
                 }

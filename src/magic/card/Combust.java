@@ -31,7 +31,7 @@ public class Combust {
                 final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent target) {
-                    final MagicDamage damage = new MagicDamage(event.getSource(),target,5,false);
+                    final MagicDamage damage = new MagicDamage(event.getSource(),target,5);
                     damage.setUnpreventable();
                     game.doAction(new MagicDealDamageAction(damage));
                 }

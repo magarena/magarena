@@ -32,7 +32,7 @@ public class Smash_to_Smithereens {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicDestroyAction(permanent));
-                    final MagicDamage damage=new MagicDamage(event.getSource(),permanent.getController(),3,false);
+                    final MagicDamage damage=new MagicDamage(event.getSource(),permanent.getController(),3);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });

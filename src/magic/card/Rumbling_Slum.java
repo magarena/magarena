@@ -28,7 +28,7 @@ public class Rumbling_Slum {
                 final Object[] choiceResults) {
             final MagicSource source=event.getSource();
             for (final MagicPlayer player : game.getPlayers()) {
-                final MagicDamage damage=new MagicDamage(source,player,1,false);
+                final MagicDamage damage=new MagicDamage(source,player,1);
                 game.doAction(new MagicDealDamageAction(damage));
             }
         }

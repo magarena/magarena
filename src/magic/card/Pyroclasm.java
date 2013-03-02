@@ -30,7 +30,7 @@ public class Pyroclasm {
             final Collection<MagicPermanent> targets=
                 game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE);
             for (final MagicPermanent target : targets) {
-                final MagicDamage damage=new MagicDamage(event.getSource(),target,amount,false);
+                final MagicDamage damage=new MagicDamage(event.getSource(),target,amount);
                 game.doAction(new MagicDealDamageAction(damage));
             }
         }

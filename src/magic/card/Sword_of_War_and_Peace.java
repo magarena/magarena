@@ -33,7 +33,7 @@ public class Sword_of_War_and_Peace {
             final MagicPlayer targetPlayer=event.getRefPlayer();
             final int amount1=targetPlayer.getHand().size();
             if (amount1>0) {
-                final MagicDamage damage=new MagicDamage(event.getSource(),targetPlayer,amount1,false);
+                final MagicDamage damage=new MagicDamage(event.getSource(),targetPlayer,amount1);
                 game.doAction(new MagicDealDamageAction(damage));
             }
             final MagicPlayer player=event.getPlayer();

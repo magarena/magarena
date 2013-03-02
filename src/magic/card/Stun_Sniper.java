@@ -44,7 +44,7 @@ public class Stun_Sniper {
                 final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    final MagicDamage damage=new MagicDamage(event.getPermanent(),creature,1,false);
+                    final MagicDamage damage=new MagicDamage(event.getPermanent(),creature,1);
                     game.doAction(new MagicDealDamageAction(damage));
                     game.doAction(new MagicTapAction(creature,true));
                 }

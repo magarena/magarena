@@ -32,7 +32,7 @@ public class Taste_of_Blood {
                 final Object[] choiceResults) {
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
-                    final MagicDamage damage = new MagicDamage(event.getSource(),player,1,false);
+                    final MagicDamage damage = new MagicDamage(event.getSource(),player,1);
                     game.doAction(new MagicDealDamageAction(damage));
                     game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
                 }

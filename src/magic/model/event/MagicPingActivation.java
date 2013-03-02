@@ -45,7 +45,7 @@ public class MagicPingActivation extends MagicPermanentActivation {
             final Object[] choiceResults) {
         event.processTarget(game,choiceResults,0,new MagicTargetAction() {
             public void doAction(final MagicTarget target) {
-                final MagicDamage damage=new MagicDamage(event.getSource(),target,n,false);
+                final MagicDamage damage=new MagicDamage(event.getSource(),target,n);
                 game.doAction(new MagicDealDamageAction(damage));
             }
         });

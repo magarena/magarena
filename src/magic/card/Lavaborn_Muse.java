@@ -27,7 +27,7 @@ public class Lavaborn_Muse {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            final MagicDamage damage=new MagicDamage(event.getSource(),event.getPlayer(),3,false);
+            final MagicDamage damage=new MagicDamage(event.getSource(),event.getPlayer(),3);
             game.doAction(new MagicDealDamageAction(damage));
         }
     };

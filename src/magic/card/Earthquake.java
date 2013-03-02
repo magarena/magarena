@@ -34,11 +34,11 @@ public class Earthquake {
             final Collection<MagicPermanent> targets=
                 game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING);
             for (final MagicPermanent target : targets) {
-                final MagicDamage damage=new MagicDamage(source,target,amount,false);
+                final MagicDamage damage=new MagicDamage(source,target,amount);
                 game.doAction(new MagicDealDamageAction(damage));
             }
             for (final MagicPlayer player : game.getPlayers()) {
-                final MagicDamage damage=new MagicDamage(source,player,amount,false);
+                final MagicDamage damage=new MagicDamage(source,player,amount);
                 game.doAction(new MagicDealDamageAction(damage));
             }
         }

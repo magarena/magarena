@@ -23,7 +23,7 @@ public class City_of_Brass {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            final MagicDamage damage=new MagicDamage(event.getSource(),event.getPlayer(),1,false);
+            final MagicDamage damage=new MagicDamage(event.getSource(),event.getPlayer(),1);
             game.doAction(new MagicDealDamageAction(damage));
         }
     };

@@ -30,9 +30,9 @@ public class Char {
                 final Object[] choiceResults) {
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
-                    final MagicDamage damage1=new MagicDamage(event.getSource(),target,4,false);
+                    final MagicDamage damage1=new MagicDamage(event.getSource(),target,4);
                     game.doAction(new MagicDealDamageAction(damage1));
-                    final MagicDamage damage2=new MagicDamage(event.getSource(),event.getPlayer(),2,false);
+                    final MagicDamage damage2=new MagicDamage(event.getSource(),event.getPlayer(),2);
                     game.doAction(new MagicDealDamageAction(damage2));
                 }
             });

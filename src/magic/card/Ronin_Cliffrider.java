@@ -39,7 +39,7 @@ public class Ronin_Cliffrider {
                 final Collection<MagicPermanent> creatures =
                         game.filterPermanents(defendingPlayer,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
                 for (final MagicPermanent creature : creatures) {
-                    final MagicDamage damage = new MagicDamage(source,creature,1,false);
+                    final MagicDamage damage = new MagicDamage(source,creature,1);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             }

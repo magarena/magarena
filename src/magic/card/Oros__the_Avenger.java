@@ -39,7 +39,7 @@ public class Oros__the_Avenger {
                 final Collection<MagicPermanent> targets=
                     game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_NONWHITE_CREATURE);
                 for (final MagicPermanent target : targets) {
-                    final MagicDamage damage=new MagicDamage(event.getPermanent(),target,3,false);
+                    final MagicDamage damage=new MagicDamage(event.getPermanent(),target,3);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             }

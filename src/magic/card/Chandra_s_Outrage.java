@@ -31,9 +31,9 @@ public class Chandra_s_Outrage {
                 final Object[] choiceResults) {
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
-                    MagicDamage damage = new MagicDamage(event.getSource(),target,4,false);
+                    MagicDamage damage = new MagicDamage(event.getSource(),target,4);
                     game.doAction(new MagicDealDamageAction(damage));
-                    damage = new MagicDamage(event.getSource(),target.getController(),2,false);
+                    damage = new MagicDamage(event.getSource(),target.getController(),2);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });

@@ -40,7 +40,7 @@ public class Stuffy_Doll {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicPermanent permanent=event.getPermanent();
-            final MagicDamage damage=new MagicDamage(permanent,permanent,1,false);
+            final MagicDamage damage=new MagicDamage(permanent,permanent,1);
             game.doAction(new MagicDealDamageAction(damage));
         }
     };

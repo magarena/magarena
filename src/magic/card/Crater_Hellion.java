@@ -33,7 +33,7 @@ public class Crater_Hellion {
                 game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE);
             for (final MagicPermanent creature : creatures) {
                 if (permanent != creature) {
-                    final MagicDamage damage=new MagicDamage(permanent,creature,4,false);
+                    final MagicDamage damage=new MagicDamage(permanent,creature,4);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             }

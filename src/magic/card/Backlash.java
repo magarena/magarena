@@ -32,7 +32,7 @@ public class Backlash {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicTapAction(creature,true));
-                    final MagicDamage damage=new MagicDamage(creature,creature.getController(),creature.getPower(),false);
+                    final MagicDamage damage=new MagicDamage(creature,creature.getController(),creature.getPower());
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });

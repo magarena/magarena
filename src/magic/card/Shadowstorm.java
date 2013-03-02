@@ -29,7 +29,7 @@ public class Shadowstorm {
             final Collection<MagicPermanent> targets =
                 game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_WITH_SHADOW);
             for (final MagicPermanent target : targets) {
-                final MagicDamage damage = new MagicDamage(event.getSource(),target,2,false);
+                final MagicDamage damage = new MagicDamage(event.getSource(),target,2);
                 game.doAction(new MagicDealDamageAction(damage));
             }
         }

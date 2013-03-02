@@ -32,7 +32,7 @@ public class Cosi_s_Ravager {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTarget(game,choiceResults,1,new MagicTargetAction() {
                     public void doAction(final MagicTarget target) {
-                        final MagicDamage damage = new MagicDamage(event.getPermanent(),target,1,false);
+                        final MagicDamage damage = new MagicDamage(event.getPermanent(),target,1);
                         game.doAction(new MagicDealDamageAction(damage));
                     }
                 });

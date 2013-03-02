@@ -47,7 +47,7 @@ public class Lord_of_Shatterskull_Pass {
             final Collection<MagicPermanent> creatures=
                 game.filterPermanents(defendingPlayer,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicPermanent creature : creatures) {
-                final MagicDamage damage=new MagicDamage(source,creature,6,false);
+                final MagicDamage damage=new MagicDamage(source,creature,6);
                 game.doAction(new MagicDealDamageAction(damage));
             }
         }

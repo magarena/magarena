@@ -34,7 +34,7 @@ public class Death_Grasp {
             final int amount = event.getCardOnStack().getX();
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
-                    final MagicDamage damage=new MagicDamage(event.getSource(),target,amount,false);
+                    final MagicDamage damage=new MagicDamage(event.getSource(),target,amount);
                     game.doAction(new MagicDealDamageAction(damage));
                     game.doAction(new MagicChangeLifeAction(event.getPlayer(),amount));
                 }

@@ -32,7 +32,7 @@ public class Thunder_Dragon {
             final Collection<MagicPermanent> creatures=
                 game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING);
             for (final MagicPermanent creature : creatures) {
-                final MagicDamage damage=new MagicDamage(source,creature,3,false);
+                final MagicDamage damage=new MagicDamage(source,creature,3);
                 game.doAction(new MagicDealDamageAction(damage));
             }
         }

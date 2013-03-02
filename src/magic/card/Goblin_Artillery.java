@@ -43,9 +43,9 @@ public class Goblin_Artillery {
             final MagicSource source=event.getSource();
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
-                    final MagicDamage damage1=new MagicDamage(source,target,2,false);
+                    final MagicDamage damage1=new MagicDamage(source,target,2);
                     game.doAction(new MagicDealDamageAction(damage1));
-                    final MagicDamage damage2=new MagicDamage(source,event.getPlayer(),3,false);
+                    final MagicDamage damage2=new MagicDamage(source,event.getPlayer(),3);
                     game.doAction(new MagicDealDamageAction(damage2));
                 }
             });

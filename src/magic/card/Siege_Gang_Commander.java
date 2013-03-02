@@ -55,7 +55,7 @@ public class Siege_Gang_Commander {
                 final Object[] choiceResults) {
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
-                    final MagicDamage damage=new MagicDamage(event.getSource(),target,2,false);
+                    final MagicDamage damage=new MagicDamage(event.getSource(),target,2);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });

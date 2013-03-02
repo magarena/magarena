@@ -30,7 +30,7 @@ public class Skullcage {
             final MagicPlayer opponent=event.getPlayer();
             final int amount=opponent.getHandSize();
             if (amount < 3 || amount > 4) {
-                final MagicDamage damage=new MagicDamage(event.getSource(),opponent,2,false);
+                final MagicDamage damage=new MagicDamage(event.getSource(),opponent,2);
                 game.doAction(new MagicDealDamageAction(damage));
             }
         }

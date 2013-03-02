@@ -21,7 +21,7 @@ public class MagicPainTapEvent extends MagicEvent {
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choices) {
             final MagicPermanent permanent=event.getPermanent();
-            final MagicDamage damage=new MagicDamage(permanent,permanent.getController(),1,false);
+            final MagicDamage damage=new MagicDamage(permanent,permanent.getController(),1);
             game.doAction(new MagicTapAction(permanent,true));
             game.doAction(new MagicDealDamageAction(damage));
         }

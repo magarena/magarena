@@ -35,11 +35,11 @@ public class Forge_Devil {
             final MagicPermanent permanent = event.getPermanent();
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
-                    final MagicDamage damage = new MagicDamage(permanent,target,1,false);
+                    final MagicDamage damage = new MagicDamage(permanent,target,1);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });
-            final MagicDamage damage = new MagicDamage(permanent,event.getPlayer(),1,false);
+            final MagicDamage damage = new MagicDamage(permanent,event.getPlayer(),1);
             game.doAction(new MagicDealDamageAction(damage));
         }
     };

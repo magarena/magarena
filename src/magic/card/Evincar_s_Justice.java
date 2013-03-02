@@ -38,11 +38,11 @@ public class Evincar_s_Justice {
             final Collection<MagicPermanent> targets = 
                 game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE);
             for (final MagicPermanent target : targets) {
-                final MagicDamage damage = new MagicDamage(event.getSource(),target,2,false);
+                final MagicDamage damage = new MagicDamage(event.getSource(),target,2);
                 game.doAction(new MagicDealDamageAction(damage));
             }
             for (final MagicPlayer player : game.getPlayers()) {
-                final MagicDamage damage = new MagicDamage(event.getSource(),player,2,false);
+                final MagicDamage damage = new MagicDamage(event.getSource(),player,2);
                 game.doAction(new MagicDealDamageAction(damage));
             }
             if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {

@@ -35,7 +35,7 @@ public class Somberwald_Vigilante {
                 final Object[] choiceResults) {
             final MagicPermanentList plist = event.getRefPermanentList();
             for (final MagicPermanent blocker : plist) {
-                final MagicDamage damage = new MagicDamage(event.getSource(),blocker,1,false);
+                final MagicDamage damage = new MagicDamage(event.getSource(),blocker,1);
                 game.doAction(new MagicDealDamageAction(damage));
             }
         }

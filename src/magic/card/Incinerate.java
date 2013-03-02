@@ -31,7 +31,7 @@ public class Incinerate {
                 final Object[] choiceResults) {
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
-                    final MagicDamage damage=new MagicDamage(event.getSource(),target,3,false);
+                    final MagicDamage damage=new MagicDamage(event.getSource(),target,3);
                     damage.setNoRegeneration();
                     game.doAction(new MagicDealDamageAction(damage));
                 }

@@ -68,7 +68,7 @@ public class Shrine_of_Burning_Rage {
                     final MagicPermanent source=event.getPermanent();
                     final int amount=source.getCounters(MagicCounterType.Charge);
                     if (amount>0) {
-                        final MagicDamage damage=new MagicDamage(source,target,amount,false);
+                        final MagicDamage damage=new MagicDamage(source,target,amount);
                         game.doAction(new MagicDealDamageAction(damage));
                     }
                 }

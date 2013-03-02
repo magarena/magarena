@@ -34,7 +34,7 @@ public class Inferno_Elemental {
                 final Object[] choiceResults) {
             final MagicPermanentList plist = event.getRefPermanentList();
             for (final MagicPermanent blocker : plist) {
-                final MagicDamage damage = new MagicDamage(event.getSource(),blocker,3,false);
+                final MagicDamage damage = new MagicDamage(event.getSource(),blocker,3);
                 game.doAction(new MagicDealDamageAction(damage));
             }
         }

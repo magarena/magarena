@@ -52,7 +52,7 @@ public class Lightning_Reaver {
                 final Object[] choiceResults) {
             final MagicPermanent permanent=event.getPermanent();
             final int counters=permanent.getCounters(MagicCounterType.Charge);
-            final MagicDamage damage=new MagicDamage(permanent,event.getPlayer(),counters,false);
+            final MagicDamage damage=new MagicDamage(permanent,event.getPlayer(),counters);
             game.doAction(new MagicDealDamageAction(damage));
         }        
     };

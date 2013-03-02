@@ -38,7 +38,7 @@ public class Mordant_Dragon {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    final MagicDamage damage=new MagicDamage(event.getSource(),creature,event.getRefInt(),false);
+                    final MagicDamage damage=new MagicDamage(event.getSource(),creature,event.getRefInt());
                     game.doAction(new MagicDealDamageAction(damage));
                 }
                 });

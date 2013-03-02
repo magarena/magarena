@@ -32,10 +32,10 @@ public class Burn_the_Impure {
                 final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    final MagicDamage damage1 = new MagicDamage(event.getSource(),creature,3,false);
+                    final MagicDamage damage1 = new MagicDamage(event.getSource(),creature,3);
                     game.doAction(new MagicDealDamageAction(damage1));
                     if (creature.hasAbility(MagicAbility.Infect)) {
-                        final MagicDamage damage2 = new MagicDamage(event.getSource(),creature.getController(),3,false);
+                        final MagicDamage damage2 = new MagicDamage(event.getSource(),creature.getController(),3);
                         game.doAction(new MagicDealDamageAction(damage2));
                     }
                 }
