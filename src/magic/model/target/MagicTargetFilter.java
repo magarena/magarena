@@ -849,6 +849,8 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     MagicPermanentFilterImpl TARGET_CREATURE_YOUR_OPPONENT_CONTROLS = Factory.permanent(MagicType.Creature, Control.Opp);
     
     MagicPermanentFilterImpl TARGET_TAPPED_CREATURE = Factory.creature(MagicPermanentState.Tapped, Control.Any);
+    
+    MagicPermanentFilterImpl TARGET_TAPPED_CREATURE_YOU_CONTROL = Factory.creature(MagicPermanentState.Tapped, Control.You);
 
     MagicPermanentFilterImpl TARGET_UNTAPPED_CREATURE=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
