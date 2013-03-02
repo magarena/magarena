@@ -1,0 +1,11 @@
+name=Venser, the Sojourner
+url=http://magiccards.info/som/en/135.html
+image=http://magiccards.info/scans/en/som/135.jpg
+value=3.189
+rarity=M
+type=Planeswalker
+subtype=Venser
+cost={3}{W}{U}
+ability=enters with charge 3
+timing=main
+requires_groovy_code
