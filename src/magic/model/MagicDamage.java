@@ -20,6 +20,14 @@ public class MagicDamage {
         this.combat=combat;
     }
     
+    public MagicDamage(final MagicSource source,final MagicTarget target,final int amount) {
+        this(source, target, amount, false);
+    }
+
+    public static final MagicDamage Combat(final MagicSource source,final MagicTarget target,final int amount) {
+        return new MagicDamage(source, target, amount, true);
+    }
+    
     public MagicSource getSource() {
         return source;
     }
