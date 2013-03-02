@@ -75,7 +75,6 @@
                     game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Flying));
                 }
             });
-        
         }
     },
     new MagicPermanentActivation(
