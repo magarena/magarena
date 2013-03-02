@@ -15,6 +15,10 @@ public class MagicAddTriggerAction extends MagicAction {
         this.permanent=permanent;
         this.trigger=trigger;
     }
+    
+    public MagicAddTriggerAction(final MagicTrigger<?> trigger) {
+        this(MagicPermanent.NONE, trigger);
+    }
 
     @Override
     public void doAction(final MagicGame game) {
