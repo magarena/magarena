@@ -19,6 +19,7 @@ class TestPlaneswalker extends TestGameBuilder {
         final MagicPlayerDefinition player2=new MagicPlayerDefinition("Computer",true,profile,14);
         duel.setPlayers(new MagicPlayerDefinition[]{player1,player2});
         duel.setStartPlayer(0);
+        duel.setAIs(new MagicAI[]{null, MagicAIImpl.MCTS.getAI()});
         
         final MagicGame game=duel.nextGame(true);
         game.setPhase(MagicMainPhase.getFirstInstance());
@@ -31,25 +32,23 @@ class TestPlaneswalker extends TestGameBuilder {
         addToLibrary(P, "Plains", 10);
         createPermanent(game,P,"Rupture Spire",false,8);
         createPermanent(game,P,"Grizzly Bears",false,1);
-        addToHand(P, "Garruk, Primal Hunter", 1);
-        addToHand(P, "Elspeth, Knight-Errant", 1);
-        addToHand(P, "Gideon, Champion of Justice", 1);
-        addToHand(P, "Jace Beleren", 1);
         addToHand(P, "Ajani Goldmane", 1);
         addToHand(P, "Ajani Vengeant", 1);
         addToHand(P, "Ajani, Caller of the Pride", 1);
         addToHand(P, "Sarkhan Vol", 1);
         addToHand(P, "Tamiyo, the Moon Sage", 1);
+        addToHand(P, "Tibalt, the Fiend-Blooded", 1);
 
         P = opponent;
         
         P.setLife(10);
         addToLibrary(P, "Plains", 10);
         createPermanent(game,P,"Rupture Spire",false,8);
-        //createPermanent(game,P,"Baneslayer Angel",false,2);
+        createPermanent(game,P,"Grizzly Bears",false,1);
         addToHand(P, "Garruk, Primal Hunter", 1);
-        addToHand(P, "Grizzly Bears", 1);
-        addToHand(P, "Mirri, Cat Warrior", 1);
+        addToHand(P, "Elspeth, Knight-Errant", 1);
+        addToHand(P, "Gideon, Champion of Justice", 1);
+        addToHand(P, "Jace Beleren", 1);
         
         return game;
     }
