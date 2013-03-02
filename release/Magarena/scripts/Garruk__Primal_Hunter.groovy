@@ -1,22 +1,5 @@
 [
-    new MagicPermanentActivation(
-        [
-            MagicCondition.SORCERY_CONDITION,
-            MagicCondition.ABILITY_ONCE_CONDITION
-        ],
-        new MagicActivationHints(MagicTiming.Main),
-        "+1") {
-        @Override
-        public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return [
-                MagicPutCounterEvent.Self(
-                    source,
-                    MagicCounterType.Charge,
-                    1
-                ),
-                new MagicPlayAbilityEvent(source)
-            ];
-        }
+    new MagicPlaneswalkerActivation(1) {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
@@ -36,25 +19,7 @@
             ));
         }
     },
-    new MagicPermanentActivation(
-        [
-            MagicCondition.SORCERY_CONDITION,
-            MagicCondition.ABILITY_ONCE_CONDITION,
-            MagicConditionFactory.ChargeCountersAtLeast(3)
-        ],
-        new MagicActivationHints(MagicTiming.Main),
-        "-3") {
-        @Override
-        public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return [
-                new MagicRemoveCounterEvent(
-                    source,
-                    MagicCounterType.Charge,
-                    3
-                ),
-                new MagicPlayAbilityEvent(source)
-            ];
-        }
+    new MagicPlaneswalkerActivation(-3) {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
@@ -81,25 +46,7 @@
             ));
         }
     },
-    new MagicPermanentActivation(
-        [
-            MagicCondition.SORCERY_CONDITION,
-            MagicCondition.ABILITY_ONCE_CONDITION,
-            MagicConditionFactory.ChargeCountersAtLeast(6)
-        ],
-        new MagicActivationHints(MagicTiming.Main),
-        "-6") {
-        @Override
-        public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return [
-                new MagicRemoveCounterEvent(
-                    source,
-                    MagicCounterType.Charge,
-                    6
-                ),
-                new MagicPlayAbilityEvent(source)
-            ];
-        }
+    new MagicPlaneswalkerActivation(-6) {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
