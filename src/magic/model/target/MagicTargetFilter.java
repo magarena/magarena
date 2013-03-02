@@ -574,6 +574,15 @@ public interface MagicTargetFilter<T extends MagicTarget> {
             return targetType==MagicTargetType.Permanent;
         }        
     };
+    
+    MagicPermanentFilterImpl TARGET_PERMANENT_YOU_OWN=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isOwner(player);
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType==MagicTargetType.Permanent;
+        }        
+    };
 
     MagicPermanentFilterImpl TARGET_LAND_YOU_CONTROL = Factory.permanent(MagicType.Land, Control.You);
     

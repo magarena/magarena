@@ -270,6 +270,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return getController() == player;
     }
     
+    public boolean isOwner(final MagicTarget player) {
+        return getOwner() == player;
+    }
+    
     public boolean isOpponent(final MagicTarget player) {
         return getOpponent() == player;
     }
