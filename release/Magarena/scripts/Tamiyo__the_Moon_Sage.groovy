@@ -45,7 +45,7 @@
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     final int amt = game.filterPermanents(player, MagicTargetFilter.TARGET_TAPPED_CREATURE_YOU_CONTROL).size();
-                    game.doAction(new MagicDrawAction(player,amt));
+                    game.doAction(new MagicDrawAction(event.getPlayer(),amt));
                 }
             });
         }
@@ -85,13 +85,12 @@
                             final MagicPermanent permanent,
                             final MagicGraveyardTriggerData triggerData) {
                         return triggerData.card.getOwner().getId() == you.getId() ?
+                            // HACK: As emblem is not represented, source of event is the card
                             new MagicEvent(
-                                permanent,
-                                triggerData.card.getOwner(),
+                                triggerData.card, 
                                 new MagicMayChoice(),
-                                triggerData.card,
                                 this,
-                                "PN may return " + triggerData.card + " to your hand."
+                                "PN may return SN to your hand."
                             ):
                             MagicEvent.NONE
                     }
@@ -101,9 +100,9 @@
                             final MagicGame game,
                             final MagicEvent event,
                             final Object[] choiceResults) {
-                        if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                            game.doAction(new MagicRemoveCardAction(event.getRefCard(),MagicLocationType.Graveyard));
-                            game.doAction(new MagicMoveCardAction(event.getRefCard(),MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+                        if (MagicMayChoice.isYesChoice(choiceResults[0]) && event.getPlayer().getGraveyard().contains(event.getCard())) {
+                            game.doAction(new MagicRemoveCardAction(event.getCard(),MagicLocationType.Graveyard));
+                            game.doAction(new MagicMoveCardAction(event.getCard(),MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
                         }
                     }
                 }
