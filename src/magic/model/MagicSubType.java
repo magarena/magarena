@@ -36,7 +36,7 @@ public enum MagicSubType {
 
     //planeswalker subtypes
     Ajani, Bolas, Chandra, Elspeth, Garruk, Gideon, Jace, Karn, Koth, Liliana,
-    Nissa, Sarkhan, Sorin, Tezzeret, Venser,
+    Nissa, Sarkhan, Sorin, Tezzeret, Venser, Tamiyo,
     
 
     //creature and tribal subtypes

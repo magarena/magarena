@@ -39,6 +39,7 @@ class TestPlaneswalker extends TestGameBuilder {
         addToHand(P, "Ajani Vengeant", 1);
         addToHand(P, "Ajani, Caller of the Pride", 1);
         addToHand(P, "Sarkhan Vol", 1);
+        addToHand(P, "Tamiyo, the Moon Sage", 1);
 
         P = opponent;
         
