@@ -25,9 +25,12 @@ Aggravate
 Aggressive Urge
 Air Elemental
 Air Servant
+Ajani, Caller of the Pride
+Ajani Goldmane
 Ajani's Mantra
 Ajani's Pridemate
 Ajani's Sunstriker
+Ajani Vengeant
 Akoum Battlesinger
 Akoum Boulderfoot
 Akoum Refuge
@@ -1046,6 +1049,7 @@ Island
 Isolated Chapel
 Isperia's Skywatch
 Izzet Guildgate
+Jace Beleren
 Jace's Ingenuity
 Jade Mage
 Jagwasp Swarm
@@ -1145,6 +1149,7 @@ Kozilek, Butcher of Truth
 Kraken Hatchling
 Kraken's Eye
 Kranioceros
+Krenko, Mob Boss
 Krenko's Command
 Kresh the Bloodbraided
 Krovikan Scoundrel
@@ -1689,6 +1694,7 @@ Sandstone Warrior
 Sangrite Backlash
 Sangromancer
 Sanguine Bond
+Sarkhan Vol
 Savage Lands
 Savage Twister
 Savannah Lions
@@ -1729,6 +1735,7 @@ Seal of Doom
 Seal of Fire
 Searchlight Geist
 Searing Meditation
+Searing Spear
 Seascape Aerialist
 Seaside Citadel
 Seedborn Muse
@@ -1759,6 +1766,7 @@ Sewn-Eye Drake
 Shadowmage Infiltrator
 Shadow Sliver
 Sharpened Pitchfork
+Sharuum the Hegemon
 Shatter
 Shattered Angel
 Shattering Spree
@@ -2012,6 +2020,7 @@ Talisman of Unity
 Talonrend
 Talon Trooper
 Talus Paladin
+Tamiyo, the Moon Sage
 Tangle Asp
 Tangle Hulk
 Tangle Mantis

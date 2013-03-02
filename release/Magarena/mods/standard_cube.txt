@@ -4,6 +4,7 @@ Acidic Slime
 Act of Treason
 Adaptive Snapjaw
 Aggravate
+Ajani, Caller of the Pride
 Ajani's Sunstriker
 Akroma's Memorial
 Alchemist's Apprentice
@@ -231,6 +232,7 @@ Ghoulflesh
 Ghoulraiser
 Giant Growth
 Giant Scorpion
+Gideon, Champion of Justice
 Glacial Fortress
 Gloom Surgeon
 Gloomwidow
@@ -313,6 +315,7 @@ Knight of Glory
 Knight of Infamy
 Knight of Obligation
 Kraken Hatchling
+Krenko, Mob Boss
 Krenko's Command
 Kruin Striker
 Lantern Spirit
@@ -451,6 +454,7 @@ Scroll of Avacyn
 Scroll of Griselbrand
 Scroll Thief
 Searchlight Geist
+Searing Spear
 Selesnya Guildgate
 Selesnya Sentry
 Selfless Cathar
@@ -525,6 +529,7 @@ Supreme Verdict
 Swamp
 Syndicate Enforcer
 Syndic of Tithes
+Tamiyo, the Moon Sage
 Teleportal
 Temple Garden
 Temporal Mastery

@@ -14,6 +14,8 @@ AEther Figment
 Affa Guard Hound
 Aggravate
 Air Servant
+Ajani, Caller of the Pride
+Ajani Goldmane
 Ajani's Mantra
 Ajani's Pridemate
 Ajani's Sunstriker
@@ -455,6 +457,7 @@ Ghoulraiser
 Giant Growth
 Giant Scorpion
 Giant Spider
+Gideon, Champion of Justice
 Gideon's Avenger
 Gideon's Lawkeeper
 Glacial Fortress
@@ -610,6 +613,7 @@ Island
 Isolated Chapel
 Isperia's Skywatch
 Izzet Guildgate
+Jace Beleren
 Jace's Ingenuity
 Jade Mage
 Jagwasp Swarm
@@ -659,6 +663,7 @@ Koth's Courier
 Kozilek, Butcher of Truth
 Kraken Hatchling
 Kraken's Eye
+Krenko, Mob Boss
 Krenko's Command
 Kruin Striker
 Kuldotha Ringleader
@@ -957,6 +962,7 @@ Scythe Tiger
 Seachrome Coast
 Sea Gate Loremaster
 Searchlight Geist
+Searing Spear
 Seascape Aerialist
 Seer's Sundial
 Sejiri Refuge
@@ -1109,6 +1115,7 @@ Syndicate Enforcer
 Syndic of Tithes
 Tajuru Archer
 Talus Paladin
+Tamiyo, the Moon Sage
 Tangle Hulk
 Tangle Mantis
 Taste of Blood

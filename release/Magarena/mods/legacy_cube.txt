@@ -37,9 +37,12 @@ Aggressive Urge
 Air Bladder
 Air Elemental
 Air Servant
+Ajani, Caller of the Pride
+Ajani Goldmane
 Ajani's Mantra
 Ajani's Pridemate
 Ajani's Sunstriker
+Ajani Vengeant
 Akoum Battlesinger
 Akoum Boulderfoot
 Akoum Refuge
@@ -1096,6 +1099,7 @@ Giant Spider
 Giant Strength
 Giant Warthog
 Gibbering Kami
+Gideon, Champion of Justice
 Gideon's Avenger
 Gideon's Lawkeeper
 Gift of Granite
@@ -1424,6 +1428,7 @@ Isolated Chapel
 Isperia's Skywatch
 Ivy Elemental
 Izzet Guildgate
+Jace Beleren
 Jace's Ingenuity
 Jade Mage
 Jagwasp Swarm
@@ -1558,6 +1563,7 @@ Kraken Hatchling
 Kraken's Eye
 Krakilin
 Kranioceros
+Krenko, Mob Boss
 Krenko's Command
 Kresh the Bloodbraided
 Krosan Beast
@@ -2286,6 +2292,7 @@ Sangromancer
 Sanguine Bond
 Sanguine Guard
 Saprazzan Heir
+Sarkhan Vol
 Savage Lands
 Savage Twister
 Savannah
@@ -2338,6 +2345,7 @@ Seal of Fire
 Seance
 Searchlight Geist
 Searing Meditation
+Searing Spear
 Searing Touch
 Seascape Aerialist
 Seashell Cameo
@@ -2384,6 +2392,7 @@ Shambleshark
 Shambling Strider
 Shanodin Dryads
 Sharpened Pitchfork
+Sharuum the Hegemon
 Shatter
 Shattered Angel
 Shattering Pulse
@@ -2721,6 +2730,7 @@ Talon Trooper
 Talruum Champion
 Talruum Minotaur
 Talus Paladin
+Tamiyo, the Moon Sage
 Tangle Asp
 Tangle Hulk
 Tangle Mantis
