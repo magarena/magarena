@@ -34,9 +34,9 @@ public class Taste_of_Blood {
                 public void doAction(final MagicPlayer player) {
                     final MagicDamage damage = new MagicDamage(event.getSource(),player,1,false);
                     game.doAction(new MagicDealDamageAction(damage));
+                    game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
                 }
             });
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
         }
     };
 }
