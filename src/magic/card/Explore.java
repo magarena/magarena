@@ -35,7 +35,7 @@ public class Explore {
                     }
                     @Override
                     public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-                        return game.getTurnPlayer() == event.getPlayer();
+                        return game.getTurnPlayer().getId() == event.getPlayer().getId();
                     }
                 }
             ));
