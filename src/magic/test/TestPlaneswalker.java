@@ -38,6 +38,7 @@ class TestPlaneswalker extends TestGameBuilder {
         addToHand(P, "Elspeth, Knight-Errant", 1);
         addToHand(P, "Elspeth Tirel", 1);
         addToHand(P, "Venser, the Sojourner", 1);
+        addToHand(P, "Vraska the Unseen", 1);
 
         P = opponent;
         
