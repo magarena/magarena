@@ -56,6 +56,22 @@ public class MagicPermanentTriggerMap {
         }
         return removedTriggers;
     }
+    
+    public MagicPermanentTrigger remove(final MagicPermanent permanent, final MagicTrigger<?> trigger) {
+        final Collection<MagicPermanentTrigger> removedTriggers = new ArrayList<MagicPermanentTrigger>();
+        for (final Map.Entry<MagicTriggerType, SortedSet<MagicPermanentTrigger>> type : effects.entrySet()) {
+            final Collection<MagicPermanentTrigger> triggers = type.getValue();
+            for (final Iterator<MagicPermanentTrigger> iterator = triggers.iterator();iterator.hasNext();) {
+                final MagicPermanentTrigger permanentTrigger = iterator.next();
+                if (permanentTrigger.getPermanent() == permanent &&
+                    permanentTrigger.getTrigger() == trigger) {
+                    iterator.remove();
+                    return permanentTrigger;
+                }
+            }
+        }
+        throw new RuntimeException("Could not remove " + permanent + "'s trigger " + trigger);
+    }
         
     public void remove(final MagicPermanentTrigger mptrigger) {
         effects.get(mptrigger.getTrigger().getType()).remove(mptrigger);
