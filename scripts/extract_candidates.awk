@@ -20,6 +20,10 @@ FILENAME ~ /mtg-data/ {
             print $0 "\t"
         }
         print "\n"
+    } else {
+        while ($0 != "") {
+            getline
+        }
     }
 
     next
