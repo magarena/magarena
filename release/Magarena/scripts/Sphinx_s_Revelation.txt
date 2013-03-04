@@ -1,0 +1,9 @@
+name=Sphinx's Revelation
+url=http://magiccards.info/rtr/en/200.html
+image=http://magiccards.info/scans/en/rtr/200.jpg
+value=4.474
+rarity=M
+type=Instant
+cost={X}{W}{U}{U}
+timing=main
+requires_groovy_code
