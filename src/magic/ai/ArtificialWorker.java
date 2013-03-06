@@ -102,14 +102,11 @@ public class ArtificialWorker {
     void evaluateGame(
             final ArtificialChoiceResults aiChoiceResults,
             final ArtificialPruneScore pruneScore,
-            final int mainPhases,
             final int aMaxDepth,
             final int aMaxGames) {
         gameCount = 0;
         maxDepth  = aMaxDepth;
         maxGames  = aMaxGames;
-        
-        game.setMainPhases(mainPhases);
         
         aiChoiceResults.worker    = id;
         aiChoiceResults.aiScore   = runGame(game.map(aiChoiceResults.choiceResults),pruneScore,0);
