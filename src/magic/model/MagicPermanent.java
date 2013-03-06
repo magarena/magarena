@@ -691,7 +691,13 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         final MagicPermanent creature = (MagicPermanent)source;
                 
         // From creatures.
-        if (hasAbility(MagicAbility.ProtectionFromCreatures)) {
+        if (creature.hasType(MagicType.Creature) &&
+            hasAbility(MagicAbility.ProtectionFromCreatures)) {
+            return true;
+        }
+        // From Artifacts
+        if (creature.hasType(MagicType.Artifact) &&
+            hasAbility(MagicAbility.ProtectionFromArtifacts)) {
             return true;
         }
         // From Demons.
