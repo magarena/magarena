@@ -494,3 +494,8 @@ fix_eol:
 	sed -i -e '$$a\' release/Magarena/**/*.txt
 	sed -i -e 's/\x0D$$//' release/Magarena/**/*.txt
 	sed -i -e '$$a\' src/**/*.java
+
+cards_per_set.txt: cards/existing_tip_full.txt
+	cat <(grep -o ", [A-Z0-9]* [A-Z]" $^ | cut -d' ' -f2) \
+	    <(grep -o "^[A-Z0-9]* [A-Z]"  $^ | cut -d' ' -f1) |\
+	sort | uniq -c | sort -n > $@
