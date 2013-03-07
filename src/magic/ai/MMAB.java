@@ -19,7 +19,7 @@ public class MMAB implements MagicAI {
     private static final int         MAX_DEPTH=120;
     private static final int         MAX_GAMES=12000;
 
-    private final int THREADS = Runtime.getRuntime().availableProcessors();
+    private static final int THREADS = Runtime.getRuntime().availableProcessors();
     
     private final boolean LOGGING;
     private final boolean CHEAT;
@@ -61,7 +61,6 @@ public class MMAB implements MagicAI {
         }
         
         // submit jobs
-        final LinkedList<ArtificialWorker> workers = new LinkedList<ArtificialWorker>();
         final ArtificialScoreBoard scoreBoard = new ArtificialScoreBoard();
         final ExecutorService executor = Executors.newFixedThreadPool(THREADS);
         final List<ArtificialChoiceResults> achoices=new ArrayList<ArtificialChoiceResults>();
@@ -88,7 +87,7 @@ public class MMAB implements MagicAI {
         executor.shutdown();
         try {
             // wait for 2 * artificialLevel seconds for jobs to finish
-            executor.awaitTermination(artificialLevel * 2, TimeUnit.SECONDS);
+            executor.awaitTermination(2 * artificialLevel, TimeUnit.SECONDS);
         } catch (final InterruptedException ex) {
             throw new RuntimeException(ex);
         } finally {
