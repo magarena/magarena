@@ -78,8 +78,14 @@ public class MMAB implements MagicAI {
                     }
                     workerGame.setFastChoices(true);
                     workerGame.setMainPhases(mainPhases);
-                    final ArtificialWorker worker=new ArtificialWorker((int)Thread.currentThread().getId(),workerGame,scoreBoard);
-                    worker.evaluateGame(achoice,getPruneScore(),MAX_DEPTH,MAX_GAMES);
+                    final ArtificialWorker worker=new ArtificialWorker(
+                        (int)Thread.currentThread().getId(),
+                        workerGame,
+                        scoreBoard,
+                        MAX_DEPTH,
+                        MAX_GAMES
+                    );
+                    worker.evaluateGame(achoice,getPruneScore());
                     updatePruneScore(achoice.aiScore.getScore());
                 }
             });

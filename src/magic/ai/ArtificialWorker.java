@@ -11,14 +11,16 @@ public class ArtificialWorker {
     private final int id;
     private final MagicGame game;
     private final ArtificialScoreBoard scoreBoard;
+    private final int maxDepth;
+    private final int maxGames;
     private int gameCount;
-    private int maxDepth;
-    private int maxGames;
     
-    ArtificialWorker(final int id,final MagicGame game,final ArtificialScoreBoard scoreBoard) {
+    ArtificialWorker(final int id,final MagicGame game,final ArtificialScoreBoard scoreBoard, final int aMaxDepth, final int aMaxGames) {
         this.id=id;
         this.game=game;
         this.scoreBoard=scoreBoard;
+        this.maxDepth = aMaxDepth;
+        this.maxGames = aMaxGames;
     }
     
     private ArtificialScore runGame(final Object[] nextChoiceResults,final ArtificialPruneScore pruneScore,int depth) {
@@ -99,14 +101,8 @@ public class ArtificialWorker {
         return aiScore;
     }
 
-    void evaluateGame(
-            final ArtificialChoiceResults aiChoiceResults,
-            final ArtificialPruneScore pruneScore,
-            final int aMaxDepth,
-            final int aMaxGames) {
+    void evaluateGame(final ArtificialChoiceResults aiChoiceResults, final ArtificialPruneScore pruneScore) {
         gameCount = 0;
-        maxDepth  = aMaxDepth;
-        maxGames  = aMaxGames;
         
         aiChoiceResults.worker    = id;
         aiChoiceResults.aiScore   = runGame(game.map(aiChoiceResults.choiceResults),pruneScore,0);
