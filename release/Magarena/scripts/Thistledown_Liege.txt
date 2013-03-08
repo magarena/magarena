@@ -9,4 +9,4 @@ cost={1}{W/U}{W/U}{W/U}
 pt=1/3
 ability=flash
 timing=flash
-requires_card_code
+requires_groovy_code
