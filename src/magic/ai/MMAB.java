@@ -11,6 +11,7 @@ import magic.model.MagicGame;
 import magic.model.MagicGameLog;
 import magic.model.MagicPlayer;
 import magic.model.event.MagicEvent;
+import magic.model.phase.MagicPhase;
 
 public class MMAB implements MagicAI {
     
@@ -79,7 +80,7 @@ public class MMAB implements MagicAI {
                         workerGame.setKnownCards();
                     }
                     workerGame.setFastChoices(true);
-                    final ArtificialWorker worker=new ArtificialWorker(
+                    final MMABWorker worker=new MMABWorker(
                         (int)Thread.currentThread().getId(),
                         workerGame,
                         scoreBoard
@@ -133,5 +134,108 @@ public class MMAB implements MagicAI {
     
     private ArtificialPruneScore getPruneScore() {
         return pruneScore;
+    }
+}
+
+class MMABWorker {
+    
+    private final int id;
+    private final MagicGame game;
+    private final ArtificialScoreBoard scoreBoard;
+
+    private int gameCount;
+    
+    MMABWorker(final int id,final MagicGame game,final ArtificialScoreBoard scoreBoard) {
+        this.id=id;
+        this.game=game;
+        this.scoreBoard=scoreBoard;
+    }
+    
+    private ArtificialScore runGame(final Object[] nextChoiceResults, final ArtificialPruneScore pruneScore, final int depth, final long maxTime) {
+        game.startActions();
+        
+        if (nextChoiceResults!=null) {
+            game.executeNextEvent(nextChoiceResults);
+        }
+        
+        if (System.nanoTime() > maxTime) {
+            final ArtificialScore aiScore=new ArtificialScore(game.getScore(),depth);
+            game.undoActions();
+            gameCount++;
+            return aiScore;
+        }
+
+        // Play game until given end turn for all possible choices.
+        while (!game.isFinished()) {
+            if (!game.hasNextEvent()) {
+                game.executePhase();
+                                
+                // Caching of best score for game situations.
+                if (game.cacheState()) {
+                    final long gameId=game.getGameId(pruneScore.getScore());
+                    ArtificialScore bestScore=scoreBoard.getGameScore(gameId);
+                    if (bestScore==null) {
+                        bestScore=runGame(null,pruneScore,depth,maxTime);
+                        scoreBoard.setGameScore(gameId,bestScore.getScore(-depth));
+                    } else {
+                        bestScore=bestScore.getScore(depth);
+                    }
+                    game.undoActions();
+                    return bestScore;
+                }
+                continue;
+            }
+        
+            final MagicEvent event=game.getNextEvent();
+
+            if (!event.hasChoice()) {
+                game.executeNextEvent(MagicEvent.NO_CHOICE_RESULTS);
+                continue;
+            }
+
+            final List<Object[]> choiceResultsList=event.getArtificialChoiceResults(game);
+            final int nrOfChoices=choiceResultsList.size();
+            
+            assert nrOfChoices > 0 : "nrOfChoices is 0";
+            
+            if (nrOfChoices==1) {
+                game.executeNextEvent(choiceResultsList.get(0));
+                continue;
+            }
+            
+            final long slice = (maxTime - System.nanoTime()) / nrOfChoices;
+            final boolean best=game.getScorePlayer()==event.getPlayer();
+            ArtificialScore bestScore=ArtificialScore.INVALID_SCORE;
+            ArtificialPruneScore newPruneScore=pruneScore;
+            for (final Object[] choiceResults : choiceResultsList) {
+                final ArtificialScore score=runGame(choiceResults, newPruneScore, depth + 1, System.nanoTime() + slice);
+                if (bestScore.isBetter(score,best)) {
+                    bestScore=score;
+                    // Stop when best score can no longer become the best score at previous levels.
+                    if (pruneScore.pruneScore(bestScore.getScore(),best)) {
+                        break;
+                    }
+                    newPruneScore=newPruneScore.getPruneScore(bestScore.getScore(),best);
+                }
+            }
+            game.undoActions();
+            return bestScore;
+        }
+
+        // Game is finished.
+        final ArtificialScore aiScore=new ArtificialScore(game.getScore(),depth);
+        game.undoActions();
+        gameCount++;
+        return aiScore;
+    }
+
+    void evaluateGame(final ArtificialChoiceResults aiChoiceResults, final ArtificialPruneScore pruneScore, long maxTime) {
+        gameCount = 0;
+        
+        aiChoiceResults.worker    = id;
+        aiChoiceResults.aiScore   = runGame(game.map(aiChoiceResults.choiceResults),pruneScore,0,maxTime);
+        aiChoiceResults.gameCount = gameCount;
+
+        game.undoAllActions();
     }
 }
