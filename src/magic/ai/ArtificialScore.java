@@ -3,7 +3,6 @@ package magic.ai;
 public class ArtificialScore {
 
     static final ArtificialScore INVALID_SCORE=new ArtificialScore(0,0);
-    static final ArtificialScore MAXIMUM_DEPTH_EXCEEDED_SCORE=new ArtificialScore(0,0);
     
     private final int score;
     private final int depth;
