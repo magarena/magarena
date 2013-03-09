@@ -177,13 +177,16 @@ buildhive:
 	make games=1000 `date +%s`.t zips
 
 games ?= 10000
+str1 ?= 1
+str2 ?= 1
+life ?= 10
 %.t: $(MAG)
 	echo `hg id -n` > $*.log
 	$(JAVA) -Dmagarena.dir=`pwd`/release magic.DeckStrCal \
 	--seed $* \
-	--ai1 MMAB --str1 1 \
-	--ai2 MMABC --str2 1 \
-	--life 10 \
+	--ai1 MMAB --str1 ${str1} \
+	--ai2 MMABC --str2 ${str2} \
+	--life ${life} \
 	--games 1 \
 	--repeat ${games} >> $*.log 2>&1
 
