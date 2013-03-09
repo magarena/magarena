@@ -18,6 +18,7 @@ public class MMAB implements MagicAI {
     private static final int INITIAL_MAX_GAMES=12000;
     private static final int         MAX_DEPTH=120;
     private static final int         MAX_GAMES=12000;
+    private static final long      SEC_TO_NANO=1000000000L;
 
     private static final int THREADS = Runtime.getRuntime().availableProcessors();
     
@@ -66,6 +67,7 @@ public class MMAB implements MagicAI {
         final List<ArtificialChoiceResults> achoices=new ArrayList<ArtificialChoiceResults>();
         final int artificialLevel = sourceGame.getArtificialLevel(scorePlayer.getIndex());
         final int mainPhases = artificialLevel;
+        final long slice = artificialLevel * Math.min(SEC_TO_NANO, (THREADS * SEC_TO_NANO) / size);
         for (final Object[] choice : choices) {
             final ArtificialChoiceResults achoice=new ArtificialChoiceResults(choice);
             achoices.add(achoice);
@@ -77,23 +79,20 @@ public class MMAB implements MagicAI {
                         workerGame.setKnownCards();
                     }
                     workerGame.setFastChoices(true);
-                    workerGame.setMainPhases(mainPhases);
                     final ArtificialWorker worker=new ArtificialWorker(
                         (int)Thread.currentThread().getId(),
                         workerGame,
-                        scoreBoard,
-                        MAX_DEPTH,
-                        MAX_GAMES
+                        scoreBoard
                     );
-                    worker.evaluateGame(achoice,getPruneScore());
+                    worker.evaluateGame(achoice, getPruneScore(), System.nanoTime() + slice);
                     updatePruneScore(achoice.aiScore.getScore());
                 }
             });
         }
         executor.shutdown();
         try {
-            // wait for 2 * artificialLevel seconds for jobs to finish
-            executor.awaitTermination(2 * artificialLevel, TimeUnit.SECONDS);
+            // wait for artificialLevel seconds for jobs to finish
+            executor.awaitTermination(artificialLevel, TimeUnit.SECONDS);
         } catch (final InterruptedException ex) {
             throw new RuntimeException(ex);
         } finally {
@@ -118,7 +117,9 @@ public class MMAB implements MagicAI {
             " life=" + scorePlayer.getLife() +
             " phase=" + sourceGame.getPhase().getType() + 
             " time=" + timeTaken + 
-            " main=" + mainPhases);
+            " main=" + mainPhases +
+            " slice=" + (slice/1000000)
+            );
         for (final ArtificialChoiceResults achoice : achoices) {
             log((achoice == bestAchoice ? "* " : "  ") + achoice);
         }

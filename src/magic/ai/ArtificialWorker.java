@@ -11,26 +11,23 @@ public class ArtificialWorker {
     private final int id;
     private final MagicGame game;
     private final ArtificialScoreBoard scoreBoard;
-    private final int maxDepth;
-    private final int maxGames;
+
     private int gameCount;
     
-    ArtificialWorker(final int id,final MagicGame game,final ArtificialScoreBoard scoreBoard, final int aMaxDepth, final int aMaxGames) {
+    ArtificialWorker(final int id,final MagicGame game,final ArtificialScoreBoard scoreBoard) {
         this.id=id;
         this.game=game;
         this.scoreBoard=scoreBoard;
-        this.maxDepth = aMaxDepth;
-        this.maxGames = aMaxGames;
     }
     
-    private ArtificialScore runGame(final Object[] nextChoiceResults,final ArtificialPruneScore pruneScore,int depth) {
+    private ArtificialScore runGame(final Object[] nextChoiceResults, final ArtificialPruneScore pruneScore, final int depth, final long maxTime) {
         game.startActions();
         
         if (nextChoiceResults!=null) {
             game.executeNextEvent(nextChoiceResults);
         }
         
-        if (depth>maxDepth) {
+        if (System.nanoTime() > maxTime) {
             final ArtificialScore aiScore=new ArtificialScore(game.getScore(),depth);
             game.undoActions();
             gameCount++;
@@ -47,7 +44,7 @@ public class ArtificialWorker {
                     final long gameId=game.getGameId(pruneScore.getScore());
                     ArtificialScore bestScore=scoreBoard.getGameScore(gameId);
                     if (bestScore==null) {
-                        bestScore=runGame(null,pruneScore,depth);
+                        bestScore=runGame(null,pruneScore,depth,maxTime);
                         scoreBoard.setGameScore(gameId,bestScore.getScore(-depth));
                     } else {
                         bestScore=bestScore.getScore(depth);
@@ -69,18 +66,18 @@ public class ArtificialWorker {
             final int nrOfChoices=choiceResultsList.size();
             
             assert nrOfChoices > 0 : "nrOfChoices is 0";
-            depth+=nrOfChoices;
             
             if (nrOfChoices==1) {
                 game.executeNextEvent(choiceResultsList.get(0));
                 continue;
             }
             
+            final long slice = (maxTime - System.nanoTime()) / nrOfChoices;
             final boolean best=game.getScorePlayer()==event.getPlayer();
             ArtificialScore bestScore=ArtificialScore.INVALID_SCORE;
             ArtificialPruneScore newPruneScore=pruneScore;
             for (final Object[] choiceResults : choiceResultsList) {
-                final ArtificialScore score=runGame(choiceResults,newPruneScore,depth);
+                final ArtificialScore score=runGame(choiceResults, newPruneScore, depth + 1, System.nanoTime() + slice);
                 if (bestScore.isBetter(score,best)) {
                     bestScore=score;
                     // Stop when best score can no longer become the best score at previous levels.
@@ -101,11 +98,11 @@ public class ArtificialWorker {
         return aiScore;
     }
 
-    void evaluateGame(final ArtificialChoiceResults aiChoiceResults, final ArtificialPruneScore pruneScore) {
+    void evaluateGame(final ArtificialChoiceResults aiChoiceResults, final ArtificialPruneScore pruneScore, long maxTime) {
         gameCount = 0;
         
         aiChoiceResults.worker    = id;
-        aiChoiceResults.aiScore   = runGame(game.map(aiChoiceResults.choiceResults),pruneScore,0);
+        aiChoiceResults.aiScore   = runGame(game.map(aiChoiceResults.choiceResults),pruneScore,0,maxTime);
         aiChoiceResults.gameCount = gameCount;
 
         game.undoAllActions();
