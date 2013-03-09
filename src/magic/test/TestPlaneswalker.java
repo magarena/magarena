@@ -19,7 +19,6 @@ class TestPlaneswalker extends TestGameBuilder {
         final MagicPlayerDefinition player2=new MagicPlayerDefinition("Computer",true,profile,14);
         duel.setPlayers(new MagicPlayerDefinition[]{player1,player2});
         duel.setStartPlayer(0);
-        duel.setAIs(new MagicAI[]{null, MagicAIImpl.MCTS.getAI()});
         
         final MagicGame game=duel.nextGame(true);
         game.setPhase(MagicMainPhase.getFirstInstance());
