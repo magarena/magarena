@@ -22,7 +22,7 @@ public class VegasAI implements MagicAI {
     public Object[] findNextEventChoiceResults(final MagicGame sourceGame,final MagicPlayer scorePlayer) {
 
         final MagicGame choiceGame=new MagicGame(sourceGame,scorePlayer);
-        choiceGame.setKnownCards();
+        choiceGame.hideHiddenCards();
         final MagicEvent event=choiceGame.getNextEvent();
         final List<Object[]> choiceResultsList=event.getArtificialChoiceResults(choiceGame);
         

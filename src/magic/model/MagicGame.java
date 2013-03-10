@@ -460,7 +460,7 @@ public class MagicGame {
         return logBook;
     }
         
-    public void setKnownCards() {
+    public void hideHiddenCards() {
         getOpponent(scorePlayer).setHandToUnknown();
         for (final MagicPlayer player : players) {
             player.getLibrary().setKnown(false);

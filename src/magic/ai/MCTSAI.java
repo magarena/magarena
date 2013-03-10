@@ -152,7 +152,7 @@ public class MCTSAI implements MagicAI {
             //clone the MagicGame object for simulation
             final MagicGame rootGame = new MagicGame(startGame, scorePlayer);
             if (!CHEAT) {
-                rootGame.setKnownCards();
+                rootGame.hideHiddenCards();
             }
             
             //pass in a clone of the state, 

@@ -77,7 +77,7 @@ public class MMAB implements MagicAI {
                 public void run() {
                     final MagicGame workerGame=new MagicGame(sourceGame,scorePlayer);
                     if (!CHEAT) {
-                        workerGame.setKnownCards();
+                        workerGame.hideHiddenCards();
                     }
                     workerGame.setFastChoices(true);
                     final MMABWorker worker=new MMABWorker(
@@ -158,7 +158,7 @@ class MMABWorker {
             game.executeNextEvent(nextChoiceResults);
         }
         
-        if (System.nanoTime() > maxTime) {
+        if (System.nanoTime() > maxTime || Thread.currentThread().isInterrupted()) {
             final ArtificialScore aiScore=new ArtificialScore(game.getScore(),depth);
             game.undoActions();
             gameCount++;
