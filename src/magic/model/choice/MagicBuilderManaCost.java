@@ -48,6 +48,8 @@ public class MagicBuilderManaCost {
                 compressedIndex++;
             }
         }
+
+        assert compressedIndex == typeCount : "typeCount is inconsistent: typeCount = " + typeCount + ", compressedIndex = " + compressedIndex;
     }
     
     MagicCostManaType[] getTypes() {
