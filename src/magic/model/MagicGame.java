@@ -415,6 +415,10 @@ public class MagicGame {
         return phase.getType().isMain();
     }
     
+    public boolean isCombatPhase() {
+        return phase.getType().isCombat();
+    }
+    
     public void setStep(final MagicStep aStep) {
         step = aStep;
     }
