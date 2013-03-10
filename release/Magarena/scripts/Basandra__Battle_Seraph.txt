@@ -1,0 +1,12 @@
+name=Basandra, Battle Seraph
+url=http://magiccards.info/cmd/en/184.html
+image=http://magiccards.info/scans/en/cmd/184.jpg
+value=4.235
+rarity=R
+type=Legendary,Creature
+subtype=Angel
+cost={3}{R}{W}
+pt=4/4
+ability=flying
+timing=main
+requires_groovy_code
