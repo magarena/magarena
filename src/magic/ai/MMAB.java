@@ -67,7 +67,6 @@ public class MMAB implements MagicAI {
         final ExecutorService executor = Executors.newFixedThreadPool(THREADS);
         final List<ArtificialChoiceResults> achoices=new ArrayList<ArtificialChoiceResults>();
         final int artificialLevel = sourceGame.getArtificialLevel(scorePlayer.getIndex());
-        final int mainPhases = artificialLevel;
         final long slice = artificialLevel * Math.min(SEC_TO_NANO, (THREADS * SEC_TO_NANO) / size);
         for (final Object[] choice : choices) {
             final ArtificialChoiceResults achoice=new ArtificialChoiceResults(choice);
@@ -118,7 +117,6 @@ public class MMAB implements MagicAI {
             " life=" + scorePlayer.getLife() +
             " phase=" + sourceGame.getPhase().getType() + 
             " time=" + timeTaken + 
-            " main=" + mainPhases +
             " slice=" + (slice/1000000)
             );
         for (final ArtificialChoiceResults achoice : achoices) {
