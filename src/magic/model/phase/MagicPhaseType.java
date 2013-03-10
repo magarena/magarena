@@ -28,6 +28,14 @@ public enum MagicPhaseType {
     }
 
     public boolean isMain() {
-        return this == FirstMain || this == SecondMain;    
+        return this == FirstMain || 
+               this == SecondMain;    
+    }
+    
+    public boolean isCombat() {
+        return this == BeginOfCombat || 
+               this == DeclareAttackers || 
+               this == DeclareBlockers ||
+               this == EndOfCombat;
     }
 }
