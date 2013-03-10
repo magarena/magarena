@@ -174,7 +174,7 @@ inf: $(MAG)
 	-while true; do make `date +%s`.t; done
 
 buildhive:
-	make games=1000 `date +%s`.t zips
+	make games=300 `date +%s`.t zips
 
 games ?= 10000
 str1 ?= 1
