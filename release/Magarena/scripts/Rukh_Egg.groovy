@@ -15,12 +15,13 @@
                 final MagicEvent event,
                 final Object[] choiceResults) {
             //insert trigger to act at the beginning of the next end step
-            outerGame.doAction(new MagicAddTurnTriggerAction(MagicPermanent.NONE, new MagicAtEndOfTurnTrigger() {
+            outerGame.doAction(new MagicAddTriggerAction(new MagicAtEndOfTurnTrigger() {
                 public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final eotPlayer) {
                     game.doAction(new MagicPlayTokenAction(
                         game.getPlayer(event.getPlayer().getIndex()), 
                         TokenCardDefinitions.get("Bird4")
                     ));
+                    game.addDelayedAction(new MagicRemoveTriggerAction(this));
                     return MagicEvent.NONE;
                 }
             }));
