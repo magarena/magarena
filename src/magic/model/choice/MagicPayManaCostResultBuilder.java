@@ -50,6 +50,8 @@ public class MagicPayManaCostResultBuilder {
             return true;
         }
 
+        assert types[index] != null : "types[index] is null";
+
         // Generate all available activations for mana cost type.
         final MagicCostManaType costManaType=types[index];
         final MagicSourceManaActivation[] typeActivations=new MagicSourceManaActivation[activationsSize];
