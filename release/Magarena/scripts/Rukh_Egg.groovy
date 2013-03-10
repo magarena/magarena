@@ -17,7 +17,10 @@
             //insert trigger to act at the beginning of the next end step
             outerGame.doAction(new MagicAddTurnTriggerAction(MagicPermanent.NONE, new MagicAtEndOfTurnTrigger() {
                 public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final eotPlayer) {
-                    game.doAction(new MagicPlayTokenAction(event.getPlayer(), TokenCardDefinitions.get("Bird4")));
+                    game.doAction(new MagicPlayTokenAction(
+                        game.getPlayer(event.getPlayer().getIndex()), 
+                        TokenCardDefinitions.get("Bird4")
+                    ));
                     return MagicEvent.NONE;
                 }
             }));
