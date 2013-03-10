@@ -34,7 +34,7 @@ public class MagicChangePlayerStateAction extends MagicAction {
                         // remove Exhausted state during Untap as MagicUntapPhase 
                         // stores a copy of the state at begin step of untap phase
                         if (aPlayer.getGame().isPhase(MagicPhaseType.Untap)) {
-                            game.addDelayedAction(new MagicRemoveStaticAction(this));
+                            aPlayer.getGame().addDelayedAction(new MagicRemoveStaticAction(this));
                         } else {
                             aPlayer.setState(state);
                         }
