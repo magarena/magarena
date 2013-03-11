@@ -9,4 +9,4 @@ cost={1}{G}
 pt=0/5
 ability=defender
 timing=main
-requires_card_code
+requires_groovy_code=Thallid
