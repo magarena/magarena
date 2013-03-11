@@ -30,8 +30,8 @@ class TestThallid extends TestGameBuilder {
         P.setLife(10);
         addToLibrary(P, "Plains", 10);
         createPermanent(game,P,"Rupture Spire",false,8);
-        addToHand(P, "Thallid Germinator", 1);
         addToHand(P, "Savage Thallid", 1);
+        addToHand(P, "Psychotrope Thallid", 1);
 
         P = opponent;
         
@@ -40,6 +40,7 @@ class TestThallid extends TestGameBuilder {
         createPermanent(game,P,"Rupture Spire",false,8);
         addToHand(P, "Thallid", 1);
         addToHand(P, "Thallid Shell-Dweller", 1);
+        addToHand(P, "Thallid Germinator", 1);
         
         return game;
     }
