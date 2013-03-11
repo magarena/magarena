@@ -292,6 +292,9 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice POS_TARGET_GOBLIN_CREATURE =
             new MagicTargetChoice(MagicTargetFilter.TARGET_GOBLIN_CREATURE,true,MagicTargetHint.Positive,
                     "target Goblin creature ");
+    public static final MagicTargetChoice POS_TARGET_FUNGUS_CREATURE =
+            new MagicTargetChoice(MagicTargetFilter.TARGET_FUNGUS_CREATURE,true,MagicTargetHint.Positive,
+                    "target Fungus creature ");
     public static final MagicTargetChoice POS_TARGET_ELF =
             new MagicTargetChoice(MagicTargetFilter.TARGET_ELF,true,MagicTargetHint.Positive,
                     "target Elf");
