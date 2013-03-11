@@ -22,31 +22,35 @@ import magic.model.target.MagicPumpTargetPicker;
 public class Deranged_Outcast {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
-                    MagicConditionFactory.ManaCost("{1}{G}"),
-                    MagicCondition.ONE_CREATURE_CONDITION,
-                },
+                MagicConditionFactory.ManaCost("{1}{G}"),
+                MagicCondition.ONE_HUMAN_CONDITION,
+            },
             new MagicActivationHints(MagicTiming.Removal),
             "Pump") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                    new MagicPayManaCostEvent(
-                            source,
-                            source.getController(),
-                            MagicManaCost.create("{1}{G}")),
-                    new MagicSacrificePermanentEvent(
-                            source,
-                            source.getController(),
-                            MagicTargetChoice.SACRIFICE_HUMAN)};
+                new MagicPayManaCostEvent(
+                    source,
+                    source.getController(),
+                    MagicManaCost.create("{1}{G}")
+                ),
+                new MagicSacrificePermanentEvent(
+                    source,
+                    source.getController(),
+                    MagicTargetChoice.SACRIFICE_HUMAN
+                )
+            };
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicPumpTargetPicker.create(),
-                    this,
-                    "PN puts two +1/+1 counters on target creature$.");
+                source,
+                MagicTargetChoice.POS_TARGET_CREATURE,
+                MagicPumpTargetPicker.create(),
+                this,
+                "PN puts two +1/+1 counters on target creature$."
+            );
         }
         @Override
         public void executeEvent(
@@ -56,10 +60,11 @@ public class Deranged_Outcast {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeCountersAction(
-                            creature,
-                            MagicCounterType.PlusOne,
-                            2,
-                            true));
+                        creature,
+                        MagicCounterType.PlusOne,
+                        2,
+                        true
+                    ));
                 }
             });
         }
