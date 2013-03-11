@@ -724,6 +724,8 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     
     MagicPermanentFilterImpl TARGET_MERFOLK_YOU_CONTROL = Factory.creature(MagicSubType.Merfolk, Control.You);
     
+    MagicPermanentFilterImpl TARGET_SAPROLING_YOU_CONTROL = Factory.creature(MagicSubType.Saproling, Control.You);
+    
     MagicPermanentFilterImpl TARGET_MYR_YOU_CONTROL = Factory.creature(MagicSubType.Myr, Control.You);
     
     MagicPermanentFilterImpl TARGET_MYR_CREATURE = Factory.creature(MagicSubType.Myr, Control.Any);

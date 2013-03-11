@@ -214,6 +214,18 @@ public interface MagicCondition {
         }
     };
     
+    MagicCondition ONE_HUMAN_CONDITION=new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            return source.getController().getNrOfPermanentsWithSubType(MagicSubType.Human)>=1;
+        }
+    };
+    
+    MagicCondition ONE_SAPROLING_CONDITION=new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            return source.getController().getNrOfPermanentsWithSubType(MagicSubType.Saproling)>=1;
+        }
+    };
+    
     MagicCondition THREE_ATTACKERS_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {
             return source.getController().getNrOfAttackers() >= 3;

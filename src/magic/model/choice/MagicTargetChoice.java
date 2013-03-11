@@ -337,6 +337,9 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice SACRIFICE_SAMURAI =
             new MagicTargetChoice(MagicTargetFilter.TARGET_SAMURAI_YOU_CONTROL,false,MagicTargetHint.None,
                     "a Samurai to sacrifice");
+    public static final MagicTargetChoice SACRIFICE_SAPROLING =
+            new MagicTargetChoice(MagicTargetFilter.TARGET_SAPROLING_YOU_CONTROL,false,MagicTargetHint.None,
+                    "a Saproling to sacrifice");
     public static final MagicTargetChoice SACRIFICE_MERFOLK =
             new MagicTargetChoice(MagicTargetFilter.TARGET_MERFOLK_YOU_CONTROL,false,MagicTargetHint.None,
                     "a Merfolk to sacrifice");
