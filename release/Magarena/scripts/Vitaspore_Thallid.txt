@@ -1,0 +1,11 @@
+name=Vitaspore Thallid
+url=http://magiccards.info/pc/en/143.html
+image=http://magiccards.info/scans/en/pc/143.jpg
+value=3.065
+rarity=C
+type=Creature
+subtype=Fungus
+cost={1}{G}
+pt=1/1
+timing=main
+requires_groovy_code=Thallid,Vitaspore Thallid
