@@ -438,14 +438,14 @@ check_aura:
 check_requires_card_code:
 	diff \
 	<(ls -1 src/magic/card/*.java | cut -d'/' -f 4 | sed 's/.java//' | sort) \
-	<(grep requires_card_code release/Magarena/scripts/*.txt | sed 's/.*=//' | sed 's/,\([^ ]\)/\n\1/' | sed 's/.*scripts\///;s/.txt.*//' | sed 's/[^A-Za-z0-9]/_/g' | sort | uniq)
+	<(grep requires_card_code -r release/Magarena/scripts/ | sed 's/.*=//' | sed 's/,\([^ ]\)/\n\1/' | sed 's/.*scripts\///;s/.txt.*//' | sed 's/[^A-Za-z0-9]/_/g' | sort | uniq)
 
 # every card that requires groovy code has a corresponding groovy script file
 # every groovy script file has a corresponding card script that requires groovy code
 check_requires_groovy_code:
 	diff \
 	<(ls -1 release/Magarena/scripts/*.groovy | cut -d'/' -f 4 | sed 's/.groovy//' | sort) \
-	<(grep requires_groovy_code release/Magarena/scripts/*.txt | sed 's/.*=//' | sed 's/,\([^ ]\)/\n\1/' | sed 's/.*scripts\///;s/.txt.*//' | sed 's/[^A-Za-z0-9]/_/g' | sort | uniq)
+	<(grep requires_groovy_code -r release/Magarena/scripts/ | sed 's/.*=//' | sed 's/,\([^ ]\)/\n\1/' | sed 's/.*scripts\///;s/.txt.*//' | sed 's/[^A-Za-z0-9]/_/g' | sort | uniq)
 
 # script name is canonical card name
 check_script_name:
