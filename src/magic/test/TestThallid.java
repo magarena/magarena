@@ -32,6 +32,7 @@ class TestThallid extends TestGameBuilder {
         createPermanent(game,P,"Rupture Spire",false,8);
         addToHand(P, "Savage Thallid", 1);
         addToHand(P, "Psychotrope Thallid", 1);
+        addToHand(P, "Deathspore Thallid", 1);
 
         P = opponent;
         
