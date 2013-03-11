@@ -20,7 +20,7 @@
                 MagicTargetChoice.POS_TARGET_CREATURE,
                 MagicPumpTargetPicker.create(),
                 this,
-                "Target creature\$ gets +1+1 until end of turn."
+                "Target creature\$ gets +1/+1 until end of turn."
             );
         }
         @Override
