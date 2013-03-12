@@ -1,3 +1,27 @@
+def T = new MagicWhenDamageIsDealtTrigger() {
+    @Override
+    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+        return (damage.getSource().isCreature() &&
+                damage.isCombat() &&
+                damage.getTarget() == permanent) ?
+            new MagicEvent(
+                permanent,
+                damage.getSource(),
+                this,
+                "Destroy RN."
+            ):
+            MagicEvent.NONE;
+    }
+    
+    @Override
+    public void executeEvent(
+            final MagicGame game,
+            final MagicEvent event,
+            final Object[] choiceResults) {
+        game.doAction(new MagicDestroyAction(event.getRefPermanent()));
+    }
+}
+
 [
     new MagicPlaneswalkerActivation(1) {
         @Override
@@ -13,29 +37,7 @@
                 final MagicGame outerGame,
                 final MagicEvent outerEvent,
                 final Object[] outerChoiceResults) {
-            MagicWhenDamageIsDealtTrigger trigger = new MagicWhenDamageIsDealtTrigger() {
-                @Override
-                public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-                    return (damage.getSource().isCreature() &&
-                            damage.isCombat() &&
-                            damage.getTarget() == permanent) ?
-                        new MagicEvent(
-                            permanent,
-                            damage.getSource(),
-                            this,
-                            "Destroy RN."
-                        ):
-                        MagicEvent.NONE;
-                }
-                
-                @Override
-                public void executeEvent(
-                        final MagicGame game,
-                        final MagicEvent event,
-                        final Object[] choiceResults) {
-                    game.doAction(new MagicDestroyAction(event.getRefPermanent()));
-                }
-            }
+            final MagicWhenDamageIsDealtTrigger trigger = T;
             outerGame.doAction(new MagicAddTriggerAction(outerEvent.getPermanent(), trigger));
             // remove the trigger during player's next upkeep
             MagicAtUpkeepTrigger cleanup = new MagicAtUpkeepTrigger() {
