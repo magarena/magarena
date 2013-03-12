@@ -51,7 +51,7 @@
       <manifest>
         <attribute name="Main-Class" value="magic.MagicMain" />
       	<attribute name="SplashScreen-Image" value="magic/data/textures/logo.jpg" />
-        <attribute name="Class-Path" value="lib/groovy-all-2.0.6.jar" />
+        <attribute name="Class-Path" value="lib/groovy-all-2.1.1.jar" />
       </manifest>
     </jar>
   </target>

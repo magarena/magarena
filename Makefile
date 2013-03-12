@@ -1,5 +1,5 @@
 JAVAEA=java -ea -Xms256M -Xmx256M -Ddebug=true
-LIBS=.:lib/annotations.jar:lib/jsr305.jar:release/lib/groovy-all-2.0.6.jar
+LIBS=.:lib/annotations.jar:lib/jsr305.jar:release/lib/groovy-all-2.1.1.jar
 JAVA=${JAVAEA} -Dcom.sun.management.jmxremote -cp $(LIBS):release/Magarena.jar
 SHELL=/bin/bash
 BUILD=build
