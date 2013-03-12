@@ -25,4 +25,12 @@ public class MagicConditionFactory {
     public static MagicCondition ManaCost(String manaCost) {
         return MagicManaCost.create(manaCost).getCondition();
     }
+    public static MagicCondition PlusOneCounterAtLeast(final int n) {
+        return new MagicCondition() {
+            public boolean accept(final MagicSource source) {
+                final MagicPermanent permanent = (MagicPermanent)source;
+                return permanent.getCounters(MagicCounterType.PlusOne) >= n;
+            }
+        };
+    }
 }

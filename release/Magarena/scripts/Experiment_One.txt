@@ -1,0 +1,12 @@
+name=Experiment One
+url=http://magiccards.info/gtc/en/119.html
+image=http://magiccards.info/scans/en/gtc/119.jpg
+value=3.059
+rarity=U
+type=Creature
+subtype=Human,Ooze
+cost={G}
+pt=1/1
+ability=evolve
+timing=main
+requires_groovy_code

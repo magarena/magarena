@@ -28,18 +28,19 @@ class TestEvolve extends TestGameBuilder {
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
         createPermanent(game,P,"Rupture Spire",false,8);
-        addToHand(P, "Shambleshark", 1);
-        addToHand(P, "Adaptive Snapjaw", 1);
-        addToHand(P, "Cloudfin Raptor", 1);
         addToHand(P, "Crocanura", 1);
         addToHand(P, "Clinging Anemones", 1);
         addToHand(P, "Elusive Krasis", 1);
+        addToHand(P, "Experiment One", 1);
 
         P = opponent;
         
         P.setLife(1);
         addToLibrary(P, "Plains", 10);
         createPermanent(game,P,"Rupture Spire",false,8);
+        addToHand(P, "Shambleshark", 1);
+        addToHand(P, "Adaptive Snapjaw", 1);
+        addToHand(P, "Cloudfin Raptor", 1);
         
         return game;
     }
