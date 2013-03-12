@@ -1,27 +1,3 @@
-def T = new MagicWhenDamageIsDealtTrigger() {
-    @Override
-    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-        return (damage.getSource().isCreature() &&
-                damage.isCombat() &&
-                damage.getTarget() == permanent) ?
-            new MagicEvent(
-                permanent,
-                damage.getSource(),
-                this,
-                "Destroy RN."
-            ):
-            MagicEvent.NONE;
-    }
-    
-    @Override
-    public void executeEvent(
-            final MagicGame game,
-            final MagicEvent event,
-            final Object[] choiceResults) {
-        game.doAction(new MagicDestroyAction(event.getRefPermanent()));
-    }
-}
-
 [
     new MagicPlaneswalkerActivation(1) {
         @Override
@@ -35,20 +11,45 @@ def T = new MagicWhenDamageIsDealtTrigger() {
         @Override
         public void executeEvent(
                 final MagicGame outerGame,
-                final MagicEvent event,
-                final Object[] choiceResults) {
-            outerGame.doAction(new MagicAddTriggerAction(event.getPermanent(), T));
+                final MagicEvent outerEvent,
+                final Object[] outerChoiceResults) {
+            MagicWhenDamageIsDealtTrigger trigger = new MagicWhenDamageIsDealtTrigger() {
+                @Override
+                public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+                    return (damage.getSource().isCreature() &&
+                            damage.isCombat() &&
+                            damage.getTarget() == permanent) ?
+                        new MagicEvent(
+                            permanent,
+                            damage.getSource(),
+                            this,
+                            "Destroy RN."
+                        ):
+                        MagicEvent.NONE;
+                }
+                
+                @Override
+                public void executeEvent(
+                        final MagicGame game,
+                        final MagicEvent event,
+                        final Object[] choiceResults) {
+                    game.doAction(new MagicDestroyAction(event.getRefPermanent()));
+                }
+            }
+            outerGame.doAction(new MagicAddTriggerAction(outerEvent.getPermanent(), trigger));
             // remove the trigger during player's next upkeep
-            outerGame.doAction(new MagicAddTriggerAction(event.getPermanent(), new MagicAtUpkeepTrigger() {
+            MagicAtUpkeepTrigger cleanup = new MagicAtUpkeepTrigger() {
                 @Override
                 public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-                    if (upkeepPlayer.getId() == event.getPlayer().getId()) {
-                        game.addDelayedAction(new MagicRemoveTriggerAction(permanent, T));
+                    if (upkeepPlayer.getId() == outerEvent.getPlayer().getId()) {
+                        game.addDelayedAction(new MagicRemoveTriggerAction(permanent, trigger));
                         game.addDelayedAction(new MagicRemoveTriggerAction(permanent, this));
                     }
                     return MagicEvent.NONE;
                 }
-            }));
+            };
+            outerGame.doAction(new MagicAddTriggerAction(outerEvent.getPermanent(), cleanup));
+            
         }
     },
     new MagicPlaneswalkerActivation(-3) {
