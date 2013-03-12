@@ -17,8 +17,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
-import org.codehaus.groovy.control.customizers.ImportCustomizer;
 import org.codehaus.groovy.control.CompilerConfiguration;
+import org.codehaus.groovy.control.customizers.ImportCustomizer;
+import org.codehaus.groovy.control.customizers.ASTTransformationCustomizer;
 import groovy.lang.GroovyClassLoader;
 import groovy.lang.GroovyShell;
 
@@ -55,7 +56,8 @@ public class CardDefinitions {
                 "magic.model.target",
                 "magic.model.trigger",
                 "magic.card"
-            )
+            ),
+            new ASTTransformationCustomizer(groovy.transform.CompileStatic.class)
         )
     );
 
