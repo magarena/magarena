@@ -1,0 +1,12 @@
+name=Flinthoof Boar
+url=http://magiccards.info/m13/en/171.html
+image=http://magiccards.info/scans/en/m13/171.jpg
+value=3.754
+rarity=U
+type=Creature
+subtype=Boar
+cost={1}{G}
+pt=2/2
+ability=gains {R} haste
+timing=main
+requires_groovy_code
