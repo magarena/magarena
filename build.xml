@@ -17,7 +17,7 @@
   <!-- deps - Download dependencies -->
   <target name="deps" unless="skip.download">
       <echo message="downloading groovy to ${lib}"/>
-      <get src="http://repo1.maven.org/maven2/org/codehaus/groovy/groovy-all/2.0.6/groovy-all-2.0.6.jar" dest="${lib}" skipexisting="true" />
+      <get src="http://repo1.maven.org/maven2/org/codehaus/groovy/groovy-all/2.1.1/groovy-all-2.1.1.jar" dest="${lib}" skipexisting="true" />
   </target>
 
   <!-- init - Create temporary directory to build the program -->
