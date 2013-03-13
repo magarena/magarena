@@ -1,13 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicDrawAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
-
-public class Slith_Strider {
-    public static final MagicWhenBecomesBlockedTrigger T1 = new MagicWhenBecomesBlockedTrigger() {
+[
+    new MagicWhenBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocked) {
             return (permanent == blocked) ?
@@ -18,7 +10,6 @@ public class Slith_Strider {
                 ) :
                 MagicEvent.NONE;
         }
-        
         @Override
         public void executeEvent(
                 final MagicGame game,
@@ -26,5 +17,5 @@ public class Slith_Strider {
                 final Object[] choiceResults) {
             game.doAction(new MagicDrawAction(event.getPlayer(),1));
         }
-    };
-}
+    }
+]
