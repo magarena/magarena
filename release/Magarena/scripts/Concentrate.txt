@@ -6,4 +6,4 @@ rarity=U
 type=Sorcery
 cost={2}{U}{U}
 timing=draw
-requires_card_code=Harmonize
+requires_groovy_code=Harmonize

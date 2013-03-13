@@ -8,4 +8,4 @@ subtype=Elemental,Beast
 cost={3}{R}{R}
 pt=4/4
 timing=main
-requires_card_code=Fledgling Griffin
+requires_groovy_code=Fledgling Griffin

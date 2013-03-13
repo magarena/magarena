@@ -8,4 +8,4 @@ subtype=Wall
 cost={X}
 ability=defender,enters with x It enters the battlefield with X +1/+1 counters on it
 timing=main
-requires_card_code=Ivy Elemental
+requires_groovy_code=Ivy Elemental

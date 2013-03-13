@@ -8,4 +8,4 @@ subtype=Beast
 cost={X}{G}{G}
 ability=enters with x It enters the battlefield with X +1/+1 counters on it,regenerate {1}{G}
 timing=main
-requires_card_code=Ivy Elemental
+requires_groovy_code=Ivy Elemental
