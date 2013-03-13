@@ -8,4 +8,4 @@ subtype=Aura
 cost={G}
 timing=enchantment
 enchant=pump,pos creature
-requires_card_code
+requires_groovy_code
