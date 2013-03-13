@@ -9,4 +9,4 @@ cost={1}{G}{G}
 pt=6/6
 timing=main
 ability=vanishing 2,kicker {4} it enters the battlefield with three additional time counters on it
-requires_card_code
+requires_groovy_code
