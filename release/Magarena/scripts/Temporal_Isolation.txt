@@ -14,4 +14,4 @@ timing=flash
 # shadow it can't block much and the aura prevents it
 # from doing any damage.
 enchant=can't attack or block,neg creature
-requires_card_code
+requires_groovy_code
