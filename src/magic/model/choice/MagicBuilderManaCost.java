@@ -82,23 +82,24 @@ public class MagicBuilderManaCost {
     }
     
     public void addType(final MagicCostManaType type,final int amount) {
-        if (amount>0) {
-            final int index=type.ordinal();
-            if (amounts[index]==0) {
-                typeCount++;
-            }
-            amounts[index]+=amount;
-            minimumAmount+=amount;
+        assert amount >= 0 : "amount of mana to add is negative: amount = " + amount;
+        final int index=type.ordinal();
+        amounts[index]+=amount;
+        minimumAmount+=amount;
+        if (amount > 0 && amounts[index] == amount) {
+            typeCount++;
         }
     }
     
     void removeType(final MagicCostManaType type,final int amount) {
+        assert amount >= 0 : "amount of mana to remove is negative: amount = " + amount;
         final int index=type.ordinal();
         amounts[index]-=amount;
-        if (amounts[index]<=0) {
+        minimumAmount-=amount;
+        assert amounts[index] >= 0 : "amounts[index] is negative: amounts[index] = " + amounts[index];
+        if (amount > 0 && amounts[index] == 0) {
             typeCount--;
         }
-        minimumAmount-=amount;
     }
     
     void addTypes(final List<MagicCostManaType> types) {
