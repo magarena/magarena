@@ -1,15 +1,5 @@
-package magic.card;
-
-import magic.model.MagicCounterType;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicChangeCountersAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
-
-public class Llanowar_Elite {                 
-    public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
+[
+    new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(
             final MagicGame game,
@@ -25,4 +15,4 @@ public class Llanowar_Elite {
             return MagicEvent.NONE;
         }
     };
-}
+]
