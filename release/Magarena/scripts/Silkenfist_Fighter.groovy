@@ -1,21 +1,14 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicUntapAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
-
-public class Silkenfist_Fighter {
-    public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
+[
+    new MagicWhenBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             return (creature == permanent) ?
                 new MagicEvent(
                     permanent,
                     this, 
-                    "Untap SN.") :
-            MagicEvent.NONE;
+                    "Untap SN."
+                ):
+                MagicEvent.NONE;
         }
         
         @Override
@@ -25,5 +18,5 @@ public class Silkenfist_Fighter {
                 final Object[] choiceResults) {
             game.doAction(new MagicUntapAction(event.getPermanent()));
         }
-    };
-}
+    }
+]
