@@ -1,14 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPowerToughness;
-import magic.model.mstatic.MagicLayer;
-import magic.model.mstatic.MagicStatic;
-import magic.model.target.MagicTargetFilter;
-
-public class Squirrel_Mob {
-    public static final MagicStatic S = new MagicStatic(MagicLayer.ModPT) {
+[
+    new MagicStatic(MagicLayer.ModPT) {
         @Override
         public void modPowerToughness(
                 final MagicPermanent source,
@@ -20,5 +11,5 @@ public class Squirrel_Mob {
                     MagicTargetFilter.TARGET_SQUIRREL_CREATURE).size() - 1;
             pt.add(size,size);
         }
-    };
-}
+    }
+]
