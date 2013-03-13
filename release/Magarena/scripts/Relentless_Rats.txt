@@ -8,4 +8,4 @@ subtype=Rat
 cost={1}{B}{B}
 pt=2/2
 timing=main
-requires_card_code
+requires_groovy_code
