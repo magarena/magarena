@@ -1,15 +1,5 @@
-package magic.card;
-
-import magic.model.MagicAbility;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.mstatic.MagicLayer;
-import magic.model.mstatic.MagicStatic;
-
-import java.util.Set;
-
-public class Canopy_Cover {
-    public static final Object S = new MagicStatic(MagicLayer.Ability) {
+[
+    new MagicStatic(MagicLayer.Ability) {
         @Override
         public void modAbilityFlags(
             final MagicPermanent source,
@@ -28,5 +18,5 @@ public class Canopy_Cover {
                 final MagicPermanent target) {
             return MagicStatic.acceptLinked(game, source, target);
         }
-    };
-}
+    }
+]
