@@ -8,4 +8,4 @@ subtype=Elemental,Warrior
 cost={5}{B}
 pt=4/3
 timing=main
-requires_card_code
+requires_groovy_code
