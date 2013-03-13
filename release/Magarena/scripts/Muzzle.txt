@@ -8,4 +8,4 @@ subtype=Aura
 cost={1}{W}
 timing=aura
 enchant=can't attack or block,neg creature
-requires_card_code=Defang
+requires_groovy_code=Defang
