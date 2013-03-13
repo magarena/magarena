@@ -9,4 +9,4 @@ cost={3}{W}
 pt=2/4
 ability=flying,multikicker {W} you gain 2 life for each time it was kicked
 timing=main
-requires_card_code
+requires_groovy_code
