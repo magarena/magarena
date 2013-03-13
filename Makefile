@@ -506,3 +506,8 @@ cards/cards_per_set.tsv: cards/existing_tip_full.txt
 	| sort -n \
 	| sed 's/^ *//g;s/ /\t/' \
 	> $@
+
+%.convert:
+	hg mv src/magic/card/$*.java release/Magarena/scripts
+	vim -p release/Magarena/scripts/$*.*
+	hg commit -m "convert from java code to groovy code"

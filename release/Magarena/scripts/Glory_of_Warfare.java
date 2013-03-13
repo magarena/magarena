@@ -1,14 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPowerToughness;
-import magic.model.mstatic.MagicLayer;
-import magic.model.mstatic.MagicStatic;
-import magic.model.target.MagicTargetFilter;
-
-public class Glory_of_Warfare {
-    public static final MagicStatic S = new MagicStatic(
+[    
+    new MagicStatic(
         MagicLayer.ModPT, 
         MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL) {
         @Override
@@ -20,5 +11,5 @@ public class Glory_of_Warfare {
                 pt.add(0,2);
             }
         }
-    };
-}
+    }
+]
