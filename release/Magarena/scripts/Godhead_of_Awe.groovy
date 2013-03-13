@@ -1,15 +1,5 @@
-
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPowerToughness;
-import magic.model.mstatic.MagicLayer;
-import magic.model.mstatic.MagicStatic;
-import magic.model.target.MagicTargetFilter;
-
-public class Godhead_of_Awe {
-    public static final MagicStatic S = new MagicStatic(
+[
+    new MagicStatic(
         MagicLayer.SetPT, 
         MagicTargetFilter.TARGET_CREATURE) {
         @Override
@@ -20,5 +10,5 @@ public class Godhead_of_Awe {
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
             return source != target;
         }
-    };
-}
+    }
+]
