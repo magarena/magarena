@@ -1,14 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicMillLibraryAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
-
-public class Screeching_Skaab {
-    public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
+[
+    new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -28,5 +19,5 @@ public class Screeching_Skaab {
                 final Object[] choiceResults) {
             game.doAction(new MagicMillLibraryAction(event.getPlayer(),2));
         }
-    };
-}
+    }
+]
