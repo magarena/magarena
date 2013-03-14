@@ -1,14 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicDrawAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicLifeChangeTriggerData;
-import magic.model.trigger.MagicWhenLifeIsGainedTrigger;
-
-public class Drogskol_Reaver {
-    public static final MagicWhenLifeIsGainedTrigger T = new MagicWhenLifeIsGainedTrigger() {
+[
+    new MagicWhenLifeIsGainedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicLifeChangeTriggerData lifeChange) {
             return permanent.isController(lifeChange.player) ?
@@ -26,5 +17,5 @@ public class Drogskol_Reaver {
                 final Object[] choiceResults) {
             game.doAction(new MagicDrawAction(event.getPlayer(),1));
         }
-    };
-}
+    }
+]

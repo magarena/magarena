@@ -9,4 +9,4 @@ cost={5}{W}{U}
 pt=3/5
 ability=flying,double strike,lifelink
 timing=fmain
-requires_card_code
+requires_groovy_code
