@@ -4,10 +4,11 @@
         public MagicEvent getEvent(final MagicPermanent permanent) {
             final MagicPlayer opponent = permanent.getOpponent();
             return new MagicEvent(
-                    permanent,
-                    opponent,
-                    this,
-                    opponent + " discards a card at random.");
+                permanent,
+                opponent,
+                this,
+                "PN discards a card at random."
+            );
         }
         @Override
         public void executeEvent(
