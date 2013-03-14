@@ -1,15 +1,5 @@
-package magic.card;
-
-import magic.model.MagicCard;
-import magic.model.MagicCardList;
-import magic.model.MagicGame;
-import magic.model.MagicPlayer;
-import magic.model.MagicPowerToughness;
-import magic.model.MagicType;
-import magic.model.mstatic.MagicCDA;
-
-public class Tarmogoyf {
-    public static final MagicCDA CDA = new MagicCDA() {
+[
+    new MagicCDA() {
         @Override
         public void modPowerToughness(final MagicGame game,final MagicPlayer player,final MagicPowerToughness pt) {
             final MagicCardList cardList = new MagicCardList(player.getGraveyard());
@@ -25,5 +15,5 @@ public class Tarmogoyf {
             }        
             pt.set(types, types + 1);
         }
-    };
-}
+    }
+]
