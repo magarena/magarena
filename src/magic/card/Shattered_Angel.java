@@ -6,21 +6,23 @@ import magic.model.action.MagicChangeLifeAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicLandfallTrigger;
+import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
 
 public class Shattered_Angel {
-    public static final MagicLandfallTrigger T = new MagicLandfallTrigger() {
+    public static final Object T = new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
-        public MagicEvent getEvent(final MagicPermanent permanent) {
-            return new MagicEvent(
-                permanent,
-                new MagicSimpleMayChoice(
-                    MagicSimpleMayChoice.GAIN_LIFE,
-                    3,
-                    MagicSimpleMayChoice.DEFAULT_YES),
-                this,
-                "PN may$ gain 3 life."
-            );
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
+            return (played.isEnemy(permanent) && played.isLand()) ?
+                new MagicEvent(
+                    permanent,
+                    new MagicSimpleMayChoice(
+                        MagicSimpleMayChoice.GAIN_LIFE,
+                        3,
+                        MagicSimpleMayChoice.DEFAULT_YES),
+                    this,
+                    "PN may$ gain 3 life."
+                ):
+                MagicEvent.NONE;
         }
         
         @Override

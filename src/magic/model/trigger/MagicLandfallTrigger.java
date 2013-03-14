@@ -16,8 +16,7 @@ public abstract class MagicLandfallTrigger extends MagicWhenOtherComesIntoPlayTr
     
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
-        final MagicPlayer player = permanent.getController();
-        return (player == played.getController() && played.isLand()) ?
+        return (played.isFriend(permanent) && played.isLand()) ?
             getEvent(permanent) :
             MagicEvent.NONE;
     }
