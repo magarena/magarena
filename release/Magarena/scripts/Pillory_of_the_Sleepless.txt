@@ -10,4 +10,4 @@ cost={1}{W}{B}
 given_ability=can't attack or block
 timing=tapping
 enchant=can't attack or block,neg creature
-requires_card_code
+requires_groovy_code
