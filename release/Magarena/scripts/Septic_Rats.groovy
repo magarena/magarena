@@ -1,14 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicChangeTurnPTAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenAttacksTrigger;
-
-public class Septic_Rats {
-    public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
+[
+    new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
             return (permanent==attacker && 
@@ -27,5 +18,5 @@ public class Septic_Rats {
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),1,1));
         }
-    };
-}
+    }
+]
