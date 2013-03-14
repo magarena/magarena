@@ -1,15 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPayedCost;
-import magic.model.MagicPlayerState;
-import magic.model.action.MagicChangePlayerStateAction;
-import magic.model.event.MagicEvent;
-import magic.model.event.MagicSpellCardEvent;
-import magic.model.stack.MagicCardOnStack;
-
-public class Safe_Passage {
-    public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
+[
+    new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
@@ -24,5 +14,5 @@ public class Safe_Passage {
                 final Object[] choiceResults) {
             game.doAction(new MagicChangePlayerStateAction(event.getPlayer(),MagicPlayerState.PreventAllDamage));
         }
-    };
-}
+    }
+]
