@@ -7,4 +7,4 @@ type=Land
 mana=b1g1r1u1w1
 timing=land
 ability=tap add mana any
-requires_card_code
+requires_groovy_code

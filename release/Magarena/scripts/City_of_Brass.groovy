@@ -1,14 +1,5 @@
-package magic.card;
-
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicDealDamageAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenBecomesTappedTrigger;
-
-public class City_of_Brass {
-    public static final MagicWhenBecomesTappedTrigger T = new MagicWhenBecomesTappedTrigger() {
+[
+    new MagicWhenBecomesTappedTrigger() {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent tapped) {
             return (permanent==tapped) ?
                 new MagicEvent(
@@ -18,7 +9,6 @@ public class City_of_Brass {
                 ) :
                 MagicEvent.NONE;
         }
-
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
@@ -26,5 +16,5 @@ public class City_of_Brass {
             final MagicDamage damage=new MagicDamage(event.getSource(),event.getPlayer(),1);
             game.doAction(new MagicDealDamageAction(damage));
         }
-    };
-}
+    }
+]
