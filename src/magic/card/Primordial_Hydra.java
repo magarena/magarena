@@ -28,8 +28,6 @@ public class Primordial_Hydra {
         }
     };
     
-    public static final MagicWhenComesIntoPlayTrigger ETB = Ivy_Elemental.ETB;
-    
     public static final MagicAtUpkeepTrigger T2 = new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {

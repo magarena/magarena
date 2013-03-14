@@ -8,3 +8,4 @@ cost={X}
 timing=artifact
 ability=enters with x It enters the battlefield with X charge counters on it
 requires_card_code
+requires_groovy_code=Ivy Elemental

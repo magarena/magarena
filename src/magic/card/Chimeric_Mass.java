@@ -85,6 +85,4 @@ public class Chimeric_Mass {
             game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT,ST));
         }
     };
-
-    public static final MagicWhenComesIntoPlayTrigger ETB = Ivy_Elemental.ETB;
 }
