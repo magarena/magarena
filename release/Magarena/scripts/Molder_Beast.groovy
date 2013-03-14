@@ -1,13 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeTurnPTAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
-
-public class Molder_Beast {
-    public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
+[
+    new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
             return (otherPermanent.isArtifact()) ?
@@ -24,5 +16,5 @@ public class Molder_Beast {
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),2,0));
         }
-    };
-}
+    }
+]
