@@ -9,4 +9,4 @@ cost={2}{R}{R}
 pt=7/7
 ability=doesn't untap during untap step,enters tapped
 timing=main
-requires_card_code
+requires_groovy_code

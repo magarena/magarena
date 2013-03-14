@@ -1,15 +1,5 @@
-package magic.card;
-
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicUntapAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
-
-
-public class Deep_Slumber_Titan {
-    public static final MagicWhenDamageIsDealtTrigger T1 = new MagicWhenDamageIsDealtTrigger() {
+[
+    new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             return (damage.getTarget() == permanent && permanent.isTapped()) ?
@@ -26,5 +16,5 @@ public class Deep_Slumber_Titan {
                 final Object[] choiceResults) {
             game.doAction(new MagicUntapAction(event.getPermanent()));
         }
-    };
-}
+    }
+]
