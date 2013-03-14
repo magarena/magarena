@@ -1,14 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicChangeLifeAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenDiesTrigger;
-
-public class Kokusho__the_Evening_Star {
-    public static final MagicWhenDiesTrigger T = new MagicWhenDiesTrigger() {
+[
+    new MagicWhenDiesTrigger() {
         @Override
         public MagicEvent getEvent(final MagicPermanent permanent) {
             return new MagicEvent(
@@ -27,5 +18,5 @@ public class Kokusho__the_Evening_Star {
             game.doAction(new MagicChangeLifeAction(player.getOpponent(),-5));
             game.doAction(new MagicChangeLifeAction(player,5));
         }
-    };
-}
+    }
+]
