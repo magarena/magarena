@@ -13,5 +13,5 @@
                 MagicManaCost.create("{W}"))
             ];
         }
-    };
+    }
 ]
