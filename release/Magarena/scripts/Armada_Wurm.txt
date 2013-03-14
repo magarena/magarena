@@ -9,4 +9,4 @@ pt=5/5
 cost={2}{G}{G}{W}{W}
 ability=trample
 timing=main
-requires_card_code
+requires_groovy_code
