@@ -1,6 +1,7 @@
 package magic.model;
 
 import java.util.EnumSet;
+import java.util.Set;
 
 public enum MagicType {
 
@@ -25,8 +26,8 @@ public enum MagicType {
     Vanguard,
     ;
     
-    public static final EnumSet<MagicType> ALL_CARD_TYPES = EnumSet.range(Artifact, Vanguard);
-    public static final EnumSet<MagicType> FILTER_TYPES = EnumSet.of(
+    public static final Set<MagicType> ALL_CARD_TYPES = EnumSet.range(Artifact, Vanguard);
+    public static final Set<MagicType> FILTER_TYPES = EnumSet.of(
             Legendary,
             Artifact,
             Creature,
