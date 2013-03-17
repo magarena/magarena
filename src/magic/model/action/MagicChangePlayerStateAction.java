@@ -5,9 +5,11 @@ import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPlayerState;
+import magic.model.event.MagicEvent;
 import magic.model.phase.MagicPhaseType;
 import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicLayer;
+import magic.model.trigger.MagicAtUpkeepTrigger;
 
 public class MagicChangePlayerStateAction extends MagicAction {
 
@@ -24,23 +26,30 @@ public class MagicChangePlayerStateAction extends MagicAction {
         if (player.hasState(state)) {
             // do nothing
         } else if (state == MagicPlayerState.Exhausted) {
-            // no duration, manually removed
-            game.doAction(new MagicAddStaticAction(new MagicStatic(MagicLayer.Player) {
+            // no duration, manually removed during player's next upkeep
+            final MagicStatic exhausted = new MagicStatic(MagicLayer.Player) {
                 @Override
                 public void modPlayer(
                         final MagicPermanent source,
                         final MagicPlayer aPlayer) {
                     if (player.getId() == aPlayer.getId()) {
-                        // remove Exhausted state during Untap as MagicUntapPhase 
-                        // stores a copy of the state at begin step of untap phase
-                        if (aPlayer.getGame().isPhase(MagicPhaseType.Untap)) {
-                            aPlayer.getGame().addDelayedAction(new MagicRemoveStaticAction(this));
-                        } else {
-                            aPlayer.setState(state);
-                        }
+                        aPlayer.setState(state);
                     }
-                }   
-            }));
+                }
+            };
+            game.doAction(new MagicAddStaticAction(exhausted));
+            
+            MagicAtUpkeepTrigger cleanup = new MagicAtUpkeepTrigger() {
+                @Override
+                public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+                    if (player.getId() == upkeepPlayer.getId()) {
+                        game.addDelayedAction(new MagicRemoveStaticAction(exhausted));
+                        game.addDelayedAction(new MagicRemoveTriggerAction(this));
+                    }
+                    return MagicEvent.NONE;
+                }
+            };
+            game.doAction(new MagicAddTriggerAction(cleanup));
         } else {
             // until end of turn
             game.doAction(new MagicAddStaticAction(new MagicStatic(MagicLayer.Player, MagicStatic.UntilEOT) {
