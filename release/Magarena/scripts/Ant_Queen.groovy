@@ -1,0 +1,28 @@
+[
+    new MagicPermanentActivation(
+        [
+            MagicConditionFactory.ManaCost("{1}{G}"),
+        ],
+        new MagicActivationHints(MagicTiming.Flash),
+        "Token") {
+        @Override
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
+            return [new MagicPayManaCostEvent(source, source.getController(), MagicManaCost.create("{1}{G}"))];
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
+                source,
+                this,
+                "Put a 1/1 green Insect creature token onto the battlefield."
+            );
+        }
+        @Override
+        public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] choiceResults) {
+            game.doAction(new MagicPlayTokenAction(event.getPlayer(), TokenCardDefinitions.get("Insect4")));
+        }
+    }
+]

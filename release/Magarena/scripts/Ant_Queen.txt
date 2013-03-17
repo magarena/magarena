@@ -1,0 +1,11 @@
+name=Ant Queen
+url=http://magiccards.info/m10/en/166.html
+image=http://magiccards.info/scans/en/m10/166.jpg
+value=4.465
+rarity=R
+type=Creature
+subtype=Insect
+cost={3}{G}{G}
+pt=5/5
+timing=main
+requires_groovy_code
