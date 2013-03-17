@@ -15,12 +15,7 @@ import magic.model.phase.MagicPhase;
 
 public class MMAB implements MagicAI {
     
-    private static final int INITIAL_MAX_DEPTH=120;
-    private static final int INITIAL_MAX_GAMES=12000;
-    private static final int         MAX_DEPTH=120;
-    private static final int         MAX_GAMES=12000;
     private static final long      SEC_TO_NANO=1000000000L;
-
     private static final int THREADS = Runtime.getRuntime().availableProcessors();
     
     private final boolean LOGGING;
@@ -82,7 +77,8 @@ public class MMAB implements MagicAI {
                     final MMABWorker worker=new MMABWorker(
                         (int)Thread.currentThread().getId(),
                         workerGame,
-                        scoreBoard
+                        scoreBoard,
+                        CHEAT
                     );
                     worker.evaluateGame(achoice, getPruneScore(), System.nanoTime() + slice);
                     updatePruneScore(achoice.aiScore.getScore());
@@ -112,12 +108,13 @@ public class MMAB implements MagicAI {
 
         // Logging.
         final long timeTaken = System.currentTimeMillis() - startTime;
-        log("MMAB" + 
+        log("MMAB" +
+            " cheat=" + CHEAT +
             " index=" + scorePlayer.getIndex() +
             " life=" + scorePlayer.getLife() +
             " phase=" + sourceGame.getPhase().getType() + 
-            " time=" + timeTaken + 
-            " slice=" + (slice/1000000)
+            " slice=" + (slice/1000000) +
+            " time=" + timeTaken
             );
         for (final ArtificialChoiceResults achoice : achoices) {
             log((achoice == bestAchoice ? "* " : "  ") + achoice);
@@ -136,17 +133,19 @@ public class MMAB implements MagicAI {
 }
 
 class MMABWorker {
-    
+
+    private final boolean CHEAT;
     private final int id;
     private final MagicGame game;
     private final ArtificialScoreBoard scoreBoard;
 
     private int gameCount;
     
-    MMABWorker(final int id,final MagicGame game,final ArtificialScoreBoard scoreBoard) {
+    MMABWorker(final int id,final MagicGame game,final ArtificialScoreBoard scoreBoard, final boolean CHEAT) {
         this.id=id;
         this.game=game;
         this.scoreBoard=scoreBoard;
+        this.CHEAT=CHEAT;
     }
     
     private ArtificialScore runGame(final Object[] nextChoiceResults, final ArtificialPruneScore pruneScore, final int depth, final long maxTime) {
@@ -191,7 +190,19 @@ class MMABWorker {
                 continue;
             }
 
+            final long startExpansion = System.nanoTime();
             final List<Object[]> choiceResultsList=event.getArtificialChoiceResults(game);
+            final long timeExpansion = System.nanoTime() - startExpansion;
+
+            /*
+            System.out.println(
+                "EXPANSION" +
+                " cheat=" + CHEAT +
+                " choice=" + event.getChoice().getClass().getSimpleName() +
+                " time=" + timeExpansion
+            );
+            */
+
             final int nrOfChoices=choiceResultsList.size();
             
             assert nrOfChoices > 0 : "nrOfChoices is 0";
