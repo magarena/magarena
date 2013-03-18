@@ -6,4 +6,4 @@ rarity=C
 type=Instant
 cost={3}{W}
 timing=token
-requires_card_code
+requires_groovy_code

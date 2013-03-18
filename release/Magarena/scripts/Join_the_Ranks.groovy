@@ -1,16 +1,5 @@
-package magic.card;
-
-import magic.data.TokenCardDefinitions;
-import magic.model.MagicGame;
-import magic.model.MagicPayedCost;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicPlayTokensAction;
-import magic.model.event.MagicEvent;
-import magic.model.event.MagicSpellCardEvent;
-import magic.model.stack.MagicCardOnStack;
-
-public class Join_the_Ranks {
-    public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+[
+    new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
@@ -29,5 +18,5 @@ public class Join_the_Ranks {
                 2
             ));
         }
-    };
-}
+    }
+]
