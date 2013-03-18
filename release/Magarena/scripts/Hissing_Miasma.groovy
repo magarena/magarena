@@ -1,15 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicChangeLifeAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenAttacksTrigger;
-
-
-public class Hissing_Miasma {
-    public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
+[
+    new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             final MagicPlayer controller=creature.getController();
@@ -30,5 +20,5 @@ public class Hissing_Miasma {
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeLifeAction(event.getPlayer(),-1));
         }
-    };
-}
+    }
+]
