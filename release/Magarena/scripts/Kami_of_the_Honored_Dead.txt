@@ -9,4 +9,4 @@ cost={5}{W}{W}
 pt=3/5
 ability=flying,soulshift 6
 timing=main
-requires_card_code
+requires_groovy_code
