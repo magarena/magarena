@@ -10,4 +10,4 @@ given_pt=2/2
 given_ability=flying
 timing=aura
 enchant=pump,pos creature
-requires_card_code
+requires_groovy_code
