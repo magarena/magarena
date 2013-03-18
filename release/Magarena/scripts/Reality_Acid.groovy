@@ -1,13 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicSacrificeAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenLeavesPlayTrigger;
-
-public class Reality_Acid {
-    public static final MagicWhenLeavesPlayTrigger T = new MagicWhenLeavesPlayTrigger() {
+[
+    new MagicWhenLeavesPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent left) {
             final MagicPermanent enchantedPermanent = permanent.getEnchantedCreature();
@@ -27,5 +19,5 @@ public class Reality_Acid {
                 final Object[] choiceResults) {
             game.doAction(new MagicSacrificeAction(event.getRefPermanent()));
         }
-    };
-}
+    }
+]
