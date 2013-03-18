@@ -1,15 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeLifeAction;
-import magic.model.choice.MagicMayChoice;
-import magic.model.choice.MagicSimpleMayChoice;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicLandfallTrigger;
-
-public class Grazing_Gladehart {
-    public static final MagicLandfallTrigger T = new MagicLandfallTrigger() {
+[
+    new MagicLandfallTrigger() {
         @Override
         public MagicEvent getEvent(final MagicPermanent permanent) {
             return new MagicEvent(
@@ -22,7 +12,6 @@ public class Grazing_Gladehart {
                 "PN may gain 2 life."
             );
         }
-        
         @Override
         public void executeEvent(
                 final MagicGame game,
@@ -32,5 +21,5 @@ public class Grazing_Gladehart {
                 game.doAction(new MagicChangeLifeAction(event.getPlayer(),2));
             }
         }        
-    };
-}
+    }
+]
