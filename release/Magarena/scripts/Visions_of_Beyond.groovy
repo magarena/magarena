@@ -1,14 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPayedCost;
-import magic.model.action.MagicDrawAction;
-import magic.model.event.MagicEvent;
-import magic.model.event.MagicSpellCardEvent;
-import magic.model.stack.MagicCardOnStack;
-
-public class Visions_of_Beyond {
-    public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+[
+    new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
@@ -26,5 +17,5 @@ public class Visions_of_Beyond {
                                 game.getPlayer(1).getGraveyard().size() >= 20) ? 3 : 1;
             game.doAction(new MagicDrawAction(event.getPlayer(),amount));
         }
-    };
-}
+    }
+]
