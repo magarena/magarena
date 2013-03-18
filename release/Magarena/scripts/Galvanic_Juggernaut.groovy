@@ -1,13 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicUntapAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
-
-public class Galvanic_Juggernaut {
-    public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
+[
+    new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
             return (permanent != otherPermanent &&
@@ -26,5 +18,5 @@ public class Galvanic_Juggernaut {
                 final Object[] choiceResults) {
             game.doAction(new MagicUntapAction(event.getPermanent()));
         }
-    };
-}
+    }
+]
