@@ -6,6 +6,7 @@ import magic.model.action.MagicDrawAction;
 import magic.model.event.MagicEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.trigger.MagicWhenSpellIsCastTrigger;
+import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 
 public class Kozilek__Butcher_of_Truth {
     public static final MagicWhenSpellIsCastTrigger T1 = new MagicWhenSpellIsCastTrigger() {
@@ -30,5 +31,5 @@ public class Kozilek__Butcher_of_Truth {
         }
     };
     
-    public static final Object T2 = Ulamog__the_Infinite_Gyre.T2;
+    public static final Object T2 = MagicWhenPutIntoGraveyardTrigger.RecoverGraveyard;
 }

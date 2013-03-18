@@ -10,4 +10,4 @@ cost={11}
 pt=10/10
 ability=annihilator 4,indestructible
 timing=main
-requires_card_code
+requires_groovy_code
