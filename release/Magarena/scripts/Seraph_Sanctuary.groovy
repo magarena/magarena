@@ -1,14 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicSubType;
-import magic.model.action.MagicChangeLifeAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
-
-public class Seraph_Sanctuary {
-    public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
+[
+    new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -22,7 +13,6 @@ public class Seraph_Sanctuary {
                     "PN gains 1 life.") :
                 MagicEvent.NONE;
         }
-        
         @Override
         public void executeEvent(
                 final MagicGame game,
@@ -30,5 +20,5 @@ public class Seraph_Sanctuary {
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));            
         }        
-    };
-}
+    }
+]
