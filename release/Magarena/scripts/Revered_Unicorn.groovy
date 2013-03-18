@@ -1,14 +1,5 @@
-package magic.card;
-
-import magic.model.MagicCounterType;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeLifeAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenLeavesPlayTrigger;
-
-public class Revered_Unicorn {
-    public static final MagicWhenLeavesPlayTrigger T2 = new MagicWhenLeavesPlayTrigger() {
+[
+    new MagicWhenLeavesPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent left) {
             return (permanent == left) ?
@@ -30,5 +21,5 @@ public class Revered_Unicorn {
                 amount
             ));
         }
-    };
-}
+    }
+]

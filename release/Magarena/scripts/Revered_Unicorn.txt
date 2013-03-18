@@ -9,4 +9,4 @@ cost={1}{W}
 pt=2/3
 ability=cumulative upkeep {1}
 timing=main
-requires_card_code
+requires_groovy_code
