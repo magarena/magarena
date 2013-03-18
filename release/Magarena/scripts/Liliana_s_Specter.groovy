@@ -1,15 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.event.MagicDiscardEvent;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
-
-
-public class Liliana_s_Specter {
-    public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
+[
+    new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             final MagicPlayer opponent = player.getOpponent();
@@ -28,5 +18,5 @@ public class Liliana_s_Specter {
             final MagicPlayer player=event.getPlayer();
             game.addEvent(new MagicDiscardEvent(permanent,player,1,false));
         }        
-    };
-}
+    }
+]
