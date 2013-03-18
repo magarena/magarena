@@ -1,13 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicDestroyAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenBlocksTrigger;
-
-public class Loyal_Sentry {
-    public static final MagicWhenBlocksTrigger T = new MagicWhenBlocksTrigger() {
+[
+    new MagicWhenBlocksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent defender) {
             final MagicPermanent blocked = permanent.getBlockedCreature();
@@ -27,5 +19,5 @@ public class Loyal_Sentry {
             game.doAction(new MagicDestroyAction(event.getRefPermanent()));
             game.doAction(new MagicDestroyAction(event.getPermanent()));
         }
-    };
-}
+    }
+]
