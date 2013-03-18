@@ -1,15 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicChangeTurnPTAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenAttacksTrigger;
-
-
-public class Fervent_Charge {
-    public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
+[
+    new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             final MagicPlayer player=permanent.getController();
@@ -29,5 +19,5 @@ public class Fervent_Charge {
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeTurnPTAction(event.getRefPermanent(),2,2));
         }
-    };
-}
+    }
+]
