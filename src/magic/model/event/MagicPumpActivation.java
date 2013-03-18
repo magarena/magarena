@@ -54,7 +54,11 @@ public class MagicPumpActivation extends MagicPermanentActivation {
             pSign = tSign;
         }
 
-        return pSign + power + "/" + tSign + toughness;
+        return signStr(power, pSign) + power + "/" + signStr(toughness, tSign) + toughness;
+    }
+    
+    private String signStr(int v, String sign) {
+        return v >= 0 ? sign : "";
     }
 
     private String getSign(int v) {
