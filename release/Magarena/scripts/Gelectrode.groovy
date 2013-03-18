@@ -1,14 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicUntapAction;
-import magic.model.event.MagicEvent;
-import magic.model.stack.MagicCardOnStack;
-import magic.model.trigger.MagicWhenOtherSpellIsCastTrigger;
-
-public class Gelectrode {
-    public static final MagicWhenOtherSpellIsCastTrigger T = new MagicWhenOtherSpellIsCastTrigger() {
+[
+    new MagicWhenOtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -29,5 +20,5 @@ public class Gelectrode {
                 final Object[] choiceResults) {
             game.doAction(new MagicUntapAction(event.getPermanent()));
         }
-    };
-}
+    }
+]
