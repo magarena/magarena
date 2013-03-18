@@ -9,7 +9,7 @@
                         player,
                         creature,
                         this,
-                        creature+" gets +2/+2 until end of turn."):
+                        "RN gets +2/+2 until end of turn."):
                 MagicEvent.NONE;
         }
         @Override

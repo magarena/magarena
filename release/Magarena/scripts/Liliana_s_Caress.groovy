@@ -9,7 +9,7 @@
                         permanent,
                         otherController,
                         this,
-                        otherController + " loses 2 life."):
+                        "PN loses 2 life."):
                 MagicEvent.NONE;
         }
         @Override
