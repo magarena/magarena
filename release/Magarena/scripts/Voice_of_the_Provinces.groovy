@@ -1,15 +1,5 @@
-package magic.card;
-
-import magic.data.TokenCardDefinitions;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicPlayTokenAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
-
-public class Voice_of_the_Provinces {  
-    public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
+[
+    new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -22,15 +12,15 @@ public class Voice_of_the_Provinces {
                 "creature token onto the battlefield."
             );
         }
-        
         @Override
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
             game.doAction(new MagicPlayTokenAction(
-                    event.getPlayer(),
-                    TokenCardDefinitions.get("Human1")));
+                event.getPlayer(),
+                TokenCardDefinitions.get("Human1")
+            ));
         }        
-    };
-}
+    }
+]
