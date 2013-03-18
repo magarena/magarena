@@ -8,4 +8,4 @@ subtype=Djinn
 cost={2}{B}{B}
 pt=5/5
 timing=main
-requires_card_code=Serendib Efreet
+requires_groovy_code=Serendib Efreet

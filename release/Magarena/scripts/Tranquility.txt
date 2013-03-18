@@ -7,4 +7,4 @@ type=Sorcery
 cost={2}{G}
 timing=removal
 removal=2
-requires_card_code=Back to Nature
+requires_groovy_code=Back to Nature

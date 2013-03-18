@@ -8,4 +8,4 @@ cost={1}{W}{W}{U}
 ability=can't be countered
 timing=removal
 removal=2
-requires_card_code=Day of Judgment
+requires_groovy_code=Day of Judgment
