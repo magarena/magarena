@@ -1,16 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicLocationType;
-import magic.model.MagicPayedCost;
-import magic.model.action.MagicChangeCardDestinationAction;
-import magic.model.action.MagicChangeExtraTurnsAction;
-import magic.model.event.MagicEvent;
-import magic.model.event.MagicSpellCardEvent;
-import magic.model.stack.MagicCardOnStack;
-
-public class Temporal_Mastery {
-    public static final Object E = new MagicSpellCardEvent() {
+[
+    new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
@@ -26,5 +15,5 @@ public class Temporal_Mastery {
             game.doAction(new MagicChangeExtraTurnsAction(event.getPlayer(),1));
             game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(),MagicLocationType.Exile));
         }
-    };
-}
+    }
+]

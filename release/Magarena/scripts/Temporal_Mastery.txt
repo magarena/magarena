@@ -7,4 +7,4 @@ type=Sorcery
 cost={5}{U}{U}
 timing=nextturn
 ability=miracle {1}{U}
-requires_card_code
+requires_groovy_code
