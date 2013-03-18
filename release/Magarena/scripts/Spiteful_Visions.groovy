@@ -1,18 +1,6 @@
-package magic.card;
-
-import magic.model.MagicCard;
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicDealDamageAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenOtherDrawnTrigger;
-
-public class Spiteful_Visions {
-    public static final Object T1 = Rites_of_Flourishing.T3;
-    
-    public static final Object T2 = new MagicWhenOtherDrawnTrigger() {
+[
+    MagicAtUpkeepTrigger.EachPlayerDraw,
+    new MagicWhenOtherDrawnTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard card) {
             final MagicPlayer player = card.getOwner();
@@ -31,5 +19,5 @@ public class Spiteful_Visions {
             final MagicDamage damage = new MagicDamage(event.getSource(),event.getPlayer(),1);
             game.doAction(new MagicDealDamageAction(damage));
         }        
-    };
-}
+    }
+]
