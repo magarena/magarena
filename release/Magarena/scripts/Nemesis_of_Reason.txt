@@ -8,4 +8,4 @@ subtype=Leviathan,Horror
 cost={3}{U}{B}
 pt=3/7
 timing=smain
-requires_card_code
+requires_groovy_code
