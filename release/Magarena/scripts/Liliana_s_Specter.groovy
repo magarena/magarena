@@ -4,10 +4,11 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             final MagicPlayer opponent = player.getOpponent();
             return new MagicEvent(
-                    permanent,
-                    opponent,
-                    this,
-                    opponent + " discards a card.");
+                permanent,
+                opponent,
+                this,
+                "PN discards a card."
+            );
         }
         @Override
         public void executeEvent(
