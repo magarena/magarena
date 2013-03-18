@@ -1,17 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeTurnPTAction;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicTarget;
-import magic.model.target.MagicTargetFilter;
-import magic.model.trigger.MagicWhenDiesTrigger;
-
-import java.util.Collection;
-
-public class Havoc_Demon {
-    public static final MagicWhenDiesTrigger T = new MagicWhenDiesTrigger() {
+[
+    new MagicWhenDiesTrigger() {
         @Override
         public MagicEvent getEvent(final MagicPermanent permanent) {
             return new MagicEvent(
@@ -32,5 +20,5 @@ public class Havoc_Demon {
                 game.doAction(new MagicChangeTurnPTAction(target,-5,-5));
             }
         }
-    };
-}
+    }
+]
