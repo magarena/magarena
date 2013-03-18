@@ -1,15 +1,5 @@
-package magic.card;
-
-import magic.model.MagicCard;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicChangeLifeAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenDiscardedTrigger;
-
-public class Liliana_s_Caress {
-    public static final MagicWhenDiscardedTrigger T = new MagicWhenDiscardedTrigger() {
+[
+    new MagicWhenDiscardedTrigger() {
         @Override
         public MagicEvent getEvent(final MagicPermanent permanent,final MagicCard card) {
             final MagicPlayer otherController = card.getOwner();
@@ -29,5 +19,5 @@ public class Liliana_s_Caress {
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeLifeAction(event.getPlayer(),-2));
         }
-    };
-}
+    }
+]
