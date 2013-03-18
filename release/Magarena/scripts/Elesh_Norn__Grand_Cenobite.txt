@@ -10,4 +10,4 @@ pt=4/7
 ability=vigilance
 static=all
 timing=fmain
-requires_card_code
+requires_groovy_code
