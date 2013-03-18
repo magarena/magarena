@@ -1,14 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPermanentState;
-import magic.model.action.MagicChangeStateAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenBlocksTrigger;
-
-public class Wall_of_Frost {
-    public static final MagicWhenBlocksTrigger T = new MagicWhenBlocksTrigger() {
+[
+    new MagicWhenBlocksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
             final MagicPermanent blocked=permanent.getBlockedCreature();
@@ -28,5 +19,5 @@ public class Wall_of_Frost {
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeStateAction(event.getRefPermanent(),MagicPermanentState.DoesNotUntapDuringNext,true));
         }
-    };
-}
+    }
+]
