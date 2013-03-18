@@ -1,14 +1,5 @@
-package magic.card;
-
-import magic.data.TokenCardDefinitions;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicPlayTokenAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenBecomesTappedTrigger;
-
-public class Stonybrook_Schoolmaster {
-    public static final MagicWhenBecomesTappedTrigger T = new MagicWhenBecomesTappedTrigger() {
+[
+    new MagicWhenBecomesTappedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent tapped) {
             return (permanent == tapped) ?
@@ -26,5 +17,5 @@ public class Stonybrook_Schoolmaster {
                 final Object[] choiceResults) {
             game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Merfolk Wizard")));
         }
-    };
-}
+    }
+]
