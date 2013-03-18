@@ -1,16 +1,5 @@
-package magic.card;
-
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicDealDamageAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicAtUpkeepTrigger;
-
-
-public class Serendib_Efreet {
-    public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
+[
+    new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             final MagicPlayer player=permanent.getController();
@@ -29,5 +18,5 @@ public class Serendib_Efreet {
             final MagicDamage damage=new MagicDamage(event.getSource(),event.getPlayer(),1);
             game.doAction(new MagicDealDamageAction(damage));
         }
-    };
-}
+    }
+]
