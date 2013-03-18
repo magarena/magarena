@@ -1,14 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicChangeLifeAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
-
-public class Vedalken_Ghoul {
-    public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
+[
+    new MagicWhenBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocked) {
             return (permanent == blocked) ?
@@ -28,5 +19,5 @@ public class Vedalken_Ghoul {
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeLifeAction(event.getPlayer(),-4));
         }
-    };
-}
+    }
+]
