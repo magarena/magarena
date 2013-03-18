@@ -8,7 +8,7 @@
                     permanent,
                     enchantedPermanent,
                     this,
-                    enchantedPermanent.getController() + " sacrifices RN."
+                    "RN's controller sacrifices it."
                 ) :
             MagicEvent.NONE;
         }
