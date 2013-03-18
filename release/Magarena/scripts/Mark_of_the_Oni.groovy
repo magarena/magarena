@@ -1,15 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.MagicSubType;
-import magic.model.action.MagicSacrificeAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicAtEndOfTurnTrigger;
-
-public class Mark_of_the_Oni {
-    public static final MagicAtEndOfTurnTrigger T = new MagicAtEndOfTurnTrigger() {
+[
+    new MagicAtEndOfTurnTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -31,5 +21,5 @@ public class Mark_of_the_Oni {
                 final Object[] choiceResults) {
             game.doAction(new MagicSacrificeAction(event.getPermanent()));
         }
-    };
-}
+    }
+]
