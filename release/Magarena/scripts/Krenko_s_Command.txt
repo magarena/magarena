@@ -6,4 +6,4 @@ rarity=C
 type=Sorcery
 cost={1}{R}
 timing=main
-requires_card_code=Dragon Fodder
+requires_groovy_code=Dragon Fodder

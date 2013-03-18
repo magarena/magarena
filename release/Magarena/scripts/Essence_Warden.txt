@@ -8,4 +8,4 @@ subtype=Elf,Shaman
 cost={G}
 pt=1/1
 timing=main
-requires_card_code=Soul Warden
+requires_groovy_code=Soul Warden
