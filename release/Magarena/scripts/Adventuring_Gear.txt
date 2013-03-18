@@ -8,4 +8,4 @@ subtype=Equipment
 cost={1}
 equip={1}
 timing=equipment
-requires_card_code
+requires_groovy_code

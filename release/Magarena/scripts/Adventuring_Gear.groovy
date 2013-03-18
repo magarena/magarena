@@ -1,13 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeTurnPTAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicLandfallTrigger;
-
-public class Adventuring_Gear {
-    public static final MagicLandfallTrigger T = new MagicLandfallTrigger() {
+[
+    new MagicLandfallTrigger() {
         @Override
         public MagicEvent getEvent(final MagicPermanent permanent) {
             final MagicPermanent equippedCreature = permanent.getEquippedCreature();
@@ -27,5 +19,5 @@ public class Adventuring_Gear {
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeTurnPTAction(event.getRefPermanent(),2,2));
         }    
-    };
-}
+    }
+]
