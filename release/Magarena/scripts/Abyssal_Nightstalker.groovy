@@ -1,14 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.event.MagicDiscardEvent;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenAttacksUnblockedTrigger;
-
-public class Abyssal_Nightstalker {
-    public static final MagicWhenAttacksUnblockedTrigger T = new MagicWhenAttacksUnblockedTrigger() {
+[
+    new MagicWhenAttacksUnblockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             return (creature == permanent) ?
@@ -20,7 +11,6 @@ public class Abyssal_Nightstalker {
                 ):
                 MagicEvent.NONE;
         }
-        
         @Override
         public void executeEvent(
                 final MagicGame game,
@@ -33,5 +23,5 @@ public class Abyssal_Nightstalker {
                 false
             ));
         }
-    };
-}
+    }
+]
