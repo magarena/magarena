@@ -8,6 +8,7 @@ import magic.model.MagicSource;
 import magic.model.MagicCounterType;
 import magic.model.event.MagicEvent;
 import magic.model.action.MagicChangeCountersAction;
+import magic.model.action.MagicDrawAction;
 import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.choice.MagicMayChoice;
 
@@ -44,6 +45,24 @@ public abstract class MagicAtUpkeepTrigger extends MagicTrigger<MagicPlayer> {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,1,true));
             }    
+        }
+    };
+    
+    public static final MagicAtUpkeepTrigger EachPlayerDraw = new MagicAtUpkeepTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+            return new MagicEvent(
+                permanent,
+                upkeepPlayer,
+                this,
+                "PN draws a card."
+            );
+        }
+        
+        @Override
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+            final MagicPlayer player = event.getPlayer();
+            game.doAction(new MagicDrawAction(player,1));
         }
     };
 }
