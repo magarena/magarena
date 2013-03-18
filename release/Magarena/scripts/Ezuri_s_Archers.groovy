@@ -1,14 +1,5 @@
-package magic.card;
-
-import magic.model.MagicAbility;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeTurnPTAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenBlocksTrigger;
-
-public class Ezuri_s_Archers {
-    public static final MagicWhenBlocksTrigger T = new MagicWhenBlocksTrigger() {
+[
+    new MagicWhenBlocksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
             final MagicPermanent blocked=permanent.getBlockedCreature();
@@ -29,5 +20,5 @@ public class Ezuri_s_Archers {
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),3,0));
         }
-    };
-}
+    }
+]
