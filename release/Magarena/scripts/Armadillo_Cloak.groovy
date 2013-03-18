@@ -1,14 +1,5 @@
-package magic.card;
-
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeLifeAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
-
-public class Armadillo_Cloak {
-    public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
+[
+    new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final int amount = damage.getDealtAmount();
@@ -26,8 +17,9 @@ public class Armadillo_Cloak {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeLifeAction(
-                    event.getPlayer(),
-                    event.getRefInt()));
+                event.getPlayer(),
+                event.getRefInt()
+            ));
         }
-    };
-}
+    }
+]
