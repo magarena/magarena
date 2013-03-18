@@ -62,7 +62,8 @@ public class MMAB implements MagicAI {
         final ExecutorService executor = Executors.newFixedThreadPool(THREADS);
         final List<ArtificialChoiceResults> achoices=new ArrayList<ArtificialChoiceResults>();
         final int artificialLevel = sourceGame.getArtificialLevel(scorePlayer.getIndex());
-        final long slice = artificialLevel * Math.min(SEC_TO_NANO, (THREADS * SEC_TO_NANO) / size);
+        final int rounds = (size + THREADS - 1) / THREADS;
+        final long slice = artificialLevel * SEC_TO_NANO / rounds;
         for (final Object[] choice : choices) {
             final ArtificialChoiceResults achoice=new ArtificialChoiceResults(choice);
             achoices.add(achoice);
@@ -87,8 +88,8 @@ public class MMAB implements MagicAI {
         }
         executor.shutdown();
         try {
-            // wait for artificialLevel seconds for jobs to finish
-            executor.awaitTermination(artificialLevel, TimeUnit.SECONDS);
+            // wait for artificialLevel * 2 seconds for jobs to finish
+            executor.awaitTermination(artificialLevel * 2, TimeUnit.SECONDS);
         } catch (final InterruptedException ex) {
             throw new RuntimeException(ex);
         } finally {
@@ -190,9 +191,9 @@ class MMABWorker {
                 continue;
             }
 
-            final long startExpansion = System.nanoTime();
+            //final long startExpansion = System.nanoTime();
             final List<Object[]> choiceResultsList=event.getArtificialChoiceResults(game);
-            final long timeExpansion = System.nanoTime() - startExpansion;
+            //final long timeExpansion = System.nanoTime() - startExpansion;
 
             /*
             System.out.println(
@@ -212,12 +213,14 @@ class MMABWorker {
                 continue;
             }
             
-            final long slice = (maxTime - System.nanoTime()) / nrOfChoices;
             final boolean best=game.getScorePlayer()==event.getPlayer();
             ArtificialScore bestScore=ArtificialScore.INVALID_SCORE;
             ArtificialPruneScore newPruneScore=pruneScore;
+            long end = System.nanoTime();
+            final long slice = (maxTime - end) / nrOfChoices;
             for (final Object[] choiceResults : choiceResultsList) {
-                final ArtificialScore score=runGame(choiceResults, newPruneScore, depth + 1, System.nanoTime() + slice);
+                end += slice;
+                final ArtificialScore score=runGame(choiceResults, newPruneScore, depth + 1, end);
                 if (bestScore.isBetter(score,best)) {
                     bestScore=score;
                     // Stop when best score can no longer become the best score at previous levels.
