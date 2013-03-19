@@ -20,6 +20,8 @@ public class MagicPermanentTriggerMap {
         for (final MagicTriggerType type : MagicTriggerType.values()) {
             effects.put(type, new TreeSet<MagicPermanentTrigger>());
         }
+        // add Soulbond trigger here
+        add(new MagicPermanentTrigger(0,MagicPermanent.NONE,MagicWhenOtherComesIntoPlayTrigger.Soulbond));
     }
     
     public MagicPermanentTriggerMap(final MagicCopyMap copyMap, final MagicPermanentTriggerMap sourceMap) {

@@ -2,9 +2,14 @@ package magic.model.trigger;
 
 import magic.model.MagicPermanent;
 import magic.model.MagicGame;
+import magic.model.MagicPlayer;
+import magic.model.MagicType;
+import magic.model.MagicAbility;
 import magic.model.MagicCounterType;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicSoulbondEvent;
 import magic.model.action.MagicChangeCountersAction;
+import magic.model.target.MagicTargetFilter;
 
 public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<MagicPermanent> {
     public MagicWhenOtherComesIntoPlayTrigger(final int priority) {
@@ -42,6 +47,28 @@ public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<Ma
                 1,
                 true
             ));
+        }
+    };
+   
+    public static final MagicWhenOtherComesIntoPlayTrigger Soulbond = new MagicWhenOtherComesIntoPlayTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent NONE,final MagicPermanent otherPermanent) {
+            final MagicPlayer controller = otherPermanent.getController();
+            if (otherPermanent.isCreature() &&
+                controller.getNrOfPermanentsWithType(MagicType.Creature) > 1) {
+                final boolean hasSoulbond = otherPermanent.hasAbility(MagicAbility.Soulbond);
+                if ((hasSoulbond &&
+                     game.filterPermanents(controller,MagicTargetFilter.TARGET_UNPAIRED_CREATURE_YOU_CONTROL).size() > 1)
+                    ||
+                    (!hasSoulbond &&
+                     game.filterPermanents(controller,MagicTargetFilter.TARGET_UNPAIRED_SOULBOND_CREATURE).size() > 0)) {
+                    return new MagicSoulbondEvent(otherPermanent,hasSoulbond);
+                } else {
+                    return MagicEvent.NONE;
+                }
+            } else {
+                return MagicEvent.NONE;
+            }
         }
     };
 }

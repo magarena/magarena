@@ -42,19 +42,6 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
         //execute other come into player triggers
         game.executeTrigger(MagicTriggerType.WhenOtherComesIntoPlay,permanent);
         
-        // Soulbond
-        if (permanent.isCreature() && 
-            controller.getNrOfPermanentsWithType(MagicType.Creature) > 1) {
-            final boolean hasSoulbond = permanent.hasAbility(MagicAbility.Soulbond);
-            if ((hasSoulbond &&
-                game.filterPermanents(controller,MagicTargetFilter.TARGET_UNPAIRED_CREATURE_YOU_CONTROL).size() > 1)
-                ||
-                (!hasSoulbond &&
-                game.filterPermanents(controller,MagicTargetFilter.TARGET_UNPAIRED_SOULBOND_CREATURE).size() > 0)) {
-                game.addEvent(new MagicSoulbondEvent(permanent,hasSoulbond));
-            }
-        }
-        
         setScore(controller,permanent.getScore()+permanent.getStaticScore()+score);
         
         game.checkUniquenessRule(permanent);
