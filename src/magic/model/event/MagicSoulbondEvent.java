@@ -14,6 +14,7 @@ public class MagicSoulbondEvent extends MagicEvent {
         super(
             permanent,
             new MagicMayChoice(
+                "Soulbond?",
                 hasSoulbond ?
                     new MagicTargetChoice(
                         new MagicTargetFilter.MagicOtherPermanentTargetFilter(
