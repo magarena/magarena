@@ -30,7 +30,7 @@ public class Bandage {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTarget(game,choiceResults,0,new MagicTargetAction() {
+            event.processTarget(game,choiceResults,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     game.doAction(new MagicPreventDamageAction(target,1));
                     game.doAction(new MagicDrawAction(event.getPlayer(),1));

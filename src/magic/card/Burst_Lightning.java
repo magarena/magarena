@@ -32,7 +32,7 @@ public class Burst_Lightning {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTarget(game,choiceResults,0,new MagicTargetAction() {
+            event.processTarget(game,choiceResults,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final int amount=((Integer)choiceResults[1])>0?4:2;
                     final MagicDamage damage=new MagicDamage(event.getSource(),target,amount);

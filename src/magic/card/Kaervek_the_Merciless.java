@@ -33,7 +33,7 @@ public class Kaervek_the_Merciless {
         
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
-            event.processTarget(game,choiceResults,0,new MagicTargetAction() {
+            event.processTarget(game,choiceResults,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicDamage damage=new MagicDamage(event.getSource(),target,event.getRefInt());
                     game.doAction(new MagicDealDamageAction(damage));

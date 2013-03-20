@@ -30,14 +30,15 @@ public class Draining_Whelk {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTargetCardOnStack(game,choiceResults,0,new MagicCardOnStackAction() {
+            event.processTargetCardOnStack(game,choiceResults,new MagicCardOnStackAction() {
                 public void doAction(final MagicCardOnStack card) {
                     game.doAction(new MagicCounterItemOnStackAction(card));
                     game.doAction(new MagicChangeCountersAction(
-                                event.getPermanent(),
-                                MagicCounterType.PlusOne,
-                                card.getConvertedCost(),
-                                true));
+                        event.getPermanent(),
+                        MagicCounterType.PlusOne,
+                        card.getConvertedCost(),
+                        true
+                    ));
                 }
             });
         }

@@ -33,7 +33,7 @@ public class Warstorm_Surge {
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
             final MagicPermanent permanent = event.getRefPermanent();
-            event.processTarget(game,choiceResults,0,new MagicTargetAction() {
+            event.processTarget(game,choiceResults,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicDamage damage = new MagicDamage(permanent,target,permanent.getPower());
                     game.doAction(new MagicDealDamageAction(damage));

@@ -381,10 +381,19 @@ public class MagicEvent implements MagicCopyable {
         }
         return hasChoice()?choice.getDescription():"";
     }
+        
+    private final MagicTarget findTarget(final Object[] choiceResults) {
+        for (Object obj : choiceResults) {
+            if (obj instanceof MagicTarget) {
+                return (MagicTarget)obj;
+            }
+        }
+        throw new RuntimeException("Unable to find target");
+    }
     
-    private final MagicTarget getTarget(final MagicGame game,final Object[] choiceResults,final int index) {
-        final MagicTargetChoice targetChoice=getTargetChoice();
-        final MagicTarget target=(MagicTarget)choiceResults[index];
+    private final MagicTarget getTarget(final MagicGame game,final Object[] choiceResults) {
+        final MagicTargetChoice targetChoice = getTargetChoice();
+        final MagicTarget target = findTarget(choiceResults);
         if (game.isLegalTarget(player,source,targetChoice,target)) {
             return target;
         } else {
@@ -395,12 +404,25 @@ public class MagicEvent implements MagicCopyable {
     public final boolean processTarget(
             final MagicGame game,
             final Object[] choiceResults,
-            final int index,
             final MagicTargetAction effect
             ) {
-        final MagicTarget target = getTarget(game, choiceResults, index);
+        final MagicTarget target = getTarget(game, choiceResults);
         if (target != MagicTargetNone.getInstance()) {
             effect.doAction(target);
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
+    public final boolean processTargetPermanent(
+            final MagicGame game,
+            final Object[] choiceResults,
+            final MagicPermanentAction effect
+            ) {
+        final MagicTarget target = getTarget(game, choiceResults);
+        if (target.isPermanent()) {
+            effect.doAction((MagicPermanent)target);
             return true;
         } else {
             return false;
@@ -413,22 +435,15 @@ public class MagicEvent implements MagicCopyable {
             final int index,
             final MagicPermanentAction effect
             ) {
-        final MagicTarget target = getTarget(game, choiceResults, index);
-        if (target.isPermanent()) {
-            effect.doAction((MagicPermanent)target);
-            return true;
-        } else {
-            return false;
-        }
+        return processTargetPermanent(game, choiceResults, effect);
     }
-
+    
     public final boolean processTargetCardOnStack(
             final MagicGame game,
             final Object[] choiceResults,
-            final int index,
             final MagicCardOnStackAction effect
             ) {
-        final MagicTarget target = getTarget(game, choiceResults, index);
+        final MagicTarget target = getTarget(game, choiceResults);
         if (target.isSpell()) {
             effect.doAction((MagicCardOnStack)target);
             return true;
@@ -443,9 +458,23 @@ public class MagicEvent implements MagicCopyable {
             final int index,
             final MagicCardAction effect
             ) {
-        final MagicTarget target = getTarget(game, choiceResults, index);
+        final MagicTarget target = getTarget(game, choiceResults);
         if (target.isSpell()) {
             effect.doAction((MagicCard)target);
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
+    public final boolean processTargetPlayer(
+            final MagicGame game,
+            final Object[] choiceResults,
+            final MagicPlayerAction effect
+            ) {
+        final MagicTarget target = getTarget(game, choiceResults);
+        if (target.isPlayer()) {
+            effect.doAction((MagicPlayer)target);
             return true;
         } else {
             return false;
@@ -458,13 +487,7 @@ public class MagicEvent implements MagicCopyable {
             final int index,
             final MagicPlayerAction effect
             ) {
-        final MagicTarget target = getTarget(game, choiceResults, index);
-        if (target.isPlayer()) {
-            effect.doAction((MagicPlayer)target);
-            return true;
-        } else {
-            return false;
-        }
+        return processTargetPlayer(game, choiceResults, effect);
     }
 
     private static final void payManaCost(

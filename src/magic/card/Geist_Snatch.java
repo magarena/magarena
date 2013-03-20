@@ -29,7 +29,7 @@ public class Geist_Snatch {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTargetCardOnStack(game,choiceResults,0,new MagicCardOnStackAction() {
+            event.processTargetCardOnStack(game,choiceResults,new MagicCardOnStackAction() {
                 public void doAction(final MagicCardOnStack targetSpell) {
                     game.doAction(new MagicCounterItemOnStackAction(targetSpell));
                     game.doAction(new MagicPlayTokenAction(

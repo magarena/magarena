@@ -45,7 +45,7 @@ public class Goblin_Bombardment {
                 final MagicGame game, 
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTarget(game, choiceResults, 0, new MagicTargetAction() {
+            event.processTarget(game, choiceResults, new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicDamage damage = new MagicDamage(
                         event.getSource(), 

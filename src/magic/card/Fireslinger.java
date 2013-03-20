@@ -41,7 +41,7 @@ public class Fireslinger {
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
             final MagicSource source=event.getSource();
-            event.processTarget(game,choiceResults,0,new MagicTargetAction() {
+            event.processTarget(game,choiceResults,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicDamage damage1=new MagicDamage(source,target,1);
                     game.doAction(new MagicDealDamageAction(damage1));
