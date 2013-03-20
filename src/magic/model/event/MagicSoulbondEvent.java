@@ -2,6 +2,7 @@ package magic.model.event;
 
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
+import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicSoulbondAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicTargetChoice;
@@ -40,11 +41,15 @@ public class MagicSoulbondEvent extends MagicEvent {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                game.doAction(new MagicSoulbondAction(
-                    event.getPermanent(),
-                    (MagicPermanent)choiceResults[1],
-                    true
-                ));
+                event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
+                    public void doAction(final MagicPermanent creature) {
+                        game.doAction(new MagicSoulbondAction(
+                            event.getPermanent(),
+                            creature,
+                            true
+                        ));
+                    }
+                });
             }
         }
     };
