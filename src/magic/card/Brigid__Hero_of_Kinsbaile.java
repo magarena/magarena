@@ -42,7 +42,7 @@ public class Brigid__Hero_of_Kinsbaile {
 
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
-            event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
+            event.processTargetPlayer(game,choiceResults,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     final MagicSource source=event.getSource();
                     final Collection<MagicPermanent> targets=

@@ -25,7 +25,7 @@ public class Mind_Rot {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
+            event.processTargetPlayer(game,choiceResults,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     game.addEvent(new MagicDiscardEvent(event.getSource(),player,2,false));
                 }

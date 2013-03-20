@@ -32,7 +32,7 @@ public class Sudden_Disappearance {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
+            event.processTargetPlayer(game,choiceResults,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     final Collection<MagicPermanent> targets =
                             game.filterPermanents(player,MagicTargetFilter.TARGET_PERMANENT_YOU_CONTROL);

@@ -33,7 +33,7 @@ public class Marsh_Casualties {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
+            event.processTargetPlayer(game,choiceResults,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     final int amount=(Integer)choiceResults[1]>0?-2:-1;
                     final Collection<MagicPermanent> targets=

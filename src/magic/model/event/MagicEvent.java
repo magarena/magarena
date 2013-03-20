@@ -449,6 +449,14 @@ public class MagicEvent implements MagicCopyable {
             final int index,
             final MagicCardAction effect
             ) {
+        return processTargetCard(game, choiceResults, effect);
+    }
+    
+    public final boolean processTargetCard(
+            final MagicGame game,
+            final Object[] choiceResults,
+            final MagicCardAction effect
+            ) {
         final MagicTarget target = getTarget(game, choiceResults);
         if (target.isSpell()) {
             effect.doAction((MagicCard)target);
@@ -470,15 +478,6 @@ public class MagicEvent implements MagicCopyable {
         } else {
             return false;
         }
-    }
-
-    public final boolean processTargetPlayer(
-            final MagicGame game,
-            final Object[] choiceResults,
-            final int index,
-            final MagicPlayerAction effect
-            ) {
-        return processTargetPlayer(game, choiceResults, effect);
     }
 
     private static final void payManaCost(

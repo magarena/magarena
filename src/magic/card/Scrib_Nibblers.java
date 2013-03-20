@@ -70,7 +70,7 @@ public class Scrib_Nibblers {
 
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
-            event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
+            event.processTargetPlayer(game,choiceResults,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     final MagicCard card = player.getLibrary().getCardAtTop();
                     if (card != MagicCard.NONE) {

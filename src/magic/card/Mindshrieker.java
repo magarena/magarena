@@ -47,7 +47,7 @@ public class Mindshrieker {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
+            event.processTargetPlayer(game,choiceResults,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     game.doAction(new MagicMillLibraryAction(player,1));
                     final MagicCard card = player.getGraveyard().get(player.getGraveyard().size()-1);

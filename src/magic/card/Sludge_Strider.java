@@ -37,7 +37,7 @@ public class Sludge_Strider {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                event.processTargetPlayer(game,choiceResults,2,new MagicPlayerAction() {
+                event.processTargetPlayer(game,choiceResults,new MagicPlayerAction() {
                     public void doAction(final MagicPlayer player) {
                         game.doAction(new MagicChangeLifeAction(player,-1));
                         game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
@@ -70,7 +70,7 @@ public class Sludge_Strider {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                event.processTargetPlayer(game,choiceResults,2,new MagicPlayerAction() {
+                event.processTargetPlayer(game,choiceResults,new MagicPlayerAction() {
                     public void doAction(final MagicPlayer player) {
                         game.doAction(new MagicChangeLifeAction(player,-1));
                         game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));

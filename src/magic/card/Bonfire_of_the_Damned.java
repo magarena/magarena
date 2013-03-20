@@ -36,7 +36,7 @@ public class Bonfire_of_the_Damned {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
+            event.processTargetPlayer(game,choiceResults,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     final int amount = event.getCardOnStack().getX();
                     MagicDamage damage = new MagicDamage(event.getSource(), player, amount);

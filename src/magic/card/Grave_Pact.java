@@ -30,7 +30,7 @@ public class Grave_Pact {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
+            event.processTargetPlayer(game,choiceResults,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer opponent) {
                     if (opponent.controlsPermanentWithType(MagicType.Creature)) {
                         game.addEvent(new MagicSacrificePermanentEvent(
