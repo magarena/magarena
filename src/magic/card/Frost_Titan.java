@@ -60,7 +60,7 @@ public class Frost_Titan {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+            event.processTargetPermanent(game,choiceResults,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent perm) {
                     game.doAction(new MagicTapAction(perm,true));
                     game.doAction(new MagicChangeStateAction(perm,MagicPermanentState.DoesNotUntapDuringNext,true));
@@ -86,7 +86,7 @@ public class Frost_Titan {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+            event.processTargetPermanent(game,choiceResults,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent perm) {
                     game.doAction(new MagicTapAction(perm,true));
                     game.doAction(new MagicChangeStateAction(perm,MagicPermanentState.DoesNotUntapDuringNext,true));

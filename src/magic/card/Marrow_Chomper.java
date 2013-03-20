@@ -45,7 +45,7 @@ public class Marrow_Chomper {
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 final MagicPermanent permanent=event.getPermanent();
-                event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
+                event.processTargetPermanent(game,choiceResults,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
                         game.doAction(new MagicSacrificeAction(creature));
                         game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.PlusOne,2,true));

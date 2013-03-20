@@ -429,15 +429,6 @@ public class MagicEvent implements MagicCopyable {
         }
     }
     
-    public final boolean processTargetPermanent(
-            final MagicGame game,
-            final Object[] choiceResults,
-            final int index,
-            final MagicPermanentAction effect
-            ) {
-        return processTargetPermanent(game, choiceResults, effect);
-    }
-    
     public final boolean processTargetCardOnStack(
             final MagicGame game,
             final Object[] choiceResults,

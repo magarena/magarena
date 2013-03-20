@@ -31,7 +31,7 @@ public class Tribute_to_Hunger {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
+            event.processTargetPlayer(game,choiceResults,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer opponent) {
                     game.addEvent(new MagicEvent(
                         event.getSource(),
@@ -52,7 +52,7 @@ public class Tribute_to_Hunger {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+            event.processTargetPermanent(game,choiceResults,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicSacrificeAction(permanent));
                     final int toughness = permanent.getToughness();

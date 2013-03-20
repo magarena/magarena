@@ -28,7 +28,7 @@ public class Death_Wind {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+            event.processTargetPermanent(game,choiceResults,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     final int X = event.getCardOnStack().getX();
                     game.doAction(new MagicChangeTurnPTAction(creature,-X,-X));

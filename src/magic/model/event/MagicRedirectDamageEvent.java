@@ -32,7 +32,7 @@ public class MagicRedirectDamageEvent extends MagicEvent {
                     final MagicEvent event,
                     final Object[] choiceResults) {
                 if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                    event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
+                    event.processTargetPermanent(game,choiceResults,new MagicPermanentAction() {
                         public void doAction(final MagicPermanent planeswalker) {
                             final MagicDamage damage = isCombat ?
                                 MagicDamage.Combat(event.getSource(), planeswalker, amount) :

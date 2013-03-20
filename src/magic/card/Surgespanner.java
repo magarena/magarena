@@ -37,7 +37,7 @@ public class Surgespanner {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                event.processTargetPermanent(game,choiceResults,2,new MagicPermanentAction() {
+                event.processTargetPermanent(game,choiceResults,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent permanent) {
                         game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
                     }

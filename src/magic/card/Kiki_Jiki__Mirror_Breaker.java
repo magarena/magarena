@@ -43,7 +43,7 @@ public class Kiki_Jiki__Mirror_Breaker {
 
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
-            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+            event.processTargetPermanent(game,choiceResults,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     final MagicPlayer player=event.getPlayer();
                     final MagicCard card=MagicCard.createTokenCard(creature.getCardDefinition(),player);

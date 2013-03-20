@@ -34,7 +34,7 @@ public class Thalakos_Deceiver {
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));
-                event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
+                event.processTargetPermanent(game,choiceResults,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
                         game.doAction(new MagicGainControlAction(event.getPlayer(),creature));
                     }

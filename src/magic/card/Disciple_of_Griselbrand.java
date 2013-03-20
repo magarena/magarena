@@ -48,7 +48,7 @@ public class Disciple_of_Griselbrand {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+            event.processTargetPermanent(game,choiceResults,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     final int toughness=creature.getToughness();
                     game.doAction(new MagicSacrificeAction(creature));

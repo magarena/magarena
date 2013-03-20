@@ -42,13 +42,14 @@ public class Cradle_of_Vitality {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                event.processTargetPermanent(game,choiceResults,2,new MagicPermanentAction() {
+                event.processTargetPermanent(game,choiceResults,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
                         game.doAction(new MagicChangeCountersAction(
-                                creature,
-                                MagicCounterType.PlusOne,
-                                event.getRefInt(),
-                                true));
+                            creature,
+                            MagicCounterType.PlusOne,
+                            event.getRefInt(),
+                            true
+                        ));
                     }
                 });
             }

@@ -36,7 +36,7 @@ public class Alpha_Brawl {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+            event.processTargetPermanent(game,choiceResults,new MagicPermanentAction() {
                 final MagicPlayer player = event.getPlayer();
                 public void doAction(final MagicPermanent permanent) {
                     final Collection<MagicPermanent> creatures = 
