@@ -66,7 +66,7 @@ public class Kodama_of_the_Center_Tree {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                event.processTargetCard(game,choiceResults,1,new MagicCardAction() {
+                event.processTargetCard(game,choiceResults,new MagicCardAction() {
                     public void doAction(final MagicCard card) {
                         game.doAction(new MagicRemoveCardAction(
                                 card,

@@ -52,7 +52,7 @@ public class Recurring_Nightmare {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             game.doAction(new MagicRemoveFromPlayAction(event.getPermanent(),MagicLocationType.OwnersHand));
-            event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
+            event.processTargetCard(game,choiceResults,new MagicCardAction() {
                 public void doAction(final MagicCard targetCard) {
                     game.doAction(new MagicReanimateAction(event.getPlayer(),targetCard,MagicPlayCardAction.NONE));
                 }

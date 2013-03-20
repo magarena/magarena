@@ -30,7 +30,7 @@ public class Debtors__Knell {
         
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
-            event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
+            event.processTargetCard(game,choiceResults,new MagicCardAction() {
                 public void doAction(final MagicCard card) {
                     game.doAction(new MagicReanimateAction(event.getPlayer(),card,MagicPlayCardAction.NONE));
                 }

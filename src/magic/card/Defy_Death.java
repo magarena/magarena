@@ -37,7 +37,7 @@ public class Defy_Death {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
+            event.processTargetCard(game,choiceResults,new MagicCardAction() {
                 public void doAction(final MagicCard targetCard) {
                     game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
                     final MagicPlayCardAction action = new MagicPlayCardAction(targetCard,event.getPlayer(),MagicPlayCardAction.NONE);

@@ -32,7 +32,7 @@ public class Reanimate {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
+            event.processTargetCard(game,choiceResults,new MagicCardAction() {
                 public void doAction(final MagicCard targetCard) {
                     final MagicPlayer player=event.getPlayer();
                     game.doAction(new MagicReanimateAction(player,targetCard,MagicPlayCardAction.NONE));

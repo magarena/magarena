@@ -39,7 +39,7 @@ public class Stitch_Together {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
-            event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
+            event.processTargetCard(game,choiceResults,new MagicCardAction() {
                 public void doAction(final MagicCard targetCard) {              
                     if (MagicCondition.THRESHOLD_CONDITION.accept(event.getSource())) {
                         game.doAction(new MagicReanimateAction(player,targetCard,MagicPlayCardAction.NONE));
