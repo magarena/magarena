@@ -14,7 +14,6 @@ public class MagicSoulbondEvent extends MagicEvent {
         super(
             permanent,
             new MagicMayChoice(
-                "Soulbond?",
                 hasSoulbond ?
                     new MagicTargetChoice(
                         new MagicTargetFilter.MagicOtherPermanentTargetFilter(
@@ -28,7 +27,9 @@ public class MagicSoulbondEvent extends MagicEvent {
                     MagicTargetChoice.TARGET_UNPAIRED_SOULBOND_CREATURE
             ),
             EVENT_ACTION,
-            "PN may$ pair a creature$ with SN."
+            hasSoulbond ?
+                "PN may$ pair SN with an unpaired creature$ you control." :
+                "PN may$ pair SN with an unpaired creature$ with soulbond you control."
         );
     }
 
