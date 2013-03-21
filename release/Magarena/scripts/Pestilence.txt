@@ -1,0 +1,9 @@
+name=Pestilence
+url=http://magiccards.info/4e/en/36.html
+image=http://magiccards.info/scans/en/4e/36.jpg
+value=4.317
+rarity=C
+type=Enchantment
+cost={2}{B}{B}
+timing=enchantment
+requires_groovy_code

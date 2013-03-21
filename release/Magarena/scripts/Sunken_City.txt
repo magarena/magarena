@@ -1,0 +1,10 @@
+name=Sunken City
+url=http://magiccards.info/4e/en/106.html
+image=http://magiccards.info/scans/en/4e/106.jpg
+value=3.036
+rarity=C
+type=Enchantment
+cost={U}{U}
+static=all
+timing=enchantment
+requires_groovy_code
