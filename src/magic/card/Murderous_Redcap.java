@@ -29,7 +29,7 @@ public class Murderous_Redcap {
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
             final MagicPermanent permanent=event.getPermanent();
-            event.processTarget(game,choiceResults,new MagicTargetAction() {
+            event.processTarget(game,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicDamage damage=new MagicDamage(permanent,target,permanent.getPower());
                     game.doAction(new MagicDealDamageAction(damage));

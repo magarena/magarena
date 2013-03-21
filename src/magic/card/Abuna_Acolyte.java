@@ -40,7 +40,7 @@ public class Abuna_Acolyte {
 
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
-            event.processTarget(game,choiceResults,new MagicTargetAction() {
+            event.processTarget(game,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     game.doAction(new MagicPreventDamageAction(target,2));
                 }

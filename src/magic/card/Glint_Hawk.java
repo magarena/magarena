@@ -37,7 +37,7 @@ public class Glint_Hawk {
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));
             }
             else {
-                event.processTargetPermanent(game,choiceResults,new MagicPermanentAction() {
+                event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
                         game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.OwnersHand));
                     }

@@ -51,7 +51,7 @@ public class Driver_of_the_Dead {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                event.processTargetCard(game,choiceResults,new MagicCardAction() {
+                event.processTargetCard(game,new MagicCardAction() {
                     public void doAction(final MagicCard card) {
                         game.doAction(new MagicReanimateAction(
                                 event.getPlayer(),

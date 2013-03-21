@@ -67,7 +67,7 @@ public class Echo_Mage {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTargetCardOnStack(game,choiceResults,new MagicCardOnStackAction() {
+            event.processTargetCardOnStack(game,new MagicCardOnStackAction() {
                 public void doAction(final MagicCardOnStack targetSpell) {
                     final MagicPlayer player = event.getPlayer();
                     final int amount=event.getRefInt();

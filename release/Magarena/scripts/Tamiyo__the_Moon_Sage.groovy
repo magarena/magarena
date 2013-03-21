@@ -15,7 +15,7 @@
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTargetPermanent(game,choiceResults,new MagicPermanentAction() {
+            event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicTapAction(creature,true));
                     game.doAction(new MagicChangeStateAction(
@@ -42,7 +42,7 @@
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTargetPlayer(game,choiceResults,new MagicPlayerAction() {
+            event.processTargetPlayer(game,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     final int amt = game.filterPermanents(player, MagicTargetFilter.TARGET_TAPPED_CREATURE_YOU_CONTROL).size();
                     game.doAction(new MagicDrawAction(event.getPlayer(),amt));

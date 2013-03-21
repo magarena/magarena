@@ -29,7 +29,7 @@ public class Mighty_Leap {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTargetPermanent(game,choiceResults,new MagicPermanentAction() {
+            event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeTurnPTAction(creature,2,2));
                     game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Flying));

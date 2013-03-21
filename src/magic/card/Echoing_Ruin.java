@@ -32,7 +32,7 @@ public class Echoing_Ruin {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTargetPermanent(game,choiceResults,new MagicPermanentAction() {
+            event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent targetPermanent) {
                     final MagicTargetFilter<MagicPermanent> targetFilter = 
                         new MagicTargetFilter.NameTargetFilter(targetPermanent.getName());

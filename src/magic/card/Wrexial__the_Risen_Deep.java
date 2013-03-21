@@ -42,7 +42,7 @@ public class Wrexial__the_Risen_Deep {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                event.processTargetCard(game,choiceResults,new MagicCardAction() {
+                event.processTargetCard(game,new MagicCardAction() {
                     public void doAction(final MagicCard card) {
                         game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
                         final MagicCardOnStack cardOnStack=new MagicCardOnStack(card,event.getPlayer(),MagicPayedCost.NO_COST);

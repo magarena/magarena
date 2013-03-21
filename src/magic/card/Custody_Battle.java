@@ -33,7 +33,7 @@ public class Custody_Battle {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                event.processTargetPermanent(game,choiceResults,new MagicPermanentAction() {
+                event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent perm) {
                         game.doAction(new MagicSacrificeAction(perm));
                     }

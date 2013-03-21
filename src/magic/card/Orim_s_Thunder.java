@@ -43,7 +43,7 @@ public class Orim_s_Thunder {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTargetPermanent(game,choiceResults,new MagicPermanentAction() {
+            event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent target) {
                     game.doAction(new MagicDestroyAction(target));
                     final boolean kicked = (Integer)choiceResults[1] > 0;
@@ -61,7 +61,7 @@ public class Orim_s_Thunder {
                                 final MagicGame game,
                                 final MagicEvent event,
                                 final Object[] choiceResults) {
-                                event.processTarget(game,choiceResults,new MagicTargetAction() {
+                                event.processTarget(game,new MagicTargetAction() {
                                     public void doAction(final MagicTarget target) {
                                         final MagicDamage damage = new MagicDamage(event.getSource(),target,amount);
                                         game.doAction(new MagicDealDamageAction(damage));

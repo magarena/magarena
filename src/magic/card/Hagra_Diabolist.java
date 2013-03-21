@@ -35,7 +35,7 @@ public class Hagra_Diabolist {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                event.processTargetPlayer(game,choiceResults,new MagicPlayerAction() {
+                event.processTargetPlayer(game,new MagicPlayerAction() {
                     public void doAction(final MagicPlayer targetPlayer) {
                         final MagicPlayer player = event.getPlayer();
                         final int amount =

@@ -63,7 +63,7 @@ public class Shrine_of_Burning_Rage {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTarget(game,choiceResults,new MagicTargetAction() {
+            event.processTarget(game,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicPermanent source=event.getPermanent();
                     final int amount=source.getCounters(MagicCounterType.Charge);

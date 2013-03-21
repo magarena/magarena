@@ -28,7 +28,7 @@ public class Brimstone_Volley {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTarget(game,choiceResults,new MagicTargetAction() {
+            event.processTarget(game,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final int amount = game.getCreatureDiedThisTurn() ? 5 : 3;
                     final MagicDamage damage=new MagicDamage(event.getSource(),target,amount);

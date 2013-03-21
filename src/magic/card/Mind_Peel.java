@@ -34,7 +34,7 @@ public class Mind_Peel {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTargetPlayer(game,choiceResults,new MagicPlayerAction() {
+            event.processTargetPlayer(game,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     game.addEvent(new MagicDiscardEvent(event.getSource(),player,1,false));
                     if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {

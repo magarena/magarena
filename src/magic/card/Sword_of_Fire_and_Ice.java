@@ -32,7 +32,7 @@ public class Sword_of_Fire_and_Ice {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTarget(game,choiceResults,new MagicTargetAction() {
+            event.processTarget(game,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicDamage damage=new MagicDamage(event.getPermanent(),target,2);
                     game.doAction(new MagicDealDamageAction(damage));

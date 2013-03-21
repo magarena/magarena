@@ -25,7 +25,7 @@ public class Dismal_Failure {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTargetCardOnStack(game,choiceResults,new MagicCardOnStackAction() {
+            event.processTargetCardOnStack(game,new MagicCardOnStackAction() {
                 public void doAction(final MagicCardOnStack counteredCard) {
                     game.doAction(new MagicCounterItemOnStackAction(counteredCard));
                     game.addEvent(new MagicDiscardEvent(event.getSource(),counteredCard.getController(),1,false));

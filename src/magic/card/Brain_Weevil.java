@@ -39,7 +39,7 @@ public class Brain_Weevil {
 
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
-            event.processTargetPlayer(game,choiceResults,new MagicPlayerAction() {
+            event.processTargetPlayer(game,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     game.addEvent(new MagicDiscardEvent(event.getPermanent(),player,2,false));
                 }

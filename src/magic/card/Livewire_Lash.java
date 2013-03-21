@@ -36,7 +36,7 @@ public class Livewire_Lash {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicPermanent source = event.getRefPermanent();
-            event.processTarget(game,choiceResults,new MagicTargetAction() {
+            event.processTarget(game,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicDamage damage=new MagicDamage(source,target,2);
                     game.doAction(new MagicDealDamageAction(damage));

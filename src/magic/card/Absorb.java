@@ -25,7 +25,7 @@ public class Absorb {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTargetCardOnStack(game,choiceResults,new MagicCardOnStackAction() {
+            event.processTargetCardOnStack(game,new MagicCardOnStackAction() {
                 public void doAction(final MagicCardOnStack targetSpell) {
                     game.doAction(new MagicCounterItemOnStackAction(targetSpell));
                     game.doAction(new MagicChangeLifeAction(event.getPlayer(),3));

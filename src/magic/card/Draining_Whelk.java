@@ -30,7 +30,7 @@ public class Draining_Whelk {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTargetCardOnStack(game,choiceResults,new MagicCardOnStackAction() {
+            event.processTargetCardOnStack(game,new MagicCardOnStackAction() {
                 public void doAction(final MagicCardOnStack card) {
                     game.doAction(new MagicCounterItemOnStackAction(card));
                     game.doAction(new MagicChangeCountersAction(

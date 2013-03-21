@@ -27,7 +27,7 @@ public class Outwit {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTargetCardOnStack(game,choiceResults,new MagicCardOnStackAction() {
+            event.processTargetCardOnStack(game,new MagicCardOnStackAction() {
                 public void doAction(final MagicCardOnStack targetSpell) {
                     if (targetSpell.getChoiceResults() != null) {
                         for (final Object choiceResult : targetSpell.getChoiceResults()) {

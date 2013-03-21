@@ -72,7 +72,7 @@ public class Mad_Auntie {
                 final MagicGame game, 
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTargetPermanent(game, choiceResults,
+            event.processTargetPermanent(game,
                 new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicRegenerateAction(creature));

@@ -34,7 +34,7 @@ public class Karmic_Guide {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTargetCard(game,choiceResults,new MagicCardAction() {
+            event.processTargetCard(game,new MagicCardAction() {
                 public void doAction(final MagicCard targetCard) {
                     game.doAction(new MagicReanimateAction(
                             event.getPlayer(),

@@ -70,7 +70,7 @@ public class Guul_Draz_Assassin {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final int amount = event.getRefInt();
-            event.processTargetPermanent(game,choiceResults,new MagicPermanentAction() {
+            event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeTurnPTAction(creature,amount,amount));
                 }

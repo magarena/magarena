@@ -30,7 +30,7 @@ public class Arcbound_Fiend {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                event.processTargetPermanent(game,choiceResults,new MagicPermanentAction() {
+                event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
                         if (creature.getCounters(MagicCounterType.PlusOne) > 0) {
                             game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,1,true));

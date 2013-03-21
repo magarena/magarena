@@ -31,7 +31,7 @@ public class Sigil_Blessing {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTargetPermanent(game,choiceResults,new MagicPermanentAction() {
+            event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     final Collection<MagicPermanent> targets=game.filterPermanents(
                             event.getPlayer(),

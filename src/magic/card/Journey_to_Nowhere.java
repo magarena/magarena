@@ -28,7 +28,7 @@ public class Journey_to_Nowhere {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicPermanent permanent = event.getPermanent();
-            event.processTargetPermanent(game,choiceResults,new MagicPermanentAction() {
+            event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicExileUntilThisLeavesPlayAction(permanent,creature));
                 }

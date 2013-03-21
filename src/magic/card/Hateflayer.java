@@ -45,7 +45,7 @@ public class Hateflayer {
 
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
-            event.processTarget(game,choiceResults,new MagicTargetAction() {
+            event.processTarget(game,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicPermanent permanent=event.getPermanent();
                     final MagicDamage damage=new MagicDamage(permanent,target,permanent.getPower());

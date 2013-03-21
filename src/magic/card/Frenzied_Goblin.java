@@ -35,7 +35,7 @@ public class Frenzied_Goblin {
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                event.processTargetPermanent(game,choiceResults,new MagicPermanentAction() {
+                event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
                         game.doAction(new MagicSetAbilityAction(creature,MagicAbility.CannotBlock));
                     }

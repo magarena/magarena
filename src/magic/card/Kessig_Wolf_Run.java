@@ -55,7 +55,7 @@ public class Kessig_Wolf_Run {
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
             final int amount = event.getRefInt();
-            event.processTargetPermanent(game,choiceResults,new MagicPermanentAction() {
+            event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeTurnPTAction(creature,amount,0));
                     game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Trample));

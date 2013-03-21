@@ -48,7 +48,7 @@ public class Graveyard_Shovel {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTargetPlayer(game,choiceResults,new MagicPlayerAction() {
+            event.processTargetPlayer(game,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer targetPlayer) {
                     if (targetPlayer.getGraveyard().size() > 0) {
                         final MagicPlayer player = event.getPlayer();
@@ -71,7 +71,7 @@ public class Graveyard_Shovel {
                     final MagicGame game,
                     final MagicEvent event,
                     final Object[] choiceResults) {
-                event.processTargetCard(game,choiceResults,new MagicCardAction() {
+                event.processTargetCard(game,new MagicCardAction() {
                     public void doAction(final MagicCard card) {
                         game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
                         game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.Exile));

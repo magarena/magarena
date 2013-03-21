@@ -32,7 +32,7 @@
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTargetPlayer(game,choiceResults,new MagicPlayerAction() {
+            event.processTargetPlayer(game,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     final MagicDamage damage = new MagicDamage(event.getSource(), player, player.getHandSize());
                     game.doAction(new MagicDealDamageAction(damage));

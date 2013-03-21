@@ -59,7 +59,7 @@ public class Beguiler_of_Wills {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            event.processTargetPermanent(game,choiceResults,new MagicPermanentAction() {
+            event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     if (creature.getPower() <= event.getPlayer().getNrOfPermanentsWithType(MagicType.Creature)) {
                         game.doAction(new MagicGainControlAction(event.getPlayer(),creature));

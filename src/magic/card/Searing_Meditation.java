@@ -39,7 +39,7 @@ public class Searing_Meditation {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                event.processTarget(game,choiceResults,new MagicTargetAction() {
+                event.processTarget(game,new MagicTargetAction() {
                     public void doAction(final MagicTarget target) {
                         final MagicDamage damage = new MagicDamage(event.getPermanent(),target,2);
                         game.doAction(new MagicDealDamageAction(damage));
