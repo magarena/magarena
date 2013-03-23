@@ -42,7 +42,7 @@ public class Flameblast_Dragon {
             if (event.isYes()) {
                 event.processTarget(game,new MagicTargetAction() {
                     public void doAction(final MagicTarget target) {
-                        final MagicPayManaCostResult payedManaCost=(MagicPayManaCostResult)choiceResults[1];
+                        final MagicPayManaCostResult payedManaCost = event.getPaidMana();
                         final MagicDamage damage=new MagicDamage(event.getPermanent(),target,payedManaCost.getX());
                         game.doAction(new MagicDealDamageAction(damage));
                     }

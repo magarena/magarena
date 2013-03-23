@@ -57,7 +57,7 @@ public class Spiritmonger {
                 public int getColorFlags(
                         final MagicPermanent permanent,
                         final int flags) {
-                    return ((MagicColor)choiceResults[0]).getMask();
+                    return event.getChosenColor().getMask();
                 }   
             }));
             game.doAction(new MagicPlayAbilityAction(permanent));

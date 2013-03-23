@@ -43,7 +43,7 @@ public class Rith__the_Awakener {
                 final Object[] choiceResults) {
             if (event.isYes()) {
                 final MagicPlayer player=event.getPlayer();
-                final MagicColor color=(MagicColor)choiceResults[2];
+                final MagicColor color=event.getChosenColor();
                 final Collection<MagicPermanent> targets=
                     game.filterPermanents(player,MagicTargetFilter.TARGET_PERMANENT);
                 for (final MagicPermanent permanent : targets) {

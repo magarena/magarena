@@ -12,6 +12,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPermanentList;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
+import magic.model.MagicColor;
 import magic.model.action.MagicCardAction;
 import magic.model.action.MagicCardOnStackAction;
 import magic.model.action.MagicMoveCardAction;
@@ -410,6 +411,24 @@ public class MagicEvent implements MagicCopyable {
     
     public boolean isKicked() {
         return getKickerCount() > 0;
+    }
+    
+    public MagicColor getChosenColor() {
+        for (Object obj : chosen) {
+            if (obj instanceof MagicColor) {
+                return (MagicColor)obj;
+            }
+        }
+        throw new RuntimeException("Unable to find chosen color");
+    }
+    
+    public MagicPayManaCostResult getPaidMana() {
+        for (Object obj : chosen) {
+            if (obj instanceof MagicPayManaCostResult) {
+                return (MagicPayManaCostResult)obj;
+            }
+        }
+        throw new RuntimeException("Unable to find paid mana");
     }
     
     private final MagicTarget getLegalTarget(final MagicGame game) {
