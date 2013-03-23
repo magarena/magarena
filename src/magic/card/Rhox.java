@@ -32,7 +32,7 @@ public class Rhox {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            if (event.isYes()) {
                 final MagicPermanent permanent = event.getPermanent();
                 final MagicDamage damage = MagicDamage.Combat(
                     permanent,

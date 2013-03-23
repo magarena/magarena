@@ -37,7 +37,7 @@ public class Murasa_Pyromancer {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            if (event.isYes()) {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
                         final MagicPlayer player = event.getPlayer();

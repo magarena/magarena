@@ -40,7 +40,7 @@ public class Elvish_Fury {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeTurnPTAction(creature,2,2));
-                    if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
+                    if (event.isBuyback()) {
                         game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
                     } 
                 }

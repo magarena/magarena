@@ -37,7 +37,7 @@ public class Mind_Peel {
             event.processTargetPlayer(game,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     game.addEvent(new MagicDiscardEvent(event.getSource(),player,1,false));
-                    if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
+                    if (event.isBuyback()) {
                         game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
                     } 
                 }

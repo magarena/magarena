@@ -33,7 +33,7 @@ public class Ronin_Cliffrider {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            if (event.isYes()) {
                 final MagicSource source = event.getSource();
                 final MagicPlayer defendingPlayer = event.getPlayer().getOpponent();
                 final Collection<MagicPermanent> creatures =

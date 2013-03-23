@@ -30,7 +30,7 @@ public class Blood_Seeker {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            if (event.isYes()) {
                 game.doAction(new MagicChangeLifeAction(event.getPlayer().getOpponent(),-1));
             }
         }        

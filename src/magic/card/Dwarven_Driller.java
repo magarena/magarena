@@ -70,7 +70,7 @@ public class Dwarven_Driller {
                     final MagicGame game,
                     final MagicEvent event,
                     final Object[] choiceResults) {
-                if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                if (event.isYes()) {
                     final MagicDamage damage = new MagicDamage(
                         event.getSource(),
                         event.getPlayer(),

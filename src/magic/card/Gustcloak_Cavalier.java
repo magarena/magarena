@@ -31,7 +31,7 @@ public class Gustcloak_Cavalier {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            if (event.isYes()) {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
                         game.doAction(new MagicTapAction(creature,true));
@@ -58,7 +58,7 @@ public class Gustcloak_Cavalier {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            if (event.isYes()) {
                 final MagicPermanent permanent = event.getPermanent();
                 game.doAction(new MagicUntapAction(permanent));
                 game.doAction(new MagicRemoveFromCombatAction(permanent));

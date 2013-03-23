@@ -41,7 +41,7 @@ public class Rith__the_Awakener {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            if (event.isYes()) {
                 final MagicPlayer player=event.getPlayer();
                 final MagicColor color=(MagicColor)choiceResults[2];
                 final Collection<MagicPermanent> targets=

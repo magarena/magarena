@@ -42,7 +42,7 @@ public class Disturbed_Burial {
                 public void doAction(final MagicCard targetCard) {
                     game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
                     game.doAction(new MagicMoveCardAction(targetCard,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
-                    if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
+                    if (event.isBuyback()) {
                         game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
                     } 
                 }

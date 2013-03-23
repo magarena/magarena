@@ -26,7 +26,7 @@
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            if (event.isYes()) {
                 final MagicCardOnStack spell = event.getRefCardOnStack();
                 game.doAction(new MagicChangeLifeAction(event.getPlayer(), spell.getConvertedCost()));
             }

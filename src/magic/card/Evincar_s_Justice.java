@@ -45,7 +45,7 @@ public class Evincar_s_Justice {
                 final MagicDamage damage = new MagicDamage(event.getSource(),player,2);
                 game.doAction(new MagicDealDamageAction(damage));
             }
-            if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
+            if (event.isBuyback()) {
                 game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
             } 
         }

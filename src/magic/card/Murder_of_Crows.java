@@ -32,7 +32,7 @@ public class Murder_of_Crows {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            if (MagicChoice.isYesChoice(choiceResults[0])) {
+            if (event.isYes()) {
                 final MagicPlayer player=event.getPlayer();
                 game.doAction(new MagicDrawAction(player,1));
                 game.addEvent(new MagicDiscardEvent(event.getSource(),player,1,false));

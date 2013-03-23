@@ -39,7 +39,7 @@ public class Talus_Paladin {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            if (event.isYes()) {
                 final Collection<MagicPermanent> targets =
                         game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_ALLY_YOU_CONTROL);
                 for (final MagicPermanent creature : targets) {
@@ -70,7 +70,7 @@ public class Talus_Paladin {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            if (event.isYes()) {
                 game.doAction(new MagicChangeCountersAction(
                         event.getPermanent(),
                         MagicCounterType.PlusOne,

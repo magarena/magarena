@@ -95,7 +95,7 @@ public class Rise_of_the_Hobgoblins {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            if (event.isYes()) {
                 final MagicPlayer player=event.getPlayer();
                 final MagicPayManaCostResult payedManaCost=(MagicPayManaCostResult)choiceResults[1];
                 for (int count=payedManaCost.getX();count>0;count--) {

@@ -29,7 +29,7 @@ public class Rampaging_Baloths {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            if (event.isYes()) {
                 game.doAction(new MagicPlayTokenAction(
                         event.getPlayer(),
                         TokenCardDefinitions.get("Beast4")));

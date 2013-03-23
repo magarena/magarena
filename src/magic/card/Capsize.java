@@ -36,7 +36,7 @@ public class Capsize {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
-                    if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
+                    if (event.isBuyback()) {
                         game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
                     } 
                 }

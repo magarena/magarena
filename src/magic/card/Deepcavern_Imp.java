@@ -32,7 +32,7 @@ public class Deepcavern_Imp {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicPermanent permanent = event.getPermanent();
-            if (MagicMayChoice.isYesChoice(choiceResults[0]) && event.getPlayer().getHandSize() > 0) {
+            if (event.isYes() && event.getPlayer().getHandSize() > 0) {
                 game.addEvent(new MagicDiscardEvent(
                         permanent,
                         event.getPlayer(),

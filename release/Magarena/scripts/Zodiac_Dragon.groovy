@@ -17,7 +17,7 @@
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicCard card = event.getPermanent().getCard()
-            if (MagicMayChoice.isYesChoice(choiceResults[0]) && event.getPlayer().getGraveyard().contains(card)) {
+            if (event.isYes() && event.getPlayer().getGraveyard().contains(card)) {
                 game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
                 game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
             }

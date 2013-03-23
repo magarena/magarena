@@ -30,7 +30,7 @@ public class Infiltration_Lens {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event, final Object[] choiceResults) {
-            if (MagicChoice.isYesChoice(choiceResults[0])) {
+            if (event.isYes()) {
                 game.doAction(new MagicDrawAction(event.getPlayer(),2));
             }
         }

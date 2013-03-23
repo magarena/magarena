@@ -41,7 +41,7 @@ public class Treva__the_Renewer {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            if (event.isYes()) {
                 int life=0;
                 final MagicPlayer player=event.getPlayer();
                 final MagicColor color=(MagicColor)choiceResults[2];

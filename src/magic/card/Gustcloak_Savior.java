@@ -27,7 +27,7 @@ public class Gustcloak_Savior {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            if (event.isYes()) {
                 final MagicPermanent permanent = event.getRefPermanent();
                 game.doAction(new MagicUntapAction(permanent));
                 game.doAction(new MagicRemoveFromCombatAction(permanent));

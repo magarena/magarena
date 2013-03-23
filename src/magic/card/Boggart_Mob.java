@@ -39,7 +39,7 @@ public class Boggart_Mob {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            if (event.isYes()) {
                 game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Goblin Rogue1")));
             }
         }

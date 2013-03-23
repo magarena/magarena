@@ -38,7 +38,7 @@ public class Seething_Anger {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeTurnPTAction(creature,3,0));
-                    if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
+                    if (event.isBuyback()) {
                         game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
                     } 
                 }

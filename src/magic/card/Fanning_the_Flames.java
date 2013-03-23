@@ -46,7 +46,7 @@ public class Fanning_the_Flames {
                         event.getCardOnStack().getX()
                     );
                     game.doAction(new MagicDealDamageAction(damage));
-                    if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
+                    if (event.isBuyback()) {
                         game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
                     } 
                 }

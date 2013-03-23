@@ -34,7 +34,7 @@ public class Lab_Rats {
             game.doAction(new MagicPlayTokenAction(
                     event.getPlayer(),
                     TokenCardDefinitions.get("Rat1")));
-            if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
+            if (event.isBuyback()) {
                 game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
             } 
         }

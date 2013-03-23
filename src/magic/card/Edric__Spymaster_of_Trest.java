@@ -35,7 +35,7 @@ public class Edric__Spymaster_of_Trest {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            if (MagicChoice.isYesChoice(choiceResults[0])) {
+            if (event.isYes()) {
                 game.doAction(new MagicDrawAction(event.getPlayer(),1));
             }
         }

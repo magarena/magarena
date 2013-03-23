@@ -34,7 +34,7 @@ public class Ondu_Cleric {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            if (event.isYes()) {
                 final MagicPlayer player = event.getPlayer();
                 final int amount =
                         player.getNrOfPermanentsWithSubType(MagicSubType.Ally);

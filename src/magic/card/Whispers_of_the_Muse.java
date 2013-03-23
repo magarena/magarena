@@ -29,7 +29,7 @@ public class Whispers_of_the_Muse {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             game.doAction(new MagicDrawAction(event.getPlayer(),1));
-            if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
+            if (event.isBuyback()) {
                 game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
             } 
         }

@@ -66,7 +66,7 @@ public class Quest_for_the_Gravelord {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            if (event.isYes()) {
                 game.doAction(new MagicChangeCountersAction(
                     event.getPermanent(),
                     MagicCounterType.Charge,

@@ -39,7 +39,7 @@ public class Mask_of_Memory {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            if (MagicChoice.isYesChoice(choiceResults[0])) {
+            if (event.isYes()) {
                 final MagicPlayer player = event.getPlayer();
                 game.doAction(new MagicDrawAction(player, 2));
                 game.addEvent(new MagicDiscardEvent(

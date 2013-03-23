@@ -37,7 +37,7 @@ public class Bone_Dancer {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            if (event.isYes()) {
                 final MagicPlayer opponent = event.getPlayer().getOpponent();
                 final List<MagicCard> targets =
                         game.filterCards(opponent,MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD);

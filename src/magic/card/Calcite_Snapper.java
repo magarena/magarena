@@ -27,7 +27,7 @@ public class Calcite_Snapper {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            if (event.isYes()) {
                 game.doAction(new MagicAddStaticAction(event.getPermanent(), new MagicStatic(
                         MagicLayer.SwitchPT,
                         MagicStatic.UntilEOT) {

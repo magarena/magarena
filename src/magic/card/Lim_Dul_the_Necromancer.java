@@ -60,7 +60,7 @@ public class Lim_Dul_the_Necromancer {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            if (event.isYes()) {
                 final MagicCard card = event.getRefCard();
                 if (card.getOwner().getGraveyard().contains(card)) {
                     final MagicPlayCardAction action = new MagicPlayCardAction(card,event.getPlayer(),MagicPlayCardAction.NONE);

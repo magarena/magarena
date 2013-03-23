@@ -34,7 +34,7 @@ public class Floral_Spuzzem {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            if (event.isYes()) {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent target) {
                         game.doAction(new MagicDestroyAction(target));

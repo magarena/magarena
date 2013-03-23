@@ -32,7 +32,7 @@ public class Curiosity {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            if (event.isYes()) {
                 game.doAction(new MagicDrawAction(event.getPlayer(),1));
             }
         }

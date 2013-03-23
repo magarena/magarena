@@ -49,7 +49,7 @@ public class Corpse_Dance {
                         card,
                         MagicPlayCardAction.HASTE_UEOT_REMOVE_AT_END_OF_TURN));
             } 
-            if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
+            if (event.isBuyback()) {
                 game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
             } 
         }
