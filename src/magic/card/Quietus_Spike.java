@@ -19,10 +19,11 @@ public class Quietus_Spike {
                     target.isPlayer() && 
                     damage.isCombat()) ?
                 new MagicEvent(
-                        permanent,
-                        (MagicPlayer)target,
-                        this,
-                        "You lose half your life, rounded up."):
+                    permanent,
+                    damage.getTargetPlayer(),
+                    this,
+                    "You lose half your life, rounded up."
+                ):
                 MagicEvent.NONE;
         }
         @Override

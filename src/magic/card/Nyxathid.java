@@ -28,11 +28,5 @@ public class Nyxathid {
             permanent.setChosenTarget(player.getOpponent());
             return MagicEvent.NONE;
         }
-
-        @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
-        }
     };
 }

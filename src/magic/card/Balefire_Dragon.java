@@ -23,7 +23,7 @@ public class Balefire_Dragon {
                     damage.isCombat()) ?
                 new MagicEvent(
                         permanent,
-                        (MagicPlayer)damage.getTarget(),
+                        damage.getTargetPlayer(),
                         amount,
                         this,
                         "SN deals " + amount + " damage to each creature defending player controls."):

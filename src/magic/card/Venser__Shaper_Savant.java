@@ -40,9 +40,10 @@ public class Venser__Shaper_Savant {
                         final MagicCardOnStack cardOnStack=(MagicCardOnStack)target;
                         game.doAction(new MagicRemoveItemFromStackAction(cardOnStack));
                         game.doAction(new MagicMoveCardAction(
-                                    cardOnStack.getCard(),
-                                    MagicLocationType.Stack,
-                                    MagicLocationType.OwnersHand));
+                            cardOnStack.getCard(),
+                            MagicLocationType.Stack,
+                            MagicLocationType.OwnersHand
+                        ));
                     }
                 }
             });

@@ -22,7 +22,7 @@ public class Szadek__Lord_of_Secrets {
                 // Replacement effect.
                 damage.setAmount(0);
                 game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.PlusOne,amount,true));
-                game.doAction(new MagicMillLibraryAction((MagicPlayer)damage.getTarget(),amount));
+                game.doAction(new MagicMillLibraryAction(damage.getTargetPlayer(),amount));
             }            
             return MagicEvent.NONE;
         }

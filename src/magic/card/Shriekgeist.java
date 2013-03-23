@@ -22,7 +22,7 @@ public class Shriekgeist {
                     damage.isCombat()) ?
                 new MagicEvent(
                     permanent,
-                    (MagicPlayer)target,
+                    damage.getTargetPlayer(),
                     this,
                     "PN puts the top two cards of " +
                     "his or her library into his or her graveyard."

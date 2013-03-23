@@ -2,7 +2,6 @@ package magic.model;
 
 import magic.model.target.MagicTarget;
 
-
 public class MagicDamage {
     
     private final MagicSource source;
@@ -38,6 +37,10 @@ public class MagicDamage {
     
     public MagicTarget getTarget() {
         return target;
+    }
+    
+    public MagicPlayer getTargetPlayer() {
+        return (MagicPlayer)target;
     }
     
     public void setAmount(final int amount) {
