@@ -40,7 +40,9 @@ public class MagicPayManaCostChoice extends MagicChoice {
 
     @Override
     boolean hasOptions(final MagicGame game,final MagicPlayer player,final MagicSource source,final boolean hints) {
-        return new MagicPayManaCostResultBuilder(game,player,cost.getBuilderCost()).hasResults();
+        final MagicBuilderManaCost builderCost=new MagicBuilderManaCost(player.getBuilderCost());
+        cost.addTo(builderCost);
+        return new MagicPayManaCostResultBuilder(game,player,builderCost).hasResults();
     }
             
     private Collection<Object> genOptions(final MagicGame game, final MagicPlayer player) {
@@ -52,7 +54,8 @@ public class MagicPayManaCostChoice extends MagicChoice {
     private Collection<Object> buildDelayedPayManaCostResults(final MagicGame game,final MagicPlayer player) {
         if (cost.hasX()) {
             final int maxX=player.getMaximumX(game,cost);
-            if (maxX==1) {
+            assert maxX > 0 : "Unable to pay for {X} in " + cost + " as maxX = " + maxX;
+            if (maxX == 1) {
                 return Collections.<Object>singletonList(new MagicDelayedPayManaCostResult(cost,1));
             } else {
                 final List<Object> choices=new ArrayList<Object>();
