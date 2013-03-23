@@ -40,8 +40,7 @@ public class MagicPayManaCostChoice extends MagicChoice {
 
     @Override
     boolean hasOptions(final MagicGame game,final MagicPlayer player,final MagicSource source,final boolean hints) {
-        final Collection<Object> options = genOptions(game, player);
-        return !options.isEmpty();
+        return new MagicPayManaCostResultBuilder(game,player,cost.getBuilderCost()).hasResults();
     }
             
     private Collection<Object> genOptions(final MagicGame game, final MagicPlayer player) {
