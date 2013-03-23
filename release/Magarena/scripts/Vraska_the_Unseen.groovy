@@ -32,10 +32,7 @@ def T = new MagicWhenDamageIsDealtTrigger() {
             );
         }
         @Override
-        public void executeEvent(
-                final MagicGame outerGame,
-                final MagicEvent outerEvent,
-                final Object[] outerChoiceResults) {
+        public void executeEvent(final MagicGame outerGame, final MagicEvent outerEvent) {
             final MagicWhenDamageIsDealtTrigger trigger = T;
             outerGame.doAction(new MagicAddTriggerAction(outerEvent.getPermanent(), trigger));
             // remove the trigger during player's next upkeep

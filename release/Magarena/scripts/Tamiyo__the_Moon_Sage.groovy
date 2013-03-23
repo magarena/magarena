@@ -60,10 +60,7 @@
             );
         }
         @Override
-        public void executeEvent(
-                final MagicGame outerGame,
-                final MagicEvent outerEvent,
-                final Object[] outerChoiceResults) {
+        public void executeEvent(final MagicGame outerGame, final MagicEvent outerEvent) {
             final MagicPlayer you = outerEvent.getPlayer();
             outerGame.doAction(new MagicAddStaticAction(
                 new MagicStatic(MagicLayer.Player) {
