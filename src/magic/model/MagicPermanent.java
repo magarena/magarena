@@ -604,6 +604,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return chosenTarget;
     }
     
+    public MagicPlayer getChosenPlayer() {
+        return (MagicPlayer)chosenTarget;
+    }
+    
     public void setChosenTarget(final MagicTarget target) {
         chosenTarget = target;
     }

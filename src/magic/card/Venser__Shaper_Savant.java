@@ -7,7 +7,8 @@ import magic.model.MagicPlayer;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.action.MagicRemoveItemFromStackAction;
-import magic.model.action.MagicTargetAction;
+import magic.model.action.MagicPermanentAction;
+import magic.model.action.MagicCardOnStackAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.stack.MagicCardOnStack;
@@ -32,19 +33,19 @@ public class Venser__Shaper_Savant {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event) {
-            event.processTarget(game,new MagicTargetAction() {
-                public void doAction(final MagicTarget target) {
-                    if (target.isPermanent()) {
-                        game.doAction(new MagicRemoveFromPlayAction((MagicPermanent)target,MagicLocationType.OwnersHand));
-                    } else {
-                        final MagicCardOnStack cardOnStack=(MagicCardOnStack)target;
-                        game.doAction(new MagicRemoveItemFromStackAction(cardOnStack));
-                        game.doAction(new MagicMoveCardAction(
-                            cardOnStack.getCard(),
-                            MagicLocationType.Stack,
-                            MagicLocationType.OwnersHand
-                        ));
-                    }
+            event.processTargetCardOnStack(game,new MagicCardOnStackAction() {
+                public void doAction(final MagicCardOnStack cardOnStack) {
+                    game.doAction(new MagicRemoveItemFromStackAction(cardOnStack));
+                    game.doAction(new MagicMoveCardAction(
+                        cardOnStack.getCard(),
+                        MagicLocationType.Stack,
+                        MagicLocationType.OwnersHand
+                    ));
+                }
+            });
+            event.processTargetPermanent(game,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent perm) {
+                    game.doAction(new MagicRemoveFromPlayAction(perm,MagicLocationType.OwnersHand));
                 }
             });
         }
