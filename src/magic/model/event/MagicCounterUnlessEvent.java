@@ -31,7 +31,7 @@ public class MagicCounterUnlessEvent extends MagicEvent {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicItemOnStack itemOnStack = event.getRefItemOnStack();
-            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            if (event.isYes()) {
                 event.payManaCost(game,itemOnStack.getController(),choiceResults);
             } else {
                 game.doAction(new MagicCounterItemOnStackAction(itemOnStack));

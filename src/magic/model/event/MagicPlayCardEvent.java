@@ -49,8 +49,7 @@ public class MagicPlayCardEvent {
                     final MagicGame game,
                     final MagicEvent event,
                     final Object[] choiceResults) {
-                final int kicker = (Integer)choiceResults[1];
-                game.doAction(new MagicPlayCardFromStackAction(event.getCardOnStack(), kicker));
+                game.doAction(new MagicPlayCardFromStackAction(event.getCardOnStack(), event.getKickerCount()));
             }
         };
     }

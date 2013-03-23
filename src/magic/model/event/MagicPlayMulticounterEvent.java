@@ -37,7 +37,7 @@ public class MagicPlayMulticounterEvent extends MagicSpellCardEvent {
         final MagicPlayCardFromStackAction action = new MagicPlayCardFromStackAction(cardOnStack);
         game.doAction(action);
         
-        final int kickerCount = (Integer)choiceResults[1];
+        final int kickerCount = event.getKickerCount();
         if (kickerCount > 0) {
             final MagicPermanent permanent = action.getPermanent();
             game.doAction(new MagicChangeCountersAction(

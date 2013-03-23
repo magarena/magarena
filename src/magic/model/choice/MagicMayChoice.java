@@ -26,6 +26,7 @@ public class MagicMayChoice extends MagicChoice {
     private final MagicChoice[] choices;
     private final MagicTargetChoice targetChoice; 
     private final int manaChoiceResultIndex;
+    private final int targetChoiceResultIndex;
     
     public MagicMayChoice(final String description,final MagicChoice... choices) {
         super(description);
@@ -33,16 +34,19 @@ public class MagicMayChoice extends MagicChoice {
 
         MagicTargetChoice localTargetChoice = MagicTargetChoice.NONE;
         int localManaChoiceResultIndex = -1;
+        int localTargetChoiceResultIndex = -1;
         for (int index=0;index<choices.length;index++) {
             final MagicChoice choice=choices[index];
             if (choice instanceof MagicTargetChoice) {
                 localTargetChoice=(MagicTargetChoice)choice;
+                localTargetChoiceResultIndex=index+1;
             } else if (choice instanceof MagicPayManaCostChoice) {
                 localManaChoiceResultIndex=index+1;
             }
         }
 
         targetChoice = localTargetChoice;
+        targetChoiceResultIndex = localTargetChoiceResultIndex;
         manaChoiceResultIndex = localManaChoiceResultIndex;
     }
     
@@ -57,6 +61,11 @@ public class MagicMayChoice extends MagicChoice {
     @Override
     public MagicTargetChoice getTargetChoice() {
         return targetChoice;
+    }
+    
+    @Override
+    public int getTargetChoiceResultIndex() {
+        return targetChoiceResultIndex;
     }
 
     @Override

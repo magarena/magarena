@@ -21,8 +21,8 @@ public class MagicDeclareBlockersEvent extends MagicEvent {
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
-            final MagicPlayer player=event.getPlayer();
-            final MagicDeclareBlockersResult result=(MagicDeclareBlockersResult)choiceResults[0];
+            final MagicPlayer player = event.getPlayer();
+            final MagicDeclareBlockersResult result = event.getBlockers();
             game.doAction(new MagicDeclareBlockersAction(player,result));
             game.logBlockers(player,result);
         }

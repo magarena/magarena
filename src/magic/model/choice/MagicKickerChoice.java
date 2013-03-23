@@ -52,6 +52,11 @@ public class MagicKickerChoice extends MagicChoice {
     }
     
     @Override
+    public int getTargetChoiceResultIndex() {
+        return (otherChoice instanceof MagicTargetChoice) ? 0 : -1;
+    }
+    
+    @Override
     public int getManaChoiceResultIndex() {
         return 2;
     }

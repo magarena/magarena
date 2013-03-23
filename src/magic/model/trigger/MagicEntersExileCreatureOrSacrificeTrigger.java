@@ -78,7 +78,7 @@ public class MagicEntersExileCreatureOrSacrificeTrigger extends MagicWhenComesIn
             final MagicEvent event,
             final Object[] choiceResults) {
         final MagicPermanent permanent = event.getPermanent();
-        if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+        if (event.isYes()) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicExileUntilThisLeavesPlayAction(permanent,creature));

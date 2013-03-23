@@ -23,8 +23,7 @@ public class MagicExcludeEvent extends MagicEvent {
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] choiceResults) {
-            final MagicExcludeResult result=(MagicExcludeResult)choiceResults[0];
-            result.exclude(game);            
+            event.getExclude().exclude(game);
         }
     };
 }

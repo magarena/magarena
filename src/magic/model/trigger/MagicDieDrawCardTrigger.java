@@ -49,7 +49,7 @@ public class MagicDieDrawCardTrigger extends MagicWhenPutIntoGraveyardTrigger {
             final Object[] choiceResults) {
         if (mustDraw) {
             game.doAction(new MagicDrawAction(event.getPlayer(),1));
-        } else if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+        } else if (event.isYes()) {
             game.doAction(new MagicDrawAction(event.getPlayer(),1));
         }
     }

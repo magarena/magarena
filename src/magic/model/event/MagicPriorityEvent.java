@@ -17,7 +17,7 @@ public class MagicPriorityEvent extends MagicEvent {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             
-            final MagicPlayChoiceResult playChoiceResult=(MagicPlayChoiceResult)choiceResults[0];
+            final MagicPlayChoiceResult playChoiceResult = event.getPlayChoice();
             if (playChoiceResult==MagicPlayChoiceResult.PASS ||
                 playChoiceResult==MagicPlayChoiceResult.SKIP) {
                 game.incrementPriorityPassedCount();

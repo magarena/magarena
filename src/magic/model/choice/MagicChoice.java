@@ -61,6 +61,10 @@ public abstract class MagicChoice {
         return MagicTargetChoice.NONE;
     }
     
+    public int getTargetChoiceResultIndex() {
+        return -1;
+    }
+    
     public int getManaChoiceResultIndex() {
         return -1;
     }

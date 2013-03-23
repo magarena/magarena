@@ -22,6 +22,10 @@ import magic.model.action.MagicTargetAction;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicPayManaCostResult;
 import magic.model.choice.MagicTargetChoice;
+import magic.model.choice.MagicDeclareAttackersResult;
+import magic.model.choice.MagicDeclareBlockersResult;
+import magic.model.choice.MagicExcludeResult;
+import magic.model.choice.MagicPlayChoiceResult;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.stack.MagicItemOnStack;
 import magic.model.target.MagicDefaultTargetPicker;
@@ -367,6 +371,18 @@ public class MagicEvent implements MagicCopyable {
     public MagicTargetChoice getTargetChoice() {
         return choice.getTargetChoice();
     }
+
+    public void clearTargetChoice(Object[] choiceResults) {
+        choiceResults[getTargetChoiceResultIndex()] = null;
+    }
+    
+    public void setTargetChoice(Object[] choiceResults) {
+        choiceResults[getTargetChoiceResultIndex()] = getTarget();
+    }
+    
+    private final int getTargetChoiceResultIndex() {
+        return choice.getTargetChoiceResultIndex();
+    }
     
     private final int getManaChoiceResultIndex() {
         return choice.getManaChoiceResultIndex();
@@ -411,6 +427,22 @@ public class MagicEvent implements MagicCopyable {
     
     public boolean isKicked() {
         return getKickerCount() > 0;
+    }
+            
+    public MagicDeclareBlockersResult getBlockers() {
+        return (MagicDeclareBlockersResult)chosen[0];
+    }
+    
+    public MagicDeclareAttackersResult getAttackers() {
+        return (MagicDeclareAttackersResult)chosen[0];
+    }
+    
+    public MagicExcludeResult getExclude() {
+        return (MagicExcludeResult)chosen[0];
+    }
+    
+    public MagicPlayChoiceResult getPlayChoice() {
+        return (MagicPlayChoiceResult)chosen[0];
     }
     
     public MagicColor getChosenColor() {

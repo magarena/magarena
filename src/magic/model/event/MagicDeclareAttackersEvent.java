@@ -25,7 +25,7 @@ public class MagicDeclareAttackersEvent extends MagicEvent {
                 final MagicEvent event,
                 final Object[] choiceResults) {
             final MagicPlayer player = event.getPlayer();
-            final MagicDeclareAttackersResult result = (MagicDeclareAttackersResult)choiceResults[0];
+            final MagicDeclareAttackersResult result = event.getAttackers();
             game.doAction(new MagicDeclareAttackersAction(player,result));
             game.logAttackers(player,result);
         }

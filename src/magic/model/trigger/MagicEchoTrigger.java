@@ -43,7 +43,7 @@ public class MagicEchoTrigger extends MagicAtUpkeepTrigger {
             final MagicEvent event,
             final Object[] choiceResults) {
         final MagicPermanent permanent = event.getPermanent();
-        if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+        if (event.isYes()) {
             game.doAction(new MagicChangeStateAction(
                 permanent,
                 MagicPermanentState.MustPayEchoCost,false

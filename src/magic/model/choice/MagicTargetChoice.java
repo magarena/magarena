@@ -516,6 +516,11 @@ public class MagicTargetChoice extends MagicChoice {
     public final MagicTargetChoice getTargetChoice() {
         return this;
     }
+    
+    @Override
+    public final int getTargetChoiceResultIndex() {
+        return 0;
+    }
 
     @Override
     final boolean hasOptions(

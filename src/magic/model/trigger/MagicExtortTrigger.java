@@ -41,7 +41,7 @@ public class MagicExtortTrigger extends MagicWhenOtherSpellIsCastTrigger {
             final MagicGame game,
             final MagicEvent event,
             final Object[] choiceResults) {
-        if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+        if (event.isYes()) {
             game.doAction(new MagicChangeLifeAction(event.getPlayer().getOpponent(),-1));
             game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
         }
