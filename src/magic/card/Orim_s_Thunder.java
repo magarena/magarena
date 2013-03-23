@@ -46,8 +46,7 @@ public class Orim_s_Thunder {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent target) {
                     game.doAction(new MagicDestroyAction(target));
-                    final boolean kicked = (Integer)choiceResults[1] > 0;
-                    if (!kicked) {
+                    if (!event.isKicked()) {
                         return;
                     }
                     final int amount = target.getConvertedCost();

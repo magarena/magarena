@@ -38,7 +38,7 @@ public class Into_the_Roil {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
-                    if (((Integer)choiceResults[1])>0) {
+                    if (event.isKicked()) {
                         game.doAction(new MagicDrawAction(event.getPlayer(),1));
                     }
                 }

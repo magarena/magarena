@@ -43,7 +43,7 @@ public class Rite_of_Replication {
                 public void doAction(final MagicPermanent creature) {
                     final MagicPlayer player = event.getPlayer();
                     final MagicCardDefinition cardDefinition = creature.getCardDefinition();
-                    int count = (Integer)choiceResults[1] > 0 ? 5:1;
+                    int count = event.isKicked() ? 5 : 1;
                     for (;count>0;count--) {
                         game.doAction(new MagicPlayTokenAction(player,cardDefinition));
                     }

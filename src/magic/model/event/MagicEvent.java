@@ -403,6 +403,14 @@ public class MagicEvent implements MagicCopyable {
     public boolean isBuyback() {
         return MagicChoice.isYesChoice(chosen[1]);
     }
+
+    public int getKickerCount() {
+        return (Integer)chosen[1];
+    }
+    
+    public boolean isKicked() {
+        return getKickerCount() > 0;
+    }
     
     private final MagicTarget getLegalTarget(final MagicGame game) {
         final MagicTargetChoice targetChoice = getTargetChoice();

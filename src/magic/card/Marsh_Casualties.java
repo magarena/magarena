@@ -35,7 +35,7 @@ public class Marsh_Casualties {
                 final Object[] choiceResults) {
             event.processTargetPlayer(game,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
-                    final int amount=(Integer)choiceResults[1]>0?-2:-1;
+                    final int amount = event.isKicked() ? -2 : -1;
                     final Collection<MagicPermanent> targets=
                         game.filterPermanents(player,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
                     for (final MagicPermanent target : targets) {

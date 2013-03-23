@@ -44,7 +44,7 @@ public class Vines_of_Vastwood {
                     } else {
                         game.doAction(new MagicSetAbilityAction(creature,MagicAbility.CannotBeTheTarget0));
                     }
-                    if (((Integer)choiceResults[1])>0) {
+                    if (event.isKicked()) {
                         game.doAction(new MagicChangeTurnPTAction(creature,4,4));
                     }
                 }
