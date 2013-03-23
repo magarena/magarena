@@ -24,8 +24,7 @@ public class Shadowstorm {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final Collection<MagicPermanent> targets =
                 game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_WITH_SHADOW);
             for (final MagicPermanent target : targets) {

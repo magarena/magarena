@@ -30,9 +30,8 @@ public class Goblin_Ruinblaster {
     
         @Override
         public void executeEvent(
-            final MagicGame game,
-            final MagicEvent event,
-            final Object[] choiceResults) {
+                final MagicGame game,
+                final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent land) {
                     game.doAction(new MagicDestroyAction(land));

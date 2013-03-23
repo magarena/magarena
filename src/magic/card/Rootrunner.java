@@ -5,7 +5,6 @@ import magic.model.MagicLocationType;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.choice.MagicTargetChoice;
@@ -41,7 +40,7 @@ public class Rootrunner {
         }
 
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicRemoveFromPlayAction(

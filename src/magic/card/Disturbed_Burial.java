@@ -36,8 +36,7 @@ public class Disturbed_Burial {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetCard(game,new MagicCardAction() {
                 public void doAction(final MagicCard targetCard) {
                     game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));

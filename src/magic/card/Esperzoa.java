@@ -31,8 +31,7 @@ public class Esperzoa {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent artifact) {
                     game.doAction(new MagicRemoveFromPlayAction(artifact,MagicLocationType.OwnersHand));

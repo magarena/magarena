@@ -24,8 +24,7 @@ public class Berserk_Murlodont {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanent blocked = event.getRefPermanent();
             final int amount = blocked.getBlockingCreatures().size();
             game.doAction(new MagicChangeTurnPTAction(

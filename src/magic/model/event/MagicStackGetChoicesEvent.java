@@ -1,12 +1,8 @@
 package magic.model.event;
 
 import magic.model.MagicGame;
-import magic.model.MagicPermanent;
 import magic.model.choice.MagicTargetChoice;
-import magic.model.stack.MagicCardOnStack;
 import magic.model.stack.MagicItemOnStack;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicWhenSpellIsCastTrigger;
 import magic.model.trigger.MagicTriggerType;
 
 public class MagicStackGetChoicesEvent extends MagicEvent {
@@ -26,14 +22,13 @@ public class MagicStackGetChoicesEvent extends MagicEvent {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicItemOnStack itemOnStack = event.getRefItemOnStack();
-            itemOnStack.setChoiceResults(choiceResults);
+            itemOnStack.setChoiceResults(event.getChosen());
 
             // pay mana cost when there is one.
             // such as "you may pay <mana cost>" in triggers
-            event.payManaCost(game,itemOnStack.getController(),choiceResults);
+            event.payManaCost(game,itemOnStack.getController());
 
             // trigger WhenTargeted
             final MagicTargetChoice tchoice = event.getChoice().getTargetChoice();

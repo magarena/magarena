@@ -1,17 +1,12 @@
 package magic.model.event;
 
 import magic.model.MagicCard;
-import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
-import magic.model.MagicLocationType;
 import magic.model.MagicManaCost;
-import magic.model.MagicPayedCost;
 import magic.model.MagicSource;
-import magic.model.action.MagicDrawAction;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
-import magic.model.stack.MagicCardOnStack;
 import magic.model.stack.MagicAbilityOnStack;
 
 public class MagicCyclingActivation extends MagicCardActivation {
@@ -54,7 +49,7 @@ public class MagicCyclingActivation extends MagicCardActivation {
     }
 
     @Override
-    public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choices) {
+    public void executeEvent(final MagicGame game, final MagicEvent event) {
         final MagicAbilityOnStack abilityOnStack = new MagicAbilityOnStack(
             this,
             new MagicDrawEvent(event.getSource(), event.getPlayer(), 1), 

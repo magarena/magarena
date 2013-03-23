@@ -4,7 +4,6 @@ import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
-import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicSource;
 import magic.model.MagicChangeCardDefinition;
@@ -59,7 +58,7 @@ public class MagicCardActivation extends MagicActivation<MagicCard> implements M
 
     private final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choices) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCard card = event.getCard();
             if (card.getCardDefinition().isLand()) {
                 game.incLandPlayed();
@@ -81,9 +80,8 @@ public class MagicCardActivation extends MagicActivation<MagicCard> implements M
     
     @Override
     public void executeEvent(
-            final MagicGame game, 
-            final MagicEvent event, 
-            final Object[] choiceResults) {
+            final MagicGame game,
+            final MagicEvent event) {
         throw new RuntimeException(getClass() + " did not override executeEvent");
     }
     

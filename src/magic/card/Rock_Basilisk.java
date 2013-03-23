@@ -41,8 +41,7 @@ public class Rock_Basilisk {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanentList plist = event.getRefPermanentList();
             for (final MagicPermanent blocker : plist) {
                 game.doAction(new MagicChangeStateAction(blocker,MagicPermanentState.DestroyAtEndOfCombat,true));
@@ -68,8 +67,7 @@ public class Rock_Basilisk {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicChangeStateAction(
                 event.getRefPermanent(),
                 MagicPermanentState.DestroyAtEndOfCombat,

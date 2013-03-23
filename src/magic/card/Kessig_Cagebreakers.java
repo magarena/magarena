@@ -28,8 +28,7 @@ public class Kessig_Cagebreakers {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final int amount = game.filterCards(player,MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD).size();
             for (int count=amount;count>0;count--) {

@@ -21,8 +21,7 @@ public class Archon_of_Redemption {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicChangeLifeAction(event.getPlayer(),event.getPermanent().getPower()));
         }        
     };
@@ -44,8 +43,7 @@ public class Archon_of_Redemption {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanent permanent=event.getRefPermanent();
             game.doAction(new MagicChangeLifeAction(event.getPlayer(),permanent.getPower()));
         }        

@@ -8,7 +8,6 @@ import magic.model.MagicPlayer;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.event.MagicEvent;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
@@ -29,8 +28,7 @@ public class Woodland_Sleuth {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final List<MagicCard> targets =
                     game.filterCards(player,MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD);

@@ -30,8 +30,7 @@ public class Vapor_Snag {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.OwnersHand));

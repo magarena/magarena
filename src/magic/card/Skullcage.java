@@ -25,8 +25,7 @@ public class Skullcage {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer opponent=event.getPlayer();
             final int amount=opponent.getHandSize();
             if (amount < 3 || amount > 4) {

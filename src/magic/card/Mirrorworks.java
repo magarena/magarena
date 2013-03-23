@@ -1,6 +1,5 @@
 package magic.card;
 
-import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
@@ -36,8 +35,7 @@ public class Mirrorworks {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             if (event.isYes()) {
                 game.doAction(new MagicPlayTokenAction(
                     event.getPlayer(),

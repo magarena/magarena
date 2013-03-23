@@ -16,7 +16,6 @@ import magic.model.mstatic.MagicCDA;
 import magic.model.target.MagicGraveyardTargetPicker;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetHint;
-import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicGraveyardTriggerData;
 import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 
@@ -63,8 +62,7 @@ public class Kodama_of_the_Center_Tree {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetCard(game,new MagicCardAction() {
                     public void doAction(final MagicCard card) {

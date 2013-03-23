@@ -5,7 +5,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicSource;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicGainControlAction;
 import magic.model.action.MagicPermanentAction;
@@ -37,8 +36,7 @@ public class Legacy_s_Allure {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             if (event.isYes()) {
                 game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,1,true));
             }    
@@ -76,7 +74,7 @@ public class Legacy_s_Allure {
         }
 
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicGainControlAction(event.getPlayer(),creature));

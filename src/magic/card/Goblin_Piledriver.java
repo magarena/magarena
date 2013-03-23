@@ -4,7 +4,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.event.MagicEvent;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenAttacksTrigger;
 
@@ -24,8 +23,7 @@ public class Goblin_Piledriver {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanent creature=event.getPermanent();
             final Collection<MagicPermanent> targets=
                 game.filterPermanents(creature.getController(),MagicTargetFilter.TARGET_ATTACKING_GOBLIN);

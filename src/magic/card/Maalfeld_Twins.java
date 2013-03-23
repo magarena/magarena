@@ -4,7 +4,6 @@ import magic.data.TokenCardDefinitions;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.action.MagicPlayTokensAction;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicGraveyardTriggerData;
@@ -29,8 +28,7 @@ public class Maalfeld_Twins {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicPlayTokensAction(
                 event.getPlayer(),
                 TokenCardDefinitions.get("Zombie"),

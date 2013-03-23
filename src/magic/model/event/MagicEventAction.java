@@ -5,6 +5,5 @@ import magic.model.MagicGame;
 public interface MagicEventAction {
     void executeEvent(
             final MagicGame game,
-            final MagicEvent event,
-            final Object[] choiceResults);
+            final MagicEvent event);
 }

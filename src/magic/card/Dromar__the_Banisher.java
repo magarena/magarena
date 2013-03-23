@@ -12,7 +12,6 @@ import magic.model.choice.MagicColorChoice;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.event.MagicEvent;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
@@ -38,7 +37,7 @@ public class Dromar__the_Banisher {
         }
         
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 final MagicColor color=event.getChosenColor();
                 final Collection<MagicPermanent> targets=game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE);

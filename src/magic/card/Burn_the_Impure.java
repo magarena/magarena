@@ -28,8 +28,7 @@ public class Burn_the_Impure {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     final MagicDamage damage1 = new MagicDamage(event.getSource(),creature,3);

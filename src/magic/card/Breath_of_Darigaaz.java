@@ -29,8 +29,7 @@ public class Breath_of_Darigaaz {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final int amount = event.isKicked() ? 4 : 1;
             final Collection<MagicPermanent> targets=
                 game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING);

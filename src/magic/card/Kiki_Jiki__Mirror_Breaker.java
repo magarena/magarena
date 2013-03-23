@@ -5,7 +5,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicSource;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicPlayCardAction;
 import magic.model.choice.MagicTargetChoice;
@@ -42,7 +41,7 @@ public class Kiki_Jiki__Mirror_Breaker {
         }
 
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     final MagicPlayer player=event.getPlayer();

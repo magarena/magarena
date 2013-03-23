@@ -42,8 +42,7 @@ public class Demonlord_of_Ashmouth {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
             if (event.isYes()) {
                 event.processTargetPermanent(game,new MagicPermanentAction() {

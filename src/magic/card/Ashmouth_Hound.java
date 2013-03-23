@@ -29,8 +29,7 @@ public class Ashmouth_Hound {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanentList plist = event.getRefPermanentList();
             for (final MagicPermanent blocker : plist) {
                 final MagicDamage damage = new MagicDamage(event.getPermanent(),blocker,1);
@@ -54,8 +53,7 @@ public class Ashmouth_Hound {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicDamage damage = new MagicDamage(
                 event.getSource(),
                 event.getRefPermanent(),

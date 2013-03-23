@@ -5,10 +5,8 @@ import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicPlayTokenAction;
-import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
@@ -41,8 +39,7 @@ public class Quest_for_the_Gravelord {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Zombie Giant")));
         }
     };
@@ -64,8 +61,7 @@ public class Quest_for_the_Gravelord {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             if (event.isYes()) {
                 game.doAction(new MagicChangeCountersAction(
                     event.getPermanent(),

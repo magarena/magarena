@@ -25,8 +25,7 @@ public class Timely_Reinforcements {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             if (player.getLife() < player.getOpponent().getLife()) {
                 game.doAction(new MagicChangeLifeAction(player,6));

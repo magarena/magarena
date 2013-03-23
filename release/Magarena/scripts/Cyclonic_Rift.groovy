@@ -14,8 +14,7 @@
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
@@ -46,8 +45,7 @@
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final Collection<MagicPermanent> targets=
                 game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_NONLAND_PERMANENT_YOUR_OPPONENT_CONTROLS);
             for (final MagicPermanent target : targets) {

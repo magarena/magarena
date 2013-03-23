@@ -3,7 +3,6 @@ package magic.card;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicGraveyardTriggerData;
@@ -28,8 +27,7 @@ public class Blistergrub {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicChangeLifeAction(event.getPlayer(),-2));
         }
     };

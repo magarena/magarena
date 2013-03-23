@@ -26,8 +26,7 @@ public class Guiltfeeder {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player = event.getPlayer().getOpponent();
             game.doAction(new MagicChangeLifeAction(
                     player,

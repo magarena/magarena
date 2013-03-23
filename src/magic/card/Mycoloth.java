@@ -26,8 +26,7 @@ public class Mycoloth {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final int amt = event.getPermanent().getCounters(MagicCounterType.PlusOne); 
             game.doAction(new MagicPlayTokensAction(
                 event.getPlayer(),

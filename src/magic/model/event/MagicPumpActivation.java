@@ -4,7 +4,6 @@ import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.condition.MagicCondition;
 
@@ -37,7 +36,7 @@ public class MagicPumpActivation extends MagicPermanentActivation {
     }
 
     @Override
-    public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choices) {
+    public void executeEvent(final MagicGame game, final MagicEvent event) {
         game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),power,toughness));
     }
 

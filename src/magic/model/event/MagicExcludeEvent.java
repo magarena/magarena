@@ -3,7 +3,6 @@ package magic.model.event;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.choice.MagicExcludeChoice;
-import magic.model.choice.MagicExcludeResult;
 
 public class MagicExcludeEvent extends MagicEvent {
 
@@ -21,8 +20,7 @@ public class MagicExcludeEvent extends MagicEvent {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.getExclude().exclude(game);
         }
     };

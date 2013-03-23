@@ -3,7 +3,6 @@ package magic.card;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicDrawAction;
-import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicWhenBecomesTappedTrigger;
@@ -28,8 +27,7 @@ public class Fallowsage {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             if (event.isYes()) {
                 game.doAction(new MagicDrawAction(event.getPlayer(),1));
             }

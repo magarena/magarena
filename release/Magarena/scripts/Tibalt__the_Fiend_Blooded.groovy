@@ -11,8 +11,7 @@
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicDrawAction(event.getPlayer(), 1));
             game.addEvent(new MagicDiscardEvent(event.getSource(), event.getPlayer(), 1, true));
         }
@@ -30,8 +29,7 @@
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPlayer(game,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     final MagicDamage damage = new MagicDamage(event.getSource(), player, player.getHandSize());
@@ -52,8 +50,7 @@
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final Collection<MagicPermanent> targets=
                 game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE);
             for (final MagicPermanent perm : targets) {

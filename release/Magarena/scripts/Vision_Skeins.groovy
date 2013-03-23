@@ -10,8 +10,7 @@
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             for (final MagicPlayer player : game.getPlayers()) {
                 game.doAction(new MagicDrawAction(player,2));
             }

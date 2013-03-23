@@ -25,8 +25,7 @@ public class Chain_Reaction {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final int amount=game.getNrOfPermanents(MagicType.Creature);
             final Collection<MagicPermanent> targets=
                 game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE);

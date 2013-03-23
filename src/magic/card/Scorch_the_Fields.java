@@ -12,7 +12,6 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicDestroyTargetPicker;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 
 import java.util.Collection;
@@ -35,8 +34,7 @@ public class Scorch_the_Fields {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicDestroyAction(permanent));

@@ -24,8 +24,7 @@ public class Dissipate {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetCardOnStack(game,new MagicCardOnStackAction() {
                 public void doAction(final MagicCardOnStack targetSpell) {
                     game.doAction(new MagicCounterItemOnStackAction(targetSpell, MagicLocationType.Exile));

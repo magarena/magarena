@@ -33,8 +33,7 @@ public class Livewire_Lash {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanent source = event.getRefPermanent();
             event.processTarget(game,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {

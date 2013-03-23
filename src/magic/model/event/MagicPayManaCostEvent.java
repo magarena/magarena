@@ -21,9 +21,8 @@ public class MagicPayManaCostEvent extends MagicEvent {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
-            event.payManaCost(game,event.getPlayer(),choiceResults);
+                final MagicEvent event) {
+            event.payManaCost(game,event.getPlayer());
         }
     };
 }

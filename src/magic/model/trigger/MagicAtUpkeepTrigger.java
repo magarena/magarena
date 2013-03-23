@@ -1,16 +1,13 @@
 package magic.model.trigger;
 
 import magic.model.MagicGame;
-import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicSource;
 import magic.model.MagicCounterType;
 import magic.model.event.MagicEvent;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicDrawAction;
 import magic.model.choice.MagicSimpleMayChoice;
-import magic.model.choice.MagicMayChoice;
 
 public abstract class MagicAtUpkeepTrigger extends MagicTrigger<MagicPlayer> {
     public MagicAtUpkeepTrigger(final int priority) {
@@ -40,8 +37,7 @@ public abstract class MagicAtUpkeepTrigger extends MagicTrigger<MagicPlayer> {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             if (event.isYes()) {
                 game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,1,true));
             }    
@@ -60,7 +56,7 @@ public abstract class MagicAtUpkeepTrigger extends MagicTrigger<MagicPlayer> {
         }
         
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicDrawAction(player,1));
         }

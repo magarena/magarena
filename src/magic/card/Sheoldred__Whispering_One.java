@@ -32,8 +32,7 @@ public class Sheoldred__Whispering_One {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetCard(game,new MagicCardAction() {
                 public void doAction(final MagicCard card) {
                     game.doAction(new MagicReanimateAction(event.getPlayer(),card,MagicPlayCardAction.NONE));
@@ -58,8 +57,7 @@ public class Sheoldred__Whispering_One {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer opponent=event.getPlayer().getOpponent();
             if (opponent.controlsPermanentWithType(MagicType.Creature)) {
                 game.addEvent(new MagicSacrificePermanentEvent(

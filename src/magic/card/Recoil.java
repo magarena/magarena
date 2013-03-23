@@ -28,8 +28,7 @@ public class Recoil {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));

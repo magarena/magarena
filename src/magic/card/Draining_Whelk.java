@@ -28,8 +28,7 @@ public class Draining_Whelk {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetCardOnStack(game,new MagicCardOnStackAction() {
                 public void doAction(final MagicCardOnStack card) {
                     game.doAction(new MagicCounterItemOnStackAction(card));

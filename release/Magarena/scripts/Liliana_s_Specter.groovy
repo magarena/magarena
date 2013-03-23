@@ -13,8 +13,7 @@
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanent permanent=event.getPermanent();
             final MagicPlayer player=event.getPlayer();
             game.addEvent(new MagicDiscardEvent(permanent,player,1,false));

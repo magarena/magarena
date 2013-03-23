@@ -30,7 +30,7 @@ public class Myrsmith {
         }
         
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Myr1")));
             }

@@ -31,8 +31,7 @@ public class Tangle_Asp {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanentList plist = event.getRefPermanentList();
             for (final MagicPermanent blocker : plist) {
                 game.doAction(new MagicChangeStateAction(blocker,MagicPermanentState.DestroyAtEndOfCombat,true));
@@ -56,8 +55,7 @@ public class Tangle_Asp {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanent blocker = event.getRefPermanent();
             game.doAction(new MagicChangeStateAction(blocker,MagicPermanentState.DestroyAtEndOfCombat,true));
         }

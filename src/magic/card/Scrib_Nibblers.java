@@ -6,13 +6,11 @@ import magic.model.MagicLocationType;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicSource;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicPlayerAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.action.MagicUntapAction;
-import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
@@ -40,8 +38,7 @@ public class Scrib_Nibblers {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             if (event.isYes()) {
                 game.doAction(new MagicUntapAction(event.getPermanent()));
             }
@@ -69,7 +66,7 @@ public class Scrib_Nibblers {
         }
 
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     final MagicCard card = player.getLibrary().getCardAtTop();

@@ -27,8 +27,7 @@ public class Promise_of_Bunrei {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanent permanent=event.getPermanent();
             final MagicPlayer player=event.getPlayer();
             if (player.controlsPermanent(permanent)) {

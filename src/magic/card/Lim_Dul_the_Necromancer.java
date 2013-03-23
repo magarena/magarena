@@ -6,7 +6,6 @@ import magic.model.MagicLocationType;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.action.MagicAddStaticAction;
 import magic.model.action.MagicPermanentAction;
@@ -58,8 +57,7 @@ public class Lim_Dul_the_Necromancer {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             if (event.isYes()) {
                 final MagicCard card = event.getRefCard();
                 if (card.getOwner().getGraveyard().contains(card)) {
@@ -100,8 +98,7 @@ public class Lim_Dul_the_Necromancer {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicRegenerateAction(creature));

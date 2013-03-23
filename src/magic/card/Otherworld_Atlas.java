@@ -5,8 +5,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicSource;
-import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicDrawAction;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
@@ -43,8 +41,7 @@ public class Otherworld_Atlas {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanent source = event.getPermanent();
             final int amount = source.getCounters(MagicCounterType.Charge);
             for (final MagicPlayer player : game.getPlayers()) {

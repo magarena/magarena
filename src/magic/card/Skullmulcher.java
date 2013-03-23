@@ -9,7 +9,6 @@ import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicDrawAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicSacrificeAction;
-import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
@@ -55,7 +54,7 @@ public class Skullmulcher {
         }
 
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent=event.getPermanent();
             if (event.isYes()) {
                 event.processTargetPermanent(game,new MagicPermanentAction() {

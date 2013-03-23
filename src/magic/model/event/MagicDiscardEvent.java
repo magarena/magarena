@@ -23,9 +23,9 @@ public class MagicDiscardEvent extends MagicEvent {
     
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choices) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player=event.getPlayer();
-            final MagicCardChoiceResult cards=(MagicCardChoiceResult)choices[0];
+            final MagicCardChoiceResult cards = event.getCardChoice();
             for (final MagicCard card : cards) {
                 game.doAction(new MagicDiscardCardAction(player,card));
             }

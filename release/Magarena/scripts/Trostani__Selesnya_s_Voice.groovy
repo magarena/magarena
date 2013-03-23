@@ -17,8 +17,7 @@
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             // get toughness here so counters on the creature are considered
             final int toughness = (event.getRefPermanent()).getToughness();
             game.doAction(new MagicChangeLifeAction(event.getPlayer(),toughness));
@@ -46,8 +45,7 @@
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.addEvent(new MagicPopulateEvent(event.getSource()));
         }
     }

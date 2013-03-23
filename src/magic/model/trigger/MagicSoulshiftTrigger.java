@@ -4,7 +4,6 @@ import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.action.MagicCardAction;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicRemoveCardAction;
@@ -14,7 +13,6 @@ import magic.model.event.MagicEvent;
 import magic.model.target.MagicGraveyardTargetPicker;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetHint;
-import magic.model.target.MagicTarget;
 
 public class MagicSoulshiftTrigger extends MagicWhenPutIntoGraveyardTrigger {
     
@@ -54,8 +52,7 @@ public class MagicSoulshiftTrigger extends MagicWhenPutIntoGraveyardTrigger {
     @Override
     public void executeEvent(
             final MagicGame game,
-            final MagicEvent event,
-            final Object[] choiceResults) {
+            final MagicEvent event) {
         if (event.isYes()) {
             event.processTargetCard(game,new MagicCardAction() {
                 public void doAction(final MagicCard card) {

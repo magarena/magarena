@@ -37,8 +37,7 @@ public class Rapacious_One {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             for (int count=event.getRefInt();count>0;count--) {
                 game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Eldrazi Spawn")));
             }

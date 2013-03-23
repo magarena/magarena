@@ -25,8 +25,7 @@ public class Make_a_Wish {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final MagicCardList cards = player.getGraveyard();
             final magic.MersenneTwisterFast rng = new magic.MersenneTwisterFast(cards.getCardsId());

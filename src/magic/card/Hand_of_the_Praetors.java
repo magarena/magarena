@@ -1,7 +1,6 @@
 package magic.card;
 
 import magic.model.MagicAbility;
-import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
@@ -47,8 +46,7 @@ public class Hand_of_the_Praetors {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPlayer(game,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     game.doAction(new MagicChangePoisonAction(player,1));

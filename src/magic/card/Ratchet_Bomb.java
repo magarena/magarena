@@ -4,8 +4,6 @@ import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
-import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicDestroyAction;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicActivationHints;
@@ -14,7 +12,6 @@ import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicSacrificeEvent;
 import magic.model.event.MagicTapEvent;
 import magic.model.event.MagicTiming;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 
 import java.util.Collection;
@@ -46,8 +43,7 @@ public class Ratchet_Bomb {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanent source=event.getPermanent();
             final int amount=source.getCounters(MagicCounterType.Charge);
             final Collection<MagicPermanent> targets=

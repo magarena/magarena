@@ -31,8 +31,7 @@ public class Binding_Grasp {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             if (event.isNo()) {
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));
             }            

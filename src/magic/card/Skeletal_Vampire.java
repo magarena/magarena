@@ -6,7 +6,6 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicSource;
 import magic.model.action.MagicPlayTokensAction;
 import magic.model.action.MagicRegenerateAction;
 import magic.model.choice.MagicTargetChoice;
@@ -53,8 +52,7 @@ public class Skeletal_Vampire {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicPlayTokensAction(
                 event.getPlayer(),
                 TokenCardDefinitions.get("Bat"),
@@ -96,8 +94,7 @@ public class Skeletal_Vampire {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicRegenerateAction(event.getPermanent()));
         }
     };
@@ -116,8 +113,7 @@ public class Skeletal_Vampire {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicPlayTokensAction(
                 event.getPlayer(),
                 TokenCardDefinitions.get("Bat"),

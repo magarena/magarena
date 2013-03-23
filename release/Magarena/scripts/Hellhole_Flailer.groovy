@@ -28,8 +28,7 @@
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTarget(game,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicPermanent source=event.getPermanent();

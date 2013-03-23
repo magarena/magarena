@@ -4,7 +4,6 @@ import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 import magic.model.action.MagicCardOnStackAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicActivation;
@@ -38,7 +37,7 @@ public class Spiketail_Hatchling {
         }
 
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game,new MagicCardOnStackAction() {
                 public void doAction(final MagicCardOnStack targetSpell) {
                     game.addEvent(new MagicCounterUnlessEvent(event.getSource(),targetSpell,MagicManaCost.create("{1}")));

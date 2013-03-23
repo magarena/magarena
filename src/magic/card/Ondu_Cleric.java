@@ -5,7 +5,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSubType;
 import magic.model.action.MagicChangeLifeAction;
-import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
@@ -32,8 +31,7 @@ public class Ondu_Cleric {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             if (event.isYes()) {
                 final MagicPlayer player = event.getPlayer();
                 final int amount =

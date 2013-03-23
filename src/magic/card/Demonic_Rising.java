@@ -28,8 +28,7 @@ public class Demonic_Rising {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             if (event.getPlayer().getNrOfPermanentsWithType(MagicType.Creature) == 1) {
                 game.doAction(new MagicPlayTokenAction(
                         event.getPlayer(),

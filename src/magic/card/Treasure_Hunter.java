@@ -31,7 +31,7 @@ public class Treasure_Hunter {
         }
         
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetCard(game,new MagicCardAction() {
                 public void doAction(final MagicCard card) {

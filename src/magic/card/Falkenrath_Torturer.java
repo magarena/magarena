@@ -5,7 +5,6 @@ import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicSetAbilityAction;
@@ -16,8 +15,6 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicSacrificePermanentEvent;
 import magic.model.event.MagicTiming;
-import magic.model.target.MagicTarget;
-import magic.model.target.MagicTargetNone;
 
 public class Falkenrath_Torturer {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
@@ -52,8 +49,7 @@ public class Falkenrath_Torturer {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicSetAbilityAction(
                 event.getPermanent(),
                 MagicAbility.Flying

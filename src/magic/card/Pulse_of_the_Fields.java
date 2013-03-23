@@ -23,8 +23,7 @@ public class Pulse_of_the_Fields {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicChangeLifeAction(player,4));
             final boolean more = player.getOpponent().getLife() > player.getLife();

@@ -26,8 +26,7 @@ public class Crypt_Cobra {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicChangePoisonAction(event.getPlayer().getOpponent(),1));
         }
     };

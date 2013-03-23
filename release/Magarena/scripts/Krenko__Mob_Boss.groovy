@@ -22,8 +22,7 @@
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final int amt = event.getPlayer().getNrOfPermanentsWithSubType(MagicSubType.Goblin);
             game.doAction(new MagicPlayTokensAction(
                 event.getPlayer(), 

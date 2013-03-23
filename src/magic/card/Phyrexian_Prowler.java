@@ -4,7 +4,6 @@ import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
@@ -35,7 +34,7 @@ public class Phyrexian_Prowler {
         }
 
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),1,1));
         }
     };

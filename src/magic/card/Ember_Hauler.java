@@ -5,7 +5,6 @@ import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicTargetAction;
 import magic.model.choice.MagicTargetChoice;
@@ -41,7 +40,7 @@ public class Ember_Hauler {
         }
 
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicDamage damage=new MagicDamage(event.getSource(),target,2);

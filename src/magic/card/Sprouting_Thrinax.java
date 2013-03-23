@@ -25,8 +25,7 @@ public class Sprouting_Thrinax {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player=event.getPlayer();
             for (int count=3;count>0;count--) {
                 game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Saproling")));

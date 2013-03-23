@@ -51,8 +51,7 @@ public class MagicEntersDamageTargetTrigger extends MagicWhenComesIntoPlayTrigge
     @Override
     public void executeEvent(
             final MagicGame game,
-            final MagicEvent event,
-            final Object[] choiceResults) {
+            final MagicEvent event) {
         event.processTarget(game,new MagicTargetAction() {
             public void doAction(final MagicTarget target) {
                 final MagicDamage damage = new MagicDamage(

@@ -43,8 +43,7 @@ public class Talruum_Champion {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanentList plist = event.getRefPermanentList();
             for (final MagicPermanent blocker : plist) {
                 game.doAction(new MagicAddStaticAction(blocker,AB));
@@ -68,8 +67,7 @@ public class Talruum_Champion {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicAddStaticAction(event.getRefPermanent(),AB));
         }
     };

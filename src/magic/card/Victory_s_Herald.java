@@ -3,15 +3,12 @@ package magic.card;
 import magic.model.MagicAbility;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.action.MagicSetAbilityAction;
 import magic.model.event.MagicEvent;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenAttacksTrigger;
 
 import java.util.Collection;
-import java.util.Set;
 
 public class Victory_s_Herald {
     public static final MagicWhenAttacksTrigger T1 = new MagicWhenAttacksTrigger() {
@@ -32,8 +29,7 @@ public class Victory_s_Herald {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
 
             final Collection<MagicPermanent> targets = game.filterPermanents(
                     event.getPlayer(),

@@ -13,8 +13,7 @@
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent perm) {
                     game.doAction(new MagicExileUntilEndOfTurnAction(perm));
@@ -34,8 +33,7 @@
         @Override
         public void executeEvent(
                 final MagicGame outerGame,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             outerGame.doAction(new MagicAddStaticAction(
                 new MagicStatic(
                     MagicLayer.Ability, 
@@ -79,7 +77,7 @@
                             MagicEvent.NONE;
                     }
                     @Override
-                    public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+                    public void executeEvent(final MagicGame game,final MagicEvent event) {
                         event.processTargetPermanent(game,new MagicPermanentAction() {
                             public void doAction(final MagicPermanent perm) {
                                 game.doAction(new MagicRemoveFromPlayAction(perm,MagicLocationType.Exile));

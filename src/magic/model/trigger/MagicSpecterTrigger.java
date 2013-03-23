@@ -38,7 +38,7 @@ public class MagicSpecterTrigger extends MagicWhenDamageIsDealtTrigger {
     }
 
     @Override
-    public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choices) {
+    public void executeEvent(final MagicGame game, final MagicEvent event) {
         game.addEvent(new MagicDiscardEvent(
             event.getSource(),
             event.getPlayer(),

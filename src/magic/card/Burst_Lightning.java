@@ -34,8 +34,7 @@ public class Burst_Lightning {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTarget(game,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final int amount = event.isKicked() ? 4 : 2;

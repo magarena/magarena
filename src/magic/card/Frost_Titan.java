@@ -36,8 +36,7 @@ public class Frost_Titan {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicSource source = event.getSource();
             final MagicItemOnStack target = event.getRefItemOnStack();
             game.addEvent(new MagicCounterUnlessEvent(source,target,MagicManaCost.create("{2}")));
@@ -58,8 +57,7 @@ public class Frost_Titan {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent perm) {
                     game.doAction(new MagicTapAction(perm,true));
@@ -84,8 +82,7 @@ public class Frost_Titan {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent perm) {
                     game.doAction(new MagicTapAction(perm,true));

@@ -3,7 +3,6 @@ package magic.card;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
@@ -43,8 +42,7 @@ public class Wasteland {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicDestroyAction(permanent));

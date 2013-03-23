@@ -12,8 +12,7 @@
         @Override
         public void executeEvent(
                 final MagicGame outerGame,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             outerGame.doAction(new MagicAddStaticAction(MagicPermanent.NONE,  
                 new MagicStatic(MagicLayer.Game, MagicStatic.UntilEOT) {
                     @Override

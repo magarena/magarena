@@ -4,7 +4,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLifeAction;
-import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicAtUpkeepTrigger;
@@ -27,8 +26,7 @@ public class Ajani_s_Mantra {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             if (event.isYes()) {
                 game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
             }

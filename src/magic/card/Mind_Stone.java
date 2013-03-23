@@ -5,7 +5,6 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicSource;
 import magic.model.action.MagicDrawAction;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
@@ -44,8 +43,7 @@ public class Mind_Stone {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicDrawAction(event.getPlayer(),1));
         }
     };

@@ -3,7 +3,6 @@ package magic.card;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicActivationHints;
@@ -37,8 +36,7 @@ public class Rejuvenation_Chamber {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicChangeLifeAction(event.getPlayer(),2));
         }
     };

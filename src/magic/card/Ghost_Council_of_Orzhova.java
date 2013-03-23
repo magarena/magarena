@@ -5,7 +5,6 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicSource;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.action.MagicExileUntilEndOfTurnAction;
 import magic.model.action.MagicPlayerAction;
@@ -48,8 +47,7 @@ public class Ghost_Council_of_Orzhova {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicExileUntilEndOfTurnAction(event.getPermanent()));
         }
     };
@@ -67,8 +65,7 @@ public class Ghost_Council_of_Orzhova {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPlayer(game,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     game.doAction(new MagicChangeLifeAction(player,-1));

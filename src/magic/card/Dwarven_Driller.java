@@ -5,7 +5,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicSource;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicPermanentAction;
@@ -48,8 +47,7 @@ public class Dwarven_Driller {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     final MagicPlayer controller = permanent.getController();
@@ -68,8 +66,7 @@ public class Dwarven_Driller {
             @Override
             public void executeEvent(
                     final MagicGame game,
-                    final MagicEvent event,
-                    final Object[] choiceResults) {
+                    final MagicEvent event) {
                 if (event.isYes()) {
                     final MagicDamage damage = new MagicDamage(
                         event.getSource(),

@@ -31,7 +31,7 @@ public class Warstorm_Surge {
         }
         
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getRefPermanent();
             event.processTarget(game,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {

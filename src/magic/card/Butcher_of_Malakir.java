@@ -30,8 +30,7 @@ public class Butcher_of_Malakir {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer opponent=event.getPlayer().getOpponent();
             if (opponent.controlsPermanentWithType(MagicType.Creature)) {
                 game.addEvent(new MagicSacrificePermanentEvent(
@@ -60,8 +59,7 @@ public class Butcher_of_Malakir {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer opponent=event.getPlayer().getOpponent();
             if (opponent.controlsPermanentWithType(MagicType.Creature)) {
                 game.addEvent(new MagicSacrificePermanentEvent(

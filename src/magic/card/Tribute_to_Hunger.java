@@ -29,8 +29,7 @@ public class Tribute_to_Hunger {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPlayer(game,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer opponent) {
                     game.addEvent(new MagicEvent(
@@ -50,8 +49,7 @@ public class Tribute_to_Hunger {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicSacrificeAction(permanent));

@@ -36,8 +36,7 @@ public class Vorosh__the_Hunter {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             if (event.isYes()) {
                 game.doAction(new MagicChangeCountersAction(
                     event.getPermanent(),

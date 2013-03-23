@@ -9,7 +9,6 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
-import magic.model.MagicSource;
 import magic.model.action.MagicCardAction;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicPlayTokenAction;
@@ -82,8 +81,7 @@ public class Cemetery_Reaper {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetCard(game,new MagicCardAction() {
                 public void doAction(final MagicCard card) {
                     final MagicPlayer player=event.getPlayer();

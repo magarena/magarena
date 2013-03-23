@@ -25,8 +25,7 @@ public class Gustcloak_Savior {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             if (event.isYes()) {
                 final MagicPermanent permanent = event.getRefPermanent();
                 game.doAction(new MagicUntapAction(permanent));

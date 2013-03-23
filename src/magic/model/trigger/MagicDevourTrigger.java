@@ -8,7 +8,6 @@ import magic.model.MagicType;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicSacrificeAction;
-import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
@@ -60,8 +59,7 @@ public class MagicDevourTrigger extends MagicWhenComesIntoPlayTrigger {
     @Override
     public void executeEvent(
             final MagicGame game,
-            final MagicEvent event,
-            final Object[] choiceResults) {
+            final MagicEvent event) {
         if (event.isYes()) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {

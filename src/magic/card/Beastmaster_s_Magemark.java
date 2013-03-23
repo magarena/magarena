@@ -2,7 +2,6 @@ package magic.card;
 
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.event.MagicEvent;
@@ -41,8 +40,7 @@ public class Beastmaster_s_Magemark {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanent blocked = event.getRefPermanent();
             final int amount = blocked.getBlockingCreatures().size();
             game.doAction(new MagicChangeTurnPTAction(

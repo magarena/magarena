@@ -26,8 +26,7 @@ public class Sanguine_Bond {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicChangeLifeAction(
                     event.getPlayer().getOpponent(),
                     -event.getRefInt()));

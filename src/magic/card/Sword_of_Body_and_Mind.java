@@ -4,7 +4,6 @@ import magic.data.TokenCardDefinitions;
 import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.action.MagicMillLibraryAction;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.event.MagicEvent;
@@ -33,8 +32,7 @@ public class Sword_of_Body_and_Mind {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Wolf")));
             game.doAction(new MagicMillLibraryAction(event.getRefPlayer(),10));
         }

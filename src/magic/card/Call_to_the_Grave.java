@@ -7,7 +7,6 @@ import magic.model.action.MagicSacrificeAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSacrificePermanentEvent;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicAtEndOfTurnTrigger;
 import magic.model.trigger.MagicAtUpkeepTrigger;
@@ -28,8 +27,7 @@ public class Call_to_the_Grave {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             game.addEvent(new MagicSacrificePermanentEvent(
                         event.getSource(),
@@ -55,8 +53,7 @@ public class Call_to_the_Grave {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicSacrificeAction(event.getPermanent()));
         }    
     };

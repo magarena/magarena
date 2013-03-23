@@ -1,11 +1,9 @@
 package magic.card;
 
-import magic.model.MagicColor;
 import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 import magic.model.action.MagicAddStaticAction;
 import magic.model.action.MagicPlayAbilityAction;
 import magic.model.choice.MagicColorChoice;
@@ -48,8 +46,7 @@ public class Spiritmonger {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanent permanent=event.getPermanent();
             game.doAction(new MagicAddStaticAction(permanent, 
                 new MagicStatic(MagicLayer.SwitchPT,MagicStatic.UntilEOT) {

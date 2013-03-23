@@ -25,8 +25,7 @@ public class Pulse_of_the_Tangle {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player=event.getPlayer();
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Beast3")));
             final boolean more = player.getOpponent().getNrOfPermanentsWithType(MagicType.Creature) >

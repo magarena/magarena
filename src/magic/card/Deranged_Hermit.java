@@ -35,8 +35,7 @@ public class Deranged_Hermit {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicPlayTokensAction(
                 event.getPlayer(),
                 TokenCardDefinitions.get("Squirrel1"),

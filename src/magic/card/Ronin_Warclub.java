@@ -26,8 +26,7 @@ public class Ronin_Warclub {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicAttachEquipmentAction(
                     event.getPermanent(),
                     event.getRefPermanent()));

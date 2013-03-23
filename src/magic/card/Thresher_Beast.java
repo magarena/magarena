@@ -26,8 +26,7 @@ public class Thresher_Beast {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer opponent = event.getPlayer();
             if (opponent.controlsPermanentWithType(MagicType.Land)) {
                 game.addEvent(new MagicSacrificePermanentEvent(

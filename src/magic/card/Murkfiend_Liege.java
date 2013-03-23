@@ -9,7 +9,6 @@ import magic.model.action.MagicUntapAction;
 import magic.model.event.MagicEvent;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 
@@ -54,8 +53,7 @@ public class Murkfiend_Liege {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final Collection<MagicPermanent> targets=
                 game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicPermanent creature : targets) {

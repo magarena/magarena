@@ -30,8 +30,7 @@ public class Inferno_Elemental {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanentList plist = event.getRefPermanentList();
             for (final MagicPermanent blocker : plist) {
                 final MagicDamage damage = new MagicDamage(event.getSource(),blocker,3);
@@ -55,8 +54,7 @@ public class Inferno_Elemental {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicDamage damage = new MagicDamage(
                 event.getPermanent(),
                 event.getRefPermanent(),

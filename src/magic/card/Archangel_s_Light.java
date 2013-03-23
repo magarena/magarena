@@ -30,8 +30,7 @@ public class Archangel_s_Light {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
             game.doAction(new MagicChangeLifeAction(player,2 * graveyard.size()));

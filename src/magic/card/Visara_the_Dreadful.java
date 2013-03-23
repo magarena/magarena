@@ -4,7 +4,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
-import magic.model.MagicSource;
 import magic.model.action.MagicChangeStateAction;
 import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicPermanentAction;
@@ -40,8 +39,7 @@ public class Visara_the_Dreadful {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeStateAction(creature,MagicPermanentState.CannotBeRegenerated,true));

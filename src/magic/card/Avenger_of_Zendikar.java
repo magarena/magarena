@@ -8,10 +8,8 @@ import magic.model.MagicPlayer;
 import magic.model.MagicType;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicPlayTokenAction;
-import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.event.MagicEvent;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicLandfallTrigger;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
@@ -35,8 +33,7 @@ public class Avenger_of_Zendikar {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             int amount = player.getNrOfPermanentsWithType(MagicType.Land);
             for (;amount>0;amount--) {
@@ -63,8 +60,7 @@ public class Avenger_of_Zendikar {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             if (event.isYes()) {
                 final Collection<MagicPermanent> targets = game.filterPermanents(
                         event.getPlayer(),

@@ -25,8 +25,7 @@ public class Proper_Burial {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicChangeLifeAction(
                     event.getPlayer(),
                     event.getRefInt()));

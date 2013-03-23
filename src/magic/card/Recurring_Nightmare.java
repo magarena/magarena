@@ -5,7 +5,6 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 import magic.model.action.MagicCardAction;
 import magic.model.action.MagicPlayCardAction;
 import magic.model.action.MagicReanimateAction;
@@ -49,8 +48,7 @@ public class Recurring_Nightmare {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicRemoveFromPlayAction(event.getPermanent(),MagicLocationType.OwnersHand));
             event.processTargetCard(game,new MagicCardAction() {
                 public void doAction(final MagicCard targetCard) {

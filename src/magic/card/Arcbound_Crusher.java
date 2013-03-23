@@ -23,8 +23,7 @@ public class Arcbound_Crusher {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicChangeCountersAction(
                     event.getPermanent(),
                     MagicCounterType.PlusOne,

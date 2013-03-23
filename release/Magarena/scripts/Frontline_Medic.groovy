@@ -14,8 +14,7 @@
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final Collection<MagicPermanent> creatures=
                 game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicPermanent creature : creatures) {
@@ -44,7 +43,7 @@
         }
 
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game,final MagicEvent event) {
             event.processTargetCardOnStack(game,new MagicCardOnStackAction() {
                 public void doAction(final MagicCardOnStack targetSpell) {
                     game.addEvent(new MagicCounterUnlessEvent(event.getSource(),targetSpell,MagicManaCost.create("{3}"))); 

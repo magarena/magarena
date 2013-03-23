@@ -27,8 +27,7 @@ public class Smallpox {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             for (final MagicPlayer player : game.getPlayers()) {
                 game.doAction(new MagicChangeLifeAction(player,-1));
                 game.addEvent(new MagicDiscardEvent(

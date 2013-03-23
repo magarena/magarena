@@ -29,8 +29,7 @@ public class Druid_s_Call {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             for (int i=event.getRefInt();i>0;i--) {
                 game.doAction(new MagicPlayTokenAction(
                         event.getPlayer(),

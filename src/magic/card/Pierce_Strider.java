@@ -23,7 +23,7 @@ public class Pierce_Strider {
         }
         
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     game.doAction(new MagicChangeLifeAction(player,-3));

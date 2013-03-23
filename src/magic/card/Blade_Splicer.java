@@ -36,8 +36,7 @@ public class Blade_Splicer {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player=event.getPlayer();
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Golem3")));
         }        

@@ -5,7 +5,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.action.MagicTapAction;
-import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
 
@@ -38,9 +37,8 @@ public class MagicRavnicaLandTrigger extends MagicWhenComesIntoPlayTrigger {
     @Override
     public void executeEvent(
             final MagicGame game,
-            final MagicEvent event,
-            final Object[] choices) {
-        if (MagicMayChoice.isYesChoice(choices[0])) {
+            final MagicEvent event) {
+        if (event.isYes()) {
             game.doAction(new MagicChangeLifeAction(event.getPlayer(),-2));
         } else {
             game.doAction(new MagicTapAction(event.getPermanent(),false));

@@ -4,7 +4,6 @@ import magic.model.MagicCounterType;
 import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventAction;
@@ -43,8 +42,7 @@ public class Vigor {
                     @Override
                     public void executeEvent(
                             final MagicGame game,
-                            final MagicEvent event,
-                            final Object[] choiceResults) {
+                            final MagicEvent event) {
                         game.doAction(new MagicChangeCountersAction(
                             event.getRefPermanent(),
                             MagicCounterType.PlusOne,

@@ -23,8 +23,7 @@ public class Sphinx_of_Lost_Truths {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player=event.getPlayer();
             game.doAction(new MagicDrawAction(player,3));
             if (!event.getPermanent().isKicked()) {

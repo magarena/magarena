@@ -11,7 +11,6 @@ import magic.model.choice.MagicColorChoice;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.event.MagicEvent;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
@@ -39,8 +38,7 @@ public class Treva__the_Renewer {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             if (event.isYes()) {
                 int life=0;
                 final MagicPlayer player=event.getPlayer();

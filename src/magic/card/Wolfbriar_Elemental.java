@@ -27,9 +27,8 @@ public class Wolfbriar_Elemental {
 
         @Override
         public void executeEvent(
-            final MagicGame game,
-            final MagicEvent event,
-            final Object[] choiceResults) {
+                final MagicGame game,
+                final MagicEvent event) {
             final MagicPlayer player=event.getPlayer();
             int count=event.getRefInt();
             for (;count>0;count--) {

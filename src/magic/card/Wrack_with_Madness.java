@@ -10,7 +10,6 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
-import magic.model.target.MagicTarget;
 
 public class Wrack_with_Madness {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
@@ -27,8 +26,7 @@ public class Wrack_with_Madness {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     final MagicDamage damage = new MagicDamage(

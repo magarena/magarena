@@ -19,7 +19,7 @@ public class MagicStackChangeTargetsEvent extends MagicEvent {
     
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicItemOnStack itemOnStack = event.getRefItemOnStack();
             event.setTargetChoice(itemOnStack.getChoiceResults());
         }

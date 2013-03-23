@@ -5,7 +5,6 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
-import magic.model.MagicSource;
 import magic.model.action.MagicAddStaticAction;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.condition.MagicCondition;
@@ -41,8 +40,7 @@ public class Tree_of_Redemption {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
             final MagicPlayer player = event.getPlayer();
             final int life = player.getLife();

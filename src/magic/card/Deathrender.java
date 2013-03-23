@@ -34,8 +34,7 @@ public class Deathrender {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetCard(game,new MagicCardAction() {
                     public void doAction(final MagicCard card) {

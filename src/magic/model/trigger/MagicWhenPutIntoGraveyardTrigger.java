@@ -46,8 +46,7 @@ public abstract class MagicWhenPutIntoGraveyardTrigger extends MagicTrigger<Magi
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
             for (final MagicCard card : graveyard) {

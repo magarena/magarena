@@ -8,7 +8,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicPermanentAction;
-import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
@@ -48,8 +47,7 @@ public class Quest_for_the_Gemblades {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.PlusOne,4,true));
@@ -82,8 +80,7 @@ public class Quest_for_the_Gemblades {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             if (event.isYes()) {
                 game.doAction(new MagicChangeCountersAction(
                         event.getPermanent(),

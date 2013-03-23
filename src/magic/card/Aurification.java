@@ -11,7 +11,6 @@ import magic.model.action.MagicChangeCountersAction;
 import magic.model.event.MagicEvent;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 import magic.model.trigger.MagicWhenLeavesPlayTrigger;
@@ -37,8 +36,7 @@ public class Aurification {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanent creature = event.getRefPermanent();
             game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.Gold,1,true));
             game.doAction(new MagicAddStaticAction(creature, new MagicStatic(MagicLayer.Ability) {
@@ -89,8 +87,7 @@ public class Aurification {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final Collection<MagicPermanent> targets =
                     game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE);
             for (final MagicPermanent permanent : targets) {

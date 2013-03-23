@@ -46,8 +46,7 @@ public class Umezawa_s_Jitte {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicChangeTurnPTAction(event.getRefPermanent(),2,2));
         }
     };
@@ -76,8 +75,7 @@ public class Umezawa_s_Jitte {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeTurnPTAction(creature,-1,-1));
@@ -106,8 +104,7 @@ public class Umezawa_s_Jitte {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicChangeLifeAction(event.getPlayer(),2));
         }
     };
@@ -126,8 +123,7 @@ public class Umezawa_s_Jitte {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicChangeCountersAction(
                     event.getPermanent(),
                     MagicCounterType.Charge,

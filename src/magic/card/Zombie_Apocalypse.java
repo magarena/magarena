@@ -11,7 +11,6 @@ import magic.model.action.MagicReanimateAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 
 import java.util.List;
@@ -32,8 +31,7 @@ public class Zombie_Apocalypse {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final List<MagicCard> zombies =
                     game.filterCards(player,MagicTargetFilter.TARGET_ZOMBIE_CARD_FROM_GRAVEYARD);

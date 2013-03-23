@@ -7,7 +7,6 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.event.MagicEvent;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
@@ -26,8 +25,7 @@ public class Crater_Hellion {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicSource permanent = event.getPermanent();
             final Collection<MagicPermanent> creatures =
                 game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE);

@@ -29,8 +29,7 @@ public class Death_Grasp {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final int amount = event.getCardOnStack().getX();
             event.processTarget(game,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {

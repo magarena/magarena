@@ -13,8 +13,7 @@
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTarget(game,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicDamage damage=new MagicDamage(event.getSource(),target,1);
@@ -46,8 +45,7 @@
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final Collection<MagicPermanent> targets=
                 game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS);
             for (final MagicPermanent target : targets) {

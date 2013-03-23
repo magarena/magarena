@@ -24,8 +24,7 @@ public class Gods__Eye__Gate_to_the_Reikai {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicPlayTokenAction(
                     event.getPlayer(),
                     TokenCardDefinitions.get("Spirit1")));

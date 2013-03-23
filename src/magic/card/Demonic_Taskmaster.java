@@ -26,8 +26,7 @@ public class Demonic_Taskmaster {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
             final MagicPlayer player = event.getPlayer();
             final MagicTargetFilter<MagicPermanent> targetFilter = new MagicTargetFilter.MagicOtherPermanentTargetFilter(

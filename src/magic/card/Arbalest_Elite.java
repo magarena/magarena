@@ -6,7 +6,6 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
-import magic.model.MagicSource;
 import magic.model.action.MagicChangeStateAction;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicPermanentAction;
@@ -42,8 +41,7 @@ public class Arbalest_Elite {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     final MagicDamage damage=new MagicDamage(event.getPermanent(),creature,3);

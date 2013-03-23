@@ -37,8 +37,7 @@ public class Sword_of_Light_and_Shadow {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicChangeLifeAction(event.getPlayer(),3));
             if (event.isYes()) {
                 event.processTargetCard(game,new MagicCardAction() {

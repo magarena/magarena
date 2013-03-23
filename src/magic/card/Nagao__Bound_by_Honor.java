@@ -4,7 +4,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.event.MagicEvent;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenAttacksTrigger;
 
@@ -26,8 +25,7 @@ public class Nagao__Bound_by_Honor {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final Collection<MagicPermanent> targets =
                     game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_SAMURAI_YOU_CONTROL);
             for (final MagicPermanent creature : targets) {

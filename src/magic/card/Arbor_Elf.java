@@ -3,7 +3,6 @@ package magic.card;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicUntapAction;
 import magic.model.choice.MagicTargetChoice;
@@ -41,7 +40,7 @@ public class Arbor_Elf {
         }
 
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent forest) {
                     game.doAction(new MagicUntapAction(forest));

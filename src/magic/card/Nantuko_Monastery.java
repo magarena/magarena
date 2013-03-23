@@ -7,7 +7,6 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
-import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.action.MagicBecomesCreatureAction;
@@ -76,8 +75,7 @@ public class Nantuko_Monastery {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT,AB,ST,C));
         }
     };

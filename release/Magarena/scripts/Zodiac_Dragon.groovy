@@ -14,8 +14,7 @@
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicCard card = event.getPermanent().getCard()
             if (event.isYes() && event.getPlayer().getGraveyard().contains(card)) {
                 game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));

@@ -3,7 +3,6 @@ package magic.card;
 import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.action.MagicChangeLifeAction;
@@ -30,9 +29,8 @@ public class Essence_Sliver {
     
         @Override
         public void executeEvent(
-             final MagicGame game,
-             final MagicEvent event,
-             final Object[] choiceResults) {
+                final MagicGame game,
+                final MagicEvent event) {
              game.doAction(new MagicChangeLifeAction(event.getPlayer(),event.getRefInt()));
         }
     };

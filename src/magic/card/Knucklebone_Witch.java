@@ -32,9 +32,8 @@ public class Knucklebone_Witch {
 
         @Override
         public void executeEvent(
-            final MagicGame game, 
-            final MagicEvent event,
-            final Object[] choiceResults) {
+                final MagicGame game,
+                final MagicEvent event) {
                     game.doAction(new MagicChangeCountersAction(
                         event.getPermanent(), 
                         MagicCounterType.PlusOne,

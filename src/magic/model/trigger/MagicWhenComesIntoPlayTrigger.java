@@ -3,12 +3,8 @@ package magic.model.trigger;
 import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
 import magic.model.MagicCardDefinition;
-import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicGame;
-import magic.model.MagicPayedCost;
 import magic.model.choice.MagicTargetChoice;
-import magic.model.stack.MagicCardOnStack;
-import magic.model.target.MagicDefaultTargetPicker;
 import magic.model.target.MagicTargetPicker;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventAction;
@@ -53,10 +49,9 @@ public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPl
             }
             @Override
             public void executeEvent(
-                    final MagicGame game, 
-                    final MagicEvent event, 
-                    final Object[] choiceResults) {
-                action.executeEvent(game, event, choiceResults);
+                    final MagicGame game,
+                    final MagicEvent event) {
+                action.executeEvent(game, event);
             }
         };
     }

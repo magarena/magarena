@@ -31,8 +31,7 @@ public class Zealot_il_Vec {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {

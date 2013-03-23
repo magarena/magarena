@@ -4,7 +4,6 @@ import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicDrawAction;
-import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.event.MagicEvent;
 
@@ -69,8 +68,7 @@ public class MagicThiefTrigger extends MagicWhenDamageIsDealtTrigger {
     @Override
     public void executeEvent(
             final MagicGame game,
-            final MagicEvent event,
-            final Object[] choiceResults) {
+            final MagicEvent event) {
         if (choice == choice.Must) {
             game.doAction(new MagicDrawAction(event.getPlayer(),amount));
         } else if (event.isYes()) {

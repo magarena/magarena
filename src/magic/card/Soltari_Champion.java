@@ -4,7 +4,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.event.MagicEvent;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenAttacksTrigger;
 
@@ -28,8 +27,7 @@ public class Soltari_Champion {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
             final Collection<MagicPermanent> targets = game.filterPermanents(
                     event.getPlayer(),

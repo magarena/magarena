@@ -6,12 +6,7 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
-import magic.model.MagicSource;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicPlayTokenAction;
-import magic.model.choice.MagicMayChoice;
-import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
@@ -21,8 +16,6 @@ import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicTiming;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
-import magic.model.stack.MagicCardOnStack;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 
 public class Myr_Matrix {
@@ -55,8 +48,7 @@ public class Myr_Matrix {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Myr1")));
         }
     };    

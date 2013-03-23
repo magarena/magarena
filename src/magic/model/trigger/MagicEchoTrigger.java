@@ -40,8 +40,7 @@ public class MagicEchoTrigger extends MagicAtUpkeepTrigger {
     @Override
     public void executeEvent(
             final MagicGame game,
-            final MagicEvent event,
-            final Object[] choiceResults) {
+            final MagicEvent event) {
         final MagicPermanent permanent = event.getPermanent();
         if (event.isYes()) {
             game.doAction(new MagicChangeStateAction(

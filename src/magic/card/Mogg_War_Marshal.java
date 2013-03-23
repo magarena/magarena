@@ -23,8 +23,7 @@ public class Mogg_War_Marshal {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicPlayTokenAction(
                 event.getPlayer(),
                 TokenCardDefinitions.get("Goblin1")
@@ -45,8 +44,7 @@ public class Mogg_War_Marshal {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicPlayTokenAction(
                 event.getPlayer(),
                 TokenCardDefinitions.get("Goblin1")

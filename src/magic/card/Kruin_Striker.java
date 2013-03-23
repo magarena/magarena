@@ -3,7 +3,6 @@ package magic.card;
 import magic.model.MagicAbility;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.action.MagicSetAbilityAction;
 import magic.model.event.MagicEvent;
@@ -29,8 +28,7 @@ public class Kruin_Striker {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
             game.doAction(new MagicChangeTurnPTAction(permanent,1,0));
             game.doAction(new MagicSetAbilityAction(permanent,MagicAbility.Trample));

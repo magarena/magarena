@@ -5,7 +5,6 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicSource;
 import magic.model.action.MagicRegenerateAction;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
@@ -14,7 +13,6 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostSacrificeEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTiming;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 
 import java.util.Collection;
@@ -43,8 +41,7 @@ public class Loxodon_Hierarch {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final Collection<MagicPermanent> targets=
                 game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicPermanent permanent : targets) {

@@ -36,8 +36,7 @@ public class MagicStormTrigger extends MagicWhenSpellIsCastTrigger {
     @Override
     public void executeEvent(
             final MagicGame game,
-            final MagicEvent event,
-            final Object[] choiceResults) {
+            final MagicEvent event) {
         final int count = event.getRefInt();
         for (int i = 0; i < count; i++) {
             game.doAction(new MagicCopyCardOnStackAction(

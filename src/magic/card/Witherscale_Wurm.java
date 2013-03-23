@@ -6,7 +6,6 @@ import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentList;
-import magic.model.MagicPlayer;
 import magic.model.action.MagicAddStaticAction;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.event.MagicEvent;
@@ -46,8 +45,7 @@ public class Witherscale_Wurm {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanentList plist = event.getRefPermanentList(); 
             for (final MagicPermanent blocker : plist) {
                 game.doAction(new MagicAddStaticAction(blocker,AB));
@@ -70,8 +68,7 @@ public class Witherscale_Wurm {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicAddStaticAction(event.getRefPermanent(),AB));
         }
     };
@@ -94,8 +91,7 @@ public class Witherscale_Wurm {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
             final int amount = permanent.getCounters(MagicCounterType.MinusOne);
             game.doAction(new MagicChangeCountersAction(

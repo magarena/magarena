@@ -24,8 +24,7 @@ public class Gather_the_Townsfolk {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             int amount = MagicCondition.FATEFUL_HOUR.accept(event.getSource()) ? 5 : 2;
             for (;amount>0;amount--) {
                 game.doAction(new MagicPlayTokenAction(

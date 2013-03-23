@@ -10,7 +10,6 @@ import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.event.MagicEvent;
 import magic.model.stack.MagicCardOnStack;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 import magic.model.trigger.MagicWhenOtherSpellIsCastTrigger;
@@ -34,8 +33,7 @@ public class Charmbreaker_Devils {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final List<MagicCard> targets =
                 game.filterCards(player,MagicTargetFilter.TARGET_INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD);
@@ -67,8 +65,7 @@ public class Charmbreaker_Devils {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),4,0));
         }
     };

@@ -18,9 +18,8 @@ public class Fettergeist {
     private static final MagicEventAction EVENT_ACTION = new MagicEventAction() {
         @Override
         public void executeEvent(
-            final MagicGame game,
-            final MagicEvent event,
-            final Object[] choiceResults) {
+                final MagicGame game,
+                final MagicEvent event) {
             if (event.isNo()) {
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));
             }
@@ -47,8 +46,7 @@ public class Fettergeist {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final int x = event.getPlayer().controlsPermanent(event.getPermanent()) ? 1 : 0;
             final int amount = event.getPlayer().getNrOfPermanentsWithType(MagicType.Creature) - x;
             final MagicManaCost cost = MagicManaCost.create("{"+amount+"}");

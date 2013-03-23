@@ -4,7 +4,6 @@ import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicPermanentAction;
@@ -50,7 +49,7 @@ public class Grimgrin__Corpse_Born {
         }
 
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicUntapAction(event.getPermanent()));
             game.doAction(new MagicChangeCountersAction(
                     event.getPermanent(),
@@ -77,8 +76,7 @@ public class Grimgrin__Corpse_Born {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicDestroyAction(creature));

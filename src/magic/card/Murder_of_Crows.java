@@ -4,7 +4,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicDrawAction;
-import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.event.MagicDiscardEvent;
 import magic.model.event.MagicEvent;
@@ -30,8 +29,7 @@ public class Murder_of_Crows {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             if (event.isYes()) {
                 final MagicPlayer player=event.getPlayer();
                 game.doAction(new MagicDrawAction(player,1));

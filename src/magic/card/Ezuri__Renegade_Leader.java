@@ -5,7 +5,6 @@ import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicRegenerateAction;
@@ -19,7 +18,6 @@ import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicRegenerateTargetPicker;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetHint;
 
@@ -55,8 +53,7 @@ public class Ezuri__Renegade_Leader {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicRegenerateAction(creature));
@@ -89,8 +86,7 @@ public class Ezuri__Renegade_Leader {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final Collection<MagicPermanent> targets =
                     game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_ELF_YOU_CONTROL);
             for (final MagicPermanent creature : targets) {

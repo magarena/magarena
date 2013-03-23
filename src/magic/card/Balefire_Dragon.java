@@ -6,7 +6,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.event.MagicEvent;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
@@ -33,8 +32,7 @@ public class Balefire_Dragon {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final Collection<MagicPermanent> creatures=
                     game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicPermanent creature : creatures) {

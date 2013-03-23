@@ -5,7 +5,6 @@ import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicSetAbilityAction;
@@ -56,8 +55,7 @@ public class Slayers__Stronghold {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeTurnPTAction(creature,2,0));

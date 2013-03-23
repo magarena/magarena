@@ -6,7 +6,6 @@ import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.event.MagicEvent;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
@@ -26,8 +25,7 @@ public class Massacre_Wurm {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final Collection<MagicPermanent> targets=
                 game.filterPermanents(event.getPlayer().getOpponent(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicPermanent target : targets) {
@@ -52,8 +50,7 @@ public class Massacre_Wurm {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicChangeLifeAction(event.getPlayer().getOpponent(),-2));
         }
     };

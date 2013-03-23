@@ -28,8 +28,7 @@ public class Unhallowed_Pact {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicCard card = event.getRefCard();
             if (card.getOwner().getGraveyard().contains(card)) {
                 game.doAction(new MagicReanimateAction(

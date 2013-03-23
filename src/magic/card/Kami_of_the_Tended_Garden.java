@@ -29,8 +29,7 @@ public class Kami_of_the_Tended_Garden {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             if (event.isNo()) {
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));
             }            

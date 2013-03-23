@@ -5,13 +5,10 @@ import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
-import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.action.MagicBecomesCreatureAction;
-import magic.model.action.MagicChangeCountersAction;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
@@ -22,7 +19,6 @@ import magic.model.event.MagicPlayAbilityEvent;
 import magic.model.event.MagicTiming;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
-import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 import java.util.Set;
 
@@ -80,8 +76,7 @@ public class Chimeric_Mass {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT,ST));
         }
     };

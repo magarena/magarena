@@ -7,7 +7,6 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicSource;
 import magic.model.action.MagicCardAction;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.action.MagicMoveCardAction;
@@ -46,8 +45,7 @@ public class Graveyard_Shovel {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPlayer(game,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer targetPlayer) {
                     if (targetPlayer.getGraveyard().size() > 0) {
@@ -69,8 +67,7 @@ public class Graveyard_Shovel {
             @Override
             public void executeEvent(
                     final MagicGame game,
-                    final MagicEvent event,
-                    final Object[] choiceResults) {
+                    final MagicEvent event) {
                 event.processTargetCard(game,new MagicCardAction() {
                     public void doAction(final MagicCard card) {
                         game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));

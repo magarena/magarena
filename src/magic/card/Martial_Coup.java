@@ -10,7 +10,6 @@ import magic.model.action.MagicPlayTokenAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 
 import java.util.Collection;
@@ -29,8 +28,7 @@ public class Martial_Coup {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player=event.getPlayer();
             int x = event.getCardOnStack().getX();
             if (x >= 5) {

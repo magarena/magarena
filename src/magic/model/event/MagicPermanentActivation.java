@@ -61,8 +61,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
         @Override
         public final void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanentActivation permanentActivation = event.getRefPermanentActivation();
             final MagicPermanent permanent = event.getPermanent();
             final MagicAbilityOnStack abilityOnStack = new MagicAbilityOnStack(
@@ -85,9 +84,8 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
     
     @Override
     public void executeEvent(
-            final MagicGame game, 
-            final MagicEvent event, 
-            final Object[] choiceResults) {
+            final MagicGame game,
+            final MagicEvent event) {
         throw new RuntimeException(getClass() + " did not override executeEvent");
     }
     
@@ -119,8 +117,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicChangeCountersAction(
                         event.getPermanent(),
                         MagicCounterType.Charge,
@@ -152,8 +149,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
             @Override
             public void executeEvent(
                     final MagicGame game,
-                    final MagicEvent event,
-                    final Object[] choiceResults) {
+                    final MagicEvent event) {
                 game.doAction(new MagicUntapAction(event.getPermanent()));
             }
         };
@@ -181,7 +177,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
         }
 
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     game.doAction(new MagicPreventDamageAction(target,1));
@@ -209,8 +205,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
             @Override
             public void executeEvent(
                     final MagicGame game,
-                    final MagicEvent event,
-                    final Object[] choiceResults) {
+                    final MagicEvent event) {
                 game.doAction(new MagicRemoveFromPlayAction(event.getPermanent(),MagicLocationType.OwnersHand));
             }
         };
@@ -236,8 +231,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
             @Override
             public void executeEvent(
                     final MagicGame game,
-                    final MagicEvent event,
-                    final Object[] choiceResults) {
+                    final MagicEvent event) {
                 game.doAction(new MagicAddStaticAction(event.getPermanent(), new MagicStatic(
                         MagicLayer.SwitchPT,
                         MagicStatic.UntilEOT) {

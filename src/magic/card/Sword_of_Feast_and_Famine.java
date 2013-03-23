@@ -7,7 +7,6 @@ import magic.model.MagicPlayer;
 import magic.model.action.MagicUntapAction;
 import magic.model.event.MagicDiscardEvent;
 import magic.model.event.MagicEvent;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
@@ -33,8 +32,7 @@ public class Sword_of_Feast_and_Famine {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.addEvent(new MagicDiscardEvent(event.getPermanent(),event.getRefPlayer(),1,false));
             final Collection<MagicPermanent> targets = 
                 game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_LAND_YOU_CONTROL);

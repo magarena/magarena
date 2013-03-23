@@ -9,7 +9,6 @@ import magic.model.action.MagicPlayCardAction;
 import magic.model.action.MagicReanimateAction;
 import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.event.MagicEvent;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
@@ -32,8 +31,7 @@ public class Angel_of_Glory_s_Rise {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final List<MagicPermanent> zombies =
                     game.filterPermanents(player,MagicTargetFilter.TARGET_ZOMBIE);

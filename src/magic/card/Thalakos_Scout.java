@@ -4,7 +4,6 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicActivationHints;
@@ -34,8 +33,7 @@ public class Thalakos_Scout {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicRemoveFromPlayAction(event.getPermanent(),MagicLocationType.OwnersHand));
         }
     };

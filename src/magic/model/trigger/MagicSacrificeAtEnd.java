@@ -5,7 +5,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicAtEndOfTurnTrigger;
 
 public class MagicSacrificeAtEnd extends MagicAtEndOfTurnTrigger {
 
@@ -31,8 +30,7 @@ public class MagicSacrificeAtEnd extends MagicAtEndOfTurnTrigger {
     @Override
     public void executeEvent(
             final MagicGame game,
-            final MagicEvent event,
-            final Object[] choiceResults) {
+            final MagicEvent event) {
         game.doAction(new MagicSacrificeAction(event.getPermanent()));
     }
 }

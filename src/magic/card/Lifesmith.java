@@ -28,7 +28,7 @@ public class Lifesmith {
         }
         
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 game.doAction(new MagicChangeLifeAction(event.getPlayer(),3));
             }

@@ -1,6 +1,5 @@
 package magic.model.trigger;
 
-import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
@@ -36,8 +35,7 @@ public class MagicLeavesReturnExileTrigger extends MagicWhenLeavesPlayTrigger {
     @Override
     public void executeEvent(
             final MagicGame game,
-            final MagicEvent event,
-            final Object[] choiceResults) {
+            final MagicEvent event) {
         game.doAction(new MagicReturnExiledUntilThisLeavesPlayAction(event.getPermanent(),MagicLocationType.Play));
     }
 }

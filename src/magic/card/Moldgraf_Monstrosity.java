@@ -10,7 +10,6 @@ import magic.model.action.MagicPlayCardAction;
 import magic.model.action.MagicReanimateAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.event.MagicEvent;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicGraveyardTriggerData;
 import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
@@ -32,8 +31,7 @@ public class Moldgraf_Monstrosity {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
             game.doAction(new MagicRemoveCardAction(permanent.getCard(),MagicLocationType.Graveyard));
             game.doAction(new MagicMoveCardAction(permanent.getCard(),MagicLocationType.Graveyard,MagicLocationType.Exile));

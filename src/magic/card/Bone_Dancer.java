@@ -10,7 +10,6 @@ import magic.model.action.MagicPlayCardAction;
 import magic.model.action.MagicReanimateAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenAttacksUnblockedTrigger;
 
@@ -35,8 +34,7 @@ public class Bone_Dancer {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             if (event.isYes()) {
                 final MagicPlayer opponent = event.getPlayer().getOpponent();
                 final List<MagicCard> targets =

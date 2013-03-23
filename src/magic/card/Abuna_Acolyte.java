@@ -3,7 +3,6 @@ package magic.card;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 import magic.model.action.MagicPreventDamageAction;
 import magic.model.action.MagicTargetAction;
 import magic.model.choice.MagicTargetChoice;
@@ -39,7 +38,7 @@ public class Abuna_Acolyte {
         }
 
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     game.doAction(new MagicPreventDamageAction(target,2));

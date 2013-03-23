@@ -4,7 +4,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicSource;
 import magic.model.action.MagicDrawAction;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicActivationHints;
@@ -37,8 +36,7 @@ public class Merfolk_Looter {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicDrawAction(player,1));
             game.addEvent(new MagicDiscardEvent(event.getPermanent(),player,1,false));

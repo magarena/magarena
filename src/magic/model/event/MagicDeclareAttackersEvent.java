@@ -22,8 +22,7 @@ public class MagicDeclareAttackersEvent extends MagicEvent {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final MagicDeclareAttackersResult result = event.getAttackers();
             game.doAction(new MagicDeclareAttackersAction(player,result));

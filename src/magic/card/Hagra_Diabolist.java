@@ -32,8 +32,7 @@ public class Hagra_Diabolist {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPlayer(game,new MagicPlayerAction() {
                     public void doAction(final MagicPlayer targetPlayer) {

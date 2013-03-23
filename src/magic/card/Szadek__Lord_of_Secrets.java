@@ -30,8 +30,7 @@ public class Szadek__Lord_of_Secrets {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
         
         }
     };

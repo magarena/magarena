@@ -11,8 +11,7 @@
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicPlayTokenAction(
                 event.getPlayer(), 
                 TokenCardDefinitions.get("Beast3")
@@ -31,8 +30,7 @@
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final Collection<MagicPermanent> targets = game.filterPermanents(
                     event.getPlayer(),
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
@@ -58,8 +56,7 @@
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final int amt = event.getPlayer().getNrOfPermanentsWithType(MagicType.Land);
             game.doAction(new MagicPlayTokensAction(
                 event.getPlayer(), 

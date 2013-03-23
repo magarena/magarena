@@ -3,7 +3,6 @@ package magic.card;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicDrawAction;
-import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.stack.MagicCardOnStack;
@@ -29,7 +28,7 @@ public class Mesa_Enchantress {
         }
         
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 game.doAction(new MagicDrawAction(event.getPlayer(),1));
             }

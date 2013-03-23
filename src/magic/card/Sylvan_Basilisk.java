@@ -30,8 +30,7 @@ public class Sylvan_Basilisk {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             for (final MagicPermanent blocker : event.getRefPermanentList()) {
                 game.doAction(new MagicDestroyAction(blocker));
             }

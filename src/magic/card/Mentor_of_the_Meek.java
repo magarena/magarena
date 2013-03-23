@@ -34,8 +34,7 @@ public class Mentor_of_the_Meek {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             if (event.isYes()) {
                 game.doAction(new MagicDrawAction(event.getPlayer(),1));
             }

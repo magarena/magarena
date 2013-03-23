@@ -7,7 +7,6 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicSource;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.action.MagicDrawAction;
@@ -58,8 +57,7 @@ public class Angelheart_Vial {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicChangeLifeAction(event.getPlayer(),2));
             game.doAction(new MagicDrawAction(event.getPlayer(),1));
         }
@@ -84,8 +82,7 @@ public class Angelheart_Vial {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicChangeCountersAction(
                     event.getPermanent(),
                     MagicCounterType.Charge,

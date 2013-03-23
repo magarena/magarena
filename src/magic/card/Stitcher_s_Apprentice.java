@@ -6,7 +6,6 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicSource;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.action.MagicSacrificeAction;
@@ -46,8 +45,7 @@ public class Stitcher_s_Apprentice {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Homunculus2")));
             game.addEvent(new MagicEvent(
@@ -65,8 +63,7 @@ public class Stitcher_s_Apprentice {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicSacrificeAction(permanent));

@@ -7,7 +7,6 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 import magic.model.action.MagicCardAction;
 import magic.model.action.MagicExileUntilThisLeavesPlayAction;
 import magic.model.action.MagicReturnExiledUntilThisLeavesPlayAction;
@@ -52,7 +51,7 @@ public class Parallax_Nexus {
         }
 
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCard(game,new MagicCardAction() {
                 public void doAction(final MagicCard card) {
                     game.doAction(new MagicExileUntilThisLeavesPlayAction(
@@ -83,8 +82,7 @@ public class Parallax_Nexus {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
             game.doAction(new MagicReturnExiledUntilThisLeavesPlayAction(permanent,MagicLocationType.OwnersHand));
         }

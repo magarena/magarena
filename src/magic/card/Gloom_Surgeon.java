@@ -38,8 +38,7 @@ public class Gloom_Surgeon {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final int amount = event.getRefInt();
             final MagicPlayer player = event.getPlayer();
             final MagicCardList library = player.getLibrary();

@@ -30,8 +30,7 @@ public class Sword_of_Fire_and_Ice {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTarget(game,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicDamage damage=new MagicDamage(event.getPermanent(),target,2);

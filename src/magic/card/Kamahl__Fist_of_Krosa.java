@@ -6,7 +6,6 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
-import magic.model.MagicSource;
 import magic.model.MagicType;
 import magic.model.action.MagicBecomesCreatureAction;
 import magic.model.action.MagicChangeTurnPTAction;
@@ -22,7 +21,6 @@ import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTiming;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 
 import java.util.Collection;
@@ -63,8 +61,7 @@ public class Kamahl__Fist_of_Krosa {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent land) {
                     game.doAction(new MagicBecomesCreatureAction(land,PT,ST));
@@ -97,8 +94,7 @@ public class Kamahl__Fist_of_Krosa {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final Collection<MagicPermanent> targets =
                     game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
                 for (final MagicPermanent creature : targets) {

@@ -36,8 +36,7 @@ public class Grave_Exchange {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetCard(game,new MagicCardAction() {
                 public void doAction(final MagicCard targetCard) {
                     game.doAction(new MagicRemoveCardAction(
@@ -63,9 +62,8 @@ public class Grave_Exchange {
     private static final MagicEventAction EVENT_ACTION = new MagicEventAction() {
         @Override
         public void executeEvent(
-            final MagicGame game,
-            final MagicEvent event,
-            final Object[] choiceResults) {
+                final MagicGame game,
+                final MagicEvent event) {
             event.processTargetPlayer(game,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer opponent) {
                     game.addEvent(new MagicSacrificePermanentEvent(

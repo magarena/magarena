@@ -5,7 +5,6 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
-import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.action.MagicBecomesCreatureAction;
 import magic.model.action.MagicPlayAbilityAction;
@@ -19,7 +18,6 @@ import magic.model.event.MagicPlayAbilityEvent;
 import magic.model.event.MagicTiming;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 
 import java.util.Collection;
@@ -49,8 +47,7 @@ public class Mirror_Entity {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final int X = event.getRefInt();
             final MagicPermanent permanent = event.getPermanent();
             final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {

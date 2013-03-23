@@ -25,8 +25,7 @@ public class Kazuul__Tyrant_of_the_Cliffs {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player=event.getPlayer();
             game.addEvent(new MagicPlayOgreUnlessEvent(
                         event.getPermanent(),

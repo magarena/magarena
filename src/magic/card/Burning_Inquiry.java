@@ -22,9 +22,8 @@ public class Burning_Inquiry {
 
         @Override
         public void executeEvent(
-            final MagicGame game,
-            final MagicEvent event,
-            final Object[] choiceResults) {
+                final MagicGame game,
+                final MagicEvent event) {
             for (final MagicPlayer player : game.getPlayers()) {
                 game.doAction(new MagicDrawAction(player, 3));
                 game.addEvent(new MagicDiscardEvent(

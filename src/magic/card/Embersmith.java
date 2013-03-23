@@ -37,8 +37,7 @@ public class Embersmith {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             if (event.isYes()) {
                 event.processTarget(game,new MagicTargetAction() {
                     public void doAction(final MagicTarget target) {

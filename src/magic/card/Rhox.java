@@ -30,8 +30,7 @@ public class Rhox {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             if (event.isYes()) {
                 final MagicPermanent permanent = event.getPermanent();
                 final MagicDamage damage = MagicDamage.Combat(

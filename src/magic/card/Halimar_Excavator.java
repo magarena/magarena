@@ -30,8 +30,7 @@ public class Halimar_Excavator {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPlayer(game,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer targetPlayer) {
                     final MagicPlayer player = event.getPlayer();

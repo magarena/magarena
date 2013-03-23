@@ -7,7 +7,6 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
-import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.action.MagicAddTurnTriggerAction;
@@ -46,8 +45,7 @@ public class Raging_Ravine {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicChangeCountersAction(
                 event.getPermanent(),
                 MagicCounterType.PlusOne,
@@ -119,8 +117,7 @@ public class Raging_Ravine {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanent permanent=event.getPermanent();
             game.doAction(new MagicBecomesCreatureAction(permanent,PT,ST,C));
             game.doAction(new MagicAddTurnTriggerAction(permanent,CT));

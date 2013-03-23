@@ -50,8 +50,7 @@ public class Ageless_Sentinels {
        @Override
        public void executeEvent(
                final MagicGame game,
-               final MagicEvent event,
-               final Object[] choiceResults) {
+               final MagicEvent event) {
            final MagicPermanent permanent = event.getPermanent();
            game.doAction(new MagicAddStaticAction(permanent, ST));
            game.doAction(new MagicAddStaticAction(permanent, AB));

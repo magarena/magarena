@@ -6,7 +6,6 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
-import magic.model.MagicSource;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicActivationHints;
@@ -63,8 +62,7 @@ public class Tolsimir_Wolfblood {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Voja")));
         }
     };

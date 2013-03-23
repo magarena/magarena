@@ -6,7 +6,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
-import magic.model.action.MagicAction;
 import magic.model.action.MagicChangeStateAction;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.action.MagicPutIntoPlayAction;
@@ -31,8 +30,7 @@ public class Thatcher_Revolt {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final MagicCardDefinition token = TokenCardDefinitions.get("Human2");
             for (int x=3;x>0;x--) {

@@ -31,8 +31,7 @@ public class Engulfing_Slagwurm {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanentList plist = event.getRefPermanentList();
             for (final MagicPermanent blocker : plist) {
                 game.doAction(new MagicDestroyAction(blocker));
@@ -60,8 +59,7 @@ public class Engulfing_Slagwurm {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanent attacker = event.getRefPermanent();
             game.doAction(new MagicDestroyAction(attacker));
             game.doAction(new MagicChangeLifeAction(

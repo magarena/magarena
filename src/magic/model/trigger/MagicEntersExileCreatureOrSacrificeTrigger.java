@@ -7,12 +7,10 @@ import magic.model.MagicSubType;
 import magic.model.action.MagicExileUntilThisLeavesPlayAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicSacrificeAction;
-import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicExileTargetPicker;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicPermanentFilterImpl;
 import magic.model.target.MagicTargetHint;
@@ -75,8 +73,7 @@ public class MagicEntersExileCreatureOrSacrificeTrigger extends MagicWhenComesIn
     @Override
     public void executeEvent(
             final MagicGame game,
-            final MagicEvent event,
-            final Object[] choiceResults) {
+            final MagicEvent event) {
         final MagicPermanent permanent = event.getPermanent();
         if (event.isYes()) {
             event.processTargetPermanent(game,new MagicPermanentAction() {

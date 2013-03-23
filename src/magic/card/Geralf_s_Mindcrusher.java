@@ -27,8 +27,7 @@ public class Geralf_s_Mindcrusher {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPlayer(game,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer targetPlayer) {
                     game.doAction(new MagicMillLibraryAction(targetPlayer,5));

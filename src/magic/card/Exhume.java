@@ -29,8 +29,7 @@ public class Exhume {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             for (final MagicPlayer player : game.getPlayers()) {
                 game.addEvent(new MagicEvent(
                     event.getSource(),
@@ -47,8 +46,7 @@ public class Exhume {
             @Override
             public void executeEvent(
                     final MagicGame game,
-                    final MagicEvent event,
-                    final Object[] choiceResults) {
+                    final MagicEvent event) {
                 event.processTargetCard(game,new MagicCardAction() {
                     public void doAction(final MagicCard card) {
                         game.doAction(new MagicReanimateAction(event.getPlayer(),card,MagicPlayCardAction.NONE));

@@ -5,7 +5,6 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.condition.MagicCondition;
@@ -48,8 +47,7 @@ public class Scroll_of_Griselbrand {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             game.addEvent(new MagicDiscardEvent(
                     event.getSource(),

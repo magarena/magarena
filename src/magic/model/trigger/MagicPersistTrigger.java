@@ -3,7 +3,6 @@ package magic.model.trigger;
 import magic.model.MagicCard;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
-import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicPlayCardAction;
 import magic.model.action.MagicReanimateAction;
@@ -31,7 +30,7 @@ public class MagicPersistTrigger extends MagicWhenDiesTrigger {
     }
 
     @Override
-    public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+    public void executeEvent(final MagicGame game, final MagicEvent event) {
         final MagicCard card = event.getPermanent().getCard();
         game.doAction(new MagicReanimateAction(card.getOwner(),card,MagicPlayCardAction.PERSIST));
     }

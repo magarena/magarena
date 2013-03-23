@@ -28,8 +28,7 @@ public class Quietus_Spike {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicChangeLifeAction(player,-(player.getLife()+1)/2));
         }

@@ -8,7 +8,6 @@ import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 
 import java.util.Collection;
@@ -26,8 +25,7 @@ public class Hysterical_Blindness {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer opponent = event.getPlayer().getOpponent();
             final Collection<MagicPermanent> targets =
                 game.filterPermanents(opponent,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);

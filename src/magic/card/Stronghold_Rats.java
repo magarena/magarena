@@ -25,8 +25,7 @@ public class Stronghold_Rats {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             for (final MagicPlayer player : game.getPlayers()) {
                 game.addEvent(new MagicDiscardEvent(event.getPermanent(),player,1,false));
             }

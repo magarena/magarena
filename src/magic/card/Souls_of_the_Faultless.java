@@ -24,8 +24,7 @@ public class Souls_of_the_Faultless {
                         @Override
                         public void executeEvent(
                                 final MagicGame game,
-                                final MagicEvent event,
-                                final Object[] choiceResults) {
+                                final MagicEvent event) {
                             game.doAction(new MagicChangeLifeAction(event.getPlayer(),amount));
                             game.doAction(new MagicChangeLifeAction(game.getPlayer(pIndex),-amount));
                         }

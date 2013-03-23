@@ -3,12 +3,10 @@ package magic.card;
 import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.action.MagicPlayCardAction;
 import magic.model.action.MagicReanimateAction;
 import magic.model.event.MagicEvent;
 import magic.model.stack.MagicCardOnStack;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenSpellIsCastTrigger;
 
@@ -31,8 +29,7 @@ public class Demigod_of_Revenge {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final List<MagicCard> cards = game.filterCards(
                     event.getPlayer(),
                     MagicTargetFilter.TARGET_CARD_FROM_GRAVEYARD);

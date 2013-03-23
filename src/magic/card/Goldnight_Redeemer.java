@@ -26,8 +26,7 @@ public class Goldnight_Redeemer {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final int x = player.controlsPermanent(event.getPermanent()) ? 1 : 0;
             final int amount = player.getNrOfPermanentsWithType(MagicType.Creature) - x;

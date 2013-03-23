@@ -8,7 +8,6 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicSource;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.action.MagicSetAbilityAction;
 import magic.model.choice.MagicMayChoice;
@@ -22,7 +21,6 @@ import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicPlayAbilityEvent;
 import magic.model.event.MagicTiming;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
@@ -62,8 +60,7 @@ public class Rise_of_the_Hobgoblins {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player=event.getPlayer();
             final Collection<MagicPermanent> targets=game.filterPermanents(
                     player,
@@ -93,8 +90,7 @@ public class Rise_of_the_Hobgoblins {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             if (event.isYes()) {
                 final MagicPlayer player=event.getPlayer();
                 final MagicPayManaCostResult payedManaCost = event.getPaidMana();

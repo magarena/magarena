@@ -28,8 +28,7 @@ public class Grave_Pact {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPlayer(game,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer opponent) {
                     if (opponent.controlsPermanentWithType(MagicType.Creature)) {

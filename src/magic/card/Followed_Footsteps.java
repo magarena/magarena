@@ -25,8 +25,7 @@ public class Followed_Footsteps {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanent permanent=event.getPermanent();
             final MagicPermanent enchanted=permanent.getEnchantedCreature();
             if (enchanted.isValid()) {

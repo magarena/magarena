@@ -5,7 +5,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicSource;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicActivationHints;
@@ -13,7 +12,6 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTapEvent;
 import magic.model.event.MagicTiming;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 
 import java.util.Collection;
@@ -42,8 +40,7 @@ public class Steel_Overseer {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final Collection<MagicPermanent> targets =
                 game.filterPermanents(player,MagicTargetFilter.TARGET_ARTIFACT_CREATURE_YOU_CONTROL);

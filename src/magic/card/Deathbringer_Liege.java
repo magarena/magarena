@@ -61,7 +61,7 @@ public class Deathbringer_Liege {
         }
         
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
@@ -91,7 +91,7 @@ public class Deathbringer_Liege {
                 MagicEvent.NONE;
         }
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {

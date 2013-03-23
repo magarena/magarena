@@ -6,7 +6,6 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
-import magic.model.MagicSource;
 import magic.model.MagicType;
 import magic.model.action.MagicBecomesCreatureAction;
 import magic.model.condition.MagicArtificialCondition;
@@ -68,8 +67,7 @@ public class Inkmoth_Nexus {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanent permanent=event.getPermanent();
             game.doAction(new MagicBecomesCreatureAction(permanent,PT,AB,ST));
         }

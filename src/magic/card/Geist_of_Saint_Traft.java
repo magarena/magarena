@@ -29,8 +29,7 @@ public class Geist_of_Saint_Traft {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final MagicCard card = MagicCard.createTokenCard(TokenCardDefinitions.get("Angel4"),player);
             final MagicPlayCardAction action = new MagicPlayCardAction(card,player,MagicPlayCardAction.TAPPED_ATTACKING);

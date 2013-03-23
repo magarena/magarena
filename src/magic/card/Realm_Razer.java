@@ -9,7 +9,6 @@ import magic.model.action.MagicExileUntilThisLeavesPlayAction;
 import magic.model.action.MagicPlayCardAction;
 import magic.model.action.MagicReturnExiledUntilThisLeavesPlayAction;
 import magic.model.event.MagicEvent;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 import magic.model.trigger.MagicWhenLeavesPlayTrigger;
@@ -29,8 +28,7 @@ public class Realm_Razer {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final Collection<MagicPermanent> targets =
                     game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_LAND);
             for (final MagicPermanent target : targets) {
@@ -61,8 +59,7 @@ public class Realm_Razer {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicReturnExiledUntilThisLeavesPlayAction(
                     event.getPermanent(),
                     MagicLocationType.Play,

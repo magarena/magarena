@@ -6,7 +6,6 @@ import magic.model.MagicCopyMap;
 import magic.model.MagicCopyable;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
-import magic.model.MagicMappable;
 import magic.model.MagicMessage;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentList;
@@ -26,6 +25,7 @@ import magic.model.choice.MagicDeclareAttackersResult;
 import magic.model.choice.MagicDeclareBlockersResult;
 import magic.model.choice.MagicExcludeResult;
 import magic.model.choice.MagicPlayChoiceResult;
+import magic.model.choice.MagicCardChoiceResult;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.stack.MagicItemOnStack;
 import magic.model.target.MagicDefaultTargetPicker;
@@ -44,8 +44,7 @@ public class MagicEvent implements MagicCopyable {
     private static final MagicEventAction NO_ACTION = new MagicEventAction() {
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             //do nothing
         }
     };
@@ -445,6 +444,10 @@ public class MagicEvent implements MagicCopyable {
         return (MagicPlayChoiceResult)chosen[0];
     }
     
+    public MagicCardChoiceResult getCardChoice() {
+        return (MagicCardChoiceResult)chosen[0];
+    }
+    
     public MagicColor getChosenColor() {
         for (Object obj : chosen) {
             if (obj instanceof MagicColor) {
@@ -461,6 +464,10 @@ public class MagicEvent implements MagicCopyable {
             }
         }
         throw new RuntimeException("Unable to find paid mana");
+    }
+
+    public Object[] getChosen() {
+        return chosen;
     }
     
     private final MagicTarget getLegalTarget(final MagicGame game) {
@@ -532,23 +539,23 @@ public class MagicEvent implements MagicCopyable {
         game.changeScore(ArtificialScoringSystem.getManaScore(result.getConverted()));
     }
     
-    final void payManaCost(final MagicGame game,final MagicPlayer aPlayer,final Object[] choiceResults) {
+    final void payManaCost(final MagicGame game,final MagicPlayer aPlayer) {
         final int manaIndex=getManaChoiceResultIndex();
-        assert manaIndex < choiceResults.length : 
+        assert manaIndex < chosen.length : 
             this + "\n" +
-            "manaIndex " + manaIndex + " from " + choice + " is outside of choiceResults with size " + choiceResults.length;
+            "manaIndex " + manaIndex + " from " + choice + " is outside of chosen with size " + chosen.length;
         // Result can be null when paying cost is optional.
-        if (manaIndex >= 0 && choiceResults[manaIndex] != null) {
-            assert choiceResults[manaIndex] instanceof MagicPayManaCostResult : 
+        if (manaIndex >= 0 && chosen[manaIndex] != null) {
+            assert chosen[manaIndex] instanceof MagicPayManaCostResult : 
                 this + "\n" +
-                "manaIndex " + manaIndex + " from " + choice + " is " + choiceResults[manaIndex].getClass() + " instead of MagicPayManaCostResult";
-            payManaCost(game,aPlayer,(MagicPayManaCostResult)choiceResults[manaIndex]);
+                "manaIndex " + manaIndex + " from " + choice + " is " + chosen[manaIndex].getClass() + " instead of MagicPayManaCostResult";
+            payManaCost(game,aPlayer,(MagicPayManaCostResult)chosen[manaIndex]);
         }
     }
     
     public final void executeEvent(final MagicGame game,final Object[] choiceResults) {
         chosen = choiceResults;
-        action.executeEvent(game,this,choiceResults);
+        action.executeEvent(game,this);
         chosen = null;
 
         //move card to move location that is not play 

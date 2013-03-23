@@ -13,8 +13,7 @@
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final int amount = event.getPermanent().getCounters(MagicCounterType.Charge);
             game.doAction(new MagicChangeLifeAction(
                 event.getPlayer(),

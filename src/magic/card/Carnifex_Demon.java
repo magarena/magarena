@@ -5,7 +5,6 @@ import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
@@ -15,7 +14,6 @@ import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicRemoveCounterEvent;
 import magic.model.event.MagicTiming;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 
 import java.util.Collection;
@@ -45,8 +43,7 @@ public class Carnifex_Demon {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanent creature=event.getPermanent();
             final Collection<MagicPermanent> targets=
                 game.filterPermanents(creature.getController(),MagicTargetFilter.TARGET_CREATURE);

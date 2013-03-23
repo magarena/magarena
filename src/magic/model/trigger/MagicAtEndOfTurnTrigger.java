@@ -6,7 +6,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicAtEndOfTurnTrigger;
 
 public abstract class MagicAtEndOfTurnTrigger extends MagicTrigger<MagicPlayer> {
     public MagicAtEndOfTurnTrigger(final int priority) {
@@ -37,8 +36,7 @@ public abstract class MagicAtEndOfTurnTrigger extends MagicTrigger<MagicPlayer> 
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicRemoveFromPlayAction(
                     event.getPermanent(),
                     MagicLocationType.OwnersHand));

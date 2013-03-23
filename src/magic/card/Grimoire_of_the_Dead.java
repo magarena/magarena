@@ -9,7 +9,6 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.action.MagicAddStaticAction;
 import magic.model.action.MagicChangeCountersAction;
@@ -72,8 +71,7 @@ public class Grimoire_of_the_Dead {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,1,true));
         }
     };
@@ -104,8 +102,7 @@ public class Grimoire_of_the_Dead {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final Collection<MagicCard> targets =
                     game.filterCards(player,MagicTargetFilter.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS);

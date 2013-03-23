@@ -8,7 +8,6 @@ import magic.model.MagicSource;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenAttacksTrigger;
 
@@ -31,8 +30,7 @@ public class Ronin_Cliffrider {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             if (event.isYes()) {
                 final MagicSource source = event.getSource();
                 final MagicPlayer defendingPlayer = event.getPlayer().getOpponent();

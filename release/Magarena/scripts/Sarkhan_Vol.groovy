@@ -11,8 +11,7 @@
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final Collection<MagicPermanent> targets = game.filterPermanents(
                 event.getPlayer(),
                 MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL
@@ -37,8 +36,7 @@
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent perm) {
                     game.doAction(new MagicGainControlAction(event.getPlayer(),perm,MagicStatic.UntilEOT));
@@ -60,8 +58,7 @@
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicPlayTokensAction(
                 event.getPlayer(), 
                 TokenCardDefinitions.get("Dragon4"),

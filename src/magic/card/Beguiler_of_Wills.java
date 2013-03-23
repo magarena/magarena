@@ -3,7 +3,6 @@ package magic.card;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 import magic.model.MagicType;
 import magic.model.action.MagicGainControlAction;
 import magic.model.action.MagicPermanentAction;
@@ -57,8 +56,7 @@ public class Beguiler_of_Wills {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     if (creature.getPower() <= event.getPlayer().getNrOfPermanentsWithType(MagicType.Creature)) {

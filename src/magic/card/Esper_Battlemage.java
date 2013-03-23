@@ -4,7 +4,6 @@ import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicPreventDamageAction;
@@ -45,8 +44,7 @@ public class Esper_Battlemage {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicPreventDamageAction(event.getPlayer(),2));
         }
     };
@@ -73,7 +71,7 @@ public class Esper_Battlemage {
         }
 
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeTurnPTAction(creature,-1,-1));

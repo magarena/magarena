@@ -4,7 +4,6 @@ import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
@@ -38,8 +37,7 @@ public class Bloodflow_Connoisseur {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicChangeCountersAction(
                     event.getPermanent(),
                     MagicCounterType.PlusOne,

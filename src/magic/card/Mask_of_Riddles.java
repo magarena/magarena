@@ -4,7 +4,6 @@ import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicDrawAction;
-import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
@@ -34,8 +33,7 @@ public class Mask_of_Riddles {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             if (event.isYes()) {
                 game.doAction(new MagicDrawAction(event.getPlayer(), 1));
             }

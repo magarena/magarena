@@ -28,8 +28,7 @@ public class Weatherseed_Treefolk {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicCard card = event.getPermanent().getCard();
             game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
             game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));

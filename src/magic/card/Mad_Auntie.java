@@ -4,7 +4,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
-import magic.model.MagicSource;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicRegenerateAction;
 import magic.model.choice.MagicTargetChoice;
@@ -69,9 +68,8 @@ public class Mad_Auntie {
 
         @Override
         public void executeEvent(
-                final MagicGame game, 
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicGame game,
+                final MagicEvent event) {
             event.processTargetPermanent(game,
                 new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {

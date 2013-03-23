@@ -7,7 +7,6 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
-import magic.model.MagicSource;
 import magic.model.action.MagicCardOnStackAction;
 import magic.model.action.MagicCopyCardOnStackAction;
 import magic.model.choice.MagicTargetChoice;
@@ -65,8 +64,7 @@ public class Echo_Mage {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetCardOnStack(game,new MagicCardOnStackAction() {
                 public void doAction(final MagicCardOnStack targetSpell) {
                     final MagicPlayer player = event.getPlayer();

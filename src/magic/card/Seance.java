@@ -7,7 +7,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
 import magic.model.MagicSubType;
-import magic.model.action.MagicAction;
 import magic.model.action.MagicAddStaticAction;
 import magic.model.action.MagicCardAction;
 import magic.model.action.MagicChangeStateAction;
@@ -55,8 +54,7 @@ public class Seance {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetCard(game,new MagicCardAction() {
                     public void doAction(final MagicCard card) {

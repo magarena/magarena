@@ -12,7 +12,6 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicPowerTargetPicker;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 
 import java.util.Collection;
@@ -34,8 +33,7 @@ public class Alpha_Brawl {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 final MagicPlayer player = event.getPlayer();
                 public void doAction(final MagicPermanent permanent) {

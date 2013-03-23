@@ -7,7 +7,6 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicSource;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.choice.MagicTargetChoice;
@@ -19,7 +18,6 @@ import magic.model.event.MagicExileCardEvent;
 import magic.model.event.MagicPayManaCostTapEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTiming;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 
 import java.util.Collection;
@@ -60,8 +58,7 @@ public class Havengul_Runebinder {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicPlayTokenAction(
                     player,

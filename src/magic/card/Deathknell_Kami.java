@@ -5,7 +5,6 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
-import magic.model.MagicSource;
 import magic.model.action.MagicChangeStateAction;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.condition.MagicCondition;
@@ -38,8 +37,7 @@ public class Deathknell_Kami {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
             game.doAction(new MagicChangeTurnPTAction(permanent,1,1));
             game.doAction(new MagicChangeStateAction(

@@ -31,8 +31,7 @@ public class Black_Vise {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final int amount = player.getHandSize() - 4;
             if (amount > 0) {
@@ -59,8 +58,7 @@ public class Black_Vise {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
         }
     };
 }

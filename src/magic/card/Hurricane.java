@@ -27,8 +27,7 @@ public class Hurricane {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicSource source = event.getSource();
             final int amount = event.getCardOnStack().getX();
             final Collection<MagicPermanent> targets=

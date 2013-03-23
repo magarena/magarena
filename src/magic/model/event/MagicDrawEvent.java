@@ -12,7 +12,7 @@ public class MagicDrawEvent extends MagicEvent {
             player,
             new MagicEventAction() {
                 @Override
-                public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choices) {
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
                     game.doAction(new MagicDrawAction(event.getPlayer(),amount));        
                 }
             },

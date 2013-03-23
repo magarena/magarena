@@ -6,7 +6,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.event.MagicEvent;
-import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 
 
@@ -29,8 +28,7 @@ public class The_Rack {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final int amount = 3 - player.getHandSize();
             if (amount > 0) {

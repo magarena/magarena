@@ -5,7 +5,6 @@ import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicTargetAction;
 import magic.model.choice.MagicTargetChoice;
@@ -44,7 +43,7 @@ public class Hateflayer {
         }
 
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicPermanent permanent=event.getPermanent();

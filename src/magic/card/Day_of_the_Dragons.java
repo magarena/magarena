@@ -11,7 +11,6 @@ import magic.model.action.MagicPlayTokenAction;
 import magic.model.action.MagicReturnExiledUntilThisLeavesPlayAction;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.event.MagicEvent;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 import magic.model.trigger.MagicWhenLeavesPlayTrigger;
@@ -32,8 +31,7 @@ public class Day_of_the_Dragons {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final Collection<MagicPermanent> targets =
                     game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicPermanent target : targets) {
@@ -71,8 +69,7 @@ public class Day_of_the_Dragons {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final Collection<MagicPermanent> targets =
                     game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_DRAGON_YOU_CONTROL);
             for (final MagicPermanent target : targets) {

@@ -30,8 +30,7 @@ public class Pulse_of_the_Forge {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPlayer(game,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer targetPlayer) {
                     final MagicDamage damage = new MagicDamage(event.getSource(),targetPlayer,4);

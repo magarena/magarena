@@ -26,8 +26,7 @@ public class Hero_of_Bladehold {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player=event.getPlayer();
             for (int count=2;count>0;count--) {
                 final MagicCard card=MagicCard.createTokenCard(TokenCardDefinitions.get("Soldier"),player);

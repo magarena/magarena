@@ -1,7 +1,6 @@
 package magic.card;
 
 import magic.model.MagicGame;
-import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicExileUntilThisLeavesPlayAction;
 import magic.model.action.MagicPermanentAction;
@@ -12,7 +11,6 @@ import magic.model.target.MagicExileTargetPicker;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetHint;
 import magic.model.trigger.MagicLandfallTrigger;
-import magic.model.trigger.MagicWhenLeavesPlayTrigger;
 
 public class Admonition_Angel {
     public static final MagicLandfallTrigger T1 = new MagicLandfallTrigger() {
@@ -39,8 +37,7 @@ public class Admonition_Angel {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent target) {

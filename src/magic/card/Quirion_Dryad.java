@@ -1,11 +1,9 @@
 package magic.card;
 
-import magic.model.MagicCard;
 import magic.model.MagicColor;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.event.MagicEvent;
 import magic.model.stack.MagicCardOnStack;
@@ -30,8 +28,7 @@ public class Quirion_Dryad {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,1,true));
         }
     };

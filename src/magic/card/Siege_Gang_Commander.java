@@ -7,7 +7,6 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicSource;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.action.MagicTargetAction;
@@ -51,8 +50,7 @@ public class Siege_Gang_Commander {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTarget(game,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicDamage damage=new MagicDamage(event.getSource(),target,2);
@@ -74,8 +72,7 @@ public class Siege_Gang_Commander {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player=event.getPlayer();
             for (int count=3;count>0;count--) {
                 game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Goblin1")));

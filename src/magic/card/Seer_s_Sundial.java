@@ -26,8 +26,7 @@ public class Seer_s_Sundial {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             if (event.isYes()) {
                 game.doAction(new MagicDrawAction(event.getPlayer(),1));
             }

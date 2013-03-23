@@ -4,7 +4,6 @@ import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 import magic.model.action.MagicRegenerateAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
@@ -46,8 +45,7 @@ public class Corrupted_Harvester {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicRegenerateAction(event.getPermanent()));
         }
     };

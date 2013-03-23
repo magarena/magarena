@@ -4,7 +4,6 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicDrawAction;
-import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.event.MagicEvent;
 
@@ -45,8 +44,7 @@ public class MagicDieDrawCardTrigger extends MagicWhenPutIntoGraveyardTrigger {
     @Override
     public void executeEvent(
             final MagicGame game,
-            final MagicEvent event,
-            final Object[] choiceResults) {
+            final MagicEvent event) {
         if (mustDraw) {
             game.doAction(new MagicDrawAction(event.getPlayer(),1));
         } else if (event.isYes()) {

@@ -17,8 +17,6 @@ import magic.model.target.MagicDestroyTargetPicker;
 import magic.model.target.MagicExileTargetPicker;
 import magic.model.choice.MagicTargetChoice;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
@@ -27,8 +25,7 @@ public enum MagicRuleEventAction {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicDestroyAction(creature));
@@ -40,8 +37,7 @@ public enum MagicRuleEventAction {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeStateAction(creature,MagicPermanentState.CannotBeRegenerated,true));
@@ -54,8 +50,7 @@ public enum MagicRuleEventAction {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetCardOnStack(game,new MagicCardOnStackAction() {
                 public void doAction(final MagicCardOnStack targetSpell) {
                     game.doAction(new MagicCounterItemOnStackAction(targetSpell));
@@ -67,8 +62,7 @@ public enum MagicRuleEventAction {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent perm) {
                     game.doAction(new MagicRemoveFromPlayAction(perm,MagicLocationType.Exile));

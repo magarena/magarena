@@ -10,7 +10,6 @@ import magic.model.event.MagicEvent;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicAtUpkeepTrigger;
-import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 import java.util.Set;
 
@@ -44,8 +43,7 @@ public class Primordial_Hydra {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicChangeCountersAction(
                 event.getPermanent(),
                 MagicCounterType.PlusOne,

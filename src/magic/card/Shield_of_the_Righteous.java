@@ -24,8 +24,7 @@ public class Shield_of_the_Righteous {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicChangeStateAction(event.getRefPermanent(),MagicPermanentState.DoesNotUntapDuringNext,true));
         }
     };

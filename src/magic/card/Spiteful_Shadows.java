@@ -3,7 +3,6 @@ package magic.card;
 import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
@@ -30,8 +29,7 @@ public class Spiteful_Shadows {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicDamage damage = new MagicDamage(
                 event.getSource(),
                 event.getPlayer(),

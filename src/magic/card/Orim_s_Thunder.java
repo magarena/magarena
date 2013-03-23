@@ -41,8 +41,7 @@ public class Orim_s_Thunder {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent target) {
                     game.doAction(new MagicDestroyAction(target));
@@ -57,9 +56,8 @@ public class Orim_s_Thunder {
                         new MagicEventAction() {
                             @Override
                             public void executeEvent(
-                                final MagicGame game,
-                                final MagicEvent event,
-                                final Object[] choiceResults) {
+                                    final MagicGame game,
+                                    final MagicEvent event) {
                                 event.processTarget(game,new MagicTargetAction() {
                                     public void doAction(final MagicTarget target) {
                                         final MagicDamage damage = new MagicDamage(event.getSource(),target,amount);

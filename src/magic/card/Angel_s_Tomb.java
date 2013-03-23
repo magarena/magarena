@@ -8,7 +8,6 @@ import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.action.MagicBecomesCreatureAction;
-import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.mstatic.MagicLayer;
@@ -92,8 +91,7 @@ public class Angel_s_Tomb {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             if (event.isYes()) {
                 game.doAction(new MagicBecomesCreatureAction(
                         event.getPermanent(),

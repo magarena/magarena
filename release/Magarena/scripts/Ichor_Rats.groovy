@@ -11,8 +11,7 @@
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicChangePoisonAction(game.getPlayer(0),1));
             game.doAction(new MagicChangePoisonAction(game.getPlayer(1),1));
         }

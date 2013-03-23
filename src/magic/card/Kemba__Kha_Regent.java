@@ -23,8 +23,7 @@ public class Kemba__Kha_Regent {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
             int amount = permanent.getEquipmentPermanents().size();
             for (;amount>0;amount--) {

@@ -23,8 +23,7 @@ public class Angelic_Destiny {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicCard card = event.getPermanent().getCard();
             if (card.getOwner().getGraveyard().contains(card)) {
                 game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));

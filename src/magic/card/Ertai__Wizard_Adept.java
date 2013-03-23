@@ -4,7 +4,6 @@ import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 import magic.model.action.MagicCardOnStackAction;
 import magic.model.action.MagicCounterItemOnStackAction;
 import magic.model.choice.MagicTargetChoice;
@@ -44,7 +43,7 @@ public class Ertai__Wizard_Adept {
         }
 
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game,new MagicCardOnStackAction() {
                 public void doAction(final MagicCardOnStack targetSpell) {
                     game.doAction(new MagicCounterItemOnStackAction(targetSpell));

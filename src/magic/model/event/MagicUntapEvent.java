@@ -15,7 +15,7 @@ public class MagicUntapEvent extends MagicEvent {
 
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choices) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicUntapAction(event.getPermanent()));
         }        
     };

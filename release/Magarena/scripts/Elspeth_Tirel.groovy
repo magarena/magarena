@@ -11,8 +11,7 @@
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer P = event.getPlayer();
             game.doAction(new MagicChangeLifeAction(
                 P, 
@@ -32,8 +31,7 @@
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicPlayTokensAction(event.getPlayer(), TokenCardDefinitions.get("Soldier"), 3)); 
         }
     },
@@ -49,8 +47,7 @@
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicTargetFilter<MagicPermanent> AllOtherPermanent = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
                 MagicTargetFilter.TARGET_NONLAND_NONTOKEN_PERMANENT, 
                 event.getPermanent()

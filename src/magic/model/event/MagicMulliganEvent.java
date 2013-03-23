@@ -8,7 +8,6 @@ import magic.model.MagicPlayer;
 import magic.model.action.MagicDrawAction;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicRemoveCardAction;
-import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicMulliganChoice;
 
 public class MagicMulliganEvent extends MagicEvent {
@@ -26,8 +25,7 @@ public class MagicMulliganEvent extends MagicEvent {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             if (event.isYes()) {
                 final MagicCardList hand = new MagicCardList(player.getHand());

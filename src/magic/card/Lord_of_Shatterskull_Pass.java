@@ -11,7 +11,6 @@ import magic.model.action.MagicDealDamageAction;
 import magic.model.event.MagicEvent;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenAttacksTrigger;
 
@@ -40,8 +39,7 @@ public class Lord_of_Shatterskull_Pass {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicSource source=event.getPermanent();
             final MagicPlayer defendingPlayer=event.getPlayer().getOpponent();
             final Collection<MagicPermanent> creatures=

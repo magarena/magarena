@@ -25,8 +25,7 @@ public class Blade_of_the_Bloodchief {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanent equippedCreature = event.getPermanent().getEquippedCreature();
             final int amount = equippedCreature.hasSubType(MagicSubType.Vampire) ? 2 : 1;
             game.doAction(new MagicChangeCountersAction(

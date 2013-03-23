@@ -13,8 +13,7 @@
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicTapAction(creature,true));
@@ -40,8 +39,7 @@
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPlayer(game,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     final int amt = game.filterPermanents(player, MagicTargetFilter.TARGET_TAPPED_CREATURE_YOU_CONTROL).size();
@@ -98,8 +96,7 @@
                     @Override
                     public void executeEvent(
                             final MagicGame game,
-                            final MagicEvent event,
-                            final Object[] choiceResults) {
+                            final MagicEvent event) {
                         if (event.isYes() && event.getPlayer().getGraveyard().contains(event.getCard())) {
                             game.doAction(new MagicRemoveCardAction(event.getCard(),MagicLocationType.Graveyard));
                             game.doAction(new MagicMoveCardAction(event.getCard(),MagicLocationType.Graveyard,MagicLocationType.OwnersHand));

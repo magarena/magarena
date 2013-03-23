@@ -27,8 +27,7 @@ public class Dissipation_Field {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicRemoveFromPlayAction(
                 event.getRefPermanent(),
                 MagicLocationType.OwnersHand

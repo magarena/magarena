@@ -25,8 +25,7 @@ public class Geth_s_Verdict {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetPlayer(game,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     game.addEvent(new MagicSacrificePermanentEvent(

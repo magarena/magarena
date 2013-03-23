@@ -5,7 +5,6 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 import magic.model.action.MagicCardAction;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicRemoveCardAction;
@@ -46,8 +45,7 @@ public class Crypt_Creeper {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             event.processTargetCard(game,new MagicCardAction() {
                 public void doAction(final MagicCard card) {
                     game.doAction(new MagicRemoveCardAction(

@@ -6,7 +6,6 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicSource;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicPlayerAction;
 import magic.model.choice.MagicTargetChoice;
@@ -48,7 +47,7 @@ public class Stensia_Bloodhall {
         }
 
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     final MagicDamage damage = new MagicDamage(event.getPermanent(),player,2);

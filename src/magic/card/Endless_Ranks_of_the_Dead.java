@@ -6,7 +6,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.event.MagicEvent;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 
@@ -28,8 +27,7 @@ public class Endless_Ranks_of_the_Dead {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final Collection<MagicPermanent> targets =
                     game.filterPermanents(player,MagicTargetFilter.TARGET_ZOMBIE_YOU_CONTROL);

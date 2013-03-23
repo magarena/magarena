@@ -42,7 +42,7 @@ public class Marrow_Chomper {
         }
 
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 final MagicPermanent permanent=event.getPermanent();
                 event.processTargetPermanent(game,new MagicPermanentAction() {

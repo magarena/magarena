@@ -7,8 +7,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentList;
-import magic.model.MagicPlayer;
-import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicPlayTokensAction;
@@ -41,9 +39,8 @@ public class Ib_Halfheart__Goblin_Tactician {
         
         @Override
         public void executeEvent(
-            final MagicGame game,
-            final MagicEvent event,
-            final Object[] choiceResults) {
+                final MagicGame game,
+                final MagicEvent event) {
             final MagicPermanent goblin = event.getRefPermanent();
             final MagicSacrificeAction sac = new MagicSacrificeAction(goblin);
             final MagicPermanentList blockingCreatures = goblin.getBlockingCreatures();
@@ -80,9 +77,8 @@ public class Ib_Halfheart__Goblin_Tactician {
     
         @Override
         public void executeEvent(
-            final MagicGame game,
-            final MagicEvent event,
-            final Object[] choiceResults) {
+                final MagicGame game,
+                final MagicEvent event) {
             game.doAction(new MagicPlayTokensAction(
                 event.getPlayer(), 
                 TokenCardDefinitions.get("Goblin1"),

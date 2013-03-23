@@ -14,8 +14,7 @@ public class MagicPriorityEvent extends MagicEvent {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             
             final MagicPlayChoiceResult playChoiceResult = event.getPlayChoice();
             if (playChoiceResult==MagicPlayChoiceResult.PASS ||

@@ -23,8 +23,7 @@ public class Narcolepsy {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPermanent permanent=event.getPermanent();
             final MagicPermanent enchantedCreature=permanent.getEnchantedCreature();
             if (enchantedCreature.isValid()) {

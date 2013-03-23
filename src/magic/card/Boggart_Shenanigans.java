@@ -3,7 +3,6 @@ package magic.card;
 import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.MagicSubType;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicTargetAction;
@@ -34,7 +33,7 @@ public class Boggart_Shenanigans {
     }
 
     @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event, final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTarget(game, new MagicTargetAction() {
                     public void doAction(final MagicTarget target) {

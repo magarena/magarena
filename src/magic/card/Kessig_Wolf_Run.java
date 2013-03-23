@@ -5,7 +5,6 @@ import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicSetAbilityAction;
@@ -14,7 +13,6 @@ import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicPayManaCostTapEvent;
 import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicTapEvent;
 import magic.model.event.MagicPermanentActivation;
@@ -53,7 +51,7 @@ public class Kessig_Wolf_Run {
         }
 
         @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getRefInt();
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {

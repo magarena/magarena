@@ -3,7 +3,6 @@ package magic.card;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
@@ -37,8 +36,7 @@ public class Fallen_Angel {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),2,1));
         }
     };

@@ -24,8 +24,7 @@ public class Entreat_the_Angels {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             int x = event.getCardOnStack().getX();
             for (;x>0;x--) {
                 game.doAction(new MagicPlayTokenAction(

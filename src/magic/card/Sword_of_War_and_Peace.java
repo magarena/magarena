@@ -28,8 +28,7 @@ public class Sword_of_War_and_Peace {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             final MagicPlayer targetPlayer=event.getRefPlayer();
             final int amount1=targetPlayer.getHand().size();
             if (amount1>0) {

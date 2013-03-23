@@ -29,8 +29,7 @@ public class Deadly_Grub {
         @Override
         public void executeEvent(
                 final MagicGame game,
-                final MagicEvent event,
-                final Object[] choiceResults) {
+                final MagicEvent event) {
             game.doAction(new MagicPlayTokenAction(
                     event.getPlayer(),
                     TokenCardDefinitions.get("Insect2")));
