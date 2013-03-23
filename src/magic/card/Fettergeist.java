@@ -21,7 +21,7 @@ public class Fettergeist {
             final MagicGame game,
             final MagicEvent event,
             final Object[] choiceResults) {
-            if (MagicMayChoice.isNoChoice(choiceResults[0])) {
+            if (event.isNo()) {
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));
             }
         }

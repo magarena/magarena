@@ -396,6 +396,10 @@ public class MagicEvent implements MagicCopyable {
         return MagicChoice.isYesChoice(chosen[0]);
     }
     
+    public boolean isNo() {
+        return MagicChoice.isNoChoice(chosen[0]);
+    }
+    
     public boolean isBuyback() {
         return MagicChoice.isYesChoice(chosen[1]);
     }
