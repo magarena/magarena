@@ -3,13 +3,16 @@ package magic.ai;
 public class ArtificialScore {
 
     static final ArtificialScore INVALID_SCORE=new ArtificialScore(0,0);
+    static final int MAX = 99900000;
+    static final int MIN = -MAX;
     
     private final int score;
     private final int depth;
     
-    ArtificialScore(final int score,final int depth) {
-        this.score=score;
-        this.depth=depth;
+    ArtificialScore(final int aScore,final int aDepth) {
+        int boundedScore = Math.min(MAX,aScore);
+        score = Math.max(MIN,boundedScore);
+        depth = aDepth;
     }
 
     ArtificialScore getScore(final int depthIncr) {
@@ -29,7 +32,12 @@ public class ArtificialScore {
         } else if (this==INVALID_SCORE) {
             return true;
         } else if (score==other.score) {
-            return other.depth < depth;
+            //in my favor, prefer lower depth
+            if ((max && score > 0) || (!max && score < 0)) {
+                return other.depth < depth;
+            } else {
+                return other.depth > depth;
+            }
         } else if (max) {
             return other.score > score;
         } else {
