@@ -87,9 +87,9 @@ public class MagicCombatCreature {
             this.attacker=attacker;
         }
         
-         @Override
+        @Override
         public int compare(final MagicCombatCreature blocker1,final MagicCombatCreature blocker2) {
-             int ldif=blocker1.lethalDamage-blocker2.lethalDamage;    
+            int ldif=blocker1.lethalDamage-blocker2.lethalDamage;    
             if (attacker.normalDamage) {
                 final boolean front=blocker1.lethalDamage>attacker.power;
                 if (front!=blocker2.lethalDamage>attacker.power) {
