@@ -88,8 +88,8 @@ public class MMAB implements MagicAI {
         }
         executor.shutdown();
         try {
-            // wait for artificialLevel * 2 seconds for jobs to finish
-            executor.awaitTermination(artificialLevel * 2, TimeUnit.SECONDS);
+            // wait for artificialLevel + 1 seconds for jobs to finish
+            executor.awaitTermination(artificialLevel + 1, TimeUnit.SECONDS);
         } catch (final InterruptedException ex) {
             throw new RuntimeException(ex);
         } finally {
