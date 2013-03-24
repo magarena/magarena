@@ -16,11 +16,11 @@ public class MagicEventQueue extends LinkedList<MagicEvent> {
         }
     }    
 
-    public long getEventsId() {
+    public long getStateId() {
         int idx = 0;
         final long[] input = new long[size() + 1];
         for (final MagicEvent event : this) {
-            input[idx] = event.getEventId();
+            input[idx] = event.getStateId();
             idx++;
         }
         return magic.MurmurHash3.hash(input);

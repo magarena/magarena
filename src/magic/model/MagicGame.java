@@ -241,7 +241,7 @@ public class MagicGame {
     }
 
     //follow factors in MagicMarkerAction
-    public long getGameId() {
+    public long getStateId() {
         keys = new long[] { 
             turn,
             phase.hashCode(),
@@ -253,10 +253,12 @@ public class MagicGame {
             (priorityPassed ? 1L : -1L),
             (stateCheckRequired ? 1L : -1L),
             getPayedCost().getX(),
-            stack.getItemsId(),
-            events.getEventsId(),
-            players[0].getPlayerId(),
-            players[1].getPlayerId(),
+            stack.getStateId(),
+            events.getStateId(),
+            players[0].getStateId(),
+            players[1].getStateId(),
+            triggers.getStateId(),
+            statics.getStateId()
         };
         return magic.MurmurHash3.hash(keys);
     }

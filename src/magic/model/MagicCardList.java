@@ -20,7 +20,7 @@ public class MagicCardList extends ArrayList<MagicCard> {
         }
     }
     
-    public long getCardsId() {
+    public long getStateId() {
         int idx = 0;
         final long[] keys = new long[size() + 1];
         for (final MagicCard card : this) {
@@ -30,7 +30,7 @@ public class MagicCardList extends ArrayList<MagicCard> {
         return magic.MurmurHash3.hash(keys);
     }
     
-    long getSortedCardsId() {
+    long getSetStateId() {
         int idx = 0;
         final long[] keys = new long[size() + 1];
         for (final MagicCard card : this) {
@@ -127,7 +127,7 @@ public class MagicCardList extends ArrayList<MagicCard> {
     }
 
     public void shuffle() {
-        shuffle(getCardsId());
+        shuffle(getStateId());
     }
     
     private void shuffle(final long seed) {

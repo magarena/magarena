@@ -23,6 +23,7 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 import magic.model.target.MagicTarget;
+import magic.model.target.MagicTargetNone;
 import magic.model.target.MagicTargetFilter;
 
 import javax.swing.ImageIcon;
@@ -48,7 +49,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     private final MagicPermanentList blockingCreatures;    
     private MagicPermanent pairedCreature = MagicPermanent.NONE;
     private final MagicCardList exiledCards;
-    private MagicTarget chosenTarget;
+    private MagicTarget chosenTarget = MagicTargetNone.getInstance();
     private int[] counters=new int[MagicCounterType.NR_COUNTERS];
     private int stateFlags = 
             MagicPermanentState.Summoned.getMask() |
@@ -141,7 +142,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return !isValid();
     }
     
-    long getPermanentId() {
+    long getStateId() {
         final long[] input = {
             cardDefinition.getIndex(),
             stateFlags,
@@ -151,11 +152,16 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             equippedCreature.getId(),
             enchantedCreature.getId(),
             blockedCreature.getId(),
+            pairedCreature.getId(),
+            exiledCards.getSetStateId(),
+            chosenTarget.getId(),
             counters[0],
             counters[1],
             counters[2],
             counters[3],
+            counters[4],
             abilityPlayedThisTurn,
+            firstController.getId(),
             cachedController.getId(),
             cachedTypeFlags,
             cachedSubTypeFlags.hashCode(),

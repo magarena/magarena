@@ -78,4 +78,20 @@ public class MagicPermanentTriggerMap {
     public void remove(final MagicPermanentTrigger mptrigger) {
         effects.get(mptrigger.getTrigger().getType()).remove(mptrigger);
     }
+    
+    public long getStateId() {
+        int size = 0;
+        for (final MagicTriggerType type : MagicTriggerType.values()) {
+            size += effects.get(type).size();
+        }
+        final long[] keys = new long[2 * size];
+        int idx = 0;
+        for (final Map.Entry<MagicTriggerType, SortedSet<MagicPermanentTrigger>> type : effects.entrySet()) {
+            for (final MagicPermanentTrigger mptrigger : type.getValue()) {
+                keys[idx] = mptrigger.getPermanent().getId(); idx++;
+                keys[idx] = mptrigger.getTrigger().hashCode(); idx++;
+            }
+        }
+        return magic.MurmurHash3.hash(keys);
+    }
 }

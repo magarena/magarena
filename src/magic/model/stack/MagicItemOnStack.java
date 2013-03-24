@@ -193,14 +193,14 @@ public abstract class MagicItemOnStack implements MagicTarget {
         return source.getGame().getStack().contains(this);
     }
 
-    long getItemId() {
+    long getStateId() {
         final Object[] CR = choiceResults;
         final long[] keys = {
             id,
             source != null ?  source.getId() : -1L,
             controller != null ? controller.getId() : -1L,
             activation != null ? activation.hashCode() : -1L,
-            event != null ? event.getEventId() : -1L,
+            event != null ? event.getStateId() : -1L,
             (CR.length > 0 && CR[0] != null) ?
                 ((CR[0] instanceof MagicMappable) ? ((MagicMappable)CR[0]).getId() : CR[0].hashCode()) :
                 -1L,

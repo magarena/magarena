@@ -130,7 +130,7 @@ public class MagicPlayer implements MagicTarget {
         return currGame;
     }
     
-    long getPlayerId() {
+    long getStateId() {
         keys = new long[] {
             life,
             poison,
@@ -139,14 +139,15 @@ public class MagicPlayer implements MagicTarget {
             extraTurns,
             drawnCards,
             maxHandSize,
-            hand.getSortedCardsId(),
-            library.getCardsId(),
-            graveyard.getCardsId(),
-            exile.getCardsId(),
-            permanents.getPermanentsId(),
+            hand.getSetStateId(),
+            library.getStateId(),
+            graveyard.getStateId(),
+            exile.getSetStateId(),
+            permanents.getStateId(),
             builderCost.getMinimumAmount(),
             activationPriority.getPriority(),
             activationPriority.getActivationId(),
+            cachedAbilityFlags.hashCode()
         };
         return magic.MurmurHash3.hash(keys);
     }
@@ -167,9 +168,9 @@ public class MagicPlayer implements MagicTarget {
         playerId=playerId*ID_FACTOR+life;
         playerId=playerId*ID_FACTOR+poison;
         playerId=playerId*ID_FACTOR+builderCost.getMinimumAmount();
-        playerId=playerId*ID_FACTOR+permanents.getPermanentsId();
-        playerId=playerId*ID_FACTOR+hand.getCardsId();
-        playerId=playerId*ID_FACTOR+graveyard.getCardsId();
+        playerId=playerId*ID_FACTOR+permanents.getStateId();
+        playerId=playerId*ID_FACTOR+hand.getStateId();
+        playerId=playerId*ID_FACTOR+graveyard.getStateId();
         return playerId;
     }
     

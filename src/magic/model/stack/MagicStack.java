@@ -108,11 +108,11 @@ public class MagicStack extends LinkedList<MagicItemOnStack> {
         return spells[1-player.getIndex()]>0;
     }
 
-    public long getItemsId() {
+    public long getStateId() {
         int idx = 0;
         final long[] input = new long[size() + 1];
         for (final MagicItemOnStack item : this) {
-            input[idx] = item.getItemId();
+            input[idx] = item.getStateId();
             idx++;
         }
         return magic.MurmurHash3.hash(input);

@@ -570,7 +570,7 @@ public class MagicEvent implements MagicCopyable {
         return "EVENT: " + player.getIndex() + " " + description + " " + (hasChoice() ? choice.getDescription() : "");
     }
 
-    public long getEventId() {
+    public long getStateId() {
         return magic.MurmurHash3.hash(new long[] {
             source.getId(),
             player.getIndex(),

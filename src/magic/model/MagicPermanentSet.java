@@ -23,11 +23,11 @@ public class MagicPermanentSet extends TreeSet<MagicPermanent> {
         return MagicPermanent.NONE;
     }    
     
-    long getPermanentsId() {
+    long getStateId() {
         int idx = 0;
         final long[] input = new long[size() + 1];
         for (final MagicPermanent permanent : this) {
-            input[idx] = permanent.getPermanentId();
+            input[idx] = permanent.getStateId();
             idx++;
         }
         return magic.MurmurHash3.hash(input);

@@ -101,4 +101,20 @@ public class MagicPermanentStaticMap {
         }
         return removedStatics;
     }
+    
+    public long getStateId() {
+        int size = 0;
+        for (final MagicLayer layer : MagicLayer.values()) {
+            size += effects.get(layer).size();
+        }
+        final long[] keys = new long[2 * size];
+        int idx = 0;
+        for (final Map.Entry<MagicLayer, SortedSet<MagicPermanentStatic>> layer : effects.entrySet()) {
+            for (final MagicPermanentStatic mpstatic : layer.getValue()) {
+                keys[idx] = mpstatic.getPermanent().getId(); idx++;
+                keys[idx] = mpstatic.getStatic().hashCode(); idx++;
+            }
+        }
+        return magic.MurmurHash3.hash(keys);
+    }
 }
