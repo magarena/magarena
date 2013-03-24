@@ -180,12 +180,13 @@ games ?= 10000
 str1 ?= 1
 str2 ?= 1
 life ?= 10
+ai2 ?= MMAB2
 %.t: $(MAG)
 	echo `hg id -n` > $*.log
 	$(JAVA) -Dmagarena.dir=`pwd`/release magic.DeckStrCal \
 	--seed $* \
 	--ai1 MMABC --str1 ${str1} \
-	--ai2 MMAB2 --str2 ${str2} \
+	--ai2 ${ai2} --str2 ${str2} \
 	--life ${life} \
 	--games 1 \
 	--repeat ${games} >> $*.log 2>&1
