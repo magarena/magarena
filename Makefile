@@ -184,8 +184,8 @@ life ?= 10
 	echo `hg id -n` > $*.log
 	$(JAVA) -Dmagarena.dir=`pwd`/release magic.DeckStrCal \
 	--seed $* \
-	--ai1 MMAB --str1 ${str1} \
-	--ai2 MMABC --str2 ${str2} \
+	--ai1 MMABC --str1 ${str1} \
+	--ai2 MMAB2 --str2 ${str2} \
 	--life ${life} \
 	--games 1 \
 	--repeat ${games} >> $*.log 2>&1

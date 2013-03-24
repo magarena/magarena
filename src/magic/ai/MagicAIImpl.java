@@ -3,6 +3,7 @@ package magic.ai;
 public enum MagicAIImpl {
     MMAB("minimax", new MMAB()), 
     MMABC("minimax (cheat)", new MMAB(false, true)), 
+    MMAB2("minimax2 (cheat)", new MMAB2(false, true)), 
     MCTS("monte carlo (cheat)", new MCTSAI()),
     MCTSNC("monte carlo", new MCTSAI(false, false)),
     VEGAS("vegas", new VegasAI()),

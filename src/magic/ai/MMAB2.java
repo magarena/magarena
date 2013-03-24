@@ -13,7 +13,7 @@ import magic.model.MagicPlayer;
 import magic.model.event.MagicEvent;
 import magic.model.phase.MagicPhase;
 
-public class MMAB implements MagicAI {
+public class MMAB2 implements MagicAI {
     
     private static final long      SEC_TO_NANO=1000000000L;
     private static final int THREADS = Runtime.getRuntime().availableProcessors();
@@ -22,12 +22,12 @@ public class MMAB implements MagicAI {
     private final boolean CHEAT;
     private ArtificialPruneScore pruneScore = new ArtificialMultiPruneScore();
 
-    MMAB() {
+    MMAB2() {
         //default: no logging, no cheats
         this(false, false);
     }
     
-    MMAB(final boolean log, final boolean cheat) {
+    MMAB2(final boolean log, final boolean cheat) {
         LOGGING = log || (System.getProperty("debug") != null);
         CHEAT = cheat;
     }
@@ -50,7 +50,7 @@ public class MMAB implements MagicAI {
         final int size = choices.size();
         choiceGame = null;
         
-        assert size != 0 : "ERROR: no choices available for MMAB";
+        assert size != 0 : "ERROR: no choices available for MMAB2";
         
         // single choice result.
         if (size == 1) {
@@ -109,7 +109,7 @@ public class MMAB implements MagicAI {
 
         // Logging.
         final long timeTaken = System.currentTimeMillis() - startTime;
-        log("MMAB" +
+        log("MMAB2" +
             " cheat=" + CHEAT +
             " index=" + scorePlayer.getIndex() +
             " life=" + scorePlayer.getLife() +
