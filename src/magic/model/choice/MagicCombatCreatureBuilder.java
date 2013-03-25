@@ -13,7 +13,7 @@ import java.util.TreeSet;
 public class MagicCombatCreatureBuilder {
     
     private static final Comparator<MagicCombatCreature> ATTACKER_COMPARATOR=new Comparator<MagicCombatCreature>() {
-         @Override
+        @Override
         public int compare(final MagicCombatCreature attacker1,final MagicCombatCreature attacker2) {
             final int adif=attacker1.attackerScore-attacker2.attackerScore;
             if (adif!=0) {
