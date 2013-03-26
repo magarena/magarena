@@ -58,7 +58,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     private int damage;
     private int preventDamage;
     private int kicker;
-    private final int fixedScore;
+    private int fixedScore;
     private int score;
 
     // Allows cached retrieval of controller, type, subtype, color, abilites, and p/t
@@ -83,7 +83,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         auraPermanents=new MagicPermanentSet();
         blockingCreatures=new MagicPermanentList();
         exiledCards = new MagicCardList();
-        fixedScore=ArtificialScoringSystem.getFixedPermanentScore(this);
     }
 
     private MagicPermanent(final MagicCopyMap copyMap, final MagicPermanent sourcePermanent) {
@@ -453,6 +452,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
         
     private void updateScore() {
+        fixedScore = ArtificialScoringSystem.getFixedPermanentScore(this);
         score = fixedScore + ArtificialScoringSystem.getVariablePermanentScore(this);
     }
     
