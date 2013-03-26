@@ -27,10 +27,11 @@ public class Burning_Inquiry {
             for (final MagicPlayer player : game.getPlayers()) {
                 game.doAction(new MagicDrawAction(player, 3));
                 game.addEvent(new MagicDiscardEvent(
-                            event.getSource(),
-                            player, 
-                            3, 
-                            true));
+                    event.getSource(),
+                    player, 
+                    3, 
+                    true
+                ));
             }
         }
     };
