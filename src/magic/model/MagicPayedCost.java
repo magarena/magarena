@@ -12,17 +12,13 @@ public class MagicPayedCost {
     private int x;
     
     public MagicPayedCost() {
-        clear();
+        target = MagicTargetNone.getInstance();
+        x = 0;
     }
     
     MagicPayedCost(final MagicCopyMap copyMap,final MagicPayedCost payedCost) {
         target = copyMap.copy(payedCost.target);
         x = payedCost.x;
-    }
-
-    private void clear() {
-        target = MagicTargetNone.getInstance();
-        x = 0;
     }
     
     public void setTarget(final MagicTarget target) {
