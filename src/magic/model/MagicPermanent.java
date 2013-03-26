@@ -160,6 +160,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             counters[2],
             counters[3],
             counters[4],
+            counters[5],
             abilityPlayedThisTurn,
             firstController.getId(),
             cachedController.getId(),
