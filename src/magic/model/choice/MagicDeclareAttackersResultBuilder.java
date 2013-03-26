@@ -47,17 +47,16 @@ public class MagicDeclareAttackersResultBuilder {
 
         // Single result with the required attackers only.
         if (maxAttackers==0||size==0) {
-            return Collections.<Object>singletonList(new MagicDeclareAttackersResult(current,count,0,0));
+            return Collections.<Object>singletonList(new MagicDeclareAttackersResult(current,count));
         }
 
         // Build results.
         final Collection<Object> results=new ArrayList<Object>();
-        int position=0;
         
         // Get the best remaining optional attackers.
         while (size>maxAttackers) {
             // Add option to attack with all creatures for an alpha strike.
-            final MagicDeclareAttackersResult result=new MagicDeclareAttackersResult(current,count,position++,0);
+            final MagicDeclareAttackersResult result=new MagicDeclareAttackersResult(current,count);
             result.addCreatures(attackersSet);
             results.add(result);
             // Remove worst attacker.
@@ -73,7 +72,7 @@ public class MagicDeclareAttackersResultBuilder {
         int index=0;
         while (index>=0) {
             if (index==size) {
-                results.add(new MagicDeclareAttackersResult(current,count,position++,0));
+                results.add(new MagicDeclareAttackersResult(current,count));
                 index--;
                 continue;
             }

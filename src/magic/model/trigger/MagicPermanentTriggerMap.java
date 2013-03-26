@@ -82,9 +82,9 @@ public class MagicPermanentTriggerMap {
     public long getStateId() {
         int size = 0;
         for (final MagicTriggerType type : MagicTriggerType.values()) {
-            size += effects.get(type).size();
+            size += 2 * effects.get(type).size();
         }
-        final long[] keys = new long[2 * size];
+        final long[] keys = new long[size];
         int idx = 0;
         for (final Map.Entry<MagicTriggerType, SortedSet<MagicPermanentTrigger>> type : effects.entrySet()) {
             for (final MagicPermanentTrigger mptrigger : type.getValue()) {

@@ -14,7 +14,7 @@ public class MagicDeclareAttackersResult extends ArrayList<MagicPermanent> imple
     
     MagicDeclareAttackersResult() {}
 
-    MagicDeclareAttackersResult(final MagicPermanent[] attackers,final int length,final int position,final int score) {
+    MagicDeclareAttackersResult(final MagicPermanent[] attackers,final int length) {
         for (int index=0;index<length;index++) {
             add(attackers[index]);
         }
@@ -42,12 +42,12 @@ public class MagicDeclareAttackersResult extends ArrayList<MagicPermanent> imple
 
     @Override
     public long getId() {
+        final long[] keys = new long[size()];
         int idx = 0;
-        final long[] input = new long[size() + 1];
         for (final MagicPermanent permanent : this) {
-            input[idx] = permanent.getId();
+            keys[idx] = permanent.getId();
             idx++;
         }
-        return magic.MurmurHash3.hash(input);
+        return magic.MurmurHash3.hash(keys);
     }
 }

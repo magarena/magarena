@@ -17,12 +17,12 @@ public class MagicEventQueue extends LinkedList<MagicEvent> {
     }    
 
     public long getStateId() {
+        final long[] keys = new long[size()];
         int idx = 0;
-        final long[] input = new long[size() + 1];
         for (final MagicEvent event : this) {
-            input[idx] = event.getStateId();
+            keys[idx] = event.getStateId();
             idx++;
         }
-        return magic.MurmurHash3.hash(input);
+        return magic.MurmurHash3.hash(keys);
     }
 }

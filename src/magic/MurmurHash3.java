@@ -202,7 +202,7 @@ public class MurmurHash3 {
          bmix(state);
       }
 
-      final long tail = key[key.length - 1];
+      final long tail = key.length > 0 ? key[key.length - 1] : 0;
 
       if (key.length % 2 != 0) {
          state.k1 ^= tail;

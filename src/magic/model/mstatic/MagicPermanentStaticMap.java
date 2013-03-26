@@ -105,9 +105,9 @@ public class MagicPermanentStaticMap {
     public long getStateId() {
         int size = 0;
         for (final MagicLayer layer : MagicLayer.values()) {
-            size += effects.get(layer).size();
+            size += 2 * effects.get(layer).size();
         }
-        final long[] keys = new long[2 * size];
+        final long[] keys = new long[size];
         int idx = 0;
         for (final Map.Entry<MagicLayer, SortedSet<MagicPermanentStatic>> layer : effects.entrySet()) {
             for (final MagicPermanentStatic mpstatic : layer.getValue()) {

@@ -109,12 +109,12 @@ public class MagicStack extends LinkedList<MagicItemOnStack> {
     }
 
     public long getStateId() {
+        final long[] keys = new long[size()];
         int idx = 0;
-        final long[] input = new long[size() + 1];
         for (final MagicItemOnStack item : this) {
-            input[idx] = item.getStateId();
+            keys[idx] = item.getStateId();
             idx++;
         }
-        return magic.MurmurHash3.hash(input);
+        return magic.MurmurHash3.hash(keys);
     }
 }

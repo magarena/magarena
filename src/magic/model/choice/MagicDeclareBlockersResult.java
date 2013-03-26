@@ -69,18 +69,18 @@ public class MagicDeclareBlockersResult extends LinkedList<MagicCombatCreature[]
 
     @Override
     public long getId() {
-        int size = 1;
+        int size = 0;
         for (final MagicCombatCreature[] creatures : this) {
             size += creatures.length;
         }
+        final long[] keys = new long[size];
         int idx = 0;
-        final long[] input = new long[size + 1];
         for (final MagicCombatCreature[] creatures : this) {
             for (final MagicCombatCreature creature : creatures) {
-                input[idx] = creature.permanent.getId();
+                keys[idx] = creature.permanent.getId();
                 idx++;
             }
         }
-        return magic.MurmurHash3.hash(input);
+        return magic.MurmurHash3.hash(keys);
     }
 }

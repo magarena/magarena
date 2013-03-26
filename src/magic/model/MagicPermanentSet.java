@@ -24,12 +24,12 @@ public class MagicPermanentSet extends TreeSet<MagicPermanent> {
     }    
     
     long getStateId() {
+        final long[] keys = new long[size()];
         int idx = 0;
-        final long[] input = new long[size() + 1];
         for (final MagicPermanent permanent : this) {
-            input[idx] = permanent.getStateId();
+            keys[idx] = permanent.getStateId();
             idx++;
         }
-        return magic.MurmurHash3.hash(input);
+        return magic.MurmurHash3.hash(keys);
     }
 }

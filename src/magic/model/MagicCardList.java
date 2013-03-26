@@ -21,8 +21,8 @@ public class MagicCardList extends ArrayList<MagicCard> {
     }
     
     public long getStateId() {
+        final long[] keys = new long[size()];
         int idx = 0;
-        final long[] keys = new long[size() + 1];
         for (final MagicCard card : this) {
             keys[idx] = card.getCardDefinition().getIndex();
             idx++;
@@ -31,8 +31,8 @@ public class MagicCardList extends ArrayList<MagicCard> {
     }
     
     long getSetStateId() {
+        final long[] keys = new long[size()];
         int idx = 0;
-        final long[] keys = new long[size() + 1];
         for (final MagicCard card : this) {
             keys[idx] = card.getCardDefinition().getIndex();
             idx++;
