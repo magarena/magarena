@@ -36,10 +36,8 @@ public class Moldgraf_Monstrosity {
             game.doAction(new MagicRemoveCardAction(permanent.getCard(),MagicLocationType.Graveyard));
             game.doAction(new MagicMoveCardAction(permanent.getCard(),MagicLocationType.Graveyard,MagicLocationType.Exile));
             final MagicPlayer player = event.getPlayer();
-            final List<MagicCard> targets =
-                    game.filterCards(player,MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD);
-            final magic.MersenneTwisterFast rng = 
-                    new magic.MersenneTwisterFast(permanent.getId() + player.getId());
+            final List<MagicCard> targets = game.filterCards(player,MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD);
+            final magic.MersenneTwisterFast rng = new magic.MersenneTwisterFast(player.getGraveyard().getStateId());
             int actualAmount = Math.min(targets.size(),2);
             for (;actualAmount>0;actualAmount--) {        
                 final int index = rng.nextInt(targets.size());

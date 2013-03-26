@@ -28,12 +28,10 @@ public class Ghoulraiser {
                 final MagicGame game,
                 final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final List<MagicCard> targets =
-                    game.filterCards(player,MagicTargetFilter.TARGET_ZOMBIE_CARD_FROM_GRAVEYARD);
+            final List<MagicCard> targets = game.filterCards(player,MagicTargetFilter.TARGET_ZOMBIE_CARD_FROM_GRAVEYARD);
             if (targets.size() > 0) {
                 final MagicPermanent permanent = event.getPermanent();
-                final magic.MersenneTwisterFast rng = 
-                        new magic.MersenneTwisterFast(permanent.getId() + player.getId());
+                final magic.MersenneTwisterFast rng = new magic.MersenneTwisterFast(player.getGraveyard().getStateId());
                 final int index = rng.nextInt(targets.size());
                 final MagicCard card = targets.get(index);
                 game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
