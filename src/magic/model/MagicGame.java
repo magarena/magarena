@@ -249,16 +249,20 @@ public class MagicGame {
             turnPlayer.getIndex(),
             landPlayed,
             maxLand,
+            spellsPlayed,
             priorityPassedCount,
+            (creatureDiedThisTurn ? 1L : -1L),
             (priorityPassed ? 1L : -1L),
             (stateCheckRequired ? 1L : -1L),
-            getPayedCost().getX(),
+            payedCost.getX(),
+            payedCost.getTarget().getId(),
             stack.getStateId(),
             events.getStateId(),
             players[0].getStateId(),
             players[1].getStateId(),
             triggers.getStateId(),
-            statics.getStateId()
+            statics.getStateId(),
+            exiledUntilEndOfTurn.getSetStateId(),
         };
         return magic.MurmurHash3.hash(keys);
     }
