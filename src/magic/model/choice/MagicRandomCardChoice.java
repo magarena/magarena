@@ -19,15 +19,13 @@ public class MagicRandomCardChoice extends MagicChoice {
         this.amount=amount;
     }
 
-    /** Seed the rng with source id + player id */
     private MagicCardChoiceResult discard(final MagicPlayer player, final MagicSource source) {
         final MagicCardChoiceResult result=new MagicCardChoiceResult();
         final MagicCardList hand=new MagicCardList(player.getHand());
-        final magic.MersenneTwisterFast rng = new magic.MersenneTwisterFast(source.getId() + player.getId());
-        int actualAmount=Math.min(hand.size(),amount);
-        for (;actualAmount>0;actualAmount--) {
-            final int index = rng.nextInt(hand.size());
-            result.add(hand.remove(index));
+        hand.shuffle();
+        final int actualAmount=Math.min(hand.size(),amount);
+        for (int i = 0; i < actualAmount; i++) {
+            result.add(hand.get(i));
         }
         return result;
     }
