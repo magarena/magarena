@@ -77,7 +77,7 @@ public class MagicDeclareBlockersResult extends LinkedList<MagicCombatCreature[]
         int idx = 0;
         for (final MagicCombatCreature[] creatures : this) {
             for (final MagicCombatCreature creature : creatures) {
-                keys[idx] = creature.permanent.getId();
+                keys[idx] = creature.permanent.getStateId();
                 idx++;
             }
         }

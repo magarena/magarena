@@ -63,7 +63,7 @@ public class MagicExcludeResult implements MagicMappable {
         final long[] keys = new long[excludePermanents.size() + 1];
         int idx = 0;
         for (final MagicPermanent permanent : excludePermanents) {
-            keys[idx] = permanent.getId();
+            keys[idx] = permanent.getStateId();
             idx++;
         }
         keys[idx] = excludeFlags;

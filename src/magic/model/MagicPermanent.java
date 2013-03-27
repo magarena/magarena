@@ -72,6 +72,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 
     // remember order among blockers (blockedName + id + block order)
     private String blockedName;
+    private long stateId;
 
     public MagicPermanent(final long aId,final MagicCard aCard,final MagicPlayer aController) {
         id = aId;
@@ -141,17 +142,17 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return !isValid();
     }
     
-    long getStateId() {
-        final long[] input = {
+    public long getStateId() {
+        stateId = stateId != 0 ? stateId : magic.MurmurHash3.hash(new long[] {
             cardDefinition.getIndex(),
             stateFlags,
             damage,
             preventDamage,
             kicker,
-            equippedCreature.getId(),
-            enchantedCreature.getId(),
-            blockedCreature.getId(),
-            pairedCreature.getId(),
+            equippedCreature.getStateId(),
+            enchantedCreature.getStateId(),
+            blockedCreature.getStateId(),
+            //pairedCreature.getStateId(),
             exiledCards.getSetStateId(),
             chosenTarget.getId(),
             counters[0],
@@ -161,16 +162,14 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             counters[4],
             counters[5],
             abilityPlayedThisTurn,
-            firstController.getId(),
-            cachedController.getId(),
             cachedTypeFlags,
             cachedSubTypeFlags.hashCode(),
             cachedColorFlags,
             cachedAbilityFlags.hashCode(),
             cachedPowerToughness.power(),
             cachedPowerToughness.toughness(),
-        };
-        return magic.MurmurHash3.hash(input);
+        });
+        return stateId;
      }
     
     /** Determines uniqueness of a mana permanent, e.g. for producing mana, all Mountains are equal. */
@@ -452,6 +451,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
         
     private void updateScore() {
+        stateId = 0;
         fixedScore = ArtificialScoringSystem.getFixedPermanentScore(this);
         score = fixedScore + ArtificialScoringSystem.getVariablePermanentScore(this);
     }
@@ -1095,6 +1095,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         @Override
         public boolean hasAbility(final MagicAbility ability) {
             return false;
+        }
+        @Override
+        public long getStateId() {
+            return hashCode();
         }
     };
 }

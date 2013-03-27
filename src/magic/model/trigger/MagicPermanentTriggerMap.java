@@ -88,7 +88,7 @@ public class MagicPermanentTriggerMap {
         int idx = 0;
         for (final Map.Entry<MagicTriggerType, SortedSet<MagicPermanentTrigger>> type : effects.entrySet()) {
             for (final MagicPermanentTrigger mptrigger : type.getValue()) {
-                keys[idx] = mptrigger.getPermanent().getId(); idx++;
+                keys[idx] = mptrigger.getPermanent().getStateId(); idx++;
                 keys[idx] = mptrigger.getTrigger().hashCode(); idx++;
             }
         }

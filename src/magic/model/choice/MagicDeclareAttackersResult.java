@@ -45,7 +45,7 @@ public class MagicDeclareAttackersResult extends ArrayList<MagicPermanent> imple
         final long[] keys = new long[size()];
         int idx = 0;
         for (final MagicPermanent permanent : this) {
-            keys[idx] = permanent.getId();
+            keys[idx] = permanent.getStateId();
             idx++;
         }
         return magic.MurmurHash3.hash(keys);

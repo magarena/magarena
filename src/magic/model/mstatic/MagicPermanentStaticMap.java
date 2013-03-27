@@ -111,7 +111,7 @@ public class MagicPermanentStaticMap {
         int idx = 0;
         for (final Map.Entry<MagicLayer, SortedSet<MagicPermanentStatic>> layer : effects.entrySet()) {
             for (final MagicPermanentStatic mpstatic : layer.getValue()) {
-                keys[idx] = mpstatic.getPermanent().getId(); idx++;
+                keys[idx] = mpstatic.getPermanent().getStateId(); idx++;
                 keys[idx] = mpstatic.getStatic().hashCode(); idx++;
             }
         }
