@@ -110,6 +110,8 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         preventDamage=sourcePermanent.preventDamage;
         kicker=sourcePermanent.kicker;
         fixedScore=sourcePermanent.fixedScore;
+        score=sourcePermanent.score;
+        stateId=sourcePermanent.stateId;
     
         cachedController     = copyMap.copy(sourcePermanent.cachedController);
         cachedTypeFlags      = sourcePermanent.cachedTypeFlags;
