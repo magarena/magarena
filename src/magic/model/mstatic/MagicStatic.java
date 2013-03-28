@@ -187,4 +187,14 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             return source.getCounters(MagicCounterType.PlusOne) > 0;
         }
     };
+    
+    public static MagicStatic SwitchPT = new MagicStatic(MagicLayer.SwitchPT, MagicStatic.UntilEOT) {
+        @Override
+        public void modPowerToughness(
+                final MagicPermanent source,
+                final MagicPermanent permanent,
+                final MagicPowerToughness pt) {
+            pt.set(pt.toughness(),pt.power());
+        }   
+    };
 }

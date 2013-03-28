@@ -232,17 +232,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
             public void executeEvent(
                     final MagicGame game,
                     final MagicEvent event) {
-                game.doAction(new MagicAddStaticAction(event.getPermanent(), new MagicStatic(
-                        MagicLayer.SwitchPT,
-                        MagicStatic.UntilEOT) {
-                    @Override
-                    public void modPowerToughness(
-                            final MagicPermanent source,
-                            final MagicPermanent permanent,
-                            final MagicPowerToughness pt) {
-                        pt.set(pt.toughness(),pt.power());
-                    }   
-                }));
+                game.doAction(new MagicAddStaticAction(event.getPermanent(), MagicStatic.SwitchPT));
             }
         };
     }
