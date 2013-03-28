@@ -72,7 +72,11 @@ public class MagicCombatCreature {
     public String toString() {    
         final StringBuilder builder=new StringBuilder();
         builder.append(permanent.getName());
-        builder.append('(').append(power).append(',').append(lethalDamage).append(',').append(attackerScore).append(')');
+        builder.append('(')
+               .append(power).append(',')
+               .append(lethalDamage).append(',')
+               .append(attackerScore).append(',')
+               .append(score).append(')');
         if (candidateBlockers.length > 0) {
             builder.append(" = ").append(Arrays.toString(candidateBlockers));
         }
