@@ -91,6 +91,7 @@ public class MagicGame {
     private MagicLogBook logBook;
     private MagicLogMessageBuilder logMessageBuilder;
     private long[] keys;
+    private long stateId;
     private long time = 1000000;
 
 
@@ -264,11 +265,13 @@ public class MagicGame {
             statics.getStateId(),
             exiledUntilEndOfTurn.getSetStateId(),
         };
-        return magic.MurmurHash3.hash(keys);
+        stateId = magic.MurmurHash3.hash(keys);
+        return stateId;
     }
 
     public String toString() {
-        return "GAME: " +
+        return "GAME: " + 
+               "id=" + stateId + " " +
                "t=" + turn + " " + 
                "p=" + phase.getType() + " " + 
                "s=" + step + " " + 
