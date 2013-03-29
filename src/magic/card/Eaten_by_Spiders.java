@@ -1,8 +1,12 @@
 package magic.card;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
+import magic.model.MagicPermanentList;
 import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
@@ -31,10 +35,10 @@ public class Eaten_by_Spiders {
                 final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    game.doAction(new MagicDestroyAction(creature));
-                    for (final MagicPermanent equipment : creature.getEquipmentPermanents()) {
-                        game.doAction(new MagicDestroyAction(equipment));
-                    }
+                    final MagicPermanentList perms = new MagicPermanentList();
+                    perms.add(creature);
+                    perms.addAll(creature.getEquipmentPermanents());
+                    game.doAction(new MagicDestroyAction(perms));
                 }
             });
         }
