@@ -256,13 +256,13 @@ public class MagicGame {
             (priorityPassed ? 1L : -1L),
             (stateCheckRequired ? 1L : -1L),
             payedCost.getX(),
-            payedCost.getTarget().getId(),
+            //payedCost.getTarget().getId(),
             stack.getStateId(),
             events.getStateId(),
             players[0].getStateId(),
             players[1].getStateId(),
-            triggers.getStateId(),
-            statics.getStateId(),
+            //triggers.getStateId(),
+            //statics.getStateId(),
             exiledUntilEndOfTurn.getSetStateId(),
         };
         stateId = magic.MurmurHash3.hash(keys);
