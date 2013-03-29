@@ -16,18 +16,13 @@ Magarena supports the following keyboard shortcuts :
   F1      or M key     : show or hide game messages
   Y key                : yes button
   N key                : no button
+  S key                : switch between player and AI view
 
 Selecting the AI to play against:
   The desired AI can be selected in the "New duel" dialog (Arena -> New duel).
 
-  Default is minimax. AI difficulty level for the best balance of speed and
-  strength is the default 6.
-
-  The Monte Carlo AI spends at most N seconds to consider each move, where N is
-  the AI difficulty level. It is the strongest AI available, however it cheats
-  as it has knowledge of all cards in the game.
-
-  The Vegas AI should be fast on all difficulty levels. 
+  For Minimax and Monte Carlo Tree Search AI, the difficulty level is the
+  maximum number of seconds the AI is allowed to use to decide a move.
 
 Thanks to
   ubeefx for creating such a great game
@@ -55,22 +50,40 @@ Thank you for your support and have fun!
 
 
 
-Release 1.36 (March 30, 2013)
+
+
+Release 1.36 (March 29, 2013)
 ============
 includes contributions from melvin, Jak, and sponeta 
 
-- added support for Planeswalker card type. Note that creatures do not direct
-  attack Planeswalkers, rather the damage redirect rule applies to both combat and non-combat damage.
+- added support for Planeswalker card type. Note that creatures do not
+  directly attack Planeswalkers, rather the damage redirect rule applies to
+  both combat and non-combat damage.
 - added keyboard shortcut 's' to show AI's hand
 - limit thinking time of minimax AI to be AI strength in seconds
-- converted more cards to use groovy code to serve as examples of card
-  scripting with groovy code
+- converted more cards from compiled Java code to dynamically loaded groovy code
 
 - fixed: Teleportal was using Vandalblast's image
 - fixed: Taste of Blood gains life even if target is illegal
-- fixed: Shattered Angel triggers when you play a land, it should only trigger
+- fixed: Shattered Angel triggers when you play a land, it should only trigger when opponent plays a land.
 
-- added the following custom decks:
+- added the following premade decks:
+Angels_and_Humans.dec, Essential_Black_40.dec, Fateful_Hour.dec,
+Illusionists_Gambit_60.dec, JustRelentlessRats.dec, Life_Manipulator.dec,
+Merfolk_Mayhem.dec, Rainbow.dec, Slivers.dec, Tapmaster.dec, Undying.dec,
+Vanish_and_Reappear.dec, WB_Weenies.dec
+
+- added the following cards:
+Ajani, Caller of the Pride, Ajani Goldmane, Ajani Vengeant, Ant Queen,
+Basandra, Battle Seraph, Break Asunder, Deathspore Thallid,
+Elspeth, Knight-Errant, Elspeth Tirel, Experiment One, Flinthoof Boar,
+Garruk, Primal Hunter, Gideon, Champion of Justice, Jace Beleren,
+Krenko, Mob Boss, Psychotrope Thallid, Sarkhan Vol, Savage Thallid,
+Searing Spear, Sharuum the Hegemon, Sphinx's Revelation,
+Tamiyo, the Moon Sage, Thallid, Thallid Devourer, Thallid Germinator,
+Thallid Shell-Dweller, Thistledown Liege, Tibalt, the Fiend-Blooded,
+Venser, the Sojourner, Verdant Embrace, Vitaspore Thallid, Vraska the Unseen,
+Wall of Blood, Yavimaya Scion, Zodiac Dragon
 
 Release 1.35 (February 23, 2013)
 ============
