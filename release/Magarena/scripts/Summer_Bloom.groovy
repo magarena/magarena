@@ -12,7 +12,7 @@
         @Override
         public void executeEvent(
                 final MagicGame outerGame,
-                final MagicEvent event) {
+                final MagicEvent outerEvent) {
             outerGame.doAction(new MagicAddStaticAction(MagicPermanent.NONE,  
                 new MagicStatic(MagicLayer.Game, MagicStatic.UntilEOT) {
                     @Override
@@ -23,7 +23,7 @@
                     }
                     @Override
                     public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-                        return game.getTurnPlayer() == event.getPlayer();
+                        return game.getTurnPlayer().getId() == outerEvent.getPlayer().getId();
                     }
                 }
             ));
