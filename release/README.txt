@@ -57,7 +57,20 @@ Thank you for your support and have fun!
 
 Release 1.36 (March 30, 2013)
 ============
-includes contributions from 
+includes contributions from melvin, Jak, and sponeta 
+
+- added support for Planeswalker card type. Note that creatures do not direct
+  attack Planeswalkers, rather the damage redirect rule applies to both combat and non-combat damage.
+- added keyboard shortcut 's' to show AI's hand
+- limit thinking time of minimax AI to be AI strength in seconds
+- converted more cards to use groovy code to serve as examples of card
+  scripting with groovy code
+
+- fixed: Teleportal was using Vandalblast's image
+- fixed: Taste of Blood gains life even if target is illegal
+- fixed: Shattered Angel triggers when you play a land, it should only trigger
+
+- added the following custom decks:
 
 Release 1.35 (February 23, 2013)
 ============
