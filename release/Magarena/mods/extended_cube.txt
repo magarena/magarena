@@ -359,6 +359,7 @@ Elgaud Inquisitor
 Elgaud Shieldmate
 Elite Inquisitor
 Elite Vanguard
+Elspeth Tirel
 Elusive Krasis
 Elvish Visionary
 Emancipation Angel
@@ -380,6 +381,7 @@ Essence Scatter
 Etched Champion
 Evernight Shade
 Executioner's Hood
+Experiment One
 Explore
 Explosive Impact
 Exquisite Blood
@@ -421,6 +423,7 @@ Fleeting Distraction
 Flensermite
 Flesh-Eater Imp
 Flight
+Flinthoof Boar
 Fog
 Forest
 Forge Devil
@@ -1053,6 +1056,7 @@ Spell Pierce
 Sphere of the Suns
 Sphinx of Lost Truths
 Sphinx of Magosi
+Sphinx's Revelation
 Spidersilk Net
 Spider Umbra
 Spidery Grasp
@@ -1138,6 +1142,7 @@ Thrill-Kill Assassin
 Thrun, the Last Troll
 Thunderous Wrath
 Thunder Strike
+Tibalt, the Fiend-Blooded
 Timberland Guide
 Timely Reinforcements
 Tine Shrike
@@ -1205,6 +1210,7 @@ Vault Skyward
 Vector Asp
 Vedalken Certarch
 Vengeful Vampire
+Venser, the Sojourner
 Vessel of Endless Rest
 Veteran's Reflexes
 Viashino Shanktail
@@ -1226,6 +1232,7 @@ Volcanic Dragon
 Volcanic Strength
 Vorapede
 Vorstclaw
+Vraska the Unseen
 Vulshok Berserker
 Vulshok Refugee
 Wakedancer

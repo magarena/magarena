@@ -98,6 +98,7 @@ Angelsong
 Angel's Tomb
 Anoint
 Antagonism
+Ant Queen
 Anurid Murkdiver
 Apex Hawks
 Apocalypse Hydra
@@ -224,6 +225,7 @@ Barrenton Cragtreads
 Barter in Blood
 Bar the Door
 Basalt Gargoyle
+Basandra, Battle Seraph
 Basilica Guards
 Basilica Screecher
 Basilisk Collar
@@ -376,6 +378,7 @@ Brain Freeze
 Brain Weevil
 Bramble Creeper
 Bramblecrush
+Break Asunder
 Break of Day
 Breath of Darigaaz
 Breath of Life
@@ -678,6 +681,7 @@ Deathmark
 Deathrender
 Death's Caress
 Death Speakers
+Deathspore Thallid
 Death Stroke
 Death Wind
 Debtors' Knell
@@ -845,6 +849,7 @@ Elite Cat Warrior
 Elite Inquisitor
 Elite Vanguard
 Elspeth, Knight-Errant
+Elspeth Tirel
 Elusive Krasis
 Elven Warhounds
 Elves of Deep Shadow
@@ -906,6 +911,7 @@ Exclude
 Executioner's Hood
 Exhaustion
 Exhume
+Experiment One
 Exploration
 Explore
 Explosive Impact
@@ -1000,6 +1006,7 @@ Fleshbag Marauder
 Flesh-Eater Imp
 Flight
 Flight of Fancy
+Flinthoof Boar
 Floral Spuzzem
 Flowstone Charger
 Flowstone Crusher
@@ -2079,6 +2086,7 @@ Proper Burial
 Protective Bubble
 Psionic Blast
 Psychic Barrier
+Psychotrope Thallid
 Pulse of the Fields
 Pulse of the Forge
 Pulse of the Tangle
@@ -2294,6 +2302,7 @@ Sanguine Guard
 Saprazzan Heir
 Sarkhan Vol
 Savage Lands
+Savage Thallid
 Savage Twister
 Savannah
 Savannah Lions
@@ -2582,6 +2591,7 @@ Sphere of the Suns
 Sphinx of Lost Truths
 Sphinx of Magosi
 Sphinx of the Steel Wind
+Sphinx's Revelation
 Spidersilk Net
 Spider Umbra
 Spidery Grasp
@@ -2769,6 +2779,10 @@ Thalakos Drifters
 Thalakos Scout
 Thalakos Seer
 Thalakos Sentry
+Thallid
+Thallid Devourer
+Thallid Germinator
+Thallid Shell-Dweller
 Thatcher Revolt
 The Lady of the Mountain
 The Rack
@@ -2776,6 +2790,7 @@ Thermal Glider
 Thicket Basilisk
 Thief of Hope
 Thieving Magpie
+Thistledown Liege
 Thornling
 Thorn-Thrash Viashino
 Thornweald Archer
@@ -2803,6 +2818,7 @@ Thunder Spirit
 Thunder Strike
 Thunder-Thrash Elder
 Thunder Wall
+Tibalt, the Fiend-Blooded
 Ticking Gnomes
 Tidal Kraken
 Tidehollow Strix
@@ -2969,6 +2985,8 @@ Venom
 Venomous Dragonfly
 Venser, Shaper Savant
 Venser's Sliver
+Venser, the Sojourner
+Verdant Embrace
 Verdant Force
 Verdigris
 Verduran Enchantress
@@ -3010,6 +3028,7 @@ Visara the Dreadful
 Vision Skeins
 Visions of Beyond
 Vital Splicer
+Vitaspore Thallid
 Vitu-Ghazi Guildmage
 Vivid Crag
 Vivid Creek
@@ -3038,6 +3057,7 @@ Vorapede
 Vorosh, the Hunter
 Vorstclaw
 Votary of the Conclave
+Vraska the Unseen
 Vug Lizard
 Vulshok Battlegear
 Vulshok Berserker
@@ -3048,6 +3068,7 @@ Wakedancer
 Walking Corpse
 Walking Dead
 Wall of Air
+Wall of Blood
 Wall of Blossoms
 Wall of Bone
 Wall of Brambles
@@ -3188,6 +3209,7 @@ Yavimaya Coast
 Yavimaya Enchantress
 Yavimaya Gnats
 Yavimaya Hollow
+Yavimaya Scion
 Yavimaya's Embrace
 Yavimaya Wurm
 Yew Spirit
@@ -3209,6 +3231,7 @@ Zhalfirin Commander
 Zhalfirin Knight
 Zhur-Taa Swine
 Zodiac Dog
+Zodiac Dragon
 Zodiac Goat
 Zodiac Horse
 Zodiac Monkey

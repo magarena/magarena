@@ -181,6 +181,7 @@ Essence Harvest
 Essence Scatter
 Evernight Shade
 Executioner's Hood
+Experiment One
 Explosive Impact
 Exquisite Blood
 Eyes in the Skies
@@ -205,6 +206,7 @@ Fire Elemental
 Firefist Striker
 Firemane Avenger
 Fleeting Distraction
+Flinthoof Boar
 Fog
 Forest
 Forge Devil
@@ -500,6 +502,7 @@ Spawn of Rix Maadi
 Spectral Flight
 Spectral Gateguards
 Spectral Rider
+Sphinx's Revelation
 Spidery Grasp
 Spiked Baloth
 Spirit Away
@@ -543,6 +546,7 @@ Thraben Valiant
 Thragtusk
 Thrill-Kill Assassin
 Thunderous Wrath
+Tibalt, the Fiend-Blooded
 Timberland Guide
 Titanic Growth
 Torch Fiend
@@ -596,6 +600,7 @@ Voice of the Provinces
 Volcanic Strength
 Vorapede
 Vorstclaw
+Vraska the Unseen
 Wakedancer
 Walking Corpse
 Wall of Fire

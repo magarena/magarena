@@ -67,6 +67,7 @@ Angel's Feather
 Angel's Mercy
 Angelsong
 Angel's Tomb
+Ant Queen
 Apex Hawks
 Apocalypse Hydra
 Araba Mothrider
@@ -493,6 +494,7 @@ Deathless Angel
 Deathmark
 Deathrender
 Death's Caress
+Deathspore Thallid
 Death Wind
 Debtors' Knell
 Deepcavern Imp
@@ -614,6 +616,7 @@ Elgaud Shieldmate
 Elite Inquisitor
 Elite Vanguard
 Elspeth, Knight-Errant
+Elspeth Tirel
 Elves of Deep Shadow
 Elvish Berserker
 Elvish Champion
@@ -722,6 +725,7 @@ Fleshbag Marauder
 Flesh-Eater Imp
 Flight
 Flight of Fancy
+Flinthoof Boar
 Flowstone Crusher
 Flowstone Shambler
 Flying Men
@@ -1538,6 +1542,7 @@ Proper Burial
 Protective Bubble
 Psionic Blast
 Psychic Barrier
+Psychotrope Thallid
 Pulse of the Fields
 Pulse of the Forge
 Pulse of the Tangle
@@ -1696,6 +1701,7 @@ Sangromancer
 Sanguine Bond
 Sarkhan Vol
 Savage Lands
+Savage Thallid
 Savage Twister
 Savannah Lions
 Scab-Clan Mauler
@@ -1902,6 +1908,7 @@ Sphere of the Suns
 Sphinx of Lost Truths
 Sphinx of Magosi
 Sphinx of the Steel Wind
+Sphinx's Revelation
 Spidersilk Net
 Spider Umbra
 Spidery Grasp
@@ -2047,10 +2054,14 @@ Terminus
 Terra Stomper
 Territorial Baloth
 Terror
+Thallid
+Thallid Germinator
+Thallid Shell-Dweller
 Thatcher Revolt
 The Rack
 Thief of Hope
 Thieving Magpie
+Thistledown Liege
 Thornling
 Thorn-Thrash Viashino
 Thornweald Archer
@@ -2072,6 +2083,7 @@ Thunderous Wrath
 Thundersong Trumpeter
 Thunder Strike
 Thunder-Thrash Elder
+Tibalt, the Fiend-Blooded
 Tidal Kraken
 Tidehollow Strix
 Tidewalker
@@ -2199,6 +2211,8 @@ Vengeance
 Vengeful Vampire
 Venser, Shaper Savant
 Venser's Sliver
+Venser, the Sojourner
+Verdant Embrace
 Verdant Force
 Verduran Enchantress
 Vessel of Endless Rest
@@ -2229,6 +2243,7 @@ Viridian Shaman
 Vision Skeins
 Visions of Beyond
 Vital Splicer
+Vitaspore Thallid
 Vitu-Ghazi Guildmage
 Vivid Crag
 Vivid Creek
@@ -2247,6 +2262,7 @@ Vorapede
 Vorosh, the Hunter
 Vorstclaw
 Votary of the Conclave
+Vraska the Unseen
 Vulshok Battlegear
 Vulshok Berserker
 Vulshok Morningstar
@@ -2255,6 +2271,7 @@ Vulshok Sorcerer
 Wakedancer
 Walking Corpse
 Wall of Air
+Wall of Blood
 Wall of Bone
 Wall of Denial
 Wall of Faith
