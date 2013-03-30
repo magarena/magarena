@@ -47,8 +47,8 @@ public class Mindshrieker {
                 final MagicEvent event) {
             event.processTargetPlayer(game,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
+                    final MagicCard card = player.getLibrary().getCardAtTop();
                     game.doAction(new MagicMillLibraryAction(player,1));
-                    final MagicCard card = player.getGraveyard().get(player.getGraveyard().size()-1);
                     final int amount = card.getCardDefinition().getConvertedCost();
                     game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),amount,amount));
                 }
