@@ -242,9 +242,9 @@ public class MagicPlayer implements MagicTarget {
     public int getHandSize() {
         return hand.size();
     }
-    
-    public boolean handSizeExceedMax() {
-        return getHandSize() > maxHandSize;
+        
+    public int getNumExcessCards() {
+        return Math.max(0, getHandSize() - maxHandSize);
     }
     
     public void noMaxHandSize() {
