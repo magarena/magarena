@@ -16,6 +16,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ExecutorService;
 
 import org.codehaus.groovy.control.CompilerConfiguration;
 import org.codehaus.groovy.control.customizers.ImportCustomizer;
@@ -39,6 +41,9 @@ public class CardDefinitions {
     private static final List<MagicCardDefinition> spellCards = new ArrayList<MagicCardDefinition>();
     private static final Map<String,MagicCardDefinition> cardsMap = new HashMap<String, MagicCardDefinition>();
     private static final File cardDir = new File(MagicMain.getScriptsPath());
+
+    private static final ExecutorService worker = Executors.newCachedThreadPool();
+
 
     // groovy shell for evaluating groovy card scripts with autmatic imports
     private static final GroovyShell shell = new GroovyShell(
@@ -109,30 +114,40 @@ public class CardDefinitions {
 
     //link to companion object containing static variables
     static void addCardSpecificCode(final MagicCardDefinition cardDefinition, final String cardName) {
-        try { //reflection
-            final Class c = Class.forName("magic.card." + getCanonicalName(cardName));
-            for (final Field field : c.getFields()) {
-                final MagicChangeCardDefinition ccd = (MagicChangeCardDefinition)field.get(null);
-                ccd.change(cardDefinition);
+        worker.execute(new Runnable() {
+            @Override
+            public void run() {
+                try { //reflection
+                    final Class c = Class.forName("magic.card." + getCanonicalName(cardName));
+                    for (final Field field : c.getFields()) {
+                        final MagicChangeCardDefinition ccd = (MagicChangeCardDefinition)field.get(null);
+                        ccd.change(cardDefinition);
+                    }
+                } catch (final ClassNotFoundException ex) {
+                    throw new RuntimeException(ex);
+                } catch (final IllegalAccessException ex) {
+                    throw new RuntimeException(ex);
+                }
             }
-        } catch (final ClassNotFoundException ex) {
-            throw new RuntimeException(ex);
-        } catch (final IllegalAccessException ex) {
-            throw new RuntimeException(ex);
-        }
+        });
     }
     
     //link to groovy script that returns array of MagicChangeCardDefinition objects
     static void addCardSpecificGroovyCode(final MagicCardDefinition cardDefinition, final String cardName) {
-        try {
-            final File script = new File(cardDir, getCanonicalName(cardName) + ".groovy");
-            final List<MagicChangeCardDefinition> defs = (List<MagicChangeCardDefinition>)shell.evaluate(script);
-            for (MagicChangeCardDefinition ccd : defs) {
-                ccd.change(cardDefinition);
+        worker.execute(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    final File script = new File(cardDir, getCanonicalName(cardName) + ".groovy");
+                    final List<MagicChangeCardDefinition> defs = (List<MagicChangeCardDefinition>)shell.evaluate(script);
+                    for (MagicChangeCardDefinition ccd : defs) {
+                        ccd.change(cardDefinition);
+                    }
+                } catch (final IOException ex) {
+                    throw new RuntimeException(ex);
+                }
             }
-        } catch (final IOException ex) {
-            throw new RuntimeException(ex);
-        } 
+        });
     }
     
     private static String getCanonicalName(String fullName) {
@@ -190,7 +205,16 @@ public class CardDefinitions {
     
     public static void loadCardTexts() {
         for(final MagicCardDefinition card : getCards()) {
-            if(card != MagicCardDefinition.UNKNOWN && card.getText().length() == 0) {
+            if (card != MagicCardDefinition.UNKNOWN && card.getText().length() == 0) {
+                loadCardText(card);
+            }
+        }
+    }
+    
+    private static void loadCardText(final MagicCardDefinition card) {
+        worker.execute(new Runnable() {
+            @Override
+            public void run() {
                 // try to load text from file
                 final StringBuilder buffer = new StringBuilder();
                 buffer.append(MagicMain.getGamePath());
@@ -202,14 +226,14 @@ public class CardDefinitions {
                 
                 try {
                     final String text = FileIO.toStr(new File(buffer.toString()));
-                    if(text != null) {
+                    if (text != null) {
                         card.setText(text);                        
                     }
                 } catch (IOException e) {
                     // text not downloaded or missing
                 }
             }
-        }
+        });
     }
         
     public static MagicCardDefinition getBasicLand(final MagicColor color) {
