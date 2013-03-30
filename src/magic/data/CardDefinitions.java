@@ -42,7 +42,7 @@ public class CardDefinitions {
     private static final Map<String,MagicCardDefinition> cardsMap = new HashMap<String, MagicCardDefinition>();
     private static final File cardDir = new File(MagicMain.getScriptsPath());
 
-    private static final ExecutorService worker = Executors.newCachedThreadPool();
+    private static final ExecutorService executor = Executors.newCachedThreadPool();
 
 
     // groovy shell for evaluating groovy card scripts with autmatic imports
@@ -114,40 +114,30 @@ public class CardDefinitions {
 
     //link to companion object containing static variables
     static void addCardSpecificCode(final MagicCardDefinition cardDefinition, final String cardName) {
-        worker.execute(new Runnable() {
-            @Override
-            public void run() {
-                try { //reflection
-                    final Class c = Class.forName("magic.card." + getCanonicalName(cardName));
-                    for (final Field field : c.getFields()) {
-                        final MagicChangeCardDefinition ccd = (MagicChangeCardDefinition)field.get(null);
-                        ccd.change(cardDefinition);
-                    }
-                } catch (final ClassNotFoundException ex) {
-                    throw new RuntimeException(ex);
-                } catch (final IllegalAccessException ex) {
-                    throw new RuntimeException(ex);
-                }
+        try { //reflection
+            final Class c = Class.forName("magic.card." + getCanonicalName(cardName));
+            for (final Field field : c.getFields()) {
+                final MagicChangeCardDefinition ccd = (MagicChangeCardDefinition)field.get(null);
+                ccd.change(cardDefinition);
             }
-        });
+        } catch (final ClassNotFoundException ex) {
+            throw new RuntimeException(ex);
+        } catch (final IllegalAccessException ex) {
+            throw new RuntimeException(ex);
+        }
     }
     
     //link to groovy script that returns array of MagicChangeCardDefinition objects
     static void addCardSpecificGroovyCode(final MagicCardDefinition cardDefinition, final String cardName) {
-        worker.execute(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    final File script = new File(cardDir, getCanonicalName(cardName) + ".groovy");
-                    final List<MagicChangeCardDefinition> defs = (List<MagicChangeCardDefinition>)shell.evaluate(script);
-                    for (MagicChangeCardDefinition ccd : defs) {
-                        ccd.change(cardDefinition);
-                    }
-                } catch (final IOException ex) {
-                    throw new RuntimeException(ex);
-                }
+        try {
+            final File script = new File(cardDir, getCanonicalName(cardName) + ".groovy");
+            final List<MagicChangeCardDefinition> defs = (List<MagicChangeCardDefinition>)shell.evaluate(script);
+            for (MagicChangeCardDefinition ccd : defs) {
+                ccd.change(cardDefinition);
             }
-        });
+        } catch (final IOException ex) {
+            throw new RuntimeException(ex);
+        }
     }
     
     private static String getCanonicalName(String fullName) {
@@ -212,7 +202,7 @@ public class CardDefinitions {
     }
     
     private static void loadCardText(final MagicCardDefinition card) {
-        worker.execute(new Runnable() {
+        executor.execute(new Runnable() {
             @Override
             public void run() {
                 // try to load text from file
@@ -235,7 +225,7 @@ public class CardDefinitions {
             }
         });
     }
-        
+
     public static MagicCardDefinition getBasicLand(final MagicColor color) {
         if (color == MagicColor.Black) {
             return getCard("Swamp");

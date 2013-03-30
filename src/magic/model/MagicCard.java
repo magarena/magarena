@@ -32,6 +32,7 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
     private boolean known=true;
     
     public MagicCard(final MagicCardDefinition aCardDefinition,final MagicPlayer aOwner,final long aId) {
+        aCardDefinition.loadScript();
         cardDefinition = aCardDefinition;
         owner = aOwner;
         id = aId;

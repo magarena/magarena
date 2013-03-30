@@ -2,6 +2,7 @@ package magic.model;
 
 import magic.ai.ArtificialScoringSystem;
 import magic.data.IconImages;
+import magic.data.CardProperty;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicActivation;
@@ -103,12 +104,35 @@ public class MagicCardDefinition {
     private final Collection<MagicActivation> activations=new ArrayList<MagicActivation>();
     private final Collection<MagicManaActivation> manaActivations=new ArrayList<MagicManaActivation>();
     private boolean excludeManaOrCombat;
+
+    private String groovyCode;
+    private String cardCode;
     
     public MagicCardDefinition() {
         initialize();    
     }
     
     protected void initialize() {}
+
+
+    public void setGroovyCode(final String value) {
+        groovyCode = value;
+    }
+    
+    public void setCardCode(final String value) {
+        cardCode = value;
+    }
+
+    public void loadScript() {
+        if (groovyCode != null) {
+            CardProperty.LOAD_GROOVY_CODE.setProperty(this, groovyCode);
+            groovyCode = null;
+        }
+        if (cardCode != null) {
+            CardProperty.LOAD_CARD_CODE.setProperty(this, cardCode);
+            cardCode = null;
+        }
+    }
     
     public static void printStatistics() {
         System.err.println(numTriggers + " triggers");
