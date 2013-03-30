@@ -30,7 +30,7 @@ public class MagicCardList extends ArrayList<MagicCard> {
         return magic.MurmurHash3.hash(keys);
     }
     
-    long getSetStateId() {
+    public long getUnorderedStateId() {
         final long[] keys = new long[size()];
         int idx = 0;
         for (final MagicCard card : this) {

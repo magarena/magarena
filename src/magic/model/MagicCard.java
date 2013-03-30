@@ -240,7 +240,12 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
 
     @Override
     public int compareTo(final MagicCard card) {
-        return Long.signum(id - card.id);
+        final int diff = cardDefinition.getIndex() - card.cardDefinition.getIndex();
+        if (diff != 0) {
+            return diff;
+        } else {
+            return Long.signum(id - card.id);
+        }
     }
     
     @Override

@@ -263,7 +263,7 @@ public class MagicGame {
             players[1].getStateId(),
             //triggers.getStateId(),
             //statics.getStateId(),
-            exiledUntilEndOfTurn.getSetStateId(),
+            exiledUntilEndOfTurn.getUnorderedStateId(),
         };
         stateId = magic.MurmurHash3.hash(keys);
         return stateId;

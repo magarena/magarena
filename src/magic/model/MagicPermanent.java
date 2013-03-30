@@ -155,7 +155,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             enchantedCreature.getStateId(),
             blockedCreature.getStateId(),
             //pairedCreature.getStateId(),
-            exiledCards.getSetStateId(),
+            exiledCards.getUnorderedStateId(),
             chosenTarget.getId(),
             counters[0],
             counters[1],

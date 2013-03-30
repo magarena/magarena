@@ -10,6 +10,7 @@ import magic.ui.GameController;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -63,7 +64,8 @@ public class MagicCardChoice extends MagicChoice {
             final MagicSource source) {
 
         final List<Object> options = new ArrayList<Object>();
-        final MagicCardList hand = player.getHand();
+        final MagicCardList hand = new MagicCardList(player.getHand());
+        Collections.sort(hand);
         final int actualAmount = Math.min(amount,hand.size());
         if (actualAmount > 0) {
             createOptions(options,hand,new MagicCard[actualAmount],0,actualAmount,0);
