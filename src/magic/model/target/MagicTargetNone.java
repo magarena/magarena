@@ -119,4 +119,8 @@ public class MagicTargetNone implements MagicTarget {
     public long getId() {
         return hashCode();
     }
+    
+    public long getStateId() {
+        return hashCode();
+    }
 }

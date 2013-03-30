@@ -130,7 +130,7 @@ public class MagicPlayer implements MagicTarget {
         return currGame;
     }
     
-    long getStateId() {
+    public long getStateId() {
         keys = new long[] {
             life,
             poison,

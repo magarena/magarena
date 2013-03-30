@@ -81,6 +81,10 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
         return id;
     }
     
+    public long getStateId() {
+        return cardDefinition.getIndex();
+    }
+    
     public int getImageIndex() {
         return imageIndex;
     }

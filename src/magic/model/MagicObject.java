@@ -19,4 +19,5 @@ public interface MagicObject extends MagicCopyable, MagicMappable {
     String      getName();
     MagicPlayer getController();
     MagicCardDefinition getCardDefinition();
+    long        getStateId();
 }

@@ -205,7 +205,7 @@ public abstract class MagicItemOnStack implements MagicTarget {
         }
     }
 
-    long getStateId() {
+    public long getStateId() {
         return magic.MurmurHash3.hash(new long[] {
             id,
             source != null ?  source.getId() : -1L,

@@ -24,7 +24,7 @@ public class MagicCardList extends ArrayList<MagicCard> {
         final long[] keys = new long[size()];
         int idx = 0;
         for (final MagicCard card : this) {
-            keys[idx] = card.getCardDefinition().getIndex();
+            keys[idx] = card.getStateId();
             idx++;
         }
         return magic.MurmurHash3.hash(keys);
@@ -34,7 +34,7 @@ public class MagicCardList extends ArrayList<MagicCard> {
         final long[] keys = new long[size()];
         int idx = 0;
         for (final MagicCard card : this) {
-            keys[idx] = card.getCardDefinition().getIndex();
+            keys[idx] = card.getStateId();
             idx++;
         }
         Arrays.sort(keys);
