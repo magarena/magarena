@@ -199,7 +199,9 @@ public abstract class MagicItemOnStack implements MagicTarget {
             return -1L;
         }
         final Object obj = arr[idx];
-        if (obj instanceof MagicObject) {
+        if (obj instanceof MagicPlayer) {
+            return ((MagicPlayer)obj).getId();
+        } else if (obj instanceof MagicObject) {
             return ((MagicObject)obj).getStateId();
         } else if (obj instanceof MagicMappable) {
             return ((MagicMappable)obj).getId();
@@ -210,11 +212,10 @@ public abstract class MagicItemOnStack implements MagicTarget {
 
     public long getStateId() {
         return magic.MurmurHash3.hash(new long[] {
-            id,
             source != null ?  source.getStateId() : -1L,
             controller != null ? controller.getId() : -1L,
             activation != null ? activation.hashCode() : -1L,
-            event != null ? event.getStateId() : -1L,
+            event != null ? event.getStateIdWithoutSource() : -1L,
             getStateId(choiceResults, 0),
             getStateId(choiceResults, 1),
             getStateId(choiceResults, 2),

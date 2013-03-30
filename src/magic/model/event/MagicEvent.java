@@ -580,4 +580,14 @@ public class MagicEvent implements MagicCopyable {
             ref.hashCode(), 
         });
     }
+    
+    public long getStateIdWithoutSource() {
+        return magic.MurmurHash3.hash(new long[] {
+            player.getId(),
+            choice.hashCode(),
+            action.hashCode(),
+            targetPicker.hashCode(),
+            ref.hashCode(), 
+        });
+    }
 }
