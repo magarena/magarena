@@ -93,6 +93,9 @@ public class MagicPlayChoice extends MagicChoice {
 
         //always pass draw and begin combat option
         if (game.canAlwaysPass()) {
+            if (!game.getStack().isEmpty()) {
+                controller.pause(GeneralConfig.getInstance().getMessageDelay());
+            }
             return PASS_CHOICE_RESULTS;
         } 
        
@@ -117,7 +120,6 @@ public class MagicPlayChoice extends MagicChoice {
             }
             return PASS_CHOICE_RESULTS;
         }
-
         
         final Set<Object> validChoices = new HashSet<Object>();
         addValidChoices(game, player, false, validChoices);
@@ -140,17 +142,6 @@ public class MagicPlayChoice extends MagicChoice {
                 return PASS_CHOICE_RESULTS;
             }
         }
-
-        /*
-        if ((game.getStack().isEmpty() || game.getStack().hasItemOnTopOfPlayer(player)) && 
-             game.getTurnPlayer() == player &&                
-             game.getPassPriority()) {
-            if (!game.getStack().isEmpty()) {
-                GameController.pause(1500);
-            }
-            return PASS_CHOICE_RESULTS;
-        }
-        */
 
         controller.focusViewers(0,0);
         if (validChoices.isEmpty()) {
