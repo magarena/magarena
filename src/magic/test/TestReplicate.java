@@ -25,22 +25,27 @@ class TestReplicate extends TestGameBuilder {
 
         MagicPlayer P = player;
 
-        P.setLife(1);
+        P.setLife(10);
         addToLibrary(P, "Plains", 10);
         createPermanent(game,P,"Rupture Spire",false,8);
         createPermanent(game,P,"Thieving Magpie",false,1);
         addToHand(P,"Leap of Flame",1); 
+        addToHand(P,"Train of Thought",1); 
         addToHand(P,"Pyromatics",1); 
         addToHand(P,"Shattering Spree",1); 
         addToHand(P,"Grapeshot",1); 
 
         P = opponent;
         
-        P.setLife(20);
+        P.setLife(10);
         addToLibrary(P, "Plains", 10);
         createPermanent(game,P,"Rupture Spire",false,8);
         createPermanent(game,P,"Thieving Magpie",false,1);
-        addToHand(P, "Plains", 7);
+        addToHand(P,"Leap of Flame",1); 
+        addToHand(P,"Train of Thought",1); 
+        addToHand(P,"Pyromatics",1); 
+        addToHand(P,"Shattering Spree",1); 
+        addToHand(P,"Grapeshot",1); 
         
         return game;
     }
