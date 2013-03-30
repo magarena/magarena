@@ -3,6 +3,7 @@ package magic.model.stack;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCopyMap;
 import magic.model.MagicGame;
+import magic.model.MagicObject;
 import magic.model.MagicMappable;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
@@ -198,7 +199,9 @@ public abstract class MagicItemOnStack implements MagicTarget {
             return -1L;
         }
         final Object obj = arr[idx];
-        if (obj instanceof MagicMappable) {
+        if (obj instanceof MagicObject) {
+            return ((MagicObject)obj).getStateId();
+        } else if (obj instanceof MagicMappable) {
             return ((MagicMappable)obj).getId();
         } else {
             return obj.hashCode();
@@ -208,7 +211,7 @@ public abstract class MagicItemOnStack implements MagicTarget {
     public long getStateId() {
         return magic.MurmurHash3.hash(new long[] {
             id,
-            source != null ?  source.getId() : -1L,
+            source != null ?  source.getStateId() : -1L,
             controller != null ? controller.getId() : -1L,
             activation != null ? activation.hashCode() : -1L,
             event != null ? event.getStateId() : -1L,

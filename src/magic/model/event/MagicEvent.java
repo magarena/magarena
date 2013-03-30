@@ -572,8 +572,8 @@ public class MagicEvent implements MagicCopyable {
 
     public long getStateId() {
         return magic.MurmurHash3.hash(new long[] {
-            source.getId(),
-            player.getIndex(),
+            source.getStateId(),
+            player.getId(),
             choice.hashCode(),
             action.hashCode(),
             targetPicker.hashCode(),
