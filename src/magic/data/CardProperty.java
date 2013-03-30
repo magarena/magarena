@@ -173,7 +173,7 @@ public enum CardProperty {
     },
     REQUIRES_CARD_CODE() {
         public void setProperty(final MagicCardDefinition card, final String value) {
-            card.setCardCode(value);
+            card.setRequiresJava(value);
         }
     },
     LOAD_CARD_CODE() {
@@ -187,7 +187,7 @@ public enum CardProperty {
     },
     REQUIRES_GROOVY_CODE() {
         public void setProperty(final MagicCardDefinition card, final String value) {
-            card.setGroovyCode(value);
+            card.setRequiresGroovy(value);
         }
     },
     LOAD_GROOVY_CODE() {

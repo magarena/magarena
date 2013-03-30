@@ -105,8 +105,8 @@ public class MagicCardDefinition {
     private final Collection<MagicManaActivation> manaActivations=new ArrayList<MagicManaActivation>();
     private boolean excludeManaOrCombat;
 
-    private String groovyCode;
-    private String cardCode;
+    private String requiresGroovy;
+    private String requiresJava;
     
     public MagicCardDefinition() {
         initialize();    
@@ -115,22 +115,22 @@ public class MagicCardDefinition {
     protected void initialize() {}
 
 
-    public void setGroovyCode(final String value) {
-        groovyCode = value;
+    public void setRequiresGroovy(final String value) {
+        requiresGroovy = value;
     }
     
-    public void setCardCode(final String value) {
-        cardCode = value;
+    public void setRequiresJava(final String value) {
+        requiresJava = value;
     }
 
     public void loadScript() {
-        if (groovyCode != null) {
-            CardProperty.LOAD_GROOVY_CODE.setProperty(this, groovyCode);
-            groovyCode = null;
+        if (requiresGroovy != null) {
+            CardProperty.LOAD_GROOVY_CODE.setProperty(this, requiresGroovy);
+            requiresGroovy = null;
         }
-        if (cardCode != null) {
-            CardProperty.LOAD_CARD_CODE.setProperty(this, cardCode);
-            cardCode = null;
+        if (requiresJava != null) {
+            CardProperty.LOAD_CARD_CODE.setProperty(this, requiresJava);
+            requiresJava = null;
         }
     }
     
