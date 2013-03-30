@@ -30,13 +30,13 @@ public class Sword_of_War_and_Peace {
                 final MagicGame game,
                 final MagicEvent event) {
             final MagicPlayer targetPlayer=event.getRefPlayer();
-            final int amount1=targetPlayer.getHand().size();
+            final int amount1=targetPlayer.getHandSize();
             if (amount1>0) {
                 final MagicDamage damage=new MagicDamage(event.getSource(),targetPlayer,amount1);
                 game.doAction(new MagicDealDamageAction(damage));
             }
             final MagicPlayer player=event.getPlayer();
-            final int amount2=player.getHand().size();
+            final int amount2=player.getHandSize();
             if (amount2>0) {
                 game.doAction(new MagicChangeLifeAction(player,amount2));
             }
