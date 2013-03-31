@@ -12,6 +12,8 @@ import magic.model.MagicPermanentList;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.MagicColor;
+import magic.model.MagicObject;
+import magic.model.MagicMappable;
 import magic.model.action.MagicCardAction;
 import magic.model.action.MagicCardOnStackAction;
 import magic.model.action.MagicMoveCardAction;
@@ -569,6 +571,18 @@ public class MagicEvent implements MagicCopyable {
     public String toString() {
         return "EVENT: " + player.getIndex() + " " + description + " " + (hasChoice() ? choice.getDescription() : "");
     }
+    
+    private long getStateId(final Object obj) {
+        if (obj instanceof MagicPlayer) {
+            return ((MagicPlayer)obj).getId();
+        } else if (obj instanceof MagicObject) {
+            return ((MagicObject)obj).getStateId();
+        } else if (obj instanceof MagicMappable) {
+            return ((MagicMappable)obj).getId();
+        } else {
+            return obj.hashCode();
+        }
+    }
 
     public long getStateId() {
         return magic.MurmurHash3.hash(new long[] {
@@ -577,8 +591,7 @@ public class MagicEvent implements MagicCopyable {
             player.getId(),
             choice.hashCode(),
             action.hashCode(),
-            targetPicker.hashCode(),
-            ref.hashCode(), 
+            getStateId(ref), 
         });
     }
 }
