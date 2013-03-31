@@ -174,18 +174,19 @@ inf: $(MAG)
 	-while true; do make `date +%s`.t; done
 
 buildhive:
-	make games=300 `date +%s`.t zips
+	make games=100 ai1=MMABC ai2=MCTS `date +%s`.t zips
 
 games ?= 10000
 str1 ?= 1
 str2 ?= 1
 life ?= 10
+ai1 ?= MMABC
 ai2 ?= MMAB2
 %.t: $(MAG)
 	echo `hg id -n` > $*.log
 	$(JAVA) -Dmagarena.dir=`pwd`/release magic.DeckStrCal \
 	--seed $* \
-	--ai1 MMABC --str1 ${str1} \
+	--ai1 ${ai1} --str1 ${str1} \
 	--ai2 ${ai2} --str2 ${str2} \
 	--life ${life} \
 	--games 1 \
