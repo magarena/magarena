@@ -84,16 +84,22 @@ public class FileIO {
 
     public static BufferedImage toImg(final File aFile, final BufferedImage def) {
         BufferedImage img = def;
-        if (aFile == null || !aFile.isFile() || aFile.length() == 0L) {
-            img = def;
-        } else {
-            try {
-                img = ImageIO.read(aFile);
-            } catch (final IOException ex) {
-                System.err.println("ERROR! Unable to read from " + aFile);
-                img = def;
-            }
+        if (aFile == null || !aFile.isFile()) {
+            return img;
+        } 
+        
+        try {
+            img = ImageIO.read(aFile);
+        } catch (final IOException ex) {
+            System.err.println("ERROR! Unable to read from " + aFile);
         }
+       
+        // no registered ImageReader able to read the file, likely file is corrupted
+        if (img == null) {
+            img = def;
+            aFile.delete();
+        }
+        
         return img;
     }
     
