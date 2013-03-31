@@ -48,6 +48,9 @@ public class MagicPlayChoiceResult implements MagicMappable {
 
     @Override
     public long getId() {
-        return source.getId() * 31 + activation.hashCode();
+        return magic.MurmurHash3.hash(new long[] {
+            source.getStateId(),
+            activation.hashCode(),
+        });
     }
 }
