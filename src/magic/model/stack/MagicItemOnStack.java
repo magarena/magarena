@@ -215,7 +215,7 @@ public abstract class MagicItemOnStack implements MagicTarget {
             source != null ?  source.getStateId() : -1L,
             controller != null ? controller.getId() : -1L,
             activation != null ? activation.hashCode() : -1L,
-            event != null ? event.getStateIdWithoutSource() : -1L,
+            event != null ? event.getStateId() : -1L,
             getStateId(choiceResults, 0),
             getStateId(choiceResults, 1),
             getStateId(choiceResults, 2),
