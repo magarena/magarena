@@ -9,7 +9,7 @@
                     player,
                     attacker,
                     this,
-                    attacker + " gets +0/+5 until end of turn."
+                    "RN gets +0/+5 until end of turn."
                 ):
                 MagicEvent.NONE;
         }

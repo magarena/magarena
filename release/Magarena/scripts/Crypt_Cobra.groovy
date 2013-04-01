@@ -7,9 +7,9 @@
             return (creature == permanent) ?
                 new MagicEvent(
                     permanent,
-                    player,
+                    opponent,
                     this,
-                    opponent + " gets a poison counter."
+                    "PN gets a poison counter."
                 ):
                 MagicEvent.NONE;
         }
@@ -17,7 +17,7 @@
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event) {
-            game.doAction(new MagicChangePoisonAction(event.getPlayer().getOpponent(),1));
+            game.doAction(new MagicChangePoisonAction(event.getPlayer(),1));
         }
     }
 ]

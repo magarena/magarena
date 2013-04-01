@@ -11,7 +11,7 @@
                     permanent.getController(),
                     damage.getTarget(),
                     this,
-                    damage.getTarget() + " discards a card."
+                    "RN discards a card."
                 ) :
                 MagicEvent.NONE;
         }
