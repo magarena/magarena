@@ -1,14 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicDrawAction;
-import magic.model.choice.MagicSimpleMayChoice;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenBecomesTappedTrigger;
-
-public class Fallowsage {
-    public static final MagicWhenBecomesTappedTrigger T = new MagicWhenBecomesTappedTrigger() {
+[
+    new MagicWhenBecomesTappedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent tapped) {
             return permanent == tapped ?
@@ -32,5 +23,5 @@ public class Fallowsage {
                 game.doAction(new MagicDrawAction(event.getPlayer(),1));
             }
         }
-    };
-}
+    }
+]
