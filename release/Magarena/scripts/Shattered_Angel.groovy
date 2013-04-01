@@ -1,14 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeLifeAction;
-import magic.model.choice.MagicSimpleMayChoice;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
-
-public class Shattered_Angel {
-    public static final Object T = new MagicWhenOtherComesIntoPlayTrigger() {
+[
+    new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
             return (played.isEnemy(permanent) && played.isLand()) ?
@@ -17,13 +8,13 @@ public class Shattered_Angel {
                     new MagicSimpleMayChoice(
                         MagicSimpleMayChoice.GAIN_LIFE,
                         3,
-                        MagicSimpleMayChoice.DEFAULT_YES),
+                        MagicSimpleMayChoice.DEFAULT_YES
+                    ),
                     this,
                     "PN may$ gain 3 life."
                 ):
                 MagicEvent.NONE;
         }
-        
         @Override
         public void executeEvent(
                 final MagicGame game,
@@ -32,5 +23,5 @@ public class Shattered_Angel {
                 game.doAction(new MagicChangeLifeAction(event.getPlayer(),3));
             }
         }        
-    };
-}
+    }
+]
