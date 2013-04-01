@@ -28,14 +28,16 @@ public enum MagicType {
     
     public static final Set<MagicType> ALL_CARD_TYPES = EnumSet.range(Artifact, Vanguard);
     public static final Set<MagicType> FILTER_TYPES = EnumSet.of(
-            Legendary,
-            Artifact,
-            Creature,
-            Enchantment,
-            Instant,
-            Land,
-            Sorcery,
-            Tribal);
+        Legendary,
+        Artifact,
+        Creature,
+        Enchantment,
+        Instant,
+        Land,
+        Planeswalker,
+        Sorcery,
+        Tribal
+    );
     
     private final int mask;
     
