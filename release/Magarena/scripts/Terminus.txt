@@ -8,4 +8,4 @@ type=Sorcery
 cost={4}{W}{W}
 ability=miracle {W}
 timing=removal
-requires_card_code
+requires_groovy_code
