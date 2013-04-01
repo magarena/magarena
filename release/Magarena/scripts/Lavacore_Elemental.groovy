@@ -1,16 +1,5 @@
-package magic.card;
-
-import magic.model.MagicCounterType;
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicSource;
-import magic.model.action.MagicChangeCountersAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
-
-public class Lavacore_Elemental {
-    public static final MagicWhenDamageIsDealtTrigger T3 = new MagicWhenDamageIsDealtTrigger() {
+[
+    new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicSource source = damage.getSource();
@@ -21,7 +10,8 @@ public class Lavacore_Elemental {
                 new MagicEvent(
                     permanent,
                     this,
-                    "PN puts a time counter on SN.") :
+                    "PN puts a time counter on SN."
+                ) :
                 MagicEvent.NONE;
         }
         @Override
@@ -30,5 +20,5 @@ public class Lavacore_Elemental {
                 final MagicEvent event) {
             game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,1,true));
         }
-    };
-}
+    }
+]
