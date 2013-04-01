@@ -7,4 +7,4 @@ type=Sorcery
 cost={X}{X}{W}{W}{W}
 timing=main
 ability=miracle {X}{W}{W}
-requires_card_code
+requires_groovy_code
