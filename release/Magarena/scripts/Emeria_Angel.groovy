@@ -10,7 +10,7 @@
                     MagicSimpleMayChoice.DEFAULT_YES
                 ),
                 this,
-                "PN may$ put a 1/1 white Bird creature " +
+                "PN may\$ put a 1/1 white Bird creature " +
                 "token with flying onto the battlefield."
             );
         }

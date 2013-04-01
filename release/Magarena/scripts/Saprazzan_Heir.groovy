@@ -11,7 +11,7 @@
                         MagicSimpleMayChoice.DEFAULT_NONE
                     ),
                     this,
-                    "PN may$ draw three cards."
+                    "PN may\$ draw three cards."
                 ):
                 MagicEvent.NONE;
         }

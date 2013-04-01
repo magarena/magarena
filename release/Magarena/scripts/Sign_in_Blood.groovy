@@ -6,7 +6,7 @@
                 cardOnStack,
                 MagicTargetChoice.TARGET_PLAYER,
                 this,
-                "Target player$ draws two cards and loses 2 life."
+                "Target player\$ draws two cards and loses 2 life."
             );
         }
         @Override

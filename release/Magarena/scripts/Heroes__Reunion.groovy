@@ -6,7 +6,7 @@
                 cardOnStack,
                 MagicTargetChoice.POS_TARGET_PLAYER,
                 this,
-                'Target player$ gains 7 life.'
+                "Target player\$ gains 7 life."
             );
         }
         @Override

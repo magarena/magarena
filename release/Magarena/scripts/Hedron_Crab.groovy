@@ -6,7 +6,7 @@
                 permanent,
                 MagicTargetChoice.TARGET_PLAYER,
                 this,
-                "Target player$ puts the top three cards " +
+                "Target player\$ puts the top three cards " +
                 "of his or her library into his or her graveyard."
             );
         }

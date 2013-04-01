@@ -6,7 +6,7 @@
                 cardOnStack,
                 MagicTargetChoice.TARGET_OPPONENT,
                 this,
-                "Target opponent$ discards a card at random, then discards a card."
+                "Target opponent\$ discards a card at random, then discards a card."
             );
         }
         @Override

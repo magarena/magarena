@@ -11,7 +11,7 @@
                         MagicSimpleMayChoice.DEFAULT_YES
                     ),
                     this,
-                    "PN may$ gain 4 life."
+                    "PN may\$ gain 4 life."
                 ) :
                 MagicEvent.NONE;
         }

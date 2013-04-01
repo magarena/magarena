@@ -10,7 +10,7 @@
                     MagicSimpleMayChoice.DEFAULT_YES
                 ),
                 this,
-                "PN may$ put a 4/4 green Beast " +
+                "PN may\$ put a 4/4 green Beast " +
                 "creature token onto the battlefield."
             );
         }

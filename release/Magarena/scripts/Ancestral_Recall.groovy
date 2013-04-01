@@ -6,7 +6,7 @@
                 cardOnStack,
                 MagicTargetChoice.TARGET_PLAYER,
                 this,
-                "Target player$ draws three cards."
+                "Target player\$ draws three cards."
             );
         }
         @Override

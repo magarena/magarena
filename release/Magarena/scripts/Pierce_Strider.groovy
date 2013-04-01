@@ -7,7 +7,7 @@
                 player,
                 MagicTargetChoice.TARGET_OPPONENT,
                 this,
-                'Target opponent$ loses 3 life.'
+                "Target opponent\$ loses 3 life."
             );
         }
         

@@ -9,7 +9,7 @@
                     new MagicPayManaCostChoice(MagicManaCost.create("{1}"))
                 ),
                 this,
-                "You may$ pay {1}. If you don't, sacrifice SN."
+                "You may\$ pay {1}. If you don't, sacrifice SN."
             );
         }
         @Override

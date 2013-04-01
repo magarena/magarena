@@ -6,7 +6,7 @@
                 cardOnStack,
                 MagicTargetChoice.POS_TARGET_PLAYER,                    
                 this,
-                "Target player$ takes an extra turn after this one."
+                "Target player\$ takes an extra turn after this one."
             );
         }
         @Override

@@ -9,7 +9,7 @@
                     new MagicPayManaCostChoice(MagicManaCost.create("{2}"))
                 ),
                 this,
-                'You may$ pay {2}$. If you do, draw a card.'
+                "You may\$ pay {2}. If you do, draw a card."
             );
         }
         

@@ -7,7 +7,7 @@
                 player,
                 MagicTargetChoice.TARGET_SPELL,
                 this,
-                'Counter target spell$.'
+                "Counter target spell\$."
             );
         }
         @Override

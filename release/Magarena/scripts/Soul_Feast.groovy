@@ -6,7 +6,7 @@
                 cardOnStack,
                 MagicTargetChoice.NEG_TARGET_PLAYER,
                 this,
-                'Target player$ loses 4 life and PN gains 4 life.'
+                "Target player\$ loses 4 life and PN gains 4 life."
             );
         }
         @Override

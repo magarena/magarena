@@ -6,7 +6,7 @@
                 cardOnStack,
                 MagicTargetChoice.NEG_TARGET_NONCREATURE_SPELL,
                 this,
-                "Counter target noncreature spell$ unless its controller pays {2}."
+                "Counter target noncreature spell\$ unless its controller pays {2}."
             );
         }
         @Override

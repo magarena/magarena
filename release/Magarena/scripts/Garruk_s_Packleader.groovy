@@ -15,7 +15,7 @@
                         MagicSimpleMayChoice.DEFAULT_NONE
                     ),
                     this,
-                    'You may$ draw a card.'
+                    "You may\$ draw a card."
                 ):
                 MagicEvent.NONE;
         }

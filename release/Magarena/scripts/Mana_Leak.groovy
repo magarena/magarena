@@ -6,7 +6,7 @@
                 cardOnStack,
                 MagicTargetChoice.NEG_TARGET_SPELL,
                 this,
-                "Counter target spell$ unless its controller pays {3}."
+                "Counter target spell\$ unless its controller pays {3}."
             );
         }
         @Override

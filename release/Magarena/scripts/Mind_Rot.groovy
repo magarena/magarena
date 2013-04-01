@@ -6,7 +6,7 @@
                 cardOnStack,
                 MagicTargetChoice.NEG_TARGET_PLAYER,
                 this,
-                "Target player$ discards two cards."
+                "Target player\$ discards two cards."
             );
         }
         @Override
