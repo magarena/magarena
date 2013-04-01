@@ -8,4 +8,4 @@ mana=b3g3r3u3w3
 timing=land
 ability=tap add mana any,\
         enters tapped
-requires_card_code
+requires_groovy_code
