@@ -9,4 +9,4 @@ cost={3}{U}{U}
 pt=3/5
 ability=flying,kicker {1}{U} you draw three cards else draw three cards and discard three cards  
 timing=main
-requires_card_code
+requires_groovy_code
