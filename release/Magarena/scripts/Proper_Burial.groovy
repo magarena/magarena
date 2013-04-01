@@ -1,13 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeLifeAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
-
-public class Proper_Burial {
-    public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
+[
+    new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
             final int toughness = otherPermanent.getToughness();
@@ -27,8 +19,9 @@ public class Proper_Burial {
                 final MagicGame game,
                 final MagicEvent event) {
             game.doAction(new MagicChangeLifeAction(
-                    event.getPlayer(),
-                    event.getRefInt()));
+                event.getPlayer(),
+                event.getRefInt()
+            ));
         }
-    };
-}
+    }
+]
