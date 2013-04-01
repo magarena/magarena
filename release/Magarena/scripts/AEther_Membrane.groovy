@@ -1,14 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPermanentState;
-import magic.model.action.MagicChangeStateAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenBlocksTrigger;
-
-public class AEther_Membrane {
-    public static final MagicWhenBlocksTrigger T = new MagicWhenBlocksTrigger() {
+[
+    new MagicWhenBlocksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
             final MagicPermanent blocked = permanent.getBlockedCreature();
@@ -28,5 +19,5 @@ public class AEther_Membrane {
             final MagicPermanent creature = event.getRefPermanent();
             game.doAction(new MagicChangeStateAction(creature,MagicPermanentState.ReturnToHandOfOwnerAtEndOfCombat,true));
         }
-    };
-}
+    }
+]
