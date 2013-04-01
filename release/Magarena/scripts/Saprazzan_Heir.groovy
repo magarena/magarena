@@ -1,14 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicDrawAction;
-import magic.model.choice.MagicSimpleMayChoice;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
-
-public class Saprazzan_Heir {
-    public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
+[
+    new MagicWhenBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocked) {
             return (permanent == blocked) ?
@@ -24,7 +15,6 @@ public class Saprazzan_Heir {
                 ):
                 MagicEvent.NONE;
         }
-        
         @Override
         public void executeEvent(
                 final MagicGame game,
@@ -33,5 +23,5 @@ public class Saprazzan_Heir {
                 game.doAction(new MagicDrawAction(event.getPlayer(),3));
             }
         }
-    };
-}
+    }
+]
