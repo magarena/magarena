@@ -6,4 +6,4 @@ rarity=C
 type=Sorcery
 cost={R}
 timing=fmain
-requires_card_code
+requires_groovy_code
