@@ -1,17 +1,5 @@
-package magic.card;
-
-import magic.model.MagicAbility;
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicDealDamageAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenAttacksTrigger;
-
-
-// The part of this card that interacts with planeswalkers is ignored
-public class Circle_of_Flame {
-    public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
+[
+    new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             return (permanent.isEnemy(creature) &&
@@ -20,10 +8,10 @@ public class Circle_of_Flame {
                     permanent,
                     creature,
                     this,
-                    "SN deals 1 damage to attacking creature without flying."):
+                    "SN deals 1 damage to attacking creature without flying."
+                ):
                 MagicEvent.NONE;
         }
-        
         @Override
         public void executeEvent(
                 final MagicGame game,
@@ -31,5 +19,5 @@ public class Circle_of_Flame {
             final MagicDamage damage = new MagicDamage(event.getSource(),event.getRefPermanent(),1);
             game.doAction(new MagicDealDamageAction(damage));
         }
-    };
-}
+    }
+]
