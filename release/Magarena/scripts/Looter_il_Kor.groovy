@@ -1,16 +1,5 @@
-package magic.card;
-
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicDrawAction;
-import magic.model.event.MagicDiscardEvent;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
-
-public class Looter_il_Kor {
-    public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
+[
+    new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             return (damage.getSource() == permanent &&
@@ -30,5 +19,5 @@ public class Looter_il_Kor {
             game.doAction(new MagicDrawAction(player,1));
             game.addEvent(new MagicDiscardEvent(event.getPermanent(),player,1,false));
         }
-    };
-}
+    }
+]
