@@ -6,4 +6,4 @@ rarity=R
 type=Instant
 cost={U}{U}
 timing=spell
-requires_card_code=Reverberate
+requires_groovy_code=Reverberate

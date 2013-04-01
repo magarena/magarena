@@ -7,4 +7,4 @@ type=Sorcery
 cost={3}{W}{W}
 timing=removal
 removal=2
-requires_card_code=Terminus
+requires_groovy_code=Terminus

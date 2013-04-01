@@ -9,4 +9,4 @@ subtype=Aura
 cost={1}{W/U}
 timing=nextturn
 enchant=can't attack or block,neg creature
-requires_card_code=Narcolepsy
+requires_groovy_code=Narcolepsy

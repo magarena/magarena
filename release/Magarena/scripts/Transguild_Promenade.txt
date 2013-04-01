@@ -7,4 +7,4 @@ type=Land
 mana=w3u3b3r3g3
 ability=enters tapped,tap add mana any
 timing=land
-requires_card_code=Rupture Spire
+requires_groovy_code=Rupture Spire
