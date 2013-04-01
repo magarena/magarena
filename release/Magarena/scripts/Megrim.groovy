@@ -1,15 +1,5 @@
-package magic.card;
-
-import magic.model.MagicCard;
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicDealDamageAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenDiscardedTrigger;
-
-public class Megrim {
-    public static final MagicWhenDiscardedTrigger T = new MagicWhenDiscardedTrigger() {
+[
+    new MagicWhenDiscardedTrigger() {
         @Override
         public MagicEvent getEvent(final MagicPermanent permanent,final MagicCard card) {
             return permanent.isEnemy(card) ?
@@ -32,5 +22,5 @@ public class Megrim {
             );
             game.doAction(new MagicDealDamageAction(damage));
         }
-    };
-}
+    }
+]
