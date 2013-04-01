@@ -1,23 +1,14 @@
-package magic.card;
-
-import magic.model.MagicAbility;
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicDealDamageAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenAttacksTrigger;
-
-public class Raking_Canopy {
-    public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
+[
+    new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             return (creature.getController()!=permanent.getController()&&creature.hasAbility(MagicAbility.Flying)) ?
                 new MagicEvent(
-                        permanent,
-                        creature,
-                        this,
-                        "SN deals 4 damage to "+creature+".") :
+                    permanent,
+                    creature,
+                    this,
+                    "SN deals 4 damage to "+creature+"."
+                ) :
                 MagicEvent.NONE;
         }
         
@@ -28,5 +19,5 @@ public class Raking_Canopy {
             final MagicDamage damage=new MagicDamage(event.getSource(),event.getRefPermanent(),4);
             game.doAction(new MagicDealDamageAction(damage));
         }
-    };
-}
+    }
+]
