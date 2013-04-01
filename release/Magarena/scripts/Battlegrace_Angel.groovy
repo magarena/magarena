@@ -9,7 +9,7 @@
                     player,
                     creature,
                     this,
-                    creature+" gains lifelink until end of turn."
+                    "RN gains lifelink until end of turn."
                 ):
                 MagicEvent.NONE;
         }
