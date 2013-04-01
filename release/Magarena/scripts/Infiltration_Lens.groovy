@@ -1,14 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicDrawAction;
-import magic.model.choice.MagicSimpleMayChoice;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenBlocksTrigger;
-
-public class Infiltration_Lens {
-    public static final MagicWhenBlocksTrigger T = new MagicWhenBlocksTrigger() {
+[
+    new MagicWhenBlocksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             return (permanent.getEquippedCreature() == creature.getBlockedCreature()) ?
@@ -30,5 +21,5 @@ public class Infiltration_Lens {
                 game.doAction(new MagicDrawAction(event.getPlayer(),2));
             }
         }
-    };
-}
+    }
+]
