@@ -1,14 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeLifeAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicLifeChangeTriggerData;
-import magic.model.trigger.MagicWhenLifeIsLostTrigger;
-
-public class Exquisite_Blood {
-    public static final MagicWhenLifeIsLostTrigger T = new MagicWhenLifeIsLostTrigger() {
+[
+    new MagicWhenLifeIsLostTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -20,7 +11,8 @@ public class Exquisite_Blood {
                     permanent,
                     amount,
                     this,
-                    "PN gains " + amount + " life."):
+                    "PN gains " + amount + " life."
+                ):
                 MagicEvent.NONE;
         }
         @Override
@@ -28,8 +20,9 @@ public class Exquisite_Blood {
                 final MagicGame game,
                 final MagicEvent event) {
             game.doAction(new MagicChangeLifeAction(
-                    event.getPlayer(),
-                    event.getRefInt()));
+                event.getPlayer(),
+                event.getRefInt()
+            ));
         }
-    };
-}
+    }
+]
