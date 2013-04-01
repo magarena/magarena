@@ -1,16 +1,5 @@
-package magic.card;
-
-import magic.model.MagicAbility;
-import magic.model.MagicCounterType;
-import magic.model.MagicPermanent;
-import magic.model.MagicPowerToughness;
-import magic.model.mstatic.MagicLayer;
-import magic.model.mstatic.MagicStatic;
-
-import java.util.Set;
-
-public class Beastbreaker_of_Bala_Ged {
-    public static final MagicStatic S1 = new MagicStatic(MagicLayer.SetPT) {
+[
+    new MagicStatic(MagicLayer.SetPT) {
         @Override
         public void modPowerToughness(
                 final MagicPermanent source,
@@ -23,9 +12,8 @@ public class Beastbreaker_of_Bala_Ged {
                 pt.set(4,4);
             }
         }
-    };
-
-    public static final MagicStatic S2 = new MagicStatic(MagicLayer.Ability) {
+    },
+    new MagicStatic(MagicLayer.Ability) {
         @Override
         public void modAbilityFlags(
                 final MagicPermanent source,
@@ -35,5 +23,5 @@ public class Beastbreaker_of_Bala_Ged {
                 flags.add(MagicAbility.Trample);
             }
         }
-    };
-}
+    }
+]
