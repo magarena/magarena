@@ -207,6 +207,18 @@ public interface MagicCondition {
             return source.getController().controlsPermanentWithSubType(MagicSubType.Golem);
         }
     };
+
+    MagicCondition CONTROL_ANOTHER_MULTICOLORED_PERMANENT = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicPermanent owner = (MagicPermanent)source;
+            for (final MagicPermanent permanent : owner.getController().getPermanents()) {
+                if (permanent != owner && MagicColor.isMulti(permanent)) {
+                    return true;
+                }
+            }
+            return false;
+        }
+    };
     
     MagicCondition ONE_CREATURE_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {

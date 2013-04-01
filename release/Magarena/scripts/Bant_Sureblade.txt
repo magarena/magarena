@@ -8,4 +8,4 @@ subtype=Human,Soldier
 cost={G/U}{W}
 pt=2/1
 timing=main
-requires_card_code
+requires_groovy_code
