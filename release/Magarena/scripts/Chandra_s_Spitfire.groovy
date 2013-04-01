@@ -1,17 +1,5 @@
-package magic.card;
-
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicChangeTurnPTAction;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicTarget;
-import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
-
-
-public class Chandra_s_Spitfire {
-    public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
+[
+    new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicPlayer player=permanent.getController();
@@ -21,7 +9,8 @@ public class Chandra_s_Spitfire {
                     permanent,
                     player,
                     this,
-                    "SN gets +3/+0 until end of turn."):
+                    "SN gets +3/+0 until end of turn."
+                ):
                 MagicEvent.NONE;
         }
         @Override
@@ -30,5 +19,5 @@ public class Chandra_s_Spitfire {
                 final MagicEvent event) {
             game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),3,0));
         }
-    };
-}
+    }
+]
