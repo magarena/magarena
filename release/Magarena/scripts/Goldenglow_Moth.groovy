@@ -1,14 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeLifeAction;
-import magic.model.choice.MagicSimpleMayChoice;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenBlocksTrigger;
-
-public class Goldenglow_Moth {
-    public static final MagicWhenBlocksTrigger T = new MagicWhenBlocksTrigger() {
+[
+    new MagicWhenBlocksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             return (creature == permanent) ?
@@ -17,13 +8,13 @@ public class Goldenglow_Moth {
                     new MagicSimpleMayChoice(
                         MagicSimpleMayChoice.GAIN_LIFE,
                         3,
-                        MagicSimpleMayChoice.DEFAULT_YES),
+                        MagicSimpleMayChoice.DEFAULT_YES
+                    ),
                     this,
                     "PN may$ gain 4 life."
                 ) :
                 MagicEvent.NONE;
         }
-        
         @Override
         public void executeEvent(
                 final MagicGame game,
@@ -32,5 +23,5 @@ public class Goldenglow_Moth {
                 game.doAction(new MagicChangeLifeAction(event.getPlayer(),4));
             }
         }
-    };
-}
+    }
+]
