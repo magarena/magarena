@@ -1,14 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicTapAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicAtUpkeepTrigger;
-
-public class Narcolepsy {
-    public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
+[
+    new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             final MagicPermanent enchantedCreature=permanent.getEnchantedCreature();
@@ -30,5 +21,5 @@ public class Narcolepsy {
                 game.doAction(new MagicTapAction(enchantedCreature,true));
             }
         }        
-    };
-}
+    }
+]
