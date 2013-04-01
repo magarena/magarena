@@ -1,15 +1,5 @@
-package magic.card;
-
-import magic.data.TokenCardDefinitions;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicPlayTokenAction;
-import magic.model.choice.MagicSimpleMayChoice;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicLandfallTrigger;
-
-public class Rampaging_Baloths {
-    public static final MagicLandfallTrigger T = new MagicLandfallTrigger() {
+[
+    new MagicLandfallTrigger() {
         @Override
         public MagicEvent getEvent(final MagicPermanent permanent) {
             return new MagicEvent(
@@ -17,7 +7,8 @@ public class Rampaging_Baloths {
                 new MagicSimpleMayChoice(
                     MagicSimpleMayChoice.PLAY_TOKEN,
                     1,
-                    MagicSimpleMayChoice.DEFAULT_YES),
+                    MagicSimpleMayChoice.DEFAULT_YES
+                ),
                 this,
                 "PN may$ put a 4/4 green Beast " +
                 "creature token onto the battlefield."
@@ -29,9 +20,10 @@ public class Rampaging_Baloths {
                 final MagicEvent event) {
             if (event.isYes()) {
                 game.doAction(new MagicPlayTokenAction(
-                        event.getPlayer(),
-                        TokenCardDefinitions.get("Beast4")));
+                    event.getPlayer(),
+                    TokenCardDefinitions.get("Beast4")
+                ));
             }
-        }        
-    };
-}
+        } 
+    }
+]
