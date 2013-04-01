@@ -6,4 +6,4 @@ rarity=R
 type=Instant
 cost={2}{W}
 timing=removal
-requires_card_code
+requires_groovy_code
