@@ -1,14 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicDrawAction;
-import magic.model.choice.MagicSimpleMayChoice;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
-
-public class Chambered_Nautilus {
-    public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
+[
+    new MagicWhenBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocked) {
             return (permanent == blocked) ?
@@ -17,13 +8,13 @@ public class Chambered_Nautilus {
                     new MagicSimpleMayChoice(
                         MagicSimpleMayChoice.DRAW_CARDS,
                         1,
-                        MagicSimpleMayChoice.DEFAULT_NONE),
+                        MagicSimpleMayChoice.DEFAULT_NONE
+                    ),
                     this,
                     "PN may$ draw a card."
                 ):
                 MagicEvent.NONE;
         }
-        
         @Override
         public void executeEvent(
                 final MagicGame game,
@@ -32,5 +23,5 @@ public class Chambered_Nautilus {
                 game.doAction(new MagicDrawAction(event.getPlayer(),1));
             }
         }
-    };
-}
+    }
+]
