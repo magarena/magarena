@@ -1,13 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeLifeAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
-
-public class Angelic_Chorus {
-    public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
+[
+    new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
             return (otherPermanent.isCreature() && 
@@ -16,7 +8,7 @@ public class Angelic_Chorus {
                     permanent,
                     otherPermanent,
                     this,
-                    "PN gains life equal to the toughness of " + otherPermanent + "."
+                    "PN gains life equal to the toughness of RN."
                 ) :
                 MagicEvent.NONE;
         }
@@ -29,5 +21,5 @@ public class Angelic_Chorus {
             final int toughness = (event.getRefPermanent()).getToughness();
             game.doAction(new MagicChangeLifeAction(event.getPlayer(),toughness));
         }
-    };
-}
+    }
+]
