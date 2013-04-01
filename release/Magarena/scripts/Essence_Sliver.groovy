@@ -1,17 +1,5 @@
-package magic.card;
-
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicSource;
-import magic.model.MagicSubType;
-import magic.model.action.MagicChangeLifeAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
-
-public class Essence_Sliver {
-        
-    public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
+[ 
+    new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final int amount=damage.getDealtAmount();
@@ -33,5 +21,5 @@ public class Essence_Sliver {
                 final MagicEvent event) {
              game.doAction(new MagicChangeLifeAction(event.getPlayer(),event.getRefInt()));
         }
-    };
-}
+    }
+]
