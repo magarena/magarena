@@ -7,4 +7,4 @@ type=Instant
 cost={1}{W}
 timing=pump
 ability=cycling {2}
-requires_card_code=Fog
+requires_groovy_code=Fog
