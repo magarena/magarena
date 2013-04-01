@@ -1,14 +1,5 @@
-package magic.card;
-
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicDealDamageAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
-
-public class Dingus_Egg {
-    public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
+[
+    new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -19,7 +10,8 @@ public class Dingus_Egg {
                     permanent,
                     otherPermanent.getController(),
                     this,
-                    "SN deals 2 damage to PN.") :
+                    "SN deals 2 damage to PN."
+                ) :
                 MagicEvent.NONE;
         }
         @Override
@@ -33,5 +25,5 @@ public class Dingus_Egg {
             );
             game.doAction(new MagicDealDamageAction(damage));
         }
-    };
-}
+    }
+]
