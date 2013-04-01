@@ -1,15 +1,5 @@
-package magic.card;
-
-import magic.model.MagicAbility;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicChangeTurnPTAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenAttacksTrigger;
-
-public class Stonebrow__Krosan_Hero {
-    public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
+[
+    new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             final MagicPlayer player=permanent.getController();
@@ -20,7 +10,8 @@ public class Stonebrow__Krosan_Hero {
                     player,
                     creature,
                     this,
-                    creature + " gets +2/+2 until end of turn."):
+                    creature + " gets +2/+2 until end of turn."
+                ):
                 MagicEvent.NONE;
         }
         @Override
@@ -29,5 +20,5 @@ public class Stonebrow__Krosan_Hero {
                 final MagicEvent event) {
             game.doAction(new MagicChangeTurnPTAction(event.getRefPermanent(),2,2));
         }
-    };
-}
+    }
+]
