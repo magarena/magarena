@@ -1,15 +1,5 @@
-package magic.card;
-
-import magic.model.MagicCounterType;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicChangeCountersAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicAtUpkeepTrigger;
-
-public class Biting_Tether {
-    public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
+[
+    new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -31,8 +21,9 @@ public class Biting_Tether {
                 final MagicGame game,
                 final MagicEvent event) {
             game.doAction(new MagicChangeCountersAction(
-                    event.getRefPermanent(),
-                    MagicCounterType.MinusOne,1,true));            
+                event.getRefPermanent(),
+                MagicCounterType.MinusOne,1,true
+            ));            
         }
-    };
-}
+    }
+]
