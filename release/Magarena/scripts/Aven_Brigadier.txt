@@ -10,4 +10,4 @@ ability=flying
 pt=3/5
 static=all
 timing=main
-requires_card_code
+requires_groovy_code
