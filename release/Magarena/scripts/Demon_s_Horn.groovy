@@ -1,17 +1,5 @@
-package magic.card;
-
-import magic.model.MagicColor;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeLifeAction;
-import magic.model.choice.MagicSimpleMayChoice;
-import magic.model.event.MagicEvent;
-import magic.model.stack.MagicCardOnStack;
-import magic.model.trigger.MagicWhenOtherSpellIsCastTrigger;
-
-
-public class Demon_s_Horn {
-    public static final MagicWhenOtherSpellIsCastTrigger T = new MagicWhenOtherSpellIsCastTrigger() {
+[
+    new MagicWhenOtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
             return cardOnStack.hasColor(MagicColor.Black) ?
@@ -20,9 +8,11 @@ public class Demon_s_Horn {
                     new MagicSimpleMayChoice(
                         MagicSimpleMayChoice.GAIN_LIFE,
                         1,
-                        MagicSimpleMayChoice.DEFAULT_YES),
+                        MagicSimpleMayChoice.DEFAULT_YES
+                    ),
                     this,
-                    "PN may$ gain 1 life.") :
+                    "PN may$ gain 1 life."
+                ) :
                 MagicEvent.NONE;
         }
         
@@ -32,5 +22,5 @@ public class Demon_s_Horn {
                 game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
             }
         }
-    };
-}
+    }
+]
