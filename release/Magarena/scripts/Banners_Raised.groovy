@@ -1,26 +1,14 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPayedCost;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeTurnPTAction;
-import magic.model.event.MagicEvent;
-import magic.model.event.MagicSpellCardEvent;
-import magic.model.stack.MagicCardOnStack;
-import magic.model.target.MagicTargetFilter;
-
-import java.util.Collection;
-
-public class Banners_Raised {
-    public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+[
+    new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(
                 final MagicCardOnStack cardOnStack,
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack,
-                    this,
-                    "Creatures PN controls get +1/+0 until end of turn.");
+                cardOnStack,
+                this,
+                "Creatures PN controls get +1/+0 until end of turn."
+            );
         }
         @Override
         public void executeEvent(
@@ -33,5 +21,5 @@ public class Banners_Raised {
                 game.doAction(new MagicChangeTurnPTAction(target,1,0));
             }
         }
-    };
-}
+    }
+]
