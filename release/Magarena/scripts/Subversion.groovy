@@ -1,14 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicChangeLifeAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicAtUpkeepTrigger;
-
-public class Subversion {
-    public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
+[
+    new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -30,5 +21,5 @@ public class Subversion {
             game.doAction(new MagicChangeLifeAction(player.getOpponent(),-1));
             game.doAction(new MagicChangeLifeAction(player,1));
         }        
-    };
-}
+    }
+]
