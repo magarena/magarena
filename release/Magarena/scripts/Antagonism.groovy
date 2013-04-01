@@ -1,16 +1,5 @@
-package magic.card;
-
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.MagicPlayerState;
-import magic.model.action.MagicDealDamageAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicAtEndOfTurnTrigger;
-
-public class Antagonism {
-    public static final MagicAtEndOfTurnTrigger T = new MagicAtEndOfTurnTrigger() {
+[
+    new MagicAtEndOfTurnTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -21,10 +10,10 @@ public class Antagonism {
                     permanent,
                     player,
                     this,
-                    "SN deals 2 damage to PN."):
+                    "SN deals 2 damage to PN."
+                ):
                 MagicEvent.NONE;
         }
-        
         @Override
         public void executeEvent(
                 final MagicGame game,
@@ -36,5 +25,5 @@ public class Antagonism {
             );
             game.doAction(new MagicDealDamageAction(damage));
         }    
-    };
-}
+    }
+]
