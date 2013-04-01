@@ -9,4 +9,4 @@ cost={1}{U}
 pt=0/3
 ability=level up {2} 5
 timing=main
-requires_card_code
+requires_groovy_code
