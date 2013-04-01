@@ -19,7 +19,7 @@ public class RandomAI implements MagicAI {
     }
 
     private RandomAI(final boolean log) {
-        LOGGING = log || (System.getProperty("debug") != null);
+        LOGGING = log || Boolean.getBoolean("debug");
     }
     
     private void log(final String message) {

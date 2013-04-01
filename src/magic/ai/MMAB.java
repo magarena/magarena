@@ -28,7 +28,7 @@ public class MMAB implements MagicAI {
     }
     
     MMAB(final boolean log, final boolean cheat) {
-        LOGGING = log || (System.getProperty("debug") != null);
+        LOGGING = log || Boolean.getBoolean("debug");
         CHEAT = cheat;
     }
     

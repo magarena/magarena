@@ -147,6 +147,9 @@ public class CardDefinitions {
     private static void loadCardDefinition(final File file) {
         try {
             final MagicCardDefinition cdef = prop2carddef(FileIO.toProp(file));
+            if (Boolean.getBoolean("debug")) {
+                cdef.loadScript();
+            }
             cdef.validate();
             addDefinition(cdef);
         } catch (final Throwable cause) {
