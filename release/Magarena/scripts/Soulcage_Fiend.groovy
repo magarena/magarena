@@ -1,16 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicLocationType;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicChangeLifeAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicGraveyardTriggerData;
-import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
-
-public class Soulcage_Fiend {
-    public static final MagicWhenPutIntoGraveyardTrigger T = new MagicWhenPutIntoGraveyardTrigger() {
+[
+    new MagicWhenPutIntoGraveyardTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -32,5 +21,5 @@ public class Soulcage_Fiend {
                 game.doAction(new MagicChangeLifeAction(player,-3));
             }
         }
-    };
-}
+    }
+]
