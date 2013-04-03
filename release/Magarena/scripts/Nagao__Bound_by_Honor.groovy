@@ -1,16 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeTurnPTAction;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicTargetFilter;
-import magic.model.trigger.MagicWhenAttacksTrigger;
-
-import java.util.Collection;
-
-public class Nagao__Bound_by_Honor {
-    public static final MagicWhenAttacksTrigger T3 = new MagicWhenAttacksTrigger() {
+[
+    new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             return (permanent == creature) ?
@@ -21,7 +10,6 @@ public class Nagao__Bound_by_Honor {
                 ) :
                 MagicEvent.NONE;
         }
-        
         @Override
         public void executeEvent(
                 final MagicGame game,
@@ -32,5 +20,5 @@ public class Nagao__Bound_by_Honor {
                 game.doAction(new MagicChangeTurnPTAction(creature,1,1));
             }
         }
-    };
-}
+    }
+]
