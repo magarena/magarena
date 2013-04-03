@@ -9,4 +9,4 @@ cost={W}{W}
 pt=1/1
 ability=protection from black,protection from red
 timing=main
-requires_card_code=Soul's Attendant
+requires_groovy_code=Soul's Attendant

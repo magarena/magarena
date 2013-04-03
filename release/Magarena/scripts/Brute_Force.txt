@@ -6,4 +6,4 @@ rarity=C
 type=Instant
 cost={R}
 timing=pump
-requires_card_code=Giant Growth
+requires_groovy_code=Giant Growth

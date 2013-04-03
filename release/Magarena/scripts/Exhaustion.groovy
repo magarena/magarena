@@ -6,7 +6,7 @@
                 cardOnStack,
                 MagicTargetChoice.TARGET_OPPONENT,
                 this,
-                "Creatures and lands target opponent$ controls don't untap during that opponent's next untap step."
+                "Creatures and lands target opponent\$ controls don't untap during that opponent's next untap step."
             );
         }
         @Override

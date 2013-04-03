@@ -6,7 +6,7 @@
                 permanent,
                 MagicTargetChoice.TARGET_OPPONENT,
                 this,
-                "Target opponent$ loses 2 life and PN gains 2 life."
+                "Target opponent\$ loses 2 life and PN gains 2 life."
             );
         }
         @Override
