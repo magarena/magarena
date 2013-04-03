@@ -479,6 +479,12 @@ public class MagicGame {
             player.getLibrary().setKnown(false);
         }        
     }
+    
+    public void showRandomizedHiddenCards() {
+        getOpponent(scorePlayer).showRandomizedHandAndLibrary();
+        scorePlayer.getLibrary().shuffle(MagicRandom.nextInt(999999));
+        scorePlayer.getLibrary().setKnown(true);
+    }
 
     Collection<MagicAction> getActions() {
         return actions;

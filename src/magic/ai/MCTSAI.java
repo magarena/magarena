@@ -345,6 +345,7 @@ public class MCTSAI implements MagicAI {
             }
         }
 
+        game.showRandomizedHiddenCards();
         final int startActions = game.getNumActions();
         getNextChoices(game, true);
         final int actions = Math.min(MAX_ACTIONS, game.getNumActions() - startActions);
@@ -358,10 +359,7 @@ public class MCTSAI implements MagicAI {
         }
     }
     
-    private List<Object[]> getNextChoices(
-            final MagicGame game, 
-            final boolean sim) {
-        
+    private List<Object[]> getNextChoices(final MagicGame game, final boolean sim) {
 
         final int startActions = game.getNumActions();
 

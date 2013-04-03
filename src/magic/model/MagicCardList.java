@@ -130,7 +130,7 @@ public class MagicCardList extends ArrayList<MagicCard> {
         shuffle(getStateId());
     }
     
-    private void shuffle(final long seed) {
+    public void shuffle(final long seed) {
         final magic.MersenneTwisterFast rng = new magic.MersenneTwisterFast(seed);
         final MagicCardList oldCards = new MagicCardList(this);
         clear();

@@ -10,7 +10,7 @@ public enum MagicAIImpl {
     RND("random", new RandomAI()),
     ;
     
-    private static final MagicAIImpl[] SUPPORTED_AIS = {MMAB, MMABC, MCTS, VEGAS, RND};
+    private static final MagicAIImpl[] SUPPORTED_AIS = {MMAB, MMABC, MCTSNC, MCTS, VEGAS, RND};
     
     private final String name;
     private final MagicAI ai;

@@ -82,7 +82,7 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
     }
     
     public long getStateId() {
-        return cardDefinition.getIndex();
+        return getCardDefinition().getIndex();
     }
     
     public int getImageIndex() {
@@ -90,11 +90,7 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
     }
 
     public MagicCardDefinition getCardDefinition() {
-        if (known) {
-            return cardDefinition;
-        } else {
-            return MagicCardDefinition.UNKNOWN;
-        }
+        return known ? cardDefinition : MagicCardDefinition.UNKNOWN;
     }
         
     public MagicPlayer getOwner() {
@@ -244,7 +240,7 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
 
     @Override
     public int compareTo(final MagicCard card) {
-        final int diff = cardDefinition.getIndex() - card.cardDefinition.getIndex();
+        final int diff = getCardDefinition().getIndex() - card.getCardDefinition().getIndex();
         if (diff != 0) {
             return diff;
         } else {

@@ -270,17 +270,29 @@ public class MagicPlayer implements MagicTarget {
         return hand.removeCard(card);
     }
     
-    private void removeAllCardsFromHand() {
-        activationMap.removeActivations(hand);
-        hand.clear();
-    }
-    
     void setHandToUnknown() {
         activationMap.removeActivations(hand);
         hand.setKnown(false);
         activationMap.addActivations(hand);
     }
 
+    void showRandomizedHandAndLibrary() {
+        // put hand back into library
+        final int handSize = hand.size();
+        while (hand.size() > 0) {
+            final MagicCard card = hand.getCardAtTop();
+            removeCardFromHand(card);
+            library.addToTop(card);
+        }
+        // shuffle
+        library.shuffle(MagicRandom.nextInt(999999));
+        library.setKnown(true);
+        // put handSize cards into hand
+        for (int i = 0; i < handSize; i++) {
+            addCardToHand(library.removeCardAtTop());
+        }
+    }
+    
     void createHandAndLibrary(final int handSize) {
         for (final MagicCardDefinition cardDefinition : playerDefinition.getDeck()) {
             final long id = currGame.getUniqueId();
