@@ -1,14 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicSubType;
-import magic.model.action.MagicChangeTurnPTAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
-
-public class Berserk_Murlodont {
-    public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
+[
+    new MagicWhenBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocked) {
             return blocked.hasSubType(MagicSubType.Beast) ?
@@ -16,7 +7,7 @@ public class Berserk_Murlodont {
                     permanent,
                     blocked,
                     this,
-                    blocked + " gets +1/+1 until end of turn for each creature blocking it."
+                    "RN gets +1/+1 until end of turn for each creature blocking it."
                 ):
                 MagicEvent.NONE;
         }
@@ -33,5 +24,5 @@ public class Berserk_Murlodont {
                 amount
             ));
         }
-    };
-}
+    }
+]
