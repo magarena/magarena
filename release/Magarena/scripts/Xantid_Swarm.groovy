@@ -1,16 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.MagicPlayerState;
-import magic.model.action.MagicChangePlayerStateAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenAttacksTrigger;
-
-
-public class Xantid_Swarm {
-    public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
+[
+    new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -20,9 +9,9 @@ public class Xantid_Swarm {
             return (permanent == creature) ?
                 new MagicEvent(
                     permanent,
-                    player,
+                    player.getOpponent(),
                     this,
-                    player.getOpponent() + " can't cast spells this turn."
+                    "PN can't cast spells this turn."
                 ):
                 MagicEvent.NONE;           
         }
@@ -32,9 +21,9 @@ public class Xantid_Swarm {
                 final MagicGame game,
                 final MagicEvent event) {
             game.doAction(new MagicChangePlayerStateAction(
-                event.getPlayer().getOpponent(),
+                event.getPlayer(),
                 MagicPlayerState.CantCastSpells
             ));
         }
-    };
-}
+    }
+]
