@@ -18,7 +18,6 @@ public class ArtificialChoiceResults {
             buffer.append(" (");
             boolean first=true;
             for (final Object choiceResult : choiceResults) {
-            
                 if (first) {
                     first=false;
                 } else {
