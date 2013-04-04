@@ -21,8 +21,8 @@ Magarena supports the following keyboard shortcuts :
 Selecting the AI to play against:
   The desired AI can be selected in the "New duel" dialog (Arena -> New duel).
 
-  For Minimax and Monte Carlo Tree Search AI, the difficulty level is the
-  maximum number of seconds the AI is allowed to use to decide a move.
+  The AI's difficulty level is the maximum number of seconds the AI is allowed
+  to use to decide a move.
 
 Thanks to
   ubeefx for creating such a great game
@@ -50,6 +50,11 @@ Thank you for your support and have fun!
 
 
 
+
+
+Release 1.37 (April 27, 2013)
+============
+includes contributions from ...
 
 
 Release 1.36 (March 29, 2013)
