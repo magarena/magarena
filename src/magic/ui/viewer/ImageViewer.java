@@ -71,9 +71,8 @@ public class ImageViewer extends JPanel {
     }
     
     private static synchronized File rndFile() {
-        if (imageFiles.isEmpty()) {
-            return new File("");
-        }
+        assert !imageFiles.isEmpty() : "imageFiles is empty";
+        
         if (imageIndices.size()==0) {
             for (int index=0;index<imageFiles.size();index++) {
                 imageIndices.add(index);
@@ -86,7 +85,9 @@ public class ImageViewer extends JPanel {
     public ImageViewer() {
         setOpaque(false);
         
-        image = magic.data.FileIO.toImg(rndFile(), ThemeFactory.getInstance().getCurrentTheme().getLogoTexture());
+        image = !imageFiles.isEmpty() ?
+            magic.data.FileIO.toImg(rndFile(), ThemeFactory.getInstance().getCurrentTheme().getLogoTexture()) :
+            ThemeFactory.getInstance().getCurrentTheme().getLogoTexture();
         
         imageWidth=image.getWidth();
         imageHeight=image.getHeight();
