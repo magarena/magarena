@@ -15,7 +15,7 @@ import magic.model.phase.MagicPhase;
 
 public class MMAB implements MagicAI {
     
-    private static final long      SEC_TO_NANO=1000000000L;
+    private static final long SEC_TO_NANO=1000000000L;
     private static final int THREADS = Runtime.getRuntime().availableProcessors();
     
     private final boolean LOGGING;
