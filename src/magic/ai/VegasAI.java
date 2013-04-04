@@ -3,23 +3,31 @@ package magic.ai;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicRandom;
+import magic.model.MagicGameLog;
 import magic.model.event.MagicEvent;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ExecutorService;
 import java.util.concurrent.TimeUnit;
 
 public class VegasAI implements MagicAI {
 
+    private static final long SEC_TO_NANO=1000000000L;
     private static final int THREADS=Runtime.getRuntime().availableProcessors();
-    private static final int SIMULATIONS=120;
+    
+    private void log(final String message) {
+        MagicGameLog.log(message);
+        if (Boolean.getBoolean("debug")) {
+            System.err.println(message);
+        }
+    }
     
     @Override
     public Object[] findNextEventChoiceResults(final MagicGame sourceGame,final MagicPlayer scorePlayer) {
+        final long startTime = System.currentTimeMillis();
 
         final MagicGame choiceGame=new MagicGame(sourceGame,scorePlayer);
         choiceGame.hideHiddenCards();
@@ -38,43 +46,53 @@ public class VegasAI implements MagicAI {
         }
         
         // Multiple choices
-        final BlockingQueue<Runnable> queue=new ArrayBlockingQueue<Runnable>(size*THREADS);
-        final ThreadPoolExecutor executor=new ThreadPoolExecutor(THREADS,THREADS,2,TimeUnit.MINUTES,queue);
+        final ExecutorService executor = Executors.newFixedThreadPool(THREADS);
         final List<VegasScore> scores=new ArrayList<VegasScore>();
-        final int simulations=(sourceGame.getArtificialLevel(scorePlayer.getIndex())*SIMULATIONS)/THREADS;
+        final int artificialLevel = sourceGame.getArtificialLevel(scorePlayer.getIndex());
+        final int rounds = (size + THREADS - 1) / THREADS;
+        final long slice = artificialLevel * SEC_TO_NANO / rounds;
         for (final Object[] choiceResults : choiceResultsList) {
-        
             final VegasScore score=new VegasScore(choiceResults);
             scores.add(score);
-            for (int count=THREADS;count>0;count--) {
-                
-                final VegasWorker worker=new VegasWorker(
-                        choiceGame,
-                        choiceGame.getScorePlayer(),
-                        score,
-                        new Random(MagicRandom.nextInt(1000000)),
-                        simulations);
-                executor.execute(worker);
-            }
+            executor.execute(new VegasWorker(
+                choiceGame,
+                choiceGame.getScorePlayer(),
+                score,
+                new Random(MagicRandom.nextInt(1000000)),
+                System.nanoTime() + slice
+            ));
         }
         executor.shutdown();
         try { //await termination
-            executor.awaitTermination(30,TimeUnit.SECONDS);
+            executor.awaitTermination(artificialLevel + 1,TimeUnit.SECONDS);
         } catch (final InterruptedException ex) {
             throw new RuntimeException(ex);
+        } finally {
+            // force termination of workers
+            executor.shutdownNow();
         }
         
         // Return best choice
-        int bestIndex=0;
-        int bestScore=scores.get(0).getScore();
-        for (int index=1;index<size;index++) {
-            
-            final int score=scores.get(index).getScore();
-            if (score>bestScore) {
-                bestScore=score;
-                bestIndex=index;
+        VegasScore bestScore=scores.get(0);
+        for (final VegasScore score : scores) {
+            if (score.getScore() > bestScore.getScore()) {
+                bestScore = score;
             }
         }
-        return sourceGame.map(scores.get(bestIndex).getChoiceResults());
+        
+        // Logging.
+        final long timeTaken = System.currentTimeMillis() - startTime;
+        log("VEGAS" +
+            " index=" + scorePlayer.getIndex() +
+            " life=" + scorePlayer.getLife() +
+            " phase=" + sourceGame.getPhase().getType() + 
+            " slice=" + (slice/1000000) +
+            " time=" + timeTaken
+            );
+        for (final VegasScore score : scores) {
+            log((score == bestScore ? "* " : "  ") + score);
+        }
+
+        return sourceGame.map(bestScore.getChoiceResults());
     }
 }

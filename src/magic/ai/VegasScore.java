@@ -19,6 +19,25 @@ public class VegasScore {
         return choiceResults;
     }
     
+    public String toString() {
+        final StringBuilder buffer=new StringBuilder();
+        buffer.append("[").append(totalScore).append('/').append(count).append("]");
+        if (choiceResults!=null) {
+            buffer.append(" (");
+            boolean first=true;
+            for (final Object choiceResult : choiceResults) {
+                if (first) {
+                    first=false;
+                } else {
+                    buffer.append(',');
+                }
+                buffer.append(choiceResult);
+            }
+            buffer.append(')');
+        }
+        return buffer.toString();
+    }
+    
     synchronized int getScore() {
         return count>0?(int)(totalScore/count):ArtificialScoringSystem.LOSE_GAME_SCORE;
     }
