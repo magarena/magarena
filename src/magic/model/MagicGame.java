@@ -148,10 +148,6 @@ public class MagicGame {
         changePhase(gameplay.getStartPhase(this));
     }
 
-    public MagicGame clone() {
-        return new MagicGame(this, scorePlayer);
-    }
-    
     public MagicGame(final MagicGame game,final MagicPlayer aScorePlayer) {
         
         artificial=true;

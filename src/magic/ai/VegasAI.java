@@ -70,8 +70,8 @@ public class VegasAI implements MagicAI {
             final VegasScore score=new VegasScore(choiceResults);
             scores.add(score);
             executor.execute(new VegasWorker(
+                CHEAT,
                 choiceGame,
-                choiceGame.getScorePlayer(),
                 score,
                 new Random(MagicRandom.nextInt(1000000)),
                 System.nanoTime() + slice
