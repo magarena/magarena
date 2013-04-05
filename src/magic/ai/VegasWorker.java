@@ -28,31 +28,27 @@ public class VegasWorker implements Runnable {
     }
 
     /** Play game until number of main phases are completed or until the game is finished. */
-    private boolean runGame(final MagicGame game) {
-
+    private void runGame(final MagicGame game) {
         while (!game.isFinished()) {
-            
-            if (game.hasNextEvent()) {
-                final MagicEvent event=game.getNextEvent();
-                if (event.hasChoice()) {                    
-                    final List<Object[]> choiceResultsList=event.getArtificialChoiceResults(game);
-                    final int nrOfChoices=choiceResultsList.size();
-                    if (nrOfChoices==0) {
-                        // No choices, game is invalid.
-                        return false;
-                    } else if (nrOfChoices==1) {
-                        game.executeNextEvent(choiceResultsList.get(0));
-                    } else {
-                        game.executeNextEvent(choiceResultsList.get(random.nextInt(nrOfChoices)));
-                    }
-                } else {
-                    game.executeNextEvent(MagicEvent.NO_CHOICE_RESULTS);
-                }
-            } else {
+            if (!game.hasNextEvent()) {
                 game.executePhase();
+                continue;
             }
+
+            final MagicEvent event=game.getNextEvent();
+            
+            if (!event.hasChoice()) {
+                game.executeNextEvent(MagicEvent.NO_CHOICE_RESULTS);
+                continue;
+            }
+            
+            final List<Object[]> choiceResultsList=event.getArtificialChoiceResults(game);
+            final int nrOfChoices=choiceResultsList.size();
+
+            assert nrOfChoices != 0 : "ERROR: no choices available for VegasWorker";
+            
+            game.executeNextEvent(choiceResultsList.get(random.nextInt(nrOfChoices)));
         }        
-        return true;
     }
     
     @Override
@@ -61,9 +57,8 @@ public class VegasWorker implements Runnable {
             final MagicGame game=new MagicGame(sourceGame,scorePlayer);    
             game.setMainPhases(MAIN_PHASES);
             game.executeNextEvent(game.map(choiceResults));
-            if (runGame(game)) {
-                score.incrementScore(game.getScore());
-            }
+            runGame(game);
+            score.incrementScore(game.getScore());
         }
     }    
 }
