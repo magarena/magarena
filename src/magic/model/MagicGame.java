@@ -147,6 +147,10 @@ public class MagicGame {
         payedCost=new MagicPayedCost();
         changePhase(gameplay.getStartPhase(this));
     }
+
+    public MagicGame clone() {
+        return new MagicGame(this, scorePlayer);
+    }
     
     public MagicGame(final MagicGame game,final MagicPlayer aScorePlayer) {
         
