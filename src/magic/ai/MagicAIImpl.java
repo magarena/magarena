@@ -7,10 +7,11 @@ public enum MagicAIImpl {
     MCTS("monte carlo (cheat)", new MCTSAI()),
     MCTSNC("monte carlo", new MCTSAI(false, false)),
     VEGAS("vegas", new VegasAI()),
+    VEGASC("vegas (cheat)", new VegasAI(false, true)),
     RND("random", new RandomAI()),
     ;
     
-    private static final MagicAIImpl[] SUPPORTED_AIS = {MMAB, MMABC, MCTSNC, MCTS, VEGAS, RND};
+    private static final MagicAIImpl[] SUPPORTED_AIS = {MMAB, MMABC, MCTSNC, MCTS, VEGAS, VEGASC};
     
     private final String name;
     private final MagicAI ai;
