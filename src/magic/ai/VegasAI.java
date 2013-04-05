@@ -18,9 +18,22 @@ public class VegasAI implements MagicAI {
     private static final long SEC_TO_NANO=1000000000L;
     private static final int THREADS=Runtime.getRuntime().availableProcessors();
     
+    private final boolean LOGGING;
+    private final boolean CHEAT;
+    
+    VegasAI() {
+        //default: no logging, no cheats
+        this(false, false);
+    }
+    
+    VegasAI(final boolean log, final boolean cheat) {
+        LOGGING = log || Boolean.getBoolean("debug");
+        CHEAT = cheat;
+    }
+    
     private void log(final String message) {
         MagicGameLog.log(message);
-        if (Boolean.getBoolean("debug")) {
+        if (LOGGING) {
             System.err.println(message);
         }
     }
@@ -30,7 +43,9 @@ public class VegasAI implements MagicAI {
         final long startTime = System.currentTimeMillis();
 
         final MagicGame choiceGame=new MagicGame(sourceGame,scorePlayer);
-        choiceGame.hideHiddenCards();
+        if (!CHEAT) {
+            choiceGame.hideHiddenCards();
+        }
         final MagicEvent event=choiceGame.getNextEvent();
         final List<Object[]> choiceResultsList=event.getArtificialChoiceResults(choiceGame);
         
@@ -83,6 +98,7 @@ public class VegasAI implements MagicAI {
         // Logging.
         final long timeTaken = System.currentTimeMillis() - startTime;
         log("VEGAS" +
+            " cheat=" + CHEAT +
             " index=" + scorePlayer.getIndex() +
             " life=" + scorePlayer.getLife() +
             " phase=" + sourceGame.getPhase().getType() + 
