@@ -344,8 +344,10 @@ public class MCTSAI implements MagicAI {
                 return 1.0;
             }
         }
-
-        game.showRandomizedHiddenCards();
+ 
+        if (!CHEAT) {
+            game.showRandomizedHiddenCards();
+        }
         final int startActions = game.getNumActions();
         getNextChoices(game, true);
         final int actions = Math.min(MAX_ACTIONS, game.getNumActions() - startActions);
