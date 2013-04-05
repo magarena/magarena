@@ -20,7 +20,6 @@ public class MMAB implements MagicAI {
     
     private final boolean LOGGING;
     private final boolean CHEAT;
-    private ArtificialPruneScore pruneScore = new ArtificialMultiPruneScore();
 
     MMAB() {
         //default: no logging, no cheats
@@ -58,6 +57,7 @@ public class MMAB implements MagicAI {
         }
         
         // submit jobs
+        final ArtificialPruneScoreRef scoreRef = new ArtificialPruneScoreRef(new ArtificialMultiPruneScore());
         final ArtificialScoreBoard scoreBoard = new ArtificialScoreBoard();
         final ExecutorService executor = Executors.newFixedThreadPool(THREADS);
         final List<ArtificialChoiceResults> achoices=new ArrayList<ArtificialChoiceResults>();
@@ -81,8 +81,8 @@ public class MMAB implements MagicAI {
                         scoreBoard,
                         CHEAT
                     );
-                    worker.evaluateGame(achoice, getPruneScore(), System.nanoTime() + slice);
-                    updatePruneScore(achoice.aiScore.getScore());
+                    worker.evaluateGame(achoice, scoreRef.get(), System.nanoTime() + slice);
+                    scoreRef.update(achoice.aiScore.getScore());
                 }
             });
         }
@@ -122,14 +122,6 @@ public class MMAB implements MagicAI {
         }
 
         return sourceGame.map(bestAchoice.choiceResults);
-    }
-
-    private void updatePruneScore(final int score) {
-        pruneScore = pruneScore.getPruneScore(score,true);
-    }
-    
-    private ArtificialPruneScore getPruneScore() {
-        return pruneScore;
     }
 
 class MMABWorker {
