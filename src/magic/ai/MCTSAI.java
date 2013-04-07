@@ -221,10 +221,11 @@ public class MCTSAI implements MagicAI {
         final long duration = System.currentTimeMillis() - START_TIME;
 
         out.append("MCTS" +
-                       " index=" + scorePlayer.getIndex() + 
-                       " life=" + scorePlayer.getLife() +
-                       " time=" + duration + 
-                       " sims=" + sims);
+                   " cheat=" + CHEAT +
+                   " index=" + scorePlayer.getIndex() + 
+                   " life=" + scorePlayer.getLife() +
+                   " time=" + duration + 
+                   " sims=" + sims);
         out.append('\n');
 
         for (final MCTSGameTree node : root) {
