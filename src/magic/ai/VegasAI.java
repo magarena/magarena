@@ -74,7 +74,7 @@ public class VegasAI implements MagicAI {
                 choiceGame,
                 score,
                 new Random(MagicRandom.nextInt(1000000)),
-                System.nanoTime() + slice
+                slice
             ));
         }
         executor.shutdown();

@@ -15,16 +15,16 @@ public class VegasWorker implements Runnable {
     private final VegasScore score;
     private final Object[] choiceResults;
     private final Random random;
-    private final long endTime;
+    private final long slice;
     private final boolean CHEAT;
     
-    VegasWorker(final boolean cheat, final MagicGame sourceGame, final VegasScore score,final Random random,final long endTime) {
+    VegasWorker(final boolean cheat, final MagicGame sourceGame, final VegasScore score,final Random random,final long slice) {
         this.CHEAT = cheat;
         this.sourceGame=sourceGame;
         this.score=score;
         this.choiceResults=score.getChoiceResults();
         this.random=random;
-        this.endTime=endTime;
+        this.slice=slice;
     }
 
     /** Play game until number of main phases are completed or until the game is finished. */
@@ -53,6 +53,7 @@ public class VegasWorker implements Runnable {
     
     @Override
     public void run() {
+        final long endTime = System.nanoTime() + slice;
         while (System.nanoTime() < endTime) {
             final MagicGame game = new MagicGame(sourceGame, sourceGame.getScorePlayer());
             if (!CHEAT) {
