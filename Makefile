@@ -518,4 +518,37 @@ smallest.convert:
 	sed -i 's/card_/groovy_/' release/Magarena/scripts/$*.txt
 	hg commit -m "convert from java code to groovy code"
 
+ai/benchmark.%:
+	# benchmark all three AIs against MMAB-H-1
+	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MCTS   str2=1 $*001.t
+	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MCTS   str2=8 $*002.t
+	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MCTSNC str2=1 $*003.t
+	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MCTSNC str2=8 $*004.t
+	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MMAB   str2=1 $*005.t
+	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MMAB   str2=8 $*006.t
+	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MMABC  str2=1 $*007.t
+	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MMABC  str2=8 $*008.t
+	ts make games=30 life=20 ai1=MMAB str1=1 ai2=VEGAS  str2=1 $*009.t
+	ts make games=30 life=20 ai1=MMAB str1=1 ai2=VEGAS  str2=8 $*010.t
+	ts make games=30 life=20 ai1=MMAB str1=1 ai2=VEGASC str2=1 $*011.t
+	ts make games=30 life=20 ai1=MMAB str1=1 ai2=VEGASC str2=8 $*012.t
 
+ai/merge.%:
+	seq -f "%02.0f" 1 12 | parallel "cat $*{}.log >> exp/A{}.log"
+
+exp/summary.txt:
+	cat exp/A01.log| awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=MCTS-C-1 > $@
+	cat exp/A02.log| awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=MCTS-C-8 >> $@
+	cat exp/A03.log| awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=MCTS-H-1 >> $@
+	cat exp/A04.log| awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=MCTS-H-8 >> $@
+	#cat exp/A05.log| awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=MMAB-H-1 >> $@
+	cat exp/A06.log| awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=MMAB-H-8 >> $@
+	cat exp/A07.log| awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=MMAB-C-1 >> $@
+	cat exp/A08.log| awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=MMAB-C-8 >> $@
+	cat exp/A09.log| awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=VEGAS-H-1 >> $@
+	cat exp/A10.log| awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=VEGAS-H-8 >> $@
+	cat exp/A11.log| awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=VEGAS-C-1 >> $@
+	cat exp/A12.log| awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=VEGAS-C-8 >> $@
+
+exp/elo.txt: exp/summary.txt
+	exp/whr.rb $^ | tac > $@
