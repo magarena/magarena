@@ -550,5 +550,5 @@ exp/summary.txt:
 	cat exp/A11.log | awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=VEGAS-C-1 >> $@
 	cat exp/A12.log | awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=VEGAS-C-8 >> $@
 
-exp/elo.txt: exp/summary.txt
+exp/gamma.tsv: exp/summary.txt
 	exp/whr.rb $^ | tac > $@
