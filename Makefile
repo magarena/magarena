@@ -524,14 +524,14 @@ ai/benchmark.%:
 	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MCTS   str2=8 $*002.t
 	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MCTSNC str2=1 $*003.t
 	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MCTSNC str2=8 $*004.t
-	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MMAB   str2=1 $*005.t
+	#ts make games=10 life=20 ai1=MMAB str1=1 ai2=MMAB   str2=1 $*005.t
 	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MMAB   str2=8 $*006.t
 	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MMABC  str2=1 $*007.t
 	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MMABC  str2=8 $*008.t
-	ts make games=30 life=20 ai1=MMAB str1=1 ai2=VEGAS  str2=1 $*009.t
-	ts make games=30 life=20 ai1=MMAB str1=1 ai2=VEGAS  str2=8 $*010.t
-	ts make games=30 life=20 ai1=MMAB str1=1 ai2=VEGASC str2=1 $*011.t
-	ts make games=30 life=20 ai1=MMAB str1=1 ai2=VEGASC str2=8 $*012.t
+	ts make games=10 life=20 ai1=MMAB str1=1 ai2=VEGAS  str2=1 $*009.t
+	ts make games=10 life=20 ai1=MMAB str1=1 ai2=VEGAS  str2=8 $*010.t
+	ts make games=10 life=20 ai1=MMAB str1=1 ai2=VEGASC str2=1 $*011.t
+	ts make games=10 life=20 ai1=MMAB str1=1 ai2=VEGASC str2=8 $*012.t
 
 ai/merge.%:
 	seq -f "%02.0f" 1 12 | parallel "cat $*{}.log >> exp/A{}.log"
