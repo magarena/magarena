@@ -18,7 +18,7 @@
         // Create the data table.
         var data = new google.visualization.DataTable();
         data.addColumn('string', 'AI');
-        data.addColumn('number', 'Gamma');
+        data.addColumn('number', 'Z');
         data.addRows([
 ["MCTS-C-8",2.61172],
 ["MCTS-H-8",1.45508],
@@ -35,11 +35,11 @@
         ]);
 
         // Set chart options
-				var options = {
-						'title':'Gamma ratings',
+        var options = {
+            'title':'Zermelo scores',
             //'width':800,
-						'height':600
-				};
+            'height':600
+        };
 
         // Instantiate and draw our chart, passing in some options.
         var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
