@@ -537,18 +537,18 @@ ai/merge.%:
 	seq -f "%02.0f" 1 12 | parallel "cat $*{}.log >> exp/A{}.log"
 
 exp/summary.txt:
-	cat exp/A01.log| awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=MCTS-C-1 > $@
-	cat exp/A02.log| awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=MCTS-C-8 >> $@
-	cat exp/A03.log| awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=MCTS-H-1 >> $@
-	cat exp/A04.log| awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=MCTS-H-8 >> $@
-	#cat exp/A05.log| awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=MMAB-H-1 >> $@
-	cat exp/A06.log| awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=MMAB-H-8 >> $@
-	cat exp/A07.log| awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=MMAB-C-1 >> $@
-	cat exp/A08.log| awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=MMAB-C-8 >> $@
-	cat exp/A09.log| awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=VEGAS-H-1 >> $@
-	cat exp/A10.log| awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=VEGAS-H-8 >> $@
-	cat exp/A11.log| awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=VEGAS-C-1 >> $@
-	cat exp/A12.log| awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=VEGAS-C-8 >> $@
+	cat exp/A01.log | awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=MCTS-C-1 > $@
+	cat exp/A02.log | awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=MCTS-C-8 >> $@
+	cat exp/A03.log | awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=MCTS-H-1 >> $@
+	cat exp/A04.log | awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=MCTS-H-8 >> $@
+	#cat exp/A05.log | awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=MMAB-H-1 >> $@
+	cat exp/A06.log | awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=MMAB-H-8 >> $@
+	cat exp/A07.log | awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=MMAB-C-1 >> $@
+	cat exp/A08.log | awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=MMAB-C-8 >> $@
+	cat exp/A09.log | awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=VEGAS-H-1 >> $@
+	cat exp/A10.log | awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=VEGAS-H-8 >> $@
+	cat exp/A11.log | awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=VEGAS-C-1 >> $@
+	cat exp/A12.log | awk -f exp/extract_games.awk ai1=MMAB-H-1 ai2=VEGAS-C-8 >> $@
 
 exp/elo.txt: exp/summary.txt
 	exp/whr.rb $^ | tac > $@
