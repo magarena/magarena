@@ -533,6 +533,16 @@ ai/benchmark.%:
 	ts make games=10 life=20 ai1=MMAB str1=1 ai2=VEGASC str2=1 $*11.t
 	ts make games=10 life=20 ai1=MMAB str1=1 ai2=VEGASC str2=8 $*12.t
 
+ai/benchmark.rnd:
+	sort -R exp/AIs.txt > exp/rnd.txt; \
+	ts2 make games=10 life=20 \
+	ai1=`cat exp/rnd.txt | tail -1` \
+	str1=`sort -R exp/STRs.txt | tail -1` \
+	ai2=`cat exp/rnd.txt | tac | tail -1` \
+	str2=`sort -R exp/STRs.txt | tail -1` \
+	`date +%s`.t ai/benchmark.rnd
+	
+
 ai/merge.%:
 	seq -f "%02.0f" 1 12 | parallel "cat $*{}.log >> exp/A{}.log"
 
