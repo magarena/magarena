@@ -520,18 +520,18 @@ smallest.convert:
 
 ai/benchmark.%:
 	# benchmark all three AIs against MMAB-H-1
-	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MCTS   str2=1 $*001.t
-	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MCTS   str2=8 $*002.t
-	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MCTSNC str2=1 $*003.t
-	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MCTSNC str2=8 $*004.t
-	#ts make games=10 life=20 ai1=MMAB str1=1 ai2=MMAB   str2=1 $*005.t
-	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MMAB   str2=8 $*006.t
-	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MMABC  str2=1 $*007.t
-	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MMABC  str2=8 $*008.t
-	ts make games=10 life=20 ai1=MMAB str1=1 ai2=VEGAS  str2=1 $*009.t
-	ts make games=10 life=20 ai1=MMAB str1=1 ai2=VEGAS  str2=8 $*010.t
-	ts make games=10 life=20 ai1=MMAB str1=1 ai2=VEGASC str2=1 $*011.t
-	ts make games=10 life=20 ai1=MMAB str1=1 ai2=VEGASC str2=8 $*012.t
+	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MCTS   str2=1 $*01.t
+	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MCTS   str2=8 $*02.t
+	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MCTSNC str2=1 $*03.t
+	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MCTSNC str2=8 $*04.t
+	#ts make games=10 life=20 ai1=MMAB str1=1 ai2=MMAB   str2=1 $*05.t
+	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MMAB   str2=8 $*06.t
+	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MMABC  str2=1 $*07.t
+	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MMABC  str2=8 $*08.t
+	ts make games=10 life=20 ai1=MMAB str1=1 ai2=VEGAS  str2=1 $*09.t
+	ts make games=10 life=20 ai1=MMAB str1=1 ai2=VEGAS  str2=8 $*10.t
+	ts make games=10 life=20 ai1=MMAB str1=1 ai2=VEGASC str2=1 $*11.t
+	ts make games=10 life=20 ai1=MMAB str1=1 ai2=VEGASC str2=8 $*12.t
 
 ai/merge.%:
 	seq -f "%02.0f" 1 12 | parallel "cat $*{}.log >> exp/A{}.log"
@@ -539,5 +539,5 @@ ai/merge.%:
 exp/summary.txt: $(wildcard exp/A*.log)
 	awk -f exp/extract_games.awk $^ > $@
 
-exp/gamma.tsv: exp/summary.txt
+exp/zermelo.tsv: exp/summary.txt
 	exp/whr.rb $^ | tac > $@
