@@ -2,7 +2,7 @@ BEGIN {
     FS = "\t"
 }
 
-/index=0/ {
+function genName() {
     name = "UNKNOWN"
     if ($0 ~ /MMAB/) {
         name = "MMAB"
@@ -19,27 +19,15 @@ BEGIN {
         cheat = "H"
     }
 
-    ai1 = name "-" cheat
+    return name "-" cheat
+}
+
+/index=0/ {
+    ai1 = genName()
 }
 
 /index=1/ {
-    name = "UNKNOWN"
-    if ($0 ~ /MMAB/) {
-        name = "MMAB"
-    } else if ($0 ~ /VEGAS/) {
-        name = "VEGAS"
-    } else if ($0 ~ /MCTS/) {
-        name = "MCTS"
-    }
-
-    cheat = "?"
-    if ($0 ~ /cheat=true/) {
-        cheat = "C"
-    } else if ($0 ~ /cheat=false/) {
-        cheat = "H"
-    }
-    
-    ai2 = name "-" cheat
+    ai2 = genName()
 }
 
 /Saved Player/ {
