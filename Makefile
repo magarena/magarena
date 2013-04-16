@@ -535,7 +535,7 @@ ai/benchmark.%:
 
 ai/benchmark.rnd:
 	sort -R exp/AIs.txt > exp/rnd.txt; \
-	ts2 make games=10 life=20 \
+	ts make games=10 life=20 \
 	ai1=`cat exp/rnd.txt | tail -1` \
 	str1=`sort -R exp/STRs.txt | tail -1` \
 	ai2=`cat exp/rnd.txt | tac | tail -1` \
