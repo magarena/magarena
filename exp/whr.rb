@@ -18,6 +18,6 @@ end
 players = @whr.players.values.select {|p| p.days.count > 0}
 players.sort_by { |p| p.days.last.gamma }.each_with_index do |p,idx|
     if p.days.count > 0
-      puts "#{p.name}\t#{p.days[0].gamma}"
+      puts "#{p.name}\t#{p.days[0].gamma}\t#{p.days[0].uncertainty}"
     end
 end
