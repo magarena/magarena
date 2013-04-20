@@ -527,8 +527,5 @@ ai/benchmark.rnd:
 	str2=`sort -R exp/STRs.txt | tail -1` \
 	`date +%s`.t ai/benchmark.rnd
 	
-ai/merge.%:
-	seq -f "%02.0f" 1 12 | parallel "cat $*{}.log >> exp/A{}.log"
-
 exp/zermelo.tsv: $(wildcard exp/1366*.log)
 	awk -f exp/extract_games.awk $^ | ./exp/whr.rb | tac > $@
