@@ -2,13 +2,13 @@ package magic.ai;
 
 public enum MagicAIImpl {
     MMAB("minimax", new MMAB()), 
-    MMABC("minimax (cheat)", new MMAB(false, true)), 
-    MMAB2("minimax2 (cheat)", new MMAB2(false, true)), 
+    MMABC("minimax (cheat)", new MMAB(true)), 
     MCTSNC("monte carlo tree search", new MCTSAI(false, false)),
     MCTS("monte carlo tree search (cheat)", new MCTSAI()),
     VEGAS("vegas", new VegasAI()),
     VEGASC("vegas (cheat)", new VegasAI(false, true)),
     RND("random", new RandomAI()),
+    MMABFast("minimax (deck strength)", new MMAB(false, true)),
     ;
     
     private static final MagicAIImpl[] SUPPORTED_AIS = {MMAB, MMABC, MCTSNC, MCTS, VEGAS, VEGASC};

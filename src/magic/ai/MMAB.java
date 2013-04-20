@@ -20,15 +20,20 @@ public class MMAB implements MagicAI {
     
     private final boolean LOGGING;
     private final boolean CHEAT;
+    private final boolean DECKSTR;
 
     MMAB() {
-        //default: no logging, no cheats
         this(false, false);
     }
     
-    MMAB(final boolean log, final boolean cheat) {
-        LOGGING = log || Boolean.getBoolean("debug");
+    MMAB(final boolean cheat) {
+        this(cheat, false);
+    }
+    
+    MMAB(final boolean cheat, final boolean deckStr) {
+        LOGGING = Boolean.getBoolean("debug");
         CHEAT = cheat;
+        DECKSTR = deckStr;
     }
     
     private void log(final String message) {
@@ -73,6 +78,9 @@ public class MMAB implements MagicAI {
                     final MagicGame workerGame=new MagicGame(sourceGame,scorePlayer);
                     if (!CHEAT) {
                         workerGame.hideHiddenCards();
+                    }
+                    if (DECKSTR) {
+                        workerGame.setMainPhases(artificialLevel);
                     }
                     workerGame.setFastChoices(true);
                     final MMABWorker worker=new MMABWorker(
