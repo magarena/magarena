@@ -518,23 +518,8 @@ smallest.convert:
 	sed -i 's/card_/groovy_/' release/Magarena/scripts/$*.txt
 	hg commit -m "convert from java code to groovy code"
 
-ai/benchmark.%:
-	# benchmark all three AIs against MMAB-H-1
-	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MCTS   str2=1 $*01.t
-	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MCTS   str2=8 $*02.t
-	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MCTSNC str2=1 $*03.t
-	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MCTSNC str2=8 $*04.t
-	#ts make games=10 life=20 ai1=MMAB str1=1 ai2=MMAB   str2=1 $*05.t
-	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MMAB   str2=8 $*06.t
-	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MMABC  str2=1 $*07.t
-	ts make games=10 life=20 ai1=MMAB str1=1 ai2=MMABC  str2=8 $*08.t
-	ts make games=10 life=20 ai1=MMAB str1=1 ai2=VEGAS  str2=1 $*09.t
-	ts make games=10 life=20 ai1=MMAB str1=1 ai2=VEGAS  str2=8 $*10.t
-	ts make games=10 life=20 ai1=MMAB str1=1 ai2=VEGASC str2=1 $*11.t
-	ts make games=10 life=20 ai1=MMAB str1=1 ai2=VEGASC str2=8 $*12.t
-
 ai/benchmark.rnd:
-	sort -R exp/AIs.txt > exp/rnd.txt; \
+	sort -R exp/AIs.txt > exp/rnd.txt
 	ts make games=10 life=20 \
 	ai1=`cat exp/rnd.txt | tail -1` \
 	str1=`sort -R exp/STRs.txt | tail -1` \
@@ -542,12 +527,8 @@ ai/benchmark.rnd:
 	str2=`sort -R exp/STRs.txt | tail -1` \
 	`date +%s`.t ai/benchmark.rnd
 	
-
 ai/merge.%:
 	seq -f "%02.0f" 1 12 | parallel "cat $*{}.log >> exp/A{}.log"
 
-exp/summary.txt: $(wildcard exp/A*.log)
-	awk -f exp/extract_games.awk $^ > $@
-
-exp/zermelo.tsv: exp/summary.txt
-	exp/whr.rb $^ | tac > $@
+exp/zermelo.tsv: $(wildcard exp/1366*.log)
+	awk -f exp/extract_games.awk $^ | ./exp/whr.rb | tac > $@
