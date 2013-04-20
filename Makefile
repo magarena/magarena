@@ -1,6 +1,7 @@
-JAVAEA=java -ea -Xms256M -Xmx256M -Ddebug=true
+JAVA=java -Xms256M -Xmx256M 
+DEBUG=java -ea -Xms256M -Xmx256M -Ddebug=true
 LIBS=.:lib/annotations.jar:lib/jsr305.jar:release/lib/groovy-all-2.1.1.jar
-JAVA=${JAVAEA} -Dcom.sun.management.jmxremote -cp $(LIBS):release/Magarena.jar
+RUN=${DEBUG} -Dcom.sun.management.jmxremote -cp $(LIBS):release/Magarena.jar
 SHELL=/bin/bash
 BUILD=build
 SRC=$(shell find src -iname *.java)
@@ -151,7 +152,7 @@ tags: $(SRC)
 	ctags -R src
 
 Test%.run: $(MAG)
-	$(JAVAEA) -DtestGame=Test$* -Dmagarena.dir=`pwd`/release -jar $^ 2>&1 | tee Test$*.log
+	$(DEBUG) -DtestGame=Test$* -Dmagarena.dir=`pwd`/release -jar $^ 2>&1 | tee Test$*.log
 
 $(EXE): $(MAG)
 	cd launch4j; ./launch4j ../release/magarena.xml
@@ -184,7 +185,7 @@ ai1 ?= MMABC
 ai2 ?= MMAB2
 %.t: $(MAG)
 	echo `hg id -n` > $*.log
-	$(JAVA) -Dmagarena.dir=`pwd`/release magic.DeckStrCal \
+	$(RUN) -Dmagarena.dir=`pwd`/release magic.DeckStrCal \
 	--seed $* \
 	--ai1 ${ai1} --str1 ${str1} \
 	--ai2 ${ai2} --str2 ${str2} \
@@ -196,7 +197,7 @@ test: $(MAG)
 	-make `date +%s`.d
 
 %.d: $(MAG)
-	$(JAVAEA) -DrndSeed=$* -Dmagarena.dir=`pwd`/release -jar $^ |& tee $*.log
+	$(JAVA) -DrndSeed=$* -Dmagarena.dir=`pwd`/release -jar $^ |& tee $*.log
 
 # Z = 4.4172 (99.999%)
 # E = 0.01
@@ -206,7 +207,7 @@ test: $(MAG)
 #   = 48780
 #   ~ 50000
 %.str: $(MAG) release/Magarena/decks/JustRelentlessRats.dec release/Magarena/decks/LSK_G.dec
-	$(JAVA) magic.DeckStrCal --deck1 $(word 2,$^) --deck2 $(word 3,$^) --ai1 $* --ai2 $* --games 50000 > $@
+	$(RUN) magic.DeckStrCal --deck1 $(word 2,$^) --deck2 $(word 3,$^) --ai1 $* --ai2 $* --games 50000 > $@
 
 exp/%.log: $(MAG)
 	scripts/evaluate_ai.sh $* > $@
@@ -472,13 +473,13 @@ wiki/UpcomingCards.wiki: cards/new.txt
 	cat <(echo "{{{") $^ <(echo "}}}") >> $@
 
 parser/test: $(MAG) 
-	$(JAVA) magic.grammar.Check < grammar/parsable.txt
+	$(RUN) magic.grammar.Check < grammar/parsable.txt
 
 parser/test_all: $(MAG) grammar/rules.txt
-	$(JAVA) magic.grammar.Check < $(word 2,$^)
+	$(RUN) magic.grammar.Check < $(word 2,$^)
 
 parser/run: $(MAG)
-	$(JAVA) magic.grammar.Check
+	$(RUN) magic.grammar.Check
 
 grammar/parsable.txt: src/magic/grammar/MagicRuleParser.java
 	make parser/test_all > grammar/test_all.out
