@@ -5,6 +5,5 @@ value=2.634
 rarity=C
 type=Artifact
 cost={3}
-mana=g4w4u4
 ability=tap add mana {G} or {W} or {U}
 timing=artifact
