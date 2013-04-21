@@ -220,10 +220,11 @@ public class ImagePermanentViewer extends JPanel {
             }
             
             // Mana symbols
-            if (linkedInfo.cardDefinition.isLand() || linkedInfo.cardDefinition.isArtifact()) {
+            if (linkedInfo.cardDefinition.getManaActivations().size() > 0) {
                 ax=ImageDrawingUtils.drawManaInfo(g,this,linkedInfo.cardDefinition,ax,ay);
             }
-            
+           
+            // Power, toughness, damage
             final String pt=linkedInfo.powerToughness;
             if (!pt.isEmpty()) {
                 final String damage=linkedInfo.damage>0?String.valueOf(linkedInfo.damage):"";
@@ -235,23 +236,23 @@ public class ImagePermanentViewer extends JPanel {
                     ImageDrawingUtils.drawCreatureInfo(g,metrics,pt,ptWidth,damage,x2-ptWidth-4,y2-(isDamage?32:18),true);
                 }
             }
-                    
+            
+            // Valid choice selection highlight
             if (viewer.isValidChoice(linkedInfo)) {
                 if (GeneralConfig.getInstance().isHighlightOverlay() ||
                     (GeneralConfig.getInstance().isHighlightTheme() &&
                     ThemeFactory.getInstance().getCurrentTheme().getOptionUseOverlay())) {
                     final Color choiceColor = viewer.getController().isCombatChoice() ?
-                                ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_COMBAT_CHOICE) :
-                                ThemeFactory.getInstance().getCurrentTheme().getChoiceColor();
+                        ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_COMBAT_CHOICE) :
+                        ThemeFactory.getInstance().getCurrentTheme().getChoiceColor();
                     
-                        //draw a transparent overlay of choiceColor
-                        g2d.setPaint(choiceColor);
-                        g2d.fillRect(x1-1,y1-1,x2-x1+2,y2-y1+2);
-                }
-                else if (!GeneralConfig.getInstance().isHighlightNone()){
+                    //draw a transparent overlay of choiceColor
+                    g2d.setPaint(choiceColor);
+                    g2d.fillRect(x1-1,y1-1,x2-x1+2,y2-y1+2);
+                } else if (!GeneralConfig.getInstance().isHighlightNone()) {
                     final Color choiceColor = viewer.getController().isCombatChoice() ?
-                            ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_COMBAT_CHOICE_BORDER) :
-                            ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_CHOICE_BORDER);
+                        ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_COMBAT_CHOICE_BORDER) :
+                        ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_CHOICE_BORDER);
                             
                     //draw a one pixel border of choiceColor
                     g2d.setPaint(new Color(choiceColor.getRGB()));

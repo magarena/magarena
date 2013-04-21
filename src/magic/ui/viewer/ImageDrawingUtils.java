@@ -6,7 +6,9 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicCounterType;
 import magic.model.MagicManaCost;
+import magic.model.MagicManaType;
 import magic.model.MagicPermanent;
+import magic.model.event.MagicManaActivation;
 import magic.ui.widget.FontsAndBorders;
 
 import javax.swing.ImageIcon;
@@ -14,9 +16,10 @@ import java.awt.Color;
 import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.image.ImageObserver;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
+import java.util.HashSet;
+import java.util.ArrayList;
 
 public class ImageDrawingUtils {
     public static void drawCostInfo(
@@ -42,24 +45,29 @@ public class ImageDrawingUtils {
             final MagicCardDefinition cardDefinition,
             int ax,
             final int ay) {
-        final List<ImageIcon> icons=new ArrayList<ImageIcon>();
-        for (final MagicColor color : MagicColor.values()) {
-            if (cardDefinition.getManaSource(color) > 0) {
-                icons.add(color.getManaType().getIcon(true));
+        final Set<MagicManaType> types = new HashSet<MagicManaType>();
+        for (final MagicManaActivation manaAct : cardDefinition.getManaActivations()) {
+            for (final MagicManaType manaType : manaAct.getManaTypes()) {
+                if (manaType != MagicManaType.Colorless) {
+                    types.add(manaType);
+                }
             }
-        }    
-        if (icons.size()==MagicColor.NR_COLORS) {
-            icons.clear();
+        }
+        final List<ImageIcon> icons = new ArrayList<ImageIcon>();
+        if (types.size()==MagicColor.NR_COLORS) {
             icons.add(IconImages.ANY_MANA);
-        }
-        if (icons.isEmpty() && !cardDefinition.getManaActivations().isEmpty()) {
+        } else if (types.isEmpty() && !cardDefinition.getManaActivations().isEmpty()) {
             icons.add(IconImages.COST_ONE);
-        }
-        if (!icons.isEmpty()) {
-            for (final ImageIcon icon : icons) {
-                g.drawImage(icon.getImage(),ax,ay,observer);
-                ax+=16;
+        } else {
+            for (final MagicColor color : MagicColor.values()) {
+                if (types.contains(color.getManaType())) {
+                    icons.add(color.getManaType().getIcon(true));
+                }
             }
+        }
+        for (final ImageIcon icon : icons) {
+            g.drawImage(icon.getImage(),ax,ay,observer);
+            ax+=16;
         }
         return ax;
     }

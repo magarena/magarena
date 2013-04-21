@@ -544,17 +544,6 @@ public class MagicCardDefinition {
         return manaSource[color.ordinal()];
     }
     
-    public void setBasicManaActivations(final String basicText) {
-        final int length=basicText.length();
-        final List<MagicManaType> manaTypes=new ArrayList<MagicManaType>(length+1);
-        for (int i=0;i<length;i++) {
-            manaTypes.add(MagicColor.getColor(basicText.charAt(i)).getManaType());
-        }
-        manaTypes.add(MagicManaType.Colorless);
-        add(new MagicTapManaActivation(manaTypes,0));
-    }
-    
-    
     public void setPowerToughness(final int aPower, final int aToughness) {
         power = aPower;
         toughness = aToughness;
