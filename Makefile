@@ -209,8 +209,8 @@ test: $(MAG)
 %.str: $(MAG) release/Magarena/decks/JustRelentlessRats.dec release/Magarena/decks/LSK_G.dec
 	$(RUN) magic.DeckStrCal --deck1 $(word 2,$^) --deck2 $(word 3,$^) --ai1 $* --ai2 $* --games 50000 > $@
 
-exp/%.log: $(MAG)
-	scripts/evaluate_ai.sh $* > $@
+#exp/%.log: $(MAG)
+#	scripts/evaluate_ai.sh $* > $@
 
 decks/dl:
 	for i in `curl http://www.wizards.com/magic/magazine/archive.aspx?tag=dailydeck | grep -o mtg/daily/deck/[0-9]* | cut -d'/' -f4`; do make decks/dd_$$i.dec; done
@@ -526,7 +526,8 @@ ai/benchmark.rnd:
 	str1=`sort -R exp/STRs.txt | tail -1` \
 	ai2=`cat exp/rnd.txt | tac | tail -1` \
 	str2=`sort -R exp/STRs.txt | tail -1` \
-	`date +%s`.t ai/benchmark.rnd
+	`date +%s`.t
+	ts make ai/benchmark.rnd
 	
 exp/zermelo.tsv: $(wildcard exp/1366*.log)
 	awk -f exp/extract_games.awk $^ | ./exp/whr.rb | tac > $@
