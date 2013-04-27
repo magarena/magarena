@@ -54,7 +54,7 @@ Thank you for your support and have fun!
 
 Release 1.37 (April 27, 2013)
 ============
-includes contributions from melvin and sponeta
+includes contributions from melvin, sponeta, and hong yie Huang
 - added non cheating monte carlo tree search AI
 - added cheating vegas AI
 - removed random AI
@@ -73,10 +73,13 @@ includes contributions from melvin and sponeta
 - fixed: desk strength calculation too slow
 
 - added the following premade decks:
-
+Graveyard_Eater.dec, Squirrels.dec, Swords_of_Enduring_Pain.dec,
+UBmagarena.dec, UW_Spirit_Control.dec, Eldrazi_40.dec, Eldrazi_60.dec,
+Elemental_Rage.dec, Fungus.dec, Human_Sacrifice.dec, Myr.dec, Weaken.dec,
+Reanimation.dec
 
 - added the following card:
-  Garruk's Packleader
+Garruk's Packleader
 
 Release 1.36 (March 29, 2013)
 ============
