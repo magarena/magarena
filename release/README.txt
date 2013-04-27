@@ -54,8 +54,29 @@ Thank you for your support and have fun!
 
 Release 1.37 (April 27, 2013)
 ============
-includes contributions from ...
+includes contributions from melvin and sponeta
+- added non cheating monte carlo tree search AI
+- added cheating vegas AI
+- removed random AI
+- updated AI Comparison page @  https://code.google.com/p/magarena/wiki/AIComparison
 
+- improve speed of program startup by loading groovy/java code only when a card is
+  needed in a match
+- ignore corrupted card images and allow player to download new ones instead of crashing
+- added Planeswalker to card type filter in card explorer
+- draw mana icons for all permanents that generate mana, previously only limited to lands
+
+- fixed: players always discard down to 7 cards regardless of their maximum hand size
+- fixed: Planeswalker uniqueness rule not applied correctly as it was missing some Planwalker subtypes
+- fixed: Esperzoa doesn't have flying
+- fixed: evolve triggering when opponen's creature enters the battlefield
+- fixed: desk strength calculation too slow
+
+- added the following premade decks:
+
+
+- added the following card:
+  Garruk's Packleader
 
 Release 1.36 (March 29, 2013)
 ============
