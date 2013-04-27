@@ -1066,6 +1066,7 @@ Game-Trail Changeling
 Gang of Elk
 Garruk, Primal Hunter
 Garruk's Companion
+Garruk's Packleader
 Gatekeeper of Malakir
 Gather the Townsfolk
 Gavony Ironwright
