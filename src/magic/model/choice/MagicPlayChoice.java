@@ -9,6 +9,7 @@ import magic.model.event.MagicActivationMap;
 import magic.model.event.MagicEvent;
 import magic.model.phase.MagicPhaseType;
 import magic.ui.GameController;
+import magic.ui.UndoClickedException;
 import magic.ui.choice.PlayChoicePanel;
 
 import java.util.ArrayList;
@@ -90,7 +91,7 @@ public class MagicPlayChoice extends MagicChoice {
             final GameController controller,
             final MagicGame game,
             final MagicPlayer player,
-            final MagicSource source) {
+            final MagicSource source) throws UndoClickedException {
 
         //always pass draw and begin combat option
         if (game.canAlwaysPass()) {
@@ -152,9 +153,8 @@ public class MagicPlayChoice extends MagicChoice {
             controller.setValidChoices(validChoices,false);
         }
         controller.enableForwardButton();
-        if (controller.waitForInputOrUndo()) {
-            return UNDO_CHOICE_RESULTS;
-        }
+        controller.waitForInput();
+        
         controller.clearValidChoices();
         controller.disableActionButton(false);
         game.createUndoPoint();
@@ -182,9 +182,7 @@ public class MagicPlayChoice extends MagicChoice {
                     return new PlayChoicePanel(controller,activationSource,results);
                 }
             });
-            if (controller.waitForInputOrUndo()) {
-                return UNDO_CHOICE_RESULTS;
-            }
+            controller.waitForInput();
             return new Object[]{choicePanel.getResult()};
         }
     }

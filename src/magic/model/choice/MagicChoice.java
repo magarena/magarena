@@ -6,6 +6,7 @@ import magic.model.MagicRandom;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.ui.GameController;
+import magic.ui.UndoClickedException;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -17,8 +18,6 @@ public abstract class MagicChoice {
     static final String YES_CHOICE="yes";
     static final String NO_CHOICE="no";
     
-    public static final Object[] UNDO_CHOICE_RESULTS= {"Undo"};
-
     public static final MagicChoice NONE = new MagicChoice("none") {
         @Override
         public Collection<Object> getArtificialOptions(
@@ -120,10 +119,11 @@ public abstract class MagicChoice {
     
     /** Gets the choice results of the player. */
     public abstract Object[] getPlayerChoiceResults(
-            final GameController controller,
-            final MagicGame game,
-            final MagicPlayer player,
-            final MagicSource source);
+        final GameController controller,
+        final MagicGame game,
+        final MagicPlayer player,
+        final MagicSource source
+    ) throws UndoClickedException;
 
     public static boolean isYesChoice(final Object choiceResult) {
         return choiceResult == YES_CHOICE;

@@ -6,6 +6,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.ui.GameController;
+import magic.ui.UndoClickedException;
 import magic.ui.choice.MayChoicePanel;
 
 import java.util.ArrayList;
@@ -139,7 +140,7 @@ public class MagicMayChoice extends MagicChoice {
             final GameController controller,
             final MagicGame game,
             final MagicPlayer player,
-            final MagicSource source) {
+            final MagicSource source) throws UndoClickedException {
 
         final Object[] choiceResults=new Object[choices.length+1];
         choiceResults[0]=NO_CHOICE;
@@ -157,9 +158,7 @@ public class MagicMayChoice extends MagicChoice {
                 return new MayChoicePanel(controller,source,getDescription());
             }
         });
-        if (controller.waitForInputOrUndo()) {
-            return UNDO_CHOICE_RESULTS;
-        }
+        controller.waitForInput();
         if (!choicePanel.isYesClicked()) {
             return choiceResults;
         }
@@ -167,11 +166,7 @@ public class MagicMayChoice extends MagicChoice {
         // Yes is chosen.
         choiceResults[0]=YES_CHOICE;
         for (int index=0;index<choices.length;index++) {
-            
             final Object[] partialChoiceResults=choices[index].getPlayerChoiceResults(controller,game,player,source);
-            if (partialChoiceResults==UNDO_CHOICE_RESULTS) {
-                return UNDO_CHOICE_RESULTS;
-            }
             choiceResults[index+1]=partialChoiceResults[0];
         }        
         return choiceResults;

@@ -6,6 +6,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.ui.GameController;
+import magic.ui.UndoClickedException;
 import magic.ui.choice.MayChoicePanel;
 import magic.ui.choice.MultiKickerChoicePanel;
 
@@ -143,7 +144,7 @@ public class MagicKickerChoice extends MagicChoice {
             final GameController controller,
             final MagicGame game,
             final MagicPlayer player,
-            final MagicSource source) {
+            final MagicSource source) throws UndoClickedException {
 
         final int maximumCount=getMaximumCount(game,player);
         final int count;
@@ -154,9 +155,7 @@ public class MagicKickerChoice extends MagicChoice {
                     return new MultiKickerChoicePanel(controller,source,cost,maximumCount,replicate);
                 }
             });
-            if (controller.waitForInputOrUndo()) {
-                return UNDO_CHOICE_RESULTS;
-            }
+            controller.waitForInput();
             count=kickerPanel.getKickerCount();
         } else if (maximumCount==1) {
             // Single kicker.
@@ -165,9 +164,7 @@ public class MagicKickerChoice extends MagicChoice {
                     return new MayChoicePanel(controller,source,"You may pay the kicker "+cost.getText()+'.');
                 }
             });
-            if (controller.waitForInputOrUndo()) {
-                return UNDO_CHOICE_RESULTS;
-            }
+            controller.waitForInput();
             count=kickerPanel.isYesClicked()?1:0;                
         } else {
             count=0;
@@ -179,18 +176,12 @@ public class MagicKickerChoice extends MagicChoice {
         if (count>0) {
             final MagicPayManaCostChoice manaChoice=new MagicPayManaCostChoice(getCost(count));
             final Object[] manaChoiceResults=manaChoice.getPlayerChoiceResults(controller,game,player,source);
-            if (manaChoiceResults==UNDO_CHOICE_RESULTS) {
-                return UNDO_CHOICE_RESULTS;
-            }            
             choiceResults[2]=manaChoiceResults[0];
         }
 
         // Pick other choice.
         if (otherChoice.isValid()) {
             final Object[] otherChoiceResults=otherChoice.getPlayerChoiceResults(controller,game,player,source);
-            if (otherChoiceResults==UNDO_CHOICE_RESULTS) {
-                return UNDO_CHOICE_RESULTS;
-            }
             choiceResults[0]=otherChoiceResults[0];
         } else {
             choiceResults[0]=null;

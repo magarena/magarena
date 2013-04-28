@@ -9,6 +9,7 @@ import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.ui.GameController;
+import magic.ui.UndoClickedException;
 import magic.ui.choice.ColorChoicePanel;
 
 import java.util.Arrays;
@@ -125,7 +126,7 @@ public class MagicColorChoice extends MagicChoice {
             final GameController controller,
             final MagicGame game,
             final MagicPlayer player,
-            final MagicSource source) {
+            final MagicSource source) throws UndoClickedException {
         
         controller.disableActionButton(false);
         final ColorChoicePanel choicePanel = controller.showComponent(new Callable<ColorChoicePanel>() {
@@ -133,9 +134,7 @@ public class MagicColorChoice extends MagicChoice {
                 return new ColorChoicePanel(controller,source);
             }
         });
-        if (controller.waitForInputOrUndo()) {
-            return UNDO_CHOICE_RESULTS;
-        }
+        controller.waitForInput();
         return new Object[]{choicePanel.getColor()};
     }
 }

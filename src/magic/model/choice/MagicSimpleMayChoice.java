@@ -6,6 +6,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.ui.GameController;
+import magic.ui.UndoClickedException;
 import magic.ui.choice.MayChoicePanel;
 
 import java.util.Collection;
@@ -68,7 +69,12 @@ public class MagicSimpleMayChoice extends MagicChoice {
     }
     
     @Override
-    public Object[] getPlayerChoiceResults(final GameController controller,final MagicGame game,final MagicPlayer player,final MagicSource source) {
+    public Object[] getPlayerChoiceResults(
+            final GameController controller,
+            final MagicGame game,
+            final MagicPlayer player,
+            final MagicSource source) throws UndoClickedException {
+
         final boolean hints = GeneralConfig.getInstance().getSmartTarget();
         if (hints && defaultChoice != DEFAULT_NONE) {
             return (defaultChoice == DEFAULT_NO) ?
@@ -81,9 +87,7 @@ public class MagicSimpleMayChoice extends MagicChoice {
                 return new MayChoicePanel(controller,source,getDescription());
             }
         });
-        if (controller.waitForInputOrUndo()) {
-            return UNDO_CHOICE_RESULTS;
-        }
+        controller.waitForInput();
         if (choicePanel.isYesClicked()) {
             return new Object[]{YES_CHOICE};
         }

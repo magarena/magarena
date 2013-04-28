@@ -10,6 +10,7 @@ import magic.model.MagicRandom;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.ui.GameController;
+import magic.ui.UndoClickedException;
 import magic.ui.choice.ManaCostXChoicePanel;
 
 import java.util.ArrayList;
@@ -100,7 +101,12 @@ public class MagicPayManaCostChoice extends MagicChoice {
     }
     
     @Override
-    public Object[] getPlayerChoiceResults(final GameController controller,final MagicGame game,final MagicPlayer player,final MagicSource source) {
+    public Object[] getPlayerChoiceResults(
+            final GameController controller,
+            final MagicGame game,
+            final MagicPlayer player,
+            final MagicSource source) throws UndoClickedException {
+
         controller.disableActionButton(false);
         
         final int x;
@@ -111,9 +117,7 @@ public class MagicPayManaCostChoice extends MagicChoice {
                     return new ManaCostXChoicePanel(controller,source,maximumX);
                 }
             });
-            if (controller.waitForInputOrUndo()) {
-                return UNDO_CHOICE_RESULTS;
-            }
+            controller.waitForInput();
             x=choicePanel.getValueForX();
         } else {
             x=0;
@@ -156,9 +160,7 @@ public class MagicPayManaCostChoice extends MagicChoice {
             } else {
                 controller.setValidChoices(validSources,false);
                 controller.showMessage(source,"Choose a mana source to pay "+costManaType.getText()+".");
-                if (controller.waitForInputOrUndo()) {
-                    return UNDO_CHOICE_RESULTS;
-                }
+                controller.waitForInput(); 
                 controller.clearValidChoices();
                 sourcePermanent=(MagicPermanent)controller.getChoiceClicked();                
             }

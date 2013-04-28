@@ -121,9 +121,20 @@ public class GameController {
     }
     
     /** Returns true when undo was clicked. */
-    public boolean waitForInputOrUndo() {
+    private boolean waitForInputOrUndo() {
         try {
             return input.take();
+        } catch (final InterruptedException ex) {
+            throw new RuntimeException(ex);
+        }
+    }
+    
+    public void waitForInput() throws UndoClickedException {
+        try {
+            final boolean undoClicked = input.take();
+            if (undoClicked) {
+                throw new UndoClickedException();
+            }
         } catch (final InterruptedException ex) {
             throw new RuntimeException(ex);
         }
@@ -387,12 +398,16 @@ public class GameController {
         return ai.findNextEventChoiceResults(game, player);
     }
 
-    private Object[] getPlayerNextEventChoiceResults(final MagicEvent event) {
+    private Object[] getPlayerNextEventChoiceResults(final MagicEvent event) throws UndoClickedException {
         final MagicSource source=event.getSource();
         setSourceCardDefinition(source);
-        final Object[] choiceResults=event.getChoice().getPlayerChoiceResults(this,game,event.getPlayer(),source);
-        clearValidChoices();
-        setSourceCardDefinition(MagicEvent.NO_SOURCE);
+        final Object[] choiceResults;
+        try {
+            choiceResults = event.getChoice().getPlayerChoiceResults(this,game,event.getPlayer(),source);
+        } finally {
+            clearValidChoices();
+            setSourceCardDefinition(MagicEvent.NO_SOURCE);
+        }
         return choiceResults;
     }
 
@@ -401,13 +416,15 @@ public class GameController {
         if (selfMode || testMode || event.getPlayer().getPlayerDefinition().isArtificial()) {
             choiceResults = getArtificialNextEventChoiceResults(event);
         } else {
-            choiceResults = getPlayerNextEventChoiceResults(event);
-            if (gameConceded.get()) {
-                return;
-            }
-            if (choiceResults==MagicChoice.UNDO_CHOICE_RESULTS) {
-                performUndo();
-                return;
+            try {
+                choiceResults = getPlayerNextEventChoiceResults(event);
+            } catch (UndoClickedException undo) {
+                if (gameConceded.get()) {
+                    return;
+                } else {
+                    performUndo();
+                    return;
+                }
             }
         }
         game.executeNextEvent(choiceResults);

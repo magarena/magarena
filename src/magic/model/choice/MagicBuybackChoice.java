@@ -6,6 +6,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.ui.GameController;
+import magic.ui.UndoClickedException;
 import magic.ui.choice.MayChoicePanel;
 
 import java.util.ArrayList;
@@ -97,7 +98,7 @@ public class MagicBuybackChoice extends MagicChoice {
             final GameController controller,
             final MagicGame game,
             final MagicPlayer player,
-            final MagicSource source) {
+            final MagicSource source) throws UndoClickedException {
 
         boolean isYesClicked = false;
         if (new MagicPayManaCostResultBuilder(game,player,cost.getBuilderCost()).hasResults()) {
@@ -110,9 +111,7 @@ public class MagicBuybackChoice extends MagicChoice {
                             "You may pay the buyback " + cost.getText() + '.');
                 }
             });
-            if (controller.waitForInputOrUndo()) {
-                return UNDO_CHOICE_RESULTS;
-            }
+            controller.waitForInput();
             isYesClicked = kickerPanel.isYesClicked();                
         }
 
@@ -124,9 +123,6 @@ public class MagicBuybackChoice extends MagicChoice {
             final MagicPayManaCostChoice manaChoice = new MagicPayManaCostChoice(cost);
             final Object[] manaChoiceResults =
                     manaChoice.getPlayerChoiceResults(controller,game,player,source);
-            if (manaChoiceResults == UNDO_CHOICE_RESULTS) {
-                return UNDO_CHOICE_RESULTS;
-            }            
             choiceResults[2] = manaChoiceResults[0];
         } else {
             choiceResults[1]=NO_CHOICE;
@@ -134,11 +130,7 @@ public class MagicBuybackChoice extends MagicChoice {
 
         // Pick other choice.
         if (otherChoice.isValid()) {
-            final Object[] otherChoiceResults =
-                    otherChoice.getPlayerChoiceResults(controller,game,player,source);
-            if (otherChoiceResults == UNDO_CHOICE_RESULTS) {
-                return UNDO_CHOICE_RESULTS;
-            }
+            final Object[] otherChoiceResults = otherChoice.getPlayerChoiceResults(controller,game,player,source);
             choiceResults[0] = otherChoiceResults[0];
         } else {
             choiceResults[0] = null;

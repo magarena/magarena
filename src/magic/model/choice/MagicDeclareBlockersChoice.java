@@ -9,6 +9,7 @@ import magic.model.MagicRandom;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.ui.GameController;
+import magic.ui.UndoClickedException;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -62,7 +63,11 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
     }
 
     @Override
-    public Object[] getPlayerChoiceResults(final GameController controller,final MagicGame game,final MagicPlayer player,final MagicSource source) {
+    public Object[] getPlayerChoiceResults(
+            final GameController controller,
+            final MagicGame game,
+            final MagicPlayer player,
+            final MagicSource source) throws UndoClickedException {
 
         final MagicDeclareBlockersResult result=new MagicDeclareBlockersResult(0,0);
         final MagicCombatCreatureBuilder builder=new MagicCombatCreatureBuilder(game,player.getOpponent(),player);
@@ -71,57 +76,54 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
         if (!builder.buildBlockableAttackers()&&game.canSkipDeclareBlockersSingleChoice()) {
             return new Object[]{result};
         }
-        
-        while (true) {
-
-            // Choose blocker.
-            final Set<MagicPermanent> candidateBlockers=builder.getCandidateBlockers();
-            controller.focusViewers(-1,1);
-            if (candidateBlockers.isEmpty()) {
-                controller.showMessage(source,CONTINUE_MESSAGE);
-            } else {
-                controller.setValidChoices(new HashSet<Object>(candidateBlockers),true);
-                controller.showMessage(source,BLOCKER_MESSAGE);
-            }
-            controller.enableForwardButton();
-            if (controller.waitForInputOrUndo()) {
-                buildResult(builder,result); // For cleanup.
-                return UNDO_CHOICE_RESULTS;
-            }
-            controller.clearValidChoices();            
-            if (controller.isActionClicked()) {
-                buildResult(builder,result);
-                break;
-            }
-            
-            final MagicPermanent blocker=(MagicPermanent)controller.getChoiceClicked();
-            // Remove blocker from combat.
-            if (blocker.isBlocking()) {        
-                final MagicPermanent attacker=blocker.getBlockedCreature();
-                attacker.removeBlockingCreature(blocker);
-                if (attacker.getBlockingCreatures().isEmpty()) {
-                    attacker.clearState(MagicPermanentState.Blocked);
+       
+        try {
+            while (true) {
+                // Choose blocker.
+                final Set<MagicPermanent> candidateBlockers=builder.getCandidateBlockers();
+                controller.focusViewers(-1,1);
+                if (candidateBlockers.isEmpty()) {
+                    controller.showMessage(source,CONTINUE_MESSAGE);
+                } else {
+                    controller.setValidChoices(new HashSet<Object>(candidateBlockers),true);
+                    controller.showMessage(source,BLOCKER_MESSAGE);
                 }
-                blocker.setBlockedCreature(MagicPermanent.NONE);
-                blocker.clearState(MagicPermanentState.Blocking);
-            // Block an attacker.
-            } else {
-                controller.setSourceCardDefinition(blocker);
-                controller.setValidChoices(new HashSet<Object>(builder.getBlockableAttackers(blocker)),true);
-                controller.showMessage(blocker,ATTACKER_MESSAGE);
-                controller.disableActionButton(false);
-                if (controller.waitForInputOrUndo()) {
-                    buildResult(builder,result); // For cleanup.
-                    return UNDO_CHOICE_RESULTS;
+                controller.enableForwardButton();
+                controller.waitForInput();
+                controller.clearValidChoices();            
+                if (controller.isActionClicked()) {
+                    break;
                 }
-                controller.setSourceCardDefinition(MagicEvent.NO_SOURCE);
-                controller.clearValidChoices();                    
-                final MagicPermanent attacker=(MagicPermanent)controller.getChoiceClicked();
-                attacker.addBlockingCreature(blocker);
-                blocker.setState(MagicPermanentState.Blocking);
-                blocker.setBlockedCreature(attacker);
+                
+                final MagicPermanent blocker=(MagicPermanent)controller.getChoiceClicked();
+                // Remove blocker from combat.
+                if (blocker.isBlocking()) {        
+                    final MagicPermanent attacker=blocker.getBlockedCreature();
+                    attacker.removeBlockingCreature(blocker);
+                    if (attacker.getBlockingCreatures().isEmpty()) {
+                        attacker.clearState(MagicPermanentState.Blocked);
+                    }
+                    blocker.setBlockedCreature(MagicPermanent.NONE);
+                    blocker.clearState(MagicPermanentState.Blocking);
+                // Block an attacker.
+                } else {
+                    controller.setSourceCardDefinition(blocker);
+                    controller.setValidChoices(new HashSet<Object>(builder.getBlockableAttackers(blocker)),true);
+                    controller.showMessage(blocker,ATTACKER_MESSAGE);
+                    controller.disableActionButton(false);
+                    controller.waitForInput();
+                    controller.setSourceCardDefinition(MagicEvent.NO_SOURCE);
+                    controller.clearValidChoices();                    
+                    final MagicPermanent attacker=(MagicPermanent)controller.getChoiceClicked();
+                    attacker.addBlockingCreature(blocker);
+                    blocker.setState(MagicPermanentState.Blocking);
+                    blocker.setBlockedCreature(attacker);
+                }
+                controller.update();
             }
-            controller.update();
+        } finally {
+            // Cleanup
+            buildResult(builder,result);
         }
 
         game.createUndoPoint();

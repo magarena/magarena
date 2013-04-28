@@ -7,6 +7,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.ui.GameController;
+import magic.ui.UndoClickedException;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -80,7 +81,7 @@ public class MagicCardChoice extends MagicChoice {
             final GameController controller,
             final MagicGame game,
             final MagicPlayer player,
-            final MagicSource source) {
+            final MagicSource source) throws UndoClickedException {
 
         final MagicCardChoiceResult result=new MagicCardChoiceResult();
         final Set<Object> validCards=new HashSet<Object>(player.getHand());
@@ -91,9 +92,7 @@ public class MagicCardChoice extends MagicChoice {
             controller.disableActionButton(false);
             controller.setValidChoices(validCards,false);
             controller.showMessage(source,message);
-            if (controller.waitForInputOrUndo()) {
-                return UNDO_CHOICE_RESULTS;
-            }
+            controller.waitForInput();
             final MagicCard card=(MagicCard)controller.getChoiceClicked();
             validCards.remove(card);
             result.add(card);

@@ -9,6 +9,7 @@ import magic.model.MagicRandom;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.ui.GameController;
+import magic.ui.UndoClickedException;
 
 import java.util.Collection;
 import java.util.HashSet;
@@ -64,7 +65,8 @@ public class MagicDeclareAttackersChoice extends MagicChoice {
             final GameController controller,
             final MagicGame game,
             final MagicPlayer player,
-            final MagicSource source) {
+            final MagicSource source) throws UndoClickedException {
+
         final MagicDeclareAttackersResult result=new MagicDeclareAttackersResult();
         final MagicCombatCreatureBuilder builder=new MagicCombatCreatureBuilder(game,player,player.getOpponent());
         builder.buildBlockers();        
@@ -91,32 +93,27 @@ public class MagicDeclareAttackersChoice extends MagicChoice {
         controller.enableForwardButton();
         controller.update();
 
-        boolean undo=false;
-        while (true) {
-            if (controller.waitForInputOrUndo()) {
-                undo=true;
-                break;
-            }                
-            if (controller.isActionClicked()) {
-                break;
+        try {
+            while (true) {
+                controller.waitForInput();
+                if (controller.isActionClicked()) {
+                    break;
+                }
+                final MagicPermanent attacker=(MagicPermanent)controller.getChoiceClicked();
+                if (attacker.isAttacking()) {
+                    attacker.clearState(MagicPermanentState.Attacking);
+                    result.remove(attacker);
+                } else {
+                    attacker.setState(MagicPermanentState.Attacking);
+                    result.add(attacker);                
+                }
+                controller.update();
             }
-            final MagicPermanent attacker=(MagicPermanent)controller.getChoiceClicked();
-            if (attacker.isAttacking()) {
-                attacker.clearState(MagicPermanentState.Attacking);
-                result.remove(attacker);
-            } else {
-                attacker.setState(MagicPermanentState.Attacking);
-                result.add(attacker);                
+        } finally {
+            // Cleanup
+            for (final MagicCombatCreature creature : builder.getAttackers()) {
+                creature.permanent.clearState(MagicPermanentState.Attacking);
             }
-            controller.update();
-        }
-
-        // Cleanup.
-        for (final MagicCombatCreature creature : builder.getAttackers()) {
-            creature.permanent.clearState(MagicPermanentState.Attacking);
-        }
-        if (undo) {
-            return UNDO_CHOICE_RESULTS;    
         }
         game.createUndoPoint();
         return new Object[]{result};

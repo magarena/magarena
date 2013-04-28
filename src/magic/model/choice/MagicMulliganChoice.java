@@ -7,6 +7,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.ui.GameController;
+import magic.ui.UndoClickedException;
 import magic.ui.choice.MayChoicePanel;
 
 import java.util.Collection;
@@ -79,7 +80,8 @@ public class MagicMulliganChoice extends MagicChoice {
             final GameController controller,
             final MagicGame game,
             final MagicPlayer player,
-            final MagicSource source) {
+            final MagicSource source) throws UndoClickedException {
+
         if (player.getHandSize() <= 1) {
             return new Object[]{NO_CHOICE};
         }
@@ -90,9 +92,7 @@ public class MagicMulliganChoice extends MagicChoice {
                 return new MayChoicePanel(controller,source,"You may take a mulligan.");
             }
         });
-        if (controller.waitForInputOrUndo()) {
-            return UNDO_CHOICE_RESULTS;
-        }
+        controller.waitForInput();
         if (choicePanel.isYesClicked()) {
             return new Object[]{YES_CHOICE};
         }

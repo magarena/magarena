@@ -12,6 +12,7 @@ import magic.model.target.MagicTargetType;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetPicker;
 import magic.ui.GameController;
+import magic.ui.UndoClickedException;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -550,7 +551,7 @@ public class MagicTargetChoice extends MagicChoice {
             final GameController controller,
             final MagicGame game,
             final MagicPlayer player,
-            final MagicSource source) {
+            final MagicSource source) throws UndoClickedException {
 
         controller.disableActionButton(false);        
         controller.showMessage(source,getDescription());
@@ -577,9 +578,7 @@ public class MagicTargetChoice extends MagicChoice {
             }
         }
         controller.setValidChoices(validChoices,false);
-        if (controller.waitForInputOrUndo()) {
-            return UNDO_CHOICE_RESULTS;
-        }
+        controller.waitForInput();
         return new Object[]{controller.getChoiceClicked()};
     }
    
