@@ -33,6 +33,7 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicReference;
 
 public class GameController {
 
@@ -366,20 +367,25 @@ public class GameController {
     }
     
     public <E extends JComponent> E waitForInput(final Callable<E> func) throws UndoClickedException {
-        final LinkedList<E> results = new LinkedList<E>();
+        final AtomicReference<E> ref = new AtomicReference<E>(); 
+        final AtomicReference<Exception> except = new AtomicReference<Exception>();
         invokeAndWait(new Runnable() {
             public void run() {
                 try {
                     final E content = func.call();
-                    results.add(content);
+                    ref.set(content);
                     gameViewer.showComponent(content);
                 } catch (Exception ex) {
-                    throw new RuntimeException(ex);
+                    except.set(ex);
                 }
             }
         });
         waitForInput();
-        return results.getFirst();
+        if (except.get() != null) {
+            throw new RuntimeException(except.get());
+        } else {
+            return ref.get();
+        }
     }
 
     private Object[] getArtificialNextEventChoiceResults(final MagicEvent event) {
