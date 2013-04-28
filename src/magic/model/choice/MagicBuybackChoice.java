@@ -111,7 +111,6 @@ public class MagicBuybackChoice extends MagicChoice {
                             "You may pay the buyback " + cost.getText() + '.');
                 }
             });
-            controller.waitForInput();
             isYesClicked = kickerPanel.isYesClicked();                
         }
 

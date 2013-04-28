@@ -92,7 +92,6 @@ public class MagicMulliganChoice extends MagicChoice {
                 return new MayChoicePanel(controller,source,"You may take a mulligan.");
             }
         });
-        controller.waitForInput();
         if (choicePanel.isYesClicked()) {
             return new Object[]{YES_CHOICE};
         }

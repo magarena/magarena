@@ -134,7 +134,6 @@ public class MagicColorChoice extends MagicChoice {
                 return new ColorChoicePanel(controller,source);
             }
         });
-        controller.waitForInput();
         return new Object[]{choicePanel.getColor()};
     }
 }

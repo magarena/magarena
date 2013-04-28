@@ -87,7 +87,6 @@ public class MagicSimpleMayChoice extends MagicChoice {
                 return new MayChoicePanel(controller,source,getDescription());
             }
         });
-        controller.waitForInput();
         if (choicePanel.isYesClicked()) {
             return new Object[]{YES_CHOICE};
         }

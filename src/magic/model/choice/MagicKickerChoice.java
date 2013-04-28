@@ -155,7 +155,6 @@ public class MagicKickerChoice extends MagicChoice {
                     return new MultiKickerChoicePanel(controller,source,cost,maximumCount,replicate);
                 }
             });
-            controller.waitForInput();
             count=kickerPanel.getKickerCount();
         } else if (maximumCount==1) {
             // Single kicker.
@@ -164,7 +163,6 @@ public class MagicKickerChoice extends MagicChoice {
                     return new MayChoicePanel(controller,source,"You may pay the kicker "+cost.getText()+'.');
                 }
             });
-            controller.waitForInput();
             count=kickerPanel.isYesClicked()?1:0;                
         } else {
             count=0;

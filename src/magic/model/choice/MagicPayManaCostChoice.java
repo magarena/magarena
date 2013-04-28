@@ -117,7 +117,6 @@ public class MagicPayManaCostChoice extends MagicChoice {
                     return new ManaCostXChoicePanel(controller,source,maximumX);
                 }
             });
-            controller.waitForInput();
             x=choicePanel.getValueForX();
         } else {
             x=0;

@@ -158,7 +158,6 @@ public class MagicMayChoice extends MagicChoice {
                 return new MayChoicePanel(controller,source,getDescription());
             }
         });
-        controller.waitForInput();
         if (!choicePanel.isYesClicked()) {
             return choiceResults;
         }

@@ -365,7 +365,7 @@ public class GameController {
         });
     }
     
-    public <E extends JComponent> E showComponent(final Callable<E> func) {
+    public <E extends JComponent> E showComponent(final Callable<E> func) throws UndoClickedException {
         final LinkedList<E> results = new LinkedList<E>();
         invokeAndWait(new Runnable() {
             public void run() {
@@ -378,6 +378,7 @@ public class GameController {
                 }
             }
         });
+        waitForInput();
         return results.getFirst();
     }
 

@@ -182,7 +182,6 @@ public class MagicPlayChoice extends MagicChoice {
                     return new PlayChoicePanel(controller,activationSource,results);
                 }
             });
-            controller.waitForInput();
             return new Object[]{choicePanel.getResult()};
         }
     }
