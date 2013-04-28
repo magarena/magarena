@@ -196,8 +196,9 @@ ai2 ?= MMAB2
 test: $(MAG)
 	-make `date +%s`.d
 
+selfMode ?= false
 %.d: $(MAG)
-	$(JAVA) -DrndSeed=$* -Dmagarena.dir=`pwd`/release -jar $^ |& tee $*.log
+	$(JAVA) -DrndSeed=$* -DselfMode=$(selfMode) -Dmagarena.dir=`pwd`/release -jar $^ |& tee $*.log
 
 # Z = 4.4172 (99.999%)
 # E = 0.01
