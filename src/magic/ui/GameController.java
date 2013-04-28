@@ -41,7 +41,7 @@ public class GameController {
     private final GamePanel gamePanel;
     private final MagicGame game;
     private final boolean testMode;
-    private final boolean selfMode = System.getProperty("selfMode") != null;
+    private final boolean selfMode = Boolean.getBoolean("selfMode");
     private final AtomicBoolean running = new AtomicBoolean(false);
     private final AtomicBoolean gameConceded = new AtomicBoolean(false);
     private final Collection<ChoiceViewer> choiceViewers = new ArrayList<ChoiceViewer>();

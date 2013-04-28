@@ -143,7 +143,7 @@ public class MagicFrame extends JFrame implements ActionListener {
         registerForMacOSXEvents();
         
         //in selfMode start game immediate based on configuration from duel.cfg
-        if (System.getProperty("selfMode") != null) {
+        if (Boolean.getBoolean("selfMode")) {
             final DuelConfig config=DuelConfig.getInstance();
             config.load();
             newDuel(config);
@@ -381,7 +381,7 @@ public class MagicFrame extends JFrame implements ActionListener {
             playGameItem.setText((duel.getGamesPlayed() == 0 ?
                         "Start duel" :
                         "Continue duel"));
-            if (System.getProperty("selfMode") != null) {
+            if (Boolean.getBoolean("selfMode")) {
                 if (!duel.isFinished()) {
                     nextGame();
                 } else {
