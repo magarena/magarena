@@ -196,8 +196,8 @@ public class GameController {
         return actionClicked;
     }
     
-    public MagicTarget getChoiceClicked() {
-        return choiceClicked;
+    public <T> T getChoiceClicked() {
+        return (T)choiceClicked;
     }
 
     public void setMaxTestGameDuration(final long duration) {

@@ -95,7 +95,7 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
                     break;
                 }
                 
-                final MagicPermanent blocker=(MagicPermanent)controller.getChoiceClicked();
+                final MagicPermanent blocker = controller.getChoiceClicked();
                 // Remove blocker from combat.
                 if (blocker.isBlocking()) {        
                     final MagicPermanent attacker=blocker.getBlockedCreature();
@@ -114,7 +114,7 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
                     controller.waitForInput();
                     controller.setSourceCardDefinition(MagicEvent.NO_SOURCE);
                     controller.clearValidChoices();                    
-                    final MagicPermanent attacker=(MagicPermanent)controller.getChoiceClicked();
+                    final MagicPermanent attacker = controller.getChoiceClicked();
                     attacker.addBlockingCreature(blocker);
                     blocker.setState(MagicPermanentState.Blocking);
                     blocker.setBlockedCreature(attacker);

@@ -161,7 +161,7 @@ public class MagicPayManaCostChoice extends MagicChoice {
                 controller.showMessage(source,"Choose a mana source to pay "+costManaType.getText()+".");
                 controller.waitForInput(); 
                 controller.clearValidChoices();
-                sourcePermanent=(MagicPermanent)controller.getChoiceClicked();                
+                sourcePermanent = controller.getChoiceClicked();                
             }
 
             builder.useManaSource(sourcePermanent,costManaType);

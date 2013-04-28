@@ -93,7 +93,7 @@ public class MagicCardChoice extends MagicChoice {
             controller.setValidChoices(validCards,false);
             controller.showMessage(source,message);
             controller.waitForInput();
-            final MagicCard card=(MagicCard)controller.getChoiceClicked();
+            final MagicCard card = controller.getChoiceClicked();
             validCards.remove(card);
             result.add(card);
         }

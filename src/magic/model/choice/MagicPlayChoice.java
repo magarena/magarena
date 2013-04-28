@@ -163,7 +163,7 @@ public class MagicPlayChoice extends MagicChoice {
             return PASS_CHOICE_RESULTS;
         }
         
-        final MagicSource activationSource=(MagicSource)controller.getChoiceClicked();
+        final MagicSource activationSource = controller.getChoiceClicked();
         final List<MagicPlayChoiceResult> results=new ArrayList<MagicPlayChoiceResult>();
         for (final MagicActivation activation : activationSource.getActivations()) {
             if (activation.canPlay(game,player,activationSource,false)) {

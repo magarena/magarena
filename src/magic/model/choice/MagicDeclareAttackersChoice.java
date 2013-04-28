@@ -99,7 +99,7 @@ public class MagicDeclareAttackersChoice extends MagicChoice {
                 if (controller.isActionClicked()) {
                     break;
                 }
-                final MagicPermanent attacker=(MagicPermanent)controller.getChoiceClicked();
+                final MagicPermanent attacker = controller.getChoiceClicked();
                 if (attacker.isAttacking()) {
                     attacker.clearState(MagicPermanentState.Attacking);
                     result.remove(attacker);
