@@ -30,6 +30,8 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Set;
 import java.util.concurrent.Callable;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public class GameController {
@@ -47,12 +49,12 @@ public class GameController {
     private CardViewer cardViewer;
     private CardViewer imageCardViewer;
     private GameViewer gameViewer;
-    private boolean undoClicked;
     private boolean actionClicked;
     private boolean combatChoice;
     private boolean resetGame;
     private MagicTarget choiceClicked = MagicTargetNone.getInstance();
-    private MagicCardDefinition sourceCardDefinition = MagicCardDefinition.UNKNOWN ;
+    private MagicCardDefinition sourceCardDefinition = MagicCardDefinition.UNKNOWN;
+    private BlockingQueue<Boolean> input = new SynchronousQueue<Boolean>();
     
     public GameController(final GamePanel aGamePanel,final MagicGame aGame) {
         gamePanel = aGamePanel;
@@ -119,14 +121,17 @@ public class GameController {
     }
     
     /** Returns true when undo was clicked. */
-    public synchronized boolean waitForInputOrUndo() {
-        try { //wait
-            wait();
-            if (undoClicked) {
-                undoClicked = false;
-                return true;
-            }
-            return false;
+    public boolean waitForInputOrUndo() {
+        try {
+            return input.take();
+        } catch (final InterruptedException ex) {
+            throw new RuntimeException(ex);
+        }
+    }
+
+    private void resume(final boolean undoClicked) {
+        try {
+            input.put(undoClicked);
         } catch (final InterruptedException ex) {
             throw new RuntimeException(ex);
         }
@@ -145,11 +150,10 @@ public class GameController {
         }
     }
     
-    public synchronized void actionClicked() {
-        undoClicked = false;
+    public void actionClicked() {
         actionClicked = true;
         choiceClicked = MagicTargetNone.getInstance();
-        notifyAll();
+        resume(false);
     }
     
     public void undoKeyPressed() {
@@ -158,24 +162,22 @@ public class GameController {
         }
     }
     
-    public synchronized void undoClicked() {
+    public void undoClicked() {
         if (game.hasUndoPoints()) {
-            undoClicked = true;
             actionClicked = false;
             choiceClicked = MagicTargetNone.getInstance();
             setSourceCardDefinition(MagicEvent.NO_SOURCE);
             clearValidChoices();
-            notifyAll();
+            resume(true);
         }
     }
 
-    public synchronized void processClick(final MagicTarget choice) {
+    public void processClick(final MagicTarget choice) {
         if (validChoices.contains(choice)) {
-            undoClicked = false;
             actionClicked = false;
             choiceClicked = choice;
             hideInfo();
-            notifyAll();
+            resume(false);
         }
     }
     
@@ -418,13 +420,12 @@ public class GameController {
         }
     }
     
-    public synchronized void concede() {
+    public void concede() {
         if (!gameConceded.get() && !game.isFinished()) {
             game.setLosingPlayer(game.getPlayer(0));
             game.clearUndoPoints();
             gameConceded.set(true);
-            undoClicked=true;
-            notifyAll();
+            resume(true);
         }
     }
     
