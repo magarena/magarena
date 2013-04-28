@@ -86,8 +86,7 @@ public class MagicMulliganChoice extends MagicChoice {
             return new Object[]{NO_CHOICE};
         }
         controller.disableActionButton(false);
-        final MayChoicePanel choicePanel =
-                controller.showComponent(new Callable<MayChoicePanel>() {
+        final MayChoicePanel choicePanel = controller.waitForInput(new Callable<MayChoicePanel>() {
             public MayChoicePanel call() {
                 return new MayChoicePanel(controller,source,"You may take a mulligan.");
             }

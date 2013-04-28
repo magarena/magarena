@@ -102,13 +102,13 @@ public class MagicBuybackChoice extends MagicChoice {
 
         boolean isYesClicked = false;
         if (new MagicPayManaCostResultBuilder(game,player,cost.getBuilderCost()).hasResults()) {
-            final MayChoicePanel kickerPanel = 
-                    controller.showComponent(new Callable<MayChoicePanel>() {
+            final MayChoicePanel kickerPanel = controller.waitForInput(new Callable<MayChoicePanel>() {
                 public MayChoicePanel call() {
                     return new MayChoicePanel(
-                            controller,
-                            source,
-                            "You may pay the buyback " + cost.getText() + '.');
+                        controller,
+                        source,
+                        "You may pay the buyback " + cost.getText() + '.'
+                    );
                 }
             });
             isYesClicked = kickerPanel.isYesClicked();                

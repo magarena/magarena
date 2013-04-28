@@ -153,7 +153,7 @@ public class MagicMayChoice extends MagicChoice {
         }
         
         controller.disableActionButton(false);
-        final MayChoicePanel choicePanel = controller.showComponent(new Callable<MayChoicePanel>() {
+        final MayChoicePanel choicePanel = controller.waitForInput(new Callable<MayChoicePanel>() {
             public MayChoicePanel call() {
                 return new MayChoicePanel(controller,source,getDescription());
             }

@@ -177,7 +177,7 @@ public class MagicPlayChoice extends MagicChoice {
             return new Object[]{results.get(0)};
         } else {
             controller.setSourceCardDefinition(activationSource);
-            final PlayChoicePanel choicePanel = controller.showComponent(new Callable<PlayChoicePanel>() {
+            final PlayChoicePanel choicePanel = controller.waitForInput(new Callable<PlayChoicePanel>() {
                 public PlayChoicePanel call() {
                     return new PlayChoicePanel(controller,activationSource,results);
                 }

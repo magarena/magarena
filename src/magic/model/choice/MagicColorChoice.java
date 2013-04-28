@@ -129,7 +129,7 @@ public class MagicColorChoice extends MagicChoice {
             final MagicSource source) throws UndoClickedException {
         
         controller.disableActionButton(false);
-        final ColorChoicePanel choicePanel = controller.showComponent(new Callable<ColorChoicePanel>() {
+        final ColorChoicePanel choicePanel = controller.waitForInput(new Callable<ColorChoicePanel>() {
             public ColorChoicePanel call() {
                 return new ColorChoicePanel(controller,source);
             }

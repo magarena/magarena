@@ -112,7 +112,7 @@ public class MagicPayManaCostChoice extends MagicChoice {
         final int x;
         if (cost.hasX()) {
             final int maximumX=player.getMaximumX(game,cost);
-            final ManaCostXChoicePanel choicePanel = controller.showComponent(new Callable<ManaCostXChoicePanel>() {
+            final ManaCostXChoicePanel choicePanel = controller.waitForInput(new Callable<ManaCostXChoicePanel>() {
                 public ManaCostXChoicePanel call() {
                     return new ManaCostXChoicePanel(controller,source,maximumX);
                 }

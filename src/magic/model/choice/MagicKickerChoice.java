@@ -150,7 +150,7 @@ public class MagicKickerChoice extends MagicChoice {
         final int count;
         if (maximumCount>1) {
             // Multiple kickers.
-            final MultiKickerChoicePanel kickerPanel = controller.showComponent(new Callable<MultiKickerChoicePanel>() {
+            final MultiKickerChoicePanel kickerPanel = controller.waitForInput(new Callable<MultiKickerChoicePanel>() {
                 public MultiKickerChoicePanel call() {
                     return new MultiKickerChoicePanel(controller,source,cost,maximumCount,replicate);
                 }
@@ -158,7 +158,7 @@ public class MagicKickerChoice extends MagicChoice {
             count=kickerPanel.getKickerCount();
         } else if (maximumCount==1) {
             // Single kicker.
-            final MayChoicePanel kickerPanel = controller.showComponent(new Callable<MayChoicePanel>() {
+            final MayChoicePanel kickerPanel = controller.waitForInput(new Callable<MayChoicePanel>() {
                 public MayChoicePanel call() {
                     return new MayChoicePanel(controller,source,"You may pay the kicker "+cost.getText()+'.');
                 }
