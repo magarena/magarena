@@ -1,6 +1,6 @@
 MEM=256M
 JAVA=java -Xms$(MEM) -Xmx$(MEM) 
-DEBUG=java -ea -Xms$(MEM) -Xmx$(MEM) -Ddebug=true
+DEBUG=$(JAVA) -ea -Ddebug=true
 LIBS=.:lib/annotations.jar:lib/jsr305.jar:release/lib/groovy-all-2.1.1.jar
 RUN=${DEBUG} -Dcom.sun.management.jmxremote -cp $(LIBS):release/Magarena.jar
 SHELL=/bin/bash
