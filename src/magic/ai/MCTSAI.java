@@ -186,7 +186,7 @@ public class MCTSAI implements MagicAI {
                     } else if (parent.isOpp() && child.isAIWin()) {
                         parent.incLose(steps);
                     } 
-                }
+                } 
             }
         }
 
@@ -703,13 +703,13 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     }
 
     void setAIWin(final int aSteps) {
-        this.evalScore = Integer.MAX_VALUE;
-        this.steps = aSteps;
+        evalScore = Integer.MAX_VALUE;
+        steps = aSteps;
     }
 
     void setAILose(final int aSteps) {
         evalScore = Integer.MIN_VALUE;
-        this.steps = aSteps;
+        steps = aSteps;
     }
 
     private int getEvalScore() {
