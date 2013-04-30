@@ -18,20 +18,19 @@ public class MMAB implements MagicAI {
     private static final long SEC_TO_NANO=1000000000L;
     private static final int THREADS = Runtime.getRuntime().availableProcessors();
     
-    private final boolean LOGGING;
+    private final boolean LOGGING = Boolean.getBoolean("debug");
     private final boolean CHEAT;
     private final boolean DECKSTR;
 
-    MMAB() {
-        this(false, false);
-    }
-    
-    MMAB(final boolean cheat) {
+    public MMAB(final boolean cheat) {
         this(cheat, false);
     }
-    
-    MMAB(final boolean cheat, final boolean deckStr) {
-        LOGGING = Boolean.getBoolean("debug");
+
+    public static MMAB DeckStrAI() {
+        return new MMAB(false, true);
+    }
+
+    private MMAB(final boolean cheat, final boolean deckStr) {
         CHEAT = cheat;
         DECKSTR = deckStr;
     }

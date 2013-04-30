@@ -18,16 +18,10 @@ public class VegasAI implements MagicAI {
     private static final long SEC_TO_NANO=1000000000L;
     private static final int THREADS=Runtime.getRuntime().availableProcessors();
     
-    private final boolean LOGGING;
+    private final boolean LOGGING = Boolean.getBoolean("debug");
     private final boolean CHEAT;
     
-    VegasAI() {
-        //default: no logging, no cheats
-        this(false, false);
-    }
-    
-    VegasAI(final boolean log, final boolean cheat) {
-        LOGGING = log || Boolean.getBoolean("debug");
+    VegasAI(final boolean cheat) {
         CHEAT = cheat;
     }
     

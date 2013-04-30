@@ -84,7 +84,7 @@ public class MCTSAI implements MagicAI {
         }
     }
 
-    private final boolean LOGGING;
+    private final boolean LOGGING = Boolean.getBoolean("debug");
     private final boolean CHEAT;
 
     //cache the set of choices at the root to avoid recomputing it all the time
@@ -93,13 +93,7 @@ public class MCTSAI implements MagicAI {
     //cache nodes to reuse them in later decision
     private final LRUCache<Long, MCTSGameTree> CACHE = new LRUCache<Long, MCTSGameTree>(1000);
 
-    MCTSAI() {
-        //default: no logging, cheats
-        this(false, true);
-    }
-
-    public MCTSAI(final boolean log, final boolean cheat) {
-        LOGGING = log || Boolean.getBoolean("debug");
+    public MCTSAI(final boolean cheat) {
         CHEAT = cheat;
     }
 

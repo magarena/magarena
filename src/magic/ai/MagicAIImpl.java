@@ -1,17 +1,17 @@
 package magic.ai;
 
 public enum MagicAIImpl {
-    MMAB("minimax", new MMAB()), 
+    MMAB("minimax", new MMAB(false)), 
     MMABC("minimax (cheat)", new MMAB(true)), 
-    MCTSNC("monte carlo tree search", new MCTSAI(false, false)),
-    MCTS("monte carlo tree search (cheat)", new MCTSAI()),
-    VEGAS("vegas", new VegasAI()),
-    VEGASC("vegas (cheat)", new VegasAI(false, true)),
+    MCTS("monte carlo tree search", new MCTSAI(false)),
+    MCTSC("monte carlo tree search (cheat)", new MCTSAI(true)),
+    VEGAS("vegas", new VegasAI(false)),
+    VEGASC("vegas (cheat)", new VegasAI(true)),
     RND("random", new RandomAI()),
-    MMABFast("minimax (deck strength)", new MMAB(false, true)),
+    MMABFast("minimax (deck strength)", magic.ai.MMAB.DeckStrAI()),
     ;
     
-    private static final MagicAIImpl[] SUPPORTED_AIS = {MMAB, MMABC, MCTSNC, MCTS, VEGAS, VEGASC};
+    private static final MagicAIImpl[] SUPPORTED_AIS = {MMAB, MMABC, MCTS, MCTSC, VEGAS, VEGASC};
     
     private final String name;
     private final MagicAI ai;
