@@ -5,11 +5,11 @@ import magic.model.MagicAbility;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicPermanentState;
+import magic.model.MagicAbility;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
 import magic.model.action.MagicBecomesCreatureAction;
-import magic.model.action.MagicChangeStateAction;
+import magic.model.action.MagicSetAbilityAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
@@ -66,7 +66,7 @@ public class Turn_to_Frog {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     //Does not lose static or triggers
-                    game.doAction(new MagicChangeStateAction(creature,MagicPermanentState.LosesActivatedAbilities,true));
+                    game.doAction(new MagicSetAbilityAction(creature,MagicAbility.CantActivateAbilities));
                     game.doAction(new MagicBecomesCreatureAction(creature,PT,AB,ST,C));
                 }
             });

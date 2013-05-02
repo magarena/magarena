@@ -26,9 +26,10 @@ class TestDetain extends TestGameBuilder {
 
         MagicPlayer P = player;
 
-        P.setLife(20);
+        P.setLife(1);
         addToLibrary(P, "Plains", 10);
         createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(game,P,"Arbor Elf",false,1);
         addToHand(P, "Azorius Arrester", 1);
         addToHand(P, "Isperia's Skywatch", 1);
         addToHand(P, "Soulsworn Spirit", 1);
@@ -39,11 +40,11 @@ class TestDetain extends TestGameBuilder {
 
         P = opponent;
         
-        P.setLife(10);
+        P.setLife(1);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Grizzly Bears",false,1);
-        addToHand(P, "Grizzly Bears", 1);
+        createPermanent(game,P,"Rupture Spire",false,1);
+        createPermanent(game,P,"Forest",true,1);
+        createPermanent(game,P,"Shivan Hellkite",false,1);
         
         return game;
     }

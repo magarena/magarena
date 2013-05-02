@@ -3,7 +3,7 @@ package magic.model.event;
 import magic.data.GeneralConfig;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicPermanentState;
+import magic.model.MagicAbility;
 import magic.model.MagicPlayer;
 import magic.model.MagicPlayerState;
 import magic.model.MagicSource;
@@ -90,7 +90,7 @@ public abstract class MagicActivation<T extends MagicSource> implements MagicEve
             return false;
         }
 
-        if (source.isPermanent() && ((MagicPermanent)source).hasState(MagicPermanentState.LosesActivatedAbilities)) {
+        if (source.isPermanent() && ((MagicPermanent)source).hasAbility(MagicAbility.CantActivateAbilities)) {
             return false;
         }
         
