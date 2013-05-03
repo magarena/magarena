@@ -167,7 +167,7 @@ public class CardDefinitions {
         for (final File file : files) {
             loadCardDefinition(file);
         }
-
+        
         filterCards();
         printStatistics();
         
@@ -175,9 +175,6 @@ public class CardDefinitions {
 
         System.err.println(getNumberOfCards()+ " card definitions");
         MagicCardDefinition.printStatistics();
-        
-        // set card text
-        loadCardTexts();
     }
     
     public static int getNumberOfCards() {
@@ -197,36 +194,36 @@ public class CardDefinitions {
     }
     
     public static void loadCardTexts() {
-        for(final MagicCardDefinition card : getCards()) {
-            if (card != MagicCardDefinition.UNKNOWN && card.getText().length() == 0) {
-                loadCardText(card);
-            }
-        }
-    }
-    
-    private static void loadCardText(final MagicCardDefinition card) {
         executor.execute(new Runnable() {
             @Override
             public void run() {
-                // try to load text from file
-                final StringBuilder buffer = new StringBuilder();
-                buffer.append(MagicMain.getGamePath());
-                buffer.append(File.separator);
-                buffer.append(CARD_TEXT_FOLDER);
-                buffer.append(File.separator);                
-                buffer.append(card.getCardTextName());
-                buffer.append(CARD_TEXT_EXT);
-                
-                try {
-                    final String text = FileIO.toStr(new File(buffer.toString()));
-                    if (text != null) {
-                        card.setText(text);                        
+                for(final MagicCardDefinition card : getCards()) {
+                    if (card != MagicCardDefinition.UNKNOWN && card.getText().length() == 0) {
+                        loadCardText(card);
                     }
-                } catch (IOException e) {
-                    // text not downloaded or missing
                 }
             }
         });
+    }
+    
+    private static void loadCardText(final MagicCardDefinition card) {
+        // try to load text from file
+        final StringBuilder buffer = new StringBuilder();
+        buffer.append(MagicMain.getGamePath());
+        buffer.append(File.separator);
+        buffer.append(CARD_TEXT_FOLDER);
+        buffer.append(File.separator);                
+        buffer.append(card.getCardTextName());
+        buffer.append(CARD_TEXT_EXT);
+        
+        try {
+            final String text = FileIO.toStr(new File(buffer.toString()));
+            if (text != null) {
+                card.setText(text);                        
+            }
+        } catch (IOException e) {
+            // text not downloaded or missing
+        }
     }
 
     public static MagicCardDefinition getBasicLand(final MagicColor color) {
