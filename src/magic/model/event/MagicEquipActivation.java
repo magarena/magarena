@@ -9,6 +9,8 @@ import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.target.MagicEquipTargetPicker;
+import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicTargetHint;
 
 public class MagicEquipActivation extends MagicPermanentActivation {
 
@@ -34,9 +36,18 @@ public class MagicEquipActivation extends MagicPermanentActivation {
 
     @Override
     public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+        final MagicTargetChoice TARGET_OTHER_CREATURE_YOU_CONTROL = new MagicTargetChoice(
+            new MagicTargetFilter.MagicOtherPermanentTargetFilter(
+                MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,
+                source.getEquippedCreature()
+            ),
+            true,
+            MagicTargetHint.None,
+            "target creature you control"
+        );
         return new MagicEvent(
             source,
-            MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
+            TARGET_OTHER_CREATURE_YOU_CONTROL,
             new MagicEquipTargetPicker(source),
             this,
             "Attach SN to target creature$ you control."

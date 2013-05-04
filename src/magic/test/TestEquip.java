@@ -34,6 +34,7 @@ class TestEquip extends TestGameBuilder {
         addToLibrary(P, "Forest", 10);
         createPermanent(game,P,"Forest",false,8);
         createPermanent(game,P,"Cylian Elf",false,2);
+        createPermanent(game,P,"Strider Harness",false,1);
         addToHand(P,"Cylian Elf",1); 
         
 
