@@ -44,9 +44,12 @@ public class Inkmoth_Nexus {
     };
 
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{new MagicArtificialCondition(
+            new MagicCondition[]{
+                new MagicArtificialCondition(
                     MagicConditionFactory.ManaCost("{1}"),
-                    MagicConditionFactory.ManaCost("{1}"))},
+                    MagicConditionFactory.ManaCost("{2}")
+                )
+            },
             new MagicActivationHints(MagicTiming.Animate),
             "Animate") {
 
@@ -58,16 +61,15 @@ public class Inkmoth_Nexus {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    this, 
-                    "SN becomes a 1/1 Blinkmoth artifact creature with flying and infect until end of turn. " + 
-                    "It's still a land.");
+                source,
+                this, 
+                "SN becomes a 1/1 Blinkmoth artifact creature with flying and infect until end of turn. " + 
+                "It's still a land."
+            );
         }
 
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent=event.getPermanent();
             game.doAction(new MagicBecomesCreatureAction(permanent,PT,AB,ST));
         }
