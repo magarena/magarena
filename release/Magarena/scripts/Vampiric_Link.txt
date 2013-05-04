@@ -7,5 +7,5 @@ type=Enchantment
 subtype=Aura
 cost={B}
 timing=aura
-enchant=lifelink,pos creature
+enchant=lifelink,creature
 requires_groovy_code=Spirit Link

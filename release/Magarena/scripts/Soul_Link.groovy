@@ -3,12 +3,12 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final int amount=damage.getDealtAmount();
-            return (damage.getSource()==permanent.getEnchantedCreature()) ?
+            return (damage.getTarget()==permanent.getEnchantedCreature()) ?
                 new MagicEvent(
                     permanent,
                     amount,
                     this,
-                    "PN gains " + amount + " life.") 
+                    "PN gains " + amount + " life.")
                 :
                 MagicEvent.NONE;
         }

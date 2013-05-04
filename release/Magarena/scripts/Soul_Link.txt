@@ -8,5 +8,5 @@ type=Enchantment
 subtype=Aura
 cost={1}{W}{B}
 timing=aura
-enchant=can't attack or block,creature
-requires_card_code
+enchant=lifelink,creature
+requires_groovy_code=Spirit Link,Soul Link
