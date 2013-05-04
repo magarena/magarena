@@ -198,8 +198,9 @@ test: $(MAG)
 	-make `date +%s`.d
 
 selfMode ?= false
+debug ?= false
 %.d: $(MAG)
-	$(JAVA) -DrndSeed=$* -DselfMode=$(selfMode) -Dmagarena.dir=`pwd`/release -jar $^ |& tee $*.log
+	$(JAVA) -DrndSeed=$* -DselfMode=$(selfMode) -Ddebug=$(debug) -Dmagarena.dir=`pwd`/release -jar $^ |& tee $*.log
 
 # Z = 4.4172 (99.999%)
 # E = 0.01
