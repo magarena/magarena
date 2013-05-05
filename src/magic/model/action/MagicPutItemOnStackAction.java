@@ -22,7 +22,7 @@ public class MagicPutItemOnStackAction extends MagicAction {
     @Override
     public void doAction(final MagicGame game) {
         game.getStack().addToTop(itemOnStack);
-        if (itemOnStack.hasChoices()) {
+        if (itemOnStack.hasChoice()) {
             game.addEvent(new MagicStackGetChoicesEvent(itemOnStack));
         }
         if (itemOnStack.isSpell()) {

@@ -518,7 +518,7 @@ public class GameController {
                 if (event.hasChoice()) {
                     executeNextEventWithChoices(event);
                 } else {
-                    game.executeNextEvent(MagicEvent.NO_CHOICE_RESULTS);
+                    game.executeNextEvent();
                 }
             } else {
                 game.executePhase();

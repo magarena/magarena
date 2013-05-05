@@ -89,7 +89,7 @@ public abstract class MagicItemOnStack implements MagicTarget {
         return event;
     }
     
-    public boolean hasChoices() {
+    public boolean hasChoice() {
         return event.hasChoice();
     }
 

@@ -381,7 +381,7 @@ public class MCTSAI implements MagicAI {
             final MagicEvent event = game.getNextEvent();
 
             if (!event.hasChoice()) {
-                game.executeNextEvent(MagicEvent.NO_CHOICE_RESULTS);
+                game.executeNextEvent();
                 continue;
             }
             

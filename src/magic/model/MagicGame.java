@@ -5,6 +5,7 @@ import magic.model.action.MagicAction;
 import magic.model.action.MagicActionList;
 import magic.model.action.MagicAddEventAction;
 import magic.model.action.MagicExecuteFirstEventAction;
+import magic.model.action.MagicStackResolveAction;
 import magic.model.action.MagicLogMarkerAction;
 import magic.model.action.MagicMarkerAction;
 import magic.model.action.MagicPutItemOnStackAction;
@@ -717,6 +718,10 @@ public class MagicGame {
         doAction(new MagicExecuteFirstEventAction(choiceResults));
     }
     
+    public void executeNextEvent() {
+        doAction(new MagicExecuteFirstEventAction(MagicEvent.NO_CHOICE_RESULTS));
+    }
+    
     public MagicDuel getDuel() {
         return duel;
     }
@@ -1171,8 +1176,12 @@ public class MagicGame {
             return;
         }
         
-        if (immediate && !event.hasChoice()) {
-            executeEvent(event,MagicEvent.NO_CHOICE_RESULTS);
+        if (immediate) {
+            if (event.hasChoice()) {
+                // ignore
+            } else {
+                executeEvent(event, MagicEvent.NO_CHOICE_RESULTS);
+            }
         } else if (trigger.usesStack()) {
             doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(event)));
         } else {
