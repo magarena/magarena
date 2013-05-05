@@ -13,7 +13,6 @@ public class MagicGameCombatScore implements MagicCombatScore {
     private final MagicPlayer defendingPlayer;
     
     public MagicGameCombatScore(final MagicGame game,final MagicPlayer attackingPlayer,final MagicPlayer defendingPlayer) {
-        
         this.game=game;
         this.attackingPlayer=attackingPlayer;
         this.defendingPlayer=defendingPlayer;
@@ -21,7 +20,6 @@ public class MagicGameCombatScore implements MagicCombatScore {
 
     @Override
     public int getScore(final MagicDeclareBlockersResult result) {
-
         game.startActions();
         game.doAction(new MagicDeclareBlockersAction(defendingPlayer,result));
         game.doAction(new MagicCombatDamageAction(attackingPlayer,defendingPlayer,true));
