@@ -5,7 +5,6 @@ import magic.model.action.MagicAction;
 import magic.model.action.MagicActionList;
 import magic.model.action.MagicAddEventAction;
 import magic.model.action.MagicExecuteFirstEventAction;
-import magic.model.action.MagicStackResolveAction;
 import magic.model.action.MagicLogMarkerAction;
 import magic.model.action.MagicMarkerAction;
 import magic.model.action.MagicPutItemOnStackAction;
@@ -1175,12 +1174,12 @@ public class MagicGame {
         if (!event.isValid()) {
             return;
         }
-        
+       
         if (immediate) {
             if (event.hasChoice()) {
                 // ignore
             } else {
-                executeEvent(event, MagicEvent.NO_CHOICE_RESULTS);
+                doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(event)));
             }
         } else if (trigger.usesStack()) {
             doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(event)));
