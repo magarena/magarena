@@ -105,8 +105,9 @@ cards/existing_%.txt: cards/existing_scripts_%.txt cards/existing_tokens_%.txt
 cards/candidates_full.txt: scripts/extract_candidates.awk cards/scored_by_dec.tsv cards/unimplementable.tsv cards/mtg-data.txt
 	awk -f $^ | sort -rg | sed 's/\t/\n/g' > $@
 
-cards/unimplementable.tsv.update: cards/candidates_full.txt
+cards/unimplementable.tsv.add: cards/candidates_full.txt
 	grep "|" $^ | sed 's/NAME://;s/|/\t/' >> $(basename $@)
+	make $^
 
 %.out: $(MAG)
 	SGE_TASK_ID=$* exp/eval_mcts.sh
