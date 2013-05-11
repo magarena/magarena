@@ -8,6 +8,8 @@ function genName() {
         name = "MMAB"
     } else if ($0 ~ /VEGAS/) {
         name = "VEGAS"
+    } else if ($0 ~ /MCTS2/) {
+        name = "MCTS2"
     } else if ($0 ~ /MCTS/) {
         name = "MCTS"
     }

@@ -9,6 +9,9 @@ public enum MagicAIImpl {
     VEGASC("vegas (cheat)", new VegasAI(true)),
     RND("random", new RandomAI()),
     MMABFast("minimax (deck strength)", magic.ai.MMAB.DeckStrAI()),
+    
+    MCTS2("monte carlo tree search", new MCTSAI2(false)),
+    MCTSC2("monte carlo tree search (cheat)", new MCTSAI2(true)),
     ;
     
     private static final MagicAIImpl[] SUPPORTED_AIS = {MMAB, MMABC, MCTS, MCTSC, VEGAS, VEGASC};
