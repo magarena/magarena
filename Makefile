@@ -532,5 +532,5 @@ ai/benchmark.rnd:
 	`date +%s`.t
 	ts make ai/benchmark.rnd
 	
-exp/zermelo.tsv: $(wildcard exp/1366*.log)
+exp/zermelo.tsv: $(wildcard exp/136*.log)
 	awk -f exp/extract_games.awk $^ | ./exp/whr.rb | tac > $@
