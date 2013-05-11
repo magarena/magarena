@@ -4,10 +4,12 @@ import magic.model.MagicCard;
 import magic.model.MagicCardList;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
+import magic.model.MagicPlayer;
 import magic.model.MagicLocationType;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicCardAction;
+import magic.model.action.MagicPlayerAction;
 import magic.model.action.MagicExileUntilThisLeavesPlayAction;
 import magic.model.action.MagicReturnExiledUntilThisLeavesPlayAction;
 import magic.model.choice.MagicTargetChoice;
@@ -15,6 +17,7 @@ import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicEventAction;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicRemoveCounterEvent;
 import magic.model.event.MagicTiming;
@@ -22,6 +25,23 @@ import magic.model.target.MagicGraveyardTargetPicker;
 import magic.model.trigger.MagicWhenLeavesPlayTrigger;
 
 public class Parallax_Nexus {
+    private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
+        @Override
+        public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event) {
+            event.processTargetCard(game,new MagicCardAction() {
+                public void doAction(final MagicCard card) {
+                    game.doAction(new MagicExileUntilThisLeavesPlayAction(
+                        event.getPermanent(),
+                        card,
+                        MagicLocationType.OwnersHand
+                    ));
+                }
+            });
+        }
+    };
+
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
         new MagicCondition[]{
             MagicCondition.SORCERY_CONDITION,
@@ -42,22 +62,22 @@ public class Parallax_Nexus {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                source.getOpponent(),
-                MagicTargetChoice.TARGET_CARD_FROM_HAND,
-                new MagicGraveyardTargetPicker(false),
+                MagicTargetChoice.TARGET_OPPONENT,
                 this,
-                "PN exiles a card from his or her hand."
+                "Target opponent$ exiles a card from his or her hand."
             );
         }
-
+    
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetCard(game,new MagicCardAction() {
-                public void doAction(final MagicCard card) {
-                    game.doAction(new MagicExileUntilThisLeavesPlayAction(
-                        event.getPermanent(),
-                        card,
-                        MagicLocationType.OwnersHand
+            event.processTargetPlayer(game,new MagicPlayerAction() {
+                public void doAction(final MagicPlayer player) {
+                    game.addEvent(new MagicEvent(
+                        event.getSource(),
+                        player,
+                        MagicTargetChoice.TARGET_CARD_FROM_HAND,
+                        EVENT_ACTION,
+                        "PN exiles a card from his or her hand."
                     ));
                 }
             });
