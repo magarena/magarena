@@ -1,8 +1,8 @@
 name=Arrest
-url=http://magiccards.info/som/en/2.html
-image=http://magiccards.info/scans/en/som/2.jpg
+url=http://magiccards.info/rtr/en/3.html
+image=http://magiccards.info/rtr/en/3.html
 value=3.883
-rarity=C
+rarity=U
 type=Enchantment
 subtype=Aura
 cost={2}{W}
