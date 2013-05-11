@@ -139,7 +139,7 @@ public enum MagicAbility {
     Intimidate("intimidate",45),
     Infect("infect",35),
     Soulbond("soulbond",30),
-    CantActivateAbilities("can't activate activated abilities",-20),
+    CantActivateAbilities("can't activate abilities",-20),
     
     Undying("undying",60) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
