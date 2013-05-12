@@ -7,5 +7,5 @@ type=Creature
 subtype=Horse
 cost={G}
 pt=1/1
-ability=die gain life 1
 timing=main
+requires_groovy_code
