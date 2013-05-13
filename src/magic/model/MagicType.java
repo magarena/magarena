@@ -58,6 +58,14 @@ public enum MagicType {
         throw new RuntimeException("No corresponding MagicType for " + name);
     }
     
+    public static int getTypes(final String[] typeNames) {
+        int givenTypeFlags = 0;
+        for (final String typeName : typeNames) {
+            givenTypeFlags |= getType(typeName).getMask();
+        }
+        return givenTypeFlags;
+    }
+    
     public boolean hasType(final int flags) {
         return (flags & getMask()) != 0;
     }

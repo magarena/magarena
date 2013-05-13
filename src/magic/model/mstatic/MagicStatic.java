@@ -111,6 +111,19 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             }
         };
     }
+    
+    public static MagicStatic genTypeStatic(final int givenTypeFlags) {
+        return new MagicStatic(MagicLayer.Type) {
+            @Override
+            public int getTypeFlags(final MagicPermanent permanent,final int flags) {
+                return flags | givenTypeFlags;
+            }
+            @Override
+            public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+                return MagicStatic.acceptLinked(game, source, target);
+            }
+        };
+    }
         
     public static MagicStatic genSTStatic(final Set<MagicSubType> givenSubTypeFlags) {
         return new MagicStatic(MagicLayer.Type) {

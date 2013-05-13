@@ -114,6 +114,11 @@ public enum CardProperty {
             card.add(MagicStatic.genSTStatic(MagicSubType.getSubTypes(value.split(","))));
         }
     },
+    GIVEN_TYPE() {
+        public void setProperty(final MagicCardDefinition card, final String value) {
+            card.add(MagicStatic.genTypeStatic(MagicType.getTypes(value.split(","))));
+        }
+    },
     GIVEN_COLOR() {
         public void setProperty(final MagicCardDefinition card, final String value) {
             card.add(MagicStatic.AddLinkedColor(MagicColor.getFlags(value)));
