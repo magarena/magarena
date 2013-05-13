@@ -727,7 +727,8 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     }
     
     private double getSum() {
-        return parent.isAI() ? sum : 1.0 - sum;
+        // AI is max player, other is min player
+        return parent.isAI() ? sum : -sum;
     }
     
     public double getAvg() {
