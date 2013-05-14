@@ -7,6 +7,8 @@ import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 
 import java.util.Set;
+import java.util.EnumSet;
+import java.util.List;
 
 // Set an ability until end of turn.
 public class MagicSetAbilityAction extends MagicAction {
@@ -19,6 +21,10 @@ public class MagicSetAbilityAction extends MagicAction {
         this.permanent=permanent;
         this.abilities=abilities;
         this.duration=duration;
+    }
+    
+    public MagicSetAbilityAction(final MagicPermanent permanent,final List<MagicAbility> abilities) {
+        this(permanent,EnumSet.copyOf(abilities),MagicStatic.UntilEOT);
     }
     
     public MagicSetAbilityAction(final MagicPermanent permanent,final MagicAbility first, final MagicAbility ... rest) {
