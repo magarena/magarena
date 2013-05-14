@@ -333,7 +333,7 @@ PermanentState
     ;
 
 SetPTAction
-    = "@'s power and toughness are each equal to the number of " SelectPermanent
+    = "@'s power and toughness are each equal to the number of " SelectPermanent (" plus the number of " SelectCard)?
     / SelectPermanent " are " Number "/" Number 
     ;
 
@@ -741,7 +741,7 @@ SelectOp
 SelectCard
     = "@" (SPACE CardRestriction)? (SEP RestrictedCard)*
     / "it"(SEP RestrictedCard)*
-    / SelectOp SPACE RestrictedCard (SEP RestrictedCard)*
+    / (SelectOp SPACE)? RestrictedCard (SEP RestrictedCard)*
     ;
 
 SelectCreature
@@ -818,6 +818,7 @@ CardRestriction
     = "exiled"
     / "from a graveyard"
     / "from your graveyard"
+    / "in all graveyards"
     / "from your hand"
     / "basic land"
     / "land"
@@ -848,6 +849,7 @@ PermanentRestriction
     / "other"
     / "legendary"
     / "enchanted"
+    / "on the battlefield"
     / "with converted mana cost " Number " or less"
     / "with converted mana cost " Number " or greater"
     / "with converted mana cost " Number
