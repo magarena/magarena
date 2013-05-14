@@ -333,7 +333,7 @@ PermanentState
     ;
 
 SetPTAction
-    = "@'s power and toughness are each equal to the number of " SelectPermanent (" plus the number of " SelectCard)?
+    = "@'s power and toughness are each equal to the number of " SelectObject (" plus the number of " SelectObject)?
     / SelectPermanent " are " Number "/" Number 
     ;
 
@@ -736,6 +736,11 @@ SelectOp
     / "the"
     / "that"
     / "those"
+    ;
+
+SelectObject
+    = SelectCard
+    / SelectPermanent
     ;
 
 SelectCard

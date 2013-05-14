@@ -2825,22 +2825,30 @@ soulshift 6
 soulshift 7
 soulshift 8
 spirit creatures you control get +1/+1.
+@'s power and toughness are each equal to the number of artifact cards in all graveyards.
 @'s power and toughness are each equal to the number of artifacts you control.
 @'s power and toughness are each equal to the number of black permanents you control.
 @'s power and toughness are each equal to the number of blue permanents you control.
+@'s power and toughness are each equal to the number of cards in all graveyards.
 @'s power and toughness are each equal to the number of clerics on the battlefield.
+@'s power and toughness are each equal to the number of creature cards in all graveyards.
 @'s power and toughness are each equal to the number of creatures on the battlefield.
 @'s power and toughness are each equal to the number of creatures you control.
+@'s power and toughness are each equal to the number of enchantment cards in all graveyards.
 @'s power and toughness are each equal to the number of forests you control.
+@'s power and toughness are each equal to the number of forests you control plus the number of treefolk you control.
 @'s power and toughness are each equal to the number of goblins on the battlefield.
 @'s power and toughness are each equal to the number of green permanents you control.
 @'s power and toughness are each equal to the number of illusions on the battlefield.
+@'s power and toughness are each equal to the number of instant cards in all graveyards.
 @'s power and toughness are each equal to the number of islands you control.
+@'s power and toughness are each equal to the number of land cards in all graveyards.
 @'s power and toughness are each equal to the number of lands you control.
 @'s power and toughness are each equal to the number of non-wall creatures you control.
 @'s power and toughness are each equal to the number of rats you control.
 @'s power and toughness are each equal to the number of red permanents you control.
 @'s power and toughness are each equal to the number of soldiers you control.
+@'s power and toughness are each equal to the number of sorcery cards in all graveyards.
 @'s power and toughness are each equal to the number of spirits you control.
 @'s power and toughness are each equal to the number of swamps you control.
 @'s power and toughness are each equal to the number of untapped artifacts, creatures, and lands you control.
