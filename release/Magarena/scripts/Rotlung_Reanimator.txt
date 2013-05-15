@@ -8,3 +8,4 @@ subtype=Zombie,Cleric
 cost={2}{B}
 pt=2/2
 timing=main
+requires_groovy_code
