@@ -196,7 +196,10 @@ ai2 ?= MMAB2
 	--repeat ${games} >> $*.log 2>&1
 
 test: $(MAG)
-	-make `date +%s`.d
+	-make 100.d
+
+debug: $(MAG)
+	-make test debug=true
 
 selfMode ?= false
 debug ?= false
