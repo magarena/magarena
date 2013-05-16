@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Knight
 cost={1}{W}
 pt=2/2
-ability=pump {3}{G} +3/+3 max 1
 timing=main
+requires_groovy_code
