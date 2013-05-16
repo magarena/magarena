@@ -27,7 +27,7 @@ public class Dragon_Arch {
             MagicCondition.CAN_TAP_CONDITION,
             MagicConditionFactory.ManaCost("{2}")},
         new MagicActivationHints(MagicTiming.Token),
-        "Token"
+        "Put"
     ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
