@@ -1,15 +1,5 @@
-package magic.card;
-
-import magic.model.MagicCard;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicPlayCardAction;
-import magic.model.action.MagicReanimateAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
-
-public class Unhallowed_Pact {
-    public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
+[
+    new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -26,9 +16,7 @@ public class Unhallowed_Pact {
                 MagicEvent.NONE;
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCard card = event.getRefCard();
             if (card.getOwner().getGraveyard().contains(card)) {
                 game.doAction(new MagicReanimateAction(
@@ -38,5 +26,5 @@ public class Unhallowed_Pact {
                 ));
             }
         }
-    };
-}
+    }
+]
