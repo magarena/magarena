@@ -8,4 +8,4 @@ subtype=Elemental
 cost={2}{U}
 timing=main
 ability=vanishing 0
-requires_card_code
+requires_groovy_code
