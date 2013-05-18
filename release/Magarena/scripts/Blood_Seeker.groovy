@@ -1,14 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeLifeAction;
-import magic.model.choice.MagicSimpleMayChoice;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
-
-public class Blood_Seeker {
-    public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
+[
+    new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
             return (otherPermanent.isCreature() &&
@@ -20,8 +11,9 @@ public class Blood_Seeker {
                         1,
                         MagicSimpleMayChoice.DEFAULT_YES
                     ),
+                    otherPermanent.getController(),
                     this,
-                    "PN may$ have " + otherPermanent.getController() + " lose 1 life."):
+                    "PN may\$ have RN lose 1 life."):
                 MagicEvent.NONE;
         }
         @Override
@@ -29,8 +21,8 @@ public class Blood_Seeker {
                 final MagicGame game,
                 final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicChangeLifeAction(event.getPlayer().getOpponent(),-1));
+                game.doAction(new MagicChangeLifeAction(event.getRefPlayer(),-1));
             }
         }        
-    };
-}
+    }
+]
