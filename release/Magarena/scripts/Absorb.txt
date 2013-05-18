@@ -6,4 +6,4 @@ rarity=R
 type=Instant
 cost={W}{U}{U}
 timing=counter
-requires_card_code
+requires_groovy_code
