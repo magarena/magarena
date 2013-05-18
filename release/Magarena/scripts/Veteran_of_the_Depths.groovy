@@ -1,15 +1,5 @@
-package magic.card;
-
-import magic.model.MagicCounterType;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeCountersAction;
-import magic.model.choice.MagicSimpleMayChoice;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenBecomesTappedTrigger;
-
-public class Veteran_of_the_Depths {
-    public static final MagicWhenBecomesTappedTrigger T = new MagicWhenBecomesTappedTrigger() {
+[
+    new MagicWhenBecomesTappedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent tapped) {
             return (permanent == tapped) ?
@@ -18,9 +8,11 @@ public class Veteran_of_the_Depths {
                     new MagicSimpleMayChoice(
                         MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
                         1,
-                        MagicSimpleMayChoice.DEFAULT_YES),
+                        MagicSimpleMayChoice.DEFAULT_YES
+                    ),
                     this,
-                    "PN puts a +1/+1 counter on SN.") :
+                    "PN may\$ put a +1/+1 counter on SN."
+                ) :
                 MagicEvent.NONE;
         }
         @Override
@@ -31,5 +23,5 @@ public class Veteran_of_the_Depths {
                 game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,1,true));
             }
         }
-    };
-}
+    }
+]
