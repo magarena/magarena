@@ -7,7 +7,7 @@
                 MagicTargetChoice.NEG_TARGET_CREATURE,
                 new MagicWeakenTargetPicker(4,4),
                 this,
-                "Target creature$ gets -4/-4 until end of turn."
+                "Target creature\$ gets -4/-4 until end of turn."
             );
         }
         @Override

@@ -7,7 +7,7 @@
                 MagicTargetChoice.POS_TARGET_BLOCKING_CREATURE,
                 MagicPumpTargetPicker.create(),
                 this,
-                "Target blocking creature$ gets +7/+7 until end of turn."
+                "Target blocking creature\$ gets +7/+7 until end of turn."
             );
         }
         @Override
