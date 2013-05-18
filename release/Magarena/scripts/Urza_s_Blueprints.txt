@@ -7,4 +7,4 @@ type=Artifact
 cost={6}
 timing=artifact
 ability=echo
-requires_card_code
+requires_groovy_code
