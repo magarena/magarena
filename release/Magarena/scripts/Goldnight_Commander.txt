@@ -8,4 +8,4 @@ subtype=Human,Cleric,Soldier
 cost={3}{W}
 pt=2/2
 timing=main
-requires_card_code
+requires_groovy_code
