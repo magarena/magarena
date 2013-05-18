@@ -1,16 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicPermanentAction;
-import magic.model.action.MagicTapAction;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicTapTargetPicker;
-import magic.model.trigger.MagicWhenAttacksTrigger;
-
-public class Sidar_Jabari {
-    public static final MagicWhenAttacksTrigger T2 = new MagicWhenAttacksTrigger() {
+[
+    new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             return (permanent == creature) ?
@@ -19,19 +8,17 @@ public class Sidar_Jabari {
                     MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
                     new MagicTapTargetPicker(true,false),
                     this,
-                    "Tap target creature defending player controls."
+                    "Tap target creature\$ defending player controls."
                 ):
                 MagicEvent.NONE;
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicTapAction(creature,true));
                 }
             });
         }        
-    };
-}
+    }
+]
