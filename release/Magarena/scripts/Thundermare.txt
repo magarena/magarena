@@ -9,4 +9,4 @@ cost={5}{R}
 pt=5/5
 ability=haste
 timing=fmain
-requires_card_code=Timbermare
+requires_groovy_code=Timbermare

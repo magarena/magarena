@@ -9,4 +9,4 @@ cost={2}{U}{U}
 ability=flash
 timing=flash
 enchant=can't attack or block,neg creature
-requires_card_code=Claustrophobia
+requires_groovy_code=Claustrophobia
