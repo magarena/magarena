@@ -10,4 +10,4 @@ pt=1/1
 ability=flash,flying
 static=player
 timing=flash
-requires_card_code
+requires_groovy_code
