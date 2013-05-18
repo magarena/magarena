@@ -8,4 +8,4 @@ subtype=Aura
 cost={3}{U}{U}
 timing=aura
 enchant=copy,creature
-requires_card_code
+requires_groovy_code
