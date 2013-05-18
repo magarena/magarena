@@ -7,4 +7,4 @@ type=Artifact
 cost={3}
 ability=fading 2
 timing=main
-requires_card_code
+requires_groovy_code
