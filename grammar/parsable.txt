@@ -117,6 +117,7 @@
 {1}: prevent the next 1 damage that would be dealt to target creature you control this turn.
 {1}: prevent the next 1 damage that would be dealt to @ this turn.
 +1: put a 1/1 black vampire creature token with lifelink onto the battlefield.
++1: put a 1/1 black wolf creature token with deathtouch onto the battlefield.
 -1: put a +1/+1 counter on each creature you control. those creatures gain vigilance until end of turn.
 +1: put a 1/1 white soldier creature token onto the battlefield.
 -1: put a 3/3 green beast creature token onto the battlefield.
@@ -696,6 +697,7 @@
 {4}{b}{b}: exile target creature and put a +1/+1 counter on @.
 {4}{b}{b}, {t}, sacrifice @: target creature gets -6/-6 until end of turn.
 {4}: @ becomes a 4/2 golem artifact creature until end of turn. it's still a land.
+{4}{b}: put target creature card from a graveyard onto the battlefield under your control.
 {4}{b}, sacrifice a creature: return target creature card from your graveyard to your hand.
 -4: creatures you control get +3/+3 and gain trample until end of turn.
 -4: each dragon creature you control deals damage equal to its power to target player.
@@ -864,6 +866,7 @@ attacking creatures get -3/-0 until end of turn.
 attacking creatures with flying get -2/-2 and lose flying until end of turn.
 attacking creatures you control get +1/+0.
 attacking creatures you control get +2/+0.
+attacking creatures you control get +3/+0.
 attacking creatures you control have lifelink.
 @ attacks each turn if able.
 at the beginning of each end step, if a creature died this turn, put a carrion counter on @.
@@ -879,6 +882,7 @@ at the beginning of each player's upkeep, that player loses 1 life and discards 
 at the beginning of each player's upkeep, that player loses 2 life and draws two cards.
 at the beginning of each player's upkeep, that player puts the top card of his or her library into his or her graveyard.
 at the beginning of each player's upkeep, that player returns a creature he or she controls to its owner's hand.
+at the beginning of each player's upkeep, that player sacrifices a creature.
 at the beginning of each player's upkeep, that player sacrifices a green or white permanent.
 at the beginning of each player's upkeep, that player sacrifices a land.
 at the beginning of each player's upkeep, that player sacrifices an artifact.
@@ -1183,6 +1187,7 @@ counter target creature spell. put a 2/2 blue illusion creature token onto the b
 counter target instant or sorcery spell.
 counter target instant or sorcery spell unless its controller pays {1}.
 counter target instant spell.
+counter target multicolored spell.
 counter target nonblue spell.
 counter target noncreature spell.
 counter target noncreature spell. its controller loses 2 life.
@@ -1218,7 +1223,9 @@ creatures and lands you control have shroud.
 creatures can't attack.
 creatures can't attack this turn.
 creatures can't block.
+creatures can't block this turn.
 creatures enchanted player controls get -1/-1.
+creatures target player controls get +1/+1 until end of turn.
 creatures with flying get +1/+1.
 creatures with flying get -2/-0.
 creatures with flying get +2/+0.
@@ -1232,6 +1239,7 @@ creatures with power 7 or greater can't attack or block.
 creatures you control are indestructible this turn. untap each creature you control.
 creatures you control are slivers in addition to their other creature types.
 creatures you control can't attack.
+creatures you control gain deathtouch and lifelink until end of turn.
 creatures you control gain double strike until end of turn.
 creatures you control gain haste until end of turn.
 creatures you control gain intimidate until end of turn.
@@ -1472,6 +1480,7 @@ destroy all plains.
 destroy all tapped creatures.
 destroy all white creatures.
 destroy all white permanents.
+destroy each artifact, creature, and enchantment with converted mana cost x.
 destroy each artifact with converted mana cost x or less.
 destroy each creature with converted mana cost 3 or less.
 destroy each creature with converted mana cost 3 or less. they can't be regenerated.
@@ -2021,6 +2030,7 @@ green creatures you control have trample.
 {g}: regenerate enchanted creature.
 {g}, remove a -1/-1 counter from @: destroy target artifact or enchantment.
 {g}: return @ to its owner's hand.
+{g}, sacrifice a creature: target creature gets +3/+3 until end of turn.
 {g}, sacrifice a creature: you gain 1 life.
 {g}, sacrifice a forest: @ gets +2/+2 until end of turn.
 {g}, sacrifice a forest: regenerate @.
@@ -2309,6 +2319,7 @@ other treefolk and forests you control are indestructible.
 other treefolk creatures you control get +1/+1.
 other vampire creatures you control get +1/+1.
 other vampire creatures you control get +1/+1 and have first strike.
+other vampire creatures you control get +2/+2.
 other white creatures get +1/+1.
 other white creatures you control get +1/+1.
 other zombie creatures get +1/+1.
@@ -2410,12 +2421,14 @@ put a 5/5 green wurm creature token with trample onto the battlefield.
 put a 6/12 colorless construct artifact creature token with trample onto the battlefield. exile it at the beginning of your next end step.
 put a 6/6 green wurm creature token onto the battlefield.
 put a card from your hand on top of your library: return @ to its owner's hand.
+put a creature card from a graveyard onto the battlefield under your control. it gains haste until end of turn.
 put an x/x green ooze creature token onto the battlefield.
 put an x/x green wurm creature token onto the battlefield.
 put a token that's a copy of target creature onto the battlefield.
 put four +1/+1 counters on each creature you control.
 put four 1/1 green snake creature tokens onto the battlefield.
 put four 1/1 red goblin creature tokens onto the battlefield.
+put four 1/1 white bird creature tokens with flying onto the battlefield.
 put four 1/1 white citizen creature tokens onto the battlefield.
 put target artifact, creature, or enchantment on the bottom of its owner's library.
 put target artifact, creature, or enchantment on top of its owner's library.
@@ -2567,6 +2580,7 @@ return target creature to its owner's hand.
 return target creature to its owner's hand. its controller draws a card.
 return target creature to its owner's hand. its controller loses 1 life.
 return target creature to its owner's hand. you gain 2 life.
+return target creature you don't control to its owner's hand.
 return target enchanted permanent to its owner's hand.
 return target goblin card from your graveyard to your hand.
 return target green card from your graveyard to your hand.
@@ -3029,6 +3043,7 @@ target creature gets +5/+5 and gains shroud until end of turn.
 target creature gets -5/-5 until end of turn.
 target creature gets +5/+5 until end of turn.
 target creature gets -5/-5 until end of turn. @ deals 5 damage to that creature's controller.
+target creature gets -6/-0 until end of turn.
 target creature gets -7/-0 until end of turn.
 target creature gets +7/+7 until end of turn.
 target creature gets +x/+0 until end of turn.
@@ -3040,6 +3055,7 @@ target creature loses flying until end of turn.
 target creature loses shadow until end of turn.
 target creature with flying loses flying until end of turn. @ deals damage to that creature equal to the number of forests you control.
 target creature without flying can't block this turn.
+target creature you control deals damage equal to its power to target creature or player.
 target creature you control deals damage equal to its power to target creature with flying.
 target creature you control gets +0/+1 and gains hexproof until end of turn.
 target creature you control gets +1/+0 and gains first strike until end of turn.
@@ -3342,6 +3358,7 @@ trample
 {t}: target merfolk creature is unblockable this turn.
 {t}: target player draws a card, then discards a card.
 {t}: target player loses 1 life.
+{t}: target player loses 5 life.
 {t}: target player puts the top card of his or her library into his or her graveyard.
 {t}: target red or green creature gets -2/-0 until end of turn.
 {t}: untap another target permanent.
