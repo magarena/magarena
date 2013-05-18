@@ -1,19 +1,5 @@
-package magic.card;
-
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicDealDamageAction;
-import magic.model.action.MagicTargetAction;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicDamageTargetPicker;
-import magic.model.target.MagicTarget;
-import magic.model.trigger.MagicWhenDiesTrigger;
-
-public class Perilous_Myr {
-    public static final MagicWhenDiesTrigger T = new MagicWhenDiesTrigger() {
-
+[
+    new MagicWhenDiesTrigger() {
         @Override
         public MagicEvent getEvent(final MagicPermanent permanent) {
             return new MagicEvent(
@@ -21,10 +7,9 @@ public class Perilous_Myr {
                 MagicTargetChoice.TARGET_CREATURE_OR_PLAYER,
                 new MagicDamageTargetPicker(2),
                 this,
-                "SN deals 2 damage to target creature or player$."
+                "SN deals 2 damage to target creature or player\$."
             );
         }
-        
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game,new MagicTargetAction() {
@@ -34,5 +19,5 @@ public class Perilous_Myr {
                 }
             });
         }
-    };
-}
+    }
+]
