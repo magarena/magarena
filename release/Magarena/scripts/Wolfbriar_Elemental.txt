@@ -9,4 +9,4 @@ cost={2}{G}{G}
 pt=4/4
 timing=main
 ability=multikicker {G} put a 2/2 green Wolf creature token onto the battlefield for each time it was kicked
-requires_card_code
+requires_groovy_code
