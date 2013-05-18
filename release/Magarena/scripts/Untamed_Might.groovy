@@ -8,7 +8,7 @@
                 MagicTargetChoice.POS_TARGET_CREATURE,
                 MagicPumpTargetPicker.create(),
                 this,
-                "Target creature$ gets +" + amount + "/+" + amount + " until end of turn."
+                "Target creature\$ gets +" + amount + "/+" + amount + " until end of turn."
             );
         }
         @Override
