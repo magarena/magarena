@@ -7,4 +7,4 @@ type=Land
 mana=r3
 ability=enters tapped,tap add mana {R}
 timing=fmain
-requires_card_code=Crossway Vampire
+requires_groovy_code=Crossway Vampire

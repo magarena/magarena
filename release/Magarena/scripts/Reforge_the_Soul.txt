@@ -7,4 +7,4 @@ type=Sorcery
 cost={3}{R}{R}
 ability=miracle {1}{R}
 timing=draw
-requires_card_code=Wheel of Fortune
+requires_groovy_code=Wheel of Fortune

@@ -8,4 +8,4 @@ subtype=Goblin,Scout
 cost={1}{R}
 pt=2/1
 timing=fmain
-requires_card_code=Crossway Vampire
+requires_groovy_code=Crossway Vampire
