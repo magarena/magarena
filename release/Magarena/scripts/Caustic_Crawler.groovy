@@ -1,17 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeTurnPTAction;
-import magic.model.action.MagicPermanentAction;
-import magic.model.choice.MagicMayChoice;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicWeakenTargetPicker;
-import magic.model.trigger.MagicLandfallTrigger;
-
-public class Caustic_Crawler {
-    public static final MagicLandfallTrigger T = new MagicLandfallTrigger() {
+[
+    new MagicLandfallTrigger() {
         @Override
         public MagicEvent getEvent(final MagicPermanent permanent) {
             return new MagicEvent(
@@ -24,7 +12,6 @@ public class Caustic_Crawler {
                 "PN may$ have target creature$ get -1/-1 until end of turn."
             );
         }
-        
         @Override
         public void executeEvent(
                 final MagicGame game,
@@ -37,5 +24,5 @@ public class Caustic_Crawler {
                 });
             }
         }        
-    };
-}
+    }
+]
