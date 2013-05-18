@@ -9,4 +9,4 @@ cost={4}
 equip={4}
 given_ability=first strike
 timing=equipment
-requires_card_code
+requires_groovy_code
