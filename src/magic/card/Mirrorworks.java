@@ -26,7 +26,7 @@ public class Mirrorworks {
                     ),
                     otherPermanent,
                     this,
-                    "You may$ pay {2}. If you do, put a token that's a " +
+                    "You may$ pay {2}$. If you do, put a token that's a " +
                     "copy of " + otherPermanent + " onto the battlefield."
                 ):
                 MagicEvent.NONE;

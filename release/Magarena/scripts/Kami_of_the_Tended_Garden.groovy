@@ -9,7 +9,7 @@
                         new MagicPayManaCostChoice(MagicManaCost.create("{G}"))
                     ),
                     this,
-                    "You may\$ pay {G}. If you don't, sacrifice SN."
+                    "You may\$ pay {G}\$. If you don't, sacrifice SN."
                 ):
                 MagicEvent.NONE;
         }
