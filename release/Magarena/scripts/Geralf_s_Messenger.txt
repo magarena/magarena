@@ -9,4 +9,4 @@ cost={B}{B}{B}
 pt=3/2
 timing=fmain
 ability=enters tapped,undying
-requires_card_code
+requires_groovy_code
