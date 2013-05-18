@@ -176,6 +176,9 @@ Keyword
     / "champion" SPACE "a" "n"? SPACE SelectCreature
     / "cycling" SPACE ManaCost
     / "reinforce" SPACE Number "—" ManaCost
+    / "extort"
+    / "evolve"
+    / "unleash"
     ;
 
 ColorlessCost
@@ -825,6 +828,7 @@ CardRestriction
     / "from your graveyard"
     / "in all graveyards"
     / "from your hand"
+    / "in your hand"
     / "basic land"
     / "land"
     / SpellRestriction
@@ -872,6 +876,7 @@ CreatureRestriction
     / "blocking"
     / "blocked"
     / "equipped"
+    / "dealt damage by " SelectPermanent " this turn" 
     / Tribal
     / PermanentRestriction
     / PowerToughness

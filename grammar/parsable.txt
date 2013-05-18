@@ -1935,6 +1935,7 @@ equipped creature has vigilance.
 equipped creature is indestructible.
 equipped creature is unblockable and has shroud.
 equipped creatures you control get +1/+0 and have first strike.
+evolve
 exalted
 exile @.
 exile all creatures.
@@ -1957,6 +1958,7 @@ exile target creature you control, then return it to the battlefield under its o
 exile target enchantment.
 exile target land.
 exile target nontoken permanent, then return it to the battlefield under its owner's control.
+extort
 fading 1
 fading 2
 fading 3
@@ -2266,6 +2268,7 @@ other creatures you control get -1/-1.
 other creatures you control get +1/+1.
 other creatures you control get +2/+2.
 other creatures you control have exalted.
+other creatures you control have extort.
 other creatures you control have intimidate.
 other creatures you control with defender get +0/+2.
 other creatures you control with flanking have flanking.
@@ -2844,6 +2847,7 @@ spirit creatures you control get +1/+1.
 @'s power and toughness are each equal to the number of black permanents you control.
 @'s power and toughness are each equal to the number of blue permanents you control.
 @'s power and toughness are each equal to the number of cards in all graveyards.
+@'s power and toughness are each equal to the number of cards in your hand.
 @'s power and toughness are each equal to the number of clerics on the battlefield.
 @'s power and toughness are each equal to the number of creature cards in all graveyards.
 @'s power and toughness are each equal to the number of creatures on the battlefield.
@@ -3406,6 +3410,7 @@ trample
 {u}: @ gets +1/+1 until end of turn.
 {u}: @ is unblockable this turn.
 undying
+unleash
 untap all artifacts.
 untap all creatures you control.
 untap all creatures you control. samurai creatures you control get +1/+1 until end of turn.
@@ -3914,6 +3919,11 @@ whenever a blue creature enters the battlefield under your control, you may have
 whenever a creature an opponent controls dies, that player loses 2 life.
 whenever a creature an opponent controls dies, you may gain 3 life.
 whenever a creature an opponent controls dies, you may return target artifact card from your graveyard to your hand.
+whenever a creature dealt damage by enchanted creature this turn dies, put a +1/+1 counter on that creature.
+whenever a creature dealt damage by equipped creature this turn dies, you may exile that card. if you do, put a 2/2 black zombie creature token onto the battlefield.
+whenever a creature dealt damage by @ this turn dies, put a +1/+1 counter on @.
+whenever a creature dealt damage by @ this turn dies, put a +2/+2 counter on @.
+whenever a creature dealt damage by @ this turn dies, you may draw a card.
 whenever a creature dies, @ deals 2 damage to that creature's controller.
 whenever a creature dies, @ gets +2/+2 until end of turn.
 whenever a creature dies, put a +1/+1 counter on @.
@@ -3942,6 +3952,7 @@ whenever a creature enters the battlefield under your control, you may pay {2}{r
 whenever a creature enters the battlefield, untap all creatures.
 whenever a creature enters the battlefield, you lose 1 life and add {b} to your mana pool.
 whenever a creature enters the battlefield, you may untap @.
+whenever a creature with flying dealt damage by @ this turn dies, put a +1/+1 counter on @.
 whenever a creature with flying dies, put a +1/+1 counter on @.
 whenever a creature with power 4 or greater enters the battlefield, its controller draws a card.
 whenever a creature with power 5 or greater enters the battlefield under your control, you may have @ deal 5 damage to target creature or player.
