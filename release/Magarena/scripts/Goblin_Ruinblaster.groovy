@@ -1,17 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicDestroyAction;
-import magic.model.action.MagicPermanentAction;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicDestroyTargetPicker;
-import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
-
-public class Goblin_Ruinblaster {
-    public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
+[
+    new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(
             final MagicGame game,
@@ -23,20 +11,17 @@ public class Goblin_Ruinblaster {
                     MagicTargetChoice.NEG_TARGET_NONBASIC_LAND,
                     new MagicDestroyTargetPicker(false),
                     this,
-                    "Destroy target nonbasic land$."
+                    "Destroy target nonbasic land\$."
                 ):
                 MagicEvent.NONE;
         }
-    
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent land) {
                     game.doAction(new MagicDestroyAction(land));
                 }
             });
         }
-    };
-}
+    }
+]
