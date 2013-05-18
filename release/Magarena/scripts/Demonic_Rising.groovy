@@ -1,0 +1,28 @@
+[
+    new MagicAtEndOfTurnTrigger() {
+        @Override
+        public MagicEvent executeTrigger(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final MagicPlayer eotPlayer) {
+            return (permanent.isController(eotPlayer) &&
+                    eotPlayer.getNrOfPermanentsWithType(MagicType.Creature) == 1) ?
+                new MagicEvent(
+                    permanent,
+                    this,
+                    "PN puts a 5/5 black Demon creature " +
+                    "token with flying onto the battlefield."
+                ):
+                MagicEvent.NONE;
+        }
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            if (event.getPlayer().getNrOfPermanentsWithType(MagicType.Creature) == 1) {
+                game.doAction(new MagicPlayTokenAction(
+                    event.getPlayer(),
+                    TokenCardDefinitions.get("Demon5")
+                ));
+            }
+        }
+    }
+]
