@@ -1,15 +1,5 @@
-package magic.card;
-
-import magic.data.TokenCardDefinitions;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicSubType;
-import magic.model.action.MagicPlayTokenAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
-
-public class Requiem_Angel {
-    public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
+[
+    new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -27,12 +17,11 @@ public class Requiem_Angel {
                 MagicEvent.NONE;
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicPlayTokenAction(
-                    event.getPlayer(),
-                    TokenCardDefinitions.get("Spirit2")));
+                event.getPlayer(),
+                TokenCardDefinitions.get("Spirit2")
+            ));
         }
-    };
-}
+    }
+]
