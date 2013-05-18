@@ -8,7 +8,7 @@
                     new MagicMayChoice(),
                     creature,
                     this, 
-                    "PN may$ untap RN and remove it from combat."
+                    "PN may\$ untap RN and remove it from combat."
                 ) :
                 MagicEvent.NONE;
         }
