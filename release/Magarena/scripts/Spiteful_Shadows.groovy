@@ -1,14 +1,5 @@
-package magic.card;
-
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicDealDamageAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
-
-public class Spiteful_Shadows {
-    public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
+[
+    new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -19,17 +10,14 @@ public class Spiteful_Shadows {
             return (damage.getTarget() == enchantedCreature) ?
                 new MagicEvent(
                     enchantedCreature,
-                    enchantedCreature.getController(),
                     amount,
                     this,
-                    enchantedCreature + " deals " + amount +
-                    " damage to " + enchantedCreature.getController() + ".") :
+                    "SN deals RN damage to PN."
+                ) :
                 MagicEvent.NONE;
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicDamage damage = new MagicDamage(
                 event.getSource(),
                 event.getPlayer(),
@@ -37,5 +25,5 @@ public class Spiteful_Shadows {
             );
             game.doAction(new MagicDealDamageAction(damage));
         }
-    };
-}
+    }
+]
