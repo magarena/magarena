@@ -7,4 +7,4 @@ type=Sorcery
 cost={B}{B}
 timing=removal
 removal=3
-requires_card_code=Wrack with Madness
+requires_groovy_code=Wrack with Madness
