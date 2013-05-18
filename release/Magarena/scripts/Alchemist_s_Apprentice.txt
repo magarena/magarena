@@ -8,4 +8,4 @@ subtype=Human,Wizard
 cost={1}{U}
 pt=1/1
 timing=main
-requires_card_code
+requires_groovy_code
