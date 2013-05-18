@@ -9,4 +9,4 @@ cost={U}{U}
 pt=2/2
 static=player
 timing=main
-requires_card_code
+requires_groovy_code
