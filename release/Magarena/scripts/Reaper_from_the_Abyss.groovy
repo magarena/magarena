@@ -1,17 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicDestroyAction;
-import magic.model.action.MagicPermanentAction;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicDestroyTargetPicker;
-import magic.model.trigger.MagicAtEndOfTurnTrigger;
-
-public class Reaper_from_the_Abyss {
-    public static final MagicAtEndOfTurnTrigger T = new MagicAtEndOfTurnTrigger() {
+[
+    new MagicAtEndOfTurnTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eotPlayer) {
             return game.getCreatureDiedThisTurn() ?
@@ -20,7 +8,7 @@ public class Reaper_from_the_Abyss {
                     MagicTargetChoice.TARGET_NON_DEMON,
                     new MagicDestroyTargetPicker(false),
                     this,
-                    "Destroy target non-Demon creature."
+                    "Destroy target non-Demon creature\$."
                 ):
                 MagicEvent.NONE;
         }    
@@ -34,5 +22,5 @@ public class Reaper_from_the_Abyss {
                 }
             });
         }
-    };
-}
+    }
+]
