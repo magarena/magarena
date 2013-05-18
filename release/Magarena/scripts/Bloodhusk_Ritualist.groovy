@@ -1,16 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicPlayerAction;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.event.MagicDiscardEvent;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
-
-public class Bloodhusk_Ritualist {          
-    public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
+[
+    new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(
             final MagicGame game,
@@ -22,7 +11,8 @@ public class Bloodhusk_Ritualist {
                     player,
                     MagicTargetChoice.TARGET_OPPONENT,
                     this,
-                    "Target opponent$ discards " + permanent.getKicker() + " cards."):
+                    "Target opponent\$ discards " + permanent.getKicker() + " cards."
+                ):
                 MagicEvent.NONE;
         }
         @Override
@@ -35,5 +25,5 @@ public class Bloodhusk_Ritualist {
                 }
             });
         }
-    };
-}
+    }
+]
