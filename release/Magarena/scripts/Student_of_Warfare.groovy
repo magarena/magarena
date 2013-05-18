@@ -1,16 +1,5 @@
-package magic.card;
-
-import magic.model.MagicAbility;
-import magic.model.MagicCounterType;
-import magic.model.MagicPermanent;
-import magic.model.MagicPowerToughness;
-import magic.model.mstatic.MagicLayer;
-import magic.model.mstatic.MagicStatic;
-
-import java.util.Set;
-
-public class Student_of_Warfare {
-    public static final MagicStatic S1 = new MagicStatic(MagicLayer.SetPT) {
+[
+    new MagicStatic(MagicLayer.SetPT) {
         @Override
         public void modPowerToughness(
                 final MagicPermanent source,
@@ -23,9 +12,8 @@ public class Student_of_Warfare {
                 pt.set(3,3);
             }
         }
-    };
-
-    public static final MagicStatic S2 = new MagicStatic(MagicLayer.Ability) {
+    },
+    new MagicStatic(MagicLayer.Ability) {
         @Override
         public void modAbilityFlags(
                 final MagicPermanent source,
@@ -38,5 +26,5 @@ public class Student_of_Warfare {
                 flags.add(MagicAbility.FirstStrike);
             }
         }
-    };
-}
+    }
+]
