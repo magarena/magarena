@@ -8,4 +8,4 @@ subtype=Wurm
 cost={3}{G}{G}{W}{W}
 pt=7/7
 timing=smain
-requires_card_code
+requires_groovy_code
