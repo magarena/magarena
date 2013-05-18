@@ -9,4 +9,4 @@ cost={4}{B}{B}
 timing=aura
 ability=control enchanted
 enchant=gain control,neg creature
-requires_card_code
+requires_groovy_code
