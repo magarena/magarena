@@ -1,17 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicExileUntilThisLeavesPlayAction;
-import magic.model.action.MagicPermanentAction;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicExileTargetPicker;
-import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
-
-public class Petravark {
-    public static final MagicWhenComesIntoPlayTrigger T1 = new MagicWhenComesIntoPlayTrigger() {
+[
+    new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
@@ -19,13 +7,11 @@ public class Petravark {
                 MagicTargetChoice.TARGET_LAND,
                 MagicExileTargetPicker.create(),
                 this,
-                "Exile target land$."
+                "Exile target land\$."
             );
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
@@ -33,5 +19,5 @@ public class Petravark {
                 }
             });
         }
-    };
-}
+    }
+]
