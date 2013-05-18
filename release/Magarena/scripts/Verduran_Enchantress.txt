@@ -8,4 +8,4 @@ subtype=Human,Druid
 cost={1}{G}{G}
 pt=0/2
 timing=fmain
-requires_card_code=Mesa Enchantress
+requires_groovy_code=Mesa Enchantress
