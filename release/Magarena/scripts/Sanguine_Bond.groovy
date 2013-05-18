@@ -2,15 +2,13 @@
     new MagicWhenLifeIsGainedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicLifeChangeTriggerData lifeChange) {
-            final MagicPlayer player = permanent.getController();
-            final int amount = lifeChange.amount;
-            return (player == lifeChange.player) ?
+            return permanent.isController(lifeChange.player) ?
                 new MagicEvent(
                     permanent,
-                    player,
-                    amount,
+                    MagicTargetChoice.TARGET_OPPONENT,
+                    lifeChange.amount,
                     this,
-                    player.getOpponent() + " loses " + amount + " life."
+                    "Target opponent\$ loses RN life."
                 ):
                 MagicEvent.NONE;
         }
@@ -18,10 +16,14 @@
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event) {
-            game.doAction(new MagicChangeLifeAction(
-                event.getPlayer().getOpponent(),
-                -event.getRefInt()
-            ));
+            event.processTargetPlayer(game,new MagicPlayerAction() {
+                public void doAction(final MagicPlayer player) {
+                    game.doAction(new MagicChangeLifeAction(
+                        player,
+                        -event.getRefInt()
+                    ));
+                }
+            });
         }
     }
 ]
