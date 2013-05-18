@@ -6,7 +6,7 @@
                 final MagicPlayer player,
                 final MagicPowerToughness pt) {
             // floor((x + 1) / 2) == ceil(x / 2)
-            final int amount = (int)(player.getOpponent().getLife() + 1) / 2;
+            def amount = (player.getOpponent().getLife() + 1).intdiv(2);
             pt.set(amount,amount);
         }
     },
