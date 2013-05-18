@@ -6,4 +6,4 @@ rarity=R
 type=Instant
 cost={3}{G}
 timing=pump
-requires_card_code
+requires_groovy_code
