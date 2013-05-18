@@ -7,7 +7,7 @@
                     permanent,
                     MagicTargetChoice.TARGET_PLAYER,
                     this,
-                    "Target player$ draws a card and loses 1 life."
+                    "Target player\$ draws a card and loses 1 life."
                 ):
                 MagicEvent.NONE;
         }

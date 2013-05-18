@@ -7,7 +7,7 @@
                 MagicTargetChoice.POS_TARGET_CREATURE,
                 MagicFirstStrikeTargetPicker.create(),
                 this,
-                "Target creature$ gains double strike until end of turn."
+                "Target creature\$ gains double strike until end of turn."
             );
         }
         @Override

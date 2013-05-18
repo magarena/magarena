@@ -7,7 +7,7 @@
                 MagicTargetChoice.CREATURE_YOU_CONTROL,
                 MagicBounceTargetPicker.getInstance(),
                 this,
-                "Put a creature you control$ on top of its owner's library."
+                "Put a creature you control\$ on top of its owner's library."
             );
         }
         @Override

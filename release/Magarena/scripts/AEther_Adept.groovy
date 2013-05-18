@@ -7,7 +7,7 @@
                 MagicTargetChoice.TARGET_CREATURE,
                 MagicBounceTargetPicker.getInstance(),
                 this,
-                "Return target creature$ to its owner's hand."
+                "Return target creature\$ to its owner's hand."
             );
         }
         @Override

@@ -6,4 +6,4 @@ rarity=C
 type=Instant
 cost={1}{R/W}
 timing=block
-requires_card_code=Assault Strobe
+requires_groovy_code=Assault Strobe
