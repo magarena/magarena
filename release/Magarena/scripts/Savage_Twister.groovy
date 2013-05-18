@@ -1,26 +1,13 @@
-package magic.card;
-
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicPayedCost;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicDealDamageAction;
-import magic.model.event.MagicEvent;
-import magic.model.event.MagicSpellCardEvent;
-import magic.model.stack.MagicCardOnStack;
-import magic.model.target.MagicTargetFilter;
-
-import java.util.Collection;
-
-public class Savage_Twister {
-    public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
+[
+    new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             final int amount=payedCost.getX();
             return new MagicEvent(
-                    cardOnStack,
-                    this,
-                    "SN deals "+amount+" damage to each creature.");
+                cardOnStack,
+                this,
+                "SN deals "+amount+" damage to each creature."
+            );
         }
         @Override
         public void executeEvent(
@@ -34,5 +21,5 @@ public class Savage_Twister {
                 game.doAction(new MagicDealDamageAction(damage));
             }
         }
-    };
-}
+    }
+]
