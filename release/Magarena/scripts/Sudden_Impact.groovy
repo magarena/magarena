@@ -7,7 +7,7 @@
                 MagicTargetChoice.NEG_TARGET_PLAYER,
                 this,
                 "SN deals damage equal to the " +
-                "number of cards in target player's hand to that player$."
+                "number of cards in target player's hand to that player\$."
             );
         }
         @Override
