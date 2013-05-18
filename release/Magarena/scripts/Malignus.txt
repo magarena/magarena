@@ -7,4 +7,4 @@ type=Creature
 subtype=Elemental,Spirit
 cost={3}{R}{R}
 timing=main
-requires_card_code
+requires_groovy_code

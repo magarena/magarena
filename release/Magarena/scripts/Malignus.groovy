@@ -1,17 +1,5 @@
-package magic.card;
-
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.MagicPowerToughness;
-import magic.model.MagicSource;
-import magic.model.event.MagicEvent;
-import magic.model.mstatic.MagicCDA;
-import magic.model.trigger.MagicIfDamageWouldBeDealtTrigger;
-
-public class Malignus {
-    public static final MagicCDA CDA = new MagicCDA() {
+[
+    new MagicCDA() {
         @Override
         public void modPowerToughness(
                 final MagicGame game,
@@ -21,9 +9,8 @@ public class Malignus {
             final int amount = (player.getOpponent().getLife() + 1) / 2;
             pt.set(amount,amount);
         }
-    };
-    
-    public static final MagicIfDamageWouldBeDealtTrigger T = new MagicIfDamageWouldBeDealtTrigger(3) {
+    },
+    new MagicIfDamageWouldBeDealtTrigger(3) {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -36,10 +23,5 @@ public class Malignus {
             }            
             return MagicEvent.NONE;
         }
-        @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
-        }
-    };
-}
+    }
+]
