@@ -1,17 +1,5 @@
-package magic.card;
-
-import magic.data.TokenCardDefinitions;
-import magic.model.MagicGame;
-import magic.model.MagicLocationType;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicPlayTokenAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicGraveyardTriggerData;
-import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
-
-public class Wurmcoil_Engine {
-    public static final MagicWhenPutIntoGraveyardTrigger T = new MagicWhenPutIntoGraveyardTrigger() {
+[
+    new MagicWhenPutIntoGraveyardTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
             return (triggerData.fromLocation == MagicLocationType.Play) ?
@@ -24,12 +12,10 @@ public class Wurmcoil_Engine {
                 MagicEvent.NONE;
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player=event.getPlayer();
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Wurm1")));
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Wurm2")));            
         }
-    };
-}
+    }
+]
