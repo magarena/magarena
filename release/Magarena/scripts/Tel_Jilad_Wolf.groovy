@@ -1,13 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeTurnPTAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
-
-public class Tel_Jilad_Wolf {
-    public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
+[
+    new MagicWhenBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
             if (permanent != attacker) {
@@ -24,20 +16,18 @@ public class Tel_Jilad_Wolf {
                     permanent,
                     amount,
                     this,
-                    "SN gets +" + amount + "/+" +  amount + " until end of turn."
+                    "SN gets +RN/+RM until end of turn."
                 ):
                 MagicEvent.NONE;
         }
         
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicChangeTurnPTAction(
                 event.getPermanent(),
                 event.getRefInt(),
                 event.getRefInt()
             ));
         }
-    };
-}
+    }
+]
