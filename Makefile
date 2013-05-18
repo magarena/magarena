@@ -519,6 +519,7 @@ cards/cards_per_set.tsv: cards/existing_tip_full.txt
 
 smallest.convert:
 	make `ls -1S src/magic/card | grep java |sed 's/.java//' | tail -1`.convert
+	ls -1 src/magic/card | wc
 
 %.convert:
 	hg mv src/magic/card/$*.java release/Magarena/scripts/$*.groovy
