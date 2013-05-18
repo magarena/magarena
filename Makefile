@@ -328,7 +328,7 @@ upload/Magarena-%.zip: Magarena-%.zip
 cards/scriptable.txt: scripts/analyze_cards.scala scripts/effects.txt cards/cards.xml
 	scala $^ > $@
 
-grammar/rules.txt: scripts/normalize_rules.scala scripts/effects.txt cards/cards.xml
+grammar/rules.txt: scripts/normalize_rules.scala cards/cards.xml
 	scala $^ > $@
 
 cards/magicdraftsim-sets:

@@ -2,11 +2,8 @@ import scala.xml.pull._
 import scala.xml._
 import scala.io.Source
 
-Console.err.println("loading effects from " + args(0))
-val effects = Source.fromFile(args(0)).getLines.toList
-
-Console.err.println("loading cards from " + args(1))
-val src = XML.load(args(1))
+Console.err.println("loading cards from " + args(0))
+val src = XML.load(args(0))
 
 Console.err.println("begin analysis")
 for (card <- src \ "card") {
@@ -17,7 +14,7 @@ for (card <- src \ "card") {
     val tgh = (card \ "tgh").text
     
     val types = card \ "typelist" \ "type"
-    val rules = card \ "rulelist" \ "rule"
+    val rules = card \ "rulelist" \ "rule" ++ card \ "multi" \ "rulelist" \ "rule"
     
     val normalized_rules = rules
          .filter(_.text.trim() != "")
