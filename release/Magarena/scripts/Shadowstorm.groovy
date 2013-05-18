@@ -1,25 +1,12 @@
-package magic.card;
-
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicPayedCost;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicDealDamageAction;
-import magic.model.event.MagicEvent;
-import magic.model.event.MagicSpellCardEvent;
-import magic.model.stack.MagicCardOnStack;
-import magic.model.target.MagicTargetFilter;
-
-import java.util.Collection;
-
-public class Shadowstorm {
-    public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+[
+    new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack,
-                    this,
-                    "SN deals 2 damage to each creature with shadow.");
+                cardOnStack,
+                this,
+                "SN deals 2 damage to each creature with shadow."
+            );
         }
         @Override
         public void executeEvent(
@@ -32,5 +19,5 @@ public class Shadowstorm {
                 game.doAction(new MagicDealDamageAction(damage));
             }
         }
-    };
-}
+    }
+]
