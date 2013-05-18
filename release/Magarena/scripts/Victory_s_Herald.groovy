@@ -1,17 +1,5 @@
-package magic.card;
-
-import magic.model.MagicAbility;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicSetAbilityAction;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicTargetFilter;
-import magic.model.trigger.MagicWhenAttacksTrigger;
-
-import java.util.Collection;
-
-public class Victory_s_Herald {
-    public static final MagicWhenAttacksTrigger T1 = new MagicWhenAttacksTrigger() {
+[
+    new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -27,10 +15,7 @@ public class Victory_s_Herald {
         }
         
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
-
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets = game.filterPermanents(
                     event.getPlayer(),
                     MagicTargetFilter.TARGET_ATTACKING_CREATURE);
@@ -42,5 +27,5 @@ public class Victory_s_Herald {
                 ));
             }
         }        
-    };
-}
+    }
+]
