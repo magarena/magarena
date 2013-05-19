@@ -1,21 +1,5 @@
-package magic.card;
-
-import magic.model.MagicCounterType;
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicManaCost;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicChangeCountersAction;
-import magic.model.choice.MagicMayChoice;
-import magic.model.choice.MagicPayManaCostChoice;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
-
-
-public class Vorosh__the_Hunter {
-
-    public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
+[
+    new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -30,13 +14,12 @@ public class Vorosh__the_Hunter {
                         new MagicPayManaCostChoice(MagicManaCost.create("{2}{G}"))
                     ),
                     this,
-                    "You may$ pay {2}{G}$. If you do, put six +1/+1 counters on SN."):
+                    "You may\$ pay {2}{G}\$. If you do, put six +1/+1 counters on SN."
+                ):
                 MagicEvent.NONE;
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 game.doAction(new MagicChangeCountersAction(
                     event.getPermanent(),
@@ -46,5 +29,5 @@ public class Vorosh__the_Hunter {
                 ));
             }
         }
-    };
-}
+    }
+]
