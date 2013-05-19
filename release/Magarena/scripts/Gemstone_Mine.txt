@@ -7,4 +7,4 @@ type=Land
 mana=b3g3r3u3w3
 ability=enters with mining 3
 timing=land
-requires_card_code
+requires_groovy_code
