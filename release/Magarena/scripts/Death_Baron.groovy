@@ -1,20 +1,8 @@
-package magic.card;
-
-import magic.model.MagicAbility;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPowerToughness;
-import magic.model.MagicSubType;
-import magic.model.mstatic.MagicLayer;
-import magic.model.mstatic.MagicStatic;
-import magic.model.target.MagicTargetFilter;
-
-import java.util.Set;
-
-public class Death_Baron {
-    public static final MagicStatic S = new MagicStatic(
-            MagicLayer.ModPT, 
-            MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL) {
+[
+    new MagicStatic(
+        MagicLayer.ModPT, 
+        MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL
+    ) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
             pt.add(1,1);
@@ -24,11 +12,11 @@ public class Death_Baron {
             return target.hasSubType(MagicSubType.Skeleton) || 
                     (source != target && target.hasSubType(MagicSubType.Zombie));
         }
-    };
-    
-    public static final MagicStatic S2 = new MagicStatic(
-            MagicLayer.Ability, 
-            MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL) {
+    },
+    new MagicStatic(
+        MagicLayer.Ability, 
+        MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL
+    ) {
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
             flags.add(MagicAbility.Deathtouch);
@@ -38,5 +26,5 @@ public class Death_Baron {
             return target.hasSubType(MagicSubType.Skeleton) || 
                     (source != target && target.hasSubType(MagicSubType.Zombie));
         }
-    };
-}
+    }
+]
