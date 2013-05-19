@@ -10,8 +10,8 @@
         }
 
         @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicAddStaticAction(
+        public void executeEvent(final MagicGame outerGame, final MagicEvent event) {
+            outerGame.doAction(new MagicAddStaticAction(
                 new MagicStatic(MagicLayer.Game, MagicStatic.UntilEOT) {
                     @Override
                     public void modGame(final MagicPermanent source, final MagicGame game) {
@@ -23,7 +23,7 @@
                     }
                 }
             ));
-            game.doAction(new MagicDrawAction(event.getPlayer(),1));
+            outerGame.doAction(new MagicDrawAction(event.getPlayer(),1));
         }
     }
 ]
