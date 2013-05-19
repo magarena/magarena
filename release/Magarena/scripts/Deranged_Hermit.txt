@@ -10,4 +10,4 @@ pt=1/1
 timing=main
 ability=echo
 static=all
-requires_card_code
+requires_groovy_code
