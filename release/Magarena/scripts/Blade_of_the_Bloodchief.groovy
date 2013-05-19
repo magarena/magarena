@@ -1,15 +1,5 @@
-package magic.card;
-
-import magic.model.MagicCounterType;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicSubType;
-import magic.model.action.MagicChangeCountersAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
-
-public class Blade_of_the_Bloodchief {
-    public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
+[
+    new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
             final MagicPermanent equippedCreature = permanent.getEquippedCreature();
@@ -23,9 +13,7 @@ public class Blade_of_the_Bloodchief {
                 MagicEvent.NONE;
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent equippedCreature = event.getPermanent().getEquippedCreature();
             final int amount = equippedCreature.hasSubType(MagicSubType.Vampire) ? 2 : 1;
             game.doAction(new MagicChangeCountersAction(
@@ -35,5 +23,5 @@ public class Blade_of_the_Bloodchief {
                 true
             ));
         }
-    };
-}
+    }
+]
