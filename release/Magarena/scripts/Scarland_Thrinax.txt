@@ -8,4 +8,4 @@ subtype=Lizard
 cost={B}{R}{G}
 pt=2/2
 timing=main
-requires_card_code=Bloodflow Connoisseur
+requires_groovy_code=Bloodflow Connoisseur

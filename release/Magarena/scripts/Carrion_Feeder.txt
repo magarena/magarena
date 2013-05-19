@@ -9,4 +9,4 @@ cost={B}
 pt=1/1
 ability=can't block
 timing=main
-requires_card_code=Bloodflow Connoisseur
+requires_groovy_code=Bloodflow Connoisseur
