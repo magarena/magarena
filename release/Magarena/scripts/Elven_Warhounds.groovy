@@ -1,15 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicLocationType;
-import magic.model.MagicPermanent;
-import magic.model.MagicPermanentList;
-import magic.model.action.MagicRemoveFromPlayAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
-
-public class Elven_Warhounds {
-    public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
+[
+    new MagicWhenBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
             if (permanent != attacker) {
@@ -18,7 +8,6 @@ public class Elven_Warhounds {
             final MagicPermanentList plist = new MagicPermanentList(permanent.getBlockingCreatures());
             return new MagicEvent(
                 permanent,
-                permanent.getController(),
                 plist,
                 this,
                 plist.size() == 1 ?
@@ -27,13 +16,11 @@ public class Elven_Warhounds {
             );
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanentList plist = event.getRefPermanentList();
             for (final MagicPermanent blocker : plist) {
                 game.doAction(new MagicRemoveFromPlayAction(blocker,MagicLocationType.TopOfOwnersLibrary));
             }
         }
-    };
-}
+    }
+]
