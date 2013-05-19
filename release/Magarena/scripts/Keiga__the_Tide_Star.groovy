@@ -1,18 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicLocationType;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicGainControlAction;
-import magic.model.action.MagicPermanentAction;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicExileTargetPicker;
-import magic.model.trigger.MagicGraveyardTriggerData;
-import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
-
-public class Keiga__the_Tide_Star {
-    public static final MagicWhenPutIntoGraveyardTrigger T = new MagicWhenPutIntoGraveyardTrigger() {
+[
+    new MagicWhenPutIntoGraveyardTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
             return (triggerData.fromLocation == MagicLocationType.Play) ?
@@ -21,7 +8,7 @@ public class Keiga__the_Tide_Star {
                     MagicTargetChoice.TARGET_CREATURE,
                     MagicExileTargetPicker.create(),
                     this,
-                    "Gain control of target creature$."
+                    "Gain control of target creature\$."
                 ):
                 MagicEvent.NONE;
         }
@@ -34,5 +21,5 @@ public class Keiga__the_Tide_Star {
                 }
             });
         }
-    };
-}
+    }
+]
