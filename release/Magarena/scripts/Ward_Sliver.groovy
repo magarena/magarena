@@ -1,30 +1,13 @@
-package magic.card;
-
-import magic.model.MagicAbility;
-import magic.model.MagicColor;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicAddStaticAction;
-import magic.model.choice.MagicColorChoice;
-import magic.model.event.MagicEvent;
-import magic.model.mstatic.MagicLayer;
-import magic.model.mstatic.MagicStatic;
-import magic.model.target.MagicTargetFilter;
-import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
-
-import java.util.Set;
-
-public class Ward_Sliver {
-      public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
+[
+    new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
                 permanent,
                 MagicColorChoice.ALL_INSTANCE,
                 this,
-                "Choose a color$." + 
-                " All Slivers have protection from chosen color."
+                "Choose a color\$. " + 
+                "All Slivers have protection from chosen color."
             );
         }
         @Override
@@ -41,5 +24,5 @@ public class Ward_Sliver {
                 } 
             ));
         }
-    };
-}
+    }
+]
