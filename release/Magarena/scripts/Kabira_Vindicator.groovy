@@ -1,15 +1,5 @@
-package magic.card;
-
-import magic.model.MagicCounterType;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPowerToughness;
-import magic.model.mstatic.MagicLayer;
-import magic.model.mstatic.MagicStatic;
-import magic.model.target.MagicTargetFilter;
-
-public class Kabira_Vindicator {
-    public static final MagicStatic S1 = new MagicStatic(MagicLayer.SetPT) {
+[
+    new MagicStatic(MagicLayer.SetPT) {
         @Override
         public void modPowerToughness(
                 final MagicPermanent source,
@@ -22,11 +12,11 @@ public class Kabira_Vindicator {
                 pt.set(3,6);
             }
         }
-    };
-
-    public static final MagicStatic S2 = new MagicStatic(
-            MagicLayer.ModPT, 
-            MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL) {
+    },
+    new MagicStatic(
+        MagicLayer.ModPT, 
+        MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL
+    ) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
             final int charges = source.getCounters(MagicCounterType.Charge);
@@ -43,5 +33,5 @@ public class Kabira_Vindicator {
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
             return source != target;
         }
-    };
-}
+    }
+]
