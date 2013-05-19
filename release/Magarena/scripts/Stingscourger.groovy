@@ -1,18 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicLocationType;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicPermanentAction;
-import magic.model.action.MagicRemoveFromPlayAction;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicBounceTargetPicker;
-import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
-
-public class Stingscourger {
-    public static final MagicWhenComesIntoPlayTrigger T2 = new MagicWhenComesIntoPlayTrigger() {
+[
+    new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -23,7 +10,7 @@ public class Stingscourger {
                 MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
                 MagicBounceTargetPicker.getInstance(),
                 this,
-                "Return target creature$ your opponent " +
+                "Return target creature\$ your opponent " +
                 "controls to its owner's hand."
             );
         }
@@ -34,10 +21,11 @@ public class Stingscourger {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicRemoveFromPlayAction(
-                            creature,
-                            MagicLocationType.OwnersHand));
+                        creature,
+                        MagicLocationType.OwnersHand
+                    ));
                 }
             });
         }
-    };
-}
+    }
+]
