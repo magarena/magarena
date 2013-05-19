@@ -1,18 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicLocationType;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicPermanentAction;
-import magic.model.action.MagicRemoveFromPlayAction;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicExileTargetPicker;
-import magic.model.trigger.MagicGraveyardTriggerData;
-import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
-
-public class Archon_of_Justice {
-    public static final MagicWhenPutIntoGraveyardTrigger T =new MagicWhenPutIntoGraveyardTrigger() {
+[
+    new MagicWhenPutIntoGraveyardTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -24,20 +11,18 @@ public class Archon_of_Justice {
                     MagicTargetChoice.TARGET_PERMANENT,
                     MagicExileTargetPicker.create(),
                     this,
-                    "Exile target permanent$."
+                    "Exile target permanent\$."
                 ):
                 MagicEvent.NONE;
         }
 
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.Exile));
                 }
             });
         }
-    };
-}
+    }
+]
