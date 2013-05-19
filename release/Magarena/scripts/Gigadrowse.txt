@@ -7,4 +7,4 @@ type=Instant
 cost={U}
 ability=replicate
 timing=tapping
-requires_card_code
+requires_groovy_code
