@@ -444,6 +444,15 @@ public class MagicPlayer implements MagicTarget {
         return count;
     }
     
+    public boolean controlsPermanentWithColor(final MagicColor color) {
+        for (final MagicPermanent permanent : permanents) {
+            if (permanent.hasColor(color)) {
+                return true;
+            }
+        }
+        return false;
+    }
+    
     public boolean controlsPermanentWithType(final MagicType type) {
         for (final MagicPermanent permanent : permanents) {
             if (permanent.hasType(type)) {
