@@ -20,7 +20,7 @@
                     game.doAction(new MagicDestroyAction(target));
                 }
             } 
-            game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Soldier"),x));
+            game.doAction(new MagicPlayTokensAction(player,TokenCardDefinitions.get("Soldier"),x));
         }
     }
 ]
