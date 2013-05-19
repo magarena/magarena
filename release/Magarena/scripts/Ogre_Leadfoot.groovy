@@ -1,14 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPermanentList;
-import magic.model.action.MagicDestroyAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
-
-public class Ogre_Leadfoot {
-    public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
+[
+    new MagicWhenBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
             if (permanent != attacker) {
@@ -34,13 +25,11 @@ public class Ogre_Leadfoot {
         }
         
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanentList plist = event.getRefPermanentList();
             for (final MagicPermanent blocker : plist) {
                 game.doAction(new MagicDestroyAction(blocker));
             }
         }
-    };
-}
+    }
+]
