@@ -9,4 +9,4 @@ subtype=Aura
 cost={W}
 timing=tapping
 enchant=tap,neg creature
-requires_card_code
+requires_groovy_code
