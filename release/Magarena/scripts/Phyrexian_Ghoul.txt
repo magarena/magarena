@@ -8,4 +8,4 @@ subtype=Zombie
 cost={2}{B}
 pt=2/2
 timing=main
-requires_card_code=Bloodthrone Vampire
+requires_groovy_code=Bloodthrone Vampire

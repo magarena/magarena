@@ -7,4 +7,4 @@ type=Instant
 cost={5}{R}
 removal=3
 timing=removal
-requires_card_code=Thunderous Wrath
+requires_groovy_code=Thunderous Wrath
