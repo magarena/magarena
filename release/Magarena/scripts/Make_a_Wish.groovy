@@ -1,19 +1,5 @@
-package magic.card;
-
-import magic.model.MagicCard;
-import magic.model.MagicCardList;
-import magic.model.MagicGame;
-import magic.model.MagicLocationType;
-import magic.model.MagicPayedCost;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicMoveCardAction;
-import magic.model.action.MagicRemoveCardAction;
-import magic.model.event.MagicEvent;
-import magic.model.event.MagicSpellCardEvent;
-import magic.model.stack.MagicCardOnStack;
-
-public class Make_a_Wish {
-    public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+[
+    new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
@@ -23,9 +9,7 @@ public class Make_a_Wish {
             );
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final MagicCardList cards = player.getGraveyard();
             final magic.MersenneTwisterFast rng = new magic.MersenneTwisterFast(cards.getStateId());
@@ -37,5 +21,5 @@ public class Make_a_Wish {
                 game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
             }
         }
-    };
-}
+    }
+]
