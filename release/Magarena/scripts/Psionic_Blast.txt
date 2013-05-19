@@ -7,4 +7,4 @@ type=Instant
 cost={2}{U}
 timing=removal
 removal=3
-requires_card_code=Char
+requires_groovy_code=Char
