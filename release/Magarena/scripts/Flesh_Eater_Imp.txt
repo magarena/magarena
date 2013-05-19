@@ -9,4 +9,4 @@ cost={3}{B}
 pt=2/2
 ability=flying,infect
 timing=main
-requires_card_code=Devouring Swarm
+requires_groovy_code=Devouring Swarm

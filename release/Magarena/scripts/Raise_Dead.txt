@@ -6,4 +6,4 @@ rarity=C
 type=Sorcery
 cost={B}
 timing=draw
-requires_card_code=Disentomb
+requires_groovy_code=Disentomb
