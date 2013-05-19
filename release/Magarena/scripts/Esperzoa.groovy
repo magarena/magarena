@@ -1,18 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicLocationType;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicPermanentAction;
-import magic.model.action.MagicRemoveFromPlayAction;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicBounceTargetPicker;
-import magic.model.trigger.MagicAtUpkeepTrigger;
-
-public class Esperzoa {
-    public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
+[
+    new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -24,19 +11,18 @@ public class Esperzoa {
                     MagicTargetChoice.TARGET_ARTIFACT_YOU_CONTROL,
                     MagicBounceTargetPicker.getInstance(),
                     this,
-                    "Return an artifact you control to its owner's hand."):
+                    "Return an artifact you control to its owner's hand."
+                ):
                 MagicEvent.NONE;
         }
 
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent artifact) {
                     game.doAction(new MagicRemoveFromPlayAction(artifact,MagicLocationType.OwnersHand));
                 }
             });
         }
-    };
-}
+    }
+]
