@@ -7,4 +7,4 @@ rarity=R
 type=Sorcery
 cost={X}{B}{B}
 timing=removal
-requires_card_code
+requires_groovy_code
