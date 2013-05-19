@@ -1,19 +1,5 @@
-package magic.card;
-
-import magic.data.TokenCardDefinitions;
-import magic.model.MagicCard;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPermanentState;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicChangeStateAction;
-import magic.model.action.MagicPlayCardAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenAttacksTrigger;
-
-
-public class Geist_of_Saint_Traft {
-    public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
+[
+    new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             return (permanent == creature) ?
@@ -27,14 +13,12 @@ public class Geist_of_Saint_Traft {
                 MagicEvent.NONE;
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final MagicCard card = MagicCard.createTokenCard(TokenCardDefinitions.get("Angel4"),player);
             final MagicPlayCardAction action = new MagicPlayCardAction(card,player,MagicPlayCardAction.TAPPED_ATTACKING);
             game.doAction(action);
             game.doAction(new MagicChangeStateAction(action.getPermanent(),MagicPermanentState.ExileAtEndOfCombat,true));
-        }        
-    };
-}
+        }
+    }
+]
