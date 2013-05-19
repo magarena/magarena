@@ -1,16 +1,5 @@
-package magic.card;
-
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicDealDamageAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicAtUpkeepTrigger;
-
-
-public class The_Rack {
-    public static final MagicAtUpkeepTrigger T1 = new MagicAtUpkeepTrigger() {
+[
+    new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -26,9 +15,7 @@ public class The_Rack {
                 MagicEvent.NONE;
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final int amount = 3 - player.getHandSize();
             if (amount > 0) {
@@ -40,7 +27,6 @@ public class The_Rack {
                 game.doAction(new MagicDealDamageAction(damage));
             }
         }
-    };
-    
-    public static final Object T2 = Black_Vise.T2;
-}
+    },
+    Black_Vise.T2
+]
