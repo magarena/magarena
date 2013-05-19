@@ -1,17 +1,5 @@
-package magic.card;
-
-import magic.model.MagicCounterType;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeCountersAction;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicTargetFilter;
-import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
-
-import java.util.Collection;
-
-public class Cathars__Crusade {
-    public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
+[
+    new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -29,12 +17,11 @@ public class Cathars__Crusade {
         }
         
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets = game.filterPermanents(
-                    event.getPlayer(),
-                    MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+                event.getPlayer(),
+                MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL
+            );
             for (final MagicPermanent target : targets) {
                 game.doAction(new MagicChangeCountersAction(
                     target,
@@ -44,5 +31,5 @@ public class Cathars__Crusade {
                 ));
             }
         }
-    };
-}
+    }
+]
