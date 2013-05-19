@@ -13,7 +13,7 @@
                     ),
                     otherPermanent.getPower(),
                     this,
-                    "PN may$ put RN +1/+1 counters on SN."
+                    "PN may\$ put RN +1/+1 counters on SN."
                 ) :
                 MagicEvent.NONE;
         }

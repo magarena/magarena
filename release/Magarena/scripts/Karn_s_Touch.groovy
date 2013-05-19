@@ -1,6 +1,6 @@
-def PT = Karn__Silver_Golem.PT;
-def ST = Karn__Silver_Golem.ST;
-def TP = Karn__Silver_Golem.TP;
+def PT = Karn__Silver_Golem.getPT();
+def ST = Karn__Silver_Golem.getST();
+def TP = Karn__Silver_Golem.getTP();
 
 [
     new MagicSpellCardEvent() {

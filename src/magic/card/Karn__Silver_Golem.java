@@ -45,6 +45,18 @@ public class Karn__Silver_Golem {
             return permanent.getController() == player ? -score:score;
         }
     };
+
+    public static MagicStatic getPT() {
+        return PT;
+    }
+    
+    public static MagicStatic getST() {
+        return ST;
+    }
+    
+    public static MagicTargetPicker<MagicPermanent> getTP() {
+        return TP;
+    }
     
     public static final MagicPermanentActivation A =new MagicPermanentActivation(
             new MagicCondition[]{MagicConditionFactory.ManaCost("{1}")},
