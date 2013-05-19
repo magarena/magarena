@@ -6,4 +6,4 @@ rarity=R
 type=Enchantment
 cost={4}{W/B}{W/B}{W/B}
 timing=enchantment
-requires_card_code
+requires_groovy_code
