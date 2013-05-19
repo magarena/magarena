@@ -1,18 +1,6 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicPermanentAction;
-import magic.model.action.MagicTapAction;
-import magic.model.choice.MagicMayChoice;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicTapTargetPicker;
-import magic.model.trigger.MagicWhenAttacksTrigger;
-
-public class Angelic_Benediction {
+[
     //Whenever a creature you control attacks alone, you may tap target creature.
-    public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
+    new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             return (creature.isFriend(permanent) && 
@@ -24,7 +12,7 @@ public class Angelic_Benediction {
                     ),
                     new MagicTapTargetPicker(true,false),
                     this,
-                    "PN may$ tap target creature$."
+                    "PN may\$ tap target creature\$."
                 ):
                 MagicEvent.NONE;
         }
@@ -38,5 +26,5 @@ public class Angelic_Benediction {
                 });
             }
         }
-    };
-}
+    }
+]
