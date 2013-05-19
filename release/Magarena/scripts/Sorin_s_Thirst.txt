@@ -7,4 +7,4 @@ rarity=C
 type=Instant
 cost={B}{B}
 timing=removal
-requires_card_code=Douse in Gloom
+requires_groovy_code=Douse in Gloom

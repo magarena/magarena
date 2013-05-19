@@ -7,4 +7,4 @@ type=Instant
 cost={2}{B}
 timing=removal
 removal=2
-requires_card_code=Douse in Gloom
+requires_groovy_code=Douse in Gloom

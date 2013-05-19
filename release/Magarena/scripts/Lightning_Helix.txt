@@ -7,4 +7,4 @@ rarity=U
 type=Instant
 cost={R}{W}
 timing=removal
-requires_card_code=Essence Drain
+requires_groovy_code=Essence Drain
