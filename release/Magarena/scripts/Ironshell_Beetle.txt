@@ -8,4 +8,4 @@ subtype=Insect
 cost={1}{G}
 pt=1/1
 timing=main
-requires_card_code=Timberland Guide
+requires_groovy_code=Timberland Guide
