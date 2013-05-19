@@ -8,4 +8,4 @@ type=Instant
 cost={4}{R}{R}
 ability=miracle {R}
 timing=removal
-requires_card_code
+requires_groovy_code
