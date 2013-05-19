@@ -1,20 +1,5 @@
-package magic.card;
-
-import magic.model.MagicCard;
-import magic.model.MagicGame;
-import magic.model.MagicLocationType;
-import magic.model.MagicPayedCost;
-import magic.model.action.MagicCardAction;
-import magic.model.action.MagicMoveCardAction;
-import magic.model.action.MagicRemoveCardAction;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.event.MagicEvent;
-import magic.model.event.MagicSpellCardEvent;
-import magic.model.stack.MagicCardOnStack;
-import magic.model.target.MagicGraveyardTargetPicker;
-
-public class Recollect {
-    public static final MagicSpellCardEvent S =new MagicSpellCardEvent() {
+[
+    new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
@@ -22,7 +7,7 @@ public class Recollect {
                 MagicTargetChoice.TARGET_CARD_FROM_GRAVEYARD,
                 new MagicGraveyardTargetPicker(false),
                 this,
-                "Return target card$ from your graveyard to your hand."
+                "Return target card\$ from your graveyard to your hand."
             );
         }
         @Override
@@ -36,5 +21,5 @@ public class Recollect {
                 }
             });
         }
-    };
-}
+    }
+]
