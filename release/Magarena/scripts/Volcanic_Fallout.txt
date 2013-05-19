@@ -8,4 +8,4 @@ type=Instant
 cost={1}{R}{R}
 ability=can't be countered
 timing=removal
-requires_card_code
+requires_groovy_code
