@@ -6,4 +6,4 @@ rarity=R
 type=Instant
 cost={U}{U}
 timing=animate
-requires_card_code
+requires_groovy_code
