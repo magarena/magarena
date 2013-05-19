@@ -1,21 +1,5 @@
-package magic.card;
-
-import magic.model.MagicAbility;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicGainControlAction;
-import magic.model.action.MagicPermanentAction;
-import magic.model.action.MagicSetAbilityAction;
-import magic.model.action.MagicUntapAction;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.event.MagicEvent;
-import magic.model.mstatic.MagicStatic;
-import magic.model.target.MagicExileTargetPicker;
-import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
-
-public class Zealous_Conscripts {
-    public static final Object T = new MagicWhenComesIntoPlayTrigger() {
+[
+    new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
             return new MagicEvent(
@@ -23,8 +7,8 @@ public class Zealous_Conscripts {
                 MagicTargetChoice.NEG_TARGET_PERMANENT,
                 MagicExileTargetPicker.create(),
                 this,
-                "Gain control of target permanent$ until end of turn. Untap that permanent. " +
-                "It gains haste until end of turn."
+                "Gain control of target permanent\$ until end of turn. " + 
+                "Untap that permanent. It gains haste until end of turn."
             );
         }
 
@@ -38,6 +22,5 @@ public class Zealous_Conscripts {
                 }
             });
         }
-    };
-
-}
+    }
+]
