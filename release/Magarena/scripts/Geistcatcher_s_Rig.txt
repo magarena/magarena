@@ -8,4 +8,4 @@ subtype=Construct
 cost={6}
 pt=4/5
 timing=main
-requires_card_code
+requires_groovy_code
