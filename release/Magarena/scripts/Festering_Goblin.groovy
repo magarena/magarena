@@ -1,18 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicLocationType;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeTurnPTAction;
-import magic.model.action.MagicPermanentAction;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicWeakenTargetPicker;
-import magic.model.trigger.MagicGraveyardTriggerData;
-import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
-
-public class Festering_Goblin {
-    public static final MagicWhenPutIntoGraveyardTrigger T = new MagicWhenPutIntoGraveyardTrigger() {
+[
+    new MagicWhenPutIntoGraveyardTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
             return (triggerData.fromLocation == MagicLocationType.Play) ?
@@ -21,7 +8,7 @@ public class Festering_Goblin {
                     MagicTargetChoice.TARGET_CREATURE,
                     new MagicWeakenTargetPicker(1,1),
                     this,
-                    "Target creature$ gets -1/-1 until end of turn."
+                    "Target creature\$ gets -1/-1 until end of turn."
                 ) :
                 MagicEvent.NONE;
         }
@@ -34,5 +21,5 @@ public class Festering_Goblin {
                 }
             });
         }
-    };
-}
+    }
+]
