@@ -8,4 +8,4 @@ subtype=Elemental
 cost={2}{R/W}{R/W}
 pt=3/3
 timing=main
-requires_card_code
+requires_groovy_code
