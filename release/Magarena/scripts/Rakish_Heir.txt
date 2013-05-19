@@ -8,4 +8,4 @@ subtype=Vampire
 cost={2}{R}
 pt=2/2
 timing=fmain
-requires_card_code
+requires_groovy_code
