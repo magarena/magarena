@@ -1,19 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicDestroyAction;
-import magic.model.action.MagicPermanentAction;
-import magic.model.choice.MagicMayChoice;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicDestroyTargetPicker;
-import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
-
-
-public class Slayer_of_the_Wicked {
-    public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
+[
+    new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
@@ -23,13 +9,12 @@ public class Slayer_of_the_Wicked {
                 ),
                 new MagicDestroyTargetPicker(false),
                 this,
-                "PN may$ destroy target Vampire, Werewolf, or Zombie$.");
+                "PN may\$ destroy target Vampire, Werewolf, or Zombie\$."
+            );
         }
                     
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent permanent) {
@@ -38,5 +23,5 @@ public class Slayer_of_the_Wicked {
                 });
             }
         }
-    };
-}
+    }
+]
