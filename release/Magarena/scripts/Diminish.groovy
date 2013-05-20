@@ -19,12 +19,10 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicStatic setPT = PT;
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent creature) {
-                    game.doAction(new MagicBecomesCreatureAction(creature,setPT));
-                }
-            });
+            event.processTargetPermanent(game, {
+                MagicPermanent creature ->
+                    game.doAction(new MagicBecomesCreatureAction(creature,PT));
+            } as MagicPermanentAction);
         }
     }
 ]
