@@ -1,0 +1,11 @@
+name=Truefire Paladin
+url=http://magiccards.info/gtc/en/202.html
+image=http://magiccards.info/scans/en/gtc/202.jpg
+value=4.012
+rarity=U
+type=Creature
+subtype=Human,Knight
+cost={R}{W}
+pt=2/2
+ability=vigilance,gains {R}{W} first strike,pump {R}{W} +2/+0
+timing=main
