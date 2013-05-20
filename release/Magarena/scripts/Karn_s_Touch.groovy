@@ -18,9 +18,11 @@ def TP = Karn__Silver_Golem.getTP();
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
+            final MagicStatic setPT = PT;
+            final MagicStatic giveST = ST;
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    game.doAction(new MagicBecomesCreatureAction(creature,PT,ST));
+                    game.doAction(new MagicBecomesCreatureAction(creature,setPT,giveST));
                 }
             });
         }
