@@ -9,4 +9,4 @@ cost={G}
 pt=1/1
 ability=wither
 timing=main
-requires_card_code=Rootwalla
+requires_groovy_code=Rootwalla
