@@ -9,6 +9,8 @@ import magic.model.target.MagicTargetPicker;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventAction;
 import magic.model.event.MagicRuleEventAction;
+import magic.model.action.MagicPlayTokenAction;
+import magic.data.TokenCardDefinitions;
 
 public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPlayer> {
     public MagicWhenComesIntoPlayTrigger(final int priority) {
@@ -55,4 +57,21 @@ public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPl
             }
         };
     }
+    
+    public static final MagicWhenComesIntoPlayTrigger PutGolemOntoTheBattlefield = new MagicWhenComesIntoPlayTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
+            return new MagicEvent(
+                permanent,
+                this,
+                "PN puts a 3/3 colorless Golem artifact creature token onto the battlefield."
+            );
+        }
+        
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            final MagicPlayer player=event.getPlayer();
+            game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Golem3")));
+        }        
+    };
 }

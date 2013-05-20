@@ -7,5 +7,5 @@
             flags.add(MagicAbility.Flying);
         }
     },
-    Blade_Splicer.T
+    MagicWhenComesIntoPlayTrigger.PutGolemOntoTheBattlefield
 ]

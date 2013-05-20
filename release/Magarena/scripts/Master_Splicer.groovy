@@ -7,5 +7,5 @@
             pt.add(1,1);
         }
     },
-    Blade_Splicer.T
+    MagicWhenComesIntoPlayTrigger.PutGolemOntoTheBattlefield
 ]

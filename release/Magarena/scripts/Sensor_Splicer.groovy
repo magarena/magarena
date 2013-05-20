@@ -7,5 +7,5 @@
             flags.add(MagicAbility.Vigilance);
         }
     },
-    Blade_Splicer.T
+    MagicWhenComesIntoPlayTrigger.PutGolemOntoTheBattlefield
 ]

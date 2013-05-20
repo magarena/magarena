@@ -15,9 +15,10 @@ import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicRegenerateTargetPicker;
+import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Vital_Splicer {
-    public static final Object T = Blade_Splicer.T;
+    public static final Object T = MagicWhenComesIntoPlayTrigger.PutGolemOntoTheBattlefield;
     
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
