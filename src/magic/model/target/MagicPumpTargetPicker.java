@@ -52,7 +52,7 @@ public class MagicPumpTargetPicker extends MagicTargetPicker<MagicPermanent> {
         // Second level.
         if (permanent.hasAbility(MagicAbility.DoubleStrike)) {
             score+=DOUBLE_STRIKE;
-        } else if (permanent.hasAbility(MagicAbility.LifeLink)) {
+        } else if (permanent.hasAbility(MagicAbility.Lifelink)) {
             score+=LIFELINK;
         }
 

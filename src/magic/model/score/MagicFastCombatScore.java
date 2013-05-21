@@ -37,7 +37,7 @@ public class MagicFastCombatScore implements MagicCombatScore {
 
                     final MagicCombatCreature blocker=creatures[index];
                     lethalDamage=blocker.hasAbility(MagicAbility.Deathtouch)?0:lethalDamage-blocker.power;
-                    if (blocker.hasAbility(MagicAbility.LifeLink)) {
+                    if (blocker.hasAbility(MagicAbility.Lifelink)) {
                         life+=blocker.power;
                     }
                     if (remaining>0) {

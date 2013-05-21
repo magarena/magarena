@@ -17,7 +17,7 @@
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event) {
-            game.doAction(new MagicSetAbilityAction(event.getRefPermanent(),MagicAbility.LifeLink));
+            game.doAction(new MagicSetAbilityAction(event.getRefPermanent(),MagicAbility.Lifelink));
         }
     }
 ]

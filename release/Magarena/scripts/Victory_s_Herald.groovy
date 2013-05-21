@@ -23,7 +23,7 @@
                 game.doAction(new MagicSetAbilityAction(
                     target,
                     MagicAbility.Flying,
-                    MagicAbility.LifeLink
+                    MagicAbility.Lifelink
                 ));
             }
         }        

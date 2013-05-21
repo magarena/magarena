@@ -19,7 +19,7 @@ public class Cairn_Wanderer {
         MagicAbility.DoubleStrike,
         MagicAbility.Deathtouch,
         MagicAbility.Haste,
-        MagicAbility.LifeLink,
+        MagicAbility.Lifelink,
         MagicAbility.Reach,        
         MagicAbility.Trample,
         MagicAbility.Shroud,

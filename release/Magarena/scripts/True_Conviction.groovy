@@ -5,7 +5,7 @@
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
             flags.add(MagicAbility.DoubleStrike);
-            flags.add(MagicAbility.LifeLink);
+            flags.add(MagicAbility.Lifelink);
         }
     }
 ]

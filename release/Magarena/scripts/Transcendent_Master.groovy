@@ -21,7 +21,7 @@
                 flags.add(MagicAbility.Indestructible);
             } 
             if (charges >= 6) {
-                flags.add(MagicAbility.LifeLink);
+                flags.add(MagicAbility.Lifelink);
             } 
         }
     }

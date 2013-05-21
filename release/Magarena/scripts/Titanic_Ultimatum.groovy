@@ -21,7 +21,7 @@
                     creature,
                     [
                         MagicAbility.FirstStrike,
-                        MagicAbility.LifeLink,
+                        MagicAbility.Lifelink,
                         MagicAbility.Trample
                     ]
                 ));

@@ -28,7 +28,7 @@ public class MagicLifelinkTargetPicker extends MagicTargetPicker<MagicPermanent>
         int score = 0;
 
         // no score for ability overlap or not being able to deal combat damage
-        if (permanent.hasAbility(MagicAbility.LifeLink) ||
+        if (permanent.hasAbility(MagicAbility.Lifelink) ||
             permanent.hasAbility(MagicAbility.CannotAttackOrBlock)) {
             return 0;
         }

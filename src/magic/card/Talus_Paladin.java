@@ -40,7 +40,7 @@ public class Talus_Paladin {
                 final Collection<MagicPermanent> targets =
                         game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_ALLY_YOU_CONTROL);
                 for (final MagicPermanent creature : targets) {
-                    game.doAction(new MagicSetAbilityAction(creature,MagicAbility.LifeLink));
+                    game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Lifelink));
                 }
             }            
         }        

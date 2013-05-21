@@ -4,7 +4,7 @@
         MagicTargetFilter.TARGET_ATTACKING_CREATURE_YOU_CONTROL) {
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
-            flags.add(MagicAbility.LifeLink);
+            flags.add(MagicAbility.Lifelink);
         }
     }
 ]

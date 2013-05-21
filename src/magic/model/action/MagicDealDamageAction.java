@@ -141,7 +141,7 @@ public class MagicDealDamageAction extends MagicAction {
         }
 
         damage.setDealtAmount(dealtAmount);
-        if (source.hasAbility(MagicAbility.LifeLink)) {
+        if (source.hasAbility(MagicAbility.Lifelink)) {
             game.doAction(new MagicChangeLifeAction(source.getController(),dealtAmount));
         }
         game.executeTrigger(MagicTriggerType.WhenDamageIsDealt,damage);

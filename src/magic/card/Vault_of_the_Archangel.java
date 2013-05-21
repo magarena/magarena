@@ -57,7 +57,7 @@ public class Vault_of_the_Archangel {
                 game.doAction(new MagicSetAbilityAction(
                     creature,
                     MagicAbility.Deathtouch,
-                    MagicAbility.LifeLink
+                    MagicAbility.Lifelink
                 ));
             }
         }

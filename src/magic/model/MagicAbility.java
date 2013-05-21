@@ -110,7 +110,7 @@ public enum MagicAbility {
     Indestructible("indestructible",150),
     Islandwalk("islandwalk",10),
     Haste("haste",0),
-    LifeLink("lifelink",40),
+    Lifelink("lifelink",40),
     Mountainwalk("mountainwalk",10),
     PlainsWalk("plainswalk",10),
     ProtectionFromBlack("protection from black",20),
