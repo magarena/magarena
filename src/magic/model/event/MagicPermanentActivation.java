@@ -155,10 +155,11 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
         };
     }
     
-    public static final MagicPermanentActivation PreventDamage1 = new MagicPermanentActivation(
+    public static final MagicPermanentActivation PreventDamage(final int n) {
+        return new MagicPermanentActivation(
             new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
             new MagicActivationHints(MagicTiming.Pump),
-            "Prevent 1") {
+            "Prevent " + n) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
@@ -172,7 +173,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
                 MagicTargetChoice.POS_TARGET_CREATURE_OR_PLAYER,
                 MagicPreventTargetPicker.getInstance(),
                 this,
-                "Prevent the next 1 damage that would be dealt to target creature or player$ this turn."
+                "Prevent the next " + n + " damage that would be dealt to target creature or player$ this turn."
             );
         }
 
@@ -180,11 +181,11 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
-                    game.doAction(new MagicPreventDamageAction(target,1));
+                    game.doAction(new MagicPreventDamageAction(target,n));
                 }
             });
         }
-    };
+    };}
     
     public static final MagicPermanentActivation ReturnToOwnersHand(final MagicManaCost cost) { 
         return new MagicPermanentActivation(

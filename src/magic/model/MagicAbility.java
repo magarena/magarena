@@ -348,10 +348,10 @@ public enum MagicAbility {
             card.add(new MagicPainTapManaActivation(manatype));
         }
     },
-    TapPreventDamage("tap prevent damage 1", 10) {
+    TapPreventDamage("tap prevent damage", 10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
-            card.add(MagicPermanentActivation.PreventDamage1);
+            final int n = Integer.parseInt(arg);
+            card.add(MagicPermanentActivation.PreventDamage(n));
         }
     },
     SacAddMana("sac add mana",10) {
