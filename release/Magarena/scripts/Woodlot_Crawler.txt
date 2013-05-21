@@ -1,0 +1,11 @@
+name=Woodlot Crawler
+url=http://magiccards.info/dgm/en/118.html
+image=http://magiccards.info/scans/en/dgm/118.jpg
+value=2.436
+rarity=U
+type=Creature
+subtype=Insect
+cost={U}{B}
+pt=2/1
+ability=forestwalk,protection from green
+timing=main
