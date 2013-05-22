@@ -1,0 +1,9 @@
+name=Spine of Ish Sah
+url=http://magiccards.info/mbs/en/136.html
+image=http://magiccards.info/scans/en/mbs/136.jpg
+value=3.836
+rarity=R
+type=Artifact
+cost={7}
+timing=artifact
+ability=die return to owner's hand,enters destroy target permanent.
