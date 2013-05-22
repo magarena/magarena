@@ -1,0 +1,11 @@
+name=Sanctum Custodian
+url=http://magiccards.info/br/en/62.html
+image=http://magiccards.info/scans/en/br/62.jpg
+value=2.436
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={2}{W}
+pt=1/2
+ability=tap prevent damage 2
+timing=main
