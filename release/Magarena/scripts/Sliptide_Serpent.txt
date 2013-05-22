@@ -1,0 +1,11 @@
+name=Sliptide Serpent
+url=http://magiccards.info/ne/en/43.html
+image=http://magiccards.info/scans/en/ne/43.jpg
+value=3.023
+rarity=R
+type=Creature
+subtype=Serpent
+cost={4}{U}{U}
+pt=4/4
+ability=return to owner's hand {3}{U}
+timing=main
