@@ -31,7 +31,7 @@ public class Stitcher_s_Apprentice {
     ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.create("{1}{U}"))};
+            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,"{1}{U}")};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

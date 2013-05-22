@@ -43,7 +43,7 @@ public class Echo_Mage {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.create("{U}{U}"))};
+            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,"{U}{U}")};
         }
 
         @Override

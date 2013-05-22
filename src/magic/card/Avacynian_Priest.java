@@ -28,7 +28,7 @@ public class Avacynian_Priest {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.create("{1}"))};
+            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,"{1}")};
         }
 
         @Override

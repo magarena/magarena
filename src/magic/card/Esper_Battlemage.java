@@ -29,7 +29,7 @@ public class Esper_Battlemage {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.create("{W}"))};
+            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,"{W}")};
         }
 
         @Override
@@ -56,7 +56,7 @@ public class Esper_Battlemage {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.create("{B}"))};
+            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,"{B}")};
         }
 
         @Override

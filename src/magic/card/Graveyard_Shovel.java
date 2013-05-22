@@ -30,7 +30,7 @@ public class Graveyard_Shovel {
             "Exile") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.create("{2}"))};
+            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,"{2}")};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

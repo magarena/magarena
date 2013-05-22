@@ -26,7 +26,7 @@ public class Arbalest_Elite {
             "Damage") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.create("{2}{W}"))};
+            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,"{2}{W}")};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

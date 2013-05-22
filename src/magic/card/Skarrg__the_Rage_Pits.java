@@ -30,7 +30,7 @@ public class Skarrg__the_Rage_Pits {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.create("{R}{G}"))
+                new MagicPayManaCostTapEvent(source,"{R}{G}")
             };
         }
 

@@ -28,7 +28,7 @@ public class Wirewood_Lodge {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.create("{G}"))
+                new MagicPayManaCostTapEvent(source,"{G}")
             };
         }
 

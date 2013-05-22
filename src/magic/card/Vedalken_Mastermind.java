@@ -24,7 +24,7 @@ public class Vedalken_Mastermind {
             "Return") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.create("{U}"))};
+            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,"{U}")};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

@@ -32,7 +32,7 @@ public class Cinder_Elemental {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.create("{X}{R}")),
+                new MagicPayManaCostTapEvent(source,"{X}{R}"),
                 new MagicSacrificeEvent(source)
             };
         }

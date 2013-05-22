@@ -57,7 +57,7 @@ public class Grimoire_of_the_Dead {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.create("{1}")),
+                new MagicPayManaCostTapEvent(source,"{1}"),
                 new MagicDiscardEvent(source,source.getController(),1,false)
             };
         }

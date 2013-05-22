@@ -46,7 +46,7 @@ public class Guul_Draz_Assassin {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                    new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.create("{B}"))};
+                    new MagicPayManaCostTapEvent(source,"{B}")};
         }
 
         @Override

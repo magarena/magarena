@@ -25,7 +25,7 @@ public class Myr_Propagator {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.create("{3}"))};
+            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,"{3}")};
         }
 
         @Override

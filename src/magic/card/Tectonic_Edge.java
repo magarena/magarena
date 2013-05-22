@@ -33,7 +33,7 @@ public class Tectonic_Edge {
             return new MagicEvent[]{
                 new MagicTapEvent(source),
                 new MagicSacrificeEvent(source),
-                new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.create("{1}"))
+                new MagicPayManaCostTapEvent(source,"{1}")
             };
         }
         @Override

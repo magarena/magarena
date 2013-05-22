@@ -8,6 +8,9 @@ import magic.model.action.MagicTapAction;
 import magic.model.choice.MagicPayManaCostChoice;
 
 public class MagicPayManaCostTapEvent extends MagicEvent {
+    public MagicPayManaCostTapEvent(final MagicSource source, final String cost) {
+        this(source, source.getController(), MagicManaCost.create(cost));
+    }
     
     public MagicPayManaCostTapEvent(final MagicSource source,final MagicPlayer player,final MagicManaCost cost) {
         super(

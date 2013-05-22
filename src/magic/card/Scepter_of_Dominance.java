@@ -23,7 +23,7 @@ public class Scepter_of_Dominance {
             "Tap") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.create("{W}"))};
+            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,"{W}")};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

@@ -37,7 +37,7 @@ public class Brion_Stoutarm {
             final MagicTargetChoice targetChoice=new MagicTargetChoice(
                     targetFilter,false,MagicTargetHint.None,"a creature other than " + source + " to sacrifice");
             return new MagicEvent[]{
-                new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.create("{R}")),
+                new MagicPayManaCostTapEvent(source,"{R}"),
                 new MagicSacrificePermanentEvent(source,source.getController(),targetChoice)};
         }
 

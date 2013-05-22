@@ -41,7 +41,7 @@ public class Myr_Galvanizer {
             "Untap") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.create("{1}"))};
+            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,"{1}")};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
