@@ -30,7 +30,6 @@ public class MagicReinforceActivation extends MagicCardActivation {
         return new MagicEvent[]{
             new MagicPayManaCostEvent(
                 source,
-                source.getController(),
                 cost
             ),
             new MagicDiscardCardEvent(

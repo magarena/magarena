@@ -52,11 +52,10 @@ public class Skinshifter {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(
-                    source,
-                    source.getController(),
-                    MagicManaCost.create("{G}")),
-                    new MagicPlayAbilityEvent(source)};
+            return new MagicEvent[]{
+                new MagicPayManaCostEvent(source,"{G}"),
+                new MagicPlayAbilityEvent(source)
+            };
         }
 
         @Override
@@ -107,11 +106,10 @@ public class Skinshifter {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(
-                    source,
-                    source.getController(),
-                    MagicManaCost.create("{G}")),
-                    new MagicPlayAbilityEvent(source)};
+            return new MagicEvent[]{
+                new MagicPayManaCostEvent(source,"{G}"),
+                new MagicPlayAbilityEvent(source)
+            };
         }
 
         @Override
@@ -156,11 +154,10 @@ public class Skinshifter {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(
-                    source,
-                    source.getController(),
-                    MagicManaCost.create("{G}")),
-                    new MagicPlayAbilityEvent(source)};
+            return new MagicEvent[]{
+                new MagicPayManaCostEvent(source,"{G}"),
+                new MagicPlayAbilityEvent(source)
+            };
         }
 
         @Override

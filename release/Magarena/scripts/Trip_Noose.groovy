@@ -9,8 +9,7 @@
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [
-                new MagicPayManaCostTapEvent(source,source.getController(),
-                MagicManaCost.create("{2}"))
+                new MagicPayManaCostTapEvent(source,"{2}")
             ];
         }
     }

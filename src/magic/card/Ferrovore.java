@@ -29,7 +29,7 @@ public class Ferrovore {
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             final MagicPlayer player = source.getController();
             return new MagicEvent[]{
-                    new MagicPayManaCostEvent(source,player,MagicManaCost.create("{R}")),
+                    new MagicPayManaCostEvent(source,"{R}"),
                     new MagicSacrificePermanentEvent(
                     source,
                     player,

@@ -72,11 +72,7 @@ public class Stirring_Wildwood {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostEvent(
-                    source,
-                    source.getController(),
-                    MagicManaCost.create("{1}{G}{W}")
-                )
+                new MagicPayManaCostEvent(source, "{1}{G}{W}")
             };
         }
         @Override

@@ -28,7 +28,7 @@ public class MagicRegenerationActivation extends MagicPermanentActivation {
     
     @Override
     public MagicEvent[] getCostEvent(final MagicPermanent source) {
-        return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),cost)};
+        return new MagicEvent[]{new MagicPayManaCostEvent(source,cost)};
     }
 
     @Override

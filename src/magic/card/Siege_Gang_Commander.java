@@ -32,7 +32,7 @@ public class Siege_Gang_Commander {
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             final MagicPlayer player=source.getController();
             return new MagicEvent[]{                    
-                new MagicPayManaCostEvent(source,player,MagicManaCost.create("{1}{R}")),
+                new MagicPayManaCostEvent(source,"{1}{R}"),
                 new MagicSacrificePermanentEvent(source,player,MagicTargetChoice.SACRIFICE_GOBLIN)
             };
         }

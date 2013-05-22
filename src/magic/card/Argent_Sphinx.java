@@ -26,18 +26,19 @@ public class Argent_Sphinx {
             "Exile") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            final MagicPlayer player=source.getController();
             return new MagicEvent[]{                    
-                new MagicPayManaCostEvent(source,player,MagicManaCost.create("{U}")),
-                new MagicPlayAbilityEvent(source)};
+                new MagicPayManaCostEvent(source,"{U}"),
+                new MagicPlayAbilityEvent(source)
+            };
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    this,
-                    "Exile SN. Return it to the battlefield " +
-                    "under your control at the end of turn.");
+                source,
+                this,
+                "Exile SN. Return it to the battlefield " +
+                "under your control at the end of turn."
+            );
         }
         @Override
         public void executeEvent(

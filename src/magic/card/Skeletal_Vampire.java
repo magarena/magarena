@@ -33,7 +33,7 @@ public class Skeletal_Vampire {
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             final MagicPlayer player=source.getController();
             return new MagicEvent[]{                    
-                new MagicPayManaCostEvent(source,player,MagicManaCost.create("{3}{B}{B}")),
+                new MagicPayManaCostEvent(source,"{3}{B}{B}"),
                 new MagicSacrificePermanentEvent(source,player,MagicTargetChoice.SACRIFICE_BAT)
             };
         }

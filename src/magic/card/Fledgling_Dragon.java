@@ -30,18 +30,18 @@ public class Fledgling_Dragon {
     };
 
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{
-                    MagicCondition.THRESHOLD_CONDITION,
-                    MagicConditionFactory.ManaCost("{G}")},
-            new MagicActivationHints(MagicTiming.Pump),
-                "Pump") {
+        new MagicCondition[]{
+            MagicCondition.THRESHOLD_CONDITION,
+            MagicConditionFactory.ManaCost("{R}")
+        },
+        new MagicActivationHints(MagicTiming.Pump),
+        "Pump") {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(
-                    source,
-                    source.getController(),
-                    MagicManaCost.create("{G}"))};
+            return new MagicEvent[]{
+                new MagicPayManaCostEvent(source,"{R}")
+            };
         }
 
         @Override
@@ -49,15 +49,14 @@ public class Fledgling_Dragon {
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    this,
-                    "SN gets +1/+0 until end of turn.");
+                source,
+                this,
+                "SN gets +1/+0 until end of turn."
+            );
         }
 
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),1,0));
         }
     };

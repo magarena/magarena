@@ -55,11 +55,10 @@ public class Chimeric_Mass {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(
-                    source,
-                    source.getController(),
-                    MagicManaCost.create("{1}")),
-                    new MagicPlayAbilityEvent(source)};
+            return new MagicEvent[]{
+                new MagicPayManaCostEvent(source,"{1}"),
+                new MagicPlayAbilityEvent(source)
+            };
         }
 
         @Override

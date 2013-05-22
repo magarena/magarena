@@ -137,7 +137,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
             "Untap") {
             @Override
             public MagicEvent[] getCostEvent(final MagicPermanent source) {
-                return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),cost)};
+                return new MagicEvent[]{new MagicPayManaCostEvent(source,cost)};
             }
             @Override
             public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
@@ -194,7 +194,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
                 "Return") {
             @Override
             public MagicEvent[] getCostEvent(final MagicPermanent source) {
-                return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),cost)};
+                return new MagicEvent[]{new MagicPayManaCostEvent(source,cost)};
             }
             @Override
             public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
@@ -219,7 +219,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
             "Switch") {
             @Override
             public MagicEvent[] getCostEvent(final MagicPermanent source) {
-                return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),cost)};
+                return new MagicEvent[]{new MagicPayManaCostEvent(source,cost)};
             }
             @Override
             public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

@@ -30,11 +30,7 @@ public class Vault_of_the_Archangel {
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicTapEvent(source),
-                new MagicPayManaCostEvent(
-                    source,
-                    source.getController(),
-                    MagicManaCost.create("{2}{W}{B}")
-                )
+                new MagicPayManaCostEvent(source,"{2}{W}{B}")
             };
         }
         @Override

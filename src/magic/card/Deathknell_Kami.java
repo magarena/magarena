@@ -22,10 +22,9 @@ public class Deathknell_Kami {
             "Pump") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(
-                    source,
-                    source.getController(),
-                    MagicManaCost.create("{2}"))};
+            return new MagicEvent[]{
+                new MagicPayManaCostEvent(source,"{2}")
+            };
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

@@ -507,7 +507,6 @@ public class MagicCardDefinition {
         if (cost != MagicManaCost.ZERO) {
             costEvent.add(new MagicPayManaCostEvent(
                 source,
-                source.getController(),
                 cost
             ));
         }

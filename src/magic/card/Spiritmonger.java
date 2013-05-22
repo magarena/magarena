@@ -26,10 +26,7 @@ public class Spiritmonger {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostEvent(
-                    source,source.getController(),
-                    MagicManaCost.create("{G}")
-                ),
+                new MagicPayManaCostEvent(source,"{G}"),
                 new MagicPlayAbilityEvent(source)
             };
         }

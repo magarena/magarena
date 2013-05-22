@@ -36,11 +36,7 @@ public class Rise_of_the_Hobgoblins {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostEvent(
-                    source,
-                    source.getController(),
-                    MagicManaCost.create("{R/W}")
-                ),
+                new MagicPayManaCostEvent(source,"{R/W}"),
                 new MagicPlayAbilityEvent(source)
             };
         }

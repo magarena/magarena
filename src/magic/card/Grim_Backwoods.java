@@ -29,11 +29,7 @@ public class Grim_Backwoods {
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicTapEvent(source),
-                new MagicPayManaCostEvent(
-                    source,
-                    source.getController(),
-                    MagicManaCost.create("{2}{B}{G}")
-                ),
+                new MagicPayManaCostEvent(source,"{2}{B}{G}"),
                 new MagicSacrificePermanentEvent(
                     source,
                     source.getController(),

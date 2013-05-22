@@ -26,10 +26,7 @@ public class Stronghold_Overseer {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                    new MagicPayManaCostEvent(
-                            source,
-                            source.getController(),
-                            MagicManaCost.create("{B}{B}")),
+                    new MagicPayManaCostEvent(source,"{B}{B}"),
                     new MagicPlayAbilityEvent(source)};
         }
 
