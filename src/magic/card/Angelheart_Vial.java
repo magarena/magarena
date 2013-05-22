@@ -34,14 +34,14 @@ public class Angelheart_Vial {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostTapEvent(
+            return new MagicEvent[]{
+                new MagicPayManaCostTapEvent(source,"{2}"),
+                new MagicRemoveCounterEvent(
                     source,
-                    source.getController(),
-                    MagicManaCost.create("{2}")),
-                    new MagicRemoveCounterEvent(
-                        source,
-                        MagicCounterType.Charge,
-                        4)};
+                    MagicCounterType.Charge,
+                    4
+                )
+            };
         }
 
         @Override

@@ -30,11 +30,7 @@ public class Ballista_Squad {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostTapEvent(
-                    source,
-                    source.getController(),
-                    MagicManaCost.create("{X}{W}")
-                )
+                new MagicPayManaCostTapEvent(source,"{X}{W}")
             };
         }
 

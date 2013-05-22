@@ -56,11 +56,7 @@ public class Gwafa_Hazid__Profiteer {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostTapEvent(
-                    source,
-                    source.getController(),
-                    MagicManaCost.create("{W}{U}")
-                )
+                new MagicPayManaCostTapEvent(source,"{W}{U}")
             };
         }
 

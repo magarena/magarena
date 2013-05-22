@@ -28,11 +28,7 @@ public class Ethersworn_Adjudicator {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostTapEvent(
-                    source,
-                    source.getController(),
-                    MagicManaCost.create("{1}{W}{B}")
-                )
+                new MagicPayManaCostTapEvent(source,"{1}{W}{B}")
             };
         }
         @Override

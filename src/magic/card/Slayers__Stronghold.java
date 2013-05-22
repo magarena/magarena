@@ -30,11 +30,7 @@ public class Slayers__Stronghold {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostTapEvent(
-                    source,
-                    source.getController(),
-                    MagicManaCost.create("{R}{W}")
-                )
+                new MagicPayManaCostTapEvent(source,"{R}{W}")
             };
         }
 

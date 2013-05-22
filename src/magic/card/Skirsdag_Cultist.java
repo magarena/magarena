@@ -34,7 +34,7 @@ public class Skirsdag_Cultist {
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             final MagicPlayer player = source.getController();
             return new MagicEvent[]{
-                new MagicPayManaCostTapEvent(source,player,MagicManaCost.create("{R}")),
+                new MagicPayManaCostTapEvent(source,"{R}"),
                 new MagicSacrificePermanentEvent(source,player,MagicTargetChoice.SACRIFICE_CREATURE)};
         }
         @Override

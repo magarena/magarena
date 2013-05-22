@@ -29,11 +29,7 @@ public class Skirsdag_Flayer {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostTapEvent(
-                    source,
-                    source.getController(),
-                    MagicManaCost.create("{3}{B}")
-                ),
+                new MagicPayManaCostTapEvent(source,"{3}{B}"),
                 new MagicSacrificePermanentEvent(
                     source,
                     source.getController(),

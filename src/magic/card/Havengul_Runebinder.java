@@ -34,14 +34,12 @@ public class Havengul_Runebinder {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                    new MagicPayManaCostTapEvent(
-                            source,
-                            source.getController(),
-                            MagicManaCost.create("{2}{U}")),
-                    new MagicExileCardEvent(
-                            source,
-                            source.getController(),
-                            MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD)
+                new MagicPayManaCostTapEvent(source,"{2}{U}"),
+                new MagicExileCardEvent(
+                    source,
+                    source.getController(),
+                    MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD
+                )
             };
         }
         @Override

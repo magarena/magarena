@@ -57,11 +57,7 @@ public class Cemetery_Reaper {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostTapEvent(
-                    source,
-                    source.getController(),
-                    MagicManaCost.create("{2}{B}")
-                )
+                new MagicPayManaCostTapEvent(source, "{2}{B}")
             };
         }
         @Override

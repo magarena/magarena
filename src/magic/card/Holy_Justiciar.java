@@ -32,11 +32,7 @@ public class Holy_Justiciar {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostTapEvent(
-                    source,
-                    source.getController(),
-                    MagicManaCost.create("{2}{W}")
-                )
+                new MagicPayManaCostTapEvent(source,"{2}{W}")
             };
         }
 

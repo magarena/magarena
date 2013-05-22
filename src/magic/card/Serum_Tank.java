@@ -52,11 +52,7 @@ public class Serum_Tank {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostTapEvent(
-                    source,
-                    source.getController(),
-                    MagicManaCost.create("{3}")
-                ),
+                new MagicPayManaCostTapEvent(source,"{3}"),
                 new MagicRemoveCounterEvent(
                     source,
                     MagicCounterType.Charge,

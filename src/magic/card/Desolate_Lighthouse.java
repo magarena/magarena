@@ -27,11 +27,7 @@ public class Desolate_Lighthouse {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[] {
-                new MagicPayManaCostTapEvent(
-                    source,
-                    source.getController(),
-                    MagicManaCost.create("{1}{U}{R}")
-                )
+                new MagicPayManaCostTapEvent(source,"{1}{U}{R}")
             };
         }
 

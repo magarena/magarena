@@ -12,7 +12,7 @@ public class MagicPayManaCostTapEvent extends MagicEvent {
         this(source, source.getController(), MagicManaCost.create(cost));
     }
     
-    public MagicPayManaCostTapEvent(final MagicSource source,final MagicPlayer player,final MagicManaCost cost) {
+    private MagicPayManaCostTapEvent(final MagicSource source,final MagicPlayer player,final MagicManaCost cost) {
         super(
             source,
             player,
@@ -20,7 +20,8 @@ public class MagicPayManaCostTapEvent extends MagicEvent {
             EVENT_ACTION,
             "Pay "+cost.getText()+"$. Tap SN."
         );
-    }            
+    }      
+
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

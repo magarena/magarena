@@ -28,10 +28,7 @@ public class Niblis_of_the_Breath {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostTapEvent(
-                        source,
-                        source.getController(),
-                        MagicManaCost.create("{U}"))
+                new MagicPayManaCostTapEvent(source,"{U}")
             };
         }
     };
@@ -46,10 +43,7 @@ public class Niblis_of_the_Breath {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostTapEvent(
-                        source,
-                        source.getController(),
-                        MagicManaCost.create("{U}"))
+                new MagicPayManaCostTapEvent(source,"{U}")
             };
         }
 

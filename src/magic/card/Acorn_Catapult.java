@@ -30,10 +30,9 @@ public class Acorn_Catapult {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostTapEvent(
-                    source,
-                    source.getController(),
-                    MagicManaCost.create("{1}"))};
+            return new MagicEvent[]{
+                new MagicPayManaCostTapEvent(source, "{1}")
+            };
         }
 
         @Override

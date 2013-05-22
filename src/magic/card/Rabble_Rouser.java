@@ -25,10 +25,9 @@ public class Rabble_Rouser {
             "Pump") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[] {new MagicPayManaCostTapEvent(
-                    source,
-                    source.getController(),
-                    MagicManaCost.create("{R}"))};
+            return new MagicEvent[] {
+                new MagicPayManaCostTapEvent(source,"{R}")
+            };
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
