@@ -1,0 +1,12 @@
+name=Unflinching Courage
+url=http://magiccards.info/dgm/en/111.html
+image=http://magiccards.info/scans/en/dgm/111.jpg
+value=4.441
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={1}{G}{W}
+given_pt=2/2
+given_ability=trample,lifelink
+timing=aura
+enchant=pump,pos creature
