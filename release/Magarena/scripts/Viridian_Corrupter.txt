@@ -1,0 +1,12 @@
+name=Viridian Corrupter
+url=http://magiccards.info/mbs/en/94.html
+image=http://magiccards.info/scans/en/mbs/94.jpg
+value=4.217
+removal=1
+rarity=U
+type=Creature
+subtype=Elf,Shaman
+cost={1}{G}{G}
+pt=2/2
+ability=infect,enters destroy target artifact.
+timing=main
