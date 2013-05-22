@@ -1,0 +1,12 @@
+name=Skyshroud Troopers
+url=http://magiccards.info/sh/en/65.html
+image=http://magiccards.info/scans/en/sh/65.jpg
+value=4.530
+rarity=C
+type=Creature
+subtype=Elf,Druid,Warrior
+cost={3}{G}
+pt=3/3
+ability=tap add mana {G}
+timing=smain
+mana_or_combat
