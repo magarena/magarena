@@ -7,6 +7,10 @@ import magic.model.MagicSource;
 import magic.model.choice.MagicPayManaCostChoice;
 
 public class MagicPayManaCostEvent extends MagicEvent {
+    public MagicPayManaCostEvent(final MagicSource source, final String cost) {
+        this(source, source.getController(), MagicManaCost.create(cost));
+    }
+
     public MagicPayManaCostEvent(final MagicSource source,final MagicPlayer player,final MagicManaCost cost) {
         super(
             source,
