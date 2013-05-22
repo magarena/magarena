@@ -1,0 +1,11 @@
+name=Skylasher
+url=http://magiccards.info/dgm/en/49.html
+image=http://magiccards.info/scans/en/dgm/49.jpg
+value=3.887
+rarity=R
+type=Creature
+subtype=Insect
+cost={1}{G}
+pt=2/2
+ability=can't be countered,protection from blue,reach,flash
+timing=flash
