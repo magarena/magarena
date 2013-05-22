@@ -1,0 +1,11 @@
+name=Rakdos Drake
+url=http://magiccards.info/dgm/en/28.html
+image=http://magiccards.info/scans/en/dgm/28.jpg
+value=2.300
+ability=flying,unleash
+rarity=C
+type=Creature
+subtype=Drake
+cost={2}{B}
+pt=1/2
+timing=main
