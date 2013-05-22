@@ -1,0 +1,11 @@
+name=Spark Trooper
+url=http://magiccards.info/gtc/en/199.html
+image=http://magiccards.info/scans/en/gtc/199.jpg
+value=4.580
+rarity=R
+type=Creature
+subtype=Elemental,Soldier
+cost={1}{R}{R}{W}
+pt=6/1
+ability=trample,haste,lifelink,sac at end
+timing=fmain
