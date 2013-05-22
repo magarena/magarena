@@ -1,0 +1,11 @@
+name=Spike Jester
+url=http://magiccards.info/dgm/en/106.html
+image=http://magiccards.info/scans/en/dgm/106.jpg
+value=2.436
+rarity=U
+type=Creature
+subtype=Goblin,Warrior
+cost={B}{R}
+pt=3/1
+ability=haste
+timing=fmain
