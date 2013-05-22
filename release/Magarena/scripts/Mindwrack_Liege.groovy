@@ -31,11 +31,7 @@
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [
-                new MagicPayManaCostEvent(
-                    source,
-                    source.getController(),
-                    MagicManaCost.create("{U/R}{U/R}{U/R}{U/R}")
-                )
+                new MagicPayManaCostEvent(source, "{U/R}{U/R}{U/R}{U/R}")
             ];
         }
         @Override

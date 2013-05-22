@@ -6,11 +6,9 @@
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return [new MagicPayManaCostSacrificeEvent(
-                source,
-                source.getController(),
-                MagicManaCost.create("{3}{G}")
-            )];
+            return [
+                new MagicPayManaCostSacrificeEvent(source,"{3}{G}")
+            ];
         }
 
         @Override
