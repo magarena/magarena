@@ -34,7 +34,7 @@ public class Dragon_Arch {
             final MagicPermanent permanent=source;
             return new MagicEvent[]{
                 new MagicTapEvent(permanent),
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{2}"))
+                new MagicPayManaCostEvent(source,"{2}")
             };
         }
 

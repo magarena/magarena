@@ -24,7 +24,7 @@ public class Elder_of_Laurels {
             "Pump") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{3}{G}"))};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,"{3}{G}")};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

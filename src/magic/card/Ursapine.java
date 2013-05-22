@@ -23,7 +23,7 @@ public class Ursapine {
             "Pump") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{G}"))};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,"{G}")};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

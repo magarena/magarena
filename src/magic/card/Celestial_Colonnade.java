@@ -65,7 +65,7 @@ public class Celestial_Colonnade {
             "Animate") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{3}{W}{U}"))};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,"{3}{W}{U}")};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

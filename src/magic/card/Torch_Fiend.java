@@ -29,7 +29,7 @@ public class Torch_Fiend {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{R}")),
+                new MagicPayManaCostEvent(source,"{R}"),
                 new MagicSacrificeEvent(source)
             };
         }

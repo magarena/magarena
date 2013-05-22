@@ -46,7 +46,7 @@ public class Kamahl__Fist_of_Krosa {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{G}"))};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,"{G}")};
         }
 
         @Override
@@ -79,7 +79,7 @@ public class Kamahl__Fist_of_Krosa {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{2}{G}{G}{G}"))};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,"{2}{G}{G}{G}")};
         }
 
         @Override

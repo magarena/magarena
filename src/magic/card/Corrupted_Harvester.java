@@ -29,7 +29,7 @@ public class Corrupted_Harvester {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                    new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{B}")),
+                    new MagicPayManaCostEvent(source,"{B}"),
                     new MagicSacrificePermanentEvent(
                     source,
                     source.getController(),

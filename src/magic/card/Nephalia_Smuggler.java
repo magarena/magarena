@@ -34,7 +34,7 @@ public class Nephalia_Smuggler {
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicTapEvent(source),
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{3}{U}"))
+                new MagicPayManaCostEvent(source,"{3}{U}")
             };
         }
         @Override

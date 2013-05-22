@@ -25,7 +25,7 @@ public class Isao__Enlightened_Bushi {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{2}"))};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,"{2}")};
         }
 
         @Override

@@ -29,7 +29,7 @@ public class Vital_Splicer {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{1}"))};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,"{1}")};
         }
 
         @Override

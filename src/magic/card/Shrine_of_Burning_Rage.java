@@ -41,7 +41,7 @@ public class Shrine_of_Burning_Rage {
             final MagicPermanent permanent=source;
             return new MagicEvent[]{
                 new MagicTapEvent(permanent),
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{3}")),
+                new MagicPayManaCostEvent(source,"{3}"),
                 new MagicSacrificeEvent(permanent)};
         }
 

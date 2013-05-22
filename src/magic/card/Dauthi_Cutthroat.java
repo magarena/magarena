@@ -25,7 +25,7 @@ public class Dauthi_Cutthroat {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{1}{B}"))};
+                new MagicPayManaCostEvent(source,"{1}{B}")};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

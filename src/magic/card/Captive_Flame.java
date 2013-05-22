@@ -26,7 +26,7 @@ public class Captive_Flame {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{R}"))};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,"{R}")};
         }
 
         @Override

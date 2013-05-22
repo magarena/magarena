@@ -26,7 +26,7 @@ public class Deathless_Angel {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{W}{W}"))};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,"{W}{W}")};
         }
 
         @Override

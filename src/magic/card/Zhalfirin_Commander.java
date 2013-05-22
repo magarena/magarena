@@ -26,7 +26,7 @@ public class Zhalfirin_Commander {
     ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{1}{W}{W}"))};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,"{1}{W}{W}")};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

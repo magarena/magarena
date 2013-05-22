@@ -30,7 +30,7 @@ public class Ancient_Hydra {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{1}")),
+                new MagicPayManaCostEvent(source,"{1}"),
                 new MagicRemoveCounterEvent(source,MagicCounterType.Charge,1)};
         }
         @Override

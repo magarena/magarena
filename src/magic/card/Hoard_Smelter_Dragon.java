@@ -24,7 +24,7 @@ public class Hoard_Smelter_Dragon {
             "Destroy") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{3}{R}"))};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,"{3}{R}")};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

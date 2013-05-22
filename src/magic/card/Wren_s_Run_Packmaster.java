@@ -38,7 +38,7 @@ public class Wren_s_Run_Packmaster {
         
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{2}{G}"))};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,"{2}{G}")};
         }
 
         @Override

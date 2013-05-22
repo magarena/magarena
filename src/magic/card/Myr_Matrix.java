@@ -35,7 +35,7 @@ public class Myr_Matrix {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{5}"))
+                new MagicPayManaCostEvent(source,"{5}")
             };
         }
         @Override

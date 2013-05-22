@@ -28,7 +28,7 @@ public class Hateflayer {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{2}{R}")),
+                new MagicPayManaCostEvent(source,"{2}{R}"),
                 new MagicUntapEvent(source)};
         }
 

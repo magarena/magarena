@@ -61,7 +61,7 @@ public class Faerie_Conclave {
             "Animate") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{1}{U}"))};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,"{1}{U}")};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

@@ -25,7 +25,7 @@ public class Air_Servant {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{2}{U}"))};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,"{2}{U}")};
         }
 
         @Override

@@ -32,7 +32,7 @@ public class Kessig_Wolf_Run {
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicTapEvent(source),
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{X}{R}{G}"))
+                new MagicPayManaCostEvent(source,"{X}{R}{G}")
             };
         }
 

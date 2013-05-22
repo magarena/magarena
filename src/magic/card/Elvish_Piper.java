@@ -33,7 +33,7 @@ public class Elvish_Piper {
             final MagicPermanent permanent = source;
             return new MagicEvent[]{
                 new MagicTapEvent(permanent),
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{G}"))
+                new MagicPayManaCostEvent(source,"{G}")
             };
         }
 

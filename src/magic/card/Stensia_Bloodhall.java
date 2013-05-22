@@ -32,7 +32,7 @@ public class Stensia_Bloodhall {
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicTapEvent(source),
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{3}{B}{R}"))
+                new MagicPayManaCostEvent(source,"{3}{B}{R}")
             };
         }
 

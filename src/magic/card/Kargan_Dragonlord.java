@@ -60,7 +60,7 @@ public class Kargan_Dragonlord {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                    new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{R}"))};
+                    new MagicPayManaCostEvent(source,"{R}")};
         }
 
         @Override

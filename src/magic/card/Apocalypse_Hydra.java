@@ -52,7 +52,7 @@ public class Apocalypse_Hydra {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{1}{R}")),
+                new MagicPayManaCostEvent(source,"{1}{R}"),
                 new MagicRemoveCounterEvent(source,MagicCounterType.PlusOne,1)};
         }
         @Override

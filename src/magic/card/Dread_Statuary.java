@@ -46,7 +46,7 @@ public class Dread_Statuary {
             "Animate") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{4}"))};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,"{4}")};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

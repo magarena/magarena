@@ -84,7 +84,7 @@ public class Glint_Hawk_Idol {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                    new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{W}")),
+                    new MagicPayManaCostEvent(source,"{W}"),
                     new MagicPlayAbilityEvent(source)};
         }
 

@@ -24,7 +24,7 @@ public class Drana__Kalastria_Bloodchief {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{X}{B}{B}"))};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,"{X}{B}{B}")};
         }
 
         @Override

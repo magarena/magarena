@@ -26,7 +26,7 @@ public class Alabaster_Mage {
         
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{1}{W}"))};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,"{1}{W}")};
         }
 
         @Override

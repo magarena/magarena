@@ -28,7 +28,7 @@ public class Scroll_of_Griselbrand {
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             final MagicPermanent permanent = source;
             return new MagicEvent[]{
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{1}")),
+                new MagicPayManaCostEvent(source,"{1}"),
                 new MagicSacrificeEvent(permanent)
             };
         }

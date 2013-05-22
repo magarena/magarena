@@ -62,7 +62,7 @@ public class Creeping_Tar_Pit {
             "Animate") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{1}{U}{B}"))};
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,"{1}{U}{B}")};
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

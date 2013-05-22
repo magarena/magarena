@@ -33,7 +33,7 @@ public class Academy_Ruins {
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
                 new MagicTapEvent(source),
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{1}{U}"))
+                new MagicPayManaCostEvent(source,"{1}{U}")
             };
         }
         @Override

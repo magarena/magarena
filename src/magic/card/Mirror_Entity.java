@@ -31,7 +31,7 @@ public class Mirror_Entity {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return new MagicEvent[]{
-                    new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{X}")),
+                    new MagicPayManaCostEvent(source,"{X}"),
                     new MagicPlayAbilityEvent(source)};
         }
         @Override
