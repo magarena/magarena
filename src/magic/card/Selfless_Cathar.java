@@ -24,7 +24,7 @@ public class Selfless_Cathar {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostSacrificeEvent(source,source.getController(),MagicManaCost.create("{1}{W}"))};
+            return new MagicEvent[]{new MagicPayManaCostSacrificeEvent(source,"{1}{W}")};
         }
 
         @Override

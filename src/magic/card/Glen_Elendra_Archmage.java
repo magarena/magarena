@@ -25,7 +25,7 @@ public class Glen_Elendra_Archmage {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostSacrificeEvent(source,source.getController(),MagicManaCost.create("{U}"))};
+            return new MagicEvent[]{new MagicPayManaCostSacrificeEvent(source,"{U}")};
         }
 
         @Override

@@ -32,7 +32,7 @@
         "Populate") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return [new MagicPayManaCostTapEvent(source, source.getController(), MagicManaCost.create("{1}{G}{W}"))];
+            return [new MagicPayManaCostTapEvent(source,"{1}{G}{W}")];
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

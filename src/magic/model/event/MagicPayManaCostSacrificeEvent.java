@@ -8,6 +8,9 @@ import magic.model.action.MagicSacrificeAction;
 import magic.model.choice.MagicPayManaCostChoice;
 
 public class MagicPayManaCostSacrificeEvent extends MagicEvent {
+    public MagicPayManaCostSacrificeEvent(final MagicSource source, final String cost) {
+        this(source, source.getController(), MagicManaCost.create(cost));
+    }
     
     public MagicPayManaCostSacrificeEvent(final MagicSource source,final MagicPlayer player,final MagicManaCost cost) {
         super(

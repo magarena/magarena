@@ -7,7 +7,7 @@ new MagicPermanentActivation(
     "Pump") {
     @Override
     public MagicEvent[] getCostEvent(final MagicPermanent source) {
-        return [new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{1}{U}{R}"))];
+        return [new MagicPayManaCostEvent(source,"{1}{U}{R}")];
     }
     @Override
     public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

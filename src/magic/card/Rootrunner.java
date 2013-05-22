@@ -25,7 +25,7 @@ public class Rootrunner {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostSacrificeEvent(source,source.getController(),MagicManaCost.create("{G}{G}"))};
+            return new MagicEvent[]{new MagicPayManaCostSacrificeEvent(source,"{G}{G}")};
         }
 
         @Override

@@ -33,7 +33,7 @@
     ) {
         public MagicEvent[] getCostEvent(final MagicCard source) {
             return [
-                new MagicPayManaCostEvent(source, source.getController(), MagicManaCost.create("{X}{X}{R}{R}"))
+                new MagicPayManaCostEvent(source,"{X}{X}{R}{R}")
             ];
         }
         @Override

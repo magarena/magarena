@@ -24,7 +24,7 @@ public class Qasali_Pridemage {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostSacrificeEvent(source,source.getController(),MagicManaCost.create("{1}"))};
+            return new MagicEvent[]{new MagicPayManaCostSacrificeEvent(source,"{1}")};
         }
 
         @Override

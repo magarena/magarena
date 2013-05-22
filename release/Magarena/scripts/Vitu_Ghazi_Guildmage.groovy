@@ -7,7 +7,7 @@
         "Token") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return [new MagicPayManaCostEvent(source, source.getController(), MagicManaCost.create("{4}{G}{W}"))];
+            return [new MagicPayManaCostEvent(source,"{4}{G}{W}")];
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
@@ -32,7 +32,7 @@
         "Populate") {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return [new MagicPayManaCostEvent(source, source.getController(), MagicManaCost.create("{2}{G}{W}"))];
+            return [new MagicPayManaCostEvent(source,"{2}{G}{W}")];
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

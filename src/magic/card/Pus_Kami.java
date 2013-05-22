@@ -24,7 +24,7 @@ public class Pus_Kami {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicPayManaCostSacrificeEvent(source,source.getController(),MagicManaCost.create("{B}"))};
+            return new MagicEvent[]{new MagicPayManaCostSacrificeEvent(source,"{B}")};
         }
 
         @Override

@@ -7,7 +7,7 @@
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             final MagicPermanent permanent=source;
             return [
-                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.create("{2}{B}{R}")),
+                new MagicPayManaCostEvent(source,"{2}{B}{R}"),
                 new MagicSacrificeEvent(permanent)
             ];
         }
