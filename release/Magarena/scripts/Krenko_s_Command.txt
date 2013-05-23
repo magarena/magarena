@@ -6,4 +6,4 @@ rarity=C
 type=Sorcery
 cost={1}{R}
 timing=token
-requires_groovy_code
+requires_groovy_code=Dragon Fodder
