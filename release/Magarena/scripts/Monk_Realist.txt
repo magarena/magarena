@@ -1,0 +1,12 @@
+name=Monk Realist
+url=http://magiccards.info/cmd/en/20.html
+image=http://magiccards.info/scans/en/cmd/20.jpg
+value=3.023
+removal=1
+rarity=C
+type=Creature
+subtype=Human,Monk,Cleric
+cost={1}{W}
+pt=1/1
+ability=enters destroy target enchantment.
+timing=main
