@@ -1,0 +1,9 @@
+name=Polluted Mire
+url=http://magiccards.info/pd3/en/26.html 
+image=http://magiccards.info/scans/en/pd3/26.jpg
+value=2.310
+rarity=C
+type=Land
+mana=b3
+ability=enters tapped,tap add mana {B},cycling {2}
+timing=tapland
