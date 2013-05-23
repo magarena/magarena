@@ -1,0 +1,11 @@
+name=Kithkin Healer
+url=http://magiccards.info/lw/en/27.html
+image=http://magiccards.info/scans/en/lw/27.jpg
+value=3.023
+rarity=C
+type=Creature
+subtype=Kithkin,Cleric
+cost={2}{W}
+pt=2/2
+ability=tap prevent damage 1
+timing=main
