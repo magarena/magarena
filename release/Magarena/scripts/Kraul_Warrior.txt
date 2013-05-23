@@ -1,0 +1,11 @@
+name=Kraul Warrior
+url=http://magiccards.info/dgm/en/42.html
+image=http://magiccards.info/scans/en/dgm/42.jpg
+value=3.059
+rarity=C
+type=Creature
+subtype=Insect,Warrior
+cost={1}{G}
+pt=2/2
+ability=pump {5}{G} +3/+3
+timing=main
