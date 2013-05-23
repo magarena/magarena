@@ -1,0 +1,11 @@
+name=Expunge
+url=http://magiccards.info/us/en/135.html
+image=http://magiccards.info/scans/en/us/135.jpg
+value=4.620
+removal=2
+rarity=C
+type=Instant
+cost={2}{B}
+timing=removal
+ability=cycling {2}
+effect=Destroy target nonartifact, nonblack creature. It can't be regenerated.
