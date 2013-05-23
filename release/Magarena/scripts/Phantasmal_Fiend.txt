@@ -1,0 +1,11 @@
+name=Phantasmal Fiend
+url=http://magiccards.info/cstd/en/30.html
+image=http://magiccards.info/scans/en/cstd/30.jpg
+value=4.217
+rarity=C
+type=Creature
+subtype=Illusion
+cost={3}{B}
+pt=1/5
+ability=pump {B} +1/-1,switch pt {1}{U}
+timing=main
