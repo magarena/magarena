@@ -1,0 +1,9 @@
+name=Mana Tithe
+url=http://magiccards.info/pc/en/25.html
+image=http://magiccards.info/scans/en/pc/25.jpg
+value=4.507
+rarity=C
+type=Instant
+cost={W}
+timing=counter
+requires_groovy_code=Force Spike
