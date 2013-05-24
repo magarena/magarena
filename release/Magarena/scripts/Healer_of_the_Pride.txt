@@ -1,0 +1,11 @@
+name=Healer of the Pride
+url=http://magiccards.info/m13/en/19.html
+image=http://magiccards.info/scans/en/m13/19.jpg
+value=4.471
+rarity=U
+type=Creature
+subtype=Cat,Cleric
+cost={3}{W}
+pt=2/3
+timing=main
+requires_groovy_code
