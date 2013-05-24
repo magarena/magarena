@@ -1,0 +1,9 @@
+name=Brilliant Plan
+url=http://magiccards.info/me3/en/32.html
+image=http://magiccards.info/scans/en/me3/32.jpg
+value=4.368
+rarity=U
+type=Sorcery
+cost={4}{U}
+timing=draw
+requires_groovy_code
