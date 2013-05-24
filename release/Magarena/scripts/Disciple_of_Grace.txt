@@ -1,0 +1,11 @@
+name=Disciple of Grace
+url=http://magiccards.info/on/en/25.html
+image=http://magiccards.info/scans/en/on/25.jpg
+value=2.978
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={1}{W}
+pt=1/2
+ability=cycling {2},protection from black
+timing=main
