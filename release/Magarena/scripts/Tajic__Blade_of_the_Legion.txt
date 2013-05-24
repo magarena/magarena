@@ -1,0 +1,12 @@
+name=Tajic, Blade of the Legion
+url=http://magiccards.info/dgm/en/107.html
+image=http://magiccards.info/scans/en/dgm/107.jpg
+value=2.436
+rarity=R
+type=Legendary,Creature
+subtype=Human,Soldier
+cost={2}{R}{W}
+pt=2/2
+ability=indestructible
+timing=main
+requires_groovy_code
