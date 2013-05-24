@@ -1,0 +1,9 @@
+name=Collective Blessing
+url=http://magiccards.info/rtr/en/150.html
+image=http://magiccards.info/scans/en/rtr/150.jpg
+value=3.827
+rarity=R
+type=Enchantment
+cost={3}{G}{G}{W}
+timing=enchantment
+requires_groovy_code
