@@ -1,0 +1,9 @@
+name=Ancient Craving
+url=http://magiccards.info/ddk/en/28.html
+image=http://magiccards.info/scans/en/ddk/28.jpg
+value=4.368
+rarity=R
+type=Sorcery
+cost={3}{B}
+timing=draw
+requires_groovy_code=Ambition's Cost
