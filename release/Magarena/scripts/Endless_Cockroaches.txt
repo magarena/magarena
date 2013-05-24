@@ -1,0 +1,11 @@
+name=Endless Cockroaches
+url=http://magiccards.info/po/en/14.html
+image=http://magiccards.info/scans/en/po/14.jpg
+value=3.023
+rarity=R
+type=Creature
+subtype=Insect
+cost={1}{B}{B}
+pt=1/1
+ability=die return to owner's hand
+timing=main
