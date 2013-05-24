@@ -1,0 +1,11 @@
+name=Ascended Lawmage
+url=http://magiccards.info/dgm/en/53.html
+image=http://magiccards.info/scans/en/dgm/53.jpg
+value=2.436
+rarity=U
+type=Creature
+subtype=Vedalken,Wizard
+cost={2}{W}{U}
+pt=3/2
+ability=flying,hexproof
+timing=main
