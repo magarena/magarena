@@ -1,0 +1,10 @@
+name=Drake
+token=Drake
+image=http://magiccards.info/extras/token/magic-2013/drake.jpg
+value=2
+type=Creature
+subtype=Drake
+color=u
+cost={0}
+pt=2/2
+ability=flying
