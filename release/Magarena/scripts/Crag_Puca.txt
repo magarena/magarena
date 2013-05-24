@@ -1,0 +1,11 @@
+name=Crag Puca
+url=http://magiccards.info/eve/en/101.html
+image=http://magiccards.info/scans/en/eve/101.jpg
+value=4.217
+rarity=U
+type=Creature
+subtype=Shapeshifter
+cost={U/R}{U/R}{U/R}
+pt=2/4
+ability=switch pt {U/R}
+timing=main
