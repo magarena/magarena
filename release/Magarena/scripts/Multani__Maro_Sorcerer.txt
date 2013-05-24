@@ -1,0 +1,11 @@
+name=Multani, Maro-Sorcerer
+url=http://magiccards.info/ul/en/107.html
+image=http://magiccards.info/scans/en/ul/107.jpg
+value=3.754
+rarity=R
+type=Legendary,Creature
+subtype=Elemental
+cost={4}{G}{G}
+ability=shroud
+timing=main
+requires_groovy_code
