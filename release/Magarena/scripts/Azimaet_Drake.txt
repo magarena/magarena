@@ -1,0 +1,12 @@
+name=Azimaet Drake
+url=http://magiccards.info/mr/en/53.html
+image=http://magiccards.info/scans/en/mr/53.jpg
+value=3.754
+rarity=C
+type=Creature
+subtype=Drake
+cost={2}{U}
+pt=1/3
+ability=flying
+timing=main
+requires_groovy_code
