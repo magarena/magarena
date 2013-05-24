@@ -1,0 +1,9 @@
+name=Intimidation
+url=http://magiccards.info/mm/en/142.html
+image=http://magiccards.info/scans/en/mm/142.jpg
+value=4.175
+rarity=U
+type=Enchantment
+cost={2}{B}{B}{B}
+timing=enchantment
+requires_groovy_code
