@@ -1,0 +1,12 @@
+name=Ghor-Clan Bloodscale
+url=http://magiccards.info/gp/en/66.html
+image=http://magiccards.info/scans/en/gp/66.jpg
+value=3.754
+rarity=U
+type=Creature
+subtype=Viashino,Warrior
+cost={3}{R}
+pt=2/1
+ability=first strike
+timing=main
+requires_groovy_code
