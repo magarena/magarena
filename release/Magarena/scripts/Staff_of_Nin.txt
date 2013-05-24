@@ -1,0 +1,10 @@
+name=Staff of Nin
+url=http://magiccards.info/m13/en/217.html
+image=http://magiccards.info/scans/en/m13/217.jpg
+value=3.836
+rarity=R
+type=Artifact
+cost={6}
+timing=artifact
+ability=ping 1
+requires_groovy_code
