@@ -1,0 +1,9 @@
+name=Knight Watch
+url=http://magiccards.info/gtc/en/19.html
+image=http://magiccards.info/scans/en/gtc/19.jpg
+value=3.794
+rarity=C
+type=Sorcery
+cost={4}{W}
+timing=token
+requires_groovy_code
