@@ -1,0 +1,11 @@
+name=Boros Mastiff
+url=http://magiccards.info/dgm/en/1.html
+image=http://magiccards.info/scans/en/dgm/1.jpg
+value=2.300
+rarity=C
+type=Creature
+subtype=Hound
+cost={1}{W}
+pt=2/2
+timing=main
+requires_groovy_code
