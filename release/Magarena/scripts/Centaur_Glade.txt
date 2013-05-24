@@ -1,0 +1,9 @@
+name=Centaur Glade
+url=http://magiccards.info/on/en/251.html
+image=http://magiccards.info/scans/en/on/251.jpg
+value=3.727
+rarity=U
+type=Enchantment
+cost={3}{G}{G}
+timing=main
+requires_groovy_code
