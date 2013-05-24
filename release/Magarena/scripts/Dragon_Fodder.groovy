@@ -5,7 +5,7 @@
             return new MagicEvent(
                     cardOnStack,
                     this,
-                    "Put two 1/1 red Goblin creature tokens onto the battlefield.");
+                    "PN puts two 1/1 red Goblin creature tokens onto the battlefield.");
         }
         @Override
         public void executeEvent(
