@@ -1,0 +1,11 @@
+name=Emblem of the Warmind
+url=http://magiccards.info/fut/en/112.html
+image=http://magiccards.info/scans/en/fut/112.jpg
+value=1.889
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={1}{R}
+timing=aura
+enchant=pump,pos creature
+requires_groovy_code
