@@ -1,0 +1,12 @@
+name=Prized Elephant
+url=http://magiccards.info/m13/en/27.html
+image=http://magiccards.info/scans/en/m13/27.jpg
+value=3.754
+rarity=U
+type=Creature
+subtype=Elephant
+cost={3}{W}
+pt=3/3
+ability=gains {G} trample
+timing=main
+requires_groovy_code
