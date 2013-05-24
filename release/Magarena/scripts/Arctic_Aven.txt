@@ -1,0 +1,12 @@
+name=Arctic Aven
+url=http://magiccards.info/m13/en/42.html
+image=http://magiccards.info/scans/en/m13/42.jpg
+value=3.754
+rarity=U
+type=Creature
+subtype=Bird,Wizard
+cost={2}{U}
+pt=2/1
+ability=flying,gains {W} lifelink
+timing=main
+requires_groovy_code
