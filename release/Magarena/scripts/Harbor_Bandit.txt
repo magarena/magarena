@@ -1,0 +1,12 @@
+name=Harbor Bandit
+url=http://magiccards.info/m13/en/95.html
+image=http://magiccards.info/scans/en/m13/95.jpg
+value=3.754
+rarity=U
+type=Creature
+subtype=Human,Rogue
+cost={2}{B}
+pt=2/2
+ability=gains {1}{U} unblockable
+timing=main
+requires_groovy_code
