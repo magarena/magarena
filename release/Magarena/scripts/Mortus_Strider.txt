@@ -1,0 +1,11 @@
+name=Mortus Strider
+url=http://magiccards.info/gtc/en/179.html
+image=http://magiccards.info/scans/en/gtc/179.jpg
+value=3.023
+rarity=C
+type=Creature
+subtype=Skeleton
+cost={1}{U}{B}
+pt=1/1
+ability=die return to owner's hand
+timing=main
