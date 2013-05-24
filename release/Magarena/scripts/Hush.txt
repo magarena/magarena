@@ -1,0 +1,11 @@
+name=Hush
+url=http://magiccards.info/us/en/266.html
+image=http://magiccards.info/scans/en/us/266.jpg
+value=3.430
+rarity=C
+type=Instant
+cost={3}{G}
+removal=2
+timing=removal
+ability=cycling {2}
+requires_groovy_code=Back to Nature
