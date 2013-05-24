@@ -1,0 +1,9 @@
+name=Drifting Meadow
+url=http://magiccards.info/us/en/320.html
+image=http://magiccards.info/scans/en/us/320.jpg
+value=2.310
+rarity=C
+type=Land
+mana=w3
+ability=enters tapped,tap add mana {W},cycling {2}
+timing=tapland
