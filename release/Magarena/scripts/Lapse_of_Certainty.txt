@@ -1,0 +1,9 @@
+name=Lapse of Certainty
+url=http://magiccards.info/cfx/en/9.html
+image=http://magiccards.info/scans/en/cfx/9.jpg
+value=4.507
+rarity=C
+type=Instant
+cost={2}{W}
+timing=counter
+requires_groovy_code=Memory Lapse
