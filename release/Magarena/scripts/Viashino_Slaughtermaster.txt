@@ -1,0 +1,12 @@
+name=Viashino Slaughtermaster
+url=http://magiccards.info/cfx/en/73.html
+image=http://magiccards.info/scans/en/cfx/73.jpg
+value=3.754
+rarity=U
+type=Creature
+subtype=Viashino,Warrior
+cost={1}{R}
+pt=1/1
+ability=double strike
+timing=main
+requires_groovy_code
