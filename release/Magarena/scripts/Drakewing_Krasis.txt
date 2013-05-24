@@ -1,0 +1,11 @@
+name=Drakewing Krasis
+url=http://magiccards.info/gtc/en/157.html
+image=http://magiccards.info/scans/en/gtc/157.jpg
+value=3.059
+rarity=C
+type=Creature
+subtype=Lizard,Drake
+cost={1}{G}{U}
+pt=3/1
+ability=flying,trample
+timing=main
