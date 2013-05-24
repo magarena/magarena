@@ -1,0 +1,12 @@
+name=Spitting Drake
+url=http://magiccards.info/6e/en/207.html
+image=http://magiccards.info/scans/en/6e/207.jpg
+value=3.754
+rarity=U
+type=Creature
+subtype=Drake
+cost={3}{R}
+pt=2/2
+ability=flying
+timing=main
+requires_groovy_code
