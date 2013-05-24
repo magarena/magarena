@@ -1,0 +1,11 @@
+name=Disciple of Law
+url=http://magiccards.info/us/en/11.html
+image=http://magiccards.info/scans/en/us/11.jpg
+value=2.978
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={1}{W}
+timing=main
+pt=1/2
+ability=cycling {2},protection from red
