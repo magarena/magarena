@@ -1,0 +1,11 @@
+name=Haunter of Nightveil
+url=http://magiccards.info/dgm/en/76.html
+image=http://magiccards.info/scans/en/dgm/76.jpg
+value=2.436
+rarity=U
+type=Creature
+subtype=Spirit
+cost={3}{U}{B}
+pt=3/4
+timing=main
+requires_groovy_code
