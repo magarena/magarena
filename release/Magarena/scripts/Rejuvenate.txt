@@ -1,0 +1,10 @@
+name=Rejuvenate
+url=http://magiccards.info/us/en/271.html
+image=http://magiccards.info/scans/en/us/271.jpg
+value=1.302
+rarity=C
+type=Sorcery
+cost={3}{G}
+timing=draw
+ability=cycling {2}
+requires_groovy_code
