@@ -1,0 +1,11 @@
+name=Plated Rootwalla
+url=http://magiccards.info/br/en/52.html
+image=http://magiccards.info/scans/en/br/52.jpg
+value=3.754
+rarity=C
+type=Creature
+subtype=Lizard
+cost={4}{G}
+pt=3/3
+timing=main
+requires_groovy_code
