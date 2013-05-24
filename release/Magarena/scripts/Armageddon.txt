@@ -1,0 +1,10 @@
+name=Armageddon
+url=http://magiccards.info/me4/en/5.html
+image=http://magiccards.info/scans/en/me4/5.jpg
+value=4.146
+removal=2
+rarity=R
+type=Sorcery
+cost={3}{W}
+timing=removal
+requires_groovy_code
