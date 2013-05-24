@@ -1,0 +1,11 @@
+name=Disciple of the Old Ways
+url=http://magiccards.info/gtc/en/118.html
+image=http://magiccards.info/scans/en/gtc/118.jpg
+value=4.012
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={1}{G}
+pt=2/2
+ability=gains {R} first strike
+timing=main
