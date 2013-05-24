@@ -1,0 +1,11 @@
+name=Benevolent Ancestor
+url=http://magiccards.info/rav/en/3.html
+image=http://magiccards.info/scans/en/rav/3.jpg
+value=4.023
+rarity=C
+type=Creature
+subtype=Spirit
+cost={2}{W}
+pt=0/4
+ability=tap prevent damage 1,defender
+timing=main
