@@ -7,3 +7,4 @@ subtype=Knight
 color=w
 cost={0}
 pt=2/2
+ability=vigilance
