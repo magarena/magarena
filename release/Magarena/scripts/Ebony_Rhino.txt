@@ -1,0 +1,11 @@
+name=Ebony Rhino
+url=http://magiccards.info/me4/en/199.html
+image=http://magiccards.info/scans/en/me4/199.jpg
+value=1.444
+rarity=C
+type=Artifact,Creature
+subtype=Rhino
+ability=trample
+cost={7}
+pt=4/5
+timing=main
