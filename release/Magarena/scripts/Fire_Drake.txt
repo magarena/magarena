@@ -1,0 +1,12 @@
+name=Fire Drake
+url=http://magiccards.info/me3/en/98.html
+image=http://magiccards.info/scans/en/me3/98.jpg
+value=3.754
+rarity=U
+type=Creature
+subtype=Drake
+cost={1}{R}{R}
+pt=1/2
+ability=flying
+timing=main
+requires_groovy_code
