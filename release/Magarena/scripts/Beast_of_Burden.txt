@@ -1,0 +1,10 @@
+name=Beast of Burden
+url=http://magiccards.info/ul/en/122.html
+image=http://magiccards.info/scans/en/ul/122.jpg
+value=2.300
+rarity=R
+type=Artifact,Creature
+subtype=Golem
+cost={6}
+timing=main
+requires_groovy_code
