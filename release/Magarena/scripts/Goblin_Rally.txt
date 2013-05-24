@@ -1,0 +1,9 @@
+name=Goblin Rally
+url=http://magiccards.info/rtr/en/95.html
+image=http://magiccards.info/scans/en/rtr/95.jpg
+value=3.794
+rarity=U
+type=Sorcery
+cost={3}{R}{R}
+timing=token
+requires_groovy_code
