@@ -1,0 +1,11 @@
+name=Bloated Toad
+url=http://magiccards.info/ul/en/97.html
+image=http://magiccards.info/scans/en/ul/97.jpg
+value=2.978
+rarity=U
+type=Creature
+subtype=Frog
+cost={2}{G}
+pt=2/2
+ability=cycling {2},protection from blue
+timing=main
