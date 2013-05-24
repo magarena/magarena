@@ -1,0 +1,11 @@
+name=Darting Merfolk
+url=http://magiccards.info/mm/en/72.html
+image=http://magiccards.info/scans/en/mm/72.jpg
+value=3.023
+rarity=C
+type=Creature
+subtype=Merfolk
+cost={1}{U}
+pt=1/1
+ability=return to owner's hand {U}
+timing=main
