@@ -1,0 +1,9 @@
+name=Ambition's Cost
+url=http://magiccards.info/8e/en/118.html
+image=http://magiccards.info/scans/en/8e/118.jpg
+value=4.368
+rarity=U
+type=Sorcery
+cost={3}{B}
+timing=draw
+requires_groovy_code
