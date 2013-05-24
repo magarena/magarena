@@ -1,0 +1,9 @@
+name=Advent of the Wurm
+url=http://magiccards.info/dgm/en/51.html
+image=http://magiccards.info/scans/en/dgm/51.jpg
+value=3.575
+rarity=R
+type=Instant
+cost={1}{G}{G}{W}
+timing=token
+requires_groovy_code
