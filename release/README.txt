@@ -54,7 +54,57 @@ Thank you for your support and have fun!
 
 Release 1.38 (May 25, 2013)
 ============
-includes contributions from ...
+includes contributions from melvin, sponeta, and a. benedict balbuena
+
+- added 'given_type' property to card script
+- added 'tap prevent damage <n>' ability to card script
+- updated rules text parser with new keywords
+- converted more cards from compiled card code to dynamic groovy code
+
+- fixed: detain only lasts until end of turn, it should last until your next turn
+- fixed: large memory usage when loading card text
+- fixed: inconsistent AI hints for Soul Link, Spirit Link, and Vampiric Link
+- fixed: Inkmoth Nexus tapping itself to pay for its second abililty
+- fixed: prevent equipping an equipment on the same permanent
+- fixed: crash due to infinite triggers during combat simulation
+- fixed: Parallax Nexus not selecting target opponent
+- fixed: 2/2 Knight token was missing vigilance
+- fixed: 5/5 Wurm token was missing trample
+
+- added the following premade decks:
+Beastly_40.dec, Dogs_of_War_40.dec, Shaper.dec, Sliver_Rainbow.dec,
+Soulmates.dec, Spirited_Away.dec, There_Will_Be_Blood.dec, Vampire_Blues.dec
+
+- added the following cards:
+Advent of the Wurm, Alabaster Wall, Ambition's Cost, Ancient Craving,
+Arctic Aven, Armageddon, Armored Wolf-Rider, Arrest, Ascended Lawmage,
+Azimaet Drake, Bane Alley Blackguard, Battering Krasis, Beast of Burden,
+Benevolent Ancestor, Bloated Toad, Boros Mastiff, Brilliant Plan,
+Call of the Conclave, Captain's Call, Careful Study, Centaur Glade,
+Clergy en-Vec, Collective Blessing, Crag Puca, Darkwatch Elves,
+Darting Merfolk, Disciple of Grace, Disciple of Law, Disciple of Malice,
+Disciple of the Old Ways, Drake Hatchling, Drakewing Krasis, Drifting Meadow,
+Ebony Rhino, Emblem of the Warmind, Endless Cockroaches, Expunge,
+Femeref Healer, Fire Drake, Forgotten Cave, Frilled Oculus,
+Ghor-Clan Bloodscale, Goblin Rally, Goblin Settler, Harbor Bandit,
+Haunter of Nightveil, Healer of the Pride, Hedge Troll, Heedless One, Hush,
+Intimidation, Kithkin Healer, Knight of the Skyward Eye, Knight Watch,
+Kraul Warrior, Krovikan Mist, Lapse of Certainty, Lay Waste,
+Lost Order of Jarkeld, Mana Tithe, Militant Monk, Mindwrack Liege, Mire Kavu,
+Monk Realist, Mortus Strider, Multani, Maro-Sorcerer, Murmuring Phantasm,
+Myr Quadropod, Noble Vestige, Ogre Arsonist, Phantasmal Fiend,
+Phyrexian Gargantua, Plated Rootwalla, Polluted Mire, Prized Elephant,
+Raise the Alarm, Rakdos Drake, Rakdos's Return, Ravages of War,
+Ravaging Horde, Reckless One, Reinforced Bulwark, Rejuvenate, Riot Piker,
+Rotlung Reanimator, Rubblebelt Maaka, Samite Archer, Sanctum Custodian,
+Scornful AEther-Lich, Sedge Troll, Shivan Phoenix, Silverskin Armor,
+Skylasher, Skyshroud Troopers, Sliptide Serpent, Sliver Queen, Soulless One,
+Spark Trooper, Spike Jester, Spine of Ish Sah, Spitting Drake, Staff of Nin,
+Steeple Roc, Tajic, Blade of the Legion, Talrand's Invocation, Tamanoa,
+Tarpan, Tithe Drinker, Towering Thunderfist, Truefire Paladin,
+Uktabi Orangutan, Unflinching Courage, Unyaro Bees, Viashino Slaughtermaster,
+Viridian Corrupter, Vithian Renegades, Wake the Reflections, Wild Aesthir,
+Woodlot Crawler
 
 Release 1.37 (April 27, 2013)
 ============
