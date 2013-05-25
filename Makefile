@@ -540,3 +540,9 @@ ai/benchmark.rnd:
 	
 exp/zermelo.tsv: $(wildcard exp/136*.log)
 	awk -f exp/extract_games.awk $^ | ./exp/whr.rb | tac > $@
+
+bytes_per_card:
+	echo `du -b release/Magarena/scripts src/magic/card | awk '{s+=$$1} END {print s}'` \
+	/ \
+	`ls -1 release/Magarena/scripts/*.txt | wc -l` \
+	| bc -l
