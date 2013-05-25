@@ -20,7 +20,27 @@ public class MagicDetainAction extends MagicAction {
 
     private final MagicPermanent permanent;
     private final MagicPlayer sourceController;
-    
+        
+    private static final MagicStatic S1 = new MagicStatic(MagicLayer.Ability) {
+        @Override
+        public void modAbilityFlags(
+                final MagicPermanent source,
+                final MagicPermanent permanent,
+                final Set<MagicAbility> flags) {
+            flags.add(MagicAbility.CannotAttackOrBlock);
+        }   
+    };
+        
+    private static final MagicStatic S2 = new MagicStatic(MagicLayer.Ability) {
+        @Override
+        public void modAbilityFlags(
+                final MagicPermanent source,
+                final MagicPermanent permanent,
+                final Set<MagicAbility> flags) {
+            flags.add(MagicAbility.CantActivateAbilities);
+        }
+    };
+        
     public MagicDetainAction(final MagicPlayer controller, final MagicPermanent aPermanent) {
         sourceController = controller;
         permanent = aPermanent;
@@ -28,29 +48,9 @@ public class MagicDetainAction extends MagicAction {
         
     @Override
     public void doAction(final MagicGame game) {
-        final MagicStatic S1 = new MagicStatic(MagicLayer.Ability) {
-            @Override
-            public void modAbilityFlags(
-                    final MagicPermanent source,
-                    final MagicPermanent permanent,
-                    final Set<MagicAbility> flags) {
-                flags.add(MagicAbility.CannotAttackOrBlock);
-            }   
-        };
         game.doAction(new MagicAddStaticAction(permanent, S1));
-        
-        final MagicStatic S2 = new MagicStatic(MagicLayer.Ability) {
-            @Override
-            public void modAbilityFlags(
-                    final MagicPermanent source,
-                    final MagicPermanent permanent,
-                    final Set<MagicAbility> flags) {
-                flags.add(MagicAbility.CantActivateAbilities);
-            }
-        };
         game.doAction(new MagicAddStaticAction(permanent, S2));
-        
-        MagicAtUpkeepTrigger cleanup = new MagicAtUpkeepTrigger() {
+        final MagicAtUpkeepTrigger cleanup = new MagicAtUpkeepTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
                 if (upkeepPlayer.getId() == sourceController.getId()) {
