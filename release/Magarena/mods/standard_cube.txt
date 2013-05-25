@@ -3,6 +3,7 @@ Abrupt Decay
 Acidic Slime
 Act of Treason
 Adaptive Snapjaw
+Advent of the Wurm
 Aggravate
 Ajani, Caller of the Pride
 Ajani's Sunstriker
@@ -23,8 +24,12 @@ Archangel
 Archangel's Light
 Archweaver
 Archwing Dragon
+Arctic Aven
 Armada Wurm
 Armored Skaab
+Armored Wolf-Rider
+Arrest
+Ascended Lawmage
 Ashmouth Hound
 Assault Griffin
 Attended Knight
@@ -37,11 +42,13 @@ Axebane Stag
 Azorius Arrester
 Azorius Guildgate
 Balefire Dragon
+Bane Alley Blackguard
 Banners Raised
 Barter in Blood
 Bar the Door
 Basilica Guards
 Basilica Screecher
+Battering Krasis
 Battleground Geist
 Beguiler of Wills
 Bellows Lizard
@@ -63,6 +70,7 @@ Bone to Ash
 Boneyard Wurm
 Bonfire of the Damned
 Boros Elite
+Boros Mastiff
 Boros Reckoner
 Bountiful Harvest
 Brain Weevil
@@ -75,11 +83,13 @@ Brushstrider
 Burden of Guilt
 Butcher Ghoul
 Butcher's Cleaver
+Call of the Conclave
 Call to Serve
 Cancel
 Canyon Minotaur
 Captain of the Mists
 Captain of the Watch
+Captain's Call
 Carnival Hellsteed
 Catacomb Slug
 Cathars' Crusade
@@ -102,6 +112,7 @@ Cloudfin Raptor
 Cloudshift
 Cobblebrute
 Cobbled Wings
+Collective Blessing
 Commander's Authority
 Concordia Pegasus
 Conjurer's Closet
@@ -140,6 +151,7 @@ Diregraf Captain
 Diregraf Escort
 Diregraf Ghoul
 Disciple of Griselbrand
+Disciple of the Old Ways
 Disentomb
 Dispel
 Dissipate
@@ -149,6 +161,7 @@ Doomed Traveler
 Downsize
 Dragon Hatchling
 Dragonskull Summit
+Drakewing Krasis
 Dreadbore
 Dreadwaters
 Driver of the Dead
@@ -212,6 +225,7 @@ Forest
 Forge Devil
 Fortress Crab
 Frightful Delusion
+Frilled Oculus
 Frontline Medic
 Frostburn Weird
 Furnace Whelp
@@ -241,6 +255,7 @@ Gloom Surgeon
 Gloomwidow
 Glorious Charge
 Goblin Arsonist
+Goblin Rally
 Godless Shrine
 Goldnight Commander
 Goldnight Redeemer
@@ -268,12 +283,15 @@ Guise of Fire
 Hallowed Fountain
 Hamlet Captain
 Hanweir Lancer
+Harbor Bandit
 Harrowing Journey
 Harvester of Souls
 Haunted Guardian
+Haunter of Nightveil
 Havengul Runebinder
 Havengul Skaab
 Havengul Vampire
+Healer of the Pride
 Heavy Mattock
 Heckling Fiends
 Heirs of Stromkirk
@@ -317,7 +335,9 @@ Knightly Valor
 Knight of Glory
 Knight of Infamy
 Knight of Obligation
+Knight Watch
 Kraken Hatchling
+Kraul Warrior
 Krenko, Mob Boss
 Krenko's Command
 Kruin Striker
@@ -365,9 +385,11 @@ Moonsilver Spear
 Moonveil Dragon
 Moorland Inquisitor
 Morkrut Banshee
+Mortus Strider
 Mountain
 Murder
 Murder of Crows
+Murmuring Phantasm
 Narstad Scrapper
 Natural End
 Naturalize
@@ -408,14 +430,18 @@ Polluted Dead
 Predator's Gambit
 Primal Huntbeast
 Primordial Hydra
+Prized Elephant
+Putrefy
 Quirion Dryad
 Rage Thrower
 Raging Poltergeist
 Rakdos Cackler
+Rakdos Drake
 Rakdos Guildgate
 Rakdos Ragemutt
 Rakdos Ringleader
 Rakdos Shred-Freak
+Rakdos's Return
 Rakish Heir
 Rancor
 Ravenous Rats
@@ -429,6 +455,7 @@ Restoration Angel
 Reverberate
 Righteous Blow
 Riot Devils
+Riot Piker
 Riot Ringleader
 Rise from the Grave
 Risen Sanctuary
@@ -438,6 +465,7 @@ Rootbound Crag
 Rotcrown Ghoul
 Rotting Fensnake
 Rubbleback Rhino
+Rubblebelt Maaka
 Rubblehulk
 Rummaging Goblin
 Runewing
@@ -485,6 +513,7 @@ Skinbrand Goblin
 Skirsdag Cultist
 Skirsdag Flayer
 Skyknight Legionnaire
+Skylasher
 Skyline Predator
 Slaughterhorn
 Slayer of the Wicked
@@ -499,6 +528,7 @@ Somberwald Vigilante
 Soulcage Fiend
 Soul of the Harvest
 Soulsworn Spirit
+Spark Trooper
 Spawn of Rix Maadi
 Spectral Flight
 Spectral Gateguards
@@ -506,12 +536,15 @@ Spectral Rider
 Sphinx's Revelation
 Spidery Grasp
 Spiked Baloth
+Spike Jester
 Spirit Away
 Spiteful Shadows
 Splatter Thug
 Splinterfright
+Staff of Nin
 Stealer of Secrets
 Steam Vents
+Steeple Roc
 Stensia Bloodhall
 Stitcher's Apprentice
 Stomping Ground
@@ -533,6 +566,8 @@ Supreme Verdict
 Swamp
 Syndicate Enforcer
 Syndic of Tithes
+Tajic, Blade of the Legion
+Talrand's Invocation
 Tamiyo, the Moon Sage
 Teleportal
 Temple Garden
@@ -550,11 +585,13 @@ Thunderous Wrath
 Tibalt, the Fiend-Blooded
 Timberland Guide
 Titanic Growth
+Tithe Drinker
 Torch Fiend
 Tormented Soul
 Tormentor's Trident
 Tower Drake
 Towering Indrik
+Towering Thunderfist
 Tragic Slip
 Trained Caracal
 Traitorous Blood
@@ -567,6 +604,7 @@ Triumph of Cruelty
 Triumph of Ferocity
 Trostani, Selesnya's Voice
 Trostani's Judgment
+Truefire Paladin
 Trumpet Blast
 Trusted Forcemage
 Typhoid Rats
@@ -574,6 +612,7 @@ Ulvenwald Bear
 Unbreathing Horde
 Uncanny Speed
 Undead Executioner
+Unflinching Courage
 Unhallowed Pact
 Unruly Mob
 Unsummon
@@ -603,6 +642,7 @@ Vorapede
 Vorstclaw
 Vraska the Unseen
 Wakedancer
+Wake the Reflections
 Walking Corpse
 Wall of Fire
 Warclamp Mastiff
@@ -622,6 +662,7 @@ Wolfir Silverheart
 Wooden Stake
 Woodland Cemetery
 Woodland Sleuth
+Woodlot Crawler
 Wrack with Madness
 Wreath of Geists
 Wrecking Ogre
