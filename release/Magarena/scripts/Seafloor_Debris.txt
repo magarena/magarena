@@ -1,7 +1,7 @@
 name=Seafloor Debris
 url=http://magiccards.info/od/en/325.html
 image=http://magiccards.info/scans/en/od/325.jpg
-value=2.450
+value=2.381
 rarity=C
 type=Land
 mana=w1u3b1r1g1

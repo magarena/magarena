@@ -1,7 +1,7 @@
 name=Frozen Shade
 url=http://magiccards.info/5e/en/25.html
 image=http://magiccards.info/scans/en/5e/25.jpg
-value=3.054
+value=3.096
 rarity=C
 type=Creature
 subtype=Shade

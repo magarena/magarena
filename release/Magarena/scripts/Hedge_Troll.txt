@@ -1,7 +1,7 @@
 name=Hedge Troll
 url=http://magiccards.info/pc/en/151.html
 image=http://magiccards.info/scans/en/pc/151.jpg
-value=3.754
+value=4.034
 rarity=U
 type=Creature
 subtype=Troll,Cleric

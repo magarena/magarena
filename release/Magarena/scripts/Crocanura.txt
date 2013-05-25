@@ -1,7 +1,7 @@
 name=Crocanura
 url=http://magiccards.info/gtc/en/116.html
 image=http://magiccards.info/scans/en/gtc/116.jpg
-value=3.059
+value=3.164
 rarity=C
 type=Creature
 subtype=Crocodile,Frog

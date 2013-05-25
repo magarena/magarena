@@ -1,7 +1,7 @@
 name=Krenko's Command
 url=http://magiccards.info/m13/en/139.html
 image=http://magiccards.info/scans/en/m13/139.jpg
-value=3.794
+value=3.568
 rarity=C
 type=Sorcery
 cost={1}{R}

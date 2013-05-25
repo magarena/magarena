@@ -1,7 +1,7 @@
 name=Martial Law
 url=http://magiccards.info/rtr/en/14.html
 image=http://magiccards.info/scans/en/rtr/14.jpg
-value=3.787
+value=3.821
 rarity=R
 type=Enchantment
 cost={2}{W}{W}

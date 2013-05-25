@@ -1,7 +1,7 @@
 name=Magefire Wings
 url=http://magiccards.info/arb/en/88.html
 image=http://magiccards.info/scans/en/arb/88.jpg
-value=2.600
+value=2.614
 rarity=C
 type=Enchantment
 subtype=Aura

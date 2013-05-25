@@ -1,7 +1,7 @@
 name=Talas Scout
 url=http://magiccards.info/po2/en/52.html
 image=http://magiccards.info/scans/en/po2/52.jpg
-value=2.938
+value=3.020
 rarity=C
 type=Creature
 subtype=Human,Pirate,Scout

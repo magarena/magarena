@@ -1,7 +1,7 @@
 name=Squire
 url=http://magiccards.info/tsts/en/15.html
 image=http://magiccards.info/scans/en/tsts/15.jpg
-value=1.669
+value=1.649
 rarity=C
 type=Creature
 subtype=Human,Soldier

@@ -1,7 +1,7 @@
 name=Bog Wreckage
 url=http://magiccards.info/od/en/314.html
 image=http://magiccards.info/scans/en/od/314.jpg
-value=2.318
+value=2.229
 rarity=C
 type=Land
 mana=w1u1b3r1g1

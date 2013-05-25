@@ -1,7 +1,7 @@
 name=Caldera Lake
 url=http://magiccards.info/tp/en/306.html
 image=http://magiccards.info/scans/en/tp/306.jpg
-value=3.050
+value=2.930
 rarity=R
 type=Land
 mana=u2r2

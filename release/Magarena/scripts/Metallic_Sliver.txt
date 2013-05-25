@@ -1,7 +1,7 @@
 name=Metallic Sliver
 url=http://magiccards.info/pds/en/1.html
 image=http://magiccards.info/scans/en/pds/1.jpg
-value=4.125
+value=4.108
 rarity=C
 type=Artifact,Creature
 subtype=Sliver

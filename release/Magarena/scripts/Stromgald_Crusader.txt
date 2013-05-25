@@ -1,7 +1,7 @@
 name=Stromgald Crusader
 url=http://magiccards.info/cs/en/71.html
 image=http://magiccards.info/scans/en/cs/71.jpg
-value=4.362
+value=4.369
 rarity=U
 type=Creature
 subtype=Zombie,Knight

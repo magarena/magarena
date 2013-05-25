@@ -1,7 +1,7 @@
 name=Quest for the Gemblades
 url=http://magiccards.info/zen/en/177.html
 image=http://magiccards.info/scans/en/zen/177.jpg
-value=4.045
+value=4.087
 rarity=U
 type=Enchantment
 cost={1}{G}

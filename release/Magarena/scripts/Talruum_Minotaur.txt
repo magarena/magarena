@@ -1,7 +1,7 @@
 name=Talruum Minotaur
 url=http://magiccards.info/6e/en/210.html
 image=http://magiccards.info/scans/en/6e/210.jpg
-value=3.679
+value=3.710
 rarity=C
 type=Creature
 subtype=Minotaur,Berserker

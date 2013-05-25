@@ -1,7 +1,7 @@
 name=Heart Sliver
 url=http://magiccards.info/pds/en/7.html
 image=http://magiccards.info/scans/en/pds/7.jpg
-value=4.417
+value=4.443
 rarity=C
 type=Creature
 subtype=Sliver

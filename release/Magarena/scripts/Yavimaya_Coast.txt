@@ -1,7 +1,7 @@
 name=Yavimaya Coast
 url=http://magiccards.info/10e/en/363.html
 image=http://magiccards.info/scans/en/10e/363.jpg
-value=4.344
+value=4.288
 rarity=R
 type=Land
 mana=b2g2

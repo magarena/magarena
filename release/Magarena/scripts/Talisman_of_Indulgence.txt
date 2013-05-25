@@ -1,7 +1,7 @@
 name=Talisman of Indulgence
 url=http://magiccards.info/mi/en/255.html
 image=http://magiccards.info/scans/en/mi/255.jpg
-value=3.000
+value=3.019
 rarity=U
 type=Artifact
 cost={2}

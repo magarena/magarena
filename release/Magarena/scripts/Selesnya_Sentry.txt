@@ -1,7 +1,7 @@
 name=Selesnya Sentry
 url=http://magiccards.info/rtr/en/21.html
 image=http://magiccards.info/scans/en/rtr/21.jpg
-value=1.904
+value=1.971
 ability=regenerate {5}{G}
 rarity=C
 type=Creature

@@ -1,7 +1,7 @@
 name=Woodlot Crawler
 url=http://magiccards.info/dgm/en/118.html
 image=http://magiccards.info/scans/en/dgm/118.jpg
-value=2.436
+value=3.792
 rarity=U
 type=Creature
 subtype=Insect

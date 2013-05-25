@@ -1,7 +1,7 @@
 name=Wall of Tanglecord
 url=http://magiccards.info/som/en/222.html
 image=http://magiccards.info/scans/en/som/222.jpg
-value=3.677
+value=3.691
 rarity=C
 type=Artifact,Creature
 subtype=Wall

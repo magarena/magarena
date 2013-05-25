@@ -1,7 +1,7 @@
 name=Druid's Deliverance
 url=http://magiccards.info/rtr/en/123.html
 image=http://magiccards.info/scans/en/rtr/123.jpg
-value=3.627
+value=3.686
 rarity=C
 type=Instant
 cost={1}{G}

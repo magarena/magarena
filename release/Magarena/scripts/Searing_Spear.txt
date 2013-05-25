@@ -1,7 +1,7 @@
 name=Searing Spear
 url=http://magiccards.info/m13/en/147.html
 image=http://magiccards.info/m13/en/147.html
-value=4.615
+value=3.263
 removal=3
 rarity=C
 type=Instant

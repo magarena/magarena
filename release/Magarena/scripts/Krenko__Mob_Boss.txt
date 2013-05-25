@@ -1,7 +1,7 @@
 name=Krenko, Mob Boss
 url=http://magiccards.info/m13/en/138.html
 image=http://magiccards.info/scans/en/m13/138.jpg
-value=2.875
+value=4.142
 rarity=R
 type=Legendary,Creature
 subtype=Goblin,Warrior

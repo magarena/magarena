@@ -1,7 +1,7 @@
 name=Steeple Roc
 url=http://magiccards.info/dgm/en/8.html
 image=http://magiccards.info/scans/en/dgm/8.jpg
-value=2.300
+value=1.938
 rarity=C
 type=Creature
 subtype=Bird

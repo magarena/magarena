@@ -1,7 +1,7 @@
 name=Phyresis
 url=http://magiccards.info/mbs/en/49.html
 image=http://magiccards.info/scans/en/mbs/49.jpg
-value=3.301
+value=3.316
 rarity=C
 type=Enchantment
 subtype=Aura

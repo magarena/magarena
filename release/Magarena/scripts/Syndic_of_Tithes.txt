@@ -1,7 +1,7 @@
 name=Syndic of Tithes
 url=http://magiccards.info/gtc/en/26.html
 image=http://magiccards.info/scans/en/gtc/26.jpg
-value=3.000
+value=3.184
 rarity=C
 type=Creature
 subtype=Human,Cleric

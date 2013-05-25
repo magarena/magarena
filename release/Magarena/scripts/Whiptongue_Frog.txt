@@ -1,7 +1,7 @@
 name=Whiptongue Frog
 url=http://magiccards.info/ex/en/52.html
 image=http://magiccards.info/scans/en/ex/52.jpg
-value=1.883
+value=1.887
 rarity=C
 type=Creature
 subtype=Frog

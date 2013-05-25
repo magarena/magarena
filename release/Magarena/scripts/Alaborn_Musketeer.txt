@@ -1,7 +1,7 @@
 name=Alaborn Musketeer
 url=http://magiccards.info/me4/en/1.html
 image=http://magiccards.info/scans/en/me4/1.jpg
-value=2.600
+value=2.556
 ability=reach
 rarity=C
 type=Creature

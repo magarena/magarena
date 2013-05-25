@@ -1,7 +1,7 @@
 name=Scythe Tiger
 url=http://magiccards.info/zen/en/183.html
 image=http://magiccards.info/scans/en/zen/183.jpg
-value=3.772
+value=3.784
 rarity=C
 type=Creature
 subtype=Cat

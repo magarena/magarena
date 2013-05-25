@@ -1,7 +1,7 @@
 name=Vitaspore Thallid
 url=http://magiccards.info/pc/en/143.html
 image=http://magiccards.info/scans/en/pc/143.jpg
-value=3.065
+value=2.000
 rarity=C
 type=Creature
 subtype=Fungus

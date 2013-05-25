@@ -1,7 +1,7 @@
 name=Carnival Hellsteed
 url=http://magiccards.info/rtr/en/147.html
 image=http://magiccards.info/scans/en/rtr/147.jpg
-value=3.282
+value=3.364
 rarity=R
 type=Creature
 subtype=Nightmare,Horse

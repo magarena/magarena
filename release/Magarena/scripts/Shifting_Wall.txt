@@ -1,7 +1,7 @@
 name=Shifting Wall
 url=http://magiccards.info/sh/en/134.html
 image=http://magiccards.info/scans/en/sh/134.jpg
-value=3.525
+value=3.541
 rarity=U
 type=Artifact,Creature
 subtype=Wall

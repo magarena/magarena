@@ -1,7 +1,7 @@
 name=Deathgreeter
 url=http://magiccards.info/ala/en/71.html
 image=http://magiccards.info/scans/en/ala/71.jpg
-value=2.974
+value=2.983
 rarity=C
 type=Creature
 subtype=Human,Shaman

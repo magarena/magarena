@@ -1,7 +1,7 @@
 name=Penumbra Bobcat
 url=http://magiccards.info/ap/en/82.html
 image=http://magiccards.info/scans/en/ap/82.jpg
-value=3.535
+value=3.578
 rarity=C
 type=Creature
 subtype=Cat

@@ -1,7 +1,7 @@
 name=Snow-Covered Island
 url=http://magiccards.info/cs/en/152.html
 image=http://magiccards.info/scans/en/cs/152.jpg
-value=4.592
+value=4.608
 rarity=L
 type=Basic,Snow,Land
 subtype=Island

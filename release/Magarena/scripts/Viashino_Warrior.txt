@@ -1,7 +1,7 @@
 name=Viashino Warrior
 url=http://magiccards.info/mr/en/200.html
 image=http://magiccards.info/scans/en/mr/200.jpg
-value=2.426
+value=2.443
 rarity=C
 type=Creature
 subtype=Viashino,Warrior

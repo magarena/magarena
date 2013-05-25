@@ -1,7 +1,7 @@
 name=Mystic Restraints
 url=http://magiccards.info/chk/en/76.html
 image=http://magiccards.info/scans/en/chk/76.jpg
-value=2.591
+value=2.618
 rarity=C
 type=Enchantment
 subtype=Aura

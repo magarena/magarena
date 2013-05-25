@@ -1,7 +1,7 @@
 name=Riot Piker
 url=http://magiccards.info/dgm/en/37.html
 image=http://magiccards.info/scans/en/dgm/37.jpg
-value=2.300
+value=3.056
 ability=attacks each turn if able,first strike
 rarity=C
 type=Creature

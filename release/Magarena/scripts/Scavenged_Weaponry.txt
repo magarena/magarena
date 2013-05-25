@@ -1,7 +1,7 @@
 name=Scavenged Weaponry
 url=http://magiccards.info/in/en/123.html
 image=http://magiccards.info/scans/en/in/123.jpg
-value=2.648
+value=2.679
 rarity=C
 type=Enchantment
 subtype=Aura

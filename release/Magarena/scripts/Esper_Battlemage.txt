@@ -1,7 +1,7 @@
 name=Esper Battlemage
 url=http://magiccards.info/ala/en/40.html
 image=http://magiccards.info/scans/en/ala/40.jpg
-value=2.992
+value=2.976
 rarity=U
 type=Artifact,Creature
 subtype=Human,Wizard

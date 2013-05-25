@@ -1,7 +1,7 @@
 name=Kaervek the Merciless
 url=http://magiccards.info/arc/en/88.html
 image=http://magiccards.info/scans/en/arc/88.jpg
-value=4.386
+value=3.971
 rarity=R
 type=Legendary,Creature
 subtype=Human,Shaman

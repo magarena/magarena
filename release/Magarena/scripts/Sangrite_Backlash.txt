@@ -1,7 +1,7 @@
 name=Sangrite Backlash
 url=http://magiccards.info/arb/en/139.html
 image=http://magiccards.info/scans/en/arb/139.jpg
-value=2.870
+value=2.865
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,7 +1,7 @@
 name=Wirewood Elf
 url=http://magiccards.info/on/en/301.html
 image=http://magiccards.info/scans/en/on/301.jpg
-value=2.000
+value=2.041
 rarity=C
 type=Creature
 subtype=Elf,Druid

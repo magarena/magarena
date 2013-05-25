@@ -1,7 +1,7 @@
 name=Militant Monk
 url=http://magiccards.info/tr/en/9.html
 image=http://magiccards.info/scans/en/tr/9.jpg
-value=3.023
+value=2.900
 rarity=C
 type=Creature
 subtype=Human,Monk,Cleric

@@ -1,7 +1,7 @@
 name=Arcbound Bruiser
 url=http://magiccards.info/ds/en/94.html
 image=http://magiccards.info/scans/en/ds/94.jpg
-value=2.704
+value=2.690
 rarity=C
 type=Artifact,Creature
 subtype=Golem

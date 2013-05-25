@@ -1,7 +1,7 @@
 name=Disciple of the Old Ways
 url=http://magiccards.info/gtc/en/118.html
 image=http://magiccards.info/scans/en/gtc/118.jpg
-value=4.012
+value=2.920
 rarity=C
 type=Creature
 subtype=Human,Warrior

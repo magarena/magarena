@@ -1,7 +1,7 @@
 name=Stonefare Crocodile
 url=http://magiccards.info/rtr/en/136.html
 image=http://magiccards.info/scans/en/rtr/136.jpg
-value=2.484
+value=2.515
 rarity=C
 type=Creature
 subtype=Crocodile

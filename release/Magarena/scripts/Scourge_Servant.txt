@@ -1,7 +1,7 @@
 name=Scourge Servant
 url=http://magiccards.info/mbs/en/54.html
 image=http://magiccards.info/scans/en/mbs/54.jpg 
-value=2.208
+value=2.270
 ability=infect
 rarity=C
 type=Creature

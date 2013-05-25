@@ -1,7 +1,7 @@
 name=Llanowar Dead
 url=http://magiccards.info/ap/en/109.html
 image=http://magiccards.info/scans/en/ap/109.jpg
-value=3.750
+value=3.804
 rarity=C
 type=Creature
 subtype=Zombie,Elf

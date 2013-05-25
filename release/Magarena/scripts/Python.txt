@@ -1,7 +1,7 @@
 name=Python
 url=http://magiccards.info/6e/en/150.html
 image=http://magiccards.info/scans/en/6e/150.jpg
-value=2.380
+value=2.352
 rarity=C
 type=Creature
 subtype=Snake

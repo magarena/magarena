@@ -1,7 +1,7 @@
 name=Revenant
 url=http://magiccards.info/sh/en/18.html
 image=http://magiccards.info/scans/en/sh/18.jpg
-value=3.750
+value=3.717
 rarity=R
 type=Creature
 subtype=Spirit

@@ -1,7 +1,7 @@
 name=Fire Diamond
 url=http://magiccards.info/7e/en/296.html
 image=http://magiccards.info/scans/en/7e/296.jpg
-value=3.179
+value=3.155
 rarity=U
 type=Artifact
 cost={2}

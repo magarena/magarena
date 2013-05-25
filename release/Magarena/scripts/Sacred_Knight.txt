@@ -1,7 +1,7 @@
 name=Sacred Knight
 url=http://magiccards.info/po/en/186.html
 image=http://magiccards.info/scans/en/po/186.jpg
-value=2.926
+value=2.929
 rarity=C
 type=Creature
 subtype=Human,Knight

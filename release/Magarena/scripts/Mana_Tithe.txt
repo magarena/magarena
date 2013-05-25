@@ -1,7 +1,7 @@
 name=Mana Tithe
 url=http://magiccards.info/pc/en/25.html
 image=http://magiccards.info/scans/en/pc/25.jpg
-value=4.507
+value=4.227
 rarity=C
 type=Instant
 cost={W}

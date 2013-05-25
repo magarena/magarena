@@ -1,7 +1,7 @@
 name=Crusader of Odric
 url=http://magiccards.info/m13/en/10.html
 image=http://magiccards.info/scans/en/m13/10.jpg
-value=3.853
+value=3.866
 rarity=U
 type=Creature
 subtype=Human,Soldier

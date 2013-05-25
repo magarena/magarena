@@ -1,7 +1,7 @@
 name=Ichor Wellspring
 url=http://magiccards.info/mbs/en/110.html
 image=http://magiccards.info/scans/en/mbs/110.jpg
-value=3.836
+value=3.854
 rarity=C
 type=Artifact
 cost={2}

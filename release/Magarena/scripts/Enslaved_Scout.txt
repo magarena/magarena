@@ -1,7 +1,7 @@
 name=Enslaved Scout
 url=http://magiccards.info/ai/en/104.html
 image=http://magiccards.info/scans/en/ai/104.jpg
-value=1.656
+value=1.682
 rarity=C
 type=Creature
 subtype=Goblin,Scout

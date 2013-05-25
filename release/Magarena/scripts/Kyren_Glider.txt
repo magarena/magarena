@@ -1,7 +1,7 @@
 name=Kyren Glider
 url=http://magiccards.info/mm/en/196.html
 image=http://magiccards.info/scans/en/mm/196.jpg
-value=1.917
+value=1.919
 rarity=C
 type=Creature
 subtype=Goblin

@@ -1,7 +1,7 @@
 name=Lay Waste
 url=http://magiccards.info/on/en/216.html
 image=http://magiccards.info/scans/en/on/216.jpg
-value=4.620
+value=2.732
 removal=2
 rarity=C
 type=Sorcery

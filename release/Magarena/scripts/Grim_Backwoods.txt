@@ -1,7 +1,7 @@
 name=Grim Backwoods
 url=http://magiccards.info/dka/en/156.html
 image=http://magiccards.info/scans/en/dka/156.jpg
-value=3.307
+value=3.342
 rarity=R
 type=Land
 ability=tap add mana {1}

@@ -1,7 +1,7 @@
 name=Nova Chaser
 url=http://magiccards.info/lw/en/187.html
 image=http://magiccards.info/scans/en/lw/187.jpg
-value=4.183
+value=4.211
 removal=2
 rarity=R
 type=Creature

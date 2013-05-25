@@ -1,7 +1,7 @@
 name=Ant Queen
 url=http://magiccards.info/m10/en/166.html
 image=http://magiccards.info/scans/en/m10/166.jpg
-value=4.465
+value=4.472
 rarity=R
 type=Creature
 subtype=Insect

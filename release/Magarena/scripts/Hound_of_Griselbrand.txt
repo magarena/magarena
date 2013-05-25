@@ -1,7 +1,7 @@
 name=Hound of Griselbrand
 url=http://magiccards.info/avr/en/141.html
 image=http://magiccards.info/scans/en/avr/141.jpg
-value=3.787
+value=3.842
 rarity=R
 type=Creature
 subtype=Elemental,Hound

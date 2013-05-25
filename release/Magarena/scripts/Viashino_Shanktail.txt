@@ -1,7 +1,7 @@
 name=Viashino Shanktail
 url=http://magiccards.info/gtc/en/110.html
 image=http://magiccards.info/scans/en/gtc/110.jpg
-value=2.926
+value=2.938
 rarity=U
 type=Creature
 subtype=Viashino,Warrior

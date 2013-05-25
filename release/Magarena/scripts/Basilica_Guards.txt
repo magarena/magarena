@@ -1,7 +1,7 @@
 name=Basilica Guards
 url=http://magiccards.info/gtc/en/5.html
 image=http://magiccards.info/scans/en/gtc/5.jpg
-value=2.740
+value=2.828
 rarity=C
 type=Creature
 subtype=Human,Soldier

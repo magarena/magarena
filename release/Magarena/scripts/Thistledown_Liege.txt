@@ -1,7 +1,7 @@
 name=Thistledown Liege
 url=http://magiccards.info/shm/en/153.html
 image=http://magiccards.info/scans/en/shm/153.jpg
-value=3.348
+value=3.222
 rarity=R
 type=Creature
 subtype=Kithkin,Knight

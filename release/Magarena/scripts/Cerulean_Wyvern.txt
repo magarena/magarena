@@ -1,7 +1,7 @@
 name=Cerulean Wyvern
 url=http://magiccards.info/mr/en/57.html
 image=http://magiccards.info/scans/en/mr/57.jpg
-value=2.950
+value=2.935
 rarity=U
 type=Creature
 subtype=Drake

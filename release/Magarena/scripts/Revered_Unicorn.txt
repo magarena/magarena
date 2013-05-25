@@ -1,7 +1,7 @@
 name=Revered Unicorn
 url=http://magiccards.info/wl/en/139.html
 image=http://magiccards.info/scans/en/wl/139.jpg
-value=3.636
+value=3.521
 rarity=U
 type=Creature
 subtype=Unicorn

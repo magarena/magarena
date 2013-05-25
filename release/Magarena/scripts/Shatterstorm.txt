@@ -1,7 +1,7 @@
 name=Shatterstorm
 url=http://magiccards.info/10e/en/229.html
 image=http://magiccards.info/scans/en/10e/229.jpg
-value=4.319
+value=4.325
 removal=2
 rarity=R
 type=Sorcery

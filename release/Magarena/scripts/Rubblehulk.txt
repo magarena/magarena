@@ -1,7 +1,7 @@
 name=Rubblehulk
 url=http://magiccards.info/gtc/en/191.html
 image=http://magiccards.info/scans/en/gtc/191.jpg
-value=3.213
+value=3.338
 rarity=R
 type=Creature
 subtype=Elemental

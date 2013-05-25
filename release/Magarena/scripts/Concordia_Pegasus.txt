@@ -1,7 +1,7 @@
 name=Concordia Pegasus
 url=http://magiccards.info/rtr/en/8.html
 image=http://magiccards.info/scans/en/rtr/8.jpg
-value=2.512
+value=2.534
 ability=flying
 rarity=C
 type=Creature

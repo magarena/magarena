@@ -1,7 +1,7 @@
 name=Psionic Blast
 url=http://magiccards.info/tsts/en/30.html
 image=http://magiccards.info/scans/en/tsts/30.jpg
-value=4.253
+value=4.263
 rarity=U
 type=Instant
 cost={2}{U}

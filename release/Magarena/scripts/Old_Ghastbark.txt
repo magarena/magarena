@@ -1,7 +1,7 @@
 name=Old Ghastbark
 url=http://magiccards.info/shm/en/232.html
 image=http://magiccards.info/scans/en/shm/232.jpg 
-value=2.069
+value=2.027
 rarity=C
 type=Creature
 subtype=Treefolk,Warrior

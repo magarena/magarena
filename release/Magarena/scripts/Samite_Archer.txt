@@ -1,7 +1,7 @@
 name=Samite Archer
 url=http://magiccards.info/in/en/269.html
 image=http://magiccards.info/scans/en/in/269.jpg
-value=3.023
+value=3.500
 rarity=U
 type=Creature
 subtype=Human,Cleric,Archer

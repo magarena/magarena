@@ -1,7 +1,7 @@
 name=Kiku's Shadow
 url=http://magiccards.info/sok/en/77.html
 image=http://magiccards.info/scans/en/sok/77.jpg
-value=3.944
+value=3.935
 rarity=U
 type=Sorcery
 cost={B}{B}

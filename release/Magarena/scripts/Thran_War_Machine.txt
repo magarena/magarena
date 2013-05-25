@@ -1,7 +1,7 @@
 name=Thran War Machine
 url=http://magiccards.info/ul/en/134.html
 image=http://magiccards.info/scans/en/ul/134.jpg
-value=2.386
+value=2.396
 rarity=U
 type=Artifact,Creature
 subtype=Construct

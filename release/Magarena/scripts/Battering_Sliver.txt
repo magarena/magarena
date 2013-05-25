@@ -1,7 +1,7 @@
 name=Battering Sliver
 url=http://magiccards.info/pc/en/95.html
 image=http://magiccards.info/scans/en/pc/95.jpg
-value=2.851
+value=2.854
 rarity=C
 type=Creature
 subtype=Sliver

@@ -1,7 +1,7 @@
 name=Hulking Goblin
 url=http://magiccards.info/st/en/107.html
 image=http://magiccards.info/scans/en/st/107.jpg
-value=2.477
+value=2.478
 rarity=C
 type=Creature
 subtype=Goblin

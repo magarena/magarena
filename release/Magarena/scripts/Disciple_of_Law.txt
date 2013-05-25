@@ -1,7 +1,7 @@
 name=Disciple of Law
 url=http://magiccards.info/us/en/11.html
 image=http://magiccards.info/scans/en/us/11.jpg
-value=2.978
+value=3.485
 rarity=C
 type=Creature
 subtype=Human,Cleric

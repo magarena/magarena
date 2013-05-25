@@ -1,7 +1,7 @@
 name=Crag Puca
 url=http://magiccards.info/eve/en/101.html
 image=http://magiccards.info/scans/en/eve/101.jpg
-value=4.217
+value=2.965
 rarity=U
 type=Creature
 subtype=Shapeshifter

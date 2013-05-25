@@ -1,7 +1,7 @@
 name=Skeletal Snake
 url=http://magiccards.info/po/en/34.html
 image=http://magiccards.info/scans/en/po/34.jpg
-value=2.180
+value=2.259
 rarity=C
 type=Creature
 subtype=Snake,Skeleton

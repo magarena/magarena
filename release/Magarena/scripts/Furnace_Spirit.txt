@@ -1,7 +1,7 @@
 name=Furnace Spirit
 url=http://magiccards.info/sh/en/87.html
 image=http://magiccards.info/scans/en/sh/87.jpg
-value=2.060
+value=2.058
 rarity=C
 type=Creature
 subtype=Spirit

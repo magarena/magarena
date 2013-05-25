@@ -1,7 +1,7 @@
 name=Moon Sprite
 url=http://magiccards.info/st2k/en/11.html
 image=http://magiccards.info/scans/en/st2k/11.jpg 
-value=1.833
+value=1.838
 rarity=U
 type=Creature
 subtype=Faerie

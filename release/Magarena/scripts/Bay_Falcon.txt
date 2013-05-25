@@ -1,7 +1,7 @@
 name=Bay Falcon
 url=http://magiccards.info/mr/en/54.html
 image=http://magiccards.info/scans/en/mr/54.jpg
-value=3.054
+value=3.052
 rarity=C
 type=Creature
 subtype=Bird

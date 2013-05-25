@@ -1,7 +1,7 @@
 name=Bane Alley Blackguard
 url=http://magiccards.info/dgm/en/21.html
 image=http://magiccards.info/scans/en/dgm/21.jpg
-value=2.300
+value=2.368
 rarity=C
 type=Creature
 subtype=Human,Rogue

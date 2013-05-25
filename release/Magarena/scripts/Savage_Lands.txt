@@ -1,7 +1,7 @@
 name=Savage Lands
 url=http://magiccards.info/ala/en/228.html
 image=http://magiccards.info/scans/en/ala/228.jpg
-value=3.622
+value=3.656
 rarity=U
 type=Land
 mana=b3r3g3

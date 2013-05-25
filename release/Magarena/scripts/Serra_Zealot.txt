@@ -1,7 +1,7 @@
 name=Serra Zealot
 url=http://magiccards.info/us/en/46.html
 image=http://magiccards.info/scans/en/us/46.jpg
-value=3.400
+value=3.405
 rarity=C
 type=Creature
 subtype=Human,Soldier

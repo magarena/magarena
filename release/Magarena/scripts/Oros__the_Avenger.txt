@@ -1,7 +1,7 @@
 name=Oros, the Avenger
 url=http://magiccards.info/cmd/en/216.html
 image=http://magiccards.info/scans/en/pc/161.jpg
-value=3.875
+value=3.897
 rarity=R
 type=Legendary,Creature
 subtype=Dragon

@@ -1,7 +1,7 @@
 name=Hollowhenge Spirit
 url=http://magiccards.info/dka/en/10.html
 image=http://magiccards.info/scans/en/dka/10.jpg 
-value=2.571
+value=2.662
 rarity=U
 type=Creature
 subtype=Spirit

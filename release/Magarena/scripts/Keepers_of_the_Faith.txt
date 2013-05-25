@@ -1,7 +1,7 @@
 name=Keepers of the Faith
 url=http://magiccards.info/ch/en/65.html
 image=http://magiccards.info/scans/en/ch/65.jpg
-value=1.789
+value=1.762
 rarity=C
 type=Creature
 subtype=Human,Cleric

@@ -1,7 +1,7 @@
 name=White Shield Crusader
 url=http://magiccards.info/cs/en/24.html
 image=http://magiccards.info/scans/en/cs/24.jpg
-value=4.178
+value=4.191
 rarity=U
 type=Creature
 subtype=Human,Knight

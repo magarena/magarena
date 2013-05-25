@@ -1,7 +1,7 @@
 name=Mad Prophet
 url=http://magiccards.info/avr/en/146.html
 image=http://magiccards.info/scans/en/avr/146.jpg
-value=2.921
+value=3.333
 rarity=C
 type=Creature
 subtype=Human,Shaman

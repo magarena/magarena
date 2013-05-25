@@ -1,7 +1,7 @@
 name=Serum Tank
 url=http://magiccards.info/pch/en/125.html
 image=http://magiccards.info/scans/en/pch/125.jpg
-value=3.300
+value=3.310
 rarity=U
 type=Artifact
 cost={3}

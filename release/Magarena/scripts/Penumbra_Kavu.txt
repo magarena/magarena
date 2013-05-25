@@ -1,7 +1,7 @@
 name=Penumbra Kavu
 url=http://magiccards.info/ap/en/83.html
 image=http://magiccards.info/scans/en/ap/83.jpg
-value=3.727
+value=3.766
 rarity=U
 type=Creature
 subtype=Kavu

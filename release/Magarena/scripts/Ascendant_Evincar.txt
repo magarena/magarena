@@ -1,7 +1,7 @@
 name=Ascendant Evincar
 url=http://magiccards.info/dpa/en/19.html
 image=http://magiccards.info/scans/en/10e/127.jpg
-value=4.231
+value=3.980
 rarity=R
 type=Legendary,Creature
 subtype=Vampire

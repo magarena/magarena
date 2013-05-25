@@ -1,7 +1,7 @@
 name=Hulking Ogre
 url=http://magiccards.info/st/en/108.html
 image=http://magiccards.info/scans/en/st/108.jpg
-value=2.458
+value=2.440
 rarity=U
 type=Creature
 subtype=Ogre

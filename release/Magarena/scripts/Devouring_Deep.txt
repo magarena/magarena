@@ -1,7 +1,7 @@
 name=Devouring Deep
 url=http://magiccards.info/lg/en/50.html
 image=http://magiccards.info/scans/en/lg/50.jpg
-value=1.636
+value=1.622
 rarity=C
 type=Creature
 subtype=Fish

@@ -1,7 +1,7 @@
 name=Verdigris
 url=http://magiccards.info/tp/en/158.html
 image=http://magiccards.info/scans/en/tp/158.jpg
-value=1.457
+value=1.419
 rarity=U
 type=Instant
 cost={2}{G}

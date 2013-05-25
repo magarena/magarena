@@ -1,7 +1,7 @@
 name=Foxfire Oak
 url=http://magiccards.info/shm/en/115.html
 image=http://magiccards.info/scans/en/shm/115.jpg
-value=2.190
+value=2.182
 rarity=C
 type=Creature
 subtype=Treefolk,Shaman

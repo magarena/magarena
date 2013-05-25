@@ -1,7 +1,7 @@
 name=Divinity of Pride
 url=http://magiccards.info/eve/en/86.html
 image=http://magiccards.info/scans/en/eve/86.jpg
-value=4.453
+value=4.429
 rarity=R
 type=Creature
 subtype=Spirit,Avatar

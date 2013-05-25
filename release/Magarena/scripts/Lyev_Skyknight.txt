@@ -1,7 +1,7 @@
 name=Lyev Skyknight
 url=http://magiccards.info/rtr/en/179.html
 image=http://magiccards.info/scans/en/rtr/179.jpg
-value=3.737
+value=3.754
 rarity=U
 type=Creature
 subtype=Human,Knight

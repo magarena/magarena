@@ -1,7 +1,7 @@
 name=Gloomhunter
 url=http://magiccards.info/roe/en/111.html
 image=http://magiccards.info/scans/en/roe/111.jpg 
-value=1.670
+value=1.678
 ability=flying
 rarity=C
 type=Creature

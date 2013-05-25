@@ -1,7 +1,7 @@
 name=Sisters of the Flame
 url=http://magiccards.info/4e/en/239.html
 image=http://magiccards.info/scans/en/4e/239.jpg
-value=2.575
+value=2.585
 rarity=C
 type=Creature
 subtype=Human,Shaman

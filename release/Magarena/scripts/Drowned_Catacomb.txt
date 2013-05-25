@@ -1,7 +1,7 @@
 name=Drowned Catacomb
 url=http://magiccards.info/m12/en/226.html
 image=http://magiccards.info/scans/en/m11/224.jpg
-value=3.704
+value=3.733
 rarity=R
 type=Land
 mana=u3b3

@@ -1,7 +1,7 @@
 name=Ironshell Beetle
 url=http://magiccards.info/ju/en/121.html
 image=http://magiccards.info/scans/en/ju/121.jpg
-value=2.963
+value=2.967
 rarity=C
 type=Creature
 subtype=Insect

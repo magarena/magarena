@@ -1,7 +1,7 @@
 name=Greater Forgeling
 url=http://magiccards.info/rav/en/129.html
 image=http://magiccards.info/scans/en/rav/129.jpg
-value=1.694
+value=1.734
 rarity=U
 type=Creature
 subtype=Elemental

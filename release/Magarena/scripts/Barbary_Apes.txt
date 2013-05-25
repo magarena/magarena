@@ -1,7 +1,7 @@
 name=Barbary Apes
 url=http://magiccards.info/lg/en/90.html
 image=http://magiccards.info/scans/en/lg/90.jpg
-value=2.667
+value=2.663
 rarity=C
 type=Creature
 subtype=Ape

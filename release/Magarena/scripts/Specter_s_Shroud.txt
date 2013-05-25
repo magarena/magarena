@@ -1,7 +1,7 @@
 name=Specter's Shroud
 url=http://magiccards.info/ds/en/142.html
 image=http://magiccards.info/scans/en/ds/142.jpg
-value=3.576
+value=3.574
 rarity=U
 type=Artifact
 subtype=Equipment

@@ -1,7 +1,7 @@
 name=Fleshbag Marauder
 url=http://magiccards.info/ala/en/76.html
 image=http://magiccards.info/scans/en/ala/76.jpg
-value=4.054
+value=4.075
 rarity=U
 type=Creature
 subtype=Zombie,Warrior

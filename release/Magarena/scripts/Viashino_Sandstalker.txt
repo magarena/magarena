@@ -1,7 +1,7 @@
 name=Viashino Sandstalker
 url=http://magiccards.info/9e/en/225.html
 image=http://magiccards.info/scans/en/9e/225.jpg
-value=3.724
+value=3.731
 rarity=U
 type=Creature
 subtype=Viashino,Warrior

@@ -1,7 +1,7 @@
 name=Windrider Eel
 url=http://magiccards.info/zen/en/78.html
 image=http://magiccards.info/scans/en/zen/78.jpg
-value=3.536
+value=3.569
 rarity=C
 type=Creature
 subtype=Fish

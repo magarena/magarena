@@ -1,7 +1,7 @@
 name=Sokenzan Spellblade
 url=http://magiccards.info/sok/en/115.html
 image=http://magiccards.info/scans/en/sok/115.jpg
-value=2.900
+value=2.889
 rarity=C
 type=Creature
 subtype=Ogre,Samurai,Shaman

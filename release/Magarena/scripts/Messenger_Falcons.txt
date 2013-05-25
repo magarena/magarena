@@ -1,7 +1,7 @@
 name=Messenger Falcons
 url=http://magiccards.info/arb/en/145.html
 image=http://magiccards.info/scans/en/arb/145.jpg
-value=2.651
+value=2.657
 rarity=U
 type=Creature
 subtype=Bird

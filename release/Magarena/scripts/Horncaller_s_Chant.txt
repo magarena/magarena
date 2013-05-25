@@ -1,7 +1,7 @@
 name=Horncaller's Chant
 url=http://magiccards.info/rtr/en/128.html
 image=http://magiccards.info/scans/en/rtr/128.jpg
-value=2.424
+value=2.419
 rarity=C
 type=Sorcery
 cost={7}{G}

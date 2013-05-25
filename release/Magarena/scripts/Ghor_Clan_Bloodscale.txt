@@ -1,7 +1,7 @@
 name=Ghor-Clan Bloodscale
 url=http://magiccards.info/gp/en/66.html
 image=http://magiccards.info/scans/en/gp/66.jpg
-value=3.754
+value=1.643
 rarity=U
 type=Creature
 subtype=Viashino,Warrior

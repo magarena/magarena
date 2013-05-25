@@ -1,7 +1,7 @@
 name=Wild Cantor
 url=http://magiccards.info/gp/en/149.html
 image=http://magiccards.info/scans/en/gp/149.jpg
-value=3.968
+value=3.979
 rarity=C
 type=Creature
 subtype=Human,Druid

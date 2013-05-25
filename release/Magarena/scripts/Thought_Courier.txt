@@ -1,7 +1,7 @@
 name=Thought Courier
 url=http://magiccards.info/5dn/en/38.html
 image=http://magiccards.info/scans/en/5dn/38.jpg
-value=3.681
+value=3.692
 rarity=C
 type=Creature
 subtype=Human,Wizard

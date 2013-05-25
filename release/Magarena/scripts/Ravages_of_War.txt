@@ -1,7 +1,7 @@
 name=Ravages of War
 url=http://magiccards.info/me2/en/27.html
 image=http://magiccards.info/scans/en/me2/27.jpg
-value=4.146
+value=4.462
 removal=2
 rarity=R
 type=Sorcery

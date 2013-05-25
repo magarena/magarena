@@ -1,7 +1,7 @@
 name=Desert Drake
 url=http://magiccards.info/po/en/127.html
 image=http://magiccards.info/scans/en/po/127.jpg 
-value=2.038
+value=2.037
 rarity=U
 type=Creature
 subtype=Drake

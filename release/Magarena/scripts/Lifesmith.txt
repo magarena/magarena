@@ -1,7 +1,7 @@
 name=Lifesmith
 url=http://magiccards.info/som/en/124.html
 image=http://magiccards.info/scans/en/som/124.jpg
-value=2.952
+value=2.920
 rarity=U
 type=Creature
 subtype=Human,Artificer

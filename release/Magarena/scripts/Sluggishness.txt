@@ -1,7 +1,7 @@
 name=Sluggishness
 url=http://magiccards.info/ul/en/92.html
 image=http://magiccards.info/scans/en/ul/92.jpg
-value=2.720
+value=2.692
 rarity=C
 type=Enchantment
 subtype=Aura

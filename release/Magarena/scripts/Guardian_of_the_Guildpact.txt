@@ -1,7 +1,7 @@
 name=Guardian of the Guildpact
 url=http://magiccards.info/di/en/10.html
 image=http://magiccards.info/scans/en/di/10.jpg
-value=3.930
+value=3.909
 rarity=C
 type=Creature
 subtype=Spirit

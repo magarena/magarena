@@ -1,7 +1,7 @@
 name=Clergy en-Vec
 url=http://magiccards.info/tp/en/226.html
 image=http://magiccards.info/scans/en/tp/226.jpg
-value=4.023
+value=3.209
 rarity=C
 type=Creature
 subtype=Human,Cleric

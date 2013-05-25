@@ -1,7 +1,7 @@
 name=Hallowed Burial
 url=http://magiccards.info/eve/en/7.html
 image=http://magiccards.info/scans/en/eve/7.jpg
-value=4.083
+value=4.097
 rarity=R
 type=Sorcery
 cost={3}{W}{W}

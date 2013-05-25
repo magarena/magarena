@@ -1,7 +1,7 @@
 name=Riot Spikes
 url=http://magiccards.info/di/en/146.html
 image=http://magiccards.info/scans/en/di/146.jpg
-value=2.512
+value=2.523
 rarity=C
 type=Enchantment
 subtype=Aura

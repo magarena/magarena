@@ -1,7 +1,7 @@
 name=Battlefield Percher
 url=http://magiccards.info/ne/en/52.html
 image=http://magiccards.info/scans/en/ne/52.jpg 
-value=1.528
+value=1.554
 rarity=U
 type=Creature
 subtype=Bird

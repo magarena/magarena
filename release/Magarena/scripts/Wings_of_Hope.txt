@@ -1,7 +1,7 @@
 name=Wings of Hope
 url=http://magiccards.info/in/en/289.html
 image=http://magiccards.info/scans/en/in/289.jpg
-value=3.547
+value=3.515
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,7 +1,7 @@
 name=Sea Sprite
 url=http://magiccards.info/med/en/48.html
 image=http://magiccards.info/scans/en/med/48.jpg
-value=3.241
+value=3.290
 rarity=C
 type=Creature
 subtype=Faerie

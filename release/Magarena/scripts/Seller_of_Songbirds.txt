@@ -1,7 +1,7 @@
 name=Seller of Songbirds
 url=http://magiccards.info/rtr/en/22.html
 image=http://magiccards.info/scans/en/rtr/22.jpg
-value=2.750
+value=2.790
 rarity=C
 type=Creature
 subtype=Human

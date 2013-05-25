@@ -1,7 +1,7 @@
 name=Salt Flats
 url=http://magiccards.info/tp/en/330.html
 image=http://magiccards.info/scans/en/tp/330.jpg
-value=2.871
+value=2.844
 rarity=R
 type=Land
 mana=w2b2

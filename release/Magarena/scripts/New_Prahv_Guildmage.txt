@@ -1,7 +1,7 @@
 name=New Prahv Guildmage
 url=http://magiccards.info/rtr/en/181.html
 image=http://magiccards.info/scans/en/rtr/181.jpg
-value=3.459
+value=3.481
 rarity=U
 type=Creature
 subtype=Human,Wizard

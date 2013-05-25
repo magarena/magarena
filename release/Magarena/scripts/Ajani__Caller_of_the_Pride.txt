@@ -1,7 +1,7 @@
 name=Ajani, Caller of the Pride
 url=http://magiccards.info/m13/en/1.html
 image=http://magiccards.info/scans/en/m13/1.jpg
-value=3.189
+value=3.940
 rarity=M
 type=Planeswalker
 subtype=Ajani

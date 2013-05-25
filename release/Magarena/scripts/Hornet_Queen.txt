@@ -1,7 +1,7 @@
 name=Hornet Queen
 url=http://magiccards.info/cmd/en/159.html
 image=http://magiccards.info/scans/en/cmd/159.jpg
-value=3.929
+value=3.903
 rarity=R
 type=Creature
 subtype=Insect

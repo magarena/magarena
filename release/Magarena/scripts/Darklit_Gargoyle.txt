@@ -1,7 +1,7 @@
 name=Darklit Gargoyle
 url=http://magiccards.info/cfx/en/7.html
 image=http://magiccards.info/scans/en/cfx/7.jpg 
-value=2.963
+value=3.000
 rarity=C
 type=Artifact,Creature
 subtype=Gargoyle

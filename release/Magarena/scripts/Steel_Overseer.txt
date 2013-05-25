@@ -1,7 +1,7 @@
 name=Steel Overseer
 url=http://magiccards.info/ddf/en/44.html
 image=http://magiccards.info/scans/en/ddf/44.jpg
-value=4.583
+value=4.592
 rarity=R
 type=Artifact,Creature
 subtype=Construct

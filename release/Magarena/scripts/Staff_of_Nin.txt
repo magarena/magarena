@@ -1,7 +1,7 @@
 name=Staff of Nin
 url=http://magiccards.info/m13/en/217.html
 image=http://magiccards.info/scans/en/m13/217.jpg
-value=3.836
+value=3.786
 rarity=R
 type=Artifact
 cost={6}

@@ -1,7 +1,7 @@
 name=Thundermare
 url=http://magiccards.info/9e/en/224.html
 image=http://magiccards.info/scans/en/9e/224.jpg
-value=4.022
+value=4.083
 rarity=R
 type=Creature
 subtype=Elemental,Horse

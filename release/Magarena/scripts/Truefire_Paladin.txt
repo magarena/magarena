@@ -1,7 +1,7 @@
 name=Truefire Paladin
 url=http://magiccards.info/gtc/en/202.html
 image=http://magiccards.info/scans/en/gtc/202.jpg
-value=4.012
+value=3.821
 rarity=U
 type=Creature
 subtype=Human,Knight

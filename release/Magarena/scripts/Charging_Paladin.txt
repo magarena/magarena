@@ -1,7 +1,7 @@
 name=Charging Paladin
 url=http://magiccards.info/dvd/en/4.html
 image=http://magiccards.info/scans/en/dvd/4.jpg
-value=2.851
+value=2.868
 rarity=C
 type=Creature
 subtype=Human,Knight

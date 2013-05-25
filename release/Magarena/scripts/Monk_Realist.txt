@@ -1,7 +1,7 @@
 name=Monk Realist
 url=http://magiccards.info/cmd/en/20.html
 image=http://magiccards.info/scans/en/cmd/20.jpg
-value=3.023
+value=3.060
 removal=1
 rarity=C
 type=Creature

@@ -1,7 +1,7 @@
 name=Beloved Chaplain
 url=http://magiccards.info/od/en/11.html
 image=http://magiccards.info/scans/en/od/11.jpg
-value=4.470
+value=4.456
 rarity=U
 type=Creature
 subtype=Cleric

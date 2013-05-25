@@ -1,7 +1,7 @@
 name=Verduran Enchantress
 url=http://magiccards.info/9e/en/279.html
 image=http://magiccards.info/scans/en/9e/279.jpg
-value=3.957
+value=3.970
 rarity=R
 type=Creature
 subtype=Human,Druid

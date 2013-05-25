@@ -1,7 +1,7 @@
 name=Storm Shaman
 url=http://magiccards.info/ai/en/119.html
 image=http://magiccards.info/scans/en/ai/119.jpg
-value=3.239
+value=3.115
 rarity=U
 type=Creature
 subtype=Human,Cleric,Shaman

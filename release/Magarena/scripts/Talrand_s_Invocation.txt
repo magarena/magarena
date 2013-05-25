@@ -1,7 +1,7 @@
 name=Talrand's Invocation
 url=http://magiccards.info/m13/en/73.html
 image=http://magiccards.info/scans/en/m13/73.jpg
-value=3.794
+value=3.827
 rarity=U
 type=Sorcery
 cost={2}{U}{U}

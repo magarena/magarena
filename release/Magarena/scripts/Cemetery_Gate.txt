@@ -1,7 +1,7 @@
 name=Cemetery Gate
 url=http://magiccards.info/hl/en/4.html
 image=http://magiccards.info/scans/en/hl/4.jpg
-value=3.077
+value=3.049
 rarity=C
 type=Creature
 subtype=Wall

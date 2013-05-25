@@ -1,7 +1,7 @@
 name=Order of the White Shield
 url=http://magiccards.info/me2/en/26.html
 image=http://magiccards.info/scans/en/me2/26.jpg
-value=3.967
+value=4.000
 rarity=U
 type=Creature
 subtype=Human,Knight

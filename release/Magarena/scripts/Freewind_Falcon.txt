@@ -1,7 +1,7 @@
 name=Freewind Falcon
 url=http://magiccards.info/vi/en/105.html
 image=http://magiccards.info/scans/en/vi/105.jpg
-value=3.196
+value=3.180
 rarity=C
 type=Creature
 subtype=Bird

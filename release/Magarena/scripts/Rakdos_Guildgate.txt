@@ -1,7 +1,7 @@
 name=Rakdos Guildgate
 url=http://magiccards.info/rtr/en/244.html
 image=http://magiccards.info/scans/en/rtr/244.jpg
-value=2.953
+value=3.559
 rarity=C
 type=Land
 subtype=Gate

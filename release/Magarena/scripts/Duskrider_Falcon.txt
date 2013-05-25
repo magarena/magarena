@@ -1,7 +1,7 @@
 name=Duskrider Falcon
 url=http://magiccards.info/wl/en/128.html
 image=http://magiccards.info/scans/en/wl/128.jpg
-value=3.059
+value=3.057
 rarity=C
 type=Creature
 subtype=Bird

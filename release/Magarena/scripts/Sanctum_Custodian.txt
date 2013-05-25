@@ -1,7 +1,7 @@
 name=Sanctum Custodian
 url=http://magiccards.info/br/en/62.html
 image=http://magiccards.info/scans/en/br/62.jpg
-value=2.436
+value=3.130
 rarity=C
 type=Creature
 subtype=Human,Cleric

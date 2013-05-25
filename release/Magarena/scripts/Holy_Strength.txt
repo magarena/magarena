@@ -1,7 +1,7 @@
 name=Holy Strength
 url=http://magiccards.info/m11/en/16.html
 image=http://magiccards.info/scans/en/m11/16.jpg
-value=3.216
+value=3.189
 rarity=C
 type=Enchantment
 subtype=Aura

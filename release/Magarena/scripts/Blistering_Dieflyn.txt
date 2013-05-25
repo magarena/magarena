@@ -1,7 +1,7 @@
 name=Blistering Dieflyn
 url=http://magiccards.info/shm/en/82.html
 image=http://magiccards.info/scans/en/shm/82.jpg
-value=1.580
+value=1.613
 rarity=C
 type=Creature
 subtype=Imp

@@ -1,7 +1,7 @@
 name=Yavimaya Scion
 url=http://magiccards.info/ul/en/119.html
 image=http://magiccards.info/scans/en/ul/119.jpg
-value=3.013
+value=3.026
 rarity=C
 type=Creature
 subtype=Treefolk

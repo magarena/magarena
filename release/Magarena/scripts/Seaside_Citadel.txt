@@ -1,7 +1,7 @@
 name=Seaside Citadel
 url=http://magiccards.info/ala/en/229.html
 image=http://magiccards.info/scans/en/ala/229.jpg
-value=3.641
+value=3.646
 rarity=U
 type=Land
 mana=g3w3u3

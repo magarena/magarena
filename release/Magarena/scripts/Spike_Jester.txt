@@ -1,7 +1,7 @@
 name=Spike Jester
 url=http://magiccards.info/dgm/en/106.html
 image=http://magiccards.info/scans/en/dgm/106.jpg
-value=2.436
+value=4.026
 rarity=U
 type=Creature
 subtype=Goblin,Warrior

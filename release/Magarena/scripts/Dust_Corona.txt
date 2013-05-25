@@ -1,7 +1,7 @@
 name=Dust Corona
 url=http://magiccards.info/pc/en/97.html
 image=http://magiccards.info/scans/en/pc/97.jpg
-value=2.919
+value=2.974
 rarity=C
 type=Enchantment
 subtype=Aura

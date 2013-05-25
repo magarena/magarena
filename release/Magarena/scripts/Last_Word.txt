@@ -1,7 +1,7 @@
 name=Last Word
 url=http://magiccards.info/ds/en/23.html
 image=http://magiccards.info/scans/en/ds/23.jpg
-value=4.000
+value=4.027
 rarity=R
 type=Instant
 cost={2}{U}{U}

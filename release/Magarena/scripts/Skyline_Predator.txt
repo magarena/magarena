@@ -1,7 +1,7 @@
 name=Skyline Predator
 url=http://magiccards.info/rtr/en/50.html
 image=http://magiccards.info/scans/en/rtr/50.jpg
-value=2.024
+value=2.011
 ability=flying,flash
 rarity=U
 type=Creature

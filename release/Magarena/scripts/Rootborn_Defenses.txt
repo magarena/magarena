@@ -1,7 +1,7 @@
 name=Rootborn Defenses
 url=http://magiccards.info/rtr/en/19.html
 image=http://magiccards.info/scans/en/rtr/19.jpg
-value=3.720
+value=3.725
 rarity=C
 type=Instant
 cost={2}{W}

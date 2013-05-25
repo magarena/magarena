@@ -1,7 +1,7 @@
 name=Blustersquall
 url=http://magiccards.info/rtr/en/30.html
 image=http://magiccards.info/scans/en/rtr/30.jpg
-value=3.277
+value=3.333
 rarity=U
 type=Instant
 cost={U}

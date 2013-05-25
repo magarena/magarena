@@ -1,7 +1,7 @@
 name=Feebleness
 url=http://magiccards.info/ts/en/110.html
 image=http://magiccards.info/scans/en/ts/110.jpg
-value=1.712
+value=1.732
 removal=1
 rarity=C
 type=Enchantment

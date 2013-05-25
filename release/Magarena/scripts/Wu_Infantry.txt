@@ -1,7 +1,7 @@
 name=Wu Infantry
 url=http://magiccards.info/p3k/en/59.html
 image=http://magiccards.info/scans/en/p3k/59.jpg
-value=2.036
+value=1.950
 rarity=C
 type=Creature
 subtype=Human,Soldier

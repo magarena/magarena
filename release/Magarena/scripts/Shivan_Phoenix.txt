@@ -1,7 +1,7 @@
 name=Shivan Phoenix
 url=http://magiccards.info/ul/en/91.html
 image=http://magiccards.info/scans/en/ul/91.jpg
-value=3.023
+value=3.636
 rarity=R
 type=Creature
 subtype=Phoenix

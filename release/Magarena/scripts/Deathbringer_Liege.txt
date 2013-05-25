@@ -1,7 +1,7 @@
 name=Deathbringer Liege
 url=http://magiccards.info/eve/en/85.html
 image=http://magiccards.info/scans/en/eve/85.jpg
-value=4.318
+value=4.346
 rarity=R
 type=Creature
 subtype=Horror
