@@ -174,7 +174,7 @@ log.clean:
 	-rm -f *.log
 
 inf: $(MAG)
-	-while true; do make `date +%s`.t; done
+	-while true; do make 0`date +%s`.t; done
 
 buildhive:
 	make games=100 ai1=MMABC ai2=MCTS `date +%s`.t zips
@@ -183,8 +183,8 @@ games ?= 10000
 str1 ?= 1
 str2 ?= 1
 life ?= 10
-ai1 ?= MMABC
-ai2 ?= MMAB2
+ai1 ?= MMABFast
+ai2 ?= MMABFast
 %.t: $(MAG)
 	echo `hg id -n` > $*.log
 	$(RUN) -Dmagarena.dir=`pwd`/release magic.DeckStrCal \
