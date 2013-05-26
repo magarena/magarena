@@ -1,20 +1,5 @@
-package magic.card;
-
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.MagicSource;
-import magic.model.action.MagicDealDamageAction;
-import magic.model.choice.MagicMayChoice;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicTargetFilter;
-import magic.model.trigger.MagicWhenAttacksTrigger;
-
-import java.util.Collection;
-
-public class Ronin_Cliffrider {
-    public static final MagicWhenAttacksTrigger T3 = new MagicWhenAttacksTrigger() {
+[
+    new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             return (permanent == creature) ?
@@ -23,14 +8,13 @@ public class Ronin_Cliffrider {
                     new MagicMayChoice(),
                     this,
                     "PN may$ have SN deal 1 damage " +
-                    "to each creature defending player controls.") :
+                    "to each creature defending player controls."
+                ) :
                 MagicEvent.NONE;
         }
         
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 final MagicSource source = event.getSource();
                 final MagicPlayer defendingPlayer = event.getPlayer().getOpponent();
@@ -42,5 +26,5 @@ public class Ronin_Cliffrider {
                 }
             }
         }
-    };
-}
+    }
+]
