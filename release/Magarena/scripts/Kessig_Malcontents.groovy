@@ -1,20 +1,5 @@
-package magic.card;
-
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.MagicSubType;
-import magic.model.action.MagicDealDamageAction;
-import magic.model.action.MagicPlayerAction;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicDamageTargetPicker;
-import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
-
-
-public class Kessig_Malcontents {
-    public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
+[
+    new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -26,15 +11,13 @@ public class Kessig_Malcontents {
                 MagicTargetChoice.NEG_TARGET_PLAYER,
                 new MagicDamageTargetPicker(amount),
                 this,
-                "SN deals damage to target player$ " +
+                "SN deals damage to target player\$ " +
                 "equal to the number of Humans PN controls."
             );
         }
         
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     final int amount = event.getPlayer().getNrOfPermanentsWithSubType(MagicSubType.Human);
@@ -47,5 +30,5 @@ public class Kessig_Malcontents {
                 }
             });
         }
-    };
-}
+    }
+]
