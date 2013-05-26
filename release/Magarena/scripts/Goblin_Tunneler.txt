@@ -8,4 +8,4 @@ subtype=Goblin,Rogue
 cost={1}{R}
 pt=1/1
 timing=main
-requires_card_code=Crafty Pathmage
+requires_groovy_code=Crafty Pathmage

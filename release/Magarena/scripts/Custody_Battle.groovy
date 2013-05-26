@@ -10,7 +10,7 @@
                         MagicTargetChoice.SACRIFICE_LAND
                     ),
                     this,
-                    "PN may\$ sacrifice a land$. If you don't, " +
+                    "PN may\$ sacrifice a land\$. If you don't, " +
                     upkeepPlayer.getOpponent() + " gains control of SN."
                 ) :
                 MagicEvent.NONE;

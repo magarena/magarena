@@ -7,7 +7,7 @@
                 MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
                 MagicBounceTargetPicker.getInstance(),
                 this,
-                "Exile target creature$ you control, then return " +
+                "Exile target creature\$ you control, then return " +
                 "that card to the battlefield under your control."
             );
         }
