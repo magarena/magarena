@@ -1,17 +1,5 @@
-package magic.card;
-
-import magic.model.MagicColor;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPermanentList;
-import magic.model.MagicPermanentState;
-import magic.model.action.MagicChangeStateAction;
-import magic.model.action.MagicDestroyAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
-
-public class Phyrexian_Slayer {
-    public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
+[
+    new MagicWhenBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
             if (permanent != attacker) {
@@ -26,7 +14,6 @@ public class Phyrexian_Slayer {
             return !plist.isEmpty() ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     plist,
                     this,
                     plist.size() == 1 ?
@@ -37,14 +24,12 @@ public class Phyrexian_Slayer {
         }
         
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanentList plist = event.getRefPermanentList();
             for (final MagicPermanent blocker : plist) {
                 game.doAction(new MagicChangeStateAction(blocker,MagicPermanentState.CannotBeRegenerated,true));
                 game.doAction(new MagicDestroyAction(blocker));
             }
         }
-    };
-}
+    }
+]
