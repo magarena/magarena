@@ -7,7 +7,7 @@
                 MagicTargetChoice.NEG_TARGET_CREATURE,
                 MagicExileTargetPicker.create(),
                 this,
-                "Gain control of target creature$. Untap that creature. " + 
+                "Gain control of target creature\$. Untap that creature. " + 
                 "It gains haste until end of turn. Sacrifice it at end of turn."
             );
         }
