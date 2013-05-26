@@ -16,7 +16,7 @@
                 source,
                 MagicTargetChoice.NEG_TARGET_SPELL,
                 this,
-                "Counter target spell$ unless its controller pays {1}."
+                "Counter target spell\$ unless its controller pays {1}."
             );
         }
 

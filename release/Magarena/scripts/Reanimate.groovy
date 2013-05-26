@@ -7,7 +7,7 @@
                 MagicTargetChoice.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS,
                 new MagicGraveyardTargetPicker(false), // no mana cost but payed with life
                 this,
-                "Put target creature card$ from a graveyard onto the battlefield under your control. " +
+                "Put target creature card\$ from a graveyard onto the battlefield under your control. " +
                 "PN loses life equal to its converted mana cost."
             );
         }

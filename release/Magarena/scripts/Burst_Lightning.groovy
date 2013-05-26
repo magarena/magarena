@@ -11,8 +11,8 @@
                 ),
                 new MagicDamageTargetPicker(2),
                 this,
-                "SN deals 2 damage to target creature or player$. "+
-                "If SN was kicked$, it deals 4 damage to that creature or player instead."
+                "SN deals 2 damage to target creature or player\$. "+
+                "If SN was kicked\$, it deals 4 damage to that creature or player instead."
             );
         }
         @Override
