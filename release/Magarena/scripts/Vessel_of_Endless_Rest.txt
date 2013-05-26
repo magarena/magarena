@@ -7,4 +7,4 @@ type=Artifact
 cost={3}
 ability=tap add mana any
 timing=artifact
-requires_card_code
+requires_groovy_code
