@@ -1,19 +1,5 @@
-package magic.card;
-
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicDealDamageAction;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicTargetFilter;
-import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
-
-import java.util.Collection;
-
-
-public class Balefire_Dragon {
-    public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
+[
+    new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final int amount = damage.getDealtAmount();
@@ -22,17 +8,16 @@ public class Balefire_Dragon {
                     damage.getTarget().isPlayer() &&
                     damage.isCombat()) ?
                 new MagicEvent(
-                        permanent,
-                        damage.getTargetPlayer(),
-                        amount,
-                        this,
-                        "SN deals " + amount + " damage to each creature defending player controls."):
+                    permanent,
+                    damage.getTargetPlayer(),
+                    amount,
+                    this,
+                    "SN deals RN damage to each creature defending player controls."
+                ):
                 MagicEvent.NONE;
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> creatures=
                     game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicPermanent creature : creatures) {
@@ -44,5 +29,5 @@ public class Balefire_Dragon {
                 game.doAction(new MagicDealDamageAction(damage));
             }
         }        
-    };
-}
+    }
+]
