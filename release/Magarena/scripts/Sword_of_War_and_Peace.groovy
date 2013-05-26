@@ -1,18 +1,5 @@
-package magic.card;
-
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicChangeLifeAction;
-import magic.model.action.MagicDealDamageAction;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicTarget;
-import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
-
-
-public class Sword_of_War_and_Peace {
-    public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
+[
+    new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicTarget targetPlayer=damage.getTarget();
@@ -21,14 +8,13 @@ public class Sword_of_War_and_Peace {
                     permanent,
                     targetPlayer,
                     this,
-                    "SN deals damage to " + targetPlayer + " equal to the number of cards in his or her hand and " +
-                    "PN gains 1 life for each card in his or her hand."):
+                    "SN deals damage to RN equal to the number of cards in his or her hand and " +
+                    "PN gains 1 life for each card in his or her hand."
+                ):
                 MagicEvent.NONE;
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer targetPlayer=event.getRefPlayer();
             final int amount1=targetPlayer.getHandSize();
             if (amount1>0) {
@@ -41,5 +27,5 @@ public class Sword_of_War_and_Peace {
                 game.doAction(new MagicChangeLifeAction(player,amount2));
             }
         }
-    };
-}
+    }
+]
