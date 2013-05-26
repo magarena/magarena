@@ -6,4 +6,4 @@ rarity=M
 type=Sorcery
 cost={7}{W}
 timing=draw
-requires_card_code
+requires_groovy_code

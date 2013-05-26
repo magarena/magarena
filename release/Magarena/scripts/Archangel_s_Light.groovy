@@ -1,24 +1,7 @@
-package magic.card;
-
-import magic.model.MagicCard;
-import magic.model.MagicCardList;
-import magic.model.MagicGame;
-import magic.model.MagicLocationType;
-import magic.model.MagicPayedCost;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicChangeLifeAction;
-import magic.model.action.MagicMoveCardAction;
-import magic.model.action.MagicRemoveCardAction;
-import magic.model.event.MagicEvent;
-import magic.model.event.MagicSpellCardEvent;
-import magic.model.stack.MagicCardOnStack;
-
-public class Archangel_s_Light {
-    public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+[
+    new MagicSpellCardEvent() {
         @Override
-        public MagicEvent getEvent(
-                final MagicCardOnStack cardOnStack,
-                final MagicPayedCost payedCost) {
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
                 this,
@@ -28,9 +11,7 @@ public class Archangel_s_Light {
             );
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
             game.doAction(new MagicChangeLifeAction(player,2 * graveyard.size()));
@@ -46,5 +27,5 @@ public class Archangel_s_Light {
                 ));
             }
         }
-    };
-}
+    }
+]
