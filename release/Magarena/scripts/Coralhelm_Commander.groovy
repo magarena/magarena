@@ -1,32 +1,20 @@
-package magic.card;
-
-import magic.model.MagicAbility;
-import magic.model.MagicCounterType;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPowerToughness;
-import magic.model.mstatic.MagicLayer;
-import magic.model.mstatic.MagicStatic;
-import magic.model.target.MagicTargetFilter;
-
-import java.util.Set;
-
-public class Coralhelm_Commander {
-    public static final MagicStatic S = new MagicStatic(
-            MagicLayer.ModPT, 
-            MagicTargetFilter.TARGET_MERFOLK_YOU_CONTROL) {
+[
+    new MagicStatic(
+        MagicLayer.ModPT, 
+        MagicTargetFilter.TARGET_MERFOLK_YOU_CONTROL
+    ) {
 
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
             pt.add(1,1);
         }
+
         @Override
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
             return source.getCounters(MagicCounterType.Charge) >= 4 && source != target;
         }
-    };
-        
-    public static final MagicStatic S1 = new MagicStatic(MagicLayer.SetPT) {
+    },
+    new MagicStatic(MagicLayer.SetPT) {
         @Override
         public void modPowerToughness(
                 final MagicPermanent source,
@@ -39,9 +27,8 @@ public class Coralhelm_Commander {
                 pt.set(3,3);
             }
         }
-    };
-
-    public static final MagicStatic S2 = new MagicStatic(MagicLayer.Ability) {
+    },
+    new MagicStatic(MagicLayer.Ability) {
         @Override
         public void modAbilityFlags(
                 final MagicPermanent source,
@@ -52,5 +39,5 @@ public class Coralhelm_Commander {
                 flags.add(MagicAbility.Flying);
             }
         }
-    };
-}
+    }
+]
