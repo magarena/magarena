@@ -1,19 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicLocationType;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeTurnPTAction;
-import magic.model.action.MagicPermanentAction;
-import magic.model.choice.MagicMayChoice;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicWeakenTargetPicker;
-import magic.model.trigger.MagicGraveyardTriggerData;
-import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
-
-public class Undead_Executioner {
-    public static final MagicWhenPutIntoGraveyardTrigger T = new MagicWhenPutIntoGraveyardTrigger() {
+[
+    new MagicWhenPutIntoGraveyardTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -27,15 +13,13 @@ public class Undead_Executioner {
                     ),
                     new MagicWeakenTargetPicker(2,2),
                     this,
-                    "PN may$ have target creature$ get -2/-2 until end of turn."
+                    "PN may\$ have target creature\$ get -2/-2 until end of turn."
                 ) :
                 MagicEvent.NONE;
         }
         
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
@@ -44,5 +28,5 @@ public class Undead_Executioner {
                 });
             }
         }
-    };
-}
+    }
+]
