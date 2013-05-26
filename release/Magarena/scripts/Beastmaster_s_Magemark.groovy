@@ -1,17 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPowerToughness;
-import magic.model.action.MagicChangeTurnPTAction;
-import magic.model.event.MagicEvent;
-import magic.model.mstatic.MagicLayer;
-import magic.model.mstatic.MagicStatic;
-import magic.model.target.MagicTargetFilter;
-import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
-
-public class Beastmaster_s_Magemark {
-    public static final MagicStatic S = new MagicStatic(
+[
+    new MagicStatic(
         MagicLayer.ModPT, 
         MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL) {
         @Override
@@ -22,9 +10,8 @@ public class Beastmaster_s_Magemark {
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
             return target.isEnchanted();
         }
-    };
-    
-    public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
+    },
+    new MagicWhenBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocked) {
             return (blocked.isFriend(permanent) && blocked.isEnchanted()) ?
@@ -32,15 +19,13 @@ public class Beastmaster_s_Magemark {
                     permanent,
                     blocked,
                     this,
-                    blocked + " gets +1/+1 until end of turn for each creature blocking it."
+                    "RN gets +1/+1 until end of turn for each creature blocking it."
                 ):
                 MagicEvent.NONE;
         }
         
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent blocked = event.getRefPermanent();
             final int amount = blocked.getBlockingCreatures().size();
             game.doAction(new MagicChangeTurnPTAction(
@@ -49,5 +34,5 @@ public class Beastmaster_s_Magemark {
                 amount
             ));
         }
-    };
-}
+    }
+]
