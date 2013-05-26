@@ -1,19 +1,5 @@
-package magic.card;
-
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeExtraTurnsAction;
-import magic.model.action.MagicPermanentAction;
-import magic.model.action.MagicSacrificeAction;
-import magic.model.choice.MagicMayChoice;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicSacrificeTargetPicker;
-import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
-
-public class Wanderwine_Prophets {
-    public static final MagicWhenDamageIsDealtTrigger T3 = new MagicWhenDamageIsDealtTrigger() {
+[
+    new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             return (damage.getSource() == permanent &&
@@ -26,16 +12,14 @@ public class Wanderwine_Prophets {
                     ),
                     MagicSacrificeTargetPicker.create(),
                     this,
-                    "PN may$ sacrifice a Merfolk$. " +
+                    "PN may\$ sacrifice a Merfolk\$. " +
                     "If you do, take an extra turn after this one"
                 ):
                 MagicEvent.NONE;
         }
         
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
@@ -45,5 +29,5 @@ public class Wanderwine_Prophets {
                 });
             } 
         }
-    };
-}
+    }
+]
