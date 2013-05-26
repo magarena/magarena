@@ -1,17 +1,5 @@
-package magic.card;
-
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicDrawAction;
-import magic.model.choice.MagicSimpleMayChoice;
-import magic.model.event.MagicDiscardEvent;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
-
-public class Mask_of_Memory {
-    public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
+[
+    new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -34,18 +22,17 @@ public class Mask_of_Memory {
         }
 
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 final MagicPlayer player = event.getPlayer();
                 game.doAction(new MagicDrawAction(player, 2));
                 game.addEvent(new MagicDiscardEvent(
-                        event.getSource(),
-                        player,
-                        1,
-                        false));
+                    event.getSource(),
+                    player,
+                    1,
+                    false
+                ));
             }
         }
-    };
-}
+    }
+]
