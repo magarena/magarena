@@ -1,0 +1,29 @@
+[
+    new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            return new MagicEvent(
+                    cardOnStack,
+                    new MagicBuybackChoice(
+                        MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_SPELL,
+                        MagicManaCost.create("{3}")
+                    ),
+                    this,
+                    "Copy target instant or sorcery spell\$. " + 
+                    "You may choose new targets for the copy. " + 
+                    "If the buyback cost was payed\$, return SN to its owner's hand as it resolves.");
+        }
+
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            event.processTargetCardOnStack(game,new MagicCardOnStackAction() {
+                public void doAction(final MagicCardOnStack targetSpell) {
+                    game.doAction(new MagicCopyCardOnStackAction(event.getPlayer(),targetSpell));
+                    if (event.isBuyback()) {
+                        game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
+                    } 
+                }
+            });
+        }
+    }
+]
