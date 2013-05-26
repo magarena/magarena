@@ -8,4 +8,4 @@ subtype=Elf,Rogue,Ally
 cost={3}{G}
 pt=1/4
 timing=fmain
-requires_card_code
+requires_groovy_code
