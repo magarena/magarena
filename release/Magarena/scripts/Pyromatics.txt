@@ -8,4 +8,4 @@ type=Instant
 cost={1}{R}
 ability=replicate
 timing=removal
-requires_card_code
+requires_groovy_code
