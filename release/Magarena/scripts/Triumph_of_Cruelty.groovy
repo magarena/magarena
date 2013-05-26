@@ -9,7 +9,7 @@
                 new MagicEvent(
                     permanent,
                     this,
-                    upkeepPlayer.getOpponent() + " discards a card " +
+                    upkeepPlayer.getOpponent().toString() + " discards a card " +
                     "if you control the creature with the greatest " +
                     "power or tied for the greatest power."
                 ) :

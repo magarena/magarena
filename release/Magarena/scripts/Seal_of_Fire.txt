@@ -7,4 +7,4 @@ rarity=C
 type=Enchantment
 cost={R}
 timing=enchantment
-requires_card_code=Moonglove Extract
+requires_groovy_code=Moonglove Extract
