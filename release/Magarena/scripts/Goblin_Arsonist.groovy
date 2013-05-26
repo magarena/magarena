@@ -1,21 +1,5 @@
-package magic.card;
-
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicLocationType;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicDealDamageAction;
-import magic.model.action.MagicTargetAction;
-import magic.model.choice.MagicMayChoice;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicDamageTargetPicker;
-import magic.model.target.MagicTarget;
-import magic.model.trigger.MagicGraveyardTriggerData;
-import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
-
-public class Goblin_Arsonist {
-    public static final MagicWhenPutIntoGraveyardTrigger T = new MagicWhenPutIntoGraveyardTrigger() {
+[
+    new MagicWhenPutIntoGraveyardTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
             return (triggerData.fromLocation == MagicLocationType.Play) ?
@@ -26,7 +10,7 @@ public class Goblin_Arsonist {
                     ),
                     new MagicDamageTargetPicker(1),
                     this,
-                    "PN may$ have SN deal 1 damage to target creature or player$"
+                    "PN may\$ have SN deal 1 damage to target creature or player\$"
                 ) :
                 MagicEvent.NONE;
         }
@@ -42,5 +26,5 @@ public class Goblin_Arsonist {
                 });
             }
         }
-    };
-}
+    }
+]
