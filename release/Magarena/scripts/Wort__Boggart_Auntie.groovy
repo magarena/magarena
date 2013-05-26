@@ -1,22 +1,5 @@
-package magic.card;
-
-import magic.model.MagicCard;
-import magic.model.MagicGame;
-import magic.model.MagicLocationType;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicCardAction;
-import magic.model.action.MagicMoveCardAction;
-import magic.model.action.MagicRemoveCardAction;
-import magic.model.choice.MagicMayChoice;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicGraveyardTargetPicker;
-import magic.model.trigger.MagicAtUpkeepTrigger;
-
-
-public class Wort__Boggart_Auntie {
-    public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
+[
+    new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             return permanent.isController(upkeepPlayer) ?
@@ -27,15 +10,13 @@ public class Wort__Boggart_Auntie {
                     ),
                     new MagicGraveyardTargetPicker(false),
                     this,
-                    "PN may$ return target Goblin card$ from " +
+                    "PN may\$ return target Goblin card\$ from " +
                     "his or her graveyard to his or her hand."
                 ):
                 MagicEvent.NONE;
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetCard(game,new MagicCardAction() {
                     public void doAction(final MagicCard card) {
@@ -45,5 +26,5 @@ public class Wort__Boggart_Auntie {
                 });
             }
         }
-    };
-}
+    }
+]
