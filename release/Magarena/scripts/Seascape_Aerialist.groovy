@@ -1,19 +1,5 @@
-package magic.card;
-
-import magic.model.MagicAbility;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicSubType;
-import magic.model.action.MagicSetAbilityAction;
-import magic.model.choice.MagicSimpleMayChoice;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicTargetFilter;
-import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
-
-import java.util.Collection;
-
-public class Seascape_Aerialist {
-    public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
+[
+    new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
             return (otherPermanent.isFriend(permanent) &&
@@ -23,17 +9,17 @@ public class Seascape_Aerialist {
                     new MagicSimpleMayChoice(
                         MagicSimpleMayChoice.PUMP,
                         1,
-                        MagicSimpleMayChoice.DEFAULT_YES),
+                        MagicSimpleMayChoice.DEFAULT_YES
+                    ),
                     this,
-                    "PN may$ have Ally creatures he or she controls " + 
-                    "gain flying until end of turn.") :
+                    "PN may\$ have Ally creatures he or she controls " + 
+                    "gain flying until end of turn."
+                ) :
                 MagicEvent.NONE;
         }
         
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 final Collection<MagicPermanent> targets =
                         game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_ALLY_YOU_CONTROL);
@@ -42,5 +28,5 @@ public class Seascape_Aerialist {
                 }
             }            
         }        
-    };
-}
+    }
+]
