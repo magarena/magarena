@@ -7,4 +7,4 @@ type=Instant
 cost={X}{R}{R}
 timing=removal
 removal=2
-requires_card_code=Earthquake
+requires_groovy_code=Earthquake

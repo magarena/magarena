@@ -9,8 +9,8 @@
                     MagicManaCost.create("{2}{B}{B}")
                 ),
                 this,
-                "Target player$ discards a card. " +
-                "If the buyback cost was payed$, return SN to its owner's hand as it resolves."
+                "Target player\$ discards a card. " +
+                "If the buyback cost was payed\$, return SN to its owner's hand as it resolves."
             );
         }
 

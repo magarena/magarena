@@ -13,7 +13,7 @@
                     new MagicMayChoice(MagicTargetChoice.NEG_TARGET_PLAYER),
                     new MagicDamageTargetPicker(1),
                     this,
-                    "PN may$ have SN deal 1 damage to target player$."
+                    "PN may\$ have SN deal 1 damage to target player\$."
                 ) : 
                 MagicEvent.NONE;
         }

@@ -7,7 +7,7 @@
                 MagicTargetChoice.NEG_TARGET_ATTACKING_CREATURE,
                 MagicExileTargetPicker.create(), // could use a better TargetPicker
                 this,
-                "Put target creature$ on the bottom of its owner's library. " +
+                "Put target creature\$ on the bottom of its owner's library. " +
                 "Its controller gains life equal to its toughness."
             );
         }

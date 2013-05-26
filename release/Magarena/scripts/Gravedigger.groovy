@@ -9,7 +9,7 @@
                 ),
                 new MagicGraveyardTargetPicker(false),
                 this,
-                "PN may$ return target creature card$ from " +
+                "PN may\$ return target creature card\$ from " +
                 "his or her graveyard to his or her hand."
             );
         }

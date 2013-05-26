@@ -12,7 +12,7 @@
                     ),
                     new MagicDestroyTargetPicker(false),
                     this,
-                    "PN may$ destroy target artifact or enchantment$ an opponent controls."
+                    "PN may\$ destroy target artifact or enchantment\$ an opponent controls."
                 ):
                 MagicEvent.NONE;
         }

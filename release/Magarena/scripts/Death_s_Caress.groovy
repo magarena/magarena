@@ -7,7 +7,7 @@
                 MagicTargetChoice.NEG_TARGET_CREATURE,
                 new MagicDestroyTargetPicker(false),
                 this,
-                "Destroy target creature$. If that creature was " +
+                "Destroy target creature\$. If that creature was " +
                 "a Human, you gain life equal to its toughness."
             );
         }

@@ -7,7 +7,7 @@
                 MagicTargetChoice.POS_TARGET_CREATURE,
                 MagicPumpTargetPicker.create(),
                 this,
-                "Target creature$ gets +2/+2 until end of turn. " +
+                "Target creature\$ gets +2/+2 until end of turn. " +
                 "If it's paired with a creature, that creature " +
                 "also gets +2/+2 until end of turn."
             );

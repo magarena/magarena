@@ -15,7 +15,7 @@
                 MagicTargetChoice.NEG_TARGET_CREATURE_POWER_4_OR_MORE,
                 new MagicDestroyTargetPicker(true),
                 this,
-                "Destroy target creature$ with power 4 or greater."
+                "Destroy target creature\$ with power 4 or greater."
             );
         }
         @Override

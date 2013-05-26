@@ -16,7 +16,7 @@
                         MagicSimpleMayChoice.DEFAULT_NONE
                     ),
                     this,
-                    "You may$ draw two cards. If you do, discard a card."
+                    "You may\$ draw two cards. If you do, discard a card."
                 ) :
                 MagicEvent.NONE;
         }

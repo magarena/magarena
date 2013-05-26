@@ -10,7 +10,7 @@
                     permanent,
                     new MagicMayChoice(),
                     this,
-                    "PN may$ have SN deal its combat damage " +
+                    "PN may\$ have SN deal its combat damage " +
                     "to defending player as though it weren't blocked."
                 ):
                 MagicEvent.NONE;

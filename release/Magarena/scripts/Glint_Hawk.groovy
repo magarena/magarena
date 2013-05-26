@@ -9,7 +9,7 @@
                 ),
                 MagicBounceTargetPicker.getInstance(),
                 this,
-                "You may$ return an artifact you control to its owner's hand. " +
+                "You may\$ return an artifact you control to its owner's hand. " +
                 "If you don't, sacrifice SN."
             );
         }

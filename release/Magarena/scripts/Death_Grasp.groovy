@@ -8,7 +8,7 @@
                 MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                 new MagicDamageTargetPicker(amount),
                 this,
-                "SN deals " + amount + " damage to target creature or player$. " +
+                "SN deals " + amount + " damage to target creature or player\$. " +
                 "PN gains " + amount + " life."
             );
         }
