@@ -1,17 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.event.MagicDiscardEvent;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicTargetFilter;
-import magic.model.trigger.MagicAtUpkeepTrigger;
-
-import java.util.Collection;
-
-public class Triumph_of_Cruelty {
-    public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
+[
+    new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -23,13 +11,12 @@ public class Triumph_of_Cruelty {
                     this,
                     upkeepPlayer.getOpponent() + " discards a card " +
                     "if you control the creature with the greatest " +
-                    "power or tied for the greatest power.") :
+                    "power or tied for the greatest power."
+                ) :
                 MagicEvent.NONE;
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final Collection<MagicPermanent> targets = game.filterPermanents(
                     player,
@@ -49,5 +36,5 @@ public class Triumph_of_Cruelty {
                 ));
             }
         }        
-    };
-}
+    }
+]
