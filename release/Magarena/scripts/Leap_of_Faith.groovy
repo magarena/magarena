@@ -7,7 +7,7 @@
                 MagicTargetChoice.POS_TARGET_CREATURE,
                 MagicFlyingTargetPicker.create(),
                 this,
-                "Target creature\$ gains flying until end of turn. "
+                "Target creature\$ gains flying until end of turn. " +
                 "Prevent all damage that would be dealt to that creature this turn."
             );
         }
