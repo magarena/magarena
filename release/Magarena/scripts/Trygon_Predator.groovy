@@ -1,19 +1,5 @@
-package magic.card;
-
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicDestroyAction;
-import magic.model.action.MagicPermanentAction;
-import magic.model.choice.MagicMayChoice;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicDestroyTargetPicker;
-import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
-
-
-public class Trygon_Predator {
-    public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
+[
+    new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             return (damage.getSource() == permanent && 
@@ -26,15 +12,13 @@ public class Trygon_Predator {
                     ),
                     new MagicDestroyTargetPicker(false),
                     this,
-                    "PN may$ destroy target artifact or enchantment$ your opponent controls."
+                    "PN may$ destroy target artifact or enchantment$ an opponent controls."
                 ):
                 MagicEvent.NONE;
         }
         
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent permanent) {
@@ -43,5 +27,5 @@ public class Trygon_Predator {
                 });
             } 
         }
-    };
-}
+    }
+]
