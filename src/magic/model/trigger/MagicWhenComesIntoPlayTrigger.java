@@ -74,4 +74,15 @@ public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPl
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Golem3")));
         }        
     };
+    
+    public static final MagicWhenComesIntoPlayTrigger ChooseOpponent = new MagicWhenComesIntoPlayTrigger() {
+        @Override
+        public MagicEvent executeTrigger(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final MagicPlayer player) {
+            permanent.setChosenTarget(player.getOpponent());
+            return MagicEvent.NONE;
+        }
+    };
 }

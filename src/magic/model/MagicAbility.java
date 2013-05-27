@@ -516,6 +516,12 @@ public enum MagicAbility {
             card.add(MagicLeavesReturnExileTrigger.create());
         }
     },
+    EntersChooseOpponent("enters choose opponent", 0) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+            card.add(MagicWhenComesIntoPlayTrigger.ChooseOpponent);
+        }
+    },
     EntersTapped("enters tapped", -10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;

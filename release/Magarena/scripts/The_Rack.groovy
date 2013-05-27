@@ -27,6 +27,5 @@
                 game.doAction(new MagicDealDamageAction(damage));
             }
         }
-    },
-    Black_Vise.T2
+    }
 ]

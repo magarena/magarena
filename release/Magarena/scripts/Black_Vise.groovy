@@ -29,15 +29,5 @@
                 game.doAction(new MagicDealDamageAction(damage));
             }
         }
-    },
-    new MagicWhenComesIntoPlayTrigger() {
-        @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicPlayer player) {
-            permanent.setChosenTarget(player.getOpponent());
-            return MagicEvent.NONE;
-        }
     }
 ]

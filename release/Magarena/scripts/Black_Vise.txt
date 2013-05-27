@@ -6,4 +6,5 @@ rarity=U
 type=Artifact
 cost={1}
 timing=smain
+ability=enters choose opponent
 requires_groovy_code
