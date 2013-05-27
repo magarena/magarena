@@ -1,17 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeTurnPTAction;
-import magic.model.event.MagicEvent;
-import magic.model.stack.MagicItemOnStack;
-import magic.model.target.MagicTargetFilter;
-import magic.model.trigger.MagicWhenTargetedTrigger;
-
-import java.util.Collection;
-
-public class Wild_Defiance {
-    public static final MagicWhenTargetedTrigger T = new MagicWhenTargetedTrigger() {
+[
+    new MagicWhenTargetedTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -40,15 +28,14 @@ public class Wild_Defiance {
                     permanent.getController(),
                     targetedPerm,
                     this,
-                    targetedPerm + " gets +3/+3 until end of turn."):
+                    "RN gets +3/+3 until end of turn."
+                ):
                 MagicEvent.NONE;
         }
         
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicChangeTurnPTAction(event.getRefPermanent(),3,3));
         }
-    };
-}
+    }
+]
