@@ -12,13 +12,14 @@
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            final int amount = payedCost.getX();
             return new MagicEvent(
                 source,
                 MagicTargetChoice.TARGET_CREATURE,
                 new MagicWeakenTargetPicker(0,amount),
-                payedCost.getX(),
+                amount,
                 this,
-                "Target creature$ gets -0/-RN until end of turn and " + 
+                "Target creature\$ gets -0/-RN until end of turn and " + 
                 "SN gets +RN/+0 until end of turn."
             );
         }

@@ -8,4 +8,4 @@ subtype=Beast
 cost={2}{R}
 pt=2/2
 timing=main
-requires_card_code=Laccolith Whelp
+requires_groovy_code=Laccolith Whelp
