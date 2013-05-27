@@ -9,4 +9,4 @@ cost={B}{B}
 pt=2/1
 ability=first strike
 timing=fmain
-requires_card_code
+requires_groovy_code
