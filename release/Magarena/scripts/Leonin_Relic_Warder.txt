@@ -9,4 +9,4 @@ cost={W}{W}
 pt=2/2
 ability=leaves return exile
 timing=main
-requires_card_code
+requires_groovy_code
