@@ -8,4 +8,4 @@ subtype=Human
 cost={1}{W}{W}
 pt=2/2
 timing=main
-requires_card_code
+requires_groovy_code
