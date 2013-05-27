@@ -9,4 +9,4 @@ cost={6}
 pt=1/1
 ability=enters with +1/+1 3
 timing=main
-requires_card_code
+requires_groovy_code
