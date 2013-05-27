@@ -1,20 +1,5 @@
-package magic.card;
-
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPermanentState;
-import magic.model.action.MagicChangeStateAction;
-import magic.model.action.MagicDealDamageAction;
-import magic.model.action.MagicPermanentAction;
-import magic.model.choice.MagicMayChoice;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicDamageTargetPicker;
-import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
-
-public class Laccolith_Whelp {
-    public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
+[
+    new MagicWhenBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             return (creature == permanent) ?
@@ -23,15 +8,14 @@ public class Laccolith_Whelp {
                     new MagicMayChoice(MagicTargetChoice.NEG_TARGET_CREATURE),
                     new MagicDamageTargetPicker(permanent.getPower()),
                     this,
-                    "PN may$ have SN deal damage equal to its power to target creature$."
+                    "PN may\$ have SN deal damage equal to its power to target creature\$. " +
+                    "If you do, SN assigns no combat damage this turn."
                 ):
                 MagicEvent.NONE;
         }
         
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
@@ -43,11 +27,13 @@ public class Laccolith_Whelp {
                         );
                         game.doAction(new MagicDealDamageAction(damage));
                         game.doAction(new MagicChangeStateAction(
-                                permanent,
-                                MagicPermanentState.NoCombatDamage,true));
+                            permanent,
+                            MagicPermanentState.NoCombatDamage,
+                            true
+                        ));
                     }
                 });
             };
         }
-    };
-}
+    }
+]
