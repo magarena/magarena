@@ -7,4 +7,4 @@ type=Artifact
 cost={3}
 ability=enters with charge 2
 timing=artifact
-requires_card_code
+requires_groovy_code
