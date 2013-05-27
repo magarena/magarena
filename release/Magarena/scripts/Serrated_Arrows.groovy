@@ -14,9 +14,8 @@
                 new MagicRemoveCounterEvent(source,MagicCounterType.Charge,1)
             ];
         }
-    };
-
-    public static final MagicAtUpkeepTrigger T2 = new MagicAtUpkeepTrigger() {
+    },
+    new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
