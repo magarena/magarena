@@ -435,7 +435,13 @@ find_nulls: $(MAG)
 	flip -u $@
 
 # meta check
-checks: check_aura check_requires_card_code check_requires_groovy_code check_script_name check_unique_key
+checks: \
+	check_aura \
+	check_requires_card_code \
+	check_requires_groovy_code \
+	check_script_name \
+	check_unique_key \
+	check_groovy_escape
 
 # every aura must have an enchant property
 check_aura:
@@ -456,6 +462,12 @@ check_requires_groovy_code:
 	diff \
 	<(ls -1 release/Magarena/scripts/*.groovy | cut -d'/' -f 4 | sed 's/.groovy//' | sort) \
 	<(grep requires_groovy_code -r release/Magarena/scripts/ | sed 's/.*=//' | sed 's/,\([^ ]\)/\n\1/' | sed 's/.*scripts\///;s/.txt.*//' | sed 's/[^A-Za-z0-9]/_/g' | sort | uniq)
+
+# $ must be escaped as \$ in groovy script
+check_groovy_escape:
+	diff \
+	/dev/null \
+	<(grep '[^\\]\$$' -r release/Magarena/scripts)
 
 # script name is canonical card name
 check_script_name:
