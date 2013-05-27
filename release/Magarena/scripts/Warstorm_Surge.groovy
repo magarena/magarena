@@ -9,7 +9,7 @@
                     new MagicDamageTargetPicker(otherPermanent.getPower()),
                     otherPermanent,
                     this,
-                    "RN deals damage equal to its power to target creature or player$."
+                    "RN deals damage equal to its power to target creature or player\$."
                 ) :
                 MagicEvent.NONE;
         }
