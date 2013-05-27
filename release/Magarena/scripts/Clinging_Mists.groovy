@@ -1,38 +1,17 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPayedCost;
-import magic.model.MagicPermanent;
-import magic.model.MagicPermanentState;
-import magic.model.MagicPlayer;
-import magic.model.MagicPlayerState;
-import magic.model.action.MagicChangePlayerStateAction;
-import magic.model.action.MagicChangeStateAction;
-import magic.model.action.MagicTapAction;
-import magic.model.condition.MagicCondition;
-import magic.model.event.MagicEvent;
-import magic.model.event.MagicSpellCardEvent;
-import magic.model.stack.MagicCardOnStack;
-import magic.model.target.MagicTargetFilter;
-
-import java.util.Collection;
-
-public class Clinging_Mists {
-    public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
+[
+    new MagicSpellCardEvent() {
         @Override
-        public MagicEvent getEvent(
-                final MagicCardOnStack cardOnStack,
-                final MagicPayedCost payedCost) {
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "Prevent all combat damage that would be dealt this turn."
+                "Prevent all combat damage that would be dealt this turn. " +
+                "If you have 5 or less life, tap all attacking creatures. Those creatures don't untap during their controller's next untap step."
             );
         }
+
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicChangePlayerStateAction(
                 player,
@@ -55,5 +34,5 @@ public class Clinging_Mists {
                 }
             }
         }
-    };
-}
+    }
+]
