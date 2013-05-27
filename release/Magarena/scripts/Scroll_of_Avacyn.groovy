@@ -9,7 +9,7 @@
             return [
                 new MagicPayManaCostEvent(source,"{1}"),
                 new MagicSacrificeEvent(source)
-            };
+            ];
         }
 
         @Override
