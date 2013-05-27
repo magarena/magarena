@@ -1,0 +1,37 @@
+[
+    new MagicPermanentActivation(
+        [MagicConditionFactory.ManaCost("{X}{B}{B}")],
+        new MagicActivationHints(MagicTiming.Removal),
+        "Pump"
+    ) {
+
+        @Override
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
+            return [new MagicPayManaCostEvent(source,"{X}{B}{B}")];
+        }
+
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
+                source,
+                MagicTargetChoice.TARGET_CREATURE,
+                new MagicWeakenTargetPicker(0,amount),
+                payedCost.getX(),
+                this,
+                "Target creature$ gets -0/-RN until end of turn and " + 
+                "SN gets +RN/+0 until end of turn."
+            );
+        }
+
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            final int amount=event.getRefInt();
+            event.processTargetPermanent(game,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    game.doAction(new MagicChangeTurnPTAction(creature,0,-amount));
+                    game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),amount,0));
+                }
+            });
+        }
+    }
+]
