@@ -1,31 +1,13 @@
-package magic.card;
-
-import magic.model.MagicCard;
-import magic.model.MagicGame;
-import magic.model.MagicPayedCost;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicPermanentAction;
-import magic.model.action.MagicPlayCardAction;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.condition.MagicCondition;
-import magic.model.event.MagicActivationHints;
-import magic.model.event.MagicEvent;
-import magic.model.event.MagicPermanentActivation;
-import magic.model.event.MagicTapEvent;
-import magic.model.event.MagicTiming;
-import magic.model.target.MagicCopyTargetPicker;
-
-public class Kiki_Jiki__Mirror_Breaker {
-    public static final MagicPermanentActivation A = new MagicPermanentActivation(
-        new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
+[
+    new MagicPermanentActivation(
+        [MagicCondition.CAN_TAP_CONDITION],
         new MagicActivationHints(MagicTiming.Token),
         "Copy"
     ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicTapEvent(source)};
+            return [new MagicTapEvent(source)];
         }
 
         @Override
@@ -35,7 +17,7 @@ public class Kiki_Jiki__Mirror_Breaker {
                 MagicTargetChoice.TARGET_NON_LEGENDARY_CREATURE_YOU_CONTROL,
                 MagicCopyTargetPicker.create(),
                 this,
-                "Put a token that's a copy of target nonlegendary creature$ you control onto the battlefield. "+
+                "Put a token that's a copy of target nonlegendary creature\$ you control onto the battlefield. "+
                 "That token has haste. Sacrifice it at end of turn."
             );
         }
@@ -50,5 +32,5 @@ public class Kiki_Jiki__Mirror_Breaker {
                 }
             });
         }
-    };
-}
+    }
+]
