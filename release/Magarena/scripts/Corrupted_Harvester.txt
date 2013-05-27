@@ -8,4 +8,4 @@ subtype=Horror
 cost={4}{B}{B}
 pt=6/3
 timing=main
-requires_card_code
+requires_groovy_code
