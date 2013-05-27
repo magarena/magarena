@@ -1,31 +1,13 @@
-package magic.card;
-
-import magic.model.MagicCounterType;
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicPayedCost;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicDealDamageAction;
-import magic.model.action.MagicTargetAction;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.condition.MagicCondition;
-import magic.model.event.MagicActivationHints;
-import magic.model.event.MagicEvent;
-import magic.model.event.MagicPermanentActivation;
-import magic.model.event.MagicTapEvent;
-import magic.model.event.MagicTiming;
-import magic.model.target.MagicDamageTargetPicker;
-import magic.model.target.MagicTarget;
-
-public class Kjeldoran_Javelineer {
-    public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,},
-            new MagicActivationHints(MagicTiming.Removal),
-            "Damage") {
+[
+    new MagicPermanentActivation(
+        [MagicCondition.CAN_TAP_CONDITION],
+        new MagicActivationHints(MagicTiming.Removal),
+        "Damage"
+    ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicTapEvent(source)};
+            return [new MagicTapEvent(source)];
         }
 
         @Override
@@ -37,7 +19,7 @@ public class Kjeldoran_Javelineer {
                 new MagicDamageTargetPicker(amount),
                 amount,
                 this,
-                "SN deals " + amount + " damage to target creature$."
+                "SN deals RN damage to target creature\$."
             );
         }
 
@@ -54,5 +36,5 @@ public class Kjeldoran_Javelineer {
                 }
             });
         }
-    };
-}
+    }
+]
