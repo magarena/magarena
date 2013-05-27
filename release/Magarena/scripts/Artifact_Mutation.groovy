@@ -20,7 +20,7 @@
                     game.doAction(new MagicPlayTokensAction(
                         event.getPlayer(),
                         TokenCardDefinitions.get("Saproling"),
-                        permanent.getConvertedCost();
+                        permanent.getConvertedCost()
                     ));
                 }
             });
