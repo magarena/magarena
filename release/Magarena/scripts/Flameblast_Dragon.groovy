@@ -1,23 +1,5 @@
-package magic.card;
-
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicManaCost;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicDealDamageAction;
-import magic.model.action.MagicTargetAction;
-import magic.model.choice.MagicMayChoice;
-import magic.model.choice.MagicPayManaCostChoice;
-import magic.model.choice.MagicPayManaCostResult;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicDamageTargetPicker;
-import magic.model.target.MagicTarget;
-import magic.model.trigger.MagicWhenAttacksTrigger;
-
-
-public class Flameblast_Dragon {
-    public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
+[
+    new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             return (permanent==creature) ?
@@ -31,8 +13,8 @@ public class Flameblast_Dragon {
                         permanent.getController().getMaximumX(game,MagicManaCost.create("{X}{R}"))
                     ),
                     this,
-                    "You may pay$ {X}{R}$. If you do, SN " + 
-                    "deals X damage to target creature or player$."
+                    "You may pay\$ {X}{R}\$. If you do, SN " + 
+                    "deals X damage to target creature or player\$."
                 ):
                 MagicEvent.NONE;
         }
@@ -49,5 +31,5 @@ public class Flameblast_Dragon {
                 });
             }
         }
-    };
-}
+    }
+]
