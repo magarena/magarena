@@ -7,4 +7,4 @@ type=Artifact
 cost={5}
 ability=indestructible
 timing=main
-requires_card_code
+requires_groovy_code
