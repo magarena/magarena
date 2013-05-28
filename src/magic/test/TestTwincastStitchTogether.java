@@ -29,7 +29,8 @@ class TestTwinCastStitchTogether extends TestGameBuilder {
         addToLibrary(P, "Plains", 10);
         createPermanent(game,P,"Rupture Spire",false,8);
         addToHand(P, "Twincast", 1);
-        addToGraveyard(P, "Grizzly Bears", 1);
+        addToHand(P, "Aven Squire", 1);
+        addToGraveyard(P, "Aven Squire", 1);
 
         P = opponent;
         
@@ -37,7 +38,8 @@ class TestTwinCastStitchTogether extends TestGameBuilder {
         addToLibrary(P, "Plains", 10);
         createPermanent(game,P,"Rupture Spire",false,8);
         addToHand(P, "Stitch Together", 1);
-        addToGraveyard(P, "Grizzly Bears", 1);
+        addToHand(P, "Electrickery", 1);
+        addToGraveyard(P, "Aven Squire", 1);
         
         return game;
     }

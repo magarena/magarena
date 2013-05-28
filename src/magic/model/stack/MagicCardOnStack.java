@@ -23,42 +23,38 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
 
     private MagicLocationType moveLocation=MagicLocationType.Graveyard;
     private final int x;
+    private final MagicCardEvent cardEvent;
     
-    public MagicCardOnStack(final MagicCard card,final MagicPlayer controller,final MagicCardEvent cardEvent, final MagicPayedCost payedCost) {
-        super(card, controller, cardEvent, payedCost);
-        x=payedCost.getX();
+    public MagicCardOnStack(final MagicCard card,final MagicPlayer controller,final MagicCardEvent aCardEvent, final MagicPayedCost payedCost) {
+        super(card, controller, aCardEvent, payedCost);
+        x = payedCost.getX();
+        cardEvent = aCardEvent;
     }
     
-    public MagicCardOnStack(final MagicCard card,final MagicCardEvent cardEvent, final MagicPayedCost payedCost) {
-        super(card, card.getController(), cardEvent, payedCost);
-        x=payedCost.getX();
+    public MagicCardOnStack(final MagicCard card,final MagicCardEvent aCardEvent, final MagicPayedCost payedCost) {
+        this(card, card.getController(), aCardEvent, payedCost);
     }
     
-    public MagicCardOnStack(final MagicCard card,final MagicPlayer controller,final MagicEvent event, final MagicPayedCost payedCost) {
-        super(card, controller, event);
-        x=payedCost.getX();
-    }
-   
     public MagicCardOnStack(final MagicCard card,final MagicPlayer controller,final MagicPayedCost payedCost) {
-        super(card, controller, card.getCardDefinition().getCardEvent(), payedCost);
-        x=payedCost.getX();
+        this(card, controller, card.getCardDefinition().getCardEvent(), payedCost);
     }
 
     public MagicCardOnStack(final MagicCard card,final MagicPayedCost payedCost) {
-        this(card,card.getController(),payedCost);
+        this(card, card.getController(), card.getCardDefinition().getCardEvent(), payedCost);
     }
     
     private MagicCardOnStack(final MagicCopyMap copyMap, final MagicCardOnStack cardOnStack) {
         super(copyMap, cardOnStack);
         moveLocation = cardOnStack.moveLocation;
         x = cardOnStack.x;
+        cardEvent = cardOnStack.cardEvent;
     }
     
     public MagicCardOnStack copyCardOnStack(final MagicPlayer player) {
         final MagicPayedCost cost=new MagicPayedCost();
         cost.setX(x);
         final MagicCard card=MagicCard.createTokenCard(getCardDefinition(),player);
-        final MagicCardOnStack copyCardOnStack=new MagicCardOnStack(card,player,cost);
+        final MagicCardOnStack copyCardOnStack=new MagicCardOnStack(card,cardEvent,cost);
         final Object[] choiceResults=getChoiceResults();
         if (choiceResults!=null) {
             copyCardOnStack.setChoiceResults(Arrays.copyOf(choiceResults,choiceResults.length));
