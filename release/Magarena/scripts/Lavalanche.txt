@@ -7,4 +7,4 @@ type=Sorcery
 cost={X}{B}{R}{G}
 timing=removal
 removal=2
-requires_card_code=Bonfire of the Damned
+requires_groovy_code=Bonfire of the Damned

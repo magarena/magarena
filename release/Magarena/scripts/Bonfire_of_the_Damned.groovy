@@ -9,7 +9,7 @@
                 new MagicDamageTargetPicker(amount),
                 this,
                 "SN deals " + amount +
-                " damage to target player$ and each creature he or she controls."
+                " damage to target player\$ and each creature he or she controls."
             );
         }
         @Override
