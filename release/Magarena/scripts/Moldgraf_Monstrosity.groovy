@@ -1,23 +1,5 @@
-package magic.card;
-
-import magic.model.MagicCard;
-import magic.model.MagicGame;
-import magic.model.MagicLocationType;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicMoveCardAction;
-import magic.model.action.MagicPlayCardAction;
-import magic.model.action.MagicReanimateAction;
-import magic.model.action.MagicRemoveCardAction;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicTargetFilter;
-import magic.model.trigger.MagicGraveyardTriggerData;
-import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
-
-import java.util.List;
-
-public class Moldgraf_Monstrosity {
-    public static final MagicWhenPutIntoGraveyardTrigger T = new MagicWhenPutIntoGraveyardTrigger() {
+[
+    new MagicWhenPutIntoGraveyardTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
             return (triggerData.fromLocation == MagicLocationType.Play) ?
@@ -25,13 +7,12 @@ public class Moldgraf_Monstrosity {
                     permanent,
                     this,
                     "Exile SN, then return two creature " +
-                    "cards at random from your graveyard to the battlefield."):
+                    "cards at random from your graveyard to the battlefield."
+                ):
                 MagicEvent.NONE;
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
             game.doAction(new MagicRemoveCardAction(permanent.getCard(),MagicLocationType.Graveyard));
             game.doAction(new MagicMoveCardAction(permanent.getCard(),MagicLocationType.Graveyard,MagicLocationType.Exile));
@@ -43,7 +24,7 @@ public class Moldgraf_Monstrosity {
                 final int index = rng.nextInt(targets.size());
                 final MagicCard card = targets.get(index);
                 game.doAction(new MagicReanimateAction(player,card,MagicPlayCardAction.NONE));
-            }        
+            }
         }
-    };
-}
+    }
+]
