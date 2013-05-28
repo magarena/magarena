@@ -1,18 +1,5 @@
-package magic.card;
-
-import magic.model.MagicCounterType;
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.action.MagicChangeCountersAction;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicTargetFilter;
-import magic.model.trigger.MagicIfDamageWouldBeDealtTrigger;
-import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
-
-public class Unbreathing_Horde {
-    public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
+[
+    new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             final MagicTargetFilter<MagicPermanent> targetFilter = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
@@ -27,9 +14,8 @@ public class Unbreathing_Horde {
             ));
             return MagicEvent.NONE;
         }
-    };
-    
-    public static final MagicIfDamageWouldBeDealtTrigger T1 = new MagicIfDamageWouldBeDealtTrigger(4) {
+    },
+    new MagicIfDamageWouldBeDealtTrigger(4) {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -51,9 +37,7 @@ public class Unbreathing_Horde {
             return MagicEvent.NONE;
         }    
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicChangeCountersAction(
                 event.getPermanent(),
                 MagicCounterType.PlusOne,
@@ -61,5 +45,5 @@ public class Unbreathing_Horde {
                 true
             ));
         }
-    };
-}
+    }
+]
