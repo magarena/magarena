@@ -7,10 +7,10 @@
                 new MagicBuybackChoice(MagicManaCost.create("{2}")),
                 new MagicGraveyardTargetPicker(true),
                 this,
-                "Return the top creature card$ of your graveyard to the battlefield. " +
+                "Return the top creature card\$ of your graveyard to the battlefield. " +
                 "That creature gains haste until end of turn. " + 
                 "Exile it at the beginning of the next end step. " + 
-                "If the buyback cost was payed$, return SN to its owner's hand as it resolves."
+                "If the buyback cost was payed\$, return SN to its owner's hand as it resolves."
             );
         }
 
