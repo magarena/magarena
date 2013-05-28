@@ -26,7 +26,7 @@
             game.doAction(new MagicAddStaticAction(permanent, 
                 new MagicStatic(MagicLayer.SwitchPT,MagicStatic.UntilEOT) {
                 @Override
-                public int getColorFlags(final MagicPermanent permanent, final int flags) {
+                public int getColorFlags(final MagicPermanent perm, final int flags) {
                     return event.getChosenColor().getMask();
                 }   
             }));
