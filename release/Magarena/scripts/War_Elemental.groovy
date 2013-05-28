@@ -1,19 +1,5 @@
-package magic.card;
-
-import magic.model.MagicCounterType;
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.MagicPlayerState;
-import magic.model.action.MagicChangeCountersAction;
-import magic.model.action.MagicSacrificeAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
-import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
-
-public class War_Elemental {
-    public static final MagicWhenComesIntoPlayTrigger T1 = new MagicWhenComesIntoPlayTrigger() {
+[
+    new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -24,18 +10,16 @@ public class War_Elemental {
                 new MagicEvent(
                     permanent,
                     this,
-                    "Sacrifice SN."):
+                    "Sacrifice SN."
+                ):
                 MagicEvent.NONE;
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicSacrificeAction(event.getPermanent()));
         }
-    };
-    
-    public static final MagicWhenDamageIsDealtTrigger T2 = new MagicWhenDamageIsDealtTrigger() {
+    },
+    new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -49,18 +33,18 @@ public class War_Elemental {
                     permanent,
                     amount,
                     this,
-                    "PN puts " + amount + " +1/+1 counters on SN."):
+                    "PN puts RN +1/+1 counters on SN."
+                ):
                 MagicEvent.NONE;
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicChangeCountersAction(
-                    event.getPermanent(),
-                    MagicCounterType.PlusOne,
-                    event.getRefInt(),
-                    true));
+                event.getPermanent(),
+                MagicCounterType.PlusOne,
+                event.getRefInt(),
+                true
+            ));
         }
-    };
-}
+    }
+]
