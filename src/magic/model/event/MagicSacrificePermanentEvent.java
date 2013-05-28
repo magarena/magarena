@@ -10,6 +10,12 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.target.MagicSacrificeTargetPicker;
 
 public class MagicSacrificePermanentEvent extends MagicEvent {
+    
+    public MagicSacrificePermanentEvent(
+            final MagicSource source,
+            final MagicTargetChoice targetChoice) {
+        this(source, source.getController(), targetChoice);
+    }
 
     public MagicSacrificePermanentEvent(
             final MagicSource source,
