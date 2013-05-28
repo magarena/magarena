@@ -7,4 +7,4 @@ type=Artifact
 cost={5}
 static=player
 timing=fmain
-requires_card_code
+requires_groovy_code
