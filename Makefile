@@ -187,7 +187,10 @@ ai1 ?= MMABFast
 ai2 ?= MMABFast
 %.t: $(MAG)
 	echo `hg id -n` > $*.log
-	$(RUN) -Dmagarena.dir=`pwd`/release magic.DeckStrCal \
+	$(RUN) \
+	-Dmagarena.dir=`pwd`/release \
+	-Ddebug=true \
+	magic.DeckStrCal \
 	--seed $* \
 	--ai1 ${ai1} --str1 ${str1} \
 	--ai2 ${ai2} --str2 ${str2} \
