@@ -1,0 +1,37 @@
+[
+    new MagicPermanentActivation(
+        [MagicConditionFactory.ManaCost("{2}{R}")],
+        new MagicActivationHints(MagicTiming.Pump),
+        "Pump"
+    ) {
+        @Override
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
+            return [
+                new MagicPayManaCostEvent(source,"{2}{R}")
+            ];
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
+            return new MagicEvent(
+                source,
+                MagicTargetChoice.NEG_TARGET_CREATURE,
+                new MagicDamageTargetPicker(amount),
+                this,
+                "SN deals damage to target creature\$ equals to the number of +1/+1 counters on SN."
+            );
+        }
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            event.processTargetPermanent(game,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    final MagicDamage damage = new MagicDamage(
+                        event.getSource(),
+                        creature,
+                        event.getPermanent().getCounters(MagicCounterType.PlusOne);
+                    );
+                    game.doAction(new MagicDealDamageAction(damage));
+                }
+            });
+        }
+    }
+]
