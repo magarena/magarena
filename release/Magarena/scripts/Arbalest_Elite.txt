@@ -8,4 +8,4 @@ subtype=Human,Archer
 cost={2}{W}{W}
 pt=2/3
 timing=main
-requires_card_code
+requires_groovy_code
