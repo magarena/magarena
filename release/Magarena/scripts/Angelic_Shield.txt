@@ -8,4 +8,4 @@ type=Enchantment
 cost={W}{U}
 static=player
 timing=enchantment
-requires_card_code
+requires_groovy_code
