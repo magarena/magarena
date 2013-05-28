@@ -34,7 +34,7 @@ def MAY_LOSE_ONE_LIFE = new MagicEventAction() {
                         MagicSimpleMayChoice.DEFAULT_YES
                     ), 
                     MAY_GAIN_ONE_LIFE,
-                    "PN may$ gain 1 life."
+                    "PN may\$ gain 1 life."
                 ):
                 new MagicEvent(
                     permanent,
@@ -44,7 +44,7 @@ def MAY_LOSE_ONE_LIFE = new MagicEventAction() {
                         MagicSimpleMayChoice.DEFAULT_YES
                     ),
                     MAY_LOSE_ONE_LIFE,
-                    "PN may$ have " + other.getController() + " lose 1 life."
+                    "PN may\$ have " + other.getController() + " lose 1 life."
                 );
         }
     }

@@ -1,6 +1,6 @@
 [
     new MagicPermanentActivation(
-        new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
+        [MagicCondition.CAN_TAP_CONDITION],
         new MagicActivationHints(MagicTiming.Main),
         "Life"
     ) {
