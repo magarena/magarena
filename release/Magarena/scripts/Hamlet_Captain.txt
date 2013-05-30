@@ -8,4 +8,4 @@ subtype=Human,Warrior
 cost={1}{G}
 pt=2/2
 timing=main
-requires_card_code
+requires_groovy_code

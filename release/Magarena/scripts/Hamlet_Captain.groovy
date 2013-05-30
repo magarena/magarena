@@ -1,33 +1,17 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeTurnPTAction;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicTargetFilter;
-import magic.model.trigger.MagicWhenAttacksTrigger;
-import magic.model.trigger.MagicWhenBlocksTrigger;
-
-import java.util.Collection;
-
-
-public class Hamlet_Captain {
-    public static final MagicWhenAttacksTrigger T1 = new MagicWhenAttacksTrigger() {
+[
+    new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             return (permanent == creature) ?
                 new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        this,
-                        "Other Human creatures " + permanent.getController() +
-                        " controls get +1/+1 until end of turn."):
+                    permanent,
+                    this,
+                    "Other Human creatures PN controls get +1/+1 until end of turn."
+                ):
                 MagicEvent.NONE;
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets =
                 game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_HUMAN_YOU_CONTROL);
             for (final MagicPermanent creature : targets) {
@@ -36,24 +20,20 @@ public class Hamlet_Captain {
                 }
             }
         }
-    };
-    
-    public static final MagicWhenBlocksTrigger T2 = new MagicWhenBlocksTrigger() {
+    },
+    new MagicWhenBlocksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             return (permanent == creature) ?
                 new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        this,
-                        "Other Human creatures " + permanent.getController() +
-                        " controls get +1/+1 until end of turn."):
+                    permanent,
+                    this,
+                    "Other Human creatures PN controls get +1/+1 until end of turn."
+                ):
                 MagicEvent.NONE;
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets =
                 game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_HUMAN_YOU_CONTROL);
             for (final MagicPermanent creature : targets) {
@@ -62,5 +42,5 @@ public class Hamlet_Captain {
                 }
             }
         }
-    };
-}
+    }
+]
