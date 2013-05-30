@@ -1,38 +1,17 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicPayedCost;
-import magic.model.MagicPermanent;
-import magic.model.MagicType;
-import magic.model.action.MagicGainControlAction;
-import magic.model.action.MagicPermanentAction;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.condition.MagicCondition;
-import magic.model.event.MagicActivationHints;
-import magic.model.event.MagicEvent;
-import magic.model.event.MagicPermanentActivation;
-import magic.model.event.MagicTapEvent;
-import magic.model.event.MagicTiming;
-import magic.model.target.MagicExileTargetPicker;
-import magic.model.target.MagicTargetFilter;
-import magic.model.target.MagicTargetHint;
-
-public class Beguiler_of_Wills {
-    public static final MagicPermanentActivation A = new MagicPermanentActivation(
-        new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
+[
+    new MagicPermanentActivation(
+        [MagicCondition.CAN_TAP_CONDITION],
         new MagicActivationHints(MagicTiming.Removal),
         "Control"
     ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicTapEvent(source)};
+            return [new MagicTapEvent(source)];
         }
 
         @Override
-        public MagicEvent getPermanentEvent(
-                final MagicPermanent source,
-                final MagicPayedCost payedCost) {
+        public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             final MagicTargetFilter<MagicPermanent> targetFilter = new MagicTargetFilter.MagicPowerTargetFilter(
                 MagicTargetFilter.TARGET_CREATURE,
                 source.getController().getNrOfPermanentsWithType(MagicType.Creature)
@@ -48,15 +27,13 @@ public class Beguiler_of_Wills {
                 targetChoice,
                 MagicExileTargetPicker.create(),
                 this,
-                "Gain control of target creature$ with power less " +
+                "Gain control of target creature\$ with power less " +
                 "than or equal to the number of creatures you control."
             );
         }
 
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     if (creature.getPower() <= event.getPlayer().getNrOfPermanentsWithType(MagicType.Creature)) {
@@ -65,5 +42,5 @@ public class Beguiler_of_Wills {
                 }
             });
         }
-    };
-}
+    }
+]
