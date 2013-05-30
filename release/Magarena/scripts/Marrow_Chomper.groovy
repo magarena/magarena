@@ -1,24 +1,5 @@
-package magic.card;
-
-import magic.model.MagicCounterType;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.MagicType;
-import magic.model.action.MagicChangeCountersAction;
-import magic.model.action.MagicChangeLifeAction;
-import magic.model.action.MagicPermanentAction;
-import magic.model.action.MagicSacrificeAction;
-import magic.model.choice.MagicMayChoice;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicSacrificeTargetPicker;
-import magic.model.target.MagicTargetFilter;
-import magic.model.target.MagicTargetHint;
-import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
-
-public class Marrow_Chomper {
-    public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
+[
+    new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             final MagicTargetFilter<MagicPermanent> targetFilter=new MagicTargetFilter.MagicOtherPermanentTargetFilter(
@@ -31,7 +12,7 @@ public class Marrow_Chomper {
                     new MagicMayChoice(targetChoice),
                     MagicSacrificeTargetPicker.create(),
                     this,
-                    "PN may$ sacrifice a creature$ to SN."
+                    "PN may\$ sacrifice a creature\$ to SN."
                 ):
                 MagicEvent.NONE;
         }
@@ -58,5 +39,5 @@ public class Marrow_Chomper {
                 });
             } 
         }
-    };
-}
+    }
+]
