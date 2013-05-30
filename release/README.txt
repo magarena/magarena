@@ -52,6 +52,10 @@ Thank you for your support and have fun!
 
 
 
+Release 1.39 (June 29, 2013)
+============
+includes contributions from ...
+
 Release 1.38 (May 25, 2013)
 ============
 includes contributions from melvin, sponeta, and a. benedict balbuena
