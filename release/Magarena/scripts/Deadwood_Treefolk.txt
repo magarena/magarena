@@ -9,4 +9,4 @@ cost={5}{G}
 pt=3/6
 ability=vanishing 3
 timing=main
-requires_card_code
+requires_groovy_code
