@@ -3,7 +3,7 @@ def action = {
     if (event.isYes()) {
         game.doAction(new MagicChangeCountersAction(event.getRefPermanent(),MagicCounterType.PlusOne,1,true));
     }
-}
+} as MagicEventAction
 
 def event = {
     final MagicPermanent permanent, final MagicPermanent target -> 
