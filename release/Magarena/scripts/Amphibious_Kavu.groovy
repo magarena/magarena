@@ -1,16 +1,5 @@
-package magic.card;
-
-import magic.model.MagicColor;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPermanentList;
-import magic.model.action.MagicChangeTurnPTAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
-import magic.model.trigger.MagicWhenBlocksTrigger;
-
-public class Amphibious_Kavu {
-    public static final MagicWhenBecomesBlockedTrigger T1 = new MagicWhenBecomesBlockedTrigger() {
+[
+    new MagicWhenBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
             if (permanent != attacker) {
@@ -34,18 +23,15 @@ public class Amphibious_Kavu {
         }
         
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicChangeTurnPTAction(
                 event.getPermanent(),
                 3,
                 3
             ));
         }
-    };
-    
-    public static final MagicWhenBlocksTrigger T2 = new MagicWhenBlocksTrigger() {
+    },
+    new MagicWhenBlocksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
             final MagicPermanent blocked = permanent.getBlockedCreature();
@@ -56,18 +42,18 @@ public class Amphibious_Kavu {
                 new MagicEvent(
                     permanent,
                     this,
-                    "SN gets +3/+3 until end of turn."):
+                    "SN gets +3/+3 until end of turn."
+                ):
                 MagicEvent.NONE;
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicChangeTurnPTAction(
                 event.getPermanent(),
                 3,
                 3
             ));
         }
-    };
-}
+    }
+]
+
