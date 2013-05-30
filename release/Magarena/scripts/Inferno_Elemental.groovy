@@ -1,16 +1,5 @@
-package magic.card;
-
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPermanentList;
-import magic.model.action.MagicDealDamageAction;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
-import magic.model.trigger.MagicWhenBlocksTrigger;
-
-public class Inferno_Elemental {
-    public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
+[
+    new MagicWhenBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
             if (permanent != attacker) {
@@ -28,18 +17,15 @@ public class Inferno_Elemental {
         }
         
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanentList plist = event.getRefPermanentList();
             for (final MagicPermanent blocker : plist) {
                 final MagicDamage damage = new MagicDamage(event.getSource(),blocker,3);
                 game.doAction(new MagicDealDamageAction(damage));
             }
         }
-    };
-    
-    public static final MagicWhenBlocksTrigger T2 = new MagicWhenBlocksTrigger() {
+    },
+    new MagicWhenBlocksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
             final MagicPermanent blocked = permanent.getBlockedCreature();
@@ -48,13 +34,12 @@ public class Inferno_Elemental {
                     permanent,
                     blocked,
                     this,
-                    "SN deals 3 damage to " + blocked + "."):
+                    "SN deals 3 damage to RN."
+                ):
                 MagicEvent.NONE;
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicDamage damage = new MagicDamage(
                 event.getPermanent(),
                 event.getRefPermanent(),
@@ -62,5 +47,5 @@ public class Inferno_Elemental {
             );
             game.doAction(new MagicDealDamageAction(damage));
         }
-    };
-}
+    }
+]
