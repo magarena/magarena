@@ -11,6 +11,10 @@ import magic.model.action.MagicRemoveCardAction;
 import magic.model.choice.MagicTargetChoice;
 
 public class MagicExileCardEvent extends MagicEvent {
+    
+    public MagicExileCardEvent(final MagicSource source, final MagicTargetChoice targetChoice) {
+        this(source, source.getController(), targetChoice);
+    }
 
     public MagicExileCardEvent(
             final MagicSource source,
