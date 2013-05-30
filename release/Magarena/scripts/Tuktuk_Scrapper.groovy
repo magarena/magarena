@@ -11,7 +11,7 @@
                     ),
                     new MagicDestroyTargetPicker(false),
                     this,
-                    "PN may\$ destroy target artifact\$. "
+                    "PN may\$ destroy target artifact\$. " +
                     "If that artifact is put into a graveyard this way, SN deals damage to that artifact's controller equal to the number of Allies you control."
                 ) :
                 MagicEvent.NONE;

@@ -6,7 +6,7 @@ def action = {
             game.doAction(new MagicMoveCardAction(targetCard,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
         }
     });
-}
+} as MagicEventAction
 
 def event = {
     final MagicPermanent permanent ->
@@ -14,7 +14,7 @@ def event = {
         permanent,
         MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
         new MagicGraveyardTargetPicker(false),
-        this,
+        action,
         "Return another target creature card\$ from your graveyard to your hand."
     );
 }

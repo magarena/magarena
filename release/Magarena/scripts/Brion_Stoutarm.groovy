@@ -26,7 +26,7 @@
             return new MagicEvent(
                 source,
                 MagicTargetChoice.NEG_TARGET_PLAYER,
-                payedCost.getTarget();
+                payedCost.getTarget(),
                 this,
                 "SN deals damage equal to the power of RN to target player\$."
             );

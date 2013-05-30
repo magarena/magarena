@@ -18,9 +18,7 @@ def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
                 permanent,
                 plist,
                 this,
-                plist.size() == 1 ?
-                    plist.get(0) + " loses first strike until end of turn." :
-                    "Blocking creatures lose first strike until end of turn."
+                "Blocking creatures lose first strike until end of turn."
             );
         }
         
