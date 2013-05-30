@@ -13,8 +13,8 @@
             return [
                 new MagicSacrificePermanentEvent(
                     source,
-                    SACRIFICE_CREATURE
-                )
+                    MagicTargetChoice.SACRIFICE_CREATURE
+                ),
                 new MagicBouncePermanentEvent(
                     source,
                     source
