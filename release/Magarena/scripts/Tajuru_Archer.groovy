@@ -1,20 +1,5 @@
-package magic.card;
-
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.MagicSubType;
-import magic.model.action.MagicDealDamageAction;
-import magic.model.action.MagicPermanentAction;
-import magic.model.choice.MagicMayChoice;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicDamageTargetPicker;
-import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
-
-public class Tajuru_Archer {
-    public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
+[
+    new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent other) {
             final int numAllies = permanent.getController().getNrOfPermanentsWithSubType(MagicSubType.Ally);
@@ -28,16 +13,15 @@ public class Tajuru_Archer {
                     // estimated. Amount of damage can be different on resolution
                     new MagicDamageTargetPicker(numAllies),
                     this,
-                    "PN may$ have SN deal " +
-                    "damage to target creature with flying$ equal to " +
-                    "the number of Allies he or she controls.") :
+                    "PN may\$ have SN deal " +
+                    "damage to target creature with flying\$ equal to " +
+                    "the number of Allies he or she controls."
+                ) :
                 MagicEvent.NONE;
         }
         
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
@@ -56,5 +40,5 @@ public class Tajuru_Archer {
                 });
             }            
         }        
-    };
-}
+    }
+]
