@@ -34,7 +34,7 @@
                     MagicSimpleMayChoice.DEFAULT_YES
                 ),
                 this,
-                "PN may$ put a +1/+1 counter on each " +
+                "PN may\$ put a +1/+1 counter on each " +
                 "Plant creature he or she controls."
             );
         }
