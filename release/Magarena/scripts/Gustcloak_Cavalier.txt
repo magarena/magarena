@@ -9,4 +9,4 @@ cost={3}{W}{W}
 pt=2/2
 ability=flanking
 timing=main
-requires_groovy_code
+requires_groovy_code=Gustcloak Skirmisher,Niblis of the Urn

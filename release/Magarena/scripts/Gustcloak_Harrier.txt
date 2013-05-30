@@ -9,4 +9,4 @@ cost={1}{W}{W}
 pt=2/2
 ability=flying
 timing=main
-requires_groovy_code
+requires_groovy_code=Gustcloak Skirmisher
