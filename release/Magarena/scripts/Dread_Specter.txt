@@ -8,4 +8,4 @@ subtype=Specter
 cost={3}{B}
 pt=2/2
 timing=main
-requires_card_code=Deathgazer
+requires_groovy_code=Deathgazer

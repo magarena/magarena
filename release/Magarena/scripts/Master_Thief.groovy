@@ -1,5 +1,5 @@
 def control = {
-    final int you ->
+    final MagicTargetFilter<MagicPermanent> filter, final int you ->
     return new MagicStatic(MagicLayer.Control,filter) {
         @Override
         public MagicPlayer getController(
@@ -36,7 +36,7 @@ def control = {
                 MagicTargetChoice.TARGET_ARTIFACT,
                 MagicExileTargetPicker.create(),
                 this,
-                "Gain control of target artifact$ for as long as you control SN."
+                "Gain control of target artifact\$ for as long as you control SN."
             );
         }
         
@@ -47,8 +47,8 @@ def control = {
                     final MagicPermanent source = event.getPermanent();
                     final MagicTargetFilter<MagicPermanent> filter = new MagicTargetFilter.MagicPermanentTargetFilter(perm);
                     final int you = source.getController().getIndex();
-                    game.doAction(new MagicAddStaticAction(source, control(you));
-                };
+                    game.doAction(new MagicAddStaticAction(source, control(filter, you)));
+                }
             });
         }
     }
