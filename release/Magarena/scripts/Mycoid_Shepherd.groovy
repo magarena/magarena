@@ -1,17 +1,5 @@
-package magic.card;
-
-import magic.model.MagicGame;
-import magic.model.MagicLocationType;
-import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeLifeAction;
-import magic.model.choice.MagicSimpleMayChoice;
-import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicGraveyardTriggerData;
-import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
-import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
-
-public class Mycoid_Shepherd {
-    public static final MagicWhenPutIntoGraveyardTrigger T1 = new MagicWhenPutIntoGraveyardTrigger() {
+[
+    new MagicWhenPutIntoGraveyardTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
             return (triggerData.fromLocation == MagicLocationType.Play) ?
@@ -20,22 +8,21 @@ public class Mycoid_Shepherd {
                     new MagicSimpleMayChoice(
                         MagicSimpleMayChoice.GAIN_LIFE,
                         5,
-                        MagicSimpleMayChoice.DEFAULT_YES),
+                        MagicSimpleMayChoice.DEFAULT_YES
+                    ),
                     this,
-                    "PN may$ gain 5 life.") :
+                    "PN may\$ gain 5 life."
+                ) :
                 MagicEvent.NONE;
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 game.doAction(new MagicChangeLifeAction(event.getPlayer(),5));
             }
         }
-    };
-
-    public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T2 = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
+    },
+    new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
             return (otherPermanent!=permanent &&
@@ -47,19 +34,18 @@ public class Mycoid_Shepherd {
                     new MagicSimpleMayChoice(
                         MagicSimpleMayChoice.GAIN_LIFE,
                         5,
-                        MagicSimpleMayChoice.DEFAULT_YES),
+                        MagicSimpleMayChoice.DEFAULT_YES
+                    ),
                     this,
-                    "PN may$ gain 5 life."
+                    "PN may\$ gain 5 life."
                 ) :
                 MagicEvent.NONE;
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 game.doAction(new MagicChangeLifeAction(event.getPlayer(),5));
             }
         }
-    };
-}
+    }
+]

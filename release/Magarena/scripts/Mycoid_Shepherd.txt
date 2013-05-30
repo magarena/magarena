@@ -8,4 +8,4 @@ subtype=Fungus
 cost={1}{G}{G}{W}
 pt=5/4
 timing=main
-requires_card_code
+requires_groovy_code
