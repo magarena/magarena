@@ -41,7 +41,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
             event.processTargetPermanent(game, {
                 final MagicPermanent creature ->
                 game.doAction(new MagicBecomesCreatureAction(creature,PT,ST));
-            } as MagicPermanentAction());
+            } as MagicPermanentAction);
         }
     }
 ]
