@@ -8,4 +8,4 @@ subtype=Human,Samurai
 cost={2}{R}{R}
 pt=3/2
 timing=main
-requires_card_code
+requires_groovy_code
