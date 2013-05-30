@@ -1,26 +1,5 @@
-package magic.card;
-
-import magic.model.MagicAbility;
-import magic.model.MagicGame;
-import magic.model.MagicPayedCost;
-import magic.model.MagicPermanent;
-import magic.model.MagicPowerToughness;
-import magic.model.action.MagicPermanentAction;
-import magic.model.action.MagicSetAbilityAction;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.condition.MagicCondition;
-import magic.model.event.MagicActivationHints;
-import magic.model.event.MagicEvent;
-import magic.model.event.MagicPermanentActivation;
-import magic.model.event.MagicTapEvent;
-import magic.model.event.MagicTiming;
-import magic.model.mstatic.MagicLayer;
-import magic.model.mstatic.MagicStatic;
-import magic.model.target.MagicTargetFilter;
-import magic.model.target.MagicUnblockableTargetPicker;
-
-public class Merfolk_Sovereign {
-    public static final MagicStatic S = new MagicStatic(
+[
+    new MagicStatic(
         MagicLayer.ModPT, 
         MagicTargetFilter.TARGET_MERFOLK_YOU_CONTROL) {
         @Override
@@ -31,15 +10,16 @@ public class Merfolk_Sovereign {
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
             return source != target;
         }
-    };
-    public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
-            new MagicActivationHints(MagicTiming.Attack),
-            "Unblockable") {
+    },
+    new MagicPermanentActivation(
+        [MagicCondition.CAN_TAP_CONDITION],
+        new MagicActivationHints(MagicTiming.Attack),
+        "Unblockable"
+    ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicTapEvent(source)};
+            return [new MagicTapEvent(source)];
         }
 
         @Override
@@ -49,7 +29,7 @@ public class Merfolk_Sovereign {
                 MagicTargetChoice.POS_TARGET_MERFOLK_CREATURE,
                 MagicUnblockableTargetPicker.create(),
                 this,
-                "Target Merfolk creature$ is unblockable this turn."
+                "Target Merfolk creature\$ is unblockable this turn."
             );
         }
 
@@ -61,5 +41,5 @@ public class Merfolk_Sovereign {
                 }
             });
         }    
-    };
-}
+    }
+]
