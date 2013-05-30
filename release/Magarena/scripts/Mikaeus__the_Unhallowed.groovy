@@ -1,25 +1,8 @@
-package magic.card;
-
-import magic.model.MagicAbility;
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.MagicPowerToughness;
-import magic.model.MagicSubType;
-import magic.model.action.MagicDestroyAction;
-import magic.model.event.MagicEvent;
-import magic.model.mstatic.MagicLayer;
-import magic.model.mstatic.MagicStatic;
-import magic.model.target.MagicTargetFilter;
-import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
-
-import java.util.Set;
-
-public class Mikaeus__the_Unhallowed {
-    public static final MagicStatic S1 = new MagicStatic(
-            MagicLayer.ModPT, 
-            MagicTargetFilter.TARGET_NONHUMAN_CREATURE_YOU_CONTROL) {
+[
+    new MagicStatic(
+        MagicLayer.ModPT, 
+        MagicTargetFilter.TARGET_NONHUMAN_CREATURE_YOU_CONTROL
+    ) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
             pt.add(1,1);
@@ -28,11 +11,11 @@ public class Mikaeus__the_Unhallowed {
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
             return source != target;
         }
-    };
-
-    public static final MagicStatic S2 = new MagicStatic(
-            MagicLayer.Ability, 
-            MagicTargetFilter.TARGET_NONHUMAN_CREATURE_YOU_CONTROL) {
+    },
+    new MagicStatic(
+        MagicLayer.Ability, 
+        MagicTargetFilter.TARGET_NONHUMAN_CREATURE_YOU_CONTROL
+    ) {
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
             flags.add(MagicAbility.Undying);
@@ -41,9 +24,8 @@ public class Mikaeus__the_Unhallowed {
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
             return source != target;
         }
-    };
-        
-    public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
+    },
+    new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -54,19 +36,18 @@ public class Mikaeus__the_Unhallowed {
                     damage.getSource().isPermanent() &&
                     damage.getSource().hasSubType(MagicSubType.Human)) ?
                 new MagicEvent(
-                        permanent,
-                        player,
-                        damage.getSource(),
-                        this,
-                        "Destroy " + damage.getSource() + "."):
+                    permanent,
+                    player,
+                    damage.getSource(),
+                    this,
+                    "Destroy RN."
+                ):
                 MagicEvent.NONE;
         }
         
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicDestroyAction(event.getRefPermanent()));
         }
-    };
-}
+    }
+]

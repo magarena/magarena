@@ -10,4 +10,4 @@ pt=5/5
 ability=intimidate
 static=player
 timing=main
-requires_card_code
+requires_groovy_code

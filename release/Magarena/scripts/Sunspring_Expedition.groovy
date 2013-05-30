@@ -1,5 +1,4 @@
 [
-    Ior_Ruin_Expedition.T,
     new MagicPermanentActivation(
         [MagicConditionFactory.ChargeCountersAtLeast(3)],
         new MagicActivationHints(MagicTiming.Pump),

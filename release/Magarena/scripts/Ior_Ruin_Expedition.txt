@@ -6,4 +6,5 @@ rarity=C
 type=Enchantment
 cost={1}{U}
 timing=enchantment
+ability=landfall quest
 requires_groovy_code

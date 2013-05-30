@@ -1,31 +1,4 @@
 [
-    new MagicLandfallTrigger() {
-        @Override
-        public MagicEvent getEvent(final MagicPermanent permanent) {
-            return new MagicEvent(
-                permanent,
-                new MagicSimpleMayChoice(
-                    MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
-                    1,
-                    MagicSimpleMayChoice.DEFAULT_YES
-                ),
-                this,
-                "PN may\$ put a quest counter on SN."
-            );
-        }
-        
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isYes()) {
-                game.doAction(new MagicChangeCountersAction(
-                    event.getPermanent(),
-                    MagicCounterType.Charge,
-                    1,
-                    true
-                ));
-            }
-        }        
-    },
     new MagicPermanentActivation(
         [MagicConditionFactory.ChargeCountersAtLeast(3)],
         new MagicActivationHints(MagicTiming.Draw),

@@ -71,6 +71,7 @@ import magic.model.trigger.MagicExtortTrigger;
 import magic.model.trigger.MagicUnleashTrigger;
 import magic.model.trigger.MagicUndyingTrigger;
 import magic.model.trigger.MagicPersistTrigger;
+import magic.model.trigger.MagicLandfallTrigger;
 
 import java.util.EnumSet;
 import java.util.Set;
@@ -322,6 +323,12 @@ public enum MagicAbility {
             final int power = Integer.parseInt(pt[0]);
             final int toughness = Integer.parseInt(pt[1]);
             card.add(new MagicLandfallPumpTrigger(power,toughness));
+        }
+    },
+    LandfallQuest("landfall quest",0) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+            card.add(MagicLandfallTrigger.Quest);
         }
     },
     TapAddMana("tap add mana",10) {
