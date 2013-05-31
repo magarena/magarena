@@ -9,4 +9,4 @@ cost={5}
 pt=4/4
 ability=blocks or blocked pump -4/+4
 timing=fmain
-requires_card_code
+requires_groovy_code
