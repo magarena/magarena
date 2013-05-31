@@ -8,4 +8,4 @@ subtype=Human,Wizard
 cost={R/W}{R/W}
 pt=2/2
 timing=fmain
-requires_card_code
+requires_groovy_code
