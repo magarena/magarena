@@ -19,7 +19,7 @@ def event = {
             MagicTargetChoice.NEG_TARGET_PLAYER
         ),
         action,
-        "You may$ pay {1}$. If you do, target player$ loses 1 life and you gain 1 life."
+        "You may\$ pay {1}\$. If you do, target player\$ loses 1 life and you gain 1 life."
     );
 }
 
