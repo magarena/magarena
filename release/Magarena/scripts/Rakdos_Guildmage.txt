@@ -8,4 +8,4 @@ subtype=Zombie,Shaman
 cost={B/R}{B/R}
 pt=2/2
 timing=fmain
-requires_card_code
+requires_groovy_code
