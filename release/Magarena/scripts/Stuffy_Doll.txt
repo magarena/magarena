@@ -7,6 +7,6 @@ type=Artifact,Creature
 subtype=Construct
 cost={5}
 pt=0/1
-ability=indestructible
+ability=indestructible,enters choose opponent
 timing=smain
 requires_groovy_code
