@@ -23,19 +23,18 @@ def action = {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPlayer(game,new MagicPlayerAction() {
-                public void doAction(final MagicPlayer opponent) {
-                    game.addEvent(new MagicEvent(
-                        event.getSource(),
-                        opponent,
-                        MagicTargetChoice.SACRIFICE_CREATURE,
-                        MagicSacrificeTargetPicker.create(),
-                        event.getPlayer(),
-                        action,
-                        "Choose a creature to sacrifice\$."
-                    ));
-                }
-            });
+            event.processTargetPlayer(game, {
+                final MagicPlayer opponent ->
+                game.addEvent(new MagicEvent(
+                    event.getSource(),
+                    opponent,
+                    MagicTargetChoice.SACRIFICE_CREATURE,
+                    MagicSacrificeTargetPicker.create(),
+                    event.getPlayer(),
+                    action,
+                    "Choose a creature to sacrifice\$."
+                ));
+            } as MagicPlayerAction);
         }
     }
 ]

@@ -28,23 +28,22 @@ def action = {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent target) {
-                    game.doAction(new MagicDestroyAction(target));
-                    if (!event.isKicked()) {
-                        return;
-                    }
-                    final int amount = target.getConvertedCost();
-                    game.addEvent(new MagicEvent(
-                        event.getSource(),
-                        MagicTargetChoice.NEG_TARGET_CREATURE,
-                        new MagicDamageTargetPicker(amount),
-                        amount,
-                        action,
-                        "SN deals RN damage to target creature\$."
-                    ));
+            event.processTargetPermanent(game, {
+                final MagicPermanent target ->
+                game.doAction(new MagicDestroyAction(target));
+                if (!event.isKicked()) {
+                    return;
                 }
-            });
+                final int amount = target.getConvertedCost();
+                game.addEvent(new MagicEvent(
+                    event.getSource(),
+                    MagicTargetChoice.NEG_TARGET_CREATURE,
+                    new MagicDamageTargetPicker(amount),
+                    amount,
+                    action,
+                    "SN deals RN damage to target creature\$."
+                ));
+            } as MagicPermanentAction);
         }
     }
 ]
