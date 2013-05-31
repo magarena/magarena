@@ -557,7 +557,7 @@ exp/zermelo.tsv: $(wildcard exp/136*.log)
 	awk -f exp/extract_games.awk $^ | ./exp/whr.rb | tac > $@
 
 bytes_per_card:
-	echo `cat release/Magarena/scripts/* src/magic/card/* | sed 's/[[:space:]]*//' | wc -c` \
+	echo `cat release/Magarena/scripts/* | sed 's/[[:space:]]*//' | wc -c` \
 	/ \
 	`ls -1 release/Magarena/scripts/*.txt | wc -l` \
 	| bc -l
