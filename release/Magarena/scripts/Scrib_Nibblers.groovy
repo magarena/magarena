@@ -38,7 +38,7 @@
                 source,
                 MagicTargetChoice.NEG_TARGET_PLAYER,
                 this,
-                "Exile the top card of target player's$ library. " +
+                "Exile the top card of target player's\$ library. " +
                 "If it's a land card, PN gains 1 life."
             );
         }

@@ -28,8 +28,8 @@
             final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
                 @Override
                 public void modPowerToughness(
-                        final MagicPermanent source,
-                        final MagicPermanent permanent,
+                        final MagicPermanent S,
+                        final MagicPermanent P,
                         final MagicPowerToughness pt) {
                     pt.set(X,X);
                 }
@@ -37,7 +37,7 @@
             final MagicStatic ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
                 @Override
                 public void modSubTypeFlags(
-                        final MagicPermanent permanent,
+                        final MagicPermanent P,
                         final Set<MagicSubType> flags) {
                     flags.addAll(MagicSubType.ALL_CREATURES);
                 }
