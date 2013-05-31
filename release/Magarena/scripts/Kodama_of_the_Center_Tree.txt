@@ -7,4 +7,4 @@ type=Legendary,Creature
 subtype=Spirit
 cost={4}{G}
 timing=main
-requires_card_code
+requires_groovy_code
