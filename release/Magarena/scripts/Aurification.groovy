@@ -50,8 +50,8 @@ def ST = new MagicStatic(MagicLayer.Type) {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent creature = event.getRefPermanent();
             game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.Gold,1,true));
-            game.doAction(new MagicAddStaticAction(creature, AB);
-            game.doAction(new MagicAddStaticAction(creature, ST);
+            game.doAction(new MagicAddStaticAction(creature, AB));
+            game.doAction(new MagicAddStaticAction(creature, ST));
         }
     },
     new MagicWhenLeavesPlayTrigger() {

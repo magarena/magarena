@@ -14,7 +14,7 @@ def getEvent = {
         permanent,
         action,
         "Put a charge counter on SN."
-    ):
+    );
 }
 
 [
@@ -35,7 +35,7 @@ def getEvent = {
                 final MagicPermanent permanent,
                 final MagicCardOnStack cardOnStack) {
             return (permanent.isFriend(cardOnStack) && 
-                    card.hasColor(MagicColor.Red)) ?
+                    cardOnStack.hasColor(MagicColor.Red)) ?
                 getEvent(permanent) : MagicEvent.NONE;
         }
     },

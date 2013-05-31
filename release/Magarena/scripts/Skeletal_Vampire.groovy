@@ -11,7 +11,7 @@ def getEvent = {
     final MagicPermanent permanent ->
     return new MagicEvent(
         permanent,
-        this,
+        action,
         "PN puts two 1/1 black Bat creature tokens with flying onto the battlefield."
     );
 }
