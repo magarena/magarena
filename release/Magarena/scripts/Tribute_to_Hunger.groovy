@@ -1,15 +1,13 @@
-def EVENT_ACTION = new MagicEventAction() {
-    @Override
-    public void executeEvent(final MagicGame game, final MagicEvent event) {
-        event.processTargetPermanent(game,new MagicPermanentAction() {
-            public void doAction(final MagicPermanent permanent) {
-                game.doAction(new MagicSacrificeAction(permanent));
-                final int toughness = permanent.getToughness();
-                game.doAction(new MagicChangeLifeAction(event.getRefPlayer(),toughness));
-            }
-        });
-    }
-};
+def action = {
+    final MagicGame game, final MagicEvent event ->
+    event.processTargetPermanent(game,new MagicPermanentAction() {
+        public void doAction(final MagicPermanent permanent) {
+            game.doAction(new MagicSacrificeAction(permanent));
+            final int toughness = permanent.getToughness();
+            game.doAction(new MagicChangeLifeAction(event.getRefPlayer(),toughness));
+        }
+    });
+} as MagicEventAction
 
 [
     new MagicSpellCardEvent() {
@@ -33,7 +31,7 @@ def EVENT_ACTION = new MagicEventAction() {
                         MagicTargetChoice.SACRIFICE_CREATURE,
                         MagicSacrificeTargetPicker.create(),
                         event.getPlayer(),
-                        EVENT_ACTION,
+                        action,
                         "Choose a creature to sacrifice\$."
                     ));
                 }
