@@ -28,7 +28,7 @@
                 }
             }
         }
-    }.
+    },
     new MagicPermanentActivation(
         [MagicCondition.TWO_MOUNTAINS_CONDITION],
         new MagicActivationHints(MagicTiming.Token, false), 
