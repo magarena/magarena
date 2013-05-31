@@ -28,28 +28,27 @@ def Spirit = new MagicStatic(MagicLayer.Type) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                event.processTargetCard(game,new MagicCardAction() {
-                    public void doAction(final MagicCard card) {
-                        final MagicPlayer player=event.getPlayer();
-                        game.doAction(new MagicRemoveCardAction(
-                                card,
-                                MagicLocationType.Graveyard));
-                        game.doAction(new MagicMoveCardAction(
-                                card,
-                                MagicLocationType.Graveyard,
-                                MagicLocationType.Exile));
-                        final MagicPutIntoPlayAction action = new MagicPlayTokenAction(
-                                player,
-                                card.getCardDefinition());
-                        game.doAction(action);
-                        final MagicPermanent permanent = action.getPermanent();
-                        game.doAction(new MagicChangeStateAction(
-                                permanent,
-                                MagicPermanentState.SacrificeAtEndOfTurn,
-                                true));
-                        game.doAction(new MagicAddStaticAction(permanent,Spirit));
-                    }
-                });
+                event.processTargetCard(game,{
+                    final MagicCard card ->
+                    final MagicPlayer player=event.getPlayer();
+                    game.doAction(new MagicRemoveCardAction(
+                            card,
+                            MagicLocationType.Graveyard));
+                    game.doAction(new MagicMoveCardAction(
+                            card,
+                            MagicLocationType.Graveyard,
+                            MagicLocationType.Exile));
+                    final MagicPutIntoPlayAction action = new MagicPlayTokenAction(
+                            player,
+                            card.getCardDefinition());
+                    game.doAction(action);
+                    final MagicPermanent permanent = action.getPermanent();
+                    game.doAction(new MagicChangeStateAction(
+                            permanent,
+                            MagicPermanentState.SacrificeAtEndOfTurn,
+                            true));
+                    game.doAction(new MagicAddStaticAction(permanent,Spirit));
+                } as MagicCardAction);
             }
         }
     }

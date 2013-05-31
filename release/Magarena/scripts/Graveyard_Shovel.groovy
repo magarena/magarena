@@ -36,22 +36,21 @@ def action = {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPlayer(game,new MagicPlayerAction() {
-                public void doAction(final MagicPlayer targetPlayer) {
-                    if (targetPlayer.getGraveyard().size() > 0) {
-                        final MagicPlayer player = event.getPlayer();
-                        game.addEvent(new MagicEvent(
-                            event.getSource(),
-                            targetPlayer,
-                            MagicTargetChoice.TARGET_CARD_FROM_GRAVEYARD,
-                            new MagicGraveyardTargetPicker(true),
-                            player,
-                            action,
-                            "PN exiles a card\$ from his or her graveyard."
-                        ));
-                    }
+            event.processTargetPlayer(game, {
+                final MagicPlayer targetPlayer ->
+                if (targetPlayer.getGraveyard().size() > 0) {
+                    final MagicPlayer player = event.getPlayer();
+                    game.addEvent(new MagicEvent(
+                        event.getSource(),
+                        targetPlayer,
+                        MagicTargetChoice.TARGET_CARD_FROM_GRAVEYARD,
+                        new MagicGraveyardTargetPicker(true),
+                        player,
+                        action,
+                        "PN exiles a card\$ from his or her graveyard."
+                    ));
                 }
-            });
+            } as MagicPlayerAction);
         } 
     }
 ]
