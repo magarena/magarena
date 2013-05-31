@@ -176,20 +176,6 @@ public enum CardProperty {
             card.add(MagicSpellCardEvent.create(value));
         }
     },
-    REQUIRES_CARD_CODE() {
-        public void setProperty(final MagicCardDefinition card, final String value) {
-            card.setRequiresJava(value);
-        }
-    },
-    LOAD_CARD_CODE() {
-        public void setProperty(final MagicCardDefinition card, final String value) {
-            final String cardName = !value.isEmpty() ? value : card.getFullName();
-            final String[] names = cardName.split(",(?! )");
-            for (final String name : names) {
-                CardDefinitions.addCardSpecificCode(card, cardName);
-            }
-        }
-    },
     REQUIRES_GROOVY_CODE() {
         public void setProperty(final MagicCardDefinition card, final String value) {
             card.setRequiresGroovy(value);

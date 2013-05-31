@@ -106,7 +106,6 @@ public class MagicCardDefinition {
     private boolean excludeManaOrCombat;
 
     private String requiresGroovy;
-    private String requiresJava;
     
     public MagicCardDefinition() {
         initialize();    
@@ -118,19 +117,11 @@ public class MagicCardDefinition {
     public void setRequiresGroovy(final String value) {
         requiresGroovy = value;
     }
-    
-    public void setRequiresJava(final String value) {
-        requiresJava = value;
-    }
 
     public void loadScript() {
         if (requiresGroovy != null) {
             CardProperty.LOAD_GROOVY_CODE.setProperty(this, requiresGroovy);
             requiresGroovy = null;
-        }
-        if (requiresJava != null) {
-            CardProperty.LOAD_CARD_CODE.setProperty(this, requiresJava);
-            requiresJava = null;
         }
     }
     

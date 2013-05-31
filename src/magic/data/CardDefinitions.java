@@ -112,21 +112,6 @@ public class CardDefinitions {
         return cardDefinition;
     }
 
-    //link to companion object containing static variables
-    static void addCardSpecificCode(final MagicCardDefinition cardDefinition, final String cardName) {
-        try { //reflection
-            final Class c = Class.forName("magic.card." + getCanonicalName(cardName));
-            for (final Field field : c.getFields()) {
-                final MagicChangeCardDefinition ccd = (MagicChangeCardDefinition)field.get(null);
-                ccd.change(cardDefinition);
-            }
-        } catch (final ClassNotFoundException ex) {
-            throw new RuntimeException(ex);
-        } catch (final IllegalAccessException ex) {
-            throw new RuntimeException(ex);
-        }
-    }
-    
     //link to groovy script that returns array of MagicChangeCardDefinition objects
     static void addCardSpecificGroovyCode(final MagicCardDefinition cardDefinition, final String cardName) {
         try {
