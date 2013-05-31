@@ -41,13 +41,12 @@ def control = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent perm) {
-                        final MagicPermanent source = event.getPermanent();
-                        final MagicTargetFilter<MagicPermanent> filter = new MagicTargetFilter.MagicPermanentTargetFilter(perm);
-                        game.doAction(new MagicAddStaticAction(source, control(source.getController().getIndex(), filter)));
-                    };
-                });
+                event.processTargetPermanent(game, {
+                    final MagicPermanent perm ->
+                    final MagicPermanent source = event.getPermanent();
+                    final MagicTargetFilter<MagicPermanent> filter = new MagicTargetFilter.MagicPermanentTargetFilter(perm);
+                    game.doAction(new MagicAddStaticAction(source, control(source.getController().getIndex(), filter)));
+                } as MagicPermanentAction);
             }
         }
     }
