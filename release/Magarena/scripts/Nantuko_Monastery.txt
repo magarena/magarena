@@ -7,4 +7,4 @@ type=Land
 ability=tap add mana {1}
 timing=land
 mana_or_combat
-requires_card_code
+requires_groovy_code
