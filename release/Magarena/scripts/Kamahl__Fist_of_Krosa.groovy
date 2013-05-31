@@ -1,0 +1,75 @@
+def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
+    @Override
+    public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
+        pt.set(1,1);
+    }
+};
+def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
+    @Override
+    public int getTypeFlags(final MagicPermanent permanent,final int flags) {
+        return flags|MagicType.Creature.getMask();
+    }
+};
+[    
+    new MagicPermanentActivation(
+        [MagicConditionFactory.ManaCost("{G}")],
+        new MagicActivationHints(MagicTiming.Animate),
+        "Animate"
+    ) {
+
+        @Override
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
+            return [new MagicPayManaCostEvent(source,"{G}")];
+        }
+
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
+                source,
+                MagicTargetChoice.TARGET_LAND,
+                this,
+                "Target land\$ becomes a 1/1 creature until end of turn."
+            );
+        }
+
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            event.processTargetPermanent(game, {
+                final MagicPermanent land ->
+                game.doAction(new MagicBecomesCreatureAction(land,PT,ST));
+            } as MagicPermanentAction);
+        }
+    },
+    new MagicPermanentActivation(
+        [
+            MagicConditionFactory.ManaCost("{2}{G}{G}{G}")
+        ],
+        new MagicActivationHints(MagicTiming.Pump,true),
+        "Pump"
+    ) {
+
+        @Override
+        public MagicEvent[] getCostEvent(final MagicPermanent source) {
+            return [new MagicPayManaCostEvent(source,"{2}{G}{G}{G}")];
+        }
+
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
+                source,
+                this,
+                "Creatures PN controls get +3/+3 and gain trample until end of turn."
+            );
+        }
+
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            final Collection<MagicPermanent> targets =
+                    game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+            for (final MagicPermanent creature : targets) {
+                game.doAction(new MagicChangeTurnPTAction(creature,3,3));
+                game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Trample));
+            }
+        }
+    }
+]
