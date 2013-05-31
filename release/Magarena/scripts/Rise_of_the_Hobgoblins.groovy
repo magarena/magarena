@@ -53,12 +53,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                final MagicPlayer player=event.getPlayer();
-                final MagicPayManaCostResult payedManaCost = event.getPaidMana();
-                game.doAction(new MagicPlayTokenAction(
-                    player,
+                game.doAction(new MagicPlayTokensAction(
+                    event.getPlayer(),
                     TokenCardDefinitions.get("Goblin Soldier"),
-                    payManaCost.getX()
+                    event.getPaidMana().getX()
                 ));
             }
         }

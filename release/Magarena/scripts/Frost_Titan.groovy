@@ -6,14 +6,14 @@ def action = {
             game.doAction(new MagicChangeStateAction(perm,MagicPermanentState.DoesNotUntapDuringNext,true));
         }
     });
-}
+} as MagicEventAction
 
 def event = {
     final MagicPermanent permanent ->
     return new MagicEvent(
         permanent,
         MagicTargetChoice.TARGET_PERMANENT,
-        this,
+        action,
         "Tap target permanent\$. It doesn't untap during its controller's next untap step."
     );
 }
@@ -35,9 +35,9 @@ def event = {
         }
         
         @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicSource source = event.getSource();
-            final MagicItemOnStack target = event.getRefItemOnStack();
+        public void executeEvent(final MagicGame game, final MagicEvent mevent) {
+            final MagicSource source = mevent.getSource();
+            final MagicItemOnStack target = mevent.getRefItemOnStack();
             game.addEvent(new MagicCounterUnlessEvent(source,target,MagicManaCost.create("{2}")));
         }
     },

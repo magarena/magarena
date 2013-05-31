@@ -1,4 +1,4 @@
-def action {
+def action = {
     final MagicGame game, final MagicEvent event ->
     event.processTargetCard(game,new MagicCardAction() {
         public void doAction(final MagicCard card) {
@@ -9,7 +9,7 @@ def action {
             ));
         }
     });
-}
+} as MagicEventAction
 
 [
     new MagicPermanentActivation(
