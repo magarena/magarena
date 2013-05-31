@@ -6,4 +6,4 @@ rarity=C
 type=Artifact
 cost={2}
 timing=artifact
-requires_card_code
+requires_groovy_code
