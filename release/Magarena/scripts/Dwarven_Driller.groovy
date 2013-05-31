@@ -38,19 +38,16 @@ def action = {
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent permanent) {
-                    final MagicPlayer controller = permanent.getController();
-                    game.addEvent(new MagicEvent(
-                        event.getSource(),
-                        controller,
-                        new MagicMayChoice(),
-                        permanent,
-                        action,
-                        "PN may\$ have SN deal 2 damage to him or her."
-                    ));
-                }
-            });
+            event.processTargetPermanent(game, {
+                final MagicPermanent permanent ->
+                game.addEvent(new MagicEvent(
+                    event.getSource(),
+                    new MagicMayChoice(),
+                    permanent,
+                    action,
+                    "PN may\$ have SN deal 2 damage to him or her."
+                ));
+            } as MagicPermanentAction);
         }
     }
 ]
