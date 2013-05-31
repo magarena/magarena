@@ -8,4 +8,4 @@ mana=g3w3
 timing=tapland
 ability=enters tapped,tap add mana {G} or {W}
 mana_or_combat
-requires_card_code
+requires_groovy_code
