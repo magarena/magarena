@@ -8,7 +8,7 @@ def action = {
             }
         });
     }            
-}
+} as MagicEventAction
 
 def event = {
     final MagicPermanent permanent ->
