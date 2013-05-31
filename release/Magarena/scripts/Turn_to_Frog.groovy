@@ -24,7 +24,7 @@ def C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
     }
 };
 [
-    public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
+    new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(

@@ -6,7 +6,7 @@ def action = {
             game.doAction(new MagicDealDamageAction(damage));
         }
     });
-}
+} as MagicEventAction
 
 [ 
     new MagicSpellCardEvent() {
