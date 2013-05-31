@@ -29,19 +29,18 @@ def Black = new MagicStatic(MagicLayer.Color) {
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetCard(game,new MagicCardAction() {
-                public void doAction(final MagicCard targetCard) {
-                    final MagicPlayer player = event.getPlayer();
-                    
-                    final MagicPlayCardAction action = new MagicPlayCardAction(targetCard,player,MagicPlayCardAction.NONE);
-                    game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
-                    game.doAction(action);
+            event.processTargetCard(game, {
+                final MagicCard targetCard ->
+                final MagicPlayer player = event.getPlayer();
+                
+                final MagicPlayCardAction action = new MagicPlayCardAction(targetCard,player,MagicPlayCardAction.NONE);
+                game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
+                game.doAction(action);
 
-                    final MagicPermanent permanent = action.getPermanent();
-                    game.doAction(new MagicAddStaticAction(permanent, Zombie));
-                    game.doAction(new MagicAddStaticAction(permanent, Black));
-                }
-            });
+                final MagicPermanent permanent = action.getPermanent();
+                game.doAction(new MagicAddStaticAction(permanent, Zombie));
+                game.doAction(new MagicAddStaticAction(permanent, Black));
+            } as MagicCardAction);
         }
     }
 ]
