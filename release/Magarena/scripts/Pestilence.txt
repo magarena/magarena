@@ -1,0 +1,9 @@
+name=Pestilence
+url=http://magiccards.info/us/en/147.html
+image=http://magiccards.info/scans/en/us/147.jpg
+value=4.317
+rarity=C
+type=Enchantment
+cost={2}{B}{B}
+timing=enchantment
+requires_groovy_code

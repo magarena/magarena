@@ -1,0 +1,11 @@
+name=Backfire
+url=http://magiccards.info/4e/en/62.html
+image=http://magiccards.info/scans/en/4e/62.jpg
+value=3.628
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={U}
+timing=aura
+enchant=can't attack or block,neg creature
+requires_groovy_code

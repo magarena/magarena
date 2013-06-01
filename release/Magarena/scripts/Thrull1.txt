@@ -1,0 +1,9 @@
+name=Thrull1
+token=Thrull
+image=http://magiccards.info/extras/token/duel-decks-divine-vs-demonic/thrull.jpg
+value=1
+type=Creature
+subtype=Thrull
+color=b
+cost={0}
+pt=0/1
