@@ -185,11 +185,14 @@ str2 ?= 1
 life ?= 10
 ai1 ?= MMABFast
 ai2 ?= MMABFast
+debug ?= false
+selfMode ?= false
+
 %.t: $(MAG)
 	echo `hg id -n` > $*.log
 	$(RUN) \
 	-Dmagarena.dir=`pwd`/release \
-	-Ddebug=true \
+	-Ddebug=${debug} \
 	magic.DeckStrCal \
 	--seed $* \
 	--ai1 ${ai1} --str1 ${str1} \
@@ -204,8 +207,6 @@ test: $(MAG)
 debug: $(MAG)
 	-make test debug=true
 
-selfMode ?= false
-debug ?= false
 %.d: $(MAG)
 	$(JAVA) -DrndSeed=$* -DselfMode=$(selfMode) -Ddebug=$(debug) -Dmagarena.dir=`pwd`/release -jar $^ |& tee $*.log
 
@@ -545,7 +546,7 @@ smallest.convert:
 
 ai/benchmark.rnd:
 	sort -R exp/AIs.txt > exp/rnd.txt
-	ts make games=10 life=20 \
+	ts make debug=true games=10 life=20 \
 	ai1=`cat exp/rnd.txt | tail -1` \
 	str1=`sort -R exp/STRs.txt | tail -1` \
 	ai2=`cat exp/rnd.txt | tac | tail -1` \
