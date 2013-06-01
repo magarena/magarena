@@ -174,7 +174,7 @@ log.clean:
 	-rm -f *.log
 
 inf: $(MAG)
-	-while true; do make 0`date +%s`.t; done
+	-while true; do make debug=true 0`date +%s`.t; done
 
 buildhive:
 	make games=100 ai1=MMABC ai2=MCTS `date +%s`.t zips
