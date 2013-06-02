@@ -86,10 +86,6 @@ public class MagicCardList extends ArrayList<MagicCard> {
         return MagicCard.NONE;
     }
     
-    private MagicCard getRandomCard() {
-        return get(MagicRandom.nextInt(size()));
-    }
-    
     public void setCards(final MagicCardList cardList) {
         clear();
         addAll(cardList);
