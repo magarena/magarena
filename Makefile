@@ -360,12 +360,7 @@ up:
 	cd wiki; hg pull -u; cd ..
 
 code_clones:
-	~/App/pmd-bin-5.0-alpha/bin/run.sh cpd \
-			--minimum-tokens 100 \
-			--ignore-literals true \
-			--ignore-identifiers true \
-			--language java \
-			--files src/magic/card > $@
+	java -jar ~/App/simian/bin/simian-2.3.33.jar release/Magarena/scripts/*.groovy > $@
 
 cards/mtg-data:
 	curl https://dl.dropbox.com/u/2771470/index.html | grep -o 'href="mtg.*.zip' | head -1 | sed 's/href="//' | xargs -I'{}' wget https://dl.dropbox.com/u/2771470/'{}'
