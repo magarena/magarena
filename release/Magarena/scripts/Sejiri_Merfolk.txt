@@ -1,0 +1,11 @@
+name=Sejiri Merfolk
+url=http://magiccards.info/wwk/en/36.html
+image=http://magiccards.info/scans/en/wwk/36.jpg
+value=3.611
+rarity=U
+type=Creature
+subtype=Merfolk,Soldier
+cost={1}{U}
+pt=2/1
+timing=main
+requires_groovy_code
