@@ -1,0 +1,12 @@
+name=Crimson Muckwader
+url=http://magiccards.info/m13/en/127.html
+image=http://magiccards.info/scans/en/m13/127.jpg
+value=3.611
+rarity=U
+type=Creature
+subtype=Lizard
+cost={1}{R}
+pt=2/1
+ability=regenerate {2}{B}
+timing=main
+requires_groovy_code
