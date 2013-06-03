@@ -15,7 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
             final MagicPlayer player = event.getPlayer();
-            if (player.controlsPermanentWithType(MagicType.Enchantment)) {
+            if (player.controlsPermanent(MagicType.Enchantment)) {
                 game.addEvent(new MagicSacrificePermanentEvent(permanent,player,MagicTargetChoice.SACRIFICE_ENCHANTMENT));
             } else {
                 game.doAction(new MagicSacrificeAction(permanent));                

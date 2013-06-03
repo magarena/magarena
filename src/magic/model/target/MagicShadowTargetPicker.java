@@ -38,7 +38,7 @@ public class MagicShadowTargetPicker extends MagicTargetPicker<MagicPermanent> {
             // no score for not being able to block
             // or opponent has no shadow creatures
             if (!permanent.canBlock() ||
-                !player.getOpponent().controlsPermanentWithAbility(MagicAbility.Shadow)) {
+                !player.getOpponent().controlsPermanent(MagicAbility.Shadow)) {
                 return 0;
             }
         }

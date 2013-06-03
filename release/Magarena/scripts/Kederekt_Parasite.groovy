@@ -3,7 +3,7 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard card) {
             return (permanent.isEnemy(card) && 
-                    permanent.getController().controlsPermanentWithColor(MagicColor.Red)) ?                
+                    permanent.getController().controlsPermanent(MagicColor.Red)) ?                
                 new MagicEvent(
                     permanent,
                     card.getController(),

@@ -38,7 +38,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer opponent=event.getPlayer();
-            if (opponent.controlsPermanentWithType(MagicType.Creature)) {
+            if (opponent.controlsPermanent(MagicType.Creature)) {
                 game.addEvent(new MagicSacrificePermanentEvent(
                     event.getSource(),
                     opponent,

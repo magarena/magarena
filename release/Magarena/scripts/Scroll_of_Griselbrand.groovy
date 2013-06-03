@@ -32,7 +32,7 @@
                         1,
                         false
                     ));
-                    if (player.controlsPermanentWithSubType(MagicSubType.Demon)) {
+                    if (player.controlsPermanent(MagicSubType.Demon)) {
                         game.doAction(new MagicChangeLifeAction(player,-3));
                     }
                 }

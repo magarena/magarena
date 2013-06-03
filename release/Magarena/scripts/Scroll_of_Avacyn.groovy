@@ -25,7 +25,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicDrawAction(player,1));
-            if (player.controlsPermanentWithSubType(MagicSubType.Angel)) {
+            if (player.controlsPermanent(MagicSubType.Angel)) {
                 game.doAction(new MagicChangeLifeAction(player,5));
             }
         }

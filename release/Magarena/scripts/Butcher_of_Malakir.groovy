@@ -1,7 +1,7 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
     final MagicPlayer opponent=event.getPlayer().getOpponent();
-    if (opponent.controlsPermanentWithType(MagicType.Creature)) {
+    if (opponent.controlsPermanent(MagicType.Creature)) {
         game.addEvent(new MagicSacrificePermanentEvent(
             event.getPermanent(),
             opponent,

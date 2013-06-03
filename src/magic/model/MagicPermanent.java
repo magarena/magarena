@@ -772,7 +772,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         // Landwalk
         for (final MagicColor color : MagicColor.values()) {
             if (hasAbility(color.getLandwalkAbility()) && 
-                defendingPlayer.controlsPermanentWithSubType(color.getLandSubType())) {
+                defendingPlayer.controlsPermanent(color.getLandSubType())) {
                 return false;
             }
         }

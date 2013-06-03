@@ -34,7 +34,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent=event.getPermanent();
             final MagicPlayer player=event.getPlayer();
-            if (player.controlsPermanentWithType(MagicType.Creature)) {
+            if (player.controlsPermanent(MagicType.Creature)) {
                 game.addEvent(new MagicSacrificePermanentEvent(permanent,player,MagicTargetChoice.SACRIFICE_CREATURE));
             } else {
                 game.doAction(new MagicSacrificeAction(permanent));                

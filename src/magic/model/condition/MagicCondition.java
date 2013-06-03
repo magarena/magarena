@@ -180,31 +180,31 @@ public interface MagicCondition {
         
     MagicCondition CONTROL_BAT_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {
-            return source.getController().controlsPermanentWithSubType(MagicSubType.Bat);
+            return source.getController().controlsPermanent(MagicSubType.Bat);
         }
     };
 
     MagicCondition CONTROL_BEAST_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {
-            return source.getController().controlsPermanentWithSubType(MagicSubType.Beast);
+            return source.getController().controlsPermanent(MagicSubType.Beast);
         }
     };
     
     MagicCondition CONTROL_GOBLIN_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {
-            return source.getController().controlsPermanentWithSubType(MagicSubType.Goblin);
+            return source.getController().controlsPermanent(MagicSubType.Goblin);
         }
     };
     
     MagicCondition CONTROL_ARTIFACT_CONDITION = new MagicCondition() {
         public boolean accept(final MagicSource source) {
-            return source.getController().controlsPermanentWithType(MagicType.Artifact);
+            return source.getController().controlsPermanent(MagicType.Artifact);
         }
     };
     
     MagicCondition CONTROL_GOLEM_CONDITION = new MagicCondition() {
         public boolean accept(final MagicSource source) {
-            return source.getController().controlsPermanentWithSubType(MagicSubType.Golem);
+            return source.getController().controlsPermanent(MagicSubType.Golem);
         }
     };
 

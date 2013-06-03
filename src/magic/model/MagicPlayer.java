@@ -444,7 +444,7 @@ public class MagicPlayer implements MagicTarget {
         return count;
     }
     
-    public boolean controlsPermanentWithColor(final MagicColor color) {
+    public boolean controlsPermanent(final MagicColor color) {
         for (final MagicPermanent permanent : permanents) {
             if (permanent.hasColor(color)) {
                 return true;
@@ -453,7 +453,7 @@ public class MagicPlayer implements MagicTarget {
         return false;
     }
     
-    public boolean controlsPermanentWithType(final MagicType type) {
+    public boolean controlsPermanent(final MagicType type) {
         for (final MagicPermanent permanent : permanents) {
             if (permanent.hasType(type)) {
                 return true;
@@ -462,7 +462,7 @@ public class MagicPlayer implements MagicTarget {
         return false;
     }
     
-    public boolean controlsPermanentWithSubType(final MagicSubType subType) {
+    public boolean controlsPermanent(final MagicSubType subType) {
         for (final MagicPermanent permanent : permanents) {
             if (permanent.hasSubType(subType)) {
                 return true;
@@ -471,7 +471,7 @@ public class MagicPlayer implements MagicTarget {
         return false;        
     }
     
-    public boolean controlsPermanentWithAbility(final MagicAbility ability) {
+    public boolean controlsPermanent(final MagicAbility ability) {
         for (final MagicPermanent permanent : permanents) {
             if (permanent.hasAbility(ability)) {
                 return true;
