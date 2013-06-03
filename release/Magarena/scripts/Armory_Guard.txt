@@ -1,0 +1,11 @@
+name=Armory Guard
+url=http://magiccards.info/rtr/en/2.html
+image=http://magiccards.info/scans/en/rtr/2.jpg
+value=3.611
+rarity=C
+type=Creature
+subtype=Giant,Soldier
+cost={3}{W}
+pt=2/5
+timing=main
+requires_groovy_code
