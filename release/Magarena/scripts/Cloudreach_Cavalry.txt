@@ -1,0 +1,11 @@
+name=Cloudreach Cavalry
+url=http://magiccards.info/le/en/7.html
+image=http://magiccards.info/scans/en/le/7.jpg
+value=3.611
+rarity=U
+type=Creature
+subtype=Human,Soldier
+cost={1}{W}
+pt=1/1
+timing=main
+requires_groovy_code
