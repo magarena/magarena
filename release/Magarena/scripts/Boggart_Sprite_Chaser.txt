@@ -1,0 +1,11 @@
+name=Boggart Sprite-Chaser
+url=http://magiccards.info/lw/en/156.html
+image=http://magiccards.info/scans/en/lw/156.jpg
+value=3.611
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+cost={1}{R}
+pt=1/2
+timing=main
+requires_groovy_code
