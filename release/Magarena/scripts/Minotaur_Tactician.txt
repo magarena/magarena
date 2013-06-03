@@ -1,0 +1,12 @@
+name=Minotaur Tactician
+url=http://magiccards.info/ap/en/65.html
+image=http://magiccards.info/scans/en/ap/65.jpg
+value=2.923
+rarity=C
+type=Creature
+subtype=Minotaur
+cost={3}{R}
+pt=1/1
+ability=haste
+timing=main
+requires_groovy_code
