@@ -1,0 +1,11 @@
+name=Kithkin Greatheart
+url=http://magiccards.info/lw/en/25.html
+image=http://magiccards.info/scans/en/lw/25.jpg
+value=3.611
+rarity=C
+type=Creature
+subtype=Kithkin,Soldier
+cost={1}{W}
+pt=2/1
+timing=main
+requires_groovy_code
