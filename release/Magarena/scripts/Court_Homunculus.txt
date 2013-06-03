@@ -1,0 +1,11 @@
+name=Court Homunculus
+url=http://magiccards.info/cfx/en/6.html
+image=http://magiccards.info/scans/en/cfx/6.jpg
+value=3.611
+rarity=C
+type=Artifact,Creature
+subtype=Homunculus
+cost={W}
+pt=1/1
+timing=main
+requires_groovy_code
