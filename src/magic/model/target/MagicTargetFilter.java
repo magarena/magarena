@@ -580,7 +580,11 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     
     MagicPermanentFilterImpl TARGET_GREEN_CREATURE_YOU_CONTROL = Factory.creature(MagicColor.Green, Control.You);
     
+    MagicPermanentFilterImpl TARGET_GREEN_CREATURE = Factory.creature(MagicColor.Green, Control.Any);
+    
     MagicPermanentFilterImpl TARGET_RED_CREATURE_YOU_CONTROL = Factory.creature(MagicColor.Red, Control.You);
+    
+    MagicPermanentFilterImpl TARGET_RED_CREATURE = Factory.creature(MagicColor.Red, Control.Any);
     
     MagicPermanentFilterImpl TARGET_WHITE_CREATURE_YOU_CONTROL = Factory.creature(MagicColor.White, Control.You);
     

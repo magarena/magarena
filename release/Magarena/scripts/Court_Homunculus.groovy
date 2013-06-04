@@ -2,8 +2,8 @@
     new MagicStatic(MagicLayer.ModPT) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            // incorrect implementation, should be ANOTHER artifact
-            if (source.getController().controlsPermanent(MagicType.Artifact)) {
+            final MagicPermanentFilterImpl filter = new MagicOtherPermanentTargetFilter(MagicTargetFilter.TARGET_ARTIFACT, source);
+            if (source.getController().controlsPermanent(filter)) {
                 pt.add(1,1);
             }
         }
