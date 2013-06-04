@@ -79,7 +79,7 @@ public class MagicDealDamageAction extends MagicAction {
         if (target == null &&
             damage.getTarget().isPlayer() && 
             damage.getSource().getController() != damage.getTarget() &&
-            damage.getTarget().getController().getNrOfPermanentsWithType(MagicType.Planeswalker) > 0) {
+            damage.getTarget().getController().controlsPermanent(MagicType.Planeswalker)) {
             game.addEvent(new MagicRedirectDamageEvent(damage));
             return;
         }
