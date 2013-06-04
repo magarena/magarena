@@ -8,4 +8,4 @@ subtype=Homunculus
 cost={1}{U}
 pt=1/3
 timing=main
-requires_groovy_code
+requires_groovy_code=Rootwalla
