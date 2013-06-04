@@ -6,7 +6,7 @@
                 final MagicPermanent permanent,
                 final MagicPlayer eotPlayer) {
             return (permanent.isController(eotPlayer) &&
-                    eotPlayer.getNrOfPermanentsWithSubType(MagicSubType.Demon) == 0) ?
+                    eotPlayer.controlsPermanent(MagicSubType.Demon) == false) ?
                 new MagicEvent(
                     permanent,
                     this,
