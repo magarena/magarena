@@ -3,7 +3,7 @@
         @Override
         protected MagicEvent getEvent(final MagicPermanent permanent) {
             final MagicTargetFilter<MagicPermanent> targetFilter = 
-                    new MagicTargetFilter.MagicOtherPermanentTargetFilter(
+                    new MagicOtherPermanentTargetFilter(
                         MagicTargetFilter.TARGET_NONLAND_PERMANENT,
                         permanent);
             final MagicTargetChoice targetChoice = 

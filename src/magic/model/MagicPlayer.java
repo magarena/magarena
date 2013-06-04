@@ -349,10 +349,6 @@ public class MagicPlayer implements MagicTarget {
         activationMap.removeActivations(permanent);
     }
     
-    public boolean controlsPermanent(final MagicPermanent permanent) {
-        return permanents.contains(permanent);
-    }
-    
     public List<MagicSourceManaActivation> getManaActivations(final MagicGame game) {
         final List<MagicSourceManaActivation> activations=new ArrayList<MagicSourceManaActivation>();
         for (final MagicPermanent permanent : manaPermanents) {
@@ -442,6 +438,19 @@ public class MagicPlayer implements MagicTarget {
             }
         }
         return count;
+    }
+    
+    public boolean controlsPermanent(final MagicTargetFilter filter) {
+        for (final MagicPermanent permanent : permanents) {
+            if (filter.accept(currGame, this, permanent)) {
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    public boolean controlsPermanent(final MagicPermanent permanent) {
+        return permanents.contains(permanent);
     }
     
     public boolean controlsPermanent(final MagicColor color) {

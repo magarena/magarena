@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent=event.getPermanent();
             final MagicTargetFilter<MagicPermanent> targetFilter = 
-                    new MagicTargetFilter.MagicOtherPermanentTargetFilter(
+                    new MagicOtherPermanentTargetFilter(
                     MagicTargetFilter.TARGET_CREATURE,permanent);
             final Collection<MagicPermanent> targets=
                 game.filterPermanents(permanent.getController(),targetFilter);

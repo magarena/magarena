@@ -7,7 +7,7 @@
                 final MagicPermanent creature) {
             if (permanent == creature && 
                 permanent.getController().getNrOfPermanentsWithType(MagicType.Creature) > 1) {
-                final MagicTargetFilter<MagicPermanent> targetFilter = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
+                final MagicTargetFilter<MagicPermanent> targetFilter = new MagicOtherPermanentTargetFilter(
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,permanent
                 );
                 final MagicTargetChoice targetChoice = new MagicTargetChoice(

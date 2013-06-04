@@ -32,4 +32,7 @@ public abstract class MagicPermanentFilterImpl implements MagicTargetFilter<Magi
         }        
         return targets;
     }
+    public boolean acceptType(final MagicTargetType targetType) {
+        return targetType==MagicTargetType.Permanent;
+    }
 }

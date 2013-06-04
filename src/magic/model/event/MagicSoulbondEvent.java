@@ -7,6 +7,7 @@ import magic.model.action.MagicSoulbondAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicOtherPermanentTargetFilter;
 import magic.model.target.MagicTargetHint;
 
 public class MagicSoulbondEvent extends MagicEvent {
@@ -17,7 +18,7 @@ public class MagicSoulbondEvent extends MagicEvent {
             new MagicMayChoice(
                 hasSoulbond ?
                     new MagicTargetChoice(
-                        new MagicTargetFilter.MagicOtherPermanentTargetFilter(
+                        new MagicOtherPermanentTargetFilter(
                             MagicTargetFilter.TARGET_UNPAIRED_CREATURE_YOU_CONTROL,
                             permanent
                         ),

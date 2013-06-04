@@ -48,7 +48,7 @@
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event) {
-            final MagicTargetFilter<MagicPermanent> AllOtherPermanent = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
+            final MagicTargetFilter<MagicPermanent> AllOtherPermanent = new MagicOtherPermanentTargetFilter(
                 MagicTargetFilter.TARGET_NONLAND_NONTOKEN_PERMANENT, 
                 event.getPermanent()
             );
