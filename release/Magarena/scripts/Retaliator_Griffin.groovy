@@ -3,10 +3,9 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final int amount=damage.getDealtAmount();
-            final MagicPlayer player=permanent.getController();
             return (amount > 0 && 
-                    damage.getTarget() == player &&
-                    damage.getSource().getController() != player) ?
+                    permanent.isController(damage.getTarget()) &&
+                    permanent.isEnemy(damage.getSource())) ?
                 new MagicEvent(
                     permanent,
                     amount,

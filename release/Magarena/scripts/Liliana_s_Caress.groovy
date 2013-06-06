@@ -2,20 +2,17 @@
     new MagicWhenDiscardedTrigger() {
         @Override
         public MagicEvent getEvent(final MagicPermanent permanent,final MagicCard card) {
-            final MagicPlayer otherController = card.getOwner();
-            final MagicPlayer player = permanent.getController();
-            return (otherController != player) ?
+            return permanent.isEnemy(card) ?
                 new MagicEvent(
-                        permanent,
-                        otherController,
-                        this,
-                        "PN loses 2 life."):
+                    permanent,
+                    card.getOwner(),
+                    this,
+                    "PN loses 2 life."
+                ):
                 MagicEvent.NONE;
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicChangeLifeAction(event.getPlayer(),-2));
         }
     }

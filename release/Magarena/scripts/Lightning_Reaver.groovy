@@ -18,15 +18,13 @@
     new MagicAtEndOfTurnTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eotPlayer) {
-            final MagicPlayer player=permanent.getController();
-            final int counters=permanent.getCounters(MagicCounterType.Charge);
-            return (player==eotPlayer && counters>0) ?
+            return (permanent.isController(eotPlayer) && 
+                    permanent.getCounters(MagicCounterType.Charge) > 0) ?
                 new MagicEvent(
                     permanent,
-                    player.getOpponent(),
+                    permanent.getOpponent(),
                     this,
-                    "SN deals damage equal to the number of " + 
-                    "charge counters on it to PN."
+                    "SN deals damage equal to the number of charge counters on it to PN."
                 ):
                 MagicEvent.NONE;
         }
