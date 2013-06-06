@@ -28,12 +28,10 @@
     new MagicWhenOtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
-            final MagicPlayer player = permanent.getController();
-            return (cardOnStack.getController() == player &&
+            return (permanent.isFriend(cardOnStack) &&
                     cardOnStack.getCardDefinition().isSpell()) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
                     "SN gets +4/+0 until end of turn."
                 ):

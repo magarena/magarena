@@ -2,18 +2,15 @@
     new MagicWhenLifeIsGainedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicLifeChangeTriggerData lifeChange) {
-            final MagicPlayer player = permanent.getController();
-            final int amount = lifeChange.amount;
-            return (player == lifeChange.player) ?
+            return permanent.isController(lifeChange.player) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new MagicMayChoice(
                         new MagicPayManaCostChoice(MagicManaCost.create("{1}{W}")),
                         MagicTargetChoice.POS_TARGET_CREATURE
                     ),
                     MagicPumpTargetPicker.create(),
-                    amount,
+                    lifeChange.amount,
                     this,
                     "You may\$ pay {1}{W}\$. If you do, put a +1/+1 counter " +
                     "on target creature\$ for each 1 life you gained."

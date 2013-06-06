@@ -23,7 +23,7 @@ public class MagicExaltedTrigger extends MagicWhenAttacksTrigger {
                 permanent,
                 creature,
                 this,
-                creature + " gets +1/+1 until end of turn."
+                "RN gets +1/+1 until end of turn."
             ):
             MagicEvent.NONE;
     }

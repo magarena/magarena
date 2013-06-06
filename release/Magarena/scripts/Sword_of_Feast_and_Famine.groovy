@@ -2,13 +2,11 @@
     new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            final MagicPlayer player=permanent.getController();
             return (damage.getSource()==permanent.getEquippedCreature() && 
                     damage.getTarget().isPlayer() && 
                     damage.isCombat()) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     damage.getTarget(),
                     this,
                     "RN discards a card and you untap all lands you control."

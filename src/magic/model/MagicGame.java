@@ -757,6 +757,14 @@ public class MagicGame {
         return turnPlayer;
     }
     
+    public MagicPlayer getAttackingPlayer() {
+        return turnPlayer;
+    }
+    
+    public MagicPlayer getDefendingPlayer() {
+        return turnPlayer.getOpponent();
+    }
+    
     public MagicPlayer getPriorityPlayer() {
         return step == MagicStep.ActivePlayer ? turnPlayer : getOpponent(turnPlayer);
     }
