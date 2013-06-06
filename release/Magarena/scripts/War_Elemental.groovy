@@ -5,8 +5,7 @@
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPlayer player) {
-            final MagicPlayer opponent = player.getOpponent();
-            return (!opponent.hasState(MagicPlayerState.WasDealtDamage)) ?
+            return (!player.getOpponent().hasState(MagicPlayerState.WasDealtDamage)) ?
                 new MagicEvent(
                     permanent,
                     this,
@@ -25,13 +24,10 @@
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicDamage damage) {
-            final MagicPlayer player = permanent.getController();
-            final MagicPlayer opponent = player.getOpponent();
-            final int amount = damage.getDealtAmount();
-            return damage.getTarget() == opponent ?
+            return permanent.isOpponent(damage.getTarget()) ?
                 new MagicEvent(
                     permanent,
-                    amount,
+                    damage.getDealtAmount(),
                     this,
                     "PN puts RN +1/+1 counters on SN."
                 ):

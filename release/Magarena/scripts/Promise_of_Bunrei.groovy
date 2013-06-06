@@ -2,11 +2,10 @@
     new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            final MagicPlayer player=permanent.getController();
-            return (otherPermanent.isCreature()&&otherPermanent.getController()==player) ?
+            return (otherPermanent.isCreature() &&
+                    otherPermanent.isFriend(permanent)) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
                     "Sacrifice SN. If you do, " + 
                     "put four 1/1 colorless Spirit creature tokens onto the battlefield."

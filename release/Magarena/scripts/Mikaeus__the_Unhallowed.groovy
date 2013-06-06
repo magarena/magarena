@@ -31,13 +31,11 @@
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicDamage damage) {
-            final MagicPlayer player = permanent.getController();
-            return (damage.getTarget() == player && 
+            return (permanent.isController(damage.getTarget()) && 
                     damage.getSource().isPermanent() &&
                     damage.getSource().hasSubType(MagicSubType.Human)) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     damage.getSource(),
                     this,
                     "Destroy RN."

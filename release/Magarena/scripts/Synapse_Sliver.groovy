@@ -3,13 +3,12 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicSource source=damage.getSource();
-            final MagicPlayer player=source.getController();
             return (source.hasSubType(MagicSubType.Sliver)  &&
                     damage.isCombat() &&
                     damage.getTarget().isPlayer()) ?
                 new MagicEvent(
                     permanent,
-                    player,
+                    source.getController(),
                     new MagicSimpleMayChoice(
                         MagicSimpleMayChoice.DRAW_CARDS,
                         1,

@@ -2,23 +2,19 @@
     new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            final MagicPlayer player=permanent.getController();
             return (otherPermanent.isCreature() && 
-                    otherPermanent.getController()==player) ?
+                    otherPermanent.isFriend(permanent)) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     otherPermanent,
                     this,
-                    "Attach SN to " + otherPermanent + "."
+                    "Attach SN to RN."
                 ) :
                 MagicEvent.NONE;
         }
         
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicAttachEquipmentAction(
                 event.getPermanent(),
                 event.getRefPermanent()
