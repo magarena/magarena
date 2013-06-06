@@ -13,19 +13,21 @@
                 final MagicPermanent permanent,
                 final MagicGraveyardTriggerData triggerData) {
             if (triggerData.fromLocation == MagicLocationType.Play) {
-                final MagicPlayer player = permanent.getController();
-                final int cmc = game.filterPermanents(player,
-                        MagicTargetFilter.TARGET_SPIRIT_YOU_CONTROL).size()+1;
+                final int cmc = game.filterPermanents(
+                    permanent.getController(),
+                    MagicTargetFilter.TARGET_SPIRIT_YOU_CONTROL
+                ).size()+1;
                 final MagicTargetFilter<MagicCard> targetFilter =
-                        new MagicTargetFilter.MagicCMCCardFilter(
-                            MagicTargetFilter.TARGET_SPIRIT_CARD_FROM_GRAVEYARD,
-                            MagicTargetFilter.Operator.LESS_THAN_OR_EQUAL,
-                            cmc
-                        );
+                    new MagicTargetFilter.MagicCMCCardFilter(
+                        MagicTargetFilter.TARGET_SPIRIT_CARD_FROM_GRAVEYARD,
+                        MagicTargetFilter.Operator.LESS_THAN_OR_EQUAL,
+                        cmc
+                    );
                 final MagicTargetChoice targetChoice = 
-                        new MagicTargetChoice(
+                    new MagicTargetChoice(
                         targetFilter,false,MagicTargetHint.None,
-                        "a Spirit card from your graveyard)");
+                        "a Spirit card from your graveyard"
+                    );
                 return new MagicEvent(
                     permanent,
                     new MagicMayChoice(targetChoice),
@@ -39,9 +41,7 @@
             return MagicEvent.NONE;
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetCard(game,new MagicCardAction() {
                     public void doAction(final MagicCard card) {

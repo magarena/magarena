@@ -2,13 +2,11 @@
     new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
             return (permanent != otherPermanent &&
                     otherPermanent.isCreature() &&
-                    otherPermanent.getController() == player) ?
+                    otherPermanent.isFriend(permanent)) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     this,
                     "Put a +1/+1 counter on SN."
                 ):

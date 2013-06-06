@@ -2,14 +2,12 @@
     new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            final MagicPlayer player = permanent.getController();
             return (otherPermanent != permanent &&
                     otherPermanent.isCreature() && 
-                    otherPermanent.getController() == player &&
+                    otherPermanent.isFriend(permanent) &&
                     otherPermanent.getPower() <= 2) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new MagicMayChoice(
                         new MagicPayManaCostChoice(MagicManaCost.create("{1}"))
                     ),

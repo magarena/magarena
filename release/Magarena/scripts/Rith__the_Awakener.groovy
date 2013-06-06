@@ -2,11 +2,11 @@
     new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            final MagicPlayer player=permanent.getController();
-            return (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
+            return (damage.getSource()==permanent && 
+                    damage.getTarget().isPlayer() && 
+                    damage.isCombat()) ?
                 new MagicEvent(
                     permanent,
-                    player,
                     new MagicMayChoice(
                         new MagicPayManaCostChoice(MagicManaCost.create("{2}{G}")),
                         MagicColorChoice.MOST_INSTANCE
