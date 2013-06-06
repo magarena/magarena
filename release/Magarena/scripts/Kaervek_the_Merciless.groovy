@@ -2,9 +2,8 @@
     new MagicWhenOtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
-            final MagicPlayer player=permanent.getController();
             final int damage=cardOnStack.getCardDefinition().getConvertedCost();
-            return (cardOnStack.getController()!=player) ?
+            return permanent.isEnemy(cardOnStack) ?
                 new MagicEvent(
                     permanent,
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,

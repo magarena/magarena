@@ -16,21 +16,14 @@
     new MagicIfDamageWouldBeDealtTrigger(5) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            final MagicPlayer player = permanent.getController();
-            final int amountDamage = damage.getAmount();
-            final int amountCounters = permanent.getCounters(MagicCounterType.Charge);
-            if (amountCounters > 0 &&
-                !damage.isUnpreventable() &&
-                amountDamage > 0) {
-                if ((damage.getTarget().isPermanent() &&
-                    damage.getTarget().isCreature() &&
-                    damage.getTarget().getController() == player) ||
-                    damage.getTarget() == player) {
-                    final int amountPrevented = amountCounters >= 5 ? 2:1;
-                    // Prevention effect.
-                    damage.setAmount(amountDamage - amountPrevented);
-                }
-            }            
+            if (permanent.isFriend(damage.getTarget())) {
+                final int amountCounters = permanent.getCounters(MagicCounterType.Charge);
+                final int amountPrevented = 
+                     amountCounters >= 5 ? 2 :
+                     amountCounters >= 1 ? 1 : 0
+                // Prevention effect.
+                damage.prevent(amountPrevented);
+            }
             return MagicEvent.NONE;
         }
     }

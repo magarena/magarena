@@ -43,8 +43,14 @@ public class MagicDamage {
         return (MagicPlayer)target;
     }
     
-    public void setAmount(final int amount) {
-        this.amount=amount;
+    public void setAmount(final int amt) {
+        amount = amt;
+    }
+
+    public void prevent(final int amt) {
+        if (!unpreventable) {
+            amount -= amt;
+        }
     }
     
     public int getAmount() {
