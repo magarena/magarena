@@ -15,7 +15,6 @@
                 new MagicPayManaCostEvent(source,"{B}"),
                 new MagicSacrificePermanentEvent(
                     source,
-                    source.getController(),
                     MagicTargetChoice.SACRIFICE_CREATURE
                 )
             ];

@@ -13,7 +13,6 @@
                 new MagicPayManaCostEvent(source, "{1}"),
                 new MagicSacrificePermanentEvent(
                     source,
-                    source.getController(),
                     MagicTargetChoice.SACRIFICE_SAPROLING
                 )
             ];

@@ -10,12 +10,10 @@
     ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            final MagicPlayer player = source.getController();
             return [
                 new MagicPayManaCostEvent(source,"{R}"),
                 new MagicSacrificePermanentEvent(
                     source,
-                    player,
                     MagicTargetChoice.SACRIFICE_ARTIFACT
                 )
             ];

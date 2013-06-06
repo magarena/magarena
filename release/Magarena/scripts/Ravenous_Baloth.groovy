@@ -10,7 +10,6 @@
             return [
                 new MagicSacrificePermanentEvent(
                     source,
-                    source.getController(),
                     MagicTargetChoice.SACRIFICE_BEAST
                 )
             ];
