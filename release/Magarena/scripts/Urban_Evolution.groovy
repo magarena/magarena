@@ -10,9 +10,7 @@
         }
 
         @Override
-        public void executeEvent(
-                final MagicGame outerGame,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame outerGame, final MagicEvent event) {
             outerGame.doAction(new MagicAddStaticAction(MagicPermanent.NONE,  
                 new MagicStatic(MagicLayer.Game, MagicStatic.UntilEOT) {
                     @Override

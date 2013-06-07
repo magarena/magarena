@@ -12,9 +12,7 @@
                 MagicEvent.NONE;
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer opponent=event.getPlayer();
             final int amount=opponent.getHandSize();
             if (amount < 3 || amount > 4) {

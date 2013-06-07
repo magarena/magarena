@@ -2,7 +2,7 @@
     new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
-            return (permanent.getController()==player) ?
+            return permanent.isController(player) ?
                 new MagicEvent(
                     permanent,
                     this,
@@ -11,9 +11,7 @@
                 MagicEvent.NONE;
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicSource source=event.getSource();
             for (final MagicPlayer player : game.getPlayers()) {
                 final MagicDamage damage=new MagicDamage(source,player,1);

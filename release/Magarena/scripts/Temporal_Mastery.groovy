@@ -3,14 +3,13 @@
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack,
-                    this,
-                    "Take an extra turn after this one. Exile SN.");
+                cardOnStack,
+                this,
+                "Take an extra turn after this one. Exile SN."
+            );
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicChangeExtraTurnsAction(event.getPlayer(),1));
             game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(),MagicLocationType.Exile));
         }
