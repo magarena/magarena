@@ -22,14 +22,13 @@ public class MagicEntersDrawCardTrigger extends MagicWhenComesIntoPlayTrigger {
             final MagicPermanent permanent,
             final MagicPlayer player) {
         return new MagicEvent(
-                permanent,
-                this,
-                "PN draws a card.");
+            permanent,
+            this,
+            "PN draws a card."
+        );
     }
     @Override
-    public void executeEvent(
-            final MagicGame game,
-            final MagicEvent event) {
+    public void executeEvent(final MagicGame game, final MagicEvent event) {
         game.doAction(new MagicDrawAction(event.getPlayer(),1));
     }
 }

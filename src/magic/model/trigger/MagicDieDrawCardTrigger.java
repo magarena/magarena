@@ -42,9 +42,7 @@ public class MagicDieDrawCardTrigger extends MagicWhenPutIntoGraveyardTrigger {
         return MagicEvent.NONE;
     }
     @Override
-    public void executeEvent(
-            final MagicGame game,
-            final MagicEvent event) {
+    public void executeEvent(final MagicGame game, final MagicEvent event) {
         if (mustDraw) {
             game.doAction(new MagicDrawAction(event.getPlayer(),1));
         } else if (event.isYes()) {

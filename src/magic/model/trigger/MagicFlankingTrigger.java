@@ -40,9 +40,7 @@ public class MagicFlankingTrigger extends MagicWhenBecomesBlockedTrigger {
         return MagicEvent.NONE;
     }
     @Override
-    public void executeEvent(
-            final MagicGame game,
-            final MagicEvent event) {
+    public void executeEvent(final MagicGame game, final MagicEvent event) {
         for (final MagicPermanent blocker : event.getRefPermanentList()) {
             game.doAction(new MagicChangeTurnPTAction(blocker,-1,-1));
         }

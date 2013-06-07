@@ -35,9 +35,7 @@ public class MagicBattleCryTrigger extends MagicWhenAttacksTrigger {
     }
 
     @Override
-    public void executeEvent(
-            final MagicGame game,
-            final MagicEvent event) {
+    public void executeEvent(final MagicGame game, final MagicEvent event) {
         final MagicPermanent permanent = event.getPermanent();
         final Collection<MagicPermanent> targets = game.filterPermanents(
                 event.getPlayer(),

@@ -23,9 +23,7 @@ public class MagicMulliganEvent extends MagicEvent {
     }
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             if (event.isYes()) {
                 final MagicCardList hand = new MagicCardList(player.getHand());

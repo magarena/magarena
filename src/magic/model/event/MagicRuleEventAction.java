@@ -23,9 +23,7 @@ import java.util.regex.Matcher;
 public enum MagicRuleEventAction {
     Destroy("destroy ([^\\.]*).", "neg", new MagicDestroyTargetPicker(false), new MagicEventAction() {
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicDestroyAction(creature));
@@ -35,9 +33,7 @@ public enum MagicRuleEventAction {
     }),
     DestroyNoRegen("destroy ([^\\.]*). it can't be regenerated.", "neg", new MagicDestroyTargetPicker(true), new MagicEventAction() {
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeStateAction(creature,MagicPermanentState.CannotBeRegenerated,true));
@@ -48,9 +44,7 @@ public enum MagicRuleEventAction {
     }),
     Counter("counter ([^\\.]*).", "neg", MagicDefaultTargetPicker.create(), new MagicEventAction() {
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game,new MagicCardOnStackAction() {
                 public void doAction(final MagicCardOnStack targetSpell) {
                     game.doAction(new MagicCounterItemOnStackAction(targetSpell));
@@ -60,9 +54,7 @@ public enum MagicRuleEventAction {
     }),
     Exile("exile ([^\\.]*).", "neg", MagicExileTargetPicker.create(), new MagicEventAction() {
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent perm) {
                     game.doAction(new MagicRemoveFromPlayAction(perm,MagicLocationType.Exile));

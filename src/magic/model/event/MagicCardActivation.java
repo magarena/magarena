@@ -79,9 +79,7 @@ public class MagicCardActivation extends MagicActivation<MagicCard> implements M
     };
     
     @Override
-    public void executeEvent(
-            final MagicGame game,
-            final MagicEvent event) {
+    public void executeEvent(final MagicGame game, final MagicEvent event) {
         throw new RuntimeException(getClass() + " did not override executeEvent");
     }
     

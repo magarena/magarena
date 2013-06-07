@@ -31,9 +31,7 @@ public class MagicUndyingTrigger extends MagicWhenDiesTrigger {
     }
 
     @Override
-    public void executeEvent(
-            final MagicGame game,
-            final MagicEvent event) {
+    public void executeEvent(final MagicGame game, final MagicEvent event) {
         final MagicCard card = event.getPermanent().getCard();
         game.doAction(new MagicReanimateAction(
             card.getOwner(),

@@ -32,9 +32,7 @@ public class MagicLivingWeaponTrigger extends MagicWhenComesIntoPlayTrigger {
     }
     
     @Override
-    public void executeEvent(
-            final MagicGame game,
-            final MagicEvent event) {
+    public void executeEvent(final MagicGame game, final MagicEvent event) {
 
         //create the token
         final MagicPlayTokenAction play_token=new MagicPlayTokenAction(

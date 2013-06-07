@@ -50,9 +50,7 @@ public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPl
                 );
             }
             @Override
-            public void executeEvent(
-                    final MagicGame game,
-                    final MagicEvent event) {
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
                 action.executeEvent(game, event);
             }
         };

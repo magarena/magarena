@@ -34,12 +34,11 @@ public abstract class MagicAtEndOfTurnTrigger extends MagicTrigger<MagicPlayer> 
                 MagicEvent.NONE;
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicRemoveFromPlayAction(
-                    event.getPermanent(),
-                    MagicLocationType.OwnersHand));
+                event.getPermanent(),
+                MagicLocationType.OwnersHand
+            ));
         }
     };
 }

@@ -20,9 +20,7 @@ public class MagicStackGetChoicesEvent extends MagicEvent {
     
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicItemOnStack itemOnStack = event.getRefItemOnStack();
             itemOnStack.setChoiceResults(event.getChosen());
 

@@ -32,9 +32,7 @@ public class MagicMiracleTrigger extends MagicWhenDrawnTrigger {
             MagicEvent.NONE;
     }
     @Override
-    public void executeEvent(
-            final MagicGame game,
-            final MagicEvent event) {
+    public void executeEvent(final MagicGame game, final MagicEvent event) {
         if (event.isYes()) {
             final MagicCard card = event.getCard();
 

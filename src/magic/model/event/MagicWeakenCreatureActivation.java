@@ -20,9 +20,7 @@ public abstract class MagicWeakenCreatureActivation extends MagicPermanentActiva
     }
         
     @Override
-    public MagicEvent getPermanentEvent(
-            final MagicPermanent source,
-            final MagicPayedCost payedCost) {
+    public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
         return new MagicEvent(
             source,
             MagicTargetChoice.NEG_TARGET_CREATURE,
@@ -33,9 +31,7 @@ public abstract class MagicWeakenCreatureActivation extends MagicPermanentActiva
     }
 
     @Override
-    public void executeEvent(
-            final MagicGame game,
-            final MagicEvent event) {
+    public void executeEvent(final MagicGame game, final MagicEvent event) {
         event.processTargetPermanent(game,new MagicPermanentAction() {
             public void doAction(final MagicPermanent creature) {
                 game.doAction(new MagicChangeCountersAction(

@@ -32,9 +32,7 @@ public class MagicBloodthirstTrigger extends MagicWhenComesIntoPlayTrigger {
             MagicEvent.NONE;
     }
     @Override
-    public void executeEvent(
-            final MagicGame game,
-            final MagicEvent event) {
+    public void executeEvent(final MagicGame game, final MagicEvent event) {
         game.doAction(new MagicChangeCountersAction(
             event.getPermanent(),
             MagicCounterType.PlusOne,

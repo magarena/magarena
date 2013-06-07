@@ -34,9 +34,7 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
                 );
             }
             @Override
-            public void executeEvent(
-                    final MagicGame game,
-                    final MagicEvent event) {
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
                 action.executeEvent(game, event);
             }
         };

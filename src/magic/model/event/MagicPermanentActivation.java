@@ -59,9 +59,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
     
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
-        public final void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public final void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanentActivation permanentActivation = event.getRefPermanentActivation();
             final MagicPermanent permanent = event.getPermanent();
             final MagicAbilityOnStack abilityOnStack = new MagicAbilityOnStack(
@@ -83,9 +81,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
     public abstract MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost);
     
     @Override
-    public void executeEvent(
-            final MagicGame game,
-            final MagicEvent event) {
+    public void executeEvent(final MagicGame game, final MagicEvent event) {
         throw new RuntimeException(getClass() + " did not override executeEvent");
     }
     
@@ -105,24 +101,22 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
         }
 
         @Override
-        public MagicEvent getPermanentEvent(
-                final MagicPermanent source,
-                final MagicPayedCost payedCost) {
+        public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    source,
-                    this,
-                    "Put a charge counter on SN.");
+                source,
+                this,
+                "Put a charge counter on SN."
+            );
         }
         
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicChangeCountersAction(
-                        event.getPermanent(),
-                        MagicCounterType.Charge,
-                        1,
-                        true));
+                event.getPermanent(),
+                MagicCounterType.Charge,
+                1,
+                true
+            ));
         }        
     };
     
@@ -142,14 +136,13 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
             @Override
             public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
                 return new MagicEvent(
-                        source,
-                        this,
-                        "Untap SN.");
+                    source,
+                    this,
+                    "Untap SN."
+                );
             }
             @Override
-            public void executeEvent(
-                    final MagicGame game,
-                    final MagicEvent event) {
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
                 game.doAction(new MagicUntapAction(event.getPermanent()));
             }
         };
@@ -204,9 +197,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
                         "Return SN to its owner's hand.");
             }
             @Override
-            public void executeEvent(
-                    final MagicGame game,
-                    final MagicEvent event) {
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
                 game.doAction(new MagicRemoveFromPlayAction(event.getPermanent(),MagicLocationType.OwnersHand));
             }
         };
@@ -230,9 +221,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
                 );
             }
             @Override
-            public void executeEvent(
-                    final MagicGame game,
-                    final MagicEvent event) {
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
                 game.doAction(new MagicAddStaticAction(event.getPermanent(), MagicStatic.SwitchPT));
             }
         };

@@ -47,18 +47,14 @@ public class MagicFadeVanishCounterTrigger extends MagicAtUpkeepTrigger {
 
     private static final MagicEventAction SAC_PERM = new MagicEventAction() {
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicSacrificeAction(event.getPermanent()));
         }
     };
     
     private static final MagicEventAction REMOVE_COUNTER = new MagicEventAction() {
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicChangeCountersAction(
                 event.getPermanent(),
                 MagicCounterType.Charge,

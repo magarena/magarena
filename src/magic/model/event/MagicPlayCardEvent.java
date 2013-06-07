@@ -25,9 +25,7 @@ public class MagicPlayCardEvent {
         }
 
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicPlayCardFromStackAction(event.getCardOnStack()));
         }
     };
@@ -44,9 +42,7 @@ public class MagicPlayCardEvent {
                 );
             }
             @Override
-            public void executeEvent(
-                    final MagicGame game,
-                    final MagicEvent event) {
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
                 game.doAction(new MagicPlayCardFromStackAction(event.getCardOnStack(), event.getKickerCount()));
             }
         };
@@ -64,9 +60,7 @@ public class MagicPlayCardEvent {
                 );
             }
             @Override
-            public void executeEvent(
-                    final MagicGame game,
-                    final MagicEvent event) {
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
                 final int X = event.getRefInt();
                 game.doAction(new MagicPlayCardFromStackAction(event.getCardOnStack(), X));
             }

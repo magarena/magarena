@@ -30,9 +30,7 @@ public class MagicAnnihilatorTrigger extends MagicWhenAttacksTrigger {
             MagicEvent.NONE;
     }
     @Override
-    public void executeEvent(
-            final MagicGame game,
-            final MagicEvent event) {
+    public void executeEvent(final MagicGame game, final MagicEvent event) {
         final MagicPlayer player = event.getPlayer();
         int count = amount;
         while (count > 0 && player.getPermanents().size() > 0) {

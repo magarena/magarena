@@ -42,9 +42,7 @@ public class MagicBecomesBlockedPumpTrigger extends MagicWhenBecomesBlockedTrigg
         return MagicEvent.NONE;
     }
     @Override
-    public void executeEvent(
-            final MagicGame game,
-            final MagicEvent event) {
+    public void executeEvent(final MagicGame game, final MagicEvent event) {
         game.doAction(new MagicChangeTurnPTAction(
             event.getPermanent(),
             amountPower,

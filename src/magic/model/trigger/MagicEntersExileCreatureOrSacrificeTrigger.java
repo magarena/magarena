@@ -71,9 +71,7 @@ public class MagicEntersExileCreatureOrSacrificeTrigger extends MagicWhenComesIn
     }
 
     @Override
-    public void executeEvent(
-            final MagicGame game,
-            final MagicEvent event) {
+    public void executeEvent(final MagicGame game, final MagicEvent event) {
         final MagicPermanent permanent = event.getPermanent();
         if (event.isYes()) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
