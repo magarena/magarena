@@ -10,6 +10,10 @@ import magic.model.choice.MagicCardChoiceResult;
 import magic.model.choice.MagicRandomCardChoice;
 
 public class MagicDiscardEvent extends MagicEvent {
+    
+    public MagicDiscardEvent(final MagicSource source,final int amount,final boolean random) {
+        this(source, source.getController(), amount, random);
+    }
 
     public MagicDiscardEvent(final MagicSource source,final MagicPlayer player,final int amount,final boolean random) {
         super(

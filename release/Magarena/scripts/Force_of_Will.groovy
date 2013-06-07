@@ -13,8 +13,8 @@
             final MagicTargetChoice targetChoice =
                 new MagicTargetChoice(filter,false,MagicTargetHint.None,"a blue card from your hand");
             return [
-                new MagicPayLifeEvent(source, source.getController(), 1),
-                new MagicExileCardEvent(source, source.getController(), targetChoice)
+                new MagicPayLifeEvent(source, 1),
+                new MagicExileCardEvent(source, targetChoice)
             ];
         }
     }

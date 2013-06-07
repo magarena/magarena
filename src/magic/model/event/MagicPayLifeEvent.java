@@ -6,6 +6,10 @@ import magic.model.MagicSource;
 import magic.model.action.MagicChangeLifeAction;
 
 public class MagicPayLifeEvent extends MagicEvent {
+    public MagicPayLifeEvent(final MagicSource source,final int amount) {
+        this(source, source.getController(), amount);
+    }
+
     public MagicPayLifeEvent(final MagicSource source,final MagicPlayer player,final int amount) {
         super(
             source,

@@ -12,7 +12,7 @@
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [
                 new MagicTapEvent(source),
-                new MagicDiscardEvent(source,source.getController(),1,false)
+                new MagicDiscardEvent(source,1,false)
             ];
         }
 
