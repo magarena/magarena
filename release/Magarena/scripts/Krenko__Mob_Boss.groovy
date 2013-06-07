@@ -4,7 +4,8 @@
             MagicCondition.CAN_TAP_CONDITION,
         ],
         new MagicActivationHints(MagicTiming.Flash),
-        "Tokens") {
+        "Tokens"
+    ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [
@@ -20,9 +21,7 @@
             );
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amt = event.getPlayer().getNrOfPermanentsWithSubType(MagicSubType.Goblin);
             game.doAction(new MagicPlayTokensAction(
                 event.getPlayer(), 
