@@ -7,7 +7,7 @@
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [
-                new MagicDiscardEvent(source,source.getController(),2,false)
+                new MagicDiscardEvent(source,2,false)
             ];
         }
         @Override

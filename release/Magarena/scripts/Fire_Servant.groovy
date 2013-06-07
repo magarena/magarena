@@ -3,7 +3,7 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicSource source=damage.getSource();
-            if (source.getController()==permanent.getController() && 
+            if (permanent.isFriend(source) && 
                 source.isSpell() &&
                 source.hasColor(MagicColor.Red) && 
                 source.getCardDefinition().isSpell()) {

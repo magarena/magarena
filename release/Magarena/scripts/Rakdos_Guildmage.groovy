@@ -11,7 +11,7 @@
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source,"{3}{B}"),
-                new MagicDiscardEvent(source,source.getController(),1,false)
+                new MagicDiscardEvent(source,1,false)
             ];
         }
         @Override
