@@ -9,9 +9,7 @@
             );
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.addEvent(new MagicPopulateEvent(event.getSource()));
             game.doAction(new MagicAddStaticAction(new MagicStatic(
                 MagicLayer.Ability, 

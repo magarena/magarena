@@ -9,15 +9,13 @@
                     permanent,
                     otherPermanent,
                     this,
-                    "PN gains life equal to " + otherPermanent + "'s toughness."
+                    "PN gains life equal to RN's toughness."
                 ):
                 MagicEvent.NONE;
         }
         
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             // get toughness here so counters on the creature are considered
             final int toughness = (event.getRefPermanent()).getToughness();
             game.doAction(new MagicChangeLifeAction(event.getPlayer(),toughness));
@@ -43,9 +41,7 @@
             );
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.addEvent(new MagicPopulateEvent(event.getSource()));
         }
     }
