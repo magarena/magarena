@@ -19,4 +19,22 @@ public abstract class MagicAtDrawTrigger extends MagicTrigger<MagicPlayer> {
     public MagicTriggerType getType() {
         return MagicTriggerType.AtDraw;
     }
+    
+    public static final MagicAtUpkeepTrigger EachPlayerDraw = new MagicAtUpkeepTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+            return new MagicEvent(
+                permanent,
+                upkeepPlayer,
+                this,
+                "PN draws a card."
+            );
+        }
+        
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            final MagicPlayer player = event.getPlayer();
+            game.doAction(new MagicDrawAction(player,1));
+        }
+    };
 }
