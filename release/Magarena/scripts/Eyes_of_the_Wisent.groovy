@@ -2,7 +2,9 @@
     new MagicWhenOtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
-            return permanent.isEnemy(cardOnStack) && permanent.isController(game.getTurnPlayer()) ?
+            return (permanent.isEnemy(cardOnStack) && 
+                    cardOnStack.hasColor(MagicColor.Blue) &&
+                    permanent.isController(game.getTurnPlayer())) ?
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(),
