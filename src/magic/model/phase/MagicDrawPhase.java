@@ -4,6 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicDrawAction;
 import magic.model.event.MagicExcludeEvent;
+import magic.model.trigger.MagicTriggerType;
 
 public class MagicDrawPhase extends MagicPhase {
 
@@ -27,7 +28,13 @@ public class MagicDrawPhase extends MagicPhase {
 
         final MagicPlayer player=game.getTurnPlayer();
         game.doAction(new MagicDrawAction(player,1));
-        game.setStep(game.canSkip() ? MagicStep.NextPhase : MagicStep.ActivePlayer);
+        
+        game.executeTrigger(MagicTriggerType.AtDraw,game.getTurnPlayer());
+        
+        game.setStep(game.canSkip() ? 
+            MagicStep.NextPhase : 
+            MagicStep.ActivePlayer
+        );
 
         // Determines what the purpose is for permanents that can attack,
         // block or produce mana. Do this after draw, could be a land card.

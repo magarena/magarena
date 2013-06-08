@@ -18,6 +18,9 @@ public class MagicUpkeepPhase extends MagicPhase {
     @Override
     public void executeBeginStep(final MagicGame game) {
         game.executeTrigger(MagicTriggerType.AtUpkeep,game.getTurnPlayer());
-        game.setStep(game.canSkip()?MagicStep.NextPhase:MagicStep.ActivePlayer);
+        game.setStep(game.canSkip() ? 
+            MagicStep.NextPhase:
+            MagicStep.ActivePlayer
+        );
     }
 }

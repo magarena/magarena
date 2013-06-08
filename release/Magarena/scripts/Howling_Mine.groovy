@@ -1,5 +1,5 @@
 [
-    new MagicAtUpkeepTrigger() {
+    new MagicAtDrawTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             return permanent.isUntapped() ?

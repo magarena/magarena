@@ -2,6 +2,7 @@ package magic.model.trigger;
 
 public enum MagicTriggerType {
     AtUpkeep,               // player
+    AtDraw,                 // player
     AtEndOfTurn,            // player
     WhenDamageIsDealt,      // damage
     WhenOtherSpellIsCast,   // card on stack
