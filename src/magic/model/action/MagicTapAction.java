@@ -25,8 +25,8 @@ public class MagicTapAction extends MagicAction {
             permanent.setState(MagicPermanentState.Tapped);
             if (hasScore) {
                 setScore(permanent.getController(),ArtificialScoringSystem.getTappedScore(permanent));
+                game.executeTrigger(MagicTriggerType.WhenBecomesTapped,permanent);
             }
-            game.executeTrigger(MagicTriggerType.WhenBecomesTapped,permanent);
             game.setStateCheckRequired();
         }
     }
