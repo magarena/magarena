@@ -1,0 +1,11 @@
+name=Voice of Resurgence
+url=http://magiccards.info/dgm/en/114.html
+image=http://magiccards.info/scans/en/dgm/114.jpg
+value=1.971
+rarity=M
+type=Creature
+subtype=Elemental
+cost={G}{W}
+pt=2/2
+timing=main
+requires_groovy_code

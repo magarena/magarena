@@ -1,0 +1,9 @@
+name=GW Elemental
+token=Elemental
+image=http://magiccards.info/extras/token/dragons-maze/elemental.jpg
+value=3
+type=Creature
+subtype=Elemental
+color=gw
+cost={0}
+requires_groovy_code=Scion of the Wild
