@@ -1,0 +1,11 @@
+name=Springing Tiger
+url=http://magiccards.info/od/en/272.html
+image=http://magiccards.info/scans/en/od/272.jpg
+value=4.567
+rarity=C
+type=Creature
+subtype=Cat
+cost={3}{G}
+pt=3/3
+timing=main
+requires_groovy_code
