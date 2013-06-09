@@ -1,0 +1,9 @@
+name=Mindstatic
+url=http://magiccards.info/dgm/en/14.html
+image=http://magiccards.info/scans/en/dgm/14.jpg
+value=3.917
+rarity=C
+type=Instant
+cost={3}{U}
+timing=counter
+requires_groovy_code
