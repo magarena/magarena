@@ -1,0 +1,12 @@
+name=Blightsteel Colossus
+url=http://magiccards.info/mbs/en/99.html
+image=http://magiccards.info/scans/en/mbs/99.jpg
+value=4.472
+rarity=M
+type=Artifact,Creature
+subtype=Golem
+cost={12}
+pt=11/11
+ability=trample,infect,graveyard reveal to library,indestructible
+timing=main
+requires_card_code
