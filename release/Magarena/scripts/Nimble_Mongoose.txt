@@ -1,0 +1,12 @@
+name=Nimble Mongoose
+url=http://magiccards.info/od/en/258.html
+image=http://magiccards.info/scans/en/od/258.jpg
+value=4.567
+rarity=U
+type=Creature
+subtype=Mongoose
+cost={G}
+pt=1/1
+ability=shroud
+timing=main
+requires_groovy_code
