@@ -1,0 +1,12 @@
+name=Celestial Ancient
+url=http://magiccards.info/pc2/en/5.html
+image=http://magiccards.info/scans/en/pc2/5.jpg
+value=3.831
+rarity=R
+type=Creature
+subtype=Elemental
+cost={3}{W}{W}
+pt=3/3
+ability=flying
+timing=main
+requires_groovy_code
