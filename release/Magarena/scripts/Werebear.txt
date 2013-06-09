@@ -1,0 +1,12 @@
+name=Werebear
+url=http://magiccards.info/od/en/282.html
+image=http://magiccards.info/scans/en/od/282.jpg
+value=4.567
+rarity=C
+type=Creature
+subtype=Human,Bear,Druid
+cost={1}{G}
+pt=1/1
+ability=tap add mana {G}
+timing=main
+requires_groovy_code
