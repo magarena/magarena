@@ -1,0 +1,9 @@
+name=Psychic Strike
+url=http://magiccards.info/gtc/en/189.html
+image=http://magiccards.info/scans/en/gtc/189.jpg
+value=3.917
+rarity=C
+type=Instant
+cost={1}{U}{B}
+timing=counter
+requires_groovy_code
