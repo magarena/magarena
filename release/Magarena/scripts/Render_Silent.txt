@@ -1,0 +1,9 @@
+name=Render Silent
+url=http://magiccards.info/dgm/en/96.html
+image=http://magiccards.info/scans/en/dgm/96.jpg
+value=3.917
+rarity=R
+type=Instant
+cost={W}{U}{U}
+timing=counter
+requires_groovy_code
