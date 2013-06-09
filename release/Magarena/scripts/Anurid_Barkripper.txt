@@ -1,0 +1,11 @@
+name=Anurid Barkripper
+url=http://magiccards.info/ju/en/104.html
+image=http://magiccards.info/scans/en/ju/104.jpg
+value=4.133
+rarity=C
+type=Creature
+subtype=Frog,Beast
+cost={1}{G}{G}
+pt=2/2
+timing=main
+requires_groovy_code
