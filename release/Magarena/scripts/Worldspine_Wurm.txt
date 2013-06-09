@@ -1,0 +1,12 @@
+name=Worldspine Wurm
+url=http://magiccards.info/rtr/en/140.html
+image=http://magiccards.info/scans/en/rtr/140.jpg
+value=3.981
+rarity=M
+type=Creature
+subtype=Wurm
+cost={8}{G}{G}{G}
+pt=15/15
+timing=main
+ability=trample,graveyard to library
+requires_groovy_code
