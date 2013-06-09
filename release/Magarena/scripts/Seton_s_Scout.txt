@@ -1,0 +1,12 @@
+name=Seton's Scout
+url=http://magiccards.info/tr/en/138.html
+image=http://magiccards.info/scans/en/tr/138.jpg
+value=4.567
+rarity=U
+type=Creature
+subtype=Centaur,Druid,Scout,Archer
+cost={1}{G}
+pt=2/1
+ability=reach
+timing=main
+requires_groovy_code
