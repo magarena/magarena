@@ -1461,7 +1461,9 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
         @Override
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return name.equals(target.getName()) && target.hasType(MagicType.Legendary);
+            return name.equals(target.getName()) && 
+                   target.hasType(MagicType.Legendary) &&
+                   target.isController(player);
         }
     };
 }

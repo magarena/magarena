@@ -914,6 +914,7 @@ public class MagicGame {
             final MagicTargetFilter<MagicPermanent> targetFilter=new MagicTargetFilter.LegendaryTargetFilter(permanent.getName());
             final Collection<MagicPermanent> targets=filterPermanents(permanent.getController(),targetFilter);
             if (targets.size() > 1) {
+                // todo M14: choose one, the rest go to graveyard
                 for (final MagicPermanent target : targets) {
                     final String message="Put " + target.getName() + " into its owner's graveyard (legend rule).";
                     logAppendMessage(target.getController(),message);
@@ -924,7 +925,7 @@ public class MagicGame {
 
         // 704.5j "planeswalker uniqueness rule."
         if (permanent.hasType(MagicType.Planeswalker)) {
-            final Collection<MagicPermanent> targets=filterPermanents(permanent.getController(),MagicTargetFilter.TARGET_PLANESWALKER);
+            final Collection<MagicPermanent> targets=filterPermanents(permanent.getController(),MagicTargetFilter.TARGET_PLANESWALKER_YOU_CONTROL);
             MagicPermanent otherPlaneswalker = permanent;
             for (final MagicPermanent planeswalker : targets) {
                 for (final MagicSubType pwType : MagicSubType.ALL_PLANESWALKERS) {
@@ -936,6 +937,7 @@ public class MagicGame {
                 }
             }
             if (otherPlaneswalker != permanent) {
+                // todo M14: choose one, the rest go to graveyard
                 logAppendMessage(
                     permanent.getController(),
                     "Put " + permanent + " into its owner's graveyard (planeswalker uniqueness rule)."
