@@ -38,13 +38,14 @@ class TestPlaneswalker extends TestGameBuilder {
         addToHand(P, "Venser, the Sojourner", 1);
         addToHand(P, "Vraska the Unseen", 1);
         addToHand(P, "Gideon, Champion of Justice", 1);
+        addToHand(P, "Elspeth, Knight-Errant", 1);
 
         P = opponent;
         
         P.setLife(10);
         addToLibrary(P, "Plains", 10);
         createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Grizzly Bears",false,1);
+        //createPermanent(game,P,"Grizzly Bears",false,1);
         addToHand(P, "Elspeth, Knight-Errant", 1);
         addToHand(P, "Ajani Goldmane", 1);
         addToHand(P, "Garruk, Primal Hunter", 1);

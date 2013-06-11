@@ -2,6 +2,8 @@ package magic.model.target;
 
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Set;
+import java.util.EnumSet;
 
 import magic.model.MagicAbility;
 import magic.model.MagicCard;
@@ -1451,11 +1453,11 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }
     };
     
-    public static final class LegendaryTargetFilter extends MagicPermanentFilterImpl {
+    public static final class LegendaryCopiesFilter extends MagicPermanentFilterImpl {
         
         private final String name;
         
-        public LegendaryTargetFilter(final String name) {
+        public LegendaryCopiesFilter(final String name) {
             this.name=name;
         }
 
@@ -1464,6 +1466,35 @@ public interface MagicTargetFilter<T extends MagicTarget> {
             return name.equals(target.getName()) && 
                    target.hasType(MagicType.Legendary) &&
                    target.isController(player);
+        }
+    };
+    
+    public static final class PlaneswalkerCopiesFilter extends MagicPermanentFilterImpl {
+        
+        private final Set<MagicSubType> pwTypes = EnumSet.noneOf(MagicSubType.class);
+        
+        public PlaneswalkerCopiesFilter(final MagicPermanent permanent) {
+            for (final MagicSubType st : MagicSubType.ALL_PLANESWALKERS) {
+                if (permanent.hasSubType(st)) {
+                    pwTypes.add(st);
+                }
+            }
+        }
+
+        @Override
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            if (target.hasType(MagicType.Planeswalker) == false) {
+                return false;
+            }
+            if (target.isController(player) == false) {
+                return false;
+            }
+            for (final MagicSubType st : pwTypes) {
+                if (target.hasSubType(st)) {
+                    return true;
+                }
+            }
+            return false;
         }
     };
 }

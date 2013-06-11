@@ -15,6 +15,7 @@ import magic.model.choice.MagicDeclareBlockersResult;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventQueue;
+import magic.model.event.MagicUniquenessEvent;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicPermanentStatic;
 import magic.model.mstatic.MagicPermanentStaticMap;
@@ -911,43 +912,19 @@ public class MagicGame {
     public void checkUniquenessRule(final MagicPermanent permanent) {
         // 704.5k "legend rule"
         if (permanent.hasType(MagicType.Legendary)) {
-            final MagicTargetFilter<MagicPermanent> targetFilter=new MagicTargetFilter.LegendaryTargetFilter(permanent.getName());
+            final MagicTargetFilter<MagicPermanent> targetFilter=new MagicTargetFilter.LegendaryCopiesFilter(permanent.getName());
             final Collection<MagicPermanent> targets=filterPermanents(permanent.getController(),targetFilter);
             if (targets.size() > 1) {
-                // todo M14: choose one, the rest go to graveyard
-                for (final MagicPermanent target : targets) {
-                    final String message="Put " + target.getName() + " into its owner's graveyard (legend rule).";
-                    logAppendMessage(target.getController(),message);
-                    doAction(new MagicRemoveFromPlayAction(target,MagicLocationType.Graveyard));
-                }
+                addEvent(new MagicUniquenessEvent(permanent, targetFilter));
             }
         }
 
         // 704.5j "planeswalker uniqueness rule."
         if (permanent.hasType(MagicType.Planeswalker)) {
-            final Collection<MagicPermanent> targets=filterPermanents(permanent.getController(),MagicTargetFilter.TARGET_PLANESWALKER_YOU_CONTROL);
-            MagicPermanent otherPlaneswalker = permanent;
-            for (final MagicPermanent planeswalker : targets) {
-                for (final MagicSubType pwType : MagicSubType.ALL_PLANESWALKERS) {
-                    if (planeswalker != permanent && 
-                        permanent.hasSubType(pwType) && 
-                        planeswalker.hasSubType(pwType)) {
-                        otherPlaneswalker = planeswalker;
-                    }
-                }
-            }
-            if (otherPlaneswalker != permanent) {
-                // todo M14: choose one, the rest go to graveyard
-                logAppendMessage(
-                    permanent.getController(),
-                    "Put " + permanent + " into its owner's graveyard (planeswalker uniqueness rule)."
-                );
-                doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.Graveyard));
-                logAppendMessage(
-                    otherPlaneswalker.getController(),
-                    "Put " + otherPlaneswalker + " into its owner's graveyard (planeswalker uniqueness rule)."
-                );
-                doAction(new MagicRemoveFromPlayAction(otherPlaneswalker,MagicLocationType.Graveyard));
+            final MagicTargetFilter<MagicPermanent> targetFilter=new MagicTargetFilter.PlaneswalkerCopiesFilter(permanent);
+            final Collection<MagicPermanent> targets=filterPermanents(permanent.getController(),targetFilter);
+            if (targets.size() > 1) {
+                addEvent(new MagicUniquenessEvent(permanent, targetFilter));
             }
         }
     }
