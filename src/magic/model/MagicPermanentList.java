@@ -1,6 +1,5 @@
 package magic.model;
 
-import java.util.Collection;
 import java.util.ArrayList;
 
 public class MagicPermanentList extends ArrayList<MagicPermanent> implements MagicCopyable {
@@ -9,7 +8,7 @@ public class MagicPermanentList extends ArrayList<MagicPermanent> implements Mag
 
     public MagicPermanentList() {}
     
-    public MagicPermanentList(final Collection<MagicPermanent> list) {
+    public MagicPermanentList(final MagicPermanentList list) {
         addAll(list);
     }
     
