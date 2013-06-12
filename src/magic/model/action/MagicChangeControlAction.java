@@ -40,6 +40,8 @@ public class MagicChangeControlAction extends MagicAction {
         }
 
         setScore(curr, score + perm.getScore());
+        
+        game.checkUniquenessRule(perm);
         game.setStateCheckRequired();
     }
 
