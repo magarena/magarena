@@ -1,9 +1,5 @@
 [
     new MagicPermanentActivation(
-        [
-            MagicConditionFactory.ManaCost("{1}{R}"),
-            MagicCondition.CONTROL_GOBLIN_CONDITION
-        ],
         new MagicActivationHints(MagicTiming.Removal,true),
         "Damage"
     ) {
