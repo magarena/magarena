@@ -1,8 +1,5 @@
 [
     new MagicCardActivation(
-        [
-            MagicConditionFactory.ManaCost("{4}{R}")
-        ],
         new MagicActivationHints(MagicTiming.Tapping,true),
         "Overload"
     ) {

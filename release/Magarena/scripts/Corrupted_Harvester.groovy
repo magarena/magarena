@@ -1,8 +1,6 @@
 [
     new MagicPermanentActivation(
         [
-            MagicConditionFactory.ManaCost("{B}"),
-            MagicCondition.ONE_CREATURE_CONDITION,
             MagicCondition.CAN_REGENERATE_CONDITION,
             new MagicSingleActivationCondition()
         ],

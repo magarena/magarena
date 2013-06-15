@@ -23,9 +23,6 @@
         }
     },
     new MagicCardActivation(
-        [
-            MagicConditionFactory.ManaCost("{6}{U}")
-        ],
         new MagicActivationHints(MagicTiming.Tapping,true),
         "Overload"
     ) {

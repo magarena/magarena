@@ -1,8 +1,5 @@
 [
     new MagicPermanentActivation(
-        [
-            MagicConditionFactory.ManaCost("{2}"),
-        ],
         new MagicActivationHints(MagicTiming.Token),
         "Token") {
         @Override

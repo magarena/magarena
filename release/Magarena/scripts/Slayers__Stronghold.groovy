@@ -1,9 +1,5 @@
 [
     new MagicPermanentActivation(
-        [
-            MagicCondition.CAN_TAP_CONDITION,
-            MagicConditionFactory.ManaCost("{R}{W}")
-        ],
         new MagicActivationHints(MagicTiming.Pump),
         "Pump"
     ) {

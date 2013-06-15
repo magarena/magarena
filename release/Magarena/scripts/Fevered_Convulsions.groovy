@@ -1,6 +1,5 @@
 [
     new MagicWeakenCreatureActivation(
-        [MagicConditionFactory.ManaCost("{2}{B}{B}")],
         new MagicActivationHints(MagicTiming.Removal,true),
         "-1/-1") {
         @Override

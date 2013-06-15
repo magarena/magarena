@@ -20,7 +20,6 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
 
 [
     new MagicPermanentActivation(
-        [MagicConditionFactory.ManaCost("{4}")],
         new MagicActivationHints(MagicTiming.Animate),
         "Animate"
     ) {
