@@ -30,7 +30,6 @@ public abstract class MagicPlaneswalkerActivation extends MagicPermanentActivati
             new MagicCondition[] {
                 MagicCondition.SORCERY_CONDITION,
                 MagicCondition.ABILITY_ONCE_CONDITION,
-                MagicConditionFactory.ChargeCountersAtLeast(-aCost)
             },
             new MagicActivationHints(MagicTiming.Main),
             description
