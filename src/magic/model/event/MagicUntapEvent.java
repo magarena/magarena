@@ -3,8 +3,12 @@ package magic.model.event;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicUntapAction;
+import magic.model.condition.MagicCondition;
 
 public class MagicUntapEvent extends MagicEvent {
+
+    final MagicCondition[] conds = new MagicCondition[]{MagicCondition.CAN_UNTAP_CONDITION};
+    
     public MagicUntapEvent(final MagicPermanent permanent) {
         super(
             permanent,
@@ -19,4 +23,9 @@ public class MagicUntapEvent extends MagicEvent {
             game.doAction(new MagicUntapAction(event.getPermanent()));
         }        
     };
+    
+    @Override
+    public MagicCondition[] getConditions() {
+        return conds;
+    }
 }
