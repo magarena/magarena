@@ -1,10 +1,7 @@
 [
     new MagicBattalionTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicPermanent attacker) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent attacker) {
             return new MagicEvent(
                 permanent,
                 this,
@@ -12,10 +9,11 @@
             );
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
-            game.doAction(new MagicSetAbilityAction(event.getPermanent(),MagicAbility.FirstStrike));
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            game.doAction(new MagicSetAbilityAction(
+                event.getPermanent(),
+                MagicAbility.FirstStrike
+            ));
         }
     }
 ]

@@ -9,10 +9,11 @@
             );
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
-            game.doAction(new MagicPlayTokenAction(event.getPlayer(), TokenCardDefinitions.get("Saproling")));
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            game.doAction(new MagicPlayTokenAction(
+                event.getPlayer(), 
+                TokenCardDefinitions.get("Saproling")
+            ));
         }
     }
 ]

@@ -13,10 +13,12 @@
                 MagicEvent.NONE;
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
-            game.doAction(new MagicChangeStateAction(event.getRefPermanent(),MagicPermanentState.DestroyAtEndOfCombat,true));
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            game.doAction(new MagicChangeStateAction(
+                event.getRefPermanent(),
+                MagicPermanentState.DestroyAtEndOfCombat,
+                true
+            ));
         }
     }
 ]

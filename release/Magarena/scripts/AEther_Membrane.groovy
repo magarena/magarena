@@ -13,11 +13,12 @@
                 MagicEvent.NONE;
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
-            final MagicPermanent creature = event.getRefPermanent();
-            game.doAction(new MagicChangeStateAction(creature,MagicPermanentState.ReturnToHandOfOwnerAtEndOfCombat,true));
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            game.doAction(new MagicChangeStateAction(
+                event.getRefPermanent(),
+                MagicPermanentState.ReturnToHandOfOwnerAtEndOfCombat,
+                true
+            ));
         }
     }
 ]
