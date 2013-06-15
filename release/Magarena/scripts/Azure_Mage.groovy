@@ -1,9 +1,8 @@
 [
     new MagicPermanentActivation(
-        [MagicConditionFactory.ManaCost("{3}{U}")],
         new MagicActivationHints(MagicTiming.Draw,true),
         "Draw"
-        ) {
+    ) {
         
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {

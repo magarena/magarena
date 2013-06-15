@@ -1,8 +1,5 @@
 [
     new MagicPermanentActivation(
-        [
-            MagicConditionFactory.ManaCost("{G}")
-        ],
         new MagicActivationHints(MagicTiming.Pump,false),
         "Regen"
     ) {
@@ -37,9 +34,6 @@
         }
     },
     new MagicPermanentActivation(
-        [
-            MagicConditionFactory.ManaCost("{2}{G}{G}{G}")
-        ],
         new MagicActivationHints(MagicTiming.Pump,true),
         "Pump"
     ) {

@@ -20,9 +20,6 @@
         }
     },
     new MagicCardActivation(
-        [
-            MagicConditionFactory.ManaCost("{2}{U}")
-        ],
         new MagicActivationHints(MagicTiming.Removal,true),
         "Overload"
     ) {
