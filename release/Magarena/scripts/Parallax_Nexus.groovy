@@ -15,7 +15,6 @@ def action = {
     new MagicPermanentActivation(
         [
             MagicCondition.SORCERY_CONDITION,
-            MagicConditionFactory.ChargeCountersAtLeast(1)
         ],
         new MagicActivationHints(MagicTiming.Main),
         "Exile"

@@ -1,6 +1,5 @@
 [
     new MagicPermanentActivation(
-        [MagicCondition.HAS_TWO_CARDS_CONDITION],
         new MagicActivationHints(MagicTiming.Token,true),
         "Token"
     ) {
