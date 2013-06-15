@@ -1,6 +1,5 @@
 [
     new MagicPermanentActivation(
-        [MagicConditionFactory.ManaCost("{W}{B}")],
         new MagicActivationHints(MagicTiming.Main),
         "Gains") {
 

@@ -18,10 +18,6 @@
         }
     },
     new MagicPermanentActivation( 
-        [
-            MagicConditionFactory.ManaCost("{1}{R}"),
-            MagicCondition.PLUS_COUNTER_CONDITION
-        ],
         new MagicActivationHints(MagicTiming.Removal),
         "Damage"
     ) {

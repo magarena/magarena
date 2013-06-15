@@ -1,9 +1,5 @@
 [
     new MagicTapCreatureActivation(
-        [
-            MagicCondition.CAN_TAP_CONDITION,
-            MagicConditionFactory.ManaCost("{U}")
-        ],
         new MagicActivationHints(MagicTiming.Tapping),
         "Tap"
     ) {
@@ -15,10 +11,6 @@
         }
     },
     new MagicPermanentActivation(
-        [
-            MagicCondition.CAN_TAP_CONDITION,
-            MagicConditionFactory.ManaCost("{U}")
-        ],
         new MagicActivationHints(MagicTiming.Tapping),
         "Untap"
     ) {

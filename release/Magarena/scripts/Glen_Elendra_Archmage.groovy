@@ -1,6 +1,5 @@
 [
     new MagicPermanentActivation(
-        [MagicConditionFactory.ManaCost("{U}")],
         new MagicActivationHints(MagicTiming.Counter),
         "Counter"
     ) {

@@ -1,9 +1,5 @@
 [
     new MagicPermanentActivation(
-        [
-            MagicConditionFactory.ManaCost("{2}{R}"),
-            MagicCondition.ONE_CREATURE_CONDITION
-        ],
         new MagicActivationHints(MagicTiming.Pump),
         "Strike"
     ) {

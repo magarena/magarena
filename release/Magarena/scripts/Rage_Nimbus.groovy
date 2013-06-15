@@ -1,6 +1,5 @@
 [
     new MagicPermanentActivation( 
-        [MagicConditionFactory.ManaCost("{1}{R}")],
         new MagicActivationHints(MagicTiming.MustAttack),
         "Attacks"
     ) {
