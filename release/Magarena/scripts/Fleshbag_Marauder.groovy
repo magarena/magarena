@@ -12,9 +12,7 @@
             );
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             for (final MagicPlayer player : game.getPlayers()) {
                 game.addEvent(new MagicSacrificePermanentEvent(
                     event.getSource(),

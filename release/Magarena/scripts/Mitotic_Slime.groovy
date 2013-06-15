@@ -11,9 +11,7 @@
         }
 
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicPlayTokensAction(event.getPlayer(), TokenCardDefinitions.get("Ooze2"), 2));
         }
     }

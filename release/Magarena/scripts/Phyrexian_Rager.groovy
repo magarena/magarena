@@ -8,9 +8,7 @@
                     "PN draws a card and loses 1 life.");
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player=event.getPlayer();
             game.doAction(new MagicDrawAction(player,1));
             game.doAction(new MagicChangeLifeAction(player,-1));

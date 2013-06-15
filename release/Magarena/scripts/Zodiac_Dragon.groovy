@@ -5,16 +5,18 @@
             return (permanent == died && permanent.getOwner() == permanent.getController()) ?
                 new MagicEvent(
                     permanent,
-                    new MagicSimpleMayChoice(MagicSimpleMayChoice.DRAW_CARDS, 0, MagicSimpleMayChoice.DEFAULT_NONE),
+                    new MagicSimpleMayChoice(
+                        MagicSimpleMayChoice.DRAW_CARDS, 
+                        0, 
+                        MagicSimpleMayChoice.DEFAULT_NONE
+                    ),
                     this,
                     "PN may\$ return SN to his/her hand."
                 ):
                 MagicEvent.NONE;
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCard card = event.getPermanent().getCard()
             if (event.isYes() && event.getPlayer().getGraveyard().contains(card)) {
                 game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));

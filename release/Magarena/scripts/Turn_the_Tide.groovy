@@ -9,9 +9,7 @@
             );
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer opponent=event.getPlayer().getOpponent();
             final Collection<MagicPermanent> targets=
                 game.filterPermanents(opponent,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
