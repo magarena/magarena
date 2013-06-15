@@ -1,10 +1,8 @@
 [
     new MagicPermanentActivation(
-        [
-            MagicConditionFactory.ManaCost("{4}{G}{W}"),
-        ],
         new MagicActivationHints(MagicTiming.Flash),
-        "Token") {
+        "Token"
+    ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [new MagicPayManaCostEvent(source,"{4}{G}{W}")];
@@ -23,11 +21,9 @@
         }
     },
     new MagicPermanentActivation(
-        [
-            MagicConditionFactory.ManaCost("{2}{G}{W}"),
-        ],
         new MagicActivationHints(MagicTiming.Flash),
-        "Populate") {
+        "Populate"
+    ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [new MagicPayManaCostEvent(source,"{2}{G}{W}")];

@@ -1,9 +1,8 @@
 [
     new MagicPermanentActivation( 
         [
-            MagicConditionFactory.ManaCost("{3}{B}{G}"), //add ONE for the card itself
-            MagicCondition.CAN_TAP_CONDITION,
-            MagicCondition.ONE_CREATURE_CONDITION
+            //add ONE for the card itself
+            MagicConditionFactory.ManaCost("{3}{B}{G}"), 
         ],
         new MagicActivationHints(MagicTiming.Draw),
         "Draw"

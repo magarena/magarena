@@ -1,10 +1,6 @@
 [
     MagicWhenComesIntoPlayTrigger.PutGolemOntoTheBattlefield,
     new MagicPermanentActivation(
-        [
-            MagicConditionFactory.ManaCost("{1}"),
-            MagicCondition.CONTROL_GOLEM_CONDITION
-        ],
         new MagicActivationHints(MagicTiming.Pump,true),
         "Regen"
     ) {

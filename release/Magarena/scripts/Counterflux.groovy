@@ -1,8 +1,5 @@
 [
     new MagicCardActivation(
-        [
-            MagicConditionFactory.ManaCost("{1}{U}{U}{R}")
-        ],
         new MagicActivationHints(MagicTiming.Tapping,true),
         "Overload"
     ) {
@@ -20,9 +17,7 @@
             );
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicItemOnStack> targets=
                 game.filterItemOnStack(event.getPlayer(),MagicTargetFilter.TARGET_SPELL_YOU_DONT_CONTROL);
             for (final MagicItemOnStack targetSpell : targets) {

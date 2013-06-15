@@ -21,10 +21,6 @@
         }    
     },
     new MagicPermanentActivation( 
-        [
-            MagicConditionFactory.ManaCost("{2}{W}"),
-            MagicCondition.PLUS_COUNTER_CONDITION
-        ],
         new MagicActivationHints(MagicTiming.Token),
         "Token"
     ) {

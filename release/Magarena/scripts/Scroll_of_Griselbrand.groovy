@@ -1,6 +1,5 @@
 [
     new MagicPermanentActivation(
-        [MagicConditionFactory.ManaCost("{1}")],
         new MagicActivationHints(MagicTiming.Draw),
         "Draw"
     ) {

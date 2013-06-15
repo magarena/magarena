@@ -1,10 +1,5 @@
 [
     new MagicPermanentActivation(
-        [
-            MagicCondition.CAN_TAP_CONDITION,
-            MagicConditionFactory.ChargeCountersAtLeast(4),
-            MagicConditionFactory.ManaCost("{2}")
-        ],
         new MagicActivationHints(MagicTiming.Draw),
         "Draw"
     ) {

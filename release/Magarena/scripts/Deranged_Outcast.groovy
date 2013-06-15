@@ -1,9 +1,5 @@
 [
     new MagicPermanentActivation(
-        [
-            MagicConditionFactory.ManaCost("{1}{G}"),
-            MagicCondition.ONE_HUMAN_CONDITION,
-        ],
         new MagicActivationHints(MagicTiming.Removal),
         "Pump"
     ) {

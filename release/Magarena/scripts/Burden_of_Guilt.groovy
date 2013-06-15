@@ -2,7 +2,6 @@
     new MagicPermanentActivation(
         [
             MagicCondition.ENCHANTED_IS_UNTAPPED_CONDITION,
-            MagicConditionFactory.ManaCost("{1}")
         ],
         new MagicActivationHints(MagicTiming.Tapping),
         "Tap"
