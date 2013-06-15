@@ -15,6 +15,8 @@ import magic.model.phase.MagicPhaseType;
 
 public interface MagicCondition {
     
+    boolean accept(final MagicSource source);
+    
     MagicCondition NONE = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             return true;
@@ -93,33 +95,9 @@ public interface MagicCondition {
         }
     };
     
-    MagicCondition AI_EQUIP_CONDITION=new MagicCondition() {
-        public boolean accept(final MagicSource source) {
-            final MagicGame game = source.getGame();
-            final MagicPermanent permanent=(MagicPermanent)source;
-            return !game.isArtificial() || 
-                   !permanent.getEquippedCreature().isValid() ||
-                   permanent.getAbilityPlayedThisTurn() < 2;
-        }
-    };
-    
     MagicCondition NOT_CREATURE_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {
             return !source.isCreature();
-        }
-    };
-    
-    MagicCondition MINUS_COUNTER_CONDITION=new MagicCondition() {
-        public boolean accept(final MagicSource source) {
-            final MagicPermanent permanent=(MagicPermanent)source;
-            return permanent.getCounters(MagicCounterType.MinusOne)>0;
-        }
-    };
-    
-    MagicCondition PLUS_COUNTER_CONDITION = new MagicCondition() {
-        public boolean accept(final MagicSource source) {
-            final MagicPermanent permanent = (MagicPermanent)source;
-            return permanent.getCounters(MagicCounterType.PlusOne) > 0;
         }
     };
     
@@ -136,75 +114,9 @@ public interface MagicCondition {
         }
     };
         
-    MagicCondition CONTROL_BAT_CONDITION=new MagicCondition() {
-        public boolean accept(final MagicSource source) {
-            return source.getController().controlsPermanent(MagicSubType.Bat);
-        }
-    };
-
-    MagicCondition CONTROL_BEAST_CONDITION=new MagicCondition() {
-        public boolean accept(final MagicSource source) {
-            return source.getController().controlsPermanent(MagicSubType.Beast);
-        }
-    };
-    
-    MagicCondition CONTROL_GOBLIN_CONDITION=new MagicCondition() {
-        public boolean accept(final MagicSource source) {
-            return source.getController().controlsPermanent(MagicSubType.Goblin);
-        }
-    };
-    
-    MagicCondition CONTROL_ARTIFACT_CONDITION = new MagicCondition() {
-        public boolean accept(final MagicSource source) {
-            return source.getController().controlsPermanent(MagicType.Artifact);
-        }
-    };
-    
-    MagicCondition CONTROL_GOLEM_CONDITION = new MagicCondition() {
-        public boolean accept(final MagicSource source) {
-            return source.getController().controlsPermanent(MagicSubType.Golem);
-        }
-    };
-
-    MagicCondition CONTROL_ANOTHER_MULTICOLORED_PERMANENT = new MagicCondition() {
-        public boolean accept(final MagicSource source) {
-            final MagicPermanent owner = (MagicPermanent)source;
-            for (final MagicPermanent permanent : owner.getController().getPermanents()) {
-                if (permanent != owner && MagicColor.isMulti(permanent)) {
-                    return true;
-                }
-            }
-            return false;
-        }
-    };
-    
-    MagicCondition ONE_CREATURE_CONDITION=new MagicCondition() {
-        public boolean accept(final MagicSource source) {
-            return source.getController().getNrOfPermanentsWithType(MagicType.Creature)>=1;
-        }
-    };
-    
-    MagicCondition ONE_HUMAN_CONDITION=new MagicCondition() {
-        public boolean accept(final MagicSource source) {
-            return source.getController().getNrOfPermanentsWithSubType(MagicSubType.Human)>=1;
-        }
-    };
-    
-    MagicCondition ONE_SAPROLING_CONDITION=new MagicCondition() {
-        public boolean accept(final MagicSource source) {
-            return source.getController().getNrOfPermanentsWithSubType(MagicSubType.Saproling)>=1;
-        }
-    };
-    
     MagicCondition THREE_ATTACKERS_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {
             return source.getController().getNrOfAttackers() >= 3;
-        }
-    };
-    
-    MagicCondition TWO_CREATURES_CONDITION=new MagicCondition() {
-        public boolean accept(final MagicSource source) {
-            return source.getController().getNrOfPermanentsWithType(MagicType.Creature)>=2;
         }
     };
     
@@ -251,17 +163,4 @@ public interface MagicCondition {
             return permanent.getEnchantedCreature().isUntapped();
         }
     };
-    
-    MagicCondition GRAVEYARD_CONTAINS_CREATURE = new MagicCondition() {
-        public boolean accept(final MagicSource source) {
-            for (final MagicCard card : source.getController().getGraveyard()) {
-                if (card.getCardDefinition().isCreature()) {
-                    return true;
-                }
-            }
-            return false;
-        }
-    };
-        
-    boolean accept(final MagicSource source);
 }
