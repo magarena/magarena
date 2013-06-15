@@ -1,6 +1,5 @@
 [
     new MagicPermanentActivation(
-        [MagicConditionFactory.ManaCost("{B}{B}")],
         new MagicActivationHints(MagicTiming.Animate,true),
         "Shadow"
     ) {

@@ -1,6 +1,5 @@
 [
     new MagicPermanentActivation(
-        [MagicConditionFactory.ManaCost("{R/W}")],
         new MagicActivationHints(MagicTiming.Block,true,1),
         "First strike"
     ) {

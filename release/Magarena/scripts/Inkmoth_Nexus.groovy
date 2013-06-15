@@ -22,7 +22,6 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
     new MagicPermanentActivation(
         [
             new MagicArtificialCondition(
-                MagicConditionFactory.ManaCost("{1}"),
                 MagicConditionFactory.ManaCost("{2}")
             )
         ],

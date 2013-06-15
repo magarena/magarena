@@ -1,8 +1,8 @@
 [
     new MagicPermanentActivation(
         [
-            MagicConditionFactory.ManaCost("{2}"),  //add ONE for the card itself
-            MagicCondition.CAN_TAP_CONDITION,
+            //add ONE for the card itself
+            MagicConditionFactory.ManaCost("{2}"),  
             MagicCondition.OPP_FOUR_LANDS_CONDITION
         ],
         new MagicActivationHints(MagicTiming.Removal),

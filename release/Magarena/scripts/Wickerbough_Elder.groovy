@@ -1,9 +1,5 @@
 [
     new MagicPermanentActivation( 
-        [
-            MagicCondition.MINUS_COUNTER_CONDITION,
-            MagicConditionFactory.ManaCost("{G}")
-        ],
         new MagicActivationHints(MagicTiming.Removal),
         "Destroy"
     ) {

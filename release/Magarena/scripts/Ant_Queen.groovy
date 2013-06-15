@@ -1,10 +1,8 @@
 [
     new MagicPermanentActivation(
-        [
-            MagicConditionFactory.ManaCost("{1}{G}"),
-        ],
         new MagicActivationHints(MagicTiming.Flash),
-        "Token") {
+        "Token"
+    ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [new MagicPayManaCostEvent(source,"{1}{G}")];
@@ -18,9 +16,7 @@
             );
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicPlayTokenAction(event.getPlayer(), TokenCardDefinitions.get("Insect4")));
         }
     }

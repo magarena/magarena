@@ -1,6 +1,5 @@
 [
     new MagicPermanentActivation(
-        [MagicConditionFactory.ManaCost("{2}{G}")],
         new MagicActivationHints(MagicTiming.Token,true),
         "Token"
     ) {
