@@ -8,9 +8,13 @@ import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.target.MagicSacrificeTargetPicker;
+import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 
 public class MagicSacrificePermanentEvent extends MagicEvent {
-    
+
+    final MagicCondition[] conds = new MagicCondition[1];
+
     public MagicSacrificePermanentEvent(
             final MagicSource source,
             final MagicTargetChoice targetChoice) {
@@ -29,6 +33,7 @@ public class MagicSacrificePermanentEvent extends MagicEvent {
             EVENT_ACTION,
             "Choose "+targetChoice.getTargetDescription()+"$."
         );
+        conds[0] = MagicConditionFactory.HasOptions(targetChoice);
     }
     
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
@@ -41,4 +46,9 @@ public class MagicSacrificePermanentEvent extends MagicEvent {
             });
         }
     };
+
+    @Override
+    public MagicCondition[] getConditions() {
+        return conds;
+    }
 }

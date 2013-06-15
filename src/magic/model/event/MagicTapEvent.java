@@ -3,8 +3,12 @@ package magic.model.event;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicTapAction;
+import magic.model.condition.MagicCondition;
 
 public class MagicTapEvent extends MagicEvent {
+    
+    final MagicCondition[] conds = new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION};
+
     public MagicTapEvent(final MagicPermanent permanent) {
         super(
             permanent,
@@ -19,4 +23,9 @@ public class MagicTapEvent extends MagicEvent {
             game.doAction(new MagicTapAction(event.getPermanent(),true));
         }
     };
+    
+    @Override
+    public MagicCondition[] getConditions() {
+        return conds;
+    }
 }

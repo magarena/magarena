@@ -526,7 +526,7 @@ public class MagicTargetChoice extends MagicChoice {
     }
 
     @Override
-    final boolean hasOptions(
+    public final boolean hasOptions(
             final MagicGame game,
             final MagicPlayer player,
             final MagicSource source,

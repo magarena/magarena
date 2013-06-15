@@ -12,6 +12,7 @@ import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.MagicManaCost;
+import magic.model.choice.MagicTargetChoice;
 
 public class MagicConditionFactory {
     public static MagicCondition ChargeCountersAtLeast(final int n) {
@@ -22,14 +23,24 @@ public class MagicConditionFactory {
             }
         };
     }
+
     public static MagicCondition ManaCost(String manaCost) {
         return MagicManaCost.create(manaCost).getCondition();
     }
+    
     public static MagicCondition PlusOneCounterAtLeast(final int n) {
         return new MagicCondition() {
             public boolean accept(final MagicSource source) {
                 final MagicPermanent permanent = (MagicPermanent)source;
                 return permanent.getCounters(MagicCounterType.PlusOne) >= n;
+            }
+        };
+    }
+    
+    public static MagicCondition HasOptions(final MagicTargetChoice targetChoice) {
+        return new MagicCondition() {
+            public boolean accept(final MagicSource source) {
+                return targetChoice.hasOptions(source.getGame(), source.getController(), source, false);
             }
         };
     }

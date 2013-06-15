@@ -30,6 +30,7 @@ public class MagicPayManaCostEvent extends MagicEvent {
         conds[0] = cost.getCondition();
     }
 
+    @Override
     public MagicCondition[] getConditions() {
         return conds;
     }
