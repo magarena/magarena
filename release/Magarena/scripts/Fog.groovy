@@ -9,12 +9,10 @@
             );
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
-            final MagicPlayer player = event.getPlayer();
-            game.doAction(new MagicChangePlayerStateAction(player,MagicPlayerState.PreventAllCombatDamage));
-            game.doAction(new MagicChangePlayerStateAction(player.getOpponent(),MagicPlayerState.PreventAllCombatDamage));
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            for (final MagicPlayer player : game.getPlayers()) {
+                game.doAction(new MagicChangePlayerStateAction(player,MagicPlayerState.PreventAllCombatDamage));
+            }
         }
     }
 ]

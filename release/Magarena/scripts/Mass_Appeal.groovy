@@ -1,22 +1,20 @@
 [
     new MagicSpellCardEvent() {
         @Override
-        public MagicEvent getEvent(
-                final MagicCardOnStack cardOnStack,
-                final MagicPayedCost payedCost) {
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
-                    cardOnStack,
-                    this,
-                    "PN draws a card for each Human he or she controls.");
+                cardOnStack,
+                this,
+                "PN draws a card for each Human he or she controls."
+            );
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicDrawAction(
-                    player,
-                    player.getNrOfPermanentsWithSubType(MagicSubType.Human)));
+                player,
+                player.getNrOfPermanentsWithSubType(MagicSubType.Human)
+            ));
         }
     }
 ]

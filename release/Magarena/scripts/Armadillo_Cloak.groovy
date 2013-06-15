@@ -8,13 +8,12 @@
                     permanent,
                     amount,
                     this,
-                    "PN gains " + amount + " life."):
+                    "PN gains RN life."
+                ):
                 MagicEvent.NONE;
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicChangeLifeAction(
                 event.getPlayer(),
                 event.getRefInt()

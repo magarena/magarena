@@ -19,7 +19,6 @@
         }
     },
     new MagicPermanentActivation(
-        MagicActivation.NO_COND,
         new MagicActivationHints(MagicTiming.Removal),
         "Control"
     ) {

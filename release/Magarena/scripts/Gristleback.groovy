@@ -1,8 +1,8 @@
 [
     new MagicPermanentActivation(
-        MagicActivation.NO_COND,
         new MagicActivationHints(MagicTiming.Removal),
-        "Life") {
+        "Life"
+    ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [new MagicSacrificeEvent(source)];

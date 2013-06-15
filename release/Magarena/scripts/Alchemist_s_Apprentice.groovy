@@ -1,9 +1,8 @@
 [
     new MagicPermanentActivation(
-        MagicActivation.NO_COND,
         new MagicActivationHints(MagicTiming.Draw),
         "Draw"
-        ) {
+    ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [new MagicSacrificeEvent(source)];

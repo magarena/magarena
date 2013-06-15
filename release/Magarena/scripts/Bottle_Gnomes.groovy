@@ -1,8 +1,8 @@
 [
     new MagicPermanentActivation(
-        MagicActivation.NO_COND,
         new MagicActivationHints(MagicTiming.Removal),
-        "Life+3") {
+        "Life+3"
+    ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [new MagicSacrificeEvent(source)];
@@ -16,9 +16,7 @@
             );
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicChangeLifeAction(event.getPlayer(),3));
         }
     }
