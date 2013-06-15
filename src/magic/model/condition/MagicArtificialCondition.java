@@ -12,6 +12,10 @@ public class MagicArtificialCondition implements MagicCondition {
         this.normalCondition=normalCondition;
         this.artificialCondition=artificialCondition;
     }
+    
+    public MagicArtificialCondition(final MagicCondition artificialCondition) {
+        this(MagicCondition.NONE, artificialCondition);
+    }
 
     @Override
     public boolean accept(final MagicSource source) {

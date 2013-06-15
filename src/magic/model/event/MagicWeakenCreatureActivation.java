@@ -11,6 +11,12 @@ import magic.model.condition.MagicCondition;
 import magic.model.target.MagicWeakenTargetPicker;
 
 public abstract class MagicWeakenCreatureActivation extends MagicPermanentActivation {
+    
+    public MagicWeakenCreatureActivation(
+            final MagicActivationHints hints,
+            final String text) {
+        super(MagicActivation.NO_COND,hints,text);
+    }
         
     public MagicWeakenCreatureActivation(
             final MagicCondition[] conds, 

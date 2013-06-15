@@ -10,6 +10,12 @@ import magic.model.condition.MagicCondition;
 import magic.model.target.MagicTapTargetPicker;
 
 public abstract class MagicTapCreatureActivation extends MagicPermanentActivation {
+    
+    public MagicTapCreatureActivation(
+            final MagicActivationHints hints,
+            final String text) {
+        super(MagicActivation.NO_COND,hints,text);
+    }
         
     public MagicTapCreatureActivation(
             final MagicCondition[] conds, 

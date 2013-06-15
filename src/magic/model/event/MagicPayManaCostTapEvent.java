@@ -6,8 +6,12 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicTapAction;
 import magic.model.choice.MagicPayManaCostChoice;
+import magic.model.condition.MagicCondition;
 
 public class MagicPayManaCostTapEvent extends MagicEvent {
+
+    final MagicCondition[] conds;
+    
     public MagicPayManaCostTapEvent(final MagicSource source, final String cost) {
         this(source, source.getController(), MagicManaCost.create(cost));
     }
@@ -20,6 +24,10 @@ public class MagicPayManaCostTapEvent extends MagicEvent {
             EVENT_ACTION,
             "Pay "+cost.getText()+"$. Tap SN."
         );
+        conds = new MagicCondition[] {
+            cost.getCondition(),
+            MagicCondition.CAN_TAP_CONDITION
+        };
     }      
 
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {

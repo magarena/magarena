@@ -13,7 +13,7 @@ import magic.model.condition.MagicConditionFactory;
 
 public class MagicSacrificePermanentEvent extends MagicEvent {
 
-    final MagicCondition[] conds = new MagicCondition[1];
+    final MagicCondition[] conds;
 
     public MagicSacrificePermanentEvent(
             final MagicSource source,
@@ -33,7 +33,7 @@ public class MagicSacrificePermanentEvent extends MagicEvent {
             EVENT_ACTION,
             "Choose "+targetChoice.getTargetDescription()+"$."
         );
-        conds[0] = MagicConditionFactory.HasOptions(targetChoice);
+        conds = new MagicCondition[]{MagicConditionFactory.HasOptions(targetChoice)};
     }
     
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
