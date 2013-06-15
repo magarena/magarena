@@ -31,7 +31,6 @@ def C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
     new MagicPermanentActivation(
         [
             MagicCondition.THRESHOLD_CONDITION,
-            MagicConditionFactory.ManaCost("{G}{W}"),
         ],
         new MagicActivationHints(MagicTiming.Animate),
         "Animate"

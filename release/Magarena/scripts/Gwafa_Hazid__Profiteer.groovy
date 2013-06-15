@@ -19,10 +19,6 @@
         }
     },
     new MagicPermanentActivation(
-        [
-            MagicCondition.CAN_TAP_CONDITION,
-            MagicConditionFactory.ManaCost("{W}{U}")
-        ],
         new MagicActivationHints(MagicTiming.Tapping),
         "Bribe"
     ) {
