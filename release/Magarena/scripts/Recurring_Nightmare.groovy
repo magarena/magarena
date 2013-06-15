@@ -1,9 +1,7 @@
 [
     new MagicPermanentActivation(
         [
-            MagicCondition.ONE_CREATURE_CONDITION,
             MagicCondition.SORCERY_CONDITION,
-            MagicCondition.GRAVEYARD_CONTAINS_CREATURE
         ],
         new MagicActivationHints(MagicTiming.Pump),
         "Return"
