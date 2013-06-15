@@ -28,7 +28,6 @@
     new MagicPermanentActivation(
         [
             MagicConditionFactory.ChargeCountersAtLeast(8),
-            MagicConditionFactory.ManaCost("{R}")
         ],
         new MagicActivationHints(MagicTiming.Pump),
         "+1/+0"

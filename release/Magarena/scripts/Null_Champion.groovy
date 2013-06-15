@@ -14,7 +14,6 @@
         [
             MagicConditionFactory.ChargeCountersAtLeast(4),
             MagicCondition.CAN_REGENERATE_CONDITION,
-            MagicConditionFactory.ManaCost("{B}")
         ],
         new MagicActivationHints(MagicTiming.Pump),
         "Regen"

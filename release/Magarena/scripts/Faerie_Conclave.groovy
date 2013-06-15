@@ -30,7 +30,6 @@ def C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
     new MagicPermanentActivation(
         [
             new MagicArtificialCondition(
-                MagicConditionFactory.ManaCost("{1}{U}"),
                 MagicConditionFactory.ManaCost("{U}{U}")
             )
         ],

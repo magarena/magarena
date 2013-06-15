@@ -1,10 +1,5 @@
 [
     new MagicPermanentActivation(
-        [
-            MagicCondition.CAN_TAP_CONDITION,
-            MagicConditionFactory.ManaCost("{2}{U}"),
-            MagicCondition.GRAVEYARD_CONTAINS_CREATURE
-        ],
         new MagicActivationHints(MagicTiming.Token),
         "Token"
     ) {

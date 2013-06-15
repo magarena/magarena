@@ -1,6 +1,5 @@
 [
     new MagicPermanentActivation(
-        [MagicConditionFactory.ManaCost("{U}{U}")], 
         new MagicActivationHints(MagicTiming.Tapping),
         "Tap"
     ) {
