@@ -1,6 +1,5 @@
 [
     new MagicPermanentActivation(
-        [MagicCondition.CONTROL_ARTIFACT_CONDITION],
         new MagicActivationHints(MagicTiming.Pump),
         "Pump"
     ) {

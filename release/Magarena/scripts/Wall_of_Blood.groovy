@@ -1,8 +1,8 @@
 [
     new MagicPermanentActivation( 
-            [MagicCondition.ONE_LIFE_CONDITION],
-            new MagicActivationHints(MagicTiming.Pump),
-            "Pump") {
+        new MagicActivationHints(MagicTiming.Pump),
+        "Pump"
+    ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {

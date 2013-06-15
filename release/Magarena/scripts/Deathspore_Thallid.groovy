@@ -1,8 +1,8 @@
 [
     new MagicPermanentActivation(
-        [MagicCondition.ONE_SAPROLING_CONDITION],
         new MagicActivationHints(MagicTiming.Removal),
-        "-1/-1") {
+        "-1/-1"
+    ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [

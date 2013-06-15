@@ -1,8 +1,8 @@
 [
     new MagicPermanentActivation( 
-        [MagicCondition.SEVEN_LIFE_CONDITION],
         new MagicActivationHints(MagicTiming.Draw),
-        "Draw") {
+        "Draw"
+    ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [

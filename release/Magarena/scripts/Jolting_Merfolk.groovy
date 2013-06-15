@@ -1,8 +1,8 @@
 [
     new MagicTapCreatureActivation(
-        [MagicConditionFactory.ChargeCountersAtLeast(1)],
         new MagicActivationHints(MagicTiming.Tapping),
-        "Tap") {
+        "Tap"
+    ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [

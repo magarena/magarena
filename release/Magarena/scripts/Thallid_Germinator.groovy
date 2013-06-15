@@ -1,8 +1,8 @@
 [
     new MagicPermanentActivation(
-        [MagicCondition.ONE_SAPROLING_CONDITION],
         new MagicActivationHints(MagicTiming.Pump),
-        "Pump") {
+        "Pump"
+    ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [
@@ -23,9 +23,7 @@
             );
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeTurnPTAction(creature,1,1));

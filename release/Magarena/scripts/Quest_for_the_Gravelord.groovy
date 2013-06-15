@@ -1,6 +1,5 @@
 [
     new MagicPermanentActivation(
-        [MagicConditionFactory.ChargeCountersAtLeast(3)],
         new MagicActivationHints(MagicTiming.Token),
         "Token"
     ) {

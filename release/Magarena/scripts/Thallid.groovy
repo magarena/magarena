@@ -18,9 +18,9 @@
         }
     },
     new MagicPermanentActivation(
-            [MagicConditionFactory.ChargeCountersAtLeast(3)],
-            new MagicActivationHints(MagicTiming.Token),
-            "Token") {
+        new MagicActivationHints(MagicTiming.Token),
+        "Token"
+    ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [
@@ -36,9 +36,7 @@
             );
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Saproling")));
         }
     }

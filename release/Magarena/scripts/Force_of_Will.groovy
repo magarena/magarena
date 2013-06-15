@@ -1,9 +1,5 @@
 [
     new MagicCardActivation(
-        [
-            MagicCondition.ONE_LIFE_CONDITION,
-            MagicCondition.HAS_TWO_BLUE_CARDS_CONDITION
-        ],
         new MagicActivationHints(MagicTiming.Counter,true),
         "Alt"
     ) {
