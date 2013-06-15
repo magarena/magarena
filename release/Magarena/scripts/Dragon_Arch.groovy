@@ -1,9 +1,5 @@
 [
     new MagicPermanentActivation(
-        [
-            MagicCondition.CAN_TAP_CONDITION,
-            MagicConditionFactory.ManaCost("{2}")
-        ],
         new MagicActivationHints(MagicTiming.Token),
         "Put"
     ) {

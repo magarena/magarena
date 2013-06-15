@@ -9,7 +9,6 @@
         }
     },
     new MagicPermanentActivation(
-        [MagicConditionFactory.ManaCost("{2}{W}")],
         new MagicActivationHints(MagicTiming.Token,true),
         "Token"
     ) {

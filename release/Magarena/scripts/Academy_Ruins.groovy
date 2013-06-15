@@ -1,9 +1,5 @@
 [
     new MagicPermanentActivation( 
-        [
-            MagicConditionFactory.ManaCost("{2}{U}"),
-            MagicCondition.CAN_TAP_CONDITION,
-        ],
         new MagicActivationHints(MagicTiming.Main),
         "Card"
     ) {

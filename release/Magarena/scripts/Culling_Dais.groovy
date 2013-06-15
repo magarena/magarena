@@ -1,9 +1,5 @@
 [
     new MagicPermanentActivation(
-        [
-            MagicCondition.CAN_TAP_CONDITION,
-            MagicCondition.ONE_CREATURE_CONDITION
-        ],
         new MagicActivationHints(MagicTiming.Pump),
         "Charge"
     ) {
@@ -36,9 +32,6 @@
         }
     },
     new MagicPermanentActivation(
-        [
-            MagicConditionFactory.ManaCost("{1}")
-        ],
         new MagicActivationHints(MagicTiming.Pump),
         "Draw"
     ) {

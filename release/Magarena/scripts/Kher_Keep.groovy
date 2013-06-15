@@ -1,9 +1,5 @@
 [
     new MagicPermanentActivation(
-        [
-            MagicCondition.CAN_TAP_CONDITION,
-            MagicConditionFactory.ManaCost("{1}{R}")
-        ],
         new MagicActivationHints(MagicTiming.Token),
         "Token"
     ) {
@@ -15,9 +11,7 @@
             ];
         }
         @Override
-        public MagicEvent getPermanentEvent(
-                final MagicPermanent source,
-                final MagicPayedCost payedCost) {
+        public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
                 this,
@@ -25,9 +19,7 @@
             );
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicPlayTokenAction(
                 event.getPlayer(),
                 TokenCardDefinitions.get("Kobolds")

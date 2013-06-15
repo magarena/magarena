@@ -24,7 +24,6 @@ def TP = new MagicTargetPicker<MagicPermanent>() {
    
 [
     new MagicPermanentActivation(
-        [MagicConditionFactory.ManaCost("{1}")],
         new MagicActivationHints(MagicTiming.Animate),
         "Animate"
     ) {
