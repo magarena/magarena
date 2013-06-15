@@ -13,11 +13,6 @@ def Black = new MagicStatic(MagicLayer.Color) {
 };
 [
     new MagicPermanentActivation(
-        [
-            MagicCondition.CAN_TAP_CONDITION,
-            MagicCondition.HAS_CARD_CONDITION,
-            MagicConditionFactory.ManaCost("{1}")
-        ],
         new MagicActivationHints(MagicTiming.Main,true),
         "Add counter"
     ) {
@@ -42,10 +37,6 @@ def Black = new MagicStatic(MagicLayer.Color) {
         }
     },
     new MagicPermanentActivation(
-        [
-            MagicCondition.CAN_TAP_CONDITION,
-            MagicConditionFactory.ChargeCountersAtLeast(3)
-        ],
         new MagicActivationHints(MagicTiming.Token),
         "Reanimate"
     ) {

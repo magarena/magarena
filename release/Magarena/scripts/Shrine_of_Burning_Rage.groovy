@@ -40,10 +40,6 @@ def getEvent = {
         }
     },
     new MagicPermanentActivation(
-        [
-            MagicCondition.CAN_TAP_CONDITION,
-            MagicConditionFactory.ManaCost("{3}")
-        ],
         new MagicActivationHints(MagicTiming.Removal),
         "Damage"
     ) {

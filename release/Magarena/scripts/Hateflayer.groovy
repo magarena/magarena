@@ -1,9 +1,5 @@
 [
     new MagicPermanentActivation(
-        [
-            MagicCondition.CAN_UNTAP_CONDITION,
-            MagicConditionFactory.ManaCost("{2}{R}")
-        ],
         new MagicActivationHints(MagicTiming.Removal),
         "Damage"
     ) {

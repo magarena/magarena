@@ -24,10 +24,6 @@ def getEvent = {
         }
     },
     new MagicPermanentActivation(
-        [
-            MagicConditionFactory.ManaCost("{3}{B}{B}"),
-            MagicCondition.CONTROL_BAT_CONDITION
-        ],
         new MagicActivationHints(MagicTiming.Token,true),
         "Token"
     ) {
@@ -48,7 +44,6 @@ def getEvent = {
     new MagicPermanentActivation(
         [
             MagicCondition.CAN_REGENERATE_CONDITION,
-            MagicCondition.CONTROL_BAT_CONDITION,
             new MagicSingleActivationCondition()
         ],
         new MagicActivationHints(MagicTiming.Pump),
