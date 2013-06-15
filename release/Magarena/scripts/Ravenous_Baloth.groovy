@@ -1,6 +1,5 @@
 [
     new MagicPermanentActivation(
-        [MagicCondition.CONTROL_BEAST_CONDITION],
         new MagicActivationHints(MagicTiming.Pump,true),
         "Life+4"
     ) {

@@ -1,8 +1,8 @@
 [
     new MagicPermanentActivation(
-        [MagicCondition.HAS_CARD_CONDITION],
         new MagicActivationHints(MagicTiming.Removal),
-        "Return") {
+        "Return"
+    ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
