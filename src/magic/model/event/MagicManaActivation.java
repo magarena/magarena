@@ -14,6 +14,10 @@ public abstract class MagicManaActivation implements MagicChangeCardDefinition {
     private final List<MagicManaType> manaTypes;
     private final MagicCondition[] conditions;
     private final int weight;
+    
+    public MagicManaActivation(final List<MagicManaType> manaTypes, final int weight) {
+        this(manaTypes, MagicActivation.NO_COND, weight);
+    }
 
     public MagicManaActivation(final List<MagicManaType> manaTypes, final MagicCondition[] conditions, final int weight) {
         this.manaTypes=manaTypes;
@@ -29,16 +33,27 @@ public abstract class MagicManaActivation implements MagicChangeCardDefinition {
         return weight;
     }
     
-    public final boolean canPlay(final MagicGame game,final MagicPermanent perm) {
+    public final boolean canPlay(final MagicGame game,final MagicPermanent source) {
+        // Check conditions for activation
         for (final MagicCondition condition : conditions) {
-            if (!condition.accept(perm)) {
+            if (!condition.accept(source)) {
                 return false;
             }
         }
+        
+        // Check able to pay costs
+        for (final MagicEvent event : getCostEvent(source)) {
+            for (final MagicCondition condition : event.getConditions()) {
+                if (!condition.accept(source)) {
+                    return false;
+                }
+            }
+        }
+
         return true;
     }
     
-    public abstract MagicEvent[] getCostEvent(final MagicPermanent perm);
+    public abstract MagicEvent[] getCostEvent(final MagicPermanent source);
     
     @Override
     public void change(final MagicCardDefinition cdef) {
