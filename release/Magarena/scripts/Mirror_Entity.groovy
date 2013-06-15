@@ -47,7 +47,6 @@
             for (final MagicPermanent creature : creatures) {
                 game.doAction(new MagicBecomesCreatureAction(creature,PT,ST));
             }
-            game.doAction(new MagicPlayAbilityAction(permanent));
         }
     }
 ]

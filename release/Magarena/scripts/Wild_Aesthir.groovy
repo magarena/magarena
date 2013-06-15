@@ -1,8 +1,5 @@
 [
     new MagicPermanentActivation(
-        [
-            MagicCondition.ABILITY_ONCE_CONDITION,
-        ],
         new MagicActivationHints(MagicTiming.Pump),
         "Pump"
     ) {

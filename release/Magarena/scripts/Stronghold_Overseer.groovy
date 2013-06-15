@@ -8,7 +8,6 @@
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source,"{B}{B}"),
-                new MagicPlayAbilityEvent(source)
             ];
         }
 

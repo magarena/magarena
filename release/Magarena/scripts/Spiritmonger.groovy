@@ -7,7 +7,6 @@
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source,"{G}"),
-                new MagicPlayAbilityEvent(source)
             ];
         }
         @Override
@@ -29,7 +28,6 @@
                     return event.getChosenColor().getMask();
                 }   
             }));
-            game.doAction(new MagicPlayAbilityAction(permanent));
         }
     }
 ]
