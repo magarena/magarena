@@ -21,7 +21,6 @@ import magic.model.action.MagicPreventDamageAction;
 import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
-import magic.model.condition.MagicSingleActivationCondition;
 import magic.model.stack.MagicAbilityOnStack;
 import magic.model.target.MagicPreventTargetPicker;
 import magic.model.target.MagicTarget;
@@ -123,16 +122,15 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
     
     public static final MagicPermanentActivation Untap(final MagicManaCost cost) {
         return new MagicPermanentActivation(
-            new MagicCondition[]{
-                MagicCondition.TAPPED_CONDITION,
-                new MagicSingleActivationCondition()
-            },
             new MagicActivationHints(MagicTiming.Tapping),
             "Untap"
         ) {
             @Override
             public MagicEvent[] getCostEvent(final MagicPermanent source) {
-                return new MagicEvent[]{new MagicPayManaCostEvent(source,cost)};
+                return new MagicEvent[]{
+                    new MagicPayManaCostEvent(source,cost),
+                    new MagicUntapConditionsEvent(source,this)
+                };
             }
             @Override
             public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

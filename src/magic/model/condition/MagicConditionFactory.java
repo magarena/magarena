@@ -13,6 +13,7 @@ import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.MagicManaCost;
 import magic.model.choice.MagicTargetChoice;
+import magic.model.event.MagicPermanentActivation;
 
 public class MagicConditionFactory {
     public static MagicCondition ChargeCountersAtLeast(final int n) {
@@ -67,6 +68,16 @@ public class MagicConditionFactory {
         return new MagicCondition() {
             public boolean accept(final MagicSource source) {
                 return source.getController().getLife() >= n;
+            }
+        };
+    }
+
+    public static MagicCondition SingleActivation(final MagicPermanentActivation act) {
+        return new MagicCondition() {
+            @Override
+            public boolean accept(final MagicSource source) {
+                final MagicGame game = source.getGame();
+                return !game.getStack().hasActivationOnTop(source,act);
             }
         };
     }

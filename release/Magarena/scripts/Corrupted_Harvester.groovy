@@ -1,9 +1,5 @@
 [
     new MagicPermanentActivation(
-        [
-            MagicCondition.CAN_REGENERATE_CONDITION,
-            new MagicSingleActivationCondition()
-        ],
         new MagicActivationHints(MagicTiming.Pump),
         "Regen"
     ) {
@@ -14,7 +10,8 @@
                 new MagicSacrificePermanentEvent(
                     source,
                     MagicTargetChoice.SACRIFICE_CREATURE
-                )
+                ),
+                new MagicRegenerationConditionsEvent(source,this)
             ];
         }
         @Override

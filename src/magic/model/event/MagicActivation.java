@@ -9,7 +9,6 @@ import magic.model.MagicPlayerState;
 import magic.model.MagicSource;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
-import magic.model.condition.MagicSingleActivationCondition;
 
 public abstract class MagicActivation<T extends MagicSource> implements MagicEventAction, Comparable<MagicActivation> {
 
@@ -30,14 +29,6 @@ public abstract class MagicActivation<T extends MagicSource> implements MagicEve
         this.conditions=conditions;
         this.hints=hints;
         this.priority=hints.getTiming().getPriority();
-        
-        // set the activation for the single activation condition
-        for (final MagicCondition condition : conditions) {
-            if (condition instanceof MagicSingleActivationCondition) {
-                final MagicSingleActivationCondition singleCondition = (MagicSingleActivationCondition)condition;
-                singleCondition.setActivation(this);
-            }
-        }
         
         //randomly assigned, used for ordering activations
         this.id = hashCode();

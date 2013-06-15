@@ -42,10 +42,6 @@ def getEvent = {
         }
     },
     new MagicPermanentActivation(
-        [
-            MagicCondition.CAN_REGENERATE_CONDITION,
-            new MagicSingleActivationCondition()
-        ],
         new MagicActivationHints(MagicTiming.Pump),
         "Regen"
     ) {
@@ -56,7 +52,8 @@ def getEvent = {
                 new MagicSacrificePermanentEvent(
                     source,
                     MagicTargetChoice.SACRIFICE_BAT
-                )
+                ),
+                new MagicRegenerationConditionsEvent(source, this)
             ];
         }
 
