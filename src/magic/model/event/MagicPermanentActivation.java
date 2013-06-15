@@ -93,9 +93,9 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
     }
     
     public static final MagicPermanentActivation TapAddCharge = new MagicPermanentActivation(
-            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
-            new MagicActivationHints(MagicTiming.Pump),
-            "Charge") {
+        new MagicActivationHints(MagicTiming.Pump),
+        "Charge"
+    ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
@@ -129,7 +129,8 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
                 new MagicSingleActivationCondition()
             },
             new MagicActivationHints(MagicTiming.Tapping),
-            "Untap") {
+            "Untap"
+        ) {
             @Override
             public MagicEvent[] getCostEvent(final MagicPermanent source) {
                 return new MagicEvent[]{new MagicPayManaCostEvent(source,cost)};
@@ -151,9 +152,9 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
     
     public static final MagicPermanentActivation PreventDamage(final int n) {
         return new MagicPermanentActivation(
-            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
             new MagicActivationHints(MagicTiming.Pump),
-            "Prevent " + n) {
+            "Prevent " + n
+        ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
@@ -193,9 +194,10 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
             @Override
             public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
                 return new MagicEvent(
-                        source,
-                        this,
-                        "Return SN to its owner's hand.");
+                    source,
+                    this,
+                    "Return SN to its owner's hand."
+                );
             }
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {

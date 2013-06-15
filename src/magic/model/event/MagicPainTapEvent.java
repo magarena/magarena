@@ -6,8 +6,11 @@ import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicTapAction;
+import magic.model.condition.MagicCondition;
 
 public class MagicPainTapEvent extends MagicEvent {
+    
+    private static final MagicCondition[] conds = new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION};
     
     public MagicPainTapEvent(final MagicSource source) {
         super(
@@ -26,4 +29,9 @@ public class MagicPainTapEvent extends MagicEvent {
             game.doAction(new MagicDealDamageAction(damage));
         }
     };
+    
+    @Override
+    public MagicCondition[] getConditions() {
+        return conds;
+    }
 }

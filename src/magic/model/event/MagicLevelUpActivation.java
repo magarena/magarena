@@ -22,7 +22,6 @@ public class MagicLevelUpActivation extends MagicPermanentActivation {
             new MagicCondition[]{
                 MagicCondition.SORCERY_CONDITION,
                 new MagicArtificialCondition(
-                    MagicCondition.NONE,
                     new MaximumCondition(maximum)
                 ),
             },

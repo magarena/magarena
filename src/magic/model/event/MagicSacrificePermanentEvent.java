@@ -13,7 +13,7 @@ import magic.model.condition.MagicConditionFactory;
 
 public class MagicSacrificePermanentEvent extends MagicEvent {
 
-    final MagicCondition[] conds;
+    private final MagicCondition[] conds;
 
     public MagicSacrificePermanentEvent(
             final MagicSource source,

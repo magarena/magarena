@@ -9,7 +9,7 @@ import magic.model.condition.MagicCondition;
 
 public class MagicPayManaCostEvent extends MagicEvent {
 
-    final MagicCondition[] conds;
+    private final MagicCondition[] conds;
 
     public MagicPayManaCostEvent(final MagicSource source, final MagicManaCost cost) {
         this(source, source.getController(), cost);

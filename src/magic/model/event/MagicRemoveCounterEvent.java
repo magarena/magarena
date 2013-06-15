@@ -9,7 +9,7 @@ import magic.model.condition.MagicConditionFactory;
 
 public class MagicRemoveCounterEvent extends MagicEvent {
 
-    final MagicCondition[] conds;
+    private final MagicCondition[] conds;
 
     public MagicRemoveCounterEvent(final MagicPermanent permanent,final MagicCounterType counterType,final int amount) {
         super(

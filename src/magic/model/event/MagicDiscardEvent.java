@@ -13,7 +13,7 @@ import magic.model.condition.MagicConditionFactory;
 
 public class MagicDiscardEvent extends MagicEvent {
 
-    final MagicCondition[] conds;
+    private final MagicCondition[] conds;
     
     public MagicDiscardEvent(final MagicSource source,final int amount,final boolean random) {
         this(source, source.getController(), amount, random);

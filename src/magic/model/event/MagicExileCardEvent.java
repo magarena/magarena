@@ -14,7 +14,7 @@ import magic.model.condition.MagicConditionFactory;
 
 public class MagicExileCardEvent extends MagicEvent {
     
-    final MagicCondition[] conds;
+    private final MagicCondition[] conds;
     
     public MagicExileCardEvent(final MagicSource source, final MagicTargetChoice targetChoice) {
         this(source, source.getController(), targetChoice);

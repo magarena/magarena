@@ -7,7 +7,6 @@ import magic.model.MagicPermanent;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicTargetAction;
 import magic.model.choice.MagicTargetChoice;
-import magic.model.condition.MagicCondition;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
 
@@ -16,10 +15,10 @@ public class MagicPingActivation extends MagicPermanentActivation {
     private final int n;
     
     public MagicPingActivation(final int n) {
-         super(
-            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
+        super(
             new MagicActivationHints(MagicTiming.Removal),
-            "Damage");
+            "Damage"
+        );
         this.n = n;
     }
 

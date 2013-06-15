@@ -10,12 +10,8 @@ import java.util.List;
 
 public class MagicPainTapManaActivation extends MagicManaActivation {
 
-    private static final MagicCondition[] CONDITIONS = {
-        MagicCondition.CAN_TAP_CONDITION
-    };
-            
     public MagicPainTapManaActivation(final List<MagicManaType> manaTypes) {
-        super(manaTypes,CONDITIONS,manaTypes.size() - 1);
+        super(manaTypes,manaTypes.size() - 1);
     }
         
     @Override

@@ -7,7 +7,7 @@ import magic.model.condition.MagicCondition;
 
 public class MagicTapEvent extends MagicEvent {
     
-    final MagicCondition[] conds = new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION};
+    private static final MagicCondition[] conds = new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION};
 
     public MagicTapEvent(final MagicPermanent permanent) {
         super(
