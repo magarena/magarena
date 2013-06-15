@@ -4,8 +4,13 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicChangeLifeAction;
+import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 
 public class MagicPayLifeEvent extends MagicEvent {
+
+    private final MagicCondition[] conds;
+
     public MagicPayLifeEvent(final MagicSource source,final int amount) {
         this(source, source.getController(), amount);
     }
@@ -21,6 +26,14 @@ public class MagicPayLifeEvent extends MagicEvent {
                 }
             },
             "Pay "+amount+" life."
-        );        
+        );
+        conds = new MagicCondition[] {
+            MagicConditionFactory.LifeAtLeast(amount)
+        };
     }    
+    
+    @Override
+    public MagicCondition[] getConditions() {
+        return conds;
+    }
 }

@@ -28,8 +28,7 @@ public abstract class MagicPlaneswalkerActivation extends MagicPermanentActivati
     public MagicPlaneswalkerActivation(final int aCost, final String description) {
         super(
             new MagicCondition[] {
-                MagicCondition.SORCERY_CONDITION,
-                MagicCondition.ABILITY_ONCE_CONDITION,
+                MagicCondition.SORCERY_CONDITION
             },
             new MagicActivationHints(MagicTiming.Main),
             description

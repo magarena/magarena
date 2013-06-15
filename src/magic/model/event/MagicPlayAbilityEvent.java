@@ -3,8 +3,12 @@ package magic.model.event;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicPlayAbilityAction;
+import magic.model.condition.MagicCondition;
 
 public class MagicPlayAbilityEvent extends MagicEvent {
+
+    private static final MagicCondition[] conds = new MagicCondition[]{MagicCondition.ABILITY_ONCE_CONDITION};
+    
     public MagicPlayAbilityEvent(final MagicPermanent source) {
         super(
             source,
@@ -18,4 +22,9 @@ public class MagicPlayAbilityEvent extends MagicEvent {
             game.doAction(new MagicPlayAbilityAction(event.getPermanent()));
         }
     };
+    
+    @Override
+    public MagicCondition[] getConditions() {
+        return conds;
+    }
 }
