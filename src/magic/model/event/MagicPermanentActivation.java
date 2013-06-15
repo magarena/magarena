@@ -34,8 +34,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
         super(MagicActivation.NO_COND,hints,txt);
     }
     
-    public MagicPermanentActivation(final MagicCondition[] conditions, final MagicActivationHints hints,
-            final String txt) {
+    public MagicPermanentActivation(final MagicCondition[] conditions, final MagicActivationHints hints, final String txt) {
         super(conditions,hints,txt);
     }
 

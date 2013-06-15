@@ -10,19 +10,22 @@ import magic.model.condition.MagicSingleActivationCondition;
 
 public class MagicRegenerationActivation extends MagicPermanentActivation {
 
-    private static final MagicActivationHints ACTIVATION_HINTS = new MagicActivationHints(MagicTiming.Pump);
+    private static final MagicActivationHints hint = new MagicActivationHints(MagicTiming.Pump);
+
+    private static final MagicCondition[] conds = new MagicCondition[]{
+        MagicCondition.CAN_REGENERATE_CONDITION,
+        new MagicSingleActivationCondition(),
+    };
+
     private final MagicManaCost cost;
     
-    public MagicRegenerationActivation(final MagicManaCost cost) {
+    public MagicRegenerationActivation(final MagicManaCost aCost) {
         super(
-            new MagicCondition[]{
-                MagicCondition.CAN_REGENERATE_CONDITION,
-                new MagicSingleActivationCondition(),
-            },
-            ACTIVATION_HINTS, 
+            conds,
+            hint,
             "Regen"
         );
-        this.cost=cost;
+        cost = aCost;
     }
     
     @Override
