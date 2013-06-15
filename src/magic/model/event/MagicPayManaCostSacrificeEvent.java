@@ -6,8 +6,12 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.choice.MagicPayManaCostChoice;
+import magic.model.condition.MagicCondition;
 
 public class MagicPayManaCostSacrificeEvent extends MagicEvent {
+    
+    private final MagicCondition[] conds;
+    
     public MagicPayManaCostSacrificeEvent(final MagicSource source, final String cost) {
         this(source, source.getController(), MagicManaCost.create(cost));
     }
@@ -20,6 +24,7 @@ public class MagicPayManaCostSacrificeEvent extends MagicEvent {
             EVENT_ACTION,
             "Pay "+cost.getText()+"$. Sacrifice SN."
         );
+        conds = new MagicCondition[]{cost.getCondition()};
     }
 
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
@@ -29,4 +34,9 @@ public class MagicPayManaCostSacrificeEvent extends MagicEvent {
             game.doAction(new MagicSacrificeAction(event.getPermanent()));
         }
     };
+
+    @Override
+    public MagicCondition[] getConditions() {
+        return conds;
+    }
 }
