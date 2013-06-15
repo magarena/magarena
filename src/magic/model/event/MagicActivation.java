@@ -43,10 +43,6 @@ public abstract class MagicActivation<T extends MagicSource> implements MagicEve
         this.id = hashCode();
     }
     
-    private final MagicCondition[] getConditions() {
-        return conditions;
-    }
-
     public final MagicActivationHints getActivationHints() {
         return hints;
     }
@@ -106,6 +102,15 @@ public abstract class MagicActivation<T extends MagicSource> implements MagicEve
         for (final MagicCondition condition : conditions) {
             if (!condition.accept(source)) {
                 return false;
+            }
+        }
+
+        // Check able to pay costs
+        for (final MagicEvent event : getCostEvent(source)) {
+            for (final MagicCondition condition : event.getConditions()) {
+                if (!condition.accept(source)) {
+                    return false;
+                }
             }
         }
         

@@ -22,7 +22,6 @@ public class MagicCardActivation extends MagicActivation<MagicCard> implements M
         super(
             new MagicCondition[]{
                 MagicCondition.CARD_CONDITION,
-                cdef.getCost().getCondition()
             },
             cdef.getActivationHints(),
             "Cast"
@@ -30,10 +29,12 @@ public class MagicCardActivation extends MagicActivation<MagicCard> implements M
         usesStack = cdef.usesStack();
     }
     
-    protected MagicCardActivation(
-        final MagicCondition[] conditions,
-        final MagicActivationHints hints,
-        final String txt) {
+    protected MagicCardActivation(final MagicActivationHints hints, final String txt) {
+        super(MagicActivation.NO_COND, hints, txt);
+        usesStack = true;
+    }
+    
+    protected MagicCardActivation(final MagicCondition[] conditions, final MagicActivationHints hints, final String txt) {
         super(conditions, hints, txt);
         usesStack = true;
     }

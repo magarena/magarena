@@ -25,7 +25,6 @@ public class MagicLevelUpActivation extends MagicPermanentActivation {
                     MagicCondition.NONE,
                     new MaximumCondition(maximum)
                 ),
-                cost.getCondition()
             },
             ACTIVATION_HINTS,
             "Level"

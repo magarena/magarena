@@ -18,9 +18,6 @@ public abstract class MagicBloodrushActivation extends MagicCardActivation {
 
     public MagicBloodrushActivation(final MagicManaCost aCost, final String aDesc) {
         super(
-            new MagicCondition[]{
-                aCost.getCondition()
-            },
             new MagicActivationHints(MagicTiming.Pump,true),
             "Bloodrush"
         );

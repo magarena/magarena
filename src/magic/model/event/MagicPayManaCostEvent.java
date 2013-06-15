@@ -5,8 +5,12 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.choice.MagicPayManaCostChoice;
+import magic.model.condition.MagicCondition;
 
 public class MagicPayManaCostEvent extends MagicEvent {
+
+    final MagicCondition[] conds = new MagicCondition[1];
+
     public MagicPayManaCostEvent(final MagicSource source, final MagicManaCost cost) {
         this(source, source.getController(), cost);
     }
@@ -23,6 +27,11 @@ public class MagicPayManaCostEvent extends MagicEvent {
             EVENT_ACTION,
             "Pay "+cost.getText()+"$."
         );
+        conds[0] = cost.getCondition();
+    }
+
+    public MagicCondition[] getConditions() {
+        return conds;
     }
     
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {

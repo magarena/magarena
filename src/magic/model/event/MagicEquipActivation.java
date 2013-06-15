@@ -22,7 +22,6 @@ public class MagicEquipActivation extends MagicPermanentActivation {
             new MagicCondition[]{
                 MagicCondition.SORCERY_CONDITION,
                 MagicCondition.NOT_CREATURE_CONDITION,
-                equipCost.getCondition()
             },
             new MagicActivationHints(MagicTiming.Equipment,false,2),
             "Equip"

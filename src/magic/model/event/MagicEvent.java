@@ -14,6 +14,7 @@ import magic.model.MagicSource;
 import magic.model.MagicColor;
 import magic.model.MagicObject;
 import magic.model.MagicMappable;
+import magic.model.condition.MagicCondition;
 import magic.model.action.MagicCardAction;
 import magic.model.action.MagicCardOnStackAction;
 import magic.model.action.MagicMoveCardAction;
@@ -571,6 +572,10 @@ public class MagicEvent implements MagicCopyable {
             getCardOnStack().getMoveLocation() != MagicLocationType.Play) {
             game.doAction(new MagicMoveCardAction(getCardOnStack()));
         }
+    }
+
+    public MagicCondition[] getConditions() {
+        return MagicActivation.NO_COND;
     }
 
     public String toString() {

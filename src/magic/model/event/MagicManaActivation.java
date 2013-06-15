@@ -25,10 +25,6 @@ public abstract class MagicManaActivation implements MagicChangeCardDefinition {
         return manaTypes;
     }    
         
-    public final MagicCondition[] getConditions() {
-        return conditions;
-    }
-    
     public final int getWeight() {
         return weight;
     }

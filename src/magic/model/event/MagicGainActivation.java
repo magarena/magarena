@@ -14,7 +14,7 @@ public class MagicGainActivation extends MagicPermanentActivation {
     private final MagicAbility ability;
     
     public MagicGainActivation(final MagicManaCost cost,final MagicAbility ability,final MagicActivationHints hints,final String txt) {
-        super(new MagicCondition[]{cost.getCondition()},hints,txt);
+        super(hints,txt);
         this.cost=cost;
         this.ability=ability;
     }

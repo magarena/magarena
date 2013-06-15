@@ -15,9 +15,6 @@ public class MagicCyclingActivation extends MagicCardActivation {
 
     public MagicCyclingActivation(final MagicManaCost aCost) {
         super(
-            new MagicCondition[]{
-                aCost.getCondition()
-            },
             new MagicActivationHints(MagicTiming.Main,true),
             "Cycle"
         );

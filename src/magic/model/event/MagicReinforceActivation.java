@@ -16,9 +16,6 @@ public class MagicReinforceActivation extends MagicCardActivation {
 
     public MagicReinforceActivation(final int n, final MagicManaCost aCost) {
         super(
-            new MagicCondition[]{
-                aCost.getCondition()
-            },
             new MagicActivationHints(MagicTiming.Pump,true),
             "Reinforce"
         );

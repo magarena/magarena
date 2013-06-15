@@ -30,9 +30,11 @@ import magic.model.mstatic.MagicLayer;
 
 public abstract class MagicPermanentActivation extends MagicActivation<MagicPermanent> implements MagicChangeCardDefinition, MagicCopyable {
     
-    public MagicPermanentActivation(
-            final MagicCondition[] conditions,
-            final MagicActivationHints hints,
+    public MagicPermanentActivation(final MagicActivationHints hints, final String txt) {
+        super(MagicActivation.NO_COND,hints,txt);
+    }
+    
+    public MagicPermanentActivation(final MagicCondition[] conditions, final MagicActivationHints hints,
             final String txt) {
         super(conditions,hints,txt);
     }
@@ -124,7 +126,6 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
         return new MagicPermanentActivation(
             new MagicCondition[]{
                 MagicCondition.TAPPED_CONDITION,
-                cost.getCondition(),
                 new MagicSingleActivationCondition()
             },
             new MagicActivationHints(MagicTiming.Tapping),
@@ -182,9 +183,9 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
     
     public static final MagicPermanentActivation ReturnToOwnersHand(final MagicManaCost cost) { 
         return new MagicPermanentActivation(
-                new MagicCondition[]{cost.getCondition()},
-                new MagicActivationHints(MagicTiming.Removal),
-                "Return") {
+            new MagicActivationHints(MagicTiming.Removal),
+            "Return"
+        ) {
             @Override
             public MagicEvent[] getCostEvent(final MagicPermanent source) {
                 return new MagicEvent[]{new MagicPayManaCostEvent(source,cost)};
@@ -205,9 +206,9 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
     
     public static final MagicPermanentActivation SwitchPT(final MagicManaCost cost) {
         return new MagicPermanentActivation(
-            new MagicCondition[] {cost.getCondition()},
             new MagicActivationHints(MagicTiming.Pump),
-            "Switch") {
+            "Switch"
+        ) {
             @Override
             public MagicEvent[] getCostEvent(final MagicPermanent source) {
                 return new MagicEvent[]{new MagicPayManaCostEvent(source,cost)};
