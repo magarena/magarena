@@ -30,7 +30,7 @@ public interface MagicCondition {
             final MagicGame game = source.getGame();
             if (cardDefinition.hasType(MagicType.Instant)||cardDefinition.hasAbility(MagicAbility.Flash)) {
                 return true;
-            } if (cardDefinition.hasType(MagicType.Land)) {
+            } else if (cardDefinition.hasType(MagicType.Land)) {
                 return game.canPlayLand(card.getOwner());
             } else {
                 return game.canPlaySorcery(card.getOwner());
