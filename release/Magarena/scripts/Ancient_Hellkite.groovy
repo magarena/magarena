@@ -2,7 +2,6 @@
     new MagicPermanentActivation(
         [
             MagicCondition.IS_ATTACKING_CONDITION,
-            MagicConditionFactory.ManaCost("{R}")
         ],
         new MagicActivationHints(MagicTiming.Removal),
         "Damage"

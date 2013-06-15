@@ -1,5 +1,7 @@
 [
-    new MagicPermanentActivation([MagicConditionFactory.ManaCost("{B}")], new MagicActivationHints(MagicTiming.None),"Damage") {
+    new MagicPermanentActivation(
+        new MagicActivationHints(MagicTiming.None),"Damage"
+    ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [
@@ -30,7 +32,6 @@
             }
         }
     },
-    
     new MagicAtEndOfTurnTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eotPlayer) {

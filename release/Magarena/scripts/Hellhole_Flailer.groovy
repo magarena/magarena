@@ -1,8 +1,8 @@
 [
     new MagicPermanentActivation(
-        [MagicConditionFactory.ManaCost("{2}{B}{R}")],
         new MagicActivationHints(MagicTiming.Removal),
-        "Damage") {
+        "Damage"
+    ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             final MagicPermanent permanent=source;
@@ -26,9 +26,7 @@
         }
 
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicPermanent source=event.getPermanent();

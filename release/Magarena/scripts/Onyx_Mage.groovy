@@ -1,6 +1,5 @@
 [
     new MagicPermanentActivation(
-        [MagicConditionFactory.ManaCost("{1}{B}")],
         new MagicActivationHints(MagicTiming.Pump,true),
         "Deathtouch"
     ) {
