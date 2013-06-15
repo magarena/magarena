@@ -1,7 +1,6 @@
 [
     new MagicPermanentActivation(
         [
-            MagicConditionFactory.ManaCost("{U}"),
             MagicCondition.METALCRAFT_CONDITION
         ],
         new MagicActivationHints(MagicTiming.Removal,false,1),

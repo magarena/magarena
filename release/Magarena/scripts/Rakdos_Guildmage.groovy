@@ -1,9 +1,5 @@
 [
     new MagicPermanentActivation(
-        [
-            MagicCondition.HAS_CARD_CONDITION,
-            MagicConditionFactory.ManaCost("{3}{B}")
-        ],
         new MagicActivationHints(MagicTiming.Removal,true),
         "-2/-2"
     ) {
@@ -34,7 +30,6 @@
         }
     },
     new MagicPermanentActivation(
-        [MagicConditionFactory.ManaCost("{3}{R}")],
         new MagicActivationHints(MagicTiming.Token,true),
         "Token"
     ) {

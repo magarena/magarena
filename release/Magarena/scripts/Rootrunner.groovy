@@ -1,6 +1,5 @@
 [
     new MagicPermanentActivation(
-        [MagicConditionFactory.ManaCost("{G}{G}")],
         new MagicActivationHints(MagicTiming.Removal),
         "Bounce"
     ) {

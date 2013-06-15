@@ -1,9 +1,5 @@
 [
     new MagicPermanentActivation(
-        [
-            MagicConditionFactory.ManaCost("{1}"),
-            MagicCondition.ONE_CREATURE_CONDITION
-        ],
         new MagicActivationHints(MagicTiming.Pump),
         "Pump"
     ) {

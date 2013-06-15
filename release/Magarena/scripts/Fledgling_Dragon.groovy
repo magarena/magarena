@@ -13,7 +13,6 @@
     new MagicPermanentActivation(
         [
             MagicCondition.THRESHOLD_CONDITION,
-            MagicConditionFactory.ManaCost("{R}")
         ],
         new MagicActivationHints(MagicTiming.Pump),
         "Pump"

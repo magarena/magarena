@@ -1,8 +1,8 @@
 [
     new MagicPermanentActivation(
-        [MagicConditionFactory.ManaCost("{3}{G}")],
         new MagicActivationHints(MagicTiming.Removal),
-        "Damage") {
+        "Damage"
+    ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {

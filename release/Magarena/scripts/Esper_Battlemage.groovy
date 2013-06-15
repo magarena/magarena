@@ -1,9 +1,5 @@
 [
     new MagicPermanentActivation(
-        [
-            MagicCondition.CAN_TAP_CONDITION,
-            MagicConditionFactory.ManaCost("{W}")
-        ],
         new MagicActivationHints(MagicTiming.Pump),
         "Prevent"
     ) {
@@ -28,10 +24,6 @@
         }
     },
     new MagicPermanentActivation(
-        [
-            MagicCondition.CAN_TAP_CONDITION,
-            MagicConditionFactory.ManaCost("{B}")
-        ],
         new MagicActivationHints(MagicTiming.Removal),
         "-1/-1"
     ) {

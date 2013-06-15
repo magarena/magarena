@@ -13,8 +13,6 @@
     new MagicPermanentActivation(
         [
             MagicConditionFactory.ChargeCountersAtLeast(2),
-            MagicCondition.CAN_TAP_CONDITION,
-            MagicConditionFactory.ManaCost("{B}")
         ],
         new MagicActivationHints(MagicTiming.Removal),
         "Weaken"
