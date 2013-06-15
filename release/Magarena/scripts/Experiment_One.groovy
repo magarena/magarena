@@ -1,11 +1,11 @@
 [
     new MagicPermanentActivation(
         [
-            MagicConditionFactory.PlusOneCounterAtLeast(2),
             MagicCondition.CAN_REGENERATE_CONDITION,
         ],
         new MagicActivationHints(MagicTiming.Pump),
-        "Regen") {
+        "Regen"
+    ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [
@@ -21,9 +21,7 @@
             );
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicRegenerateAction(event.getPermanent()));
         }
     }
