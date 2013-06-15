@@ -8,8 +8,12 @@ import magic.model.action.MagicDiscardCardAction;
 import magic.model.choice.MagicCardChoice;
 import magic.model.choice.MagicCardChoiceResult;
 import magic.model.choice.MagicRandomCardChoice;
+import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 
 public class MagicDiscardEvent extends MagicEvent {
+
+    final MagicCondition[] conds;
     
     public MagicDiscardEvent(final MagicSource source,final int amount,final boolean random) {
         this(source, source.getController(), amount, random);
@@ -23,6 +27,9 @@ public class MagicDiscardEvent extends MagicEvent {
             EVENT_ACTION,
             "PN " + genDescription(player,amount)
         );
+        conds = new MagicCondition[]{
+            MagicConditionFactory.HandAtLeast(amount)
+        };
     }
     
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
@@ -35,6 +42,11 @@ public class MagicDiscardEvent extends MagicEvent {
             }
         }
     };
+
+    @Override
+    public MagicCondition[] getConditions() {
+        return conds;
+    }
     
     private static final String genDescription(final MagicPlayer player,final int amount) {
         final int actualAmount = Math.min(amount,player.getHandSize());

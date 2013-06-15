@@ -54,4 +54,12 @@ public class MagicConditionFactory {
             }
         };
     }
+    
+    public static MagicCondition HandAtLeast(final int n) {
+        return new MagicCondition() {
+            public boolean accept(final MagicSource source) {
+                return source.getController().getHandSize() >= n;
+            }
+        };
+    }
 }
