@@ -9,8 +9,12 @@ import magic.model.action.MagicCardAction;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.choice.MagicTargetChoice;
+import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 
 public class MagicExileCardEvent extends MagicEvent {
+    
+    final MagicCondition[] conds;
     
     public MagicExileCardEvent(final MagicSource source, final MagicTargetChoice targetChoice) {
         this(source, source.getController(), targetChoice);
@@ -27,6 +31,7 @@ public class MagicExileCardEvent extends MagicEvent {
             EVENT_ACTION,
             "Choose " + targetChoice.getTargetDescription() + "$."
         );
+        conds = new MagicCondition[]{MagicConditionFactory.HasOptions(targetChoice)};
     }
      
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
@@ -47,4 +52,9 @@ public class MagicExileCardEvent extends MagicEvent {
             });
         }
     };
+    
+    @Override
+    public MagicCondition[] getConditions() {
+        return conds;
+    }
 }
