@@ -15,7 +15,6 @@ import magic.model.MagicPowerToughness;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
-import magic.model.condition.MagicSingleActivationCondition;
 
 public abstract class MagicPlaneswalkerActivation extends MagicPermanentActivation {
     
