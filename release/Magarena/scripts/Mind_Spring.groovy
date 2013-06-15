@@ -4,14 +4,13 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             final int amount=payedCost.getX();
             return new MagicEvent(
-                    cardOnStack,
-                    this,
-                    "Draw "+amount+" cards.");
+                cardOnStack,
+                this,
+                "Draw "+amount+" cards."
+            );
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicDrawAction(event.getPlayer(),event.getCardOnStack().getX()));
         }
     }
