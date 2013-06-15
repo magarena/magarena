@@ -19,10 +19,6 @@
         }
     },
     new MagicPermanentActivation(
-        [
-            MagicCondition.CAN_TAP_CONDITION,
-            MagicConditionFactory.ManaCost("{2}{B}")
-        ],
         new MagicActivationHints(MagicTiming.Token),
         "Token"
     ) {

@@ -2,7 +2,6 @@
     new MagicPermanentActivation(
         [
             MagicCondition.ABILITY_ONCE_CONDITION,
-            MagicConditionFactory.ManaCost("{3}{G}")
         ],
         new MagicActivationHints(MagicTiming.Pump),
         "Pump") {
@@ -22,9 +21,7 @@
             );
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),3,3));
         }
     }

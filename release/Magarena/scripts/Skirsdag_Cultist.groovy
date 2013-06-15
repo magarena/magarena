@@ -1,10 +1,5 @@
 [
     new MagicPermanentActivation(
-        [
-            MagicCondition.CAN_TAP_CONDITION,
-            MagicCondition.ONE_CREATURE_CONDITION,
-            MagicConditionFactory.ManaCost("{R}")
-        ],
         new MagicActivationHints(MagicTiming.Removal),
         "Exile"
     ) {

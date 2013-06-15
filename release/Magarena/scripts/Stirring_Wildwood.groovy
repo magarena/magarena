@@ -37,7 +37,6 @@ def C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
 [
     new MagicPermanentActivation(
         [new MagicArtificialCondition(
-            MagicConditionFactory.ManaCost("{1}{G}{W}"),
             MagicConditionFactory.ManaCost("{G}{G}{W}{W}")
         )],
         new MagicActivationHints(MagicTiming.Animate),

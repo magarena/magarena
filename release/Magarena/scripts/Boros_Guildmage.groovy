@@ -1,6 +1,5 @@
 [
     new MagicPermanentActivation(
-        [MagicConditionFactory.ManaCost("{1}{R}")],
         new MagicActivationHints(MagicTiming.Pump,true),
         "Haste"
     ) {
@@ -31,7 +30,6 @@
         }
     },
     new MagicPermanentActivation(
-        [MagicConditionFactory.ManaCost("{1}{W}")],
         new MagicActivationHints(MagicTiming.Block,true),
         "First strike"
     ) {

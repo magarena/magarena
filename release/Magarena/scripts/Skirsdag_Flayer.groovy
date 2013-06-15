@@ -1,10 +1,5 @@
 [
     new MagicPermanentActivation(
-        [
-            MagicConditionFactory.ManaCost("{3}{B}"),
-            MagicCondition.ONE_CREATURE_CONDITION,
-            MagicCondition.CAN_TAP_CONDITION,
-        ],
         new MagicActivationHints(MagicTiming.Removal),
         "Destroy"
     ) {
