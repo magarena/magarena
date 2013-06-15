@@ -8,7 +8,6 @@
         }
     },
     new MagicPermanentActivation(
-        [MagicConditionFactory.ManaCost("{1}{G}")],
         new MagicActivationHints(MagicTiming.Pump,true),
         "Regen"
     ) {

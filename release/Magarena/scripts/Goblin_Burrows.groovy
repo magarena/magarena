@@ -1,8 +1,8 @@
 [
     new MagicPermanentActivation(
         [
-            MagicConditionFactory.ManaCost("{2}{R}"), //add ONE for the card itself
-            MagicCondition.CAN_TAP_CONDITION    
+            //add ONE for the card itself
+            MagicConditionFactory.ManaCost("{2}{R}"), 
         ],
         new MagicActivationHints(MagicTiming.Pump),
         "Pump"

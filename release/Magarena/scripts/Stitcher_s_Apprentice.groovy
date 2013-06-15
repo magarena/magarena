@@ -9,10 +9,6 @@ def action = {
 
 [
     new MagicPermanentActivation(
-        [
-            MagicCondition.CAN_TAP_CONDITION,
-            MagicConditionFactory.ManaCost("{1}{U}")
-        ],
         new MagicActivationHints(MagicTiming.Token),
         "Token"
     ) {

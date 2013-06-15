@@ -1,6 +1,5 @@
 [
     new MagicPermanentActivation(
-        [MagicConditionFactory.ManaCost("{3}{G}")],
         new MagicActivationHints(MagicTiming.Pump,true),
         "Pump"
     ) {

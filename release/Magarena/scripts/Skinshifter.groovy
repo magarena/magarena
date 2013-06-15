@@ -59,7 +59,6 @@ def ST3 = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
     new MagicPermanentActivation(
         [
             MagicCondition.ABILITY_ONCE_CONDITION,
-            MagicConditionFactory.ManaCost("{G}")
         ],
         new MagicActivationHints(MagicTiming.Animate,false,1),
         "Rhino"
@@ -89,7 +88,6 @@ def ST3 = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
     new MagicPermanentActivation(
         [
             MagicCondition.ABILITY_ONCE_CONDITION,
-            MagicConditionFactory.ManaCost("{G}")
         ],
         new MagicActivationHints(MagicTiming.Animate,false,1),
         "Bird"
@@ -120,7 +118,6 @@ def ST3 = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
     new MagicPermanentActivation(
         [
             MagicCondition.ABILITY_ONCE_CONDITION,
-            MagicConditionFactory.ManaCost("{G}")
         ],
         new MagicActivationHints(MagicTiming.Animate,false,1),
         "Plant"

@@ -1,11 +1,8 @@
 [
     new MagicPermanentActivation(
-        [
-            MagicCondition.CAN_TAP_CONDITION,
-            MagicConditionFactory.ManaCost("{3}")
-        ],
         new MagicActivationHints(MagicTiming.Token),
-        "Copy") {
+        "Copy"
+    ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {

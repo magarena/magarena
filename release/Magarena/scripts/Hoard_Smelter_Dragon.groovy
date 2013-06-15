@@ -1,6 +1,5 @@
 [
     new MagicPermanentActivation(
-        [MagicConditionFactory.ManaCost("{3}{R}")],
         new MagicActivationHints(MagicTiming.Removal),
         "Destroy"
     ) {
