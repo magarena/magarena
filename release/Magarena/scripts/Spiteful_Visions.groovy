@@ -3,12 +3,12 @@
     new MagicWhenOtherDrawnTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard card) {
-            final MagicPlayer player = card.getOwner();
             return new MagicEvent(
                 permanent,
-                player,
+                card.getOwner(),
                 this,
-                "SN deals 1 damage to PN.");
+                "SN deals 1 damage to PN."
+            );
         }
         
         @Override

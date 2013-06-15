@@ -6,7 +6,8 @@
                 new MagicEvent(
                     permanent,
                     this,
-                    "Return SN to its owner's hand."):
+                    "Return SN to its owner's hand."
+                ):
                 MagicEvent.NONE;
         }
         @Override

@@ -5,7 +5,8 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "Put a 1/1 white Bird creature token with flying onto the battlefield, then populate.");
+                "Put a 1/1 white Bird creature token with flying onto the battlefield, then populate."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

@@ -7,7 +7,8 @@
                 new MagicEvent(
                     permanent,
                     this,
-                    "PN gains 1 life.") :
+                    "PN gains 1 life."
+                ) :
                 MagicEvent.NONE;
         }
         @Override

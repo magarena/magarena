@@ -5,7 +5,8 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "Put a 4/4 green Rhino creature token with trample onto the battlefield, then populate.");
+                "Put a 4/4 green Rhino creature token with trample onto the battlefield, then populate."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

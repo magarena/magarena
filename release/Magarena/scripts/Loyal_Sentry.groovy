@@ -8,7 +8,8 @@
                     permanent,
                     blocked,
                     this,
-                    "Destroy both RN and SN."):
+                    "Destroy both RN and SN."
+                ):
                 MagicEvent.NONE;
         }
         @Override

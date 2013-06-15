@@ -8,7 +8,8 @@
                 MagicTargetChoice.TARGET_SPELL,
                 this,
                 "Counter target spell\$. Put X +1/+1 counters on SN, " + 
-                "where X is that spell's converted mana cost.");
+                "where X is that spell's converted mana cost."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

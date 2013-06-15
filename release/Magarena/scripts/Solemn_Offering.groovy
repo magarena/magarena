@@ -8,7 +8,8 @@
                 new MagicDestroyTargetPicker(false),
                 this,
                 "Destroy target artifact or enchantment\$. " +
-                "PN gains 4 life.");
+                "PN gains 4 life."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

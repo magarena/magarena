@@ -3,9 +3,10 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
-                    permanent,
-                    this,
-                    "PN draws a card and loses 1 life.");
+                permanent,
+                this,
+                "PN draws a card and loses 1 life."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

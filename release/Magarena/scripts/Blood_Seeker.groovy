@@ -13,7 +13,8 @@
                     ),
                     otherPermanent.getController(),
                     this,
-                    "PN may\$ have RN lose 1 life."):
+                    "PN may\$ have RN lose 1 life."
+                ):
                 MagicEvent.NONE;
         }
         @Override

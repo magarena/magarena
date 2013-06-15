@@ -1,7 +1,8 @@
 [
     new MagicBloodrushActivation(
         MagicManaCost.create("{1}{R}{G}"),
-        "Target attacking creature\$ gets +5/+4 until end of turn.") {
+        "Target attacking creature\$ gets +5/+4 until end of turn."
+    ) {
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {

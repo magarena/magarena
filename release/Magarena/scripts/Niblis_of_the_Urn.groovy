@@ -8,7 +8,8 @@
                     new MagicMayChoice(MagicTargetChoice.NEG_TARGET_CREATURE),
                     new MagicTapTargetPicker(true,false),
                     this,
-                    "PN may\$ tap target creature\$."):
+                    "PN may\$ tap target creature\$."
+                ):
                 MagicEvent.NONE;
         }
         @Override

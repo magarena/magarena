@@ -7,7 +7,8 @@
                     permanent,
                     this,
                     "PN puts a +1/+1 counter on each creature " +
-                    "with modular he or she controls."):
+                    "with modular he or she controls."
+                ):
                 MagicEvent.NONE;
         }
         @Override

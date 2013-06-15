@@ -11,7 +11,8 @@
                     permanent.getController(),
                     damage.getTarget(),
                     this,
-                    "RN loses the game.") :
+                    "RN loses the game."
+                ) :
                 MagicEvent.NONE;
         }
         @Override

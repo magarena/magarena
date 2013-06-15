@@ -7,7 +7,8 @@
                     permanent,
                     this,
                     "PN puts a 2/2 white Cat creature token onto the " +
-                    "battlefield for each Equipment attached to SN."):
+                    "battlefield for each Equipment attached to SN."
+                ):
                 MagicEvent.NONE;
         }
         @Override

@@ -5,7 +5,8 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "Put a 3/3 green Centaur creature token onto the battlefield, then populate.");
+                "Put a 3/3 green Centaur creature token onto the battlefield, then populate."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

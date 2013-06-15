@@ -6,7 +6,8 @@
                 new MagicEvent(
                     permanent,
                     this,
-                    "PN draws a card and loses 1 life."):
+                    "PN draws a card and loses 1 life."
+                ):
                 MagicEvent.NONE;
         }
         @Override

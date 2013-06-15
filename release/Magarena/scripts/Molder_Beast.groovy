@@ -6,7 +6,8 @@
                 new MagicEvent(
                     permanent,
                     this,
-                    "SN gets +2/+0 until end of turn.") :
+                    "SN gets +2/+0 until end of turn."
+                ) :
                 MagicEvent.NONE;
         }
         @Override

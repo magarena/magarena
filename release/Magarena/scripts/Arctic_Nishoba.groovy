@@ -6,7 +6,8 @@
                 new MagicEvent(
                     permanent,
                     this,
-                    "PN gains 2 life for each age counter on SN."):
+                    "PN gains 2 life for each age counter on SN."
+                ):
                 MagicEvent.NONE;
         }
         @Override

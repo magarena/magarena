@@ -11,7 +11,8 @@
                 new MagicEvent(
                     permanent,
                     this,
-                    "Untap SN.") :
+                    "Untap SN."
+                ) :
                 MagicEvent.NONE;
         }
         @Override

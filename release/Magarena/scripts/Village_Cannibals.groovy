@@ -8,7 +8,8 @@
                 new MagicEvent(
                     permanent,
                     this,
-                    "Put a +1/+1 counter on SN."):
+                    "Put a +1/+1 counter on SN."
+                ):
                 MagicEvent.NONE;
         }
         @Override

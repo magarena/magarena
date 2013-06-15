@@ -11,7 +11,8 @@
                     player,
                     MagicTargetChoice.NEG_TARGET_PLAYER,
                     this,
-                    "SN deals damage to target player\$ equal to twice the number of times it was kicked."):
+                    "SN deals damage to target player\$ equal to twice the number of times it was kicked."
+                ):
                 MagicEvent.NONE;
         }
         @Override

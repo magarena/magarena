@@ -8,7 +8,8 @@
                 new MagicDamageTargetPicker(5,true),
                 this,
                 "SN deals 5 damage to target white or blue creature\$. " +
-                "The damage can't be prevented.");
+                "The damage can't be prevented."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

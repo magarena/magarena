@@ -8,7 +8,8 @@
                 MagicBounceTargetPicker.getInstance(),
                 this,
                 "Return target permanent\$ to its owner's hand. " + 
-                "If the buyback cost was payed\$, return SN to its owner's hand as it resolves.");
+                "If the buyback cost was payed\$, return SN to its owner's hand as it resolves."
+            );
         }
 
         @Override

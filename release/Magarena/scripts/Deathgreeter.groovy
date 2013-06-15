@@ -12,7 +12,8 @@
                         MagicSimpleMayChoice.DEFAULT_YES
                     ),
                     this,
-                    "PN may\$ gain 1 life.") :
+                    "PN may\$ gain 1 life."
+                ) :
                 MagicEvent.NONE;
         }
         @Override

@@ -13,7 +13,8 @@
                     permanent,
                     this,
                     "PN puts a 1/1 white Spirit creature " +
-                    "token with flying onto the battlefield."):
+                    "token with flying onto the battlefield."
+                ):
                 MagicEvent.NONE;
         }
         @Override
