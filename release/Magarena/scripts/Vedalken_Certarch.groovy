@@ -1,7 +1,6 @@
 [
     new MagicPermanentActivation(
         [
-            MagicCondition.CAN_TAP_CONDITION,
             MagicCondition.METALCRAFT_CONDITION
         ],
         new MagicActivationHints(MagicTiming.Tapping),

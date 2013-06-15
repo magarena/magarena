@@ -14,7 +14,6 @@ def action = {
 
 [
     new MagicPermanentActivation(
-        [MagicCondition.CAN_TAP_CONDITION],
         new MagicActivationHints(MagicTiming.Removal),
         "Destroy"
     ) {

@@ -1,9 +1,5 @@
 [
     new MagicWeakenCreatureActivation(
-        [
-            MagicCondition.CAN_TAP_CONDITION,
-            MagicConditionFactory.ChargeCountersAtLeast(1)
-        ],
         new MagicActivationHints(MagicTiming.Removal),
         "-1/-1"
     ) {

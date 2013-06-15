@@ -1,7 +1,6 @@
 [
     new MagicPermanentActivation(
         [
-            MagicCondition.CAN_TAP_CONDITION,
             MagicCondition.END_OF_COMBAT_CONDITION
         ],
         new MagicActivationHints(MagicTiming.Removal),

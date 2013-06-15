@@ -2,7 +2,6 @@
     new MagicPermanentActivation(
         [
             MagicConditionFactory.ChargeCountersAtLeast(2),
-            MagicCondition.CAN_TAP_CONDITION,
         ],
         new MagicActivationHints(MagicTiming.Token),
         "Token"

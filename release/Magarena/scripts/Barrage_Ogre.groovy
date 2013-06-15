@@ -1,9 +1,5 @@
 [
     new MagicPermanentActivation(
-        [
-            MagicCondition.CAN_TAP_CONDITION,
-            MagicCondition.CONTROL_ARTIFACT_CONDITION
-        ],
         new MagicActivationHints(MagicTiming.Removal),
         "Damage"
     ) {

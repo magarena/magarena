@@ -1,10 +1,6 @@
 [
     new MagicManaActivation(
         MagicManaType.ALL_TYPES,
-        [
-            MagicCondition.CAN_TAP_CONDITION,
-            MagicConditionFactory.ChargeCountersAtLeast(1)
-        ],
         2
     ) {
         @Override

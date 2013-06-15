@@ -1,7 +1,6 @@
 [
     new MagicPermanentActivation(
         [
-            MagicCondition.CAN_TAP_CONDITION,
             MagicCondition.SORCERY_CONDITION
         ],
         new MagicActivationHints(MagicTiming.Land),

@@ -1,8 +1,8 @@
 [
     new MagicPermanentActivation(
-        [MagicCondition.CAN_TAP_CONDITION],
         new MagicActivationHints(MagicTiming.Token),
-        "Draw") {
+        "Draw"
+    ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [new MagicTapEvent(source)];
@@ -16,9 +16,7 @@
             );
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicDrawAction(event.getPlayer(),3));
         }
     }

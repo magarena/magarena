@@ -15,7 +15,6 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
 
 [
     new MagicPermanentActivation(
-        [MagicCondition.CAN_TAP_CONDITION],
         new MagicActivationHints(MagicTiming.Removal),
         "Frog"
     ) {

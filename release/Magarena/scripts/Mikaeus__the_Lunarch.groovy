@@ -1,6 +1,5 @@
 [
     new MagicPermanentActivation(
-        [MagicCondition.CAN_TAP_CONDITION],
         new MagicActivationHints(MagicTiming.Pump),
         "Add") {
 
@@ -24,10 +23,6 @@
         }
     },
     new MagicPermanentActivation( 
-        [
-            MagicCondition.CAN_TAP_CONDITION,
-            MagicCondition.PLUS_COUNTER_CONDITION,
-        ],
         new MagicActivationHints(MagicTiming.Pump),
         "Remove"
     ) {

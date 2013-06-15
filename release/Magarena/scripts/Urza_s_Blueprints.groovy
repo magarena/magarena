@@ -1,8 +1,8 @@
 [
     new MagicPermanentActivation(
-        [MagicCondition.CAN_TAP_CONDITION],
         new MagicActivationHints(MagicTiming.Draw),
-        "Draw") {
+        "Draw"
+    ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [new MagicTapEvent(source)];

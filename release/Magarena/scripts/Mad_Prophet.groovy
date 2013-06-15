@@ -1,9 +1,5 @@
 [
     new MagicPermanentActivation(
-        [
-            MagicCondition.CAN_TAP_CONDITION,
-            MagicCondition.HAS_CARD_CONDITION
-        ] ,
         new MagicActivationHints(MagicTiming.Draw),
         "Draw"
     ) {

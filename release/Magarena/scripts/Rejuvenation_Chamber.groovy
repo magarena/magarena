@@ -1,8 +1,8 @@
 [
     new MagicPermanentActivation(
-        [MagicCondition.CAN_TAP_CONDITION],
         new MagicActivationHints(MagicTiming.Pump),
-        "Life") {
+        "Life"
+    ) {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {

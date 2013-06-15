@@ -13,7 +13,6 @@
     new MagicPermanentActivation(
         [
             MagicConditionFactory.ChargeCountersAtLeast(1),
-            MagicCondition.CAN_TAP_CONDITION
         ],
         new MagicActivationHints(MagicTiming.Removal),
         "Damage"

@@ -1,7 +1,6 @@
 [
     new MagicPermanentActivation(
         [
-            MagicCondition.CAN_TAP_CONDITION,
             MagicCondition.POWER_4_OR_GREATER_CONDITION
         ],
         new MagicActivationHints(MagicTiming.Removal),

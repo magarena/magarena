@@ -12,7 +12,6 @@
         }
     },
     new MagicPermanentActivation(
-        [MagicCondition.CAN_TAP_CONDITION],
         new MagicActivationHints(MagicTiming.Attack),
         "Unblockable"
     ) {
