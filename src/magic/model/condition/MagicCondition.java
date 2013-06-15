@@ -57,48 +57,6 @@ public interface MagicCondition {
             return game.isPhase(MagicPhaseType.EndOfCombat);
         }
     };
-
-    MagicCondition ONE_LIFE_CONDITION=new MagicCondition() {
-        public boolean accept(final MagicSource source) {
-            return source.getController().getLife() >= 1;
-        }
-    };
-
-    MagicCondition TWO_LIFE_CONDITION=new MagicCondition() {
-        public boolean accept(final MagicSource source) {
-            return source.getController().getLife() >= 2;
-        }
-    };
-    
-    MagicCondition SEVEN_LIFE_CONDITION=new MagicCondition() {
-        public boolean accept(final MagicSource source) {
-            return source.getController().getLife() >= 7;
-        }
-    };
-    
-    MagicCondition HAS_CARD_CONDITION=new MagicCondition() {
-        public boolean accept(final MagicSource source) {
-            return source.getController().getHandSize() >= 1;
-        }
-    };
-    
-    MagicCondition HAS_TWO_CARDS_CONDITION = new MagicCondition() {
-        public boolean accept(final MagicSource source) {
-            return source.getController().getHandSize() >= 2;
-        }
-    };
-    
-    MagicCondition HAS_TWO_BLUE_CARDS_CONDITION = new MagicCondition() {
-        public boolean accept(final MagicSource source) {
-            int numBlue = 0;
-            final MagicCardList hand = source.getController().getHand();
-            for (final MagicCard card : hand) {
-                numBlue += card.hasColor(MagicColor.Blue) ? 1 : 0;
-            }
-            return numBlue >= 2;
-        }
-    };
-    
     
     MagicCondition CAN_TAP_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {
