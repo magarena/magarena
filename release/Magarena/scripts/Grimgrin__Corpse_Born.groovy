@@ -1,8 +1,5 @@
 [
     new MagicPermanentActivation(
-        [
-            MagicCondition.TWO_CREATURES_CONDITION
-        ],
         new MagicActivationHints(MagicTiming.Pump),
         "Pump"
     ) {

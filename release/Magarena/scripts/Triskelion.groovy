@@ -1,6 +1,5 @@
 [
     new MagicPermanentActivation( 
-        [MagicCondition.PLUS_COUNTER_CONDITION],
         new MagicActivationHints(MagicTiming.Removal),
         "Damage"
     ) {

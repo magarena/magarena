@@ -24,9 +24,9 @@
         }       
     },
     new MagicPermanentActivation(
-        [MagicConditionFactory.ChargeCountersAtLeast(3)],
         new MagicActivationHints(MagicTiming.Token),
-        "Token") {
+        "Token"
+    ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [

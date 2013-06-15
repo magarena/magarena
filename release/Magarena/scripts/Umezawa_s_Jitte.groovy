@@ -1,7 +1,6 @@
 [
     // equipped creature gets +2/+2 until end of turn
     new MagicPermanentActivation( 
-        [MagicConditionFactory.ChargeCountersAtLeast(1)],
         new MagicActivationHints(MagicTiming.Pump),
         "+2/+2"
     ) {
@@ -27,7 +26,6 @@
     },
     // target creature gets -1/-1 until end of turn
     new MagicPermanentActivation(
-        [MagicConditionFactory.ChargeCountersAtLeast(1)],
         new MagicActivationHints(MagicTiming.Removal),
         "-1/-1"
     ) {
@@ -60,7 +58,6 @@
     
     // you gain 2 life
     new MagicPermanentActivation( 
-        [MagicConditionFactory.ChargeCountersAtLeast(1)],
         new MagicActivationHints(MagicTiming.Pump),
         "Life + 2"
     ) {

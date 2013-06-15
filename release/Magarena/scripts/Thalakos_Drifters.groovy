@@ -1,6 +1,5 @@
 [
     new MagicPermanentActivation(
-        [MagicCondition.HAS_CARD_CONDITION],
         new MagicActivationHints(MagicTiming.Pump,false,1),
         "Shadow"
     ) {
