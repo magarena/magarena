@@ -2,7 +2,8 @@
     new MagicPermanentActivation(
         [MagicCondition.YOUR_UPKEEP_CONDITION],
         new MagicActivationHints(MagicTiming.None),
-        "Life+4") {
+        "Life+4"
+    ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [new MagicSacrificeEvent(source)];

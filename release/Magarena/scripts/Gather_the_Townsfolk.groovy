@@ -5,21 +5,18 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "PN puts two 1/1 white Human " +
-                "creature tokens onto the battlefield."
+                "PN puts two 1/1 white Human creature tokens onto the battlefield. " +
+                "If you have 5 or less life, put five of those tokens onto the battlefield instead."
             );
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             int amount = MagicCondition.FATEFUL_HOUR.accept(event.getSource()) ? 5 : 2;
-            for (;amount>0;amount--) {
-                game.doAction(new MagicPlayTokenAction(
-                    event.getPlayer(),
-                    TokenCardDefinitions.get("Human1")
-                ));
-            }
+            game.doAction(new MagicPlayTokensAction(
+                event.getPlayer(),
+                TokenCardDefinitions.get("Human1"),
+                amount
+            ));
         }
     }
 ]

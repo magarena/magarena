@@ -1,6 +1,5 @@
 [
     new MagicPermanentActivation(
-        [MagicConditionFactory.ChargeCountersAtLeast(1)],
         new MagicActivationHints(MagicTiming.Pump),
         "Exile"
     ) {
