@@ -1,15 +1,13 @@
 [
     new MagicPermanentActivation(
-        [
-            MagicCondition.CAN_REGENERATE_CONDITION,
-        ],
         new MagicActivationHints(MagicTiming.Pump),
         "Regen"
     ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [
-                new MagicRemoveCounterEvent(source,MagicCounterType.PlusOne,2)
+                new MagicRemoveCounterEvent(source,MagicCounterType.PlusOne,2),
+                new MagicRegenerationConditionsEvent(source,this)
             ];
         }
         @Override

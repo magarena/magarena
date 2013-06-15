@@ -13,7 +13,6 @@
     new MagicPermanentActivation(
         [
             MagicConditionFactory.ChargeCountersAtLeast(4),
-            MagicCondition.CAN_REGENERATE_CONDITION,
         ],
         new MagicActivationHints(MagicTiming.Pump),
         "Regen"
@@ -22,7 +21,8 @@
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [
-                new MagicPayManaCostEvent(source,"{B}")
+                new MagicPayManaCostEvent(source,"{B}"),
+                new MagicRegenerationConditionsEvent(source,this)
             ];
         }
 
