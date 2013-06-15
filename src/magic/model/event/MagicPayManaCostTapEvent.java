@@ -37,4 +37,9 @@ public class MagicPayManaCostTapEvent extends MagicEvent {
             game.doAction(new MagicTapAction(event.getPermanent(),true));
         }
     };
+    
+    @Override
+    public MagicCondition[] getConditions() {
+        return conds;
+    }
 }

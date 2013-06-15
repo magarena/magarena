@@ -29,11 +29,6 @@ public class MagicPayManaCostEvent extends MagicEvent {
         );
         conds = new MagicCondition[]{cost.getCondition()};
     }
-
-    @Override
-    public MagicCondition[] getConditions() {
-        return conds;
-    }
     
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
@@ -41,4 +36,9 @@ public class MagicPayManaCostEvent extends MagicEvent {
             event.payManaCost(game,event.getPlayer());
         }
     };
+
+    @Override
+    public MagicCondition[] getConditions() {
+        return conds;
+    }
 }
