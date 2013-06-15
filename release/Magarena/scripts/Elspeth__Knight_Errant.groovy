@@ -9,9 +9,7 @@
             );
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicPlayTokenAction(
                 event.getPlayer(), 
                 TokenCardDefinitions.get("Soldier")
@@ -30,9 +28,7 @@
             );
         }
         @Override
-        public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeTurnPTAction(creature,3,3));
@@ -51,9 +47,7 @@
             );
         }
         @Override
-        public void executeEvent(
-                final MagicGame outerGame,
-                final MagicEvent event) {
+        public void executeEvent(final MagicGame outerGame, final MagicEvent event) {
             outerGame.doAction(new MagicAddStaticAction(
                 new MagicStatic(
                     MagicLayer.Ability,
