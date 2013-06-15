@@ -1,9 +1,5 @@
 [
     new MagicPermanentActivation(
-        [
-            MagicCondition.CAN_TAP_CONDITION,
-            MagicConditionFactory.ManaCost("{U}")
-        ],
         new MagicActivationHints(MagicTiming.Removal),
         "Return"
     ) {

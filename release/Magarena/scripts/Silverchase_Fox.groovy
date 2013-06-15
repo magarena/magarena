@@ -1,6 +1,5 @@
 [
     new MagicPermanentActivation(
-        [MagicConditionFactory.ManaCost("{1}{W}")],
         new MagicActivationHints(MagicTiming.Removal),
         "Exile"
     ) {

@@ -2,7 +2,6 @@
     new MagicPermanentActivation(
         [
             MagicCondition.ABILITY_ONCE_CONDITION,
-            MagicConditionFactory.ManaCost("{W}{W}")
         ],
         new MagicActivationHints(MagicTiming.Pump),
         "Pump"
