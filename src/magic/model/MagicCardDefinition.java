@@ -699,7 +699,7 @@ public class MagicCardDefinition {
     }
     
     public void addCardAct(final MagicCardActivation activation) {
-        cardActivations.addFirst(activation);
+        cardActivations.add(activation);
     }
     
     public Collection<MagicActivation> getActivations() {
