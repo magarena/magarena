@@ -4,6 +4,7 @@ import magic.ai.ArtificialScoringSystem;
 import magic.data.IconImages;
 import magic.data.CardProperty;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicEventSource;
 import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicActivationHints;
@@ -103,6 +104,7 @@ public class MagicCardDefinition {
     private final Collection<MagicWhenPutIntoGraveyardTrigger> putIntoGraveyardTriggers = new ArrayList<MagicWhenPutIntoGraveyardTrigger>();
     private final Collection<MagicActivation> activations=new ArrayList<MagicActivation>();
     private final Collection<MagicManaActivation> manaActivations=new ArrayList<MagicManaActivation>();
+    private final Collection<MagicEventSource> costEventSources=new ArrayList<MagicEventSource>();
     private boolean excludeManaOrCombat;
 
     private String requiresGroovy;
@@ -494,12 +496,15 @@ public class MagicCardDefinition {
     }
     
     public MagicEvent[] getCostEvent(final MagicCard source) {
-        List<MagicEvent> costEvent = new ArrayList<MagicEvent>();
+        final List<MagicEvent> costEvent = new ArrayList<MagicEvent>();
         if (cost != MagicManaCost.ZERO) {
             costEvent.add(new MagicPayManaCostEvent(
                 source,
                 cost
             ));
+        }
+        for (final MagicEventSource eventSource : costEventSources) {
+            costEvent.add(eventSource.getEvent(source));
         }
         return costEvent.toArray(new MagicEvent[0]);
     }
@@ -633,6 +638,10 @@ public class MagicCardDefinition {
     public void addCDA(final MagicCDA cda) {
         CDAs.add(cda);
         numCDAs++;
+    }
+    
+    public void addCostEvent(final MagicEventSource eventSource) {
+        costEventSources.add(eventSource);
     }
 
     public void addTrigger(final MagicWhenSpellIsCastTrigger trigger) {
