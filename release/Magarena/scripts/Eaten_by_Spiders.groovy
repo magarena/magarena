@@ -1,9 +1,7 @@
 [
     new MagicSpellCardEvent() {
         @Override
-        public MagicEvent getEvent(
-                final MagicCardOnStack cardOnStack,
-                final MagicPayedCost payedCost) {
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.NEG_TARGET_CREATURE_WITH_FLYING,

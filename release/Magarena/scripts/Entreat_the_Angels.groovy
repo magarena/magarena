@@ -1,9 +1,7 @@
 [
     new MagicSpellCardEvent() {
         @Override
-        public MagicEvent getEvent(
-                final MagicCardOnStack cardOnStack,
-                final MagicPayedCost payedCost) {
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             final int x = payedCost.getX();
             return new MagicEvent(
                 cardOnStack,
