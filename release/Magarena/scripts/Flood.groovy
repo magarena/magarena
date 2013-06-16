@@ -9,8 +9,8 @@
                 new MagicPayManaCostEvent(source,"{U}{U}")
             ];
         }
-		
-		@Override
+        
+        @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,

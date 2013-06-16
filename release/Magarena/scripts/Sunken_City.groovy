@@ -8,10 +8,10 @@
             pt.add(1,1);
         }
     },
-	new MagicAtUpkeepTrigger() {
-    	@Override
+    new MagicAtUpkeepTrigger() {
+        @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-        	return permanent.isController(upkeepPlayer) ? 
+            return permanent.isController(upkeepPlayer) ? 
                 new MagicEvent( 
                     permanent, 
                     new MagicMayChoice( 
@@ -25,7 +25,7 @@
         
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-        	if (event.isNo()) {
+            if (event.isNo()) {
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));
             }
         }
