@@ -256,9 +256,21 @@ public class MagicTargetChoice extends MagicChoice {
             new MagicTargetChoice(MagicTargetFilter.TARGET_WHITE_CREATURE,true,MagicTargetHint.None,"target white creature");
     public static final MagicTargetChoice TARGET_CREATURE_YOU_CONTROL=
         new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,true,MagicTargetHint.None,"target creature you control");
-    public static final MagicTargetChoice TARGET_NON_LEGENDARY_CREATURE_YOU_CONTROL=
-        new MagicTargetChoice(MagicTargetFilter.TARGET_NON_LEGENDARY_CREATURE_YOU_CONTROL,true,MagicTargetHint.None,
-                "target nonlegendary creature you control");
+    
+    public static final MagicTargetChoice TARGET_NON_LEGENDARY_CREATURE_YOU_CONTROL = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_NON_LEGENDARY_CREATURE_YOU_CONTROL,
+        true,
+        MagicTargetHint.None,
+        "target nonlegendary creature you control"
+    );
+
+    public static final MagicTargetChoice POS_TARGET_LEGENDARY_CREATURE = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_LEGENDARY_CREATURE,
+        true,
+        MagicTargetHint.Positive,
+        "target legendary creature"
+    );
+
     public static final MagicTargetChoice TARGET_NON_DEMON =
             new MagicTargetChoice(MagicTargetFilter.TARGET_NON_DEMON,true,MagicTargetHint.None,
                     "target non-Demon creature");

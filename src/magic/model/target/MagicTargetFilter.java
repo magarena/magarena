@@ -645,6 +645,8 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     
     MagicPermanentFilterImpl TARGET_SAMURAI_YOU_CONTROL = Factory.creature(MagicSubType.Samurai, Control.You);
     
+    MagicPermanentFilterImpl TARGET_LEGENDARY_CREATURE = Factory.creature(MagicType.Legendary, Control.You);
+    
     MagicPermanentFilterImpl TARGET_SNAKE_YOU_CONTROL = Factory.creature(MagicSubType.Snake, Control.You);
     
     MagicPermanentFilterImpl TARGET_TREEFOLK_OR_WARRIOR_YOU_CONTROL = new MagicPermanentFilterImpl() {
@@ -1274,6 +1276,17 @@ public interface MagicTargetFilter<T extends MagicTarget> {
                 public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
                     return target.isCreature() &&
                            target.hasColor(color) &&
+                           ((control == Control.You && target.isController(player)) ||
+                            (control == Control.Opp && target.isOpponent(player)) ||
+                            (control == Control.Any));
+                }
+            };
+        }
+        static final MagicPermanentFilterImpl creature(final MagicType type, final Control control) {
+            return new MagicPermanentFilterImpl() {
+                public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+                    return target.isCreature() &&
+                           target.hasType(type) &&
                            ((control == Control.You && target.isController(player)) ||
                             (control == Control.Opp && target.isOpponent(player)) ||
                             (control == Control.Any));

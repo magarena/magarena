@@ -1,0 +1,9 @@
+name=Okina, Temple to the Grandfathers
+url=http://magiccards.info/scans/en/chk/280.jpg
+image=http://magiccards.info/scans/en/chk/280.jpg
+value=3.475
+rarity=R
+type=Legendary,Land
+ability=tap add mana {G}
+timing=land
+requires_groovy_code
