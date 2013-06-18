@@ -7,7 +7,7 @@
                     permanent,
                     MagicCounterType.PlusOne,
                     2,
-                    false
+                    true
                 ));
             }
             return MagicEvent.NONE;

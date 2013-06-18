@@ -7,10 +7,11 @@
             final MagicPlayer player) {   
             if (permanent.isKicked()) {
                 game.doAction(new MagicChangeCountersAction(
-                        permanent,
-                        MagicCounterType.PlusOne,
-                        1,
-                        true));
+                    permanent,
+                    MagicCounterType.PlusOne,
+                    1,
+                    true
+                ));
             }
             return MagicEvent.NONE;
         }
