@@ -1,5 +1,5 @@
 name=Okina, Temple to the Grandfathers
-url=http://magiccards.info/scans/en/chk/280.jpg
+url=http://magiccards.info/chk/en/280.html
 image=http://magiccards.info/scans/en/chk/280.jpg
 value=3.475
 rarity=R
