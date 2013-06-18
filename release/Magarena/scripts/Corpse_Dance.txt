@@ -6,4 +6,5 @@ rarity=R
 type=Instant
 cost={2}{B}
 timing=animate
+ability=buyback {2}
 requires_groovy_code

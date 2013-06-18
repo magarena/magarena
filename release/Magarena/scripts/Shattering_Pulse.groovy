@@ -4,14 +4,11 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                new MagicBuybackChoice(
-                    MagicTargetChoice.TARGET_ARTIFACT,
-                    MagicManaCost.create("{3}")
-                ),
+                MagicTargetChoice.TARGET_ARTIFACT,
                 new MagicDestroyTargetPicker(false),
                 this,
                 "Destroy target artifact\$. " + 
-                "If the buyback cost was payed\$, return SN to its owner's hand as it resolves."
+                "If the buyback cost was payed, return SN to its owner's hand as it resolves."
             );
         }
 

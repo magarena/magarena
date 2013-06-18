@@ -10,20 +10,26 @@ import magic.model.action.MagicSetKickerAction;
 public class MagicKickerCost extends MagicAdditionalCost implements MagicEventAction {
     
     final MagicManaCost manaCost;
+    final String name;
+    
+    private MagicKickerCost(final MagicManaCost aManaCost, final String aName) {
+        manaCost = aManaCost;
+        name = aName;
+    }
     
     public MagicKickerCost(final MagicManaCost aManaCost) {
-        manaCost = aManaCost;
+        this(aManaCost, "kicker");
     }
-
-    public MagicKickerCost(final String cost) {
-        manaCost = MagicManaCost.create(cost);
+    
+    public static MagicKickerCost Buyback(final MagicManaCost aManaCost) {
+        return new MagicKickerCost(aManaCost, "buyback");
     }
     
     public MagicEvent getEvent(final MagicSource source) {
         return new MagicEvent(
             source,
             new MagicMayChoice(
-                "Pay the kicker " + manaCost.getText() + '?',
+                "Pay the " + name + " " + manaCost.getText() + '?',
                 new MagicPayManaCostChoice(manaCost)
             ),
             this,

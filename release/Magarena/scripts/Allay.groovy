@@ -4,14 +4,11 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                new MagicBuybackChoice(
-                    MagicTargetChoice.NEG_TARGET_ENCHANTMENT,
-                    MagicManaCost.create("{3}")
-                ),     
+                MagicTargetChoice.NEG_TARGET_ENCHANTMENT,
                 new MagicDestroyTargetPicker(false),
                 this,
                 "Destroy target enchantment\$. " + 
-                "If the buyback cost was payed\$, return SN to its owner's hand as it resolves."
+                "If the buyback cost was payed, return SN to its owner's hand as it resolves."
             );
         }
 

@@ -4,14 +4,11 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                new MagicBuybackChoice(
-                    MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
-                    MagicManaCost.create("{4}")
-                ),
+                MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                 new MagicDamageTargetPicker(1),
                 this,
                 "SN deals 1 damage to target creature or player\$. " + 
-                "If the buyback cost was payed\$, return SN to its owner's hand as it resolves."
+                "If the buyback cost was payed, return SN to its owner's hand as it resolves."
             );
         }
 

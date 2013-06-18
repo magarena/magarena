@@ -6,4 +6,5 @@ rarity=C
 type=Instant
 cost={1}{U}{U}
 timing=removal
+ability=buyback {3}
 requires_groovy_code

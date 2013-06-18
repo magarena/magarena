@@ -4,14 +4,11 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                new MagicBuybackChoice(
-                    MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicManaCost.create("{3}")
-                ),
+                MagicTargetChoice.POS_TARGET_CREATURE,
                 MagicPreventTargetPicker.getInstance(),
                 this,
                 "Prevent the next 3 damage that would be dealt to target creature\$ this turn. " + 
-                "If the buyback cost was payed\$, return SN to its owner's hand as it resolves."
+                "If the buyback cost was payed, return SN to its owner's hand as it resolves."
             );
         }
 

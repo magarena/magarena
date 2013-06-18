@@ -6,4 +6,5 @@ rarity=R
 type=Instant
 cost={1}{R}{R}
 timing=spell
+ability=buyback {3}
 requires_groovy_code

@@ -6,4 +6,5 @@ rarity=C
 type=Sorcery
 cost={B}
 timing=token
+ability=buyback {4}
 requires_groovy_code

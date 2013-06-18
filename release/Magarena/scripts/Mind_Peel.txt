@@ -6,4 +6,5 @@ rarity=U
 type=Sorcery
 cost={B}
 timing=removal
+ability=buyback {2}{B}{B}
 requires_groovy_code

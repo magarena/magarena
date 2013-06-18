@@ -4,13 +4,11 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                new MagicBuybackChoice(
-                    MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_CREATURE_OR_LAND,
-                    MagicManaCost.create("{2}{U}")),
+                MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_CREATURE_OR_LAND,
                 new MagicTapTargetPicker(true,false),
                 this,
                 "Tap target artifact, creature, or land\$. " +
-                "If the buyback cost was payed\$, return SN to its owner's hand as it resolves."
+                "If the buyback cost was payed, return SN to its owner's hand as it resolves."
             );
         }
 

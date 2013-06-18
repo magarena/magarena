@@ -6,4 +6,5 @@ rarity=U
 type=Instant
 cost={U}
 timing=draw
+ability=buyback {5}
 requires_groovy_code

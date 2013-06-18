@@ -660,13 +660,6 @@ public enum MagicAbility {
             card.add(new MagicAnnihilatorTrigger(n));
         }
     },
-    Replicate("replicate", 20) {
-        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            final MagicManaCost cost = MagicManaCost.create(arg);
-            card.add(MagicMultikickerCost.Replicate(cost));
-            card.add(MagicReplicateTrigger.create());
-        }
-    },
     Multicounter("enters with +1/+1 for each kick", 0) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             final MagicManaCost manaCost = MagicManaCost.create(arg);
@@ -685,10 +678,23 @@ public enum MagicAbility {
             card.add(new MagicKickerCost(cost));
         }
     },
+    Buyback("buyback", 0) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final MagicManaCost cost = MagicManaCost.create(arg);
+            card.add(MagicKickerCost.Buyback(cost));
+        }
+    },
     Multikicker("multikicker", 0) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             final MagicManaCost cost = MagicManaCost.create(arg);
             card.add(new MagicMultikickerCost(cost));
+        }
+    },
+    Replicate("replicate", 20) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final MagicManaCost cost = MagicManaCost.create(arg);
+            card.add(MagicMultikickerCost.Replicate(cost));
+            card.add(MagicReplicateTrigger.create());
         }
     },
     EntersWithX("enters with x", 0) {

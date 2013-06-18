@@ -5,15 +5,12 @@
             final int amount = payedCost.getX();
             return new MagicEvent(
                 cardOnStack,
-                new MagicBuybackChoice(
-                    MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
-                    MagicManaCost.create("{3}")
-                ),
+                MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                 new MagicDamageTargetPicker(amount),
                 amount,
                 this,
                 "SN deals RN damage to target creature or player\$. " + 
-                "If the buyback cost was payed\$, return SN to its owner's hand as it resolves."
+                "If the buyback cost was payed, return SN to its owner's hand as it resolves."
             );
         }
 

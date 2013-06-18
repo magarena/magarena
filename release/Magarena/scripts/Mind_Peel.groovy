@@ -4,13 +4,10 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                new MagicBuybackChoice(
-                    MagicTargetChoice.NEG_TARGET_PLAYER,
-                    MagicManaCost.create("{2}{B}{B}")
-                ),
+                MagicTargetChoice.NEG_TARGET_PLAYER,
                 this,
                 "Target player\$ discards a card. " +
-                "If the buyback cost was payed\$, return SN to its owner's hand as it resolves."
+                "If the buyback cost was payed, return SN to its owner's hand as it resolves."
             );
         }
 

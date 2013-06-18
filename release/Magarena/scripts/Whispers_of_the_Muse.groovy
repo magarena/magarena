@@ -4,10 +4,9 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                new MagicBuybackChoice(MagicManaCost.create("{5}")),
                 this,
-                "PN draws a card. If the buyback cost was payed\$, " +
-                "return SN to its owner's hand as it resolves."
+                "PN draws a card. " + 
+                "If the buyback cost was payed, return SN to its owner's hand as it resolves."
             );
         }
         @Override

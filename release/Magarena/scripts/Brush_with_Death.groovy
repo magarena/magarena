@@ -4,13 +4,10 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                new MagicBuybackChoice(
-                    MagicTargetChoice.TARGET_OPPONENT,
-                    MagicManaCost.create("{2}{B}{B}")
-                ),
+                MagicTargetChoice.TARGET_OPPONENT,
                 this,
                 "Target opponent\$ loses 2 life and PN gains 2 life. " + 
-                "If the buyback cost was payed\$, return SN to its owner's hand as it resolves."
+                "If the buyback cost was payed, return SN to its owner's hand as it resolves."
             );
         }
 

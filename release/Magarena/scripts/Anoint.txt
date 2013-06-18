@@ -6,4 +6,5 @@ rarity=C
 type=Instant
 cost={W}
 timing=pump
+ability=buyback {3}
 requires_groovy_code

@@ -4,14 +4,11 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                new MagicBuybackChoice(
-                    MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_SPELL,
-                    MagicManaCost.create("{3}")
-                ),
+                MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_SPELL,
                 this,
                 "Copy target instant or sorcery spell\$. " + 
                 "PN may choose new targets for the copy. " + 
-                "If the buyback cost was payed\$, return SN to its owner's hand as it resolves."
+                "If the buyback cost was payed, return SN to its owner's hand as it resolves."
             );
         }
 

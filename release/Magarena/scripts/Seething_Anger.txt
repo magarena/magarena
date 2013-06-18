@@ -6,4 +6,5 @@ rarity=C
 type=Sorcery
 cost={R}
 timing=pump
+ability=buyback {3}
 requires_groovy_code

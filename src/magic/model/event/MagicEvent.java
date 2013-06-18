@@ -425,7 +425,7 @@ public class MagicEvent implements MagicCopyable {
     }
     
     public boolean isBuyback() {
-        return MagicChoice.isYesChoice(chosen[1]);
+        return getCardOnStack().getCard().isKicked();
     }
 
     public int getKickerCount() {

@@ -11,17 +11,17 @@ public class MagicMultikickerCost extends MagicAdditionalCost implements MagicEv
     final MagicManaCost manaCost;
     final String name;
     
-    public static MagicMultikickerCost Replicate(final MagicManaCost aManaCost) {
-        return new MagicMultikickerCost(aManaCost, "replicate");
-    }
-    
-    public MagicMultikickerCost(final MagicManaCost aManaCost, final String aName) {
+    private MagicMultikickerCost(final MagicManaCost aManaCost, final String aName) {
         manaCost = aManaCost;
         name = aName;
     }
-
+    
     public MagicMultikickerCost(final MagicManaCost aManaCost) {
         this(aManaCost, "kicker");
+    }
+    
+    public static MagicMultikickerCost Replicate(final MagicManaCost aManaCost) {
+        return new MagicMultikickerCost(aManaCost, "replicate");
     }
     
     public MagicEvent getEvent(final MagicSource source) {

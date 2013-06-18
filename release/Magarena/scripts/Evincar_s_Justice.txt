@@ -7,4 +7,5 @@ rarity=C
 type=Sorcery
 cost={2}{B}{B}
 timing=removal
+ability=buyback {3}
 requires_groovy_code
