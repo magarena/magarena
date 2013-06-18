@@ -4,11 +4,9 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                new MagicKickerChoice(
+                MagicKickerChoice.Replicate(
                     MagicTargetChoice.NEG_TARGET_ARTIFACT, 
-                    MagicManaCost.create("{R}"), 
-                    true, 
-                    true
+                    MagicManaCost.create("{R}")
                 ),
                 new MagicDestroyTargetPicker(false),
                 this,

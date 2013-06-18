@@ -6,8 +6,7 @@
                 cardOnStack,
                 new MagicKickerChoice(
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
-                    MagicManaCost.create("{4}"),
-                    false
+                    MagicManaCost.create("{4}")
                 ),
                 new MagicDamageTargetPicker(2),
                 this,

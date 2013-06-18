@@ -25,26 +25,42 @@ public class MagicKickerChoice extends MagicChoice {
     private final MagicChoice otherChoice;
     private final MagicManaCost cost;
     private final boolean multi;
-    private final boolean replicate;
+    private final String name;
+
+    public static MagicKickerChoice Replicate(final MagicChoice otherChoice, final MagicManaCost cost) {
+        return new MagicKickerChoice(otherChoice, cost, true, "replicate");
+    }
     
-    public MagicKickerChoice(final MagicChoice otherChoice, final MagicManaCost cost,final boolean multi,final boolean replicate) {
-        super("Choose how many times to pay the kicker cost.");
+    public static MagicKickerChoice Replicate(final MagicManaCost cost) {
+        return new MagicKickerChoice(cost, true, "replicate");
+    }
+
+    public MagicKickerChoice(final MagicChoice otherChoice, final MagicManaCost cost,final boolean multi,final String name) {
+        super("Choose how many times to pay the " + name + " cost.");
         this.otherChoice=otherChoice;
         this.cost=cost;
         this.multi=multi;
-        this.replicate = replicate;
+        this.name = name;
     }
     
     public MagicKickerChoice(final MagicChoice otherChoice,final MagicManaCost cost,final boolean multi) {
-        this(otherChoice, cost, multi, false);
+        this(otherChoice, cost, multi, "kicker");
     }
     
-    public MagicKickerChoice(final MagicManaCost cost,final boolean multi, final boolean replicate) {
-        this(MagicChoice.NONE, cost, multi, replicate);
+    public MagicKickerChoice(final MagicChoice otherChoice,final MagicManaCost cost) {
+        this(otherChoice, cost, false, "kicker");
+    }
+    
+    public MagicKickerChoice(final MagicManaCost cost,final boolean multi, final String name) {
+        this(MagicChoice.NONE, cost, multi, name);
     }
     
     public MagicKickerChoice(final MagicManaCost cost,final boolean multi) {
-        this(MagicChoice.NONE, cost, multi, false);
+        this(MagicChoice.NONE, cost, multi, "kicker");
+    }
+    
+    public MagicKickerChoice(final MagicManaCost cost) {
+        this(MagicChoice.NONE, cost, false, "kicker");
     }
 
     @Override
@@ -152,7 +168,7 @@ public class MagicKickerChoice extends MagicChoice {
             // Multiple kickers.
             final MultiKickerChoicePanel kickerPanel = controller.waitForInput(new Callable<MultiKickerChoicePanel>() {
                 public MultiKickerChoicePanel call() {
-                    return new MultiKickerChoicePanel(controller,source,cost,maximumCount,replicate);
+                    return new MultiKickerChoicePanel(controller,source,cost,maximumCount,name);
                 }
             });
             count=kickerPanel.getKickerCount();
@@ -160,7 +176,7 @@ public class MagicKickerChoice extends MagicChoice {
             // Single kicker.
             final MayChoicePanel kickerPanel = controller.waitForInput(new Callable<MayChoicePanel>() {
                 public MayChoicePanel call() {
-                    return new MayChoicePanel(controller,source,"You may pay the kicker "+cost.getText()+'.');
+                    return new MayChoicePanel(controller,source,"You may pay the " + name + ' ' + cost.getText() + '.');
                 }
             });
             count=kickerPanel.isYesClicked()?1:0;                

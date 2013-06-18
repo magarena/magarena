@@ -4,11 +4,9 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                new MagicKickerChoice(
+                MagicKickerChoice.Replicate(
                     MagicTargetChoice.TARGET_CREATURE, 
-                    MagicManaCost.create("{2}{U}"), 
-                    true, 
-                    true
+                    MagicManaCost.create("{2}{U}") 
                 ),
                 MagicBounceTargetPicker.getInstance(),
                 this,

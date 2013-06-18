@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                new MagicKickerChoice(MagicManaCost.create("{2}"),false),
+                new MagicKickerChoice(MagicManaCost.create("{2}")),
                 this,
                 "SN deals 1 damage to each creature without flying and each player. " + 
                 "If SN was kicked\$, it deals 4 damage to each creature without flying and each player instead."

@@ -6,7 +6,7 @@
                 cardOnStack,
                 new MagicKickerChoice(
                     MagicTargetChoice.TARGET_NONLAND_PERMANENT,
-                    MagicManaCost.create("{1}{U}"),false
+                    MagicManaCost.create("{1}{U}")
                 ),
                 MagicBounceTargetPicker.getInstance(),
                 this,

@@ -4,10 +4,8 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                new MagicKickerChoice(
-                    MagicManaCost.create("{1}{U}"), 
-                    true, 
-                    true
+                MagicKickerChoice.Replicate(
+                    MagicManaCost.create("{1}{U}")
                 ),
                 this,
                 "Draw a card."

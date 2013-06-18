@@ -6,8 +6,7 @@
                 cardOnStack,
                 new MagicKickerChoice(
                     MagicTargetChoice.NEG_TARGET_PLAYER,
-                    MagicManaCost.create("{3}"),
-                    false
+                    MagicManaCost.create("{3}")
                 ),
                 this,
                 "Creatures target player\$ controls get -1/-1 until end of turn. " +

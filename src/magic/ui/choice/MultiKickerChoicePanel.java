@@ -34,7 +34,7 @@ public class MultiKickerChoicePanel extends JPanel implements ActionListener {
             final MagicSource source,
             final MagicManaCost cost,
             final int maximumCount,
-            final boolean replicate) {
+            final String name) {
     
         this.controller=controller;
         this.maximumCount=maximumCount;
@@ -43,9 +43,7 @@ public class MultiKickerChoicePanel extends JPanel implements ActionListener {
         setLayout(new BorderLayout());
         setOpaque(false);
         
-        final String message = "Choose how many times to pay the " + 
-                (replicate ? "replicate " : "kicker ") +
-                "cost of " + cost.getText() + ".";
+        final String message = "Choose how many times to pay the " + name + " cost of " + cost.getText() + ".";
         final TextLabel textLabel=new TextLabel(GameController.getMessageWithSource(source,message),GameViewer.TEXT_WIDTH,true);
         add(textLabel,BorderLayout.CENTER);
 
@@ -74,13 +72,11 @@ public class MultiKickerChoicePanel extends JPanel implements ActionListener {
     }
     
     public int getKickerCount() {
-        
         return count;
     }
     
     @Override
     public void actionPerformed(final ActionEvent event) {
-
         final Object source=event.getSource();
         if (source==leftButton) {
             if (count>0) {

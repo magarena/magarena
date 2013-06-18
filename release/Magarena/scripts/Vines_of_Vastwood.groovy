@@ -6,8 +6,7 @@
                 cardOnStack,
                 new MagicKickerChoice(
                     MagicTargetChoice.TARGET_CREATURE,
-                    MagicManaCost.create("{G}"),
-                    false
+                    MagicManaCost.create("{G}")
                 ),
                 MagicPumpTargetPicker.create(),
                 this,

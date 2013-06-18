@@ -16,8 +16,7 @@ def action = {
                 cardOnStack,
                 new MagicKickerChoice(
                     MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_ENCHANTMENT,
-                    MagicManaCost.create("{R}"),
-                    false
+                    MagicManaCost.create("{R}")
                 ),
                 new MagicDestroyTargetPicker(false),
                 this,
