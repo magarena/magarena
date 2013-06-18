@@ -8,5 +8,5 @@ subtype=Kor,Cleric
 cost={2}{W}
 pt=2/3
 timing=main
-ability=kicker {W} destroy target artifact or enchantment
+ability=kicker {W}
 requires_groovy_code

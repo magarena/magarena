@@ -497,7 +497,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
     
     public boolean isKicked() {
-        return kicker > 0;
+        return kicker > 0 || card.isKicked();
     }
 
     public int getLethalDamage(final int toughness) {

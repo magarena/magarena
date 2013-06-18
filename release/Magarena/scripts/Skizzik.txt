@@ -1,0 +1,12 @@
+name=Skizzik
+url=http://magiccards.info/in/en/169.html
+image=http://magiccards.info/scans/en/in/169.jpg
+value=4.573
+rarity=R
+type=Creature
+subtype=Elemental
+cost={3}{R}
+pt=5/3
+ability=trample,haste,kicker {R}
+timing=fmain
+requires_groovy_code

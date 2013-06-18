@@ -8,5 +8,5 @@ subtype=Kavu
 cost={1}{G}
 pt=2/2
 timing=main
-ability=kicker {2}{G} it enters the battlefield with three +1/+1 counters on it and has trample
+ability=kicker {2}{G}
 requires_groovy_code

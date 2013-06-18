@@ -7,6 +7,6 @@ type=Creature
 subtype=Kor,Soldier
 cost={W}{W}
 pt=2/2
-ability=flying,kicker {1}{W} target creature gains flying until end of turn
+ability=flying,kicker {1}{W}
 timing=main
 requires_groovy_code

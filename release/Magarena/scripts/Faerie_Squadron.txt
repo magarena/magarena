@@ -8,5 +8,5 @@ subtype=Faerie
 cost={U}
 pt=1/1
 timing=main
-ability=kicker {3}{U} it enters the battlefield with two +1/+1 counters on it and with flying
+ability=kicker {3}{U}
 requires_groovy_code

@@ -7,6 +7,6 @@ type=Creature
 subtype=Goblin,Shaman
 cost={2}{R}
 pt=2/1
-ability=haste,kicker {R} destroy target nonbasic land
+ability=haste,kicker {R}
 timing=fmain
 requires_groovy_code

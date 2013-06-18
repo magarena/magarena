@@ -7,6 +7,6 @@ type=Creature
 subtype=Kavu
 cost={1}{R}
 pt=1/1
-ability=first strike,kicker {2}{R} it enters the battlefield with two +1/+1 counters on it and with haste
+ability=first strike,kicker {2}{R}
 timing=main
 requires_groovy_code

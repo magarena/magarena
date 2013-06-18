@@ -7,6 +7,6 @@ type=Creature
 subtype=Sphinx
 cost={3}{U}{U}
 pt=3/5
-ability=flying,kicker {1}{U} you draw three cards else draw three cards and discard three cards  
+ability=flying,kicker {1}{U}
 timing=main
 requires_groovy_code

@@ -18,6 +18,7 @@ import magic.model.event.MagicVividManaActivation;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicCyclingActivation;
 import magic.model.event.MagicReinforceActivation;
+import magic.model.event.MagicKickerCost;
 import magic.model.mstatic.MagicCDA;
 import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicAllyGrowTrigger;
@@ -678,11 +679,8 @@ public enum MagicAbility {
     },
     Kicker("kicker", 0) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            final int idx = arg.indexOf(' ');
-            final String[] token = {arg.substring(0,idx), arg.substring(idx+1)};
-            final MagicManaCost cost = MagicManaCost.create(token[0]);
-            final String desc = token[1];
-            card.add(MagicPlayCardEvent.createKicker(cost, false, desc));
+            final MagicManaCost cost = MagicManaCost.create(arg);
+            card.add(new MagicKickerCost(cost));
         }
     },
     Multikicker("multikicker", 0) {

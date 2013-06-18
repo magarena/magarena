@@ -8,5 +8,5 @@ subtype=Human,Minion
 cost={B}
 pt=1/1
 timing=main
-ability=kicker {3}{B} it enters the battlefield with two +1/+1 counters on it and with fear
+ability=kicker {3}{B}
 requires_groovy_code
