@@ -4,10 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicKickerChoice.Replicate(
-                    MagicTargetChoice.NEG_TARGET_PERMANENT, 
-                    MagicManaCost.create("{U}")
-                ),
+                MagicTargetChoice.NEG_TARGET_PERMANENT, 
                 new MagicTapTargetPicker(true,false),
                 this,
                 "Tap target permanent\$."

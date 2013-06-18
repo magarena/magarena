@@ -17,11 +17,8 @@ public class MagicReplicateTrigger extends MagicWhenSpellIsCastTrigger {
     }
 
     @Override
-    public MagicEvent executeTrigger(
-            final MagicGame game,
-            final MagicPermanent permanent,
-            final MagicCardOnStack cardOnStack) {
-        final int kickerCount = (Integer)cardOnStack.getChoiceResults()[1];
+    public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicCardOnStack cardOnStack) {
+        final int kickerCount = cardOnStack.getCard().getKicker();
         return (kickerCount > 0) ?
             new MagicEvent(
                 cardOnStack,
@@ -34,7 +31,7 @@ public class MagicReplicateTrigger extends MagicWhenSpellIsCastTrigger {
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         final MagicCardOnStack cardOnStack = event.getCardOnStack();
-        final int kickerCount = (Integer)cardOnStack.getChoiceResults()[1];
+        final int kickerCount = cardOnStack.getCard().getKicker();
         for (int i = 0; i < kickerCount; i++) {
             game.doAction(new MagicCopyCardOnStackAction(
                 cardOnStack.getController(),

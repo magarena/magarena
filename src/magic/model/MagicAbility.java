@@ -662,7 +662,8 @@ public enum MagicAbility {
     },
     Replicate("replicate", 20) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+            final MagicManaCost cost = MagicManaCost.create(arg);
+            card.add(MagicMultikickerCost.Replicate(cost));
             card.add(MagicReplicateTrigger.create());
         }
     },

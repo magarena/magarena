@@ -5,6 +5,6 @@ value=4.429
 rarity=C
 type=Instant
 cost={U}
-ability=replicate
+ability=replicate {U}
 timing=tapping
 requires_groovy_code

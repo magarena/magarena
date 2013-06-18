@@ -6,6 +6,6 @@ removal=1
 rarity=C
 type=Instant
 cost={1}{R}
-ability=replicate
+ability=replicate {1}{R}
 timing=removal
 requires_groovy_code

@@ -6,6 +6,6 @@ removal=2
 rarity=U
 type=Sorcery
 cost={2}{U}
-ability=replicate
+ability=replicate {2}{U}
 timing=removal
 requires_groovy_code

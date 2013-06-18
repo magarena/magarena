@@ -4,10 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicKickerChoice.Replicate(
-                    MagicTargetChoice.POS_TARGET_PERMANENT, 
-                    MagicManaCost.create("{U}{R}")
-                ),
+                MagicTargetChoice.POS_TARGET_PERMANENT, 
                 MagicFirstStrikeTargetPicker.create(),
                 this,
                 "Target creature\$ gets +1/+0 and gains flying" +

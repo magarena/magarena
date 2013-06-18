@@ -9,19 +9,25 @@ import magic.model.action.MagicSetKickerAction;
 public class MagicMultikickerCost extends MagicAdditionalCost implements MagicEventAction {
     
     final MagicManaCost manaCost;
+    final String name;
     
-    public MagicMultikickerCost(final MagicManaCost aManaCost) {
+    public static MagicMultikickerCost Replicate(final MagicManaCost aManaCost) {
+        return new MagicMultikickerCost(aManaCost, "replicate");
+    }
+    
+    public MagicMultikickerCost(final MagicManaCost aManaCost, final String aName) {
         manaCost = aManaCost;
+        name = aName;
     }
 
-    public MagicMultikickerCost(final String cost) {
-        manaCost = MagicManaCost.create(cost);
+    public MagicMultikickerCost(final MagicManaCost aManaCost) {
+        this(aManaCost, "kicker");
     }
     
     public MagicEvent getEvent(final MagicSource source) {
         return new MagicEvent(
             source,
-            new MagicKickerChoice(manaCost),
+            new MagicKickerChoice(manaCost, name),
             this,
             "PN may pay " + manaCost.getText() + " any number of times$$."
         );

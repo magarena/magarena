@@ -5,6 +5,6 @@ value=3.450
 rarity=C
 type=Sorcery
 cost={1}{U}
-ability=replicate
+ability=replicate {1}{U}
 timing=draw
 requires_groovy_code
