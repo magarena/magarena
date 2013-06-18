@@ -27,8 +27,6 @@ public class MagicPlayCardFromStackAction extends MagicPutIntoPlayAction {
     @Override
     protected MagicPermanent createPermanent(final MagicGame game) {
         cardOnStack.setMoveLocation(MagicLocationType.Play);
-        final MagicPermanent permanent=game.createPermanent(cardOnStack.getCard(),cardOnStack.getController());
-        permanent.setKicker(kicker);
-        return permanent;
+        return game.createPermanent(cardOnStack.getCard(),cardOnStack.getController());
     }    
 }

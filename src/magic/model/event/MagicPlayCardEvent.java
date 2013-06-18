@@ -30,24 +30,6 @@ public class MagicPlayCardEvent {
         }
     };
 
-    public static MagicSpellCardEvent createKicker(final MagicManaCost kickerCost, final boolean multi, final String desc) {
-        return new MagicSpellCardEvent() {
-            @Override
-            public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-                return new MagicEvent(
-                    cardOnStack,
-                    new MagicKickerChoice(kickerCost,multi),
-                    this,
-                    "$Play SN. If SN was kicked$, " + desc + "."
-                );
-            }
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new MagicPlayCardFromStackAction(event.getCardOnStack(), event.getKickerCount()));
-            }
-        };
-    }
-    
     public static MagicSpellCardEvent createX(final String desc) {
         return new MagicSpellCardEvent() {
             @Override

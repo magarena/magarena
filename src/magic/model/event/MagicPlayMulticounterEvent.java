@@ -22,7 +22,7 @@ public class MagicPlayMulticounterEvent extends MagicSpellCardEvent {
     public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
         return new MagicEvent(
             cardOnStack,
-            new MagicKickerChoice(cost,true),
+            new MagicKickerChoice(cost),
             this,
             "$Play SN. SN enters the battlefield " + 
             "with a +1/+1 counter on it for each time it was kicked$"

@@ -57,7 +57,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     private int abilityPlayedThisTurn;
     private int damage;
     private int preventDamage;
-    private int kicker;
     private int fixedScore;
     private int score;
 
@@ -108,7 +107,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         chosenTarget = copyMap.copy(sourcePermanent.chosenTarget);
         damage=sourcePermanent.damage;
         preventDamage=sourcePermanent.preventDamage;
-        kicker=sourcePermanent.kicker;
         fixedScore=sourcePermanent.fixedScore;
         score=sourcePermanent.score;
         stateId=sourcePermanent.stateId;
@@ -150,7 +148,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             stateFlags,
             damage,
             preventDamage,
-            kicker,
             equippedCreature.getStateId(),
             enchantedCreature.getStateId(),
             blockedCreature.getStateId(),
@@ -488,16 +485,12 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         preventDamage=amount;
     }
 
-    public void setKicker(final int aKicker) {
-        kicker = aKicker;
-    }
-
     public int getKicker() {
-        return kicker;
+        return card.getKicker();
     }
     
     public boolean isKicked() {
-        return kicker > 0 || card.isKicked();
+        return card.isKicked();
     }
 
     public int getLethalDamage(final int toughness) {

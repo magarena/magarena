@@ -27,7 +27,7 @@ public class MagicKickerCost extends MagicAdditionalCost implements MagicEventAc
                 new MagicPayManaCostChoice(manaCost)
             ),
             this,
-            "PN may$$ pay " + manaCost.getText() + "$."
+            "PN may$ pay " + manaCost.getText() + "$."
         );
     }
         

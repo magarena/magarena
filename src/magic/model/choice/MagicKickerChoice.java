@@ -24,45 +24,35 @@ public class MagicKickerChoice extends MagicChoice {
     
     private final MagicChoice otherChoice;
     private final MagicManaCost cost;
-    private final boolean multi;
     private final String name;
 
     public static MagicKickerChoice Replicate(final MagicChoice otherChoice, final MagicManaCost cost) {
-        return new MagicKickerChoice(otherChoice, cost, true, "replicate");
+        return new MagicKickerChoice(otherChoice, cost, "replicate");
     }
     
     public static MagicKickerChoice Replicate(final MagicManaCost cost) {
-        return new MagicKickerChoice(cost, true, "replicate");
+        return new MagicKickerChoice(cost, "replicate");
     }
 
-    public MagicKickerChoice(final MagicChoice otherChoice, final MagicManaCost cost,final boolean multi,final String name) {
+    public MagicKickerChoice(final MagicChoice otherChoice, final MagicManaCost cost,final String name) {
         super("Choose how many times to pay the " + name + " cost.");
         this.otherChoice=otherChoice;
         this.cost=cost;
-        this.multi=multi;
         this.name = name;
     }
     
-    public MagicKickerChoice(final MagicChoice otherChoice,final MagicManaCost cost,final boolean multi) {
-        this(otherChoice, cost, multi, "kicker");
-    }
-    
     public MagicKickerChoice(final MagicChoice otherChoice,final MagicManaCost cost) {
-        this(otherChoice, cost, false, "kicker");
+        this(otherChoice, cost, "kicker");
     }
     
-    public MagicKickerChoice(final MagicManaCost cost,final boolean multi, final String name) {
-        this(MagicChoice.NONE, cost, multi, name);
-    }
-    
-    public MagicKickerChoice(final MagicManaCost cost,final boolean multi) {
-        this(MagicChoice.NONE, cost, multi, "kicker");
+    public MagicKickerChoice(final MagicManaCost cost, final String name) {
+        this(MagicChoice.NONE, cost, name);
     }
     
     public MagicKickerChoice(final MagicManaCost cost) {
-        this(MagicChoice.NONE, cost, false, "kicker");
+        this(MagicChoice.NONE, cost, "kicker");
     }
-
+    
     @Override
     public MagicTargetChoice getTargetChoice() {
         return (otherChoice instanceof MagicTargetChoice) ? (MagicTargetChoice)otherChoice : MagicTargetChoice.NONE;
@@ -93,9 +83,6 @@ public class MagicKickerChoice extends MagicChoice {
             cost.addTo(builderCost);
             if (!new MagicPayManaCostResultBuilder(game,player,builderCost).hasResults()) {
                 return index-1;
-            }
-            if (multi==false) {
-                return 1;
             }
         }
     }
