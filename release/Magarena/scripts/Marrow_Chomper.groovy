@@ -31,7 +31,7 @@
                         game.doAction(new MagicSacrificeAction(creature));
                         game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.PlusOne,2,true));
                         game.doAction(new MagicChangeLifeAction(event.getPlayer(),2));
-                        final MagicEvent newEvent=executeTrigger(game,permanent,permanent.getController());
+                        final MagicEvent newEvent=executeTrigger(game,permanent,MagicPayedCost.NO_COST);
                         if (newEvent.isValid()) {
                             game.addEvent(newEvent);
                         }

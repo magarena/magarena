@@ -43,7 +43,7 @@ def drawCards = {
                     public void doAction(final MagicPermanent creature) {
                         game.doAction(new MagicSacrificeAction(creature));
                         game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.PlusOne,1,true));
-                        final MagicEvent newEvent=executeTrigger(game,permanent,permanent.getController());
+                        final MagicEvent newEvent=executeTrigger(game,permanent,MagicPayedCost.NO_COST);
                         if (newEvent.isValid()) {
                             game.addEvent(newEvent);
                         }
