@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicPlayer player) {
+                final MagicPayedCost payedCost) {
             return (game.getCreatureDiedThisTurn()) ?
                 new MagicEvent(
                     permanent,

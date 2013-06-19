@@ -4,8 +4,8 @@
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicPlayer player) {
-            final int amount = player.getOpponent().getNrOfPermanentsWithType(MagicType.Creature);
+                final MagicPayedCost payedCost) {
+            final int amount = permanent.getOpponent().getNrOfPermanentsWithType(MagicType.Creature);
             game.doAction(new MagicChangeCountersAction(
                 permanent,
                 MagicCounterType.MinusOne,

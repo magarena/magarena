@@ -4,11 +4,11 @@
         public MagicEvent executeTrigger(
             final MagicGame game,
             final MagicPermanent permanent,
-            final MagicPlayer player) {   
+            final MagicPayedCost payedCost) {   
             game.doAction(new MagicChangeCountersAction(
                 permanent,
                 MagicCounterType.PlusOne,
-                permanent.getKicker(),
+                payedCost.getX(),
                 true
             ));
             return MagicEvent.NONE;

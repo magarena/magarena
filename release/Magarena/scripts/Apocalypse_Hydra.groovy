@@ -4,10 +4,10 @@
         public MagicEvent executeTrigger(
             final MagicGame game,
             final MagicPermanent permanent,
-            final MagicPlayer player) {   
-            final int count = permanent.getKicker() >= 5 ? 
-                    2 * permanent.getKicker() :
-                    permanent.getKicker();
+            final MagicPayedCost payedCost) {   
+            final int count = payedCost.getX() >= 5 ? 
+                    2 * payedCost.getX() :
+                    payedCost.getX();
             game.doAction(new MagicChangeCountersAction(
                 permanent,
                 MagicCounterType.PlusOne,

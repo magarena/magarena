@@ -4,10 +4,9 @@
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicPlayer player) {
+                final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
-                player,
                 MagicTargetChoice.TARGET_ATTACKING_OR_BLOCKING_CREATURE,
                 this,
                 "Remove target attacking or blocking creature\$ from combat."

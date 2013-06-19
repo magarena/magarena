@@ -4,11 +4,11 @@
         public MagicEvent executeTrigger(
             final MagicGame game,
             final MagicPermanent permanent,
-            final MagicPlayer player) {   
-            return (permanent.isKicked()) ?
+            final MagicPayedCost payedCost) {   
+            return payedCost.isKicked() ?
                 new MagicEvent(
                     permanent,
-                    permanent.getKicker(),
+                    payedCost.getKicker(),
                     this,
                     "Put RN 2/2 green Wolf creature tokens onto the battlefield."
                 ):

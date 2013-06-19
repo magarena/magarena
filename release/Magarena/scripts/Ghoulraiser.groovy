@@ -1,10 +1,9 @@
 [
     new MagicWhenComesIntoPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
-                player,
                 this,
                 "Return a Zombie card at random from your graveyard to your hand."
             );

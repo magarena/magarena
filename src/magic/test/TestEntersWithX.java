@@ -33,6 +33,7 @@ class TestEntersWithX extends TestGameBuilder {
         addToHand(P,"Mikaeus, the Lunarch",1); 
         addToHand(P,"Chimeric Mass",1); 
         addToHand(P,"Apocalypse Hydra",1); 
+        addToHand(P,"Ivy Elemental",1); 
 
         P = opponent;
         

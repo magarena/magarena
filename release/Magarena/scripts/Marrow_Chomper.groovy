@@ -1,12 +1,12 @@
 [
     new MagicWhenComesIntoPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
             final MagicTargetFilter<MagicPermanent> targetFilter=new MagicOtherPermanentTargetFilter(
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,permanent);
             final MagicTargetChoice targetChoice=new MagicTargetChoice(
                     targetFilter,false,MagicTargetHint.None,"a creature other than "+permanent+" to sacrifice");
-            return player.getNrOfPermanentsWithType(MagicType.Creature) > 1 ?
+            return permanent.getController().getNrOfPermanentsWithType(MagicType.Creature) > 1 ?
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(targetChoice),

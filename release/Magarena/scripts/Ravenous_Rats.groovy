@@ -1,11 +1,10 @@
 [
     new MagicWhenComesIntoPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-            final MagicPlayer opponent = player.getOpponent();
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
-                opponent,
+                permanent.getOpponent(),
                 this,
                 "PN discards a card."
             );

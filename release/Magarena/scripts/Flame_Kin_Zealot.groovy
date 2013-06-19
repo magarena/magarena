@@ -4,10 +4,9 @@
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicPlayer player) {    
+                final MagicPayedCost payedCost) {    
             return new MagicEvent(
                 permanent,
-                player,
                 this,
                 "Creatures PN controls get " +
                 "+1/+1 and gain haste until end of turn."

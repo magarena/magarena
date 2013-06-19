@@ -1,7 +1,7 @@
 [
     new MagicWhenComesIntoPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return MagicCondition.METALCRAFT_CONDITION.accept(permanent) ?
                 new MagicEvent(
                     permanent,

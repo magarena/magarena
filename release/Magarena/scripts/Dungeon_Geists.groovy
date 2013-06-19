@@ -27,7 +27,7 @@ def control = {
 [
     new MagicWhenComesIntoPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer player) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
                 MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS, 

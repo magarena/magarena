@@ -4,14 +4,14 @@
         public MagicEvent executeTrigger(
             final MagicGame game,
             final MagicPermanent permanent,
-            final MagicPlayer player) { 
-            return permanent.isKicked() ?
+            final MagicPayedCost payedCost) { 
+            return payedCost.isKicked() ?
                 new MagicEvent(
                     permanent,
-                    player,
                     MagicTargetChoice.TARGET_OPPONENT,
+                    payedCost.getKicker(),
                     this,
-                    "Target opponent\$ discards " + permanent.getKicker() + " cards."
+                    "Target opponent\$ discards RN cards."
                 ):
                 MagicEvent.NONE;
         }
@@ -19,7 +19,12 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
-                    game.addEvent(new MagicDiscardEvent(event.getSource(),player,event.getPermanent().getKicker(),false));
+                    game.addEvent(new MagicDiscardEvent(
+                        event.getSource(),
+                        player,
+                        event.getRefInt(),
+                        false
+                    ));
                 }
             });
         }

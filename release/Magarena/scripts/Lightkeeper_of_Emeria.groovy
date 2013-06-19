@@ -4,9 +4,12 @@
         public MagicEvent executeTrigger(
             final MagicGame game,
             final MagicPermanent permanent,
-            final MagicPlayer player) {   
-            if (permanent.isKicked()) {
-                game.doAction(new MagicChangeLifeAction(player, 2 * permanent.getKicker()));
+            final MagicPayedCost payedCost) {   
+            if (payedCost.isKicked()) {
+                game.doAction(new MagicChangeLifeAction(
+                    permanent.getController(), 
+                    2 * payedCost.getKicker()
+                ));
             }
             return MagicEvent.NONE;
         }

@@ -1,11 +1,12 @@
 [
     new MagicWhenComesIntoPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
+                payedCost.getKicker(),
                 this,
-                permanent.isKicked() ? 
+                payedCost.isKicked() ? 
                     "PN draws three cards." :
                     "PN draws three cards. Then discards three cards."
             );
@@ -14,7 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player=event.getPlayer();
             game.doAction(new MagicDrawAction(player,3));
-            if (!event.getPermanent().isKicked()) {
+            if (event.getRefInt() == 0) {
                 game.addEvent(new MagicDiscardEvent(event.getPermanent(),player,3,false));
             }
         }        

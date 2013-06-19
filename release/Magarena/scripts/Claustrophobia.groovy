@@ -1,7 +1,7 @@
 [
     new MagicWhenComesIntoPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPayedCost payedCost) {
             final MagicPermanent enchantedCreature = permanent.getEnchantedCreature();
             return enchantedCreature.isValid() ?
                 new MagicEvent(

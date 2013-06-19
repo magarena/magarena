@@ -1,7 +1,7 @@
 [
     new MagicWhenComesIntoPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
             final MagicTargetFilter<MagicPermanent> targetFilter = new MagicOtherPermanentTargetFilter(
                     MagicTargetFilter.TARGET_ARTIFACT_OR_ENCHANTMENT,permanent);
             final MagicTargetChoice targetChoice = new MagicTargetChoice(

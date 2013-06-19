@@ -4,11 +4,10 @@
         public MagicEvent executeTrigger(
             final MagicGame game,
             final MagicPermanent permanent,
-            final MagicPlayer player) {   
-            return (permanent.isKicked()) ?
+            final MagicPayedCost payedCost) {   
+            return payedCost.isKicked() ?
                 new MagicEvent(
                     permanent,
-                    player,
                     MagicTargetChoice.POS_TARGET_CREATURE,
                     this,
                     "Target creature\$ gains flying until end of turn."

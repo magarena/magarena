@@ -7,5 +7,4 @@ type=Legendary,Creature
 subtype=Human,Cleric
 cost={X}{W}
 timing=main
-ability=enters with x It enters the battlefield with X +1/+1 counters on it
 requires_groovy_code=Ivy Elemental,Mikaeus, the Lunarch

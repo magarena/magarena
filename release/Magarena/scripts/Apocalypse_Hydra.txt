@@ -7,6 +7,4 @@ type=Creature
 subtype=Hydra
 cost={X}{R}{G}
 timing=main
-ability=enters with x It enters the battlefield with X +1/+1 counters on it \
-plus an additional X +1/+1 counters if X is 5 or more.
 requires_groovy_code

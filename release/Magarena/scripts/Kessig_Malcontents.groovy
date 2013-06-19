@@ -4,8 +4,8 @@
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicPlayer player) {
-            final int amount = player.getNrOfPermanentsWithSubType(MagicSubType.Human);
+                final MagicPayedCost payedCost) {
+            final int amount = permanent.getController().getNrOfPermanentsWithSubType(MagicSubType.Human);
             return new MagicEvent(
                 permanent,
                 MagicTargetChoice.NEG_TARGET_PLAYER,

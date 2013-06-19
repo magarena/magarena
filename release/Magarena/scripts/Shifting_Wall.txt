@@ -6,6 +6,6 @@ rarity=U
 type=Artifact,Creature
 subtype=Wall
 cost={X}
-ability=defender,enters with x It enters the battlefield with X +1/+1 counters on it
+ability=defender
 timing=main
 requires_groovy_code=Ivy Elemental

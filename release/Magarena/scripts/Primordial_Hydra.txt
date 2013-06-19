@@ -7,5 +7,4 @@ type=Creature
 subtype=Hydra
 cost={X}{G}{G}
 timing=main
-ability=enters with x It enters the battlefield with X +1/+1 counters on it
 requires_groovy_code=Ivy Elemental,Primordial Hydra

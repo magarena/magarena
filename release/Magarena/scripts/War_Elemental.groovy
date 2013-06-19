@@ -4,8 +4,8 @@
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicPlayer player) {
-            return (!player.getOpponent().hasState(MagicPlayerState.WasDealtDamage)) ?
+                final MagicPayedCost payedCost) {
+            return (!permanent.getOpponent().hasState(MagicPlayerState.WasDealtDamage)) ?
                 new MagicEvent(
                     permanent,
                     this,

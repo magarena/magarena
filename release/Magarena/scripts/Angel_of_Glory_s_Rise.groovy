@@ -4,10 +4,9 @@
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicPlayer player) {
+                final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
-                player,
                 this,
                 "Exile all Zombies, then return all Human creature " +
                 "cards from PN's graveyard to the battlefield."

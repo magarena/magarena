@@ -4,13 +4,14 @@
         public MagicEvent executeTrigger(
             final MagicGame game,
             final MagicPermanent permanent,
-            final MagicPlayer player) {   
-            if (permanent.isKicked()) {
+            final MagicPayedCost payedCost) {   
+            if (payedCost.isKicked()) {
                 game.doAction(new MagicChangeCountersAction(
-                        permanent,
-                        MagicCounterType.PlusOne,
-                        2,
-                        true));
+                    permanent,
+                    MagicCounterType.PlusOne,
+                    2,
+                    true
+                ));
                 game.doAction(new MagicSetAbilityAction(permanent,MagicAbility.Flying,MagicStatic.Forever));
             }
             return MagicEvent.NONE;

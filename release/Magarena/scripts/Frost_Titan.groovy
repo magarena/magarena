@@ -44,7 +44,7 @@ def event = {
     //tap target permanent. It doesn't untap during its controller's next untap step.
     new MagicWhenComesIntoPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return event(permanent);
         }
     },

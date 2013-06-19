@@ -8,8 +8,8 @@
     },
     new MagicWhenComesIntoPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-            final int amount = game.filterPermanents(player,MagicTargetFilter.TARGET_ISLAND_YOU_CONTROL).size();
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
+            final int amount = game.filterPermanents(permanent.getController(),MagicTargetFilter.TARGET_ISLAND_YOU_CONTROL).size();
             game.doAction(new MagicChangeCountersAction(
                 permanent,
                 MagicCounterType.Charge,

@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicPlayer player) {
+                final MagicPayedCost payedCost) {
             final MagicTargetFilter<MagicPermanent> targetFilter = new MagicOtherPermanentTargetFilter(
                 MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,permanent
             );

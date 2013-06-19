@@ -30,7 +30,7 @@ def control = {
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicPlayer player) {
+                final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
                 MagicTargetChoice.TARGET_ARTIFACT,
