@@ -71,7 +71,7 @@ public class MultiKickerChoicePanel extends JPanel implements ActionListener {
         buttonPanel.add(rightButton);
     }
     
-    public int getKickerCount() {
+    public int getKicker() {
         return count;
     }
     

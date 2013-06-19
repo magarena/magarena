@@ -19,6 +19,7 @@ public class MagicPlayCardEvent {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
+                payedCost.getKicker(),
                 this,
                 "Put SN onto the battlefield."
             );
@@ -26,7 +27,10 @@ public class MagicPlayCardEvent {
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicPlayCardFromStackAction(event.getCardOnStack()));
+            game.doAction(new MagicPlayCardFromStackAction(
+                event.getCardOnStack(),
+                event.getRefInt()
+            ));
         }
     };
 
@@ -37,14 +41,17 @@ public class MagicPlayCardEvent {
                 return new MagicEvent(
                     cardOnStack,
                     payedCost.getX(),
-                    this,
+                    INSTANCE,
                     "$Play SN. " + desc + "."
                 );
             }
+
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
-                final int X = event.getRefInt();
-                game.doAction(new MagicPlayCardFromStackAction(event.getCardOnStack(), X));
+                game.doAction(new MagicPlayCardFromStackAction(
+                    event.getCardOnStack(),
+                    event.getRefInt()
+                ));
             }
         };
     }

@@ -158,7 +158,7 @@ public class MagicKickerChoice extends MagicChoice {
                     return new MultiKickerChoicePanel(controller,source,cost,maximumCount,name);
                 }
             });
-            count=kickerPanel.getKickerCount();
+            count=kickerPanel.getKicker();
         } else if (maximumCount==1) {
             // Single kicker.
             final MayChoicePanel kickerPanel = controller.waitForInput(new Callable<MayChoicePanel>() {

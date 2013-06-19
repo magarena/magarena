@@ -425,15 +425,15 @@ public class MagicEvent implements MagicCopyable {
     }
     
     public boolean isBuyback() {
-        return getCardOnStack().getCard().isKicked();
-    }
-
-    public int getKickerCount() {
-        return (Integer)chosen[1];
+        return getCardOnStack().isKicked();
     }
     
     public boolean isKicked() {
-        return getKickerCount() > 0;
+        return getCardOnStack().isKicked();
+    }
+
+    public int getKickerFromChosen() {
+        return (Integer)chosen[1];
     }
             
     public MagicDeclareBlockersResult getBlockers() {

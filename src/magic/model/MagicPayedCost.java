@@ -3,25 +3,39 @@ package magic.model;
 import magic.model.choice.MagicPayManaCostResult;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetNone;
+import magic.model.MagicCopyable;
 
-public class MagicPayedCost {
+public class MagicPayedCost implements MagicCopyable {
 
     public static final MagicPayedCost NO_COST = new MagicPayedCost();
     
     private MagicTarget target;
     private int x;
+    private int kicker;
     
     public MagicPayedCost() {
         target = MagicTargetNone.getInstance();
         x = 0;
+        kicker = 0;
     }
     
-    MagicPayedCost(final MagicCopyMap copyMap,final MagicPayedCost payedCost) {
+    public MagicPayedCost(final MagicPayedCost payedCost) {
+        target = payedCost.target;
+        x = payedCost.x;
+        kicker = payedCost.kicker;
+    }
+    
+    public MagicPayedCost(final MagicCopyMap copyMap,final MagicPayedCost payedCost) {
         target = copyMap.copy(payedCost.target);
         x = payedCost.x;
+        kicker = payedCost.kicker;
     }
     
-    public void setTarget(final MagicTarget target) {
+    public MagicCopyable copy(final MagicCopyMap copyMap) {
+        return new MagicPayedCost(copyMap, this);
+    }
+    
+    private void setTarget(final MagicTarget target) {
         this.target = target;
     }
     
@@ -29,7 +43,7 @@ public class MagicPayedCost {
         return target;
     }
     
-    public void setX(final int x) {
+    private void setX(final int x) {
         this.x = x;    
     }
         
@@ -43,5 +57,17 @@ public class MagicPayedCost {
         } else if (choiceResult instanceof MagicPayManaCostResult) {
             setX(((MagicPayManaCostResult)choiceResult).getX());
         }
+    }
+    
+    public void setKicker(final int aKicker) {
+        kicker = aKicker;
+    }
+
+    public int getKicker() {
+        return kicker;
+    }
+    
+    public boolean isKicked() {
+        return kicker > 0;
     }
 }

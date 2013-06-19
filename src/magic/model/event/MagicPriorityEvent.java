@@ -50,8 +50,12 @@ public class MagicPriorityEvent extends MagicEvent {
                 
                 // set activation/priority of controller
                 activation.changeActivationPriority(game,player);
+
                 // reset activation/priority of opponent
                 player.getOpponent().getActivationPriority().clear();
+
+                // reset payed costs
+                game.resetPayedCost();
 
                 for (final MagicEvent costEvent : activation.getCostEvent(source)) {
                     game.addEvent(costEvent);

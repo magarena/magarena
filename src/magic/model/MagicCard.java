@@ -30,7 +30,6 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
     private final int imageIndex;
     private boolean token;
     private boolean known=true;
-    private int kicker;
     
     public MagicCard(final MagicCardDefinition aCardDefinition,final MagicPlayer aOwner,final long aId) {
         aCardDefinition.loadScript();
@@ -49,7 +48,6 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
         imageIndex = sourceCard.imageIndex;
         token = sourceCard.token;
         known = sourceCard.known;
-        kicker = sourceCard.kicker;
     }
         
     @Override
@@ -276,17 +274,5 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
         }
                     
         return false;
-    }
-    
-    public void setKicker(final int aKicker) {
-        kicker = aKicker;
-    }
-
-    public int getKicker() {
-        return kicker;
-    }
-    
-    public boolean isKicked() {
-        return kicker > 0;
     }
 }

@@ -85,7 +85,7 @@ public class MagicGame {
     private final MagicGameplay gameplay;
     private MagicPhase phase;
     private MagicStep step;
-    private final MagicPayedCost payedCost;    
+    private MagicPayedCost payedCost;    
     private final MagicActionList actions;    
     private final MagicActionList delayedActions;    
     private MagicActionList undoPoints;
@@ -182,13 +182,13 @@ public class MagicGame {
         visiblePlayer=copyMap.copy(game.visiblePlayer);
         turnPlayer=copyMap.copy(game.turnPlayer);
         losingPlayer=copyMap.copy(game.losingPlayer);
+        payedCost=copyMap.copy(game.payedCost);
         
         //construct a new object using copyMap to copy internals
         events=new MagicEventQueue(copyMap, game.events);
         stack=new MagicStack(copyMap, game.stack);
         triggers=new MagicPermanentTriggerMap(copyMap, game.triggers);
         statics=new MagicPermanentStaticMap(copyMap, game.statics);
-        payedCost=new MagicPayedCost(copyMap, game.payedCost);
         exiledUntilEndOfTurn=new MagicCardList(copyMap, game.exiledUntilEndOfTurn);
        
         //construct a new object
@@ -257,6 +257,7 @@ public class MagicGame {
             (priorityPassed ? 1L : -1L),
             (stateCheckRequired ? 1L : -1L),
             payedCost.getX(),
+            payedCost.getKicker(),
             //payedCost.getTarget().getId(),
             stack.getStateId(),
             events.getStateId(),
@@ -444,9 +445,17 @@ public class MagicGame {
             step=MagicStep.Resolve;
         }        
     }
-        
+    
+    public void resetPayedCost() {
+        payedCost = new MagicPayedCost();
+    }
+    
+    public void setPayedCost(final MagicPayedCost aPayedCost) {
+        payedCost = aPayedCost;
+    }
+    
     public MagicPayedCost getPayedCost() {
-        return payedCost;
+        return new MagicPayedCost(payedCost);
     }
     
     /** Determines if game score should be cached for this game state. */
@@ -689,9 +698,9 @@ public class MagicGame {
         
         logAppendEvent(event,choiceResults);
     
-        // Payed cost.
-        if (choiceResults.length > 0) {
-            payedCost.set(choiceResults[choiceResults.length - 1]);
+        // Payed cost or target
+        if (choiceResults.length == 1) {
+            payedCost.set(choiceResults[0]);
         }
         
         event.executeEvent(this,choiceResults);
