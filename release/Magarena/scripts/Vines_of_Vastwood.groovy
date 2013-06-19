@@ -4,14 +4,11 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                new MagicKickerChoice(
-                    MagicTargetChoice.TARGET_CREATURE,
-                    MagicManaCost.create("{G}")
-                ),
+                MagicTargetChoice.TARGET_CREATURE,
                 MagicPumpTargetPicker.create(),
                 this,
                 "Target creature\$ can't be the target of spells or abilities your opponent controls this turn. " + 
-                "If SN was kicked\$, that creature gets +4/+4 until end of turn."
+                "If SN was kicked, that creature gets +4/+4 until end of turn."
             );
         }
         @Override

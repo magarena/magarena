@@ -14,15 +14,11 @@ def action = {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                new MagicKickerChoice(
-                    MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_ENCHANTMENT,
-                    MagicManaCost.create("{R}")
-                ),
+                MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_ENCHANTMENT,
                 new MagicDestroyTargetPicker(false),
                 this,
                 "Destroy target artifact or enchantment\$." + 
-                "If SN was kicked\$, " + 
-                "it deals damage equal to that permanent's converted mana cost to target creature."
+                "If SN was kicked, it deals damage equal to that permanent's converted mana cost to target creature."
             );
         }
         @Override

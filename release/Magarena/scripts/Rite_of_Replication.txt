@@ -6,4 +6,5 @@ rarity=R
 type=Sorcery
 cost={2}{U}{U}
 timing=main
+ability=kicker {5}
 requires_groovy_code

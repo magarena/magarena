@@ -6,4 +6,5 @@ rarity=C
 type=Instant
 cost={G}
 timing=pump
+ability=kicker {G}
 requires_groovy_code

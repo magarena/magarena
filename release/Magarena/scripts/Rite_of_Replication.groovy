@@ -4,14 +4,11 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                new MagicKickerChoice(
-                    MagicTargetChoice.TARGET_CREATURE,
-                    MagicManaCost.create("{5}")
-                ),
+                MagicTargetChoice.TARGET_CREATURE,
                 MagicCopyTargetPicker.create(),
                 this,
                 "Put a token onto the battlefield that's a copy of target creature\$. " + 
-                "If SN was kicked\$, put five of those tokens onto the battlefield instead."
+                "If SN was kicked, put five of those tokens onto the battlefield instead."
             );
         }
         @Override
