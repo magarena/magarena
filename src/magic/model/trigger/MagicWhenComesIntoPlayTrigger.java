@@ -4,6 +4,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
+import magic.model.MagicPayedCost;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.target.MagicTargetPicker;
 import magic.model.event.MagicEvent;
@@ -12,7 +13,7 @@ import magic.model.event.MagicRuleEventAction;
 import magic.model.action.MagicPlayTokenAction;
 import magic.data.TokenCardDefinitions;
 
-public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPlayer> {
+public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPayedCost> {
     public MagicWhenComesIntoPlayTrigger(final int priority) {
         super(priority); 
     }
@@ -37,10 +38,7 @@ public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPl
 
         return new MagicWhenComesIntoPlayTrigger() {
             @Override
-            public MagicEvent executeTrigger(
-                    final MagicGame game,
-                    final MagicPermanent permanent,
-                    final MagicPlayer player) {
+            public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
                 return new MagicEvent(
                     permanent,
                     choice,
@@ -58,7 +56,7 @@ public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPl
     
     public static final MagicWhenComesIntoPlayTrigger PutGolemOntoTheBattlefield = new MagicWhenComesIntoPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
                 this,
@@ -75,11 +73,8 @@ public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPl
     
     public static final MagicWhenComesIntoPlayTrigger ChooseOpponent = new MagicWhenComesIntoPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicPlayer player) {
-            permanent.setChosenTarget(player.getOpponent());
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
+            permanent.setChosenTarget(permanent.getOpponent());
             return MagicEvent.NONE;
         }
     };

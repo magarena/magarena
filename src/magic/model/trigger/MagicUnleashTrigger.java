@@ -4,6 +4,7 @@ import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
+import magic.model.MagicPayedCost;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.event.MagicEvent;
 import magic.model.choice.MagicMayChoice;
@@ -22,7 +23,7 @@ public class MagicUnleashTrigger extends MagicWhenComesIntoPlayTrigger {
     public MagicEvent executeTrigger(
             final MagicGame game,
             final MagicPermanent permanent,
-            final MagicPlayer player) {
+            final MagicPayedCost payedCost) {
         return new MagicEvent(
             permanent,
             new MagicMayChoice(),

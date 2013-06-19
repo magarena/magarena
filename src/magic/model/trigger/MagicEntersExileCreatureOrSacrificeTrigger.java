@@ -3,6 +3,7 @@ package magic.model.trigger;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
+import magic.model.MagicPayedCost;
 import magic.model.MagicSubType;
 import magic.model.action.MagicExileUntilThisLeavesPlayAction;
 import magic.model.action.MagicPermanentAction;
@@ -35,7 +36,7 @@ public class MagicEntersExileCreatureOrSacrificeTrigger extends MagicWhenComesIn
     }
 
     @Override
-    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
         final MagicTargetFilter<MagicPermanent> targetFilter = new MagicPermanentFilterImpl() {
             public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent creature) {        
                 boolean hasSubType = subtypes.length == 0;

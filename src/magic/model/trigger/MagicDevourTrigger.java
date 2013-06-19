@@ -4,6 +4,7 @@ import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
+import magic.model.MagicPayedCost;
 import magic.model.MagicType;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicPermanentAction;
@@ -28,7 +29,7 @@ public class MagicDevourTrigger extends MagicWhenComesIntoPlayTrigger {
     public MagicEvent executeTrigger(
             final MagicGame game,
             final MagicPermanent perm,
-            final MagicPlayer player) {
+            final MagicPayedCost payedCost) {
         final MagicTargetFilter<MagicPermanent> targetFilter = new MagicOtherPermanentTargetFilter(
             MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,
             perm
@@ -39,17 +40,17 @@ public class MagicDevourTrigger extends MagicWhenComesIntoPlayTrigger {
             MagicTargetHint.None,
             "a creature other than " + perm + " to sacrifice"
         );
-        return (player.getNrOfPermanentsWithType(MagicType.Creature) > 1) ?
-                new MagicEvent(
-                    perm,
-                    new MagicMayChoice(
-                        targetChoice
-                    ),
-                    MagicSacrificeTargetPicker.create(),
-                    this,
-                    "You may$ sacrifice a creature$ to SN."
-                ) :
-                MagicEvent.NONE;
+        return (perm.getController().getNrOfPermanentsWithType(MagicType.Creature) > 1) ?
+            new MagicEvent(
+                perm,
+                new MagicMayChoice(
+                    targetChoice
+                ),
+                MagicSacrificeTargetPicker.create(),
+                this,
+                "You may$ sacrifice a creature$ to SN."
+            ) :
+            MagicEvent.NONE;
     }
 
     @Override
@@ -65,14 +66,16 @@ public class MagicDevourTrigger extends MagicWhenComesIntoPlayTrigger {
                     final MagicPermanent permanent = event.getPermanent();
                     game.doAction(new MagicSacrificeAction(creature));
                     game.doAction(new MagicChangeCountersAction(
-                            permanent,
-                            MagicCounterType.PlusOne,
-                            amount,
-                            true));
+                        permanent,
+                        MagicCounterType.PlusOne,
+                        amount,
+                        true
+                    ));
                     final MagicEvent newEvent = executeTrigger(
-                            game,
-                            permanent,
-                            permanent.getController());
+                        game,
+                        permanent,
+                        MagicPayedCost.NO_COST
+                    );
                     if (newEvent.isValid()) {
                         game.addEvent(newEvent);
                     }

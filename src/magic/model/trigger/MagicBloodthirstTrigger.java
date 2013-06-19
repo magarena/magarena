@@ -4,6 +4,7 @@ import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
+import magic.model.MagicPayedCost;
 import magic.model.MagicPlayerState;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.event.MagicEvent;
@@ -20,8 +21,8 @@ public class MagicBloodthirstTrigger extends MagicWhenComesIntoPlayTrigger {
     public MagicEvent executeTrigger(
             final MagicGame game,
             final MagicPermanent permanent,
-            final MagicPlayer player) {
-        return (player.getOpponent().hasState(MagicPlayerState.WasDealtDamage)) ?
+            final MagicPayedCost payedCost) {
+        return (permanent.getOpponent().hasState(MagicPlayerState.WasDealtDamage)) ?
             new MagicEvent(
                 permanent,
                 this,

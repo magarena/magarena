@@ -3,6 +3,7 @@ package magic.model.trigger;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
+import magic.model.MagicPayedCost;
 import magic.model.MagicSubType;
 import magic.model.action.MagicTapAction;
 import magic.model.event.MagicEvent;
@@ -18,7 +19,8 @@ public class MagicTappedIntoPlayUnlessTrigger extends MagicWhenComesIntoPlayTrig
     }
 
     @Override
-    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
+        final MagicPlayer player = permanent.getController();
         return (!player.controlsPermanent(subType1) &&
                 !player.controlsPermanent(subType2)) ?
             new MagicEvent(

@@ -4,6 +4,7 @@ import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
+import magic.model.MagicPayedCost;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicTargetAction;
 import magic.model.choice.MagicTargetChoice;
@@ -16,9 +17,7 @@ public class MagicEntersDamageTargetTrigger extends MagicWhenComesIntoPlayTrigge
     private final int n;
     private final MagicTargetChoice targetChoice;
 
-    public MagicEntersDamageTargetTrigger(
-            final MagicTargetChoice targetChoice,
-            final int n) {
+    public MagicEntersDamageTargetTrigger(final MagicTargetChoice targetChoice, final int n) {
         this.n = n;
         this.targetChoice = targetChoice;
     }
@@ -38,10 +37,9 @@ public class MagicEntersDamageTargetTrigger extends MagicWhenComesIntoPlayTrigge
     public MagicEvent executeTrigger(
             final MagicGame game,
             final MagicPermanent permanent,
-            final MagicPlayer player) {
+            final MagicPayedCost payedCost) {
         return new MagicEvent(
             permanent,
-            player,
             targetChoice,
             new MagicDamageTargetPicker(n),
             this,

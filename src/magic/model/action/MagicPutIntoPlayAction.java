@@ -6,6 +6,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicType;
+import magic.model.MagicPayedCost;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 
@@ -13,6 +14,7 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
 
     private MagicPermanent permanent = MagicPermanent.NONE;
     private MagicPermanent enchantedPermanent = MagicPermanent.NONE;
+    private MagicPayedCost payedCost = MagicPayedCost.NO_COST;
 
     @Override
     public void doAction(final MagicGame game) {
@@ -33,8 +35,8 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
         final MagicPlayer controller = permanent.getController();
 
         //execute come into play triggers
-        for (final MagicTrigger<MagicPlayer> trigger : permanent.getComeIntoPlayTriggers()) {
-            game.executeTrigger(trigger,permanent,permanent,controller);
+        for (final MagicTrigger<MagicPayedCost> trigger : permanent.getComeIntoPlayTriggers()) {
+            game.executeTrigger(trigger,permanent,permanent,payedCost);
         }
 
         //execute other come into player triggers
@@ -59,6 +61,10 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
     
     void setEnchantedPermanent(final MagicPermanent aEnchantedPermanent) {
         enchantedPermanent = aEnchantedPermanent;
+    }
+    
+    void setPayedCost(final MagicPayedCost aPayedCost) {
+        payedCost = aPayedCost;
     }
     
     protected abstract MagicPermanent createPermanent(final MagicGame game);

@@ -4,6 +4,7 @@ import magic.data.TokenCardDefinitions;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
+import magic.model.MagicPayedCost;
 import magic.model.action.MagicAttachEquipmentAction;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.event.MagicEvent;
@@ -22,10 +23,9 @@ public class MagicLivingWeaponTrigger extends MagicWhenComesIntoPlayTrigger {
     }
 
     @Override
-    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
+    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPayedCost payedCost) {
         return new MagicEvent(
             permanent,
-            player,
             this,
             "PN puts a 0/0 black Germ creature token onto the battlefield, then attaches SN to it."
         );
