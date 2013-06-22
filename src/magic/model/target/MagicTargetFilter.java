@@ -311,9 +311,13 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     
     MagicPermanentFilterImpl TARGET_BLACK_PERMANENT = Factory.permanent(MagicColor.Black, Control.Any);
     
-    MagicPermanentFilterImpl TARGET_BLACK_PERMANENT_YOU_CONTROL = Factory.permanent(MagicColor.Black, Control.You);
+    MagicPermanentFilterImpl TARGET_WHITE_PERMANENT_YOU_CONTROL = Factory.permanent(MagicColor.White, Control.You);
     
     MagicPermanentFilterImpl TARGET_BLUE_PERMANENT_YOU_CONTROL = Factory.permanent(MagicColor.Blue, Control.You);
+    
+    MagicPermanentFilterImpl TARGET_BLACK_PERMANENT_YOU_CONTROL = Factory.permanent(MagicColor.Black, Control.You);
+    
+    MagicPermanentFilterImpl TARGET_RED_PERMANENT_YOU_CONTROL = Factory.permanent(MagicColor.Red, Control.You);
     
     MagicPermanentFilterImpl TARGET_GREEN_PERMANENT_YOU_CONTROL = Factory.permanent(MagicColor.Green, Control.You);
     
