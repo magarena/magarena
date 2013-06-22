@@ -27,7 +27,7 @@ public class MagicDrawPhase extends MagicPhase {
         }
 
         final MagicPlayer player=game.getTurnPlayer();
-        game.doAction(new MagicDrawAction(player,1));
+        game.doAction(new MagicDrawAction(player));
         
         game.executeTrigger(MagicTriggerType.AtDraw,game.getTurnPlayer());
         

@@ -18,6 +18,10 @@ public class MagicDrawAction extends MagicAction {
     private final int amount;
     private List<MagicCard> drawnCards;
     
+    public MagicDrawAction(final MagicPlayer player) {
+        this(player, 1);
+    }
+    
     public MagicDrawAction(final MagicPlayer player,final int amount) {
         this.player=player;
         this.amount=amount;

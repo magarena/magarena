@@ -67,9 +67,7 @@ public class MagicThiefTrigger extends MagicWhenDamageIsDealtTrigger {
 
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        if (choice == choice.Must) {
-            game.doAction(new MagicDrawAction(event.getPlayer(),amount));
-        } else if (event.isYes()) {
+        if (choice == choice.Must || event.isYes()) {
             game.doAction(new MagicDrawAction(event.getPlayer(),amount));
         }
     }

@@ -15,10 +15,38 @@ public class MagicDiscardEvent extends MagicEvent {
 
     private final MagicCondition[] conds;
     
-    public MagicDiscardEvent(final MagicSource source,final int amount,final boolean random) {
-        this(source, source.getController(), amount, random);
+    public MagicDiscardEvent(final MagicSource source,final MagicPlayer player, final int amount) {
+        this(source, player, amount, false);
     }
-
+    
+    public MagicDiscardEvent(final MagicSource source,final MagicPlayer player) {
+        this(source, player, 1);
+    }
+    
+    public MagicDiscardEvent(final MagicSource source,final int amount) {
+        this(source, source.getController(), amount);
+    }
+    
+    public MagicDiscardEvent(final MagicSource source) {
+        this(source, source.getController(), 1);
+    }
+    
+    public static MagicDiscardEvent Random(final MagicSource source, final MagicPlayer player, final int amount) {
+        return new MagicDiscardEvent(source, player, amount, true);
+    }
+    
+    public static MagicDiscardEvent Random(final MagicSource source, final int amount) {
+        return Random(source, source.getController(), amount);
+    }
+    
+    public static MagicDiscardEvent Random(final MagicSource source, final MagicPlayer player) {
+        return Random(source, player, 1);
+    }
+    
+    public static MagicDiscardEvent Random(final MagicSource source) {
+        return Random(source, source.getController(), 1);
+    }
+    
     public MagicDiscardEvent(final MagicSource source,final MagicPlayer player,final int amount,final boolean random) {
         super(
             source,

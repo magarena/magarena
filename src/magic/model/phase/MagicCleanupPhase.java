@@ -36,7 +36,7 @@ public class MagicCleanupPhase extends MagicPhase {
         // discard excess cards
         if (turnPlayer.getNumExcessCards() > 0) {
             final int amount = turnPlayer.getNumExcessCards();
-            game.addEvent(new MagicDiscardEvent(MagicEvent.NO_SOURCE,turnPlayer,amount,false));
+            game.addEvent(new MagicDiscardEvent(MagicEvent.NO_SOURCE,turnPlayer,amount));
         }
         if (turnPlayer.getExtraTurns()>0) {
             game.doAction(new MagicChangeExtraTurnsAction(turnPlayer,-1));

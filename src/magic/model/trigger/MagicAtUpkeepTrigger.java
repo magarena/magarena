@@ -6,7 +6,6 @@ import magic.model.MagicPlayer;
 import magic.model.MagicCounterType;
 import magic.model.event.MagicEvent;
 import magic.model.action.MagicChangeCountersAction;
-import magic.model.action.MagicDrawAction;
 import magic.model.choice.MagicSimpleMayChoice;
 
 public abstract class MagicAtUpkeepTrigger extends MagicTrigger<MagicPlayer> {

@@ -34,7 +34,7 @@ public abstract class MagicAtDrawTrigger extends MagicTrigger<MagicPlayer> {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            game.doAction(new MagicDrawAction(player,1));
+            game.doAction(new MagicDrawAction(player));
         }
     };
 }
