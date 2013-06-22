@@ -6,42 +6,15 @@ def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
 };
 
 [    
-    new MagicWhenBecomesBlockedTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
-            if (permanent != attacker) {
-                return MagicEvent.NONE;
-            }
-            
-            final MagicPermanentList plist = new MagicPermanentList(permanent.getBlockingCreatures());
-            return new MagicEvent(
-                permanent,
-                plist,
-                this,
-                "Blocking creatures lose first strike until end of turn."
-            );
-        }
-        
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPermanentList plist = event.getRefPermanentList();
-            for (final MagicPermanent blocker : plist) {
-                game.doAction(new MagicAddStaticAction(blocker,AB));
-            }
-        }
-    },
-    new MagicWhenBlocksTrigger() {
+    new MagicWhenBlocksOrBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
-            final MagicPermanent blocked = permanent.getBlockedCreature();
-            return (permanent == blocker && blocked.isValid()) ?
-                new MagicEvent(
-                    permanent,
-                    blocked,
-                    this,
-                    "RN loses first strike until end of turn."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                permanent == blocker ? blocker.getBlockedCreature() : blocker,
+                this,
+                "RN loses first strike until end of turn."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

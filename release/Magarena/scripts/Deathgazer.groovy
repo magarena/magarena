@@ -1,47 +1,12 @@
 [
-    new MagicWhenBecomesBlockedTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
-            if (permanent !=  attacker) {
-                return MagicEvent.NONE;
-            }
-            final MagicPermanentList plist = new MagicPermanentList();
-            for (final MagicPermanent blocker : permanent.getBlockingCreatures()) {
-                if (!blocker.hasColor(MagicColor.Black)) {
-                    plist.add(blocker);
-                }
-            }
-            return !plist.isEmpty() ? 
-                new MagicEvent(
-                    permanent,
-                    permanent.getController(),
-                    plist,
-                    this,
-                    plist.size() == 1 ?
-                        "Destroy " + plist.get(0) + " at end of combat." :
-                        "Destroy blocking nonblack creatures at end of combat."
-                ):
-                MagicEvent.NONE;
-        }
-        
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPermanentList plist = event.getRefPermanentList();
-            for (final MagicPermanent blocker : plist) {
-                game.doAction(MagicChangeStateAction.Set(blocker,MagicPermanentState.DestroyAtEndOfCombat));
-            }
-        }
-    },
-    new MagicWhenBlocksTrigger() {
+    new MagicWhenBlocksOrBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
-            final MagicPermanent blocked = permanent.getBlockedCreature();
-            return (permanent == blocker &&
-                    blocked.isValid() &&
-                    !blocked.hasColor(MagicColor.Black)) ?
+            final MagicPermanent target = permanent == blocker ? blocker.getBlockedCreature() : blocker;
+            return !target.hasColor(MagicColor.Black) ?
                 new MagicEvent(
                     permanent,
-                    blocked,
+                    target,
                     this,
                     "Destroy RN at end of combat."
                 ):
@@ -49,8 +14,10 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPermanent creature = event.getRefPermanent();
-            game.doAction(MagicChangeStateAction.Set(creature,MagicPermanentState.DestroyAtEndOfCombat));
+            game.doAction(MagicChangeStateAction.Set(
+                event.getRefPermanent(),
+                MagicPermanentState.DestroyAtEndOfCombat
+            ));
         }
     }
 ]
