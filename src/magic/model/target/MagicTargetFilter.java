@@ -18,6 +18,7 @@ import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.stack.MagicItemOnStack;
+import magic.model.choice.MagicTargetChoice;
 
 abstract class MagicTargetFilterImpl implements MagicTargetFilter<MagicTarget> {
     public List<MagicTarget> filter(final MagicGame game, final MagicPlayer player, final MagicTargetHint targetHint) {
@@ -186,6 +187,19 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     MagicStackFilterImpl TARGET_SPELL=new MagicStackFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack target) {
             return target.isSpell();
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType==MagicTargetType.Stack;
+        }
+    };
+    
+    MagicStackFilterImpl TARGET_SPELL_THAT_TARGETS_PLAYER=new MagicStackFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack target) {
+            if (target.isSpell() == false) {
+                return false;
+            }
+            final MagicTargetChoice tchoice = target.getEvent().getTargetChoice();
+            return tchoice != null && tchoice.isTargeted() && tchoice.getTargetFilter().acceptType(MagicTargetType.Player);
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType==MagicTargetType.Stack;

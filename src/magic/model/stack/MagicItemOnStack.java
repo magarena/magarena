@@ -101,10 +101,10 @@ public abstract class MagicItemOnStack implements MagicTarget {
         return choiceResults;
     }
     
-    public boolean containsInChoiceResults(final MagicPermanent permanent) {
-        if (choiceResults!=null) {
+    public boolean containsInChoiceResults(final MagicObject obj) {
+        if (choiceResults != null) {
             for (final Object choiceResult : choiceResults) {
-                if (choiceResult==permanent) {
+                if (choiceResult == obj) {
                     return true;
                 }
             }

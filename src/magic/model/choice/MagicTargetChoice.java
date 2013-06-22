@@ -39,6 +39,14 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice NEG_TARGET_SPELL=
         new MagicTargetChoice(MagicTargetFilter.TARGET_SPELL,true,MagicTargetHint.Negative,
                 "target spell");
+
+    public static final MagicTargetChoice NEG_TARGET_SPELL_THAT_TARGETS_PLAYER = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_SPELL_THAT_TARGETS_PLAYER,
+        true,
+        MagicTargetHint.Negative,
+        "target spell that targets a player"
+    );
+
     public static final MagicTargetChoice NEG_TARGET_SPELL_WITH_X_COST=
         new MagicTargetChoice(MagicTargetFilter.TARGET_SPELL_WITH_X_COST,true,MagicTargetHint.Negative,
                 "target spell with {X} in its mana cost");
