@@ -377,26 +377,6 @@ public class MagicPlayer implements MagicTarget {
         return count;
     }
     
-    public int getNrOfPermanentsWithType(final MagicType type) {
-        int count=0;
-        for (final MagicPermanent permanent : permanents) {
-            if (permanent.hasType(type)) {
-                count++;
-            }
-        }
-        return count;
-    }
-
-    public int getNrOfPermanentsWithSubType(final MagicSubType subType) {
-        int count=0;
-        for (final MagicPermanent permanent : permanents) {
-            if (permanent.hasSubType(subType)) {
-                count++;
-            }
-        }
-        return count;
-    }
-    
     public void setBuilderCost(final MagicBuilderManaCost builderCost) {
         this.builderCost=builderCost;
     }
@@ -440,7 +420,38 @@ public class MagicPlayer implements MagicTarget {
         return count;
     }
     
-    public boolean controlsPermanent(final MagicTargetFilter filter) {
+    public int getNrOfPermanentsWithType(final MagicType type) {
+        int count=0;
+        for (final MagicPermanent permanent : permanents) {
+            if (permanent.hasType(type)) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public int getNrOfPermanentsWithSubType(final MagicSubType subType) {
+        int count=0;
+        for (final MagicPermanent permanent : permanents) {
+            if (permanent.hasSubType(subType)) {
+                count++;
+            }
+        }
+        return count;
+    }
+    
+    public int getNrOfPermanents(final MagicTargetFilter<MagicPermanent> filter) {
+        int count = 0;
+        for (final MagicPermanent permanent : permanents) {
+            if (filter.accept(currGame, this, permanent)) {
+                count++;
+            }
+        }
+        return count;
+    }
+    
+    
+    public boolean controlsPermanent(final MagicTargetFilter<MagicPermanent> filter) {
         for (final MagicPermanent permanent : permanents) {
             if (filter.accept(currGame, this, permanent)) {
                 return true;
