@@ -6,5 +6,5 @@ rarity=U
 type=Sorcery
 cost={6}{B}{G}
 timing=removal
-effect=Destroy target nonblack creature. It can't be regenerated.
-requires_card_code
+removal=4
+requires_groovy_code
