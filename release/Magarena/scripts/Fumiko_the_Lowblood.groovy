@@ -1,3 +1,18 @@
+def action = {
+    final MagicGame game, final MagicEvent event ->
+    final int amount = event.getPlayer().getOpponent().getNrOfAttackers();
+    game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),amount,amount));
+} as MagicEventAction
+
+def event = {
+    final MagicPermanent permanent ->
+    return new MagicEvent(
+        permanent,
+        action,
+        "SN gets +X/+X until end of turn, where X is the number of attacking creatures."
+    );
+}
+
 [
     new MagicStatic(
         MagicLayer.Ability, 
@@ -11,37 +26,13 @@
     new MagicWhenBlocksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
-            if (permanent == blocker) {
-                return new MagicEvent(
-                    permanent,
-                    this,
-                    "SN gets +X/+X until end of turn, where X is the number of attacking creatures."
-                );
-            }
-            return MagicEvent.NONE;
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int amount = event.getPlayer().getOpponent().getNrOfAttackers();
-            game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),amount,amount));
+            return (permanent == blocker) ? event(permanent) : MagicEvent.NONE;
         }
     },
     new MagicWhenBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocked) {
-            if (permanent == blocked) {
-                return new MagicEvent(
-                    permanent,
-                    this,
-                    "SN gets +X/+X until end of turn, where X is the number of attacking creatures."
-                );
-            }
-            return MagicEvent.NONE;
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int amount = event.getPlayer().getNrOfAttackers();
-            game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),amount,amount));
+            return (permanent == blocked) ? event(permanent) : MagicEvent.NONE;
         }
     }
 ]
