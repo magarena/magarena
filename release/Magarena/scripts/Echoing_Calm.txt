@@ -7,5 +7,4 @@ rarity=C
 type=Instant
 cost={1}{W}
 timing=removal
-
 requires_groovy_code
