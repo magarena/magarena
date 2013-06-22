@@ -6,5 +6,5 @@ rarity=R
 type=Instant
 cost={G}{W}
 timing=removal
-effect=Destroy target enchantment.
-requires_card_code
+removal=1
+requires_groovy_code
