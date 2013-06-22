@@ -15,7 +15,7 @@
             return new MagicEvent(
                 source,
                 MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_CREATURE,
-                new MagicTapTargetPicker(true,false),
+                MagicTapTargetPicker.Tap,
                 this,
                 "Tap target artifact or creature\$."
             );

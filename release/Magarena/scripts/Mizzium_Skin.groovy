@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
-                new MagicTapTargetPicker(true,false),
+                MagicShroudTargetPicker.create(),
                 this,
                 "Target creature\$ you control gets +0/+1 and gains hexproof until end of turn."
             );

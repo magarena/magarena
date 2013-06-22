@@ -6,7 +6,7 @@
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(MagicTargetChoice.NEG_TARGET_CREATURE),
-                    new MagicTapTargetPicker(true,false),
+                    MagicTapTargetPicker.Tap,
                     this,
                     "PN may\$ tap target creature\$."
                 ):

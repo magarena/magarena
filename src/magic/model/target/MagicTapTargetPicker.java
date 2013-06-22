@@ -6,24 +6,24 @@ import magic.model.MagicPlayer;
 
 public class MagicTapTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
-    private final boolean tap;
-    private final boolean untap;
+    private final boolean toTap;
     
-    public MagicTapTargetPicker(final boolean tap,final boolean untap) {
-        this.tap=tap;
-        this.untap=untap;
+    public static MagicTapTargetPicker Untap = new MagicTapTargetPicker(false);
+    public static MagicTapTargetPicker Tap = new MagicTapTargetPicker(true);
+    
+    private MagicTapTargetPicker(final boolean aToTap) {
+        toTap = aToTap;
     }    
     
     @Override
     protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
-        final boolean tapped=permanent.isTapped();
-        if ((tapped&&!untap)||(!tapped&&!tap)) {
+        final boolean isTapped = permanent.isTapped();
+        if (isTapped == toTap) {
             return 0;
         }        
-        final boolean owner=permanent.getController()==player;
-        if (owner==tapped) {
-            return 1+permanent.getPower()+permanent.getActivations().size();            
-        }
-        return 0;
+        final boolean isController = permanent.isController(player);
+        return (isController == isTapped) ?
+            1 + permanent.getPower()+permanent.getActivations().size() :
+            0;
     }
 }

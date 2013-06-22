@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.TARGET_CREATURE_YOU_DONT_CONTROL,
-                new MagicTapTargetPicker(true,false),
+                new MagicWeakenTargetPicker(4, 0),
                 this,
                 "Target creature\$ you don't control gets -4/-0 until end of turn."
             );

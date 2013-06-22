@@ -15,7 +15,7 @@
             return new MagicEvent(
                 source,
                 MagicTargetChoice.NEG_TARGET_CREATURE_WITHOUT_FLYING,
-                new MagicTapTargetPicker(true,false),
+                MagicTapTargetPicker.Tap,
                 this,
                 "Tap target creature\$ without flying."
             );

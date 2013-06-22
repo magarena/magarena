@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_CREATURE_OR_LAND,
-                new MagicTapTargetPicker(true,false),
+                MagicTapTargetPicker.Tap,
                 this,
                 "Tap target artifact, creature, or land\$. " +
                 "If the buyback cost was payed, return SN to its owner's hand as it resolves."

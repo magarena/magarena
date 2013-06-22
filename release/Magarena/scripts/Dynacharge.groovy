@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
-                new MagicTapTargetPicker(true,false),
+                MagicPumpTargetPicker.create(),
                 this,
                 "Target creature\$ you control gets +2/+0 until end of turn."
             );

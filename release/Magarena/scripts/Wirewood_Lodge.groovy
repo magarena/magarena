@@ -16,7 +16,7 @@
             return new MagicEvent(
                 source,
                 MagicTargetChoice.POS_TARGET_ELF,
-                new MagicTapTargetPicker(false,true),
+                MagicTapTargetPicker.Untap,
                 this,
                 "Untap target Elf\$."
             );

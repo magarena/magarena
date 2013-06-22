@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.NEG_TARGET_PERMANENT, 
-                new MagicTapTargetPicker(true,false),
+                MagicTapTargetPicker.Tap,
                 this,
                 "Tap target permanent\$."
             );

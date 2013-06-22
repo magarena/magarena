@@ -29,7 +29,7 @@ public abstract class MagicTapCreatureActivation extends MagicPermanentActivatio
         return new MagicEvent(
             source,
             MagicTargetChoice.NEG_TARGET_CREATURE,
-            new MagicTapTargetPicker(true,false),
+            MagicTapTargetPicker.Tap,
             this,
             "Tap target creature$."
         );

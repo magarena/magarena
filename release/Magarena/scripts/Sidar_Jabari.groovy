@@ -6,7 +6,7 @@
                 new MagicEvent(
                     permanent,
                     MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
-                    new MagicTapTargetPicker(true,false),
+                    MagicTapTargetPicker.Tap,
                     this,
                     "Tap target creature\$ defending player controls."
                 ):

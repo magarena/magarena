@@ -12,7 +12,7 @@
             return new MagicEvent(
                 source,
                 MagicTargetChoice.NEG_TARGET_CREATURE,
-                new MagicTapTargetPicker(true,false),
+                new MagicDamageTargetPicker(1),
                 this,
                 "SN deals 1 damage to target creature\$. Tap that creature."
             );

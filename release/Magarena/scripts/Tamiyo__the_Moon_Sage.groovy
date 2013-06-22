@@ -5,7 +5,7 @@
             return new MagicEvent(
                 source,
                 MagicTargetChoice.NEG_TARGET_PERMANENT,
-                new MagicTapTargetPicker(true, false),
+                MagicTapTargetPicker.Tap,
                 this,
                 "Tap target permanent\$. It doesn't untap during its controller's next untap step."
             );

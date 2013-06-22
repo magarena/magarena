@@ -26,7 +26,7 @@
             return new MagicEvent(
                 source,
                 MagicTargetChoice.POS_TARGET_CREATURE,
-                new MagicTapTargetPicker(false,true),
+                MagicTapTargetPicker.Untap,
                 this,
                 "Untap target creature\$."
             );

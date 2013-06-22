@@ -14,7 +14,7 @@
             return new MagicEvent(
                 source,
                 MagicTargetChoice.POS_TARGET_FOREST,
-                new MagicTapTargetPicker(false,true),
+                MagicTapTargetPicker.Untap,
                 this,
                 "Untap target Forest\$."
             );
