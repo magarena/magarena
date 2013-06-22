@@ -8,4 +8,4 @@ subtype=Elf
 cost={3}{G}
 ability=hexproof
 timing=main
-requires_card_code
+requires_groovy_code
