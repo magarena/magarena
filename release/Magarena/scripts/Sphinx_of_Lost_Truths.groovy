@@ -16,7 +16,7 @@
             final MagicPlayer player=event.getPlayer();
             game.doAction(new MagicDrawAction(player,3));
             if (event.getRefInt() == 0) {
-                game.addEvent(new MagicDiscardEvent(event.getPermanent(),player,3,false));
+                game.addEvent(new MagicDiscardEvent(event.getPermanent(),player,3));
             }
         }        
     }

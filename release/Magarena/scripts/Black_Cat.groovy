@@ -12,11 +12,9 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.addEvent(new MagicDiscardEvent(
+            game.addEvent(MagicDiscardEvent.Random(
                 event.getSource(),
                 event.getPlayer(),
-                1,
-                true
             ));
         }
     }

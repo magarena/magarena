@@ -22,7 +22,7 @@
                         MagicPermanentState.DoesNotUntapDuringNext,
                         true
                     ));
-                    game.doAction(new MagicDrawAction(event.getPlayer(),1));
+                    game.doAction(new MagicDrawAction(event.getPlayer()));
                 }
             });
         }

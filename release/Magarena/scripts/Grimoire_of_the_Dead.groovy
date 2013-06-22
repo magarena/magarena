@@ -20,7 +20,7 @@ def Black = new MagicStatic(MagicLayer.Color) {
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostTapEvent(source,"{1}"),
-                new MagicDiscardEvent(source,1,false)
+                new MagicDiscardEvent(source)
             ];
         }
         @Override

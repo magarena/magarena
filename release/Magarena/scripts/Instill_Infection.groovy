@@ -15,7 +15,7 @@
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.MinusOne,1,true));
-                    game.doAction(new MagicDrawAction(event.getPlayer(),1));
+                    game.doAction(new MagicDrawAction(event.getPlayer()));
                 }
             });
         }

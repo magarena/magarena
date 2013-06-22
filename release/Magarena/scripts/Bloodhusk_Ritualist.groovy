@@ -1,10 +1,7 @@
 [
     new MagicWhenComesIntoPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-            final MagicGame game,
-            final MagicPermanent permanent,
-            final MagicPayedCost payedCost) { 
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) { 
             return payedCost.isKicked() ?
                 new MagicEvent(
                     permanent,
@@ -23,7 +20,6 @@
                         event.getSource(),
                         player,
                         event.getRefInt(),
-                        false
                     ));
                 }
             });

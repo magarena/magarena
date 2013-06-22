@@ -16,7 +16,7 @@
             for (final MagicPermanent target : targets) {
                 game.doAction(new MagicUntapAction(target));
             }
-            game.doAction(new MagicDrawAction(player,1));
+            game.doAction(new MagicDrawAction(player));
         }
     }
 ]

@@ -16,7 +16,7 @@
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
                     if (event.isKicked()) {
-                        game.doAction(new MagicDrawAction(event.getPlayer(),1));
+                        game.doAction(new MagicDrawAction(event.getPlayer()));
                     }
                 }
             });

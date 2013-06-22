@@ -15,7 +15,7 @@
             event.processTargetPlayer(game,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     game.doAction(new MagicMillLibraryAction(player,2));
-                    game.doAction(new MagicDrawAction(event.getPlayer(),1));
+                    game.doAction(new MagicDrawAction(event.getPlayer()));
                 }
             });
         }

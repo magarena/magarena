@@ -3,8 +3,7 @@ def drawCards = {
     if (permanent.hasCounters()) {
         game.doAction(new MagicDrawAction(
             permanent.getController(),
-            permanent.getCounters(
-            MagicCounterType.PlusOne)
+            permanent.getCounters(MagicCounterType.PlusOne)
         ));
     }
 }

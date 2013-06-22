@@ -17,7 +17,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.addEvent(new MagicDiscardEvent(event.getSource(),event.getRefPlayer(),1,false));
+            game.addEvent(new MagicDiscardEvent(event.getSource(),event.getRefPlayer()));
         }
     }
 ]

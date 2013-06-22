@@ -23,7 +23,7 @@
                     }
                 }
             ));
-            outerGame.doAction(new MagicDrawAction(event.getPlayer(),1));
+            outerGame.doAction(new MagicDrawAction(event.getPlayer()));
         }
     }
 ]

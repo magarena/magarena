@@ -20,8 +20,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 final MagicPlayer player=event.getPlayer();
-                game.doAction(new MagicDrawAction(player,1));
-                game.addEvent(new MagicDiscardEvent(event.getSource(),player,1,false));
+                game.doAction(new MagicDrawAction(player));
+                game.addEvent(new MagicDiscardEvent(event.getSource(),player));
             }
         }
     }

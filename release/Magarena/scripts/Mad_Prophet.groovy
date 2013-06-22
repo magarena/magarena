@@ -8,7 +8,7 @@
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [
                 new MagicTapEvent(source),
-                new MagicDiscardEvent(source,1,false)
+                new MagicDiscardEvent(source)
             ];
         }
 
@@ -23,7 +23,7 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicDrawAction(event.getPlayer(),1));
+            game.doAction(new MagicDrawAction(event.getPlayer()));
         }
     }
 ]

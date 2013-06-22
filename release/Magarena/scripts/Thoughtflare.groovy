@@ -12,7 +12,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player=event.getPlayer();
             game.doAction(new MagicDrawAction(player,4));
-            game.addEvent(new MagicDiscardEvent(event.getSource(),player,2,false));
+            game.addEvent(new MagicDiscardEvent(event.getSource(),player,2));
         }
     }
 ]

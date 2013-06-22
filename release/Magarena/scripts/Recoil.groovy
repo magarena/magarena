@@ -16,7 +16,7 @@
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
-                    game.addEvent(new MagicDiscardEvent(event.getSource(),permanent.getOwner(),1,false));
+                    game.addEvent(new MagicDiscardEvent(event.getSource(),permanent.getOwner()));
                 }
             });
         }

@@ -17,7 +17,7 @@
             event.processTarget(game,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     game.doAction(new MagicPreventDamageAction(target,1));
-                    game.doAction(new MagicDrawAction(event.getPlayer(),1));
+                    game.doAction(new MagicDrawAction(event.getPlayer()));
                 }
             });
         }

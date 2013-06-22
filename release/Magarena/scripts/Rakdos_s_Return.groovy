@@ -17,7 +17,7 @@
                     final int amount = event.getCardOnStack().getX();
                     final MagicDamage damage=new MagicDamage(event.getSource(),target,amount);
                     game.doAction(new MagicDealDamageAction(damage));
-                    game.addEvent(new MagicDiscardEvent(event.getSource(), target, amount, false));
+                    game.addEvent(new MagicDiscardEvent(event.getSource(), target, amount));
                 }
             });
         }

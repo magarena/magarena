@@ -1,10 +1,7 @@
 [
     new MagicWhenDamageIsDealtTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicDamage damage) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicDamage damage) {
             return (permanent.getEquippedCreature() == damage.getSource() &&
                     damage.getTarget().isPlayer() &&
                     damage.isCombat()) ?
@@ -16,7 +13,7 @@
                         MagicSimpleMayChoice.DEFAULT_NONE
                     ),
                     this,
-                    "You may\$ draw two cards. If you do, discard a card."
+                    "PN may\$ draw two cards. If you do, discard a card."
                 ) :
                 MagicEvent.NONE;
         }
@@ -28,9 +25,7 @@
                 game.doAction(new MagicDrawAction(player, 2));
                 game.addEvent(new MagicDiscardEvent(
                     event.getSource(),
-                    player,
-                    1,
-                    false
+                    player
                 ));
             }
         }

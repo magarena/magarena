@@ -5,13 +5,13 @@
             return new MagicEvent(
                 source,
                 this,
-                "Draw a card, then discard a card at random."
+                "PN draws a card, then discards a card at random."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicDrawAction(event.getPlayer(), 1));
-            game.addEvent(new MagicDiscardEvent(event.getSource(), event.getPlayer(), 1, true));
+            game.doAction(new MagicDrawAction(event.getPlayer()));
+            game.addEvent(MagicDiscardEvent.Random(event.getSource(), event.getPlayer()));
         }
     },
     new MagicPlaneswalkerActivation(-4) {
@@ -40,7 +40,7 @@
             return new MagicEvent(
                 source,
                 this,
-                "Gain control of all creatures until end of turn. Untap them. They gain haste until end of turn."
+                "PN gains control of all creatures until end of turn. Untap them. They gain haste until end of turn."
             );
         }
         @Override

@@ -19,9 +19,7 @@
             if (event.isYes() && event.getPlayer().getHandSize() > 0) {
                 game.addEvent(new MagicDiscardEvent(
                     permanent,
-                    event.getPlayer(),
-                    1,
-                    false
+                    event.getPlayer()
                 ));
                 game.doAction(new MagicChangeStateAction(
                     permanent,

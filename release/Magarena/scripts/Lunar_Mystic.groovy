@@ -1,10 +1,7 @@
 [
     new MagicWhenOtherSpellIsCastTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicCardOnStack spell) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicCardOnStack spell) {
             return (permanent.isFriend(spell) &&
                     spell.getCardDefinition().isInstant()) ?
                 new MagicEvent(
@@ -21,7 +18,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicDrawAction(event.getPlayer(),1));
+                game.doAction(new MagicDrawAction(event.getPlayer()));
             }
         }
     }

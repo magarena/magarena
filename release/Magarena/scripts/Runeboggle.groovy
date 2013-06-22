@@ -14,7 +14,7 @@
             event.processTargetCardOnStack(game,new MagicCardOnStackAction() {
                 public void doAction(final MagicCardOnStack targetSpell) {
                     game.addEvent(new MagicCounterUnlessEvent(event.getSource(),targetSpell,MagicManaCost.create("{1}")));
-                    game.doAction(new MagicDrawAction(event.getPlayer(),1));
+                    game.doAction(new MagicDrawAction(event.getPlayer()));
                 }
             });
         }

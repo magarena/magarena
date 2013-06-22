@@ -15,9 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.addEvent(new MagicDiscardEvent(
                 event.getPermanent(),
-                event.getPlayer(),
-                1,
-                false
+                event.getPlayer()
             ));
         }
     }

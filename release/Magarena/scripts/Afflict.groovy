@@ -7,7 +7,7 @@
                 MagicTargetChoice.NEG_TARGET_CREATURE,
                 new MagicWeakenTargetPicker(1,1),
                 this,
-                "Target creature\$ gets -1/-1 until end of turn."
+                "Target creature\$ gets -1/-1 until end of turn. Draw a card."
             );
         }
         @Override
@@ -15,7 +15,7 @@
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeTurnPTAction(creature,-1,-1));
-                    game.doAction(new MagicDrawAction(event.getPlayer(),1));
+                    game.doAction(new MagicDrawAction(event.getPlayer()));
                 }
             });
         }

@@ -16,8 +16,7 @@
                     game.addEvent(new MagicDiscardEvent(
                         event.getSource(),
                         player,
-                        2,
-                        false
+                        2
                     ));
                     game.doAction(new MagicChangeLifeAction(player,-2));
                 }

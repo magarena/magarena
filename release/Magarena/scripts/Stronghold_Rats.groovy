@@ -15,7 +15,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             for (final MagicPlayer player : game.getPlayers()) {
-                game.addEvent(new MagicDiscardEvent(event.getPermanent(),player,1,false));
+                game.addEvent(new MagicDiscardEvent(event.getPermanent(),player));
             }
         }
     }

@@ -5,14 +5,13 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "Draw two cards, then discard two cards."
+                "PN draws two cards, then discard two cards."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPlayer player=event.getPlayer();
-            game.doAction(new MagicDrawAction(player,2));
-            game.addEvent(new MagicDiscardEvent(event.getSource(),player,2,false));
+            game.doAction(new MagicDrawAction(event.getPlayer(),2));
+            game.addEvent(new MagicDiscardEvent(event.getSource(),event.getPlayer(),2));
         }
     }
 ]

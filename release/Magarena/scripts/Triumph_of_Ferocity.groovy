@@ -1,10 +1,7 @@
 [
     new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicPlayer upkeepPlayer) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
             return permanent.isController(upkeepPlayer) ?
                 new MagicEvent(
                     permanent,
@@ -29,7 +26,7 @@
                 }
             }
             if (highest.isController(player)) {
-                game.doAction(new MagicDrawAction(player,1));
+                game.doAction(new MagicDrawAction(player));
             }
         }       
     }

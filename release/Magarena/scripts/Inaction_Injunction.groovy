@@ -15,7 +15,7 @@
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicDetainAction(event.getPlayer(), creature));
-                    game.doAction(new MagicDrawAction(event.getPlayer(), 1));
+                    game.doAction(new MagicDrawAction(event.getPlayer()));
                 }
             });
         }

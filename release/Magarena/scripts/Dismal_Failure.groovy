@@ -14,7 +14,7 @@
             event.processTargetCardOnStack(game,new MagicCardOnStackAction() {
                 public void doAction(final MagicCardOnStack counteredCard) {
                     game.doAction(new MagicCounterItemOnStackAction(counteredCard));
-                    game.addEvent(new MagicDiscardEvent(event.getSource(),counteredCard.getController(),1,false));
+                    game.addEvent(new MagicDiscardEvent(event.getSource(),counteredCard.getController()));
                 }
             });
         }

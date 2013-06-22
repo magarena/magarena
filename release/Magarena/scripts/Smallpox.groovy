@@ -16,9 +16,7 @@
                 game.doAction(new MagicChangeLifeAction(player,-1));
                 game.addEvent(new MagicDiscardEvent(
                     event.getSource(),
-                    player,
-                    1,
-                    false
+                    player
                 ));
                 game.addEvent(new MagicSacrificePermanentEvent(
                     event.getSource(),

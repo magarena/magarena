@@ -27,9 +27,7 @@
                 public void doAction(final MagicPlayer player) {
                     game.addEvent(new MagicDiscardEvent(
                         event.getSource(),
-                        player,
-                        1,
-                        false
+                        player
                     ));
                     if (player.controlsPermanent(MagicSubType.Demon)) {
                         game.doAction(new MagicChangeLifeAction(player,-3));

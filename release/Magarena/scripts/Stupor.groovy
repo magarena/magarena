@@ -13,8 +13,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
-                    game.addEvent(new MagicDiscardEvent(event.getSource(),player,1,true));
-                    game.addEvent(new MagicDiscardEvent(event.getSource(),player,1,false));
+                    game.addEvent(MagicDiscardEvent.Random(event.getSource(),player));
+                    game.addEvent(new MagicDiscardEvent(event.getSource(),player));
                 }
             });
         }

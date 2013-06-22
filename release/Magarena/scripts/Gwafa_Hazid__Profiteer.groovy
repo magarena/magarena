@@ -52,7 +52,7 @@
                         1,
                         true
                     ));
-                    game.doAction(new MagicDrawAction(creature.getController(),1));
+                    game.doAction(new MagicDrawAction(creature.getController()));
                 }
             });
         }

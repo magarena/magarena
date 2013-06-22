@@ -21,7 +21,7 @@
                 public void doAction(final MagicTarget target) {
                     final MagicDamage damage=new MagicDamage(event.getPermanent(),target,2);
                     game.doAction(new MagicDealDamageAction(damage));
-                    game.doAction(new MagicDrawAction(event.getPlayer(),1));
+                    game.doAction(new MagicDrawAction(event.getPlayer()));
                 }
             });
         }
