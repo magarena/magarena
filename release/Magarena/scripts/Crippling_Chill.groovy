@@ -17,10 +17,9 @@
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicTapAction(creature,true));
-                    game.doAction(new MagicChangeStateAction(
+                    game.doAction(MagicChangeStateAction.Set(
                         creature,
-                        MagicPermanentState.DoesNotUntapDuringNext,
-                        true
+                        MagicPermanentState.DoesNotUntapDuringNext
                     ));
                     game.doAction(new MagicDrawAction(event.getPlayer()));
                 }

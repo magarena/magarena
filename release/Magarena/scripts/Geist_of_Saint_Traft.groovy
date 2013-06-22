@@ -18,7 +18,7 @@
             final MagicCard card = MagicCard.createTokenCard(TokenCardDefinitions.get("Angel4"),player);
             final MagicPlayCardAction action = new MagicPlayCardAction(card,player,MagicPlayCardAction.TAPPED_ATTACKING);
             game.doAction(action);
-            game.doAction(new MagicChangeStateAction(action.getPermanent(),MagicPermanentState.ExileAtEndOfCombat,true));
+            game.doAction(MagicChangeStateAction.Set(action.getPermanent(),MagicPermanentState.ExileAtEndOfCombat));
         }
     }
 ]

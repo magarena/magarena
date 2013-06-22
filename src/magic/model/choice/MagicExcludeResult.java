@@ -39,9 +39,14 @@ public class MagicExcludeResult implements MagicMappable {
         final int size=excludePermanents.size();
         for (int index=0,flag=1;index<size;index++,flag<<=1) {
             final MagicPermanent permanent=excludePermanents.get(index);
-            final boolean combat=(excludeFlags&flag)==0;
-            game.doAction(new MagicChangeStateAction(permanent,MagicPermanentState.ExcludeFromCombat,combat));
-            game.doAction(new MagicChangeStateAction(permanent,MagicPermanentState.ExcludeManaSource,!combat));
+            final boolean excludeFromCombat=(excludeFlags&flag)==0;
+            if (excludeFromCombat) {
+                game.doAction(MagicChangeStateAction.Set(permanent,MagicPermanentState.ExcludeFromCombat));
+                game.doAction(MagicChangeStateAction.Clear(permanent,MagicPermanentState.ExcludeManaSource));
+            } else {
+                game.doAction(MagicChangeStateAction.Clear(permanent,MagicPermanentState.ExcludeFromCombat));
+                game.doAction(MagicChangeStateAction.Set(permanent,MagicPermanentState.ExcludeManaSource));
+            }
         }
     }
     

@@ -30,7 +30,10 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanentList plist = event.getRefPermanentList();
             for (final MagicPermanent blocker : plist) {
-                game.doAction(new MagicChangeStateAction(blocker,MagicPermanentState.DestroyAtEndOfCombat,true));
+                game.doAction(MagicChangeStateAction.Set(
+                    blocker,
+                    MagicPermanentState.DestroyAtEndOfCombat
+                ));
             }
         }
     },
@@ -51,10 +54,9 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeStateAction(
+            game.doAction(MagicChangeStateAction.Set(
                 event.getRefPermanent(),
-                MagicPermanentState.DestroyAtEndOfCombat,
-                true
+                MagicPermanentState.DestroyAtEndOfCombat
             ));
         }
     }

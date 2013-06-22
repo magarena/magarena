@@ -13,7 +13,7 @@
             final Collection<MagicPermanent> targets =
                 game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS);            
             for (final MagicPermanent target : targets) {
-                game.doAction(new MagicChangeStateAction(target,MagicPermanentState.CannotBeRegenerated,true));
+                game.doAction(MagicChangeStateAction.Set(target,MagicPermanentState.CannotBeRegenerated));
             }
             game.doAction(new MagicDestroyAction(targets));
         }

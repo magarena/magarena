@@ -24,7 +24,10 @@
                 public void doAction(final MagicPermanent creature) {
                     final MagicDamage damage=new MagicDamage(event.getPermanent(),creature,3);
                     game.doAction(new MagicDealDamageAction(damage));
-                    game.doAction(new MagicChangeStateAction(event.getPermanent(),MagicPermanentState.DoesNotUntapDuringNext,true));
+                    game.doAction(MagicChangeStateAction.Set(
+                        event.getPermanent(),
+                        MagicPermanentState.DoesNotUntapDuringNext
+                    ));
                 }
             });
         }

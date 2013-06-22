@@ -27,11 +27,11 @@ public class MagicUntapPhase extends MagicPhase {
 
         for (final MagicPermanent permanent : player.getPermanents()) {
             if (permanent.hasState(MagicPermanentState.Summoned)) {
-                game.doAction(new MagicChangeStateAction(permanent,MagicPermanentState.Summoned,false));
-                game.doAction(new MagicChangeStateAction(permanent,MagicPermanentState.MustPayEchoCost,true));
+                game.doAction(MagicChangeStateAction.Clear(permanent,MagicPermanentState.Summoned));
+                game.doAction(MagicChangeStateAction.Set(permanent,MagicPermanentState.MustPayEchoCost));
             }
             if (permanent.hasState(MagicPermanentState.DoesNotUntapDuringNext)) {
-                game.doAction(new MagicChangeStateAction(permanent,MagicPermanentState.DoesNotUntapDuringNext,false));
+                game.doAction(MagicChangeStateAction.Clear(permanent,MagicPermanentState.DoesNotUntapDuringNext));
             } else if (permanent.isTapped() && !permanent.hasAbility(MagicAbility.DoesNotUntap) &&
                       (!exhausted || !(permanent.isLand() || permanent.isCreature()))) {
                 game.doAction(new MagicUntapAction(permanent));

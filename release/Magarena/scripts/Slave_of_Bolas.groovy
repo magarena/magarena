@@ -18,7 +18,7 @@
                     game.doAction(new MagicGainControlAction(event.getPlayer(),creature));
                     game.doAction(new MagicUntapAction(creature));
                     game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Haste));
-                    game.doAction(new MagicChangeStateAction(creature,MagicPermanentState.SacrificeAtEndOfTurn,true));
+                    game.doAction(MagicChangeStateAction.Set(creature,MagicPermanentState.SacrificeAtEndOfTurn));
                 }
             });
         }

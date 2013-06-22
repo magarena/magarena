@@ -3,7 +3,7 @@ def action = {
     event.processTargetPermanent(game,new MagicPermanentAction() {
         public void doAction(final MagicPermanent perm) {
             game.doAction(new MagicTapAction(perm,true));
-            game.doAction(new MagicChangeStateAction(perm,MagicPermanentState.DoesNotUntapDuringNext,true));
+            game.doAction(MagicChangeStateAction.Set(perm,MagicPermanentState.DoesNotUntapDuringNext));
         }
     });
 } as MagicEventAction

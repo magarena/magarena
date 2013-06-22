@@ -17,10 +17,9 @@
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     final MagicPlayer controller=creature.getController();
-                    game.doAction(new MagicChangeStateAction(
+                    game.doAction(MagicChangeStateAction.Set(
                         creature,
-                        MagicPermanentState.CannotBeRegenerated,
-                        true
+                        MagicPermanentState.CannotBeRegenerated
                     ));
                     game.doAction(new MagicDestroyAction(creature));
                     game.doAction(new MagicPlayTokenAction(

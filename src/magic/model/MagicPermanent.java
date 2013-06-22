@@ -614,7 +614,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
                 game.logAppendMessage(getController(),getName()+" is put into its owner's graveyard.");
                 game.addDelayedAction(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
             } else if (hasState(MagicPermanentState.Destroyed)) {
-                game.addDelayedAction(new MagicChangeStateAction(this,MagicPermanentState.Destroyed,false));
+                game.addDelayedAction(MagicChangeStateAction.Clear(this,MagicPermanentState.Destroyed));
                 game.addDelayedAction(new MagicDestroyAction(this));
             } else if (toughness-damage<=0) {
                 game.addDelayedAction(new MagicDestroyAction(this));
@@ -1017,7 +1017,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             return true;
         } else if (MagicPermanentState.ReturnToOwnerAtEndOfTurn.hasState(stateFlags)) {
             game.logAppendMessage(getController(),"Return "+this.getName()+" to its owner (end of turn).");
-            game.doAction(new MagicChangeStateAction(this,MagicPermanentState.ReturnToOwnerAtEndOfTurn,false));
+            game.doAction(MagicChangeStateAction.Clear(this,MagicPermanentState.ReturnToOwnerAtEndOfTurn));
             game.doAction(new MagicGainControlAction(getOwner(),this));
             return true;
         }

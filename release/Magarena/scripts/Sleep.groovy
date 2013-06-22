@@ -17,10 +17,9 @@
                         game.filterPermanents(player,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
                     for (final MagicPermanent creature : targets) {
                         game.doAction(new MagicTapAction(creature,true));
-                        game.doAction(new MagicChangeStateAction(
+                        game.doAction(MagicChangeStateAction.Set(
                             creature,
-                            MagicPermanentState.DoesNotUntapDuringNext,
-                            true
+                            MagicPermanentState.DoesNotUntapDuringNext
                         ));
                     }
                 }

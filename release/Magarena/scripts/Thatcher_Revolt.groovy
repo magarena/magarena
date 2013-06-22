@@ -17,9 +17,9 @@
             for (int x=3;x>0;x--) {
                 final MagicPutIntoPlayAction action = new MagicPlayTokenAction(player, token);
                 game.doAction(action);
-                game.doAction(new MagicChangeStateAction(
+                game.doAction(MagicChangeStateAction.Set(
                     action.getPermanent(),
-                    MagicPermanentState.SacrificeAtEndOfTurn,true
+                    MagicPermanentState.SacrificeAtEndOfTurn
                 ));
             }
         }

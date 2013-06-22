@@ -117,7 +117,7 @@ public class MagicDealDamageAction extends MagicAction {
         if (target.isCreature()) {
             final MagicPermanent targetPermanent=(MagicPermanent)target;
             if (damage.hasNoRegeneration()) {
-                game.doAction(new MagicChangeStateAction(targetPermanent,MagicPermanentState.CannotBeRegenerated,true));
+                game.doAction(MagicChangeStateAction.Set(targetPermanent,MagicPermanentState.CannotBeRegenerated));
             }
             if (source.hasAbility(MagicAbility.Wither)||source.hasAbility(MagicAbility.Infect)) {
                 game.doAction(new MagicChangeCountersAction(targetPermanent,MagicCounterType.MinusOne,dealtAmount,true));
@@ -126,7 +126,7 @@ public class MagicDealDamageAction extends MagicAction {
                 targetPermanent.setDamage(oldDamage+dealtAmount);
             }
             if (source.hasAbility(MagicAbility.Deathtouch)) {
-                game.doAction(new MagicChangeStateAction(targetPermanent,MagicPermanentState.Destroyed,true));
+                game.doAction(MagicChangeStateAction.Set(targetPermanent,MagicPermanentState.Destroyed));
             }
         } 
         

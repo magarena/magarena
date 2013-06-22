@@ -28,7 +28,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanentList plist = event.getRefPermanentList();
             for (final MagicPermanent blocker : plist) {
-                game.doAction(new MagicChangeStateAction(blocker,MagicPermanentState.CannotBeRegenerated,true));
+                game.doAction(MagicChangeStateAction.Set(blocker,MagicPermanentState.CannotBeRegenerated));
                 game.doAction(new MagicDestroyAction(blocker));
             }
         }
@@ -52,7 +52,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent creature = event.getRefPermanent();
-            game.doAction(new MagicChangeStateAction(creature,MagicPermanentState.CannotBeRegenerated,true));
+            game.doAction(MagicChangeStateAction.Set(creature,MagicPermanentState.CannotBeRegenerated));
             game.doAction(new MagicDestroyAction(creature));
         }
     }

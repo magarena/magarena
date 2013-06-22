@@ -15,7 +15,10 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
-                    game.doAction(new MagicChangeStateAction(permanent,MagicPermanentState.CannotBeRegenerated,true));
+                    game.doAction(MagicChangeStateAction.Set(
+                        permanent,
+                        MagicPermanentState.CannotBeRegenerated
+                    ));
                     game.doAction(new MagicDestroyAction(permanent));
                     game.doAction(new MagicPlayTokensAction(
                         event.getPlayer(),

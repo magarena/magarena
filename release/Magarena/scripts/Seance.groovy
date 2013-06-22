@@ -43,10 +43,10 @@ def Spirit = new MagicStatic(MagicLayer.Type) {
                             card.getCardDefinition());
                     game.doAction(action);
                     final MagicPermanent permanent = action.getPermanent();
-                    game.doAction(new MagicChangeStateAction(
-                            permanent,
-                            MagicPermanentState.SacrificeAtEndOfTurn,
-                            true));
+                    game.doAction(MagicChangeStateAction.Set(
+                        permanent,
+                        MagicPermanentState.SacrificeAtEndOfTurn
+                    ));
                     game.doAction(new MagicAddStaticAction(permanent,Spirit));
                 } as MagicCardAction);
             }

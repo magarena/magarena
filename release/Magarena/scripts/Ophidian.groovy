@@ -20,9 +20,9 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 game.doAction(new MagicDrawAction(event.getPlayer()));
-                game.doAction(new MagicChangeStateAction(
+                game.doAction(MagicChangeStateAction.Set(
                     event.getPermanent(),
-                    MagicPermanentState.NoCombatDamage,true
+                    MagicPermanentState.NoCombatDamage
                 ));
             }
         }

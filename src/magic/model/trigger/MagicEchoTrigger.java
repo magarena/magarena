@@ -41,9 +41,9 @@ public class MagicEchoTrigger extends MagicAtUpkeepTrigger {
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         final MagicPermanent permanent = event.getPermanent();
         if (event.isYes()) {
-            game.doAction(new MagicChangeStateAction(
+            game.doAction(MagicChangeStateAction.Clear(
                 permanent,
-                MagicPermanentState.MustPayEchoCost,false
+                MagicPermanentState.MustPayEchoCost
             ));
         } else {
             game.doAction(new MagicSacrificeAction(permanent));

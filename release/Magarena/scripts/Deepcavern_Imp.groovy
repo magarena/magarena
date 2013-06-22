@@ -21,10 +21,9 @@
                     permanent,
                     event.getPlayer()
                 ));
-                game.doAction(new MagicChangeStateAction(
+                game.doAction(MagicChangeStateAction.Clear(
                     permanent,
-                    MagicPermanentState.MustPayEchoCost,
-                    false
+                    MagicPermanentState.MustPayEchoCost
                 ));
             } else {
                 game.doAction(new MagicSacrificeAction(permanent));

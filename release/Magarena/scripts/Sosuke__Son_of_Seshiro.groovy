@@ -33,7 +33,7 @@
         
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeStateAction(event.getRefPermanent(),MagicPermanentState.DestroyAtEndOfCombat,true));
+            game.doAction(MagicChangeStateAction.Set(event.getRefPermanent(),MagicPermanentState.DestroyAtEndOfCombat));
         }
     }
 ]

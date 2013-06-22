@@ -26,10 +26,9 @@
                             1
                         );
                         game.doAction(new MagicDealDamageAction(damage));
-                        game.doAction(new MagicChangeStateAction(
+                        game.doAction(MagicChangeStateAction.Set(
                             permanent,
-                            MagicPermanentState.NoCombatDamage,
-                            true
+                            MagicPermanentState.NoCombatDamage
                         ));
                     }
                 });
