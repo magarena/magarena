@@ -1,0 +1,11 @@
+name=Kithkin Rabble
+url=http://magiccards.info/shm/en/9.html
+image=http://magiccards.info/scans/en/shm/9.jpg
+value=4.019
+rarity=U
+type=Creature
+subtype=Kithkin
+cost={3}{W}
+ability=vigilance
+timing=main
+requires_groovy_code
