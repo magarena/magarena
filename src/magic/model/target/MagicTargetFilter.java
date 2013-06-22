@@ -195,11 +195,10 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     
     MagicStackFilterImpl TARGET_SPELL_THAT_TARGETS_PLAYER=new MagicStackFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack target) {
-            if (target.isSpell() == false) {
-                return false;
-            }
             final MagicTargetChoice tchoice = target.getEvent().getTargetChoice();
-            return tchoice != null && tchoice.isTargeted() && tchoice.getTargetFilter().acceptType(MagicTargetType.Player);
+            return target.isSpell() && 
+                   tchoice != null && tchoice.isTargeted() && 
+                   tchoice.getTargetFilter().acceptType(MagicTargetType.Player);
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType==MagicTargetType.Stack;
