@@ -348,7 +348,9 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice SACRIFICE_ENCHANTMENT =
             new MagicTargetChoice(MagicTargetFilter.TARGET_ENCHANTMENT_YOU_CONTROL,false,MagicTargetHint.None,"an enchantment to sacrifice");
     public static final MagicTargetChoice SACRIFICE_MOUNTAIN =
-        new MagicTargetChoice(MagicTargetFilter.TARGET_MOUNTAIN_YOU_CONTROL,false,MagicTargetHint.None,"a mountain to sacrifice");
+        new MagicTargetChoice(MagicTargetFilter.TARGET_MOUNTAIN_YOU_CONTROL,false,MagicTargetHint.None,"a Mountain to sacrifice");
+    public static final MagicTargetChoice SACRIFICE_FOREST =
+        new MagicTargetChoice(MagicTargetFilter.TARGET_FOREST_YOU_CONTROL,false,MagicTargetHint.None,"a Forest to sacrifice");
     public static final MagicTargetChoice SACRIFICE_BAT=
         new MagicTargetChoice(MagicTargetFilter.TARGET_BAT_YOU_CONTROL,false,MagicTargetHint.None,"a Bat to sacrifice");    
     public static final MagicTargetChoice SACRIFICE_BEAST=

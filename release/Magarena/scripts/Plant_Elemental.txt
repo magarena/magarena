@@ -7,6 +7,5 @@ type=Creature
 subtype=Plant,Elemental
 cost={1}{G}
 pt=3/4
-ability=enters sac forest or sac self
 timing=main
-requires_card_code
+requires_groovy_code
