@@ -16,7 +16,7 @@
                     permanent,
                     amount,
                     this,
-                    "SN gets +RN/+RM until end of turn."
+                    "SN gets +RN/+RN until end of turn."
                 ):
                 MagicEvent.NONE;
         }
