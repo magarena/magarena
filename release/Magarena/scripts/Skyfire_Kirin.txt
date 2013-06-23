@@ -1,0 +1,12 @@
+name=Skyfire Kirin
+url=http://magiccards.info/sok/en/113.html
+image=http://magiccards.info/scans/en/sok/113.jpg
+value=3.833
+rarity=R
+type=Legendary,Creature
+subtype=Kirin,Spirit
+cost={2}{R}{R}
+pt=3/3
+ability=flying
+timing=main
+requires_groovy_code
