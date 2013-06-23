@@ -84,7 +84,7 @@ public class MagicCardDefinition {
     private int typeFlags;
     private EnumSet<MagicSubType> subTypeFlags = EnumSet.noneOf(MagicSubType.class);
     private EnumSet<MagicAbility> abilityFlags = EnumSet.noneOf(MagicAbility.class);
-    private int colorFlags;
+    private int colorFlags = -1;
     private MagicManaCost cost=MagicManaCost.ZERO;
     private String manaSourceText="";
     private final int[] manaSource=new int[MagicColor.NR_COLORS];
@@ -472,7 +472,9 @@ public class MagicCardDefinition {
 
     public void setCost(final MagicManaCost aCost) {
         cost = aCost;
-        colorFlags |= cost.getColorFlags();
+        if (colorFlags == -1) {
+            colorFlags = cost.getColorFlags();
+        }
     }
 
     public void validate() {                                                           
@@ -480,13 +482,6 @@ public class MagicCardDefinition {
         if (!isToken() && getTiming() == MagicTiming.None) {
             throw new RuntimeException(
                 getName() + " does not have a timing hint"
-            );
-        }
-
-        //check colorFlags and color from mana cost matches
-        if (cost != MagicManaCost.ZERO && cost.getColorFlags() != colorFlags) {
-            throw new RuntimeException(
-                "name=" + name + " costColorFlags: " + cost.getColorFlags() + " != colorFlags: " + colorFlags
             );
         }
     }
