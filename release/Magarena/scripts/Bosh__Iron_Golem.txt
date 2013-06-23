@@ -3,10 +3,10 @@ url=http://magiccards.info/mi/en/147.html
 image=http://magiccards.info/scans/en/mi/147.jpg
 value=4.330
 rarity=R
-type=Artifact,Creature
+type=Legendary,Artifact,Creature
 subtype=Golem
 cost={8}
 pt=6/7
 ability=trample
 timing=main
-requires_card_code
+requires_groovy_code
