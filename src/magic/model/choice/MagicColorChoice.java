@@ -48,7 +48,6 @@ public class MagicColorChoice extends MagicChoice {
     private final int type;
     
     private MagicColorChoice(final int type) {
-        
         super("Choose yes or no.");
         this.type=type;
     }
