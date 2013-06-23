@@ -4,6 +4,7 @@ image=http://magiccards.info/scans/en/10e/359.jpg
 value=4.375
 rarity=R
 type=Land
+color=
 mana=b2r2
 ability=tap add mana {1},tap pain add mana {B} or {R}
 timing=land

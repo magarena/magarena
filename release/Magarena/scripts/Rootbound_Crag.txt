@@ -4,6 +4,7 @@ image=http://magiccards.info/scans/en/m11/227.jpg
 value=3.860
 rarity=R
 type=Land
+color=
 mana=r3g3
 ability=tap add mana {R} or {G},\
         enters tapped unless mountain forest

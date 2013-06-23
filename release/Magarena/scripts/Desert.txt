@@ -4,6 +4,7 @@ image=http://magiccards.info/scans/en/tsts/118.jpg
 value=4.038
 rarity=C
 type=Land
+color=
 subtype=Desert
 ability=tap add mana {1}
 timing=land

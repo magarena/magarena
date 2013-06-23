@@ -4,6 +4,7 @@ image=http://magiccards.info/scans/en/pch/140.jpg
 value=4.222
 rarity=C
 type=Artifact,Land
+color=
 mana=g4
 ability=tap add mana {G}
 timing=land

@@ -4,6 +4,7 @@ image=http://magiccards.info/scans/en/rav/286.jpg
 value=4.184
 rarity=R
 type=Land
+color=
 subtype=Island,Swamp
 mana=u3b3
 ability=tap add mana {U} or {B},\

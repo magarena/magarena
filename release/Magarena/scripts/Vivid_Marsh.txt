@@ -4,6 +4,7 @@ image=http://magiccards.info/scans/en/lw/278.jpg
 value=3.250
 rarity=U
 type=Land
+color=
 mana=b3g1r1u1w1
 ability=enters tapped,enters with charge 2,tap add mana {B},tap drain add mana any
 timing=tapland

@@ -4,6 +4,7 @@ image=http://magiccards.info/scans/en/od/325.jpg
 value=2.381
 rarity=C
 type=Land
+color=
 mana=w1u3b1r1g1
 ability=enters tapped,tap add mana {U},tap sac add mana any
 timing=tapland

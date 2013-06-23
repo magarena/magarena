@@ -4,6 +4,7 @@ image=http://magiccards.info/scans/en/arc/126.jpg
 value=3.400
 rarity=U
 type=Land
+color=
 mana=r3g3
 ability=tap add mana {R} or {G},\
         enters tapped,\

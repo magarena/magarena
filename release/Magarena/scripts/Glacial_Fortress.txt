@@ -4,6 +4,7 @@ image=http://magiccards.info/scans/en/m11/225.jpg
 value=3.780
 rarity=R
 type=Land
+color=
 mana=w3u3
 ability=tap add mana {W} or {U},\
         enters tapped unless plains island

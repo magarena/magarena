@@ -3,6 +3,7 @@ url=http://magiccards.info/on/en/319.html
 image=http://magiccards.info/scans/en/on/319.jpg
 value=3.643
 type=Land
+color=
 mana=b1g1r1u1w1
 rarity=R
 ability=enters tapped,tap add mana {1},tap pain add mana any

@@ -4,6 +4,7 @@ image=http://magiccards.info/scans/en/zen/228.jpg
 value=4.303
 rarity=R
 type=Land
+color=
 mana=r3
 ability=tap add mana {R},enters tapped
 timing=tapland

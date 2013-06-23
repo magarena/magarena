@@ -4,6 +4,7 @@ image=http://magiccards.info/scans/en/me4/243.jpg
 value=4.614
 rarity=R
 type=Land
+color=
 mana=b1g1r1u1w1
 timing=land
 ability=tap add mana any

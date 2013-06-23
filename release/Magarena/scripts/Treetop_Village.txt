@@ -4,6 +4,7 @@ image=http://magiccards.info/scans/en/10e/361.jpg
 value=4.152
 rarity=U
 type=Land
+color=
 mana=g3
 timing=land
 ability=enters tapped,tap add mana {G}

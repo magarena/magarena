@@ -4,5 +4,6 @@ image=http://magiccards.info/scans/en/ds/164.jpg
 value=4.610
 rarity=C
 type=Artifact,Land
+color=
 ability=indestructible,tap add mana {1}
 timing=land

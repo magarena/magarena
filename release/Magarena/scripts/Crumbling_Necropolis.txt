@@ -4,6 +4,7 @@ image=http://magiccards.info/scans/en/ala/222.jpg
 value=3.617
 rarity=U
 type=Land
+color=
 mana=u3b3r3
 ability=tap add mana {U} or {B} or {R},\
         enters tapped

@@ -484,6 +484,11 @@ public class MagicCardDefinition {
                 getName() + " does not have a timing hint"
             );
         }
+        
+        //check colorFlags is set
+        if (colorFlags == -1) {
+            throw new RuntimeException(name + "'s color is not set");
+        }
     }
 
     public MagicManaCost getCost() {

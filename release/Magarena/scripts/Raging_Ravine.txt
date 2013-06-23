@@ -4,6 +4,7 @@ image=http://magiccards.info/scans/en/wwk/141.jpg
 value=4.285
 rarity=R
 type=Land
+color=
 mana=r3g3
 timing=tapland
 ability=enters tapped,tap add mana {R} or {G}

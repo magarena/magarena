@@ -4,6 +4,7 @@ image=http://magiccards.info/scans/en/isd/242.jpg
 value=3.832
 rarity=R
 type=Land
+color=
 mana=w3b3
 ability=tap add mana {W} or {B},\
         enters tapped unless plains swamp

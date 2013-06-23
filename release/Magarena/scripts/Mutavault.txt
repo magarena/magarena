@@ -4,6 +4,7 @@ image=http://magiccards.info/scans/en/mt/148.jpg
 value=4.592
 rarity=R
 type=Land
+color=
 ability=tap add mana {1}
 timing=land
 mana_or_combat

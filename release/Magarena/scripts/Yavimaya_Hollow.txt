@@ -4,6 +4,7 @@ image=http://magiccards.info/scans/en/ud/143.jpg
 value=4.452
 rarity=R
 type=Legendary,Land
+color=
 ability=tap add mana {1}
 timing=land
 requires_groovy_code

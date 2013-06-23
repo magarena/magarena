@@ -4,6 +4,7 @@ image=http://magiccards.info/scans/en/cs/144.jpg
 value=4.026
 rarity=U
 type=Snow,Land
+color=
 mana=w3u3
 ability=enters tapped,tap add mana {W} or {U}
 timing=tapland
