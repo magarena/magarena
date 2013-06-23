@@ -373,42 +373,42 @@ public class MagicTargetChoice extends MagicChoice {
             new MagicTargetChoice(MagicTargetFilter.TARGET_HUMAN_YOU_CONTROL,false,MagicTargetHint.None,
                     "a Human to sacrifice");
     public static final MagicTargetChoice TARGET_CARD_FROM_GRAVEYARD =
-            new MagicTargetChoice(MagicTargetFilter.TARGET_CARD_FROM_GRAVEYARD,false,MagicTargetHint.None,"target card from your graveyard");
+            new MagicTargetChoice(MagicTargetFilter.TARGET_CARD_FROM_GRAVEYARD,true,MagicTargetHint.None,"target card from your graveyard");
     public static final MagicTargetChoice NEG_TARGET_CARD_FROM_ALL_GRAVEYARDS =
-            new MagicTargetChoice(MagicTargetFilter.TARGET_CARD_FROM_ALL_GRAVEYARDs,false,MagicTargetHint.Negative,"target card from a graveyard");
+            new MagicTargetChoice(MagicTargetFilter.TARGET_CARD_FROM_ALL_GRAVEYARDs,true,MagicTargetHint.Negative,"target card from a graveyard");
     public static final MagicTargetChoice TARGET_CREATURE_CARD_FROM_GRAVEYARD=
-        new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD,false,MagicTargetHint.None,"target creature card from your graveyard");
+        new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD,true,MagicTargetHint.None,"target creature card from your graveyard");
     public static final MagicTargetChoice TARGET_CREATURE_CARD_WITH_INFECT_FROM_GRAVEYARD=
-            new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_CARD_WITH_INFECT_FROM_GRAVEYARD,false,MagicTargetHint.None,
+            new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_CARD_WITH_INFECT_FROM_GRAVEYARD,true,MagicTargetHint.None,
                     "target creature card with infect from your graveyard");
     public static final MagicTargetChoice TARGET_PERMANENT_CARD_FROM_GRAVEYARD =
-            new MagicTargetChoice(MagicTargetFilter.TARGET_PERMANENT_CARD_FROM_GRAVEYARD,false,MagicTargetHint.None,"target permanent card from your graveyard");
+            new MagicTargetChoice(MagicTargetFilter.TARGET_PERMANENT_CARD_FROM_GRAVEYARD,true,MagicTargetHint.None,"target permanent card from your graveyard");
     public static final MagicTargetChoice TARGET_PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD=
-        new MagicTargetChoice(MagicTargetFilter.TARGET_PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD,false,MagicTargetHint.None,"target permanent card with converted mana cost 3 or less from your graveyard");
+        new MagicTargetChoice(MagicTargetFilter.TARGET_PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD,true,MagicTargetHint.None,"target permanent card with converted mana cost 3 or less from your graveyard");
     public static final MagicTargetChoice TARGET_CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD=
-        new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD,false,MagicTargetHint.None,"target creature card from your opponent's graveyard");
+        new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD,true,MagicTargetHint.None,"target creature card from your opponent's graveyard");
     public static final MagicTargetChoice TARGET_INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD=
-        new MagicTargetChoice(MagicTargetFilter.TARGET_INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD,false,MagicTargetHint.None,"target instant or sorcery card from your graveyard");
+        new MagicTargetChoice(MagicTargetFilter.TARGET_INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD,true,MagicTargetHint.None,"target instant or sorcery card from your graveyard");
     public static final MagicTargetChoice TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD=
-        new MagicTargetChoice(MagicTargetFilter.TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD,false,MagicTargetHint.None,"target instant or sorcery card from your opponent's graveyard");
+        new MagicTargetChoice(MagicTargetFilter.TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD,true,MagicTargetHint.None,"target instant or sorcery card from your opponent's graveyard");
     public static final MagicTargetChoice TARGET_ENCHANTMENT_CARD_FROM_GRAVEYARD =
-            new MagicTargetChoice(MagicTargetFilter.TARGET_ENCHANTMENT_CARD_FROM_GRAVEYARD,false,MagicTargetHint.None,
+            new MagicTargetChoice(MagicTargetFilter.TARGET_ENCHANTMENT_CARD_FROM_GRAVEYARD,true,MagicTargetHint.None,
                     "target enchantment card from your graveyard");
     public static final MagicTargetChoice TARGET_ARTIFACT_CARD_FROM_GRAVEYARD =
-            new MagicTargetChoice(MagicTargetFilter.TARGET_ARTIFACT_CARD_FROM_GRAVEYARD,false,MagicTargetHint.None,
+            new MagicTargetChoice(MagicTargetFilter.TARGET_ARTIFACT_CARD_FROM_GRAVEYARD,true,MagicTargetHint.None,
                     "target artifact card from your graveyard");
     public static final MagicTargetChoice TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS=
-        new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS,false,MagicTargetHint.None,"target creature card from a graveyard");
+        new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS,true,MagicTargetHint.None,"target creature card from a graveyard");
     public static final MagicTargetChoice TARGET_ARTIFACT_OR_CREATURE_CARD_FROM_ALL_GRAVEYARDS=
-        new MagicTargetChoice(MagicTargetFilter.TARGET_ARTIFACT_OR_CREATURE_CARD_FROM_ALL_GRAVEYARDS,false,MagicTargetHint.None,"target artifact or creature card from a graveyard");
+        new MagicTargetChoice(MagicTargetFilter.TARGET_ARTIFACT_OR_CREATURE_CARD_FROM_ALL_GRAVEYARDS,true,MagicTargetHint.None,"target artifact or creature card from a graveyard");
     public static final MagicTargetChoice TARGET_GOBLIN_CARD_FROM_GRAVEYARD=
-        new MagicTargetChoice(MagicTargetFilter.TARGET_GOBLIN_CARD_FROM_GRAVEYARD,false,MagicTargetHint.None,
+        new MagicTargetChoice(MagicTargetFilter.TARGET_GOBLIN_CARD_FROM_GRAVEYARD,true,MagicTargetHint.None,
                 "target Goblin card from your graveyard");
     public static final MagicTargetChoice TARGET_ZOMBIE_CARD_FROM_GRAVEYARD =
-            new MagicTargetChoice(MagicTargetFilter.TARGET_ZOMBIE_CARD_FROM_GRAVEYARD,false,MagicTargetHint.None,
+            new MagicTargetChoice(MagicTargetFilter.TARGET_ZOMBIE_CARD_FROM_GRAVEYARD,true,MagicTargetHint.None,
                     "target Zombie card from your graveyard");
     public static final MagicTargetChoice TARGET_SPIRIT_CARD_FROM_GRAVEYARD =
-            new MagicTargetChoice(MagicTargetFilter.TARGET_SPIRIT_CARD_FROM_GRAVEYARD,false,MagicTargetHint.None,
+            new MagicTargetChoice(MagicTargetFilter.TARGET_SPIRIT_CARD_FROM_GRAVEYARD,true,MagicTargetHint.None,
                     "target Spirit card from your graveyard");
     public static final MagicTargetChoice TARGET_CARD_FROM_HAND =
             new MagicTargetChoice(MagicTargetFilter.TARGET_CARD_FROM_HAND,false,MagicTargetHint.None,"a card from your hand");
