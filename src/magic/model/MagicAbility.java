@@ -64,7 +64,6 @@ import magic.model.trigger.MagicThiefTrigger.Choice;
 import magic.model.trigger.MagicThiefTrigger.Player;
 import magic.model.trigger.MagicWhenBlocksPumpTrigger;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
-import magic.model.trigger.MagicSacrificeAtEnd;
 import magic.model.trigger.MagicWhenDiesTrigger;
 import magic.model.trigger.MagicAtEndOfTurnTrigger;
 import magic.model.trigger.MagicAtUpkeepTrigger;
@@ -372,7 +371,7 @@ public enum MagicAbility {
     SacAtEnd("sac at end",-100) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
-            card.add(MagicSacrificeAtEnd.create());
+            card.add(MagicAtEndOfTurnTrigger.SacrificeAtEnd);
         }
     },
     ChargeAtUpkeep("charge at upkeep",10) {
