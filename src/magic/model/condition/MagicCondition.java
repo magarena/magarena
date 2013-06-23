@@ -12,6 +12,8 @@ import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.phase.MagicPhaseType;
+import magic.model.target.MagicOtherPermanentTargetFilter;
+import magic.model.target.MagicTargetFilter;
 
 public interface MagicCondition {
     
@@ -129,6 +131,17 @@ public interface MagicCondition {
     MagicCondition OPP_FOUR_LANDS_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {
             return source.getController().getOpponent().getNrOfPermanentsWithType(MagicType.Land)>=4;
+        }
+    };
+    
+    MagicCondition LEAST_FIVE_OTHER_MOUNTAINS=new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicPermanent permanent = (MagicPermanent)source;
+            final MagicOtherPermanentTargetFilter filter = new MagicOtherPermanentTargetFilter(
+                MagicTargetFilter.TARGET_MOUNTAIN_YOU_CONTROL,
+                permanent
+            );
+            return permanent.getController().getNrOfPermanents(filter) >= 5;
         }
     };
     

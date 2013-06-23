@@ -1,0 +1,10 @@
+name=Valakut, the Molten Pinnacle
+url=http://magiccards.info/zen/en/228.html
+image=http://magiccards.info/scans/en/zen/228.jpg
+value=4.303
+rarity=R
+type=Land
+mana=r3
+ability=tap add mana {R},enters tapped
+timing=tapland
+requires_groovy_code
