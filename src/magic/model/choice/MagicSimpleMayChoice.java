@@ -26,29 +26,29 @@ public class MagicSimpleMayChoice extends MagicChoice {
     public static final int ADD_PLUSONE_COUNTER = 8;   // always returns YES_CHOICE_LIST
     public static final int PLAY_TOKEN = 9;            // always returns YES_CHOICE_LIST
     public static final int PUMP = 10;                 // always returns YES_CHOICE_LIST
-    
+
     public static final int DEFAULT_NONE = 0;
     public static final int DEFAULT_NO   = 1;
     public static final int DEFAULT_YES  = 2;
 
     private static final List<Object[]> YES_CHOICE_LIST = Collections.singletonList(new Object[]{YES_CHOICE});
     private static final List<Object[]> NO_CHOICE_LIST = Collections.singletonList(new Object[]{NO_CHOICE});
-    
+
     private final int action;
     private final int amount;
     private int defaultChoice;
-    
+
     private MagicSimpleMayChoice(final String description,final int action,final int amount,final int defaultChoice) {
         super(description);
         this.action = action;
         this.amount = amount;
         this.defaultChoice = defaultChoice;
     }
-    
+
     public MagicSimpleMayChoice(final int action,final int amount,final int defaultChoice) {
         this("Proceed with \"may\" action?", action, amount, defaultChoice);
     }
-    
+
     @Override
     Collection<Object> getArtificialOptions(final MagicGame game,final MagicEvent event,final MagicPlayer player,final MagicSource source) {
         throw new UnsupportedOperationException();
@@ -67,7 +67,7 @@ public class MagicSimpleMayChoice extends MagicChoice {
         }
         return yes ? YES_CHOICE_LIST : NO_CHOICE_LIST;
     }
-    
+
     @Override
     public Object[] getPlayerChoiceResults(
             final GameController controller,

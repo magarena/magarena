@@ -10,14 +10,14 @@ import java.util.Random;
 public class VegasWorker implements Runnable {
 
     private static final int MAIN_PHASES=6;
-    
+
     private final MagicGame sourceGame;
     private final VegasScore score;
     private final Object[] choiceResults;
     private final Random random;
     private final long slice;
     private final boolean CHEAT;
-    
+
     VegasWorker(final boolean cheat, final MagicGame sourceGame, final VegasScore score,final Random random,final long slice) {
         this.CHEAT = cheat;
         this.sourceGame=sourceGame;
@@ -36,21 +36,21 @@ public class VegasWorker implements Runnable {
             }
 
             final MagicEvent event=game.getNextEvent();
-            
+
             if (!event.hasChoice()) {
                 game.executeNextEvent();
                 continue;
             }
-            
+
             final List<Object[]> choiceResultsList=event.getArtificialChoiceResults(game);
             final int nrOfChoices=choiceResultsList.size();
 
             assert nrOfChoices != 0 : "ERROR: no choices available for VegasWorker";
-            
+
             game.executeNextEvent(choiceResultsList.get(random.nextInt(nrOfChoices)));
-        }        
+        }
     }
-    
+
     @Override
     public void run() {
         final long endTime = System.nanoTime() + slice;
@@ -64,5 +64,5 @@ public class VegasWorker implements Runnable {
             runGame(game);
             score.incrementScore(game.getScore());
         }
-    }    
+    }
 }

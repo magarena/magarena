@@ -8,13 +8,13 @@ import java.util.Collection;
 public class MagicDefaultTargetPicker extends MagicTargetPicker<MagicTarget> {
 
     private static final MagicDefaultTargetPicker INSTANCE = new MagicDefaultTargetPicker();
-    
+
     private MagicDefaultTargetPicker() {}
-    
+
     public static MagicDefaultTargetPicker create() {
         return INSTANCE;
     }
-    
+
     @Override
     protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
         return 0;

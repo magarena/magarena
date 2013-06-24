@@ -14,14 +14,14 @@ public abstract class AbstractTheme implements Theme {
 
     private final String name;
     private final Map<String,Object> themeMap;
-    
+
     AbstractTheme(final String name) {
-        
+
         this.name=name;
         themeMap=new HashMap<String,Object>();
-        
+
         addToTheme(TEXTURE_LOGO,new BufferedImage(1,1,BufferedImage.TYPE_INT_ARGB));
-        
+
         addToTheme(ICON_LIFE,IconImages.LIFE);
         addToTheme(ICON_PREVENT,IconImages.PREVENT2);
         addToTheme(ICON_POISON,IconImages.POISON);
@@ -36,7 +36,7 @@ public abstract class AbstractTheme implements Theme {
         addToTheme(ICON_SMALL_HAND,IconImages.HAND);
         addToTheme(ICON_SMALL_GRAVEYARD,IconImages.GRAVEYARD);
         addToTheme(ICON_SMALL_EXILE,IconImages.EXILE);
-        
+
         addToTheme(COLOR_TITLE_FOREGROUND,Color.WHITE);
         addToTheme(COLOR_TITLE_BACKGROUND,new Color(0x23,0x6B,0x8E));
         addToTheme(COLOR_ICON_BACKGROUND,FontsAndBorders.GRAY3);
@@ -53,7 +53,7 @@ public abstract class AbstractTheme implements Theme {
         addToTheme(COLOR_GAME_BORDER,Color.BLACK);
         addToTheme(COLOR_VIEWER_BACKGROUND,Color.WHITE);
         addToTheme(COLOR_SEPARATOR_BACKGROUND,Color.LIGHT_GRAY);
-        
+
         addToTheme(VALUE_SPACING,0);
         addToTheme(VALUE_BACKGROUND_STRETCH,0);
         addToTheme(VALUE_GAME_LAYOUT,1);
@@ -62,14 +62,14 @@ public abstract class AbstractTheme implements Theme {
         addToTheme(VALUE_GAME_BORDER,0);
         addToTheme(VALUE_POPUP_OPACITY,80);
     }
-    
+
     void addToTheme(final String aName, final Object value) {
         themeMap.put(aName,value);
     }
-    
+
     @Override
     public void load() {
-        
+
     }
 
     @Override
@@ -93,7 +93,7 @@ public abstract class AbstractTheme implements Theme {
         final Object value = themeMap.get(OPTION_USE_OVERLAY);
         return (Boolean)value;
     }
-    
+
     @Override
     public ImageIcon getIcon(final String aName) {
         final Object value=themeMap.get(aName);
@@ -126,7 +126,7 @@ public abstract class AbstractTheme implements Theme {
         final Object value=themeMap.get(aName);
         return value==null?0:(Integer)value;
     }
-    
+
     @Override
     public int getNumberOfAvatars() {
         return AvatarImages.getInstance().getNumberOfAvatars();
@@ -134,6 +134,6 @@ public abstract class AbstractTheme implements Theme {
 
     @Override
     public ImageIcon getAvatarIcon(final int index,final int size) {
-        return AvatarImages.getInstance().getAvatarIcon(index,size);        
+        return AvatarImages.getInstance().getAvatarIcon(index,size);
     }
 }

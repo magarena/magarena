@@ -6,7 +6,7 @@ import magic.model.action.MagicChangeLifeAction;
 import magic.model.event.MagicEvent;
 
 public class MagicLeavesGainLifeTrigger extends MagicWhenLeavesPlayTrigger {
-    
+
     private final int life;
 
     public MagicLeavesGainLifeTrigger(final int amount) {
@@ -19,8 +19,8 @@ public class MagicLeavesGainLifeTrigger extends MagicWhenLeavesPlayTrigger {
             new MagicEvent(
                 permanent,
                 this,
-                "PN " + 
-                (life > 0 ? " gains " + life : " loses " + -life) + 
+                "PN " +
+                (life > 0 ? " gains " + life : " loses " + -life) +
                  " life."
             ):
             MagicEvent.NONE;

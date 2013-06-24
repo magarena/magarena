@@ -13,11 +13,11 @@ public class MagicPersistTrigger extends MagicWhenDiesTrigger {
     private static final MagicPersistTrigger INSTANCE = new MagicPersistTrigger();
 
     private MagicPersistTrigger() {}
-    
-    public static final MagicPersistTrigger create() {    
+
+    public static final MagicPersistTrigger create() {
         return INSTANCE;
     }
-    
+
     @Override
     public MagicEvent getEvent(final MagicPermanent permanent) {
         return permanent.getCounters(MagicCounterType.MinusOne) == 0 ?

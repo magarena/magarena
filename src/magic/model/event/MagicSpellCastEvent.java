@@ -16,12 +16,12 @@ public class MagicSpellCastEvent extends MagicEvent {
             ""
         );
     }
-    
+
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicItemOnStack itemOnStack = event.getRefItemOnStack();
-            
+
             // execute spell is cast triggers
             for (final MagicWhenSpellIsCastTrigger trigger : itemOnStack.getSource().getCardDefinition().getSpellIsCastTriggers()) {
                 game.executeTrigger(
@@ -31,7 +31,7 @@ public class MagicSpellCastEvent extends MagicEvent {
                     (MagicCardOnStack)itemOnStack
                 );
             }
-            
+
             // execute other spell is cast triggers
             game.executeTrigger(MagicTriggerType.WhenOtherSpellIsCast,itemOnStack);
             game.incSpellsPlayed();

@@ -14,40 +14,40 @@ public class ThemeFactory {
 
     private static final String THEME_ZIP="_theme.zip";
     private static final String THEME_FOLDER="_theme";
-    
+
     // Must be before instance!
     private static final FileFilter THEME_FILE_FILTER=new FileFilter() {
-        
+
         @Override
         public boolean accept(final File file) {
 
             return (file.isFile()&&file.getName().endsWith(THEME_ZIP))||(file.isDirectory()&&file.getName().endsWith(THEME_FOLDER));
         }
     };
-    
+
     private static final ThemeFactory INSTANCE=new ThemeFactory();
-        
+
     private final List<Theme> themes;
     private Theme currentTheme;
-    
+
     private ThemeFactory() {
-        
+
         themes=loadThemes();
         currentTheme=themes.get(0);
         setCurrentTheme(GeneralConfig.getInstance().getTheme());
     }
-    
+
     private static List<Theme> loadThemes() {
 
         final List<Theme> themes=new ArrayList<Theme>();
         themes.add(new DefaultTheme("wood",IconImages.WOOD,IconImages.MARBLE,Color.BLACK));
         themes.add(new DefaultTheme("granite",IconImages.GRANITE,IconImages.GRANITE2,Color.BLACK));
         themes.add(new DefaultTheme("opal",IconImages.OPAL,IconImages.OPAL2,Color.BLUE));
-        
+
         final File[] files=new File(MagicMain.getModsPath()).listFiles(THEME_FILE_FILTER);
         if (files!=null) {
             for (final File file : files) {
-                
+
                 final String name=file.getName();
                 int index=name.indexOf(THEME_ZIP);
                 if (index<0) {
@@ -60,24 +60,24 @@ public class ThemeFactory {
     }
 
     public List<Theme> getThemes() {
-        
+
         return themes;
     }
-    
+
     public String[] getThemeNames() {
-        
+
         final String[] names=new String[themes.size()];
         for (int index=0;index<names.length;index++) {
-            
+
             names[index]=themes.get(index).getName();
         }
         return names;
     }
-    
+
     public void setCurrentTheme(final String name) {
-        
+
         for (final Theme theme : themes) {
-            
+
             if (theme.getName().equals(name)) {
                 theme.load();
                 currentTheme=theme;
@@ -85,14 +85,14 @@ public class ThemeFactory {
             }
         }
     }
-    
+
     public Theme getCurrentTheme() {
-        
+
         return currentTheme;
     }
-        
+
     public static ThemeFactory getInstance() {
-        
+
         return INSTANCE;
     }
 }

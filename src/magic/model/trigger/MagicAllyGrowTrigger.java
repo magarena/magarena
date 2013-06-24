@@ -37,7 +37,7 @@ public class MagicAllyGrowTrigger extends MagicWhenOtherComesIntoPlayTrigger {
             ):
             MagicEvent.NONE;
     }
-    
+
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         if (event.isYes()) {
@@ -47,6 +47,6 @@ public class MagicAllyGrowTrigger extends MagicWhenOtherComesIntoPlayTrigger {
                 1,
                 true
             ));
-        }            
-    }        
+        }
+    }
 }

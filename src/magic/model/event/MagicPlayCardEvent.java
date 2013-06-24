@@ -9,7 +9,7 @@ import magic.model.stack.MagicCardOnStack;
 
 public class MagicPlayCardEvent {
     private MagicPlayCardEvent() {}
-    
+
     public static MagicSpellCardEvent create() {
         return INSTANCE;
     }

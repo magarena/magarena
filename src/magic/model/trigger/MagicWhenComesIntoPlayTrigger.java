@@ -15,25 +15,25 @@ import magic.data.TokenCardDefinitions;
 
 public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPayedCost> {
     public MagicWhenComesIntoPlayTrigger(final int priority) {
-        super(priority); 
+        super(priority);
     }
-    
+
     public MagicWhenComesIntoPlayTrigger() {}
-    
+
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenComesIntoPlay;
     }
-    
+
     @Override
     public void change(final MagicCardDefinition cdef) {
         cdef.addTrigger(this);
     }
-    
+
     public static MagicWhenComesIntoPlayTrigger create(final String rule) {
         final String effect = rule.toLowerCase();
         final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
         final MagicEventAction action  = ruleAction.action;
-        final MagicTargetPicker picker = ruleAction.picker; 
+        final MagicTargetPicker picker = ruleAction.picker;
         final MagicTargetChoice choice = ruleAction.getChoice(effect);
 
         return new MagicWhenComesIntoPlayTrigger() {
@@ -53,7 +53,7 @@ public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPa
             }
         };
     }
-    
+
     public static final MagicWhenComesIntoPlayTrigger PutGolemOntoTheBattlefield = new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPayedCost payedCost) {
@@ -63,14 +63,14 @@ public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPa
                 "PN puts a 3/3 colorless Golem artifact creature token onto the battlefield."
             );
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player=event.getPlayer();
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Golem3")));
-        }        
+        }
     };
-    
+
     public static final MagicWhenComesIntoPlayTrigger ChooseOpponent = new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {

@@ -21,7 +21,7 @@ import java.util.Set;
 
 public class MagicDeclareBlockersResultBuilder {
 
-    private static final Collection<Object> EMPTY_RESULT = 
+    private static final Collection<Object> EMPTY_RESULT =
         Collections.<Object>singletonList(new MagicDeclareBlockersResult(0,0));
     private static final int MAX_RESULTS=12;
     private static final int MAX_ATTACKERS=3;
@@ -40,13 +40,13 @@ public class MagicDeclareBlockersResultBuilder {
     private MagicCombatCreature[] attackers;
     private Set<MagicCombatCreature> blockers;
     private int position;
-        
+
     MagicDeclareBlockersResultBuilder(final MagicGame game,final MagicPlayer defendingPlayer,final boolean fast) {
         this.game=game;
         this.defendingPlayer=defendingPlayer;
         this.attackingPlayer=defendingPlayer.getOpponent();
         this.fast=fast;
-        
+
         // Caching for better speed and immediate mode for triggers.
         game.setImmediate(true);
         build();
@@ -56,17 +56,17 @@ public class MagicDeclareBlockersResultBuilder {
     Collection<Object> getResults() {
         return results == null ? EMPTY_RESULT : results.getResults();
     }
-    
+
     private void buildBlockersFast() {
         System.err.println("Running randomized blocking algorithm");
-        
-        //generate basic blocks 
+
+        //generate basic blocks
         //buildBasicBlocks(0);
-        
+
         //sample NUM_SAMPLES random blocks
         final magic.MersenneTwisterFast rng = new magic.MersenneTwisterFast(attackers.length + blockers.size());
         for (int i = 0; i < NUM_SAMPLES; i++) {
-            final Map<Integer, List<MagicCombatCreature>> block = 
+            final Map<Integer, List<MagicCombatCreature>> block =
                 new HashMap<Integer, List<MagicCombatCreature>>();
             for (int j = 0; j < attackers.length; j++) {
                 block.put(j, new ArrayList<MagicCombatCreature>(5));
@@ -100,7 +100,7 @@ public class MagicDeclareBlockersResultBuilder {
             }
         }
     }
-    
+
     private void buildBasicBlocks(final int index) {
         // A new result is found.
         if (index==attackers.length) {
@@ -110,7 +110,7 @@ public class MagicDeclareBlockersResultBuilder {
             }
             return;
         }
-        
+
         // Get the remaining candidate blockers.
         final MagicCombatCreature attacker=attackers[index];
         final MagicCombatCreature[] candidateBlockers=new MagicCombatCreature[attacker.candidateBlockers.length];
@@ -120,7 +120,7 @@ public class MagicDeclareBlockersResultBuilder {
                 candidateBlockers[blockersSize++]=blocker;
             }
         }
-        
+
         // No blockers.
         result.addLast(new MagicCombatCreature[]{attacker});
         buildAttacker(index+1);
@@ -128,7 +128,7 @@ public class MagicDeclareBlockersResultBuilder {
         if (blockersSize == 0) {
             return;
         }
-        
+
         // One blocker.
         if (blockersSize == 1) {
             final MagicCombatCreature blocker = candidateBlockers[0];
@@ -139,7 +139,7 @@ public class MagicDeclareBlockersResultBuilder {
             blockers.add(blocker);
             return;
         }
-        
+
         // Single blocker which does not deal lethal damage to the attacker.
         // Not sufficient: might want to chump block with multiple blockers to
         // survive the attack or damage the attackers enough to finish it off
@@ -156,7 +156,7 @@ public class MagicDeclareBlockersResultBuilder {
             }
         }
     }
-        
+
     private void buildAttacker(final int index) {
 
         // A new result is found.
@@ -167,7 +167,7 @@ public class MagicDeclareBlockersResultBuilder {
             }
             return;
         }
-        
+
         // Get the remaining candidate blockers.
         final MagicCombatCreature attacker=attackers[index];
         final MagicCombatCreature[] candidateBlockers=new MagicCombatCreature[attacker.candidateBlockers.length];
@@ -177,7 +177,7 @@ public class MagicDeclareBlockersResultBuilder {
                 candidateBlockers[blockersSize++]=blocker;
             }
         }
-        
+
         // No blockers.
         result.addLast(new MagicCombatCreature[]{attacker});
         buildAttacker(index+1);
@@ -185,7 +185,7 @@ public class MagicDeclareBlockersResultBuilder {
         if (blockersSize == 0) {
             return;
         }
-        
+
         // One blocker.
         if (blockersSize == 1) {
             final MagicCombatCreature blocker = candidateBlockers[0];
@@ -196,7 +196,7 @@ public class MagicDeclareBlockersResultBuilder {
             blockers.add(blocker);
             return;
         }
-        
+
         // Single blocker which does not deal lethal damage to the attacker.
         // Not sufficient: might want to chump block with multiple blockers to
         // survive the attack or damage the attackers enough to finish it off
@@ -212,7 +212,7 @@ public class MagicDeclareBlockersResultBuilder {
                 blockers.add(blocker);
             }
         }
-        
+
         // All combinations of blockers that deal lethal damage to the attacker.
         final MagicCombatCreature[] creatures = new MagicCombatCreature[blockersSize+1];
         creatures[0] = attacker;
@@ -255,22 +255,22 @@ public class MagicDeclareBlockersResultBuilder {
 
     private void build() {
         final MagicCombatCreatureBuilder creatureBuilder=new MagicCombatCreatureBuilder(game,attackingPlayer,defendingPlayer);
-        
+
         // Check if none of the defending player's creatures can block.
         if (!creatureBuilder.buildBlockers()) {
             return;
         }
-        
+
         // Check if none of the attackers can be blocked.
         blockers=creatureBuilder.getBlockers();
         if (!creatureBuilder.buildBlockableAttackers()) {
             return;
         }
-        
+
         attackers=new MagicCombatCreature[creatureBuilder.getAttackers().size()];
         creatureBuilder.getAttackers().toArray(attackers);
         final boolean defending=game.getScorePlayer()==defendingPlayer;
-        
+
         // number of blocking options is max_blocks
         double max_blocks = 1;
         for (final MagicPermanent blocker : creatureBuilder.getCandidateBlockers()) {
@@ -289,11 +289,11 @@ public class MagicDeclareBlockersResultBuilder {
             results=new MagicMultipleScoreRanking(MAX_RESULTS,defending);
             combatScore=new MagicGameCombatScore(game,attackingPlayer,defendingPlayer);
         }
-        
+
         // find best combinations of attackers and blockers.
         result=new MagicDeclareBlockersResult(0,0);
         position=0;
-        
+
         if (max_blocks > MIN_WARN) {
             System.err.println("WARNING. Number of blocking options is " + max_blocks);
         }

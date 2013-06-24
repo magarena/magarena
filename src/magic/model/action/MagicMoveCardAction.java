@@ -21,7 +21,7 @@ public class MagicMoveCardAction extends MagicAction {
     private final MagicPermanent permanent;
     private final MagicLocationType fromLocation;
     private final MagicLocationType toLocation;
-        
+
     private MagicMoveCardAction(
             final MagicCard card,
             final MagicPermanent permanent,
@@ -32,15 +32,15 @@ public class MagicMoveCardAction extends MagicAction {
         this.fromLocation=fromLocation;
         this.toLocation=toLocation;
     }
-    
+
     public MagicMoveCardAction(final MagicCard card,final MagicLocationType fromLocation,final MagicLocationType toLocation) {
         this(card,MagicPermanent.NONE,fromLocation,toLocation);
     }
-    
+
     MagicMoveCardAction(final MagicPermanent permanent,final MagicLocationType toLocation) {
         this(permanent.getCard(),permanent,MagicLocationType.Play,toLocation);
     }
-    
+
     public MagicMoveCardAction(final MagicCardOnStack cardOnStack) {
         this(cardOnStack.getCard(),MagicPermanent.NONE,MagicLocationType.Stack,cardOnStack.getMoveLocation());
     }
@@ -83,7 +83,7 @@ public class MagicMoveCardAction extends MagicAction {
 
             game.executeTrigger(MagicTriggerType.WhenOtherPutIntoGraveyard, new MagicGraveyardTriggerData(card,fromLocation));
         }
-        
+
         game.setStateCheckRequired();
     }
 
@@ -106,10 +106,10 @@ public class MagicMoveCardAction extends MagicAction {
                 case Exile:
                     owner.getExile().remove(card);
                     break;
-            }            
+            }
         }
     }
-    
+
     @Override
     public String toString() {
         return super.toString()+" ("+card+','+fromLocation+','+toLocation+')';

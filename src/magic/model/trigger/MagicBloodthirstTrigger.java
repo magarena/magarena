@@ -12,7 +12,7 @@ import magic.model.event.MagicEvent;
 public class MagicBloodthirstTrigger extends MagicWhenComesIntoPlayTrigger {
 
     private final int amount;
-    
+
     public MagicBloodthirstTrigger(final int amount) {
         this.amount = amount;
     }

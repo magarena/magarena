@@ -10,15 +10,15 @@ import magic.model.choice.MagicSimpleMayChoice;
 
 public abstract class MagicAtUpkeepTrigger extends MagicTrigger<MagicPlayer> {
     public MagicAtUpkeepTrigger(final int priority) {
-        super(priority); 
+        super(priority);
     }
-    
+
     public MagicAtUpkeepTrigger() {}
-    
+
     public MagicTriggerType getType() {
         return MagicTriggerType.AtUpkeep;
     }
-    
+
     public static final MagicAtUpkeepTrigger MayCharge = new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
@@ -37,7 +37,7 @@ public abstract class MagicAtUpkeepTrigger extends MagicTrigger<MagicPlayer> {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,1,true));
-            }    
+            }
         }
     };
 }

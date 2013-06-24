@@ -17,7 +17,7 @@ import magic.model.stack.MagicCardOnStack;
 public class MagicCardActivation extends MagicActivation<MagicCard> implements MagicChangeCardDefinition, MagicCardEvent {
 
     final boolean usesStack;
-    
+
     public MagicCardActivation(final MagicCardDefinition cdef) {
         super(
             new MagicCondition[]{
@@ -28,17 +28,17 @@ public class MagicCardActivation extends MagicActivation<MagicCard> implements M
         );
         usesStack = cdef.usesStack();
     }
-    
+
     protected MagicCardActivation(final MagicActivationHints hints, final String txt) {
         super(MagicActivation.NO_COND, hints, txt);
         usesStack = true;
     }
-    
+
     protected MagicCardActivation(final MagicCondition[] conditions, final MagicActivationHints hints, final String txt) {
         super(conditions, hints, txt);
         usesStack = true;
     }
-  
+
     @Override
     boolean usesStack() {
         return usesStack;
@@ -78,12 +78,12 @@ public class MagicCardActivation extends MagicActivation<MagicCard> implements M
             }
         }
     };
-    
+
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         throw new RuntimeException(getClass() + " did not override executeEvent");
     }
-    
+
     @Override
     public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
         return cardOnStack.getCardDefinition().getCardEvent().getEvent(cardOnStack, payedCost);
@@ -94,7 +94,7 @@ public class MagicCardActivation extends MagicActivation<MagicCard> implements M
         final MagicCardOnStack cardOnStack=new MagicCardOnStack(source,this,MagicPayedCost.NO_COST);
         return cardOnStack.getEvent().getTargetChoice();
     }
-    
+
     @Override
     public void change(final MagicCardDefinition cdef) {
         cdef.addCardAct(this);

@@ -5,10 +5,10 @@ public class ArtificialScore {
     static final ArtificialScore INVALID_SCORE=new ArtificialScore(0,0);
     static final int MAX = 99900000;
     static final int MIN = -MAX;
-    
+
     private final int score;
     private final int depth;
-    
+
     ArtificialScore(final int aScore,final int aDepth) {
         int boundedScore = Math.min(MAX,aScore);
         score = Math.max(MIN,boundedScore);
@@ -25,7 +25,7 @@ public class ArtificialScore {
     int getScore() {
         return score;
     }
-    
+
     boolean isBetter(final ArtificialScore other,final boolean max) {
         if (other==INVALID_SCORE) {
             return false;
@@ -44,11 +44,11 @@ public class ArtificialScore {
             return other.score < score;
         }
     }
-    
+
     @Override
     public String toString() {
         if (this==INVALID_SCORE) {
-            return "none"; 
+            return "none";
         }
         final StringBuilder buffer=new StringBuilder();
         buffer.append(score).append(" at ").append(depth);

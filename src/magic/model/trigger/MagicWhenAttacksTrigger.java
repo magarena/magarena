@@ -4,9 +4,9 @@ import magic.model.MagicPermanent;
 
 public abstract class MagicWhenAttacksTrigger extends MagicTrigger<MagicPermanent> {
     public MagicWhenAttacksTrigger(final int priority) {
-        super(priority); 
+        super(priority);
     }
-    
+
     public MagicWhenAttacksTrigger() {}
 
     public MagicTriggerType getType() {

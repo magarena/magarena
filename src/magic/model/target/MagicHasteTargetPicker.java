@@ -9,11 +9,11 @@ public class MagicHasteTargetPicker extends MagicTargetPicker<MagicPermanent> {
     private static final MagicHasteTargetPicker INSTANCE=new MagicHasteTargetPicker();
 
     private MagicHasteTargetPicker() {}
-    
+
     public static MagicHasteTargetPicker create() {
         return INSTANCE;
     }
-    
+
     @Override
     protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
         if (permanent.isTapped()||permanent.canTap()) {

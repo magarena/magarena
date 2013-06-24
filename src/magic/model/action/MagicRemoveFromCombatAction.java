@@ -12,7 +12,7 @@ public class MagicRemoveFromCombatAction extends MagicAction {
     private boolean blocking;
     private MagicPermanentList blockingCreatures;
     private MagicPermanent blockedCreature = MagicPermanent.NONE;
-    
+
     public MagicRemoveFromCombatAction(final MagicPermanent permanent) {
         this.permanent=permanent;
     }
@@ -55,7 +55,7 @@ public class MagicRemoveFromCombatAction extends MagicAction {
             }
         }
     }
-    
+
     @Override
     public String toString() {
         return super.toString()+" ("+permanent.getName()+')';

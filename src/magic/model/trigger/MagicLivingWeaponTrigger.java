@@ -13,7 +13,7 @@ import magic.model.event.MagicEvent;
  * Trigger that occurs when a card with the living weapon mechanic comes into play
  */
 public class MagicLivingWeaponTrigger extends MagicWhenComesIntoPlayTrigger {
-    
+
     private static final MagicWhenComesIntoPlayTrigger INSTANCE = new MagicLivingWeaponTrigger();
 
     private MagicLivingWeaponTrigger() {}
@@ -30,7 +30,7 @@ public class MagicLivingWeaponTrigger extends MagicWhenComesIntoPlayTrigger {
             "PN puts a 0/0 black Germ creature token onto the battlefield, then attaches SN to it."
         );
     }
-    
+
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
 

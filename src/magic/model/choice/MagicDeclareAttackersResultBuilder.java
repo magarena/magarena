@@ -20,19 +20,19 @@ public class MagicDeclareAttackersResultBuilder {
         final MagicPlayer defendingPlayer = attackingPlayer.getOpponent();
         final MagicCombatCreatureBuilder creatureBuilder=new MagicCombatCreatureBuilder(game,attackingPlayer,defendingPlayer);
         creatureBuilder.buildBlockers();
-        
+
         // Check if none of the attacking player's creatures can attack.
         if (!creatureBuilder.buildAttackers()) {
             return EMPTY_RESULT;
         }
-        
+
         // Remove creatures that have zero power.
         // Remove creatures that must attack if able and add them to result.
         final SortedSet<MagicCombatCreature> attackersSet=creatureBuilder.getAttackers();
         final MagicPermanent[] current=new MagicPermanent[attackersSet.size()];
         int count=0;
         for (final Iterator<MagicCombatCreature> iterator=attackersSet.iterator();iterator.hasNext();) {
-            final MagicCombatCreature attacker=iterator.next();             
+            final MagicCombatCreature attacker=iterator.next();
             if (attacker.hasAbility(MagicAbility.AttacksEachTurnIfAble)) {
                 current[count++]=attacker.permanent;
                 iterator.remove();
@@ -41,7 +41,7 @@ public class MagicDeclareAttackersResultBuilder {
             }
         }
 
-        final int maxAttackers = game.getRelativeTurn() < MAX_ATTACKERS.length ? 
+        final int maxAttackers = game.getRelativeTurn() < MAX_ATTACKERS.length ?
             MAX_ATTACKERS[game.getRelativeTurn()] : 0;
         int size=attackersSet.size();
 
@@ -52,7 +52,7 @@ public class MagicDeclareAttackersResultBuilder {
 
         // Build results.
         final Collection<Object> results=new ArrayList<Object>();
-        
+
         // Get the best remaining optional attackers.
         while (size>maxAttackers) {
             // Add option to attack with all creatures for an alpha strike.
@@ -66,7 +66,7 @@ public class MagicDeclareAttackersResultBuilder {
 
         final MagicCombatCreature[] attackers=new MagicCombatCreature[size];
         attackersSet.toArray(attackers);
-        
+
         // Build all possible combinations of attackers.
         final int[] step=new int[size];
         int index=0;

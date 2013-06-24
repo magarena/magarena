@@ -9,7 +9,7 @@ import magic.model.MagicPlayer;
 public class MagicReturnExiledAction extends MagicAction {
 
     private MagicCardList exiledUntilEndOfTurn;
-    
+
     @Override
     public void doAction(final MagicGame game) {
         final MagicCardList gameExiledUntilEndOfTurn=game.getExiledUntilEndOfTurn();

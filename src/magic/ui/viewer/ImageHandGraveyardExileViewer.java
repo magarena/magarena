@@ -17,19 +17,19 @@ public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListe
     private final ViewerInfo viewerInfo;
     private final TabSelector tabSelector;
     private final ImageCardListViewer cardListViewer;
-    
+
     public ImageHandGraveyardExileViewer(final ViewerInfo viewerInfo,final GameController controller) {
-        
+
         this.viewerInfo=viewerInfo;
-        
+
         final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
-        
+
         setOpaque(false);
         setLayout(new BorderLayout(6,0));
-        
+
         final String playerName=viewerInfo.getPlayerInfo(false).name;
         final String opponentName=viewerInfo.getPlayerInfo(true).name;
-        
+
         tabSelector=new TabSelector(this,true);
         tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_HAND),"Hand : "+playerName);
         tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_GRAVEYARD),"Graveyard : "+playerName);
@@ -37,18 +37,18 @@ public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListe
         tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_EXILE),"Exile : "+playerName);
         tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_EXILE),"Exile : "+opponentName);
         add(tabSelector,BorderLayout.WEST);
-        
+
         cardListViewer=new ImageCardListViewer(controller);
         add(cardListViewer,BorderLayout.CENTER);
     }
-    
+
     public void setSelectedTab(final int selectedTab) {
 
         if (selectedTab>=0) {
             tabSelector.setSelectedTab(selectedTab);
         }
     }
-    
+
     public void update() {
 
         if (cardListViewer!=null) {
@@ -62,10 +62,10 @@ public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListe
             repaint();
         }
     }
-        
+
     @Override
     public void stateChanged(final ChangeEvent event) {
-        
+
         update();
     }
 }

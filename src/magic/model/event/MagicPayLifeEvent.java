@@ -30,8 +30,8 @@ public class MagicPayLifeEvent extends MagicEvent {
         conds = new MagicCondition[] {
             MagicConditionFactory.LifeAtLeast(amount)
         };
-    }    
-    
+    }
+
     @Override
     public MagicCondition[] getConditions() {
         return conds;

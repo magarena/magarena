@@ -25,7 +25,7 @@ public class Saint___Hero_DeckGenerator extends DefaultDeckGenerator {
         "Oblivion Ring",
         "Sword of Feast and Famine"
     };
-        
+
     private static final String[] lands = {
         "Glacial Fortress",
         "Glacial Fortress",
@@ -34,28 +34,28 @@ public class Saint___Hero_DeckGenerator extends DefaultDeckGenerator {
         "Seachrome Coast",
         "Seachrome Coast"
     };
-    
+
     public Saint___Hero_DeckGenerator() {
         super(null);
         setCubeDefinition(CubeDefinitions.getCubeDefinition(getColorText()));
     }
-    
+
     public String getColorText() {
         return colorText;
     }
-    
+
     public int getMinRarity() {
         return 2;
     }
-    
+
     public void addRequiredSpells(final MagicCondensedDeck deck) {
         addRequiredCards(deck, spells);
     }
-    
+
     public void addRequiredLands(final MagicCondensedDeck deck) {
         addRequiredCards(deck, lands);
     }
-    
+
     public void setColors(final MagicPlayerProfile profile) {
         profile.setColors(getColorText());
     }

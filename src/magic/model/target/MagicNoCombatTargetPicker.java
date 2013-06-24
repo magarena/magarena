@@ -13,7 +13,7 @@ public class MagicNoCombatTargetPicker extends MagicTargetPicker<MagicPermanent>
     private final boolean noAttacking;
     private final boolean noBlocking;
     private final boolean forever;
-    
+
     public MagicNoCombatTargetPicker(final boolean noAttacking,final boolean noBlocking,final boolean forever) {
         this.noAttacking=noAttacking;
         this.noBlocking=noBlocking;
@@ -26,7 +26,7 @@ public class MagicNoCombatTargetPicker extends MagicTargetPicker<MagicPermanent>
         if (forever) {
             final MagicPowerToughness pt=permanent.getPowerToughness();
             int score=pt.power()*2+pt.toughness();
-            if (!permanent.hasAbility(MagicAbility.CannotAttackOrBlock)) {            
+            if (!permanent.hasAbility(MagicAbility.CannotAttackOrBlock)) {
                 if (noAttacking&&!permanent.hasAbility(MagicAbility.Defender)) {
                     score+=100;
                 }
@@ -36,7 +36,7 @@ public class MagicNoCombatTargetPicker extends MagicTargetPicker<MagicPermanent>
             }
             return score;
         }
-    
+
         // Until end of turn.
         final boolean turn=game.getTurnPlayer()==player;
         if (turn) {

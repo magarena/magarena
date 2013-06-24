@@ -10,9 +10,9 @@ import java.util.Set;
 public class MagicRegenerateTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
     private static final MagicRegenerateTargetPicker INSTANCE = new MagicRegenerateTargetPicker();
-    
+
     private MagicRegenerateTargetPicker() {}
-    
+
     @Override
     protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
         if (permanent.canRegenerate()) {
@@ -21,10 +21,10 @@ public class MagicRegenerateTargetPicker extends MagicTargetPicker<MagicPermanen
                 return permanent.getDamage()+1;
             }
             return permanent.getScore();
-        }        
+        }
         return 0;
     }
-    
+
     public static MagicRegenerateTargetPicker getInstance() {
         return INSTANCE;
     }

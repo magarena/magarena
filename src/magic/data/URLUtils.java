@@ -6,7 +6,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 
 public class URLUtils {
-    
+
     public static void openURL(final String url) {
         try {
             Desktop desktop = null;

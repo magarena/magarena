@@ -14,7 +14,7 @@ import java.awt.Dimension;
 public class MessagePanel extends JPanel {
 
     private static final long serialVersionUID = 1L;
-    
+
     public MessagePanel(final MagicMessage message,final int maxWidth) {
 
         setBorder(FontsAndBorders.EMPTY_BORDER);
@@ -29,10 +29,10 @@ public class MessagePanel extends JPanel {
         add(leftPanel,BorderLayout.WEST);
 
         final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
-        final int face=message.getPlayer().getPlayerDefinition().getFace();        
+        final int face=message.getPlayer().getPlayerDefinition().getFace();
         final JLabel playerLabel=new JLabel(theme.getAvatarIcon(face,1));
         leftPanel.add(playerLabel,BorderLayout.WEST);
-        
+
         final int life=message.getLife();
         final JLabel lifeLabel=new JLabel(String.valueOf(Math.abs(life)));
         if (life<=0) {
@@ -42,11 +42,11 @@ public class MessagePanel extends JPanel {
         lifeLabel.setIcon(IconImages.REGENERATED);
         lifeLabel.setIconTextGap(2);
         leftPanel.add(lifeLabel,BorderLayout.EAST);
-        
+
         final TextLabel textLabel=new TextLabel(message.getText(),maxWidth,false);
         textLabel.setColors(Color.BLACK,Color.BLUE);
         add(textLabel,BorderLayout.CENTER);
-                        
+
         final JPanel gamePanel=new JPanel(new BorderLayout());
         gamePanel.setOpaque(false);
         add(gamePanel,BorderLayout.EAST);
@@ -55,10 +55,10 @@ public class MessagePanel extends JPanel {
         turnLabel.setFont(FontsAndBorders.FONT1);
         turnLabel.setHorizontalAlignment(JLabel.RIGHT);
         gamePanel.add(turnLabel,BorderLayout.NORTH);
-        
+
         final JLabel phaseLabel=new JLabel(message.getPhaseType().getName());
         phaseLabel.setFont(FontsAndBorders.FONT0);
         phaseLabel.setHorizontalAlignment(JLabel.RIGHT);
-        gamePanel.add(phaseLabel,BorderLayout.SOUTH);                
+        gamePanel.add(phaseLabel,BorderLayout.SOUTH);
     }
 }

@@ -17,18 +17,18 @@ import magic.model.phase.MagicMainPhase;
 
 // The two creatures become unpaired if either of them leaves the battlefield,
 // is no longer under your control, or stops being a creature.
-class TestSoulbond extends TestGameBuilder {    
+class TestSoulbond extends TestGameBuilder {
 
     public MagicGame getGame() {
         final MagicDuel duel=new MagicDuel();
         duel.setDifficulty(6);
-        
+
         final MagicPlayerProfile profile=new MagicPlayerProfile("bgruw");
         final MagicPlayerDefinition player1=new MagicPlayerDefinition("Player",false,profile,15);
         final MagicPlayerDefinition player2=new MagicPlayerDefinition("Computer",true,profile,14);
         duel.setPlayers(new MagicPlayerDefinition[]{player1,player2});
         duel.setStartPlayer(0);
-        
+
         final MagicGame game=duel.nextGame(true);
         game.setPhase(MagicMainPhase.getFirstInstance());
         final MagicPlayer player=game.getPlayer(0);
@@ -48,9 +48,9 @@ class TestSoulbond extends TestGameBuilder {
         addToHand(P,"Lightning Bolt",1);
         addToHand(P,"Swamp",1);
         addToHand(P,"Eager Cadet",1);
-       
+
         P = opponent;
-        
+
         P.setLife(12);
         addToLibrary(P, "Swamp", 15);
         createPermanent(game,P,"Rupture Spire",false,8);
@@ -60,7 +60,7 @@ class TestSoulbond extends TestGameBuilder {
         game.doAction(new MagicChangeCountersAction(la, MagicCounterType.Charge, 3, true));
         addToHand(P,"Wingcrafter",1);
         addToHand(P,"Eager Cadet",1);
-        
+
         return game;
     }
 }

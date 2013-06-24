@@ -10,15 +10,15 @@ import magic.model.event.MagicEvent;
 
 public abstract class MagicAtEndOfTurnTrigger extends MagicTrigger<MagicPlayer> {
     public MagicAtEndOfTurnTrigger(final int priority) {
-        super(priority); 
+        super(priority);
     }
-    
+
     public MagicAtEndOfTurnTrigger() {}
 
     public MagicTriggerType getType() {
         return MagicTriggerType.AtEndOfTurn;
     }
-    
+
     public static final MagicAtEndOfTurnTrigger ReturnAtEnd = new MagicAtEndOfTurnTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer eotPlayer) {
@@ -36,7 +36,7 @@ public abstract class MagicAtEndOfTurnTrigger extends MagicTrigger<MagicPlayer> 
             ));
         }
     };
-    
+
     public static final MagicAtEndOfTurnTrigger SacrificeAtEnd = new MagicAtEndOfTurnTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eotPlayer) {

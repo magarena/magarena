@@ -8,15 +8,15 @@ import magic.model.MagicPlayer;
 import java.util.Set;
 
 public class MagicFirstStrikeTargetPicker extends MagicTargetPicker<MagicPermanent> {
-    
+
     private static final MagicFirstStrikeTargetPicker INSTANCE=new MagicFirstStrikeTargetPicker();
 
     private MagicFirstStrikeTargetPicker() {}
-    
+
     public static MagicFirstStrikeTargetPicker create() {
         return INSTANCE;
     }
-    
+
     @Override
     protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
         if (permanent.getController()!=player) {
@@ -29,10 +29,10 @@ public class MagicFirstStrikeTargetPicker extends MagicTargetPicker<MagicPermane
         final int power=permanent.getPower();
         if (permanent.isBlocked()||permanent.isBlocking()) {
             return power+permanent.getBlockingCreatures().size()+100;
-        } 
+        }
         if (permanent.canTap()) {
             return power+50;
-        } 
+        }
         return power+1;
     }
 }

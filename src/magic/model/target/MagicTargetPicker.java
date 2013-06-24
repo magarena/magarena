@@ -12,12 +12,12 @@ import java.util.Map;
 public abstract class MagicTargetPicker<T> {
 
     protected abstract int getTargetScore(final MagicGame game,final MagicPlayer player,final T target);
-    
+
     public Collection<T> pickTargets(final MagicGame game,final MagicPlayer player,final Collection<T> options) {
         if (options.size()<2) {
             return options;
         }
-        
+
         T bestTarget=options.iterator().next();
         int bestScore=Integer.MIN_VALUE;
         for (final T target : options) {
@@ -27,10 +27,10 @@ public abstract class MagicTargetPicker<T> {
                 bestScore=score;
             }
         }
-        
+
         return Collections.singletonList(bestTarget);
     }
-    
+
     private static final Map<String, MagicTargetPicker<MagicPermanent>> factory =
         new HashMap<String, MagicTargetPicker<MagicPermanent>>();
 
@@ -58,7 +58,7 @@ public abstract class MagicTargetPicker<T> {
         register("exile", MagicExileTargetPicker.create());
         register("counter", null);
     }
-    
+
     public MagicTargetPicker<MagicPermanent> create(final String arg) {
         throw new UnsupportedOperationException();
     }

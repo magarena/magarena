@@ -14,12 +14,12 @@ public class MagicDelayedPayManaCostResult implements MagicPayManaCostResult {
 
     private final MagicManaCost cost;
     private final int x;
-    
+
     MagicDelayedPayManaCostResult(final MagicManaCost cost,final int x) {
         this.cost=cost;
         this.x=x;
     }
-    
+
     public MagicManaCost getCost() {
         return cost;
     }
@@ -32,7 +32,7 @@ public class MagicDelayedPayManaCostResult implements MagicPayManaCostResult {
     public int getX() {
         return x;
     }
-    
+
     @Override
     public int getConverted() {
         return x+cost.getConvertedCost();

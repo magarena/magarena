@@ -4,7 +4,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
 
 public abstract class MagicAdditionalCost implements MagicChangeCardDefinition, MagicEventSource {
-    
+
     public MagicAdditionalCost() {}
 
     @Override

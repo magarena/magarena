@@ -13,7 +13,7 @@ public class MagicPumpActivation extends MagicPermanentActivation {
     private final MagicManaCost cost;
     private final int power;
     private final int toughness;
-    
+
     public MagicPumpActivation(final MagicManaCost cost,final int power,final int toughness) {
         super(ACTIVATION_HINTS,"Pump");
         this.cost=cost;
@@ -25,7 +25,7 @@ public class MagicPumpActivation extends MagicPermanentActivation {
     public MagicEvent[] getCostEvent(final MagicPermanent source) {
         return new MagicEvent[]{new MagicPayManaCostEvent(source,cost)};
     }
-    
+
     @Override
     public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
         return new MagicEvent(
@@ -55,7 +55,7 @@ public class MagicPumpActivation extends MagicPermanentActivation {
 
         return signStr(power, pSign) + power + "/" + signStr(toughness, tSign) + toughness;
     }
-    
+
     private String signStr(int v, String sign) {
         return v >= 0 ? sign : "";
     }

@@ -8,11 +8,11 @@ public class MagicSetKickerAction extends MagicAction {
 
     private final int newKicker;
     private int oldKicker;
-    
+
     public MagicSetKickerAction(final int aKicker) {
         newKicker = aKicker;
     }
-    
+
     @Override
     public void doAction(final MagicGame game) {
         final MagicPayedCost payedCost = game.getPayedCost();

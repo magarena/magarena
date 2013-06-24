@@ -9,19 +9,19 @@ public enum MagicSubType {
     Mountain,
     Plains,
     Swamp,
-    
+
     //other land subtypes
     Desert,
     Lair,
-    Locus, 
-    Mine, 
-    Power_Plant, 
-    Tower, 
+    Locus,
+    Mine,
+    Power_Plant,
+    Tower,
     Urza_s,
     Gate,
 
     //artifact subtypes
-    Contraption, 
+    Contraption,
     Equipment,
     Fortification,
 
@@ -37,7 +37,7 @@ public enum MagicSubType {
     //planeswalker subtypes
     Ajani, Bolas, Chandra, Elspeth, Garruk, Gideon, Jace, Karn, Koth, Liliana,
     Nissa, Sarkhan, Sorin, Tezzeret, Venser, Tamiyo, Tibalt, Vraska,
-    
+
 
     //creature and tribal subtypes
     Advisor, Ally, Angel, Anteater, Antelope, Ape, Archer, Archon, Artificer,
@@ -75,18 +75,18 @@ public enum MagicSubType {
     ;
 
     public static final EnumSet<MagicSubType> ALL_BASIC_LANDS = EnumSet.range(Forest, Swamp);
-    
+
     public static final EnumSet<MagicSubType> ALL_CREATURES = EnumSet.range(Advisor, Zubera);
-    
+
     public static final EnumSet<MagicSubType> ALL_PLANESWALKERS = EnumSet.range(Ajani, Vraska);
-    
+
     private MagicSubType() {
     }
-    
+
     public boolean isCreatureType() {
         return ALL_CREATURES.contains(this);
     }
-    
+
     public static MagicSubType getSubType(final String name) {
         final String cname = name.replaceAll("[^A-Za-z0-9]", "_");
         for (final MagicSubType type : values()) {
@@ -96,7 +96,7 @@ public enum MagicSubType {
         }
         throw new RuntimeException("Unknown subtype " + name);
     }
-    
+
     public static EnumSet<MagicSubType> getSubTypes(final String[] subTypeNames) {
         final EnumSet<MagicSubType> givenSubTypeFlags = EnumSet.noneOf(MagicSubType.class);
         for (final String subTypeName : subTypeNames) {

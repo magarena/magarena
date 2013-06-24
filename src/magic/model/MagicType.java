@@ -11,7 +11,7 @@ public enum MagicType {
     Ongoing,
     Snow,
     World,
-    
+
     // these are card types
     Artifact,
     Creature,
@@ -25,7 +25,7 @@ public enum MagicType {
     Tribal,
     Vanguard,
     ;
-    
+
     public static final Set<MagicType> ALL_CARD_TYPES = EnumSet.range(Artifact, Vanguard);
     public static final Set<MagicType> FILTER_TYPES = EnumSet.of(
         Legendary,
@@ -38,17 +38,17 @@ public enum MagicType {
         Sorcery,
         Tribal
     );
-    
+
     private final int mask;
-    
+
     private MagicType() {
         mask=1<<ordinal();
     }
-    
+
     public int getMask() {
         return mask;
     }
-    
+
     public static MagicType getType(final String name) {
         for (final MagicType type : values()) {
             if (type.toString().equalsIgnoreCase(name)) {
@@ -57,7 +57,7 @@ public enum MagicType {
         }
         throw new RuntimeException("No corresponding MagicType for " + name);
     }
-    
+
     public static int getTypes(final String[] typeNames) {
         int givenTypeFlags = 0;
         for (final String typeName : typeNames) {
@@ -65,7 +65,7 @@ public enum MagicType {
         }
         return givenTypeFlags;
     }
-    
+
     public boolean hasType(final int flags) {
         return (flags & getMask()) != 0;
     }

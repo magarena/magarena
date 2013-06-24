@@ -9,16 +9,16 @@ import magic.model.action.MagicSetAbilityAction;
 import magic.model.condition.MagicCondition;
 
 public class MagicGainActivation extends MagicPermanentActivation {
-        
+
     private final MagicManaCost cost;
     private final MagicAbility ability;
-    
+
     public MagicGainActivation(final MagicManaCost cost,final MagicAbility ability,final MagicActivationHints hints,final String txt) {
         super(hints,txt);
         this.cost=cost;
         this.ability=ability;
     }
-    
+
     @Override
     public MagicEvent[] getCostEvent(final MagicPermanent source) {
         return new MagicEvent[]{

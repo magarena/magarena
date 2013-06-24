@@ -10,7 +10,7 @@ public class MagicPayDelayedCostAction extends MagicAction {
     private final MagicPlayer player;
     private final MagicDelayedPayManaCostResult result;
     private MagicBuilderManaCost oldBuilderCost;
-    
+
     public MagicPayDelayedCostAction(final MagicPlayer player,final MagicDelayedPayManaCostResult result) {
         this.player=player;
         this.result=result;
@@ -21,7 +21,7 @@ public class MagicPayDelayedCostAction extends MagicAction {
         oldBuilderCost=player.getBuilderCost();
         final MagicBuilderManaCost builderCost=new MagicBuilderManaCost(oldBuilderCost);
         result.getCost().addTo(builderCost,result.getX());
-        player.setBuilderCost(builderCost);    
+        player.setBuilderCost(builderCost);
     }
 
     @Override

@@ -26,7 +26,7 @@ public abstract class MagicCDA implements MagicChangeCardDefinition {
 
     public static final MagicCDA Changeling = new MagicCDA() {
         public void getSubTypeFlags(
-                final MagicGame game, 
+                final MagicGame game,
                 final MagicPlayer player,
                 final Set<MagicSubType> flags) {
             flags.addAll(MagicSubType.ALL_CREATURES);
@@ -36,13 +36,13 @@ public abstract class MagicCDA implements MagicChangeCardDefinition {
     public int getColorFlags(final MagicGame game, final MagicPlayer player,final int flags) {
         return flags;
     }
-    
+
     public void getSubTypeFlags(
-            final MagicGame game, 
+            final MagicGame game,
             final MagicPlayer player,
             final Set<MagicSubType> flags) {
     }
-    
+
     public void modPowerToughness(
             final MagicGame game,
             final MagicPlayer player,
@@ -50,13 +50,13 @@ public abstract class MagicCDA implements MagicChangeCardDefinition {
             final MagicPowerToughness pt) {
         modPowerToughness(game, player, pt);
     }
-    
+
     public void modPowerToughness(
             final MagicGame game,
             final MagicPlayer player,
             final MagicPowerToughness pt) {
     }
-    
+
     @Override
     public void change(final MagicCardDefinition cdef) {
         cdef.addCDA(this);

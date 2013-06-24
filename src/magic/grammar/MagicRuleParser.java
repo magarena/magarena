@@ -12,7 +12,7 @@ import magic.grammar.Source;
 public class MagicRuleParser extends magic.grammar.ParserMemo
 {
   final MagicSyntaxTree sem;
-  
+
   //=======================================================================
   //
   //  Initialization
@@ -28,7 +28,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       super.sem = sem;
       caches = cacheList;
     }
-  
+
   //-------------------------------------------------------------------
   //  Run the parser
   //-------------------------------------------------------------------
@@ -39,13 +39,13 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (Rule()) return true;
       return failure();
     }
-  
+
   //-------------------------------------------------------------------
   //  Get semantics
   //-------------------------------------------------------------------
   public MagicSyntaxTree semantics()
     { return sem; }
-  
+
   //=======================================================================
   //
   //  Parsing procedures
@@ -62,7 +62,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!EOR()) return reject();
       return sem.action() && accept();
     }
-  
+
   //-------------------------------------------------------------------
   //  Rule_0 = AbilityWord " \u2014 "
   //-------------------------------------------------------------------
@@ -73,7 +73,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next(" \u2014 ")) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  Ability = SpellEffect / KeywordAbility / ActivatedAbility /
   //    TriggeredAbility / AdditionalCost ;
@@ -88,7 +88,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (AdditionalCost()) return sem.action() && accept();
       return reject();
     }
-  
+
   //=====================================================================
   //  SpellEffect = Effect EOS (SPACE Effect EOS)* ;
   //=====================================================================
@@ -100,7 +100,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       while (SpellEffect_0());
       return sem.action() && accept();
     }
-  
+
   //-------------------------------------------------------------------
   //  SpellEffect_0 = SPACE Effect EOS
   //-------------------------------------------------------------------
@@ -112,7 +112,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!EOS()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  Effect = SingleEffect (SEP SingleEffect)* ;
   //=====================================================================
@@ -123,7 +123,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       while (Effect_0());
       return sem.action() && accept();
     }
-  
+
   //-------------------------------------------------------------------
   //  Effect_0 = SEP SingleEffect
   //-------------------------------------------------------------------
@@ -134,7 +134,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SingleEffect()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  SingleEffect = (Duration SEP)? (Optional SPACE)? (SelectPlayer
   //    SPACE)? (Optional SPACE)? Action (SPACE Duration)? (SPACE
@@ -152,7 +152,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       SingleEffect_4();
       return sem.action() && accept();
     }
-  
+
   //-------------------------------------------------------------------
   //  SingleEffect_0 = Duration SEP
   //-------------------------------------------------------------------
@@ -163,7 +163,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SEP()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  SingleEffect_1 = Optional SPACE
   //-------------------------------------------------------------------
@@ -174,7 +174,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SPACE()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  SingleEffect_2 = SelectPlayer SPACE
   //-------------------------------------------------------------------
@@ -185,7 +185,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SPACE()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  SingleEffect_3 = SPACE Duration
   //-------------------------------------------------------------------
@@ -196,7 +196,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!Duration()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  SingleEffect_4 = SPACE IfCondition
   //-------------------------------------------------------------------
@@ -207,7 +207,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!IfCondition()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  Optional = "you may have" / "you may" / "if you don't," / "if you
   //    can't," / "if you do," / "may" ;
@@ -223,7 +223,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next("may")) return sem.action() && accept();
       return reject();
     }
-  
+
   //=====================================================================
   //  AbilityWord = "metalcraft" / "landfall" / "threshold" / "hellbent"
   //    / "morbid" ;
@@ -238,7 +238,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next("morbid")) return sem.action() && accept();
       return reject();
     }
-  
+
   //=====================================================================
   //  KeywordAbility = Keyword / Enchant ;
   //=====================================================================
@@ -249,7 +249,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (Enchant()) return sem.action() && accept();
       return reject();
     }
-  
+
   //=====================================================================
   //  ActivatedAbility = ActivationCosts EOC SpellEffect (SPACE
   //    AbilityRestriction EOS)? ;
@@ -263,7 +263,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       ActivatedAbility_0();
       return sem.action() && accept();
     }
-  
+
   //-------------------------------------------------------------------
   //  ActivatedAbility_0 = SPACE AbilityRestriction EOS
   //-------------------------------------------------------------------
@@ -275,7 +275,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!EOS()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  ActivationCosts = Action (SEP Action)* ;
   //=====================================================================
@@ -286,7 +286,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       while (ActivationCosts_0());
       return sem.action() && accept();
     }
-  
+
   //-------------------------------------------------------------------
   //  ActivationCosts_0 = SEP Action
   //-------------------------------------------------------------------
@@ -297,7 +297,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!Action()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  TriggeredAbility = Trigger (SEP IfCondition)? SEP SpellEffect ;
   //=====================================================================
@@ -310,7 +310,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SpellEffect()) return reject();
       return sem.action() && accept();
     }
-  
+
   //-------------------------------------------------------------------
   //  TriggeredAbility_0 = SEP IfCondition
   //-------------------------------------------------------------------
@@ -321,7 +321,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!IfCondition()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  AdditionalCost = "as an additional cost to cast @, " Effect EOS ;
   //=====================================================================
@@ -333,7 +333,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!EOS()) return reject();
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  Trigger = EntersBattlefieldTrigger / LeavesBattlefieldTrigger /
   //    EntersGraveyardTrigger / BeginningUpkeepTrigger /
@@ -358,7 +358,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (BlockedTrigger()) return sem.action() && accept();
       return reject();
     }
-  
+
   //=====================================================================
   //  Action = DestroyNoRegenAction / DestroyAction / ExileAction /
   //    CounterAction / DamageAction / DrawAction / DiscardAction /
@@ -410,7 +410,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (KickerAction()) return sem.action() && accept();
       return reject();
     }
-  
+
   //=====================================================================
   //  Keyword = "flash" / "flying" / "haste" / "defender" / "vigilance" /
   //    "reach" / "battle cry" / "trample" / "first strike" / "double
@@ -506,7 +506,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next("unleash")) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  Keyword_0 = "protection from " Color
   //-------------------------------------------------------------------
@@ -517,7 +517,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!Color()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  Keyword_1 = "protection from " Tribal
   //-------------------------------------------------------------------
@@ -528,7 +528,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!Tribal()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  Keyword_2 = "bushido" SPACE Number
   //-------------------------------------------------------------------
@@ -540,7 +540,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!Number()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  Keyword_3 = "rampage" SPACE Number
   //-------------------------------------------------------------------
@@ -552,7 +552,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!Number()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  Keyword_4 = "soulshift" SPACE Number
   //-------------------------------------------------------------------
@@ -564,7 +564,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!Number()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  Keyword_5 = "fading" SPACE Number
   //-------------------------------------------------------------------
@@ -576,7 +576,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!Number()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  Keyword_6 = "devour" SPACE Number
   //-------------------------------------------------------------------
@@ -588,7 +588,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!Number()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  Keyword_7 = "modular" SPACE Number
   //-------------------------------------------------------------------
@@ -600,7 +600,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!Number()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  Keyword_8 = "vanishing" SPACE Number
   //-------------------------------------------------------------------
@@ -612,7 +612,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!Number()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  Keyword_9 = "bloodthirst" SPACE Number
   //-------------------------------------------------------------------
@@ -624,7 +624,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!Number()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  Keyword_10 = "annihilator" SPACE Number
   //-------------------------------------------------------------------
@@ -636,7 +636,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!Number()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  Keyword_11 = "buyback" SPACE ManaCost
   //-------------------------------------------------------------------
@@ -648,7 +648,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!ManaCost()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  Keyword_12 = "echo" SPACE ManaCost
   //-------------------------------------------------------------------
@@ -660,7 +660,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!ManaCost()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  Keyword_13 = "kicker" SPACE ManaCost
   //-------------------------------------------------------------------
@@ -672,7 +672,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!ManaCost()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  Keyword_14 = "multikicker" SPACE ManaCost
   //-------------------------------------------------------------------
@@ -684,7 +684,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!ManaCost()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  Keyword_15 = "equip" SPACE ManaCost
   //-------------------------------------------------------------------
@@ -696,7 +696,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!ManaCost()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  Keyword_16 = "cumulative upkeep" SPACE ManaCost
   //-------------------------------------------------------------------
@@ -708,7 +708,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!ManaCost()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  Keyword_17 = "replicate" SPACE ManaCost
   //-------------------------------------------------------------------
@@ -720,7 +720,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!ManaCost()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  Keyword_18 = "miracle" SPACE ManaCost
   //-------------------------------------------------------------------
@@ -732,7 +732,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!ManaCost()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  Keyword_19 = "level up" SPACE ManaCost
   //-------------------------------------------------------------------
@@ -744,7 +744,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!ManaCost()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  Keyword_20 = "level" SPACE Number "-" Number
   //-------------------------------------------------------------------
@@ -758,7 +758,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!Number()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  Keyword_21 = "level" SPACE Number "+"
   //-------------------------------------------------------------------
@@ -771,7 +771,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next('+')) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  Keyword_22 = "champion" SPACE "a" "n"? SPACE SelectCreature
   //-------------------------------------------------------------------
@@ -786,7 +786,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SelectCreature()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  Keyword_23 = "cycling" SPACE ManaCost
   //-------------------------------------------------------------------
@@ -798,7 +798,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!ManaCost()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  Keyword_24 = "reinforce" SPACE Number "\u2014" ManaCost
   //-------------------------------------------------------------------
@@ -812,7 +812,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!ManaCost()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  ColorlessCost = "{" Number "}" / "{x}" ;
   //=====================================================================
@@ -823,7 +823,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next("{x}")) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  ColorlessCost_0 = "{" Number "}"
   //-------------------------------------------------------------------
@@ -835,7 +835,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next('}')) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  SingleColor = "{b}" / "{u}" / "{g}" / "{r}" / "{w}" ;
   //=====================================================================
@@ -849,7 +849,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next("{w}")) return sem.action() && accept();
       return reject();
     }
-  
+
   //=====================================================================
   //  HybridSingleCost = "{g/u}" / "{g/w}" / "{r/g}" / "{r/w}" / "{u/r}"
   //    / "{u/b}" / "{b/g}" / "{b/r}" / "{w/b}" ;
@@ -868,7 +868,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next("{w/b}")) return sem.action() && accept();
       return reject();
     }
-  
+
   //=====================================================================
   //  ManaCost = ColorlessCost+ HybridSingleCost* SingleColor* /
   //    HybridSingleCost+ SingleColor* / SingleColor+ ;
@@ -881,7 +881,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (ManaCost_2()) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  ManaCost_0 = ColorlessCost+ HybridSingleCost* SingleColor*
   //-------------------------------------------------------------------
@@ -894,7 +894,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       while (SingleColor());
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  ManaCost_1 = HybridSingleCost+ SingleColor*
   //-------------------------------------------------------------------
@@ -906,7 +906,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       while (SingleColor());
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  ManaCost_2 = SingleColor+
   //-------------------------------------------------------------------
@@ -917,7 +917,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       while (SingleColor());
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  BecomesTargetTrigger = "when @ becomes the target of a spell or
   //    ability" ;
@@ -928,7 +928,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next("when @ becomes the target of a spell or ability")) return reject();
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  BlocksTrigger = "whenever @ blocks" ;
   //=====================================================================
@@ -938,7 +938,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next("whenever @ blocks")) return reject();
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  BlockedTrigger = "whenever @ becomes blocked" ;
   //=====================================================================
@@ -948,7 +948,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next("whenever @ becomes blocked")) return reject();
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  CastTrigger = "whenever " SelectPlayer SPACE Cast SPACE SelectSpell
   //    / "when " SelectPlayer SPACE Cast SPACE SelectSpell ;
@@ -960,7 +960,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (CastTrigger_1()) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  CastTrigger_0 = "whenever " SelectPlayer SPACE Cast SPACE
   //    SelectSpell
@@ -976,7 +976,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SelectSpell()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  CastTrigger_1 = "when " SelectPlayer SPACE Cast SPACE
   //    SelectSpell
@@ -992,7 +992,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SelectSpell()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  Cast = "cast" "s"? ;
   //=====================================================================
@@ -1003,7 +1003,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       next('s');
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  LeavesBattlefieldTrigger = "when @ leaves the battlefield" ;
   //=====================================================================
@@ -1013,7 +1013,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next("when @ leaves the battlefield")) return reject();
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  EntersGraveyardTrigger = "when @ is put into a graveyard from the
   //    battlefield" / "when @ is put into a graveyard from anywhere" ;
@@ -1025,7 +1025,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next("when @ is put into a graveyard from anywhere")) return sem.action() && accept();
       return reject();
     }
-  
+
   //=====================================================================
   //  EntersBattlefieldTrigger = EntersVerb SPACE SelectPermanent SPACE
   //    "enters the battlefield" (SPACE "under your control")? ;
@@ -1041,7 +1041,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       EntersBattlefieldTrigger_0();
       return sem.action() && accept();
     }
-  
+
   //-------------------------------------------------------------------
   //  EntersBattlefieldTrigger_0 = SPACE "under your control"
   //-------------------------------------------------------------------
@@ -1052,7 +1052,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next("under your control")) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  EntersVerb = "whenever" / "when" / "as" ;
   //=====================================================================
@@ -1064,7 +1064,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next("as")) return sem.action() && accept();
       return reject();
     }
-  
+
   //=====================================================================
   //  BeginningEndStepTrigger = "at the beginning of the end step" / "at
   //    the beginning of each end step" ;
@@ -1076,7 +1076,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next("at the beginning of each end step")) return sem.action() && accept();
       return reject();
     }
-  
+
   //=====================================================================
   //  BeginningUpkeepTrigger = "at the beginning of your upkeep" / "at
   //    the beginning of each player's upkeep" ;
@@ -1088,7 +1088,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next("at the beginning of each player's upkeep")) return sem.action() && accept();
       return reject();
     }
-  
+
   //=====================================================================
   //  DiesTrigger = "when" SPACE SelectCreature SPACE "dies" / "whenever"
   //    SPACE SelectCreature SPACE "dies" ;
@@ -1100,7 +1100,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (DiesTrigger_1()) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  DiesTrigger_0 = "when" SPACE SelectCreature SPACE "dies"
   //-------------------------------------------------------------------
@@ -1114,7 +1114,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next("dies")) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  DiesTrigger_1 = "whenever" SPACE SelectCreature SPACE "dies"
   //-------------------------------------------------------------------
@@ -1128,7 +1128,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next("dies")) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  DealsDamageTrigger = "whenever @ deals" " combat"? " damage" (" to
   //    a " DamageReceiver)? ;
@@ -1142,7 +1142,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       DealsDamageTrigger_0();
       return sem.action() && accept();
     }
-  
+
   //-------------------------------------------------------------------
   //  DealsDamageTrigger_0 = " to a " DamageReceiver
   //-------------------------------------------------------------------
@@ -1153,7 +1153,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!DamageReceiver()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  DamageReceiver = "itself" / SelectPlayer &(SEP SingleEffect) /
   //    SelectPlayer (SEP SelectCreature)? / SelectCreature &(SEP
@@ -1169,7 +1169,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (DamageReceiver_3()) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  DamageReceiver_0 = SelectPlayer &(SEP SingleEffect)
   //-------------------------------------------------------------------
@@ -1180,7 +1180,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!DamageReceiver_4()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  DamageReceiver_1 = SelectPlayer (SEP SelectCreature)?
   //-------------------------------------------------------------------
@@ -1191,7 +1191,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       DamageReceiver_5();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  DamageReceiver_2 = SelectCreature &(SEP SingleEffect)
   //-------------------------------------------------------------------
@@ -1202,7 +1202,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!DamageReceiver_4()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  DamageReceiver_3 = SelectCreature (SEP SelectPlayer)?
   //-------------------------------------------------------------------
@@ -1213,7 +1213,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       DamageReceiver_6();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  DamageReceiver_4 = &(SEP SingleEffect)
   //-------------------------------------------------------------------
@@ -1223,7 +1223,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!Effect_0()) return rejectAnd();
       return acceptAnd();
     }
-  
+
   //-------------------------------------------------------------------
   //  DamageReceiver_5 = SEP SelectCreature
   //-------------------------------------------------------------------
@@ -1234,7 +1234,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SelectCreature()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  DamageReceiver_6 = SEP SelectPlayer
   //-------------------------------------------------------------------
@@ -1245,7 +1245,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SelectPlayer()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  AttacksTrigger = "whenever @ attacks" ;
   //=====================================================================
@@ -1255,7 +1255,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next("whenever @ attacks")) return reject();
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  AbilityRestriction = "activate this ability only any time you could
   //    cast a sorcery" / "activate this ability only if seven or more
@@ -1270,7 +1270,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next("activate this ability only if you have no cards in hand")) return sem.action() && accept();
       return reject();
     }
-  
+
   //=====================================================================
   //  IfCondition = "if a creature died this turn" / "if it was kicked"
   //    ;
@@ -1282,7 +1282,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next("if it was kicked")) return sem.action() && accept();
       return reject();
     }
-  
+
   //=====================================================================
   //  KickerAction = "if it was kicked, " Effect " instead"? ;
   //=====================================================================
@@ -1294,7 +1294,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       next(" instead");
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  AnimateAction = SelectPermanent SPACE AnimateVerb SPACE
   //    CreatureSpec (SPACE AnimateActionReminder)? ;
@@ -1310,7 +1310,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       AnimateAction_0();
       return sem.action() && accept();
     }
-  
+
   //-------------------------------------------------------------------
   //  AnimateAction_0 = SPACE AnimateActionReminder
   //-------------------------------------------------------------------
@@ -1321,7 +1321,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!AnimateActionReminder()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  AnimateVerb = "becomes a" / "is a" ;
   //=====================================================================
@@ -1332,7 +1332,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next("is a")) return sem.action() && accept();
       return reject();
     }
-  
+
   //=====================================================================
   //  AnimateActionReminder = "it's still " SelectPermanent / "that's
   //    still " SelectPermanent ;
@@ -1344,7 +1344,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (AnimateActionReminder_1()) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  AnimateActionReminder_0 = "it's still " SelectPermanent
   //-------------------------------------------------------------------
@@ -1355,7 +1355,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SelectPermanent()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  AnimateActionReminder_1 = "that's still " SelectPermanent
   //-------------------------------------------------------------------
@@ -1366,7 +1366,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SelectPermanent()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  ChangeLoyaltyAction = SignedNumber / "0" ;
   //=====================================================================
@@ -1377,7 +1377,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next('0')) return sem.action() && accept();
       return reject();
     }
-  
+
   //=====================================================================
   //  ChangeStateAction = (SelectPermanent SPACE)? PermanentState ;
   //=====================================================================
@@ -1388,7 +1388,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!PermanentState()) return reject();
       return sem.action() && accept();
     }
-  
+
   //-------------------------------------------------------------------
   //  ChangeStateAction_0 = SelectPermanent SPACE
   //-------------------------------------------------------------------
@@ -1399,7 +1399,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SPACE()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  PermanentState = "can't attack or block" / "can't attack" / "can't
   //    block" / "is indestructible" / "are indestructible" / "is
@@ -1423,7 +1423,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (PermanentState_1()) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  PermanentState_0 = "are " ColorSpec
   //-------------------------------------------------------------------
@@ -1434,7 +1434,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!ColorSpec()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  PermanentState_1 = "are " Tribal " in addition to their other
   //    creature types"
@@ -1447,7 +1447,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next(" in addition to their other creature types")) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  SetPTAction = "@'s power and toughness are each equal to the number
   //    of " SelectObject (" plus the number of " SelectObject)? /
@@ -1460,7 +1460,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (SetPTAction_1()) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  SetPTAction_0 = "@'s power and toughness are each equal to the
   //    number of " SelectObject (" plus the number of "
@@ -1474,7 +1474,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       SetPTAction_2();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  SetPTAction_1 = SelectPermanent " are " Number "/" Number
   //-------------------------------------------------------------------
@@ -1488,7 +1488,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!Number()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  SetPTAction_2 = " plus the number of " SelectObject
   //-------------------------------------------------------------------
@@ -1499,7 +1499,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SelectObject()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  SacrificeAction = "sacrifice" "s"? SPACE SelectPermanent (SPACE
   //    "unless you" SPACE Action)? ;
@@ -1514,7 +1514,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       SacrificeAction_0();
       return sem.action() && accept();
     }
-  
+
   //-------------------------------------------------------------------
   //  SacrificeAction_0 = SPACE "unless you" SPACE Action
   //-------------------------------------------------------------------
@@ -1527,7 +1527,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!Action()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  PoisonAction = "gets" SPACE Count SPACE "poison counter" "s"? ;
   //=====================================================================
@@ -1542,7 +1542,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       next('s');
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  MillAction = "put" "s"? " the top " (Count SPACE)? Card " of his or
   //    her library into his or her graveyard" ;
@@ -1558,7 +1558,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next(" of his or her library into his or her graveyard")) return reject();
       return sem.action() && accept();
     }
-  
+
   //-------------------------------------------------------------------
   //  MillAction_0 = Count SPACE
   //-------------------------------------------------------------------
@@ -1569,7 +1569,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SPACE()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  DoesntUntapAction = SelectPermanent " doesn't untap during its
   //    controller's untap step" / SelectPermanent " doesn't untap during
@@ -1584,7 +1584,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (DoesntUntapAction_2()) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  DoesntUntapAction_0 = SelectPermanent " doesn't untap during its
   //    controller's untap step"
@@ -1596,7 +1596,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next(" doesn't untap during its controller's untap step")) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  DoesntUntapAction_1 = SelectPermanent " doesn't untap during its
   //    controller's next untap step"
@@ -1608,7 +1608,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next(" doesn't untap during its controller's next untap step")) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  DoesntUntapAction_2 = SelectPermanent " doesn't untap during your
   //    untap step"
@@ -1620,7 +1620,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next(" doesn't untap during your untap step")) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  ShuffleAction = "shuffle it into its owner's library" / "shuffle
   //    your library" ;
@@ -1632,7 +1632,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next("shuffle your library")) return sem.action() && accept();
       return reject();
     }
-  
+
   //=====================================================================
   //  PutTokenAction = "put " Count SPACE CreatureTokenSpec " onto the
   //    battlefield" / "put a token that's a copy of " SelectPermanent "
@@ -1645,7 +1645,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (PutTokenAction_1()) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  PutTokenAction_0 = "put " Count SPACE CreatureTokenSpec " onto
   //    the battlefield"
@@ -1660,7 +1660,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next(" onto the battlefield")) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  PutTokenAction_1 = "put a token that's a copy of "
   //    SelectPermanent " onto the battlefield"
@@ -1673,7 +1673,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next(" onto the battlefield")) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  CreatureTokenSpec = PowerToughness SPACE ColorSpec (SPACE
   //    CreatureType)* " artifact"? " creature token" "s"? (SPACE
@@ -1692,7 +1692,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       CreatureTokenSpec_1();
       return sem.action() && accept();
     }
-  
+
   //-------------------------------------------------------------------
   //  CreatureTokenSpec_0 = SPACE CreatureType
   //-------------------------------------------------------------------
@@ -1703,7 +1703,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!CreatureType()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  CreatureTokenSpec_1 = SPACE WithAbilitySpec
   //-------------------------------------------------------------------
@@ -1714,7 +1714,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!WithAbilitySpec()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  WithAbilitySpec = "with " Keyword SEP Keyword / "with " Keyword ;
   //=====================================================================
@@ -1725,7 +1725,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (WithAbilitySpec_1()) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  WithAbilitySpec_0 = "with " Keyword SEP Keyword
   //-------------------------------------------------------------------
@@ -1738,7 +1738,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!Keyword()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  WithAbilitySpec_1 = "with " Keyword
   //-------------------------------------------------------------------
@@ -1749,7 +1749,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!Keyword()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  CreatureSpec = ("legendary" SPACE)? PowerToughness (SPACE
   //    ColorSpec)? (SPACE CreatureType)* " artifact"? " creature" (SPACE
@@ -1767,7 +1767,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       CreatureTokenSpec_1();
       return sem.action() && accept();
     }
-  
+
   //-------------------------------------------------------------------
   //  CreatureSpec_0 = "legendary" SPACE
   //-------------------------------------------------------------------
@@ -1778,7 +1778,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SPACE()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  CreatureSpec_1 = SPACE ColorSpec
   //-------------------------------------------------------------------
@@ -1789,7 +1789,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!ColorSpec()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  ControlAction = "control" "s"? SPACE SelectPermanent / "gain
   //    control of " SelectPermanent ;
@@ -1801,7 +1801,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (ControlAction_1()) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  ControlAction_0 = "control" "s"? SPACE SelectPermanent
   //-------------------------------------------------------------------
@@ -1814,7 +1814,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SelectPermanent()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  ControlAction_1 = "gain control of " SelectPermanent
   //-------------------------------------------------------------------
@@ -1825,7 +1825,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SelectPermanent()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  ChangeCounterAction = CounterVerb SPACE Count SPACE CounterType
   //    SPACE Counter " from " SelectPermanent / CounterVerb SPACE Count
@@ -1838,7 +1838,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (ChangeCounterAction_1()) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  ChangeCounterAction_0 = CounterVerb SPACE Count SPACE CounterType
   //    SPACE Counter " from " SelectPermanent
@@ -1857,7 +1857,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SelectPermanent()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  ChangeCounterAction_1 = CounterVerb SPACE Count SPACE CounterType
   //    SPACE Counter " on " SelectPermanent
@@ -1876,7 +1876,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SelectPermanent()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  CounterVerb = "remove" / "put" ;
   //=====================================================================
@@ -1887,7 +1887,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next("put")) return sem.action() && accept();
       return reject();
     }
-  
+
   //=====================================================================
   //  Counter = "counter" "s"? ;
   //=====================================================================
@@ -1898,7 +1898,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       next('s');
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  PayManaAction = "pay" "s"? SPACE ManaCost / ManaCost ;
   //=====================================================================
@@ -1909,7 +1909,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (ManaCost()) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  PayManaAction_0 = "pay" "s"? SPACE ManaCost
   //-------------------------------------------------------------------
@@ -1922,7 +1922,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!ManaCost()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  ChangeLifeAction = ChangeLifeVerb SPACE Number SPACE "life" ;
   //=====================================================================
@@ -1936,7 +1936,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next("life")) return reject();
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  ChangeLifeVerb = "lose" "s"? / "gain" "s"? / "pay" "s"? ;
   //=====================================================================
@@ -1948,7 +1948,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (ChangeLifeVerb_2()) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  ChangeLifeVerb_0 = "lose" "s"?
   //-------------------------------------------------------------------
@@ -1959,7 +1959,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       next('s');
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  ChangeLifeVerb_1 = "gain" "s"?
   //-------------------------------------------------------------------
@@ -1970,7 +1970,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       next('s');
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  ChangeLifeVerb_2 = "pay" "s"?
   //-------------------------------------------------------------------
@@ -1981,7 +1981,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       next('s');
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  SelectPlayer = Player &(SEP SingleEffect) / Player (SEP Player)* ;
   //=====================================================================
@@ -1992,7 +1992,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (SelectPlayer_1()) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  SelectPlayer_0 = Player &(SEP SingleEffect)
   //-------------------------------------------------------------------
@@ -2003,7 +2003,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!DamageReceiver_4()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  SelectPlayer_1 = Player (SEP Player)*
   //-------------------------------------------------------------------
@@ -2014,7 +2014,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       while (SelectPlayer_2());
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  SelectPlayer_2 = SEP Player
   //-------------------------------------------------------------------
@@ -2025,7 +2025,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!Player()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  Player = "target player" / "target opponent" / "that player" /
   //    "each player" / "each opponent" / "your opponents" / "an
@@ -2052,7 +2052,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next("a player")) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  Player_0 = "that " SelectPermanent "'s controller"
   //-------------------------------------------------------------------
@@ -2064,7 +2064,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next("'s controller")) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  PutCardAction = "put " SelectCard " onto the battlefield under your
   //    control" / "put " SelectCard " onto the battlefield" ;
@@ -2076,7 +2076,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (PutCardAction_1()) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  PutCardAction_0 = "put " SelectCard " onto the battlefield under
   //    your control"
@@ -2089,7 +2089,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next(" onto the battlefield under your control")) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  PutCardAction_1 = "put " SelectCard " onto the battlefield"
   //-------------------------------------------------------------------
@@ -2101,7 +2101,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next(" onto the battlefield")) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  ReturnAction = BounceVerb SPACE SelectCard SPACE BounceLocation ;
   //=====================================================================
@@ -2115,7 +2115,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!BounceLocation()) return reject();
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  BounceAction = BounceVerb SPACE SelectPermanent SPACE
   //    BounceLocation ;
@@ -2130,7 +2130,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!BounceLocation()) return reject();
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  BounceLocation = "to its owner's hand" / "to their owners' hands" /
   //    "to your hand" / "to the battlefield under its owner's control" /
@@ -2150,7 +2150,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next("on the bottom of its owner's library")) return sem.action() && accept();
       return reject();
     }
-  
+
   //=====================================================================
   //  BounceVerb = "return" "s"? / "put" "s"? ;
   //=====================================================================
@@ -2161,7 +2161,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (BounceVerb_1()) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  BounceVerb_0 = "return" "s"?
   //-------------------------------------------------------------------
@@ -2172,7 +2172,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       next('s');
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  BounceVerb_1 = "put" "s"?
   //-------------------------------------------------------------------
@@ -2183,7 +2183,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       next('s');
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  PreventAction = "prevent the next " Number SPACE Damage SPACE "that
   //    would be dealt" (SPACE DamageRestriction)? / "prevent all "
@@ -2199,7 +2199,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (PreventAction_2()) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  PreventAction_0 = "prevent the next " Number SPACE Damage SPACE
   //    "that would be dealt" (SPACE DamageRestriction)?
@@ -2216,7 +2216,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       PreventAction_3();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  PreventAction_1 = "prevent all " Damage SPACE "that would be
   //    dealt" (SPACE DamageRestriction)?
@@ -2231,7 +2231,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       PreventAction_3();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  PreventAction_2 = "if damage would be dealt to " DamageReceiver
   //    ", prevent that damage"
@@ -2244,7 +2244,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next(", prevent that damage")) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  PreventAction_3 = SPACE DamageRestriction
   //-------------------------------------------------------------------
@@ -2255,7 +2255,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!DamageRestriction()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  DamageRestriction = DamageVerb SPACE DamageReceiver (SPACE "this
   //    turn by" SPACE DamageReceiver)? ;
@@ -2269,7 +2269,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       DamageRestriction_0();
       return sem.action() && accept();
     }
-  
+
   //-------------------------------------------------------------------
   //  DamageRestriction_0 = SPACE "this turn by" SPACE DamageReceiver
   //-------------------------------------------------------------------
@@ -2282,7 +2282,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!DamageReceiver()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  DamageVerb = "to and dealt by" / "to" / "by" ;
   //=====================================================================
@@ -2294,7 +2294,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next("by")) return sem.action() && accept();
       return reject();
     }
-  
+
   //=====================================================================
   //  Damage = "damage" / "combat damage" ;
   //=====================================================================
@@ -2305,7 +2305,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next("combat damage")) return sem.action() && accept();
       return reject();
     }
-  
+
   //=====================================================================
   //  TapAction = TapVerb SPACE SelectPermanent / "{t}" / "{q}" ;
   //=====================================================================
@@ -2317,7 +2317,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next("{q}")) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  TapAction_0 = TapVerb SPACE SelectPermanent
   //-------------------------------------------------------------------
@@ -2329,7 +2329,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SelectPermanent()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  TapVerb = "tap or untap" / "tap" / "untap" ;
   //=====================================================================
@@ -2341,7 +2341,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next("untap")) return sem.action() && accept();
       return reject();
     }
-  
+
   //=====================================================================
   //  RegenerateAction = "regenerate" SPACE SelectPermanent ;
   //=====================================================================
@@ -2353,7 +2353,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SelectPermanent()) return reject();
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  DamageAction = (SelectPermanent SPACE)? (Deal SPACE)? Number "
   //    damage to " DamageReceiver / SelectPermanent SPACE Deal " damage
@@ -2371,7 +2371,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (DamageAction_3()) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  DamageAction_0 = (SelectPermanent SPACE)? (Deal SPACE)? Number "
   //    damage to " DamageReceiver
@@ -2386,7 +2386,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!DamageReceiver()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  DamageAction_1 = SelectPermanent SPACE Deal " damage equal to its
   //    power to " DamageReceiver
@@ -2401,7 +2401,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!DamageReceiver()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  DamageAction_2 = SelectPermanent SPACE Deal " damage equal to the
   //    number of " CounterType " counters on it to " DamageReceiver
@@ -2418,7 +2418,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!DamageReceiver()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  DamageAction_3 = SelectPermanent SPACE Deal " damage to "
   //    DamageReceiver " equal to the number of " SelectPermanent
@@ -2435,7 +2435,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SelectPermanent()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  DamageAction_4 = Deal SPACE
   //-------------------------------------------------------------------
@@ -2446,7 +2446,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SPACE()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  Deal = "deal" "s"? ;
   //=====================================================================
@@ -2457,7 +2457,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       next('s');
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  EntersTapped = "@ enters the battlefield tapped" ;
   //=====================================================================
@@ -2467,7 +2467,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next("@ enters the battlefield tapped")) return reject();
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  EntersWithCounter = "@ enters the battlefield with" SPACE Count
   //    SPACE CounterType SPACE Counter " on it" ;
@@ -2485,7 +2485,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next(" on it")) return reject();
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  CounterType = "-0/-1" / "+0/+1" / "-0/-2" / "+0/+2" / "-1/-0" /
   //    "+1/+0" / "-1/-1" / "+1/+1" / "+1/+2" / "-2/-2" / "+2/+2" / "age"
@@ -2625,7 +2625,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next("wish")) return sem.action() && accept();
       return reject();
     }
-  
+
   //=====================================================================
   //  Count = "an" / "a" / "one" / "two" / "three" / "four" / "five" /
   //    "six" / "seven" / "eight" / "nine" / "ten" / "x" ;
@@ -2648,7 +2648,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next('x')) return sem.action() && accept();
       return reject();
     }
-  
+
   //=====================================================================
   //  Enchant = "enchant" SPACE RestrictedPermanent / "enchant player" ;
   //=====================================================================
@@ -2659,7 +2659,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next("enchant player")) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  Enchant_0 = "enchant" SPACE RestrictedPermanent
   //-------------------------------------------------------------------
@@ -2671,7 +2671,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!RestrictedPermanent()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  Duration = "until end of turn" / "for as long as " SelectPlayer "
   //    control @" / "as long as you control three or more artifacts" /
@@ -2694,7 +2694,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next("at the beginning of your next end step")) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  Duration_0 = "for as long as " SelectPlayer " control @"
   //-------------------------------------------------------------------
@@ -2706,7 +2706,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next(" control @")) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  GainAction = (SelectPermanent SPACE)? GainVerb SPACE Keyword (SEP
   //    Keyword)* ;
@@ -2721,7 +2721,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       while (GainAction_0());
       return sem.action() && accept();
     }
-  
+
   //-------------------------------------------------------------------
   //  GainAction_0 = SEP Keyword
   //-------------------------------------------------------------------
@@ -2732,7 +2732,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!Keyword()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  GainVerb = "has" / "have" / "gain" "s"? / "lose" "s"? ;
   //=====================================================================
@@ -2745,7 +2745,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (ChangeLifeVerb_0()) return sem.action() && accept();
       return reject();
     }
-  
+
   //=====================================================================
   //  PumpAction = SelectCreature SPACE "get" "s"? SPACE SignedNumber "/"
   //    SignedNumber ;
@@ -2763,7 +2763,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SignedNumber()) return reject();
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  AddManaAction = "add " ManaSource " to your mana pool" ;
   //=====================================================================
@@ -2775,7 +2775,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next(" to your mana pool")) return reject();
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  ManaSource = "{1}" / SingleColor (SEP SingleColor)* / "one mana of
   //    any color" ;
@@ -2788,7 +2788,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next("one mana of any color")) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  ManaSource_0 = SingleColor (SEP SingleColor)*
   //-------------------------------------------------------------------
@@ -2799,7 +2799,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       while (ManaSource_1());
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  ManaSource_1 = SEP SingleColor
   //-------------------------------------------------------------------
@@ -2810,7 +2810,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SingleColor()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  DrawAction = Draw SPACE Count SPACE Card ;
   //=====================================================================
@@ -2824,7 +2824,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!Card()) return reject();
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  Draw = "draw" "s"? ;
   //=====================================================================
@@ -2835,7 +2835,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       next('s');
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  DiscardAction = Discard SPACE SelectCard " at random"? / Discard
   //    SPACE Count SPACE RestrictedCard " at random" ;
@@ -2847,7 +2847,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (DiscardAction_1()) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  DiscardAction_0 = Discard SPACE SelectCard " at random"?
   //-------------------------------------------------------------------
@@ -2860,7 +2860,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       next(" at random");
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  DiscardAction_1 = Discard SPACE Count SPACE RestrictedCard " at
   //    random"
@@ -2876,7 +2876,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next(" at random")) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  Discard = "discard" "s"? ;
   //=====================================================================
@@ -2887,7 +2887,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       next('s');
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  DestroyNoRegenAction = "destroy" SPACE SelectPermanent EOS SPACE
   //    NoRegen ;
@@ -2903,7 +2903,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!NoRegen()) return reject();
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  DestroyAction = "destroy" SPACE SelectPermanent ;
   //=====================================================================
@@ -2915,7 +2915,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SelectPermanent()) return reject();
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  ExileAction = "exile " SelectPermanent / "exile " SelectCard ;
   //=====================================================================
@@ -2926,7 +2926,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (ExileAction_1()) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  ExileAction_0 = "exile " SelectPermanent
   //-------------------------------------------------------------------
@@ -2937,7 +2937,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SelectPermanent()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  ExileAction_1 = "exile " SelectCard
   //-------------------------------------------------------------------
@@ -2948,7 +2948,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SelectCard()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  CounterAction = "counter " SelectSpell (" unless " SingleEffect)?
   //    ;
@@ -2961,7 +2961,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       CounterAction_0();
       return sem.action() && accept();
     }
-  
+
   //-------------------------------------------------------------------
   //  CounterAction_0 = " unless " SingleEffect
   //-------------------------------------------------------------------
@@ -2972,7 +2972,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SingleEffect()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  SelectOp = "target" / "another target" / "all" / "an" / "a" /
   //    "each" / "the" / "that" / "those" ;
@@ -2991,7 +2991,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next("those")) return sem.action() && accept();
       return reject();
     }
-  
+
   //=====================================================================
   //  SelectObject = SelectCard / SelectPermanent ;
   //=====================================================================
@@ -3002,7 +3002,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (SelectPermanent()) return sem.action() && accept();
       return reject();
     }
-  
+
   //=====================================================================
   //  SelectCard = "@" (SPACE CardRestriction)? (SEP RestrictedCard)* /
   //    "it" (SEP RestrictedCard)* / (SelectOp SPACE)? RestrictedCard
@@ -3016,7 +3016,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (SelectCard_2()) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  SelectCard_0 = "@" (SPACE CardRestriction)? (SEP
   //    RestrictedCard)*
@@ -3029,7 +3029,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       while (SelectCard_4());
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  SelectCard_1 = "it" (SEP RestrictedCard)*
   //-------------------------------------------------------------------
@@ -3040,7 +3040,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       while (SelectCard_4());
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  SelectCard_2 = (SelectOp SPACE)? RestrictedCard (SEP
   //    RestrictedCard)*
@@ -3053,7 +3053,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       while (SelectCard_4());
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  SelectCard_3 = SPACE CardRestriction
   //-------------------------------------------------------------------
@@ -3064,7 +3064,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!CardRestriction()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  SelectCard_4 = SEP RestrictedCard
   //-------------------------------------------------------------------
@@ -3075,7 +3075,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!RestrictedCard()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  SelectCard_5 = SelectOp SPACE
   //-------------------------------------------------------------------
@@ -3086,7 +3086,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SPACE()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  SelectCreature = "@" (SEP RestrictedCreature)* / "it" (SEP
   //    RestrictedCreature)* / (SelectOp SPACE)? RestrictedCreature (SEP
@@ -3100,7 +3100,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (SelectCreature_2()) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  SelectCreature_0 = "@" (SEP RestrictedCreature)*
   //-------------------------------------------------------------------
@@ -3111,7 +3111,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       while (SelectCreature_3());
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  SelectCreature_1 = "it" (SEP RestrictedCreature)*
   //-------------------------------------------------------------------
@@ -3122,7 +3122,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       while (SelectCreature_3());
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  SelectCreature_2 = (SelectOp SPACE)? RestrictedCreature (SEP
   //    RestrictedCreature)*
@@ -3135,7 +3135,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       while (SelectCreature_3());
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  SelectCreature_3 = SEP RestrictedCreature
   //-------------------------------------------------------------------
@@ -3146,7 +3146,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!RestrictedCreature()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  SelectPermanent = "@" (SEP RestrictedPermanent)* / "it" (SEP
   //    RestrictedPermanent)* / (SelectOp SPACE)? RestrictedPermanent
@@ -3160,7 +3160,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (SelectPermanent_2()) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  SelectPermanent_0 = "@" (SEP RestrictedPermanent)*
   //-------------------------------------------------------------------
@@ -3171,7 +3171,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       while (SelectPermanent_3());
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  SelectPermanent_1 = "it" (SEP RestrictedPermanent)*
   //-------------------------------------------------------------------
@@ -3182,7 +3182,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       while (SelectPermanent_3());
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  SelectPermanent_2 = (SelectOp SPACE)? RestrictedPermanent (SEP
   //    RestrictedPermanent)*
@@ -3195,7 +3195,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       while (SelectPermanent_3());
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  SelectPermanent_3 = SEP RestrictedPermanent
   //-------------------------------------------------------------------
@@ -3206,7 +3206,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!RestrictedPermanent()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  SelectSpell = "@" (SEP RestrictedSpell)* / "it" (SEP
   //    RestrictedSpell)* / (SelectOp SPACE)? RestrictedSpell (SEP
@@ -3220,7 +3220,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (SelectSpell_2()) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  SelectSpell_0 = "@" (SEP RestrictedSpell)*
   //-------------------------------------------------------------------
@@ -3231,7 +3231,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       while (SelectSpell_3());
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  SelectSpell_1 = "it" (SEP RestrictedSpell)*
   //-------------------------------------------------------------------
@@ -3242,7 +3242,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       while (SelectSpell_3());
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  SelectSpell_2 = (SelectOp SPACE)? RestrictedSpell (SEP
   //    RestrictedSpell)*
@@ -3255,7 +3255,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       while (SelectSpell_3());
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  SelectSpell_3 = SEP RestrictedSpell
   //-------------------------------------------------------------------
@@ -3266,7 +3266,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!RestrictedSpell()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  RestrictedPermanent = (PermanentRestriction SPACE)* Permanent
   //    (SPACE PermanentRestriction)* / RestrictedCreature /
@@ -3284,7 +3284,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (RestrictedTribal()) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  RestrictedPermanent_0 = (PermanentRestriction SPACE)* Permanent
   //    (SPACE PermanentRestriction)*
@@ -3297,7 +3297,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       while (RestrictedPermanent_2());
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  RestrictedPermanent_1 = PermanentRestriction SPACE
   //-------------------------------------------------------------------
@@ -3308,7 +3308,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SPACE()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  RestrictedPermanent_2 = SPACE PermanentRestriction
   //-------------------------------------------------------------------
@@ -3319,7 +3319,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!PermanentRestriction()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  RestrictedArtifact = (PermanentRestriction SPACE)*+ Artifact (SPACE
   //    PermanentRestriction)* ;
@@ -3332,7 +3332,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       while (RestrictedPermanent_2());
       return sem.action() && accept();
     }
-  
+
   //-------------------------------------------------------------------
   //  RestrictedArtifact_0 = PermanentRestriction SPACE
   //-------------------------------------------------------------------
@@ -3343,7 +3343,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SPACE()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  RestrictedEnchantment = (PermanentRestriction SPACE)? Enchantment
   //    (SPACE PermanentRestriction)? ;
@@ -3356,7 +3356,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       RestrictedPermanent_2();
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  RestrictedLand = (LandRestriction SPACE)? Land (SPACE
   //    LandRestriction)? ;
@@ -3369,7 +3369,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       RestrictedLand_1();
       return sem.action() && accept();
     }
-  
+
   //-------------------------------------------------------------------
   //  RestrictedLand_0 = LandRestriction SPACE
   //-------------------------------------------------------------------
@@ -3380,7 +3380,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SPACE()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  RestrictedLand_1 = SPACE LandRestriction
   //-------------------------------------------------------------------
@@ -3391,7 +3391,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!LandRestriction()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  RestrictedTribal = (PermanentRestriction SPACE)? Tribal (SPACE
   //    PermanentRestriction)? ;
@@ -3404,7 +3404,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       RestrictedPermanent_2();
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  RestrictedSpell = (SpellRestriction SPACE)* Spell (SPACE
   //    SpellRestriction)* ;
@@ -3417,7 +3417,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       while (RestrictedSpell_1());
       return sem.action() && accept();
     }
-  
+
   //-------------------------------------------------------------------
   //  RestrictedSpell_0 = SpellRestriction SPACE
   //-------------------------------------------------------------------
@@ -3428,7 +3428,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SPACE()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  RestrictedSpell_1 = SPACE SpellRestriction
   //-------------------------------------------------------------------
@@ -3439,7 +3439,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SpellRestriction()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  ColorSpec = Color (SEP Color)* / "non" Color / "colorless" ;
   //=====================================================================
@@ -3451,7 +3451,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next("colorless")) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  ColorSpec_0 = Color (SEP Color)*
   //-------------------------------------------------------------------
@@ -3462,7 +3462,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       while (ColorSpec_2());
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  ColorSpec_1 = "non" Color
   //-------------------------------------------------------------------
@@ -3473,7 +3473,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!Color()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  ColorSpec_2 = SEP Color
   //-------------------------------------------------------------------
@@ -3484,7 +3484,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!Color()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  SpellRestriction = ColorSpec / "multicolored" / "noncreature" /
   //    "during an opponent's turn" / "with infect" / "with converted
@@ -3508,7 +3508,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (SpellRestriction_4()) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  SpellRestriction_0 = "with converted mana cost " Number " or
   //    less"
@@ -3521,7 +3521,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next(" or less")) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  SpellRestriction_1 = "with converted mana cost " Number " or
   //    greater"
@@ -3534,7 +3534,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next(" or greater")) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  SpellRestriction_2 = "with converted mana cost " Number
   //-------------------------------------------------------------------
@@ -3545,7 +3545,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!Number()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  SpellRestriction_3 = SpellType (SEP SpellType)*
   //-------------------------------------------------------------------
@@ -3556,7 +3556,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       while (SpellRestriction_5());
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  SpellRestriction_4 = RestrictedPermanent (SEP
   //    RestrictedPermanent)*
@@ -3568,7 +3568,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       while (SelectPermanent_3());
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  SpellRestriction_5 = SEP SpellType
   //-------------------------------------------------------------------
@@ -3579,7 +3579,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SpellType()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  RestrictedCard = (CardRestriction SPACE)* Card (SPACE
   //    CardRestriction)* ;
@@ -3592,7 +3592,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       while (SelectCard_3());
       return sem.action() && accept();
     }
-  
+
   //-------------------------------------------------------------------
   //  RestrictedCard_0 = CardRestriction SPACE
   //-------------------------------------------------------------------
@@ -3603,7 +3603,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SPACE()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  CardRestriction = "exiled" / "from a graveyard" / "from your
   //    graveyard" / "in all graveyards" / "from your hand" / "in your
@@ -3625,7 +3625,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (RestrictedCreature()) return sem.action() && accept();
       return reject();
     }
-  
+
   //=====================================================================
   //  RestrictedCreature = (CreatureRestriction SPACE)* Creature (SPACE
   //    CreatureRestriction)* / (CreatureRestriction SPACE)*+ Tribal
@@ -3638,7 +3638,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (RestrictedCreature_1()) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  RestrictedCreature_0 = (CreatureRestriction SPACE)* Creature
   //    (SPACE CreatureRestriction)*
@@ -3651,7 +3651,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       while (RestrictedCreature_3());
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  RestrictedCreature_1 = (CreatureRestriction SPACE)*+ Tribal
   //    (SPACE CreatureRestriction)*
@@ -3664,7 +3664,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       while (RestrictedCreature_3());
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  RestrictedCreature_2 = CreatureRestriction SPACE
   //-------------------------------------------------------------------
@@ -3675,7 +3675,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SPACE()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  RestrictedCreature_3 = SPACE CreatureRestriction
   //-------------------------------------------------------------------
@@ -3686,7 +3686,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!CreatureRestriction()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  RestrictedCreature_4 = CreatureRestriction SPACE
   //-------------------------------------------------------------------
@@ -3697,7 +3697,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SPACE()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  PermanentRestriction = ColorSpec / SelectPlayer " control" "s"? /
   //    SelectPlayer " don't control" / "tapped" / "untapped" /
@@ -3734,7 +3734,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (SpellRestriction_2()) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  PermanentRestriction_0 = SelectPlayer " control" "s"?
   //-------------------------------------------------------------------
@@ -3746,7 +3746,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       next('s');
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  PermanentRestriction_1 = SelectPlayer " don't control"
   //-------------------------------------------------------------------
@@ -3757,7 +3757,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next(" don't control")) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  PermanentRestriction_2 = "token" "s"?
   //-------------------------------------------------------------------
@@ -3768,7 +3768,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       next('s');
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  CreatureRestriction = "with power " Number " or less" / "with power
   //    " Number " or greater" / "with " Keyword / "without " Keyword /
@@ -3797,7 +3797,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (PowerToughness()) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  CreatureRestriction_0 = "with power " Number " or less"
   //-------------------------------------------------------------------
@@ -3809,7 +3809,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next(" or less")) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  CreatureRestriction_1 = "with power " Number " or greater"
   //-------------------------------------------------------------------
@@ -3821,7 +3821,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next(" or greater")) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  CreatureRestriction_2 = "without " Keyword
   //-------------------------------------------------------------------
@@ -3832,7 +3832,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!Keyword()) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  CreatureRestriction_3 = "with a " (CounterType SPACE)? "counter
   //    on it"
@@ -3845,7 +3845,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next("counter on it")) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  CreatureRestriction_4 = "dealt damage by " SelectPermanent " this
   //    turn"
@@ -3858,7 +3858,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next(" this turn")) return rejectInner();
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  CreatureRestriction_5 = CounterType SPACE
   //-------------------------------------------------------------------
@@ -3869,7 +3869,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!SPACE()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  LandRestriction = "nonbasic" / "basic" / PermanentRestriction ;
   //=====================================================================
@@ -3881,7 +3881,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (PermanentRestriction()) return sem.action() && accept();
       return reject();
     }
-  
+
   //=====================================================================
   //  Color = "black" / "blue" / "green" / "red" / "white" ;
   //=====================================================================
@@ -3895,7 +3895,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next("white")) return sem.action() && accept();
       return reject();
     }
-  
+
   //=====================================================================
   //  Tribal = CreatureType "s"? / "non-" CreatureType ;
   //=====================================================================
@@ -3906,7 +3906,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (Tribal_1()) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  Tribal_0 = CreatureType "s"?
   //-------------------------------------------------------------------
@@ -3917,7 +3917,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       next('s');
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  Tribal_1 = "non-" CreatureType
   //-------------------------------------------------------------------
@@ -3928,7 +3928,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!CreatureType()) return rejectInner();
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  SpellType = "instant" / "sorcery" / "arcane" / "spirit" / "trap" ;
   //=====================================================================
@@ -3942,7 +3942,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next("trap")) return sem.action() && accept();
       return reject();
     }
-  
+
   //=====================================================================
   //  CreatureType = "advisor" / "ally" / "angel" / "anteater" /
   //    "antelope" / "ape" / "archer" / "archon" / "artificer" /
@@ -4216,7 +4216,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next("zubera")) return sem.action() && accept();
       return reject();
     }
-  
+
   //=====================================================================
   //  Creature = "creature" "s"? ;
   //=====================================================================
@@ -4227,7 +4227,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       next('s');
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  Artifact = "artifact" "s"? / "equipment" "s"? ;
   //=====================================================================
@@ -4238,7 +4238,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (Artifact_1()) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  Artifact_0 = "artifact" "s"?
   //-------------------------------------------------------------------
@@ -4249,7 +4249,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       next('s');
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  Artifact_1 = "equipment" "s"?
   //-------------------------------------------------------------------
@@ -4260,7 +4260,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       next('s');
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  Land = "land" "s"? / "swamp" "s"? / "island" "s"? / "forest" "s"? /
   //    "mountain" "s"? / "plains" ;
@@ -4276,7 +4276,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next("plains")) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  Land_0 = "land" "s"?
   //-------------------------------------------------------------------
@@ -4287,7 +4287,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       next('s');
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  Land_1 = "swamp" "s"?
   //-------------------------------------------------------------------
@@ -4298,7 +4298,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       next('s');
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  Land_2 = "island" "s"?
   //-------------------------------------------------------------------
@@ -4309,7 +4309,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       next('s');
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  Land_3 = "forest" "s"?
   //-------------------------------------------------------------------
@@ -4320,7 +4320,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       next('s');
       return acceptInner();
     }
-  
+
   //-------------------------------------------------------------------
   //  Land_4 = "mountain" "s"?
   //-------------------------------------------------------------------
@@ -4331,7 +4331,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       next('s');
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  Enchantment = "enchantment" "s"? ;
   //=====================================================================
@@ -4342,7 +4342,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       next('s');
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  Permanent = "permanent" "s"? ;
   //=====================================================================
@@ -4353,7 +4353,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       next('s');
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  Card = "card" "s"? ;
   //=====================================================================
@@ -4364,7 +4364,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       next('s');
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  Spell = "spell" "s"? ;
   //=====================================================================
@@ -4375,7 +4375,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       next('s');
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  NoRegen = "it can't be regenerated" / "they can't be regenerated"
   //    ;
@@ -4387,7 +4387,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next("they can't be regenerated")) return sem.action() && accept();
       return reject();
     }
-  
+
   //=====================================================================
   //  PowerToughness = Number "/" Number ;
   //=====================================================================
@@ -4399,7 +4399,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!Number()) return reject();
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  SignedNumber = Sign Number ;
   //=====================================================================
@@ -4410,7 +4410,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!Number()) return reject();
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  Number = [0-9]+ / "that much" / "x" ;
   //=====================================================================
@@ -4422,7 +4422,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next('x')) return sem.action() && accept();
       return reject();
     }
-  
+
   //-------------------------------------------------------------------
   //  Number_0 = [0-9]+
   //-------------------------------------------------------------------
@@ -4433,7 +4433,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       while (nextIn('0','9'));
       return acceptInner();
     }
-  
+
   //=====================================================================
   //  Sign = "+" / "-" ;
   //=====================================================================
@@ -4444,7 +4444,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next('-')) return sem.action() && accept();
       return reject();
     }
-  
+
   //=====================================================================
   //  SEP = ", or " / ", and " / ", then " / ", " / " or " / " and " ;
   //=====================================================================
@@ -4459,7 +4459,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (next(" and ")) return sem.action() && accept();
       return reject();
     }
-  
+
   //=====================================================================
   //  EOC = ": " ;
   //=====================================================================
@@ -4469,7 +4469,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next(": ")) return reject();
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  SPACE = " " ;
   //=====================================================================
@@ -4479,7 +4479,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next(' ')) return reject();
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  EOS = "." ;
   //=====================================================================
@@ -4489,7 +4489,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!next('.')) return reject();
       return sem.action() && accept();
     }
-  
+
   //=====================================================================
   //  EOR = !_ ;
   //=====================================================================
@@ -4499,13 +4499,13 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
       if (!aheadNot()) return reject();
       return sem.action() && accept();
     }
-  
+
   //=======================================================================
   //
   //  Cache objects
   //
   //=======================================================================
-  
+
   final Cache Rule = new Cache("Rule","Rule");
   final Cache Ability = new Cache("Ability","Ability");
   final Cache SpellEffect = new Cache("SpellEffect","SpellEffect");
@@ -4642,7 +4642,7 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
   final Cache SPACE = new Cache("SPACE","SPACE");
   final Cache EOS = new Cache("EOS","EOS");
   final Cache EOR = new Cache("EOR","EOR");
-  
+
   final Cache Rule_0 = new Cache("Rule_0"); // AbilityWord " \u2014 "
   final Cache SpellEffect_0 = new Cache("SpellEffect_0"); // SPACE Effect EOS
   final Cache Effect_0 = new Cache("Effect_0"); // SEP SingleEffect
@@ -4815,11 +4815,11 @@ public class MagicRuleParser extends magic.grammar.ParserMemo
   final Cache Land_3 = new Cache("Land_3"); // "forest" "s"?
   final Cache Land_4 = new Cache("Land_4"); // "mountain" "s"?
   final Cache Number_0 = new Cache("Number_0"); // [0-9]+
-  
+
   //-------------------------------------------------------------------
   //  List of Cache objects
   //-------------------------------------------------------------------
-  
+
   Cache[] cacheList =
   {
     Rule,Ability,SpellEffect,Effect,SingleEffect,Optional,AbilityWord,

@@ -29,24 +29,24 @@ public class MagicMultipleScoreRanking implements MagicScoreRanking {
             return result1.getPosition()-result2.getPosition();
         }
     };
-    
-    private final SortedSet<MagicScoreResult> results;    
+
+    private final SortedSet<MagicScoreResult> results;
     private final boolean best;
     private int left;
     private int worstScore;
-    
+
     public MagicMultipleScoreRanking(final int maxSize,final boolean best) {
         this.best=best;
         results=new TreeSet<MagicScoreResult>(best ? BEST_COMPARATOR : WORST_COMPARATOR);
         left=maxSize;
     }
-    
+
     public boolean addScore(final int score) {
-        return left == 0 ? (best ? score > worstScore 
+        return left == 0 ? (best ? score > worstScore
                                  : score < worstScore)
                          :true;
     }
-    
+
     public void addScoreResult(final MagicScoreResult result) {
         results.add(result);
         if (left==0) {
@@ -60,5 +60,5 @@ public class MagicMultipleScoreRanking implements MagicScoreRanking {
     @Override
     public Collection<Object> getResults() {
         return new ArrayList<Object>(results);
-    }    
+    }
 }

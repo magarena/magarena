@@ -24,14 +24,14 @@ public class MagicMarkerAction extends MagicAction {
     private boolean oldStateCheckRequired;
 
     private MagicPayedCost oldPayedCost;
-    
+
     private int oldLife1;
     private int oldLife2;
     private int oldPoison1;
     private int oldPoison2;
     private MagicActivationPriority oldActivationPriority1;
     private MagicActivationPriority oldActivationPriority2;
-    
+
     @Override
     public void doAction(final MagicGame game) {
         oldTurnPlayer=game.getTurnPlayer();

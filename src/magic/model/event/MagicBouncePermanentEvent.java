@@ -8,7 +8,7 @@ import magic.model.MagicLocationType;
 import magic.model.action.MagicRemoveFromPlayAction;
 
 public class MagicBouncePermanentEvent extends MagicEvent {
-    
+
     public MagicBouncePermanentEvent(final MagicSource source, final MagicPermanent perm) {
         super(
             source,
@@ -17,7 +17,7 @@ public class MagicBouncePermanentEvent extends MagicEvent {
             "Return SN to its owner's hand."
         );
     }
-    
+
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

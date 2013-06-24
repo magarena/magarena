@@ -10,17 +10,17 @@ public class MagicCopyMap extends HashMap<MagicCopyable,MagicCopyable> {
 
     @SuppressWarnings("unchecked")
     public <E extends MagicCopyable> E copy(final E source) {
-        if (source == null) { 
+        if (source == null) {
             return source;
-        }        
+        }
         E target=(E)get(source);
-        if (target==null) {            
+        if (target==null) {
             target=(E)source.copy(this);
             put(source,target);
         }
         return target;
     }
-        
+
     private Object copyObject(final Object source) {
         if (source != null && source instanceof MagicCopyable) {
             return copy((MagicCopyable)source);
@@ -28,7 +28,7 @@ public class MagicCopyMap extends HashMap<MagicCopyable,MagicCopyable> {
             return source;
         }
     }
-    
+
     @SuppressWarnings("unchecked")
     public <E> E[] copyObjects(final E[] sources,final Class<E> clazz) {
         if (sources==null||sources.length==0) {
@@ -40,7 +40,7 @@ public class MagicCopyMap extends HashMap<MagicCopyable,MagicCopyable> {
         }
         return targets;
     }
-    
+
     @SuppressWarnings("unchecked")
     public <E> void copyCollection(final Collection<E> sourceCollection,final Collection<E> targetCollection) {
         for (final E object : sourceCollection) {

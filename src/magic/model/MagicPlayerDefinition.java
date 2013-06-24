@@ -10,12 +10,12 @@ public class MagicPlayerDefinition {
 
     private static final int DECK_SIZE=40;
     private static final int MIN_SOURCE=16;
-    
+
     private static final String NAME="name";
     private static final String ARTIFICIAL="artificial";
     private static final String COLORS="colors";
     private static final String FACE="face";
-    
+
     private String name;
     private boolean artificial;
     private MagicPlayerProfile profile;
@@ -23,14 +23,14 @@ public class MagicPlayerDefinition {
     private final MagicDeck deck = new MagicDeck();
 
     MagicPlayerDefinition() {}
-    
+
     public MagicPlayerDefinition(final String name,final boolean artificial,final MagicPlayerProfile profile,final int face) {
         this.name=name;
         this.artificial=artificial;
         this.profile=profile;
         this.face=face;
     }
-    
+
     public String getName() {
         return name;
     }
@@ -38,23 +38,23 @@ public class MagicPlayerDefinition {
     public void setArtificial(final boolean art) {
         this.artificial=art;
     }
-    
+
     public boolean isArtificial() {
         return artificial;
     }
-    
+
     public void setProfile(final MagicPlayerProfile profile) {
         this.profile=profile;
     }
-    
+
     public MagicPlayerProfile getProfile() {
         return profile;
     }
-    
+
     public int getFace() {
         return face;
     }
-                
+
     private void addBasicLandsToDeck() {
         // Calculate statistics per color.
         final int[] colorCount=new int[MagicColor.NR_COLORS];
@@ -70,10 +70,10 @@ public class MagicPlayerDefinition {
                     if (color.hasColor(colorFlags)) {
                         colorCount[color.ordinal()]++;
                     }
-                }                
+                }
             }
         }
-        
+
         // Add optimal basic lands to deck.
         while (deck.size()<DECK_SIZE) {
             MagicColor bestColor=null;
@@ -100,41 +100,41 @@ public class MagicPlayerDefinition {
             deck.add(landCard);
         }
     }
-    
+
     public MagicDeck getDeck() {
         return deck;
-    }    
-    
+    }
+
     public void setDeck(final MagicDeck aDeck) {
         deck.setContent(aDeck);
-    }    
-    
+    }
+
     public DefaultDeckGenerator getDeckGenerator() {
         final String name = getProfile().getDeckGeneratorName();
-        
+
         if (name == null) {
             return null;
         }
-        
+
         return DeckGenerators.getInstance().getDeckGenerator(name);
     }
-    
+
     void generateDeck(final DefaultDeckGenerator defaultGenerator) {
         final DefaultDeckGenerator customGenerator =  getDeckGenerator();
-        
+
         if(customGenerator == null) {
             defaultGenerator.generateDeck(DECK_SIZE, profile, deck);
         } else {
             customGenerator.generateDeck(DECK_SIZE, profile, deck);
         }
-        
+
         addBasicLandsToDeck();
     }
-    
+
     private static String getDeckPrefix(final String prefix,final int index) {
         return prefix+"deck"+index;
     }
-    
+
     void load(final Properties properties,final String prefix) {
         name=properties.getProperty(prefix+NAME,"");
         artificial=Boolean.parseBoolean(properties.getProperty(prefix+ARTIFICIAL,"true"));
@@ -159,13 +159,13 @@ public class MagicPlayerDefinition {
 
         magic.data.DeckUtils.showUnsupportedCards(unsupported);
     }
-    
+
     void save(final Properties properties,final String prefix) {
         properties.setProperty(prefix+NAME,name);
         properties.setProperty(prefix+ARTIFICIAL,Boolean.toString(artificial));
         properties.setProperty(prefix+COLORS,getProfile().getColorText());
         properties.setProperty(prefix+FACE,Integer.toString(face));
-        
+
         int index=1;
         for (final MagicCardDefinition cardDefinition : deck) {
             properties.setProperty(getDeckPrefix(prefix,index++),cardDefinition.getFullName());

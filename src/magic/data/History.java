@@ -12,10 +12,10 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class History {
-    
+
     public static final String HISTORY_FOLDER = "history";
     private static final String HISTORY_EXTENSION = ".hist";
-    
+
     private static final String GAMES_PLAYED = "gamesPlayed";
     private static final String GAMES_WON = "gamesWon";
     private static final String DUELS_PLAYED = "duelsPlayed";
@@ -28,7 +28,7 @@ public class History {
     private static final String COLOR_GREEN = "colorGreen";
     private static final String COLOR_RED = "colorRed";
     private static final String COLOR_WHITE = "colorWhite";
-    
+
     private static int gamesPlayed;
     private static int gamesWon;
     private static int turnsPlayed;
@@ -41,25 +41,25 @@ public class History {
     private static int colorGreen;
     private static int colorRed;
     private static int colorWhite;
-    
+
     private static String name = "";
     private final MagicDuel duel;
-    
+
     public History(final MagicDuel duel) {
         this.duel = duel;
     }
-    
+
     private static String getHistoryFolder() {
         return MagicMain.getGamePath() + File.separator + HISTORY_FOLDER;
     }
-    
+
     public static void createHistoryFolder() {
         final File HistoryFolderFile = new File(getHistoryFolder());
         if (!HistoryFolderFile.exists() && !HistoryFolderFile.mkdir()) {
             System.err.println("WARNING. Unable to create " + getHistoryFolder());
         }
     }
-    
+
     public void update(final boolean won,final MagicGame game,final DuelConfig configuration) {
         gamesPlayed++;
         if (won) {
@@ -107,7 +107,7 @@ public class History {
         }
         saveHistory(name + HISTORY_EXTENSION);
     }
-    
+
     private void load(final Properties properties) {
         gamesPlayed = Integer.parseInt(properties.getProperty(GAMES_PLAYED,"0"));
         gamesWon = Integer.parseInt(properties.getProperty(GAMES_WON,"0"));
@@ -122,13 +122,13 @@ public class History {
         colorRed = Integer.parseInt(properties.getProperty(COLOR_RED,"0"));
         colorWhite = Integer.parseInt(properties.getProperty(COLOR_WHITE,"0"));
     }
-    
+
     public void loadHistory(final String name) {
         setName(name);
         load(FileIO.toProp(new File(getHistoryFolder() +
                 File.separator + name + HISTORY_EXTENSION)));
     }
-    
+
     private void save(final Properties properties) {
         properties.setProperty(GAMES_PLAYED,String.valueOf(gamesPlayed));
         properties.setProperty(GAMES_WON,String.valueOf(gamesWon));
@@ -143,7 +143,7 @@ public class History {
         properties.setProperty(COLOR_RED,String.valueOf(colorRed));
         properties.setProperty(COLOR_WHITE,String.valueOf(colorWhite));
     }
-    
+
     private void saveHistory(final String filename) {
         final Properties properties = new Properties();
         save(properties);
@@ -160,11 +160,11 @@ public class History {
     private static void setName(final String aName) {
         History.name = aName;
     }
-    
+
     public static String getName() {
         return name;
     }
-    
+
     public static int getGamesPlayed() {
         return gamesPlayed;
     }
@@ -176,19 +176,19 @@ public class History {
     public static int getTurnsPlayed() {
         return turnsPlayed;
     }
-    
+
     public static int getDuelsPlayed() {
         return duelsPlayed;
     }
-    
+
     public static int getDuelsWon() {
         return duelsWon;
     }
-    
+
     public static int getLifeLeftPlayer() {
         return lifeLeftPlayer;
     }
-    
+
     public static int getLifeLeftAI() {
         return lifeLeftAI;
     }
@@ -196,19 +196,19 @@ public class History {
     public static int getColorBlack() {
         return colorBlack;
     }
-    
+
     public static int getColorBlue() {
         return colorBlue;
     }
-    
+
     public static int getColorGreen() {
         return colorGreen;
     }
-    
+
     public static int getColorRed() {
         return colorRed;
     }
-    
+
     public static int getColorWhite() {
         return colorWhite;
     }

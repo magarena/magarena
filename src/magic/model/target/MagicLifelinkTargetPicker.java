@@ -10,7 +10,7 @@ import java.util.Set;
 public class MagicLifelinkTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
     private static final MagicLifelinkTargetPicker INSTANCE = new MagicLifelinkTargetPicker();
-    
+
     private static final int ATTACKING_UNBLOCKED = 5<<8;
     private static final int BLOCKED_OR_BLOCKING = 4<<8;
     private static final int CAN_TAP = 3<<8;
@@ -18,7 +18,7 @@ public class MagicLifelinkTargetPicker extends MagicTargetPicker<MagicPermanent>
     private static final int FIRST_STRIKE = 1<<8;
 
     private MagicLifelinkTargetPicker() {}
-    
+
     public static MagicLifelinkTargetPicker create() {
         return INSTANCE;
     }
@@ -32,7 +32,7 @@ public class MagicLifelinkTargetPicker extends MagicTargetPicker<MagicPermanent>
             permanent.hasAbility(MagicAbility.CannotAttackOrBlock)) {
             return 0;
         }
-        
+
         if (permanent.isAttacking()) {
             if (!permanent.isBlocked()) {
                 // unblocked attacker has the highest chance of gaining life
@@ -47,7 +47,7 @@ public class MagicLifelinkTargetPicker extends MagicTargetPicker<MagicPermanent>
         } else if (permanent.canTap()) {
             // can be in combat later or possibly use a damage ability
             score = CAN_TAP;
-        } 
+        }
 
         if (permanent.hasAbility(MagicAbility.DoubleStrike)) {
             // chance to deal combat damage twice
@@ -57,7 +57,7 @@ public class MagicLifelinkTargetPicker extends MagicTargetPicker<MagicPermanent>
             // higher chance to deal combat damage
             score += FIRST_STRIKE;
         }
-        
+
         return permanent.getPower() + score;
     }
 }

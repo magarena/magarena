@@ -15,47 +15,47 @@ import java.util.TreeMap;
 public class DeckGenerators {
 
     private static final DeckGenerators INSTANCE = new DeckGenerators();
-    
+
     private static final String FILENAME = "deckgenerators.txt";
-    
+
     private final Map<String, Class> generatorsMap;
-    
+
     private DeckGenerators() {
         generatorsMap = new TreeMap<String, Class>();
     }
-    
+
     public Set<String> getGeneratorNames() {
         return generatorsMap.keySet();
     }
-    
+
     private void addDeckGenerator(final String name, final Class c) {
         generatorsMap.put(name, c);
     }
-    
+
     private void addDeckGenerator(final String name) {
         // find class
         final String cname = name.replaceAll("[^A-Za-z0-9]", "_");
         try { // reflection
             final Class c = Class.forName("magic.generator." + cname + "_DeckGenerator");
-            
+
             addDeckGenerator(name, c);
-            
+
             System.err.println("added deck generator " + name);
         } catch (final ClassNotFoundException ex) {
             // no class found
         } catch (final ClassCastException ex) {
             throw new RuntimeException(ex);
         }
-    
+
     }
-    
+
     public DefaultDeckGenerator getDeckGenerator(final String name) {
         return getDeckGenerator(generatorsMap.get(name));
     }
-    
+
     private DefaultDeckGenerator getDeckGenerator(final Class c) {
         DefaultDeckGenerator gen = null;
-        
+
         if(c != null) {
             try {
                 gen = (DefaultDeckGenerator) c.newInstance();
@@ -67,10 +67,10 @@ public class DeckGenerators {
                 throw new RuntimeException(ex);
             }
         }
-        
+
         return gen;
     }
-    
+
     private void loadDeckGenerators(final String filename) {
         final InputStream stream = this.getClass().getResourceAsStream(filename);
         String content = null;
@@ -92,17 +92,17 @@ public class DeckGenerators {
             }
         }
     }
-    
+
     public void loadDeckGenerators() {
         loadDeckGenerators(FILENAME);
 
         System.err.println(getNrGenerators()+ " deck generators loaded");
     }
-    
+
     public int getNrGenerators() {
         return generatorsMap.size();
     }
-    
+
     public static DeckGenerators getInstance() {
         return INSTANCE;
     }

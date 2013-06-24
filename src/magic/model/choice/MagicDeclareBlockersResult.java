@@ -17,9 +17,9 @@ public class MagicDeclareBlockersResult extends LinkedList<MagicCombatCreature[]
 
     MagicDeclareBlockersResult(final int position,final int score) {
         this.position=position;
-        this.score=score;        
+        this.score=score;
     }
-    
+
     MagicDeclareBlockersResult(final MagicDeclareBlockersResult result,final int position,final int score) {
         this(position,score);
         for (final MagicCombatCreature[] creatures : result) {
@@ -50,7 +50,7 @@ public class MagicDeclareBlockersResult extends LinkedList<MagicCombatCreature[]
     public int getScore() {
         return score;
     }
-    
+
     @Override
     public String toString() {
         final StringBuilder builder=new StringBuilder();

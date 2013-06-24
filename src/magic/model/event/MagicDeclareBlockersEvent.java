@@ -7,7 +7,7 @@ import magic.model.choice.MagicDeclareBlockersChoice;
 import magic.model.choice.MagicDeclareBlockersResult;
 
 public class MagicDeclareBlockersEvent extends MagicEvent {
-    
+
     public MagicDeclareBlockersEvent(final MagicPlayer player) {
         super(
             MagicEvent.NO_SOURCE,
@@ -17,7 +17,7 @@ public class MagicDeclareBlockersEvent extends MagicEvent {
             ""
         );
     }
-    
+
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

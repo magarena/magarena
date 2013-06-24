@@ -19,7 +19,7 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
         final String effect = rule.toLowerCase();
         final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
         final MagicEventAction action  = ruleAction.action;
-        final MagicTargetPicker picker = ruleAction.picker; 
+        final MagicTargetPicker picker = ruleAction.picker;
         final MagicTargetChoice choice = ruleAction.getChoice(effect);
 
         return new MagicSpellCardEvent() {

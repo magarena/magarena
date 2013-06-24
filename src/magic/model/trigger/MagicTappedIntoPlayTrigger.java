@@ -25,12 +25,12 @@ public class MagicTappedIntoPlayTrigger extends MagicWhenComesIntoPlayTrigger {
             "SN enters the battlefield tapped."
         );
     }
-    
+
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         game.doAction(new MagicTapAction(event.getPermanent(),false));
     }
-    
+
     @Override
     public boolean usesStack() {
         return false;

@@ -54,30 +54,30 @@ public interface Theme {
     String VALUE_GAME_OFFSET="value_game_offset";
     String VALUE_GAME_BORDER="value_game_border";
     String VALUE_POPUP_OPACITY="value_popup_opacity";
-    
+
     void load();
-    
+
     String getName();
-    
+
     BufferedImage getTexture(final String name);
-    
+
     BufferedImage getLogoTexture();
-    
+
     ImageIcon getIcon(final String name);
-    
+
     Color getColor(final String name);
-    
+
     Color getTextColor();
-    
+
     Color getNameColor();
-    
+
     Boolean getOptionUseOverlay();
-    
+
     Color getChoiceColor();
-    
+
     int getValue(final String name);
-    
+
     int getNumberOfAvatars();
-    
+
     ImageIcon getAvatarIcon(final int index,final int size);
 }

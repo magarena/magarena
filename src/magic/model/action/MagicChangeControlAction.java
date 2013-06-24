@@ -11,36 +11,36 @@ public class MagicChangeControlAction extends MagicAction {
     private final MagicPlayer curr;
     private final MagicPermanent perm;
     private final int score;
-    
+
     public MagicChangeControlAction(
-            final MagicPlayer curr, 
-            final MagicPermanent perm, 
+            final MagicPlayer curr,
+            final MagicPermanent perm,
             final int score) {
         this.curr = curr;
         this.perm = perm;
         this.score = score;
     }
-    
+
     @Override
     public void doAction(final MagicGame game) {
         final MagicPlayer prev = curr.getOpponent();
 
         // Execute trigger here so that full permanent state is preserved.
         game.executeTrigger(MagicTriggerType.WhenLoseControl, perm);
-        
+
         prev.removePermanent(perm);
         curr.addPermanent(perm);
 
         perm.setState(MagicPermanentState.Summoned);
         game.doAction(new MagicRemoveFromCombatAction(perm));
         game.doAction(MagicChangeStateAction.Clear(perm,MagicPermanentState.ExcludeFromCombat));
-        
+
         if (perm.getPairedCreature().isValid()) {;
             game.doAction(new MagicSoulbondAction(perm,perm.getPairedCreature(),false));
         }
 
         setScore(curr, score + perm.getScore());
-        
+
         game.checkUniquenessRule(perm);
         game.setStateCheckRequired();
     }
@@ -52,7 +52,7 @@ public class MagicChangeControlAction extends MagicAction {
         prev.addPermanent(perm);
         perm.clearState(MagicPermanentState.Summoned);
     }
-    
+
     @Override
     public String toString() {
         return super.toString() + " (" + curr + "," + perm + ')';

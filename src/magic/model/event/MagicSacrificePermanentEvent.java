@@ -35,7 +35,7 @@ public class MagicSacrificePermanentEvent extends MagicEvent {
         );
         conds = new MagicCondition[]{MagicConditionFactory.HasOptions(targetChoice)};
     }
-    
+
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

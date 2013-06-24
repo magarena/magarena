@@ -10,7 +10,7 @@ public class MagicDeclareBlockerAction extends MagicAction {
     private final MagicPermanent attacker;
     private final MagicPermanent blocker;
     private boolean unblocked;
-    
+
     MagicDeclareBlockerAction(final MagicPermanent attacker,final MagicPermanent blocker) {
         this.attacker=attacker;
         this.blocker=blocker;
@@ -27,7 +27,7 @@ public class MagicDeclareBlockerAction extends MagicAction {
         }
         game.executeTrigger(MagicTriggerType.WhenBlocks,blocker);
     }
-    
+
     @Override
     public void undoAction(final MagicGame game) {
         attacker.removeBlockingCreature(blocker);

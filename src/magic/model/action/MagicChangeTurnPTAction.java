@@ -11,13 +11,13 @@ public class MagicChangeTurnPTAction extends MagicAction {
     private final MagicPermanent permanent;
     private final int power;
     private final int toughness;
-    
+
     public MagicChangeTurnPTAction(final MagicPermanent permanent,final int power,final int toughness) {
         this.permanent=permanent;
         this.power=power;
         this.toughness=toughness;
     }
-    
+
     @Override
     public void doAction(final MagicGame game) {
         game.doAction(new MagicAddStaticAction(permanent, new MagicStatic(
@@ -29,7 +29,7 @@ public class MagicChangeTurnPTAction extends MagicAction {
                     final MagicPermanent permanent,
                     final MagicPowerToughness pt) {
                 pt.add(power, toughness);
-            }   
+            }
         }));
     }
 

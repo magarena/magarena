@@ -18,14 +18,14 @@ import java.util.Set;
 public class MagicDeclareAttackersChoice extends MagicChoice {
 
     private static final MagicDeclareAttackersChoice INSTANCE = new MagicDeclareAttackersChoice();
-    
+
     private static final String MESSAGE =
         "Click on a creature to declare as attacker or remove it from combat.|Press {f} to continue.";
 
     private MagicDeclareAttackersChoice() {
         super("Declare attackers.");
     }
-    
+
     @Override
     Collection<Object> getArtificialOptions(
             final MagicGame game,
@@ -34,18 +34,18 @@ public class MagicDeclareAttackersChoice extends MagicChoice {
             final MagicSource source) {
         return MagicDeclareAttackersResultBuilder.buildResults(game,player);
     }
-    
+
     @Override
     public Object[] getSimulationChoiceResult(
             final MagicGame game,
             final MagicEvent event,
             final MagicPlayer player,
             final MagicSource source) {
-        
+
         final MagicDeclareAttackersResult result = new MagicDeclareAttackersResult();
         final MagicCombatCreatureBuilder builder = new MagicCombatCreatureBuilder(game,player,player.getOpponent());
-        builder.buildBlockers();        
-        
+        builder.buildBlockers();
+
         if (builder.buildAttackers()) {
             for (final MagicCombatCreature attacker : builder.getAttackers()) {
                 if (attacker.hasAbility(MagicAbility.AttacksEachTurnIfAble) ||
@@ -54,12 +54,12 @@ public class MagicDeclareAttackersChoice extends MagicChoice {
                     //creature has 50% chance of attacking
                     result.add(attacker.permanent);
                 }
-            }        
+            }
         }
 
         return new Object[]{result};
     }
-    
+
     @Override
     public Object[] getPlayerChoiceResults(
             final GameController controller,
@@ -69,8 +69,8 @@ public class MagicDeclareAttackersChoice extends MagicChoice {
 
         final MagicDeclareAttackersResult result=new MagicDeclareAttackersResult();
         final MagicCombatCreatureBuilder builder=new MagicCombatCreatureBuilder(game,player,player.getOpponent());
-        builder.buildBlockers();        
-        
+        builder.buildBlockers();
+
         final Set<Object> validChoices=new HashSet<Object>();
         if (builder.buildAttackers()) {
             for (final MagicCombatCreature attacker : builder.getAttackers()) {
@@ -80,13 +80,13 @@ public class MagicDeclareAttackersChoice extends MagicChoice {
                 } else {
                     validChoices.add(attacker.permanent);
                 }
-            }        
-        } 
+            }
+        }
 
         if (validChoices.isEmpty() && MagicGame.canSkipSingleChoice()) {
             return new Object[]{result};
         }
-        
+
         controller.focusViewers(-1,1);
         controller.showMessage(source,MESSAGE);
         controller.setValidChoices(validChoices,true);
@@ -105,7 +105,7 @@ public class MagicDeclareAttackersChoice extends MagicChoice {
                     result.remove(attacker);
                 } else {
                     attacker.setState(MagicPermanentState.Attacking);
-                    result.add(attacker);                
+                    result.add(attacker);
                 }
                 controller.update();
             }

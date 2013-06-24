@@ -22,18 +22,18 @@ public class MayChoicePanel extends JPanel implements ActionListener {
     private static final long serialVersionUID = 1L;
 
     private static final Dimension BUTTON_DIMENSION=new Dimension(100,35);
-    
+
     private final GameController controller;
     private final JButton yesButton;
     private boolean yes;
-    
+
     public MayChoicePanel(final GameController controller,final MagicSource source,final String message) {
-        
+
         this.controller=controller;
-        
+
         setLayout(new BorderLayout());
         setOpaque(false);
-        
+
         final TextLabel textLabel=new TextLabel(GameController.getMessageWithSource(source,message),GameViewer.TEXT_WIDTH,true);
         add(textLabel,BorderLayout.CENTER);
 
@@ -41,13 +41,13 @@ public class MayChoicePanel extends JPanel implements ActionListener {
         buttonPanel.setOpaque(false);
         buttonPanel.setBorder(FontsAndBorders.EMPTY_BORDER);
         add(buttonPanel,BorderLayout.SOUTH);
-        
+
         yesButton=new JButton("Yes",IconImages.OK);
         yesButton.setPreferredSize(BUTTON_DIMENSION);
         yesButton.addActionListener(this);
         yesButton.setFocusable(false);
         buttonPanel.add(yesButton);
-        
+
         yesButton.getInputMap(2).put(KeyStroke.getKeyStroke('y'),"yes");
         yesButton.getActionMap().put("yes",new AbstractAction() {
             private static final long serialVersionUID = 1L;
@@ -57,13 +57,13 @@ public class MayChoicePanel extends JPanel implements ActionListener {
             }
         });
 
-        
+
         final JButton noButton=new JButton("No",IconImages.CANCEL);
         noButton.setPreferredSize(BUTTON_DIMENSION);
         noButton.addActionListener(this);
         noButton.setFocusable(false);
         buttonPanel.add(noButton);
-        
+
         noButton.getInputMap(2).put(KeyStroke.getKeyStroke('n'),"no");
         noButton.getActionMap().put("no",new AbstractAction() {
             private static final long serialVersionUID = 1L;
@@ -73,13 +73,13 @@ public class MayChoicePanel extends JPanel implements ActionListener {
             }
         });
     }
-    
-    public boolean isYesClicked() {    
+
+    public boolean isYesClicked() {
         return yes;
     }
 
     @Override
-    public void actionPerformed(final ActionEvent event) {    
+    public void actionPerformed(final ActionEvent event) {
         yes=event.getSource()==yesButton;
         controller.actionClicked();
     }

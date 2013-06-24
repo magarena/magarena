@@ -8,23 +8,23 @@ import magic.model.choice.MagicMayChoice;
 import magic.model.action.MagicSetKickerAction;
 
 public class MagicKickerCost extends MagicAdditionalCost implements MagicEventAction {
-    
+
     final MagicManaCost manaCost;
     final String name;
-    
+
     private MagicKickerCost(final MagicManaCost aManaCost, final String aName) {
         manaCost = aManaCost;
         name = aName;
     }
-    
+
     public MagicKickerCost(final MagicManaCost aManaCost) {
         this(aManaCost, "kicker");
     }
-    
+
     public static MagicKickerCost Buyback(final MagicManaCost aManaCost) {
         return new MagicKickerCost(aManaCost, "buyback");
     }
-    
+
     public MagicEvent getEvent(final MagicSource source) {
         return new MagicEvent(
             source,
@@ -36,7 +36,7 @@ public class MagicKickerCost extends MagicAdditionalCost implements MagicEventAc
             "PN may$ pay " + manaCost.getText() + "$."
         );
     }
-        
+
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         if (event.isYes()) {

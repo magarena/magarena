@@ -6,7 +6,7 @@ import magic.model.stack.MagicItemOnStack;
 public class MagicStackResolveAction extends MagicAction {
 
     private MagicItemOnStack itemOnStack;
-    
+
     @Override
     public void doAction(final MagicGame game) {
         itemOnStack=game.getStack().removeFromTop();

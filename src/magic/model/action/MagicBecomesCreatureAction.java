@@ -10,12 +10,12 @@ public class MagicBecomesCreatureAction extends MagicAction {
     private final MagicPermanent permanent;
     private final MagicStatic[] mstatics;
     private boolean oldState;
-    
+
     public MagicBecomesCreatureAction(final MagicPermanent aPermanent,final MagicStatic... aMstatics) {
         permanent = aPermanent;
         mstatics = aMstatics;
     }
-    
+
     @Override
     public void doAction(final MagicGame game) {
         oldState = permanent.hasState(MagicPermanentState.Animated);

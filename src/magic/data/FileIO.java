@@ -31,7 +31,7 @@ public class FileIO {
             close(stream);
         }
     }
-    
+
     private static String toStr(final BufferedReader input) throws IOException {
         final StringBuilder contents = new StringBuilder();
         try {
@@ -55,7 +55,7 @@ public class FileIO {
     public static String toStr(final File aFile) throws IOException {
         return toStr(new FileInputStream(aFile));
     }
-    
+
     static String toStr(final InputStream ins) throws IOException {
         return toStr(new BufferedReader(new InputStreamReader(ins)));
     }
@@ -66,10 +66,10 @@ public class FileIO {
             properties = toProp(new FileInputStream(aFile));
         } catch (final IOException ex) {
             System.err.println("ERROR! Unable to load from " + aFile + ", " + ex.getMessage());
-        } 
+        }
         return properties;
     }
-    
+
     public static Properties toProp(final InputStream ins) {
         final Properties properties = new Properties();
         try {
@@ -84,7 +84,7 @@ public class FileIO {
 
     public static BufferedImage toImg(final File input, final BufferedImage def) {
         BufferedImage img = def;
-        
+
         try {
             img = ImageIO.read(input);
         } catch (final IOException ex) {
@@ -92,16 +92,16 @@ public class FileIO {
         } catch (final IllegalArgumentException ex) {
             System.err.println("ERROR! Unable to read from null");
         }
-       
+
         // no registered ImageReader able to read the file, likely file is corrupted
         if (img == null) {
             img = def;
             input.delete();
         }
-        
+
         return img;
     }
-    
+
     static BufferedImage toImg(final URL input, final BufferedImage def) {
         BufferedImage img = def;
         try {
@@ -113,7 +113,7 @@ public class FileIO {
         }
         return img;
     }
-    
+
     public static BufferedImage toImg(final InputStream input, final BufferedImage def) {
         BufferedImage img = def;
         try {
@@ -127,7 +127,7 @@ public class FileIO {
         }
         return img;
     }
-    
+
     public static void toFile(final File aFile, final String aContents, final boolean append) throws IOException {
         Writer output = null;
         try {
@@ -137,10 +137,10 @@ public class FileIO {
             close(output);
         }
     }
-    
+
     public static void toFile(
-            final File aFile, 
-            final Properties properties, 
+            final File aFile,
+            final Properties properties,
             final String name) throws IOException {
         FileOutputStream fos = null;
         try {
@@ -199,4 +199,4 @@ public class FileIO {
             }
         }
     }
-} 
+}

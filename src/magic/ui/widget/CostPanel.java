@@ -13,34 +13,34 @@ import java.util.List;
 public class CostPanel extends JPanel {
 
     private static final long serialVersionUID = 1L;
-    
+
     private static final Dimension MANA_ICON_SIZE = new Dimension(17,17);
 
     public CostPanel(final MagicManaCost cost) {
 
         setOpaque(false);
         setLayout(new BorderLayout());
-        
+
         if(cost == null) {
             return;
         }
-        
+
         final JPanel centerPanel=new JPanel();
         centerPanel.setOpaque(false);
-        
+
         final SpringLayout springLayout = new SpringLayout();
         centerPanel.setLayout(springLayout);
-        
+
         final List<ImageIcon> icons = cost.getIcons();
-        
+
         final JLabel[] manaLabels=new JLabel[icons.size()];
         for (int i=0;i<manaLabels.length;i++) {
-            
+
             manaLabels[i]=new JLabel();
             manaLabels[i].setPreferredSize(MANA_ICON_SIZE);
             manaLabels[i].setMaximumSize(MANA_ICON_SIZE);
             manaLabels[i].setHorizontalAlignment(JLabel.CENTER);
-            
+
             if(i > 0) {
                 // previous (left) mana touches current one
                 springLayout.putConstraint(SpringLayout.EAST, manaLabels[i-1],
@@ -51,9 +51,9 @@ public class CostPanel extends JPanel {
                 springLayout.putConstraint(SpringLayout.EAST, manaLabels[i],
                              0, SpringLayout.EAST, centerPanel);
             }
-            
+
             centerPanel.add(manaLabels[i]);
-        }            
+        }
         int index=0;
         for (final ImageIcon icon : icons) {
             manaLabels[index++].setIcon(icon);

@@ -6,33 +6,33 @@ import java.util.Comparator;
 public class MagicCondensedCardDefinition {
     private int copies;
     private final MagicCardDefinition card;
-    
+
     public MagicCondensedCardDefinition(final MagicCardDefinition card) {
         this.card = card;
         copies = 1;
     }
-    
+
     public MagicCardDefinition getCard() {
         return card;
     }
-    
+
     public void incrementNumCopies() {
         copies++;
     }
-    
+
     public void decrementNumCopies() {
         if (copies > 0) {
             copies--;
         }
     }
-    
+
     public void setNumCopies(final int i) {
         copies = i;
     }
-    
+
     public int getNumCopies() {
         return copies;
-    }    
+    }
 
     public static final Comparator<MagicCondensedCardDefinition> NUM_COPIES_COMPARATOR_DESC=new Comparator<MagicCondensedCardDefinition>() {
         @Override
@@ -47,7 +47,7 @@ public class MagicCondensedCardDefinition {
             return MagicCondensedCardDefinition.NUM_COPIES_COMPARATOR_DESC.compare(cardDefinition2, cardDefinition1);
         }
     };
-    
+
     public static final Comparator<MagicCondensedCardDefinition> NAME_COMPARATOR_DESC=new Comparator<MagicCondensedCardDefinition>() {
         @Override
         public int compare(final MagicCondensedCardDefinition cardDefinition1,final MagicCondensedCardDefinition cardDefinition2) {
@@ -61,14 +61,14 @@ public class MagicCondensedCardDefinition {
             return MagicCardDefinition.NAME_COMPARATOR_ASC.compare(cardDefinition1.getCard(), cardDefinition2.getCard());
         }
     };
-    
+
     public static final Comparator<MagicCondensedCardDefinition> CONVERTED_COMPARATOR_DESC=new Comparator<MagicCondensedCardDefinition>() {
         @Override
         public int compare(final MagicCondensedCardDefinition cardDefinition1,final MagicCondensedCardDefinition cardDefinition2) {
             return MagicCardDefinition.CONVERTED_COMPARATOR_DESC.compare(cardDefinition1.getCard(), cardDefinition2.getCard());
         }
     };
-    
+
     public static final Comparator<MagicCondensedCardDefinition> CONVERTED_COMPARATOR_ASC=new Comparator<MagicCondensedCardDefinition>() {
         @Override
         public int compare(final MagicCondensedCardDefinition cardDefinition1,final MagicCondensedCardDefinition cardDefinition2) {

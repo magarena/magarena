@@ -13,7 +13,7 @@ public class MagicSpecterTrigger extends MagicWhenDamageIsDealtTrigger {
     private final boolean combat;
     private final boolean opponent;
     private final boolean random;
-    
+
     public MagicSpecterTrigger(final boolean combat,final boolean opponent,final boolean random) {
         this.combat = combat;
         this.opponent = opponent;
@@ -23,8 +23,8 @@ public class MagicSpecterTrigger extends MagicWhenDamageIsDealtTrigger {
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
         final MagicTarget target = damage.getTarget();
-        return (damage.getSource() == permanent && 
-                target.isPlayer() && 
+        return (damage.getSource() == permanent &&
+                target.isPlayer() &&
                 ((MagicPlayer)target).getHandSize() > 0 &&
                 (!opponent || target != permanent.getController()) &&
                 (!combat || damage.isCombat())) ?

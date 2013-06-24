@@ -9,11 +9,11 @@ public class MagicCleanupPermanentAction extends MagicAction {
     private final MagicPermanent permanent;
     private int oldAbilityPlayedThisTurn;
     private int oldStateFlags;
-    
+
     MagicCleanupPermanentAction(final MagicPermanent permanent) {
         this.permanent=permanent;
     }
-    
+
     @Override
     public void doAction(final MagicGame game) {
         oldAbilityPlayedThisTurn=permanent.getAbilityPlayedThisTurn();
@@ -25,6 +25,6 @@ public class MagicCleanupPermanentAction extends MagicAction {
     @Override
     public void undoAction(final MagicGame game) {
         permanent.setAbilityPlayedThisTurn(oldAbilityPlayedThisTurn);
-        permanent.setStateFlags(oldStateFlags);        
+        permanent.setStateFlags(oldStateFlags);
     }
 }

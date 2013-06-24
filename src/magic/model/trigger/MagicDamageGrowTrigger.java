@@ -11,7 +11,7 @@ public class MagicDamageGrowTrigger extends MagicWhenDamageIsDealtTrigger {
 
     private final boolean combat;
     private final boolean player;
-    
+
     public MagicDamageGrowTrigger(final boolean combat,final boolean player) {
         this.combat = combat;
         this.player = player;

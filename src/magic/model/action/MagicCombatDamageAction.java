@@ -17,14 +17,14 @@ import java.util.Collection;
  * - when the attacker has deathtouch, lethal damage for each blocker is 1.
  */
 public class MagicCombatDamageAction extends MagicAction {
-    
+
     private final MagicPlayer attackingPlayer;
     private final MagicPlayer defendingPlayer;
     private final boolean first;
-    
+
     public MagicCombatDamageAction(
             final MagicPlayer attackingPlayer,
-            final MagicPlayer defendingPlayer, 
+            final MagicPlayer defendingPlayer,
             final boolean first) {
         this.attackingPlayer=attackingPlayer;
         this.defendingPlayer=defendingPlayer;
@@ -32,14 +32,14 @@ public class MagicCombatDamageAction extends MagicAction {
     }
 
     private boolean dealsCombatDamage(final MagicPermanent blocker) {
-        return first ? 
-            blocker.hasAbility(MagicAbility.FirstStrike) || 
-            blocker.hasAbility(MagicAbility.DoubleStrike) 
+        return first ?
+            blocker.hasAbility(MagicAbility.FirstStrike) ||
+            blocker.hasAbility(MagicAbility.DoubleStrike)
             :
-            !blocker.hasAbility(MagicAbility.FirstStrike) || 
+            !blocker.hasAbility(MagicAbility.FirstStrike) ||
             blocker.hasAbility(MagicAbility.DoubleStrike);
     }
-    
+
     private void combatDamage(
             final MagicGame game,
             final MagicPlayer aAttackingPlayer,
@@ -49,7 +49,7 @@ public class MagicCombatDamageAction extends MagicAction {
 
         // Determine all combat damage that must be dealt.
         for (final MagicPermanent attacker : aAttackingPlayer.getPermanents()) {
-            
+
             if (attacker.isAttacking()) {
                 // Let blockers deal damage first.
                 for (final MagicPermanent blocker : attacker.getBlockingCreatures()) {
@@ -75,13 +75,13 @@ public class MagicCombatDamageAction extends MagicAction {
                             final MagicPermanentList blockers=attacker.getBlockingCreatures();
                             final int[] attackerDamage=new int[blockers.size()];
                             for (int index=0;power>0&&index<attackerDamage.length;index++) {
-                                
+
                                 final MagicPermanent blocker=blockers.get(index);
                                 final int toughness=blocker.getToughness();
                                 attackerDamage[index]=Math.min(deathtouch?1:power,blocker.getLethalDamage(toughness));
-                                power-=attackerDamage[index];                                
+                                power-=attackerDamage[index];
                             }
-                            
+
                             // Check what to do with the remaining damage from attacker.
                             if (power>0) {
                                 if (attacker.hasAbility(MagicAbility.Trample)) {
@@ -90,10 +90,10 @@ public class MagicCombatDamageAction extends MagicAction {
                                     attackerDamage[0]+=power;
                                 }
                             }
-                            
+
                             // Deal damage from attacker to blockers.
                             for (int index=0;index<attackerDamage.length;index++) {
-    
+
                                 final int amount=attackerDamage[index];
                                 if (amount>0) {
                                     combatDamage.add(MagicDamage.Combat(attacker,blockers.get(index),amount));
@@ -124,6 +124,6 @@ public class MagicCombatDamageAction extends MagicAction {
 
     @Override
     public void undoAction(final MagicGame game) {
-        
+
     }
 }

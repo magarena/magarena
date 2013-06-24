@@ -6,16 +6,16 @@ import magic.model.MagicPlayer;
 
 /** Keeping the player poison counters is done in the marker action. */
 public class MagicChangePoisonAction extends MagicAction {
-    
+
     private final MagicPlayer player;
     private final int amount;
-    
+
     public MagicChangePoisonAction(final MagicPlayer player,final int amount) {
-    
+
         this.player=player;
         this.amount=amount;
     }
-    
+
     @Override
     public void doAction(final MagicGame game) {
 
@@ -30,7 +30,7 @@ public class MagicChangePoisonAction extends MagicAction {
     public void undoAction(final MagicGame game) {
 
     }
-    
+
     @Override
     public String toString() {
 

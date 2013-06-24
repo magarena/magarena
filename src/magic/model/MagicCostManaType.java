@@ -22,18 +22,18 @@ public enum MagicCostManaType {
     RedWhite("red/white","{R/W}",Arrays.asList(MagicManaType.Red,MagicManaType.White)),
     GreenWhite("green/white","{G/W}",Arrays.asList(MagicManaType.Green,MagicManaType.White)),
     GreenBlue("green/blue","{G/U}",Arrays.asList(MagicManaType.Green,MagicManaType.Blue)),
-    White("white","{W}",Arrays.asList(MagicManaType.White)),    
+    White("white","{W}",Arrays.asList(MagicManaType.White)),
     Blue("blue","{U}",Arrays.asList(MagicManaType.Blue)),
     Black("black","{B}",Arrays.asList(MagicManaType.Black)),
     Red("red","{R}",Arrays.asList(MagicManaType.Red)),
     Green("green","{G}",Arrays.asList(MagicManaType.Green)),
     ;
-    
+
     public static final int NR_OF_TYPES=values().length;
     public static final EnumSet<MagicCostManaType> HYBRID = EnumSet.range(WhiteBlue, GreenBlue);
     public static final EnumSet<MagicCostManaType> MONO = EnumSet.range(White, Green);
     public static final EnumSet<MagicCostManaType> NON_MONO = EnumSet.range(Colorless, GreenBlue);
-    
+
     private final String name;
     private final String text;
     private final List<MagicManaType> types;
@@ -43,7 +43,7 @@ public enum MagicCostManaType {
         this.text=text;
         this.types=types;
     }
-    
+
     public MagicCostManaType next() {
         switch (this) {
             case White: return Blue;
@@ -54,7 +54,7 @@ public enum MagicCostManaType {
             default: throw new RuntimeException("No next mana cost type for " + this);
         }
     }
-    
+
     public MagicCostManaType prev() {
         switch (this) {
             case White: return Green;
@@ -65,19 +65,19 @@ public enum MagicCostManaType {
             default: throw new RuntimeException("No next mana cost type for " + this);
         }
     }
-    
+
     public String getName() {
         return name;
     }
-    
+
     public String getText() {
         return text;
     }
-    
+
     public List<MagicManaType> getTypes() {
         return types;
     }
-    
+
     public MagicManaType[] getTypes(final MagicPlayerProfile profile) {
         int count=0;
         final MagicManaType[] profileTypes=new MagicManaType[types.size()];
@@ -88,7 +88,7 @@ public enum MagicCostManaType {
         }
         return Arrays.copyOf(profileTypes,count);
     }
-    
+
     public ImageIcon getIcon() {
         return TextImages.getIcon(text);
     }

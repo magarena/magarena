@@ -5,21 +5,21 @@ import java.util.Arrays;
 import java.util.List;
 
 public class MagicCardList extends ArrayList<MagicCard> {
-    
+
     private static final long serialVersionUID = 1L;
-    
+
     public MagicCardList() {}
-    
+
     public MagicCardList(final MagicCardList cardList) {
         super(cardList);
     }
-    
+
     MagicCardList(final MagicCopyMap copyMap, final MagicCardList cardList) {
         for (final MagicCard card : cardList) {
             add(copyMap.copy(card));
         }
     }
-    
+
     public long getStateId() {
         final long[] keys = new long[size()];
         int idx = 0;
@@ -29,7 +29,7 @@ public class MagicCardList extends ArrayList<MagicCard> {
         }
         return magic.MurmurHash3.hash(keys);
     }
-    
+
     public long getUnorderedStateId() {
         final long[] keys = new long[size()];
         int idx = 0;
@@ -40,33 +40,33 @@ public class MagicCardList extends ArrayList<MagicCard> {
         Arrays.sort(keys);
         return magic.MurmurHash3.hash(keys);
     }
-    
+
     public void addToBottom(final MagicCard card) {
         add(0,card);
     }
-    
+
     public void addToTop(final MagicCard card) {
         add(card);
     }
-    
+
     public MagicCard getCardAtBottom() {
         return get(0);
     }
-    
+
     public MagicCard getCardAtTop() {
         final int size = this.size();
-        return size > 0 ? 
+        return size > 0 ?
                 this.get(size()-1) :
                 MagicCard.NONE;
     }
-    
+
     public MagicCard removeCardAtTop() {
         final int index=size()-1;
         final MagicCard card=get(index);
         remove(index);
         return card;
     }
-    
+
     public int removeCard(final MagicCard card) {
         final int index=indexOf(card);
         if (index >= 0) {
@@ -85,18 +85,18 @@ public class MagicCardList extends ArrayList<MagicCard> {
         }
         return MagicCard.NONE;
     }
-    
+
     public void setCards(final MagicCardList cardList) {
         clear();
         addAll(cardList);
     }
-    
+
     void setKnown(final boolean known) {
         for (final MagicCard card : this) {
             card.setKnown(known);
         }
     }
-    
+
     private int getNrOfLands() {
         int lands=0;
         for (final MagicCard card : this) {
@@ -106,7 +106,7 @@ public class MagicCardList extends ArrayList<MagicCard> {
         }
         return lands;
     }
-    
+
     private boolean useSmartShuffle() {
         final int lands = getNrOfLands();
         final int total = size();
@@ -125,7 +125,7 @@ public class MagicCardList extends ArrayList<MagicCard> {
     public void shuffle() {
         shuffle(getStateId());
     }
-    
+
     public void shuffle(final long seed) {
         final magic.MersenneTwisterFast rng = new magic.MersenneTwisterFast(seed);
         final MagicCardList oldCards = new MagicCardList(this);
@@ -133,11 +133,11 @@ public class MagicCardList extends ArrayList<MagicCard> {
         for (int size = oldCards.size(); size > 0; size--) {
             final int index=rng.nextInt(size);
             final MagicCard card=oldCards.get(index);
-            oldCards.remove(index);            
+            oldCards.remove(index);
             add(card);
         }
     }
-    
+
     private void smartShuffle(final long seed) {
         final magic.MersenneTwisterFast rng = new magic.MersenneTwisterFast(seed);
         final int size=size();
@@ -155,7 +155,7 @@ public class MagicCardList extends ArrayList<MagicCard> {
                 }
             }
         }
-        
+
         clear();
         for (int blocks=size/5;blocks>0;blocks--) {
             int landCount=0;

@@ -11,7 +11,7 @@ import java.util.Collection;
 public class MagicDeclareAttackersResult extends ArrayList<MagicPermanent> implements MagicMappable {
 
     private static final long serialVersionUID = 1L;
-    
+
     MagicDeclareAttackersResult() {}
 
     MagicDeclareAttackersResult(final MagicPermanent[] attackers,final int length) {
@@ -19,7 +19,7 @@ public class MagicDeclareAttackersResult extends ArrayList<MagicPermanent> imple
             add(attackers[index]);
         }
     }
-    
+
     void addCreatures(final Collection<MagicCombatCreature> creatures) {
         for (final MagicCombatCreature creature : creatures) {
             add(creature.permanent);

@@ -12,7 +12,7 @@ public class PlayerAvatar {
     private final ImageIcon largeIcon;
     private final ImageIcon mediumIcon;
     private final ImageIcon smallIcon;
-    
+
     public PlayerAvatar(final BufferedImage image) {
         largeIcon  = new ImageIcon(magic.GraphicsUtilities.scale(
                      image,LARGE_SIZE,LARGE_SIZE));
@@ -21,7 +21,7 @@ public class PlayerAvatar {
         smallIcon  = new ImageIcon(magic.GraphicsUtilities.scale(
                      image,SMALL_SIZE,SMALL_SIZE));
     }
-    
+
     public ImageIcon getIcon(final int size) {
         switch (size) {
             case 1: return smallIcon;

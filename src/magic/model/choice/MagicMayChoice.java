@@ -19,16 +19,16 @@ import java.util.List;
 import java.util.concurrent.Callable;
 
 public class MagicMayChoice extends MagicChoice {
-    
+
     private static final List<Object[]> NO_OTHER_CHOICE_RESULTS=Arrays.asList(
             new Object[]{YES_CHOICE},
             new Object[]{NO_CHOICE});
-    
+
     private final MagicChoice[] choices;
-    private final MagicTargetChoice targetChoice; 
+    private final MagicTargetChoice targetChoice;
     private final int manaChoiceResultIndex;
     private final int targetChoiceResultIndex;
-    
+
     public MagicMayChoice(final String description,final MagicChoice... choices) {
         super(description);
         this.choices=choices;
@@ -50,11 +50,11 @@ public class MagicMayChoice extends MagicChoice {
         targetChoiceResultIndex = localTargetChoiceResultIndex;
         manaChoiceResultIndex = localManaChoiceResultIndex;
     }
-    
+
     public MagicMayChoice(final MagicChoice... choices) {
         this("Proceed with \"may\" action?", choices);
     }
-            
+
     private MagicChoice[] getChoices() {
         return choices;
     }
@@ -63,7 +63,7 @@ public class MagicMayChoice extends MagicChoice {
     public MagicTargetChoice getTargetChoice() {
         return targetChoice;
     }
-    
+
     @Override
     public int getTargetChoiceResultIndex() {
         return targetChoiceResultIndex;
@@ -73,7 +73,7 @@ public class MagicMayChoice extends MagicChoice {
     public int getManaChoiceResultIndex() {
         return manaChoiceResultIndex;
     }
-    
+
     @Override
     Collection<Object> getArtificialOptions(
             final MagicGame game,
@@ -94,22 +94,22 @@ public class MagicMayChoice extends MagicChoice {
         if (nrOfChoices == 0) {
             return NO_OTHER_CHOICE_RESULTS;
         }
-        
+
         final int nrOfChoiceResults=nrOfChoices+1;
         final Object[] noChoiceResults=new Object[nrOfChoiceResults];
         noChoiceResults[0]=NO_CHOICE;
-        
+
         final List<Collection<?>> optionsList=new ArrayList<Collection<?>>(nrOfChoices);
         for (int index=0;index<nrOfChoices;index++) {
             if (!choices[index].hasOptions(game,player,source,true)) {
-                return Collections.singletonList(noChoiceResults);                
-            }            
+                return Collections.singletonList(noChoiceResults);
+            }
             optionsList.add(choices[index].getArtificialOptions(game,event,player,source));
         }
 
         final List<Object[]> choiceResultsList=new ArrayList<Object[]>();
         final Object[] yesChoiceResults=new Object[nrOfChoiceResults];
-        yesChoiceResults[0]=YES_CHOICE;        
+        yesChoiceResults[0]=YES_CHOICE;
 
         int index=0;
         final LinkedList<Iterator<?>> iterators=new LinkedList<Iterator<?>>();
@@ -151,7 +151,7 @@ public class MagicMayChoice extends MagicChoice {
                 return choiceResults;
             }
         }
-        
+
         controller.disableActionButton(false);
         final MayChoicePanel choicePanel = controller.waitForInput(new Callable<MayChoicePanel>() {
             public MayChoicePanel call() {
@@ -161,13 +161,13 @@ public class MagicMayChoice extends MagicChoice {
         if (!choicePanel.isYesClicked()) {
             return choiceResults;
         }
-        
+
         // Yes is chosen.
         choiceResults[0]=YES_CHOICE;
         for (int index=0;index<choices.length;index++) {
             final Object[] partialChoiceResults=choices[index].getPlayerChoiceResults(controller,game,player,source);
             choiceResults[index+1]=partialChoiceResults[0];
-        }        
+        }
         return choiceResults;
     }
 }

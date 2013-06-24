@@ -25,7 +25,7 @@ public class PlayerViewer extends JPanel implements ChoiceViewer {
         Theme.ICON_LIFE,Theme.ICON_PREVENT,Theme.ICON_LAND,
         Theme.ICON_HAND,Theme.ICON_LIBRARY,Theme.ICON_GRAVEYARD
     };
-    
+
     private final ViewerInfo viewerInfo;
     private final GameController controller;
     private final boolean opponent;
@@ -35,17 +35,17 @@ public class PlayerViewer extends JPanel implements ChoiceViewer {
     private final JPanel labelsPanel;
     private final ImageIcon preventIcon;
     private final ImageIcon poisonIcon;
-    
+
     public PlayerViewer(final ViewerInfo viewerInfo,final GameController controller,final boolean opponent) {
-        
+
         this.viewerInfo=viewerInfo;
         this.controller=controller;
         this.opponent=opponent;
-        
+
         controller.registerChoiceViewer(this);
-        
+
         setLayout(new BorderLayout());
-        
+
         avatarButton=new PanelButton() {
 
             private static final long serialVersionUID = 1L;
@@ -67,7 +67,7 @@ public class PlayerViewer extends JPanel implements ChoiceViewer {
         avatarPanel=new PlayerAvatarPanel(0);
         avatarButton.setComponent(avatarPanel);
         add(avatarButton,BorderLayout.WEST);
-        
+
         labelsPanel=new TexturedPanel();
         labelsPanel.setBorder(FontsAndBorders.BLACK_BORDER);
         add(labelsPanel,BorderLayout.CENTER);
@@ -86,11 +86,11 @@ public class PlayerViewer extends JPanel implements ChoiceViewer {
             labels[index].setHorizontalAlignment(JLabel.CENTER);
             labels[index].setIcon(theme.getIcon(ICON_NAMES[index]));
         }
-        
+
         setSmall(false);
         update();
     }
-    
+
     public void setSmall(final boolean small) {
 
         labelsPanel.removeAll();
@@ -101,20 +101,20 @@ public class PlayerViewer extends JPanel implements ChoiceViewer {
         } else {
             labelsPanel.setLayout(new GridLayout(3,2));
         }
-        
+
         for (int index=0;index<labels.length;index++) {
-            
-            labelsPanel.add(labels[index]);            
-        }        
-        
+
+            labelsPanel.add(labels[index]);
+        }
+
         showValidChoices(controller.getValidChoices());
         revalidate();
     }
-    
+
     public void update() {
         final PlayerViewerInfo playerInfo=viewerInfo.getPlayerInfo(opponent);
         avatarPanel.setPlayerDefinition(playerInfo.player.getPlayerDefinition());
-        
+
         labels[0].setText(Integer.toString(playerInfo.life));
         labels[1].setIcon(playerInfo.poison>0?poisonIcon:preventIcon);
         labels[1].setText(playerInfo.poison>0?Integer.toString(playerInfo.poison):Integer.toString(playerInfo.preventDamage));
@@ -122,14 +122,14 @@ public class PlayerViewer extends JPanel implements ChoiceViewer {
         labels[3].setText(Integer.toString(playerInfo.hand.size()));
         labels[4].setText(Integer.toString(playerInfo.library.size()));
         labels[5].setText(Integer.toString(playerInfo.graveyard.size()));
-        
+
         avatarPanel.setSelected(playerInfo.turn);
     }
-    
+
     @Override
     public void showValidChoices(final Set<?> validChoices) {
 
         final MagicPlayer player=viewerInfo.getPlayerInfo(opponent).player;
         avatarButton.setValid(validChoices.contains(player));
-    }    
+    }
 }

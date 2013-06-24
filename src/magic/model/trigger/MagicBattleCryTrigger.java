@@ -15,11 +15,11 @@ public class MagicBattleCryTrigger extends MagicWhenAttacksTrigger {
     private MagicBattleCryTrigger() {
         super(8);
     }
-    
+
     public static MagicBattleCryTrigger create() {
         return INSTANCE;
     }
-    
+
     @Override
     public MagicEvent executeTrigger(
             final MagicGame game,

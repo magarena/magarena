@@ -40,32 +40,32 @@ public class Token_Madness_DeckGenerator extends DefaultDeckGenerator {
         "Sunpetal Grove",
         "Sunpetal Grove"
     };
-    
+
     public Token_Madness_DeckGenerator() {
         super(null);
         setCubeDefinition(CubeDefinitions.getCubeDefinition(getColorText()));
     }
-    
+
     public String getColorText() {
         return colorText;
     }
-    
+
     public int getMinRarity() {
         return 2;
     }
-    
+
     public boolean acceptPossibleSpellCard(final MagicCardDefinition card) {
         return !card.isCreature() || card.hasText("token");
     }
-    
+
     public void addRequiredSpells(final MagicCondensedDeck deck) {
         addRequiredCards(deck, spells);
     }
-    
+
     public void addRequiredLands(final MagicCondensedDeck deck) {
         addRequiredCards(deck, lands);
     }
-    
+
     public void setColors(final MagicPlayerProfile profile) {
         profile.setColors(getColorText());
     }

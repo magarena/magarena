@@ -16,25 +16,25 @@ public enum MagicPhaseType {
     EndOfTurn("End of Turn"),
     Cleanup("Cleanup"),
     ;
-    
+
     private final String name;
-    
+
     private MagicPhaseType(final String name) {
         this.name=name;
     }
-    
+
     public String getName() {
         return name;
     }
 
     public boolean isMain() {
-        return this == FirstMain || 
-               this == SecondMain;    
+        return this == FirstMain ||
+               this == SecondMain;
     }
-    
+
     public boolean isCombat() {
-        return this == BeginOfCombat || 
-               this == DeclareAttackers || 
+        return this == BeginOfCombat ||
+               this == DeclareAttackers ||
                this == DeclareBlockers ||
                this == EndOfCombat;
     }

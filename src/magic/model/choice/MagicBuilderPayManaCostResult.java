@@ -10,7 +10,7 @@ import magic.model.event.MagicSourceManaActivationResult;
 import java.util.Arrays;
 import java.util.List;
 
-public class MagicBuilderPayManaCostResult implements 
+public class MagicBuilderPayManaCostResult implements
     MagicPayManaCostResult, MagicMappable, Comparable<MagicBuilderPayManaCostResult> {
 
     private MagicSourceManaActivationResult[] results;
@@ -19,7 +19,7 @@ public class MagicBuilderPayManaCostResult implements
     private int count;
     private int x;
     private int hashCode;
-    
+
     MagicBuilderPayManaCostResult(final List<MagicSourceManaActivation> sourceActivations) {
         count=0;
         x=0;
@@ -30,17 +30,17 @@ public class MagicBuilderPayManaCostResult implements
                     if (activation.activations[index]!=null) {
                         amountLeft[index]++;
                     }
-                }                
+                }
             } else {
                 count++;
                 weight+=activation.getWeight();
             }
-        }        
+        }
         hashCode=Arrays.hashCode(amountLeft);
     }
-    
+
     private MagicBuilderPayManaCostResult() {}
-    
+
     @Override
     public MagicBuilderPayManaCostResult map(final MagicGame game) {
         final MagicBuilderPayManaCostResult result=new MagicBuilderPayManaCostResult();
@@ -67,16 +67,16 @@ public class MagicBuilderPayManaCostResult implements
             }
         }
     }
-        
+
     int getWeight() {
         return weight;
     }
-    
+
     @Override
     public int getX() {
         return x;
     }
-    
+
     @Override
     public int getConverted() {
         return count;
@@ -85,9 +85,9 @@ public class MagicBuilderPayManaCostResult implements
     public void doAction(final MagicGame game,final MagicPlayer player) {
         for (final MagicSourceManaActivationResult result : results) {
             result.doActivation(game);
-        }        
+        }
     }
-    
+
     public String getText() {
         final StringBuilder builder=new StringBuilder();
         builder.append(count);
@@ -97,7 +97,7 @@ public class MagicBuilderPayManaCostResult implements
         builder.append('-').append(weight);
         return builder.toString();
     }
-    
+
     @Override
     public String toString() {
         return x > 0 ? "X is " + x : "";
@@ -107,7 +107,7 @@ public class MagicBuilderPayManaCostResult implements
     public int hashCode() {
         return hashCode;
     }
-    
+
     @Override
     public boolean equals(final Object obj) {
         if (this==obj) {

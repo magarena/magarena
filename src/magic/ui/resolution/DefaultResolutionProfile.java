@@ -29,7 +29,7 @@ public class DefaultResolutionProfile implements ResolutionProfile {
     private static final int IMAGE_VIEWER_HEIGHT=PLAYER_VIEWER_WIDTH;
     private static final int BUTTON_SIZE=30;
     private static final int BUTTON_Y_SPACING=10;
-    
+
     @Override
     public ResolutionProfileResult calculate(final Dimension size) {
 
@@ -45,7 +45,7 @@ public class DefaultResolutionProfile implements ResolutionProfile {
                 spacing=10;
             }
         }
-        
+
         // Duel
         final int maxHeight=size.height-spacing*2;
         int x=spacing;
@@ -81,7 +81,7 @@ public class DefaultResolutionProfile implements ResolutionProfile {
         y+=DECK_STRENGTH_VIEWER_HEIGHT+spacing;
         result.setBoundary(ResolutionProfileType.DuelDifficultyViewer,
                 new Rectangle(x,y,DUEL_VIEWER_WIDTH,DUEL_VIEWER_HEIGHT));
-                    
+
         // Game
         x=spacing;
         y=spacing;
@@ -92,14 +92,14 @@ public class DefaultResolutionProfile implements ResolutionProfile {
             playerHeight=PLAYER_VIEWER_HEIGHT_SMALL;
         }
         cardHeight-=playerHeight*2;
-       
+
         result.setFlag(ResolutionProfileType.GamePlayerViewerSmall,small);
-        
+
         //opponent viewer
         result.setBoundary(ResolutionProfileType.GameOpponentViewer,
                 new Rectangle(x,y,PLAYER_VIEWER_WIDTH,playerHeight));
         y+=playerHeight+spacing;
-        
+
         //log book, text view button and log book viewer
         //y-=BUTTON_SIZE+BUTTON_Y_SPACING;
         result.setBoundary(ResolutionProfileType.GameLogBookButton,
@@ -110,7 +110,7 @@ public class DefaultResolutionProfile implements ResolutionProfile {
         result.setBoundary(ResolutionProfileType.GameLogBookViewer,
                 new Rectangle(x+BUTTON_SIZE+6,spacing,logWidth,size.height-spacing*2));
         y += BUTTON_SIZE+BUTTON_Y_SPACING;
-        
+
         //image viewer, image stack viewer
         result.setBoundary(ResolutionProfileType.GameImageViewer,
                 new Rectangle(x,y,IMAGE_VIEWER_WIDTH,IMAGE_VIEWER_HEIGHT));
@@ -134,10 +134,10 @@ public class DefaultResolutionProfile implements ResolutionProfile {
                 new Rectangle(x,y,PLAYER_VIEWER_WIDTH,GAME_VIEWER_HEIGHT));
 
         x+=PLAYER_VIEWER_WIDTH+spacing+offset;
-        
+
         int width2=(size.width-PLAYER_VIEWER_WIDTH-spacing*5-offset)/3;
         if (width2<MIN_HAND_VIEWER_WIDTH) {
-            width2=(size.width-PLAYER_VIEWER_WIDTH-spacing*4-offset)/2;            
+            width2=(size.width-PLAYER_VIEWER_WIDTH-spacing*4-offset)/2;
             final int height2=(size.height-spacing*3)/2;
             final int x2=x+width2+spacing;
             y=spacing;
@@ -145,7 +145,7 @@ public class DefaultResolutionProfile implements ResolutionProfile {
                     new Rectangle(x2,y,width2,height2));
             y+=height2+spacing;
             result.setBoundary(ResolutionProfileType.GamePlayerPermanentViewer,
-                    new Rectangle(x2,y,width2,height2));            
+                    new Rectangle(x2,y,width2,height2));
         } else {
             final int height3=size.height-spacing*2;
             int x2=x+width2+spacing;
@@ -156,7 +156,7 @@ public class DefaultResolutionProfile implements ResolutionProfile {
             result.setBoundary(ResolutionProfileType.GameOpponentPermanentViewer,
                     new Rectangle(x2,y,width2,height3));
         }
-        
+
         final int height2=(size.height-spacing*3)/3;
         y=spacing;
         result.setBoundary(ResolutionProfileType.GameStackCombatViewer,new Rectangle(x,y,width2,2*height2));
@@ -167,7 +167,7 @@ public class DefaultResolutionProfile implements ResolutionProfile {
         y=size.height-spacing-IMAGE_HAND_VIEWER_HEIGHT;
         result.setBoundary(ResolutionProfileType.GameImageHandGraveyardViewer,new Rectangle(x,y,width3,IMAGE_HAND_VIEWER_HEIGHT));
         result.setBoundary(ResolutionProfileType.GameZones,new Rectangle(0,0,x-offset,y-offset));
-        
+
         final int height3=size.height-spacing*5-IMAGE_HAND_VIEWER_HEIGHT-offset;
         final int height4=(height3*3)/8;
         final int height5=height3-height4*2;

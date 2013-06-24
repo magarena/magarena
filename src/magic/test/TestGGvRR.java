@@ -7,7 +7,7 @@ import magic.model.MagicPlayerDefinition;
 import magic.model.MagicPlayerProfile;
 import magic.model.phase.MagicMainPhase;
 
-class TestGGvRR extends TestGameBuilder {    
+class TestGGvRR extends TestGameBuilder {
     /**
      * Raging Ravine changed into 3/3 RG creature cannot block Guardian of the
      * Guildpack which has protection from monocolored
@@ -16,18 +16,18 @@ class TestGGvRR extends TestGameBuilder {
     public MagicGame getGame() {
         final MagicDuel duel=new MagicDuel();
         duel.setDifficulty(6);
-        
+
         final MagicPlayerProfile profile=new MagicPlayerProfile("bgruw");
         final MagicPlayerDefinition player1=new MagicPlayerDefinition("Player",false,profile,15);
         final MagicPlayerDefinition player2=new MagicPlayerDefinition("Computer",true,profile,14);
         duel.setPlayers(new MagicPlayerDefinition[]{player1,player2});
         duel.setStartPlayer(0);
-        
+
         final MagicGame game=duel.nextGame(true);
         game.setPhase(MagicMainPhase.getFirstInstance());
         final MagicPlayer player=game.getPlayer(0);
         final MagicPlayer opponent=game.getPlayer(1);
-    
+
         player.setLife(1);
         addToLibrary(player,"Plains",10);
         createPermanent(game,player,"Rupture Spire",false,8);
@@ -37,11 +37,11 @@ class TestGGvRR extends TestGameBuilder {
         createPermanent(game,player,"Naya Hushblade",false,1);
         //createPermanent(game,player,"Godsire",false,1);
         //createPermanent(game,player,"Murderous Redcap",false,1);
-        
+
         opponent.setLife(1);
         addToLibrary(opponent,"Island",10);
         createPermanent(game,opponent,"Guardian of the Guildpact",false,5);
-        
+
         return game;
     }
 }

@@ -26,7 +26,7 @@ public interface GenericListModel<T> extends ListModel
 
     /**
      * Overrides this method in {@code ListModel} to always return an element of type {@code T}.
-     * 
+     *
      * @return
      */
     @Override

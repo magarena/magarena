@@ -12,12 +12,12 @@ public class MagicTapAction extends MagicAction {
     private final MagicPermanent permanent;
     private boolean isUntapped;
     private final boolean hasScore;
-    
+
     public MagicTapAction(final MagicPermanent permanent,final boolean hasScore) {
         this.permanent=permanent;
         this.hasScore=hasScore;
     }
-    
+
     @Override
     public void doAction(final MagicGame game) {
         isUntapped=!permanent.hasState(MagicPermanentState.Tapped);
@@ -37,7 +37,7 @@ public class MagicTapAction extends MagicAction {
             permanent.clearState(MagicPermanentState.Tapped);
         }
     }
-    
+
     @Override
     public String toString() {
         return getClass().getSimpleName()+" ("+permanent.getName()+')';

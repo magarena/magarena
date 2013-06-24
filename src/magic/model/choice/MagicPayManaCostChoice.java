@@ -22,18 +22,18 @@ import java.util.concurrent.Callable;
 
 /** X must be at least one in a mana cost. */
 public class MagicPayManaCostChoice extends MagicChoice {
-    
+
     private final MagicManaCost cost;
-    
+
     public MagicPayManaCostChoice(final MagicManaCost cost) {
         super("Choose how to pay the mana cost.");
         this.cost=cost;
     }
-    
+
     private MagicManaCost getCost() {
         return cost;
     }
-    
+
     @Override
     public int getManaChoiceResultIndex() {
         return 0;
@@ -45,13 +45,13 @@ public class MagicPayManaCostChoice extends MagicChoice {
         cost.addTo(builderCost);
         return new MagicPayManaCostResultBuilder(game,player,builderCost).hasResults();
     }
-            
+
     private Collection<Object> genOptions(final MagicGame game, final MagicPlayer player) {
         return game.getFastChoices() ?
             buildDelayedPayManaCostResults(game,player) :
             new MagicPayManaCostResultBuilder(game,player,cost.getBuilderCost()).getResults();
     }
-    
+
     private Collection<Object> buildDelayedPayManaCostResults(final MagicGame game,final MagicPlayer player) {
         if (cost.hasX()) {
             final int maxX=player.getMaximumX(game,cost);
@@ -76,19 +76,19 @@ public class MagicPayManaCostChoice extends MagicChoice {
             final MagicEvent event,
             final MagicPlayer player,
             final MagicSource source) {
-        
-        final Collection<Object> options = genOptions(game, player); 
 
-        assert !options.isEmpty() : 
-            "No options to pay mana cost\n" + 
+        final Collection<Object> options = genOptions(game, player);
+
+        assert !options.isEmpty() :
+            "No options to pay mana cost\n" +
             "fastChoices = " + game.getFastChoices() + "\n" +
             "source = " + source + "\n" +
             "player = " + player + "\n" +
-            "event = " + event + "\n"; 
+            "event = " + event + "\n";
 
         return options;
     }
-    
+
     @Override
     public Object[] getSimulationChoiceResult(
             final MagicGame game,
@@ -99,7 +99,7 @@ public class MagicPayManaCostChoice extends MagicChoice {
         final List<Object> choices = (List<Object>)buildDelayedPayManaCostResults(game,player);
         return new Object[]{choices.get(MagicRandom.nextInt(choices.size()))};
     }
-    
+
     @Override
     public Object[] getPlayerChoiceResults(
             final GameController controller,
@@ -108,7 +108,7 @@ public class MagicPayManaCostChoice extends MagicChoice {
             final MagicSource source) throws UndoClickedException {
 
         controller.disableActionButton(false);
-        
+
         final int x;
         if (cost.hasX()) {
             final int maximumX=player.getMaximumX(game,cost);
@@ -127,13 +127,13 @@ public class MagicPayManaCostChoice extends MagicChoice {
         builderCost.addTypes(costManaTypes);
         final MagicPayManaCostResultBuilder builder=new MagicPayManaCostResultBuilder(game,player,builderCost);
         final boolean canSkip = MagicGame.canSkipSingleManaChoice();
-        
+
         for (final MagicCostManaType costManaType : costManaTypes) {
             if (canSkip&&builder.useAllManaSources(costManaType)) {
                 controller.update();
                 break;
             }
-            
+
             final int costMinAmount = builderCost.getMinimumAmount();
             final Set<MagicPermanent> validSources=builder.getManaSources(costManaType,!canSkip);
 
@@ -159,9 +159,9 @@ public class MagicPayManaCostChoice extends MagicChoice {
             } else {
                 controller.setValidChoices(validSources,false);
                 controller.showMessage(source,"Choose a mana source to pay "+costManaType.getText()+".");
-                controller.waitForInput(); 
+                controller.waitForInput();
                 controller.clearValidChoices();
-                sourcePermanent = controller.getChoiceClicked();                
+                sourcePermanent = controller.getChoiceClicked();
             }
 
             builder.useManaSource(sourcePermanent,costManaType);

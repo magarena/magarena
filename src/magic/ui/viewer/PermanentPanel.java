@@ -19,10 +19,10 @@ import java.util.SortedSet;
 public class PermanentPanel extends JPanel implements ChoiceViewer {
 
     private static final long serialVersionUID = 1L;
-        
+
     private final PermanentButton button;
     private final List<PermanentButton> linkedButtons;
-    
+
     public PermanentPanel(
             final PermanentViewerInfo permanentInfo,
             final GameController controller,
@@ -31,7 +31,7 @@ public class PermanentPanel extends JPanel implements ChoiceViewer {
 
         setBorder(FontsAndBorders.SMALL_EMPTY_BORDER);
         setLayout(new BorderLayout());
-        
+
         button=new PermanentButton(permanentInfo,controller,border,maxWidth);
         add(button,BorderLayout.NORTH);
 

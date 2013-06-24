@@ -17,7 +17,7 @@ public class MagicReturnExiledUntilThisLeavesPlayAction extends MagicAction {
     private MagicPlayer controller = MagicPlayer.NONE;
     private int action = MagicPlayCardAction.NONE;
     private MagicCardList exiledList;
-    
+
     public MagicReturnExiledUntilThisLeavesPlayAction(
             final MagicPermanent source,
             final MagicLocationType location,
@@ -28,7 +28,7 @@ public class MagicReturnExiledUntilThisLeavesPlayAction extends MagicAction {
         this.controller = controller;
         this.action = action;
     }
-    
+
     public MagicReturnExiledUntilThisLeavesPlayAction(
             final MagicPermanent source,
             final MagicLocationType location,
@@ -37,7 +37,7 @@ public class MagicReturnExiledUntilThisLeavesPlayAction extends MagicAction {
         this.location = location;
         this.controller = controller;
     }
-    
+
     public MagicReturnExiledUntilThisLeavesPlayAction(
             final MagicPermanent source,
             final MagicLocationType location,
@@ -46,14 +46,14 @@ public class MagicReturnExiledUntilThisLeavesPlayAction extends MagicAction {
         this.location = location;
         this.action = action;
     }
-    
+
     public MagicReturnExiledUntilThisLeavesPlayAction(
             final MagicPermanent source,
             final MagicLocationType location) {
         this.source = source;
         this.location = location;
     }
-    
+
     @Override
     public void doAction(final MagicGame game) {
         final MagicCardList cardList = source.getExiledCards();
@@ -64,7 +64,7 @@ public class MagicReturnExiledUntilThisLeavesPlayAction extends MagicAction {
                 if (location == MagicLocationType.Play) {
                     if (card.getCardDefinition().isAura()) {
                         final MagicCardOnStack cardOnStack = new MagicCardOnStack(card,MagicPayedCost.NO_COST);
-                        game.addEvent(new MagicReturnAuraEvent(cardOnStack));    
+                        game.addEvent(new MagicReturnAuraEvent(cardOnStack));
                     } else {
                         final Boolean newOwner = controller != MagicPlayer.NONE;
                         game.doAction(new MagicPlayCardAction(
@@ -74,7 +74,7 @@ public class MagicReturnExiledUntilThisLeavesPlayAction extends MagicAction {
                     }
                 } else {
                     game.doAction(new MagicMoveCardAction(card,MagicLocationType.Exile,location));
-                } 
+                }
             }
         }
         cardList.clear();

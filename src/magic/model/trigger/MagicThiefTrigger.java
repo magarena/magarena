@@ -28,13 +28,13 @@ public class MagicThiefTrigger extends MagicWhenDamageIsDealtTrigger {
     private final Choice choice;
     private final Player player;
     private final int amount = 1;
-    
+
     public MagicThiefTrigger(final Type type,final Choice choice,final Player player) {
         this.type = type;
         this.choice = choice;
         this.player = player;
     }
-    
+
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
         if (damage.getSource() == permanent &&

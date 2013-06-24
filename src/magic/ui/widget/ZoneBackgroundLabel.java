@@ -20,21 +20,21 @@ public class ZoneBackgroundLabel extends JLabel {
     private boolean image=true;
     private int playerX;
     private int handY;
-    
+
     public void setGame(final boolean game) {
         this.game=game;
     }
-    
+
     public void setImage(final boolean image) {
         this.image=image;
     }
-    
+
     public void setZones(final ResolutionProfileResult result) {
         final Rectangle rect=result.getBoundary(ResolutionProfileType.GameZones);
         playerX=rect.width;
         handY=rect.height;
     }
-    
+
     private void paintZoneTile(final Graphics g,final BufferedImage aImage,final Rectangle rect) {
         final int imageWidth=aImage.getWidth();
         final int imageHeight=aImage.getHeight();
@@ -46,7 +46,7 @@ public class ZoneBackgroundLabel extends JLabel {
             }
         }
     }
-    
+
     private void paintZoneStretch(final Graphics g,final BufferedImage aImage,final Rectangle rect) {
         final int iw=aImage.getWidth();
         final int ih=aImage.getHeight();
@@ -55,13 +55,13 @@ public class ZoneBackgroundLabel extends JLabel {
         if (iw2<=iw) {
             imageRect=new Rectangle((iw-iw2)/2,0,iw2,ih);
         } else {
-            final int ih2=iw*rect.height/rect.width;            
+            final int ih2=iw*rect.height/rect.width;
             imageRect=new Rectangle(0,(ih-ih2)/2,iw,ih2);
-        }    
+        }
         g.drawImage(aImage,rect.x,rect.y,rect.x+rect.width,rect.y+rect.height,
                 imageRect.x,imageRect.y,imageRect.x+imageRect.width,imageRect.y+imageRect.height,this);
     }
-    
+
     private void paintZone(final Graphics g,final BufferedImage aImage,final Rectangle rect,final boolean stretch) {
         if (stretch) {
             paintZoneStretch(g,aImage,rect);
@@ -69,19 +69,19 @@ public class ZoneBackgroundLabel extends JLabel {
             paintZoneTile(g,aImage,rect);
         }
     }
-    
+
     @Override
     public void paintComponent(final Graphics g) {
 
         final Dimension size=getSize();
         final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
-        
+
         if (game) {
             final int stretch=theme.getValue(Theme.VALUE_GAME_STRETCH);
             final boolean battlefieldStretch=(stretch&1)==1;
             final boolean playerStretch=(stretch&2)==2;
             final boolean handStretch=(stretch&4)==4;
-    
+
             switch (theme.getValue(Theme.VALUE_GAME_LAYOUT)) {
                 case 1:
                     paintZone(g,theme.getTexture(Theme.TEXTURE_BATTLEFIELD),
@@ -97,7 +97,7 @@ public class ZoneBackgroundLabel extends JLabel {
                         paintZone(g,theme.getTexture(Theme.TEXTURE_PLAYER),
                                 new Rectangle(0,0,playerX,size.height),playerStretch);
                         paintZone(g,theme.getTexture(Theme.TEXTURE_BATTLEFIELD),
-                                new Rectangle(playerX,0,size.width-playerX,size.height),battlefieldStretch);                                                    
+                                new Rectangle(playerX,0,size.width-playerX,size.height),battlefieldStretch);
                     }
                     break;
                 case 3:
@@ -105,22 +105,22 @@ public class ZoneBackgroundLabel extends JLabel {
                             new Rectangle(0,0,playerX,size.height),playerStretch);
                     if (image) {
                         paintZone(g,theme.getTexture(Theme.TEXTURE_BATTLEFIELD),
-                                new Rectangle(playerX,0,size.width-playerX,handY),battlefieldStretch);                
+                                new Rectangle(playerX,0,size.width-playerX,handY),battlefieldStretch);
                         paintZone(g,theme.getTexture(Theme.TEXTURE_HAND),
                                 new Rectangle(playerX,handY,size.width-playerX,handY),handStretch);
                     } else {
                         paintZone(g,theme.getTexture(Theme.TEXTURE_BATTLEFIELD),
-                                new Rectangle(playerX,0,size.width-playerX,size.height),battlefieldStretch);                                
+                                new Rectangle(playerX,0,size.width-playerX,size.height),battlefieldStretch);
                     }
                     break;
-            }        
+            }
             final int border=theme.getValue(Theme.VALUE_GAME_BORDER);
             if (border>0) {
                 final Graphics2D g2d=(Graphics2D)g;
                 g2d.setPaint(theme.getColor(Theme.COLOR_GAME_BORDER));
                 if (image) {
                     g2d.fillRect(playerX,0,border,handY);
-                    g2d.fillRect(playerX,handY,size.width-playerX,border);                
+                    g2d.fillRect(playerX,handY,size.width-playerX,border);
                 } else {
                     g2d.fillRect(playerX,0,border,size.height);
                 }

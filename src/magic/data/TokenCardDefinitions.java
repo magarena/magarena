@@ -13,7 +13,7 @@ public class TokenCardDefinitions {
     public static Collection<MagicCardDefinition> getAll() {
         return tokensMap.values();
     }
-    
+
     public static MagicCardDefinition get(final String name) {
         if (tokensMap.containsKey(name)) {
             return tokensMap.get(name);
@@ -21,7 +21,7 @@ public class TokenCardDefinitions {
             throw new RuntimeException("token " + name + " not found");
         }
     }
-    
+
     public static void add(final MagicCardDefinition token) {
         tokensMap.put(token.getFullName(), token);
     }

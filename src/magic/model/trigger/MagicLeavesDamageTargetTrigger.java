@@ -19,7 +19,7 @@ public class MagicLeavesDamageTargetTrigger extends MagicWhenLeavesPlayTrigger {
         this.n = n;
         this.targetChoice = targetChoice;
     }
-    
+
     private final String genDescription(final MagicTargetChoice targetChoice) {
         String description = "creature or player$.";
         if (targetChoice == MagicTargetChoice.TARGET_CREATURE) {
@@ -30,7 +30,7 @@ public class MagicLeavesDamageTargetTrigger extends MagicWhenLeavesPlayTrigger {
         }
         return description;
     }
-    
+
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent left) {
         return (permanent == left) ?

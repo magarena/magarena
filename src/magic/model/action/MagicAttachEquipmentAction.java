@@ -20,12 +20,12 @@ public class MagicAttachEquipmentAction extends MagicAction {
     private Collection<MagicPermanentStatic> oldStatics = Collections.emptyList();
     private boolean validEquipment;
     private boolean validCreature;
-    
+
     public MagicAttachEquipmentAction(final MagicPermanent equipment,final MagicPermanent creature) {
         this.equipment=equipment;
         this.creature=creature;
     }
-    
+
     @Override
     public void doAction(final MagicGame game) {
         validEquipment=equipment.getController().controlsPermanent(equipment);
@@ -64,7 +64,7 @@ public class MagicAttachEquipmentAction extends MagicAction {
         } else {
             equipment.setEquippedCreature(MagicPermanent.NONE);
         }
-        setScore(equipment.getController(),score);        
+        setScore(equipment.getController(),score);
         game.setStateCheckRequired();
     }
 

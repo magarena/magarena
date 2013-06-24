@@ -7,17 +7,17 @@ import magic.model.MagicPlayerDefinition;
 import magic.model.MagicPlayerProfile;
 import magic.model.phase.MagicMainPhase;
 
-class TestOverload extends TestGameBuilder {    
+class TestOverload extends TestGameBuilder {
     public MagicGame getGame() {
         final MagicDuel duel=new MagicDuel();
         duel.setDifficulty(6);
-        
+
         final MagicPlayerProfile profile=new MagicPlayerProfile("bgruw");
         final MagicPlayerDefinition player1=new MagicPlayerDefinition("Player",false,profile,15);
         final MagicPlayerDefinition player2=new MagicPlayerDefinition("Computer",true,profile,14);
         duel.setPlayers(new MagicPlayerDefinition[]{player1,player2});
         duel.setStartPlayer(0);
-        
+
         final MagicGame game=duel.nextGame(true);
         game.setPhase(MagicMainPhase.getFirstInstance());
         final MagicPlayer player=game.getPlayer(0);
@@ -39,7 +39,7 @@ class TestOverload extends TestGameBuilder {
         addToHand(P, "Vandalblast", 1);
 
         P = opponent;
-        
+
         P.setLife(10);
         addToLibrary(P, "Plains", 10);
         createPermanent(game,P,"Rupture Spire",false,8);
@@ -47,7 +47,7 @@ class TestOverload extends TestGameBuilder {
         addToHand(P, "Downsize", 1);
         addToHand(P, "Dynacharge", 1);
         addToHand(P, "Mizzium Skin", 1);
-        
+
         return game;
     }
 }

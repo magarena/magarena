@@ -20,12 +20,12 @@ public class SoundEffects implements LineListener {
     public static final String TURN_SOUND="turn.au";
     public static final String RESOLVE_SOUND="resolve.au";
     public static final String COMBAT_SOUND="combat.au";
-    
+
     private static final File SOUNDS_PATH=new File(MagicMain.getGamePath(),"sounds");
     private static final SoundEffects INSTANCE=new SoundEffects();
-    
+
     private SoundEffects() {}
-    
+
     public static void playClip(final String name) {
         if (GeneralConfig.getInstance().isSound()) {
             Clip clip = null;
@@ -60,4 +60,4 @@ public class SoundEffects implements LineListener {
             event.getLine().close();
         }
     }
-} 
+}

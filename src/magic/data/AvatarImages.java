@@ -11,12 +11,12 @@ import java.util.Vector;
 public class AvatarImages {
 
     private static final AvatarImages INSTANCE = new AvatarImages();
-    
+
     private final File avatarPath;
     private final Vector<String> names;
     private String current = "";
     private PlayerAvatar[] avatars;
-    
+
     private AvatarImages() {
         avatarPath=new File(MagicMain.getGamePath(),"avatars");
         final File[] files=avatarPath.listFiles();
@@ -29,15 +29,15 @@ public class AvatarImages {
             }
         }
     }
-    
+
     public Vector<String> getNames() {
         return names;
     }
-    
+
     private static PlayerAvatar loadAvatar(final File file) {
         return new PlayerAvatar(FileIO.toImg(file, IconImages.MISSING));
     }
-    
+
     private synchronized void loadAvatars() {
         final String avatar=GeneralConfig.getInstance().getAvatar();
         if (!avatar.equals(current)) {
@@ -48,7 +48,7 @@ public class AvatarImages {
                 avatars=new PlayerAvatar[files.length];
                 for (int index=0;index<files.length;index++) {
                     avatars[index]=loadAvatar(files[index]);
-                }        
+                }
             } else {
                 avatars=new PlayerAvatar[2];
                 avatars[0]=loadAvatar(new File(""));
@@ -56,7 +56,7 @@ public class AvatarImages {
             }
         }
     }
-    
+
     public synchronized ImageIcon getAvatarIcon(int index,final int size) {
         loadAvatars();
         if (index < 0) {
@@ -66,7 +66,7 @@ public class AvatarImages {
         }
         return avatars[index].getIcon(size);
     }
-    
+
     public synchronized int getNumberOfAvatars() {
         loadAvatars();
         return avatars.length;

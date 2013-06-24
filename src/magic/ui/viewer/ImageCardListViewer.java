@@ -37,13 +37,13 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
     private static final int CARD_WIDTH=100;
     private static final int CARD_HEIGHT=140;
     private static final int SPACING=10;
-    
+
     private final GameController controller;
     private MagicCardList cardList;
     private List<Point> cardPoints;
     private Set<?> validChoices;
     private boolean showInfo;
-    
+
     public ImageCardListViewer(final GameController controller) {
         setOpaque(false);
 
@@ -51,9 +51,9 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
         cardList=EMPTY_CARD_LIST;
         cardPoints=new ArrayList<Point>();
         validChoices=Collections.emptySet();
-                
+
         controller.registerChoiceViewer(this);
-        
+
         addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(final MouseEvent event) {
@@ -70,16 +70,16 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
                     else if (event.getClickCount() == 2) {
                         controller.processClick(cardList.get(index));
                         controller.hideInfo();
-                    }    
-                    
+                    }
+
                 }
             }
             @Override
             public void mouseExited(final MouseEvent event) {
                 controller.hideInfo();
-            }            
+            }
         });
-        
+
         addMouseMotionListener(new MouseMotionAdapter() {
             @Override
             public void mouseMoved(final MouseEvent event) {
@@ -97,7 +97,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
             }
         });
     }
-    
+
     private int getCardIndexAt(final int x,final int y) {
         for (int index=cardPoints.size()-1;index>=0;index--) {
             final Point point=cardPoints.get(index);
@@ -107,17 +107,17 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
         }
         return -1;
     }
-        
+
     public void setCardList(final MagicCardList aCardList,final boolean aShowInfo) {
         final List<Point> tCardPoints=new ArrayList<Point>();
         final int size=aCardList.size();
-        final int cardWidth=CARD_WIDTH*size+(size-1)*SPACING;            
+        final int cardWidth=CARD_WIDTH*size+(size-1)*SPACING;
         int width=getWidth();
         if (cardWidth<width||size==1) {
             int x=0;
-            final int step=CARD_WIDTH+SPACING;    
+            final int step=CARD_WIDTH+SPACING;
             for (int index=0;index<size;index++) {
-                
+
                 tCardPoints.add(new Point(x,1));
                 x+=step;
             }
@@ -134,11 +134,11 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
     }
 
     @Override
-    public void paintComponent(final Graphics g) {        
+    public void paintComponent(final Graphics g) {
         if (cardList.isEmpty()) {
             return;
         }
-        
+
         g.setFont(FontsAndBorders.FONT1);
         final FontMetrics metrics=g.getFontMetrics();
         final Graphics2D g2d=(Graphics2D)g;
@@ -168,7 +168,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
                 if (cardDefinition.isCreature()) {
                     ImageDrawingUtils.drawAbilityInfo(g,this,cardDefinition.genAbilityFlags(),x1+2,y2-18);
                     final String pt = card.genPowerToughness().toString();
-                    final int ptWidth=metrics.stringWidth(pt);                
+                    final int ptWidth=metrics.stringWidth(pt);
                     ImageDrawingUtils.drawCreatureInfo(g,metrics,pt,ptWidth,"",x2-ptWidth-4,y2-18,false);
                 }
             }

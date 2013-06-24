@@ -13,19 +13,19 @@ import java.util.List;
 public class MagicExcludeResult implements MagicMappable {
 
     private static final List<MagicPermanent> NO_EXCLUDE_PERMANENTS=Collections.emptyList();
-    
+
     private final List<MagicPermanent> excludePermanents;
     private final int excludeFlags;
-    
+
     MagicExcludeResult(final List<MagicPermanent> excludePermanents,final int excludeFlags) {
         this.excludePermanents=excludePermanents;
         this.excludeFlags=excludeFlags;
     }
-    
+
     MagicExcludeResult() {
         this(NO_EXCLUDE_PERMANENTS,0);
     }
-    
+
     @Override
     public MagicExcludeResult map(final MagicGame game) {
         final List<MagicPermanent> mappedExcludePermanents=new ArrayList<MagicPermanent>();
@@ -34,7 +34,7 @@ public class MagicExcludeResult implements MagicMappable {
         }
         return new MagicExcludeResult(mappedExcludePermanents,excludeFlags);
     }
-    
+
     public void exclude(final MagicGame game) {
         final int size=excludePermanents.size();
         for (int index=0,flag=1;index<size;index++,flag<<=1) {
@@ -49,7 +49,7 @@ public class MagicExcludeResult implements MagicMappable {
             }
         }
     }
-    
+
     @Override
     public String toString() {
         final StringBuilder buffer=new StringBuilder();
@@ -59,7 +59,7 @@ public class MagicExcludeResult implements MagicMappable {
             }
             final boolean combat=(excludeFlags&flag)==0;
             buffer.append(excludePermanents.get(index)).append('=').append(combat?"C":"M");
-        }        
+        }
         return buffer.toString();
     }
 

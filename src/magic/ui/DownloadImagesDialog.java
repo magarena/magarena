@@ -33,7 +33,7 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
     private static final int GAP = 20;
     private static final int RGAP = 10;
     private static final String DOWNLOAD_IMAGES_FILENAME="images.txt";
-    
+
     private final MagicFrame frame;
     private final DownloadMissingFiles files;
     private final JComboBox proxyComboBox;
@@ -55,7 +55,7 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
 
         this.frame = frame;
         this.downloader = new Thread(this);
-    
+
         final SpringLayout springLayout = new SpringLayout();
         this.setLayout(springLayout);
         this.setLocationRelativeTo(frame);
@@ -68,18 +68,18 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
         add(dirLabel);
         springLayout.putConstraint(
                 SpringLayout.NORTH, dirLabel,
-                GAP, 
-                SpringLayout.NORTH, contentPane);  
+                GAP,
+                SpringLayout.NORTH, contentPane);
         springLayout.putConstraint(
                 SpringLayout.WEST, dirLabel,
-                GAP, 
-                SpringLayout.WEST, contentPane);  
-        
+                GAP,
+                SpringLayout.WEST, contentPane);
+
         dirButton = new JButton("Select Magarena data folder");
         dirButton.addActionListener(this);
         final Dimension d = dirButton.getPreferredSize();
         dirButton.setPreferredSize(new Dimension(300, d.height));
-        add(dirButton); 
+        add(dirButton);
         springLayout.putConstraint(
                 SpringLayout.NORTH, dirButton,
                 RGAP,
@@ -88,7 +88,7 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
                 SpringLayout.WEST, dirButton,
                 GAP,
                 SpringLayout.WEST, contentPane);
-      
+
         final JLabel dirStatus = new JLabel("Selected:");
         add(dirStatus);
         springLayout.putConstraint(
@@ -99,7 +99,7 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
                 SpringLayout.WEST, dirStatus,
                 GAP,
                 SpringLayout.WEST, contentPane);
-      
+
 
         dirChosen = new JLabel("None");
         add(dirChosen);
@@ -205,7 +205,7 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
                 SpringLayout.WEST, progressLabel,
                 GAP,
                 SpringLayout.WEST, contentPane);
-        
+
         progressBar=new JProgressBar();
         add(progressBar);
         springLayout.putConstraint(
@@ -220,7 +220,7 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
                 SpringLayout.EAST, progressBar,
                 -GAP,
                 SpringLayout.EAST, contentPane);
-        
+
         downloadLabel=new JLabel();
         downloadLabel.setText("");
         add(downloadLabel);
@@ -233,7 +233,7 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
                 GAP,
                 SpringLayout.WEST, contentPane);
 
-        
+
         cancelButton=new JButton("Cancel");
         cancelButton.setFocusable(false);
         cancelButton.setIcon(IconImages.CANCEL);
@@ -247,7 +247,7 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
                 SpringLayout.EAST, cancelButton,
                 -GAP,
                 SpringLayout.EAST, contentPane);
-        
+
         okButton=new JButton("OK");
         okButton.setFocusable(false);
         okButton.setIcon(IconImages.OK);
@@ -261,7 +261,7 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
                 SpringLayout.EAST, okButton,
                 -RGAP,
                 SpringLayout.WEST, cancelButton);
-        
+
 
         files=new DownloadMissingFiles(DOWNLOAD_IMAGES_FILENAME);
         if (files.isEmpty()) {
@@ -285,11 +285,11 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
                 SpringLayout.SOUTH, contentPane,
                 GAP,
                 SpringLayout.SOUTH, cancelButton);
-    
+
         this.pack();
         this.setVisible(true);
     }
-    
+
     private void updateProxy() {
         final boolean use=proxyComboBox.getSelectedItem()!=Proxy.Type.DIRECT;
         addressTextField.setEnabled(use);
@@ -309,14 +309,14 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
                 progressBar.setMaximum(files.size());
             }
         });
-        
+
         final File[] oldDirs = {
             new File(oldDataFolder, CardDefinitions.CARD_IMAGE_FOLDER),
             new File(oldDataFolder, CardDefinitions.TOKEN_IMAGE_FOLDER),
             new File(oldDataFolder, CardDefinitions.CARD_TEXT_FOLDER),
             new File(oldDataFolder, History.HISTORY_FOLDER)
         };
-        
+
         int count=0;
 
         for (final WebDownloader file : files) {
@@ -338,7 +338,7 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
                     }
                 }
             }
-            
+
             if (!file.exists()) {
                 file.download(proxy);
             }
@@ -348,7 +348,7 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
             if (cancelDownload) {
                 break;
             }
-           
+
             final int fcount = count;
             SwingUtilities.invokeLater(new Runnable() {
                 public void run() {
@@ -357,7 +357,7 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
                 }
             });
         }
-            
+
         // clear images that are set to "missing image" in cache
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
@@ -365,10 +365,10 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
                 frame.updateGameView();
             }
         });
-        
+
         // reload text
         CardDefinitions.loadCardTexts();
-      
+
         if (!cancelDownload) {
             SwingUtilities.invokeLater(new Runnable() {
                 public void run() {
@@ -377,17 +377,17 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
             });
         }
     }
-    
+
     @Override
     public void actionPerformed(final ActionEvent event) {
         final Object source=event.getSource();
         if (source==okButton) {
-            final Proxy.Type proxyType=(Proxy.Type)proxyComboBox.getSelectedItem();            
+            final Proxy.Type proxyType=(Proxy.Type)proxyComboBox.getSelectedItem();
             if (proxyType==Proxy.Type.DIRECT) {
                 proxy=Proxy.NO_PROXY;
             } else {
                 final String address=addressTextField.getText();
-                try { //parse proxy port number    
+                try { //parse proxy port number
                     final int port=Integer.parseInt(portTextField.getText());
                     proxy=new Proxy(proxyType,new InetSocketAddress(address,port));
                 } catch (final NumberFormatException ex) {
@@ -399,7 +399,7 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
             addressTextField.setEnabled(false);
             portTextField.setEnabled(false);
             okButton.setEnabled(false);
-            downloader.start();    
+            downloader.start();
         } else if (source==cancelButton) {
             cancelDownload = true;
             dispose();

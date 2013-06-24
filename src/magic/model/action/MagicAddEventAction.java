@@ -10,7 +10,7 @@ public class MagicAddEventAction extends MagicAction {
     public MagicAddEventAction(final MagicEvent event) {
         this.event=event;
     }
-    
+
     @Override
     public void doAction(final MagicGame game) {
         game.getEvents().addLast(event);
@@ -21,7 +21,7 @@ public class MagicAddEventAction extends MagicAction {
         final MagicEvent lastEvent = game.getEvents().removeLast();
         assert lastEvent == event : "removed event " + lastEvent + " different from added event " + event;
     }
-    
+
     @Override
     public String toString() {
         return super.toString() + " (" + event + ')';

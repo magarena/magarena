@@ -8,15 +8,15 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class MagicCardChoiceResult extends ArrayList<MagicCard> implements MagicMappable {
-        
+
     private static final long serialVersionUID = 1L;
 
     MagicCardChoiceResult(final MagicCard[] cards) {
         addAll(Arrays.asList(cards));
     }
-    
+
     MagicCardChoiceResult() {}
-    
+
     @Override
     public MagicCardChoiceResult map(final MagicGame game) {
         final MagicCardChoiceResult result=new MagicCardChoiceResult();

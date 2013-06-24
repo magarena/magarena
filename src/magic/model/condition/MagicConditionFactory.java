@@ -24,7 +24,7 @@ public class MagicConditionFactory {
             }
         };
     }
-    
+
     public static MagicCondition PlusOneCounterAtLeast(final int n) {
         return new MagicCondition() {
             public boolean accept(final MagicSource source) {
@@ -33,7 +33,7 @@ public class MagicConditionFactory {
             }
         };
     }
-    
+
     public static MagicCondition CounterAtLeast(final MagicCounterType counterType, final int n) {
         return new MagicCondition() {
             public boolean accept(final MagicSource source) {
@@ -46,8 +46,8 @@ public class MagicConditionFactory {
     public static MagicCondition ManaCost(String manaCost) {
         return MagicManaCost.create(manaCost).getCondition();
     }
-    
-    
+
+
     public static MagicCondition HasOptions(final MagicTargetChoice targetChoice) {
         return new MagicCondition() {
             public boolean accept(final MagicSource source) {
@@ -55,7 +55,7 @@ public class MagicConditionFactory {
             }
         };
     }
-    
+
     public static MagicCondition HandAtLeast(final int n) {
         return new MagicCondition() {
             public boolean accept(final MagicSource source) {
@@ -63,7 +63,7 @@ public class MagicConditionFactory {
             }
         };
     }
-    
+
     public static MagicCondition LifeAtLeast(final int n) {
         return new MagicCondition() {
             public boolean accept(final MagicSource source) {

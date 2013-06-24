@@ -14,7 +14,7 @@ public class StackViewerInfo {
     public final ImageIcon icon;
     public final String description;
     public final boolean visible;
-    
+
     public StackViewerInfo(final MagicGame game,final MagicItemOnStack itemOnStack) {
         this.itemOnStack=itemOnStack;
         cardDefinition=itemOnStack.getSource().getCardDefinition();

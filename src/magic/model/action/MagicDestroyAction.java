@@ -10,28 +10,28 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 public class MagicDestroyAction extends MagicAction {
-    
+
     private final Collection<MagicPermanent> targets = new ArrayList<MagicPermanent>();
-    
+
     public MagicDestroyAction(final MagicPermanent permanent) {
         this.targets.add(permanent);
     }
-    
+
     public MagicDestroyAction(final Collection<MagicPermanent> targets) {
         this.targets.addAll(targets);
     }
-    
+
     @Override
     public void doAction(final MagicGame game) {
         final Collection<MagicPermanent> toBeDestroyed = new ArrayList<MagicPermanent>();
         for (final MagicPermanent permanent : targets) {
             boolean destroy = true;
-            
+
             // Indestructible
             if (destroy && permanent.hasAbility(MagicAbility.Indestructible)) {
                 destroy = false;
             }
-            
+
             // Regeneration
             if (destroy && permanent.isRegenerated()) {
                 game.logAppendMessage(permanent.getController(),permanent.getName()+" is regenerated.");
@@ -40,8 +40,8 @@ public class MagicDestroyAction extends MagicAction {
                 game.doAction(new MagicRemoveFromCombatAction(permanent));
                 game.doAction(MagicChangeStateAction.Clear(permanent,MagicPermanentState.Regenerated));
                 destroy = false;
-            } 
-            
+            }
+
             // Totem armor
             if (destroy && permanent.isEnchanted()) {
                 for (final MagicPermanent aura : permanent.getAuraPermanents()) {
@@ -58,17 +58,17 @@ public class MagicDestroyAction extends MagicAction {
                     }
                 }
             }
-            
+
             if (destroy) {
                 toBeDestroyed.add(permanent);
             }
         }
-        
+
         for (final MagicPermanent permanent : toBeDestroyed) {
             // Destroyed
             game.logAppendMessage(permanent.getController(),permanent.getName()+" is destroyed.");
             game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.Graveyard));
-        }  
+        }
     }
 
     @Override

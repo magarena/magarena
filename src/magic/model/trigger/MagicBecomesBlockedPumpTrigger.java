@@ -10,7 +10,7 @@ public class MagicBecomesBlockedPumpTrigger extends MagicWhenBecomesBlockedTrigg
     private final int amountPower;
     private final int amountToughness;
     private final boolean forEachBlocker;
-    
+
     public MagicBecomesBlockedPumpTrigger(
             final int amountPower,
             final int amountToughness,
@@ -34,8 +34,8 @@ public class MagicBecomesBlockedPumpTrigger extends MagicWhenBecomesBlockedTrigg
             return new MagicEvent(
                 permanent,
                 this,
-                "SN gets " + 
-                getString(totalAmountPower) + "/" + getString(totalAmountToughness) + 
+                "SN gets " +
+                getString(totalAmountPower) + "/" + getString(totalAmountToughness) +
                 " until end of turn."
             );
         }
@@ -49,7 +49,7 @@ public class MagicBecomesBlockedPumpTrigger extends MagicWhenBecomesBlockedTrigg
             amountToughness
         ));
     }
-    
+
     private String getString(final int pt) {
         return pt >= 0 ?
                 "+" + pt :

@@ -29,11 +29,11 @@ public class White_Metal_DeckGenerator extends DefaultDeckGenerator {
         "Mox Opal",
         "Leonin Relic-Warder"
     };
-    
+
     private static final String[] lands = {
-        "Inkmoth Nexus", 
-        "Inkmoth Nexus", 
-        "Inkmoth Nexus", 
+        "Inkmoth Nexus",
+        "Inkmoth Nexus",
+        "Inkmoth Nexus",
         "Inkmoth Nexus"
     };
 
@@ -41,31 +41,31 @@ public class White_Metal_DeckGenerator extends DefaultDeckGenerator {
         super(null);
         setCubeDefinition(CubeDefinitions.getCubeDefinition(getColorText()));
     }
-    
+
     public String getColorText() {
         return colorText;
     }
-    
+
     public int getMinRarity() {
         return 2;
     }
-    
+
     public boolean acceptPossibleSpellCard(final MagicCardDefinition card) {
         return !card.isCreature() || card.isArtifact();
     }
-    
+
     public void addRequiredSpells(final MagicCondensedDeck deck) {
         addRequiredCards(deck, spells);
     }
-    
+
     public void addRequiredLands(final MagicCondensedDeck deck) {
         addRequiredCards(deck, lands);
     }
-    
+
     public void setColors(final MagicPlayerProfile profile) {
         profile.setColors(getColorText());
     }
-    
+
     public boolean ignoreMaxColorless() {
         return true;
     }

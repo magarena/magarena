@@ -28,12 +28,12 @@ public class MagicTappedIntoPlayUnlessTwoTrigger extends MagicWhenComesIntoPlayT
             ):
             MagicEvent.NONE;
     }
-    
+
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         game.doAction(new MagicTapAction(event.getPermanent(),false));
     }
-    
+
     @Override
     public boolean usesStack() {
         return false;

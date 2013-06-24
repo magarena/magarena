@@ -27,11 +27,11 @@ package magic;
  * MurmurHash3 implementation in Java, based on Austin Appleby's <a href=
  * "https://code.google.com/p/smhasher/source/browse/trunk/MurmurHash3.cpp"
  * >original in C</a>
- * 
+ *
  * Only implementing x64 version, because this should always be faster on 64 bit
  * native processors, even 64 bit being ran with a 32 bit OS; this should also
  * be as fast or faster than the x86 version on some modern 32 bit processors.
- * 
+ *
  * @author Patrick McFarland
  * @see <a href="http://sites.google.com/site/murmurhash/">MurmurHash website</a>
  * @see <a href="http://en.wikipedia.org/wiki/MurmurHash">MurmurHash entry on Wikipedia</a>
@@ -96,7 +96,7 @@ public class MurmurHash3 {
 
    /**
     * Hash a value using the x64 128 bit variant of MurmurHash3
-    * 
+    *
     * @param key value to hash
     * @param seed random value
     * @return 128 bit hashed key, in an array containing two longs
@@ -159,7 +159,7 @@ public class MurmurHash3 {
 
    /**
     * Hash a value using the x64 64 bit variant of MurmurHash3
-    * 
+    *
     * @param key value to hash
     * @param seed random value
     * @return 64 bit hashed key
@@ -170,7 +170,7 @@ public class MurmurHash3 {
 
    /**
     * Hash a value using the x64 32 bit variant of MurmurHash3
-    * 
+    *
     * @param key value to hash
     * @param seed random value
     * @return 32 bit hashed key
@@ -181,7 +181,7 @@ public class MurmurHash3 {
 
    /**
     * Hash a value using the x64 128 bit variant of MurmurHash3
-    * 
+    *
     * @param key value to hash
     * @param seed random value
     * @return 128 bit hashed key, in an array containing two longs
@@ -225,7 +225,7 @@ public class MurmurHash3 {
 
    /**
     * Hash a value using the x64 64 bit variant of MurmurHash3
-    * 
+    *
     * @param key value to hash
     * @param seed random value
     * @return 64 bit hashed key
@@ -236,7 +236,7 @@ public class MurmurHash3 {
 
    /**
     * Hash a value using the x64 32 bit variant of MurmurHash3
-    * 
+    *
     * @param key value to hash
     * @param seed random value
     * @return 32 bit hashed key

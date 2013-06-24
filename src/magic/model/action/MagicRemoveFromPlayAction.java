@@ -15,7 +15,7 @@ public class MagicRemoveFromPlayAction extends MagicAction {
     private final MagicPermanent permanent;
     private final MagicLocationType toLocation;
     private boolean valid;
-    
+
     public MagicRemoveFromPlayAction(final MagicPermanent permanent,final MagicLocationType toLocation) {
         this.permanent=permanent;
         this.toLocation=toLocation;
@@ -24,17 +24,17 @@ public class MagicRemoveFromPlayAction extends MagicAction {
     public boolean isValid() {
         return valid;
     }
-    
+
     @Override
     public void doAction(final MagicGame game) {
         final MagicPlayer controller=permanent.getController();
-        
+
         // Check if this is still a valid action.
         valid=controller.controlsPermanent(permanent);
         if (!valid) {
             return;
         }
-            
+
         final int score=permanent.getScore()+permanent.getStaticScore();
 
         // Execute trigger here so that full permanent state is preserved.
@@ -44,9 +44,9 @@ public class MagicRemoveFromPlayAction extends MagicAction {
                 game.setCreatureDiedThisTurn(true);
             }
         }
-        
+
         game.executeTrigger(MagicTriggerType.WhenLeavesPlay,permanent);
-        
+
         // Equipment
         if (permanent.getEquippedCreature().isValid()) {
             permanent.getEquippedCreature().removeEquipment(permanent);
@@ -62,7 +62,7 @@ public class MagicRemoveFromPlayAction extends MagicAction {
         for (final MagicPermanent aura : permanent.getAuraPermanents()) {
             aura.setEnchantedCreature(MagicPermanent.NONE);
         }
-        
+
         // Soulbond
         if (permanent.getPairedCreature().isValid()) {
             game.doAction(new MagicSoulbondAction(permanent,permanent.getPairedCreature(),false));
@@ -73,7 +73,7 @@ public class MagicRemoveFromPlayAction extends MagicAction {
         controller.removePermanent(permanent);
 
         setScore(controller,permanent.getStaticScore()-score);
-        
+
         game.doAction(new MagicMoveCardAction(permanent,toLocation));
         game.addDelayedAction(new MagicRemoveTriggersStaticsAction(permanent));
         game.setStateCheckRequired();
@@ -85,9 +85,9 @@ public class MagicRemoveFromPlayAction extends MagicAction {
         if (!valid) {
             return;
         }
-        
+
         permanent.getController().addPermanent(permanent);
-        
+
         // Equipment
         if (permanent.getEquippedCreature().isValid()) {
             permanent.getEquippedCreature().addEquipment(permanent);
@@ -95,7 +95,7 @@ public class MagicRemoveFromPlayAction extends MagicAction {
         for (final MagicPermanent equipment : permanent.getEquipmentPermanents()) {
             equipment.setEquippedCreature(permanent);
         }
-        
+
         // Aura
         if (permanent.getEnchantedCreature().isValid()) {
             permanent.getEnchantedCreature().addAura(permanent);

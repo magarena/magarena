@@ -19,18 +19,18 @@ public class CustomTheme extends AbstractTheme {
     private static final String THEME_PROPERTIES_FILE="theme.properties";
 
     private static final int MAX_AVATARS=100;
-    
+
     private final File file;
     private ZipFile zipFile;
-    private final PlayerAvatar[] playerAvatars;    
+    private final PlayerAvatar[] playerAvatars;
     private int nrOfAvatars;
-    
+
     public CustomTheme(final File file,final String name) {
         super(name);
         this.file=file;
         playerAvatars=new PlayerAvatar[MAX_AVATARS];
     }
-    
+
     @Override
     public int getNumberOfAvatars() {
         if (nrOfAvatars==0) {
@@ -89,7 +89,7 @@ public class CustomTheme extends AbstractTheme {
             addToTheme(key,typeValue);
         }
     }
-    
+
     private InputStream getInputStream(final String filename) {
         try { //get input stream
             if (zipFile!=null) {
@@ -103,12 +103,12 @@ public class CustomTheme extends AbstractTheme {
             return null;
         }
     }
-    
+
     private BufferedImage loadImage(final String filename) {
         final InputStream ins = getInputStream(filename);
         return magic.data.FileIO.toImg(ins, IconImages.MISSING);
     }
-    
+
     @Override
     public void load() {
         if (file.isFile()) {
@@ -120,12 +120,12 @@ public class CustomTheme extends AbstractTheme {
                 System.err.println("ERROR! Unable to create ZipFile from " + file);
             }
         }
-            
+
         final InputStream inputStream=getInputStream(THEME_PROPERTIES_FILE);
         final Properties properties=magic.data.FileIO.toProp(inputStream);
-        
+
         for (final Map.Entry<Object,Object> entry : properties.entrySet()) {
             parseEntry(entry.getKey().toString(),entry.getValue().toString().trim());
-        }                        
-    }    
+        }
+    }
 }

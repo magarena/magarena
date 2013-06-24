@@ -14,11 +14,11 @@ import magic.model.trigger.MagicWhenSpellIsCastTrigger;
 public class MagicPutItemOnStackAction extends MagicAction {
 
     private final MagicItemOnStack itemOnStack;
-    
+
     public MagicPutItemOnStackAction(final MagicItemOnStack itemOnStack) {
         this.itemOnStack=itemOnStack;
     }
-    
+
     @Override
     public void doAction(final MagicGame game) {
         game.getStack().addToTop(itemOnStack);
@@ -36,7 +36,7 @@ public class MagicPutItemOnStackAction extends MagicAction {
     public void undoAction(final MagicGame game) {
         game.getStack().removeFromTop();
     }
-    
+
     @Override
     public String toString() {
         return getClass().getSimpleName()+" ("+itemOnStack.getClass().getSimpleName()+','+itemOnStack.getName()+')';

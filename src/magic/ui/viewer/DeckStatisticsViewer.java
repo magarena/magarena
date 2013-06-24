@@ -24,7 +24,7 @@ import java.util.List;
 public class DeckStatisticsViewer extends JPanel implements ChangeListener {
 
     private static final long serialVersionUID = 1L;
-    
+
     public static final Dimension PREFERRED_SIZE = new Dimension(300, 170);
 
     private final TitleBar titleBar;
@@ -33,18 +33,18 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
     private final List<JLabel> lines;
     private final JLabel[] curveLabels;
     private final Color textColor;
-    
+
     public DeckStatisticsViewer() {
         textColor=ThemeFactory.getInstance().getCurrentTheme().getTextColor();
-        
+
         setPreferredSize(PREFERRED_SIZE);
         setBorder(FontsAndBorders.UP_BORDER);
-        
+
         setLayout(new BorderLayout());
-                
+
         titleBar=new TitleBar("Deck Statistics");
         add(titleBar,BorderLayout.NORTH);
-                
+
         final JPanel mainPanel=new TexturedPanel();
         mainPanel.setLayout(new BorderLayout());
         mainPanel.setBorder(FontsAndBorders.BLACK_BORDER_2);
@@ -53,11 +53,11 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
         topPanel=new JPanel(new FlowLayout(FlowLayout.LEFT,7,5));
         topPanel.setOpaque(false);
         mainPanel.add(topPanel,BorderLayout.NORTH);
-        
+
         linesPanel=new JPanel();
         linesPanel.setOpaque(false);
         mainPanel.add(linesPanel,BorderLayout.CENTER);
-                
+
         final JPanel bottomPanel=new JPanel(new FlowLayout(FlowLayout.LEFT));
         bottomPanel.setOpaque(false);
         mainPanel.add(bottomPanel,BorderLayout.SOUTH);
@@ -73,7 +73,7 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
         curveBottomPanel.setOpaque(false);
         curvePanel.add(curveBottomPanel);
         curveBottomPanel.setBorder(FontsAndBorders.TABLE_BOTTOM_ROW_BORDER);
-        
+
         final Dimension labelSize=new Dimension(25,20);
         for (int index=0;index<CardStatistics.MANA_CURVE_SIZE;index++) {
             final JLabel label=new JLabel(CardStatistics.MANA_CURVE_ICONS.get(index));
@@ -88,10 +88,10 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
             curveLabels[index].setBorder(FontsAndBorders.TABLE_BORDER);
             curveBottomPanel.add(curveLabels[index]);
         }
-        
+
         lines=new ArrayList<JLabel>();
     }
-    
+
     public void setPlayer(final MagicPlayerDefinition player) {
         titleBar.setText("Deck Statistics : "+player.getName());
         final CardStatistics statistics=new CardStatistics(player.getDeck());
@@ -107,15 +107,15 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
             }
         }
         topPanel.revalidate();
-        
+
         lines.clear();
         final JLabel allLabel=new JLabel(
-                "Mono : " + statistics.monoColor + 
-                "  Multi : " + statistics.multiColor + 
+                "Mono : " + statistics.monoColor +
+                "  Multi : " + statistics.multiColor +
                 "  Colorless : "+statistics.colorless);
         allLabel.setForeground(textColor);
         lines.add(allLabel);
-                             
+
         final MagicPlayerProfile profile=player.getProfile();
         for (final MagicColor color : profile.getColors()) {
             final int index=color.ordinal();
@@ -128,21 +128,21 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
                           "  Lands : "+statistics.colorLands[index]);
             lines.add(label);
         }
-        
+
         for (int index=0;index<CardStatistics.MANA_CURVE_SIZE;index++) {
             curveLabels[index].setText(Integer.toString(statistics.manaCurve[index]));
         }
-        
+
         linesPanel.removeAll();
         linesPanel.setLayout(new GridLayout(lines.size(),0));
         for (final JLabel line : lines) {
             line.setPreferredSize(new Dimension(0,25));
             linesPanel.add(line);
-        }        
+        }
         revalidate();
         repaint();
     }
-    
+
     @Override
     public void stateChanged(final ChangeEvent event) {
         setPlayer((MagicPlayerDefinition)event.getSource());

@@ -18,7 +18,7 @@ public class DuelConfig {
     private static final String ANY_THREE="***";
     private static final String ANY_TWO="**";
     private static final String ANY_ONE="*";
-    
+
     private static final String CONFIG_FILENAME="duel.cfg";
     private static final String AVATAR="avatar";
     private static final String NAME="name";
@@ -39,11 +39,11 @@ public class DuelConfig {
     private String opponentColors=ANY_THREE;
     private String cube=CubeDefinitions.DEFAULT_NAME;
     private String ai="minimax";
-    
+
     public DuelConfig() {
-        
+
     }
-    
+
     public DuelConfig(final DuelConfig duelConfig) {
         avatar=duelConfig.avatar;
         startLife=duelConfig.startLife;
@@ -53,7 +53,7 @@ public class DuelConfig {
         opponentColors=duelConfig.opponentColors;
         ai=duelConfig.ai;
     }
-    
+
     public int getAvatar() {
         return avatar;
     }
@@ -61,11 +61,11 @@ public class DuelConfig {
     public void setAvatar(final int avatar) {
         this.avatar = avatar;
     }
-    
+
     public String getName() {
         return name;
     }
-    
+
     public void setName(final String name) {
         this.name=name;
     }
@@ -85,15 +85,15 @@ public class DuelConfig {
     public void setHandSize(final int handSize) {
         this.handSize = handSize;
     }
-    
+
     public void setNrOfGames(final int aGames) {
-        this.games = aGames; 
+        this.games = aGames;
     }
-    
+
     public int getNrOfGames() {
         return games;
     }
-    
+
     private static MagicPlayerProfile getProfile(final String colorText) {
         if (ANY_DECK.equals(colorText)) {
             return new MagicPlayerProfile("");
@@ -109,48 +109,48 @@ public class DuelConfig {
         }
         return new MagicPlayerProfile(colorText);
     }
-    
+
     public String getPlayerColors() {
         return playerColors;
     }
-    
+
     public void setPlayerColors(final String colors) {
         playerColors=colors;
     }
-    
+
     public MagicPlayerProfile getPlayerProfile() {
         return getProfile(playerColors);
     }
-    
+
     public String getOpponentColors() {
         return opponentColors;
     }
-    
+
     public void setOpponentColors(final String colors) {
         opponentColors=colors;
     }
-    
+
     public MagicPlayerProfile getOpponentProfile() {
         return getProfile(opponentColors);
     }
-    
+
     public String getCube() {
         return cube;
     }
-    
+
     public void setCube(final String cube) {
         this.cube=cube;
     }
-    
+
     public MagicAI[] getPlayerAIs() {
         final MagicAI playerAI = MagicAIImpl.getAI(ai).getAI();
         return new MagicAI[]{playerAI, playerAI};
     }
-    
+
     public String getAI() {
         return ai;
     }
-    
+
     public void setAI(final String ai) {
         this.ai=ai;
     }
@@ -166,11 +166,11 @@ public class DuelConfig {
         cube=properties.getProperty(CUBE,cube);
         ai=properties.getProperty(AI,ai);
     }
-    
+
     public void load() {
         load(FileIO.toProp(getConfigFile()));
     }
-    
+
     public void save(final Properties properties) {
         properties.setProperty(AVATAR,Integer.toString(avatar));
         properties.setProperty(NAME,name);
@@ -182,22 +182,22 @@ public class DuelConfig {
         properties.setProperty(CUBE,cube);
         properties.setProperty(AI,ai);
     }
-    
+
     public void save() {
         final Properties properties=new Properties();
         save(properties);
         try { //save config
-            FileIO.toFile(getConfigFile(), properties, "Duel configuration"); 
+            FileIO.toFile(getConfigFile(), properties, "Duel configuration");
             System.err.println("Saved duel config");
         } catch (final IOException ex) {
             System.err.println("ERROR! Unable to save duel config");
         }
     }
-    
+
     private static File getConfigFile() {
         return new File(MagicMain.getGamePath(),CONFIG_FILENAME);
     }
-    
+
     public static DuelConfig getInstance() {
         return INSTANCE;
     }

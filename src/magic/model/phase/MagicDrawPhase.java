@@ -13,7 +13,7 @@ public class MagicDrawPhase extends MagicPhase {
     public MagicDrawPhase() {
         super(MagicPhaseType.Draw);
     }
-    
+
     public static MagicPhase getInstance() {
         return INSTANCE;
     }
@@ -28,11 +28,11 @@ public class MagicDrawPhase extends MagicPhase {
 
         final MagicPlayer player=game.getTurnPlayer();
         game.doAction(new MagicDrawAction(player));
-        
+
         game.executeTrigger(MagicTriggerType.AtDraw,game.getTurnPlayer());
-        
-        game.setStep(game.canSkip() ? 
-            MagicStep.NextPhase : 
+
+        game.setStep(game.canSkip() ?
+            MagicStep.NextPhase :
             MagicStep.ActivePlayer
         );
 

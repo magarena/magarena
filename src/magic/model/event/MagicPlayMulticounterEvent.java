@@ -10,7 +10,7 @@ import magic.model.action.MagicPlayCardFromStackAction;
 import magic.model.choice.MagicKickerChoice;
 import magic.model.stack.MagicCardOnStack;
 
-public class MagicPlayMulticounterEvent extends MagicSpellCardEvent {          
+public class MagicPlayMulticounterEvent extends MagicSpellCardEvent {
 
     final MagicManaCost cost;
 
@@ -24,7 +24,7 @@ public class MagicPlayMulticounterEvent extends MagicSpellCardEvent {
             cardOnStack,
             new MagicKickerChoice(cost),
             this,
-            "$Play SN. SN enters the battlefield " + 
+            "$Play SN. SN enters the battlefield " +
             "with a +1/+1 counter on it for each time it was kicked$"
         );
     }
@@ -33,7 +33,7 @@ public class MagicPlayMulticounterEvent extends MagicSpellCardEvent {
         final MagicCardOnStack cardOnStack = event.getCardOnStack();
         final MagicPlayCardFromStackAction action = new MagicPlayCardFromStackAction(cardOnStack);
         game.doAction(action);
-        
+
         final int kicker = event.getKickerFromChosen();
         if (kicker > 0) {
             final MagicPermanent permanent = action.getPermanent();

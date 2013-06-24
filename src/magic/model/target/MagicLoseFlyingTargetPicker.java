@@ -12,7 +12,7 @@ public class MagicLoseFlyingTargetPicker extends MagicTargetPicker<MagicPermanen
     private static final MagicLoseFlyingTargetPicker INSTANCE = new MagicLoseFlyingTargetPicker();
 
     private MagicLoseFlyingTargetPicker() {}
-    
+
     public static MagicLoseFlyingTargetPicker create() {
         return INSTANCE;
     }
@@ -29,7 +29,7 @@ public class MagicLoseFlyingTargetPicker extends MagicTargetPicker<MagicPermanen
         if (permanent.hasAbility(MagicAbility.Flying)) {
             return 100 + power;
         }
-        
+
         return power;
     }
 }

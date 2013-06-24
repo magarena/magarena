@@ -20,7 +20,7 @@ public class MagicDetainAction extends MagicAction {
 
     private final MagicPermanent permanent;
     private final MagicPlayer sourceController;
-        
+
     private static final MagicStatic S1 = new MagicStatic(MagicLayer.Ability) {
         @Override
         public void modAbilityFlags(
@@ -28,9 +28,9 @@ public class MagicDetainAction extends MagicAction {
                 final MagicPermanent permanent,
                 final Set<MagicAbility> flags) {
             flags.add(MagicAbility.CannotAttackOrBlock);
-        }   
+        }
     };
-        
+
     private static final MagicStatic S2 = new MagicStatic(MagicLayer.Ability) {
         @Override
         public void modAbilityFlags(
@@ -40,12 +40,12 @@ public class MagicDetainAction extends MagicAction {
             flags.add(MagicAbility.CantActivateAbilities);
         }
     };
-        
+
     public MagicDetainAction(final MagicPlayer controller, final MagicPermanent aPermanent) {
         sourceController = controller;
         permanent = aPermanent;
     }
-        
+
     @Override
     public void doAction(final MagicGame game) {
         game.doAction(new MagicAddStaticAction(permanent, S1));

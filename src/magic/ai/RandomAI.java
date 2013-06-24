@@ -11,9 +11,9 @@ import java.util.List;
 
 //AI that plays randomly
 public class RandomAI implements MagicAI {
-    
+
     private final boolean LOGGING;
-   
+
     public RandomAI() {
         this(false);
     }
@@ -21,24 +21,24 @@ public class RandomAI implements MagicAI {
     private RandomAI(final boolean log) {
         LOGGING = log || Boolean.getBoolean("debug");
     }
-    
+
     private void log(final String message) {
         MagicGameLog.log(message);
         if (LOGGING) {
             System.err.println(message);
         }
     }
-    
+
     public Object[] findNextEventChoiceResults(final MagicGame game, final MagicPlayer scorePlayer) {
         //get a list of choices
         MagicGame choiceGame = new MagicGame(game, scorePlayer);
         final MagicEvent event=choiceGame.getNextEvent();
         final List<Object[]> choices=event.getArtificialChoiceResults(choiceGame);
         choiceGame = null;
-        
+
         final int size = choices.size();
         final String info = "RandomAI " + scorePlayer.getIndex() + " (" + scorePlayer.getLife() + ")";
-      
+
         if (size == 0) {
             throw new RuntimeException("No choice results");
         }
@@ -48,17 +48,17 @@ public class RandomAI implements MagicAI {
         for (final Object[] choice : choices) {
             achoices.add(new ArtificialChoiceResults(choice));
         }
-    
+
         // Select a random artificial choice result
         final int idx = MagicRandom.nextInt(size);
         final ArtificialChoiceResults selected=achoices.get(idx);
         if (size >= 2) {
-            log(info); 
+            log(info);
             for (final ArtificialChoiceResults achoice : achoices) {
                 log((achoice==selected?"* ":"  ")+achoice);
             }
         } else {
-            //log(info + " " + selected); 
+            //log(info + " " + selected);
         }
         return game.map(selected.choiceResults);
     }

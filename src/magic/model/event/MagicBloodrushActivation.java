@@ -24,7 +24,7 @@ public abstract class MagicBloodrushActivation extends MagicCardActivation {
         cost = aCost;
         desc = aDesc;
     }
-  
+
     public MagicEvent[] getCostEvent(final MagicCard source) {
         return new MagicEvent[]{
             new MagicPayManaCostEvent(
@@ -48,7 +48,7 @@ public abstract class MagicBloodrushActivation extends MagicCardActivation {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     final MagicAbilityOnStack abilityOnStack = new MagicAbilityOnStack(
                         MagicBloodrushActivation.this,
-                        getCardEvent(event.getCard(), game.getPayedCost()), 
+                        getCardEvent(event.getCard(), game.getPayedCost()),
                         game.getPayedCost()
                     );
                     game.doAction(new MagicPutItemOnStackAction(abilityOnStack));
@@ -57,7 +57,7 @@ public abstract class MagicBloodrushActivation extends MagicCardActivation {
             "Bloodrush."
         );
     }
-    
+
     public MagicEvent getCardEvent(final MagicCard source,final MagicPayedCost payedCost) {
         return new MagicEvent(
             source,

@@ -20,16 +20,16 @@ import java.util.concurrent.Callable;
 public class MagicBuybackChoice extends MagicChoice {
 
     private static final List<Object> NO_OPTIONS_LIST = Collections.singletonList(null);
-    
+
     private final MagicChoice otherChoice;
     private final MagicManaCost cost;
-    
+
     public MagicBuybackChoice(final MagicChoice otherChoice,final MagicManaCost cost) {
         super("");
         this.otherChoice = otherChoice;
         this.cost = cost;
     }
-    
+
     public MagicBuybackChoice(final MagicManaCost cost) {
         this(MagicChoice.NONE, cost);
     }
@@ -40,12 +40,12 @@ public class MagicBuybackChoice extends MagicChoice {
                 (MagicTargetChoice)otherChoice :
                 MagicTargetChoice.NONE;
     }
-    
+
     @Override
     public int getTargetChoiceResultIndex() {
         return (otherChoice instanceof MagicTargetChoice) ? 0 : -1;
     }
-    
+
     @Override
     public int getManaChoiceResultIndex() {
         return 2;
@@ -70,7 +70,7 @@ public class MagicBuybackChoice extends MagicChoice {
         final Collection<?> otherOptions = otherChoice.isValid() ?
             otherChoice.getArtificialOptions(game,event,player,source) :
             NO_OPTIONS_LIST;
-        
+
         final List<Object[]> choiceResultsList = new ArrayList<Object[]>();
         final Object[] choiceResults = new Object[3];
         final Collection<Object> manaOptions;
@@ -88,11 +88,11 @@ public class MagicBuybackChoice extends MagicChoice {
             for (final Object otherOption : otherOptions) {
                 choiceResults[0] = otherOption;
                 choiceResultsList.add(Arrays.copyOf(choiceResults,3));
-            }                
+            }
         }
         return choiceResultsList;
     }
-    
+
     @Override
     public Object[] getPlayerChoiceResults(
             final GameController controller,
@@ -111,11 +111,11 @@ public class MagicBuybackChoice extends MagicChoice {
                     );
                 }
             });
-            isYesClicked = kickerPanel.isYesClicked();                
+            isYesClicked = kickerPanel.isYesClicked();
         }
 
         final Object[] choiceResults = new Object[3];
-        
+
         // Pay buyback cost.
         if (isYesClicked) {
             choiceResults[1] = YES_CHOICE;

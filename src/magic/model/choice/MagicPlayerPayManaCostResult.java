@@ -7,19 +7,19 @@ public class MagicPlayerPayManaCostResult implements MagicPayManaCostResult {
 
     private final int x;
     private final int converted;
-    
+
     MagicPlayerPayManaCostResult(final int x,final int converted) {
 
         this.x=x;
         this.converted=converted;
     }
-    
+
     @Override
     public int getX() {
 
         return x;
     }
-    
+
     @Override
     public int getConverted() {
 
@@ -28,9 +28,9 @@ public class MagicPlayerPayManaCostResult implements MagicPayManaCostResult {
 
     @Override
     public void doAction(final MagicGame game,final MagicPlayer player) {
-        
-    }    
-    
+
+    }
+
     @Override
     public String toString() {
 

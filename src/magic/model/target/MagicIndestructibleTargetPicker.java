@@ -8,9 +8,9 @@ import magic.model.MagicPlayer;
 public class MagicIndestructibleTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
     private static final MagicIndestructibleTargetPicker INSTANCE=new MagicIndestructibleTargetPicker();
-    
+
     private MagicIndestructibleTargetPicker() {}
-    
+
     public static MagicIndestructibleTargetPicker create() {
         return INSTANCE;
     }

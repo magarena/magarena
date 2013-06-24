@@ -9,13 +9,13 @@ import java.util.Collection;
 public class MagicDefaultPermanentPicker extends MagicTargetPicker<MagicPermanent> {
 
     private static final MagicDefaultPermanentPicker INSTANCE = new MagicDefaultPermanentPicker();
-    
+
     private MagicDefaultPermanentPicker() {}
-    
+
     public static MagicDefaultPermanentPicker create() {
         return INSTANCE;
     }
-    
+
     @Override
     protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
         return 0;

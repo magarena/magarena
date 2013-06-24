@@ -12,7 +12,7 @@ import java.util.TreeSet;
 public class CombatViewer extends PermanentsViewer {
 
     private static final long serialVersionUID = 1L;
-        
+
     public CombatViewer(final ViewerInfo viewerInfo,final GameController controller) {
         super(viewerInfo,controller);
         update();
@@ -34,26 +34,26 @@ public class CombatViewer extends PermanentsViewer {
                 creatures.add(permanentInfo);
             }
         }
-        
+
         for (final PermanentViewerInfo permanentInfo : defendingPlayerInfo.permanents) {
             if (permanentInfo.blocking&&permanentInfo.blockingInvalid) {
                 creatures.add(permanentInfo);
             }
         }
-            
+
         final Collection<PermanentViewerInfo> permanents=new ArrayList<PermanentViewerInfo>();
         for (final PermanentViewerInfo creature : creatures) {
             permanents.add(creature);
             permanents.addAll(creature.blockers);
-        }        
+        }
         return permanents;
     }
-    
+
     @Override
     public boolean isSeparated(final PermanentViewerInfo permanentInfo1,final PermanentViewerInfo permanentInfo2) {
         if (permanentInfo2.attacking) {
             return true;
-        } 
+        }
         return permanentInfo2.blockingInvalid;
     }
 

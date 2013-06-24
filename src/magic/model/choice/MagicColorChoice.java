@@ -25,7 +25,7 @@ public class MagicColorChoice extends MagicChoice {
     private static final int MOST=1;
     private static final int UNSUMMON=2;
     private static final int RED_WHITE_BLUE=3;
-    
+
     private static final List<Object> COLOR_OPTIONS=Arrays.<Object>asList(
             MagicColor.White,
             MagicColor.Blue,
@@ -33,25 +33,25 @@ public class MagicColorChoice extends MagicChoice {
             MagicColor.Green,
             MagicColor.Red
         );
-    
+
     private static final List<Object> RED_WHITE_BLUE_OPTIONS=Arrays.<Object>asList(
             MagicColor.Red,
             MagicColor.White,
             MagicColor.Blue
         );
-    
+
     public static final MagicColorChoice ALL_INSTANCE=new MagicColorChoice(ALL);
     public static final MagicColorChoice MOST_INSTANCE=new MagicColorChoice(MOST);
     public static final MagicColorChoice UNSUMMON_INSTANCE=new MagicColorChoice(UNSUMMON);
     public static final MagicColorChoice RED_WHITE_BLUE_INSTANCE=new MagicColorChoice(RED_WHITE_BLUE);
-        
+
     private final int type;
-    
+
     private MagicColorChoice(final int type) {
         super("Choose yes or no.");
         this.type=type;
     }
-    
+
     private static Collection<Object> getArtificialMostOptions(final MagicGame game,final MagicPlayer player) {
         final Collection<MagicPermanent> targets=game.filterPermanents(player,MagicTargetFilter.TARGET_PERMANENT);
         final int[] counts=new int[MagicColor.NR_COLORS];
@@ -66,7 +66,7 @@ public class MagicColorChoice extends MagicChoice {
         int bestCount=Integer.MIN_VALUE;
         MagicColor bestColor=null;
         for (final MagicColor color : MagicColor.values()) {
-            
+
             final int count=counts[color.ordinal()];
             if (count>bestCount) {
                 bestCount=count;
@@ -75,7 +75,7 @@ public class MagicColorChoice extends MagicChoice {
         }
         return Collections.<Object>singletonList(bestColor);
     }
-    
+
     private static Collection<Object> getArtificialUnsummonOptions(final MagicGame game,final MagicPlayer player) {
 
         final Collection<MagicPermanent> targets=game.filterPermanents(player,MagicTargetFilter.TARGET_CREATURE);
@@ -89,13 +89,13 @@ public class MagicColorChoice extends MagicChoice {
                 if (permanent.hasColor(color)) {
                     scores[color.ordinal()]+=score;
                 }
-            }            
+            }
         }
-        
+
         int bestScore=Integer.MIN_VALUE;
         MagicColor bestColor=null;
         for (final MagicColor color : MagicColor.values()) {
-            
+
             final int score=scores[color.ordinal()];
             if (score>bestScore) {
                 bestScore=score;
@@ -104,7 +104,7 @@ public class MagicColorChoice extends MagicChoice {
         }
         return Collections.<Object>singletonList(bestColor);
     }
-    
+
     @Override
     Collection<Object> getArtificialOptions(
             final MagicGame game,
@@ -118,15 +118,15 @@ public class MagicColorChoice extends MagicChoice {
             case RED_WHITE_BLUE: return RED_WHITE_BLUE_OPTIONS;
             default: return COLOR_OPTIONS;
         }
-    }    
-    
+    }
+
     @Override
     public Object[] getPlayerChoiceResults(
             final GameController controller,
             final MagicGame game,
             final MagicPlayer player,
             final MagicSource source) throws UndoClickedException {
-        
+
         controller.disableActionButton(false);
         final ColorChoicePanel choicePanel = controller.waitForInput(new Callable<ColorChoicePanel>() {
             public ColorChoicePanel call() {

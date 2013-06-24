@@ -25,17 +25,17 @@ public class PermanentButton extends PanelButton implements ChoiceViewer {
             final GameController controller,
             final Border border,
             final int maxWidth) {
-        
+
         this.permanentInfo=permanentInfo;
         this.controller=controller;
-        
+
         final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
-        
+
         final JPanel panel=new JPanel();
         panel.setLayout(new BorderLayout(0,2));
         panel.setBorder(border);
         panel.setOpaque(false);
-        
+
         final JPanel topPanel=new JPanel();
         topPanel.setOpaque(false);
         topPanel.setLayout(new BorderLayout());
@@ -45,17 +45,17 @@ public class PermanentButton extends PanelButton implements ChoiceViewer {
         nameLabel.setForeground(theme.getNameColor());
         nameLabel.setIcon(permanentInfo.icon);
         topPanel.add(nameLabel,BorderLayout.CENTER);
-        
+
         final JLabel ptLabel=new JLabel("");
         ptLabel.setForeground(theme.getTextColor());
         if (!permanentInfo.powerToughness.isEmpty()) {
             ptLabel.setText(permanentInfo.powerToughness);
             topPanel.add(ptLabel,BorderLayout.EAST);
         }
-        
+
         final TextLabel textLabel=new TextLabel(permanentInfo.text,maxWidth-6,false);
         panel.add(textLabel,BorderLayout.CENTER);
-                    
+
         setComponent(panel);
         showValidChoices(controller.getValidChoices());
     }
@@ -69,7 +69,7 @@ public class PermanentButton extends PanelButton implements ChoiceViewer {
     public void mouseEntered() {
         controller.viewCard(permanentInfo.cardDefinition,permanentInfo.index);
     }
-    
+
     @Override
     public void showValidChoices(final Set<?> validChoices) {
         setValid(validChoices.contains(permanentInfo.permanent));
@@ -81,6 +81,6 @@ public class PermanentButton extends PanelButton implements ChoiceViewer {
             return ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_COMBAT_CHOICE);
         } else {
             return ThemeFactory.getInstance().getCurrentTheme().getChoiceColor();
-        }        
-    }    
+        }
+    }
 }

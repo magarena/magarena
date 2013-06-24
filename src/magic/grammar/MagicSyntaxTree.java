@@ -24,10 +24,10 @@ class MagicSyntaxTree extends magic.grammar.SemanticsBase {
 
         if (numRule == 0 ||
             lhs().rule().startsWith("Select") ||
-            lhs().rule().endsWith("Number") || 
-            lhs().rule().endsWith("Count") || 
-            lhs().rule().endsWith("Duration") || 
-            lhs().rule().endsWith("Keyword") || 
+            lhs().rule().endsWith("Number") ||
+            lhs().rule().endsWith("Count") ||
+            lhs().rule().endsWith("Duration") ||
+            lhs().rule().endsWith("Keyword") ||
             lhs().rule().equals("ManaCost")) {
             node.clear();
             node.text = lhs().text();

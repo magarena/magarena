@@ -15,20 +15,20 @@ public class MagicRemoveTriggersStaticsAction extends MagicAction {
     private final MagicPermanent permanent;
     private Collection<MagicPermanentTrigger> removedTriggers;
     private Collection<MagicPermanentStatic> removedStatics;
-    
+
     public MagicRemoveTriggersStaticsAction(final MagicPermanent permanent) {
         this.permanent=permanent;
     }
-        
+
     @Override
     public void doAction(final MagicGame game) {
         // Trigger
         removedTriggers = game.removeTriggers(permanent);
-        
+
         // Static
         removedStatics = game.removeStatics(permanent);
     }
-    
+
     @Override
     public void undoAction(final MagicGame game) {
         // Trigger

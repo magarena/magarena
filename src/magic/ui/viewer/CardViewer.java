@@ -31,25 +31,25 @@ public class CardViewer extends JPanel {
     private final boolean image;
     private final boolean opaque;
     private final Timer timer;
-    
+
     public CardViewer(final boolean image,final boolean opaque) {
         this("", image, opaque);
     }
-    
+
     public CardViewer(final String title,final boolean image,final boolean opaque) {
         this.image=image;
         this.opaque=opaque;
-        
+
         this.setLayout(new BorderLayout());
         this.setOpaque(false);
 
         if (!title.isEmpty()) {
             add(new TitleBar(title),BorderLayout.NORTH);
         }
-        
+
         cardPanel=new TransparentImagePanel();
         add(cardPanel,BorderLayout.CENTER);
-        
+
         setCard(MagicCardDefinition.UNKNOWN,0);
 
         timer = new Timer(0, new ActionListener() {
@@ -59,7 +59,7 @@ public class CardViewer extends JPanel {
         });
         timer.setRepeats(false);
     }
-        
+
     public void setCard(final MagicCardDefinition cardDefinition,final int index) {
         if (cardDefinition!=currentCardDefinition||index!=currentIndex) {
             currentCardDefinition=cardDefinition;
@@ -70,7 +70,7 @@ public class CardViewer extends JPanel {
                 if (!opaque) {
                     opacity=ThemeFactory.getInstance().getCurrentTheme().getValue(Theme.VALUE_POPUP_OPACITY)/100.0f;
                 }
-                final BufferedImage sourceImage = 
+                final BufferedImage sourceImage =
                     HighQualityCardImagesProvider.getInstance().getImage(cardDefinition,index,true);
                 final int imageWidth=sourceImage.getWidth(this);
                 final int imageHeight=sourceImage.getHeight(this);
@@ -97,7 +97,7 @@ public class CardViewer extends JPanel {
         timer.setInitialDelay(delay);
         timer.restart();
     }
-    
+
     public void hideDelayed() {
         timer.stop();
         SwingUtilities.invokeLater(new Runnable() {

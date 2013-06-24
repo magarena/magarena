@@ -10,13 +10,13 @@ public class KeywordDefinitions {
     private static final KeywordDefinitions INSTANCE=new KeywordDefinitions();
 
     private static final String KEYWORDS_FILENAME="keywords.txt";
-    
+
     private final List<KeywordDefinition> keywordDefinitions;
-    
+
     private KeywordDefinitions() {
         keywordDefinitions=new ArrayList<KeywordDefinition>();
     }
-    
+
     public void loadKeywordDefinitions() {
         keywordDefinitions.clear();
         String content = null;
@@ -44,15 +44,15 @@ public class KeywordDefinitions {
             }
         }
     }
-    
+
     public List<KeywordDefinition> getKeywordDefinitions() {
         return keywordDefinitions;
     }
-    
+
     public static KeywordDefinitions getInstance() {
         return INSTANCE;
     }
-    
+
     public static class KeywordDefinition {
         public String name;
         public String description="";

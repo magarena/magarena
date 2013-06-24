@@ -11,7 +11,7 @@ import magic.model.target.MagicOtherPermanentTargetFilter;
 import magic.model.target.MagicTargetHint;
 
 public class MagicSoulbondEvent extends MagicEvent {
-    
+
     public MagicSoulbondEvent(final MagicPermanent permanent,final boolean hasSoulbond) {
         super(
             permanent,

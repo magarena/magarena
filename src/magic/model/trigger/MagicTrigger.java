@@ -11,13 +11,13 @@ import magic.model.event.MagicEventAction;
 public abstract class MagicTrigger<T> implements MagicEventAction,MagicChangeCardDefinition {
 
     private static final int DEFAULT_PRIORITY=10;
-    
+
     private final int priority;
 
     protected MagicTrigger(final int priority) {
         this.priority = priority;
     }
-    
+
     protected MagicTrigger() {
         this(DEFAULT_PRIORITY);
     }
@@ -25,7 +25,7 @@ public abstract class MagicTrigger<T> implements MagicEventAction,MagicChangeCar
     public final int getPriority() {
         return priority;
     }
-    
+
     public boolean usesStack() {
         return getType().usesStack();
     }
@@ -34,15 +34,15 @@ public abstract class MagicTrigger<T> implements MagicEventAction,MagicChangeCar
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         throw new RuntimeException(getClass() + " did not override executeEvent");
     }
-    
+
     public abstract MagicTriggerType getType();
-    
+
     public abstract MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final T data);
 
     public boolean accept(final MagicPermanent permanent, final T data) {
         return true;
     }
-    
+
     @Override
     public void change(final MagicCardDefinition cdef) {
         cdef.addTrigger(this);

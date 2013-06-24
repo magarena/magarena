@@ -38,19 +38,19 @@ public class MagicEntersExileCreatureOrSacrificeTrigger extends MagicWhenComesIn
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
         final MagicTargetFilter<MagicPermanent> targetFilter = new MagicPermanentFilterImpl() {
-            public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent creature) {        
+            public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent creature) {
                 boolean hasSubType = subtypes.length == 0;
                 for (final MagicSubType subtype : subtypes) {
                     hasSubType |= creature.hasSubType(subtype);
                 }
-                return hasSubType && 
-                       creature.isCreature() && 
+                return hasSubType &&
+                       creature.isCreature() &&
                        creature.getController() == player &&
                        creature.getId() != permanent.getId();
             }
-            public boolean acceptType(final MagicTargetType targetType) {    
+            public boolean acceptType(final MagicTargetType targetType) {
                 return targetType == MagicTargetType.Permanent;
-            }        
+            }
         };
 
         final MagicTargetChoice targetChoice = new MagicTargetChoice(

@@ -8,7 +8,7 @@ import magic.model.MagicPlayer;
 public class MagicOtherPermanentTargetFilter extends MagicPermanentFilterImpl {
 
     private final MagicPermanentFilterImpl targetFilter;
-    private final long id;        
+    private final long id;
 
     public MagicOtherPermanentTargetFilter(final MagicPermanentFilterImpl targetFilter,final MagicPermanent invalidPermanent) {
         this.targetFilter=targetFilter;
@@ -16,11 +16,11 @@ public class MagicOtherPermanentTargetFilter extends MagicPermanentFilterImpl {
     }
     @Override
     public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-        return targetFilter.accept(game,player,target) && 
+        return targetFilter.accept(game,player,target) &&
                target.getId() != id;
     }
     @Override
     public boolean acceptType(final MagicTargetType targetType) {
         return targetFilter.acceptType(targetType);
-    }        
+    }
 }

@@ -21,7 +21,7 @@ public class MultiKickerChoicePanel extends JPanel implements ActionListener {
     private static final long serialVersionUID = 1L;
 
     private static final Dimension BUTTON_DIMENSION=new Dimension(50,35);
-    
+
     private final GameController controller;
     private final JButton leftButton;
     private final JButton numberButton;
@@ -35,14 +35,14 @@ public class MultiKickerChoicePanel extends JPanel implements ActionListener {
             final MagicManaCost cost,
             final int maximumCount,
             final String name) {
-    
+
         this.controller=controller;
         this.maximumCount=maximumCount;
         count=maximumCount;
-        
+
         setLayout(new BorderLayout());
         setOpaque(false);
-        
+
         final String message = "Choose how many times to pay the " + name + " cost of " + cost.getText() + ".";
         final TextLabel textLabel=new TextLabel(GameController.getMessageWithSource(source,message),GameViewer.TEXT_WIDTH,true);
         add(textLabel,BorderLayout.CENTER);
@@ -57,24 +57,24 @@ public class MultiKickerChoicePanel extends JPanel implements ActionListener {
         leftButton.addActionListener(this);
         leftButton.setFocusable(false);
         buttonPanel.add(leftButton);
-        
+
         numberButton=new JButton(Integer.toString(count));
         numberButton.setPreferredSize(BUTTON_DIMENSION);
         numberButton.addActionListener(this);
         numberButton.setFocusable(false);
         buttonPanel.add(numberButton);
-        
+
         rightButton=new JButton(IconImages.RIGHT);
         rightButton.setPreferredSize(BUTTON_DIMENSION);
         rightButton.addActionListener(this);
         rightButton.setFocusable(false);
         buttonPanel.add(rightButton);
     }
-    
+
     public int getKicker() {
         return count;
     }
-    
+
     @Override
     public void actionPerformed(final ActionEvent event) {
         final Object source=event.getSource();

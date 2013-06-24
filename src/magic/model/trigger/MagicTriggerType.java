@@ -27,7 +27,7 @@ public enum MagicTriggerType {
     IfDamageWouldBeDealt,   // item on stack
     IfPlayerWouldLose,      // player[]
     ;
-    
+
     public boolean usesStack() {
         return this != IfDamageWouldBeDealt;
     }

@@ -25,7 +25,7 @@ public class MagicPayManaCostResultBuilder {
     private int[] amounts;
     private int activationsSize;
     private Map<MagicBuilderPayManaCostResult,MagicBuilderPayManaCostResult> results;
-    
+
     public MagicPayManaCostResultBuilder(final MagicGame game,final MagicPlayer player,final MagicBuilderManaCost cost) {
         this.game=game;
         this.cost=cost;
@@ -34,7 +34,7 @@ public class MagicPayManaCostResultBuilder {
         types=cost.getTypes();
         amounts=cost.getAmounts();
     }
-    
+
     private boolean build(final int index,final boolean single) {
         // Check if valid result is reached.
         if (index==types.length) {
@@ -67,19 +67,19 @@ public class MagicPayManaCostResultBuilder {
         }
 
         final int minAmount=amounts[index];
-        
+
         // Skip when the amount is 0.
         if (minAmount==0) {
             return build(index+1,single);
         }
-        
+
         // Check if there are enough activations for amount > 0.
         if (minAmount>typeActivationSize) {
             return false;
         }
 
         final boolean hasX=costManaType==MagicCostManaType.Colorless&&cost.hasX();
-        
+
         // Fast implementation when minimum amount is 1 without X.
         if (minAmount==1&&!hasX) {
             for (int activationIndex=0;activationIndex<typeActivationSize;activationIndex++) {
@@ -99,7 +99,7 @@ public class MagicPayManaCostResultBuilder {
             for (int activationIndex=0;activationIndex<typeActivationSize;activationIndex++) {
                 final MagicSourceManaActivation typeActivation=typeActivations[activationIndex];
                 typeActivation.available=false;
-                typeActivation.manaType=producedTypes[activationIndex];                
+                typeActivation.manaType=producedTypes[activationIndex];
             }
             if (build(index+1,single)&&single) {
                 return true;
@@ -109,7 +109,7 @@ public class MagicPayManaCostResultBuilder {
             }
             return false;
         }
-        
+
         // Generate all possible combinations with at least the minimum number of sources.
         final int[] optionIndices=new int[typeActivationSize];
         int activationIndex=0;
@@ -130,7 +130,7 @@ public class MagicPayManaCostResultBuilder {
                     }
                     break;
                 case 1:
-                    typeActivations[activationIndex].available=true;    
+                    typeActivations[activationIndex].available=true;
                     count--;
                     if (typeActivationSize-activationIndex+count>minAmount&&activationIndex+1!=typeActivationSize) {
                         activationIndex++;
@@ -142,15 +142,15 @@ public class MagicPayManaCostResultBuilder {
                     break;
             }
         }
-        
+
         return false;
     }
-    
+
     public boolean hasResults() {
         // Check if there are enough mana sources.
         if (cost.getMinimumAmount()>activationsSize) {
             return false;
-        }        
+        }
         return build(0,true);
     }
 
@@ -162,15 +162,15 @@ public class MagicPayManaCostResultBuilder {
         results=new HashMap<MagicBuilderPayManaCostResult,MagicBuilderPayManaCostResult>();
         build(0,false);
         return new TreeSet<Object>(results.values());
-    }    
-    
+    }
+
     /** Find all possible mana sources to pay one mana of given type for the player. */
     Set<MagicPermanent> getManaSources(final MagicCostManaType type,final boolean all) {
         cost.removeType(type,1);
         cost.compress();
         types=cost.getTypes();
         amounts=cost.getAmounts();
-        
+
         final Set<MagicPermanent> manaSources=new HashSet<MagicPermanent>();
         final Set<Integer> manaIds=new HashSet<Integer>();
         for (final MagicSourceManaActivation currentActivation : activations) {
@@ -195,15 +195,15 @@ public class MagicPayManaCostResultBuilder {
         }
         return manaSources;
     }
-    
+
     void useManaSource(final MagicPermanent permanent,final MagicCostManaType type) {
         // Use the mana activation.
         final MagicSourceManaActivation sourceActivation=new MagicSourceManaActivation(game,permanent);
         sourceActivation.produce(game,type);
-        
+
         // Remove permanent for available sources.
         for (final Iterator<MagicSourceManaActivation> iterator=activations.iterator();iterator.hasNext();) {
-            
+
             final MagicSourceManaActivation activation=iterator.next();
             if (activation.permanent==permanent) {
                 iterator.remove();
@@ -212,7 +212,7 @@ public class MagicPayManaCostResultBuilder {
         }
         activationsSize=activations.size();
     }
-    
+
     /** Works only for all the remaining colorless mana. */
     boolean useAllManaSources(final MagicCostManaType type) {
         if (activationsSize>cost.getMinimumAmount()||type!=MagicCostManaType.Colorless) {
@@ -226,7 +226,7 @@ public class MagicPayManaCostResultBuilder {
         }
         return true;
     }
-    
+
     public int getActivationsSize() {
         return activationsSize;
     }

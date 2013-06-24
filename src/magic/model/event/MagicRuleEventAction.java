@@ -88,7 +88,7 @@ public enum MagicRuleEventAction {
         final String targetClause = matcher.group(1);
         return MagicTargetChoice.build(hint + " " + targetClause);
     }
-    
+
     public static MagicRuleEventAction build(final String rule) {
         for (final MagicRuleEventAction ruleAction : MagicRuleEventAction.values()) {
             if (ruleAction.matches(rule)) {

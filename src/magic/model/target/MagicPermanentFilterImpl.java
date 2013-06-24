@@ -23,13 +23,13 @@ public abstract class MagicPermanentFilterImpl implements MagicTargetFilter<Magi
         if (acceptType(MagicTargetType.Permanent)) {
             for (final MagicPlayer controller : game.getPlayers()) {
                 for (final MagicPermanent targetPermanent : controller.getPermanents()) {
-                    if (accept(game,player,targetPermanent) && 
+                    if (accept(game,player,targetPermanent) &&
                         targetHint.accept(player,targetPermanent)) {
                         targets.add(targetPermanent);
                     }
                 }
             }
-        }        
+        }
         return targets;
     }
     public boolean acceptType(final MagicTargetType targetType) {

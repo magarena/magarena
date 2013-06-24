@@ -15,7 +15,7 @@ public class MagicUntapConditionsEvent extends MagicEvent {
 
     private final MagicCondition[] conds;
 
-    public MagicUntapConditionsEvent(final MagicSource source, final MagicPermanentActivation act) { 
+    public MagicUntapConditionsEvent(final MagicSource source, final MagicPermanentActivation act) {
         super(
             source,
             MagicEvent.NO_ACTION,
@@ -26,7 +26,7 @@ public class MagicUntapConditionsEvent extends MagicEvent {
             MagicConditionFactory.SingleActivation(act)
         };
     }
-    
+
     @Override
     public MagicCondition[] getConditions() {
         return conds;

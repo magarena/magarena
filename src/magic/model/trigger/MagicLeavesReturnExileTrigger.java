@@ -16,7 +16,7 @@ public class MagicLeavesReturnExileTrigger extends MagicWhenLeavesPlayTrigger {
     public static final MagicLeavesReturnExileTrigger create() {
         return INSTANCE;
     }
-    
+
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent left) {
         if (permanent == left &&

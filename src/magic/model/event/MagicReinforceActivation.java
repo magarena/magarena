@@ -22,7 +22,7 @@ public class MagicReinforceActivation extends MagicCardActivation {
         cost = aCost;
         amount = n;
     }
-  
+
     public MagicEvent[] getCostEvent(final MagicCard source) {
         return new MagicEvent[]{
             new MagicPayManaCostEvent(
@@ -50,7 +50,7 @@ public class MagicReinforceActivation extends MagicCardActivation {
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         final MagicAbilityOnStack abilityOnStack = new MagicAbilityOnStack(
             this,
-            new MagicPutCounterEvent(event.getSource(), amount),         
+            new MagicPutCounterEvent(event.getSource(), amount),
             game.getPayedCost()
         );
         game.doAction(new MagicPutItemOnStackAction(abilityOnStack));

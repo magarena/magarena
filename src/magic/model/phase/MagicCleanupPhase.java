@@ -13,15 +13,15 @@ import magic.model.event.MagicEvent;
 public class MagicCleanupPhase extends MagicPhase {
 
     private static final MagicPhase INSTANCE=new MagicCleanupPhase();
-    
+
     private MagicCleanupPhase() {
-        super(MagicPhaseType.Cleanup);    
+        super(MagicPhaseType.Cleanup);
     }
-    
+
     public static MagicPhase getInstance() {
         return INSTANCE;
     }
-    
+
     private static void cleanup(final MagicGame game) {
         game.doAction(new MagicCleanupTurnTriggersAction());
         for (final MagicPlayer player : game.getPlayers()) {
@@ -30,7 +30,7 @@ public class MagicCleanupPhase extends MagicPhase {
         game.doAction(new MagicCleanupTurnStaticsAction());
         game.checkState();
     }
-    
+
     private static void nextTurn(final MagicGame game) {
         MagicPlayer turnPlayer=game.getTurnPlayer();
         // discard excess cards
@@ -55,7 +55,7 @@ public class MagicCleanupPhase extends MagicPhase {
         game.setCreatureDiedThisTurn(false);
         game.setSpellsPlayed(0);
     }
-    
+
     @Override
     public void executeBeginStep(final MagicGame game) {
         cleanup(game);

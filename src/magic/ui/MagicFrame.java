@@ -41,9 +41,9 @@ import java.io.IOException;
 import java.util.LinkedList;
 
 public class MagicFrame extends JFrame implements ActionListener {
-    
+
     private static final long serialVersionUID = 1L;
-    
+
     private static final Dimension MIN_SIZE = new Dimension(GeneralConfig.DEFAULT_WIDTH, GeneralConfig.DEFAULT_HEIGHT);
     private static final String NAME = "Magarena";
     private static final String SAVE_DUEL_ITEM = "Save";
@@ -61,13 +61,13 @@ public class MagicFrame extends JFrame implements ActionListener {
     private static final String README_ITEM = "ReadMe";
     private static final String DOCUMENTATION_ITEM = "Documentation";
     private static final String ABOUT_ITEM = "About";
-    //java -DtestGame=X to start with a specific game 
+    //java -DtestGame=X to start with a specific game
     private static final String testGame = System.getProperty("testGame");
     private static final String DOCUMENTATION_URL =
             "http://code.google.com/p/magarena/wiki/AboutMagarena?tm=6";
     // Check if we are on Mac OS X.  This is crucial to loading and using the OSXAdapter class.
     public static final boolean MAC_OS_X = (System.getProperty("os.name").toLowerCase().startsWith("mac os x"));
-    
+
     private final GeneralConfig config;
     private final JPanel contentPanel;
     private JMenuItem newDuelItem;
@@ -82,7 +82,7 @@ public class MagicFrame extends JFrame implements ActionListener {
     private JMenuItem playGameItem;
     private JMenuItem resetGameItem;
     private JMenuItem concedeGameItem;
-    private JMenuItem downloadImagesItem;    
+    private JMenuItem downloadImagesItem;
     private JMenuItem preferencesItem;
     private JMenuItem quitItem;
     private JMenuItem updateItem;
@@ -99,13 +99,13 @@ public class MagicFrame extends JFrame implements ActionListener {
     private GamePanel gamePanel;
     private final LinkedList<JComponent> contents;
     private boolean dontShowAgain = true;
-    
+
     public MagicFrame() {
         this.explorerPanel = null;
-    
+
         config=GeneralConfig.getInstance();
         config.load();
-        
+
         this.setTitle(NAME);
         this.setSize(config.getWidth(),config.getHeight());
         this.setIconImage(IconImages.ARENA.getImage());
@@ -117,13 +117,13 @@ public class MagicFrame extends JFrame implements ActionListener {
         if (config.isMaximized()) {
             this.setExtendedState(JFrame.MAXIMIZED_BOTH);
         }
-        
+
         setMinimumSize(MIN_SIZE);
 
         contentPanel=new JPanel(new BorderLayout());
         contentPanel.setOpaque(true);
         setContentPane(contentPanel);
-        
+
         contents=new LinkedList<JComponent>();
 
         setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
@@ -134,14 +134,14 @@ public class MagicFrame extends JFrame implements ActionListener {
                 onClose();
             }
         });
-        
+
         createMenuBar();
         setInitialContent();
-        setVisible(true);    
-        
+        setVisible(true);
+
         // Set up our application to respond to the Mac OS X application menu
         registerForMacOSXEvents();
-        
+
         //in selfMode start game immediate based on configuration from duel.cfg
         if (Boolean.getBoolean("selfMode")) {
             final DuelConfig config=DuelConfig.getInstance();
@@ -149,7 +149,7 @@ public class MagicFrame extends JFrame implements ActionListener {
             newDuel(config);
         }
     }
-    
+
     private void enableMenuItem(final String item,final boolean enabled) {
         if (SAVE_DUEL_ITEM.equals(item)) {
             saveDuelItem.setEnabled(enabled);
@@ -183,14 +183,14 @@ public class MagicFrame extends JFrame implements ActionListener {
             aboutItem.setEnabled(enabled);
         }
     }
-    
+
     private void setInitialContent() {
-        setContent(new VersionPanel(this));            
+        setContent(new VersionPanel(this));
         if (testGame != null) {
             openGame(TestGameBuilder.buildGame(testGame));
-        } 
+        }
     }
-    
+
     private void showContent(final JComponent content) {
         contentPanel.removeAll();
         //the following statement causes a
@@ -200,12 +200,12 @@ public class MagicFrame extends JFrame implements ActionListener {
         contentPanel.revalidate();
         contentPanel.repaint();
     }
-    
+
     private void addContent(final JComponent content) {
         contents.add(content);
         showContent(content);
     }
-    
+
     private void setContent(final JComponent content) {
         if (duelPanel!=null) {
             duelPanel.haltStrengthViewer();
@@ -229,7 +229,7 @@ public class MagicFrame extends JFrame implements ActionListener {
         enableMenuItem(DOCUMENTATION_ITEM,true);
         enableMenuItem(ABOUT_ITEM,true);
     }
-    
+
     private void closeContent() {
         contents.removeLast();
         showContent(contents.getLast());
@@ -237,15 +237,15 @@ public class MagicFrame extends JFrame implements ActionListener {
             gamePanel.requestFocus();
         }
     }
-        
+
     private void createMenuBar() {
         // arena menu
         final JMenu arenaMenu=new JMenu("Arena");
-        
+
         newDuelItem=new JMenuItem("New duel");
         newDuelItem.addActionListener(this);
         arenaMenu.add(newDuelItem);
-        
+
         loadDuelItem=new JMenuItem("Load duel");
         loadDuelItem.addActionListener(this);
         arenaMenu.add(loadDuelItem);
@@ -253,48 +253,48 @@ public class MagicFrame extends JFrame implements ActionListener {
         saveDuelItem=new JMenuItem("Save duel");
         saveDuelItem.addActionListener(this);
         arenaMenu.add(saveDuelItem);
-        
+
         restartDuelItem=new JMenuItem("Restart duel");
         restartDuelItem.addActionListener(this);
         arenaMenu.add(restartDuelItem);
-        
+
         resetDuelItem=new JMenuItem("Reset duel");
         resetDuelItem.addActionListener(this);
         //arenaMenu.add(resetDuelItem);
-        
+
         arenaMenu.addSeparator();
-                
+
         downloadImagesItem = new JMenuItem("Download images");
         downloadImagesItem.addActionListener(this);
         arenaMenu.add(downloadImagesItem);
-        
+
         preferencesItem=new JMenuItem("Preferences");
         preferencesItem.addActionListener(this);
         arenaMenu.add(preferencesItem);
-        
+
         updateItem=new JMenuItem("Update");
         updateItem.addActionListener(this);
         //arenaMenu.add(updateItem);
-        
+
         quitItem=new JMenuItem("Quit");
         quitItem.addActionListener(this);
         arenaMenu.add(quitItem);
-        
-        // duel menu        
+
+        // duel menu
         final JMenu duelMenu = new JMenu("Duel");
-        
+
         newDeckItem=new JMenuItem("New deck");
         newDeckItem.addActionListener(this);
         duelMenu.add(newDeckItem);
-        
+
         loadDeckItem=new JMenuItem("Load deck");
         loadDeckItem.addActionListener(this);
         duelMenu.add(loadDeckItem);
-        
+
         saveDeckItem=new JMenuItem("Save deck");
         saveDeckItem.addActionListener(this);
         duelMenu.add(saveDeckItem);
-        
+
         swapDecksItem=new JMenuItem("Swap decks");
         swapDecksItem.addActionListener(this);
         duelMenu.add(swapDecksItem);
@@ -304,26 +304,26 @@ public class MagicFrame extends JFrame implements ActionListener {
         playGameItem=new JMenuItem("Start duel");
         playGameItem.addActionListener(this);
         duelMenu.add(playGameItem);
-        
+
         resetGameItem=new JMenuItem("Reset game");
         resetGameItem.addActionListener(this);
         duelMenu.add(resetGameItem);
-        
+
         concedeGameItem=new JMenuItem("Concede game");
         concedeGameItem.addActionListener(this);
         duelMenu.add(concedeGameItem);
-        
-        // view menu        
+
+        // view menu
         final JMenu viewMenu = new JMenu("View");
-        
+
         final ButtonGroup modeGroup = new ButtonGroup();
-        
+
         textModeItem = new JRadioButtonMenuItem("Text Mode");
         textModeItem.setSelected(GeneralConfig.getInstance().getTextView());
         textModeItem.addActionListener(this);
         modeGroup.add(textModeItem);
         viewMenu.add(textModeItem);
-        
+
         imageModeItem = new JRadioButtonMenuItem("Image Mode");
         imageModeItem.setSelected(!GeneralConfig.getInstance().getTextView());
         imageModeItem.addActionListener(this);
@@ -335,26 +335,26 @@ public class MagicFrame extends JFrame implements ActionListener {
         keywordsItem=new JMenuItem("Keywords");
         keywordsItem.addActionListener(this);
         viewMenu.add(keywordsItem);
-        
+
         cardExplorerItem=new JMenuItem("Card Explorer");
         cardExplorerItem.addActionListener(this);
         viewMenu.add(cardExplorerItem);
-        
+
         // help menu
         final JMenu helpMenu=new JMenu("Help");
-        
+
         readMeItem=new JMenuItem("Read Me");
         readMeItem.addActionListener(this);
         helpMenu.add(readMeItem);
-        
+
         documentationItem=new JMenuItem("Online Documentation");
         documentationItem.addActionListener(this);
         helpMenu.add(documentationItem);
-        
+
         aboutItem=new JMenuItem("About Magarena");
         aboutItem.addActionListener(this);
         helpMenu.add(aboutItem);
-        
+
         final JMenuBar menuBar=new JMenuBar();
         menuBar.add(arenaMenu);
         menuBar.add(duelMenu);
@@ -363,7 +363,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 
         this.setJMenuBar(menuBar);
     }
-    
+
     public void showDuel() {
         gamePanel=null;
         if (duel!=null) {
@@ -392,26 +392,26 @@ public class MagicFrame extends JFrame implements ActionListener {
             setContent(new ZoneBackgroundLabel());
         }
     }
-    
+
     public void showDuel(final int tab) {
         showDuel();
         duelPanel.setSelectedTab(tab);
     }
-    
+
     public void showNewDuelDialog() {
         new DuelDialog(this);
     }
-    
+
     public void newDuel(final DuelConfig configuration) {
         duel=new MagicDuel(configuration);
         duel.initialize();
         showDuel();
     }
-    
+
     public void resetDuel() {
         newDuel(DuelConfig.getInstance());
     }
-    
+
     public void loadDuel() {
         final File duelFile=MagicDuel.getDuelFile();
         if (duelFile.exists()) {
@@ -420,20 +420,20 @@ public class MagicFrame extends JFrame implements ActionListener {
             showDuel();
         }
     }
-    
+
     private void saveDuel() {
         if (duel!=null) {
             duel.save(MagicDuel.getDuelFile());
         }
     }
-    
+
     public void restartDuel() {
         if (duel!=null) {
             duel.restart();
             showDuel();
         }
     }
-    
+
     private void newDeck() {
         if (duelPanel!=null) {
             final MagicPlayerDefinition player=duelPanel.getSelectedPlayer();
@@ -444,7 +444,7 @@ public class MagicFrame extends JFrame implements ActionListener {
             }
         }
     }
-    
+
     private void loadDeck() {
         if (duelPanel!=null) {
             final MagicPlayerDefinition player=duelPanel.getSelectedPlayer();
@@ -463,10 +463,10 @@ public class MagicFrame extends JFrame implements ActionListener {
                 if(explorerPanel != null) {
                     explorerPanel.updateDeck();
                 }
-            }            
+            }
         }
     }
-    
+
     private void saveDeck() {
         if (duelPanel!=null) {
             final MagicPlayerDefinition player=duelPanel.getSelectedPlayer();
@@ -494,14 +494,14 @@ public class MagicFrame extends JFrame implements ActionListener {
             }
         }
     }
-    
+
     private void swapDecks() {
         if (duel!=null) {
             duel.restart();
             final MagicPlayerDefinition[] players=duel.getPlayers();
             final MagicPlayerProfile profile1=players[0].getProfile();
             final MagicPlayerProfile profile2=players[1].getProfile();
-            final MagicDeck deck1 = new MagicDeck(players[0].getDeck());            
+            final MagicDeck deck1 = new MagicDeck(players[0].getDeck());
             final MagicDeck deck2 = new MagicDeck(players[1].getDeck());
             players[0].setProfile(profile2);
             players[0].setDeck(deck2);
@@ -510,11 +510,11 @@ public class MagicFrame extends JFrame implements ActionListener {
             showDuel();
         }
     }
-    
+
     public boolean isLegalDeckAndShowErrors(final MagicDeck deck, final String playerName) {
         final String brokenRulesText =
                 MagicDeckConstructionRule.getRulesText(MagicDeckConstructionRule.checkDeck(deck));
-        
+
         if(brokenRulesText.length() > 0) {
             JOptionPane.showMessageDialog(
                     this,
@@ -523,25 +523,25 @@ public class MagicFrame extends JFrame implements ActionListener {
                     JOptionPane.ERROR_MESSAGE);
             return false;
         }
-        
+
         return true;
     }
-    
+
     private void resetGame() {
         if (gamePanel!=null) {
             gamePanel.getController().resetGame();
         }
     }
-    
+
     private void concedeGame() {
         if (gamePanel!=null) {
             gamePanel.getController().concede();
         }
     }
-        
+
     public void nextGame() {
         duel.updateDifficulty();
-        
+
         final MagicPlayerDefinition[] players=duel.getPlayers();
         if(isLegalDeckAndShowErrors(
                 players[0].getDeck(),
@@ -550,42 +550,42 @@ public class MagicFrame extends JFrame implements ActionListener {
             openGame(duel.nextGame(true));
         }
     }
-    
+
     private void openGame(final MagicGame game) {
         final ZoneBackgroundLabel backgroundLabel=new ZoneBackgroundLabel();
         backgroundLabel.setGame(true);
         gamePanel=new GamePanel(this,game,backgroundLabel);
         final GameLayeredPane gamePane=new GameLayeredPane(gamePanel,backgroundLabel);
-        setContent(gamePane);        
+        setContent(gamePane);
         gamePanel.requestFocus();
         enableMenuItem(RESET_GAME_ITEM,true);
         enableMenuItem(CONCEDE_GAME_ITEM,true);
     }
-    
+
     public void updateGameView() {
         if(gamePanel != null) {
             gamePanel.updateView();
         }
     }
-        
+
     private void openCardExplorer() {
         enableMenuItem(CARD_EXPLORER_ITEM,false);
         explorerPanel = new ExplorerPanel(this, ExplorerPanel.ALL, null, null);
         addContent(explorerPanel);
     }
-    
+
     public void openDeckEditor(final MagicPlayerDefinition player, final MagicCubeDefinition cube) {
         enableMenuItem(CARD_EXPLORER_ITEM,false);
         // final int mode=editDeckCard.getCard().isLand()?ExplorerPanel.LAND:ExplorerPanel.SPELL;
         explorerPanel=new ExplorerPanel(this,ExplorerPanel.ALL,player, cube);
         addContent(explorerPanel);
     }
-    
+
     public void closeCardExplorer() {
         closeContent();
-        enableMenuItem(CARD_EXPLORER_ITEM,true);    
+        enableMenuItem(CARD_EXPLORER_ITEM,true);
     }
-    
+
     public void closeDeckEditor() {
         if(isLegalDeckAndShowErrors(explorerPanel.getPlayer().getDeck(), explorerPanel.getPlayer().getName())) {
             closeCardExplorer();
@@ -594,7 +594,7 @@ public class MagicFrame extends JFrame implements ActionListener {
             }
         }
     }
-    
+
     private void registerForMacOSXEvents() {
         if (MAC_OS_X) {
             try {
@@ -610,7 +610,7 @@ public class MagicFrame extends JFrame implements ActionListener {
             }
         }
     }
-    
+
     public boolean onClose() {
         if (!config.isConfirmExit()) {
             exit();
@@ -638,13 +638,13 @@ public class MagicFrame extends JFrame implements ActionListener {
         // set the ApplicationEvent as handled (for OS X)
         return false;
     }
-    
+
     private void exit() {
-        final boolean maximized = 
+        final boolean maximized =
                 (MagicFrame.this.getExtendedState() & JFrame.MAXIMIZED_BOTH) == JFrame.MAXIMIZED_BOTH;
         if (maximized) {
             config.setMaximized(true);
-        } else {                    
+        } else {
             config.setLeft(getX());
             config.setTop(getY());
             config.setWidth(getWidth());
@@ -653,7 +653,7 @@ public class MagicFrame extends JFrame implements ActionListener {
         }
         config.setConfirmExit(!dontShowAgain);
         config.save();
-        
+
         MagicGameLog.close();
 
         /*
@@ -663,36 +663,36 @@ public class MagicFrame extends JFrame implements ActionListener {
         */
         System.exit(0);
     }
-    
+
     private void openKeywords() {
         enableMenuItem(KEYWORDS_ITEM,false);
         final KeywordsPanel keywordsPanel=new KeywordsPanel(this);
         addContent(keywordsPanel);
     }
-    
+
     public void closeKeywords() {
         closeContent();
         enableMenuItem(KEYWORDS_ITEM,true);
     }
-    
+
     private void openReadme() {
         enableMenuItem(README_ITEM,false);
         final ReadmePanel rmPanel = new ReadmePanel(this);
         addContent(rmPanel);
     }
-    
+
     public void closeReadme() {
         closeContent();
         enableMenuItem(README_ITEM,true);
     }
-    
+
     public void setTextImageMode(final boolean isTextMode) {
         GeneralConfig.getInstance().setTextView(isTextMode);
         if (gamePanel != null) {
             gamePanel.updateView();
         }
     }
-    
+
     @Override
     public void actionPerformed(final ActionEvent event) {
 
@@ -751,14 +751,14 @@ public class MagicFrame extends JFrame implements ActionListener {
             setTextImageMode(false);
         }
     }
-    
+
     private boolean updateApp() {
         //check for new version
-        
-        
+
+
         //if there is a new version, download the jar file
-        
-        
+
+
         //restart the app
         final String javaBin = System.getProperty("java.home") + "/bin/java";
         final File jarFile;
@@ -781,7 +781,7 @@ public class MagicFrame extends JFrame implements ActionListener {
         }
 
         final String[] toExec = {javaBin, "-jar", jarFile.getPath()};
-        try { //restart the application 
+        try { //restart the application
             Runtime.getRuntime().exec(toExec);
         } catch (final IOException ex) {
             System.err.println(ex.getMessage());

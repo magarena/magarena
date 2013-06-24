@@ -14,10 +14,10 @@ import magic.model.event.MagicEvent;
 import magic.model.phase.MagicPhase;
 
 public class MMAB2 implements MagicAI {
-    
+
     private static final long      SEC_TO_NANO=1000000000L;
     private static final int THREADS = Runtime.getRuntime().availableProcessors();
-    
+
     private final boolean LOGGING;
     private final boolean CHEAT;
     private ArtificialPruneScore pruneScore = new ArtificialMultiPruneScore();
@@ -26,37 +26,37 @@ public class MMAB2 implements MagicAI {
         //default: no logging, no cheats
         this(false, false);
     }
-    
+
     MMAB2(final boolean log, final boolean cheat) {
         LOGGING = log || Boolean.getBoolean("debug");
         CHEAT = cheat;
     }
-    
+
     private void log(final String message) {
         MagicGameLog.log(message);
         if (LOGGING) {
             System.err.println(message);
         }
     }
-    
+
     public Object[] findNextEventChoiceResults(final MagicGame sourceGame, final MagicPlayer scorePlayer) {
         final long startTime = System.currentTimeMillis();
 
-        // copying the game is necessary because for some choices game scores might be calculated, 
+        // copying the game is necessary because for some choices game scores might be calculated,
         // find all possible choice results.
         MagicGame choiceGame = new MagicGame(sourceGame,scorePlayer);
         final MagicEvent event = choiceGame.getNextEvent();
         final List<Object[]> choices = event.getArtificialChoiceResults(choiceGame);
         final int size = choices.size();
         choiceGame = null;
-        
+
         assert size != 0 : "ERROR: no choices available for MMAB2";
-        
+
         // single choice result.
         if (size == 1) {
             return sourceGame.map(choices.get(0));
         }
-        
+
         // submit jobs
         final ArtificialScoreBoard scoreBoard = new ArtificialScoreBoard();
         final ExecutorService executor = Executors.newFixedThreadPool(THREADS);
@@ -96,14 +96,14 @@ public class MMAB2 implements MagicAI {
             // force termination of workers
             executor.shutdownNow();
         }
-        
+
         // select the best scoring choice result.
         ArtificialScore bestScore = ArtificialScore.INVALID_SCORE;
         ArtificialChoiceResults bestAchoice = achoices.get(0);
         for (final ArtificialChoiceResults achoice : achoices) {
             if (bestScore.isBetter(achoice.aiScore,true)) {
                 bestScore = achoice.aiScore;
-                bestAchoice = achoice;                
+                bestAchoice = achoice;
             }
         }
 
@@ -113,7 +113,7 @@ public class MMAB2 implements MagicAI {
             " cheat=" + CHEAT +
             " index=" + scorePlayer.getIndex() +
             " life=" + scorePlayer.getLife() +
-            " phase=" + sourceGame.getPhase().getType() + 
+            " phase=" + sourceGame.getPhase().getType() +
             " slice=" + (slice/1000000) +
             " time=" + timeTaken
             );
@@ -127,7 +127,7 @@ public class MMAB2 implements MagicAI {
     private void updatePruneScore(final int score) {
         pruneScore = pruneScore.getPruneScore(score,true);
     }
-    
+
     private ArtificialPruneScore getPruneScore() {
         return pruneScore;
     }
@@ -140,21 +140,21 @@ class MMABWorker {
     private final ArtificialScoreBoard scoreBoard;
 
     private int gameCount;
-    
+
     MMABWorker(final int id,final MagicGame game,final ArtificialScoreBoard scoreBoard, final boolean CHEAT) {
         this.id=id;
         this.game=game;
         this.scoreBoard=scoreBoard;
         this.CHEAT=CHEAT;
     }
-    
+
     private ArtificialScore runGame(final Object[] nextChoiceResults, final ArtificialPruneScore pruneScore, final int depth, final long maxTime) {
         game.startActions();
-        
+
         if (nextChoiceResults!=null) {
             game.executeNextEvent(nextChoiceResults);
         }
-        
+
         if (System.nanoTime() > maxTime || Thread.currentThread().isInterrupted()) {
             final ArtificialScore aiScore=new ArtificialScore(game.getScore(),depth);
             game.undoActions();
@@ -166,7 +166,7 @@ class MMABWorker {
         while (!game.isFinished()) {
             if (!game.hasNextEvent()) {
                 game.executePhase();
-                                
+
                 // Caching of best score for game situations.
                 if (game.cacheState()) {
                     final long gameId=game.getGameId(pruneScore.getScore());
@@ -182,7 +182,7 @@ class MMABWorker {
                 }
                 continue;
             }
-        
+
             final MagicEvent event=game.getNextEvent();
 
             if (!event.hasChoice()) {
@@ -204,14 +204,14 @@ class MMABWorker {
             */
 
             final int nrOfChoices=choiceResultsList.size();
-            
+
             assert nrOfChoices > 0 : "nrOfChoices is 0";
-            
+
             if (nrOfChoices==1) {
                 game.executeNextEvent(choiceResultsList.get(0));
                 continue;
             }
-            
+
             final boolean best=game.getScorePlayer()==event.getPlayer();
             ArtificialScore bestScore=ArtificialScore.INVALID_SCORE;
             ArtificialPruneScore newPruneScore=pruneScore;
@@ -242,7 +242,7 @@ class MMABWorker {
 
     void evaluateGame(final ArtificialChoiceResults aiChoiceResults, final ArtificialPruneScore pruneScore, long maxTime) {
         gameCount = 0;
-        
+
         aiChoiceResults.worker    = id;
         aiChoiceResults.aiScore   = runGame(game.map(aiChoiceResults.choiceResults),pruneScore,0,maxTime);
         aiChoiceResults.gameCount = gameCount;

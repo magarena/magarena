@@ -9,7 +9,7 @@ import java.util.Properties;
 public class GeneralConfig {
 
     private static final GeneralConfig INSTANCE=new GeneralConfig();
-    
+
     private static final String CONFIG_FILENAME="general.cfg";
     private static final String LEFT="left";
     private static final String TOP="top";
@@ -79,9 +79,9 @@ public class GeneralConfig {
     private boolean sound=DEFAULT_SOUND;
     private boolean confirmExit = DEFAULT_CONFIRM_EXIT;
     private boolean touchscreen = DEFAULT_TOUCHSCREEN;
-    
+
     private GeneralConfig() {}
-    
+
     public int getLeft() {
         return left;
     }
@@ -121,51 +121,51 @@ public class GeneralConfig {
     public void setMaximized(final boolean maximized) {
         this.maximized=maximized;
     }
-    
+
     public String getTheme() {
         return theme;
     }
-    
+
     public void setTheme(final String theme) {
         this.theme=theme;
     }
-    
+
     public String getAvatar() {
         return avatar;
     }
-    
+
     public void setAvatar(final String avatar) {
         this.avatar=avatar;
     }
-    
+
     public boolean isHighlightNone() {
         return "none".equals(highlight);
     }
-    
+
     public boolean isHighlightOverlay() {
         return "overlay".equals(highlight);
     }
-    
+
     public boolean isHighlightTheme() {
         return "theme".equals(highlight);
     }
-    
+
     public String getHighlight() {
         return highlight;
     }
-    
+
     public void setHighlight(final String highlight) {
         this.highlight = highlight;
     }
-    
+
     public boolean getTextView() {
         return textView;
     }
-    
+
     public void setTextView(final boolean textView) {
         this.textView=textView;
     }
-    
+
     public boolean getSkipSingle() {
         return skipSingle;
     }
@@ -173,19 +173,19 @@ public class GeneralConfig {
     public void setSkipSingle(final boolean skipSingle) {
         this.skipSingle=skipSingle;
     }
-    
+
     public boolean getAlwaysPass() {
         return alwaysPass;
     }
-    
+
     public void setAlwaysPass(final boolean alwaysPass) {
         this.alwaysPass=alwaysPass;
     }
-    
-    public boolean getSmartTarget() {    
+
+    public boolean getSmartTarget() {
         return smartTarget;
     }
-    
+
     public void setSmartTarget(final boolean smartTarget) {
         this.smartTarget=smartTarget;
     }
@@ -193,83 +193,83 @@ public class GeneralConfig {
     public int getDifficulty() {
         return difficulty;
     }
-        
+
     public void setDifficulty(final int difficulty) {
         this.difficulty=difficulty;
     }
-    
+
     public int getExtraLife() {
         return extraLife;
     }
-    
+
     public void setExtraLife(final int extraLife) {
         this.extraLife=extraLife;
     }
-    
+
     public int getPopupDelay() {
         return popupDelay;
     }
-    
+
     public void setPopupDelay(final int popupDelay) {
         this.popupDelay=popupDelay;
     }
-    
+
     public int getMessageDelay() {
         return messageDelay;
     }
-    
+
     public void setMessageDelay(final int messageDelay) {
         this.messageDelay = messageDelay;
     }
-    
+
     public int getStrengthDifficulty() {
         return strengthDifficulty;
     }
-    
+
     public void setStrengthDifficulty(final int strengthDifficulty) {
         this.strengthDifficulty=strengthDifficulty;
     }
-    
+
     public int getStrengthGames() {
         return strengthGames;
     }
-    
+
     public void setStrengthGames(final int strengthGames) {
         this.strengthGames=strengthGames;
     }
-    
+
     public boolean isHighQuality() {
         return highQuality;
     }
-    
+
     public void setHighQuality(final boolean highQuality) {
         this.highQuality=highQuality;
     }
-    
+
     public boolean isSound() {
         return sound;
     }
-    
+
     public void setSound(final boolean sound) {
         this.sound=sound;
     }
-    
+
     public boolean isConfirmExit() {
         return confirmExit;
     }
 
-    public void setConfirmExit(final boolean confirmExit) {    
+    public void setConfirmExit(final boolean confirmExit) {
         this.confirmExit = confirmExit;
     }
-    
+
     public boolean isTouchscreen() {
         return touchscreen;
     }
 
-    public void setTouchscreen(final boolean touchscreen) {    
+    public void setTouchscreen(final boolean touchscreen) {
         this.touchscreen = touchscreen;
     }
-    
+
     private void load(final Properties properties) {
         left=Integer.parseInt(properties.getProperty(LEFT,""+DEFAULT_LEFT));
         top=Integer.parseInt(properties.getProperty(TOP,""+DEFAULT_TOP));
@@ -294,11 +294,11 @@ public class GeneralConfig {
         confirmExit = Boolean.parseBoolean(properties.getProperty(CONFIRM_EXIT,""+DEFAULT_CONFIRM_EXIT));
         touchscreen = Boolean.parseBoolean(properties.getProperty(TOUCHSCREEN,""+DEFAULT_TOUCHSCREEN));
     }
-    
+
     public void load() {
         load(FileIO.toProp(getConfigFile()));
     }
-    
+
     private void save(final Properties properties) {
         properties.setProperty(LEFT,String.valueOf(left));
         properties.setProperty(TOP,String.valueOf(top));
@@ -323,7 +323,7 @@ public class GeneralConfig {
         properties.setProperty(CONFIRM_EXIT,String.valueOf(confirmExit));
         properties.setProperty(TOUCHSCREEN,String.valueOf(touchscreen));
     }
-    
+
     public void save() {
         final Properties properties=new Properties();
         save(properties);

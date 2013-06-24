@@ -23,8 +23,8 @@ public class MagicAttacksPumpTrigger extends MagicWhenAttacksTrigger {
             new MagicEvent(
                 permanent,
                 this,
-                "SN gets " + 
-                getString(power) + "/" + getString(toughness) + 
+                "SN gets " +
+                getString(power) + "/" + getString(toughness) +
                 " until end of turn."
             ) :
             MagicEvent.NONE;
@@ -37,7 +37,7 @@ public class MagicAttacksPumpTrigger extends MagicWhenAttacksTrigger {
             toughness
         ));
     }
-    
+
     private String getString(final int pt) {
         return pt >= 0 ? "+" + pt : Integer.toString(pt);
     }

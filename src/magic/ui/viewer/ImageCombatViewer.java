@@ -19,18 +19,18 @@ public class ImageCombatViewer extends JPanel implements ChoiceViewer {
 
     private final ViewerInfo viewerInfo;
     private final ImagePermanentsViewer permanentsViewer;
-    
+
     public ImageCombatViewer(final ViewerInfo aViewerInfo,final GameController controller) {
         viewerInfo = aViewerInfo;
         controller.registerChoiceViewer(this);
-        
+
         setLayout(new BorderLayout(6,0));
         setOpaque(false);
-        
+
         final JPanel leftPanel=new JPanel(new BorderLayout());
         leftPanel.setOpaque(false);
         add(leftPanel,BorderLayout.WEST);
-        
+
         final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
         final JLabel combatLabel=new JLabel(theme.getIcon(Theme.ICON_SMALL_COMBAT));
         combatLabel.setOpaque(true);
@@ -38,13 +38,13 @@ public class ImageCombatViewer extends JPanel implements ChoiceViewer {
         combatLabel.setPreferredSize(new Dimension(24,24));
         combatLabel.setBorder(FontsAndBorders.BLACK_BORDER);
         leftPanel.add(combatLabel,BorderLayout.NORTH);
-        
+
         permanentsViewer=new ImagePermanentsViewer(controller);
         add(permanentsViewer,BorderLayout.CENTER);
     }
-    
+
     public void update() {
-        final SortedSet<PermanentViewerInfo> creatures = 
+        final SortedSet<PermanentViewerInfo> creatures =
             new TreeSet<PermanentViewerInfo>(PermanentViewerInfo.BLOCKED_NAME_COMPARATOR);
 
         final PlayerViewerInfo attackingPlayerInfo=viewerInfo.getAttackingPlayerInfo();
@@ -53,7 +53,7 @@ public class ImageCombatViewer extends JPanel implements ChoiceViewer {
                 creatures.add(permanentInfo);
             }
         }
-    
+
         //add in blockers whose attacker is destroyed
         final PlayerViewerInfo defendingPlayerInfo=viewerInfo.getDefendingPlayerInfo();
         for (final PermanentViewerInfo permanentInfo : defendingPlayerInfo.permanents) {
@@ -61,10 +61,10 @@ public class ImageCombatViewer extends JPanel implements ChoiceViewer {
                 creatures.add(permanentInfo);
             }
         }
-        
+
         permanentsViewer.viewPermanents(creatures);
     }
-    
+
     @Override
     public void showValidChoices(final Set<?> validChoices) {
         permanentsViewer.showValidChoices(validChoices);

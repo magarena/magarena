@@ -14,10 +14,10 @@ import java.util.Collections;
 import java.util.List;
 
 public abstract class MagicChoice {
-    
+
     static final String YES_CHOICE="yes";
     static final String NO_CHOICE="no";
-    
+
     public static final MagicChoice NONE = new MagicChoice("none") {
         @Override
         public Collection<Object> getArtificialOptions(
@@ -40,9 +40,9 @@ public abstract class MagicChoice {
             return false;
         }
     };
-    
+
     private final String description;
-    
+
     MagicChoice(final String description) {
         this.description=description;
     }
@@ -55,15 +55,15 @@ public abstract class MagicChoice {
     public final String getDescription() {
         return description;
     }
-    
+
     public MagicTargetChoice getTargetChoice() {
         return MagicTargetChoice.NONE;
     }
-    
+
     public int getTargetChoiceResultIndex() {
         return -1;
     }
-    
+
     public int getManaChoiceResultIndex() {
         return -1;
     }
@@ -76,11 +76,11 @@ public abstract class MagicChoice {
     boolean hasOptions(final MagicGame game,final MagicPlayer player,final MagicSource source,final boolean hints) {
         return true;
     }
-    
+
     /** Gets the available options for AI. */
     abstract Collection<?> getArtificialOptions(
             final MagicGame game,final MagicEvent event,final MagicPlayer player,final MagicSource source);
-    
+
     /** Gets the choice results for AI. */
     public List<Object[]> getArtificialChoiceResults(
             final MagicGame game,
@@ -113,10 +113,10 @@ public abstract class MagicChoice {
         final int size = choices.size();
         if (size == 0) {
             throw new RuntimeException("no simulation choice result");
-        } 
+        }
         return choices.get(MagicRandom.nextInt(choices.size()));
     }
-    
+
     /** Gets the choice results of the player. */
     public abstract Object[] getPlayerChoiceResults(
         final GameController controller,

@@ -11,9 +11,9 @@ public class MagicWeakenTargetPicker extends MagicTargetPicker<MagicPermanent> {
     private static final int ATTACKING=3<<8;
     private static final int BLOCKING=2<<8;
     private static final int CAN_TAP=1<<8;
-        
+
     private final int amountToughness;
-    
+
     public MagicWeakenTargetPicker(final int amountPower,final int amountToughness) {
         this.amountToughness=amountToughness;
     }
@@ -32,10 +32,10 @@ public class MagicWeakenTargetPicker extends MagicTargetPicker<MagicPermanent> {
         final int lethalToughness=pt.getPositiveToughness()-permanent.getDamage();
         if (lethalToughness<=amountToughness) {
             return permanent.getScore()<<12;
-        }        
+        }
 
         int score=0;
-        
+
         // First level.
         if (permanent.isAttacking()) {
             if (permanent.isBlocked()) {
@@ -53,7 +53,7 @@ public class MagicWeakenTargetPicker extends MagicTargetPicker<MagicPermanent> {
             // Second level.
             score+=Math.max(15,lethalToughness)<<4;
         }
-        
+
         // Third level.
         score+=Math.max(15,pt.getPositivePower());
 

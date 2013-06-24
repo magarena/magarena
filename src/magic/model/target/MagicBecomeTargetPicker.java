@@ -12,13 +12,13 @@ public class MagicBecomeTargetPicker extends MagicTargetPicker<MagicPermanent> {
     private final int power;
     private final int toughness;
     private final boolean flying;
-    
+
     public MagicBecomeTargetPicker(final int power,final int toughness,final boolean flying) {
         this.power=power;
         this.toughness=toughness;
         this.flying=flying;
     }
-    
+
     @Override
     protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
         final MagicPowerToughness pt=permanent.getPowerToughness();
@@ -27,5 +27,5 @@ public class MagicBecomeTargetPicker extends MagicTargetPicker<MagicPermanent> {
             score-=5;
         }
         return permanent.getController()==player?-score:score;
-    }    
+    }
 }

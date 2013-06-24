@@ -15,7 +15,7 @@ public class MagicRegenerationConditionsEvent extends MagicEvent {
 
     private final MagicCondition[] conds;
 
-    public MagicRegenerationConditionsEvent(final MagicSource source, final MagicPermanentActivation act) { 
+    public MagicRegenerationConditionsEvent(final MagicSource source, final MagicPermanentActivation act) {
         super(
             source,
             MagicEvent.NO_ACTION,
@@ -26,7 +26,7 @@ public class MagicRegenerationConditionsEvent extends MagicEvent {
             MagicConditionFactory.SingleActivation(act)
         };
     }
-    
+
     @Override
     public MagicCondition[] getConditions() {
         return conds;

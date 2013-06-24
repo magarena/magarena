@@ -6,23 +6,23 @@ import magic.model.action.MagicStackResolveAction;
 import magic.model.event.MagicPriorityEvent;
 
 public abstract class MagicPhase {
-    
+
     private static final int MAX_PRIORITY_PASSED_COUNT=6;
-    
+
     private final MagicPhaseType type;
-    
+
     protected abstract void executeBeginStep(final MagicGame game);
-    
+
     MagicPhase(final MagicPhaseType type) {
         this.type=type;
     }
-    
+
     public final MagicPhaseType getType() {
         return type;
     }
-    
+
     void executeEndOfPhase(final MagicGame game) {}
-    
+
     public void executePhase(final MagicGame game) {
         switch (game.getStep()) {
             case Begin:
@@ -46,16 +46,16 @@ public abstract class MagicPhase {
 
                 // Determine next step
                 if (game.isReal()) {
-                    game.setStep(MagicStep.ActivePlayer);                        
+                    game.setStep(MagicStep.ActivePlayer);
                 } else if (game.getStack().size() > 0) {
                     // Continue to resolve if stack if not empty
                     game.setStep(MagicStep.Resolve);
                 } else if (game.getPriorityPassedCount()<MAX_PRIORITY_PASSED_COUNT) {
                     // Check for maximum number of passes in a phase.
-                    game.setStep(MagicStep.ActivePlayer);                                                    
+                    game.setStep(MagicStep.ActivePlayer);
                 } else {
                     game.setStep(MagicStep.NextPhase);
-                } 
+                }
 
                 // If next step is not ActivePlayer, check state first
                 if (game.getStep() != MagicStep.ActivePlayer) {

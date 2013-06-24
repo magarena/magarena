@@ -26,12 +26,12 @@ import java.util.List;
 public class VersionPanel extends JPanel implements ActionListener {
 
     private static final long serialVersionUID = 1L;
-    
+
     private static final String VERSION = "1.39";
     private static final String VERSION_TEXT = "Magarena " + VERSION;
 
     private static final Border LOGO_BORDER=BorderFactory.createMatteBorder(2,2,2,2,new Color(0x8C,0x78,0x53));
-    
+
     private final MagicFrame frame;
     private final ZoneBackgroundLabel backgroundLabel;
     private final JLabel versionLabel;
@@ -39,11 +39,11 @@ public class VersionPanel extends JPanel implements ActionListener {
     private final CardViewer cardViewer;
     private final JButton newButton;
     private final JButton loadButton;
-    
+
     public VersionPanel(final MagicFrame frame) {
 
         this.frame=frame;
-        
+
         setLayout(null);
 
         versionLabel=new JLabel(VERSION_TEXT);
@@ -52,7 +52,7 @@ public class VersionPanel extends JPanel implements ActionListener {
         versionLabel.setFont(FontsAndBorders.FONT2);
         versionLabel.setBorder(FontsAndBorders.EMPTY_BORDER);
         add(versionLabel,BorderLayout.SOUTH);
-                
+
         backgroundLabel=new ZoneBackgroundLabel();
 
         final ImageIcon logoIcon=new ImageIcon(IconImages.LOGO);
@@ -60,17 +60,17 @@ public class VersionPanel extends JPanel implements ActionListener {
         logoLabel.setBorder(LOGO_BORDER);
         logoLabel.setSize(logoIcon.getIconWidth(),logoIcon.getIconHeight());
         versionLabel.setSize(logoIcon.getIconWidth(),20);
-                
+
         cardViewer=new CardViewer(true,true);
         final List<MagicCardDefinition> spellCards=CardDefinitions.getSpellCards();
         final int index=MagicRandom.nextInt(spellCards.size());
         cardViewer.setCard(spellCards.get(index),0);
-        
+
         newButton=new JButton("NEW");
         newButton.setFont(FontsAndBorders.FONT4);
         newButton.addActionListener(this);
         newButton.setFocusable(false);
-        
+
         loadButton=new JButton("LOAD");
         loadButton.setFont(FontsAndBorders.FONT4);
         loadButton.addActionListener(this);
@@ -82,12 +82,12 @@ public class VersionPanel extends JPanel implements ActionListener {
         add(versionLabel);
         add(logoLabel);
         add(backgroundLabel);
-        
+
         addComponentListener(new ComponentAdapter()  {
-            
+
             @Override
             public void componentResized(final ComponentEvent event) {
-                
+
                 final Dimension size=getSize();
                 backgroundLabel.setSize(size);
                 final int lx=(size.width-logoLabel.getWidth()-cardViewer.getWidth()-10)/2;
@@ -107,7 +107,7 @@ public class VersionPanel extends JPanel implements ActionListener {
 
     @Override
     public void actionPerformed(final ActionEvent event) {
-        
+
         final Object source=event.getSource();
         if (source==newButton) {
             frame.showNewDuelDialog();

@@ -25,21 +25,21 @@ public class ImagePermanentsViewer extends JPanel {
 
     private final GameController controller;
     private final boolean isTop;
-    
+
     private List<ImagePermanentViewer> viewers;
     private Set<?> validChoices;
-    
+
     public ImagePermanentsViewer(final GameController controller) {
         this(controller, false);
     }
-    
+
     public ImagePermanentsViewer(final GameController controller, final boolean isTop) {
         this.controller = controller;
         this.isTop = isTop;
-        
+
         setLayout(null);
         setOpaque(false);
-        
+
         viewers=Collections.emptyList();
         validChoices=Collections.emptySet();
     }
@@ -47,31 +47,31 @@ public class ImagePermanentsViewer extends JPanel {
     private static int divideIntoRows(final List<ImagePermanentViewer> cards, final int maxCardsPerRow, final int startingRow) {
         int numCardsThisRow = 0;
         int currentRow = startingRow;
-        
+
         for(final ImagePermanentViewer card : cards) {
             if(numCardsThisRow + 1 > maxCardsPerRow) {
                 // goto next row
                 currentRow++;
                 numCardsThisRow = 0;
             }
-            
+
             numCardsThisRow++;
             card.setLogicalRow(currentRow);
         }
-        
-        return currentRow;        
+
+        return currentRow;
     }
-    
+
     private int divideAllIntoRows(final List<ImagePermanentViewer> creatures, final List<ImagePermanentViewer> nonCreatures, final int maxCardsPerRow) {
         final List<ImagePermanentViewer> firstCards = (isTop) ? nonCreatures : creatures;
         final List<ImagePermanentViewer> secondCards = (isTop) ? creatures : nonCreatures;
-    
+
         int currentRow = divideIntoRows(firstCards, maxCardsPerRow, 1);
         if(firstCards.size() > 0) { // creatures go in separate row from others
             currentRow++;
         }
-                
-        return divideIntoRows(secondCards, maxCardsPerRow, currentRow);        
+
+        return divideIntoRows(secondCards, maxCardsPerRow, currentRow);
     }
 
     private int calculateAndSetPositions(final List<ImagePermanentViewer> creatures, final List<ImagePermanentViewer> nonCreatures) {
@@ -80,7 +80,7 @@ public class ImagePermanentsViewer extends JPanel {
         int y=0;
         int maxWidth=0;
         int rowHeight=0;
-        
+
         final List<ImagePermanentViewer> aViewers = new ArrayList<ImagePermanentViewer>();
         if(isTop) {
             aViewers.addAll(nonCreatures);
@@ -89,7 +89,7 @@ public class ImagePermanentsViewer extends JPanel {
             aViewers.addAll(creatures);
             aViewers.addAll(nonCreatures);
         }
-        
+
         int prevPosition=aViewers.get(0).getPosition();
 
         for (final ImagePermanentViewer viewer : aViewers) {
@@ -110,7 +110,7 @@ public class ImagePermanentsViewer extends JPanel {
             maxWidth=Math.max(maxWidth,x);
             x+=HORIZONTAL_SPACING;
             rowHeight=Math.max(rowHeight,logicalSize.height);
-        }    
+        }
 
         final int maxHeight=y+rowHeight;
         final int width=getWidth();
@@ -124,35 +124,35 @@ public class ImagePermanentsViewer extends JPanel {
         if (scaleMult>scaleDiv/2) {
             scaleMult=scaleDiv/2;
         }
-        
+
         for (final ImagePermanentViewer viewer : aViewers) {
             final Point point=viewer.getLogicalPosition();
             viewer.setLocation((point.x*scaleMult)/scaleDiv,(point.y*scaleMult)/scaleDiv);
             final Dimension size=viewer.getLogicalSize();
             viewer.setSize((size.width*scaleMult)/scaleDiv,(size.height*scaleMult)/scaleDiv);
         }
-        
+
         return (1000*scaleMult)/scaleDiv;
     }
 
-    private void calculateOptimalPositions(final List<ImagePermanentViewer> creatures, final List<ImagePermanentViewer> nonCreatures) {        
+    private void calculateOptimalPositions(final List<ImagePermanentViewer> creatures, final List<ImagePermanentViewer> nonCreatures) {
         final float screenWidth = (float) getWidth();
         final float screenHeight = (float) getHeight();
         final int numCards = creatures.size() + nonCreatures.size();
-        
+
         if(numCards > 0 && screenWidth > 0 && screenHeight > 0) { // ignore cases where drawing doesn't matter
             int r;
             int maxCardsForBestNumRow = 1;
             float largestScaledCardSize = 0;
-        
+
             // approximate number of rows needed to contain all the cards
             for(r = (creatures.size() == 0 || nonCreatures.size() == 0) ? 1 : 2; r < numCards; r++) {
                 float numCardsPerRow = (float) Math.ceil((float) numCards / r); // avoid lost of precision
-                
+
                 // max width and height for a card using this number of rows
                 float scaledCardHeight = screenHeight / r;
                 float scaledCardWidth = screenWidth / numCardsPerRow;
-                
+
                 // change width or height to maintain aspect ratio
                 if (scaledCardWidth / scaledCardHeight > CARD_ASPECT_RATIO) {
                     // height is limiting factor on size of scaled card
@@ -162,7 +162,7 @@ public class ImagePermanentsViewer extends JPanel {
                     scaledCardHeight = (scaledCardWidth / CARD_WIDTH) * CARD_HEIGHT;;
                 }
                 numCardsPerRow = (float) Math.ceil(screenWidth / scaledCardWidth); // scaled -> more cards can fit per row
-                
+
                 // set best possible
                 final float scaledCardSize = scaledCardWidth * scaledCardHeight;
                 if(scaledCardSize  > largestScaledCardSize) {
@@ -170,17 +170,17 @@ public class ImagePermanentsViewer extends JPanel {
                     maxCardsForBestNumRow = (int) numCardsPerRow;
                 }
             }
-            
+
             divideAllIntoRows(creatures, nonCreatures, maxCardsForBestNumRow);
             calculateAndSetPositions(creatures, nonCreatures);
         }
     }
-    
+
     public void viewPermanents(final Collection<PermanentViewerInfo> permanentInfos) {
         final List<ImagePermanentViewer> creatures = new ArrayList<ImagePermanentViewer>();
         final List<ImagePermanentViewer> nonCreatures = new ArrayList<ImagePermanentViewer>();
         final List<ImagePermanentViewer> newViewers = new ArrayList<ImagePermanentViewer>();
-        
+
         for (final PermanentViewerInfo permanentInfo : permanentInfos) {
             final ImagePermanentViewer perm = new ImagePermanentViewer(this,permanentInfo);
             if(permanentInfo.creature) {
@@ -190,29 +190,29 @@ public class ImagePermanentsViewer extends JPanel {
             }
             newViewers.add(perm); // permanentInfos has a specific order
         }
-        
+
         calculateOptimalPositions(creatures, nonCreatures);
-        
+
         removeAll();
         for (final ImagePermanentViewer viewer : newViewers) {
             add(viewer);
         }
-        viewers=newViewers;        
+        viewers=newViewers;
         revalidate();
         repaint();
     }
-    
+
     public GameController getController() {
         return controller;
     }
-    
+
     public void showValidChoices(final Set<?> aValidChoices) {
         this.validChoices=aValidChoices;
         for (final ImagePermanentViewer viewer : viewers) {
             viewer.repaint();
         }
     }
-    
+
     public boolean isValidChoice(final PermanentViewerInfo permanentInfo) {
         return validChoices.contains(permanentInfo.permanent);
     }

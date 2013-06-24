@@ -29,7 +29,7 @@ public class CardStatistics {
         IconImages.COST_NINE
     ));
     public static final int MANA_CURVE_SIZE=MANA_CURVE_TEXT.size();
-    
+
     private static final List<String> TYPE_NAMES = Collections.unmodifiableList(Arrays.asList(
         "Land","Spell","Creature","Equipment","Aura","Enchantment","Artifact"));
     public static final List<ImageIcon> TYPE_ICONS = Collections.unmodifiableList(Arrays.asList(
@@ -37,22 +37,22 @@ public class CardStatistics {
         IconImages.SPELL,
         IconImages.CREATURE,
         IconImages.EQUIPMENT,
-        IconImages.AURA,    
+        IconImages.AURA,
         IconImages.ENCHANTMENT,
         IconImages.ARTIFACT
     ));
     public static final int NR_OF_TYPES=TYPE_NAMES.size();
-    
+
     private final Collection<MagicCardDefinition> cards;
-    
+
     private int totalCards;
     public final int[] totalTypes=new int[NR_OF_TYPES];
-    
+
     private final int[] totalRarity=new int[MagicRarity.length];
-    
+
     private double averageCost;
     private double averageValue;
-    
+
     public final int[] colorCount=new int[MagicColor.NR_COLORS];
     public final int[] colorMono=new int[MagicColor.NR_COLORS];
     public final int[] colorLands=new int[MagicColor.NR_COLORS];
@@ -60,12 +60,12 @@ public class CardStatistics {
     public int monoColor;
     public int multiColor;
     public int colorless;
-    
+
     public CardStatistics(final Collection<MagicCardDefinition> cards) {
         this.cards=cards;
         createStatistics();
     }
-    
+
     private void createStatistics() {
         for (final MagicCardDefinition card : cards) {
             //ignore tokens
@@ -74,16 +74,16 @@ public class CardStatistics {
             }
 
             totalCards++;
-                                                
+
             totalRarity[card.getRarity()]++;
-                        
+
             if (card.isLand()) {
                 totalTypes[0]++;
                 for (final MagicColor color : MagicColor.values()) {
                     if (card.getManaSource(color) > 0) {
                         colorLands[color.ordinal()]++;
                     }
-                }                
+                }
             } else {
                 if (card.hasX()) {
                     manaCurve[0]++;
@@ -91,10 +91,10 @@ public class CardStatistics {
                     final int convertedCost=card.getConvertedCost();
                     manaCurve[convertedCost+1>=MANA_CURVE_SIZE?MANA_CURVE_SIZE-1:convertedCost+1]++;
                 }
-                
+
                 averageCost+=card.getConvertedCost();
                 averageValue+=card.getValue();
-                
+
                 if (card.isCreature()) {
                     totalTypes[2]++;
                 } else if (card.isEquipment()) {
@@ -108,11 +108,11 @@ public class CardStatistics {
                 } else {
                     totalTypes[1]++;
                 }
-                
+
                 int count=0;
                 int index=-1;
                 for (final MagicColor color : MagicColor.values()) {
-                
+
                     if (color.hasColor(card.getColorFlags())) {
                         index=color.ordinal();
                         colorCount[index]++;
@@ -129,14 +129,14 @@ public class CardStatistics {
                 }
             }
         }
-        
+
         final int total=totalCards-totalTypes[0];
         if (total>0) {
             averageValue /= total;
             averageCost /= total;
         }
     }
-    
+
     void printStatictics(final PrintStream stream) {
 
         stream.print("Cards : "+totalCards);
@@ -144,9 +144,9 @@ public class CardStatistics {
             stream.print("  "+TYPE_NAMES.get(index)+" : "+totalTypes[index]);
         }
         stream.println();
-        
+
         for (int index=0;index<MagicRarity.length;index++) {
-            
+
             stream.print(MagicRarity.values()[index].getName() + " : " + totalRarity[index] + "  ");
         }
         stream.println();
@@ -154,16 +154,16 @@ public class CardStatistics {
         stream.println("Monocolor : "+monoColor+"  Multicolor : "+multiColor+"  Colorless : "+colorless);
 
         for (final MagicColor color : MagicColor.values()) {
-            
+
             final int index=color.ordinal();
             stream.print("Color "+color.getName()+" : "+colorCount[index]);
             stream.print("  Mono : "+colorMono[index]);
             stream.print("  Lands : "+colorLands[index]);
-            stream.println();            
-        }    
-        
+            stream.println();
+        }
+
         for (int index=0;index<MANA_CURVE_SIZE;index++) {
-            
+
             stream.print(MANA_CURVE_TEXT.get(index)+" = "+manaCurve[index]+"  ");
         }
         stream.println();

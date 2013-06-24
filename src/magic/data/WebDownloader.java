@@ -11,15 +11,15 @@ import java.io.OutputStream;
 import java.net.Proxy;
 import java.net.URL;
 
-public abstract class WebDownloader {    
+public abstract class WebDownloader {
     public abstract void download(final Proxy proxy);
-    
+
     public abstract String getFilename();
-    
+
     public abstract File getFile();
 
     public abstract boolean exists();
-    
+
     public static void downloadToFile(final Proxy proxy, final URL url, final File file) {
         OutputStream outputStream = null;
         InputStream inputStream = null;
@@ -47,17 +47,17 @@ public abstract class WebDownloader {
             magic.data.FileIO.close(outputStream);
         }
     }
-    
+
     public static String getHTML(final Proxy proxy, final URL url) {
         InputStream inputStream = null;
         BufferedReader dataStream = null;
         final StringBuilder sb = new StringBuilder();
         String line;
-        
+
         try {
             inputStream = url.openConnection(proxy).getInputStream();
             dataStream = new BufferedReader(new InputStreamReader(inputStream));
-            
+
             while( (line = dataStream.readLine()) != null) {
                 sb.append(line);
                 sb.append("\n");
@@ -70,7 +70,7 @@ public abstract class WebDownloader {
             magic.data.FileIO.close(inputStream);
             magic.data.FileIO.close(dataStream);
         }
-        
+
         return sb.toString();
     }
 }

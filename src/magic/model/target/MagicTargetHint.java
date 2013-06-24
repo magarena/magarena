@@ -6,7 +6,7 @@ public enum MagicTargetHint {
     Positive,
     Negative,
     None;
-    
+
     public boolean accept(final MagicPlayer player,final MagicTarget target) {
         switch (this) {
             case Positive:
@@ -14,7 +14,7 @@ public enum MagicTargetHint {
             case Negative:
                 return target.getController()!=player;
             default:
-                return true;        
+                return true;
         }
     }
 }

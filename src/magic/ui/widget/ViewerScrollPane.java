@@ -14,9 +14,9 @@ public class ViewerScrollPane extends JScrollPane {
     private static final long serialVersionUID = 1L;
 
     private JPanel contentPanel;
-    
+
     public ViewerScrollPane() {
-        
+
         setOpaque(false);
         getViewport().setOpaque(false);
         setBorder(FontsAndBorders.NO_BORDER);
@@ -24,7 +24,7 @@ public class ViewerScrollPane extends JScrollPane {
         getVerticalScrollBar().setUnitIncrement(80);
         getVerticalScrollBar().setBlockIncrement(80);
     }
-    
+
     public synchronized JPanel getContent() {
         if (contentPanel==null) {
             contentPanel=new JPanel();
@@ -34,7 +34,7 @@ public class ViewerScrollPane extends JScrollPane {
         }
         return contentPanel;
     }
-    
+
     public synchronized void switchContent() {
         if (contentPanel!=null) {
             final Rectangle rect=getViewport().getViewRect();

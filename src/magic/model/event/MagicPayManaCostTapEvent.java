@@ -11,11 +11,11 @@ import magic.model.condition.MagicCondition;
 public class MagicPayManaCostTapEvent extends MagicEvent {
 
     private final MagicCondition[] conds;
-    
+
     public MagicPayManaCostTapEvent(final MagicSource source, final String cost) {
         this(source, source.getController(), MagicManaCost.create(cost));
     }
-    
+
     private MagicPayManaCostTapEvent(final MagicSource source,final MagicPlayer player,final MagicManaCost cost) {
         super(
             source,
@@ -28,7 +28,7 @@ public class MagicPayManaCostTapEvent extends MagicEvent {
             cost.getCondition(),
             MagicCondition.CAN_TAP_CONDITION
         };
-    }      
+    }
 
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
@@ -37,7 +37,7 @@ public class MagicPayManaCostTapEvent extends MagicEvent {
             game.doAction(new MagicTapAction(event.getPermanent(),true));
         }
     };
-    
+
     @Override
     public MagicCondition[] getConditions() {
         return conds;

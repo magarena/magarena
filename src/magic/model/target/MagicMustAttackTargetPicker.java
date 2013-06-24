@@ -11,7 +11,7 @@ public class MagicMustAttackTargetPicker extends MagicTargetPicker<MagicPermanen
     private static final MagicMustAttackTargetPicker INSTANCE = new MagicMustAttackTargetPicker();
 
     private MagicMustAttackTargetPicker() {}
-    
+
     public static MagicMustAttackTargetPicker create() {
         return INSTANCE;
     }
@@ -20,7 +20,7 @@ public class MagicMustAttackTargetPicker extends MagicTargetPicker<MagicPermanen
     protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
         if (!permanent.canAttack()) {
             return -100;
-        }        
+        }
         if (permanent.hasAbility(MagicAbility.AttacksEachTurnIfAble)) {
             return -50;
         }

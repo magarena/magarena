@@ -8,7 +8,7 @@ public class MagicSoulbondAction extends MagicAction {
     private final MagicPermanent permanent;
     private final MagicPermanent pairedCreature;
     private final boolean set;
-    
+
     public MagicSoulbondAction(final MagicPermanent permanent,final MagicPermanent pairedCreature,final boolean set) {
         this.permanent = permanent;
         this.pairedCreature = pairedCreature;

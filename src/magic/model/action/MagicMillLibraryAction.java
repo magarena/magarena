@@ -11,8 +11,8 @@ public class MagicMillLibraryAction extends MagicAction {
 
     private final MagicPlayer player;
     private final int amount;
-    
-    public MagicMillLibraryAction(final MagicPlayer player,final int amount) {    
+
+    public MagicMillLibraryAction(final MagicPlayer player,final int amount) {
         this.player = player;
         this.amount = amount;
     }
@@ -21,7 +21,7 @@ public class MagicMillLibraryAction extends MagicAction {
     public void doAction(final MagicGame game) {
         final MagicCardList library = player.getLibrary();
         final int size = library.size();
-        final int count = size >= amount ? amount : size;        
+        final int count = size >= amount ? amount : size;
         if (count > 0) {
             setScore(player,ArtificialScoringSystem.getMillScore(count));
             for (int c=count;c>0;c--) {

@@ -13,19 +13,19 @@ import java.awt.Dimension;
 public class SliderPanel extends JPanel implements ChangeListener {
 
     private static final long serialVersionUID = 1L;
-    
+
     private final JSlider slider;
     private final JLabel titleLabel;
     private final JLabel valueLabel;
-    
+
     public SliderPanel(final String title,final ImageIcon icon,final int min,final int max,final int spacing,final int value) {
-        
+
         setLayout(new BorderLayout(5,0));
         titleLabel=new JLabel(title);
         titleLabel.setPreferredSize(new Dimension(90,0));
         titleLabel.setIcon(icon);
         add(titleLabel,BorderLayout.WEST);
-        
+
         valueLabel=new JLabel();
         valueLabel.setHorizontalAlignment(JLabel.CENTER);
         valueLabel.setPreferredSize(new Dimension(30,0));
@@ -44,21 +44,21 @@ public class SliderPanel extends JPanel implements ChangeListener {
     }
 
     public void setTextColor(final Color color) {
-        
+
         titleLabel.setForeground(color);
         valueLabel.setForeground(color);
     }
-    
+
     public int getValue() {
-        
+
         return slider.getValue();
     }
-    
+
     public void addChangeListener(final ChangeListener listener) {
-        
+
         slider.addChangeListener(listener);
     }
-    
+
     @Override
     public void stateChanged(final ChangeEvent e) {
         valueLabel.setText(Integer.toString(slider.getValue()));

@@ -1,7 +1,7 @@
 package magic.model;
 
 public enum MagicPermanentState {
-    
+
     Tapped("tapped","{T}"),
     Summoned("summoned","{n}"),
     DoesNotUntapDuringNext("doesn't untap during its controller's next untap step","{s}"),
@@ -39,29 +39,29 @@ public enum MagicPermanentState {
         ExcludeFromCombat.getMask()|
         DestroyAtEndOfCombat.getMask()|
         MustPayEchoCost.getMask();
-    
+
     private final String description;
     private final String text;
     private final int mask;
-    
+
     private MagicPermanentState(final String description,final String text) {
         this.description=description;
         this.text=text;
         this.mask=1<<ordinal();
     }
-    
+
     public String getDescription() {
         return description;
     }
-    
+
     public String getText() {
         return text;
     }
-    
+
     public int getMask() {
         return mask;
     }
-    
+
     public boolean hasState(final int flags) {
         return (flags&mask)!=0;
     }

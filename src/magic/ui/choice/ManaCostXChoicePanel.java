@@ -18,25 +18,25 @@ import java.awt.event.ActionListener;
 public class ManaCostXChoicePanel extends JPanel implements ActionListener {
 
     private static final long serialVersionUID = 1L;
-    
+
     private static final String MESSAGE="Choose a value for X.";
     private static final Dimension BUTTON_DIMENSION=new Dimension(50,35);
-    
+
     private final GameController controller;
     private final JButton leftButton;
     private final JButton numberButton;
     private final JButton rightButton;
     private final int maximumX;
     private int x;
-    
+
     public ManaCostXChoicePanel(final GameController controller,final MagicSource source,final int maximumX) {
         this.controller=controller;
         this.maximumX=maximumX;
         x=maximumX;
-        
+
         setLayout(new BorderLayout());
         setOpaque(false);
-        
+
         final TextLabel textLabel=new TextLabel(GameController.getMessageWithSource(source,MESSAGE),GameViewer.TEXT_WIDTH,true);
         add(textLabel,BorderLayout.CENTER);
 
@@ -44,30 +44,30 @@ public class ManaCostXChoicePanel extends JPanel implements ActionListener {
         buttonPanel.setOpaque(false);
         buttonPanel.setBorder(FontsAndBorders.EMPTY_BORDER);
         add(buttonPanel,BorderLayout.SOUTH);
-        
+
         leftButton=new JButton("",IconImages.LEFT);
         leftButton.setPreferredSize(BUTTON_DIMENSION);
         leftButton.addActionListener(this);
         leftButton.setFocusable(false);
         buttonPanel.add(leftButton);
-        
+
         numberButton=new JButton(Integer.toString(x));
         numberButton.setPreferredSize(BUTTON_DIMENSION);
         numberButton.addActionListener(this);
         numberButton.setFocusable(false);
         buttonPanel.add(numberButton);
-        
+
         rightButton=new JButton(IconImages.RIGHT);
         rightButton.setPreferredSize(BUTTON_DIMENSION);
         rightButton.addActionListener(this);
         rightButton.setFocusable(false);
         buttonPanel.add(rightButton);
     }
-    
+
     public int getValueForX() {
         return x;
     }
-    
+
     @Override
     public void actionPerformed(final ActionEvent event) {
         final Object source=event.getSource();

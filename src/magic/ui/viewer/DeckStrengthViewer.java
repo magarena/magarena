@@ -35,7 +35,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public class DeckStrengthViewer extends JPanel implements ActionListener {
 
     private static final long serialVersionUID = 1L;
-    
+
     public static final Dimension PREFERRED_SIZE = new Dimension(270, 175);
     public static final Dimension START_BUTTON_SIZE = new Dimension(75, 50);
 
@@ -43,12 +43,12 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
         "<html><body>"+
         "Determine the win% of your deck vs opponent's for given number of games and AI level."+
         "</body></html>";
-    
+
     private static final Border INPUT_BORDER=BorderFactory.createEmptyBorder(0,10,0,10);
     private static final Color HIGH_COLOR=new Color(0x23,0x8E,0x23);
     private static final Color MEDIUM_COLOR=new Color(0xFF,0x7F,0x00);
     private static final Color LOW_COLOR=new Color(0xEE,0x2C,0x2C);
-    
+
     private static final MagicAI[] DEFAULT_AIS = {MagicAIImpl.MMABFast.getAI(),MagicAIImpl.MMABFast.getAI()};
 
     private final MagicDuel duel;
@@ -60,37 +60,37 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
     private final JButton startButton;
     private final Color textColor;
     private static CalculateThread calculateThread;
-    
+
     public DeckStrengthViewer(final MagicDuel duel) {
-        
+
         this.duel=duel;
         textColor=ThemeFactory.getInstance().getCurrentTheme().getTextColor();
-        
+
         setPreferredSize(PREFERRED_SIZE);
         setBorder(FontsAndBorders.UP_BORDER);
-        
+
         setLayout(new BorderLayout());
-        
+
         final TitleBar titleBar=new TitleBar("Deck Strength");
-        add(titleBar,BorderLayout.NORTH);        
+        add(titleBar,BorderLayout.NORTH);
 
         final JPanel mainPanel=new TexturedPanel();
         mainPanel.setLayout(new BorderLayout(0,4));
         mainPanel.setBorder(FontsAndBorders.BLACK_BORDER_2);
         add(mainPanel,BorderLayout.CENTER);
-    
+
         final JPanel topPanel=new JPanel(new BorderLayout(0,4));
         topPanel.setOpaque(false);
-        
+
         final JLabel purposeLabel=new JLabel(PURPOSE);
         purposeLabel.setIcon(IconImages.STRENGTH);
         purposeLabel.setForeground(textColor);
 
-        final GeneralConfig config=GeneralConfig.getInstance();        
+        final GeneralConfig config=GeneralConfig.getInstance();
 
-        final JPanel gamesPanel=new JPanel(new BorderLayout(6,0));        
+        final JPanel gamesPanel=new JPanel(new BorderLayout(6,0));
         gamesPanel.setBorder(INPUT_BORDER);
-        gamesPanel.setOpaque(false);    
+        gamesPanel.setOpaque(false);
         gamesTextField=new JTextField(String.valueOf(config.getStrengthGames()));
         gamesPanel.add(new JLabel(IconImages.TROPHY),BorderLayout.WEST);
         gamesPanel.add(gamesTextField,BorderLayout.CENTER);
@@ -117,7 +117,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
         topPanel.add(purposeLabel,BorderLayout.CENTER);
         topPanel.add(settingsPanel,BorderLayout.SOUTH);
         mainPanel.add(topPanel,BorderLayout.NORTH);
-        
+
         final JPanel centerPanel=new JPanel(new BorderLayout(4,0));
         centerPanel.setOpaque(false);
         centerPanel.setBorder(FontsAndBorders.EMPTY_BORDER);
@@ -129,31 +129,31 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
         gameLabel.setHorizontalAlignment(JLabel.CENTER);
         gameLabel.setPreferredSize(new Dimension(75,0));
         centerPanel.add(gameLabel,BorderLayout.WEST);
-        
+
         strengthLabel=new JLabel("0 %");
         strengthLabel.setForeground(textColor);
         strengthLabel.setHorizontalAlignment(JLabel.CENTER);
         strengthLabel.setFont(FontsAndBorders.FONT5);
         centerPanel.add(strengthLabel,BorderLayout.CENTER);
-        
+
         startButton=new JButton(IconImages.START);
         startButton.setFocusable(false);
         startButton.setPreferredSize(START_BUTTON_SIZE);
         startButton.addActionListener(this);
         centerPanel.add(startButton,BorderLayout.EAST);
-        
+
         progressBar=new JProgressBar();
         progressBar.setMinimum(0);
         mainPanel.add(progressBar,BorderLayout.SOUTH);
     }
-    
+
     public void halt() {
         if (calculateThread!=null) {
             calculateThread.halt();
             calculateThread=null;
         }
     }
-    
+
     @Override
     public void actionPerformed(final ActionEvent event) {
         if (calculateThread!=null) {
@@ -179,7 +179,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
             calculateThread.start();
         }
     }
-    
+
     private void setStrength(final int percentage) {
 
         strengthLabel.setText(percentage+" %");
@@ -194,12 +194,12 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
         }
         strengthLabel.repaint();
     }
-    
+
     private class CalculateThread extends Thread {
 
         private final AtomicBoolean running=new AtomicBoolean(true);
         private GameController controller;
-        
+
         public void run() {
             final GeneralConfig generalConfig=GeneralConfig.getInstance();
             final DuelConfig config=new DuelConfig(DuelConfig.getInstance());
@@ -228,7 +228,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
             startButton.repaint();
             calculateThread=null;
         }
-        
+
         public void halt() {
             running.set(false);
             if (controller!=null) {
@@ -236,7 +236,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
             }
         }
     }
-    
+
     public static boolean isRunning() {
         return calculateThread != null;
     }

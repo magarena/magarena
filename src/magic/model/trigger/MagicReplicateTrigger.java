@@ -27,7 +27,7 @@ public class MagicReplicateTrigger extends MagicWhenSpellIsCastTrigger {
             ):
             MagicEvent.NONE;
     }
-    
+
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         final MagicCardOnStack cardOnStack = event.getCardOnStack();

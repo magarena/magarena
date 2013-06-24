@@ -12,12 +12,12 @@ public class MagicDeclareAttackersAction extends MagicAction {
 
     private final MagicDeclareAttackersResult attackers;
     private final MagicPlayer active;
-    
+
     public MagicDeclareAttackersAction(final MagicPlayer player, final MagicDeclareAttackersResult result) {
         active = player;
         attackers = result;
     }
-    
+
     @Override
     public void doAction(final MagicGame game) {
         // 508.1f The active player taps the chosen creatures.
@@ -25,19 +25,19 @@ public class MagicDeclareAttackersAction extends MagicAction {
             if (!attacker.hasAbility(MagicAbility.Vigilance)) {
                 game.doAction(new MagicTapAction(attacker, true));
             }
-        }        
+        }
         // 508.1j Each chosen creature still controlled by the active player becomes an attacking creature.
         for (final MagicPermanent attacker : attackers) {
             if (attacker.getController() == active) {
                 game.doAction(new MagicDeclareAttackerAction(attacker));
             }
-        }        
-        // 508.2. Any abilities that triggered on attackers being declared go on the stack. 
+        }
+        // 508.2. Any abilities that triggered on attackers being declared go on the stack.
         for (final MagicPermanent attacker : attackers) {
-            if (attacker.hasState(MagicPermanentState.Attacking)) { 
+            if (attacker.hasState(MagicPermanentState.Attacking)) {
                 game.executeTrigger(MagicTriggerType.WhenAttacks,attacker);
             }
-        }        
+        }
     }
 
     @Override

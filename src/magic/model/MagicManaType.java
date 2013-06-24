@@ -17,17 +17,17 @@ public enum MagicManaType {
     White("white","{W}"),
     NONE("none","{N}"),
     ;
-    
+
     public static final List<MagicManaType> ALL_COLORS = Collections.unmodifiableList(Arrays.asList(
         Black,Blue,Green,Red,White));
     public static final List<MagicManaType> ALL_TYPES = Collections.unmodifiableList(Arrays.asList(
         Colorless,Black,Blue,Green,Red,White)); // Colorless must be in front.
-    
+
     public static final int NR_OF_TYPES = ALL_TYPES.size();
-    
+
     private final String name;
     private final String text;
-    
+
     private MagicManaType(final String name, final String text) {
         this.name=name;
         this.text=text;
@@ -36,15 +36,15 @@ public enum MagicManaType {
     public boolean isValid() {
         return this != MagicManaType.NONE;
     }
-    
+
     public String getName() {
         return name;
     }
-        
+
     public String getText() {
         return text;
     }
-    
+
     public static MagicManaType get(final String name) {
         for (final MagicManaType type : values()) {
             if (type.toString().equalsIgnoreCase(name)) {
@@ -53,7 +53,7 @@ public enum MagicManaType {
         }
         throw new RuntimeException("Unknown mana type " + name);
     }
-    
+
     public static List<MagicManaType> getList(final String name) {
         if ("{1}".equals(name)) {
             return Arrays.asList(Colorless);
@@ -74,7 +74,7 @@ public enum MagicManaType {
     public String toString() {
         return text;
     }
-    
+
     public MagicColor getColor() {
         switch (this) {
             case Black: return MagicColor.Black;
@@ -85,7 +85,7 @@ public enum MagicManaType {
         }
         throw new RuntimeException("No color available for MagicManaType " + this);
     }
-    
+
     public ImageIcon getIcon(final boolean small) {
         switch (this) {
             case Colorless: return small?IconImages.COST_ONE:IconImages.ONE;

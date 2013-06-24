@@ -8,9 +8,9 @@ public class MagicPayDelayedCostsAction extends MagicAction {
 
     private final MagicPlayer player;
     private MagicBuilderManaCost oldBuilderCost;
-    
+
     public MagicPayDelayedCostsAction(final MagicPlayer player) {
-        
+
         this.player=player;
     }
 

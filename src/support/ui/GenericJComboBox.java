@@ -13,7 +13,7 @@ import javax.swing.plaf.basic.BasicComboBoxRenderer;
  * {@code null} is stored in this combo box, it is not possible to have no item in the combo box selected.
  * <br/><br/>
  * Unexpected behavior may arise if not all entries are unique.
- * 
+ *
  * @author jak2
  */
 public class GenericJComboBox<E> extends JComboBox implements DescriptionProviderCellRenderer.ItemInfoProvider<E>
@@ -28,19 +28,19 @@ public class GenericJComboBox<E> extends JComboBox implements DescriptionProvide
 
         this.setDescriptionProvider(descriptionProvider);
     }
-    
+
     public GenericJComboBox(DescriptionProvider<E> descriptionProvider)
     {
         this();
-        
+
         this.setDescriptionProvider(descriptionProvider);
     }
-    
+
     public GenericJComboBox(Iterable<E> items)
     {
         this.setItems(items);
     }
-    
+
     public GenericJComboBox()
     {
         this(Collections.<E>emptyList());
@@ -80,21 +80,21 @@ public class GenericJComboBox<E> extends JComboBox implements DescriptionProvide
     {
         _model.setGenericSelectedItem(item);
     }
-    
+
     /**
      * Adds the selection listener.
-     * 
-     * @param listener 
+     *
+     * @param listener
      */
-    public void addSelectionListener(SelectionListener<E> listener)    
+    public void addSelectionListener(SelectionListener<E> listener)
     {
         _model.addSelectionListener(listener);
     }
-    
+
     /**
      * Removes the selection listener.
-     * 
-     * @param listener 
+     *
+     * @param listener
      */
     public void removeSelectionListener(SelectionListener<E> listener)
     {
@@ -106,7 +106,7 @@ public class GenericJComboBox<E> extends JComboBox implements DescriptionProvide
     {
         return _model.getSelectedItem();
     }
-    
+
     @Override
     public int getSelectedIndex()
     {
@@ -129,7 +129,7 @@ public class GenericJComboBox<E> extends JComboBox implements DescriptionProvide
     {
         this.setModel(new GenericComboBoxModel<E>(items));
     }
-    
+
     public void setItems(Iterable<E> items, E initialSelection)
     {
         this.setModel(new GenericComboBoxModel<E>(items, initialSelection));
@@ -137,7 +137,7 @@ public class GenericJComboBox<E> extends JComboBox implements DescriptionProvide
 
     /**
      * Returns an immutable list of all of items in this combo box.
-     * 
+     *
      * @return
      */
     public List<E> getItems()
@@ -184,10 +184,10 @@ public class GenericJComboBox<E> extends JComboBox implements DescriptionProvide
             initSelection = _model.getSelectedItem();
             model.transferSelectionListeners(_model);
         }
-        
+
         _model = model;
         super.setModel(model);
-        
+
         //If initial selection is in the new model maintain the selection
         if(_model.getElements().contains(initSelection))
         {
@@ -205,7 +205,7 @@ public class GenericJComboBox<E> extends JComboBox implements DescriptionProvide
     {
         return _model;
     }
-    
+
     /**
      * This method must be public to match a required interface; however, it is not intended for external use.
      *

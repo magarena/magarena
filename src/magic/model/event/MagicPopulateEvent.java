@@ -19,7 +19,7 @@ public class MagicPopulateEvent extends MagicEvent {
             "Put a token onto the battlefield that's a copy of a creature token you control."
         );
     }
-    
+
     private static final MagicEventAction EA = new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

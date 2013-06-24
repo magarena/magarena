@@ -7,7 +7,7 @@ import magic.model.choice.MagicDeclareAttackersChoice;
 import magic.model.choice.MagicDeclareAttackersResult;
 
 public class MagicDeclareAttackersEvent extends MagicEvent {
-    
+
     public MagicDeclareAttackersEvent(final MagicPlayer player) {
         super(
             MagicEvent.NO_SOURCE,
@@ -17,7 +17,7 @@ public class MagicDeclareAttackersEvent extends MagicEvent {
             ""
         );
     }
-    
+
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

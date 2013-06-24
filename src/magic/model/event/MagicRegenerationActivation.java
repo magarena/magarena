@@ -12,12 +12,12 @@ public class MagicRegenerationActivation extends MagicPermanentActivation {
     private static final MagicActivationHints hint = new MagicActivationHints(MagicTiming.Pump);
 
     private final MagicManaCost cost;
-    
+
     public MagicRegenerationActivation(final MagicManaCost aCost) {
         super(hint, "Regen");
         cost = aCost;
     }
-    
+
     @Override
     public MagicEvent[] getCostEvent(final MagicPermanent source) {
         return new MagicEvent[]{

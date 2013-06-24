@@ -15,13 +15,13 @@ import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetHint;
 
 public class MagicSoulshiftTrigger extends MagicWhenPutIntoGraveyardTrigger {
-    
+
     private final int cmc;
-    
+
     public MagicSoulshiftTrigger(final int cmc) {
         this.cmc = cmc;
     }
-    
+
     @Override
     public MagicEvent executeTrigger(
             final MagicGame game,
@@ -34,7 +34,7 @@ public class MagicSoulshiftTrigger extends MagicWhenPutIntoGraveyardTrigger {
                         MagicTargetFilter.Operator.LESS_THAN_OR_EQUAL,
                         cmc
                     );
-            final MagicTargetChoice targetChoice = 
+            final MagicTargetChoice targetChoice =
                     new MagicTargetChoice(
                     targetFilter,false,MagicTargetHint.None,
                     "a Spirit card from your graveyard)");

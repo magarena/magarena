@@ -8,49 +8,49 @@ import magic.model.MagicCopyable;
 public class MagicPayedCost implements MagicCopyable {
 
     public static final MagicPayedCost NO_COST = new MagicPayedCost();
-    
+
     private MagicTarget target;
     private int x;
     private int kicker;
-    
+
     public MagicPayedCost() {
         target = MagicTargetNone.getInstance();
         x = 0;
         kicker = 0;
     }
-    
+
     public MagicPayedCost(final MagicPayedCost payedCost) {
         target = payedCost.target;
         x = payedCost.x;
         kicker = payedCost.kicker;
     }
-    
+
     public MagicPayedCost(final MagicCopyMap copyMap,final MagicPayedCost payedCost) {
         target = copyMap.copy(payedCost.target);
         x = payedCost.x;
         kicker = payedCost.kicker;
     }
-    
+
     public MagicCopyable copy(final MagicCopyMap copyMap) {
         return new MagicPayedCost(copyMap, this);
     }
-    
+
     private void setTarget(final MagicTarget target) {
         this.target = target;
     }
-    
+
     public MagicTarget getTarget() {
         return target;
     }
-    
+
     private void setX(final int x) {
-        this.x = x;    
+        this.x = x;
     }
-        
+
     public int getX() {
         return x;
-    }    
-    
+    }
+
     void set(final Object choiceResult) {
         if (choiceResult instanceof MagicTarget) {
             setTarget((MagicTarget)choiceResult);
@@ -58,7 +58,7 @@ public class MagicPayedCost implements MagicCopyable {
             setX(((MagicPayManaCostResult)choiceResult).getX());
         }
     }
-    
+
     public void setKicker(final int aKicker) {
         kicker = aKicker;
     }
@@ -66,7 +66,7 @@ public class MagicPayedCost implements MagicCopyable {
     public int getKicker() {
         return kicker;
     }
-    
+
     public boolean isKicked() {
         return kicker > 0;
     }

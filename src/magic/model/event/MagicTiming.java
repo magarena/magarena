@@ -6,14 +6,14 @@ import magic.model.MagicSource;
 import magic.model.phase.MagicPhaseType;
 
 public enum MagicTiming {
-    
+
     // Creature spells
     Main("main",5),                 // Main
     FirstMain("fmain",5),           // First main : haste, can't block, shroud,
                                     // comes into play, static effect, non tap ability, combat trigger
     SecondMain("smain",5),          // Second main : defender, non combat or defensive ability, red mana unlikely
     Flash("flash",5),               // Declare attackers or end of turn from opponent
-    CounterFlash("counterflash",9), // Like flash, but also when there is a spell of opponent on stack    
+    CounterFlash("counterflash",9), // Like flash, but also when there is a spell of opponent on stack
     PumpFlash("pumpFlash",6),       // Like flash, but also declare blockers, as response
 
     // Other permanent spells
@@ -23,7 +23,7 @@ public enum MagicTiming {
     Artifact("artifact",4),         // Main
     Aura("aura",7),                 // Main
     Equipment("equipment",7),       // Main
-    
+
     // Remaining spells & abilities.
     Draw("draw",1),                 // Main
     Tapping("tapping",2),           // Main, declare attackers or as response
@@ -38,27 +38,27 @@ public enum MagicTiming {
     MustAttack("mustattack",8),     // First main opponent's turn
     Spell("spell",9),               // When there is a spell on stack
     Storm("storm",1),               // When a spell was played this turn, second main
-    
+
     // No timing
     None("none",0),                 // No restrictions.
     ;
-    
+
     private final String code;
     private final int priority;
-    
+
     private MagicTiming(final String code,final int priority) {
         this.code=code;
         this.priority=priority;
     }
-    
+
     private String getCode() {
         return code;
     }
-    
+
     public int getPriority() {
         return priority;
     }
-    
+
     public boolean canPlay(final MagicGame game,final MagicSource source) {
         final MagicPlayer controller=source.getController();
         switch (this) {
@@ -77,11 +77,11 @@ public enum MagicTiming {
             case NextTurn:
                 return game.isPhase(MagicPhaseType.SecondMain);
             case Flash:
-                return 
-                    game.getTurnPlayer() != controller && 
+                return
+                    game.getTurnPlayer() != controller &&
                     (game.isPhase(MagicPhaseType.DeclareAttackers) ||
                      game.isPhase(MagicPhaseType.EndOfTurn)
-                    );                
+                    );
             case CounterFlash:
                 return (game.getTurnPlayer() != controller &&
                         (game.isPhase(MagicPhaseType.DeclareAttackers) ||
@@ -90,25 +90,25 @@ public enum MagicTiming {
                        ) || game.getStack().containsOpponentSpells(controller);
             case PumpFlash:
                 return (game.getTurnPlayer() != controller &&
-                        (game.isPhase(MagicPhaseType.DeclareAttackers) || 
+                        (game.isPhase(MagicPhaseType.DeclareAttackers) ||
                          game.isPhase(MagicPhaseType.EndOfTurn)
                         )
-                       ) || 
-                       game.isPhase(MagicPhaseType.DeclareBlockers) || 
-                       game.getStack().isResponse(controller);                
+                       ) ||
+                       game.isPhase(MagicPhaseType.DeclareBlockers) ||
+                       game.getStack().isResponse(controller);
             case Tapping:
-                return game.isMainPhase() || 
-                       game.isPhase(MagicPhaseType.DeclareAttackers) || 
+                return game.isMainPhase() ||
+                       game.isPhase(MagicPhaseType.DeclareAttackers) ||
                        game.getStack().isResponse(controller);
             case Removal:
                 return game.isMainPhase() ||
-                       game.isPhase(MagicPhaseType.DeclareBlockers) || 
+                       game.isPhase(MagicPhaseType.DeclareBlockers) ||
                        game.getStack().isResponse(controller);
             case Pump:
-                return (game.getTurnPlayer()==controller && 
+                return (game.getTurnPlayer()==controller &&
                         game.isPhase(MagicPhaseType.FirstMain)
                        ) ||
-                       game.isPhase(MagicPhaseType.DeclareBlockers) || 
+                       game.isPhase(MagicPhaseType.DeclareBlockers) ||
                        game.getStack().isResponse(controller);
             case Spell:
                 return game.getStack().containsSpells();
@@ -119,24 +119,24 @@ public enum MagicTiming {
             case Block:
                 return game.isPhase(MagicPhaseType.DeclareBlockers);
             case Animate:
-                return (game.getTurnPlayer()==controller && 
+                return (game.getTurnPlayer()==controller &&
                         game.isPhase(MagicPhaseType.FirstMain)
                        ) ||
-                       (game.getTurnPlayer()!=controller && 
+                       (game.getTurnPlayer()!=controller &&
                         game.isPhase(MagicPhaseType.DeclareAttackers)
                        );
             case Token:
-                return (game.getTurnPlayer()==controller && 
+                return (game.getTurnPlayer()==controller &&
                         game.isPhase(MagicPhaseType.FirstMain)
                        ) ||
-                       (game.getTurnPlayer()!=controller && 
-                        (game.isPhase(MagicPhaseType.DeclareAttackers) || 
+                       (game.getTurnPlayer()!=controller &&
+                        (game.isPhase(MagicPhaseType.DeclareAttackers) ||
                          game.isPhase(MagicPhaseType.EndOfTurn)
                         )
                        ) ||
                        game.getStack().isResponse(controller);
             case MustAttack:
-                return game.getTurnPlayer()!=controller && 
+                return game.getTurnPlayer()!=controller &&
                        game.isPhase(MagicPhaseType.FirstMain);
             case Storm:
                 return game.getSpellsPlayed() > 0 ||
@@ -145,7 +145,7 @@ public enum MagicTiming {
                 return true;
         }
     }
-    
+
     public static MagicTiming getTimingFor(final String code) {
         for (final MagicTiming timing : values()) {
             if (timing.getCode().equalsIgnoreCase(code)) {

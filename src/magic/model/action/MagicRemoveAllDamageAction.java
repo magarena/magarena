@@ -7,9 +7,9 @@ public class MagicRemoveAllDamageAction extends MagicAction {
 
     private final MagicPermanent permanent;
     private int oldDamage;
-    
+
     MagicRemoveAllDamageAction(final MagicPermanent permanent) {
-        
+
         this.permanent=permanent;
     }
 

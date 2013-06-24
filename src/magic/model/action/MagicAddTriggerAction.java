@@ -10,12 +10,12 @@ public class MagicAddTriggerAction extends MagicAction {
     private final MagicPermanent permanent;
     private final MagicTrigger<?> trigger;
     private MagicPermanentTrigger permanentTrigger;
-    
+
     public MagicAddTriggerAction(final MagicPermanent permanent,final MagicTrigger<?> trigger) {
         this.permanent=permanent;
         this.trigger=trigger;
     }
-    
+
     public MagicAddTriggerAction(final MagicTrigger<?> trigger) {
         this(MagicPermanent.NONE, trigger);
     }

@@ -10,12 +10,12 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class MagicGameLog {
-    
+
     private static final String gameLog = MagicMain.getGamePath() + File.separator + "game.log";
     private static PrintWriter writer;
-    
+
     private MagicGameLog() {}
-    
+
     public static void initialize() {
         try {
             writer = new PrintWriter(gameLog);
@@ -35,14 +35,14 @@ public class MagicGameLog {
             System.err.println("Unable to create game log");
         }
     }
-    
+
     public static void log(final String message) {
         if (writer != null) {
             writer.println(message);
             writer.flush();
-        }    
+        }
     }
-    
+
     public static void close() {
         if (writer != null) {
             writer.close();

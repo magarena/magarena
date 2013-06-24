@@ -13,9 +13,9 @@ import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
 
 public class MagicExileCardEvent extends MagicEvent {
-    
+
     private final MagicCondition[] conds;
-    
+
     public MagicExileCardEvent(final MagicSource source, final MagicTargetChoice targetChoice) {
         this(source, source.getController(), targetChoice);
     }
@@ -33,7 +33,7 @@ public class MagicExileCardEvent extends MagicEvent {
         );
         conds = new MagicCondition[]{MagicConditionFactory.HasOptions(targetChoice)};
     }
-     
+
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -52,7 +52,7 @@ public class MagicExileCardEvent extends MagicEvent {
             });
         }
     };
-    
+
     @Override
     public MagicCondition[] getConditions() {
         return conds;

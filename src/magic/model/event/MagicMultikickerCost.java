@@ -7,23 +7,23 @@ import magic.model.choice.MagicKickerChoice;
 import magic.model.action.MagicSetKickerAction;
 
 public class MagicMultikickerCost extends MagicAdditionalCost implements MagicEventAction {
-    
+
     final MagicManaCost manaCost;
     final String name;
-    
+
     private MagicMultikickerCost(final MagicManaCost aManaCost, final String aName) {
         manaCost = aManaCost;
         name = aName;
     }
-    
+
     public MagicMultikickerCost(final MagicManaCost aManaCost) {
         this(aManaCost, "kicker");
     }
-    
+
     public static MagicMultikickerCost Replicate(final MagicManaCost aManaCost) {
         return new MagicMultikickerCost(aManaCost, "replicate");
     }
-    
+
     public MagicEvent getEvent(final MagicSource source) {
         return new MagicEvent(
             source,
@@ -32,7 +32,7 @@ public class MagicMultikickerCost extends MagicAdditionalCost implements MagicEv
             "PN may pay " + manaCost.getText() + " any number of times$$."
         );
     }
-        
+
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         event.payManaCost(game,event.getPlayer());

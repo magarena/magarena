@@ -14,7 +14,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class MagicGameReport implements Thread.UncaughtExceptionHandler {
-    
+
     public void uncaughtException(final Thread th, final Throwable ex) {
         MagicGameReport.buildReport(MagicGame.getInstance(), th, ex);
         System.exit(1);
@@ -23,7 +23,7 @@ public class MagicGameReport implements Thread.UncaughtExceptionHandler {
     private static void buildCard(final MagicGame game,final String place,final MagicCard card,final StringBuilder report) {
         report.append("   - ").append(place).append(" : ").append(card.getName()).append("\n");
     }
-    
+
     private static void buildPermanent(final MagicGame game,final MagicPermanent permanent,final StringBuilder report) {
         report.append("   - Permanent : ").append(permanent.getName());
         if (permanent.isCreature()) {
@@ -40,7 +40,7 @@ public class MagicGameReport implements Thread.UncaughtExceptionHandler {
         }
         report.append("\n");
     }
-    
+
     private static void buildPlayer(final MagicGame game,final MagicPlayer player,final StringBuilder report) {
         report.append(player.getIndex()).append("] ");
         report.append("Player : ").append(player.getName());
@@ -55,12 +55,12 @@ public class MagicGameReport implements Thread.UncaughtExceptionHandler {
         for (final MagicCard card: player.getGraveyard()) {
             buildCard(game,"Graveyard",card,report);
         }
-        
+
         for (final MagicPermanent permanent : player.getPermanents()) {
             buildPermanent(game,permanent,report);
         }
     }
-    
+
     private static void buildStack(final MagicGame game,final StringBuilder report) {
         report.append("Stack : ").append(game.getStack().size()).append('\n');
         for (final MagicItemOnStack itemOnStack : game.getStack()) {
@@ -85,7 +85,7 @@ public class MagicGameReport implements Thread.UncaughtExceptionHandler {
         }
         report.append("Score = ").append(totalScore).append("\n");
     }
-    
+
     private static String buildReport(final MagicGame game) {
         final StringBuilder report=new StringBuilder();
         report.append("Turn : ").append(game.getTurn());
@@ -94,13 +94,13 @@ public class MagicGameReport implements Thread.UncaughtExceptionHandler {
         report.append("  Player : ").append(game.getTurnPlayer());
         report.append("  Score : ").append(game.getScore());
         report.append("\n");
-        
+
         for (final MagicPlayer player : game.getPlayers()) {
             buildPlayer(game,player,report);
         }
 
         buildStack(game,report);
-        buildScore(game,report);        
+        buildScore(game,report);
         return report.toString();
     }
 
@@ -145,7 +145,7 @@ public class MagicGameReport implements Thread.UncaughtExceptionHandler {
         //save a copy to a crash log file
         final File clog = new File(MagicMain.getGamePath(), "crash.log");
         try {
-            FileIO.toFile(clog, sb.toString(), true); 
+            FileIO.toFile(clog, sb.toString(), true);
         } catch (final IOException ex3) {
             System.err.println("Unable to save crash log");
         }

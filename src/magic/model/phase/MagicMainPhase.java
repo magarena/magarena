@@ -10,11 +10,11 @@ public class MagicMainPhase extends MagicPhase {
     private MagicMainPhase(final MagicPhaseType phaseType) {
         super(phaseType);
     }
-    
+
     public static MagicPhase getFirstInstance() {
         return FIRST_INSTANCE;
     }
-    
+
     public static MagicPhase getSecondInstance() {
         return SECOND_INSTANCE;
     }

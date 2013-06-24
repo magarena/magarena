@@ -5,9 +5,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TextImages {
-    
+
     private static final Map<String,ImageIcon> TEXT_ICONS=new HashMap<String,ImageIcon>();
-    
+
     static {
         TEXT_ICONS.put("{0}",IconImages.COST_ZERO);
         TEXT_ICONS.put("{1}",IconImages.COST_ONE);
@@ -27,7 +27,7 @@ public class TextImages {
         TEXT_ICONS.put("{15}",IconImages.COST_FIFTEEN);
         TEXT_ICONS.put("{16}",IconImages.COST_SIXTEEN);
         TEXT_ICONS.put("{X}",IconImages.COST_X);
-        
+
         TEXT_ICONS.put("{B}",IconImages.COST_BLACK);
         TEXT_ICONS.put("{U}",IconImages.COST_BLUE);
         TEXT_ICONS.put("{G}",IconImages.COST_GREEN);
@@ -63,7 +63,7 @@ public class TextImages {
         TEXT_ICONS.put("{br}",IconImages.BRIBECOUNTER);
         TEXT_ICONS.put("{L}",IconImages.LOSE);
     }
-    
+
     public static ImageIcon getIcon(final String text) {
         if (!TEXT_ICONS.containsKey(text)) {
             throw new RuntimeException("No corresponding icon for " + text);

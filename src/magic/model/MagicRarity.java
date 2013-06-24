@@ -8,7 +8,7 @@ public enum MagicRarity {
     Mythic_Rare('M');
 
     public static final int length = values().length;
-    
+
     private final char c;
 
     private MagicRarity(final char c) {
@@ -22,7 +22,7 @@ public enum MagicRarity {
     public String getName() {
         return toString().replace('_',' ');
     }
-    
+
     public static MagicRarity getRarity(final char c) {
         for (final MagicRarity type : values()) {
             if (type.c == c) {

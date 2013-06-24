@@ -11,21 +11,21 @@ import magic.model.event.MagicEvent;
 import javax.swing.ImageIcon;
 
 public class MagicAbilityOnStack extends MagicItemOnStack {
-        
+
     public MagicAbilityOnStack(
             final MagicPermanentActivation activation,
             final MagicPermanent permanent,
             final MagicPayedCost payedCost) {
         super(permanent, permanent.getController(), activation.getPermanentEvent(permanent,payedCost), activation);
     }
-    
+
     public MagicAbilityOnStack(
             final MagicCardActivation activation,
             final MagicEvent event,
             final MagicPayedCost payedCost) {
         super(event.getSource(), event.getPlayer(), event, activation);
     }
-    
+
     private MagicAbilityOnStack(final MagicCopyMap copyMap, final MagicAbilityOnStack source) {
         super(copyMap, source);
     }
@@ -44,9 +44,9 @@ public class MagicAbilityOnStack extends MagicItemOnStack {
     public boolean canBeCountered() {
         return true;
     }
-        
+
     @Override
     public ImageIcon getIcon() {
         return IconImages.ABILITY;
-    }    
+    }
 }

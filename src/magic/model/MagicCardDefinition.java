@@ -108,11 +108,11 @@ public class MagicCardDefinition {
     private boolean excludeManaOrCombat;
 
     private String requiresGroovy;
-    
+
     public MagicCardDefinition() {
-        initialize();    
+        initialize();
     }
-    
+
     protected void initialize() {}
 
 
@@ -126,7 +126,7 @@ public class MagicCardDefinition {
             requiresGroovy = null;
         }
     }
-    
+
     public static void printStatistics() {
         System.err.println(numTriggers + " triggers");
         System.err.println(numStatics + " statics");
@@ -135,7 +135,7 @@ public class MagicCardDefinition {
         System.err.println(numSpellEvent + " spell event");
         System.err.println(numCDAs + " CDAs");
     }
-    
+
     public boolean isValid() {
         return true;
     }
@@ -151,15 +151,15 @@ public class MagicCardDefinition {
     public boolean isIgnored(final long size) {
         return ignore != null && ignore.contains(size);
     }
-    
+
     public String getName() {
         return name;
     }
-    
+
     public void setName(final String name) {
         this.name = name;
     }
-    
+
     public String getFullName() {
         return fullName;
     }
@@ -167,15 +167,15 @@ public class MagicCardDefinition {
     public void setFullName(final String name) {
         fullName = name;
     }
-    
+
     public void setIndex(final int index) {
         this.index=index;
     }
-        
+
     public int getIndex() {
         return index;
     }
-        
+
     public String getImageName() {
         return fullName;
     }
@@ -183,7 +183,7 @@ public class MagicCardDefinition {
     public void setImageCount(final int count) {
         this.imageCount = count;
     }
-    
+
     public int getImageCount() {
         return imageCount;
     }
@@ -195,19 +195,19 @@ public class MagicCardDefinition {
     public String getImageURL() {
         return imageURL;
     }
-    
+
     public void setCardInfoURL(final String url) {
         this.cardInfoUrl = url;
     }
-    
+
     public String getCardInfoURL() {
         return this.cardInfoUrl;
     }
-    
+
     public String getCardTextName() {
         return getImageName();
     }
-        
+
     public void setValue(final double value) {
         this.value = value;
     }
@@ -215,33 +215,33 @@ public class MagicCardDefinition {
     public double getValue() {
         return value;
     }
-    
+
     public void setRemoval(final int removal) {
         this.removal=removal;
     }
-    
+
     public int getRemoval() {
         return removal;
     }
-    
+
     public int getScore() {
         if (score<0) {
             score=ArtificialScoringSystem.getCardDefinitionScore(this);
         }
         return score;
     }
-    
+
     public int getFreeScore() {
         if (score<0) {
             score=ArtificialScoringSystem.getFreeCardDefinitionScore(this);
         }
         return score;
     }
-                    
+
     public void setRarity(final char c) {
         this.rarity = MagicRarity.getRarity(c);
     }
-    
+
     public boolean isRarity(final MagicRarity r) {
         return this.rarity == r;
     }
@@ -249,11 +249,11 @@ public class MagicCardDefinition {
     public int getRarity() {
         return rarity.ordinal();
     }
-    
+
     public String getRarityString() {
         return rarity.getName();
     }
-    
+
     public Color getRarityColor() {
         final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
         switch (getRarity()) {
@@ -263,11 +263,11 @@ public class MagicCardDefinition {
             default: return theme.getColor(Theme.COLOR_COMMON_FOREGROUND);
         }
     }
-                
+
     public void setToken() {
         token=true;
     }
-    
+
     public boolean isToken() {
         return token;
     }
@@ -275,67 +275,67 @@ public class MagicCardDefinition {
     int getTypeFlags() {
         return typeFlags;
     }
-    
+
     public void addType(final MagicType type) {
         typeFlags|=type.getMask();
     }
-    
+
     public boolean hasType(final MagicType type) {
         return (typeFlags&type.getMask())!=0;
     }
-    
+
     public boolean isBasic() {
         return hasType(MagicType.Basic);
     }
-    
+
     public boolean isLand() {
         return hasType(MagicType.Land);
     }
-    
+
     public boolean isCreature() {
         return hasType(MagicType.Creature);
     }
-    
+
     public boolean isArtifact() {
         return hasType(MagicType.Artifact);
     }
-        
+
     public boolean isEquipment() {
         return isArtifact() && hasSubType(MagicSubType.Equipment);
     }
-    
+
     public boolean isPlaneswalker() {
         return hasType(MagicType.Planeswalker);
     }
-    
+
     public boolean isEnchantment() {
         return hasType(MagicType.Enchantment);
     }
-    
+
     public boolean isLegendary() {
         return hasType(MagicType.Legendary);
     }
-    
+
     public boolean isTribal() {
         return hasType(MagicType.Tribal);
     }
-    
+
     public boolean isAura() {
         return isEnchantment() && hasSubType(MagicSubType.Aura);
     }
-    
+
     public boolean isInstant() {
         return hasType(MagicType.Instant);
     }
-    
+
     public boolean isSorcery() {
         return hasType(MagicType.Sorcery);
     }
-    
+
     public boolean isSpell() {
         return isInstant()||isSorcery();
     }
-    
+
     public String getLongTypeString() {
         if (isBasic()) {
             return "Basic " + getTypeString();
@@ -343,56 +343,56 @@ public class MagicCardDefinition {
         if (isLegendary()) {
             return "Legendary " + getTypeString();
         }
-        
+
         if (isTribal()) {
             return "Tribal " + getTypeString();
         }
-        return getTypeString();    
+        return getTypeString();
     }
-    
+
     public String getTypeString() {
         final StringBuilder sb = new StringBuilder();
         if (isLand()) {
             sb.append(MagicType.Land.toString());
-        } 
+        }
         if (isArtifact()) {
             if (sb.length() > 0) {
                 sb.append(" ");
             }
             sb.append(MagicType.Artifact.toString());
-        } 
+        }
         if (isCreature()) {
             if (sb.length() > 0) {
                 sb.append(" ");
             }
             sb.append(MagicType.Creature.toString());
-        } 
+        }
         if (isEnchantment()) {
             if (sb.length() > 0) {
                 sb.append(" ");
             }
             sb.append(MagicType.Enchantment.toString());
-        } 
+        }
         if (isInstant()) {
             if (sb.length() > 0) {
                 sb.append(" ");
             }
             sb.append(MagicType.Instant.toString());
-        } 
+        }
         if (isSorcery()) {
             if (sb.length() > 0) {
                 sb.append(" ");
             }
             sb.append(MagicType.Sorcery.toString());
         }
-        
-        return sb.toString();    
+
+        return sb.toString();
     }
 
     public boolean usesStack() {
         return !isLand();
     }
-    
+
     public void setSubTypes(final String[] subTypeNames) {
         subTypeFlags = MagicSubType.getSubTypes(subTypeNames);
     }
@@ -400,22 +400,22 @@ public class MagicCardDefinition {
     EnumSet<MagicSubType> genSubTypeFlags() {
         return subTypeFlags.clone();
     }
-    
+
     EnumSet<MagicSubType> getSubTypeFlags() {
         final EnumSet<MagicSubType> subTypes = genSubTypeFlags();
         applyCDASubType(null, null, subTypes);
         return subTypes;
     }
-    
+
     public void applyCDASubType(
-            final MagicGame game, 
-            final MagicPlayer player, 
+            final MagicGame game,
+            final MagicPlayer player,
             final Set<MagicSubType> flags) {
         for (final MagicCDA lv : CDAs) {
             lv.getSubTypeFlags(game, player, flags);
         }
     }
-    
+
     public String getSubTypeString() {
         final String brackets = getSubTypeFlags().toString(); // [...,...]
         if (brackets.length() <= 2) {
@@ -423,15 +423,15 @@ public class MagicCardDefinition {
         }
         return brackets.substring(1, brackets.length() - 1);
     }
-    
+
     public boolean hasSubType(final MagicSubType subType) {
         return getSubTypeFlags().contains(subType);
     }
-    
+
     public void setColors(final String colors) {
-        colorFlags=MagicColor.getFlags(colors);        
+        colorFlags=MagicColor.getFlags(colors);
     }
-    
+
     public boolean hasColor(final MagicColor color) {
         return (colorFlags&color.getMask())!=0;
     }
@@ -439,19 +439,19 @@ public class MagicCardDefinition {
     public boolean isColorless() {
         return colorFlags == 0;
     }
-        
+
     public int getColorFlags() {
         return colorFlags;
     }
-    
+
     public int getConvertedCost() {
         return cost.getConvertedCost();
     }
-    
+
     public boolean hasConvertedCost(final int c) {
         return getConvertedCost() == c;
     }
-    
+
     public int getCostBucket() {
         switch (getConvertedCost()) {
             case 0:
@@ -461,11 +461,11 @@ public class MagicCardDefinition {
             case 3:
             case 4:
                 return 1;
-            default: 
+            default:
                 return 2;
         }
     }
-    
+
     public boolean hasX() {
         return cost.hasX();
     }
@@ -477,14 +477,14 @@ public class MagicCardDefinition {
         }
     }
 
-    public void validate() {                                                           
-        //every card should have a timing hint                                                                                        
+    public void validate() {
+        //every card should have a timing hint
         if (!isToken() && getTiming() == MagicTiming.None) {
             throw new RuntimeException(
                 getName() + " does not have a timing hint"
             );
         }
-        
+
         //check colorFlags is set
         if (colorFlags == -1) {
             throw new RuntimeException(name + "'s color is not set");
@@ -494,7 +494,7 @@ public class MagicCardDefinition {
     public MagicManaCost getCost() {
         return cost;
     }
-    
+
     public MagicEvent[] getCostEvent(final MagicCard source) {
         final List<MagicEvent> costEvent = new ArrayList<MagicEvent>();
         if (cost != MagicManaCost.ZERO) {
@@ -508,7 +508,7 @@ public class MagicCardDefinition {
         }
         return costEvent.toArray(new MagicEvent[0]);
     }
-    
+
     public boolean isPlayable(final MagicPlayerProfile profile) {
         if (isLand()) {
             int source = 0;
@@ -520,11 +520,11 @@ public class MagicCardDefinition {
             return cost.getCostScore(profile) > 0;
         }
     }
-        
+
     public void setEquipCost(final MagicManaCost equipCost) {
         add(new MagicEquipActivation(equipCost));
     }
-        
+
     public void setManaSourceText(final String sourceText) {
         manaSourceText=sourceText;
         for (int index=0;index<sourceText.length();index+=2) {
@@ -534,20 +534,20 @@ public class MagicCardDefinition {
             manaSource[color.ordinal()]=source;
         }
     }
-    
+
     public int getManaSource(final MagicColor color) {
         return manaSource[color.ordinal()];
     }
-    
+
     public void setPowerToughness(final int aPower, final int aToughness) {
         power = aPower;
         toughness = aToughness;
     }
-    
+
     public int getCardPower() {
         return power;
     }
-    
+
     public int getCardToughness() {
         return toughness;
     }
@@ -555,21 +555,21 @@ public class MagicCardDefinition {
     public MagicPowerToughness genPowerToughness() {
         return new MagicPowerToughness(power, toughness);
     }
-        
+
     public void applyCDAPowerToughness(
-            final MagicGame game, 
-            final MagicPlayer player, 
+            final MagicGame game,
+            final MagicPlayer player,
             final MagicPermanent perm,
             final MagicPowerToughness pt) {
         for (final MagicCDA lv : CDAs) {
             lv.modPowerToughness(game, player, perm, pt);
         }
     }
-    
+
     public void addAbility(final MagicAbility ability) {
         addAbility(ability, "");
     }
-    
+
     public void addAbility(final MagicAbility ability, final String arg) {
         ability.addAbilityImpl(this, arg);
         abilityFlags.add(ability);
@@ -578,31 +578,31 @@ public class MagicCardDefinition {
     public Set<MagicAbility> genAbilityFlags() {
         return abilityFlags.clone();
     }
-    
+
     public boolean hasAbility(final MagicAbility ability) {
         return abilityFlags.contains(ability);
     }
-    
+
     public void setText(final String text) {
         this.text = text;
     }
-    
+
     public String getText() {
         return this.text;
     }
-    
+
     public void setStaticType(final MagicStaticType staticType) {
         this.staticType=staticType;
     }
-    
+
     MagicStaticType getStaticType() {
         return staticType;
     }
-    
+
     public void setTiming(final MagicTiming timing) {
         this.timing=timing;
     }
-    
+
     public MagicTiming getTiming() {
         return timing;
     }
@@ -610,13 +610,13 @@ public class MagicCardDefinition {
     public void add(final MagicChangeCardDefinition mod) {
         mod.change(this);
     }
-    
+
     public void setEvent(final MagicCardEvent aCardEvent) {
         assert cardEvent == MagicPlayCardEvent.create() : "Attempting to set two MagicCardEvents for " + this;
         cardEvent = aCardEvent;
         numSpellEvent++;
     }
-    
+
     public MagicCardEvent getCardEvent() {
         return cardEvent;
     }
@@ -624,22 +624,22 @@ public class MagicCardDefinition {
     public MagicActivationHints getActivationHints() {
         return new MagicActivationHints(timing,true);
     }
-    
+
     // cast card activation is the first element of cardActivations
     public MagicActivation getCastActivation() {
         assert cardActivations.size() >= 1 : this + " has no card activations";
         return cardActivations.getFirst();
     }
-    
+
     public Collection<MagicActivation> getCardActivations() {
         return cardActivations;
     }
-    
+
     public void addCDA(final MagicCDA cda) {
         CDAs.add(cda);
         numCDAs++;
     }
-    
+
     public void addCostEvent(final MagicEventSource eventSource) {
         costEventSources.add(eventSource);
     }
@@ -667,78 +667,78 @@ public class MagicCardDefinition {
         drawnTriggers.add(trigger);
         numTriggers++;
     }
-        
+
     public void addTrigger(final MagicTrigger<?> trigger) {
         triggers.add(trigger);
         numTriggers++;
     }
-    
+
     public void addStatic(final MagicStatic mstatic) {
         statics.add(mstatic);
         numStatics++;
     }
-    
+
     public Collection<MagicTrigger<?>> getTriggers() {
         return triggers;
     }
-    
+
     public Collection<MagicStatic> getStatics() {
         return statics;
     }
-    
+
     public Collection<MagicWhenSpellIsCastTrigger> getSpellIsCastTriggers() {
         return spellIsCastTriggers;
     }
-    
+
     public Collection<MagicWhenComesIntoPlayTrigger> getComeIntoPlayTriggers() {
         return comeIntoPlayTriggers;
     }
-    
+
     public Collection<MagicWhenPutIntoGraveyardTrigger> getPutIntoGraveyardTriggers() {
         return putIntoGraveyardTriggers;
     }
-    
+
     public Collection<MagicWhenDrawnTrigger> getDrawnTriggers() {
         return drawnTriggers;
     }
-    
+
     public void addAct(final MagicPermanentActivation activation) {
         activations.add(activation);
         numPermanentActivations++;
     }
-    
+
     public void addCardAct(final MagicCardActivation activation) {
         cardActivations.add(activation);
     }
-    
+
     public Collection<MagicActivation> getActivations() {
         return activations;
     }
-    
+
     public void addManaAct(final MagicManaActivation activation) {
         manaActivations.add(activation);
         numManaActivations++;
     }
-    
+
     public Collection<MagicManaActivation> getManaActivations() {
         return manaActivations;
     }
-    
+
     public void setExcludeManaOrCombat() {
         excludeManaOrCombat=true;
     }
-    
+
     public boolean hasExcludeManaOrCombat() {
         return excludeManaOrCombat;
     }
-    
+
     public ImageIcon getIcon() {
         if (isLand()) {
-            return IconImages.LAND; 
+            return IconImages.LAND;
         } else if (isCreature()) {
             return IconImages.CREATURE;
         } else if (isEquipment()) {
-            return IconImages.EQUIPMENT; 
+            return IconImages.EQUIPMENT;
         } else if (isAura()) {
             return IconImages.AURA;
         } else if (isEnchantment()) {
@@ -749,7 +749,7 @@ public class MagicCardDefinition {
             return IconImages.SPELL;
         }
     }
-    
+
     private boolean subTypeHasText(final String s) {
         final MagicSubType[] subTypeValues = MagicSubType.values();
         for (final MagicSubType subtype : subTypeValues) {
@@ -759,7 +759,7 @@ public class MagicCardDefinition {
         }
         return false;
     }
-        
+
     private boolean abilityHasText(final String s) {
         for (final MagicAbility ability : MagicAbility.CORE) {
             if(hasAbility(ability) && ability.getName().toLowerCase().contains(s)) {
@@ -768,7 +768,7 @@ public class MagicCardDefinition {
         }
         return false;
     }
-    
+
     public boolean hasText(String s) {
         s = s.toLowerCase();
         return (
@@ -779,7 +779,7 @@ public class MagicCardDefinition {
             getText().toLowerCase().contains(s)
         );
     }
-    
+
     @Override
     public String toString() {
         return getName();
@@ -798,7 +798,7 @@ public class MagicCardDefinition {
             return NAME_COMPARATOR_DESC.compare(cardDefinition2, cardDefinition1);
         }
     };
-    
+
     public static final Comparator<MagicCardDefinition> CONVERTED_COMPARATOR_DESC=new Comparator<MagicCardDefinition>() {
         @Override
         public int compare(final MagicCardDefinition cardDefinition1,final MagicCardDefinition cardDefinition2) {
@@ -809,7 +809,7 @@ public class MagicCardDefinition {
             return cardDefinition1.getName().compareTo(cardDefinition2.getName());
         }
     };
-    
+
     public static final Comparator<MagicCardDefinition> CONVERTED_COMPARATOR_ASC=new Comparator<MagicCardDefinition>() {
         @Override
         public int compare(final MagicCardDefinition cardDefinition1,final MagicCardDefinition cardDefinition2) {
@@ -819,7 +819,7 @@ public class MagicCardDefinition {
 
     public static final Comparator<MagicCardDefinition> TYPE_COMPARATOR_DESC=new Comparator<MagicCardDefinition>() {
         @Override
-        public int compare(final MagicCardDefinition cardDefinition1,final MagicCardDefinition cardDefinition2) {        
+        public int compare(final MagicCardDefinition cardDefinition1,final MagicCardDefinition cardDefinition2) {
             final int c = cardDefinition1.getTypeString().compareTo(cardDefinition2.getTypeString());
             if(c == 0) {
                 return cardDefinition1.getLongTypeString().compareTo(cardDefinition2.getLongTypeString());
@@ -854,7 +854,7 @@ public class MagicCardDefinition {
         public int compare(final MagicCardDefinition cardDefinition1,final MagicCardDefinition cardDefinition2) {
             final int p1 = cardDefinition1.isCreature() ? cardDefinition1.getCardPower() : -100;
             final int p2 = cardDefinition2.isCreature() ? cardDefinition2.getCardPower() : -100;
-            
+
             if (p1 != p2) {
                 return p1 - p2;
             } else {
@@ -875,7 +875,7 @@ public class MagicCardDefinition {
         public int compare(final MagicCardDefinition cardDefinition1,final MagicCardDefinition cardDefinition2) {
             final int t1 = cardDefinition1.isCreature() ? cardDefinition1.getCardToughness() : -100;
             final int t2 = cardDefinition2.isCreature() ? cardDefinition2.getCardToughness() : -100;
-            
+
             if (t1 != t2) {
                 return t1 - t2;
             } else {

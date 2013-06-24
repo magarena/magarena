@@ -23,15 +23,15 @@ import magic.model.target.MagicTargetFilter;
 import javax.swing.ImageIcon;
 
 public abstract class MagicItemOnStack implements MagicTarget {
-    
+
     private final MagicSource source;
     private final MagicPlayer controller;
     private final MagicEvent event;
     private final MagicActivation activation; //may be null
     private final long id;
-    
+
     private Object[] choiceResults=MagicEvent.NO_CHOICE_RESULTS;
-    
+
     MagicItemOnStack(final MagicSource aSource, final MagicPlayer aController, final MagicEvent aEvent, final MagicActivation act) {
         source = aSource;
         controller = aController;
@@ -39,7 +39,7 @@ public abstract class MagicItemOnStack implements MagicTarget {
         activation = act;
         id = aSource.getGame().getUniqueId();
     }
-    
+
     MagicItemOnStack(final MagicSource aSource, final MagicPlayer aController, final MagicEvent aEvent) {
         this(aSource, aController, aEvent, null);
     }
@@ -61,34 +61,34 @@ public abstract class MagicItemOnStack implements MagicTarget {
         choiceResults = copyMap.copyObjects(sourceItem.choiceResults,Object.class);
         id=sourceItem.id;
     }
-    
+
     @Override
     public MagicItemOnStack map(final MagicGame game) {
         return game.getStack().getItemOnStack(id);
     }
-        
+
     public MagicSource getSource() {
         return source;
     }
-    
+
     @Override
     public MagicPlayer getController() {
         return controller;
     }
-    
+
     @Override
     public MagicCardDefinition getCardDefinition() {
         return getSource().getCardDefinition();
     }
-    
+
     MagicActivation getActivation() {
         return activation;
     }
-            
+
     public MagicEvent getEvent() {
         return event;
     }
-    
+
     public boolean hasChoice() {
         return event.hasChoice();
     }
@@ -96,11 +96,11 @@ public abstract class MagicItemOnStack implements MagicTarget {
     public void setChoiceResults(final Object[] choiceResults) {
         this.choiceResults=choiceResults;
     }
-    
+
     public Object[] getChoiceResults() {
         return choiceResults;
     }
-    
+
     public boolean containsInChoiceResults(final MagicObject obj) {
         if (choiceResults != null) {
             for (final Object choiceResult : choiceResults) {
@@ -111,29 +111,29 @@ public abstract class MagicItemOnStack implements MagicTarget {
         }
         return false;
     }
-    
+
     public long getId() {
         return id;
     }
-    
+
     public void resolve(final MagicGame game) {
         game.executeEvent(event,choiceResults);
     }
-    
+
     @Override
     public String getName() {
         return source.getName();
     }
-    
+
     public String getDescription() {
         return event.getDescription(choiceResults);
     }
-    
+
     @Override
     public String toString() {
         return getName();
     }
-        
+
     @Override
     public boolean isPermanent() {
         return false;
@@ -143,12 +143,12 @@ public abstract class MagicItemOnStack implements MagicTarget {
     public boolean isPlayer() {
         return false;
     }
-    
+
     @Override
     public boolean isCreature() {
         return false;
     }
-    
+
     @Override
     public boolean isPlaneswalker() {
         return false;
@@ -158,37 +158,37 @@ public abstract class MagicItemOnStack implements MagicTarget {
     public int getPreventDamage() {
         return 0;
     }
-    
+
     @Override
     public void setPreventDamage(final int amount) {
-        
+
     }
 
     @Override
     public boolean isValidTarget(final MagicSource aSource) {
         return aSource != this.source && aSource != this;
     }
-    
+
     @Override
     public boolean hasColor(final MagicColor color) {
-        return source.hasColor(color); 
+        return source.hasColor(color);
     }
-    
+
     @Override
     public boolean hasAbility(final MagicAbility ability) {
         return source.hasAbility(ability);
     }
-    
+
     @Override
     public boolean hasType(final MagicType type) {
         return source.hasType(type);
     }
-    
+
     @Override
     public boolean hasSubType(final MagicSubType subType) {
         return source.hasSubType(subType);
     }
-    
+
     @Override
     public boolean isLegalTarget(final MagicPlayer player, final MagicTargetFilter<? extends MagicTarget> targetFilter) {
         return source.getGame().getStack().contains(this);
@@ -221,7 +221,7 @@ public abstract class MagicItemOnStack implements MagicTarget {
             getStateId(choiceResults, 2),
         });
     }
-    
+
     public abstract boolean isSpell();
 
     public boolean isSpell(MagicType type) {

@@ -38,7 +38,7 @@ public class MagicMiracleTrigger extends MagicWhenDrawnTrigger {
 
             // without this, card.getCardDefinition() will return UNKNOWN in simulated game
             card.reveal();
-            
+
             final MagicActivation act = card.getCardDefinition().getCastActivation();
             game.addEvent(act.getEvent(card));
         }

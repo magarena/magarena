@@ -12,7 +12,7 @@ public class MagicTrampleTargetPicker extends MagicTargetPicker<MagicPermanent> 
     private static final MagicTrampleTargetPicker INSTANCE=new MagicTrampleTargetPicker();
 
     private MagicTrampleTargetPicker() {}
-    
+
     public static MagicTrampleTargetPicker create() {
         return INSTANCE;
     }

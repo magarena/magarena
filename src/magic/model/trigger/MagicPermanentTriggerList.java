@@ -6,13 +6,13 @@ import java.util.Set;
 public class MagicPermanentTriggerList extends ArrayList<MagicPermanentTrigger> {
 
     private static final long serialVersionUID = 1L;
-    
+
     public MagicPermanentTriggerList() {}
-    
+
     public MagicPermanentTriggerList(final MagicPermanentTriggerList triggerList) {
         super(triggerList);
     }
-    
+
     public MagicPermanentTriggerList(final MagicPermanentTriggerMap triggerMap,final MagicPermanentTriggerList triggerList) {
         for (final MagicPermanentTrigger permanentTrigger : triggerList) {
             final long id = permanentTrigger.getId();

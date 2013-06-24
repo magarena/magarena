@@ -14,11 +14,11 @@ import magic.model.event.MagicEvent;
 public class MagicCumulativeUpkeepTrigger extends MagicAtUpkeepTrigger {
 
     private final MagicManaCost manaCost;
-    
+
     public MagicCumulativeUpkeepTrigger(final MagicManaCost manaCost) {
         this.manaCost = manaCost;
     }
-    
+
     private final String genDescription(final int amount) {
         return amount == 1 ?
              " pay " + manaCost + "." :
@@ -49,7 +49,7 @@ public class MagicCumulativeUpkeepTrigger extends MagicAtUpkeepTrigger {
                         )
                     ),
                     this,
-                    "PN may$ " + genDescription(amount) +  
+                    "PN may$ " + genDescription(amount) +
                     " If he or she doesn't, sacrifice SN.");
         }
         return MagicEvent.NONE;

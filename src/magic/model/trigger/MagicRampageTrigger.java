@@ -26,7 +26,7 @@ public class MagicRampageTrigger extends MagicWhenBecomesBlockedTrigger {
             ):
             MagicEvent.NONE;
     }
-    
+
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         final int amount = event.getRefInt();

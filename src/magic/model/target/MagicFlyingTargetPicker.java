@@ -12,7 +12,7 @@ public class MagicFlyingTargetPicker extends MagicTargetPicker<MagicPermanent> {
     private static final MagicFlyingTargetPicker INSTANCE=new MagicFlyingTargetPicker();
 
     private MagicFlyingTargetPicker() {}
-    
+
     public static MagicFlyingTargetPicker create() {
         return INSTANCE;
     }
@@ -25,7 +25,7 @@ public class MagicFlyingTargetPicker extends MagicTargetPicker<MagicPermanent> {
         final int power=permanent.getPower();
         if (permanent.hasAbility(MagicAbility.Flying)) {
             return power;
-        } 
+        }
         if (permanent.hasAbility(MagicAbility.Defender)) {
             return 20+power;
         }

@@ -24,7 +24,7 @@ import java.util.TreeMap;
 public class DeckUtils {
 
     public static final String DECK_EXTENSION=".dec";
-    
+
     public static final FileFilter DECK_FILEFILTER=new FileFilter() {
         @Override
         public boolean accept(final File file) {
@@ -35,20 +35,20 @@ public class DeckUtils {
             return "Magarena deck";
         }
     };
-    
+
     private static final String[] CARD_TYPES={"creatures","spells","lands"};
-    
+
     public static String getDeckFolder() {
         return MagicMain.getGamePath()+File.separator+"decks";
     }
-    
+
     public static void createDeckFolder() {
         final File deckFolderFile=new File(getDeckFolder());
         if (!deckFolderFile.exists() && !deckFolderFile.mkdir()) {
             System.err.println("WARNING. Unable to create " + getDeckFolder());
         }
     }
-    
+
     public static boolean saveDeck(final String filename,final MagicPlayerDefinition player) {
         final List<SortedMap<String,Integer>> cardMaps=new ArrayList<SortedMap<String,Integer>>();
         boolean isSuccessful = true;
@@ -56,7 +56,7 @@ public class DeckUtils {
         for (int count=3;count>0;count--) {
             cardMaps.add(new TreeMap<String, Integer>());
         }
-        
+
         for (final MagicCardDefinition cardDefinition : player.getDeck()) {
             final String name=cardDefinition.getName();
             final int index;
@@ -71,9 +71,9 @@ public class DeckUtils {
             final Integer count=cardMap.get(name);
             cardMap.put(name,count==null?Integer.valueOf(1):Integer.valueOf(count+1));
         }
-        
+
         BufferedWriter writer = null;
-        try { //save deck                        
+        try { //save deck
             writer = new BufferedWriter(new FileWriter(filename));
             for (int index=0;index<=2;index++) {
                 final SortedMap<String,Integer> cardMap=cardMaps.get(index);
@@ -99,10 +99,10 @@ public class DeckUtils {
         } finally {
             magic.data.FileIO.close(writer);
         }
-        
+
         return isSuccessful;
     }
-    
+
     public static void loadDeck(final String filename,final MagicPlayerDefinition player) {
         String content = "";
         try { //load deck
@@ -118,7 +118,7 @@ public class DeckUtils {
         final int[] colorCount = new int[MagicColor.NR_COLORS];
         final MagicDeck deck = player.getDeck();
         final MagicDeck unsupported = new MagicDeck();
-        
+
         deck.setName(new File(filename).getName());
         deck.clear(); // remove previous cards
 
@@ -173,7 +173,7 @@ public class DeckUtils {
         profile.setPreConstructed();
         player.setProfile(profile);
     }
-        
+
     public static void showUnsupportedCards(final MagicDeck unsupported) {
         if (unsupported.isEmpty()) {
             return;
@@ -182,7 +182,7 @@ public class DeckUtils {
         // show error message for unsupported cards
         final StringBuilder sb = new StringBuilder();
         sb.append("The loaded deck contained unsupported card(s): ");
-        
+
         // generate list of unsupported cards
         for (int i = 0; i < unsupported.size(); i++) {
             if(i > 0) {
@@ -190,27 +190,27 @@ public class DeckUtils {
             }
             sb.append(unsupported.get(i).getName());
         }
-        
-        // options panel doesn't have automatic text wrapping 
-        // because the method that provides max char limit isn't 
+
+        // options panel doesn't have automatic text wrapping
+        // because the method that provides max char limit isn't
         // coded, so override that method
         final JOptionPane cleanupPane = new JOptionPane(sb.toString(), JOptionPane.ERROR_MESSAGE) {
             private static final long serialVersionUID = 232L;
 
             @Override
-            public int getMaxCharactersPerLineCount() { 
-                return 70; 
-            } 
+            public int getMaxCharactersPerLineCount() {
+                return 70;
+            }
         };
         cleanupPane.createDialog(null, "Unsupported Cards").setVisible(true);
-        
+
         unsupported.clear();
     }
-    
+
     private static void retrieveDeckFiles(final File folder,final List<File> deckFiles) {
         final File[] files=folder.listFiles();
         for (final File file : files) {
-            
+
             if (file.isDirectory()) {
                 retrieveDeckFiles(file,deckFiles);
             } else if (file.getName().endsWith(DECK_EXTENSION)) {
@@ -218,11 +218,11 @@ public class DeckUtils {
             }
         }
     }
-    
+
     public static void loadRandomDeck(final MagicPlayerDefinition player) {
         final File deckFile=new File(getDeckFolder());
         final List<File> deckFiles=new ArrayList<File>();
-        retrieveDeckFiles(deckFile,deckFiles);        
+        retrieveDeckFiles(deckFile,deckFiles);
         final int size=deckFiles.size();
         if (size==0) {
             // Creates a simple default deck.

@@ -22,27 +22,27 @@ class ReadmePanel extends JPanel implements ActionListener {
     private static final String README_FILENAME="README.txt";
 
     private static final int MAX_WIDTH=1000;
-        
+
     private final MagicFrame frame;
     private final ZoneBackgroundLabel backgroundLabel;
     private final JScrollPane keywordsPane;
     private final JButton closeButton;
-    
+
     public ReadmePanel(final MagicFrame frame) {
-        
+
         this.frame=frame;
-        
+
         setLayout(null);
-        
+
         closeButton=new JButton(IconImages.CLOSE);
         closeButton.setFocusable(false);
         closeButton.setSize(28,28);
         closeButton.addActionListener(this);
         add(closeButton);
-        
+
         final JTextArea readMeTextArea = new JTextArea();
         readMeTextArea.setEditable(false);
-        
+
         String content = "";
         try { //load content from README.txt file
             content = FileIO.toStr(new java.io.File(README_FILENAME));
@@ -60,29 +60,29 @@ class ReadmePanel extends JPanel implements ActionListener {
         keywordsPane.getVerticalScrollBar().setBlockIncrement(50);
         keywordsPane.getViewport().setOpaque(false);
         add(keywordsPane);
-        
+
         //final JPanel keywordsPanel=createKeywordsPanel();
         //keywordsPane.getViewport().add(keywordsPanel);
-        
+
         backgroundLabel=new ZoneBackgroundLabel();
         backgroundLabel.setBounds(0,0,0,0);
         add(backgroundLabel);
-        
+
         this.addComponentListener(new ComponentAdapter() {
             @Override
             public void componentResized(final ComponentEvent e) {
                 resizeComponents();
             }
         });
-                
+
         SwingUtilities.invokeLater(new Runnable() {
             public void run()
             {
-                keywordsPane.getVerticalScrollBar().setValue(0);              
-            }           
-        }); 
+                keywordsPane.getVerticalScrollBar().setValue(0);
+            }
+        });
     }
-    
+
     private void resizeComponents() {
         final Dimension size=getSize();
         backgroundLabel.setSize(size);

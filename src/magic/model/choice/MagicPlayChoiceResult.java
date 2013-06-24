@@ -12,14 +12,14 @@ public class MagicPlayChoiceResult implements MagicMappable {
 
     public MagicSource source;
     public MagicActivation activation;
-    
+
     MagicPlayChoiceResult(final MagicSource source,final MagicActivation activation) {
         this.source=source;
         this.activation=activation;
     }
 
     private MagicPlayChoiceResult() {}
-    
+
     @Override
     public MagicPlayChoiceResult map(final MagicGame game) {
         if (this==PASS) {
@@ -30,7 +30,7 @@ public class MagicPlayChoiceResult implements MagicMappable {
             return new MagicPlayChoiceResult((MagicSource)source.map(game),activation);
         }
     }
-    
+
     @Override
     public String toString() {
         if (this==PASS) {

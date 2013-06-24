@@ -7,17 +7,17 @@ import magic.model.MagicPermanent;
 
 /** Each source can only be activated once for mana. Each mana type must come from at most one activation. */
 public class MagicSourceManaActivation {
-    
+
     public final MagicPermanent permanent;
     public final MagicManaActivation[] activations;
     public boolean available;
     public MagicManaType manaType;
-    
+
     public MagicSourceManaActivation(final MagicGame game,final MagicPermanent permanent) {
         this.permanent=permanent;
         activations=new MagicManaActivation[MagicManaType.NR_OF_TYPES];
         available=false;
-        
+
         for (final MagicManaActivation activation: permanent.getManaActivations()) {
             if (activation.canPlay(game,permanent)) {
                 available=true;
@@ -30,7 +30,7 @@ public class MagicSourceManaActivation {
             }
         }
     }
-    
+
     public MagicManaType canProduce(final MagicCostManaType costManaType) {
         if (available) {
             for (final MagicManaType tManaType : costManaType.getTypes()) {
@@ -38,12 +38,12 @@ public class MagicSourceManaActivation {
                     return tManaType;
                 }
             }
-        }        
+        }
         return MagicManaType.NONE;
     }
-    
+
     public void produce(final MagicGame game,final MagicCostManaType costManaType) {
-        MagicManaActivation bestManaActivation=null;                
+        MagicManaActivation bestManaActivation=null;
         for (final MagicManaType tManaType : costManaType.getTypes()) {
             final MagicManaActivation manaActivation=activations[tManaType.ordinal()];
             if (manaActivation!=null&&(bestManaActivation==null||bestManaActivation.getWeight()>manaActivation.getWeight())) {
@@ -58,11 +58,11 @@ public class MagicSourceManaActivation {
             new MagicSourceManaActivationResult(permanent,bestManaActivation);
         bestSourceManaActivation.doActivation(game);
     }
-            
+
     public int getWeight() {
         return activations[manaType.ordinal()].getWeight();
     }
-    
+
     public MagicSourceManaActivationResult getResult() {
         return new MagicSourceManaActivationResult(permanent,activations[manaType.ordinal()]);
     }

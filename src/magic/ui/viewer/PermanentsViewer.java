@@ -21,7 +21,7 @@ import java.util.TreeSet;
 public abstract class PermanentsViewer extends JPanel implements ChoiceViewer, Updatable {
 
     private static final long serialVersionUID = 1L;
-    
+
     private static final Dimension SEPARATOR_DIMENSION=new Dimension(0,10);
 
     final ViewerInfo viewerInfo;
@@ -30,31 +30,31 @@ public abstract class PermanentsViewer extends JPanel implements ChoiceViewer, U
 
     private final Collection<ChoiceViewer> targetViewers;
     private final ViewerScrollPane viewerPane;
-    
+
     PermanentsViewer(final ViewerInfo viewerInfo, final GameController controller) {
         this.viewerInfo=viewerInfo;
         this.controller=controller;
         setOpaque(false);
 
         targetViewers=new ArrayList<ChoiceViewer>();
-        
+
         controller.registerChoiceViewer(this);
-        
+
         setLayout(new BorderLayout());
-        
+
         viewerPane=new ViewerScrollPane();
         add(viewerPane,BorderLayout.CENTER);
     }
 
     public final void update() {
         final int maxWidth=getWidth()-25;
-        
+
         if (titleBar!=null) {
             titleBar.setText(getTitle());
         }
 
         targetViewers.clear();
-        final JPanel contentPanel=viewerPane.getContent();        
+        final JPanel contentPanel=viewerPane.getContent();
         final JPanel basicLandsPanel=new JPanel(null);
         basicLandsPanel.setOpaque(false);
         contentPanel.add(basicLandsPanel);
@@ -67,7 +67,7 @@ public abstract class PermanentsViewer extends JPanel implements ChoiceViewer, U
                 basicLands.add(permanentInfo);
                 previousPermanentInfo=permanentInfo;
                 continue;
-            }            
+            }
             if (previousPermanentInfo!=null&&isSeparated(previousPermanentInfo,permanentInfo)) {
                 final JPanel separatorPanel=new JPanel();
                 separatorPanel.setPreferredSize(SEPARATOR_DIMENSION);
@@ -80,7 +80,7 @@ public abstract class PermanentsViewer extends JPanel implements ChoiceViewer, U
             targetViewers.add(panel);
             contentPanel.add(panel);
         }
-        
+
         if (!basicLands.isEmpty()) {
             basicLandsPanel.setLayout(new GridLayout(1,8));
             for (final PermanentViewerInfo landPermanentInfo : basicLands) {
@@ -93,23 +93,23 @@ public abstract class PermanentsViewer extends JPanel implements ChoiceViewer, U
         viewerPane.switchContent();
         repaint();
     }
-    
+
     public boolean isEmpty() {
         return targetViewers.isEmpty();
     }
-    
+
     @Override
     public void showValidChoices(final Set<?> validChoices) {
         for (final ChoiceViewer targetViewer : targetViewers) {
             targetViewer.showValidChoices(validChoices);
         }
     }
-    
+
     protected abstract String getTitle();
-    
+
     protected abstract Collection<PermanentViewerInfo> getPermanents();
-    
+
     protected abstract boolean isSeparated(final PermanentViewerInfo permanent1, final PermanentViewerInfo permanent2);
-    
+
     protected abstract Border getBorder(final PermanentViewerInfo permanentInfo);
 }

@@ -14,23 +14,23 @@ import java.util.Random;
 public class Tribal_Mono_DeckGenerator extends DefaultDeckGenerator {
 
     private static final int MIN_NUM_CARDS_WITH_SUBTYPE = 30;
-    
+
     private static final Random randGen = new Random();
     // all possible tribes - calculated once
     private static final ArrayList<MagicSubType> possibleTribes = new ArrayList<MagicSubType>();
     private static final ArrayList<ArrayList<String>> possibleColors = new ArrayList<ArrayList<String>>();
-    
+
     // random tribe from all possible for each instance
     private final MagicSubType tribe;
     private final String colorText;
-    
+
     public Tribal_Mono_DeckGenerator() {
         super(null);
-        
+
         if(!hasChoice()) {
             getPossibleTribes();
         }
-        
+
         if(hasChoice()) {
             final int i = randGen.nextInt(possibleTribes.size());
             tribe = possibleTribes.get(i);
@@ -39,14 +39,14 @@ public class Tribal_Mono_DeckGenerator extends DefaultDeckGenerator {
             tribe = null;
             colorText = "";
         }
-        
+
         setCubeDefinition(CubeDefinitions.getCubeDefinition(getColorText()));
     }
-    
+
     private boolean hasChoice() {
         return possibleTribes.size() > 0 && possibleColors.size() == possibleTribes.size();
     }
-    
+
     private void getPossibleTribes() {
         for(final MagicSubType s : MagicSubType.ALL_CREATURES) {
             final HashMap<MagicColor, Integer> countColors = new HashMap<MagicColor, Integer>();
@@ -55,12 +55,12 @@ public class Tribal_Mono_DeckGenerator extends DefaultDeckGenerator {
             countColors.put(MagicColor.Green, new Integer(0));
             countColors.put(MagicColor.Red, new Integer(0));
             countColors.put(MagicColor.Blue, new Integer(0));
-            
+
             // count colors
             for(final MagicCardDefinition card : CardDefinitions.getCards()) {
                 if(card.hasSubType(s)) {
                     final int colorFlags = card.getColorFlags();
-                    
+
                     for(final MagicColor c : countColors.keySet()) {
                         if (c.hasColor(colorFlags)) {
                             countColors.put(c, new Integer(countColors.get(c).intValue() + 1));
@@ -68,37 +68,37 @@ public class Tribal_Mono_DeckGenerator extends DefaultDeckGenerator {
                     }
                 }
             }
-            
+
             final ArrayList<String> choiceColors = getPossibleColors(countColors);
-            
+
             if(choiceColors.size() > 0) {
                 possibleTribes.add(s);
                 possibleColors.add(choiceColors);
             }
         }
     }
-    
+
     private ArrayList<String> getPossibleColors(final HashMap<MagicColor, Integer> countColors) {
         // monocolor
         final ArrayList<String> a = new ArrayList<String>();
-        
+
         for(final MagicColor c : countColors.keySet()) {
             if(countColors.get(c).intValue() > MIN_NUM_CARDS_WITH_SUBTYPE) {
                 a.add("" + c.getSymbol());
             }
         }
-        
+
         return a;
     }
-    
+
     public String getColorText() {
         return colorText;
     }
-    
+
     public int getMinRarity() {
         return 1;
     }
-    
+
     public boolean acceptPossibleSpellCard(final MagicCardDefinition card) {
         if(hasChoice()) {
             return !card.isCreature() || card.hasSubType(tribe);
@@ -106,11 +106,11 @@ public class Tribal_Mono_DeckGenerator extends DefaultDeckGenerator {
             return true;
         }
     }
-    
+
     public void setColors(final MagicPlayerProfile profile) {
         profile.setColors(getColorText());
     }
-    
+
     public boolean ignoreMaxCost() {
         return false;
     }

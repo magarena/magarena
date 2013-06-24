@@ -9,9 +9,9 @@ import magic.model.stack.MagicCardOnStack;
 public class MagicBounceTargetPicker extends MagicTargetPicker<MagicTarget> {
 
     private static final MagicBounceTargetPicker INSTANCE = new MagicBounceTargetPicker();
-    
+
     private MagicBounceTargetPicker() {}
-    
+
     @Override
     protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
         if (target.isPermanent()) {
@@ -28,7 +28,7 @@ public class MagicBounceTargetPicker extends MagicTargetPicker<MagicTarget> {
             return cardOnStack.getController()==player?-converted:converted;
         }
     }
-    
+
     public static MagicBounceTargetPicker getInstance() {
         return INSTANCE;
     }

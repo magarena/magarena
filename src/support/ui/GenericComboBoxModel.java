@@ -26,11 +26,11 @@ public class GenericComboBoxModel<T> extends GenericImmutableListModel<T> implem
         _selectedItem = this.hasElements() ? this.getElementAt(0) : null;
         _isSelectionInProgress = false;
     }
-    
+
     public GenericComboBoxModel(Iterable<T> data, T initialSelection)
     {
         super(data);
-        
+
         _selectedItem = findMatchingObject(initialSelection) != null ? initialSelection : null;
         _isSelectionInProgress = false;
     }
@@ -79,7 +79,7 @@ public class GenericComboBoxModel<T> extends GenericImmutableListModel<T> implem
             }
         }
     }
-    
+
     private void setSelectedItemInternal(T item)
     {
         boolean cancelled = notifySelectionListeners(_selectedItem, item, true);
@@ -91,25 +91,25 @@ public class GenericComboBoxModel<T> extends GenericImmutableListModel<T> implem
             fireContentsChanged(this, -1, -1);
         }
     }
-    
+
     private final List<SelectionListener<T>> _listeners = new CopyOnWriteArrayList<SelectionListener<T>>();
-    
-    void addSelectionListener(SelectionListener<T> listener)    
+
+    void addSelectionListener(SelectionListener<T> listener)
     {
         _listeners.add(listener);
     }
-    
+
     void removeSelectionListener(SelectionListener<T> listener)
     {
         _listeners.remove(listener);
     }
-    
+
     void transferSelectionListeners(GenericComboBoxModel<T> otherModel)
     {
         _listeners.addAll(otherModel._listeners);
         otherModel._listeners.clear();
     }
-    
+
     boolean notifySelectionListeners(T currValue, T newValue, boolean isCancellable)
     {
         _isSelectionInProgress = true;
@@ -119,10 +119,10 @@ public class GenericComboBoxModel<T> extends GenericImmutableListModel<T> implem
             listener.selectionPerformed(currValue, newValue, action);
         }
         _isSelectionInProgress = false;
-        
+
         return action.isCancelled();
     }
-    
+
     public boolean isSelectionInProgress()
     {
         return _isSelectionInProgress;

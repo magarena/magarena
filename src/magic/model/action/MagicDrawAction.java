@@ -17,16 +17,16 @@ public class MagicDrawAction extends MagicAction {
     private final MagicPlayer player;
     private final int amount;
     private List<MagicCard> drawnCards;
-    
+
     public MagicDrawAction(final MagicPlayer player) {
         this(player, 1);
     }
-    
+
     public MagicDrawAction(final MagicPlayer player,final int amount) {
         this.player=player;
         this.amount=amount;
     }
-    
+
     @Override
     public void doAction(final MagicGame game) {
         drawnCards=new ArrayList<MagicCard>();
@@ -38,7 +38,7 @@ public class MagicDrawAction extends MagicAction {
                     game.doAction(new MagicLoseGameAction(player,MagicLoseGameAction.DRAW_REASON));
                 }
                 break;
-            } 
+            }
             final MagicCard card=library.removeCardAtTop();
             player.addCardToHand(card);
             player.incDrawnCards();
@@ -50,7 +50,7 @@ public class MagicDrawAction extends MagicAction {
             game.executeTrigger(MagicTriggerType.WhenOtherDrawn,card);
         }
         setScore(player,score);
-        game.setStateCheckRequired();            
+        game.setStateCheckRequired();
     }
 
     @Override

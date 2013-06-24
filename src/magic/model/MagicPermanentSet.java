@@ -7,13 +7,13 @@ public class MagicPermanentSet extends TreeSet<MagicPermanent> {
     private static final long serialVersionUID = 1L;
 
     MagicPermanentSet() {}
-    
+
     MagicPermanentSet(final MagicCopyMap copyMap,final MagicPermanentSet source) {
         for (final MagicPermanent permanent : source) {
             add(copyMap.copy(permanent));
         }
     }
-    
+
     MagicPermanent getPermanent(final long id) {
         for (final MagicPermanent permanent : this) {
             if (permanent.getId() == id) {
@@ -21,8 +21,8 @@ public class MagicPermanentSet extends TreeSet<MagicPermanent> {
             }
         }
         return MagicPermanent.NONE;
-    }    
-    
+    }
+
     long getStateId() {
         final long[] keys = new long[size()];
         int idx = 0;

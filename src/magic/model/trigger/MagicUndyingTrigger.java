@@ -13,11 +13,11 @@ public class MagicUndyingTrigger extends MagicWhenDiesTrigger {
     private static final MagicUndyingTrigger INSTANCE = new MagicUndyingTrigger();
 
     private MagicUndyingTrigger() {}
-    
-    public static final MagicUndyingTrigger create() {    
+
+    public static final MagicUndyingTrigger create() {
         return INSTANCE;
     }
-    
+
     @Override
     public MagicEvent getEvent(final MagicPermanent permanent) {
         return permanent.getCounters(MagicCounterType.PlusOne) == 0 ?

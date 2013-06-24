@@ -25,7 +25,7 @@ public class MagicPutCounterEvent extends MagicEvent {
     public MagicPutCounterEvent(final MagicSource source, final int amount) {
         this(source, MagicCounterType.PlusOne, amount);
     }
-    
+
     private static final MagicEventAction EventActionTarget(final MagicCounterType type) {
         return new MagicEventAction() {
             @Override
@@ -43,7 +43,7 @@ public class MagicPutCounterEvent extends MagicEvent {
             }
         };
     }
-    
+
     public static final MagicEvent Self(final MagicSource source, final MagicCounterType type, final int amount) {
         return new MagicEvent(
             source,
@@ -52,7 +52,7 @@ public class MagicPutCounterEvent extends MagicEvent {
             "PN puts " + amount + " " + type.getName() + " counters on SN."
         );
     }
-    
+
     private static final MagicEventAction EventAction(final MagicCounterType type) {
         return new MagicEventAction() {
             @Override

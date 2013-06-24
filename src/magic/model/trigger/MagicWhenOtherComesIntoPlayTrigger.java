@@ -13,15 +13,15 @@ import magic.model.target.MagicTargetFilter;
 
 public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<MagicPermanent> {
     public MagicWhenOtherComesIntoPlayTrigger(final int priority) {
-        super(priority); 
+        super(priority);
     }
-    
+
     public MagicWhenOtherComesIntoPlayTrigger() {}
-    
+
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenOtherComesIntoPlay;
     }
-    
+
     public static final MagicWhenOtherComesIntoPlayTrigger Evolve = new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
@@ -46,7 +46,7 @@ public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<Ma
             ));
         }
     };
-   
+
     public static final MagicWhenOtherComesIntoPlayTrigger Soulbond = new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent NONE,final MagicPermanent otherPermanent) {

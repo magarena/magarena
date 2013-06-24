@@ -13,7 +13,7 @@ public class MagicFastCombatScore implements MagicCombatScore {
     private final MagicPlayer scorePlayer;
 
     public MagicFastCombatScore(final MagicPlayer defendingPlayer,final MagicPlayer scorePlayer) {
-        
+
         this.defendingPlayer=defendingPlayer;
         this.scorePlayer=scorePlayer;
     }

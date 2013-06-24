@@ -14,15 +14,15 @@ import magic.model.action.MagicRemoveFromPlayAction;
 public class MagicEndOfCombatPhase extends MagicPhase {
 
     private static final MagicPhase INSTANCE=new MagicEndOfCombatPhase();
-    
+
     private MagicEndOfCombatPhase() {
-        super(MagicPhaseType.EndOfCombat);    
+        super(MagicPhaseType.EndOfCombat);
     }
-    
+
     public static MagicPhase getInstance() {
         return INSTANCE;
     }
-    
+
     @Override
     public void executeBeginStep(final MagicGame game) {
         game.setStep(game.canSkip()?MagicStep.NextPhase:MagicStep.ActivePlayer);

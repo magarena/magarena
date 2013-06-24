@@ -20,22 +20,22 @@ import java.util.Set;
 public class MagicDeclareBlockersChoice extends MagicChoice {
 
     private static final MagicDeclareBlockersChoice INSTANCE=new MagicDeclareBlockersChoice();
-    
+
     private static final String BLOCKER_MESSAGE="Click on a creature to declare as blocker or remove from combat.|Press {f} to continue.";
     private static final String ATTACKER_MESSAGE="Click on an attacking creature to declare as blocker.";
     private static final String CONTINUE_MESSAGE="Press {f} to continue.";
-    
+
     private MagicDeclareBlockersChoice() {
         super("Declare blockers.");
     }
-    
+
     @Override
     Collection<Object> getArtificialOptions(final MagicGame game,final MagicEvent event,final MagicPlayer player,final MagicSource source) {
         final MagicDeclareBlockersResultBuilder builder=
             new MagicDeclareBlockersResultBuilder(game,player,game.getFastChoices());
         return builder.getResults();
     }
-    
+
     /** Builds result and does cleanup for blockers. */
     private static void buildResult(
             final MagicCombatCreatureBuilder builder,
@@ -76,7 +76,7 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
         if (!builder.buildBlockableAttackers()&&game.canSkipDeclareBlockersSingleChoice()) {
             return new Object[]{result};
         }
-       
+
         try {
             while (true) {
                 // Choose blocker.
@@ -90,14 +90,14 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
                 }
                 controller.enableForwardButton();
                 controller.waitForInput();
-                controller.clearValidChoices();            
+                controller.clearValidChoices();
                 if (controller.isActionClicked()) {
                     break;
                 }
-                
+
                 final MagicPermanent blocker = controller.getChoiceClicked();
                 // Remove blocker from combat.
-                if (blocker.isBlocking()) {        
+                if (blocker.isBlocking()) {
                     final MagicPermanent attacker=blocker.getBlockedCreature();
                     attacker.removeBlockingCreature(blocker);
                     if (attacker.getBlockingCreatures().isEmpty()) {
@@ -113,7 +113,7 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
                     controller.disableActionButton(false);
                     controller.waitForInput();
                     controller.setSourceCardDefinition(MagicEvent.NO_SOURCE);
-                    controller.clearValidChoices();                    
+                    controller.clearValidChoices();
                     final MagicPermanent attacker = controller.getChoiceClicked();
                     attacker.addBlockingCreature(blocker);
                     blocker.setState(MagicPermanentState.Blocking);
@@ -129,14 +129,14 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
         game.createUndoPoint();
         return new Object[]{result};
     }
-    
+
     @Override
     public Object[] getSimulationChoiceResult(
             final MagicGame game,
             final MagicEvent event,
             final MagicPlayer player,
             final MagicSource source) {
-        
+
         final MagicDeclareBlockersResult result=new MagicDeclareBlockersResult(0,0);
         final MagicCombatCreatureBuilder builder=new MagicCombatCreatureBuilder(game,player.getOpponent(),player);
 
@@ -149,7 +149,7 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
         if (!builder.buildBlockableAttackers()) {
             return new Object[]{result};
         }
-            
+
         final Set<MagicPermanent> blockers = builder.getCandidateBlockers();
         for (final MagicPermanent blocker : blockers) {
             final MagicPermanent[] attackers = builder.getBlockableAttackers(blocker).toArray(new MagicPermanent[]{});
@@ -162,7 +162,7 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
                 blocker.setBlockedCreature(attacker);
             }
         }
-                
+
         buildResult(builder,result);
         return new Object[]{result};
     }

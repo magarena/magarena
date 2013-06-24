@@ -12,7 +12,7 @@ import magic.model.event.MagicEvent;
 public class MagicRavnicaLandTrigger extends MagicWhenComesIntoPlayTrigger {
 
     private static final MagicRavnicaLandTrigger INSTANCE = new MagicRavnicaLandTrigger();
-    
+
     private MagicRavnicaLandTrigger() {}
 
     public static MagicRavnicaLandTrigger create() {
@@ -42,7 +42,7 @@ public class MagicRavnicaLandTrigger extends MagicWhenComesIntoPlayTrigger {
             game.doAction(new MagicTapAction(event.getPermanent(),false));
         }
     }
-    
+
     @Override
     public boolean usesStack() {
         return false;

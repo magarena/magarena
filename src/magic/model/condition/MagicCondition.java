@@ -16,9 +16,9 @@ import magic.model.target.MagicOtherPermanentTargetFilter;
 import magic.model.target.MagicTargetFilter;
 
 public interface MagicCondition {
-    
+
     boolean accept(final MagicSource source);
-    
+
     MagicCondition NONE = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             return true;
@@ -39,14 +39,14 @@ public interface MagicCondition {
             }
         }
     };
-    
+
     MagicCondition SORCERY_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final MagicGame game = source.getGame();
             return game.canPlaySorcery(source.getController());
         }
     };
-    
+
     MagicCondition YOUR_UPKEEP_CONDITION = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final MagicGame game = source.getGame();
@@ -54,14 +54,14 @@ public interface MagicCondition {
                    game.getTurnPlayer() == source.getController();
         }
     };
-    
+
     MagicCondition END_OF_COMBAT_CONDITION = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final MagicGame game = source.getGame();
             return game.isPhase(MagicPhaseType.EndOfCombat);
         }
     };
-    
+
     MagicCondition CAN_TAP_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent=(MagicPermanent)source;
@@ -75,34 +75,34 @@ public interface MagicCondition {
             return permanent.canUntap();
         }
     };
-    
+
     MagicCondition TAPPED_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent=(MagicPermanent)source;
             return permanent.isTapped();
         }
     };
-    
+
     MagicCondition IS_ATTACKING_CONDITION = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
             return permanent.isAttacking();
         }
     };
-    
+
     MagicCondition ABILITY_ONCE_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent=(MagicPermanent)source;
             return permanent.getAbilityPlayedThisTurn()==0;
         }
     };
-    
+
     MagicCondition NOT_CREATURE_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {
             return !source.isCreature();
         }
     };
-    
+
     MagicCondition METALCRAFT_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {
             return source.getController().getNrOfPermanentsWithType(MagicType.Artifact)>=3;
@@ -115,13 +115,13 @@ public interface MagicCondition {
             return permanent.canRegenerate();
         }
     };
-        
+
     MagicCondition THREE_ATTACKERS_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {
             return source.getController().getNrOfAttackers() >= 3;
         }
     };
-    
+
     MagicCondition TWO_MOUNTAINS_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {
             return source.getController().getNrOfPermanentsWithSubType(MagicSubType.Mountain)>=2;
@@ -133,7 +133,7 @@ public interface MagicCondition {
             return source.getController().getOpponent().getNrOfPermanentsWithType(MagicType.Land)>=4;
         }
     };
-    
+
     MagicCondition LEAST_FIVE_OTHER_MOUNTAINS=new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
@@ -144,32 +144,32 @@ public interface MagicCondition {
             return permanent.getController().getNrOfPermanents(filter) >= 5;
         }
     };
-    
+
     MagicCondition THRESHOLD_CONDITION = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             return source.getController().getGraveyard().size() >= 7;
         }
     };
-    
+
     MagicCondition FATEFUL_HOUR = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             return source.getController().getLife() <= 5;
         }
     };
-    
+
     MagicCondition HELLBENT = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             return source.getController().getHandSize() == 0;
         }
     };
-    
+
     MagicCondition POWER_4_OR_GREATER_CONDITION = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
             return permanent.getPower() >= 4;
         }
     };
-    
+
     MagicCondition ENCHANTED_IS_UNTAPPED_CONDITION = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;

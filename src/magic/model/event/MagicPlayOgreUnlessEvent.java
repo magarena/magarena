@@ -23,7 +23,7 @@ public class MagicPlayOgreUnlessEvent extends MagicEvent {
             "You may$ pay "+cost.getText()+"$."
         );
     }
-    
+
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

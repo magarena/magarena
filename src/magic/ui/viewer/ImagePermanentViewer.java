@@ -35,7 +35,7 @@ public class ImagePermanentViewer extends JPanel {
 
     private static final int LOGICAL_X_MARGIN=50;
     private static final int LOGICAL_Y_MARGIN=70;
-    
+
     private final ImagePermanentsViewer viewer;
     private final PermanentViewerInfo permanentInfo;
     private final List<PermanentViewerInfo> linkedInfos;
@@ -44,7 +44,7 @@ public class ImagePermanentViewer extends JPanel {
     private List<Rectangle> linkedScreenRectangles;
     private Point logicalPosition;
     private int logicalRow=1;
-    
+
     public ImagePermanentViewer(final ImagePermanentsViewer viewer,final PermanentViewerInfo permanentInfo) {
         this.viewer=viewer;
         this.permanentInfo=permanentInfo;
@@ -53,9 +53,9 @@ public class ImagePermanentViewer extends JPanel {
         linkedLogicalRectangles=new ArrayList<Rectangle>();
         logicalSize=calculateLogicalSize(linkedLogicalRectangles);
         linkedScreenRectangles=Collections.emptyList();
-        
+
         setOpaque(false);
-        
+
         addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(final MouseEvent event) {
@@ -67,7 +67,7 @@ public class ImagePermanentViewer extends JPanel {
                     else if (event.getClickCount() == 2) {
                         viewer.getController().processClick(linkedInfos.get(index).permanent);
                         viewer.getController().hideInfo();
-                    }        
+                    }
                 }
             }
             @Override
@@ -75,7 +75,7 @@ public class ImagePermanentViewer extends JPanel {
                 viewer.getController().hideInfo();
             }
         });
-        
+
         addMouseMotionListener(new MouseMotionAdapter() {
             @Override
             public void mouseMoved(final MouseEvent event) {
@@ -89,11 +89,11 @@ public class ImagePermanentViewer extends JPanel {
                     viewer.getController().viewInfoAbove(info.cardDefinition,info.index,rect);
                 } else {
                     viewer.getController().hideInfo();
-                }                
+                }
             }
         });
     }
-    
+
     private int getPermanentInfoIndexAt(final int x,final int y) {
         for (int index=linkedScreenRectangles.size()-1;index>=0;index--) {
             final Rectangle rect=linkedScreenRectangles.get(index);
@@ -109,9 +109,9 @@ public class ImagePermanentViewer extends JPanel {
             buildLinkedPermanents(aLinkedInfos,blocker);
         }
         aLinkedInfos.addAll(info.linked);
-        aLinkedInfos.add(info);            
+        aLinkedInfos.add(info);
     }
-    
+
     private Dimension calculateLogicalSize(final List<Rectangle> aLinkedLogicalRectangles) {
         int width=0;
         int height=0;
@@ -122,22 +122,22 @@ public class ImagePermanentViewer extends JPanel {
             final Rectangle rect;
             if (linkedInfo.tapped) {
                 width=Math.max(width,x+CardImagesProvider.CARD_HEIGHT);
-                height=Math.max(height,y+CardImagesProvider.CARD_WIDTH);            
+                height=Math.max(height,y+CardImagesProvider.CARD_WIDTH);
                 rect=new Rectangle(x,y,CardImagesProvider.CARD_HEIGHT,CardImagesProvider.CARD_WIDTH);
             } else {
                 width=Math.max(width,x+CardImagesProvider.CARD_WIDTH);
-                height=Math.max(height,y+CardImagesProvider.CARD_HEIGHT);                            
+                height=Math.max(height,y+CardImagesProvider.CARD_HEIGHT);
                 rect=new Rectangle(x,y,CardImagesProvider.CARD_WIDTH,CardImagesProvider.CARD_HEIGHT);
             }
             aLinkedLogicalRectangles.add(rect);
         }
         return new Dimension(width,height);
     }
-    
+
     @Override
     public void setSize(final int width,final int height) {
         super.setSize(width,height);
-        
+
         linkedScreenRectangles=new ArrayList<Rectangle>();
         for (final Rectangle logicalRect : linkedLogicalRectangles) {
             final Rectangle screenRect=new Rectangle();
@@ -148,33 +148,33 @@ public class ImagePermanentViewer extends JPanel {
             linkedScreenRectangles.add(screenRect);
         }
     }
-    
+
     public int getPosition() {
         return permanentInfo.position;
     }
-    
+
     public Dimension getLogicalSize() {
         return logicalSize;
     }
-    
+
     public void setLogicalPosition(final Point logicalPosition) {
         this.logicalPosition=logicalPosition;
     }
-    
+
     public Point getLogicalPosition() {
         return logicalPosition;
     }
-    
+
     public void setLogicalRow(final int logicalRow) {
         this.logicalRow=logicalRow;
     }
-    
+
     public int getLogicalRow() {
         return logicalRow;
     }
-            
+
     @Override
-    public void paintComponent(final Graphics g) {        
+    public void paintComponent(final Graphics g) {
         g.setFont(FontsAndBorders.FONT1);
         final FontMetrics metrics=g.getFontMetrics();
         final Graphics2D g2d=(Graphics2D)g;
@@ -193,7 +193,7 @@ public class ImagePermanentViewer extends JPanel {
                 final AffineTransform transform=new AffineTransform();
                 final double scale = linkedRect.width * 1.0 / CardImagesProvider.CARD_HEIGHT;
                 transform.translate(x1,y1);
-                transform.scale(scale,scale);            
+                transform.scale(scale,scale);
                 transform.translate(CardImagesProvider.CARD_HEIGHT/2,CardImagesProvider.CARD_WIDTH/2);
                 transform.rotate(Math.PI/2);
                 transform.translate(-CardImagesProvider.CARD_WIDTH/2,-CardImagesProvider.CARD_HEIGHT/2);
@@ -218,25 +218,25 @@ public class ImagePermanentViewer extends JPanel {
                 final Set<MagicAbility> abilityFlags=linkedInfo.abilityFlags;
                 ax=ImageDrawingUtils.drawAbilityInfo(g,this, abilityFlags,ax,ay);
             }
-            
+
             // Mana symbols
             if (linkedInfo.cardDefinition.getManaActivations().size() > 0) {
                 ax=ImageDrawingUtils.drawManaInfo(g,this,linkedInfo.cardDefinition,ax,ay);
             }
-           
+
             // Power, toughness, damage
             final String pt=linkedInfo.powerToughness;
             if (!pt.isEmpty()) {
                 final String damage=linkedInfo.damage>0?String.valueOf(linkedInfo.damage):"";
-                final boolean isDamage = damage.length() > 0; 
-                final int ptWidth=metrics.stringWidth(pt);                
+                final boolean isDamage = damage.length() > 0;
+                final int ptWidth=metrics.stringWidth(pt);
                 if (linkedInfo.blocking) {
                     ImageDrawingUtils.drawCreatureInfo(g,metrics,pt,ptWidth,damage,x1,y1,false);
                 } else {
                     ImageDrawingUtils.drawCreatureInfo(g,metrics,pt,ptWidth,damage,x2-ptWidth-4,y2-(isDamage?32:18),true);
                 }
             }
-            
+
             // Valid choice selection highlight
             if (viewer.isValidChoice(linkedInfo)) {
                 if (GeneralConfig.getInstance().isHighlightOverlay() ||
@@ -245,7 +245,7 @@ public class ImagePermanentViewer extends JPanel {
                     final Color choiceColor = viewer.getController().isCombatChoice() ?
                         ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_COMBAT_CHOICE) :
                         ThemeFactory.getInstance().getCurrentTheme().getChoiceColor();
-                    
+
                     //draw a transparent overlay of choiceColor
                     g2d.setPaint(choiceColor);
                     g2d.fillRect(x1-1,y1-1,x2-x1+2,y2-y1+2);
@@ -253,7 +253,7 @@ public class ImagePermanentViewer extends JPanel {
                     final Color choiceColor = viewer.getController().isCombatChoice() ?
                         ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_COMBAT_CHOICE_BORDER) :
                         ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_CHOICE_BORDER);
-                            
+
                     //draw a one pixel border of choiceColor
                     g2d.setPaint(new Color(choiceColor.getRGB()));
                     g2d.setStroke(new BasicStroke(2));

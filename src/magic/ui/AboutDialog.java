@@ -28,7 +28,7 @@ class AboutDialog extends JDialog implements ActionListener {
     private static final Font FONT_BOLD12 = new Font("dialog", Font.BOLD, 12);
     private static final Font FONT_PLAIN12 = new Font("dialog", Font.PLAIN, 12);
     private static final Font FONT_SMALL = new Font("dialog", Font.PLAIN, 9);
-    
+
     private static final String FORUM_URL = "http://www.slightlymagic.net/forum/" +
             "viewforum.php?f=82&sid=08ef9e6ebbb231a0c7ef65b3f12a5d77";
     private static final String REPO_URL = "http://code.google.com/p/magarena/";
@@ -39,7 +39,7 @@ class AboutDialog extends JDialog implements ActionListener {
     private static final String REPO_DISPLAY_LINK = "code.google.com/p/magarena";
 
     private final JButton okButton;
-    
+
     public AboutDialog(final MagicFrame frame) {
         super(frame, true);
         this.setLayout(new BorderLayout());
@@ -61,7 +61,7 @@ class AboutDialog extends JDialog implements ActionListener {
         magLabel.setBounds(205, 5, 390, 55);
         magLabel.setFont(FONT_BOLD48);
         aboutPanel.add(magLabel);
-        
+
         final JLabel descriptionLabel = new JLabel("Fantasy card strategy game"
                 + " against computer opponent");
         descriptionLabel.setBounds(250, 60, 390, 25);
@@ -72,7 +72,7 @@ class AboutDialog extends JDialog implements ActionListener {
         versionLabel.setBounds(250, 105, 320, 25);
         versionLabel.setFont(FONT_PLAIN12);
         aboutPanel.add(versionLabel);
-        
+
         final JLabel forumTextLabel = new JLabel("Visit the forum:");
         forumTextLabel.setBounds(250, 130, 120, 25);
         forumTextLabel.setFont(FONT_PLAIN12);
@@ -102,7 +102,7 @@ class AboutDialog extends JDialog implements ActionListener {
                 forumLabel.setText(FORUM_DISPLAY_LINK);
             }
         });
-        
+
         final JLabel repoTextLabel = new JLabel("Our code repository:");
         repoTextLabel.setBounds(250, 145, 120, 25);
         repoTextLabel.setFont(FONT_PLAIN12);
@@ -155,7 +155,7 @@ class AboutDialog extends JDialog implements ActionListener {
 
         setVisible(true);
     }
-        
+
     @Override
     public void actionPerformed(final ActionEvent event) {
         final Object source = event.getSource();

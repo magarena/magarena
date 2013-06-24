@@ -7,17 +7,17 @@ import magic.model.MagicPlayerDefinition;
 import magic.model.MagicPlayerProfile;
 import magic.model.phase.MagicMainPhase;
 
-class TestExileToken extends TestGameBuilder {    
+class TestExileToken extends TestGameBuilder {
     public MagicGame getGame() {
         final MagicDuel tournament=new MagicDuel();
         tournament.setDifficulty(6);
-        
+
         final MagicPlayerProfile profile=new MagicPlayerProfile("bgruw");
         final MagicPlayerDefinition player1=new MagicPlayerDefinition("Player",false,profile,15);
         final MagicPlayerDefinition player2=new MagicPlayerDefinition("Computer",true,profile,14);
         tournament.setPlayers(new MagicPlayerDefinition[]{player1,player2});
         tournament.setStartPlayer(0);
-        
+
         final MagicGame game=tournament.nextGame(true);
         game.setPhase(MagicMainPhase.getFirstInstance());
         final MagicPlayer player=game.getPlayer(0);
@@ -28,17 +28,17 @@ class TestExileToken extends TestGameBuilder {
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
         createPermanent(game,P,"Rupture Spire",false,8);
-        addToHand(P,"Journey to Nowhere",1); 
-        addToHand(P,"Naturalize",1); 
-       
+        addToHand(P,"Journey to Nowhere",1);
+        addToHand(P,"Naturalize",1);
+
 
         P = opponent;
-        
+
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
         createPermanent(game,P,"Rupture Spire",false,8);
-        addToHand(P,"Rise of the Hobgoblins",1); 
-        
+        addToHand(P,"Rise of the Hobgoblins",1);
+
         return game;
     }
 }

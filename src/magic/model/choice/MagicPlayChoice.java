@@ -21,19 +21,19 @@ import java.util.Set;
 import java.util.concurrent.Callable;
 
 public class MagicPlayChoice extends MagicChoice {
-    
+
     private static final MagicChoice INSTANCE=new MagicPlayChoice();
 
     private static final String MESSAGE="Play a card or ability.|Press {f} to pass priority.";
     private static final String CONTINUE_MESSAGE="Press {f} to pass priority.";
-    
+
     private static final Collection<Object> PASS_OPTIONS=Collections.<Object>singleton(MagicPlayChoiceResult.SKIP);
     private static final Object[] PASS_CHOICE_RESULTS= {MagicPlayChoiceResult.SKIP};
-    
+
     private MagicPlayChoice() {
         super("Play a card or ability.");
     }
-    
+
     @Override
     Collection<Object> getArtificialOptions(
             final MagicGame game,
@@ -50,7 +50,7 @@ public class MagicPlayChoice extends MagicChoice {
         if (game.isPhase(MagicPhaseType.CombatDamage)) {
             return PASS_OPTIONS;
         }
-        
+
         final ArrayList<Object> options=new ArrayList<Object>();
 
         // Pass is first choice when scores are equal.
@@ -62,7 +62,7 @@ public class MagicPlayChoice extends MagicChoice {
         // only one option, return SKIP instead of PASS
         return options.size() > 1 ? options : PASS_OPTIONS;
     }
-    
+
     private static void addValidChoices(
             final MagicGame game,
             final MagicPlayer player,
@@ -85,7 +85,7 @@ public class MagicPlayChoice extends MagicChoice {
             }
         }
     }
-    
+
     @Override
     public Object[] getPlayerChoiceResults(
             final GameController controller,
@@ -99,16 +99,16 @@ public class MagicPlayChoice extends MagicChoice {
                 controller.pause(GeneralConfig.getInstance().getMessageDelay());
             }
             return PASS_CHOICE_RESULTS;
-        } 
-       
-        //skip all combat phases if 
-        //  nobody is attacking and 
+        }
+
+        //skip all combat phases if
+        //  nobody is attacking and
         //  stack is empty
         if ((game.isPhase(MagicPhaseType.DeclareAttackers) ||
              game.isPhase(MagicPhaseType.DeclareBlockers) ||
              game.isPhase(MagicPhaseType.CombatDamage) ||
              game.isPhase(MagicPhaseType.EndOfCombat)) &&
-            player.getNrOfAttackers() == 0 && 
+            player.getNrOfAttackers() == 0 &&
             player.getOpponent().getNrOfAttackers() == 0 &&
             game.getStack().isEmpty()) {
             return PASS_CHOICE_RESULTS;
@@ -122,16 +122,16 @@ public class MagicPlayChoice extends MagicChoice {
             }
             return PASS_CHOICE_RESULTS;
         }
-        
+
         final Set<Object> validChoices = new HashSet<Object>();
         addValidChoices(game, player, false, validChoices);
-    
+
         if (validChoices.isEmpty() && MagicGame.canSkipSingleChoice()) {
             boolean skip = true;
 
             //if AI blocks, don't skip priority so that user can observe how the AI is blocking
-            if (game.isPhase(MagicPhaseType.DeclareBlockers) && 
-                player.getOpponent().getNrOfBlockers() > 0 && 
+            if (game.isPhase(MagicPhaseType.DeclareBlockers) &&
+                player.getOpponent().getNrOfBlockers() > 0 &&
                 game.getStack().isEmpty()) {
                 skip = false;
             }
@@ -154,7 +154,7 @@ public class MagicPlayChoice extends MagicChoice {
         }
         controller.enableForwardButton();
         controller.waitForInput();
-        
+
         controller.clearValidChoices();
         controller.disableActionButton(false);
         game.createUndoPoint();
@@ -162,7 +162,7 @@ public class MagicPlayChoice extends MagicChoice {
         if (controller.isActionClicked()) {
             return PASS_CHOICE_RESULTS;
         }
-        
+
         final MagicSource activationSource = controller.getChoiceClicked();
         final List<MagicPlayChoiceResult> results=new ArrayList<MagicPlayChoiceResult>();
         for (final MagicActivation activation : activationSource.getActivations()) {
@@ -172,7 +172,7 @@ public class MagicPlayChoice extends MagicChoice {
         }
 
         assert results.size() > 0 : "ERROR! There should be at least one activation possible.";
-        
+
         if (results.size() == 1) {
             return new Object[]{results.get(0)};
         } else {

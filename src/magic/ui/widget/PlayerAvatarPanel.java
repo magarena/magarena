@@ -12,21 +12,21 @@ import java.awt.BorderLayout;
 import java.awt.Dimension;
 
 public class PlayerAvatarPanel extends TexturedPanel {
-    
+
     private static final long serialVersionUID = 1L;
-    
-    private static final Border NORMAL_BORDER=BorderFactory.createEmptyBorder(6,6,6,6);    
-    
+
+    private static final Border NORMAL_BORDER=BorderFactory.createEmptyBorder(6,6,6,6);
+
     private final int index;
     private final JLabel faceLabel;
     private final TitleBar titleBar;
     private MagicPlayerDefinition playerDefinition;
     private boolean small;
-    private final Border selectedBorder;    
-    
+    private final Border selectedBorder;
+
     public PlayerAvatarPanel(final int index) {
 
-        this.index=index;        
+        this.index=index;
         this.setLayout(new BorderLayout());
         faceLabel=new JLabel();
         add(faceLabel,BorderLayout.CENTER);
@@ -45,23 +45,23 @@ public class PlayerAvatarPanel extends TexturedPanel {
                     )
                 );
     }
-    
+
     public void setPlayerDefinition(final MagicPlayerDefinition playerDefinition) {
-        
+
         this.playerDefinition=playerDefinition;
         update();
     }
-    
+
     public MagicPlayerDefinition getPlayerDefinition() {
-        
+
         return playerDefinition;
     }
-    
+
     public int getIndex() {
-        
+
         return index;
     }
-    
+
     public void setSmall(final boolean small) {
 
         if (this.small!=small) {
@@ -69,12 +69,12 @@ public class PlayerAvatarPanel extends TexturedPanel {
             update();
         }
     }
-    
+
     public void setSelected(final boolean selected) {
 
         this.setBorder(selected?selectedBorder:NORMAL_BORDER);
-    }    
-    
+    }
+
     private void update() {
 
         final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
@@ -89,6 +89,6 @@ public class PlayerAvatarPanel extends TexturedPanel {
             titleBar.setVisible(true);
             setPreferredSize(new Dimension(132,150));
         }
-        revalidate();        
+        revalidate();
     }
 }

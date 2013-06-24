@@ -10,12 +10,12 @@ import magic.model.MagicGame;
 import java.util.Set;
 
 public class MagicDummyModifier implements MagicModifier {
-    
+
     @Override
     public MagicPlayer getController(final MagicPermanent source, final MagicPermanent permanent, final MagicPlayer controller) {
         return controller;
     }
-    
+
     @Override
     public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {
         //leave power and toughness unchanged
@@ -30,7 +30,7 @@ public class MagicDummyModifier implements MagicModifier {
     public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
         //leave subtype unchanged
     }
-    
+
     @Override
     public int getTypeFlags(final MagicPermanent permanent, final int flags) {
         return flags;
@@ -39,13 +39,13 @@ public class MagicDummyModifier implements MagicModifier {
     @Override
     public int getColorFlags(final MagicPermanent permanent, final int flags) {
         return flags;
-    }    
-    
+    }
+
     @Override
     public void modPlayer(final MagicPermanent source, final MagicPlayer player) {
         //leave player unchanged
     }
-    
+
     @Override
     public void modGame(final MagicPermanent source, final MagicGame game) {
         //leave game unchanged

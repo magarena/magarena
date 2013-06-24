@@ -13,7 +13,7 @@ import java.util.Collections;
 public class MagicRandomCardChoice extends MagicChoice {
 
     private final int amount;
-    
+
     public MagicRandomCardChoice(final int amount) {
         super("");
         this.amount=amount;

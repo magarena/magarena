@@ -24,11 +24,11 @@ public class TransparentImagePanel extends JPanel {
             rescaleOp=new RescaleOp(scales, offsets, null);
         }
     }
-    
+
     public void setImage(final BufferedImage image) {
         this.image=image;
     }
-    
+
     @Override
     public void paintComponent(final Graphics g) {
         if (image!=null) {
@@ -39,5 +39,5 @@ public class TransparentImagePanel extends JPanel {
                 g2d.drawImage(image,rescaleOp,0,0);
             }
         }
-    }        
+    }
 }

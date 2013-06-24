@@ -20,11 +20,11 @@ public class MagicPlayCardAction extends MagicPutIntoPlayAction {
     public static final int TAPPED=6;
     public static final int HASTE_UEOT_REMOVE_AT_END_OF_TURN=7;
     public static final int UNDYING = 8;
-    
+
     private final MagicCard card;
     private final MagicPlayer controller;
     private final int action;
-    
+
     public MagicPlayCardAction(final MagicCard card,final MagicPlayer controller,final int action) {
         this.card=card;
         this.controller=controller;
@@ -42,11 +42,11 @@ public class MagicPlayCardAction extends MagicPutIntoPlayAction {
                 permanent.setState(MagicPermanentState.RemoveAtEndOfTurn);
                 break;
             case HASTE_REMOVE_AT_END_OF_YOUR_TURN:
-                game.doAction(new MagicSetAbilityAction(permanent, MagicAbility.Haste, MagicStatic.Forever)); 
+                game.doAction(new MagicSetAbilityAction(permanent, MagicAbility.Haste, MagicStatic.Forever));
                 permanent.setState(MagicPermanentState.RemoveAtEndOfYourTurn);
                 break;
             case HASTE_SACRIFICE_AT_END_OF_TURN:
-                game.doAction(new MagicSetAbilityAction(permanent, MagicAbility.Haste, MagicStatic.Forever)); 
+                game.doAction(new MagicSetAbilityAction(permanent, MagicAbility.Haste, MagicStatic.Forever));
                 permanent.setState(MagicPermanentState.SacrificeAtEndOfTurn);
                 break;
             case TAPPED_ATTACKING:
@@ -57,7 +57,7 @@ public class MagicPlayCardAction extends MagicPutIntoPlayAction {
                 permanent.setState(MagicPermanentState.Tapped);
                 break;
             case HASTE_UEOT_REMOVE_AT_END_OF_TURN:
-                game.doAction(new MagicSetAbilityAction(permanent, MagicAbility.Haste)); 
+                game.doAction(new MagicSetAbilityAction(permanent, MagicAbility.Haste));
                 permanent.setState(MagicPermanentState.RemoveAtEndOfTurn);
                 break;
             case UNDYING:

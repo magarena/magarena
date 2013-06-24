@@ -11,12 +11,12 @@ public class MagicDeclareBlockersAction extends MagicAction {
 
     private final MagicPlayer player;
     private final MagicDeclareBlockersResult result;
-    
+
     public MagicDeclareBlockersAction(final MagicPlayer player, final MagicDeclareBlockersResult result) {
         this.player = player;
         this.result = result;
     }
-    
+
     @Override
     public void doAction(final MagicGame game) {
         for (final MagicCombatCreature[] creatures : result) {
@@ -25,20 +25,20 @@ public class MagicDeclareBlockersAction extends MagicAction {
                 for (int index=1;index<creatures.length;index++) {
                     game.doAction(new MagicDeclareBlockerAction(attacker,creatures[index].permanent));
                 }
-                
+
                 if (attacker.isBlocked()) {
                     game.executeTrigger(MagicTriggerType.WhenBecomesBlocked,attacker);
                 }
             }
         }
-        
-        for (final MagicPermanent permanent : player.getOpponent().getPermanents()) {    
+
+        for (final MagicPermanent permanent : player.getOpponent().getPermanents()) {
             if (permanent.isAttacking() && !permanent.isBlocked()) {
                 game.executeTrigger(MagicTriggerType.WhenAttacksUnblocked,permanent);
             }
         }
     }
-    
+
     @Override
     public void undoAction(final MagicGame game) {
     }

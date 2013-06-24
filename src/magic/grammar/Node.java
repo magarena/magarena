@@ -20,7 +20,7 @@ public class Node {
         sb.append(')');
         return sb.toString();
     }
-    
+
     public void show() {
         show(0);
     }

@@ -21,11 +21,11 @@ public class MagicMulliganChoice extends MagicChoice {
             Collections.singletonList(new Object[]{YES_CHOICE});
     private static final List<Object[]> NO_CHOICE_LIST =
             Collections.singletonList(new Object[]{NO_CHOICE});
-    
+
     public MagicMulliganChoice() {
         super("");
     }
-    
+
     @Override
     Collection<Object> getArtificialOptions(
             final MagicGame game,
@@ -50,7 +50,7 @@ public class MagicMulliganChoice extends MagicChoice {
         if (player.getHandSize() <= 5) {
             return NO_CHOICE_LIST;
         }
-        
+
         for (final MagicCard card : player.getHand()) {
             final MagicCardDefinition cardDefinition = card.getCardDefinition();
             if (cardDefinition.isLand()) {
@@ -71,10 +71,10 @@ public class MagicMulliganChoice extends MagicChoice {
         if (lands >= minLands && lands <= maxLands && high <= 2) {
             return NO_CHOICE_LIST;
         }
-        
+
         return YES_CHOICE_LIST;
     }
-    
+
     @Override
     public Object[] getPlayerChoiceResults(
             final GameController controller,

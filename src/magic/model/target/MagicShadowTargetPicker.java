@@ -10,7 +10,7 @@ import java.util.Set;
 public class MagicShadowTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
     private static final MagicShadowTargetPicker INSTANCE = new MagicShadowTargetPicker();
-    
+
     private MagicShadowTargetPicker() {
     }
 
@@ -24,7 +24,7 @@ public class MagicShadowTargetPicker extends MagicTargetPicker<MagicPermanent> {
             permanent.isBlocking()) {
             return 0;
         }
-        
+
         // attacking
         if (game.getTurnPlayer() == player) {
             // no score for not being able to attack or being unblockable
@@ -45,7 +45,7 @@ public class MagicShadowTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
         return 10 + permanent.getPower();
     }
-    
+
     public static MagicShadowTargetPicker getInstance() {
         return INSTANCE;
     }

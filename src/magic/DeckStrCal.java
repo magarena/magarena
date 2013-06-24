@@ -12,7 +12,7 @@ import magic.ui.GameController;
 import java.io.File;
 
 public class DeckStrCal {
-        
+
     private static int games = 10;
     private static int repeat = 1;
     private static int str1 = 6;
@@ -95,14 +95,14 @@ public class DeckStrCal {
                 validArgs = false;
             }
         }
-      
+
         if (deck1.length() == 0) {
             System.err.println("Using player profile to generate deck 1");
         } else if (!(new File(deck1)).exists()) {
             System.err.println("Error: file " + deck1 + " does not exist");
             validArgs = false;
         }
-        
+
         if (deck2.length() == 0) {
             System.err.println("Using player profile to generate deck 2");
         } else if (!(new File(deck2)).exists()) {
@@ -130,7 +130,7 @@ public class DeckStrCal {
         testDuel.initialize();
         testDuel.setDifficulty(0, str1);
         testDuel.setDifficulty(1, str2);
-        
+
         // Set the AI
         testDuel.setAIs(new MagicAI[]{ai1.getAI(), ai2.getAI()});
         testDuel.getPlayer(0).setArtificial(true);
@@ -138,7 +138,7 @@ public class DeckStrCal {
 
         // Set the deck.
         if (deck1.length() > 0) {
-            DeckUtils.loadDeck(deck1, testDuel.getPlayer(0)); 
+            DeckUtils.loadDeck(deck1, testDuel.getPlayer(0));
         }
         if (deck2.length() > 0) {
             DeckUtils.loadDeck(deck2, testDuel.getPlayer(1));
@@ -146,11 +146,11 @@ public class DeckStrCal {
 
         return testDuel;
     }
-   
+
     public static void main(final String[] args) {
         // setup the handler for any uncaught exception
         Thread.setDefaultUncaughtExceptionHandler(new magic.model.MagicGameReport());
-        
+
         if (!parseArguments(args)) {
             System.err.println("Usage: java -cp <path to Magarena.jar/exe> magic.DeckStrCal --deck1 <.dec file> --deck2 <.dec file> [options]");
             System.err.println("Options:");
@@ -160,7 +160,7 @@ public class DeckStrCal {
             System.err.println("--games    <1-*>                 (number of games to play, default 10)");
             System.exit(1);
         }
-        
+
         // Load cards and cubes.
         MagicMain.initializeEngine();
 
@@ -168,10 +168,10 @@ public class DeckStrCal {
             runDuel();
         }
     }
-        
+
     private static void runDuel() {
         final MagicDuel testDuel = setupDuel();
-        
+
         System.out.println(
                  "#deck1" +
                 "\tai1" +
@@ -181,15 +181,15 @@ public class DeckStrCal {
                 "\tstr2" +
                 "\tgames" +
                 "\td1win"+
-                "\td1lose" 
-        ); 
+                "\td1lose"
+        );
 
         int played = 0;
         while (!testDuel.isFinished()) {
             final MagicGame game=testDuel.nextGame(false);
             game.setArtificial(true);
             final GameController controller=new GameController(game);
-        
+
             //maximum duration of a game is 60 minutes
             controller.setMaxTestGameDuration(3600000);
 
@@ -199,13 +199,13 @@ public class DeckStrCal {
                         deck1 + "\t" +
                         ai1 + "\t" +
                         str1 + "\t" +
-                        deck2 + "\t" + 
+                        deck2 + "\t" +
                         ai2 + "\t" +
                         str2 + "\t" +
                         testDuel.getGamesTotal() + "\t" +
                         testDuel.getGamesWon() + "\t" +
                         (testDuel.getGamesPlayed() - testDuel.getGamesWon())
-                ); 
+                );
                 played = testDuel.getGamesPlayed();
             }
         }
@@ -213,12 +213,12 @@ public class DeckStrCal {
                 deck1 + "\t" +
                 ai1 + "\t" +
                 str1 + "\t" +
-                deck2 + "\t" + 
+                deck2 + "\t" +
                 ai2 + "\t" +
                 str2 + "\t" +
                 testDuel.getGamesTotal() + "\t" +
                 testDuel.getGamesWon() + "\t" +
                 (testDuel.getGamesPlayed() - testDuel.getGamesWon())
-        ); 
+        );
     }
 }

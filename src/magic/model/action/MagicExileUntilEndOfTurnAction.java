@@ -7,7 +7,7 @@ import magic.model.MagicPermanent;
 public class MagicExileUntilEndOfTurnAction extends MagicAction {
 
     private final MagicPermanent permanent;
-    
+
     public MagicExileUntilEndOfTurnAction(final MagicPermanent permanent) {
         this.permanent=permanent;
     }

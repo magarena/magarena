@@ -19,11 +19,11 @@ public class MagicCounterUnlessEvent extends MagicEvent {
             ),
             itemOnStack,
             EVENT_ACTION,
-            "You may$ pay "+cost.getText()+"$. " + 
+            "You may$ pay "+cost.getText()+"$. " +
             "If you don't, counter "+itemOnStack.getName()+"."
         );
     }
-    
+
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

@@ -191,7 +191,7 @@ public enum CardProperty {
         }
     },
     ;
-    
+
     public void setProperty(final MagicCardDefinition card, final String value) {
         //do nothing
     }

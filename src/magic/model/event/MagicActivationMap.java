@@ -15,9 +15,9 @@ import java.util.TreeSet;
 public class MagicActivationMap extends TreeMap<MagicActivation,SortedSet<MagicSource>> {
 
     private static final long serialVersionUID = 1L;
-    
+
     public MagicActivationMap() {}
-    
+
     public MagicActivationMap(final MagicCopyMap copyMap,final MagicActivationMap map) {
         for (final Map.Entry<MagicActivation,SortedSet<MagicSource>> entry : map.entrySet()) {
             final SortedSet<MagicSource> sources=new TreeSet<MagicSource>();
@@ -25,11 +25,11 @@ public class MagicActivationMap extends TreeMap<MagicActivation,SortedSet<MagicS
             put(entry.getKey(), sources);
         }
     }
-    
+
     public Set<MagicActivation> getActivations() {
         return keySet();
     }
-    
+
     private void addActivation(final MagicActivation activation,final MagicSource source) {
         SortedSet<MagicSource> sources=get(activation);
         if (sources==null) {
@@ -38,9 +38,9 @@ public class MagicActivationMap extends TreeMap<MagicActivation,SortedSet<MagicS
         }
         sources.add(source);
     }
-    
+
     private void removeActivation(final MagicActivation activation,final MagicSource source) {
-        final Set<MagicSource> sources=get(activation);        
+        final Set<MagicSource> sources=get(activation);
         if (sources!=null) {
             sources.remove(source);
             if (sources.isEmpty()) {
@@ -48,13 +48,13 @@ public class MagicActivationMap extends TreeMap<MagicActivation,SortedSet<MagicS
             }
         }
     }
-    
+
     public void addActivations(final MagicCard card) {
         for (final MagicActivation activation : card.getCardDefinition().getCardActivations()) {
             addActivation(activation,card);
         }
     }
-    
+
     public void addActivations(final MagicCardList cardList) {
         for (final MagicCard card : cardList) {
             addActivations(card);
@@ -66,25 +66,25 @@ public class MagicActivationMap extends TreeMap<MagicActivation,SortedSet<MagicS
             addActivation(activation,permanent);
         }
     }
-    
+
     public void removeActivations(final MagicCard card) {
         for (final MagicActivation activation : card.getCardDefinition().getCardActivations()) {
             removeActivation(activation,card);
         }
     }
-    
+
     public void removeActivations(final MagicCardList cardList) {
         for (final MagicCard card : cardList) {
             removeActivations(card);
         }
     }
-    
+
     public void removeActivations(final MagicPermanent permanent) {
         for (final MagicActivation activation : permanent.getActivations()) {
             removeActivation(activation,permanent);
         }
     }
-        
+
     private void print() {
         System.err.println(getClass().getName());
         for (final Map.Entry<MagicActivation,SortedSet<MagicSource>> entry : entrySet()) {

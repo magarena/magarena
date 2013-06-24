@@ -7,12 +7,12 @@ public class MagicArtificialCondition implements MagicCondition {
 
     private final MagicCondition normalCondition;
     private final MagicCondition artificialCondition;
-    
+
     public MagicArtificialCondition(final MagicCondition normalCondition,final MagicCondition artificialCondition) {
         this.normalCondition=normalCondition;
         this.artificialCondition=artificialCondition;
     }
-    
+
     public MagicArtificialCondition(final MagicCondition artificialCondition) {
         this(MagicCondition.NONE, artificialCondition);
     }

@@ -9,7 +9,7 @@ public class MagicCopyCardOnStackAction extends MagicAction {
 
     private final MagicPlayer player;
     private final MagicCardOnStack cardOnStack;
-    
+
     public MagicCopyCardOnStackAction(final MagicPlayer player,final MagicCardOnStack cardOnStack) {
         this.player=player;
         this.cardOnStack=cardOnStack;
@@ -29,7 +29,7 @@ public class MagicCopyCardOnStackAction extends MagicAction {
     public void undoAction(final MagicGame game) {
         game.getStack().removeFromTop();
     }
-    
+
     @Override
     public String toString() {
         return getClass().getSimpleName()+" ("+cardOnStack.getName()+')';

@@ -16,7 +16,7 @@ import magic.model.target.MagicTargetHint;
 public class MagicEquipActivation extends MagicPermanentActivation {
 
     private final MagicManaCost equipCost;
-    
+
     public MagicEquipActivation(final MagicManaCost equipCost) {
         super(
             new MagicCondition[]{

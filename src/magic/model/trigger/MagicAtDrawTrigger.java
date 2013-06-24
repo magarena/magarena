@@ -11,15 +11,15 @@ import magic.model.choice.MagicSimpleMayChoice;
 
 public abstract class MagicAtDrawTrigger extends MagicTrigger<MagicPlayer> {
     public MagicAtDrawTrigger(final int priority) {
-        super(priority); 
+        super(priority);
     }
-    
+
     public MagicAtDrawTrigger() {}
-    
+
     public MagicTriggerType getType() {
         return MagicTriggerType.AtDraw;
     }
-    
+
     public static final MagicAtUpkeepTrigger EachPlayerDraw = new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
@@ -30,7 +30,7 @@ public abstract class MagicAtDrawTrigger extends MagicTrigger<MagicPlayer> {
                 "PN draws a card."
             );
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();

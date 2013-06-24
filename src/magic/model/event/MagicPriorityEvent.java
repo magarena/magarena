@@ -8,12 +8,12 @@ import magic.model.choice.MagicPlayChoiceResult;
 import magic.model.phase.MagicStep;
 
 public class MagicPriorityEvent extends MagicEvent {
-    
+
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            
+
             final MagicPlayChoiceResult playChoiceResult = event.getPlayChoice();
             if (playChoiceResult==MagicPlayChoiceResult.PASS ||
                 playChoiceResult==MagicPlayChoiceResult.SKIP) {
@@ -47,7 +47,7 @@ public class MagicPriorityEvent extends MagicEvent {
 
                 final MagicSource source = playChoiceResult.source;
                 final MagicPlayer player = source.getController();
-                
+
                 // set activation/priority of controller
                 activation.changeActivationPriority(game,player);
 

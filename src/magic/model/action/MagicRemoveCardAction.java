@@ -11,12 +11,12 @@ public class MagicRemoveCardAction extends MagicAction {
     private final MagicCard card;
     private final MagicLocationType locationType;
     private int index;
-    
+
     public MagicRemoveCardAction(final MagicCard card,final MagicLocationType locationType) {
         this.card=card;
         this.locationType=locationType;
     }
-    
+
     @Override
     public void doAction(final MagicGame game) {
         final MagicPlayer owner=card.getOwner();
@@ -32,11 +32,11 @@ public class MagicRemoveCardAction extends MagicAction {
                 break;
             case Graveyard:
                 index=owner.getGraveyard().removeCard(card);
-                break;        
+                break;
             case Exile:
                 index=owner.getExile().removeCard(card);
                 break;
-        }        
+        }
         game.setStateCheckRequired();
     }
 
@@ -67,9 +67,9 @@ public class MagicRemoveCardAction extends MagicAction {
     public boolean isValid() {
         return index >= 0;
     }
-    
+
     @Override
     public String toString() {
         return getClass().getSimpleName()+" ("+card.getName()+")";
-    }    
+    }
 }

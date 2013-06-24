@@ -43,14 +43,14 @@ import java.awt.image.BufferedImage;
 
 /**
  * <p><code>GraphicsUtilities</code> contains a set of tools to perform
- * common graphics operations easily. 
+ * common graphics operations easily.
  *
  * @author Romain Guy <romain.guy@mac.com>
  * @author rbair
  * @author Karl Schaefer
  */
 public class GraphicsUtilities {
-    
+
     public static BufferedImage scale(
             final BufferedImage img,
             final int targetWidth,
@@ -59,10 +59,10 @@ public class GraphicsUtilities {
             return img;
         } else {
             return scale(
-                    img, 
-                    targetWidth, 
-                    targetHeight, 
-                    RenderingHints.VALUE_INTERPOLATION_BILINEAR, 
+                    img,
+                    targetWidth,
+                    targetHeight,
+                    RenderingHints.VALUE_INTERPOLATION_BILINEAR,
                     true);
         }
     }
@@ -111,7 +111,7 @@ public class GraphicsUtilities {
             w = targetWidth;
             h = targetHeight;
         }
-        
+
         do {
             if (higherQuality && w > targetWidth) {
                 w /= 2;

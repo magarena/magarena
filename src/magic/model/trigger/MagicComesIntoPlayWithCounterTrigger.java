@@ -13,7 +13,7 @@ public class MagicComesIntoPlayWithCounterTrigger extends MagicWhenComesIntoPlay
     private final MagicCounterType counterType;
     private final String description;
     private final int amount;
-    
+
     public MagicComesIntoPlayWithCounterTrigger(
             final MagicCounterType counterType,
             final String description,

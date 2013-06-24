@@ -27,12 +27,12 @@ public class MagicStormTrigger extends MagicWhenSpellIsCastTrigger {
                 cardOnStack,
                 count,
                 this,
-                "Copy SN " + count + 
+                "Copy SN " + count +
                 (count == 1 ? " time." : " times.")
             ) :
             MagicEvent.NONE;
     }
-    
+
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         final int count = event.getRefInt();

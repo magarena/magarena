@@ -10,14 +10,14 @@ public class MagicExaltedTrigger extends MagicWhenAttacksTrigger {
     private static final MagicExaltedTrigger INSTANCE = new MagicExaltedTrigger();
 
     private MagicExaltedTrigger() {}
-    
+
     public static MagicExaltedTrigger create() {
         return INSTANCE;
     }
 
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-        return (permanent.isFriend(creature) && 
+        return (permanent.isFriend(creature) &&
                 permanent.getController().getNrOfAttackers()==1) ?
             new MagicEvent(
                 permanent,

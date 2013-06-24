@@ -35,7 +35,7 @@ public class CardDefinitions {
     public static final String TOKEN_IMAGE_FOLDER = "tokens";
     public static final String CARD_IMAGE_EXT = CardImagesProvider.IMAGE_EXTENSION;
     public static final String CARD_TEXT_EXT = ".txt";
-    
+
     private static final List<MagicCardDefinition> cards = new ArrayList<MagicCardDefinition>();
     private static final List<MagicCardDefinition> landCards = new ArrayList<MagicCardDefinition>();
     private static final List<MagicCardDefinition> spellCards = new ArrayList<MagicCardDefinition>();
@@ -51,7 +51,7 @@ public class CardDefinitions {
             new ImportCustomizer().addStarImports(
                 "java.util",
                 "magic.data",
-                "magic.model", 
+                "magic.model",
                 "magic.model.action",
                 "magic.model.choice",
                 "magic.model.condition",
@@ -73,7 +73,7 @@ public class CardDefinitions {
             throw new RuntimeException("Unsupported card property: " + property);
         }
     }
-    
+
     private static void filterCards() {
         for (final MagicCardDefinition card : cards) {
             if (!card.isLand() && !card.isToken()) {
@@ -100,7 +100,7 @@ public class CardDefinitions {
             CubeDefinitions.getCubeDefinition("all").add(cardDefinition.getName());
         }
     }
-    
+
     private static MagicCardDefinition prop2carddef(final Properties content) {
         final MagicCardDefinition cardDefinition=new MagicCardDefinition();
 
@@ -124,11 +124,11 @@ public class CardDefinitions {
             throw new RuntimeException(ex);
         }
     }
-    
+
     private static String getCanonicalName(String fullName) {
         return fullName.replaceAll("[^A-Za-z0-9]", "_");
     }
-    
+
     private static void loadCardDefinition(final File file) {
         try {
             final MagicCardDefinition cdef = prop2carddef(FileIO.toProp(file));
@@ -141,7 +141,7 @@ public class CardDefinitions {
             throw new RuntimeException("Error loading " + file, cause);
         }
     }
-    
+
     public static void loadCardDefinitions() {
         //load all files in card directory
         final File[] files = cardDir.listFiles(new FilenameFilter() {
@@ -152,24 +152,24 @@ public class CardDefinitions {
         for (final File file : files) {
             loadCardDefinition(file);
         }
-        
+
         filterCards();
         printStatistics();
-        
+
         addDefinition(MagicCardDefinition.UNKNOWN);
 
         System.err.println(getNumberOfCards()+ " card definitions");
         MagicCardDefinition.printStatistics();
     }
-    
+
     public static int getNumberOfCards() {
         return cards.size();
     }
-    
+
     public static MagicCardDefinition getCard(final int cindex) {
         return cards.get(cindex);
     }
-    
+
     public static MagicCardDefinition getCard(final String name) {
         final MagicCardDefinition cardDefinition=cardsMap.get(name);
         if (cardDefinition == null) {
@@ -177,7 +177,7 @@ public class CardDefinitions {
         }
         return cardDefinition;
     }
-    
+
     public static void loadCardTexts() {
         executor.execute(new Runnable() {
             @Override
@@ -190,21 +190,21 @@ public class CardDefinitions {
             }
         });
     }
-    
+
     private static void loadCardText(final MagicCardDefinition card) {
         // try to load text from file
         final StringBuilder buffer = new StringBuilder();
         buffer.append(MagicMain.getGamePath());
         buffer.append(File.separator);
         buffer.append(CARD_TEXT_FOLDER);
-        buffer.append(File.separator);                
+        buffer.append(File.separator);
         buffer.append(card.getCardTextName());
         buffer.append(CARD_TEXT_EXT);
-        
+
         try {
             final String text = FileIO.toStr(new File(buffer.toString()));
             if (text != null) {
-                card.setText(text);                        
+                card.setText(text);
             }
         } catch (IOException e) {
             // text not downloaded or missing
@@ -229,15 +229,15 @@ public class CardDefinitions {
     public static List<MagicCardDefinition> getCards() {
         return cards;
     }
-    
+
     public static List<MagicCardDefinition> getLandCards() {
         return landCards;
     }
-    
+
     public static List<MagicCardDefinition> getSpellCards() {
         return spellCards;
     }
-    
+
     private static void printStatistics() {
         final CardStatistics statistics=new CardStatistics(cards);
         statistics.printStatictics(System.err);

@@ -8,7 +8,7 @@ public class MagicSourceManaActivationResult implements MagicMappable {
 
     private final MagicPermanent permanent;
     private final MagicManaActivation activation;
-    
+
     public MagicSourceManaActivationResult(final MagicPermanent permanent,final MagicManaActivation activation) {
         this.permanent=permanent;
         this.activation=activation;
@@ -22,7 +22,7 @@ public class MagicSourceManaActivationResult implements MagicMappable {
     public void doActivation(final MagicGame game) {
         for (final MagicEvent costEvent : activation.getCostEvent(permanent)) {
             // Mana activation cost events do not have choices.
-            game.executeEvent(costEvent,MagicEvent.NO_CHOICE_RESULTS); 
+            game.executeEvent(costEvent,MagicEvent.NO_CHOICE_RESULTS);
         }
     }
 

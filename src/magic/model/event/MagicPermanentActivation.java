@@ -28,11 +28,11 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicLayer;
 
 public abstract class MagicPermanentActivation extends MagicActivation<MagicPermanent> implements MagicChangeCardDefinition, MagicCopyable {
-    
+
     public MagicPermanentActivation(final MagicActivationHints hints, final String txt) {
         super(MagicActivation.NO_COND,hints,txt);
     }
-    
+
     public MagicPermanentActivation(final MagicCondition[] conditions, final MagicActivationHints hints, final String txt) {
         super(conditions,hints,txt);
     }
@@ -56,7 +56,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
     public MagicCopyable copy(final MagicCopyMap copyMap) {
         return this;
     }
-    
+
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public final void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -75,21 +75,21 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
     public final MagicTargetChoice getTargetChoice(final MagicPermanent source) {
         return getPermanentEvent(source,MagicPayedCost.NO_COST).getTargetChoice();
     }
-   
+
     public abstract MagicEvent[] getCostEvent(final MagicPermanent source);
 
     public abstract MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost);
-    
+
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         throw new RuntimeException(getClass() + " did not override executeEvent");
     }
-    
+
     @Override
     public void change(final MagicCardDefinition cdef) {
         cdef.addAct(this);
     }
-    
+
     public static final MagicPermanentActivation TapAddCharge = new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Pump),
         "Charge"
@@ -108,7 +108,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
                 "Put a charge counter on SN."
             );
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicChangeCountersAction(
@@ -117,9 +117,9 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
                 1,
                 true
             ));
-        }        
+        }
     };
-    
+
     public static final MagicPermanentActivation Untap(final MagicManaCost cost) {
         return new MagicPermanentActivation(
             new MagicActivationHints(MagicTiming.Tapping),
@@ -146,7 +146,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
             }
         };
     }
-    
+
     public static final MagicPermanentActivation PreventDamage(final int n) {
         return new MagicPermanentActivation(
             new MagicActivationHints(MagicTiming.Pump),
@@ -178,8 +178,8 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
             });
         }
     };}
-    
-    public static final MagicPermanentActivation ReturnToOwnersHand(final MagicManaCost cost) { 
+
+    public static final MagicPermanentActivation ReturnToOwnersHand(final MagicManaCost cost) {
         return new MagicPermanentActivation(
             new MagicActivationHints(MagicTiming.Removal),
             "Return"
@@ -202,7 +202,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
             }
         };
     }
-    
+
     public static final MagicPermanentActivation SwitchPT(final MagicManaCost cost) {
         return new MagicPermanentActivation(
             new MagicActivationHints(MagicTiming.Pump),

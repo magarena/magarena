@@ -15,14 +15,14 @@ public class MagicPlayTokensAction extends MagicAction {
         card  = MagicCard.createTokenCard(cardDefinition,player);
         count = aCount;
     }
-    
+
     @Override
     public void doAction(final MagicGame game) {
         for (int i = 0; i < count; i++) {
             game.doAction(new MagicPlayTokenAction(card));
         }
     }
-    
+
     @Override
     public void undoAction(final MagicGame game) {
         //empty

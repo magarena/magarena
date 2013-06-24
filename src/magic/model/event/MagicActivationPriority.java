@@ -4,7 +4,7 @@ public class MagicActivationPriority {
 
     private int priority;
     private long activationId;
-    
+
     public MagicActivationPriority() {
         clear();
     }
@@ -13,7 +13,7 @@ public class MagicActivationPriority {
         priority = abilityPriority.priority;
         activationId = abilityPriority.activationId;
     }
-    
+
     public void clear() {
         priority = -1;
         activationId = -1;

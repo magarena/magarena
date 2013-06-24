@@ -10,20 +10,20 @@ import magic.model.choice.MagicSimpleMayChoice;
 
 public abstract class MagicLandfallTrigger extends MagicWhenOtherComesIntoPlayTrigger {
     public MagicLandfallTrigger(final int priority) {
-        super(priority); 
+        super(priority);
     }
-    
+
     public MagicLandfallTrigger() {}
-    
+
     protected abstract MagicEvent getEvent(final MagicPermanent permanent);
-    
+
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
         return (played.isFriend(permanent) && played.isLand()) ?
             getEvent(permanent) :
             MagicEvent.NONE;
     }
-    
+
     public static final MagicLandfallTrigger Quest = new MagicLandfallTrigger() {
         @Override
         public MagicEvent getEvent(final MagicPermanent permanent) {
@@ -38,7 +38,7 @@ public abstract class MagicLandfallTrigger extends MagicWhenOtherComesIntoPlayTr
                 "PN may$ put a quest counter on SN."
             );
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
@@ -49,6 +49,6 @@ public abstract class MagicLandfallTrigger extends MagicWhenOtherComesIntoPlayTr
                     true
                 ));
             }
-        }        
+        }
     };
 }

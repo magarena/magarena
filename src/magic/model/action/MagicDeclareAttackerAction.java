@@ -7,7 +7,7 @@ import magic.model.MagicPermanentState;
 public class MagicDeclareAttackerAction extends MagicAction {
 
     private final MagicPermanent attacker;
-    
+
     MagicDeclareAttackerAction(final MagicPermanent attacker) {
         this.attacker=attacker;
     }

@@ -11,17 +11,17 @@ public class DownloadImageFile extends WebDownloader {
     private final File file;
     private final URL url;
     private final MagicCardDefinition cdef;
-    
+
     DownloadImageFile(final File file, final URL url) {
         this(file, url, MagicCardDefinition.UNKNOWN);
     }
-    
+
     DownloadImageFile(final File file, final URL url, final MagicCardDefinition cdef) {
         this.file=file;
         this.url=url;
         this.cdef=cdef;
     }
-    
+
     public String getFilename() {
         return file.getName();
     }
@@ -29,7 +29,7 @@ public class DownloadImageFile extends WebDownloader {
     public File getFile() {
         return file;
     }
-    
+
     public void download(final Proxy proxy) {
         WebDownloader.downloadToFile(proxy, url, file);
     }

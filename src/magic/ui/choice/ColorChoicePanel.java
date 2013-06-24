@@ -21,17 +21,17 @@ public class ColorChoicePanel extends JPanel implements ActionListener {
 
     private static final String MESSAGE="Choose a color.";
     private static final Dimension BUTTON_DIMENSION=new Dimension(35,35);
-    
+
     private final GameController controller;
     private MagicColor color;
-    
+
     public ColorChoicePanel(final GameController controller,final MagicSource source) {
-        
+
         this.controller=controller;
-        
+
         setLayout(new BorderLayout());
         setOpaque(false);
-        
+
         final TextLabel textLabel=new TextLabel(GameController.getMessageWithSource(source,MESSAGE),GameViewer.TEXT_WIDTH,true);
         add(textLabel,BorderLayout.CENTER);
 
@@ -41,7 +41,7 @@ public class ColorChoicePanel extends JPanel implements ActionListener {
         add(buttonPanel,BorderLayout.SOUTH);
 
         for (final MagicColor color : MagicColor.values()) {
-            
+
             final JButton button=new JButton(color.getIcon());
             button.setActionCommand(Character.toString(color.getSymbol()));
             button.setPreferredSize(BUTTON_DIMENSION);
@@ -52,10 +52,10 @@ public class ColorChoicePanel extends JPanel implements ActionListener {
     }
 
     public MagicColor getColor() {
-        
+
         return color;
     }
-    
+
     @Override
     public void actionPerformed(final ActionEvent event) {
 

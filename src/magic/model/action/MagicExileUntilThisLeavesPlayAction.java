@@ -11,21 +11,21 @@ public class MagicExileUntilThisLeavesPlayAction extends MagicAction {
     private final MagicPermanent permanent;
     private final MagicCard card;
     private final MagicLocationType location;
-    
+
     public MagicExileUntilThisLeavesPlayAction(final MagicPermanent source,final MagicCard card,final MagicLocationType location) {
         this.source = source;
         this.permanent = MagicPermanent.NONE;
         this.card = card;
         this.location = location;
     }
-    
+
     public MagicExileUntilThisLeavesPlayAction(final MagicPermanent source,final MagicPermanent permanent) {
         this.source = source;
         this.permanent = permanent;
         this.card = permanent.getCard();
         this.location = MagicLocationType.Exile;
     }
-    
+
     @Override
     public void doAction(final MagicGame game) {
         if (permanent != MagicPermanent.NONE) {
@@ -34,7 +34,7 @@ public class MagicExileUntilThisLeavesPlayAction extends MagicAction {
             game.doAction(new MagicRemoveCardAction(card,location));
             game.doAction(new MagicMoveCardAction(card,location,MagicLocationType.Exile));
         }
-        
+
         source.addExiledCard(card);
     }
 

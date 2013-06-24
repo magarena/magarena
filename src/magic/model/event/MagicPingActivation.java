@@ -11,9 +11,9 @@ import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
 
 public class MagicPingActivation extends MagicPermanentActivation {
-    
+
     private final int n;
-    
+
     public MagicPingActivation(final int n) {
         super(
             new MagicActivationHints(MagicTiming.Removal),

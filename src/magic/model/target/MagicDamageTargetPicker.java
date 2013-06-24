@@ -11,12 +11,12 @@ public class MagicDamageTargetPicker extends MagicTargetPicker<MagicTarget> {
 
     private final int amount;
     private final boolean noRegeration;
-    
+
     public MagicDamageTargetPicker(final int amount,final boolean noRegeneration) {
         this.amount=amount;
         this.noRegeration=noRegeneration;
     }
-    
+
     public MagicDamageTargetPicker(final int amount) {
         this(amount,false);
     }
@@ -38,15 +38,15 @@ public class MagicDamageTargetPicker extends MagicTargetPicker<MagicTarget> {
                 score=ArtificialScoringSystem.WIN_GAME_SCORE;
             }
             return targetPlayer==player?-score:score;
-        } else if (target.isPermanent()) {        
+        } else if (target.isPermanent()) {
             // Permanent
             final MagicPermanent permanent=(MagicPermanent)target;
             if (permanent.hasAbility(MagicAbility.Indestructible)) {
                 return 0;
-            }        
+            }
             if (permanent.isRegenerated()&&!noRegeration) {
                 return 0;
-            }        
+            }
             final int actualAmount=amount-permanent.getPreventDamage();
             if (actualAmount<=0) {
                 return 0;

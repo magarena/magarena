@@ -13,7 +13,7 @@ import magic.model.condition.MagicCondition;
 public abstract class MagicActivation<T extends MagicSource> implements MagicEventAction, Comparable<MagicActivation> {
 
     public static final MagicCondition[] NO_COND = new MagicCondition[0];
-    
+
     private final int priority;
     private final long id;
     private final String text;
@@ -24,24 +24,24 @@ public abstract class MagicActivation<T extends MagicSource> implements MagicEve
         final MagicCondition[] conditions,
         final MagicActivationHints hints,
         final String txt) {
-        
+
         this.text = txt;
         this.conditions=conditions;
         this.hints=hints;
         this.priority=hints.getTiming().getPriority();
-        
+
         //randomly assigned, used for ordering activations
         this.id = hashCode();
     }
-    
+
     public final MagicActivationHints getActivationHints() {
         return hints;
     }
-   
+
     public final String getText() {
         return text;
     }
-    
+
     private final boolean checkActivationPriority(final MagicSource source) {
         final MagicActivationPriority actpri = source.getController().getActivationPriority();
         final int priorityDif = priority - actpri.getPriority();
@@ -49,22 +49,22 @@ public abstract class MagicActivation<T extends MagicSource> implements MagicEve
             return true;
         } else if (priorityDif < 0) {
             return false;
-        } 
-        return id >= actpri.getActivationId();        
+        }
+        return id >= actpri.getActivationId();
     }
-    
+
     void changeActivationPriority(final MagicGame game,final MagicPlayer player) {
         final MagicActivationPriority actpri = player.getActivationPriority();
         actpri.setPriority(priority);
         actpri.setActivationId(id);
     }
-    
+
     public final boolean canPlay(
             final MagicGame game,
             final MagicPlayer player,
             final T source,
             final boolean useHints) {
-       
+
         if (useHints && !checkActivationPriority(source)) {
             return false;
         }
@@ -80,11 +80,11 @@ public abstract class MagicActivation<T extends MagicSource> implements MagicEve
         if (source.isPermanent() && ((MagicPermanent)source).hasAbility(MagicAbility.CantActivateAbilities)) {
             return false;
         }
-        
+
         if (source.isPermanent() && player.hasState(MagicPlayerState.CantActivateAbilities)) {
             return false;
         }
-        
+
         if (source.isSpell() && player.hasState(MagicPlayerState.CantCastSpells)) {
             return false;
         }
@@ -104,23 +104,23 @@ public abstract class MagicActivation<T extends MagicSource> implements MagicEve
                 }
             }
         }
-        
+
         // Check for legal targets.
         final boolean useTargetHints = useHints || GeneralConfig.getInstance().getSmartTarget();
-        final MagicTargetChoice targetChoice = getTargetChoice(source); 
+        final MagicTargetChoice targetChoice = getTargetChoice(source);
         return game.hasLegalTargets(player,source,targetChoice,useTargetHints);
     }
-    
+
     @Override
     public int compareTo(final MagicActivation other) {
         return Long.signum(id-other.id);
     }
-    
+
     abstract boolean usesStack();
 
     abstract MagicEvent[] getCostEvent(final T source);
-    
+
     public abstract MagicEvent getEvent(final MagicSource source);
-    
-    abstract MagicTargetChoice getTargetChoice(final T source);    
+
+    abstract MagicTargetChoice getTargetChoice(final T source);
 }

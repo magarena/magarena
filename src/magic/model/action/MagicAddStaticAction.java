@@ -13,7 +13,7 @@ public class MagicAddStaticAction extends MagicAction {
         permanent = aPermanent;
         mstatic = aStatic;
     }
-    
+
     public MagicAddStaticAction(final MagicStatic aStatic) {
         this(MagicPermanent.NONE, aStatic);
     }
@@ -28,8 +28,8 @@ public class MagicAddStaticAction extends MagicAction {
     public void undoAction(final MagicGame game) {
         game.removeStatic(permanent, mstatic);
     }
-    
-    
+
+
     @Override
     public String toString() {
         return getClass().getSimpleName()+" ("+permanent+','+mstatic+')';

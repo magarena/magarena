@@ -10,7 +10,7 @@ public class MagicChangeCountersAction extends MagicAction {
     private final MagicCounterType counterType;
     private final int amount;
     private final boolean hasScore;
-    
+
     public MagicChangeCountersAction(
             final MagicPermanent permanent,
             final MagicCounterType counterType,
@@ -18,14 +18,14 @@ public class MagicChangeCountersAction extends MagicAction {
             final boolean hasScore) {
         this.permanent=permanent;
         this.counterType=counterType;
-        
+
         // number of counters cannot become negative
         this.amount = (permanent.getCounters(counterType) + amount >= 0) ?
             amount : -permanent.getCounters(counterType);
-        
+
         this.hasScore=hasScore;
     }
-    
+
     @Override
     public void doAction(final MagicGame game) {
         if (amount == 0) {

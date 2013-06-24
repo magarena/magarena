@@ -47,10 +47,10 @@ public class MagicPlayer implements MagicTarget {
 
     private static final int LOSING_POISON=10;
     private static final long ID_FACTOR=31;
-    
+
     private final MagicPlayerDefinition playerDefinition;
     private final int index;
-    
+
     private int life;
     private int stateFlags;
     private int poison;
@@ -76,7 +76,7 @@ public class MagicPlayer implements MagicTarget {
         playerDefinition = aPlayerDefinition;
         index = aIndex;
         life = aLife;
-        
+
         hand=new MagicCardList();
         library=new MagicCardList();
         graveyard=new MagicCardList();
@@ -87,10 +87,10 @@ public class MagicPlayer implements MagicTarget {
         builderCost=new MagicBuilderManaCost();
         activationPriority=new MagicActivationPriority();
     }
-    
+
     private MagicPlayer(final MagicCopyMap copyMap, final MagicPlayer sourcePlayer) {
         copyMap.put(sourcePlayer, this);
-        
+
         playerDefinition = sourcePlayer.playerDefinition;
         index = sourcePlayer.index;
         life = sourcePlayer.life;
@@ -111,12 +111,12 @@ public class MagicPlayer implements MagicTarget {
         activationPriority=new MagicActivationPriority(sourcePlayer.activationPriority);
         cachedAbilityFlags=sourcePlayer.cachedAbilityFlags;
     }
-    
+
     @Override
     public MagicPlayer copy(final MagicCopyMap copyMap) {
         return new MagicPlayer(copyMap, this);
     }
-    
+
     @Override
     public MagicPlayer map(final MagicGame game) {
         return game.getPlayer(index);
@@ -129,7 +129,7 @@ public class MagicPlayer implements MagicTarget {
     public MagicGame getGame() {
         return currGame;
     }
-    
+
     public long getStateId() {
         keys = new long[] {
             life,
@@ -151,7 +151,7 @@ public class MagicPlayer implements MagicTarget {
         };
         return magic.MurmurHash3.hash(keys);
     }
-    
+
     String getIdString() {
         final StringBuilder sb = new StringBuilder();
         sb.append(keys[0]);
@@ -161,7 +161,7 @@ public class MagicPlayer implements MagicTarget {
         }
         return sb.toString();
     }
-    
+
     long getPlayerId(final long id) {
         // Exile is not used for id.
         long playerId=id;
@@ -173,20 +173,20 @@ public class MagicPlayer implements MagicTarget {
         playerId=playerId*ID_FACTOR+graveyard.getStateId();
         return playerId;
     }
-    
+
     @Override
     public String toString() {
         return playerDefinition.getName();
     }
-    
+
     public MagicActivationMap getActivationMap() {
         return activationMap;
     }
-            
+
     public MagicPlayerDefinition getPlayerDefinition() {
         return playerDefinition;
     }
-    
+
     public int getIndex() {
         return index;
     }
@@ -194,63 +194,63 @@ public class MagicPlayer implements MagicTarget {
     public long getId() {
         return 1000000000L + index;
     }
-    
+
     public void setState(final MagicPlayerState state) {
         stateFlags|=state.getMask();
     }
-    
+
     public void clearState(final MagicPlayerState state) {
         stateFlags&=Integer.MAX_VALUE-state.getMask();
     }
-    
+
     public boolean hasState(final MagicPlayerState state) {
         return state.hasState(stateFlags);
     }
-    
+
     public int getStateFlags() {
         return stateFlags;
     }
-    
+
     public void setStateFlags(final int flags) {
         stateFlags=flags;
     }
-                    
+
     public void setLife(final int life) {
         this.life=life;
     }
-            
+
     public int getLife() {
         return life;
     }
-    
+
     public void setPoison(final int poison) {
         this.poison=poison;
     }
-    
+
     public int getPoison() {
         return poison;
     }
-    
+
     public void changeExtraTurns(final int amount) {
         extraTurns+=amount;
     }
-    
+
     public int getExtraTurns() {
         return extraTurns;
     }
-        
+
     public int getHandSize() {
         return hand.size();
     }
-        
+
     public int getNumExcessCards() {
         return Math.max(0, getHandSize() - maxHandSize);
     }
-    
+
     public void noMaxHandSize() {
         maxHandSize = Integer.MAX_VALUE;
     }
-    
+
     public MagicCardList getHand() {
         return hand;
     }
@@ -259,17 +259,17 @@ public class MagicPlayer implements MagicTarget {
         hand.addToTop(card);
         activationMap.addActivations(card);
     }
-    
+
     public void addCardToHand(final MagicCard card,final int aIndex) {
         hand.add(aIndex,card);
         activationMap.addActivations(card);
     }
-        
+
     public int removeCardFromHand(final MagicCard card) {
         activationMap.removeActivations(card);
         return hand.removeCard(card);
     }
-    
+
     void setHandToUnknown() {
         activationMap.removeActivations(hand);
         hand.setKnown(false);
@@ -292,7 +292,7 @@ public class MagicPlayer implements MagicTarget {
             addCardToHand(library.removeCardAtTop());
         }
     }
-    
+
     void createHandAndLibrary(final int handSize) {
         for (final MagicCardDefinition cardDefinition : playerDefinition.getDeck()) {
             final long id = currGame.getUniqueId();
@@ -303,8 +303,8 @@ public class MagicPlayer implements MagicTarget {
         final long seed = magic.MurmurHash3.hash(new long[] {
             2 * index - 1,
             MagicGame.getCount(),
-            (System.getProperty("rndSeed") != null) ? 
-                Long.parseLong(System.getProperty("rndSeed")) : 
+            (System.getProperty("rndSeed") != null) ?
+                Long.parseLong(System.getProperty("rndSeed")) :
                 System.currentTimeMillis()
         });
 
@@ -318,15 +318,15 @@ public class MagicPlayer implements MagicTarget {
     public MagicCardList getLibrary() {
         return library;
     }
-    
+
     public MagicCardList getGraveyard() {
         return graveyard;
     }
-    
+
     public MagicCardList getExile() {
         return exile;
     }
-    
+
     public MagicPermanentSet getPermanents() {
         return permanents;
     }
@@ -348,15 +348,15 @@ public class MagicPlayer implements MagicTarget {
         }
         activationMap.removeActivations(permanent);
     }
-    
+
     public List<MagicSourceManaActivation> getManaActivations(final MagicGame game) {
         final List<MagicSourceManaActivation> activations=new ArrayList<MagicSourceManaActivation>();
         for (final MagicPermanent permanent : manaPermanents) {
-                        
+
             if (game.isArtificial()&&permanent.hasState(MagicPermanentState.ExcludeManaSource)) {
                 continue;
             }
-            
+
             final MagicSourceManaActivation sourceActivation=new MagicSourceManaActivation(game,permanent);
             if (sourceActivation.available) {
                 activations.add(sourceActivation);
@@ -364,7 +364,7 @@ public class MagicPlayer implements MagicTarget {
         }
         return activations;
     }
-    
+
     private int getManaActivationsCount(final MagicGame game) {
         int count=0;
         for (final MagicPermanent permanent : manaPermanents) {
@@ -376,11 +376,11 @@ public class MagicPlayer implements MagicTarget {
         }
         return count;
     }
-    
+
     public void setBuilderCost(final MagicBuilderManaCost builderCost) {
         this.builderCost=builderCost;
     }
-    
+
     public MagicBuilderManaCost getBuilderCost() {
         return builderCost;
     }
@@ -388,11 +388,11 @@ public class MagicPlayer implements MagicTarget {
     public void setActivationPriority(final MagicActivationPriority abilityPriority) {
         this.activationPriority=abilityPriority;
     }
-    
+
     public MagicActivationPriority getActivationPriority() {
         return activationPriority;
     }
-    
+
     public int getMaximumX(final MagicGame game,final MagicManaCost cost) {
         return (getManaActivationsCount(game) -
                 builderCost.getMinimumAmount() -
@@ -409,7 +409,7 @@ public class MagicPlayer implements MagicTarget {
         }
         return count;
     }
-    
+
     public int getNrOfBlockers() {
         int count=0;
         for (final MagicPermanent permanent : permanents) {
@@ -419,7 +419,7 @@ public class MagicPlayer implements MagicTarget {
         }
         return count;
     }
-    
+
     public int getNrOfPermanentsWithType(final MagicType type) {
         int count=0;
         for (final MagicPermanent permanent : permanents) {
@@ -439,7 +439,7 @@ public class MagicPlayer implements MagicTarget {
         }
         return count;
     }
-    
+
     public int getNrOfPermanents(final MagicTargetFilter<MagicPermanent> filter) {
         int count = 0;
         for (final MagicPermanent permanent : permanents) {
@@ -449,8 +449,8 @@ public class MagicPlayer implements MagicTarget {
         }
         return count;
     }
-    
-    
+
+
     public boolean controlsPermanent(final MagicTargetFilter<MagicPermanent> filter) {
         for (final MagicPermanent permanent : permanents) {
             if (filter.accept(currGame, this, permanent)) {
@@ -459,11 +459,11 @@ public class MagicPlayer implements MagicTarget {
         }
         return false;
     }
-    
+
     public boolean controlsPermanent(final MagicPermanent permanent) {
         return permanents.contains(permanent);
     }
-    
+
     public boolean controlsPermanent(final MagicColor color) {
         for (final MagicPermanent permanent : permanents) {
             if (permanent.hasColor(color)) {
@@ -472,7 +472,7 @@ public class MagicPlayer implements MagicTarget {
         }
         return false;
     }
-    
+
     public boolean controlsPermanent(final MagicType type) {
         for (final MagicPermanent permanent : permanents) {
             if (permanent.hasType(type)) {
@@ -481,40 +481,40 @@ public class MagicPlayer implements MagicTarget {
         }
         return false;
     }
-    
+
     public boolean controlsPermanent(final MagicSubType subType) {
         for (final MagicPermanent permanent : permanents) {
             if (permanent.hasSubType(subType)) {
                 return true;
             }
         }
-        return false;        
+        return false;
     }
-    
+
     public boolean controlsPermanent(final MagicAbility ability) {
         for (final MagicPermanent permanent : permanents) {
             if (permanent.hasAbility(ability)) {
                 return true;
             }
         }
-        return false;        
+        return false;
     }
-    
+
     @Override
     public MagicCardDefinition getCardDefinition() {
-        throw new RuntimeException("player has no card definition"); 
+        throw new RuntimeException("player has no card definition");
     }
-    
+
     @Override
     public String getName() {
         return playerDefinition.getName();
     }
-    
+
     @Override
     public boolean isPermanent() {
         return false;
     }
-    
+
     @Override
     public boolean isCreature() {
         return false;
@@ -524,7 +524,7 @@ public class MagicPlayer implements MagicTarget {
     public boolean isPlayer() {
         return true;
     }
-    
+
     @Override
     public boolean isPlaneswalker() {
         return false;
@@ -566,22 +566,22 @@ public class MagicPlayer implements MagicTarget {
     public boolean hasAbility(final MagicAbility ability) {
         return cachedAbilityFlags.contains(ability);
     }
-    
+
     @Override
     public boolean hasType(final MagicType type) {
         return false;
     }
-    
+
     @Override
     public boolean hasSubType(final MagicSubType subType) {
         return false;
     }
-    
+
     @Override
     public boolean hasColor(final MagicColor color) {
         return false;
     }
-    
+
     @Override
     public boolean isValidTarget(final MagicSource source) {
         // Can't be the target of spells or abilities your opponents controls.
@@ -590,7 +590,7 @@ public class MagicPlayer implements MagicTarget {
         }
         return true;
     }
-    
+
     @Override
     public boolean isLegalTarget(final MagicPlayer player, final MagicTargetFilter<? extends MagicTarget> targetFilter) {
         return true;
@@ -599,7 +599,7 @@ public class MagicPlayer implements MagicTarget {
     public void incDrawnCards() {
         drawnCards++;
     }
-    
+
     public void decDrawnCards() {
         drawnCards--;
     }
@@ -620,7 +620,7 @@ public class MagicPlayer implements MagicTarget {
             currGame.addDelayedAction(new MagicLoseGameAction(this,MagicLoseGameAction.POISON_REASON));
         }
     }
-    
+
     public void apply(final MagicLayer layer) {
         switch (layer) {
             case Player:
@@ -632,7 +632,7 @@ public class MagicPlayer implements MagicTarget {
                 throw new RuntimeException("No case for " + layer + " in MagicPlayer.apply");
         }
     }
-    
+
     private void apply(final MagicPermanent source, final MagicStatic mstatic) {
         final MagicLayer layer = mstatic.getLayer();
         switch (layer) {

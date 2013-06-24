@@ -12,7 +12,7 @@ public class MagicGameCombatScore implements MagicCombatScore {
     private final MagicGame game;
     private final MagicPlayer attackingPlayer;
     private final MagicPlayer defendingPlayer;
-    
+
     public MagicGameCombatScore(final MagicGame game,final MagicPlayer attackingPlayer,final MagicPlayer defendingPlayer) {
         this.game=game;
         this.attackingPlayer=attackingPlayer;

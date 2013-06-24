@@ -10,12 +10,12 @@ import java.awt.BorderLayout;
 import java.util.Collection;
 
 public class BattlefieldViewer extends PermanentsViewer {
-        
+
     private static final long serialVersionUID = 1L;
-        
+
     private final boolean opponent;
     private final PermanentFilter permanentFilter;
-    
+
     public BattlefieldViewer(final ViewerInfo viewerInfo,final GameController controller,final boolean opponent) {
         super(viewerInfo,controller);
         this.opponent=opponent;
@@ -29,12 +29,12 @@ public class BattlefieldViewer extends PermanentsViewer {
         permanentFilter.createFilterButtons(filterPanel,false);
         titleBar.add(filterPanel,BorderLayout.EAST);
     }
-    
+
     @Override
     public String getTitle() {
         return "Battlefield : "+viewerInfo.getPlayerInfo(opponent).name;
     }
-    
+
     @Override
     public Collection<PermanentViewerInfo> getPermanents() {
         return permanentFilter.getPermanents(viewerInfo,opponent);

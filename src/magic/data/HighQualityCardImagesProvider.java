@@ -12,17 +12,17 @@ import java.util.Map;
  * the cards directory
  */
 public class HighQualityCardImagesProvider implements CardImagesProvider {
-    
+
     private static final CardImagesProvider INSTANCE=new HighQualityCardImagesProvider();
 
     private static final int MAX_IMAGES=100;
-    private final Map<String,BufferedImage> scaledImages = 
+    private final Map<String,BufferedImage> scaledImages =
         new magic.data.LRUCache<String,BufferedImage>(MAX_IMAGES);
-    private final Map<String,BufferedImage> origImages = 
+    private final Map<String,BufferedImage> origImages =
         new magic.data.LRUCache<String,BufferedImage>(MAX_IMAGES);
-    
+
     private HighQualityCardImagesProvider() {}
-    
+
     private static final String getFilename(
             final MagicCardDefinition cardDefinition,
             final int index) {
@@ -35,11 +35,11 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
         buffer.append(IMAGE_EXTENSION);
         return buffer.toString();
     }
-    
+
     private static BufferedImage loadCardImage(final String filename) {
         return FileIO.toImg(new File(filename), IconImages.MISSING_CARD);
     }
-    
+
     @Override
     public BufferedImage getImage(
             final MagicCardDefinition cardDefinition,
@@ -56,10 +56,10 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
         }
 
         if (!scaledImages.containsKey(filename)) {
-            scaledImages.put(filename, 
+            scaledImages.put(filename,
                 magic.GraphicsUtilities.scale(
-                    origImages.get(filename), 
-                    CARD_WIDTH, 
+                    origImages.get(filename),
+                    CARD_WIDTH,
                     CARD_HEIGHT
                 )
             );
@@ -67,12 +67,12 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
 
         return orig ? origImages.get(filename) : scaledImages.get(filename);
     }
-    
+
     public static CardImagesProvider getInstance() {
         return INSTANCE;
     }
-    
-    public void clearCache() {        
+
+    public void clearCache() {
         origImages.clear();
         scaledImages.clear();
     }

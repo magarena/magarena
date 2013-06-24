@@ -21,7 +21,7 @@ public class MagicEntersDamageTargetTrigger extends MagicWhenComesIntoPlayTrigge
         this.n = n;
         this.targetChoice = targetChoice;
     }
-    
+
     private final String genDescription(final MagicTargetChoice targetChoice) {
         String description = "creature or player$.";
         if (targetChoice == MagicTargetChoice.TARGET_CREATURE) {
@@ -32,7 +32,7 @@ public class MagicEntersDamageTargetTrigger extends MagicWhenComesIntoPlayTrigge
         }
         return description;
     }
-    
+
     @Override
     public MagicEvent executeTrigger(
             final MagicGame game,

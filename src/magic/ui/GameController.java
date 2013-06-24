@@ -38,7 +38,7 @@ import java.util.concurrent.atomic.AtomicReference;
 public class GameController {
 
     private long MAX_TEST_MODE_DURATION=10000;
-    
+
     private final GamePanel gamePanel;
     private final MagicGame game;
     private final boolean testMode;
@@ -56,14 +56,14 @@ public class GameController {
     private MagicTarget choiceClicked = MagicTargetNone.getInstance();
     private MagicCardDefinition sourceCardDefinition = MagicCardDefinition.UNKNOWN;
     private BlockingQueue<Boolean> input = new SynchronousQueue<Boolean>();
-    
+
     public GameController(final GamePanel aGamePanel,final MagicGame aGame) {
         gamePanel = aGamePanel;
         game = aGame;
         testMode = false;
         clearValidChoices();
     }
-    
+
     /** Fully artificial test game. */
     public GameController(final MagicGame aGame) {
         gamePanel = null;
@@ -75,7 +75,7 @@ public class GameController {
     public MagicGame getGame() {
         return game;
     }
-        
+
     public void enableForwardButton() {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
@@ -83,7 +83,7 @@ public class GameController {
             }
         });
     }
-    
+
     public void disableActionButton(final boolean thinking) {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
@@ -91,7 +91,7 @@ public class GameController {
             }
         });
     }
-    
+
     private void disableActionUndoButtons() {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
@@ -100,7 +100,7 @@ public class GameController {
             }
         });
     }
-    
+
     public void pause(final int t) {
         disableActionUndoButtons();
         try { //sleep
@@ -120,7 +120,7 @@ public class GameController {
             throw new RuntimeException(ex);
         }
     }
-    
+
     /** Returns true when undo was clicked. */
     private boolean waitForInputOrUndo() {
         try {
@@ -129,7 +129,7 @@ public class GameController {
             throw new RuntimeException(ex);
         }
     }
-    
+
     public void waitForInput() throws UndoClickedException {
         try {
             final boolean undoClicked = input.take();
@@ -148,32 +148,32 @@ public class GameController {
             throw new RuntimeException(ex);
         }
     }
-    
+
     public void passKeyPressed() {
         if (gamePanel.canClickAction()) {
             actionClicked();
             game.setSkipTurn(true);
         }
     }
-    
+
     public void actionKeyPressed() {
         if (gamePanel.canClickAction()) {
             actionClicked();
         }
     }
-    
+
     public void actionClicked() {
         actionClicked = true;
         choiceClicked = MagicTargetNone.getInstance();
         resume(false);
     }
-    
+
     public void undoKeyPressed() {
         if (gamePanel.canClickUndo()) {
             undoClicked();
         }
     }
-    
+
     public void undoClicked() {
         if (game.hasUndoPoints()) {
             actionClicked = false;
@@ -192,11 +192,11 @@ public class GameController {
             resume(false);
         }
     }
-    
+
     public boolean isActionClicked() {
         return actionClicked;
     }
-    
+
     public <T> T getChoiceClicked() {
         return (T)choiceClicked;
     }
@@ -208,23 +208,23 @@ public class GameController {
     public void setCardViewer(final CardViewer cardViewer) {
         this.cardViewer=cardViewer;
     }
-    
+
     public void setImageCardViewer(final CardViewer cardViewer) {
         this.imageCardViewer=cardViewer;
     }
-    
+
     public void setGameViewer(final GameViewer gameViewer) {
         this.gameViewer=gameViewer;
     }
-    
+
     public void viewCard(final MagicCard card) {
         cardViewer.setCard(card.getCardDefinition(),card.getImageIndex());
     }
-    
+
     public void viewCard(final MagicCardDefinition cardDefinition,final int index) {
         cardViewer.setCard(cardDefinition,index);
     }
-    
+
     public void viewInfoAbove(final MagicCardDefinition cardDefinition,final int index,final Rectangle rect) {
         final Dimension size=gamePanel.getSize();
         final Point pointOnScreen=gamePanel.getLocationOnScreen();
@@ -235,8 +235,8 @@ public class GameController {
         int x=rect.x+(rect.width-imageWidth)/2;
         final int y1=rect.y-imageHeight-6;
         final int y2=rect.y+rect.height+6;
-        final int dy2=size.height-y2-imageHeight;        
-        if (x+imageWidth>=size.width) {    
+        final int dy2=size.height-y2-imageHeight;
+        if (x+imageWidth>=size.width) {
             x=rect.x+rect.width-imageWidth;
         }
         int y;
@@ -265,7 +265,7 @@ public class GameController {
         imageCardViewer.setLocation(x,y);
         imageCardViewer.showDelayed(GeneralConfig.getInstance().getPopupDelay());
     }
-    
+
     public void viewInfoRight(final MagicCardDefinition cardDefinition,final int index,final Rectangle rect) {
         final Dimension size=gamePanel.getSize();
         final Point pointOnScreen=gamePanel.getLocationOnScreen();
@@ -283,7 +283,7 @@ public class GameController {
         imageCardViewer.setLocation(x,y);
         imageCardViewer.showDelayed(GeneralConfig.getInstance().getPopupDelay());
     }
-    
+
     public void hideInfo() {
         imageCardViewer.hideDelayed();
     }
@@ -291,11 +291,11 @@ public class GameController {
     public void setSourceCardDefinition(final MagicSource source) {
         sourceCardDefinition=source.getCardDefinition();
     }
-    
+
     public MagicCardDefinition getSourceCardDefinition() {
         return sourceCardDefinition;
     }
-    
+
     public void focusViewers(final int handGraveyard,final int stackCombat) {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
@@ -303,11 +303,11 @@ public class GameController {
             }
         });
     }
-    
+
     public void registerChoiceViewer(final ChoiceViewer choiceViewer) {
         choiceViewers.add(choiceViewer);
     }
-    
+
     private void showValidChoices() {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
@@ -321,19 +321,19 @@ public class GameController {
     public boolean isCombatChoice() {
         return combatChoice;
     }
-    
+
     public void clearValidChoices() {
         validChoices=Collections.emptySet();
         combatChoice=false;
         showValidChoices();
     }
-    
+
     public void setValidChoices(final Set<?> aValidChoices,final boolean aCombatChoice) {
         this.validChoices=aValidChoices;
         this.combatChoice=aCombatChoice;
         showValidChoices();
     }
-    
+
     public Set<?> getValidChoices() {
         return validChoices;
     }
@@ -346,7 +346,7 @@ public class GameController {
             }
         });
     }
-    
+
     public static String getMessageWithSource(final MagicSource source,final String message) {
         if (source == null) {
             throw new RuntimeException("source is null");
@@ -357,7 +357,7 @@ public class GameController {
             return "("+source+")|"+message;
         }
     }
-        
+
     public void showMessage(final MagicSource source,final String message) {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
@@ -365,9 +365,9 @@ public class GameController {
             }
         });
     }
-    
+
     public <E extends JComponent> E waitForInput(final Callable<E> func) throws UndoClickedException {
-        final AtomicReference<E> ref = new AtomicReference<E>(); 
+        final AtomicReference<E> ref = new AtomicReference<E>();
         final AtomicReference<Exception> except = new AtomicReference<Exception>();
         invokeAndWait(new Runnable() {
             public void run() {
@@ -436,14 +436,14 @@ public class GameController {
         }
         game.executeNextEvent(choiceResults);
     }
-    
+
     public void resetGame() {
         if (game.hasUndoPoints()) {
             resetGame=true;
             undoClicked();
         }
     }
-    
+
     public void concede() {
         if (!gameConceded.get() && !game.isFinished()) {
             game.setLosingPlayer(game.getPlayer(0));
@@ -452,7 +452,7 @@ public class GameController {
             resume(true);
         }
     }
-    
+
     private void performUndo() {
         if (resetGame) {
             resetGame=false;
@@ -467,10 +467,10 @@ public class GameController {
     public void haltGame() {
         running.set(false);
     }
-    
+
     public void runGame() {
         final long startTime=System.currentTimeMillis();
-        
+
         running.set(true);
         while (running.get()) {
             if (game.isFinished()) {
@@ -478,13 +478,13 @@ public class GameController {
                     game.advanceDuel();
                     return;
                 }
-                            
+
                 game.logMessages();
                 clearValidChoices();
                 showMessage(MagicEvent.NO_SOURCE,
-                    "{L} " + 
-                    game.getLosingPlayer() + " " + 
-                    (gameConceded.get() ? "conceded" : "lost" ) + 
+                    "{L} " +
+                    game.getLosingPlayer() + " " +
+                    (gameConceded.get() ? "conceded" : "lost" ) +
                     " the game.");
 
                 if (game.getLosingPlayer().getIndex() == 0) {
@@ -509,7 +509,7 @@ public class GameController {
                     return;
                 }
             }
-            
+
             if (game.hasNextEvent()) {
                 final MagicEvent event=game.getNextEvent();
                 if (event instanceof MagicPriorityEvent) {
@@ -523,7 +523,7 @@ public class GameController {
             } else {
                 game.executePhase();
             }
-                
+
             if (testMode) {
                 if (System.currentTimeMillis() - startTime > MAX_TEST_MODE_DURATION) {
                     System.err.println("WARNING. Max time for AI game exceeded");
@@ -534,5 +534,5 @@ public class GameController {
             }
         }
         running.set(false);
-    }    
+    }
 }

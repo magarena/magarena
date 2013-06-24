@@ -16,7 +16,7 @@ public class MagicStackChangeTargetsEvent extends MagicEvent {
             ""
         );
     }
-    
+
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

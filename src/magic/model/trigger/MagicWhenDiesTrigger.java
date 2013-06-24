@@ -10,13 +10,13 @@ import magic.model.action.MagicRemoveCardAction;
 
 public abstract class MagicWhenDiesTrigger extends MagicWhenPutIntoGraveyardTrigger {
     public MagicWhenDiesTrigger(final int priority) {
-        super(priority); 
+        super(priority);
     }
-    
+
     public MagicWhenDiesTrigger() {}
 
     protected abstract MagicEvent getEvent(final MagicPermanent permanent);
-    
+
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
         return (triggerData.fromLocation == MagicLocationType.Play) ?

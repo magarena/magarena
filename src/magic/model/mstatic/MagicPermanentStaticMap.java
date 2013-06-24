@@ -12,10 +12,10 @@ import java.util.SortedSet;
 import java.util.TreeSet;
 
 public class MagicPermanentStaticMap {
-    
-    private final Map<MagicLayer,SortedSet<MagicPermanentStatic>> effects = 
+
+    private final Map<MagicLayer,SortedSet<MagicPermanentStatic>> effects =
         new EnumMap<MagicLayer,SortedSet<MagicPermanentStatic>>(MagicLayer.class);
-    
+
     public MagicPermanentStaticMap() {
         for (final MagicLayer layer : MagicLayer.values()) {
             effects.put(layer, new TreeSet<MagicPermanentStatic>());
@@ -23,12 +23,12 @@ public class MagicPermanentStaticMap {
         //changes to power and toughness due to +1/+1 and -1/-1 counters
         add(MagicPermanentStatic.CountersEffect);
     }
-    
+
     public MagicPermanentStaticMap(final MagicCopyMap copyMap, final MagicPermanentStaticMap sourceMap) {
         for (final MagicLayer layer : MagicLayer.values()) {
             effects.put(layer, new TreeSet<MagicPermanentStatic>());
         }
-        
+
         for (final Map.Entry<MagicLayer, SortedSet<MagicPermanentStatic>> layer : sourceMap.effects.entrySet()) {
             for (final MagicPermanentStatic mpstatic : layer.getValue()) {
                 add(new MagicPermanentStatic(copyMap, mpstatic));
@@ -43,7 +43,7 @@ public class MagicPermanentStaticMap {
     public void add(final MagicPermanentStatic mpstatic) {
         effects.get(mpstatic.getLayer()).add(mpstatic);
     }
-    
+
     public Collection<MagicPermanentStatic> remove(final MagicPermanent permanent) {
         final Collection<MagicPermanentStatic> removedStatics = new ArrayList<MagicPermanentStatic>();
         for (final Map.Entry<MagicLayer, SortedSet<MagicPermanentStatic>> layer : effects.entrySet()) {
@@ -58,7 +58,7 @@ public class MagicPermanentStaticMap {
         }
         return removedStatics;
     }
-    
+
     public Collection<MagicPermanentStatic> removeTurn() {
         final Collection<MagicPermanentStatic> removedStatics = new ArrayList<MagicPermanentStatic>();
         for (final Map.Entry<MagicLayer, SortedSet<MagicPermanentStatic>> layer : effects.entrySet()) {
@@ -73,7 +73,7 @@ public class MagicPermanentStaticMap {
         }
         return removedStatics;
     }
-        
+
     public void remove(final MagicPermanent permanent, final MagicStatic mstatic) {
         final Collection<MagicPermanentStatic> statics = effects.get(mstatic.getLayer());
         for (final Iterator<MagicPermanentStatic> iterator = statics.iterator();iterator.hasNext();) {
@@ -85,7 +85,7 @@ public class MagicPermanentStaticMap {
         }
         throw new RuntimeException("nothing to remove");
     }
-    
+
     public Collection<MagicPermanentStatic> remove(final MagicPermanent permanent, final Collection<MagicStatic> statics) {
         final Collection<MagicPermanentStatic> removedStatics = new ArrayList<MagicPermanentStatic>();
         for (final MagicStatic mstatic : statics) {
@@ -101,7 +101,7 @@ public class MagicPermanentStaticMap {
         }
         return removedStatics;
     }
-    
+
     public long getStateId() {
         int size = 0;
         for (final MagicLayer layer : MagicLayer.values()) {

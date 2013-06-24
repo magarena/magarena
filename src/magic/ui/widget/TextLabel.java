@@ -30,7 +30,7 @@ public class TextLabel extends JPanel {
     private static final int LINE_HEIGHT=16;
 
     private static final Map<?,?> desktopHintsMap;
-    
+
     private final List<TComponent> components;
     private final int maxWidth;
     private final boolean center;
@@ -38,11 +38,11 @@ public class TextLabel extends JPanel {
     private Color choiceColor;
 
     static {
-        
+
         final Toolkit tk=Toolkit.getDefaultToolkit();
         desktopHintsMap=(Map<?,?>)(tk.getDesktopProperty("awt.font.desktophints"));
     }
-    
+
     public TextLabel(final String text,final int maxWidth,final boolean center) {
 
         final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
@@ -56,20 +56,20 @@ public class TextLabel extends JPanel {
         buildComponents(text);
         layoutComponents();
     }
-    
+
     public void setColors(final Color aTextColor,final Color aChoiceColor) {
-        
+
         this.textColor=aTextColor;
         this.choiceColor=aChoiceColor;
     }
-            
+
     private void addComponent(final TComponent component) {
-        
+
         if (component!=null) {
             components.add(component);
         }
     }
-    
+
     private TComponent buildComponent(final String textPart,final boolean info) {
 
         if (textPart.isEmpty()) {
@@ -85,7 +85,7 @@ public class TextLabel extends JPanel {
         }
         return component;
     }
-    
+
     private void buildComponents(String text) {
 
         text=text.replaceAll("\\s+"," ").trim()+' ';
@@ -101,7 +101,7 @@ public class TextLabel extends JPanel {
             } else if (ch=='|') {
                 addComponent(buildComponent(text.substring(startIndex,index),info));
                 addComponent(BREAK_LABEL);
-                startIndex=index+1;                
+                startIndex=index+1;
             } else if (ch=='{') {
                 addComponent(buildComponent(text.substring(startIndex,index),info));
                 startIndex=index;
@@ -115,25 +115,25 @@ public class TextLabel extends JPanel {
             } else if (ch==')') {
                 addComponent(buildComponent(text.substring(startIndex,index+1),info));
                 startIndex=index+1;
-                info=false;    
-            } 
+                info=false;
+            }
         }
     }
-    
+
     private void layoutComponents() {
 
         int x=0;
         int y=0;
         for (final TComponent component : components) {
-            
+
             if (component==SPACE_LABEL) {
                 x+=SPACE_WIDTH;
             } else if (component==BREAK_LABEL) {
                 x=0;
                 y+=LINE_HEIGHT;
-            } else {            
+            } else {
                 final Dimension csize=component.getPreferredSize();
-                if (component.requiresNewLine()&&x+csize.width>=maxWidth) {    
+                if (component.requiresNewLine()&&x+csize.width>=maxWidth) {
                     x=0;
                     y+=LINE_HEIGHT;
                 }
@@ -141,46 +141,46 @@ public class TextLabel extends JPanel {
                 x+=csize.width;
             }
         }
-        
+
         final Insets insets=getInsets();
         setPreferredSize(new Dimension(insets.left+insets.right,y+LINE_HEIGHT+insets.top+insets.bottom));
     }
-    
+
     @Override
     public void paintComponent(final Graphics g) {
-        
+
         if (desktopHintsMap!=null) {
             ((Graphics2D)g).addRenderingHints(desktopHintsMap);
         }
-        
+
         final Dimension size=getPreferredSize();
         final int cx=center?(getWidth()-maxWidth)/2:0;
         final int cy=center?(getHeight()-size.height)/2:0;
-        
+
         for (final TComponent component : components) {
-            
-            component.paint(this,g,cx,cy);            
+
+            component.paint(this,g,cx,cy);
         }
     }
-    
+
     private abstract static class TComponent {
 
         int lx;
         int ly;
-        
+
         public void setLocation(final int x,final int y) {
-            
+
             this.lx=x;
             this.ly=y;
         }
-                
+
         public abstract boolean requiresNewLine();
 
         public abstract Dimension getPreferredSize();
-        
+
         public abstract void paint(final JComponent com,final Graphics g,final int x,final int y);
     }
-    
+
     private static class EmptyComponent extends TComponent {
 
         @Override
@@ -197,10 +197,10 @@ public class TextLabel extends JPanel {
 
         @Override
         public void paint(final JComponent com,final Graphics g,final int x,final int y) {
-            
-        }        
+
+        }
     }
-    
+
     private class TextComponent extends TComponent {
 
         private final String text;
@@ -208,7 +208,7 @@ public class TextLabel extends JPanel {
         private final FontMetrics metrics;
         private final boolean choice;
         private final boolean newLine;
-        
+
         public TextComponent(final String text,final JComponent component,final Font font,final boolean choice) {
 
             this.text=text;
@@ -223,11 +223,11 @@ public class TextLabel extends JPanel {
 
             return newLine;
         }
-        
+
         @Override
         public Dimension getPreferredSize() {
-            
-            return new Dimension(metrics.stringWidth(text)+1,metrics.getHeight());            
+
+            return new Dimension(metrics.stringWidth(text)+1,metrics.getHeight());
         }
 
         @Override
@@ -238,22 +238,22 @@ public class TextLabel extends JPanel {
             g.drawString(text,lx+x,ly+y+metrics.getAscent());
         }
     }
-    
+
     private static class IconComponent extends TComponent {
-        
+
         private final ImageIcon icon;
 
         public IconComponent(final ImageIcon icon) {
-            
+
             this.icon=icon;
         }
-        
+
         @Override
         public boolean requiresNewLine() {
 
             return true;
         }
-        
+
         @Override
         public Dimension getPreferredSize() {
 

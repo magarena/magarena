@@ -12,7 +12,7 @@ public class MagicTapManaActivation extends MagicManaActivation {
     public MagicTapManaActivation(final List<MagicManaType> manaTypes,final int weight) {
         super(manaTypes,weight);
     }
-        
+
     @Override
     public MagicEvent[] getCostEvent(final MagicPermanent perm) {
         return new MagicEvent[]{

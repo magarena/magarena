@@ -19,5 +19,5 @@ public class MagicSacrificeTapManaActivation extends MagicManaActivation {
             new MagicTapEvent(permanent),
             new MagicSacrificeEvent(permanent)
         };
-    }    
+    }
 }

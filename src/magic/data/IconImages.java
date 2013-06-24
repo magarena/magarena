@@ -11,14 +11,14 @@ public class IconImages {
     public static final BufferedImage MISSING2=loadImage("icons/missing2.png");
     public static final BufferedImage MISSING_CARD=loadImage("icons/missing_card.png");
     public static final ImageIcon MISSING_ICON=loadIcon("missing2.png");
-   
+
     private static final BufferedImage MANA = loadImage("icons/Mana.png");
     public static final BufferedImage LOGO=loadImage("textures/logo.jpg");
     public static final BufferedImage WIZARD=loadImage("icons/wizard.png");
     public static final BufferedImage WOOD=loadImage("textures/wood.jpg");
     public static final BufferedImage MARBLE=loadImage("textures/marble.jpg");
     public static final BufferedImage GRANITE=loadImage("textures/granite.jpg");
-    public static final BufferedImage GRANITE2=loadImage("textures/granite2.jpg");    
+    public static final BufferedImage GRANITE2=loadImage("textures/granite2.jpg");
     public static final BufferedImage OPAL=loadImage("textures/opal.jpg");
     public static final BufferedImage OPAL2=loadImage("textures/opal2.jpg");
 
@@ -80,7 +80,7 @@ public class IconImages {
     public static final ImageIcon DAMAGE=loadIcon("damage.gif");
     public static final ImageIcon COMBAT=loadIcon("combat.gif");
     public static final ImageIcon ATTACK=loadIcon("attack.gif");
-    public static final ImageIcon BLOCK=loadIcon("block.gif");    
+    public static final ImageIcon BLOCK=loadIcon("block.gif");
     public static final ImageIcon BLOCKED=loadIcon("blocked.gif");
     public static final ImageIcon MESSAGE=loadIcon("message.png");
     public static final ImageIcon PROGRESS=loadIcon("progress.png");
@@ -97,7 +97,7 @@ public class IconImages {
     public static final ImageIcon DELAY=loadIcon("delay.png");
     public static final ImageIcon PICTURE=loadIcon("picture.png");
     public static final ImageIcon AVATAR=loadIcon("avatar.gif");
-    
+
     public static final ImageIcon FLYING=loadIcon("flying.png");
     public static final ImageIcon TRAMPLE=loadIcon("trample.png");
     public static final ImageIcon STRIKE=loadIcon("strike.png");
@@ -110,12 +110,12 @@ public class IconImages {
     public static final ImageIcon BLUE=loadSymbolIcon(25, true);
     public static final ImageIcon BLACK=loadSymbolIcon(26, true);
     public static final ImageIcon RED=loadSymbolIcon(27, true);
-    public static final ImageIcon GREEN=loadSymbolIcon(28, true);    
+    public static final ImageIcon GREEN=loadSymbolIcon(28, true);
     public static final ImageIcon COST_WHITE=loadSymbolIcon(24, false);
     public static final ImageIcon COST_BLUE=loadSymbolIcon(25, false);
     public static final ImageIcon COST_BLACK=loadSymbolIcon(26, false);
     public static final ImageIcon COST_RED=loadSymbolIcon(27, false);
-    public static final ImageIcon COST_GREEN=loadSymbolIcon(28, false);    
+    public static final ImageIcon COST_GREEN=loadSymbolIcon(28, false);
     public static final ImageIcon COST_WHITE_BLUE=loadSymbolIcon(30, false);
     public static final ImageIcon COST_WHITE_BLACK=loadSymbolIcon(31, false);
     public static final ImageIcon COST_BLUE_BLACK=loadSymbolIcon(32, false);
@@ -145,11 +145,11 @@ public class IconImages {
     public static final ImageIcon COST_SIXTEEN=loadSymbolIcon(16, false);
 //    public static final ImageIcon COST_NINE_OR_MORE=loadIcon("nineplus.gif");
     public static final ImageIcon COST_X=loadSymbolIcon(21, false);
-        
+
     private static BufferedImage loadImage(final String name) {
         return FileIO.toImg(IconImages.class.getResource(name), MISSING2);
     }
-    
+
     private static ImageIcon loadIcon(final String name) {
         final BufferedImage image=loadImage("icons/"+name);
         return new ImageIcon(image);
@@ -171,7 +171,7 @@ public class IconImages {
             return new ImageIcon(magic.GraphicsUtilities.scale(subimage,icoW,icoH));
         }
     }
-    
+
     private static ImageIcon loadAnimatedIcon(final String name) {
         final byte[] data = new byte[1<<16];
         int size = 0;

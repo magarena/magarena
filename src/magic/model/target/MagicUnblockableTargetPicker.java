@@ -8,13 +8,13 @@ import magic.model.MagicPlayer;
 public class MagicUnblockableTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
     private static final MagicUnblockableTargetPicker INSTANCE = new MagicUnblockableTargetPicker();
-    
+
     private MagicUnblockableTargetPicker() {}
-    
+
     public static MagicUnblockableTargetPicker create() {
         return INSTANCE;
-    }    
-    
+    }
+
     @Override
     protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
         final MagicPlayer controller=permanent.getController();

@@ -14,23 +14,23 @@ import java.awt.Color;
 import java.awt.Dimension;
 
 public class HistoryViewer extends JPanel{
-    
+
     private static final long serialVersionUID = 1L;
-    
+
     private static final Dimension PREFERRED_SIZE = new Dimension(270, 175);
-    
-    public HistoryViewer() {    
+
+    public HistoryViewer() {
         setPreferredSize(PREFERRED_SIZE);
-        setBorder(FontsAndBorders.UP_BORDER);    
+        setBorder(FontsAndBorders.UP_BORDER);
         setLayout(new BorderLayout());
         final TitleBar titleBar = new TitleBar("History - " + History.getName());
         add(titleBar, BorderLayout.NORTH);
-        
+
         final TexturedPanel mainPanel = new TexturedPanel();
         mainPanel.setLayout(new BorderLayout());
         mainPanel.setOpaque(false);
         mainPanel.setBorder(FontsAndBorders.BLACK_BORDER_2);
-        
+
         final int gamesPlayed = History.getGamesPlayed();
         final int gamesWon = History.getGamesWon();
         final int gamesLost = gamesPlayed - gamesWon;
@@ -42,7 +42,7 @@ public class HistoryViewer extends JPanel{
         final int duelsWinPercentage = getPercentage(duelsWon, duelsPlayed);
         final int avgLifeLeftPlayer = (gamesWon > 0) ? History.getLifeLeftPlayer() / gamesWon : 0;
         final int avgLifeLeftAI = (gamesLost > 0) ? History.getLifeLeftAI() / gamesLost : 0;
-        
+
         final int[] colorCount = new int[MagicColor.NR_COLORS];
         colorCount[0] = History.getColorBlack();
         colorCount[1] = History.getColorBlue();
@@ -51,7 +51,7 @@ public class HistoryViewer extends JPanel{
         colorCount[4] = History.getColorWhite();
         int mostCount = Integer.MIN_VALUE;
         MagicColor mostColor = null;
-        for (final MagicColor color : MagicColor.values()) {    
+        for (final MagicColor color : MagicColor.values()) {
             final int count = colorCount[color.ordinal()];
             if (count > mostCount) {
                 mostCount = count;
@@ -68,21 +68,21 @@ public class HistoryViewer extends JPanel{
         textArea.setForeground(ThemeFactory.getInstance().getCurrentTheme().getTextColor());
         textArea.setTabSize(16);
         textArea.setText("Games played:\t" + gamesPlayed +
-                "\nGames won / lost\t" + gamesWon + " / " + 
+                "\nGames won / lost\t" + gamesWon + " / " +
                 gamesLost + " (" + gamesWinPercentage + "%)" +
                 "\nAverage turns per game:\t" + averageTurns +
                 "\nAverage remaining player life:\t" + avgLifeLeftPlayer +
                 "\nAverage remaining AI life:\t" + avgLifeLeftAI +
                 "\nDuels played:\t" + duelsPlayed +
-                "\nDuels won / lost:\t" + duelsWon + " / " + 
+                "\nDuels won / lost:\t" + duelsWon + " / " +
                 duelsLost + " (" + duelsWinPercentage + "%)" +
                 "\nMost used color:\t" + mostColor.getName()
                 );
         mainPanel.add(textArea);
-            
+
         add(mainPanel, BorderLayout.CENTER);
     }
-    
+
     private static final int getPercentage(final int value, final int total) {
         return total>0 ? (value*100)/total : 0;
     }

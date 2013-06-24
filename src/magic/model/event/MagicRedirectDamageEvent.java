@@ -9,7 +9,7 @@ import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicTargetChoice;
 
 public class MagicRedirectDamageEvent extends MagicEvent {
-    
+
     public MagicRedirectDamageEvent(final MagicDamage damage) {
         super(
             damage.getSource(),
@@ -19,7 +19,7 @@ public class MagicRedirectDamageEvent extends MagicEvent {
             ),
             damage.getTarget(),
             EventAction(damage.getAmount(), damage.isCombat()),
-            "PN may$ redirect " + damage.getAmount() + 
+            "PN may$ redirect " + damage.getAmount() +
             " damage to a planeswalker$ your opponent controls."
         );
     }

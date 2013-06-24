@@ -23,7 +23,7 @@ public abstract class GenericAbstractListModel<T> extends AbstractListModel impl
         {
             elem = getElements().get(i);
         }
-        
+
         return elem;
     }
 

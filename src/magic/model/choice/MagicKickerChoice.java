@@ -21,7 +21,7 @@ import java.util.concurrent.Callable;
 public class MagicKickerChoice extends MagicChoice {
 
     private static final List<Object> NO_OPTIONS_LIST = Collections.singletonList(null);
-    
+
     private final MagicChoice otherChoice;
     private final MagicManaCost cost;
     private final String name;
@@ -29,7 +29,7 @@ public class MagicKickerChoice extends MagicChoice {
     public static MagicKickerChoice Replicate(final MagicChoice otherChoice, final MagicManaCost cost) {
         return new MagicKickerChoice(otherChoice, cost, "replicate");
     }
-    
+
     public static MagicKickerChoice Replicate(final MagicManaCost cost) {
         return new MagicKickerChoice(cost, "replicate");
     }
@@ -40,29 +40,29 @@ public class MagicKickerChoice extends MagicChoice {
         this.cost=cost;
         this.name = name;
     }
-    
+
     public MagicKickerChoice(final MagicChoice otherChoice,final MagicManaCost cost) {
         this(otherChoice, cost, "kicker");
     }
-    
+
     public MagicKickerChoice(final MagicManaCost cost, final String name) {
         this(MagicChoice.NONE, cost, name);
     }
-    
+
     public MagicKickerChoice(final MagicManaCost cost) {
         this(MagicChoice.NONE, cost, "kicker");
     }
-    
+
     @Override
     public MagicTargetChoice getTargetChoice() {
         return (otherChoice instanceof MagicTargetChoice) ? (MagicTargetChoice)otherChoice : MagicTargetChoice.NONE;
     }
-    
+
     @Override
     public int getTargetChoiceResultIndex() {
         return (otherChoice instanceof MagicTargetChoice) ? 0 : -1;
     }
-    
+
     @Override
     public int getManaChoiceResultIndex() {
         return 2;
@@ -86,18 +86,18 @@ public class MagicKickerChoice extends MagicChoice {
             }
         }
     }
-    
+
     private MagicManaCost getCost(final int count) {
         if (count==1) {
             return cost;
         } else if (count==0) {
-            return MagicManaCost.ZERO;            
+            return MagicManaCost.ZERO;
         } else {
             final StringBuilder costText=new StringBuilder();
             final String text=cost.getText();
             for (int c=count;c>0;c--) {
                 costText.append(text);
-            }            
+            }
             return MagicManaCost.create(costText.toString());
         }
     }
@@ -111,17 +111,17 @@ public class MagicKickerChoice extends MagicChoice {
 
         final Collection<?> otherOptions;
         if (otherChoice.isValid()) {
-            otherOptions=otherChoice.getArtificialOptions(game,event,player,source);            
+            otherOptions=otherChoice.getArtificialOptions(game,event,player,source);
         } else {
             otherOptions=NO_OPTIONS_LIST;
         }
-        
+
         final List<Object[]> choiceResultsList=new ArrayList<Object[]>();
         final int maximumCount=getMaximumCount(game,player);
         for (int count=0;count<=maximumCount;count++) {
             final Object[] choiceResults=new Object[3];
             choiceResults[1]=count;
-            
+
             final Collection<Object> manaOptions;
             if (count==0) {
                 manaOptions=NO_OPTIONS_LIST;
@@ -135,13 +135,13 @@ public class MagicKickerChoice extends MagicChoice {
                 for (final Object otherOption : otherOptions) {
                     choiceResults[0]=otherOption;
                     choiceResultsList.add(Arrays.copyOf(choiceResults,3));
-                }                
+                }
             }
         }
-        
+
         return choiceResultsList;
     }
-    
+
     @Override
     public Object[] getPlayerChoiceResults(
             final GameController controller,
@@ -166,7 +166,7 @@ public class MagicKickerChoice extends MagicChoice {
                     return new MayChoicePanel(controller,source,"You may pay the " + name + ' ' + cost.getText() + '.');
                 }
             });
-            count=kickerPanel.isYesClicked()?1:0;                
+            count=kickerPanel.isYesClicked()?1:0;
         } else {
             count=0;
         }

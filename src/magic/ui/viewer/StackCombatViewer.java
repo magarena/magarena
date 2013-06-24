@@ -22,13 +22,13 @@ public class StackCombatViewer extends JPanel implements ChangeListener {
     private final CardLayout cardLayout;
     private final TitleBar titleBar;
     private final TabSelector tabSelector;
-    
+
     public StackCombatViewer(final ViewerInfo viewerInfo,final GameController controller) {
-        
+
         final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
-        
+
         stackViewer=new StackViewer(viewerInfo,controller,false);
-        combatViewer=new CombatViewer(viewerInfo,controller);        
+        combatViewer=new CombatViewer(viewerInfo,controller);
 
         setOpaque(false);
         setLayout(new BorderLayout());
@@ -39,18 +39,18 @@ public class StackCombatViewer extends JPanel implements ChangeListener {
         cardPanel.add(stackViewer,"0");
         cardPanel.add(combatViewer,"1");
         add(cardPanel,BorderLayout.CENTER);
-        
+
         titleBar=new TitleBar("");
         add(titleBar,BorderLayout.NORTH);
-        
+
         tabSelector=new TabSelector(this,false);
         tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_STACK),"Stack");
         tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_COMBAT),"Combat");
         titleBar.add(tabSelector,BorderLayout.EAST);
     }
-    
+
     public void update() {
-        
+
         stackViewer.update();
         combatViewer.update();
 
@@ -68,9 +68,9 @@ public class StackCombatViewer extends JPanel implements ChangeListener {
                 break;
         }
     }
-    
+
     public void setSelectedTab(final int selectedTab) {
-        
+
         if (selectedTab>=0) {
             tabSelector.setSelectedTab(selectedTab);
         }

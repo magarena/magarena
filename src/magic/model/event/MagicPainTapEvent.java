@@ -9,9 +9,9 @@ import magic.model.action.MagicTapAction;
 import magic.model.condition.MagicCondition;
 
 public class MagicPainTapEvent extends MagicEvent {
-    
+
     private static final MagicCondition[] conds = new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION};
-    
+
     public MagicPainTapEvent(final MagicSource source) {
         super(
             source,
@@ -19,7 +19,7 @@ public class MagicPainTapEvent extends MagicEvent {
             "Tap SN. SN deals 1 damage to you."
         );
     }
-    
+
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -29,7 +29,7 @@ public class MagicPainTapEvent extends MagicEvent {
             game.doAction(new MagicDealDamageAction(damage));
         }
     };
-    
+
     @Override
     public MagicCondition[] getConditions() {
         return conds;

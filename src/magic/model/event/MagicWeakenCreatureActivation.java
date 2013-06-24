@@ -11,20 +11,20 @@ import magic.model.condition.MagicCondition;
 import magic.model.target.MagicWeakenTargetPicker;
 
 public abstract class MagicWeakenCreatureActivation extends MagicPermanentActivation {
-    
+
     public MagicWeakenCreatureActivation(
             final MagicActivationHints hints,
             final String text) {
         super(MagicActivation.NO_COND,hints,text);
     }
-        
+
     public MagicWeakenCreatureActivation(
-            final MagicCondition[] conds, 
+            final MagicCondition[] conds,
             final MagicActivationHints hints,
             final String text) {
         super(conds,hints,text);
     }
-        
+
     @Override
     public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
         return new MagicEvent(

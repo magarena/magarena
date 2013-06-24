@@ -12,11 +12,11 @@ import magic.model.event.MagicEventAction;
 public class MagicFadeVanishCounterTrigger extends MagicAtUpkeepTrigger {
 
     private final String counterType;
-    
+
     public MagicFadeVanishCounterTrigger(final String counterType) {
         this.counterType = counterType;
     }
-    
+
     @Override
     public boolean accept(final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
         return permanent.isController(upkeepPlayer);
@@ -51,7 +51,7 @@ public class MagicFadeVanishCounterTrigger extends MagicAtUpkeepTrigger {
             game.doAction(new MagicSacrificeAction(event.getPermanent()));
         }
     };
-    
+
     private static final MagicEventAction REMOVE_COUNTER = new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

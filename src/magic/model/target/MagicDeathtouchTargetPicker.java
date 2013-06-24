@@ -10,12 +10,12 @@ import java.util.Set;
 public class MagicDeathtouchTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
     private static final MagicDeathtouchTargetPicker INSTANCE = new MagicDeathtouchTargetPicker();
-    
+
     private static final int BLOCKED = 4<<8;
     private static final int BLOCKING = 3<<8;
     private static final int CAN_TAP = 2<<8;
     private static final int FIRST_STRIKE = 1<<8;
-    
+
     private MagicDeathtouchTargetPicker() {
     }
 
@@ -28,7 +28,7 @@ public class MagicDeathtouchTargetPicker extends MagicTargetPicker<MagicPermanen
             permanent.hasAbility(MagicAbility.CannotAttackOrBlock)) {
             return 0;
         }
-            
+
         if (permanent.isBlocked()) {
             score = BLOCKED;
             // possibility to destroy more than one blocker
@@ -38,17 +38,17 @@ public class MagicDeathtouchTargetPicker extends MagicTargetPicker<MagicPermanen
         } else if (permanent.canTap()) {
             // can be in combat later or possibly use a damage ability
             score = CAN_TAP;
-        } 
+        }
 
         if (permanent.hasAbility(MagicAbility.FirstStrike) ||
             permanent.hasAbility(MagicAbility.DoubleStrike)) {
             // higher chance to deal combat damage
             score += FIRST_STRIKE;
         }
-        
+
         return permanent.getPower() + score;
     }
-    
+
     public static MagicDeathtouchTargetPicker getInstance() {
         return INSTANCE;
     }

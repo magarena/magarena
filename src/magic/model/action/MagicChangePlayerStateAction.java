@@ -20,7 +20,7 @@ public class MagicChangePlayerStateAction extends MagicAction {
         player = aPlayer;
         state = aState;
     }
-    
+
     @Override
     public void doAction(final MagicGame game) {
         if (player.hasState(state)) {
@@ -38,7 +38,7 @@ public class MagicChangePlayerStateAction extends MagicAction {
                 }
             };
             game.doAction(new MagicAddStaticAction(exhausted));
-            
+
             MagicAtUpkeepTrigger cleanup = new MagicAtUpkeepTrigger() {
                 @Override
                 public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
@@ -60,11 +60,11 @@ public class MagicChangePlayerStateAction extends MagicAction {
                     if (player.getId() == aPlayer.getId()) {
                         aPlayer.setState(state);
                     }
-                }   
+                }
             }));
         }
     }
 
     @Override
-    public void undoAction(final MagicGame game) {}    
+    public void undoAction(final MagicGame game) {}
 }

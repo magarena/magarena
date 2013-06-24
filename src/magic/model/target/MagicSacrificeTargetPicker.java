@@ -9,11 +9,11 @@ public class MagicSacrificeTargetPicker extends MagicTargetPicker<MagicPermanent
     private static final MagicSacrificeTargetPicker INSTANCE=new MagicSacrificeTargetPicker();
 
     private MagicSacrificeTargetPicker() {}
-    
+
     public static MagicSacrificeTargetPicker create() {
         return INSTANCE;
     }
-    
+
     @Override
     protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
         return -permanent.getScore();

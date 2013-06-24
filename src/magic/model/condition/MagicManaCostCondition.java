@@ -10,7 +10,7 @@ import magic.model.choice.MagicPayManaCostResultBuilder;
 public class MagicManaCostCondition implements MagicCondition {
 
     private final MagicManaCost cost;
-    
+
     public MagicManaCostCondition(final MagicManaCost cost) {
         this.cost=cost;
     }
@@ -24,7 +24,7 @@ public class MagicManaCostCondition implements MagicCondition {
         } else {
             builderCost=new MagicBuilderManaCost(player.getBuilderCost());
             cost.addTo(builderCost);
-        }        
+        }
         return new MagicPayManaCostResultBuilder(source.getGame(),player,builderCost).hasResults();
     }
 }

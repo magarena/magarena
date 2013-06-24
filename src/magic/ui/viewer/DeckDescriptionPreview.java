@@ -18,7 +18,7 @@ import java.util.Scanner;
 public class DeckDescriptionPreview extends JComponent implements PropertyChangeListener {
 
     private static final long serialVersionUID = 1L;
-    
+
     File file;
     String description;
     private final JTextArea textArea = new JTextArea();
@@ -46,7 +46,7 @@ public class DeckDescriptionPreview extends JComponent implements PropertyChange
         }
 
         final Scanner sc = new Scanner(content);
-        
+
         while (sc.hasNextLine()) {
             final String line = sc.nextLine().trim();
             if (line.startsWith(">")) {
@@ -54,14 +54,14 @@ public class DeckDescriptionPreview extends JComponent implements PropertyChange
                 break;
             }
         }
-        
+
         showDescription();
     }
     public void showDescription() {
         textArea.setText(description);
         textArea.setCaretPosition(0);
     }
-    
+
     public void propertyChange(final PropertyChangeEvent e) {
         final String prop = e.getPropertyName();
         if (JFileChooser.SELECTED_FILE_CHANGED_PROPERTY.equals(prop)) {

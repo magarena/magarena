@@ -87,7 +87,7 @@ public enum MagicAbility {
     CannotBeBlockedByFlying("can't be blocked by creatures with flying",20),
     CannotBeBlockedExceptWithFlying("can't be blocked except by creatures with flying",30),
     CannotBeBlockedExceptWithFlyingOrReach("can't be blocked except by creatures with flying or reach",25),
-    CannotBeBlockedExceptBySliver("can't be blocked except by Slivers", 90), 
+    CannotBeBlockedExceptBySliver("can't be blocked except by Slivers", 90),
     CannotBeBlockedByHumans("can't be blocked by humans",10),
     CannotBeBlockedByBlack("can't be blocked by black creatures",10),
     CannotBeBlockedByBlue("can't be blocked by blue creatures",10),
@@ -142,7 +142,7 @@ public enum MagicAbility {
     Infect("infect",35),
     Soulbond("soulbond",30),
     CantActivateAbilities("can't activate abilities",-20),
-    
+
     Undying("undying",60) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
@@ -171,7 +171,7 @@ public enum MagicAbility {
 
     // 63 core abilities that are tracked in MagicPermanent's abilityFlags
     // see MagicAbility.CORE
-    
+
     Changeling("changeling",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
@@ -759,7 +759,7 @@ public enum MagicAbility {
         }
     },
     None("",0);
-    
+
     public static final Set<MagicAbility> CORE = EnumSet.range(AttacksEachTurnIfAble, Flanking);
 
     public static final Set<MagicAbility> PROTECTION_FLAGS = EnumSet.of(
@@ -777,7 +777,7 @@ public enum MagicAbility {
         ProtectionFromWerewolves,
         ProtectionFromZombies
     );
-    
+
     public static final Set<MagicAbility> LANDWALK_FLAGS = EnumSet.of(
         Forestwalk,
         Islandwalk,
@@ -785,17 +785,17 @@ public enum MagicAbility {
         PlainsWalk,
         Swampwalk
     );
-    
+
     //public static final long EXCLUDE_MASK = Long.MAX_VALUE-Flash.getMask()-CannotBeCountered.getMask()-TotemArmor.getMask();
-    
+
     private final String name;
     private final int score;
-    
+
     private MagicAbility(final String aName,final int aScore) {
         name  = aName;
         score = aScore;
     }
-    
+
     public String getName() {
         return name;
     }
@@ -803,7 +803,7 @@ public enum MagicAbility {
     public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
         assert arg.isEmpty() : this + " does not accept arg = " + arg;
     }
-    
+
     @Override
     public String toString() {
         return name;
@@ -812,7 +812,7 @@ public enum MagicAbility {
     private int getScore() {
         return score;
     }
-    
+
     public static int getScore(final Set<MagicAbility> flags) {
         int score=0;
         for (final MagicAbility ability : flags) {
@@ -820,7 +820,7 @@ public enum MagicAbility {
         }
         return score;
     }
-    
+
     public static MagicAbility getAbility(final String name) {
         MagicAbility match = None;
         for (final MagicAbility ability : values()) {
@@ -834,7 +834,7 @@ public enum MagicAbility {
             return match;
         }
     }
-    
+
     public static Set<MagicAbility> getAbilities(final String[] names) {
         Set<MagicAbility> flags = EnumSet.noneOf(MagicAbility.class);
         for (final String name : names) {
@@ -846,7 +846,7 @@ public enum MagicAbility {
     public static Set<MagicAbility> of(final MagicAbility first, MagicAbility... rest) {
         return EnumSet.of(first, rest);
     }
-                
+
     public static Set<MagicAbility> noneOf() {
         return EnumSet.noneOf(MagicAbility.class);
     }

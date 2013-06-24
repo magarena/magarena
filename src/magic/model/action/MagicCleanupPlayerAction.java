@@ -10,7 +10,7 @@ public class MagicCleanupPlayerAction extends MagicAction {
     private final MagicPlayer player;
     private int oldPreventDamage;
     private int oldDrawnCards;
-    
+
     public MagicCleanupPlayerAction(final MagicPlayer player) {
         this.player=player;
     }
@@ -30,7 +30,7 @@ public class MagicCleanupPlayerAction extends MagicAction {
                 game.doAction(new MagicCleanupPermanentAction(permanent));
             }
         }
-        
+
         game.setStateCheckRequired();
     }
 

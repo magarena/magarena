@@ -12,7 +12,7 @@ public class MagicMessage {
     private final int turn;
     private final MagicPhaseType phaseType;
     private final String text;
-    
+
     MagicMessage(final MagicGame game,final MagicPlayer player,final String text) {
         this.player=player;
         this.life=player.getLife();
@@ -24,19 +24,19 @@ public class MagicMessage {
     public MagicPlayer getPlayer() {
         return player;
     }
-    
+
     public int getLife() {
         return life;
     }
-    
+
     public int getTurn() {
         return turn;
     }
-    
+
     public MagicPhaseType getPhaseType() {
         return phaseType;
     }
-    
+
     public String getText() {
         return text;
     }
@@ -48,7 +48,7 @@ public class MagicMessage {
             final Iterator<String> iterator=names.iterator();
             do {
                 final String name=iterator.next();
-                next=iterator.hasNext();                                    
+                next=iterator.hasNext();
                 if (first) {
                     first=false;
                 } else if (next) {
@@ -60,14 +60,14 @@ public class MagicMessage {
             } while (next);
         }
     }
-    
+
     public static String replaceName(final String sourceText,final Object source, final Object player, final Object ref) {
         return sourceText
             .replaceAll("PN", player.toString())
             .replaceAll("SN", source.toString())
             .replaceAll("RN", ref.toString());
     }
-    
+
     public static String replaceChoices(final String sourceText,final Object[] choices) {
         String result = sourceText;
         for (int idx = 0; result.indexOf('$') >= 0; idx++) {

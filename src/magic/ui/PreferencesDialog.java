@@ -41,7 +41,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
     private final SliderPanel messageDelaySlider;
     private final JButton okButton;
     private final JButton cancelButton;
-    
+
     public PreferencesDialog(final MagicFrame frame) {
 
         super(frame,true);
@@ -52,7 +52,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
         this.frame=frame;
-        
+
         final JPanel buttonPanel=new JPanel();
         buttonPanel.setPreferredSize(new Dimension(0,45));
         buttonPanel.setLayout(new FlowLayout(FlowLayout.RIGHT,15,0));
@@ -66,12 +66,12 @@ public class PreferencesDialog extends JDialog implements ActionListener {
         cancelButton.setIcon(IconImages.CANCEL);
         cancelButton.addActionListener(this);
         buttonPanel.add(cancelButton);
-        
+
         final JPanel mainPanel=new JPanel();
         mainPanel.setLayout(null);
-        
+
         final GeneralConfig config=GeneralConfig.getInstance();
-       
+
         int Y=20;
         final int X=28;
         final int W=70;
@@ -91,7 +91,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
         themeComboBox.setBounds(X2,Y,W2,H);
         themeComboBox.setGenericSelectedItem(config.getTheme());
         mainPanel.add(themeComboBox);
-    
+
 
         Y += 35;
         final JLabel avatarLabel=new JLabel("Avatar");
@@ -115,33 +115,33 @@ public class PreferencesDialog extends JDialog implements ActionListener {
         highlightComboBox.setBounds(X2,Y,W2,H);
         highlightComboBox.setGenericSelectedItem(config.getHighlight());
         mainPanel.add(highlightComboBox);
-        
+
         Y += 35;
         confirmExitCheckBox = new JCheckBox("Show confirmation dialog on exit",
                 config.isConfirmExit());
         confirmExitCheckBox.setBounds(X3,Y,W3,H3);
         confirmExitCheckBox.setFocusable(false);
         mainPanel.add(confirmExitCheckBox);
-        
+
         Y += 30;
         soundCheckBox = new JCheckBox("Enable sound effects",config.isSound());
         soundCheckBox.setBounds(X3,Y,W3,H3);
         soundCheckBox.setFocusable(false);
         mainPanel.add(soundCheckBox);
-        
+
         Y += 30;
         touchscreenCheckBox = new JCheckBox("Double-click to cast or activate ability (for touchscreen)",config.isTouchscreen());
         touchscreenCheckBox.setBounds(X3,Y,W3,H3);
         touchscreenCheckBox.setFocusable(false);
         mainPanel.add(touchscreenCheckBox);
-    
+
         Y += 30;
         highQualityCheckBox = new JCheckBox("Show card images in original size",
                 config.isHighQuality());
         highQualityCheckBox.setBounds(X3,Y,W3,H3);
         highQualityCheckBox.setFocusable(false);
         mainPanel.add(highQualityCheckBox);
-        
+
         Y += 30;
         skipSingleCheckBox = new JCheckBox("Skip single option choices when appropriate",
                 config.getSkipSingle());
@@ -155,14 +155,14 @@ public class PreferencesDialog extends JDialog implements ActionListener {
         alwaysPassCheckBox.setBounds(X3,Y,W3,H3);
         alwaysPassCheckBox.setFocusable(false);
         mainPanel.add(alwaysPassCheckBox);
-    
+
         Y += 30;
         smartTargetCheckBox=new JCheckBox("Remove unusual target choices",
                 config.getSmartTarget());
         smartTargetCheckBox.setBounds(X3,Y,W3,H3);
         smartTargetCheckBox.setFocusable(false);
         mainPanel.add(smartTargetCheckBox);
-                
+
         Y += 30;
         popupDelaySlider=new SliderPanel("Popup",
                 IconImages.DELAY,
@@ -172,7 +172,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
                 config.getPopupDelay());
         popupDelaySlider.setBounds(50,Y,280,50);
         mainPanel.add(popupDelaySlider);
-        
+
         Y += 50;
         messageDelaySlider = new SliderPanel("Message",
                 IconImages.DELAY,
@@ -182,7 +182,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
                 config.getMessageDelay());
         messageDelaySlider.setBounds(50,Y,280,50);
         mainPanel.add(messageDelaySlider);
-        
+
         getContentPane().setLayout(new BorderLayout());
         getContentPane().add(mainPanel,BorderLayout.CENTER);
         getContentPane().add(buttonPanel,BorderLayout.SOUTH);
@@ -213,6 +213,6 @@ public class PreferencesDialog extends JDialog implements ActionListener {
             dispose();
         } else if (source==cancelButton) {
             dispose();
-        } 
-    }    
+        }
+    }
 }

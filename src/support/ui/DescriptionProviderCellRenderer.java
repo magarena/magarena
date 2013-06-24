@@ -41,7 +41,7 @@ class DescriptionProviderCellRenderer<T> implements ListCellRenderer
         _delegateRenderer = delegateRenderer;
         _infoProvider = infoProvider;
         _descriptionProvider = descriptionProvider;
-        
+
         _cachedDisplayText = new HashMap<T, String>();
         _cachedTooltips = new HashMap<T, String>();
     }
@@ -58,7 +58,7 @@ class DescriptionProviderCellRenderer<T> implements ListCellRenderer
 
     /**
      * Renders the cell using the {@code #_delegateRenderer} provided to the constructor. Intercepts the object that the
-     * {@code #_delegateRenderer} would normally have rendered and instead has it render the String supplied by the 
+     * {@code #_delegateRenderer} would normally have rendered and instead has it render the String supplied by the
      * {@code #_descriptionProvider} provided to the constructor.
      *
      * @param list
@@ -73,23 +73,23 @@ class DescriptionProviderCellRenderer<T> implements ListCellRenderer
             int index, boolean isSelected, boolean cellHasFocus)
     {
         T valueInModel = _infoProvider.getElementDisplayedAt(index);
-        
+
         if(!_cachedDisplayText.containsKey(valueInModel))
         {
             _cachedDisplayText.put(valueInModel, _descriptionProvider.getDisplayText(valueInModel));
         }
         String displayText = _cachedDisplayText.get(valueInModel);
-        
+
         Component comp = _delegateRenderer.getListCellRendererComponent(list, displayText, index, isSelected,
                 cellHasFocus);
-        
+
         //JComponent has a setToolTipText(String) method but Component does not
         if(comp instanceof JComponent)
         {
             if(!_cachedTooltips.containsKey(valueInModel))
             {
                 String tooltip = _descriptionProvider.getToolTipText(valueInModel);
-                
+
                 final int wrapLength = 80;
                 if(tooltip != null && tooltip.length() > wrapLength)
                 {
@@ -98,7 +98,7 @@ class DescriptionProviderCellRenderer<T> implements ListCellRenderer
                     for(char c : tooltip.toCharArray())
                     {
                         lineCounter++;
-                        
+
                         if(lineCounter > wrapLength && c == ' ')
                         {
                             wrappedTooltip.append("<br/>");
@@ -110,17 +110,17 @@ class DescriptionProviderCellRenderer<T> implements ListCellRenderer
                         }
                     }
                     wrappedTooltip.append("</html>");
-                    
+
                     tooltip = wrappedTooltip.toString();
                 }
-                
+
                 _cachedTooltips.put(valueInModel, tooltip);
             }
             String tooltip = _cachedTooltips.get(valueInModel);
-            
+
             ((JComponent) comp).setToolTipText(tooltip);
         }
-        
+
         return comp;
     }
 }

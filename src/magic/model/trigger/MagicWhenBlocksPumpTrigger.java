@@ -9,7 +9,7 @@ public class MagicWhenBlocksPumpTrigger extends MagicWhenBlocksTrigger {
 
     private final int amountPower;
     private final int amountToughness;
-    
+
     public MagicWhenBlocksPumpTrigger(final int amountPower,final int amountToughness) {
         this.amountPower = amountPower;
         this.amountToughness = amountToughness;
@@ -21,8 +21,8 @@ public class MagicWhenBlocksPumpTrigger extends MagicWhenBlocksTrigger {
             new MagicEvent(
                 permanent,
                 this,
-                "SN gets " + 
-                getString(amountPower) + "/" + getString(amountToughness) + 
+                "SN gets " +
+                getString(amountPower) + "/" + getString(amountToughness) +
                 " until end of turn."
             ):
             MagicEvent.NONE;
@@ -35,7 +35,7 @@ public class MagicWhenBlocksPumpTrigger extends MagicWhenBlocksTrigger {
             amountToughness
         ));
     }
-    
+
     private String getString(final int pt) {
         return pt >= 0 ? "+" + pt : Integer.toString(pt);
     }

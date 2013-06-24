@@ -13,7 +13,7 @@ public class MagicCopyTargetPicker extends MagicTargetPicker<MagicPermanent> {
     public static MagicCopyTargetPicker create() {
         return INSTANCE;
     }
-    
+
     @Override
     protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
         return permanent.getCardScore();

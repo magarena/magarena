@@ -23,15 +23,15 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
         game.update();
 
         final int score=ArtificialScoringSystem.getTurnScore(game)-permanent.getStaticScore();
-                
+
         if (enchantedPermanent.isValid()) {
             enchantedPermanent.addAura(permanent);
-            permanent.setEnchantedCreature(enchantedPermanent);            
+            permanent.setEnchantedCreature(enchantedPermanent);
         }
 
         game.addTriggers(permanent);
         game.addStatics(permanent);
-    
+
         final MagicPlayer controller = permanent.getController();
 
         //execute come into play triggers
@@ -41,16 +41,16 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
 
         //execute other come into player triggers
         game.executeTrigger(MagicTriggerType.WhenOtherComesIntoPlay,permanent);
-        
+
         setScore(controller,permanent.getScore()+permanent.getStaticScore()+score);
-        
+
         game.checkUniquenessRule(permanent);
         game.setStateCheckRequired();
     }
 
     @Override
     public void undoAction(final MagicGame game) {
-        if (enchantedPermanent.isValid()) {            
+        if (enchantedPermanent.isValid()) {
             enchantedPermanent.removeAura(permanent);
             permanent.setEnchantedCreature(MagicPermanent.NONE);
         }
@@ -58,26 +58,26 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
         game.removeTriggers(permanent);
         game.removeStatics(permanent);
     }
-    
+
     void setEnchantedPermanent(final MagicPermanent aEnchantedPermanent) {
         enchantedPermanent = aEnchantedPermanent;
     }
-    
+
     void setPayedCost(final MagicPayedCost aPayedCost) {
         payedCost = aPayedCost;
     }
-    
+
     protected abstract MagicPermanent createPermanent(final MagicGame game);
-    
+
     public MagicPermanent getPermanent() {
         return permanent;
     }
-    
+
     @Override
     public String toString() {
         if (enchantedPermanent.isValid()) {
             return getClass().getSimpleName()+" ("+permanent+','+enchantedPermanent+')';
-        } else { 
+        } else {
             return getClass().getSimpleName()+" ("+permanent+')';
         }
     }

@@ -7,7 +7,7 @@ import magic.model.action.MagicPlayCardFromStackAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.stack.MagicCardOnStack;
 
-/** 
+/**
  * An Aura that is returned to play does NOT target a permanent
  */
 public class MagicReturnAuraEvent extends MagicEvent {
@@ -23,9 +23,9 @@ public class MagicReturnAuraEvent extends MagicEvent {
             cardOnStack.getEvent().getTargetPicker(),
             EVENT_ACTION,
             cardOnStack.getEvent().getChoiceDescription()
-        );        
-    }    
-    
+        );
+    }
+
     private static final MagicEventAction EVENT_ACTION = new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

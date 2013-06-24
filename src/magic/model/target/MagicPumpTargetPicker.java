@@ -11,13 +11,13 @@ import java.util.Set;
 public class MagicPumpTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
     private static final MagicPumpTargetPicker INSTANCE=new MagicPumpTargetPicker();
-       
+
     private static final int ATTACKING_UNBLOCKED=5<<12;
     private static final int ATTACKING_TRAMPLE=4<<12;
     private static final int ATTACKING=3<<12;
     private static final int BLOCKING=2<<12;
     private static final int CAN_TAP=1<<12;
-    
+
     private static final int DOUBLE_STRIKE=2<<8;
     private static final int LIFELINK=1<<8;
 
@@ -26,7 +26,7 @@ public class MagicPumpTargetPicker extends MagicTargetPicker<MagicPermanent> {
     public static MagicPumpTargetPicker create() {
         return INSTANCE;
     }
-    
+
     @Override
     protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
         final MagicPowerToughness pt=permanent.getPowerToughness();
@@ -47,7 +47,7 @@ public class MagicPumpTargetPicker extends MagicTargetPicker<MagicPermanent> {
             score=BLOCKING;
         } else if (permanent.canTap()) {
             score=CAN_TAP;
-        } 
+        }
 
         // Second level.
         if (permanent.hasAbility(MagicAbility.DoubleStrike)) {
@@ -61,7 +61,7 @@ public class MagicPumpTargetPicker extends MagicTargetPicker<MagicPermanent> {
         if (power>0) {
             score+=power<<4;
         }
-        
+
         // Fourth level.
         final int toughness=15-pt.getPositiveToughness()+permanent.getDamage();
         if (toughness>0) {

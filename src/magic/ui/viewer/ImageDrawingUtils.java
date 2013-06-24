@@ -78,28 +78,28 @@ public class ImageDrawingUtils {
             final Set<MagicAbility> abilityFlags,
             int ax,
             final int ay) {
-        if (abilityFlags.contains(MagicAbility.Flying)) {                
+        if (abilityFlags.contains(MagicAbility.Flying)) {
             g.drawImage(IconImages.FLYING.getImage(),ax,ay,observer);
             ax+=16;
         }
         if (abilityFlags.contains(MagicAbility.FirstStrike)||
-            abilityFlags.contains(MagicAbility.DoubleStrike)) {                
+            abilityFlags.contains(MagicAbility.DoubleStrike)) {
             g.drawImage(IconImages.STRIKE.getImage(),ax,ay,observer);
             ax+=16;
         }
         if (abilityFlags.contains(MagicAbility.Trample)) {
             g.drawImage(IconImages.TRAMPLE.getImage(),ax,ay,observer);
-            ax+=16;                
+            ax+=16;
         }
         if (abilityFlags.contains(MagicAbility.Deathtouch)||
             abilityFlags.contains(MagicAbility.Wither)||
             abilityFlags.contains(MagicAbility.Infect)) {
             g.drawImage(IconImages.DEATHTOUCH.getImage(),ax,ay,observer);
-            ax+=16;                                
+            ax+=16;
         }
         return ax;
     }
-    
+
     public static int drawCountersInfo(
             final Graphics g,
             final ImageObserver observer,
@@ -146,7 +146,7 @@ public class ImageDrawingUtils {
         }
         return ax;
     }
-    
+
     public static void drawCreatureInfo(
             final Graphics g,
             final FontMetrics metrics,
@@ -168,5 +168,5 @@ public class ImageDrawingUtils {
             g.setColor(Color.RED);
             g.drawString(damage,dx,flip?y+14:y+28);
         }
-    }        
+    }
 }

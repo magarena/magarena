@@ -9,12 +9,12 @@ public class MagicCounterItemOnStackAction extends MagicAction {
 
     private final MagicItemOnStack itemOnStack;
     private final MagicLocationType toLocation;
-    
+
     public MagicCounterItemOnStackAction(final MagicItemOnStack itemOnStack,final MagicLocationType toLocation) {
         this.itemOnStack=itemOnStack;
         this.toLocation=toLocation;
     }
-    
+
     public MagicCounterItemOnStackAction(final MagicItemOnStack itemOnStack) {
         this(itemOnStack,MagicLocationType.Graveyard);
     }
@@ -33,6 +33,6 @@ public class MagicCounterItemOnStackAction extends MagicAction {
 
     @Override
     public void undoAction(final MagicGame game) {
-        
+
     }
 }

@@ -29,7 +29,7 @@ public class MagicPayManaCostEvent extends MagicEvent {
         );
         conds = new MagicCondition[]{cost.getCondition()};
     }
-    
+
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

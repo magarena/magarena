@@ -19,14 +19,14 @@ import java.util.Set;
 public class MagicCardChoice extends MagicChoice {
 
     private static final String MESSAGE="Choose a card from your hand.";
-    
+
     private final int amount;
-    
+
     public MagicCardChoice(final int amount) {
         super(genDescription(amount));
         this.amount=amount;
     }
-    
+
     private static final String genDescription(final int amount) {
         if (amount==1) {
             return "Choose a card from your hand.";
@@ -34,7 +34,7 @@ public class MagicCardChoice extends MagicChoice {
             return "Choose " + amount + " cards from your hand.";
         }
     }
-    
+
     private void createOptions(
             final Collection<Object> options,
             final MagicCardList hand,
@@ -46,17 +46,17 @@ public class MagicCardChoice extends MagicChoice {
         if (count == aAmount) {
             options.add(new MagicCardChoiceResult(cards));
             return;
-        }        
+        }
 
         if (index == hand.size()) {
             return;
         }
 
         cards[count]=hand.get(index);
-        createOptions(options,hand,cards,count+1,aAmount,index+1);        
+        createOptions(options,hand,cards,count+1,aAmount,index+1);
         createOptions(options,hand,cards,count,aAmount,index+1);
     }
-    
+
     @Override
     Collection<Object> getArtificialOptions(
             final MagicGame game,
@@ -98,5 +98,5 @@ public class MagicCardChoice extends MagicChoice {
             result.add(card);
         }
         return new Object[]{result};
-    }    
+    }
 }

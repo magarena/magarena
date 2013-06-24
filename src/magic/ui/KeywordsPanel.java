@@ -36,24 +36,24 @@ public class KeywordsPanel extends JPanel implements ActionListener {
         BorderFactory.createEmptyBorder(3,0,3,6),
         BorderFactory.createLineBorder(Color.BLACK)
     );
-        
+
     private final MagicFrame frame;
     private final ZoneBackgroundLabel backgroundLabel;
     private final JScrollPane keywordsPane;
     private final JButton closeButton;
-    
+
     public KeywordsPanel(final MagicFrame frame) {
-        
+
         this.frame=frame;
-        
+
         setLayout(null);
-        
+
         closeButton=new JButton(IconImages.CLOSE);
         closeButton.setFocusable(false);
         closeButton.setSize(28,28);
         closeButton.addActionListener(this);
         add(closeButton);
-        
+
         keywordsPane=new JScrollPane();
         keywordsPane.setBorder(FontsAndBorders.NO_BORDER);
         keywordsPane.setOpaque(false);
@@ -62,14 +62,14 @@ public class KeywordsPanel extends JPanel implements ActionListener {
         keywordsPane.getVerticalScrollBar().setBlockIncrement(50);
         keywordsPane.getViewport().setOpaque(false);
         add(keywordsPane);
-        
+
         final JPanel keywordsPanel=createKeywordsPanel();
         keywordsPane.getViewport().add(keywordsPanel);
-        
+
         backgroundLabel=new ZoneBackgroundLabel();
         backgroundLabel.setBounds(0,0,0,0);
         add(backgroundLabel);
-        
+
         this.addComponentListener(new ComponentAdapter() {
 
             @Override
@@ -85,7 +85,7 @@ public class KeywordsPanel extends JPanel implements ActionListener {
         final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
         final Color nameColor=theme.getColor(Theme.COLOR_NAME_FOREGROUND);
         final Color textColor=theme.getTextColor();
-        
+
         final JPanel keywordsPanel=new JPanel();
         keywordsPanel.setOpaque(false);
         keywordsPanel.setLayout(new BoxLayout(keywordsPanel,BoxLayout.Y_AXIS));
@@ -109,12 +109,12 @@ public class KeywordsPanel extends JPanel implements ActionListener {
             descriptionLabel.setForeground(textColor);
             innerPanel.add(descriptionLabel,BorderLayout.CENTER);
         }
-        
+
         return keywordsPanel;
     }
-    
+
     private void resizeComponents() {
-        
+
         final Dimension size=getSize();
         backgroundLabel.setSize(size);
         closeButton.setLocation(size.width-closeButton.getWidth(),0);

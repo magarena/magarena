@@ -31,24 +31,24 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
         layer = aLayer;
         isUntilEOT = aIsUntilEOT;
     }
-    
+
     protected MagicStatic(final MagicLayer aLayer, final MagicTargetFilter<MagicPermanent> aFilter) {
         this(aLayer, aFilter, false);
     }
-    
+
     protected MagicStatic(final MagicLayer aLayer, final boolean aIsUntilEOT) {
         this(aLayer, MagicTargetFilter.NONE, aIsUntilEOT);
     }
-    
+
     protected MagicStatic(final MagicLayer aLayer) {
         this(aLayer, MagicTargetFilter.NONE, false);
     }
-    
+
     @Override
     public void change(final MagicCardDefinition cdef) {
         cdef.addStatic(this);
     }
-        
+
     public final MagicLayer getLayer() {
         return layer;
     }
@@ -64,7 +64,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             return filter.accept(game, source.getController(), target) && condition(game, source, target);
         }
     }
-    
+
     public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
         return true;
     }
@@ -79,7 +79,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
                 (source == target && source.isPaired());
         }
     }
-    
+
     public static MagicStatic genPTStatic(final int givenPower, final int givenToughness) {
         return new MagicStatic(MagicLayer.ModPT) {
             @Override
@@ -111,7 +111,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             }
         };
     }
-    
+
     public static MagicStatic genTypeStatic(final int givenTypeFlags) {
         return new MagicStatic(MagicLayer.Type) {
             @Override
@@ -124,7 +124,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             }
         };
     }
-        
+
     public static MagicStatic genSTStatic(final Set<MagicSubType> givenSubTypeFlags) {
         return new MagicStatic(MagicLayer.Type) {
             @Override
@@ -139,7 +139,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             }
         };
     }
-    
+
     public static MagicStatic AddLinkedColor(final int givenColorFlags) {
         return new MagicStatic(MagicLayer.Color) {
             @Override
@@ -154,7 +154,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             }
         };
     }
-    
+
     public static MagicStatic SetLinkedColor(final int givenColorFlags) {
         return new MagicStatic(MagicLayer.Color) {
             @Override
@@ -186,7 +186,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             return source.getEnchantedCreature() == target;
         }
     };
-    
+
     public static MagicStatic Unleash = new MagicStatic(MagicLayer.Ability) {
         @Override
         public void modAbilityFlags(
@@ -200,7 +200,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             return source.getCounters(MagicCounterType.PlusOne) > 0;
         }
     };
-    
+
     public static MagicStatic SwitchPT = new MagicStatic(MagicLayer.SwitchPT, MagicStatic.UntilEOT) {
         @Override
         public void modPowerToughness(
@@ -208,6 +208,6 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
             pt.set(pt.toughness(),pt.power());
-        }   
+        }
     };
 }

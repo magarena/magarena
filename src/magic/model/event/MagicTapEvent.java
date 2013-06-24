@@ -6,7 +6,7 @@ import magic.model.action.MagicTapAction;
 import magic.model.condition.MagicCondition;
 
 public class MagicTapEvent extends MagicEvent {
-    
+
     private static final MagicCondition[] conds = new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION};
 
     public MagicTapEvent(final MagicPermanent permanent) {
@@ -23,7 +23,7 @@ public class MagicTapEvent extends MagicEvent {
             game.doAction(new MagicTapAction(event.getPermanent(),true));
         }
     };
-    
+
     @Override
     public MagicCondition[] getConditions() {
         return conds;

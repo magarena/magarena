@@ -15,40 +15,40 @@ public enum MagicColor {
     Green("green",'g'),
     Red("red",'r')
     ;
-    
+
     public static final int NR_COLORS=values().length;
-    
+
     private final String name;
     private final char symbol;
     private final int mask;
-    
+
     private MagicColor(final String name,final char symbol) {
-        this.name=name;    
+        this.name=name;
         this.symbol=symbol;
         this.mask=1<<ordinal();
     }
-    
+
     public String getName() {
         return name;
     }
-    
+
     @Override
     public String toString() {
         return name;
     }
-    
+
     public char getSymbol() {
         return symbol;
     }
-    
+
     public int getMask() {
         return mask;
     }
-    
+
     public boolean hasColor(final int flags) {
         return (flags&mask)!=0;
     }
-    
+
     public MagicAbility getProtectionAbility() {
         switch (this) {
             case White: return MagicAbility.ProtectionFromWhite;
@@ -59,7 +59,7 @@ public enum MagicColor {
         }
         throw new RuntimeException("No protection ability for MagicColor " + this);
     }
-    
+
     public MagicAbility getLandwalkAbility() {
         switch (this) {
             case White: return MagicAbility.PlainsWalk;
@@ -67,10 +67,10 @@ public enum MagicColor {
             case Black: return MagicAbility.Swampwalk;
             case Green: return MagicAbility.Forestwalk;
             case Red: return MagicAbility.Mountainwalk;
-        }    
+        }
         throw new RuntimeException("No landwalk ability for MagicColor " + this);
     }
-    
+
     public MagicAbility getCannotBeBlockedByAbility() {
         switch (this) {
             case White: return MagicAbility.CannotBeBlockedByWhite;
@@ -78,13 +78,13 @@ public enum MagicColor {
             case Black: return MagicAbility.CannotBeBlockedByBlack;
             case Green: return MagicAbility.CannotBeBlockedByGreen;
             case Red: return MagicAbility.CannotBeBlockedByRed;
-        }    
+        }
         throw new RuntimeException("No CannotBeBlockedBy ability for MagicColor " + this);
     }
-    
+
     public MagicSubType getLandSubType() {
         switch (this) {
-            case White: return MagicSubType.Plains;        
+            case White: return MagicSubType.Plains;
             case Blue: return MagicSubType.Island;
             case Black: return MagicSubType.Swamp;
             case Green: return MagicSubType.Forest;
@@ -92,7 +92,7 @@ public enum MagicColor {
         }
         throw new RuntimeException("No land subtype for MagicColor " + this);
     }
-    
+
     public MagicManaType getManaType() {
         switch (this) {
             case White: return MagicManaType.White;
@@ -103,7 +103,7 @@ public enum MagicColor {
         }
         return MagicManaType.Colorless;
     }
-    
+
     public ImageIcon getIcon() {
         switch (this) {
             case White: return IconImages.WHITE;
@@ -124,7 +124,7 @@ public enum MagicColor {
         }
         return flags;
     }
-    
+
     public static MagicColor getColor(final char symbol) {
         final char usymbol=Character.toLowerCase(symbol);
         for (final MagicColor color : values()) {
@@ -133,14 +133,14 @@ public enum MagicColor {
             }
         }
         throw new RuntimeException("No corresponding MagicColor for " + symbol);
-    }    
-    
+    }
+
     public static String getRandomColors(final int count) {
         final List<MagicColor> colors = new ArrayList<MagicColor>(Arrays.asList(values()));
         final StringBuilder colorText=new StringBuilder();
         for (int c=count;c>0;c--) {
             final int index=MagicRandom.nextInt(colors.size());
-            colorText.append(colors.remove(index).getSymbol());            
+            colorText.append(colors.remove(index).getSymbol());
         }
         return colorText.toString();
     }
@@ -154,7 +154,7 @@ public enum MagicColor {
         }
         return numColors;
     }
-    
+
     private static boolean isColorless(final MagicSource source) {
         return numColors(source) == 0;
     }

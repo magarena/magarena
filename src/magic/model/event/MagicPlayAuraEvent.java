@@ -10,10 +10,10 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTargetPicker;
 
 public class MagicPlayAuraEvent extends MagicSpellCardEvent {
-    
+
     private final MagicTargetChoice targetChoice;
     private final MagicTargetPicker<?> targetPicker;
-    
+
     private MagicPlayAuraEvent(
             final MagicTargetChoice targetChoice,
             final MagicTargetPicker<?> targetPicker) {
@@ -24,7 +24,7 @@ public class MagicPlayAuraEvent extends MagicSpellCardEvent {
     public MagicTargetChoice getTargetChoice() {
         return targetChoice;
     }
-    
+
     @Override
     public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
         return new MagicEvent(
@@ -47,7 +47,7 @@ public class MagicPlayAuraEvent extends MagicSpellCardEvent {
 
     public static MagicPlayAuraEvent create(final String script) {
         final String[] token = script.split(",");
-        final MagicTargetPicker<?> targetPicker = MagicTargetPicker.build(token[0]); 
+        final MagicTargetPicker<?> targetPicker = MagicTargetPicker.build(token[0]);
         final MagicTargetChoice targetChoice = MagicTargetChoice.build(token[1]);
         assert targetPicker != null : "targetPicker is null";
         assert targetChoice != null : "targetChoice is null";

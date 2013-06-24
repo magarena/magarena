@@ -20,26 +20,26 @@ public class BasicLandPermanentButton extends PanelButton implements ChoiceViewe
     private final PermanentViewerInfo permanentInfo;
     private final GameController controller;
     private final JPanel landPanel;
-    
+
     public BasicLandPermanentButton(final PermanentViewerInfo permanentInfo,final GameController controller) {
-        
+
         this.permanentInfo=permanentInfo;
         this.controller=controller;
-        
+
         landPanel=new JPanel(new BorderLayout());
         landPanel.setOpaque(false);
         landPanel.setBorder(FontsAndBorders.NO_TARGET_BORDER);
-        
+
         final JLabel manaLabel=new JLabel();
         manaLabel.setHorizontalAlignment(JLabel.CENTER);
         manaLabel.setPreferredSize(new Dimension(0,30));
         manaLabel.setIcon(permanentInfo.manaColor.getIcon());
         landPanel.add(manaLabel,BorderLayout.CENTER);
-        
+
         final JLabel tappedLabel=new JLabel(permanentInfo.tapped?IconImages.TAPPED:null);
         tappedLabel.setPreferredSize(new Dimension(0,16));
         landPanel.add(tappedLabel,BorderLayout.SOUTH);
-        
+
         setComponent(landPanel);
         showValidChoices(controller.getValidChoices());
     }
@@ -53,9 +53,9 @@ public class BasicLandPermanentButton extends PanelButton implements ChoiceViewe
     @Override
     public void mouseEntered() {
 
-        controller.viewCard(permanentInfo.cardDefinition,permanentInfo.index);        
+        controller.viewCard(permanentInfo.cardDefinition,permanentInfo.index);
     }
-    
+
     @Override
     public void showValidChoices(final Set<?> validChoices) {
 

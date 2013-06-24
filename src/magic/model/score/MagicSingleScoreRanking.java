@@ -8,7 +8,7 @@ public class MagicSingleScoreRanking implements MagicScoreRanking {
     private final boolean best;
     private MagicScoreResult result;
     private int bestScore;
-    
+
     public MagicSingleScoreRanking(final boolean best) {
         this.best=best;
         bestScore=best?Integer.MIN_VALUE:Integer.MAX_VALUE;

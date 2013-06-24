@@ -94,10 +94,10 @@ public class MagicTargetChoice extends MagicChoice {
                 "target permanent");
     public static final MagicTargetChoice TARGET_PERMANENT_YOU_CONTROL=
         new MagicTargetChoice(MagicTargetFilter.TARGET_PERMANENT_YOU_CONTROL,true,MagicTargetHint.None,
-                "target permanent you control");    
+                "target permanent you control");
     public static final MagicTargetChoice TARGET_PERMANENT_YOU_OWN=
         new MagicTargetChoice(MagicTargetFilter.TARGET_PERMANENT_YOU_OWN,true,MagicTargetHint.None,
-                "target permanent you own");    
+                "target permanent you own");
     public static final MagicTargetChoice NEG_TARGET_PERMANENT=
         new MagicTargetChoice(MagicTargetFilter.TARGET_PERMANENT,true,MagicTargetHint.Negative,"target permanent");
     public static final MagicTargetChoice POS_TARGET_PERMANENT =
@@ -107,7 +107,7 @@ public class MagicTargetChoice extends MagicChoice {
                     "target permanent");
     public static final MagicTargetChoice NEG_TARGET_BLACK_RED_PERMANENT=
         new MagicTargetChoice(MagicTargetFilter.TARGET_BLACK_RED_PERMANENT,true,MagicTargetHint.Negative,"target black or red permanent");
-    
+
     public static final MagicTargetChoice TARGET_NONBASIC_LAND=
         new MagicTargetChoice(MagicTargetFilter.TARGET_NONBASIC_LAND,true,MagicTargetHint.None,"target non basic land");
     public static final MagicTargetChoice NEG_TARGET_NONBASIC_LAND=
@@ -123,7 +123,7 @@ public class MagicTargetChoice extends MagicChoice {
 
     public static final MagicTargetChoice TARGET_NONLAND_PERMANENT=
         new MagicTargetChoice(MagicTargetFilter.TARGET_NONLAND_PERMANENT,true,MagicTargetHint.None,"target nonland permanent");
-    
+
     public static final MagicTargetChoice TARGET_NONLAND_PERMANENT_YOUR_OPPONENT_CONTROLS =
         new MagicTargetChoice(MagicTargetFilter.TARGET_NONLAND_PERMANENT_YOUR_OPPONENT_CONTROLS,true,MagicTargetHint.None,"target nonland permanent your opponent controls");
 
@@ -264,7 +264,7 @@ public class MagicTargetChoice extends MagicChoice {
             new MagicTargetChoice(MagicTargetFilter.TARGET_WHITE_CREATURE,true,MagicTargetHint.None,"target white creature");
     public static final MagicTargetChoice TARGET_CREATURE_YOU_CONTROL=
         new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,true,MagicTargetHint.None,"target creature you control");
-    
+
     public static final MagicTargetChoice TARGET_NON_LEGENDARY_CREATURE_YOU_CONTROL = new MagicTargetChoice(
         MagicTargetFilter.TARGET_NON_LEGENDARY_CREATURE_YOU_CONTROL,
         true,
@@ -352,7 +352,7 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice SACRIFICE_FOREST =
         new MagicTargetChoice(MagicTargetFilter.TARGET_FOREST_YOU_CONTROL,false,MagicTargetHint.None,"a Forest to sacrifice");
     public static final MagicTargetChoice SACRIFICE_BAT=
-        new MagicTargetChoice(MagicTargetFilter.TARGET_BAT_YOU_CONTROL,false,MagicTargetHint.None,"a Bat to sacrifice");    
+        new MagicTargetChoice(MagicTargetFilter.TARGET_BAT_YOU_CONTROL,false,MagicTargetHint.None,"a Bat to sacrifice");
     public static final MagicTargetChoice SACRIFICE_BEAST=
         new MagicTargetChoice(MagicTargetFilter.TARGET_BEAST_YOU_CONTROL,false,MagicTargetHint.None,"a Beast to sacrifice");
     public static final MagicTargetChoice SACRIFICE_GOBLIN=
@@ -423,42 +423,42 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice TARGET_BASIC_LAND_CARD_FROM_HAND =
             new MagicTargetChoice(MagicTargetFilter.TARGET_BASIC_LAND_CARD_FROM_HAND,false,MagicTargetHint.None,
             "a basic land card from your hand");
- 
+
     public static final MagicTargetChoice TARGET_LAND_CARD_FROM_HAND = new MagicTargetChoice(
         MagicTargetFilter.TARGET_LAND_CARD_FROM_HAND,
         false,
         MagicTargetHint.None,
         "a land card from your hand"
     );
-    
+
     public static final MagicTargetChoice TARGET_GOBLIN_CARD_FROM_HAND = new MagicTargetChoice(
         MagicTargetFilter.TARGET_GOBLIN_CARD_FROM_HAND,
         false,
         MagicTargetHint.None,
         "a Goblin permanent card from your hand"
     );
-    
+
     public static final MagicTargetChoice TARGET_UNPAIRED_SOULBOND_CREATURE = new MagicTargetChoice(
         MagicTargetFilter.TARGET_UNPAIRED_SOULBOND_CREATURE,
         false,
         MagicTargetHint.None,
         "an unpaired Soulbond creature"
     );
-    
+
     public static final MagicTargetChoice CREATURE_TOKEN_YOU_CONTROL = new MagicTargetChoice(
         MagicTargetFilter.TARGET_CREATURE_TOKEN_YOU_CONTROL,
         false,
         MagicTargetHint.None,
         "a creature token you control"
     );
-    
+
     public static final MagicTargetChoice PLANESWALKER_YOUR_OPPONENT_CONTROLS = new MagicTargetChoice(
         MagicTargetFilter.TARGET_PLANESWALKER_YOUR_OPPONENT_CONTROLS,
         false,
         MagicTargetHint.None,
         "a planeswalker your opponent controls"
     );
-    
+
     public static final MagicTargetChoice TARGET_CREATURE_YOUR_OPPONENT_CONTROLS = new MagicTargetChoice(
         MagicTargetFilter.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
         true,
@@ -472,33 +472,33 @@ public class MagicTargetChoice extends MagicChoice {
         MagicTargetHint.None,
         "target creature you don't control"
     );
-    
+
     public static final MagicTargetChoice TARGET_CREATURE_WITHOUT_FLYING_YOU_DONT_CONTROL = new MagicTargetChoice(
         MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING_YOUR_OPPONENT_CONTROLS,
         true,
         MagicTargetHint.Negative,
         "target creature without flying you don't control"
     );
-    
+
     public static final MagicTargetChoice TARGET_ARTIFACT_YOUR_OPPONENT_CONTROLS = new MagicTargetChoice(
         MagicTargetFilter.TARGET_ARTIFACT_YOUR_OPPONENT_CONTROLS,
         true,
         MagicTargetHint.None,
         "target artifact your opponent controls"
     );
-    
+
     public static final MagicTargetChoice TARGET_ARTIFACT_YOU_DONT_CONTROL = new MagicTargetChoice(
         MagicTargetFilter.TARGET_ARTIFACT_YOUR_OPPONENT_CONTROLS,
         true,
         MagicTargetHint.None,
         "target artifact you don't control"
     );
-        
+
     private final String targetDescription;
     private final MagicTargetFilter<? extends MagicTarget> targetFilter;
     private final boolean targeted;
     private final MagicTargetHint targetHint;
-    
+
     public MagicTargetChoice(
             final MagicTargetFilter<? extends MagicTarget> targetFilter,
             final boolean targeted,
@@ -510,7 +510,7 @@ public class MagicTargetChoice extends MagicChoice {
         this.targetHint=hint;
         this.targetDescription=targetDescription;
     }
-    
+
     public MagicTargetChoice(
             final MagicTargetChoice copy,
             final boolean targeted) {
@@ -520,7 +520,7 @@ public class MagicTargetChoice extends MagicChoice {
         this.targetHint=copy.targetHint;
         this.targetDescription=copy.targetDescription;
     }
-    
+
     public final String getTargetDescription() {
         return targetDescription;
     }
@@ -528,7 +528,7 @@ public class MagicTargetChoice extends MagicChoice {
     public final MagicTargetFilter<? extends MagicTarget> getTargetFilter() {
         return targetFilter;
     }
-    
+
     public final boolean isTargeted() {
         return targeted;
     }
@@ -536,12 +536,12 @@ public class MagicTargetChoice extends MagicChoice {
     public final MagicTargetHint getTargetHint(final boolean hints) {
         return hints?targetHint:MagicTargetHint.None;
     }
-    
+
     @Override
     public final MagicTargetChoice getTargetChoice() {
         return this;
     }
-    
+
     @Override
     public final int getTargetChoiceResultIndex() {
         return 0;
@@ -555,7 +555,7 @@ public class MagicTargetChoice extends MagicChoice {
             final boolean hints) {
         return game.hasLegalTargets(player,source,this,hints);
     }
-    
+
     @Override
     final Collection<?> getArtificialOptions(
             final MagicGame game,
@@ -577,20 +577,20 @@ public class MagicTargetChoice extends MagicChoice {
             final MagicPlayer player,
             final MagicSource source) throws UndoClickedException {
 
-        controller.disableActionButton(false);        
+        controller.disableActionButton(false);
         controller.showMessage(source,getDescription());
         if (targetFilter.acceptType(MagicTargetType.Graveyard)) {
             controller.focusViewers(1,-1);
         } else if (targetFilter.acceptType(MagicTargetType.OpponentsGraveyard)) {
             controller.focusViewers(2,-1);
-        }    
+        }
         final MagicTargetHint usedTargetHint=getTargetHint(GeneralConfig.getInstance().getSmartTarget());
         final Set<Object> validChoices=new HashSet<Object>(game.getLegalTargets(player,source,this,usedTargetHint));
         if (validChoices.size()==1) {
             // There are no valid choices.
-            if (validChoices.contains(MagicTargetNone.getInstance())) {            
+            if (validChoices.contains(MagicTargetNone.getInstance())) {
                 return new Object[]{MagicTargetNone.getInstance()};
-            } 
+            }
             // Only valid choice is player.
             if (validChoices.contains(player)) {
                 return new Object[]{player};
@@ -605,7 +605,7 @@ public class MagicTargetChoice extends MagicChoice {
         controller.waitForInput();
         return new Object[]{controller.getChoiceClicked()};
     }
-   
+
 
     private static final Map<String, MagicTargetChoice> factory =
         new HashMap<String, MagicTargetChoice>();
@@ -619,7 +619,7 @@ public class MagicTargetChoice extends MagicChoice {
         factory.put("neg creature", NEG_TARGET_CREATURE);
         factory.put("neg tapped creature", NEG_TARGET_TAPPED_CREATURE);
         factory.put("pos nonblack creature", POS_TARGET_NONBLACK_CREATURE);
-        
+
         factory.put("permanent", TARGET_PERMANENT);
         factory.put("pos permanent", POS_TARGET_PERMANENT);
         factory.put("neg permanent", NEG_TARGET_PERMANENT);
@@ -628,38 +628,38 @@ public class MagicTargetChoice extends MagicChoice {
         factory.put("pos land", POS_TARGET_LAND);
         factory.put("neg land", NEG_TARGET_LAND);
         factory.put("neg nonbasic land", NEG_TARGET_NONBASIC_LAND);
-        
+
         factory.put("artifact", TARGET_ARTIFACT);
         factory.put("pos artifact", POS_TARGET_ARTIFACT);
         factory.put("neg artifact", NEG_TARGET_ARTIFACT);
-        
+
         factory.put("enchantment", TARGET_ENCHANTMENT);
         factory.put("pos enchantment", POS_TARGET_ENCHANTMENT);
         factory.put("neg enchantment", NEG_TARGET_ENCHANTMENT);
-        
+
         factory.put("neg creature or land", NEG_TARGET_CREATURE_OR_LAND);
         factory.put("neg artifact or creature", NEG_TARGET_ARTIFACT_OR_CREATURE);
 
         // used by effect property
         factory.put("neg target artifact", NEG_TARGET_ARTIFACT);
         factory.put("neg target artifact you don't control", TARGET_ARTIFACT_YOU_DONT_CONTROL);
-        factory.put("neg target artifact or enchantment", NEG_TARGET_ARTIFACT_OR_ENCHANTMENT); 
+        factory.put("neg target artifact or enchantment", NEG_TARGET_ARTIFACT_OR_ENCHANTMENT);
         factory.put("neg target artifact or land", NEG_TARGET_ARTIFACT_OR_LAND);
         factory.put("neg target artifact, enchantment, or land", NEG_TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND);
-        factory.put("neg target attacking creature", NEG_TARGET_ATTACKING_CREATURE); 
-        factory.put("neg target blocked creature", NEG_TARGET_BLOCKED_CREATURE); 
+        factory.put("neg target attacking creature", NEG_TARGET_ATTACKING_CREATURE);
+        factory.put("neg target blocked creature", NEG_TARGET_BLOCKED_CREATURE);
         factory.put("neg target tapped creature", NEG_TARGET_TAPPED_CREATURE);
         factory.put("neg target creature", NEG_TARGET_CREATURE);
-        factory.put("neg target creature or enchantment", NEG_TARGET_CREATURE_OR_ENCHANTMENT); 
+        factory.put("neg target creature or enchantment", NEG_TARGET_CREATURE_OR_ENCHANTMENT);
         factory.put("neg target creature or land", NEG_TARGET_CREATURE_OR_LAND);
         factory.put("neg target creature or planeswalker", NEG_TARGET_CREATURE_OR_PLANESWALKER);
         factory.put("neg target creature with power 4 or greater", NEG_TARGET_CREATURE_POWER_4_OR_MORE);
         factory.put("neg target creature with flying", NEG_TARGET_CREATURE_WITH_FLYING);
-        factory.put("neg target nonartifact creature", NEG_TARGET_NONARTIFACT_CREATURE); 
-        factory.put("neg target nonblack creature", NEG_TARGET_NONBLACK_CREATURE); 
-        factory.put("neg target nonartifact, nonblack creature", NEG_TARGET_NONARTIFACT_NONBLACK_CREATURE); 
+        factory.put("neg target nonartifact creature", NEG_TARGET_NONARTIFACT_CREATURE);
+        factory.put("neg target nonblack creature", NEG_TARGET_NONBLACK_CREATURE);
+        factory.put("neg target nonartifact, nonblack creature", NEG_TARGET_NONARTIFACT_NONBLACK_CREATURE);
         factory.put("neg target noncreature permanent", NEG_TARGET_NONCREATURE);
-        factory.put("neg target human creature", NEG_TARGET_HUMAN_CREATURE); 
+        factory.put("neg target human creature", NEG_TARGET_HUMAN_CREATURE);
         factory.put("neg target green or white creature", NEG_TARGET_GREEN_OR_WHITE_CREATURE);
         factory.put("neg target black or red permanent", NEG_TARGET_BLACK_RED_PERMANENT);
         factory.put("neg target land", NEG_TARGET_LAND);

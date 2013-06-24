@@ -22,7 +22,7 @@ public class MagicTools {
             System.out.println(name);
         }
     }
-    
+
     private static void checkCards() {
         final String[] filenames = new File(MagicMain.getGamePath(),"cards").list();
         final Set<MagicCardDefinition> remaining = new HashSet<MagicCardDefinition>(CardDefinitions.getCards());
@@ -37,7 +37,7 @@ public class MagicTools {
             }
         }
     }
-        
+
     public static void main(final String[] args) {
         MagicMain.initializeEngine();
         checkCards();

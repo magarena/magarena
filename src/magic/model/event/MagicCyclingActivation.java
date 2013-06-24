@@ -20,7 +20,7 @@ public class MagicCyclingActivation extends MagicCardActivation {
         );
         cost = aCost;
     }
-  
+
     public MagicEvent[] getCostEvent(final MagicCard source) {
         return new MagicEvent[]{
             new MagicPayManaCostEvent(
@@ -48,7 +48,7 @@ public class MagicCyclingActivation extends MagicCardActivation {
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         final MagicAbilityOnStack abilityOnStack = new MagicAbilityOnStack(
             this,
-            new MagicDrawEvent(event.getSource(), event.getPlayer(), 1), 
+            new MagicDrawEvent(event.getSource(), event.getPlayer(), 1),
             game.getPayedCost()
         );
         game.doAction(new MagicPutItemOnStackAction(abilityOnStack));

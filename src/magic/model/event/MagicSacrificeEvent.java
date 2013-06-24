@@ -12,8 +12,8 @@ public class MagicSacrificeEvent extends MagicEvent {
             EVENT_ACTION,
             "Sacrifice SN."
         );
-    }    
-    
+    }
+
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

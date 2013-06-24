@@ -11,17 +11,17 @@ public class MagicGainControlAction extends MagicAction {
     private final MagicPlayer player;
     private final MagicPermanent permanent;
     private final boolean duration;
-    
+
     public MagicGainControlAction(final MagicPlayer player,final MagicPermanent permanent) {
         this(player,permanent,MagicStatic.Forever);
     }
-    
+
     public MagicGainControlAction(final MagicPlayer player,final MagicPermanent permanent,final boolean duration) {
         this.player = player;
         this.permanent = permanent;
         this.duration = duration;
     }
-    
+
     @Override
     public void doAction(final MagicGame game) {
         //insert continuous effect
@@ -35,14 +35,14 @@ public class MagicGainControlAction extends MagicAction {
                     final MagicPlayer controller) {
                 final MagicGame game = controller.getGame();
                 return game.getPlayer(player.getIndex());
-            }   
+            }
         }));
     }
 
     @Override
     public void undoAction(final MagicGame game) {
     }
-    
+
     @Override
     public String toString() {
         return super.toString() + " (" + player + "," + permanent + ')';

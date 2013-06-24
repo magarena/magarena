@@ -23,7 +23,7 @@ public class PlayerViewerInfo {
     public final MagicCardList exile;
     public final MagicCardList library;
     public final List<PermanentViewerInfo> permanents;
-    
+
     public PlayerViewerInfo(final MagicGame game,final MagicPlayer player) {
         this.player=player;
         turn=player==game.getTurnPlayer();

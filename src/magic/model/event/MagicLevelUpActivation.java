@@ -12,11 +12,11 @@ import magic.model.condition.MagicCondition;
 
 public class MagicLevelUpActivation extends MagicPermanentActivation {
 
-    private static final MagicActivationHints ACTIVATION_HINTS = 
+    private static final MagicActivationHints ACTIVATION_HINTS =
         new MagicActivationHints(MagicTiming.Main);
-        
+
     private final MagicManaCost cost;
-    
+
     public MagicLevelUpActivation(final MagicManaCost cost,final int maximum) {
         super(
             new MagicCondition[]{
@@ -30,12 +30,12 @@ public class MagicLevelUpActivation extends MagicPermanentActivation {
         );
         this.cost=cost;
     }
-    
+
     @Override
     public MagicEvent[] getCostEvent(final MagicPermanent source) {
         return new MagicEvent[]{new MagicPayManaCostEvent(source,cost)};
     }
-    
+
     @Override
     public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
         return new MagicEvent(
@@ -49,18 +49,18 @@ public class MagicLevelUpActivation extends MagicPermanentActivation {
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,1,true));
     }
-    
+
     private static final class MaximumCondition implements MagicCondition {
-        
+
         private final int maximum;
-        
+
         public MaximumCondition(final int maximum) {
             this.maximum=maximum;
         }
-        
+
         @Override
         public boolean accept(final MagicSource source) {
             return ((MagicPermanent)source).getCounters(MagicCounterType.Charge)<maximum;
-        }        
+        }
     };
 }

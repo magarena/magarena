@@ -9,13 +9,13 @@ import magic.model.event.MagicEvent;
 
 //When C is put into a graveyard from the battlefield, you may or must draw a card.
 public class MagicDieDrawCardTrigger extends MagicWhenPutIntoGraveyardTrigger {
-    
+
     private final boolean mustDraw;
-    
+
     public MagicDieDrawCardTrigger(final boolean mandatory) {
         this.mustDraw = mandatory;
     }
-    
+
     @Override
     public MagicEvent executeTrigger(
             final MagicGame game,

@@ -13,20 +13,20 @@ import magic.model.action.MagicRemoveCardAction;
 
 public abstract class MagicWhenPutIntoGraveyardTrigger extends MagicTrigger<MagicGraveyardTriggerData> {
     public MagicWhenPutIntoGraveyardTrigger(final int priority) {
-        super(priority); 
+        super(priority);
     }
-    
+
     public MagicWhenPutIntoGraveyardTrigger() {}
-    
+
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenPutIntoGraveyard;
     }
-    
+
     @Override
     public void change(final MagicCardDefinition cdef) {
         cdef.addTrigger(this);
     }
-    
+
     public static final MagicWhenPutIntoGraveyardTrigger RecoverGraveyard = new MagicWhenPutIntoGraveyardTrigger() {
         @Override
         public MagicEvent executeTrigger(
@@ -42,7 +42,7 @@ public abstract class MagicWhenPutIntoGraveyardTrigger extends MagicTrigger<Magi
                 "PN shuffles his or her graveyard into his or her library."
             );
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
@@ -54,7 +54,7 @@ public abstract class MagicWhenPutIntoGraveyardTrigger extends MagicTrigger<Magi
                 game.doAction(new MagicMoveCardAction(
                         card,
                         MagicLocationType.Graveyard,
-                        MagicLocationType.OwnersLibrary));            
+                        MagicLocationType.OwnersLibrary));
             }
         }
     };
