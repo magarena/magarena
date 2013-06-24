@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/gp/157.jpg
 value=4.345
 rarity=R
 type=Land
-color=
 subtype=Plains,Swamp
 mana=w3b3
 ability=tap add mana {W} or {B},\

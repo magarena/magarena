@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/gp/164.jpg
 value=4.333
 rarity=R
 type=Land
-color=
 subtype=Island,Mountain
 mana=u3r3
 ability=tap add mana {U} or {R},\

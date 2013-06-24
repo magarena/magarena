@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/cs/151.jpg
 value=4.394
 rarity=L
 type=Basic,Snow,Land
-color=
 subtype=Plains
 mana=w4
 ability=tap add mana {W}

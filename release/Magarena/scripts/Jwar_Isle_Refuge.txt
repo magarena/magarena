@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/zen/215.jpg
 value=3.233
 rarity=U
 type=Land
-color=
 mana=u3b3
 ability=tap add mana {U} or {B},\
         enters tapped,\

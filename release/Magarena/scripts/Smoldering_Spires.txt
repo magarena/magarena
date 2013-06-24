@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/wwk/143.jpg
 value=3.208
 rarity=C
 type=Land
-color=
 mana=r3
 ability=enters tapped,tap add mana {R}
 timing=fmain

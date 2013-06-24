@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/me4/251.jpg
 value=4.628
 rarity=R
 type=Land
-color=
 subtype=Swamp,Plains
 mana=b4w4
 ability=tap add mana {B} or {W}

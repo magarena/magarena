@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/me4/256.jpg
 value=4.647
 rarity=R
 type=Land
-color=
 subtype=Swamp,Island
 mana=b4u4
 ability=tap add mana {B} or {U}

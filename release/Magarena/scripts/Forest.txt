@@ -5,7 +5,6 @@ num_images=2
 value=4.167
 rarity=L
 type=Basic,Land
-color=
 subtype=Forest
 mana=g4
 ability=tap add mana {G}

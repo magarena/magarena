@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/arc/127.jpg
 value=3.611
 rarity=C
 type=Land
-color=
 mana=g4
 timing=land
 ability=enters tapped,tap add mana {G}

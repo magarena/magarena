@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/cfx/144.jpg
 value=3.286
 rarity=C
 type=Land
-color=
 mana=b3g3r3u3w3
 timing=land
 ability=tap add mana any,\

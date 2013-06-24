@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/ddf/33.jpg
 value=3.424
 rarity=C
 type=Land
-color=
 mana=w4
 ability=tap add mana {W},\
         enters tapped,\

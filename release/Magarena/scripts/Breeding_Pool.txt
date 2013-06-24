@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/di/172.jpg
 value=4.207
 rarity=R
 type=Land
-color=
 subtype=Forest,Island
 mana=g3u3
 ability=tap add mana {G} or {U},\

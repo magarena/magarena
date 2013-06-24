@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/rtr/249.jpg
 value=2.975
 rarity=C
 type=Land
-color=
 mana=w3u3b3r3g3
 ability=enters tapped,tap add mana any
 timing=land

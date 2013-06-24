@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/rtr/242.jpg
 value=3.725
 rarity=C
 type=Land
-color=
 subtype=Gate
 mana=u3r3
 ability=tap add mana {U} or {R},\

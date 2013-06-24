@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/som/224.jpg
 value=4.230
 rarity=R
 type=Land
-color=
 mana=b3r3
 ability=tap add mana {B} or {R},\
         enters tapped unless two

@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/us/320.jpg
 value=3.704
 rarity=C
 type=Land
-color=
 mana=w3
 ability=enters tapped,tap add mana {W},cycling {2}
 timing=tapland

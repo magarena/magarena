@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/tp/331.jpg
 value=2.607
 rarity=R
 type=Land
-color=
 mana=w2r2
 ability=enters tapped,tap add mana {1},tap pain add mana {R} or {W}
 timing=tapland

@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/me4/250.jpg
 value=4.639
 rarity=R
 type=Land
-color=
 subtype=Plains,Forest
 mana=w4g4
 ability=tap add mana {W} or {G}

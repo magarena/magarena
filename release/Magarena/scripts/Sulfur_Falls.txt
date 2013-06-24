@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/isd/248.jpg
 value=3.765
 rarity=R
 type=Land
-color=
 mana=u3r3
 ability=tap add mana {U} or {R},\
         enters tapped unless island mountain

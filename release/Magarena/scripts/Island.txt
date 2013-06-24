@@ -5,7 +5,6 @@ num_images=2
 value=4.071
 rarity=L
 type=Basic,Land
-color=
 subtype=Island
 mana=u4
 ability=tap add mana {U}

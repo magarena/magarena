@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/rav/284.jpg
 value=4.273
 rarity=R
 type=Land
-color=
 subtype=Forest,Plains
 mana=g3w3
 ability=tap add mana {G} or {W},\

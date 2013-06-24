@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/isd/241.jpg
 value=3.773
 rarity=R
 type=Land
-color=
 mana=g3u3
 ability=tap add mana {G} or {U},\
         enters tapped unless forest island

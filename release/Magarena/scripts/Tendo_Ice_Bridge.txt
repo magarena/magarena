@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/bok/165.jpg
 value=4.152
 rarity=R
 type=Land
-color=
 mana=w1u1b1r1g1
 ability=enters with charge 1,tap add mana {1},tap drain add mana any
 timing=land

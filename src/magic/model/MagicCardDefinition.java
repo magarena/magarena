@@ -277,7 +277,15 @@ public class MagicCardDefinition {
     }
 
     public void addType(final MagicType type) {
-        typeFlags|=type.getMask();
+        typeFlags |= type.getMask();
+        if (type == MagicType.Land) {
+            if (colorFlags == -1) {
+                // Lands default to colorless
+                colorFlags = 0;
+            } else {
+                assert colorFlags != 0 : "redundant color declaration: " + colorFlags; 
+            }
+        }
     }
 
     public boolean hasType(final MagicType type) {
@@ -429,7 +437,8 @@ public class MagicCardDefinition {
     }
 
     public void setColors(final String colors) {
-        colorFlags=MagicColor.getFlags(colors);
+        colorFlags = MagicColor.getFlags(colors);
+        assert colorFlags != cost.getColorFlags() : "redundant color declaration: " + colorFlags; 
     }
 
     public boolean hasColor(final MagicColor color) {
@@ -473,7 +482,10 @@ public class MagicCardDefinition {
     public void setCost(final MagicManaCost aCost) {
         cost = aCost;
         if (colorFlags == -1) {
+            // color defaults to follow mana cost
             colorFlags = cost.getColorFlags();
+        } else {
+            assert colorFlags != cost.getColorFlags() : "redundant color declaration: " + colorFlags; 
         }
     }
 
