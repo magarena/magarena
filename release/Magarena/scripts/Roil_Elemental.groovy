@@ -3,8 +3,8 @@ def control = {
     return new MagicStatic(MagicLayer.Control,filter) {
         @Override
         public MagicPlayer getController(
-            final MagicPermanent source, 
-            final MagicPermanent permanent, 
+            final MagicPermanent source,
+            final MagicPermanent permanent,
             final MagicPlayer player) {
             return source.getController();
         }

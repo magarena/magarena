@@ -24,7 +24,7 @@
     new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return permanent.isOpponent(upkeepPlayer) ? 
+            return permanent.isOpponent(upkeepPlayer) ?
                 new MagicEvent(
                     permanent,
                     upkeepPlayer,
@@ -33,7 +33,7 @@
                 ):
                 MagicEvent.NONE;
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer opponent=event.getPlayer();

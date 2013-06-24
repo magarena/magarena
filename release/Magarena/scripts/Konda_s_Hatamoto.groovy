@@ -16,7 +16,7 @@
                     game.filterPermanents(permanent.getController(),MagicTargetFilter.TARGET_LEGENDARY_SAMURAI_YOU_CONTROL);
             if (targets.size() > 0) {
                 pt.add(1,2);
-            }        
+            }
         }
     }
 ]

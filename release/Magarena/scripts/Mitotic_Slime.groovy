@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "PN puts two 2/2 green Ooze creature tokens onto the battlefield. " + 
+                "PN puts two 2/2 green Ooze creature tokens onto the battlefield. " +
                 "They have \"When this creature dies, put two 1/1 green Ooze creature tokens onto the battlefield.\""
             );
         }

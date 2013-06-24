@@ -1,6 +1,6 @@
 name=Thornweald Archer
 url=http://magiccards.info/fut/en/154.html
-image=http://magiccards.info/scans/en/fut/154.jpg 
+image=http://magiccards.info/scans/en/fut/154.jpg
 value=4.221
 ability=reach,deathtouch
 rarity=C

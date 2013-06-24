@@ -27,7 +27,7 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
             return (otherPermanent!=permanent &&
                     otherPermanent.isFriend(permanent) &&
-                    otherPermanent.isCreature() && 
+                    otherPermanent.isCreature() &&
                     otherPermanent.getPower()>=5) ?
                 new MagicEvent(
                     permanent,

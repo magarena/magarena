@@ -6,7 +6,7 @@
                 permanent,
                 payedCost.getKicker(),
                 this,
-                payedCost.isKicked() ? 
+                payedCost.isKicked() ?
                     "PN draws three cards." :
                     "PN draws three cards. Then discards three cards."
             );
@@ -18,6 +18,6 @@
             if (event.getRefInt() == 0) {
                 game.addEvent(new MagicDiscardEvent(event.getPermanent(),player,3));
             }
-        }        
+        }
     }
 ]

@@ -9,7 +9,7 @@
                 "PN may\$ switch SN's power and toughness until end of turn."
             );
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
@@ -22,9 +22,9 @@
                             final MagicPermanent permanent,
                             final MagicPowerToughness pt) {
                         pt.set(pt.toughness(),pt.power());
-                    }   
+                    }
                 }));
             }
-        }        
+        }
     }
 ]

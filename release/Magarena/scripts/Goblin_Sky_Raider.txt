@@ -1,6 +1,6 @@
 name=Goblin Sky Raider
 url=http://magiccards.info/dpa/en/46.html
-image=http://magiccards.info/scans/en/dpa/46.jpg 
+image=http://magiccards.info/scans/en/dpa/46.jpg
 value=1.369
 ability=flying
 rarity=C

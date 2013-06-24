@@ -6,7 +6,7 @@ def action = {
 } as MagicEventAction
 
 def event = {
-    final MagicPermanent permanent, final MagicPermanent target -> 
+    final MagicPermanent permanent, final MagicPermanent target ->
     return new MagicEvent(
         permanent,
         new MagicSimpleMayChoice(

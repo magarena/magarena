@@ -9,7 +9,7 @@
             return game.isCombatPhase();
         }
     },
-    new MagicPermanentActivation( 
+    new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.MustAttack),
         "Attacks"
     ) {

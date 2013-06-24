@@ -36,7 +36,7 @@ def action = {
                 "Target opponent\$ exiles a card from his or her hand."
             );
         }
-    
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {

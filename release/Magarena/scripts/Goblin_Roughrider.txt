@@ -1,6 +1,6 @@
 name=Goblin Roughrider
 url=http://magiccards.info/wwk/en/82.html
-image=http://magiccards.info/scans/en/wwk/82.jpg 
+image=http://magiccards.info/scans/en/wwk/82.jpg
 value=2.981
 rarity=C
 type=Creature

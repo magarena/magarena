@@ -20,6 +20,6 @@
                 final MagicCard card = MagicCard.createTokenCard(TokenCardDefinitions.get("Wolf"),player);
                 game.doAction(new MagicPlayCardAction(card,player,MagicPlayCardAction.TAPPED_ATTACKING));
             }
-        }        
+        }
     }
 ]

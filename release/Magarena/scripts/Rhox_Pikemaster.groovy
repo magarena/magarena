@@ -1,6 +1,6 @@
 [
     new MagicStatic(
-        MagicLayer.Ability, 
+        MagicLayer.Ability,
         MagicTargetFilter.TARGET_SOLDIER_YOU_CONTROL) {
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {

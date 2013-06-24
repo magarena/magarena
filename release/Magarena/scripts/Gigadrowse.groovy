@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_PERMANENT, 
+                MagicTargetChoice.NEG_TARGET_PERMANENT,
                 MagicTapTargetPicker.Tap,
                 this,
                 "Tap target permanent\$."

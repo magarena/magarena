@@ -1,6 +1,6 @@
 name=Frost Ogre
 url=http://magiccards.info/bok/en/102.html
-image=http://magiccards.info/scans/en/bok/102.jpg 
+image=http://magiccards.info/scans/en/bok/102.jpg
 value=2.203
 rarity=C
 type=Creature

@@ -9,7 +9,7 @@
                 !itemOnStack.getCardDefinition().isSorcery()) {
                 return MagicEvent.NONE;
             }
-                    
+
             final Collection<MagicPermanent> targets = game.filterPermanents(
                     permanent.getController(),
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
@@ -32,7 +32,7 @@
                 ):
                 MagicEvent.NONE;
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicChangeTurnPTAction(event.getRefPermanent(),3,3));

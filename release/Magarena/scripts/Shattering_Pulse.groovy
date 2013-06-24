@@ -7,7 +7,7 @@
                 MagicTargetChoice.TARGET_ARTIFACT,
                 new MagicDestroyTargetPicker(false),
                 this,
-                "Destroy target artifact\$. " + 
+                "Destroy target artifact\$. " +
                 "If the buyback cost was payed, return SN to its owner's hand as it resolves."
             );
         }
@@ -19,7 +19,7 @@
                     game.doAction(new MagicDestroyAction(permanent));
                     if (event.isBuyback()) {
                         game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
-                    } 
+                    }
                 }
             });
         }

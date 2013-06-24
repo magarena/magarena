@@ -1,6 +1,6 @@
 [
     new MagicStatic(
-        MagicLayer.ModPT, 
+        MagicLayer.ModPT,
         MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL
     ) {
         @Override
@@ -31,7 +31,7 @@
                 ) :
                 MagicEvent.NONE;
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {

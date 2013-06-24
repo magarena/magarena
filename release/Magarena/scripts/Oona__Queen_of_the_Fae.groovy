@@ -1,9 +1,9 @@
 [
-    new MagicPermanentActivation( 
+    new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Token),
         "Token"
     ) {
-        
+
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [new MagicPayManaCostEvent(source, "{X}{U/B}")];

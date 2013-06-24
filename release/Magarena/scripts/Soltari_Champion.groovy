@@ -12,7 +12,7 @@
                     "Other creatures PN controls get +1/+1 until end of turn."
                 ):
                 MagicEvent.NONE;
-        }    
+        }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
@@ -24,6 +24,6 @@
                     game.doAction(new MagicChangeTurnPTAction(target,1,1));
                 }
             }
-        }        
+        }
     }
 ]

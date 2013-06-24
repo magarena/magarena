@@ -1,6 +1,6 @@
 [
     new MagicStatic(
-        MagicLayer.ModPT, 
+        MagicLayer.ModPT,
         MagicTargetFilter.TARGET_SOLDIER_YOU_CONTROL
     ) {
         @Override
@@ -13,7 +13,7 @@
         }
     },
     new MagicStatic(
-        MagicLayer.Ability, 
+        MagicLayer.Ability,
         MagicTargetFilter.TARGET_SOLDIER_YOU_CONTROL
     ) {
         @Override
@@ -41,6 +41,6 @@
                 TokenCardDefinitions.get("Soldier"),
                 3
             ));
-        }        
+        }
     }
 ]

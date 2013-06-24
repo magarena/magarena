@@ -18,7 +18,7 @@ def C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
     @Override
     public int getColorFlags(final MagicPermanent permanent,final int flags) {
         return MagicColor.White.getMask();
-    }        
+    }
 };
 
 [
@@ -38,7 +38,7 @@ def C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
             return new MagicEvent(
                 source,
                 this,
-                "Until end of turn, SN becomes a 1/5 white Soldier creature. " + 
+                "Until end of turn, SN becomes a 1/5 white Soldier creature. " +
                 "It's still a land."
             );
         }

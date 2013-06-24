@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicPlayTokenAction(
-                event.getPlayer(), 
+                event.getPlayer(),
                 TokenCardDefinitions.get("Beast3")
             ));
         }
@@ -35,7 +35,7 @@
                 power = Math.max(power,creature.getPower());
             }
             game.doAction(new MagicDrawAction(
-                event.getPlayer(), 
+                event.getPlayer(),
                 power
             ));
         }
@@ -53,7 +53,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amt = event.getPlayer().getNrOfPermanentsWithType(MagicType.Land);
             game.doAction(new MagicPlayTokensAction(
-                event.getPlayer(), 
+                event.getPlayer(),
                 TokenCardDefinitions.get("Wurm6G"),
                 amt
             ));

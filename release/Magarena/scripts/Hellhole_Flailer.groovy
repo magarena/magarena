@@ -11,7 +11,7 @@
                 new MagicSacrificeEvent(permanent)
             ];
         }
-        
+
         @Override
         public MagicEvent getPermanentEvent(
                 final MagicPermanent source,

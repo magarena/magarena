@@ -2,13 +2,13 @@
     new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
-            final MagicTargetFilter<MagicPermanent> targetFilter = 
+            final MagicTargetFilter<MagicPermanent> targetFilter =
                     new MagicOtherPermanentTargetFilter(
                     MagicTargetFilter.TARGET_FAERIE_YOU_CONTROL,permanent);
-            final MagicTargetChoice targetChoice = 
+            final MagicTargetChoice targetChoice =
                     new MagicTargetChoice(
                     targetFilter,false,MagicTargetHint.None,"another Faerie to exile");
-            final MagicChoice championChoice = 
+            final MagicChoice championChoice =
                     new MagicMayChoice(targetChoice);
             return new MagicEvent(
                 permanent,

@@ -32,7 +32,7 @@
         public void executeEvent(final MagicGame outerGame, final MagicEvent outerEvent) {
             outerGame.doAction(new MagicAddStaticAction(
                 new MagicStatic(
-                    MagicLayer.Ability, 
+                    MagicLayer.Ability,
                     MagicTargetFilter.TARGET_CREATURE,
                     MagicStatic.UntilEOT) {
                     @Override
@@ -59,7 +59,7 @@
                 new MagicWhenOtherSpellIsCastTrigger() {
                     @Override
                     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
-                        return cardOnStack.getController().getId() == you.getId() ? 
+                        return cardOnStack.getController().getId() == you.getId() ?
                             new MagicEvent(
                                 cardOnStack,
                                 MagicTargetChoice.NEG_TARGET_PERMANENT,

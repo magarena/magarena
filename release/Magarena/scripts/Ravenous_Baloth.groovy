@@ -3,7 +3,7 @@
         new MagicActivationHints(MagicTiming.Pump,true),
         "Life+4"
     ) {
-        
+
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [

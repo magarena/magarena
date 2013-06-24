@@ -15,7 +15,7 @@
                 TokenCardDefinitions.get("Zombie"),
                 2
             ));
-        }        
+        }
     },
     new MagicWhenAttacksTrigger() {
         @Override
@@ -35,6 +35,6 @@
                 TokenCardDefinitions.get("Zombie"),
                 2
             ));
-        }        
+        }
     }
 ]

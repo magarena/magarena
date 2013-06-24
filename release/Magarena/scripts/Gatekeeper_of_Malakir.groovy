@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(
             final MagicGame game,
             final MagicPermanent permanent,
-            final MagicPayedCost payedCost) {   
+            final MagicPayedCost payedCost) {
             return payedCost.isKicked() ?
                 new MagicEvent(
                     permanent,
@@ -14,7 +14,7 @@
                 ):
                 MagicEvent.NONE;
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game,new MagicPlayerAction() {

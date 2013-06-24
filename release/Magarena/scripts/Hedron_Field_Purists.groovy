@@ -18,7 +18,7 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             if (permanent.isFriend(damage.getTarget())) {
                 final int amountCounters = permanent.getCounters(MagicCounterType.Charge);
-                final int amountPrevented = 
+                final int amountPrevented =
                      amountCounters >= 5 ? 2 :
                      amountCounters >= 1 ? 1 : 0
                 // Prevention effect.

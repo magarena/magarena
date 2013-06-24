@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "Exile each creature you control. " + 
+                "Exile each creature you control. " +
                 "Return those cards to the battlefield under their owners' control at end of turn."
             );
         }

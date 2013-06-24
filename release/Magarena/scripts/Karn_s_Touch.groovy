@@ -31,7 +31,7 @@ def TP = new MagicTargetPicker<MagicPermanent>() {
                 MagicTargetChoice.POS_TARGET_NONCREATURE_ARTIFACT,
                 TP,
                 this,
-                "Target noncreature artifact\$ becomes an artifact creature with " + 
+                "Target noncreature artifact\$ becomes an artifact creature with " +
                 "power and toughness each equal to its converted mana cost until end of turn"
             );
         }

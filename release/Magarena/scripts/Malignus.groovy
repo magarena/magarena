@@ -20,7 +20,7 @@
             if (source == permanent) {
                 // Generates no event or action.
                 damage.setUnpreventable();
-            }            
+            }
             return MagicEvent.NONE;
         }
     }

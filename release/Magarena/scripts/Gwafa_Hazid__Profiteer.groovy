@@ -1,6 +1,6 @@
 [
     new MagicStatic(
-        MagicLayer.Ability, 
+        MagicLayer.Ability,
         MagicTargetFilter.TARGET_CREATURE
     ) {
         @Override
@@ -22,7 +22,7 @@
         new MagicActivationHints(MagicTiming.Tapping),
         "Bribe"
     ) {
-        
+
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [

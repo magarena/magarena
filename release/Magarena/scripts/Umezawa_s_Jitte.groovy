@@ -1,6 +1,6 @@
 [
     // equipped creature gets +2/+2 until end of turn
-    new MagicPermanentActivation( 
+    new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Pump),
         "+2/+2"
     ) {
@@ -55,9 +55,9 @@
             });
         }
     },
-    
+
     // you gain 2 life
-    new MagicPermanentActivation( 
+    new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Pump),
         "Life + 2"
     ) {
@@ -80,7 +80,7 @@
             game.doAction(new MagicChangeLifeAction(event.getPlayer(),2));
         }
     },
-        
+
     new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {

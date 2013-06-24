@@ -12,7 +12,7 @@ def T = new MagicWhenDamageIsDealtTrigger() {
             ):
             MagicEvent.NONE;
     }
-    
+
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         game.doAction(new MagicDestroyAction(event.getRefPermanent()));
@@ -45,7 +45,7 @@ def T = new MagicWhenDamageIsDealtTrigger() {
                 }
             };
             outerGame.doAction(new MagicAddTriggerAction(outerEvent.getPermanent(), cleanup));
-            
+
         }
     },
     new MagicPlaneswalkerActivation(-3) {
@@ -74,7 +74,7 @@ def T = new MagicWhenDamageIsDealtTrigger() {
             return new MagicEvent(
                 source,
                 this,
-                "Put three 1/1 black Assassin creature tokens onto the battlefield with " + 
+                "Put three 1/1 black Assassin creature tokens onto the battlefield with " +
                 "\"Whenever this creature deals combat damage to a player, that player loses the game.\""
             );
         }

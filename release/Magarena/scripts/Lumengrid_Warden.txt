@@ -1,6 +1,6 @@
 name=Lumengrid Warden
 url=http://magiccards.info/10e/en/89.html
-image=http://magiccards.info/scans/en/10e/89.jpg 
+image=http://magiccards.info/scans/en/10e/89.jpg
 value=1.958
 rarity=C
 type=Creature

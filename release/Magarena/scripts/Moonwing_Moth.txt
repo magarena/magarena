@@ -1,11 +1,11 @@
 name=Moonwing Moth
 url=http://magiccards.info/sok/en/20.html
-image=http://magiccards.info/scans/en/sok/20.jpg 
+image=http://magiccards.info/scans/en/sok/20.jpg
 value=2.059
 rarity=C
 type=Creature
 subtype=Insect
 pt=2/1
 cost={1}{W}{W}
-ability=flying,pump {W} +0/+1 
+ability=flying,pump {W} +0/+1
 timing=main

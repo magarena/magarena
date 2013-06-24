@@ -25,7 +25,7 @@ def C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
     @Override
     public int getColorFlags(final MagicPermanent permanent,final int flags) {
         return MagicColor.White.getMask()|MagicColor.Blue.getMask();
-    }        
+    }
 };
 [
     new MagicPermanentActivation(
@@ -46,7 +46,7 @@ def C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
             return new MagicEvent(
                 source,
                 this,
-                "Until end of turn, SN becomes a 4/4 white and blue Elemental creature with flying and vigilance. " + 
+                "Until end of turn, SN becomes a 4/4 white and blue Elemental creature with flying and vigilance. " +
                 "It's still a land."
             );
         }

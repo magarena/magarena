@@ -6,8 +6,8 @@
                 cardOnStack,
                 MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_SPELL,
                 this,
-                "Copy target instant or sorcery spell\$. " + 
-                "PN may choose new targets for the copy. " + 
+                "Copy target instant or sorcery spell\$. " +
+                "PN may choose new targets for the copy. " +
                 "If the buyback cost was payed, return SN to its owner's hand as it resolves."
             );
         }
@@ -19,7 +19,7 @@
                     game.doAction(new MagicCopyCardOnStackAction(event.getPlayer(),targetSpell));
                     if (event.isBuyback()) {
                         game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
-                    } 
+                    }
                 }
             });
         }

@@ -5,7 +5,7 @@
             final MagicPermanentFilterImpl filter = new MagicOtherPermanentTargetFilter(MagicTargetFilter.TARGET_RED_CREATURE, source);
             if (source.getController().controlsPermanent(filter)) {
                 pt.add(1,1);
-            }        
+            }
         }
     }
 ]

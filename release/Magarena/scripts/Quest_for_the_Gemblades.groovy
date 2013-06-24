@@ -34,11 +34,11 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicSource source=damage.getSource();
             final MagicTarget target=damage.getTarget();
-            return (damage.isCombat() && 
-                    permanent.isFriend(source) && 
-                    source.isPermanent() && 
+            return (damage.isCombat() &&
+                    permanent.isFriend(source) &&
+                    source.isPermanent() &&
                     target.isPermanent() &&
-                    (source).isCreature() && 
+                    (source).isCreature() &&
                     target.isCreature()) ?
                 new MagicEvent(
                     permanent,

@@ -26,7 +26,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
             return (otherPermanent != permanent &&
-                    otherPermanent.isArtifact() && 
+                    otherPermanent.isArtifact() &&
                     otherPermanent.isFriend(permanent)) ?
                 new MagicEvent(
                     permanent,
@@ -41,13 +41,13 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
                 ):
                 MagicEvent.NONE;
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT,AB,ST));
-            }            
-        }        
+            }
+        }
     },
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Animate,false,1),
@@ -66,7 +66,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                this, 
+                this,
                 "SN becomes a 2/2 Bird artifact " +
                 "creature with flying until end of turn."
             );

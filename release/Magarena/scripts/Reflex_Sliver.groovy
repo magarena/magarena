@@ -7,4 +7,4 @@
             flags.add(MagicAbility.Haste);
         }
     }
-]    
+]

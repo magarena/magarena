@@ -50,9 +50,9 @@
                     "Destroy target creature\$ your opponent controls, " +
                     "then put a +1/+1 counter on SN."
                 ):
-                MagicEvent.NONE;           
+                MagicEvent.NONE;
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {

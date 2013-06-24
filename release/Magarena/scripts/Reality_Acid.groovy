@@ -3,7 +3,7 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent left) {
             final MagicPermanent enchantedPermanent = permanent.getEnchantedCreature();
-            return (permanent == left && enchantedPermanent != MagicPermanent.NONE) ? 
+            return (permanent == left && enchantedPermanent != MagicPermanent.NONE) ?
                 new MagicEvent(
                     permanent,
                     enchantedPermanent,

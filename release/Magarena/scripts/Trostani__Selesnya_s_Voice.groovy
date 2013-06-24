@@ -3,7 +3,7 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
             return (permanent != otherPermanent &&
-                    otherPermanent.isCreature() && 
+                    otherPermanent.isCreature() &&
                     otherPermanent.isFriend(permanent)) ?
                 new MagicEvent(
                     permanent,
@@ -13,7 +13,7 @@
                 ):
                 MagicEvent.NONE;
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             // get toughness here so counters on the creature are considered

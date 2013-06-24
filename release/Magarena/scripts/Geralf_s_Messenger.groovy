@@ -16,6 +16,6 @@
                     game.doAction(new MagicChangeLifeAction(player,-2));
                 }
             });
-        }        
+        }
     }
 ]

@@ -7,7 +7,7 @@
                 MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                 new MagicDamageTargetPicker(3),
                 this,
-                "SN deals 3 damage to target creature or player\$. " + 
+                "SN deals 3 damage to target creature or player\$. " +
                 "SN deals 5 damage to that creature or player instead if a creature died this turn."
             );
         }

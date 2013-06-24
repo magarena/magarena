@@ -1,6 +1,6 @@
 name=Jagwasp Swarm
 url=http://magiccards.info/wwk/en/58.html
-image=http://magiccards.info/scans/en/wwk/58.jpg 
+image=http://magiccards.info/scans/en/wwk/58.jpg
 value=2.330
 ability=flying
 rarity=C

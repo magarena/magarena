@@ -1,6 +1,6 @@
 name=Jwari Scuttler
 url=http://magiccards.info/roe/en/73.html
-image=http://magiccards.info/scans/en/roe/73.jpg 
+image=http://magiccards.info/scans/en/roe/73.jpg
 value=2.034
 rarity=C
 type=Creature

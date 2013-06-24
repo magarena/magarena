@@ -14,7 +14,7 @@
                 ):
                 MagicEvent.NONE;
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent goblin = event.getRefPermanent();
@@ -31,7 +31,7 @@
     },
     new MagicPermanentActivation(
         [MagicCondition.TWO_MOUNTAINS_CONDITION],
-        new MagicActivationHints(MagicTiming.Token, false), 
+        new MagicActivationHints(MagicTiming.Token, false),
         "Token"
     ) {
 
@@ -42,7 +42,7 @@
                 new MagicSacrificePermanentEvent(source, MagicTargetChoice.SACRIFICE_MOUNTAIN)
             ];
         }
-    
+
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
@@ -51,11 +51,11 @@
                 "PN puts two 1/1 red Goblin creature tokens into play."
             );
         }
-    
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicPlayTokensAction(
-                event.getPlayer(), 
+                event.getPlayer(),
                 TokenCardDefinitions.get("Goblin1"),
                 2
             ));

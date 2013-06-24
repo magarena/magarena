@@ -1,6 +1,6 @@
 [
     new MagicStatic(
-        MagicLayer.Ability, 
+        MagicLayer.Ability,
         MagicTargetFilter.TARGET_GOLEM_YOU_CONTROL
     ) {
         @Override

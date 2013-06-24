@@ -8,7 +8,7 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
         pt.set(charge,charge);
     }
 };
-    
+
 def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
     @Override
     public void modSubTypeFlags(
@@ -40,7 +40,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
             return new MagicEvent(
                 source,
                 this,
-                "Until end of turn, SN becomes a Construct artifact creature with " + 
+                "Until end of turn, SN becomes a Construct artifact creature with " +
                 "\"This creature's power and toughness are each equal to the number of charge counters on it.\""
             );
         }

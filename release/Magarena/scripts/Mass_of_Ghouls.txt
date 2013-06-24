@@ -1,6 +1,6 @@
 name=Mass of Ghouls
 url=http://magiccards.info/10e/en/156.html
-image=http://magiccards.info/scans/en/10e/156.jpg 
+image=http://magiccards.info/scans/en/10e/156.jpg
 value=1.656
 rarity=C
 type=Creature

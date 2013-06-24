@@ -14,7 +14,7 @@
         }
     },
     new MagicStatic(
-        MagicLayer.ModPT, 
+        MagicLayer.ModPT,
         MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL
     ) {
         @Override
@@ -25,7 +25,7 @@
                 amount = 2;
             } else if (charges >= 2) {
                 amount = 1;
-            } 
+            }
             pt.add(amount, amount);
         }
 

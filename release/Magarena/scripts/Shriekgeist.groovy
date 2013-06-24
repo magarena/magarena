@@ -6,8 +6,8 @@
                 final MagicPermanent permanent,
                 final MagicDamage damage) {
             final MagicTarget target = damage.getTarget();
-            return (permanent == damage.getSource() && 
-                    target.isPlayer() && 
+            return (permanent == damage.getSource() &&
+                    target.isPlayer() &&
                     damage.isCombat()) ?
                 new MagicEvent(
                     permanent,

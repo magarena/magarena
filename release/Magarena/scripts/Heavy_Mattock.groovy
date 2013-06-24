@@ -1,6 +1,6 @@
 [
     new MagicStatic(
-        MagicLayer.ModPT, 
+        MagicLayer.ModPT,
         MagicTargetFilter.TARGET_CREATURE) {
         @Override
         public void modPowerToughness(
@@ -13,7 +13,7 @@
         public boolean condition(
                 final MagicGame game,
                 final MagicPermanent source,
-                final MagicPermanent target) {    
+                final MagicPermanent target) {
             return source.getEquippedCreature().hasSubType(MagicSubType.Human) &&
                    target == source.getEquippedCreature();
         }

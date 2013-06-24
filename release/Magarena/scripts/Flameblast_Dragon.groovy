@@ -8,17 +8,17 @@
                     new MagicMayChoice(
                         new MagicPayManaCostChoice(MagicManaCost.create("{X}{R}")),
                         MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER
-                    ), 
+                    ),
                     new MagicDamageTargetPicker(
                         permanent.getController().getMaximumX(game,MagicManaCost.create("{X}{R}"))
                     ),
                     this,
-                    "You may pay\$ {X}{R}\$. If you do, SN " + 
+                    "You may pay\$ {X}{R}\$. If you do, SN " +
                     "deals X damage to target creature or player\$."
                 ):
                 MagicEvent.NONE;
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {

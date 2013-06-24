@@ -3,7 +3,7 @@
         new MagicActivationHints(MagicTiming.Draw,true),
         "Draw"
     ) {
-        
+
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [new MagicPayManaCostEvent(source,"{3}{U}")];
@@ -17,7 +17,7 @@
                 "PN draws a card."
             );
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicDrawAction(event.getPlayer()));

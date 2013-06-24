@@ -12,12 +12,12 @@
                         MagicSimpleMayChoice.DEFAULT_YES
                     ),
                     this,
-                    "PN may\$ have Ally creatures he or she controls " + 
+                    "PN may\$ have Ally creatures he or she controls " +
                     "gain flying until end of turn."
                 ) :
                 MagicEvent.NONE;
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
@@ -26,7 +26,7 @@
                 for (final MagicPermanent creature : targets) {
                     game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Flying));
                 }
-            }            
-        }        
+            }
+        }
     }
 ]

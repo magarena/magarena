@@ -1,6 +1,6 @@
 name=Arachnoid
 url=http://magiccards.info/5dn/en/102.html
-image=http://magiccards.info/scans/en/5dn/102.jpg 
+image=http://magiccards.info/scans/en/5dn/102.jpg
 value=1.295
 ability=reach
 rarity=U

@@ -27,12 +27,12 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
     new MagicWhenOtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
-            return (permanent.isFriend(cardOnStack) && 
+            return (permanent.isFriend(cardOnStack) &&
                     cardOnStack.hasType(MagicType.Creature)) ?
                 new MagicEvent(
                     permanent,
                     this,
-                    "SN becomes a 4/4 Illusion creature with flying until end of turn. " + 
+                    "SN becomes a 4/4 Illusion creature with flying until end of turn. " +
                     "It's still an enchantment."
                 ):
                 MagicEvent.NONE;

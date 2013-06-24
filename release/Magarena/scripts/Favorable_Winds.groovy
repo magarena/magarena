@@ -1,6 +1,6 @@
 [
     new MagicStatic(
-        MagicLayer.ModPT, 
+        MagicLayer.ModPT,
         MagicTargetFilter.TARGET_CREATURE_WITH_FLYING_YOU_CONTROL) {
         @Override
         public void modPowerToughness(

@@ -3,8 +3,8 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final int amount=damage.getAmount();
-            return (damage.getSource() == permanent && 
-                    damage.getTarget().isPlayer() && 
+            return (damage.getSource() == permanent &&
+                    damage.getTarget().isPlayer() &&
                     damage.isCombat()) ?
                 new MagicEvent(
                     permanent,
@@ -16,7 +16,7 @@
                 ):
                 MagicEvent.NONE;
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {

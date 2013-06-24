@@ -10,7 +10,7 @@
                 "PN may\$ have SN deal 1 damage to target player\$"
             );
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
@@ -21,6 +21,6 @@
                     }
                 });
             }
-        }        
+        }
     }
 ]

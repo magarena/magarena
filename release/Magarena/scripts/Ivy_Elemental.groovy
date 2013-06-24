@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(
             final MagicGame game,
             final MagicPermanent permanent,
-            final MagicPayedCost payedCost) {   
+            final MagicPayedCost payedCost) {
             game.doAction(new MagicChangeCountersAction(
                 permanent,
                 MagicCounterType.PlusOne,

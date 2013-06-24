@@ -1,6 +1,6 @@
-[ 
+[
     new MagicStatic(
-        MagicLayer.ModPT, 
+        MagicLayer.ModPT,
         MagicTargetFilter.TARGET_CREATURE
     ) {
         @Override
@@ -24,7 +24,7 @@
                 this,
                 "PN puts a strife counter on SN."
             );
-        }    
+        }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,1,true));

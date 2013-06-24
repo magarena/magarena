@@ -1,6 +1,6 @@
 [
     new MagicStatic(
-        MagicLayer.Ability, 
+        MagicLayer.Ability,
         MagicTargetFilter.TARGET_ELF) {
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
@@ -12,7 +12,7 @@
         }
     },
     new MagicStatic(
-        MagicLayer.ModPT, 
+        MagicLayer.ModPT,
         MagicTargetFilter.TARGET_ELF) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {

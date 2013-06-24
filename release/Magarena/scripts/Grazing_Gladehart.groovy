@@ -17,6 +17,6 @@
             if (event.isYes()) {
                 game.doAction(new MagicChangeLifeAction(event.getPlayer(),2));
             }
-        }        
+        }
     }
 ]

@@ -1,6 +1,6 @@
 name=Tundra Wolves
 url=http://magiccards.info/10e/en/54.html
-image=http://magiccards.info/scans/en/10e/54.jpg 
+image=http://magiccards.info/scans/en/10e/54.jpg
 value=3.246
 ability=first strike
 rarity=C

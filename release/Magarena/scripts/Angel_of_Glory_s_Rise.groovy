@@ -22,7 +22,7 @@
                     target,
                     MagicLocationType.Exile
                 ));
-            }        
+            }
             final List<MagicCard> humans =
                     game.filterCards(player,MagicTargetFilter.TARGET_HUMAN_CARD_FROM_GRAVEYARD);
             for (final MagicCard target : humans) {

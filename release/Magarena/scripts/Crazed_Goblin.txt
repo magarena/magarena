@@ -1,6 +1,6 @@
 name=Crazed Goblin
 url=http://magiccards.info/ds/en/56.html
-image=http://magiccards.info/scans/en/ds/56.jpg 
+image=http://magiccards.info/scans/en/ds/56.jpg
 value=0.896
 ability=attacks each turn if able
 rarity=C

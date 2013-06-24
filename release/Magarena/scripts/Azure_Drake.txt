@@ -1,6 +1,6 @@
 name=Azure Drake
 url=http://magiccards.info/m11/en/46.html
-image=http://magiccards.info/scans/en/m11/46.jpg 
+image=http://magiccards.info/scans/en/m11/46.jpg
 value=2.711
 ability=flying
 rarity=U

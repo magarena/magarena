@@ -23,7 +23,7 @@
                         MagicTargetFilter.Operator.LESS_THAN_OR_EQUAL,
                         cmc
                     );
-                final MagicTargetChoice targetChoice = 
+                final MagicTargetChoice targetChoice =
                     new MagicTargetChoice(
                         targetFilter,false,MagicTargetHint.None,
                         "a Spirit card from your graveyard"

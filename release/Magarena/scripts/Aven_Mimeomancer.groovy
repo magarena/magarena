@@ -14,7 +14,7 @@ def PT = new MagicStatic(MagicLayer.SetPT) {
         return target.getCounters(MagicCounterType.Feather) > 0;
     }
 };
-    
+
 def AB = new MagicStatic(MagicLayer.Ability) {
     @Override
     public void modAbilityFlags(

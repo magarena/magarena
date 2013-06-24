@@ -17,7 +17,7 @@
                 "Draw a card, then put a +1/+1 counter on SN."
             );
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicDrawAction(event.getPlayer()));

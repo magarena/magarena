@@ -7,7 +7,7 @@
                 MagicTargetChoice.NEG_TARGET_CREATURE,
                 new MagicNoCombatTargetPicker(true,false,false),
                 this,
-                "Target creature\$ can't attack this turn. " + 
+                "Target creature\$ can't attack this turn. " +
                 "If the buyback cost was payed, return SN to its owner's hand as it resolves."
             );
         }
@@ -19,7 +19,7 @@
                     game.doAction(MagicChangeStateAction.Set(creature,MagicPermanentState.CannotAttack));
                     if (event.isBuyback()) {
                         game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
-                    } 
+                    }
                 }
             });
         }

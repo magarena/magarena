@@ -1,6 +1,6 @@
 name=Giant Octopus
 url=http://magiccards.info/9eb/en/4.html
-image=http://magiccards.info/scans/en/9eb/4.jpg 
+image=http://magiccards.info/scans/en/9eb/4.jpg
 value=2.120
 rarity=C
 type=Creature

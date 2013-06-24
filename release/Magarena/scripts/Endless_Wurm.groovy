@@ -18,8 +18,8 @@
             if (player.controlsPermanent(MagicType.Enchantment)) {
                 game.addEvent(new MagicSacrificePermanentEvent(permanent,player,MagicTargetChoice.SACRIFICE_ENCHANTMENT));
             } else {
-                game.doAction(new MagicSacrificeAction(permanent));                
-            }            
+                game.doAction(new MagicSacrificeAction(permanent));
+            }
         }
     }
 ]

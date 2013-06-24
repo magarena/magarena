@@ -4,7 +4,7 @@ def Zombie = new MagicStatic(MagicLayer.Type) {
          flags.add(MagicSubType.Zombie);
      }
 };
-    
+
 def Black = new MagicStatic(MagicLayer.Color) {
      @Override
      public int getColorFlags(final MagicPermanent permanent,final int flags) {
@@ -32,7 +32,7 @@ def Black = new MagicStatic(MagicLayer.Color) {
             event.processTargetCard(game, {
                 final MagicCard targetCard ->
                 final MagicPlayer player = event.getPlayer();
-                
+
                 final MagicPlayCardAction action = new MagicPlayCardAction(targetCard,player,MagicPlayCardAction.NONE);
                 game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
                 game.doAction(action);

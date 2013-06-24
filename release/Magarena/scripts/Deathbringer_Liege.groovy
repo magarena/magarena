@@ -1,6 +1,6 @@
 [
     new MagicStatic(
-        MagicLayer.ModPT, 
+        MagicLayer.ModPT,
         MagicTargetFilter.TARGET_BLACK_CREATURE_YOU_CONTROL) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
@@ -12,7 +12,7 @@
         }
     },
     new MagicStatic(
-        MagicLayer.ModPT, 
+        MagicLayer.ModPT,
         MagicTargetFilter.TARGET_WHITE_CREATURE_YOU_CONTROL) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
@@ -26,7 +26,7 @@
     new MagicWhenOtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
-            return (permanent.isFriend(cardOnStack) && 
+            return (permanent.isFriend(cardOnStack) &&
                     cardOnStack.hasColor(MagicColor.Black)) ?
                 new MagicEvent(
                     permanent,
@@ -39,13 +39,13 @@
                 ):
                 MagicEvent.NONE;
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
-                        if (creature.isTapped()) {                    
+                        if (creature.isTapped()) {
                             game.doAction(new MagicDestroyAction(creature));
                         }
                     }
@@ -56,7 +56,7 @@
     new MagicWhenOtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
-            return (permanent.isFriend(cardOnStack) && 
+            return (permanent.isFriend(cardOnStack) &&
                     cardOnStack.hasColor(MagicColor.White)) ?
                 new MagicEvent(
                     permanent,

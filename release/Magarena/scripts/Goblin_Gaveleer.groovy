@@ -5,6 +5,6 @@
             if (permanent.isEquipped()) {
                 pt.add(2 * permanent.getEquipmentPermanents().size(),0);
             }
-        }        
+        }
     }
 ]

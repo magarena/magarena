@@ -7,7 +7,7 @@
                     permanent,
                     new MagicMayChoice(),
                     creature,
-                    this, 
+                    this,
                     "PN may\$ untap RN and remove it from combat."
                 ) :
                 MagicEvent.NONE;

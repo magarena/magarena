@@ -22,10 +22,10 @@
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicDamage damage) {
-            if (!damage.isUnpreventable() && 
-                damage.getAmount() > 0 && 
+            if (!damage.isUnpreventable() &&
+                damage.getAmount() > 0 &&
                 damage.getTarget() == permanent) {
-                
+
                 // Prevention effect.
                 damage.setAmount(0);
 
@@ -36,7 +36,7 @@
                 );
             }
             return MagicEvent.NONE;
-        }    
+        }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicChangeCountersAction(

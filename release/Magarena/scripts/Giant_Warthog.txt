@@ -1,6 +1,6 @@
 name=Giant Warthog
 url=http://magiccards.info/ju/en/118.html
-image=http://magiccards.info/scans/en/ju/118.jpg 
+image=http://magiccards.info/scans/en/ju/118.jpg
 value=3.271
 ability=trample
 rarity=C

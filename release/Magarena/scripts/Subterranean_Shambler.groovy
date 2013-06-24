@@ -1,5 +1,5 @@
 def action = {
-    final MagicGame game, final MagicEvent event -> 
+    final MagicGame game, final MagicEvent event ->
     final MagicSource source = event.getSource();
     final Collection<MagicPermanent> creatures =
         game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING);

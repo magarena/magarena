@@ -7,7 +7,7 @@ def action = {
                 game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
             }
         });
-    }            
+    }
 } as MagicEventAction
 
 def event = {

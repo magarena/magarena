@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Knight
 cost={2}{W}
 pt=2/2
-ability=flanking,gains {W} vigilance 
+ability=flanking,gains {W} vigilance
 timing=main

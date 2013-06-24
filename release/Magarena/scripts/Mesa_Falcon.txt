@@ -1,6 +1,6 @@
 name=Mesa Falcon
 url=http://magiccards.info/6e/en/31.html
-image=http://magiccards.info/scans/en/6e/31.jpg 
+image=http://magiccards.info/scans/en/6e/31.jpg
 value=2.448
 rarity=C
 type=Creature

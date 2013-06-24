@@ -47,7 +47,7 @@ def C = new MagicStatic(
         return MagicColor.White.getMask();
     }
 };
-[    
+[
     new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(
@@ -69,7 +69,7 @@ def C = new MagicStatic(
                 ):
                 MagicEvent.NONE;
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
@@ -80,7 +80,7 @@ def C = new MagicStatic(
                     ST,
                     C
                 ));
-            }            
-        }        
+            }
+        }
     }
 ]

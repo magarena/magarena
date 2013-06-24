@@ -8,7 +8,7 @@
                     MagicTargetChoice.SACRIFICE_CREATURE,
                     MagicSacrificeTargetPicker.create(),
                     this,
-                    "Sacrifice a creature. " + 
+                    "Sacrifice a creature. " +
                     "PN gains life equal to that creature's toughness."
                 ):
                 MagicEvent.NONE;

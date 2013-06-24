@@ -4,7 +4,7 @@ def Spirit = new MagicStatic(MagicLayer.Type) {
         flags.add(MagicSubType.Spirit);
     }
 };
-[   
+[
     new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(
@@ -24,7 +24,7 @@ def Spirit = new MagicStatic(MagicLayer.Type) {
                 "Exile it at the beginning of the next end step."
             );
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {

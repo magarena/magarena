@@ -14,7 +14,7 @@
                 "You may gain RN life."
             );
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {

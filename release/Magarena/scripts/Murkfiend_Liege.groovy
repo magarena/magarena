@@ -1,6 +1,6 @@
 [
     new MagicStatic(
-        MagicLayer.ModPT, 
+        MagicLayer.ModPT,
         MagicTargetFilter.TARGET_GREEN_CREATURE_YOU_CONTROL
     ) {
         @Override
@@ -13,7 +13,7 @@
         }
     },
     new MagicStatic(
-        MagicLayer.ModPT, 
+        MagicLayer.ModPT,
         MagicTargetFilter.TARGET_BLUE_CREATURE_YOU_CONTROL
     ) {
         @Override
@@ -32,8 +32,8 @@
                 final Collection<MagicPermanent> targets=
                     game.filterPermanents(permanent.getController(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
                 for (final MagicPermanent creature : targets) {
-                    if (creature.isTapped() && 
-                        (creature.hasColor(MagicColor.Blue) || 
+                    if (creature.isTapped() &&
+                        (creature.hasColor(MagicColor.Blue) ||
                          creature.hasColor(MagicColor.Green))) {
                         game.doAction(new MagicUntapAction(creature));
                     }

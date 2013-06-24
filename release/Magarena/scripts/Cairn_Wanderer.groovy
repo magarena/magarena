@@ -6,7 +6,7 @@ def CAIRN_WANDERER_FLAGS = MagicAbility.of(
     MagicAbility.Deathtouch,
     MagicAbility.Haste,
     MagicAbility.Lifelink,
-    MagicAbility.Reach,        
+    MagicAbility.Reach,
     MagicAbility.Trample,
     MagicAbility.Shroud,
     MagicAbility.Vigilance

@@ -7,7 +7,7 @@
                 MagicTargetChoice.POS_TARGET_CREATURE,
                 MagicFirstStrikeTargetPicker.create(),
                 this,
-                "Target creature\$ gets +2/+2 and " + 
+                "Target creature\$ gets +2/+2 and " +
                 "gains first strike until end of turn."
             );
         }

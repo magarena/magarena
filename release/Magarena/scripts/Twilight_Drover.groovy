@@ -17,10 +17,10 @@
                 MagicCounterType.PlusOne,
                 1,
                 true
-            ));            
-        }    
+            ));
+        }
     },
-    new MagicPermanentActivation( 
+    new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Token),
         "Token"
     ) {

@@ -3,7 +3,7 @@
         new MagicActivationHints(MagicTiming.Pump,false),
         "Mill"
     ) {
-        
+
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [new MagicPayManaCostEvent(source,"{3}")];

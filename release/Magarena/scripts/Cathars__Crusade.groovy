@@ -5,7 +5,7 @@
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPermanent otherPermanent) {
-            return (otherPermanent.isCreature() && 
+            return (otherPermanent.isCreature() &&
                     otherPermanent.isFriend(permanent)) ?
                 new MagicEvent(
                     permanent,
@@ -15,7 +15,7 @@
                 ) :
                 MagicEvent.NONE;
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets = game.filterPermanents(

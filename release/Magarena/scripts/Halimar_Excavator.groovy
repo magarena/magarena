@@ -14,7 +14,7 @@
                 ) :
                 MagicEvent.NONE;
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game,new MagicPlayerAction() {
@@ -25,7 +25,7 @@
                         game.doAction(new MagicMillLibraryAction(targetPlayer,amount));
                     }
                 }
-            });        
-        }        
+            });
+        }
     }
 ]

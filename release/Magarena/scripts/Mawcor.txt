@@ -1,6 +1,6 @@
 name=Mawcor
 url=http://magiccards.info/7e/en/87.html
-image=http://magiccards.info/scans/en/7e/87.jpg 
+image=http://magiccards.info/scans/en/7e/87.jpg
 value=2.913
 rarity=R
 type=Creature

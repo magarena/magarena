@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "PN draws a card. " + 
+                "PN draws a card. " +
                 "If the buyback cost was payed, return SN to its owner's hand as it resolves."
             );
         }
@@ -14,7 +14,7 @@
             game.doAction(new MagicDrawAction(event.getPlayer()));
             if (event.isBuyback()) {
                 game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
-            } 
+            }
         }
     }
 ]

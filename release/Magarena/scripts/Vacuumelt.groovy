@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_CREATURE, 
+                MagicTargetChoice.TARGET_CREATURE,
                 MagicBounceTargetPicker.getInstance(),
                 this,
                 "Return target creature\$ to its owner's hand."

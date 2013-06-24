@@ -13,14 +13,14 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets=
                 game.filterPermanents(
-                    event.getPlayer(), 
+                    event.getPlayer(),
                     new MagicTargetFilter.MagicCMCPermanentFilter(
-                        MagicTargetFilter.TARGET_PERMANENT, 
-                        MagicTargetFilter.Operator.EQUAL, 
+                        MagicTargetFilter.TARGET_PERMANENT,
+                        MagicTargetFilter.Operator.EQUAL,
                         event.getRefInt()
                     )
                 );
             game.doAction(new MagicDestroyAction(targets));
-        }        
+        }
     }
 ]

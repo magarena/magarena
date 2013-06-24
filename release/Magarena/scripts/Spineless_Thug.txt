@@ -1,6 +1,6 @@
 name=Spineless Thug
 url=http://magiccards.info/10e/en/180.html
-image=http://magiccards.info/scans/en/10e/180.jpg 
+image=http://magiccards.info/scans/en/10e/180.jpg
 value=2.000
 ability=can't block
 rarity=C

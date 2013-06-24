@@ -1,6 +1,6 @@
 name=Viashino Spearhunter
 url=http://magiccards.info/m10/en/161.html
-image=http://magiccards.info/scans/en/m10/161.jpg 
+image=http://magiccards.info/scans/en/m10/161.jpg
 value=1.947
 ability=first strike
 rarity=C

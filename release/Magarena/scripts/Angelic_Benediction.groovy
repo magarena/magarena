@@ -3,7 +3,7 @@
     new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            return (creature.isFriend(permanent) && 
+            return (creature.isFriend(permanent) &&
                     creature.getController().getNrOfAttackers() == 1) ?
                 new MagicEvent(
                     permanent,

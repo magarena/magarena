@@ -1,6 +1,6 @@
 [
     new MagicStatic(
-        MagicLayer.ModPT, 
+        MagicLayer.ModPT,
         MagicTargetFilter.TARGET_CREATURE) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
@@ -9,7 +9,7 @@
             pt.add(amount,amount);
         }
         @Override
-        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {    
+        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
             return target == source.getEnchantedCreature();
         }
     }

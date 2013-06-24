@@ -12,7 +12,7 @@
                     "Exile target creature\$. Return that card to the " +
                     "battlefield under its owner's control at end of turn."
                 ) :
-                MagicEvent.NONE;         
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

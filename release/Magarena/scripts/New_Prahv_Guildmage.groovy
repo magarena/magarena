@@ -56,6 +56,6 @@
                     game.doAction(new MagicDetainAction(event.getPlayer(), creature));
                 }
             });
-        }    
+        }
     }
 ]

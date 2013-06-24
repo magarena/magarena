@@ -21,7 +21,7 @@
                 TokenCardDefinitions.get("Plant"),
                 amount
             ));
-        }        
+        }
     },
     new MagicLandfallTrigger() {
         @Override
@@ -53,6 +53,6 @@
                     ));
                 }
             }
-        }        
+        }
     }
 ]

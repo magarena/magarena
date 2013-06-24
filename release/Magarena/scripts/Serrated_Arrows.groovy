@@ -17,7 +17,7 @@
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPlayer upkeepPlayer) {
-            return (permanent.isController(upkeepPlayer) && 
+            return (permanent.isController(upkeepPlayer) &&
                     permanent.getCounters(MagicCounterType.Charge) == 0) ?
                 new MagicEvent(
                     permanent,

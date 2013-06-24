@@ -1,6 +1,6 @@
 name=Leaf Dancer
 url=http://magiccards.info/od/en/249.html
-image=http://magiccards.info/scans/en/od/249.jpg 
+image=http://magiccards.info/scans/en/od/249.jpg
 value=2.396
 ability=forestwalk
 rarity=C

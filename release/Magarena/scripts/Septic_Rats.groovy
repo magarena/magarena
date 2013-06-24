@@ -2,7 +2,7 @@
     new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
-            return (permanent==attacker && 
+            return (permanent==attacker &&
                     permanent.getOpponent().getPoison()>0) ?
                 new MagicEvent(
                     permanent,

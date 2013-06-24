@@ -1,6 +1,6 @@
 name=Anurid Murkdiver
 url=http://magiccards.info/on/en/124.html
-image=http://magiccards.info/scans/en/on/124.jpg 
+image=http://magiccards.info/scans/en/on/124.jpg
 value=1.710
 ability=swampwalk
 rarity=C

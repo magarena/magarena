@@ -6,7 +6,7 @@
                 new MagicEvent(
                     permanent,
                     this,
-                    "PN puts a legendary 5/5 colorless Goblin Golem artifact creature token " + 
+                    "PN puts a legendary 5/5 colorless Goblin Golem artifact creature token " +
                     "named Tuktuk the Returned onto the battlefield."
                 ):
                 MagicEvent.NONE;

@@ -1,6 +1,6 @@
 name=Boros Recruit
 url=http://magiccards.info/rav/en/243.html
-image=http://magiccards.info/scans/en/rav/243.jpg 
+image=http://magiccards.info/scans/en/rav/243.jpg
 value=3.989
 ability=first strike
 rarity=C

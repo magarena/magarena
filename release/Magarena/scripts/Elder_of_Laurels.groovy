@@ -14,7 +14,7 @@
                 MagicTargetChoice.POS_TARGET_CREATURE,
                 MagicPumpTargetPicker.create(),
                 this,
-                "Target creature gets +X/+X until end of turn, " + 
+                "Target creature gets +X/+X until end of turn, " +
                 "where X is the number of creatures PN controls."
             );
         }

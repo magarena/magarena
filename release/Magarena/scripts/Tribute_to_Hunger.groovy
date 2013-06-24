@@ -17,7 +17,7 @@ def action = {
                 cardOnStack,
                 MagicTargetChoice.TARGET_OPPONENT,
                 this,
-                "Target opponent\$ sacrifices a creature. " + 
+                "Target opponent\$ sacrifices a creature. " +
                 "PN gains life equal to that creature's toughness."
             );
         }

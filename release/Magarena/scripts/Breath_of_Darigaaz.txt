@@ -7,5 +7,5 @@ rarity=U
 type=Sorcery
 cost={1}{R}
 timing=removal
-ability=kicker {2} 
+ability=kicker {2}
 requires_groovy_code

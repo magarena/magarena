@@ -38,8 +38,8 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                this, 
-                "SN becomes a 1/1 Blinkmoth artifact creature with flying and infect until end of turn. " + 
+                this,
+                "SN becomes a 1/1 Blinkmoth artifact creature with flying and infect until end of turn. " +
                 "It's still a land."
             );
         }

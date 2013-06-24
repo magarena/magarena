@@ -7,12 +7,12 @@
                 new MagicEvent(
                     permanent,
                     this,
-                    "Sacrifice SN. If you do, " + 
+                    "Sacrifice SN. If you do, " +
                     "put four 1/1 colorless Spirit creature tokens onto the battlefield."
                 ):
                 MagicEvent.NONE;
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent=event.getPermanent();

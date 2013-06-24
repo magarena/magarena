@@ -8,7 +8,7 @@ def action = {
     });
 } as MagicEventAction
 
-[ 
+[
     new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
@@ -17,7 +17,7 @@ def action = {
                 MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_ENCHANTMENT,
                 new MagicDestroyTargetPicker(false),
                 this,
-                "Destroy target artifact or enchantment\$." + 
+                "Destroy target artifact or enchantment\$." +
                 "If SN was kicked, it deals damage equal to that permanent's converted mana cost to target creature."
             );
         }

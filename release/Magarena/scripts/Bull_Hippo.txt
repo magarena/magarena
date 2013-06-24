@@ -1,6 +1,6 @@
 name=Bull Hippo
 url=http://magiccards.info/7e/en/233.html
-image=http://magiccards.info/scans/en/7e/233.jpg 
+image=http://magiccards.info/scans/en/7e/233.jpg
 value=3.347
 ability=islandwalk
 rarity=U

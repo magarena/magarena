@@ -19,6 +19,6 @@
                 event.getPlayer(),
                 TokenCardDefinitions.get("Zombie")
             ));
-        }        
+        }
     }
 ]

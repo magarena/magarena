@@ -11,12 +11,12 @@
                 "You may\$ pay {2}\$. If you do, draw a card."
             );
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 game.doAction(new MagicDrawAction(event.getPlayer()));
             }
-        }        
+        }
     }
 ]

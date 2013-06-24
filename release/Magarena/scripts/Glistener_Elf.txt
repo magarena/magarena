@@ -1,6 +1,6 @@
 name=Glistener Elf
 url=http://magiccards.info/nph/en/111.html
-image=http://magiccards.info/scans/en/nph/111.jpg 
+image=http://magiccards.info/scans/en/nph/111.jpg
 value=3.873
 ability=infect
 rarity=C

@@ -4,8 +4,8 @@
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
             if (permanent.getCounters(MagicCounterType.Charge)>0) {
                 pt.set(6,6);
-            } 
-        }        
+            }
+        }
     },
     new MagicWhenAttacksTrigger() {
         @Override

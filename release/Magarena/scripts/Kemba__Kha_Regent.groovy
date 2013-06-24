@@ -18,6 +18,6 @@
             for (;amount>0;amount--) {
                 game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Cat2")));
             }
-        }        
+        }
     }
 ]

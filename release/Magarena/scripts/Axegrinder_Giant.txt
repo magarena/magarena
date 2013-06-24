@@ -1,6 +1,6 @@
 name=Axegrinder Giant
 url=http://magiccards.info/lw/en/151.html
-image=http://magiccards.info/scans/en/lw/151.jpg 
+image=http://magiccards.info/scans/en/lw/151.jpg
 value=1.820
 rarity=C
 type=Creature

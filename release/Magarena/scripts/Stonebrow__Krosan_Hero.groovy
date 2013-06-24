@@ -2,7 +2,7 @@
     new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            return (creature.isFriend(permanent) && 
+            return (creature.isFriend(permanent) &&
                     creature.hasAbility(MagicAbility.Trample)) ?
                 new MagicEvent(
                     permanent,

@@ -11,7 +11,7 @@
                     "Destroy target non-Demon creature\$."
                 ):
                 MagicEvent.NONE;
-        }    
+        }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {

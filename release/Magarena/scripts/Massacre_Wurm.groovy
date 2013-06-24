@@ -20,7 +20,7 @@
     new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            return (otherPermanent.isEnemy(permanent) && 
+            return (otherPermanent.isEnemy(permanent) &&
                     otherPermanent.isCreature()) ?
                 new MagicEvent(
                     permanent,

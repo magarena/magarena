@@ -16,7 +16,7 @@
                 game.filterPermanents(player,MagicTargetFilter.TARGET_ENCHANTMENT);
             game.doAction(new MagicDestroyAction(targets));
             if (targets.size() > 0) {
-                game.doAction(new MagicChangeLifeAction(player,targets.size()));                
+                game.doAction(new MagicChangeLifeAction(player,targets.size()));
             }
         }
     }

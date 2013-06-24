@@ -1,6 +1,6 @@
 [
     new MagicStatic(
-        MagicLayer.ModPT, 
+        MagicLayer.ModPT,
         MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL
     ) {
         @Override
@@ -33,6 +33,6 @@
                     game.doAction(new MagicChangePoisonAction(player,1));
                 }
             });
-        }        
+        }
     }
 ]

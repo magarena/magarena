@@ -4,8 +4,8 @@
         public MagicEvent executeTrigger(
             final MagicGame game,
             final MagicPermanent permanent,
-            final MagicPayedCost payedCost) {   
-            final int count = payedCost.getX() >= 5 ? 
+            final MagicPayedCost payedCost) {
+            final int count = payedCost.getX() >= 5 ?
                     2 * payedCost.getX() :
                     payedCost.getX();
             game.doAction(new MagicChangeCountersAction(
@@ -17,7 +17,7 @@
             return MagicEvent.NONE;
         }
     },
-    new MagicPermanentActivation( 
+    new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Removal),
         "Damage"
     ) {

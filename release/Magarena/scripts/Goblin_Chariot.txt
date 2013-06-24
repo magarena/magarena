@@ -1,6 +1,6 @@
 name=Goblin Chariot
 url=http://magiccards.info/9e/en/191.html
-image=http://magiccards.info/scans/en/9e/191.jpg 
+image=http://magiccards.info/scans/en/9e/191.jpg
 value=2.647
 ability=haste
 rarity=C

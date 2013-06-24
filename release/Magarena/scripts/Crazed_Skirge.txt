@@ -1,6 +1,6 @@
 name=Crazed Skirge
 url=http://magiccards.info/br/en/16.html
-image=http://magiccards.info/scans/en/br/16.jpg 
+image=http://magiccards.info/scans/en/br/16.jpg
 value=2.696
 rarity=U
 type=Creature

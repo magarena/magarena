@@ -1,6 +1,6 @@
 name=Stonework Puma
 url=http://magiccards.info/zen/en/207.html
-image=http://magiccards.info/scans/en/zen/207.jpg 
+image=http://magiccards.info/scans/en/zen/207.jpg
 value=2.538
 rarity=C
 type=Artifact,Creature

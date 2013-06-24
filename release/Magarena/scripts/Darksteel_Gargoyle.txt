@@ -1,6 +1,6 @@
 name=Darksteel Gargoyle
 url=http://magiccards.info/ds/en/111.html
-image=http://magiccards.info/scans/en/ds/111.jpg 
+image=http://magiccards.info/scans/en/ds/111.jpg
 value=2.965
 ability=flying,indestructible
 rarity=U

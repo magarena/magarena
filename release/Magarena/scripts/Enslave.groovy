@@ -23,7 +23,7 @@
                 event.getPlayer(),
                 1
             );
-            game.doAction(new MagicDealDamageAction(damage));            
+            game.doAction(new MagicDealDamageAction(damage));
         }
     }
 ]

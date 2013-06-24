@@ -15,7 +15,7 @@
             outerGame.doAction(new MagicAddTriggerAction(new MagicAtEndOfTurnTrigger() {
                 public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final eotPlayer) {
                     game.doAction(new MagicPlayTokenAction(
-                        game.getPlayer(event.getPlayer().getIndex()), 
+                        game.getPlayer(event.getPlayer().getIndex()),
                         TokenCardDefinitions.get("Bird4")
                     ));
                     game.addDelayedAction(new MagicRemoveTriggerAction(this));

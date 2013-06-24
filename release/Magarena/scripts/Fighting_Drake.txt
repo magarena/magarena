@@ -1,6 +1,6 @@
 name=Fighting Drake
 url=http://magiccards.info/8e/en/77.html
-image=http://magiccards.info/scans/en/8e/77.jpg 
+image=http://magiccards.info/scans/en/8e/77.jpg
 value=2.700
 ability=flying
 rarity=U

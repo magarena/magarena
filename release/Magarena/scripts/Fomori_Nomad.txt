@@ -1,6 +1,6 @@
 name=Fomori Nomad
 url=http://magiccards.info/fut/en/114.html
-image=http://magiccards.info/scans/en/fut/114.jpg 
+image=http://magiccards.info/scans/en/fut/114.jpg
 value=2.707
 rarity=C
 type=Creature

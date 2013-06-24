@@ -23,6 +23,6 @@
             for (final MagicPermanent target : targets) {
                 game.doAction(new MagicChangeTurnPTAction(target,1,1));
             }
-        }        
+        }
     }
 ]

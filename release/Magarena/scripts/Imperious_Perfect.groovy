@@ -1,6 +1,6 @@
 [
     new MagicStatic(
-        MagicLayer.ModPT, 
+        MagicLayer.ModPT,
         MagicTargetFilter.TARGET_ELF_YOU_CONTROL
     ) {
         @Override
@@ -19,7 +19,7 @@
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [
-                new MagicTapEvent(source), 
+                new MagicTapEvent(source),
                 new MagicPayManaCostEvent(source,"{G}")
             ];
         }
@@ -33,7 +33,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicPlayTokenAction(event.getPlayer(), TokenCardDefinitions.get("Elf1")));            
+            game.doAction(new MagicPlayTokenAction(event.getPlayer(), TokenCardDefinitions.get("Elf1")));
         }
     }
 ]

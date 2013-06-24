@@ -5,7 +5,7 @@ def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
         flags.add(MagicAbility.Indestructible);
     }
 };
-   
+
 def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
     @Override
     public void modSubTypeFlags(final MagicPermanent permanent,final Set<MagicSubType> flags) {
@@ -60,24 +60,24 @@ def PreventAllDamage = new MagicIfDamageWouldBeDealtTrigger(1) {
             return new MagicEvent(
                 source,
                 this,
-                "Until end of turn, Gideon, Champion of Justice becomes an indestructible Human Soldier creature " + 
-                "with power and toughness each equal to the number of loyalty counters on him. " + 
+                "Until end of turn, Gideon, Champion of Justice becomes an indestructible Human Soldier creature " +
+                "with power and toughness each equal to the number of loyalty counters on him. " +
                 "He's still a planeswalker. Prevent all damage that would be dealt to him this turn."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
 
-            final int amt = event.getPermanent().getCounters(MagicCounterType.Charge); 
+            final int amt = event.getPermanent().getCounters(MagicCounterType.Charge);
             def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
                 @Override
                 public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
                     pt.set(amt,amt);
                 }
             };
-            
+
             game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT,AB,ST));
-            game.doAction(new MagicAddTurnTriggerAction(event.getPermanent(), PreventAllDamage)); 
+            game.doAction(new MagicAddTurnTriggerAction(event.getPermanent(), PreventAllDamage));
         }
     },
     new MagicPlaneswalkerActivation(-15) {
@@ -92,7 +92,7 @@ def PreventAllDamage = new MagicIfDamageWouldBeDealtTrigger(1) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicTargetFilter<MagicPermanent> AllOtherPermanent = new MagicOtherPermanentTargetFilter(
-                MagicTargetFilter.TARGET_PERMANENT, 
+                MagicTargetFilter.TARGET_PERMANENT,
                 event.getPermanent()
             );
             final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(), AllOtherPermanent);
@@ -101,7 +101,7 @@ def PreventAllDamage = new MagicIfDamageWouldBeDealtTrigger(1) {
                     target,
                     MagicLocationType.Exile
                 ));
-            }        
+            }
         }
     }
 ]

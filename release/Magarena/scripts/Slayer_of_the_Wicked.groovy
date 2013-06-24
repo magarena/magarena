@@ -12,7 +12,7 @@
                 "PN may\$ destroy target Vampire, Werewolf, or Zombie\$."
             );
         }
-                    
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {

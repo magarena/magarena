@@ -21,7 +21,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amt = event.getPlayer().getNrOfPermanentsWithSubType(MagicSubType.Goblin);
             game.doAction(new MagicPlayTokensAction(
-                event.getPlayer(), 
+                event.getPlayer(),
                 TokenCardDefinitions.get("Goblin1"),
                 amt
             ));

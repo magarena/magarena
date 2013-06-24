@@ -5,7 +5,7 @@
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicCardOnStack cardOnStack) {
-            return (permanent.isController(cardOnStack.getController()) && 
+            return (permanent.isController(cardOnStack.getController()) &&
                     cardOnStack.getCardDefinition().isSpell()) ?
                 new MagicEvent(
                     permanent,

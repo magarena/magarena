@@ -1,6 +1,6 @@
 name=Pincher Beetles
 url=http://magiccards.info/10e/en/285.html
-image=http://magiccards.info/scans/en/10e/285.jpg 
+image=http://magiccards.info/scans/en/10e/285.jpg
 value=3.242
 ability=shroud
 rarity=C

@@ -18,6 +18,6 @@
                 event.getPlayer(),
                 TokenCardDefinitions.get("Human1")
             ));
-        }        
+        }
     }
 ]

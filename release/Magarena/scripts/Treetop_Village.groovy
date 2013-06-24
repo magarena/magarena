@@ -24,7 +24,7 @@ def C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
     @Override
     public int getColorFlags(final MagicPermanent permanent,final int flags) {
         return MagicColor.Green.getMask();
-    }        
+    }
 };
 [
     new MagicPermanentActivation(
@@ -45,7 +45,7 @@ def C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
             return new MagicEvent(
                 source,
                 this,
-                "Until end of turn, SN becomes a 3/3 green Ape creature with trample. " + 
+                "Until end of turn, SN becomes a 3/3 green Ape creature with trample. " +
                 "It's still a land."
             );
         }

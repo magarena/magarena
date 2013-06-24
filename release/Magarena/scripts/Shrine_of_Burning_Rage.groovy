@@ -34,7 +34,7 @@ def getEvent = {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicCardOnStack cardOnStack) {
-            return (permanent.isFriend(cardOnStack) && 
+            return (permanent.isFriend(cardOnStack) &&
                     cardOnStack.hasColor(MagicColor.Red)) ?
                 getEvent(permanent) : MagicEvent.NONE;
         }

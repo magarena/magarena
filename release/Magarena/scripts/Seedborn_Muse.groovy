@@ -9,7 +9,7 @@
                     "Untap all permanents you control."
                 ):
                 MagicEvent.NONE;
-        }    
+        }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();

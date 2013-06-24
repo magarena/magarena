@@ -1,8 +1,8 @@
 [
-    new MagicPermanentActivation( 
+    new MagicPermanentActivation(
         [
             //add ONE for the card itself as it cannot pay for itself
-            MagicConditionFactory.ManaCost("{3}{G}{W}"), 
+            MagicConditionFactory.ManaCost("{3}{G}{W}"),
         ],
         new MagicActivationHints(MagicTiming.Pump),
         "Pump"

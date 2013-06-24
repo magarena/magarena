@@ -5,7 +5,7 @@
             if (permanent.getController().controlsPermanent(MagicSubType.Griffin)) {
                 pt.add(3,3);
             }
-        }        
+        }
     },
     new MagicStatic(MagicLayer.Ability) {
         @Override

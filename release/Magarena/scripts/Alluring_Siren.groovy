@@ -1,9 +1,9 @@
 [
-    new MagicPermanentActivation( 
+    new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.MustAttack),
         "Attacks"
     ) {
-        
+
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [new MagicTapEvent(source)];

@@ -5,7 +5,7 @@
     ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return [ 
+            return [
                 new MagicPayManaCostEvent(source,"{1}{R}"),
                 new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_GOBLIN)
             ];
@@ -47,6 +47,6 @@
                 TokenCardDefinitions.get("Goblin1"),
                 3
             ));
-        }        
+        }
     }
 ]

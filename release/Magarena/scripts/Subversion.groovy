@@ -18,6 +18,6 @@
             final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicChangeLifeAction(player.getOpponent(),-1));
             game.doAction(new MagicChangeLifeAction(player,1));
-        }        
+        }
     }
 ]

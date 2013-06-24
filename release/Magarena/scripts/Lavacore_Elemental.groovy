@@ -5,7 +5,7 @@
             final MagicSource source = damage.getSource();
             return (source.isCreature() &&
                     permanent.isFriend(source) &&
-                    damage.isCombat() && 
+                    damage.isCombat() &&
                     damage.getTarget().isPlayer()) ?
                 new MagicEvent(
                     permanent,

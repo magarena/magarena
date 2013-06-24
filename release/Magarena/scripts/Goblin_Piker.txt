@@ -1,6 +1,6 @@
 name=Goblin Piker
 url=http://magiccards.info/m12/en/141.html
-image=http://magiccards.info/scans/en/dpa/45.jpg 
+image=http://magiccards.info/scans/en/dpa/45.jpg
 value=1.507
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 [
     new MagicStatic(
-        MagicLayer.SetPT, 
+        MagicLayer.SetPT,
         MagicTargetFilter.TARGET_CREATURE) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {

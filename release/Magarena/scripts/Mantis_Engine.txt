@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Insect
 cost={5}
 pt=3/3
-ability=gains {2} flying,gains {2} first strike 
+ability=gains {2} flying,gains {2} first strike
 timing=main

@@ -1,6 +1,6 @@
 [
     new MagicStatic(
-        MagicLayer.ModPT, 
+        MagicLayer.ModPT,
         MagicTargetFilter.TARGET_MERFOLK_YOU_CONTROL) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
@@ -39,6 +39,6 @@
                     game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Unblockable));
                 }
             });
-        }    
+        }
     }
 ]

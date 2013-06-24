@@ -13,19 +13,19 @@
                 "PN may\$ untap SN."
             );
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 game.doAction(new MagicUntapAction(event.getPermanent()));
             }
-        }        
+        }
     },
-    new MagicPermanentActivation( 
+    new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.MustAttack),
         "Attacks"
     ) {
-        
+
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [new MagicTapEvent(source)];

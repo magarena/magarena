@@ -22,6 +22,6 @@
                     TokenCardDefinitions.get("Bird1")
                 ));
             }
-        }        
+        }
     }
 ]

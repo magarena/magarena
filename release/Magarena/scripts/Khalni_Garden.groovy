@@ -14,6 +14,6 @@
                 event.getPlayer(),
                 TokenCardDefinitions.get("Plant")
             ));
-        }        
+        }
     }
 ]

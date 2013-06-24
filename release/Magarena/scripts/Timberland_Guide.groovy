@@ -12,7 +12,7 @@
                 this,
                 "PN puts a +1/+1 counter on target creature\$."
             );
-        }    
+        }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {

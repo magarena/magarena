@@ -7,7 +7,7 @@
                 MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                 new MagicDamageTargetPicker(3,true),
                 this,
-                "SN deals 3 damage to target creature or player\$. " + 
+                "SN deals 3 damage to target creature or player\$. " +
                 "A creature dealt damage this way can't be regenerated this turn."
             );
         }

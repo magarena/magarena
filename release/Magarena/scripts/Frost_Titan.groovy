@@ -33,7 +33,7 @@ def event = {
                 ):
                 MagicEvent.NONE;
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent mevent) {
             final MagicSource source = mevent.getSource();

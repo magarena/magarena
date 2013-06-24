@@ -1,6 +1,6 @@
 name=Flensermite
 url=http://magiccards.info/mbs/en/41.html
-image=http://magiccards.info/scans/en/mbs/41.jpg 
+image=http://magiccards.info/scans/en/mbs/41.jpg
 value=2.966
 ability=infect,lifelink
 rarity=C

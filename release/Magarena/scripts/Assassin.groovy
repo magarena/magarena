@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicSource source = damage.getSource();
             return (source == permanent &&
-                    damage.isCombat() && 
+                    damage.isCombat() &&
                     damage.getTarget().isPlayer()) ?
                 new MagicEvent(
                     permanent,

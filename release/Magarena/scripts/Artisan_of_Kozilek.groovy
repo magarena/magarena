@@ -16,7 +16,7 @@
                 "his or her graveyard to the battlefield."
             );
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {

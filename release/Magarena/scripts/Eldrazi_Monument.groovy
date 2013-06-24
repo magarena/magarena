@@ -1,6 +1,6 @@
 [
     new MagicStatic(
-        MagicLayer.Ability, 
+        MagicLayer.Ability,
         MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL
     ) {
         @Override
@@ -10,7 +10,7 @@
         }
     },
     new MagicStatic(
-        MagicLayer.ModPT, 
+        MagicLayer.ModPT,
         MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL
     ) {
         @Override
@@ -37,8 +37,8 @@
             if (player.controlsPermanent(MagicType.Creature)) {
                 game.addEvent(new MagicSacrificePermanentEvent(permanent,player,MagicTargetChoice.SACRIFICE_CREATURE));
             } else {
-                game.doAction(new MagicSacrificeAction(permanent));                
-            }            
+                game.doAction(new MagicSacrificeAction(permanent));
+            }
         }
     }
 ]

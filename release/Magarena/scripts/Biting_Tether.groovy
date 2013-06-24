@@ -18,7 +18,7 @@
             game.doAction(new MagicChangeCountersAction(
                 event.getRefPermanent(),
                 MagicCounterType.MinusOne,1,true
-            ));            
+            ));
         }
     }
 ]

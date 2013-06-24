@@ -2,7 +2,7 @@
     new MagicWhenOtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
-            return (permanent.isFriend(cardOnStack) && 
+            return (permanent.isFriend(cardOnStack) &&
                     cardOnStack.getCardDefinition().isArtifact()) ?
                 new MagicEvent(
                     permanent,
@@ -20,8 +20,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,1,true));
-            }    
-        }       
+            }
+        }
     },
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Token),

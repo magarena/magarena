@@ -7,7 +7,7 @@
                 new MagicEvent(
                     permanent,
                     this,
-                    "Put a +1/+1 counter on equipped creature. " + 
+                    "Put a +1/+1 counter on equipped creature. " +
                     "If equipped creature is a Vampire, put two +1/+1 counters on it instead."
                 ):
                 MagicEvent.NONE;

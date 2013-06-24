@@ -49,8 +49,8 @@
             return new MagicEvent(
                 source,
                 this,
-                "PN gets an emblem with " + 
-                "\"You have no maximum hand size\" and " + 
+                "PN gets an emblem with " +
+                "\"You have no maximum hand size\" and " +
                 "\"Whenever a card is put into your graveyard from anywhere, you may return it to your hand.\""
             );
         }
@@ -77,14 +77,14 @@
                         return triggerData.card.getOwner().getId() == you.getId() ?
                             // HACK: As emblem is not represented, source of event is the card
                             new MagicEvent(
-                                triggerData.card, 
+                                triggerData.card,
                                 new MagicMayChoice(),
                                 this,
                                 "PN may return SN to your hand."
                             ):
                             MagicEvent.NONE
                     }
-                    
+
                     @Override
                     public void executeEvent(final MagicGame game, final MagicEvent event) {
                         if (event.isYes() && event.getPlayer().getGraveyard().contains(event.getCard())) {

@@ -8,7 +8,7 @@
             } else if (charges >= 1) {
                 pt.set(2,2);
             }
-        }        
+        }
     },
     new MagicStatic(MagicLayer.Ability) {
         @Override
@@ -18,7 +18,7 @@
                 final Set<MagicAbility> flags) {
             if (permanent.getCounters(MagicCounterType.Charge) >= 1) {
                 flags.add(MagicAbility.Flying);
-            } 
+            }
         }
     }
 ]

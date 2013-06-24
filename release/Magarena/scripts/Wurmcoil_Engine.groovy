@@ -15,7 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player=event.getPlayer();
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Wurm1")));
-            game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Wurm2")));            
+            game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Wurm2")));
         }
     }
 ]

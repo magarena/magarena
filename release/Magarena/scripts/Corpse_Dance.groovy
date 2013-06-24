@@ -6,8 +6,8 @@
                 cardOnStack,
                 this,
                 "Return the top creature card\$ of your graveyard to the battlefield. " +
-                "That creature gains haste until end of turn. " + 
-                "Exile it at the beginning of the next end step. " + 
+                "That creature gains haste until end of turn. " +
+                "Exile it at the beginning of the next end step. " +
                 "If the buyback cost was payed, return SN to its owner's hand as it resolves."
             );
         }
@@ -24,10 +24,10 @@
                     card,
                     MagicPlayCardAction.HASTE_UEOT_REMOVE_AT_END_OF_TURN
                 ));
-            } 
+            }
             if (event.isBuyback()) {
                 game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
-            } 
+            }
         }
     }
 ]

@@ -12,9 +12,9 @@
                     this,
                     "PN can't cast spells this turn."
                 ):
-                MagicEvent.NONE;           
+                MagicEvent.NONE;
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicChangePlayerStateAction(

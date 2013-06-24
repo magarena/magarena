@@ -7,6 +7,6 @@
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent permanent) {
             return [new MagicTapEvent(permanent)];
-        }    
+        }
     }
 ]

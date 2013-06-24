@@ -2,7 +2,7 @@
     new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return (permanent.isController(upkeepPlayer) && 
+            return (permanent.isController(upkeepPlayer) &&
                     permanent.hasState(MagicPermanentState.MustPayEchoCost)) ?
                 new MagicEvent(
                     permanent,
@@ -28,6 +28,6 @@
             } else {
                 game.doAction(new MagicSacrificeAction(permanent));
             }
-        }        
+        }
     }
 ]

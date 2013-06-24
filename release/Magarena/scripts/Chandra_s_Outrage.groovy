@@ -7,7 +7,7 @@
                 MagicTargetChoice.NEG_TARGET_CREATURE,
                 new MagicDamageTargetPicker(4),
                 this,
-                "SN deals 4 damage to target creature\$ and " + 
+                "SN deals 4 damage to target creature\$ and " +
                          "2 damage to that creature's controller."
             );
         }

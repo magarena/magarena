@@ -15,6 +15,6 @@
                 event.getSource(),
                 event.getPlayer()
             ));
-        }        
+        }
     }
 ]

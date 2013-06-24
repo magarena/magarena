@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "SN deals 1 damage to each creature without flying and each player. " + 
+                "SN deals 1 damage to each creature without flying and each player. " +
                 "If SN was kicked, it deals 4 damage to each creature without flying and each player instead."
             );
         }

@@ -6,7 +6,7 @@
             if (source.getController().controlsPermanent(filter)) {
                 pt.add(1,1);
             }
-        }        
+        }
     },
     new MagicStatic(MagicLayer.Ability) {
         @Override

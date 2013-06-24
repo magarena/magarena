@@ -3,7 +3,7 @@
         new MagicActivationHints(MagicTiming.Pump,true),
         "Haste"
     ) {
-        
+
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [new MagicPayManaCostEvent(source,"{R}")];

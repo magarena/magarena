@@ -37,7 +37,7 @@
                 ));
                 game.doAction(new MagicSetAbilityAction(target, MagicAbility.Vigilance));
             }
-        
+
         }
     },
     new MagicPlaneswalkerActivation(-6) {
@@ -46,7 +46,7 @@
             return new MagicEvent(
                 source,
                 this,
-                "Put a white Avatar creature token onto the battlefield. " + 
+                "Put a white Avatar creature token onto the battlefield. " +
                 "It has \"This creature's power and toughness are each equal to your life total.\""
             );
         }

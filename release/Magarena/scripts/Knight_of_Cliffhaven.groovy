@@ -8,7 +8,7 @@
             } else if (charges >= 1) {
                 pt.set(2,3);
             }
-        }        
+        }
     },
     new MagicStatic(MagicLayer.Ability) {
         @Override
@@ -19,7 +19,7 @@
             }
             if (charges >= 1) {
                 flags.add(MagicAbility.Flying);
-            } 
+            }
         }
     }
 ]

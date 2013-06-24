@@ -5,6 +5,6 @@
             if (permanent.getOpponent().getLife()<=10) {
                 pt.add(2,1);
             }
-        }        
+        }
     }
 ]

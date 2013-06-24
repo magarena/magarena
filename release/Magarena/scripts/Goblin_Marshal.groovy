@@ -7,7 +7,7 @@
                 this,
                 "PN puts two 1/1 red Goblin creature tokens onto the battlefield."
             );
-        }    
+        }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicPlayTokensAction(
@@ -15,7 +15,7 @@
                 TokenCardDefinitions.get("Goblin1"),
                 2
             ));
-        }        
+        }
     },
     new MagicWhenPutIntoGraveyardTrigger() {
         @Override
@@ -27,7 +27,7 @@
                     "PN puts two 1/1 red Goblin creature tokens onto the battlefield."
                 ) :
                 MagicEvent.NONE;
-        }    
+        }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicPlayTokensAction(

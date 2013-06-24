@@ -1,6 +1,6 @@
 name=Wall of Swords
 url=http://magiccards.info/10e/en/57.html
-image=http://magiccards.info/scans/en/10e/57.jpg 
+image=http://magiccards.info/scans/en/10e/57.jpg
 value=3.565
 ability=defender,flying
 rarity=U

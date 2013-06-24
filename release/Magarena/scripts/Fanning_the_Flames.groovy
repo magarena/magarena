@@ -9,7 +9,7 @@
                 new MagicDamageTargetPicker(amount),
                 amount,
                 this,
-                "SN deals RN damage to target creature or player\$. " + 
+                "SN deals RN damage to target creature or player\$. " +
                 "If the buyback cost was payed, return SN to its owner's hand as it resolves."
             );
         }
@@ -26,7 +26,7 @@
                     game.doAction(new MagicDealDamageAction(damage));
                     if (event.isBuyback()) {
                         game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
-                    } 
+                    }
                 }
             });
         }

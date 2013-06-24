@@ -6,7 +6,7 @@
             if (permanent.isFriend(source) && source.isCreature()) {
                 // Generates no event or action.
                 damage.setAmount(damage.getAmount() * 2);
-            }            
+            }
             return MagicEvent.NONE;
         }
     }

@@ -1,6 +1,6 @@
 [
     new MagicStatic(
-        MagicLayer.ModPT, 
+        MagicLayer.ModPT,
         MagicTargetFilter.TARGET_SNAKE_YOU_CONTROL
     ) {
         @Override
@@ -30,7 +30,7 @@
                 ):
                 MagicEvent.NONE;
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(MagicChangeStateAction.Set(event.getRefPermanent(),MagicPermanentState.DestroyAtEndOfCombat));

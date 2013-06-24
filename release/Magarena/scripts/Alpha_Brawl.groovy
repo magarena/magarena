@@ -18,7 +18,7 @@
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 final MagicPlayer player = event.getPlayer();
                 public void doAction(final MagicPermanent permanent) {
-                    final Collection<MagicPermanent> creatures = 
+                    final Collection<MagicPermanent> creatures =
                             game.filterPermanents(player.getOpponent(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
                     for (final MagicPermanent creature : creatures) {
                         final MagicDamage damage = new MagicDamage(

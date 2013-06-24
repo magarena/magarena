@@ -1,6 +1,6 @@
 name=Jhessian Lookout
 url=http://magiccards.info/ala/en/46.html
-image=http://magiccards.info/scans/en/ala/46.jpg 
+image=http://magiccards.info/scans/en/ala/46.jpg
 value=1.593
 rarity=C
 type=Creature

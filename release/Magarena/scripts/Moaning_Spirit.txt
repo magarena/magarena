@@ -1,11 +1,11 @@
 name=Moaning Spirit
 url=http://magiccards.info/po2/en/19.html
-image=http://magiccards.info/scans/en/po2/19.jpg 
+image=http://magiccards.info/scans/en/po2/19.jpg
 value=2.700
 rarity=C
 type=Creature
 subtype=Spirit
 pt=2/1
 cost={2}{B}
-ability=flying 
+ability=flying
 timing=main

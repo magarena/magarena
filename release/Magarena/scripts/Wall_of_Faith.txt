@@ -1,6 +1,6 @@
 name=Wall of Faith
 url=http://magiccards.info/m10/en/40.html
-image=http://magiccards.info/scans/en/m10/40.jpg 
+image=http://magiccards.info/scans/en/m10/40.jpg
 value=1.951
 rarity=C
 type=Creature

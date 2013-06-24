@@ -3,7 +3,7 @@
         @Override
         public MagicEvent executeTrigger(
             final MagicGame game,
-            final MagicPermanent permanent, 
+            final MagicPermanent permanent,
             final MagicPermanent died) {
             return (died != permanent &&
                     died.hasSubType(MagicSubType.Goblin) &&
@@ -14,7 +14,7 @@
                     new MagicDamageTargetPicker(1),
                     this,
                     "PN may\$ have SN deal 1 damage to target player\$."
-                ) : 
+                ) :
                 MagicEvent.NONE;
         }
 

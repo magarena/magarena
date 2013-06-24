@@ -12,7 +12,7 @@
                         break;
                     }
                 }
-            }        
+            }
             pt.set(types, types + 1);
         }
     }

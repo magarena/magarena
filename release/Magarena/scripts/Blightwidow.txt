@@ -1,6 +1,6 @@
 name=Blightwidow
 url=http://magiccards.info/mbs/en/77.html
-image=http://magiccards.info/scans/en/mbs/77.jpg 
+image=http://magiccards.info/scans/en/mbs/77.jpg
 value=3.446
 ability=reach,infect
 rarity=C

@@ -6,7 +6,7 @@
                 final MagicPermanent permanent,
                 final MagicPermanent otherPermanent) {
             return (otherPermanent != permanent &&
-                    otherPermanent.isCreature() && 
+                    otherPermanent.isCreature() &&
                     otherPermanent.isFriend(permanent) &&
                     otherPermanent.hasSubType(MagicSubType.Human)) ?
                 new MagicEvent(
@@ -16,11 +16,11 @@
                 ) :
                 MagicEvent.NONE;
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicUntapAction(event.getPermanent()));            
-        }        
+            game.doAction(new MagicUntapAction(event.getPermanent()));
+        }
     },
     new MagicTapCreatureActivation(
         new MagicActivationHints(MagicTiming.Tapping),

@@ -19,6 +19,6 @@
             if (enchantedCreature.isValid()) {
                 game.doAction(new MagicTapAction(enchantedCreature,true));
             }
-        }        
+        }
     }
 ]

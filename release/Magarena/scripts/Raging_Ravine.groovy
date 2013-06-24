@@ -12,7 +12,7 @@ def CT = new MagicWhenAttacksTrigger() {
             ):
             MagicEvent.NONE;
     }
-    
+
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         game.doAction(new MagicChangeCountersAction(
@@ -51,7 +51,7 @@ def C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
     @Override
     public int getColorFlags(final MagicPermanent permanent,final int flags) {
         return MagicColor.Red.getMask()|MagicColor.Green.getMask();
-    }        
+    }
 };
 [
     new MagicPermanentActivation(
@@ -74,7 +74,7 @@ def C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
             return new MagicEvent(
                 source,
                 this,
-                "Until end of turn, SN becomes a 3/3 red and green Elemental creature with " + 
+                "Until end of turn, SN becomes a 3/3 red and green Elemental creature with " +
                 "\"Whenever this creature attacks, put a +1/+1 counter on it.\" It's still a land."
             );
         }

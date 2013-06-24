@@ -1,6 +1,6 @@
 name=Pillarfield Ox
 url=http://magiccards.info/zen/en/31.html
-image=http://magiccards.info/scans/en/zen/31.jpg 
+image=http://magiccards.info/scans/en/zen/31.jpg
 value=1.481
 rarity=C
 type=Creature

@@ -20,7 +20,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isNo()) {
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));
-            }            
+            }
         }
     }
 ]

@@ -25,7 +25,7 @@ def C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
     @Override
     public int getColorFlags(final MagicPermanent permanent,final int flags) {
         return MagicColor.Green.getMask() | MagicColor.White.getMask();
-    }        
+    }
 };
 [
     new MagicPermanentActivation(
@@ -44,7 +44,7 @@ def C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
             return new MagicEvent(
                 source,
                 this,
-                "Until end of turn, SN becomes a 4/4 green and white Insect Monk creature with first strike. " + 
+                "Until end of turn, SN becomes a 4/4 green and white Insect Monk creature with first strike. " +
                 "It's still a land."
             );
         }

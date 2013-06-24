@@ -1,6 +1,6 @@
 name=Benalish Knight
 url=http://magiccards.info/10e/en/11.html
-image=http://magiccards.info/scans/en/10e/11.jpg 
+image=http://magiccards.info/scans/en/10e/11.jpg
 value=4.019
 ability=flash,first strike
 rarity=C

@@ -6,12 +6,12 @@
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(),
-                    this, 
+                    this,
                     "PN may\$ untap SN and remove it from combat."
                 ) :
                 MagicEvent.NONE;
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {

@@ -2,7 +2,7 @@
     new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
-            return (permanent.isOpponent(player) && 
+            return (permanent.isOpponent(player) &&
                     player.getHandSize() <= 2) ?
                 new MagicEvent(
                     permanent,

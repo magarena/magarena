@@ -1,6 +1,6 @@
 name=Needlepeak Spider
 url=http://magiccards.info/pc/en/105.html
-image=http://magiccards.info/scans/en/pc/105.jpg 
+image=http://magiccards.info/scans/en/pc/105.jpg
 value=2.672
 ability=reach
 rarity=C

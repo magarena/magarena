@@ -1,6 +1,6 @@
 name=Amphin Cutthroat
 url=http://magiccards.info/m12/en/43.html
-image=http://magiccards.info/scans/en/m12/43.jpg 
+image=http://magiccards.info/scans/en/m12/43.jpg
 value=1.669
 rarity=C
 type=Creature

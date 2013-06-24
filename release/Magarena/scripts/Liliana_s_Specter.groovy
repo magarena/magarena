@@ -14,6 +14,6 @@
             final MagicPermanent permanent=event.getPermanent();
             final MagicPlayer player=event.getPlayer();
             game.addEvent(new MagicDiscardEvent(permanent,player));
-        }        
+        }
     }
 ]

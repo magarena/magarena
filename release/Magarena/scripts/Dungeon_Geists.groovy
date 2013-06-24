@@ -3,8 +3,8 @@ def control = {
     return new MagicStatic(MagicLayer.Ability,filter) {
         @Override
         public void modAbilityFlags(
-            final MagicPermanent source, 
-            final MagicPermanent permanent, 
+            final MagicPermanent source,
+            final MagicPermanent permanent,
             final Set<MagicAbility> flags) {
             flags.add(MagicAbility.DoesNotUntap);
         }
@@ -30,9 +30,9 @@ def control = {
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
-                MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS, 
+                MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
                 this,
-                "Tap target creature opponent controls\$. " + 
+                "Tap target creature opponent controls\$. " +
                 "It doesn't untap during its controller's untap step as long as PN controls SN."
             );
         }

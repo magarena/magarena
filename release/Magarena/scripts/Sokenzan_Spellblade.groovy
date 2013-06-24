@@ -12,7 +12,7 @@
             return new MagicEvent(
                 source,
                 this,
-                "SN gets +X/+0 until end of turn, " + 
+                "SN gets +X/+0 until end of turn, " +
                 "where X is the number of cards in your hand."
             );
         }

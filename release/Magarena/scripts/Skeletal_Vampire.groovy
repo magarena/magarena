@@ -30,7 +30,7 @@ def getEvent = {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return [ 
+            return [
                 new MagicPayManaCostEvent(source,"{3}{B}{B}"),
                 new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_BAT)
             ];

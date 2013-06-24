@@ -8,7 +8,7 @@
                     permanent.getController(),
                     permanent.getOpponent(),
                     this,
-                    "RN discards a card if PN controls the creature " + 
+                    "RN discards a card if PN controls the creature " +
                     "with the greatest power or tied for the greatest power."
                 ) :
                 MagicEvent.NONE;
@@ -20,7 +20,7 @@
                 player,
                 MagicTargetFilter.TARGET_CREATURE
             );
-            MagicPermanent highest = MagicPermanent.NONE;     
+            MagicPermanent highest = MagicPermanent.NONE;
             for (final MagicPermanent creature : targets) {
                 if (creature.getPower() > highest.getPower()) {
                     highest = creature;
@@ -32,6 +32,6 @@
                     event.getRefPlayer()
                 ));
             }
-        }        
+        }
     }
 ]

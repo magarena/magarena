@@ -7,7 +7,7 @@
                 MagicTargetChoice.NEG_TARGET_LAND,
                 new MagicDestroyTargetPicker(false),
                 this,
-                "Destroy target land\$. " + 
+                "Destroy target land\$. " +
                 "SN deals 1 damage to each Human creature."
             );
         }

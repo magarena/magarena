@@ -17,7 +17,7 @@
                 ) :
                 MagicEvent.NONE;
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
@@ -26,7 +26,7 @@
                 for (final MagicPermanent creature : targets) {
                     game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Vigilance));
                 }
-            }            
-        }        
+            }
+        }
     }
 ]

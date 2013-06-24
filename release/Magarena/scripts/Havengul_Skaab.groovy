@@ -5,7 +5,7 @@
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPermanent creature) {
-            if (permanent == creature && 
+            if (permanent == creature &&
                 permanent.getController().getNrOfPermanentsWithType(MagicType.Creature) > 1) {
                 final MagicTargetFilter<MagicPermanent> targetFilter = new MagicOtherPermanentTargetFilter(
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,permanent
@@ -23,9 +23,9 @@
                     "Return another creature PN controls\$ to its owner's hand."
                 );
             }
-            return MagicEvent.NONE;           
+            return MagicEvent.NONE;
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {

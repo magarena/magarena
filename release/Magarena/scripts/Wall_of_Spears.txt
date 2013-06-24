@@ -1,6 +1,6 @@
 name=Wall of Spears
 url=http://magiccards.info/dpa/en/96.html
-image=http://magiccards.info/scans/en/dpa/96.jpg 
+image=http://magiccards.info/scans/en/dpa/96.jpg
 value=3.078
 ability=defender,first strike
 rarity=U

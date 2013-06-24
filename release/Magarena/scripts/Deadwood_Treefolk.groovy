@@ -29,7 +29,7 @@ def event = {
     new MagicWhenLeavesPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent left) {
-            return (permanent == left) ? event(permanent) : MagicEvent.NONE; 
+            return (permanent == left) ? event(permanent) : MagicEvent.NONE;
         }
     }
 ]

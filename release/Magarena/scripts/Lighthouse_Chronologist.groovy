@@ -8,7 +8,7 @@
             } else if (charges >= 4) {
                 pt.set(2,4);
             }
-        }        
+        }
     },
     new MagicAtEndOfTurnTrigger() {
         @Override
@@ -21,7 +21,7 @@
                     "PN takes an extra turn after this one."
                 ) :
                 MagicEvent.NONE;
-        }    
+        }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicChangeExtraTurnsAction(event.getPlayer(),1));

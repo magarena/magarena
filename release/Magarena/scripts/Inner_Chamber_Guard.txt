@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Samurai
 cost={1}{W}
 pt=0/2
-ability=bushido 2 
+ability=bushido 2
 timing=main

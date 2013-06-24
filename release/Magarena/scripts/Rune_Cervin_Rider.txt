@@ -1,6 +1,6 @@
 name=Rune-Cervin Rider
 url=http://magiccards.info/shm/en/20.html
-image=http://magiccards.info/scans/en/shm/20.jpg 
+image=http://magiccards.info/scans/en/shm/20.jpg
 value=2.192
 rarity=C
 type=Creature

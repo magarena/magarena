@@ -4,8 +4,8 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicTarget target = damage.getTarget();
             return (MagicCondition.METALCRAFT_CONDITION.accept(permanent) &&
-                    permanent == damage.getSource() && 
-                    target.isPlayer() && 
+                    permanent == damage.getSource() &&
+                    target.isPlayer() &&
                     damage.isCombat()) ?
                 new MagicEvent(
                     permanent,

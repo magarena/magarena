@@ -7,7 +7,7 @@
                 MagicTargetChoice.NEG_TARGET_CREATURE,
                 MagicMustAttackTargetPicker.create(),
                 this,
-                "Target creature\$ attacks this turn if able. " + 
+                "Target creature\$ attacks this turn if able. " +
                 "If the buyback cost was payed, return SN to its owner's hand as it resolves."
             );
         }
@@ -19,7 +19,7 @@
                     game.doAction(new MagicSetAbilityAction(creature,MagicAbility.AttacksEachTurnIfAble));
                     if (event.isBuyback()) {
                         game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
-                    } 
+                    }
                 }
             });
         }

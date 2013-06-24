@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicPlayTokensAction(
-                event.getPlayer(), 
+                event.getPlayer(),
                 TokenCardDefinitions.get("Wurm5"),
                 3
             ));

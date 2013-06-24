@@ -11,7 +11,7 @@
                 ):
                 MagicEvent.NONE;
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent=event.getPermanent();
@@ -19,6 +19,6 @@
             if (enchanted.isValid()) {
                 game.doAction(new MagicPlayTokenAction(event.getPlayer(),enchanted.getCardDefinition()));
             }
-        }        
+        }
     }
 ]

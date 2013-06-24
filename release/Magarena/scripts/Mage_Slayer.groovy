@@ -6,7 +6,7 @@
             return (equippedCreature.isValid() && equippedCreature==creature) ?
                 new MagicEvent(
                     equippedCreature,
-                    game.getDefendingPlayer(), 
+                    game.getDefendingPlayer(),
                     this,
                     "SN deals damage equal to its power to PN."
                 ):

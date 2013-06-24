@@ -22,6 +22,6 @@
             if (event.isYes()) {
                 game.doAction(new MagicChangeLifeAction(event.getRefPlayer(),-1));
             }
-        }        
+        }
     }
 ]

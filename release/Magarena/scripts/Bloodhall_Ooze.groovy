@@ -30,7 +30,7 @@ def trigger = {
                     true
                 ));
             }
-        }        
+        }
     };
 }
 [

@@ -32,7 +32,7 @@ def C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
     @Override
     public int getColorFlags(final MagicPermanent permanent,final int flags) {
         return MagicColor.Green.getMask()|MagicColor.White.getMask();
-    }        
+    }
 };
 [
     new MagicPermanentActivation(

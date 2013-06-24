@@ -2,7 +2,7 @@
     new MagicWhenBecomesTappedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent tapped) {
-            return (tapped.isFriend(permanent) && 
+            return (tapped.isFriend(permanent) &&
                     tapped.isCreature()) ?
                 new MagicEvent(
                     permanent,
@@ -39,7 +39,7 @@
                     "Untap all creatures you control."
                 ):
                 MagicEvent.NONE;
-        }    
+        }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();

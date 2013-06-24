@@ -1,6 +1,6 @@
 [
     new MagicStatic(
-        MagicLayer.ModPT, 
+        MagicLayer.ModPT,
         MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL
     ) {
         @Override
@@ -9,12 +9,12 @@
         }
         @Override
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-            return target.hasSubType(MagicSubType.Skeleton) || 
+            return target.hasSubType(MagicSubType.Skeleton) ||
                     (source != target && target.hasSubType(MagicSubType.Zombie));
         }
     },
     new MagicStatic(
-        MagicLayer.Ability, 
+        MagicLayer.Ability,
         MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL
     ) {
         @Override
@@ -23,7 +23,7 @@
         }
         @Override
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-            return target.hasSubType(MagicSubType.Skeleton) || 
+            return target.hasSubType(MagicSubType.Skeleton) ||
                     (source != target && target.hasSubType(MagicSubType.Zombie));
         }
     }

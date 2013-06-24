@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicPlayTokenAction(
-                event.getPlayer(), 
+                event.getPlayer(),
                 TokenCardDefinitions.get("Soldier")
             ));
         }

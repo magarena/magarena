@@ -7,7 +7,7 @@
                 MagicTargetChoice.NEG_TARGET_ENCHANTMENT,
                 new MagicDestroyTargetPicker(false),
                 this,
-                "Destroy target enchantment\$. " + 
+                "Destroy target enchantment\$. " +
                 "If the buyback cost was payed, return SN to its owner's hand as it resolves."
             );
         }
@@ -19,10 +19,10 @@
                     game.doAction(new MagicDestroyAction(permanent));
                     if (event.isBuyback()) {
                         game.doAction(new MagicChangeCardDestinationAction(
-                            event.getCardOnStack(), 
+                            event.getCardOnStack(),
                             MagicLocationType.OwnersHand
                         ));
-                    } 
+                    }
                 }
             });
         }

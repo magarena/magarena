@@ -12,8 +12,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.addEvent(new MagicPopulateEvent(event.getSource()));
             game.doAction(new MagicAddStaticAction(new MagicStatic(
-                MagicLayer.Ability, 
-                MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL, 
+                MagicLayer.Ability,
+                MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,
                 MagicStatic.UntilEOT) {
                 @Override
                 public void modAbilityFlags(
@@ -21,7 +21,7 @@
                         final MagicPermanent permanent,
                         final Set<MagicAbility> flags) {
                     flags.add(MagicAbility.Indestructible);
-                }   
+                }
             }));
         }
     }

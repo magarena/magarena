@@ -17,7 +17,7 @@
                             game.filterPermanents(player,MagicTargetFilter.TARGET_PERMANENT_YOU_CONTROL);
                     for (final MagicPermanent permanent : targets) {
                         if (!permanent.isLand()) {
-                            game.doAction(new MagicExileUntilEndOfTurnAction(permanent));    
+                            game.doAction(new MagicExileUntilEndOfTurnAction(permanent));
                         }
                     }
                 }

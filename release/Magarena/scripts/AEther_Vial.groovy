@@ -17,7 +17,7 @@
                         MagicTargetFilter.Operator.EQUAL,
                         source.getCounters(MagicCounterType.Charge)
                     );
-            final MagicTargetChoice targetChoice = 
+            final MagicTargetChoice targetChoice =
                     new MagicTargetChoice(
                     targetFilter,false,MagicTargetHint.None,"a creature card from your hand");
             return new MagicEvent(

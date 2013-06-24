@@ -5,7 +5,7 @@ def action = {
     }
 } as MagicEventAction ;
 
-[    
+[
     new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(
@@ -36,7 +36,7 @@ def action = {
                 action,
                 "You may\$ pay " + cost.getText() + "\$. If you don't, sacrifice SN."
             );
-            game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(triggerEvent)));            
+            game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(triggerEvent)));
         }
     }
 ]

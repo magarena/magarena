@@ -3,8 +3,8 @@ def control = {
     return new MagicStatic(MagicLayer.Control,filter) {
         @Override
         public MagicPlayer getController(
-                final MagicPermanent source, 
-                final MagicPermanent permanent, 
+                final MagicPermanent source,
+                final MagicPermanent permanent,
                 final MagicPlayer player) {
             return source.getController();
         }
@@ -39,7 +39,7 @@ def control = {
                 "Gain control of target artifact\$ for as long as you control SN."
             );
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {

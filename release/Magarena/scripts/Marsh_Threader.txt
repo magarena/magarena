@@ -1,6 +1,6 @@
 name=Marsh Threader
 url=http://magiccards.info/wwk/en/14.html
-image=http://magiccards.info/scans/en/wwk/14.jpg 
+image=http://magiccards.info/scans/en/wwk/14.jpg
 value=2.667
 ability=swampwalk
 rarity=C

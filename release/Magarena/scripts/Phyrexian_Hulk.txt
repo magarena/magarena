@@ -1,6 +1,6 @@
 name=Phyrexian Hulk
 url=http://magiccards.info/nph/en/150.html
-image=http://magiccards.info/scans/en/nph/150.jpg 
+image=http://magiccards.info/scans/en/nph/150.jpg
 value=1.795
 rarity=U
 type=Artifact,Creature

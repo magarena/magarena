@@ -24,7 +24,7 @@ def C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
     @Override
     public int getColorFlags(final MagicPermanent permanent,final int flags) {
         return MagicColor.Blue.getMask()|MagicColor.Black.getMask();
-    }        
+    }
 };
 [
     new MagicPermanentActivation(
@@ -43,7 +43,7 @@ def C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
             return new MagicEvent(
                 source,
                 this,
-                "Until end of turn, SN becomes a 3/2 blue and black Elemental creature and is unblockable. " + 
+                "Until end of turn, SN becomes a 3/2 blue and black Elemental creature and is unblockable. " +
                 "It's still a land."
             );
         }

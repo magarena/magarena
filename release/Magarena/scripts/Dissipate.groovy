@@ -6,7 +6,7 @@
                 cardOnStack,
                 MagicTargetChoice.NEG_TARGET_SPELL,
                 this,
-                "Counter target spell\$. " + 
+                "Counter target spell\$. " +
                 "If that spell is countered this way, exile it instead of putting it into its owner's graveyard."
             );
         }

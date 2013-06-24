@@ -1,6 +1,6 @@
 name=Cylian Elf
 url=http://magiccards.info/ala/en/127.html
-image=http://magiccards.info/scans/en/ala/127.jpg 
+image=http://magiccards.info/scans/en/ala/127.jpg
 value=2.127
 rarity=C
 type=Creature

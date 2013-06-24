@@ -56,6 +56,6 @@
                     game.doAction(new MagicSetAbilityAction(creature,MagicAbility.FirstStrike));
                 }
             });
-        }    
+        }
     }
 ]

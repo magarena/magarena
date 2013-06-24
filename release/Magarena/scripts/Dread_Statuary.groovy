@@ -4,7 +4,7 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
         pt.set(4,2);
     }
 };
-   
+
 def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
     @Override
     public void modSubTypeFlags(final MagicPermanent permanent,final Set<MagicSubType> flags) {
@@ -32,7 +32,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
             return new MagicEvent(
                 source,
                 this,
-                "Until end of turn, SN becomes a 4/2 Golem artifact creature. " + 
+                "Until end of turn, SN becomes a 4/2 Golem artifact creature. " +
                 "It's still a land."
             );
         }

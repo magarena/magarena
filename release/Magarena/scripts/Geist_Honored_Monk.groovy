@@ -22,6 +22,6 @@
                 TokenCardDefinitions.get("Spirit2"),
                 2
             ));
-        }        
+        }
     }
 ]

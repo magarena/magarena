@@ -5,7 +5,7 @@
             if (permanent.isEnchanted()) {
                 pt.add(2,2);
             }
-        }    
+        }
     },
     new MagicStatic(MagicLayer.Ability) {
         @Override

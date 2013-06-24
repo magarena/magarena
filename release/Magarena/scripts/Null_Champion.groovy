@@ -8,7 +8,7 @@
             } else if (charges >= 1) {
                 pt.set(4,2);
             }
-        }        
+        }
     },
     new MagicPermanentActivation(
         [

@@ -2,7 +2,7 @@
     new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent other) {
-            return (other.hasSubType(MagicSubType.Mountain) && 
+            return (other.hasSubType(MagicSubType.Mountain) &&
                     other.isFriend(permanent) &&
                     MagicCondition.LEAST_FIVE_OTHER_MOUNTAINS.accept(other)) ?
                 new MagicEvent(
@@ -15,7 +15,7 @@
                 ) :
                 MagicEvent.NONE;
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (MagicCondition.LEAST_FIVE_OTHER_MOUNTAINS.accept(event.getRefPermanent()) == false) {

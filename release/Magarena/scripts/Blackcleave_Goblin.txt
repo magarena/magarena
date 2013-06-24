@@ -1,6 +1,6 @@
 name=Blackcleave Goblin
 url=http://magiccards.info/som/en/54.html
-image=http://magiccards.info/scans/en/som/54.jpg 
+image=http://magiccards.info/scans/en/som/54.jpg
 value=2.536
 ability=haste,infect
 rarity=C

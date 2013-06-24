@@ -2,7 +2,7 @@
     new MagicPermanentActivation(
         [
             //add ONE for the card itself
-            MagicConditionFactory.ManaCost("{2}"),  
+            MagicConditionFactory.ManaCost("{2}"),
             MagicCondition.OPP_FOUR_LANDS_CONDITION
         ],
         new MagicActivationHints(MagicTiming.Removal),

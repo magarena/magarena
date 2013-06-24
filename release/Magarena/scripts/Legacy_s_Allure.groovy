@@ -15,7 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,1,true));
-            }    
+            }
         }
     },
     new MagicPermanentActivation(
@@ -35,7 +35,7 @@
                         MagicTargetFilter.TARGET_CREATURE,
                         source.getCounters(MagicCounterType.Charge)
                     );
-            final MagicTargetChoice targetChoice = 
+            final MagicTargetChoice targetChoice =
                     new MagicTargetChoice(
                     targetFilter,true,MagicTargetHint.Negative,"target creature to gain control of");
             return new MagicEvent(

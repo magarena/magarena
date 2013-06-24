@@ -1,6 +1,6 @@
 name=Vizzerdrix
 url=http://magiccards.info/9eb/en/7.html
-image=http://magiccards.info/scans/en/9eb/7.jpg 
+image=http://magiccards.info/scans/en/9eb/7.jpg
 value=2.222
 rarity=R
 type=Creature

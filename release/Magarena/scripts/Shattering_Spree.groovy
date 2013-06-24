@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_ARTIFACT, 
+                MagicTargetChoice.NEG_TARGET_ARTIFACT,
                 new MagicDestroyTargetPicker(false),
                 this,
                 "Destroy target artifact\$."

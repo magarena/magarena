@@ -15,7 +15,7 @@
                 "equal to the number of Humans PN controls."
             );
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game,new MagicPlayerAction() {

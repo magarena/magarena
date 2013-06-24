@@ -22,6 +22,6 @@
                 2
             );
             game.doAction(new MagicDealDamageAction(damage));
-        }    
+        }
     }
 ]

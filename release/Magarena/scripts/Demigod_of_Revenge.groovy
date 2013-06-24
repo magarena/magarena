@@ -11,7 +11,7 @@
                 "Return all cards named SN from your graveyard to the battlefield."
             );
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final List<MagicCard> cards = game.filterCards(
@@ -24,7 +24,7 @@
                         card,
                         MagicPlayCardAction.NONE
                     ));
-                }    
+                }
             }
         }
     }

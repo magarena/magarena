@@ -24,7 +24,7 @@
     },
     new MagicWhenDamageIsDealtTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {  
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             if (damage.getTarget() == permanent) {
                 final int amount = damage.getDealtAmount();
                 final MagicTarget target = permanent.getChosenTarget();

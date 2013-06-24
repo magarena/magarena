@@ -6,5 +6,5 @@ rarity=U
 type=Land
 color=
 mana=b1g3r1u1w1
-ability=enters tapped,enters with charge 2,tap add mana {G},tap drain add mana any 
+ability=enters tapped,enters with charge 2,tap add mana {G},tap drain add mana any
 timing=tapland

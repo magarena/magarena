@@ -22,6 +22,6 @@
                     TokenCardDefinitions.get("Beast4")
                 ));
             }
-        } 
+        }
     }
 ]

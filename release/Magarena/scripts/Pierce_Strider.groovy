@@ -9,7 +9,7 @@
                 "Target opponent\$ loses 3 life."
             );
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game,new MagicPlayerAction() {
@@ -17,6 +17,6 @@
                     game.doAction(new MagicChangeLifeAction(player,-3));
                 }
             });
-        }        
+        }
     }
 ]

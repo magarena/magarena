@@ -14,7 +14,7 @@
                 "your graveyard to the battlefield."
             );
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCard(game,new MagicCardAction() {

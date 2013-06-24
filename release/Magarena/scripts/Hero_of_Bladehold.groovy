@@ -6,7 +6,7 @@
                 new MagicEvent(
                     permanent,
                     this,
-                    "PN puts two 1/1 white Soldier creature tokens " + 
+                    "PN puts two 1/1 white Soldier creature tokens " +
                     "onto the battlefield tapped and attacking."
                 ) :
                 MagicEvent.NONE;
@@ -18,6 +18,6 @@
             for (int count=0; count < 2; count++) {
                 game.doAction(new MagicPlayCardAction(card,player,MagicPlayCardAction.TAPPED_ATTACKING));
             }
-        }        
+        }
     }
 ]

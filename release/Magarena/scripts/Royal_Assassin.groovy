@@ -24,7 +24,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    if (creature.isTapped()) {                    
+                    if (creature.isTapped()) {
                         game.doAction(new MagicDestroyAction(creature));
                     }
                 }

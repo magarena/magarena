@@ -18,7 +18,7 @@
                     game.addEvent(new MagicDiscardEvent(event.getSource(),player));
                     if (event.isBuyback()) {
                         game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
-                    } 
+                    }
                 }
             });
         }

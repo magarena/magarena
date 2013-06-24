@@ -1,6 +1,6 @@
 name=Covert Operative
 url=http://magiccards.info/le/en/33.html
-image=http://magiccards.info/scans/en/le/33.jpg 
+image=http://magiccards.info/scans/en/le/33.jpg
 value=2.667
 ability=unblockable
 rarity=C

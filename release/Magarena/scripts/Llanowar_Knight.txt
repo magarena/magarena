@@ -1,6 +1,6 @@
 name=Llanowar Knight
 url=http://magiccards.info/in/en/254.html
-image=http://magiccards.info/scans/en/in/254.jpg 
+image=http://magiccards.info/scans/en/in/254.jpg
 value=3.757
 ability=protection from black
 rarity=C

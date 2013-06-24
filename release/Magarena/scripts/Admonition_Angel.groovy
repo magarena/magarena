@@ -2,11 +2,11 @@
     new MagicLandfallTrigger() {
         @Override
         protected MagicEvent getEvent(final MagicPermanent permanent) {
-            final MagicTargetFilter<MagicPermanent> targetFilter = 
+            final MagicTargetFilter<MagicPermanent> targetFilter =
                     new MagicOtherPermanentTargetFilter(
                         MagicTargetFilter.TARGET_NONLAND_PERMANENT,
                         permanent);
-            final MagicTargetChoice targetChoice = 
+            final MagicTargetChoice targetChoice =
                     new MagicTargetChoice(
                         targetFilter,
                         true,
@@ -20,7 +20,7 @@
                 "PN may\$ exile another target nonland permanent\$."
             );
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
@@ -30,6 +30,6 @@
                     }
                 });
             }
-        }        
+        }
     }
 ]

@@ -8,7 +8,7 @@ def ST = new MagicStatic(MagicLayer.Type) {
         flags.add(MagicSubType.Giant);
     }
 };
-   
+
 def AB = new MagicStatic(MagicLayer.Ability) {
     @Override
     public void modAbilityFlags(

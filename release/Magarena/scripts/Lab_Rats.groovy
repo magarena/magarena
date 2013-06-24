@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "PN puts a 1/1 black Rat creature token onto the battlefield. " + 
+                "PN puts a 1/1 black Rat creature token onto the battlefield. " +
                 "If the buyback cost was payed, return SN to its owner's hand as it resolves."
             );
         }
@@ -18,7 +18,7 @@
             ));
             if (event.isBuyback()) {
                 game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
-            } 
+            }
         }
     }
 ]

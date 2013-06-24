@@ -1,6 +1,6 @@
 name=Fugitive Wizard
 url=http://magiccards.info/10e/en/86.html
-image=http://magiccards.info/scans/en/10e/86.jpg 
+image=http://magiccards.info/scans/en/10e/86.jpg
 value=1.250
 rarity=C
 type=Creature

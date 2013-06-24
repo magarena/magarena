@@ -1,6 +1,6 @@
 name=Bog Wraith
 url=http://magiccards.info/m10/en/86.html
-image=http://magiccards.info/scans/en/m10/86.jpg 
+image=http://magiccards.info/scans/en/m10/86.jpg
 value=2.806
 ability=swampwalk
 rarity=U

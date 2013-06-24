@@ -5,7 +5,7 @@
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPermanent otherPermanent) {
-            return (otherPermanent.isCreature() && 
+            return (otherPermanent.isCreature() &&
                     otherPermanent.isFriend(permanent) &&
                     otherPermanent.hasSubType(MagicSubType.Human)) ?
                 new MagicEvent(
@@ -17,7 +17,7 @@
                 ) :
                 MagicEvent.NONE;
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game,new MagicTargetAction() {
@@ -29,7 +29,7 @@
                     );
                     game.doAction(new MagicDealDamageAction(damage));
                 }
-            });            
-        }        
+            });
+        }
     }
 ]

@@ -37,7 +37,7 @@
                 public void doAction(final MagicPermanent creature) {
                     if (creature.getPower() <= event.getPlayer().getNrOfPermanentsWithType(MagicType.Creature)) {
                         game.doAction(new MagicGainControlAction(event.getPlayer(),creature));
-                    }  
+                    }
                 }
             });
         }

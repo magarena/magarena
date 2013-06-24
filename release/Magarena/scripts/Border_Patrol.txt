@@ -1,6 +1,6 @@
 name=Border Patrol
 url=http://magiccards.info/ju/en/6.html
-image=http://magiccards.info/scans/en/ju/6.jpg 
+image=http://magiccards.info/scans/en/ju/6.jpg
 value=2.207
 ability=vigilance
 rarity=C

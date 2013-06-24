@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "PN puts a 3/3 green Beast creature token onto the battlefield. " + 
+                "PN puts a 3/3 green Beast creature token onto the battlefield. " +
                 "Then if your opponent controls more creatures than you, return SN to its owner's hand."
             );
         }

@@ -15,9 +15,9 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent targetPermanent) {
-                    final MagicTargetFilter<MagicPermanent> targetFilter = 
+                    final MagicTargetFilter<MagicPermanent> targetFilter =
                         new MagicTargetFilter.NameTargetFilter(targetPermanent.getName());
-                    final Collection<MagicPermanent> targets = 
+                    final Collection<MagicPermanent> targets =
                         game.filterPermanents(event.getPlayer(),targetFilter);
                     for (final MagicPermanent permanent : targets) {
                         if (permanent.isEnchantment()) {

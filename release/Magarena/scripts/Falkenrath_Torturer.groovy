@@ -3,7 +3,7 @@
         new MagicActivationHints(MagicTiming.Pump),
         "Pump"
     ) {
-        
+
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [
@@ -16,7 +16,7 @@
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             final boolean isHuman = payedCost.getTarget().hasSubType(MagicSubType.Human);
-            final String message = 
+            final String message =
                 "SN gains flying until end of turn." +
                 (isHuman ? " Put a +1/+1 counter on SN." : "");
             return new MagicEvent(

@@ -18,7 +18,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             event.processTargetCard(game,new MagicCardAction() {
-                public void doAction(final MagicCard targetCard) {              
+                public void doAction(final MagicCard targetCard) {
                     if (MagicCondition.THRESHOLD_CONDITION.accept(event.getSource())) {
                         game.doAction(new MagicReanimateAction(player,targetCard,MagicPlayCardAction.NONE));
                     } else {

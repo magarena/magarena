@@ -22,7 +22,7 @@
             }
             if (charges>=1) {
                 flags.add(MagicAbility.Deathtouch);
-            } 
+            }
         }
     }
 ]

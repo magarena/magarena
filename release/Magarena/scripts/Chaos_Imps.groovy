@@ -1,4 +1,4 @@
-[ 
+[
     new MagicStatic(MagicLayer.Ability) {
         @Override
         public void modAbilityFlags(

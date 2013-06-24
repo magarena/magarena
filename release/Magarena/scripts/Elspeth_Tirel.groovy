@@ -12,7 +12,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicChangeLifeAction(
-                player, 
+                player,
                 player.getNrOfPermanentsWithType(MagicType.Creature)
             ));
         }
@@ -28,7 +28,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicPlayTokensAction(event.getPlayer(), TokenCardDefinitions.get("Soldier"), 3)); 
+            game.doAction(new MagicPlayTokensAction(event.getPlayer(), TokenCardDefinitions.get("Soldier"), 3));
         }
     },
     new MagicPlaneswalkerActivation(-5) {
@@ -43,7 +43,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicTargetFilter<MagicPermanent> AllOtherPermanent = new MagicOtherPermanentTargetFilter(
-                MagicTargetFilter.TARGET_NONLAND_NONTOKEN_PERMANENT, 
+                MagicTargetFilter.TARGET_NONLAND_NONTOKEN_PERMANENT,
                 event.getPermanent()
             );
             final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(), AllOtherPermanent);

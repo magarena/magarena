@@ -19,6 +19,6 @@
                     game.doAction(new MagicTapAction(creature,true));
                 }
             });
-        }        
+        }
     }
 ]

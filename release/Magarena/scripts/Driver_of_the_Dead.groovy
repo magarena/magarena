@@ -3,7 +3,7 @@ def targetFilter = new MagicTargetFilter.MagicCMCCardFilter(
     MagicTargetFilter.Operator.LESS_THAN_OR_EQUAL,
     2
 );
-  
+
 def targetChoice = new MagicTargetChoice(
     targetFilter,false,MagicTargetHint.None,
     "target creature card from your graveyard)"

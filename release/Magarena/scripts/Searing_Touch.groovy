@@ -7,7 +7,7 @@
                 MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                 new MagicDamageTargetPicker(1),
                 this,
-                "SN deals 1 damage to target creature or player\$. " + 
+                "SN deals 1 damage to target creature or player\$. " +
                 "If the buyback cost was payed, return SN to its owner's hand as it resolves."
             );
         }
@@ -24,7 +24,7 @@
                     game.doAction(new MagicDealDamageAction(damage));
                     if (event.isBuyback()) {
                         game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
-                    } 
+                    }
                 }
             });
         }

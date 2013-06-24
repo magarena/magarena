@@ -13,7 +13,7 @@
                 "his or her graveyard to his or her hand."
             );
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {

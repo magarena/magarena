@@ -20,6 +20,6 @@
             final MagicPermanent permanent = event.getPermanent();
             game.doAction(new MagicChangeTurnPTAction(permanent,1,0));
             game.doAction(new MagicSetAbilityAction(permanent,MagicAbility.Trample));
-        }        
+        }
     }
 ]

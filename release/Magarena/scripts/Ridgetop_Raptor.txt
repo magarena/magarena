@@ -1,6 +1,6 @@
 name=Ridgetop Raptor
 url=http://magiccards.info/le/en/108.html
-image=http://magiccards.info/scans/en/le/108.jpg 
+image=http://magiccards.info/scans/en/le/108.jpg
 value=2.429
 ability=double strike
 rarity=U

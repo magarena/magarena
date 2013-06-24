@@ -1,6 +1,6 @@
 name=Avian Changeling
 url=http://magiccards.info/lw/en/4.html
-image=http://magiccards.info/scans/en/lw/4.jpg 
+image=http://magiccards.info/scans/en/lw/4.jpg
 value=2.932
 ability=changeling,flying
 rarity=C

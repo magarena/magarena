@@ -22,6 +22,6 @@
             if (event.isYes()) {
                 game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Eldrazi Spawn")));
             }
-        }        
+        }
     }
 ]

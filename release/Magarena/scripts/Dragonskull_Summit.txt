@@ -7,5 +7,5 @@ type=Land
 color=
 mana=b3r3
 ability=tap add mana {B} or {R},\
-        enters tapped unless swamp mountain 
+        enters tapped unless swamp mountain
 timing=land

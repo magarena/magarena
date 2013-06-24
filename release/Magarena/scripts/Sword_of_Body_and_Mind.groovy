@@ -3,15 +3,15 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicTarget targetPlayer=damage.getTarget();
-            return (damage.getSource() == permanent.getEquippedCreature() && 
-                    damage.getTarget().isPlayer() && 
+            return (damage.getSource() == permanent.getEquippedCreature() &&
+                    damage.getTarget().isPlayer() &&
                     damage.isCombat()) ?
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
                     targetPlayer,
                     this,
-                    "PN puts a 2/2 green Wolf creature token onto the battlefield and " + 
+                    "PN puts a 2/2 green Wolf creature token onto the battlefield and " +
                     "RN puts the top ten cards of his or her library into his or her graveyard."
                 ):
                 MagicEvent.NONE;

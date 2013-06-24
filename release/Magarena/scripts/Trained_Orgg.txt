@@ -1,6 +1,6 @@
 name=Trained Orgg
 url=http://magiccards.info/7e/en/224.html
-image=http://magiccards.info/scans/en/7e/224.jpg 
+image=http://magiccards.info/scans/en/7e/224.jpg
 value=1.380
 rarity=R
 type=Creature

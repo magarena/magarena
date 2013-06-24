@@ -5,6 +5,6 @@
             if (permanent.getOpponent().getHand().isEmpty()) {
                 pt.add(3,3);
             }
-        }        
+        }
     }
 ]

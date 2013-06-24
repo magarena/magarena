@@ -8,7 +8,7 @@
             } else if (charges >= 4) {
                 pt.set(4,4);
             }
-        }        
+        }
     },
     new MagicStatic(MagicLayer.Ability) {
         @Override
@@ -19,10 +19,10 @@
             final int charges = permanent.getCounters(MagicCounterType.Charge);
             if (charges >= 8) {
                 flags.add(MagicAbility.Trample);
-            } 
+            }
             if (charges >= 4) {
                 flags.add(MagicAbility.Flying);
-            } 
+            }
         }
     },
     new MagicPermanentActivation(

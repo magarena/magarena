@@ -7,7 +7,7 @@
                 MagicTargetChoice.TARGET_PERMANENT,
                 MagicBounceTargetPicker.getInstance(),
                 this,
-                "Return target permanent\$ to its owner's hand. " + 
+                "Return target permanent\$ to its owner's hand. " +
                 "If the buyback cost was payed, return SN to its owner's hand as it resolves."
             );
         }
@@ -19,7 +19,7 @@
                     game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
                     if (event.isBuyback()) {
                         game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
-                    } 
+                    }
                 }
             });
         }

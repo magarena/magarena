@@ -1,6 +1,6 @@
 name=Goblin Spelunkers
 url=http://magiccards.info/rav/en/128.html
-image=http://magiccards.info/scans/en/rav/128.jpg 
+image=http://magiccards.info/scans/en/rav/128.jpg
 value=2.852
 ability=mountainwalk
 rarity=C

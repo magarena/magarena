@@ -13,7 +13,7 @@
                 ) :
                 MagicEvent.NONE;
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getRefPermanent();
@@ -23,6 +23,6 @@
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });
-        }    
+        }
     }
 ]

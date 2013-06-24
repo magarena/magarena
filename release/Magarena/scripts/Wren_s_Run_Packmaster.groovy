@@ -1,6 +1,6 @@
 [
     new MagicStatic(
-        MagicLayer.Ability, 
+        MagicLayer.Ability,
         MagicTargetFilter.TARGET_WOLF_YOU_CONTROL
     ) {
         @Override
@@ -12,7 +12,7 @@
         new MagicActivationHints(MagicTiming.Token,true),
         "Token"
     ) {
-        
+
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [new MagicPayManaCostEvent(source,"{2}{G}")];
@@ -26,7 +26,7 @@
                 "PN puts a 2/2 green Wolf creature token onto the battlefield."
             );
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicPlayTokenAction(

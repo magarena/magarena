@@ -1,6 +1,6 @@
 name=Priests of Norn
 url=http://magiccards.info/mbs/en/16.html
-image=http://magiccards.info/scans/en/mbs/16.jpg 
+image=http://magiccards.info/scans/en/mbs/16.jpg
 value=3.597
 ability=vigilance,infect
 rarity=C

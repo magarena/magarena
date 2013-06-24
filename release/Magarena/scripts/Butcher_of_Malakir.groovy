@@ -30,8 +30,8 @@ def event = {
     new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            return (otherPermanent != permanent && 
-                    otherPermanent.isFriend(permanent) && 
+            return (otherPermanent != permanent &&
+                    otherPermanent.isFriend(permanent) &&
                     otherPermanent.isCreature()) ?
                 event(permanent) : MagicEvent.NONE;
         }

@@ -2,8 +2,8 @@
     new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            return (damage.getSource() == permanent && 
-                    damage.getTarget().isPlayer() && 
+            return (damage.getSource() == permanent &&
+                    damage.getTarget().isPlayer() &&
                     damage.isCombat()) ?
                 new MagicEvent(
                     permanent,
@@ -12,7 +12,7 @@
                         MagicColorChoice.MOST_INSTANCE
                     ),
                     this,
-                    "PN may\$ pay {2}{W}\$. If you do, choose a color\$. " + 
+                    "PN may\$ pay {2}{W}\$. If you do, choose a color\$. " +
                     "PN gains 1 life for each permanent of that color."
                 ):
                 MagicEvent.NONE;
@@ -28,11 +28,11 @@
                     if (permanent.hasColor(color)) {
                         life++;
                     }
-                }                
+                }
                 if (life>0) {
                     game.doAction(new MagicChangeLifeAction(player,life));
                 }
             }
-        }        
+        }
     }
 ]

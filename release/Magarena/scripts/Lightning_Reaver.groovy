@@ -18,7 +18,7 @@
     new MagicAtEndOfTurnTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eotPlayer) {
-            return (permanent.isController(eotPlayer) && 
+            return (permanent.isController(eotPlayer) &&
                     permanent.getCounters(MagicCounterType.Charge) > 0) ?
                 new MagicEvent(
                     permanent,
@@ -34,6 +34,6 @@
             final int counters=permanent.getCounters(MagicCounterType.Charge);
             final MagicDamage damage=new MagicDamage(permanent,event.getPlayer(),counters);
             game.doAction(new MagicDealDamageAction(damage));
-        }        
+        }
     }
 ]

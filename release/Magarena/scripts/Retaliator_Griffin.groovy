@@ -3,7 +3,7 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final int amount=damage.getDealtAmount();
-            return (amount > 0 && 
+            return (amount > 0 &&
                     permanent.isController(damage.getTarget()) &&
                     permanent.isEnemy(damage.getSource())) ?
                 new MagicEvent(
@@ -22,6 +22,6 @@
                 event.getRefInt(),
                 true
             ));
-        }        
+        }
     }
 ]

@@ -6,8 +6,8 @@
                 new MagicEvent(
                     permanent,
                     new MagicSimpleMayChoice(
-                        MagicSimpleMayChoice.DRAW_CARDS, 
-                        0, 
+                        MagicSimpleMayChoice.DRAW_CARDS,
+                        0,
                         MagicSimpleMayChoice.DEFAULT_NONE
                     ),
                     this,

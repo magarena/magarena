@@ -13,7 +13,7 @@
                 ):
                 MagicEvent.NONE;
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets = game.filterPermanents(
@@ -26,6 +26,6 @@
                     MagicAbility.Lifelink
                 ));
             }
-        }        
+        }
     }
 ]

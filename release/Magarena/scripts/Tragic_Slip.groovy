@@ -13,7 +13,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {    
+            event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     final int amount = game.getCreatureDiedThisTurn() ? -13 : -1;
                     game.doAction(new MagicChangeTurnPTAction(creature,amount,amount));

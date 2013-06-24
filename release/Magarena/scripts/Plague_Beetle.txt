@@ -1,6 +1,6 @@
 name=Plague Beetle
 url=http://magiccards.info/10e/en/168.html
-image=http://magiccards.info/scans/en/10e/168.jpg 
+image=http://magiccards.info/scans/en/10e/168.jpg
 value=2.643
 ability=swampwalk
 rarity=C

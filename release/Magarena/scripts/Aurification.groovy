@@ -14,7 +14,7 @@ def AB = new MagicStatic(MagicLayer.Ability) {
         return target.getCounters(MagicCounterType.Gold) > 0;
     }
 };
- 
+
 def ST = new MagicStatic(MagicLayer.Type) {
     @Override
     public void modSubTypeFlags(
@@ -35,7 +35,7 @@ def ST = new MagicStatic(MagicLayer.Type) {
     new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            return (permanent.isController(damage.getTarget()) && 
+            return (permanent.isController(damage.getTarget()) &&
                     damage.getSource().isCreature()) ?
                 new MagicEvent(
                     permanent,
@@ -45,7 +45,7 @@ def ST = new MagicStatic(MagicLayer.Type) {
                 ) :
                 MagicEvent.NONE;
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent creature = event.getRefPermanent();

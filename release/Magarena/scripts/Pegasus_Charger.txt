@@ -1,6 +1,6 @@
 name=Pegasus Charger
 url=http://magiccards.info/9e/en/34.html
-image=http://magiccards.info/scans/en/9e/34.jpg 
+image=http://magiccards.info/scans/en/9e/34.jpg
 value=3.391
 ability=flying,first strike
 rarity=C

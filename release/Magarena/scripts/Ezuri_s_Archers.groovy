@@ -3,7 +3,7 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
             final MagicPermanent blocked=permanent.getBlockedCreature();
-            return (permanent==blocker && 
+            return (permanent==blocker &&
                     blocked.isValid() &&
                     blocked.hasAbility(MagicAbility.Flying)) ?
                 new MagicEvent(

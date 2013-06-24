@@ -7,7 +7,7 @@
                 MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                 new MagicDamageTargetPicker(5),
                 this,
-                "SN deals 5 damage to target creature or player\$. " + 
+                "SN deals 5 damage to target creature or player\$. " +
                 "Shuffle SN into its owner's library."
             );
         }

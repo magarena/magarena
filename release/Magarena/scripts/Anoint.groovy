@@ -7,7 +7,7 @@
                 MagicTargetChoice.POS_TARGET_CREATURE,
                 MagicPreventTargetPicker.getInstance(),
                 this,
-                "Prevent the next 3 damage that would be dealt to target creature\$ this turn. " + 
+                "Prevent the next 3 damage that would be dealt to target creature\$ this turn. " +
                 "If the buyback cost was payed, return SN to its owner's hand as it resolves."
             );
         }
@@ -19,7 +19,7 @@
                     game.doAction(new MagicPreventDamageAction(permanent,3));
                     if (event.isBuyback()) {
                         game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
-                    } 
+                    }
                 }
             });
         }

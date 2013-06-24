@@ -2,7 +2,7 @@
     new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            return (otherPermanent != permanent && 
+            return (otherPermanent != permanent &&
                     otherPermanent.isCreature()) ?
                 new MagicEvent(
                     permanent,
@@ -11,10 +11,10 @@
                 ):
                 MagicEvent.NONE;
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));            
-        }        
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
+        }
     }
 ]

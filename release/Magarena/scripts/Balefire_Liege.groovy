@@ -1,6 +1,6 @@
 [
     new MagicStatic(
-        MagicLayer.ModPT, 
+        MagicLayer.ModPT,
         MagicTargetFilter.TARGET_RED_CREATURE_YOU_CONTROL) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
@@ -12,7 +12,7 @@
         }
     },
     new MagicStatic(
-        MagicLayer.ModPT, 
+        MagicLayer.ModPT,
         MagicTargetFilter.TARGET_WHITE_CREATURE_YOU_CONTROL) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
@@ -26,7 +26,7 @@
     new MagicWhenOtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
-            return (permanent.isFriend(cardOnStack) && 
+            return (permanent.isFriend(cardOnStack) &&
                     cardOnStack.hasColor(MagicColor.Red)) ?
                 new MagicEvent(
                     permanent,
@@ -44,12 +44,12 @@
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });
-        }        
+        }
     },
     new MagicWhenOtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
-            return (permanent.isFriend(cardOnStack) && 
+            return (permanent.isFriend(cardOnStack) &&
                     cardOnStack.hasColor(MagicColor.White)) ?
                 new MagicEvent(
                     permanent,

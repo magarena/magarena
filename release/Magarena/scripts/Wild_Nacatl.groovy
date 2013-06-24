@@ -8,12 +8,12 @@
             if (targets1.size() > 0) {
                 pt.add(1,1);
             }
-            
+
             final Collection<MagicPermanent> targets2 =
                     game.filterPermanents(permanent.getController(),MagicTargetFilter.TARGET_PLAINS_YOU_CONTROL);
             if (targets2.size() > 0) {
                 pt.add(1,1);
-            }    
+            }
         }
     }
 ]

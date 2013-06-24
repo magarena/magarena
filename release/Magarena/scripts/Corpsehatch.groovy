@@ -7,7 +7,7 @@
                 MagicTargetChoice.NEG_TARGET_NONBLACK_CREATURE,
                 new MagicDestroyTargetPicker(false),
                 this,
-                "Destroy target nonblack creature\$. " + 
+                "Destroy target nonblack creature\$. " +
                 "Put two 0/1 colorless Eldrazi Spawn creature tokens onto the battlefield. " +
                 "They have \"Sacrifice this creature: Add {1} to your mana pool.\""
             );

@@ -2,8 +2,8 @@
     new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            return (damage.getSource() == permanent.getEquippedCreature() && 
-                    damage.getTarget().isPlayer() && 
+            return (damage.getSource() == permanent.getEquippedCreature() &&
+                    damage.getTarget().isPlayer() &&
                     damage.isCombat()) ?
                 new MagicEvent(
                     permanent,
@@ -23,7 +23,7 @@
             if (event.isYes()) {
                 event.processTargetCard(game,new MagicCardAction() {
                     public void doAction(final MagicCard card) {
-                        game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard)); 
+                        game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
                         game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
                     }
                 });

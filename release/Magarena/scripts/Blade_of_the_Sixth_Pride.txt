@@ -1,6 +1,6 @@
 name=Blade of the Sixth Pride
 url=http://magiccards.info/fut/en/19.html
-image=http://magiccards.info/scans/en/fut/19.jpg 
+image=http://magiccards.info/scans/en/fut/19.jpg
 value=3.943
 rarity=C
 type=Creature

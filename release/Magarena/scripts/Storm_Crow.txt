@@ -1,6 +1,6 @@
 name=Storm Crow
 url=http://magiccards.info/9e/en/100.html
-image=http://magiccards.info/scans/en/9e/100.jpg 
+image=http://magiccards.info/scans/en/9e/100.jpg
 value=4.273
 ability=flying
 rarity=C

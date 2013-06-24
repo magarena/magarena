@@ -27,10 +27,10 @@
             final int amount=source.getCounters(MagicCounterType.Charge);
             final Collection<MagicPermanent> targets=
                 game.filterPermanents(
-                    source.getController(), 
+                    source.getController(),
                     new MagicTargetFilter.MagicCMCPermanentFilter(
-                        MagicTargetFilter.TARGET_NONLAND_PERMANENT, 
-                        MagicTargetFilter.Operator.EQUAL, 
+                        MagicTargetFilter.TARGET_NONLAND_PERMANENT,
+                        MagicTargetFilter.Operator.EQUAL,
                         amount
                     )
                 );

@@ -24,7 +24,7 @@ def C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
     @Override
     public int getColorFlags(final MagicPermanent permanent,final int flags) {
         return MagicColor.Blue.getMask();
-    }        
+    }
 };
 [
     new MagicPermanentActivation(
@@ -45,7 +45,7 @@ def C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
             return new MagicEvent(
                 source,
                 this,
-                "Until end of turn, SN becomes a 2/1 blue Faerie creature with flying. " + 
+                "Until end of turn, SN becomes a 2/1 blue Faerie creature with flying. " +
                 "It's still a land."
             );
         }

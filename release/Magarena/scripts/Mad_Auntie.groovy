@@ -16,7 +16,7 @@
         }
     },
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Pump, false), 
+        new MagicActivationHints(MagicTiming.Pump, false),
         "Regen"
     ) {
 
@@ -35,7 +35,7 @@
                 targetFilter, true, MagicTargetHint.Positive,
                 "another target Goblin");
             return new MagicEvent(
-                source, 
+                source,
                 targetChoice,
                 MagicRegenerateTargetPicker.getInstance(),
                 this,

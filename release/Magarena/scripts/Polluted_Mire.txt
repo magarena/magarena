@@ -1,5 +1,5 @@
 name=Polluted Mire
-url=http://magiccards.info/pd3/en/26.html 
+url=http://magiccards.info/pd3/en/26.html
 image=http://magiccards.info/scans/en/pd3/26.jpg
 value=3.553
 rarity=C

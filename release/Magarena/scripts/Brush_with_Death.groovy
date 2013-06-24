@@ -6,7 +6,7 @@
                 cardOnStack,
                 MagicTargetChoice.TARGET_OPPONENT,
                 this,
-                "Target opponent\$ loses 2 life and PN gains 2 life. " + 
+                "Target opponent\$ loses 2 life and PN gains 2 life. " +
                 "If the buyback cost was payed, return SN to its owner's hand as it resolves."
             );
         }
@@ -19,7 +19,7 @@
                     game.doAction(new MagicChangeLifeAction(event.getPlayer(),2));
                     if (event.isBuyback()) {
                         game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
-                    } 
+                    }
                 }
             });
         }

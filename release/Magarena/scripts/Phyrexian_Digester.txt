@@ -1,6 +1,6 @@
 name=Phyrexian Digester
 url=http://magiccards.info/mbs/en/120.html
-image=http://magiccards.info/scans/en/mbs/120.jpg 
+image=http://magiccards.info/scans/en/mbs/120.jpg
 value=2.083
 ability=infect
 rarity=C

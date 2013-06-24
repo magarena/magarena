@@ -1,6 +1,6 @@
 [
     new MagicStatic(
-        MagicLayer.ModPT, 
+        MagicLayer.ModPT,
         MagicTargetFilter.TARGET_BLACK_CREATURE_YOU_CONTROL
     ) {
         @Override
@@ -13,7 +13,7 @@
         }
     },
     new MagicStatic(
-        MagicLayer.ModPT, 
+        MagicLayer.ModPT,
         MagicTargetFilter.TARGET_GREEN_CREATURE_YOU_CONTROL
     ) {
         @Override
@@ -47,6 +47,6 @@
             if (event.isYes()) {
                 game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Worm")));
             }
-        }        
+        }
     }
 ]

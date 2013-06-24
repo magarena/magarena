@@ -27,7 +27,7 @@
             // exchange life with toughness even when they are equal
             // because toughness can be modified in layer ModPT (7c)
             game.doAction(new MagicChangeLifeAction(player,toughness - life));
-            game.doAction(new MagicAddStaticAction(permanent, 
+            game.doAction(new MagicAddStaticAction(permanent,
                 new MagicStatic(MagicLayer.SetPT) {
                 @Override
                 public void modPowerToughness(
@@ -35,7 +35,7 @@
                         final MagicPermanent P,
                         final MagicPowerToughness pt) {
                     pt.setToughness(life);
-                }   
+                }
             }));
         }
     }

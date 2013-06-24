@@ -13,11 +13,11 @@
                 ):
                 MagicEvent.NONE;
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,1,true));
-        }        
+        }
     },
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Draw),

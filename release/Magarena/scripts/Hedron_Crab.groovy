@@ -17,6 +17,6 @@
                     game.doAction(new MagicMillLibraryAction(player,3));
                 }
             });
-        }        
+        }
     }
 ]

@@ -7,8 +7,8 @@
                 MagicTargetChoice.NEG_TARGET_NONBLACK_CREATURE,
                 new MagicDestroyTargetPicker(true),
                 this,
-                "Destroy target nonblack creature\$. " + 
-                "It can't be regenerated. " + 
+                "Destroy target nonblack creature\$. " +
+                "It can't be regenerated. " +
                 "Put X 1/1 green Saproling creature tokens onto the battlefield, where X is that creature's converted mana cost."
             );
         }

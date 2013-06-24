@@ -3,13 +3,13 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicPlayer attackingPlayer = damage.getSource().getController();
-            return (damage.getTarget() == permanent && 
+            return (damage.getTarget() == permanent &&
                     damage.isCombat()) ?
                 new MagicEvent(
                     permanent,
                     damage.getDealtAmount(),
                     this,
-                    "PN gains RN life and " +  
+                    "PN gains RN life and " +
                     attackingPlayer + " loses RN life."
                 ) :
                 MagicEvent.NONE;

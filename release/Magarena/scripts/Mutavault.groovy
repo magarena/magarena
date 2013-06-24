@@ -37,7 +37,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
             return new MagicEvent(
                 source,
                 this,
-                "SN becomes a 2/2 creature with all creature types until end of turn. " + 
+                "SN becomes a 2/2 creature with all creature types until end of turn. " +
                 "It's still a land."
             );
         }

@@ -1,6 +1,6 @@
 name=Cobalt Golem
 url=http://magiccards.info/mi/en/157.html
-image=http://magiccards.info/scans/en/mi/157.jpg 
+image=http://magiccards.info/scans/en/mi/157.jpg
 value=1.939
 rarity=C
 type=Artifact,Creature

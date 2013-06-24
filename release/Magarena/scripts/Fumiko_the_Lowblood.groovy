@@ -15,7 +15,7 @@ def event = {
 
 [
     new MagicStatic(
-        MagicLayer.Ability, 
+        MagicLayer.Ability,
         MagicTargetFilter.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS
     ) {
         @Override

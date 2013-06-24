@@ -10,7 +10,7 @@
                 "SN deals damage equal to its power to target creature or player\$."
             );
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent=event.getPermanent();

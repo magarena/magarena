@@ -2,7 +2,7 @@
     new MagicWhenOtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack spell) {
-            return (permanent.isFriend(spell) && 
+            return (permanent.isFriend(spell) &&
                     spell.getCardDefinition().isArtifact()) ?
                 new MagicEvent(
                     permanent,
@@ -27,6 +27,6 @@
                     }
                 });
             }
-        }        
+        }
     }
 ]

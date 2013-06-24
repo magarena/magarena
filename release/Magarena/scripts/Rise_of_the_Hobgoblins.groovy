@@ -47,7 +47,7 @@
                 "You may pay\$ {X}\$. If you do, put X 1/1 red and white Goblin Soldier creature tokens onto the battlefield."
             );
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {

@@ -7,7 +7,7 @@
                 MagicTargetChoice.NEG_TARGET_PERMANENT,
                 MagicExileTargetPicker.create(),
                 this,
-                "Gain control of target permanent\$ until end of turn. " + 
+                "Gain control of target permanent\$ until end of turn. " +
                 "Untap that permanent. It gains haste until end of turn."
             );
         }

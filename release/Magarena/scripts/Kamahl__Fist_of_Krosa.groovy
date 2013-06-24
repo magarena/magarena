@@ -10,7 +10,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         return flags|MagicType.Creature.getMask();
     }
 };
-[    
+[
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Animate),
         "Animate"

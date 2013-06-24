@@ -18,7 +18,7 @@
                 new MagicWeakenTargetPicker(0,amount),
                 amount,
                 this,
-                "Target creature\$ gets -0/-RN until end of turn and " + 
+                "Target creature\$ gets -0/-RN until end of turn and " +
                 "SN gets +RN/+0 until end of turn."
             );
         }

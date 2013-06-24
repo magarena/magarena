@@ -14,7 +14,7 @@
                 game.doAction(new MagicDrawAction(player, 3));
                 game.addEvent(MagicDiscardEvent.Random(
                     event.getSource(),
-                    player, 
+                    player,
                     3
                 ));
             }

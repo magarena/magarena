@@ -1,6 +1,6 @@
 [
     new MagicStatic(
-        MagicLayer.ModPT, 
+        MagicLayer.ModPT,
         MagicTargetFilter.TARGET_GREEN_CREATURE_YOU_CONTROL
     ) {
         @Override
@@ -13,7 +13,7 @@
         }
     },
     new MagicStatic(
-        MagicLayer.ModPT, 
+        MagicLayer.ModPT,
         MagicTargetFilter.TARGET_WHITE_CREATURE_YOU_CONTROL
     ) {
         @Override

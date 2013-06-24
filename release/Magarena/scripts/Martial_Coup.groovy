@@ -6,7 +6,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "Put "+x+" 1/1 white Soldier creature tokens onto the battlefield." + 
+                "Put "+x+" 1/1 white Soldier creature tokens onto the battlefield." +
                 (x >= 5 ? " Destroy all other creatures.":"")
             );
         }
@@ -19,7 +19,7 @@
                 for (final MagicPermanent target : targets) {
                     game.doAction(new MagicDestroyAction(target));
                 }
-            } 
+            }
             game.doAction(new MagicPlayTokensAction(player,TokenCardDefinitions.get("Soldier"),x));
         }
     }

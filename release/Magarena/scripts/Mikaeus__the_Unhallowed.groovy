@@ -1,6 +1,6 @@
 [
     new MagicStatic(
-        MagicLayer.ModPT, 
+        MagicLayer.ModPT,
         MagicTargetFilter.TARGET_NONHUMAN_CREATURE_YOU_CONTROL
     ) {
         @Override
@@ -13,7 +13,7 @@
         }
     },
     new MagicStatic(
-        MagicLayer.Ability, 
+        MagicLayer.Ability,
         MagicTargetFilter.TARGET_NONHUMAN_CREATURE_YOU_CONTROL
     ) {
         @Override
@@ -31,7 +31,7 @@
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicDamage damage) {
-            return (permanent.isController(damage.getTarget()) && 
+            return (permanent.isController(damage.getTarget()) &&
                     damage.getSource().isPermanent() &&
                     damage.getSource().hasSubType(MagicSubType.Human)) ?
                 new MagicEvent(
@@ -42,7 +42,7 @@
                 ):
                 MagicEvent.NONE;
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicDestroyAction(event.getRefPermanent()));

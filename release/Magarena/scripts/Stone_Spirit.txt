@@ -1,6 +1,6 @@
 name=Stone Spirit
 url=http://magiccards.info/me2/en/150.html
-image=http://magiccards.info/scans/en/me2/150.jpg 
+image=http://magiccards.info/scans/en/me2/150.jpg
 value=2.739
 rarity=U
 type=Creature

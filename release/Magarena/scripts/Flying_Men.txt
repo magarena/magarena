@@ -1,6 +1,6 @@
 name=Flying Men
 url=http://magiccards.info/tsts/en/20.html
-image=http://magiccards.info/scans/en/tsts/20.jpg 
+image=http://magiccards.info/scans/en/tsts/20.jpg
 value=4.033
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Grizzly Bears
 url=http://magiccards.info/10e/en/268.html
-image=http://magiccards.info/scans/en/10e/268.jpg 
+image=http://magiccards.info/scans/en/10e/268.jpg
 value=3.699
 rarity=C
 type=Creature

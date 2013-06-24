@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.POS_TARGET_PERMANENT, 
+                MagicTargetChoice.POS_TARGET_PERMANENT,
                 MagicFirstStrikeTargetPicker.create(),
                 this,
                 "Target creature\$ gets +1/+0 and gains flying" +
@@ -19,7 +19,7 @@
                     game.doAction(new MagicSetAbilityAction(
                         creature,
                         [
-                            MagicAbility.Flying, 
+                            MagicAbility.Flying,
                             MagicAbility.FirstStrike
                         ]
                     ));

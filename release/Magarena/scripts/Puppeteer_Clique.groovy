@@ -11,7 +11,7 @@
                 "It has haste. At the end of your turn, exile it."
             );
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCard(game,new MagicCardAction() {

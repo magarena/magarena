@@ -19,7 +19,7 @@
                     game.doAction(new MagicTapAction(permanent,true));
                     if (event.isBuyback()) {
                         game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
-                    } 
+                    }
                 }
             });
         }

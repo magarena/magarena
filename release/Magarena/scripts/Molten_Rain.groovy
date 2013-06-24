@@ -7,7 +7,7 @@
                 MagicTargetChoice.NEG_TARGET_LAND,
                 new MagicDestroyTargetPicker(false),
                 this,
-                "Destroy target land\$. " + 
+                "Destroy target land\$. " +
                 "If that land was nonbasic, SN deals 2 damage to the land's controller."
             );
         }

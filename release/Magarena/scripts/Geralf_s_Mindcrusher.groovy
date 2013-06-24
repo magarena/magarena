@@ -19,7 +19,7 @@
                 public void doAction(final MagicPlayer targetPlayer) {
                     game.doAction(new MagicMillLibraryAction(targetPlayer,5));
                 }
-            });    
+            });
         }
     }
 ]

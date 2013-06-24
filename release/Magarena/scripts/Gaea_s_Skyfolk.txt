@@ -1,6 +1,6 @@
 name=Gaea's Skyfolk
 url=http://magiccards.info/ap/en/101.html
-image=http://magiccards.info/scans/en/ap/101.jpg 
+image=http://magiccards.info/scans/en/ap/101.jpg
 value=4.222
 ability=flying
 rarity=C

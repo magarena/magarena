@@ -3,7 +3,7 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
             return (otherPermanent != permanent &&
-                    otherPermanent.isCreature() && 
+                    otherPermanent.isCreature() &&
                     otherPermanent.isFriend(permanent)) ?
                 new MagicEvent(
                     permanent,
@@ -19,7 +19,7 @@
                 MagicCounterType.Charge,
                 1,
                 true
-            ));            
-        }        
+            ));
+        }
     }
 ]

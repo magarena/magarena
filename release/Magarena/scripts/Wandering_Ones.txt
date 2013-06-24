@@ -1,6 +1,6 @@
 name=Wandering Ones
 url=http://magiccards.info/chk/en/100.html
-image=http://magiccards.info/scans/en/chk/100.jpg 
+image=http://magiccards.info/scans/en/chk/100.jpg
 value=3.153
 rarity=C
 type=Creature

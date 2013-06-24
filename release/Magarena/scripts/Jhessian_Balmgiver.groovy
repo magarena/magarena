@@ -27,6 +27,6 @@
                     game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Unblockable));
                 }
             });
-        }    
+        }
     }
 ]
