@@ -11,6 +11,7 @@ import java.io.FilenameFilter;
 import java.io.IOException;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
+import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -149,6 +150,11 @@ public class CardDefinitions {
                 return name.toLowerCase().endsWith(".txt");
             }
         });
+        
+        //sort files to ensure consistent order
+        Arrays.sort(files);
+
+        //load the card definitions
         for (final File file : files) {
             loadCardDefinition(file);
         }
