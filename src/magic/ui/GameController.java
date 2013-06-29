@@ -142,11 +142,7 @@ public class GameController {
     }
 
     private void resume(final boolean undoClicked) {
-        try {
-            input.put(undoClicked);
-        } catch (final InterruptedException ex) {
-            throw new RuntimeException(ex);
-        }
+        input.offer(undoClicked);
     }
 
     public void passKeyPressed() {
