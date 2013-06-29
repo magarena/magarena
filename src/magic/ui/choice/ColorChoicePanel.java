@@ -26,7 +26,6 @@ public class ColorChoicePanel extends JPanel implements ActionListener {
     private MagicColor color;
 
     public ColorChoicePanel(final GameController controller,final MagicSource source) {
-
         this.controller=controller;
 
         setLayout(new BorderLayout());
@@ -52,13 +51,11 @@ public class ColorChoicePanel extends JPanel implements ActionListener {
     }
 
     public MagicColor getColor() {
-
         return color;
     }
 
     @Override
     public void actionPerformed(final ActionEvent event) {
-
         color=MagicColor.getColor(event.getActionCommand().charAt(0));
         controller.actionClicked();
     }
