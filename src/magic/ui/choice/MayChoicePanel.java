@@ -80,7 +80,7 @@ public class MayChoicePanel extends JPanel implements ActionListener {
 
     @Override
     public void actionPerformed(final ActionEvent event) {
-        yes=event.getSource()==yesButton;
+        yes = event.getSource() == yesButton;
         controller.actionClicked();
     }
 }
