@@ -40,7 +40,6 @@ public class GameViewer extends TexturedPanel implements ActionListener {
     private final JPanel actionPanel;
     private final CardLayout actionCardLayout;
     private final JPanel contentPanel;
-    private JComponent content;
     private boolean actionEnabled;
 
     public GameViewer(final MagicGame game,final GameController controller) {
@@ -113,12 +112,13 @@ public class GameViewer extends TexturedPanel implements ActionListener {
         titleBar.setText("Turn " + game.getTurn() + " : " + game.getPhase().getType().getName());
         titleBar.setIcon(game.getTurnPlayer() == game.getVisiblePlayer() ? IconImages.YOU : IconImages.OPPONENT);
     }
+    
+    public void clearContentPanel() {
+        contentPanel.removeAll();
+    }
 
-    public void showComponent(final JComponent newContent) {
-        if (content!=null) {
-            contentPanel.remove(content);
-        }
-        content=newContent;
+    public void setContentPanel(final JComponent newContent) {
+        clearContentPanel();
         contentPanel.add(newContent,BorderLayout.CENTER);
         revalidate();
         repaint();
@@ -126,7 +126,7 @@ public class GameViewer extends TexturedPanel implements ActionListener {
 
     public void showMessage(final String message) {
         final TextLabel messageLabel=new TextLabel(message,TEXT_WIDTH,true);
-        showComponent(messageLabel);
+        setContentPanel(messageLabel);
     }
 
     public MagicGame getGame() {

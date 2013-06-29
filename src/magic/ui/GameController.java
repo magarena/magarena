@@ -159,6 +159,7 @@ public class GameController {
     }
 
     public void actionClicked() {
+        gameViewer.clearContentPanel();
         actionClicked = true;
         choiceClicked = MagicTargetNone.getInstance();
         resume(false);
@@ -370,7 +371,7 @@ public class GameController {
                 try {
                     final E content = func.call();
                     ref.set(content);
-                    gameViewer.showComponent(content);
+                    gameViewer.setContentPanel(content);
                 } catch (Exception ex) {
                     except.set(ex);
                 }
