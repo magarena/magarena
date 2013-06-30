@@ -1,7 +1,7 @@
 name=Blitz Hellion
 url=http://magiccards.info/arb/en/49.html
 image=http://magiccards.info/scans/en/arb/49.jpg
-value=3.770
+value=3.280
 rarity=R
 type=Creature
 subtype=Hellion

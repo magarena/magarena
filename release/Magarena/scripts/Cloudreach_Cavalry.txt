@@ -1,7 +1,7 @@
 name=Cloudreach Cavalry
 url=http://magiccards.info/le/en/7.html
 image=http://magiccards.info/scans/en/le/7.jpg
-value=3.611
+value=3.312
 rarity=U
 type=Creature
 subtype=Human,Soldier

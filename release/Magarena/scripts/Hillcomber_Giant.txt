@@ -1,7 +1,7 @@
 name=Hillcomber Giant
 url=http://magiccards.info/lw/en/20.html
 image=http://magiccards.info/scans/en/lw/20.jpg
-value=2.952
+value=2.500
 ability=mountainwalk
 rarity=C
 type=Creature

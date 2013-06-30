@@ -1,7 +1,7 @@
 name=Sivitri Scarzam
 url=http://magiccards.info/me3/en/175.html
 image=http://magiccards.info/scans/en/me3/175.jpg
-value=1.841
+value=1.826
 rarity=C
 type=Legendary,Creature
 subtype=Human

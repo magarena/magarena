@@ -1,7 +1,7 @@
 name=Skizzik
 url=http://magiccards.info/in/en/169.html
 image=http://magiccards.info/scans/en/in/169.jpg
-value=4.573
+value=4.336
 rarity=R
 type=Creature
 subtype=Elemental

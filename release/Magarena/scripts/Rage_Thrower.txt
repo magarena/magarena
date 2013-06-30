@@ -1,7 +1,7 @@
 name=Rage Thrower
 url=http://magiccards.info/isd/en/157.html
 image=http://magiccards.info/scans/en/isd/157.jpg
-value=3.254
+value=3.267
 rarity=U
 type=Creature
 subtype=Human,Shaman

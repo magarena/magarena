@@ -1,7 +1,7 @@
 name=Strandwalker
 url=http://magiccards.info/mbs/en/137.html
 image=http://magiccards.info/scans/en/mbs/137.jpg
-value=2.853
+value=2.837
 rarity=U
 type=Artifact
 subtype=Equipment

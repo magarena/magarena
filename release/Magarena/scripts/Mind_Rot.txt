@@ -1,7 +1,7 @@
 name=Mind Rot
 url=http://magiccards.info/m12/en/101.html
 image=http://magiccards.info/scans/en/m12/101.jpg
-value=3.653
+value=3.648
 rarity=C
 type=Sorcery
 cost={2}{B}

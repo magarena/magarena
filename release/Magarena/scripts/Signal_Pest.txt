@@ -1,7 +1,7 @@
 name=Signal Pest
 url=http://magiccards.info/mbs/en/131.html
 image=http://magiccards.info/scans/en/mbs/131.jpg
-value=3.906
+value=3.907
 rarity=U
 type=Artifact,Creature
 subtype=Pest

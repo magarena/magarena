@@ -1,7 +1,7 @@
 name=Morphling
 url=http://magiccards.info/us/en/85.html
 image=http://magiccards.info/scans/en/us/85.jpg
-value=4.470
+value=4.480
 rarity=R
 type=Creature
 subtype=Shapeshifter

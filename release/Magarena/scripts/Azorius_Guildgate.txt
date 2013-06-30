@@ -1,7 +1,7 @@
 name=Azorius Guildgate
 url=http://magiccards.info/rtr/en/237.html
 image=http://magiccards.info/scans/en/rtr/237.jpg
-value=3.312
+value=3.417
 rarity=C
 type=Land
 subtype=Gate

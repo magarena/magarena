@@ -1,7 +1,7 @@
 name=Unyaro Bees
 url=http://magiccards.info/ts/en/231.html
 image=http://magiccards.info/scans/en/ts/231.jpg
-value=4.037
+value=4.046
 rarity=R
 type=Creature
 subtype=Insect

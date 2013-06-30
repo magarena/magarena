@@ -1,7 +1,7 @@
 name=Tricks of the Trade
 url=http://magiccards.info/m13/en/74.html
 image=http://magiccards.info/scans/en/m13/74.jpg
-value=3.062
+value=2.986
 rarity=C
 type=Enchantment
 subtype=Aura

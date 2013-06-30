@@ -1,7 +1,7 @@
 name=Wreak Havoc
 url=http://magiccards.info/gp/en/139.html
 image=http://magiccards.info/scans/en/gp/139.jpg
-value=3.224
+value=3.218
 removal=4
 rarity=U
 type=Sorcery

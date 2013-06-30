@@ -1,7 +1,7 @@
 name=Blanchwood Treefolk
 url=http://magiccards.info/us/en/238.html
 image=http://magiccards.info/scans/en/us/238.jpg
-value=2.855
+value=2.838
 rarity=C
 type=Creature
 subtype=Treefolk

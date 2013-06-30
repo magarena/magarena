@@ -1,7 +1,7 @@
 name=Essence Warden
 url=http://magiccards.info/ddh/en/3.html
 image=http://magiccards.info/scans/en/ddh/3.jpg
-value=4.162
+value=4.184
 rarity=C
 type=Creature
 subtype=Elf,Shaman

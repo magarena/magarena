@@ -1,7 +1,7 @@
 name=Trained Caracal
 url=http://magiccards.info/rtr/en/27.html
 image=http://magiccards.info/scans/en/rtr/27.jpg
-value=2.765
+value=2.774
 ability=lifelink
 rarity=C
 type=Creature

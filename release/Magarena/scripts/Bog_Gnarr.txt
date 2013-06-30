@@ -1,7 +1,7 @@
 name=Bog Gnarr
 url=http://magiccards.info/ap/en/76.html
 image=http://magiccards.info/scans/en/ap/76.jpg
-value=2.621
+value=2.550
 rarity=C
 type=Creature
 subtype=Beast

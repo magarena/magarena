@@ -1,7 +1,7 @@
 name=Razorfin Hunter
 url=http://magiccards.info/ap/en/119.html
 image=http://magiccards.info/scans/en/ap/119.jpg
-value=4.500
+value=4.505
 rarity=C
 type=Creature
 subtype=Goblin,Merfolk

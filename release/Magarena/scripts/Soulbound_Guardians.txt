@@ -1,7 +1,7 @@
 name=Soulbound Guardians
 url=http://magiccards.info/roe/en/45.html
 image=http://magiccards.info/scans/en/roe/45.jpg
-value=2.242
+value=2.282
 ability=defender,flying
 rarity=U
 type=Creature

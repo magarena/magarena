@@ -1,7 +1,7 @@
 name=Sunken City
 url=http://magiccards.info/med/en/51.html
 image=http://magiccards.info/scans/en/med/51.jpg
-value=3.036
+value=3.167
 rarity=C
 type=Enchantment
 cost={U}{U}

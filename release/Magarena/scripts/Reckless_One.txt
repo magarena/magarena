@@ -1,7 +1,7 @@
 name=Reckless One
 url=http://magiccards.info/evg/en/48.html
 image=http://magiccards.info/scans/en/evg/48.jpg
-value=3.911
+value=3.913
 rarity=U
 type=Creature
 subtype=Goblin,Avatar

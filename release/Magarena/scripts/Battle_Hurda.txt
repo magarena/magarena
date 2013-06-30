@@ -1,7 +1,7 @@
 name=Battle Hurda
 url=http://magiccards.info/wwk/en/4.html
 image=http://magiccards.info/scans/en/wwk/4.jpg
-value=1.621
+value=1.603
 ability=first strike
 rarity=C
 type=Creature

@@ -1,7 +1,7 @@
 name=Mons's Goblin Raiders
 url=http://magiccards.info/st2k/en/9.html
 image=http://magiccards.info/scans/en/st2k/9.jpg
-value=2.083
+value=2.036
 rarity=C
 type=Creature
 subtype=Goblin

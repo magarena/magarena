@@ -1,7 +1,7 @@
 name=Arrogant Vampire
 url=http://magiccards.info/po/en/1.html
 image=http://magiccards.info/scans/en/po/1.jpg
-value=2.167
+value=2.143
 ability=flying
 rarity=U
 type=Creature

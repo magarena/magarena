@@ -1,7 +1,7 @@
 name=Ferocity
 url=http://magiccards.info/mm/en/245.html
 image=http://magiccards.info/scans/en/mm/245.jpg
-value=3.946
+value=3.983
 rarity=C
 type=Enchantment
 subtype=Aura

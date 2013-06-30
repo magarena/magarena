@@ -1,7 +1,7 @@
 name=Bear Cub
 url=http://magiccards.info/po2/en/63.html
 image=http://magiccards.info/scans/en/po2/63.jpg
-value=4.410
+value=4.386
 rarity=C
 type=Creature
 subtype=Bear

@@ -1,7 +1,7 @@
 name=Malachite Golem
 url=http://magiccards.info/mi/en/202.html
 image=http://magiccards.info/scans/en/mi/202.jpg
-value=1.558
+value=1.556
 rarity=C
 type=Artifact,Creature
 subtype=Golem

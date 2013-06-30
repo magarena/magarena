@@ -1,7 +1,7 @@
 name=Aura Mutation
 url=http://magiccards.info/in/en/232.html
 image=http://magiccards.info/scans/en/in/232.jpg
-value=4.298
+value=4.314
 rarity=R
 type=Instant
 cost={G}{W}

@@ -1,7 +1,7 @@
 name=Bloated Toad
 url=http://magiccards.info/ul/en/97.html
 image=http://magiccards.info/scans/en/ul/97.jpg
-value=3.088
+value=3.086
 rarity=U
 type=Creature
 subtype=Frog

@@ -1,7 +1,7 @@
 name=Watercourser
 url=http://magiccards.info/m13/en/78.html
 image=http://magiccards.info/scans/en/m13/78.jpg
-value=2.923
+value=2.964
 rarity=C
 type=Creature
 subtype=Elemental

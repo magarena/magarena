@@ -1,7 +1,7 @@
 name=Emblem of the Warmind
 url=http://magiccards.info/fut/en/112.html
 image=http://magiccards.info/scans/en/fut/112.jpg
-value=3.182
+value=3.222
 rarity=U
 type=Enchantment
 subtype=Aura

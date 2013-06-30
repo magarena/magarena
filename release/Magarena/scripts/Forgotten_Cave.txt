@@ -1,7 +1,7 @@
 name=Forgotten Cave
 url=http://magiccards.info/ddj/en/33.html
 image=http://magiccards.info/scans/en/ddj/33.jpg
-value=3.143
+value=3.125
 rarity=C
 type=Land
 mana=r3

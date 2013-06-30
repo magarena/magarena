@@ -1,7 +1,7 @@
 name=Murmuring Phantasm
 url=http://magiccards.info/dgm/en/15.html
 image=http://magiccards.info/scans/en/dgm/15.jpg
-value=2.767
+value=2.742
 rarity=C
 type=Creature
 subtype=Spirit

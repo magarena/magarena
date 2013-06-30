@@ -1,7 +1,7 @@
 name=Clinging Anemones
 url=http://magiccards.info/gtc/en/31.html
 image=http://magiccards.info/scans/en/gtc/31.jpg
-value=2.284
+value=2.255
 rarity=C
 type=Creature
 subtype=Jellyfish

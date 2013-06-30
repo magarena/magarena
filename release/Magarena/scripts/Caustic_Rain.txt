@@ -1,7 +1,7 @@
 name=Caustic Rain
 url=http://magiccards.info/gp/en/44.html
 image=http://magiccards.info/scans/en/gp/44.jpg
-value=2.984
+value=3.045
 rarity=U
 type=Sorcery
 cost={2}{B}{B}

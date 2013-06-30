@@ -1,7 +1,7 @@
 name=Gust-Skimmer
 url=http://magiccards.info/mbs/en/108.html
 image=http://magiccards.info/scans/en/mbs/108.jpg
-value=2.192
+value=2.204
 rarity=C
 type=Artifact,Creature
 subtype=Insect

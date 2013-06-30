@@ -1,7 +1,7 @@
 name=Goblin Striker
 url=http://magiccards.info/mi/en/94.html
 image=http://magiccards.info/scans/en/mi/94.jpg
-value=3.071
+value=3.086
 ability=first strike,haste
 rarity=C
 type=Creature

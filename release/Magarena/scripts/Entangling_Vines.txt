@@ -1,7 +1,7 @@
 name=Entangling Vines
 url=http://magiccards.info/m10/en/181.html
 image=http://magiccards.info/scans/en/m10/181.jpg
-value=2.085
+value=2.056
 rarity=C
 type=Enchantment
 subtype=Aura

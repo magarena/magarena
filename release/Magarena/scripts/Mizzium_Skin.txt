@@ -1,7 +1,7 @@
 name=Mizzium Skin
 url=http://magiccards.info/rtr/en/45.html
 image=http://magiccards.info/scans/en/rtr/45.jpg
-value=3.263
+value=3.315
 rarity=C
 type=Instant
 cost={U}

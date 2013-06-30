@@ -1,7 +1,7 @@
 name=Hero's Resolve
 url=http://magiccards.info/tp/en/235.html
 image=http://magiccards.info/scans/en/tp/235.jpg
-value=3.361
+value=3.405
 rarity=C
 type=Enchantment
 subtype=Aura

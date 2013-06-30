@@ -1,7 +1,7 @@
 name=Flailing Drake
 url=http://magiccards.info/tp/en/121.html
 image=http://magiccards.info/scans/en/tp/121.jpg
-value=1.306
+value=1.277
 rarity=U
 type=Creature
 subtype=Drake

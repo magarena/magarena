@@ -1,7 +1,7 @@
 name=Bayou Dragonfly
 url=http://magiccards.info/tp/en/109.html
 image=http://magiccards.info/scans/en/tp/109.jpg
-value=3.463
+value=3.429
 rarity=C
 type=Creature
 subtype=Insect

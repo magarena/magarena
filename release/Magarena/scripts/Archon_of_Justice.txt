@@ -1,7 +1,7 @@
 name=Archon of Justice
 url=http://magiccards.info/m12/en/6.html
 image=http://magiccards.info/scans/en/eve/1.jpg
-value=3.842
+value=3.856
 rarity=R
 type=Creature
 subtype=Archon

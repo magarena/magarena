@@ -1,7 +1,7 @@
 name=Healer of the Pride
 url=http://magiccards.info/m13/en/19.html
 image=http://magiccards.info/scans/en/m13/19.jpg
-value=3.605
+value=3.591
 rarity=U
 type=Creature
 subtype=Cat,Cleric

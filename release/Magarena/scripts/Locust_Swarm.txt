@@ -1,7 +1,7 @@
 name=Locust Swarm
 url=http://magiccards.info/mr/en/124.html
 image=http://magiccards.info/scans/en/mr/124.jpg
-value=2.618
+value=2.711
 rarity=U
 type=Creature
 subtype=Insect

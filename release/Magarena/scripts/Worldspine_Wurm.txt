@@ -1,7 +1,7 @@
 name=Worldspine Wurm
 url=http://magiccards.info/rtr/en/140.html
 image=http://magiccards.info/scans/en/rtr/140.jpg
-value=3.981
+value=3.927
 rarity=M
 type=Creature
 subtype=Wurm

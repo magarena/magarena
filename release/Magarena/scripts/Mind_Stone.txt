@@ -1,7 +1,7 @@
 name=Mind Stone
 url=http://magiccards.info/jvc/en/22.html
 image=http://magiccards.info/scans/en/jvc/22.jpg
-value=4.000
+value=3.990
 rarity=U
 type=Artifact
 cost={2}

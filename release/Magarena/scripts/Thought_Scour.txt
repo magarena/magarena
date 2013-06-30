@@ -1,7 +1,7 @@
 name=Thought Scour
 url=http://magiccards.info/dka/en/52.html
 image=http://magiccards.info/scans/en/dka/52.jpg
-value=3.831
+value=3.815
 rarity=C
 type=Instant
 cost={U}

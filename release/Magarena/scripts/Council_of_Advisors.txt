@@ -1,7 +1,7 @@
 name=Council of Advisors
 url=http://magiccards.info/p3k/en/40.html
 image=http://magiccards.info/scans/en/p3k/40.jpg
-value=1.948
+value=1.933
 rarity=U
 type=Creature
 subtype=Human,Advisor

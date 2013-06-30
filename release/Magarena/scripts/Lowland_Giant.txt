@@ -1,7 +1,7 @@
 name=Lowland Giant
 url=http://magiccards.info/tp/en/187.html
 image=http://magiccards.info/scans/en/tp/187.jpg
-value=2.933
+value=2.935
 rarity=C
 type=Creature
 subtype=Giant

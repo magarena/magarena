@@ -1,7 +1,7 @@
 name=Last Kiss
 url=http://magiccards.info/roe/en/116.html
 image=http://magiccards.info/scans/en/roe/116.jpg
-value=2.235
+value=2.230
 rarity=C
 type=Instant
 cost={2}{B}

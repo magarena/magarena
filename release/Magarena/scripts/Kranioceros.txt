@@ -1,7 +1,7 @@
 name=Kranioceros
 url=http://magiccards.info/cfx/en/67.html
 image=http://magiccards.info/scans/en/cfx/67.jpg
-value=2.107
+value=2.093
 rarity=C
 type=Creature
 subtype=Beast

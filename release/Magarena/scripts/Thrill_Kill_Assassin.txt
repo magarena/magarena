@@ -1,7 +1,7 @@
 name=Thrill-Kill Assassin
 url=http://magiccards.info/rtr/en/81.html
 image=http://magiccards.info/scans/en/rtr/81.jpg
-value=3.293
+value=3.308
 rarity=U
 type=Creature
 subtype=Human,Assassin

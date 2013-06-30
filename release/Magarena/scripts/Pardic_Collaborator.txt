@@ -1,7 +1,7 @@
 name=Pardic Collaborator
 url=http://magiccards.info/tr/en/106.html
 image=http://magiccards.info/scans/en/tr/106.jpg
-value=3.032
+value=3.061
 rarity=U
 type=Creature
 subtype=Human,Barbarian

@@ -1,7 +1,7 @@
 name=Moriok Scavenger
 url=http://magiccards.info/mi/en/68.html
 image=http://magiccards.info/scans/en/mi/68.jpg
-value=3.611
+value=3.348
 rarity=C
 type=Creature
 subtype=Human,Rogue

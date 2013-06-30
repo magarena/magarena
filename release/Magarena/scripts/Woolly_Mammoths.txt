@@ -1,7 +1,7 @@
 name=Woolly Mammoths
 url=http://magiccards.info/cstd/en/41.html
 image=http://magiccards.info/scans/en/cstd/41.jpg
-value=3.611
+value=2.766
 rarity=C
 type=Creature
 subtype=Elephant

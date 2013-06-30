@@ -1,7 +1,7 @@
 name=Scarwood Goblins
 url=http://magiccards.info/dk/en/119.html
 image=http://magiccards.info/scans/en/dk/119.jpg
-value=2.080
+value=2.067
 rarity=C
 type=Creature
 subtype=Goblin

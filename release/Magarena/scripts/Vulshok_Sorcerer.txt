@@ -1,7 +1,7 @@
 name=Vulshok Sorcerer
 url=http://magiccards.info/ddi/en/50.html
 image=http://magiccards.info/scans/en/ddi/50.jpg
-value=3.938
+value=3.889
 rarity=C
 type=Creature
 subtype=Human,Shaman

@@ -1,7 +1,7 @@
 name=Moldgraf Monstrosity
 url=http://magiccards.info/isd/en/194.html
 image=http://magiccards.info/scans/en/isd/194.jpg
-value=3.861
+value=3.870
 rarity=R
 type=Creature
 subtype=Insect

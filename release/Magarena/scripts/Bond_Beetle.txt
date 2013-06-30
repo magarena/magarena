@@ -1,7 +1,7 @@
 name=Bond Beetle
 url=http://magiccards.info/m13/en/161.html
 image=http://magiccards.info/scans/en/m13/161.jpg
-value=3.537
+value=3.561
 rarity=C
 type=Creature
 subtype=Insect

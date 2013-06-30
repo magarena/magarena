@@ -1,7 +1,7 @@
 name=Rakdos Ringleader
 url=http://magiccards.info/rtr/en/186.html
 image=http://magiccards.info/scans/en/rtr/186.jpg
-value=1.414
+value=1.390
 rarity=U
 type=Creature
 subtype=Skeleton,Warrior

@@ -1,7 +1,7 @@
 name=Kithkin Greatheart
 url=http://magiccards.info/lw/en/25.html
 image=http://magiccards.info/scans/en/lw/25.jpg
-value=3.611
+value=3.227
 rarity=C
 type=Creature
 subtype=Kithkin,Soldier

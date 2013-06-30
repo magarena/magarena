@@ -1,7 +1,7 @@
 name=Leaf Gilder
 url=http://magiccards.info/lw/en/227.html
 image=http://magiccards.info/scans/en/lw/227.jpg
-value=2.413
+value=2.375
 rarity=C
 type=Creature
 subtype=Elf,Druid

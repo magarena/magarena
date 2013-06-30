@@ -1,7 +1,7 @@
 name=Call of the Conclave
 url=http://magiccards.info/rtr/en/146.html
 image=http://magiccards.info/scans/en/rtr/146.jpg
-value=3.871
+value=3.876
 rarity=U
 type=Sorcery
 cost={G}{W}

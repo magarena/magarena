@@ -1,7 +1,7 @@
 name=Scabland
 url=http://magiccards.info/tp/en/331.html
 image=http://magiccards.info/scans/en/tp/331.jpg
-value=2.607
+value=2.603
 rarity=R
 type=Land
 mana=w2r2

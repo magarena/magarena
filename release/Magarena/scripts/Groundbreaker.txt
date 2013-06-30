@@ -1,7 +1,7 @@
 name=Groundbreaker
 url=http://magiccards.info/pc/en/148.html
 image=http://magiccards.info/scans/en/pc/148.jpg
-value=4.367
+value=4.381
 rarity=R
 type=Creature
 subtype=Elemental

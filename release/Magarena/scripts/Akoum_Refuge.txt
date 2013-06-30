@@ -1,7 +1,7 @@
 name=Akoum Refuge
 url=http://magiccards.info/cmd/en/264.html
 image=http://magiccards.info/scans/en/zen/210.jpg
-value=4.200
+value=4.143
 rarity=U
 type=Land
 mana=b3r3

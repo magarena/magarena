@@ -1,7 +1,7 @@
 name=Attended Knight
 url=http://magiccards.info/m13/en/5.html
 image=http://magiccards.info/scans/en/m13/5.jpg
-value=3.650
+value=3.675
 rarity=C
 type=Creature
 subtype=Human,Knight

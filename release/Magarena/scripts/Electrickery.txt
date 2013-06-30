@@ -1,7 +1,7 @@
 name=Electrickery
 url=http://magiccards.info/rtr/en/93.html
 image=http://magiccards.info/scans/en/rtr/93.jpg
-value=3.516
+value=3.554
 rarity=C
 type=Instant
 cost={R}

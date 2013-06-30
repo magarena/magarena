@@ -1,7 +1,7 @@
 name=Willow Faerie
 url=http://magiccards.info/hl/en/73.html
 image=http://magiccards.info/scans/en/hl/73.jpg
-value=2.915
+value=2.917
 rarity=C
 type=Creature
 subtype=Faerie

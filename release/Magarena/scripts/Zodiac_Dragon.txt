@@ -1,7 +1,7 @@
 name=Zodiac Dragon
 url=http://magiccards.info/me3/en/112.html
 image=http://magiccards.info/scans/en/me3/112.jpg
-value=3.683
+value=3.674
 rarity=R
 type=Creature
 subtype=Dragon

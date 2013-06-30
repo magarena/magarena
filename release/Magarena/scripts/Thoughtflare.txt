@@ -1,7 +1,7 @@
 name=Thoughtflare
 url=http://magiccards.info/rtr/en/203.html
 image=http://magiccards.info/scans/en/rtr/203.jpg
-value=4.346
+value=3.039
 rarity=U
 type=Instant
 cost={3}{U}{R}

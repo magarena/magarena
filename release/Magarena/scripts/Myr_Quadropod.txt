@@ -1,7 +1,7 @@
 name=Myr Quadropod
 url=http://magiccards.info/5dn/en/138.html
 image=http://magiccards.info/scans/en/5dn/138.jpg
-value=2.242
+value=2.250
 rarity=C
 type=Artifact,Creature
 subtype=Myr

@@ -1,7 +1,7 @@
 name=Hysterical Blindness
 url=http://magiccards.info/isd/en/59.html
 image=http://magiccards.info/scans/en/isd/59.jpg
-value=2.603
+value=2.600
 rarity=C
 type=Instant
 cost={2}{U}

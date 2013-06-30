@@ -1,7 +1,7 @@
 name=Viashino Sandscout
 url=http://magiccards.info/10e/en/246.html
 image=http://magiccards.info/scans/en/10e/246.jpg
-value=3.155
+value=3.177
 rarity=C
 type=Creature
 subtype=Viashino,Scout

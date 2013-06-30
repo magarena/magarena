@@ -1,7 +1,7 @@
 name=Wayfaring Temple
 url=http://magiccards.info/rtr/en/209.html
 image=http://magiccards.info/scans/en/rtr/209.jpg
-value=3.813
+value=3.821
 rarity=R
 type=Creature
 subtype=Elemental

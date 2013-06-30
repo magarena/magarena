@@ -1,7 +1,7 @@
 name=Fleeting Distraction
 url=http://magiccards.info/avr/en/53.html
 image=http://magiccards.info/scans/en/avr/53.jpg
-value=1.663
+value=1.660
 rarity=C
 type=Instant
 cost={U}

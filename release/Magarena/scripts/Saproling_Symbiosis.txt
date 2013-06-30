@@ -1,7 +1,7 @@
 name=Saproling Symbiosis
 url=http://magiccards.info/in/en/209.html
 image=http://magiccards.info/scans/en/in/209.jpg
-value=2.603
+value=4.162
 rarity=R
 type=Sorcery
 cost={3}{G}

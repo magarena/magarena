@@ -1,7 +1,7 @@
 name=Orim's Thunder
 url=http://magiccards.info/cmd/en/24.html
 image=http://magiccards.info/scans/en/cmd/24.jpg
-value=3.761
+value=3.812
 removal=2
 rarity=C
 type=Instant

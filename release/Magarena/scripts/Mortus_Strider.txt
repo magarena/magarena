@@ -1,7 +1,7 @@
 name=Mortus Strider
 url=http://magiccards.info/gtc/en/179.html
 image=http://magiccards.info/scans/en/gtc/179.jpg
-value=3.064
+value=3.054
 rarity=C
 type=Creature
 subtype=Skeleton

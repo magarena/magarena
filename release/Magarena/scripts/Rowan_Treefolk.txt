@@ -1,7 +1,7 @@
 name=Rowan Treefolk
 url=http://magiccards.info/po/en/110.html
 image=http://magiccards.info/scans/en/po/110.jpg
-value=2.597
+value=2.579
 rarity=C
 type=Creature
 subtype=Treefolk

@@ -1,7 +1,7 @@
 name=Geth's Verdict
 url=http://magiccards.info/nph/en/61.html
 image=http://magiccards.info/scans/en/nph/61.jpg
-value=3.988
+value=4.000
 removal=1
 rarity=C
 type=Sorcery

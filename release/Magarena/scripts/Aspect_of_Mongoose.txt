@@ -1,7 +1,7 @@
 name=Aspect of Mongoose
 url=http://magiccards.info/ts/en/191.html
 image=http://magiccards.info/scans/en/ts/191.jpg
-value=3.867
+value=3.890
 rarity=U
 type=Enchantment
 subtype=Aura

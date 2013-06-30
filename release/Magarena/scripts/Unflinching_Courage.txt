@@ -1,7 +1,7 @@
 name=Unflinching Courage
 url=http://magiccards.info/dgm/en/111.html
 image=http://magiccards.info/scans/en/dgm/111.jpg
-value=4.106
+value=4.054
 rarity=U
 type=Enchantment
 subtype=Aura

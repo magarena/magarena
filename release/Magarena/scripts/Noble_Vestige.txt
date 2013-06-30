@@ -1,7 +1,7 @@
 name=Noble Vestige
 url=http://magiccards.info/zen/en/29.html
 image=http://magiccards.info/scans/en/zen/29.jpg
-value=1.607
+value=1.597
 rarity=C
 type=Creature
 subtype=Spirit

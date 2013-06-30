@@ -1,7 +1,7 @@
 name=Border Guard
 url=http://magiccards.info/st/en/9.html
 image=http://magiccards.info/scans/en/st/9.jpg
-value=2.054
+value=2.066
 rarity=C
 type=Creature
 subtype=Human,Soldier

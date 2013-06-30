@@ -1,7 +1,7 @@
 name=Nephalia Drownyard
 url=http://magiccards.info/isd/en/245.html
 image=http://magiccards.info/scans/en/isd/245.jpg
-value=3.500
+value=3.517
 rarity=R
 type=Land
 ability=tap add mana {1}

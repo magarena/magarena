@@ -1,7 +1,7 @@
 name=Flinthoof Boar
 url=http://magiccards.info/m13/en/171.html
 image=http://magiccards.info/scans/en/m13/171.jpg
-value=3.888
+value=3.942
 rarity=U
 type=Creature
 subtype=Boar

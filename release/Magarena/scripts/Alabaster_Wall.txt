@@ -1,7 +1,7 @@
 name=Alabaster Wall
 url=http://magiccards.info/mm/en/2.html
 image=http://magiccards.info/scans/en/mm/2.jpg
-value=2.680
+value=2.759
 rarity=C
 type=Creature
 subtype=Wall

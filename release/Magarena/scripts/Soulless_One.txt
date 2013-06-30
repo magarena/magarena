@@ -1,7 +1,7 @@
 name=Soulless One
 url=http://magiccards.info/pch/en/41.html
 image=http://magiccards.info/scans/en/pch/41.jpg
-value=4.364
+value=4.367
 rarity=U
 type=Creature
 subtype=Zombie,Avatar

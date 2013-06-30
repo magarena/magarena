@@ -1,7 +1,7 @@
 name=Crowd of Cinders
 url=http://magiccards.info/shm/en/63.html
 image=http://magiccards.info/scans/en/shm/63.jpg
-value=4.019
+value=3.449
 rarity=U
 type=Creature
 subtype=Elemental

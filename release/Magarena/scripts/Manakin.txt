@@ -1,7 +1,7 @@
 name=Manakin
 url=http://magiccards.info/tp/en/286.html
 image=http://magiccards.info/scans/en/tp/286.jpg
-value=3.226
+value=3.233
 rarity=C
 type=Artifact,Creature
 subtype=Construct

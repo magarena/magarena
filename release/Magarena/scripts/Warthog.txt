@@ -1,7 +1,7 @@
 name=Warthog
 url=http://magiccards.info/6e/en/267.html
 image=http://magiccards.info/scans/en/6e/267.jpg
-value=3.519
+value=3.482
 rarity=U
 type=Creature
 subtype=Boar

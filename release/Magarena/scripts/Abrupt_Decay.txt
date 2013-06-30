@@ -1,7 +1,7 @@
 name=Abrupt Decay
 url=http://magiccards.info/rtr/en/141.html
 image=http://magiccards.info/scans/en/rtr/141.jpg
-value=4.388
+value=4.367
 rarity=R
 type=Instant
 cost={B}{G}

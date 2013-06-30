@@ -1,7 +1,7 @@
 name=Unsummon
 url=http://magiccards.info/m12/en/79.html
 image=http://magiccards.info/scans/en/m11/78.jpg
-value=4.246
+value=4.242
 removal=2
 rarity=C
 type=Instant

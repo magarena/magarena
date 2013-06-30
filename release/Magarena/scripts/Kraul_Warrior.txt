@@ -1,7 +1,7 @@
 name=Kraul Warrior
 url=http://magiccards.info/dgm/en/42.html
 image=http://magiccards.info/scans/en/dgm/42.jpg
-value=2.659
+value=2.720
 rarity=C
 type=Creature
 subtype=Insect,Warrior

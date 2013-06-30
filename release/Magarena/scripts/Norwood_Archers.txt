@@ -1,7 +1,7 @@
 name=Norwood Archers
 url=http://magiccards.info/po2/en/76.html
 image=http://magiccards.info/scans/en/po2/76.jpg
-value=3.167
+value=3.120
 rarity=C
 type=Creature
 subtype=Elf,Archer

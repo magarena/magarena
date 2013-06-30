@@ -1,7 +1,7 @@
 name=Darkthicket Wolf
 url=http://magiccards.info/isd/en/175.html
 image=http://magiccards.info/scans/en/isd/175.jpg
-value=3.117
+value=3.115
 rarity=C
 type=Creature
 subtype=Wolf

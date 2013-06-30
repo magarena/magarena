@@ -1,7 +1,7 @@
 name=Sickle Ripper
 url=http://magiccards.info/shm/en/77.html
 image=http://magiccards.info/scans/en/shm/77.jpg
-value=3.364
+value=3.389
 rarity=C
 type=Creature
 subtype=Elemental,Warrior

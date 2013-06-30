@@ -1,7 +1,7 @@
 name=Sulfurous Springs
 url=http://magiccards.info/10e/en/359.html
 image=http://magiccards.info/scans/en/10e/359.jpg
-value=4.375
+value=4.378
 rarity=R
 type=Land
 mana=b2r2

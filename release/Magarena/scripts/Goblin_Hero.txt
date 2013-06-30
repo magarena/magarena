@@ -1,7 +1,7 @@
 name=Goblin Hero
 url=http://magiccards.info/6e/en/184.html
 image=http://magiccards.info/scans/en/6e/184.jpg
-value=1.707
+value=1.679
 rarity=C
 type=Creature
 subtype=Goblin

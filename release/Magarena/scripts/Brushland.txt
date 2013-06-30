@@ -1,7 +1,7 @@
 name=Brushland
 url=http://magiccards.info/10e/en/349.html
 image=http://magiccards.info/scans/en/10e/349.jpg
-value=4.250
+value=4.256
 rarity=R
 type=Land
 mana=w2g2

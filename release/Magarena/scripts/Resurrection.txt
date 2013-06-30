@@ -1,7 +1,7 @@
 name=Resurrection
 url=http://magiccards.info/fnmp/en/97.html
 image=http://magiccards.info/scans/en/fnmp/97.jpg
-value=4.025
+value=4.042
 rarity=U
 type=Sorcery
 cost={2}{W}{W}

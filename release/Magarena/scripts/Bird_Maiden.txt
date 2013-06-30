@@ -1,7 +1,7 @@
 name=Bird Maiden
 url=http://magiccards.info/me4/en/110.html
 image=http://magiccards.info/scans/en/me4/110.jpg
-value=2.561
+value=2.559
 rarity=C
 type=Creature
 subtype=Human,Bird

@@ -1,7 +1,7 @@
 name=Eron the Relentless
 url=http://magiccards.info/hl/en/93.html
 image=http://magiccards.info/scans/en/hl/93.jpg
-value=3.619
+value=3.625
 rarity=U
 type=Legendary,Creature
 subtype=Human,Rogue

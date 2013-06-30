@@ -1,7 +1,7 @@
 name=Tajic, Blade of the Legion
 url=http://magiccards.info/dgm/en/107.html
 image=http://magiccards.info/scans/en/dgm/107.jpg
-value=4.096
+value=4.041
 rarity=R
 type=Legendary,Creature
 subtype=Human,Soldier

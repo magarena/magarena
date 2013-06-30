@@ -1,7 +1,7 @@
 name=Gaea's Anthem
 url=http://magiccards.info/pc/en/147.html
 image=http://magiccards.info/scans/en/pc/147.jpg
-value=4.197
+value=4.208
 rarity=R
 type=Enchantment
 cost={1}{G}{G}

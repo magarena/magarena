@@ -1,7 +1,7 @@
 name=Kozilek, Butcher of Truth
 url=http://magiccards.info/roe/en/6.html
 image=http://magiccards.info/scans/en/roe/6.jpg
-value=4.291
+value=4.264
 rarity=M
 type=Legendary,Creature
 subtype=Eldrazi

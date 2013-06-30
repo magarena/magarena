@@ -1,7 +1,7 @@
 name=Lavalanche
 url=http://magiccards.info/arb/en/118.html
 image=http://magiccards.info/scans/en/arb/118.jpg
-value=3.568
+value=3.580
 rarity=R
 type=Sorcery
 cost={X}{B}{R}{G}

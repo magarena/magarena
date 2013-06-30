@@ -1,7 +1,7 @@
 name=Blistering Barrier
 url=http://magiccards.info/mr/en/159.html
 image=http://magiccards.info/scans/en/mr/159.jpg
-value=2.732
+value=2.738
 rarity=C
 type=Creature
 subtype=Wall

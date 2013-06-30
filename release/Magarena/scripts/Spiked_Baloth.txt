@@ -1,7 +1,7 @@
 name=Spiked Baloth
 url=http://magiccards.info/m13/en/192.html
 image=http://magiccards.info/scans/en/m13/192.jpg
-value=2.577
+value=2.571
 rarity=C
 type=Creature
 subtype=Beast

@@ -1,7 +1,7 @@
 name=Goblin Rally
 url=http://magiccards.info/rtr/en/95.html
 image=http://magiccards.info/scans/en/rtr/95.jpg
-value=2.898
+value=2.900
 rarity=U
 type=Sorcery
 cost={3}{R}{R}

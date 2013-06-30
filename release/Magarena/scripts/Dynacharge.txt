@@ -1,7 +1,7 @@
 name=Dynacharge
 url=http://magiccards.info/rtr/en/92.html
 image=http://magiccards.info/scans/en/rtr/92.jpg
-value=2.707
+value=2.750
 rarity=C
 type=Instant
 cost={R}

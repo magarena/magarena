@@ -1,7 +1,7 @@
 name=Regal Unicorn
 url=http://magiccards.info/6e/en/35.html
 image=http://magiccards.info/scans/en/6e/35.jpg
-value=2.338
+value=2.329
 rarity=C
 type=Creature
 subtype=Unicorn

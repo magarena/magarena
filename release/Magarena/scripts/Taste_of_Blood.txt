@@ -1,7 +1,7 @@
 name=Taste of Blood
 url=http://magiccards.info/m12/en/113.html
 image=http://magiccards.info/scans/en/m12/113.jpg
-value=1.962
+value=1.951
 rarity=C
 type=Sorcery
 cost={B}

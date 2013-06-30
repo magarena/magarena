@@ -1,7 +1,7 @@
 name=Spitting Drake
 url=http://magiccards.info/6e/en/207.html
 image=http://magiccards.info/scans/en/6e/207.jpg
-value=2.222
+value=2.196
 rarity=U
 type=Creature
 subtype=Drake

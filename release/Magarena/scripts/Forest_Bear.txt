@@ -1,7 +1,7 @@
 name=Forest Bear
 url=http://magiccards.info/p3k/en/135.html
 image=http://magiccards.info/scans/en/p3k/135.jpg
-value=2.900
+value=2.946
 rarity=C
 type=Creature
 subtype=Bear

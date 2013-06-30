@@ -1,7 +1,7 @@
 name=Centaur Healer
 url=http://magiccards.info/rtr/en/148.html
 image=http://magiccards.info/scans/en/rtr/148.jpg
-value=3.823
+value=3.800
 rarity=C
 type=Creature
 subtype=Centaur,Cleric

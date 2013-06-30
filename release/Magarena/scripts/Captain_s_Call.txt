@@ -1,7 +1,7 @@
 name=Captain's Call
 url=http://magiccards.info/m13/en/9.html
 image=http://magiccards.info/scans/en/m13/9.jpg
-value=3.033
+value=3.031
 rarity=C
 type=Sorcery
 cost={3}{W}

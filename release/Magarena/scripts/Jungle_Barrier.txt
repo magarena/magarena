@@ -1,7 +1,7 @@
 name=Jungle Barrier
 url=http://magiccards.info/ap/en/106.html
 image=http://magiccards.info/scans/en/ap/106.jpg
-value=3.674
+value=3.659
 rarity=U
 type=Creature
 subtype=Plant,Wall

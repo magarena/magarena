@@ -1,7 +1,7 @@
 name=Zodiac Goat
 url=http://magiccards.info/p3k/en/132.html
 image=http://magiccards.info/scans/en/p3k/132.jpg
-value=3.574
+value=3.614
 rarity=C
 type=Creature
 subtype=Goat

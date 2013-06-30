@@ -1,7 +1,7 @@
 name=Frontline Medic
 url=http://magiccards.info/gtc/en/12.html
 image=http://magiccards.info/scans/en/gtc/12.jpg
-value=4.046
+value=4.062
 rarity=R
 type=Creature
 subtype=Human,Cleric

@@ -1,7 +1,7 @@
 name=Jund Hackblade
 url=http://magiccards.info/arb/en/138.html
 image=http://magiccards.info/scans/en/arb/138.jpg
-value=3.529
+value=3.538
 rarity=C
 type=Creature
 subtype=Goblin,Berserker

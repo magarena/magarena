@@ -1,7 +1,7 @@
 name=Harbor Bandit
 url=http://magiccards.info/m13/en/95.html
 image=http://magiccards.info/scans/en/m13/95.jpg
-value=3.333
+value=3.339
 rarity=U
 type=Creature
 subtype=Human,Rogue

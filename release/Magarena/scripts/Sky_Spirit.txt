@@ -1,7 +1,7 @@
 name=Sky Spirit
 url=http://magiccards.info/ddi/en/10.html
 image=http://magiccards.info/scans/en/ddi/10.jpg
-value=4.136
+value=4.130
 rarity=U
 type=Creature
 subtype=Spirit

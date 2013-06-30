@@ -1,7 +1,7 @@
 name=Shivan Reef
 url=http://magiccards.info/10e/en/357.html
 image=http://magiccards.info/scans/en/10e/357.jpg
-value=4.393
+value=4.395
 rarity=R
 type=Land
 mana=u2r2

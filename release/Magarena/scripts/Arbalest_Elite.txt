@@ -1,7 +1,7 @@
 name=Arbalest Elite
 url=http://magiccards.info/m12/en/5.html
 image=http://magiccards.info/scans/en/m12/5.jpg
-value=1.725
+value=1.721
 rarity=U
 type=Creature
 subtype=Human,Archer

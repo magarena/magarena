@@ -1,7 +1,7 @@
 name=Street Spasm
 url=http://magiccards.info/rtr/en/106.html
 image=http://magiccards.info/scans/en/rtr/106.jpg
-value=3.027
+value=3.026
 rarity=U
 type=Instant
 cost={X}{R}

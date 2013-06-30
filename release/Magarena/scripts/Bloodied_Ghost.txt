@@ -1,7 +1,7 @@
 name=Bloodied Ghost
 url=http://magiccards.info/eve/en/83.html
 image=http://magiccards.info/scans/en/eve/83.jpg
-value=2.659
+value=2.690
 rarity=U
 type=Creature
 subtype=Spirit
