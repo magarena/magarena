@@ -14,7 +14,7 @@
             return new MagicEvent(
                 source,
                 MagicTargetChoice.NEG_TARGET_LAND,
-                MagicBounceTargetPicker.getInstance(),
+                MagicBounceTargetPicker.create(),
                 this,
                 "Put target land\$ on top of its owner's library."
             );

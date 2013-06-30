@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 MagicTargetChoice.CREATURE_YOU_CONTROL,
-                MagicBounceTargetPicker.getInstance(),
+                MagicBounceTargetPicker.create(),
                 this,
                 "Put a creature you control\$ on top of its owner's library."
             );

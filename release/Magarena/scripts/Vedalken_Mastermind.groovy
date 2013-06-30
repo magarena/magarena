@@ -12,7 +12,7 @@
             return new MagicEvent(
                 source,
                 MagicTargetChoice.TARGET_PERMANENT_YOU_CONTROL,
-                MagicBounceTargetPicker.getInstance(),
+                MagicBounceTargetPicker.create(),
                 this,
                 "Return target permanent you control\$ to its owner's hand."
             );

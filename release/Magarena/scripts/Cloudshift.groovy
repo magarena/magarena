@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
-                MagicBounceTargetPicker.getInstance(),
+                MagicBounceTargetPicker.create(),
                 this,
                 "Exile target creature\$ you control, then return " +
                 "that card to the battlefield under your control."

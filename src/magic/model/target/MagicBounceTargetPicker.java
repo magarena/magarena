@@ -12,6 +12,10 @@ public class MagicBounceTargetPicker extends MagicTargetPicker<MagicTarget> {
 
     private MagicBounceTargetPicker() {}
 
+    public static MagicBounceTargetPicker create() {
+        return INSTANCE;
+    }
+
     @Override
     protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
         if (target.isPermanent()) {
@@ -27,9 +31,5 @@ public class MagicBounceTargetPicker extends MagicTargetPicker<MagicTarget> {
             final int converted=1+cardOnStack.getCardDefinition().getConvertedCost();
             return cardOnStack.getController()==player?-converted:converted;
         }
-    }
-
-    public static MagicBounceTargetPicker getInstance() {
-        return INSTANCE;
     }
 }

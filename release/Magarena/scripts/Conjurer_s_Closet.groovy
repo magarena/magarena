@@ -11,7 +11,7 @@
                     new MagicMayChoice(
                         MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL
                     ),
-                    MagicBounceTargetPicker.getInstance(),
+                    MagicBounceTargetPicker.create(),
                     this,
                     "You may\$ exile target creature\$ you control, then return " +
                     "that card to the battlefield under your control."

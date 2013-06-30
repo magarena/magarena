@@ -8,7 +8,7 @@
             return new MagicEvent(
                 permanent,
                 MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
-                MagicBounceTargetPicker.getInstance(),
+                MagicBounceTargetPicker.create(),
                 this,
                 "Return target creature\$ your opponent " +
                 "controls to its owner's hand."

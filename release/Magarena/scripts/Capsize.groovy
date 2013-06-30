@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.TARGET_PERMANENT,
-                MagicBounceTargetPicker.getInstance(),
+                MagicBounceTargetPicker.create(),
                 this,
                 "Return target permanent\$ to its owner's hand. " +
                 "If the buyback cost was payed, return SN to its owner's hand as it resolves."

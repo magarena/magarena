@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.TARGET_CREATURE,
-                MagicBounceTargetPicker.getInstance(),
+                MagicBounceTargetPicker.create(),
                 this,
                 "Return target creature\$ to its owner's hand. Draw a card."
             );

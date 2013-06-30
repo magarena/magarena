@@ -19,7 +19,7 @@
             return new MagicEvent(
                 source,
                 targetChoice,
-                MagicBounceTargetPicker.getInstance(),
+                MagicBounceTargetPicker.create(),
                 this,
                 "Exile another target creature you control\$, then " +
                 "return that card to the battlefield under your control."

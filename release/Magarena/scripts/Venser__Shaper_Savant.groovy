@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 MagicTargetChoice.NEG_TARGET_SPELL_OR_PERMANENT,
-                MagicBounceTargetPicker.getInstance(),
+                MagicBounceTargetPicker.create(),
                 this,
                 "Return target spell or permanent\$ to its owner's hand."
             );

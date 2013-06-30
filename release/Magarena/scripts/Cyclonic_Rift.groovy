@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.TARGET_NONLAND_PERMANENT_YOU_DONT_CONTROL,
-                MagicBounceTargetPicker.getInstance(),
+                MagicBounceTargetPicker.create(),
                 this,
                 "Return target nonland permanent\$ you don't control to its owner's hand."
             );

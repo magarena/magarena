@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.NEG_TARGET_CREATURE,
-                MagicBounceTargetPicker.getInstance(),
+                MagicBounceTargetPicker.create(),
                 this,
                 "Put target creature\$ on top of its owner's library."
             );

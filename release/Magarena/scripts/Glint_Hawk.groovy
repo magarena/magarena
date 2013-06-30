@@ -7,7 +7,7 @@
                 new MagicMayChoice(
                     MagicTargetChoice.ARTIFACT_YOU_CONTROL
                 ),
-                MagicBounceTargetPicker.getInstance(),
+                MagicBounceTargetPicker.create(),
                 this,
                 "You may\$ return an artifact you control to its owner's hand. " +
                 "If you don't, sacrifice SN."

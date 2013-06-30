@@ -9,7 +9,7 @@
                         new MagicPayManaCostChoice(MagicManaCost.create("{1}{U}")),
                         MagicTargetChoice.TARGET_PERMANENT
                     ),
-                    MagicBounceTargetPicker.getInstance(),
+                    MagicBounceTargetPicker.create(),
                     this,
                     "PN may\$ pay {1}{U}\$. If you do, " +
                     "return target permanent\$ to its owner's hand."

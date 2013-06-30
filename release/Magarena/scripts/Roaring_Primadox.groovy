@@ -9,7 +9,7 @@
                 new MagicEvent(
                     permanent,
                     MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
-                    MagicBounceTargetPicker.getInstance(),
+                    MagicBounceTargetPicker.create(),
                     this,
                     "Return a creature you control to its owner's hand."
                 ):

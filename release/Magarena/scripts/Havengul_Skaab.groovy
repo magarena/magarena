@@ -18,7 +18,7 @@
                 return new MagicEvent(
                     permanent,
                     targetChoice,
-                    MagicBounceTargetPicker.getInstance(),
+                    MagicBounceTargetPicker.create(),
                     this,
                     "Return another creature PN controls\$ to its owner's hand."
                 );
