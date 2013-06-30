@@ -30,7 +30,8 @@ Thanks to
   IcoJoy, http://www.icojoy.com/blogs/, for the nice free mage logo and icon
   Salasnet for the felt theme and pedro1973 for the dark battle theme
   singularita for creating the scripts to add over 300 additional creature cards
-  glorfindel, Old Nick, David, Grundomu, jeffwadsworth, Kuno, LSK and sponeta for contributing custom decks
+  glorfindel, Old Nick, David, Grundomu, jeffwadsworth, Kuno, LSK, sponeta,
+  day5ive, and Excedrin for contributing premade decks
   pedro1973 for creating new themes, see http://www.slightlymagic.net/forum/viewforum.php?f=89
   mtgrares for the publicity
   Goblin Hero for providing the images for some of the symbols
@@ -52,9 +53,47 @@ Thank you for your support and have fun!
 
 
 
-Release 1.39 (June 29, 2013)
+Release 1.39 (June 30, 2013)
 ============
-includes contributions from ...
+includes contributions from melvin, a. benedict balbuena, manve.herumedre, and neilpturley
+
+- Planeswalker and Legendary uniqueness rule apply per controller (Magic 2014 rules update)
+- converted all cards to use dynamically loaded Groovy code instead of compiled Java code
+- Groovy code for activated abilities no longer have to specify activation conditions
+  that can be inferred from the activation cost
+- added 'enters choose opponent' ability to card script
+- implemented support for additional costs, see Magarena/scripts/Goblin_Grenade.groovy
+- reimplement kicker, multikicker, buyback, and replicate as additional costs
+
+- fixed: copied spell had the same player as original spell, causing copying
+         an opponent's spell to not work properly (issue 353)
+- fixed: Goblin Piledriver should get +2/+0 per other goblin, not +1/+0
+- fixed: Wei Ambush Force should be 1/1, not 2/2
+- fixed: Howling Mine should trigger in the draw phase instead of upkeep phase
+- fixed: cards that enters tapped was triggering Gideon's Avenger
+- fixed: Outwit should not be able to target spells that did not target a player 
+- fixed: double clicking in choice menu could cause the game to hang
+
+- added the following premade deck:
+Mono-U_Frosty_Mill.dec
+
+- added the following cards:
+Abyssal Gatekeeper, Ambassador Laquatus, Anurid Barkripper, Armory Guard,
+Aura Mutation, Backfire, Blitz Hellion, Boggart Sprite-Chaser, Bog Gnarr,
+Bosh, Iron Golem, Breeding Pit, Celestial Ancient, Celestial Kirin,
+Cloudhoof Kirin, Cloudreach Cavalry, Convolute, Court Homunculus,
+Crimson Muckwader, Crowd of Cinders, Death Mutation, Drove of Elves,
+Eyes of the Wisent, Faerie Swarm, Fatal Fumes, Flailing Drake, Flood,
+Fungusaur, Ghostfire, Glade Gnarr, Goblin Grenade, Herd Gnarr,
+Hindering Touch, Holy Mantle, Kithkin Greatheart, Kithkin Rabble,
+Locust Swarm, Metamorphic Wurm, Mindstatic, Minotaur Tactician,
+Miscalculation, Moriok Scavenger, Nimble Mongoose,
+Okina, Temple to the Grandfathers, Oona, Queen of the Fae, Pestilence,
+Plant Elemental, Psychic Strike, Punish Ignorance, Render Silent, Runeboggle,
+Sanctum Gargoyle, Saproling Symbiosis, Sejiri Merfolk, Seton's Scout,
+Skirk Outrider, Skizzik, Skyfire Kirin, Spell Snip, Springing Tiger,
+Sunken City, Tek, Thoughtflare, Totally Lost, Valakut, the Molten Pinnacle,
+Voice of Resurgence, Werebear, Woebearer, Woolly Mammoths, Worldspine Wurm
 
 Release 1.38 (May 25, 2013)
 ============
@@ -1565,7 +1604,7 @@ Release 1.16 (July 25, 2011)
 - increased delay when auto passing priority with item on stack to 2s
 - selectable cards are now highlighted with a colored border instead of an overlay
 - removed GUI deck strength viewer as it could take a long time to run
-- added four more custom decks 
+- added four more premade decks 
     decks/DL_Burn.dec
     decks/Grundomu_Death_and_Rebirth.dec 
     decks/Grundomu_Knights_Everywhere.dec 
