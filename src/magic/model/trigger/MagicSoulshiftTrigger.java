@@ -14,7 +14,7 @@ import magic.model.target.MagicGraveyardTargetPicker;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetHint;
 
-public class MagicSoulshiftTrigger extends MagicWhenPutIntoGraveyardTrigger {
+public class MagicSoulshiftTrigger extends MagicWhenDiesTrigger {
 
     private final int cmc;
 
@@ -23,31 +23,29 @@ public class MagicSoulshiftTrigger extends MagicWhenPutIntoGraveyardTrigger {
     }
 
     @Override
-    public MagicEvent executeTrigger(
-            final MagicGame game,
-            final MagicPermanent permanent,
-            final MagicGraveyardTriggerData triggerData) {
-        if (triggerData.fromLocation == MagicLocationType.Play) {
-            final MagicTargetFilter<MagicCard> targetFilter =
-                    new MagicTargetFilter.MagicCMCCardFilter(
-                        MagicTargetFilter.TARGET_SPIRIT_CARD_FROM_GRAVEYARD,
-                        MagicTargetFilter.Operator.LESS_THAN_OR_EQUAL,
-                        cmc
-                    );
-            final MagicTargetChoice targetChoice =
-                    new MagicTargetChoice(
-                    targetFilter,false,MagicTargetHint.None,
-                    "a Spirit card from your graveyard)");
-            return new MagicEvent(
-                    permanent,
-                    new MagicMayChoice(targetChoice),
-                    new MagicGraveyardTargetPicker(false),
-                    this,
-                    "PN may$ return target Spirit card$ with " +
-                    "converted mana cost " + cmc + " or less " +
-                    "from his or her graveyard to his or her hand.");
-        }
-        return MagicEvent.NONE;
+    public MagicEvent getEvent(final MagicPermanent permanent) {
+        final MagicTargetFilter<MagicCard> targetFilter =
+            new MagicTargetFilter.MagicCMCCardFilter(
+                MagicTargetFilter.TARGET_SPIRIT_CARD_FROM_GRAVEYARD,
+                MagicTargetFilter.Operator.LESS_THAN_OR_EQUAL,
+                cmc
+            );
+        final MagicTargetChoice targetChoice =
+            new MagicTargetChoice(
+                targetFilter,
+                true,
+                MagicTargetHint.None,
+                "target Spirit card from your graveyard"
+            );
+        return new MagicEvent(
+            permanent,
+            new MagicMayChoice(targetChoice),
+            new MagicGraveyardTargetPicker(false),
+            this,
+            "PN may$ return target Spirit card$ with " +
+            "converted mana cost " + cmc + " or less " +
+            "from his or her graveyard to his or her hand."
+        );
     }
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {

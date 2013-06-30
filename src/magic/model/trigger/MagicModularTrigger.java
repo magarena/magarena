@@ -12,7 +12,7 @@ import magic.model.event.MagicEvent;
 import magic.model.target.MagicPumpTargetPicker;
 
 
-public class MagicModularTrigger extends MagicWhenPutIntoGraveyardTrigger {
+public class MagicModularTrigger extends MagicWhenDiesTrigger {
 
     private static final MagicModularTrigger INSTANCE = new MagicModularTrigger();
 
@@ -23,23 +23,18 @@ public class MagicModularTrigger extends MagicWhenPutIntoGraveyardTrigger {
     }
 
     @Override
-    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
-        if (triggerData.fromLocation == MagicLocationType.Play) {
-            final int amount = permanent.getCounters(MagicCounterType.PlusOne);
-            return new MagicEvent(
-                permanent,
-                new MagicMayChoice(
-                    MagicTargetChoice.POS_TARGET_ARTIFACT_CREATURE
-                ),
-                MagicPumpTargetPicker.create(),
-                amount,
-                this,
-                amount > 1 ?
-                    "PN may$ put " + amount + " +1/+1 counters on target artifact creature$." :
-                    "PN may$ put a +1/+1 counter on target artifact creature$."
-            );
-        }
-        return MagicEvent.NONE;
+    public MagicEvent getEvent(final MagicPermanent permanent) {
+        final int amount = permanent.getCounters(MagicCounterType.PlusOne);
+        return new MagicEvent(
+            permanent,
+            new MagicMayChoice(
+                MagicTargetChoice.POS_TARGET_ARTIFACT_CREATURE
+            ),
+            MagicPumpTargetPicker.create(),
+            amount,
+            this,
+            "PN may$ put RN +1/+1 counters on target artifact creature$."
+        );
     }
 
     @Override

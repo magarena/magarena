@@ -8,7 +8,7 @@ import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.event.MagicEvent;
 
 //When C is put into a graveyard from the battlefield, you may or must draw a card.
-public class MagicDieDrawCardTrigger extends MagicWhenPutIntoGraveyardTrigger {
+public class MagicDieDrawCardTrigger extends MagicWhenDiesTrigger {
 
     private final boolean mustDraw;
 
@@ -17,29 +17,23 @@ public class MagicDieDrawCardTrigger extends MagicWhenPutIntoGraveyardTrigger {
     }
 
     @Override
-    public MagicEvent executeTrigger(
-            final MagicGame game,
-            final MagicPermanent permanent,
-            final MagicGraveyardTriggerData triggerData) {
-        if (triggerData.fromLocation == MagicLocationType.Play) {
-            return mustDraw ?
-                new MagicEvent(
-                    permanent,
-                    this,
-                    "PN draws a card."
-                ):
-                new MagicEvent(
-                    permanent,
-                    new MagicSimpleMayChoice(
-                        MagicSimpleMayChoice.DRAW_CARDS,
-                        1,
-                        MagicSimpleMayChoice.DEFAULT_NONE
-                    ),
-                    this,
-                    "PN may$ draw a card."
-                );
-        }
-        return MagicEvent.NONE;
+    public MagicEvent getEvent(final MagicPermanent permanent) {
+        return mustDraw ?
+            new MagicEvent(
+                permanent,
+                this,
+                "PN draws a card."
+            ):
+            new MagicEvent(
+                permanent,
+                new MagicSimpleMayChoice(
+                    MagicSimpleMayChoice.DRAW_CARDS,
+                    1,
+                    MagicSimpleMayChoice.DEFAULT_NONE
+                ),
+                this,
+                "PN may$ draw a card."
+            );
     }
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
