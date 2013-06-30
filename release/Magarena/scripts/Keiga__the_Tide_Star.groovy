@@ -1,16 +1,14 @@
 [
-    new MagicWhenPutIntoGraveyardTrigger() {
+    new MagicWhenDiesTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
-            return (triggerData.fromLocation == MagicLocationType.Play) ?
-                new MagicEvent(
-                    permanent,
-                    MagicTargetChoice.TARGET_CREATURE,
-                    MagicExileTargetPicker.create(),
-                    this,
-                    "Gain control of target creature\$."
-                ):
-                MagicEvent.NONE;
+        public MagicEvent getEvent(final MagicPermanent permanent) {
+            return new MagicEvent(
+                permanent,
+                MagicTargetChoice.NEG_TARGET_CREATURE,
+                MagicExileTargetPicker.create(),
+                this,
+                "Gain control of target creature\$."
+            );
         }
 
         @Override

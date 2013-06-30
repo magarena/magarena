@@ -1,18 +1,16 @@
 [
-    new MagicWhenPutIntoGraveyardTrigger() {
+    new MagicWhenDiesTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
-            return (triggerData.fromLocation == MagicLocationType.Play) ?
-                new MagicEvent(
-                    permanent,
-                    new MagicMayChoice(
-                        MagicTargetChoice.NEG_TARGET_CREATURE
-                    ),
-                    new MagicWeakenTargetPicker(1,1),
-                    this,
-                    "PN may put a -1/-1 counter on target creature."
-                ) :
-                MagicEvent.NONE;
+        public MagicEvent getEvent(final MagicPermanent permanent) {
+            return new MagicEvent(
+                permanent,
+                new MagicMayChoice(
+                    MagicTargetChoice.NEG_TARGET_CREATURE
+                ),
+                new MagicWeakenTargetPicker(1,1),
+                this,
+                "PN may\$ put a -1/-1 counter on target creature\$."
+            );
         }
 
         @Override

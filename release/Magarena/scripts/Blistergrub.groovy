@@ -1,18 +1,13 @@
 [
-    new MagicWhenPutIntoGraveyardTrigger() {
+    new MagicWhenDiesTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicGraveyardTriggerData triggerData) {
-            return (triggerData.fromLocation == MagicLocationType.Play) ?
-                new MagicEvent(
-                    permanent,
-                    permanent.getOpponent(),
-                    this,
-                    "PN loses 2 life."
-                ):
-                MagicEvent.NONE;
+        public MagicEvent getEvent(final MagicPermanent permanent) {
+            return new MagicEvent(
+                permanent,
+                permanent.getOpponent(),
+                this,
+                "PN loses 2 life."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
