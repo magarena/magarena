@@ -1,0 +1,11 @@
+name=Kodama of the South Tree
+url=http://magiccards.info/chk/en/223.html
+image=http://magiccards.info/scans/en/chk/223.jpg
+value=4.111
+rarity=R
+type=Legendary,Creature
+subtype=Spirit
+cost={2}{G}{G}
+pt=4/4
+timing=main
+requires_groovy_code
