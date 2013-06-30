@@ -28,6 +28,7 @@ Arctic Aven
 Armada Wurm
 Armored Skaab
 Armored Wolf-Rider
+Armory Guard
 Arrest
 Ascended Lawmage
 Ashmouth Hound
@@ -120,6 +121,7 @@ Counterflux
 Coursers' Accord
 Craterhoof Behemoth
 Craterize
+Crimson Muckwader
 Crippling Blight
 Crippling Chill
 Crocanura
@@ -206,6 +208,7 @@ Falkenrath Noble
 Falkenrath Torturer
 Farbog Boneflinger
 Farbog Explorer
+Fatal Fumes
 Favorable Winds
 Favor of the Woods
 Fencing Ace
@@ -304,6 +307,7 @@ Hollowhenge Beast
 Hollowhenge Scavenger
 Hollowhenge Spirit
 Holy Justiciar
+Holy Mantle
 Homicidal Seclusion
 Horncaller's Chant
 Hound of Griselbrand
@@ -374,6 +378,7 @@ Mikaeus, the Lunarch
 Mikaeus, the Unhallowed
 Mind Rot
 Mindshrieker
+Mindstatic
 Minotaur Aggressor
 Mist Raven
 Mizzium Mortars
@@ -431,6 +436,7 @@ Predator's Gambit
 Primal Huntbeast
 Primordial Hydra
 Prized Elephant
+Psychic Strike
 Putrefy
 Quirion Dryad
 Rage Thrower
@@ -449,6 +455,7 @@ Reaper from the Abyss
 Rebuke
 Reckless Brute
 Reforge the Soul
+Render Silent
 Renegade Demon
 Requiem Angel
 Restoration Angel
@@ -575,6 +582,7 @@ Temporal Mastery
 Tenement Crasher
 Terminus
 Thatcher Revolt
+Thoughtflare
 Thought Scour
 Thraben Doomsayer
 Thraben Purebloods
@@ -589,6 +597,7 @@ Tithe Drinker
 Torch Fiend
 Tormented Soul
 Tormentor's Trident
+Totally Lost
 Tower Drake
 Towering Indrik
 Towering Thunderfist
@@ -636,6 +645,7 @@ Village Cannibals
 Village Survivors
 Vitu-Ghazi Guildmage
 Voiceless Spirit
+Voice of Resurgence
 Voice of the Provinces
 Volcanic Strength
 Vorapede
@@ -663,6 +673,7 @@ Wooden Stake
 Woodland Cemetery
 Woodland Sleuth
 Woodlot Crawler
+Worldspine Wurm
 Wrack with Madness
 Wreath of Geists
 Wrecking Ogre

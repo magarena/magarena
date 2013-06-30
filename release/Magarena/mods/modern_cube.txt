@@ -12,6 +12,7 @@ Adaptive Snapjaw
 Adarkar Wastes
 Admonition Angel
 Advanced Hoverguard
+Advent of the Wurm
 Adventuring Gear
 AEther Adept
 AEther Figment
@@ -46,6 +47,7 @@ Alluring Siren
 Alpha Brawl
 Alpha Myr
 Alpha Tyrranax
+Ambassador Laquatus
 Ambition's Cost
 Ambush Viper
 Amphin Cutthroat
@@ -108,9 +110,12 @@ Armament Master
 Armored Cancrix
 Armored Skaab
 Armored Warhorse
+Armored Wolf-Rider
+Armory Guard
 Arrest
 Artisan of Kozilek
 Ascendant Evincar
+Ascended Lawmage
 Asceticism
 Asha's Favor
 Ashcoat Bear
@@ -162,6 +167,7 @@ Ballista Squad
 Ball Lightning
 Ballynock Cohort
 Bandage
+Bane Alley Blackguard
 Baneslayer Angel
 Banners Raised
 Bant Sureblade
@@ -177,6 +183,7 @@ Basilica Guards
 Basilica Screecher
 Basilisk Collar
 Battered Golem
+Battering Krasis
 Battering Sliver
 Batterskull
 Battlefield Forge
@@ -233,6 +240,7 @@ Blinking Spirit
 Blistergrub
 Blistering Dieflyn
 Blisterstick Shaman
+Blitz Hellion
 Blood Artist
 Bloodcrazed Neonate
 Blood Crypt
@@ -263,6 +271,7 @@ Bogardan Lancer
 Boggart Mob
 Boggart Ram-Gang
 Boggart Shenanigans
+Boggart Sprite-Chaser
 Bog Imp
 Bog Raiders
 Bog Tatters
@@ -285,9 +294,11 @@ Boreal Druid
 Boreal Shelf
 Boros Elite
 Boros Guildmage
+Boros Mastiff
 Boros Reckoner
 Boros Recruit
 Boros Swiftblade
+Bosh, Iron Golem
 Bottle Gnomes
 Bound in Silence
 Bounteous Kirin
@@ -355,7 +366,9 @@ Caustic Crawler
 Caustic Rain
 Cavern Thoctar
 Caves of Koilos
+Celestial Ancient
 Celestial Colonnade
+Celestial Kirin
 Celestial Purge
 Cemetery Reaper
 Centaur Courser
@@ -398,6 +411,7 @@ Cloud Crusader
 Cloud Elemental
 Cloudfin Raptor
 Cloudheath Drake
+Cloudhoof Kirin
 Cloudshift
 Cloud Sprite
 Coastal Tower
@@ -417,6 +431,7 @@ Condemn
 Confiscate
 Conjurer's Closet
 Contagious Nim
+Convolute
 Copper Carapace
 Copperhorn Scout
 Copperline Gorge
@@ -437,6 +452,7 @@ Countersquall
 Courier Hawk
 Coursers' Accord
 Court Archers
+Court Homunculus
 Crabapple Cohort
 Cradle of Vitality
 Crafty Pathmage
@@ -451,10 +467,12 @@ Creakwood Liege
 Creeping Mold
 Creeping Tar Pit
 Crimson Mage
+Crimson Muckwader
 Crippling Blight
 Crippling Chill
 Crocanura
 Crossway Vampire
+Crowd of Cinders
 Crucible of Fire
 Cruel Edict
 Crumbling Necropolis
@@ -594,6 +612,7 @@ Dross Crocodile
 Dross Hopper
 Dross Prowler
 Dross Ripper
+Drove of Elves
 Drowned Catacomb
 Drudge Reavers
 Drudge Skeletons
@@ -693,6 +712,7 @@ Explore
 Explosive Impact
 Exquisite Blood
 Eyes in the Skies
+Eyes of the Wisent
 Ezuri, Renegade Leader
 Ezuri's Archers
 Ezuri's Brigade
@@ -700,6 +720,7 @@ Faceless Butcher
 Faceless Devourer
 Faerie Conclave
 Faerie Invaders
+Faerie Swarm
 Falkenrath Aristocrat
 Falkenrath Exterminator
 Falkenrath Marauders
@@ -710,6 +731,7 @@ Fallowsage
 Fangren Hunter
 Farbog Boneflinger
 Farbog Explorer
+Fatal Fumes
 Favorable Winds
 Favor of the Woods
 Fear
@@ -780,6 +802,7 @@ Frost Titan
 Fugitive Wizard
 Fume Spitter
 Fumiko the Lowblood
+Fungusaur
 Furnace Whelp
 Furor of the Bitten
 Furyborn Hellkite
@@ -815,6 +838,7 @@ Ghor-Clan Bloodscale
 Ghor-Clan Rampager
 Ghor-Clan Savage
 Ghost Council of Orzhova
+Ghostfire
 Ghostly Changeling
 Ghost Ship
 Ghostway
@@ -871,6 +895,7 @@ Goblin Elite Infantry
 Goblin Fireslinger
 Goblin Gaveleer
 Goblin Glider
+Goblin Grenade
 Goblin King
 Goblin Mountaineer
 Goblin Outlander
@@ -982,6 +1007,7 @@ Harvester of Souls
 Harvest Gwyllion
 Hateflayer
 Haunted Guardian
+Haunter of Nightveil
 Havengul Runebinder
 Havengul Skaab
 Havengul Vampire
@@ -1001,6 +1027,7 @@ Hellkite Overlord
 Hellrider
 Hematite Golem
 Henchfiend of Ukor
+Herd Gnarr
 Heroes' Reunion
 Hero of Bladehold
 Hexplate Golem
@@ -1022,6 +1049,7 @@ Hollowhenge Scavenger
 Hollowhenge Spirit
 Holy Day
 Holy Justiciar
+Holy Mantle
 Holy Strength
 Homicidal Seclusion
 Honor Guard
@@ -1166,7 +1194,9 @@ Kitchen Finks
 Kitesail
 Kitesail Apprentice
 Kite Shield
+Kithkin Greatheart
 Kithkin Healer
+Kithkin Rabble
 Kitsune Blademaster
 Kitsune Dawnblade
 Kjeldoran Javelineer
@@ -1196,6 +1226,7 @@ Kozilek, Butcher of Truth
 Kraken Hatchling
 Kraken's Eye
 Kranioceros
+Kraul Warrior
 Krenko, Mob Boss
 Krenko's Command
 Kresh the Bloodbraided
@@ -1354,6 +1385,7 @@ Mind Control
 Mind Rot
 Mindshrieker
 Mind Spring
+Mindstatic
 Mind Stone
 Mindwrack Liege
 Minotaur Aggressor
@@ -1391,6 +1423,7 @@ Moonwing Moth
 Moorland Inquisitor
 Mordant Dragon
 Moriok Reaver
+Moriok Scavenger
 Morkrut Banshee
 Moroii
 Mortify
@@ -1409,6 +1442,7 @@ Murder
 Murder of Crows
 Murderous Redcap
 Murkfiend Liege
+Murmuring Phantasm
 Mutavault
 Mycoid Shepherd
 Mycoloth
@@ -1500,12 +1534,14 @@ Ogre Resister
 Ogre's Cleaver
 Ogre Sentry
 Ogre Taskmaster
+Okina, Temple to the Grandfathers
 Old Ghastbark
 Omega Myr
 Omnibian
 Ondu Cleric
 One-Eyed Scarecrow
 Onyx Mage
+Oona, Queen of the Fae
 Oona's Gatewarden
 Ophidian Eye
 Oracle of Nectars
@@ -1597,11 +1633,13 @@ Proper Burial
 Protective Bubble
 Psionic Blast
 Psychic Barrier
+Psychic Strike
 Psychotrope Thallid
 Pulse of the Fields
 Pulse of the Forge
 Pulse of the Tangle
 Puncture Blast
+Punish Ignorance
 Puppeteer
 Puppeteer Clique
 Pus Kami
@@ -1633,6 +1671,7 @@ Rain of Tears
 Raise Dead
 Raise the Alarm
 Rakdos Cackler
+Rakdos Drake
 Rakdos Guildgate
 Rakdos Guildmage
 Rakdos Ragemutt
@@ -1674,6 +1713,7 @@ Relentless Rats
 Remand
 Remove Soul
 Rendclaw Trow
+Render Silent
 Renegade Demon
 Requiem Angel
 Restless Apparition
@@ -1695,6 +1735,7 @@ Ridgeline Rager
 Righteous Blow
 Righteousness
 Riot Devils
+Riot Piker
 Riot Ringleader
 Riot Spikes
 Rip-Clan Crasher
@@ -1730,10 +1771,12 @@ Rotting Legion
 Roughshod Mentor
 Royal Assassin
 Rubbleback Rhino
+Rubblebelt Maaka
 Rubblehulk
 Rukh Egg
 Rumbling Slum
 Rummaging Goblin
+Runeboggle
 Rune-Cervin Rider
 Runeclaw Bear
 Runewing
@@ -1754,6 +1797,7 @@ Salt Marsh
 Samite Healer
 Samurai Enforcers
 Sanctuary Cat
+Sanctum Gargoyle
 Sandstone Warrior
 Sangrite Backlash
 Sangromancer
@@ -1808,6 +1852,7 @@ Seascape Aerialist
 Seaside Citadel
 Seedborn Muse
 Seer's Sundial
+Sejiri Merfolk
 Sejiri Refuge
 Selesnya Guildgate
 Selesnya Sentry
@@ -1897,11 +1942,13 @@ Skithiryx, the Blight Dragon
 Skitter of Lizards
 Skullcage
 Skullmulcher
+Skyfire Kirin
 Skyhunter Cub
 Skyhunter Patrol
 Skyhunter Prowler
 Skyhunter Skirmisher
 Skyknight Legionnaire
+Skylasher
 Skyline Predator
 Sky Ruin Drake
 Skyshroud Ranger
@@ -1972,6 +2019,7 @@ Spectral Flight
 Spectral Gateguards
 Spectral Rider
 Spell Pierce
+Spell Snip
 Sphere of the Suns
 Sphinx of Lost Truths
 Sphinx of Magosi
@@ -1981,6 +2029,7 @@ Spidersilk Net
 Spider Umbra
 Spidery Grasp
 Spiked Baloth
+Spike Jester
 Spiketail Hatchling
 Spined Wurm
 Spineless Thug
@@ -2012,6 +2061,7 @@ Steam Spitter
 Steam Vents
 Steel Overseer
 Steel Wall
+Steeple Roc
 Stensia Bloodhall
 Steppe Lynx
 Steward of Valeron
@@ -2089,6 +2139,7 @@ Synchronous Sliver
 Syndicate Enforcer
 Syndic of Tithes
 Szadek, Lord of Secrets
+Tajic, Blade of the Legion
 Tajuru Archer
 Takeno's Cavalry
 Talisman of Dominance
@@ -2140,6 +2191,7 @@ Thornling
 Thorn-Thrash Viashino
 Thornweald Archer
 Thought Courier
+Thoughtflare
 Thought Scour
 Thoughtweft Gambit
 Thousand-legged Kami
@@ -2180,6 +2232,7 @@ Torii Watchward
 Tormented Soul
 Tormentor's Trident
 Torpor Dust
+Totally Lost
 Tower Drake
 Tower Gargoyle
 Towering Indrik
@@ -2243,6 +2296,7 @@ Undercity Shade
 Underground River
 Underworld Dreams
 Undying Rage
+Unflinching Courage
 Unhallowed Pact
 Unholy Strength
 Unmake
@@ -2260,6 +2314,7 @@ Uthden Troll
 Utopia Tree
 Utvara Scalper
 Vacuumelt
+Valakut, the Molten Pinnacle
 Valeron Outlander
 Valiant Guard
 Vampire Aristocrat
@@ -2334,6 +2389,7 @@ Vivid Marsh
 Vivid Meadow
 Vizzerdrix
 Voiceless Spirit
+Voice of Resurgence
 Voice of the Provinces
 Volcanic Awakening
 Volcanic Dragon
@@ -2351,6 +2407,7 @@ Vulshok Morningstar
 Vulshok Refugee
 Vulshok Sorcerer
 Wakedancer
+Wake the Reflections
 Walking Corpse
 Wall of Air
 Wall of Blood
@@ -2418,6 +2475,7 @@ Witherscale Wurm
 Withstand
 Withstand Death
 Wizened Cenn
+Woebearer
 Wojek Halberdiers
 Wolfbriar Elemental
 Wolfir Avenger
@@ -2427,7 +2485,9 @@ Woodfall Primus
 Woodland Cemetery
 Woodland Changeling
 Woodland Sleuth
+Woodlot Crawler
 Woolly Thoctar
+Worldspine Wurm
 Worship
 Wort, Boggart Auntie
 Wrack with Madness

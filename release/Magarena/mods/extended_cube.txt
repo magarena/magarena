@@ -64,6 +64,7 @@ Armored Cancrix
 Armored Skaab
 Armored Warhorse
 Armored Wolf-Rider
+Armory Guard
 Arrest
 Artisan of Kozilek
 Ascended Lawmage
@@ -263,6 +264,7 @@ Craterhoof Behemoth
 Craterize
 Creeping Tar Pit
 Crimson Mage
+Crimson Muckwader
 Crippling Blight
 Crippling Chill
 Crocanura
@@ -410,6 +412,7 @@ Falkenrath Noble
 Falkenrath Torturer
 Farbog Boneflinger
 Farbog Explorer
+Fatal Fumes
 Favorable Winds
 Favor of the Woods
 Fencing Ace
@@ -498,6 +501,7 @@ Goblin Bushwhacker
 Goblin Chieftain
 Goblin Fireslinger
 Goblin Gaveleer
+Goblin Grenade
 Goblin Piker
 Goblin Rally
 Goblin Roughrider
@@ -599,6 +603,7 @@ Hollowhenge Beast
 Hollowhenge Scavenger
 Hollowhenge Spirit
 Holy Justiciar
+Holy Mantle
 Holy Strength
 Homicidal Seclusion
 Honor of the Pure
@@ -774,6 +779,7 @@ Mikaeus, the Unhallowed
 Mind Control
 Mind Rot
 Mindshrieker
+Mindstatic
 Minotaur Aggressor
 Mirran Crusader
 Mirrorworks
@@ -898,6 +904,7 @@ Primordial Hydra
 Prized Elephant
 Prodigal Pyromancer
 Psychic Barrier
+Psychic Strike
 Putrefax
 Putrefy
 Pyroclasm
@@ -937,6 +944,7 @@ Reclaim
 Reforge the Soul
 Reinforced Bulwark
 Relentless Rats
+Render Silent
 Renegade Demon
 Requiem Angel
 Restoration Angel
@@ -999,6 +1007,7 @@ Searchlight Geist
 Searing Spear
 Seascape Aerialist
 Seer's Sundial
+Sejiri Merfolk
 Sejiri Refuge
 Selesnya Guildgate
 Selesnya Sentry
@@ -1172,6 +1181,7 @@ Terminus
 Terra Stomper
 Territorial Baloth
 Thatcher Revolt
+Thoughtflare
 Thought Scour
 Thraben Doomsayer
 Thraben Purebloods
@@ -1192,6 +1202,7 @@ Tithe Drinker
 Torch Fiend
 Tormented Soul
 Tormentor's Trident
+Totally Lost
 Tower Drake
 Towering Indrik
 Towering Thunderfist
@@ -1239,6 +1250,7 @@ Untamed Might
 Urabrask the Hidden
 Urban Evolution
 Urgent Exorcism
+Valakut, the Molten Pinnacle
 Vampire Hexmage
 Vampire Interloper
 Vampire Nighthawk
@@ -1272,6 +1284,7 @@ Visions of Beyond
 Vital Splicer
 Vitu-Ghazi Guildmage
 Voiceless Spirit
+Voice of Resurgence
 Voice of the Provinces
 Volcanic Dragon
 Volcanic Strength
@@ -1318,6 +1331,7 @@ Wooden Stake
 Woodland Cemetery
 Woodland Sleuth
 Woodlot Crawler
+Worldspine Wurm
 Wrack with Madness
 Wreath of Geists
 Wrecking Ogre
