@@ -1,17 +1,15 @@
 [
-    new MagicWhenPutIntoGraveyardTrigger() {
+    new MagicWhenDiesTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
-            return (triggerData.fromLocation == MagicLocationType.Play) ?
-                new MagicEvent(
-                    permanent,
-                    MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
-                    MagicPumpTargetPicker.create(),
-                    this,
-                    "PN puts a +1/+1 counter on target creature\$ he or she controls. " +
-                    "If that creature is a Human, put two +1/+1 counters on it instead."
-                ) :
-                MagicEvent.NONE;
+        public MagicEvent getEvent(final MagicPermanent permanent) {
+            return new MagicEvent(
+                permanent,
+                MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
+                MagicPumpTargetPicker.create(),
+                this,
+                "PN puts a +1/+1 counter on target creature\$ he or she controls. " +
+                "If that creature is a Human, put two +1/+1 counters on it instead."
+            );
         }
 
         @Override

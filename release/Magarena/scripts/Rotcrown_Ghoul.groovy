@@ -1,20 +1,14 @@
 [
-    new MagicWhenPutIntoGraveyardTrigger() {
+    new MagicWhenDiesTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicGraveyardTriggerData triggerData) {
-            return (triggerData.fromLocation == MagicLocationType.Play) ?
-                new MagicEvent(
-                    permanent,
-                    permanent.getController(),
-                    MagicTargetChoice.NEG_TARGET_PLAYER,
-                    this,
-                    "Target player\$ puts the top five cards of " +
-                    "his or her library into his or her graveyard."
-                ):
-                MagicEvent.NONE;
+        public MagicEvent getEvent(final MagicPermanent permanent) {
+            return new MagicEvent(
+                permanent,
+                MagicTargetChoice.NEG_TARGET_PLAYER,
+                this,
+                "Target player\$ puts the top five cards of " +
+                "his or her library into his or her graveyard."
+            );
         }
 
         @Override

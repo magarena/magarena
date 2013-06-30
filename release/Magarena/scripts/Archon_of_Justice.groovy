@@ -1,19 +1,14 @@
 [
-    new MagicWhenPutIntoGraveyardTrigger() {
+    new MagicWhenDiesTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicGraveyardTriggerData triggerData) {
-            return (triggerData.fromLocation == MagicLocationType.Play) ?
-                new MagicEvent(
-                    permanent,
-                    MagicTargetChoice.TARGET_PERMANENT,
-                    MagicExileTargetPicker.create(),
-                    this,
-                    "Exile target permanent\$."
-                ):
-                MagicEvent.NONE;
+        public MagicEvent getEvent(final MagicPermanent permanent) {
+            return new MagicEvent(
+                permanent,
+                MagicTargetChoice.NEG_TARGET_PERMANENT,
+                MagicExileTargetPicker.create(),
+                this,
+                "Exile target permanent\$."
+            );
         }
 
         @Override

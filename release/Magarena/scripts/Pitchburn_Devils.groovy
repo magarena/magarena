@@ -1,16 +1,14 @@
 [
-    new MagicWhenPutIntoGraveyardTrigger() {
+    new MagicWhenDiesTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
-            return (triggerData.fromLocation == MagicLocationType.Play) ?
-                new MagicEvent(
-                    permanent,
-                    MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
-                    new MagicDamageTargetPicker(3),
-                    this,
-                    "SN deals 3 damage to target creature or player\$."
-                ):
-                MagicEvent.NONE;
+        public MagicEvent getEvent(final MagicPermanent permanent) {
+            return new MagicEvent(
+                permanent,
+                MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                new MagicDamageTargetPicker(3),
+                this,
+                "SN deals 3 damage to target creature or player\$."
+            );
         }
 
         @Override

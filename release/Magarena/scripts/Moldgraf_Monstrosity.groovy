@@ -1,15 +1,12 @@
 [
-    new MagicWhenPutIntoGraveyardTrigger() {
+    new MagicWhenDiesTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
-            return (triggerData.fromLocation == MagicLocationType.Play) ?
-                new MagicEvent(
-                    permanent,
-                    this,
-                    "Exile SN, then return two creature " +
-                    "cards at random from your graveyard to the battlefield."
-                ):
-                MagicEvent.NONE;
+        public MagicEvent getEvent(final MagicPermanent permanent) {
+            return new MagicEvent(
+                permanent,
+                this,
+                "Exile SN, then return two creature cards at random from your graveyard to the battlefield."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

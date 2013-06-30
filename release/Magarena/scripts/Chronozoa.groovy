@@ -1,9 +1,8 @@
 [
-    new MagicWhenPutIntoGraveyardTrigger() {
+    new MagicWhenDiesTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
-            return (triggerData.fromLocation == MagicLocationType.Play &&
-                    permanent.getCounters(MagicCounterType.Charge) == 0) ?
+        public MagicEvent getEvent(final MagicPermanent permanent) {
+            return permanent.getCounters(MagicCounterType.Charge) == 0 ?
                 new MagicEvent(
                     permanent,
                     this,
