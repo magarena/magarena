@@ -41,8 +41,8 @@
     },
     new MagicWhenLeavesPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent left) {
-            if (permanent == left &&
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
+            if (act.isPermanent(permanent) &&
                 !permanent.getExiledCards().isEmpty()) {
                 final MagicCard exiledCard = permanent.getExiledCards().get(0);
                 return new MagicEvent(

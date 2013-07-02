@@ -13,16 +13,32 @@ import java.util.Collection;
 public class MagicRemoveFromPlayAction extends MagicAction {
 
     private final MagicPermanent permanent;
-    private final MagicLocationType toLocation;
+    private MagicLocationType toLocation;
     private boolean valid;
 
-    public MagicRemoveFromPlayAction(final MagicPermanent permanent,final MagicLocationType toLocation) {
-        this.permanent=permanent;
-        this.toLocation=toLocation;
+    public MagicRemoveFromPlayAction(final MagicPermanent aPermanent,final MagicLocationType aToLocation) {
+        permanent  = aPermanent;
+        toLocation = aToLocation;
     }
 
     public boolean isValid() {
         return valid;
+    }
+    
+    public boolean isPermanent(final MagicPermanent aPermanent) {
+        return permanent == aPermanent;
+    }
+    
+    public MagicPermanent getPermanent() {
+        return permanent;
+    }
+
+    public MagicLocationType getToLocation() {
+        return toLocation;
+    }
+
+    public void setToLocation(final MagicLocationType aToLocation) {
+        toLocation = aToLocation;
     }
 
     @Override
@@ -38,14 +54,14 @@ public class MagicRemoveFromPlayAction extends MagicAction {
         final int score=permanent.getScore()+permanent.getStaticScore();
 
         // Execute trigger here so that full permanent state is preserved.
+        game.executeTrigger(MagicTriggerType.WhenLeavesPlay, this);
+
         if (toLocation==MagicLocationType.Graveyard) {
             game.executeTrigger(MagicTriggerType.WhenOtherPutIntoGraveyardFromPlay,permanent);
             if (permanent.isCreature()) {
                 game.setCreatureDiedThisTurn(true);
             }
         }
-
-        game.executeTrigger(MagicTriggerType.WhenLeavesPlay,permanent);
 
         // Equipment
         if (permanent.getEquippedCreature().isValid()) {

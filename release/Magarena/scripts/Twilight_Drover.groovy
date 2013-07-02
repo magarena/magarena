@@ -1,7 +1,8 @@
 [
     new MagicWhenLeavesPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent left) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
+            final MagicPermanent left = act.getPermanent();
             return (left.isCreature() && left.isToken()) ?
                 new MagicEvent(
                     permanent,

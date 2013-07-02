@@ -21,20 +21,14 @@ def genEvent = {
 [
     new MagicWhenComesIntoPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicPayedCost payedCost) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return genEvent(permanent);
         }
     },
     new MagicWhenLeavesPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicPermanent left) {
-            return (permanent == left) ?
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
+            return act.isPermanent(permanent) ?
                 genEvent(permanent) : MagicEvent.NONE;
         }
     }

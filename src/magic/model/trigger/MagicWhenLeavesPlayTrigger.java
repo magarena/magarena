@@ -1,8 +1,8 @@
 package magic.model.trigger;
 
-import magic.model.MagicPermanent;
+import magic.model.action.MagicRemoveFromPlayAction;
 
-public abstract class MagicWhenLeavesPlayTrigger extends MagicTrigger<MagicPermanent> {
+public abstract class MagicWhenLeavesPlayTrigger extends MagicTrigger<MagicRemoveFromPlayAction> {
     public MagicWhenLeavesPlayTrigger(final int priority) {
         super(priority);
     }

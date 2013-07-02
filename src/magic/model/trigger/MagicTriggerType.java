@@ -8,7 +8,7 @@ public enum MagicTriggerType {
     WhenOtherSpellIsCast,   // card on stack
     WhenSpellIsCast,        // card on stack
     WhenComesIntoPlay,      // controller
-    WhenLeavesPlay,         // permanent
+    WhenLeavesPlay,         // MagicRemoveFromPlayAction
     WhenBecomesTapped,      // permanent
     WhenDrawn,              // card
     WhenOtherDrawn,         // card

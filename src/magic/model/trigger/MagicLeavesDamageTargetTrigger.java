@@ -4,6 +4,7 @@ import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicDealDamageAction;
+import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.action.MagicTargetAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
@@ -32,8 +33,8 @@ public class MagicLeavesDamageTargetTrigger extends MagicWhenLeavesPlayTrigger {
     }
 
     @Override
-    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent left) {
-        return (permanent == left) ?
+    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
+        return act.isPermanent(permanent) ?
             new MagicEvent(
                 permanent,
                 targetChoice,

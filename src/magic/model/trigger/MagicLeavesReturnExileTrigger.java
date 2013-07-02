@@ -5,6 +5,7 @@ import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.MagicCardList;
 import magic.model.action.MagicReturnExiledUntilThisLeavesPlayAction;
+import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.event.MagicEvent;
 
 public class MagicLeavesReturnExileTrigger extends MagicWhenLeavesPlayTrigger {
@@ -18,8 +19,8 @@ public class MagicLeavesReturnExileTrigger extends MagicWhenLeavesPlayTrigger {
     }
 
     @Override
-    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent left) {
-        if (permanent == left &&
+    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
+        if (act.isPermanent(permanent) &&
             !permanent.getExiledCards().isEmpty()) {
             final MagicCardList clist = new MagicCardList(permanent.getExiledCards());
             return new MagicEvent(

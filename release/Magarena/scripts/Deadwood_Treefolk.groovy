@@ -28,8 +28,9 @@ def event = {
     },
     new MagicWhenLeavesPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent left) {
-            return (permanent == left) ? event(permanent) : MagicEvent.NONE;
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
+            return act.isPermanent(permanent) ? 
+                event(permanent) : MagicEvent.NONE;
         }
     }
 ]

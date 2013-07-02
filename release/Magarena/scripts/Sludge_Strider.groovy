@@ -35,7 +35,8 @@ def event = {
     },
     new MagicWhenLeavesPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent left) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
+            final MagicPermanent left = act.getPermanent();
             return (left != permanent &&
                     left.isArtifact() &&
                     left.isFriend(permanent)) ?

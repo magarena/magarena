@@ -3,6 +3,7 @@ package magic.model.trigger;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicChangeLifeAction;
+import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.event.MagicEvent;
 
 public class MagicLeavesGainLifeTrigger extends MagicWhenLeavesPlayTrigger {
@@ -14,8 +15,8 @@ public class MagicLeavesGainLifeTrigger extends MagicWhenLeavesPlayTrigger {
     }
 
     @Override
-    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent left) {
-        return (permanent == left) ?
+    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
+        return act.isPermanent(permanent) ?
             new MagicEvent(
                 permanent,
                 this,

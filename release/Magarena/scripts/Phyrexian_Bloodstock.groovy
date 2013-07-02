@@ -1,8 +1,8 @@
 [
     new MagicWhenLeavesPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent left) {
-            return (permanent == left) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicRemoveFromPlayAction act) {
+            return act.isPermanent(permanent) ?
                 new MagicEvent(
                     permanent,
                     MagicTargetChoice.TARGET_WHITE_CREATURE,

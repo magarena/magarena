@@ -1,9 +1,9 @@
 [
     new MagicWhenLeavesPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent left) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicRemoveFromPlayAction act) {
             final int amount = permanent.getCounters(MagicCounterType.Charge);
-            return (permanent == left && amount > 0) ?
+            return (act.isPermanent(permanent) && amount > 0) ?
                 new MagicEvent(
                     permanent,
                     amount,
