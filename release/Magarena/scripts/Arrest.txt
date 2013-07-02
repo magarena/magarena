@@ -1,6 +1,6 @@
 name=Arrest
 url=http://magiccards.info/rtr/en/3.html
-image=http://magiccards.info/rtr/en/3.html
+image=http://magiccards.info/scans/en/rtr/3.jpg
 value=3.985
 rarity=U
 type=Enchantment
