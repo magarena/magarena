@@ -1,0 +1,10 @@
+name=Pillar of Flame
+url=http://magiccards.info/avr/en/149.html
+image=http://magiccards.info/scans/en/avr/149.jpg
+value=3.285
+removal=2
+rarity=C
+type=Sorcery
+cost={R}
+timing=removal
+requires_groovy_code
