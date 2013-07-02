@@ -18,7 +18,7 @@ public abstract class MagicWhenLeavesPlayTrigger extends MagicTrigger<MagicRemov
     }
 
     // replacement effect has priority 1
-    public static final MagicWhenLeavesPlayTrigger IfDieExileInstead = new MagicWhenLeavesPlayTrigger(1) {
+    public static final MagicWhenLeavesPlayTrigger IfDieExileInstead = new MagicWhenLeavesPlayTrigger(MagicTrigger.REPLACEMENT) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
             if (act.isPermanent(permanent) && act.getToLocation() == MagicLocationType.Graveyard) {

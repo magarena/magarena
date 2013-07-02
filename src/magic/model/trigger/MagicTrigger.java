@@ -11,6 +11,8 @@ import magic.model.event.MagicEventAction;
 public abstract class MagicTrigger<T> implements MagicEventAction,MagicChangeCardDefinition {
 
     private static final int DEFAULT_PRIORITY=10;
+    
+    public static final int REPLACEMENT=1;
 
     private final int priority;
 
