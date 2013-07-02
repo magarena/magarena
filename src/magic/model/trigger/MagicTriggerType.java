@@ -15,6 +15,7 @@ public enum MagicTriggerType {
     WhenLifeIsGained,       // player, life gained
     WhenLifeIsLost,         // player, life lost
     WhenOtherComesIntoPlay, // permanent
+    WouldBeMoved,           // MagicMoveCardAction
     WhenPutIntoGraveyard,       // graveyard trigger data
     WhenOtherPutIntoGraveyard,  // graveyard trigger data
     WhenOtherPutIntoGraveyardFromPlay, // permanent

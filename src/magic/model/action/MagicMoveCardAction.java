@@ -20,7 +20,7 @@ public class MagicMoveCardAction extends MagicAction {
     private final MagicCard card;
     private final MagicPermanent permanent;
     private final MagicLocationType fromLocation;
-    private final MagicLocationType toLocation;
+    private MagicLocationType toLocation;
 
     private MagicMoveCardAction(
             final MagicCard card,
@@ -44,9 +44,18 @@ public class MagicMoveCardAction extends MagicAction {
     public MagicMoveCardAction(final MagicCardOnStack cardOnStack) {
         this(cardOnStack.getCard(),MagicPermanent.NONE,MagicLocationType.Stack,cardOnStack.getMoveLocation());
     }
+    
+    public MagicLocationType getToLocation() {
+        return toLocation;
+    }
+
+    public void setToLocation(final MagicLocationType aToLocation) {
+        toLocation = aToLocation;
+    }
 
     @Override
     public void doAction(final MagicGame game) {
+        game.executeTrigger(MagicTriggerType.WouldBeMoved, this);
 
         // Move card.
         if (!card.isToken()) {
