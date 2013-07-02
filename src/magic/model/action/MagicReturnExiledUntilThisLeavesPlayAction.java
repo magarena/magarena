@@ -68,9 +68,10 @@ public class MagicReturnExiledUntilThisLeavesPlayAction extends MagicAction {
                     } else {
                         final Boolean newOwner = controller != MagicPlayer.NONE;
                         game.doAction(new MagicPlayCardAction(
-                                card,
-                                newOwner ? controller : card.getOwner(),
-                                action));
+                            card,
+                            newOwner ? controller : card.getOwner(),
+                            action
+                        ));
                     }
                 } else {
                     game.doAction(new MagicMoveCardAction(card,MagicLocationType.Exile,location));
