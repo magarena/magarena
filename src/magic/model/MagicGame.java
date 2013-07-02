@@ -9,11 +9,13 @@ import magic.model.action.MagicLogMarkerAction;
 import magic.model.action.MagicMarkerAction;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.action.MagicRemoveFromPlayAction;
+import magic.model.action.MagicMoveCardAction;
 import magic.model.choice.MagicCombatCreature;
 import magic.model.choice.MagicDeclareAttackersResult;
 import magic.model.choice.MagicDeclareBlockersResult;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicSpellCardEvent;
 import magic.model.event.MagicEventQueue;
 import magic.model.event.MagicUniquenessEvent;
 import magic.model.mstatic.MagicLayer;
@@ -25,6 +27,7 @@ import magic.model.phase.MagicPhase;
 import magic.model.phase.MagicPhaseType;
 import magic.model.phase.MagicStep;
 import magic.model.stack.MagicItemOnStack;
+import magic.model.stack.MagicCardOnStack;
 import magic.model.stack.MagicStack;
 import magic.model.stack.MagicTriggerOnStack;
 import magic.model.target.MagicTarget;
@@ -710,6 +713,11 @@ public class MagicGame {
 
         event.executeEvent(this,choiceResults);
         update();
+
+        // Move card to move location that is not play
+        if (event.isSpellCardEvent()) {
+            doAction(new MagicMoveCardAction(event.getCardOnStack()));
+        }
     }
 
     public MagicEventQueue getEvents() {

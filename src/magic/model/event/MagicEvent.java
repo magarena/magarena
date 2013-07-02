@@ -291,6 +291,12 @@ public class MagicEvent implements MagicCopyable {
         return true;
     }
 
+    public boolean isSpellCardEvent() {
+        return source instanceof MagicCardOnStack &&
+               action instanceof MagicSpellCardEvent &&
+               getCardOnStack().getMoveLocation() != MagicLocationType.Play;
+    }
+
     public final MagicSource getSource() {
         return source;
     }
@@ -565,13 +571,6 @@ public class MagicEvent implements MagicCopyable {
         chosen = choiceResults;
         action.executeEvent(game,this);
         chosen = null;
-
-        //move card to move location that is not play
-        if (source instanceof MagicCardOnStack &&
-            action instanceof MagicSpellCardEvent &&
-            getCardOnStack().getMoveLocation() != MagicLocationType.Play) {
-            game.doAction(new MagicMoveCardAction(getCardOnStack()));
-        }
     }
 
     public MagicCondition[] getConditions() {
