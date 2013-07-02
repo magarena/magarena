@@ -698,9 +698,14 @@ public class MagicGame {
 
         logAppendEvent(event,choiceResults);
 
-        // Payed cost or target
-        if (choiceResults.length == 1) {
-            payedCost.set(choiceResults[0]);
+        // Payed cost
+        if (event.getManaChoiceResultIndex() > 0) {
+            payedCost.set(choiceResults[event.getManaChoiceResultIndex()]);
+        }
+        
+        // Target in cost
+        if (event.getTargetChoiceResultIndex() > 0) {
+            payedCost.set(choiceResults[event.getTargetChoiceResultIndex()]);
         }
 
         event.executeEvent(this,choiceResults);

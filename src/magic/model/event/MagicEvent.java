@@ -387,11 +387,11 @@ public class MagicEvent implements MagicCopyable {
         choiceResults[getTargetChoiceResultIndex()] = getTarget();
     }
 
-    private final int getTargetChoiceResultIndex() {
+    public final int getTargetChoiceResultIndex() {
         return choice.getTargetChoiceResultIndex();
     }
 
-    private final int getManaChoiceResultIndex() {
+    public final int getManaChoiceResultIndex() {
         return choice.getManaChoiceResultIndex();
     }
 
