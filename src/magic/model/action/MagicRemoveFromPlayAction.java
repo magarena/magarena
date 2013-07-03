@@ -46,7 +46,7 @@ public class MagicRemoveFromPlayAction extends MagicAction {
         final MagicPlayer controller=permanent.getController();
 
         // Check if this is still a valid action.
-        valid=controller.controlsPermanent(permanent);
+        valid = permanent.isValid();
         if (!valid) {
             return;
         }

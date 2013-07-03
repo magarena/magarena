@@ -28,7 +28,7 @@ public class MagicAttachEquipmentAction extends MagicAction {
 
     @Override
     public void doAction(final MagicGame game) {
-        validEquipment=equipment.getController().controlsPermanent(equipment);
+        validEquipment = equipment.isValid();
         if (!validEquipment) {
             return;
         }
@@ -49,7 +49,7 @@ public class MagicAttachEquipmentAction extends MagicAction {
                 score=-score;
             }
         }
-        validCreature = creature.isValid() && creature.getController().controlsPermanent(creature);
+        validCreature = creature.isValid();
         if (validCreature) {
             score-=creature.getScore();
 

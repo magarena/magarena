@@ -135,7 +135,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
 
     public boolean isValid() {
-        return true;
+        return getController().controlsPermanent(this);
     }
 
     public boolean isInvalid() {
