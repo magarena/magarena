@@ -1,6 +1,6 @@
 name=Sliver
 token=Sliver
-image=http://magiccards.info/extra/token/player-rewards-2003/sliver.html
+image=http://magiccards.info/extras/token/player-rewards-2003/sliver.jpg
 value=1
 type=Creature
 subtype=Sliver
