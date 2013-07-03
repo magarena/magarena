@@ -439,7 +439,21 @@ checks: \
 	check_requires_groovy_code \
 	check_script_name \
 	check_unique_key \
-	check_groovy_escape
+	check_groovy_escape \
+	check_url \
+	check_image
+
+# every url is to a HTML page
+check_url:
+	diff \
+	/dev/null \
+	<(grep '^url=' -r release/Magarena/scripts | grep -v "html$$")
+
+# every image is to a jpg file or attachment
+check_image:
+	diff \
+	/dev/null \
+	<(grep '^image=' -r release/Magarena/scripts | grep -v "jpg$$" | grep -v attachment.php)
 
 # every aura must have an enchant property
 check_aura:
