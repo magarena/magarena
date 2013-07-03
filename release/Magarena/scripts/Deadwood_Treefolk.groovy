@@ -10,9 +10,19 @@ def action = {
 
 def event = {
     final MagicPermanent permanent ->
+    final MagicTargetFilter<MagicCard> filter = new MagicTargetFilter.MagicOtherCardTargetFilter(
+        MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
+        permanent.getCard()
+    );
+    final MagicTargetChoice choice = new MagicTargetChoice(
+        filter,
+        true,
+        MagicTargetHint.None,
+        "another target creature card from your graveyard"
+    );
     return new MagicEvent(
         permanent,
-        MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
+        choice,
         new MagicGraveyardTargetPicker(false),
         action,
         "Return another target creature card\$ from your graveyard to your hand."
