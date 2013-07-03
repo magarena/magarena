@@ -35,16 +35,18 @@ public class MagicPayedCost implements MagicCopyable {
         return new MagicPayedCost(copyMap, this);
     }
 
-    private void setTarget(final MagicTarget target) {
-        this.target = target;
+    private void setTarget(final MagicTarget aTarget) {
+        target = aTarget;
     }
 
     public MagicTarget getTarget() {
         return target;
     }
 
-    private void setX(final int x) {
-        this.x = x;
+    private void setX(final int newX) {
+        if (newX != 0) {
+            x = newX;
+        }
     }
 
     public int getX() {
