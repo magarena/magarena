@@ -8,6 +8,7 @@ public class MagicSoulbondAction extends MagicAction {
     private final MagicPermanent permanent;
     private final MagicPermanent pairedCreature;
     private final boolean set;
+    private boolean valid;
 
     public MagicSoulbondAction(final MagicPermanent permanent,final MagicPermanent pairedCreature,final boolean set) {
         this.permanent = permanent;
@@ -17,6 +18,11 @@ public class MagicSoulbondAction extends MagicAction {
 
     @Override
     public void doAction(final MagicGame game) {
+        valid = permanent.isValid() && pairedCreature.isValid();
+        if (!valid) {
+            return;
+        }
+
         if (set) {
             permanent.setPairedCreature(pairedCreature);
             pairedCreature.setPairedCreature(permanent);
@@ -28,6 +34,10 @@ public class MagicSoulbondAction extends MagicAction {
 
     @Override
     public void undoAction(final MagicGame game) {
+        if (!valid) {
+            return;
+        }
+        
         if (set) {
             permanent.setPairedCreature(MagicPermanent.NONE);
             pairedCreature.setPairedCreature(MagicPermanent.NONE);
