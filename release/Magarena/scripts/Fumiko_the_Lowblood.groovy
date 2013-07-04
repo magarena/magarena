@@ -1,6 +1,6 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
-    final int amount = event.getPlayer().getOpponent().getNrOfAttackers();
+    final int amount = event.getPlayer().getOpponent().getNrOfAttackers() + event.getPlayer().getNrOfAttackers();
     game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),amount,amount));
 } as MagicEventAction
 
