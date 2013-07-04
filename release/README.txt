@@ -53,6 +53,10 @@ Thank you for your support and have fun!
 
 
 
+Release 1.40 (July 27, 2013)
+============
+includes contributions from ...
+
 Release 1.39 (June 30, 2013)
 ============
 includes contributions from melvin, a. benedict balbuena, manve.herumedre, and neilpturley
