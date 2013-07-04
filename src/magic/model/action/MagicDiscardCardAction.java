@@ -10,11 +10,17 @@ public class MagicDiscardCardAction extends MagicAction {
 
     private final MagicPlayer player;
     private final MagicCard card;
+    private final MagicLocationType toLocation;
     private int index;
+    
+    public MagicDiscardCardAction(final MagicPlayer aPlayer,final MagicCard aCard) {
+        this(aPlayer, aCard, MagicLocationType.Graveyard);
+    }
 
-    public MagicDiscardCardAction(final MagicPlayer player,final MagicCard card) {
-        this.player=player;
-        this.card=card;
+    public MagicDiscardCardAction(final MagicPlayer aPlayer,final MagicCard aCard, final MagicLocationType aToLocation) {
+        player = aPlayer;
+        card = aCard;
+        toLocation = aToLocation;
     }
 
     @Override
@@ -22,7 +28,7 @@ public class MagicDiscardCardAction extends MagicAction {
         index = player.removeCardFromHand(card);
         if (index >= 0) {
             setScore(player,-ArtificialScoringSystem.getCardScore(card));
-            game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersHand,MagicLocationType.Graveyard));
+            game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersHand,toLocation));
             game.setStateCheckRequired();
         }
     }
