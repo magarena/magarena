@@ -27,6 +27,7 @@ public enum MagicTriggerType {
     WhenLoseControl,        // permanent
     IfDamageWouldBeDealt,   // item on stack
     IfPlayerWouldLose,      // player[]
+    IfLifeWouldChange,      // MagicChangeLifeAction
     ;
 
     public boolean usesStack() {

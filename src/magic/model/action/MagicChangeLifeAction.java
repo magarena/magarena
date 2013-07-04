@@ -10,17 +10,28 @@ import magic.model.trigger.MagicTriggerType;
 public class MagicChangeLifeAction extends MagicAction {
 
     private final MagicPlayer player;
-    private final int life;
+    private int lifeChange;
 
-    public MagicChangeLifeAction(final MagicPlayer aPlayer,final int aLife) {
+    public MagicChangeLifeAction(final MagicPlayer aPlayer,final int aLifeChange) {
         player = aPlayer;
-        life = aLife;
+        lifeChange = aLifeChange;
+    }
+
+    public int getLifeChange() {
+        return lifeChange;
+    }
+
+    public void setLifeChange(final int aLifeChange) {
+        lifeChange = aLifeChange;
     }
 
     @Override
     public void doAction(final MagicGame game) {
         final int oldLife = player.getLife();
-        final int newLife = oldLife+life;
+
+        game.executeTrigger(MagicTriggerType.IfLifeWouldChange, this);
+
+        final int newLife = oldLife + lifeChange;
         player.setLife(newLife);
 
         setScore(player,ArtificialScoringSystem.getLifeScore(newLife)-ArtificialScoringSystem.getLifeScore(oldLife));
@@ -39,6 +50,6 @@ public class MagicChangeLifeAction extends MagicAction {
 
     @Override
     public String toString() {
-        return getClass().getSimpleName()+" ("+player.getName()+','+life+')';
+        return getClass().getSimpleName()+" ("+player.getName()+','+lifeChange+')';
     }
 }
