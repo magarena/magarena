@@ -1,0 +1,10 @@
+name=Warleader's Helix
+url=http://magiccards.info/dgm/en/116.html
+image=http://magiccards.info/scans/en/dgm/116.jpg
+value=4.636
+removal=4
+rarity=U
+type=Instant
+cost={2}{R}{W}
+timing=removal
+requires_groovy_code
