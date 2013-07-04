@@ -15,6 +15,10 @@ public class MagicAddTurnTriggerAction extends MagicAction {
         this.permanent=permanent;
         this.trigger=trigger;
     }
+    
+    public MagicAddTurnTriggerAction(final MagicTrigger<?> trigger) {
+        this(MagicPermanent.NONE, trigger);
+    }
 
     @Override
     public void doAction(final MagicGame game) {
