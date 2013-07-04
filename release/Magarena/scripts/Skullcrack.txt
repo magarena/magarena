@@ -1,0 +1,9 @@
+name=Skullcrack
+url=http://magiccards.info/gtc/en/106.html
+image=http://magiccards.info/scans/en/gtc/106.jpg
+value=4.632
+rarity=U
+type=Instant
+cost={1}{R}
+timing=removal
+requires_groovy_code
