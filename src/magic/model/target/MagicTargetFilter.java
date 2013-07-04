@@ -762,16 +762,8 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
     MagicPermanentFilterImpl TARGET_ALLY_YOU_CONTROL = Factory.creature(MagicSubType.Ally, Control.You);
 
-    MagicPermanentFilterImpl TARGET_FAERIE_YOU_CONTROL = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isController(player) &&
-                   (target.isCreature() || target.hasType(MagicType.Tribal)) &&
-                   target.hasSubType(MagicSubType.Faerie);
-        }
-    };
-    
-    MagicPermanentFilterImpl TARGET_FAERIE_CREATURE_YOU_CONTROL = Factory.creature(MagicSubType.Faerie, Control.You);
-    
+    MagicPermanentFilterImpl TARGET_FAERIE_YOU_CONTROL = Factory.creature(MagicSubType.Faerie, Control.You);
+
     MagicPermanentFilterImpl TARGET_SPIRIT_YOU_CONTROL = Factory.creature(MagicSubType.Spirit, Control.You);
 
     MagicPermanentFilterImpl TARGET_MODULAR_CREATURE_YOU_CONTROL = Factory.creature(MagicAbility.Modular, Control.You);
