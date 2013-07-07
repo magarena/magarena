@@ -72,16 +72,14 @@ public class MagicPlayChoice extends MagicChoice {
         final Set<MagicSourceActivation<? extends MagicSource>> sourceActivations = player.getSourceActivations();
         MagicActivation<? extends MagicSource> skip = null;
         for (final MagicSourceActivation<? extends MagicSource> sourceActivation : sourceActivations) {
-            if (sourceActivation.activation == skip) {
-                continue;
-            } else if (sourceActivation.canPlay(game, player, isAI)) {
-                if (isAI && sourceActivation.isIndependent()) {
-                    skip = sourceActivation.activation;
-                }
+            if (sourceActivation.activation != skip && sourceActivation.canPlay(game, player, isAI)) {
                 validChoices.add(isAI ?
                     new MagicPlayChoiceResult(sourceActivation) :
                     sourceActivation.source
                 );
+                if (isAI && sourceActivation.isIndependent()) {
+                    skip = sourceActivation.activation;
+                }
             }
         }
     }
