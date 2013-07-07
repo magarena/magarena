@@ -1,0 +1,11 @@
+name=Scavenging Ooze
+url=http://magiccards.info/cmd/en/170.html
+image=http://magiccards.info/scans/en/cmd/170.jpg
+value=3.708
+rarity=R
+type=Creature
+subtype=Ooze
+cost={1}{G}
+pt=2/2
+timing=main
+requires_groovy_code
