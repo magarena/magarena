@@ -34,6 +34,14 @@ public class MagicSourceActivation<T extends MagicSource> implements Comparable<
         return activation.getEvent(source);
     }
     
+    public boolean usesStack() {
+        return activation.usesStack();
+    }
+    
+    public void changeActivationPriority() {
+        activation.changeActivationPriority(source.getController());
+    }
+    
     @Override
     public int compareTo(final MagicSourceActivation other) {
         return activation.compareTo(other.activation);

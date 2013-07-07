@@ -40,19 +40,13 @@ public class MagicPriorityEvent extends MagicEvent {
                 }
             } else {
                 // Clear priority passed only when stack is used.
-                final MagicSourceActivation sourceActivation=playChoiceResult.sourceActivation;
-                if (sourceActivation.activation.usesStack()) {
+                final MagicSourceActivation<? extends MagicSource> sourceActivation = playChoiceResult.sourceActivation;
+                if (sourceActivation.usesStack()) {
                     game.setPriorityPassed(false);
                 }
 
-                final MagicSource source = sourceActivation.source;
-                final MagicPlayer player = source.getController();
-
                 // set activation/priority of controller
-                sourceActivation.activation.changeActivationPriority(game,player);
-
-                // reset activation/priority of opponent
-                player.getOpponent().getActivationPriority().clear();
+                sourceActivation.changeActivationPriority();
 
                 // reset payed costs
                 game.resetPayedCost();

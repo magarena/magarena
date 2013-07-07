@@ -53,10 +53,13 @@ public abstract class MagicActivation<T extends MagicSource> implements MagicEve
         return id >= actpri.getActivationId();
     }
 
-    void changeActivationPriority(final MagicGame game,final MagicPlayer player) {
+    void changeActivationPriority(final MagicPlayer player) {
         final MagicActivationPriority actpri = player.getActivationPriority();
         actpri.setPriority(priority);
         actpri.setActivationId(id);
+        
+        // reset activation/priority of opponent
+        player.getOpponent().getActivationPriority().clear();
     }
 
     public final boolean canPlay(
