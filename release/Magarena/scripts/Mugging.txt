@@ -1,0 +1,10 @@
+name=Mugging
+url=http://magiccards.info/gtc/en/102.html
+image=http://magiccards.info/scans/en/gtc/102.jpg
+value=4.632
+removal=2
+rarity=C
+type=Sorcery
+cost={R}
+timing=removal
+requires_groovy_code
