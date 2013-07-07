@@ -15,7 +15,7 @@
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicPermanent creature : targets) {
                 game.doAction(new MagicChangeTurnPTAction(creature,5,5));
-                game.doAction(new MagicSetAbilityAction(
+                game.doAction(new MagicGainAbilityAction(
                     creature,
                     [
                         MagicAbility.FirstStrike,

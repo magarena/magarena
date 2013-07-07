@@ -20,7 +20,7 @@
                 game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicPermanent creature : targets) {
                 game.doAction(new MagicChangeTurnPTAction(creature,1,0));
-                game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Haste));
+                game.doAction(new MagicGainAbilityAction(creature,MagicAbility.Haste));
             }
         }
     }

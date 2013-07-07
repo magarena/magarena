@@ -20,7 +20,7 @@
             );
             for (final MagicPermanent target : targets) {
                 game.doAction(new MagicChangeTurnPTAction(target, 1, 1));
-                game.doAction(new MagicSetAbilityAction(target, MagicAbility.Trample));
+                game.doAction(new MagicGainAbilityAction(target, MagicAbility.Trample));
             }
         }
     }

@@ -12,7 +12,7 @@
                     2,
                     true
                 ));
-                game.doAction(new MagicSetAbilityAction(permanent,MagicAbility.Fear,MagicStatic.Forever));
+                game.doAction(new MagicGainAbilityAction(permanent,MagicAbility.Fear,MagicStatic.Forever));
             }
             return MagicEvent.NONE;
         }

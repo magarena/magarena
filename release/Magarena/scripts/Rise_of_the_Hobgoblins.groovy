@@ -30,7 +30,7 @@
             for (final MagicPermanent creature : targets) {
                 if (creature.hasColor(MagicColor.Red) ||
                     creature.hasColor(MagicColor.White)) {
-                    game.doAction(new MagicSetAbilityAction(creature,MagicAbility.FirstStrike));
+                    game.doAction(new MagicGainAbilityAction(creature,MagicAbility.FirstStrike));
                 }
             }
         }

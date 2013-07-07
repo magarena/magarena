@@ -5,7 +5,7 @@ import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicSetAbilityAction;
+import magic.model.action.MagicGainAbilityAction;
 import magic.model.condition.MagicCondition;
 
 public class MagicGainActivation extends MagicPermanentActivation {
@@ -38,6 +38,6 @@ public class MagicGainActivation extends MagicPermanentActivation {
 
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        game.doAction(new MagicSetAbilityAction(event.getPermanent(),ability));
+        game.doAction(new MagicGainAbilityAction(event.getPermanent(),ability));
     }
 }

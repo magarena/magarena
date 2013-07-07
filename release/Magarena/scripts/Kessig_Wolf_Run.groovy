@@ -31,7 +31,7 @@
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeTurnPTAction(creature,amount,0));
-                    game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Trample));
+                    game.doAction(new MagicGainAbilityAction(creature,MagicAbility.Trample));
                 }
             });
         }

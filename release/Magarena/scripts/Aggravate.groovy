@@ -26,7 +26,7 @@
                         );
                         game.doAction(new MagicDealDamageAction(damage));
                         if (damage.getDealtAmount() > 0) {
-                            game.doAction(new MagicSetAbilityAction(
+                            game.doAction(new MagicGainAbilityAction(
                                 target,
                                 MagicAbility.AttacksEachTurnIfAble
                             ));

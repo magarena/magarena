@@ -18,7 +18,7 @@
                 public void doAction(final MagicPermanent perm) {
                     game.doAction(new MagicGainControlAction(event.getPlayer(),perm,MagicStatic.UntilEOT));
                     game.doAction(new MagicUntapAction(perm));
-                    game.doAction(new MagicSetAbilityAction(perm,MagicAbility.Haste));
+                    game.doAction(new MagicGainAbilityAction(perm,MagicAbility.Haste));
                 }
             });
         }

@@ -15,7 +15,7 @@
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeTurnPTAction(creature, 0, 1));
-                    game.doAction(new MagicSetAbilityAction(creature, MagicAbility.Hexproof));
+                    game.doAction(new MagicGainAbilityAction(creature, MagicAbility.Hexproof));
                 }
             });
         }
@@ -43,7 +43,7 @@
                 game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicPermanent creature : targets) {
                 game.doAction(new MagicChangeTurnPTAction(creature, 0, 1));
-                game.doAction(new MagicSetAbilityAction(creature, MagicAbility.Hexproof));
+                game.doAction(new MagicGainAbilityAction(creature, MagicAbility.Hexproof));
             }
         }
     }

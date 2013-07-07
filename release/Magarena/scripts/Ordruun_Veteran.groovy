@@ -13,7 +13,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicSetAbilityAction(event.getPermanent(),MagicAbility.DoubleStrike));
+            game.doAction(new MagicGainAbilityAction(event.getPermanent(),MagicAbility.DoubleStrike));
         }
     }
 ]

@@ -22,7 +22,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicSetAbilityAction(event.getPermanent(),MagicAbility.Flying));
+            game.doAction(new MagicGainAbilityAction(event.getPermanent(),MagicAbility.Flying));
         }
     }
 ]

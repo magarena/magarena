@@ -12,7 +12,7 @@
                     3,
                     true
                 ));
-                game.doAction(new MagicSetAbilityAction(permanent,MagicAbility.Trample,MagicStatic.Forever));
+                game.doAction(new MagicGainAbilityAction(permanent,MagicAbility.Trample,MagicStatic.Forever));
             }
             return MagicEvent.NONE;
         }

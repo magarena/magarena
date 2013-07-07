@@ -17,9 +17,9 @@
                 public void doAction(final MagicPermanent creature) {
                     final MagicPlayer player = event.getPlayer();
                     if (player.getIndex() == 0) {
-                        game.doAction(new MagicSetAbilityAction(creature,MagicAbility.CannotBeTheTarget1));
+                        game.doAction(new MagicGainAbilityAction(creature,MagicAbility.CannotBeTheTarget1));
                     } else {
-                        game.doAction(new MagicSetAbilityAction(creature,MagicAbility.CannotBeTheTarget0));
+                        game.doAction(new MagicGainAbilityAction(creature,MagicAbility.CannotBeTheTarget0));
                     }
                     if (event.isKicked()) {
                         game.doAction(new MagicChangeTurnPTAction(creature,4,4));

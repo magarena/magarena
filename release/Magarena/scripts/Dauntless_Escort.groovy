@@ -20,7 +20,7 @@
             final Collection<MagicPermanent> creatures=
                 game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicPermanent creature : creatures) {
-                game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Indestructible));
+                game.doAction(new MagicGainAbilityAction(creature,MagicAbility.Indestructible));
             }
         }
     }

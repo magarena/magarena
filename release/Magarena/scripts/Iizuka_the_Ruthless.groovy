@@ -29,7 +29,7 @@
             final Collection<MagicPermanent> targets =
                     game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_SAMURAI_YOU_CONTROL);
             for (final MagicPermanent creature : targets) {
-                game.doAction(new MagicSetAbilityAction(creature,MagicAbility.DoubleStrike));
+                game.doAction(new MagicGainAbilityAction(creature,MagicAbility.DoubleStrike));
             }
         }
     }

@@ -16,7 +16,7 @@
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeTurnPTAction(creature,2,0));
-                    game.doAction(new MagicSetAbilityAction(
+                    game.doAction(new MagicGainAbilityAction(
                         creature,
                         MagicAbility.FirstStrike
                     ));

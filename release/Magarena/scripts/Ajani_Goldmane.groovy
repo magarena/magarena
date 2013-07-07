@@ -35,7 +35,7 @@
                     1,
                     true
                 ));
-                game.doAction(new MagicSetAbilityAction(target, MagicAbility.Vigilance));
+                game.doAction(new MagicGainAbilityAction(target, MagicAbility.Vigilance));
             }
 
         }

@@ -21,7 +21,7 @@
                         final Collection<MagicPermanent> targets =
                                 game.filterPermanents(targetPlayer,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
                         for (final MagicPermanent target : targets) {
-                            game.doAction(new MagicSetAbilityAction(
+                            game.doAction(new MagicGainAbilityAction(
                                 target,
                                 MagicAbility.CannotBlock
                             ));

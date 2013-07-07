@@ -28,7 +28,7 @@
                     event.getPlayer(),
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicPermanent creature : targets) {
-                game.doAction(new MagicSetAbilityAction(
+                game.doAction(new MagicGainAbilityAction(
                     creature,
                     [
                         MagicAbility.Deathtouch,

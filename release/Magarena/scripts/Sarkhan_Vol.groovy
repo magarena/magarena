@@ -16,7 +16,7 @@
             );
             for (final MagicPermanent creature : targets) {
                 game.doAction(new MagicChangeTurnPTAction(creature, 1, 1));
-                game.doAction(new MagicSetAbilityAction(creature, MagicAbility.Haste));
+                game.doAction(new MagicGainAbilityAction(creature, MagicAbility.Haste));
             }
         }
     },
@@ -37,7 +37,7 @@
                 public void doAction(final MagicPermanent perm) {
                     game.doAction(new MagicGainControlAction(event.getPlayer(),perm,MagicStatic.UntilEOT));
                     game.doAction(new MagicUntapAction(perm));
-                    game.doAction(new MagicSetAbilityAction(perm,MagicAbility.Haste));
+                    game.doAction(new MagicGainAbilityAction(perm,MagicAbility.Haste));
                 }
             });
         }

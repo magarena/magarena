@@ -15,7 +15,7 @@
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeTurnPTAction(creature, -2, 0));
-                    game.doAction(new MagicSetAbilityAction(creature, MagicAbility.AttacksEachTurnIfAble));
+                    game.doAction(new MagicGainAbilityAction(creature, MagicAbility.AttacksEachTurnIfAble));
                 }
             });
         }
@@ -43,7 +43,7 @@
                 game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS);
             for (final MagicPermanent creature : targets) {
                 game.doAction(new MagicChangeTurnPTAction(creature, -2, 0));
-                game.doAction(new MagicSetAbilityAction(creature, MagicAbility.AttacksEachTurnIfAble));
+                game.doAction(new MagicGainAbilityAction(creature, MagicAbility.AttacksEachTurnIfAble));
             }
         }
     }

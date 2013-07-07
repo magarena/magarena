@@ -20,7 +20,7 @@
                     event.getPlayer(),
                     MagicTargetFilter.TARGET_ATTACKING_CREATURE);
             for (final MagicPermanent target : targets) {
-                game.doAction(new MagicSetAbilityAction(
+                game.doAction(new MagicGainAbilityAction(
                     target,
                     MagicAbility.Flying,
                     MagicAbility.Lifelink

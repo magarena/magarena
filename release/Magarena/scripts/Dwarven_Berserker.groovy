@@ -15,7 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent creature = event.getPermanent();
             game.doAction(new MagicChangeTurnPTAction(creature,3,0));
-            game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Trample));
+            game.doAction(new MagicGainAbilityAction(creature,MagicAbility.Trample));
         }
     }
 ]

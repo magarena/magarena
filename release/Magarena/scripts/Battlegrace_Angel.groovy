@@ -14,7 +14,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicSetAbilityAction(event.getRefPermanent(),MagicAbility.Lifelink));
+            game.doAction(new MagicGainAbilityAction(event.getRefPermanent(),MagicAbility.Lifelink));
         }
     }
 ]

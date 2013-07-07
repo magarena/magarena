@@ -12,7 +12,7 @@
                     3,
                     true
                 ));
-                game.doAction(new MagicSetAbilityAction(permanent,MagicAbility.Haste,MagicStatic.Forever));
+                game.doAction(new MagicGainAbilityAction(permanent,MagicAbility.Haste,MagicStatic.Forever));
             }
             return MagicEvent.NONE;
         }

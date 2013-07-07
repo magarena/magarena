@@ -17,7 +17,7 @@
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicUntapAction(creature));
                     game.doAction(new MagicChangeTurnPTAction(creature,2,4));
-                    game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Reach));
+                    game.doAction(new MagicGainAbilityAction(creature,MagicAbility.Reach));
                 }
             });
         }

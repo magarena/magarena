@@ -16,9 +16,9 @@
             final Collection<MagicPermanent> creatures=
                 game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicPermanent creature : creatures) {
-                game.doAction(new MagicSetAbilityAction(creature,MagicAbility.FirstStrike));
-                game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Trample));
-                game.doAction(new MagicSetAbilityAction(creature,MagicAbility.CannotBeBlockedByTokens));
+                game.doAction(new MagicGainAbilityAction(creature,MagicAbility.FirstStrike));
+                game.doAction(new MagicGainAbilityAction(creature,MagicAbility.Trample));
+                game.doAction(new MagicGainAbilityAction(creature,MagicAbility.CannotBeBlockedByTokens));
             }
         }
     }

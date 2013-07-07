@@ -24,7 +24,7 @@
                 final Collection<MagicPermanent> targets =
                         game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_ALLY_YOU_CONTROL);
                 for (final MagicPermanent creature : targets) {
-                    game.doAction(new MagicSetAbilityAction(creature,MagicAbility.FirstStrike));
+                    game.doAction(new MagicGainAbilityAction(creature,MagicAbility.FirstStrike));
                 }
             }
         }

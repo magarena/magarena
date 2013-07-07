@@ -13,7 +13,7 @@
             final Collection<MagicPermanent> targets =
                 game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicPermanent target : targets) {
-                game.doAction(new MagicSetAbilityAction(target,MagicAbility.Intimidate));
+                game.doAction(new MagicGainAbilityAction(target,MagicAbility.Intimidate));
             }
         }
     }

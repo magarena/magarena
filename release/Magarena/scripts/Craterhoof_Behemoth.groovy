@@ -20,7 +20,7 @@
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             final int amount = targets.size();
             for (final MagicPermanent creature : targets) {
-                game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Trample));
+                game.doAction(new MagicGainAbilityAction(creature,MagicAbility.Trample));
                 game.doAction(new MagicChangeTurnPTAction(creature,amount,amount));
             }
         }

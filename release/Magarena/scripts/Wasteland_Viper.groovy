@@ -8,7 +8,7 @@
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeTurnPTAction(creature,1,2));
-                    game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Deathtouch));
+                    game.doAction(new MagicGainAbilityAction(creature,MagicAbility.Deathtouch));
                 }
             });
         }

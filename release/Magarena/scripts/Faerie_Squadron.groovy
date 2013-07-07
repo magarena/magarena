@@ -12,7 +12,7 @@
                     2,
                     true
                 ));
-                game.doAction(new MagicSetAbilityAction(permanent,MagicAbility.Flying,MagicStatic.Forever));
+                game.doAction(new MagicGainAbilityAction(permanent,MagicAbility.Flying,MagicStatic.Forever));
             }
             return MagicEvent.NONE;
         }

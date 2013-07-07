@@ -33,7 +33,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicSetAbilityAction(
+            game.doAction(new MagicGainAbilityAction(
                 event.getPermanent(),
                 event.getChosenColor().getProtectionAbility()
             ));

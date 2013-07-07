@@ -19,7 +19,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
             game.doAction(new MagicChangeTurnPTAction(permanent,1,0));
-            game.doAction(new MagicSetAbilityAction(permanent,MagicAbility.Trample));
+            game.doAction(new MagicGainAbilityAction(permanent,MagicAbility.Trample));
         }
     }
 ]

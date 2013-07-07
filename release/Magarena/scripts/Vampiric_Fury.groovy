@@ -16,7 +16,7 @@
                     MagicTargetFilter.TARGET_VAMPIRE_YOU_CONTROL);
             for (final MagicPermanent creature : targets) {
                 game.doAction(new MagicChangeTurnPTAction(creature,2,0));
-                game.doAction(new MagicSetAbilityAction(creature,MagicAbility.FirstStrike));
+                game.doAction(new MagicGainAbilityAction(creature,MagicAbility.FirstStrike));
             }
         }
     }
