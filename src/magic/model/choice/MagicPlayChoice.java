@@ -75,14 +75,13 @@ public class MagicPlayChoice extends MagicChoice {
             if (sourceActivation.activation == skip) {
                 continue;
             } else if (sourceActivation.canPlay(game, player, isAI)) {
-                if (isAI) { //only AI uses hints
-                    validChoices.add(new MagicPlayChoiceResult(sourceActivation));
-                    if (sourceActivation.activation.getActivationHints().isIndependent()) {
-                        skip = sourceActivation.activation;
-                    }
-                } else {
-                    validChoices.add(sourceActivation.source);
+                if (isAI && sourceActivation.isIndependent()) {
+                    skip = sourceActivation.activation;
                 }
+                validChoices.add(isAI ?
+                    new MagicPlayChoiceResult(sourceActivation) :
+                    sourceActivation.source
+                );
             }
         }
     }

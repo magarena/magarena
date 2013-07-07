@@ -38,6 +38,10 @@ public class MagicSourceActivation<T extends MagicSource> implements Comparable<
         return activation.usesStack();
     }
     
+    public boolean isIndependent() {
+        return activation.getActivationHints().isIndependent();
+    }
+    
     public void changeActivationPriority() {
         activation.changeActivationPriority(source.getController());
     }
