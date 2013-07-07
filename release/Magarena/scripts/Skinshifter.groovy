@@ -57,7 +57,7 @@ def ST3 = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
 
 [
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Animate,false,1),
+        new MagicActivationHints(MagicTiming.Animate,1),
         "Rhino"
     ) {
         @Override
@@ -83,7 +83,7 @@ def ST3 = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         }
     },
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Animate,false,1),
+        new MagicActivationHints(MagicTiming.Animate,1),
         "Bird"
     ) {
 
@@ -110,7 +110,7 @@ def ST3 = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         }
     },
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Animate,false,1),
+        new MagicActivationHints(MagicTiming.Animate,1),
         "Plant"
     ) {
 

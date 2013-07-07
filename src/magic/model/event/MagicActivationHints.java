@@ -12,10 +12,14 @@ public class MagicActivationHints {
     /** maximum number of ability activations each turn */
     private final int maximum;
 
-    public MagicActivationHints(final MagicTiming timing,final boolean independent,final int maximum) {
-        this.timing=timing;
-        this.independent=independent;
-        this.maximum=maximum;
+    public MagicActivationHints(final MagicTiming aTiming,final boolean aIndependent,final int aMaximum) {
+        timing = aTiming;
+        independent = aIndependent;
+        maximum = aMaximum;
+    }
+
+    public MagicActivationHints(final MagicTiming timing,final int maximum) {
+        this(timing,false,maximum);
     }
 
     public MagicActivationHints(final MagicTiming timing,final boolean independent) {
@@ -23,10 +27,10 @@ public class MagicActivationHints {
     }
 
     public MagicActivationHints(final MagicTiming timing) {
-        this(timing,false);
+        this(timing,false, 0);
     }
 
-    MagicTiming getTiming() {
+    public MagicTiming getTiming() {
         return timing;
     }
 
@@ -34,7 +38,7 @@ public class MagicActivationHints {
         return independent;
     }
 
-    boolean isMaximum(final MagicSource source) {
+    public boolean isMaximum(final MagicSource source) {
         if (maximum==0) {
             return false;
         }

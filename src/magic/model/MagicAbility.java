@@ -404,8 +404,9 @@ public enum MagicAbility {
             card.add(new MagicGainActivation(
                 cost,
                 ability,
-                new MagicActivationHints(timing,false,1),
-                token[1]));
+                new MagicActivationHints(timing,1),
+                token[1]
+            ));
         }
     },
     DamageDiscardCard("damage discard card",10) {

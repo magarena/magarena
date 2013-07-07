@@ -1,6 +1,6 @@
 [
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Pump,false),
+        new MagicActivationHints(MagicTiming.Pump),
         "Regen"
     ) {
 

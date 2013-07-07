@@ -1,6 +1,6 @@
 [
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Pump,false,1),
+        new MagicActivationHints(MagicTiming.Pump,1),
         "Shadow"
     ) {
         @Override
