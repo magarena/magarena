@@ -4,21 +4,18 @@ import magic.model.MagicGame;
 import magic.model.MagicMappable;
 import magic.model.MagicSource;
 import magic.model.event.MagicActivation;
+import magic.model.event.MagicSourceActivation;
 
 public class MagicPlayChoiceResult implements MagicMappable {
 
-    public static final MagicPlayChoiceResult PASS=new MagicPlayChoiceResult();
-    public static final MagicPlayChoiceResult SKIP=new MagicPlayChoiceResult();
+    public static final MagicPlayChoiceResult PASS=new MagicPlayChoiceResult(null);
+    public static final MagicPlayChoiceResult SKIP=new MagicPlayChoiceResult(null);
 
-    public MagicSource source;
-    public MagicActivation activation;
+    public final MagicSourceActivation<? extends MagicSource> sourceActivation;
 
-    MagicPlayChoiceResult(final MagicSource source,final MagicActivation activation) {
-        this.source=source;
-        this.activation=activation;
+    MagicPlayChoiceResult(final MagicSourceActivation<? extends MagicSource> aSourceActivation) {
+        sourceActivation = aSourceActivation;
     }
-
-    private MagicPlayChoiceResult() {}
 
     @Override
     public MagicPlayChoiceResult map(final MagicGame game) {
@@ -27,7 +24,12 @@ public class MagicPlayChoiceResult implements MagicMappable {
         } else if (this==SKIP) {
             return SKIP;
         } else {
-            return new MagicPlayChoiceResult((MagicSource)source.map(game),activation);
+            return new MagicPlayChoiceResult(
+                MagicSourceActivation.create(
+                    game,
+                    sourceActivation
+                )
+            );
         }
     }
 
@@ -38,19 +40,19 @@ public class MagicPlayChoiceResult implements MagicMappable {
         } else if (this==SKIP) {
             return "skip";
         } else {
-            return source.getName();
+            return sourceActivation.source.getName();
         }
     }
 
     public String getText() {
-        return activation.getText();
+        return sourceActivation.activation.getText();
     }
 
     @Override
     public long getId() {
         return magic.MurmurHash3.hash(new long[] {
-            source.getStateId(),
-            activation.hashCode(),
+            sourceActivation.source.getStateId(),
+            sourceActivation.activation.hashCode(),
         });
     }
 }

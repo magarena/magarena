@@ -194,6 +194,7 @@ public class GameController {
         return actionClicked;
     }
 
+    @SuppressWarnings("unchecked")
     public <T> T getChoiceClicked() {
         return (T)choiceClicked;
     }

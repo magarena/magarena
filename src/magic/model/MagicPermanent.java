@@ -15,6 +15,7 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicManaActivation;
 import magic.model.event.MagicPermanentActivation;
+import magic.model.event.MagicSourceActivation;
 import magic.model.event.MagicPlayAuraEvent;
 import magic.model.event.MagicEvent;
 import magic.model.mstatic.MagicLayer;
@@ -31,6 +32,7 @@ import javax.swing.ImageIcon;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Set;
+import java.util.TreeSet;
 import java.util.Collections;
 
 public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicPermanent> {
@@ -199,7 +201,15 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
 
     @Override
-    public Collection<MagicActivation> getActivations() {
+    public Collection<MagicSourceActivation<? extends MagicSource>> getSourceActivations() {
+        Set<MagicSourceActivation<? extends MagicSource>> sorted = new TreeSet<MagicSourceActivation<? extends MagicSource>>();
+        for (final MagicActivation<MagicPermanent> act : cardDefinition.getActivations()) {
+            sorted.add(MagicSourceActivation.create(this, act));
+        }
+        return sorted;
+    }
+    
+    public Collection<MagicActivation<MagicPermanent>> getActivations() {
         return cardDefinition.getActivations();
     }
 

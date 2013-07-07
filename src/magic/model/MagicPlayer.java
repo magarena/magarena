@@ -2,9 +2,9 @@ package magic.model;
 
 import magic.data.CardDefinitions;
 import magic.model.choice.MagicBuilderManaCost;
-import magic.model.event.MagicActivationMap;
 import magic.model.event.MagicActivationPriority;
 import magic.model.event.MagicSourceManaActivation;
+import magic.model.event.MagicSourceActivation;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.action.MagicLoseGameAction;
@@ -15,6 +15,7 @@ import magic.model.mstatic.MagicPermanentStatic;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class MagicPlayer implements MagicTarget {
 
@@ -64,7 +65,6 @@ public class MagicPlayer implements MagicTarget {
     private final MagicCardList exile;
     private final MagicPermanentSet permanents;
     private final MagicPermanentSet manaPermanents;
-    private final MagicActivationMap activationMap;
     private MagicGame currGame;
     private MagicBuilderManaCost builderCost;
     private MagicActivationPriority activationPriority;
@@ -83,7 +83,6 @@ public class MagicPlayer implements MagicTarget {
         exile=new MagicCardList();
         permanents=new MagicPermanentSet();
         manaPermanents=new MagicPermanentSet();
-        activationMap=new MagicActivationMap();
         builderCost=new MagicBuilderManaCost();
         activationPriority=new MagicActivationPriority();
     }
@@ -106,7 +105,6 @@ public class MagicPlayer implements MagicTarget {
         exile=new MagicCardList(copyMap, sourcePlayer.exile);
         permanents=new MagicPermanentSet(copyMap,sourcePlayer.permanents);
         manaPermanents=new MagicPermanentSet(copyMap,sourcePlayer.manaPermanents);
-        activationMap=new MagicActivationMap(copyMap,sourcePlayer.activationMap);
         builderCost=new MagicBuilderManaCost(sourcePlayer.builderCost);
         activationPriority=new MagicActivationPriority(sourcePlayer.activationPriority);
         cachedAbilityFlags=sourcePlayer.cachedAbilityFlags;
@@ -179,8 +177,15 @@ public class MagicPlayer implements MagicTarget {
         return playerDefinition.getName();
     }
 
-    public MagicActivationMap getActivationMap() {
-        return activationMap;
+    public Set<MagicSourceActivation<? extends MagicSource>> getSourceActivations() {
+        Set<MagicSourceActivation<? extends MagicSource>> set = new TreeSet<MagicSourceActivation<? extends MagicSource>>();
+        for (final MagicCard card : hand) {
+            set.addAll(card.getSourceActivations());
+        }
+        for (final MagicPermanent perm : permanents) {
+            set.addAll(perm.getSourceActivations());
+        }
+        return set;
     }
 
     public MagicPlayerDefinition getPlayerDefinition() {
@@ -257,23 +262,18 @@ public class MagicPlayer implements MagicTarget {
 
     public void addCardToHand(final MagicCard card) {
         hand.addToTop(card);
-        activationMap.addActivations(card);
     }
 
     public void addCardToHand(final MagicCard card,final int aIndex) {
         hand.add(aIndex,card);
-        activationMap.addActivations(card);
     }
 
     public int removeCardFromHand(final MagicCard card) {
-        activationMap.removeActivations(card);
         return hand.removeCard(card);
     }
 
     void setHandToUnknown() {
-        activationMap.removeActivations(hand);
         hand.setKnown(false);
-        activationMap.addActivations(hand);
     }
 
     void showRandomizedHandAndLibrary() {
@@ -337,7 +337,6 @@ public class MagicPlayer implements MagicTarget {
         if (permanent.producesMana()) {
             manaPermanents.add(permanent);
         }
-        activationMap.addActivations(permanent);
     }
 
     public void removePermanent(final MagicPermanent permanent) {
@@ -346,7 +345,6 @@ public class MagicPlayer implements MagicTarget {
         if (permanent.producesMana()) {
             manaPermanents.remove(permanent);
         }
-        activationMap.removeActivations(permanent);
     }
 
     public List<MagicSourceManaActivation> getManaActivations(final MagicGame game) {

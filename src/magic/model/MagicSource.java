@@ -1,11 +1,13 @@
 package magic.model;
 
 import magic.model.event.MagicActivation;
+import magic.model.event.MagicSourceActivation;
 import magic.model.event.MagicEvent;
 
 import java.util.Collection;
+import java.util.Set;
 
 public interface MagicSource extends MagicCopyable, MagicMappable, MagicObject {
     MagicGame getGame();
-    Collection<MagicActivation> getActivations();
+    Collection<MagicSourceActivation<? extends MagicSource>> getSourceActivations();
 }

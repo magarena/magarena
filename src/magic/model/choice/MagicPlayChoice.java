@@ -5,7 +5,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicActivation;
-import magic.model.event.MagicActivationMap;
+import magic.model.event.MagicSourceActivation;
 import magic.model.event.MagicEvent;
 import magic.model.phase.MagicPhaseType;
 import magic.ui.GameController;
@@ -18,6 +18,7 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.TreeSet;
 import java.util.concurrent.Callable;
 
 public class MagicPlayChoice extends MagicChoice {
@@ -68,19 +69,19 @@ public class MagicPlayChoice extends MagicChoice {
             final MagicPlayer player,
             final boolean isAI,
             final Collection<Object> validChoices) {
-        final MagicActivationMap activationMap=player.getActivationMap();
-        for (final MagicActivation activation : activationMap.getActivations()) {
-            final Set<MagicSource> sources=activationMap.get(activation);
-            for (final MagicSource activationSource : sources) {
-                if (activation.canPlay(game,player,activationSource,isAI)) {
-                    if (isAI) { //only AI uses hints
-                        validChoices.add(new MagicPlayChoiceResult(activationSource,activation));
-                        if (activation.getActivationHints().isIndependent()) {
-                            break;
-                        }
-                    } else {
-                        validChoices.add(activationSource);
+        final Set<MagicSourceActivation<? extends MagicSource>> sourceActivations = player.getSourceActivations();
+        MagicActivation<? extends MagicSource> skip = null;
+        for (final MagicSourceActivation<? extends MagicSource> sourceActivation : sourceActivations) {
+            if (sourceActivation.activation == skip) {
+                continue;
+            } else if (sourceActivation.canPlay(game, player, isAI)) {
+                if (isAI) { //only AI uses hints
+                    validChoices.add(new MagicPlayChoiceResult(sourceActivation));
+                    if (sourceActivation.activation.getActivationHints().isIndependent()) {
+                        skip = sourceActivation.activation;
                     }
+                } else {
+                    validChoices.add(sourceActivation.source);
                 }
             }
         }
@@ -163,11 +164,11 @@ public class MagicPlayChoice extends MagicChoice {
             return PASS_CHOICE_RESULTS;
         }
 
-        final MagicSource activationSource = controller.getChoiceClicked();
+        final MagicSource activationSource = controller.getChoiceClicked(); 
         final List<MagicPlayChoiceResult> results=new ArrayList<MagicPlayChoiceResult>();
-        for (final MagicActivation activation : activationSource.getActivations()) {
-            if (activation.canPlay(game,player,activationSource,false)) {
-                results.add(new MagicPlayChoiceResult(activationSource,activation));
+        for (final MagicSourceActivation<? extends MagicSource> sourceActivation : activationSource.getSourceActivations()) {
+            if (sourceActivation.canPlay(game,player,false)) {
+                results.add(new MagicPlayChoiceResult(sourceActivation));
             }
         }
 

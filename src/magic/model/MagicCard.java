@@ -2,6 +2,7 @@ package magic.model;
 
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicCardActivation;
+import magic.model.event.MagicSourceActivation;
 import magic.model.event.MagicEvent;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicPermanentStatic;
@@ -10,6 +11,8 @@ import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetType;
 
+import java.util.Set;
+import java.util.TreeSet;
 import java.util.Collection;
 import java.util.Collections;
 
@@ -234,8 +237,12 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
     }
 
     @Override
-    public Collection<MagicActivation> getActivations() {
-        return getCardDefinition().getCardActivations();
+    public Collection<MagicSourceActivation<? extends MagicSource>> getSourceActivations() {
+        Set<MagicSourceActivation<? extends MagicSource>> sorted = new TreeSet<MagicSourceActivation<? extends MagicSource>>();
+        for (final MagicActivation<MagicCard> act : getCardDefinition().getCardActivations()) {
+            sorted.add(MagicSourceActivation.create(this, act));
+        }
+        return sorted;
     }
 
     @Override

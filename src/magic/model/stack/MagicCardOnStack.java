@@ -11,6 +11,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.MagicType;
 import magic.model.event.MagicActivation;
+import magic.model.event.MagicSourceActivation;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicCardEvent;
 
@@ -113,9 +114,9 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
     public MagicGame getGame() {
         return getSource().getGame();
     }
-
+    
     @Override
-    public Collection<MagicActivation> getActivations() {
+    public Collection<MagicSourceActivation<? extends MagicSource>> getSourceActivations() {
         return Collections.emptyList();
     }
 

@@ -61,6 +61,7 @@ public class MagicCardDefinition {
     private static int numTriggers;
     private static int numStatics;
     private static int numPermanentActivations;
+    private static int numCardActivations;
     private static int numManaActivations;
     private static int numSpellEvent;
     private static int numCDAs;
@@ -94,7 +95,8 @@ public class MagicCardDefinition {
     private MagicStaticType staticType=MagicStaticType.None;
     private MagicTiming timing=MagicTiming.None;
     private MagicCardEvent cardEvent=MagicPlayCardEvent.create();
-    private final LinkedList<MagicActivation> cardActivations = new LinkedList<MagicActivation>();
+    private final Collection<MagicActivation<MagicPermanent>> permActivations=new ArrayList<MagicActivation<MagicPermanent>>();
+    private final LinkedList<MagicActivation<MagicCard>> cardActivations = new LinkedList<MagicActivation<MagicCard>>();
     private final Collection<MagicCDA> CDAs = new ArrayList<MagicCDA>();
     private final Collection<MagicTrigger<?>> triggers = new ArrayList<MagicTrigger<?>>();
     private final Collection<MagicStatic> statics=new ArrayList<MagicStatic>();
@@ -102,7 +104,6 @@ public class MagicCardDefinition {
     private final Collection<MagicWhenSpellIsCastTrigger> spellIsCastTriggers = new ArrayList<MagicWhenSpellIsCastTrigger>();
     private final Collection<MagicWhenDrawnTrigger> drawnTriggers = new ArrayList<MagicWhenDrawnTrigger>();
     private final Collection<MagicWhenPutIntoGraveyardTrigger> putIntoGraveyardTriggers = new ArrayList<MagicWhenPutIntoGraveyardTrigger>();
-    private final Collection<MagicActivation> activations=new ArrayList<MagicActivation>();
     private final Collection<MagicManaActivation> manaActivations=new ArrayList<MagicManaActivation>();
     private final Collection<MagicEventSource> costEventSources=new ArrayList<MagicEventSource>();
     private boolean excludeManaOrCombat;
@@ -131,6 +132,7 @@ public class MagicCardDefinition {
         System.err.println(numTriggers + " triggers");
         System.err.println(numStatics + " statics");
         System.err.println(numPermanentActivations + " permanent activations");
+        System.err.println(numCardActivations + " card activations");
         System.err.println(numManaActivations + " mana activations");
         System.err.println(numSpellEvent + " spell event");
         System.err.println(numCDAs + " CDAs");
@@ -643,7 +645,7 @@ public class MagicCardDefinition {
         return cardActivations.getFirst();
     }
 
-    public Collection<MagicActivation> getCardActivations() {
+    public Collection<MagicActivation<MagicCard>> getCardActivations() {
         return cardActivations;
     }
 
@@ -715,16 +717,17 @@ public class MagicCardDefinition {
     }
 
     public void addAct(final MagicPermanentActivation activation) {
-        activations.add(activation);
+        permActivations.add(activation);
         numPermanentActivations++;
     }
 
     public void addCardAct(final MagicCardActivation activation) {
         cardActivations.add(activation);
+        numCardActivations++;
     }
 
-    public Collection<MagicActivation> getActivations() {
-        return activations;
+    public Collection<MagicActivation<MagicPermanent>> getActivations() {
+        return permActivations;
     }
 
     public void addManaAct(final MagicManaActivation activation) {

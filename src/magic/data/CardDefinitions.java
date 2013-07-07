@@ -116,8 +116,10 @@ public class CardDefinitions {
     //link to groovy script that returns array of MagicChangeCardDefinition objects
     static void addCardSpecificGroovyCode(final MagicCardDefinition cardDefinition, final String cardName) {
         try {
-            final File script = new File(cardDir, getCanonicalName(cardName) + ".groovy");
-            final List<MagicChangeCardDefinition> defs = (List<MagicChangeCardDefinition>)shell.evaluate(script);
+            @SuppressWarnings("unchecked")
+            final List<MagicChangeCardDefinition> defs = (List<MagicChangeCardDefinition>)shell.evaluate(
+                new File(cardDir, getCanonicalName(cardName) + ".groovy")
+            );
             for (MagicChangeCardDefinition ccd : defs) {
                 ccd.change(cardDefinition);
             }
