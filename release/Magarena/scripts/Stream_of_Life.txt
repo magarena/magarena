@@ -1,0 +1,9 @@
+name=Stream of Life
+url=http://magiccards.info/9e/en/272.html
+image=http://magiccards.info/scans/en/9e/272.jpg
+value=4.012
+rarity=U
+type=Sorcery
+cost={X}{G}
+timing=main
+requires_groovy_code
