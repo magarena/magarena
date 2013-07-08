@@ -9,19 +9,15 @@ public class MagicLoseGameAction extends MagicAction {
 
     public static final String LIFE_REASON = " lost the game.";
     public static final String POISON_REASON = " lost the game because of poisoning.";
-    static final String DRAW_REASON = " lost the game because of an attempt to draw from an empty library.";
+    public static final String DRAW_REASON = " lost the game because of an attempt to draw from an empty library.";
 
     private final MagicPlayer player;
     private final String reason;
     private MagicPlayer oldLosingPlayer = MagicPlayer.NONE;
 
-    public MagicLoseGameAction(final MagicPlayer player,final String reason) {
-        this.player=player;
-        this.reason=reason;
-    }
-
-    public MagicLoseGameAction(final MagicPlayer player) {
-        this(player, LIFE_REASON);
+    public MagicLoseGameAction(final MagicPlayer aPlayer,final String aReason) {
+        player = aPlayer;
+        reason = aReason;
     }
 
     @Override
