@@ -2,11 +2,10 @@
     new MagicIfDamageWouldBeDealtTrigger(4) {
         @Override
         public boolean accept(final MagicPermanent permanent, final MagicDamage damage) {
-            final MagicTarget target=damage.getTarget();
-            final int amount=damage.getAmount();
+            final MagicTarget target = damage.getTarget();
             return
-                !damage.isUnpreventable() &&
-                amount > 0 &&
+                damage.isPreventable() &&
+                damage.getAmount() > 0 &&
                 target != permanent &&
                 target.isCreature() &&
                 permanent.isFriend(target);
@@ -14,7 +13,7 @@
 
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicDamage damage) {
-            final int amount=damage.getAmount();
+            final int amount = damage.getAmount();
 
             // Prevention effect.
             damage.setAmount(0);
@@ -23,7 +22,7 @@
                 permanent,
                 damage.getTarget(),
                 {
-                    MagicGame G, MagicEvent E ->
+                    final MagicGame G, final MagicEvent E ->
                     G.doAction(new MagicChangeCountersAction(
                         E.getRefPermanent(),
                         MagicCounterType.PlusOne,
