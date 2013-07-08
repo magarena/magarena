@@ -21,22 +21,13 @@ public class MagicDetainAction extends MagicAction {
     private final MagicPermanent permanent;
     private final MagicPlayer sourceController;
 
-    private static final MagicStatic S1 = new MagicStatic(MagicLayer.Ability) {
+    private static final MagicStatic Detain = new MagicStatic(MagicLayer.Ability) {
         @Override
         public void modAbilityFlags(
                 final MagicPermanent source,
                 final MagicPermanent permanent,
                 final Set<MagicAbility> flags) {
             flags.add(MagicAbility.CannotAttackOrBlock);
-        }
-    };
-
-    private static final MagicStatic S2 = new MagicStatic(MagicLayer.Ability) {
-        @Override
-        public void modAbilityFlags(
-                final MagicPermanent source,
-                final MagicPermanent permanent,
-                final Set<MagicAbility> flags) {
             flags.add(MagicAbility.CantActivateAbilities);
         }
     };
@@ -48,14 +39,12 @@ public class MagicDetainAction extends MagicAction {
 
     @Override
     public void doAction(final MagicGame game) {
-        game.doAction(new MagicAddStaticAction(permanent, S1));
-        game.doAction(new MagicAddStaticAction(permanent, S2));
+        game.doAction(new MagicAddStaticAction(permanent, Detain));
         final MagicAtUpkeepTrigger cleanup = new MagicAtUpkeepTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
                 if (upkeepPlayer.getId() == sourceController.getId()) {
-                    game.addDelayedAction(new MagicRemoveStaticAction(permanent, S1));
-                    game.addDelayedAction(new MagicRemoveStaticAction(permanent, S2));
+                    game.addDelayedAction(new MagicRemoveStaticAction(permanent, Detain));
                     game.addDelayedAction(new MagicRemoveTriggerAction(permanent, this));
                 }
                 return MagicEvent.NONE;
