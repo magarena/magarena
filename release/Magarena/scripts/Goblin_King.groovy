@@ -1,7 +1,7 @@
 [
     new MagicStatic(
         MagicLayer.Ability,
-        MagicTargetFilter.TARGET_GOBLIN_YOU_CONTROL) {
+        MagicTargetFilter.TARGET_GOBLIN_CREATURE) {
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
             flags.add(MagicAbility.Mountainwalk);
@@ -13,7 +13,7 @@
     },
     new MagicStatic(
         MagicLayer.ModPT,
-        MagicTargetFilter.TARGET_GOBLIN_YOU_CONTROL) {
+        MagicTargetFilter.TARGET_GOBLIN_CREATURE) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
             pt.add(1,1);
