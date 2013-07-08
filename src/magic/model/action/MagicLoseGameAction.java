@@ -19,6 +19,10 @@ public class MagicLoseGameAction extends MagicAction {
         player = aPlayer;
         reason = aReason;
     }
+    
+    public MagicLoseGameAction(final MagicPlayer aPlayer) {
+        this(aPlayer, LIFE_REASON);
+    }
 
     @Override
     public void doAction(final MagicGame game) {
