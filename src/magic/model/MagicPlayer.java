@@ -611,10 +611,10 @@ public class MagicPlayer implements MagicTarget {
     }
 
     public void generateStateBasedActions() {
-        if (getLife() <= 0) {
+        if (getLife() <= 0 && getLife() < getOpponent().getLife()) {
             currGame.addDelayedAction(new MagicLoseGameAction(this,MagicLoseGameAction.LIFE_REASON));
         }
-        if (getPoison() >= LOSING_POISON) {
+        if (getPoison() >= LOSING_POISON && getPoison() > getOpponent().getPoison()) {
             currGame.addDelayedAction(new MagicLoseGameAction(this,MagicLoseGameAction.POISON_REASON));
         }
     }
