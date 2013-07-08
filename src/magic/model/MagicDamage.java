@@ -42,6 +42,10 @@ public class MagicDamage {
     public MagicPlayer getTargetPlayer() {
         return (MagicPlayer)target;
     }
+    
+    public MagicPermanent getTargetPermanent() {
+        return (MagicPermanent)target;
+    }
 
     public void setAmount(final int amt) {
         amount = amt;
