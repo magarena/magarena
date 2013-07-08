@@ -1174,13 +1174,13 @@ public class MagicGame {
             final MagicSource source,
             final T data) {
 
-        if (!trigger.accept(permanent, data)) {
+        if (trigger.accept(permanent, data) == false) {
             return;
         }
 
         final MagicEvent event=trigger.executeTrigger(this,permanent,data);
 
-        if (!event.isValid()) {
+        if (event.isValid() == false) {
             return;
         }
 
