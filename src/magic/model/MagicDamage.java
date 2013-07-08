@@ -72,6 +72,10 @@ public class MagicDamage {
     public void setUnpreventable() {
         unpreventable=true;
     }
+    
+    public boolean isPreventable() {
+        return !unpreventable;
+    }
 
     public boolean isUnpreventable() {
         return unpreventable;
