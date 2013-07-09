@@ -5,6 +5,7 @@ import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
+import magic.model.MagicColor;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
 import magic.model.MagicAbility;
@@ -209,5 +210,19 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
                 final MagicPowerToughness pt) {
             pt.set(pt.toughness(),pt.power());
         }
+    };
+    
+    public static MagicStatic Zombie = new MagicStatic(MagicLayer.Type) {
+         @Override
+         public void modSubTypeFlags(final MagicPermanent permanent,final Set<MagicSubType> flags) {
+             flags.add(MagicSubType.Zombie);
+         }
+    };
+
+    public static MagicStatic Black = new MagicStatic(MagicLayer.Color) {
+         @Override
+         public int getColorFlags(final MagicPermanent permanent,final int flags) {
+             return flags|MagicColor.Black.getMask();
+         }
     };
 }
