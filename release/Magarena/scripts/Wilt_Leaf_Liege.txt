@@ -8,4 +8,5 @@ subtype=Elf,Knight
 cost={1}{G/W}{G/W}{G/W}
 pt=4/4
 timing=main
-requires_card_code
+ability=opponent discard onto battlefield
+requires_groovy_code
