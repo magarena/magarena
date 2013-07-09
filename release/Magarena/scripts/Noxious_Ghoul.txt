@@ -1,0 +1,11 @@
+name=Noxious Ghoul
+url=http://magiccards.info/pch/en/35.html
+image=http://magiccards.info/scans/en/pch/35.jpg
+value=3.708
+rarity=U
+type=Creature
+subtype=Zombie
+cost={3}{B}{B}
+pt=3/3
+timing=main
+requires_groovy_code
