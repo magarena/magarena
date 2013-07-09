@@ -65,6 +65,9 @@ public class MagicGame {
     private final MagicEventQueue events;
     private final MagicStack stack;
     private final MagicPlayer scorePlayer;
+    private final MagicGameplay gameplay;
+    private final MagicActionList actions;
+    private final MagicActionList delayedActions;
     private final boolean sound;
     private int score;
     private int turn=1;
@@ -73,9 +76,9 @@ public class MagicGame {
     private int landPlayed;
     private int maxLand;
     private int spellsPlayed;
+    private int priorityPassedCount;
     private boolean creatureDiedThisTurn;
     private boolean priorityPassed;
-    private int priorityPassedCount;
     private boolean skipTurn;
     private boolean stateCheckRequired;
     private boolean artificial;
@@ -85,15 +88,13 @@ public class MagicGame {
     private MagicPlayer visiblePlayer;
     private MagicPlayer turnPlayer;
     private MagicPlayer losingPlayer = MagicPlayer.NONE;
-    private final MagicGameplay gameplay;
     private MagicPhase phase;
     private MagicStep step;
     private MagicPayedCost payedCost;
-    private final MagicActionList actions;
-    private final MagicActionList delayedActions;
     private MagicActionList undoPoints;
     private MagicLogBook logBook;
     private MagicLogMessageBuilder logMessageBuilder;
+    private MagicSource activeSource = MagicEvent.NO_SOURCE;
     private long[] keys;
     private long stateId;
     private long time = 1000000;
@@ -186,6 +187,7 @@ public class MagicGame {
         turnPlayer=copyMap.copy(game.turnPlayer);
         losingPlayer=copyMap.copy(game.losingPlayer);
         payedCost=copyMap.copy(game.payedCost);
+        activeSource=copyMap.copy(game.activeSource);
 
         //construct a new object using copyMap to copy internals
         events=new MagicEventQueue(copyMap, game.events);
@@ -711,6 +713,7 @@ public class MagicGame {
             payedCost.set(choiceResults[event.getTargetChoiceResultIndex()]);
         }
 
+        activeSource = event.getSource();
         event.executeEvent(this,choiceResults);
         update();
 
@@ -802,6 +805,10 @@ public class MagicGame {
 
     public MagicPlayer getLosingPlayer() {
         return losingPlayer;
+    }
+    
+    public MagicSource getActiveSource() {
+        return activeSource;
     }
 
     public boolean hasTurn(final MagicPlayer player) {
