@@ -547,13 +547,24 @@ public class MagicPlayer implements MagicTarget, MagicMappable<MagicPlayer> {
     public MagicPlayer getController() {
         return this;
     }
+    
+    @Override
+    public MagicPlayer getOpponent() {
+        return currGame.getOpponent(this);
+    }
+    
+    @Override
+    public boolean isFriend(final MagicObject other) {
+        return getController() == other.getController();
+    }
+
+    @Override
+    public boolean isEnemy(final MagicObject other) {
+        return getOpponent() == other.getController();
+    }
 
     public boolean isValid() {
         return true;
-    }
-
-    public MagicPlayer getOpponent() {
-        return currGame.getOpponent(this);
     }
 
     public void addAbility(final MagicAbility ability) {

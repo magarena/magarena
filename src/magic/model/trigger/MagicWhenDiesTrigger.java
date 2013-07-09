@@ -18,8 +18,8 @@ public abstract class MagicWhenDiesTrigger extends MagicWhenPutIntoGraveyardTrig
     protected abstract MagicEvent getEvent(final MagicPermanent permanent);
 
     @Override
-    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
-        return (triggerData.fromLocation == MagicLocationType.Play) ?
+    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicMoveCardAction act) {
+        return (act.fromLocation == MagicLocationType.Play) ?
             getEvent(permanent) : MagicEvent.NONE;
     }
 

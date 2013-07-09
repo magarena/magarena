@@ -73,11 +73,11 @@
                     public MagicEvent executeTrigger(
                             final MagicGame game,
                             final MagicPermanent permanent,
-                            final MagicGraveyardTriggerData triggerData) {
-                        return triggerData.card.getOwner().getId() == you.getId() ?
+                            final MagicMoveCardAction act) {
+                        return act.card.getOwner().getId() == you.getId() ?
                             // HACK: As emblem is not represented, source of event is the card
                             new MagicEvent(
-                                triggerData.card,
+                                act.card,
                                 new MagicMayChoice(),
                                 this,
                                 "PN may return SN to your hand."

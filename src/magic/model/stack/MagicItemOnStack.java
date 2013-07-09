@@ -75,6 +75,21 @@ public abstract class MagicItemOnStack implements MagicTarget, MagicMappable<Mag
     public MagicPlayer getController() {
         return controller;
     }
+    
+    @Override
+    public MagicPlayer getOpponent() {
+        return getController().getOpponent();
+    }
+
+    @Override
+    public boolean isFriend(final MagicObject other) {
+        return getController() == other.getController();
+    }
+
+    @Override
+    public boolean isEnemy(final MagicObject other) {
+        return getOpponent() == other.getController();
+    }
 
     @Override
     public MagicCardDefinition getCardDefinition() {

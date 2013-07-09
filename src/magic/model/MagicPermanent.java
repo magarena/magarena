@@ -263,29 +263,33 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return firstController;
     }
 
+    @Override
     public MagicPlayer getController() {
         assert cachedController != null : "cachedController is null in " + this;
         return cachedController;
     }
 
+    @Override
     public MagicPlayer getOpponent() {
         return getController().getOpponent();
     }
 
+    @Override
     public boolean isFriend(final MagicObject other) {
         return getController() == other.getController();
     }
 
+    @Override
     public boolean isEnemy(final MagicObject other) {
-        return getController() != other.getController();
+        return getOpponent() == other.getController();
+    }
+    
+    public boolean isOwner(final MagicTarget player) {
+        return getOwner() == player;
     }
 
     public boolean isController(final MagicTarget player) {
         return getController() == player;
-    }
-
-    public boolean isOwner(final MagicTarget player) {
-        return getOwner() == player;
     }
 
     public boolean isOpponent(final MagicTarget player) {

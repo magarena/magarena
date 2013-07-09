@@ -18,6 +18,9 @@ public interface MagicObject extends MagicCopyable {
     boolean     hasSubType(final MagicSubType subType);
     String      getName();
     MagicPlayer getController();
-    MagicCardDefinition getCardDefinition();
+    MagicPlayer getOpponent();
+    boolean     isFriend(final MagicObject other);
+    boolean     isEnemy(final MagicObject other);
     long        getStateId();
+    MagicCardDefinition getCardDefinition();
 }

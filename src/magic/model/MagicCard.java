@@ -171,6 +171,21 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard>,
     public MagicPlayer getController() {
         return owner;
     }
+    
+    @Override
+    public MagicPlayer getOpponent() {
+        return getController().getOpponent();
+    }
+    
+    @Override
+    public boolean isFriend(final MagicObject other) {
+        return getController() == other.getController();
+    }
+
+    @Override
+    public boolean isEnemy(final MagicObject other) {
+        return getOpponent() == other.getController();
+    }
 
     @Override
     public int getPreventDamage() {

@@ -25,10 +25,18 @@ public class MagicPlayCardAction extends MagicPutIntoPlayAction {
     private final MagicPlayer controller;
     private final int action;
 
-    public MagicPlayCardAction(final MagicCard card,final MagicPlayer controller,final int action) {
-        this.card=card;
-        this.controller=controller;
-        this.action=action;
+    public MagicPlayCardAction(final MagicCard aCard,final MagicPlayer aController,final int aAction) {
+        card = aCard;
+        controller = aController;
+        action = aAction;
+    }
+    
+    public MagicPlayCardAction(final MagicCard card, final int action) {
+        this(card, card.getController(), action);
+    }
+    
+    public MagicPlayCardAction(final MagicCard card) {
+        this(card, card.getController(), NONE);
     }
 
     @Override

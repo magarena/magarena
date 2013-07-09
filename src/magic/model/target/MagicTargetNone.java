@@ -10,6 +10,7 @@ import magic.model.MagicSource;
 import magic.model.MagicAbility;
 import magic.model.MagicColor;
 import magic.model.MagicMappable;
+import magic.model.MagicObject;
 import magic.model.target.MagicTargetFilter;
 
 public class MagicTargetNone implements MagicTarget, MagicMappable<MagicTargetNone> {
@@ -106,6 +107,21 @@ public class MagicTargetNone implements MagicTarget, MagicMappable<MagicTargetNo
     @Override
     public MagicPlayer getController() {
         throw new RuntimeException("MagicTargetNone has no controller");
+    }
+    
+    @Override
+    public MagicPlayer getOpponent() {
+        throw new RuntimeException("MagicTargetNone has no controller");
+    }
+    
+    @Override
+    public boolean isFriend(final MagicObject other) {
+        return getController() == other.getController();
+    }
+
+    @Override
+    public boolean isEnemy(final MagicObject other) {
+        return getOpponent() == other.getController();
     }
 
     @Override

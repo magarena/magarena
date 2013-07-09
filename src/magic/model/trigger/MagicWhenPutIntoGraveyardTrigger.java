@@ -11,7 +11,7 @@ import magic.model.event.MagicEvent;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicRemoveCardAction;
 
-public abstract class MagicWhenPutIntoGraveyardTrigger extends MagicTrigger<MagicGraveyardTriggerData> {
+public abstract class MagicWhenPutIntoGraveyardTrigger extends MagicTrigger<MagicMoveCardAction> {
     public MagicWhenPutIntoGraveyardTrigger(final int priority) {
         super(priority);
     }
@@ -32,11 +32,11 @@ public abstract class MagicWhenPutIntoGraveyardTrigger extends MagicTrigger<Magi
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final MagicGraveyardTriggerData triggerData) {
-            final MagicPlayer owner = triggerData.card.getOwner();
+                final MagicMoveCardAction act) {
+            final MagicPlayer owner = act.card.getOwner();
             return new MagicEvent(
                 //source may be permanent if on battlefield or card (exile, hand)
-                permanent.isValid() ? permanent : triggerData.card,
+                permanent.isValid() ? permanent : act.card,
                 owner,
                 this,
                 "PN shuffles his or her graveyard into his or her library."

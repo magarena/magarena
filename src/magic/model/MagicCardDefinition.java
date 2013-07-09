@@ -23,7 +23,6 @@ import magic.model.trigger.MagicWhenSpellIsCastTrigger;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 import magic.model.trigger.MagicWhenDrawnTrigger;
-import magic.model.trigger.MagicGraveyardTriggerData ;
 import magic.model.stack.MagicItemOnStack;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;

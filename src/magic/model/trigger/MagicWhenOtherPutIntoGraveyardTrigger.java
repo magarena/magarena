@@ -1,6 +1,8 @@
 package magic.model.trigger;
 
-public abstract class MagicWhenOtherPutIntoGraveyardTrigger extends MagicTrigger<MagicGraveyardTriggerData> {
+import magic.model.action.MagicMoveCardAction;
+
+public abstract class MagicWhenOtherPutIntoGraveyardTrigger extends MagicTrigger<MagicMoveCardAction> {
     public MagicWhenOtherPutIntoGraveyardTrigger(final int priority) {
         super(priority);
     }
