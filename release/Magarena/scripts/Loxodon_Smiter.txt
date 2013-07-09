@@ -1,0 +1,12 @@
+name=Loxodon Smiter
+url=http://magiccards.info/rtr/en/178.html
+image=http://magiccards.info/scans/en/rtr/178.jpg
+value=3.708
+rarity=R
+type=Creature
+subtype=Elephant,Soldier
+cost={1}{W}{G}
+pt=4/4
+timing=main
+ability=can't be countered
+requires_groovy_code
