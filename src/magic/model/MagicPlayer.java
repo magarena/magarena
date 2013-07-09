@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
-public class MagicPlayer implements MagicTarget {
+public class MagicPlayer implements MagicTarget, MagicMappable<MagicPlayer> {
 
     public static final MagicPlayer NONE = new MagicPlayer(-1, new MagicPlayerDefinition(), -1) {
         @Override

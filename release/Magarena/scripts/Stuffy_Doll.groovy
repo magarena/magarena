@@ -25,23 +25,20 @@
     new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            if (damage.getTarget() == permanent) {
-                final int amount = damage.getDealtAmount();
-                final MagicTarget target = permanent.getChosenTarget();
-                return new MagicEvent(
+            return damage.getTarget() == permanent ?
+                new MagicEvent(
                     permanent,
-                    amount,
+                    damage.getDealtAmount(),
                     this,
-                    "SN deals Rn damage to " + target + "."
-                );
-            }
-            return MagicEvent.NONE;
+                    "SN deals RN damage to ${permanent.getChosenPlayer()}."
+                ) :
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicDamage damage = new MagicDamage(
                 event.getPermanent(),
-                event.getPermanent().getChosenTarget(),
+                event.getPermanent().getChosenPlayer(),
                 event.getRefInt()
             );
             game.doAction(new MagicDealDamageAction(damage));

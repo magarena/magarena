@@ -16,7 +16,7 @@ import java.util.TreeSet;
 import java.util.Collection;
 import java.util.Collections;
 
-public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> {
+public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard>,MagicMappable<MagicCard> {
 
     public static final MagicCard NONE = new MagicCard(MagicCardDefinition.UNKNOWN, MagicPlayer.NONE, 0) {
         @Override

@@ -9,9 +9,10 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.MagicAbility;
 import magic.model.MagicColor;
+import magic.model.MagicMappable;
 import magic.model.target.MagicTargetFilter;
 
-public class MagicTargetNone implements MagicTarget {
+public class MagicTargetNone implements MagicTarget, MagicMappable<MagicTargetNone> {
 
     private static final MagicTarget INSTANCE=new MagicTargetNone();
 

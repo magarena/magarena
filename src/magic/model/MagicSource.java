@@ -7,7 +7,7 @@ import magic.model.event.MagicEvent;
 import java.util.Collection;
 import java.util.Set;
 
-public interface MagicSource extends MagicCopyable, MagicMappable, MagicObject {
+public interface MagicSource extends MagicCopyable, MagicObject {
     MagicGame getGame();
     Collection<MagicSourceActivation<? extends MagicSource>> getSourceActivations();
 }

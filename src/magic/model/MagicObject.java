@@ -6,7 +6,7 @@ import magic.model.MagicMappable;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 
-public interface MagicObject extends MagicCopyable, MagicMappable {
+public interface MagicObject extends MagicCopyable {
     boolean     isSpell();
     boolean     isPermanent();
     boolean     isCreature();

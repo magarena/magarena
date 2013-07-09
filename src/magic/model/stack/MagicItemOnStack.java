@@ -22,7 +22,7 @@ import magic.model.target.MagicTargetFilter;
 
 import javax.swing.ImageIcon;
 
-public abstract class MagicItemOnStack implements MagicTarget {
+public abstract class MagicItemOnStack implements MagicTarget, MagicMappable<MagicItemOnStack> {
 
     private final MagicSource source;
     private final MagicPlayer controller;

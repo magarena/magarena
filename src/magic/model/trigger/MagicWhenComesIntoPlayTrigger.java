@@ -74,7 +74,7 @@ public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPa
     public static final MagicWhenComesIntoPlayTrigger ChooseOpponent = new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
-            permanent.setChosenTarget(permanent.getOpponent());
+            permanent.setChosenPlayer(permanent.getOpponent());
             return MagicEvent.NONE;
         }
     };

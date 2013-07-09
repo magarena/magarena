@@ -3,8 +3,9 @@ package magic.model.event;
 import magic.model.MagicSource;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
+import magic.model.MagicMappable;
 
-public class MagicSourceActivation<T extends MagicSource> implements Comparable<MagicSourceActivation<T>> {
+public class MagicSourceActivation<T extends MagicSource & MagicMappable<T>> implements Comparable<MagicSourceActivation<T>> {
     public final T source;
     public final MagicActivation<T> activation;
 
@@ -13,13 +14,12 @@ public class MagicSourceActivation<T extends MagicSource> implements Comparable<
         activation = aActivation;
     }
 
-    public static <S extends MagicSource> MagicSourceActivation<S> create(final S aSource, final MagicActivation<S> aActivation) {
+    public static <S extends MagicSource & MagicMappable<S>> MagicSourceActivation<S> create(final S aSource, final MagicActivation<S> aActivation) {
         return new MagicSourceActivation<S>(aSource, aActivation);
     }
     
-    @SuppressWarnings("unchecked")
-    public static <S extends MagicSource> MagicSourceActivation<S> create(final MagicGame game, final MagicSourceActivation<S> aSourceActivation) {
-        return new MagicSourceActivation<S>((S)aSourceActivation.source.map(game), aSourceActivation.activation);
+    public static <S extends MagicSource & MagicMappable<S>> MagicSourceActivation<S> create(final MagicGame game, final MagicSourceActivation<S> aSourceActivation) {
+        return new MagicSourceActivation<S>(aSourceActivation.source.map(game), aSourceActivation.activation);
     }
     
     public final boolean canPlay(final MagicGame game, final MagicPlayer player, final boolean useHints) {

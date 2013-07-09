@@ -35,7 +35,7 @@ import java.util.Set;
 import java.util.TreeSet;
 import java.util.Collections;
 
-public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicPermanent> {
+public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicPermanent>,MagicMappable<MagicPermanent> {
 
     public static final int NO_COLOR_FLAGS=-1;
 
@@ -51,7 +51,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     private final MagicPermanentList blockingCreatures;
     private MagicPermanent pairedCreature = MagicPermanent.NONE;
     private final MagicCardList exiledCards;
-    private MagicTarget chosenTarget = MagicTargetNone.getInstance();
+    private MagicPlayer chosenPlayer = MagicPlayer.NONE;
     private int[] counters=new int[MagicCounterType.NR_COUNTERS];
     private int stateFlags =
             MagicPermanentState.Summoned.getMask() |
@@ -106,7 +106,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         blockingCreatures=new MagicPermanentList(copyMap,sourcePermanent.blockingCreatures);
         pairedCreature = copyMap.copy(sourcePermanent.pairedCreature);
         exiledCards = new MagicCardList(copyMap,sourcePermanent.exiledCards);
-        chosenTarget = copyMap.copy(sourcePermanent.chosenTarget);
+        chosenPlayer = copyMap.copy(sourcePermanent.chosenPlayer);
         damage=sourcePermanent.damage;
         preventDamage=sourcePermanent.preventDamage;
         fixedScore=sourcePermanent.fixedScore;
@@ -155,7 +155,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             blockedCreature.getStateId(),
             //pairedCreature.getStateId(),
             exiledCards.getUnorderedStateId(),
-            chosenTarget.getId(),
+            chosenPlayer.getId(),
             counters[0],
             counters[1],
             counters[2],
@@ -604,16 +604,12 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         exiledCards.remove(card);
     }
 
-    public MagicTarget getChosenTarget() {
-        return chosenTarget;
-    }
-
     public MagicPlayer getChosenPlayer() {
-        return (MagicPlayer)chosenTarget;
+        return chosenPlayer;
     }
 
-    public void setChosenTarget(final MagicTarget target) {
-        chosenTarget = target;
+    public void setChosenPlayer(final MagicPlayer player) {
+        chosenPlayer = player;
     }
 
     void generateStateBasedActions() {

@@ -1,11 +1,8 @@
 [
     new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicPlayer upkeepPlayer) {
-            return (upkeepPlayer == permanent.getChosenTarget()) ?
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
+            return upkeepPlayer == permanent.getChosenPlayer() ?
                 new MagicEvent(
                     permanent,
                     upkeepPlayer,
