@@ -472,7 +472,7 @@ check_requires_groovy_code:
 check_groovy_escape:
 	diff \
 	/dev/null \
-	<(grep '[^\\]\$$' -r release/Magarena/scripts)
+	<(grep '[^\\]\$$' -r release/Magarena/scripts | grep -v '\$${')
 
 # script name is canonical card name
 check_script_name:
