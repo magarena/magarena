@@ -23,16 +23,16 @@ public class MagicPlayCardAction extends MagicPutIntoPlayAction {
 
     private final MagicCard card;
     private final MagicPlayer controller;
-    private final int action;
+    private final int modification;
 
-    public MagicPlayCardAction(final MagicCard aCard,final MagicPlayer aController,final int aAction) {
+    public MagicPlayCardAction(final MagicCard aCard,final MagicPlayer aController,final int aModification) {
         card = aCard;
         controller = aController;
-        action = aAction;
+        modification = aModification;
     }
     
-    public MagicPlayCardAction(final MagicCard card, final int action) {
-        this(card, card.getController(), action);
+    public MagicPlayCardAction(final MagicCard card, final int modification) {
+        this(card, card.getController(), modification);
     }
     
     public MagicPlayCardAction(final MagicCard card) {
@@ -42,7 +42,7 @@ public class MagicPlayCardAction extends MagicPutIntoPlayAction {
     @Override
     protected MagicPermanent createPermanent(final MagicGame game) {
         final MagicPermanent permanent=game.createPermanent(card,controller);
-        switch (action) {
+        switch (modification) {
             case PERSIST:
                 permanent.changeCounters(MagicCounterType.MinusOne,1);
                 break;
