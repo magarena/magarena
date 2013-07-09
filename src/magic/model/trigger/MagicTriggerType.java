@@ -18,7 +18,7 @@ public enum MagicTriggerType {
     WouldBeMoved,           // MagicMoveCardAction
     WhenPutIntoGraveyard,       // graveyard trigger data
     WhenOtherPutIntoGraveyard,  // graveyard trigger data
-    WhenOtherPutIntoGraveyardFromPlay, // permanent
+    WhenOtherDies,          // permanent
     WhenAttacks,            // permanent
     WhenBlocks,             // permanent
     WhenBecomesBlocked,     // permanent

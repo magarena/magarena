@@ -32,6 +32,6 @@ public class MagicPersistTrigger extends MagicWhenDiesTrigger {
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         final MagicCard card = event.getPermanent().getCard();
-        game.doAction(new MagicReanimateAction(card.getOwner(),card,MagicPlayCardAction.PERSIST));
+        game.doAction(new MagicReanimateAction(card,card.getOwner(),MagicPlayCardAction.PERSIST));
     }
 }

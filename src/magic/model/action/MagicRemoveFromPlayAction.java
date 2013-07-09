@@ -57,7 +57,7 @@ public class MagicRemoveFromPlayAction extends MagicAction {
         game.executeTrigger(MagicTriggerType.WhenLeavesPlay, this);
 
         if (toLocation==MagicLocationType.Graveyard) {
-            game.executeTrigger(MagicTriggerType.WhenOtherPutIntoGraveyardFromPlay,permanent);
+            game.executeTrigger(MagicTriggerType.WhenOtherDies,permanent);
             if (permanent.isCreature()) {
                 game.setCreatureDiedThisTurn(true);
             }
