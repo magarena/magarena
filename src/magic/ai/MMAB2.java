@@ -76,7 +76,7 @@ public class MMAB2 implements MagicAI {
                     }
                     workerGame.setFastChoices(true);
                     final MMABWorker worker=new MMABWorker(
-                        (int)Thread.currentThread().getId(),
+                        Thread.currentThread().getId(),
                         workerGame,
                         scoreBoard,
                         CHEAT
@@ -135,13 +135,13 @@ public class MMAB2 implements MagicAI {
 class MMABWorker {
 
     private final boolean CHEAT;
-    private final int id;
+    private final long id;
     private final MagicGame game;
     private final ArtificialScoreBoard scoreBoard;
 
     private int gameCount;
 
-    MMABWorker(final int id,final MagicGame game,final ArtificialScoreBoard scoreBoard, final boolean CHEAT) {
+    MMABWorker(final long id,final MagicGame game,final ArtificialScoreBoard scoreBoard, final boolean CHEAT) {
         this.id=id;
         this.game=game;
         this.scoreBoard=scoreBoard;

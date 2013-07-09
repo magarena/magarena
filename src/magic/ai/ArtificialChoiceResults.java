@@ -4,7 +4,7 @@ public class ArtificialChoiceResults {
 
     final Object[] choiceResults;
     ArtificialScore aiScore=ArtificialScore.INVALID_SCORE;
-    int worker=-1;
+    long worker=-1;
     int gameCount=1;
 
     ArtificialChoiceResults(final Object[] choiceResults) {
