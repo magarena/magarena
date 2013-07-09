@@ -31,6 +31,17 @@ public class MagicDetainAction extends MagicAction {
             flags.add(MagicAbility.CantActivateAbilities);
         }
     };
+        
+    private final MagicAtUpkeepTrigger Cleanup = new MagicAtUpkeepTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+            if (upkeepPlayer.getId() == sourceController.getId()) {
+                game.addDelayedAction(new MagicRemoveStaticAction(permanent, Detain));
+                game.addDelayedAction(new MagicRemoveTriggerAction(permanent, this));
+            }
+            return MagicEvent.NONE;
+        }
+    };
 
     public MagicDetainAction(final MagicPlayer controller, final MagicPermanent aPermanent) {
         sourceController = controller;
@@ -40,17 +51,7 @@ public class MagicDetainAction extends MagicAction {
     @Override
     public void doAction(final MagicGame game) {
         game.doAction(new MagicAddStaticAction(permanent, Detain));
-        final MagicAtUpkeepTrigger cleanup = new MagicAtUpkeepTrigger() {
-            @Override
-            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-                if (upkeepPlayer.getId() == sourceController.getId()) {
-                    game.addDelayedAction(new MagicRemoveStaticAction(permanent, Detain));
-                    game.addDelayedAction(new MagicRemoveTriggerAction(permanent, this));
-                }
-                return MagicEvent.NONE;
-            }
-        };
-        game.doAction(new MagicAddTriggerAction(permanent, cleanup));
+        game.doAction(new MagicAddTriggerAction(permanent, Cleanup));
     }
 
     @Override
