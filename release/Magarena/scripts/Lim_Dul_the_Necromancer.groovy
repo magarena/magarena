@@ -1,11 +1,5 @@
-def Zombie = new MagicStatic(MagicLayer.Type) {
-    @Override
-    public void modSubTypeFlags(final MagicPermanent permanent,final Set<MagicSubType> flags) {
-        flags.add(MagicSubType.Zombie);
-    }
-};
 [
-   new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
+   new MagicWhenOtherDiesTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
             return (otherPermanent.isEnemy(permanent) &&
@@ -31,8 +25,8 @@ def Zombie = new MagicStatic(MagicLayer.Type) {
                     game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
                     game.doAction(action);
                     final MagicPermanent permanent = action.getPermanent();
-                    if (permanent.isCreature()) {
-                        game.doAction(new MagicAddStaticAction(permanent,Zombie));
+                    if (permanent.isValid()) {
+                        game.doAction(new MagicAddStaticAction(permanent,MagicStatic.Zombie));
                     }
                 }
             }

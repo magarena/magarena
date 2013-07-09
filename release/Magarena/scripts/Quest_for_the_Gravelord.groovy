@@ -23,7 +23,7 @@
             game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Zombie Giant")));
         }
     },
-    new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
+    new MagicWhenOtherDiesTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
             return (otherPermanent.isCreature()) ?

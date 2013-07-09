@@ -20,7 +20,11 @@
             event.processTargetCard(game,new MagicCardAction() {
                 public void doAction(final MagicCard targetCard) {
                     if (MagicCondition.THRESHOLD_CONDITION.accept(event.getSource())) {
-                        game.doAction(new MagicReanimateAction(player,targetCard,MagicPlayCardAction.NONE));
+                        game.doAction(new MagicReanimateAction(
+                            targetCard,
+                            player,
+                            MagicPlayCardAction.NONE
+                        ));
                     } else {
                         game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
                         game.doAction(new MagicMoveCardAction(targetCard,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));

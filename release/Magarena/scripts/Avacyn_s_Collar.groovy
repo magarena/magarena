@@ -1,5 +1,5 @@
 [
-    new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
+    new MagicWhenOtherDiesTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,

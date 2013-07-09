@@ -17,7 +17,7 @@
                 MagicCopyTargetPicker.create(),
                 this,
                 "Put a token that's a copy of target nonlegendary creature\$ you control onto the battlefield. "+
-                "That token has haste. Sacrifice it at end of turn."
+                "That token has haste. Sacrifice it at the beginning of the next end step."
             );
         }
 

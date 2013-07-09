@@ -7,7 +7,7 @@
                 MagicTargetChoice.TARGET_CREATURE,
                 MagicExileTargetPicker.create(),
                 this,
-                "Exile target creature\$. Return that card to the battlefield under its owner's control at end of turn."
+                "Exile target creature\$. Return that card to the battlefield under its owner's control at the beginning of the next end step."
             );
         }
         @Override

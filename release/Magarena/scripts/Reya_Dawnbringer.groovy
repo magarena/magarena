@@ -20,7 +20,11 @@
             if (event.isYes()) {
                 event.processTargetCard(game,new MagicCardAction() {
                     public void doAction(final MagicCard card) {
-                        game.doAction(new MagicReanimateAction(event.getPlayer(),card,MagicPlayCardAction.NONE));
+                        game.doAction(new MagicReanimateAction(
+                            card,
+                            event.getPlayer(),
+                            MagicPlayCardAction.NONE
+                        ));
                     }
                 });
             }

@@ -20,8 +20,8 @@
             for (final MagicCard card : cards) {
                 if (card.getName().equals(event.getSource().getName())) {
                     game.doAction(new MagicReanimateAction(
-                        event.getPlayer(),
                         card,
+                        event.getPlayer(),
                         MagicPlayCardAction.NONE
                     ));
                 }

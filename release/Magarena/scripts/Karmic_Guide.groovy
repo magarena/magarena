@@ -20,8 +20,8 @@
             event.processTargetCard(game,new MagicCardAction() {
                 public void doAction(final MagicCard targetCard) {
                     game.doAction(new MagicReanimateAction(
-                        event.getPlayer(),
                         targetCard,
+                        event.getPlayer(),
                         MagicPlayCardAction.NONE
                     ));
                 }

@@ -20,7 +20,11 @@
             for (;actualAmount>0;actualAmount--) {
                 final int index = rng.nextInt(targets.size());
                 final MagicCard card = targets.get(index);
-                game.doAction(new MagicReanimateAction(player,card,MagicPlayCardAction.NONE));
+                game.doAction(new MagicReanimateAction(
+                    card,
+                    player,
+                    MagicPlayCardAction.NONE
+                ));
             }
         }
     }

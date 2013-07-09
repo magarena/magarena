@@ -15,7 +15,11 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCard(game,new MagicCardAction() {
                 public void doAction(final MagicCard targetCard) {
-                    game.doAction(new MagicReanimateAction(event.getPlayer(),targetCard,MagicPlayCardAction.NONE));
+                    game.doAction(new MagicReanimateAction(
+                        targetCard,
+                        event.getPlayer(),
+                        MagicPlayCardAction.NONE
+                    ));
                 }
             });
         }

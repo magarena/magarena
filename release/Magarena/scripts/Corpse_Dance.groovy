@@ -20,8 +20,8 @@
             if (targets.size() > 0) {
                 final MagicCard card = targets.get(targets.size()-1);
                 game.doAction(new MagicReanimateAction(
-                    player,
                     card,
+                    player,
                     MagicPlayCardAction.HASTE_UEOT_REMOVE_AT_END_OF_TURN
                 ));
             }

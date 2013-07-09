@@ -1,5 +1,5 @@
 [
-    new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
+    new MagicWhenOtherDiesTrigger() {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -20,8 +20,8 @@
             final MagicCard card = event.getRefCard();
             if (card.getOwner().getGraveyard().contains(card)) {
                 game.doAction(new MagicReanimateAction(
-                    event.getPlayer(),
                     card,
+                    event.getPlayer(),
                     MagicPlayCardAction.NONE
                 ));
             }

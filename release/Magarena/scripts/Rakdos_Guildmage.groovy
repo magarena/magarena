@@ -42,7 +42,7 @@
             return new MagicEvent(
                 source,
                 this,
-                "PN puts a 2/1 red Goblin creature token with haste onto the battlefield. Exile it at end of turn."
+                "PN puts a 2/1 red Goblin creature token with haste onto the battlefield. Exile it at the beginning of the next end step."
             );
         }
         @Override

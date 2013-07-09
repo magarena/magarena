@@ -8,7 +8,7 @@
                 MagicExileTargetPicker.create(),
                 this,
                 "Gain control of target creature\$. Untap that creature. " +
-                "It gains haste until end of turn. Sacrifice it at end of turn."
+                "It gains haste until end of turn. Sacrifice it at the beginning of the next end step."
             );
         }
         @Override

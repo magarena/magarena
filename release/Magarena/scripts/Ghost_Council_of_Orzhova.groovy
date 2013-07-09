@@ -16,7 +16,7 @@
             return new MagicEvent(
                 source,
                 this,
-                "Exile SN. Return it to the battlefield under its owner's control at end of turn."
+                "Exile SN. Return it to the battlefield under its owner's control at the beginning of the next end step."
             );
         }
         @Override

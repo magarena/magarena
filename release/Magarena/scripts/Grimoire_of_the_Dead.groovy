@@ -1,16 +1,3 @@
-def Zombie = new MagicStatic(MagicLayer.Type) {
-    @Override
-    public void modSubTypeFlags(final MagicPermanent permanent,final Set<MagicSubType> flags) {
-        flags.add(MagicSubType.Zombie);
-    }
-};
-
-def Black = new MagicStatic(MagicLayer.Color) {
-    @Override
-    public int getColorFlags(final MagicPermanent permanent,final int flags) {
-        return flags|MagicColor.Black.getMask();
-    }
-};
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Main,true),
@@ -71,8 +58,8 @@ def Black = new MagicStatic(MagicLayer.Color) {
                     game.doAction(action);
 
                     final MagicPermanent permanent = action.getPermanent();
-                    game.doAction(new MagicAddStaticAction(permanent, Zombie));
-                    game.doAction(new MagicAddStaticAction(permanent, Black));
+                    game.doAction(new MagicAddStaticAction(permanent, MagicStatic.Zombie));
+                    game.doAction(new MagicAddStaticAction(permanent, MagicStatic.Black));
                 }
             }
         }
