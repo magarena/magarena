@@ -22,6 +22,5 @@
                 }
             });
         }
-    },
-    MagicWhenPutIntoGraveyardTrigger.RecoverGraveyard
+    }
 ]

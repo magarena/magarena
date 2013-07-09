@@ -8,5 +8,5 @@ subtype=Elephant,Soldier
 cost={1}{W}{G}
 pt=4/4
 timing=main
-ability=can't be countered
+ability=can't be countered,opponent discard onto battlefield
 requires_groovy_code

@@ -7,6 +7,6 @@ type=Legendary,Creature
 subtype=Eldrazi
 cost={10}
 pt=12/12
-ability=annihilator 4
+ability=annihilator 4,dead recover graveyard
 timing=main
 requires_groovy_code
