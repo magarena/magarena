@@ -10,6 +10,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.event.MagicEvent;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicRemoveCardAction;
+import magic.model.action.MagicPlayCardAction;
 
 public abstract class MagicWhenPutIntoGraveyardTrigger extends MagicTrigger<MagicMoveCardAction> {
     public MagicWhenPutIntoGraveyardTrigger(final int priority) {
@@ -26,6 +27,18 @@ public abstract class MagicWhenPutIntoGraveyardTrigger extends MagicTrigger<Magi
     public void change(final MagicCardDefinition cdef) {
         cdef.addTrigger(this);
     }
+    
+    public static final MagicWhenPutIntoGraveyardTrigger OpponentDiscardOntoBattlefield = new MagicWhenPutIntoGraveyardTrigger(MagicTrigger.REPLACEMENT) {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicMoveCardAction act) {
+            final MagicCard card = act.card;
+            if (card.isEnemy(game.getActiveSource())) {
+                act.setToLocation(MagicLocationType.Play);
+                game.doAction(new MagicPlayCardAction(card));
+            }
+            return MagicEvent.NONE;
+        }
+    };
 
     public static final MagicWhenPutIntoGraveyardTrigger RecoverGraveyard = new MagicWhenPutIntoGraveyardTrigger() {
         @Override

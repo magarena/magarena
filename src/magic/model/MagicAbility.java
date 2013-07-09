@@ -41,6 +41,7 @@ import magic.model.trigger.MagicExaltedTrigger;
 import magic.model.trigger.MagicFadeVanishCounterTrigger;
 import magic.model.trigger.MagicFlankingTrigger;
 import magic.model.trigger.MagicFromGraveyardToLibraryTrigger;
+import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 import magic.model.trigger.MagicLandfallPumpTrigger;
 import magic.model.trigger.MagicLeavesDamageTargetTrigger;
 import magic.model.trigger.MagicLeavesGainLifeTrigger;
@@ -481,6 +482,18 @@ public enum MagicAbility {
             final String[] tokens = arg.split(" ");
             final boolean player = "player".equals(tokens[0]);
             card.add(new MagicDamageGrowTrigger(true, player));
+        }
+    },
+    OpponentDiscardOntoBattlefield("opponent discard onto battlefield",10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+            card.add(MagicWhenPutIntoGraveyardTrigger.OpponentDiscardOntoBattlefield);
+        }
+    },
+    RecoverGraveyard("dead recover graveyard",10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+            card.add(MagicWhenPutIntoGraveyardTrigger.RecoverGraveyard);
         }
     },
     GraveyardToLibrary("graveyard to library",10) {
