@@ -1,5 +1,8 @@
 package magic.model.action;
 
+import java.util.List;
+import java.util.Arrays;
+
 import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
@@ -10,31 +13,26 @@ public class MagicReanimateAction extends MagicAction {
 
     private final MagicPlayer controller;
     private final MagicCard card;
-    private final int modification;
-    private MagicPermanent permanent = MagicPermanent.NONE;
+    private final List<MagicPlayMod> modifications;
 
-    public MagicReanimateAction(final MagicCard aCard, final MagicPlayer aController, final int aModification) {
+    public MagicReanimateAction(final MagicCard aCard, final MagicPlayer aController, final List<MagicPlayMod> aModifications) {
         card = aCard;
         controller = aController;
-        modification = aModification;
+        modifications = aModifications;
     }
-
+    
+    public MagicReanimateAction(final MagicCard aCard, final MagicPlayer aController, final MagicPlayMod... aModifications) {
+        this(aCard, aController, Arrays.asList(aModifications));
+    }
+    
     @Override
     public void doAction(final MagicGame game) {
-        if (card.getOwner().getGraveyard().contains(card)) {
+        if (card.isInGraveyard()) {
             game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-            final MagicPlayCardAction action = new MagicPlayCardAction(card,controller,modification);
-            game.doAction(action);
-            permanent = action.getPermanent();
+            game.doAction(new MagicPlayCardAction(card,controller,modifications));
         }
     }
     
-    public MagicPermanent getPermanent() {
-        return permanent;
-    }
-
     @Override
-    public void undoAction(final MagicGame game) {
-
-    }
+    public void undoAction(final MagicGame game) {}
 }
