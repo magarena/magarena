@@ -1,0 +1,11 @@
+name=Vexing Devil
+url=http://magiccards.info/avr/en/164.html
+image=http://magiccards.info/scans/en/avr/164.jpg
+value=4.026
+rarity=R
+type=Creature
+subtype=Devil
+cost={R}
+pt=4/3
+timing=main
+requires_groovy_code
