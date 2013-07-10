@@ -1,0 +1,11 @@
+name=Obstinate Baloth
+url=http://magiccards.info/m11/en/188.html
+image=http://magiccards.info/scans/en/m11/188.jpg
+value=4.026
+rarity=R
+type=Creature
+subtype=Beast
+cost={2}{G}{G}
+pt=4/4
+ability=enters gain life 4,opponent discard onto battlefield
+timing=main
