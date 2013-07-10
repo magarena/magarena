@@ -5,8 +5,7 @@ def EVENT_ACTION = new MagicEventAction() {
             public void doAction(final MagicCard card) {
                 game.doAction(new MagicReanimateAction(
                     card,
-                    event.getPlayer(),
-                    MagicPlayCardAction.NONE
+                    event.getPlayer()
                 ));
             }
         });

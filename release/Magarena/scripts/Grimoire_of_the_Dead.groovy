@@ -48,19 +48,16 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final Collection<MagicCard> targets =
-                    game.filterCards(player,MagicTargetFilter.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS);
-            for (final MagicTarget target : targets) {
-                final MagicCard card = (MagicCard) target;
-                if (card.getOwner().getGraveyard().contains(card)) {
-                    final MagicPlayCardAction action = new MagicPlayCardAction(card,player,MagicPlayCardAction.NONE);
-                    game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-                    game.doAction(action);
-
-                    final MagicPermanent permanent = action.getPermanent();
-                    game.doAction(new MagicAddStaticAction(permanent, MagicStatic.Zombie));
-                    game.doAction(new MagicAddStaticAction(permanent, MagicStatic.Black));
-                }
+            final Collection<MagicCard> targets = game.filterCards(
+                player,
+                MagicTargetFilter.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS
+            );
+            for (final MagicCard card : targets) {
+                game.doAction(new MagicReanimateAction(
+                    card, 
+                    player, 
+                    [MagicPlayMod.BLACK, MagicPlayMod.ZOMBIE]
+                ));
             }
         }
     }

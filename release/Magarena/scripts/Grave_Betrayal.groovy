@@ -3,29 +3,25 @@ def DelayedTrigger = {
     return new MagicAtEndOfTurnTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer eotPlayer) {
-            return new MagicEvent(
-                source.map(game),
-                player.map(game),
-                card.map(game),
-                this,
-                "Return RN to the battlefield under PN's control with an additional +1/+1 counter on it. " +
-                "That creature is a black Zombie in addition to its other colors and types."
-            );
+            final MagicCard chosenCard = card.map(game);
+            return chosenCard.isInGraveyard() ?
+                new MagicEvent(
+                    source.map(game),
+                    player.map(game),
+                    chosenCard,
+                    this,
+                    "Return RN to the battlefield under PN's control with an additional +1/+1 counter on it. " +
+                    "That creature is a black Zombie in addition to its other colors and types."
+                ):
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicReanimateAction action = new MagicReanimateAction(
+            game.doAction(new MagicReanimateAction(
                 event.getRefCard(),
                 event.getPlayer(),
-                MagicPlayCardAction.UNDYING
-            );
-            game.doAction(action);
-            
-            final MagicPermanent permanent = action.getPermanent();
-            if (permanent.isValid()) {
-                game.doAction(new MagicAddStaticAction(permanent, MagicStatic.Zombie));
-                game.doAction(new MagicAddStaticAction(permanent, MagicStatic.Black));
-            }
+                [MagicPlayMod.UNDYING, MagicPlayMod.BLACK, MagicPlayMod.ZOMBIE]
+            ));
             game.addDelayedAction(new MagicRemoveTriggerAction(this));
         }
     };

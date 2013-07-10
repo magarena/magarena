@@ -35,8 +35,7 @@
                 public void doAction(final MagicCard targetCard) {
                     game.doAction(new MagicReanimateAction(
                         targetCard,
-                        event.getPlayer(),
-                        MagicPlayCardAction.NONE
+                        event.getPlayer()
                     ));
                 }
             });

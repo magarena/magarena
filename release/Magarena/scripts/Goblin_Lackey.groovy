@@ -28,8 +28,7 @@
                         ));
                         game.doAction(new MagicPlayCardAction(
                             card,
-                            event.getPlayer(),
-                            MagicPlayCardAction.NONE
+                            event.getPlayer()
                         ));
                     }
                 });

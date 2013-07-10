@@ -87,7 +87,7 @@
 
                     @Override
                     public void executeEvent(final MagicGame game, final MagicEvent event) {
-                        if (event.isYes() && event.getPlayer().getGraveyard().contains(event.getCard())) {
+                        if (event.isYes() && event.getCard().isInGraveyard()) {
                             game.doAction(new MagicRemoveCardAction(event.getCard(),MagicLocationType.Graveyard));
                             game.doAction(new MagicMoveCardAction(event.getCard(),MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
                         }

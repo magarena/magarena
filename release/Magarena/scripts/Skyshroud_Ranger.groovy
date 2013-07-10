@@ -31,7 +31,7 @@
                 event.processTargetCard(game,new MagicCardAction() {
                     public void doAction(final MagicCard card) {
                         game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
-                        game.doAction(new MagicPlayCardAction(card,event.getPlayer(),MagicPlayCardAction.NONE));
+                        game.doAction(new MagicPlayCardAction(card,event.getPlayer()));
                     }
                 });
             }

@@ -41,7 +41,7 @@
             game.doAction(new MagicReturnExiledUntilThisLeavesPlayAction(
                 event.getPermanent(),
                 MagicLocationType.Play,
-                MagicPlayCardAction.TAPPED
+                MagicPlayMod.TAPPED
             ));
         }
     }

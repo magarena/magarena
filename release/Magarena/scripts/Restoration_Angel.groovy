@@ -30,8 +30,7 @@
                         if (removeCard.isValid()) {
                             game.doAction(new MagicPlayCardAction(
                                 creature.getCard(),
-                                event.getPlayer(),
-                                MagicPlayCardAction.NONE
+                                event.getPlayer()
                             ));
                         }
                     }

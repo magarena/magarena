@@ -25,8 +25,7 @@
                     final MagicCard card = targets.get(targets.size()-1);
                     game.doAction(new MagicReanimateAction(
                         card,
-                        event.getPlayer(),
-                        MagicPlayCardAction.NONE
+                        event.getPlayer()
                      ));
                 }
                 game.doAction(MagicChangeStateAction.Set(

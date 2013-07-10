@@ -16,7 +16,11 @@
             final MagicPlayer player=event.getPlayer();
             final MagicCard card=MagicCard.createTokenCard(TokenCardDefinitions.get("Soldier"),player);
             for (int count=0; count < 2; count++) {
-                game.doAction(new MagicPlayCardAction(card,player,MagicPlayCardAction.TAPPED_ATTACKING));
+                game.doAction(new MagicPlayCardAction(
+                    card,
+                    player,
+                    [MagicPlayMod.TAPPED, MagicPlayMod.ATTACKING]
+                ));
             }
         }
     }

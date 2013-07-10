@@ -19,7 +19,7 @@
                 game.doAction(new MagicReanimateAction(
                     target,
                     player,
-                    MagicPlayCardAction.TAPPED
+                    [MagicPlayMod.TAPPED]
                 ));
             }
             final List<MagicPermanent> humans =

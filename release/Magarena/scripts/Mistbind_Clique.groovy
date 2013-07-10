@@ -58,7 +58,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCard exiledCard = event.getRefCard();
             game.doAction(new MagicRemoveCardAction(exiledCard,MagicLocationType.Exile));
-            game.doAction(new MagicPlayCardAction(exiledCard,exiledCard.getOwner(),MagicPlayCardAction.NONE));
+            game.doAction(new MagicPlayCardAction(exiledCard,exiledCard.getOwner()));
         }
     }
 ]

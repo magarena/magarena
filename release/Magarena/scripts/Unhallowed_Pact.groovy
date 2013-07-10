@@ -18,11 +18,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCard card = event.getRefCard();
-            if (card.getOwner().getGraveyard().contains(card)) {
+            if (card.isInGraveyard()) {
                 game.doAction(new MagicReanimateAction(
                     card,
-                    event.getPlayer(),
-                    MagicPlayCardAction.NONE
+                    event.getPlayer()
                 ));
             }
         }

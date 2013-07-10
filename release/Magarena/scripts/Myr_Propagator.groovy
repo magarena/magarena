@@ -23,7 +23,7 @@
             final MagicPlayer player = event.getPlayer();
             final MagicPermanent permanent = event.getPermanent();
             final MagicCard card = MagicCard.createTokenCard(permanent.getCardDefinition(),player);
-            game.doAction(new MagicPlayCardAction(card,player,MagicPlayCardAction.NONE));
+            game.doAction(new MagicPlayCardAction(card,player));
         }
     }
 ]

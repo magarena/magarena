@@ -22,8 +22,7 @@
                 final MagicCard card = targets.get(index);
                 game.doAction(new MagicReanimateAction(
                     card,
-                    player,
-                    MagicPlayCardAction.NONE
+                    player
                 ));
             }
         }

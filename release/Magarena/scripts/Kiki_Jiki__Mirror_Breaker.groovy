@@ -27,7 +27,11 @@
                 public void doAction(final MagicPermanent creature) {
                     final MagicPlayer player=event.getPlayer();
                     final MagicCard card=MagicCard.createTokenCard(creature.getCardDefinition(),player);
-                    game.doAction(new MagicPlayCardAction(card,player,MagicPlayCardAction.HASTE_SACRIFICE_AT_END_OF_TURN));
+                    game.doAction(new MagicPlayCardAction(
+                        card,
+                        player,
+                        [MagicPlayMod.HASTE, MagicPlayMod.SACRIFICE_AT_END_OF_TURN]
+                    ));
                 }
             });
         }

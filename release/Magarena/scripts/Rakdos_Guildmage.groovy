@@ -48,8 +48,12 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player=event.getPlayer();
-            final MagicCard card=MagicCard.createTokenCard(TokenCardDefinitions.get("Goblin2"),player);
-            game.doAction(new MagicPlayCardAction(card,player,MagicPlayCardAction.REMOVE_AT_END_OF_TURN));
+            final MagicCard card = MagicCard.createTokenCard(TokenCardDefinitions.get("Goblin2"),player);
+            game.doAction(new MagicPlayCardAction(
+                card,
+                player,
+                [MagicPlayMod.REMOVE_AT_END_OF_TURN]
+            ));
         }
     }
 ]

@@ -22,7 +22,7 @@
                 game.doAction(new MagicReanimateAction(
                     card,
                     player,
-                    MagicPlayCardAction.HASTE_UEOT_REMOVE_AT_END_OF_TURN
+                    [MagicPlayMod.HASTE_UEOT, MagicPlayMod.REMOVE_AT_END_OF_TURN]
                 ));
             }
             if (event.isBuyback()) {

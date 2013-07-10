@@ -17,7 +17,7 @@
             event.processTargetCard(game,new MagicCardAction() {
                 public void doAction(final MagicCard targetCard) {
                     game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
-                    final MagicPlayCardAction action = new MagicPlayCardAction(targetCard,event.getPlayer(),MagicPlayCardAction.NONE);
+                    final MagicPlayCardAction action = new MagicPlayCardAction(targetCard,event.getPlayer());
                     game.doAction(action);
                     final MagicPermanent permanent = action.getPermanent();
                     if (permanent.hasSubType(MagicSubType.Angel)) {

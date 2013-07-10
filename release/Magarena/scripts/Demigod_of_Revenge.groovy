@@ -21,8 +21,7 @@
                 if (card.getName().equals(event.getSource().getName())) {
                     game.doAction(new MagicReanimateAction(
                         card,
-                        event.getPlayer(),
-                        MagicPlayCardAction.NONE
+                        event.getPlayer()
                     ));
                 }
             }

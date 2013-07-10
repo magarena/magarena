@@ -16,19 +16,11 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCard(game, {
                 final MagicCard card ->
-
-                final MagicReanimateAction action = new MagicReanimateAction(
+                game.doAction(new MagicReanimateAction(
                     card,
                     event.getPlayer(),
-                    MagicPlayCardAction.NONE
-                );
-                game.doAction(action);
-
-                final MagicPermanent permanent = action.getPermanent();
-                if (permanent.isValid()) {
-                    game.doAction(new MagicAddStaticAction(permanent, MagicStatic.Zombie));
-                    game.doAction(new MagicAddStaticAction(permanent, MagicStatic.Black));
-                }
+                    [MagicPlayMod.BLACK, MagicPlayMod.ZOMBIE]
+                ));
             } as MagicCardAction);
         }
     }

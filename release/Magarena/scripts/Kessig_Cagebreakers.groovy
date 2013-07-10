@@ -18,7 +18,11 @@
             final int amount = game.filterCards(player,MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD).size();
             for (int count=amount;count>0;count--) {
                 final MagicCard card = MagicCard.createTokenCard(TokenCardDefinitions.get("Wolf"),player);
-                game.doAction(new MagicPlayCardAction(card,player,MagicPlayCardAction.TAPPED_ATTACKING));
+                game.doAction(new MagicPlayCardAction(
+                    card,
+                    player,
+                    [MagicPlayMod.TAPPED, MagicPlayMod.ATTACKING]
+                ));
             }
         }
     }

@@ -31,7 +31,7 @@
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.Exile));
                     game.doAction(new MagicRemoveCardAction(creature.getCard(),MagicLocationType.Exile));
-                    game.doAction(new MagicPlayCardAction(creature.getCard(),event.getPlayer(),MagicPlayCardAction.NONE));
+                    game.doAction(new MagicPlayCardAction(creature.getCard(),event.getPlayer()));
                 }
             });
         }

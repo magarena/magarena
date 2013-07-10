@@ -28,8 +28,7 @@
             for (final MagicCard target : humans) {
                 game.doAction(new MagicReanimateAction(
                     target,
-                    player,
-                    MagicPlayCardAction.NONE
+                    player
                 ));
             }
         }

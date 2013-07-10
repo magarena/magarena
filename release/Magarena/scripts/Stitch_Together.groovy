@@ -22,8 +22,7 @@
                     if (MagicCondition.THRESHOLD_CONDITION.accept(event.getSource())) {
                         game.doAction(new MagicReanimateAction(
                             targetCard,
-                            player,
-                            MagicPlayCardAction.NONE
+                            player
                         ));
                     } else {
                         game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));

@@ -19,16 +19,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                final MagicCard card = event.getRefCard();
-                if (card.getOwner().getGraveyard().contains(card)) {
-                    final MagicPlayCardAction action = new MagicPlayCardAction(card,event.getPlayer(),MagicPlayCardAction.NONE);
-                    game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-                    game.doAction(action);
-                    final MagicPermanent permanent = action.getPermanent();
-                    if (permanent.isValid()) {
-                        game.doAction(new MagicAddStaticAction(permanent,MagicStatic.Zombie));
-                    }
-                }
+                game.doAction(new MagicReanimateAction(event.getRefCard(), event.getPlayer(), [MagicPlayMod.ZOMBIE]));
             }
         }
     },
