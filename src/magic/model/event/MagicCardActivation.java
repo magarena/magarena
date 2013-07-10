@@ -74,7 +74,7 @@ public class MagicCardActivation extends MagicActivation<MagicCard> implements M
                 );
                 game.doAction(new MagicPutItemOnStackAction(cardOnStack));
             } else {
-                game.doAction(new MagicPlayCardAction(card,card.getController(),MagicPlayCardAction.NONE));
+                game.doAction(new MagicPlayCardAction(card,card.getController()));
             }
         }
     };
