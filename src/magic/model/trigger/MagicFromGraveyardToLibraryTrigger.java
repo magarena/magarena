@@ -21,7 +21,7 @@ public class MagicFromGraveyardToLibraryTrigger extends MagicWhenPutIntoGraveyar
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicMoveCardAction act) {
         final MagicCard card = act.card;
-        return (!card.isToken()) ?
+        return card.isToken() == false ?
             new MagicEvent(
                 card,
                 this,
@@ -33,7 +33,7 @@ public class MagicFromGraveyardToLibraryTrigger extends MagicWhenPutIntoGraveyar
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         final MagicCard card = event.getCard();
-        if (card.getOwner().getGraveyard().contains(card)) {
+        if (card.isInGraveyard()) {
             game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
             game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
         }
