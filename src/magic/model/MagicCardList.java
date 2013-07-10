@@ -77,7 +77,7 @@ public class MagicCardList extends ArrayList<MagicCard> {
         return index;
     }
 
-    MagicCard getCard(final long id) {
+    public MagicCard getCard(final long id) {
         for (final MagicCard card : this) {
             if (card.getId()==id) {
                 return card;

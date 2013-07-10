@@ -3,12 +3,18 @@ def DelayedTrigger = {
     return new MagicAtEndOfTurnTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer eotPlayer) {
-            final MagicCard chosenCard = card.map(game);
-            return chosenCard.isInGraveyard() ?
+            final MagicPlayer mappedPlayer = player.map(game);
+            final MagicCard mappedCard = card.getOwner().getGraveyard().getCard(card.getId());
+            final MagicCard mappedSource = new MagicCard(
+                source.getCardDefinition(), 
+                source.getOwner(), 
+                source.getCard().getId()
+            );
+            return mappedCard.isInGraveyard() ?
                 new MagicEvent(
-                    source.map(game),
-                    player.map(game),
-                    chosenCard,
+                    mappedSource,
+                    mappedPlayer,
+                    mappedCard,
                     this,
                     "Return RN to the battlefield under PN's control with an additional +1/+1 counter on it. " +
                     "That creature is a black Zombie in addition to its other colors and types."
