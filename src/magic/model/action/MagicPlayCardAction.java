@@ -41,6 +41,9 @@ public class MagicPlayCardAction extends MagicPutIntoPlayAction {
         final MagicPermanent permanent=game.createPermanent(card,controller);
         for (final MagicPlayMod modification : modifications) {
             switch (modification) {
+                case UNDYING:
+                    permanent.changeCounters(MagicCounterType.PlusOne,1);
+                    break;
                 case PERSIST:
                     permanent.changeCounters(MagicCounterType.MinusOne,1);
                     break;
@@ -52,6 +55,9 @@ public class MagicPlayCardAction extends MagicPutIntoPlayAction {
                     break;
                 case SACRIFICE_AT_END_OF_TURN:
                     permanent.setState(MagicPermanentState.SacrificeAtEndOfTurn);
+                    break;
+                case EXILE_AT_END_OF_COMBAT:
+                    permanent.setState(MagicPermanentState.ExileAtEndOfCombat);
                     break;
                 case ATTACKING:
                     permanent.setState(MagicPermanentState.Attacking);
@@ -65,17 +71,11 @@ public class MagicPlayCardAction extends MagicPutIntoPlayAction {
                 case HASTE:
                     game.doAction(new MagicGainAbilityAction(permanent, MagicAbility.Haste, MagicStatic.Forever));
                     break;
-                case UNDYING:
-                    permanent.changeCounters(MagicCounterType.PlusOne,1);
-                    break;
                 case BLACK:
                     game.doAction(new MagicAddStaticAction(permanent, MagicStatic.Black));
                     break;
                 case ZOMBIE:
                     game.doAction(new MagicAddStaticAction(permanent, MagicStatic.Zombie));
-                    break;
-                case EXILE_AT_END_OF_COMBAT:
-                    permanent.setState(MagicPermanentState.ExileAtEndOfCombat);
                     break;
             }
         }
