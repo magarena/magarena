@@ -1,5 +1,9 @@
 package magic.model.action;
 
+import java.util.List;
+import java.util.LinkedList;
+import java.util.Arrays;
+
 import magic.model.MagicCard;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
@@ -14,44 +18,28 @@ public class MagicReturnExiledUntilThisLeavesPlayAction extends MagicAction {
 
     private final MagicPermanent source;
     private final MagicLocationType location;
-    private MagicPlayer controller = MagicPlayer.NONE;
-    private int action = MagicPlayCardAction.NONE;
+    private final MagicPlayer controller;
+    private final List<MagicPlayMod> modifications = new LinkedList<MagicPlayMod>();;
     private MagicCardList exiledList;
-
-    public MagicReturnExiledUntilThisLeavesPlayAction(
-            final MagicPermanent source,
-            final MagicLocationType location,
-            final MagicPlayer controller,
-            final int action) {
-        this.source = source;
-        this.location = location;
-        this.controller = controller;
-        this.action = action;
+    
+    public MagicReturnExiledUntilThisLeavesPlayAction(final MagicPermanent aSource, final MagicLocationType aLocation, final MagicPlayer aController) {
+        source = aSource;
+        location = aLocation;
+        controller = aController;
+    }
+    
+    public MagicReturnExiledUntilThisLeavesPlayAction(final MagicPermanent source, final MagicLocationType location) {
+        this(source, location, MagicPlayer.NONE);
     }
 
-    public MagicReturnExiledUntilThisLeavesPlayAction(
-            final MagicPermanent source,
-            final MagicLocationType location,
-            final MagicPlayer controller) {
-        this.source = source;
-        this.location = location;
-        this.controller = controller;
+    public MagicReturnExiledUntilThisLeavesPlayAction(final MagicPermanent aSource, final MagicLocationType aLocation, final MagicPlayer aController, final MagicPlayMod aModification) {
+        this(aSource, aLocation, aController);
+        modifications.add(aModification);
     }
-
-    public MagicReturnExiledUntilThisLeavesPlayAction(
-            final MagicPermanent source,
-            final MagicLocationType location,
-            final int action) {
-        this.source = source;
-        this.location = location;
-        this.action = action;
-    }
-
-    public MagicReturnExiledUntilThisLeavesPlayAction(
-            final MagicPermanent source,
-            final MagicLocationType location) {
-        this.source = source;
-        this.location = location;
+    
+    public MagicReturnExiledUntilThisLeavesPlayAction(final MagicPermanent source, final MagicLocationType location, final MagicPlayMod aModification) {
+        this(source, location);
+        modifications.add(aModification);
     }
 
     @Override
@@ -66,11 +54,10 @@ public class MagicReturnExiledUntilThisLeavesPlayAction extends MagicAction {
                         final MagicCardOnStack cardOnStack = new MagicCardOnStack(card,MagicPayedCost.NO_COST);
                         game.addEvent(new MagicReturnAuraEvent(cardOnStack));
                     } else {
-                        final Boolean newOwner = controller != MagicPlayer.NONE;
                         game.doAction(new MagicPlayCardAction(
                             card,
-                            newOwner ? controller : card.getOwner(),
-                            action
+                            controller.isValid() ? controller : card.getOwner(),
+                            modifications
                         ));
                     }
                 } else {
