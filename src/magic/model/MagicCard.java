@@ -157,6 +157,10 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard>,
         return known;
     }
 
+    public boolean isInGraveyard() {
+        return getOwner().getGraveyard().contains(this);
+    }
+
     @Override
     public String getName() {
         return getCardDefinition().getName();
