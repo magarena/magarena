@@ -1,0 +1,12 @@
+name=Blood Baron of Vizkopa
+url=http://magiccards.info/dgm/en/57.html
+image=http://magiccards.info/scans/en/dgm/57.jpg
+value=3.708
+rarity=M
+type=Creature
+subtype=Vampire
+cost={3}{W}{B}
+pt=4/4
+ability=lifelink,protection from white,protection from black
+timing=main
+requires_groovy_code
