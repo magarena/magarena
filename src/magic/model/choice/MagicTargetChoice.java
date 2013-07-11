@@ -376,8 +376,21 @@ public class MagicTargetChoice extends MagicChoice {
             new MagicTargetChoice(MagicTargetFilter.TARGET_CARD_FROM_GRAVEYARD,true,MagicTargetHint.None,"target card from your graveyard");
     public static final MagicTargetChoice NEG_TARGET_CARD_FROM_ALL_GRAVEYARDS =
             new MagicTargetChoice(MagicTargetFilter.TARGET_CARD_FROM_ALL_GRAVEYARDs,true,MagicTargetHint.Negative,"target card from a graveyard");
-    public static final MagicTargetChoice TARGET_CREATURE_CARD_FROM_GRAVEYARD=
-        new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD,true,MagicTargetHint.None,"target creature card from your graveyard");
+
+    public static final MagicTargetChoice TARGET_CREATURE_CARD_FROM_GRAVEYARD=new MagicTargetChoice(
+        MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
+        true,
+        MagicTargetHint.None,
+        "target creature card from your graveyard"
+    );
+    
+    public static final MagicTargetChoice A_CREATURE_CARD_FROM_YOUR_GRAVEYARD=new MagicTargetChoice(
+        MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
+        false,
+        MagicTargetHint.None,
+        "a creature card from your graveyard"
+    );
+
     public static final MagicTargetChoice TARGET_CREATURE_CARD_WITH_INFECT_FROM_GRAVEYARD=
             new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_CARD_WITH_INFECT_FROM_GRAVEYARD,true,MagicTargetHint.None,
                     "target creature card with infect from your graveyard");
