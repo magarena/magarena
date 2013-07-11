@@ -101,6 +101,7 @@ public enum MagicAbility {
     Hexproof("hexproof",80),
     CannotBeTheTarget0("can't be the target of spells or abilities your opponents control",80),
     CannotBeTheTarget1("can't be the target of spells or abilities your opponents control",80),
+    CannotBeTheTargetOfNonGreen("can't be the target of nongreen spells or abilities from nongreen sources",0),
     Deathtouch("deathtouch",60),
     Defender("defender",-100),
     DoesNotUntap("doesn't untap during untap step",-30),

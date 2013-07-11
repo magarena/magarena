@@ -996,6 +996,11 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         if (hasAbility(MagicAbility.CannotBeTheTarget1) && source.getController().getIndex() == 1) {
             return false;
         }
+    
+        // Can't be the target of nongreen spells or abilities from nongreen sources
+        if (hasAbility(MagicAbility.CannotBeTheTargetOfNonGreen) && source.hasColor(MagicColor.Green)) {
+            return false;
+        }
 
         // Protection.
         return !hasProtectionFrom(source);
