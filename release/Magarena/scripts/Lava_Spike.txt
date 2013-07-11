@@ -1,0 +1,10 @@
+name=Lava Spike
+url=http://magiccards.info/chk/en/178.html
+image=http://magiccards.info/scans/en/chk/178.jpg
+value=4.632
+rarity=C
+type=Sorcery
+subtype=Arcane
+cost={R}
+timing=removal
+requires_groovy_code
