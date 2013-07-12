@@ -71,7 +71,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     private int cachedColorFlags;
     private Set<MagicAbility> cachedAbilityFlags;
     private MagicPowerToughness cachedPowerToughness;
-    private final Set<MagicPermanentActivation> cachedActivations;
+    private final Set<MagicActivation<MagicPermanent>> cachedActivations;
 
     // remember order among blockers (blockedName + id + block order)
     private String blockedName;
@@ -87,7 +87,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         auraPermanents=new MagicPermanentSet();
         blockingCreatures=new MagicPermanentList();
         exiledCards = new MagicCardList();
-        cachedActivations = new TreeSet<MagicPermanentActivation>();
+        cachedActivations = new TreeSet<MagicActivation<MagicPermanent>>();
     }
 
     private MagicPermanent(final MagicCopyMap copyMap, final MagicPermanent sourcePermanent) {
@@ -122,7 +122,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         cachedColorFlags     = sourcePermanent.cachedColorFlags;
         cachedAbilityFlags   = sourcePermanent.cachedAbilityFlags;
         cachedPowerToughness = sourcePermanent.cachedPowerToughness;
-        cachedActivations    = new TreeSet<MagicPermanentActivation>(sourcePermanent.cachedActivations);
+        cachedActivations    = new TreeSet<MagicActivation<MagicPermanent>>(sourcePermanent.cachedActivations);
     }
 
     @Override
@@ -208,21 +208,18 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     @Override
     public Collection<MagicSourceActivation<? extends MagicSource>> getSourceActivations() {
         Set<MagicSourceActivation<? extends MagicSource>> sorted = new TreeSet<MagicSourceActivation<? extends MagicSource>>();
-        for (final MagicActivation<MagicPermanent> act : cardDefinition.getActivations()) {
-            sorted.add(MagicSourceActivation.create(this, act));
-        }
         for (final MagicActivation<MagicPermanent> act : cachedActivations) {
             sorted.add(MagicSourceActivation.create(this, act));
         }
         return sorted;
     }
 
-    public void addActivation(final MagicPermanentActivation act) {
+    public void addActivation(final MagicActivation<MagicPermanent> act) {
         cachedActivations.add(act);
     }
     
     public Collection<MagicActivation<MagicPermanent>> getActivations() {
-        return cardDefinition.getActivations();
+        return cachedActivations;
     }
 
     public Collection<MagicManaActivation> getManaActivations() {
@@ -354,6 +351,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
                 cachedAbilityFlags = cardDefinition.genAbilityFlags();
                 cachedPowerToughness = cardDefinition.genPowerToughness();
                 cachedActivations.clear();
+                cachedActivations.addAll(cardDefinition.getActivations());
                 break;
             case CDASubtype:
                 cardDefinition.applyCDASubType(getGame(), getController(), cachedSubTypeFlags);
