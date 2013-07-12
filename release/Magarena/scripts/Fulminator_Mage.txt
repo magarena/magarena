@@ -1,0 +1,11 @@
+name=Fulminator Mage
+url=http://magiccards.info/shm/en/188.html
+image=http://magiccards.info/scans/en/shm/188.jpg
+value=3.708
+rarity=R
+type=Creature
+subtype=Elemental,Shaman
+cost={1}{B/R}{B/R}
+pt=2/2
+timing=main
+requires_groovy_code
