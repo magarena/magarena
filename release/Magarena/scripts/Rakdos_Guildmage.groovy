@@ -52,7 +52,7 @@
             game.doAction(new MagicPlayCardAction(
                 card,
                 player,
-                [MagicPlayMod.REMOVE_AT_END_OF_TURN]
+                [MagicPlayMod.EXILE_AT_END_OF_TURN]
             ));
         }
     }

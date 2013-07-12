@@ -47,17 +47,17 @@ public class MagicPlayCardAction extends MagicPutIntoPlayAction {
                 case PERSIST:
                     permanent.changeCounters(MagicCounterType.MinusOne,1);
                     break;
-                case REMOVE_AT_END_OF_TURN:
-                    permanent.setState(MagicPermanentState.RemoveAtEndOfTurn);
+                case EXILE_AT_END_OF_COMBAT:
+                    permanent.setState(MagicPermanentState.ExileAtEndOfCombat);
                     break;
-                case REMOVE_AT_END_OF_YOUR_TURN:
-                    permanent.setState(MagicPermanentState.RemoveAtEndOfYourTurn);
+                case EXILE_AT_END_OF_TURN:
+                    permanent.setState(MagicPermanentState.ExileAtEndOfTurn);
+                    break;
+                case EXILE_AT_END_OF_YOUR_TURN:
+                    permanent.setState(MagicPermanentState.ExileAtEndOfYourTurn);
                     break;
                 case SACRIFICE_AT_END_OF_TURN:
                     permanent.setState(MagicPermanentState.SacrificeAtEndOfTurn);
-                    break;
-                case EXILE_AT_END_OF_COMBAT:
-                    permanent.setState(MagicPermanentState.ExileAtEndOfCombat);
                     break;
                 case ATTACKING:
                     permanent.setState(MagicPermanentState.Attacking);

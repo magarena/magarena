@@ -1029,11 +1029,11 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
 
     public boolean endOfTurn(final MagicGame game) {
-        if (MagicPermanentState.RemoveAtEndOfTurn.hasState(stateFlags)) {
+        if (MagicPermanentState.ExileAtEndOfTurn.hasState(stateFlags)) {
             game.logAppendMessage(getController(),"Exile "+this.getName()+" (end of turn).");
             game.doAction(new MagicRemoveFromPlayAction(this,MagicLocationType.Exile));
             return true;
-        } else if (MagicPermanentState.RemoveAtEndOfYourTurn.hasState(stateFlags) && getController()==game.getTurnPlayer()) {
+        } else if (MagicPermanentState.ExileAtEndOfYourTurn.hasState(stateFlags) && getController()==game.getTurnPlayer()) {
             game.logAppendMessage(getController(),"Exile "+this.getName()+" (end of turn).");
             game.doAction(new MagicRemoveFromPlayAction(this,MagicLocationType.Exile));
             return true;

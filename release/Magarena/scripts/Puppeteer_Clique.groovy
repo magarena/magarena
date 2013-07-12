@@ -19,7 +19,7 @@
                     game.doAction(new MagicReanimateAction(
                         card,
                         event.getPlayer(),
-                        [MagicPlayMod.HASTE, MagicPlayMod.REMOVE_AT_END_OF_YOUR_TURN]
+                        [MagicPlayMod.HASTE, MagicPlayMod.EXILE_AT_END_OF_YOUR_TURN]
                     ));
                 }
             });
