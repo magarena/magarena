@@ -79,10 +79,6 @@ Pyrokinesis	multiple targets
 Angel of Serenity	multiple targets
 Skirsdag High Priest	multiple targets
 Curse of Death's Hold	enchant player
-Mortarpod	gain activated
-Sublime Archangel	gain activated
-Underworld Connections	gain activated
-Spreading Seas	gain activated
 Torpor Orb	don't cause abilities to trigger
 Grafdigger's Cage	can't enter/cast
 Delver of Secrets	transform
@@ -120,12 +116,10 @@ Mana Crypt	mana pool
 Goblin Guide	reveal
 Tolarian Academy	mana pool
 Sidewinder Sliver	gain triggered
-Psionic Gift	gain activated
 Phyrexian Colossus	blocking restriction
 Leyline of Vitality	begin the game with it
 Infernal Kirin	reveal
 Imperiosaur	mana restriction
-Hermetic Study	gain activated
 Gibbering Hyenas	blocking restriction
 Eldrazi Conscription	gain triggered
 Dragonspeaker Shaman	cost modification
@@ -163,14 +157,11 @@ Sleight of Hand	reveal
 Sarpadian Empires, Vol. VII	enters choose color
 Phage the Untouchable	cast from hand
 Muraganda Petroglyphs	no abilities
-Lush Growth	gain activated
 Lightning Serpent	+1/+0 counters
 Grafted Wargear	becomes unattached
 Doubling Season	counters replacement
 Deceiver Exarch	trigger tap or untap
-Splinter Twin	gain activated
 Pestermite	trigger tap or untap
-Blood Moon	gain activated
 Melira, Sylvok Outcast	counters replacement
 Aven Mindcensor	lib search
 Wall of Roots	-0/-1 counter
