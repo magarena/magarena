@@ -1,0 +1,11 @@
+name=Splinter Twin
+url=http://magiccards.info/roe/en/165.html
+image=http://magiccards.info/scans/en/roe/165.jpg
+value=3.867
+rarity=R
+type=Enchantment
+subtype=Aura
+cost={2}{R}{R}
+timing=aura
+enchant=copy,pos creature
+requires_groovy_code
