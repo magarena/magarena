@@ -29,6 +29,7 @@ import magic.model.target.MagicTargetFilter;
 
 import javax.swing.ImageIcon;
 
+import java.util.LinkedList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Set;
@@ -70,6 +71,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     private int cachedColorFlags;
     private Set<MagicAbility> cachedAbilityFlags;
     private MagicPowerToughness cachedPowerToughness;
+    private final Set<MagicPermanentActivation> cachedActivations;
 
     // remember order among blockers (blockedName + id + block order)
     private String blockedName;
@@ -85,6 +87,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         auraPermanents=new MagicPermanentSet();
         blockingCreatures=new MagicPermanentList();
         exiledCards = new MagicCardList();
+        cachedActivations = new TreeSet<MagicPermanentActivation>();
     }
 
     private MagicPermanent(final MagicCopyMap copyMap, final MagicPermanent sourcePermanent) {
@@ -119,6 +122,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         cachedColorFlags     = sourcePermanent.cachedColorFlags;
         cachedAbilityFlags   = sourcePermanent.cachedAbilityFlags;
         cachedPowerToughness = sourcePermanent.cachedPowerToughness;
+        cachedActivations    = new TreeSet<MagicPermanentActivation>(sourcePermanent.cachedActivations);
     }
 
     @Override
@@ -169,6 +173,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             cachedAbilityFlags.hashCode(),
             cachedPowerToughness.power(),
             cachedPowerToughness.toughness(),
+            cachedActivations.hashCode()
         });
         return stateId;
      }
@@ -206,7 +211,14 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         for (final MagicActivation<MagicPermanent> act : cardDefinition.getActivations()) {
             sorted.add(MagicSourceActivation.create(this, act));
         }
+        for (final MagicActivation<MagicPermanent> act : cachedActivations) {
+            sorted.add(MagicSourceActivation.create(this, act));
+        }
         return sorted;
+    }
+
+    public void addActivation(final MagicPermanentActivation act) {
+        cachedActivations.add(act);
     }
     
     public Collection<MagicActivation<MagicPermanent>> getActivations() {
@@ -341,6 +353,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
                 cachedColorFlags = cardDefinition.getColorFlags();
                 cachedAbilityFlags = cardDefinition.genAbilityFlags();
                 cachedPowerToughness = cardDefinition.genPowerToughness();
+                cachedActivations.clear();
                 break;
             case CDASubtype:
                 cardDefinition.applyCDASubType(getGame(), getController(), cachedSubTypeFlags);
