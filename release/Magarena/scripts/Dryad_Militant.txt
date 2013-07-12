@@ -1,0 +1,11 @@
+name=Dryad Militant
+url=http://magiccards.info/rtr/en/214.html
+image=http://magiccards.info/scans/en/rtr/214.jpg
+value=3.708
+rarity=U
+type=Creature
+subtype=Dryad,Soldier
+cost={G/W}
+pt=2/1
+timing=main
+requires_groovy_code
