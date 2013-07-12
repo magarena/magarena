@@ -4,6 +4,7 @@ import magic.data.GeneralConfig;
 import magic.model.action.MagicAction;
 import magic.model.action.MagicActionList;
 import magic.model.action.MagicAddEventAction;
+import magic.model.action.MagicAddFirstEventAction;
 import magic.model.action.MagicExecuteFirstEventAction;
 import magic.model.action.MagicLogMarkerAction;
 import magic.model.action.MagicMarkerAction;
@@ -737,6 +738,10 @@ public class MagicGame {
 
     public void addEvent(final MagicEvent event) {
         doAction(new MagicAddEventAction(event));
+    }
+    
+    public void addFirstEvent(final MagicEvent event) {
+        doAction(new MagicAddFirstEventAction(event));
     }
 
     public void executeNextEvent(final Object[] choiceResults) {

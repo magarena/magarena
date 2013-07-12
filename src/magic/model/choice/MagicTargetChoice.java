@@ -384,8 +384,8 @@ public class MagicTargetChoice extends MagicChoice {
         "target creature card from your graveyard"
     );
     
-    public static final MagicTargetChoice A_CREATURE_CARD_FROM_YOUR_GRAVEYARD=new MagicTargetChoice(
-        MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
+    public static final MagicTargetChoice A_PAYABLE_CREATURE_CARD_FROM_YOUR_GRAVEYARD=new MagicTargetChoice(
+        MagicTargetFilter.PAYABLE_CREATURE_CARD_FROM_GRAVEYARD,
         false,
         MagicTargetHint.None,
         "a creature card from your graveyard"
