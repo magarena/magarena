@@ -14,7 +14,7 @@ def Copy = new MagicPermanentActivation(
             source,
             this,
             "Put a token that's a copy of SN onto the battlefield. "+
-            "That token has haste. Sacrifice it at the beginning of the next end step."
+            "That token has haste. Exile it at the beginning of the next end step."
         );
     }
 
