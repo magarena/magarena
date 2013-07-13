@@ -11,9 +11,6 @@ public enum MagicPermanentState {
     Blocking("blocking","{c}"),
     Blocked("blocked","{b}"),
     Animated("animated","{A}"), // until end of turn
-    SacrificeAtEndOfTurn("sacrifice at end of turn","{S}"),
-    ExileAtEndOfTurn("exile at end of turn","{E}"),
-    ExileAtEndOfYourTurn("exile at end of your turn","{E}"),
     ExileAtEndOfCombat("exile at end of combat",""),
     ExcludeManaSource("exclude as mana source",""),
     ExcludeFromCombat("exclude from combat",""),
@@ -31,9 +28,6 @@ public enum MagicPermanentState {
         Tapped.getMask()|
         Summoned.getMask()|
         DoesNotUntapDuringNext.getMask()|
-        SacrificeAtEndOfTurn.getMask()|
-        ExileAtEndOfTurn.getMask()|
-        ExileAtEndOfYourTurn.getMask()|
         ReturnToOwnerAtEndOfTurn.getMask()|
         ExcludeManaSource.getMask()|
         ExcludeFromCombat.getMask()|

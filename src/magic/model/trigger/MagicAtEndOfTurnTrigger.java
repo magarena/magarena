@@ -51,4 +51,38 @@ public abstract class MagicAtEndOfTurnTrigger extends MagicTrigger<MagicPlayer> 
             game.doAction(new MagicSacrificeAction(event.getPermanent()));
         }
     };
+    
+    public static final MagicAtEndOfTurnTrigger ExileAtEnd = new MagicAtEndOfTurnTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eotPlayer) {
+            return new MagicEvent(
+                permanent,
+                this,
+                "Exile SN."
+            );
+        }
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            game.doAction(new MagicRemoveFromPlayAction(event.getPermanent(), MagicLocationType.Exile));;
+        }
+    };
+    
+    public static final MagicAtEndOfTurnTrigger ExileAtYourEnd(final MagicPlayer your) {
+        return new MagicAtEndOfTurnTrigger() {
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eotPlayer) {
+                return your.getId() == eotPlayer.getId() ?
+                    new MagicEvent(
+                        permanent,
+                        this,
+                        "Exile SN."
+                    ):
+                    MagicEvent.NONE;
+            }
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                game.doAction(new MagicRemoveFromPlayAction(event.getPermanent(), MagicLocationType.Exile));;
+            }
+        };
+    }
 }

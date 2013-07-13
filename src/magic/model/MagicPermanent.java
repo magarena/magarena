@@ -1040,19 +1040,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
 
     public boolean endOfTurn(final MagicGame game) {
-        if (MagicPermanentState.ExileAtEndOfTurn.hasState(stateFlags)) {
-            game.logAppendMessage(getController(),"Exile "+this.getName()+" (end of turn).");
-            game.doAction(new MagicRemoveFromPlayAction(this,MagicLocationType.Exile));
-            return true;
-        } else if (MagicPermanentState.ExileAtEndOfYourTurn.hasState(stateFlags) && getController()==game.getTurnPlayer()) {
-            game.logAppendMessage(getController(),"Exile "+this.getName()+" (end of turn).");
-            game.doAction(new MagicRemoveFromPlayAction(this,MagicLocationType.Exile));
-            return true;
-        } else if (MagicPermanentState.SacrificeAtEndOfTurn.hasState(stateFlags)) {
-            game.logAppendMessage(getController(),"Sacrifice "+this.getName()+" (end of turn).");
-            game.doAction(new MagicSacrificeAction(this));
-            return true;
-        } else if (MagicPermanentState.ReturnToOwnerAtEndOfTurn.hasState(stateFlags)) {
+        if (MagicPermanentState.ReturnToOwnerAtEndOfTurn.hasState(stateFlags)) {
             game.logAppendMessage(getController(),"Return "+this.getName()+" to its owner (end of turn).");
             game.doAction(MagicChangeStateAction.Clear(this,MagicPermanentState.ReturnToOwnerAtEndOfTurn));
             game.doAction(new MagicGainControlAction(getOwner(),this));
