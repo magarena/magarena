@@ -10,7 +10,6 @@ public enum MagicPermanentState {
     Attacking("attacking","{c}"),
     Blocking("blocking","{c}"),
     Blocked("blocked","{b}"),
-    Animated("animated","{A}"), // until end of turn
     ExileAtEndOfCombat("exile at end of combat",""),
     ExcludeManaSource("exclude as mana source",""),
     ExcludeFromCombat("exclude from combat",""),
