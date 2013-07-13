@@ -258,8 +258,8 @@ decks/mtgtop8_%.dec:
 	wget "http://www.mtgtop8.com/export_files/deck$*.mwDeck" -O $@
 
 ref/rules.txt:
-	curl `wget http://www.wizards.com/magic/rules -O - | grep txt | cut -d'"' -f4` | iconv -f utf-16 -t ascii | fmt -s > $@
-	flip -u $@
+	curl `wget http://www.wizards.com/magic/rules -O - | grep txt | cut -d'"' -f4` | fmt -s > $@
+	flip -bu $@
 
 resources/magic/data/icons/missing_card.png:
 	convert -background gray -bordercolor black -border 5x5 -size 302x435 \
