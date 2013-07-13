@@ -8,35 +8,39 @@ import java.util.Collection;
 import java.util.EnumMap;
 import java.util.Iterator;
 import java.util.Map;
-import java.util.SortedSet;
-import java.util.TreeSet;
+import java.util.PriorityQueue;
 
 public class MagicPermanentTriggerMap {
 
-    private final Map<MagicTriggerType,SortedSet<MagicPermanentTrigger>> effects =
-        new EnumMap<MagicTriggerType,SortedSet<MagicPermanentTrigger>>(MagicTriggerType.class);
+    private final Map<MagicTriggerType,PriorityQueue<MagicPermanentTrigger>> effects =
+        new EnumMap<MagicTriggerType,PriorityQueue<MagicPermanentTrigger>>(MagicTriggerType.class);
 
-    public MagicPermanentTriggerMap() {
+    // initializer block
+    {
         for (final MagicTriggerType type : MagicTriggerType.values()) {
-            effects.put(type, new TreeSet<MagicPermanentTrigger>());
+            effects.put(type, new PriorityQueue<MagicPermanentTrigger>());
         }
-        // add Soulbond trigger here
-        add(new MagicPermanentTrigger(0,MagicPermanent.NONE,MagicWhenOtherComesIntoPlayTrigger.Soulbond));
     }
 
-    public MagicPermanentTriggerMap(final MagicCopyMap copyMap, final MagicPermanentTriggerMap sourceMap) {
-        for (final MagicTriggerType type : MagicTriggerType.values()) {
-            effects.put(type, new TreeSet<MagicPermanentTrigger>());
+    public MagicPermanentTriggerMap() {}
+    
+    public MagicPermanentTriggerMap(final MagicPermanentTriggerMap other) {
+        for (final Map.Entry<MagicTriggerType, PriorityQueue<MagicPermanentTrigger>> type : other.effects.entrySet()) {
+            for (final MagicPermanentTrigger mptrigger : type.getValue()) {
+                add(mptrigger);
+            }
         }
+    }
 
-        for (final Map.Entry<MagicTriggerType, SortedSet<MagicPermanentTrigger>> type : sourceMap.effects.entrySet()) {
+    public MagicPermanentTriggerMap(final MagicCopyMap copyMap, final MagicPermanentTriggerMap other) {
+        for (final Map.Entry<MagicTriggerType, PriorityQueue<MagicPermanentTrigger>> type : other.effects.entrySet()) {
             for (final MagicPermanentTrigger mptrigger : type.getValue()) {
                 add(new MagicPermanentTrigger(copyMap, mptrigger));
             }
         }
     }
 
-    public SortedSet<MagicPermanentTrigger> get(final MagicTriggerType type) {
+    public Collection<MagicPermanentTrigger> get(final MagicTriggerType type) {
         return effects.get(type);
     }
 
@@ -46,7 +50,7 @@ public class MagicPermanentTriggerMap {
 
     public Collection<MagicPermanentTrigger> remove(final MagicPermanent permanent) {
         final Collection<MagicPermanentTrigger> removedTriggers = new ArrayList<MagicPermanentTrigger>();
-        for (final Map.Entry<MagicTriggerType, SortedSet<MagicPermanentTrigger>> type : effects.entrySet()) {
+        for (final Map.Entry<MagicTriggerType, PriorityQueue<MagicPermanentTrigger>> type : effects.entrySet()) {
             final Collection<MagicPermanentTrigger> triggers = type.getValue();
             for (final Iterator<MagicPermanentTrigger> iterator = triggers.iterator();iterator.hasNext();) {
                 final MagicPermanentTrigger permanentTrigger = iterator.next();
@@ -61,7 +65,7 @@ public class MagicPermanentTriggerMap {
 
     public MagicPermanentTrigger remove(final MagicPermanent permanent, final MagicTrigger<?> trigger) {
         final Collection<MagicPermanentTrigger> removedTriggers = new ArrayList<MagicPermanentTrigger>();
-        for (final Map.Entry<MagicTriggerType, SortedSet<MagicPermanentTrigger>> type : effects.entrySet()) {
+        for (final Map.Entry<MagicTriggerType, PriorityQueue<MagicPermanentTrigger>> type : effects.entrySet()) {
             final Collection<MagicPermanentTrigger> triggers = type.getValue();
             for (final Iterator<MagicPermanentTrigger> iterator = triggers.iterator();iterator.hasNext();) {
                 final MagicPermanentTrigger permanentTrigger = iterator.next();
@@ -86,7 +90,7 @@ public class MagicPermanentTriggerMap {
         }
         final long[] keys = new long[size];
         int idx = 0;
-        for (final Map.Entry<MagicTriggerType, SortedSet<MagicPermanentTrigger>> type : effects.entrySet()) {
+        for (final Map.Entry<MagicTriggerType, PriorityQueue<MagicPermanentTrigger>> type : effects.entrySet()) {
             for (final MagicPermanentTrigger mptrigger : type.getValue()) {
                 keys[idx] = mptrigger.getPermanent().getStateId(); idx++;
                 keys[idx] = mptrigger.getTrigger().hashCode(); idx++;

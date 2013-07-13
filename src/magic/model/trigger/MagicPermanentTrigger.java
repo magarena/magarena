@@ -9,16 +9,14 @@ public class MagicPermanentTrigger implements Comparable<MagicPermanentTrigger> 
     private final MagicPermanent permanent;
     private final MagicTrigger<?> trigger;
 
-    public MagicPermanentTrigger(final long id,final MagicPermanent permanent,final MagicTrigger<?> trigger) {
-        this.id=id;
-        this.permanent=permanent;
-        this.trigger=trigger;
+    public MagicPermanentTrigger(final long aId,final MagicPermanent aPermanent,final MagicTrigger<?> aTrigger) {
+        id = aId;
+        permanent = aPermanent;
+        trigger = aTrigger;
     }
 
     public MagicPermanentTrigger(final MagicCopyMap copyMap,final MagicPermanentTrigger source) {
-        id=source.id;
-        permanent=copyMap.copy(source.permanent);
-        trigger=source.trigger;
+        this(source.id, copyMap.copy(source.permanent), source.trigger);
     }
 
     public long getId() {

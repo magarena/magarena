@@ -41,6 +41,7 @@ import magic.model.trigger.MagicPermanentTriggerList;
 import magic.model.trigger.MagicPermanentTriggerMap;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -59,7 +60,8 @@ public class MagicGame {
 
     private final MagicDuel duel;
     private final MagicPlayer[] players;
-    private final MagicPermanentTriggerMap triggers;
+    private MagicPermanentTriggerMap triggers;
+    private final MagicPermanentTriggerMap additionalTriggers;
     private final MagicPermanentTriggerList turnTriggers;
     private final MagicPermanentStaticMap statics;
     private final MagicCardList exiledUntilEndOfTurn;
@@ -137,6 +139,7 @@ public class MagicGame {
         sound = aSound;
 
         triggers=new MagicPermanentTriggerMap();
+        additionalTriggers=new MagicPermanentTriggerMap();
         turnTriggers=new MagicPermanentTriggerList();
         statics = new MagicPermanentStaticMap();
         exiledUntilEndOfTurn=new MagicCardList();
@@ -194,6 +197,7 @@ public class MagicGame {
         events=new MagicEventQueue(copyMap, game.events);
         stack=new MagicStack(copyMap, game.stack);
         triggers=new MagicPermanentTriggerMap(copyMap, game.triggers);
+        additionalTriggers=new MagicPermanentTriggerMap(copyMap, game.additionalTriggers);
         statics=new MagicPermanentStaticMap(copyMap, game.statics);
         exiledUntilEndOfTurn=new MagicCardList(copyMap, game.exiledUntilEndOfTurn);
 
@@ -535,6 +539,17 @@ public class MagicGame {
     public void update() {
         doDelayedActions();
         MagicPermanent.update(this);
+       
+        // add Soulbond trigger here
+        triggers = new MagicPermanentTriggerMap(additionalTriggers);
+        triggers.add(new MagicPermanentTrigger(0,MagicPermanent.NONE,MagicWhenOtherComesIntoPlayTrigger.Soulbond));
+
+        for (final MagicPlayer player : players) {
+        for (final MagicPermanent perm : player.getPermanents()) {
+        for (final MagicTrigger<?> trigger : perm.getTriggers()) {
+            triggers.add(new MagicPermanentTrigger(perm.getId(), perm, trigger));
+        }}}
+
         MagicPlayer.update(this);
         MagicGame.update(this);
         doDelayedActions();
@@ -1124,18 +1139,13 @@ public class MagicGame {
         immediate = aImmediate;
     }
 
-    public void addTriggers(final MagicPermanent permanent) {
-        for (final MagicTrigger<?> trigger : permanent.getTriggers()) {
-            addTrigger(permanent, trigger);
-        }
-    }
-
     public MagicPermanentTrigger addTrigger(final MagicPermanent permanent, final MagicTrigger<?> trigger) {
         return addTrigger(new MagicPermanentTrigger(getUniqueId(),permanent,trigger));
     }
 
     public MagicPermanentTrigger addTrigger(final MagicPermanentTrigger permanentTrigger) {
-        triggers.add(permanentTrigger);
+        System.out.println("add to additionalTriggers");
+        additionalTriggers.add(permanentTrigger);
         return permanentTrigger;
     }
 
@@ -1153,16 +1163,16 @@ public class MagicGame {
     }
 
     public void removeTurnTrigger(final MagicPermanentTrigger permanentTrigger) {
-        triggers.remove(permanentTrigger);
+        additionalTriggers.remove(permanentTrigger);
         turnTriggers.remove(permanentTrigger);
     }
 
     public void removeTrigger(final MagicPermanentTrigger permanentTrigger) {
-        triggers.remove(permanentTrigger);
+        additionalTriggers.remove(permanentTrigger);
     }
 
     public MagicPermanentTrigger removeTrigger(final MagicPermanent permanent, MagicTrigger<?> trigger) {
-        return triggers.remove(permanent, trigger);
+        return additionalTriggers.remove(permanent, trigger);
     }
 
     public List<MagicPermanentTrigger> removeTurnTriggers() {
@@ -1177,7 +1187,7 @@ public class MagicGame {
     }
 
     public Collection<MagicPermanentTrigger> removeTriggers(final MagicPermanent permanent) {
-        return triggers.remove(permanent);
+        return additionalTriggers.remove(permanent);
     }
 
     public <T> void executeTrigger(
@@ -1212,7 +1222,7 @@ public class MagicGame {
     }
 
     public <T> void executeTrigger(final MagicTriggerType type,final T data) {
-        final SortedSet<MagicPermanentTrigger> typeTriggers=triggers.get(type);
+        final Collection<MagicPermanentTrigger> typeTriggers=triggers.get(type);
         if (typeTriggers.isEmpty()) {
             return;
         }

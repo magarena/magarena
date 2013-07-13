@@ -29,6 +29,7 @@ import magic.model.target.MagicTargetFilter;
 
 import javax.swing.ImageIcon;
 
+import java.util.List;
 import java.util.LinkedList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -72,6 +73,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     private Set<MagicAbility> cachedAbilityFlags;
     private MagicPowerToughness cachedPowerToughness;
     private final Set<MagicActivation<MagicPermanent>> cachedActivations;
+    private final List<MagicTrigger<?>> cachedTriggers;
 
     // remember order among blockers (blockedName + id + block order)
     private String blockedName;
@@ -88,6 +90,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         blockingCreatures=new MagicPermanentList();
         exiledCards = new MagicCardList();
         cachedActivations = new TreeSet<MagicActivation<MagicPermanent>>();
+        cachedTriggers    = new LinkedList<MagicTrigger<?>>();
     }
 
     private MagicPermanent(final MagicCopyMap copyMap, final MagicPermanent sourcePermanent) {
@@ -123,6 +126,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         cachedAbilityFlags   = sourcePermanent.cachedAbilityFlags;
         cachedPowerToughness = sourcePermanent.cachedPowerToughness;
         cachedActivations    = new TreeSet<MagicActivation<MagicPermanent>>(sourcePermanent.cachedActivations);
+        cachedTriggers       = new LinkedList<MagicTrigger<?>>(sourcePermanent.cachedTriggers);
     }
 
     @Override
@@ -173,7 +177,8 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             cachedAbilityFlags.hashCode(),
             cachedPowerToughness.power(),
             cachedPowerToughness.toughness(),
-            cachedActivations.hashCode()
+            cachedActivations.hashCode(),
+            cachedTriggers.hashCode()
         });
         return stateId;
      }
@@ -218,6 +223,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         cachedActivations.add(act);
     }
     
+    public void addTrigger(final MagicTrigger<?> trig) {
+        cachedTriggers.add(trig);
+    }
+    
     public Collection<MagicActivation<MagicPermanent>> getActivations() {
         return cachedActivations;
     }
@@ -231,7 +240,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
 
     public Collection<MagicTrigger<?>> getTriggers() {
-        return cardDefinition.getTriggers();
+        return cachedTriggers;
     }
 
     public Collection<MagicWhenComesIntoPlayTrigger> getComeIntoPlayTriggers() {
@@ -309,8 +318,8 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         MagicPermanent.updateProperties(game);
         MagicPermanent.updateScoreFixController(game);
     }
-
-    public static void updateScoreFixController(final MagicGame game) {
+    
+    private static void updateScoreFixController(final MagicGame game) {
         for (final MagicPlayer player : game.getPlayers()) {
         for (final MagicPermanent perm : player.getPermanents()) {
             final MagicPlayer curr = perm.getController();
@@ -321,7 +330,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         }}
     }
 
-    public static void updateProperties(final MagicGame game) {
+    private static void updateProperties(final MagicGame game) {
         for (final MagicLayer layer : MagicLayer.PermanentLayers) {
             for (final MagicPlayer player : game.getPlayers()) {
                 for (final MagicPermanent perm : player.getPermanents()) {
@@ -352,6 +361,8 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
                 cachedPowerToughness = cardDefinition.genPowerToughness();
                 cachedActivations.clear();
                 cachedActivations.addAll(cardDefinition.getActivations());
+                cachedTriggers.clear();
+                cachedTriggers.addAll(cardDefinition.getTriggers());
                 break;
             case CDASubtype:
                 cardDefinition.applyCDASubType(getGame(), getController(), cachedSubTypeFlags);

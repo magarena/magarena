@@ -29,7 +29,7 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
             permanent.setEnchantedCreature(enchantedPermanent);
         }
 
-        game.addTriggers(permanent);
+        //game.addTriggers(permanent);
         game.addStatics(permanent);
 
         final MagicPlayer controller = permanent.getController();
