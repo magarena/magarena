@@ -7,6 +7,7 @@ type=Tribal,Enchantment
 subtype=Eldrazi,Aura
 cost={8}
 given_pt=10/10
-given_ability=trample,annihilator 2
+given_ability=trample
 timing=aura
 enchant=pump,pos creature
+requires_groovy_code
