@@ -11,6 +11,7 @@ import magic.model.MagicSubType;
 import magic.model.MagicAbility;
 import magic.model.MagicCounterType;
 import magic.model.target.MagicTargetFilter;
+import magic.model.action.MagicRemoveStaticAction;
 
 import java.util.Set;
 
@@ -187,6 +188,32 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             return source.getEnchantedCreature() == target;
         }
     };
+
+    public static MagicStatic ControlAsLongAsYouControlSource(final MagicPlayer you, final MagicPermanent target) {
+        final MagicTargetFilter<MagicPermanent> filter = new MagicTargetFilter.MagicPermanentTargetFilter(target);
+        return new MagicStatic(MagicLayer.Control,filter) {
+            @Override
+            public MagicPlayer getController(
+                final MagicPermanent source,
+                final MagicPermanent permanent,
+                final MagicPlayer player) {
+                return source.getController();
+            }
+            @Override
+            public boolean condition(
+                final MagicGame game,
+                final MagicPermanent source,
+                final MagicPermanent target) {
+                if (you.getIndex() != source.getController().getIndex()) {
+                    //remove this static after the update
+                    game.addDelayedAction(new MagicRemoveStaticAction(source, this));
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+        };
+    }
 
     public static MagicStatic Unleash = new MagicStatic(MagicLayer.Ability) {
         @Override

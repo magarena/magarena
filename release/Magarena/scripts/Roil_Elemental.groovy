@@ -1,29 +1,3 @@
-def control = {
-    final int you, final MagicTargetFilter<MagicPermanent> filter ->
-    return new MagicStatic(MagicLayer.Control,filter) {
-        @Override
-        public MagicPlayer getController(
-            final MagicPermanent source,
-            final MagicPermanent permanent,
-            final MagicPlayer player) {
-            return source.getController();
-        }
-        @Override
-        public boolean condition(
-            final MagicGame game,
-            final MagicPermanent source,
-            final MagicPermanent target) {
-            if (you != source.getController().getIndex()) {
-                //remove this static after the update
-                game.addDelayedAction(new MagicRemoveStaticAction(source, this));
-                return false;
-            } else {
-                return true;
-            }
-        }
-    }
-}
-
 [
     new MagicLandfallTrigger() {
         @Override
@@ -43,9 +17,13 @@ def control = {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
                     final MagicPermanent perm ->
-                    final MagicPermanent source = event.getPermanent();
-                    final MagicTargetFilter<MagicPermanent> filter = new MagicTargetFilter.MagicPermanentTargetFilter(perm);
-                    game.doAction(new MagicAddStaticAction(source, control(source.getController().getIndex(), filter)));
+                    game.doAction(new MagicAddStaticAction(
+                        event.getPermanent(),
+                        MagicStatic.ControlAsLongAsYouControlSource(
+                            event.getPlayer(),  
+                            perm
+                        )
+                    ));
                 } as MagicPermanentAction);
             }
         }
