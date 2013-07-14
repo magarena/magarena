@@ -5,5 +5,5 @@ value=3.591
 rarity=C
 type=Artifact
 cost={3}
-ability=tap add mana {1} gain life 1
 timing=artifact
+requires_groovy_code
