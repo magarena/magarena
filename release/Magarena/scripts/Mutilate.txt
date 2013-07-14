@@ -1,0 +1,10 @@
+name=Mutilate
+url=http://magiccards.info/m13/en/102.html
+image=http://magiccards.info/scans/en/m13/102.jpg
+value=4.632
+removal=3
+rarity=R
+type=Sorcery
+cost={2}{B}{B}
+timing=removal
+requires_groovy_code
