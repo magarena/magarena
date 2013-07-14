@@ -1138,6 +1138,10 @@ public class MagicGame {
     public void setImmediate(final boolean aImmediate) {
         immediate = aImmediate;
     }
+    
+    public boolean getImmediate() {
+        return immediate;
+    }
 
     public MagicPermanentTrigger addTrigger(final MagicPermanent permanent, final MagicTrigger<?> trigger) {
         return addTrigger(new MagicPermanentTrigger(getUniqueId(),permanent,trigger));
