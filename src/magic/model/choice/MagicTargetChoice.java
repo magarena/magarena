@@ -92,6 +92,9 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice TARGET_PERMANENT=
         new MagicTargetChoice(MagicTargetFilter.TARGET_PERMANENT,true,MagicTargetHint.None,
                 "target permanent");
+    public static final MagicTargetChoice PERMANENT_YOU_CONTROL=
+            new MagicTargetChoice(MagicTargetFilter.TARGET_PERMANENT_YOU_CONTROL,false,MagicTargetHint.None,
+                    "a permanent you control");
     public static final MagicTargetChoice TARGET_PERMANENT_YOU_CONTROL=
         new MagicTargetChoice(MagicTargetFilter.TARGET_PERMANENT_YOU_CONTROL,true,MagicTargetHint.None,
                 "target permanent you control");

@@ -7,7 +7,7 @@
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
-                MagicTargetChoice.TARGET_PERMANENT_YOU_CONTROL,
+                MagicTargetChoice.PERMANENT_YOU_CONTROL,
                 MagicBounceTargetPicker.create(),
                 this,
                 "Return a permanent\$ you control to its owner's hand."

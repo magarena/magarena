@@ -12,7 +12,7 @@
                 );
                 final MagicTargetChoice targetChoice = new MagicTargetChoice(
                     targetFilter,
-                    true,
+                    false,
                     MagicTargetHint.None,"another creature to return"
                 );
                 return new MagicEvent(

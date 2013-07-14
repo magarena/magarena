@@ -8,7 +8,7 @@
             return permanent.isController(upkeepPlayer) ?
                 new MagicEvent(
                     permanent,
-                    MagicTargetChoice.TARGET_ARTIFACT_YOU_CONTROL,
+                    MagicTargetChoice.ARTIFACT_YOU_CONTROL,
                     MagicBounceTargetPicker.create(),
                     this,
                     "Return an artifact you control to its owner's hand."
