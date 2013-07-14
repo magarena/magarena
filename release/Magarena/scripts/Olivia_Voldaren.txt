@@ -1,0 +1,12 @@
+name=Olivia Voldaren
+url=http://magiccards.info/isd/en/215.html
+image=http://magiccards.info/scans/en/isd/215.jpg
+value=3.708
+rarity=M
+type=Legendary,Creature
+subtype=Vampire
+cost={2}{B}{R}
+pt=3/3
+ability=flying
+timing=main
+requires_groovy_code

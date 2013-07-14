@@ -698,6 +698,8 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     };
 
     MagicPermanentFilterImpl TARGET_VAMPIRE_YOU_CONTROL = Factory.creature(MagicSubType.Vampire, Control.You);
+    
+    MagicPermanentFilterImpl TARGET_VAMPIRE = Factory.creature(MagicSubType.Vampire, Control.Any);
 
     MagicPermanentFilterImpl TARGET_VAMPIRE_WEREWOLF_OR_ZOMBIE = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {

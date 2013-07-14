@@ -218,6 +218,13 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
              flags.add(MagicSubType.Zombie);
          }
     };
+    
+    public static MagicStatic Vampire = new MagicStatic(MagicLayer.Type) {
+         @Override
+         public void modSubTypeFlags(final MagicPermanent permanent,final Set<MagicSubType> flags) {
+             flags.add(MagicSubType.Vampire);
+         }
+    };
 
     public static MagicStatic Black = new MagicStatic(MagicLayer.Color) {
          @Override

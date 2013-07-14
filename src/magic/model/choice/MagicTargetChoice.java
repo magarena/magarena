@@ -296,9 +296,21 @@ public class MagicTargetChoice extends MagicChoice {
         new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_OR_PLAYER,true,MagicTargetHint.Positive,"target creature or player");
     public static final MagicTargetChoice POS_TARGET_MERFOLK_CREATURE =
             new MagicTargetChoice(MagicTargetFilter.TARGET_MERFOLK_CREATURE,true,MagicTargetHint.Positive,"target Merfolk creature");
-    public static final MagicTargetChoice NEG_TARGET_VAMPIRE_WEREWOLF_OR_ZOMBIE =
-            new MagicTargetChoice(MagicTargetFilter.TARGET_VAMPIRE_WEREWOLF_OR_ZOMBIE,true,MagicTargetHint.Negative,
-                    "target Vampire, Werewolf, or Zombie");
+    
+    public static final MagicTargetChoice NEG_TARGET_VAMPIRE_WEREWOLF_OR_ZOMBIE = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_VAMPIRE_WEREWOLF_OR_ZOMBIE,
+        true,
+        MagicTargetHint.Negative,
+        "target Vampire, Werewolf, or Zombie"
+    );
+
+    public static final MagicTargetChoice NEG_TARGET_VAMPIRE = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_VAMPIRE,
+        true,
+        MagicTargetHint.Negative,
+        "target Vampire"
+    );
+
     public static final MagicTargetChoice NEG_TARGET_NONVAMPIRE_NONWEREWOLF_NONZOMBIE =
             new MagicTargetChoice(MagicTargetFilter.TARGET_NONVAMPIRE_NONWEREWOLF_NONZOMBIE,true,MagicTargetHint.Negative,
                     "target non-Vampire, non-Werewolf, non-Zombie creature");
