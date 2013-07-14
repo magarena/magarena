@@ -1,0 +1,10 @@
+name=Renounce the Guilds
+url=http://magiccards.info/dgm/en/5.html
+image=http://magiccards.info/scans/en/dgm/5.jpg
+value=4.632
+removal=3
+rarity=R
+type=Instant
+cost={1}{W}
+timing=removal
+requires_groovy_code
