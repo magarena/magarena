@@ -51,7 +51,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int amt = event.getPlayer().getNrOfPermanentsWithType(MagicType.Land);
+            final int amt = event.getPlayer().getNrOfPermanents(MagicType.Land);
             game.doAction(new MagicPlayTokensAction(
                 event.getPlayer(),
                 TokenCardDefinitions.get("Wurm6G"),

@@ -45,7 +45,7 @@ def PreventAllDamage = new MagicIfDamageWouldBeDealtTrigger(1) {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int amt = event.getPlayer().getOpponent().getNrOfPermanentsWithType(MagicType.Creature);
+            final int amt = event.getPlayer().getOpponent().getNrOfPermanents(MagicType.Creature);
             game.doAction(new MagicChangeCountersAction(
                 event.getPermanent(),
                 MagicCounterType.Charge,

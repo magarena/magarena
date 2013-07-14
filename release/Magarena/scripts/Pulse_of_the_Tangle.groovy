@@ -13,8 +13,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player=event.getPlayer();
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Beast3")));
-            final boolean more = player.getOpponent().getNrOfPermanentsWithType(MagicType.Creature) >
-                                 player.getNrOfPermanentsWithType(MagicType.Creature);
+            final boolean more = player.getOpponent().getNrOfPermanents(MagicType.Creature) >
+                                 player.getNrOfPermanents(MagicType.Creature);
             if (more) {
                 game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
             }

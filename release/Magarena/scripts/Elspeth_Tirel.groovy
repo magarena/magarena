@@ -13,7 +13,7 @@
             final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicChangeLifeAction(
                 player,
-                player.getNrOfPermanentsWithType(MagicType.Creature)
+                player.getNrOfPermanents(MagicType.Creature)
             ));
         }
     },

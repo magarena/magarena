@@ -5,7 +5,7 @@
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPayedCost payedCost) {
-            final int amount = permanent.getOpponent().getNrOfPermanentsWithType(MagicType.Creature);
+            final int amount = permanent.getOpponent().getNrOfPermanents(MagicType.Creature);
             game.doAction(new MagicChangeCountersAction(
                 permanent,
                 MagicCounterType.MinusOne,

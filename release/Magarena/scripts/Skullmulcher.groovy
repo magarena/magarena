@@ -16,7 +16,7 @@ def drawCards = {
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,permanent);
             final MagicTargetChoice targetChoice=new MagicTargetChoice(
                     targetFilter,false,MagicTargetHint.None,"a creature other than "+permanent+" to sacrifice");
-            if (permanent.getController().getNrOfPermanentsWithType(MagicType.Creature)>1) {
+            if (permanent.getController().getNrOfPermanents(MagicType.Creature)>1) {
                 return new MagicEvent(
                     permanent,
                     new MagicMayChoice(targetChoice),

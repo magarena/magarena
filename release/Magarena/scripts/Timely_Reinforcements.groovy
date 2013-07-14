@@ -16,8 +16,8 @@
             if (player.getLife() < player.getOpponent().getLife()) {
                 game.doAction(new MagicChangeLifeAction(player,6));
             }
-            if (player.getNrOfPermanentsWithType(MagicType.Creature) <
-                player.getOpponent().getNrOfPermanentsWithType(MagicType.Creature)) {
+            if (player.getNrOfPermanents(MagicType.Creature) <
+                player.getOpponent().getNrOfPermanents(MagicType.Creature)) {
                 game.doAction(new MagicPlayTokensAction(player,TokenCardDefinitions.get("Soldier"),3));
             }
         }

@@ -2,7 +2,7 @@
     new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent other) {
-            final int numAllies = permanent.getController().getNrOfPermanentsWithSubType(MagicSubType.Ally);
+            final int numAllies = permanent.getController().getNrOfPermanents(MagicSubType.Ally);
             return (other.isFriend(permanent) &&
                     other.hasSubType(MagicSubType.Ally)) ?
                 new MagicEvent(
@@ -27,7 +27,7 @@
                     public void doAction(final MagicPermanent creature) {
                         final MagicPlayer player = event.getPlayer();
                         final int amount =
-                                player.getNrOfPermanentsWithSubType(MagicSubType.Ally);
+                                player.getNrOfPermanents(MagicSubType.Ally);
                         if (amount > 0) {
                             final MagicDamage damage = new MagicDamage(
                                 event.getPermanent(),

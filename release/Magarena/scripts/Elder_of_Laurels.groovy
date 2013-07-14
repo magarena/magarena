@@ -22,7 +22,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    final int amount = event.getPlayer().getNrOfPermanentsWithType(MagicType.Creature);
+                    final int amount = event.getPlayer().getNrOfPermanents(MagicType.Creature);
                     game.doAction(new MagicChangeTurnPTAction(creature,amount,amount));
                 }
             });

@@ -418,7 +418,7 @@ public class MagicPlayer implements MagicTarget, MagicMappable<MagicPlayer> {
         return count;
     }
 
-    public int getNrOfPermanentsWithType(final MagicType type) {
+    public int getNrOfPermanents(final MagicType type) {
         int count=0;
         for (final MagicPermanent permanent : permanents) {
             if (permanent.hasType(type)) {
@@ -428,7 +428,7 @@ public class MagicPlayer implements MagicTarget, MagicMappable<MagicPlayer> {
         return count;
     }
 
-    public int getNrOfPermanentsWithSubType(final MagicSubType subType) {
+    public int getNrOfPermanents(final MagicSubType subType) {
         int count=0;
         for (final MagicPermanent permanent : permanents) {
             if (permanent.hasSubType(subType)) {

@@ -13,7 +13,7 @@
             final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicDrawAction(
                 player,
-                player.getNrOfPermanentsWithSubType(MagicSubType.Human)
+                player.getNrOfPermanents(MagicSubType.Human)
             ));
         }
     }

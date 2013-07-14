@@ -13,7 +13,7 @@
             game.doAction(new MagicPlayTokensAction(
                 event.getPlayer(),
                 TokenCardDefinitions.get("Saproling"),
-                event.getPlayer().getNrOfPermanentsWithType(MagicType.Creature)
+                event.getPlayer().getNrOfPermanents(MagicType.Creature)
             ));
         }
     },

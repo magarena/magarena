@@ -6,7 +6,7 @@
                 final MagicPermanent permanent,
                 final MagicPlayer eotPlayer) {
             return (permanent.isController(eotPlayer) &&
-                    eotPlayer.getNrOfPermanentsWithType(MagicType.Creature) == 1) ?
+                    eotPlayer.getNrOfPermanents(MagicType.Creature) == 1) ?
                 new MagicEvent(
                     permanent,
                     this,
@@ -17,7 +17,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.getPlayer().getNrOfPermanentsWithType(MagicType.Creature) == 1) {
+            if (event.getPlayer().getNrOfPermanents(MagicType.Creature) == 1) {
                 game.doAction(new MagicPlayTokenAction(
                     event.getPlayer(),
                     TokenCardDefinitions.get("Demon5")

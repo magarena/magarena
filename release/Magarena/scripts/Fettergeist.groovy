@@ -25,7 +25,7 @@ def action = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int x = event.getPlayer().controlsPermanent(event.getPermanent()) ? 1 : 0;
-            final int amount = event.getPlayer().getNrOfPermanentsWithType(MagicType.Creature) - x;
+            final int amount = event.getPlayer().getNrOfPermanents(MagicType.Creature) - x;
             final MagicManaCost cost = MagicManaCost.create("{"+amount+"}");
             final MagicEvent triggerEvent = new MagicEvent(
                 event.getSource(),

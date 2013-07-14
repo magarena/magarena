@@ -15,7 +15,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            int amount = player.getNrOfPermanentsWithType(MagicType.Land);
+            int amount = player.getNrOfPermanents(MagicType.Land);
             game.doAction(new MagicPlayTokensAction(
                 player,
                 TokenCardDefinitions.get("Plant"),

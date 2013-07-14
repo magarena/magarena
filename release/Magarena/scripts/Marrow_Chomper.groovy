@@ -6,7 +6,7 @@
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,permanent);
             final MagicTargetChoice targetChoice=new MagicTargetChoice(
                     targetFilter,false,MagicTargetHint.None,"a creature other than "+permanent+" to sacrifice");
-            return permanent.getController().getNrOfPermanentsWithType(MagicType.Creature) > 1 ?
+            return permanent.getController().getNrOfPermanents(MagicType.Creature) > 1 ?
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(targetChoice),

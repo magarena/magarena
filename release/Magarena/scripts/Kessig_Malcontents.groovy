@@ -5,7 +5,7 @@
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPayedCost payedCost) {
-            final int amount = permanent.getController().getNrOfPermanentsWithSubType(MagicSubType.Human);
+            final int amount = permanent.getController().getNrOfPermanents(MagicSubType.Human);
             return new MagicEvent(
                 permanent,
                 MagicTargetChoice.NEG_TARGET_PLAYER,
@@ -20,7 +20,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
-                    final int amount = event.getPlayer().getNrOfPermanentsWithSubType(MagicSubType.Human);
+                    final int amount = event.getPlayer().getNrOfPermanents(MagicSubType.Human);
                     final MagicDamage damage = new MagicDamage(
                         event.getSource(),
                         player,

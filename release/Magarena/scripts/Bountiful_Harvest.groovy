@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final int amount = player.getNrOfPermanentsWithType(MagicType.Land);
+            final int amount = player.getNrOfPermanents(MagicType.Land);
             if (amount > 0) {
                 game.doAction(new MagicChangeLifeAction(player,amount));
             }

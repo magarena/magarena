@@ -3,7 +3,7 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             return (permanent.isController(upkeepPlayer) &&
-                    upkeepPlayer.getNrOfPermanentsWithType(MagicType.Land) >= 5) ?
+                    upkeepPlayer.getNrOfPermanents(MagicType.Land) >= 5) ?
                 new MagicEvent(
                     permanent,
                     this,

@@ -40,7 +40,7 @@ public class MagicDevourTrigger extends MagicWhenComesIntoPlayTrigger {
             MagicTargetHint.None,
             "a creature other than " + perm + " to sacrifice"
         );
-        return (perm.getController().getNrOfPermanentsWithType(MagicType.Creature) > 1) ?
+        return (perm.getController().getNrOfPermanents(MagicType.Creature) > 1) ?
             new MagicEvent(
                 perm,
                 new MagicMayChoice(

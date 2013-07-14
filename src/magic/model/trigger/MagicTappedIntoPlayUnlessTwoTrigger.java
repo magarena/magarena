@@ -20,7 +20,7 @@ public class MagicTappedIntoPlayUnlessTwoTrigger extends MagicWhenComesIntoPlayT
 
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPayedCost payedCost) {
-        return (permanent.getController().getNrOfPermanentsWithType(MagicType.Land) > 3) ?
+        return (permanent.getController().getNrOfPermanents(MagicType.Land) > 3) ?
             new MagicEvent(
                 permanent,
                 this,

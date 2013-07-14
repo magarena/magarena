@@ -112,7 +112,7 @@ public interface MagicCondition {
 
     MagicCondition METALCRAFT_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {
-            return source.getController().getNrOfPermanentsWithType(MagicType.Artifact)>=3;
+            return source.getController().getNrOfPermanents(MagicType.Artifact)>=3;
         }
     };
 
@@ -131,13 +131,13 @@ public interface MagicCondition {
 
     MagicCondition TWO_MOUNTAINS_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {
-            return source.getController().getNrOfPermanentsWithSubType(MagicSubType.Mountain)>=2;
+            return source.getController().getNrOfPermanents(MagicSubType.Mountain)>=2;
         }
     };
 
     MagicCondition OPP_FOUR_LANDS_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {
-            return source.getController().getOpponent().getNrOfPermanentsWithType(MagicType.Land)>=4;
+            return source.getController().getOpponent().getNrOfPermanents(MagicType.Land)>=4;
         }
     };
 

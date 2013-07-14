@@ -52,7 +52,7 @@ public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<Ma
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent NONE,final MagicPermanent otherPermanent) {
             final MagicPlayer controller = otherPermanent.getController();
             if (otherPermanent.isCreature() &&
-                controller.getNrOfPermanentsWithType(MagicType.Creature) > 1) {
+                controller.getNrOfPermanents(MagicType.Creature) > 1) {
                 final boolean hasSoulbond = otherPermanent.hasAbility(MagicAbility.Soulbond);
                 if ((hasSoulbond &&
                      game.filterPermanents(controller,MagicTargetFilter.TARGET_UNPAIRED_CREATURE_YOU_CONTROL).size() > 1)

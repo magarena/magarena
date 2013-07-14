@@ -30,7 +30,7 @@
                             ||
                             (card.isToken() && !card.getOwner().getPermanents().contains(target))) {
                             final int amount =
-                                    player.getNrOfPermanentsWithSubType(MagicSubType.Ally);
+                                    player.getNrOfPermanents(MagicSubType.Ally);
                             if (amount > 0) {
                                 final MagicDamage damage = new MagicDamage(
                                     event.getPermanent(),
