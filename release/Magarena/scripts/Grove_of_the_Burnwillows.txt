@@ -1,0 +1,10 @@
+name=Grove of the Burnwillows
+url=http://magiccards.info/v12/en/8.html
+image=http://magiccards.info/scans/en/v12/8.jpg
+value=4.295
+rarity=M
+type=Land
+mana=r3g3
+ability=tap add mana {1}
+timing=land
+requires_groovy_code
