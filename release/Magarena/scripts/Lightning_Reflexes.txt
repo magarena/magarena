@@ -8,6 +8,6 @@ subtype=Aura
 cost={1}{R}
 given_pt=1/0
 given_ability=first strike
-ability=flash
-timing=flash
-enchant=pump,pos creature
+timing=aura
+enchant=first strike,pos creature
+requires_groovy_code

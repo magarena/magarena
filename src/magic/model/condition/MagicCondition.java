@@ -39,6 +39,13 @@ public interface MagicCondition {
             }
         }
     };
+    
+    MagicCondition NOT_SORCERY_CONDITION=new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicGame game = source.getGame();
+            return game.canPlaySorcery(source.getController()) == false;
+        }
+    };
 
     MagicCondition SORCERY_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {
