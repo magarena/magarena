@@ -1210,13 +1210,19 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }
     };
 
-    MagicPermanentFilterImpl TARGET_MULTICOLOR_PERMANENT = new MagicPermanentFilterImpl() {
+    MagicPermanentFilterImpl TARGET_MULTICOLORED_PERMANENT = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
             return MagicColor.isMulti(permanent);
         }
     };
+    
+    MagicPermanentFilterImpl TARGET_MULTICOLORED_PERMANENT_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
+            return MagicColor.isMulti(permanent) && permanent.isController(player);
+        }
+    };
 
-    MagicCardFilterImpl TARGET_MULTICOLOR_CREATURE_CARD_FROM_HAND = new MagicCardFilterImpl() {
+    MagicCardFilterImpl TARGET_MULTICOLORED_CREATURE_CARD_FROM_HAND = new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
             final MagicCardDefinition cardDefinition = target.getCardDefinition();
             return cardDefinition.isCreature() && MagicColor.isMulti(target);

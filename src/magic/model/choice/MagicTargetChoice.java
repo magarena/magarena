@@ -339,6 +339,14 @@ public class MagicTargetChoice extends MagicChoice {
                     "target non-Angel creature you control");
     public static final MagicTargetChoice SACRIFICE_PERMANENT =
         new MagicTargetChoice(MagicTargetFilter.TARGET_PERMANENT_YOU_CONTROL,false,MagicTargetHint.None,"a permanent to sacrifice");
+
+    public static final MagicTargetChoice SACRIFICE_MULTICOLORED_PERMANENT = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_MULTICOLORED_PERMANENT_YOU_CONTROL,
+        false,
+        MagicTargetHint.None,
+        "a multicolored permanent to sacrifice"
+    );
+
     public static final MagicTargetChoice SACRIFICE_CREATURE=
         new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,false,MagicTargetHint.None,"a creature to sacrifice");
     public static final MagicTargetChoice SACRIFICE_ARTIFACT=
@@ -431,8 +439,8 @@ public class MagicTargetChoice extends MagicChoice {
             new MagicTargetChoice(MagicTargetFilter.TARGET_GREEN_CREATURE_CARD_FROM_HAND,false,MagicTargetHint.None,"a green creature card from your hand");
     public static final MagicTargetChoice TARGET_BLUE_OR_RED_CREATURE_CARD_FROM_HAND =
             new MagicTargetChoice(MagicTargetFilter.TARGET_BLUE_OR_RED_CREATURE_CARD_FROM_HAND,false,MagicTargetHint.None,"a blue or red creature card from your hand");
-    public static final MagicTargetChoice TARGET_MULTICOLOR_CREATURE_CARD_FROM_HAND =
-            new MagicTargetChoice(MagicTargetFilter.TARGET_MULTICOLOR_CREATURE_CARD_FROM_HAND,false,MagicTargetHint.None,"a multicolored creature card from your hand");
+    public static final MagicTargetChoice TARGET_MULTICOLORED_CREATURE_CARD_FROM_HAND =
+            new MagicTargetChoice(MagicTargetFilter.TARGET_MULTICOLORED_CREATURE_CARD_FROM_HAND,false,MagicTargetHint.None,"a multicolored creature card from your hand");
     public static final MagicTargetChoice TARGET_BASIC_LAND_CARD_FROM_HAND =
             new MagicTargetChoice(MagicTargetFilter.TARGET_BASIC_LAND_CARD_FROM_HAND,false,MagicTargetHint.None,
             "a basic land card from your hand");

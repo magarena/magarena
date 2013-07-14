@@ -15,7 +15,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_MULTICOLOR_CREATURE_CARD_FROM_HAND,
+                MagicTargetChoice.TARGET_MULTICOLORED_CREATURE_CARD_FROM_HAND,
                 new MagicGraveyardTargetPicker(true),
                 this,
                 "Put a multicolored creature card\$ from your hand onto the battlefield."
