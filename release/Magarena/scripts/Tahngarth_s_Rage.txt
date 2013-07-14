@@ -6,6 +6,6 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={R}
-timing=removal?
-enchant=pump?,creature
-requires_card_code
+timing=aura
+enchant=pump,creature
+requires_groovy_code
