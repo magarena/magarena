@@ -14,6 +14,10 @@ public abstract class MagicManaActivation implements MagicChangeCardDefinition {
     private final List<MagicManaType> manaTypes;
     private final MagicCondition[] conditions;
     private final int weight;
+    
+    public MagicManaActivation(final List<MagicManaType> manaTypes) {
+        this(manaTypes, MagicActivation.NO_COND, manaTypes.size() - 1);
+    }
 
     public MagicManaActivation(final List<MagicManaType> manaTypes, final int weight) {
         this(manaTypes, MagicActivation.NO_COND, weight);

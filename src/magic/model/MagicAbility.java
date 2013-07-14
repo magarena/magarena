@@ -337,7 +337,7 @@ public enum MagicAbility {
     TapAddMana("tap add mana",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             final List<MagicManaType> manatype = MagicManaType.getList(arg);
-            card.add(new MagicTapManaActivation(manatype, manatype.size() - 1));
+            card.add(new MagicTapManaActivation(manatype));
         }
     },
     TapAddCharge("tap add charge",10) {

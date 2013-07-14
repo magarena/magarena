@@ -11,7 +11,7 @@ import java.util.List;
 public class MagicPainTapManaActivation extends MagicManaActivation {
 
     public MagicPainTapManaActivation(final List<MagicManaType> manaTypes) {
-        super(manaTypes,manaTypes.size() - 1);
+        super(manaTypes);
     }
 
     @Override

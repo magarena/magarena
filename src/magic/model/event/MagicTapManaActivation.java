@@ -9,8 +9,8 @@ import java.util.List;
 
 public class MagicTapManaActivation extends MagicManaActivation {
 
-    public MagicTapManaActivation(final List<MagicManaType> manaTypes,final int weight) {
-        super(manaTypes,weight);
+    public MagicTapManaActivation(final List<MagicManaType> manaTypes) {
+        super(manaTypes);
     }
 
     @Override
