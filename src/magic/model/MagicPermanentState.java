@@ -14,7 +14,6 @@ public enum MagicPermanentState {
     ExcludeManaSource("exclude as mana source",""),
     ExcludeFromCombat("exclude from combat",""),
     Destroyed("destroyed",""),
-    ReturnToOwnerAtEndOfTurn("return to owner at end of turn","{R}"),
     ReturnToHandOfOwnerAtEndOfCombat("return to owner's hand at end of combat",""),
     DestroyAtEndOfCombat("destroy at end of combat",""),
     CannotAttack("can't attack",""),
@@ -27,7 +26,6 @@ public enum MagicPermanentState {
         Tapped.getMask()|
         Summoned.getMask()|
         DoesNotUntapDuringNext.getMask()|
-        ReturnToOwnerAtEndOfTurn.getMask()|
         ExcludeManaSource.getMask()|
         ExcludeFromCombat.getMask()|
         DestroyAtEndOfCombat.getMask()|

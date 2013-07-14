@@ -1039,16 +1039,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         }
     }
 
-    public boolean endOfTurn(final MagicGame game) {
-        if (MagicPermanentState.ReturnToOwnerAtEndOfTurn.hasState(stateFlags)) {
-            game.logAppendMessage(getController(),"Return "+this.getName()+" to its owner (end of turn).");
-            game.doAction(MagicChangeStateAction.Clear(this,MagicPermanentState.ReturnToOwnerAtEndOfTurn));
-            game.doAction(new MagicGainControlAction(getOwner(),this));
-            return true;
-        }
-        return false;
-    }
-
     public ImageIcon getIcon() {
         if (isAttacking()) {
             return IconImages.ATTACK;
