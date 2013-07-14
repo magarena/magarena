@@ -1148,7 +1148,6 @@ public class MagicGame {
     }
 
     public MagicPermanentTrigger addTrigger(final MagicPermanentTrigger permanentTrigger) {
-        System.out.println("add to additionalTriggers");
         additionalTriggers.add(permanentTrigger);
         return permanentTrigger;
     }
