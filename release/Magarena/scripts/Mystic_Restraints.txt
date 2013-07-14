@@ -7,6 +7,7 @@ type=Enchantment
 subtype=Aura
 cost={2}{U}{U}
 ability=flash
+given_ability=doesn't untap during untap step
 timing=flash
 enchant=can't attack or block,neg creature
 requires_groovy_code=Claustrophobia
