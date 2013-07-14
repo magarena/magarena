@@ -10,8 +10,9 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
-import magic.model.trigger.MagicAtEndOfTurnTrigger;
 import magic.model.mstatic.MagicStatic;
+import magic.model.trigger.MagicAtEndOfTurnTrigger;
+import magic.model.trigger.MagicAtEndOfCombatTrigger;
 
 public class MagicPlayCardAction extends MagicPutIntoPlayAction {
 
@@ -49,7 +50,7 @@ public class MagicPlayCardAction extends MagicPutIntoPlayAction {
                     permanent.changeCounters(MagicCounterType.MinusOne,1);
                     break;
                 case EXILE_AT_END_OF_COMBAT:
-                    permanent.setState(MagicPermanentState.ExileAtEndOfCombat);
+                    game.doAction(new MagicAddTriggerAction(permanent, MagicAtEndOfCombatTrigger.Exile));
                     break;
                 case EXILE_AT_END_OF_YOUR_TURN:
                     game.doAction(new MagicAddTriggerAction(permanent, MagicAtEndOfTurnTrigger.ExileAtYourEnd(controller)));

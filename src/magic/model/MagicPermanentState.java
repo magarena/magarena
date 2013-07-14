@@ -10,12 +10,9 @@ public enum MagicPermanentState {
     Attacking("attacking","{c}"),
     Blocking("blocking","{c}"),
     Blocked("blocked","{b}"),
-    ExileAtEndOfCombat("exile at end of combat",""),
     ExcludeManaSource("exclude as mana source",""),
     ExcludeFromCombat("exclude from combat",""),
     Destroyed("destroyed",""),
-    ReturnToHandOfOwnerAtEndOfCombat("return to owner's hand at end of combat",""),
-    DestroyAtEndOfCombat("destroy at end of combat",""),
     CannotAttack("can't attack",""),
     NoCombatDamage("assigns no combat damage",""),
     MustPayEchoCost("",""),
@@ -28,7 +25,6 @@ public enum MagicPermanentState {
         DoesNotUntapDuringNext.getMask()|
         ExcludeManaSource.getMask()|
         ExcludeFromCombat.getMask()|
-        DestroyAtEndOfCombat.getMask()|
         MustPayEchoCost.getMask();
 
     private final String description;
