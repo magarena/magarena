@@ -76,7 +76,7 @@ public class MagicDealDamageAction extends MagicAction {
         controlled by an opponent, that opponent may have that source deal that
         damage to a planeswalker the first player controls instead.
         */
-        if (game.getImmediate() == false &&
+        if (game.isImmediate() == false &&
             target == null &&
             damage.getTarget().isPlayer() &&
             damage.getSource().getController() != damage.getTarget() &&

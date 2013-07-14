@@ -1139,7 +1139,7 @@ public class MagicGame {
         immediate = aImmediate;
     }
     
-    public boolean getImmediate() {
+    public boolean isImmediate() {
         return immediate;
     }
 
