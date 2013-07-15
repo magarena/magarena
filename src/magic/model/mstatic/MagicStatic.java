@@ -8,6 +8,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicColor;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
+import magic.model.MagicType;
 import magic.model.MagicAbility;
 import magic.model.MagicCounterType;
 import magic.model.target.MagicTargetFilter;
@@ -257,6 +258,13 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
          @Override
          public int getColorFlags(final MagicPermanent permanent,final int flags) {
              return flags|MagicColor.Black.getMask();
+         }
+    };
+    
+    public static MagicStatic Artifact = new MagicStatic(MagicLayer.Type) {
+         @Override
+         public int getTypeFlags(final MagicPermanent permanent,final int flags) {
+             return flags | MagicType.Artifact.getMask();
          }
     };
 }
