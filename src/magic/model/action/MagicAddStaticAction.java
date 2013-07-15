@@ -29,7 +29,6 @@ public class MagicAddStaticAction extends MagicAction {
         game.removeStatic(permanent, mstatic);
     }
 
-
     @Override
     public String toString() {
         return getClass().getSimpleName()+" ("+permanent+','+mstatic+')';

@@ -29,4 +29,9 @@ public class MagicAddTriggerAction extends MagicAction {
     public void undoAction(final MagicGame game) {
         game.removeTrigger(permanentTrigger);
     }
+    
+    @Override
+    public String toString() {
+        return getClass().getSimpleName()+" ("+permanent+','+trigger+')';
+    }
 }
