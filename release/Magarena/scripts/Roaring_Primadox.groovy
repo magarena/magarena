@@ -8,7 +8,7 @@
             return permanent.isController(upkeepPlayer) ?
                 new MagicEvent(
                     permanent,
-                    MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
+                    MagicTargetChoice.CREATURE_YOU_CONTROL,
                     MagicBounceTargetPicker.create(),
                     this,
                     "Return a creature you control to its owner's hand."

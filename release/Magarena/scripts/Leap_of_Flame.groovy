@@ -4,10 +4,10 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.POS_TARGET_PERMANENT,
+                MagicTargetChoice.POS_TARGET_CREATURE,
                 MagicFirstStrikeTargetPicker.create(),
                 this,
-                "Target creature\$ gets +1/+0 and gains flying" +
+                "Target creature\$ gets +1/+0 and gains flying " +
                 "and first strike until end of turn."
             );
         }
