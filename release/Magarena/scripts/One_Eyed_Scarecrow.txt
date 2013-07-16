@@ -5,6 +5,7 @@ value=2.806
 removal=1
 rarity=C
 type=Artifact,Creature
+subtype=Scarecrow
 cost={3}
 pt=2/3
 ability=defender
