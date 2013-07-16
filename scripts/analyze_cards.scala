@@ -8,9 +8,12 @@ val effects = Source.fromFile(args(0)).getLines.toList
 Console.err.println("loading cards from " + args(1))
 val src = XML.load(args(1))
 
+Console.err.println("loading existing from " + args(2))
+val existing = Source.fromFile(args(2)).getLines.toSet
+
 Console.err.println("begin analysis")
 for (card <- src \ "card") {
-    val name = (card \ "name").text
+    val name = (card \ "name").text.replace("Æ", "AE").replace("û","u").replace("ö","o");
     val cost = (card \ "cost").text
     val loyalty = (card \ "loyalty").text
     val pow = (card \ "pow").text
@@ -23,10 +26,10 @@ for (card <- src \ "card") {
         .filter(_.text.trim() != "")
         .forall(x => isScriptable(name, x.text))
     
-    if (scriptable) {
-        Console.println(">" + name);
-        Console.println("value=?")
-        Console.println("rarity=?")
+    if (existing contains name) {
+        Console.println("name=" + name);
+        //Console.println("value=3")
+        //Console.println("rarity=C")
 
         val typeStr = types
         .filter(x => (x \ "@type").text == "card" || (x \ "@type").text == "super")
@@ -40,20 +43,25 @@ for (card <- src \ "card") {
         .map(_.text)
         .mkString(",")
 
-        Console.println("subtype=" + subtypeStr)
-        
-        Console.println("color=?")
-        Console.println("converted=?")
-        Console.println("cost=" + cost)
-        Console.println("power=" + pow )
-        Console.println("toughness=" + tgh)
-        Console.println("timing=?")
+        if (subtypeStr.length > 0) {
+            Console.println("subtype=" + subtypeStr)
+        }
+   
+        if (cost.length > 0) {
+            Console.println("cost=" + cost)
+        }
+
+        if (pow.length > 0 && tgh.length > 0) {
+            Console.println("pt=" + pow + "/" + tgh)
+        }
+        //Console.println("timing=main")
         for (rule <- rules if rule.text.trim != "") {
-            Console.println("ability=" + rule.text)
+            //Console.println("ability=" + rule.text)
         }
         Console.println()
     }
 }
+Console.err.println("end analysis")
 
 def isScriptable(name:String, rule:String):Boolean = {
     //normalize the rule text
