@@ -451,9 +451,9 @@ checks: \
 	check_meta
 
 # check metadata using cards.xml
-check_meta:
-	diff <(cat `grep name= cards/scriptable.txt | sed 's/[^A-Za-z]/_/g;s/name_/release\/Magarena\/scripts\//;s/$$/.txt/'`) \
-	     <(sed '/^$$/d' cards/scriptable.txt) -d  |\
+check_meta: cards/scriptable.txt
+	diff <(cat `grep name= $^ | sed 's/[^A-Za-z]/_/g;s/name_/release\/Magarena\/scripts\//;s/$$/.txt/'`) \
+	     <(sed '/^$$/d' $^) -d  |\
 	grep ">" |\
 	grep -v "0/0" |\
 	grep -v "\*" |\
