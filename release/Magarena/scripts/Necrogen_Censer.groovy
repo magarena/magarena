@@ -1,7 +1,7 @@
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Removal),
-        "Damage"
+        "Life"
     ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {

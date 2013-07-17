@@ -5,8 +5,8 @@ value=4.003
 rarity=M
 type=Creature
 subtype=Wurm
-pt=5/5
 cost={2}{G}{G}{W}{W}
+pt=5/5
 ability=trample
 timing=main
 requires_groovy_code

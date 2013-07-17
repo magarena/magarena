@@ -5,6 +5,6 @@ value=1.707
 rarity=U
 type=Legendary,Creature
 subtype=Demon
-pt=7/4
 cost={5}{B}{R}
+pt=7/4
 timing=main

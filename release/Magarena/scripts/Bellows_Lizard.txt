@@ -6,6 +6,6 @@ rarity=C
 type=Creature
 subtype=Lizard
 ability=pump {1}{R} +1/+0
-cost={1}{R}
+cost={R}
 pt=1/1
 timing=main

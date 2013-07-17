@@ -5,6 +5,6 @@ value=2.067
 rarity=C
 type=Creature
 subtype=Goblin
-cost={G}{R}
+cost={R}{G}
 pt=2/2
 timing=main

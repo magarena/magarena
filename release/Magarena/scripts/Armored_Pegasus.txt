@@ -6,6 +6,6 @@ ability=flying
 rarity=C
 type=Creature
 subtype=Pegasus
-pt=1/2
 cost={1}{W}
+pt=1/2
 timing=main

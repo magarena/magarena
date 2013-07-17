@@ -4,7 +4,7 @@ image=http://magiccards.info/scans/en/nph/61.jpg
 value=4.000
 removal=1
 rarity=C
-type=Sorcery
+type=Instant
 cost={B}{B}
 timing=removal
 requires_groovy_code
