@@ -448,7 +448,13 @@ checks: \
 	check_groovy_escape \
 	check_url \
 	check_image \
-	check_meta
+	check_meta \
+	check_rarity
+
+
+# check rarity using meta.xml
+check_rarity: scripts/fix_rarity.scala cards/meta.xml
+	cat release/Magarena/scripts/*.txt | scala $^ | grep -v "not be L" | grep -v "Windseeker Centaur" | ${NO_OUTPUT}
 
 # check metadata using cards.xml
 check_meta: cards/scriptable.txt

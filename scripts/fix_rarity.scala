@@ -68,7 +68,7 @@ for (line <- Source.stdin.getLines) {
             if ((name2card(curr_name) \\ "rarity").exists(x => x.text.charAt(0) == curr_rarity)) {
                 //Console.err.println("found")
             } else {
-                Console.err.println(curr_name + "'s rarity should not be " + curr_rarity) 
+                Console.out.println(curr_name + "'s rarity should not be " + curr_rarity) 
             }
         }
     } 
