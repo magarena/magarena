@@ -6,14 +6,12 @@ import scala.io.Source
 reads the metadata for cards
 
 <metalist>
- <card>
-  <name>A Display of My Dark Power</name>
+ <card name="A Display of My Dark Power">
   <instance>
-   <set>ARC</set>
+   <set>Archenemy</set>
    <rarity>C</rarity>
    <number>8</number>
    <artist>Jim Nelson</artist>
-   <flavor-text>&quot;What would you say is my greatest attribute? Is it my gluttonous lust for power?&quot;</flavor-text>
   </instance>
  </card>
 ...
@@ -36,51 +34,42 @@ cost={1}{G}{G}
 timing=smain
 */
 
-var arg_idx = 0
-Console.err.println("loading meta.xml from " + args(arg_idx))
-val meta = XML.load(args(arg_idx))
+Console.err.println("loading meta.xml from " + args(0))
+val meta = XML.load(args(0))
 
-arg_idx += 1
-
-Console.err.println("loading cards.txt from " + args(arg_idx))
-val cards = Source.fromFile(args(arg_idx)).getLines.toList
-
-var name2rarity = new scala.collection.mutable.HashMap[String, String]()
+var name2card = new scala.collection.mutable.HashMap[String, Node]()
 
 Console.err.println("reading rarity from meta.xml")
 for (card <- meta \ "card") {
-    val name_node = card \ "name"
-    val name = name_node.text.replace("Æ", "AE").replace("û","u").replace("ö","o");
-    val instance = card \ "instance"
-    val rarity_node = instance \ "rarity"
-    name2rarity += (name -> rarity_node.text)
+    val name_node = card \ "@name"
+    val name = name_node.text
+        .replace("Æ", "AE")
+        .replace("û","u")
+        .replace("ö","o")
+        .replace("á","a")
+        .replace("é","e")
+    name2card += (name -> card)
 }
 
-Console.err.println("reading cards.txt")
 var curr_name = ""
-for (line <- cards) {
-    if (line startsWith ">") {               //card name
-        curr_name = line.substring(1);
-    } 
-    
-    if (line startsWith "rarity=") {  //rarity char
+for (line <- Source.stdin.getLines) {
+    //Console.println(line)
+
+    //card name
+    if (line startsWith "name=") {    
+        curr_name = line.substring(5);
+    //rarity char
+    } else if (line startsWith "rarity=") {  
         val curr_rarity = line charAt 7
 
-        if (!name2rarity.contains(curr_name)) {
+        if (!name2card.contains(curr_name)) {
             Console.err.println(curr_name + " NOT FOUND in meta.xml");
         } else {
-            val rarity_node = name2rarity(curr_name)
-            val real_rarity = rarity_node.filter(x => "LCMRU".indexOf(x) >= 0) charAt 0
-            if (real_rarity != curr_rarity) {
-                Console.err.println(curr_name + 
-                    " Curr: " + curr_rarity + 
-                    " Real: " + real_rarity)
-                Console.println("rarity=" + real_rarity)
+            if ((name2card(curr_name) \\ "rarity").exists(x => x.text.charAt(0) == curr_rarity)) {
+                //Console.err.println("found")
             } else {
-                Console.println(line) 
+                Console.err.println(curr_name + "'s rarity should not be " + curr_rarity) 
             }
         }
-    } else {
-        Console.println(line)
-    }
+    } 
 }
