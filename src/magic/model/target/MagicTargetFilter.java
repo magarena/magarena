@@ -1288,7 +1288,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     }
 
     public static final class Factory {
-        static final MagicPermanentFilterImpl permanent(final MagicType type, final Control control) {
+        public static final MagicPermanentFilterImpl permanent(final MagicType type, final Control control) {
             return new MagicPermanentFilterImpl() {
                 public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
                     return target.hasType(type) &&
@@ -1298,7 +1298,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
                 }
             };
         }
-        static final MagicPermanentFilterImpl permanent(final MagicColor color, final Control control) {
+        public static final MagicPermanentFilterImpl permanent(final MagicColor color, final Control control) {
             return new MagicPermanentFilterImpl() {
                 public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
                     return target.hasColor(color) &&
@@ -1308,7 +1308,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
                 }
             };
         }
-        static final MagicPermanentFilterImpl permanent(final MagicSubType subtype, final Control control) {
+        public static final MagicPermanentFilterImpl permanent(final MagicSubType subtype, final Control control) {
             return new MagicPermanentFilterImpl() {
                 public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
                     return target.hasSubType(subtype) &&
@@ -1318,7 +1318,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
                 }
             };
         }
-        static final MagicPermanentFilterImpl creature(final MagicColor color, final Control control) {
+        public static final MagicPermanentFilterImpl creature(final MagicColor color, final Control control) {
             return new MagicPermanentFilterImpl() {
                 public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
                     return target.isCreature() &&
@@ -1329,7 +1329,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
                 }
             };
         }
-        static final MagicPermanentFilterImpl creature(final MagicType type, final Control control) {
+        public static final MagicPermanentFilterImpl creature(final MagicType type, final Control control) {
             return new MagicPermanentFilterImpl() {
                 public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
                     return target.isCreature() &&
@@ -1340,7 +1340,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
                 }
             };
         }
-        static final MagicPermanentFilterImpl creature(final MagicSubType subtype, final Control control) {
+        public static final MagicPermanentFilterImpl creature(final MagicSubType subtype, final Control control) {
             return new MagicPermanentFilterImpl() {
                 public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
                     return target.isCreature() &&
@@ -1351,7 +1351,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
                 }
             };
         }
-        static final MagicPermanentFilterImpl tribal(final MagicSubType subtype, final Control control) {
+        public static final MagicPermanentFilterImpl tribal(final MagicSubType subtype, final Control control) {
             return new MagicPermanentFilterImpl() {
                 public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
                     return (target.isCreature() || target.hasType(MagicType.Tribal)) &&
@@ -1362,7 +1362,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
                 }
             };
         }
-        static final MagicPermanentFilterImpl creature(final MagicAbility ability, final Control control) {
+        public static final MagicPermanentFilterImpl creature(final MagicAbility ability, final Control control) {
             return new MagicPermanentFilterImpl() {
                 public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
                     return target.isCreature() &&
@@ -1373,7 +1373,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
                 }
             };
         }
-        static final MagicPermanentFilterImpl creature(final MagicPermanentState state, final Control control) {
+        public static final MagicPermanentFilterImpl creature(final MagicPermanentState state, final Control control) {
             return new MagicPermanentFilterImpl() {
                 public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
                     return target.isCreature() &&
