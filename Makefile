@@ -8,6 +8,7 @@ BUILD=build
 SRC=$(shell find src -iname *.java)
 MAG:=release/Magarena.jar
 EXE:=release/Magarena.exe
+NO_OUTPUT:=awk 'BEGIN{RS="\t"}{print; exit 1}'
 
 all: tags $(MAG) $(EXE)
 
@@ -446,19 +447,25 @@ checks: \
 	check_unique_key \
 	check_groovy_escape \
 	check_url \
-	check_image
+	check_image \
+	check_meta
+
+# check metadata using cards.xml
+check_meta:
+	diff <(cat `grep name= cards/scriptable.txt | sed 's/[^A-Za-z]/_/g;s/name_/release\/Magarena\/scripts\//;s/$$/.txt/'`) \
+	     <(sed '/^$$/d' cards/scriptable.txt) -d  |\
+	grep ">" |\
+	grep -v "0/0" |\
+	grep -v "\*" |\
+	${NO_OUTPUT}
 
 # every url is to a HTML page
 check_url:
-	diff \
-	/dev/null \
-	<(grep '^url=' -r release/Magarena/scripts | grep -v "html$$")
+	grep '^url=' -r release/Magarena/scripts | grep -v "html$$" | ${NO_OUTPUT}
 
 # every image is to a jpg file or attachment
 check_image:
-	diff \
-	/dev/null \
-	<(grep '^image=' -r release/Magarena/scripts | grep -v "jpg$$" | grep -v attachment.php)
+	grep '^image=' -r release/Magarena/scripts | grep -v "jpg$$" | grep -v attachment.php | ${NO_OUTPUT}
 
 # every aura must have an enchant property
 check_aura:
@@ -475,9 +482,7 @@ check_requires_groovy_code:
 
 # $ must be escaped as \$ in groovy script
 check_groovy_escape:
-	diff \
-	/dev/null \
-	<(grep '[^\\]\$$' -r release/Magarena/scripts | grep -v '\$${')
+	grep '[^\\]\$$' -r release/Magarena/scripts | grep -v '\$${' | ${NO_OUTPUT}
 
 # script name is canonical card name
 check_script_name:
