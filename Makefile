@@ -8,7 +8,7 @@ BUILD=build
 SRC=$(shell find src -iname *.java)
 MAG:=release/Magarena.jar
 EXE:=release/Magarena.exe
-NO_OUTPUT:=awk 'BEGIN{RS="\t"}{print; exit 1}'
+NO_OUTPUT:=awk 'BEGIN{RS="\a"}{print; exit 1}'
 
 all: tags $(MAG) $(EXE)
 
