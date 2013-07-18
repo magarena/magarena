@@ -1,0 +1,10 @@
+name=Doubtless One
+url=http://magiccards.info/on/en/27.html
+image=http://magiccards.info/scans/en/on/27.jpg
+value=4.105
+rarity=U
+type=Creature
+subtype=Cleric,Avatar
+cost={3}{W}
+timing=main
+requires_groovy_code=Mourning Thrull,Doubtless One
