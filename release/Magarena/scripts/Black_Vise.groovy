@@ -7,7 +7,7 @@
                     permanent,
                     upkeepPlayer,
                     this,
-                    "PN deals X damage to PN " +
+                    "SN deals X damage to PN " +
                     "where X is the number of cards in his or her hand minus 4."
                 ):
                 MagicEvent.NONE;
