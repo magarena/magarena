@@ -20,7 +20,7 @@ public abstract class MagicAtDrawTrigger extends MagicTrigger<MagicPlayer> {
         return MagicTriggerType.AtDraw;
     }
 
-    public static final MagicAtUpkeepTrigger EachPlayerDraw = new MagicAtUpkeepTrigger() {
+    public static final MagicAtDrawTrigger EachPlayerDraw = new MagicAtDrawTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             return new MagicEvent(
