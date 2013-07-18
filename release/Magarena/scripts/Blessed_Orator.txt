@@ -1,0 +1,12 @@
+name=Blessed Orator
+url=http://magiccards.info/9e/en/6.html
+image=http://magiccards.info/scans/en/9e/6.jpg
+value=2.662
+rarity=U
+type=Creature
+subtype=Human,Cleric
+cost={3}{W}
+pt=1/4
+static=player
+timing=fmain
+requires_groovy_code
