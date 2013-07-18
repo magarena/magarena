@@ -2,11 +2,10 @@
     new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            final int amount=damage.getDealtAmount();
-            return (damage.getSource()==permanent.getEnchantedCreature()) ?
+            return permanent.getEnchantedCreature() == damage.getSource() ?
                 new MagicEvent(
                     permanent,
-                    amount,
+                    damage.getDealtAmount(),
                     this,
                     "PN gains RN life."
                 ):
