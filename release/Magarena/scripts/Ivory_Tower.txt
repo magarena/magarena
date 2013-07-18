@@ -1,0 +1,9 @@
+name=Ivory Tower
+url=http://magiccards.info/fvr/en/4.html
+image=http://magiccards.info/scans/en/fvr/4.jpg
+value=4.370
+rarity=R
+type=Artifact
+cost={1}
+timing=artifact
+requires_groovy_code
