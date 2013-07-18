@@ -5,7 +5,7 @@
             return permanent == damage.getSource() ?
                 new MagicEvent(
                     permanent,
-                    damage.getDealtAmount();
+                    damage.getDealtAmount(),
                     this,
                     "PN gains RN life."
                 ):
