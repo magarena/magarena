@@ -1,0 +1,12 @@
+name=Orbweaver Kumo
+url=http://magiccards.info/chk/en/231.html
+image=http://magiccards.info/scans/en/chk/231.jpg
+value=3.737
+rarity=U
+type=Creature
+subtype=Spirit
+cost={4}{G}{G}
+pt=3/4
+ability=reach
+timing=main
+requires_groovy_code
