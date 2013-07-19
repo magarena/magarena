@@ -711,6 +711,11 @@ public enum MagicAbility {
             card.add(MagicReplicateTrigger.create());
         }
     },
+    EntersMayDestroy("enters may destroy", 10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(MagicWhenComesIntoPlayTrigger.createMay("destroy " + arg));
+        }
+    },
     EntersDestroy("enters destroy", 10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             card.add(MagicWhenComesIntoPlayTrigger.create("Destroy " + arg));

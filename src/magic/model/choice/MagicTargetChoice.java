@@ -677,6 +677,7 @@ public class MagicTargetChoice extends MagicChoice {
         factory.put("neg artifact or creature", NEG_TARGET_ARTIFACT_OR_CREATURE);
 
         // used by effect property
+        factory.put("neg target equipment", NEG_TARGET_EQUIPMENT);
         factory.put("neg target artifact", NEG_TARGET_ARTIFACT);
         factory.put("neg target artifact you don't control", TARGET_ARTIFACT_YOU_DONT_CONTROL);
         factory.put("neg target artifact or enchantment", NEG_TARGET_ARTIFACT_OR_ENCHANTMENT);
@@ -703,6 +704,7 @@ public class MagicTargetChoice extends MagicChoice {
         factory.put("neg target permanent", NEG_TARGET_PERMANENT);
         factory.put("neg target enchantment", NEG_TARGET_ENCHANTMENT);
         factory.put("neg target non-vampire, non-werewolf, non-zombie creature", NEG_TARGET_NONVAMPIRE_NONWEREWOLF_NONZOMBIE);
+        factory.put("neg target vampire, werewolf, or zombie", NEG_TARGET_VAMPIRE_WEREWOLF_OR_ZOMBIE);
         factory.put("neg target creature with converted mana cost 3 or less", NEG_TARGET_CREATURE_CONVERTED_3_OR_LESS);
         factory.put("neg target artifact or creature", NEG_TARGET_ARTIFACT_OR_CREATURE);
         factory.put("neg target nonland permanent with converted mana cost 3 or less", NEG_TARGET_NONLAND_PERMANENT_CMC_LEQ_3);

@@ -8,5 +8,5 @@ type=Creature
 subtype=Human,Cleric
 cost={1}{W}
 pt=2/2
-ability=enters destroy target enchantment.
+ability=enters may destroy target enchantment.
 timing=main

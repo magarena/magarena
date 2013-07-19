@@ -6,6 +6,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.choice.MagicTargetChoice;
+import magic.model.choice.MagicMayChoice;
 import magic.model.target.MagicTargetPicker;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventAction;
@@ -27,6 +28,33 @@ public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPa
     @Override
     public void change(final MagicCardDefinition cdef) {
         cdef.addTrigger(this);
+    }
+    
+    public static MagicWhenComesIntoPlayTrigger createMay(final String rule) {
+        final String effect = rule.toLowerCase();
+        final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
+        final MagicEventAction action  = ruleAction.action;
+        final MagicTargetPicker picker = ruleAction.picker;
+        final MagicTargetChoice choice = ruleAction.getChoice(effect);
+
+        return new MagicWhenComesIntoPlayTrigger() {
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
+                return new MagicEvent(
+                    permanent,
+                    new MagicMayChoice(choice),
+                    picker,
+                    this,
+                    "PN may$ " + rule + "$"
+                );
+            }
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                if (event.isYes()) {
+                    action.executeEvent(game, event);
+                }
+            }
+        };
     }
 
     public static MagicWhenComesIntoPlayTrigger create(final String rule) {

@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Soldier
 cost={3}{W}
 pt=3/2
-timing=fmain
-requires_groovy_code
+timing=main
+ability=enters may destroy target Vampire, Werewolf, or Zombie.
