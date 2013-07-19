@@ -1,0 +1,9 @@
+name=Fatal Frenzy
+url=http://magiccards.info/pc/en/98.html
+image=http://magiccards.info/scans/en/pc/98.jpg
+value=2.929
+rarity=R
+type=Instant
+cost={2}{R}
+timing=pump
+requires_groovy_code
