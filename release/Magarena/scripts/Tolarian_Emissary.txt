@@ -1,0 +1,13 @@
+name=Tolarian Emissary
+url=http://magiccards.info/in/en/81.html
+image=http://magiccards.info/scans/en/in/81.jpg
+value=3.754
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={2}{U}
+pt=1/2
+ability=flying
+timing=main
+ability=kicker {1}{W}
+requires_groovy_code
