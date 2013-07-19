@@ -497,7 +497,7 @@ check_script_name:
 	<(grep "name=" -r release/Magarena/scripts/ | sort | sed 's/.*name=//;s/[^A-Za-z0-9]/_/g;s/$$/.txt/')
 
 check_unique_key:
-	grep "^[^=]*" -r release/Magarena/scripts/*.txt | sed 's/=.*//g' | sort | uniq -d
+	grep "^[^=]*" -r release/Magarena/scripts/*.txt | sed 's/=.*//g' | sort | uniq -d | ${NO_OUTPUT}
 
 crash.txt: $(wildcard *.log)
 	for i in `grep "^Excep" -l $^`; do \
