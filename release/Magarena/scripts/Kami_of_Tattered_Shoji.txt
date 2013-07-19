@@ -1,0 +1,11 @@
+name=Kami of Tattered Shoji
+url=http://magiccards.info/bok/en/11.html
+image=http://magiccards.info/scans/en/bok/11.jpg
+value=3.737
+rarity=C
+type=Creature
+subtype=Spirit
+cost={4}{W}
+pt=2/5
+timing=main
+requires_groovy_code
