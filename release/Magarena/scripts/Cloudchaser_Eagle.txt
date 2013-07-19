@@ -1,0 +1,11 @@
+name=Cloudchaser Eagle
+url=http://magiccards.info/7e/en/11.html
+image=http://magiccards.info/scans/en/7e/11.jpg
+value=3.062
+rarity=C
+type=Creature
+subtype=Bird
+cost={3}{W}
+pt=2/2
+ability=flying,enters destroy target enchantment.
+timing=main
