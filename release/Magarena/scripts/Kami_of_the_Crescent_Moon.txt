@@ -1,0 +1,11 @@
+name=Kami of the Crescent Moon
+url=http://magiccards.info/sok/en/42.html
+image=http://magiccards.info/scans/en/sok/42.jpg
+value=3.737
+rarity=R
+type=Legendary,Creature
+subtype=Spirit
+cost={U}{U}
+pt=1/3
+timing=main
+requires_groovy_code

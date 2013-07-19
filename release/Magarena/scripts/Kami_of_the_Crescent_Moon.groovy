@@ -1,0 +1,3 @@
+[
+    MagicAtDrawTrigger.EachPlayerDraw
+]
