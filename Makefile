@@ -260,7 +260,7 @@ decks/mtgtop8_%.dec:
 
 decks/update:
 	$(eval LAST := $(shell curl http://mtgtop8.com/search | grep "d=[0-9]\+" -o | sort | tail -1 | sed 's/d=//'))
-	-seq `expr ${LAST} - 100` ${LAST} | parallel make decks/mtgtop8_{}.dec
+	-seq `expr ${LAST} - 200` ${LAST} | parallel make decks/mtgtop8_{}.dec
 	find decks -size 0 -delete
 
 ref/rules.txt:
