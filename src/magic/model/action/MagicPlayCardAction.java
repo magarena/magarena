@@ -59,7 +59,7 @@ public class MagicPlayCardAction extends MagicPutIntoPlayAction {
                     game.doAction(new MagicAddTriggerAction(permanent, MagicAtEndOfTurnTrigger.ExileAtEnd));
                     break;
                 case SACRIFICE_AT_END_OF_TURN:
-                    game.doAction(new MagicAddTriggerAction(permanent, MagicAtEndOfTurnTrigger.SacrificeAtEnd));
+                    game.doAction(new MagicAddTriggerAction(permanent, MagicAtEndOfTurnTrigger.Sacrifice));
                     break;
                 case ATTACKING:
                     permanent.setState(MagicPermanentState.Attacking);

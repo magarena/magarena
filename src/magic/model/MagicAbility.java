@@ -373,7 +373,7 @@ public enum MagicAbility {
     SacAtEnd("sac at end",-100) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
-            card.add(MagicAtEndOfTurnTrigger.SacrificeAtEnd);
+            card.add(MagicAtEndOfTurnTrigger.Sacrifice);
         }
     },
     ChargeAtUpkeep("charge at upkeep",10) {

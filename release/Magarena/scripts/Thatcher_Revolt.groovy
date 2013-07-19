@@ -19,7 +19,7 @@
                 game.doAction(action);
                 game.doAction(new MagicAddTriggerAction(
                     action.getPermanent(),
-                    MagicAtEndOfTurnTrigger.SacrificeAtEnd
+                    MagicAtEndOfTurnTrigger.Sacrifice
                 ));
             }
         }

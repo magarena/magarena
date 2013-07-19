@@ -22,7 +22,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
             game.doAction(new MagicChangeTurnPTAction(permanent,1,1));
-            game.doAction(new MagicAddTriggerAction(permanent, MagicAtEndOfTurnTrigger.SacrificeAtEnd));
+            game.doAction(new MagicAddTriggerAction(permanent, MagicAtEndOfTurnTrigger.Sacrifice));
         }
     }
 ]

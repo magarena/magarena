@@ -37,7 +37,7 @@ public abstract class MagicAtEndOfTurnTrigger extends MagicTrigger<MagicPlayer> 
         }
     };
 
-    public static final MagicAtEndOfTurnTrigger SacrificeAtEnd = new MagicAtEndOfTurnTrigger() {
+    public static final MagicAtEndOfTurnTrigger Sacrifice = new MagicAtEndOfTurnTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eotPlayer) {
             return new MagicEvent(
