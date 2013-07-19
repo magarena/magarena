@@ -7,7 +7,6 @@ type=Creature
 subtype=Human,Wizard
 cost={2}{U}
 pt=1/2
-ability=flying
+ability=flying,kicker {1}{W}
 timing=main
-ability=kicker {1}{W}
 requires_groovy_code

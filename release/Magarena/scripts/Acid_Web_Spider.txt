@@ -7,6 +7,5 @@ type=Creature
 subtype=Spider
 cost={3}{G}{G}
 pt=3/5
-ability=reach
+ability=reach,enters may destroy target Equipment. 
 timing=main
-ability=enters may destroy target Equipment. 
