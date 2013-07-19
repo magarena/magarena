@@ -1,0 +1,11 @@
+name=Briarknit Kami
+url=http://magiccards.info/sok/en/124.html
+image=http://magiccards.info/scans/en/sok/124.jpg
+value=3.737
+rarity=U
+type=Creature
+subtype=Spirit
+cost={3}{G}{G}
+pt=3/3
+timing=main
+requires_groovy_code
