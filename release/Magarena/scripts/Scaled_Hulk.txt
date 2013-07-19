@@ -1,0 +1,11 @@
+name=Scaled Hulk
+url=http://magiccards.info/bok/en/143.html
+image=http://magiccards.info/scans/en/bok/143.jpg
+value=3.737
+rarity=C
+type=Creature
+subtype=Spirit
+cost={5}{G}
+pt=4/4
+timing=main
+requires_groovy_code
