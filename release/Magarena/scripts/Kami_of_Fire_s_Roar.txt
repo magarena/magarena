@@ -1,0 +1,11 @@
+name=Kami of Fire's Roar
+url=http://magiccards.info/chk/en/174.html
+image=http://magiccards.info/scans/en/chk/174.jpg
+value=3.737
+rarity=C
+type=Creature
+subtype=Spirit
+cost={3}{R}
+pt=2/3
+timing=main
+requires_groovy_code
