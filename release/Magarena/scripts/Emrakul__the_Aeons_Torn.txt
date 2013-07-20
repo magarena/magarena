@@ -1,0 +1,16 @@
+name=Emrakul, the Aeons Torn
+url=http://magiccards.info/roe/en/4.html
+image=http://magiccards.info/scans/en/roe/4.jpg
+value=3.708
+rarity=M
+type=Legendary,Creature
+subtype=Eldrazi
+cost={15}
+pt=15/15
+ability=can't be countered,\
+        flying,\
+        protection from colored spells,\
+        annihilator 6,\
+        dead recover graveyard
+timing=main
+requires_groovy_code
