@@ -16,6 +16,10 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
     public int getTypeFlags(final MagicPermanent permanent,final int flags) {
         return flags|MagicType.Artifact.getMask()|MagicType.Creature.getMask();
     }
+    @Override
+    public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
+        flags.add(MagicSubType.Blinkmoth);
+    }
 };
 
 [
