@@ -33,7 +33,7 @@ public class MagicPayManaCostEvent extends MagicEvent {
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.payManaCost(game,event.getPlayer());
+            event.payManaCost(game);
         }
     };
 

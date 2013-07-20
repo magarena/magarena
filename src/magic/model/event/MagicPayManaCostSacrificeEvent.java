@@ -30,7 +30,7 @@ public class MagicPayManaCostSacrificeEvent extends MagicEvent {
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.payManaCost(game,event.getPlayer());
+            event.payManaCost(game);
             game.doAction(new MagicSacrificeAction(event.getPermanent()));
         }
     };

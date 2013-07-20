@@ -40,7 +40,7 @@ public class MagicKickerCost extends MagicAdditionalCost implements MagicEventAc
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         if (event.isYes()) {
-            event.payManaCost(game,event.getPlayer());
+            event.payManaCost(game);
             game.doAction(new MagicSetKickerAction(1));
         }
     }

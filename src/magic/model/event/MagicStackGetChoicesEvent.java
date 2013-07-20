@@ -26,7 +26,7 @@ public class MagicStackGetChoicesEvent extends MagicEvent {
 
             // pay mana cost when there is one.
             // such as "you may pay <mana cost>" in triggers
-            event.payManaCost(game,itemOnStack.getEvent().getPlayer());
+            event.payManaCost(game);
 
             // trigger WhenTargeted
             final MagicTargetChoice tchoice = event.getChoice().getTargetChoice();

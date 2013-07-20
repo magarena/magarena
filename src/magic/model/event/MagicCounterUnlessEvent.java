@@ -26,11 +26,13 @@ public class MagicCounterUnlessEvent extends MagicEvent {
             new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final MagicItemOnStack itemOnStack = event.getRefItemOnStack();
                     if (event.isYes()) {
-                        event.payManaCost(game,itemOnStack.getController());
+                        event.payManaCost(game);
                     } else {
-                        game.doAction(new MagicCounterItemOnStackAction(itemOnStack, toLocation));
+                        game.doAction(new MagicCounterItemOnStackAction(
+                            event.getRefItemOnStack(),
+                            toLocation
+                        ));
                     }
                 }
             },

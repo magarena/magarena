@@ -35,7 +35,7 @@ public class MagicMultikickerCost extends MagicAdditionalCost implements MagicEv
 
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        event.payManaCost(game,event.getPlayer());
+        event.payManaCost(game);
         if (event.getKickerFromChosen() > 0) {
             game.doAction(new MagicSetKickerAction(event.getKickerFromChosen()));
         }
