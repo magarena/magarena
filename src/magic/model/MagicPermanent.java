@@ -696,6 +696,11 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
 
     public boolean hasProtectionFrom(final MagicSource source) {
+        // From everything
+        if (hasAbility(MagicAbility.ProtectionFromEverything)) {
+            return true;
+        }
+
         // From a color.
         int numColors = 0;
         for (final MagicColor color : MagicColor.values()) {
@@ -703,6 +708,8 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
                 numColors++;
                 if (hasAbility(color.getProtectionAbility()) ||
                     hasAbility(MagicAbility.ProtectionFromAllColors)) {
+                    return true;
+                } else if (source.isSpell() && hasAbility(MagicAbility.ProtectionFromColoredSpells)) {
                     return true;
                 }
             }

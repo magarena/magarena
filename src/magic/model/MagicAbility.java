@@ -131,6 +131,8 @@ public enum MagicAbility {
     ProtectionFromVampires("protection from Vampires",10),
     ProtectionFromWerewolves("protection from Werewolves",10),
     ProtectionFromZombies("protection from Zombies",10),
+    ProtectionFromColoredSpells("protection from colored spells",100),
+    ProtectionFromEverything("protection from everything",200),
     Reach("reach",20),
     Shadow("shadow",30),
     Shroud("shroud",60),
