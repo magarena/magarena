@@ -1,0 +1,10 @@
+name=Reckless Abandon
+url=http://magiccards.info/ud/en/94.html
+image=http://magiccards.info/scans/en/ud/94.jpg
+value=4.200
+rarity=C
+type=Sorcery
+cost={R}
+timing=removal
+removal=4
+requires_groovy_code
