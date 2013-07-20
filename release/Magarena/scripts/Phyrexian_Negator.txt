@@ -1,0 +1,12 @@
+name=Phyrexian Negator
+url=http://magiccards.info/pvc/en/1.html
+image=http://magiccards.info/scans/en/pvc/1.jpg
+value=3.651
+rarity=M
+type=Creature
+subtype=Horror
+cost={2}{B}
+pt=5/5
+ability=trample
+timing=main
+requires_groovy_code
