@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "Take an extra turn after this one."
+                "PN takes an extra turn after this one."
             );
         }
         @Override
