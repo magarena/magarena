@@ -1,0 +1,10 @@
+name=Blinkmoth Nexus
+url=http://magiccards.info/ds/en/163.html
+image=http://magiccards.info/scans/en/ds/163.jpg
+value=4.251
+rarity=R
+type=Land
+ability=tap add mana {1}
+timing=land
+mana_or_combat
+requires_groovy_code

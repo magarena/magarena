@@ -760,6 +760,8 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     MagicPermanentFilterImpl TARGET_ZOMBIE_YOU_CONTROL = Factory.creature(MagicSubType.Zombie, Control.You);
 
     MagicPermanentFilterImpl TARGET_ZOMBIE = Factory.creature(MagicSubType.Zombie, Control.Any);
+    
+    MagicPermanentFilterImpl TARGET_BLINKMOTH_CREATURE = Factory.creature(MagicSubType.Blinkmoth, Control.Any);
 
     MagicPermanentFilterImpl TARGET_KOR_YOU_CONTROL = Factory.creature(MagicSubType.Kor, Control.You);
 

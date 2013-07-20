@@ -194,6 +194,14 @@ public class MagicTargetChoice extends MagicChoice {
         new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE,true,MagicTargetHint.Positive,"target creature");
     public static final MagicTargetChoice POS_TARGET_1_1_CREATURE=
         new MagicTargetChoice(MagicTargetFilter.TARGET_1_1_CREATURE,true,MagicTargetHint.Positive,"target 1/1 creature");
+    
+    public static final MagicTargetChoice POS_TARGET_BLINKMOTH_CREATURE = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_BLINKMOTH_CREATURE,
+        true,
+        MagicTargetHint.Positive,
+        "target Blinkmoth creature"
+    );
+    
     public static final MagicTargetChoice TARGET_NONCREATURE =
             new MagicTargetChoice(MagicTargetFilter.TARGET_NONCREATURE,true,MagicTargetHint.None,"target noncreature");
     public static final MagicTargetChoice NEG_TARGET_NONCREATURE =
