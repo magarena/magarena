@@ -1,0 +1,9 @@
+name=Glimmervoid
+url=http://magiccards.info/mi/en/281.html
+image=http://magiccards.info/scans/en/mi/281.jpg
+value=4.251
+rarity=R
+type=Land
+ability=tap add mana any
+timing=land
+requires_groovy_code
