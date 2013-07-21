@@ -1,0 +1,9 @@
+name=Apocalypse
+url=http://magiccards.info/tp/en/162.html
+image=http://magiccards.info/scans/en/tp/162.jpg
+value=4.621
+rarity=R
+type=Sorcery
+cost={2}{R}{R}{R}
+timing=removal
+requires_groovy_code
