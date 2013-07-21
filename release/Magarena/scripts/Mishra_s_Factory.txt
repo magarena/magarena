@@ -1,0 +1,10 @@
+name=Mishra's Factory
+url=http://magiccards.info/ddf/en/73.html
+image=http://magiccards.info/scans/en/ddf/73.jpg
+value=4.632
+rarity=U
+type=Land
+timing=land
+ability=tap add mana {1}
+mana_or_combat
+requires_groovy_code

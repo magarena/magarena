@@ -308,6 +308,13 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice POS_TARGET_MERFOLK_CREATURE =
             new MagicTargetChoice(MagicTargetFilter.TARGET_MERFOLK_CREATURE,true,MagicTargetHint.Positive,"target Merfolk creature");
     
+    public static final MagicTargetChoice POS_TARGET_ASSEMBLY_WORKER_CREATURE = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_ASSEMBLY_WORKER_CREATURE,
+        true,
+        MagicTargetHint.Positive,
+        "target Assembly-Worker creature"
+    );
+    
     public static final MagicTargetChoice NEG_TARGET_VAMPIRE_WEREWOLF_OR_ZOMBIE = new MagicTargetChoice(
         MagicTargetFilter.TARGET_VAMPIRE_WEREWOLF_OR_ZOMBIE,
         true,

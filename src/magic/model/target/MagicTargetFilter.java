@@ -651,6 +651,8 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     MagicPermanentFilterImpl TARGET_ILLUSION_YOU_CONTROL = Factory.creature(MagicSubType.Illusion, Control.You);
 
     MagicPermanentFilterImpl TARGET_MERFOLK_CREATURE = Factory.creature(MagicSubType.Merfolk, Control.Any);
+    
+    MagicPermanentFilterImpl TARGET_ASSEMBLY_WORKER_CREATURE = Factory.creature(MagicSubType.Assembly_Worker, Control.Any);
 
     MagicPermanentFilterImpl TARGET_FUNGUS_CREATURE = Factory.creature(MagicSubType.Fungus, Control.Any);
 
