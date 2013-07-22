@@ -18,6 +18,7 @@ import magic.model.event.MagicVividManaActivation;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicCyclingActivation;
 import magic.model.event.MagicReinforceActivation;
+import magic.model.event.MagicNinjutsuActivation;
 import magic.model.event.MagicKickerCost;
 import magic.model.event.MagicMultikickerCost;
 import magic.model.mstatic.MagicCDA;
@@ -778,6 +779,12 @@ public enum MagicAbility {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
             card.add(MagicUnleashTrigger.create());
             card.add(MagicStatic.Unleash);
+        }
+    },
+    Ninjutsu("ninjutsu", 20) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final MagicManaCost manaCost = MagicManaCost.create(arg);
+            card.add(new MagicNinjutsuActivation(manaCost));
         }
     },
     None("",0);

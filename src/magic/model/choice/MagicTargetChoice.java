@@ -428,6 +428,13 @@ public class MagicTargetChoice extends MagicChoice {
         MagicTargetHint.None,
         "a creature card from your graveyard"
     );
+    
+    public static final MagicTargetChoice AN_UNBLOCKED_ATTACKING_CREATURE_YOU_CONTROL=new MagicTargetChoice(
+        MagicTargetFilter.UNBLOCKED_ATTACKING_CREATURE_YOU_CONTROL,
+        false,
+        MagicTargetHint.None,
+        "an unblocked attacking creature you control"
+    );
 
     public static final MagicTargetChoice TARGET_CREATURE_CARD_WITH_INFECT_FROM_GRAVEYARD=
             new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_CARD_WITH_INFECT_FROM_GRAVEYARD,true,MagicTargetHint.None,

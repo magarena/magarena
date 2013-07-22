@@ -945,6 +945,14 @@ public interface MagicTargetFilter<T extends MagicTarget> {
                    (target.isAttacking() || target.isBlocking());
         }
     };
+    
+    MagicPermanentFilterImpl UNBLOCKED_ATTACKING_CREATURE_YOU_CONTROL=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isController(player) &&  
+                   target.isAttacking() &&
+                   target.hasState(MagicPermanentState.Blocked) == false;
+        }
+    };
 
     MagicPermanentFilterImpl TARGET_BLOCKED_CREATURE = Factory.creature(MagicPermanentState.Blocked, Control.Any);
 
@@ -984,7 +992,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
             return targetType==MagicTargetType.Graveyard;
         }
     };
-
+    
     MagicCardFilterImpl TARGET_CREATURE_CARD_WITH_INFECT_FROM_GRAVEYARD = new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
             final MagicCardDefinition cardDefinition = target.getCardDefinition();

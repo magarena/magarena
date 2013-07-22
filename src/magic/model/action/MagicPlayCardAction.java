@@ -1,6 +1,7 @@
 package magic.model.action;
 
 import java.util.List;
+import java.util.Arrays;
 import java.util.Collections;
 
 import magic.model.MagicAbility;
@@ -24,6 +25,10 @@ public class MagicPlayCardAction extends MagicPutIntoPlayAction {
         card = aCard;
         controller = aController;
         modifications = aModifications;
+    }
+    
+    public MagicPlayCardAction(final MagicCard aCard, final MagicPlayer aController,final MagicPlayMod... aModifications) {
+        this(aCard, aController, Arrays.asList(aModifications));
     }
     
     public MagicPlayCardAction(final MagicCard card, final MagicPlayer player) {

@@ -40,6 +40,15 @@ public interface MagicCondition {
         }
     };
     
+    MagicCondition NINJUTSU_CONDITION=new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicGame game = source.getGame();
+            return game.isPhase(MagicPhaseType.DeclareBlockers) ||
+                   game.isPhase(MagicPhaseType.CombatDamage) ||
+                   game.isPhase(MagicPhaseType.EndOfCombat);
+        }
+    };
+    
     MagicCondition NOT_SORCERY_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final MagicGame game = source.getGame();
