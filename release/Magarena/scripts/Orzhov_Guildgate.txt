@@ -1,0 +1,11 @@
+name=Orzhov Guildgate
+url=http://magiccards.info/gtc/en/244.html
+image=http://magiccards.info/scans/en/gtc/244.jpg
+value=3.077
+rarity=C
+type=Land
+subtype=Gate
+mana=w3b3
+ability=tap add mana {W} or {B},\
+        enters tapped
+timing=tapland
