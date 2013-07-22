@@ -7,5 +7,5 @@ type=Creature
 subtype=Specter
 cost={2}{B}{B}
 pt=2/3
-ability=flying,damage discard card
+ability=flying,damage discard 1
 timing=main

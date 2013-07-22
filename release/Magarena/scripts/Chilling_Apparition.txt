@@ -8,4 +8,4 @@ subtype=Spirit
 cost={2}{B}
 pt=1/1
 timing=main
-ability=regenerate {B},combat damage discard card
+ability=regenerate {B},combat damage discard 1

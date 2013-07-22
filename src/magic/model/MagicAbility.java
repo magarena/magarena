@@ -414,28 +414,28 @@ public enum MagicAbility {
             ));
         }
     },
-    DamageDiscardCard("damage discard card",10) {
+    DamageDiscardCard("damage discard",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
-            card.add(new MagicSpecterTrigger(false,false,false));
+            final int n = Integer.parseInt(arg);
+            card.add(new MagicSpecterTrigger(Type.Any, Player.Any, n));
         }
     },
-    CombatDamageDiscardCard("combat damage discard card",10) {
+    CombatDamageDiscardCard("combat damage discard",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
-            card.add(new MagicSpecterTrigger(true,false,false));
+            final int n = Integer.parseInt(arg);
+            card.add(new MagicSpecterTrigger(Type.Combat, Player.Any, n));
         }
     },
-    CombatDamageDiscardRandomCard("combat damage discard random card",10) {
+    CombatDamageDiscardRandomCard("combat damage discard random",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
-            card.add(new MagicSpecterTrigger(true,false,true));
+            final int n = Integer.parseInt(arg);
+            card.add(MagicSpecterTrigger.Random(Type.Combat, Player.Any, n));
         }
     },
-    DamageOpponentDiscardRandomCard("damage opponent discard random card",10) {
+    DamageOpponentDiscardRandomCard("damage opponent discard random",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
-            card.add(new MagicSpecterTrigger(false,true,true));
+            final int n = Integer.parseInt(arg);
+            card.add(MagicSpecterTrigger.Random(Type.Any, Player.Opponent, n));
         }
     },
     DieDrawCard("die draw card",10) {

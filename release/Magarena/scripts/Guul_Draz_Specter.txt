@@ -7,6 +7,6 @@ type=Creature
 subtype=Specter
 cost={2}{B}{B}
 pt=2/2
-ability=flying,combat damage discard card
+ability=flying,combat damage discard 1
 timing=main
 requires_groovy_code

@@ -7,5 +7,5 @@ type=Creature
 subtype=Wraith
 cost={3}{B}
 pt=2/2
-ability=swampwalk,damage discard card
+ability=swampwalk,damage discard 1
 timing=main
