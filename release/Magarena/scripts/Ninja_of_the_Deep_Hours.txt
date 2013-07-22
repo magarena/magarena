@@ -1,0 +1,11 @@
+name=Ninja of the Deep Hours
+url=http://magiccards.info/bok/en/44.html
+image=http://magiccards.info/scans/en/bok/44.jpg
+value=3.708
+rarity=C
+type=Creature
+subtype=Human,Ninja
+cost={3}{U}
+pt=2/2
+ability=ninjutsu {1}{U},combat damage may draw card
+timing=main
