@@ -1,0 +1,11 @@
+name=Okiba-Gang Shinobi
+url=http://magiccards.info/bok/en/76.html
+image=http://magiccards.info/scans/en/bok/76.jpg
+value=3.708
+rarity=C
+type=Creature
+subtype=Rat,Ninja
+cost={3}{B}{B}
+pt=3/2
+ability=ninjutsu {3}{B},combat damage discard 2
+timing=main
