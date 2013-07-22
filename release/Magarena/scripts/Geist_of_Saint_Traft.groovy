@@ -16,11 +16,11 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final MagicCard card = MagicCard.createTokenCard(TokenCardDefinitions.get("Angel4"),player);
-            final MagicPlayCardAction action = new MagicPlayCardAction(
+            game.doAction(new MagicPlayCardAction(
                 card,
                 player,
                 [MagicPlayMod.TAPPED, MagicPlayMod.ATTACKING, MagicPlayMod.EXILE_AT_END_OF_COMBAT]
-            );
+            ));
         }
     }
 ]
