@@ -1,0 +1,12 @@
+name=Ink-Eyes, Servant of Oni
+url=http://magiccards.info/bok/en/71.html
+image=http://magiccards.info/scans/en/bok/71.jpg
+value=3.708
+rarity=R
+type=Legendary,Creature
+subtype=Rat,Ninja
+cost={4}{B}{B}
+pt=5/4
+ability=ninjutsu {3}{B}{B},regenerate {1}{B}
+timing=main
+requires_groovy_code
