@@ -988,6 +988,10 @@ public class MagicGame {
                 )
             );
             for (final MagicPermanent world : targets) {
+                logAppendMessage(
+                    world.getController(),
+                    world.getName() + " is put into its owner's graveyard."
+                );
                 doAction(new MagicRemoveFromPlayAction(
                     world, 
                     MagicLocationType.Graveyard
