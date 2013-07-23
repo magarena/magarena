@@ -1,0 +1,12 @@
+name=Swans of Bryn Argoll
+url=http://magiccards.info/shm/en/151.html
+image=http://magiccards.info/scans/en/shm/151.jpg
+value=4.479
+rarity=R
+type=Creature
+subtype=Bird,Spirit
+cost={2}{W/U}{W/U}
+pt=4/3
+ability=flying
+timing=main
+requires_groovy_code
