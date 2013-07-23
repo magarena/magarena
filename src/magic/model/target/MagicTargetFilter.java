@@ -788,6 +788,8 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     MagicPermanentFilterImpl TARGET_PLANT_YOU_CONTROL = Factory.creature(MagicSubType.Plant, Control.You);
 
     MagicPermanentFilterImpl TARGET_CREATURE = Factory.permanent(MagicType.Creature, Control.Any);
+    
+    MagicPermanentFilterImpl WORLD = Factory.permanent(MagicType.World, Control.Any);
 
     MagicPermanentFilterImpl TARGET_CREATURE_YOU_CONTROL = Factory.permanent(MagicType.Creature, Control.You);
 
@@ -1404,9 +1406,9 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         private final MagicCardFilterImpl targetFilter;
         private final long id;
 
-        public MagicOtherCardTargetFilter(final MagicCardFilterImpl targetFilter,final MagicCard invalidCard) {
-            this.targetFilter=targetFilter;
-            this.id=invalidCard.getId();
+        public MagicOtherCardTargetFilter(final MagicCardFilterImpl aTargetFilter,final MagicCard invalidCard) {
+            targetFilter = aTargetFilter;
+            id = invalidCard.getId();
         }
         @Override
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
@@ -1418,8 +1420,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
             return targetFilter.acceptType(targetType);
         }
     };
-
-
+    
     // Permanent reference can not be used because game is copied.
     public static final class MagicPermanentTargetFilter extends MagicPermanentFilterImpl {
 

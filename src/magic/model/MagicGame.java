@@ -33,6 +33,7 @@ import magic.model.stack.MagicStack;
 import magic.model.stack.MagicTriggerOnStack;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicOtherPermanentTargetFilter;
 import magic.model.target.MagicTargetHint;
 import magic.model.target.MagicTargetNone;
 import magic.model.target.MagicTargetType;
@@ -974,6 +975,23 @@ public class MagicGame {
             final Collection<MagicPermanent> targets=filterPermanents(permanent.getController(),targetFilter);
             if (targets.size() > 1) {
                 addEvent(new MagicUniquenessEvent(permanent, targetFilter));
+            }
+        }
+    
+        // 704.5m "world rule"
+        if (permanent.hasType(MagicType.World)) {
+            final Collection<MagicPermanent> targets=filterPermanents(
+                permanent.getController(),
+                new MagicOtherPermanentTargetFilter(
+                    MagicTargetFilter.WORLD,
+                    permanent
+                )
+            );
+            for (final MagicPermanent world : targets) {
+                doAction(new MagicRemoveFromPlayAction(
+                    world, 
+                    MagicLocationType.Graveyard
+                ));
             }
         }
     }
