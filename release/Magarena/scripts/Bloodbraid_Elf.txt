@@ -1,0 +1,11 @@
+name=Bloodbraid Elf
+url=http://magiccards.info/pc2/en/84.html
+image=http://magiccards.info/scans/en/pc2/84.jpg
+value=3.708
+rarity=U
+type=Creature
+subtype=Elf,Berserker
+cost={2}{R}{G}
+pt=3/2
+ability=haste,cascade
+timing=main
