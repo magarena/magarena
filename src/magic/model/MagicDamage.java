@@ -50,11 +50,17 @@ public class MagicDamage {
     public void setAmount(final int amt) {
         amount = amt;
     }
+    
+    public int prevent() {
+        return prevent(amount);
+    }
 
-    public void prevent(final int amt) {
+    public int prevent(final int amt) {
+        final int oldAmount = amount;
         if (!unpreventable) {
             amount -= amt;
         }
+        return oldAmount - amount;
     }
 
     public int getAmount() {
