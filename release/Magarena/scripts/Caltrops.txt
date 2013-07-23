@@ -1,0 +1,9 @@
+name=Caltrops
+url=http://magiccards.info/ud/en/129.html
+image=http://magiccards.info/scans/en/ud/129.jpg
+value=3.888
+rarity=U
+type=Artifact
+cost={3}
+timing=artifact
+requires_groovy_code
