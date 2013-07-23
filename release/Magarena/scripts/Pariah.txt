@@ -1,0 +1,11 @@
+name=Pariah
+url=http://magiccards.info/10e/en/33.html
+image=http://magiccards.info/scans/en/10e/33.jpg
+value=4.551
+rarity=R
+type=Enchantment
+subtype=Aura
+cost={2}{W}
+timing=aura
+enchant=can't attack or block,neg creature
+requires_groovy_code
