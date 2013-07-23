@@ -1,0 +1,12 @@
+name=Maelstrom Wanderer
+url=http://magiccards.info/pc2/en/101.html
+image=http://magiccards.info/scans/en/pc2/101.jpg
+value=3.708
+rarity=M
+type=Legendary,Creature
+subtype=Elemental
+cost={5}{U}{R}{G}
+pt=7/5
+ability=cascade,cascade
+timing=main
+requires_groovy_code=Emblem of the Warmind
