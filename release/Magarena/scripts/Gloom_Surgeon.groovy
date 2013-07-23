@@ -1,20 +1,14 @@
 [
-    new MagicIfDamageWouldBeDealtTrigger(4) {
+    new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.PREVENT_DAMAGE) {
         @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicDamage damage) {
-            final int amount = damage.getAmount();
-            if (!damage.isUnpreventable() &&
-                amount > 0 &&
-                damage.isCombat() &&
-                damage.getTarget() == permanent) {
-                // Prevention effect.
-                damage.setAmount(0);
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicDamage damage) {
+            if (damage.isCombat() && damage.getTarget() == permanent) {
+                final int amt = damage.getAmount();
+                // Prevention effect
+                damage.prevent();
                 return new MagicEvent(
                     permanent,
-                    amount,
+                    amt,
                     this,
                     "Exile RN cards from the top of your library."
                 );
