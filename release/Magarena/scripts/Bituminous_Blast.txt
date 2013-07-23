@@ -1,0 +1,10 @@
+name=Bituminous Blast
+url=http://magiccards.info/pc2/en/83.html
+image=http://magiccards.info/scans/en/pc2/83.jpg
+value=4.632
+removal=4
+rarity=U
+type=Instant
+cost={3}{B}{R}
+timing=removal
+requires_groovy_code=Flame Slash
