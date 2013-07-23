@@ -1,13 +1,13 @@
 [
-    new MagicIfDamageWouldBeDealtTrigger() {
+    new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.PREVENT_DAMAGE) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            if (!damage.isUnpreventable() && damage.getTarget() == permanent) {
-                damage.setAmount(0);
+            if (damage.getTarget() == permanent) {
+                final amt = damage.prevent();
                 return new MagicEvent(
                     permanent,
                     damage.getSource().getController(),
-                    damage.getAmount(),
+                    amt,
                     this,
                     "PN draws RN cards."
                 );
