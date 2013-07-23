@@ -10,9 +10,9 @@ import magic.model.event.MagicEventAction;
 /** Lower priority values trigger before higher priority values. */
 public abstract class MagicTrigger<T> implements MagicEventAction,MagicChangeCardDefinition {
 
-    private static final int DEFAULT_PRIORITY=10;
-    
-    public static final int REPLACEMENT=1;
+    public  static final int REPLACEMENT = 1;
+    public  static final int PREVENT_DAMAGE = 4;
+    private static final int DEFAULT_PRIORITY = 10;
 
     private final int priority;
 
