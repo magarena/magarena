@@ -75,6 +75,7 @@ import magic.model.trigger.MagicUnleashTrigger;
 import magic.model.trigger.MagicUndyingTrigger;
 import magic.model.trigger.MagicPersistTrigger;
 import magic.model.trigger.MagicLandfallTrigger;
+import magic.model.trigger.MagicCascadeTrigger;
 
 import java.util.EnumSet;
 import java.util.Set;
@@ -173,10 +174,6 @@ public enum MagicAbility {
             card.add(MagicFlankingTrigger.create());
         }
     },
-
-    // 63 core abilities that are tracked in MagicPermanent's abilityFlags
-    // see MagicAbility.CORE
-
     Changeling("changeling",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
@@ -787,9 +784,13 @@ public enum MagicAbility {
             card.add(new MagicNinjutsuActivation(manaCost));
         }
     },
+    Cascade("cascade", 50) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+            card.add(MagicCascadeTrigger.create());
+        }
+    },
     None("",0);
-
-    public static final Set<MagicAbility> CORE = EnumSet.range(AttacksEachTurnIfAble, Flanking);
 
     public static final Set<MagicAbility> PROTECTION_FLAGS = EnumSet.of(
         ProtectionFromBlack,

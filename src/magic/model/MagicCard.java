@@ -130,6 +130,10 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard>,
         );
         return pt;
     }
+    
+    public int getConvertedCost() {
+        return getCost().getConvertedCost();
+    }
 
     public MagicManaCost getCost() {
         return getCardDefinition().getCost();
@@ -159,6 +163,10 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard>,
 
     public boolean isInGraveyard() {
         return getOwner().getGraveyard().contains(this);
+    }
+    
+    public boolean isInExile() {
+        return getOwner().getExile().contains(this);
     }
 
     @Override

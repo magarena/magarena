@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class MagicCardList extends ArrayList<MagicCard> {
+public class MagicCardList extends ArrayList<MagicCard> implements MagicCopyable {
 
     private static final long serialVersionUID = 1L;
 
@@ -18,6 +18,11 @@ public class MagicCardList extends ArrayList<MagicCard> {
         for (final MagicCard card : cardList) {
             add(copyMap.copy(card));
         }
+    }
+    
+    @Override
+    public MagicCardList copy(final MagicCopyMap copyMap) {
+        return new MagicCardList(copyMap, this);
     }
 
     public long getStateId() {

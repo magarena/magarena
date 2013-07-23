@@ -57,7 +57,7 @@ public class MagicCardActivation extends MagicActivation<MagicCard> implements M
         );
     }
 
-    private final MagicEventAction EVENT_ACTION=new MagicEventAction() {
+    private final MagicEventAction EVENT_ACTION = new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCard card = event.getCard();

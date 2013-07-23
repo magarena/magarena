@@ -9,6 +9,7 @@ import magic.model.MagicLocationType;
 import magic.model.MagicMessage;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentList;
+import magic.model.MagicCardList;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.MagicColor;
@@ -311,6 +312,10 @@ public class MagicEvent implements MagicCopyable {
 
     public final MagicPermanentList getRefPermanentList() {
         return (MagicPermanentList)ref;
+    }
+    
+    public final MagicCardList getRefCardList() {
+        return (MagicCardList)ref;
     }
 
     public final MagicPlayer getRefPlayer() {

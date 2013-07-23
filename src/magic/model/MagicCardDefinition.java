@@ -775,7 +775,7 @@ public class MagicCardDefinition {
     }
 
     private boolean abilityHasText(final String s) {
-        for (final MagicAbility ability : MagicAbility.CORE) {
+        for (final MagicAbility ability : MagicAbility.values()) {
             if(hasAbility(ability) && ability.getName().toLowerCase().contains(s)) {
                 return true;
             }

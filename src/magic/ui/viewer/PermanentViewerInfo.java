@@ -218,7 +218,7 @@ public class PermanentViewerInfo {
         }
 
         // Abilities
-        for (final MagicAbility ability : MagicAbility.CORE) {
+        for (final MagicAbility ability : MagicAbility.values()) {
             if (abilityFlags.contains(ability)) {
                 if (first) {
                     first=false;

@@ -48,7 +48,7 @@ public class Ability_Mono_DeckGenerator extends DefaultDeckGenerator {
     }
 
     private void getPossibleTribes() {
-        for(final MagicAbility ab : MagicAbility.CORE) {
+        for(final MagicAbility ab : MagicAbility.values()) {
             final HashMap<MagicColor, Integer> countColors = new HashMap<MagicColor, Integer>();
             countColors.put(MagicColor.Black, 0);
             countColors.put(MagicColor.White, 0);
