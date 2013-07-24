@@ -11,9 +11,10 @@ import magic.model.event.MagicEventAction;
 public abstract class MagicTrigger<T> implements MagicEventAction,MagicChangeCardDefinition {
 
     public  static final int REPLACEMENT = 1;
-    public  static final int PREVENT_DAMAGE = 4;
-    public  static final int REPLACE_DAMAGE = 6;
-    private static final int DEFAULT_PRIORITY = 10;
+    public  static final int CANT_BE_PREVENTED = 2;
+    public  static final int PREVENT_DAMAGE    = 4;
+    public  static final int REPLACE_DAMAGE    = 6;
+    private static final int DEFAULT_PRIORITY  = 10;
 
     private final int priority;
 
