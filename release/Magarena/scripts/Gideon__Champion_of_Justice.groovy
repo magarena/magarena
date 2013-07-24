@@ -18,7 +18,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
     }
 };
 
-def PreventAllDamage = new MagicIfDamageWouldBeDealtTrigger(1) {
+def PreventAllDamage = new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.PREVENT_DAMAGE) {
     @Override
     public MagicEvent executeTrigger(
             final MagicGame game,
@@ -26,7 +26,7 @@ def PreventAllDamage = new MagicIfDamageWouldBeDealtTrigger(1) {
             final MagicDamage damage) {
         if (permanent == damage.getTarget()) {
             // Replacement effect. Generates no event or action.
-            damage.setAmount(0);
+            damage.prevent();
         }
         return MagicEvent.NONE;
     }
