@@ -16,18 +16,13 @@
             return MagicEvent.NONE;
         }
     },
-    new MagicIfDamageWouldBeDealtTrigger(4) {
+    new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.PREVENT_DAMAGE) {
         @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicDamage damage) {
-            if (!damage.isUnpreventable() &&
-                damage.getAmount() > 0 &&
-                damage.getTarget() == permanent) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicDamage damage) {
+            if (damage.getTarget() == permanent) {
 
                 // Prevention effect.
-                damage.setAmount(0);
+                damage.prevent();
 
                 return new MagicEvent(
                     permanent,
