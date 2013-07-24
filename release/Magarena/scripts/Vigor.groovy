@@ -1,35 +1,32 @@
 [
-    new MagicIfDamageWouldBeDealtTrigger(4) {
-        @Override
-        public boolean accept(final MagicPermanent permanent, final MagicDamage damage) {
-            final MagicTarget target = damage.getTarget();
-            return damage.isPreventable() &&
-                   damage.getAmount() > 0 &&
-                   target != permanent &&
-                   target.isCreature() &&
-                   permanent.isFriend(target);
-        }
-
+    new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.PREVENT_DAMAGE) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicDamage damage) {
-            final int amount = damage.getAmount();
+            final MagicTarget target = damage.getTarget();
+            int amount = 0;
 
-            // Prevention effect.
-            damage.setAmount(0);
-                    
-            game.doAction(new MagicChangeCountersAction(
-                damage.getTargetPermanent(),
-                MagicCounterType.PlusOne,
-                amount,
-                true
-            ));
-
-            game.logMessage(
-                permanent.getController(),
-                "Prevent ${amount} damage and put ${amount} +1/+1 counters on ${damage.getTarget()}"
-            );
-
-            return MagicEvent.NONE;
+            if (target != permanent && 
+                target.isCreature() &&
+                permanent.isFriend(target)) {
+                amount = damage.prevent();
+            }
+                
+            return amount > 0 ?
+                new MagicEvent(
+                    permanent,
+                    damage.getTarget(),
+                    {
+                        final MagicGame G, final MagicEvent E ->
+                        game.doAction(new MagicChangeCountersAction(
+                            E.getRefPermanent(),
+                            MagicCounterType.PlusOne,
+                            amount,
+                            true
+                        ));
+                    } as MagicEventAction,
+                    "Prevent ${amount} damage and put ${amount} +1/+1 counters on RN"
+                ):
+                MagicEvent.NONE;
         }
     }
 ]
