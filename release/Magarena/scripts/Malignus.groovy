@@ -10,14 +10,13 @@
             pt.set(amount,amount);
         }
     },
-    new MagicIfDamageWouldBeDealtTrigger(3) {
+    new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.CANT_BE_PREVENTED) {
         @Override
         public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicDamage damage) {
-            final MagicSource source = damage.getSource();
-            if (source == permanent) {
+            if (permanent == damage.getSource()) {
                 // Generates no event or action.
                 damage.setUnpreventable();
             }
