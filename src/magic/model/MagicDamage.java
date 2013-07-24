@@ -51,6 +51,12 @@ public class MagicDamage {
         amount = amt;
     }
     
+    public int replace() {
+        final int oldAmount = amount;
+        amount = 0;
+        return oldAmount;
+    }
+    
     public int prevent() {
         return prevent(amount);
     }
