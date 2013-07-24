@@ -1,0 +1,11 @@
+name=Guilty Conscience
+url=http://magiccards.info/sc/en/17.html
+image=http://magiccards.info/scans/en/sc/17.jpg
+value=4.100
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={W}
+timing=aura
+enchant=can't attack or block,neg creature
+requires_groovy_code
