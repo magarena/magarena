@@ -1,18 +1,35 @@
 [
-    new MagicIfDamageWouldBeDealtTrigger(6) {
+    new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.REPLACE_DAMAGE) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            final int amount=damage.getAmount();
-            if (amount>0 &&
+            int amount = 0;
+            if (permanent == damage.getSource() &&
                 damage.isCombat() &&
-                permanent==damage.getSource() &&
                 damage.getTarget().isPlayer()) {
                 // Replacement effect.
-                damage.setAmount(0);
-                game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.PlusOne,amount,true));
-                game.doAction(new MagicMillLibraryAction(damage.getTargetPlayer(),amount));
+                amount = damage.replace();
             }
-            return MagicEvent.NONE;
+
+            return amount > 0 ?
+                new MagicEvent(
+                    permanent,
+                    damage.getTarget(),
+                    {
+                        final MagicGame G, final MagicEvent E ->
+                        G.doAction(new MagicChangeCountersAction(
+                            E.getPermanent(),
+                            MagicCounterType.PlusOne,
+                            amount,
+                            true
+                        ));
+                        G.doAction(new MagicMillLibraryAction(
+                            E.getRefPlayer(),
+                            amount
+                        ));
+                    } as MagicEventAction,
+                    "Put ${amount} +1/+1 counters on SN and RN puts that many cards from the top of his or her library into his or her graveyard."
+                ):
+                MagicEvent.NONE;
         }
     }
 ]
