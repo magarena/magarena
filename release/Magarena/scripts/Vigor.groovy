@@ -17,7 +17,7 @@
                     damage.getTarget(),
                     {
                         final MagicGame G, final MagicEvent E ->
-                        game.doAction(new MagicChangeCountersAction(
+                        G.doAction(new MagicChangeCountersAction(
                             E.getRefPermanent(),
                             MagicCounterType.PlusOne,
                             amount,
