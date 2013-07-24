@@ -12,6 +12,7 @@ public abstract class MagicTrigger<T> implements MagicEventAction,MagicChangeCar
 
     public  static final int REPLACEMENT = 1;
     public  static final int PREVENT_DAMAGE = 4;
+    public  static final int REPLACE_DAMAGE = 6;
     private static final int DEFAULT_PRIORITY = 10;
 
     private final int priority;
