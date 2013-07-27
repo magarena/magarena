@@ -27,12 +27,11 @@ Selecting the AI to play against:
 Thanks to
   ubeefx for creating such a great game
   epiko for creating the Magarena logo and the amazing color themes
+  Salasnet, pedro1973, and elias for creating beautiful themes, http://www.slightlymagic.net/forum/viewforum.php?f=89
   IcoJoy, http://www.icojoy.com/blogs/, for the nice free mage logo and icon
-  Salasnet for the felt theme and pedro1973 for the dark battle theme
   singularita for creating the scripts to add over 300 additional creature cards
   glorfindel, Old Nick, David, Grundomu, jeffwadsworth, Kuno, LSK, sponeta,
   day5ive, and Excedrin for contributing premade decks
-  pedro1973 for creating new themes, see http://www.slightlymagic.net/forum/viewforum.php?f=89
   mtgrares for the publicity
   Goblin Hero for providing the images for some of the symbols
   Melvin Zhang for implementing the Monte Carlo Tree Search AI and general code cleanup/bug fixes
@@ -55,7 +54,74 @@ Thank you for your support and have fun!
 
 Release 1.40 (July 27, 2013)
 ============
-includes contributions from ...
+includes contributions from:
+a. benedict balbuena
+abigail.davenport
+hmarinmacias
+hong yie
+manve.herumedre
+melvin
+
+- Groovy script able to add activated/triggered abilities to permanents using
+  addActivation/addTrigger methods
+- implemented the World rule
+- added the following to the ability property in card script:
+  * dead recover graveyard
+  * opponent discard onto battlefield
+  * can't be the target of nongreen spells or abilities from nongreen sources
+  * enters may destroy <target>
+  * protection from colored spells
+  * protection from everything
+  * ninjutsu <mana cost>
+  * cascade
+
+- fixed: incorrect URL for image of Arrest
+- fixed: incorrect URL for image of Searing Spear
+- fixed: incorrect URL for image of Sliver token
+- fixed: incorrect URL for card text of Zhur-Taa Swine
+- fixed: Hedge Troll's ability cost {G} instead of {W} (issue 359) 
+- fixed: miracle trigger always treat X as 0 mana cost (issue 360)
+- fixed: Soulbond still applied if target is invalid upon resolution (issue 361)
+- fixed: Deadwood Treefolk can return itself from graveyard (issue 236)
+- fixed: Bitterblossom could not be selected for Scion of Oona and Mistbind Clique's abilities
+- fixed: Fumiko's bushido works only while defending
+- fixed: Mad Auntie could not regenerate Goblin tribals
+- fixed: Goblin King affect other goblins you control instead of all other goblins
+- fixed: Vigor's ability was not working
+- fixed: Mystic Restraints allows enchanted creature to untap
+- fixed: Leap of Flame able to target any permanent
+- fixed: Zealous Conscripts did not have haste
+- fixed: AI not paying kicker cost
+- fixed: bounce effect payed as part of a cost generally should not target
+
+- added the following themes to the downloads page:
+Crystal dragons bright, Crystal dragons default, Crystal dragons game mat,
+Forest, Harmony, Island, Lotus, Mountain, Palace, Plains, Swamp, Temple,
+Workshop
+
+- added the following cards:
+AEther Mutation, Agility, Ankh of Mishra, Apocalypse, Armored Ascension,
+Bituminous Blast, Blessed Orator, Blind Creeper, Blinkmoth Nexus,
+Blood Baron of Vizkopa, Bloodbraid Elf, Boros Guildgate, Brainstorm,
+Briarknit Kami, Cabal Archon, Caltrops, Cartel Aristocrat, Cloudchaser Eagle,
+Cranial Plating, Daunting Defender, Death Pits of Rath, Dimir Guildgate,
+Doubtless One, Dryad Militant, Earthshaker, Ebony Owl Netsuke,
+Eldrazi Conscription, Emrakul, the Aeons Torn, Eye of Nowhere, Fatal Frenzy,
+Fireblast, Fulminator Mage, Gaea's Revenge, Glimmervoid, Grave Betrayal,
+Grove of the Burnwillows, Gruul Guildgate, Guilty Conscience, Hermetic Study,
+Hymn to Tourach, Ink-Eyes, Servant of Oni, Ivory Tower, Kami of Fire's Roar,
+Kami of Tattered Shoji, Kami of the Crescent Moon, Kodama of the South Tree,
+Lava Spike, Lightning Reflexes, Loxodon Smiter, Maelstrom Wanderer, Memnarch,
+Mishra's Factory, Mugging, Mutilate, Ninja of the Deep Hours, Noxious Ghoul,
+Obstinate Baloth, Okiba-Gang Shinobi, Olivia Voldaren, Orbweaver Kumo,
+Orzhov Guildgate, Pariah, Phyrexian Negator, Pillar of Flame,
+Pristine Talisman, Psionic Gift, Ray of Command, Reckless Abandon,
+Renounce the Guilds, Rest in Peace, Scaled Hulk, Scavenging Ooze,
+Shardless Agent, Sidewinder Sliver, Simic Guildgate, Sire of the Storm,
+Skullcrack, Splinter Twin, Stream of Life, Strip Mine, Sublime Archangel,
+Swans of Bryn Argoll, Syncopate, Tahngarth's Rage, Thundermaw Hellkite,
+Tolarian Emissary, Underworld Connections, Varolz, the Scar-Striped,
+Vexing Devil, Warleader's Helix, War Priest of Thune, Wilt-Leaf Liege, 
 
 Release 1.39 (June 30, 2013)
 ============
