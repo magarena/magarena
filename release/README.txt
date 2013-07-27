@@ -122,7 +122,7 @@ Shardless Agent, Sidewinder Sliver, Simic Guildgate, Sire of the Storm,
 Skullcrack, Splinter Twin, Stream of Life, Strip Mine, Sublime Archangel,
 Swans of Bryn Argoll, Syncopate, Tahngarth's Rage, Thundermaw Hellkite,
 Tolarian Emissary, Underworld Connections, Varolz, the Scar-Striped,
-Vexing Devil, Warleader's Helix, War Priest of Thune, Wilt-Leaf Liege, 
+Vexing Devil, Warleader's Helix, War Priest of Thune, Wilt-Leaf Liege
 
 Release 1.39 (June 30, 2013)
 ============
