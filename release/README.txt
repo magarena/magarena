@@ -94,7 +94,7 @@ melvin
 - fixed: AI not paying kicker cost
 - fixed: bounce effect payed as part of a cost generally should not target
 
-- added the following themes to the downloads page:
+- added the following themes to https://code.google.com/p/magarena/downloads:
 Crystal dragons bright, Crystal dragons default, Crystal dragons game mat,
 Forest, Harmony, Island, Lotus, Mountain, Palace, Plains, Swamp, Temple,
 Workshop
