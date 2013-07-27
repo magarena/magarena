@@ -74,7 +74,7 @@ cards/new.txt: cards/existing_tip.txt
 
 changelog:
 	$(eval LAST := $(shell hg tags | grep "^[[:digit:]]" | head -1 | cut -d' ' -f1))
-	hg log | awk '{print}; /Added tag ${LAST}/ {exit 1}' > changelog
+	hg log | awk '{print}; /Added tag ${LAST}/ {exit 0}' > changelog
 
 cards/new_%.txt: cards/existing_tip.txt cards/existing_%.txt
 	join -v1 -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
