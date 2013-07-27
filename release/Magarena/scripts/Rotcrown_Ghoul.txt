@@ -1,7 +1,7 @@
 name=Rotcrown Ghoul
 url=http://magiccards.info/avr/en/72.html
 image=http://magiccards.info/scans/en/avr/72.jpg
-value=1.986
+value=1.972
 rarity=C
 type=Creature
 subtype=Zombie

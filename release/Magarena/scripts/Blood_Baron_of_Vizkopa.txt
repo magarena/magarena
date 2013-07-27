@@ -1,7 +1,7 @@
 name=Blood Baron of Vizkopa
 url=http://magiccards.info/dgm/en/57.html
 image=http://magiccards.info/scans/en/dgm/57.jpg
-value=3.708
+value=4.161
 rarity=M
 type=Creature
 subtype=Vampire

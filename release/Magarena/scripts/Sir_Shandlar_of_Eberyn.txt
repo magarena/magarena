@@ -1,7 +1,7 @@
 name=Sir Shandlar of Eberyn
 url=http://magiccards.info/me3/en/174.html
 image=http://magiccards.info/scans/en/me3/174.jpg
-value=2.054
+value=2.026
 rarity=C
 type=Legendary,Creature
 subtype=Human,Knight

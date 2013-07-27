@@ -1,7 +1,7 @@
 name=Armored Cancrix
 url=http://magiccards.info/m11/en/44.html
 image=http://magiccards.info/scans/en/m11/44.jpg
-value=1.262
+value=1.080
 rarity=C
 type=Creature
 subtype=Crab

@@ -1,7 +1,7 @@
 name=Souls of the Faultless
 url=http://magiccards.info/gp/en/131.html
 image=http://magiccards.info/scans/en/gp/131.jpg
-value=4.450
+value=4.447
 rarity=U
 type=Creature
 subtype=Spirit

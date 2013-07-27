@@ -1,7 +1,7 @@
 name=Cranial Plating
 url=http://magiccards.info/5dn/en/113.html
 image=http://magiccards.info/scans/en/5dn/113.jpg
-value=1.465
+value=4.549
 rarity=C
 type=Artifact
 subtype=Equipment

@@ -1,7 +1,7 @@
 name=Bituminous Blast
 url=http://magiccards.info/pc2/en/83.html
 image=http://magiccards.info/scans/en/pc2/83.jpg
-value=4.632
+value=3.606
 removal=4
 rarity=U
 type=Instant

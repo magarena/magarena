@@ -1,7 +1,7 @@
 name=Darksteel Relic
 url=http://magiccards.info/nph/en/134.html
 image=http://magiccards.info/scans/en/nph/134.jpg
-value=3.334
+value=3.335
 rarity=U
 type=Artifact
 cost={0}

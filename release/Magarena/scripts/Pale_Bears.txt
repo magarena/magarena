@@ -1,7 +1,7 @@
 name=Pale Bears
 url=http://magiccards.info/ia/en/144.html
 image=http://magiccards.info/scans/en/ia/144.jpg
-value=2.667
+value=2.663
 rarity=R
 type=Creature
 subtype=Bear

@@ -1,7 +1,7 @@
 name=Obstinate Baloth
 url=http://magiccards.info/m11/en/188.html
 image=http://magiccards.info/scans/en/m11/188.jpg
-value=4.026
+value=4.405
 rarity=R
 type=Creature
 subtype=Beast

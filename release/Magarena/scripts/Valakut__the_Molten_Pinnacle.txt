@@ -1,7 +1,7 @@
 name=Valakut, the Molten Pinnacle
 url=http://magiccards.info/zen/en/228.html
 image=http://magiccards.info/scans/en/zen/228.jpg
-value=4.253
+value=4.262
 rarity=R
 type=Land
 mana=r3

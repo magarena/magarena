@@ -1,7 +1,7 @@
 name=Punish Ignorance
 url=http://magiccards.info/ala/en/183.html
 image=http://magiccards.info/scans/en/ala/183.jpg
-value=3.106
+value=3.121
 rarity=R
 type=Instant
 cost={W}{U}{U}{B}

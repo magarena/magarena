@@ -1,7 +1,7 @@
 name=Rockslide Elemental
 url=http://magiccards.info/pch/en/63.html
 image=http://magiccards.info/scans/en/pch/63.jpg
-value=3.022
+value=3.036
 rarity=U
 type=Creature
 subtype=Elemental

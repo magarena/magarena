@@ -1,7 +1,7 @@
 name=Gavony Township
 url=http://magiccards.info/isd/en/239.html
 image=http://magiccards.info/scans/en/isd/239.jpg
-value=3.865
+value=3.871
 rarity=R
 type=Land
 ability=tap add mana {1}

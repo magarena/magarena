@@ -1,7 +1,7 @@
 name=Thallid Shell-Dweller
 url=http://magiccards.info/ts/en/226.html
 image=http://magiccards.info/scans/en/ts/226.jpg
-value=4.444
+value=3.893
 rarity=C
 type=Creature
 subtype=Fungus

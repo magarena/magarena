@@ -1,7 +1,7 @@
 name=Axebane Stag
 url=http://magiccards.info/rtr/en/116.html
 image=http://magiccards.info/scans/en/rtr/116.jpg
-value=2.033
+value=1.968
 rarity=C
 type=Creature
 subtype=Elk

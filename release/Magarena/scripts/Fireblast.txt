@@ -1,7 +1,7 @@
 name=Fireblast
 url=http://magiccards.info/jvc/en/55.html
 image=http://magiccards.info/scans/en/jvc/55.jpg
-value=4.560 
+value=4.560
 removal=4
 rarity=C
 type=Instant

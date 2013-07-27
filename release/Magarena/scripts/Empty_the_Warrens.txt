@@ -1,7 +1,7 @@
 name=Empty the Warrens
 url=http://magiccards.info/ts/en/152.html
 image=http://magiccards.info/scans/en/ts/152.jpg
-value=4.500
+value=4.263
 rarity=C
 type=Sorcery
 cost={3}{R}

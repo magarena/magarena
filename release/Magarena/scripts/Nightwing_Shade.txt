@@ -1,7 +1,7 @@
 name=Nightwing Shade
 url=http://magiccards.info/m11/en/109.html
 image=http://magiccards.info/scans/en/m11/109.jpg
-value=1.175
+value=1.533
 rarity=C
 type=Creature
 subtype=Shade

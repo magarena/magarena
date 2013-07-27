@@ -1,7 +1,7 @@
 name=Crimson Muckwader
 url=http://magiccards.info/m13/en/127.html
 image=http://magiccards.info/scans/en/m13/127.jpg
-value=3.417
+value=3.419
 rarity=U
 type=Creature
 subtype=Lizard

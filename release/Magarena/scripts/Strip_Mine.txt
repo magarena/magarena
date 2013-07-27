@@ -1,7 +1,7 @@
 name=Strip Mine
 url=http://magiccards.info/me4/en/252.html
 image=http://magiccards.info/scans/en/me4/252.jpg
-value=4.631
+value=4.638
 rarity=R
 type=Land
 ability=tap add mana {1}

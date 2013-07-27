@@ -1,7 +1,7 @@
 name=Fishliver Oil
 url=http://magiccards.info/9e/en/77.html
 image=http://magiccards.info/scans/en/9e/77.jpg
-value=1.541
+value=1.550
 rarity=C
 type=Enchantment
 subtype=Aura

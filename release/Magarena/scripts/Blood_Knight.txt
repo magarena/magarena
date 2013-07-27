@@ -1,7 +1,7 @@
 name=Blood Knight
 url=http://magiccards.info/pc/en/115.html
 image=http://magiccards.info/scans/en/pc/115.jpg
-value=4.411
+value=4.392
 ability=first strike,protection from white
 rarity=U
 type=Creature

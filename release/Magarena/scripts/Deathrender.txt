@@ -1,7 +1,7 @@
 name=Deathrender
 url=http://magiccards.info/lw/en/255.html
 image=http://magiccards.info/scans/en/lw/255.jpg
-value=4.340
+value=4.346
 rarity=R
 type=Artifact
 subtype=Equipment

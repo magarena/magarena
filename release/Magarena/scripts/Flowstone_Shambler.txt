@@ -1,7 +1,7 @@
 name=Flowstone Shambler
 url=http://magiccards.info/9e/en/185.html
 image=http://magiccards.info/scans/en/9e/185.jpg
-value=2.400
+value=2.339
 rarity=C
 type=Creature
 subtype=Beast

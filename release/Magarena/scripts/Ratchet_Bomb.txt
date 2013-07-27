@@ -1,7 +1,7 @@
 name=Ratchet Bomb
 url=http://magiccards.info/som/en/196.html
 image=http://magiccards.info/scans/en/som/196.jpg
-value=4.421
+value=4.386
 rarity=R
 type=Artifact
 cost={2}

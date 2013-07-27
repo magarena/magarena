@@ -1,7 +1,7 @@
 name=Firestorm Hellkite
 url=http://magiccards.info/vi/en/130.html
 image=http://magiccards.info/scans/en/vi/130.jpg
-value=3.069
+value=3.087
 rarity=R
 type=Creature
 subtype=Dragon

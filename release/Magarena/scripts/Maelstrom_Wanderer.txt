@@ -1,7 +1,7 @@
 name=Maelstrom Wanderer
 url=http://magiccards.info/pc2/en/101.html
 image=http://magiccards.info/scans/en/pc2/101.jpg
-value=3.708
+value=4.153
 rarity=M
 type=Legendary,Creature
 subtype=Elemental

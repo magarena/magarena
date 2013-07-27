@@ -1,7 +1,7 @@
 name=Fire Drake
 url=http://magiccards.info/me3/en/98.html
 image=http://magiccards.info/scans/en/me3/98.jpg
-value=2.237
+value=2.205
 rarity=U
 type=Creature
 subtype=Drake

@@ -1,7 +1,7 @@
 name=Argothian Swine
 url=http://magiccards.info/us/en/235.html
 image=http://magiccards.info/scans/en/us/235.jpg
-value=3.591
+value=3.522
 rarity=C
 type=Creature
 subtype=Boar

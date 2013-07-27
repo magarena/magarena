@@ -1,7 +1,7 @@
 name=Slinking Giant
 url=http://magiccards.info/shm/en/106.html
 image=http://magiccards.info/scans/en/shm/106.jpg
-value=2.068
+value=2.092
 rarity=U
 type=Creature
 subtype=Giant,Rogue

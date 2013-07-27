@@ -1,7 +1,7 @@
 name=Synchronous Sliver
 url=http://magiccards.info/pc/en/48.html
 image=http://magiccards.info/scans/en/pc/48.jpg
-value=3.243
+value=3.237
 rarity=C
 type=Creature
 subtype=Sliver

@@ -1,7 +1,7 @@
 name=Noxious Ghoul
 url=http://magiccards.info/pch/en/35.html
 image=http://magiccards.info/scans/en/pch/35.jpg
-value=3.708
+value=4.282
 rarity=U
 type=Creature
 subtype=Zombie

@@ -1,7 +1,7 @@
 name=Silence
 url=http://magiccards.info/m11/en/30.html
 image=http://magiccards.info/scans/en/m11/30.jpg
-value=4.225
+value=4.130
 rarity=R
 type=Instant
 cost={W}

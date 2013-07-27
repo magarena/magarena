@@ -1,7 +1,7 @@
 name=Daunting Defender
 url=http://magiccards.info/on/en/21.html
 image=http://magiccards.info/scans/en/on/21.jpg
-value=3.074
+value=3.089
 rarity=C
 type=Creature
 subtype=Human,Cleric

@@ -1,7 +1,7 @@
 name=Enslave
 url=http://magiccards.info/nph/en/58.html
 image=http://magiccards.info/scans/en/nph/58.jpg
-value=3.564
+value=3.568
 rarity=U
 type=Enchantment
 subtype=Aura

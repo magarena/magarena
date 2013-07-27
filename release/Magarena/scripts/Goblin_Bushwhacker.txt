@@ -1,7 +1,7 @@
 name=Goblin Bushwhacker
 url=http://magiccards.info/zen/en/125.html
 image=http://magiccards.info/scans/en/zen/125.jpg
-value=4.276
+value=4.277
 rarity=C
 type=Creature
 subtype=Goblin,Warrior

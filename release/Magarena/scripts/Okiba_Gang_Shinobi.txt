@@ -1,7 +1,7 @@
 name=Okiba-Gang Shinobi
 url=http://magiccards.info/bok/en/76.html
 image=http://magiccards.info/scans/en/bok/76.jpg
-value=3.708
+value=3.396
 rarity=C
 type=Creature
 subtype=Rat,Ninja

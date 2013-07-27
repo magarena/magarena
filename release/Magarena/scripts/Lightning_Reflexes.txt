@@ -1,7 +1,7 @@
 name=Lightning Reflexes
 url=http://magiccards.info/mr/en/186.html
 image=http://magiccards.info/scans/en/mr/186.jpg
-value=3.000
+value=3.017
 rarity=C
 type=Enchantment
 subtype=Aura

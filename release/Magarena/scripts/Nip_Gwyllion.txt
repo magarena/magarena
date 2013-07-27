@@ -1,7 +1,7 @@
 name=Nip Gwyllion
 url=http://magiccards.info/eve/en/92.html
 image=http://magiccards.info/scans/en/eve/92.jpg
-value=3.885
+value=3.872
 ability=lifelink
 rarity=C
 type=Creature

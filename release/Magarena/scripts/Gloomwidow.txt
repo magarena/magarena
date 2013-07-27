@@ -1,7 +1,7 @@
 name=Gloomwidow
 url=http://magiccards.info/shm/en/117.html
 image=http://magiccards.info/scans/en/shm/117.jpg
-value=2.656
+value=2.697
 rarity=U
 type=Creature
 subtype=Spider

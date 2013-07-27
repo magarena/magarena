@@ -1,7 +1,7 @@
 name=Armada Wurm
 url=http://magiccards.info/rtr/en/143.html
 image=http://magiccards.info/scans/en/rtr/143.jpg
-value=4.003
+value=4.008
 rarity=M
 type=Creature
 subtype=Wurm

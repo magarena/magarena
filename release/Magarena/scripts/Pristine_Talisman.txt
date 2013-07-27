@@ -1,7 +1,7 @@
 name=Pristine Talisman
 url=http://magiccards.info/nph/en/151.html
 image=http://magiccards.info/scans/en/nph/151.jpg
-value=3.591
+value=3.327
 rarity=C
 type=Artifact
 cost={3}

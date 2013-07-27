@@ -1,7 +1,7 @@
 name=Gruul Guildgate
 url=http://magiccards.info/gtc/en/243.html
 image=http://magiccards.info/scans/en/gtc/243.jpg
-value=3.077
+value=3.125
 rarity=C
 type=Land
 subtype=Gate

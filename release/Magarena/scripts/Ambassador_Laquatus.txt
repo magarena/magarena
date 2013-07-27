@@ -1,7 +1,7 @@
 name=Ambassador Laquatus
 url=http://magiccards.info/10e/en/65.html
 image=http://magiccards.info/scans/en/10e/65.jpg
-value=4.008
+value=4.023
 rarity=R
 type=Legendary,Creature
 subtype=Merfolk,Wizard

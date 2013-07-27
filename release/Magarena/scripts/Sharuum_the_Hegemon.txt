@@ -1,7 +1,7 @@
 name=Sharuum the Hegemon
 url=http://magiccards.info/ala/en/194.html
 image=http://magiccards.info/scans/en/ala/194.jpg
-value=4.006
+value=4.017
 rarity=M
 type=Legendary,Artifact,Creature
 subtype=Sphinx

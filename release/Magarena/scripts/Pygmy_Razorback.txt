@@ -1,7 +1,7 @@
 name=Pygmy Razorback
 url=http://magiccards.info/pr/en/120.html
 image=http://magiccards.info/scans/en/pr/120.jpg
-value=2.500
+value=2.569
 rarity=C
 type=Creature
 subtype=Boar

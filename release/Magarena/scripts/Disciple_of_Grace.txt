@@ -1,7 +1,7 @@
 name=Disciple of Grace
 url=http://magiccards.info/on/en/25.html
 image=http://magiccards.info/scans/en/on/25.jpg
-value=3.083
+value=3.040
 rarity=C
 type=Creature
 subtype=Human,Cleric

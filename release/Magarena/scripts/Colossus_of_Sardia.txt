@@ -1,7 +1,7 @@
 name=Colossus of Sardia
 url=http://magiccards.info/10e/en/317.html
 image=http://magiccards.info/scans/en/10e/317.jpg
-value=3.154
+value=3.190
 rarity=R
 type=Artifact,Creature
 subtype=Golem

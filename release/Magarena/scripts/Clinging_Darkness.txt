@@ -1,7 +1,7 @@
 name=Clinging Darkness
 url=http://magiccards.info/rav/en/80.html
 image=http://magiccards.info/scans/en/rav/80.jpg
-value=3.062
+value=3.073
 removal=1
 rarity=C
 type=Enchantment

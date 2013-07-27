@@ -1,7 +1,7 @@
 name=Rummaging Goblin
 url=http://magiccards.info/m13/en/146.html
 image=http://magiccards.info/scans/en/m13/146.jpg
-value=2.321
+value=2.286
 rarity=C
 type=Creature
 subtype=Goblin,Rogue

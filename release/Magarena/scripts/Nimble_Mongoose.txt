@@ -1,7 +1,7 @@
 name=Nimble Mongoose
 url=http://magiccards.info/od/en/258.html
 image=http://magiccards.info/scans/en/od/258.jpg
-value=4.420
+value=4.444
 rarity=U
 type=Creature
 subtype=Mongoose

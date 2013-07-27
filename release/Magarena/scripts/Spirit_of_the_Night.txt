@@ -1,7 +1,7 @@
 name=Spirit of the Night
 url=http://magiccards.info/mr/en/44.html
 image=http://magiccards.info/scans/en/mr/44.jpg
-value=4.092
+value=4.091
 rarity=R
 type=Legendary,Creature
 subtype=Demon,Spirit

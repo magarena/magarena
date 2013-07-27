@@ -1,7 +1,7 @@
 name=Mizzium Mortars
 url=http://magiccards.info/rtr/en/101.html
 image=http://magiccards.info/scans/en/rtr/101.jpg
-value=3.906
+value=3.909
 rarity=R
 type=Sorcery
 cost={1}{R}

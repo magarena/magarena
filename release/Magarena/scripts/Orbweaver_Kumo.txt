@@ -1,7 +1,7 @@
 name=Orbweaver Kumo
 url=http://magiccards.info/chk/en/231.html
 image=http://magiccards.info/scans/en/chk/231.jpg
-value=3.737
+value=0.917
 rarity=U
 type=Creature
 subtype=Spirit

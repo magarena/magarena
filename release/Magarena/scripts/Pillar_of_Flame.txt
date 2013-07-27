@@ -1,7 +1,7 @@
 name=Pillar of Flame
 url=http://magiccards.info/avr/en/149.html
 image=http://magiccards.info/scans/en/avr/149.jpg
-value=3.285
+value=3.789
 removal=2
 rarity=C
 type=Sorcery

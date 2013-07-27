@@ -1,7 +1,7 @@
 name=Minotaur Tactician
 url=http://magiccards.info/ap/en/65.html
 image=http://magiccards.info/scans/en/ap/65.jpg
-value=1.324
+value=1.321
 rarity=C
 type=Creature
 subtype=Minotaur

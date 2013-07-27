@@ -1,7 +1,7 @@
 name=Metamorphic Wurm
 url=http://magiccards.info/od/en/250.html
 image=http://magiccards.info/scans/en/od/250.jpg
-value=3.683
+value=3.703
 rarity=U
 type=Creature
 subtype=Elephant,Wurm

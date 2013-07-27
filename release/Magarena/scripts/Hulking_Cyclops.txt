@@ -1,7 +1,7 @@
 name=Hulking Cyclops
 url=http://magiccards.info/8e/en/195.html
 image=http://magiccards.info/scans/en/8e/195.jpg
-value=2.558
+value=2.574
 ability=can't block
 rarity=U
 type=Creature

@@ -1,7 +1,7 @@
 name=Runeboggle
 url=http://magiccards.info/gp/en/33.html
 image=http://magiccards.info/scans/en/gp/33.jpg
-value=2.068
+value=2.078
 rarity=C
 type=Instant
 cost={2}{U}

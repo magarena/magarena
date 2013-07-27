@@ -1,7 +1,7 @@
 name=Tek
 url=http://magiccards.info/in/en/313.html
 image=http://magiccards.info/scans/en/in/313.jpg
-value=3.940
+value=3.949
 rarity=R
 type=Artifact,Creature
 subtype=Dragon

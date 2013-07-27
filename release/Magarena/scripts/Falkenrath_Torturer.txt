@@ -1,7 +1,7 @@
 name=Falkenrath Torturer
 url=http://magiccards.info/dka/en/60.html
 image=http://magiccards.info/scans/en/dka/60.jpg
-value=2.024
+value=2.023
 rarity=C
 type=Creature
 subtype=Vampire

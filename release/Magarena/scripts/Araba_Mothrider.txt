@@ -1,7 +1,7 @@
 name=Araba Mothrider
 url=http://magiccards.info/sok/en/2.html
 image=http://magiccards.info/scans/en/sok/2.jpg
-value=3.000
+value=2.963
 rarity=C
 type=Creature
 subtype=Human,Samurai

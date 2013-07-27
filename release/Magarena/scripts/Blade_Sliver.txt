@@ -1,7 +1,7 @@
 name=Blade Sliver
 url=http://magiccards.info/le/en/88.html
 image=http://magiccards.info/scans/en/le/88.jpg
-value=3.606
+value=3.588
 rarity=U
 type=Creature
 subtype=Sliver

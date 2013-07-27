@@ -1,7 +1,7 @@
 name=Advent of the Wurm
 url=http://magiccards.info/dgm/en/51.html
 image=http://magiccards.info/scans/en/dgm/51.jpg
-value=4.226
+value=4.156
 rarity=R
 type=Instant
 cost={1}{G}{G}{W}

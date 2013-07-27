@@ -1,7 +1,7 @@
 name=Totally Lost
 url=http://magiccards.info/gtc/en/54.html
 image=http://magiccards.info/scans/en/gtc/54.jpg
-value=2.841
+value=2.882
 removal=3
 rarity=C
 type=Instant

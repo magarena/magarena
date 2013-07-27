@@ -1,7 +1,7 @@
 name=Psychic Strike
 url=http://magiccards.info/gtc/en/189.html
 image=http://magiccards.info/scans/en/gtc/189.jpg
-value=3.558
+value=3.565
 rarity=C
 type=Instant
 cost={1}{U}{B}

@@ -1,7 +1,7 @@
 name=Court Homunculus
 url=http://magiccards.info/cfx/en/6.html
 image=http://magiccards.info/scans/en/cfx/6.jpg
-value=3.875
+value=3.889
 rarity=C
 type=Artifact,Creature
 subtype=Homunculus

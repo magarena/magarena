@@ -1,7 +1,7 @@
 name=Tolarian Emissary
 url=http://magiccards.info/in/en/81.html
 image=http://magiccards.info/scans/en/in/81.jpg
-value=3.754
+value=2.682
 rarity=U
 type=Creature
 subtype=Human,Wizard

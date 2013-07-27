@@ -1,7 +1,7 @@
 name=Bloodstone Cameo
 url=http://magiccards.info/in/en/298.html
 image=http://magiccards.info/scans/en/in/298.jpg
-value=2.329
+value=2.297
 rarity=U
 type=Artifact
 cost={3}

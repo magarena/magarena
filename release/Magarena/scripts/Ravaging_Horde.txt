@@ -1,7 +1,7 @@
 name=Ravaging Horde
 url=http://magiccards.info/p3k/en/118.html
 image=http://magiccards.info/scans/en/p3k/118.jpg
-value=3.614
+value=3.630
 removal=1
 rarity=U
 type=Creature

@@ -1,7 +1,7 @@
 name=Ancient Craving
 url=http://magiccards.info/ddk/en/28.html
 image=http://magiccards.info/scans/en/ddk/28.jpg
-value=4.094
+value=4.147
 rarity=R
 type=Sorcery
 cost={3}{B}

@@ -1,7 +1,7 @@
 name=Convolute
 url=http://magiccards.info/rav/en/41.html
 image=http://magiccards.info/scans/en/rav/41.jpg
-value=2.489
+value=2.500
 rarity=C
 type=Instant
 cost={2}{U}

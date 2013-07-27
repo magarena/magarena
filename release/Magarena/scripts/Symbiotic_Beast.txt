@@ -1,7 +1,7 @@
 name=Symbiotic Beast
 url=http://magiccards.info/on/en/287.html
 image=http://magiccards.info/scans/en/on/287.jpg
-value=3.793
+value=3.800
 rarity=U
 type=Creature
 subtype=Insect,Beast

@@ -1,7 +1,7 @@
 name=Erase
 url=http://magiccards.info/m13/en/13.html
 image=http://magiccards.info/scans/en/m13/13.jpg
-value=4.205
+value=4.216
 rarity=C
 type=Instant
 cost={W}

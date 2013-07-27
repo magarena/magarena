@@ -1,7 +1,7 @@
 name=Fatal Fumes
 url=http://magiccards.info/dgm/en/24.html
 image=http://magiccards.info/scans/en/dgm/24.jpg
-value=1.800
+value=1.767
 removal=2
 rarity=C
 type=Instant

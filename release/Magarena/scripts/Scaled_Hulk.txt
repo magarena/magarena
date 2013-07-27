@@ -1,7 +1,7 @@
 name=Scaled Hulk
 url=http://magiccards.info/bok/en/143.html
 image=http://magiccards.info/scans/en/bok/143.jpg
-value=3.737
+value=2.393
 rarity=C
 type=Creature
 subtype=Spirit

@@ -1,7 +1,7 @@
 name=Kitsune Dawnblade
 url=http://magiccards.info/sok/en/16.html
 image=http://magiccards.info/scans/en/sok/16.jpg
-value=1.788
+value=1.757
 rarity=C
 type=Creature
 subtype=Fox,Samurai

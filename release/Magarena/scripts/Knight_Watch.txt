@@ -1,7 +1,7 @@
 name=Knight Watch
 url=http://magiccards.info/gtc/en/19.html
 image=http://magiccards.info/scans/en/gtc/19.jpg
-value=2.771
+value=2.778
 rarity=C
 type=Sorcery
 cost={4}{W}

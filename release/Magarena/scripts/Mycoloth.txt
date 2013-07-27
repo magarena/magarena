@@ -1,7 +1,7 @@
 name=Mycoloth
 url=http://magiccards.info/ala/en/140.html
 image=http://magiccards.info/scans/en/ala/140.jpg
-value=3.438
+value=3.470
 rarity=R
 type=Creature
 subtype=Fungus

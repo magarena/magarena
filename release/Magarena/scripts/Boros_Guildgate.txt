@@ -1,7 +1,7 @@
 name=Boros Guildgate
 url=http://magiccards.info/gtc/en/239.html
 image=http://magiccards.info/scans/en/gtc/239.jpg
-value=3.077
+value=3.375
 rarity=C
 type=Land
 subtype=Gate

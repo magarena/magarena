@@ -1,7 +1,7 @@
 name=Illusions of Grandeur
 url=http://magiccards.info/med/en/40.html
 image=http://magiccards.info/scans/en/med/40.jpg
-value=4.560
+value=4.507
 rarity=R
 type=Enchantment
 cost={3}{U}

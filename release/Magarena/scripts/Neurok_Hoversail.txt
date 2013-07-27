@@ -1,7 +1,7 @@
 name=Neurok Hoversail
 url=http://magiccards.info/mi/en/218.html
 image=http://magiccards.info/scans/en/mi/218.jpg
-value=3.100
+value=3.115
 rarity=C
 type=Artifact
 subtype=Equipment

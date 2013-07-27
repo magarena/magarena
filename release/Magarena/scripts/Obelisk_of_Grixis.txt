@@ -1,7 +1,7 @@
 name=Obelisk of Grixis
 url=http://magiccards.info/ddh/en/60.html
 image=http://magiccards.info/scans/en/ddh/60.jpg
-value=2.381
+value=2.295
 rarity=C
 type=Artifact
 cost={3}

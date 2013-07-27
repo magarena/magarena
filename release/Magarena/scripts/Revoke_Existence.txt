@@ -1,7 +1,7 @@
 name=Revoke Existence
 url=http://magiccards.info/som/en/18.html
 image=http://magiccards.info/scans/en/som/18.jpg
-value=4.015
+value=4.043
 rarity=C
 type=Sorcery
 cost={1}{W}

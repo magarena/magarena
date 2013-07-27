@@ -1,7 +1,7 @@
 name=Downsize
 url=http://magiccards.info/rtr/en/38.html
 image=http://magiccards.info/scans/en/rtr/38.jpg
-value=2.676
+value=2.663
 rarity=C
 type=Instant
 cost={U}

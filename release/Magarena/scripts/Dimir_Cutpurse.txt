@@ -1,7 +1,7 @@
 name=Dimir Cutpurse
 url=http://magiccards.info/ddh/en/49.html
 image=http://magiccards.info/scans/en/ddh/49.jpg
-value=4.622
+value=4.630
 rarity=R
 type=Creature
 subtype=Spirit

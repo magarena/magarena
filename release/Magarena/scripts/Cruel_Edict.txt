@@ -1,7 +1,7 @@
 name=Cruel Edict
 url=http://magiccards.info/dvd/en/48.html
 image=http://magiccards.info/scans/en/dvd/48.jpg
-value=4.052
+value=4.000
 removal=2
 rarity=U
 type=Sorcery

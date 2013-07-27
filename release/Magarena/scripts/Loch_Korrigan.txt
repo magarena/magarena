@@ -1,7 +1,7 @@
 name=Loch Korrigan
 url=http://magiccards.info/shm/en/71.html
 image=http://magiccards.info/scans/en/shm/71.jpg
-value=1.615
+value=1.602
 rarity=C
 type=Creature
 subtype=Spirit

@@ -1,7 +1,7 @@
 name=Venser, the Sojourner
 url=http://magiccards.info/som/en/135.html
 image=http://magiccards.info/scans/en/som/135.jpg
-value=4.085
+value=4.073
 rarity=M
 type=Planeswalker
 subtype=Venser

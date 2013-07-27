@@ -1,7 +1,7 @@
 name=Anurid Barkripper
 url=http://magiccards.info/ju/en/104.html
 image=http://magiccards.info/scans/en/ju/104.jpg
-value=2.761
+value=2.812
 rarity=C
 type=Creature
 subtype=Frog,Beast

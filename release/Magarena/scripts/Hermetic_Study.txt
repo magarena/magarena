@@ -1,7 +1,7 @@
 name=Hermetic Study
 url=http://magiccards.info/us/en/78.html
 image=http://magiccards.info/scans/en/us/78.jpg
-value=3.792
+value=3.775
 rarity=C
 type=Enchantment
 subtype=Aura

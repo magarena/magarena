@@ -1,7 +1,7 @@
 name=Mourning Thrull
 url=http://magiccards.info/gp/en/146.html
 image=http://magiccards.info/scans/en/gp/146.jpg
-value=3.663
+value=3.648
 ability=flying
 rarity=C
 type=Creature

@@ -1,7 +1,7 @@
 name=Sundering Growth
 url=http://magiccards.info/rtr/en/223.html
 image=http://magiccards.info/scans/en/rtr/223.jpg
-value=3.935
+value=3.941
 rarity=C
 type=Instant
 cost={G/W}{G/W}

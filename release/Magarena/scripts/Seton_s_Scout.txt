@@ -1,7 +1,7 @@
 name=Seton's Scout
 url=http://magiccards.info/tr/en/138.html
 image=http://magiccards.info/scans/en/tr/138.jpg
-value=3.711
+value=3.700
 rarity=U
 type=Creature
 subtype=Centaur,Druid,Scout,Archer

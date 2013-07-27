@@ -1,7 +1,7 @@
 name=Ankh of Mishra
 url=http://magiccards.info/med/en/151.html
 image=http://magiccards.info/scans/en/med/151.jpg
-value=4.256
+value=4.130
 rarity=R
 type=Artifact
 cost={2}

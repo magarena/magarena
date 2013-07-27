@@ -1,7 +1,7 @@
 name=Memnarch
 url=http://magiccards.info/arc/en/112.html
 image=http://magiccards.info/scans/en/arc/112.jpg
-value=3.708
+value=4.528
 rarity=R
 type=Legendary,Artifact,Creature
 subtype=Wizard

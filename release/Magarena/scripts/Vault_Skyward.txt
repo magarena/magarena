@@ -1,7 +1,7 @@
 name=Vault Skyward
 url=http://magiccards.info/som/en/51.html
 image=http://magiccards.info/scans/en/som/51.jpg
-value=2.951
+value=2.952
 rarity=C
 type=Instant
 cost={U}

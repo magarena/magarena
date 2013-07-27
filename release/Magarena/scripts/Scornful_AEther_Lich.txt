@@ -1,7 +1,7 @@
 name=Scornful AEther-Lich
 url=http://magiccards.info/cfx/en/34.html
 image=http://magiccards.info/scans/en/cfx/34.jpg
-value=2.930
+value=2.921
 rarity=U
 type=Artifact,Creature
 subtype=Zombie,Wizard

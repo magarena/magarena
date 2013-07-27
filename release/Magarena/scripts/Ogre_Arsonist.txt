@@ -1,7 +1,7 @@
 name=Ogre Arsonist
 url=http://magiccards.info/po2/en/110.html
 image=http://magiccards.info/scans/en/po2/110.jpg
-value=4.000
+value=3.974
 removal=1
 rarity=U
 type=Creature

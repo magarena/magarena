@@ -1,7 +1,7 @@
 name=Grave Betrayal
 url=http://magiccards.info/rtr/en/67.html
 image=http://magiccards.info/scans/en/rtr/67.jpg
-value=4.393
+value=3.825
 rarity=R
 type=Enchantment
 cost={5}{B}{B}

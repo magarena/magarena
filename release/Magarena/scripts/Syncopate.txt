@@ -1,7 +1,7 @@
 name=Syncopate
 url=http://magiccards.info/rtr/en/54.html
 image=http://magiccards.info/scans/en/rtr/54.jpg
-value=4.653
+value=3.810
 rarity=U
 type=Instant
 cost={X}{U}

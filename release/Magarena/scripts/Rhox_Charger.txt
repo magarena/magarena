@@ -1,7 +1,7 @@
 name=Rhox Charger
 url=http://magiccards.info/ala/en/145.html
 image=http://magiccards.info/scans/en/ala/145.jpg
-value=2.962
+value=2.963
 rarity=U
 type=Creature
 subtype=Rhino,Soldier

@@ -1,7 +1,7 @@
 name=Sarkhan Vol
 url=http://magiccards.info/ala/en/191.html
 image=http://magiccards.info/scans/en/ala/191.jpg
-value=3.775
+value=3.929
 rarity=M
 type=Planeswalker
 subtype=Sarkhan

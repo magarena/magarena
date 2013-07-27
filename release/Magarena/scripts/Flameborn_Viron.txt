@@ -1,7 +1,7 @@
 name=Flameborn Viron
 url=http://magiccards.info/nph/en/83.html
 image=http://magiccards.info/scans/en/nph/83.jpg
-value=2.148
+value=2.145
 rarity=C
 type=Creature
 subtype=Insect

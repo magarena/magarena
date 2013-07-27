@@ -1,7 +1,7 @@
 name=Sinkhole
 url=http://magiccards.info/me4/en/97.html
 image=http://magiccards.info/scans/en/me4/97.jpg
-value=4.640
+value=4.649
 removal=3
 rarity=C
 type=Sorcery

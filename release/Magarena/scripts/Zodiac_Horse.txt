@@ -1,7 +1,7 @@
 name=Zodiac Horse
 url=http://magiccards.info/p3k/en/159.html
 image=http://magiccards.info/scans/en/p3k/159.jpg
-value=3.091
+value=3.109
 rarity=U
 type=Creature
 subtype=Horse

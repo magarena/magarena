@@ -1,7 +1,7 @@
 name=Gustcloak Runner
 url=http://magiccards.info/on/en/35.html
 image=http://magiccards.info/scans/en/on/35.jpg
-value=2.946
+value=3.017
 rarity=C
 type=Creature
 subtype=Human,Soldier

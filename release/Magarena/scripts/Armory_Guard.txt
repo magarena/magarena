@@ -1,7 +1,7 @@
 name=Armory Guard
 url=http://magiccards.info/rtr/en/2.html
 image=http://magiccards.info/scans/en/rtr/2.jpg
-value=2.104
+value=2.093
 rarity=C
 type=Creature
 subtype=Giant,Soldier

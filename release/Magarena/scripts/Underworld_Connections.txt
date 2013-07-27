@@ -1,7 +1,7 @@
 name=Underworld Connections
 url=http://magiccards.info/rtr/en/83.html
 image=http://magiccards.info/scans/en/rtr/83.jpg
-value=3.867
+value=3.764
 rarity=R
 type=Enchantment
 subtype=Aura
