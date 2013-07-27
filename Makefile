@@ -24,19 +24,8 @@ cubes: \
 	release/Magarena/mods/standard_cube.txt \
 	release/Magarena/mods/modern_cube.txt
 
-themes: \
-	release/Magarena/mods/felt_theme.zip \
-	release/Magarena/mods/brown_theme.zip \
-	release/Magarena/mods/blackswamp_theme.zip \
-	release/Magarena/mods/bluemarble_theme.zip \
-	release/Magarena/mods/darkbattle_theme.zip \
-	release/Magarena/mods/gothic_theme.zip \
-	release/Magarena/mods/greenforest_theme.zip \
-	release/Magarena/mods/moon_theme.zip \
-	release/Magarena/mods/mystic_theme.zip \
-	release/Magarena/mods/nature_theme.zip \
-	release/Magarena/mods/redfire_theme.zip \
-	release/Magarena/mods/whiteangel_theme.zip
+themes: 
+	make `ls -d1 release/Magarena/mods/*_theme | sed 's/\/$$/.zip/'`
 
 cards_diff: $(MAG)
 	for i in `hg stat -q src/magic/card release/Magarena/scripts | cut -d' ' -f2 | sort -t'/' -k4`; do hg diff $$i; done | flip -u - > $@
