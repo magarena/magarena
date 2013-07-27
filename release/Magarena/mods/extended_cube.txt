@@ -60,6 +60,7 @@ Argent Sphinx
 Argentum Armor
 Armada Wurm
 Armament Master
+Armored Ascension
 Armored Cancrix
 Armored Skaab
 Armored Warhorse
@@ -138,6 +139,7 @@ Blind Obedience
 Blistergrub
 Blisterstick Shaman
 Blood Artist
+Blood Baron of Vizkopa
 Bloodcrazed Neonate
 Blood Crypt
 Bloodflow Connoisseur
@@ -164,6 +166,7 @@ Bone to Ash
 Boneyard Wurm
 Bonfire of the Damned
 Boros Elite
+Boros Guildgate
 Boros Mastiff
 Boros Reckoner
 Bountiful Harvest
@@ -202,6 +205,7 @@ Carnage Wurm
 Carnifex Demon
 Carnival Hellsteed
 Carrion Call
+Cartel Aristocrat
 Catacomb Slug
 Cathars' Crusade
 Cathedral of War
@@ -317,6 +321,7 @@ Devastation Tide
 Devouring Swarm
 Devout Lightcaster
 Diminish
+Dimir Guildgate
 Diregraf Captain
 Diregraf Escort
 Diregraf Ghoul
@@ -352,6 +357,7 @@ Dross Ripper
 Drowned Catacomb
 Druid's Deliverance
 Druid's Familiar
+Dryad Militant
 Dryad's Favor
 Dungeon Geists
 Dungrove Elder
@@ -367,6 +373,7 @@ Eel Umbra
 Eland Umbra
 Elder Cathar
 Elder of Laurels
+Eldrazi Conscription
 Eldrazi Monument
 Electrickery
 Elesh Norn, Grand Cenobite
@@ -381,6 +388,7 @@ Emancipation Angel
 Ember Hauler
 Embersmith
 Emeria Angel
+Emrakul, the Aeons Torn
 Enclave Cryptologist
 Enclave Elite
 Endless Ranks of the Dead
@@ -453,6 +461,7 @@ Fume Spitter
 Furnace Whelp
 Furor of the Bitten
 Furyborn Hellkite
+Gaea's Revenge
 Gallows Warden
 Galvanic Juggernaut
 Garruk, Primal Hunter
@@ -527,6 +536,7 @@ Gore-House Chainwalker
 Grand Abolisher
 Grappler Spider
 Grasp of Darkness
+Grave Betrayal
 Grave Bramble
 Gravedigger
 Grave Exchange
@@ -550,6 +560,7 @@ Griselbrand
 Grounded
 Growing Ranks
 Gruesome Deformity
+Gruul Guildgate
 Gryff Vanguard
 Guard Duty
 Guard Gomazoa
@@ -726,6 +737,7 @@ Lord of the Unreal
 Lost Leonin
 Loxodon Convert
 Loxodon Partisan
+Loxodon Smiter
 Loxodon Wayfarer
 Lumberknot
 Lumengrid Drake
@@ -802,10 +814,12 @@ Morkrut Banshee
 Mortus Strider
 Mountain
 Mox Opal
+Mugging
 Murasa Pyromancer
 Murder
 Murder of Crows
 Murmuring Phantasm
+Mutilate
 Myr Galvanizer
 Myr Propagator
 Myr Sire
@@ -849,11 +863,13 @@ Noble Vestige
 Novablast Wurm
 Null Champion
 Oblivion Ring
+Obstinate Baloth
 Oculus
 Ogre Menial
 Ogre Resister
 Ogre's Cleaver
 Ogre Sentry
+Olivia Voldaren
 Ondu Cleric
 One-Eyed Scarecrow
 Onyx Mage
@@ -861,6 +877,7 @@ Oran-Rief Survivalist
 Orchard Spirit
 Ordruun Veteran
 Ornithopter
+Orzhov Guildgate
 Otherworld Atlas
 Outwit
 Overgrown Tomb
@@ -887,6 +904,7 @@ Phyrexian Rager
 Phyrexian Vatmother
 Pierce Strider
 Pillarfield Ox
+Pillar of Flame
 Pitchburn Devils
 Plague Myr
 Plague Stinger
@@ -901,6 +919,7 @@ Pride Guardian
 Priests of Norn
 Primal Huntbeast
 Primordial Hydra
+Pristine Talisman
 Prized Elephant
 Prodigal Pyromancer
 Psychic Barrier
@@ -946,7 +965,9 @@ Reinforced Bulwark
 Relentless Rats
 Render Silent
 Renegade Demon
+Renounce the Guilds
 Requiem Angel
+Rest in Peace
 Restoration Angel
 Reverberate
 Revoke Existence
@@ -1047,6 +1068,7 @@ Silvercoat Lion
 Silver-Inlaid Dagger
 Silver Myr
 Silverskin Armor
+Simic Guildgate
 Skarrg Goliath
 Skeletal Wurm
 Skillful Lunge
@@ -1058,6 +1080,7 @@ Skirsdag Cultist
 Skirsdag Flayer
 Skithiryx, the Blight Dragon
 Skitter of Lizards
+Skullcrack
 Skyknight Legionnaire
 Skylasher
 Skyline Predator
@@ -1114,6 +1137,7 @@ Spirit Mantle
 Spiteful Shadows
 Splatter Thug
 Splinterfright
+Splinter Twin
 Sporecap Spider
 Staff of Nin
 Stampeding Rhino
@@ -1143,6 +1167,7 @@ Stromkirk Patrol
 Student of Warfare
 Stuffy Doll
 Sturmgeist
+Sublime Archangel
 Sudden Disappearance
 Sulfur Falls
 Sunblast Angel
@@ -1162,6 +1187,7 @@ Sword of Feast and Famine
 Sword of Vengeance
 Sword of War and Peace
 Sylvok Lifestaff
+Syncopate
 Syndicate Enforcer
 Syndic of Tithes
 Tajic, Blade of the Legion
@@ -1190,6 +1216,7 @@ Thragtusk
 Thran Golem
 Thrill-Kill Assassin
 Thrun, the Last Troll
+Thundermaw Hellkite
 Thunderous Wrath
 Thunder Strike
 Tibalt, the Fiend-Blooded
@@ -1241,6 +1268,7 @@ Umara Raptor
 Unbreathing Horde
 Uncanny Speed
 Undead Executioner
+Underworld Connections
 Unflinching Courage
 Unhallowed Pact
 Unholy Strength
@@ -1259,6 +1287,7 @@ Vampiric Fury
 Vandalblast
 Vanishment
 Vapor Snag
+Varolz, the Scar-Striped
 Vassal Soul
 Vastwood Gorger
 Vault of the Archangel
@@ -1269,6 +1298,7 @@ Vengeful Vampire
 Venser, the Sojourner
 Vessel of Endless Rest
 Veteran's Reflexes
+Vexing Devil
 Viashino Shanktail
 Victim of Night
 Victory's Herald
@@ -1303,9 +1333,11 @@ Wall of Tanglecord
 Wall of Torches
 Wall of Vines
 Warclamp Mastiff
+Warleader's Helix
 Warlord's Axe
 Warmind Infantry
 Warpath Ghoul
+War Priest of Thune
 Warstorm Surge
 Wasteland Viper
 Watercourser

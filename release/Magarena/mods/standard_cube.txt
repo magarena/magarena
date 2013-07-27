@@ -58,6 +58,7 @@ Bladed Bracers
 Bladetusk Boar
 Blind Obedience
 Blood Artist
+Blood Baron of Vizkopa
 Bloodcrazed Neonate
 Blood Crypt
 Bloodflow Connoisseur
@@ -71,6 +72,7 @@ Bone to Ash
 Boneyard Wurm
 Bonfire of the Damned
 Boros Elite
+Boros Guildgate
 Boros Mastiff
 Boros Reckoner
 Bountiful Harvest
@@ -92,6 +94,7 @@ Captain of the Mists
 Captain of the Watch
 Captain's Call
 Carnival Hellsteed
+Cartel Aristocrat
 Catacomb Slug
 Cathars' Crusade
 Cathedral of War
@@ -149,6 +152,7 @@ Demonlord of Ashmouth
 Deranged Outcast
 Desolate Lighthouse
 Devastation Tide
+Dimir Guildgate
 Diregraf Captain
 Diregraf Escort
 Diregraf Ghoul
@@ -172,6 +176,7 @@ Drogskol Reaver
 Drowned Catacomb
 Druid's Deliverance
 Druid's Familiar
+Dryad Militant
 Dungeon Geists
 Duskdale Wurm
 Duskmantle Prowler
@@ -265,6 +270,7 @@ Goldnight Redeemer
 Golgari Guildgate
 Golgari Longlegs
 Gore-House Chainwalker
+Grave Betrayal
 Grave Bramble
 Grave Exchange
 Gravetiller Wurm
@@ -279,6 +285,7 @@ Griselbrand
 Grounded
 Growing Ranks
 Gruesome Deformity
+Gruul Guildgate
 Gryff Vanguard
 Guardian Lions
 Guardians of Akrasa
@@ -350,6 +357,7 @@ Latch Seeker
 Leap of Faith
 Legion Loyalist
 Lightning Mauler
+Loxodon Smiter
 Lumberknot
 Lunar Mystic
 Lyev Skyknight
@@ -392,9 +400,11 @@ Moorland Inquisitor
 Morkrut Banshee
 Mortus Strider
 Mountain
+Mugging
 Murder
 Murder of Crows
 Murmuring Phantasm
+Mutilate
 Narstad Scrapper
 Natural End
 Naturalize
@@ -415,9 +425,11 @@ Niblis of the Urn
 Night Revelers
 Nightshade Peddler
 Oblivion Ring
+Olivia Voldaren
 One-Eyed Scarecrow
 Orchard Spirit
 Ordruun Veteran
+Orzhov Guildgate
 Otherworld Atlas
 Outwit
 Overgrown Tomb
@@ -428,6 +440,7 @@ Pathbreaker Wurm
 Perilous Shadow
 Phyrexian Hulk
 Pillarfield Ox
+Pillar of Flame
 Pitchburn Devils
 Plains
 Plummet
@@ -457,7 +470,9 @@ Reckless Brute
 Reforge the Soul
 Render Silent
 Renegade Demon
+Renounce the Guilds
 Requiem Angel
+Rest in Peace
 Restoration Angel
 Reverberate
 Righteous Blow
@@ -514,11 +529,13 @@ Silverchase Fox
 Silverclaw Griffin
 Silvercoat Lion
 Silver-Inlaid Dagger
+Simic Guildgate
 Skarrg Goliath
 Skillful Lunge
 Skinbrand Goblin
 Skirsdag Cultist
 Skirsdag Flayer
+Skullcrack
 Skyknight Legionnaire
 Skylasher
 Skyline Predator
@@ -564,6 +581,7 @@ Stromkirk Noble
 Stromkirk Patrol
 Stuffy Doll
 Sturmgeist
+Sublime Archangel
 Sudden Disappearance
 Sulfur Falls
 Sundering Growth
@@ -571,6 +589,7 @@ Sunpetal Grove
 Sunspire Griffin
 Supreme Verdict
 Swamp
+Syncopate
 Syndicate Enforcer
 Syndic of Tithes
 Tajic, Blade of the Legion
@@ -589,6 +608,7 @@ Thraben Purebloods
 Thraben Valiant
 Thragtusk
 Thrill-Kill Assassin
+Thundermaw Hellkite
 Thunderous Wrath
 Tibalt, the Fiend-Blooded
 Timberland Guide
@@ -621,6 +641,7 @@ Ulvenwald Bear
 Unbreathing Horde
 Uncanny Speed
 Undead Executioner
+Underworld Connections
 Unflinching Courage
 Unhallowed Pact
 Unruly Mob
@@ -632,11 +653,13 @@ Vampire Nighthawk
 Vampiric Fury
 Vandalblast
 Vanishment
+Varolz, the Scar-Striped
 Vassal Soul
 Vastwood Gorger
 Vault of the Archangel
 Vengeful Vampire
 Vessel of Endless Rest
+Vexing Devil
 Viashino Shanktail
 Victim of Night
 Vigilante Justice
@@ -656,7 +679,9 @@ Wake the Reflections
 Walking Corpse
 Wall of Fire
 Warclamp Mastiff
+Warleader's Helix
 Warmind Infantry
+War Priest of Thune
 Wasteland Viper
 Watercourser
 Watery Grave
