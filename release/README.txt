@@ -57,6 +57,7 @@ Release 1.40 (July 27, 2013)
 includes contributions from:
 a. benedict balbuena
 abigail.davenport
+elias
 hmarinmacias
 hong yie
 manve.herumedre
