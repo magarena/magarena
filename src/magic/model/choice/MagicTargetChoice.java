@@ -410,6 +410,14 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice SACRIFICE_HUMAN =
             new MagicTargetChoice(MagicTargetFilter.TARGET_HUMAN_YOU_CONTROL,false,MagicTargetHint.None,
                     "a Human to sacrifice");
+
+    public static final MagicTargetChoice SACRIFICE_CLERIC = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_CLERIC_CREATURE_YOU_CONTROL,
+        false,
+        MagicTargetHint.None,
+        "a Cleric creature to sacrifice"
+    );
+
     public static final MagicTargetChoice TARGET_CARD_FROM_GRAVEYARD =
             new MagicTargetChoice(MagicTargetFilter.TARGET_CARD_FROM_GRAVEYARD,true,MagicTargetHint.None,"target card from your graveyard");
     public static final MagicTargetChoice NEG_TARGET_CARD_FROM_ALL_GRAVEYARDS =

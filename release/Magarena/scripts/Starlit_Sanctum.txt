@@ -1,0 +1,9 @@
+name=Starlit Sanctum
+url=http://magiccards.info/on/en/325.html
+image=http://magiccards.info/scans/en/on/325.jpg
+value=3.125
+rarity=U
+type=Land
+ability=tap add mana {1}
+timing=land
+requires_groovy_code
