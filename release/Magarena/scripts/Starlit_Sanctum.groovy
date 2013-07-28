@@ -6,8 +6,8 @@
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
          return [
-                new MagicTapEvent(source),
                 new MagicPayManaCostEvent(source,"{W}"),
+                new MagicTapEvent(source),
                 new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_CLERIC)
             ];         
         }
@@ -35,8 +35,8 @@
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
          return [
+                new MagicPayManaCostEvent(source,"{B}"),
                 new MagicTapEvent(source),
-                new MagicPayManaCostEvent(source,"{W}"),
                 new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_CLERIC)
             ];         
         }
