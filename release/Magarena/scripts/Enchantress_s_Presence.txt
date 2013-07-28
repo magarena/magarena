@@ -1,0 +1,9 @@
+name=Enchantress's Presence
+url=http://magiccards.info/on/en/261.html
+image=http://magiccards.info/scans/en/on/261.jpg
+value=4.167
+rarity=R
+type=Enchantment
+cost={2}{G}
+timing=Enchantment
+requires_groovy_code
