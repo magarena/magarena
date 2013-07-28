@@ -1,0 +1,12 @@
+name=Argothian Enchantress
+url=http://magiccards.info/us/en/234.html
+image=http://magiccards.info/scans/en/us/234.jpg
+value=4.617
+rarity=R
+type=Creature
+subtype=Human,Druid
+cost={1}{G}
+pt=0/1
+ability=shroud
+timing=main
+requires_groovy_code=Enchantress_s_Presence
