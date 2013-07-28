@@ -9,4 +9,4 @@ cost={1}{G}
 pt=0/1
 ability=shroud
 timing=main
-requires_groovy_code=Enchantress_s_Presence
+requires_groovy_code=Enchantress's Presence
