@@ -1,0 +1,9 @@
+name=Nether Void
+url=http://magiccards.info/me3/en/73.html
+image=http://magiccards.info/scans/en/me3/73.jpg
+value=4.659
+rarity=R
+type=World,Enchantment
+cost={3}{B}
+timing=enchantment
+requires_groovy_code
