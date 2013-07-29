@@ -1,0 +1,11 @@
+name=Battlegate Mimic
+url=http://magiccards.info/pch/en/98.html
+image=http://magiccards.info/scans/en/pch/98.jpg
+value=5
+rarity=C
+type=Creature
+subtype=Shapeshifter
+cost={1}{R/W}
+pt=2/1
+timing=main
+requires_groovy_code
