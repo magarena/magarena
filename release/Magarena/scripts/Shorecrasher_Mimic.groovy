@@ -22,10 +22,10 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicAddStaticAction(
-                event.getPermanant(), PT
+                event.getPermanent(), PT
             ));
             game.doAction(new MagicGainAbilityAction(
-                event.getPermanant(), 
+                event.getPermanent(), 
                 MagicAbility.Trample
             ));
         }

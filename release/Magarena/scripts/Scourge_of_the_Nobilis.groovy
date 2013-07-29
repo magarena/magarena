@@ -1,4 +1,4 @@
-def Pump = new MagicPumpActivation("{R/W}",1,0);
+def Pump = new MagicPumpActivation(MagicManaCost.create("{R/W}"),1,0);
 
 [
     new MagicStatic(MagicLayer.ModPT) {
