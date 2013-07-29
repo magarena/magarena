@@ -1,0 +1,11 @@
+name=Woodlurker Mimic
+url=http://magiccards.info/eve/en/130.html
+image=http://magiccards.info/scans/en/eve/130.jpg
+value=5
+rarity=C
+type=Creature
+subtype=Shapeshifter
+cost={1}{B/G}
+pt=2/1
+timing=main
+requires_groovy_code
