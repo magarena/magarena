@@ -1,0 +1,11 @@
+name=Scourge of the Nobilis
+url=http://magiccards.info/eve/en/146.html
+image=http://magiccards.info/scans/en/eve/146.jpg
+value=2.5
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{R/W}
+timing=aura
+enchant=pump,pos creature
+requires_groovy_code
