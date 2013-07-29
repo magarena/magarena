@@ -1,0 +1,11 @@
+name=Riverfall Mimic
+url=http://magiccards.info/eve/en/111.html
+image=http://magiccards.info/scans/en/eve/111.jpg
+value=5
+rarity=C
+type=Creature
+subtype=Shapeshifter
+cost={1}{U/R}
+pt=2/1
+timing=main
+requires_groovy_code
