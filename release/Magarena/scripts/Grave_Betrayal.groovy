@@ -10,6 +10,7 @@ def DelayedTrigger = {
                 source.getOwner(), 
                 source.getCard().getId()
             );
+            game.addDelayedAction(new MagicRemoveTriggerAction(this));
             return mappedCard.isInGraveyard() ?
                 new MagicEvent(
                     mappedSource,
@@ -28,7 +29,6 @@ def DelayedTrigger = {
                 event.getPlayer(),
                 [MagicPlayMod.UNDYING, MagicPlayMod.BLACK, MagicPlayMod.ZOMBIE]
             ));
-            game.addDelayedAction(new MagicRemoveTriggerAction(this));
         }
     };
 }
