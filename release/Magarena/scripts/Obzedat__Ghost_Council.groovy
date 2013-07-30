@@ -7,10 +7,10 @@ def DelayedTrigger = {
         }
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
-            final MagicCard mappedCard = card.getOwner().getExile().getCard(card.getId());
+            final MagicCard mappedCard = card.getOwner().map(game).getExile().getCard(card.getId());
             final MagicCard mappedSource = new MagicCard(
                 source.getCardDefinition(), 
-                source.getOwner(), 
+                source.getOwner().map(game), 
                 source.getCard().getId()
             );
             

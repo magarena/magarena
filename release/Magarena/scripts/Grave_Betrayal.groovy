@@ -4,13 +4,15 @@ def DelayedTrigger = {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer eotPlayer) {
             final MagicPlayer mappedPlayer = player.map(game);
-            final MagicCard mappedCard = card.getOwner().getGraveyard().getCard(card.getId());
+            final MagicCard mappedCard = card.getOwner().map(game).getGraveyard().getCard(card.getId());
             final MagicCard mappedSource = new MagicCard(
                 source.getCardDefinition(), 
-                source.getOwner(), 
+                source.getOwner().map(game), 
                 source.getCard().getId()
             );
+
             game.addDelayedAction(new MagicRemoveTriggerAction(this));
+            
             return mappedCard.isInGraveyard() ?
                 new MagicEvent(
                     mappedSource,
