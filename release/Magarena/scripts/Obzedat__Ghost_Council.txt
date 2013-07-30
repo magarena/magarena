@@ -1,0 +1,11 @@
+name=Obzedat, Ghost Council
+url=http://magiccards.info/gtc/en/182.html
+image=http://magiccards.info/scans/en/gtc/182.jpg
+value=3.717
+rarity=M
+type=Legendary,Creature
+subtype=Spirit,Advisor
+cost={1}{W}{W}{B}{B}
+pt=5/5
+timing=main
+requires_groovy_code
