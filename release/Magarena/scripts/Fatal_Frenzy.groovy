@@ -8,7 +8,7 @@
                 MagicPumpTargetPicker.create(),
                 this,
                 "Target creature\$ gains trample and gets +X/+0 until end of turn, where X is its power. " +
-        		"Sacrifice it at the beginning of the next end step."
+                "Sacrifice it at the beginning of the next end step."
             );
         }
         @Override
