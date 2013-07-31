@@ -85,6 +85,9 @@ If enchanted creature would be destroyed, instead remove all damage from it and 
 *trample
 If this creature would deal enough damage to its blockers to destroy them, 
 you may have it deal the rest of its damage to defending player.
+*unleash
+You may have this permanent enter the battlefield with an additional +1/+1 counter on it. 
+This permanent can't block as long as it has a +1/+1 counter on it.
 *vanishing
 This creature comes into play with time counters, losing one each turn until it has none and is sacrificed.
 *vigilance
