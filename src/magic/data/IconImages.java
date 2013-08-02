@@ -36,7 +36,7 @@ public class IconImages {
     public static final ImageIcon START=loadIcon("start.png");
     public static final ImageIcon STOP=loadIcon("stop.png");
     public static final ImageIcon UNDO=loadIcon("undo.png");
-    public static final ImageIcon BUSY=loadAnimatedIcon("busy.gif");
+    public static final ImageIcon BUSY=loadIcon("busy.gif");
     public static final ImageIcon YOU=loadIcon("you.gif");
     public static final ImageIcon OPPONENT=loadIcon("opponent.gif");
     public static final ImageIcon DISABLED=loadIcon("disabled.gif");
@@ -143,7 +143,6 @@ public class IconImages {
     public static final ImageIcon COST_FOURTEEN=loadSymbolIcon(14, false);
     public static final ImageIcon COST_FIFTEEN=loadSymbolIcon(15, false);
     public static final ImageIcon COST_SIXTEEN=loadSymbolIcon(16, false);
-//    public static final ImageIcon COST_NINE_OR_MORE=loadIcon("nineplus.gif");
     public static final ImageIcon COST_X=loadSymbolIcon(21, false);
 
     private static BufferedImage loadImage(final String name) {
@@ -151,8 +150,7 @@ public class IconImages {
     }
 
     private static ImageIcon loadIcon(final String name) {
-        final BufferedImage image=loadImage("icons/"+name);
-        return new ImageIcon(image);
+        return new ImageIcon(ImageIcon.class.getResource("/magic/data/icons/" + name));
     }
 
     private static ImageIcon loadSymbolIcon(final int pos, final boolean big) {
@@ -170,25 +168,5 @@ public class IconImages {
         } else {
             return new ImageIcon(magic.GraphicsUtilities.scale(subimage,icoW,icoH));
         }
-    }
-
-    private static ImageIcon loadAnimatedIcon(final String name) {
-        final byte[] data = new byte[1<<16];
-        int size = 0;
-        final InputStream inputStream = IconImages.class.getResourceAsStream("icons/"+name);
-        try { //load animated icon
-            while (true) {
-                final int len = inputStream.read(data,size,data.length-size);
-                if (len < 0) {
-                    break;
-                }
-                size += len;
-            }
-        } catch (final IOException ex) {
-            System.err.println("WARNING. Unable to load animated icon " + name);
-        } finally {
-            FileIO.close(inputStream);
-        }
-        return new ImageIcon(Arrays.copyOf(data,size));
     }
 }
