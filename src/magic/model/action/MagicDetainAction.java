@@ -18,15 +18,12 @@ import java.util.Set;
 
 public class MagicDetainAction extends MagicAction {
 
-    private final MagicPermanent permanent;
+    private final MagicPermanent targetPermanent;
     private final MagicPlayer sourceController;
 
     private static final MagicStatic Detain = new MagicStatic(MagicLayer.Ability) {
         @Override
-        public void modAbilityFlags(
-                final MagicPermanent source,
-                final MagicPermanent permanent,
-                final Set<MagicAbility> flags) {
+        public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
             flags.add(MagicAbility.CannotAttackOrBlock);
             flags.add(MagicAbility.CantActivateAbilities);
         }
@@ -43,15 +40,15 @@ public class MagicDetainAction extends MagicAction {
         }
     };
 
-    public MagicDetainAction(final MagicPlayer controller, final MagicPermanent aPermanent) {
-        sourceController = controller;
-        permanent = aPermanent;
+    public MagicDetainAction(final MagicPlayer aSourceController, final MagicPermanent aTargetPermanent) {
+        sourceController = aSourceController;
+        targetPermanent = aTargetPermanent;
     }
 
     @Override
     public void doAction(final MagicGame game) {
-        game.doAction(new MagicAddStaticAction(permanent, Detain));
-        game.doAction(new MagicAddTriggerAction(permanent, Cleanup));
+        game.doAction(new MagicAddStaticAction(targetPermanent, Detain));
+        game.doAction(new MagicAddTriggerAction(targetPermanent, Cleanup));
     }
 
     @Override
