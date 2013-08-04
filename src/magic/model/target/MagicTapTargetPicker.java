@@ -26,4 +26,11 @@ public class MagicTapTargetPicker extends MagicTargetPicker<MagicPermanent> {
             1 + permanent.getPower()+permanent.getActivations().size() :
             0;
     }
+    
+    public static MagicTapTargetPicker TapOrUntap = new MagicTapTargetPicker(false) {
+        @Override
+        protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
+            return 1 + permanent.getPower()+permanent.getActivations().size();
+        }
+    };
 }
