@@ -1,0 +1,12 @@
+name=Pestermite
+url=http://magiccards.info/lw/en/78.html
+image=http://magiccards.info/scans/en/lw/78.jpg
+value=1.757
+rarity=C
+type=Creature
+subtype=Faerie,Rogue
+cost={2}{U}
+pt=2/1
+ability=flash,flying
+timing=main
+requires_groovy_code
