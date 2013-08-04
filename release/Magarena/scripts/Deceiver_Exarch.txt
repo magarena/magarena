@@ -1,0 +1,12 @@
+name=Deceiver Exarch
+url=http://magiccards.info/nph/en/33.html
+image=http://magiccards.info/scans/en/nph/33.jpg
+value=3.717
+rarity=U
+type=Creature
+subtype=Cleric
+cost={2}{U}
+pt=1/4
+ability=flash
+timing=main
+requires_groovy_code
