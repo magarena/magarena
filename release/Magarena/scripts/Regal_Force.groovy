@@ -1,15 +1,3 @@
-name=Regal Force
-url=http://magiccards.info/eve/en/74.html
-image=http://magiccards.info/scans/en/eve/74.jpg
-value=0
-rarity=R
-type=Creature
-subtype=Elemental
-cost={4}{G}{G}{G}
-pt=5/5
-timing=main
-requires_groovy_code
-mike@asp12$~/workspace/MagarenaAI/release/Magarena>cat /var/projects/app1/MagarenaScripts/Regal_Force.groovy 
 [
     new MagicWhenComesIntoPlayTrigger() {
         @Override
