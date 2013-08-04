@@ -95,9 +95,21 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice PERMANENT_YOU_CONTROL=
             new MagicTargetChoice(MagicTargetFilter.TARGET_PERMANENT_YOU_CONTROL,false,MagicTargetHint.None,
                     "a permanent you control");
-    public static final MagicTargetChoice TARGET_PERMANENT_YOU_CONTROL=
-        new MagicTargetChoice(MagicTargetFilter.TARGET_PERMANENT_YOU_CONTROL,true,MagicTargetHint.None,
-                "target permanent you control");
+
+    public static final MagicTargetChoice TARGET_PERMANENT_YOU_CONTROL = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_PERMANENT_YOU_CONTROL,
+        true,
+        MagicTargetHint.None,
+        "target permanent you control"
+    );
+    
+    public static final MagicTargetChoice TARGET_PERMANENT_AN_OPPONENT_CONTROLS = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_PERMANENT_AN_OPPONENT_CONTROLS,
+        true,
+        MagicTargetHint.None,
+        "target permanent an opponent controls"
+    );
+    
     public static final MagicTargetChoice TARGET_PERMANENT_YOU_OWN=
         new MagicTargetChoice(MagicTargetFilter.TARGET_PERMANENT_YOU_OWN,true,MagicTargetHint.None,
                 "target permanent you own");
