@@ -21,7 +21,7 @@
                         perm,
                         {
                             final MagicGame G, final MagicEvent E ->
-                            final P = E.getRefPermanent();
+                            final MagicPermanent P = E.getRefPermanent();
                             if (E.isYes()) {
                                 if (P.isTapped()) {
                                     G.doAction(new MagicUntapAction(P));
