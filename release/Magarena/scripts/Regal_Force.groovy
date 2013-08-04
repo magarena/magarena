@@ -1,10 +1,7 @@
 [
     new MagicWhenComesIntoPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicPlayer player) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
                 this,
@@ -14,12 +11,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final Collection<MagicPermanent> targets = game.filterPermanents(player,MagicTargetFilter.TARGET_GREEN_CREATURE_YOU_CONTROL);
             game.doAction(new MagicDrawAction(
                 player,
-                targets.size()
+                player.getNrOfPermanents(MagicTargetFilter.TARGET_GREEN_CREATURE)
             ));
-
         }
     }
 ]
