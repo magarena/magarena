@@ -15,6 +15,7 @@ import magic.model.MagicSource;
 import magic.model.MagicColor;
 import magic.model.MagicObject;
 import magic.model.MagicMappable;
+import magic.model.MagicPayedCost;
 import magic.model.condition.MagicCondition;
 import magic.model.action.MagicCardAction;
 import magic.model.action.MagicCardOnStackAction;
@@ -341,6 +342,10 @@ public class MagicEvent implements MagicCopyable {
     public final int getRefInt() {
         return ((MagicInteger)ref).value;
     }
+    
+    public final MagicPayedCost getRefPayedCost() {
+        return (MagicPayedCost)ref;
+    }
 
     public final MagicCard getCard() {
         return (MagicCard)source;
@@ -425,6 +430,10 @@ public class MagicEvent implements MagicCopyable {
             }
         }
         throw new RuntimeException("Unable to find target");
+    }
+
+    public boolean isMode(final int mode) {
+        return (Integer)chosen[0] == mode;
     }
 
     public boolean isYes() {
