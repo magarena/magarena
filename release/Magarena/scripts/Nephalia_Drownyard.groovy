@@ -5,7 +5,7 @@
             MagicConditionFactory.ManaCost("{2}{U}{B}"),
         ],
         new MagicActivationHints(MagicTiming.Pump),
-        "Pump"
+        "Mill"
     ) {
 
         @Override
