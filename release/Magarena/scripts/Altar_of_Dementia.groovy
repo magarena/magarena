@@ -17,17 +17,17 @@
             return new MagicEvent(
                 source,
                 MagicTargetChoice.TARGET_PLAYER,
-				payedCost.getTarget(),
+                payedCost.getTarget(),
                 this,
                 "Target player\$ puts a number of cards equal to the sacrificed creature's power " + 
-				"from the top of his or her library into his or her graveyard."
+                "from the top of his or her library into his or her graveyard."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
-					final MagicPermanent sacrificed = event.getRefPermanent();
+                    final MagicPermanent sacrificed = event.getRefPermanent();
                     game.doAction(new MagicMillLibraryAction(player,sacrificed.getPower()));
                 }
             });
