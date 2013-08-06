@@ -1,0 +1,11 @@
+name=Enlisted Wurm
+url=http://magiccards.info/pc2/en/90.html
+image=http://magiccards.info/scans/en/pc2/90.jpg
+value=3.158
+rarity=U
+type=Creature
+subtype=Wurm
+cost={4}{G}{W}
+pt=5/5
+ability=cascade
+timing=main
