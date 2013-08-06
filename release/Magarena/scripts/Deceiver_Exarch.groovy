@@ -52,7 +52,7 @@ def UntapTrigger = new MagicWhenComesIntoPlayTrigger() {
                 ),
                 payedCost,
                 this,
-                "Choose one\$ — Untap target permanent you control; or tap target permanent an opponent controls."
+                "Choose one\$ - Untap target permanent you control; or tap target permanent an opponent controls."
             );
         }
         @Override
