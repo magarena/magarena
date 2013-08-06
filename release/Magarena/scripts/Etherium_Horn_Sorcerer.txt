@@ -1,0 +1,11 @@
+name=Etherium-Horn Sorcerer
+url=http://magiccards.info/pc2/en/91.html
+image=http://magiccards.info/scans/en/pc2/91.jpg
+value=4.167
+rarity=R
+type=Artifact,Creature
+subtype=Minotaur,Wizard
+cost={4}{U}{R}
+pt=3/6
+ability=cascade,return to owner's hand {1}{U}{R}
+timing=main
