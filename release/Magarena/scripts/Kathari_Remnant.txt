@@ -1,0 +1,11 @@
+name=Kathari Remnant
+url=http://magiccards.info/pc2/en/98.html
+image=http://magiccards.info/scans/en/pc2/98.jpg
+value=2.806
+rarity=U
+type=Creature
+subtype=Bird,Skeleton
+cost={2}{U}{B}
+pt=0/1
+ability=flying,cascade,regenerate {B}
+timing=main
