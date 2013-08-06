@@ -1,0 +1,10 @@
+name=Captured Sunlight
+url=http://magiccards.info/arb/en/66.html
+image=http://magiccards.info/scans/en/arb/66.jpg
+value=2.774
+rarity=C
+type=Sorcery
+cost={2}{G}{W}
+ability=cascade
+timing=removal
+requires_groovy_code
