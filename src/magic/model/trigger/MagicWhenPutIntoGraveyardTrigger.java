@@ -42,10 +42,7 @@ public abstract class MagicWhenPutIntoGraveyardTrigger extends MagicTrigger<Magi
 
     public static final MagicWhenPutIntoGraveyardTrigger RecoverGraveyard = new MagicWhenPutIntoGraveyardTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicMoveCardAction act) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicMoveCardAction act) {
             final MagicPlayer owner = act.card.getOwner();
             return new MagicEvent(
                 //source may be permanent if on battlefield or card (exile, hand)
@@ -62,12 +59,14 @@ public abstract class MagicWhenPutIntoGraveyardTrigger extends MagicTrigger<Magi
             final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
             for (final MagicCard card : graveyard) {
                 game.doAction(new MagicRemoveCardAction(
-                        card,
-                        MagicLocationType.Graveyard));
+                    card,
+                    MagicLocationType.Graveyard
+                ));
                 game.doAction(new MagicMoveCardAction(
-                        card,
-                        MagicLocationType.Graveyard,
-                        MagicLocationType.OwnersLibrary));
+                    card,
+                    MagicLocationType.Graveyard,
+                    MagicLocationType.OwnersLibrary
+                ));
             }
         }
     };
