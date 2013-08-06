@@ -1,0 +1,9 @@
+name=Ardent Plea
+url=http://magiccards.info/arb/en/1.html
+image=http://magiccards.info/scans/en/arb/1.jpg
+value=3.377
+rarity=U
+type=Enchantment
+cost={1}{W}{U}
+ability=exalted,cascade
+timing=enchantment
