@@ -880,4 +880,10 @@ public enum MagicAbility {
     public static Set<MagicAbility> noneOf() {
         return EnumSet.noneOf(MagicAbility.class);
     }
+    
+    public static MagicAbility CannotBeTheTarget(final MagicPlayer player) {
+        return player.getIndex() == 0 ?
+            CannotBeTheTarget0 :
+            CannotBeTheTarget1;
+    }
 }
