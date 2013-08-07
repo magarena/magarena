@@ -7,5 +7,5 @@ type=Creature
 subtype=Wolf
 cost={3}{G}{G}
 pt=4/5
-ability=cumulative upkeep {2},enters draw card
+ability=cumulative upkeep {2},enters draw card 1
 timing=main

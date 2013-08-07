@@ -6,6 +6,6 @@ rarity=C
 type=Creature
 subtype=Bear
 cost={3}{G}
-ability=enters draw card
+ability=enters draw card 1
 pt=2/2
 timing=main

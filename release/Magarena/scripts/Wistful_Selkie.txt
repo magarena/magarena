@@ -6,6 +6,6 @@ rarity=U
 type=Creature
 subtype=Merfolk,Wizard
 cost={G/U}{G/U}{G/U}
-ability=enters draw card
+ability=enters draw card 1
 pt=2/2
 timing=main

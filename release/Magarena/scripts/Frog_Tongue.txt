@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={G}
 given_ability=reach
-ability=enters draw card
+ability=enters draw card 1
 timing=aura
 enchant=pump,pos creature

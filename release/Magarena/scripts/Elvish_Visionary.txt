@@ -7,5 +7,5 @@ type=Creature
 subtype=Elf,Shaman
 cost={1}{G}
 pt=1/1
-ability=enters draw card
+ability=enters draw card 1
 timing=main

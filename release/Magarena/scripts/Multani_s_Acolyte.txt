@@ -8,4 +8,4 @@ subtype=Elf
 cost={G}{G}
 pt=2/1
 timing=main
-ability=echo,enters draw card
+ability=echo,enters draw card 1

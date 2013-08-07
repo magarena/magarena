@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Knight
 cost={4}{U}
 pt=3/2
-ability=flying,enters draw card
+ability=flying,enters draw card 1
 timing=main

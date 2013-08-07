@@ -7,5 +7,5 @@ type=Creature
 subtype=Plant,Wall
 cost={1}{G}
 pt=0/4
-ability=defender,enters draw card
+ability=defender,enters draw card 1
 timing=main
