@@ -1,0 +1,11 @@
+name=Mulldrifter
+url=http://magiccards.info/lw/en/76.html
+image=http://magiccards.info/scans/en/lw/76.jpg
+value=3.717
+rarity=C
+type=Creature
+subtype=Elemental
+cost={4}{U}
+pt=2/2
+ability=flying,enters draw card 2,evoke {2}{U}
+timing=main
