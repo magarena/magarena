@@ -5,7 +5,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicMappable;
 
-public class MagicSourceActivation<T extends MagicSource & MagicMappable<T>> implements Comparable<MagicSourceActivation<T>> {
+public class MagicSourceActivation<T extends MagicSource & MagicMappable<T> & Comparable<T>> implements Comparable<MagicSourceActivation<T>> {
     public final T source;
     public final MagicActivation<T> activation;
 
@@ -14,11 +14,11 @@ public class MagicSourceActivation<T extends MagicSource & MagicMappable<T>> imp
         activation = aActivation;
     }
 
-    public static <S extends MagicSource & MagicMappable<S>> MagicSourceActivation<S> create(final S aSource, final MagicActivation<S> aActivation) {
+    public static <S extends MagicSource & MagicMappable<S> & Comparable<S>> MagicSourceActivation<S> create(final S aSource, final MagicActivation<S> aActivation) {
         return new MagicSourceActivation<S>(aSource, aActivation);
     }
     
-    public static <S extends MagicSource & MagicMappable<S>> MagicSourceActivation<S> create(final MagicGame game, final MagicSourceActivation<S> aSourceActivation) {
+    public static <S extends MagicSource & MagicMappable<S> & Comparable<S>> MagicSourceActivation<S> create(final MagicGame game, final MagicSourceActivation<S> aSourceActivation) {
         return new MagicSourceActivation<S>(aSourceActivation.source.map(game), aSourceActivation.activation);
     }
     
@@ -47,7 +47,12 @@ public class MagicSourceActivation<T extends MagicSource & MagicMappable<T>> imp
     }
     
     @Override
-    public int compareTo(final MagicSourceActivation other) {
-        return activation.compareTo(other.activation);
+    public int compareTo(final MagicSourceActivation<T> other) {
+        int c1 = activation.compareTo(other.activation);
+        if (c1 != 0) {
+            return c1;
+        } else {
+            return source.compareTo(other.source);
+        }
     }
 }
