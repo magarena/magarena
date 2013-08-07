@@ -19,6 +19,7 @@ import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicCyclingActivation;
 import magic.model.event.MagicReinforceActivation;
 import magic.model.event.MagicNinjutsuActivation;
+import magic.model.event.MagicEvokeActivation;
 import magic.model.event.MagicKickerCost;
 import magic.model.event.MagicMultikickerCost;
 import magic.model.mstatic.MagicCDA;
@@ -597,8 +598,8 @@ public enum MagicAbility {
     },
     EntersDrawCard("enters draw card", 10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
-            card.add(MagicEntersDrawCardTrigger.create());
+            final int n = Integer.parseInt(arg);
+            card.add(MagicWhenComesIntoPlayTrigger.Draw(n));
         }
     },
     EntersDamageTarget("enters damage target", 10) {
@@ -743,6 +744,13 @@ public enum MagicAbility {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             final MagicManaCost manaCost = MagicManaCost.create(arg);
             card.add(MagicPermanentActivation.SwitchPT(manaCost));
+        }
+    },
+    Evoke("evoke", 20) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final MagicManaCost manaCost = MagicManaCost.create(arg);
+            card.add(new MagicEvokeActivation(manaCost));
+            card.add(MagicWhenComesIntoPlayTrigger.Evoke);
         }
     },
     Evolve("evolve", 20) {
