@@ -12,6 +12,8 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventAction;
 import magic.model.event.MagicRuleEventAction;
 import magic.model.action.MagicPlayTokenAction;
+import magic.model.action.MagicSacrificeAction;
+import magic.model.action.MagicDrawAction;
 import magic.data.TokenCardDefinitions;
 
 public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPayedCost> {
@@ -106,4 +108,41 @@ public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPa
             return MagicEvent.NONE;
         }
     };
+    
+    public static final MagicWhenComesIntoPlayTrigger Evoke = new MagicWhenComesIntoPlayTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPayedCost payedCost) {
+            return payedCost.isKicked() ?
+                new MagicEvent(
+                    permanent,
+                    this,
+                    "Sacrifice SN."
+                ):
+                MagicEvent.NONE;
+        }
+
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            game.doAction(new MagicSacrificeAction(event.getPermanent()));
+        }
+    };
+    
+    public static final MagicWhenComesIntoPlayTrigger Draw(final int n) {
+        return new MagicWhenComesIntoPlayTrigger() {
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
+                return new MagicEvent(
+                    permanent,
+                    this,
+                    n == 1 ? 
+                        "PN draws a card." :
+                        "PN draws " + n + " cards"
+                );
+            }
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                game.doAction(new MagicDrawAction(event.getPlayer(), n));
+            }
+        };
+    }
 }
