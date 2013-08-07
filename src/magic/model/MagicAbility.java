@@ -37,7 +37,6 @@ import magic.model.trigger.MagicDevourTrigger;
 import magic.model.trigger.MagicDieDrawCardTrigger;
 import magic.model.trigger.MagicEchoTrigger;
 import magic.model.trigger.MagicEntersDamageTargetTrigger;
-import magic.model.trigger.MagicEntersDrawCardTrigger;
 import magic.model.trigger.MagicEntersExileCreatureOrSacrificeTrigger;
 import magic.model.trigger.MagicExaltedTrigger;
 import magic.model.trigger.MagicFadeVanishCounterTrigger;
