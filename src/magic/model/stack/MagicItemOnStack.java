@@ -97,7 +97,7 @@ public abstract class MagicItemOnStack implements MagicTarget, MagicMappable<Mag
     }
     
     public int getConvertedCost() {
-        return getCardDefinition().getConvertedCost();
+        return 0;
     }
 
     MagicActivation getActivation() {
