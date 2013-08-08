@@ -1,0 +1,9 @@
+name=Spell Snare
+url=http://magiccards.info/di/en/33.html
+image=http://magiccards.info/scans/en/di/33.jpg
+value=4.641
+rarity=U
+type=Instant
+cost={U}
+effect=Counter target spell with converted mana cost 2.
+timing=counter
