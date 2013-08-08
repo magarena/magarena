@@ -138,6 +138,9 @@ abstract class MagicStackFilterImpl implements MagicTargetFilter<MagicItemOnStac
 
         return targets;
     }
+    public boolean acceptType(final MagicTargetType targetType) {
+        return targetType==MagicTargetType.Stack;
+    }
 }
 
 abstract class MagicPlayerFilterImpl implements MagicTargetFilter<MagicPlayer> {
@@ -155,6 +158,9 @@ abstract class MagicPlayerFilterImpl implements MagicTargetFilter<MagicPlayer> {
         }
 
         return targets;
+    }
+    public boolean acceptType(final MagicTargetType targetType) {
+        return targetType==MagicTargetType.Player;
     }
 }
 
@@ -188,9 +194,6 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack target) {
             return target.isSpell();
         }
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Stack;
-        }
     };
 
     MagicStackFilterImpl TARGET_SPELL_THAT_TARGETS_PLAYER=new MagicStackFilterImpl() {
@@ -200,26 +203,23 @@ public interface MagicTargetFilter<T extends MagicTarget> {
                    tchoice != null && tchoice.isTargeted() &&
                    tchoice.getTargetFilter().acceptType(MagicTargetType.Player);
         }
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Stack;
-        }
     };
 
     MagicStackFilterImpl TARGET_SPELL_YOU_DONT_CONTROL=new MagicStackFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack target) {
             return target.isSpell() && target.getController() != player;
         }
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Stack;
+    };
+    
+    MagicStackFilterImpl TARGET_SPELL_WITH_CMC_EQ_2 = new MagicStackFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack target) {
+            return target.isSpell() && target.getConvertedCost() == 2;
         }
     };
 
     MagicStackFilterImpl TARGET_SPELL_WITH_X_COST=new MagicStackFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack target) {
             return target.isSpell() && target.getCardDefinition().hasX();
-        }
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Stack;
         }
     };
 
@@ -229,17 +229,11 @@ public interface MagicTargetFilter<T extends MagicTarget> {
                    (itemOnStack.hasColor(MagicColor.Red) ||
                     itemOnStack.hasColor(MagicColor.Green));
         }
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Stack;
-        }
     };
 
     MagicStackFilterImpl TARGET_CREATURE_SPELL=new MagicStackFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell(MagicType.Creature);
-        }
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Stack;
         }
     };
 
@@ -248,9 +242,6 @@ public interface MagicTargetFilter<T extends MagicTarget> {
             return itemOnStack.isSpell() &&
                    !itemOnStack.isSpell(MagicType.Creature);
         }
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Stack;
-        }
     };
 
     MagicStackFilterImpl TARGET_INSTANT_OR_SORCERY_SPELL=new MagicStackFilterImpl() {
@@ -258,17 +249,11 @@ public interface MagicTargetFilter<T extends MagicTarget> {
             return itemOnStack.isSpell(MagicType.Instant) ||
                    itemOnStack.isSpell(MagicType.Sorcery);
         }
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Stack;
-        }
     };
 
     MagicStackFilterImpl TARGET_INSTANT_SPELL=new MagicStackFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell(MagicType.Instant);
-        }
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Stack;
         }
     };
 
@@ -276,26 +261,17 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell(MagicType.Artifact);
         }
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Stack;
-        }
     };
 
     MagicPlayerFilterImpl TARGET_PLAYER=new MagicPlayerFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPlayer target) {
             return true;
         }
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Player;
-        }
     };
 
     MagicPlayerFilterImpl TARGET_OPPONENT=new MagicPlayerFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPlayer target) {
             return target!=player;
-        }
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Player;
         }
     };
 
