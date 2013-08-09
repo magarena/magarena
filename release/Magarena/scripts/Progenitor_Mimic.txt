@@ -1,0 +1,11 @@
+name=Progenitor Mimic
+url=http://magiccards.info/dgm/en/92.html
+image=http://magiccards.info/scans/en/dgm/92.jpg
+value=3.717
+rarity=M
+type=Creature
+subtype=Shapeshifter
+cost={4}{G}{U}
+pt=0/0
+timing=main
+requires_groovy_code
