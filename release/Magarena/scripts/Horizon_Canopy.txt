@@ -1,6 +1,6 @@
 name=Horizon Canopy
-url=(removed due to no url rule of forum)
-image=(removed due to no url rule of forum)
+url=http://magiccards.info/fut/en/177.html
+image=http://magiccards.info/scans/en/fut/177.jpg
 value=36.99
 rarity=R
 type=Land
