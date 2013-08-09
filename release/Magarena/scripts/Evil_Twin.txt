@@ -1,0 +1,11 @@
+name=Evil Twin
+url=http://magiccards.info/isd/en/212.html
+image=http://magiccards.info/scans/en/isd/212.jpg
+value=3.717
+rarity=R
+type=Creature
+subtype=Shapeshifter
+cost={2}{U}{B}
+pt=0/0
+timing=main
+requires_groovy_code
