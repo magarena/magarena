@@ -1,0 +1,9 @@
+name=Horizon Canopy
+url=(removed due to no url rule of forum)
+image=(removed due to no url rule of forum)
+value=36.99
+rarity=R
+type=Land
+timing=land
+ability=tap pain add mana {G} or {W}
+requires_groovy_code
