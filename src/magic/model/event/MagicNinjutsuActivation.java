@@ -11,6 +11,7 @@ import magic.model.action.MagicRemoveCardAction;
 import magic.model.action.MagicPlayCardAction;
 import magic.model.action.MagicPlayMod;
 import magic.model.choice.MagicTargetChoice;
+import magic.model.choice.MagicChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicAbilityOnStack;
 import magic.model.target.MagicPumpTargetPicker;
@@ -82,7 +83,7 @@ public class MagicNinjutsuActivation extends MagicCardActivation {
     }
 
     @Override
-    final MagicTargetChoice getTargetChoice(final MagicCard source) {
+    final MagicChoice getChoice(final MagicCard source) {
         return MagicTargetChoice.NONE;
     }
 }

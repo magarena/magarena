@@ -40,7 +40,7 @@ public class MagicPayManaCostChoice extends MagicChoice {
     }
 
     @Override
-    boolean hasOptions(final MagicGame game,final MagicPlayer player,final MagicSource source,final boolean hints) {
+    public boolean hasOptions(final MagicGame game,final MagicPlayer player,final MagicSource source,final boolean hints) {
         final MagicBuilderManaCost builderCost=new MagicBuilderManaCost(player.getBuilderCost());
         cost.addTo(builderCost);
         return new MagicPayManaCostResultBuilder(game,player,builderCost).hasResults();

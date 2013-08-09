@@ -7,7 +7,7 @@ import magic.model.MagicAbility;
 import magic.model.MagicPlayer;
 import magic.model.MagicPlayerState;
 import magic.model.MagicSource;
-import magic.model.choice.MagicTargetChoice;
+import magic.model.choice.MagicChoice;
 import magic.model.condition.MagicCondition;
 
 public abstract class MagicActivation<T extends MagicSource> implements MagicEventAction, Comparable<MagicActivation> {
@@ -108,10 +108,10 @@ public abstract class MagicActivation<T extends MagicSource> implements MagicEve
             }
         }
 
-        // Check for legal targets.
+        // Check for options for choice
         final boolean useTargetHints = useHints || GeneralConfig.getInstance().getSmartTarget();
-        final MagicTargetChoice targetChoice = getTargetChoice(source);
-        return game.hasLegalTargets(player,source,targetChoice,useTargetHints);
+        final MagicChoice choice = getChoice(source);
+        return choice.hasOptions(game, player, source, useTargetHints);
     }
 
     @Override
@@ -125,5 +125,5 @@ public abstract class MagicActivation<T extends MagicSource> implements MagicEve
 
     public abstract MagicEvent getEvent(final MagicSource source);
 
-    abstract MagicTargetChoice getTargetChoice(final T source);
+    abstract MagicChoice getChoice(final T source);
 }

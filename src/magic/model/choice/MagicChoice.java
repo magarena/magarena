@@ -73,7 +73,7 @@ public abstract class MagicChoice {
     }
 
     /** Checks if there are valid options for the choice. */
-    boolean hasOptions(final MagicGame game,final MagicPlayer player,final MagicSource source,final boolean hints) {
+    public boolean hasOptions(final MagicGame game,final MagicPlayer player,final MagicSource source,final boolean hints) {
         return true;
     }
 

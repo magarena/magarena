@@ -7,6 +7,7 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicSource;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.choice.MagicTargetChoice;
+import magic.model.choice.MagicChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicAbilityOnStack;
 import magic.model.target.MagicPumpTargetPicker;
@@ -69,7 +70,7 @@ public abstract class MagicBloodrushActivation extends MagicCardActivation {
     }
 
     @Override
-    final MagicTargetChoice getTargetChoice(final MagicCard source) {
-        return getCardEvent(source,MagicPayedCost.NO_COST).getTargetChoice();
+    final MagicChoice getChoice(final MagicCard source) {
+        return getCardEvent(source,MagicPayedCost.NO_COST).getChoice();
     }
 }

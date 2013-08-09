@@ -10,7 +10,7 @@ import magic.model.MagicChangeCardDefinition;
 import magic.model.action.MagicPlayCardAction;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.action.MagicRemoveCardAction;
-import magic.model.choice.MagicTargetChoice;
+import magic.model.choice.MagicChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicCardOnStack;
 
@@ -90,9 +90,9 @@ public class MagicCardActivation extends MagicActivation<MagicCard> implements M
     }
 
     @Override
-    MagicTargetChoice getTargetChoice(final MagicCard source) {
+    MagicChoice getChoice(final MagicCard source) {
         final MagicCardOnStack cardOnStack=new MagicCardOnStack(source,this,MagicPayedCost.NO_COST);
-        return cardOnStack.getEvent().getTargetChoice();
+        return cardOnStack.getEvent().getChoice();
     }
 
     @Override

@@ -20,6 +20,7 @@ import magic.model.action.MagicUntapAction;
 import magic.model.action.MagicPreventDamageAction;
 import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.choice.MagicTargetChoice;
+import magic.model.choice.MagicChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicAbilityOnStack;
 import magic.model.target.MagicPreventTargetPicker;
@@ -72,8 +73,8 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
     };
 
     @Override
-    public final MagicTargetChoice getTargetChoice(final MagicPermanent source) {
-        return getPermanentEvent(source,MagicPayedCost.NO_COST).getTargetChoice();
+    public final MagicChoice getChoice(final MagicPermanent source) {
+        return getPermanentEvent(source,MagicPayedCost.NO_COST).getChoice();
     }
 
     public abstract MagicEvent[] getCostEvent(final MagicPermanent source);
