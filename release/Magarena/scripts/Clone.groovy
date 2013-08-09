@@ -14,14 +14,13 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                event.processTargetPermanent(game, new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent perm) {
-                        game.doAction(new MagicPlayCardFromStackAction(
-                            event.getCardOnStack(),
-                            perm.getCardDefinition()
-                        ));
-                    }
-                });
+                event.processTargetPermanent(game, {
+                    final MagicPermanent chosen ->
+                    game.doAction(new MagicPlayCardFromStackAction(
+                        event.getCardOnStack(),
+                        chosen.getCardDefinition()
+                    ));
+                } as MagicPermanentAction);
             } else {
                 game.doAction(new MagicPlayCardFromStackAction(
                     event.getCardOnStack()
