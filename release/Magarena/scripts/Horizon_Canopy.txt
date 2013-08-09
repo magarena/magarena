@@ -1,0 +1,9 @@
+name=Horizon Canopy
+url=http://magiccards.info/fut/en/177.html
+image=http://magiccards.info/scans/en/fut/177.jpg
+value=36.99
+rarity=R
+type=Land
+timing=land
+ability=tap pain add mana {G} or {W}
+requires_groovy_code
