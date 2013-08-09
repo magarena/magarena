@@ -1,0 +1,11 @@
+name=Clone
+url=http://magiccards.info/m13/en/45.html
+image=http://magiccards.info/scans/en/m13/45.jpg
+value=3.717
+rarity=R
+type=Creature
+subtype=Shapeshifter
+cost={3}{U}
+pt=0/0
+timing=main
+requires_groovy_code
