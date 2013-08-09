@@ -80,9 +80,13 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     private long stateId;
 
     public MagicPermanent(final long aId,final MagicCard aCard,final MagicPlayer aController) {
+        this(aId, aCard, aCard.getCardDefinition(), aController);
+    }
+    
+    public MagicPermanent(final long aId, final MagicCard aCard, final MagicCardDefinition aCardDef, final MagicPlayer aController) {
         id = aId;
         card = aCard;
-        cardDefinition = card.getCardDefinition();
+        cardDefinition = aCardDef;
         firstController = aController;
 
         equipmentPermanents=new MagicPermanentSet();
@@ -260,7 +264,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
 
     public String getName() {
-        return card.getName();
+        return cardDefinition.getName();
     }
 
     @Override

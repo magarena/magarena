@@ -922,6 +922,10 @@ public class MagicGame {
     public MagicPermanent createPermanent(final MagicCard card,final MagicPlayer controller) {
         return new MagicPermanent(getUniqueId(),card,controller);
     }
+    
+    public MagicPermanent createPermanent(final MagicCard card, final MagicCardDefinition cardDef, final MagicPlayer controller) {
+        return new MagicPermanent(getUniqueId(),card,cardDef,controller);
+    }
 
     public MagicCardList getExiledUntilEndOfTurn() {
         return exiledUntilEndOfTurn;
