@@ -1,0 +1,11 @@
+name=Phantasmal Image
+url=http://magiccards.info/m12/en/72.html
+image=http://magiccards.info/scans/en/m12/72.jpg
+value=3.717
+rarity=R
+type=Creature
+subtype=Illusion
+cost={1}{U}
+pt=0/0
+timing=main
+requires_groovy_code
