@@ -1510,14 +1510,20 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     public static final class NameTargetFilter extends MagicPermanentFilterImpl {
 
         private final String name;
+        private final MagicTargetFilter<MagicPermanent> targetFilter;
+        
+        public NameTargetFilter(final String aName) {
+            this(ANY, aName);
+        }
 
-        public NameTargetFilter(final String name) {
-            this.name=name;
+        public NameTargetFilter(final MagicTargetFilter<MagicPermanent> aTargetFilter, final String aName) {
+            name = aName;
+            targetFilter = aTargetFilter;
         }
 
         @Override
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return name.equals(target.getName());
+            return name.equals(target.getName()) && targetFilter.accept(game, player, target);
         }
     };
 
