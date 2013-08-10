@@ -755,6 +755,8 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
     MagicPermanentFilterImpl TARGET_SLIVER = Factory.creature(MagicSubType.Sliver, Control.Any);
 
+    MagicPermanentFilterImpl TARGET_SLIVER_YOU_CONTROL = Factory.creature(MagicSubType.Sliver, Control.You);
+
     MagicPermanentFilterImpl TARGET_ELF = Factory.creature(MagicSubType.Elf, Control.Any);
 
     MagicPermanentFilterImpl TARGET_ELF_YOU_CONTROL = Factory.creature(MagicSubType.Elf, Control.You);
