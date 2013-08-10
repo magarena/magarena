@@ -572,3 +572,6 @@ bytes_per_card:
 	/ \
 	`ls -1 release/Magarena/scripts/*.txt | wc -l` \
 	| bc -l
+
+reminder.txt: cards/cards.xml
+	grep 'reminder="[^"]*"' $^ -o | sed 's/reminder=//' | sort | uniq -c | sort -rn > $@
