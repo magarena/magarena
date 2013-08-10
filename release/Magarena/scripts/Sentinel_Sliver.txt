@@ -1,0 +1,12 @@
+name=Sentinel Sliver
+url=http://magiccards.info/m14/en/30.html
+image=http://magiccards.info/scans/en/m14/30.jpg
+value=0.17
+rarity=C
+type=Creature
+subtype=Sliver
+cost={1}{W}
+pt=2/2
+static=all
+timing=fmain
+requires_groovy_code
