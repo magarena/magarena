@@ -1,0 +1,12 @@
+name=Blur Sliver
+url=http://magiccards.info/m14/en/129.html
+image=http://magiccards.info/scans/en/m14/129.jpg
+value=0.19
+rarity=C
+type=Creature
+subtype=Sliver
+cost={2}{R}
+pt=2/2
+static=all
+timing=fmain
+requires_groovy_code

@@ -1,0 +1,11 @@
+name=Steelform Sliver
+url=http://magiccards.info/m14/en/38.html
+image=http://magiccards.info/scans/en/m14/38.jpg
+value=0.25
+rarity=U
+type=Creature
+subtype=Sliver
+cost={2}{W}
+pt=2/2
+timing=main
+requires_groovy_code
