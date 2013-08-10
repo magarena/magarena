@@ -1,0 +1,12 @@
+name=Megantic Sliver
+url=http://magiccards.info/m14/en/185.html
+image=http://magiccards.info/scans/en/m14/185.jpg
+value=1.07
+rarity=R
+type=Creature
+subtype=Sliver
+cost={5}{G}
+pt=3/3
+static=all
+timing=main
+requires_groovy_code
