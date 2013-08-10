@@ -1,0 +1,9 @@
+name=Hands of Binding
+url=http://magiccards.info/gtc/en/37.html
+image=http://magiccards.info/scans/en/gtc/37.jpg
+value=4.638
+rarity=C
+type=Sorcery
+cost={1}{U}
+timing=tapping
+requires_groovy_code
