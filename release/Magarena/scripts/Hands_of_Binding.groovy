@@ -21,9 +21,9 @@
                         creature,
                         MagicPermanentState.DoesNotUntapDuringNext
                     ));
-                    // prevent auto move to graveyard
-                    game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.Play));
                     if (event.getCardOnStack().getCard().isToken() == false) {
+                        // prevent auto move to graveyard
+                        game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.Play));
                         game.addEvent(new MagicCipherEvent(event.getSource(), event.getPlayer()));
                     }
                 }
