@@ -30,7 +30,9 @@ public abstract class MagicWhenDamageIsDealtTrigger extends MagicTrigger<MagicDa
         return new MagicWhenDamageIsDealtTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-                return (damage.isCombat() && damage.getTarget().isPlayer()) ?
+                return (damage.getSource() == permanent &&
+                        damage.isCombat() && 
+                        damage.getTarget().isPlayer()) ?
                     new MagicEvent(
                         permanent,
                         new MagicMayChoice(),
