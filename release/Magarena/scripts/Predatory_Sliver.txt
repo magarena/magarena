@@ -7,6 +7,6 @@ type=Creature
 subtype=Sliver
 cost={1}{G}
 pt=1/1
-static=all
+static=player
 timing=main
 requires_groovy_code
