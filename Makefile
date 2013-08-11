@@ -529,11 +529,6 @@ grammar/CounterType: grammar/rules.txt
 	# remove a, each, that
 	# add poison
 
-fix_eol:
-	sed -i -e '$$a\' release/Magarena/**/*.txt
-	sed -i -e 's/\x0D$$//' release/Magarena/**/*.txt
-	sed -i -e '$$a\' src/**/*.java
-
 cards/cards_per_set.tsv: cards/existing_tip_full.txt
 	cat <(grep -o ", [A-Z0-9]* [A-Z]" $^ | cut -d' ' -f2) \
 	    <(grep -o "^[A-Z0-9]* [A-Z]"  $^ | cut -d' ' -f1) \
@@ -575,3 +570,7 @@ bytes_per_card:
 
 reminder.txt: cards/cards.xml
 	grep 'reminder="[^"]*"' $^ -o | sed 's/reminder=//' | sort | uniq -c | sort -rn > $@
+
+fix_eol:
+	sed -i -e '$$a\'       release/Magarena/**/*.txt release/Magarena/**/*.groovy src/**/*.java
+	sed -i -e 's/\x0D$$//' release/Magarena/**/*.txt release/Magarena/**/*.groovy src/**/*.java
