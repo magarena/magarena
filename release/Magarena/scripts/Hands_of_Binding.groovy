@@ -21,11 +21,10 @@
                         creature,
                         MagicPermanentState.DoesNotUntapDuringNext
                     ));
-                    if (event.getCardOnStack().getCard().isToken() == false) {
-                        // prevent auto move to graveyard
-                        game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.Play));
-                        game.addEvent(new MagicCipherEvent(event.getSource(), event.getPlayer()));
-                    }
+                    game.doAction(new MagicCipherAction(
+                        event.getCardOnStack(), 
+                        event.getPlayer()
+                    ));
                 }
             });
         }
