@@ -1,0 +1,12 @@
+name=Elvish Mystic
+url=http://magiccards.info/m14/en/169.html
+image=http://magiccards.info/scans/en/m14/169.jpg
+value=0.30
+rarity=C
+type=Creature
+subtype=Elf,Druid
+cost={G}
+pt=1/1
+ability=tap add mana {G}
+timing=smain
+mana_or_combat
