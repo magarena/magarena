@@ -1,0 +1,9 @@
+name=Necrogen Mists
+url=http://magiccards.info/mi/en/69.html
+image=http://magiccards.info/scans/en/mi/69.jpg
+value=3.667
+rarity=R
+type=Enchantment
+cost={2}{B}
+timing=enchantment
+requires_groovy_code
