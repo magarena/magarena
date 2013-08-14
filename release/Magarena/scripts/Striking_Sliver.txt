@@ -1,0 +1,11 @@
+name=Striking Sliver
+url=http://magiccards.info/m14/en/157.html
+image=http://magiccards.info/scans/en/m14/157.jpg
+value=3.087
+rarity=C
+type=Creature
+subtype=Sliver
+cost={R}
+pt=1/1
+timing=main
+requires_groovy_code
