@@ -1,12 +1,12 @@
 name=Bonescythe Sliver
-url=http://magiccards.info//m14/en/9.html
+url=http://magiccards.info/m14/en/9.html
 image=http://magiccards.info/scans/en/m14/9.jpg
-value=3.10
+value=3.588
 rarity=R
 type=Creature
 subtype=Sliver
 cost={3}{W}
 pt=2/2
-static=player
-timing=fmain
+static=all
+timing=main
 requires_groovy_code
