@@ -1,0 +1,12 @@
+name=Battle Sliver
+url=http://magiccards.info/m14/en/128.html
+image=http://magiccards.info/scans/en/m14/128.jpg
+value=2.300
+rarity=U
+type=Creature
+subtype=Sliver
+cost={4}{R}
+pt=3/3
+static=all
+timing=main
+requires_groovy_code
