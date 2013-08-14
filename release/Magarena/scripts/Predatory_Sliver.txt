@@ -1,12 +1,12 @@
 name=Predatory Sliver
 url=http://magiccards.info/m14/en/189.html
 image=http://magiccards.info/scans/en/m14/189.jpg
-value=0.33
+value=3.838
 rarity=C
 type=Creature
 subtype=Sliver
 cost={1}{G}
 pt=1/1
-static=player
+static=all
 timing=main
 requires_groovy_code
