@@ -1,0 +1,12 @@
+name=Fury Sliver
+url=http://magiccards.info/pds/en/25.html
+image=http://magiccards.info/scans/en/pds/25.jpg
+value=4.325
+rarity=U
+type=Creature
+subtype=Sliver
+cost={5}{R}
+pt=3/3
+static=all
+timing=main
+requires_groovy_code
