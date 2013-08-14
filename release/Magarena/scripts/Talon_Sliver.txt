@@ -1,0 +1,12 @@
+name=Talon Sliver
+url=http://magiccards.info/tp/en/262.html
+image=http://magiccards.info/scans/en/tp/262.jpg
+value=4.080
+rarity=C
+type=Creature
+subtype=Sliver
+cost={1}{W}
+pt=1/1
+static=all
+timing=main
+requires_groovy_code
