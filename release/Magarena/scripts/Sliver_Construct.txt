@@ -1,0 +1,10 @@
+name=Sliver Construct
+url=http://magiccards.info/m14/en/218.html
+image=http://magiccards.info/scans/en/m14/218.jpg
+value=1.558
+rarity=C
+type=Artifact,Creature
+subtype=Sliver,Construct
+cost={3}
+pt=2/2
+timing=main
