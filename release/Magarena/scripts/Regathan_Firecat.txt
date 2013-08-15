@@ -1,0 +1,10 @@
+name=Regathan Firecat
+url=http://magiccards.info/m14/en/150.html
+image=http://magiccards.info/scans/en/m14/150.jpg
+value=3.196
+rarity=C
+type=Creature
+subtype=Elemental,Cat
+cost={2}{R}
+pt=4/1
+timing=main
