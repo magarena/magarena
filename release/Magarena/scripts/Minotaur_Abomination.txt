@@ -1,0 +1,10 @@
+name=Minotaur Abomination
+url=http://magiccards.info/m14/en/107.html
+image=http://magiccards.info/scans/en/m14/107.jpg
+value=2.074
+rarity=C
+type=Creature
+subtype=Zombie,Minotaur
+cost={4}{B}{B}
+pt=4/6
+timing=main
