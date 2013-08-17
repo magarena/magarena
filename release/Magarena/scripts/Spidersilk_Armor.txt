@@ -1,0 +1,10 @@
+name=Spidersilk Armor
+url=http://magiccards.info/ddg/en/32.html
+image=http://magiccards.info/scans/en/ddg/32.jpg
+value=4.262
+rarity=C
+type=Enchantment
+cost={2}{G}
+static=player
+timing=enchantment
+requires_groovy_code

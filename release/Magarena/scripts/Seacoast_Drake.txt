@@ -1,0 +1,11 @@
+name=Seacoast Drake
+url=http://magiccards.info/m14/en/70.html
+image=http://magiccards.info/scans/en/m14/70.jpg
+value=3.768
+rarity=C
+type=Creature
+subtype=Drake
+cost={1}{U}
+pt=1/3
+ability=flying
+timing=main

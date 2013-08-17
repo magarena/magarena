@@ -1,0 +1,12 @@
+name=Groundshaker Sliver
+url=http://magiccards.info/m14/en/177.html
+image=http://magiccards.info/scans/en/m14/177.jpg
+value=1.932
+rarity=C
+type=Creature
+subtype=Sliver
+cost={6}{G}
+pt=5/5
+static=player
+timing=main
+requires_groovy_code

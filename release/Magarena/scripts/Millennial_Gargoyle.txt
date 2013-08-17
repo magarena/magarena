@@ -1,0 +1,11 @@
+name=Millennial Gargoyle
+url=http://magiccards.info/gtc/en/232.html
+image=http://magiccards.info/scans/en/gtc/232.jpg
+value=1.798
+rarity=C
+type=Artifact,Creature
+subtype=Gargoyle
+cost={4}
+pt=2/2
+ability=flying
+timing=main

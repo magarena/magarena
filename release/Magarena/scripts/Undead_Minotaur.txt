@@ -1,0 +1,10 @@
+name=Undead Minotaur
+url=http://magiccards.info/m14/en/119.html
+image=http://magiccards.info/scans/en/m14/119.jpg
+value=2.118
+rarity=C
+type=Creature
+subtype=Zombie,Minotaur
+cost={2}{B}
+pt=2/3
+timing=main

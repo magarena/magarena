@@ -1,0 +1,11 @@
+name=Deathgaze Cockatrice
+url=http://magiccards.info/m14/en/94.html
+image=http://magiccards.info/scans/en/m14/94.jpg
+value=3.464
+rarity=C
+type=Creature
+subtype=Cockatrice
+cost={2}{B}{B}
+pt=2/2
+ability=flying,deathtouch
+timing=main
