@@ -1,0 +1,11 @@
+name=Wirewood Savage
+url=http://magiccards.info/gvl/en/6.html
+image=http://magiccards.info/scans/en/gvl/6.jpg
+value=4.045
+rarity=U
+type=Creature
+subtype=Elf
+cost={2}{G}
+pt=2/2
+timing=fmain
+requires_groovy_code
