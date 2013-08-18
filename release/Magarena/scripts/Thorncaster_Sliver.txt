@@ -1,0 +1,12 @@
+name=Thorncaster Sliver
+url=http://magiccards.info/m14/en/158.html
+image=http://magiccards.info/scans/en/m14/158.jpg
+value=2.70
+rarity=R
+type=Creature
+subtype=Sliver
+cost={4}{R}
+pt=2/2
+static=player
+timing=main
+requires_groovy_code
