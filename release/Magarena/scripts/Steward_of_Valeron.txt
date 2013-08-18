@@ -8,5 +8,4 @@ subtype=Human,Druid,Knight
 cost={G}{W}
 pt=2/2
 ability=vigilance,tap add mana {G}
-timing=smain
-mana_or_combat
+timing=main

@@ -22,7 +22,7 @@ def Duplicate = new MagicAtUpkeepTrigger() {
 def GainTrig = new MagicStatic(MagicLayer.Ability) {
     @Override
     public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
-        permanent.addTrigger(Duplicate);
+        permanent.addAbility(Duplicate);
     }
 };
 

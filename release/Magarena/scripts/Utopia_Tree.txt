@@ -9,4 +9,3 @@ cost={1}{G}
 pt=0/2
 ability=tap add mana any
 timing=main
-mana_or_combat

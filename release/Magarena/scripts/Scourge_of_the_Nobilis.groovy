@@ -14,7 +14,7 @@ def Pump = new MagicPumpActivation(MagicManaCost.create("{R/W}"),1,0);
     new MagicStatic(MagicLayer.Ability) {
         @Override
         public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
-            permanent.addActivation(Pump);
+            permanent.addAbility(Pump);
         }
         @Override
         public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) { 

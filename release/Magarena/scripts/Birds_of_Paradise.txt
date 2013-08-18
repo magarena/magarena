@@ -8,5 +8,4 @@ subtype=Bird
 cost={G}
 pt=0/1
 ability=flying,tap add mana any
-timing=smain
-mana_or_combat
+timing=main

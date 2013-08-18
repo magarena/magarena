@@ -8,5 +8,4 @@ subtype=Myr
 cost={2}
 pt=1/1
 ability=infect,tap add mana {1}
-timing=smain
-mana_or_combat
+timing=main

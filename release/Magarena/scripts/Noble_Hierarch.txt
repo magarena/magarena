@@ -9,4 +9,3 @@ cost={G}
 pt=0/1
 ability=exalted,tap add mana {G} or {W} or {U}
 timing=main
-mana_or_combat

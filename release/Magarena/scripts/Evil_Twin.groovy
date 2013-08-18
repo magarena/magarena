@@ -38,7 +38,7 @@ def DestroyTwin = new MagicPermanentActivation(
 def GainAct = new MagicStatic(MagicLayer.Ability) {
     @Override
     public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
-        permanent.addActivation(DestroyTwin);
+        permanent.addAbility(DestroyTwin);
     }
 };
 

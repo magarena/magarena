@@ -34,7 +34,7 @@ public class MagicExcludeChoice extends MagicChoice {
 
         final List<MagicPermanent> excludePermanents=new ArrayList<MagicPermanent>();
         for (final MagicPermanent permanent : player.getPermanents()) {
-            if (permanent.getCardDefinition().hasExcludeManaOrCombat()) {
+            if (permanent.hasExcludeManaOrCombat()) {
                 excludePermanents.add(permanent);
             }
         }

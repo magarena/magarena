@@ -73,6 +73,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     private Set<MagicAbility> cachedAbilityFlags;
     private MagicPowerToughness cachedPowerToughness;
     private final Set<MagicActivation<MagicPermanent>> cachedActivations;
+    private final List<MagicManaActivation> cachedManaActivations;
     private final List<MagicTrigger<?>> cachedTriggers;
 
     // remember order among blockers (blockedName + id + block order)
@@ -94,6 +95,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         blockingCreatures=new MagicPermanentList();
         exiledCards = new MagicCardList();
         cachedActivations = new TreeSet<MagicActivation<MagicPermanent>>();
+        cachedManaActivations = new LinkedList<MagicManaActivation>();
         cachedTriggers    = new LinkedList<MagicTrigger<?>>();
     }
 
@@ -130,6 +132,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         cachedAbilityFlags   = sourcePermanent.cachedAbilityFlags;
         cachedPowerToughness = sourcePermanent.cachedPowerToughness;
         cachedActivations    = new TreeSet<MagicActivation<MagicPermanent>>(sourcePermanent.cachedActivations);
+        cachedManaActivations = new LinkedList<MagicManaActivation>(sourcePermanent.cachedManaActivations);
         cachedTriggers       = new LinkedList<MagicTrigger<?>>(sourcePermanent.cachedTriggers);
     }
 
@@ -182,6 +185,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             cachedPowerToughness.power(),
             cachedPowerToughness.toughness(),
             cachedActivations.hashCode(),
+            cachedManaActivations.hashCode(),
             cachedTriggers.hashCode()
         });
         return stateId;
@@ -195,6 +199,11 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         }
         // Uniqueness is determined by card definition and number of charge counters.
         return -((cardDefinition.getIndex()<<16)+getCounters(MagicCounterType.Charge));
+    }
+    
+    public boolean hasExcludeManaOrCombat() {
+        return cardDefinition.hasExcludeManaOrCombat() || 
+               (isCreature() && producesMana());
     }
 
     public MagicCard getCard() {
@@ -223,12 +232,16 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return sorted;
     }
 
-    public void addActivation(final MagicActivation<MagicPermanent> act) {
+    public void addAbility(final MagicActivation<MagicPermanent> act) {
         cachedActivations.add(act);
     }
     
-    public void addTrigger(final MagicTrigger<?> trig) {
+    public void addAbility(final MagicTrigger<?> trig) {
         cachedTriggers.add(trig);
+    }
+    
+    public void addAbility(final MagicManaActivation act) {
+        cachedManaActivations.add(act);
     }
     
     public Collection<MagicActivation<MagicPermanent>> getActivations() {
@@ -236,7 +249,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
 
     public Collection<MagicManaActivation> getManaActivations() {
-        return cardDefinition.getManaActivations();
+        return cachedManaActivations;
     }
 
     public Collection<MagicStatic> getStatics() {
@@ -256,11 +269,11 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
 
     public boolean producesMana() {
-        return !cardDefinition.getManaActivations().isEmpty();
+        return !cachedManaActivations.isEmpty();
     }
 
     public int countManaActivations() {
-        return cardDefinition.getManaActivations().size();
+        return cachedManaActivations.size();
     }
 
     public String getName() {
@@ -365,6 +378,8 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
                 cachedPowerToughness = cardDefinition.genPowerToughness();
                 cachedActivations.clear();
                 cachedActivations.addAll(cardDefinition.getActivations());
+                cachedManaActivations.clear();
+                cachedManaActivations.addAll(cardDefinition.getManaActivations());
                 cachedTriggers.clear();
                 cachedTriggers.addAll(cardDefinition.getTriggers());
                 break;

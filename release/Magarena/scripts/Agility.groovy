@@ -3,7 +3,7 @@
         @Override
         public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
             flags.add(MagicAbility.Flanking);
-            permanent.addTrigger(MagicFlankingTrigger.create());
+            permanent.addAbility(MagicFlankingTrigger.create());
         }
         @Override
         public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {

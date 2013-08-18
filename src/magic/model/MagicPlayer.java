@@ -64,7 +64,6 @@ public class MagicPlayer implements MagicTarget, MagicMappable<MagicPlayer> {
     private final MagicCardList graveyard;
     private final MagicCardList exile;
     private final MagicPermanentSet permanents;
-    private final MagicPermanentSet manaPermanents;
     private MagicGame currGame;
     private MagicBuilderManaCost builderCost;
     private MagicActivationPriority activationPriority;
@@ -82,7 +81,6 @@ public class MagicPlayer implements MagicTarget, MagicMappable<MagicPlayer> {
         graveyard=new MagicCardList();
         exile=new MagicCardList();
         permanents=new MagicPermanentSet();
-        manaPermanents=new MagicPermanentSet();
         builderCost=new MagicBuilderManaCost();
         activationPriority=new MagicActivationPriority();
     }
@@ -104,7 +102,6 @@ public class MagicPlayer implements MagicTarget, MagicMappable<MagicPlayer> {
         graveyard=new MagicCardList(copyMap, sourcePlayer.graveyard);
         exile=new MagicCardList(copyMap, sourcePlayer.exile);
         permanents=new MagicPermanentSet(copyMap,sourcePlayer.permanents);
-        manaPermanents=new MagicPermanentSet(copyMap,sourcePlayer.manaPermanents);
         builderCost=new MagicBuilderManaCost(sourcePlayer.builderCost);
         activationPriority=new MagicActivationPriority(sourcePlayer.activationPriority);
         cachedAbilityFlags=sourcePlayer.cachedAbilityFlags;
@@ -334,24 +331,21 @@ public class MagicPlayer implements MagicTarget, MagicMappable<MagicPlayer> {
     public void addPermanent(final MagicPermanent permanent) {
         final boolean added = permanents.add(permanent);
         assert added == true : permanent + " cannot be added to " + this;
-        if (permanent.producesMana()) {
-            manaPermanents.add(permanent);
-        }
     }
 
     public void removePermanent(final MagicPermanent permanent) {
         final boolean removed = permanents.remove(permanent);
         assert removed == true : permanent + " cannot be removed from " + this;
-        if (permanent.producesMana()) {
-            manaPermanents.remove(permanent);
-        }
     }
 
     public List<MagicSourceManaActivation> getManaActivations(final MagicGame game) {
         final List<MagicSourceManaActivation> activations=new ArrayList<MagicSourceManaActivation>();
-        for (final MagicPermanent permanent : manaPermanents) {
+        for (final MagicPermanent permanent : permanents) {
+            if (!permanent.producesMana()) {
+                continue;
+            }
 
-            if (game.isArtificial()&&permanent.hasState(MagicPermanentState.ExcludeManaSource)) {
+            if (game.isArtificial() && permanent.hasState(MagicPermanentState.ExcludeManaSource)) {
                 continue;
             }
 
@@ -365,8 +359,10 @@ public class MagicPlayer implements MagicTarget, MagicMappable<MagicPlayer> {
 
     private int getManaActivationsCount(final MagicGame game) {
         int count=0;
-        for (final MagicPermanent permanent : manaPermanents) {
-
+        for (final MagicPermanent permanent : permanents) {
+            if (!permanent.producesMana()) {
+                continue;
+            }
             final MagicSourceManaActivation sourceActivation=new MagicSourceManaActivation(game,permanent);
             if (sourceActivation.available) {
                 count++;
