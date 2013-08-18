@@ -1,0 +1,11 @@
+name=Ajani's Chosen
+url=http://magiccards.info/m14/en/2.html
+image=http://magiccards.info/scans/en/m14/2.jpg
+value=3.833
+rarity=R
+type=Creature
+subtype=Cat,Soldier
+cost={2}{W}{W}
+pt=3/3
+timing=main
+requires_groovy_code
