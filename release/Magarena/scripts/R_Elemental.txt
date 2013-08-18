@@ -1,0 +1,9 @@
+name=R Elemental
+token=Elemental
+image=http://magiccards.info/extras/token/rise-of-the-eldrazi/elemental.jpg
+value=1
+type=Creature
+subtype=Elemental
+color=r
+cost={0}
+pt=1/1

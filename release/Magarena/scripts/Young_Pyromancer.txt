@@ -1,0 +1,11 @@
+name=Young Pyromancer
+url=http://magiccards.info/m14/en/163.html
+image=http://magiccards.info/scans/en/m14/163.jpg
+value=3.717
+rarity=U
+type=Creature
+subtype=Human,Shaman
+cost={1}{R}
+pt=2/1
+timing=main
+requires_groovy_code
