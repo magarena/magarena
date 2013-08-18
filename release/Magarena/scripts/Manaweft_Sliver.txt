@@ -1,0 +1,12 @@
+name=Manaweft Sliver
+url=http://magiccards.info/m14/en/184.html
+image=http://magiccards.info/scans/en/m14/184.jpg
+value=2.70
+rarity=U
+type=Creature
+subtype=Sliver
+cost={1}{G}
+pt=1/1
+static=player
+timing=main
+requires_groovy_code
