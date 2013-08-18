@@ -32,7 +32,7 @@
                             E.getRefPermanent()
                         ));
                     } as MagicEventAction,
-                    "You may\$ attach SN to RN"
+                    "You may\$ attach SN to RN."
                 ));
             }
         }
