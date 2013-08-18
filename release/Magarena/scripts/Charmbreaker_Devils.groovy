@@ -29,7 +29,7 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
             return (permanent.isFriend(cardOnStack) &&
-                    cardOnStack.getCardDefinition().isSpell()) ?
+                    cardOnStack.isInstantOrSorcery()) ?
                 new MagicEvent(
                     permanent,
                     this,

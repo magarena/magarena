@@ -5,8 +5,7 @@
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicItemOnStack itemOnStack) {
-            if (!itemOnStack.getCardDefinition().isInstant() &&
-                !itemOnStack.getCardDefinition().isSorcery()) {
+            if (!itemOnStack.isInstantOrSorcery()) {
                 return MagicEvent.NONE;
             }
 

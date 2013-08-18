@@ -240,11 +240,15 @@ public abstract class MagicItemOnStack implements MagicTarget, MagicMappable<Mag
             getStateId(choiceResults, 2),
         });
     }
-
+   
     public abstract boolean isSpell();
 
     public boolean isSpell(MagicType type) {
         return isSpell() && getCardDefinition().hasType(type);
+    }
+    
+    public boolean isInstantOrSorcery() {
+        return getCardDefinition().isSpell();
     }
 
     public abstract boolean canBeCountered();
