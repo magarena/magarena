@@ -23,7 +23,7 @@
                         game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
                         final MagicPlayCardAction action = new MagicPlayCardAction(card,event.getPlayer());
                         game.doAction(action);
-                        game.doAction(new MagicAttachEquipmentAction(event.getPermanent(),action.getPermanent()));
+                        game.doAction(new MagicAttachAction(event.getPermanent(),action.getPermanent()));
                     }
                 });
             }

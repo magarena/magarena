@@ -2,7 +2,7 @@ package magic.model;
 
 import magic.ai.ArtificialScoringSystem;
 import magic.data.IconImages;
-import magic.model.action.MagicAttachEquipmentAction;
+import magic.model.action.MagicAttachAction;
 import magic.model.action.MagicChangeControlAction;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicChangeStateAction;
@@ -677,7 +677,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 
         if (isEquipment() && equippedCreature.isValid()) {
             if (isCreature() || !equippedCreature.isCreature() || equippedCreature.hasProtectionFrom(this)) {
-                game.addDelayedAction(new MagicAttachEquipmentAction(this,MagicPermanent.NONE));
+                game.addDelayedAction(new MagicAttachAction(this,MagicPermanent.NONE));
             }
         }
 
@@ -1112,6 +1112,14 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         @Override
         public long getStateId() {
             return hashCode();
+        }
+        @Override
+        public void addEquipment(final MagicPermanent equipment) {
+            //do nothing
+        }
+        @Override
+        public void addAura(final MagicPermanent equipment) {
+            //do nothing
         }
     };
 }

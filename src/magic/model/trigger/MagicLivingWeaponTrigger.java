@@ -5,7 +5,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPayedCost;
-import magic.model.action.MagicAttachEquipmentAction;
+import magic.model.action.MagicAttachAction;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.event.MagicEvent;
 
@@ -42,7 +42,7 @@ public class MagicLivingWeaponTrigger extends MagicWhenComesIntoPlayTrigger {
         game.doAction(play_token);
 
         //attach the equipment to the token
-        final MagicAttachEquipmentAction attach_equip = new MagicAttachEquipmentAction(
+        final MagicAttachAction attach_equip = new MagicAttachAction(
             event.getPermanent(),
             play_token.getPermanent()
         );

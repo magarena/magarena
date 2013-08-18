@@ -15,7 +15,7 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicAttachEquipmentAction(
+            game.doAction(new MagicAttachAction(
                 event.getPermanent(),
                 event.getRefPermanent()
             ));
