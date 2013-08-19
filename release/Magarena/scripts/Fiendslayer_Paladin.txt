@@ -1,0 +1,11 @@
+name=Fiendslayer Paladin
+url=http://magiccards.info/m14/en/18.html
+image=http://magiccards.info/scans/en/m14/18.jpg
+value=3.717
+rarity=R
+type=Creature
+subtype=Human,Knight
+cost={1}{W}{W}
+pt=2/2
+ability=first strike,lifelink,can't be the target of black or red spells your opponents control
+timing=main

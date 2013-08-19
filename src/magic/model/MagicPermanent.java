@@ -1031,7 +1031,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         }
 
         // Can't be the target of spells or abilities your opponents controls.
-        if (hasAbility(MagicAbility.Hexproof) && source.getController() != getController()) {
+        if (hasAbility(MagicAbility.Hexproof) && isEnemy(source)) {
             return false;
         }
 
@@ -1046,7 +1046,14 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         }
     
         // Can't be the target of nongreen spells or abilities from nongreen sources
-        if (hasAbility(MagicAbility.CannotBeTheTargetOfNonGreen) && source.hasColor(MagicColor.Green)) {
+        if (hasAbility(MagicAbility.CannotBeTheTargetOfNonGreen) && source.hasColor(MagicColor.Green) == false) {
+            return false;
+        }
+        
+        // Can't be the target of black or red spell your opponent control
+        if (hasAbility(MagicAbility.CannotBeTheTargetOfBlackOrRedOpponentSpell) && 
+            (source.hasColor(MagicColor.Black) || source.hasColor(MagicColor.Red)) &&
+            source.isSpell() && isEnemy(source)) {
             return false;
         }
 
