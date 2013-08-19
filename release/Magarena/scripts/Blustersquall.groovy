@@ -19,10 +19,8 @@
             });
         }
     },
-    new MagicCardActivation(
-        new MagicActivationHints(MagicTiming.Tapping,true),
-        "Overload"
-    ) {
+    new MagicOverloadActivation(MagicTiming.Tapping) {
+        @Override
         public MagicEvent[] getCostEvent(final MagicCard source) {
             return [
                 new MagicPayManaCostEvent(source,"{3}{U}")

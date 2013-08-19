@@ -1,8 +1,6 @@
 [
-    new MagicCardActivation(
-        new MagicActivationHints(MagicTiming.Tapping,true),
-        "Overload"
-    ) {
+    new MagicOverloadActivation(MagicTiming.Removal) {
+        @Override
         public MagicEvent[] getCostEvent(final MagicCard source) {
             return [
                 new MagicPayManaCostEvent(source,"{4}{R}")
