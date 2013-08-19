@@ -160,6 +160,10 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard>,
     public boolean isKnown() {
         return known;
     }
+    
+    public boolean isInHand() {
+        return getOwner().getHand().contains(this);
+    }
 
     public boolean isInGraveyard() {
         return getOwner().getGraveyard().contains(this);
