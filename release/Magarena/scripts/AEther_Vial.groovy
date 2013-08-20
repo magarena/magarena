@@ -1,7 +1,7 @@
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Token),
-        "Token"
+        "Put"
     ) {
 
         @Override
@@ -11,22 +11,24 @@
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicTargetFilter<MagicCard> targetFilter =
-                    new MagicTargetFilter.MagicCMCCardFilter(
-                        MagicTargetFilter.TARGET_CREATURE_CARD_FROM_HAND,
-                        MagicTargetFilter.Operator.EQUAL,
-                        source.getCounters(MagicCounterType.Charge)
-                    );
-            final MagicTargetChoice targetChoice =
-                    new MagicTargetChoice(
-                    targetFilter,false,MagicTargetHint.None,"a creature card from your hand");
+            final MagicTargetFilter<MagicCard> targetFilter = new MagicTargetFilter.MagicCMCCardFilter(
+                MagicTargetFilter.TARGET_CREATURE_CARD_FROM_HAND,
+                MagicTargetFilter.Operator.EQUAL,
+                source.getCounters(MagicCounterType.Charge)
+            );
+            final MagicTargetChoice targetChoice = new MagicTargetChoice(
+                targetFilter,
+                false,
+                MagicTargetHint.None,
+                "a creature card from your hand"
+            );
             return new MagicEvent(
                 source,
                 targetChoice,
                 new MagicGraveyardTargetPicker(true),
                 this,
-                "Put a creature card\$ with converted mana cost equal to " +
-                "the number of charge counters on SN from your hand onto the battlefield."
+                "PN puts a creature card\$ with converted mana cost equal to " +
+                "the number of charge counters on SN from his or her hand onto the battlefield."
             );
         }
 

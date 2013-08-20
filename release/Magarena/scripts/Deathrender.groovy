@@ -6,7 +6,7 @@
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        MagicTargetChoice.TARGET_CREATURE_CARD_FROM_HAND
+                        MagicTargetChoice.CREATURE_CARD_FROM_HAND
                     ),
                     new MagicGraveyardTargetPicker(true),
                     this,

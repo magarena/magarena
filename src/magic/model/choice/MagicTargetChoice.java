@@ -534,26 +534,47 @@ public class MagicTargetChoice extends MagicChoice {
                     "target Spirit card from your graveyard");
     public static final MagicTargetChoice TARGET_CARD_FROM_HAND =
             new MagicTargetChoice(MagicTargetFilter.TARGET_CARD_FROM_HAND,false,MagicTargetHint.None,"a card from your hand");
-    public static final MagicTargetChoice TARGET_CREATURE_CARD_FROM_HAND =
+    public static final MagicTargetChoice CREATURE_CARD_FROM_HAND =
             new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_CARD_FROM_HAND,false,MagicTargetHint.None,"a creature card from your hand");
     public static final MagicTargetChoice TARGET_GREEN_CREATURE_CARD_FROM_HAND =
             new MagicTargetChoice(MagicTargetFilter.TARGET_GREEN_CREATURE_CARD_FROM_HAND,false,MagicTargetHint.None,"a green creature card from your hand");
-    public static final MagicTargetChoice TARGET_BLUE_OR_RED_CREATURE_CARD_FROM_HAND =
-            new MagicTargetChoice(MagicTargetFilter.TARGET_BLUE_OR_RED_CREATURE_CARD_FROM_HAND,false,MagicTargetHint.None,"a blue or red creature card from your hand");
-    public static final MagicTargetChoice TARGET_MULTICOLORED_CREATURE_CARD_FROM_HAND =
-            new MagicTargetChoice(MagicTargetFilter.TARGET_MULTICOLORED_CREATURE_CARD_FROM_HAND,false,MagicTargetHint.None,"a multicolored creature card from your hand");
-    public static final MagicTargetChoice TARGET_BASIC_LAND_CARD_FROM_HAND =
-            new MagicTargetChoice(MagicTargetFilter.TARGET_BASIC_LAND_CARD_FROM_HAND,false,MagicTargetHint.None,
-            "a basic land card from your hand");
 
-    public static final MagicTargetChoice TARGET_LAND_CARD_FROM_HAND = new MagicTargetChoice(
+    public static final MagicTargetChoice ARTIFACT_CARD_FROM_HAND = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_ARTIFACT_CARD_FROM_HAND,
+        false,
+        MagicTargetHint.None,
+        "an artifact card from your hand"
+    );
+
+    public static final MagicTargetChoice BLUE_OR_RED_CREATURE_CARD_FROM_HAND = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_BLUE_OR_RED_CREATURE_CARD_FROM_HAND,
+        false,
+        MagicTargetHint.None,
+        "a blue or red creature card from your hand"
+    );
+
+    public static final MagicTargetChoice MULTICOLORED_CREATURE_CARD_FROM_HAND = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_MULTICOLORED_CREATURE_CARD_FROM_HAND,
+        false,
+        MagicTargetHint.None,
+        "a multicolored creature card from your hand"
+    );
+
+    public static final MagicTargetChoice BASIC_LAND_CARD_FROM_HAND = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_BASIC_LAND_CARD_FROM_HAND,
+        false,
+        MagicTargetHint.None,
+        "a basic land card from your hand"
+    );
+
+    public static final MagicTargetChoice LAND_CARD_FROM_HAND = new MagicTargetChoice(
         MagicTargetFilter.TARGET_LAND_CARD_FROM_HAND,
         false,
         MagicTargetHint.None,
         "a land card from your hand"
     );
 
-    public static final MagicTargetChoice TARGET_GOBLIN_CARD_FROM_HAND = new MagicTargetChoice(
+    public static final MagicTargetChoice GOBLIN_CARD_FROM_HAND = new MagicTargetChoice(
         MagicTargetFilter.TARGET_GOBLIN_CARD_FROM_HAND,
         false,
         MagicTargetHint.None,

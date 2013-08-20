@@ -1064,6 +1064,15 @@ public interface MagicTargetFilter<T extends MagicTarget> {
             return targetType == MagicTargetType.Graveyard;
         }
     };
+    
+    MagicCardFilterImpl TARGET_ARTIFACT_CARD_FROM_HAND = new MagicCardFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+            return target.getCardDefinition().hasType(MagicType.Artifact);
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType == MagicTargetType.Hand;
+        }
+    };
 
     MagicCardFilterImpl TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS=new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {

@@ -1,7 +1,7 @@
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Token),
-        "Token"
+        "Put"
     ) {
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
@@ -15,10 +15,10 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_CREATURE_CARD_FROM_HAND,
+                MagicTargetChoice.CREATURE_CARD_FROM_HAND,
                 new MagicGraveyardTargetPicker(true),
                 this,
-                "Put a creature card\$ from your hand onto the battlefield."
+                "PN puts a creature card\$ from his or her hand onto the battlefield."
             );
         }
 

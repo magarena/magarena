@@ -7,7 +7,7 @@
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        MagicTargetChoice.TARGET_GOBLIN_CARD_FROM_HAND
+                        MagicTargetChoice.GOBLIN_CARD_FROM_HAND
                     ),
                     new MagicGraveyardTargetPicker(true),
                     this,

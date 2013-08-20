@@ -37,10 +37,10 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_BLUE_OR_RED_CREATURE_CARD_FROM_HAND,
+                MagicTargetChoice.BLUE_OR_RED_CREATURE_CARD_FROM_HAND,
                 new MagicGraveyardTargetPicker(true),
                 this,
-                "Put a blue or red creature card\$ from your hand onto the battlefield."
+                "PN puts a blue or red creature card\$ from his or her hand onto the battlefield."
             );
         }
         @Override

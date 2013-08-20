@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 new MagicMayChoice(
-                    MagicTargetChoice.TARGET_BASIC_LAND_CARD_FROM_HAND
+                    MagicTargetChoice.BASIC_LAND_CARD_FROM_HAND
                 ),
                 new MagicGraveyardTargetPicker(true),
                 this,
