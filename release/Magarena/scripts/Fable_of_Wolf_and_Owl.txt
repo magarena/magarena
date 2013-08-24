@@ -1,0 +1,9 @@
+name=Fable of Wolf and Owl
+url=http://magiccards.info/eve/en/150.html
+image=http://magiccards.info/scans/en/eve/150.jpg
+value=3.895
+rarity=R
+type=Enchantment
+cost={3}{G/U}{G/U}{G/U}
+timing=main
+requires_groovy_code

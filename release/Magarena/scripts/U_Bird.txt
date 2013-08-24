@@ -1,0 +1,10 @@
+name=U Bird
+token=Bird
+image=http://magiccards.info/extras/token/eventide/bird.jpg
+value=1
+type=Creature
+subtype=Bird
+color=u
+cost={0}
+pt=1/1
+ability=flying
