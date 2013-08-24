@@ -310,6 +310,12 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard>,
             player.getHand().contains(this)) {
             return true;
         }
+        
+        // Card in library
+        if (targetFilter.acceptType(MagicTargetType.Library) &&
+            player.getLibrary().contains(this)) {
+            return true;
+        }
 
         return false;
     }
