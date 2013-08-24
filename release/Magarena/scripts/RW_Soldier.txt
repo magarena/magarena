@@ -1,0 +1,10 @@
+name=RW Soldier
+token=Soldier
+image=http://magiccards.info/extras/token/gatecrash/soldier.jpg
+value=1
+type=Creature
+subtype=Soldier
+color=rw
+cost={0}
+pt=1/1
+ability=haste
