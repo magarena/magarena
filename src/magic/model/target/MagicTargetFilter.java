@@ -4,9 +4,11 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Set;
 import java.util.EnumSet;
+import java.util.HashSet;
 
 import magic.model.MagicAbility;
 import magic.model.MagicCard;
+import magic.model.MagicCardList;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicCounterType;
@@ -82,6 +84,15 @@ abstract class MagicTargetFilterImpl implements MagicTargetFilter<MagicTarget> {
                 }
             }
         }
+        
+        // Cards in library
+        if (acceptType(MagicTargetType.Library)) {
+            for (final MagicCard targetCard : player.getLibrary()) {
+                if (accept(game,player,targetCard)) {
+                    targets.add(targetCard);
+                }
+            }
+        }
 
         return targets;
     }
@@ -89,36 +100,39 @@ abstract class MagicTargetFilterImpl implements MagicTargetFilter<MagicTarget> {
 
 abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard> {
     public List<MagicCard> filter(final MagicGame game, final MagicPlayer player, final MagicTargetHint targetHint) {
-        final List<MagicCard> targets=new ArrayList<MagicCard>();
+        final List<MagicCard> targets = new ArrayList<MagicCard>();
+        final Set<Long> added = new HashSet<Long>();
 
         // Cards in graveyard
         if (acceptType(MagicTargetType.Graveyard)) {
-            for (final MagicCard targetCard : player.getGraveyard()) {
-                if (accept(game,player,targetCard)) {
-                    targets.add(targetCard);
-                }
-            }
+            add(game, player, player.getGraveyard(), targets, added);
         }
 
         // Cards in opponent's graveyard
         if (acceptType(MagicTargetType.OpponentsGraveyard)) {
-            for (final MagicCard targetCard : player.getOpponent().getGraveyard()) {
-                if (accept(game,player,targetCard)) {
-                    targets.add(targetCard);
-                }
-            }
+            add(game, player, player.getOpponent().getGraveyard(), targets, added);
         }
 
         // Cards in hand
         if (acceptType(MagicTargetType.Hand)) {
-            for (final MagicCard targetCard : player.getHand()) {
-                if (accept(game,player,targetCard)) {
-                    targets.add(targetCard);
-                }
-            }
+            add(game, player, player.getHand(), targets, added);
+        }
+        
+        // Cards in library
+        if (acceptType(MagicTargetType.Library)) {
+            add(game, player, player.getLibrary(), targets, added);
         }
 
         return targets;
+    }
+
+    private void add(final MagicGame game, final MagicPlayer player, final MagicCardList cards, final List<MagicCard> targets, final Set<Long> added) {
+        for (final MagicCard card : cards) {
+            if (accept(game,player,card) && added.contains(card.getStateId()) == false) {
+                targets.add(card);
+                added.add(card.getStateId());
+            }
+        }
     }
 }
 
@@ -1143,7 +1157,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
             return targetType==MagicTargetType.Graveyard;
         }
     };
-
+    
     MagicCardFilterImpl TARGET_ZOMBIE_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
             return target.getCardDefinition().hasSubType(MagicSubType.Zombie);
@@ -1250,6 +1264,16 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType == MagicTargetType.Hand;
+        }
+    };
+    
+    MagicCardFilterImpl TARGET_BASIC_LAND_CARD_FROM_LIBRARY=new MagicCardFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+            final MagicCardDefinition cardDefinition = target.getCardDefinition();
+            return cardDefinition.isLand()&&cardDefinition.isBasic();
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType==MagicTargetType.Library;
         }
     };
 
