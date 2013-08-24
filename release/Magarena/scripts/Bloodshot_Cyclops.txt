@@ -1,0 +1,11 @@
+name=Bloodshot Cyclops
+url=http://magiccards.info/8e/en/179.html
+image=http://magiccards.info/scans/en/8e/179.jpg
+value=3.851
+rarity=R
+type=Creature
+subtype=Cyclops,Giant
+cost={5}{R}
+pt=4/4
+timing=main
+requires_groovy_code
