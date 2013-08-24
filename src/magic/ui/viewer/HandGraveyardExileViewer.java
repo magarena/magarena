@@ -56,15 +56,12 @@ public class HandGraveyardExileViewer extends JPanel implements ChangeListener {
     }
 
     public void update() {
-
         for (final CardListViewer viewer : viewers) {
-
             viewer.update();
         }
     }
 
     public void setSelectedTab(final int selectedTab) {
-
         if (selectedTab>=0) {
             tabSelector.setSelectedTab(selectedTab);
         }
@@ -72,7 +69,6 @@ public class HandGraveyardExileViewer extends JPanel implements ChangeListener {
 
     @Override
     public void stateChanged(final ChangeEvent e) {
-
         final int selectedTab=tabSelector.getSelectedTab();
         cardLayout.show(cardPanel,Integer.toString(selectedTab));
         titleBar.setText(viewers[selectedTab].getTitle());
