@@ -1,0 +1,11 @@
+name=Domri Rade
+url=http://magiccards.info/gtc/en/156.html
+image=http://magiccards.info/scans/en/gtc/156.jpg
+value=5.000
+rarity=M
+type=Planeswalker
+subtype=Domri
+cost={1}{R}{G}
+ability=enters with charge 3
+timing=main
+requires_groovy_code
