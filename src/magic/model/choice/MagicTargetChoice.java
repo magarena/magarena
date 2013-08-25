@@ -597,6 +597,13 @@ public class MagicTargetChoice extends MagicChoice {
         "a Swamp or Forest card from your library"
     );
     
+    public static final MagicTargetChoice SWAMP_OR_MOUNTAIN_CARD_FROM_LIBRARY = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_SWAMP_OR_MOUNTAIN_CARD_FROM_LIBRARY,
+        false,
+        MagicTargetHint.None,
+        "a Swamp or Mountain card from your library"
+    );
+    
     public static final MagicTargetChoice PLAINS_OR_SWAMP_CARD_FROM_LIBRARY = new MagicTargetChoice(
         MagicTargetFilter.TARGET_PLAINS_OR_SWAMP_CARD_FROM_LIBRARY,
         false,
