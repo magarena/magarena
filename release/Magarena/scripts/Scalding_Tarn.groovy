@@ -18,7 +18,7 @@
             return new MagicEvent(
                 source,
                 this,
-                "PN searches his or her library for a Forest or Island card and put it onto the battlefield. Then shuffle PN's library."
+                "PN searches his or her library for a Island or Mountain card and put it onto the battlefield. Then shuffle PN's library."
             );
         }
 
