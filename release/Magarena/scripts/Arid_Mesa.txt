@@ -1,0 +1,8 @@
+name=Arid Mesa
+url=http://magiccards.info/zen/en/211.html
+image=http://magiccards.info/scans/en/zen/211.jpg
+value=4.476
+rarity=R
+type=Land
+timing=land
+requires_groovy_code
