@@ -1277,36 +1277,6 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }
     };
     
-    MagicCardFilterImpl TARGET_FOREST_OR_ISLAND_CARD_FROM_LIBRARY = 
-        Factory.land(MagicTargetType.Library, MagicSubType.Forest, MagicSubType.Island);
-    
-    MagicCardFilterImpl TARGET_FOREST_OR_PLAINS_CARD_FROM_LIBRARY = 
-        Factory.land(MagicTargetType.Library, MagicSubType.Forest, MagicSubType.Plains);
-    
-    MagicCardFilterImpl TARGET_PLAINS_OR_SWAMP_CARD_FROM_LIBRARY =
-        Factory.land(MagicTargetType.Library, MagicSubType.Plains, MagicSubType.Swamp);
-    
-    MagicCardFilterImpl TARGET_PLAINS_OR_ISLAND_CARD_FROM_LIBRARY =
-        Factory.land(MagicTargetType.Library, MagicSubType.Plains, MagicSubType.Island);
-    
-    MagicCardFilterImpl TARGET_ISLAND_OR_MOUNTAIN_CARD_FROM_LIBRARY =
-        Factory.land(MagicTargetType.Library, MagicSubType.Island, MagicSubType.Mountain);
-    
-    MagicCardFilterImpl TARGET_ISLAND_OR_SWAMP_CARD_FROM_LIBRARY =
-        Factory.land(MagicTargetType.Library, MagicSubType.Island, MagicSubType.Swamp);
-    
-    MagicCardFilterImpl TARGET_SWAMP_OR_FOREST_CARD_FROM_LIBRARY =
-        Factory.land(MagicTargetType.Library, MagicSubType.Swamp, MagicSubType.Forest);
-    
-    MagicCardFilterImpl TARGET_SWAMP_OR_MOUNTAIN_CARD_FROM_LIBRARY =
-        Factory.land(MagicTargetType.Library, MagicSubType.Swamp, MagicSubType.Mountain);
-    
-    MagicCardFilterImpl TARGET_MOUNTAIN_OR_PLAINS_CARD_FROM_LIBRARY =
-        Factory.land(MagicTargetType.Library, MagicSubType.Mountain, MagicSubType.Plains);
-    
-    MagicCardFilterImpl TARGET_MOUNTAIN_OR_FOREST_CARD_FROM_LIBRARY =
-        Factory.land(MagicTargetType.Library, MagicSubType.Mountain, MagicSubType.Forest);
-    
     MagicCardFilterImpl TARGET_PLAINS_ISLAND_SWAMP_OR_MOUNTAIN_CARD_FROM_LIBRARY = new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
             return target.hasSubType(MagicSubType.Plains) ||
@@ -1318,6 +1288,36 @@ public interface MagicTargetFilter<T extends MagicTarget> {
             return targetType==MagicTargetType.Library;
         }
     };
+    
+    MagicCardFilterImpl TARGET_PLAINS_OR_ISLAND_CARD_FROM_LIBRARY =
+        Factory.land(MagicTargetType.Library, MagicSubType.Plains, MagicSubType.Island);
+    
+    MagicCardFilterImpl TARGET_PLAINS_OR_SWAMP_CARD_FROM_LIBRARY =
+        Factory.land(MagicTargetType.Library, MagicSubType.Plains, MagicSubType.Swamp);
+    
+    MagicCardFilterImpl TARGET_ISLAND_OR_SWAMP_CARD_FROM_LIBRARY =
+        Factory.land(MagicTargetType.Library, MagicSubType.Island, MagicSubType.Swamp);
+    
+    MagicCardFilterImpl TARGET_ISLAND_OR_MOUNTAIN_CARD_FROM_LIBRARY =
+        Factory.land(MagicTargetType.Library, MagicSubType.Island, MagicSubType.Mountain);
+    
+    MagicCardFilterImpl TARGET_SWAMP_OR_MOUNTAIN_CARD_FROM_LIBRARY =
+        Factory.land(MagicTargetType.Library, MagicSubType.Swamp, MagicSubType.Mountain);
+    
+    MagicCardFilterImpl TARGET_SWAMP_OR_FOREST_CARD_FROM_LIBRARY =
+        Factory.land(MagicTargetType.Library, MagicSubType.Swamp, MagicSubType.Forest);
+    
+    MagicCardFilterImpl TARGET_MOUNTAIN_OR_FOREST_CARD_FROM_LIBRARY =
+        Factory.land(MagicTargetType.Library, MagicSubType.Mountain, MagicSubType.Forest);
+    
+    MagicCardFilterImpl TARGET_MOUNTAIN_OR_PLAINS_CARD_FROM_LIBRARY =
+        Factory.land(MagicTargetType.Library, MagicSubType.Mountain, MagicSubType.Plains);
+
+    MagicCardFilterImpl TARGET_FOREST_OR_PLAINS_CARD_FROM_LIBRARY = 
+        Factory.land(MagicTargetType.Library, MagicSubType.Forest, MagicSubType.Plains);
+    
+    MagicCardFilterImpl TARGET_FOREST_OR_ISLAND_CARD_FROM_LIBRARY = 
+        Factory.land(MagicTargetType.Library, MagicSubType.Forest, MagicSubType.Island);
 
     MagicCardFilterImpl TARGET_LAND_CARD_FROM_HAND = new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
