@@ -575,6 +575,13 @@ public class MagicTargetChoice extends MagicChoice {
         MagicTargetHint.None,
         "a basic land card from your library"
     );
+    
+    public static final MagicTargetChoice FOREST_OR_ISLAND_CARD_FROM_LIBRARY = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_FOREST_OR_ISLAND_CARD_FROM_LIBRARY,
+        false,
+        MagicTargetHint.None,
+        "a Forest or Island from your library"
+    );
 
     public static final MagicTargetChoice LAND_CARD_FROM_HAND = new MagicTargetChoice(
         MagicTargetFilter.TARGET_LAND_CARD_FROM_HAND,

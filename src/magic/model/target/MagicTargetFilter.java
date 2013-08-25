@@ -1270,7 +1270,17 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     MagicCardFilterImpl TARGET_BASIC_LAND_CARD_FROM_LIBRARY=new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
             final MagicCardDefinition cardDefinition = target.getCardDefinition();
-            return cardDefinition.isLand()&&cardDefinition.isBasic();
+            return cardDefinition.isLand() && cardDefinition.isBasic();
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType==MagicTargetType.Library;
+        }
+    };
+    
+    MagicCardFilterImpl TARGET_FOREST_OR_ISLAND_CARD_FROM_LIBRARY=new MagicCardFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+            final MagicCardDefinition cardDefinition = target.getCardDefinition();
+            return cardDefinition.hasSubType(MagicSubType.Forest) || cardDefinition.hasSubType(MagicSubType.Island);
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType==MagicTargetType.Library;
