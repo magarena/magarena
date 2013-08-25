@@ -589,6 +589,48 @@ public class MagicTargetChoice extends MagicChoice {
         MagicTargetHint.None,
         "a Island or Mountain card from your library"
     );
+    
+    public static final MagicTargetChoice SWAMP_OR_FOREST_CARD_FROM_LIBRARY = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_SWAMP_OR_FOREST_CARD_FROM_LIBRARY,
+        false,
+        MagicTargetHint.None,
+        "a Swamp or Forest card from your library"
+    );
+    
+    public static final MagicTargetChoice PLAINS_OR_SWAMP_CARD_FROM_LIBRARY = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_PLAINS_OR_SWAMP_CARD_FROM_LIBRARY,
+        false,
+        MagicTargetHint.None,
+        "a Plains or Swamp card from your library"
+    );
+    
+    public static final MagicTargetChoice MOUNTAIN_OR_PLAINS_CARD_FROM_LIBRARY = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_MOUNTAIN_OR_PLAINS_CARD_FROM_LIBRARY,
+        false,
+        MagicTargetHint.None,
+        "a Mountain or Plains card from your library"
+    );
+    
+    public static final MagicTargetChoice ISLAND_OR_SWAMP_CARD_FROM_LIBRARY = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_ISLAND_OR_SWAMP_CARD_FROM_LIBRARY,
+        false,
+        MagicTargetHint.None,
+        "a Island or Swamp card from your library"
+    );
+    
+    public static final MagicTargetChoice PLAINS_OR_ISLAND_CARD_FROM_LIBRARY = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_PLAINS_OR_ISLAND_CARD_FROM_LIBRARY,
+        false,
+        MagicTargetHint.None,
+        "a Plains or Island card from your library"
+    );
+    
+    public static final MagicTargetChoice PLAINS_ISLAND_SWAMP_OR_MOUNTAIN_CARD_FROM_LIBRARY = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_PLAINS_ISLAND_SWAMP_OR_MOUNTAIN_CARD_FROM_LIBRARY,
+        false,
+        MagicTargetHint.None,
+        "a Plains, Island, Swamp, or Mountain card from your library"
+    );
 
     public static final MagicTargetChoice LAND_CARD_FROM_HAND = new MagicTargetChoice(
         MagicTargetFilter.TARGET_LAND_CARD_FROM_HAND,
