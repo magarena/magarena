@@ -32,8 +32,8 @@
                     E.processTargetCard(G, {
                         final MagicCard card ->
                         G.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
-                        G.doAction(new MagicPlayCardAction(card,event.getPlayer()));
-                        G.doAction(new MagicShuffleLibraryAction(event.getPlayer()));
+                        G.doAction(new MagicPlayCardAction(card,E.getPlayer()));
+                        G.doAction(new MagicShuffleLibraryAction(E.getPlayer()));
                     } as MagicCardAction);
                 } as MagicEventAction,
                 "Selected card\$."
