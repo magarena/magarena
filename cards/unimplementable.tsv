@@ -14,27 +14,6 @@ Lingering Souls	flashback
 Think Twice	flashback
 Devil's Play	flashback
 Desperate Ravings	flashback
-Evolving Wilds	lib search
-Solemn Simulacrum	lib search
-Scalding Tarn	lib search
-Misty Rainforest	lib search
-Path to Exile	lib search
-Birthing Pod	lib search
-Primeval Titan	lib search
-Arid Mesa	lib search
-Verdant Catacombs	lib search
-Rampant Growth	lib search
-Borderland Ranger	lib search
-Green Sun's Zenith	lib search
-Farseek	lib search
-Wood Elves	lib search
-Ghost Quarter	lib search
-Marsh Flats	lib search
-Flooded Strand	lib search
-Trinket Mage	lib search
-Wooded Foothills	lib search
-Goblin Matron	lib search
-Polluted Delta	lib search
 Cavern of Souls	restricted mana
 Ponder	reveal
 Duress	reveal
@@ -109,7 +88,6 @@ Black Lotus	mana pool
 Augur of Bolas	reveal
 Tezzeret the Seeker	multiple targets
 Sphere of Resistance	cost modification
-Demonic Tutor	lib search
 Mana Crypt	mana pool
 Goblin Guide	reveal
 Tolarian Academy	mana pool
@@ -123,26 +101,15 @@ Slaughter Games	name card
 Pyroblast	choose
 Izzet Charm	choose
 Leyline of the Void	begin the game with it
-Vampiric Tutor	lib search
-Mystical Tutor	lib search
-Rune-Scarred Demon	lib search
-Bloodstained Mire	lib search
-Tinker	lib search
-Jace, Architect of Thought	lib search
-Windswept Heath	lib search
-Scapeshift	lib search
-Search for Tomorrow	lib search
 Skullbriar, the Walking Grave	counters remain
 Living Destiny	reveal
 Sin Collector	reveal
 Deathrite Shaman	mana pool
 Electrolyze	divided damage
-Sakura-Tribe Elder	lib search
 Ancestral Vision	suspend
 Jace, the Mind Sculptor	reveal
 Darksteel Colossus	reveal
 Blightsteel Colossus	reveal
-Stoneforge Mystic	lib search
 Searing Blaze	multiple targets
 Rift Bolt	suspend
 Chord of Calling	convoke
@@ -156,7 +123,6 @@ Lightning Serpent	+1/+0 counters
 Grafted Wargear	becomes unattached
 Doubling Season	counters replacement
 Melira, Sylvok Outcast	counters replacement
-Aven Mindcensor	lib search
 Wall of Roots	-0/-1 counter
 Viscera Seer	reveal
 Liliana of the Veil	separate permanents
@@ -170,7 +136,6 @@ Jund Charm	choose
 Lion's Eye Diamond	mana pool
 Cabal Therapy	flashback
 Rite of Flame	mana pool
-Infernal Tutor	lib search
 Dark Ritual	mana pool
 Burning Wish	reveal
 Punishing Fire	from graveyard
@@ -178,16 +143,12 @@ Lush Growth	becomes basic land
 Ray of Revelation	from graveyard
 Lifebane Zombie	reveal
 Ral Zarek	multiple targets
-Shadow of Doubt	lib search
-Leonin Arbiter	lib search
 Urza's Tower	mana pool
 Urza's Power Plant	mana pool
 Urza's Mine	mana pool
 Karn Liberated	restart the game
-Expedition Map	lib search
 Ancient Stirrings	reveal
 Defense Grid	cost modification
-Sylvan Scrying	lib search
 Pyretic Ritual	mana pool
 Manamorphose	mana pool
 Goblin Electromancer	cost modification
@@ -199,7 +160,6 @@ Thoughtcast	cost modification
 Preordain	reveal
 Twilight Mire	mana pool
 Mutagenic Growth	phyrexian mana
-Squadron Hawk	lib search
 Martyr of Sands	reveal
 Garruk, Caller of Beasts	reveal
 Frogmite	cost modification
