@@ -1,0 +1,8 @@
+name=Scalding Tarn
+url=http://magiccards.info/zen/en/223.html
+image=http://magiccards.info/scans/en/zen/223.jpg
+value=4.476
+rarity=R
+type=Land
+timing=land
+requires_groovy_code

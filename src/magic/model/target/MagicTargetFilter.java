@@ -1286,6 +1286,16 @@ public interface MagicTargetFilter<T extends MagicTarget> {
             return targetType==MagicTargetType.Library;
         }
     };
+    
+    MagicCardFilterImpl TARGET_ISLAND_OR_MOUNTAIN_CARD_FROM_LIBRARY=new MagicCardFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+            final MagicCardDefinition cardDefinition = target.getCardDefinition();
+            return cardDefinition.hasSubType(MagicSubType.Island) || cardDefinition.hasSubType(MagicSubType.Mountain);
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType==MagicTargetType.Library;
+        }
+    };
 
     MagicCardFilterImpl TARGET_LAND_CARD_FROM_HAND = new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
