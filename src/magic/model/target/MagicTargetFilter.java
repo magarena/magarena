@@ -1280,6 +1280,9 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     MagicCardFilterImpl TARGET_FOREST_OR_ISLAND_CARD_FROM_LIBRARY = 
         Factory.land(MagicTargetType.Library, MagicSubType.Forest, MagicSubType.Island);
     
+    MagicCardFilterImpl TARGET_FOREST_OR_PLAINS_CARD_FROM_LIBRARY = 
+        Factory.land(MagicTargetType.Library, MagicSubType.Forest, MagicSubType.Plains);
+    
     MagicCardFilterImpl TARGET_ISLAND_OR_MOUNTAIN_CARD_FROM_LIBRARY =
         Factory.land(MagicTargetType.Library, MagicSubType.Island, MagicSubType.Mountain);
     
