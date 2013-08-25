@@ -618,6 +618,13 @@ public class MagicTargetChoice extends MagicChoice {
         "a Mountain or Plains card from your library"
     );
     
+    public static final MagicTargetChoice MOUNTAIN_OR_FOREST_CARD_FROM_LIBRARY = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_MOUNTAIN_OR_FOREST_CARD_FROM_LIBRARY,
+        false,
+        MagicTargetHint.None,
+        "a Mountain or Plains card from your library"
+    );
+    
     public static final MagicTargetChoice ISLAND_OR_SWAMP_CARD_FROM_LIBRARY = new MagicTargetChoice(
         MagicTargetFilter.TARGET_ISLAND_OR_SWAMP_CARD_FROM_LIBRARY,
         false,
