@@ -574,3 +574,17 @@ reminder.txt: cards/cards.xml
 fix_eol:
 	sed -i -e '$$a\'       release/Magarena/**/*.txt release/Magarena/**/*.groovy src/**/*.java
 	sed -i -e 's/\x0D$$//' release/Magarena/**/*.txt release/Magarena/**/*.groovy src/**/*.java
+
+%.post:
+	@echo "[img]"`grep -o "http.*jpg" release/Magarena/scripts/$*.txt`"[/img]"
+	@echo
+	@echo "Magarena/scripts/$*.txt"
+	@echo "[code]"
+	@cat release/Magarena/scripts/$*.txt
+	@echo "[/code]"
+	@echo
+	@echo "Magarena/scripts/$*.groovy"
+	@echo "[code]"
+	@cat release/Magarena/scripts/$*.groovy
+	@echo "[/code]"
+
