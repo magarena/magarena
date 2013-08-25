@@ -1,0 +1,8 @@
+name=Polluted Delta
+url=http://magiccards.info/on/en/321.html
+image=http://magiccards.info/scans/en/on/321.jpg
+value=4.476
+rarity=R
+type=Land
+timing=land
+requires_groovy_code
