@@ -1,5 +1,6 @@
 package magic.ui.viewer;
 
+import magic.model.MagicCardList;
 import magic.ui.GameController;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
@@ -17,10 +18,10 @@ public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListe
     private final ViewerInfo viewerInfo;
     private final TabSelector tabSelector;
     private final ImageCardListViewer cardListViewer;
+    private final MagicCardList other = new MagicCardList();
 
-    public ImageHandGraveyardExileViewer(final ViewerInfo viewerInfo,final GameController controller) {
-
-        this.viewerInfo=viewerInfo;
+    public ImageHandGraveyardExileViewer(final ViewerInfo aViewerInfo,final GameController controller) {
+        viewerInfo = aViewerInfo;
 
         final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
 
@@ -36,6 +37,7 @@ public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListe
         tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_GRAVEYARD),"Graveyard : "+opponentName);
         tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_EXILE),"Exile : "+playerName);
         tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_EXILE),"Exile : "+opponentName);
+        tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_HAND),"Other : "+playerName);
         add(tabSelector,BorderLayout.WEST);
 
         cardListViewer=new ImageCardListViewer(controller);
@@ -43,14 +45,17 @@ public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListe
     }
 
     public void setSelectedTab(final int selectedTab) {
-
         if (selectedTab>=0) {
             tabSelector.setSelectedTab(selectedTab);
         }
     }
 
-    public void update() {
+    public void showCards(final MagicCardList cards) {
+        other.clear();
+        other.addAll(cards);
+    }
 
+    public void update() {
         if (cardListViewer!=null) {
             switch (tabSelector.getSelectedTab()) {
                 case 0: cardListViewer.setCardList(viewerInfo.getPlayerInfo(false).hand,true); break;
@@ -58,6 +63,7 @@ public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListe
                 case 2: cardListViewer.setCardList(viewerInfo.getPlayerInfo(true).graveyard,false); break;
                 case 3: cardListViewer.setCardList(viewerInfo.getPlayerInfo(false).exile,false); break;
                 case 4: cardListViewer.setCardList(viewerInfo.getPlayerInfo(true).exile,false); break;
+                case 5: cardListViewer.setCardList(other,false); break;
             }
             repaint();
         }
@@ -65,7 +71,6 @@ public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListe
 
     @Override
     public void stateChanged(final ChangeEvent event) {
-
         update();
     }
 }

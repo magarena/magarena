@@ -5,6 +5,7 @@ import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.data.SoundEffects;
 import magic.model.MagicCard;
+import magic.model.MagicCardList;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
@@ -298,6 +299,14 @@ public class GameController {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 gamePanel.focusViewers(handGraveyard,stackCombat);
+            }
+        });
+    }
+
+    public void showCards(final MagicCardList cards) {
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                gamePanel.showCards(cards);
             }
         });
     }

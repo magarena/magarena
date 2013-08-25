@@ -4,6 +4,7 @@ import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.model.MagicGame;
+import magic.model.MagicCardList;
 import magic.ui.resolution.ResolutionProfileResult;
 import magic.ui.resolution.ResolutionProfileType;
 import magic.ui.resolution.ResolutionProfiles;
@@ -299,6 +300,16 @@ public final class GamePanel extends JPanel {
             stackCombatViewer.setSelectedTab(stackCombat);
         } else {
             imageHandGraveyardViewer.setSelectedTab(handGraveyard);
+        }
+    }
+    
+    public void showCards(final MagicCardList cards) {
+        if (isTextView()) {
+            handGraveyardViewer.showCards(cards);
+            handGraveyardViewer.setSelectedTab(5);
+        } else {
+            imageHandGraveyardViewer.showCards(cards);
+            imageHandGraveyardViewer.setSelectedTab(5);
         }
     }
 

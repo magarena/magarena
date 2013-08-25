@@ -2,6 +2,8 @@ package magic.model.choice;
 
 import magic.data.GeneralConfig;
 import magic.model.MagicGame;
+import magic.model.MagicCardList;
+import magic.model.MagicCard;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
@@ -566,6 +568,13 @@ public class MagicTargetChoice extends MagicChoice {
         MagicTargetHint.None,
         "a basic land card from your hand"
     );
+    
+    public static final MagicTargetChoice BASIC_LAND_CARD_FROM_LIBRARY = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_BASIC_LAND_CARD_FROM_LIBRARY,
+        false,
+        MagicTargetHint.None,
+        "a basic land card from your library"
+    );
 
     public static final MagicTargetChoice LAND_CARD_FROM_HAND = new MagicTargetChoice(
         MagicTargetFilter.TARGET_LAND_CARD_FROM_HAND,
@@ -726,7 +735,7 @@ public class MagicTargetChoice extends MagicChoice {
             controller.focusViewers(1,-1);
         } else if (targetFilter.acceptType(MagicTargetType.OpponentsGraveyard)) {
             controller.focusViewers(2,-1);
-        }
+        } 
         final MagicTargetHint usedTargetHint=getTargetHint(GeneralConfig.getInstance().getSmartTarget());
         final Set<Object> validChoices=new HashSet<Object>(game.getLegalTargets(player,source,this,usedTargetHint));
         if (validChoices.size()==1) {
@@ -744,8 +753,18 @@ public class MagicTargetChoice extends MagicChoice {
                 return new Object[]{opponent};
             }
         }
+        if (targetFilter.acceptType(MagicTargetType.Library)) {
+            final MagicCardList cards = new MagicCardList();
+            for (final Object card : validChoices) {
+                cards.add((MagicCard)card);
+            }
+            controller.showCards(cards);
+        }
         controller.setValidChoices(validChoices,false);
         controller.waitForInput();
+        if (targetFilter.acceptType(MagicTargetType.Library)) {
+            controller.showCards(new MagicCardList());
+        }
         return new Object[]{controller.getChoiceClicked()};
     }
 

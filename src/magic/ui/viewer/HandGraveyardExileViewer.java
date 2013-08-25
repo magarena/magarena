@@ -1,5 +1,7 @@
 package magic.ui.viewer;
 
+import magic.model.MagicCardList;
+
 import magic.ui.GameController;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
@@ -20,6 +22,7 @@ public class HandGraveyardExileViewer extends JPanel implements ChangeListener {
     private final CardLayout cardLayout;
     private final TitleBar titleBar;
     private final TabSelector tabSelector;
+    private final MagicCardList other = new MagicCardList();
 
     public HandGraveyardExileViewer(final ViewerInfo viewerInfo, final GameController controller) {
         final Theme theme = ThemeFactory.getInstance().getCurrentTheme();
@@ -29,7 +32,8 @@ public class HandGraveyardExileViewer extends JPanel implements ChangeListener {
             new GraveyardViewer(viewerInfo, controller, false),
             new GraveyardViewer(viewerInfo, controller, true),
             new ExileViewer(viewerInfo, controller, false),
-            new ExileViewer(viewerInfo, controller, true)
+            new ExileViewer(viewerInfo, controller, true),
+            new OtherViewer(viewerInfo, other, controller)
         };
 
         setOpaque(false);
@@ -59,6 +63,12 @@ public class HandGraveyardExileViewer extends JPanel implements ChangeListener {
         for (final CardListViewer viewer : viewers) {
             viewer.update();
         }
+    }
+    
+    public void showCards(final MagicCardList cards) {
+        other.clear();
+        other.addAll(cards);
+        viewers[5].update();
     }
 
     public void setSelectedTab(final int selectedTab) {
