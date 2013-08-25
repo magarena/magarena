@@ -22,7 +22,7 @@
                         G.doAction(new MagicShuffleLibraryAction(event.getPlayer()));
                     } as MagicCardAction);
                 } as MagicEventAction,
-                "Selected basic land card\$."
+                "Selected card\$."
             ));
         }
     }
