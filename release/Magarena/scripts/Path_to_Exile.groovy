@@ -16,25 +16,14 @@
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.Exile));
-                    game.addEvent(new MagicEvent(
+                    game.addEvent(new MagicSearchOntoBattlefieldEvent(
                         event.getSource(),
                         creature.getController(),
                         new MagicMayChoice(
                             "Search for a basic land card?",
                             MagicTargetChoice.BASIC_LAND_CARD_FROM_LIBRARY
                         ),
-                        {
-                            final MagicGame G, final MagicEvent E ->
-                            if (E.isYes()) {
-                                E.processTargetCard(G, {
-                                    final MagicCard card ->
-                                    G.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
-                                    G.doAction(new MagicPlayCardAction(card,E.getPlayer(),MagicPlayMod.TAPPED));
-                                    G.doAction(new MagicShuffleLibraryAction(E.getPlayer()));
-                                } as MagicCardAction);
-                            }
-                        } as MagicEventAction,
-                        "Selected card\$."
+                        MagicPlayMod.TAPPED
                     ));
                 }
             });
