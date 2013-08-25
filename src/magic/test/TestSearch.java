@@ -28,13 +28,16 @@ class TestSearch extends TestGameBuilder {
         P.setLife(6);
         addToLibrary(P, "Forest", 20);
         addToLibrary(P, "Island", 20);
+        addToLibrary(P, "Bayou", 1);
+        addToLibrary(P, "Badlands", 1);
         createPermanent(game,P,"Rupture Spire",false,9);
         createPermanent(game,P, "Grizzly Bears", false, 2);
         addToHand(P, "Misty Rainforest", 1);
         addToHand(P, "Scalding Tarn", 1);
         addToHand(P, "Rampant Growth", 1);
+        addToHand(P, "Farseek", 1);
         addToHand(P, "Verdant Catacombs", 1);
-        addToHand(P, "Path to Exile", 2);
+        addToHand(P, "Path to Exile", 1);
 
         P = opponent;
 
