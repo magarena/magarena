@@ -7,6 +7,6 @@ type=Creature
 subtype=Sliver
 cost={1}{W}
 pt=2/2
+ability=lord sliver creatures you control have vigilance
 static=player
 timing=main
-requires_groovy_code

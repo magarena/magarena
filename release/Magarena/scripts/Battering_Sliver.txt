@@ -7,6 +7,6 @@ type=Creature
 subtype=Sliver
 cost={5}{R}
 pt=4/4
+ability=lord all sliver creatures have trample
 static=all
 timing=main
-requires_groovy_code

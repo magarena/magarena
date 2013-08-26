@@ -15,8 +15,10 @@ public class MagicTargetFilterFactory {
     static {
         factory.put("creatures you control", TARGET_CREATURE_YOU_CONTROL);
         factory.put("creatures your opponents control", TARGET_CREATURE_YOUR_OPPONENT_CONTROLS);
+        factory.put("creatures with flying your opponents control", TARGET_CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS);
         factory.put("sliver creatures you control", TARGET_SLIVER_YOU_CONTROL);
         factory.put("dragon creatures you control", TARGET_DRAGON_YOU_CONTROL);
+        factory.put("knight creatures you control", TARGET_KNIGHT_YOU_CONTROL);
         factory.put("all sliver creatures", TARGET_SLIVER);
         factory.put("all creatures", TARGET_CREATURE);
         factory.put("goblin creatures", TARGET_GOBLIN_CREATURE);

@@ -7,6 +7,6 @@ type=Creature
 subtype=Sliver
 cost={2}{B}
 pt=2/2
+ability=lord sliver creatures you control have lifelink
 static=player
 timing=main
-requires_groovy_code

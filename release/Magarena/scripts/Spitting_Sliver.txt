@@ -7,6 +7,6 @@ type=Creature
 subtype=Sliver
 cost={4}{B}
 pt=3/3
+ability=lord all sliver creatures have first strike
 static=all
 timing=main
-requires_groovy_code

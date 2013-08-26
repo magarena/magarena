@@ -5,5 +5,6 @@ value=3.583
 rarity=U
 type=Enchantment
 cost={2}{B}{B}{B}
+ability=lord creatures you control have fear
+static=player
 timing=enchantment
-requires_groovy_code
