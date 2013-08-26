@@ -19,6 +19,7 @@ public class MagicTargetFilterFactory {
         factory.put("all sliver creatures", TARGET_SLIVER);
         factory.put("goblin creatures", TARGET_GOBLIN_CREATURE);
         factory.put("black creatures", TARGET_BLACK_CREATURE);
+        factory.put("white creatures you control", TARGET_WHITE_CREATURE_YOU_CONTROL);
     }
 
     public static MagicTargetFilter<MagicPermanent> build(final String arg) {
