@@ -13,6 +13,7 @@ public class MagicTargetFilterFactory {
         new HashMap<String, MagicTargetFilter<MagicPermanent>>();
 
     static {
+        factory.put("creatures you control", TARGET_CREATURE_YOU_CONTROL);
         factory.put("sliver creatures you control", TARGET_SLIVER_YOU_CONTROL);
         factory.put("dragon creatures you control", TARGET_DRAGON_YOU_CONTROL);
         factory.put("all sliver creatures", TARGET_SLIVER);
