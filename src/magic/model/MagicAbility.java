@@ -810,7 +810,7 @@ public enum MagicAbility {
             } else {
                 final String[] tokens = arg.split(" have ");
                 final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.build(tokens[0]);
-                card.add(MagicStatic.genABStatic(filter, MagicAbility.getAbilities(tokens[1].split(","))));
+                card.add(MagicStatic.genABStatic(filter, MagicAbility.getAbilities(tokens[1].split(", "))));
             }
         }
     },
@@ -824,7 +824,7 @@ public enum MagicAbility {
             } else {
                 final String[] tokens = arg.split(" have ");
                 final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.build(tokens[0]);
-                card.add(MagicStatic.genABStaticOther(filter, MagicAbility.getAbilities(tokens[1].split(","))));
+                card.add(MagicStatic.genABStaticOther(filter, MagicAbility.getAbilities(tokens[1].split(", "))));
             }
         }
     },
