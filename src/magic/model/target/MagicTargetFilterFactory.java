@@ -21,14 +21,42 @@ public class MagicTargetFilterFactory {
         factory.put("golem creatures you control", TARGET_GOLEM_YOU_CONTROL);
         factory.put("dragon creatures you control", TARGET_DRAGON_YOU_CONTROL);
         factory.put("knight creatures you control", TARGET_KNIGHT_YOU_CONTROL);
+        factory.put("soldier creatures you control", TARGET_SOLDIER_YOU_CONTROL);
+        factory.put("illusion creatures you control", TARGET_ILLUSION_YOU_CONTROL);
+        factory.put("faerie creatures you control", TARGET_FAERIE_CREATURE_YOU_CONTROL);
+        factory.put("merfolk creatures you control", TARGET_MERFOLK_YOU_CONTROL);
+        factory.put("snake creatures you control", TARGET_SNAKE_YOU_CONTROL);
+        factory.put("elf creatures you control", TARGET_ELF_YOU_CONTROL);
+        factory.put("vampire creatures you control", TARGET_VAMPIRE_YOU_CONTROL);
+        factory.put("zombie creatures you control", TARGET_ZOMBIE_YOU_CONTROL);
+        factory.put("spirit creatures you control", TARGET_SPIRIT_YOU_CONTROL);
+        factory.put("goblin creatures you control", TARGET_GOBLIN_YOU_CONTROL);
+        factory.put("myr creatures you control", TARGET_MYR_YOU_CONTROL);
+        factory.put("kithkin creatures you control", TARGET_KITHKIN_YOU_CONTROL);
+        factory.put("artifact creatures you control", TARGET_ARTIFACT_CREATURE_YOU_CONTROL);
+        factory.put("non-human creatures you control", TARGET_NONHUMAN_CREATURE_YOU_CONTROL);
         factory.put("attacking creatures you control", TARGET_ATTACKING_CREATURE_YOU_CONTROL);
+        factory.put("creature tokens you control", TARGET_CREATURE_TOKEN_YOU_CONTROL);
+        
+        factory.put("faeries you control", TARGET_FAERIE_YOU_CONTROL);
+        factory.put("wolves you control", TARGET_WOLF_YOU_CONTROL);
+
         factory.put("all sliver creatures", TARGET_SLIVER);
         factory.put("all creatures", TARGET_CREATURE);
         factory.put("goblin creatures", TARGET_GOBLIN_CREATURE);
+        factory.put("merfolk creatures", TARGET_MERFOLK_CREATURE);
+        factory.put("zombie creatures", TARGET_ZOMBIE);
+        factory.put("myr creatures", TARGET_MYR_CREATURE);
+        factory.put("squirrel creatures", TARGET_SQUIRREL_CREATURE);
+        factory.put("griffin creatures", TARGET_GRIFFIN);
+        factory.put("bird creatures", TARGET_BIRD);
+        factory.put("soldier creatures", TARGET_SOLDIER);
+        factory.put("elf creatures", TARGET_ELF);
 
         factory.put("white creatures", TARGET_WHITE_CREATURE);
         factory.put("blue creatures", TARGET_BLUE_CREATURE);
         factory.put("black creatures", TARGET_BLACK_CREATURE);
+        factory.put("nonblack creatures", TARGET_NONBLACK_CREATURE);
         factory.put("red creatures", TARGET_RED_CREATURE);
         factory.put("green creatures", TARGET_GREEN_CREATURE);
         
