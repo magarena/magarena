@@ -5,6 +5,6 @@ value=3.940
 rarity=R
 type=Enchantment
 cost={R}
-ability=lord ability all creatures have haste
+ability=lord all creatures have haste
 static=all
 timing=enchantment

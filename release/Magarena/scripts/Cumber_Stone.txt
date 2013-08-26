@@ -6,6 +6,6 @@ removal=1
 rarity=U
 type=Artifact
 cost={3}{U}
-ability=lord pt creatures your opponents control get -1/-0
+ability=lord creatures your opponents control get -1/-0
 static=opponent
 timing=artifact

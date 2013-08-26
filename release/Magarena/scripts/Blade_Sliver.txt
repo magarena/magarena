@@ -7,6 +7,6 @@ type=Creature
 subtype=Sliver
 cost={2}{R}
 pt=2/2
-ability=lord pt all sliver creature get +1/+0
+ability=lord all sliver creature get +1/+0
 static=all
 timing=main
