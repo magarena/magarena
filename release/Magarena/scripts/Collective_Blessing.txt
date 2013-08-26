@@ -5,5 +5,5 @@ value=3.607
 rarity=R
 type=Enchantment
 cost={3}{G}{G}{W}
+ability=lord pt creatures you control get +3/+3
 timing=enchantment
-requires_groovy_code
