@@ -7,6 +7,6 @@ type=Creature
 subtype=Sliver
 cost={3}{G}
 pt=2/2
+ability=lord ability all sliver creatures have haste
 static=all
 timing=fmain
-requires_groovy_code
