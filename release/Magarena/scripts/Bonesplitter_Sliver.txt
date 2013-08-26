@@ -10,4 +10,3 @@ pt=2/2
 ability=lord pt all sliver creatures get +2/+0
 static=all
 timing=main
-requires_groovy_code
