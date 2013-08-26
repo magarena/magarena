@@ -14,6 +14,7 @@ public class MagicTargetFilterFactory {
 
     static {
         factory.put("creatures you control", TARGET_CREATURE_YOU_CONTROL);
+        factory.put("creatures your opponents control", TARGET_CREATURE_YOUR_OPPONENT_CONTROLS);
         factory.put("sliver creatures you control", TARGET_SLIVER_YOU_CONTROL);
         factory.put("dragon creatures you control", TARGET_DRAGON_YOU_CONTROL);
         factory.put("all sliver creatures", TARGET_SLIVER);
