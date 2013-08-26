@@ -1,6 +1,8 @@
 package magic.model;
 
 import magic.model.choice.MagicTargetChoice;
+import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicTargetFilterFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicGainActivation;
 import magic.model.event.MagicLevelUpActivation;
@@ -796,6 +798,21 @@ public enum MagicAbility {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
             card.add(MagicCascadeTrigger.create());
+        }
+    },
+    LordPT("lord pt", 0) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final String[] tokens = arg.split(" gets ");
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.build(tokens[0]);
+            final String[] pt = tokens[1].replace('+','0').split("/");
+            card.add(MagicStatic.genPTStatic(filter, Integer.parseInt(pt[0]), Integer.parseInt(pt[1])));
+        }
+    },
+    LordAbility("lord ability", 0) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final String[] tokens = arg.split(" have ");
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.build(tokens[0]);
+            card.add(MagicStatic.genABStatic(filter, MagicAbility.getAbilities(tokens[1].split(","))));
         }
     },
     None("",0);

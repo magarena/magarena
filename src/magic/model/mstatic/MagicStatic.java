@@ -82,6 +82,21 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
                 (source == target && source.isPaired());
         }
     }
+    
+    public static MagicStatic genPTStatic(final MagicTargetFilter<MagicPermanent> filter, final int givenPower, final int givenToughness) {
+        return new MagicStatic(
+            MagicLayer.ModPT,
+            filter
+        ) {
+            @Override
+            public void modPowerToughness(
+                final MagicPermanent source,
+                final MagicPermanent permanent,
+                final MagicPowerToughness pt) {
+                pt.add(givenPower, givenToughness);
+            }
+        };
+    }
 
     public static MagicStatic genPTStatic(final int givenPower, final int givenToughness) {
         return new MagicStatic(MagicLayer.ModPT) {
@@ -95,6 +110,21 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             @Override
             public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
                 return MagicStatic.acceptLinked(game, source, target);
+            }
+        };
+    }
+    
+    public static MagicStatic genABStatic(final MagicTargetFilter<MagicPermanent> filter, final Set<MagicAbility> givenAbilityFlags) {
+        return new MagicStatic(
+            MagicLayer.Ability,
+            filter
+        ) {
+            @Override
+            public void modAbilityFlags(
+                final MagicPermanent source,
+                final MagicPermanent permanent,
+                final Set<MagicAbility> flags) {
+                flags.addAll(givenAbilityFlags);
             }
         };
     }
