@@ -7,6 +7,7 @@ type=Creature
 subtype=Sliver
 cost={5}{G}
 pt=3/3
+ability=lord pt sliver creatures you control get +3/+3
 static=player
 timing=main
 requires_groovy_code
