@@ -7,6 +7,6 @@ type=Creature
 subtype=Sliver
 cost={U}
 pt=1/1
+ability=lord ability sliver creatures you control have flying
 static=player
 timing=main
-requires_groovy_code
