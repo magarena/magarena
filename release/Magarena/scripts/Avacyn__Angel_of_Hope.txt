@@ -7,7 +7,6 @@ type=Legendary,Creature
 subtype=Angel
 cost={5}{W}{W}{W}
 pt=8/8
-ability=flying,vigilance
+ability=flying,vigilance,indestructible,lord other permanents you control have indestructible
 static=player
-timing=fmain
-requires_groovy_code
+timing=main
