@@ -22,6 +22,7 @@ public class MagicTargetFilterFactory {
         factory.put("goblin creatures", TARGET_GOBLIN_CREATURE);
         factory.put("black creatures", TARGET_BLACK_CREATURE);
         factory.put("white creatures you control", TARGET_WHITE_CREATURE_YOU_CONTROL);
+        factory.put("white creatures", TARGET_WHITE_CREATURE);
     }
 
     public static MagicTargetFilter<MagicPermanent> build(final String arg) {
