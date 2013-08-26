@@ -97,6 +97,25 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             }
         };
     }
+    
+    public static MagicStatic genPTStaticOther(final MagicTargetFilter<MagicPermanent> filter, final int givenPower, final int givenToughness) {
+        return new MagicStatic(
+            MagicLayer.ModPT,
+            filter
+        ) {
+            @Override
+            public void modPowerToughness(
+                final MagicPermanent source,
+                final MagicPermanent permanent,
+                final MagicPowerToughness pt) {
+                pt.add(givenPower, givenToughness);
+            }
+            @Override
+            public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+                return source != target;
+            }
+        };
+    }
 
     public static MagicStatic genPTStatic(final int givenPower, final int givenToughness) {
         return new MagicStatic(MagicLayer.ModPT) {
@@ -125,6 +144,25 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
                 final MagicPermanent permanent,
                 final Set<MagicAbility> flags) {
                 flags.addAll(givenAbilityFlags);
+            }
+        };
+    }
+    
+    public static MagicStatic genABStaticOther(final MagicTargetFilter<MagicPermanent> filter, final Set<MagicAbility> givenAbilityFlags) {
+        return new MagicStatic(
+            MagicLayer.Ability,
+            filter
+        ) {
+            @Override
+            public void modAbilityFlags(
+                final MagicPermanent source,
+                final MagicPermanent permanent,
+                final Set<MagicAbility> flags) {
+                flags.addAll(givenAbilityFlags);
+            }
+            @Override
+            public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+                return source != target;
             }
         };
     }

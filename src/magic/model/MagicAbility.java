@@ -802,10 +802,18 @@ public enum MagicAbility {
     },
     LordPT("lord pt", 0) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            final String[] tokens = arg.split(" gets ");
+            final String[] tokens = arg.split(" get ");
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.build(tokens[0]);
             final String[] pt = tokens[1].replace('+','0').split("/");
             card.add(MagicStatic.genPTStatic(filter, Integer.parseInt(pt[0]), Integer.parseInt(pt[1])));
+        }
+    },
+    LordPTOther("lord pt other", 0) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final String[] tokens = arg.split(" get ");
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.build(tokens[0]);
+            final String[] pt = tokens[1].replace('+','0').split("/");
+            card.add(MagicStatic.genPTStaticOther(filter, Integer.parseInt(pt[0]), Integer.parseInt(pt[1])));
         }
     },
     LordAbility("lord ability", 0) {
@@ -813,6 +821,13 @@ public enum MagicAbility {
             final String[] tokens = arg.split(" have ");
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.build(tokens[0]);
             card.add(MagicStatic.genABStatic(filter, MagicAbility.getAbilities(tokens[1].split(","))));
+        }
+    },
+    LordAbilityOther("lord ability other", 0) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final String[] tokens = arg.split(" have ");
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.build(tokens[0]);
+            card.add(MagicStatic.genABStaticOther(filter, MagicAbility.getAbilities(tokens[1].split(","))));
         }
     },
     None("",0);
