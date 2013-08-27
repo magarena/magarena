@@ -5,5 +5,7 @@ value=4.175
 rarity=R
 type=Enchantment
 cost={3}{G}{G}
+ability=lord creatures you control have hexproof
+static=player
 timing=enchantment
 requires_groovy_code
