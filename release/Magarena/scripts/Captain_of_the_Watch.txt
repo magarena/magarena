@@ -7,7 +7,9 @@ type=Creature
 subtype=Human,Soldier
 cost={4}{W}{W}
 pt=3/3
-ability=vigilance
+ability=vigilance,\
+        lord other soldier creatures you control get +1/+1,\
+        lord other soldier creatures you control have vigilance
 static=player
-timing=smain
+timing=main
 requires_groovy_code
