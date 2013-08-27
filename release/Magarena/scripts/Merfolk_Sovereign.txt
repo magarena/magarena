@@ -7,5 +7,7 @@ type=Creature
 subtype=Merfolk
 cost={1}{U}{U}
 pt=2/2
-timing=fmain
+ability=lord other merfolk creatures you control get +1/+1
+static=player
+timing=main
 requires_groovy_code
