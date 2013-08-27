@@ -1,13 +1,4 @@
 [
-    new MagicStatic(
-        MagicLayer.Ability,
-        MagicTargetFilter.TARGET_WOLF_YOU_CONTROL
-    ) {
-        @Override
-        public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
-            flags.add(MagicAbility.Deathtouch);
-        }
-    },
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Token,true),
         "Token"
