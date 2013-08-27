@@ -7,7 +7,8 @@ type=Creature
 subtype=Goblin,Knight
 cost={1}{R/G}{R/G}{R/G}
 pt=3/4
-ability=trample
+ability=trample,\
+        lord other red creatures you control get +1/+1,\
+        lord other green creatures you control get +1/+1
 static=player
-timing=fmain
-requires_groovy_code
+timing=main
