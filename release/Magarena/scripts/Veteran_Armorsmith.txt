@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Soldier
 cost={W}{W}
 pt=2/3
+ability=lord other soldier creatures you control get +0/+1
 static=player
-timing=fmain
-requires_groovy_code
+timing=main
