@@ -38,11 +38,11 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard>,
         this(aCardDefinition, aOwner, aId, false);
     }
 
-    public static MagicCard Token(final MagicCardDefinition aCardDefinition,final MagicPlayer aOwner,final long aId) {
-        return new MagicCard(aCardDefinition, aOwner, aId, true);
+    public static MagicCard createTokenCard(final MagicCardDefinition cardDefinition,final MagicPlayer owner) {
+        return new MagicCard(cardDefinition, owner, MagicCard.TOKEN_ID, true);
     }
 
-    public MagicCard(final MagicCardDefinition aCardDefinition,final MagicPlayer aOwner,final long aId, final boolean aToken) {
+    private MagicCard(final MagicCardDefinition aCardDefinition,final MagicPlayer aOwner,final long aId, final boolean aToken) {
         aCardDefinition.loadScript();
         cardDefinition = aCardDefinition;
         owner = aOwner;
@@ -146,10 +146,6 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard>,
 
     public MagicEvent[] getCostEvent() {
         return getCardDefinition().getCostEvent(this);
-    }
-
-    public static MagicCard createTokenCard(final MagicCardDefinition cardDefinition,final MagicPlayer owner) {
-        return new MagicCard(cardDefinition, owner, MagicCard.TOKEN_ID, true);
     }
 
     public void reveal() {
