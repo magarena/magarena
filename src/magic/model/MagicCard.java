@@ -31,15 +31,24 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard>,
     private final MagicPlayer owner;
     private final long id;
     private final int imageIndex;
-    private boolean token;
+    private final boolean token;
     private boolean known=true;
-
+    
     public MagicCard(final MagicCardDefinition aCardDefinition,final MagicPlayer aOwner,final long aId) {
+        this(aCardDefinition, aOwner, aId, false);
+    }
+
+    public static MagicCard Token(final MagicCardDefinition aCardDefinition,final MagicPlayer aOwner,final long aId) {
+        return new MagicCard(aCardDefinition, aOwner, aId, true);
+    }
+
+    public MagicCard(final MagicCardDefinition aCardDefinition,final MagicPlayer aOwner,final long aId, final boolean aToken) {
         aCardDefinition.loadScript();
         cardDefinition = aCardDefinition;
         owner = aOwner;
         id = aId;
         imageIndex = (int)Math.abs(id % 1000);
+        token = aToken;
     }
 
     private MagicCard(final MagicCopyMap copyMap, final MagicCard sourceCard) {
@@ -100,10 +109,6 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard>,
         return owner;
     }
 
-    private void setToken() {
-        token = true;
-    }
-
     public boolean isToken() {
         return token;
     }
@@ -144,9 +149,7 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard>,
     }
 
     public static MagicCard createTokenCard(final MagicCardDefinition cardDefinition,final MagicPlayer owner) {
-        final MagicCard card=new MagicCard(cardDefinition,owner,MagicCard.TOKEN_ID);
-        card.setToken();
-        return card;
+        return new MagicCard(cardDefinition, owner, MagicCard.TOKEN_ID, true);
     }
 
     public void reveal() {
