@@ -5,6 +5,7 @@ value=3.167
 rarity=C
 type=Enchantment
 cost={U}{U}
+ability=lord blue creatures get +1/+1
 static=all
 timing=enchantment
 requires_groovy_code

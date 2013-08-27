@@ -1,13 +1,4 @@
 [
-    new MagicStatic(
-        MagicLayer.ModPT,
-        MagicTargetFilter.TARGET_BLUE_CREATURE
-    ) {
-        @Override
-        public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            pt.add(1,1);
-        }
-    },
     new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
