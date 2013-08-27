@@ -800,31 +800,28 @@ public enum MagicAbility {
             card.add(MagicCascadeTrigger.create());
         }
     },
-    LordPT("lord", 0) {
+    Lord("lord", 0) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            if (arg.contains(" get ")) {
-                final String[] tokens = arg.split(" get ");
+            final String prefix = "other ";
+            final boolean other = arg.startsWith(prefix);
+            final String rest = other ? arg.substring(prefix.length()) : arg;
+            if (rest.contains(" get ")) {
+                final String[] tokens = rest.split(" get ");
                 final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.build(tokens[0]);
                 final String[] pt = tokens[1].replace('+','0').split("/");
-                card.add(MagicStatic.genPTStatic(filter, Integer.parseInt(pt[0]), Integer.parseInt(pt[1])));
+                if (other) {
+                    card.add(MagicStatic.genPTStaticOther(filter, Integer.parseInt(pt[0]), Integer.parseInt(pt[1])));
+                } else {
+                    card.add(MagicStatic.genPTStatic(filter, Integer.parseInt(pt[0]), Integer.parseInt(pt[1])));
+                }
             } else {
-                final String[] tokens = arg.split(" have ");
+                final String[] tokens = rest.split(" have ");
                 final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.build(tokens[0]);
-                card.add(MagicStatic.genABStatic(filter, MagicAbility.getAbilities(tokens[1].split(", "))));
-            }
-        }
-    },
-    LordPTOther("lord other", 0) {
-        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            if (arg.contains(" get ")) {
-                final String[] tokens = arg.split(" get ");
-                final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.build(tokens[0]);
-                final String[] pt = tokens[1].replace('+','0').split("/");
-                card.add(MagicStatic.genPTStaticOther(filter, Integer.parseInt(pt[0]), Integer.parseInt(pt[1])));
-            } else {
-                final String[] tokens = arg.split(" have ");
-                final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.build(tokens[0]);
-                card.add(MagicStatic.genABStaticOther(filter, MagicAbility.getAbilities(tokens[1].split(", "))));
+                if (other) {
+                    card.add(MagicStatic.genABStaticOther(filter, MagicAbility.getAbilities(tokens[1].split(", "))));
+                } else {
+                    card.add(MagicStatic.genABStatic(filter, MagicAbility.getAbilities(tokens[1].split(", "))));
+                }
             }
         }
     },
