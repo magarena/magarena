@@ -5,6 +5,7 @@ value=4.257
 rarity=R
 type=Enchantment
 cost={2}{W}
+ability=lord soldier creatures have vigilance
 static=all
 timing=enchantment
 requires_groovy_code
