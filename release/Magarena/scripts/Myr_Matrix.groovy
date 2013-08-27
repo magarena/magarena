@@ -1,12 +1,4 @@
 [
-    new MagicStatic(
-        MagicLayer.ModPT,
-        MagicTargetFilter.TARGET_MYR_CREATURE) {
-        @Override
-        public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            pt.add(1,1);
-        }
-    },
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Token),
         "Token"
