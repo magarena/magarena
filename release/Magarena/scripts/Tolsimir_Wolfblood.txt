@@ -7,6 +7,8 @@ type=Legendary,Creature
 subtype=Elf,Warrior
 cost={4}{G}{W}
 pt=3/4
+ability=lord other green creatures you control get +1/+1,\
+        lord other white creatures you control get +1/+1
 static=player
-timing=fmain
+timing=main
 requires_groovy_code
