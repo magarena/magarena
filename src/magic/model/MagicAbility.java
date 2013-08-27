@@ -804,23 +804,24 @@ public enum MagicAbility {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             final String prefix = "other ";
             final boolean other = arg.startsWith(prefix);
-            final String rest = other ? arg.substring(prefix.length()) : arg;
-            if (rest.contains(" get ")) {
-                final String[] tokens = rest.split(" get ");
-                final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.build(tokens[0]);
+            final String rest = arg.replaceFirst(prefix, "");
+            final String[] tokens = rest.split(" get | have ");
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.build(tokens[0]);
+            if (tokens[1].contains("/")) {
                 final String[] pt = tokens[1].replace('+','0').split("/");
+                final int power = Integer.parseInt(pt[0]);
+                final int toughness = Integer.parseInt(pt[1]);
                 if (other) {
-                    card.add(MagicStatic.genPTStaticOther(filter, Integer.parseInt(pt[0]), Integer.parseInt(pt[1])));
+                    card.add(MagicStatic.genPTStaticOther(filter, power, toughness));
                 } else {
-                    card.add(MagicStatic.genPTStatic(filter, Integer.parseInt(pt[0]), Integer.parseInt(pt[1])));
+                    card.add(MagicStatic.genPTStatic(filter, power, toughness));
                 }
             } else {
-                final String[] tokens = rest.split(" have ");
-                final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.build(tokens[0]);
+                final Set<MagicAbility> abilities = MagicAbility.getAbilities(tokens[1].split(", "));
                 if (other) {
-                    card.add(MagicStatic.genABStaticOther(filter, MagicAbility.getAbilities(tokens[1].split(", "))));
+                    card.add(MagicStatic.genABStaticOther(filter, abilities));
                 } else {
-                    card.add(MagicStatic.genABStatic(filter, MagicAbility.getAbilities(tokens[1].split(", "))));
+                    card.add(MagicStatic.genABStatic(filter, abilities));
                 }
             }
         }
