@@ -8,4 +8,4 @@ subtype=Fungus
 cost={2}{G}
 pt=2/2
 timing=main
-requires_groovy_code=Thallid,Thallid Germinator
+requires_groovy_code=Thallid;Thallid Germinator

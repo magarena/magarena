@@ -6,4 +6,4 @@ rarity=R
 type=Artifact
 cost={X}
 timing=artifact
-requires_groovy_code=Ivy Elemental,Chimeric Mass
+requires_groovy_code=Ivy Elemental;Chimeric Mass

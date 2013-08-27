@@ -184,7 +184,7 @@ public enum CardProperty {
     LOAD_GROOVY_CODE() {
         public void setProperty(final MagicCardDefinition card, final String value) {
             final String cardName = !value.isEmpty() ? value : card.getFullName();
-            final String[] names = cardName.split(",(?! )");
+            final String[] names = cardName.split(";");
             for (final String name : names) {
                 CardDefinitions.addCardSpecificGroovyCode(card, name);
             }

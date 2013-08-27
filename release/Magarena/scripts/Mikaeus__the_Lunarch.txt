@@ -7,4 +7,4 @@ type=Legendary,Creature
 subtype=Human,Cleric
 cost={X}{W}
 timing=main
-requires_groovy_code=Ivy Elemental,Mikaeus, the Lunarch
+requires_groovy_code=Ivy Elemental;Mikaeus, the Lunarch

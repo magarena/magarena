@@ -8,4 +8,4 @@ subtype=Fungus
 cost={3}{G}{G}
 pt=5/2
 timing=main
-requires_groovy_code=Thallid,Savage Thallid
+requires_groovy_code=Thallid;Savage Thallid

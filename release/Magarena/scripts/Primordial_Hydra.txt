@@ -7,4 +7,4 @@ type=Creature
 subtype=Hydra
 cost={X}{G}{G}
 timing=main
-requires_groovy_code=Ivy Elemental,Primordial Hydra
+requires_groovy_code=Ivy Elemental;Primordial Hydra

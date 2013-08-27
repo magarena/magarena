@@ -7,4 +7,4 @@ type=Creature
 subtype=Cleric,Avatar
 cost={3}{W}
 timing=main
-requires_groovy_code=Mourning Thrull,Doubtless One
+requires_groovy_code=Mourning Thrull;Doubtless One
