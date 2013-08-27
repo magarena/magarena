@@ -7,6 +7,7 @@ type=Creature
 subtype=Human,Artificer
 cost={2}{W}
 pt=1/1
+ability=lord golem creatures you control have first strike
 static=player
-timing=fmain
+timing=main
 requires_groovy_code
