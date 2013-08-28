@@ -659,6 +659,13 @@ public class MagicTargetChoice extends MagicChoice {
         MagicTargetHint.None,
         "a Plains, Island, Swamp, or Mountain card from your library"
     );
+    
+    public static final MagicTargetChoice LAND_CARD_WITH_BASIC_LAND_TYPE_FROM_LIBRARY = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_LAND_CARD_WITH_BASIC_LAND_TYPE_FROM_LIBRARY,
+        false,
+        MagicTargetHint.None,
+        "a land card with a basic land type from your library"
+    );
 
     public static final MagicTargetChoice LAND_CARD_FROM_HAND = new MagicTargetChoice(
         MagicTargetFilter.TARGET_LAND_CARD_FROM_HAND,

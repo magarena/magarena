@@ -1296,6 +1296,19 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }
     };
     
+    MagicCardFilterImpl TARGET_LAND_CARD_WITH_BASIC_LAND_TYPE_FROM_LIBRARY = new MagicCardFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+            return target.hasSubType(MagicSubType.Plains) ||
+                   target.hasSubType(MagicSubType.Island) ||
+                   target.hasSubType(MagicSubType.Swamp)  ||
+                   target.hasSubType(MagicSubType.Forest) ||
+                   target.hasSubType(MagicSubType.Mountain);
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType==MagicTargetType.Library;
+        }
+    };
+    
     MagicCardFilterImpl TARGET_PLAINS_OR_ISLAND_CARD_FROM_LIBRARY =
         Factory.land(MagicTargetType.Library, MagicSubType.Plains, MagicSubType.Island);
     
