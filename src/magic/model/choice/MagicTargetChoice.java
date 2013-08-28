@@ -569,6 +569,13 @@ public class MagicTargetChoice extends MagicChoice {
         "a basic land card from your hand"
     );
     
+    public static final MagicTargetChoice LAND_CARD_FROM_LIBRARY = new MagicTargetChoice(
+        MagicTargetFilter.TARGET_LAND_CARD_FROM_LIBRARY,
+        false,
+        MagicTargetHint.None,
+        "a land card from your library"
+    );
+    
     public static final MagicTargetChoice BASIC_LAND_CARD_FROM_LIBRARY = new MagicTargetChoice(
         MagicTargetFilter.TARGET_BASIC_LAND_CARD_FROM_LIBRARY,
         false,

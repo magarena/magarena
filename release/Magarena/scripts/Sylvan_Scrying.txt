@@ -1,0 +1,9 @@
+name=Sylvan Scrying
+url=http://magiccards.info/10e/en/302.html
+image=http://magiccards.info/scans/en/10e/302.jpg
+value=4.638
+rarity=U
+type=Sorcery
+cost={1}{G}
+timing=main
+requires_groovy_code

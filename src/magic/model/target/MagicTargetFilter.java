@@ -1259,18 +1259,25 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
     MagicCardFilterImpl TARGET_BASIC_LAND_CARD_FROM_HAND = new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            final MagicCardDefinition cardDefinition = target.getCardDefinition();
-            return cardDefinition.isLand()&&cardDefinition.isBasic();
+            return target.hasType(MagicType.Land) && target.hasType(MagicType.Basic);
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType == MagicTargetType.Hand;
         }
     };
     
+    MagicCardFilterImpl TARGET_LAND_CARD_FROM_LIBRARY = new MagicCardFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+            return target.hasType(MagicType.Land);
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType == MagicTargetType.Library;
+        }
+    };
+    
     MagicCardFilterImpl TARGET_BASIC_LAND_CARD_FROM_LIBRARY=new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            final MagicCardDefinition cardDefinition = target.getCardDefinition();
-            return cardDefinition.isLand() && cardDefinition.isBasic();
+            return target.hasType(MagicType.Land) && target.hasType(MagicType.Basic);
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType==MagicTargetType.Library;
