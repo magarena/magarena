@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Knight
 cost={W}
 pt=1/1
-ability=vigilance,pump {4}{W} +1/+2
+ability=vigilance;pump {4}{W} +1/+2
 timing=main

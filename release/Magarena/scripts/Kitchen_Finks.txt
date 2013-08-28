@@ -7,5 +7,5 @@ type=Creature
 subtype=Ouphe
 cost={1}{G/W}{G/W}
 pt=3/2
-ability=persist,enters gain life 2
+ability=persist;enters gain life 2
 timing=main

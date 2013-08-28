@@ -7,6 +7,6 @@ type=Creature
 subtype=Illusion
 cost={3}{U}
 pt=3/3
-ability=flying,vanishing 3
+ability=flying;vanishing 3
 timing=main
 requires_groovy_code

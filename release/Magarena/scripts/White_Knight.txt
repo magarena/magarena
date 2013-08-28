@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Knight
 cost={W}{W}
 pt=2/2
-ability=first strike,protection from black
+ability=first strike;protection from black
 timing=main

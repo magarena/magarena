@@ -8,6 +8,6 @@ type=Creature
 subtype=Elf,Warrior
 cost={3}{G}
 pt=5/5
-ability=champion Elf,lord wolves you control have deathtouch
+ability=champion Elf;lord wolves you control have deathtouch
 timing=main
 requires_groovy_code

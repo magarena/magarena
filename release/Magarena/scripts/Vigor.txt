@@ -7,6 +7,6 @@ type=Creature
 subtype=Elemental,Incarnation
 cost={3}{G}{G}{G}
 pt=6/6
-ability=trample,graveyard to library
+ability=trample;graveyard to library
 timing=fmain
 requires_groovy_code

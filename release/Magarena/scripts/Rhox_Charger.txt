@@ -7,5 +7,5 @@ type=Creature
 subtype=Rhino,Soldier
 cost={3}{G}
 pt=3/3
-ability=trample,exalted
+ability=trample;exalted
 timing=fmain

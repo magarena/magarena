@@ -7,6 +7,6 @@ type=Creature
 subtype=Hellion
 cost={3}{R}{G}
 pt=7/7
-ability=trample,haste
+ability=trample;haste
 timing=fmain
 requires_groovy_code

@@ -7,6 +7,6 @@ type=Artifact,Creature
 subtype=Golem
 cost={9}
 pt=9/9
-ability=trample,doesn't untap during untap step
+ability=trample;doesn't untap during untap step
 timing=main
 requires_groovy_code

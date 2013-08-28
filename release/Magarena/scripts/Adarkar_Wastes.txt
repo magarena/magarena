@@ -5,5 +5,5 @@ value=4.283
 rarity=R
 type=Land
 mana=w2u2
-ability=tap add mana {1},tap pain add mana {W} or {U}
+ability=tap add mana {1};tap pain add mana {W} or {U}
 timing=land

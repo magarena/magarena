@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={1}{U}
 given_pt=1/1
-ability=flash,totem armor
+ability=flash;totem armor
 timing=pump
 enchant=pump,pos creature

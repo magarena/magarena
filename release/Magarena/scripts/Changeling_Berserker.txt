@@ -8,5 +8,5 @@ type=Creature
 subtype=Shapeshifter
 cost={3}{R}
 pt=5/3
-ability=changeling,haste,champion creature
+ability=changeling;haste;champion creature
 timing=main

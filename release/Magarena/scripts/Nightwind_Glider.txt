@@ -8,4 +8,4 @@ subtype=Human,Rebel
 cost={2}{W}
 pt=2/1
 timing=main
-ability=protection from black,flying
+ability=protection from black;flying

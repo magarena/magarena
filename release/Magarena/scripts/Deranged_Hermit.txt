@@ -8,6 +8,6 @@ subtype=Elf
 cost={3}{G}{G}
 pt=1/1
 timing=main
-ability=echo,lord squirrel creatures get +1/+1
+ability=echo;lord squirrel creatures get +1/+1
 static=all
 requires_groovy_code

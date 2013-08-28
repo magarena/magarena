@@ -7,5 +7,5 @@ type=Creature
 subtype=Fish
 cost={3}{U}
 pt=2/2
-ability=flying,landfall pump +2/+2
+ability=flying;landfall pump +2/+2
 timing=main

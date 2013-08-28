@@ -5,6 +5,6 @@ value=3.036
 rarity=C
 type=Land
 mana=w3u3b3r3g3
-ability=enters tapped,tap add mana any
+ability=enters tapped;tap add mana any
 timing=land
 requires_groovy_code=Rupture Spire

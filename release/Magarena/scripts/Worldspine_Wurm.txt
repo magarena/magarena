@@ -8,5 +8,5 @@ subtype=Wurm
 cost={8}{G}{G}{G}
 pt=15/15
 timing=main
-ability=trample,graveyard to library
+ability=trample;graveyard to library
 requires_groovy_code

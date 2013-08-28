@@ -7,5 +7,5 @@ type=Creature
 subtype=Centaur
 cost={3}{G}
 pt=6/3
-ability=shroud,echo
+ability=shroud;echo
 timing=main

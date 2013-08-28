@@ -6,5 +6,5 @@ rarity=C
 type=Artifact,Creature
 subtype=Beast
 cost={4}
-ability=haste,modular 2
+ability=haste;modular 2
 timing=fmain

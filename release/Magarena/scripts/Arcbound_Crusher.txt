@@ -6,6 +6,6 @@ rarity=U
 type=Artifact,Creature
 subtype=Juggernaut
 cost={4}
-ability=trample,modular 1
+ability=trample;modular 1
 timing=fmain
 requires_groovy_code

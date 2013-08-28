@@ -7,5 +7,5 @@ type=Legendary,Creature
 subtype=Vampire,Cat
 cost={2}{B}{B}
 pt=3/2
-ability=flying,first strike,haste,combat damage grow creature
+ability=flying;first strike;haste;combat damage grow creature
 timing=fmain

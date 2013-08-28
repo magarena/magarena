@@ -7,6 +7,6 @@ type=Creature
 subtype=Demon
 cost={2}{B}{B}
 pt=5/4
-ability=flying,undying
+ability=flying;undying
 timing=main
 requires_groovy_code

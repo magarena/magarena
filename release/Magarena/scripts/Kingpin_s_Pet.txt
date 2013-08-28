@@ -7,5 +7,5 @@ type=Creature
 subtype=Thrull
 cost={1}{W}{B}
 pt=2/2
-ability=flying,extort
+ability=flying;extort
 timing=main

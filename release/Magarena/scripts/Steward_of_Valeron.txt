@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Druid,Knight
 cost={G}{W}
 pt=2/2
-ability=vigilance,tap add mana {G}
+ability=vigilance;tap add mana {G}
 timing=main

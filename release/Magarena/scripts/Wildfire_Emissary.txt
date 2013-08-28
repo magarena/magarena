@@ -7,5 +7,5 @@ type=Creature
 subtype=Efreet
 cost={3}{R}
 pt=2/4
-ability=protection from white,pump {1}{R} +1/+0
+ability=protection from white;pump {1}{R} +1/+0
 timing=main

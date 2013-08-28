@@ -7,6 +7,6 @@ type=Creature
 subtype=Faerie,Wizard
 cost={3}{B}{B}
 pt=3/2
-ability=flying,persist
+ability=flying;persist
 timing=fmain
 requires_groovy_code

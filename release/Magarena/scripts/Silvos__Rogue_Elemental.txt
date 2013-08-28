@@ -7,5 +7,5 @@ type=Legendary,Creature
 subtype=Elemental
 cost={3}{G}{G}{G}
 pt=8/5
-ability=trample,regenerate {G}
+ability=trample;regenerate {G}
 timing=main

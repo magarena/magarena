@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Drake
 cost={4}{U}
 pt=3/3
-ability=flying,gains {1}{W} vigilance
+ability=flying;gains {1}{W} vigilance
 timing=main

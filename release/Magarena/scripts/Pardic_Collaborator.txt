@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Barbarian
 cost={3}{R}
 pt=2/2
-ability=first strike,pump {B} +1/+1
+ability=first strike;pump {B} +1/+1
 timing=main

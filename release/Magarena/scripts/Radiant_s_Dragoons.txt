@@ -8,4 +8,4 @@ subtype=Human,Soldier
 cost={3}{W}
 pt=2/5
 timing=main
-ability=echo,enters gain life 5
+ability=echo;enters gain life 5

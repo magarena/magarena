@@ -7,5 +7,5 @@ type=Artifact
 subtype=Equipment
 cost={1}
 equip={2}
-given_ability=deathtouch,lifelink
+given_ability=deathtouch;lifelink
 timing=equipment

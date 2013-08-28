@@ -7,5 +7,5 @@ type=Creature
 subtype=Beast
 cost={R}{W}
 pt=2/2
-ability=vigilance,haste
+ability=vigilance;haste
 timing=fmain

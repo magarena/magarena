@@ -7,5 +7,5 @@ type=Creature
 subtype=Wall
 cost={3}{W}
 pt=0/5
-ability=defender,pump {W} +0/+1
+ability=defender;pump {W} +0/+1
 timing=smain

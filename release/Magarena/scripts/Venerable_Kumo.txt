@@ -7,5 +7,5 @@ type=Creature
 subtype=Spirit
 cost={4}{G}
 pt=2/3
-ability=reach,soulshift 4
+ability=reach;soulshift 4
 timing=main

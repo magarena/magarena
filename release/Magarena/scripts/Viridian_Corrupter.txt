@@ -8,5 +8,5 @@ type=Creature
 subtype=Elf,Shaman
 cost={1}{G}{G}
 pt=2/2
-ability=infect,enters destroy target artifact.
+ability=infect;enters destroy target artifact.
 timing=main

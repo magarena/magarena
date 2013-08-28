@@ -7,5 +7,5 @@ type=Artifact
 subtype=Equipment
 cost={2}
 equip={1}
-given_ability=hexproof,haste
+given_ability=hexproof;haste
 timing=equipment

@@ -7,5 +7,5 @@ type=Creature
 subtype=Spirit
 cost={7}{G}{G}
 pt=8/5
-ability=trample,soulshift 8
+ability=trample;soulshift 8
 timing=main

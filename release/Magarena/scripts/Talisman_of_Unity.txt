@@ -5,5 +5,5 @@ value=2.972
 rarity=U
 type=Artifact
 cost={2}
-ability=tap add mana {1},tap pain add mana {G} or {W}
+ability=tap add mana {1};tap pain add mana {G} or {W}
 timing=artifact

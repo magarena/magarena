@@ -7,5 +7,5 @@ type=Creature
 subtype=Spider
 cost={1}{G}
 pt=1/2
-ability=reach,deathtouch
+ability=reach;deathtouch
 timing=smain

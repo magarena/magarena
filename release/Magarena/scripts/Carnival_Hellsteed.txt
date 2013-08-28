@@ -7,5 +7,5 @@ type=Creature
 subtype=Nightmare,Horse
 cost={4}{B}{R}
 pt=5/4
-ability=first strike,haste,unleash
+ability=first strike;haste;unleash
 timing=main

@@ -5,5 +5,5 @@ value=4.035
 rarity=U
 type=Land
 mana=b1g1r1u1w1
-ability=tap add mana {1},tap add charge,tap drain add mana any
+ability=tap add mana {1};tap add charge;tap drain add mana any
 timing=land

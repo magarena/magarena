@@ -7,8 +7,8 @@ type=Creature
 subtype=Vampire,Soldier
 cost={1}{B}{R}
 pt=2/2
-ability=first strike,\
-        lord other vampire creatures you control get +1/+1,\
+ability=first strike;\
+        lord other vampire creatures you control get +1/+1;\
         lord other vampire creatures you control have first strike
 static=player
 timing=main

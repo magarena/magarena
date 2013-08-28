@@ -5,7 +5,7 @@ value=2.955
 rarity=U
 type=Land
 mana=g3w3
-ability=tap add mana {G} or {W},\
-        enters tapped,\
+ability=tap add mana {G} or {W};\
+        enters tapped;\
         enters gain life 1
 timing=tapland

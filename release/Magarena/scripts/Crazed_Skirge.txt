@@ -7,5 +7,5 @@ type=Creature
 subtype=Imp
 cost={3}{B}
 pt=2/2
-ability=flying,haste
+ability=flying;haste
 timing=fmain

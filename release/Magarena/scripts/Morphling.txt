@@ -7,5 +7,5 @@ type=Creature
 subtype=Shapeshifter
 cost={3}{U}{U}
 pt=3/3
-ability=untap {U},gains {U} flying,gains {U} shroud,pump {1} +1/-1,pump {1} -1/+1
+ability=untap {U};gains {U} flying;gains {U} shroud;pump {1} +1/-1;pump {1} -1/+1
 timing=main

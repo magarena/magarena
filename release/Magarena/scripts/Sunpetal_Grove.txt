@@ -5,6 +5,6 @@ value=3.725
 rarity=R
 type=Land
 mana=g3w3
-ability=tap add mana {G} or {W},\
+ability=tap add mana {G} or {W};\
         enters tapped unless forest plains
 timing=land

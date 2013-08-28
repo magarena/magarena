@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Pirate
 cost={U}
 pt=1/1
-ability=flying,can't block creatures without flying
+ability=flying;can't block creatures without flying
 timing=main

@@ -7,5 +7,5 @@ type=Creature
 subtype=Elephant,Soldier
 cost={3}{W}{W}
 pt=3/3
-ability=vigilance,pump {W} +0/+1
+ability=vigilance;pump {W} +0/+1
 timing=main

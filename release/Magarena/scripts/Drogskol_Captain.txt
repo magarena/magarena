@@ -7,8 +7,8 @@ type=Creature
 subtype=Spirit,Soldier
 cost={1}{W}{U}
 pt=2/2
-ability=flying,\
-        lord other spirit creatures you control get +1/+1,\
+ability=flying;\
+        lord other spirit creatures you control get +1/+1;\
         lord other spirit creatures you control have hexproof
 static=player
 timing=main

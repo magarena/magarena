@@ -6,6 +6,6 @@ rarity=R
 type=Land
 subtype=Mountain,Plains
 mana=r3w3
-ability=tap add mana {R} or {W},\
+ability=tap add mana {R} or {W};\
         shock land
 timing=land

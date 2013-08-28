@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Knight
 cost={1}{R}
 pt=1/1
-ability=bloodthirst 1,flanking
+ability=bloodthirst 1;flanking
 timing=main

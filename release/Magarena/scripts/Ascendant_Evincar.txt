@@ -7,8 +7,8 @@ type=Legendary,Creature
 subtype=Vampire
 cost={4}{B}{B}
 pt=3/3
-ability=flying,\
-        lord other black creatures get +1/+1,\
+ability=flying;\
+        lord other black creatures get +1/+1;\
         lord nonblack creatures get -1/-1
 static=all
 timing=main

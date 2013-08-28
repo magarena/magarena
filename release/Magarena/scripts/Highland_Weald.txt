@@ -5,5 +5,5 @@ value=3.851
 rarity=U
 type=Snow,Land
 mana=r3g3
-ability=enters tapped,tap add mana {R} or {G}
+ability=enters tapped;tap add mana {R} or {G}
 timing=tapland

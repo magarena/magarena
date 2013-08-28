@@ -5,5 +5,5 @@ value=2.250
 rarity=C
 type=Land
 mana=w3u1b1r1g1
-ability=enters tapped,tap add mana {W},tap sac add mana any
+ability=enters tapped;tap add mana {W};tap sac add mana any
 timing=tapland

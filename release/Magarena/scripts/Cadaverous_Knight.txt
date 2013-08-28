@@ -7,5 +7,5 @@ type=Creature
 subtype=Zombie,Knight
 cost={2}{B}
 pt=2/2
-ability=flanking,regenerate {1}{B}{B}
+ability=flanking;regenerate {1}{B}{B}
 timing=main

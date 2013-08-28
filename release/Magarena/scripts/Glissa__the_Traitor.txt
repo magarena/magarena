@@ -7,6 +7,6 @@ type=Legendary,Creature
 subtype=Zombie,Elf
 cost={B}{G}{G}
 pt=3/3
-ability=first strike,deathtouch
+ability=first strike;deathtouch
 timing=fmain
 requires_groovy_code

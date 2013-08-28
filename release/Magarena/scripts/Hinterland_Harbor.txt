@@ -5,6 +5,6 @@ value=3.783
 rarity=R
 type=Land
 mana=g3u3
-ability=tap add mana {G} or {U},\
+ability=tap add mana {G} or {U};\
         enters tapped unless forest island
 timing=land

@@ -5,5 +5,5 @@ value=3.553
 rarity=C
 type=Land
 mana=b3
-ability=enters tapped,tap add mana {B},cycling {2}
+ability=enters tapped;tap add mana {B};cycling {2}
 timing=tapland

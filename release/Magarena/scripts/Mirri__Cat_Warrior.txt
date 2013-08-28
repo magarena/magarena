@@ -7,5 +7,5 @@ type=Legendary,Creature
 subtype=Cat,Warrior
 cost={1}{G}{G}
 pt=2/3
-ability=first strike,forestwalk,vigilance
+ability=first strike;forestwalk;vigilance
 timing=main

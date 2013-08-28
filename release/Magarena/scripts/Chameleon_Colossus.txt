@@ -7,6 +7,6 @@ type=Creature
 subtype=Shapeshifter
 cost={2}{G}{G}
 pt=4/4
-ability=changeling,protection from black
+ability=changeling;protection from black
 timing=main
 requires_groovy_code

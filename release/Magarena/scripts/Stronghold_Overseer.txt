@@ -7,6 +7,6 @@ type=Creature
 subtype=Demon
 cost={3}{B}{B}{B}
 pt=5/5
-ability=shadow,flying
+ability=shadow;flying
 timing=fmain
 requires_groovy_code

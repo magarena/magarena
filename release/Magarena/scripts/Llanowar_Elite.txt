@@ -7,6 +7,6 @@ type=Creature
 subtype=Elf
 cost={G}
 pt=1/1
-ability=trample,kicker {8}
+ability=trample;kicker {8}
 timing=main
 requires_groovy_code

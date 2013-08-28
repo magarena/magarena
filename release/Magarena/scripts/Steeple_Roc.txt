@@ -7,5 +7,5 @@ type=Creature
 subtype=Bird
 cost={4}{W}
 pt=3/1
-ability=flying,first strike
+ability=flying;first strike
 timing=main

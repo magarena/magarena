@@ -7,5 +7,5 @@ type=Creature
 subtype=Goblin,Warrior
 cost={R/G}{R/G}{R/G}
 pt=3/3
-ability=haste,wither
+ability=haste;wither
 timing=fmain

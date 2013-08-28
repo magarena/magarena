@@ -7,5 +7,5 @@ type=Creature
 subtype=Vampire
 cost={2}{B}{B}
 pt=2/2
-ability=bloodthirst 2,lifelink
+ability=bloodthirst 2;lifelink
 timing=main

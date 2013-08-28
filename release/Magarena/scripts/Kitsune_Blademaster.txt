@@ -7,5 +7,5 @@ type=Creature
 subtype=Fox,Samurai
 cost={2}{W}
 pt=2/2
-ability=first strike,bushido 1
+ability=first strike;bushido 1
 timing=main

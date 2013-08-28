@@ -6,6 +6,6 @@ rarity=R
 type=Land
 subtype=Plains,Island
 mana=w3u3
-ability=tap add mana {W} or {U},\
+ability=tap add mana {W} or {U};\
         shock land
 timing=land

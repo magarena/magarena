@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Rogue
 cost={4}{R}
 pt=3/1
-ability=first strike,haste
+ability=first strike;haste
 timing=fmain

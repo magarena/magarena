@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Knight
 cost={2}{R}
 pt=2/2
-ability=flanking,haste
+ability=flanking;haste
 timing=fmain

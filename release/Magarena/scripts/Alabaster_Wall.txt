@@ -7,5 +7,5 @@ type=Creature
 subtype=Wall
 cost={2}{W}
 pt=0/4
-ability=tap prevent damage 1,defender
+ability=tap prevent damage 1;defender
 timing=main

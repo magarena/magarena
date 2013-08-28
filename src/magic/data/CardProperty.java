@@ -13,6 +13,7 @@ import magic.model.event.MagicTiming;
 import magic.model.mstatic.MagicStatic;
 
 public enum CardProperty {
+
     IMAGE() {
         public void setProperty(final MagicCardDefinition card, final String value) {
             card.setImageURL(value);
@@ -90,7 +91,7 @@ public enum CardProperty {
     },
     ABILITY() {
         public void setProperty(final MagicCardDefinition card, final String value) {
-            final String[] names=value.split(",(?! )");
+            final String[] names=value.split(SEMISEP);
             for (final String name : names) {
                 final MagicAbility ability = MagicAbility.getAbility(name);
                 final String arg = name.substring(ability.toString().length()).trim();
@@ -106,7 +107,7 @@ public enum CardProperty {
     },
     GIVEN_ABILITY() {
         public void setProperty(final MagicCardDefinition card, final String value) {
-            card.add(MagicStatic.genABStatic(MagicAbility.getAbilities(value.split(","))));
+            card.add(MagicStatic.genABStatic(MagicAbility.getAbilities(value.split(SEMISEP))));
         }
     },
     GIVEN_SUBTYPE() {
@@ -184,7 +185,7 @@ public enum CardProperty {
     LOAD_GROOVY_CODE() {
         public void setProperty(final MagicCardDefinition card, final String value) {
             final String cardName = !value.isEmpty() ? value : card.getFullName();
-            final String[] names = cardName.split(";");
+            final String[] names = cardName.split(SEMISEP);
             for (final String name : names) {
                 CardDefinitions.addCardSpecificGroovyCode(card, name);
             }
@@ -192,6 +193,7 @@ public enum CardProperty {
     },
     ;
 
+    private static final String SEMISEP = "\\s*;\\s*";
     public void setProperty(final MagicCardDefinition card, final String value) {
         //do nothing
     }

@@ -7,5 +7,5 @@ type=Creature
 subtype=Illusion
 cost={3}{B}
 pt=1/5
-ability=pump {B} +1/-1,switch pt {1}{U}
+ability=pump {B} +1/-1;switch pt {1}{U}
 timing=main

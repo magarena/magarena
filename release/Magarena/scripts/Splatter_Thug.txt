@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Warrior
 cost={2}{R}
 pt=2/2
-ability=first strike,unleash
+ability=first strike;unleash
 timing=main

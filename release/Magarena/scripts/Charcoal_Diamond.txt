@@ -5,5 +5,5 @@ value=2.867
 rarity=U
 type=Artifact
 cost={2}
-ability=enters tapped,tap add mana {B}
+ability=enters tapped;tap add mana {B}
 timing=artifact

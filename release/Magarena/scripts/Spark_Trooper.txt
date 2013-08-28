@@ -7,5 +7,5 @@ type=Creature
 subtype=Elemental,Soldier
 cost={1}{R}{R}{W}
 pt=6/1
-ability=trample,haste,lifelink,sac at end
+ability=trample;haste;lifelink;sac at end
 timing=fmain

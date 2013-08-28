@@ -7,8 +7,8 @@ type=Creature
 subtype=Faerie,Soldier
 cost={2}{U}
 pt=1/1
-ability=flash,flying,\
-        lord other faerie creatures you control get +1/+1,\
+ability=flash;flying;\
+        lord other faerie creatures you control get +1/+1;\
         lord other faeries you control have shroud 
 static=player
 timing=flash

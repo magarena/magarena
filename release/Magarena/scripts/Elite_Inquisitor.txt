@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Soldier
 cost={W}{W}
 pt=2/2
-ability=first strike,vigilance,protection from Vampires,protection from Werewolves,protection from Zombies
+ability=first strike;vigilance;protection from Vampires;protection from Werewolves;protection from Zombies
 timing=main

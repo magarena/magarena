@@ -7,6 +7,6 @@ type=Creature
 subtype=Beast
 cost={3}{R}{G}{W}
 pt=6/6
-ability=vigilance,trample
+ability=vigilance;trample
 timing=main
 requires_groovy_code

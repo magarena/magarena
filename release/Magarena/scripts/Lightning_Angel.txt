@@ -7,5 +7,5 @@ type=Creature
 subtype=Angel
 cost={1}{R}{W}{U}
 pt=3/4
-ability=flying,vigilance,haste
+ability=flying;vigilance;haste
 timing=fmain

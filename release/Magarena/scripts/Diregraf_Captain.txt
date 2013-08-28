@@ -7,7 +7,7 @@ type=Creature
 subtype=Zombie,Soldier
 cost={1}{U}{B}
 pt=2/2
-ability=deathtouch,lord other zombie creatures you control get +1/+1
+ability=deathtouch;lord other zombie creatures you control get +1/+1
 static=player
 timing=main
 requires_groovy_code

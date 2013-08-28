@@ -904,7 +904,12 @@ public enum MagicAbility {
     public static Set<MagicAbility> getAbilities(final String[] names) {
         Set<MagicAbility> flags = EnumSet.noneOf(MagicAbility.class);
         for (final String name : names) {
-            flags.add(getAbility(name));
+            final MagicAbility ability = getAbility(name);
+            flags.add(ability);
+            // given ability cannot have arguments
+            if (name.equals(ability.getName()) == false) {
+                throw new RuntimeException("Unable to convert " + name + " to a given ability");
+            }
         }
         return flags;
     }

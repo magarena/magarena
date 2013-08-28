@@ -7,5 +7,5 @@ type=Creature
 subtype=Beast
 cost={2}{G}{G}
 pt=4/4
-ability=enters gain life 4,opponent discard onto battlefield
+ability=enters gain life 4;opponent discard onto battlefield
 timing=main

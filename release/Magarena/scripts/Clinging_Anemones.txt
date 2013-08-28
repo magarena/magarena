@@ -7,5 +7,5 @@ type=Creature
 subtype=Jellyfish
 cost={3}{U}
 pt=1/4
-ability=defender,evolve
+ability=defender;evolve
 timing=main

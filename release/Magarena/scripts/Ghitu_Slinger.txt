@@ -8,5 +8,5 @@ type=Creature
 subtype=Human,Nomad
 cost={2}{R}
 pt=2/2
-ability=echo,enters damage target 2
+ability=echo;enters damage target 2
 timing=main

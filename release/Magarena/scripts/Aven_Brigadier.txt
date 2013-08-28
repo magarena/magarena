@@ -7,8 +7,8 @@ type=Creature
 subtype=Bird,Soldier
 cost={3}{W}{W}{W}
 pt=3/5
-ability=flying,\
-        lord other bird creatures get +1/+1,\
+ability=flying;\
+        lord other bird creatures get +1/+1;\
         lord other soldier creatures get +1/+1
 static=all
 timing=main

@@ -7,5 +7,5 @@ type=Creature
 subtype=Angel,Spirit
 cost={3}{W}{W}
 pt=3/3
-ability=flying,protection from black
+ability=flying;protection from black
 timing=main

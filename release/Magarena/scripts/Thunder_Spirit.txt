@@ -7,5 +7,5 @@ type=Creature
 subtype=Elemental,Spirit
 cost={1}{W}{W}
 pt=2/2
-ability=flying,first strike
+ability=flying;first strike
 timing=main

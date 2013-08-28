@@ -7,5 +7,5 @@ type=Creature
 subtype=Shapeshifter
 cost={3}{R}
 pt=3/3
-ability=changeling,gains {R} first strike
+ability=changeling;gains {R} first strike
 timing=main

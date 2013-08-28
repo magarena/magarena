@@ -8,6 +8,6 @@ subtype=Aura
 cost={1}{G}
 given_pt=1/1
 ability=flash
-given_ability=reach,can block creatures with shadow
+given_ability=reach;can block creatures with shadow
 timing=flash
 enchant=pump,pos creature

@@ -6,6 +6,6 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
-given_ability=defender,flying
+given_ability=defender;flying
 timing=aura
 enchant=defender,creature

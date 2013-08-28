@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Barbarian
 cost={4}{R}
 pt=3/3
-ability=haste,rampage 1
+ability=haste;rampage 1
 timing=fmain

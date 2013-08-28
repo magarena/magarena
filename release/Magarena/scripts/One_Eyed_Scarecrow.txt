@@ -8,6 +8,6 @@ type=Artifact,Creature
 subtype=Scarecrow
 cost={3}
 pt=2/3
-ability=defender,lord creatures with flying your opponents control get -1/-0
+ability=defender;lord creatures with flying your opponents control get -1/-0
 static=opponent
 timing=artifact

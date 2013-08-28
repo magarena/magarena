@@ -7,5 +7,5 @@ type=Creature
 subtype=Insect
 cost={3}{G}
 pt=1/2
-ability=flying,shroud
+ability=flying;shroud
 timing=main

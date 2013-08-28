@@ -6,6 +6,6 @@ rarity=R
 type=Land
 subtype=Island,Swamp
 mana=u3b3
-ability=tap add mana {U} or {B},\
+ability=tap add mana {U} or {B};\
         shock land
 timing=land

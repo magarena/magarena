@@ -7,5 +7,5 @@ type=Creature
 subtype=Elemental,Hound
 cost={2}{R}{R}
 pt=2/2
-ability=double strike,undying
+ability=double strike;undying
 timing=main

@@ -7,6 +7,6 @@ type=Creature
 subtype=Bird,Wizard
 cost={2}{U}
 pt=2/1
-ability=flying,gains {W} lifelink
+ability=flying;gains {W} lifelink
 timing=main
 requires_groovy_code

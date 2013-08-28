@@ -7,6 +7,6 @@ type=Creature
 subtype=Homunculus
 cost={2}{U}
 pt=0/2
-ability=defender,haste
+ability=defender;haste
 timing=fmain
 requires_groovy_code=Merfolk Looter

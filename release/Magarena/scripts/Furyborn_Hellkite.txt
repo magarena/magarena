@@ -7,5 +7,5 @@ type=Creature
 subtype=Dragon
 cost={4}{R}{R}{R}
 pt=6/6
-ability=bloodthirst 6,flying
+ability=bloodthirst 6;flying
 timing=main

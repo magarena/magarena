@@ -7,5 +7,5 @@ type=Creature
 subtype=Goblin,Warrior,Ally
 cost={4}{R}
 pt=2/2
-ability=haste,ally grow
+ability=haste;ally grow
 timing=fmain

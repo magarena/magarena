@@ -7,5 +7,5 @@ type=Creature
 subtype=Illusion,Wall
 cost={4}{U}
 pt=7/4
-ability=defender,flying,first strike,cumulative upkeep {U}
+ability=defender;flying;first strike;cumulative upkeep {U}
 timing=main

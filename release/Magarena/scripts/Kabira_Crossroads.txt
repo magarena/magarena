@@ -5,7 +5,7 @@ value=3.429
 rarity=C
 type=Land
 mana=w4
-ability=tap add mana {W},\
-        enters tapped,\
+ability=tap add mana {W};\
+        enters tapped;\
         enters gain life 2
 timing=land

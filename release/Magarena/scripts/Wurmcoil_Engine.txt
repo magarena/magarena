@@ -7,6 +7,6 @@ type=Artifact,Creature
 subtype=Wurm
 cost={6}
 pt=6/6
-ability=deathtouch,lifelink
+ability=deathtouch;lifelink
 timing=main
 requires_groovy_code

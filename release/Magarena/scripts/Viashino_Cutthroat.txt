@@ -7,5 +7,5 @@ type=Creature
 subtype=Viashino
 cost={2}{R}{R}
 pt=5/3
-ability=haste,return at end
+ability=haste;return at end
 timing=fmain

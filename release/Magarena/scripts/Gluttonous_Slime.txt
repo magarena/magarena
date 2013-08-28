@@ -7,5 +7,5 @@ type=Creature
 subtype=Ooze
 cost={2}{G}
 pt=2/2
-ability=flash,devour 1
+ability=flash;devour 1
 timing=flash

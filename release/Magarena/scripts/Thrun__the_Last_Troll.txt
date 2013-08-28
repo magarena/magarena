@@ -7,5 +7,5 @@ type=Legendary,Creature
 subtype=Troll,Shaman
 cost={2}{G}{G}
 pt=4/4
-ability=can't be countered,hexproof,regenerate {1}{G}
+ability=can't be countered;hexproof;regenerate {1}{G}
 timing=fmain

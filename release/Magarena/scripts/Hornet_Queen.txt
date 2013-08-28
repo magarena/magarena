@@ -6,7 +6,7 @@ rarity=R
 type=Creature
 subtype=Insect
 cost={4}{G}{G}{G}
-ability=flying,deathtouch
+ability=flying;deathtouch
 pt=2/2
 timing=main
 requires_groovy_code

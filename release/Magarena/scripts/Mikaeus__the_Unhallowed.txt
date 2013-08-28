@@ -7,7 +7,7 @@ type=Legendary,Creature
 subtype=Zombie,Cleric
 cost={3}{B}{B}{B}
 pt=5/5
-ability=intimidate,\
+ability=intimidate;\
         lord other non-human creatures you control get +1/+1
 static=player
 timing=main

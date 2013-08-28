@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={1}{G}{W}
 given_pt=2/2
-given_ability=trample,lifelink
+given_ability=trample;lifelink
 timing=aura
 enchant=pump,pos creature

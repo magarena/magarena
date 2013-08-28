@@ -7,5 +7,5 @@ type=Artifact
 subtype=Equipment
 cost={3}
 equip={2}
-given_ability=unblockable,shroud
+given_ability=unblockable;shroud
 timing=equipment

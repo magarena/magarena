@@ -7,5 +7,5 @@ type=Creature
 subtype=Fish,Beast
 cost={2}{G}
 pt=2/1
-ability=evolve,trample
+ability=evolve;trample
 timing=main

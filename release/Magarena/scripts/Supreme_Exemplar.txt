@@ -8,5 +8,5 @@ type=Creature
 subtype=Elemental
 cost={6}{U}
 pt=10/10
-ability=flying,champion Elemental
+ability=flying;champion Elemental
 timing=main

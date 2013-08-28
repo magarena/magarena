@@ -7,8 +7,8 @@ type=Creature
 subtype=Human,Soldier
 cost={4}{W}{W}
 pt=3/3
-ability=vigilance,\
-        lord other soldier creatures you control get +1/+1,\
+ability=vigilance;\
+        lord other soldier creatures you control get +1/+1;\
         lord other soldier creatures you control have vigilance
 static=player
 timing=main

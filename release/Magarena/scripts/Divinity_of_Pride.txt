@@ -7,6 +7,6 @@ type=Creature
 subtype=Spirit,Avatar
 cost={W/B}{W/B}{W/B}{W/B}{W/B}
 pt=4/4
-ability=lifelink,flying
+ability=lifelink;flying
 timing=main
 requires_groovy_code

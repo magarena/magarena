@@ -7,5 +7,5 @@ type=Creature
 subtype=Frog
 cost={2}{G}
 pt=2/2
-ability=cycling {2},protection from blue
+ability=cycling {2};protection from blue
 timing=main

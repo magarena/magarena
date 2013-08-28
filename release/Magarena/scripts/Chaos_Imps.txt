@@ -7,6 +7,6 @@ type=Creature
 subtype=Imp
 cost={4}{R}{R}
 pt=6/5
-ability=flying,unleash
+ability=flying;unleash
 timing=main
 requires_groovy_code

@@ -6,6 +6,6 @@ rarity=R
 type=Land
 subtype=Swamp,Mountain
 mana=b3r3
-ability=tap add mana {B} or {R},\
+ability=tap add mana {B} or {R};\
         shock land
 timing=land

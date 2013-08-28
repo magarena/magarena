@@ -7,5 +7,5 @@ type=Creature
 subtype=Faerie
 cost={1}{U}
 pt=1/1
-ability=protection from red,flying
+ability=protection from red;flying
 timing=main

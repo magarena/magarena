@@ -7,5 +7,5 @@ type=Creature
 subtype=Sphinx
 cost={3}{U}{U}
 pt=4/4
-ability=vigilance,flying
+ability=vigilance;flying
 timing=main

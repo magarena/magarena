@@ -7,5 +7,5 @@ type=Creature
 subtype=Faerie,Rogue
 cost={1}{U}
 pt=1/1
-ability=flying,die may draw card
+ability=flying;die may draw card
 timing=main

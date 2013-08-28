@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Barbarian
 cost={2}{R}{R}
 pt=3/2
-ability=haste,echo,enters damage target player 3
+ability=haste;echo;enters damage target player 3
 timing=fmain

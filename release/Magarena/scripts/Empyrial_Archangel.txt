@@ -7,6 +7,6 @@ type=Creature
 subtype=Angel
 cost={4}{G}{W}{W}{U}
 pt=5/8
-ability=flying,shroud
+ability=flying;shroud
 timing=fmain
 requires_groovy_code

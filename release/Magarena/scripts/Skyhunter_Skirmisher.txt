@@ -7,5 +7,5 @@ type=Creature
 subtype=Cat,Knight
 cost={1}{W}{W}
 pt=1/1
-ability=flying,double strike
+ability=flying;double strike
 timing=main

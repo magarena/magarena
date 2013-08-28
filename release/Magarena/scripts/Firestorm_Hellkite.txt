@@ -7,5 +7,5 @@ type=Creature
 subtype=Dragon
 cost={4}{U}{R}
 pt=6/6
-ability=flying,trample,cumulative upkeep {U}{R}
+ability=flying;trample;cumulative upkeep {U}{R}
 timing=main

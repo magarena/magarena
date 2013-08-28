@@ -7,5 +7,5 @@ type=Creature
 subtype=Spirit
 cost={R}
 pt=1/1
-ability=haste,return at end
+ability=haste;return at end
 timing=fmain

@@ -5,6 +5,6 @@ value=4.286
 rarity=R
 type=Land
 mana=w3u3
-ability=tap add mana {W} or {U},\
+ability=tap add mana {W} or {U};\
         enters tapped unless two
 timing=land

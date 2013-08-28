@@ -7,5 +7,5 @@ type=Creature
 subtype=Angel
 cost={4}{W}
 pt=3/3
-ability=flying,enters gain life 3
+ability=flying;enters gain life 3
 timing=main

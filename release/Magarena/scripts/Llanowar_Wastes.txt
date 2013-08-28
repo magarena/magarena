@@ -5,5 +5,5 @@ value=4.136
 rarity=R
 type=Land
 mana=b2g2
-ability=tap add mana {1},tap pain add mana {B} or {G}
+ability=tap add mana {1};tap pain add mana {B} or {G}
 timing=land

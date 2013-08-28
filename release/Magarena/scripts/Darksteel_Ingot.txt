@@ -5,5 +5,5 @@ value=4.069
 rarity=C
 type=Artifact
 cost={3}
-ability=indestructible,tap add mana any
+ability=indestructible;tap add mana any
 timing=artifact

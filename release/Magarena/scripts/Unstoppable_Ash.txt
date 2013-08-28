@@ -8,6 +8,6 @@ type=Creature
 subtype=Treefolk,Warrior
 cost={3}{G}
 pt=5/5
-ability=trample,champion Treefolk or Warrior
+ability=trample;champion Treefolk or Warrior
 timing=main
 requires_groovy_code

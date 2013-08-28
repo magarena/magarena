@@ -7,6 +7,6 @@ type=Legendary,Creature
 subtype=Kraken
 cost={3}{U}{U}{B}
 pt=5/8
-ability=islandwalk,swampwalk
+ability=islandwalk;swampwalk
 timing=smain
 requires_groovy_code

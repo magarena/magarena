@@ -8,5 +8,5 @@ type=Creature
 subtype=Elemental,Warrior
 cost={3}{R}
 pt=10/2
-ability=trample,champion Elemental
+ability=trample;champion Elemental
 timing=main

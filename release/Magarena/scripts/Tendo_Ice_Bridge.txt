@@ -5,5 +5,5 @@ value=4.162
 rarity=R
 type=Land
 mana=w1u1b1r1g1
-ability=enters with charge 1,tap add mana {1},tap drain add mana any
+ability=enters with charge 1;tap add mana {1};tap drain add mana any
 timing=land

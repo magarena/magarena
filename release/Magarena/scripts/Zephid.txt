@@ -7,5 +7,5 @@ type=Creature
 subtype=Illusion
 cost={4}{U}{U}
 pt=3/4
-ability=flying,shroud
+ability=flying;shroud
 timing=main

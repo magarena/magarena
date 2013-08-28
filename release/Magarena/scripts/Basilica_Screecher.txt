@@ -7,5 +7,5 @@ type=Creature
 subtype=Bat
 cost={1}{B}
 pt=1/2
-ability=flying,extort
+ability=flying;extort
 timing=main

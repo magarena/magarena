@@ -7,6 +7,6 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={U}
-given_ability=flying,can't block creatures without flying
+given_ability=flying;can't block creatures without flying
 timing=aura
 enchant=flying,pos creature

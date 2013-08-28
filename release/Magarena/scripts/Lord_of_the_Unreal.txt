@@ -7,7 +7,7 @@ type=Creature
 subtype=Human,Wizard
 cost={U}{U}
 pt=2/2
-ability=lord illusion creatures you control get +1/+1,\
+ability=lord illusion creatures you control get +1/+1;\
         lord illusion creatures you control have hexproof
 static=player
 timing=main

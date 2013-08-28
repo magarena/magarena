@@ -7,5 +7,5 @@ type=Creature
 subtype=Merfolk,Rogue
 cost={U/B}{U/B}
 pt=2/1
-ability=can't block,unblockable
+ability=can't block;unblockable
 timing=fmain

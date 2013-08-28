@@ -7,5 +7,5 @@ type=Creature
 subtype=Kor,Soldier,Ally
 cost={2}{W}
 pt=0/3
-ability=defender,ally grow
+ability=defender;ally grow
 timing=main

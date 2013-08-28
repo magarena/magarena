@@ -7,5 +7,5 @@ type=Creature
 subtype=Wall
 cost={2}{B}
 pt=0/5
-ability=defender,protection from black
+ability=defender;protection from black
 timing=main

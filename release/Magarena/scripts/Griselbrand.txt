@@ -8,5 +8,5 @@ subtype=Demon
 cost={4}{B}{B}{B}{B}
 pt=7/7
 timing=main
-ability=flying,lifelink
+ability=flying;lifelink
 requires_groovy_code

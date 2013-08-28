@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Samurai
 cost={W}{W}
 pt=2/2
-ability=protection from black,bushido 1
+ability=protection from black;bushido 1
 timing=main

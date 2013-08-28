@@ -5,6 +5,6 @@ value=3.315
 rarity=U
 type=Land
 mana=w3g3
-ability=tap add mana {G} or {W},\
+ability=tap add mana {G} or {W};\
         enters tapped
 timing=tapland

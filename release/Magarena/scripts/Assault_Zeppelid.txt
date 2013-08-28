@@ -7,5 +7,5 @@ type=Creature
 subtype=Beast
 cost={2}{G}{U}
 pt=3/3
-ability=flying,trample
+ability=flying;trample
 timing=main

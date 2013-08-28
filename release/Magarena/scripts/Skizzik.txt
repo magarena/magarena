@@ -7,6 +7,6 @@ type=Creature
 subtype=Elemental
 cost={3}{R}
 pt=5/3
-ability=trample,haste,kicker {R}
+ability=trample;haste;kicker {R}
 timing=fmain
 requires_groovy_code

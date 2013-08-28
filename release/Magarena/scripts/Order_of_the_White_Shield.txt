@@ -7,7 +7,7 @@ type=Creature
 subtype=Human,Knight
 cost={W}{W}
 pt=2/1
-ability=protection from black,\
-        gains {W} first strike,\
+ability=protection from black;\
+        gains {W} first strike;\
         pump {W}{W} +1/+0
 timing=main

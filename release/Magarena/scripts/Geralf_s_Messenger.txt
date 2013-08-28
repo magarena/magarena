@@ -8,5 +8,5 @@ subtype=Zombie
 cost={B}{B}{B}
 pt=3/2
 timing=fmain
-ability=enters tapped,undying
+ability=enters tapped;undying
 requires_groovy_code

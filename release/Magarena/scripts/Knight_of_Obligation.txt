@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Knight
 cost={3}{W}
 pt=2/4
-ability=vigilance,extort
+ability=vigilance;extort
 timing=main

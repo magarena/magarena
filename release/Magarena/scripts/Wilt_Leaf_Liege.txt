@@ -7,7 +7,7 @@ type=Creature
 subtype=Elf,Knight
 cost={1}{G/W}{G/W}{G/W}
 pt=4/4
-ability=lord other green creatures you control get +1/+1,\
-        lord other white creatures you control get +1/+1,\
+ability=lord other green creatures you control get +1/+1;\
+        lord other white creatures you control get +1/+1;\
         opponent discard onto battlefield
 timing=main

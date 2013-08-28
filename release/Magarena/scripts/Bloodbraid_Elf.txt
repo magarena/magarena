@@ -7,5 +7,5 @@ type=Creature
 subtype=Elf,Berserker
 cost={2}{R}{G}
 pt=3/2
-ability=haste,cascade
+ability=haste;cascade
 timing=main

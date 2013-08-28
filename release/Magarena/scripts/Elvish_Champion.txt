@@ -7,7 +7,7 @@ type=Creature
 subtype=Elf
 cost={1}{G}{G}
 pt=2/2
-ability=lord other elf creatures get +1/+1,\
+ability=lord other elf creatures get +1/+1;\
         lord other elf creatures have forestwalk
 static=all
 timing=main

@@ -7,5 +7,5 @@ type=Creature
 subtype=Ogre,Warrior
 cost={2}{R}
 pt=2/2
-ability=bloodthirst 1,first strike
+ability=bloodthirst 1;first strike
 timing=main

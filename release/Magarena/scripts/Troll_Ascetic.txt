@@ -7,5 +7,5 @@ type=Creature
 subtype=Troll,Shaman
 cost={1}{G}{G}
 pt=3/2
-ability=hexproof,regenerate {1}{G}
+ability=hexproof;regenerate {1}{G}
 timing=fmain

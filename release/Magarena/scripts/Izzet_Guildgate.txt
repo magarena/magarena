@@ -6,6 +6,6 @@ rarity=C
 type=Land
 subtype=Gate
 mana=u3r3
-ability=tap add mana {U} or {R},\
+ability=tap add mana {U} or {R};\
         enters tapped
 timing=tapland

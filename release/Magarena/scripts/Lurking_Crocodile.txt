@@ -7,5 +7,5 @@ type=Creature
 subtype=Crocodile
 cost={2}{G}
 pt=2/2
-ability=bloodthirst 1,islandwalk
+ability=bloodthirst 1;islandwalk
 timing=main

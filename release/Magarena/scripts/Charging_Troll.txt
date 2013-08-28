@@ -7,5 +7,5 @@ type=Creature
 subtype=Troll
 cost={2}{G}{W}
 pt=3/3
-ability=vigilance,regenerate {G}
+ability=vigilance;regenerate {G}
 timing=main

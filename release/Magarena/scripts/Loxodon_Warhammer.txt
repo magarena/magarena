@@ -8,5 +8,5 @@ subtype=Equipment
 cost={3}
 equip={3}
 given_pt=3/0
-given_ability=lifelink,trample
+given_ability=lifelink;trample
 timing=equipment

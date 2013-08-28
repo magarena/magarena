@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Soldier
 cost={4}{R}
 pt=4/2
-ability=trample,haste
+ability=trample;haste
 timing=fmain

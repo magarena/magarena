@@ -7,5 +7,5 @@ type=Creature
 subtype=Viashino,Warrior
 cost={3}{R}
 pt=2/2
-ability=devour 2,gains {G} trample
+ability=devour 2;gains {G} trample
 timing=main

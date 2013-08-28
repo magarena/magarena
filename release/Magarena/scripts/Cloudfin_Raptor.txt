@@ -7,5 +7,5 @@ type=Creature
 subtype=Bird,Mutant
 cost={U}
 pt=0/1
-ability=flying,evolve
+ability=flying;evolve
 timing=main

@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Pest
 cost={1}
 pt=0/1
-ability=battle cry,can't be blocked except by creatures with flying or reach
+ability=battle cry;can't be blocked except by creatures with flying or reach
 timing=smain

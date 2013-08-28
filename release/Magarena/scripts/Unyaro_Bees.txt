@@ -7,6 +7,6 @@ type=Creature
 subtype=Insect
 cost={G}{G}{G}
 pt=0/1
-ability=flying,pump {G} +1/+1
+ability=flying;pump {G} +1/+1
 timing=main
 requires_groovy_code

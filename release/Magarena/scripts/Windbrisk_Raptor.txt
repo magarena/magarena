@@ -7,5 +7,5 @@ type=Creature
 subtype=Bird
 cost={5}{W}{W}
 pt=5/7
-ability=flying,lord attacking creatures you control have lifelink
+ability=flying;lord attacking creatures you control have lifelink
 timing=main

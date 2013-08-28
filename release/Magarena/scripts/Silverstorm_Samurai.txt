@@ -7,5 +7,5 @@ type=Creature
 subtype=Fox,Samurai
 cost={4}{W}{W}
 pt=3/3
-ability=flash,bushido 1
+ability=flash;bushido 1
 timing=flash

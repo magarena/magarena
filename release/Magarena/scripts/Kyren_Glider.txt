@@ -8,4 +8,4 @@ subtype=Goblin
 cost={1}{R}
 pt=1/1
 timing=main
-ability=can't block,flying
+ability=can't block;flying

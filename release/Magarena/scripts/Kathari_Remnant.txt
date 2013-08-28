@@ -7,5 +7,5 @@ type=Creature
 subtype=Bird,Skeleton
 cost={2}{U}{B}
 pt=0/1
-ability=flying,cascade,regenerate {B}
+ability=flying;cascade;regenerate {B}
 timing=main

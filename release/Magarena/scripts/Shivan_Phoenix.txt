@@ -7,5 +7,5 @@ type=Creature
 subtype=Phoenix
 cost={4}{R}{R}
 pt=3/4
-ability=die return to owner's hand,flying
+ability=die return to owner's hand;flying
 timing=main

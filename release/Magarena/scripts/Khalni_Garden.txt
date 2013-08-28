@@ -6,5 +6,5 @@ rarity=C
 type=Land
 mana=g4
 timing=land
-ability=enters tapped,tap add mana {G}
+ability=enters tapped;tap add mana {G}
 requires_groovy_code

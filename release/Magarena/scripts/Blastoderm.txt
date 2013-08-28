@@ -7,5 +7,5 @@ type=Creature
 subtype=Beast
 cost={2}{G}{G}
 pt=5/5
-ability=shroud,fading 3
+ability=shroud;fading 3
 timing=main
