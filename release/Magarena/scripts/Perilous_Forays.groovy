@@ -7,7 +7,7 @@
         @Override
         public MagicEvent[] getCostEvent(final MagicPermanent source) {
             return [
-                new MagicPayManaCostEvent("{1}"),
+                new MagicPayManaCostEvent(source, "{1}"),
                 new MagicSacrificePermanentEvent(
                     source,
                     MagicTargetChoice.SACRIFICE_CREATURE
@@ -18,7 +18,7 @@
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
-                permanent,
+                source,
                 this,
                 "PN searches his or her library for a land card with basic land type and put that card onto the battlefield tapped. Then shuffle PN's library."
             );
