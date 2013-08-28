@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Golem
 cost={11}
 pt=11/11
-ability=trample,graveyard reveal to library,indestructible
+ability=trample;indestructible;library instead of graveyard
 timing=main

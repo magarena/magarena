@@ -28,6 +28,14 @@ public abstract class MagicWhenPutIntoGraveyardTrigger extends MagicTrigger<Magi
         cdef.addTrigger(this);
     }
     
+    public static final MagicWhenPutIntoGraveyardTrigger LibraryInsteadOfGraveyard = new MagicWhenPutIntoGraveyardTrigger(MagicTrigger.REPLACEMENT) {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicMoveCardAction act) {
+            act.setToLocation(MagicLocationType.OwnersLibrary);
+            return MagicEvent.NONE;
+        }
+    };
+    
     public static final MagicWhenPutIntoGraveyardTrigger OpponentDiscardOntoBattlefield = new MagicWhenPutIntoGraveyardTrigger(MagicTrigger.REPLACEMENT) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicMoveCardAction act) {

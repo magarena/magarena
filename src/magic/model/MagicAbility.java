@@ -506,6 +506,12 @@ public enum MagicAbility {
             card.add(MagicFromGraveyardToLibraryTrigger.create());
         }
     },
+    LibraryInteadOfGraveyard("library instead of graveyard",10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+            card.add(MagicWhenPutIntoGraveyardTrigger.LibraryInsteadOfGraveyard);
+        }
+    },
     Champion("champion",-10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             card.add(new MagicEntersExileCreatureOrSacrificeTrigger(arg));
