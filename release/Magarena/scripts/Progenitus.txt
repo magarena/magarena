@@ -1,0 +1,11 @@
+name=Progenitus
+url=http://magiccards.info/mma/en/182.html
+image=http://magiccards.info/scans/en/mma/182.jpg
+value=4.315
+rarity=M
+type=Legendary,Creature
+subtype=Hydra,Avatar
+cost={W}{W}{U}{U}{B}{B}{R}{R}{G}{G}
+pt=10/10
+ability=protection from everything;library instead of graveyard
+timing=main
