@@ -1,0 +1,12 @@
+name=Fog Bank
+url=http://magiccards.info/m13/en/52.html
+image=http://magiccards.info/scans/en/m13/52.jpg
+value=4.256
+rarity=U
+type=Creature
+subtype=Wall
+cost={1}{U}
+pt=0/2
+ability=defender;flying
+timing=main
+requires_groovy_code
