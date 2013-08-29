@@ -26,11 +26,6 @@ public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPa
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenComesIntoPlay;
     }
-
-    @Override
-    public void change(final MagicCardDefinition cdef) {
-        cdef.addTrigger(this);
-    }
     
     public static MagicWhenComesIntoPlayTrigger createMay(final String rule) {
         final String effect = rule.toLowerCase();

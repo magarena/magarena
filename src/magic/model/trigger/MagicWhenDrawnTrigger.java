@@ -13,9 +13,4 @@ public abstract class MagicWhenDrawnTrigger extends MagicTrigger<MagicCard> {
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenDrawn;
     }
-
-    @Override
-    public void change(final MagicCardDefinition cdef) {
-        cdef.addTrigger(this);
-    }
 }
