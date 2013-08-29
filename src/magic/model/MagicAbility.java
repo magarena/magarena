@@ -857,6 +857,8 @@ public enum MagicAbility {
         PlainsWalk,
         Swampwalk
     );
+    
+    public static final Set<MagicAbility> NO_IMPL = EnumSet.range(AttacksEachTurnIfAble, CantActivateAbilities);
 
     //public static final long EXCLUDE_MASK = Long.MAX_VALUE-Flash.getMask()-CannotBeCountered.getMask()-TotemArmor.getMask();
 
@@ -913,7 +915,7 @@ public enum MagicAbility {
             final MagicAbility ability = getAbility(name);
             flags.add(ability);
             // given ability cannot have arguments
-            if (name.equals(ability.getName()) == false) {
+            if (NO_IMPL.contains(ability) == false) {
                 throw new RuntimeException("Unable to convert " + name + " to a given ability");
             }
         }
