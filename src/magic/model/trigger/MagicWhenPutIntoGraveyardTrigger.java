@@ -29,6 +29,11 @@ public abstract class MagicWhenPutIntoGraveyardTrigger extends MagicTrigger<Magi
         return act.getToLocation() == MagicLocationType.Graveyard;
     }
     
+    @Override
+    public void change(final MagicCardDefinition cdef) {
+        cdef.addTrigger(this);
+    }
+    
     public static final MagicWhenPutIntoGraveyardTrigger LibraryInsteadOfGraveyard = new MagicWhenPutIntoGraveyardTrigger(MagicTrigger.REPLACEMENT) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicMoveCardAction act) {
