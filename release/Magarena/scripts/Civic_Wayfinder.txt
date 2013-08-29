@@ -1,0 +1,11 @@
+name=Civic Wayfinder
+url=http://magiccards.info/dpa/en/56.html
+image=http://magiccards.info/scans/en/dpa/56.jpg
+value=3.524
+rarity=C
+type=Creature
+subtype=Elf,Warrior,Druid
+cost={2}{G}
+pt=2/2
+timing=main
+requires_groovy_code
