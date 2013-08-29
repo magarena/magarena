@@ -1,0 +1,11 @@
+name=Vinelasher Kudzu
+url=http://magiccards.info/rav/en/189.html
+image=http://magiccards.info/scans/en/rav/189.jpg
+value=4.470
+rarity=R
+type=Creature
+subtype=Plant
+cost={1}{G}
+pt=1/1
+timing=main
+requires_groovy_code
