@@ -134,7 +134,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
         };
     }
     
-    public static MagicStatic genABStatic(final MagicTargetFilter<MagicPermanent> filter, final Set<MagicAbility> givenAbilityFlags) {
+    public static MagicStatic genABStatic(final MagicTargetFilter<MagicPermanent> filter, final MagicAbilityList abilityList) {
         return new MagicStatic(
             MagicLayer.Ability,
             filter
@@ -144,12 +144,13 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
                 final MagicPermanent source,
                 final MagicPermanent permanent,
                 final Set<MagicAbility> flags) {
-                flags.addAll(givenAbilityFlags);
+                flags.addAll(abilityList.getAbilities());
+                abilityList.addAbility(permanent);
             }
         };
     }
     
-    public static MagicStatic genABStaticOther(final MagicTargetFilter<MagicPermanent> filter, final Set<MagicAbility> givenAbilityFlags) {
+    public static MagicStatic genABStaticOther(final MagicTargetFilter<MagicPermanent> filter, final MagicAbilityList abilityList) {
         return new MagicStatic(
             MagicLayer.Ability,
             filter
@@ -159,7 +160,8 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
                 final MagicPermanent source,
                 final MagicPermanent permanent,
                 final Set<MagicAbility> flags) {
-                flags.addAll(givenAbilityFlags);
+                flags.addAll(abilityList.getAbilities());
+                abilityList.addAbility(permanent);
             }
             @Override
             public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
@@ -177,22 +179,6 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
                 final Set<MagicAbility> flags) {
                 flags.addAll(abilityList.getAbilities());
                 abilityList.addAbility(permanent);
-            }
-            @Override
-            public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-                return MagicStatic.acceptLinked(game, source, target);
-            }
-        };
-    }
-
-    public static MagicStatic genABStatic(final Set<MagicAbility> givenAbilityFlags) {
-        return new MagicStatic(MagicLayer.Ability) {
-            @Override
-            public void modAbilityFlags(
-                final MagicPermanent source,
-                final MagicPermanent permanent,
-                final Set<MagicAbility> flags) {
-                flags.addAll(givenAbilityFlags);
             }
             @Override
             public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {

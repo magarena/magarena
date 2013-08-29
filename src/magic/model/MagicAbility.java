@@ -819,11 +819,11 @@ public enum MagicAbility {
                     card.add(MagicStatic.genPTStatic(filter, power, toughness));
                 }
             } else {
-                final Set<MagicAbility> abilities = MagicAbility.getAbilities(tokens[1].split(", "));
+                final MagicAbilityList abilityList = MagicAbility.getAbilityList(tokens[1].split(", "));
                 if (other) {
-                    card.add(MagicStatic.genABStaticOther(filter, abilities));
+                    card.add(MagicStatic.genABStaticOther(filter, abilityList));
                 } else {
-                    card.add(MagicStatic.genABStatic(filter, abilities));
+                    card.add(MagicStatic.genABStatic(filter, abilityList));
                 }
             }
         }
@@ -891,28 +891,14 @@ public enum MagicAbility {
         }
     }
 
-    public static Set<MagicAbility> getAbilities(final String[] names) {
-        Set<MagicAbility> flags = EnumSet.noneOf(MagicAbility.class);
+    public static MagicAbilityList getAbilityList(final String[] names) {
+        final MagicAbilityList abilityList = new MagicAbilityList();
         for (final String name : names) {
-            final MagicAbility ability = getAbility(name);
-            flags.add(ability);
-            // given ability cannot have arguments
-            if (NO_IMPL.contains(ability) == false) {
-                throw new RuntimeException("Unable to convert " + name + " to a given ability");
-            }
+            getAbility(name).addAbility(abilityList, name);
         }
-        return flags;
+        return abilityList;
     }
     
-    public static MagicAbilityList getAbilityList(final String[] names) {
-        final MagicAbilityList abList = new MagicAbilityList();
-        for (final String name : names) {
-            final MagicAbility ability = getAbility(name);
-            ability.addAbility(abList, name);
-        }
-        return abList;
-    }
-
     public static Set<MagicAbility> of(final MagicAbility first, MagicAbility... rest) {
         return EnumSet.of(first, rest);
     }
