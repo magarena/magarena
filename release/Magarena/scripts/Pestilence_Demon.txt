@@ -1,0 +1,12 @@
+name=Pestilence Demon
+url=http://magiccards.info/roe/en/124.html
+image=http://magiccards.info/scans/en/roe/124.jpg
+value=4.387
+rarity=R
+type=Creature
+subtype=Demon
+cost={5}{B}{B}{B}
+pt=7/6
+ability=flying
+timing=main
+requires_groovy_code
