@@ -39,7 +39,7 @@ public class MagicTargetFilterFactory {
         factory.put("creature tokens you control", TARGET_CREATURE_TOKEN_YOU_CONTROL);
         
         factory.put("faeries you control", TARGET_FAERIE_YOU_CONTROL);
-        factory.put("wolves you control", TARGET_WOLF_YOU_CONTROL);
+        factory.put("each wolf you control", TARGET_WOLF_YOU_CONTROL);
 
         factory.put("all sliver creatures", TARGET_SLIVER);
         factory.put("all creatures", TARGET_CREATURE);

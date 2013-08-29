@@ -811,7 +811,7 @@ public enum MagicAbility {
             final String prefix = "other ";
             final boolean other = arg.startsWith(prefix);
             final String rest = arg.replaceFirst(prefix, "");
-            final String[] tokens = rest.split(" get | have ");
+            final String[] tokens = rest.split(" get | have | has ");
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.build(tokens[0]);
             if (tokens[1].contains("/")) {
                 final String[] pt = tokens[1].replace('+','0').split("/");
