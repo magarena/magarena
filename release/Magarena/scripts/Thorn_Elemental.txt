@@ -1,0 +1,11 @@
+name=Thorn Elemental
+url=http://magiccards.info/8e/en/283.html
+image=http://magiccards.info/scans/en/8e/283.jpg
+value=4.487
+rarity=R
+type=Creature
+subtype=Elemental
+cost={5}{G}{G}
+pt=7/7
+timing=main
+requires_groovy_code
