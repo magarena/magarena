@@ -54,7 +54,31 @@ Thank you for your support and have fun!
 
 Release 1.41 (August 31, 2013)
 ============
-includes contributions from
+includes contributions from:
+
+- added the following to the ability property in card script:
+  * evoke <mana cost>
+  * lord <filter> have/has <abilities>
+  * lord <filter> get <power/toughness>
+  * library instead of graveyard
+      
+- added support for the following in groovy script:
+  * Clone mechanic
+  * Cipher mechanic
+  * gaining triggered and activated abilities
+  * search from library and put onto the battlefield
+  * search from library and put into hand
+
+- improved busy spinning icon and cannot tap icon
+
+- fixed: only one instance of permanent can have its activated ability activated
+- fixed: when life is lost trigger not triggering
+- fixed: "application is damaged" warning on Mac OS
+- fixed: Overload at instant speed
+- fixed: Wilt-Leaf Liege enters the battlefield when milled
+
+- added the following cards:
+
 
 Release 1.40 (July 27, 2013)
 ============
