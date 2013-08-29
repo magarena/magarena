@@ -7,6 +7,6 @@ type=Creature
 subtype=Sliver
 cost={1}{G}
 pt=1/1
+ability=lord all sliver creatures have tap add mana any
 static=all
 timing=main
-requires_groovy_code
