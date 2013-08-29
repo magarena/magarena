@@ -1,0 +1,11 @@
+name=Civic Wayfinder
+url=http://magiccards.info/rav/en/157.html
+image=http://magiccards.info/scans/en/rav/157.jpg
+value=3.524
+rarity=C
+type=Creature
+subtype=Elf,Warrior,Druid
+cost={2}{G}
+pt=2/2
+timing=main
+requires_groovy_code

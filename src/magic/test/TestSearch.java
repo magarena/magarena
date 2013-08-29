@@ -40,6 +40,7 @@ class TestSearch extends TestGameBuilder {
         addToHand(P, "Path to Exile", 1);
         addToHand(P, "Sylvan Scrying", 2);
         addToHand(P, "Perilous Forays", 1);
+        addToHand(P, "Primeval Titan", 1);
 
         P = opponent;
 
