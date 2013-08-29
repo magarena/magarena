@@ -580,11 +580,6 @@ public class MagicCardDefinition {
     }
 
     public void addAbility(final MagicAbility ability) {
-        addAbility(ability, "");
-    }
-
-    public void addAbility(final MagicAbility ability, final String arg) {
-        ability.addAbilityImpl(this, arg);
         abilityFlags.add(ability);
     }
 

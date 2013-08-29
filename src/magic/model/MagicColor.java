@@ -62,11 +62,11 @@ public enum MagicColor {
 
     public MagicAbility getLandwalkAbility() {
         switch (this) {
-            case White: return MagicAbility.PlainsWalk;
+            case White: return MagicAbility.Plainswalk;
             case Blue: return MagicAbility.Islandwalk;
             case Black: return MagicAbility.Swampwalk;
-            case Green: return MagicAbility.Forestwalk;
             case Red: return MagicAbility.Mountainwalk;
+            case Green: return MagicAbility.Forestwalk;
         }
         throw new RuntimeException("No landwalk ability for MagicColor " + this);
     }
