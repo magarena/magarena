@@ -54,18 +54,12 @@ public enum CardProperty {
     },
     SUBTYPE() {
         public void setProperty(final MagicCardDefinition card, final String value) {
-            card.setSubTypes(value.split(","));
+            card.setSubTypes(value.split(COMMA));
         }
     },
     COLOR() {
         public void setProperty(final MagicCardDefinition card, final String value) {
             card.setColors(value);
-        }
-    },
-    CONVERTED() {
-        public void setProperty(final MagicCardDefinition card, final String value) {
-            //not needed, derive from mana cost
-            //left here for backward compatibility with old card script format
         }
     },
     COST() {
@@ -91,7 +85,7 @@ public enum CardProperty {
     },
     ABILITY() {
         public void setProperty(final MagicCardDefinition card, final String value) {
-            final String[] names=value.split(SEMISEP);
+            final String[] names=value.split(SEMI);
             for (final String name : names) {
                 final MagicAbility ability = MagicAbility.getAbility(name);
                 final String arg = name.substring(ability.toString().length()).trim();
@@ -107,17 +101,17 @@ public enum CardProperty {
     },
     GIVEN_ABILITY() {
         public void setProperty(final MagicCardDefinition card, final String value) {
-            card.add(MagicStatic.genABStatic(MagicAbility.getAbilities(value.split(SEMISEP))));
+            card.add(MagicStatic.genABStatic(MagicAbility.getAbilities(value.split(SEMI))));
         }
     },
     GIVEN_SUBTYPE() {
         public void setProperty(final MagicCardDefinition card, final String value) {
-            card.add(MagicStatic.genSTStatic(MagicSubType.getSubTypes(value.split(","))));
+            card.add(MagicStatic.genSTStatic(MagicSubType.getSubTypes(value.split(COMMA))));
         }
     },
     GIVEN_TYPE() {
         public void setProperty(final MagicCardDefinition card, final String value) {
-            card.add(MagicStatic.genTypeStatic(MagicType.getTypes(value.split(","))));
+            card.add(MagicStatic.genTypeStatic(MagicType.getTypes(value.split(COMMA))));
         }
     },
     GIVEN_COLOR() {
@@ -142,7 +136,7 @@ public enum CardProperty {
     },
     IGNORE() {
         public void setProperty(final MagicCardDefinition card, final String value) {
-            final String[] sizes=value.split(",");
+            final String[] sizes=value.split(COMMA);
             for (final String size : sizes) {
                 card.addIgnore(Long.parseLong(size));
             }
@@ -185,7 +179,7 @@ public enum CardProperty {
     LOAD_GROOVY_CODE() {
         public void setProperty(final MagicCardDefinition card, final String value) {
             final String cardName = !value.isEmpty() ? value : card.getFullName();
-            final String[] names = cardName.split(SEMISEP);
+            final String[] names = cardName.split(SEMI);
             for (final String name : names) {
                 CardDefinitions.addCardSpecificGroovyCode(card, name);
             }
@@ -193,7 +187,8 @@ public enum CardProperty {
     },
     ;
 
-    private static final String SEMISEP = "\\s*;\\s*";
+    private static final String SEMI = "\\s*;\\s*";
+    private static final String COMMA = "\\s*,\\s*";
     public void setProperty(final MagicCardDefinition card, final String value) {
         //do nothing
     }
