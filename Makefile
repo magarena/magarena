@@ -76,6 +76,9 @@ changelog:
 	$(eval LAST := $(shell hg tags | grep "^[[:digit:]]" | head -1 | cut -d' ' -f1))
 	hg log -v | awk '{print}; /Added tag ${LAST}/ {exit 0}' > changelog
 
+people: changelog
+	grep user $^ | sed 's/user:[ ]*//' | sort | uniq | sort > $@
+
 cards/new_%.txt: cards/existing_tip.txt cards/existing_%.txt
 	join -v1 -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
 
