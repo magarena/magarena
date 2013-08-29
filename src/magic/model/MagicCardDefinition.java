@@ -37,7 +37,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.EnumSet;
 
-public class MagicCardDefinition {
+public class MagicCardDefinition implements MagicAbilityStore {
 
     public static final MagicCardDefinition UNKNOWN = new MagicCardDefinition() {
         //definition for unknown cards

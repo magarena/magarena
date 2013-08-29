@@ -10,6 +10,7 @@ import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.MagicAbility;
+import magic.model.MagicAbilityList;
 import magic.model.MagicCounterType;
 import magic.model.target.MagicTargetFilter;
 import magic.model.action.MagicRemoveStaticAction;
@@ -163,6 +164,23 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             @Override
             public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
                 return source != target;
+            }
+        };
+    }
+    
+    public static MagicStatic genABStatic(final MagicAbilityList abilityList) {
+        return new MagicStatic(MagicLayer.Ability) {
+            @Override
+            public void modAbilityFlags(
+                final MagicPermanent source,
+                final MagicPermanent permanent,
+                final Set<MagicAbility> flags) {
+                flags.addAll(abilityList.getAbilities());
+                abilityList.addAbility(permanent);
+            }
+            @Override
+            public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+                return MagicStatic.acceptLinked(game, source, target);
             }
         };
     }
