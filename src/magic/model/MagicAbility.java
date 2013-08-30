@@ -658,6 +658,7 @@ public enum MagicAbility {
     },
     Echo("echo",-20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            assert arg.isEmpty() == false: this + " does not accept empty arg";
             card.add(new MagicEchoTrigger(MagicManaCost.create(arg)));
         }
     },
