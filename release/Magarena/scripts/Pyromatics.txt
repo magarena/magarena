@@ -8,4 +8,4 @@ type=Instant
 cost={1}{R}
 ability=replicate {1}{R}
 timing=removal
-requires_groovy_code
+requires_groovy_code=Grapeshot
