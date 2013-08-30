@@ -7,5 +7,5 @@ type=Creature
 subtype=Dragon
 cost={2}{R}{R}
 pt=4/4
-ability=flying;echo;pump {R} +1/+0
+ability=flying;echo {2}{R}{R};pump {R} +1/+0
 timing=main

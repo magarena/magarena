@@ -7,5 +7,5 @@ type=Creature
 subtype=Gargoyle
 cost={2}{R}
 pt=3/2
-ability=flying;echo;pump {R} +0/+1
+ability=flying;echo {2}{R};pump {R} +0/+1
 timing=main

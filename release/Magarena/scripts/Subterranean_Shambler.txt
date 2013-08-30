@@ -8,6 +8,6 @@ type=Creature
 subtype=Elemental
 cost={3}{R}
 pt=2/3
+ability=echo {3}{R}
 timing=main
-ability=echo
 requires_groovy_code

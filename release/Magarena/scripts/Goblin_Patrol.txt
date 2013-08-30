@@ -7,5 +7,5 @@ type=Creature
 subtype=Goblin
 cost={R}
 pt=2/1
+ability=echo {R}
 timing=main
-ability=echo

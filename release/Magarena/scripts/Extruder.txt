@@ -7,6 +7,6 @@ type=Artifact,Creature
 subtype=Juggernaut
 cost={4}
 pt=4/3
+ability=echo {4}
 timing=main
-ability=echo
 requires_groovy_code

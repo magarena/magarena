@@ -7,6 +7,6 @@ type=Creature
 subtype=Bird,Beast
 cost={2}{G}
 pt=3/2
+ability=echo {2}{G}
 timing=main
-ability=echo
 requires_groovy_code=Timberland Guide;Hunting Moa

@@ -8,5 +8,5 @@ type=Creature
 subtype=Human,Rogue
 cost={2}{R}
 pt=4/1
+ability=echo {2}{R};enters destroy target artifact.
 timing=main
-ability=echo;enters destroy target artifact.

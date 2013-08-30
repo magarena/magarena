@@ -7,5 +7,5 @@ type=Creature
 subtype=Troll
 cost={1}{G}
 pt=3/3
+ability=echo {1}{G};regenerate {1}{G}
 timing=main
-ability=echo;regenerate {1}{G}

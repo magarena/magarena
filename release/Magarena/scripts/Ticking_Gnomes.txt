@@ -8,6 +8,6 @@ type=Artifact,Creature
 subtype=Gnome
 cost={3}
 pt=3/3
+ability=echo {3}
 timing=main
-ability=echo
 requires_groovy_code=Mogg Fanatic

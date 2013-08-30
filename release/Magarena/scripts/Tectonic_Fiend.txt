@@ -7,5 +7,5 @@ type=Creature
 subtype=Elemental
 cost={4}{R}{R}
 pt=7/7
-ability=attacks each turn if able;echo
+ability=attacks each turn if able;echo {4}{R}{R}
 timing=main

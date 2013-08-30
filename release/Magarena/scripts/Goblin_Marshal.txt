@@ -7,6 +7,6 @@ type=Creature
 subtype=Goblin,Warrior
 cost={4}{R}{R}
 pt=3/3
+ability=echo {4}{R}{R}
 timing=main
-ability=echo
 requires_groovy_code

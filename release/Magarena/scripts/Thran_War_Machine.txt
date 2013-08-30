@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Construct
 cost={4}
 pt=4/5
-ability=attacks each turn if able;echo
+ability=attacks each turn if able;echo {4}
 timing=main

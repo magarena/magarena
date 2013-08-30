@@ -5,6 +5,6 @@ value=2.844
 rarity=R
 type=Artifact
 cost={6}
+ability=echo {6}
 timing=artifact
-ability=echo
 requires_groovy_code
