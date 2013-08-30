@@ -55,6 +55,14 @@ Thank you for your support and have fun!
 Release 1.41 (August 31, 2013)
 ============
 includes contributions from:
+drooone
+elias
+ember hauler
+Hector Marin
+hong yie
+jericho.pumpkin
+melvin
+Mike
 
 - added the following to the ability property in card script:
   * evoke <mana cost>
