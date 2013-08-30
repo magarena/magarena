@@ -58,10 +58,12 @@ includes contributions from:
 
 - added the following to the ability property in card script:
   * evoke <mana cost>
-  * lord <filter> have/has <abilities>
-  * lord <filter> get <power/toughness>
+  * lord <affected permanents> have/has <abilities>
+  * lord <affected permanents> get <power/toughness>
   * library instead of graveyard
-      
+
+- given_ability property now supportes all abilities
+
 - added support for the following in groovy script:
   * Clone mechanic
   * Cipher mechanic
