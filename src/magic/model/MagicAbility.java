@@ -831,13 +831,9 @@ public enum MagicAbility {
     None("",0);
 
     public static final Set<MagicAbility> PROTECTION_FLAGS = EnumSet.range(ProtectionFromBlack, ProtectionFromZombies);
-
+    
     public static final Set<MagicAbility> LANDWALK_FLAGS = EnumSet.range(Plainswalk, Forestwalk);
     
-    public static final Set<MagicAbility> NO_IMPL = EnumSet.range(AttacksEachTurnIfAble, CantActivateAbilities);
-
-    //public static final long EXCLUDE_MASK = Long.MAX_VALUE-Flash.getMask()-CannotBeCountered.getMask()-TotemArmor.getMask();
-
     private final String name;
     private final int score;
 
