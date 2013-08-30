@@ -8,4 +8,4 @@ subtype=Gargoyle
 cost={3}{W}
 pt=2/3
 timing=main
-requires_groovy_code
+requires_groovy_code=Treasure Hunter

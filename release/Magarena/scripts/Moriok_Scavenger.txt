@@ -8,4 +8,4 @@ subtype=Human,Rogue
 cost={3}{B}
 pt=2/3
 timing=main
-requires_groovy_code
+requires_groovy_code=Treasure Hunter
