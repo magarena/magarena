@@ -1,17 +1,13 @@
 [
     new MagicWhenBecomesBlockedTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicPermanent attacker) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent attacker) {
             return (permanent == attacker) ?
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(),
                     this,
-                    "PN may\$ have SN deal its combat damage " +
-                    "to defending player as though it weren't blocked."
+                    "PN may\$ have SN assign its combat damage as though it weren't blocked."
                 ):
                 MagicEvent.NONE;
         }
@@ -22,7 +18,7 @@
                 final MagicPermanent permanent = event.getPermanent();
                 final MagicDamage damage = MagicDamage.Combat(
                     permanent,
-                    event.getPlayer().getOpponent(),
+                    game.getDefendingPlayer(),
                     permanent.getPower()
                 );
                 game.doAction(new MagicDealDamageAction(damage));
