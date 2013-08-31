@@ -144,8 +144,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
                 final MagicPermanent source,
                 final MagicPermanent permanent,
                 final Set<MagicAbility> flags) {
-                flags.addAll(abilityList.getAbilities());
-                abilityList.addAbility(permanent);
+                abilityList.giveAbility(permanent, flags);
             }
         };
     }
@@ -160,8 +159,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
                 final MagicPermanent source,
                 final MagicPermanent permanent,
                 final Set<MagicAbility> flags) {
-                flags.addAll(abilityList.getAbilities());
-                abilityList.addAbility(permanent);
+                abilityList.giveAbility(permanent, flags);
             }
             @Override
             public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
@@ -177,8 +175,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
                 final MagicPermanent source,
                 final MagicPermanent permanent,
                 final Set<MagicAbility> flags) {
-                flags.addAll(abilityList.getAbilities());
-                abilityList.addAbility(permanent);
+                abilityList.giveAbility(permanent, flags);
             }
             @Override
             public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {

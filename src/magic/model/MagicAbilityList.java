@@ -44,11 +44,9 @@ public class MagicAbilityList implements MagicAbilityStore {
         abilities.add(ability);
     }
 
-    public Set<MagicAbility> getAbilities() {
-        return abilities;
-    }
+    public void giveAbility(final MagicPermanent permanent, final Set<MagicAbility> flags) {
+        flags.addAll(abilities);
 
-    public void addAbility(final MagicPermanent permanent) {
         for (final MagicActivation<MagicPermanent> permAct : permActivations) {
             permanent.addAbility(permAct);
         }
