@@ -1,7 +1,7 @@
 name=Reminisce
 url=http://magiccards.info/10e/en/99.html
 image=http://magiccards.info/scans/en/10e/99.jpg
-value=3.750
+value=3.533
 rarity=U
 type=Sorcery
 cost={2}{U}

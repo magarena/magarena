@@ -1,7 +1,7 @@
 name=Ebony Owl Netsuke
 url=http://magiccards.info/sok/en/154.html
 image=http://magiccards.info/scans/en/sok/154.jpg
-value=3.134
+value=3.071
 rarity=U
 type=Artifact
 cost={2}

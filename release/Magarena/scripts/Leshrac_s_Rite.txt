@@ -1,7 +1,7 @@
 name=Leshrac's Rite
 url=http://magiccards.info/7e/en/144.html
 image=http://magiccards.info/scans/en/7e/144.jpg
-value=2.242
+value=2.234
 rarity=U
 type=Enchantment
 subtype=Aura

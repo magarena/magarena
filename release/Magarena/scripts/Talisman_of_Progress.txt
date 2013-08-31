@@ -1,7 +1,7 @@
 name=Talisman of Progress
 url=http://magiccards.info/mi/en/256.html
 image=http://magiccards.info/scans/en/mi/256.jpg
-value=2.714
+value=2.724
 rarity=U
 type=Artifact
 cost={2}

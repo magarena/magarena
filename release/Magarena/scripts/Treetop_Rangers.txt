@@ -1,7 +1,7 @@
 name=Treetop Rangers
 url=http://magiccards.info/us/en/279.html
 image=http://magiccards.info/scans/en/us/279.jpg
-value=3.614
+value=3.565
 rarity=C
 type=Creature
 subtype=Elf

@@ -1,7 +1,7 @@
 name=Dauntless Escort
 url=http://magiccards.info/arb/en/67.html
 image=http://magiccards.info/scans/en/arb/67.jpg
-value=3.978
+value=3.981
 rarity=R
 type=Creature
 subtype=Rhino,Soldier

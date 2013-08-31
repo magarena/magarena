@@ -1,7 +1,7 @@
 name=Anvil of Bogardan
 url=http://magiccards.info/vi/en/141.html
 image=http://magiccards.info/scans/en/vi/141.jpg
-value=3.951
+value=3.922
 rarity=R
 type=Artifact
 cost={2}

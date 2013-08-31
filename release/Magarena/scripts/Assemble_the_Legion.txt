@@ -1,7 +1,7 @@
 name=Assemble the Legion
 url=http://magiccards.info/gtc/en/142.html
 image=http://magiccards.info/scans/en/gtc/142.jpg
-value=3.687
+value=3.715
 rarity=R
 type=Enchantment
 cost={3}{R}{W}

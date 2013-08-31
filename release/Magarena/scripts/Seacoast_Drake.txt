@@ -1,7 +1,7 @@
 name=Seacoast Drake
 url=http://magiccards.info/m14/en/70.html
 image=http://magiccards.info/scans/en/m14/70.jpg
-value=3.768
+value=3.766
 rarity=C
 type=Creature
 subtype=Drake

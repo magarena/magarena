@@ -1,7 +1,7 @@
 name=Mind Sculpt
 url=http://magiccards.info/m13/en/61.html
 image=http://magiccards.info/scans/en/m13/61.jpg
-value=3.727
+value=3.701
 rarity=C
 type=Sorcery
 cost={1}{U}

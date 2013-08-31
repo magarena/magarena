@@ -1,7 +1,7 @@
 name=Ebony Treefolk
 url=http://magiccards.info/ap/en/97.html
 image=http://magiccards.info/scans/en/ap/97.jpg
-value=4.000
+value=3.965
 rarity=U
 type=Creature
 subtype=Treefolk

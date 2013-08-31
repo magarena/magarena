@@ -1,7 +1,7 @@
 name=Dakmor Scorpion
 url=http://magiccards.info/po2/en/10.html
 image=http://magiccards.info/scans/en/po2/10.jpg
-value=2.440
+value=2.442
 rarity=C
 type=Creature
 subtype=Scorpion

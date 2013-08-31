@@ -1,7 +1,7 @@
 name=Argothian Enchantress
 url=http://magiccards.info/us/en/234.html
 image=http://magiccards.info/scans/en/us/234.jpg
-value=4.617
+value=4.619
 rarity=R
 type=Creature
 subtype=Human,Druid

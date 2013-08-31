@@ -1,7 +1,7 @@
 name=Phyrexian Rager
 url=http://magiccards.info/mbs/en/51.html
 image=http://magiccards.info/scans/en/mbs/51.jpg
-value=3.981
+value=3.986
 rarity=C
 type=Creature
 subtype=Horror

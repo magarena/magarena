@@ -1,7 +1,7 @@
 name=Thorn Elemental
 url=http://magiccards.info/8e/en/283.html
 image=http://magiccards.info/scans/en/8e/283.jpg
-value=4.487
+value=4.491
 rarity=R
 type=Creature
 subtype=Elemental

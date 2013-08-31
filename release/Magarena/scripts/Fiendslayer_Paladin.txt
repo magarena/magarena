@@ -1,7 +1,7 @@
 name=Fiendslayer Paladin
 url=http://magiccards.info/m14/en/18.html
 image=http://magiccards.info/scans/en/m14/18.jpg
-value=3.717
+value=4.205
 rarity=R
 type=Creature
 subtype=Human,Knight
