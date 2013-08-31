@@ -8,6 +8,8 @@ import magic.model.MagicPermanent;
 import magic.model.action.MagicGainAbilityAction;
 import magic.model.condition.MagicCondition;
 
+import java.util.Arrays;
+
 public class MagicGainActivation extends MagicPermanentActivation {
 
     private final MagicManaCost cost;
@@ -20,11 +22,11 @@ public class MagicGainActivation extends MagicPermanentActivation {
     }
 
     @Override
-    public MagicEvent[] getCostEvent(final MagicPermanent source) {
-        return new MagicEvent[]{
+    public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
+        return Arrays.asList(
             new MagicPayManaCostEvent(source,cost),
             new MagicPlayAbilityEvent(source)
-        };
+        );
     }
 
     @Override

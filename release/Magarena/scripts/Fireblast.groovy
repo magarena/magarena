@@ -25,7 +25,7 @@
         new MagicActivationHints(MagicTiming.Removal,true),
         "Alt"
     ) {
-        public MagicEvent[] getCostEvent(final MagicCard source) {
+        public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
             return [
                 new MagicSacrificePermanentEvent(source, MagicTargetChoice.SACRIFICE_MOUNTAIN),
                 new MagicSacrificePermanentEvent(source, MagicTargetChoice.SACRIFICE_MOUNTAIN)             

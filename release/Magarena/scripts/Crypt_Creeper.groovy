@@ -4,7 +4,7 @@
         "Exile"
     ) {
         @Override
-        public MagicEvent[] getCostEvent(final MagicPermanent source) {
+        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicSacrificeEvent(source)
             ];

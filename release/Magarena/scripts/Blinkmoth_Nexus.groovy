@@ -35,7 +35,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
     ) {
 
         @Override
-        public MagicEvent[] getCostEvent(final MagicPermanent source) {
+        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [new MagicPayManaCostEvent(source,"{1}")];
         }
 
@@ -64,7 +64,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         "Pump"
     ) {
         @Override
-        public MagicEvent[] getCostEvent(final MagicPermanent source) {
+        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [new MagicPayManaCostTapEvent(source,"{1}")];
         }
         @Override

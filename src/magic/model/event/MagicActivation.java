@@ -121,7 +121,7 @@ public abstract class MagicActivation<T extends MagicSource> implements MagicEve
 
     abstract boolean usesStack();
 
-    abstract MagicEvent[] getCostEvent(final T source);
+    abstract Iterable<? extends MagicEvent> getCostEvent(final T source);
 
     public abstract MagicEvent getEvent(final MagicSource source);
 

@@ -4,7 +4,7 @@
         "Token"
     ) {
         @Override
-        public MagicEvent[] getCostEvent(final MagicPermanent source) {
+        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostTapEvent(source,"{2}{U}"),
                 new MagicExileCardEvent(source, MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD)

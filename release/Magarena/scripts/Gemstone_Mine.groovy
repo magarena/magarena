@@ -4,7 +4,7 @@
         2
     ) {
         @Override
-        public MagicEvent[] getCostEvent(final MagicPermanent permanent) {
+        public Iterable<MagicEvent> getCostEvent(final MagicPermanent permanent) {
             return (permanent.getCounters(MagicCounterType.Charge) == 1) ?
                 [
                     new MagicTapEvent(permanent),

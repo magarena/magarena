@@ -1,7 +1,7 @@
 [
     new MagicOverloadActivation(MagicTiming.Counter) {
         @Override
-        public MagicEvent[] getCostEvent(final MagicCard source) {
+        public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
             return [
                 new MagicPayManaCostEvent(source,"{1}{U}{U}{R}")
             ];

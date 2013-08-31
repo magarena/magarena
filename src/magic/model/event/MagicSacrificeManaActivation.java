@@ -6,6 +6,7 @@ import magic.model.MagicSource;
 import magic.model.condition.MagicCondition;
 
 import java.util.List;
+import java.util.Arrays;
 
 public class MagicSacrificeManaActivation extends MagicManaActivation {
 
@@ -16,9 +17,7 @@ public class MagicSacrificeManaActivation extends MagicManaActivation {
     }
 
     @Override
-    public MagicEvent[] getCostEvent(final MagicPermanent perm) {
-        return new MagicEvent[]{
-            new MagicSacrificeEvent(perm)
-        };
+    public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent perm) {
+        return Arrays.asList(new MagicSacrificeEvent(perm));
     }
 }

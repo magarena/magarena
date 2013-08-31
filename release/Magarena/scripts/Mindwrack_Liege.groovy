@@ -4,7 +4,7 @@
         "Put"
         ) {
         @Override
-        public MagicEvent[] getCostEvent(final MagicPermanent source) {
+        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source, "{U/R}{U/R}{U/R}{U/R}")
             ];

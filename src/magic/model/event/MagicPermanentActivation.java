@@ -28,6 +28,8 @@ import magic.model.target.MagicTarget;
 import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicLayer;
 
+import java.util.Arrays;
+
 public abstract class MagicPermanentActivation extends MagicActivation<MagicPermanent> implements MagicChangeCardDefinition, MagicCopyable {
 
     public MagicPermanentActivation(final MagicActivationHints hints, final String txt) {
@@ -77,7 +79,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
         return getPermanentEvent(source,MagicPayedCost.NO_COST).getChoice();
     }
 
-    public abstract MagicEvent[] getCostEvent(final MagicPermanent source);
+    public abstract Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source);
 
     public abstract MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost);
 
@@ -97,8 +99,8 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
     ) {
 
         @Override
-        public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicTapEvent(source)};
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
+            return Arrays.asList(new MagicTapEvent(source));
         }
 
         @Override
@@ -127,11 +129,11 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
             "Untap"
         ) {
             @Override
-            public MagicEvent[] getCostEvent(final MagicPermanent source) {
-                return new MagicEvent[]{
+            public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
+                return Arrays.asList(
                     new MagicPayManaCostEvent(source,cost),
                     new MagicUntapConditionsEvent(source,this)
-                };
+                );
             }
             @Override
             public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
@@ -155,8 +157,8 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
         ) {
 
         @Override
-        public MagicEvent[] getCostEvent(final MagicPermanent source) {
-            return new MagicEvent[]{new MagicTapEvent(source)};
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
+            return Arrays.asList(new MagicTapEvent(source));
         }
 
         @Override
@@ -186,8 +188,8 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
             "Return"
         ) {
             @Override
-            public MagicEvent[] getCostEvent(final MagicPermanent source) {
-                return new MagicEvent[]{new MagicPayManaCostEvent(source,cost)};
+            public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
+                return Arrays.asList(new MagicPayManaCostEvent(source,cost));
             }
             @Override
             public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
@@ -210,8 +212,8 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
             "Switch"
         ) {
             @Override
-            public MagicEvent[] getCostEvent(final MagicPermanent source) {
-                return new MagicEvent[]{new MagicPayManaCostEvent(source,cost)};
+            public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
+                return Arrays.asList(new MagicPayManaCostEvent(source,cost));
             }
             @Override
             public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

@@ -4,7 +4,7 @@
         "Token"
     ) {
         @Override
-        public MagicEvent[] getCostEvent(final MagicPermanent source) {
+        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [new MagicPayManaCostEvent(source,"{2}{G}{G}")];
         }
         @Override

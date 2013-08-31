@@ -144,7 +144,7 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard>,
         return getCardDefinition().getCost();
     }
 
-    public MagicEvent[] getCostEvent() {
+    public Iterable<? extends MagicEvent> getCostEvent() {
         return getCardDefinition().getCostEvent(this);
     }
 

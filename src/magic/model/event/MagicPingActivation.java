@@ -10,6 +10,8 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
 
+import java.util.Arrays;
+
 public class MagicPingActivation extends MagicPermanentActivation {
 
     private final int n;
@@ -23,8 +25,8 @@ public class MagicPingActivation extends MagicPermanentActivation {
     }
 
     @Override
-    public MagicEvent[] getCostEvent(final MagicPermanent source) {
-        return new MagicEvent[]{new MagicTapEvent(source)};
+    public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
+        return Arrays.asList(new MagicTapEvent(source));
     }
     @Override
     public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

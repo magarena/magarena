@@ -5,7 +5,7 @@
     ) {
 
         @Override
-        public MagicEvent[] getCostEvent(final MagicPermanent source) {
+        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
                 MagicTargetFilter.Factory.tribal(MagicSubType.Cleric, MagicTargetFilter.Control.You),
                 false,

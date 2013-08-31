@@ -12,6 +12,8 @@ import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicAbilityOnStack;
 import magic.model.target.MagicPumpTargetPicker;
 
+import java.util.Arrays;
+
 public abstract class MagicBloodrushActivation extends MagicCardActivation {
 
     final MagicManaCost cost;
@@ -26,8 +28,8 @@ public abstract class MagicBloodrushActivation extends MagicCardActivation {
         desc = aDesc;
     }
 
-    public MagicEvent[] getCostEvent(final MagicCard source) {
-        return new MagicEvent[]{
+    public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
+        return Arrays.asList(
             new MagicPayManaCostEvent(
                 source,
                 cost
@@ -37,7 +39,7 @@ public abstract class MagicBloodrushActivation extends MagicCardActivation {
                 source.getController(),
                 source
             )
-        };
+        );
     }
 
     @Override

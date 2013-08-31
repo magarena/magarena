@@ -3,7 +3,7 @@
         new MagicActivationHints(MagicTiming.Counter,true),
         "Alt"
     ) {
-        public MagicEvent[] getCostEvent(final MagicCard source) {
+        public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
             final MagicTargetFilter<MagicCard> filter =
                 new MagicTargetFilter.MagicOtherCardTargetFilter(MagicTargetFilter.TARGET_BLUE_CARD_FROM_HAND, source);
             final MagicTargetChoice targetChoice =

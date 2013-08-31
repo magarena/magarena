@@ -13,6 +13,8 @@ import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicOtherPermanentTargetFilter;
 import magic.model.target.MagicTargetHint;
 
+import java.util.Arrays;
+
 public class MagicEquipActivation extends MagicPermanentActivation {
 
     private final MagicManaCost equipCost;
@@ -30,8 +32,8 @@ public class MagicEquipActivation extends MagicPermanentActivation {
     }
 
     @Override
-    public MagicEvent[] getCostEvent(final MagicPermanent source) {
-        return new MagicEvent[]{new MagicPayManaCostEvent(source,equipCost)};
+    public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
+        return Arrays.asList(new MagicPayManaCostEvent(source,equipCost));
     }
 
     @Override

@@ -7,6 +7,8 @@ import magic.model.MagicPermanent;
 import magic.model.action.MagicRegenerateAction;
 import magic.model.condition.MagicCondition;
 
+import java.util.Arrays;
+
 public class MagicRegenerationActivation extends MagicPermanentActivation {
 
     private static final MagicActivationHints hint = new MagicActivationHints(MagicTiming.Pump);
@@ -19,11 +21,11 @@ public class MagicRegenerationActivation extends MagicPermanentActivation {
     }
 
     @Override
-    public MagicEvent[] getCostEvent(final MagicPermanent source) {
-        return new MagicEvent[]{
+    public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
+        return Arrays.asList(
             new MagicPayManaCostEvent(source,cost),
             new MagicRegenerationConditionsEvent(source,this)
-        };
+        );
     }
 
     @Override

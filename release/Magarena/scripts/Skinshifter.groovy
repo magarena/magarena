@@ -61,7 +61,7 @@ def ST3 = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         "Rhino"
     ) {
         @Override
-        public MagicEvent[] getCostEvent(final MagicPermanent source) {
+        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source,"{G}"),
                 new MagicPlayAbilityEvent(source)
@@ -88,7 +88,7 @@ def ST3 = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
     ) {
 
         @Override
-        public MagicEvent[] getCostEvent(final MagicPermanent source) {
+        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source,"{G}"),
                 new MagicPlayAbilityEvent(source)
@@ -115,7 +115,7 @@ def ST3 = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
     ) {
 
         @Override
-        public MagicEvent[] getCostEvent(final MagicPermanent source) {
+        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source,"{G}"),
                 new MagicPlayAbilityEvent(source)

@@ -9,6 +9,8 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicAbilityOnStack;
 
+import java.util.Arrays;
+
 public class MagicEvokeActivation extends MagicCardActivation {
 
     final MagicManaCost cost;
@@ -25,13 +27,13 @@ public class MagicEvokeActivation extends MagicCardActivation {
     }
 
     @Override
-    public MagicEvent[] getCostEvent(final MagicCard source) {
-        return new MagicEvent[]{
+    public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
+        return Arrays.asList(
             new MagicPayManaCostEvent(
                 source,
                 cost
             ),
             new MagicEvokeEvent(source)
-        };
+        );
     }
 }

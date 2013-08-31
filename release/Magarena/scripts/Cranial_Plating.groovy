@@ -18,7 +18,7 @@ def equip = new MagicEquipActivation(MagicManaCost.create("{B}{B}"));
         "Attach"
     ) {
         @Override
-        public MagicEvent[] getCostEvent(final MagicPermanent source) {
+        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return equip.getCostEvent(source);
         }
 

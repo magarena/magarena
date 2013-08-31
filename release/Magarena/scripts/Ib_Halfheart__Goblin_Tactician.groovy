@@ -36,7 +36,7 @@
     ) {
 
         @Override
-        public MagicEvent[] getCostEvent(final MagicPermanent source) {
+        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicSacrificePermanentEvent(source, MagicTargetChoice.SACRIFICE_MOUNTAIN),
                 new MagicSacrificePermanentEvent(source, MagicTargetChoice.SACRIFICE_MOUNTAIN)

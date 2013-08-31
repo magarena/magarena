@@ -508,7 +508,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
         return cost;
     }
 
-    public MagicEvent[] getCostEvent(final MagicCard source) {
+    public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
         final List<MagicEvent> costEvent = new ArrayList<MagicEvent>();
         if (cost != MagicManaCost.ZERO) {
             costEvent.add(new MagicPayManaCostEvent(
@@ -519,7 +519,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
         for (final MagicEventSource eventSource : costEventSources) {
             costEvent.add(eventSource.getEvent(source));
         }
-        return costEvent.toArray(new MagicEvent[0]);
+        return costEvent;
     }
 
     public boolean isPlayable(final MagicPlayerProfile profile) {

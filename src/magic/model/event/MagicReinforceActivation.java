@@ -10,6 +10,8 @@ import magic.model.choice.MagicChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicAbilityOnStack;
 
+import java.util.Arrays;
+
 public class MagicReinforceActivation extends MagicCardActivation {
 
     final MagicManaCost cost;
@@ -24,8 +26,8 @@ public class MagicReinforceActivation extends MagicCardActivation {
         amount = n;
     }
 
-    public MagicEvent[] getCostEvent(final MagicCard source) {
-        return new MagicEvent[]{
+    public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
+        return Arrays.asList(
             new MagicPayManaCostEvent(
                 source,
                 cost
@@ -35,7 +37,7 @@ public class MagicReinforceActivation extends MagicCardActivation {
                 source.getController(),
                 source
             )
-        };
+        );
     }
 
     @Override

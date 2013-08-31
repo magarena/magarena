@@ -4,7 +4,7 @@
         "Damage"
     ) {
         @Override
-        public MagicEvent[] getCostEvent(final MagicPermanent source) {
+        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             final MagicPermanent permanent=source;
             return [
                 new MagicPayManaCostEvent(source,"{2}{B}{R}"),

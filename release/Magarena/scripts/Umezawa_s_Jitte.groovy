@@ -5,7 +5,7 @@
         "+2/+2"
     ) {
         @Override
-        public MagicEvent[] getCostEvent(final MagicPermanent source) {
+        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicRemoveCounterEvent(source,MagicCounterType.Charge,1)
             ];
@@ -30,7 +30,7 @@
         "-1/-1"
     ) {
         @Override
-        public MagicEvent[] getCostEvent(final MagicPermanent source) {
+        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicRemoveCounterEvent(source,MagicCounterType.Charge,1)
             ];
@@ -62,7 +62,7 @@
         "Life + 2"
     ) {
         @Override
-        public MagicEvent[] getCostEvent(final MagicPermanent source) {
+        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicRemoveCounterEvent(source,MagicCounterType.Charge,1)
             ];

@@ -5,7 +5,7 @@
         2
     ) {
         @Override
-        public MagicEvent[] getCostEvent(final MagicPermanent permanent) {
+        public Iterable<MagicEvent> getCostEvent(final MagicPermanent permanent) {
             return [new MagicTapEvent(permanent)];
         }
     }

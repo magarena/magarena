@@ -6,6 +6,7 @@ import magic.model.MagicSource;
 import magic.model.condition.MagicCondition;
 
 import java.util.List;
+import java.util.Arrays;
 
 public class MagicTapManaActivation extends MagicManaActivation {
 
@@ -14,9 +15,7 @@ public class MagicTapManaActivation extends MagicManaActivation {
     }
 
     @Override
-    public MagicEvent[] getCostEvent(final MagicPermanent perm) {
-        return new MagicEvent[]{
-            new MagicTapEvent(perm)
-        };
+    public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent perm) {
+        return Arrays.asList(new MagicTapEvent(perm));
     }
 }

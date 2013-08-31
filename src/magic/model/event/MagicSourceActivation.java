@@ -26,7 +26,7 @@ public class MagicSourceActivation<T extends MagicSource & MagicMappable<T> & Co
         return activation.canPlay(game, player, source, useHints);
     }
     
-    public MagicEvent[] getCostEvent() {
+    public Iterable<? extends MagicEvent> getCostEvent() {
         return activation.getCostEvent(source);
     }
     

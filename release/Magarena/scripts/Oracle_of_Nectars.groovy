@@ -4,7 +4,7 @@
         "Life+X"
     ) {
         @Override
-        public MagicEvent[] getCostEvent(final MagicPermanent source) {
+        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [new MagicPayManaCostTapEvent(source,"{X}")];
         }
         @Override

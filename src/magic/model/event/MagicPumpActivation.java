@@ -7,6 +7,8 @@ import magic.model.MagicPermanent;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.condition.MagicCondition;
 
+import java.util.Arrays;
+
 public class MagicPumpActivation extends MagicPermanentActivation {
 
     private static final MagicActivationHints ACTIVATION_HINTS = new MagicActivationHints(MagicTiming.Pump);
@@ -22,8 +24,8 @@ public class MagicPumpActivation extends MagicPermanentActivation {
     }
 
     @Override
-    public MagicEvent[] getCostEvent(final MagicPermanent source) {
-        return new MagicEvent[]{new MagicPayManaCostEvent(source,cost)};
+    public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
+        return Arrays.asList(new MagicPayManaCostEvent(source,cost));
     }
 
     @Override

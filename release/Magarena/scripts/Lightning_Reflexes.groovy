@@ -5,7 +5,7 @@
         "Flash"
     ) {
         @Override
-        public MagicEvent[] getCostEvent(final MagicCard source) {
+        public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
             return source.getCostEvent();
         }
         @Override

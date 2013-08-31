@@ -38,7 +38,7 @@ def C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
         "Animate"
     ) {
         @Override
-        public MagicEvent[] getCostEvent(final MagicPermanent source) {
+        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [new MagicPayManaCostEvent(source,"{3}{W}{U}")];
         }
         @Override

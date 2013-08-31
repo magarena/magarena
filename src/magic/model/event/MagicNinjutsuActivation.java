@@ -16,6 +16,8 @@ import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicAbilityOnStack;
 import magic.model.target.MagicPumpTargetPicker;
 
+import java.util.Arrays;
+
 public class MagicNinjutsuActivation extends MagicCardActivation {
 
     final MagicManaCost cost;
@@ -31,8 +33,8 @@ public class MagicNinjutsuActivation extends MagicCardActivation {
         cost = aCost;
     }
 
-    public MagicEvent[] getCostEvent(final MagicCard source) {
-        return new MagicEvent[]{
+    public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
+        return Arrays.asList(
             new MagicPayManaCostEvent(
                 source,
                 cost
@@ -41,7 +43,7 @@ public class MagicNinjutsuActivation extends MagicCardActivation {
                 source,
                 MagicTargetChoice.AN_UNBLOCKED_ATTACKING_CREATURE_YOU_CONTROL
             )
-        };
+        );
     }
 
     @Override

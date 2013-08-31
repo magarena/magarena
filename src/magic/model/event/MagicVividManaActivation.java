@@ -6,6 +6,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 
 import java.util.List;
+import java.util.Arrays;
 
 public class MagicVividManaActivation extends MagicManaActivation {
 
@@ -14,10 +15,10 @@ public class MagicVividManaActivation extends MagicManaActivation {
     }
 
     @Override
-    public MagicEvent[] getCostEvent(final MagicPermanent permanent) {
-        return new MagicEvent[]{
+    public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent permanent) {
+        return Arrays.asList(
             new MagicTapEvent(permanent),
             new MagicRemoveCounterEvent(permanent,MagicCounterType.Charge,1)
-        };
+        );
     }
 }

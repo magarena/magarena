@@ -10,6 +10,8 @@ import magic.model.action.MagicChangeCountersAction;
 import magic.model.condition.MagicArtificialCondition;
 import magic.model.condition.MagicCondition;
 
+import java.util.Arrays;
+
 public class MagicLevelUpActivation extends MagicPermanentActivation {
 
     private static final MagicActivationHints ACTIVATION_HINTS =
@@ -32,8 +34,8 @@ public class MagicLevelUpActivation extends MagicPermanentActivation {
     }
 
     @Override
-    public MagicEvent[] getCostEvent(final MagicPermanent source) {
-        return new MagicEvent[]{new MagicPayManaCostEvent(source,cost)};
+    public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
+        return Arrays.asList(new MagicPayManaCostEvent(source,cost));
     }
 
     @Override

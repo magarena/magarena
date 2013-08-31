@@ -44,7 +44,7 @@ public class MagicCardActivation extends MagicActivation<MagicCard> implements M
         return usesStack;
     }
 
-    public MagicEvent[] getCostEvent(final MagicCard source) {
+    public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
         return source.getCostEvent();
     }
 

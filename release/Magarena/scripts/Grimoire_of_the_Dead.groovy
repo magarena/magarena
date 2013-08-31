@@ -4,7 +4,7 @@
         "Add counter"
     ) {
         @Override
-        public MagicEvent[] getCostEvent(final MagicPermanent source) {
+        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostTapEvent(source,"{1}"),
                 new MagicDiscardEvent(source)
@@ -28,7 +28,7 @@
         "Reanimate"
     ) {
         @Override
-        public MagicEvent[] getCostEvent(final MagicPermanent source) {
+        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicTapEvent(source),
                 new MagicRemoveCounterEvent(source,MagicCounterType.Charge,3),
