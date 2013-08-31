@@ -33,6 +33,7 @@ Arrest
 Ascended Lawmage
 Ashmouth Hound
 Assault Griffin
+Assemble the Legion
 Attended Knight
 Avacyn, Angel of Hope
 Avacynian Priest
@@ -64,6 +65,7 @@ Blood Crypt
 Bloodflow Connoisseur
 Bloodfray Giant
 Bloodgift Demon
+Blood Reckoning
 Bloodthrone Vampire
 Blustersquall
 Bomber Corps
@@ -71,6 +73,7 @@ Bond Beetle
 Bone to Ash
 Boneyard Wurm
 Bonfire of the Damned
+Borderland Ranger
 Boros Elite
 Boros Guildgate
 Boros Mastiff
@@ -112,6 +115,7 @@ Claustrophobia
 Clifftop Retreat
 Clinging Anemones
 Clinging Mists
+Clone
 Cloudfin Raptor
 Cloudshift
 Cobblebrute
@@ -199,7 +203,9 @@ Erdwal Ripper
 Essence Drain
 Essence Harvest
 Essence Scatter
+Ethereal Armor
 Evernight Shade
+Evil Twin
 Executioner's Hood
 Experiment One
 Explosive Impact
@@ -213,6 +219,7 @@ Falkenrath Noble
 Falkenrath Torturer
 Farbog Boneflinger
 Farbog Explorer
+Farseek
 Fatal Fumes
 Favorable Winds
 Favor of the Woods
@@ -229,6 +236,7 @@ Firemane Avenger
 Fleeting Distraction
 Flinthoof Boar
 Fog
+Fog Bank
 Forest
 Forge Devil
 Fortress Crab
@@ -292,6 +300,7 @@ Guardians of Akrasa
 Guise of Fire
 Hallowed Fountain
 Hamlet Captain
+Hands of Binding
 Hanweir Lancer
 Harbor Bandit
 Harrowing Journey
@@ -384,7 +393,9 @@ Midnight Guard
 Midnight Haunting
 Mikaeus, the Lunarch
 Mikaeus, the Unhallowed
+Millennial Gargoyle
 Mind Rot
+Mind Sculpt
 Mindshrieker
 Mindstatic
 Minotaur Aggressor
@@ -425,6 +436,7 @@ Niblis of the Urn
 Night Revelers
 Nightshade Peddler
 Oblivion Ring
+Obzedat, Ghost Council
 Olivia Voldaren
 One-Eyed Scarecrow
 Orchard Spirit
@@ -449,6 +461,7 @@ Predator's Gambit
 Primal Huntbeast
 Primordial Hydra
 Prized Elephant
+Progenitor Mimic
 Psychic Strike
 Putrefy
 Quirion Dryad
@@ -571,6 +584,7 @@ Steam Vents
 Steeple Roc
 Stensia Bloodhall
 Stitcher's Apprentice
+Stolen Identity
 Stomping Ground
 Stonefare Crocodile
 Stormbound Geist

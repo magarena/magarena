@@ -58,6 +58,7 @@ Arctic Aven
 Ardent Recruit
 Argent Sphinx
 Argentum Armor
+Arid Mesa
 Armada Wurm
 Armament Master
 Armored Ascension
@@ -74,6 +75,7 @@ Ashmouth Hound
 Assassinate
 Assault Griffin
 Assault Strobe
+Assemble the Legion
 Attended Knight
 Auramancer
 Auriok Edgewright
@@ -133,6 +135,7 @@ Bladetusk Boar
 Bleak Coven Vampires
 Blighted Agent
 Blight Mamba
+Blightsteel Colossus
 Blightwidow
 Blinding Mage
 Blind Obedience
@@ -148,6 +151,7 @@ Bloodgift Demon
 Bloodhusk Ritualist
 Blood Ogre
 Bloodrage Vampire
+Blood Reckoning
 Blood Seeker
 Bloodshot Trainee
 Bloodthrone Vampire
@@ -165,6 +169,7 @@ Bonehoard
 Bone to Ash
 Boneyard Wurm
 Bonfire of the Damned
+Borderland Ranger
 Boros Elite
 Boros Guildgate
 Boros Mastiff
@@ -236,6 +241,7 @@ Cliff Threader
 Clifftop Retreat
 Clinging Anemones
 Clinging Mists
+Clone
 Cloud Crusader
 Cloud Elemental
 Cloudfin Raptor
@@ -266,6 +272,7 @@ Counterflux
 Coursers' Accord
 Craterhoof Behemoth
 Craterize
+Creeping Corrosion
 Creeping Tar Pit
 Crimson Mage
 Crimson Muckwader
@@ -306,6 +313,7 @@ Deathless Angel
 Deathmark
 Death's Caress
 Death Wind
+Deceiver Exarch
 Defang
 Defensive Stance
 Defy Death
@@ -402,7 +410,9 @@ Essence Drain
 Essence Harvest
 Essence Scatter
 Etched Champion
+Ethereal Armor
 Evernight Shade
+Evil Twin
 Executioner's Hood
 Experiment One
 Explore
@@ -420,6 +430,7 @@ Falkenrath Noble
 Falkenrath Torturer
 Farbog Boneflinger
 Farbog Explorer
+Farseek
 Fatal Fumes
 Favorable Winds
 Favor of the Woods
@@ -449,6 +460,7 @@ Flesh-Eater Imp
 Flight
 Flinthoof Boar
 Fog
+Fog Bank
 Forest
 Forge Devil
 Fortress Crab
@@ -582,6 +594,7 @@ Hallowed Fountain
 Halt Order
 Hamlet Captain
 Hand of the Praetors
+Hands of Binding
 Hanweir Lancer
 Harbor Bandit
 Harrowing Journey
@@ -762,6 +775,7 @@ Mark of the Vampire
 Markov Blademaster
 Markov Patrician
 Marsh Casualties
+Marsh Flats
 Marsh Threader
 Martial Law
 Mask of Avacyn
@@ -788,14 +802,17 @@ Midnight Haunting
 Mighty Leap
 Mikaeus, the Lunarch
 Mikaeus, the Unhallowed
+Millennial Gargoyle
 Mind Control
 Mind Rot
+Mind Sculpt
 Mindshrieker
 Mindstatic
 Minotaur Aggressor
 Mirran Crusader
 Mirrorworks
 Mist Raven
+Misty Rainforest
 Mitotic Slime
 Mizzium Mortars
 Mizzium Skin
@@ -864,6 +881,7 @@ Novablast Wurm
 Null Champion
 Oblivion Ring
 Obstinate Baloth
+Obzedat, Ghost Council
 Oculus
 Ogre Menial
 Ogre Resister
@@ -871,6 +889,7 @@ Ogre's Cleaver
 Ogre Sentry
 Olivia Voldaren
 Ondu Cleric
+Ondu Giant
 One-Eyed Scarecrow
 Onyx Mage
 Oran-Rief Survivalist
@@ -894,6 +913,8 @@ Peregrine Griffin
 Perilous Myr
 Perilous Shadow
 Perimeter Captain
+Pestilence Demon
+Phantasmal Image
 Phyresis
 Phyrexian Crusader
 Phyrexian Digester
@@ -918,10 +939,12 @@ Predator's Gambit
 Pride Guardian
 Priests of Norn
 Primal Huntbeast
+Primeval Titan
 Primordial Hydra
 Pristine Talisman
 Prized Elephant
 Prodigal Pyromancer
+Progenitor Mimic
 Psychic Barrier
 Psychic Strike
 Putrefax
@@ -948,6 +971,7 @@ Rakdos's Return
 Rakish Heir
 Rally the Forces
 Rampaging Baloths
+Rampant Growth
 Rancor
 Rapacious One
 Ratchet Bomb
@@ -999,6 +1023,7 @@ Runewing
 Rush of Blood
 Russet Wolves
 Rusted Sentinel
+Rusted Slasher
 Ruthless Cullblade
 Saberclaw Golem
 Sacred Foundry
@@ -1008,6 +1033,7 @@ Sanctuary Cat
 Sangromancer
 Scab-Clan Charger
 Scalding Devil
+Scalding Tarn
 Scorch the Fields
 Scorchwalker
 Scoria Elemental
@@ -1150,6 +1176,7 @@ Steppe Lynx
 Stingerfling Spider
 Stirring Wildwood
 Stitcher's Apprentice
+Stolen Identity
 Stomper Cub
 Stomping Ground
 Stonefare Crocodile
@@ -1226,6 +1253,7 @@ Tine Shrike
 Tireless Missionaries
 Titanic Growth
 Tithe Drinker
+Tome Scour
 Torch Fiend
 Tormented Soul
 Tormentor's Trident
@@ -1296,6 +1324,7 @@ Vector Asp
 Vedalken Certarch
 Vengeful Vampire
 Venser, the Sojourner
+Verdant Catacombs
 Vessel of Endless Rest
 Veteran's Reflexes
 Vexing Devil

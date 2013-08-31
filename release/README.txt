@@ -91,7 +91,32 @@ Mike
 - fixed: Wilt-Leaf Liege enters the battlefield when milled
 
 - added the following cards:
-
+Accursed Spirit, Ajani's Chosen, Altar of Dementia, Anvil of Bogardan,
+Ardent Plea, Argothian Enchantress, Arid Mesa, Assemble the Legion,
+Battlegate Mimic, Battle Sliver, Blightsteel Colossus, Blood Reckoning,
+Bloodshot Cyclops, Blur Sliver, Bonescythe Sliver, Borderland Ranger,
+Captured Sunlight, Civic Wayfinder, Clone, Creeping Corrosion,
+Darksteel Colossus, Dawnstrike Paladin, Deathgaze Cockatrice, Deceiver Exarch,
+Deny Reality, Elvish Mystic, Enchantress's Presence, Enlisted Wurm,
+Ethereal Armor, Etherium-Horn Sorcerer, Evil Twin, Fable of Wolf and Owl,
+Farhaven Elf, Farseek, Fiendslayer Paladin, Flooded Strand, Fog Bank,
+Fury Sliver, Galerider Sliver, Gemhide Sliver, Groundshaker Sliver,
+Hands of Binding, Horizon Canopy, Kalonian Tusker, Kathari Remnant,
+Manaweft Sliver, Marsh Flats, Master Transmuter, Megantic Sliver,
+Millennial Gargoyle, Mind Sculpt, Minotaur Abomination, Misty Rainforest,
+Mulldrifter, Necrogen Mists, Nether Void, Nightsky Mimic,
+Obzedat, Ghost Council, Ondu Giant, Path to Exile, Perilous Forays,
+Pestermite, Pestilence Demon, Phantasmal Image, Polluted Delta,
+Predatory Sliver, Primeval Titan, Primordial Sage, Progenitor Mimic,
+Progenitus, Rampant Growth, Regal Force, Regathan Firecat, Reminisce,
+Riverfall Mimic, Rumbling Baloth, Rusted Slasher, Scalding Tarn,
+Scourge of the Nobilis, Seacoast Drake, Sentinel Sliver, Shorecrasher Mimic,
+Sliver Construct, Spell Snare, Spidersilk Armor, Spitting Sliver,
+Starlit Sanctum, Steelform Sliver, Stolen Identity, Striking Sliver,
+Sylvan Scrying, Syphon Sliver, Talon Sliver, Thorncaster Sliver,
+Thorn Elemental, Tome Scour, Undead Minotaur, Verdant Catacombs,
+Vinelasher Kudzu, Windswept Heath, Wirewood Savage, Wooded Foothills,
+Woodlurker Mimic, Young Pyromancer
 
 Release 1.40 (July 27, 2013)
 ============
