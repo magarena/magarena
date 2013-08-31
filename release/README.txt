@@ -43,8 +43,9 @@ Thanks to
   missalexis for creating an application bundle to improve Mac installation
   goonjamin for contributing a patch that makes Magarena easier to use on touchscreens
   PhazedOut, Aunukia, nado18, Erkcan Özcan, kdesmond, a. benedict balbuena,
-  spartan vi, Braullynn, mecheng, pcastellazzi, rasdel, and Tyrael for implementing new cards
-  everyone on the CCGHQ forum (http://slightlymagic.net/forum/)
+  spartan vi, Braullynn, mecheng, pcastellazzi, rasdel, Tyrael, hong yie,
+  ember hauler, Hector Marin, drooone, jericho.pumpkin, and Mike for implementing new cards
+  everyone on the CCGHQ forum, http://slightlymagic.net/forum/
 
 Thank you for your support and have fun!
 
@@ -64,13 +65,15 @@ jericho.pumpkin
 melvin
 Mike
 
+- given_ability property now supportes all abilities
+  Note that both ability and given_ability property now separate abilities by
+  ';' instead of ','
+
 - added the following to the ability property in card script:
   * evoke <mana cost>
   * lord <affected permanents> have/has <abilities>
   * lord <affected permanents> get <power/toughness>
   * library instead of graveyard
-
-- given_ability property now supportes all abilities
 
 - added support for the following in groovy script:
   * Clone mechanic
@@ -79,7 +82,7 @@ Mike
   * search from library and put onto the battlefield
   * search from library and put into hand
 
-- improved busy spinning icon and cannot tap icon
+- improved busy spinning icon and summoning sickness icon
 
 - fixed: only one instance of permanent can have its activated ability activated
 - fixed: when life is lost trigger not triggering
