@@ -1,0 +1,12 @@
+name=Archdemon of Unx
+url=http://magiccards.info/ala/en/64.html
+image=http://magiccards.info/scans/en/ala/64.jpg
+value=3.000
+rarity=R
+type=Creature
+subtype=Demon
+cost={5}{B}{B}
+pt=6/6
+ability=flying;trample
+timing=main
+requires_groovy_code
