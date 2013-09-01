@@ -30,6 +30,7 @@ class TestSearch extends TestGameBuilder {
         addToLibrary(P, "Island", 20);
         addToLibrary(P, "Bayou", 1);
         addToLibrary(P, "Badlands", 1);
+        addToLibrary(P, "Goblin King", 1);
         createPermanent(game,P,"Rupture Spire",false,9);
         createPermanent(game,P, "Grizzly Bears", false, 2);
         addToHand(P, "Misty Rainforest", 1);
@@ -41,6 +42,7 @@ class TestSearch extends TestGameBuilder {
         addToHand(P, "Sylvan Scrying", 2);
         addToHand(P, "Perilous Forays", 1);
         addToHand(P, "Primeval Titan", 1);
+        addToHand(P, "Goblin Matron", 1);
 
         P = opponent;
 
