@@ -1,0 +1,13 @@
+name=Balthor the Stout
+url=http://magiccards.info/tr/en/91.html
+image=http://magiccards.info/scans/en/tr/91.jpg
+value=4.238
+rarity=R
+type=Legendary,Creature
+subtype=Dwarf,Barbarian
+cost={1}{R}{R}
+pt=2/2
+ability=lord other barbarian creatures get +1/+1
+static=all
+timing=main
+requires_groovy_code
