@@ -24,7 +24,7 @@ public class MagicSearchIntoHandEvent extends MagicEvent {
             player,
             choice,
             EventAction,
-            "Selected card$."
+            ""
         );
     }
 
@@ -35,6 +35,7 @@ public class MagicSearchIntoHandEvent extends MagicEvent {
             if (event.isNo() == false) {
                 event.processTargetCard(game, new MagicCardAction() {
                     public void doAction(final MagicCard card) {
+                        game.logAppendMessage(event.getPlayer(), "Found " + card + ".");
                         game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
                         game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.OwnersHand));
                         game.doAction(new MagicShuffleLibraryAction(event.getPlayer()));
