@@ -33,197 +33,107 @@ public class MagicTargetChoice extends MagicChoice {
             }
         };
 
-    public static final MagicTargetChoice TARGET_SPELL = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_SPELL,
-        MagicTargetHint.None,
-        "target spell"
-    );
+    public static final MagicTargetChoice TARGET_SPELL = 
+        new MagicTargetChoice("target spell");
     
-    public static final MagicTargetChoice TARGET_SPELL_YOU_DONT_CONTROL = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_SPELL_YOU_DONT_CONTROL,
-        MagicTargetHint.None,
-        "target spell you don't control"
-    );
+    public static final MagicTargetChoice TARGET_SPELL_YOU_DONT_CONTROL = 
+        new MagicTargetChoice("target spell you don't control");
     
-    public static final MagicTargetChoice TARGET_SPELL_WITH_CMC_EQ_2 = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_SPELL_WITH_CMC_EQ_2,
-        MagicTargetHint.None,
-        "target spell with converted mana cost 2"
-    );
+    public static final MagicTargetChoice TARGET_SPELL_WITH_CMC_EQ_2 = 
+        new MagicTargetChoice("target spell with converted mana cost 2");
     
-    public static final MagicTargetChoice NEG_TARGET_SPELL = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_SPELL,
-        MagicTargetHint.Negative,
-        "target spell"
-    );
+    public static final MagicTargetChoice NEG_TARGET_SPELL = 
+        MagicTargetChoice.Negative("target spell");
 
-    public static final MagicTargetChoice NEG_TARGET_SPELL_THAT_TARGETS_PLAYER = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_SPELL_THAT_TARGETS_PLAYER,
-        MagicTargetHint.Negative,
-        "target spell that targets a player"
-    );
+    public static final MagicTargetChoice NEG_TARGET_SPELL_THAT_TARGETS_PLAYER = 
+        MagicTargetChoice.Negative("target spell that targets a player");
 
-    public static final MagicTargetChoice NEG_TARGET_SPELL_WITH_X_COST = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_SPELL_WITH_X_COST,
-        MagicTargetHint.Negative,
-        "target spell with {X} in its mana cost"
-    );
+    public static final MagicTargetChoice NEG_TARGET_SPELL_WITH_X_COST = 
+        MagicTargetChoice.Negative("target spell with {X} in its mana cost");
 
-    public static final MagicTargetChoice NEG_TARGET_RED_GREEN_SPELL = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_RED_GREEN_SPELL,
-        MagicTargetHint.Negative,
-        "target red or green spell"
-    );
+    public static final MagicTargetChoice NEG_TARGET_RED_GREEN_SPELL = 
+        MagicTargetChoice.Negative("target red or green spell");
 
-    public static final MagicTargetChoice NEG_TARGET_CREATURE_SPELL = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_CREATURE_SPELL,
-        MagicTargetHint.Negative,
-        "target creature spell"
-    );
+    public static final MagicTargetChoice NEG_TARGET_CREATURE_SPELL = 
+        MagicTargetChoice.Negative("target creature spell");
 
-    public static final MagicTargetChoice NEG_TARGET_NONCREATURE_SPELL = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_NONCREATURE_SPELL,
-        MagicTargetHint.Negative,
-        "target noncreature spell"
-    );
+    public static final MagicTargetChoice NEG_TARGET_NONCREATURE_SPELL = 
+        MagicTargetChoice.Negative("target noncreature spell");
 
-    public static final MagicTargetChoice TARGET_INSTANT_OR_SORCERY_SPELL = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_INSTANT_OR_SORCERY_SPELL,
-        MagicTargetHint.None,
-        "target instant or sorcery spell"
-    );
+    public static final MagicTargetChoice TARGET_INSTANT_OR_SORCERY_SPELL = 
+        new MagicTargetChoice("target instant or sorcery spell");
 
-    public static final MagicTargetChoice NEG_TARGET_INSTANT_OR_SORCERY_SPELL = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_INSTANT_OR_SORCERY_SPELL,
-        MagicTargetHint.Negative,
-        "target instant or sorcery spell"
-    );
+    public static final MagicTargetChoice NEG_TARGET_INSTANT_OR_SORCERY_SPELL = 
+        MagicTargetChoice.Negative("target instant or sorcery spell");
 
-    public static final MagicTargetChoice TARGET_INSTANT_SPELL = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_INSTANT_SPELL,
-        MagicTargetHint.None,
-        "target instant spell"
-    );
+    public static final MagicTargetChoice TARGET_INSTANT_SPELL = 
+        new MagicTargetChoice("target instant spell");
 
-    public static final MagicTargetChoice NEG_TARGET_INSTANT_SPELL = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_INSTANT_SPELL,
-        MagicTargetHint.Negative,
-        "target instant spell"
-    );
+    public static final MagicTargetChoice NEG_TARGET_INSTANT_SPELL = 
+        MagicTargetChoice.Negative("target instant spell");
 
-    public static final MagicTargetChoice NEG_TARGET_ARTIFACT_SPELL = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_ARTIFACT_SPELL,
-        MagicTargetHint.Negative,
-        "target artifact spell"
-    );
+    public static final MagicTargetChoice NEG_TARGET_ARTIFACT_SPELL = 
+        MagicTargetChoice.Negative("target artifact spell");
 
-    public static final MagicTargetChoice TARGET_PLAYER = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_PLAYER,
-        "target player"
-    );
+    public static final MagicTargetChoice TARGET_PLAYER = 
+        new MagicTargetChoice("target player");
     
-    public static final MagicTargetChoice TARGET_OPPONENT = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_OPPONENT,
-        "target opponent"
-    );
+    public static final MagicTargetChoice TARGET_OPPONENT = 
+        new MagicTargetChoice("target opponent");
     
-    public static final MagicTargetChoice POS_TARGET_PLAYER = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_PLAYER,
-        MagicTargetHint.Positive,
-        "target player"
-    );
+    public static final MagicTargetChoice POS_TARGET_PLAYER = 
+        MagicTargetChoice.Positive("target player");
     
-    public static final MagicTargetChoice NEG_TARGET_PLAYER = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_PLAYER,
-        MagicTargetHint.Negative,
-        "target player"
-    );
+    public static final MagicTargetChoice NEG_TARGET_PLAYER = 
+        MagicTargetChoice.Negative("target player");
     
-    public static final MagicTargetChoice NEG_TARGET_SPELL_OR_PERMANENT = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_SPELL_OR_PERMANENT,
-        MagicTargetHint.Negative,
-        "target spell or permanent"
-    );
+    public static final MagicTargetChoice NEG_TARGET_SPELL_OR_PERMANENT = 
+        MagicTargetChoice.Negative("target spell or permanent");
     
-    public static final MagicTargetChoice TARGET_PERMANENT = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_PERMANENT,
-        "target permanent"
-    );
+    public static final MagicTargetChoice TARGET_PERMANENT = 
+        new MagicTargetChoice("target permanent");
     
-    public static final MagicTargetChoice PERMANENT_YOU_CONTROL = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_PERMANENT_YOU_CONTROL,
-        "a permanent you control"
-    );
+    public static final MagicTargetChoice PERMANENT_YOU_CONTROL = 
+        new MagicTargetChoice("a permanent you control");
 
-    public static final MagicTargetChoice TARGET_PERMANENT_YOU_CONTROL = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_PERMANENT_YOU_CONTROL,
-        "target permanent you control"
-    );
+    public static final MagicTargetChoice TARGET_PERMANENT_YOU_CONTROL = 
+        new MagicTargetChoice("target permanent you control");
     
-    public static final MagicTargetChoice TARGET_PERMANENT_AN_OPPONENT_CONTROLS = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_PERMANENT_AN_OPPONENT_CONTROLS,
-        "target permanent an opponent controls"
-    );
+    public static final MagicTargetChoice TARGET_PERMANENT_AN_OPPONENT_CONTROLS = 
+        new MagicTargetChoice("target permanent an opponent controls");
     
-    public static final MagicTargetChoice TARGET_PERMANENT_YOU_OWN = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_PERMANENT_YOU_OWN,
-        "target permanent you own"
-    );
+    public static final MagicTargetChoice TARGET_PERMANENT_YOU_OWN = 
+        new MagicTargetChoice("target permanent you own");
 
-    public static final MagicTargetChoice NEG_TARGET_PERMANENT = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_PERMANENT,
-        MagicTargetHint.Negative,
-        "target permanent"
-    );
+    public static final MagicTargetChoice NEG_TARGET_PERMANENT = 
+        MagicTargetChoice.Negative("target permanent");
     
-    public static final MagicTargetChoice POS_TARGET_PERMANENT = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_PERMANENT,
-        MagicTargetHint.Positive,
-        "target permanent"
-    );
+    public static final MagicTargetChoice POS_TARGET_PERMANENT =  
+        MagicTargetChoice.Positive("target permanent");
     
-    public static final MagicTargetChoice TARGET_BLACK_PERMANENT = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_BLACK_PERMANENT,
-        "target black permanent"
-    );
+    public static final MagicTargetChoice TARGET_BLACK_PERMANENT = 
+        new MagicTargetChoice("target black permanent");
     
-    public static final MagicTargetChoice NEG_TARGET_BLACK_RED_PERMANENT = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_BLACK_RED_PERMANENT,
-        MagicTargetHint.Negative,
-        "target black or red permanent"
-    );
+    public static final MagicTargetChoice NEG_TARGET_BLACK_RED_PERMANENT = 
+        MagicTargetChoice.Negative("target black or red permanent");
 
-    public static final MagicTargetChoice TARGET_NONBASIC_LAND = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_NONBASIC_LAND,
-        "target non basic land"
-    );
+    public static final MagicTargetChoice TARGET_NONBASIC_LAND = 
+        new MagicTargetChoice("target non basic land");
     
-    public static final MagicTargetChoice NEG_TARGET_NONBASIC_LAND = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_NONBASIC_LAND,
-        MagicTargetHint.Negative,
-        "target non basic land"
-    );
+    public static final MagicTargetChoice NEG_TARGET_NONBASIC_LAND = 
+        MagicTargetChoice.Negative("target non basic land");
     
     public static final MagicTargetChoice TARGET_LAND = 
         new MagicTargetChoice("target land");
     
-    public static final MagicTargetChoice NEG_TARGET_LAND = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_LAND,
-        MagicTargetHint.Negative,
-        "target land"
-    );
+    public static final MagicTargetChoice NEG_TARGET_LAND = 
+        MagicTargetChoice.Negative("target land");
     
-    public static final MagicTargetChoice NEG_TARGET_LAND_OR_NONBLACK_CREATURE = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_LAND_OR_NONBLACK_CREATURE,
-        MagicTargetHint.Negative,
-        "target land or nonblack creature"
-    );
+    public static final MagicTargetChoice NEG_TARGET_LAND_OR_NONBLACK_CREATURE = 
+        MagicTargetChoice.Negative("target land or nonblack creature");
     
-    public static final MagicTargetChoice POS_TARGET_LAND = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_LAND,
-        MagicTargetHint.Positive,
-        "target land"
-    );
+    public static final MagicTargetChoice POS_TARGET_LAND = 
+        MagicTargetChoice.Positive("target land");
 
     public static final MagicTargetChoice TARGET_NONLAND_PERMANENT = 
         new MagicTargetChoice("target nonland permanent");
@@ -234,17 +144,11 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice TARGET_NONLAND_PERMANENT_YOU_DONT_CONTROL =
         new MagicTargetChoice("target nonland permanent you don't control");
 
-    public static final MagicTargetChoice NEG_TARGET_NONLAND_PERMANENT = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_NONLAND_PERMANENT,
-        MagicTargetHint.Negative,
-        "target nonland permanent"
-    );
+    public static final MagicTargetChoice NEG_TARGET_NONLAND_PERMANENT = 
+        MagicTargetChoice.Negative("target nonland permanent");
     
-    public static final MagicTargetChoice NEG_TARGET_NONLAND_PERMANENT_CMC_LEQ_3 = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_NONLAND_PERMANENT_CMC_LEQ_3,
-        MagicTargetHint.Negative,
-        "target nonland permanent with converted mana cost 3 or less"
-    );
+    public static final MagicTargetChoice NEG_TARGET_NONLAND_PERMANENT_CMC_LEQ_3 = 
+        MagicTargetChoice.Negative("target nonland permanent with converted mana cost 3 or less");
 
     public static final MagicTargetChoice ARTIFACT_YOU_CONTROL = 
         new MagicTargetChoice("an artifact you control");
@@ -255,168 +159,95 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice TARGET_ARTIFACT =
         new MagicTargetChoice("target artifact");
 
-    public static final MagicTargetChoice NEG_TARGET_ARTIFACT = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_ARTIFACT,
-        MagicTargetHint.Negative,
-        "target artifact"
-    );
+    public static final MagicTargetChoice NEG_TARGET_ARTIFACT = 
+        MagicTargetChoice.Negative("target artifact");
 
-    public static final MagicTargetChoice POS_TARGET_ARTIFACT = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_ARTIFACT,
-        MagicTargetHint.Positive,
-        "target artifact"
-    );
+    public static final MagicTargetChoice POS_TARGET_ARTIFACT = 
+        MagicTargetChoice.Positive("target artifact");
 
     public static final MagicTargetChoice TARGET_NONCREATURE_ARTIFACT = 
         new MagicTargetChoice("target noncreature artifact");
 
-    public static final MagicTargetChoice POS_TARGET_NONCREATURE_ARTIFACT = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_NONCREATURE_ARTIFACT,
-        MagicTargetHint.Positive,
-        "target noncreature artifact"
-    );
+    public static final MagicTargetChoice POS_TARGET_NONCREATURE_ARTIFACT = 
+        MagicTargetChoice.Positive("target noncreature artifact");
 
     public static final MagicTargetChoice TARGET_ARTIFACT_OR_ENCHANTMENT = 
         new MagicTargetChoice("target artifact or enchantment");
 
-    public static final MagicTargetChoice NEG_TARGET_ARTIFACT_OR_ENCHANTMENT = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_ARTIFACT_OR_ENCHANTMENT,
-        MagicTargetHint.Negative,
-        "target artifact or enchantment"
-    );
+    public static final MagicTargetChoice NEG_TARGET_ARTIFACT_OR_ENCHANTMENT = 
+        MagicTargetChoice.Negative("target artifact or enchantment");
 
-    public static final MagicTargetChoice NEG_TARGET_ARTIFACT_OR_LAND = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_ARTIFACT_OR_LAND,
-        MagicTargetHint.Negative,
-        "target artifact or land"
-    );
+    public static final MagicTargetChoice NEG_TARGET_ARTIFACT_OR_LAND = 
+        MagicTargetChoice.Negative("target artifact or land");
     
     public static final MagicTargetChoice TARGET_ARTIFACT_OR_CREATURE = 
         new MagicTargetChoice("target artifact or creature");
 
-    public static final MagicTargetChoice NEG_TARGET_ARTIFACT_OR_CREATURE = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_ARTIFACT_OR_CREATURE,
-        MagicTargetHint.Negative,
-        "target artifact or creature"
-    );
+    public static final MagicTargetChoice NEG_TARGET_ARTIFACT_OR_CREATURE = 
+        MagicTargetChoice.Negative("target artifact or creature");
 
-    public static final MagicTargetChoice NEG_TARGET_ARTIFACT_OR_CREATURE_OR_LAND = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_ARTIFACT_OR_CREATURE_OR_LAND,
-        MagicTargetHint.Negative,
-        "target artifact, creature or land"
-    );
+    public static final MagicTargetChoice NEG_TARGET_ARTIFACT_OR_CREATURE_OR_LAND = 
+        MagicTargetChoice.Negative("target artifact, creature, or land");
     
-    public static final MagicTargetChoice TARGET_ARTIFACT_OR_ENCHANTMENT_YOUR_OPPONENT_CONTROLS = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_ARTIFACT_OR_ENCHANTMENT_YOUR_OPPONENT_CONTROLS,
-        "target artifact or enchantment your opponent controls"
-    );
+    public static final MagicTargetChoice TARGET_ARTIFACT_OR_ENCHANTMENT_YOUR_OPPONENT_CONTROLS = 
+        new MagicTargetChoice("target artifact or enchantment your opponents control");
     
-    public static final MagicTargetChoice TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND,
-        "target artifact, enchantment or land"
-    );
+    public static final MagicTargetChoice TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND = 
+        new MagicTargetChoice("target artifact, enchantment, or land");
     
-    public static final MagicTargetChoice NEG_TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND,
-        MagicTargetHint.Negative,
-        "target artifact, enchantment or land"
-    );
+    public static final MagicTargetChoice NEG_TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND = 
+        MagicTargetChoice.Negative("target artifact, enchantment, or land");
     
-    public static final MagicTargetChoice POS_TARGET_ARTIFACT_CREATURE = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_ARTIFACT_CREATURE,
-        MagicTargetHint.Positive,
-        "target artifact creature"
-    );
+    public static final MagicTargetChoice POS_TARGET_ARTIFACT_CREATURE = 
+        MagicTargetChoice.Positive("target artifact creature");
     
-    public static final MagicTargetChoice TARGET_ENCHANTMENT = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_ENCHANTMENT,
-        "target enchantment"
-    );
+    public static final MagicTargetChoice TARGET_ENCHANTMENT = 
+        new MagicTargetChoice("target enchantment");
     
-    public static final MagicTargetChoice TARGET_ENCHANTMENT_YOU_CONTROL = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_ENCHANTMENT_YOU_CONTROL,
-        "target enchantment you control"
-    );
+    public static final MagicTargetChoice TARGET_ENCHANTMENT_YOU_CONTROL = 
+        new MagicTargetChoice("target enchantment you control");
     
-    public static final MagicTargetChoice TARGET_ENCHANTMENT_YOUR_OPPONENT_CONTROLS = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_ENCHANTMENT_YOUR_OPPONENT_CONTROLS,
-        "target enchantment your opponent controls"
-    );
+    public static final MagicTargetChoice TARGET_ENCHANTMENT_YOUR_OPPONENT_CONTROLS = 
+        new MagicTargetChoice("target enchantment your opponents control");
     
-    public static final MagicTargetChoice NEG_TARGET_ENCHANTMENT = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_ENCHANTMENT,
-        MagicTargetHint.Negative,
-        "target enchantment"
-    );
+    public static final MagicTargetChoice NEG_TARGET_ENCHANTMENT = 
+        MagicTargetChoice.Negative("target enchantment");
     
-    public static final MagicTargetChoice POS_TARGET_ENCHANTMENT = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_ENCHANTMENT,
-        MagicTargetHint.Positive,
-        "target enchantment"
-    );
+    public static final MagicTargetChoice POS_TARGET_ENCHANTMENT = 
+        MagicTargetChoice.Positive("target enchantment");
     
-    public static final MagicTargetChoice NEG_TARGET_SPIRIT_OR_ENCHANTMENT = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_SPIRIT_OR_ENCHANTMENT,
-        MagicTargetHint.Negative,
-        "target Spirit or enchantment"
-    );
+    public static final MagicTargetChoice NEG_TARGET_SPIRIT_OR_ENCHANTMENT = 
+        MagicTargetChoice.Negative("target Spirit or enchantment");
     
-    public static final MagicTargetChoice NEG_TARGET_EQUIPMENT = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_EQUIPMENT,
-        MagicTargetHint.Negative,
-        "target Equipment"
-    );
+    public static final MagicTargetChoice NEG_TARGET_EQUIPMENT = 
+        MagicTargetChoice.Negative("target Equipment");
     
     public static final MagicTargetChoice TARGET_CREATURE = 
         new MagicTargetChoice("target creature");
     
-    public static final MagicTargetChoice NEG_TARGET_CREATURE = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_CREATURE,
-        MagicTargetHint.Negative,
-        "target creature"
-    );
+    public static final MagicTargetChoice NEG_TARGET_CREATURE = 
+        MagicTargetChoice.Negative("target creature");
     
-    public static final MagicTargetChoice POS_TARGET_CREATURE = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_CREATURE,
-        MagicTargetHint.Positive,
-        "target creature"
-    );
+    public static final MagicTargetChoice POS_TARGET_CREATURE = 
+        MagicTargetChoice.Positive("target creature");
     
-    public static final MagicTargetChoice POS_TARGET_1_1_CREATURE = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_1_1_CREATURE,
-        MagicTargetHint.Positive,
-        "target 1/1 creature"
-    );
+    public static final MagicTargetChoice POS_TARGET_1_1_CREATURE = 
+        MagicTargetChoice.Positive("target 1/1 creature");
     
-    public static final MagicTargetChoice POS_TARGET_BLINKMOTH_CREATURE = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_BLINKMOTH_CREATURE,
-        MagicTargetHint.Positive,
-        "target Blinkmoth creature"
-    );
+    public static final MagicTargetChoice POS_TARGET_BLINKMOTH_CREATURE = 
+        MagicTargetChoice.Positive("target Blinkmoth creature");
     
-    public static final MagicTargetChoice TARGET_NONCREATURE = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_NONCREATURE,
-        MagicTargetHint.None,
-        "target noncreature"
-    );
+    public static final MagicTargetChoice TARGET_NONCREATURE = 
+        new MagicTargetChoice("target noncreature");
 
-    public static final MagicTargetChoice NEG_TARGET_NONCREATURE = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_NONCREATURE,
-        MagicTargetHint.Negative,
-        "target noncreature"
-    );
+    public static final MagicTargetChoice NEG_TARGET_NONCREATURE = 
+        MagicTargetChoice.Negative("target noncreature");
 
-    public static final MagicTargetChoice NEG_TARGET_NONBLACK_CREATURE = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_NONBLACK_CREATURE,
-        MagicTargetHint.Negative,
-        "target nonblack creature"
-    );
+    public static final MagicTargetChoice NEG_TARGET_NONBLACK_CREATURE = 
+        MagicTargetChoice.Negative("target nonblack creature");
 
-    public static final MagicTargetChoice POS_TARGET_NONBLACK_CREATURE = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_NONBLACK_CREATURE,
-        MagicTargetHint.Positive,
-        "target nonblack creature"
-    );
+    public static final MagicTargetChoice POS_TARGET_NONBLACK_CREATURE = 
+        MagicTargetChoice.Positive("target nonblack creature");
     
     public static final MagicTargetChoice NEG_TARGET_NONARTIFACT_CREATURE = new MagicTargetChoice(
         MagicTargetFilter.TARGET_NONARTIFACT_CREATURE,
@@ -723,10 +554,8 @@ public class MagicTargetChoice extends MagicChoice {
         "target Human creature"
     );
 
-    public static final MagicTargetChoice TARGET_NON_ANGEL_CREATURE_YOU_CONTROL = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_NON_ANGEL_CREATURE_YOU_CONTROL,
-        "target non-Angel creature you control"
-    );
+    public static final MagicTargetChoice TARGET_NON_ANGEL_CREATURE_YOU_CONTROL = 
+        new MagicTargetChoice("target non-Angel creature you control");
 
     public static final MagicTargetChoice SACRIFICE_PERMANENT = 
         new MagicTargetChoice("a permanent to sacrifice");
@@ -1034,11 +863,23 @@ public class MagicTargetChoice extends MagicChoice {
     private final boolean targeted;
     private final MagicTargetHint targetHint;
     
+    public static MagicTargetChoice Positive(final String aTargetDescription) {
+        return new MagicTargetChoice(MagicTargetHint.Positive, aTargetDescription);
+    }
+    
+    public static MagicTargetChoice Negative(final String aTargetDescription) {
+        return new MagicTargetChoice(MagicTargetHint.Negative, aTargetDescription);
+    }
+    
     public MagicTargetChoice(final String aTargetDescription) {
+        this(MagicTargetHint.None, aTargetDescription);
+    }
+    
+    public MagicTargetChoice(final MagicTargetHint aTargetHint, final String aTargetDescription) {
         super("Choose " + aTargetDescription + '.');
         targetFilter = MagicTargetFilterFactory.single(aTargetDescription);
         targeted     = aTargetDescription.contains("target");
-        targetHint   = MagicTargetHint.None;
+        targetHint   = aTargetHint;
         targetDescription = aTargetDescription;
     }
     
