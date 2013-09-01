@@ -977,18 +977,11 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }
     };
 
-    MagicCardFilterImpl TARGET_CREATURE_CARD_FROM_GRAVEYARD=new MagicCardFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            return target.getCardDefinition().isCreature();
-        }
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Graveyard;
-        }
-    };
+    MagicCardFilterImpl TARGET_CREATURE_CARD_FROM_GRAVEYARD = Factory.card(MagicTargetType.Graveyard, MagicType.Creature);
     
     MagicCardFilterImpl PAYABLE_CREATURE_CARD_FROM_GRAVEYARD=new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            return target.getCardDefinition().isCreature() && target.getCost().getCondition().accept(target);
+            return target.hasType(MagicType.Creature) && target.getCost().getCondition().accept(target);
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType==MagicTargetType.Graveyard;
@@ -997,9 +990,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     
     MagicCardFilterImpl TARGET_CREATURE_CARD_WITH_INFECT_FROM_GRAVEYARD = new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            final MagicCardDefinition cardDefinition = target.getCardDefinition();
-            return cardDefinition.isCreature() &&
-                   cardDefinition.hasAbility(MagicAbility.Infect);
+            return target.hasType(MagicType.Creature) && target.hasAbility(MagicAbility.Infect);
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType == MagicTargetType.Graveyard;
@@ -1031,66 +1022,21 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         3
     );
 
-    MagicCardFilterImpl TARGET_CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD=new MagicCardFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            return target.getCardDefinition().isCreature();
-        }
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.OpponentsGraveyard;
-        }
-    };
+    MagicCardFilterImpl TARGET_CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD = Factory.card(MagicTargetType.OpponentsGraveyard, MagicType.Creature);
 
-    MagicCardFilterImpl TARGET_INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD=new MagicCardFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            final MagicCardDefinition cardDefinition= target.getCardDefinition();
-            return cardDefinition.hasType(MagicType.Instant) ||
-                   cardDefinition.hasType(MagicType.Sorcery);
-        }
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Graveyard;
-        }
-    };
+    MagicCardFilterImpl TARGET_INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD = Factory.card(MagicTargetType.Graveyard, MagicType.Instant, MagicType.Sorcery);
 
-    MagicCardFilterImpl TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD=new MagicCardFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            final MagicCardDefinition cardDefinition= target.getCardDefinition();
-            return cardDefinition.hasType(MagicType.Instant)||cardDefinition.hasType(MagicType.Sorcery);
-        }
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.OpponentsGraveyard;
-        }
-    };
+    MagicCardFilterImpl TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD = Factory.card(MagicTargetType.OpponentsGraveyard, MagicType.Instant, MagicType.Sorcery);
 
-    MagicCardFilterImpl TARGET_ENCHANTMENT_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            return target.getCardDefinition().hasType(MagicType.Enchantment);
-        }
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Graveyard;
-        }
-    };
+    MagicCardFilterImpl TARGET_ENCHANTMENT_CARD_FROM_GRAVEYARD = Factory.card(MagicTargetType.Graveyard, MagicType.Enchantment);
 
-    MagicCardFilterImpl TARGET_ARTIFACT_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            return target.getCardDefinition().hasType(MagicType.Artifact);
-        }
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Graveyard;
-        }
-    };
+    MagicCardFilterImpl TARGET_ARTIFACT_CARD_FROM_GRAVEYARD = Factory.card(MagicTargetType.Graveyard, MagicType.Artifact);
     
-    MagicCardFilterImpl TARGET_ARTIFACT_CARD_FROM_HAND = new MagicCardFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            return target.getCardDefinition().hasType(MagicType.Artifact);
-        }
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Hand;
-        }
-    };
+    MagicCardFilterImpl TARGET_ARTIFACT_CARD_FROM_HAND = Factory.card(MagicTargetType.Hand, MagicType.Artifact);
 
     MagicCardFilterImpl TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS=new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            return target.getCardDefinition().isCreature();
+            return target.hasType(MagicType.Creature);
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType==MagicTargetType.Graveyard ||
@@ -1100,7 +1046,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
     MagicCardFilterImpl TARGET_ENCHANTMENT_CARD_FROM_ALL_GRAVEYARDS=new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            return target.getCardDefinition().isEnchantment();
+            return target.hasType(MagicType.Enchantment);
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType==MagicTargetType.Graveyard ||
@@ -1110,7 +1056,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
     MagicCardFilterImpl TARGET_INSTANT_CARD_FROM_ALL_GRAVEYARDS=new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            return target.getCardDefinition().isInstant();
+            return target.hasType(MagicType.Instant);
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType==MagicTargetType.Graveyard ||
@@ -1120,7 +1066,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
     MagicCardFilterImpl TARGET_SORCERY_CARD_FROM_ALL_GRAVEYARDS=new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            return target.getCardDefinition().isSorcery();
+            return target.hasType(MagicType.Sorcery);
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType==MagicTargetType.Graveyard ||
@@ -1130,7 +1076,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
     MagicCardFilterImpl TARGET_LAND_CARD_FROM_ALL_GRAVEYARDS=new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            return target.getCardDefinition().isLand();
+            return target.hasType(MagicType.Land);
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType==MagicTargetType.Graveyard ||
@@ -1140,8 +1086,8 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
     MagicCardFilterImpl TARGET_ARTIFACT_OR_CREATURE_CARD_FROM_ALL_GRAVEYARDS=new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            final MagicCardDefinition cardDefinition= target.getCardDefinition();
-            return cardDefinition.isCreature()||cardDefinition.isArtifact();
+            return target.hasType(MagicType.Creature) ||
+                   target.hasType(MagicType.Artifact);
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType==MagicTargetType.Graveyard ||
@@ -1149,41 +1095,13 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }
     };
 
-    MagicCardFilterImpl TARGET_GOBLIN_CARD_FROM_GRAVEYARD=new MagicCardFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            return target.getCardDefinition().hasSubType(MagicSubType.Goblin);
-        }
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Graveyard;
-        }
-    };
+    MagicCardFilterImpl TARGET_GOBLIN_CARD_FROM_GRAVEYARD = Factory.card(MagicTargetType.Graveyard, MagicSubType.Goblin);
     
-    MagicCardFilterImpl TARGET_ZOMBIE_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            return target.getCardDefinition().hasSubType(MagicSubType.Zombie);
-        }
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Graveyard;
-        }
-    };
+    MagicCardFilterImpl TARGET_ZOMBIE_CARD_FROM_GRAVEYARD = Factory.card(MagicTargetType.Graveyard, MagicSubType.Zombie);
 
-    MagicCardFilterImpl TARGET_SPIRIT_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            return target.getCardDefinition().hasSubType(MagicSubType.Spirit);
-        }
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Graveyard;
-        }
-    };
+    MagicCardFilterImpl TARGET_SPIRIT_CARD_FROM_GRAVEYARD = Factory.card(MagicTargetType.Graveyard, MagicSubType.Spirit);
 
-    MagicCardFilterImpl TARGET_HUMAN_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            return target.getCardDefinition().hasSubType(MagicSubType.Human);
-        }
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Graveyard;
-        }
-    };
+    MagicCardFilterImpl TARGET_HUMAN_CARD_FROM_GRAVEYARD = Factory.card(MagicTargetType.Graveyard, MagicSubType.Human);
 
     MagicCardFilterImpl TARGET_CARD_FROM_HAND = new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
@@ -1194,28 +1112,14 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }
     };
 
-    MagicCardFilterImpl TARGET_BLUE_CARD_FROM_HAND = new MagicCardFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            return target.hasColor(MagicColor.Blue);
-        }
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Hand;
-        }
-    };
+    MagicCardFilterImpl TARGET_BLUE_CARD_FROM_HAND = Factory.card(MagicTargetType.Hand, MagicColor.Blue);
 
-    MagicCardFilterImpl TARGET_CREATURE_CARD_FROM_HAND = new MagicCardFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            return target.getCardDefinition().isCreature();
-        }
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Hand;
-        }
-    };
+    MagicCardFilterImpl TARGET_CREATURE_CARD_FROM_HAND = Factory.card(MagicTargetType.Hand, MagicType.Creature);
 
     MagicCardFilterImpl TARGET_GREEN_CREATURE_CARD_FROM_HAND = new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            final MagicCardDefinition cardDefinition = target.getCardDefinition();
-            return cardDefinition.isCreature() && MagicColor.Green.hasColor(cardDefinition.getColorFlags());
+            return target.hasType(MagicType.Creature) &&
+                   target.hasColor(MagicColor.Green);
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType == MagicTargetType.Hand;
@@ -1224,11 +1128,8 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
     MagicCardFilterImpl TARGET_BLUE_OR_RED_CREATURE_CARD_FROM_HAND = new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            final MagicCardDefinition cardDefinition = target.getCardDefinition();
-            return cardDefinition.isCreature() && (
-                MagicColor.Blue.hasColor(cardDefinition.getColorFlags()) ||
-                MagicColor.Red.hasColor(cardDefinition.getColorFlags())
-            );
+            return target.hasType(MagicType.Creature) && 
+                   (target.hasColor(MagicColor.Blue) || target.hasColor(MagicColor.Red));
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType == MagicTargetType.Hand;
@@ -1249,8 +1150,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
     MagicCardFilterImpl TARGET_MULTICOLORED_CREATURE_CARD_FROM_HAND = new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            final MagicCardDefinition cardDefinition = target.getCardDefinition();
-            return cardDefinition.isCreature() && MagicColor.isMulti(target);
+            return target.hasType(MagicType.Creature) && MagicColor.isMulti(target);
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType == MagicTargetType.Hand;
@@ -1266,14 +1166,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }
     };
     
-    MagicCardFilterImpl TARGET_LAND_CARD_FROM_LIBRARY = new MagicCardFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            return target.hasType(MagicType.Land);
-        }
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Library;
-        }
-    };
+    MagicCardFilterImpl TARGET_LAND_CARD_FROM_LIBRARY = Factory.card(MagicTargetType.Library, MagicType.Land);
     
     MagicCardFilterImpl TARGET_BASIC_LAND_CARD_FROM_LIBRARY=new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
@@ -1310,54 +1203,40 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     };
     
     MagicCardFilterImpl TARGET_PLAINS_OR_ISLAND_CARD_FROM_LIBRARY =
-        Factory.land(MagicTargetType.Library, MagicSubType.Plains, MagicSubType.Island);
+        Factory.card(MagicTargetType.Library, MagicSubType.Plains, MagicSubType.Island);
     
     MagicCardFilterImpl TARGET_PLAINS_OR_SWAMP_CARD_FROM_LIBRARY =
-        Factory.land(MagicTargetType.Library, MagicSubType.Plains, MagicSubType.Swamp);
+        Factory.card(MagicTargetType.Library, MagicSubType.Plains, MagicSubType.Swamp);
     
     MagicCardFilterImpl TARGET_ISLAND_OR_SWAMP_CARD_FROM_LIBRARY =
-        Factory.land(MagicTargetType.Library, MagicSubType.Island, MagicSubType.Swamp);
+        Factory.card(MagicTargetType.Library, MagicSubType.Island, MagicSubType.Swamp);
     
     MagicCardFilterImpl TARGET_ISLAND_OR_MOUNTAIN_CARD_FROM_LIBRARY =
-        Factory.land(MagicTargetType.Library, MagicSubType.Island, MagicSubType.Mountain);
+        Factory.card(MagicTargetType.Library, MagicSubType.Island, MagicSubType.Mountain);
     
     MagicCardFilterImpl TARGET_SWAMP_OR_MOUNTAIN_CARD_FROM_LIBRARY =
-        Factory.land(MagicTargetType.Library, MagicSubType.Swamp, MagicSubType.Mountain);
+        Factory.card(MagicTargetType.Library, MagicSubType.Swamp, MagicSubType.Mountain);
     
     MagicCardFilterImpl TARGET_SWAMP_OR_FOREST_CARD_FROM_LIBRARY =
-        Factory.land(MagicTargetType.Library, MagicSubType.Swamp, MagicSubType.Forest);
+        Factory.card(MagicTargetType.Library, MagicSubType.Swamp, MagicSubType.Forest);
     
     MagicCardFilterImpl TARGET_MOUNTAIN_OR_FOREST_CARD_FROM_LIBRARY =
-        Factory.land(MagicTargetType.Library, MagicSubType.Mountain, MagicSubType.Forest);
+        Factory.card(MagicTargetType.Library, MagicSubType.Mountain, MagicSubType.Forest);
     
     MagicCardFilterImpl TARGET_MOUNTAIN_OR_PLAINS_CARD_FROM_LIBRARY =
-        Factory.land(MagicTargetType.Library, MagicSubType.Mountain, MagicSubType.Plains);
+        Factory.card(MagicTargetType.Library, MagicSubType.Mountain, MagicSubType.Plains);
 
     MagicCardFilterImpl TARGET_FOREST_OR_PLAINS_CARD_FROM_LIBRARY = 
-        Factory.land(MagicTargetType.Library, MagicSubType.Forest, MagicSubType.Plains);
+        Factory.card(MagicTargetType.Library, MagicSubType.Forest, MagicSubType.Plains);
     
     MagicCardFilterImpl TARGET_FOREST_OR_ISLAND_CARD_FROM_LIBRARY = 
-        Factory.land(MagicTargetType.Library, MagicSubType.Forest, MagicSubType.Island);
+        Factory.card(MagicTargetType.Library, MagicSubType.Forest, MagicSubType.Island);
 
-    MagicCardFilterImpl TARGET_LAND_CARD_FROM_HAND = new MagicCardFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            final MagicCardDefinition cardDefinition = target.getCardDefinition();
-            return cardDefinition.isLand();
-        }
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Hand;
-        }
-    };
+    MagicCardFilterImpl TARGET_LAND_CARD_FROM_HAND = Factory.card(MagicTargetType.Hand, MagicType.Land);
 
-    MagicCardFilterImpl TARGET_GOBLIN_CARD_FROM_HAND = new MagicCardFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            final MagicCardDefinition cardDefinition = target.getCardDefinition();
-            return cardDefinition.hasSubType(MagicSubType.Goblin);
-        }
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Hand;
-        }
-    };
+    MagicCardFilterImpl TARGET_GOBLIN_CARD_FROM_HAND = Factory.card(MagicTargetType.Hand, MagicSubType.Goblin);
+    
+    MagicCardFilterImpl TARGET_GOBLIN_CARD_FROM_LIBRARY = Factory.card(MagicTargetType.Library, MagicSubType.Goblin);
 
     MagicPermanentFilterImpl TARGET_UNPAIRED_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
@@ -1479,11 +1358,36 @@ public interface MagicTargetFilter<T extends MagicTarget> {
                 }
             };
         }
-        public static final MagicCardFilterImpl land(final MagicTargetType aTargetType, final MagicSubType type1, final MagicSubType type2) {
+        public static final MagicCardFilterImpl card(final MagicTargetType aTargetType, final MagicSubType type) {
+            return card(aTargetType, type, type);
+        }
+        public static final MagicCardFilterImpl card(final MagicTargetType aTargetType, final MagicSubType type1, final MagicSubType type2) {
             return new MagicCardFilterImpl() {
                 public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-                    final MagicCardDefinition cardDefinition = target.getCardDefinition();
-                    return cardDefinition.hasSubType(type1) || cardDefinition.hasSubType(type2);
+                    return target.hasSubType(type1) || target.hasSubType(type2);
+                }
+                public boolean acceptType(final MagicTargetType targetType) {
+                    return targetType == aTargetType;
+                }
+            };
+        }
+        public static final MagicCardFilterImpl card(final MagicTargetType aTargetType, final MagicType type) {
+            return card(aTargetType, type, type);
+        }
+        public static final MagicCardFilterImpl card(final MagicTargetType aTargetType, final MagicType type1, final MagicType type2) {
+            return new MagicCardFilterImpl() {
+                public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+                    return target.hasType(type1) || target.hasType(type2);
+                }
+                public boolean acceptType(final MagicTargetType targetType) {
+                    return targetType == aTargetType;
+                }
+            };
+        }
+        public static final MagicCardFilterImpl card(final MagicTargetType aTargetType, final MagicColor color) {
+            return new MagicCardFilterImpl() {
+                public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+                    return target.hasColor(color);
                 }
                 public boolean acceptType(final MagicTargetType targetType) {
                     return targetType == aTargetType;
