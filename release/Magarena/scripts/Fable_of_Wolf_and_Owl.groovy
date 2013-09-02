@@ -38,5 +38,5 @@
                 game.doAction(new MagicPlayTokenAction(event.getPlayer(), TokenCardDefinitions.get("U Bird")));
             }
         }
-    }	
+    }
 ]
