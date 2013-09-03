@@ -69,6 +69,10 @@ public class MagicTargetFilterFactory {
         single.put("Equipment", TARGET_EQUIPMENT);
         single.put("artifact", TARGET_ARTIFACT);
         single.put("artifact creature", TARGET_ARTIFACT_CREATURE);
+        single.put("nonartifact creature", TARGET_NONARTIFACT_CREATURE);
+        single.put("nonartifact, nonblack creature", TARGET_NONARTIFACT_NONBLACK_CREATURE);
+        single.put("tapped creature", TARGET_TAPPED_CREATURE);
+        single.put("untapped creature", TARGET_UNTAPPED_CREATURE);
         single.put("artifact or land", TARGET_ARTIFACT_OR_LAND);
         single.put("artifact or enchantment", TARGET_ARTIFACT_OR_ENCHANTMENT);
         single.put("artifact, enchantment, or land", TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND);
@@ -99,6 +103,8 @@ public class MagicTargetFilterFactory {
         single.put("multicolored permanent you control", TARGET_MULTICOLORED_PERMANENT_YOU_CONTROL);
         single.put("Mountain you control", TARGET_MOUNTAIN_YOU_CONTROL);
         single.put("Forest you control", TARGET_FOREST_YOU_CONTROL);
+
+        single.put("artifact card from your hand", TARGET_ARTIFACT_CARD_FROM_HAND);
     }
 
     public static MagicTargetFilter<MagicPermanent> build(final String arg) {

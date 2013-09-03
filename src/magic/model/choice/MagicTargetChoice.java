@@ -249,35 +249,30 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice POS_TARGET_NONBLACK_CREATURE = 
         MagicTargetChoice.Positive("target nonblack creature");
     
-    public static final MagicTargetChoice NEG_TARGET_NONARTIFACT_CREATURE = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_NONARTIFACT_CREATURE,
-        MagicTargetHint.Negative,
-        "target nonartifact creature"
-    );
+    public static final MagicTargetChoice NEG_TARGET_NONARTIFACT_CREATURE = 
+        MagicTargetChoice.Negative("target nonartifact creature");
     
-    public static final MagicTargetChoice TARGET_NONARTIFACT_NONBLACK_CREATURE = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_NONARTIFACT_NONBLACK_CREATURE,
-        "target nonartifact, nonblack creature"
-    );
+    public static final MagicTargetChoice TARGET_NONARTIFACT_NONBLACK_CREATURE = 
+        new MagicTargetChoice("target nonartifact, nonblack creature");
     
-    public static final MagicTargetChoice NEG_TARGET_NONARTIFACT_NONBLACK_CREATURE = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_NONARTIFACT_NONBLACK_CREATURE,
-        MagicTargetHint.Negative,
-        "target nonartifact, nonblack creature"
-    );
+    public static final MagicTargetChoice NEG_TARGET_NONARTIFACT_NONBLACK_CREATURE = 
+        MagicTargetChoice.Negative("target nonartifact, nonblack creature");
     
-    public static final MagicTargetChoice NEG_TARGET_TAPPED_CREATURE = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_TAPPED_CREATURE,
-        MagicTargetHint.Negative,
-        "target tapped creature"
-    );
+    public static final MagicTargetChoice NEG_TARGET_TAPPED_CREATURE = 
+        MagicTargetChoice.Negative("target tapped creature");
     
-    public static final MagicTargetChoice NEG_TARGET_UNTAPPED_CREATURE = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_UNTAPPED_CREATURE,
-        MagicTargetHint.Negative,
-        "target untapped creature"
-    );
+    public static final MagicTargetChoice NEG_TARGET_UNTAPPED_CREATURE = 
+        MagicTargetChoice.Negative("target untapped creature");
     
+    public static final MagicTargetChoice CREATURE_YOU_CONTROL = 
+        new MagicTargetChoice("a creature you control");
+    
+    public static final MagicTargetChoice CREATURE = 
+        new MagicTargetChoice("a creature");
+
+    public static final MagicTargetChoice RED_OR_GREEN_CREATURE_YOU_CONTROL = 
+        new MagicTargetChoice("a red or green creature you control");
+
     public static final MagicTargetChoice NEG_TARGET_CREATURE_CONVERTED_3_OR_LESS = new MagicTargetChoice(
         MagicTargetFilter.TARGET_CREATURE_CONVERTED_3_OR_LESS,
         MagicTargetHint.Negative,
@@ -376,15 +371,6 @@ public class MagicTargetChoice extends MagicChoice {
         MagicTargetHint.Negative,
         "target blocked creature"
     );
-
-    public static final MagicTargetChoice CREATURE_YOU_CONTROL = 
-        new MagicTargetChoice("a creature you control");
-    
-    public static final MagicTargetChoice CREATURE = 
-        new MagicTargetChoice("a creature");
-
-    public static final MagicTargetChoice RED_OR_GREEN_CREATURE_YOU_CONTROL = 
-        new MagicTargetChoice("a red or green creature you control");
 
     public static final MagicTargetChoice NEG_TARGET_GREEN_OR_WHITE_CREATURE = new MagicTargetChoice(
         MagicTargetFilter.TARGET_GREEN_OR_WHITE_CREATURE,
@@ -729,10 +715,8 @@ public class MagicTargetChoice extends MagicChoice {
         "a green creature card from your hand"
     );
 
-    public static final MagicTargetChoice ARTIFACT_CARD_FROM_HAND = new MagicTargetChoice(
-        MagicTargetFilter.TARGET_ARTIFACT_CARD_FROM_HAND,
-        "an artifact card from your hand"
-    );
+    public static final MagicTargetChoice ARTIFACT_CARD_FROM_HAND = 
+        new MagicTargetChoice("an artifact card from your hand");
 
     public static final MagicTargetChoice BLUE_OR_RED_CREATURE_CARD_FROM_HAND = new MagicTargetChoice(
         MagicTargetFilter.TARGET_BLUE_OR_RED_CREATURE_CARD_FROM_HAND,
