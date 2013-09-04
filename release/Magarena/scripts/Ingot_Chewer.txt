@@ -1,0 +1,11 @@
+name=Ingot Chewer
+url=http://magiccards.info/lw/en/180.html
+image=http://magiccards.info/scans/en/lw/180.jpg
+value=3.524
+rarity=C
+type=Creature
+subtype=Elemental
+cost={4}{R}
+pt=3/3
+ability=enters destroy target artifact.;evoke {R}
+timing=main
