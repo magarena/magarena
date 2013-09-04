@@ -969,7 +969,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }
     };
 
-    MagicCardFilterImpl TARGET_CARD_FROM_ALL_GRAVEYARDs = new MagicCardFilterImpl() {
+    MagicCardFilterImpl TARGET_CARD_FROM_ALL_GRAVEYARDS = new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
             return true;
         }
