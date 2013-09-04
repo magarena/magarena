@@ -1,0 +1,11 @@
+name=Serra Avatar
+url=http://magiccards.info/m13/en/32.html
+image=http://magiccards.info/scans/en/m13/32.jpg
+value=4.265
+rarity=M
+type=Creature
+subtype=Avatar
+cost={4}{W}{W}{W}
+ability=graveyard to library
+timing=main
+requires_groovy_code
