@@ -1,0 +1,9 @@
+name=Glimpse the Unthinkable
+url=http://magiccards.info/rav/en/208.html
+image=http://magiccards.info/scans/en/rav/208.jpg
+value=4.469
+rarity=R
+type=Sorcery
+cost={U}{B}
+timing=main
+requires_groovy_code

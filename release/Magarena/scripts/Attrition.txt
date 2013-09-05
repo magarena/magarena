@@ -1,0 +1,9 @@
+name=Attrition
+url=http://magiccards.info/cmd/en/72.html
+image=http://magiccards.info/scans/en/cmd/72.jpg
+value=4.224
+rarity=R
+type=Enchantment
+cost={1}{B}{B}
+timing=enchantment
+requires_groovy_code

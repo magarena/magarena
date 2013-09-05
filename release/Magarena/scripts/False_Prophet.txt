@@ -1,0 +1,11 @@
+name=False Prophet
+url=http://magiccards.info/cmd/en/13.html
+image=http://magiccards.info/scans/en/cmd/13.jpg
+value=4.288
+rarity=R
+type=Creature
+subtype=Human,Cleric
+cost={2}{W}{W}
+pt=2/2
+timing=main
+requires_groovy_code
