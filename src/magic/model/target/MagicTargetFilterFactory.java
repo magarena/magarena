@@ -18,6 +18,7 @@ public class MagicTargetFilterFactory {
         new HashMap<String, MagicTargetFilter<?>>();
 
     static {
+        // used by lord ability
         factory.put("creatures you control", TARGET_CREATURE_YOU_CONTROL);
         factory.put("creatures your opponents control", TARGET_CREATURE_YOUR_OPPONENT_CONTROLS);
         factory.put("creatures with flying your opponents control", TARGET_CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS);
@@ -27,6 +28,7 @@ public class MagicTargetFilterFactory {
         factory.put("attacking creatures you control", TARGET_ATTACKING_CREATURE_YOU_CONTROL);
         factory.put("creature tokens you control", TARGET_CREATURE_TOKEN_YOU_CONTROL);
         
+        factory.put("lands you control", TARGET_LAND_YOU_CONTROL);
         factory.put("faeries you control", TARGET_FAERIE_YOU_CONTROL);
         factory.put("each wolf you control", TARGET_WOLF_YOU_CONTROL);
 
@@ -38,6 +40,7 @@ public class MagicTargetFilterFactory {
         factory.put("permanents you control", TARGET_PERMANENT_YOU_CONTROL);
         factory.put("artifacts you control", TARGET_ARTIFACT_YOU_CONTROL);
        
+        // used by MagicTargetChoice
         single.put("opponent", TARGET_OPPONENT);
         single.put("player", TARGET_PLAYER);
         single.put("1/1 creature", TARGET_1_1_CREATURE);
@@ -105,6 +108,94 @@ public class MagicTargetFilterFactory {
         single.put("Forest you control", TARGET_FOREST_YOU_CONTROL);
 
         single.put("artifact card from your hand", TARGET_ARTIFACT_CARD_FROM_HAND);
+        single.put("artifact card from your graveyard", TARGET_ARTIFACT_CARD_FROM_GRAVEYARD); 
+        single.put("artifact or creature card from a graveyard", TARGET_ARTIFACT_OR_CREATURE_CARD_FROM_ALL_GRAVEYARDS);
+        single.put("Assembly-Worker creature", TARGET_ASSEMBLY_WORKER_CREATURE);
+        single.put("attacking creature", TARGET_ATTACKING_CREATURE);
+        single.put("attacking creature with flying", TARGET_ATTACKING_CREATURE_WITH_FLYING);
+        single.put("attacking or blocking creature", TARGET_ATTACKING_OR_BLOCKING_CREATURE);
+        single.put("attacking or blocking Spirit",  TARGET_ATTACKING_OR_BLOCKING_SPIRIT);
+        single.put("basic land card from your hand", TARGET_BASIC_LAND_CARD_FROM_HAND);
+        single.put("basic land card from your library", TARGET_BASIC_LAND_CARD_FROM_LIBRARY);
+        single.put("Bat you control", TARGET_BAT_YOU_CONTROL);
+        single.put("Beast you control", TARGET_BEAST_YOU_CONTROL);
+        single.put("Blinkmoth creature", TARGET_BLINKMOTH_CREATURE);
+        single.put("blocked creature", TARGET_BLOCKED_CREATURE);
+        single.put("blocking creature", TARGET_BLOCKING_CREATURE);
+        single.put("blue or red creature card from your hand", TARGET_BLUE_OR_RED_CREATURE_CARD_FROM_HAND);
+        single.put("card from a graveyard", TARGET_CARD_FROM_ALL_GRAVEYARDS);
+        single.put("card from your graveyard", TARGET_CARD_FROM_GRAVEYARD);
+        single.put("card from your hand", TARGET_CARD_FROM_HAND);
+        single.put("Cleric creature you control", TARGET_CLERIC_CREATURE_YOU_CONTROL);
+        single.put("creature card from a graveyard", TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS);
+        single.put("creature card from your graveyard", TARGET_CREATURE_CARD_FROM_GRAVEYARD);
+        single.put("creature card from your hand", TARGET_CREATURE_CARD_FROM_HAND);
+        single.put("creature card from your opponent's graveyard", TARGET_CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD);
+        single.put("creature card with infect from your graveyard", TARGET_CREATURE_CARD_WITH_INFECT_FROM_GRAVEYARD);
+        single.put("creature or enchantment", TARGET_CREATURE_OR_ENCHANTMENT);
+        single.put("creature or land", TARGET_CREATURE_OR_LAND);
+        single.put("creature or planeswalker", TARGET_CREATURE_OR_PLANESWALKER);
+        single.put("creature or player", TARGET_CREATURE_OR_PLAYER); 
+        single.put("creature with converted mana cost 3 or less", TARGET_CREATURE_CONVERTED_3_OR_LESS);
+        single.put("creature with flying", TARGET_CREATURE_WITH_FLYING);
+        single.put("creature without flying", TARGET_CREATURE_WITHOUT_FLYING);
+        single.put("creature with power 2 or less", TARGET_CREATURE_POWER_2_OR_LESS); 
+        single.put("creature with power 4 or greater", TARGET_CREATURE_POWER_4_OR_MORE);
+        single.put("creature with shadow", TARGET_CREATURE_WITH_SHADOW);
+        single.put("creature with +1/+1 counter", TARGET_CREATURE_PLUSONE_COUNTER);
+        single.put("Elf", TARGET_ELF); 
+        single.put("enchantment card from your graveyard", TARGET_ENCHANTMENT_CARD_FROM_GRAVEYARD);
+        single.put("Forest", TARGET_FOREST);
+        single.put("Forest or Island card from your library", TARGET_FOREST_OR_ISLAND_CARD_FROM_LIBRARY);
+        single.put("Forest or Plains card from your library", TARGET_FOREST_OR_PLAINS_CARD_FROM_LIBRARY);
+        single.put("Fungus creature", TARGET_FUNGUS_CREATURE);
+        single.put("Goblin card from your graveyard", TARGET_GOBLIN_CARD_FROM_GRAVEYARD);
+        single.put("Goblin creature", TARGET_GOBLIN_CREATURE);
+        single.put("Goblin permanent card from your hand", TARGET_GOBLIN_CARD_FROM_HAND);
+        single.put("Goblin permanent card from your library", TARGET_GOBLIN_CARD_FROM_LIBRARY);
+        single.put("Goblin you control", TARGET_GOBLIN_YOU_CONTROL);
+        single.put("Golem you control", TARGET_GOLEM_YOU_CONTROL);
+        single.put("green creature card from your hand", TARGET_GREEN_CREATURE_CARD_FROM_HAND);
+        single.put("green or white creature", TARGET_GREEN_OR_WHITE_CREATURE);
+        single.put("Human creature", TARGET_HUMAN);
+        single.put("Human you control", TARGET_HUMAN_YOU_CONTROL);
+        single.put("Insect, Rat, Spider, or Squirrel", TARGET_INSECT_RAT_SPIDER_OR_SQUIRREL);
+        single.put("instant or sorcery card from your graveyard", TARGET_INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD);
+        single.put("instant or sorcery card from your opponent's graveyard", TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD);
+        single.put("Island or Mountain card from your library", TARGET_ISLAND_OR_MOUNTAIN_CARD_FROM_LIBRARY);
+        single.put("Island or Swamp card from your library", TARGET_ISLAND_OR_SWAMP_CARD_FROM_LIBRARY); 
+        single.put("Knight creature", TARGET_KNIGHT_CREATURE);
+        single.put("land card from your hand", TARGET_LAND_CARD_FROM_HAND);
+        single.put("land card from your library", TARGET_LAND_CARD_FROM_LIBRARY);
+        single.put("land card with a basic land type from your library", TARGET_LAND_CARD_WITH_BASIC_LAND_TYPE_FROM_LIBRARY);
+        single.put("legendary creature", TARGET_LEGENDARY_CREATURE); 
+        single.put("Merfolk creature", TARGET_MERFOLK_CREATURE); 
+        single.put("Merfolk you control", TARGET_MERFOLK_YOU_CONTROL);
+        single.put("Mountain or Plains card from your library", TARGET_MOUNTAIN_OR_PLAINS_CARD_FROM_LIBRARY); 
+        single.put("multicolored creature card from your hand", TARGET_MULTICOLORED_CREATURE_CARD_FROM_HAND);
+        single.put("non-Demon creature", TARGET_NON_DEMON);
+        single.put("non-Human creature", TARGET_NONHUMAN_CREATURE);
+        single.put("nonlegendary creature you control", TARGET_NON_LEGENDARY_CREATURE_YOU_CONTROL);
+        single.put("non-Vampire, non-Werewolf, non-Zombie creature", TARGET_NONVAMPIRE_NONWEREWOLF_NONZOMBIE);
+        single.put("non-Zombie creature you control", TARGET_NON_ZOMBIE_YOU_CONTROL);
+        single.put("permanent card from your graveyard", TARGET_PERMANENT_CARD_FROM_GRAVEYARD); 
+        single.put("permanent card with converted mana cost 3 or less from your graveyard", TARGET_PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD);
+        single.put("Plains, Island, Swamp, or Mountain card from your library", TARGET_PLAINS_ISLAND_SWAMP_OR_MOUNTAIN_CARD_FROM_LIBRARY);
+        single.put("Plains or Island card from your library", TARGET_PLAINS_OR_ISLAND_CARD_FROM_LIBRARY);
+        single.put("Plains or Swamp card from your library", TARGET_PLAINS_OR_SWAMP_CARD_FROM_LIBRARY);
+        single.put("Samurai", TARGET_SAMURAI);
+        single.put("Samurai you control", TARGET_SAMURAI_YOU_CONTROL);
+        single.put("Saproling you control", TARGET_SAPROLING_YOU_CONTROL);
+        single.put("Spirit card from your graveyard", TARGET_SPIRIT_CARD_FROM_GRAVEYARD);
+        single.put("Swamp or Forest card from your library", TARGET_SWAMP_OR_FOREST_CARD_FROM_LIBRARY);
+        single.put("Swamp or Mountain card from your library", TARGET_SWAMP_OR_MOUNTAIN_CARD_FROM_LIBRARY); 
+        single.put("unblocked attacking creature you control", UNBLOCKED_ATTACKING_CREATURE_YOU_CONTROL);
+        single.put("Vampire", TARGET_VAMPIRE); 
+        single.put("Vampire, Werewolf, or Zombie", TARGET_VAMPIRE_WEREWOLF_OR_ZOMBIE);
+        single.put("white creature", TARGET_WHITE_CREATURE);
+        single.put("white or blue creature", TARGET_WHITE_OR_BLUE_CREATURE);
+        single.put("Zombie", TARGET_ZOMBIE);
+        single.put("Zombie card from your graveyard", TARGET_ZOMBIE_CARD_FROM_GRAVEYARD); 
     }
 
     public static MagicTargetFilter<MagicPermanent> build(final String arg) {
