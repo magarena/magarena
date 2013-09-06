@@ -1,4 +1,4 @@
-name=Gift of Orzhov
+name=Gift of Orzhova
 url=http://magiccards.info/gtc/en/219.html
 image=http://magiccards.info/scans/en/gtc/219.jpg
 value=4.637
