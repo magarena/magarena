@@ -619,7 +619,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
     MagicPermanentFilterImpl TARGET_BIRD = Factory.creature(MagicSubType.Bird, Control.Any);
     
-    MagicPermanentFilterImpl TARGET_GOBLIN_PERMANENT = Factory.tribal(MagicSubType.Goblin, Control.Any);
+    MagicPermanentFilterImpl TARGET_GOBLIN_PERMANENT = Factory.permanent(MagicSubType.Goblin, Control.Any);
     
     MagicPermanentFilterImpl TARGET_GOBLIN_CREATURE = Factory.creature(MagicSubType.Goblin, Control.Any);
 
@@ -765,7 +765,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
     MagicPermanentFilterImpl TARGET_KOR_YOU_CONTROL = Factory.creature(MagicSubType.Kor, Control.You);
 
-    MagicPermanentFilterImpl TARGET_WOLF_YOU_CONTROL = Factory.tribal(MagicSubType.Wolf, Control.You);
+    MagicPermanentFilterImpl TARGET_WOLF_YOU_CONTROL = Factory.permanent(MagicSubType.Wolf, Control.You);
 
     MagicPermanentFilterImpl TARGET_SLIVER = Factory.creature(MagicSubType.Sliver, Control.Any);
 
@@ -779,7 +779,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
     MagicPermanentFilterImpl TARGET_ALLY_YOU_CONTROL = Factory.creature(MagicSubType.Ally, Control.You);
 
-    MagicPermanentFilterImpl TARGET_FAERIE_YOU_CONTROL = Factory.tribal(MagicSubType.Faerie, Control.You);
+    MagicPermanentFilterImpl TARGET_FAERIE_YOU_CONTROL = Factory.permanent(MagicSubType.Faerie, Control.You);
     
     MagicPermanentFilterImpl TARGET_FAERIE_CREATURE_YOU_CONTROL = Factory.creature(MagicSubType.Faerie, Control.You);
 
@@ -1287,7 +1287,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         public static final MagicPermanentFilterImpl permanent(final MagicSubType subtype, final Control control) {
             return new MagicPermanentFilterImpl() {
                 public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-                    return target.hasSubType(subtype) &&
+                    return target.hasSubType(subtype) && subtype.hasType(target) &&
                            ((control == Control.You && target.isController(player)) ||
                             (control == Control.Opp && target.isOpponent(player)) ||
                             (control == Control.Any));
@@ -1320,17 +1320,6 @@ public interface MagicTargetFilter<T extends MagicTarget> {
             return new MagicPermanentFilterImpl() {
                 public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
                     return target.isCreature() &&
-                           target.hasSubType(subtype) &&
-                           ((control == Control.You && target.isController(player)) ||
-                            (control == Control.Opp && target.isOpponent(player)) ||
-                            (control == Control.Any));
-                }
-            };
-        }
-        public static final MagicPermanentFilterImpl tribal(final MagicSubType subtype, final Control control) {
-            return new MagicPermanentFilterImpl() {
-                public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-                    return (target.isCreature() || target.hasType(MagicType.Tribal)) &&
                            target.hasSubType(subtype) &&
                            ((control == Control.You && target.isController(player)) ||
                             (control == Control.Opp && target.isOpponent(player)) ||
