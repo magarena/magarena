@@ -21,6 +21,7 @@ public class MagicTargetFilterFactory {
 
     static {
         // used by lord ability
+        factory.put("lands you control", TARGET_LAND_YOU_CONTROL);
         factory.put("permanents you control", TARGET_PERMANENT_YOU_CONTROL);
         factory.put("artifacts you control", TARGET_ARTIFACT_YOU_CONTROL);
         factory.put("creatures you control", TARGET_CREATURE_YOU_CONTROL);
@@ -31,13 +32,13 @@ public class MagicTargetFilterFactory {
         factory.put("attacking creatures you control", TARGET_ATTACKING_CREATURE_YOU_CONTROL);
         factory.put("creature tokens you control", TARGET_CREATURE_TOKEN_YOU_CONTROL);
         
-        factory.put("lands you control", TARGET_LAND_YOU_CONTROL);
         factory.put("faeries you control", TARGET_FAERIE_YOU_CONTROL);
         factory.put("each wolf you control", TARGET_WOLF_YOU_CONTROL);
 
         factory.put("all sliver creatures", TARGET_SLIVER);
         factory.put("all creatures", TARGET_CREATURE);
         factory.put("nonblack creatures", TARGET_NONBLACK_CREATURE);
+        factory.put("artifacts", TARGET_ARTIFACT);
        
         // used by MagicTargetChoice
         single.put("opponent", TARGET_OPPONENT);
