@@ -132,6 +132,7 @@ public class MagicTargetFilterFactory {
         single.put("creature card from your hand", TARGET_CREATURE_CARD_FROM_HAND);
         single.put("creature card from your opponent's graveyard", TARGET_CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD);
         single.put("creature card with infect from your graveyard", TARGET_CREATURE_CARD_WITH_INFECT_FROM_GRAVEYARD);
+        single.put("creature card with scavenge from your graveyard", PAYABLE_CREATURE_CARD_FROM_GRAVEYARD);
         single.put("creature or enchantment", TARGET_CREATURE_OR_ENCHANTMENT);
         single.put("creature or land", TARGET_CREATURE_OR_LAND);
         single.put("creature or planeswalker", TARGET_CREATURE_OR_PLANESWALKER);

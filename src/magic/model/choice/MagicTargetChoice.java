@@ -33,10 +33,8 @@ public class MagicTargetChoice extends MagicChoice {
             }
         };
     
-    public static final MagicTargetChoice A_PAYABLE_CREATURE_CARD_FROM_YOUR_GRAVEYARD = new MagicTargetChoice(
-        MagicTargetFilter.PAYABLE_CREATURE_CARD_FROM_GRAVEYARD,
-        "a creature card from your graveyard"
-    );
+    public static final MagicTargetChoice A_PAYABLE_CREATURE_CARD_FROM_YOUR_GRAVEYARD = 
+        new MagicTargetChoice("a creature card with scavenge from your graveyard");
 
     public static final MagicTargetChoice TARGET_SPELL = 
         new MagicTargetChoice("target spell");
