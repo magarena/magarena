@@ -25,7 +25,7 @@
             return new MagicEvent(
                 source,
                 targetChoice,
-                new MagicGraveyardTargetPicker(true),
+                MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
                 "PN puts a creature card\$ with converted mana cost equal to " +
                 "the number of charge counters on SN from his or her hand onto the battlefield."

@@ -18,7 +18,7 @@ def action = {
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
-                new MagicGraveyardTargetPicker(false),
+                MagicGraveyardTargetPicker.ReturnToHand,
                 this,
                 "Return target creature card\$ from your graveyard to your hand."
             );

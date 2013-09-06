@@ -7,7 +7,7 @@
                 new MagicMayChoice(
                     MagicTargetChoice.BASIC_LAND_CARD_FROM_HAND
                 ),
-                new MagicGraveyardTargetPicker(true),
+                MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
                 "PN may\$ put a basic land card\$ from his or her hand into play tapped."
             );

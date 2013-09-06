@@ -8,7 +8,7 @@
                     new MagicMayChoice(
                         MagicTargetChoice.CREATURE_CARD_FROM_HAND
                     ),
-                    new MagicGraveyardTargetPicker(true),
+                    MagicGraveyardTargetPicker.PutOntoBattlefield,
                     this,
                     "PN may\$ put a creature card\$ from his or her hand " +
                     "onto the battlefield and attach SN to it."

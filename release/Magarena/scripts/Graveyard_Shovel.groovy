@@ -40,7 +40,7 @@ def action = {
                         event.getSource(),
                         targetPlayer,
                         MagicTargetChoice.TARGET_CARD_FROM_GRAVEYARD,
-                        new MagicGraveyardTargetPicker(true),
+                        MagicGraveyardTargetPicker.ExileOwn,
                         player,
                         action,
                         "PN exiles a card\$ from his or her graveyard."

@@ -11,7 +11,7 @@
                     permanent.isController(target) ?
                         MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD :
                         MagicTargetChoice.TARGET_CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD,
-                    new MagicGraveyardTargetPicker(true),
+                    MagicGraveyardTargetPicker.PutOntoBattlefield,
                     this,
                     "Return target creature card\$ from ${target.toString()}'s graveyard to the battlefield under PN's control."
                 ):

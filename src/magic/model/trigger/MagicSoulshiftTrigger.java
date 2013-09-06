@@ -40,7 +40,7 @@ public class MagicSoulshiftTrigger extends MagicWhenDiesTrigger {
         return new MagicEvent(
             permanent,
             new MagicMayChoice(targetChoice),
-            new MagicGraveyardTargetPicker(false),
+            MagicGraveyardTargetPicker.ReturnToHand,
             this,
             "PN may$ return target Spirit card$ with " +
             "converted mana cost " + cmc + " or less " +

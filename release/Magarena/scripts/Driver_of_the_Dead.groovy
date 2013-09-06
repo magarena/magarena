@@ -18,7 +18,7 @@
             return new MagicEvent(
                 permanent,
                 targetChoice,
-                new MagicGraveyardTargetPicker(false),
+                MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
                 "PN returns target creature card\$ with " +
                 "converted mana cost 2 or less " +

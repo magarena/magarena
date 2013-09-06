@@ -9,7 +9,7 @@
                     new MagicMayChoice(
                         MagicTargetChoice.GOBLIN_CARD_FROM_HAND
                     ),
-                    new MagicGraveyardTargetPicker(true),
+                    MagicGraveyardTargetPicker.PutOntoBattlefield,
                     this,
                     "PN may\$ put a Goblin permanent card\$ from " +
                     "his or her hand onto the battlefield."

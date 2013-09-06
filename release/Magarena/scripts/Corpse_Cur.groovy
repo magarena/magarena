@@ -7,7 +7,7 @@
                 new MagicMayChoice(
                     MagicTargetChoice.TARGET_CREATURE_CARD_WITH_INFECT_FROM_GRAVEYARD
                 ),
-                new MagicGraveyardTargetPicker(false),
+                MagicGraveyardTargetPicker.ReturnToHand,
                 this,
                 "PN may\$ return target creature card\$ with " +
                 "infect from his or her graveyard to his or her hand."

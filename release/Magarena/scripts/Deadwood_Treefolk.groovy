@@ -23,7 +23,7 @@ def event = {
     return new MagicEvent(
         permanent,
         choice,
-        new MagicGraveyardTargetPicker(false),
+        MagicGraveyardTargetPicker.ReturnToHand,
         action,
         "Return another target creature card\$ from your graveyard to your hand."
     );

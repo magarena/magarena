@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.TARGET_PERMANENT_CARD_FROM_GRAVEYARD,
-                new MagicGraveyardTargetPicker(false),
+                MagicGraveyardTargetPicker.ReturnToHand,
                 this,
                 "Return target permanent card\$ from your graveyard to your hand."
             );

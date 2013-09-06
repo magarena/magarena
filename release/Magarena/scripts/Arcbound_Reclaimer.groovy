@@ -14,7 +14,7 @@
             return new MagicEvent(
                 source,
                 MagicTargetChoice.TARGET_ARTIFACT_CARD_FROM_GRAVEYARD,
-                new MagicGraveyardTargetPicker(false),
+                MagicGraveyardTargetPicker.ReturnToHand,
                 this,
                 "Put target artifact card\$ from your graveyard on top of your library"
             );
