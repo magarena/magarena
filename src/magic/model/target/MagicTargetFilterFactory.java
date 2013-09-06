@@ -110,7 +110,6 @@ public class MagicTargetFilterFactory {
         single.put("artifact card from your hand", TARGET_ARTIFACT_CARD_FROM_HAND);
         single.put("artifact card from your graveyard", TARGET_ARTIFACT_CARD_FROM_GRAVEYARD); 
         single.put("artifact or creature card from a graveyard", TARGET_ARTIFACT_OR_CREATURE_CARD_FROM_ALL_GRAVEYARDS);
-        single.put("Assembly-Worker creature", TARGET_ASSEMBLY_WORKER_CREATURE);
         single.put("attacking creature", TARGET_ATTACKING_CREATURE);
         single.put("attacking creature with flying", TARGET_ATTACKING_CREATURE_WITH_FLYING);
         single.put("attacking or blocking creature", TARGET_ATTACKING_OR_BLOCKING_CREATURE);
@@ -119,14 +118,12 @@ public class MagicTargetFilterFactory {
         single.put("basic land card from your library", TARGET_BASIC_LAND_CARD_FROM_LIBRARY);
         single.put("Bat you control", TARGET_BAT_YOU_CONTROL);
         single.put("Beast you control", TARGET_BEAST_YOU_CONTROL);
-        single.put("Blinkmoth creature", TARGET_BLINKMOTH_CREATURE);
         single.put("blocked creature", TARGET_BLOCKED_CREATURE);
         single.put("blocking creature", TARGET_BLOCKING_CREATURE);
         single.put("blue or red creature card from your hand", TARGET_BLUE_OR_RED_CREATURE_CARD_FROM_HAND);
         single.put("card from a graveyard", TARGET_CARD_FROM_ALL_GRAVEYARDS);
         single.put("card from your graveyard", TARGET_CARD_FROM_GRAVEYARD);
         single.put("card from your hand", TARGET_CARD_FROM_HAND);
-        single.put("Cleric creature you control", TARGET_CLERIC_CREATURE_YOU_CONTROL);
         single.put("creature card from a graveyard", TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS);
         single.put("creature card from your graveyard", TARGET_CREATURE_CARD_FROM_GRAVEYARD);
         single.put("creature card from your hand", TARGET_CREATURE_CARD_FROM_HAND);
@@ -149,28 +146,23 @@ public class MagicTargetFilterFactory {
         single.put("Forest", TARGET_FOREST);
         single.put("Forest or Island card from your library", TARGET_FOREST_OR_ISLAND_CARD_FROM_LIBRARY);
         single.put("Forest or Plains card from your library", TARGET_FOREST_OR_PLAINS_CARD_FROM_LIBRARY);
-        single.put("Fungus creature", TARGET_FUNGUS_CREATURE);
         single.put("Goblin card from your graveyard", TARGET_GOBLIN_CARD_FROM_GRAVEYARD);
-        single.put("Goblin creature", TARGET_GOBLIN_CREATURE);
         single.put("Goblin permanent card from your hand", TARGET_GOBLIN_CARD_FROM_HAND);
         single.put("Goblin permanent card from your library", TARGET_GOBLIN_CARD_FROM_LIBRARY);
         single.put("Goblin you control", TARGET_GOBLIN_YOU_CONTROL);
         single.put("Golem you control", TARGET_GOLEM_YOU_CONTROL);
         single.put("green creature card from your hand", TARGET_GREEN_CREATURE_CARD_FROM_HAND);
         single.put("green or white creature", TARGET_GREEN_OR_WHITE_CREATURE);
-        single.put("Human creature", TARGET_HUMAN);
         single.put("Human you control", TARGET_HUMAN_YOU_CONTROL);
         single.put("Insect, Rat, Spider, or Squirrel", TARGET_INSECT_RAT_SPIDER_OR_SQUIRREL);
         single.put("instant or sorcery card from your graveyard", TARGET_INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD);
         single.put("instant or sorcery card from your opponent's graveyard", TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD);
         single.put("Island or Mountain card from your library", TARGET_ISLAND_OR_MOUNTAIN_CARD_FROM_LIBRARY);
         single.put("Island or Swamp card from your library", TARGET_ISLAND_OR_SWAMP_CARD_FROM_LIBRARY); 
-        single.put("Knight creature", TARGET_KNIGHT_CREATURE);
         single.put("land card from your hand", TARGET_LAND_CARD_FROM_HAND);
         single.put("land card from your library", TARGET_LAND_CARD_FROM_LIBRARY);
         single.put("land card with a basic land type from your library", TARGET_LAND_CARD_WITH_BASIC_LAND_TYPE_FROM_LIBRARY);
         single.put("legendary creature", TARGET_LEGENDARY_CREATURE); 
-        single.put("Merfolk creature", TARGET_MERFOLK_CREATURE); 
         single.put("Merfolk you control", TARGET_MERFOLK_YOU_CONTROL);
         single.put("Mountain or Plains card from your library", TARGET_MOUNTAIN_OR_PLAINS_CARD_FROM_LIBRARY); 
         single.put("multicolored creature card from your hand", TARGET_MULTICOLORED_CREATURE_CARD_FROM_HAND);
@@ -193,7 +185,6 @@ public class MagicTargetFilterFactory {
         single.put("unblocked attacking creature you control", UNBLOCKED_ATTACKING_CREATURE_YOU_CONTROL);
         single.put("Vampire", TARGET_VAMPIRE); 
         single.put("Vampire, Werewolf, or Zombie", TARGET_VAMPIRE_WEREWOLF_OR_ZOMBIE);
-        single.put("white creature", TARGET_WHITE_CREATURE);
         single.put("white or blue creature", TARGET_WHITE_OR_BLUE_CREATURE);
         single.put("Zombie", TARGET_ZOMBIE);
         single.put("Zombie card from your graveyard", TARGET_ZOMBIE_CARD_FROM_GRAVEYARD); 
@@ -203,11 +194,11 @@ public class MagicTargetFilterFactory {
         if (factory.containsKey(arg)) {
             return factory.get(arg);
         } else if (arg.endsWith(" creatures you control")) {
-            return matchPrefix(arg, " creatures you control", Control.You);
+            return matchCreaturePrefix(arg, " creatures you control", Control.You);
         } else if (arg.endsWith(" creatures your opponents control")) {
-            return matchPrefix(arg, " creatures your opponents control", Control.Opp);
+            return matchCreaturePrefix(arg, " creatures your opponents control", Control.Opp);
         } else if (arg.endsWith(" creatures")) {
-            return matchPrefix(arg, " creatures", Control.Any);
+            return matchCreaturePrefix(arg, " creatures", Control.Any);
         } else {
             throw new RuntimeException("unknown target filter \"" + arg + "\"");
         }
@@ -218,17 +209,17 @@ public class MagicTargetFilterFactory {
         if (single.containsKey(filter)) {
             return single.get(filter);
         } else if (filter.endsWith(" creature you control")) {
-            return matchPrefix(filter, " creature you control", Control.You);
+            return matchCreaturePrefix(filter, " creature you control", Control.You);
         } else if (filter.endsWith(" creature your opponents control")) {
-            return matchPrefix(filter, " creature your opponents control", Control.Opp);
+            return matchCreaturePrefix(filter, " creature your opponents control", Control.Opp);
         } else if (filter.endsWith(" creature")) {
-            return matchPrefix(filter, " creature", Control.Any);
+            return matchCreaturePrefix(filter, " creature", Control.Any);
         } else {
             throw new RuntimeException("unknown target filter \"" + filter + "\"");
         }
     }
 
-    private static MagicTargetFilter<MagicPermanent> matchPrefix(final String arg, final String suffix, final Control control) {
+    private static MagicTargetFilter<MagicPermanent> matchCreaturePrefix(final String arg, final String suffix, final Control control) {
         final String prefix = arg.replace(suffix, "");
         for (final MagicColor c : MagicColor.values()) {
             if (prefix.equalsIgnoreCase(c.getName())) {

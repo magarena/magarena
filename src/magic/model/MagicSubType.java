@@ -38,10 +38,17 @@ public enum MagicSubType {
     Ajani, Bolas, Chandra, Elspeth, Garruk, Gideon, Jace, Karn, Koth, Liliana,
     Nissa, Sarkhan, Sorin, Tezzeret, Venser, Tamiyo, Tibalt, Vraska,
 
+    //special handling for Assembly_Worker
+    Assembly_Worker() {
+        @Override
+        public String toString() {
+            return "Assembly-Worker";
+        }
+    },
 
     //creature and tribal subtypes
     Advisor, Ally, Angel, Anteater, Antelope, Ape, Archer, Archon, Artificer,
-    Assassin, Assembly_Worker, Atog, Aurochs, Avatar, Badger, Barbarian, Basilisk,
+    Assassin, Atog, Aurochs, Avatar, Badger, Barbarian, Basilisk,
     Bat, Bear, Beast, Beeble, Berserker, Bird, Blinkmoth, Boar, Bringer, Brushwagg,
     Camarid, Camel, Caribou, Carrier, Cat, Centaur, Cephalid, Chimera, Citizen,
     Cleric, Cockatrice, Construct, Coward, Crab, Crocodile, Cyclops, Dauthi, Demon,
@@ -76,7 +83,7 @@ public enum MagicSubType {
 
     public static final EnumSet<MagicSubType> ALL_BASIC_LANDS = EnumSet.range(Forest, Swamp);
 
-    public static final EnumSet<MagicSubType> ALL_CREATURES = EnumSet.range(Advisor, Zubera);
+    public static final EnumSet<MagicSubType> ALL_CREATURES = EnumSet.range(Assembly_Worker, Zubera);
 
     public static final EnumSet<MagicSubType> ALL_PLANESWALKERS = EnumSet.range(Ajani, Vraska);
 
@@ -88,9 +95,9 @@ public enum MagicSubType {
     }
 
     public static MagicSubType getSubType(final String name) {
-        final String cname = name.replaceAll("[^A-Za-z0-9]", "_");
+        //final String cname = name.replaceAll("[^A-Za-z0-9]", "_");
         for (final MagicSubType type : values()) {
-            if (type.toString().equalsIgnoreCase(cname)) {
+            if (type.toString().equalsIgnoreCase(name)) {
                 return type;
             }
         }
