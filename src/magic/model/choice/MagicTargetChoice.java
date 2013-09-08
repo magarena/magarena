@@ -453,6 +453,9 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice SACRIFICE_NON_ZOMBIE = 
         new MagicTargetChoice("a non-Zombie creature to sacrifice");
     
+    public static final MagicTargetChoice SACRIFICE_NON_VAMPIRE = 
+        new MagicTargetChoice("a non-Vampire creature to sacrifice");
+    
     public static final MagicTargetChoice SACRIFICE_SAMURAI = 
         new MagicTargetChoice("a Samurai to sacrifice");
     
