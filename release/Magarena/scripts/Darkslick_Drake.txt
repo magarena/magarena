@@ -7,5 +7,5 @@ type=Creature
 subtype=Drake
 cost={2}{U}{U}
 pt=2/4
-ability=flying;dies draw a card.
+ability=flying;dies effect PN draws a card.
 timing=main

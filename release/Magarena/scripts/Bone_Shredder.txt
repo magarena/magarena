@@ -8,5 +8,5 @@ type=Creature
 subtype=Minion
 cost={2}{B}
 pt=1/1
-ability=flying;echo {2}{B};enters destroy target nonartifact, nonblack creature.
+ability=flying;echo {2}{B};enters effect Destroy target nonartifact, nonblack creature.
 timing=main

@@ -8,6 +8,6 @@ subtype=Human,Warrior
 cost={1}{R}
 pt=3/3
 ability=vanishing 2;\
-        enters deals 1 damage to target player.;\
-        leaves deals 1 damage to target player.
+        enters effect SN deals 1 damage to target player.;\
+        leaves effect SN deals 1 damage to target player.
 timing=main

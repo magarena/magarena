@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Advisor
 cost={2}{U}
 pt=1/1
-ability=enters draw a card.
+ability=enters effect PN draws a card.
 timing=main

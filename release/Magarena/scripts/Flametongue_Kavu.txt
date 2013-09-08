@@ -8,5 +8,5 @@ type=Creature
 subtype=Kavu
 cost={3}{R}
 pt=4/2
-ability=enters deals 4 damage to target creature.
+ability=enters effect SN deals 4 damage to target creature.
 timing=fmain

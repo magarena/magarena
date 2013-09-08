@@ -439,16 +439,6 @@ public enum MagicAbility {
             card.add(MagicSpecterTrigger.Random(Type.Any, Player.Opponent, n));
         }
     },
-    DiesDrawCard("dies draw",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicWhenDiesTrigger.create("PN draws " + arg));
-        }
-    },
-    DiesMayDrawCard("dies may draw",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicWhenDiesTrigger.createMay("draw " + arg));
-        }
-    },
     DiesReturnToOwnersHand("dies return to owner's hand",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
@@ -674,44 +664,34 @@ public enum MagicAbility {
             card.add(MagicReplicateTrigger.create());
         }
     },
-    EntersMayDestroy("enters may destroy", 10) {
+    EntersEffect("enters effect", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicWhenComesIntoPlayTrigger.createMay("destroy " + arg));
+            card.add(MagicWhenComesIntoPlayTrigger.create(arg));
         }
     },
-    EntersDestroy("enters destroy", 10) {
+    EntersMayEffect("enters effect PN may", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicWhenComesIntoPlayTrigger.create("Destroy " + arg));
+            card.add(MagicWhenComesIntoPlayTrigger.createMay(arg));
         }
     },
-    DiesDestroy("dies destroy", 10) {
+    DiesEffect("dies effect", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicWhenDiesTrigger.create("Destroy " + arg));
+            card.add(MagicWhenDiesTrigger.create(arg));
         }
     },
-    DiesExile("dies exile", 10) {
+    DiesMayEffect("dies effect PN may", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicWhenDiesTrigger.create("Exile " + arg));
+            card.add(MagicWhenDiesTrigger.createMay(arg));
         }
     },
-    EntersDamage("enters deals", 10) {
+    LeavesEffect("leaves effect", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicWhenComesIntoPlayTrigger.create("SN deals " + arg));
+            card.add(MagicWhenLeavesPlayTrigger.create(arg));
         }
     },
-    DiesDamage("dies deals", 10) {
+    LeavesMayEffect("leaves effect PN may", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicWhenDiesTrigger.create("SN deals " + arg));
-        }
-    },
-    EntersDrawCard("enters draw", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicWhenComesIntoPlayTrigger.create("PN draws " + arg));
-        }
-    },
-    LeavesDamage("leaves deals", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicWhenLeavesPlayTrigger.create("SN deals " + arg));
+            card.add(MagicWhenLeavesPlayTrigger.createMay(arg));
         }
     },
     ControlEnchanted("control enchanted", 10) {

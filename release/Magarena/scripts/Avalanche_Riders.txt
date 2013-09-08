@@ -8,5 +8,5 @@ type=Creature
 subtype=Human,Nomad
 cost={3}{R}
 pt=2/2
-ability=haste;echo {3}{R};enters destroy target land.
+ability=haste;echo {3}{R};enters effect Destroy target land.
 timing=main

@@ -8,5 +8,5 @@ type=Creature
 subtype=Human,Shaman
 cost={1}{R}{G}
 pt=3/2
-ability=enters destroy target artifact.
+ability=enters effect Destroy target artifact.
 timing=main

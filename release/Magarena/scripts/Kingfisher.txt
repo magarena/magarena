@@ -7,5 +7,5 @@ type=Creature
 subtype=Bird
 cost={3}{U}
 pt=2/2
-ability=flying;dies draw a card.
+ability=flying;dies effect PN draws a card.
 timing=main

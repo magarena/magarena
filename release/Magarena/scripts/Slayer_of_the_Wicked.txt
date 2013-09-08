@@ -8,4 +8,4 @@ subtype=Human,Soldier
 cost={3}{W}
 pt=3/2
 timing=main
-ability=enters may destroy target Vampire, Werewolf, or Zombie.
+ability=enters effect PN may destroy target Vampire, Werewolf, or Zombie.
