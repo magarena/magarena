@@ -439,17 +439,17 @@ public enum MagicAbility {
             card.add(MagicSpecterTrigger.Random(Type.Any, Player.Opponent, n));
         }
     },
-    DieDrawCard("die draw",10) {
+    DiesDrawCard("dies draw",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicWhenDiesTrigger.create("PN draws " + arg));
         }
     },
-    DieMayDrawCard("die may draw",10) {
+    DiesMayDrawCard("dies may draw",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicWhenDiesTrigger.createMay("draw " + arg));
         }
     },
-    DieReturnToOwnersHand("die return to owner's hand",10) {
+    DiesReturnToOwnersHand("dies return to owner's hand",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
             card.add(MagicWhenDiesTrigger.ReturnToOwnersHand);
@@ -684,9 +684,24 @@ public enum MagicAbility {
             card.add(MagicWhenComesIntoPlayTrigger.create("Destroy " + arg));
         }
     },
+    DiesDestroy("dies destroy", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            card.add(MagicWhenDiesTrigger.create("Destroy " + arg));
+        }
+    },
+    DiesExile("dies exile", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            card.add(MagicWhenDiesTrigger.create("Exile " + arg));
+        }
+    },
     EntersDamage("enters deals", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicWhenComesIntoPlayTrigger.create("SN deals " + arg));
+        }
+    },
+    DiesDamage("dies deals", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            card.add(MagicWhenDiesTrigger.create("SN deals " + arg));
         }
     },
     EntersDrawCard("enters draw", 10) {

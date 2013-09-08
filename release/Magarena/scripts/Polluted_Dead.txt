@@ -8,5 +8,5 @@ type=Creature
 subtype=Zombie
 cost={4}{B}
 pt=3/3
+ability=dies destroy target land.
 timing=main
-requires_groovy_code
