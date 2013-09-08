@@ -1,0 +1,9 @@
+name=Ghost Quarter
+url=http://magiccards.info/isd/en/240.html
+image=http://magiccards.info/scans/en/isd/240.jpg
+value=0.25
+rarity=U
+type=Land
+ability=tap add mana {1}
+timing=land
+requires_groovy_code
