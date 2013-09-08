@@ -6,5 +6,5 @@ rarity=C
 type=Sorcery
 cost={1}{U}
 ability=replicate {1}{U}
+effect=PN draws a card.
 timing=draw
-requires_groovy_code

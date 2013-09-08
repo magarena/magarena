@@ -136,6 +136,18 @@ public enum MagicRuleEventAction {
             game.doAction(new MagicDrawAction(event.getPlayer(), 2));
         }
     }),
+    DrawThreeCards("pn draws three cards.", new MagicEventAction() {
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            game.doAction(new MagicDrawAction(event.getPlayer(), 3));
+        }
+    }),
+    DrawFourCards("pn draws four cards.", new MagicEventAction() {
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            game.doAction(new MagicDrawAction(event.getPlayer(), 4));
+        }
+    }),
     ;
 
     private final Pattern pattern;
