@@ -2,9 +2,10 @@ name=Fireblast
 url=http://magiccards.info/jvc/en/55.html
 image=http://magiccards.info/scans/en/jvc/55.jpg
 value=4.551
-removal=4
 rarity=C
 type=Instant
 cost={4}{R}{R}
+effect=SN deals 4 damage to target creature or player.
+removal=4
 timing=removal
 requires_groovy_code

@@ -5,5 +5,5 @@ value=2.325
 rarity=C
 type=Sorcery
 cost={4}{R}
+effect=SN deals 5 damage to target player.
 timing=removal
-requires_groovy_code

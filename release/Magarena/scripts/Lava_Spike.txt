@@ -6,5 +6,5 @@ rarity=C
 type=Sorcery
 subtype=Arcane
 cost={R}
+effect=SN deals 3 damage to target player.
 timing=removal
-requires_groovy_code

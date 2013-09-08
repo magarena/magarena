@@ -817,6 +817,7 @@ public class MagicTargetChoice extends MagicChoice {
         factory.put("neg artifact or creature", NEG_TARGET_ARTIFACT_OR_CREATURE);
 
         // used by effect property
+        factory.put("neg target player", NEG_TARGET_PLAYER);
         factory.put("neg target equipment", NEG_TARGET_EQUIPMENT);
         factory.put("neg target artifact", NEG_TARGET_ARTIFACT);
         factory.put("neg target artifact you don't control", TARGET_ARTIFACT_YOU_DONT_CONTROL);
@@ -824,9 +825,11 @@ public class MagicTargetChoice extends MagicChoice {
         factory.put("neg target artifact or land", NEG_TARGET_ARTIFACT_OR_LAND);
         factory.put("neg target artifact, enchantment, or land", NEG_TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND);
         factory.put("neg target attacking creature", NEG_TARGET_ATTACKING_CREATURE);
+        factory.put("neg target attacking or blocking creature", NEG_TARGET_ATTACKING_OR_BLOCKING_CREATURE);
         factory.put("neg target blocked creature", NEG_TARGET_BLOCKED_CREATURE);
         factory.put("neg target tapped creature", NEG_TARGET_TAPPED_CREATURE);
         factory.put("neg target creature", NEG_TARGET_CREATURE);
+        factory.put("neg target creature you don't control", TARGET_CREATURE_YOU_DONT_CONTROL);
         factory.put("neg target creature or enchantment", NEG_TARGET_CREATURE_OR_ENCHANTMENT);
         factory.put("neg target creature or land", NEG_TARGET_CREATURE_OR_LAND);
         factory.put("neg target creature or player", NEG_TARGET_CREATURE_OR_PLAYER);
