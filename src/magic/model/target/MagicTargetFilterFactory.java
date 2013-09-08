@@ -1,7 +1,7 @@
 package magic.model.target;
 
 import java.util.Map;
-import java.util.HashMap;
+import java.util.TreeMap;
 
 import magic.model.MagicPermanent;
 import magic.model.MagicCard;
@@ -14,10 +14,10 @@ import static magic.model.target.MagicTargetFilter.*;
 public class MagicTargetFilterFactory {
     
     private static final Map<String, MagicTargetFilter<MagicPermanent>> factory =
-        new HashMap<String, MagicTargetFilter<MagicPermanent>>();
+        new TreeMap<String, MagicTargetFilter<MagicPermanent>>(String.CASE_INSENSITIVE_ORDER);
     
     private static final Map<String, MagicTargetFilter<?>> single =
-        new HashMap<String, MagicTargetFilter<?>>();
+        new TreeMap<String, MagicTargetFilter<?>>(String.CASE_INSENSITIVE_ORDER);
 
     static {
         // used by lord ability
@@ -47,8 +47,10 @@ public class MagicTargetFilterFactory {
         single.put("nonblack creature", TARGET_NONBLACK_CREATURE);
         single.put("non-Angel creature you control", TARGET_NON_ANGEL_CREATURE_YOU_CONTROL);
         single.put("noncreature", TARGET_NONCREATURE);
+        single.put("noncreature permanent", TARGET_NONCREATURE);
         single.put("land or nonblack creature", TARGET_LAND_OR_NONBLACK_CREATURE);
         single.put("non basic land", TARGET_NONBASIC_LAND);
+        single.put("nonbasic land", TARGET_NONBASIC_LAND);
         single.put("spell", TARGET_SPELL);
         single.put("spell or permanent", TARGET_SPELL_OR_PERMANENT);
         single.put("spell you don't control", TARGET_SPELL_YOU_DONT_CONTROL);

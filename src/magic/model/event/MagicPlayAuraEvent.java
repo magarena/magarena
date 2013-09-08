@@ -8,6 +8,7 @@ import magic.model.action.MagicPlayCardFromStackAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTargetPicker;
+import magic.model.target.MagicTargetHint;
 
 public class MagicPlayAuraEvent extends MagicSpellCardEvent {
 
@@ -48,7 +49,10 @@ public class MagicPlayAuraEvent extends MagicSpellCardEvent {
     public static MagicPlayAuraEvent create(final String script) {
         final String[] token = script.split(",");
         final MagicTargetPicker<?> targetPicker = MagicTargetPicker.build(token[0]);
-        final MagicTargetChoice targetChoice = MagicTargetChoice.build(token[1]);
+        final MagicTargetChoice targetChoice = new MagicTargetChoice(
+            MagicTargetHint.getHint(token[1]),
+            MagicTargetHint.removeHint(token[1])
+        );
         assert targetPicker != null : "targetPicker is null";
         assert targetChoice != null : "targetChoice is null";
         return new MagicPlayAuraEvent(targetChoice, targetPicker);

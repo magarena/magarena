@@ -16,6 +16,7 @@ import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicDrawAction;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTarget;
+import magic.model.target.MagicTargetHint;
 import magic.model.target.MagicTargetPicker;
 import magic.model.target.MagicDefaultTargetPicker;
 import magic.model.target.MagicDestroyTargetPicker;
@@ -28,7 +29,7 @@ import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
 public enum MagicRuleEventAction {
-    Destroy("destroy ([^\\.]*).", "neg", new MagicDestroyTargetPicker(false), new MagicEventAction() {
+    Destroy("destroy ([^\\.]*).", MagicTargetHint.Negative, new MagicDestroyTargetPicker(false), new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
@@ -38,7 +39,7 @@ public enum MagicRuleEventAction {
             });
         }
     }),
-    DestroyNoRegen("destroy ([^\\.]*). it can't be regenerated.", "neg", new MagicDestroyTargetPicker(true), new MagicEventAction() {
+    DestroyNoRegen("destroy ([^\\.]*). it can't be regenerated.", MagicTargetHint.Negative, new MagicDestroyTargetPicker(true), new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
@@ -49,7 +50,7 @@ public enum MagicRuleEventAction {
             });
         }
     }),
-    Counter("counter ([^\\.]*).", "neg", MagicDefaultTargetPicker.create(), new MagicEventAction() {
+    Counter("counter ([^\\.]*).", MagicTargetHint.Negative, MagicDefaultTargetPicker.create(), new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game,new MagicCardOnStackAction() {
@@ -59,7 +60,7 @@ public enum MagicRuleEventAction {
             });
         }
     }),
-    Exile("exile ([^\\.]*).", "neg", MagicExileTargetPicker.create(), new MagicEventAction() {
+    Exile("exile ([^\\.]*).", MagicTargetHint.Negative, MagicExileTargetPicker.create(), new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
@@ -69,7 +70,7 @@ public enum MagicRuleEventAction {
             });
         }
     }),
-    Deals1("sn deals 1 damage to ([^\\.]*).", "neg", new MagicDamageTargetPicker(1), new MagicEventAction() {
+    Deals1("sn deals 1 damage to ([^\\.]*).", MagicTargetHint.Negative, new MagicDamageTargetPicker(1), new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game,new MagicTargetAction() {
@@ -80,7 +81,7 @@ public enum MagicRuleEventAction {
             });
         }
     }),
-    Deals2("sn deals 2 damage to ([^\\.]*).", "neg", new MagicDamageTargetPicker(2), new MagicEventAction() {
+    Deals2("sn deals 2 damage to ([^\\.]*).", MagicTargetHint.Negative, new MagicDamageTargetPicker(2), new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game,new MagicTargetAction() {
@@ -91,7 +92,7 @@ public enum MagicRuleEventAction {
             });
         }
     }),
-    Deals3("sn deals 3 damage to ([^\\.]*).", "neg", new MagicDamageTargetPicker(3), new MagicEventAction() {
+    Deals3("sn deals 3 damage to ([^\\.]*).", MagicTargetHint.Negative, new MagicDamageTargetPicker(3), new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game,new MagicTargetAction() {
@@ -102,7 +103,7 @@ public enum MagicRuleEventAction {
             });
         }
     }),
-    Deals4("sn deals 4 damage to ([^\\.]*).", "neg", new MagicDamageTargetPicker(4), new MagicEventAction() {
+    Deals4("sn deals 4 damage to ([^\\.]*).", MagicTargetHint.Negative, new MagicDamageTargetPicker(4), new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game,new MagicTargetAction() {
@@ -113,7 +114,7 @@ public enum MagicRuleEventAction {
             });
         }
     }),
-    Deals5("sn deals 5 damage to ([^\\.]*).", "neg", new MagicDamageTargetPicker(5), new MagicEventAction() {
+    Deals5("sn deals 5 damage to ([^\\.]*).", MagicTargetHint.Negative, new MagicDamageTargetPicker(5), new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game,new MagicTargetAction() {
@@ -151,15 +152,15 @@ public enum MagicRuleEventAction {
     ;
 
     private final Pattern pattern;
-    private final String hint;
+    private final MagicTargetHint hint;
     public final MagicEventAction action;
     public final MagicTargetPicker picker;
     
     private MagicRuleEventAction(final String aPattern, final MagicEventAction aAction) {
-        this(aPattern, "", MagicDefaultTargetPicker.create(), aAction);
+        this(aPattern, MagicTargetHint.None, MagicDefaultTargetPicker.create(), aAction);
     }
 
-    private MagicRuleEventAction(final String aPattern, final String aHint, final MagicTargetPicker aPicker, final MagicEventAction aAction) {
+    private MagicRuleEventAction(final String aPattern, final MagicTargetHint aHint, final MagicTargetPicker aPicker, final MagicEventAction aAction) {
         pattern = Pattern.compile(aPattern);
         hint = aHint;
         picker = aPicker;
@@ -177,7 +178,7 @@ public enum MagicRuleEventAction {
             throw new RuntimeException("unknown rule: " + rule);
         }
         return (matcher.groupCount() > 0) ?
-            MagicTargetChoice.build(hint + " " + matcher.group(1)) :
+            new MagicTargetChoice(hint, matcher.group(1)) :
             MagicChoice.NONE;
     }
 
