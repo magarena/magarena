@@ -5,5 +5,5 @@ value=3.938
 rarity=U
 type=Sorcery
 cost={2}{U}{U}
+effect=PN draws three cards.
 timing=draw
-requires_groovy_code=Harmonize

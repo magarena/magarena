@@ -5,5 +5,5 @@ value=3.578
 rarity=U
 type=Instant
 cost={3}{U}{U}
+effect=PN draws three cards.
 timing=draw
-requires_groovy_code=Harmonize
