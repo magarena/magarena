@@ -829,6 +829,7 @@ public class MagicTargetChoice extends MagicChoice {
         factory.put("neg target creature", NEG_TARGET_CREATURE);
         factory.put("neg target creature or enchantment", NEG_TARGET_CREATURE_OR_ENCHANTMENT);
         factory.put("neg target creature or land", NEG_TARGET_CREATURE_OR_LAND);
+        factory.put("neg target creature or player", NEG_TARGET_CREATURE_OR_PLAYER);
         factory.put("neg target creature or planeswalker", NEG_TARGET_CREATURE_OR_PLANESWALKER);
         factory.put("neg target creature with power 4 or greater", NEG_TARGET_CREATURE_POWER_4_OR_MORE);
         factory.put("neg target creature with flying", NEG_TARGET_CREATURE_WITH_FLYING);

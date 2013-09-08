@@ -4,17 +4,22 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
+import magic.model.MagicDamage;
 import magic.model.action.MagicCardOnStackAction;
 import magic.model.action.MagicCounterItemOnStackAction;
 import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicPermanentAction;
+import magic.model.action.MagicTargetAction;
 import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.action.MagicChangeStateAction;
+import magic.model.action.MagicDealDamageAction;
 import magic.model.stack.MagicCardOnStack;
+import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetPicker;
 import magic.model.target.MagicDefaultTargetPicker;
 import magic.model.target.MagicDestroyTargetPicker;
 import magic.model.target.MagicExileTargetPicker;
+import magic.model.target.MagicDamageTargetPicker;
 import magic.model.choice.MagicTargetChoice;
 
 import java.util.regex.Pattern;
@@ -61,7 +66,64 @@ public enum MagicRuleEventAction {
                 }
             });
         }
-    });
+    }),
+    Deals1("sn deals 1 damage to ([^\\.]*).", "neg", new MagicDamageTargetPicker(1), new MagicEventAction() {
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            event.processTarget(game,new MagicTargetAction() {
+                public void doAction(final MagicTarget target) {
+                    final MagicDamage damage=new MagicDamage(event.getSource(),target,1);
+                    game.doAction(new MagicDealDamageAction(damage));
+                }
+            });
+        }
+    }),
+    Deals2("sn deals 2 damage to ([^\\.]*).", "neg", new MagicDamageTargetPicker(2), new MagicEventAction() {
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            event.processTarget(game,new MagicTargetAction() {
+                public void doAction(final MagicTarget target) {
+                    final MagicDamage damage=new MagicDamage(event.getSource(),target,2);
+                    game.doAction(new MagicDealDamageAction(damage));
+                }
+            });
+        }
+    }),
+    Deals3("sn deals 3 damage to ([^\\.]*).", "neg", new MagicDamageTargetPicker(3), new MagicEventAction() {
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            event.processTarget(game,new MagicTargetAction() {
+                public void doAction(final MagicTarget target) {
+                    final MagicDamage damage=new MagicDamage(event.getSource(),target,3);
+                    game.doAction(new MagicDealDamageAction(damage));
+                }
+            });
+        }
+    }),
+    Deals4("sn deals 4 damage to ([^\\.]*).", "neg", new MagicDamageTargetPicker(4), new MagicEventAction() {
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            event.processTarget(game,new MagicTargetAction() {
+                public void doAction(final MagicTarget target) {
+                    final MagicDamage damage=new MagicDamage(event.getSource(),target,4);
+                    game.doAction(new MagicDealDamageAction(damage));
+                }
+            });
+        }
+    }),
+    Deals5("sn deals 5 damage to ([^\\.]*).", "neg", new MagicDamageTargetPicker(5), new MagicEventAction() {
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            event.processTarget(game,new MagicTargetAction() {
+                public void doAction(final MagicTarget target) {
+                    final MagicDamage damage=new MagicDamage(event.getSource(),target,5);
+                    game.doAction(new MagicDealDamageAction(damage));
+                }
+            });
+        }
+    }),
+    
+    ;
 
     private final Pattern pattern;
     private final String hint;
