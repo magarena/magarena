@@ -68,6 +68,7 @@ import magic.model.trigger.MagicThiefTrigger.Choice;
 import magic.model.trigger.MagicThiefTrigger.Player;
 import magic.model.trigger.MagicWhenBlocksPumpTrigger;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
+import magic.model.trigger.MagicWhenLeavesPlayTrigger;
 import magic.model.trigger.MagicWhenDiesTrigger;
 import magic.model.trigger.MagicAtEndOfTurnTrigger;
 import magic.model.trigger.MagicAtUpkeepTrigger;
@@ -620,52 +621,6 @@ public enum MagicAbility {
             card.add(MagicWhenComesIntoPlayTrigger.Draw(n));
         }
     },
-    EntersDamageTarget("enters damage target", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final String[] tokens = arg.split(" ");
-            if (tokens.length == 1) {
-                final int n = Integer.parseInt(tokens[0]);
-                card.add(new MagicEntersDamageTargetTrigger(
-                            MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
-                            n));
-            } else if ("creature".equals(tokens[0])) {
-                final int n = Integer.parseInt(tokens[1]);
-                card.add(new MagicEntersDamageTargetTrigger(
-                            MagicTargetChoice.TARGET_CREATURE,
-                            n));
-            } else if ("player".equals(tokens[0])) {
-                final int n = Integer.parseInt(tokens[1]);
-                card.add(new MagicEntersDamageTargetTrigger(
-                            MagicTargetChoice.NEG_TARGET_PLAYER,
-                            n));
-            } else {
-                throw new RuntimeException("unable to parse " + arg);
-            }
-        }
-    },
-    LeavesDamageTarget("leaves damage target", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final String[] tokens = arg.split(" ");
-            if (tokens.length == 1) {
-                final int n = Integer.parseInt(tokens[0]);
-                card.add(new MagicLeavesDamageTargetTrigger(
-                            MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
-                            n));
-            } else if ("creature".equals(tokens[0])) {
-                final int n = Integer.parseInt(tokens[1]);
-                card.add(new MagicLeavesDamageTargetTrigger(
-                            MagicTargetChoice.TARGET_CREATURE,
-                            n));
-            } else if ("player".equals(tokens[0])) {
-                final int n = Integer.parseInt(tokens[1]);
-                card.add(new MagicLeavesDamageTargetTrigger(
-                            MagicTargetChoice.NEG_TARGET_PLAYER,
-                            n));
-            } else {
-                throw new RuntimeException("unable to parse " + arg);
-            }
-        }
-    },
     Echo("echo",-20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             assert arg.isEmpty() == false: this + " does not accept empty arg";
@@ -735,6 +690,16 @@ public enum MagicAbility {
     EntersDestroy("enters destroy", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicWhenComesIntoPlayTrigger.create("Destroy " + arg));
+        }
+    },
+    EntersDamage("enters deals", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            card.add(MagicWhenComesIntoPlayTrigger.create("SN deals " + arg));
+        }
+    },
+    LeavesDamage("leaves deals", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            card.add(MagicWhenLeavesPlayTrigger.create("SN deals " + arg));
         }
     },
     ControlEnchanted("control enchanted", 10) {
