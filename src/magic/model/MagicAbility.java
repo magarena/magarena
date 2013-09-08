@@ -474,18 +474,28 @@ public enum MagicAbility {
             card.add(new MagicThiefTrigger(Type.Combat, Choice.May, Player.Any));
         }
     },
-    DamageGrow("damage grow",10) {
+    DamagePlayerGrow("damage player grow",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final String[] tokens = arg.split(" ");
-            final boolean player = "player".equals(tokens[0]);
-            card.add(new MagicDamageGrowTrigger(false, player));
+            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+            card.add(new MagicDamageGrowTrigger(false, true));
         }
     },
-    CombatDamageGrow("combat damage grow",10) {
+    DamageCreatureGrow("damage creature grow",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final String[] tokens = arg.split(" ");
-            final boolean player = "player".equals(tokens[0]);
-            card.add(new MagicDamageGrowTrigger(true, player));
+            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+            card.add(new MagicDamageGrowTrigger(false, false));
+        }
+    },
+    CombatDamagePlayerGrow("combat damage player grow",10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+            card.add(new MagicDamageGrowTrigger(true, true));
+        }
+    },
+    CombatDamageCreatureGrow("combat damage creature grow",10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+            card.add(new MagicDamageGrowTrigger(true, false));
         }
     },
     OpponentDiscardOntoBattlefield("opponent discard onto battlefield",10) {

@@ -7,5 +7,5 @@ type=Creature
 subtype=Vampire
 cost={1}{R}
 pt=2/1
-ability=attacks each turn if able;combat damage grow player
+ability=attacks each turn if able;combat damage player grow
 timing=main

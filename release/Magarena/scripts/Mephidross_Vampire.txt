@@ -7,6 +7,6 @@ type=Creature
 subtype=Vampire
 cost={4}{B}{B}
 pt=3/4
-ability=flying;lord creatures you control have damage grow
+ability=flying;lord creatures you control have damage creature grow
 timing=main
 requires_groovy_code

@@ -7,5 +7,5 @@ type=Creature
 subtype=Vampire
 cost={2}{R}{R}
 pt=2/2
-ability=intimidate;combat damage grow player
+ability=intimidate;combat damage player grow
 timing=main
