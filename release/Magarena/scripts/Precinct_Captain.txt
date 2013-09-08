@@ -1,0 +1,12 @@
+name=Precinct Captain
+url=http://magiccards.info/rtr/en/17.html
+image=http://magiccards.info/scans/en/rtr/17.jpg
+value=0.74
+rarity=R
+type=Creature
+subtype=Human,Soldier
+cost={W}{W}
+pt=2/2
+ability=first strike
+timing=main
+requires_groovy_code
