@@ -125,25 +125,49 @@ public enum MagicRuleEventAction {
             });
         }
     }),
-    DrawACard("pn draws a card.", new MagicEventAction() {
+    DrawsACard("pn draws a card.", new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicDrawAction(event.getPlayer(), 1));
         }
     }),
-    DrawTwoCards("pn draws two cards.", new MagicEventAction() {
+    DrawsTwoCards("pn draws two cards.", new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicDrawAction(event.getPlayer(), 2));
         }
     }),
-    DrawThreeCards("pn draws three cards.", new MagicEventAction() {
+    DrawsThreeCards("pn draws three cards.", new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicDrawAction(event.getPlayer(), 3));
         }
     }),
-    DrawFourCards("pn draws four cards.", new MagicEventAction() {
+    DrawsFourCards("pn draws four cards.", new MagicEventAction() {
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            game.doAction(new MagicDrawAction(event.getPlayer(), 4));
+        }
+    }),
+    DrawACard("draw a card.", new MagicEventAction() {
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            game.doAction(new MagicDrawAction(event.getPlayer(), 1));
+        }
+    }),
+    DrawTwoCards("draw two cards.", new MagicEventAction() {
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            game.doAction(new MagicDrawAction(event.getPlayer(), 2));
+        }
+    }),
+    DrawThreeCards("draw three cards.", new MagicEventAction() {
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            game.doAction(new MagicDrawAction(event.getPlayer(), 3));
+        }
+    }),
+    DrawFourCards("draw four cards.", new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicDrawAction(event.getPlayer(), 4));

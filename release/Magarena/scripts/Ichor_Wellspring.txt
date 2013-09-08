@@ -6,4 +6,4 @@ rarity=C
 type=Artifact
 cost={2}
 timing=artifact
-ability=enters draw a card.;die draw card
+ability=enters draw a card.;die draw a card.

@@ -7,5 +7,5 @@ type=Creature
 subtype=Homunculus
 cost={1}{U}
 pt=1/1
-ability=die may draw card
+ability=die may draw a card.
 timing=main

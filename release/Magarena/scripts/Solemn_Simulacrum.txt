@@ -7,6 +7,6 @@ type=Artifact,Creature
 subtype=Golem
 cost={4}
 pt=2/2
-ability=die may draw card
+ability=die may draw a card.
 timing=main
 requires_groovy_code=Farhaven Elf

@@ -439,16 +439,14 @@ public enum MagicAbility {
             card.add(MagicSpecterTrigger.Random(Type.Any, Player.Opponent, n));
         }
     },
-    DieDrawCard("die draw card",10) {
+    DieDrawCard("die draw",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
-            card.add(new MagicDieDrawCardTrigger(true));
+            card.add(MagicWhenDiesTrigger.create("PN draws " + arg));
         }
     },
-    DieMayDrawCard("die may draw card",10) {
+    DieMayDrawCard("die may draw",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
-            card.add(new MagicDieDrawCardTrigger(false));
+            card.add(MagicWhenDiesTrigger.createMay("draw " + arg));
         }
     },
     DieReturnToOwnersHand("die return to owner's hand",10) {
