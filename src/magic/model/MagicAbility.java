@@ -615,12 +615,6 @@ public enum MagicAbility {
             card.add(new MagicTappedIntoPlayUnlessTrigger(t1,t2));
         }
     },
-    EntersDrawCard("enters draw card", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final int n = Integer.parseInt(arg);
-            card.add(MagicWhenComesIntoPlayTrigger.Draw(n));
-        }
-    },
     Echo("echo",-20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             assert arg.isEmpty() == false: this + " does not accept empty arg";
@@ -695,6 +689,11 @@ public enum MagicAbility {
     EntersDamage("enters deals", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicWhenComesIntoPlayTrigger.create("SN deals " + arg));
+        }
+    },
+    EntersDrawCard("enters draw", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            card.add(MagicWhenComesIntoPlayTrigger.create("PN draws " + arg));
         }
     },
     LeavesDamage("leaves deals", 10) {

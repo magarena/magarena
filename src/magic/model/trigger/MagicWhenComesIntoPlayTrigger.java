@@ -5,7 +5,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
-import magic.model.choice.MagicTargetChoice;
+import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicMayChoice;
 import magic.model.target.MagicTargetPicker;
 import magic.model.event.MagicEvent;
@@ -37,7 +37,7 @@ public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPa
         final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
         final MagicEventAction action  = ruleAction.action;
         final MagicTargetPicker picker = ruleAction.picker;
-        final MagicTargetChoice choice = ruleAction.getChoice(effect);
+        final MagicChoice choice = ruleAction.getChoice(effect);
 
         return new MagicWhenComesIntoPlayTrigger() {
             @Override
@@ -64,7 +64,7 @@ public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPa
         final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
         final MagicEventAction action  = ruleAction.action;
         final MagicTargetPicker picker = ruleAction.picker;
-        final MagicTargetChoice choice = ruleAction.getChoice(effect);
+        final MagicChoice choice = ruleAction.getChoice(effect);
 
         return new MagicWhenComesIntoPlayTrigger() {
             @Override
@@ -126,23 +126,4 @@ public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPa
             game.doAction(new MagicSacrificeAction(event.getPermanent()));
         }
     };
-    
-    public static final MagicWhenComesIntoPlayTrigger Draw(final int n) {
-        return new MagicWhenComesIntoPlayTrigger() {
-            @Override
-            public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
-                return new MagicEvent(
-                    permanent,
-                    this,
-                    n == 1 ? 
-                        "PN draws a card." :
-                        "PN draws " + n + " cards"
-                );
-            }
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new MagicDrawAction(event.getPlayer(), n));
-            }
-        };
-    }
 }

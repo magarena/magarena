@@ -4,7 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicLocationType;
 import magic.model.target.MagicTargetPicker;
-import magic.model.choice.MagicTargetChoice;
+import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventAction;
@@ -38,7 +38,7 @@ public abstract class MagicWhenLeavesPlayTrigger extends MagicTrigger<MagicRemov
         final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
         final MagicEventAction action  = ruleAction.action;
         final MagicTargetPicker picker = ruleAction.picker;
-        final MagicTargetChoice choice = ruleAction.getChoice(effect);
+        final MagicChoice choice = ruleAction.getChoice(effect);
 
         return new MagicWhenLeavesPlayTrigger() {
             @Override

@@ -13,6 +13,7 @@ import magic.model.action.MagicTargetAction;
 import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.action.MagicChangeStateAction;
 import magic.model.action.MagicDealDamageAction;
+import magic.model.action.MagicDrawAction;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetPicker;
@@ -21,6 +22,7 @@ import magic.model.target.MagicDestroyTargetPicker;
 import magic.model.target.MagicExileTargetPicker;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.choice.MagicTargetChoice;
+import magic.model.choice.MagicChoice;
 
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
@@ -122,13 +124,28 @@ public enum MagicRuleEventAction {
             });
         }
     }),
-    
+    DrawACard("pn draws a card.", new MagicEventAction() {
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            game.doAction(new MagicDrawAction(event.getPlayer(), 1));
+        }
+    }),
+    DrawTwoCards("pn draws two cards.", new MagicEventAction() {
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            game.doAction(new MagicDrawAction(event.getPlayer(), 2));
+        }
+    }),
     ;
 
     private final Pattern pattern;
     private final String hint;
     public final MagicEventAction action;
     public final MagicTargetPicker picker;
+    
+    private MagicRuleEventAction(final String aPattern, final MagicEventAction aAction) {
+        this(aPattern, "", MagicDefaultTargetPicker.create(), aAction);
+    }
 
     private MagicRuleEventAction(final String aPattern, final String aHint, final MagicTargetPicker aPicker, final MagicEventAction aAction) {
         pattern = Pattern.compile(aPattern);
@@ -141,14 +158,15 @@ public enum MagicRuleEventAction {
         return pattern.matcher(rule).matches();
     }
 
-    public MagicTargetChoice getChoice(final String rule) {
+    public MagicChoice getChoice(final String rule) {
         final Matcher matcher = pattern.matcher(rule);
         final boolean matches = matcher.matches();
         if (!matches) {
             throw new RuntimeException("unknown rule: " + rule);
         }
-        final String targetClause = matcher.group(1);
-        return MagicTargetChoice.build(hint + " " + targetClause);
+        return (matcher.groupCount() > 0) ?
+            MagicTargetChoice.build(hint + " " + matcher.group(1)) :
+            MagicChoice.NONE;
     }
 
     public static MagicRuleEventAction build(final String rule) {
