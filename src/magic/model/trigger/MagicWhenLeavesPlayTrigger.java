@@ -33,6 +33,33 @@ public abstract class MagicWhenLeavesPlayTrigger extends MagicTrigger<MagicRemov
         }
     };
     
+    public static MagicWhenLeavesPlayTrigger createMay(final String rule) {
+        final String effect = rule.toLowerCase();
+        final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
+        final MagicEventAction action  = ruleAction.action;
+        final MagicTargetPicker picker = ruleAction.picker;
+        final MagicChoice choice = ruleAction.getChoice(effect);
+
+        return new MagicWhenLeavesPlayTrigger() {
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
+                return new MagicEvent(
+                    permanent,
+                    new MagicMayChoice(choice),
+                    picker,
+                    this,
+                    "PN may$ " + rule + "$"
+                );
+            }
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                if (event.isYes()) {
+                    action.executeEvent(game, event);
+                }
+            }
+        };
+    }
+    
     public static MagicWhenLeavesPlayTrigger create(final String rule) {
         final String effect = rule.toLowerCase();
         final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
