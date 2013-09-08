@@ -8,5 +8,7 @@ type=Creature
 subtype=Kavu
 cost={5}{R}
 pt=4/2
-ability=echo {5}{R};enters damage target creature 2;leaves damage target creature 4
+ability=echo {5}{R};\
+        enters deals 2 damage to target creature.;\
+        leaves deals 4 damage to target creature.;
 timing=main

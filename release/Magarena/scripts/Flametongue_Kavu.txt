@@ -8,5 +8,5 @@ type=Creature
 subtype=Kavu
 cost={3}{R}
 pt=4/2
-ability=enters damage target creature 4
+ability=enters deals 4 damage to target creature.
 timing=fmain

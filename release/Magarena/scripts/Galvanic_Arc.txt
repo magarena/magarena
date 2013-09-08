@@ -8,6 +8,6 @@ type=Enchantment
 subtype=Aura
 cost={2}{R}
 given_ability=first strike
-ability=enters damage target 3
+ability=enters deals 3 damage to target creature or player.
 timing=removal
 enchant=first strike,creature
