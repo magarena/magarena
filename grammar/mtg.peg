@@ -682,7 +682,7 @@ GainVerb
     ;
 
 PumpAction
-    = SelectCreature SPACE "get" "s"? SPACE SignedNumber "/" SignedNumber 
+    = SelectCreature SPACE "get" "s"? SPACE PowerToughnessMod
     ;
 
 AddManaAction
@@ -1177,6 +1177,10 @@ NoRegen
 
 PowerToughness
     = Number "/" Number
+    ;
+
+PowerToughnessMod
+    = SignedNumber "/" SignedNumber
     ;
 
 SignedNumber
