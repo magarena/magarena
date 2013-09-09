@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 
-public class MagicDeclareAttackersResult extends ArrayList<MagicPermanent> implements MagicMappable {
+public class MagicDeclareAttackersResult extends ArrayList<MagicPermanent> implements MagicMappable<MagicDeclareAttackersResult> {
 
     private static final long serialVersionUID = 1L;
 

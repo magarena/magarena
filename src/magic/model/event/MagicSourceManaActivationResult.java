@@ -4,7 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicMappable;
 import magic.model.MagicPermanent;
 
-public class MagicSourceManaActivationResult implements MagicMappable {
+public class MagicSourceManaActivationResult implements MagicMappable<MagicSourceManaActivationResult> {
 
     private final MagicPermanent permanent;
     private final MagicManaActivation activation;
