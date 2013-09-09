@@ -574,9 +574,13 @@ bytes_per_card:
 reminder.txt: cards/cards.xml
 	grep 'reminder="[^"]*"' $^ -o | sed 's/reminder=//' | sort | uniq -c | sort -rn > $@
 
-fix_eol:
-	sed -i -e '$$a\'       release/Magarena/**/*.txt release/Magarena/**/*.groovy src/**/*.java
-	sed -i -e 's/\x0D$$//' release/Magarena/**/*.txt release/Magarena/**/*.groovy src/**/*.java
+normalize_files:
+	# add newline at end of file
+	sed -i -e '$$a\'        release/Magarena/**/*.txt release/Magarena/**/*.groovy src/**/*.java
+	# convert DOS newlines to UNIX format
+	sed -i -e 's/\x0D$$//'  release/Magarena/**/*.txt release/Magarena/**/*.groovy src/**/*.java
+	# convert tab to four spaces
+	sed -i -e 's/\t/    /g' release/Magarena/**/*.txt release/Magarena/**/*.groovy src/**/*.java
 
 %.post:
 	@echo "[img]"`grep -o "http.*jpg" release/Magarena/scripts/$*.txt`"[/img]"
