@@ -179,6 +179,8 @@ Keyword
     / "extort"
     / "evolve"
     / "unleash"
+    / "evoke" SPACE ManaCost
+    / "indestructible"
     ;
 
 ColorlessCost
@@ -325,10 +327,7 @@ PermanentState
     = "can't attack or block" 
     / "can't attack" 
     / "can't block" 
-    / "is indestructible" 
-    / "are indestructible" 
-    / "is unblockable" 
-    / "are unblockable" 
+    / "can't be blocked" 
     / "attacks each turn if able"
     / "can't be countered"
     / "are " ColorSpec
