@@ -11,7 +11,9 @@ import java.util.Arrays;
 import java.util.List;
 
 public class MagicBuilderPayManaCostResult implements
-    MagicPayManaCostResult, MagicMappable, Comparable<MagicBuilderPayManaCostResult> {
+    MagicPayManaCostResult, 
+    MagicMappable<MagicBuilderPayManaCostResult>, 
+    Comparable<MagicBuilderPayManaCostResult> {
 
     private MagicSourceManaActivationResult[] results;
     private short[] amountLeft;
