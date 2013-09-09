@@ -634,7 +634,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     }
 
     // cast card activation is the first element of cardActivations
-    public MagicActivation getCastActivation() {
+    public MagicActivation<MagicCard> getCastActivation() {
         assert cardActivations.size() >= 1 : this + " has no card activations";
         return cardActivations.getFirst();
     }
