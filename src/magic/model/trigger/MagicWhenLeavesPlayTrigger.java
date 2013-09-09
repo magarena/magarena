@@ -37,7 +37,7 @@ public abstract class MagicWhenLeavesPlayTrigger extends MagicTrigger<MagicRemov
         final String effect = rule.toLowerCase();
         final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
         final MagicEventAction action  = ruleAction.action;
-        final MagicTargetPicker picker = ruleAction.picker;
+        final MagicTargetPicker<?> picker = ruleAction.picker;
         final MagicChoice choice = ruleAction.getChoice(effect);
 
         return new MagicWhenLeavesPlayTrigger() {
@@ -64,7 +64,7 @@ public abstract class MagicWhenLeavesPlayTrigger extends MagicTrigger<MagicRemov
         final String effect = rule.toLowerCase();
         final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
         final MagicEventAction action  = ruleAction.action;
-        final MagicTargetPicker picker = ruleAction.picker;
+        final MagicTargetPicker<?> picker = ruleAction.picker;
         final MagicChoice choice = ruleAction.getChoice(effect);
 
         return new MagicWhenLeavesPlayTrigger() {

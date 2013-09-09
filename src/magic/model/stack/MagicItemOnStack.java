@@ -27,12 +27,12 @@ public abstract class MagicItemOnStack implements MagicTarget, MagicMappable<Mag
     private final MagicSource source;
     private final MagicPlayer controller;
     private final MagicEvent event;
-    private final MagicActivation activation; //may be null
+    private final MagicActivation<?> activation; //may be null
     private final long id;
 
     private Object[] choiceResults=MagicEvent.NO_CHOICE_RESULTS;
 
-    MagicItemOnStack(final MagicSource aSource, final MagicPlayer aController, final MagicEvent aEvent, final MagicActivation act) {
+    MagicItemOnStack(final MagicSource aSource, final MagicPlayer aController, final MagicEvent aEvent, final MagicActivation<?> act) {
         source = aSource;
         controller = aController;
         event = aEvent;
@@ -100,7 +100,7 @@ public abstract class MagicItemOnStack implements MagicTarget, MagicMappable<Mag
         return 0;
     }
 
-    MagicActivation getActivation() {
+    MagicActivation<?> getActivation() {
         return activation;
     }
 

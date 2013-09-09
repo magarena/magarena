@@ -178,13 +178,13 @@ public enum MagicRuleEventAction {
     private final Pattern pattern;
     private final MagicTargetHint hint;
     public final MagicEventAction action;
-    public final MagicTargetPicker picker;
+    public final MagicTargetPicker<?> picker;
     
     private MagicRuleEventAction(final String aPattern, final MagicEventAction aAction) {
         this(aPattern, MagicTargetHint.None, MagicDefaultTargetPicker.create(), aAction);
     }
 
-    private MagicRuleEventAction(final String aPattern, final MagicTargetHint aHint, final MagicTargetPicker aPicker, final MagicEventAction aAction) {
+    private MagicRuleEventAction(final String aPattern, final MagicTargetHint aHint, final MagicTargetPicker<?> aPicker, final MagicEventAction aAction) {
         pattern = Pattern.compile(aPattern);
         hint = aHint;
         picker = aPicker;

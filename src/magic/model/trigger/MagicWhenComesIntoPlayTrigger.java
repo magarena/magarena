@@ -36,7 +36,7 @@ public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPa
         final String effect = rule.toLowerCase();
         final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
         final MagicEventAction action  = ruleAction.action;
-        final MagicTargetPicker picker = ruleAction.picker;
+        final MagicTargetPicker<?> picker = ruleAction.picker;
         final MagicChoice choice = ruleAction.getChoice(effect);
 
         return new MagicWhenComesIntoPlayTrigger() {
@@ -63,7 +63,7 @@ public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPa
         final String effect = rule.toLowerCase();
         final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
         final MagicEventAction action  = ruleAction.action;
-        final MagicTargetPicker picker = ruleAction.picker;
+        final MagicTargetPicker<?> picker = ruleAction.picker;
         final MagicChoice choice = ruleAction.getChoice(effect);
 
         return new MagicWhenComesIntoPlayTrigger() {

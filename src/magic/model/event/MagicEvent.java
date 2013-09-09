@@ -93,7 +93,7 @@ public class MagicEvent implements MagicCopyable {
     private final MagicSource source;
     private final MagicPlayer player;
     private final MagicChoice choice;
-    private final MagicTargetPicker targetPicker;
+    private final MagicTargetPicker<?> targetPicker;
     private final MagicEventAction action;
     private final String description;
     private final MagicCopyable ref;
@@ -103,7 +103,7 @@ public class MagicEvent implements MagicCopyable {
             final MagicSource source,
             final MagicPlayer player,
             final MagicChoice choice,
-            final MagicTargetPicker targetPicker,
+            final MagicTargetPicker<?> targetPicker,
             final MagicCopyable ref,
             final MagicEventAction action,
             final String description) {
@@ -120,7 +120,7 @@ public class MagicEvent implements MagicCopyable {
             final MagicSource source,
             final MagicPlayer player,
             final MagicChoice choice,
-            final MagicTargetPicker targetPicker,
+            final MagicTargetPicker<?> targetPicker,
             final int ref,
             final MagicEventAction action,
             final String description) {
@@ -131,7 +131,7 @@ public class MagicEvent implements MagicCopyable {
     public MagicEvent(
             final MagicSource source,
             final MagicChoice choice,
-            final MagicTargetPicker targetPicker,
+            final MagicTargetPicker<?> targetPicker,
             final MagicCopyable ref,
             final MagicEventAction action,
             final String description) {
@@ -141,7 +141,7 @@ public class MagicEvent implements MagicCopyable {
     public MagicEvent(
             final MagicSource source,
             final MagicChoice choice,
-            final MagicTargetPicker targetPicker,
+            final MagicTargetPicker<?> targetPicker,
             final int ref,
             final MagicEventAction action,
             final String description) {
@@ -152,7 +152,7 @@ public class MagicEvent implements MagicCopyable {
             final MagicSource source,
             final MagicPlayer player,
             final MagicChoice choice,
-            final MagicTargetPicker targetPicker,
+            final MagicTargetPicker<?> targetPicker,
             final MagicEventAction action,
             final String description) {
         this(source,player,choice,targetPicker,NO_REF,action,description);
@@ -161,7 +161,7 @@ public class MagicEvent implements MagicCopyable {
     public MagicEvent(
             final MagicSource source,
             final MagicChoice choice,
-            final MagicTargetPicker targetPicker,
+            final MagicTargetPicker<?> targetPicker,
             final MagicEventAction action,
             final String description) {
         this(source,source.getController(),choice,targetPicker,NO_REF,action,description);
@@ -367,7 +367,7 @@ public class MagicEvent implements MagicCopyable {
         return choice;
     }
 
-    public final MagicTargetPicker getTargetPicker() {
+    public final MagicTargetPicker<?> getTargetPicker() {
         return targetPicker;
     }
 
