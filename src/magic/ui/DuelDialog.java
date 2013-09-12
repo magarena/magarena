@@ -10,12 +10,12 @@ import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.SliderPanel;
-import support.ui.GenericJComboBox;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Vector;
+import javax.swing.JComboBox;
 import javax.swing.ComboBoxModel;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.ImageIcon;
@@ -51,8 +51,8 @@ public class DuelDialog extends JDialog implements ActionListener {
     private final SliderPanel gameSlider;
     private final ColorsChooser playerColorsChooser;
     private final ColorsChooser opponentColorsChooser;
-    private final GenericJComboBox<String> cubeComboBox;
-    private final GenericJComboBox<String> aiComboBox;
+    private final JComboBox<String> cubeComboBox;
+    private final JComboBox<String> aiComboBox;
     private final JButton okButton;
     private final JButton cancelButton;
     private final Theme theme;
@@ -128,20 +128,20 @@ public class DuelDialog extends JDialog implements ActionListener {
         cubeLabel.setIcon(IconImages.CUBE);
         cubeLabel.setBounds(55,330,80,25);
         mainPanel.add(cubeLabel);
-        cubeComboBox=new GenericJComboBox<String>(Arrays.asList(CubeDefinitions.getCubeNames()));
+        cubeComboBox=new JComboBox<String>(CubeDefinitions.getCubeNames());
         cubeComboBox.setFocusable(false);
         cubeComboBox.setBounds(135,330,300,25);
-        cubeComboBox.setGenericSelectedItem(config.getCube());
+        cubeComboBox.setSelectedItem(config.getCube());
         mainPanel.add(cubeComboBox);
 
         final JLabel aiLabel=new JLabel("AI");
         aiLabel.setBounds(55,365,80,25);
         aiLabel.setIcon(IconImages.DIFFICULTY);
         mainPanel.add(aiLabel);
-        aiComboBox=new GenericJComboBox<String>(Arrays.asList(MagicAIImpl.getNames()));
+        aiComboBox=new JComboBox<String>(MagicAIImpl.getNames());
         aiComboBox.setFocusable(false);
         aiComboBox.setBounds(135,365,300,25);
-        aiComboBox.setGenericSelectedItem(config.getAI());
+        aiComboBox.setSelectedItem(config.getAI());
         mainPanel.add(aiComboBox);
 
         getContentPane().setLayout(new BorderLayout());
@@ -165,8 +165,8 @@ public class DuelDialog extends JDialog implements ActionListener {
             config.setNrOfGames(gameSlider.getValue());
             config.setPlayerColors(playerColors);
             config.setOpponentColors(opponentColors);
-            config.setCube(cubeComboBox.getSelectedItem());
-            config.setAI(aiComboBox.getSelectedItem());
+            config.setCube(cubeComboBox.getItemAt(cubeComboBox.getSelectedIndex()));
+            config.setAI(aiComboBox.getItemAt(aiComboBox.getSelectedIndex()));
             config.save();
             frame.newDuel(config);
             dispose();
