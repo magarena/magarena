@@ -292,7 +292,7 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
     }
 
     private void updateProxy() {
-        final boolean use=proxyComboBox.getSelectedItem()!=Proxy.Type.DIRECT;
+        final boolean use = proxyComboBox.getSelectedItem() != Proxy.Type.DIRECT;
         addressTextField.setEnabled(use);
         portTextField.setEnabled(use);
         if (use) {
@@ -383,7 +383,7 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
     public void actionPerformed(final ActionEvent event) {
         final Object source=event.getSource();
         if (source==okButton) {
-            final Proxy.Type proxyType=(Proxy.Type)proxyComboBox.getSelectedItem();
+            final Proxy.Type proxyType = proxyComboBox.getItemAt(proxyComboBox.getSelectedIndex());
             if (proxyType==Proxy.Type.DIRECT) {
                 proxy=Proxy.NO_PROXY;
             } else {
