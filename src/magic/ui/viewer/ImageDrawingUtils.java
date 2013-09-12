@@ -109,42 +109,43 @@ public class ImageDrawingUtils {
         for (final MagicCounterType counterType : MagicCounterType.values()) {
             int amount = permanent.getCounters(counterType);
             if (amount > 0) {
-                if (amount > 9) {
-                    amount = 9;
-                }
+                final String str = Integer.toString(amount);
+                final int inc = 16 + 8 * (str.length() - 1);
                 if (counterType == MagicCounterType.Charge) {
                     g.drawImage(IconImages.CHARGE.getImage(),ax,ay,observer);
-                    g.setColor(Color.DARK_GRAY);
-                    g.drawString(Integer.toString(amount),ax+5,ay+14);
-                    ax+=16;
-                }
-                if (counterType == MagicCounterType.Feather) {
+                    drawStringWithOutline(g, str, ax+5, ay+14, observer);
+                    ax+=inc;
+                } else if (counterType == MagicCounterType.PlusOne) {
+                    g.drawImage(IconImages.PLUS.getImage(),ax,ay,observer);
+                    drawStringWithOutline(g, str, ax+6, ay+14, observer);
+                    ax+=inc;
+                } else if (counterType == MagicCounterType.MinusOne) {
+                    g.drawImage(IconImages.MINUS.getImage(),ax,ay,observer);
+                    drawStringWithOutline(g, str, ax+6, ay+14, observer);
+                    ax+=inc;
+                } else if (counterType == MagicCounterType.Feather) {
                     g.drawImage(IconImages.FEATHER.getImage(),ax,ay,observer);
                     ax+=16;
-                }
-                if (counterType == MagicCounterType.Gold) {
+                } else if (counterType == MagicCounterType.Gold) {
                     g.drawImage(IconImages.GOLDCOUNTER.getImage(),ax,ay,observer);
                     ax+=16;
-                }
-                if (counterType == MagicCounterType.Bribery) {
+                } else if (counterType == MagicCounterType.Bribery) {
                     g.drawImage(IconImages.BRIBECOUNTER.getImage(),ax,ay,observer);
-                    ax+=16;
-                }
-                if (counterType == MagicCounterType.PlusOne) {
-                    g.drawImage(IconImages.PLUS.getImage(),ax,ay,observer);
-                    g.setColor(Color.DARK_GRAY);
-                    g.drawString(Integer.toString(amount),ax+6,ay+14);
-                    ax+=16;
-                }
-                if (counterType == MagicCounterType.MinusOne) {
-                    g.drawImage(IconImages.MINUS.getImage(),ax,ay,observer);
-                    g.setColor(Color.DARK_GRAY);
-                    g.drawString(Integer.toString(amount),ax+6,ay+14);
                     ax+=16;
                 }
             }
         }
         return ax;
+    }
+
+    private static void drawStringWithOutline(final Graphics g, final String str, int x, int y, final ImageObserver observer) {
+        g.setColor(FontsAndBorders.GRAY2);
+        g.drawString(str,x+1,y);
+        g.drawString(str,x-1,y);
+        g.drawString(str,x,y+1);
+        g.drawString(str,x,y-1);
+        g.setColor(Color.DARK_GRAY);
+        g.drawString(str,x,y);
     }
 
     public static void drawCreatureInfo(
