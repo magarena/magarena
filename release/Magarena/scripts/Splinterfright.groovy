@@ -1,11 +1,4 @@
 [
-    new MagicCDA() {
-        @Override
-        public void modPowerToughness(final MagicGame game,final MagicPlayer player,final MagicPowerToughness pt) {
-            final int size = game.filterCards(player,MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD).size();
-            pt.set(size,size);
-        }
-    },
     new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
