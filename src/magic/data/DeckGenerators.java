@@ -36,9 +36,11 @@ public class DeckGenerators {
         // find class
         final String cname = name.replaceAll("[^A-Za-z0-9]", "_");
         try { // reflection
-            final Class<? extends DefaultDeckGenerator> c = (Class<? extends DefaultDeckGenerator>)Class.forName("magic.generator." + cname + "_DeckGenerator");
-
-            addDeckGenerator(name, c);
+            
+            addDeckGenerator(
+                name, 
+                Class.forName("magic.generator." + cname + "_DeckGenerator").asSubclass(DefaultDeckGenerator.class)
+            );
 
             System.err.println("added deck generator " + name);
         } catch (final ClassNotFoundException ex) {
