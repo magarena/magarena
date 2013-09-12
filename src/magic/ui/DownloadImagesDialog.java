@@ -9,6 +9,7 @@ import magic.data.IconImages;
 import magic.data.WebDownloader;
 
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.ComboBoxModel;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFileChooser;
@@ -36,7 +37,7 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
 
     private final MagicFrame frame;
     private final DownloadMissingFiles files;
-    private final JComboBox proxyComboBox;
+    private final JComboBox<Proxy.Type> proxyComboBox;
     private final JTextField addressTextField;
     private final JTextField portTextField;
     private final JProgressBar progressBar;
@@ -124,8 +125,8 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
                 SpringLayout.WEST, contentPane);
 
         final Proxy.Type[] proxyTypes=Proxy.Type.values();
-        final DefaultComboBoxModel proxyModel=new DefaultComboBoxModel(proxyTypes);
-        proxyComboBox=new JComboBox(proxyModel);
+        final ComboBoxModel<Proxy.Type> proxyModel=new DefaultComboBoxModel<Proxy.Type>(proxyTypes);
+        proxyComboBox=new JComboBox<Proxy.Type>(proxyModel);
         proxyComboBox.setFocusable(false);
         proxyComboBox.addActionListener(this);
         add(proxyComboBox);
