@@ -12,7 +12,7 @@ public class LRUCache<K,V> extends LinkedHashMap<K,V> {
         this.capacity = capacity;
     }
 
-    protected boolean removeEldestEntry(final Map.Entry eldest) {
+    protected boolean removeEldestEntry(final Map.Entry<K,V> eldest) {
         return size() > capacity;
     }
 }
