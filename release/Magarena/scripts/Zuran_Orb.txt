@@ -1,0 +1,9 @@
+name=Zuran Orb
+url=http://magiccards.info/fvr/en/15.html
+image=http://magiccards.info/scans/en/fvr/15.jpg
+value=4.500
+rarity=U
+type=Artifact
+cost={0}
+timing=main
+requires_groovy_code
