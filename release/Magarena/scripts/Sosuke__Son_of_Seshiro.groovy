@@ -2,15 +2,13 @@
     new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            return (damage.getSource().getController() == permanent.getController() &&
+            return (damage.getSource().isFriend(permanent) &&
                     damage.getSource().isPermanent() &&
                     damage.getSource().hasSubType(MagicSubType.Warrior) &&
                     damage.isCombat() &&
-                    damage.getTarget().isPermanent() &&
                     damage.getTarget().isCreature()) ?
                 new MagicEvent(
-                    damage.getSource(),
-                    permanent.getController(),
+                    permanent,
                     damage.getTarget(),
                     this,
                     "Destroy RN at end of combat."
