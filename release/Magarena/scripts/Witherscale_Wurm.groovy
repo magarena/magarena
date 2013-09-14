@@ -11,10 +11,13 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicGainAbilityAction(
-                event.getRefPermanent(),
-                MagicAbility.Wither
-            ));
+            event.processRefPermanent(game, {
+                final MagicPermanent permanent ->
+                game.doAction(new MagicGainAbilityAction(
+                    permanent,
+                    MagicAbility.Wither
+                ));
+            } as MagicPermanentAction);
         }
     },
     new MagicWhenDamageIsDealtTrigger() {

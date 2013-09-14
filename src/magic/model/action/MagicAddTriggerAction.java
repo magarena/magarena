@@ -22,16 +22,12 @@ public class MagicAddTriggerAction extends MagicAction {
 
     @Override
     public void doAction(final MagicGame game) {
-        if (permanent.isValid()) {
-            permanentTrigger=game.addTrigger(permanent,trigger);
-        }
+        permanentTrigger=game.addTrigger(permanent,trigger);
     }
 
     @Override
     public void undoAction(final MagicGame game) {
-        if (permanent.isValid()) {
-            game.removeTrigger(permanentTrigger);
-        }
+        game.removeTrigger(permanentTrigger);
     }
     
     @Override

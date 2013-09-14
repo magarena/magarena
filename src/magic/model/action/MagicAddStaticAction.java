@@ -20,17 +20,13 @@ public class MagicAddStaticAction extends MagicAction {
 
     @Override
     public void doAction(final MagicGame game) {
-        if (permanent.isValid()) {
-            game.addStatic(permanent, mstatic);
-            game.setStateCheckRequired();
-        }
+        game.addStatic(permanent, mstatic);
+        game.setStateCheckRequired();
     }
 
     @Override
     public void undoAction(final MagicGame game) {
-        if (permanent.isValid()) {
-            game.removeStatic(permanent, mstatic);
-        }
+        game.removeStatic(permanent, mstatic);
     }
 
     @Override
