@@ -5,8 +5,9 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.NEG_TARGET_SPELL,
+                payedCost.getX(),
                 this,
-                "Counter target spell\$ unless its controller pays {X}.\$ " +
+                "Counter target spell\$ unless its controller pays {RN}.\$ " +
                 "If that spell is countered this way, exile it instead of putting it into its owner's graveyard."
             );
         }
@@ -17,7 +18,7 @@
                     game.addEvent(new MagicCounterUnlessEvent(
                         event.getSource(), 
                         targetSpell, 
-                        MagicManaCost.create("{X}"),
+                        MagicManaCost.create("{" + event.getRefInt() + "}"),
                         MagicLocationType.Exile
                     ));
                 }
