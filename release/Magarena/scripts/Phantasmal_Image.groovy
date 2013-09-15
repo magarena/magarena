@@ -5,24 +5,6 @@ def ST = new MagicStatic(MagicLayer.Type) {
     }
 };
 
-def SacWhenTargeted = new MagicWhenTargetedTrigger() {
-    @Override
-    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicItemOnStack target) {
-        return target.containsInChoiceResults(permanent) ?
-            new MagicEvent(
-                permanent,
-                this,
-                "Sacrifice SN."
-            ):
-            MagicEvent.NONE;
-    }
-
-    @Override
-    public void executeEvent(final MagicGame game, final MagicEvent event) {
-        game.doAction(new MagicSacrificeAction(event.getPermanent()));
-    }
-};
-
 [
     new MagicSpellCardEvent() {
         @Override
@@ -49,7 +31,7 @@ def SacWhenTargeted = new MagicWhenTargetedTrigger() {
                     game.doAction(action);
                     final MagicPermanent perm = action.getPermanent();
                     game.doAction(new MagicAddStaticAction(perm, ST));
-                    game.doAction(new MagicAddTriggerAction(perm, SacWhenTargeted));
+                    game.doAction(new MagicAddTriggerAction(perm, MagicWhenTargetedTrigger.SacWhenTargeted));
                 } as MagicPermanentAction);
             } else {
                 game.doAction(new MagicPlayCardFromStackAction(
