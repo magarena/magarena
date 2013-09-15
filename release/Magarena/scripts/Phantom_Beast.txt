@@ -1,0 +1,11 @@
+name=Phantom Beast
+url=http://magiccards.info/m11/en/69.html
+image=http://magiccards.info/scans/en/m11/69.jpg
+value=3.118
+rarity=C
+type=Creature
+subtype=Illusion,Beast
+cost={3}{U}
+pt=4/5
+ability=sac when targeted
+timing=main

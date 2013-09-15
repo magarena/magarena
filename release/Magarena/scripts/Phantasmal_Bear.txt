@@ -1,0 +1,11 @@
+name=Phantasmal Bear
+url=http://magiccards.info/m12/en/70.html
+image=http://magiccards.info/scans/en/m12/70.jpg
+value=4.163
+rarity=C
+type=Creature
+subtype=Bear,Illusion
+cost={U}
+pt=2/2
+ability=sac when targeted
+timing=main

@@ -1,0 +1,11 @@
+name=Phantasmal Dragon
+url=http://magiccards.info/m12/en/71.html
+image=http://magiccards.info/scans/en/m12/71.jpg
+value=4.005
+rarity=U
+type=Creature
+subtype=Dragon,Illusion
+cost={2}{U}{U}
+pt=5/5
+ability=flying;sac when targeted
+timing=main

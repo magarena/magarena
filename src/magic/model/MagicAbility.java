@@ -79,6 +79,7 @@ import magic.model.trigger.MagicUndyingTrigger;
 import magic.model.trigger.MagicPersistTrigger;
 import magic.model.trigger.MagicLandfallTrigger;
 import magic.model.trigger.MagicCascadeTrigger;
+import magic.model.trigger.MagicWhenTargetedTrigger;
 
 import java.util.EnumSet;
 import java.util.Set;
@@ -378,6 +379,12 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
             card.add(MagicAtEndOfTurnTrigger.Sacrifice);
+        }
+    },
+    SacWhenTargeted("sac when targeted",-10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+            card.add(MagicWhenTargetedTrigger.SacWhenTargeted);
         }
     },
     ChargeAtUpkeep("charge at upkeep",10) {

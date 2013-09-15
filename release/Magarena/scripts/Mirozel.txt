@@ -1,0 +1,12 @@
+name=Mirozel
+url=http://magiccards.info/ex/en/41.html
+image=http://magiccards.info/scans/en/ex/41.jpg
+value=2.241
+rarity=U
+type=Creature
+subtype=Illusion
+cost={3}{U}
+pt=2/3
+ability=flying
+timing=main
+requires_groovy_code
