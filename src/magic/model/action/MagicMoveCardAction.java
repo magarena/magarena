@@ -43,6 +43,14 @@ public class MagicMoveCardAction extends MagicAction {
     public MagicMoveCardAction(final MagicCardOnStack cardOnStack) {
         this(cardOnStack.getCard(),MagicPermanent.NONE,MagicLocationType.Stack,cardOnStack.getMoveLocation());
     }
+
+    public boolean from(MagicLocationType loc) {
+        return fromLocation == loc;
+    }
+    
+    public boolean to(MagicLocationType loc) {
+        return toLocation == loc;
+    }
     
     public MagicLocationType getToLocation() {
         return toLocation;
