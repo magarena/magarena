@@ -46,7 +46,7 @@ public abstract class MagicWhenPutIntoGraveyardTrigger extends MagicTrigger<Magi
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicMoveCardAction act) {
             final MagicCard card = act.card;
-            if (card.isEnemy(game.getActiveSource()) && card.isInHand()) {
+            if (card.isEnemy(game.getActiveSource()) && act.fromLocation == MagicLocationType.OwnersHand) {
                 act.setToLocation(MagicLocationType.Play);
                 game.doAction(new MagicPlayCardAction(card));
             }
