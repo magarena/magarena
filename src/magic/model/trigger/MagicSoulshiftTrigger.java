@@ -33,7 +33,6 @@ public class MagicSoulshiftTrigger extends MagicWhenDiesTrigger {
         final MagicTargetChoice targetChoice =
             new MagicTargetChoice(
                 targetFilter,
-                true,
                 MagicTargetHint.None,
                 "target Spirit card from your graveyard"
             );

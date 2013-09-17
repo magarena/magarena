@@ -2,16 +2,20 @@
     new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
-            final MagicTargetFilter<MagicPermanent> targetFilter = new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilter.TARGET_CREATURE,permanent);
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                    targetFilter,true,MagicTargetHint.None,"another creature to exile");
+                new MagicOtherPermanentTargetFilter(
+                    MagicTargetFilter.TARGET_CREATURE,
+                    permanent
+                ),
+                MagicTargetHint.None,
+                "another target creature to exile"
+            );
             return new MagicEvent(
                 permanent,
                 targetChoice,
                 MagicExileTargetPicker.create(),
                 this,
-                "Exile another creature\$."
+                "Exile another target creature\$."
             );
         }
         @Override

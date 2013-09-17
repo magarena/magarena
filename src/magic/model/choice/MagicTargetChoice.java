@@ -26,7 +26,7 @@ import java.util.List;
 
 public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice NONE =
-        new MagicTargetChoice(MagicTargetFilter.NONE,false,MagicTargetHint.None,"nothing") {
+        new MagicTargetChoice(MagicTargetFilter.NONE,MagicTargetHint.None,"nothing") {
             @Override
             public boolean isValid() {
                 return false;
@@ -666,19 +666,6 @@ public class MagicTargetChoice extends MagicChoice {
         targetDescription = aTargetDescription;
     }
     
-    public MagicTargetChoice(
-        final MagicTargetFilter<? extends MagicTarget> aTargetFilter,
-        final boolean aTargeted,
-        final MagicTargetHint aTargetHint,
-        final String aTargetDescription
-    ) {
-        super("Choose " + aTargetDescription + '.');
-        targetFilter = aTargetFilter;
-        targeted     = aTargeted;
-        targetHint   = aTargetHint;
-        targetDescription = aTargetDescription;
-    }
-
     public MagicTargetChoice(
         final MagicTargetChoice copy,
         final boolean targeted

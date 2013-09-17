@@ -2,16 +2,20 @@
     new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
-            final MagicTargetFilter<MagicPermanent> targetFilter = new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilter.TARGET_CREATURE_WITH_SHADOW,permanent);
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                    targetFilter,true,MagicTargetHint.None,"another creature with shadow to exile");
+                new MagicOtherPermanentTargetFilter(
+                    MagicTargetFilter.TARGET_CREATURE_WITH_SHADOW,
+                    permanent
+                ),
+                MagicTargetHint.None,
+                "another target creature with shadow to exile"
+            );
             return new MagicEvent(
                 permanent,
                 targetChoice,
                 MagicExileTargetPicker.create(),
                 this,
-                "Exile another creature with shadow\$."
+                "Exile another target creature with shadow\$."
             );
         }
         @Override

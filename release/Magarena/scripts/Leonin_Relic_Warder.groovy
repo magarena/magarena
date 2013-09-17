@@ -2,16 +2,20 @@
     new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
-            final MagicTargetFilter<MagicPermanent> targetFilter = new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilter.TARGET_ARTIFACT_OR_ENCHANTMENT,permanent);
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                    targetFilter,true,MagicTargetHint.Negative,"another artifact or enchantment to exile");
+                new MagicOtherPermanentTargetFilter(
+                    MagicTargetFilter.TARGET_ARTIFACT_OR_ENCHANTMENT,
+                    permanent
+                ),
+                MagicTargetHint.Negative,
+                "another target artifact or enchantment to exile"
+            );
             return new MagicEvent(
                 permanent,
                 new MagicMayChoice(targetChoice),
                 MagicExileTargetPicker.create(),
                 this,
-                "PN may\$ exile another artifact or enchantment\$."
+                "PN may\$ exile target another artifact or enchantment\$."
             );
         }
         @Override

@@ -10,13 +10,11 @@ def action = {
 
 def event = {
     final MagicPermanent permanent ->
-    final MagicTargetFilter<MagicCard> filter = new MagicTargetFilter.MagicOtherCardTargetFilter(
-        MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
-        permanent.getCard()
-    );
     final MagicTargetChoice choice = new MagicTargetChoice(
-        filter,
-        true,
+        new MagicTargetFilter.MagicOtherCardTargetFilter(
+            MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
+            permanent.getCard()
+        ),
         MagicTargetHint.None,
         "another target creature card from your graveyard"
     );
@@ -39,8 +37,7 @@ def event = {
     new MagicWhenLeavesPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
-            return act.isPermanent(permanent) ? 
-                event(permanent) : MagicEvent.NONE;
+            return act.isPermanent(permanent) ? event(permanent) : MagicEvent.NONE;
         }
     }
 ]

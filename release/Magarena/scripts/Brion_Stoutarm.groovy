@@ -6,10 +6,14 @@
 
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
-            final MagicTargetFilter<MagicPermanent> targetFilter=new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,source);
             final MagicTargetChoice targetChoice=new MagicTargetChoice(
-                    targetFilter,false,MagicTargetHint.None,"a creature other than " + source + " to sacrifice");
+                new MagicOtherPermanentTargetFilter(
+                    MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,
+                    source
+                ),
+                MagicTargetHint.None,
+                "a creature other than " + source + " to sacrifice"
+            );
             return [
                 new MagicPayManaCostTapEvent(source,"{R}"),
                 new MagicSacrificePermanentEvent(source,targetChoice)

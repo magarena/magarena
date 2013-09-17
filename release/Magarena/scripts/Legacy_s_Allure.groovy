@@ -30,14 +30,14 @@
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicTargetFilter<MagicPermanent> targetFilter =
-                    new MagicTargetFilter.MagicPowerTargetFilter(
-                        MagicTargetFilter.TARGET_CREATURE,
-                        source.getCounters(MagicCounterType.Charge)
-                    );
-            final MagicTargetChoice targetChoice =
-                    new MagicTargetChoice(
-                    targetFilter,true,MagicTargetHint.Negative,"target creature to gain control of");
+            final MagicTargetChoice targetChoice = new MagicTargetChoice(
+                new MagicTargetFilter.MagicPowerTargetFilter(
+                    MagicTargetFilter.TARGET_CREATURE,
+                    source.getCounters(MagicCounterType.Charge)
+                ),
+                MagicTargetHint.Negative,
+                "target creature to gain control of"
+            );
             return new MagicEvent(
                 source,
                 targetChoice,

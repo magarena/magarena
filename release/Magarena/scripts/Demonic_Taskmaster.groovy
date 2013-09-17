@@ -15,13 +15,11 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
             final MagicPlayer player = event.getPlayer();
-            final MagicTargetFilter<MagicPermanent> targetFilter = new MagicOtherPermanentTargetFilter(
-                MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,
-                permanent
-            );
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                targetFilter,
-                false,
+                new MagicOtherPermanentTargetFilter(
+                    MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,
+                    permanent
+                ),
                 MagicTargetHint.None,
                 "a creature other than " + permanent + " to sacrifice"
             );

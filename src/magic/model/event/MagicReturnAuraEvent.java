@@ -15,10 +15,8 @@ public class MagicReturnAuraEvent extends MagicEvent {
         super(
             cardOnStack,
             new MagicTargetChoice(
-                cardOnStack.getEvent().getTargetChoice().getTargetFilter(),
-                false,
-                cardOnStack.getEvent().getTargetChoice().getTargetHint(true),
-                cardOnStack.getEvent().getTargetChoice().getDescription()
+                cardOnStack.getEvent().getTargetChoice(),
+                false
             ),
             cardOnStack.getEvent().getTargetPicker(),
             EVENT_ACTION,

@@ -16,7 +16,6 @@
                     MagicTargetFilter.TARGET_BARBARIAN,
                     source
                 ),
-                true,
                 MagicTargetHint.Positive,
                 "another target Barbarian"
             );

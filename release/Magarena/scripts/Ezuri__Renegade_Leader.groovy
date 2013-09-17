@@ -11,10 +11,14 @@
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicTargetFilter<MagicPermanent> targetFilter = new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilter.TARGET_ELF,source);
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                    targetFilter,true,MagicTargetHint.Positive,"another target Elf");
+                new MagicOtherPermanentTargetFilter(
+                    MagicTargetFilter.TARGET_ELF,
+                    source
+                ),
+                MagicTargetHint.Positive,
+                "another target Elf"
+            );
             return new MagicEvent(
                 source,
                 targetChoice,

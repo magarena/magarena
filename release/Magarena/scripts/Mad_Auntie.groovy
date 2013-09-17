@@ -13,11 +13,14 @@
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
-            final MagicTargetFilter<MagicPermanent> targetFilter = new MagicOtherPermanentTargetFilter(
-                MagicTargetFilter.TARGET_GOBLIN_PERMANENT, source);
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                targetFilter, true, MagicTargetHint.Positive,
-                "another target Goblin");
+                new MagicOtherPermanentTargetFilter(
+                    MagicTargetFilter.TARGET_GOBLIN_PERMANENT, 
+                    source
+                ),
+                MagicTargetHint.Positive,
+                "another target Goblin"
+            );
             return new MagicEvent(
                 source,
                 targetChoice,
