@@ -1,0 +1,8 @@
+name=Bloodstained Mire
+url=http://magiccards.info/on/en/313.html
+image=http://magiccards.info/scans/en/on/313.jpg
+value=4.627
+rarity=R
+type=Land
+timing=land
+requires_groovy_code
