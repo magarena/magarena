@@ -1,0 +1,12 @@
+name=Barbed Sliver
+url=http://magiccards.info/pds/en/18.html
+image=http://magiccards.info/scans/en/pds/18.jpg
+value=2.402
+rarity=U
+type=Creature
+subtype=Sliver
+cost={2}{R}
+pt=2/2
+timing=main
+static=all
+requires_groovy_code
