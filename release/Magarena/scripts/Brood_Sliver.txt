@@ -1,0 +1,12 @@
+name=Brood Sliver
+url=http://magiccards.info/pds/en/22.html
+image=http://magiccards.info/scans/en/pds/22.jpg
+value=4.435
+rarity=R
+type=Creature
+subtype=Sliver
+cost={4}{G}
+pt=3/3
+timing=main
+static=all
+requires_groovy_code
