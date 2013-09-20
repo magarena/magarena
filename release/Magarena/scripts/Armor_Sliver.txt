@@ -1,0 +1,12 @@
+name=Armor Sliver
+url=http://magiccards.info/pds/en/16.html
+image=http://magiccards.info/scans/en/pds/16.jpg
+value=2.432
+rarity=U
+type=Creature
+subtype=Sliver
+cost={2}{W}
+pt=2/2
+timing=main
+static=all
+requires_groovy_code
