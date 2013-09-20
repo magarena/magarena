@@ -1,0 +1,12 @@
+name=Clot Sliver
+url=http://magiccards.info/pds/en/5.html
+image=http://magiccards.info/scans/en/pds/5.jpg
+value=3.812
+rarity=C
+type=Creature
+subtype=Sliver
+cost={1}{B}
+pt=1/1
+static=all
+timing=main
+requires_groovy_code
