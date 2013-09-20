@@ -30,6 +30,7 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
         }
 
         game.addStatics(permanent);
+        game.update();
 
         final MagicPlayer controller = permanent.getController();
 

@@ -75,6 +75,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     private final Set<MagicActivation<MagicPermanent>> cachedActivations;
     private final List<MagicManaActivation> cachedManaActivations;
     private final List<MagicTrigger<?>> cachedTriggers;
+    private final List<MagicWhenComesIntoPlayTrigger> etbTriggers;
 
     // remember order among blockers (blockedName + id + block order)
     private String blockedName;
@@ -97,6 +98,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         cachedActivations = new TreeSet<MagicActivation<MagicPermanent>>();
         cachedManaActivations = new LinkedList<MagicManaActivation>();
         cachedTriggers    = new LinkedList<MagicTrigger<?>>();
+        etbTriggers       = new LinkedList<MagicWhenComesIntoPlayTrigger>(aCardDef.getComeIntoPlayTriggers());
     }
 
     private MagicPermanent(final MagicCopyMap copyMap, final MagicPermanent sourcePermanent) {
@@ -134,6 +136,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         cachedActivations    = new TreeSet<MagicActivation<MagicPermanent>>(sourcePermanent.cachedActivations);
         cachedManaActivations = new LinkedList<MagicManaActivation>(sourcePermanent.cachedManaActivations);
         cachedTriggers       = new LinkedList<MagicTrigger<?>>(sourcePermanent.cachedTriggers);
+        etbTriggers           = new LinkedList<MagicWhenComesIntoPlayTrigger>(sourcePermanent.etbTriggers);
     }
 
     @Override
@@ -237,7 +240,11 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
     
     public void addAbility(final MagicTrigger<?> trig) {
-        cachedTriggers.add(trig);
+        if (trig instanceof MagicWhenComesIntoPlayTrigger) {
+            etbTriggers.add((MagicWhenComesIntoPlayTrigger)trig);
+        } else {
+            cachedTriggers.add(trig);
+        }
     }
     
     public void addAbility(final MagicManaActivation act) {
@@ -261,7 +268,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
 
     public Collection<MagicWhenComesIntoPlayTrigger> getComeIntoPlayTriggers() {
-        return cardDefinition.getComeIntoPlayTriggers();
+        return etbTriggers;
     }
 
     public int getConvertedCost() {
