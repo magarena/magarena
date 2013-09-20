@@ -1,0 +1,10 @@
+name=Dragon1
+token=Dragon
+image=http://magiccards.info/extras/token/alara-reborn/dragon.jpg
+value=1
+type=Creature
+subtype=Dragon
+color=rg
+cost={0}
+pt=1/1
+ability=flying;devour 2
