@@ -1,0 +1,12 @@
+name=Mindlash Sliver
+url=http://magiccards.info/ts/en/118.html
+image=http://magiccards.info/scans/en/ts/118.jpg
+value=3.213
+rarity=C
+type=Creature
+subtype=Sliver
+cost={B}
+pt=1/1
+static=all
+timing=main
+requires_groovy_code
