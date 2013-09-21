@@ -51,7 +51,7 @@ public class MagicPlayAuraEvent extends MagicSpellCardEvent {
         final MagicTargetPicker<?> targetPicker = MagicTargetPicker.build(token[0]);
         final MagicTargetChoice targetChoice = new MagicTargetChoice(
             MagicTargetHint.getHint(token[1]),
-            MagicTargetHint.removeHint(token[1])
+            "target " + MagicTargetHint.removeHint(token[1])
         );
         assert targetPicker != null : "targetPicker is null";
         assert targetChoice != null : "targetChoice is null";
