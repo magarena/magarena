@@ -1,0 +1,12 @@
+name=Opaline Sliver
+url=http://magiccards.info/ts/en/244.html
+image=http://magiccards.info/scans/en/ts/244.jpg
+value=3.479
+rarity=U
+type=Creature
+subtype=Sliver
+cost={1}{W}{U}
+pt=2/2
+timing=main
+static=all
+requires_groovy_code
