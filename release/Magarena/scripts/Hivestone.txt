@@ -1,0 +1,10 @@
+name=Hivestone
+url=http://magiccards.info/ts/en/256.html
+image=http://magiccards.info/scans/en/ts/256.jpg
+value=3.991
+rarity=R
+type=Artifact
+cost={2}
+static=player
+timing=main
+requires_groovy_code
