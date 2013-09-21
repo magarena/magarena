@@ -2,7 +2,8 @@
     new MagicWhenBlocksOrBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
-            return (blocker.getBlockedCreature().getPower() <= 1) ?
+            final MagicPermanent creature = permanent == blocker ? blocker.getBlockedCreature() : blocker;
+            return (creature.getPower() <= 1) ?
                 new MagicEvent(
                     permanent,                
                     this,
