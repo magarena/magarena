@@ -1,0 +1,11 @@
+name=Arrogant Bloodlord
+url=http://magiccards.info/roe/en/94.html
+image=http://magiccards.info/scans/en/roe/94.jpg
+value=3.742
+rarity=U
+type=Creature
+subtype=Vampire,Knight
+cost={1}{B}{B}
+pt=4/4
+timing=main
+requires_groovy_code

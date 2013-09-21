@@ -1,0 +1,12 @@
+name=Acidic Sliver
+url=http://magiccards.info/pds/en/13.html
+image=http://magiccards.info/scans/en/pds/13.jpg
+value=4.016
+rarity=U
+type=Creature
+subtype=Sliver
+cost={B}{R}
+pt=2/2
+static=all
+timing=main
+requires_groovy_code

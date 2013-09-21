@@ -518,6 +518,16 @@ public class MagicEvent implements MagicCopyable {
         }
     }
     
+    public final boolean processPermanent(final MagicGame game, final MagicPermanentAction effect) {
+        final MagicPermanent target = getPermanent();
+        if (target.isValid()) {
+            effect.doAction(target);
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
     public final boolean processRefPermanent(final MagicGame game, final MagicPermanentAction effect) {
         final MagicPermanent target = getRefPermanent();
         if (target.isValid()) {

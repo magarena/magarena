@@ -1,0 +1,12 @@
+name=Harmonic Sliver
+url=http://magiccards.info/ts/en/240.html
+image=http://magiccards.info/scans/en/ts/240.jpg
+value=4.339
+rarity=U
+type=Creature
+subtype=Sliver
+cost={1}{G}{W}
+pt=1/1
+ability=lord all sliver creatures have enters effect Destroy target artifact or enchantment.
+static=all
+timing=main

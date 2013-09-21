@@ -1,0 +1,11 @@
+name=Ambassador Oak
+url=http://magiccards.info/mt/en/113.html
+image=http://magiccards.info/scans/en/mt/113.jpg
+value=3.116
+rarity=C
+type=Creature
+subtype=Treefolk,Warrior
+cost={3}{G}
+pt=3/3
+timing=main
+requires_groovy_code
