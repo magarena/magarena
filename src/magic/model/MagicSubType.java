@@ -61,7 +61,7 @@ public enum MagicSubType {
     Kithkin, Knight, Kobold, Kor, Kraken, Lammasu, Leech, Leviathan, Lhurgoyf,
     Licid, Lizard, Manticore, Masticore, Mercenary, Merfolk, Metathran, Minion,
     Minotaur, Monger, Mongoose, Monk, Moonfolk, Mutant, Myr, Mystic, Nautilus,
-    Nephilim, Nightmare, Nightstalker, Ninja, Noggle, Nomad, Octopus, Ogre, Ooze,
+    Nephilim, Nightmare, Nightstalker, Ninja, Noggle, Nomad, Nymph, Octopus, Ogre, Ooze,
     Orb, Orc, Orgg, Ouphe, Ox, Oyster, Pegasus, Pentavite, Pest, Phelddagrif,
     Phoenix, Pincher, Pirate, Plant, Praetor, Prism, Rabbit, Rat, Rebel,
     Reflection, Rhino, Rigger, Rogue, Salamander, Samurai, Sand, Saproling, Satyr,
