@@ -1,0 +1,12 @@
+name=Hibernation Sliver
+url=http://magiccards.info/pds/en/12.html
+image=http://magiccards.info/scans/en/pds/12.jpg
+value=4.149
+rarity=U
+type=Creature
+subtype=Sliver
+cost={U}{B}
+pt=2/2
+timing=main
+static=all
+requires_groovy_code
