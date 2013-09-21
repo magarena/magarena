@@ -98,7 +98,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         cachedActivations = new TreeSet<MagicActivation<MagicPermanent>>();
         cachedManaActivations = new LinkedList<MagicManaActivation>();
         cachedTriggers    = new LinkedList<MagicTrigger<?>>();
-        etbTriggers       = new LinkedList<MagicWhenComesIntoPlayTrigger>(aCardDef.getComeIntoPlayTriggers());
+        etbTriggers       = new LinkedList<MagicWhenComesIntoPlayTrigger>();
     }
 
     private MagicPermanent(final MagicCopyMap copyMap, final MagicPermanent sourcePermanent) {
@@ -136,7 +136,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         cachedActivations    = new TreeSet<MagicActivation<MagicPermanent>>(sourcePermanent.cachedActivations);
         cachedManaActivations = new LinkedList<MagicManaActivation>(sourcePermanent.cachedManaActivations);
         cachedTriggers       = new LinkedList<MagicTrigger<?>>(sourcePermanent.cachedTriggers);
-        etbTriggers           = new LinkedList<MagicWhenComesIntoPlayTrigger>(sourcePermanent.etbTriggers);
+        etbTriggers          = new LinkedList<MagicWhenComesIntoPlayTrigger>(sourcePermanent.etbTriggers);
     }
 
     @Override
@@ -189,7 +189,8 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             cachedPowerToughness.toughness(),
             cachedActivations.hashCode(),
             cachedManaActivations.hashCode(),
-            cachedTriggers.hashCode()
+            cachedTriggers.hashCode(),
+            etbTriggers.hashCode()
         });
         return stateId;
      }
@@ -389,6 +390,8 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
                 cachedManaActivations.addAll(cardDefinition.getManaActivations());
                 cachedTriggers.clear();
                 cachedTriggers.addAll(cardDefinition.getTriggers());
+                etbTriggers.clear();
+                etbTriggers.addAll(cardDefinition.getComeIntoPlayTriggers());
                 break;
             case CDASubtype:
                 cardDefinition.applyCDASubType(getGame(), getController(), cachedSubTypeFlags);
