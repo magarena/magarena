@@ -46,7 +46,7 @@ public class MagicReturnExiledUntilThisLeavesPlayAction extends MagicAction {
         final MagicCardList cardList = source.getExiledCards();
         exiledList = new MagicCardList(source.getExiledCards());
         for (final MagicCard card : cardList) {
-            if (card.getOwner().getExile().contains(card)) {
+            if (card.isInExile()) {
                 game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Exile));
                 if (location == MagicLocationType.Play) {
                     if (card.getCardDefinition().isAura()) {
