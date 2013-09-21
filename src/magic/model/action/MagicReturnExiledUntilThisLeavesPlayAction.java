@@ -11,7 +11,6 @@ import magic.model.MagicLocationType;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.event.MagicReturnAuraEvent;
 import magic.model.stack.MagicCardOnStack;
 
 public class MagicReturnExiledUntilThisLeavesPlayAction extends MagicAction {
@@ -51,8 +50,8 @@ public class MagicReturnExiledUntilThisLeavesPlayAction extends MagicAction {
                 game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Exile));
                 if (location == MagicLocationType.Play) {
                     if (card.getCardDefinition().isAura()) {
-                        final MagicCardOnStack cardOnStack = new MagicCardOnStack(card,MagicPayedCost.NO_COST);
-                        game.addEvent(new MagicReturnAuraEvent(cardOnStack));
+                        final MagicCardOnStack cardOnStack = new MagicCardOnStack(card,MagicPayedCost.NOT_SPELL);
+                        game.addEvent(cardOnStack.getEvent());
                     } else {
                         game.doAction(new MagicPlayCardAction(
                             card,

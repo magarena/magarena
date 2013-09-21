@@ -30,7 +30,9 @@ public class MagicPlayAuraEvent extends MagicSpellCardEvent {
     public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
         return new MagicEvent(
             cardOnStack,
-            targetChoice,
+            payedCost == MagicPayedCost.NOT_SPELL ?
+                new MagicTargetChoice(targetChoice, false):
+                new MagicTargetChoice(targetChoice, true),
             targetPicker,
             this,
             "Enchant "+targetChoice.getTargetDescription()+"$ with SN."
@@ -51,7 +53,7 @@ public class MagicPlayAuraEvent extends MagicSpellCardEvent {
         final MagicTargetPicker<?> targetPicker = MagicTargetPicker.build(token[0]);
         final MagicTargetChoice targetChoice = new MagicTargetChoice(
             MagicTargetHint.getHint(token[1]),
-            "target " + MagicTargetHint.removeHint(token[1])
+            MagicTargetHint.removeHint(token[1])
         );
         assert targetPicker != null : "targetPicker is null";
         assert targetChoice != null : "targetChoice is null";

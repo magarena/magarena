@@ -8,6 +8,7 @@ import magic.model.MagicCopyable;
 public class MagicPayedCost implements MagicCopyable {
 
     public static final MagicPayedCost NO_COST = new MagicPayedCost();
+    public static final MagicPayedCost NOT_SPELL = new MagicPayedCost();
 
     private MagicTarget target;
     private int x;
