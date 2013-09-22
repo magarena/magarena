@@ -1,0 +1,12 @@
+name=Necrotic Sliver
+url=http://magiccards.info/pds/en/20.html
+image=http://magiccards.info/scans/en/pds/20.jpg
+value=4.483
+rarity=U
+type=Creature
+subtype=Sliver
+cost={1}{W}{B}
+pt=2/2
+static=all
+timing=main
+requires_groovy_code

@@ -1,0 +1,12 @@
+name=Mindwhip Sliver
+url=http://magiccards.info/tp/en/39.html
+image=http://magiccards.info/scans/en/tp/39.jpg
+value=3.183
+rarity=U
+type=Creature
+subtype=Sliver
+cost={2}{B}
+pt=2/2
+static=all
+timing=main
+requires_groovy_code

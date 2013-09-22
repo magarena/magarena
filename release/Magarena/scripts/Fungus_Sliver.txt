@@ -1,0 +1,12 @@
+name=Fungus Sliver
+url=http://magiccards.info/pds/en/21.html
+image=http://magiccards.info/scans/en/pds/21.jpg
+value=3.744 
+rarity=R
+type=Creature
+subtype=Fungus,Sliver
+cost={3}{G}
+pt=2/2
+timing=main
+static=all
+requires_groovy_code
