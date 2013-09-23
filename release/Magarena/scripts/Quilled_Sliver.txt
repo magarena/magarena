@@ -1,0 +1,12 @@
+name=Quilled Sliver
+url=http://magiccards.info/ts/en/37.html
+image=http://magiccards.info/scans/en/ts/37.jpg
+value=2.777
+rarity=U
+type=Creature
+subtype=Sliver
+cost={1}{W}
+pt=1/1
+static=all
+timing=main
+requires_groovy_code
