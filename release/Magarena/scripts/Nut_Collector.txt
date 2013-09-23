@@ -1,0 +1,11 @@
+name=Nut Collector
+url=http://magiccards.info/od/en/259.html
+image=http://magiccards.info/scans/en/od/259.jpg
+value=4.009
+rarity=R
+type=Creature
+subtype=Human,Druid
+cost={5}{G}
+pt=1/1
+timing=main
+requires_groovy_code
