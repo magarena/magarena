@@ -26,7 +26,7 @@
         }
     },
     new MagicStatic(
-        MagicLayer.ModPT
+        MagicLayer.ModPT,
         MagicTargetFilter.TARGET_SQUIRREL_CREATURE
     ) {
         @Override
