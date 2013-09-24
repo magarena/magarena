@@ -1,0 +1,12 @@
+name=Sliver Legion
+url=http://magiccards.info/fut/en/158.html
+image=http://magiccards.info/scans/en/fut/158.jpg
+value=4.214
+rarity=R
+type=Legendary,Creature
+subtype=Sliver
+cost={W}{U}{B}{R}{G}
+pt=7/7
+static=all
+timing=main
+requires_groovy_code
