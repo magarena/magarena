@@ -1,0 +1,13 @@
+name=Pulmonic Sliver
+url=http://magiccards.info/ts/en/36.html
+image=http://magiccards.info/scans/en/ts/36.jpg
+value=4.170
+rarity=R
+type=Creature
+subtype=Sliver
+cost={3}{W}{W}
+pt=3/3
+ability=lord all sliver creatures have flying
+timing=main
+static=all
+requires_groovy_code
