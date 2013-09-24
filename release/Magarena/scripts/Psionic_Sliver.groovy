@@ -25,10 +25,10 @@ def PsionicDamage = new MagicPermanentActivation(
         event.processTarget(game,new MagicTargetAction() {
             public void doAction(final MagicTarget target) {
                 game.doAction(new MagicDealDamageAction(
-                    new MagicDamage(source,target,2);
+                    new MagicDamage(source,target,2)
                 ));
                 game.doAction(new MagicDealDamageAction(
-                    new MagicDamage(source,source,2);
+                    new MagicDamage(source,source,2)
                 ));
             }
         });
