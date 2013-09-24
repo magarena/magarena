@@ -1,0 +1,12 @@
+name=Lymph Sliver
+url=http://magiccards.info/fut/en/26.html
+image=http://magiccards.info/scans/en/fut/26.jpg
+value=3.452
+rarity=C
+type=Creature
+subtype=Sliver
+cost={4}{W}
+pt=3/3
+static=all
+timing=main
+requires_groovy_code
