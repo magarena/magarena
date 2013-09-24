@@ -1,0 +1,10 @@
+name=Darksteel Brute
+url=http://magiccards.info/ds/en/108.html
+image=http://magiccards.info/scans/en/ds/108.jpg
+value=3.088
+rarity=U
+type=Artifact
+cost={2}
+ability=indestructible
+timing=artifact
+requires_groovy_code
