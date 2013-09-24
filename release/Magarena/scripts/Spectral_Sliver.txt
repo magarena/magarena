@@ -1,0 +1,12 @@
+name=Spectral Sliver
+url=http://magiccards.info/pds/en/17.html
+image=http://magiccards.info/scans/en/pds/17.jpg
+value=3.685
+rarity=U
+type=Creature
+subtype=Sliver
+cost={2}{B}
+pt=2/2
+timing=main
+static=all
+requires_groovy_code
