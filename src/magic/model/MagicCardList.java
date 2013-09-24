@@ -132,7 +132,7 @@ public class MagicCardList extends ArrayList<MagicCard> implements MagicCopyable
     }
 
     public void shuffle(final long seed) {
-        final magic.MersenneTwisterFast rng = new magic.MersenneTwisterFast(seed);
+        final MagicRandom rng = new MagicRandom(seed);
         final MagicCardList oldCards = new MagicCardList(this);
         clear();
         for (int size = oldCards.size(); size > 0; size--) {
@@ -144,7 +144,7 @@ public class MagicCardList extends ArrayList<MagicCard> implements MagicCopyable
     }
 
     private void smartShuffle(final long seed) {
-        final magic.MersenneTwisterFast rng = new magic.MersenneTwisterFast(seed);
+        final MagicRandom rng = new MagicRandom(seed);
         final int size=size();
         final List<MagicCard> lands=new ArrayList<MagicCard>();
         final List<MagicCard> spells=new ArrayList<MagicCard>();

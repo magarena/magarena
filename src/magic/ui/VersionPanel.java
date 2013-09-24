@@ -63,7 +63,7 @@ public class VersionPanel extends JPanel implements ActionListener {
 
         cardViewer=new CardViewer(true,true);
         final List<MagicCardDefinition> spellCards=CardDefinitions.getSpellCards();
-        final int index=MagicRandom.nextInt(spellCards.size());
+        final int index=MagicRandom.nextRNGInt(spellCards.size());
         cardViewer.setCard(spellCards.get(index),0);
 
         newButton=new JButton("NEW");

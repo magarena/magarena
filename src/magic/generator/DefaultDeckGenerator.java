@@ -118,7 +118,7 @@ public class DefaultDeckGenerator {
 
         // Add spells to deck.
         while (condensedDeck.getNumCards() < spells && spellCards.size() > 0) {
-            final int index=MagicRandom.nextInt(spellCards.size());
+            final int index=MagicRandom.nextRNGInt(spellCards.size());
             final MagicCardDefinition cardDefinition=spellCards.get(index);
             spellCards.remove(index);
 
@@ -165,7 +165,7 @@ public class DefaultDeckGenerator {
         addRequiredLands(condensedDeck);
 
         while (condensedDeck.getNumCards() < spells+lands && landCards.size() > 0) {
-            final int index=MagicRandom.nextInt(landCards.size());
+            final int index=MagicRandom.nextRNGInt(landCards.size());
             final MagicCardDefinition cardDefinition=landCards.get(index);
             landCards.remove(index);
 

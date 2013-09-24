@@ -12,7 +12,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final MagicCardList cards = player.getGraveyard();
-            final magic.MersenneTwisterFast rng = new magic.MersenneTwisterFast(cards.getStateId());
+            final MagicRandom rng = new MagicRandom(cards.getStateId());
             int actualAmount = Math.min(cards.size(),2);
             for (;actualAmount>0;actualAmount--) {
                 final int index = rng.nextInt(cards.size());

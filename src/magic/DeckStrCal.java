@@ -116,8 +116,8 @@ public class DeckStrCal {
     private static MagicDuel setupDuel() {
         // Set the random seed
         if (seed != 0) {
-            MagicRandom.setSeed(seed);
-            seed = MagicRandom.nextInt(Integer.MAX_VALUE) + 1;
+            MagicRandom.setRNGState(seed);
+            seed = MagicRandom.nextRNGInt(Integer.MAX_VALUE) + 1;
         }
 
         // Set number of games.

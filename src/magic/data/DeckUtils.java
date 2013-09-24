@@ -238,7 +238,7 @@ public class DeckUtils {
             }
             player.setProfile(new MagicPlayerProfile("w"));
         } else {
-            loadDeck(deckFiles.get(MagicRandom.nextInt(size)).toString(),player);
+            loadDeck(deckFiles.get(MagicRandom.nextRNGInt(size)).toString(),player);
         }
     }
 }

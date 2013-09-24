@@ -282,7 +282,7 @@ public class MagicPlayer implements MagicTarget, MagicMappable<MagicPlayer> {
             library.addToTop(card);
         }
         // shuffle
-        library.shuffle(MagicRandom.nextInt(999999));
+        library.shuffle(MagicRandom.nextRNGInt(999999));
         library.setKnown(true);
         // put handSize cards into hand
         for (int i = 0; i < handSize; i++) {

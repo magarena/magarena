@@ -49,7 +49,7 @@ public class MagicDeclareAttackersChoice extends MagicChoice {
         if (builder.buildAttackers()) {
             for (final MagicCombatCreature attacker : builder.getAttackers()) {
                 if (attacker.hasAbility(MagicAbility.AttacksEachTurnIfAble) ||
-                    MagicRandom.nextInt(2) == 1) {
+                    MagicRandom.nextRNGInt(2) == 1) {
                     //creatures must attack OR
                     //creature has 50% chance of attacking
                     result.add(attacker.permanent);
