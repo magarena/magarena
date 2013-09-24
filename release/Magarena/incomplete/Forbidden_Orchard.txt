@@ -1,0 +1,9 @@
+name=Forbidden Orchard
+url=http://magiccards.info/v12/en/6.html
+image=http://magiccards.info/scans/en/v12/6.jpg
+value=4.375
+rarity=M
+type=Land
+mana=b1g1r1u1w1
+timing=land
+requires_groovy_code
