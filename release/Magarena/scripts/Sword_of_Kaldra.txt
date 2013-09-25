@@ -1,0 +1,12 @@
+name=Sword of Kaldra
+url=http://magiccards.info/mi/en/251.html
+image=http://magiccards.info/scans/en/mi/251.jpg
+value=4.344
+rarity=R
+type=Legendary,Artifact
+subtype=Equipment
+cost={4}
+equip={4}
+given_pt=5/5
+timing=equipment
+requires_groovy_code
