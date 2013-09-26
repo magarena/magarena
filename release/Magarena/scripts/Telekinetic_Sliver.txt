@@ -1,0 +1,12 @@
+name=Telekinetic Sliver
+url=http://magiccards.info/ts/en/84.html
+image=http://magiccards.info/scans/en/ts/84.jpg
+value=3.862
+rarity=U
+type=Creature
+subtype=Sliver
+cost={2}{U}{U}
+pt=2/2
+static=all
+timing=main
+requires_groovy_code
