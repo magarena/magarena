@@ -1,0 +1,12 @@
+name=Spined Sliver
+url=http://magiccards.info/pds/en/14.html
+image=http://magiccards.info/scans/en/pds/14.jpg
+value=4.306
+rarity=U
+type=Creature
+subtype=Sliver
+cost={R}{G}
+pt=2/2
+static=all
+timing=main
+requires_groovy_code
