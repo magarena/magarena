@@ -80,6 +80,7 @@ import magic.model.trigger.MagicPersistTrigger;
 import magic.model.trigger.MagicLandfallTrigger;
 import magic.model.trigger.MagicCascadeTrigger;
 import magic.model.trigger.MagicWhenTargetedTrigger;
+import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
 import java.util.EnumSet;
 import java.util.Set;
@@ -801,6 +802,12 @@ public enum MagicAbility {
                     card.add(MagicStatic.genABStatic(filter, abilityList));
                 }
             }
+        }
+    },
+    Poisonous("poisonous", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            final int n = Integer.parseInt(arg);
+            card.add(MagicWhenDamageIsDealtTrigger.Poisonous(n));
         }
     },
     None("",0);

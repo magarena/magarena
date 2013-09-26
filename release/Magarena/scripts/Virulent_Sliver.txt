@@ -1,0 +1,12 @@
+name=Virulent Sliver
+url=http://magiccards.info/pds/en/2.html
+image=http://magiccards.info/scans/en/pds/2.jpg
+value=4.424
+rarity=C
+type=Creature
+subtype=Sliver
+cost={G}
+pt=1/1
+ability=lord all sliver creatures have poisonous 1
+static=all
+timing=main

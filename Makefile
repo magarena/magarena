@@ -151,7 +151,7 @@ tags: $(SRC)
 	ctags -R src
 
 Test%.run: $(MAG)
-	$(DEBUG) -DtestGame=Test$* -Dmagarena.dir=`pwd`/release -jar $^ 2>&1 | tee Test$*.log
+	$(DEBUG) -DtestGame=Test$* -Dcard="${card}" -Dmagarena.dir=`pwd`/release -jar $^ 2>&1 | tee Test$*.log
 
 $(EXE): $(MAG)
 	cd launch4j; ./launch4j ../release/magarena.xml
