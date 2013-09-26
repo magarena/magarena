@@ -809,6 +809,15 @@ public interface MagicTargetFilter<T extends MagicTarget> {
                    target.hasState(MagicPermanentState.Blocked) == false;
         }
     };
+    
+    MagicPermanentFilterImpl TARGET_KALDRA_EQUIPMENT=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isEquipment() &&
+                    (target.getName().equals("Sword of Kaldra") || 
+                     target.getName().equals("Shield of Kaldra") || 
+                     target.getName().equals("Helm of Kaldra"));
+        }
+    };
 
     MagicPermanentFilterImpl TARGET_BLOCKED_CREATURE = Factory.creature(MagicPermanentState.Blocked, Control.Any);
 

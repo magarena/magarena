@@ -1,0 +1,12 @@
+name=Shield of Kaldra
+url=http://magiccards.info/ds/en/139.html
+image=http://magiccards.info/scans/en/ds/139.jpg
+value=3.924
+rarity=R
+type=Legendary,Artifact
+subtype=Equipment
+cost={4}
+equip={4}
+given_ability=indestructible
+timing=equipment
+requires_groovy_code
