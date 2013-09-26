@@ -20,7 +20,7 @@ def FrenzyPump = new MagicWhenAttacksUnblockedTrigger() {
 };
 
 [    
-	new MagicStatic(
+    new MagicStatic(
         MagicLayer.Ability,
         MagicTargetFilter.TARGET_SLIVER
     ) {

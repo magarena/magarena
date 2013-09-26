@@ -11,7 +11,7 @@ def LymphPrevent = new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.PREVENT_DAM
 };
 
 [    
-	new MagicStatic(
+    new MagicStatic(
         MagicLayer.Ability,
         MagicTargetFilter.TARGET_SLIVER
     ) {

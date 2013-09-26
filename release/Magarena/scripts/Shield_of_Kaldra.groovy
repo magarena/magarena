@@ -1,5 +1,5 @@
 [    
-	new MagicStatic(
+    new MagicStatic(
         MagicLayer.Ability,
         MagicTargetFilter.TARGET_KALDRA_EQUIPMENT
     ) {
