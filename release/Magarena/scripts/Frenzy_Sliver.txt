@@ -1,0 +1,12 @@
+name=Frenzy Sliver
+url=http://magiccards.info/pds/en/6.html
+image=http://magiccards.info/scans/en/pds/6.jpg
+value=2.838
+rarity=C
+type=Creature
+subtype=Sliver
+cost={1}{B}
+pt=1/1
+static=all
+timing=main
+requires_groovy_code
