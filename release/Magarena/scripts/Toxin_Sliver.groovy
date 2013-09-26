@@ -22,5 +22,5 @@
             ));
             game.doAction(new MagicDestroyAction(event.getRefPermanent()));
         }
-    };  
+    }
 ]
