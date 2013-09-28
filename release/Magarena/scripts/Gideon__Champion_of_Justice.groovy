@@ -60,8 +60,8 @@ def PreventAllDamage = new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.PREVENT
             return new MagicEvent(
                 source,
                 this,
-                "Until end of turn, Gideon, Champion of Justice becomes an indestructible Human Soldier creature " +
-                "with power and toughness each equal to the number of loyalty counters on him. " +
+                "Until end of turn, Gideon, Champion of Justice becomes a Human Soldier creature " +
+                "with power and toughness each equal to the number of loyalty counters on him and gains indestructible. " +
                 "He's still a planeswalker. Prevent all damage that would be dealt to him this turn."
             );
         }

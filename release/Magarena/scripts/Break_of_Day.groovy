@@ -6,7 +6,7 @@
                 cardOnStack,
                 this,
                 "Creatures PN controls get +1/+1 until end of turn. " +
-                "If PN has 5 or less life, those creatures also are indestructible this turn."
+                "If PN has 5 or less life, those creatures gain indestructible until end of turn."
             );
         }
         @Override

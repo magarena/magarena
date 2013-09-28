@@ -7,7 +7,7 @@
                 MagicTargetChoice.POS_TARGET_CREATURE,
                 MagicIndestructibleTargetPicker.create(),
                 this,
-                "Target creature\$ is indestructible turn."
+                "Target creature\$ gains indestructible until end of turn."
             );
         }
 

@@ -12,7 +12,7 @@
             return new MagicEvent(
                 source,
                 this,
-                "Creatures PN control are indestructible this turn."
+                "Creatures PN controls gain indestructible until end of turn."
             );
         }
         @Override
