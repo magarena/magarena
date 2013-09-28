@@ -5,5 +5,6 @@ value=3.610
 rarity=R
 type=Artifact
 cost={X}
+ability=enters with X +1/+1
 timing=artifact
-requires_groovy_code=Ivy Elemental;Chimeric Mass
+requires_groovy_code

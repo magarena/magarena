@@ -6,6 +6,5 @@ rarity=U
 type=Artifact,Creature
 subtype=Wall
 cost={X}
-ability=defender
+ability=defender;enters with X +1/+1
 timing=main
-requires_groovy_code=Ivy Elemental

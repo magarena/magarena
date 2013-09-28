@@ -6,6 +6,5 @@ rarity=U
 type=Creature
 subtype=Beast
 cost={X}{G}{G}
-ability=regenerate {1}{G}
+ability=regenerate {1}{G};enters with X +1/+1
 timing=main
-requires_groovy_code=Ivy Elemental

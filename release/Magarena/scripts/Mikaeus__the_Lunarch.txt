@@ -6,5 +6,6 @@ rarity=M
 type=Legendary,Creature
 subtype=Human,Cleric
 cost={X}{W}
+ability=enters with X +1/+1
 timing=main
-requires_groovy_code=Ivy Elemental;Mikaeus, the Lunarch
+requires_groovy_code

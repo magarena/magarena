@@ -5,6 +5,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
+import magic.model.MagicCounterType;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicMayChoice;
 import magic.model.target.MagicTargetPicker;
@@ -14,6 +15,7 @@ import magic.model.event.MagicRuleEventAction;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.action.MagicDrawAction;
+import magic.model.action.MagicChangeCountersAction;
 import magic.data.TokenCardDefinitions;
 
 public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPayedCost> {
@@ -124,6 +126,19 @@ public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPa
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicSacrificeAction(event.getPermanent()));
+        }
+    };
+    
+    public static final MagicWhenComesIntoPlayTrigger XPlusOneCounters = new MagicWhenComesIntoPlayTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
+            game.doAction(new MagicChangeCountersAction(
+                permanent,
+                MagicCounterType.PlusOne,
+                payedCost.getX(),
+                true
+            ));
+            return MagicEvent.NONE;
         }
     };
 }

@@ -585,6 +585,12 @@ public enum MagicAbility {
             card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,"arrowhead",n));
         }
     },
+    EntersXPlus("enters with X +1/+1", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+            card.add(MagicWhenComesIntoPlayTrigger.XPlusOneCounters);
+        }
+    },
     EntersPlus("enters with +1/+1", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             final int n = Integer.parseInt(arg);
