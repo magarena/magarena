@@ -1,7 +1,7 @@
 name=Hymn to Tourach
 url=http://magiccards.info/med/en/73.html
 image=http://magiccards.info/scans/en/med/73.jpg
-value=4.950
+value=4.750
 rarity=U
 type=Sorcery
 cost={B}{B}

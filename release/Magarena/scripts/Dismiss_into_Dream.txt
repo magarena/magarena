@@ -1,7 +1,7 @@
 name=Dismiss into Dream
 url=http://magiccards.info/m14/en/50.html
 image=http://magiccards.info/scans/en/m14/50.jpg
-value=4.398
+value=3.895
 rarity=R
 type=Enchantment
 cost={6}{U}

@@ -1,7 +1,7 @@
 name=Mnemonic Sliver
 url=http://magiccards.info/tp/en/77.html
 image=http://magiccards.info/scans/en/tp/77.jpg
-value=3.214 
+value=3.214
 rarity=U
 type=Creature
 subtype=Sliver

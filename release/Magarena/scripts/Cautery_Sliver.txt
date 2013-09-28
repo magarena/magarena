@@ -1,7 +1,7 @@
 name=Cautery Sliver
 url=http://magiccards.info/pc/en/154.html
 image=http://magiccards.info/scans/en/pc/154.jpg
-value=3.425
+value=2.895
 rarity=U
 type=Creature
 subtype=Sliver

@@ -1,7 +1,7 @@
 name=Doubtless One
 url=http://magiccards.info/on/en/27.html
 image=http://magiccards.info/scans/en/on/27.jpg
-value=4.105
+value=4.102
 rarity=U
 type=Creature
 subtype=Cleric,Avatar

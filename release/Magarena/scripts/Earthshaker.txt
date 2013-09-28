@@ -1,7 +1,7 @@
 name=Earthshaker
 url=http://magiccards.info/chk/en/165.html
 image=http://magiccards.info/scans/en/chk/165.jpg
-value=2.847
+value=2.824
 rarity=U
 type=Creature
 subtype=Spirit

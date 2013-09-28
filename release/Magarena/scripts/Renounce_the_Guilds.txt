@@ -1,7 +1,7 @@
 name=Renounce the Guilds
 url=http://magiccards.info/dgm/en/5.html
 image=http://magiccards.info/scans/en/dgm/5.jpg
-value=3.182
+value=3.122
 removal=3
 rarity=R
 type=Instant

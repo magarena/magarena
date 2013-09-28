@@ -1,7 +1,7 @@
 name=Dryad Militant
 url=http://magiccards.info/rtr/en/214.html
 image=http://magiccards.info/scans/en/rtr/214.jpg
-value=4.344
+value=4.323
 rarity=U
 type=Creature
 subtype=Dryad,Soldier

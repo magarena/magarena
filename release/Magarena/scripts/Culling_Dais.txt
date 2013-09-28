@@ -1,7 +1,7 @@
 name=Culling Dais
 url=http://magiccards.info/som/en/148.html
 image=http://magiccards.info/scans/en/som/148.jpg
-value=3.000
+value=2.964
 rarity=U
 type=Artifact
 cost={2}
