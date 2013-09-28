@@ -16,7 +16,7 @@ public class MagicPopulateEvent extends MagicEvent {
             MagicTargetChoice.CREATURE_TOKEN_YOU_CONTROL,
             MagicCopyTargetPicker.create(),
             EA,
-            "Put a token onto the battlefield that's a copy of a creature token you control."
+            "Put a token onto the battlefield that's a copy of a creature token$ you control."
         );
     }
 
