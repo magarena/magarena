@@ -53,18 +53,32 @@ release/Magarena/mods/legacy_cube.txt: cards/existing_tip.txt cards/legacy_banne
 release/Magarena/mods/%_cube.txt: cards/existing_tip.txt cards/%_all.txt
 	join -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
 
-cards/%_all.out:
+cards/standard_all.out:
 	touch $@
-	for rarity in mythic rare uncommon common land special; do \
-		curl --compressed "http://magiccards.info/query?q=r%3A$$rarity+f%3A$*&s=cname&v=olist&p=1" | grep "en/" >> $@; \
-		curl --compressed "http://magiccards.info/query?q=r%3A$$rarity+f%3A$*&s=cname&v=olist&p=2" | grep "en/" >> $@; \
-		curl --compressed "http://magiccards.info/query?q=r%3A$$rarity+f%3A$*&s=cname&v=olist&p=3" | grep "en/" >> $@; \
+	for p in `seq 37`; do \
+		echo $$p; curl --compressed "http://deckbox.org/games/mtg/cards?f=b31&p=$$p" | grep "deckbox.org/mtg/" >> $@; \
 	done
 	sed -i 's/<[^>]*>//g;s/^[ ]*//g' $@
-	sed -i 's/Æ/AE/' $@
+	sed -i 's/Æ/AE/;s/â/a/;s/ö/o/;s/û/u/;s/é/e/;s/Aether/AEther/' $@
+
+cards/extended_all.out:
+	touch $@
+	for p in `seq 88`; do \
+		echo $$p; curl --compressed "http://deckbox.org/games/mtg/cards?f=b32&p=$$p" | grep "deckbox.org/mtg/" >> $@; \
+	done
+	sed -i 's/<[^>]*>//g;s/^[ ]*//g' $@
+	sed -i 's/Æ/AE/;s/â/a/;s/ö/o/;s/û/u/;s/é/e/;s/Aether/AEther/' $@
+
+cards/modern_all.out:
+	touch $@
+	for p in `seq 264`; do \
+		echo $$p; curl --compressed "http://deckbox.org/games/mtg/cards?f=b35&p=$$p" | grep "deckbox.org/mtg/" >> $@; \
+	done
+	sed -i 's/<[^>]*>//g;s/^[ ]*//g' $@
+	sed -i 's/Æ/AE/;s/â/a/;s/ö/o/;s/û/u/;s/é/e/;s/Aether/AEther/' $@
 
 cards/%_all.txt: cards/%_all.out
-	sort $^ | uniq > $@
+	cat $^ | recode html..ascii | sort | uniq > $@
 
 cards/new.txt: cards/existing_tip.txt
 	$(eval LAST := $(shell hg tags | grep "^[[:digit:]]" | head -1 | cut -d' ' -f1))
