@@ -15,6 +15,10 @@
       </fileset>
   </path>
 
+  <taskdef name="bundleapp"
+           classname="com.oracle.appbundler.AppBundlerTask"   
+           classpath="lib/appbundler-1.0.jar" />
+
   <!-- deps - Download dependencies -->
   <target name="deps" unless="skip.download">
       <echo message="downloading groovy to ${lib}"/>
@@ -57,6 +61,19 @@
         <attribute name="Class-Path" value="lib/groovy-all-${groovy-version}.jar" />
       </manifest>
     </jar>
+  </target>
+
+  <target name="bundle-magarena">
+    <bundleapp outputdirectory="dist"
+               name="Magarena"
+               displayname="Magarena"
+               shortversion="1.42"
+               signature="Maga"
+               icon="arena.icns"
+               identifier="magic.MagicMain"
+               mainclassname="magic.MagicMain">
+      <option value="-Dapple.laf.useScreenMenuBar=true -Xms256M -Xmx256M"></option>
+    </bundleapp>
   </target>
 
   <!-- javadoc -  Generate Javadoc -->
