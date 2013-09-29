@@ -1,16 +1,16 @@
 Magarena 
 ========
 Homepage: http://magarena.googlecode.com
-Forum: http://www.slightlymagic.net/forum/viewforum.php?f=82
+Forum   : http://www.slightlymagic.net/forum/viewforum.php?f=82
 
-Requirements: Java Runtime 6 (http://java.com) must be installed on your computer
+Requires: Java Runtime Environment 7 (http://java.com) or above must be installed on your computer
 
 Starting Magarena:
   On Windows, double click on Magarena.exe
   On Linux, execute ./Magarena.sh. 
   On Mac, double click the Magarena icon
 
-Magarena supports the following keyboard shortcuts :
+Magarena supports the following keyboard shortcuts:
   Space   or Right key : action button
   Escape  or Left key  : undo button
   F1      or M key     : show or hide game messages
@@ -20,9 +20,7 @@ Magarena supports the following keyboard shortcuts :
 
 Selecting the AI to play against:
   The desired AI can be selected in the "New duel" dialog (Arena -> New duel).
-
-  The AI's difficulty level is the maximum number of seconds the AI is allowed
-  to use to decide a move.
+  The difficulty level is the maximum number of seconds the AI has to make a move.
 
 Thanks to
   ubeefx for creating such a great game
@@ -53,6 +51,7 @@ Thank you for your support and have fun!
 
 
 
+
 Release 1.42 (September 29, 2013)
 ============
 includes contributions from:
@@ -62,6 +61,8 @@ hong yie
 Jericho Pumpkin
 melvin
 sponeta
+
+- updated requirement from Java 6 to Java 7 as Java 6 has reached end of public updates
 
 - show correct amount for charge counter, +1/+1, and -1/-1 counters when there are more than nine counters.
 
