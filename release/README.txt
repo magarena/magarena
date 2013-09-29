@@ -53,7 +53,7 @@ Thank you for your support and have fun!
 
 
 
-Release 1.42 (September 28, 2013)
+Release 1.42 (September 29, 2013)
 ============
 includes contributions from:
 ember hauler
@@ -62,6 +62,71 @@ hong yie
 Jericho Pumpkin
 melvin
 sponeta
+
+- show correct amount for charge counter, +1/+1, and -1/-1 counters when there are more than nine counters.
+
+- allow gaining of ETB triggers via static ability
+
+- added the following to the ability property in card script:
+  * enters with X +1/+1
+  * sac when targeted
+  * enters effect <effect>
+  * dies effect <effect>
+  * leaves effect <effect>
+  * poisonous <n>
+
+- fixed the following bugs
+  * Thundermaw Hellkite affects all opponent's creatures (instead of only those with flying)
+  * Rootborn Defenses not giving creatures Indestructible
+  * Woebearer's trigger return target creature card instead of target artifact card
+  * Syncopate not using X from its mana cost in the counter event
+  * Captain of the Mists tap/untap target creature (should be target permanent)
+  * Pariah did not redirect damage
+  * Lotus Guardian did not have flying
+  * Sosuke's delayed trigger kept triggering if permanent is removed before trigger is attached
+  * Obstinate Baloth put into graveyard when discarded (should be put on the battlefield)
+  * number of cards in the graveyard not counted correctly when there are duplicates
+  * Auras did not target when cast as a spell
+
+- added/updated the following premade decks:
+Evolution.dec, Haunted.dec, Landfall.dec, One_Creature_Challenge_40.dec,
+Storm_Wind_and_Fire.dec, Unholy_Clerics.dec, Artifact_Recycler.dec, Birds.dec,
+Burn_Myself.dec, Burning_Fury.dec, Card_Power.dec, Exalted_Lightning.dec,
+Glint_60.dec, Glorfindel_GWR_Zoo.dec, Glorfindel_G_Garruk.dec,
+Glorfindel_W_Auras-40.dec, Glorfindel_W_Elspeth.dec, Griffins.dec,
+Holy_Wood.dec, Insect_Doom.dec, Pain_and_Gain.dec, Random_Usefulness.dec,
+Sorcerer.dec, Spirit_Recycler.dec, Unlikely_Allies.dec, Vensers_Artifacts.dec,
+White_Infect.dec, White_Infect_40.dec, Zombie_Overlord.dec,
+Artifact_Recycler.dec, Birds.dec, Burn_Myself.dec, Burning_Fury.dec,
+Card_Power.dec, Enchantress.dec, Exalted_Lightning.dec, Glint_60.dec,
+Griffins.dec, Holy_Wood.dec, Insect_Doom.dec, Pain_and_Gain.dec,
+Random_Usefulness.dec, Sorcerer.dec, Spirit_Recycler.dec, Unlikely_Allies.dec,
+Vensers_Artifacts.dec, White_Infect.dec, White_Infect_40.dec,
+Zombie_Overlord.dec, Glorfindel_GWR_Zoo.dec, Glorfindel_G_Garruk.dec,
+Glorfindel_W_Auras-40.dec, Glorfindel_W_Elspeth.dec, 
+
+- added the following cards:
+Acidic Sliver, Ambassador Oak, Ancestor's Chosen, Anger of the Gods,
+Annihilating Fire, Anowon, the Ruin Sage, Archdemon of Unx, Armor Sliver,
+Arrogant Bloodlord, Attrition, Balthor the Stout, Barbed Sliver,
+Bloodstained Mire, Brood Sliver, Cautery Sliver, Chromatic Lantern,
+Clot Sliver, Crypt Sliver, Darkheart Sliver, Darksteel Brute,
+Dismiss into Dream, Dormant Sliver, Dragon Broodmother, False Prophet,
+Firewake Sliver, Flusterstorm, Forced Adaptation, Foundry Street Denizen,
+Frenzy Sliver, Fungus Sliver, Ghostflame Sliver, Ghost Quarter,
+Gift of Orzhova, Glimpse the Unthinkable, Goblin Matron, Gossamer Phantasm,
+Harmonic Sliver, Hellraiser Goblin, Helm of Kaldra, Hibernation Sliver,
+Hive Stirrings, Hivestone, Illusionary Servant, Ingot Chewer, Ivory Mask,
+Lymph Sliver, Magma Sliver, Mephidross Vampire, Mindlash Sliver,
+Mindwhip Sliver, Mirozel, Mistcutter Hydra, Mnemonic Sliver, Necrotic Sliver,
+Nut Collector, Obzedat's Aid, Opaline Sliver, Opaline Unicorn,
+Phantasmal Abomination, Phantasmal Bear, Phantasmal Dragon, Phantom Beast,
+Plague Sliver, Poultice Sliver, Precinct Captain, Psionic Sliver,
+Pulmonic Sliver, Quilled Sliver, Rageblood Shaman, Relic of Progenitus,
+Screeching Sliver, Sedge Sliver, Serra Avatar, Shard Volley, Shield of Kaldra,
+Sliver Legion, Solemn Simulacrum, Spectral Sliver, Spined Sliver,
+Stony Silence, Sword of Kaldra, Sylvan Caryatid, Telekinetic Sliver,
+Toxin Sliver, Victual Sliver, Virulent Sliver, Xathrid Necromancer, Zuran Orb
 
 Release 1.41 (August 31, 2013)
 ============
