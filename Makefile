@@ -153,11 +153,9 @@ M1.%: clean $(EXE) cubes release/Magarena/mods/felt_theme.zip
 			Magarena-1.$*/Magarena/mods
 	-zip -r Magarena-1.$*.zip Magarena-1.$*
 	echo "preparing Mac dist"
-	cp -r Magarena.app.oracle Magarena-1.$*.app
-	cp -r Magarena-1.$*/* Magarena-1.$*.app/Contents/Java
-	rm Magarena-1.$*.app/Contents/Java/Magarena.exe
-	cp release/Magarena.jar Magarena-1.$*.app/Contents/Java
-	chmod a+x Magarena-1.$*.app/Contents/MacOS/JavaAppLauncher
+	cp -r Magarena.app Magarena-1.$*.app
+	cd Magarena-1.$*.app/Contents; ln -s ../../../Magarena-1.$* Java
+	chmod a+x Magarena-1.$*.app/Contents/MacOS/MagarenaLauncher.sh
 	-zip -r Magarena-1.$*.app.zip Magarena-1.$*.app
 
 $(MAG): $(SRC)
