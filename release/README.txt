@@ -52,6 +52,10 @@ Thank you for your support and have fun!
 
 
 
+Release 1.43 (October 26, 2013)
+============
+includes contributions from:
+
 Release 1.42 (September 29, 2013)
 ============
 includes contributions from:
