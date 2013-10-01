@@ -154,7 +154,7 @@ M1.%: clean $(EXE) cubes release/Magarena/mods/felt_theme.zip
 	-zip -r Magarena-1.$*.zip Magarena-1.$*
 	echo "preparing Mac dist"
 	cp -r Magarena.app Magarena-1.$*.app
-	cd Magarena-1.$*.app/Contents; ln -s ../../../Magarena-1.$* Java
+	cd Magarena-1.$*.app/Contents; ln -s ../../Magarena-1.$* Java
 	chmod a+x Magarena-1.$*.app/Contents/MacOS/MagarenaLauncher.sh
 	-zip -r Magarena-1.$*.app.zip Magarena-1.$*.app
 
