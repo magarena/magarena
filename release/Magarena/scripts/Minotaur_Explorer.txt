@@ -1,0 +1,11 @@
+name=Minotaur Explorer
+url=http://magiccards.info/od/en/206.html
+image=http://magiccards.info/scans/en/od/206.jpg
+value=3.300
+rarity=U
+type=Creature
+subtype=Minotaur,Scout
+cost={1}{R}
+pt=3/3
+timing=main
+requires_groovy_code
