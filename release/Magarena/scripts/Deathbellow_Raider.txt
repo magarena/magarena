@@ -1,0 +1,11 @@
+name=Deathbellow Raider
+url=http://magiccards.info/ths/en/117.html
+image=http://magiccards.info/scans/en/ths/117.jpg
+value=3.704
+rarity=C
+type=Creature
+subtype=Minotaur,Berserker
+cost={1}{R}
+pt=2/3
+ability=regenerate {2}{B};attacks each turn if able
+timing=main
