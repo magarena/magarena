@@ -1,0 +1,12 @@
+name=Phantom Tiger
+url=http://magiccards.info/ju/en/129.html
+image=http://magiccards.info/scans/en/ju/129.jpg
+value=3.208
+rarity=C
+type=Creature
+subtype=Cat,Spirit
+pt=1/0
+cost={2}{G}
+ability=enters with +1/+1 2
+timing=main
+requires_groovy_code=Phantom_Nomad

@@ -1,0 +1,12 @@
+name=Phantom Nishoba
+url=http://magiccards.info/ju/en/140.html
+image=http://magiccards.info/scans/en/ju/140.jpg
+value=4.510
+rarity=R
+type=Creature
+subtype=Spirit,Cat,Beast
+pt=0/0
+cost={5}{W}{G}
+ability=trample;enters with +1/+1 7
+timing=main
+requires_groovy_code=Phantom_Nomad

@@ -1,0 +1,12 @@
+name=Phantom Wurm
+url=http://magiccards.info/ts/en/211.html
+image=http://magiccards.info/scans/en/ts/211.jpg
+value=3.182
+rarity=U
+type=Creature
+subtype=Wurm,Spirit
+pt=2/0
+cost={4}{G}{G}
+ability=enters with +1/+1 4
+timing=main
+requires_groovy_code=Phantom Nomad
