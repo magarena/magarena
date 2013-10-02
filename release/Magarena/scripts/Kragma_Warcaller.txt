@@ -1,0 +1,14 @@
+name=Kragma Warcaller
+url=http://magiccards.info/ths/en/195.html
+image=http://magiccards.info/scans/en/ths/195.jpg
+value=3.875
+rarity=U
+type=Creature
+subtype=Minotaur,Warrior
+cost={3}{B}{R}
+pt=2/3
+ability=haste;\
+        lord other minotaur creatures you control have haste
+static=player
+timing=main
+requires_groovy_code
