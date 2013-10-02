@@ -6,4 +6,4 @@ rarity=C
 type=Enchantment
 cost={2}{B}{B}
 timing=enchantment
-requires_groovy_code
+requires_groovy_code=Pestilence Demon;Pestilence
