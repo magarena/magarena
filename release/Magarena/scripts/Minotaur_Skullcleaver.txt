@@ -1,0 +1,12 @@
+name=Minotaur Skullcleaver
+url=http://magiccards.info/ths/en/130.html
+image=http://magiccards.info/scans/en/ths/130.jpg
+value=3.820
+rarity=C
+type=Creature
+subtype=Minotaur,Berserker
+cost={2}{R}
+pt=2/2
+ability=haste
+timing=fmain
+requires_groovy_code
