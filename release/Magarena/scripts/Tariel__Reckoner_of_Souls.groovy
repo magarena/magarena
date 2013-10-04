@@ -25,7 +25,7 @@
                 final MagicPlayer opponent ->
                 final List<MagicCard> targets = game.filterCards(opponent,MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD);
                 final MagicRandom rng = new MagicRandom(opponent.getGraveyard().getStateId());
-                if (targets.size() > 0) {
+                if (targets.isEmpty() == false) {
                     final int index = rng.nextInt(targets.size());
                     final MagicCard card = targets.get(index);
                     game.doAction(new MagicReanimateAction(
