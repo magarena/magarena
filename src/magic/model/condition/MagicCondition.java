@@ -145,12 +145,6 @@ public interface MagicCondition {
         }
     };
 
-    MagicCondition OPP_FOUR_LANDS_CONDITION=new MagicCondition() {
-        public boolean accept(final MagicSource source) {
-            return source.getController().getOpponent().getNrOfPermanents(MagicType.Land)>=4;
-        }
-    };
-
     MagicCondition LEAST_FIVE_OTHER_MOUNTAINS=new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
@@ -177,13 +171,6 @@ public interface MagicCondition {
     MagicCondition HELLBENT = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             return source.getController().getHandSize() == 0;
-        }
-    };
-
-    MagicCondition POWER_4_OR_GREATER_CONDITION = new MagicCondition() {
-        public boolean accept(final MagicSource source) {
-            final MagicPermanent permanent = (MagicPermanent)source;
-            return permanent.getPower() >= 4;
         }
     };
 
