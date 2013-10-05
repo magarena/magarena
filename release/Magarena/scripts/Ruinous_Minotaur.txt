@@ -1,0 +1,11 @@
+name=Ruinous Minotaur
+url=http://magiccards.info/zen/en/145.html
+image=http://magiccards.info/scans/en/zen/145.jpg
+value=3.792
+rarity=C
+type=Creature
+subtype=Minotaur,Warrior
+cost={1}{R}{R}
+pt=5/2
+timing=main
+requires_groovy_code

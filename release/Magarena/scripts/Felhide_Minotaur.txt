@@ -1,0 +1,10 @@
+name=Felhide Minotaur
+url=http://magiccards.info/ths/en/87.html
+image=http://magiccards.info/scans/en/ths/87.jpg
+value=1.586
+rarity=C
+type=Creature
+subtype=Minotaur
+cost={2}{B}
+pt=2/3
+timing=main

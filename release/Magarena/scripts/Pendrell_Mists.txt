@@ -1,0 +1,10 @@
+name=Pendrell Mists
+url=http://magiccards.info/wl/en/47.html
+image=http://magiccards.info/scans/en/wl/47.jpg
+value=4.172
+rarity=R
+type=Enchantment
+cost={3}{U}
+timing=enchantment
+static=all
+requires_groovy_code

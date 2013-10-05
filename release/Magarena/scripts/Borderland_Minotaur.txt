@@ -1,0 +1,10 @@
+name=Borderland Minotaur
+url=http://magiccards.info/ths/en/114.html
+image=http://magiccards.info/scans/en/ths/114.jpg
+value=2.611
+rarity=C
+type=Creature
+subtype=Minotaur,Warrior
+cost={2}{R}{R}
+pt=4/3
+timing=main

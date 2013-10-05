@@ -1,0 +1,11 @@
+name=Hurloon Shaman
+url=http://magiccards.info/wl/en/108.html
+image=http://magiccards.info/scans/en/wl/108.jpg
+value=3.306
+rarity=U
+type=Creature
+subtype=Minotaur,Shaman
+cost={1}{R}{R}
+pt=2/3
+timing=main
+requires_groovy_code

@@ -1,0 +1,12 @@
+name=Minotaur Illusionist
+url=http://magiccards.info/ap/en/111.html
+image=http://magiccards.info/scans/en/ap/111.jpg
+value=3.135
+rarity=U
+type=Creature
+subtype=Minotaur,Wizard
+cost={3}{U}{R}
+pt=3/4
+ability=gains {1}{U} shroud
+timing=main
+requires_groovy_code

@@ -1,0 +1,11 @@
+name=Deadshot Minotaur
+url=http://magiccards.info/arb/en/52.html
+image=http://magiccards.info/scans/en/arb/52.jpg
+value=2.952
+rarity=C
+type=Creature
+subtype=Minotaur
+cost={3}{R}{G}
+ability=enters effect SN deals 3 damage to target creature with flying.;cycling {R/G}
+pt=3/4
+timing=main

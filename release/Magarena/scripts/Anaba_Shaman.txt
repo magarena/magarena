@@ -1,0 +1,11 @@
+name=Anaba Shaman
+url=http://magiccards.info/9e/en/172.html
+image=http://magiccards.info/scans/en/9e/172.jpg
+value=2.075
+rarity=C
+type=Creature
+subtype=Minotaur,Shaman
+cost={3}{R}
+pt=2/2
+timing=main
+requires_groovy_code

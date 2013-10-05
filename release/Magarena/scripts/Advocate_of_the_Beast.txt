@@ -1,0 +1,11 @@
+name=Advocate of the Beast
+url=http://magiccards.info/m14/en/164.html
+image=http://magiccards.info/scans/en/m14/164.jpg
+value=3.561
+rarity=C
+type=Creature
+subtype=Elf,Shaman
+cost={2}{G}
+pt=2/3
+timing=main
+requires_groovy_code
