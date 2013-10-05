@@ -1,6 +1,18 @@
+def HAS_ALL_KALDRA_EQUIPMENT = new MagicCondition() {
+    public boolean accept(final MagicSource source) {
+        final MagicTargetFilter<MagicPermanent> shield = new MagicTargetFilter.NameTargetFilter("Shield of Kaldra");
+        final MagicTargetFilter<MagicPermanent> sword = new MagicTargetFilter.NameTargetFilter("Sword of Kaldra");
+        final MagicTargetFilter<MagicPermanent> helm = new MagicTargetFilter.NameTargetFilter("Helm of Kaldra");
+        final MagicPlayer player = source.getController();
+        return player.controlsPermanent(shield) &&
+               player.controlsPermanent(sword) &&
+               player.controlsPermanent(helm);
+    }
+};
+
 [    
     new MagicPermanentActivation(
-        [MagicCondition.HAS_ALL_KALDRA_EQUIPMENT],
+        [HAS_ALL_KALDRA_EQUIPMENT],
         new MagicActivationHints(MagicTiming.Token),
         "Token"
     ) { 
