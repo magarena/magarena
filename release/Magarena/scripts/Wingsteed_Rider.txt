@@ -1,0 +1,12 @@
+name=Wingsteed Rider
+url=http://magiccards.info/ths/en/36.html
+image=http://magiccards.info/scans/en/ths/36.jpg
+value=3.729
+rarity=C
+type=Creature
+subtype=Human,Knight
+cost={1}{W}{W}
+pt=2/2
+ability=flying
+timing=main
+requires_groovy_code
