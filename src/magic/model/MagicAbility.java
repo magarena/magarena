@@ -24,6 +24,7 @@ import magic.model.event.MagicNinjutsuActivation;
 import magic.model.event.MagicEvokeActivation;
 import magic.model.event.MagicKickerCost;
 import magic.model.event.MagicMultikickerCost;
+import magic.model.event.MagicMonstrosityActivation;
 import magic.model.mstatic.MagicCDA;
 import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicAllyGrowTrigger;
@@ -814,6 +815,14 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             final int n = Integer.parseInt(arg);
             card.add(MagicWhenDamageIsDealtTrigger.Poisonous(n));
+        }
+    },
+    Monstrosity("monstrosity", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            final String[] token = arg.split(" ");
+            final int n = Integer.parseInt(token[0]);
+            final MagicManaCost manaCost = MagicManaCost.create(token[1]);
+            card.add(new MagicMonstrosityActivation(manaCost, n));
         }
     },
     None("",0);

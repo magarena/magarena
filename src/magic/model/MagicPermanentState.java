@@ -15,17 +15,21 @@ public enum MagicPermanentState {
     Destroyed("destroyed",""),
     CannotAttack("can't attack",""),
     NoCombatDamage("assigns no combat damage",""),
-    MustPayEchoCost("",""),
-    PreventAllDamage("prevent all damage that would be dealt this turn","")
+    MustPayEchoCost("echo",""),
+    PreventAllDamage("prevent all damage that would be dealt this turn",""),
+    Monstrous("monstrous", "")
     ;
 
+    // states that persist after cleanup
     public static final int CLEANUP_MASK =
-        Tapped.getMask()|
-        Summoned.getMask()|
-        DoesNotUntapDuringNext.getMask()|
-        ExcludeManaSource.getMask()|
-        ExcludeFromCombat.getMask()|
-        MustPayEchoCost.getMask();
+        Tapped.getMask() 
+      | Summoned.getMask() 
+      | DoesNotUntapDuringNext.getMask() 
+      | ExcludeManaSource.getMask() 
+      | ExcludeFromCombat.getMask() 
+      | MustPayEchoCost.getMask() 
+      | Monstrous.getMask()
+      ;
 
     private final String description;
     private final String text;

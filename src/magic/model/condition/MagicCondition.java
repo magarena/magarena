@@ -9,6 +9,7 @@ import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
+import magic.model.MagicPermanentState;
 import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
@@ -54,6 +55,13 @@ public interface MagicCondition {
         public boolean accept(final MagicSource source) {
             final MagicGame game = source.getGame();
             return game.canPlaySorcery(source.getController()) == false;
+        }
+    };
+    
+    MagicCondition NOT_MONSTROUS_CONDITION=new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicPermanent permanent=(MagicPermanent)source;
+            return permanent.hasState(MagicPermanentState.Monstrous) == false;
         }
     };
 
