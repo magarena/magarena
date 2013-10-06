@@ -1,0 +1,11 @@
+name=Blightsoil Druid
+url=http://magiccards.info/mt/en/59.html
+image=http://magiccards.info/scans/en/mt/59.jpg
+value=1.939
+rarity=C
+type=Creature
+subtype=Elf,Druid
+cost={1}{B}
+pt=1/2
+ability=tap pain add mana {G}
+timing=main
