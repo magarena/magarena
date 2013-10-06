@@ -494,6 +494,14 @@ public class MagicPlayer implements MagicTarget, MagicMappable<MagicPlayer> {
         return false;
     }
 
+    public int getDevotion(final MagicColor c) {
+        int devotion = 0;
+        for (final MagicPermanent permanent : permanents) {
+            devotion += permanent.getDevotion(c);
+        }
+        return devotion;
+    }
+
     @Override
     public MagicCardDefinition getCardDefinition() {
         throw new RuntimeException("player has no card definition");

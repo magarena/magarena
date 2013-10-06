@@ -276,6 +276,17 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     public int getConvertedCost() {
         return cardDefinition.getConvertedCost();
     }
+    
+    public int getDevotion(final MagicColor c) {
+        int devotion = 0;
+        final String costText = cardDefinition.getCost().getText();
+        for (int i = 0; i < costText.length(); i++) {
+            if (costText.charAt(i) == c.getSymbol() - 32) {
+                devotion++;
+            }
+        }
+        return devotion;
+    }
 
     public boolean producesMana() {
         return !cachedManaActivations.isEmpty();
