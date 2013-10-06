@@ -9,6 +9,7 @@ public abstract class MagicWhenBecomesTappedTrigger extends MagicTrigger<MagicPe
 
     public MagicWhenBecomesTappedTrigger() {}
 
+    @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenBecomesTapped;
     }

@@ -3,11 +3,12 @@ package magic.model.action;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
+import magic.model.trigger.MagicTriggerType;
 
 public class MagicChangeStateAction extends MagicAction {
 
-    private final MagicPermanent permanent;
-    private final MagicPermanentState state;
+    public final MagicPermanent permanent;
+    public final MagicPermanentState state;
     private final boolean set;
     private boolean changed;
 
@@ -31,6 +32,7 @@ public class MagicChangeStateAction extends MagicAction {
         if (changed) {
             if (set) {
                 permanent.setState(state);
+                game.executeTrigger(MagicTriggerType.WhenBecomesState, this);
             } else {
                 permanent.clearState(state);
             }

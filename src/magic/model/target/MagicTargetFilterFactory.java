@@ -113,6 +113,7 @@ public class MagicTargetFilterFactory {
         single.put("creature or player", TARGET_CREATURE_OR_PLAYER); 
         single.put("creature with converted mana cost 3 or less", TARGET_CREATURE_CONVERTED_3_OR_LESS);
         single.put("creature with flying", TARGET_CREATURE_WITH_FLYING);
+        single.put("creature with flying an opponent controls", TARGET_CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS);
         single.put("creature without flying", TARGET_CREATURE_WITHOUT_FLYING);
         single.put("creature with power 2 or less", TARGET_CREATURE_POWER_2_OR_LESS); 
         single.put("creature with power 4 or greater", TARGET_CREATURE_POWER_4_OR_MORE);

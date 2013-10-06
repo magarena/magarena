@@ -26,6 +26,7 @@ public enum MagicTriggerType {
     WhenAttacksUnblocked,   // permanent
     WhenTargeted,           // permanent
     WhenLoseControl,        // permanent
+    WhenBecomesState,       // MagicChangeStateAction
     IfDamageWouldBeDealt,   // item on stack
     IfPlayerWouldLose,      // player[]
     IfLifeWouldChange,      // MagicChangeLifeAction
