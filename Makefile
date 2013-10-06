@@ -613,3 +613,5 @@ normalize_files:
 	@cat release/Magarena/scripts/$*.groovy
 	@echo "[/code]"
 
+untracked:
+	hg stat | sed 's/^. //;s/.*/"&"/' | xargs ls -ltr
