@@ -1,0 +1,12 @@
+name=Purphoros, God of the Forge
+url=http://magiccards.info/ths/en/135.html
+image=http://magiccards.info/scans/en/ths/135.jpg
+value=3.729
+rarity=M
+type=Legendary,Enchantment,Creature
+subtype=God
+cost={3}{R}
+pt=6/5
+ability=indestructible
+timing=main
+requires_groovy_code
