@@ -8,6 +8,5 @@ subtype=Illusion
 cost={3}{U}
 pt=2/3
 ability=flying
-static=player
 timing=main
 requires_groovy_code

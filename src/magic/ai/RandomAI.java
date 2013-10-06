@@ -50,7 +50,7 @@ public class RandomAI implements MagicAI {
         }
 
         // Select a random artificial choice result
-        final int idx = MagicRandom.nextInt(size);
+        final int idx = MagicRandom.nextRNGInt(size);
         final ArtificialChoiceResults selected=achoices.get(idx);
         if (size >= 2) {
             log(info);

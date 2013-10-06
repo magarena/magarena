@@ -13,13 +13,11 @@
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
-            final MagicTargetFilter<MagicPermanent> targetFilter = new MagicOtherPermanentTargetFilter(
-                MagicTargetFilter.TARGET_CREATURE,
-                source
-            );
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                targetFilter,
-                true,
+                new MagicOtherPermanentTargetFilter(
+                    MagicTargetFilter.TARGET_CREATURE,
+                    source
+                ),
                 MagicTargetHint.Negative,
                 "another target creature"
             );

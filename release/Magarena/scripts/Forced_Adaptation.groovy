@@ -7,7 +7,7 @@
                 new MagicEvent(
                     permanent,
                     this,
-                    "PN puts a +1/+1 counter on enchanted creature."
+                    "PN puts a +1/+1 counter on creature enchanted by SN."
                 ):
                 MagicEvent.NONE;
         }
@@ -17,7 +17,7 @@
             final MagicPermanent permanent=event.getPermanent();
             final MagicPermanent enchanted=permanent.getEnchantedCreature();
             if (enchanted.isValid()) {
-				game.doAction(new MagicChangeCountersAction(enchanted,MagicCounterType.PlusOne,1,true));
+                game.doAction(new MagicChangeCountersAction(enchanted,MagicCounterType.PlusOne,1,true));
             }
         }
     }

@@ -6,7 +6,7 @@ import magic.model.MagicSource;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicSourceActivation;
 
-public class MagicPlayChoiceResult implements MagicMappable {
+public class MagicPlayChoiceResult implements MagicMappable<MagicPlayChoiceResult> {
 
     public static final MagicPlayChoiceResult PASS=new MagicPlayChoiceResult(null);
     public static final MagicPlayChoiceResult SKIP=new MagicPlayChoiceResult(null);

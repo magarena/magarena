@@ -8,7 +8,7 @@
             return new MagicEvent(
                 permanent,
                 MagicTargetChoice.NEG_TARGET_CARD_FROM_ALL_GRAVEYARDS,
-                new MagicGraveyardTargetPicker(true),
+                MagicGraveyardTargetPicker.ExileOpp,
                 this,
                 "Put target card\$ from a graveyard " +
                 "on the bottom of its owner's library."

@@ -7,7 +7,5 @@ type=Creature
 subtype=Dragon,Illusion
 cost={2}{U}{U}
 pt=5/5
-ability=flying
-static=player
+ability=flying;sac when targeted
 timing=main
-requires_groovy_code

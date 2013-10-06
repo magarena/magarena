@@ -1,11 +1,11 @@
 name=Akoum Boulderfoot
 url=http://magiccards.info/roe/en/134.html
 image=http://magiccards.info/scans/en/roe/134.jpg
-value=1.538
+value=1.543
 rarity=U
 type=Creature
 subtype=Giant,Warrior
 cost={4}{R}{R}
 pt=4/5
-ability=enters damage target 1
+ability=enters effect SN deals 1 damage to target creature or player.
 timing=main

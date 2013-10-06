@@ -1,12 +1,12 @@
 name=Angel of Despair
 url=http://magiccards.info/cmd/en/180.html
 image=http://magiccards.info/scans/en/gp/101.jpg
-value=4.361
+value=4.375
 removal=4
 rarity=R
 type=Creature
 subtype=Angel
 cost={3}{W}{W}{B}{B}
 pt=5/5
-ability=flying;enters destroy target permanent.
+ability=flying;enters effect Destroy target permanent.
 timing=fmain

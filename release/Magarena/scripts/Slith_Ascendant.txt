@@ -7,5 +7,5 @@ type=Creature
 subtype=Slith
 cost={1}{W}{W}
 pt=1/1
-ability=flying;combat damage grow player
+ability=flying;combat damage player grow
 timing=main

@@ -1,10 +1,11 @@
 name=Primordial Hydra
 url=http://magiccards.info/m12/en/189.html
 image=http://magiccards.info/scans/en/m12/189.jpg
-value=4.167
+value=4.177
 rarity=M
 type=Creature
 subtype=Hydra
 cost={X}{G}{G}
+ability=enters with X +1/+1
 timing=main
-requires_groovy_code=Ivy Elemental;Primordial Hydra
+requires_groovy_code

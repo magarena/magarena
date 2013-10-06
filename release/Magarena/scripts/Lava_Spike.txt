@@ -1,10 +1,10 @@
 name=Lava Spike
 url=http://magiccards.info/chk/en/178.html
 image=http://magiccards.info/scans/en/chk/178.jpg
-value=4.295
+value=4.326
 rarity=C
 type=Sorcery
 subtype=Arcane
 cost={R}
+effect=SN deals 3 damage to target player.
 timing=removal
-requires_groovy_code

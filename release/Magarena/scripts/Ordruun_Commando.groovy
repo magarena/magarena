@@ -1,7 +1,7 @@
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Pump),
-        "Prevent 1"
+        "Prevent"
     ) {
 
         @Override

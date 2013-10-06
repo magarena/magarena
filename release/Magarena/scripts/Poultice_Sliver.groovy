@@ -1,42 +1,33 @@
 
 def PoulticeRegen = new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Pump),
-        "Poultice"
-    ) {
-
-         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
-            return [
-				new MagicPayManaCostTapEvent(source,"{2}")
-            ];
-        }
-
-        @Override
-        public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
-            final MagicTargetFilter<MagicPermanent> targetFilter = new MagicOtherPermanentTargetFilter(
-                MagicTargetFilter.TARGET_SLIVER, source);
-            final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                targetFilter, true, MagicTargetHint.Positive,
-                "target Sliver");
-            return new MagicEvent(
-                source,
-                targetChoice,
-                MagicRegenerateTargetPicker.getInstance(),
-                this,
-                "Regenerate target Sliver\$."
-            );
-        }
-
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game,
-                new MagicPermanentAction() {
-                public void doAction(final MagicPermanent creature) {
-                    game.doAction(new MagicRegenerateAction(creature));
-                }
-            });
-        }
-    };
+    new MagicActivationHints(MagicTiming.Pump),
+    "Regen"
+) {
+    @Override
+    public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        return [
+            new MagicPayManaCostTapEvent(source,"{2}")
+        ];
+    }
+    @Override
+    public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
+        return new MagicEvent(
+            source,
+            MagicTargetChoice.Positive("target Sliver"),
+            MagicRegenerateTargetPicker.getInstance(),
+            this,
+            "Regenerate target Sliver\$."
+        );
+    }
+    @Override
+    public void executeEvent(final MagicGame game, final MagicEvent event) {
+        event.processTargetPermanent(game, new MagicPermanentAction() {
+            public void doAction(final MagicPermanent creature) {
+                game.doAction(new MagicRegenerateAction(creature));
+            }
+        });
+    }
+};
 
 [
     new MagicStatic(

@@ -7,5 +7,5 @@ type=Creature
 subtype=Minotaur,Berserker
 cost={1}{R}
 pt=2/3
-ability=regenerate {2}{B};attacks each turn if able
+ability=attacks each turn if able;regenerate {2}{B}
 timing=main

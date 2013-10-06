@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "PN puts a 1/1 green elf warrior creature token onto the battlefield."
+                "PN puts a 1/1 green Elf warrior creature token onto the battlefield."
             );
         }
         @Override

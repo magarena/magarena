@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 MagicTargetChoice.TARGET_CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD,
-                new MagicGraveyardTargetPicker(true),
+                MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
                 "Put target creature card\$ in an opponent's graveyard onto the battlefield under your control. "+
                 "It has haste. At the end of your turn, exile it."

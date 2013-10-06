@@ -1,0 +1,11 @@
+name=Frenzied Tilling
+url=http://magiccards.info/gtc/en/166.html
+image=http://magiccards.info/scans/en/gtc/166.jpg
+value=3.309
+removal=3
+rarity=U
+type=Sorcery
+cost={3}{G}{R}
+timing=removal
+effect=Destroy target land.
+requires_groovy_code=Rampant Growth

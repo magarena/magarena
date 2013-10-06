@@ -1,11 +1,11 @@
 name=Indrik Stomphowler
 url=http://magiccards.info/gvl/en/10.html
 image=http://magiccards.info/scans/en/gvl/10.jpg
-value=3.963
+value=3.940
 rarity=U
 type=Creature
 subtype=Beast
 cost={4}{G}
 pt=4/4
-ability=enters destroy target artifact or enchantment.
+ability=enters effect Destroy target artifact or enchantment.
 timing=main

@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 
 /** First creature in array is the attacker, the other creatures are blockers. */
-public class MagicDeclareBlockersResult extends LinkedList<MagicCombatCreature[]> implements MagicMappable,MagicScoreResult {
+public class MagicDeclareBlockersResult extends LinkedList<MagicCombatCreature[]> implements MagicMappable<MagicDeclareBlockersResult>, MagicScoreResult {
 
     private static final long serialVersionUID = 1L;
 

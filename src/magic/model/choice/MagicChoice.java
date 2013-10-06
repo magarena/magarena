@@ -114,7 +114,7 @@ public abstract class MagicChoice {
         if (size == 0) {
             throw new RuntimeException("no simulation choice result");
         }
-        return choices.get(MagicRandom.nextInt(choices.size()));
+        return choices.get(MagicRandom.nextRNGInt(choices.size()));
     }
 
     /** Gets the choice results of the player. */

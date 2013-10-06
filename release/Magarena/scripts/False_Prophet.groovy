@@ -18,7 +18,7 @@
                     target,
                     MagicLocationType.Exile
                 ));
-            }			
+            }
         }
     }
 ]

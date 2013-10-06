@@ -1,0 +1,12 @@
+name=Gift of Orzhova
+url=http://magiccards.info/gtc/en/219.html
+image=http://magiccards.info/scans/en/gtc/219.jpg
+value=3.753
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={1}{W/B}{W/B}
+given_pt=1/1
+given_ability=flying;lifelink
+timing=aura
+enchant=flying,pos creature

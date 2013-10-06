@@ -8,5 +8,5 @@ type=Creature
 subtype=Ogre
 cost={4}{R}
 pt=3/3
-ability=enters destroy target land.
+ability=enters effect Destroy target land.
 timing=main

@@ -1,8 +1,13 @@
+def POWER_4_OR_GREATER_CONDITION = new MagicCondition() {
+    public boolean accept(final MagicSource source) {
+        final MagicPermanent permanent = (MagicPermanent)source;
+        return permanent.getPower() >= 4;
+    }
+};
+
 [
     new MagicPermanentActivation(
-        [
-            MagicCondition.POWER_4_OR_GREATER_CONDITION
-        ],
+        [POWER_4_OR_GREATER_CONDITION],
         new MagicActivationHints(MagicTiming.Removal),
         "Damage"
     ) {

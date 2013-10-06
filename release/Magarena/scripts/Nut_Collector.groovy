@@ -11,32 +11,31 @@
                         MagicSimpleMayChoice.DEFAULT_YES
                     ),
                     this,
-                    "PN may\$ put a 1/1 Squirrel " +
-                    "creature token onto the battlefield." 
+                    "PN may\$ put a 1/1 green Squirrel creature token onto the battlefield." 
                 ):
                 MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Squirrel1")));
+                game.doAction(new MagicPlayTokenAction(
+                    event.getPlayer(),
+                    TokenCardDefinitions.get("Squirrel1")
+                ));
             }
         }
     },
-    new MagicStatic(MagicLayer.ModPT) {
+    new MagicStatic(
+        MagicLayer.ModPT,
+        MagicTargetFilter.TARGET_SQUIRREL_CREATURE
+    ) {
         @Override
-        public void modPowerToughness(
-                final MagicPermanent source,
-                final MagicPermanent permanent,
-                final MagicPowerToughness pt) {
-            if (MagicCondition.THRESHOLD_CONDITION.accept(permanent)) {
-				final Collection<MagicPermanent> targets =
-					game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_SQUIRREL_CREATURE);
-				for (final MagicPermanent target : targets) {
-					game.doAction(MagicChangeStateAction.Set(target,MagicPermanentState.CannotBeRegenerated));
-				}
-//				pt.add(2,2);
-            }
+        public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {
+            pt.add(2,2);
+        }
+        @Override
+        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+            return MagicCondition.THRESHOLD_CONDITION.accept(source);
         }
     }
 ]

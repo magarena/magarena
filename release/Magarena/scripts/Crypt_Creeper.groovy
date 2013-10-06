@@ -14,8 +14,7 @@
             return new MagicEvent(
                 source,
                 MagicTargetChoice.NEG_TARGET_CARD_FROM_ALL_GRAVEYARDS,
-                // exiling a high cost card is good here
-                new MagicGraveyardTargetPicker(true),
+                MagicGraveyardTargetPicker.ExileOpp,
                 this,
                 "Exile target card\$ from a graveyard."
             );

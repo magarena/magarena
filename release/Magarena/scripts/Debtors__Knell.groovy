@@ -6,7 +6,7 @@
                 new MagicEvent(
                     permanent,
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS,
-                    new MagicGraveyardTargetPicker(true),
+                    MagicGraveyardTargetPicker.PutOntoBattlefield,
                     this,
                     "Put target creature card\$ in a graveyard onto the battlefield under your control."
                 ):

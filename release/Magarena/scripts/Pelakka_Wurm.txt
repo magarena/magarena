@@ -7,5 +7,5 @@ type=Creature
 subtype=Wurm
 cost={4}{G}{G}{G}
 pt=7/7
-ability=trample;enters gain life 7;die draw card
+ability=trample;enters gain life 7;dies effect PN draws a card.
 timing=fmain

@@ -2,19 +2,24 @@
     new MagicWhenBlocksOrBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
-            return (permanent == blocker && blocked.isValid() && blocker.getPower<2) ?
-				new MagicEvent(
-                permanent,                
-                this,
-                "Destroy Arrogant Bloodlord at end of combat."
-            );
+            final MagicPermanent creature = permanent == blocker ? blocker.getBlockedCreature() : blocker;
+            return (creature.getPower() <= 1) ?
+                new MagicEvent(
+                    permanent,                
+                    this,
+                    "Destroy Arrogant Bloodlord at end of combat."
+                ):
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {          
-            game.doAction(new MagicAddTriggerAction(
-                event.getPermanent(),
-                MagicAtEndOfCombatTrigger.Destroy
-            ));			
+            event.processPermanent(game, {
+                final MagicPermanent permanent ->
+                game.doAction(new MagicAddTriggerAction(
+                    permanent,
+                    MagicAtEndOfCombatTrigger.Destroy
+                ))
+            } as MagicPermanentAction);
         }
     }
 ]

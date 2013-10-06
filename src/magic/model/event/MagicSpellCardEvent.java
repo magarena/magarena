@@ -4,7 +4,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
-import magic.model.choice.MagicTargetChoice;
+import magic.model.choice.MagicChoice;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTargetPicker;
 
@@ -19,8 +19,8 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
         final String effect = rule.toLowerCase();
         final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
         final MagicEventAction action  = ruleAction.action;
-        final MagicTargetPicker picker = ruleAction.picker;
-        final MagicTargetChoice choice = ruleAction.getChoice(effect);
+        final MagicTargetPicker<?> picker = ruleAction.picker;
+        final MagicChoice choice = ruleAction.getChoice(effect);
 
         return new MagicSpellCardEvent() {
             @Override

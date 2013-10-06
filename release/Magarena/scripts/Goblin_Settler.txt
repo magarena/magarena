@@ -8,5 +8,5 @@ type=Creature
 subtype=Goblin
 cost={3}{R}
 pt=1/1
-ability=enters destroy target land.
+ability=enters effect Destroy target land.
 timing=main

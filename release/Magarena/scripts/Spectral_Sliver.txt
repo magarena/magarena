@@ -4,9 +4,10 @@ image=http://magiccards.info/scans/en/pds/17.jpg
 value=3.685
 rarity=U
 type=Creature
-subtype=Sliver
+subtype=Sliver,Spirit
 cost={2}{B}
 pt=2/2
+ability=lord all sliver creatures have pump {2} +1/+1
 timing=main
 static=all
-requires_groovy_code
+

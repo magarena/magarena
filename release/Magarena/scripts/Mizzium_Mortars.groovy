@@ -1,25 +1,4 @@
 [
-    new MagicSpellCardEvent() {
-        @Override
-        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            return new MagicEvent(
-                cardOnStack,
-                MagicTargetChoice.TARGET_CREATURE_YOU_DONT_CONTROL,
-                new MagicDamageTargetPicker(1),
-                this,
-                "SN deals 4 damage to target creature\$ you don't control."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTarget(game,new MagicTargetAction() {
-                public void doAction(final MagicTarget target) {
-                    final MagicDamage damage=new MagicDamage(event.getSource(),target,4);
-                    game.doAction(new MagicDealDamageAction(damage));
-                }
-            });
-        }
-    },
     new MagicOverloadActivation(MagicTiming.Removal) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicCard source) {

@@ -12,7 +12,7 @@
             return new MagicEvent(
                 source,
                 MagicTargetChoice.TARGET_ZOMBIE_CARD_FROM_GRAVEYARD,
-                new MagicGraveyardTargetPicker(false),
+                MagicGraveyardTargetPicker.ReturnToHand,
                 this,
                 "Return target Zombie card\$ from your graveyard to your hand."
             );

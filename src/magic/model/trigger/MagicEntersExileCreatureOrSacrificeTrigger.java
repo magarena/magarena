@@ -55,7 +55,6 @@ public class MagicEntersExileCreatureOrSacrificeTrigger extends MagicWhenComesIn
 
         final MagicTargetChoice targetChoice = new MagicTargetChoice(
             targetFilter,
-            false,
             MagicTargetHint.None,
             "another " + targets + " to exile"
         );

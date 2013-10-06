@@ -1,7 +1,7 @@
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Removal),
-        "Resurrect"
+        "Animate"
     ) {
 
         @Override
@@ -13,27 +13,27 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
+                MagicTargetChoice.TARGET_OPPONENT,
                 this,
-                "Return a creature card at random from your opponent's graveyard to the battlefield under your control."
+                "Return a creature card at random from target opponent's\$ graveyard to the battlefield under your control."
             );
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            
-            final MagicPlayer player = event.getPlayer();
-			final MagicPlayer opponent = player.getOpponent();
-            final List<MagicCard> targets = game.filterCards(opponent,MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD);
-            final MagicRandom rng = new MagicRandom(player.getGraveyard().getStateId());
-            int actualAmount = Math.min(targets.size(),1);
-            for (;actualAmount>0;actualAmount--) {
-                final int index = rng.nextInt(targets.size());
-                final MagicCard card = targets.get(index);
-                game.doAction(new MagicReanimateAction(
-                    card,
-                    player
-                ));
-            }
+            event.processTargetPlayer(game, {
+                final MagicPlayer opponent ->
+                final List<MagicCard> targets = game.filterCards(opponent,MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD);
+                final MagicRandom rng = new MagicRandom(opponent.getGraveyard().getStateId());
+                if (targets.isEmpty() == false) {
+                    final int index = rng.nextInt(targets.size());
+                    final MagicCard card = targets.get(index);
+                    game.doAction(new MagicReanimateAction(
+                        card,
+                        event.getPlayer()
+                    ));
+                }
+            } as MagicPlayerAction);
         }
     }
 ]

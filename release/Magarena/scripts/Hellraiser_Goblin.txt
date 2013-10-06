@@ -1,0 +1,11 @@
+name=Hellraiser Goblin
+url=http://magiccards.info/gtc/en/95.html
+image=http://magiccards.info/scans/en/gtc/95.jpg
+value=2.978
+rarity=U
+type=Creature
+subtype=Goblin,Berserker
+cost={2}{R}
+pt=2/2
+ability=lord creatures you control have haste, attacks each turn if able
+timing=main

@@ -1,0 +1,10 @@
+name=Annihilating Fire
+url=http://magiccards.info/rtr/en/85.html
+image=http://magiccards.info/scans/en/rtr/85.jpg
+value=2.401
+removal=3
+rarity=C
+type=Instant
+cost={1}{R}{R}
+timing=removal
+requires_groovy_code

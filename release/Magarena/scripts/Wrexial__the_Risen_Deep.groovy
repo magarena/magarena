@@ -10,7 +10,7 @@
                     new MagicMayChoice(
                         MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD
                     ),
-                    new MagicGraveyardTargetPicker(true),
+                    MagicGraveyardTargetPicker.PutOntoBattlefield,
                     this,
                     "PN may\$ cast target instant or sorcery card\$ from your opponent's graveyard without paying its mana cost. "+
                     "If that card would be put into a graveyard this turn, exile it instead."

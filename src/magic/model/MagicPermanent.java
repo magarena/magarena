@@ -17,6 +17,7 @@ import magic.model.event.MagicManaActivation;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicSourceActivation;
 import magic.model.event.MagicPlayAuraEvent;
+import magic.model.event.MagicBestowActivation;
 import magic.model.event.MagicEvent;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicPermanentStatic;
@@ -75,6 +76,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     private final Set<MagicActivation<MagicPermanent>> cachedActivations;
     private final List<MagicManaActivation> cachedManaActivations;
     private final List<MagicTrigger<?>> cachedTriggers;
+    private final List<MagicWhenComesIntoPlayTrigger> etbTriggers;
 
     // remember order among blockers (blockedName + id + block order)
     private String blockedName;
@@ -97,6 +99,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         cachedActivations = new TreeSet<MagicActivation<MagicPermanent>>();
         cachedManaActivations = new LinkedList<MagicManaActivation>();
         cachedTriggers    = new LinkedList<MagicTrigger<?>>();
+        etbTriggers       = new LinkedList<MagicWhenComesIntoPlayTrigger>();
     }
 
     private MagicPermanent(final MagicCopyMap copyMap, final MagicPermanent sourcePermanent) {
@@ -134,6 +137,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         cachedActivations    = new TreeSet<MagicActivation<MagicPermanent>>(sourcePermanent.cachedActivations);
         cachedManaActivations = new LinkedList<MagicManaActivation>(sourcePermanent.cachedManaActivations);
         cachedTriggers       = new LinkedList<MagicTrigger<?>>(sourcePermanent.cachedTriggers);
+        etbTriggers          = new LinkedList<MagicWhenComesIntoPlayTrigger>(sourcePermanent.etbTriggers);
     }
 
     @Override
@@ -186,7 +190,8 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             cachedPowerToughness.toughness(),
             cachedActivations.hashCode(),
             cachedManaActivations.hashCode(),
-            cachedTriggers.hashCode()
+            cachedTriggers.hashCode(),
+            etbTriggers.hashCode()
         });
         return stateId;
      }
@@ -237,7 +242,11 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
     
     public void addAbility(final MagicTrigger<?> trig) {
-        cachedTriggers.add(trig);
+        if (trig instanceof MagicWhenComesIntoPlayTrigger) {
+            etbTriggers.add((MagicWhenComesIntoPlayTrigger)trig);
+        } else {
+            cachedTriggers.add(trig);
+        }
     }
     
     public void addAbility(final MagicManaActivation act) {
@@ -261,7 +270,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
 
     public Collection<MagicWhenComesIntoPlayTrigger> getComeIntoPlayTriggers() {
-        return cardDefinition.getComeIntoPlayTriggers();
+        return etbTriggers;
     }
 
     public int getConvertedCost() {
@@ -382,6 +391,8 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
                 cachedManaActivations.addAll(cardDefinition.getManaActivations());
                 cachedTriggers.clear();
                 cachedTriggers.addAll(cardDefinition.getTriggers());
+                etbTriggers.clear();
+                etbTriggers.addAll(cardDefinition.getComeIntoPlayTriggers());
                 break;
             case CDASubtype:
                 cardDefinition.applyCDASubType(getGame(), getController(), cachedSubTypeFlags);
@@ -679,14 +690,25 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         }
 
         if (isAura()) {
-            final MagicPlayAuraEvent auraEvent = (MagicPlayAuraEvent)cardDefinition.getCardEvent();
+            final MagicPlayAuraEvent auraEvent = cardDefinition.isAura() ?
+                (MagicPlayAuraEvent)cardDefinition.getCardEvent() :
+                MagicBestowActivation.BestowEvent;
+
             //not targeting since Aura is already attached
             final MagicTargetChoice tchoice = new MagicTargetChoice(auraEvent.getTargetChoice(), false);
             if (!enchantedCreature.isValid() ||
                 !game.isLegalTarget(getController(),this,tchoice,enchantedCreature) ||
                 enchantedCreature.hasProtectionFrom(this)) {
-                game.logAppendMessage(getController(),getName()+" is put into its owner's graveyard.");
-                game.addDelayedAction(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
+                // 702.102e If an Aura with bestow is attached to an illegal object or player, it becomes unattached. 
+                // This is an exception to rule 704.5n.
+                if (auraEvent == MagicBestowActivation.BestowEvent) {
+                    game.logAppendMessage(getController(),getName()+" becomes unattached.");
+                    game.addDelayedAction(new MagicAttachAction(this, MagicPermanent.NONE));
+                } else {
+                // 704.5n
+                    game.logAppendMessage(getController(),getName()+" is put into its owner's graveyard.");
+                    game.addDelayedAction(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
+                }
             }
         }
 

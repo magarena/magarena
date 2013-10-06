@@ -1,0 +1,10 @@
+name=Mistcutter Hydra
+url=http://magiccards.info/ths/en/162.html
+image=http://magiccards.info/scans/en/ths/162.jpg
+value=3.963
+rarity=R
+type=Creature
+subtype=Hydra
+ability=can't be countered;haste;protection from blue;enters with X +1/+1
+cost={X}{G}
+timing=main

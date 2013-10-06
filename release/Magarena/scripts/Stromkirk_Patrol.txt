@@ -7,5 +7,5 @@ type=Creature
 subtype=Vampire,Soldier
 cost={4}{B}
 pt=4/3
-ability=combat damage grow player
+ability=combat damage player grow
 timing=main

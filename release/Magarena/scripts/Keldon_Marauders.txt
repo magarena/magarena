@@ -1,11 +1,13 @@
 name=Keldon Marauders
 url=http://magiccards.info/pc/en/102.html
 image=http://magiccards.info/scans/en/pc/102.jpg
-value=4.279
+value=4.274
 rarity=C
 type=Creature
 subtype=Human,Warrior
 cost={1}{R}
 pt=3/3
-ability=vanishing 2;enters damage target player 1;leaves damage target player 1
+ability=vanishing 2;\
+        enters effect SN deals 1 damage to target player.;\
+        leaves effect SN deals 1 damage to target player.
 timing=main

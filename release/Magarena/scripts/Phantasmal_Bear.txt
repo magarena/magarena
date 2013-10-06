@@ -7,6 +7,5 @@ type=Creature
 subtype=Bear,Illusion
 cost={U}
 pt=2/2
-static=player
+ability=sac when targeted
 timing=main
-requires_groovy_code

@@ -1,0 +1,11 @@
+name=Foundry Street Denizen
+url=http://magiccards.info/gtc/en/92.html
+image=http://magiccards.info/scans/en/gtc/92.jpg
+value=2.855
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+cost={R}
+pt=1/1
+timing=main
+requires_groovy_code

@@ -1,11 +1,11 @@
 name=Surveilling Sprite
 url=http://magiccards.info/ddh/en/43.html
 image=http://magiccards.info/scans/en/rav/67.jpg
-value=3.125
+value=3.119
 rarity=C
 type=Creature
 subtype=Faerie,Rogue
 cost={1}{U}
 pt=1/1
-ability=flying;die may draw card
+ability=flying;dies effect PN may draw a card.
 timing=main

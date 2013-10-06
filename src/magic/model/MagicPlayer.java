@@ -282,7 +282,7 @@ public class MagicPlayer implements MagicTarget, MagicMappable<MagicPlayer> {
             library.addToTop(card);
         }
         // shuffle
-        library.shuffle(MagicRandom.nextInt(999999));
+        library.shuffle(MagicRandom.nextRNGInt(999999));
         library.setKnown(true);
         // put handSize cards into hand
         for (int i = 0; i < handSize; i++) {
@@ -589,10 +589,16 @@ public class MagicPlayer implements MagicTarget, MagicMappable<MagicPlayer> {
 
     @Override
     public boolean isValidTarget(final MagicSource source) {
-        // Can't be the target of spells or abilities your opponents controls.
-        if (hasAbility(MagicAbility.Hexproof) && source.getController() != this) {
+        // Can't be the target of spells or abilities.
+        if (hasAbility(MagicAbility.Shroud)) {
             return false;
         }
+
+        // Can't be the target of spells or abilities your opponents controls.
+        if (hasAbility(MagicAbility.Hexproof) && isEnemy(source)) {
+            return false;
+        }
+        
         return true;
     }
 

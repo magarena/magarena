@@ -1,12 +1,12 @@
 name=Acidic Slime
 url=http://magiccards.info/m12/en/161.html
 image=http://magiccards.info/scans/en/m11/161.jpg
-value=3.842
+value=3.846
 removal=2
 rarity=U
 type=Creature
 subtype=Ooze
 cost={3}{G}{G}
 pt=2/2
-ability=deathtouch;enters destroy target artifact, enchantment, or land.
+ability=deathtouch;enters effect Destroy target artifact, enchantment, or land.
 timing=fmain

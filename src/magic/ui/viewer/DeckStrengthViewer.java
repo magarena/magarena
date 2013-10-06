@@ -12,10 +12,10 @@ import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.TitleBar;
-import support.ui.GenericJComboBox;
 
 import java.util.Arrays;
 import javax.swing.BorderFactory;
+import javax.swing.JComboBox;
 import javax.swing.ComboBoxModel;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
@@ -56,7 +56,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
     private final JLabel gameLabel;
     private final JLabel strengthLabel;
     private final JTextField gamesTextField;
-    private final GenericJComboBox<Integer> difficultyComboBox;
+    private final JComboBox<Integer> difficultyComboBox;
     private final JButton startButton;
     private final Color textColor;
     private static CalculateThread calculateThread;
@@ -103,8 +103,8 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
         for (int level=1;level<=levels.length;level++) {
             levels[level-1]=level;
         }
-        difficultyComboBox=new GenericJComboBox<Integer>(Arrays.asList(levels));
-        difficultyComboBox.setGenericSelectedItem(Integer.valueOf(config.getStrengthDifficulty()));
+        difficultyComboBox=new JComboBox<Integer>(levels);
+        difficultyComboBox.setSelectedItem(Integer.valueOf(config.getStrengthDifficulty()));
         difficultyComboBox.setFocusable(false);
         difficultyPanel.add(new JLabel(IconImages.DIFFICULTY),BorderLayout.WEST);
         difficultyPanel.add(difficultyComboBox,BorderLayout.CENTER);
@@ -162,7 +162,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
             halt();
         } else {
             final GeneralConfig generalConfig=GeneralConfig.getInstance();
-            generalConfig.setStrengthDifficulty(difficultyComboBox.getSelectedItem());
+            generalConfig.setStrengthDifficulty(difficultyComboBox.getItemAt(difficultyComboBox.getSelectedIndex()));
             try { //parse number of games
                 final int games=Integer.parseInt(gamesTextField.getText());
                 if (games > 0 && games < 1000) {

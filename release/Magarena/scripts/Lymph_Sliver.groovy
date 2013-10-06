@@ -1,16 +1,17 @@
 
-def LymphPrevent = new MagicIfDamageWouldBeDealtTrigger(5) {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            if (damage.getTarget() == permanent) {
-                // Prevention effect.
-                damage.prevent(1);
-            }
-            return MagicEvent.NONE;
+def LymphPrevent = new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.PREVENT_DAMAGE) {
+    @Override
+    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+        if (damage.getTarget() == permanent) {
+            // Prevention effect.
+            damage.prevent(1);
         }
-    };
+        return MagicEvent.NONE;
+    }
+};
+
 [    
-	new MagicStatic(
+    new MagicStatic(
         MagicLayer.Ability,
         MagicTargetFilter.TARGET_SLIVER
     ) {

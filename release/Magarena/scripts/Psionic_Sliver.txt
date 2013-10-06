@@ -1,0 +1,12 @@
+name=Psionic Sliver
+url=http://magiccards.info/ts/en/72.html
+image=http://magiccards.info/scans/en/ts/72.jpg
+value=3.667
+rarity=R
+type=Creature
+subtype=Sliver
+cost={4}{U}
+pt=2/2
+static=all
+timing=main
+requires_groovy_code

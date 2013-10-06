@@ -8,6 +8,8 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
+import magic.model.MagicPayedCost;
+import magic.model.stack.MagicCardOnStack;
 
 public class MagicReanimateAction extends MagicAction {
 
@@ -29,7 +31,12 @@ public class MagicReanimateAction extends MagicAction {
     public void doAction(final MagicGame game) {
         if (card.isInGraveyard()) {
             game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-            game.doAction(new MagicPlayCardAction(card,controller,modifications));
+            if (card.getCardDefinition().isAura()) {
+                final MagicCardOnStack cardOnStack = new MagicCardOnStack(card,MagicPayedCost.NOT_SPELL);
+                game.addEvent(cardOnStack.getEvent());
+            } else {
+                game.doAction(new MagicPlayCardAction(card,controller,modifications));
+            }
         }
     }
     

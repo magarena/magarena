@@ -1,0 +1,9 @@
+name=Relic of Progenitus
+url=http://magiccards.info/mma/en/213.html
+image=http://magiccards.info/scans/en/mma/213.jpg
+value=4.289
+rarity=C
+type=Artifact
+cost={1}
+timing=main
+requires_groovy_code

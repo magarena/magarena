@@ -1,0 +1,12 @@
+name=Phantom Nantuko
+url=http://magiccards.info/ju/en/128.html
+image=http://magiccards.info/scans/en/ju/128.jpg
+value=3.721
+rarity=R
+type=Creature
+subtype=Insect,Spirit
+pt=0/0
+cost={2}{G}
+ability=trample;enters with +1/+1 2
+timing=main
+requires_groovy_code=Phantom Nantuko;Phantom Nomad

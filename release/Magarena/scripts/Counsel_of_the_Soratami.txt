@@ -1,9 +1,9 @@
 name=Counsel of the Soratami
 url=http://magiccards.info/10e/en/76.html
 image=http://magiccards.info/scans/en/10e/76.jpg
-value=3.213
+value=3.184
 rarity=C
 type=Sorcery
 cost={2}{U}
+effect=PN draws two cards.
 timing=draw
-requires_groovy_code=Divination

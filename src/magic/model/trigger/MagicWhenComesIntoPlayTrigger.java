@@ -5,7 +5,8 @@ import magic.model.MagicPermanent;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
-import magic.model.choice.MagicTargetChoice;
+import magic.model.MagicCounterType;
+import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicMayChoice;
 import magic.model.target.MagicTargetPicker;
 import magic.model.event.MagicEvent;
@@ -14,6 +15,7 @@ import magic.model.event.MagicRuleEventAction;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.action.MagicDrawAction;
+import magic.model.action.MagicChangeCountersAction;
 import magic.data.TokenCardDefinitions;
 
 public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPayedCost> {
@@ -36,8 +38,8 @@ public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPa
         final String effect = rule.toLowerCase();
         final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
         final MagicEventAction action  = ruleAction.action;
-        final MagicTargetPicker picker = ruleAction.picker;
-        final MagicTargetChoice choice = ruleAction.getChoice(effect);
+        final MagicTargetPicker<?> picker = ruleAction.picker;
+        final MagicChoice choice = ruleAction.getChoice(effect);
 
         return new MagicWhenComesIntoPlayTrigger() {
             @Override
@@ -63,8 +65,8 @@ public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPa
         final String effect = rule.toLowerCase();
         final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
         final MagicEventAction action  = ruleAction.action;
-        final MagicTargetPicker picker = ruleAction.picker;
-        final MagicTargetChoice choice = ruleAction.getChoice(effect);
+        final MagicTargetPicker<?> picker = ruleAction.picker;
+        final MagicChoice choice = ruleAction.getChoice(effect);
 
         return new MagicWhenComesIntoPlayTrigger() {
             @Override
@@ -127,22 +129,16 @@ public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPa
         }
     };
     
-    public static final MagicWhenComesIntoPlayTrigger Draw(final int n) {
-        return new MagicWhenComesIntoPlayTrigger() {
-            @Override
-            public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
-                return new MagicEvent(
-                    permanent,
-                    this,
-                    n == 1 ? 
-                        "PN draws a card." :
-                        "PN draws " + n + " cards"
-                );
-            }
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new MagicDrawAction(event.getPlayer(), n));
-            }
-        };
-    }
+    public static final MagicWhenComesIntoPlayTrigger XPlusOneCounters = new MagicWhenComesIntoPlayTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
+            game.doAction(new MagicChangeCountersAction(
+                permanent,
+                MagicCounterType.PlusOne,
+                payedCost.getX(),
+                true
+            ));
+            return MagicEvent.NONE;
+        }
+    };
 }

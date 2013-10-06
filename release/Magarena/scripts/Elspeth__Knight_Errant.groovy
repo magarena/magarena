@@ -43,7 +43,7 @@
             return new MagicEvent(
                 source,
                 this,
-                "PN gets an emblem with \"Artifacts, creatures, enchantments, and lands you control are indestructible.\""
+                "PN gets an emblem with \"Artifacts, creatures, enchantments, and lands you control have indestructible.\""
             );
         }
         @Override

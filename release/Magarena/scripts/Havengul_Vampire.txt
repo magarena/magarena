@@ -7,6 +7,6 @@ type=Creature
 subtype=Vampire
 cost={3}{R}
 pt=2/2
-ability=combat damage grow player
+ability=combat damage player grow
 timing=main
 requires_groovy_code

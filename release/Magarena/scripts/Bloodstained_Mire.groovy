@@ -18,7 +18,7 @@
             return new MagicEvent(
                 source,
                 this,
-                "PN searches his or her library for a Mountain or Swamp card and put it onto the battlefield. Then shuffle PN's library."
+                "PN searches his or her library for a Swamp or Mountain card and put it onto the battlefield. Then shuffle PN's library."
             );
         }
 

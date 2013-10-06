@@ -10,7 +10,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-			/////////////////////////////////
+            /////////////////////////////////
         }
     },
     new MagicPlaneswalkerActivation(-2) {
@@ -25,7 +25,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-			/////////////////////////////////
+            /////////////////////////////////
         }
     },
     new MagicPlaneswalkerActivation(-7) {
@@ -40,12 +40,12 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-			public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
-				flags.add(MagicAbility.DoubleStrike);
-				flags.add(MagicAbility.Trample);
-				flags.add(MagicAbility.Hexproof);
-				flags.add(MagicAbility.Haste);
-			}
+            public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
+                flags.add(MagicAbility.DoubleStrike);
+                flags.add(MagicAbility.Trample);
+                flags.add(MagicAbility.Hexproof);
+                flags.add(MagicAbility.Haste);
+            }
         }
     }
 ]

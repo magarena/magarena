@@ -3,14 +3,12 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack spell) {
             final int cmc = spell.getConvertedCost();
-            final MagicTargetFilter<MagicPermanent> filter = new MagicTargetFilter.MagicCMCPermanentFilter(
-                MagicTargetFilter.TARGET_CREATURE,
-                MagicTargetFilter.Operator.EQUAL,
-                cmc
-            )
             final MagicTargetChoice choice = new MagicTargetChoice(
-                filter,
-                true,
+                new MagicTargetFilter.MagicCMCPermanentFilter(
+                    MagicTargetFilter.TARGET_CREATURE,
+                    MagicTargetFilter.Operator.EQUAL,
+                    cmc
+                ),
                 MagicTargetHint.Negative,
                 "target creature with converted mana cost " + cmc
             );

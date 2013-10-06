@@ -1,11 +1,11 @@
 name=Wall of Blossoms
 url=http://magiccards.info/sh/en/75.html
 image=http://magiccards.info/scans/en/sh/75.jpg
-value=4.708
+value=4.525
 rarity=U
 type=Creature
 subtype=Plant,Wall
 cost={1}{G}
 pt=0/4
-ability=defender;enters draw card 1
+ability=defender;enters effect PN draws a card.
 timing=main

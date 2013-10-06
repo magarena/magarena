@@ -22,7 +22,7 @@
             game.doAction(new MagicUntapAction(event.getPermanent()));
         }
     },
-    new MagicTapCreatureActivation(
+    new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Tapping),
         "Tap"
     ) {
@@ -31,6 +31,26 @@
             return [
                 new MagicPayManaCostTapEvent(source,"{1}{U}")
             ];
+        }
+
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
+            return new MagicEvent(
+                source,
+                MagicTargetChoice.NEG_TARGET_PERMANENT,
+                MagicTapTargetPicker.Tap,
+                this,
+                "Tap target permanent\$."
+            );
+        }
+
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            event.processTargetPermanent(game,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    game.doAction(new MagicTapAction(creature, true));
+                }
+            });
         }
     },
     new MagicPermanentActivation(
@@ -48,10 +68,10 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.POS_TARGET_CREATURE,
+                MagicTargetChoice.POS_TARGET_PERMANENT,
                 MagicTapTargetPicker.Untap,
                 this,
-                "Untap target creature\$."
+                "Untap target permanent\$."
             );
         }
 

@@ -13,9 +13,8 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS,
-                // exiling a high cost card is good here
-                new MagicGraveyardTargetPicker(true),
+                MagicTargetChoice.Negative("target creature card from a graveyard"),
+                MagicGraveyardTargetPicker.ExileOpp,
                 this,
                 "Exile target creature card\$ from a graveyard. " +
                 "Put a 2/2 black Zombie creature token onto the battlefield."

@@ -8,7 +8,7 @@
                     source.hasSubType(MagicSubType.Sliver)) ?
                 new MagicEvent(
                     permanent,
-					source.getController(),
+                    source.getController(),
                     new MagicSimpleMayChoice(
                         MagicSimpleMayChoice.PLAY_TOKEN,
                         1,

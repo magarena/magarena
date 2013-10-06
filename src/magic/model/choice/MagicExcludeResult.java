@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class MagicExcludeResult implements MagicMappable {
+public class MagicExcludeResult implements MagicMappable<MagicExcludeResult> {
 
     private static final List<MagicPermanent> NO_EXCLUDE_PERMANENTS=Collections.emptyList();
 

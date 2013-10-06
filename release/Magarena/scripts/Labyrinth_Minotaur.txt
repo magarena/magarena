@@ -1,6 +1,6 @@
 name=Labyrinth Minotaur
-url=http://magiccards.info/hl/en/37.html
-image=http://magiccards.info/scans/en/hl/37.jpg
+url=http://magiccards.info/me3/en/39.html
+image=http://magiccards.info/scans/en/me3/39.jpg
 value=3.269
 rarity=C
 type=Creature

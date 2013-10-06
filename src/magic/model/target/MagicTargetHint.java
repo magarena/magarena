@@ -17,4 +17,18 @@ public enum MagicTargetHint {
                 return true;
         }
     }
+    
+    public static MagicTargetHint getHint(final String target) {
+        if (target.startsWith("pos")) {
+            return Positive;
+        } else if (target.startsWith("neg")) {
+            return Negative;
+        } else {
+            return None;
+        }
+    }
+
+    public static String removeHint(final String target) {
+        return target.replaceAll("^pos |^neg ", "");
+    }
 }

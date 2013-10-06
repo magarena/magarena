@@ -68,31 +68,35 @@ public class MMAB implements MagicAI {
         final int artificialLevel = sourceGame.getArtificialLevel(scorePlayer.getIndex());
         final int rounds = (size + THREADS - 1) / THREADS;
         final long slice = artificialLevel * SEC_TO_NANO / rounds;
+        
         for (final Object[] choice : choices) {
             final ArtificialChoiceResults achoice=new ArtificialChoiceResults(choice);
             achoices.add(achoice);
+            
+            final MagicGame workerGame=new MagicGame(sourceGame,scorePlayer);
+            if (!CHEAT) {
+                workerGame.hideHiddenCards();
+            }
+            if (DECKSTR) {
+                workerGame.setMainPhases(artificialLevel);
+            }
+            workerGame.setFastChoices(true);
+            final MMABWorker worker=new MMABWorker(
+                Thread.currentThread().getId(),
+                workerGame,
+                scoreBoard,
+                CHEAT
+            );
+            
             executor.execute(new Runnable() {
                 @Override
                 public void run() {
-                    final MagicGame workerGame=new MagicGame(sourceGame,scorePlayer);
-                    if (!CHEAT) {
-                        workerGame.hideHiddenCards();
-                    }
-                    if (DECKSTR) {
-                        workerGame.setMainPhases(artificialLevel);
-                    }
-                    workerGame.setFastChoices(true);
-                    final MMABWorker worker=new MMABWorker(
-                        Thread.currentThread().getId(),
-                        workerGame,
-                        scoreBoard,
-                        CHEAT
-                    );
                     worker.evaluateGame(achoice, scoreRef.get(), System.nanoTime() + slice);
                     scoreRef.update(achoice.aiScore.getScore());
                 }
             });
         }
+
         executor.shutdown();
         try {
             // wait for artificialLevel + 1 seconds for jobs to finish

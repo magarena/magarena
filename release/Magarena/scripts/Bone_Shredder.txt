@@ -1,12 +1,12 @@
 name=Bone Shredder
 url=http://magiccards.info/pvc/en/5.html
 image=http://magiccards.info/scans/en/pvc/5.jpg
-value=3.591
+value=3.588
 removal=1
 rarity=U
 type=Creature
 subtype=Minion
 cost={2}{B}
 pt=1/1
-ability=flying;echo {2}{B};enters destroy target nonartifact, nonblack creature.
+ability=flying;echo {2}{B};enters effect Destroy target nonartifact, nonblack creature.
 timing=main

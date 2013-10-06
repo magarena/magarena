@@ -53,18 +53,32 @@ release/Magarena/mods/legacy_cube.txt: cards/existing_tip.txt cards/legacy_banne
 release/Magarena/mods/%_cube.txt: cards/existing_tip.txt cards/%_all.txt
 	join -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
 
-cards/%_all.out:
+cards/standard_all.out:
 	touch $@
-	for rarity in mythic rare uncommon common land special; do \
-		curl --compressed "http://magiccards.info/query?q=r%3A$$rarity+f%3A$*&s=cname&v=olist&p=1" | grep "en/" >> $@; \
-		curl --compressed "http://magiccards.info/query?q=r%3A$$rarity+f%3A$*&s=cname&v=olist&p=2" | grep "en/" >> $@; \
-		curl --compressed "http://magiccards.info/query?q=r%3A$$rarity+f%3A$*&s=cname&v=olist&p=3" | grep "en/" >> $@; \
+	for p in `seq 37`; do \
+		echo $$p; curl --compressed "http://deckbox.org/games/mtg/cards?f=b31&p=$$p" | grep "deckbox.org/mtg/" >> $@; \
 	done
 	sed -i 's/<[^>]*>//g;s/^[ ]*//g' $@
-	sed -i 's/Æ/AE/' $@
+	sed -i 's/Æ/AE/;s/â/a/;s/ö/o/;s/û/u/;s/é/e/;s/Aether/AEther/' $@
+
+cards/extended_all.out:
+	touch $@
+	for p in `seq 88`; do \
+		echo $$p; curl --compressed "http://deckbox.org/games/mtg/cards?f=b32&p=$$p" | grep "deckbox.org/mtg/" >> $@; \
+	done
+	sed -i 's/<[^>]*>//g;s/^[ ]*//g' $@
+	sed -i 's/Æ/AE/;s/â/a/;s/ö/o/;s/û/u/;s/é/e/;s/Aether/AEther/' $@
+
+cards/modern_all.out:
+	touch $@
+	for p in `seq 264`; do \
+		echo $$p; curl --compressed "http://deckbox.org/games/mtg/cards?f=b35&p=$$p" | grep "deckbox.org/mtg/" >> $@; \
+	done
+	sed -i 's/<[^>]*>//g;s/^[ ]*//g' $@
+	sed -i 's/Æ/AE/;s/â/a/;s/ö/o/;s/û/u/;s/é/e/;s/Aether/AEther/' $@
 
 cards/%_all.txt: cards/%_all.out
-	sort $^ | uniq > $@
+	cat $^ | recode html..ascii | sort | uniq > $@
 
 cards/new.txt: cards/existing_tip.txt
 	$(eval LAST := $(shell hg tags | grep "^[[:digit:]]" | head -1 | cut -d' ' -f1))
@@ -117,6 +131,7 @@ M1.%: clean $(EXE) cubes release/Magarena/mods/felt_theme.zip
 	-rm -rf Magarena-1.$*.app
 	-rm Magarena-1.$*.zip
 	-rm Magarena-1.$*.app.zip
+	echo "preparing Lin/Win dist"
 	mkdir -p Magarena-1.$*/Magarena/mods
 	cp -r \
 			release/gpl-3.0.html \
@@ -137,9 +152,10 @@ M1.%: clean $(EXE) cubes release/Magarena/mods/felt_theme.zip
 			release/Magarena/mods/*.txt \
 			Magarena-1.$*/Magarena/mods
 	-zip -r Magarena-1.$*.zip Magarena-1.$*
+	echo "preparing Mac dist"
 	cp -r Magarena.app Magarena-1.$*.app
-	cd Magarena-1.$*.app/Contents/Resources; ln -s ../../../Magarena-1.$* Java
-	chmod a+x Magarena-1.$*.app/Contents/MacOS/JavaApplicationStub
+	cd Magarena-1.$*.app/Contents; ln -s ../../Magarena-1.$* Java
+	chmod a+x Magarena-1.$*.app/Contents/MacOS/MagarenaLauncher.sh
 	-zip -r Magarena-1.$*.app.zip Magarena-1.$*.app
 
 $(MAG): $(SRC)
@@ -566,7 +582,7 @@ exp/zermelo.tsv: $(wildcard exp/136*.log)
 	awk -f exp/extract_games.awk $^ | ./exp/whr.rb | tac > $@
 
 bytes_per_card:
-	echo `cat release/Magarena/scripts/* | sed 's/[[:space:]]*//' | wc -c` \
+	echo `cat release/Magarena/scripts/* | sed 's/^[[:space:]]*//' | wc -c` \
 	/ \
 	`ls -1 release/Magarena/scripts/*.txt | wc -l` \
 	| bc -l
@@ -574,9 +590,15 @@ bytes_per_card:
 reminder.txt: cards/cards.xml
 	grep 'reminder="[^"]*"' $^ -o | sed 's/reminder=//' | sort | uniq -c | sort -rn > $@
 
-fix_eol:
-	sed -i -e '$$a\'       release/Magarena/**/*.txt release/Magarena/**/*.groovy src/**/*.java
-	sed -i -e 's/\x0D$$//' release/Magarena/**/*.txt release/Magarena/**/*.groovy src/**/*.java
+FILES = release/Magarena/**/*.txt release/Magarena/**/*.groovy release/Magarena/**/*.dec src/**/*.java
+
+normalize_files:
+	# add newline at end of file
+	sed -i -e '$$a\'        ${FILES}
+	# convert DOS newlines to UNIX format
+	sed -i -e 's/\x0D$$//'  ${FILES}
+	# convert tab to four spaces
+	sed -i -e 's/\t/    /g' ${FILES}
 
 %.post:
 	@echo "[img]"`grep -o "http.*jpg" release/Magarena/scripts/$*.txt`"[/img]"

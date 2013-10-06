@@ -20,7 +20,6 @@ public class MagicUniquenessEvent extends MagicEvent {
             source,
             new MagicTargetChoice(
                 filter,
-                false,
                 MagicTargetHint.None,
                 "one. Put the rest into their owner's graveyard"
             ),

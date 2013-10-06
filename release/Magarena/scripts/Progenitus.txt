@@ -1,7 +1,7 @@
 name=Progenitus
 url=http://magiccards.info/mma/en/182.html
 image=http://magiccards.info/scans/en/mma/182.jpg
-value=4.315
+value=4.333
 rarity=M
 type=Legendary,Creature
 subtype=Hydra,Avatar

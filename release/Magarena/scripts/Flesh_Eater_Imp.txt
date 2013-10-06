@@ -1,7 +1,7 @@
 name=Flesh-Eater Imp
 url=http://magiccards.info/mbs/en/42.html
 image=http://magiccards.info/scans/en/mbs/42.jpg
-value=3.467
+value=3.472
 rarity=U
 type=Creature
 subtype=Imp

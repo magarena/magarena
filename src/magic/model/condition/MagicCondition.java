@@ -7,7 +7,9 @@ import magic.model.MagicCardList;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
+import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
+import magic.model.MagicPermanentState;
 import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
@@ -53,6 +55,13 @@ public interface MagicCondition {
         public boolean accept(final MagicSource source) {
             final MagicGame game = source.getGame();
             return game.canPlaySorcery(source.getController()) == false;
+        }
+    };
+    
+    MagicCondition NOT_MONSTROUS_CONDITION=new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicPermanent permanent=(MagicPermanent)source;
+            return permanent.hasState(MagicPermanentState.Monstrous) == false;
         }
     };
 
@@ -144,12 +153,6 @@ public interface MagicCondition {
         }
     };
 
-    MagicCondition OPP_FOUR_LANDS_CONDITION=new MagicCondition() {
-        public boolean accept(final MagicSource source) {
-            return source.getController().getOpponent().getNrOfPermanents(MagicType.Land)>=4;
-        }
-    };
-
     MagicCondition LEAST_FIVE_OTHER_MOUNTAINS=new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
@@ -176,13 +179,6 @@ public interface MagicCondition {
     MagicCondition HELLBENT = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             return source.getController().getHandSize() == 0;
-        }
-    };
-
-    MagicCondition POWER_4_OR_GREATER_CONDITION = new MagicCondition() {
-        public boolean accept(final MagicSource source) {
-            final MagicPermanent permanent = (MagicPermanent)source;
-            return permanent.getPower() >= 4;
         }
     };
 

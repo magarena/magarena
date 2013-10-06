@@ -14,10 +14,13 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicAddTriggerAction(
-                event.getRefPermanent(),
-                MagicAtEndOfCombatTrigger.Destroy
-            ));
+            event.processRefPermanent(game, {
+                final MagicPermanent permanent ->
+                game.doAction(new MagicAddTriggerAction(
+                    permanent,
+                    MagicAtEndOfCombatTrigger.Destroy
+                ))
+            } as MagicPermanentAction);
         }
     }
 ]

@@ -6,4 +6,5 @@ rarity=R
 type=Enchantment
 cost={3}{U}
 timing=enchantment
+static=all
 requires_groovy_code

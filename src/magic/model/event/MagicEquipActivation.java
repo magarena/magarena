@@ -43,7 +43,6 @@ public class MagicEquipActivation extends MagicPermanentActivation {
                 MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,
                 source.getEquippedCreature()
             ),
-            true,
             MagicTargetHint.None,
             "target creature you control"
         );

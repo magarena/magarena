@@ -13,41 +13,38 @@
             game.doAction(new MagicMillLibraryAction(event.getPlayer(),10));
         }
     }, 
-	new MagicAtUpkeepTrigger() {
+    new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             return permanent.isController(upkeepPlayer) ?
                 new MagicEvent(
                     permanent,
                     this,
-                    "Chooses a card at random in your graveyard. " +
-					"If it's a creature card, put it onto the battlefield. " +
-					"Otherwise, put it into your hand."
+                    "PN chooses a card at random in his or her graveyard. " +
+                    "If it's a creature card, put it onto the battlefield. " +
+                    "Otherwise, put it into PN's hand."
                 ):
                 MagicEvent.NONE;
         }
-		
-		@Override
+        
+        @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            
             final MagicPlayer player = event.getPlayer();
             final List<MagicCard> targets = game.filterCards(player,MagicTargetFilter.TARGET_CARD_FROM_GRAVEYARD);
             final MagicRandom rng = new MagicRandom(player.getGraveyard().getStateId());
-            int actualAmount = Math.min(targets.size(),1);
-            for (;actualAmount>0;actualAmount--) {
+            if (targets.isEmpty() == false) {
                 final int index = rng.nextInt(targets.size());
                 final MagicCard card = targets.get(index);
-				final MagicCardDefinition cardDefinition = card.getCardDefinition();
-				if(cardDefinition.isCreature()){
-				    game.doAction(new MagicReanimateAction(
-						card,
-						player
-					));
-				}else{
-					game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
+                if (card.hasType(MagicType.Creature)) {
+                    game.doAction(new MagicReanimateAction(
+                        card,
+                        player
+                    ));
+                } else {
+                    game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
                     game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
-				}    
+                }
             }
         }
-	}
+    }
 ]

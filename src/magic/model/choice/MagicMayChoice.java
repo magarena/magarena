@@ -31,7 +31,8 @@ public class MagicMayChoice extends MagicChoice {
 
     public MagicMayChoice(final String description,final MagicChoice... choices) {
         super(description);
-        this.choices=choices;
+        this.choices = (choices.length > 0 && choices[0] != MagicChoice.NONE) ?
+            choices : new MagicChoice[0];
 
         MagicTargetChoice localTargetChoice = MagicTargetChoice.NONE;
         int localManaChoiceResultIndex = -1;

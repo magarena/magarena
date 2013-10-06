@@ -67,7 +67,7 @@ public class VegasAI implements MagicAI {
                 CHEAT,
                 choiceGame,
                 score,
-                new Random(MagicRandom.nextInt(1000000)),
+                new Random(MagicRandom.nextRNGInt(1000000)),
                 slice
             ));
         }

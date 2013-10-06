@@ -2,14 +2,13 @@
     new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-			return permanent.isController(upkeepPlayer) ?
-				new MagicEvent(
-					permanent,
-					upkeepPlayer,
-					this,
-					"Each player sacrifices a non-Vampire creature."
-				):
-				MagicEvent.NONE;
+            return permanent.isController(upkeepPlayer) ?
+                new MagicEvent(
+                    permanent,
+                    this,
+                    "Each player sacrifices a non-Vampire creature."
+                ):
+                MagicEvent.NONE;
         }
 
         @Override
@@ -21,6 +20,6 @@
                     MagicTargetChoice.SACRIFICE_NON_VAMPIRE
                 ));
             }
-        }		
+        }        
     }
 ]

@@ -1,8 +1,8 @@
-
-def SpinedPump = new MagicWhenBecomesBlockedTrigger() {
+[    
+    new MagicWhenBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocked) {
-            return (blocked == permanent) ?
+            return blocked.hasSubType(MagicSubType.Sliver) ?
                 new MagicEvent(
                     permanent,
                     blocked,
@@ -21,16 +21,6 @@ def SpinedPump = new MagicWhenBecomesBlockedTrigger() {
                 amount,
                 amount
             ));
-        }
-    };
-[    
-	new MagicStatic(
-        MagicLayer.Ability,
-        MagicTargetFilter.TARGET_SLIVER
-    ) {
-        @Override
-        public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
-            permanent.addAbility(SpinedPump);
         }
     }
 ]

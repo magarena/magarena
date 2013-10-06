@@ -1,12 +1,12 @@
 name=Tahngarth, Talruum Hero
-url=http://magiccards.info/ps/en/74b.html
-image=http://magiccards.info/scans/en/ps/74b.jpg
+url=http://magiccards.info/ps/en/74a.html
+image=http://magiccards.info/scans/en/ps/74a.jpg
 value=4.042
 rarity=R
 type=Legendary,Creature
 subtype=Minotaur,Warrior
-ability=vigilance
 cost={3}{R}{R}
 pt=4/4
+ability=vigilance
 timing=main
 requires_groovy_code

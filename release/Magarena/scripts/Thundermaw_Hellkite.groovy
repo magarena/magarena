@@ -10,13 +10,12 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicSource permanent = event.getPermanent();
             final Collection<MagicPermanent> creatures = game.filterPermanents(
                 event.getPlayer(),
-                MagicTargetFilter.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS
+                MagicTargetFilter.TARGET_CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS
             );
             for (final MagicPermanent creature : creatures) {
-                final MagicDamage damage=new MagicDamage(permanent,creature,1);
+                final MagicDamage damage=new MagicDamage(event.getPermanent(),creature,1);
                 game.doAction(new MagicDealDamageAction(damage));
                 game.doAction(new MagicTapAction(creature, true));
             }

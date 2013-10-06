@@ -244,7 +244,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
         if (cardPoolDefs.isEmpty()) {
             cardViewer.setCard(MagicCardDefinition.UNKNOWN,0);
          } else {
-             final int index = MagicRandom.nextInt(cardPoolDefs.size());
+             final int index = MagicRandom.nextRNGInt(cardPoolDefs.size());
              cardViewer.setCard(cardPoolDefs.get(index),0);
          }
     }

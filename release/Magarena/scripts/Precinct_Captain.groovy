@@ -8,7 +8,7 @@
                 new MagicEvent(
                     permanent,
                     this,
-                    "Put a 1/1 white Soldier creature token onto the battlefield."
+                    "PN puts a 1/1 white Soldier creature token onto the battlefield."
                 ):
                 MagicEvent.NONE;
         }

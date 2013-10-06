@@ -1,6 +1,6 @@
 name=The Tabernacle at Pendrell Vale
-url=http://magiccards.info/lg/en/252.html
-image=http://magiccards.info/scans/en/lg/252.jpg
+url=http://magiccards.info/me3/en/212.html
+image=http://magiccards.info/scans/en/me3/212.jpg
 value=4.610
 rarity=R
 type=Legendary,Land

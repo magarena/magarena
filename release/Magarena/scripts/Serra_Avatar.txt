@@ -6,6 +6,6 @@ rarity=M
 type=Creature
 subtype=Avatar
 cost={4}{W}{W}{W}
-ability=library instead of graveyard
+ability=graveyard to library
 timing=main
 requires_groovy_code

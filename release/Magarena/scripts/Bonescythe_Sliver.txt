@@ -1,7 +1,7 @@
 name=Bonescythe Sliver
 url=http://magiccards.info/m14/en/9.html
 image=http://magiccards.info/scans/en/m14/9.jpg
-value=3.694
+value=3.745
 rarity=R
 type=Creature
 subtype=Sliver

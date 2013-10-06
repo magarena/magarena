@@ -1,13 +1,13 @@
 name=Galvanic Arc
 url=http://magiccards.info/rav/en/126.html
 image=http://magiccards.info/scans/en/rav/126.jpg
-value=3.359
+value=3.394
 removal=3
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{R}
 given_ability=first strike
-ability=enters damage target 3
+ability=enters effect SN deals 3 damage to target creature or player.
 timing=removal
 enchant=first strike,creature

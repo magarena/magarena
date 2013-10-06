@@ -22,162 +22,6 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.stack.MagicItemOnStack;
 import magic.model.choice.MagicTargetChoice;
 
-abstract class MagicTargetFilterImpl implements MagicTargetFilter<MagicTarget> {
-    public List<MagicTarget> filter(final MagicGame game, final MagicPlayer player, final MagicTargetHint targetHint) {
-        final List<MagicTarget> targets=new ArrayList<MagicTarget>();
-
-        // Players
-        if (acceptType(MagicTargetType.Player)) {
-            for (final MagicPlayer targetPlayer : game.getPlayers()) {
-                if (accept(game,player,targetPlayer) &&
-                    targetHint.accept(player,targetPlayer)) {
-                    targets.add(targetPlayer);
-                }
-            }
-        }
-
-        // Permanents
-        if (acceptType(MagicTargetType.Permanent)) {
-            for (final MagicPlayer controller : game.getPlayers()) {
-                for (final MagicPermanent targetPermanent : controller.getPermanents()) {
-                    if (accept(game,player,targetPermanent) &&
-                        targetHint.accept(player,targetPermanent)) {
-                        targets.add(targetPermanent);
-                    }
-                }
-            }
-        }
-
-        // Items on stack
-        if (acceptType(MagicTargetType.Stack)) {
-            for (final MagicItemOnStack targetItemOnStack : game.getStack()) {
-                if (accept(game,player,targetItemOnStack) &&
-                    targetHint.accept(player,targetItemOnStack)) {
-                    targets.add(targetItemOnStack);
-                }
-            }
-        }
-
-        // Cards in graveyard
-        if (acceptType(MagicTargetType.Graveyard)) {
-            for (final MagicCard targetCard : player.getGraveyard()) {
-                if (accept(game,player,targetCard)) {
-                    targets.add(targetCard);
-                }
-            }
-        }
-
-        // Cards in opponent's graveyard
-        if (acceptType(MagicTargetType.OpponentsGraveyard)) {
-            for (final MagicCard targetCard : player.getOpponent().getGraveyard()) {
-                if (accept(game,player,targetCard)) {
-                    targets.add(targetCard);
-                }
-            }
-        }
-
-        // Cards in hand
-        if (acceptType(MagicTargetType.Hand)) {
-            for (final MagicCard targetCard : player.getHand()) {
-                if (accept(game,player,targetCard)) {
-                    targets.add(targetCard);
-                }
-            }
-        }
-        
-        // Cards in library
-        if (acceptType(MagicTargetType.Library)) {
-            for (final MagicCard targetCard : player.getLibrary()) {
-                if (accept(game,player,targetCard)) {
-                    targets.add(targetCard);
-                }
-            }
-        }
-
-        return targets;
-    }
-}
-
-abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard> {
-    public List<MagicCard> filter(final MagicGame game, final MagicPlayer player, final MagicTargetHint targetHint) {
-        final List<MagicCard> targets = new ArrayList<MagicCard>();
-        final Set<Long> added = new HashSet<Long>();
-
-        // Cards in graveyard
-        if (acceptType(MagicTargetType.Graveyard)) {
-            add(game, player, player.getGraveyard(), targets, added);
-        }
-
-        // Cards in opponent's graveyard
-        if (acceptType(MagicTargetType.OpponentsGraveyard)) {
-            add(game, player, player.getOpponent().getGraveyard(), targets, added);
-        }
-
-        // Cards in hand
-        if (acceptType(MagicTargetType.Hand)) {
-            add(game, player, player.getHand(), targets, added);
-        }
-        
-        // Cards in library
-        if (acceptType(MagicTargetType.Library)) {
-            add(game, player, player.getLibrary(), targets, added);
-        }
-
-        return targets;
-    }
-
-    private void add(final MagicGame game, final MagicPlayer player, final MagicCardList cards, final List<MagicCard> targets, final Set<Long> added) {
-        for (final MagicCard card : cards) {
-            if (accept(game,player,card) && added.contains(card.getStateId()) == false) {
-                targets.add(card);
-                added.add(card.getStateId());
-            }
-        }
-    }
-}
-
-abstract class MagicStackFilterImpl implements MagicTargetFilter<MagicItemOnStack> {
-    public List<MagicItemOnStack> filter(final MagicGame game, final MagicPlayer player, final MagicTargetHint targetHint) {
-        final List<MagicItemOnStack> targets=new ArrayList<MagicItemOnStack>();
-
-        // Items on stack
-        if (acceptType(MagicTargetType.Stack)) {
-            for (final MagicItemOnStack targetItemOnStack : game.getStack()) {
-                if (accept(game,player,targetItemOnStack) &&
-                    targetHint.accept(player,targetItemOnStack)) {
-                    targets.add(targetItemOnStack);
-                }
-            }
-        }
-
-        return targets;
-    }
-    public boolean acceptType(final MagicTargetType targetType) {
-        return targetType==MagicTargetType.Stack;
-    }
-}
-
-abstract class MagicPlayerFilterImpl implements MagicTargetFilter<MagicPlayer> {
-    public List<MagicPlayer> filter(final MagicGame game, final MagicPlayer player, final MagicTargetHint targetHint) {
-        final List<MagicPlayer> targets=new ArrayList<MagicPlayer>();
-
-        // Players
-        if (acceptType(MagicTargetType.Player)) {
-            for (final MagicPlayer targetPlayer : game.getPlayers()) {
-                if (accept(game,player,targetPlayer) &&
-                    targetHint.accept(player,targetPlayer)) {
-                    targets.add(targetPlayer);
-                }
-            }
-        }
-
-        return targets;
-    }
-    public boolean acceptType(final MagicTargetType targetType) {
-        return targetType==MagicTargetType.Player;
-    }
-}
-
 public interface MagicTargetFilter<T extends MagicTarget> {
 
     boolean acceptType(final MagicTargetType targetType);
@@ -619,7 +463,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
     MagicPermanentFilterImpl TARGET_BIRD = Factory.creature(MagicSubType.Bird, Control.Any);
     
-    MagicPermanentFilterImpl TARGET_GOBLIN_PERMANENT = Factory.tribal(MagicSubType.Goblin, Control.Any);
+    MagicPermanentFilterImpl TARGET_GOBLIN_PERMANENT = Factory.permanent(MagicSubType.Goblin, Control.Any);
     
     MagicPermanentFilterImpl TARGET_GOBLIN_CREATURE = Factory.creature(MagicSubType.Goblin, Control.Any);
 
@@ -756,6 +600,14 @@ public interface MagicTargetFilter<T extends MagicTarget> {
                    !target.hasSubType(MagicSubType.Zombie);
         }
     };
+    
+    MagicPermanentFilterImpl TARGET_NON_VAMPIRE_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isController(player) &&
+                   target.isCreature() &&
+                   !target.hasSubType(MagicSubType.Vampire);
+        }
+    };
 
     MagicPermanentFilterImpl TARGET_ZOMBIE_YOU_CONTROL = Factory.creature(MagicSubType.Zombie, Control.You);
 
@@ -765,7 +617,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
     MagicPermanentFilterImpl TARGET_KOR_YOU_CONTROL = Factory.creature(MagicSubType.Kor, Control.You);
 
-    MagicPermanentFilterImpl TARGET_WOLF_YOU_CONTROL = Factory.tribal(MagicSubType.Wolf, Control.You);
+    MagicPermanentFilterImpl TARGET_WOLF_YOU_CONTROL = Factory.permanent(MagicSubType.Wolf, Control.You);
 
     MagicPermanentFilterImpl TARGET_SLIVER = Factory.creature(MagicSubType.Sliver, Control.Any);
 
@@ -779,7 +631,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
     MagicPermanentFilterImpl TARGET_ALLY_YOU_CONTROL = Factory.creature(MagicSubType.Ally, Control.You);
 
-    MagicPermanentFilterImpl TARGET_FAERIE_YOU_CONTROL = Factory.tribal(MagicSubType.Faerie, Control.You);
+    MagicPermanentFilterImpl TARGET_FAERIE_YOU_CONTROL = Factory.permanent(MagicSubType.Faerie, Control.You);
     
     MagicPermanentFilterImpl TARGET_FAERIE_CREATURE_YOU_CONTROL = Factory.creature(MagicSubType.Faerie, Control.You);
 
@@ -957,6 +809,15 @@ public interface MagicTargetFilter<T extends MagicTarget> {
                    target.hasState(MagicPermanentState.Blocked) == false;
         }
     };
+    
+    MagicPermanentFilterImpl TARGET_KALDRA_EQUIPMENT=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isEquipment() &&
+                    (target.getName().equals("Sword of Kaldra") || 
+                     target.getName().equals("Shield of Kaldra") || 
+                     target.getName().equals("Helm of Kaldra"));
+        }
+    };
 
     MagicPermanentFilterImpl TARGET_BLOCKED_CREATURE = Factory.creature(MagicPermanentState.Blocked, Control.Any);
 
@@ -969,7 +830,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }
     };
 
-    MagicCardFilterImpl TARGET_CARD_FROM_ALL_GRAVEYARDs = new MagicCardFilterImpl() {
+    MagicCardFilterImpl TARGET_CARD_FROM_ALL_GRAVEYARDS = new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
             return true;
         }
@@ -1287,7 +1148,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         public static final MagicPermanentFilterImpl permanent(final MagicSubType subtype, final Control control) {
             return new MagicPermanentFilterImpl() {
                 public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-                    return target.hasSubType(subtype) &&
+                    return target.hasSubType(subtype) && subtype.hasType(target) &&
                            ((control == Control.You && target.isController(player)) ||
                             (control == Control.Opp && target.isOpponent(player)) ||
                             (control == Control.Any));
@@ -1320,17 +1181,6 @@ public interface MagicTargetFilter<T extends MagicTarget> {
             return new MagicPermanentFilterImpl() {
                 public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
                     return target.isCreature() &&
-                           target.hasSubType(subtype) &&
-                           ((control == Control.You && target.isController(player)) ||
-                            (control == Control.Opp && target.isOpponent(player)) ||
-                            (control == Control.Any));
-                }
-            };
-        }
-        public static final MagicPermanentFilterImpl tribal(final MagicSubType subtype, final Control control) {
-            return new MagicPermanentFilterImpl() {
-                public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-                    return (target.isCreature() || target.hasType(MagicType.Tribal)) &&
                            target.hasSubType(subtype) &&
                            ((control == Control.You && target.isController(player)) ||
                             (control == Control.Opp && target.isOpponent(player)) ||

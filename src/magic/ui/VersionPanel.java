@@ -27,7 +27,7 @@ public class VersionPanel extends JPanel implements ActionListener {
 
     private static final long serialVersionUID = 1L;
 
-    private static final String VERSION = "1.41";
+    private static final String VERSION = "1.43";
     private static final String VERSION_TEXT = "Magarena " + VERSION;
 
     private static final Border LOGO_BORDER=BorderFactory.createMatteBorder(2,2,2,2,new Color(0x8C,0x78,0x53));
@@ -63,7 +63,7 @@ public class VersionPanel extends JPanel implements ActionListener {
 
         cardViewer=new CardViewer(true,true);
         final List<MagicCardDefinition> spellCards=CardDefinitions.getSpellCards();
-        final int index=MagicRandom.nextInt(spellCards.size());
+        final int index=MagicRandom.nextRNGInt(spellCards.size());
         cardViewer.setCard(spellCards.get(index),0);
 
         newButton=new JButton("NEW");

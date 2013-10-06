@@ -5,9 +5,9 @@ import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.SliderPanel;
-import support.ui.GenericJComboBox;
 
 import java.util.Arrays;
+import javax.swing.JComboBox;
 import javax.swing.ComboBoxModel;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
@@ -27,9 +27,9 @@ public class PreferencesDialog extends JDialog implements ActionListener {
     private static final long serialVersionUID = 1L;
 
     private final MagicFrame frame;
-    private final GenericJComboBox<String> themeComboBox;
-    private final GenericJComboBox<String> avatarComboBox;
-    private final GenericJComboBox<String> highlightComboBox;
+    private final JComboBox<String> themeComboBox;
+    private final JComboBox<String> avatarComboBox;
+    private final JComboBox<String> highlightComboBox;
     private final JCheckBox confirmExitCheckBox;
     private final JCheckBox soundCheckBox;
     private final JCheckBox touchscreenCheckBox;
@@ -86,10 +86,10 @@ public class PreferencesDialog extends JDialog implements ActionListener {
         themeLabel.setBounds(X,Y,W,H);
         themeLabel.setIcon(IconImages.PICTURE);
         mainPanel.add(themeLabel);
-        themeComboBox=new GenericJComboBox<String>(Arrays.asList(ThemeFactory.getInstance().getThemeNames()));
+        themeComboBox=new JComboBox<String>(ThemeFactory.getInstance().getThemeNames());
         themeComboBox.setFocusable(false);
         themeComboBox.setBounds(X2,Y,W2,H);
-        themeComboBox.setGenericSelectedItem(config.getTheme());
+        themeComboBox.setSelectedItem(config.getTheme());
         mainPanel.add(themeComboBox);
 
 
@@ -98,10 +98,10 @@ public class PreferencesDialog extends JDialog implements ActionListener {
         avatarLabel.setBounds(X,Y,W,H);
         avatarLabel.setIcon(IconImages.AVATAR);
         mainPanel.add(avatarLabel);
-        avatarComboBox=new GenericJComboBox<String>(AvatarImages.getInstance().getNames());
+        avatarComboBox=new JComboBox<String>(AvatarImages.getInstance().getNames());
         avatarComboBox.setFocusable(false);
         avatarComboBox.setBounds(X2,Y,W2,H);
-        avatarComboBox.setGenericSelectedItem(config.getAvatar());
+        avatarComboBox.setSelectedItem(config.getAvatar());
         mainPanel.add(avatarComboBox);
 
         Y += 35;
@@ -110,10 +110,10 @@ public class PreferencesDialog extends JDialog implements ActionListener {
         highlightLabel.setIcon(IconImages.PICTURE);
         mainPanel.add(highlightLabel);
         final String[] Highlightchoices = { "none", "overlay", "border", "theme" };
-        highlightComboBox = new GenericJComboBox<String>(Arrays.asList(Highlightchoices));
+        highlightComboBox = new JComboBox<String>(Highlightchoices);
         highlightComboBox.setFocusable(false);
         highlightComboBox.setBounds(X2,Y,W2,H);
-        highlightComboBox.setGenericSelectedItem(config.getHighlight());
+        highlightComboBox.setSelectedItem(config.getHighlight());
         mainPanel.add(highlightComboBox);
 
         Y += 35;
@@ -195,9 +195,9 @@ public class PreferencesDialog extends JDialog implements ActionListener {
         final Object source=event.getSource();
         if (source==okButton) {
             final GeneralConfig config=GeneralConfig.getInstance();
-            config.setTheme(themeComboBox.getSelectedItem());
-            config.setAvatar(avatarComboBox.getSelectedItem());
-            config.setHighlight(highlightComboBox.getSelectedItem());
+            config.setTheme(themeComboBox.getItemAt(themeComboBox.getSelectedIndex()));
+            config.setAvatar(avatarComboBox.getItemAt(avatarComboBox.getSelectedIndex()));
+            config.setHighlight(highlightComboBox.getItemAt(highlightComboBox.getSelectedIndex()));
             config.setConfirmExit(confirmExitCheckBox.isSelected());
             config.setSound(soundCheckBox.isSelected());
             config.setTouchscreen(touchscreenCheckBox.isSelected());

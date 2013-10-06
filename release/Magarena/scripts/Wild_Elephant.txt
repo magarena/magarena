@@ -1,7 +1,7 @@
 name=Wild Elephant
 url=http://magiccards.info/mr/en/152.html
 image=http://magiccards.info/scans/en/mr/152.jpg
-value=2.865
+value=2.868
 rarity=C
 type=Creature
 subtype=Elephant

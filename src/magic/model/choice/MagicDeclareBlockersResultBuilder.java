@@ -3,6 +3,7 @@ package magic.model.choice;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
+import magic.model.MagicRandom;
 import magic.model.score.MagicCombatScore;
 import magic.model.score.MagicFastCombatScore;
 import magic.model.score.MagicGameCombatScore;
@@ -64,7 +65,7 @@ public class MagicDeclareBlockersResultBuilder {
         //buildBasicBlocks(0);
 
         //sample NUM_SAMPLES random blocks
-        final magic.MersenneTwisterFast rng = new magic.MersenneTwisterFast(attackers.length + blockers.size());
+        final MagicRandom rng = new MagicRandom(attackers.length + blockers.size());
         for (int i = 0; i < NUM_SAMPLES; i++) {
             final Map<Integer, List<MagicCombatCreature>> block =
                 new HashMap<Integer, List<MagicCombatCreature>>();

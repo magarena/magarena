@@ -15,7 +15,7 @@
             game.doAction(new MagicMoveCardAction(permanent.getCard(),MagicLocationType.Graveyard,MagicLocationType.Exile));
             final MagicPlayer player = event.getPlayer();
             final List<MagicCard> targets = game.filterCards(player,MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD);
-            final magic.MersenneTwisterFast rng = new magic.MersenneTwisterFast(player.getGraveyard().getStateId());
+            final MagicRandom rng = new MagicRandom(player.getGraveyard().getStateId());
             int actualAmount = Math.min(targets.size(),2);
             for (;actualAmount>0;actualAmount--) {
                 final int index = rng.nextInt(targets.size());

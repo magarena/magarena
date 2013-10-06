@@ -7,12 +7,11 @@
                 final MagicPermanent creature) {
             if (permanent == creature &&
                 permanent.getController().getNrOfPermanents(MagicType.Creature) > 1) {
-                final MagicTargetFilter<MagicPermanent> targetFilter = new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,permanent
-                );
                 final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                    targetFilter,
-                    false,
+                    new MagicOtherPermanentTargetFilter(
+                        MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,
+                        permanent
+                    ),
                     MagicTargetHint.None,"another creature to return"
                 );
                 return new MagicEvent(

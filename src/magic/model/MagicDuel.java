@@ -80,7 +80,7 @@ public class MagicDuel {
     }
 
     private void determineStartPlayer() {
-        startPlayer=MagicRandom.nextInt(2);
+        startPlayer=MagicRandom.nextRNGInt(2);
     }
 
     public void setStartPlayer(final int startPlayer) {
@@ -168,7 +168,7 @@ public class MagicDuel {
         players[0]=player;
         avatars.remove(playerFace);
 
-        final int findex=MagicRandom.nextInt(avatars.size());
+        final int findex=MagicRandom.nextRNGInt(avatars.size());
         final Integer computerFace=avatars.get(findex);
         players[1]=new MagicPlayerDefinition(COMPUTER,true,configuration.getOpponentProfile(),computerFace);
 

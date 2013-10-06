@@ -14,7 +14,7 @@
             return new MagicEvent(
                 source,
                 MagicTargetChoice.BLUE_OR_RED_CREATURE_CARD_FROM_HAND,
-                new MagicGraveyardTargetPicker(true),
+                MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
                 "PN puts a blue or red creature card\$ from his or her hand onto the battlefield."
             );

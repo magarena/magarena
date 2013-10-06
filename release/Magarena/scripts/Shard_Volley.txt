@@ -1,0 +1,11 @@
+name=Shard Volley
+url=http://magiccards.info/mt/en/103.html
+image=http://magiccards.info/scans/en/mt/103.jpg
+value=2.779
+removal=3
+rarity=C
+type=Instant
+cost={R}
+timing=removal
+effect=SN deals 3 damage to target creature or player.
+requires_groovy_code

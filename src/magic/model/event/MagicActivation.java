@@ -10,7 +10,7 @@ import magic.model.MagicSource;
 import magic.model.choice.MagicChoice;
 import magic.model.condition.MagicCondition;
 
-public abstract class MagicActivation<T extends MagicSource> implements MagicEventAction, Comparable<MagicActivation> {
+public abstract class MagicActivation<T extends MagicSource> implements MagicEventAction, Comparable<MagicActivation<?>> {
 
     public static final MagicCondition[] NO_COND = new MagicCondition[0];
 
@@ -115,7 +115,7 @@ public abstract class MagicActivation<T extends MagicSource> implements MagicEve
     }
 
     @Override
-    public int compareTo(final MagicActivation other) {
+    public int compareTo(final MagicActivation<?> other) {
         return Long.signum(id-other.id);
     }
 

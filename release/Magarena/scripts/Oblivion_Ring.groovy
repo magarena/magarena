@@ -2,10 +2,14 @@
     new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
-            final MagicTargetFilter<MagicPermanent> targetFilter = new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilter.TARGET_NONLAND_PERMANENT,permanent);
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                    targetFilter,true,MagicTargetHint.None,"another target nonland permanent to exile");
+                new MagicOtherPermanentTargetFilter(
+                    MagicTargetFilter.TARGET_NONLAND_PERMANENT,
+                    permanent
+                ),
+                MagicTargetHint.None,
+                "another target nonland permanent to exile"
+            );
             return new MagicEvent(
                 permanent,
                 targetChoice,

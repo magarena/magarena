@@ -6,7 +6,7 @@
                 new MagicEvent(
                     permanent,
                     MagicTargetChoice.TARGET_SPIRIT_CARD_FROM_GRAVEYARD,
-                    new MagicGraveyardTargetPicker(false),
+                    MagicGraveyardTargetPicker.ReturnToHand,
                     this,
                     "Return target Spirit card\$ from your graveyard to your hand."
                 ):

@@ -1,10 +1,10 @@
 name=Searing Spear
 url=http://magiccards.info/m13/en/147.html
 image=http://magiccards.info/scans/en/m13/147.jpg
-value=3.238
+value=3.250
 removal=3
 rarity=C
 type=Instant
 cost={1}{R}
 timing=removal
-requires_groovy_code=Lightning Bolt
+effect=SN deals 3 damage to target creature or player.

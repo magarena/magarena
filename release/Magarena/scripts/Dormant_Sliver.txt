@@ -1,0 +1,13 @@
+name=Dormant Sliver
+url=http://magiccards.info/pc/en/156.html
+image=http://magiccards.info/scans/en/pc/156.jpg
+value=3.425
+rarity=U
+type=Creature
+subtype=Sliver
+cost={2}{G}{U}
+pt=2/2
+ability=lord all sliver creatures have defender;\
+        lord all sliver creatures have enters effect PN draws a card.
+static=all
+timing=main

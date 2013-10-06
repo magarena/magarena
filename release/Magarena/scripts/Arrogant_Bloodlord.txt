@@ -8,3 +8,4 @@ subtype=Vampire,Knight
 cost={1}{B}{B}
 pt=4/4
 timing=main
+requires_groovy_code

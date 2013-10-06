@@ -22,7 +22,6 @@ public class MagicSoulbondEvent extends MagicEvent {
                             MagicTargetFilter.TARGET_UNPAIRED_CREATURE_YOU_CONTROL,
                             permanent
                         ),
-                        false,
                         MagicTargetHint.None,
                         "a creature other than " + permanent
                     ):

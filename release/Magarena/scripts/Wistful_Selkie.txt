@@ -1,11 +1,11 @@
 name=Wistful Selkie
 url=http://magiccards.info/eve/en/165.html
 image=http://magiccards.info/scans/en/eve/165.jpg
-value=3.393
+value=3.394
 rarity=U
 type=Creature
 subtype=Merfolk,Wizard
 cost={G/U}{G/U}{G/U}
-ability=enters draw card 1
+ability=enters effect PN draws a card.
 pt=2/2
 timing=main

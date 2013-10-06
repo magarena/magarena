@@ -1,11 +1,11 @@
 name=Splinterfright
 url=http://magiccards.info/isd/en/205.html
 image=http://magiccards.info/scans/en/isd/205.jpg
-value=3.838
+value=3.855
 rarity=R
 type=Creature
 subtype=Elemental
 cost={2}{G}
 ability=trample
 timing=main
-requires_groovy_code
+requires_groovy_code=Boneyard Wurm;Splinterfright

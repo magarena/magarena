@@ -1,0 +1,8 @@
+name=Kaldra
+token=Kaldra
+image=http://img.photobucket.com/albums/v237/Xand0r/kaldra-token_mirrodin-dst-5dn_01.jpg
+value=4
+type=Legendary,Creature
+subtype=Avatar
+cost={0}
+pt=4/4

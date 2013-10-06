@@ -1,0 +1,12 @@
+name=Solemn Simulacrum
+url=http://magiccards.info/m12/en/217.html
+image=http://magiccards.info/scans/en/m12/217.jpg
+value=4.542
+rarity=R
+type=Artifact,Creature
+subtype=Golem
+cost={4}
+pt=2/2
+ability=dies effect PN may draw a card.
+timing=main
+requires_groovy_code=Farhaven Elf

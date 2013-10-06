@@ -7,7 +7,9 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
-                new MagicGraveyardTargetPicker(MagicCondition.THRESHOLD_CONDITION.accept(cardOnStack)),
+                MagicCondition.THRESHOLD_CONDITION.accept(cardOnStack) ?
+                    MagicGraveyardTargetPicker.PutOntoBattlefield :
+                    MagicGraveyardTargetPicker.ReturnToHand,
                 this,
                 "Return target creature card\$ from your graveyard to your hand. " +
                 "Return that card from your graveyard to the battlefield instead " +

@@ -1,0 +1,11 @@
+name=Sylvan Caryatid
+url=http://magiccards.info/ths/en/180.html
+image=http://magiccards.info/scans/en/ths/180.jpg
+value=4.128
+rarity=R
+type=Creature
+subtype=Plant
+cost={1}{G}
+pt=0/3
+ability=defender;hexproof;tap add mana any
+timing=main

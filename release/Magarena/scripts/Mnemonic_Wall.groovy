@@ -7,7 +7,7 @@
                 new MagicMayChoice(
                     MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD
                 ),
-                new MagicGraveyardTargetPicker(false),
+                MagicGraveyardTargetPicker.ReturnToHand,
                 this,
                 "PN may\$ return target instant or sorcery card\$ " +
                 "from his or her graveyard to his or her hand."

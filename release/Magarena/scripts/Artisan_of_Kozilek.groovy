@@ -10,7 +10,7 @@
                 new MagicMayChoice(
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD
                 ),
-                new MagicGraveyardTargetPicker(true),
+                MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
                 "PN may\$ return target creature card\$ from " +
                 "his or her graveyard to the battlefield."

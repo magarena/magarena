@@ -4,9 +4,8 @@ image=http://magiccards.info/scans/en/m11/69.jpg
 value=3.118
 rarity=C
 type=Creature
-subtype=Beast,Illusion
+subtype=Illusion,Beast
 cost={3}{U}
 pt=4/5
-static=player
+ability=sac when targeted
 timing=main
-requires_groovy_code

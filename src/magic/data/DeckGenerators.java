@@ -18,57 +18,42 @@ public class DeckGenerators {
 
     private static final String FILENAME = "deckgenerators.txt";
 
-    private final Map<String, Class> generatorsMap;
+    private final Map<String, DefaultDeckGenerator> generatorsMap;
 
     private DeckGenerators() {
-        generatorsMap = new TreeMap<String, Class>();
+        generatorsMap = new TreeMap<String, DefaultDeckGenerator>();
     }
 
     public Set<String> getGeneratorNames() {
         return generatorsMap.keySet();
     }
 
-    private void addDeckGenerator(final String name, final Class c) {
-        generatorsMap.put(name, c);
-    }
-
     private void addDeckGenerator(final String name) {
         // find class
         final String cname = name.replaceAll("[^A-Za-z0-9]", "_");
         try { // reflection
-            final Class c = Class.forName("magic.generator." + cname + "_DeckGenerator");
-
-            addDeckGenerator(name, c);
+            
+            generatorsMap.put(
+                name, 
+                Class.forName("magic.generator." + cname + "_DeckGenerator")
+                     .asSubclass(DefaultDeckGenerator.class)
+                     .newInstance()
+            );
 
             System.err.println("added deck generator " + name);
         } catch (final ClassNotFoundException ex) {
-            // no class found
+            System.err.println("WARNING. Unable to find deck generator class for " + name);
         } catch (final ClassCastException ex) {
             throw new RuntimeException(ex);
+        } catch (final InstantiationException ex) {
+            throw new RuntimeException(ex);
+        } catch (final IllegalAccessException ex) {
+            throw new RuntimeException(ex);
         }
-
     }
 
     public DefaultDeckGenerator getDeckGenerator(final String name) {
-        return getDeckGenerator(generatorsMap.get(name));
-    }
-
-    private DefaultDeckGenerator getDeckGenerator(final Class c) {
-        DefaultDeckGenerator gen = null;
-
-        if(c != null) {
-            try {
-                gen = (DefaultDeckGenerator) c.newInstance();
-            } catch (final ClassCastException ex) {
-                throw new RuntimeException(ex);
-            } catch (final InstantiationException ex) {
-                throw new RuntimeException(ex);
-            } catch (final IllegalAccessException ex) {
-                throw new RuntimeException(ex);
-            }
-        }
-
-        return gen;
+        return generatorsMap.get(name);
     }
 
     private void loadDeckGenerators(final String filename) {

@@ -17,7 +17,7 @@
             return new MagicEvent(
                 source,
                 MagicTargetChoice.LAND_CARD_FROM_HAND,
-                new MagicGraveyardTargetPicker(true),
+                MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
                 "PN puts a land card\$ from his or her hand onto the battlefield."
             );

@@ -7,7 +7,5 @@ type=Creature
 subtype=Illusion
 cost={1}{U}{U}
 pt=5/5
-ability=defender
-static=player
+ability=defender;sac when targeted
 timing=main
-requires_groovy_code

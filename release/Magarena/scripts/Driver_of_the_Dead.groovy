@@ -2,23 +2,19 @@
     new MagicWhenDiesTrigger() {
         @Override
         public MagicEvent getEvent(final MagicPermanent permanent) {
-            final MagicTargetFilter<MagicCard> targetFilter = new MagicTargetFilter.MagicCMCCardFilter(
-                MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
-                MagicTargetFilter.Operator.LESS_THAN_OR_EQUAL,
-                2
-            );
-
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                targetFilter,
-                true,
+                new MagicTargetFilter.MagicCMCCardFilter(
+                    MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
+                    MagicTargetFilter.Operator.LESS_THAN_OR_EQUAL,
+                    2
+                ),
                 MagicTargetHint.None,
                 "target creature card from your graveyard)"
             );
-
             return new MagicEvent(
                 permanent,
                 targetChoice,
-                new MagicGraveyardTargetPicker(false),
+                MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
                 "PN returns target creature card\$ with " +
                 "converted mana cost 2 or less " +

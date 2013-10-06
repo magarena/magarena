@@ -1,7 +1,7 @@
 name=Necrogen Mists
 url=http://magiccards.info/mi/en/69.html
 image=http://magiccards.info/scans/en/mi/69.jpg
-value=3.661
+value=3.672
 rarity=R
 type=Enchantment
 cost={2}{B}

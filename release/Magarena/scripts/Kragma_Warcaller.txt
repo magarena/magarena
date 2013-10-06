@@ -7,8 +7,7 @@ type=Creature
 subtype=Minotaur,Warrior
 cost={3}{B}{R}
 pt=2/3
-ability=haste;\
-        lord other minotaur creatures you control have haste
+ability=lord minotaur creatures you control have haste
 static=player
 timing=main
 requires_groovy_code

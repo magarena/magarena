@@ -1,8 +1,3 @@
-def SACRIFICE_ELF = new MagicTargetChoice(
-    MagicTargetFilter.TARGET_ELF_YOU_CONTROL,
-    MagicTargetHint.Positive,
-    "a Elf creature"
-);
 [
     new MagicStatic(
         MagicLayer.SetPT,
@@ -10,19 +5,19 @@ def SACRIFICE_ELF = new MagicTargetChoice(
     ) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
-			pt.set(1,1);
-		}
+            pt.set(1,1);
+        }
     },
-	new MagicStatic(
-        MagicLayer.Type,
+    new MagicStatic(
+        MagicLayer.Color,
         MagicTargetFilter.TARGET_FOREST_YOU_CONTROL
     ) {
         @Override
-        public int getTypeFlags(final MagicPermanent permanent,final int flags) {
-			return flags|MagicType.Creature.getMask();
-		}
+        public int getColorFlags(final MagicPermanent permanent, final int flags) {
+            return flags|MagicColor.Green.getMask();
+        }
     },
-	new MagicStatic(
+    new MagicStatic(
         MagicLayer.Type,
         MagicTargetFilter.TARGET_FOREST_YOU_CONTROL
     ) {
@@ -30,8 +25,12 @@ def SACRIFICE_ELF = new MagicTargetChoice(
         public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
             flags.add(MagicSubType.Elf);
         }
+        @Override
+        public int getTypeFlags(final MagicPermanent permanent,final int flags) {
+            return flags|MagicType.Creature.getMask();
+        }
     },
-	new MagicPermanentActivation(
+    new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Pump),
         "Pump"
     ) {
@@ -40,7 +39,10 @@ def SACRIFICE_ELF = new MagicTargetChoice(
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source,"{1}{G}"),
-                new MagicSacrificePermanentEvent(source, SACRIFICE_ELF)
+                new MagicSacrificePermanentEvent(
+                    source, 
+                    new MagicTargetChoice("an Elf you control")
+                )
             ];
         }
 
@@ -48,7 +50,7 @@ def SACRIFICE_ELF = new MagicTargetChoice(
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_CREATURE,
+                MagicTargetChoice.POS_TARGET_CREATURE,
                 MagicPumpTargetPicker.create(),
                 this,
                 "Target creature\$ gets +3/+3 until end of turn."

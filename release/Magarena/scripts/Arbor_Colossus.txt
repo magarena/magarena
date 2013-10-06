@@ -1,0 +1,12 @@
+name=Arbor Colossus
+url=http://magiccards.info/ths/en/150.html
+image=http://magiccards.info/scans/en/ths/150.jpg
+value=3.729
+rarity=R
+type=Creature
+subtype=Giant
+cost={2}{G}{G}{G}
+pt=6/6
+ability=reach;monstrosity 3 {3}{G}{G}{G}
+timing=main
+requires_groovy_code

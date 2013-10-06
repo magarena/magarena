@@ -1,10 +1,10 @@
 name=Highway Robber
 url=http://magiccards.info/10e/en/150.html
 image=http://magiccards.info/scans/en/10e/150.jpg
-value=3.138
+value=3.073
 rarity=C
 type=Creature
-subtype=Human,Rogue,Mercenary
+subtype=Human,Mercenary
 cost={2}{B}{B}
 pt=2/2
 timing=main

@@ -1,9 +1,15 @@
+def OPP_FOUR_LANDS_CONDITION=new MagicCondition() {
+    public boolean accept(final MagicSource source) {
+        return source.getController().getOpponent().getNrOfPermanents(MagicType.Land)>=4;
+    }
+};
+
 [
     new MagicPermanentActivation(
         [
             //add ONE for the card itself
             MagicConditionFactory.ManaCost("{2}"),
-            MagicCondition.OPP_FOUR_LANDS_CONDITION
+            OPP_FOUR_LANDS_CONDITION
         ],
         new MagicActivationHints(MagicTiming.Removal),
         "Destroy"

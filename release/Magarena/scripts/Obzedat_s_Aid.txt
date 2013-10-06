@@ -1,0 +1,9 @@
+name=Obzedat's Aid
+url=http://magiccards.info/dgm/en/89.html
+image=http://magiccards.info/scans/en/dgm/89.jpg
+value=4.092
+rarity=R
+type=Sorcery
+cost={3}{W}{B}
+timing=main
+requires_groovy_code

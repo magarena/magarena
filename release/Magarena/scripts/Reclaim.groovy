@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.TARGET_CARD_FROM_GRAVEYARD,
-                new MagicGraveyardTargetPicker(false),
+                MagicGraveyardTargetPicker.ReturnToHand,
                 this,
                 "Put target card\$ from your graveyard on top of your library."
             );

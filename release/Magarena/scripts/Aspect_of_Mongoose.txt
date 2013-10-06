@@ -1,12 +1,12 @@
 name=Aspect of Mongoose
 url=http://magiccards.info/ts/en/191.html
 image=http://magiccards.info/scans/en/ts/191.jpg
-value=3.896
+value=3.870
 rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{G}
 given_ability=shroud
-ability=die return to owner's hand
+ability=dies return to owner's hand
 timing=aura
 enchant=shroud,pos creature

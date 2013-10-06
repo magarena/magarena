@@ -7,7 +7,7 @@ import magic.model.MagicMappable;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class MagicCardChoiceResult extends ArrayList<MagicCard> implements MagicMappable {
+public class MagicCardChoiceResult extends ArrayList<MagicCard> implements MagicMappable<MagicCardChoiceResult> {
 
     private static final long serialVersionUID = 1L;
 

@@ -10,7 +10,7 @@
                     new MagicMayChoice(
                         MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD
                     ),
-                    new MagicGraveyardTargetPicker(false),
+                    MagicGraveyardTargetPicker.ReturnToHand,
                     this,
                     "PN gains 3 life and may\$ return target creature card\$ " +
                     "from his or her graveyard to his or her hand."

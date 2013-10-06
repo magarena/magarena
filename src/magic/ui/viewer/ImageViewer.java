@@ -78,7 +78,7 @@ public class ImageViewer extends JPanel {
                 imageIndices.add(index);
             }
         }
-        final Integer index=imageIndices.remove(MagicRandom.nextInt(imageIndices.size()));
+        final Integer index=imageIndices.remove(MagicRandom.nextRNGInt(imageIndices.size()));
         return imageFiles.get(index);
     }
 

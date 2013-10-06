@@ -1,0 +1,9 @@
+name=Stony Silence
+url=http://magiccards.info/isd/en/36.html
+image=http://magiccards.info/scans/en/isd/36.jpg
+value=4.172
+rarity=R
+type=Enchantment
+cost={1}{W}
+ability=lord artifacts have can't activate abilities 
+timing=enchantment

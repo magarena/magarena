@@ -1,0 +1,14 @@
+name=Rageblood Shaman
+url=http://magiccards.info/ths/en/138.html
+image=http://magiccards.info/scans/en/ths/138.jpg
+value=3.985
+rarity=R
+type=Creature
+subtype=Minotaur,Shaman
+cost={1}{R}{R}
+pt=2/3
+ability=trample;\
+        lord other minotaur creatures you control get +1/+1;\
+        lord other minotaur creatures you control have trample
+static=player
+timing=main

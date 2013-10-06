@@ -2,16 +2,14 @@
     new MagicLandfallTrigger() {
         @Override
         protected MagicEvent getEvent(final MagicPermanent permanent) {
-            final MagicTargetFilter<MagicPermanent> targetFilter =
-                    new MagicOtherPermanentTargetFilter(
-                        MagicTargetFilter.TARGET_NONLAND_PERMANENT,
-                        permanent);
-            final MagicTargetChoice targetChoice =
-                    new MagicTargetChoice(
-                        targetFilter,
-                        true,
-                        MagicTargetHint.None,
-                        "another target nonland permanent to exile");
+            final MagicTargetChoice targetChoice = new MagicTargetChoice(
+                new MagicOtherPermanentTargetFilter(
+                    MagicTargetFilter.TARGET_NONLAND_PERMANENT,
+                    permanent
+                ),
+                MagicTargetHint.None,
+                "another target nonland permanent to exile"
+            );
             return new MagicEvent(
                 permanent,
                 new MagicMayChoice(targetChoice),

@@ -1,7 +1,7 @@
 name=Rancor
 url=http://magiccards.info/arc/en/67.html
 image=http://magiccards.info/scans/en/gvl/15.jpg
-value=4.637
+value=4.641
 rarity=C
 type=Enchantment
 subtype=Aura
@@ -10,4 +10,4 @@ given_pt=2/0
 given_ability=trample
 timing=aura
 enchant=trample,pos creature
-ability=die return to owner's hand
+ability=dies return to owner's hand

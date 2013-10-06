@@ -7,5 +7,5 @@ type=Creature
 subtype=Elf
 cost={G}{G}
 pt=2/1
-ability=echo {G}{G};enters draw card 1
+ability=echo {G}{G};enters effect PN draws a card.
 timing=main

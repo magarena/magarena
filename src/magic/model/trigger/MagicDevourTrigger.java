@@ -36,7 +36,6 @@ public class MagicDevourTrigger extends MagicWhenComesIntoPlayTrigger {
         );
         final MagicTargetChoice targetChoice = new MagicTargetChoice(
             targetFilter,
-            false,
             MagicTargetHint.None,
             "a creature other than " + perm + " to sacrifice"
         );

@@ -1,7 +1,7 @@
 name=Tome Scour
 url=http://magiccards.info/m14/en/75.html
 image=http://magiccards.info/scans/en/m14/75.jpg
-value=3.250
+value=3.295
 rarity=C
 type=Sorcery
 cost={U}

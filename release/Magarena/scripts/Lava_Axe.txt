@@ -1,9 +1,9 @@
 name=Lava Axe
 url=http://magiccards.info/m12/en/148.html
 image=http://magiccards.info/scans/en/m12/148.jpg
-value=2.325
+value=2.457
 rarity=C
 type=Sorcery
 cost={4}{R}
+effect=SN deals 5 damage to target player.
 timing=removal
-requires_groovy_code

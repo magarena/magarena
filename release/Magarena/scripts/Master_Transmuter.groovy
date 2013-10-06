@@ -17,7 +17,7 @@
             return new MagicEvent(
                 source,
                 MagicTargetChoice.ARTIFACT_CARD_FROM_HAND,
-                new MagicGraveyardTargetPicker(true),
+                MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
                 "PN puts an artifact card\$ from his or her hand onto the battlefield."
             );

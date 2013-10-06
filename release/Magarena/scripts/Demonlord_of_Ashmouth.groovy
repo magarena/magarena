@@ -5,12 +5,11 @@
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPayedCost payedCost) {
-            final MagicTargetFilter<MagicPermanent> targetFilter = new MagicOtherPermanentTargetFilter(
-                MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,permanent
-            );
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                targetFilter,
-                false,
+                new MagicOtherPermanentTargetFilter(
+                    MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,
+                    permanent
+                ),
                 MagicTargetHint.None,
                 "another creature to sacrifice"
             );

@@ -15,7 +15,7 @@ def event = {
     return new MagicEvent(
         permanent,
         MagicTargetChoice.TARGET_PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD,
-        new MagicGraveyardTargetPicker(true),
+        MagicGraveyardTargetPicker.PutOntoBattlefield,
         action,
         "Return target permanent card\$ with converted mana cost 3 or less " +
         "from your graveyard to the battlefield."

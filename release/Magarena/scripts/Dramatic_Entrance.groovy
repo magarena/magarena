@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.TARGET_GREEN_CREATURE_CARD_FROM_HAND,
-                new MagicGraveyardTargetPicker(true),
+                MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
                 "Put a green creature card\$ from your hand onto the battlefield."
             );

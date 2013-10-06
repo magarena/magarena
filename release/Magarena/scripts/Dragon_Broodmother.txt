@@ -1,0 +1,12 @@
+name=Dragon Broodmother
+url=http://magiccards.info/arb/en/53.html
+image=http://magiccards.info/scans/en/arb/53.jpg
+value=4.167
+rarity=M
+type=Creature
+subtype=Dragon
+cost={2}{R}{R}{R}{G}
+pt=4/4
+ability=flying
+timing=main
+requires_groovy_code

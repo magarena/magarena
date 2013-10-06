@@ -59,7 +59,7 @@
     // you gain 2 life
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Pump),
-        "Life + 2"
+        "Life+2"
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {

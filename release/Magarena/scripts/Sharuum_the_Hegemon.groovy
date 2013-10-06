@@ -7,7 +7,7 @@
                 new MagicMayChoice(
                     MagicTargetChoice.TARGET_ARTIFACT_CARD_FROM_GRAVEYARD,
                 ),
-                new MagicGraveyardTargetPicker(true),
+                MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
                 "PN may\$ return target artifact card\$ from your graveyard to the battlefield."
             );

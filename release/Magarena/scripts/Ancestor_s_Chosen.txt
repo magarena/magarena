@@ -1,11 +1,12 @@
 name=Ancestor's Chosen
 url=http://magiccards.info/10e/en/1.html
 image=http://magiccards.info/scans/en/10e/1.jpg
-value=3.122
+value=3.118
 rarity=U
 type=Creature
 subtype=Human,Cleric
 cost={5}{W}{W}
 pt=4/4
-timing=fmain
+ability=first strike
+timing=main
 requires_groovy_code

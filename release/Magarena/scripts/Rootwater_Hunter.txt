@@ -1,7 +1,7 @@
 name=Rootwater Hunter
 url=http://magiccards.info/tp/en/82.html
 image=http://magiccards.info/scans/en/tp/82.jpg
-value=3.529
+value=3.569
 rarity=C
 type=Creature
 subtype=Merfolk

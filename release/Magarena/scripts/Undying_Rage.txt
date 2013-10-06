@@ -1,13 +1,13 @@
 name=Undying Rage
 url=http://magiccards.info/ts/en/184.html
 image=http://magiccards.info/scans/en/ts/184.jpg
-value=2.672
+value=3.071
 rarity=U
 type=Enchantment
 subtype=Aura
 cost={2}{R}
 given_pt=2/2
 given_ability=can't block
-ability=die return to owner's hand
+ability=dies return to owner's hand
 timing=aura
 enchant=pump,creature

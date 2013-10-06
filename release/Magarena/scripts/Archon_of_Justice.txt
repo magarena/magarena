@@ -1,12 +1,11 @@
 name=Archon of Justice
 url=http://magiccards.info/m12/en/6.html
 image=http://magiccards.info/scans/en/eve/1.jpg
-value=3.861
+value=3.862
 rarity=R
 type=Creature
 subtype=Archon
 cost={3}{W}{W}
 pt=4/4
-ability=flying
+ability=flying;dies effect Exile target permanent.
 timing=main
-requires_groovy_code

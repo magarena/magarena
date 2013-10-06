@@ -71,6 +71,8 @@ public class MagicDealDamageAction extends MagicAction {
 
     @Override
     public void doAction(final MagicGame game) {
+        game.executeTrigger(MagicTriggerType.IfDamageWouldBeDealt,damage);
+        
         /*
         306.7. If damage would be dealt to a player by a source
         controlled by an opponent, that opponent may have that source deal that
@@ -98,7 +100,6 @@ public class MagicDealDamageAction extends MagicAction {
             return;
         }
 
-        game.executeTrigger(MagicTriggerType.IfDamageWouldBeDealt,damage);
         damage.setDealtAmount(0);
         int dealtAmount=damage.getAmount();
         if (dealtAmount<=0) {

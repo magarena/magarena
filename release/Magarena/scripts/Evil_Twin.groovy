@@ -13,7 +13,6 @@ def DestroyTwin = new MagicPermanentActivation(
     public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
         final MagicTargetChoice targetChoice = new MagicTargetChoice(
             new MagicTargetFilter.NameTargetFilter(MagicTargetFilter.TARGET_CREATURE, source.getName()),
-            true,
             MagicTargetHint.Negative,
             "target creature"
         );
