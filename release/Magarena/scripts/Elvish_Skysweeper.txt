@@ -1,0 +1,11 @@
+name=Elvish Skysweeper
+url=http://magiccards.info/rav/en/162.html
+image=http://magiccards.info/scans/en/rav/162.jpg
+value=2.866
+rarity=C
+type=Creature
+subtype=Elf,Warrior
+cost={G}
+pt=1/1
+timing=main
+requires_groovy_code
