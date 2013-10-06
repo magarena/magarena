@@ -1,0 +1,11 @@
+name=Allosaurus Rider
+url=http://magiccards.info/ptc/en/30.html
+image=http://magiccards.info/scans/en/ptc/30.jpg
+value=4.051
+rarity=R
+type=Creature
+subtype=Elf,Warrior
+cost={5}{G}{G}
+pt=1/1
+timing=smain
+requires_groovy_code
