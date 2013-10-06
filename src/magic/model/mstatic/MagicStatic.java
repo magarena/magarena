@@ -326,7 +326,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
     public static MagicStatic Black = new MagicStatic(MagicLayer.Color) {
          @Override
          public int getColorFlags(final MagicPermanent permanent,final int flags) {
-             return flags|MagicColor.Black.getMask();
+             return flags | MagicColor.Black.getMask();
          }
     };
     
@@ -335,5 +335,21 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
          public int getTypeFlags(final MagicPermanent permanent,final int flags) {
              return flags | MagicType.Artifact.getMask();
          }
+    };
+    
+    public static MagicStatic Bestowed = new MagicStatic(MagicLayer.Type) {
+         @Override
+         public int getTypeFlags(final MagicPermanent permanent,final int flags) {
+             return flags & ~MagicType.Creature.getMask();
+         }
+        @Override
+        public void modSubTypeFlags(final MagicPermanent permanent,final Set<MagicSubType> flags) {
+            flags.removeAll(MagicSubType.ALL_CREATURES);
+            flags.add(MagicSubType.Aura);
+        }
+        @Override
+        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+            return source.getEnchantedCreature().isValid();
+        }
     };
 }

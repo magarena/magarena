@@ -17,6 +17,7 @@ import magic.model.event.MagicManaActivation;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicSourceActivation;
 import magic.model.event.MagicPlayAuraEvent;
+import magic.model.event.MagicBestowActivation;
 import magic.model.event.MagicEvent;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicPermanentStatic;
@@ -689,14 +690,25 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         }
 
         if (isAura()) {
-            final MagicPlayAuraEvent auraEvent = (MagicPlayAuraEvent)cardDefinition.getCardEvent();
+            final MagicPlayAuraEvent auraEvent = cardDefinition.isAura() ?
+                (MagicPlayAuraEvent)cardDefinition.getCardEvent() :
+                MagicBestowActivation.BestowEvent;
+
             //not targeting since Aura is already attached
             final MagicTargetChoice tchoice = new MagicTargetChoice(auraEvent.getTargetChoice(), false);
             if (!enchantedCreature.isValid() ||
                 !game.isLegalTarget(getController(),this,tchoice,enchantedCreature) ||
                 enchantedCreature.hasProtectionFrom(this)) {
-                game.logAppendMessage(getController(),getName()+" is put into its owner's graveyard.");
-                game.addDelayedAction(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
+                // 702.102e If an Aura with bestow is attached to an illegal object or player, it becomes unattached. 
+                // This is an exception to rule 704.5n.
+                if (auraEvent == MagicBestowActivation.BestowEvent) {
+                    game.logAppendMessage(getController(),getName()+" becomes unattached.");
+                    game.addDelayedAction(new MagicAttachAction(this, MagicPermanent.NONE));
+                } else {
+                // 704.5n
+                    game.logAppendMessage(getController(),getName()+" is put into its owner's graveyard.");
+                    game.addDelayedAction(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
+                }
             }
         }
 

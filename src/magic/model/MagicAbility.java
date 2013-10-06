@@ -25,6 +25,7 @@ import magic.model.event.MagicEvokeActivation;
 import magic.model.event.MagicKickerCost;
 import magic.model.event.MagicMultikickerCost;
 import magic.model.event.MagicMonstrosityActivation;
+import magic.model.event.MagicBestowActivation;
 import magic.model.mstatic.MagicCDA;
 import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicAllyGrowTrigger;
@@ -823,6 +824,12 @@ public enum MagicAbility {
             final int n = Integer.parseInt(token[0]);
             final MagicManaCost manaCost = MagicManaCost.create(token[1]);
             card.add(new MagicMonstrosityActivation(manaCost, n));
+        }
+    },
+    Bestow("bestow", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            final MagicManaCost manaCost = MagicManaCost.create(arg);
+            card.add(new MagicBestowActivation(manaCost));
         }
     },
     None("",0);
