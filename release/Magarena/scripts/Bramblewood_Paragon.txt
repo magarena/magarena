@@ -1,0 +1,11 @@
+name=Bramblewood Paragon
+url=http://magiccards.info/mt/en/115.html
+image=http://magiccards.info/scans/en/mt/115.jpg
+value=4.250
+rarity=U
+type=Creature
+subtype=Elf,Warrior
+cost={1}{G}
+pt=2/2
+timing=main
+requires_groovy_code
