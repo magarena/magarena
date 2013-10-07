@@ -1,0 +1,11 @@
+name=Centaur's Herald
+url=http://magiccards.info/rtr/en/118.html
+image=http://magiccards.info/scans/en/rtr/118.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elf,Scout
+cost={G}
+pt=0/1
+timing=main
+requires_groovy_code

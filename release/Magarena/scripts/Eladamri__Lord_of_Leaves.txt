@@ -1,0 +1,13 @@
+name=Eladamri, Lord of Leaves
+url=http://magiccards.info/tp/en/117.html
+image=http://magiccards.info/scans/en/tp/117.jpg
+value=4.240
+rarity=R
+type=Legendary,Creature
+subtype=Elf,Warrior
+cost={G}{G}
+pt=2/2
+ability=lord other elf creatures have forestwalk;\
+        lord other elf creatures have shroud
+static=all
+timing=main

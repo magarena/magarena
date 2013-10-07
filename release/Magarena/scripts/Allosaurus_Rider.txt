@@ -1,0 +1,10 @@
+name=Allosaurus Rider
+url=http://magiccards.info/evg/en/2.html
+image=http://magiccards.info/scans/en/evg/2.jpg
+value=4.051
+rarity=R
+type=Creature
+subtype=Elf,Warrior
+cost={5}{G}{G}
+timing=main
+requires_groovy_code

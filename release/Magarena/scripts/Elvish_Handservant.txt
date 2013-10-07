@@ -1,0 +1,11 @@
+name=Elvish Handservant
+url=http://magiccards.info/lw/en/206.html
+image=http://magiccards.info/scans/en/lw/206.jpg
+value=2.360
+rarity=C
+type=Creature
+subtype=Elf,Warrior
+cost={G}
+pt=1/1
+timing=main
+requires_groovy_code

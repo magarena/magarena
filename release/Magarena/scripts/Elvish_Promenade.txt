@@ -1,0 +1,10 @@
+name=Elvish Promenade
+url=http://magiccards.info/dpa/en/62.html
+image=http://magiccards.info/scans/en/dpa/62.jpg
+value=4.070
+rarity=U
+type=Tribal,Sorcery
+subtype=Elf
+cost={3}{G}
+timing=main
+requires_groovy_code
