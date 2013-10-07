@@ -1,0 +1,11 @@
+name=Elf Replica
+url=http://magiccards.info/mi/en/167.html
+image=http://magiccards.info/scans/en/mi/167.jpg
+value=2.672
+rarity=C
+cost={3}
+type=Artifact,Creature
+subtype=Elf
+timing=main
+pt=2/2
+requires_groovy_code
