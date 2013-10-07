@@ -1,0 +1,11 @@
+name=Elvish Healer
+url=http://magiccards.info/ia/en/246.html
+image=http://magiccards.info/scans/en/ia/246.jpg
+value=2.406
+rarity=C
+cost={2}{W}
+type=Creature
+subtype=Elf,Cleric
+timing=main
+pt=1/2
+requires_groovy_code
