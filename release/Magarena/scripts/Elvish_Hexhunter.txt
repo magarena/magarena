@@ -1,0 +1,11 @@
+name=Elvish Hexhunter
+url=http://magiccards.info/shm/en/226.html
+image=http://magiccards.info/scans/en/shm/226.jpg
+value=4.032
+rarity=C
+cost={G/W}
+type=Creature
+subtype=Elf,Shaman
+timing=main
+pt=1/1
+requires_groovy_code
