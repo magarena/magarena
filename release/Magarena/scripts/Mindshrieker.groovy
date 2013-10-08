@@ -27,7 +27,7 @@
                 public void doAction(final MagicPlayer player) {
                     final MagicCard card = player.getLibrary().getCardAtTop();
                     game.doAction(new MagicMillLibraryAction(player,1));
-                    final int amount = card.getCardDefinition().getConvertedCost();
+                    final int amount = card.getConvertedCost();
                     game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),amount,amount));
                 }
             });

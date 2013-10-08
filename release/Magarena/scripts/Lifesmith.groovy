@@ -2,8 +2,8 @@
     new MagicWhenOtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack spell) {
-            return (permanent.isFriend(spell) &&
-                    spell.getCardDefinition().isArtifact()) ?
+            return (spell.isFriend(permanent) &&
+                    spell.hasType(MagicType.Artifact)) ?
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(

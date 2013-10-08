@@ -2,8 +2,8 @@
     new MagicWhenOtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack spell) {
-            return (permanent.isFriend(spell) &&
-                    spell.getCardDefinition().isEnchantment()) ?
+            return (spell.isFriend(permanent) &&
+                    spell.hasType(MagicType.Enchantment)) ?
                 new MagicEvent(
                     permanent,
                     this,

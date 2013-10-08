@@ -16,8 +16,8 @@
     new MagicWhenOtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack spell) {
-            return (permanent.isFriend(spell) &&
-                    spell.getCardDefinition().isAura()) ?
+            return (spell.isFriend(permanent) &&
+                    spell.hasSubType(MagicSubType.Aura)) ?
                 new MagicEvent(
                     permanent,
                     new MagicSimpleMayChoice(

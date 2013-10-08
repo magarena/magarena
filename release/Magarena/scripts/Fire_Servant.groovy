@@ -3,10 +3,9 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicSource source=damage.getSource();
-            if (permanent.isFriend(source) &&
-                source.isSpell() &&
+            if (source.isFriend(permanent) &&
                 source.hasColor(MagicColor.Red) &&
-                source.getCardDefinition().isSpell()) {
+                source.isInstantOrSorcerySpell()) {
                 // Generates no event or action.
                 damage.setAmount(damage.getAmount() * 2);
             }

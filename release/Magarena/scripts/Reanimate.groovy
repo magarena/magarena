@@ -21,7 +21,7 @@
                         targetCard,
                         player
                     ));
-                    game.doAction(new MagicChangeLifeAction(player,-targetCard.getCardDefinition().getConvertedCost()));
+                    game.doAction(new MagicChangeLifeAction(player,-targetCard.getConvertedCost()));
                 }
             });
         }

@@ -4,7 +4,7 @@ def action = {
         public void doAction(final MagicCard card) {
             game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
             game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.Exile));
-            if (card.getCardDefinition().isCreature()) {
+            if (card.hasType(MagicType.Creature)) {
                 game.doAction(new MagicChangeLifeAction(event.getRefPlayer(),2));
             }
         }

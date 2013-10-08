@@ -2,7 +2,7 @@
     new MagicWhenOtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack spell) {
-            return spell.getCardDefinition().isArtifact() ?
+            return spell.hasType(MagicType.Artifact) ?
                 new MagicEvent(
                     permanent,
                     new MagicSimpleMayChoice(

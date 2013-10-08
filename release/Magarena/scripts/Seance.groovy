@@ -32,15 +32,18 @@ def Spirit = new MagicStatic(MagicLayer.Type) {
                     final MagicCard card ->
                     final MagicPlayer player=event.getPlayer();
                     game.doAction(new MagicRemoveCardAction(
-                            card,
-                            MagicLocationType.Graveyard));
+                        card,
+                        MagicLocationType.Graveyard
+                    ));
                     game.doAction(new MagicMoveCardAction(
-                            card,
-                            MagicLocationType.Graveyard,
-                            MagicLocationType.Exile));
+                        card,
+                        MagicLocationType.Graveyard,
+                        MagicLocationType.Exile
+                    ));
                     final MagicPutIntoPlayAction action = new MagicPlayTokenAction(
-                            player,
-                            card.getCardDefinition());
+                        player,
+                        card.getCardDefinition()
+                    );
                     game.doAction(action);
                     final MagicPermanent permanent = action.getPermanent();
                     game.doAction(new MagicAddStaticAction(permanent, Spirit));

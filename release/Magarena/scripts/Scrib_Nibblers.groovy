@@ -50,7 +50,7 @@
                     if (card != MagicCard.NONE) {
                         game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
                         game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.Exile));
-                        if (card.getCardDefinition().isLand()) {
+                        if (card.hasType(MagicType.Land)) {
                             game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
                         }
                     }

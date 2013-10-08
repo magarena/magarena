@@ -7,7 +7,7 @@
             int types = 0;
             for (final MagicType type : MagicType.ALL_CARD_TYPES) {
                 for (final MagicCard card : cardList) {
-                    if (card.getCardDefinition().hasType(type)) {
+                    if (card.hasType(type)) {
                         types++;
                         break;
                     }

@@ -2,7 +2,7 @@
     new MagicWhenOtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
-            final int damage=cardOnStack.getCardDefinition().getConvertedCost();
+            final int damage=cardOnStack.getConvertedCost();
             return permanent.isEnemy(cardOnStack) ?
                 new MagicEvent(
                     permanent,

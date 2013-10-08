@@ -15,9 +15,9 @@
     new MagicWhenOtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
-            return (permanent.isFriend(cardOnStack) &&
-                    cardOnStack.getCardDefinition().isCreature() &&
-                    cardOnStack.getCardDefinition().hasAbility(MagicAbility.Infect)) ?
+            return (cardOnStack.isFriend(permanent) &&
+                    cardOnStack.hasType(MagicType.Creature) &&
+                    cardOnStack.hasAbility(MagicAbility.Infect)) ?
                 new MagicEvent(
                     permanent,
                     MagicTargetChoice.NEG_TARGET_PLAYER,
