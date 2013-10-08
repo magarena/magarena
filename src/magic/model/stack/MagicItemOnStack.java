@@ -219,14 +219,6 @@ public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicT
    
     public abstract boolean isSpell();
 
-    public boolean isSpell(MagicType type) {
-        return isSpell() && getCardDefinition().hasType(type);
-    }
-    
-    public boolean isInstantOrSorcery() {
-        return getCardDefinition().isSpell();
-    }
-
     public abstract boolean canBeCountered();
 
     public abstract ImageIcon getIcon();

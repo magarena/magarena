@@ -1,11 +1,5 @@
 package magic.model;
 
-import magic.model.MagicCardDefinition;
-import magic.model.MagicCopyable;
-import magic.model.MagicMappable;
-import magic.model.MagicPlayer;
-import magic.model.MagicSource;
-
 public abstract class MagicObjectImpl implements MagicObject {
     @Override
     public boolean isFriend(final MagicObject other) {
@@ -30,5 +24,15 @@ public abstract class MagicObjectImpl implements MagicObject {
     @Override
     public boolean isPlaneswalker() {
         return isPermanent() && hasType(MagicType.Planeswalker);
+    }
+    
+    @Override
+    public boolean isInstantOrSorcerySpell() {
+        return isSpell(MagicType.Instant) || isSpell(MagicType.Sorcery);
+    }
+    
+    @Override
+    public boolean isSpell(MagicType type) {
+        return isSpell() && hasType(type);
     }
 }

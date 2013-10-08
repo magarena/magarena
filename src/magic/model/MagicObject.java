@@ -1,13 +1,9 @@
 package magic.model;
 
-import magic.model.MagicCardDefinition;
-import magic.model.MagicCopyable;
-import magic.model.MagicMappable;
-import magic.model.MagicPlayer;
-import magic.model.MagicSource;
-
 public interface MagicObject extends MagicCopyable {
     boolean     isSpell();
+    boolean     isSpell(MagicType type);
+    boolean     isInstantOrSorcerySpell();
     boolean     isPlayer();
     boolean     isPermanent();
     boolean     isCreature();

@@ -2,7 +2,7 @@
     new MagicWhenOtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicCardOnStack cardOnStack) {
-            return (permanent.isFriend(cardOnStack) && cardOnStack.isInstantOrSorcery()) ?
+            return (permanent.isFriend(cardOnStack) && cardOnStack.isInstantOrSorcerySpell()) ?
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(

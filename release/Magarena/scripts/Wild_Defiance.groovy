@@ -5,7 +5,7 @@
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicItemOnStack itemOnStack) {
-            if (!itemOnStack.isInstantOrSorcery()) {
+            if (!itemOnStack.isInstantOrSorcerySpell()) {
                 return MagicEvent.NONE;
             }
 
