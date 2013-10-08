@@ -61,11 +61,6 @@ public class MagicTargetNone extends MagicObjectImpl implements MagicTarget, Mag
     }
 
     @Override
-    public boolean isPlaneswalker() {
-        return false;
-    }
-
-    @Override
     public boolean hasAbility(final MagicAbility ability) {
         return false;
     }
@@ -82,11 +77,6 @@ public class MagicTargetNone extends MagicObjectImpl implements MagicTarget, Mag
 
     @Override
     public boolean hasColor(final MagicColor color) {
-        return false;
-    }
-
-    @Override
-    public boolean isCreature() {
         return false;
     }
 

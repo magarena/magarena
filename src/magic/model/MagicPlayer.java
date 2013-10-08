@@ -518,20 +518,10 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
     }
 
     @Override
-    public boolean isCreature() {
-        return false;
-    }
-
-    @Override
     public boolean isPlayer() {
         return true;
     }
-
-    @Override
-    public boolean isPlaneswalker() {
-        return false;
-    }
-
+    
     @Override
     public boolean isSpell() {
         return false;

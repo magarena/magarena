@@ -150,16 +150,6 @@ public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicT
     }
 
     @Override
-    public boolean isCreature() {
-        return false;
-    }
-
-    @Override
-    public boolean isPlaneswalker() {
-        return false;
-    }
-
-    @Override
     public int getPreventDamage() {
         return 0;
     }

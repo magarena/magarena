@@ -8,10 +8,10 @@ import magic.model.MagicSource;
 
 public interface MagicObject extends MagicCopyable {
     boolean     isSpell();
+    boolean     isPlayer();
     boolean     isPermanent();
     boolean     isCreature();
     boolean     isPlaneswalker();
-    boolean     isPlayer();
     boolean     hasColor(final MagicColor color);
     boolean     hasAbility(final MagicAbility ability);
     boolean     hasType(final MagicType type);

@@ -208,16 +208,6 @@ public class MagicCard extends MagicObjectImpl implements MagicSource,MagicTarge
     }
 
     @Override
-    public boolean isCreature() {
-        return false;
-    }
-
-    @Override
-    public boolean isPlaneswalker() {
-        return false;
-    }
-
-    @Override
     public boolean isPlayer() {
         return false;
     }

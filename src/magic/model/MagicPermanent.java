@@ -1002,10 +1002,6 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         return hasType(MagicType.Land);
     }
 
-    public boolean isCreature() {
-        return hasType(MagicType.Creature);
-    }
-
     public boolean isEquipment() {
         return isArtifact() && hasSubType(MagicSubType.Equipment);
     }
@@ -1020,10 +1016,6 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
 
     public boolean isAura() {
         return isEnchantment() && hasSubType(MagicSubType.Aura);
-    }
-
-    public boolean isPlaneswalker() {
-        return hasType(MagicType.Planeswalker);
     }
 
     @Override
