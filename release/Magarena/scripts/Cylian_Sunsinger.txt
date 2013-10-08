@@ -1,0 +1,11 @@
+name=Cylian Sunsinger
+url=http://magiccards.info/cfx/en/80.html
+image=http://magiccards.info/scans/en/cfx/80.jpg
+value=2.802
+rarity=R
+cost={1}{G}
+type=Creature
+subtype=Elf,Shaman
+timing=main
+pt=2/2
+requires_groovy_code
