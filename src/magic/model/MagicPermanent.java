@@ -38,7 +38,7 @@ import java.util.Set;
 import java.util.TreeSet;
 import java.util.Collections;
 
-public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicPermanent>,MagicMappable<MagicPermanent> {
+public class MagicPermanent extends MagicObjectImpl implements MagicSource,MagicTarget,Comparable<MagicPermanent>,MagicMappable<MagicPermanent> {
 
     public static final int NO_COLOR_FLAGS=-1;
 
@@ -324,21 +324,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return cachedController;
     }
 
-    @Override
-    public MagicPlayer getOpponent() {
-        return getController().getOpponent();
-    }
-
-    @Override
-    public boolean isFriend(final MagicObject other) {
-        return getController() == other.getController();
-    }
-
-    @Override
-    public boolean isEnemy(final MagicObject other) {
-        return getOpponent() == other.getController();
-    }
-    
     public boolean isOwner(final MagicTarget player) {
         return getOwner() == player;
     }

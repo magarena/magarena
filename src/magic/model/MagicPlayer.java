@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
-public class MagicPlayer implements MagicTarget, MagicMappable<MagicPlayer> {
+public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMappable<MagicPlayer> {
 
     public static final MagicPlayer NONE = new MagicPlayer(-1, new MagicPlayerDefinition(), -1) {
         @Override
@@ -552,21 +552,6 @@ public class MagicPlayer implements MagicTarget, MagicMappable<MagicPlayer> {
         return this;
     }
     
-    @Override
-    public MagicPlayer getOpponent() {
-        return currGame.getOpponent(this);
-    }
-    
-    @Override
-    public boolean isFriend(final MagicObject other) {
-        return getController() == other.getController();
-    }
-
-    @Override
-    public boolean isEnemy(final MagicObject other) {
-        return getOpponent() == other.getController();
-    }
-
     public boolean isValid() {
         return true;
     }

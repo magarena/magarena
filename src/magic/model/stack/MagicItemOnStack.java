@@ -4,6 +4,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicCopyMap;
 import magic.model.MagicGame;
 import magic.model.MagicObject;
+import magic.model.MagicObjectImpl;
 import magic.model.MagicMappable;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
@@ -22,7 +23,7 @@ import magic.model.target.MagicTargetFilter;
 
 import javax.swing.ImageIcon;
 
-public abstract class MagicItemOnStack implements MagicTarget, MagicMappable<MagicItemOnStack> {
+public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicTarget, MagicMappable<MagicItemOnStack> {
 
     private final MagicSource source;
     private final MagicPlayer controller;
@@ -76,21 +77,6 @@ public abstract class MagicItemOnStack implements MagicTarget, MagicMappable<Mag
         return controller;
     }
     
-    @Override
-    public MagicPlayer getOpponent() {
-        return getController().getOpponent();
-    }
-
-    @Override
-    public boolean isFriend(final MagicObject other) {
-        return getController() == other.getController();
-    }
-
-    @Override
-    public boolean isEnemy(final MagicObject other) {
-        return getOpponent() == other.getController();
-    }
-
     @Override
     public MagicCardDefinition getCardDefinition() {
         return getSource().getCardDefinition();

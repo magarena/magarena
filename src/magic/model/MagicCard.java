@@ -16,7 +16,7 @@ import java.util.TreeSet;
 import java.util.Collection;
 import java.util.Collections;
 
-public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard>,MagicMappable<MagicCard> {
+public class MagicCard extends MagicObjectImpl implements MagicSource,MagicTarget,Comparable<MagicCard>,MagicMappable<MagicCard> {
 
     public static final MagicCard NONE = new MagicCard(MagicCardDefinition.UNKNOWN, MagicPlayer.NONE, 0) {
         @Override
@@ -187,21 +187,6 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard>,
         return owner;
     }
     
-    @Override
-    public MagicPlayer getOpponent() {
-        return getController().getOpponent();
-    }
-    
-    @Override
-    public boolean isFriend(final MagicObject other) {
-        return getController() == other.getController();
-    }
-
-    @Override
-    public boolean isEnemy(final MagicObject other) {
-        return getOpponent() == other.getController();
-    }
-
     @Override
     public int getPreventDamage() {
         return 0;
