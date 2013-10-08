@@ -1,0 +1,11 @@
+name=Elvish Scrapper
+url=http://magiccards.info/8e/en/245.html
+image=http://magiccards.info/scans/en/8e/245.jpg
+value=3.295
+rarity=U
+type=Creature
+subtype=Elf
+cost={G}
+pt=1/1
+timing=main
+requires_groovy_code
