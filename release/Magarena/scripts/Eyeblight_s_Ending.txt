@@ -1,0 +1,10 @@
+name=Eyeblight's Ending
+url=http://magiccards.info/lw/en/110.html
+image=http://magiccards.info/scans/en/lw/110.jpg
+value=4.074
+rarity=C
+cost={2}{B}
+type=Tribal,Instant
+subtype=Elf
+timing=removal
+requires_groovy_code
