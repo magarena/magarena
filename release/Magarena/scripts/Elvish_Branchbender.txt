@@ -1,0 +1,11 @@
+name=Elvish Branchbender
+url=http://magiccards.info/lw/en/204.html
+image=http://magiccards.info/scans/en/lw/204.jpg
+value=3.500
+rarity=C
+type=Creature
+subtype=Elf,Druid
+cost={2}{G}
+pt=2/2
+timing=main
+requires_groovy_code

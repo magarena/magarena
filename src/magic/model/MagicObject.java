@@ -1,6 +1,7 @@
 package magic.model;
 
 public interface MagicObject extends MagicCopyable {
+    boolean     isToken();
     boolean     isSpell();
     boolean     isSpell(MagicType type);
     boolean     isInstantOrSorcerySpell();

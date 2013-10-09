@@ -1,0 +1,11 @@
+name=Elvish Hunter
+url=http://magiccards.info/me2/en/157.html
+image=http://magiccards.info/scans/en/me2/157.jpg
+value=3.058
+rarity=C
+type=Creature
+subtype=Elf,Archer
+cost={1}{G}
+pt=1/1
+timing=main
+requires_groovy_code

@@ -1,0 +1,11 @@
+name=Emmara Tandris
+url=http://magiccards.info/dgm/en/68.html
+image=http://magiccards.info/scans/en/dgm/68.jpg
+value=1.454
+rarity=R
+type=Legendary,Creature
+subtype=Elf,Shaman
+cost={5}{G}{W}
+pt=5/7
+timing=main
+requires_groovy_code

@@ -35,4 +35,9 @@ public abstract class MagicObjectImpl implements MagicObject {
     public boolean isSpell(MagicType type) {
         return isSpell() && hasType(type);
     }
+    
+    @Override
+    public boolean isToken() {
+        return isPermanent() && ((MagicPermanent)this).isToken();
+    }
 }
