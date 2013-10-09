@@ -16,9 +16,9 @@
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
                     final MagicPermanent chosen ->
-                    game.doAction(new MagicPlayCardFromStackAction(
+                    game.doAction(MagicPlayCardFromStackAction.EnterAsCopy(
                         event.getCardOnStack(),
-                        chosen.getCardDefinition()
+                        chosen
                     ));
                 } as MagicPermanentAction);
             } else {

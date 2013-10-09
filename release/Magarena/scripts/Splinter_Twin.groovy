@@ -22,7 +22,7 @@ def Copy = new MagicPermanentActivation(
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         final MagicPlayer player=event.getPlayer();
         final MagicCard card=MagicCard.createTokenCard(
-            event.getPermanent().getCardDefinition(),
+            event.getPermanent(),
             player
         );
         game.doAction(new MagicPlayCardAction(

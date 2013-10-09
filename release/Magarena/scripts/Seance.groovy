@@ -42,7 +42,7 @@ def Spirit = new MagicStatic(MagicLayer.Type) {
                     ));
                     final MagicPutIntoPlayAction action = new MagicPlayTokenAction(
                         player,
-                        card.getCardDefinition()
+                        card
                     );
                     game.doAction(action);
                     final MagicPermanent permanent = action.getPermanent();

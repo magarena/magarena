@@ -5,6 +5,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
+import magic.model.MagicObject;
 
 public class MagicPlayTokensAction extends MagicAction {
 
@@ -14,6 +15,10 @@ public class MagicPlayTokensAction extends MagicAction {
     public MagicPlayTokensAction(final MagicPlayer player, final MagicCardDefinition cardDefinition, final int aCount) {
         card  = MagicCard.createTokenCard(cardDefinition,player);
         count = aCount;
+    }
+    
+    public MagicPlayTokensAction(final MagicPlayer player, final MagicObject obj, final int aCount) {
+        this(player, obj.getCardDefinition(), aCount);
     }
 
     @Override

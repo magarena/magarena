@@ -1,6 +1,7 @@
 package magic.model.action;
 
 import magic.model.MagicGame;
+import magic.model.MagicObject;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.MagicCardDefinition;
@@ -24,6 +25,10 @@ public class MagicPlayCardFromStackAction extends MagicPutIntoPlayAction {
     public MagicPlayCardFromStackAction(final MagicCardOnStack cardOnStack,final MagicPermanent enchantedPermanent) {
         this(cardOnStack);
         setEnchantedPermanent(enchantedPermanent);
+    }
+
+    static final public MagicPlayCardFromStackAction EnterAsCopy(final MagicCardOnStack cardOnStack, final MagicObject obj) {
+        return new MagicPlayCardFromStackAction(cardOnStack, obj.getCardDefinition());
     }
 
     @Override

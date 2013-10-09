@@ -24,9 +24,9 @@ def ST = new MagicStatic(MagicLayer.Type) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
                     final MagicPermanent chosen ->
-                    final MagicPlayCardFromStackAction action = new MagicPlayCardFromStackAction(
+                    final MagicPlayCardFromStackAction action = MagicPlayCardFromStackAction.EnterAsCopy(
                         event.getCardOnStack(),
-                        chosen.getCardDefinition()
+                        chosen
                     );
                     game.doAction(action);
                     final MagicPermanent perm = action.getPermanent();

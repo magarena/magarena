@@ -38,8 +38,12 @@ public class MagicCard extends MagicObjectImpl implements MagicSource,MagicTarge
         this(aCardDefinition, aOwner, aId, false);
     }
 
-    public static MagicCard createTokenCard(final MagicCardDefinition cardDefinition,final MagicPlayer owner) {
+    public static MagicCard createTokenCard(final MagicCardDefinition cardDefinition, final MagicPlayer owner) {
         return new MagicCard(cardDefinition, owner, MagicCard.TOKEN_ID, true);
+    }
+    
+    public static MagicCard createTokenCard(final MagicObject obj, final MagicPlayer owner) {
+        return new MagicCard(obj.getCardDefinition(), owner, MagicCard.TOKEN_ID, true);
     }
 
     private MagicCard(final MagicCardDefinition aCardDefinition,final MagicPlayer aOwner,final long aId, final boolean aToken) {

@@ -26,7 +26,7 @@
             if (event.isYes()) {
                 game.doAction(new MagicPlayTokenAction(
                     event.getPlayer(),
-                    event.getRefPermanent().getCardDefinition()
+                    event.getRefPermanent()
                 ));
             }
         }

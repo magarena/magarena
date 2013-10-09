@@ -14,7 +14,7 @@ def Duplicate = new MagicAtUpkeepTrigger() {
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         game.doAction(new MagicPlayTokenAction(
             event.getPlayer(),
-            event.getPermanent().getCardDefinition()
+            event.getPermanent()
         ));
     }
 };
@@ -45,9 +45,9 @@ def GainTrig = new MagicStatic(MagicLayer.Ability) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
                     final MagicPermanent chosen ->
-                    final MagicPlayCardFromStackAction action = new MagicPlayCardFromStackAction(
+                    final MagicPlayCardFromStackAction action = MagicPlayCardFromStackAction.EnterAsCopy(
                         event.getCardOnStack(),
-                        chosen.getCardDefinition()
+                        chosen
                     );
                     game.doAction(action);
                     final MagicPermanent perm = action.getPermanent();

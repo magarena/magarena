@@ -17,7 +17,7 @@
                 public void doAction(final MagicPermanent creature) {
                     final MagicPlayer player = event.getPlayer();
                     game.doAction(new MagicPlayCardAction(
-                        MagicCard.createTokenCard(creature.getCardDefinition(), player),
+                        MagicCard.createTokenCard(creature, player),
                         player
                     ));
                     game.doAction(new MagicCipherAction(

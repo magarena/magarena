@@ -20,7 +20,7 @@
                     for (;count>0;count--) {
                         game.doAction(new MagicPlayTokenAction(
                             player,
-                            creature.getCardDefinition()
+                            creature
                         ));
                     }
                 }

@@ -60,9 +60,9 @@ def GainAct = new MagicStatic(MagicLayer.Ability) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
                     final MagicPermanent chosen ->
-                    final MagicPlayCardFromStackAction action = new MagicPlayCardFromStackAction(
+                    final MagicPlayCardFromStackAction action = MagicPlayCardFromStackAction.EnterAsCopy(
                         event.getCardOnStack(),
-                        chosen.getCardDefinition()
+                        chosen
                     );
                     game.doAction(action);
                     game.doAction(new MagicAddStaticAction(
