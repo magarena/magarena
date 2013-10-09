@@ -154,7 +154,7 @@ public class PermanentViewerInfo {
         if (permanent.isBlocked()) {
             textBuffer.append(MagicPermanentState.Blocked.getText());
         }
-        if (permanent.getCard().isToken()) {
+        if (permanent.isToken()) {
             textBuffer.append("{t}");
         }
 
