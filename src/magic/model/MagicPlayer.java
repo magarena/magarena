@@ -542,6 +542,11 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
         return this;
     }
     
+    @Override
+    public MagicPlayer getOpponent() {
+        return currGame.getOpponent(this);
+    }
+    
     public boolean isValid() {
         return true;
     }
