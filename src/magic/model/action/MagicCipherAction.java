@@ -18,7 +18,7 @@ public class MagicCipherAction extends MagicAction {
 
     @Override
     public void doAction(final MagicGame game) {
-        if (cardOnStack.getCard().isToken() == false) {
+        if (cardOnStack.isRepresentedByACard()) {
             // prevent auto move to graveyard
             game.doAction(new MagicChangeCardDestinationAction(cardOnStack, MagicLocationType.Play));
             game.addEvent(new MagicCipherEvent(cardOnStack, controller));

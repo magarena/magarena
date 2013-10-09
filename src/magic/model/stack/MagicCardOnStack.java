@@ -101,6 +101,10 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
         return true;
     }
 
+    public boolean isRepresentedByACard() {
+        return getCard().isToken() == false;
+    }
+
     @Override
     public boolean canBeCountered() {
         return !getCardDefinition().hasAbility(MagicAbility.CannotBeCountered);
