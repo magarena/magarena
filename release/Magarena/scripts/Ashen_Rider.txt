@@ -1,0 +1,13 @@
+name=Ashen Rider
+url=http://magiccards.info/ths/en/187.html
+image=http://magiccards.info/scans/en/ths/187.jpg
+value=3.979
+rarity=M
+type=Creature
+subtype=Archon
+cost={4}{B}{B}{W}{W}
+pt=5/5
+ability=flying;\
+        enters effect Exile target permanent.;\
+        dies effect Exile target permanent.
+timing=main

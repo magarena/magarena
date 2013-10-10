@@ -1,0 +1,11 @@
+name=Sliver Overlord
+url=http://magiccards.info/pds/en/24.html
+image=http://magiccards.info/scans/en/pds/24.jpg
+value=4.218
+rarity=M
+cost={W}{U}{B}{R}{G}
+type=Legendary,Creature
+subtype=Sliver,Mutant
+pt=7/7
+timing=main
+requires_groovy_code
