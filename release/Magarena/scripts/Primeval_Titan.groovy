@@ -3,8 +3,8 @@ def EventAction = {
     final MagicEvent search = new MagicSearchOntoBattlefieldEvent(
         event,
         new MagicMayChoice(
-            "Search for a basic land card?",
-            MagicTargetChoice.BASIC_LAND_CARD_FROM_LIBRARY
+            "Search for a land card?",
+            MagicTargetChoice.LAND_CARD_FROM_LIBRARY
         ),
         MagicPlayMod.TAPPED
     );
@@ -17,7 +17,7 @@ def Event = {
     return new MagicEvent(
         permanent,
         EventAction,
-        "PN may search his or her library for up to two basic land cards and put them onto the battlefield tapped, then shuffle his or her library."
+        "PN may search his or her library for up to two land cards and put them onto the battlefield tapped, then shuffle his or her library."
     );
 };
 
