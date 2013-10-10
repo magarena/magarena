@@ -1,0 +1,13 @@
+name=Obsidian Battle-Axe
+url=http://magiccards.info/mt/en/144.html
+image=http://magiccards.info/scans/en/mt/144.jpg
+value=3.711
+rarity=U
+type=Tribal,Artifact
+subtype=Warrior,Equipment
+cost={3}
+equip={3}
+given_pt=2/1
+given_ability=haste
+timing=artifact
+requires_groovy_code
