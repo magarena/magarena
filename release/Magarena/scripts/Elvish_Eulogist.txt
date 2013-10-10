@@ -1,0 +1,11 @@
+name=Elvish Eulogist
+url=http://magiccards.info/lw/en/205.html
+image=http://magiccards.info/scans/en/lw/205.jpg
+value=2.724
+rarity=C
+cost={G}
+type=Creature
+subtype=Elf,Shaman
+timing=main
+pt=1/1
+requires_groovy_code
