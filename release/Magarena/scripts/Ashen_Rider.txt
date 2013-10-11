@@ -5,7 +5,7 @@ value=3.979
 rarity=M
 type=Creature
 subtype=Archon
-cost={4}{B}{B}{W}{W}
+cost={4}{W}{W}{B}{B}
 pt=5/5
 ability=flying;\
         enters effect Exile target permanent.;\
