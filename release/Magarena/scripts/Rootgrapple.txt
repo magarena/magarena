@@ -1,0 +1,11 @@
+name=Rootgrapple
+url=http://magiccards.info/lw/en/234.html
+image=http://magiccards.info/scans/en/lw/234.jpg
+value=3.273
+rarity=C
+removal=3
+cost={4}{G}
+type=Tribal,Instant
+subtype=Treefolk
+timing=removal
+requires_groovy_code
