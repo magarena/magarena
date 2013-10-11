@@ -119,19 +119,13 @@ public class MagicTargetFilterFactory {
         single.put("creature with power 4 or greater", TARGET_CREATURE_POWER_4_OR_MORE);
         single.put("creature with shadow", TARGET_CREATURE_WITH_SHADOW);
         single.put("creature with +1/+1 counter", TARGET_CREATURE_PLUSONE_COUNTER);
-        single.put("Forest or Island card from your library", TARGET_FOREST_OR_ISLAND_CARD_FROM_LIBRARY);
-        single.put("Forest or Plains card from your library", TARGET_FOREST_OR_PLAINS_CARD_FROM_LIBRARY);
         single.put("Goblin permanent card from your hand", TARGET_GOBLIN_CARD_FROM_HAND);
-        single.put("Goblin permanent card from your library", TARGET_GOBLIN_CARD_FROM_LIBRARY);
         single.put("green creature card from your hand", TARGET_GREEN_CREATURE_CARD_FROM_HAND);
         single.put("green or white creature", TARGET_GREEN_OR_WHITE_CREATURE);
         single.put("Insect, Rat, Spider, or Squirrel", TARGET_INSECT_RAT_SPIDER_OR_SQUIRREL);
         single.put("instant or sorcery card from your graveyard", TARGET_INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD);
         single.put("instant or sorcery card from your opponent's graveyard", TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD);
-        single.put("Island or Mountain card from your library", TARGET_ISLAND_OR_MOUNTAIN_CARD_FROM_LIBRARY);
-        single.put("Island or Swamp card from your library", TARGET_ISLAND_OR_SWAMP_CARD_FROM_LIBRARY); 
         single.put("land card with a basic land type from your library", TARGET_LAND_CARD_WITH_BASIC_LAND_TYPE_FROM_LIBRARY);
-        single.put("Mountain or Plains card from your library", TARGET_MOUNTAIN_OR_PLAINS_CARD_FROM_LIBRARY); 
         single.put("multicolored creature card from your hand", TARGET_MULTICOLORED_CREATURE_CARD_FROM_HAND);
         single.put("non-Demon creature", TARGET_NON_DEMON);
         single.put("non-Human creature", TARGET_NONHUMAN_CREATURE);
@@ -141,14 +135,22 @@ public class MagicTargetFilterFactory {
         single.put("non-Vampire creature you control", TARGET_NON_VAMPIRE_YOU_CONTROL);
         single.put("permanent card from your graveyard", TARGET_PERMANENT_CARD_FROM_GRAVEYARD); 
         single.put("permanent card with converted mana cost 3 or less from your graveyard", TARGET_PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD);
-        single.put("Plains, Island, Swamp, or Mountain card from your library", TARGET_PLAINS_ISLAND_SWAMP_OR_MOUNTAIN_CARD_FROM_LIBRARY);
-        single.put("Plains or Island card from your library", TARGET_PLAINS_OR_ISLAND_CARD_FROM_LIBRARY);
-        single.put("Plains or Swamp card from your library", TARGET_PLAINS_OR_SWAMP_CARD_FROM_LIBRARY);
-        single.put("Swamp or Forest card from your library", TARGET_SWAMP_OR_FOREST_CARD_FROM_LIBRARY);
-        single.put("Swamp or Mountain card from your library", TARGET_SWAMP_OR_MOUNTAIN_CARD_FROM_LIBRARY); 
         single.put("unblocked attacking creature you control", UNBLOCKED_ATTACKING_CREATURE_YOU_CONTROL);
         single.put("Vampire, Werewolf, or Zombie", TARGET_VAMPIRE_WEREWOLF_OR_ZOMBIE);
         single.put("white or blue creature", TARGET_WHITE_OR_BLUE_CREATURE);
+        
+        single.put("Plains or Island card from your library", TARGET_PLAINS_OR_ISLAND_CARD_FROM_LIBRARY);
+        single.put("Plains or Swamp card from your library", TARGET_PLAINS_OR_SWAMP_CARD_FROM_LIBRARY);
+        single.put("Island or Swamp card from your library", TARGET_ISLAND_OR_SWAMP_CARD_FROM_LIBRARY); 
+        single.put("Island or Mountain card from your library", TARGET_ISLAND_OR_MOUNTAIN_CARD_FROM_LIBRARY);
+        single.put("Swamp or Mountain card from your library", TARGET_SWAMP_OR_MOUNTAIN_CARD_FROM_LIBRARY); 
+        single.put("Swamp or Forest card from your library", TARGET_SWAMP_OR_FOREST_CARD_FROM_LIBRARY);
+        single.put("Mountain or Forest card from your library", TARGET_MOUNTAIN_OR_FOREST_CARD_FROM_LIBRARY); 
+        single.put("Mountain or Plains card from your library", TARGET_MOUNTAIN_OR_PLAINS_CARD_FROM_LIBRARY); 
+        single.put("Forest or Plains card from your library", TARGET_FOREST_OR_PLAINS_CARD_FROM_LIBRARY);
+        single.put("Forest or Island card from your library", TARGET_FOREST_OR_ISLAND_CARD_FROM_LIBRARY);
+        single.put("Plains, Island, Swamp, or Mountain card from your library", TARGET_PLAINS_ISLAND_SWAMP_OR_MOUNTAIN_CARD_FROM_LIBRARY);
+        single.put("Goblin permanent card from your library", TARGET_GOBLIN_CARD_FROM_LIBRARY);
     }
 
     public static MagicTargetFilter<MagicPermanent> build(final String arg) {
