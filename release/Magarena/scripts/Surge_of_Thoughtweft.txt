@@ -1,0 +1,10 @@
+name=Surge of Thoughtweft
+url=http://magiccards.info/lw/en/43.html
+image=http://magiccards.info/scans/en/lw/43.jpg
+value=3.132
+rarity=C
+cost={1}{W}
+type=Tribal,Instant
+subtype=Kithkin
+timing=pump
+requires_groovy_code
