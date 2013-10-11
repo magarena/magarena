@@ -1,0 +1,11 @@
+name=Shields of Velis Vel
+url=http://magiccards.info/lw/en/39.html
+image=http://magiccards.info/scans/en/lw/39.jpg
+value=2.969
+rarity=C
+cost={W}
+type=Tribal,Instant
+subtype=Shapeshifter
+ability=changeling
+timing=pump
+requires_groovy_code
