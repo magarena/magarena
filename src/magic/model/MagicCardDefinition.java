@@ -416,10 +416,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
         return subTypes;
     }
 
-    public void applyCDASubType(
-            final MagicGame game,
-            final MagicPlayer player,
-            final Set<MagicSubType> flags) {
+    public void applyCDASubType(final MagicGame game, final MagicPlayer player, final Set<MagicSubType> flags) {
         for (final MagicCDA lv : CDAs) {
             lv.getSubTypeFlags(game, player, flags);
         }
