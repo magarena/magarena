@@ -3,9 +3,9 @@ url=http://magiccards.info/lw/en/114.html
 image=http://magiccards.info/scans/en/lw/114.jpg
 value=3.875
 rarity=U
-cost={3}{B}
 type=Tribal,Sorcery
 subtype=Goblin
+cost={3}{B}
+timing=removal
 removal=5
-timing=main
 requires_groovy_code
