@@ -374,10 +374,16 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     MagicPermanentFilterImpl TARGET_FOREST_YOU_CONTROL = Factory.permanent(MagicSubType.Forest, Control.You);
 
     MagicPermanentFilterImpl TARGET_ISLAND_YOU_CONTROL = Factory.permanent(MagicSubType.Island, Control.You);
+    
+    MagicPermanentFilterImpl TARGET_ISLAND = Factory.permanent(MagicSubType.Island, Control.Any);
 
     MagicPermanentFilterImpl TARGET_MOUNTAIN_YOU_CONTROL = Factory.permanent(MagicSubType.Mountain, Control.You);
 
     MagicPermanentFilterImpl TARGET_PLAINS_YOU_CONTROL = Factory.permanent(MagicSubType.Plains, Control.You);
+    
+    MagicPermanentFilterImpl TARGET_PLAINS = Factory.permanent(MagicSubType.Plains, Control.Any);
+    
+    MagicPermanentFilterImpl TARGET_AURA = Factory.permanent(MagicSubType.Aura, Control.Any);
 
     MagicPermanentFilterImpl TARGET_SWAMP_YOU_CONTROL = Factory.permanent(MagicSubType.Swamp, Control.You);
 
