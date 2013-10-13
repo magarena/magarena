@@ -7,5 +7,5 @@ type=Creature
 subtype=Beast
 cost={5}{R}{R}
 pt=6/4
-timing=main
 ability=cycling {2}
+timing=main
