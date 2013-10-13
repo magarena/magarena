@@ -9,7 +9,7 @@
                     new MagicMayChoice(),
                     otherPermanent,
                     this,
-                    "You may attach SN to RN."
+                    "You may\$ attach SN to RN."
                 ) :
                 MagicEvent.NONE;
         }
