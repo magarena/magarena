@@ -5,5 +5,5 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={3}{G}
-timing=main
+timing=removal
 requires_groovy_code=Boil
