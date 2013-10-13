@@ -1023,14 +1023,25 @@ public class MagicGame {
     public List<MagicPermanent> filterPermanents(final MagicPlayer player,final MagicTargetFilter<MagicPermanent> targetFilter) {
         return targetFilter.filter(this, player, MagicTargetHint.None);
     }
-
+    
+    public List<MagicPermanent> filterPermanents(final MagicTargetFilter<MagicPermanent> targetFilter) {
+        return targetFilter.filter(this, turnPlayer, MagicTargetHint.None);
+    }
 
     public List<MagicCard> filterCards(final MagicPlayer player,final MagicTargetFilter<MagicCard> targetFilter) {
         return targetFilter.filter(this, player, MagicTargetHint.None);
     }
+    
+    public List<MagicCard> filterCards(final MagicTargetFilter<MagicCard> targetFilter) {
+        return targetFilter.filter(this, turnPlayer, MagicTargetHint.None);
+    }
 
     public List<MagicItemOnStack> filterItemOnStack(final MagicPlayer player,final MagicTargetFilter<MagicItemOnStack> targetFilter) {
         return targetFilter.filter(this, player, MagicTargetHint.None);
+    }
+    
+    public List<MagicItemOnStack> filterItemOnStack(final MagicTargetFilter<MagicItemOnStack> targetFilter) {
+        return targetFilter.filter(this, turnPlayer, MagicTargetHint.None);
     }
 
     public boolean hasLegalTargets(
