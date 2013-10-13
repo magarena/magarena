@@ -29,7 +29,7 @@ def DrawPump = new MagicWhenOtherDrawnTrigger() {
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard card) {
         return permanent.isFriend(card) ?
             new MagicEvent(
-                permanent
+                permanent,
                 this,
                 "SN gets +1/+1 and gains flying until end of turn."
             ):
