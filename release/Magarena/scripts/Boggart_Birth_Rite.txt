@@ -1,0 +1,10 @@
+name=Boggart Birth Rite
+url=http://magiccards.info/lw/en/101.html
+image=http://magiccards.info/scans/en/lw/101.jpg
+value=3.049
+rarity=C
+cost={B}
+type=Tribal,Sorcery
+subtype=Goblin
+timing=main
+requires_groovy_code

@@ -1,0 +1,11 @@
+name=Elvish Scout
+url=http://magiccards.info/fe/en/76.html
+image=http://magiccards.info/scans/en/fe/76.jpg
+value=3.758
+rarity=C
+cost={G}
+type=Creature
+subtype=Elf,Scout
+timing=main
+pt=1/1
+requires_groovy_code

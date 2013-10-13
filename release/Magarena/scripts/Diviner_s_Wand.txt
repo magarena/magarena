@@ -1,0 +1,11 @@
+name=Diviner's Wand
+url=http://magiccards.info/mt/en/142.html
+image=http://magiccards.info/scans/en/mt/142.jpg
+value=3.000
+rarity=U
+cost={3}
+equip={3}
+type=Tribal,Artifact
+subtype=Wizard,Equipment
+timing=artifact
+requires_groovy_code

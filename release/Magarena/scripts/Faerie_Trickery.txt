@@ -1,0 +1,10 @@
+name=Faerie Trickery
+url=http://magiccards.info/lw/en/62.html
+image=http://magiccards.info/scans/en/lw/62.jpg
+value=3.811
+rarity=C
+cost={1}{U}{U}
+type=Tribal,Instant
+subtype=Faerie
+timing=counter
+requires_groovy_code

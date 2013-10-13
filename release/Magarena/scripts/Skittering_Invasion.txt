@@ -1,0 +1,10 @@
+name=Skittering Invasion
+url=http://magiccards.info/roe/en/10.html
+image=http://magiccards.info/scans/en/roe/10.jpg
+value=3.289
+rarity=U
+cost={7}
+type=Tribal,Sorcery
+subtype=Eldrazi
+timing=main
+requires_groovy_code

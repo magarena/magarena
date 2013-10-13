@@ -1,0 +1,11 @@
+name=Wings of Velis Vel
+url=http://magiccards.info/lw/en/97.html
+image=http://magiccards.info/scans/en/lw/97.jpg
+value=3.176
+rarity=C
+cost={1}{U}
+type=Tribal,Instant
+subtype=Shapeshifter
+ability=changeling
+timing=pump
+requires_groovy_code
