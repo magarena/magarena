@@ -3,8 +3,9 @@ url=http://magiccards.info/lw/en/134.html
 image=http://magiccards.info/scans/en/lw/134.jpg
 value=3.484
 rarity=C
-cost={B}
 type=Tribal,Instant
 subtype=Faerie
+cost={B}
 timing=removal
+removal=1
 requires_groovy_code
