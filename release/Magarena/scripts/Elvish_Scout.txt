@@ -3,9 +3,9 @@ url=http://magiccards.info/fe/en/76.html
 image=http://magiccards.info/scans/en/fe/76.jpg
 value=3.758
 rarity=C
-cost={G}
 type=Creature
 subtype=Elf,Scout
-timing=main
+cost={G}
 pt=1/1
+timing=main
 requires_groovy_code

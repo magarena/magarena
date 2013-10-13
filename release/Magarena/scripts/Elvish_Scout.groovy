@@ -1,13 +1,15 @@
 def ATTACKING_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return (target.isController(player) && target.isCreature() && target.isAttacking());
-        }
-    };
+    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+        return target.isController(player) && target.isCreature() && target.isAttacking();
+    }
+};
+
 def TARGET_ATTACKING_CREATURE_YOU_CONTROL = new MagicTargetChoice(
     ATTACKING_CREATURE_YOU_CONTROL,
     MagicTargetHint.Positive,
-    "an attacking creature you control"
+    "target attacking creature you control"
 );
+
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Tapping),
@@ -37,17 +39,10 @@ def TARGET_ATTACKING_CREATURE_YOU_CONTROL = new MagicTargetChoice(
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicUntapAction(creature));
-                    game.doAction(MagicChangeStateAction.Set(
+                    game.doAction(new MagicAddTurnTriggerAction(
                         creature,
-                        MagicPermanentState.NoCombatDamage
+                        MagicIfDamageWouldBeDealtTrigger.PreventDamageDealtToDealtBy
                     ));
-                    final MagicPermanentList blockingCreatures = creature.getBlockingCreatures();
-                    for (final MagicPermanent blocker : blockingCreatures) {
-                        game.doAction(MagicChangeStateAction.Set(
-                            blocker,
-                            MagicPermanentState.NoCombatDamage
-                        ));
-                    }
                 }
             });
         }
