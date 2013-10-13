@@ -5,14 +5,14 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "Destroy all forests."
+                "Destroy all Forests."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets=
-                game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_FOREST);
-            game.doAction(new MagicDestroyAction(targets));
+            game.doAction(new MagicDestroyAction(
+                game.filterPermanents(MagicTargetFilter.TARGET_FOREST);
+            ));
         }
     }
 ]
