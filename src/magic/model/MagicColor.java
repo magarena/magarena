@@ -155,7 +155,7 @@ public enum MagicColor {
         return numColors;
     }
 
-    private static boolean isColorless(final MagicSource source) {
+    public static boolean isColorless(final MagicSource source) {
         return numColors(source) == 0;
     }
 
