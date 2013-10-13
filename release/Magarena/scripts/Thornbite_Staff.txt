@@ -3,9 +3,9 @@ url=http://magiccards.info/mt/en/145.html
 image=http://magiccards.info/scans/en/mt/145.jpg
 value=3.762
 rarity=U
-cost={2}
-equip={4}
 type=Tribal,Artifact
 subtype=Shaman,Equipment
+cost={2}
+equip={4}
 timing=artifact
 requires_groovy_code
