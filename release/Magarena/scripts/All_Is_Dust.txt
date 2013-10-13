@@ -3,8 +3,8 @@ url=http://magiccards.info/roe/en/1.html
 image=http://magiccards.info/scans/en/roe/1.jpg
 value=4.477
 rarity=M
-cost={7}
 type=Tribal,Sorcery
 subtype=Eldrazi
+cost={7}
 timing=main
 requires_groovy_code
