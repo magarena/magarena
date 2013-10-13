@@ -7,8 +7,8 @@
                 MagicTargetChoice.NEG_TARGET_CREATURE,
                 MagicExileTargetPicker.create(),
                 this,
-                "Exile target creature\$. Its controller puts a 1/1 colorless Shapeshifter " +
-                " creature token with changeling onto the battlefield."
+                "Exile target creature\$. " +
+                "Its controller puts a 1/1 colorless Shapeshifter creature token with changeling onto the battlefield."
             );
         }
         @Override
@@ -16,10 +16,9 @@
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.Exile));
-                    game.doAction(new MagicPlayTokensAction(
+                    game.doAction(new MagicPlayTokenAction(
                         creature.getController(),
-                        TokenCardDefinitions.get("Changeling"),
-                        1
+                        TokenCardDefinitions.get("Changeling")
                     ));
                 }
             });
