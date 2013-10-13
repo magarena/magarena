@@ -7,5 +7,5 @@ type=Creature
 subtype=Hound
 cost={1}{R}{R}
 pt=1/2
-timing=main
 ability=double strike
+timing=main
