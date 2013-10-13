@@ -3,8 +3,8 @@ url=http://magiccards.info/lw/en/72.html
 image=http://magiccards.info/scans/en/lw/72.jpg
 value=3.920
 rarity=U
-cost={1}{U}
 type=Tribal,Enchantment
 subtype=Merfolk
+cost={1}{U}
 timing=enchantment
 requires_groovy_code

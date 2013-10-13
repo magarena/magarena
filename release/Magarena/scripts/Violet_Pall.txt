@@ -4,8 +4,8 @@ image=http://magiccards.info/scans/en/mt/81.jpg
 value=2.750
 rarity=C
 removal=3
-cost={4}{B}
 type=Tribal,Instant
 subtype=Faerie
+cost={4}{B}
 timing=removal
 requires_groovy_code

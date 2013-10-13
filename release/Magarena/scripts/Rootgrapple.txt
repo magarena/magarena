@@ -4,8 +4,8 @@ image=http://magiccards.info/scans/en/lw/234.jpg
 value=3.273
 rarity=C
 removal=3
-cost={4}{G}
 type=Tribal,Instant
 subtype=Treefolk
+cost={4}{G}
 timing=removal
 requires_groovy_code

@@ -3,8 +3,8 @@ url=http://magiccards.info/lw/en/136.html
 image=http://magiccards.info/scans/en/lw/136.jpg
 value=3.513
 rarity=U
-cost={1}{B}
 type=Tribal,Enchantment
 subtype=Elf
+cost={1}{B}
 timing=enchantment
 requires_groovy_code

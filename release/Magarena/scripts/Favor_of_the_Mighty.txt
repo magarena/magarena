@@ -3,8 +3,8 @@ url=http://magiccards.info/lw/en/14.html
 image=http://magiccards.info/scans/en/lw/14.jpg
 value=3.047
 rarity=R
-cost={1}{W}
 type=Tribal,Enchantment
 subtype=Giant
+cost={1}{W}
 timing=enchantment
 requires_groovy_code

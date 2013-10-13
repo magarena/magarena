@@ -3,8 +3,8 @@ url=http://magiccards.info/lw/en/21.html
 image=http://magiccards.info/scans/en/lw/21.jpg
 value=4.170
 rarity=R
-cost={1}{W}
 type=Tribal,Enchantment
 subtype=Elemental
+cost={1}{W}
 timing=enchantment
 requires_groovy_code

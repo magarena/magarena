@@ -3,8 +3,8 @@ url=http://magiccards.info/mt/en/52.html
 image=http://magiccards.info/scans/en/mt/52.jpg
 value=2.967
 rarity=C
-cost={U}
 type=Tribal,Instant
 subtype=Wizard
+cost={U}
 timing=removal
 requires_groovy_code

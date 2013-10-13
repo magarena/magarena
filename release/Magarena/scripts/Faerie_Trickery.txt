@@ -3,8 +3,8 @@ url=http://magiccards.info/lw/en/62.html
 image=http://magiccards.info/scans/en/lw/62.jpg
 value=3.811
 rarity=C
-cost={1}{U}{U}
 type=Tribal,Instant
 subtype=Faerie
+cost={1}{U}{U}
 timing=counter
 requires_groovy_code
