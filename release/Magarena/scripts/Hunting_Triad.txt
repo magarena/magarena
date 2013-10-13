@@ -3,9 +3,9 @@ url=http://magiccards.info/mt/en/127.html
 image=http://magiccards.info/scans/en/mt/127.jpg
 value=3.548
 rarity=U
-cost={3}{G}
 type=Tribal,Sorcery
 subtype=Elf
+cost={3}{G}
 ability=reinforce 3 {3}{G}
-timing=main
+timing=token
 requires_groovy_code
