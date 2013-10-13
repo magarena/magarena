@@ -9,7 +9,7 @@ def evt = {
     return new MagicEvent(
         permanent,
         act,
-        "SN gets +X/+X until end of turn, where X is the number of attacking creatures."
+        "SN gets +1/+1 until end of turn for each attacking creature."
     );
 }
 

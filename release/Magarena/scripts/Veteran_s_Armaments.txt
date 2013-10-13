@@ -3,9 +3,9 @@ url=http://magiccards.info/mt/en/146.html
 image=http://magiccards.info/scans/en/mt/146.jpg
 value=3.538
 rarity=U
-cost={2}
-equip={2}
 type=Tribal,Artifact
 subtype=Soldier,Equipment
+cost={2}
+equip={2}
 timing=artifact
 requires_groovy_code
