@@ -5,5 +5,5 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={3}{R}
-timing=main
+timing=removal
 requires_groovy_code
