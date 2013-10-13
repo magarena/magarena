@@ -3,9 +3,8 @@ url=http://magiccards.info/lw/en/170.html
 image=http://magiccards.info/scans/en/lw/170.jpg
 value=2.708
 rarity=C
-removal=4
-cost={3}{R}
 type=Tribal,Sorcery
 subtype=Giant
-timing=main
+cost={3}{R}
+timing=removal
 requires_groovy_code
