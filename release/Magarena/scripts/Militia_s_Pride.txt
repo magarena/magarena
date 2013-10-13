@@ -3,8 +3,8 @@ url=http://magiccards.info/lw/en/30.html
 image=http://magiccards.info/scans/en/lw/30.jpg
 value=3.917
 rarity=R
-cost={1}{W}
 type=Tribal,Enchantment
 subtype=Kithkin
+cost={1}{W}
 timing=enchantment
 requires_groovy_code

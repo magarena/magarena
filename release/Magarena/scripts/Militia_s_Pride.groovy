@@ -2,7 +2,7 @@
     new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            return (creature.isFriend(permanent) && !creature.isToken())?
+            return (creature.isFriend(permanent) && creature.isNonToken()) ?
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
