@@ -1,12 +1,9 @@
 def COLORED_PERMANENT = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return (target.hasColor(MagicColor.Black) 
-                || target.hasColor(MagicColor.Red) 
-                || target.hasColor(MagicColor.White) 
-                || target.hasColor(MagicColor.Green) 
-                || target.hasColor(MagicColor.Blue));
-        }
-    };
+    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+        return MagicColor.isColorless(target) == false;
+    }
+};
+
 [
     new MagicSpellCardEvent() {
         @Override
@@ -14,19 +11,15 @@ def COLORED_PERMANENT = new MagicPermanentFilterImpl() {
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "Each player sacrifices all colored permanents."
+                "Each player sacrifices all colored permanents he or she controls."
             );
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            for (final MagicPlayer player : game.getPlayers()) {               
-                final Collection<MagicPermanent> targets =
-                    game.filterPermanents(player, COLORED_PERMANENT);
-                for (final MagicPermanent target : targets) {
-                    game.doAction(new MagicSacrificeAction(target));
-                }    
-            }
+            for (final MagicPermanent target : game.filterPermanents(COLORED_PERMANENT)) {
+                game.doAction(new MagicSacrificeAction(target));
+            }    
         }
     }
 ]
