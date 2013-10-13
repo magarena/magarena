@@ -1,0 +1,10 @@
+name=Gutter Skulk
+url=http://magiccards.info/gtc/en/67.html
+image=http://magiccards.info/scans/en/gtc/67.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie,Rat
+cost={1}{B}
+pt=2/2
+timing=main

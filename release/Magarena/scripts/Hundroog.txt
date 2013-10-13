@@ -1,0 +1,11 @@
+name=Hundroog
+url=http://magiccards.info/lgn/en/129.html
+image=http://magiccards.info/scans/en/lgn/129.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Beast
+cost={6}{G}
+pt=4/7
+timing=main
+ability=cycling {3}

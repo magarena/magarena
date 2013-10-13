@@ -1,0 +1,11 @@
+name=Sandbar Merfolk
+url=http://magiccards.info/uz/en/94.html
+image=http://magiccards.info/scans/en/uz/94.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Merfolk
+cost={U}
+pt=1/1
+timing=main
+ability=cycling {2}

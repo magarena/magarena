@@ -1,0 +1,9 @@
+name=Boil
+url=http://magiccards.info/8ed/en/180.html
+image=http://magiccards.info/scans/en/8ed/180.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={3}{R}
+timing=removal
+requires_groovy_code

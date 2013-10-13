@@ -1,0 +1,9 @@
+name=Tsunami
+url=http://magiccards.info/me4/en/171.html
+image=http://magiccards.info/scans/en/me4/171.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={3}{G}
+timing=main
+requires_groovy_code=Boil

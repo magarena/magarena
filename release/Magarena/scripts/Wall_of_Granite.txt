@@ -1,0 +1,11 @@
+name=Wall of Granite
+url=http://magiccards.info/po/en/161.html
+image=http://magiccards.info/scans/en/po/161.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Wall
+cost={2}{R}
+pt=0/7
+timing=main
+ability=defender

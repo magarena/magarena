@@ -1,0 +1,11 @@
+name=Ridge Rannet
+url=http://magiccards.info/ala/en/111.html
+image=http://magiccards.info/scans/en/ala/111.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Beast
+cost={5}{R}{R}
+pt=6/4
+timing=main
+ability=cycling {2}

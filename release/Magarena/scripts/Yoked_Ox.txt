@@ -1,0 +1,10 @@
+name=Yoked Ox
+url=http://magiccards.info/ths/en/37.html
+image=http://magiccards.info/scans/en/ths/37.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Ox
+cost={W}
+pt=0/4
+timing=main

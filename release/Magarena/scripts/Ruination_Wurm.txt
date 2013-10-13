@@ -1,0 +1,10 @@
+name=Ruination Wurm
+url=http://magiccards.info/gtc/en/192.html
+image=http://magiccards.info/scans/en/gtc/192.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Wurm
+cost={4}{R}{G}
+pt=7/6
+timing=main

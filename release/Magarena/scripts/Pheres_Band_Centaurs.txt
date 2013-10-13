@@ -1,0 +1,10 @@
+name=Pheres-Band Centaurs
+url=http://magiccards.info/ths/en/171.html
+image=http://magiccards.info/scans/en/ths/171.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Warrior,Centaur
+cost={4}{G}
+pt=3/7
+timing=main

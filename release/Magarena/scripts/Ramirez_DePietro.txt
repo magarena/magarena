@@ -1,0 +1,11 @@
+name=Ramirez DePietro
+url=http://magiccards.info/me3/en/168.html
+image=http://magiccards.info/scans/en/me3/168.jpg
+value=2.500
+rarity=C
+type=Legendary,Creature
+subtype=Pirate,Human
+cost={3}{U}{B}{B}
+pt=4/3
+timing=main
+ability=first strike

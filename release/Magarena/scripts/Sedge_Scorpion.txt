@@ -1,0 +1,11 @@
+name=Sedge Scorpion
+url=http://magiccards.info/ths/en/177.html
+image=http://magiccards.info/scans/en/ths/177.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Scorpion
+cost={G}
+pt=1/1
+timing=main
+ability=deathtouch

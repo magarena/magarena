@@ -1,0 +1,10 @@
+name=Anvilwrought Raptor
+url=http://magiccards.info/ths/en/211.html
+image=http://magiccards.info/scans/en/ths/211.jpg
+value=2.500
+rarity=U
+type=Artifact,Creature
+subtype=Bird
+cost={4}
+ability=flying;first strike
+timing=artifact

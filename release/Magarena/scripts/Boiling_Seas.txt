@@ -1,0 +1,9 @@
+name=Boiling Seas
+url=http://magiccards.info/9ed/en/178.html
+image=http://magiccards.info/scans/en/9ed/178.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={3}{R}
+timing=removal
+requires_groovy_code=Boil
