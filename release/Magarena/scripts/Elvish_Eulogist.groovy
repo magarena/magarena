@@ -1,11 +1,12 @@
 def ELF_FROM_GRAVEYARD = new MagicCardFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            return target.hasSubType(MagicSubType.Elf);
-        }
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Graveyard;
-        }
-    };
+    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+        return target.hasSubType(MagicSubType.Elf);
+    }
+    public boolean acceptType(final MagicTargetType targetType) {
+        return targetType == MagicTargetType.Graveyard;
+    }
+};
+
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Removal),
@@ -22,14 +23,14 @@ def ELF_FROM_GRAVEYARD = new MagicCardFilterImpl() {
             return new MagicEvent(
                 source,
                 this,
-                "PN gains 1 life for each Elf card in his graveyard."
+                "PN gains 1 life for each Elf card in his or her graveyard."
             );
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final int amount = game.filterCards(player,ELF_FROM_GRAVEYARD).size();
+            final int amount = game.filterCards(player, ELF_FROM_GRAVEYARD).size();
             game.doAction(new MagicChangeLifeAction(player,amount));
         }
     }

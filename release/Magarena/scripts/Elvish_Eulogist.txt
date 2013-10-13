@@ -3,9 +3,9 @@ url=http://magiccards.info/lw/en/205.html
 image=http://magiccards.info/scans/en/lw/205.jpg
 value=2.724
 rarity=C
-cost={G}
 type=Creature
 subtype=Elf,Shaman
-timing=main
+cost={G}
 pt=1/1
+timing=main
 requires_groovy_code
