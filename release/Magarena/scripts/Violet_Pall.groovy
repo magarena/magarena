@@ -8,7 +8,7 @@
                 new MagicDestroyTargetPicker(false),
                 this,
                 "Destroy target nonblack creature\$. " +
-                "Put a 1/1 Put a 1/1 black Faerie Rogue creature token with flying onto the battlefield"
+                "PN puts a 1/1 black Faerie Rogue creature token with flying onto the battlefield"
             );
         }
         @Override
@@ -16,10 +16,9 @@
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicDestroyAction(creature));
-                    game.doAction(new MagicPlayTokensAction(
+                    game.doAction(new MagicPlayTokenAction(
                         event.getPlayer(),
-                        TokenCardDefinitions.get("Faerie Rogue"),
-                        1
+                        TokenCardDefinitions.get("Faerie Rogue")
                     ));
                 }
             });
