@@ -2,8 +2,10 @@
     new MagicWhenOtherDiesTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            return (permanent != otherPermanent && otherPermanent.isCreature() 
-                    && otherPermanent.hasSubType(MagicSubType.Elf) && !otherPermanent.isToken()) ?
+            return (permanent != otherPermanent && 
+                    otherPermanent.isNonToken() &&
+                    otherPermanent.hasSubType(MagicSubType.Elf) && 
+                    otherPermanent.isFriend(permanent)) ?
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(),
