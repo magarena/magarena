@@ -733,12 +733,12 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     }
 
     public boolean hasProtectionFrom(final MagicSource source) {
-        // From everything
+        // from everything
         if (hasAbility(MagicAbility.ProtectionFromEverything)) {
             return true;
         }
 
-        // From a color.
+        // from a color
         int numColors = 0;
         for (final MagicColor color : MagicColor.values()) {
             if (source.hasColor(color)) {
@@ -752,7 +752,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             }
         }
 
-        // From monocolored.
+        // from monocolored
         if (numColors == 1 &&
             hasAbility(MagicAbility.ProtectionFromMonoColored)) {
             return true;
@@ -764,44 +764,74 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
 
         final MagicPermanent creature = (MagicPermanent)source;
 
-        // From creatures.
+        // from creatures
         if (creature.hasType(MagicType.Creature) &&
             hasAbility(MagicAbility.ProtectionFromCreatures)) {
             return true;
         }
-        // From Artifacts
+        // from Artifacts
         if (creature.hasType(MagicType.Artifact) &&
             hasAbility(MagicAbility.ProtectionFromArtifacts)) {
             return true;
         }
-        // From Demons.
+        // from Demons
         if (creature.hasSubType(MagicSubType.Demon) &&
             hasAbility(MagicAbility.ProtectionFromDemons)) {
             return true;
         }
-        // From Dragons.
+        // from Dragons
         if (creature.hasSubType(MagicSubType.Dragon) &&
             hasAbility(MagicAbility.ProtectionFromDragons)) {
             return true;
         }
-        // From Vampires.
+        // from Vampires
         if (creature.hasSubType(MagicSubType.Vampire) &&
             hasAbility(MagicAbility.ProtectionFromVampires)) {
             return true;
         }
-        // From Werewolves.
+        // from Werewolves
         if (creature.hasSubType(MagicSubType.Werewolf) &&
             hasAbility(MagicAbility.ProtectionFromWerewolves)) {
             return true;
         }
-        // From Zombies.
+        // from Zombies
         if (creature.hasSubType(MagicSubType.Zombie) &&
             hasAbility(MagicAbility.ProtectionFromZombies)) {
             return true;
         }
-        // From Lands.
+        // from Lands
         if (creature.hasType(MagicType.Land) &&
             hasAbility(MagicAbility.ProtectionFromLands)) {
+            return true;
+        }
+        // from Spirits
+        if (creature.hasSubType(MagicSubType.Spirit) &&
+            hasAbility(MagicAbility.ProtectionFromSpirits)) {
+            return true;
+        }
+        // from Arcane
+        if (creature.hasSubType(MagicSubType.Arcane) &&
+            hasAbility(MagicAbility.ProtectionFromArcane)) {
+            return true;
+        }
+        // from Elves
+        if (creature.hasSubType(MagicSubType.Elf) &&
+            hasAbility(MagicAbility.ProtectionFromElves)) {
+            return true;
+        }
+        // from Goblins
+        if (creature.hasSubType(MagicSubType.Goblin) &&
+            hasAbility(MagicAbility.ProtectionFromGoblins)) {
+            return true;
+        }
+        // from Kavu
+        if (creature.hasSubType(MagicSubType.Kavu) &&
+            hasAbility(MagicAbility.ProtectionFromKavu)) {
+            return true;
+        }
+        // from Snow
+        if (creature.hasType(MagicType.Snow) &&
+            hasAbility(MagicAbility.ProtectionFromSnow)) {
             return true;
         }
 
