@@ -1,6 +1,6 @@
 name=Giant5
 token=Giant Warrior
-image=http://magiccards.info/extra/token/morningtide/giant-warrior.html
+image=http://magiccards.info/extras/token/morningtide/giant-warrior.jpg
 value=5
 type=Creature
 subtype=Giant,Warrior

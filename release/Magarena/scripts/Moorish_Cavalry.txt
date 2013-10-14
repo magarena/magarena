@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Knight
 cost={2}{W}{W}
 pt=3/3
-timing=main
 ability=trample
+timing=main

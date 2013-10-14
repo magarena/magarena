@@ -7,4 +7,4 @@ type=Instant
 subtype=Arcane
 cost={U}
 effect=PN draws a card.
-timing=removal
+timing=draw

@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Rebel
 cost={4}{W}
 pt=3/3
-timing=main
 ability=trample
+timing=main

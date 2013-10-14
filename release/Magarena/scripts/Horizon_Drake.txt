@@ -7,5 +7,5 @@ type=Creature
 subtype=Drake
 cost={1}{U}{U}
 pt=3/1
-timing=main
 ability=flying;protection from lands
+timing=main

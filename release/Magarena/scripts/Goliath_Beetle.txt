@@ -7,5 +7,5 @@ type=Creature
 subtype=Insect
 cost={2}{G}
 pt=3/1
-timing=main
 ability=trample
+timing=main

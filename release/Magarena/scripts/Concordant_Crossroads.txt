@@ -6,4 +6,5 @@ rarity=R
 type=World,Enchantment
 cost={G}
 ability=lord all creatures have haste
+static=all
 timing=enchantment

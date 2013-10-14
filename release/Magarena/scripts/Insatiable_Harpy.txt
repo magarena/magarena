@@ -7,5 +7,5 @@ type=Creature
 subtype=Harpy
 cost={2}{B}{B}
 pt=2/2
-timing=main
 ability=flying;lifelink
+timing=main

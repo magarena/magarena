@@ -7,5 +7,5 @@ type=Creature
 subtype=Cat,Warrior
 cost={1}{G}
 pt=2/1
-timing=main
 ability=protection from artifacts
+timing=main

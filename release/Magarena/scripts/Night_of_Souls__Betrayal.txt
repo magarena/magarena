@@ -6,4 +6,5 @@ rarity=R
 type=Legendary,Enchantment
 cost={2}{B}{B}
 ability=lord all creatures get -1/-1
+static=all
 timing=enchantment
