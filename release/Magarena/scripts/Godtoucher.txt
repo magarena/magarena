@@ -1,0 +1,11 @@
+name=Godtoucher
+url=http://magiccards.info/ala/en/133.html
+image=http://magiccards.info/scans/en/ala/133.jpg
+value=2.372
+rarity=C
+cost={3}{G}
+type=Creature
+subtype=Elf,Cleric
+timing=main
+pt=2/2
+requires_groovy_code
