@@ -4,18 +4,14 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
         pt.set(4,4);
     }
 };
-def AB1 = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
+def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
     @Override
     public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
         flags.add(MagicAbility.Flying);
-    }
-};
-def AB2 = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
-    @Override
-    public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
         flags.add(MagicAbility.Changeling);
     }
 };
+
 [
     new MagicSpellCardEvent() {
         @Override
@@ -23,16 +19,16 @@ def AB2 = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.POS_TARGET_CREATURE,
-                new MagicDestroyTargetPicker(true),
+                MagicSacrificeTargetPicker.create(),
                 this,
-                "Target creature\$ becomes 4/4, gains all creature types and flying until the end of the turn."
+                "Target creature\$ becomes 4/4, gains all creature types, and gains flying until end of turn."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 MagicPermanent creature ->
-                    game.doAction(new MagicBecomesCreatureAction(creature,PT,AB1,AB2));
+                game.doAction(new MagicBecomesCreatureAction(creature,PT,AB));
             } as MagicPermanentAction);
         }
     }
