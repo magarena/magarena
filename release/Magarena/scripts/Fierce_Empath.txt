@@ -1,0 +1,12 @@
+name=Fierce Empath
+url=http://magiccards.info/cmd/en/155.html
+image=http://magiccards.info/scans/en/cmd/155.jpg
+value=3.550
+rarity=C
+type=Creature
+subtype=Elf
+cost={2}{G}
+pt=1/1
+timing=main
+requires_groovy_code
+
