@@ -456,6 +456,7 @@ checks: \
 	check_aura \
 	check_requires_groovy_code \
 	check_script_name \
+	check_tokens \
 	check_unique_key \
 	check_groovy_escape \
 	check_url \
@@ -507,6 +508,12 @@ check_script_name:
 	diff \
 	<(ls -1 release/Magarena/scripts/ | grep txt | sort) \
 	<(grep "name=" -r release/Magarena/scripts/ | sort | sed 's/.*name=//;s/[^A-Za-z0-9]/_/g;s/$$/.txt/')
+
+# check tokens used match tokens in scripts
+check_tokens:
+	diff \
+	<(grep token= -r release/Magarena/scripts -C 1 | grep -o "name=.*" | sed 's/name=//' | sort) \
+	<(grep "TokenCardDefinitions.get" -r release/Magarena/scripts src | grep -o '".*"' | sed 's/"//g' | sort | uniq)
 
 check_unique_key:
 	grep "^[^=]*" -r release/Magarena/scripts/*.txt | sed 's/=.*//g' | sort | uniq -d | ${NO_OUTPUT}
