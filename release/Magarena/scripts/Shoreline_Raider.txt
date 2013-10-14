@@ -7,5 +7,5 @@ type=Creature
 subtype=Merfolk
 cost={2}{U}
 pt=2/2
-ability=protection from kavu
+ability=protection from Kavu
 timing=main

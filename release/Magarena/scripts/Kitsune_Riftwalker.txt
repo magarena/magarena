@@ -8,4 +8,4 @@ subtype=Fox,Wizard
 cost={1}{W}{W}
 pt=2/1
 timing=main
-ability=protection from spirits;protection from arcane
+ability=protection from Spirits;protection from Arcane

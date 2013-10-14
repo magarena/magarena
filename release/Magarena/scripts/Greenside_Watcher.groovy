@@ -13,7 +13,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.POS_TARGET_GATE,
+                MagicTargetChoice.Positive("target Gate"),
                 MagicTapTargetPicker.Untap,
                 this,
                 "Untap target Gate\$."

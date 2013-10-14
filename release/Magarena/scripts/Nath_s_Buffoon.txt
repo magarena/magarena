@@ -7,5 +7,5 @@ type=Creature
 subtype=Goblin,Rogue
 cost={1}{B}
 pt=1/1
+ability=protection from Elves
 timing=main
-ability=protection from elves

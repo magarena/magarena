@@ -6,5 +6,5 @@ rarity=C
 type=Instant
 subtype=Arcane
 cost={U}
-effect=PN draws one card.
+effect=PN draws a card.
 timing=removal

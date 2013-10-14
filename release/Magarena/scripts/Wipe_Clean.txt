@@ -5,5 +5,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={1}{W}
+effect=Exile target enchantment.
+ability=cycling {3}
 timing=removal
-effect=Exile target enchantment,cycling [3}.
