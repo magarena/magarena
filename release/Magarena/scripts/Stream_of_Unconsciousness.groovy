@@ -4,8 +4,8 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_CREATURE
-                new MagicWeakenTargetPicker(4, 0),
+                MagicTargetChoice.NEG_TARGET_CREATURE,
+                new MagicWeakenTargetPicker(4,0),
                 this,
                 "Target creature\$ gets -4/-0 until end of turn. " +
                 "If you control a Wizard, draw a card."

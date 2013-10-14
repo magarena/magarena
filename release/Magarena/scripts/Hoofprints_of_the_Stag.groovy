@@ -1,7 +1,7 @@
 def YOUR_TURN_CONDITION = new MagicCondition() {
     public boolean accept(final MagicSource source) {
         final MagicGame game = source.getGame();
-        return source.isController(game.getTurnPlayer());
+        return source.getController() == game.getTurnPlayer();
     }
 };
 

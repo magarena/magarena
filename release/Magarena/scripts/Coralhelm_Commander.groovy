@@ -1,7 +1,7 @@
 [
     new MagicStatic(
         MagicLayer.ModPT,
-        MagicTargetFilterFactory.build("merfolk creatures you control");
+        MagicTargetFilterFactory.build("merfolk creatures you control")
     ) {
 
         @Override
