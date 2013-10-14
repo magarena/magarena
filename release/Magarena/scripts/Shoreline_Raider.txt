@@ -1,0 +1,11 @@
+name=Shoreline Raider
+url=http://magiccards.info/in/en/73.html
+image=http://magiccards.info/scans/en/in/73.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Merfolk
+cost={2}{U}
+pt=2/2
+ability=protection from kavu
+timing=main

@@ -1,0 +1,9 @@
+name=Sacred Nectar
+url=http://magiccards.info/9ed/en/38.html
+image=http://magiccards.info/scans/en/9ed/38.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={1}{W}
+timing=main
+requires_groovy_code

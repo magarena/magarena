@@ -1,0 +1,11 @@
+name=Primoc Escapee
+url=http://magiccards.info/lgn/en/49.html
+image=http://magiccards.info/scans/en/lgn/49.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Bird,Beast
+cost={6}{U}
+pt=4/4
+ability=flying;cycling {2}
+timing=main

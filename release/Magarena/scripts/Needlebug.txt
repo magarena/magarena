@@ -1,0 +1,11 @@
+name=Needlebug
+url=http://magiccards.info/mrd/en/217.html
+image=http://magiccards.info/scans/en/mrd/217.jpg
+value=2.500
+rarity=U
+type=Artifact,Creature
+subtype=Insect
+cost={4}
+pt=2/2
+ability=flash;protection from artifacts
+timing=artifact

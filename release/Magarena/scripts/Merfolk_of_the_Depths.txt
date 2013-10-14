@@ -1,0 +1,11 @@
+name=Merfolk of the Depths
+url=http://magiccards.info/gtc/en/221.html
+image=http://magiccards.info/scans/en/gtc/221.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Merfolk,Soldier
+cost={4}{G/U}{G/U}
+pt=4/2
+timing=main
+ability=flash

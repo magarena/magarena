@@ -1,0 +1,11 @@
+name=Greenside Watcher
+url=http://magiccards.info/gtc/en/122.html
+image=http://magiccards.info/scans/en/gtc/122.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elf,Druid
+cost={1}{G}
+pt=2/1
+timing=main
+requires_groovy_code

@@ -1,0 +1,11 @@
+name=Raiding Nightstalker
+url=http://magiccards.info/po2/en/24.html
+image=http://magiccards.info/scans/en/po2/24.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Nightstalker
+cost={2}{B}
+pt=2/2
+ability=swampwalk
+timing=main

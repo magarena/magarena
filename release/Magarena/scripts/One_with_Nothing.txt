@@ -1,0 +1,9 @@
+name=One with Nothing
+url=http://magiccards.info/sok/en/84.html
+image=http://magiccards.info/scans/en/sok/84.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={B}
+timing=removal
+requires_groovy_code

@@ -1,0 +1,11 @@
+name=Pendrell Drake
+url=http://magiccards.info/uz/en/86.html
+image=http://magiccards.info/scans/en/uz/86.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Drake
+cost={3}{U}
+pt=2/3
+ability=flying;cycling {2}
+timing=main

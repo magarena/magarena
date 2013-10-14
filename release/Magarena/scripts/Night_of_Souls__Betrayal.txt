@@ -1,0 +1,9 @@
+name=Night of Souls' Betrayal
+url=http://magiccards.info/chk/en/133.html
+image=http://magiccards.info/scans/en/chk/133.jpg
+value=2.500
+rarity=R
+type=Legendary,Enchantment
+cost={2}{B}{B}
+ability=lord all creatures get -1/-1
+timing=enchantment

@@ -1,0 +1,11 @@
+name=Tel-Jilad Archers
+url=http://magiccards.info/mrd/en/131.html
+image=http://magiccards.info/scans/en/mrd/131.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elf,Archer
+cost={4}{G}
+pt=2/4
+ability=protection from artifacts;reach
+timing=main

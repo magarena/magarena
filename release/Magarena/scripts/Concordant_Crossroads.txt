@@ -1,0 +1,9 @@
+name=Concordant Crossroads
+url=http://magiccards.info/me3/en/114.html
+image=http://magiccards.info/scans/en/me3/114.jpg
+value=2.500
+rarity=R
+type=World,Enchantment
+cost={G}
+ability=lord all creatures have haste
+timing=enchantment

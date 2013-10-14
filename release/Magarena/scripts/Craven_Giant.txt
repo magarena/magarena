@@ -1,0 +1,11 @@
+name=Craven Giant
+url=http://magiccards.info/sh/en/78.html
+image=http://magiccards.info/scans/en/sh/78.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Giant
+cost={2}{R}
+pt=4/1
+ability=can't block
+timing=main

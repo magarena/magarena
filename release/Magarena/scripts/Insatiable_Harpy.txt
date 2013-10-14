@@ -1,0 +1,11 @@
+name=Insatiable Harpy
+url=http://magiccards.info/ths/en/92.html
+image=http://magiccards.info/scans/en/ths/92.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Harpy
+cost={2}{B}{B}
+pt=2/2
+timing=main
+ability=flying;lifelink

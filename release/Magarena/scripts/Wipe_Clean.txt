@@ -1,0 +1,9 @@
+name=Wipe Clean
+url=http://magiccards.info/scg/en/26.html
+image=http://magiccards.info/scans/en/scg/26.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{W}
+timing=removal
+effect=Exile target enchantment,cycling [3}.

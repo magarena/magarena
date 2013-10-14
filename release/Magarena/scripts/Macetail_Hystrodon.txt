@@ -1,0 +1,11 @@
+name=Macetail Hystrodon
+url=http://magiccards.info/lgn/en/106.html
+image=http://magiccards.info/scans/en/lgn/106.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Beast
+cost={6}{R}
+pt=4/4
+timing=main
+ability=first strike;haste;cycling {2}

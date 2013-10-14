@@ -1,0 +1,11 @@
+name=Iron Tusk Elephant
+url=http://magiccards.info/mr/en/226.html
+image=http://magiccards.info/scans/en/mr/226.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elephant
+cost={4}{W}
+pt=3/3
+timing=main
+ability=trample

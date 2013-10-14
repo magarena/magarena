@@ -1,0 +1,11 @@
+name=Frenetic Raptor
+url=http://magiccards.info/lgn/en/93.html
+image=http://magiccards.info/scans/en/lgn/93.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Lizard,Beast
+cost={5}{R}
+pt=6/6
+timing=main
+ability=lord all beast creaturs have can't block

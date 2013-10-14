@@ -1,0 +1,11 @@
+name=Vulpine Goliath
+url=http://magiccards.info/ths/en/183.html
+image=http://magiccards.info/scans/en/ths/183.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Fox
+cost={4}{G}{G}
+pt=6/5
+ability=trample
+timing=main

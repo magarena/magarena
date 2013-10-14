@@ -1,0 +1,11 @@
+name=Squirming Mass
+url=http://magiccards.info/cg/en/73.html
+image=http://magiccards.info/scans/en/cg/73.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Horror
+cost={1}{B}
+pt=1/1
+ability=fear
+timing=main

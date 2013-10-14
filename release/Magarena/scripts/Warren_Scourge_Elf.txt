@@ -1,0 +1,11 @@
+name=Warren-Scourge Elf
+url=http://magiccards.info/lrw/en/241.html
+image=http://magiccards.info/scans/en/lrw/241.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elf,Warrior
+cost={1}{G}
+pt=1/1
+ability=protection from goblins
+timing=main

@@ -1,0 +1,11 @@
+name=Nath's Buffoon
+url=http://magiccards.info/lrw/en/129.html
+image=http://magiccards.info/scans/en/lrw/129.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Goblin,Rogue
+cost={1}{B}
+pt=1/1
+timing=main
+ability=protection from elves

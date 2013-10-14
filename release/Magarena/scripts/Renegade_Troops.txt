@@ -1,0 +1,11 @@
+name=Renegade Troops
+url=http://magiccards.info/pk/en/120.html
+image=http://magiccards.info/scans/en/pk/120.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Soldier
+cost={4}{R}
+pt=4/2
+ability=haste
+timing=main

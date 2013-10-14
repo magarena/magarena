@@ -1,0 +1,11 @@
+name=Horizon Drake
+url=http://magiccards.info/wwk/en/30.html
+image=http://magiccards.info/scans/en/wwk/30.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Drake
+cost={1}{U}{U}
+pt=3/1
+timing=main
+ability=flying;protection from lands

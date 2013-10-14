@@ -1,0 +1,11 @@
+name=Marsh Boa
+url=http://magiccards.info/pr/en/118.html
+image=http://magiccards.info/scans/en/pr/118.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Snake
+cost={G}
+pt=1/1
+ability=swampwalk
+timing=main

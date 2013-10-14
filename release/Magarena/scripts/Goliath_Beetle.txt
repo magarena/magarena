@@ -1,0 +1,11 @@
+name=Goliath Beetle
+url=http://magiccards.info/cg/en/107.html
+image=http://magiccards.info/scans/en/cg/107.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Insect
+cost={2}{G}
+pt=3/1
+timing=main
+ability=trample

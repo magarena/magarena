@@ -1,0 +1,11 @@
+name=Satyr Rambler
+url=http://magiccards.info/ths/en/139.html
+image=http://magiccards.info/scans/en/ths/139.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Satyr
+cost={1}{R}
+pt=2/1
+ability=trample
+timing=main
