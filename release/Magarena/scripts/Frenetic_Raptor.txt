@@ -7,5 +7,6 @@ type=Creature
 subtype=Lizard,Beast
 cost={5}{R}
 pt=6/6
+ability=lord beast creatures have can't block
+static=all
 timing=main
-ability=lord all beast creaturs have can't block
