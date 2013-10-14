@@ -1,9 +1,10 @@
 def YOUR_TURN_CONDITION = new MagicCondition() {
-        public boolean accept(final MagicSource source) {
-            final MagicGame game = source.getGame();
-            return (game.getTurnPlayer() == source.getController());
-        }
-    };
+    public boolean accept(final MagicSource source) {
+        final MagicGame game = source.getGame();
+        return source.isController(game.getTurnPlayer());
+    }
+};
+
 [
     new MagicWhenOtherDrawnTrigger() {
         @Override
