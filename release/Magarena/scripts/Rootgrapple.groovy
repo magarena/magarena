@@ -16,8 +16,9 @@
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent targetPermanent) {
                     game.doAction(new MagicDestroyAction(targetPermanent));
-                    if(event.getPlayer().getNrOfPermanents(MagicSubType.Treefolk) > 0){
-                        game.doAction(new MagicDrawAction(event.getPlayer()));
+                    final MagicPlayer you = event.getPlayer();
+                    if (you.controlsPermanent(MagicSubType.Treefolk)){
+                        game.doAction(new MagicDrawAction(you));
                     }
                 }
             });
