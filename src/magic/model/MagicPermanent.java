@@ -799,6 +799,11 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             hasAbility(MagicAbility.ProtectionFromZombies)) {
             return true;
         }
+        // From Lands.
+        if (creature.hasType(MagicType.Land) &&
+            hasAbility(MagicAbility.ProtectionFromLands)) {
+            return true;
+        }
 
         return false;
     }
