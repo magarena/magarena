@@ -1,0 +1,14 @@
+name=Greatbow Doyen
+url=http://magiccards.info/mt/en/125.html
+image=http://magiccards.info/scans/en/mt/125.jpg
+value=4.053
+rarity=R
+type=Creature
+subtype=Elf,Archer
+cost={4}{G}
+pt=2/4
+ability=lord other archer creatures you control get +1/+1
+timing=main
+static=player
+requires_groovy_code
+
