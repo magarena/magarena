@@ -15,8 +15,9 @@
             event.processTargetCardOnStack(game,new MagicCardOnStackAction() {
                 public void doAction(final MagicCardOnStack targetSpell) {
                     game.addEvent(new MagicCounterUnlessEvent(event.getSource(),targetSpell,MagicManaCost.create("{3}")));
-                    if(event.getPlayer().getNrOfPermanents(MagicSubType.Wizard) > 0){
-                        game.doAction(new MagicDrawAction(event.getPlayer()));
+                    final MagicPlayer you = event.getPlayer();
+                    if (you.controlsPermanent(MagicSubType.Wizard)) {
+                        game.doAction(new MagicDrawAction(you));
                     }
                 }
             });
