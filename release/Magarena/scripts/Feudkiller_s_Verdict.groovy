@@ -16,7 +16,7 @@
             if (player.getLife() > player.getOpponent().getLife()) {
                 game.doAction(new MagicPlayTokenAction(
                     player,
-                    TokenCardDefinitions.get("Giant5"),
+                    TokenCardDefinitions.get("Giant5")
                 ));
             }
         }
