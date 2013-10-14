@@ -1,0 +1,9 @@
+name=Kithkin Soldier
+token=Kithkin Soldier
+image=http://magiccards.info/extras/token/lorwyn/kithkin-soldier.jpg
+value=1
+type=Creature
+subtype=Kithkin,Soldier
+color=w
+cost={0}
+pt=1/1
