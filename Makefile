@@ -456,13 +456,13 @@ checks: \
 	check_aura \
 	check_requires_groovy_code \
 	check_script_name \
-	check_tokens \
 	check_unique_key \
 	check_groovy_escape \
 	check_url \
 	check_image \
 	check_meta \
-	check_rarity
+	check_rarity \
+	check_tokens
 
 
 # check rarity using meta.xml
