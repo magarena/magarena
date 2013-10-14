@@ -1,20 +1,22 @@
 def NON_FAERIE_SPELL = new MagicStackFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack target) {
-            return (target.isSpell() && !target.getCardDefinition().hasSubType(MagicSubType.Faerie));
-        }
-    };
-def TARGET_NON_FAERIE_SPELL = new MagicTargetChoice(
+    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack target) {
+        return target.isSpell() && (target.hasSubType(MagicSubType.Faerie) == false);
+    }
+};
+
+def NEG_TARGET_NON_FAERIE_SPELL = new MagicTargetChoice(
     NON_FAERIE_SPELL,
     MagicTargetHint.Negative,
-    "a non-Faerie spell"
+    "target non-Faerie spell"
 );
+
 [
     new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                TARGET_NON_FAERIE_SPELL,
+                NEG_TARGET_NON_FAERIE_SPELL,
                 this,
                 "Counter target non-Faerie spell\$. " +
                 "If that spell is countered this way, exile it instead of putting it into its owner's graveyard."
