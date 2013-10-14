@@ -6,5 +6,5 @@ rarity=U
 type=Tribal,Sorcery
 subtype=Eldrazi
 cost={7}
-timing=main
+timing=token
 requires_groovy_code
