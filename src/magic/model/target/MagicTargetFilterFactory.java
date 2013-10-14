@@ -162,9 +162,13 @@ public class MagicTargetFilterFactory {
             return matchCreaturePrefix(arg, " creatures your opponents control", Control.Opp);
         } else if (arg.endsWith(" creatures")) {
             return matchCreaturePrefix(arg, " creatures", Control.Any);
+        } else if (arg.endsWith(" you control")) {
+            return matchPermanentPrefix(arg, " you control", Control.You);
+        } else if (arg.endsWith(" your opponents control")) {
+            return matchPermanentPrefix(arg, " your opponents control", Control.Opp);
         } else {
-            throw new RuntimeException("unknown target filter \"" + arg + "\"");
-        }
+            return matchPermanentPrefix(arg, "", Control.Any);
+        } 
     }
     
     public static MagicTargetFilter<?> single(final String arg) {
