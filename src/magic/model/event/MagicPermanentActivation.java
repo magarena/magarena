@@ -24,11 +24,14 @@ import magic.model.choice.MagicChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicAbilityOnStack;
 import magic.model.target.MagicPreventTargetPicker;
+import magic.model.target.MagicTargetPicker;
 import magic.model.target.MagicTarget;
 import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicLayer;
 
 import java.util.Arrays;
+import java.util.List;
+import java.util.LinkedList;
 
 public abstract class MagicPermanentActivation extends MagicActivation<MagicPermanent> implements MagicChangeCardDefinition, MagicCopyable {
 
@@ -91,6 +94,47 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
     @Override
     public void change(final MagicCardDefinition cdef) {
         cdef.addAct(this);
+    }
+
+    public static final MagicPermanentActivation create(final String act) {
+        final String[] token = act.split(" ", 2);
+        final String[] costs = token[0].split(",");
+        final String text = token[1];
+
+        final String effect = text.toLowerCase();
+        final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
+        final MagicEventAction action  = ruleAction.action;
+        final MagicTargetPicker<?> picker = ruleAction.picker;
+        final MagicChoice choice = ruleAction.getChoice(effect);
+
+        return new MagicPermanentActivation(
+            new MagicActivationHints(ruleAction.timing),
+            ruleAction.description
+        ) {
+            @Override
+            public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
+                List<MagicEvent> events = new LinkedList<MagicEvent>();
+                for (String cost : costs) {
+                    if (cost.equals("{T}")) {
+                        events.add(new MagicTapEvent(source));
+                    } else {
+                        events.add(new MagicPayManaCostEvent(source, MagicManaCost.create(cost)));
+                    }
+                }
+                return events;
+            }
+       
+            @Override
+            public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
+                return new MagicEvent(
+                    source,
+                    choice,
+                    picker,
+                    action,
+                    text + "$"
+                );
+            }
+        };
     }
 
     public static final MagicPermanentActivation TapAddCharge = new MagicPermanentActivation(

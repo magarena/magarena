@@ -839,6 +839,11 @@ public enum MagicAbility {
             card.add(new MagicBestowActivation(manaCost));
         }
     },
+    ActivatedAbility("pay", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            card.add(MagicPermanentActivation.create(arg));
+        }
+    },
     None("",0);
 
     public static final Set<MagicAbility> PROTECTION_FLAGS = EnumSet.range(ProtectionFromBlack, ProtectionFromZombies);

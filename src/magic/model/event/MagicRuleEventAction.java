@@ -29,145 +29,208 @@ import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
 public enum MagicRuleEventAction {
-    Destroy("destroy ([^\\.]*).", MagicTargetHint.Negative, new MagicDestroyTargetPicker(false), new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent creature) {
-                    game.doAction(new MagicDestroyAction(creature));
-                }
-            });
+    Destroy(
+        "destroy ([^\\.]*).", 
+        MagicTargetHint.Negative, 
+        new MagicDestroyTargetPicker(false), 
+        MagicTiming.Removal,
+        "Destroy",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTargetPermanent(game,new MagicPermanentAction() {
+                    public void doAction(final MagicPermanent creature) {
+                        game.doAction(new MagicDestroyAction(creature));
+                    }
+                });
+            }
         }
-    }),
-    DestroyNoRegen("destroy ([^\\.]*). it can't be regenerated.", MagicTargetHint.Negative, new MagicDestroyTargetPicker(true), new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent creature) {
-                    game.doAction(MagicChangeStateAction.Set(creature,MagicPermanentState.CannotBeRegenerated));
-                    game.doAction(new MagicDestroyAction(creature));
-                }
-            });
+    ),
+    DestroyNoRegen(
+        "destroy ([^\\.]*). it can't be regenerated.", 
+        MagicTargetHint.Negative, 
+        new MagicDestroyTargetPicker(true), 
+        MagicTiming.Removal,
+        "Destroy",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTargetPermanent(game,new MagicPermanentAction() {
+                    public void doAction(final MagicPermanent creature) {
+                        game.doAction(MagicChangeStateAction.Set(creature,MagicPermanentState.CannotBeRegenerated));
+                        game.doAction(new MagicDestroyAction(creature));
+                    }
+                });
+            }
         }
-    }),
-    Counter("counter ([^\\.]*).", MagicTargetHint.Negative, MagicDefaultTargetPicker.create(), new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetCardOnStack(game,new MagicCardOnStackAction() {
-                public void doAction(final MagicCardOnStack targetSpell) {
-                    game.doAction(new MagicCounterItemOnStackAction(targetSpell));
-                }
-            });
+    ),
+    Counter(
+        "counter ([^\\.]*).", 
+        MagicTargetHint.Negative, 
+        MagicDefaultTargetPicker.create(), 
+        MagicTiming.Counter,
+        "Counter",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTargetCardOnStack(game,new MagicCardOnStackAction() {
+                    public void doAction(final MagicCardOnStack targetSpell) {
+                        game.doAction(new MagicCounterItemOnStackAction(targetSpell));
+                    }
+                });
+            }
         }
-    }),
-    Exile("exile ([^\\.]*).", MagicTargetHint.Negative, MagicExileTargetPicker.create(), new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent perm) {
-                    game.doAction(new MagicRemoveFromPlayAction(perm,MagicLocationType.Exile));
-                }
-            });
+    ),
+    Exile(
+        "exile ([^\\.]*).", 
+        MagicTargetHint.Negative, 
+        MagicExileTargetPicker.create(), 
+        MagicTiming.Removal,
+        "Exile",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTargetPermanent(game,new MagicPermanentAction() {
+                    public void doAction(final MagicPermanent perm) {
+                        game.doAction(new MagicRemoveFromPlayAction(perm,MagicLocationType.Exile));
+                    }
+                });
+            }
         }
-    }),
-    Deals1("sn deals 1 damage to ([^\\.]*).", MagicTargetHint.Negative, new MagicDamageTargetPicker(1), new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTarget(game,new MagicTargetAction() {
-                public void doAction(final MagicTarget target) {
-                    final MagicDamage damage=new MagicDamage(event.getSource(),target,1);
-                    game.doAction(new MagicDealDamageAction(damage));
-                }
-            });
+    ),
+    Deals1(
+        "sn deals 1 damage to ([^\\.]*).",
+        MagicTargetHint.Negative, 
+        new MagicDamageTargetPicker(1), 
+        MagicTiming.Removal,
+        "Damage",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTarget(game,new MagicTargetAction() {
+                    public void doAction(final MagicTarget target) {
+                        final MagicDamage damage=new MagicDamage(event.getSource(),target,1);
+                        game.doAction(new MagicDealDamageAction(damage));
+                    }
+                });
+            }
         }
-    }),
-    Deals2("sn deals 2 damage to ([^\\.]*).", MagicTargetHint.Negative, new MagicDamageTargetPicker(2), new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTarget(game,new MagicTargetAction() {
-                public void doAction(final MagicTarget target) {
-                    final MagicDamage damage=new MagicDamage(event.getSource(),target,2);
-                    game.doAction(new MagicDealDamageAction(damage));
-                }
-            });
+    ),
+    Deals2(
+        "sn deals 2 damage to ([^\\.]*).", 
+        MagicTargetHint.Negative, 
+        new MagicDamageTargetPicker(2), 
+        MagicTiming.Removal,
+        "Damage",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTarget(game,new MagicTargetAction() {
+                    public void doAction(final MagicTarget target) {
+                        final MagicDamage damage=new MagicDamage(event.getSource(),target,2);
+                        game.doAction(new MagicDealDamageAction(damage));
+                    }
+                });
+            }
         }
-    }),
-    Deals3("sn deals 3 damage to ([^\\.]*).", MagicTargetHint.Negative, new MagicDamageTargetPicker(3), new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTarget(game,new MagicTargetAction() {
-                public void doAction(final MagicTarget target) {
-                    final MagicDamage damage=new MagicDamage(event.getSource(),target,3);
-                    game.doAction(new MagicDealDamageAction(damage));
-                }
-            });
+    ),
+    Deals3(
+        "sn deals 3 damage to ([^\\.]*).", 
+        MagicTargetHint.Negative, 
+        new MagicDamageTargetPicker(3), 
+        MagicTiming.Removal,
+        "Damage",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTarget(game,new MagicTargetAction() {
+                    public void doAction(final MagicTarget target) {
+                        final MagicDamage damage=new MagicDamage(event.getSource(),target,3);
+                        game.doAction(new MagicDealDamageAction(damage));
+                    }
+                });
+            }
         }
-    }),
-    Deals4("sn deals 4 damage to ([^\\.]*).", MagicTargetHint.Negative, new MagicDamageTargetPicker(4), new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTarget(game,new MagicTargetAction() {
-                public void doAction(final MagicTarget target) {
-                    final MagicDamage damage=new MagicDamage(event.getSource(),target,4);
-                    game.doAction(new MagicDealDamageAction(damage));
-                }
-            });
+    ),
+    Deals4(
+        "sn deals 4 damage to ([^\\.]*).", 
+        MagicTargetHint.Negative, 
+        new MagicDamageTargetPicker(4), 
+        MagicTiming.Removal,
+        "Damage",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTarget(game,new MagicTargetAction() {
+                    public void doAction(final MagicTarget target) {
+                        final MagicDamage damage=new MagicDamage(event.getSource(),target,4);
+                        game.doAction(new MagicDealDamageAction(damage));
+                    }
+                });
+            }
         }
-    }),
-    Deals5("sn deals 5 damage to ([^\\.]*).", MagicTargetHint.Negative, new MagicDamageTargetPicker(5), new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTarget(game,new MagicTargetAction() {
-                public void doAction(final MagicTarget target) {
-                    final MagicDamage damage=new MagicDamage(event.getSource(),target,5);
-                    game.doAction(new MagicDealDamageAction(damage));
-                }
-            });
+    ),
+    Deals5(
+        "sn deals 5 damage to ([^\\.]*).", 
+        MagicTargetHint.Negative, 
+        new MagicDamageTargetPicker(5), 
+        MagicTiming.Removal,
+        "Damage",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTarget(game,new MagicTargetAction() {
+                    public void doAction(final MagicTarget target) {
+                        final MagicDamage damage=new MagicDamage(event.getSource(),target,5);
+                        game.doAction(new MagicDealDamageAction(damage));
+                    }
+                });
+            }
         }
-    }),
-    DrawsACard("pn draws a card.", new MagicEventAction() {
+    ),
+    DrawsACard("pn draws a card.", MagicTiming.Draw, "Draw", new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicDrawAction(event.getPlayer(), 1));
         }
     }),
-    DrawsTwoCards("pn draws two cards.", new MagicEventAction() {
+    DrawsTwoCards("pn draws two cards.", MagicTiming.Draw, "Draw", new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicDrawAction(event.getPlayer(), 2));
         }
     }),
-    DrawsThreeCards("pn draws three cards.", new MagicEventAction() {
+    DrawsThreeCards("pn draws three cards.", MagicTiming.Draw, "Draw", new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicDrawAction(event.getPlayer(), 3));
         }
     }),
-    DrawsFourCards("pn draws four cards.", new MagicEventAction() {
+    DrawsFourCards("pn draws four cards.", MagicTiming.Draw, "Draw", new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicDrawAction(event.getPlayer(), 4));
         }
     }),
-    DrawACard("draw a card.", new MagicEventAction() {
+    DrawACard("draw a card.", MagicTiming.Draw, "Draw", new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicDrawAction(event.getPlayer(), 1));
         }
     }),
-    DrawTwoCards("draw two cards.", new MagicEventAction() {
+    DrawTwoCards("draw two cards.", MagicTiming.Draw, "Draw", new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicDrawAction(event.getPlayer(), 2));
         }
     }),
-    DrawThreeCards("draw three cards.", new MagicEventAction() {
+    DrawThreeCards("draw three cards.", MagicTiming.Draw, "Draw", new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicDrawAction(event.getPlayer(), 3));
         }
     }),
-    DrawFourCards("draw four cards.", new MagicEventAction() {
+    DrawFourCards("draw four cards.", MagicTiming.Draw, "Draw", new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicDrawAction(event.getPlayer(), 4));
@@ -177,17 +240,28 @@ public enum MagicRuleEventAction {
 
     private final Pattern pattern;
     private final MagicTargetHint hint;
+
     public final MagicEventAction action;
     public final MagicTargetPicker<?> picker;
+    public final MagicTiming timing;
+    public final String description;
     
-    private MagicRuleEventAction(final String aPattern, final MagicEventAction aAction) {
-        this(aPattern, MagicTargetHint.None, MagicDefaultTargetPicker.create(), aAction);
+    private MagicRuleEventAction(final String aPattern, final MagicTiming aTiming, final String aDescription, final MagicEventAction aAction) {
+        this(aPattern, MagicTargetHint.None, MagicDefaultTargetPicker.create(), aTiming, aDescription, aAction);
     }
 
-    private MagicRuleEventAction(final String aPattern, final MagicTargetHint aHint, final MagicTargetPicker<?> aPicker, final MagicEventAction aAction) {
+    private MagicRuleEventAction(
+            final String aPattern, 
+            final MagicTargetHint aHint, 
+            final MagicTargetPicker<?> aPicker, 
+            final MagicTiming aTiming, 
+            final String aDescription, 
+            final MagicEventAction aAction) {
         pattern = Pattern.compile(aPattern);
         hint = aHint;
         picker = aPicker;
+        timing = aTiming;
+        description = aDescription;
         action = aAction;
     }
 
