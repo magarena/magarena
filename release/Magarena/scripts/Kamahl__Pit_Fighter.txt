@@ -7,6 +7,5 @@ type=Legendary,Creature
 subtype=Human,Barbarian
 cost={4}{R}{R}
 pt=6/1
-ability=haste
-timing=fmain
-requires_groovy_code
+ability=haste;ping 3
+timing=main
