@@ -36,6 +36,7 @@ public class MagicTargetFilterFactory {
         factory.put("each wolf you control", TARGET_WOLF_YOU_CONTROL);
 
         factory.put("all sliver creatures", TARGET_SLIVER);
+        factory.put("all slivers", TARGET_SLIVER_PERMANENT);
         factory.put("all creatures", TARGET_CREATURE);
         factory.put("nonblack creatures", TARGET_NONBLACK_CREATURE);
         factory.put("artifacts", TARGET_ARTIFACT);
