@@ -30,7 +30,7 @@ import java.util.regex.Matcher;
 
 public enum MagicRuleEventAction {
     Destroy(
-        "destroy ([^\\.]*).", 
+        "destroy (?<choice>[^\\.]*).", 
         MagicTargetHint.Negative, 
         new MagicDestroyTargetPicker(false), 
         MagicTiming.Removal,
@@ -47,7 +47,7 @@ public enum MagicRuleEventAction {
         }
     ),
     DestroyNoRegen(
-        "destroy ([^\\.]*). it can't be regenerated.", 
+        "destroy (?<choice>[^\\.]*). it can't be regenerated.", 
         MagicTargetHint.Negative, 
         new MagicDestroyTargetPicker(true), 
         MagicTiming.Removal,
@@ -65,7 +65,7 @@ public enum MagicRuleEventAction {
         }
     ),
     Counter(
-        "counter ([^\\.]*).", 
+        "counter (?<choice>[^\\.]*).", 
         MagicTargetHint.Negative, 
         MagicDefaultTargetPicker.create(), 
         MagicTiming.Counter,
@@ -82,7 +82,7 @@ public enum MagicRuleEventAction {
         }
     ),
     Exile(
-        "exile ([^\\.]*).", 
+        "exile (?<choice>[^\\.]*).", 
         MagicTargetHint.Negative, 
         MagicExileTargetPicker.create(), 
         MagicTiming.Removal,
@@ -99,7 +99,7 @@ public enum MagicRuleEventAction {
         }
     ),
     Deals1(
-        "sn deals 1 damage to ([^\\.]*).",
+        "sn deals 1 damage to (?<choice>[^\\.]*).",
         MagicTargetHint.Negative, 
         new MagicDamageTargetPicker(1), 
         MagicTiming.Removal,
@@ -117,7 +117,7 @@ public enum MagicRuleEventAction {
         }
     ),
     Deals2(
-        "sn deals 2 damage to ([^\\.]*).", 
+        "sn deals 2 damage to (?<choice>[^\\.]*).", 
         MagicTargetHint.Negative, 
         new MagicDamageTargetPicker(2), 
         MagicTiming.Removal,
@@ -135,7 +135,7 @@ public enum MagicRuleEventAction {
         }
     ),
     Deals3(
-        "sn deals 3 damage to ([^\\.]*).", 
+        "sn deals 3 damage to (?<choice>[^\\.]*).", 
         MagicTargetHint.Negative, 
         new MagicDamageTargetPicker(3), 
         MagicTiming.Removal,
@@ -153,7 +153,7 @@ public enum MagicRuleEventAction {
         }
     ),
     Deals4(
-        "sn deals 4 damage to ([^\\.]*).", 
+        "sn deals 4 damage to (?<choice>[^\\.]*).", 
         MagicTargetHint.Negative, 
         new MagicDamageTargetPicker(4), 
         MagicTiming.Removal,
@@ -171,7 +171,7 @@ public enum MagicRuleEventAction {
         }
     ),
     Deals5(
-        "sn deals 5 damage to ([^\\.]*).", 
+        "sn deals 5 damage to (?<choice>[^\\.]*).", 
         MagicTargetHint.Negative, 
         new MagicDamageTargetPicker(5), 
         MagicTiming.Removal,
@@ -276,7 +276,7 @@ public enum MagicRuleEventAction {
             throw new RuntimeException("unknown rule: " + rule);
         }
         return (matcher.groupCount() > 0) ?
-            new MagicTargetChoice(hint, matcher.group(1)) :
+            new MagicTargetChoice(hint, matcher.group("choice")) :
             MagicChoice.NONE;
     }
 
