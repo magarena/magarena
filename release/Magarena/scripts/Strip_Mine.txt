@@ -4,6 +4,6 @@ image=http://magiccards.info/scans/en/me4/252.jpg
 value=4.645
 rarity=R
 type=Land
-ability=tap add mana {1}
+ability=tap add mana {1};\
+        pay {T},{S} Destroy target land.
 timing=land
-requires_groovy_code
