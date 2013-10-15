@@ -1,6 +1,6 @@
 name=Angelic Curator
-url=http://magiccards.info/gu/en/1.html
-image=http://magiccards.info/scans/en/gu/1.jpg
+url=http://magiccards.info/ul/en/1.html
+image=http://magiccards.info/scans/en/ul/1.jpg
 value=2.500
 rarity=C
 type=Creature

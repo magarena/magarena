@@ -1,6 +1,6 @@
 name=Nath's Buffoon
-url=http://magiccards.info/lrw/en/129.html
-image=http://magiccards.info/scans/en/lrw/129.jpg
+url=http://magiccards.info/lw/en/129.html
+image=http://magiccards.info/scans/en/lw/129.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Pendrell Drake
-url=http://magiccards.info/uz/en/86.html
-image=http://magiccards.info/scans/en/uz/86.jpg
+url=http://magiccards.info/us/en/86.html
+image=http://magiccards.info/scans/en/us/86.jpg
 value=2.500
 rarity=C
 type=Creature

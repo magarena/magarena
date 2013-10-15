@@ -1,6 +1,6 @@
 name=Squirming Mass
-url=http://magiccards.info/cg/en/73.html
-image=http://magiccards.info/scans/en/cg/73.jpg
+url=http://magiccards.info/ud/en/73.html
+image=http://magiccards.info/scans/en/ud/73.jpg
 value=2.500
 rarity=C
 type=Creature

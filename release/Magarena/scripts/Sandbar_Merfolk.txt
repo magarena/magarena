@@ -1,6 +1,6 @@
 name=Sandbar Merfolk
-url=http://magiccards.info/uz/en/94.html
-image=http://magiccards.info/scans/en/uz/94.jpg
+url=http://magiccards.info/us/en/94.html
+image=http://magiccards.info/scans/en/us/94.jpg
 value=2.500
 rarity=C
 type=Creature

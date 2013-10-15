@@ -1,6 +1,6 @@
 name=Tel-Jilad Archers
-url=http://magiccards.info/mrd/en/131.html
-image=http://magiccards.info/scans/en/mrd/131.jpg
+url=http://magiccards.info/mi/en/131.html
+image=http://magiccards.info/scans/en/mi/131.jpg
 value=2.500
 rarity=C
 type=Creature

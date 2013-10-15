@@ -1,6 +1,6 @@
 name=Shimmering Barrier
-url=http://magiccards.info/uz/en/50.html
-image=http://magiccards.info/scans/en/uz/50.jpg
+url=http://magiccards.info/us/en/50.html
+image=http://magiccards.info/scans/en/us/50.jpg
 value=2.500
 rarity=U
 type=Creature

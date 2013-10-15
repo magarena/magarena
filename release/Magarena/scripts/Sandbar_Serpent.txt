@@ -1,6 +1,6 @@
 name=Sandbar Serpent
-url=http://magiccards.info/uz/en/95.html
-image=http://magiccards.info/scans/en/uz/95.jpg
+url=http://magiccards.info/us/en/95.html
+image=http://magiccards.info/scans/en/us/95.jpg
 value=2.500
 rarity=U
 type=Creature

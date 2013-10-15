@@ -1,6 +1,6 @@
 name=Goliath Beetle
-url=http://magiccards.info/cg/en/107.html
-image=http://magiccards.info/scans/en/cg/107.jpg
+url=http://magiccards.info/ud/en/107.html
+image=http://magiccards.info/scans/en/ud/107.jpg
 value=2.500
 rarity=C
 type=Creature
