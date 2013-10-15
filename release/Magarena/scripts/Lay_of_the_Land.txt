@@ -1,0 +1,9 @@
+name=Lay of the Land
+url=http://magiccards.info/m14/en/183.html
+image=http://magiccards.info/scans/en/m14/183.jpg
+value=2.125
+rarity=C
+type=Sorcery
+cost={G}
+timing=main
+requires_groovy_code
