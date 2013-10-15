@@ -7,6 +7,6 @@ type=Creature
 subtype=Sliver
 cost={2}{W}
 pt=2/2
-timing=main
+ability=lord all sliver creatures have pump {2} +0/+1 
 static=all
-requires_groovy_code
+timing=main
