@@ -622,3 +622,6 @@ normalize_files:
 
 untracked:
 	hg stat | sed 's/^. //;s/.*/"&"/' | xargs ls -ltr
+
+common_actions:
+	grep -ho "Magic[A-Za-z]*Action" -r release/Magarena/scripts  | sort | uniq -c | sort -n
