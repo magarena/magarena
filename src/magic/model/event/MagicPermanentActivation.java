@@ -115,7 +115,9 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
             public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
                 List<MagicEvent> events = new LinkedList<MagicEvent>();
                 for (String cost : costs) {
-                    if (cost.equals("{T}")) {
+                    if (cost.equals("{S}")) {
+                        events.add(new MagicSacrificeEvent(source));
+                    } else if (cost.equals("{T}")) {
                         events.add(new MagicTapEvent(source));
                     } else {
                         events.add(new MagicPayManaCostEvent(source, MagicManaCost.create(cost)));
