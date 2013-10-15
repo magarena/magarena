@@ -171,7 +171,20 @@ public enum MagicRuleEventAction {
         null
     ) {
         public MagicEventAction getAction(final String rule) {
-            return Pump.getAction(rule);
+            final Matcher matcher = matched(rule);
+            final String[] pt = matcher.group("pt").replace("+","").split("/");
+            final int power = Integer.parseInt(pt[0]);
+            final int toughness = Integer.parseInt(pt[1]);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTargetPermanent(game,new MagicPermanentAction() {
+                        public void doAction(final MagicPermanent creature) {
+                            game.doAction(new MagicChangeTurnPTAction(creature,power,toughness));
+                        }
+                    });
+                }
+            };
         }
         public MagicTargetPicker<?> getPicker(final String rule) {
             final Matcher matcher = matched(rule);
