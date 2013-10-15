@@ -7,5 +7,6 @@ type=Tribal,Artifact
 subtype=Wizard,Equipment
 cost={3}
 equip={3}
+given_ability=pay {4} PN draws a card.
 timing=artifact
 requires_groovy_code

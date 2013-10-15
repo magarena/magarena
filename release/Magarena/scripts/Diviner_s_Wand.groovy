@@ -1,29 +1,3 @@
-def Draw = new MagicPermanentActivation(
-    new MagicActivationHints(MagicTiming.Token),
-    "Draw"
-) {
-
-     @Override
-    public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
-        return [
-            new MagicPayManaCostEvent(source,"{4}")
-        ];
-    }
-
-    @Override
-    public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-        return new MagicEvent(
-            source,
-            this,
-            "PN draws a card."
-        );
-    }
-    @Override
-    public void executeEvent(final MagicGame game, final MagicEvent event) {
-        game.doAction(new MagicDrawAction(event.getPlayer(),1));
-    }
-};
-    
 def DrawPump = new MagicWhenOtherDrawnTrigger() {
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard card) {
@@ -47,7 +21,6 @@ def DrawPump = new MagicWhenOtherDrawnTrigger() {
         @Override
         public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
             permanent.addAbility(DrawPump);
-            permanent.addAbility(Draw);
         }
         @Override
         public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) { 
