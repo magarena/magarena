@@ -7,5 +7,5 @@ type=Creature
 subtype=Beast
 cost={3}{G}{G}
 pt=3/3
-timing=fmain
-requires_groovy_code
+ability=pay {G} Target creature gets +1/+1 until end of turn.
+timing=main
