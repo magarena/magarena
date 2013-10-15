@@ -3,9 +3,9 @@ url=http://magiccards.info/arb/en/55.html
 image=http://magiccards.info/scans/en/arb/55.jpg
 value=2.230
 rarity=C
-cost={1}{R}{G}
 type=Creature
 subtype=Elf,Shaman
-timing=main
+cost={1}{R}{G}
 pt=2/2
+timing=main
 requires_groovy_code
