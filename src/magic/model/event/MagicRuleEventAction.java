@@ -98,150 +98,48 @@ public enum MagicRuleEventAction {
             }
         }
     ),
-    Deals1(
-        "sn deals 1 damage to (?<choice>[^\\.]*).",
+    Deals(
+        "sn deals (?<amount>[0-9]+) damage to (?<choice>[^\\.]*).",
         MagicTargetHint.Negative, 
         new MagicDamageTargetPicker(1), 
         MagicTiming.Removal,
         "Damage",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTarget(game,new MagicTargetAction() {
-                    public void doAction(final MagicTarget target) {
-                        final MagicDamage damage=new MagicDamage(event.getSource(),target,1);
-                        game.doAction(new MagicDealDamageAction(damage));
-                    }
-                });
-            }
+        null
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final int amount = Integer.parseInt(matcher.group("amount"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTarget(game,new MagicTargetAction() {
+                        public void doAction(final MagicTarget target) {
+                            final MagicDamage damage=new MagicDamage(event.getSource(),target,amount);
+                            game.doAction(new MagicDealDamageAction(damage));
+                        }
+                    });
+                }
+            };
         }
-    ),
-    Deals2(
-        "sn deals 2 damage to (?<choice>[^\\.]*).", 
-        MagicTargetHint.Negative, 
-        new MagicDamageTargetPicker(2), 
-        MagicTiming.Removal,
-        "Damage",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTarget(game,new MagicTargetAction() {
-                    public void doAction(final MagicTarget target) {
-                        final MagicDamage damage=new MagicDamage(event.getSource(),target,2);
-                        game.doAction(new MagicDealDamageAction(damage));
-                    }
-                });
-            }
+    },
+    Draw("(pn )?draw(s)? (?<amount>[a-z]+) card(s)?.", MagicTiming.Draw, "Draw", null) {
+        public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final int amount = MagicRuleEventAction.englishNumToInt(matcher.group("amount"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.doAction(new MagicDrawAction(event.getPlayer(), amount));
+                }
+            };
         }
-    ),
-    Deals3(
-        "sn deals 3 damage to (?<choice>[^\\.]*).", 
-        MagicTargetHint.Negative, 
-        new MagicDamageTargetPicker(3), 
-        MagicTiming.Removal,
-        "Damage",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTarget(game,new MagicTargetAction() {
-                    public void doAction(final MagicTarget target) {
-                        final MagicDamage damage=new MagicDamage(event.getSource(),target,3);
-                        game.doAction(new MagicDealDamageAction(damage));
-                    }
-                });
-            }
-        }
-    ),
-    Deals4(
-        "sn deals 4 damage to (?<choice>[^\\.]*).", 
-        MagicTargetHint.Negative, 
-        new MagicDamageTargetPicker(4), 
-        MagicTiming.Removal,
-        "Damage",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTarget(game,new MagicTargetAction() {
-                    public void doAction(final MagicTarget target) {
-                        final MagicDamage damage=new MagicDamage(event.getSource(),target,4);
-                        game.doAction(new MagicDealDamageAction(damage));
-                    }
-                });
-            }
-        }
-    ),
-    Deals5(
-        "sn deals 5 damage to (?<choice>[^\\.]*).", 
-        MagicTargetHint.Negative, 
-        new MagicDamageTargetPicker(5), 
-        MagicTiming.Removal,
-        "Damage",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTarget(game,new MagicTargetAction() {
-                    public void doAction(final MagicTarget target) {
-                        final MagicDamage damage=new MagicDamage(event.getSource(),target,5);
-                        game.doAction(new MagicDealDamageAction(damage));
-                    }
-                });
-            }
-        }
-    ),
-    DrawsACard("pn draws a card.", MagicTiming.Draw, "Draw", new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicDrawAction(event.getPlayer(), 1));
-        }
-    }),
-    DrawsTwoCards("pn draws two cards.", MagicTiming.Draw, "Draw", new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicDrawAction(event.getPlayer(), 2));
-        }
-    }),
-    DrawsThreeCards("pn draws three cards.", MagicTiming.Draw, "Draw", new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicDrawAction(event.getPlayer(), 3));
-        }
-    }),
-    DrawsFourCards("pn draws four cards.", MagicTiming.Draw, "Draw", new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicDrawAction(event.getPlayer(), 4));
-        }
-    }),
-    DrawACard("draw a card.", MagicTiming.Draw, "Draw", new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicDrawAction(event.getPlayer(), 1));
-        }
-    }),
-    DrawTwoCards("draw two cards.", MagicTiming.Draw, "Draw", new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicDrawAction(event.getPlayer(), 2));
-        }
-    }),
-    DrawThreeCards("draw three cards.", MagicTiming.Draw, "Draw", new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicDrawAction(event.getPlayer(), 3));
-        }
-    }),
-    DrawFourCards("draw four cards.", MagicTiming.Draw, "Draw", new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicDrawAction(event.getPlayer(), 4));
-        }
-    }),
+    },
     ;
 
     private final Pattern pattern;
     private final MagicTargetHint hint;
-
-    public final MagicEventAction action;
+    private final MagicEventAction action;
+    
     public final MagicTargetPicker<?> picker;
     public final MagicTiming timing;
     public final String description;
@@ -268,16 +166,18 @@ public enum MagicRuleEventAction {
     public boolean matches(final String rule) {
         return pattern.matcher(rule).matches();
     }
+    
+    public MagicEventAction getAction(final String rule) {
+        return action;
+    }
 
     public MagicChoice getChoice(final String rule) {
-        final Matcher matcher = pattern.matcher(rule);
-        final boolean matches = matcher.matches();
-        if (!matches) {
-            throw new RuntimeException("unknown rule: " + rule);
+        final Matcher matcher = matched(rule);
+        try {
+            return new MagicTargetChoice(hint, matcher.group("choice"));
+        } catch (IllegalArgumentException e) {
+            return MagicChoice.NONE;
         }
-        return (matcher.groupCount() > 0) ?
-            new MagicTargetChoice(hint, matcher.group("choice")) :
-            MagicChoice.NONE;
     }
 
     public static MagicRuleEventAction build(final String rule) {
@@ -287,5 +187,27 @@ public enum MagicRuleEventAction {
             }
         }
         throw new RuntimeException("unknown rule: " + rule);
+    }
+
+    protected Matcher matched(final String rule) {
+        final Matcher matcher = pattern.matcher(rule);
+        final boolean matches = matcher.matches();
+        if (!matches) {
+            throw new RuntimeException("unknown rule: " + rule);
+        }
+        return matcher;
+    }
+
+    public static int englishNumToInt(String num) {
+        switch (num) {
+            case "a": return 1;
+            case "two": return 2;
+            case "three" : return 3;
+            case "four" : return 4;
+            case "five" : return 5;
+            case "six" : return 6;
+            case "seven" : return 7;
+            default: throw new RuntimeException("Unknown word " + num);
+        }
     }
 }

@@ -31,7 +31,7 @@ public abstract class MagicWhenDiesTrigger extends MagicWhenPutIntoGraveyardTrig
     public static MagicWhenDiesTrigger createMay(final String rule) {
         final String effect = rule.toLowerCase();
         final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
-        final MagicEventAction action  = ruleAction.action;
+        final MagicEventAction action  = ruleAction.getAction(effect);
         final MagicTargetPicker<?> picker = ruleAction.picker;
         final MagicChoice choice = ruleAction.getChoice(effect);
 
@@ -58,7 +58,7 @@ public abstract class MagicWhenDiesTrigger extends MagicWhenPutIntoGraveyardTrig
     public static MagicWhenDiesTrigger create(final String rule) {
         final String effect = rule.toLowerCase();
         final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
-        final MagicEventAction action  = ruleAction.action;
+        final MagicEventAction action  = ruleAction.getAction(effect);
         final MagicTargetPicker<?> picker = ruleAction.picker;
         final MagicChoice choice = ruleAction.getChoice(effect);
 
