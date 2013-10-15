@@ -1,0 +1,9 @@
+name=Miraculous Recovery
+url=http://magiccards.info/ddl/en/30.html
+image=http://magiccards.info/scans/en/ddl/30.jpg
+value=4.733
+rarity=U
+type=Instant
+cost={4}{W}
+timing=removal
+requires_groovy_code
