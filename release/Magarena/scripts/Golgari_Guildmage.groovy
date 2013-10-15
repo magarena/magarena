@@ -1,5 +1,5 @@
 [
-	new MagicPermanentActivation(
+    new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.FirstMain),
         "Return"
     ) {
@@ -25,15 +25,15 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {           
-			event.processTargetCard(game,new MagicCardAction() {
-				public void doAction(final MagicCard card) {
-					game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-					game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
-				}
-			});
+            event.processTargetCard(game,new MagicCardAction() {
+                public void doAction(final MagicCard card) {
+                    game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
+                    game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+                }
+            });
         }
     },
-	new MagicPermanentActivation(
+    new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Pump),
         "Pump"
     ) {

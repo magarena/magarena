@@ -14,7 +14,7 @@ def CREATURE_CMC_6_OR_MORE = new MagicCardFilterImpl() {
                 permanent,
                 this,
                 "PN may search his or her library for a creture card with converted mana cost 6 or greater, reveal it, " +
-				"put it into his or her hand, and shuffle his or her library."
+                "put it into his or her hand, and shuffle his or her library."
             );
         }
         @Override

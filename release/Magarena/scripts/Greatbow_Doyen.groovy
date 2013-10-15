@@ -3,7 +3,7 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicSource source = damage.getSource();
-			final int amount = damage.getDealtAmount();
+            final int amount = damage.getDealtAmount();
             return (source.isPermanent() &&
                     damage.getTarget().isCreature() &&
                     source.hasSubType(MagicSubType.Archer)) ?
