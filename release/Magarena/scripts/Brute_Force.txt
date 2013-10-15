@@ -5,5 +5,5 @@ value=4.333
 rarity=C
 type=Instant
 cost={R}
+effect=Target creature gets +3/+3 until end of turn.
 timing=pump
-requires_groovy_code=Giant Growth
