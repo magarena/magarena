@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Barbarian
 cost={4}{R}
 pt=3/3
+ability=pay {R},{S} Destroy target land.
 timing=main
-requires_groovy_code
