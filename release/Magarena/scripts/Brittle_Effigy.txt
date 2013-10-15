@@ -6,5 +6,5 @@ removal=4
 rarity=R
 type=Artifact
 cost={1}
+ability=pay {4},{T},{E} Exile target creature.
 timing=artifact
-requires_groovy_code
