@@ -17,7 +17,7 @@ public class MagicWeakenTargetPicker extends MagicTargetPicker<MagicPermanent> {
     public MagicWeakenTargetPicker(final int amountPower,final int amountToughness) {
         this.amountToughness=amountToughness;
     }
-
+    
     public MagicWeakenTargetPicker create(final String arg) {
         final String[] args = arg.replace('+','0').split("/");
         final int p = -Integer.parseInt(args[0]);

@@ -24,6 +24,7 @@ import magic.model.target.MagicDestroyTargetPicker;
 import magic.model.target.MagicExileTargetPicker;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicPumpTargetPicker;
+import magic.model.target.MagicWeakenTargetPicker;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.choice.MagicChoice;
 
@@ -161,13 +162,32 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    Weaken(
+        "(?<choice>[^\\.]*) gets (?<pt>[0-9-]+/[0-9-]+) until end of turn.", 
+        MagicTargetHint.Negative, 
+        null, 
+        MagicTiming.Removal, 
+        "Weaken", 
+        null
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            return Pump.getAction(rule);
+        }
+        public MagicTargetPicker<?> getPicker(final String rule) {
+            final Matcher matcher = matched(rule);
+            final String[] args = matcher.group("pt").replace('+','0').split("/");
+            final int p = -Integer.parseInt(args[0]);
+            final int t = -Integer.parseInt(args[1]);
+            return new MagicWeakenTargetPicker(p, t);
+        }
+    },
     ;
 
     private final Pattern pattern;
     private final MagicTargetHint hint;
     private final MagicEventAction action;
+    private final MagicTargetPicker<?> picker;
     
-    public final MagicTargetPicker<?> picker;
     public final MagicTiming timing;
     public final String description;
     
@@ -192,6 +212,10 @@ public enum MagicRuleEventAction {
 
     public boolean matches(final String rule) {
         return pattern.matcher(rule).matches();
+    }
+    
+    public MagicTargetPicker<?> getPicker(final String rule) {
+        return picker;
     }
     
     public MagicEventAction getAction(final String rule) {
