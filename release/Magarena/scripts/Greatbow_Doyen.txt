@@ -8,6 +8,6 @@ subtype=Elf,Archer
 cost={4}{G}
 pt=2/4
 ability=lord other archer creatures you control get +1/+1
-timing=main
 static=player
+timing=main
 requires_groovy_code

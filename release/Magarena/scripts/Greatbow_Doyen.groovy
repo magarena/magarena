@@ -3,14 +3,14 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicSource source = damage.getSource();
-            final int amount = damage.getDealtAmount();
             return (source.isPermanent() &&
-                    damage.getTarget().isCreature() &&
-                    source.hasSubType(MagicSubType.Archer)) ?
+                    source.hasSubType(MagicSubType.Archer)
+                    source.isFriend(permanent) &&
+                    damage.getTarget().isCreature()) ?
                 new MagicEvent(
                     source,
                     damage.getTarget().getController(),
-                    amount,
+                    damage.getDealtAmount(),
                     this,
                     "SN deals RN damage to PN."
                 ):
