@@ -7,6 +7,6 @@ type=Legendary,Creature
 subtype=Wizard
 cost={3}{U}{U}{U}
 pt=3/4
-timing=smain
-ability=return to owner's hand {2}{U}{U}
-requires_groovy_code
+ability=pay {T} PN draws three cards.;\
+        return to owner's hand {2}{U}{U}
+timing=main
