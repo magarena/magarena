@@ -5,5 +5,5 @@ value=4.221
 rarity=C
 type=Instant
 cost={G}
+effect=Target creature gets +3/+3 until end of turn.
 timing=pump
-requires_groovy_code
