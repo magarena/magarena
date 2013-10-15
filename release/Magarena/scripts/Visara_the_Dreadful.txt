@@ -7,6 +7,6 @@ type=Legendary,Creature
 subtype=Gorgon
 cost={3}{B}{B}{B}
 pt=5/5
-ability=flying
+ability=flying;\
+        pay {T} Destroy target creature. It can't be regenerated.
 timing=main
-requires_groovy_code
