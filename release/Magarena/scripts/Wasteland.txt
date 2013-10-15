@@ -4,6 +4,6 @@ image=http://magiccards.info/scans/en/tp/340.jpg
 value=4.647
 rarity=U
 type=Land
-ability=tap add mana {1}
+ability=tap add mana {1};\
+        pay {T},{S} Destroy target nonbasic land.
 timing=land
-requires_groovy_code
