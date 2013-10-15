@@ -5,6 +5,5 @@ value=2.844
 rarity=R
 type=Artifact
 cost={6}
-ability=echo {6}
+ability=echo {6};pay {T} PN draws a card.
 timing=artifact
-requires_groovy_code
