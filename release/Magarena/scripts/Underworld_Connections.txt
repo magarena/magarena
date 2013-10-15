@@ -6,6 +6,6 @@ rarity=R
 type=Enchantment
 subtype=Aura
 cost={1}{B}{B}
-timing=aura
+given_ability=pay {T},{L1} PN draws a card.
 enchant=sacrifice,pos land
-requires_groovy_code
+timing=aura
