@@ -1,0 +1,12 @@
+name=Puresteel Paladin
+url=http://magiccards.info/nph/en/20.html
+image=http://magiccards.info/scans/en/nph/20.jpg
+value=4.350
+rarity=R
+type=Creature
+subtype=Human,Knight
+cost={W}{W}
+pt=2/2
+timing=main
+requires_groovy_code
+
