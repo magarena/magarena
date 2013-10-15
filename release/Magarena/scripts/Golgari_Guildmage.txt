@@ -1,0 +1,11 @@
+name=Golgari Guildmage
+url=http://magiccards.info/rav/en/248.html
+image=http://magiccards.info/scans/en/rav/248.jpg
+value=2.889
+rarity=U
+cost={B/G}{B/G}
+type=Creature
+subtype=Elf,Shaman
+timing=main
+pt=2/2
+requires_groovy_code
