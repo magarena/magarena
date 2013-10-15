@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicSource source = damage.getSource();
             return (source.isPermanent() &&
-                    source.hasSubType(MagicSubType.Archer)
+                    source.hasSubType(MagicSubType.Archer) &&
                     source.isFriend(permanent) &&
                     damage.getTarget().isCreature()) ?
                 new MagicEvent(

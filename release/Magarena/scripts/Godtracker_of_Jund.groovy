@@ -3,7 +3,7 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
             return (otherPermanent.isCreature() &&
-                    otherPermanent.getPower() >= 5
+                    otherPermanent.getPower() >= 5 &&
                     otherPermanent.isFriend(permanent)) ?
                 new MagicEvent(
                     permanent,
