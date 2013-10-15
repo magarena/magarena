@@ -1,9 +1,9 @@
 def CREATURE_POWER_5_OR_MORE = new MagicPermanentFilterImpl() {
     public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-        return target.isCreature() &&
-               target.getPower() >= 5;
+        return target.isCreature() && target.getPower() >= 5;
     }
 };
+
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Pump),
