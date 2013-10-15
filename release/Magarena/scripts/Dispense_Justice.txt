@@ -1,0 +1,11 @@
+name=Dispense Justice
+url=http://magiccards.info/som/en/5.html
+image=http://magiccards.info/scans/en/som/5.jpg
+value=3.591
+removal=4
+rarity=U
+type=Instant
+cost={2}{W}
+timing=attack
+requires_groovy_code
+
