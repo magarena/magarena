@@ -7,6 +7,5 @@ type=Creature
 subtype=Hydra
 cost={4}{R}
 pt=5/1
-ability=fading 5
+ability=fading 5;pay {1}{C} SN deals 1 damage to target creature or player. 
 timing=main
-requires_groovy_code
