@@ -7,5 +7,5 @@ type=Creature
 subtype=Fox
 cost={1}{W}
 pt=2/2
+ability=pay {1}{W},{S} Exile target enchantment.
 timing=main
-requires_groovy_code
