@@ -1,6 +1,6 @@
 [
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.FirstMain),
+        new MagicActivationHints(MagicTiming.Draw),
         "Return"
     ) {
 
@@ -49,10 +49,10 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_CREATURE,
+                MagicTargetChoice.POS_TARGET_CREATURE,
                 MagicPumpTargetPicker.create(),
                 this,
-                "PN puts one +1/+1 counter on target creature\$."
+                "PN puts a +1/+1 counter on target creature\$."
             );
         }
 
