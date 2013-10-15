@@ -8,5 +8,5 @@ type=Creature
 subtype=Zombie
 cost={4}{B}
 pt=2/2
-timing=fmain
-requires_groovy_code
+ability=enters effect Target creature gets -2/-2 until end of turn.
+timing=main
