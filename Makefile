@@ -420,7 +420,7 @@ verify_mana_cost_order: cards/mtg_mana_costs cards/mag_mana_costs
 		echo "ERROR: Not applicable to tokens"; \
 	else \
 		name=$$(grep name= $^ | sed 's/name=//' | sed 's/ /%20/g');\
-		value=$$(curl -sL http://gatherer.wizards.com/pages/card/details.aspx?name=$$name | grep "textRatingValue" | grep -o "[0-9]\.[^<]*");\
+		value=$$(curl -sL http://gatherer.wizards.com/pages/card/details.aspx?name=$$name | grep "textRatingValue" | grep -o "[0-9]\.[^<]*" | head -1);\
 		sed -i "s/value=.*/value=$$value/" $^;\
 	fi \
 
