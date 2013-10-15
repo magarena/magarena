@@ -7,6 +7,7 @@ type=Creature
 subtype=Sliver
 cost={R}{W}
 pt=2/2
+ability=lord all slivers have pay {1}{S} SN deals 1 damage to target creature or player.
 static=all
 timing=main
 requires_groovy_code
