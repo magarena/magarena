@@ -71,7 +71,7 @@ public class CardDefinitions {
         try {
             CardProperty.valueOf(property.toUpperCase()).setProperty(card, value);
         } catch (IllegalArgumentException e) {
-            throw new RuntimeException("Unsupported card property: " + property);
+            throw new RuntimeException("Unsupported card property: " + property, e);
         }
     }
 
