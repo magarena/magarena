@@ -7,6 +7,7 @@ type=Artifact,Creature
 subtype=Vedalken,Knight
 cost={4}{U}
 pt=4/4
-ability=flying;untap {2}{U}
-timing=smain
-requires_groovy_code
+ability=flying;\
+        pay {1}{W}{B},{T} Destroy target creature or enchantment.;\
+        untap {2}{U}
+timing=main
