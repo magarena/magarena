@@ -14,6 +14,7 @@ import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.action.MagicChangeStateAction;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicDrawAction;
+import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetHint;
@@ -22,6 +23,7 @@ import magic.model.target.MagicDefaultTargetPicker;
 import magic.model.target.MagicDestroyTargetPicker;
 import magic.model.target.MagicExileTargetPicker;
 import magic.model.target.MagicDamageTargetPicker;
+import magic.model.target.MagicPumpTargetPicker;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.choice.MagicChoice;
 
@@ -130,6 +132,31 @@ public enum MagicRuleEventAction {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     game.doAction(new MagicDrawAction(event.getPlayer(), amount));
+                }
+            };
+        }
+    },
+    Pump(
+        "(?<choice>[^\\.]*) gets (?<pt>[0-9+]+/[0-9+]+) until end of turn.", 
+        MagicTargetHint.Positive, 
+        MagicPumpTargetPicker.create(), 
+        MagicTiming.Pump, 
+        "Pump", 
+        null
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final String[] pt = matcher.group("pt").replace("+","").split("/");
+            final int power = Integer.parseInt(pt[0]);
+            final int toughness = Integer.parseInt(pt[1]);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTargetPermanent(game,new MagicPermanentAction() {
+                        public void doAction(final MagicPermanent creature) {
+                            game.doAction(new MagicChangeTurnPTAction(creature,power,toughness));
+                        }
+                    });
                 }
             };
         }
