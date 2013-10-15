@@ -1,7 +1,7 @@
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Land),
-        "Land"
+        "Search"
     ) {
 
         @Override
