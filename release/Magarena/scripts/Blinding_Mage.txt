@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Wizard
 cost={1}{W}
 pt=1/2
+ability=pay {W},{T} Tap target creature.
 timing=main
-requires_groovy_code
