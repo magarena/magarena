@@ -2,10 +2,11 @@
     new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            final int amount = MagicCondition.METALCRAFT_CONDITION.accept(cardOnStack) ? 4 : 2;
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
-                new MagicDamageTargetPicker(2),
+                new MagicDamageTargetPicker(amount),
                 this,
                 "SN deals 2 damage to target creature or player\$. "+
                 "If you control three or more artifacts, it deals 4 damage to that creature or player instead."
