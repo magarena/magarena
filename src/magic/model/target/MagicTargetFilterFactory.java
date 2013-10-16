@@ -89,6 +89,7 @@ public class MagicTargetFilterFactory {
         single.put("permanent you control", TARGET_PERMANENT_YOU_CONTROL);
         single.put("permanent you own", TARGET_PERMANENT_YOU_OWN);
         single.put("permanent an opponent controls", TARGET_PERMANENT_AN_OPPONENT_CONTROLS);
+        single.put("creature an opponent controls", TARGET_CREATURE_YOUR_OPPONENT_CONTROLS);
         single.put("black permanent", TARGET_BLACK_PERMANENT);
         single.put("black or red permanent", TARGET_BLACK_RED_PERMANENT);
         single.put("multicolored permanent you control", TARGET_MULTICOLORED_PERMANENT_YOU_CONTROL);
