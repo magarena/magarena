@@ -7,5 +7,5 @@ type=Creature
 subtype=Elephant,Cleric
 cost={3}{W}{W}
 pt=3/3
+ability=pay {W},{T} Tap target creature.
 timing=main
-requires_groovy_code
