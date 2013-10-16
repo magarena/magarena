@@ -7,6 +7,6 @@ type=Creature
 subtype=Sliver
 cost={G}{W}
 pt=2/2
+ability=lord all slivers have pay {2}{S} PN gains 4 life.
 static=all
 timing=main
-requires_groovy_code
