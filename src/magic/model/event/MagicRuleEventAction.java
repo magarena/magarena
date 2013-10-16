@@ -254,6 +254,17 @@ public enum MagicRuleEventAction {
             return new MagicWeakenTargetPicker(p, t);
         }
     },
+    BounceSelf(
+        "return sn to its owner's hand.",
+        MagicTiming.Removal,
+        "Bounce",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                game.doAction(new MagicRemoveFromPlayAction(event.getPermanent(),MagicLocationType.OwnersHand));
+            }
+        }
+    ),
     Bounce(
         "return (?<choice>[^\\.]*) to its owner's hand.",
         MagicTargetHint.None,
