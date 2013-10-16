@@ -418,6 +418,7 @@ public enum MagicRuleEventAction {
     public static MagicCounterType englishToCounter(String counter) {
         switch (counter) {
             case "+1/+1": return MagicCounterType.PlusOne;
+            case "-1/-1": return MagicCounterType.MinusOne;
             case "charge": return MagicCounterType.Charge;
             default: throw new RuntimeException("Unknown type of counter: " + counter);
         }
