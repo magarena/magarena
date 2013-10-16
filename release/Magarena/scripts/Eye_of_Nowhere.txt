@@ -6,5 +6,5 @@ rarity=C
 type=Sorcery
 subtype=Arcane
 cost={U}{U}
+effect=Return target permanent to its owner's hand.
 timing=removal
-requires_groovy_code=Boomerang
