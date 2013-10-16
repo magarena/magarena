@@ -7,6 +7,6 @@ type=Creature
 subtype=Sliver
 cost={U}{B}
 pt=2/2
-timing=main
+ability=lord all slivers have pay {L2} Return SN to its owner's hand.
 static=all
-requires_groovy_code
+timing=main

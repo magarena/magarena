@@ -139,6 +139,8 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
                         events.add(new MagicUntapEvent(source));
                     } else if (cost.equals("{L1}")) {
                         events.add(new MagicPayLifeEvent(source, 1));
+                    } else if (cost.equals("{L2}")) {
+                        events.add(new MagicPayLifeEvent(source, 2));
                     } else if (cost.equals("{L7}")) {
                         events.add(new MagicPayLifeEvent(source, 7));
                     } else if (cost.equals("{+1/+1}")) {
