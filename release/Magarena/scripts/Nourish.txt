@@ -5,5 +5,5 @@ value=2.500
 rarity=C
 type=Instant
 cost={G}{G}
-ability=PN gains 6 life.
+effect=PN gains 6 life.
 timing=removal
