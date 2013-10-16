@@ -26,6 +26,7 @@ import magic.model.target.MagicExileTargetPicker;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicPumpTargetPicker;
 import magic.model.target.MagicWeakenTargetPicker;
+import magic.model.target.MagicBounceTargetPicker;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.choice.MagicChoice;
 
@@ -211,6 +212,23 @@ public enum MagicRuleEventAction {
             return new MagicWeakenTargetPicker(p, t);
         }
     },
+    Bounce(
+        "return (?<choice>[^\\.]*) to its owner's hand.",
+        MagicTargetHint.None,
+        MagicBounceTargetPicker.create(),
+        MagicTiming.Removal,
+        "Bounce",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTargetPermanent(game,new MagicPermanentAction() {
+                    public void doAction(final MagicPermanent permanent) {
+                        game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
+                    }
+                });
+            }
+        }
+    ),
     ;
 
     private final Pattern pattern;
