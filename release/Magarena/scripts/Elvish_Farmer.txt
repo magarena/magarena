@@ -7,5 +7,6 @@ type=Creature
 subtype=Elf
 cost={1}{G}
 pt=0/2
+ability=pay {SS} PN gains 2 life.
 timing=main
-requires_groovy_code=Thallid;Elvish_Farmer
+requires_groovy_code=Thallid
