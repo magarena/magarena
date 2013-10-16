@@ -4,6 +4,6 @@ image=http://magiccards.info/scans/en/evg/26.jpg
 value=4.440
 rarity=U
 type=Land
-ability=tap add mana {1}
+ability=tap add mana {1};\
+        pay {G},{T} Untap target Elf.
 timing=land
-requires_groovy_code
