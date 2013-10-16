@@ -15,6 +15,7 @@ import magic.model.action.MagicChangeStateAction;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicDrawAction;
 import magic.model.action.MagicChangeTurnPTAction;
+import magic.model.action.MagicChangeLifeAction;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetHint;
@@ -106,8 +107,7 @@ public enum MagicRuleEventAction {
         MagicTargetHint.Negative, 
         new MagicDamageTargetPicker(1), 
         MagicTiming.Removal,
-        "Damage",
-        null
+        "Damage"
     ) {
         public MagicEventAction getAction(final String rule) {
             final Matcher matcher = matched(rule);
@@ -125,7 +125,11 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    Draw("(pn )?draw(s)? (?<amount>[a-z]+) card(s)?.", MagicTiming.Draw, "Draw", null) {
+    Draw(
+        "(pn )?draw(s)? (?<amount>[a-z]+) card(s)?.", 
+        MagicTiming.Draw, 
+        "Draw"
+    ) {
         public MagicEventAction getAction(final String rule) {
             final Matcher matcher = matched(rule);
             final int amount = MagicRuleEventAction.englishNumToInt(matcher.group("amount"));
@@ -137,13 +141,28 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    GainLife(
+        "(pn )?gain(s)? (?<amount>[0-9]+) life.", 
+        MagicTiming.Removal, 
+        "+Life"
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final int amount = Integer.parseInt(matcher.group("amount"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.doAction(new MagicChangeLifeAction(event.getPlayer(), amount));
+                }
+            };
+        }
+    },
     Pump(
         "(?<choice>[^\\.]*) gets (?<pt>[0-9+]+/[0-9+]+) until end of turn.", 
         MagicTargetHint.Positive, 
         MagicPumpTargetPicker.create(), 
         MagicTiming.Pump, 
-        "Pump", 
-        null
+        "Pump"
     ) {
         public MagicEventAction getAction(final String rule) {
             final Matcher matcher = matched(rule);
@@ -165,10 +184,8 @@ public enum MagicRuleEventAction {
     Weaken(
         "(?<choice>[^\\.]*) gets (?<pt>[0-9-]+/[0-9-]+) until end of turn.", 
         MagicTargetHint.Negative, 
-        null, 
         MagicTiming.Removal, 
-        "Weaken", 
-        null
+        "Weaken"
     ) {
         public MagicEventAction getAction(final String rule) {
             final Matcher matcher = matched(rule);
@@ -204,9 +221,38 @@ public enum MagicRuleEventAction {
     public final MagicTiming timing;
     public final String description;
     
-    private MagicRuleEventAction(final String aPattern, final MagicTiming aTiming, final String aDescription, final MagicEventAction aAction) {
+    private MagicRuleEventAction(
+            final String aPattern, 
+            final MagicTiming aTiming, 
+            final String aDescription) {
+        this(aPattern, MagicTargetHint.None, MagicDefaultTargetPicker.create(), aTiming, aDescription, MagicEvent.NO_ACTION);
+    }
+    
+    private MagicRuleEventAction(
+            final String aPattern, 
+            final MagicTiming aTiming, 
+            final String aDescription, 
+            final MagicEventAction aAction) {
         this(aPattern, MagicTargetHint.None, MagicDefaultTargetPicker.create(), aTiming, aDescription, aAction);
     }
+    
+    private MagicRuleEventAction(
+            final String aPattern, 
+            final MagicTargetHint aHint, 
+            final MagicTargetPicker<?> aPicker, 
+            final MagicTiming aTiming, 
+            final String aDescription) {
+        this(aPattern, aHint, aPicker, aTiming, aDescription, MagicEvent.NO_ACTION);
+    }
+    
+    private MagicRuleEventAction(
+            final String aPattern, 
+            final MagicTargetHint aHint, 
+            final MagicTiming aTiming, 
+            final String aDescription) {
+        this(aPattern, aHint, MagicDefaultTargetPicker.create(), aTiming, aDescription, MagicEvent.NO_ACTION);
+    }
+
 
     private MagicRuleEventAction(
             final String aPattern, 
