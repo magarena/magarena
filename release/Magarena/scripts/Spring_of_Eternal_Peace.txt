@@ -5,5 +5,5 @@ value=2.500
 rarity=C
 type=Sorcery
 cost={3}{G}{G}
+effect=PN gains 8 life.
 timing=main
-requires_groovy_code
