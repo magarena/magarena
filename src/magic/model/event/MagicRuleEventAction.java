@@ -16,6 +16,8 @@ import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicDrawAction;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.action.MagicChangeLifeAction;
+import magic.model.action.MagicTapAction;
+import magic.model.action.MagicUntapAction;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetHint;
@@ -27,6 +29,7 @@ import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicPumpTargetPicker;
 import magic.model.target.MagicWeakenTargetPicker;
 import magic.model.target.MagicBounceTargetPicker;
+import magic.model.target.MagicTapTargetPicker;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.choice.MagicChoice;
 
@@ -224,6 +227,40 @@ public enum MagicRuleEventAction {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent permanent) {
                         game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
+                    }
+                });
+            }
+        }
+    ),
+    Tap(
+        "tap (?<choice>[^\\.]*).",
+        MagicTargetHint.Negative,
+        MagicTapTargetPicker.Tap,
+        MagicTiming.Tapping,
+        "Tap",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTargetPermanent(game,new MagicPermanentAction() {
+                    public void doAction(final MagicPermanent creature) {
+                        game.doAction(new MagicTapAction(creature,true));
+                    }
+                });
+            }
+        }
+    ),
+    Untap(
+        "untap (?<choice>[^\\.]*).",
+        MagicTargetHint.Positive,
+        MagicTapTargetPicker.Untap,
+        MagicTiming.Tapping,
+        "Untap",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTargetPermanent(game,new MagicPermanentAction() {
+                    public void doAction(final MagicPermanent gate) {
+                        game.doAction(new MagicUntapAction(gate));
                     }
                 });
             }
