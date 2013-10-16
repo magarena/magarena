@@ -163,6 +163,24 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    PumpSelf(
+        "sn gets (?<pt>[0-9+]+/[0-9+]+) until end of turn.", 
+        MagicTiming.Pump, 
+        "Pump"
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final String[] pt = matcher.group("pt").replace("+","").split("/");
+            final int power = Integer.parseInt(pt[0]);
+            final int toughness = Integer.parseInt(pt[1]);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),power,toughness));
+                }
+            };
+        }
+    },
     Pump(
         "(?<choice>[^\\.]*) gets (?<pt>[0-9+]+/[0-9+]+) until end of turn.", 
         MagicTargetHint.Positive, 
@@ -187,26 +205,8 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    PumpSelf(
-        "SN gets (?<pt>[0-9+]+/[0-9+]+) until end of turn.", 
-        MagicTiming.Pump, 
-        "Pump"
-    ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
-            final String[] pt = matcher.group("pt").replace("+","").split("/");
-            final int power = Integer.parseInt(pt[0]);
-            final int toughness = Integer.parseInt(pt[1]);
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),power,toughness));
-                }
-            };
-        }
-    },
     GrowSelf(
-        "Put a +1/+1 counter on SN.", 
+        "put a \\+1/\\+1 counter on sn.", 
         MagicTiming.Pump, 
         "Pump"
     ) {
