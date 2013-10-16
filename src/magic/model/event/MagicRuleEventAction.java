@@ -138,7 +138,7 @@ public enum MagicRuleEventAction {
     ) {
         public MagicEventAction getAction(final String rule) {
             final Matcher matcher = matched(rule);
-            final int amount = MagicRuleEventAction.englishNumToInt(matcher.group("amount"));
+            final int amount = MagicRuleEventAction.englishToInt(matcher.group("amount"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -206,7 +206,7 @@ public enum MagicRuleEventAction {
         }
     },
     GrowSelf(
-        "put a \\+1/\\+1 counter on sn.", 
+        "put a (?<type>[^\\.]*) counter on sn.", 
         MagicTiming.Pump, 
         "Pump"
     ) {
@@ -214,6 +214,8 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final Matcher matcher = matched(rule);
+                    final MagicCounterType counterType = englishToCounter(matcher.group("type"));
                     game.doAction(new MagicChangeCountersAction(
                         event.getPermanent(),
                         MagicCounterType.PlusOne,
@@ -412,8 +414,16 @@ public enum MagicRuleEventAction {
         }
         return matcher;
     }
+    
+    public static MagicCounterType englishToCounter(String counter) {
+        switch (counter) {
+            case "+1/+1": return MagicCounterType.PlusOne;
+            case "charge": return MagicCounterType.Charge;
+            default: throw new RuntimeException("Unknown type of counter: " + counter);
+        }
+    }
 
-    public static int englishNumToInt(String num) {
+    public static int englishToInt(String num) {
         switch (num) {
             case "a": return 1;
             case "two": return 2;
@@ -422,7 +432,7 @@ public enum MagicRuleEventAction {
             case "five" : return 5;
             case "six" : return 6;
             case "seven" : return 7;
-            default: throw new RuntimeException("Unknown word " + num);
+            default: throw new RuntimeException("Unknown count: " + num);
         }
     }
 }
