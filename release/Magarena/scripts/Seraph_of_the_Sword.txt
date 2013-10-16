@@ -1,0 +1,12 @@
+name=Seraph of the Sword
+url=http://magiccards.info/m14/en/31.html
+image=http://magiccards.info/scans/en/m14/31.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Angel
+cost={3}{W}
+pt=3/3
+timing=main
+ability=flying
+requires_groovy_code
