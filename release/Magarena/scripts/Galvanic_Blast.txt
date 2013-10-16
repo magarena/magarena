@@ -1,0 +1,11 @@
+name=Galvanic Blast
+url=http://magiccards.info/som/en/91.html
+image=http://magiccards.info/scans/en/som/91.jpg
+value=4.304
+removal=3
+rarity=C
+type=Instant
+cost={R}
+timing=removal
+requires_groovy_code
+

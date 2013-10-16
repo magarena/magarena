@@ -1,0 +1,12 @@
+name=Jor Kadeen, the Prevailer
+url=http://magiccards.info/nph/en/128.html
+image=http://magiccards.info/scans/en/nph/128.jpg
+value=3.892
+rarity=R
+type=Legendary,Creature
+subtype=Human,Warrior
+ability=first strike
+cost={3}{R}{W}
+pt=5/4
+timing=main
+requires_groovy_code

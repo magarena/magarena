@@ -1,0 +1,10 @@
+name=Rusted Relic
+url=http://magiccards.info/som/en/199.html
+image=http://magiccards.info/scans/en/som/199.jpg
+value=3.269
+rarity=U
+type=Artifact
+cost={4}
+timing=artifact
+requires_groovy_code
+

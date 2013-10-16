@@ -1,0 +1,12 @@
+name=Archangel of Thune
+url=http://magiccards.info/m14/en/5.html
+image=http://magiccards.info/scans/en/m14/5.jpg
+value=4.389
+rarity=M
+type=Creature
+subtype=Angel
+cost={3}{W}{W}
+pt=3/4
+timing=main
+ability=flying;lifelink
+requires_groovy_code

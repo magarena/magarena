@@ -1,0 +1,9 @@
+name=Dispatch
+url=http://magiccards.info/nph/en/7.html
+image=http://magiccards.info/scans/en/nph/7.jpg
+value=3.968
+rarity=U
+type=Instant
+cost={W}
+timing=tapping
+requires_groovy_code

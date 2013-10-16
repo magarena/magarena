@@ -1,0 +1,9 @@
+name=Mirran Mettle
+url=http://magiccards.info/mbs/en/84.html
+image=http://magiccards.info/scans/en/mbs/84.jpg
+value=3.056
+rarity=C
+type=Instant
+cost={G}
+timing=pump
+requires_groovy_code
