@@ -6,5 +6,5 @@ rarity=C
 type=Instant
 cost={U}
 ability=replicate {U}
+effect=Tap target permanent.
 timing=tapping
-requires_groovy_code
