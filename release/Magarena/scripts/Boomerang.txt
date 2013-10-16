@@ -5,5 +5,5 @@ value=4.346
 rarity=C
 type=Instant
 cost={U}{U}
+effect=Return target permanent to its owner's hand.
 timing=removal
-requires_groovy_code
