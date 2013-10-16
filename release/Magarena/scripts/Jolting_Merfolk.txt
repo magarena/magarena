@@ -7,6 +7,6 @@ type=Creature
 subtype=Merfolk
 cost={2}{U}{U}
 pt=2/2
-ability=fading 4
+ability=fading 4;\
+        pay {C} Tap target creature.
 timing=main
-requires_groovy_code
