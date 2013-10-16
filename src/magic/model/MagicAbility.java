@@ -92,6 +92,7 @@ public enum MagicAbility {
 
     AttacksEachTurnIfAble("attacks each turn if able",-10),
     CannotBlock("can't block",-50),
+    CannotAttack("can't attack",-50),
     CannotAttackOrBlock("can't attack or block",-200),
     CannotBlockWithoutFlying("can't block creatures without flying",-40),
     CannotBeBlockedByFlying("can't be blocked by creatures with flying",20),

@@ -841,6 +841,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     public boolean canAttack() {
         if (!isCreature() ||
             !canTap() ||
+            hasAbility(MagicAbility.CannotAttack) ||
             hasState(MagicPermanentState.ExcludeFromCombat) ||
             hasState(MagicPermanentState.CannotAttack)) {
             return false;
