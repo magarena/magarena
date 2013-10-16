@@ -5,6 +5,7 @@ import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicDamage;
+import magic.model.MagicCounterType;
 import magic.model.action.MagicCardOnStackAction;
 import magic.model.action.MagicCounterItemOnStackAction;
 import magic.model.action.MagicDestroyAction;
@@ -18,6 +19,7 @@ import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.action.MagicTapAction;
 import magic.model.action.MagicUntapAction;
+import magic.model.action.MagicChangeCountersAction;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetHint;
@@ -199,6 +201,25 @@ public enum MagicRuleEventAction {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),power,toughness));
+                }
+            };
+        }
+    },
+    GrowSelf(
+        "Put a +1/+1 counter on SN.", 
+        MagicTiming.Pump, 
+        "Pump"
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.doAction(new MagicChangeCountersAction(
+                        event.getPermanent(),
+                        MagicCounterType.PlusOne,
+                        1,
+                        true
+                    ));
                 }
             };
         }
