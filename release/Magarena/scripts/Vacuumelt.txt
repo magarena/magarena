@@ -7,5 +7,5 @@ rarity=U
 type=Sorcery
 cost={2}{U}
 ability=replicate {2}{U}
+effect=Return target creature to its owner's hand.
 timing=removal
-requires_groovy_code=Unsummon

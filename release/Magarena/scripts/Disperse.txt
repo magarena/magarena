@@ -5,5 +5,5 @@ value=3.920
 rarity=C
 type=Instant
 cost={1}{U}
+effect=Return target nonland permanent to its owner's hand.
 timing=removal
-requires_groovy_code

@@ -8,6 +8,6 @@ type=Creature
 subtype=Goblin,Warrior
 cost={1}{R}
 pt=2/2
-ability=echo {3}{R}
+ability=echo {3}{R};\
+        enters effect Return target creature an opponent controls to its owner's hand.
 timing=main
-requires_groovy_code

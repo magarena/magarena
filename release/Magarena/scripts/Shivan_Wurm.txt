@@ -7,6 +7,6 @@ type=Creature
 subtype=Wurm
 cost={3}{R}{G}
 pt=7/7
-ability=trample
+ability=trample;\
+        enters effect Return a red or green creature you control to its owner's hand.
 timing=main
-requires_groovy_code

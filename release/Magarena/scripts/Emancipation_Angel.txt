@@ -8,6 +8,6 @@ type=Creature
 subtype=Angel
 cost={1}{W}{W}
 pt=3/3
-ability=flying
+ability=flying;\
+        enters effect Return a permanent you control to its owner's hand.
 timing=main
-requires_groovy_code
