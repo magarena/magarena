@@ -5,5 +5,5 @@ value=1.353
 rarity=C
 type=Instant
 cost={2}{W}{W}
+effect=PN gains 7 life.
 timing=draw
-requires_groovy_code
