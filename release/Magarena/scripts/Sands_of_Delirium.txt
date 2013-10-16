@@ -1,0 +1,9 @@
+name=Sands of Delirium
+url=http://magiccards.info/m13/en/216.html
+image=http://magiccards.info/scans/en/m13/216.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={3}
+timing=artifact
+requires_groovy_code
