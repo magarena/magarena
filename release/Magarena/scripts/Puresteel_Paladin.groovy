@@ -6,14 +6,14 @@ def FreeAttach = new MagicPermanentActivation(
 ) {
 
     @Override
-	public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
-		return ZeroEquip.getCostEvent(source);
-	}
+    public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        return ZeroEquip.getCostEvent(source);
+    }
 
-	@Override
-	public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-		return ZeroEquip.getPermanentEvent(source, payedCost);
-	} 
+    @Override
+    public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+        return ZeroEquip.getPermanentEvent(source, payedCost);
+    } 
 };
 def EQUIPMENT_YOU_CONTROL = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
@@ -44,15 +44,15 @@ def EQUIPMENT_YOU_CONTROL = new MagicPermanentFilterImpl() {
             }
         }
     },
-	new MagicStatic(
+    new MagicStatic(
         MagicLayer.Ability,
         EQUIPMENT_YOU_CONTROL
     ) {
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
             if (MagicCondition.METALCRAFT_CONDITION.accept(permanent)) {
-				permanent.addAbility(FreeAttach);
-			}
+                permanent.addAbility(FreeAttach);
+            }
         }
     }
 ]

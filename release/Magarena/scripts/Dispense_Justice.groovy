@@ -7,7 +7,7 @@
                 MagicTargetChoice.NEG_TARGET_PLAYER,
                 this,
                 "Target player\$ sacrifices a creature. " +
-				"If you control three or more artifacts, he or she sacrifices two creatures instead."
+                "If you control three or more artifacts, he or she sacrifices two creatures instead."
             );
         }
         @Override
@@ -21,10 +21,10 @@
                     ));
                     if (MagicCondition.METALCRAFT_CONDITION.accept(event.getSource())) {
                         game.addEvent(new MagicSacrificePermanentEvent(
-							event.getSource(),
-							player,
-							MagicTargetChoice.POS_TARGET_ATTACKING_CREATURE
-						));
+                            event.getSource(),
+                            player,
+                            MagicTargetChoice.POS_TARGET_ATTACKING_CREATURE
+                        ));
                     }
                 }
             });
