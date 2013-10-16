@@ -5,5 +5,5 @@ value=3.866
 rarity=C
 type=Enchantment
 cost={U}
+ability=pay {U}{U} Tap target creature without flying.
 timing=enchantment
-requires_groovy_code
