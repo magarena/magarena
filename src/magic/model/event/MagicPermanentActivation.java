@@ -122,7 +122,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
                         events.add(new MagicSacrificeEvent(source));
                     } else if (cost.equals("{SA}")) {
                         events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_ARTIFACT));
-                    } else if (cost.equals("{SC}")) {
+                    } else if (cost.equals("Sacrifice a creature")) {
                         events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_CREATURE));
                     } else if (cost.equals("{SG}")) {
                         events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_GOBLIN));
