@@ -15,14 +15,15 @@ public class TokenCardDefinitions {
     }
 
     public static MagicCardDefinition get(final String name) {
-        if (tokensMap.containsKey(name)) {
-            return tokensMap.get(name);
+        final String key = name.toLowerCase();
+        if (tokensMap.containsKey(key)) {
+            return tokensMap.get(key);
         } else {
             throw new RuntimeException("token not found: " + name);
         }
     }
 
     public static void add(final MagicCardDefinition token) {
-        tokensMap.put(token.getFullName(), token);
+        tokensMap.put(token.getFullName().toLowerCase(), token);
     }
 }
