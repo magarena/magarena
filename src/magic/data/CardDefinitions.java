@@ -128,7 +128,7 @@ public class CardDefinitions {
         }
     }
 
-    private static String getCanonicalName(String fullName) {
+    public static String getCanonicalName(String fullName) {
         return fullName.replaceAll("[^A-Za-z0-9]", "_");
     }
 
