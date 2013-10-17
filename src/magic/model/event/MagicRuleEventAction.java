@@ -218,7 +218,7 @@ public enum MagicRuleEventAction {
                     final MagicCounterType counterType = englishToCounter(matcher.group("type"));
                     game.doAction(new MagicChangeCountersAction(
                         event.getPermanent(),
-                        MagicCounterType.PlusOne,
+                        counterType,
                         1,
                         true
                     ));
