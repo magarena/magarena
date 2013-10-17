@@ -87,6 +87,8 @@ import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 import java.util.EnumSet;
 import java.util.Set;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public enum MagicAbility {
 
@@ -811,7 +813,7 @@ public enum MagicAbility {
                     card.add(MagicStatic.genPTStatic(filter, power, toughness));
                 }
             } else {
-                final MagicAbilityList abilityList = MagicAbility.getAbilityList(tokens[1].split(", "));
+                final MagicAbilityList abilityList = MagicAbility.getAbilityList(tokens[1]);
                 if (other) {
                     card.add(MagicStatic.genABStaticOther(filter, abilityList));
                 } else {
@@ -850,7 +852,7 @@ public enum MagicAbility {
     public static final Set<MagicAbility> PROTECTION_FLAGS = EnumSet.range(ProtectionFromBlack, ProtectionFromZombies);
     
     public static final Set<MagicAbility> LANDWALK_FLAGS = EnumSet.range(Plainswalk, Forestwalk);
-    
+                
     private final String name;
     private final int score;
 
@@ -903,10 +905,22 @@ public enum MagicAbility {
             return match;
         }
     }
-
+    
     public static MagicAbilityList getAbilityList(final String[] names) {
         final MagicAbilityList abilityList = new MagicAbilityList();
         for (final String name : names) {
+            getAbility(name).addAbility(abilityList, name);
+        }
+        return abilityList;
+    }
+
+    private static final Pattern SUB_ABILITY_LIST = Pattern.compile("\"([^\"]*)\"|([A-Za-z][^,]*)");
+    
+    public static MagicAbilityList getAbilityList(final String names) {
+        final MagicAbilityList abilityList = new MagicAbilityList();
+        final Matcher m = SUB_ABILITY_LIST.matcher(names);
+        while (m.find()) {
+            final String name = m.group(1) != null ? m.group(1) : m.group(2);
             getAbility(name).addAbility(abilityList, name);
         }
         return abilityList;
