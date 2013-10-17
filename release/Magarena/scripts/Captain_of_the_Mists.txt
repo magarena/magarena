@@ -7,5 +7,7 @@ type=Creature
 subtype=Human,Wizard
 cost={2}{U}
 pt=2/3
+ability=pay {1}{U}, {T}: Tap target permanent.;\
+        pay {1}{U}, {T}: Untap target permanent.
 timing=main
 requires_groovy_code

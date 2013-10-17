@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Samurai,Archer
 cost={3}{W}
 pt=1/1
-ability=bushido 1;pay {T} SN deals 1 damage to target attacking or blocking Spirit.
+ability=bushido 1;pay {T}: SN deals 1 damage to target attacking or blocking Spirit.
 timing=main

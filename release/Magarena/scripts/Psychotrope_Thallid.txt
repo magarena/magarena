@@ -7,6 +7,6 @@ type=Creature
 subtype=Fungus
 cost={2}{G}
 pt=1/1
-ability=pay {1},{SS} PN draws a card.
+ability=pay {1},{SS}: PN draws a card.
 timing=main
 requires_groovy_code=Thallid

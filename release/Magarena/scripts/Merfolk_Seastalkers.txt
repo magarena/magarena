@@ -8,5 +8,5 @@ subtype=Merfolk,Scout
 cost={3}{U}
 pt=2/3
 ability=islandwalk;\
-        pay {2}{U} Tap target creature without flying.
+        pay {2}{U}: Tap target creature without flying.
 timing=main

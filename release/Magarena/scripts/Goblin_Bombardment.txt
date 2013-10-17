@@ -5,5 +5,5 @@ value=4.218
 rarity=U
 type=Enchantment
 cost={1}{R}
-ability=pay {SC} SN deals 1 damage to target creature or player.
+ability=pay {SC}: SN deals 1 damage to target creature or player.
 timing=enchantment

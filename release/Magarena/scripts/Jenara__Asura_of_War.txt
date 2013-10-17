@@ -8,5 +8,5 @@ subtype=Angel
 cost={G}{W}{U}
 pt=3/3
 ability=flying;\
-        pay {1}{W} Put a +1/+1 counter on SN.
+        pay {1}{W}: Put a +1/+1 counter on SN.
 timing=main

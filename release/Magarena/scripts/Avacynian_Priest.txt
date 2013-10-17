@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Cleric
 cost={1}{W}
 pt=1/2
-ability=pay {1},{T} Tap target non-Human creature.
+ability=pay {1},{T}: Tap target non-Human creature.
 timing=main

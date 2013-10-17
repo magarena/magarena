@@ -5,5 +5,5 @@ value=4.645
 rarity=R
 type=Land
 ability=tap add mana {1};\
-        pay {T},{S} Destroy target land.
+        pay {T},{S}: Destroy target land.
 timing=land

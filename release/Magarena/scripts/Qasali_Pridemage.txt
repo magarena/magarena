@@ -8,5 +8,5 @@ subtype=Cat,Wizard
 cost={G}{W}
 pt=2/2
 ability=exalted;\
-        pay {1},{S} Destroy target artifact or enchantment.
+        pay {1},{S}: Destroy target artifact or enchantment.
 timing=main

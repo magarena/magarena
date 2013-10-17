@@ -7,6 +7,6 @@ type=Creature
 subtype=Sliver
 cost={B}{G}
 pt=2/2
-ability=lord all slivers have pay {S} PN gains 3 life.
+ability=lord all slivers have pay {S}: PN gains 3 life.
 static=all
 timing=main

@@ -95,10 +95,13 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
     public void change(final MagicCardDefinition cdef) {
         cdef.addAct(this);
     }
+    
+    private static final String COLON = "\\s*:\\s*";
+    private static final String COMMA = "\\s*,\\s*";
 
     public static final MagicPermanentActivation create(final String act) {
-        final String[] token = act.split(" ", 2);
-        final String[] costs = token[0].split(",");
+        final String[] token = act.split(COLON);
+        final String[] costs = token[0].split(COMMA);
         final String text = token[1];
 
         final String effect = text.toLowerCase();

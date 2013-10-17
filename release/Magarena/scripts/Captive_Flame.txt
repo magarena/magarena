@@ -5,5 +5,5 @@ value=3.622
 rarity=U
 type=Enchantment
 cost={2}{R}
-ability=pay {R} Target creature gets +1/+0 until end of turn.
+ability=pay {R}: Target creature gets +1/+0 until end of turn.
 timing=enchantment

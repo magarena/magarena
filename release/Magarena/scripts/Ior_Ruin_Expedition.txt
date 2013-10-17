@@ -7,4 +7,4 @@ type=Enchantment
 cost={1}{U}
 timing=enchantment
 ability=landfall quest;\
-        pay {C3},{S} PN draws two cards.
+        pay {C3},{S}: PN draws two cards.

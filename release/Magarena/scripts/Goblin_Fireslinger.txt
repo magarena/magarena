@@ -7,5 +7,5 @@ type=Creature
 subtype=Goblin,Warrior
 cost={R}
 pt=1/1
-ability=pay {T} SN deals 1 damage to target player.
+ability=pay {T}: SN deals 1 damage to target player.
 timing=main
