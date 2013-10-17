@@ -62,8 +62,15 @@ public class MagicManaCost {
         final int[] convertedArr = {0};
 
         final Matcher matcher = PATTERN.matcher(costText);
+        int matched = 0;
         while (matcher.find()) {
-            addType(matcher.group(), XCountArr, convertedArr);
+            final String group = matcher.group();
+            matched += group.length();
+            addType(group, XCountArr, convertedArr);
+        }
+
+        if (matched != costText.length()) {
+            throw new RuntimeException("Unknown mana cost: " + aCostText);
         }
 
         XCount = XCountArr[0];
