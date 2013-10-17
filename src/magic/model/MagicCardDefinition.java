@@ -3,6 +3,7 @@ package magic.model;
 import magic.ai.ArtificialScoringSystem;
 import magic.data.IconImages;
 import magic.data.CardProperty;
+import magic.data.CardDefinitions;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventSource;
 import magic.model.event.MagicPayManaCostEvent;
@@ -178,7 +179,9 @@ public class MagicCardDefinition implements MagicAbilityStore {
     }
 
     public String getImageName() {
-        return fullName;
+        return token ?
+            CardDefinitions.getCanonicalName(fullName) :
+            fullName;
     }
 
     public void setImageCount(final int count) {
