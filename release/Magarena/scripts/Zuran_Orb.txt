@@ -5,5 +5,5 @@ value=4.506
 rarity=U
 type=Artifact
 cost={0}
-ability=pay {SL}: PN gains 2 life.
+ability=pay Sacrifice a land: PN gains 2 life.
 timing=main
