@@ -1,0 +1,11 @@
+name=Chronomaton
+url=http://magiccards.info/m13/en/201.html
+image=http://magiccards.info/scans/en/m13/201.jpg
+value=2.500
+rarity=U
+type=Artifact,Creature
+subtype=Golem
+cost={1}
+pt=1/1
+timing=main
+requires_groovy_code
