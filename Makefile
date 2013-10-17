@@ -461,8 +461,7 @@ checks: \
 	check_url \
 	check_image \
 	check_meta \
-	check_rarity \
-	check_tokens
+	check_rarity
 
 
 # check rarity using meta.xml
