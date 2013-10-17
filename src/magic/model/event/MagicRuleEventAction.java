@@ -20,6 +20,7 @@ import magic.model.action.MagicChangeLifeAction;
 import magic.model.action.MagicTapAction;
 import magic.model.action.MagicUntapAction;
 import magic.model.action.MagicChangeCountersAction;
+import magic.model.action.MagicPlayTokenAction;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetHint;
@@ -34,6 +35,7 @@ import magic.model.target.MagicBounceTargetPicker;
 import magic.model.target.MagicTapTargetPicker;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.choice.MagicChoice;
+import magic.data.TokenCardDefinitions;
 
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
@@ -318,6 +320,24 @@ public enum MagicRuleEventAction {
             }
         }
     ),
+    Token(
+        "pn puts a(n)? (?<name>[^\\.]*) onto the battlefield.",
+        MagicTiming.Token,
+        "Token"
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.doAction(new MagicPlayTokenAction(
+                        event.getPlayer(),
+                        TokenCardDefinitions.get(matcher.group("name"))
+                    ));
+                }
+            };
+        }
+    },
     ;
 
     private final Pattern pattern;
