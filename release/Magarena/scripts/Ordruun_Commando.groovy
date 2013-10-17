@@ -14,7 +14,7 @@
             return new MagicEvent(
                 source,
                 this,
-                "Prevent the next damage that would be dealt to SN this turn"
+                "Prevent the next 1 damage that would be dealt to SN this turn"
             );
         }
 
