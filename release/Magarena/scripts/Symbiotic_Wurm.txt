@@ -7,5 +7,5 @@ type=Creature
 subtype=Wurm
 cost={5}{G}{G}{G}
 pt=7/7
+ability=dies effect PN puts seven 1/1 green Insect creature tokens onto the battlefield.
 timing=main
-requires_groovy_code

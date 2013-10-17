@@ -20,7 +20,7 @@ import magic.model.action.MagicChangeLifeAction;
 import magic.model.action.MagicTapAction;
 import magic.model.action.MagicUntapAction;
 import magic.model.action.MagicChangeCountersAction;
-import magic.model.action.MagicPlayTokenAction;
+import magic.model.action.MagicPlayTokensAction;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetHint;
@@ -321,18 +321,20 @@ public enum MagicRuleEventAction {
         }
     ),
     Token(
-        "pn puts a(n)? (?<name>[^\\.]*) onto the battlefield.",
+        "pn puts (?<amount>[a-z]+) (?<name>[^\\.]*) onto the battlefield.",
         MagicTiming.Token,
         "Token"
     ) {
         public MagicEventAction getAction(final String rule) {
             final Matcher matcher = matched(rule);
+            final int amount = englishToInt(matcher.group("amount"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicPlayTokenAction(
+                    game.doAction(new MagicPlayTokensAction(
                         event.getPlayer(),
-                        TokenCardDefinitions.get(matcher.group("name"))
+                        TokenCardDefinitions.get(matcher.group("name")),
+                        amount
                     ));
                 }
             };
@@ -447,6 +449,7 @@ public enum MagicRuleEventAction {
     public static int englishToInt(String num) {
         switch (num) {
             case "a": return 1;
+            case "an": return 1;
             case "two": return 2;
             case "three" : return 3;
             case "four" : return 4;
