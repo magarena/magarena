@@ -18,7 +18,7 @@ public class TokenCardDefinitions {
         if (tokensMap.containsKey(name)) {
             return tokensMap.get(name);
         } else {
-            throw new RuntimeException("token " + name + " not found");
+            throw new RuntimeException("token not found: " + name);
         }
     }
 
