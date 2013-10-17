@@ -116,7 +116,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
         ) {
             @Override
             public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
-                List<MagicEvent> events = new LinkedList<MagicEvent>();
+                final List<MagicEvent> events = new LinkedList<MagicEvent>();
                 for (String cost : costs) {
                     if (cost.equals("{S}")) {
                         events.add(new MagicSacrificeEvent(source));
@@ -126,7 +126,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
                         events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_CREATURE));
                     } else if (cost.equals("Sacrifice a Goblin")) {
                         events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_GOBLIN));
-                    } else if (cost.equals("Sacrifice a Saproling}")) {
+                    } else if (cost.equals("Sacrifice a Saproling")) {
                         events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_SAPROLING));
                     } else if (cost.equals("Sacrifice a Beast")) {
                         events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_BEAST));
@@ -140,11 +140,11 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
                         events.add(new MagicTapEvent(source));
                     } else if (cost.equals("{Q}")) {
                         events.add(new MagicUntapEvent(source));
-                    } else if (cost.equals("{L1}")) {
+                    } else if (cost.equals("Pay 1 life")) {
                         events.add(new MagicPayLifeEvent(source, 1));
-                    } else if (cost.equals("{L2}")) {
+                    } else if (cost.equals("Pay 2 life")) {
                         events.add(new MagicPayLifeEvent(source, 2));
-                    } else if (cost.equals("{L7}")) {
+                    } else if (cost.equals("Pay 7 life")) {
                         events.add(new MagicPayLifeEvent(source, 7));
                     } else if (cost.equals("{+1/+1}")) {
                         events.add(new MagicRemoveCounterEvent(source,MagicCounterType.PlusOne,1));
