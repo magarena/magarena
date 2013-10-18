@@ -116,47 +116,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
         ) {
             @Override
             public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
-                final List<MagicEvent> events = new LinkedList<MagicEvent>();
-                for (String cost : costs) {
-                    if (cost.equals("{S}")) {
-                        events.add(new MagicSacrificeEvent(source));
-                    } else if (cost.equals("Sacrifice an artifact")) {
-                        events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_ARTIFACT));
-                    } else if (cost.equals("Sacrifice a creature")) {
-                        events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_CREATURE));
-                    } else if (cost.equals("Sacrifice a Goblin")) {
-                        events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_GOBLIN));
-                    } else if (cost.equals("Sacrifice a Saproling")) {
-                        events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_SAPROLING));
-                    } else if (cost.equals("Sacrifice a Beast")) {
-                        events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_BEAST));
-                    } else if (cost.equals("Sacrifice a land")) {
-                        events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_LAND));
-                    } else if (cost.equals("Discard a card")) {
-                        events.add(new MagicDiscardEvent(source));
-                    } else if (cost.equals("{E}")) {
-                        events.add(new MagicExileEvent(source));
-                    } else if (cost.equals("{T}")) {
-                        events.add(new MagicTapEvent(source));
-                    } else if (cost.equals("{Q}")) {
-                        events.add(new MagicUntapEvent(source));
-                    } else if (cost.equals("Pay 1 life")) {
-                        events.add(new MagicPayLifeEvent(source, 1));
-                    } else if (cost.equals("Pay 2 life")) {
-                        events.add(new MagicPayLifeEvent(source, 2));
-                    } else if (cost.equals("Pay 7 life")) {
-                        events.add(new MagicPayLifeEvent(source, 7));
-                    } else if (cost.equals("{+1/+1}")) {
-                        events.add(new MagicRemoveCounterEvent(source,MagicCounterType.PlusOne,1));
-                    } else if (cost.equals("{C}")) {
-                        events.add(new MagicRemoveCounterEvent(source,MagicCounterType.Charge,1));
-                    } else if (cost.equals("{C3}")) {
-                        events.add(new MagicRemoveCounterEvent(source,MagicCounterType.Charge,3));
-                    } else {
-                        events.add(new MagicPayManaCostEvent(source, MagicManaCost.create(cost)));
-                    }
-                }
-                return events;
+                return englishToCostEvents(costs, source);
             }
        
             @Override
@@ -170,6 +130,50 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
                 );
             }
         };
+    }
+    
+    private static final List<MagicEvent> englishToCostEvents(final String[] costs, final MagicPermanent source) {
+        final List<MagicEvent> events = new LinkedList<MagicEvent>();
+        for (String cost : costs) {
+            if (cost.equals("{S}")) {
+                events.add(new MagicSacrificeEvent(source));
+            } else if (cost.equals("Sacrifice an artifact")) {
+                events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_ARTIFACT));
+            } else if (cost.equals("Sacrifice a creature")) {
+                events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_CREATURE));
+            } else if (cost.equals("Sacrifice a Goblin")) {
+                events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_GOBLIN));
+            } else if (cost.equals("Sacrifice a Saproling")) {
+                events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_SAPROLING));
+            } else if (cost.equals("Sacrifice a Beast")) {
+                events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_BEAST));
+            } else if (cost.equals("Sacrifice a land")) {
+                events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_LAND));
+            } else if (cost.equals("Discard a card")) {
+                events.add(new MagicDiscardEvent(source));
+            } else if (cost.equals("{E}")) {
+                events.add(new MagicExileEvent(source));
+            } else if (cost.equals("{T}")) {
+                events.add(new MagicTapEvent(source));
+            } else if (cost.equals("{Q}")) {
+                events.add(new MagicUntapEvent(source));
+            } else if (cost.equals("Pay 1 life")) {
+                events.add(new MagicPayLifeEvent(source, 1));
+            } else if (cost.equals("Pay 2 life")) {
+                events.add(new MagicPayLifeEvent(source, 2));
+            } else if (cost.equals("Pay 7 life")) {
+                events.add(new MagicPayLifeEvent(source, 7));
+            } else if (cost.equals("{+1/+1}")) {
+                events.add(new MagicRemoveCounterEvent(source,MagicCounterType.PlusOne,1));
+            } else if (cost.equals("{C}")) {
+                events.add(new MagicRemoveCounterEvent(source,MagicCounterType.Charge,1));
+            } else if (cost.equals("{C3}")) {
+                events.add(new MagicRemoveCounterEvent(source,MagicCounterType.Charge,3));
+            } else {
+                events.add(new MagicPayManaCostEvent(source, MagicManaCost.create(cost)));
+            }
+        }
+        return events;
     }
 
     public static final MagicPermanentActivation TapAddCharge = new MagicPermanentActivation(
