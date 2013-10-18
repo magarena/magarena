@@ -55,23 +55,6 @@ public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPa
         };
     }
 
-    public static final MagicWhenComesIntoPlayTrigger PutGolemOntoTheBattlefield = new MagicWhenComesIntoPlayTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPayedCost payedCost) {
-            return new MagicEvent(
-                permanent,
-                this,
-                "PN puts a 3/3 colorless Golem artifact creature token onto the battlefield."
-            );
-        }
-
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPlayer player=event.getPlayer();
-            game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Golem3")));
-        }
-    };
-
     public static final MagicWhenComesIntoPlayTrigger ChooseOpponent = new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {

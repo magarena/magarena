@@ -1,4 +1,4 @@
-name=Golem3
+name=3/3 colorless Golem artifact creature token
 token=Golem
 image=http://magiccards.info/extras/token/scars-of-mirrodin/golem.jpg
 value=3

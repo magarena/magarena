@@ -1,5 +1,4 @@
 [
-    MagicWhenComesIntoPlayTrigger.PutGolemOntoTheBattlefield,
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Pump,true),
         "Regen"

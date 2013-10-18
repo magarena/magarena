@@ -5,5 +5,6 @@ value=3.268
 rarity=C
 type=Artifact
 cost={3}
+ability=pay {C3}: PN puts a 3/3 colorless Golem artifact creature token onto the battlefield.
 timing=artifact
 requires_groovy_code

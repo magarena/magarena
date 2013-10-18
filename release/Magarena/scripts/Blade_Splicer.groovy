@@ -1,3 +1,0 @@
-[
-    MagicWhenComesIntoPlayTrigger.PutGolemOntoTheBattlefield
-]
