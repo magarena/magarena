@@ -7,6 +7,6 @@ type=Legendary,Creature
 subtype=Goblin
 cost={2}{R}
 pt=1/1
-ability=haste
+ability=haste;\
+        dies effect PN puts a legendary 5/5 colorless Goblin Golem artifact creature token named Tuktuk the Returned onto the battlefield.
 timing=fmain
-requires_groovy_code

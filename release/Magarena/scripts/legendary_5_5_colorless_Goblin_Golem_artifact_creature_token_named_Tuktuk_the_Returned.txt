@@ -1,4 +1,4 @@
-name=Tuktuk the Returned
+name=legendary 5/5 colorless Goblin Golem artifact creature token named Tuktuk the Returned
 token=Tuktuk the Returned
 image=http://magiccards.info/extras/token/rise-of-the-eldrazi/tuktuk-the-returned.jpg
 value=4
