@@ -102,13 +102,10 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
     public static final MagicPermanentActivation create(final String act) {
         final String[] token = act.split(COLON);
         final String[] costs = token[0].split(COMMA);
-        final String text = token[1];
-
-        final String effect = text.toLowerCase();
-        final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
-        final MagicEventAction action  = ruleAction.getAction(effect);
-        final MagicTargetPicker<?> picker = ruleAction.getPicker(effect);
-        final MagicChoice choice = ruleAction.getChoice(effect);
+        final String rule = token[1];
+        
+        final MagicSourceEvent sourceEvent = MagicRuleEventAction.create(rule);
+        final MagicRuleEventAction ruleAction = sourceEvent.getRule();
 
         return new MagicPermanentActivation(
             new MagicActivationHints(ruleAction.timing),
@@ -121,13 +118,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
        
             @Override
             public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
-                return new MagicEvent(
-                    source,
-                    choice,
-                    picker,
-                    action,
-                    text + "$"
-                );
+                return sourceEvent.getEvent(source);
             }
         };
     }

@@ -5,6 +5,7 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicSourceEvent;
 import magic.model.event.MagicEventAction;
 import magic.model.event.MagicRuleEventAction;
 import magic.model.target.MagicTargetPicker;
@@ -29,53 +30,21 @@ public abstract class MagicWhenDiesTrigger extends MagicWhenPutIntoGraveyardTrig
     }
     
     public static MagicWhenDiesTrigger createMay(final String rule) {
-        final String effect = rule.toLowerCase();
-        final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
-        final MagicEventAction action  = ruleAction.getAction(effect);
-        final MagicTargetPicker<?> picker = ruleAction.getPicker(effect);
-        final MagicChoice choice = ruleAction.getChoice(effect);
-
+        final MagicSourceEvent sourceEvent = MagicRuleEventAction.createMay(rule);
         return new MagicWhenDiesTrigger() {
             @Override
             public MagicEvent getEvent(final MagicPermanent permanent) {
-                return new MagicEvent(
-                    permanent,
-                    new MagicMayChoice(choice),
-                    picker,
-                    this,
-                    "PN may$ " + rule + "$"
-                );
-            }
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                if (event.isYes()) {
-                    action.executeEvent(game, event);
-                }
+                return sourceEvent.getEvent(permanent);
             }
         };
     }
 
     public static MagicWhenDiesTrigger create(final String rule) {
-        final String effect = rule.toLowerCase();
-        final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
-        final MagicEventAction action  = ruleAction.getAction(effect);
-        final MagicTargetPicker<?> picker = ruleAction.getPicker(effect);
-        final MagicChoice choice = ruleAction.getChoice(effect);
-
+        final MagicSourceEvent sourceEvent = MagicRuleEventAction.create(rule);
         return new MagicWhenDiesTrigger() {
             @Override
             public MagicEvent getEvent(final MagicPermanent permanent) {
-                return new MagicEvent(
-                    permanent,
-                    choice,
-                    picker,
-                    this,
-                    rule + "$"
-                );
-            }
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                action.executeEvent(game, event);
+                return sourceEvent.getEvent(permanent);
             }
         };
     }

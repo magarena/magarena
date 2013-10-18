@@ -14,28 +14,18 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
     public void change(final MagicCardDefinition cdef) {
         cdef.setEvent(this);
     }
+    
+    @Override
+    public void executeEvent(final MagicGame game, final MagicEvent event) {
+        throw new RuntimeException(getClass() + " did not override executeEvent");
+    }
 
     public static MagicSpellCardEvent create(final String rule) {
-        final String effect = rule.toLowerCase();
-        final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
-        final MagicEventAction action  = ruleAction.getAction(effect);
-        final MagicTargetPicker<?> picker = ruleAction.getPicker(effect);
-        final MagicChoice choice = ruleAction.getChoice(effect);
-
+        final MagicSourceEvent sourceEvent = MagicRuleEventAction.create(rule);
         return new MagicSpellCardEvent() {
             @Override
             public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-                return new MagicEvent(
-                    cardOnStack,
-                    choice,
-                    picker,
-                    this,
-                    rule + "$"
-                );
-            }
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                action.executeEvent(game, event);
+                return sourceEvent.getEvent(cardOnStack);
             }
         };
     }

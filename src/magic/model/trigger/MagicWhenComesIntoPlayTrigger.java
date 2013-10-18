@@ -10,6 +10,7 @@ import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicMayChoice;
 import magic.model.target.MagicTargetPicker;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicSourceEvent;
 import magic.model.event.MagicEventAction;
 import magic.model.event.MagicRuleEventAction;
 import magic.model.action.MagicPlayTokenAction;
@@ -35,53 +36,21 @@ public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPa
     }
     
     public static MagicWhenComesIntoPlayTrigger createMay(final String rule) {
-        final String effect = rule.toLowerCase();
-        final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
-        final MagicEventAction action  = ruleAction.getAction(effect);
-        final MagicTargetPicker<?> picker = ruleAction.getPicker(effect);
-        final MagicChoice choice = ruleAction.getChoice(effect);
-
+        final MagicSourceEvent sourceEvent = MagicRuleEventAction.createMay(rule);
         return new MagicWhenComesIntoPlayTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
-                return new MagicEvent(
-                    permanent,
-                    new MagicMayChoice(choice),
-                    picker,
-                    this,
-                    "PN may$ " + rule + "$"
-                );
-            }
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                if (event.isYes()) {
-                    action.executeEvent(game, event);
-                }
+                return sourceEvent.getEvent(permanent);
             }
         };
     }
 
     public static MagicWhenComesIntoPlayTrigger create(final String rule) {
-        final String effect = rule.toLowerCase();
-        final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
-        final MagicEventAction action  = ruleAction.getAction(effect);
-        final MagicTargetPicker<?> picker = ruleAction.getPicker(effect);
-        final MagicChoice choice = ruleAction.getChoice(effect);
-
+        final MagicSourceEvent sourceEvent = MagicRuleEventAction.create(rule);
         return new MagicWhenComesIntoPlayTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
-                return new MagicEvent(
-                    permanent,
-                    choice,
-                    picker,
-                    this,
-                    rule + "$"
-                );
-            }
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                action.executeEvent(game, event);
+                return sourceEvent.getEvent(permanent);
             }
         };
     }
