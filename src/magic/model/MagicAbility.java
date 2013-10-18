@@ -83,6 +83,7 @@ import magic.model.trigger.MagicLandfallTrigger;
 import magic.model.trigger.MagicCascadeTrigger;
 import magic.model.trigger.MagicWhenTargetedTrigger;
 import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
+import magic.model.trigger.MagicHeroicTrigger;
 
 import java.util.EnumSet;
 import java.util.Set;
@@ -845,6 +846,11 @@ public enum MagicAbility {
     ActivatedAbility("pay", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicPermanentActivation.create(arg));
+        }
+    },
+    HeroicEffect("heroic effect", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            card.add(MagicHeroicTrigger.create(arg));
         }
     },
     None("",0);
