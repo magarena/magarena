@@ -324,7 +324,7 @@ public enum MagicRuleEventAction {
         }
     ),
     TokenSingle(
-        "pn puts a (?<name>[^\\.]*) onto the battlefield.",
+        "pn puts (a|an) (?<name>[^\\.]*) onto the battlefield.",
         MagicTiming.Token,
         "Token"
     ) {
