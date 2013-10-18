@@ -223,7 +223,7 @@ public enum MagicRuleEventAction {
                     game.doAction(new MagicChangeCountersAction(
                         event.getPermanent(),
                         counterType,
-                        1,
+                        amount,
                         true
                     ));
                 }
