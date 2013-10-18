@@ -21,6 +21,7 @@ import magic.model.action.MagicChangeLifeAction;
 import magic.model.action.MagicTapAction;
 import magic.model.action.MagicUntapAction;
 import magic.model.action.MagicChangeCountersAction;
+import magic.model.action.MagicPlayTokenAction;
 import magic.model.action.MagicPlayTokensAction;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTarget;
@@ -322,8 +323,26 @@ public enum MagicRuleEventAction {
             }
         }
     ),
-    Token(
-        "pn puts (?<amount>[a-z]+) (?<name>[^\\.]*) onto the battlefield.",
+    TokenSingle(
+        "pn puts a (?<name>[^\\.]*) onto the battlefield.",
+        MagicTiming.Token,
+        "Token"
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.doAction(new MagicPlayTokenAction(
+                        event.getPlayer(),
+                        TokenCardDefinitions.get(matcher.group("name"))
+                    ));
+                }
+            };
+        }
+    },
+    TokenMany(
+        "pn puts (?<amount>[a-z]+) (?<name>[^\\.]*)s onto the battlefield.",
         MagicTiming.Token,
         "Token"
     ) {
