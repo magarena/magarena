@@ -1,4 +1,4 @@
-name=Wurm6
+name=6/6 black Wurm creature token with trample
 token=Wurm
 image=http://forums.mtgsalvation.com/attachment.php?attachmentid=19960&amp;d=1143667963
 value=4
