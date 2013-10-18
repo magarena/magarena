@@ -209,16 +209,17 @@ public enum MagicRuleEventAction {
         }
     },
     GrowSelf(
-        "put a (?<type>[^\\.]*) counter on sn.", 
+        "put (?<amount>[a-z]+) (?<type>[^\\.]*) counter on sn.", 
         MagicTiming.Pump, 
         "Pump"
     ) {
         public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final int amount = englishToInt(matcher.group("amount"));
+            final MagicCounterType counterType = englishToCounter(matcher.group("type"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final Matcher matcher = matched(rule);
-                    final MagicCounterType counterType = englishToCounter(matcher.group("type"));
                     game.doAction(new MagicChangeCountersAction(
                         event.getPermanent(),
                         counterType,
