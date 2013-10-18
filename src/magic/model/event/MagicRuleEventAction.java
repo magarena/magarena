@@ -209,7 +209,7 @@ public enum MagicRuleEventAction {
         }
     },
     GrowSelf(
-        "put (?<amount>[a-z]+) (?<type>[^\\.]*) counter on sn.", 
+        "put (?<amount>[a-z]+) (?<type>[^\\.]*) counter(s)? on sn.", 
         MagicTiming.Pump, 
         "Pump"
     ) {
