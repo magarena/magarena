@@ -168,6 +168,22 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    LoseLife(
+        "(pn )?lose(s)? (?<amount>[0-9]+) life.", 
+        MagicTiming.Removal, 
+        "-Life"
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final int amount = Integer.parseInt(matcher.group("amount"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.doAction(new MagicChangeLifeAction(event.getPlayer(), -amount));
+                }
+            };
+        }
+    },
     PumpSelf(
         "sn gets (?<pt>[0-9+]+/[0-9+]+) until end of turn.", 
         MagicTiming.Pump, 
