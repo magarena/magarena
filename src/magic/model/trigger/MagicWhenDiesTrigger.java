@@ -34,21 +34,4 @@ public abstract class MagicWhenDiesTrigger extends MagicWhenPutIntoGraveyardTrig
     public boolean accept(final MagicPermanent permanent, final MagicMoveCardAction act) {
         return super.accept(permanent,act) && act.fromLocation == MagicLocationType.Play;
     }
-
-    public static MagicWhenDiesTrigger ReturnToOwnersHand = new MagicWhenDiesTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicMoveCardAction act) {
-            return new MagicEvent(
-                permanent.getCard(),
-                this,
-                "Return SN to its owner's hand."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicCard card = event.getCard();
-            game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-            game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
-        }
-    };
 }

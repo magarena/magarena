@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={1}{U}
 given_ability=flying
-ability=dies return to owner's hand
+ability=dies effect Return SN to its owner's hand.
 timing=aura
 enchant=flying,pos creature

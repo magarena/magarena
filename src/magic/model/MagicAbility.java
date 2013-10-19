@@ -460,12 +460,6 @@ public enum MagicAbility {
             card.add(MagicSpecterTrigger.Random(Type.Any, Player.Opponent, n));
         }
     },
-    DiesReturnToOwnersHand("dies return to owner's hand",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
-            card.add(MagicWhenDiesTrigger.ReturnToOwnersHand);
-        }
-    },
     DamageOpponentDrawCard("damage opponent draw card",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;

@@ -6,4 +6,4 @@ rarity=R
 type=Artifact
 cost={7}
 timing=artifact
-ability=dies return to owner's hand;enters effect Destroy target permanent.
+ability=dies effect Return SN to its owner's hand.;enters effect Destroy target permanent.

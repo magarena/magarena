@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={2}{B}
 given_ability=fear
-ability=dies return to owner's hand
+ability=dies effect Return SN to its owner's hand.
 timing=aura
 enchant=unblockable,pos creature

@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={1}{W}
 given_pt=1/2
-ability=dies return to owner's hand
+ability=dies effect Return SN to its owner's hand.
 timing=aura
 enchant=pump,pos creature

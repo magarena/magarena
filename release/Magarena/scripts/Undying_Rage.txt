@@ -8,6 +8,6 @@ subtype=Aura
 cost={2}{R}
 given_pt=2/2
 given_ability=can't block
-ability=dies return to owner's hand
+ability=dies effect Return SN to its owner's hand.
 timing=aura
 enchant=pump,creature
