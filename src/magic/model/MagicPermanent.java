@@ -73,10 +73,10 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     private int cachedColorFlags;
     private Set<MagicAbility> cachedAbilityFlags;
     private MagicPowerToughness cachedPowerToughness;
-    private final Set<MagicActivation<MagicPermanent>> cachedActivations;
-    private final List<MagicManaActivation> cachedManaActivations;
-    private final List<MagicTrigger<?>> cachedTriggers;
-    private final List<MagicWhenComesIntoPlayTrigger> etbTriggers;
+    private Set<MagicActivation<MagicPermanent>> cachedActivations;
+    private List<MagicManaActivation> cachedManaActivations;
+    private List<MagicTrigger<?>> cachedTriggers;
+    private List<MagicWhenComesIntoPlayTrigger> etbTriggers;
 
     // remember order among blockers (blockedName + id + block order)
     private String blockedName;
@@ -381,14 +381,10 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
                 cachedColorFlags = cardDefinition.getColorFlags();
                 cachedAbilityFlags = cardDefinition.genAbilityFlags();
                 cachedPowerToughness = cardDefinition.genPowerToughness();
-                cachedActivations.clear();
-                cachedActivations.addAll(cardDefinition.getActivations());
-                cachedManaActivations.clear();
-                cachedManaActivations.addAll(cardDefinition.getManaActivations());
-                cachedTriggers.clear();
-                cachedTriggers.addAll(cardDefinition.getTriggers());
-                etbTriggers.clear();
-                etbTriggers.addAll(cardDefinition.getComeIntoPlayTriggers());
+                cachedActivations = new TreeSet<MagicActivation<MagicPermanent>>(cardDefinition.getActivations());
+                cachedManaActivations = new LinkedList<MagicManaActivation>(cardDefinition.getManaActivations());
+                cachedTriggers = new LinkedList<MagicTrigger<?>>(cardDefinition.getTriggers());
+                etbTriggers = new LinkedList<MagicWhenComesIntoPlayTrigger>(cardDefinition.getComeIntoPlayTriggers());
                 break;
             case CDASubtype:
                 cardDefinition.applyCDASubType(getGame(), getController(), cachedSubTypeFlags);
