@@ -1,5 +1,5 @@
 name=Child of Alara
-url=http://magiccards.info/con/en/101.html
+url=http://magiccards.info/cfx/en/101.html
 image=http://magiccards.info/scans/en/cfx/101.jpg
 value=2.500
 rarity=M
@@ -7,6 +7,6 @@ type=Legendary,Creature
 subtype=Avatar
 cost={W}{U}{B}{R}{G}
 pt=6/6
-timing=main
 ability=trample
+timing=main
 requires_groovy_code
