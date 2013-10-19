@@ -23,21 +23,10 @@ public abstract class MagicHeroicTrigger extends MagicWhenTargetedTrigger {
                item.containsInChoiceResults(permanent);
     }
     
-    public static MagicHeroicTrigger createMay(final String rule) {
-        final MagicSourceEvent sourceEvent = MagicRuleEventAction.createMay(rule);
+    public static final MagicHeroicTrigger create(final MagicSourceEvent sourceEvent) {
         return new MagicHeroicTrigger() {
             @Override
-            public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicItemOnStack item) {
-                return sourceEvent.getEvent(permanent);
-            }
-        };
-    }
-    
-    public static MagicHeroicTrigger create(final String rule) {
-        final MagicSourceEvent sourceEvent = MagicRuleEventAction.create(rule);
-        return new MagicHeroicTrigger() {
-            @Override
-            public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicItemOnStack item) {
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicItemOnStack data) {
                 return sourceEvent.getEvent(permanent);
             }
         };

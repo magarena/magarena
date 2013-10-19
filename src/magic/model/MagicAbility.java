@@ -832,7 +832,9 @@ public enum MagicAbility {
     },
     HeroicEffect("heroic effect", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicHeroicTrigger.create(arg));
+            card.add(MagicHeroicTrigger.create(
+                MagicRuleEventAction.create(arg)
+            ));
         }
     },
     None("",0);
