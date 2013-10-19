@@ -13,12 +13,14 @@ import magic.model.event.MagicRuleEventAction;
 import magic.model.action.MagicRemoveFromPlayAction;
 
 public abstract class MagicWhenLeavesPlayTrigger extends MagicTrigger<MagicRemoveFromPlayAction> {
-    public static final MagicWhenLeavesPlayTrigger NONE = new MagicWhenLeavesPlayTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicRemoveFromPlayAction data) {
-            throw new RuntimeException("executeTrigger called on NONE");
-        }
-    };
+    public static final MagicWhenLeavesPlayTrigger create(final MagicSourceEvent sourceEvent) {
+        return new MagicWhenLeavesPlayTrigger() {
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicRemoveFromPlayAction data) {
+                return sourceEvent.getEvent(permanent);
+            }
+        };
+    }
     
     public MagicWhenLeavesPlayTrigger(final int priority) {
         super(priority);

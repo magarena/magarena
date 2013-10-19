@@ -15,12 +15,14 @@ import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicRemoveCardAction;
 
 public abstract class MagicWhenDiesTrigger extends MagicWhenPutIntoGraveyardTrigger {
-    public static final MagicWhenDiesTrigger NONE = new MagicWhenDiesTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicMoveCardAction data) {
-            throw new RuntimeException("executeTrigger called on NONE");
-        }
-    };
+    public static final MagicWhenDiesTrigger create(final MagicSourceEvent sourceEvent) {
+        return new MagicWhenDiesTrigger() {
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicMoveCardAction data) {
+                return sourceEvent.getEvent(permanent);
+            }
+        };
+    }
     
     public MagicWhenDiesTrigger(final int priority) {
         super(priority);

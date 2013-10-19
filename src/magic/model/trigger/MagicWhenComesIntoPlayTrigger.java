@@ -21,12 +21,14 @@ import magic.data.TokenCardDefinitions;
 
 public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPayedCost> {
 
-    public static final MagicWhenComesIntoPlayTrigger NONE = new MagicWhenComesIntoPlayTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost data) {
-            throw new RuntimeException("executeTrigger called on NONE");
-        }
-    };
+    public static final MagicWhenComesIntoPlayTrigger create(final MagicSourceEvent sourceEvent) {
+        return new MagicWhenComesIntoPlayTrigger() {
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost data) {
+                return sourceEvent.getEvent(permanent);
+            }
+        };
+    }
     
     public MagicWhenComesIntoPlayTrigger(final int priority) {
         super(priority);

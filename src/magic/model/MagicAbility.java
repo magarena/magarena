@@ -694,48 +694,42 @@ public enum MagicAbility {
     },
     EntersEffect("enters effect", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicTrigger.combine( 
-                MagicWhenComesIntoPlayTrigger.NONE,
+            card.add(MagicWhenComesIntoPlayTrigger.create(
                 MagicRuleEventAction.create(arg)
             ));
         }
     },
     EntersMayEffect("enters effect PN may", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicTrigger.combine( 
-                MagicWhenComesIntoPlayTrigger.NONE,
+            card.add(MagicWhenComesIntoPlayTrigger.create(
                 MagicRuleEventAction.createMay(arg)
             ));
         }
     },
     DiesEffect("dies effect", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicTrigger.combine( 
-                MagicWhenDiesTrigger.NONE,
+            card.add(MagicWhenDiesTrigger.create(
                 MagicRuleEventAction.create(arg)
             ));
         }
     },
     DiesMayEffect("dies effect PN may", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicTrigger.combine( 
-                MagicWhenDiesTrigger.NONE,
+            card.add(MagicWhenDiesTrigger.create(
                 MagicRuleEventAction.createMay(arg)
             ));
         }
     },
     LeavesEffect("leaves effect", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicTrigger.combine( 
-                MagicWhenLeavesPlayTrigger.NONE,
+            card.add(MagicWhenLeavesPlayTrigger.create(
                 MagicRuleEventAction.create(arg)
             ));
         }
     },
     LeavesMayEffect("leaves effect PN may", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicTrigger.combine( 
-                MagicWhenLeavesPlayTrigger.NONE,
+            card.add(MagicWhenLeavesPlayTrigger.create(
                 MagicRuleEventAction.createMay(arg)
             ));
         }

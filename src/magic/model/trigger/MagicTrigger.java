@@ -53,29 +53,4 @@ public abstract class MagicTrigger<T> implements MagicEventAction,MagicChangeCar
     public void change(final MagicCardDefinition cdef) {
         cdef.addTrigger(this);
     }
-
-    public static <T> MagicTrigger<T> combine(final MagicTrigger<T> trigger, final MagicSourceEvent sourceEvent) {
-        return new MagicTrigger<T>() {
-            @Override
-            public MagicTriggerType getType() {
-                return trigger.getType();
-            }
-            @Override
-            public boolean accept(final MagicPermanent permanent, final T data) {
-                return trigger.accept(permanent, data);
-            }
-            @Override
-            public void change(final MagicCardDefinition cdef) {
-                trigger.change(cdef);
-            }
-            @Override
-            public boolean usesStack() {
-                return trigger.usesStack();
-            }
-            @Override
-            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final T data) {
-                return sourceEvent.getEvent(permanent);
-            }
-        };
-    }
 }
