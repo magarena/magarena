@@ -1,0 +1,10 @@
+name=1/1 red Soldier creature token with haste
+token=Soldier
+image=http://magiccards.info/extras/token/theros/soldier-3.jpg
+value=1
+type=Creature
+subtype=Soldier
+color=r
+cost={0}
+pt=1/1
+ability=haste

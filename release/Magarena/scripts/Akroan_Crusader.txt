@@ -1,0 +1,11 @@
+name=Akroan Crusader
+url=http://magiccards.info/ths/en/111.html
+image=http://magiccards.info/scans/en/ths/111.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={R}
+pt=1/1
+ability=heroic effect PN puts a 1/1 red Soldier creature token with haste onto the battlefield.
+timing=main
