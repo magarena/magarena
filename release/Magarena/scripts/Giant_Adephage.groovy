@@ -15,8 +15,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final MagicPermanent permanent = event.getPermanent();
-            final MagicCard card = MagicCard.createTokenCard(permanent.getCardDefinition(),player);
+            final MagicCard card = MagicCard.createTokenCard(event.getPermanent(),player);
             game.doAction(new MagicPlayCardAction(card,player));
         }
     }
