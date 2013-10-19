@@ -1,0 +1,11 @@
+name=Triton Fortune Hunter
+url=http://magiccards.info/ths/en/69.html
+image=http://magiccards.info/scans/en/ths/69.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Merfolk,Soldier
+cost={2}{U}
+pt=2/2
+ability=heroic effect PN draws a card.
+timing=main
