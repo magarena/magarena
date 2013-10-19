@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Soldier
 cost={4}{W}
 pt=2/4
-ability=enters gain life 4
+ability=enters effect PN gains 4 life.
 timing=main

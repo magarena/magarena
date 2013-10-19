@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Monk,Cleric
 cost={2}{W}
 pt=2/2
-ability=enters gain life 2
+ability=enters effect PN gains 2 life.
 timing=main

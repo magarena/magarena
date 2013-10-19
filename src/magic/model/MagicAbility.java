@@ -57,7 +57,6 @@ import magic.model.trigger.MagicMiracleTrigger;
 import magic.model.trigger.MagicModularTrigger;
 import magic.model.trigger.MagicRampageTrigger;
 import magic.model.trigger.MagicRavnicaLandTrigger;
-import magic.model.trigger.MagicRefugeLandTrigger;
 import magic.model.trigger.MagicReplicateTrigger;
 import magic.model.trigger.MagicSoulshiftTrigger;
 import magic.model.trigger.MagicSpecterTrigger;
@@ -537,30 +536,6 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(new MagicEntersExileCreatureOrSacrificeTrigger(arg));
             card.add(MagicLeavesReturnExileTrigger.create());
-        }
-    },
-    EntersGainLife("enters gain life", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final int n = Integer.parseInt(arg);
-            card.add(new MagicRefugeLandTrigger(n));
-        }
-    },
-    EntersLoseLife("enters lose life", -10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final int n = Integer.parseInt(arg);
-            card.add(new MagicRefugeLandTrigger(-n));
-        }
-    },
-    LeavesGainLife("leaves gain life", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final int n = Integer.parseInt(arg);
-            card.add(new MagicLeavesGainLifeTrigger(n));
-        }
-    },
-    LeavesLoseLife("leaves lose life", -10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final int n = Integer.parseInt(arg);
-            card.add(new MagicLeavesGainLifeTrigger(-n));
         }
     },
     LeavesReturnExile("leaves return exile", 0) {

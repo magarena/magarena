@@ -7,5 +7,5 @@ type=Land
 mana=w4
 ability=tap add mana {W};\
         enters tapped;\
-        enters gain life 2
+        enters effect PN gains 2 life.
 timing=land

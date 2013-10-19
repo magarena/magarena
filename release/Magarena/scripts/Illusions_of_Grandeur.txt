@@ -5,5 +5,5 @@ value=4.458
 rarity=R
 type=Enchantment
 cost={3}{U}
-ability=enters gain life 20;leaves lose life 20;cumulative upkeep {2}
+ability=enters effect PN gains 20 life.;leaves effect PN loses 20 life.;cumulative upkeep {2}
 timing=enchantment
