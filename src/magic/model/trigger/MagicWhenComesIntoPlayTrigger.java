@@ -20,10 +20,18 @@ import magic.model.action.MagicChangeCountersAction;
 import magic.data.TokenCardDefinitions;
 
 public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPayedCost> {
+
+    public static final MagicWhenComesIntoPlayTrigger NONE = new MagicWhenComesIntoPlayTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost data) {
+            throw new RuntimeException("executeTrigger called on NONE");
+        }
+    };
+    
     public MagicWhenComesIntoPlayTrigger(final int priority) {
         super(priority);
     }
-
+    
     public MagicWhenComesIntoPlayTrigger() {}
 
     public MagicTriggerType getType() {
@@ -35,26 +43,6 @@ public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPa
         cdef.addTrigger(this);
     }
     
-    public static MagicWhenComesIntoPlayTrigger createMay(final String rule) {
-        final MagicSourceEvent sourceEvent = MagicRuleEventAction.createMay(rule);
-        return new MagicWhenComesIntoPlayTrigger() {
-            @Override
-            public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
-                return sourceEvent.getEvent(permanent);
-            }
-        };
-    }
-
-    public static MagicWhenComesIntoPlayTrigger create(final String rule) {
-        final MagicSourceEvent sourceEvent = MagicRuleEventAction.create(rule);
-        return new MagicWhenComesIntoPlayTrigger() {
-            @Override
-            public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
-                return sourceEvent.getEvent(permanent);
-            }
-        };
-    }
-
     public static final MagicWhenComesIntoPlayTrigger ChooseOpponent = new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {

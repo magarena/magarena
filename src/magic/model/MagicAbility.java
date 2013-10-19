@@ -26,8 +26,10 @@ import magic.model.event.MagicKickerCost;
 import magic.model.event.MagicMultikickerCost;
 import magic.model.event.MagicMonstrosityActivation;
 import magic.model.event.MagicBestowActivation;
+import magic.model.event.MagicRuleEventAction;
 import magic.model.mstatic.MagicCDA;
 import magic.model.mstatic.MagicStatic;
+import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicAllyGrowTrigger;
 import magic.model.trigger.MagicAnnihilatorTrigger;
 import magic.model.trigger.MagicAttacksPumpTrigger;
@@ -38,7 +40,6 @@ import magic.model.trigger.MagicComesIntoPlayWithCounterTrigger;
 import magic.model.trigger.MagicCumulativeUpkeepTrigger;
 import magic.model.trigger.MagicDamageGrowTrigger;
 import magic.model.trigger.MagicDevourTrigger;
-import magic.model.trigger.MagicDieDrawCardTrigger;
 import magic.model.trigger.MagicEchoTrigger;
 import magic.model.trigger.MagicEntersDamageTargetTrigger;
 import magic.model.trigger.MagicEntersExileCreatureOrSacrificeTrigger;
@@ -693,32 +694,50 @@ public enum MagicAbility {
     },
     EntersEffect("enters effect", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicWhenComesIntoPlayTrigger.create(arg));
+            card.add(MagicTrigger.combine( 
+                MagicWhenComesIntoPlayTrigger.NONE,
+                MagicRuleEventAction.create(arg)
+            ));
         }
     },
     EntersMayEffect("enters effect PN may", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicWhenComesIntoPlayTrigger.createMay(arg));
+            card.add(MagicTrigger.combine( 
+                MagicWhenComesIntoPlayTrigger.NONE,
+                MagicRuleEventAction.createMay(arg)
+            ));
         }
     },
     DiesEffect("dies effect", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicWhenDiesTrigger.create(arg));
+            card.add(MagicTrigger.combine( 
+                MagicWhenDiesTrigger.NONE,
+                MagicRuleEventAction.create(arg)
+            ));
         }
     },
     DiesMayEffect("dies effect PN may", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicWhenDiesTrigger.createMay(arg));
+            card.add(MagicTrigger.combine( 
+                MagicWhenDiesTrigger.NONE,
+                MagicRuleEventAction.createMay(arg)
+            ));
         }
     },
     LeavesEffect("leaves effect", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicWhenLeavesPlayTrigger.create(arg));
+            card.add(MagicTrigger.combine( 
+                MagicWhenLeavesPlayTrigger.NONE,
+                MagicRuleEventAction.create(arg)
+            ));
         }
     },
     LeavesMayEffect("leaves effect PN may", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicWhenLeavesPlayTrigger.createMay(arg));
+            card.add(MagicTrigger.combine( 
+                MagicWhenLeavesPlayTrigger.NONE,
+                MagicRuleEventAction.createMay(arg)
+            ));
         }
     },
     ControlEnchanted("control enchanted", 10) {

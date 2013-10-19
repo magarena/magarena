@@ -15,49 +15,31 @@ import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicRemoveCardAction;
 
 public abstract class MagicWhenDiesTrigger extends MagicWhenPutIntoGraveyardTrigger {
+    public static final MagicWhenDiesTrigger NONE = new MagicWhenDiesTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicMoveCardAction data) {
+            throw new RuntimeException("executeTrigger called on NONE");
+        }
+    };
+    
     public MagicWhenDiesTrigger(final int priority) {
         super(priority);
     }
-
-    public MagicWhenDiesTrigger() {}
-
-    protected abstract MagicEvent getEvent(final MagicPermanent permanent);
-
-    @Override
-    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicMoveCardAction act) {
-        return (act.fromLocation == MagicLocationType.Play) ?
-            getEvent(permanent) : MagicEvent.NONE;
-    }
     
-    public static MagicWhenDiesTrigger createMay(final String rule) {
-        final MagicSourceEvent sourceEvent = MagicRuleEventAction.createMay(rule);
-        return new MagicWhenDiesTrigger() {
-            @Override
-            public MagicEvent getEvent(final MagicPermanent permanent) {
-                return sourceEvent.getEvent(permanent);
-            }
-        };
-    }
-
-    public static MagicWhenDiesTrigger create(final String rule) {
-        final MagicSourceEvent sourceEvent = MagicRuleEventAction.create(rule);
-        return new MagicWhenDiesTrigger() {
-            @Override
-            public MagicEvent getEvent(final MagicPermanent permanent) {
-                return sourceEvent.getEvent(permanent);
-            }
-        };
+    public MagicWhenDiesTrigger() {}
+    
+    @Override
+    public boolean accept(final MagicPermanent permanent, final MagicMoveCardAction act) {
+        return super.accept(permanent,act) && act.fromLocation == MagicLocationType.Play;
     }
 
     public static MagicWhenDiesTrigger ReturnToOwnersHand = new MagicWhenDiesTrigger() {
         @Override
-        public MagicEvent getEvent(final MagicPermanent permanent) {
-            final MagicCard card = permanent.getCard();
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicMoveCardAction act) {
             return new MagicEvent(
-                card,
-                card.getController(),
+                permanent.getCard(),
                 this,
-                "Return " + card + " to its owner's hand."
+                "Return SN to its owner's hand."
             );
         }
         @Override

@@ -23,7 +23,7 @@ public class MagicSoulshiftTrigger extends MagicWhenDiesTrigger {
     }
 
     @Override
-    public MagicEvent getEvent(final MagicPermanent permanent) {
+    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicMoveCardAction act) {
         final MagicTargetFilter<MagicCard> targetFilter =
             new MagicTargetFilter.MagicCMCCardFilter(
                 MagicTargetFilter.TARGET_SPIRIT_CARD_FROM_GRAVEYARD,

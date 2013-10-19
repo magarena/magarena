@@ -5,6 +5,7 @@ import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicSourceEvent;
 import magic.model.event.MagicEventAction;
 
 /** Lower priority values trigger before higher priority values. */
@@ -19,10 +20,10 @@ public abstract class MagicTrigger<T> implements MagicEventAction,MagicChangeCar
 
     private final int priority;
 
-    protected MagicTrigger(final int priority) {
-        this.priority = priority;
+    protected MagicTrigger(final int aPriority) {
+        priority = aPriority;
     }
-
+    
     protected MagicTrigger() {
         this(DEFAULT_PRIORITY);
     }
@@ -41,7 +42,7 @@ public abstract class MagicTrigger<T> implements MagicEventAction,MagicChangeCar
     }
 
     public abstract MagicTriggerType getType();
-
+            
     public abstract MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final T data);
 
     public boolean accept(final MagicPermanent permanent, final T data) {
@@ -51,5 +52,30 @@ public abstract class MagicTrigger<T> implements MagicEventAction,MagicChangeCar
     @Override
     public void change(final MagicCardDefinition cdef) {
         cdef.addTrigger(this);
+    }
+
+    public static <T> MagicTrigger<T> combine(final MagicTrigger<T> trigger, final MagicSourceEvent sourceEvent) {
+        return new MagicTrigger<T>() {
+            @Override
+            public MagicTriggerType getType() {
+                return trigger.getType();
+            }
+            @Override
+            public boolean accept(final MagicPermanent permanent, final T data) {
+                return trigger.accept(permanent, data);
+            }
+            @Override
+            public void change(final MagicCardDefinition cdef) {
+                trigger.change(cdef);
+            }
+            @Override
+            public boolean usesStack() {
+                return trigger.usesStack();
+            }
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final T data) {
+                return sourceEvent.getEvent(permanent);
+            }
+        };
     }
 }

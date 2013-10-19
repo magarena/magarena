@@ -8,12 +8,12 @@
     },
     new MagicWhenDiesTrigger() {
         @Override
-        public MagicEvent getEvent(final MagicPermanent permanent) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicMoveCardAction data) {
             final int cmc = permanent.getGame().filterPermanents(
                 permanent.getController(),
                 MagicTargetFilter.TARGET_SPIRIT_YOU_CONTROL
             ).size()+1;
-            return new MagicSoulshiftTrigger(cmc).getEvent(permanent);
+            return new MagicSoulshiftTrigger(cmc).executeTrigger(game, permanent, data);
         }
     }
 ]

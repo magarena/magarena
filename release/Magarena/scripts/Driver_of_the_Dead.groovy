@@ -1,7 +1,7 @@
 [
     new MagicWhenDiesTrigger() {
         @Override
-        public MagicEvent getEvent(final MagicPermanent permanent) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicMoveCardAction data) {
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
                 new MagicTargetFilter.MagicCMCCardFilter(
                     MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD,

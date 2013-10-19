@@ -6,11 +6,11 @@ import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicPermanentAction;
+import magic.model.action.MagicMoveCardAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicPumpTargetPicker;
-
 
 public class MagicModularTrigger extends MagicWhenDiesTrigger {
 
@@ -23,7 +23,7 @@ public class MagicModularTrigger extends MagicWhenDiesTrigger {
     }
 
     @Override
-    public MagicEvent getEvent(final MagicPermanent permanent) {
+    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicMoveCardAction act) {
         final int amount = permanent.getCounters(MagicCounterType.PlusOne);
         return new MagicEvent(
             permanent,

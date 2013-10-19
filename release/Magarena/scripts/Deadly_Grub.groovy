@@ -1,7 +1,7 @@
 [
     new MagicWhenDiesTrigger() {
         @Override
-        public MagicEvent getEvent(final MagicPermanent permanent) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicMoveCardAction data) {
             return permanent.getCounters(MagicCounterType.Charge) == 0 ?
                 new MagicEvent(
                     permanent,

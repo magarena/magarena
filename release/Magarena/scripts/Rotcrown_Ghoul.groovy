@@ -1,7 +1,7 @@
 [
     new MagicWhenDiesTrigger() {
         @Override
-        public MagicEvent getEvent(final MagicPermanent permanent) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicMoveCardAction data) {
             return new MagicEvent(
                 permanent,
                 MagicTargetChoice.NEG_TARGET_PLAYER,

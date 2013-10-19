@@ -13,10 +13,17 @@ import magic.model.event.MagicRuleEventAction;
 import magic.model.action.MagicRemoveFromPlayAction;
 
 public abstract class MagicWhenLeavesPlayTrigger extends MagicTrigger<MagicRemoveFromPlayAction> {
+    public static final MagicWhenLeavesPlayTrigger NONE = new MagicWhenLeavesPlayTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicRemoveFromPlayAction data) {
+            throw new RuntimeException("executeTrigger called on NONE");
+        }
+    };
+    
     public MagicWhenLeavesPlayTrigger(final int priority) {
         super(priority);
     }
-
+    
     public MagicWhenLeavesPlayTrigger() {}
 
     public MagicTriggerType getType() {
@@ -33,24 +40,4 @@ public abstract class MagicWhenLeavesPlayTrigger extends MagicTrigger<MagicRemov
             return MagicEvent.NONE;
         }
     };
-    
-    public static MagicWhenLeavesPlayTrigger createMay(final String rule) {
-        final MagicSourceEvent sourceEvent = MagicRuleEventAction.createMay(rule);
-        return new MagicWhenLeavesPlayTrigger() {
-            @Override
-            public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
-                return sourceEvent.getEvent(permanent);
-            }
-        };
-    }
-    
-    public static MagicWhenLeavesPlayTrigger create(final String rule) {
-        final MagicSourceEvent sourceEvent = MagicRuleEventAction.create(rule);
-        return new MagicWhenLeavesPlayTrigger() {
-            @Override
-            public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
-                return sourceEvent.getEvent(permanent);
-            }
-        };
-    }
 }

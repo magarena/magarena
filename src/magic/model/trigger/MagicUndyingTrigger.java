@@ -7,6 +7,7 @@ import magic.model.MagicPermanent;
 import magic.model.action.MagicPlayCardAction;
 import magic.model.action.MagicPlayMod;
 import magic.model.action.MagicReanimateAction;
+import magic.model.action.MagicMoveCardAction;
 import magic.model.event.MagicEvent;
 
 public class MagicUndyingTrigger extends MagicWhenDiesTrigger {
@@ -20,7 +21,7 @@ public class MagicUndyingTrigger extends MagicWhenDiesTrigger {
     }
 
     @Override
-    public MagicEvent getEvent(final MagicPermanent permanent) {
+    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicMoveCardAction act) {
         return permanent.getCounters(MagicCounterType.PlusOne) == 0 ?
             new MagicEvent(
                 permanent,
