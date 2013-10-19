@@ -37,6 +37,7 @@ import magic.model.target.MagicBounceTargetPicker;
 import magic.model.target.MagicTapTargetPicker;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.choice.MagicChoice;
+import magic.model.choice.MagicMayChoice;
 import magic.data.TokenCardDefinitions;
 
 import java.util.regex.Pattern;
@@ -518,7 +519,7 @@ public enum MagicRuleEventAction {
             public MagicEvent getEvent(final MagicSource source) {
                 return new MagicEvent(
                     source,
-                    choice,
+                    new MagicMayChoice(choice),
                     picker,
                     new MagicEventAction() {
                         @Override
