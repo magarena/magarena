@@ -5,9 +5,11 @@
     ) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            if (MagicCondition.METALCRAFT_CONDITION.accept(permanent)) {
-                pt.add(3,0);
-            }
+            pt.add(3,0);
+        }
+        @Override
+        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+            return MagicCondition.METALCRAFT_CONDITION.accept(source);
         }
     }
 ]
