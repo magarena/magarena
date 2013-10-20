@@ -7,6 +7,6 @@ type=Legendary,Creature
 subtype=Human,Samurai
 cost={3}{R}{R}
 pt=3/3
-ability=bushido 2
-timing=fmain
-requires_groovy_code
+ability=bushido 2;\
+        pay {2}{R}, Sacrifice a Samurai: Samurai creatures PN controls gain double strike until end of turn.
+timing=main
