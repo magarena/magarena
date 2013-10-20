@@ -7,7 +7,7 @@ type=Creature
 subtype=Sliver
 cost={1}{R}{G}
 pt=1/1
-ability=lord all sliver creatures have haste
-timing=main
+ability=lord all sliver creatures have haste;\
+        lord all Slivers have "pay {1}, {S}: Target Sliver creature gets +2/+2 until end of turn."
 static=all
-requires_groovy_code
+timing=main
