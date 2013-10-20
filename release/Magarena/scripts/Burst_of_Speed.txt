@@ -5,5 +5,5 @@ value=2.196
 rarity=C
 type=Sorcery
 cost={R}
+effect=Creatures PN controls gain haste until end of turn.
 timing=fmain
-requires_groovy_code
