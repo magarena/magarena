@@ -5,5 +5,5 @@ value=4.733
 rarity=U
 type=Instant
 cost={4}{W}
-timing=removal
+timing=token
 requires_groovy_code
