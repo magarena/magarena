@@ -7,6 +7,6 @@ type=Legendary,Creature
 subtype=Human,Soldier
 cost={2}{R}{W}
 pt=2/2
-ability=indestructible
+ability=indestructible;\
+        battalion effect SN gets +5/+5 until end of turn.
 timing=main
-requires_groovy_code
