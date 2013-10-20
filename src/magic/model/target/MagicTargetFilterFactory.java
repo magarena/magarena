@@ -31,6 +31,7 @@ public class MagicTargetFilterFactory {
         factory.put("creatures you control with flying", TARGET_CREATURE_WITH_FLYING_YOU_CONTROL);
         factory.put("non-human creatures you control", TARGET_NONHUMAN_CREATURE_YOU_CONTROL);
         factory.put("attacking creatures you control", TARGET_ATTACKING_CREATURE_YOU_CONTROL);
+        factory.put("attacking creatures", TARGET_ATTACKING_CREATURE);
         factory.put("creature tokens you control", TARGET_CREATURE_TOKEN_YOU_CONTROL);
         
         factory.put("faeries you control", TARGET_FAERIE_YOU_CONTROL);
@@ -161,6 +162,8 @@ public class MagicTargetFilterFactory {
     public static MagicTargetFilter<MagicPermanent> build(final String arg) {
         if (factory.containsKey(arg)) {
             return factory.get(arg);
+        } else if (arg.endsWith(" creatures pn controls")) {
+            return matchCreaturePrefix(arg, " creatures pn controls", Control.You);
         } else if (arg.endsWith(" creatures you control")) {
             return matchCreaturePrefix(arg, " creatures you control", Control.You);
         } else if (arg.endsWith(" creatures your opponents control")) {
