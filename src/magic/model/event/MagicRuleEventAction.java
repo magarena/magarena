@@ -323,6 +323,20 @@ public enum MagicRuleEventAction {
             }
         }
     ),
+    UntapSelf(
+        "untap sn.", 
+        MagicTiming.Tapping, 
+        "Untap"
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.doAction(new MagicUntapAction(event.getPermanent()));
+                }
+            };
+        }
+    },
     Untap(
         "untap (?<choice>[^\\.]*).",
         MagicTargetHint.Positive,
@@ -333,8 +347,8 @@ public enum MagicRuleEventAction {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent gate) {
-                        game.doAction(new MagicUntapAction(gate));
+                    public void doAction(final MagicPermanent perm) {
+                        game.doAction(new MagicUntapAction(perm));
                     }
                 });
             }

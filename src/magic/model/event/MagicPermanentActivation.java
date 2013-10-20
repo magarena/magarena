@@ -197,33 +197,6 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
         }
     };
 
-    public static final MagicPermanentActivation Untap(final MagicManaCost cost) {
-        return new MagicPermanentActivation(
-            new MagicActivationHints(MagicTiming.Tapping),
-            "Untap"
-        ) {
-            @Override
-            public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
-                return Arrays.asList(
-                    new MagicPayManaCostEvent(source,cost),
-                    new MagicUntapConditionsEvent(source,this)
-                );
-            }
-            @Override
-            public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-                return new MagicEvent(
-                    source,
-                    this,
-                    "Untap SN."
-                );
-            }
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new MagicUntapAction(event.getPermanent()));
-            }
-        };
-    }
-
     public static final MagicPermanentActivation PreventDamage(final int n) {
         return new MagicPermanentActivation(
             new MagicActivationHints(MagicTiming.Pump),
