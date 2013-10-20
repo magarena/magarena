@@ -197,38 +197,6 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
         }
     };
 
-    public static final MagicPermanentActivation PreventDamage(final int n) {
-        return new MagicPermanentActivation(
-            new MagicActivationHints(MagicTiming.Pump),
-            "Prevent " + n
-        ) {
-
-        @Override
-        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
-            return Arrays.asList(new MagicTapEvent(source));
-        }
-
-        @Override
-        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            return new MagicEvent(
-                source,
-                MagicTargetChoice.POS_TARGET_CREATURE_OR_PLAYER,
-                MagicPreventTargetPicker.getInstance(),
-                this,
-                "Prevent the next " + n + " damage that would be dealt to target creature or player$ this turn."
-            );
-        }
-
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTarget(game,new MagicTargetAction() {
-                public void doAction(final MagicTarget target) {
-                    game.doAction(new MagicPreventDamageAction(target,n));
-                }
-            });
-        }
-    };}
-
     public static final MagicPermanentActivation SwitchPT(final MagicManaCost cost) {
         return new MagicPermanentActivation(
             new MagicActivationHints(MagicTiming.Pump),

@@ -23,6 +23,7 @@ import magic.model.action.MagicUntapAction;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.action.MagicPlayTokensAction;
+import magic.model.action.MagicPreventDamageAction;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetHint;
@@ -35,6 +36,7 @@ import magic.model.target.MagicPumpTargetPicker;
 import magic.model.target.MagicWeakenTargetPicker;
 import magic.model.target.MagicBounceTargetPicker;
 import magic.model.target.MagicTapTargetPicker;
+import magic.model.target.MagicPreventTargetPicker;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicMayChoice;
@@ -130,6 +132,28 @@ public enum MagicRuleEventAction {
                         public void doAction(final MagicTarget target) {
                             final MagicDamage damage=new MagicDamage(event.getSource(),target,amount);
                             game.doAction(new MagicDealDamageAction(damage));
+                        }
+                    });
+                }
+            };
+        }
+    },
+    Prevent(
+        "prevent the next (?<amount>[0-9]+) damage that would be dealt to (?<choice>[^\\.]*) this turn.",
+        MagicTargetHint.Positive, 
+        MagicPreventTargetPicker.getInstance(),
+        MagicTiming.Pump,
+        "Prevent"
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final int amount = Integer.parseInt(matcher.group("amount"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTarget(game,new MagicTargetAction() {
+                        public void doAction(final MagicTarget target) {
+                            game.doAction(new MagicPreventDamageAction(target,amount));
                         }
                     });
                 }

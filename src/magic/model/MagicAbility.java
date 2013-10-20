@@ -357,12 +357,6 @@ public enum MagicAbility {
             card.add(new MagicPainTapManaActivation(manatype));
         }
     },
-    TapPreventDamage("tap prevent damage", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final int n = Integer.parseInt(arg);
-            card.add(MagicPermanentActivation.PreventDamage(n));
-        }
-    },
     SacAddMana("sac add mana",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             final List<MagicManaType> manatype = MagicManaType.getList(arg);
