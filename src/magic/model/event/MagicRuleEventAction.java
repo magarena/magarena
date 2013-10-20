@@ -330,6 +330,31 @@ public enum MagicRuleEventAction {
             return new MagicWeakenTargetPicker(p, t);
         }
     },
+    WeakenGroup(
+        "(?<group>[^\\.]*) get (?<pt>[0-9-]+/[0-9-]+) until end of turn.", 
+        MagicTiming.Removal, 
+        "Weaken"
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final String[] pt = matcher.group("pt").replace("+","").split("/");
+            final int power = Integer.parseInt(pt[0]);
+            final int toughness = Integer.parseInt(pt[1]);
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.build(matcher.group("group"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final Collection<MagicPermanent> targets = game.filterPermanents(
+                        event.getPlayer(),
+                        filter
+                    );
+                    for (final MagicPermanent creature : targets) {
+                        game.doAction(new MagicChangeTurnPTAction(creature,power,toughness));
+                    }
+                }
+            };
+        }
+    },
     BounceSelf(
         "return sn to its owner's hand.",
         MagicTiming.Removal,
