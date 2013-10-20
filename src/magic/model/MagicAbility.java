@@ -6,7 +6,6 @@ import magic.model.target.MagicTargetFilterFactory;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicGainActivation;
 import magic.model.event.MagicLevelUpActivation;
-import magic.model.event.MagicPingActivation;
 import magic.model.event.MagicPlayCardEvent;
 import magic.model.event.MagicPlayMulticounterEvent;
 import magic.model.event.MagicPumpActivation;
@@ -311,12 +310,6 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             final int n = Integer.parseInt(arg);
             card.add(new MagicDevourTrigger(n));
-        }
-    },
-    Ping("ping",20) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final int n = Integer.parseInt(arg);
-            card.add(new MagicPingActivation(n));
         }
     },
     Rampage("rampage",20) {

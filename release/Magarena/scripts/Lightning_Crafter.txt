@@ -8,5 +8,5 @@ type=Creature
 subtype=Goblin,Shaman
 cost={3}{R}
 pt=3/3
-ability=champion Goblin or Shaman;ping 3
+ability=champion Goblin or Shaman;pay {T}: SN deals 3 damage to target creature or player.
 timing=main
