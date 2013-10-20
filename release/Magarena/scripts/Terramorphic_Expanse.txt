@@ -1,0 +1,8 @@
+name=Terramorphic Expanse
+url=http://magiccards.info/mma/en/224.html
+image=http://magiccards.info/scans/en/mma/224.jpg
+value=2.500
+rarity=C
+type=Land
+timing=land
+requires_groovy_code=Evolving_Wilds

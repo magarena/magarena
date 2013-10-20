@@ -1,0 +1,8 @@
+name=Evolving Wilds
+url=http://magiccards.info/ddk/en/33.html
+image=http://magiccards.info/scans/en/ddk/33.jpg
+value=2.500
+rarity=C
+type=Land
+timing=land
+requires_groovy_code
