@@ -1,4 +1,4 @@
-def Pump = new MagicPumpActivation(MagicManaCost.create("{R/W}"),1,0);
+def Pump = MagicPermanentActivation.create("{R/W}: SN gets +1/+0 until end of turn.");
 
 [
     new MagicStatic(MagicLayer.ModPT) {
