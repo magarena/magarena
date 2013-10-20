@@ -7,6 +7,6 @@ type=Creature
 subtype=Angel
 cost={4}{W}{W}
 pt=5/7
-ability=flying
+ability=flying;\
+        pay {W}{W}: Target creature gains indestructible until end of turn.
 timing=main
-requires_groovy_code
