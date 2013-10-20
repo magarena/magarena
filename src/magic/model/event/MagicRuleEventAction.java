@@ -7,6 +7,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicDamage;
 import magic.model.MagicCounterType;
+import magic.model.MagicAbility;
 import magic.model.action.MagicCardOnStackAction;
 import magic.model.action.MagicCounterItemOnStackAction;
 import magic.model.action.MagicDestroyAction;
@@ -24,6 +25,7 @@ import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.action.MagicPlayTokensAction;
 import magic.model.action.MagicPreventDamageAction;
+import magic.model.action.MagicGainAbilityAction;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
@@ -227,6 +229,31 @@ public enum MagicRuleEventAction {
                     game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),power,toughness));
                 }
             };
+        }
+    },
+    GainSelf(
+        "sn gains (?<ability>[^\\.]*) until end of turn."
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final MagicAbility ability = MagicAbility.getAbility(matcher.group("ability"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.doAction(new MagicGainAbilityAction(event.getPermanent(),ability));
+                }
+            };
+        }
+        public MagicTiming getTiming(final String rule) {
+            final Matcher matcher = matched(rule);
+            final MagicAbility ability = MagicAbility.getAbility(matcher.group("ability"));
+            return (ability == MagicAbility.Haste || ability == MagicAbility.Vigilance) ?
+                MagicTiming.FirstMain :
+                MagicTiming.Pump;
+        }
+        public String getName(final String rule) {
+            final String ability = matched(rule).group("ability");
+            return Character.toUpperCase(ability.charAt(0)) + ability.substring(1);
         }
     },
     Pump(
@@ -475,23 +502,26 @@ public enum MagicRuleEventAction {
     private final MagicTargetHint hint;
     private final MagicEventAction action;
     private final MagicTargetPicker<?> picker;
+    private final MagicTiming timing;
+    private final String name;
     
-    public final MagicTiming timing;
-    public final String description;
-    
-    private MagicRuleEventAction(
-            final String aPattern, 
-            final MagicTiming aTiming, 
-            final String aDescription) {
-        this(aPattern, MagicTargetHint.None, MagicDefaultTargetPicker.create(), aTiming, aDescription, MagicEvent.NO_ACTION);
+    private MagicRuleEventAction(final String aPattern) {
+        this(aPattern, MagicTargetHint.None, MagicDefaultTargetPicker.create(), MagicTiming.None, "", MagicEvent.NO_ACTION);
     }
     
     private MagicRuleEventAction(
             final String aPattern, 
             final MagicTiming aTiming, 
-            final String aDescription, 
+            final String aName) {
+        this(aPattern, MagicTargetHint.None, MagicDefaultTargetPicker.create(), aTiming, aName, MagicEvent.NO_ACTION);
+    }
+    
+    private MagicRuleEventAction(
+            final String aPattern, 
+            final MagicTiming aTiming, 
+            final String aName, 
             final MagicEventAction aAction) {
-        this(aPattern, MagicTargetHint.None, MagicDefaultTargetPicker.create(), aTiming, aDescription, aAction);
+        this(aPattern, MagicTargetHint.None, MagicDefaultTargetPicker.create(), aTiming, aName, aAction);
     }
     
     private MagicRuleEventAction(
@@ -499,16 +529,16 @@ public enum MagicRuleEventAction {
             final MagicTargetHint aHint, 
             final MagicTargetPicker<?> aPicker, 
             final MagicTiming aTiming, 
-            final String aDescription) {
-        this(aPattern, aHint, aPicker, aTiming, aDescription, MagicEvent.NO_ACTION);
+            final String aName) {
+        this(aPattern, aHint, aPicker, aTiming, aName, MagicEvent.NO_ACTION);
     }
     
     private MagicRuleEventAction(
             final String aPattern, 
             final MagicTargetHint aHint, 
             final MagicTiming aTiming, 
-            final String aDescription) {
-        this(aPattern, aHint, MagicDefaultTargetPicker.create(), aTiming, aDescription, MagicEvent.NO_ACTION);
+            final String aName) {
+        this(aPattern, aHint, MagicDefaultTargetPicker.create(), aTiming, aName, MagicEvent.NO_ACTION);
     }
 
 
@@ -517,13 +547,13 @@ public enum MagicRuleEventAction {
             final MagicTargetHint aHint, 
             final MagicTargetPicker<?> aPicker, 
             final MagicTiming aTiming, 
-            final String aDescription, 
+            final String aName, 
             final MagicEventAction aAction) {
         pattern = Pattern.compile(aPattern);
         hint = aHint;
         picker = aPicker;
         timing = aTiming;
-        description = aDescription;
+        name = aName;
         action = aAction;
     }
 
@@ -537,6 +567,14 @@ public enum MagicRuleEventAction {
     
     public MagicEventAction getAction(final String rule) {
         return action;
+    }
+    
+    public MagicTiming getTiming(final String rule) {
+        return timing;
+    }
+    
+    public String getName(final String rule) {
+        return name;
     }
 
     public MagicChoice getChoice(final String rule) {

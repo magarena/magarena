@@ -106,10 +106,12 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
         
         final MagicSourceEvent sourceEvent = MagicRuleEventAction.create(rule);
         final MagicRuleEventAction ruleAction = sourceEvent.getRule();
+        final MagicTiming timing = ruleAction.getTiming(rule);
+        final String name = ruleAction.getName(rule);
 
         return new MagicPermanentActivation(
-            new MagicActivationHints(ruleAction.timing),
-            ruleAction.description
+            new MagicActivationHints(timing),
+            name
         ) {
             @Override
             public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
