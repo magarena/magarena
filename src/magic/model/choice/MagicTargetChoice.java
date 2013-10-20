@@ -444,6 +444,9 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice SACRIFICE_BAT = 
         new MagicTargetChoice("a Bat to sacrifice");
     
+    public static final MagicTargetChoice SACRIFICE_ELF = 
+        new MagicTargetChoice("an Elf to sacrifice");
+    
     public static final MagicTargetChoice SACRIFICE_BEAST = 
         new MagicTargetChoice("a Beast to sacrifice");
     
