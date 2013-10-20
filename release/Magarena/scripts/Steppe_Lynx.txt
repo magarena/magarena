@@ -7,5 +7,5 @@ type=Creature
 subtype=Cat
 cost={W}
 pt=0/1
-ability=landfall pump +2/+2
+ability=landfall effect SN gets +2/+2 until end of turn.
 timing=main

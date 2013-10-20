@@ -7,5 +7,5 @@ type=Creature
 subtype=Beast
 cost={4}{G}
 pt=4/4
-ability=landfall pump +2/+2
+ability=landfall effect SN gets +2/+2 until end of turn.
 timing=main

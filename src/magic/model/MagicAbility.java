@@ -47,7 +47,6 @@ import magic.model.trigger.MagicFadeVanishCounterTrigger;
 import magic.model.trigger.MagicFlankingTrigger;
 import magic.model.trigger.MagicFromGraveyardToLibraryTrigger;
 import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
-import magic.model.trigger.MagicLandfallPumpTrigger;
 import magic.model.trigger.MagicLeavesDamageTargetTrigger;
 import magic.model.trigger.MagicLeavesGainLifeTrigger;
 import magic.model.trigger.MagicLeavesReturnExileTrigger;
@@ -332,18 +331,17 @@ public enum MagicAbility {
             card.add(MagicAllyGrowTrigger.create());
         }
     },
-    LandfallPump("landfall pump",20) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final String[] pt = arg.replace("+","").split("/");
-            final int power = Integer.parseInt(pt[0]);
-            final int toughness = Integer.parseInt(pt[1]);
-            card.add(new MagicLandfallPumpTrigger(power,toughness));
-        }
-    },
     LandfallQuest("landfall quest",0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
             card.add(MagicLandfallTrigger.Quest);
+        }
+    },
+    LandfallEffect("landfall effect",0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            card.add(MagicLandfallTrigger.create(
+                MagicRuleEventAction.create(arg)
+            ));
         }
     },
     TapAddMana("tap add mana",10) {

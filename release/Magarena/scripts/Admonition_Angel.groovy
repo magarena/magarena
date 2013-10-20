@@ -1,7 +1,7 @@
 [
     new MagicLandfallTrigger() {
         @Override
-        protected MagicEvent getEvent(final MagicPermanent permanent) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
                 new MagicOtherPermanentTargetFilter(
                     MagicTargetFilter.TARGET_NONLAND_PERMANENT,

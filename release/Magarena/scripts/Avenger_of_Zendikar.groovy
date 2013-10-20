@@ -25,7 +25,7 @@
     },
     new MagicLandfallTrigger() {
         @Override
-        public MagicEvent getEvent(final MagicPermanent permanent) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
             return new MagicEvent(
                 permanent,
                 new MagicSimpleMayChoice(

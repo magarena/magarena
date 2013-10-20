@@ -1,7 +1,7 @@
 [
     new MagicLandfallTrigger() {
         @Override
-        public MagicEvent getEvent(final MagicPermanent permanent) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
             final MagicPermanent equippedCreature = permanent.getEquippedCreature();
             return equippedCreature.isValid() ?
                 new MagicEvent(
