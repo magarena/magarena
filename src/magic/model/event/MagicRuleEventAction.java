@@ -42,6 +42,7 @@ import magic.model.target.MagicBounceTargetPicker;
 import magic.model.target.MagicTapTargetPicker;
 import magic.model.target.MagicPreventTargetPicker;
 import magic.model.target.MagicDeathtouchTargetPicker;
+import magic.model.target.MagicLifelinkTargetPicker;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicMayChoice;
@@ -330,6 +331,8 @@ public enum MagicRuleEventAction {
             switch (ability) {
                 case Deathtouch: 
                     return MagicDeathtouchTargetPicker.getInstance();
+                case Lifelink:
+                    return MagicLifelinkTargetPicker.create();
                 default:
                     return MagicPumpTargetPicker.create(); 
             }

@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Wizard
 cost={1}{W}
 pt=2/1
-timing=fmain
-requires_groovy_code
+ability=pay {1}{W}: Target creature you control gains lifelink until end of turn.
+timing=main
