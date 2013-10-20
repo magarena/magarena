@@ -7,5 +7,6 @@ type=Creature
 subtype=Fungus
 cost={1}{G}
 pt=1/1
+ability=pay Sacrifice a Saproling: Target creature gains haste until end of turn.
 timing=main
-requires_groovy_code=Thallid;Vitaspore Thallid
+requires_groovy_code=Thallid
