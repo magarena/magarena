@@ -144,6 +144,7 @@ public class MagicTargetFilterFactory {
         single.put("permanent card from your graveyard", TARGET_PERMANENT_CARD_FROM_GRAVEYARD); 
         single.put("permanent card with converted mana cost 3 or less from your graveyard", TARGET_PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD);
         single.put("unblocked attacking creature you control", UNBLOCKED_ATTACKING_CREATURE_YOU_CONTROL);
+        single.put("attacking creature you control", TARGET_ATTACKING_CREATURE_YOU_CONTROL);
         single.put("Vampire, Werewolf, or Zombie", TARGET_VAMPIRE_WEREWOLF_OR_ZOMBIE);
         single.put("white or blue creature", TARGET_WHITE_OR_BLUE_CREATURE);
         

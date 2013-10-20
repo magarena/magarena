@@ -6,7 +6,7 @@
                 cardOnStack,
                 MagicTargetChoice.NEG_TARGET_PLAYER,
                 this,
-                "Target player\$ sacrifices a creature. " +
+                "Target player\$ sacrifices an attacking creature. " +
                 "If you control three or more artifacts, he or she sacrifices two creatures instead."
             );
         }
@@ -14,16 +14,17 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
+                    final choice = new MagicTargetChoice("an attacking creature to sacrifice");
                     game.addEvent(new MagicSacrificePermanentEvent(
                         event.getSource(),
                         player,
-                        MagicTargetChoice.POS_TARGET_ATTACKING_CREATURE
+                        choice
                     ));
                     if (MagicCondition.METALCRAFT_CONDITION.accept(event.getSource())) {
                         game.addEvent(new MagicSacrificePermanentEvent(
                             event.getSource(),
                             player,
-                            MagicTargetChoice.POS_TARGET_ATTACKING_CREATURE
+                            choice
                         ));
                     }
                 }
