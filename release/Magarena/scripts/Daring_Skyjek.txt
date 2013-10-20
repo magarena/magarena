@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Knight
 cost={1}{W}
 pt=3/1
+ability=battalion effect SN gains flying until end of turn.
 timing=main
-requires_groovy_code
