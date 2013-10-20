@@ -6,5 +6,5 @@ value=4.150
 rarity=R
 type=Instant
 cost={W}
+effect=Target blocking creature gets +7/+7 until end of turn.
 timing=pump
-requires_groovy_code
