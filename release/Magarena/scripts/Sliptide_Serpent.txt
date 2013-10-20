@@ -7,5 +7,5 @@ type=Creature
 subtype=Serpent
 cost={4}{U}{U}
 pt=4/4
-ability=return to owner's hand {3}{U}
+ability=pay {3}{U}: Return SN to its owner's hand.
 timing=main

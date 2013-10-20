@@ -695,12 +695,6 @@ public enum MagicAbility {
             card.add(MagicAtEndOfTurnTrigger.ReturnAtEnd);
         }
     },
-    ReturnToOwnersHand("return to owner's hand", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final MagicManaCost manaCost = MagicManaCost.create(arg);
-            card.add(MagicPermanentActivation.ReturnToOwnersHand(manaCost));
-        }
-    },
     SwitchPT("switch pt", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             final MagicManaCost manaCost = MagicManaCost.create(arg);
