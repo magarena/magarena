@@ -7,6 +7,6 @@ type=Creature
 subtype=Angel
 cost={3}{W}{W}
 pt=3/4
-timing=main
 ability=flying;lifelink
+timing=main
 requires_groovy_code
