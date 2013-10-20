@@ -7,5 +7,6 @@ type=Creature
 subtype=Human,Wizard
 cost={R/W}{R/W}
 pt=2/2
-timing=fmain
-requires_groovy_code
+ability=pay {1}{R}: Target creature gains haste until end of turn.;\
+        pay {1}{W}: Target creature gains first strike until end of turn.
+timing=main

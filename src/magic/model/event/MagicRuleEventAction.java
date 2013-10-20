@@ -44,6 +44,7 @@ import magic.model.target.MagicPreventTargetPicker;
 import magic.model.target.MagicDeathtouchTargetPicker;
 import magic.model.target.MagicLifelinkTargetPicker;
 import magic.model.target.MagicFirstStrikeTargetPicker;
+import magic.model.target.MagicHasteTargetPicker;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicMayChoice;
@@ -299,9 +300,16 @@ public enum MagicRuleEventAction {
         public MagicTiming getTiming(final String rule) {
             final Matcher matcher = matched(rule);
             final MagicAbility ability = MagicAbility.getAbility(matcher.group("ability"));
-            return (ability == MagicAbility.Haste || ability == MagicAbility.Vigilance) ?
-                MagicTiming.FirstMain :
-                MagicTiming.Pump;
+            switch (ability) {
+                case Haste:
+                case Vigilance:
+                    return MagicTiming.FirstMain;
+                case FirstStrike:
+                case DoubleStrike:
+                    return MagicTiming.Block;
+                default:
+                    return MagicTiming.Pump;
+            }
         }
         public String getName(final String rule) {
             final String ability = matched(rule).group("ability");
@@ -326,6 +334,20 @@ public enum MagicRuleEventAction {
                 }
             };
         }
+        public MagicTiming getTiming(final String rule) {
+            final Matcher matcher = matched(rule);
+            final MagicAbility ability = MagicAbility.getAbility(matcher.group("ability"));
+            switch (ability) {
+                case Haste:
+                case Vigilance:
+                    return MagicTiming.FirstMain;
+                case FirstStrike:
+                case DoubleStrike:
+                    return MagicTiming.Block;
+                default:
+                    return MagicTiming.Pump;
+            }
+        }
         public MagicTargetPicker<?> getPicker(final String rule) {
             final Matcher matcher = matched(rule);
             final MagicAbility ability = MagicAbility.getAbility(matcher.group("ability"));
@@ -337,6 +359,8 @@ public enum MagicRuleEventAction {
                 case FirstStrike:
                 case DoubleStrike:
                     return MagicFirstStrikeTargetPicker.create();
+                case Haste:
+                    return MagicHasteTargetPicker.create();
                 default:
                     return MagicPumpTargetPicker.create(); 
             }
