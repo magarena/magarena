@@ -298,6 +298,17 @@ public interface MagicTargetFilter<T extends MagicTarget> {
                    targetType==MagicTargetType.Player;
         }
     };
+    
+    MagicTargetFilterImpl TARGET_SLIVER_CREATURE_OR_PLAYER=new MagicTargetFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+            return target.isPlayer() ||
+                   (target.isCreature() && target.hasSubType(MagicSubType.Sliver));
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType==MagicTargetType.Permanent ||
+                   targetType==MagicTargetType.Player;
+        }
+    };
 
     MagicPermanentFilterImpl TARGET_CREATURE_OR_LAND=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
