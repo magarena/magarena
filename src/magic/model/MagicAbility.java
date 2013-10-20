@@ -81,6 +81,7 @@ import magic.model.trigger.MagicCascadeTrigger;
 import magic.model.trigger.MagicWhenTargetedTrigger;
 import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 import magic.model.trigger.MagicHeroicTrigger;
+import magic.model.trigger.MagicBattalionTrigger;
 
 import java.util.EnumSet;
 import java.util.Set;
@@ -795,6 +796,13 @@ public enum MagicAbility {
     HeroicEffect("heroic effect", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicHeroicTrigger.create(
+                MagicRuleEventAction.create(arg)
+            ));
+        }
+    },
+    BattalionEffect("battalion effect", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            card.add(MagicBattalionTrigger.create(
                 MagicRuleEventAction.create(arg)
             ));
         }
