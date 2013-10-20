@@ -7,5 +7,5 @@ type=Creature
 subtype=Wall
 cost={3}{W}
 pt=0/5
-ability=defender;pump {W} +0/+1
+ability=defender;pay {W}: SN gets +0/+1 until end of turn.
 timing=smain

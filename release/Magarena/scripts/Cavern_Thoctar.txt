@@ -7,5 +7,5 @@ type=Creature
 subtype=Beast
 cost={5}{G}
 pt=5/5
-ability=pump {1}{R} +1/+0
+ability=pay {1}{R}: SN gets +1/+0 until end of turn.
 timing=main

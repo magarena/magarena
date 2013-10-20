@@ -7,5 +7,5 @@ type=Creature
 subtype=Elemental
 cost={3}{R}{R}
 pt=3/4
-ability=pump {1}{R} +3/-3
+ability=pay {1}{R}: SN gets +3/-3 until end of turn.
 timing=main

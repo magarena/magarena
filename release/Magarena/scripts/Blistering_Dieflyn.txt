@@ -7,5 +7,5 @@ type=Creature
 subtype=Imp
 cost={3}{R}
 pt=0/1
-ability=flying;pump {B/R} +1/+0
+ability=flying;pay {B/R}: SN gets +1/+0 until end of turn.
 timing=main

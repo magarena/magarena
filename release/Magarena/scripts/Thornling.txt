@@ -7,5 +7,9 @@ type=Creature
 subtype=Elemental,Shapeshifter
 cost={3}{G}{G}
 pt=4/4
-ability=gains {G} haste;gains {G} trample;gains {G} indestructible;pump {1} +1/-1;pump {1} -1/+1
+ability=gains {G} haste;\
+        gains {G} trample;\
+        gains {G} indestructible;\
+        pay {1}: SN gets +1/-1 until end of turn.;\
+        pay {1}: SN gets -1/+1 until end of turn.
 timing=main

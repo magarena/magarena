@@ -7,5 +7,5 @@ type=Creature
 subtype=Shade
 cost={3}{B}
 pt=2/2
-ability=pump {2}{B} +2/+2
+ability=pay {2}{B}: SN gets +2/+2 until end of turn.
 timing=main

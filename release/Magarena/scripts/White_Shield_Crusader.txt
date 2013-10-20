@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Knight
 cost={W}{W}
 pt=2/1
-ability=protection from black;gains {W} flying;pump {W}{W} +1/+0
+ability=protection from black;gains {W} flying;pay {W}{W}: SN gets +1/+0 until end of turn.
 timing=main

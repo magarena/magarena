@@ -7,5 +7,5 @@ type=Creature
 subtype=Nightstalker
 cost={2}{B}
 pt=2/2
-ability=pump {B} +1/-1
+ability=pay {B}: SN gets +1/-1 until end of turn.
 timing=main

@@ -8,7 +8,6 @@ import magic.model.event.MagicGainActivation;
 import magic.model.event.MagicLevelUpActivation;
 import magic.model.event.MagicPlayCardEvent;
 import magic.model.event.MagicPlayMulticounterEvent;
-import magic.model.event.MagicPumpActivation;
 import magic.model.event.MagicRegenerationActivation;
 import magic.model.event.MagicSacrificeManaActivation;
 import magic.model.event.MagicSacrificeTapManaActivation;
@@ -248,16 +247,6 @@ public enum MagicAbility {
                 card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,"time",n));
             }
             card.add(new MagicFadeVanishCounterTrigger("time"));
-        }
-    },
-    Pump("pump", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final String[] token = arg.split(" ");
-            final MagicManaCost cost = MagicManaCost.create(token[0]);
-            final String[] pt = token[1].replace("+","").split("/");
-            final int power = Integer.parseInt(pt[0]);
-            final int toughness = Integer.parseInt(pt[1]);
-            card.add(new MagicPumpActivation(cost,power,toughness));
         }
     },
     CumulativeUpkeep("cumulative upkeep",-30) {

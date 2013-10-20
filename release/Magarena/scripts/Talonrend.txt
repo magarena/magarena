@@ -7,5 +7,5 @@ type=Creature
 subtype=Elemental
 cost={4}{U}
 pt=0/5
-ability=flying;pump {U/R} +1/-1
+ability=flying;pay {U/R}: SN gets +1/-1 until end of turn.
 timing=main

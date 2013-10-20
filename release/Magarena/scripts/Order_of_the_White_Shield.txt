@@ -9,5 +9,5 @@ cost={W}{W}
 pt=2/1
 ability=protection from black;\
         gains {W} first strike;\
-        pump {W}{W} +1/+0
+        pay {W}{W}: SN gets +1/+0 until end of turn.
 timing=main

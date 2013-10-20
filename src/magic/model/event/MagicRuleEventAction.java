@@ -185,7 +185,7 @@ public enum MagicRuleEventAction {
         }
     },
     PumpSelf(
-        "sn gets (?<pt>[0-9+]+/[0-9+]+) until end of turn.", 
+        "sn gets (?<pt>[+-][0-9]+/[+-][0-9]+) until end of turn.", 
         MagicTiming.Pump, 
         "Pump"
     ) {

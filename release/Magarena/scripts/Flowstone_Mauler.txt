@@ -7,5 +7,5 @@ type=Creature
 subtype=Beast
 cost={4}{R}{R}
 pt=4/5
-ability=trample;pump {R} +1/-1
+ability=trample;pay {R}: SN gets +1/-1 until end of turn.
 timing=main

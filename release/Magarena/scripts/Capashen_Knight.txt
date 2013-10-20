@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Knight
 cost={1}{W}
 pt=1/1
-ability=first strike;pump {1}{W} +1/+0
+ability=first strike;pay {1}{W}: SN gets +1/+0 until end of turn.
 timing=main

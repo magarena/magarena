@@ -7,5 +7,5 @@ type=Creature
 subtype=Goat,Beast
 cost={2}{R}
 pt=1/1
-ability=mountainwalk;pump {R} +1/+0
+ability=mountainwalk;pay {R}: SN gets +1/+0 until end of turn.
 timing=main

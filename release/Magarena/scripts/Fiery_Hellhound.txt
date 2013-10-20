@@ -7,5 +7,5 @@ type=Creature
 subtype=Elemental,Hound
 cost={1}{R}{R}
 pt=2/2
-ability=pump {R} +1/+0
+ability=pay {R}: SN gets +1/+0 until end of turn.
 timing=main

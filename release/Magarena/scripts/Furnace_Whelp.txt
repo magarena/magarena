@@ -7,5 +7,5 @@ type=Creature
 subtype=Dragon
 cost={2}{R}{R}
 pt=2/2
-ability=flying;pump {R} +1/+0
+ability=flying;pay {R}: SN gets +1/+0 until end of turn.
 timing=main

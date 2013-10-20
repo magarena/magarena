@@ -7,5 +7,5 @@ type=Creature
 subtype=Yeti
 cost={4}{G}{G}
 pt=5/5
-ability=pump {R}{G} +1/-1
+ability=pay {R}{G}: SN gets +1/-1 until end of turn.
 timing=main
