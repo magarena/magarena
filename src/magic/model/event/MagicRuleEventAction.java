@@ -256,6 +256,38 @@ public enum MagicRuleEventAction {
             return Character.toUpperCase(ability.charAt(0)) + ability.substring(1);
         }
     },
+    GainGroup(
+        "(?<group>[^\\.]*) gain (?<ability>[^\\.]*) until end of turn."
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final MagicAbility ability = MagicAbility.getAbility(matcher.group("ability"));
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.build(matcher.group("group"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final Collection<MagicPermanent> targets = game.filterPermanents(
+                        event.getPlayer(),
+                        filter
+                    );
+                    for (final MagicPermanent creature : targets) {
+                        game.doAction(new MagicGainAbilityAction(creature,ability));
+                    }
+                }
+            };
+        }
+        public MagicTiming getTiming(final String rule) {
+            final Matcher matcher = matched(rule);
+            final MagicAbility ability = MagicAbility.getAbility(matcher.group("ability"));
+            return (ability == MagicAbility.Haste || ability == MagicAbility.Vigilance) ?
+                MagicTiming.FirstMain :
+                MagicTiming.Pump;
+        }
+        public String getName(final String rule) {
+            final String ability = matched(rule).group("ability");
+            return Character.toUpperCase(ability.charAt(0)) + ability.substring(1);
+        }
+    },
     Pump(
         "(?<choice>[^\\.]*) gets (?<pt>[0-9+]+/[0-9+]+) until end of turn.", 
         MagicTargetHint.Positive, 
