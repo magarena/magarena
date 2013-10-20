@@ -41,6 +41,7 @@ import magic.model.target.MagicWeakenTargetPicker;
 import magic.model.target.MagicBounceTargetPicker;
 import magic.model.target.MagicTapTargetPicker;
 import magic.model.target.MagicPreventTargetPicker;
+import magic.model.target.MagicDeathtouchTargetPicker;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicMayChoice;
@@ -305,6 +306,35 @@ public enum MagicRuleEventAction {
             return Character.toUpperCase(ability.charAt(0)) + ability.substring(1);
         }
     },
+    GainChosen(
+        "(?<choice>[^\\.]*) gains (?<ability>[^\\.]*) until end of turn.", 
+        MagicTargetHint.Positive
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final MagicAbility ability = MagicAbility.getAbility(matcher.group("ability"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTargetPermanent(game,new MagicPermanentAction() {
+                        public void doAction(final MagicPermanent creature) {
+                            game.doAction(new MagicGainAbilityAction(creature,ability));
+                        }
+                    });
+                }
+            };
+        }
+        public MagicTargetPicker<?> getPicker(final String rule) {
+            final Matcher matcher = matched(rule);
+            final MagicAbility ability = MagicAbility.getAbility(matcher.group("ability"));
+            switch (ability) {
+                case Deathtouch: 
+                    return MagicDeathtouchTargetPicker.getInstance();
+                default:
+                    return MagicPumpTargetPicker.create(); 
+            }
+        }
+    },
     GainGroup(
         "(?<group>[^\\.]*) gain (?<ability>[^\\.]*) until end of turn."
     ) {
@@ -539,6 +569,10 @@ public enum MagicRuleEventAction {
     
     private MagicRuleEventAction(final String aPattern) {
         this(aPattern, MagicTargetHint.None, MagicDefaultTargetPicker.create(), MagicTiming.None, "", MagicEvent.NO_ACTION);
+    }
+    
+    private MagicRuleEventAction(final String aPattern, final MagicTargetHint aHint) {
+        this(aPattern, aHint, MagicDefaultTargetPicker.create(), MagicTiming.None, "", MagicEvent.NO_ACTION);
     }
     
     private MagicRuleEventAction(
