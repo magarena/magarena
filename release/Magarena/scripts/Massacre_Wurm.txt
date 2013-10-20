@@ -8,5 +8,6 @@ type=Creature
 subtype=Wurm
 cost={3}{B}{B}{B}
 pt=6/5
-timing=fmain
+ability=enters effect Creatures your opponents control get -2/-2 until end of turn.
+timing=main
 requires_groovy_code
