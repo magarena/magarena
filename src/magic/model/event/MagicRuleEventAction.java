@@ -47,6 +47,7 @@ import magic.model.target.MagicFirstStrikeTargetPicker;
 import magic.model.target.MagicHasteTargetPicker;
 import magic.model.target.MagicIndestructibleTargetPicker;
 import magic.model.target.MagicTrampleTargetPicker;
+import magic.model.target.MagicFlyingTargetPicker;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicMayChoice;
@@ -367,6 +368,8 @@ public enum MagicRuleEventAction {
                     return MagicIndestructibleTargetPicker.create();
                 case Trample:
                     return MagicTrampleTargetPicker.create();
+                case Flying:
+                    return MagicFlyingTargetPicker.create();
                 default:
                     return MagicPumpTargetPicker.create(); 
             }
