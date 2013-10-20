@@ -5,5 +5,5 @@ value=1.872
 rarity=C
 type=Instant
 cost={R}
+effect=Creatures PN controls get +1/+0 until end of turn.
 timing=pump
-requires_groovy_code
