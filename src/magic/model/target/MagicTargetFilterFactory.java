@@ -27,6 +27,7 @@ public class MagicTargetFilterFactory {
         factory.put("creatures you control", TARGET_CREATURE_YOU_CONTROL);
         factory.put("creatures PN controls", TARGET_CREATURE_YOU_CONTROL);
         factory.put("creatures your opponents control", TARGET_CREATURE_YOUR_OPPONENT_CONTROLS);
+        factory.put("creatures PN's opponents control", TARGET_CREATURE_YOUR_OPPONENT_CONTROLS);
         factory.put("creatures with flying your opponents control", TARGET_CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS);
         factory.put("creatures you control with flying", TARGET_CREATURE_WITH_FLYING_YOU_CONTROL);
         factory.put("non-human creatures you control", TARGET_NONHUMAN_CREATURE_YOU_CONTROL);
@@ -168,6 +169,8 @@ public class MagicTargetFilterFactory {
             return matchCreaturePrefix(arg, " creatures you control", Control.You);
         } else if (arg.endsWith(" creatures your opponents control")) {
             return matchCreaturePrefix(arg, " creatures your opponents control", Control.Opp);
+        } else if (arg.endsWith(" creatures pn's opponents control")) {
+            return matchCreaturePrefix(arg, " creatures pn's opponents control", Control.Opp);
         } else if (arg.endsWith(" creatures")) {
             return matchCreaturePrefix(arg, " creatures", Control.Any);
         } else if (arg.endsWith(" you control")) {

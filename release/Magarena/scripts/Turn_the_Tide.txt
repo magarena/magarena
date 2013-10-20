@@ -5,5 +5,5 @@ value=2.569
 rarity=C
 type=Instant
 cost={1}{U}
-effect=Creatures your opponents control get -2/-0 until end of turn.
+effect=Creatures PN's opponents control get -2/-0 until end of turn.
 timing=removal
