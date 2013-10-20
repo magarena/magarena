@@ -7,5 +7,5 @@ type=Creature
 subtype=Rhino,Soldier
 cost={1}{G}{W}
 pt=3/3
-timing=fmain
-requires_groovy_code
+ability=pay {S}: Creatures PN controls gain indestructible until end of turn.
+timing=main
