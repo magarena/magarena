@@ -1,25 +1,4 @@
 [
-    new MagicBattalionTrigger() {
-        @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicPermanent attacker) {
-            return new MagicEvent(
-                permanent,
-                this,
-                "Creatures PN controls gain indestructible until end of turn."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> creatures=
-                game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-            for (final MagicPermanent creature : creatures) {
-                game.doAction(new MagicGainAbilityAction(creature,MagicAbility.Indestructible));
-            }
-        }
-    },
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Counter),
         "Counter"
