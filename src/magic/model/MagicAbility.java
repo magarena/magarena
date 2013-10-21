@@ -314,6 +314,13 @@ public enum MagicAbility {
             ));
         }
     },
+    AttacksEffectMay("attacks effect PN may", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            card.add(MagicWhenSelfAttacksTrigger.create(
+                MagicRuleEventAction.createMay(arg)
+            ));
+        }
+    },
     AllyGrow("ally grow",20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
