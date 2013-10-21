@@ -8,8 +8,7 @@
                 this,
                 "PN may\$ have SN deal 1 damage " +
                 "to each creature defending player controls."
-            ) :
-            MagicEvent.NONE;
+            );
         }
 
         @Override

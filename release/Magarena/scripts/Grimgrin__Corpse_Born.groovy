@@ -52,8 +52,7 @@
                 this,
                 "Destroy target creature\$ your opponent controls, " +
                 "then put a +1/+1 counter on SN."
-            ):
-            MagicEvent.NONE;
+            );
         }
 
         @Override

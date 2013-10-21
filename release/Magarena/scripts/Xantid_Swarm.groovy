@@ -7,8 +7,7 @@
                 game.getDefendingPlayer(),
                 this,
                 "PN can't cast spells this turn."
-            ):
-            MagicEvent.NONE;
+            );
         }
 
         @Override
