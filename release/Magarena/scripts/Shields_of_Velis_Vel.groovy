@@ -16,7 +16,7 @@
                     final Collection<MagicPermanent> targets = player.filterPermanents(MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
                     for (final MagicPermanent creature : targets) {
                         game.doAction(new MagicChangeTurnPTAction(creature,0,1));
-                        game.doAction(new MagicGainAbilityAction(creature,MagicAbility.Changeling));
+                        game.doAction(new MagicAddStaticAction(creature,MagicStatic.AllCreatureTypesUntilEOT));
                     }
                 }
             });
