@@ -9,7 +9,7 @@ cost={4}{W}{W}
 pt=3/3
 ability=vigilance;\
         lord other soldier creatures you control get +1/+1;\
-        lord other soldier creatures you control have vigilance
+        lord other soldier creatures you control have vigilance;\
+        enters effect PN puts three 1/1 white Soldier creature tokens onto the battlefield.
 static=player
 timing=main
-requires_groovy_code
