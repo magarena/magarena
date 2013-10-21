@@ -23,29 +23,24 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int X = event.getRefInt();
-            final MagicPermanent permanent = event.getPermanent();
             final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
                 @Override
                 public void modPowerToughness(
-                        final MagicPermanent S,
-                        final MagicPermanent P,
-                        final MagicPowerToughness pt) {
+                    final MagicPermanent S,
+                    final MagicPermanent P,
+                    final MagicPowerToughness pt
+                ) {
                     pt.set(X,X);
                 }
             };
-            final MagicStatic ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
-                @Override
-                public void modSubTypeFlags(
-                        final MagicPermanent P,
-                        final Set<MagicSubType> flags) {
-                    flags.addAll(MagicSubType.ALL_CREATURES);
-                }
-            };
-            final Collection<MagicPermanent> creatures=game.filterPermanents(
-                    permanent.getController(),
-                    MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+            final MagicPlayer you = event.getPlayer();
+            final Collection<MagicPermanent> creatures = you.filterPermanents(MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicPermanent creature : creatures) {
-                game.doAction(new MagicBecomesCreatureAction(creature,PT,ST));
+                game.doAction(new MagicBecomesCreatureAction(
+                    creature,
+                    PT,
+                    MagicStatic.AllCreatureTypesUntilEOT
+                ));
             }
         }
     }
