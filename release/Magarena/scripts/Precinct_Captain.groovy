@@ -16,7 +16,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicPlayTokenAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("Soldier")
+                TokenCardDefinitions.get("1/1 white Soldier creature token")
             ));
         }
     }

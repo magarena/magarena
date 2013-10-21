@@ -5,5 +5,5 @@ value=4.402
 rarity=C
 type=Instant
 cost={1}{W}
+effect=PN puts two 1/1 white Soldier creature tokens onto the battlefield.
 timing=token
-requires_groovy_code
