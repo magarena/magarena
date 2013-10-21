@@ -336,6 +336,13 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
              return flags | MagicType.Artifact.getMask();
          }
     };
+            
+    public static MagicStatic AllCreatureTypesUntilEOT = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
+        @Override
+        public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
+            flags.addAll(MagicSubType.ALL_CREATURES);
+        }
+    };
     
     public static MagicStatic Bestowed = new MagicStatic(MagicLayer.Type) {
          @Override
