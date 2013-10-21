@@ -30,7 +30,6 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicAllyGrowTrigger;
 import magic.model.trigger.MagicAnnihilatorTrigger;
-import magic.model.trigger.MagicAttacksPumpTrigger;
 import magic.model.trigger.MagicBattleCryTrigger;
 import magic.model.trigger.MagicBecomesBlockedPumpTrigger;
 import magic.model.trigger.MagicBloodthirstTrigger;
@@ -82,6 +81,7 @@ import magic.model.trigger.MagicWhenTargetedTrigger;
 import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 import magic.model.trigger.MagicHeroicTrigger;
 import magic.model.trigger.MagicBattalionTrigger;
+import magic.model.trigger.MagicWhenSelfAttacksTrigger;
 
 import java.util.EnumSet;
 import java.util.Set;
@@ -307,12 +307,11 @@ public enum MagicAbility {
             card.add(new MagicRampageTrigger(n));
         }
     },
-    AttacksPump("attacks pump", 10) {
+    AttacksEffect("attacks effect", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final String[] pt = arg.replace("+","").split("/");
-            final int power = Integer.parseInt(pt[0]);
-            final int toughness = Integer.parseInt(pt[1]);
-            card.add(new MagicAttacksPumpTrigger(power,toughness));
+            card.add(MagicWhenSelfAttacksTrigger.create(
+                MagicRuleEventAction.create(arg)
+            ));
         }
     },
     AllyGrow("ally grow",20) {

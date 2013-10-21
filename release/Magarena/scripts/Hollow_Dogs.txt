@@ -7,5 +7,5 @@ type=Creature
 subtype=Zombie,Hound
 cost={4}{B}
 pt=3/3
-ability=attacks pump +2/+0
+ability=attacks effect SN gets +2/+0 until end of turn.
 timing=main
