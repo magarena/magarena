@@ -18,7 +18,11 @@
             }
             if (player.getNrOfPermanents(MagicType.Creature) <
                 player.getOpponent().getNrOfPermanents(MagicType.Creature)) {
-                game.doAction(new MagicPlayTokensAction(player,TokenCardDefinitions.get("Soldier"),3));
+                game.doAction(new MagicPlayTokensAction(
+                    player,
+                    TokenCardDefinitions.get("1/1 white Soldier creature token"),
+                    3
+                ));
             }
         }
     }
