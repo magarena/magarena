@@ -579,19 +579,20 @@ public enum MagicRuleEventAction {
         }
     },
     TokenMany(
-        "pn puts (?<amount>[a-z]+) (?<name>[^\\.]*)s onto the battlefield.",
+        "pn puts (?<amount>[a-z]+) (?<name>[^\\.]*tokens[^\\.]*) onto the battlefield.",
         MagicTiming.Token,
         "Token"
     ) {
         public MagicEventAction getAction(final String rule) {
             final Matcher matcher = matched(rule);
             final int amount = englishToInt(matcher.group("amount"));
+            final String tokenName = matcher.group("name").replace("tokens", "token");
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     game.doAction(new MagicPlayTokensAction(
                         event.getPlayer(),
-                        TokenCardDefinitions.get(matcher.group("name")),
+                        TokenCardDefinitions.get(tokenName),
                         amount
                     ));
                 }
