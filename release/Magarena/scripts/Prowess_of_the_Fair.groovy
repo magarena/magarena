@@ -17,7 +17,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicPlayTokenAction(event.getPlayer(), TokenCardDefinitions.get("Elf1")));
+                game.doAction(new MagicPlayTokenAction(
+                    event.getPlayer(), 
+                    TokenCardDefinitions.get("1/1 green Elf Warrior creature token")
+                ));
             }
         }
     }
