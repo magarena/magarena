@@ -7,6 +7,6 @@ type=Creature
 subtype=Drake
 cost={4}{U}
 pt=3/3
-ability=flying
+ability=flying;\
+        attacks effect Target creature you control gains flying until end of turn.
 timing=main
-requires_groovy_code
