@@ -683,6 +683,10 @@ public enum MagicRuleEventAction {
         return name;
     }
 
+    public boolean isIndependent() {
+        return pattern.toString().contains("sn") == false;
+    }
+
     public MagicChoice getChoice(final String rule) {
         final Matcher matcher = matched(rule);
         try {

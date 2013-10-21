@@ -101,16 +101,28 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
 
     public static final MagicPermanentActivation create(final String act) {
         final String[] token = act.split(COLON);
-        final String[] costs = token[0].split(COMMA);
+        final String cost = token[0];
         final String rule = token[1];
+        
+        final String[] costs = cost.split(COMMA);
         
         final MagicSourceEvent sourceEvent = MagicRuleEventAction.create(rule);
         final MagicRuleEventAction ruleAction = sourceEvent.getRule();
         final MagicTiming timing = ruleAction.getTiming(rule);
         final String name = ruleAction.getName(rule);
 
+        final boolean isCostIndependent = (
+               cost.contains("{T}") 
+            || cost.contains("{S}") 
+            || cost.contains("{E}") 
+            || cost.contains("{Q}") 
+            || cost.contains("{+1/+1}") 
+            || cost.contains("{C}") 
+            || cost.contains("{C3}")
+        ) == false;
+
         return new MagicPermanentActivation(
-            new MagicActivationHints(timing),
+            new MagicActivationHints(timing, isCostIndependent && ruleAction.isIndependent()),
             name
         ) {
             @Override
