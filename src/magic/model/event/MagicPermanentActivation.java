@@ -111,6 +111,8 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
         final MagicTiming timing = ruleAction.getTiming(rule);
         final String name = ruleAction.getName(rule);
 
+        assert englishToCostEvents(costs, MagicPermanent.NONE).size() > 0;
+
         final boolean isCostIndependent = (
                cost.contains("{T}") 
             || cost.contains("{S}") 
@@ -158,6 +160,8 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
                 events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_ELF));
             } else if (cost.equals("Sacrifice a Bat")) {
                 events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_BAT));
+            } else if (cost.equals("Sacrifice a Samurai")) {
+                events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_SAMURAI));
             } else if (cost.equals("Discard a card")) {
                 events.add(new MagicDiscardEvent(source));
             } else if (cost.equals("{E}")) {
