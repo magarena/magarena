@@ -5,7 +5,8 @@ value=4.186
 rarity=R
 type=Artifact
 cost={5}
-ability=indestructible;lord myr creatures get +1/+1
+ability=indestructible;\
+        lord myr creatures get +1/+1;\
+        pay {5}: PN puts a 1/1 colorless Myr artifact creature token onto the battlefield.
 static=all
 timing=main
-requires_groovy_code
