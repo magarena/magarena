@@ -42,19 +42,18 @@
             ));
         }
     },
-    new MagicWhenAttacksTrigger() {
+    new MagicWhenSelfAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            return (permanent == creature) ?
-                new MagicEvent(
-                    permanent,
-                    MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
-                    new MagicDestroyTargetPicker(false),
-                    this,
-                    "Destroy target creature\$ your opponent controls, " +
-                    "then put a +1/+1 counter on SN."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
+                new MagicDestroyTargetPicker(false),
+                this,
+                "Destroy target creature\$ your opponent controls, " +
+                "then put a +1/+1 counter on SN."
+            ):
+            MagicEvent.NONE;
         }
 
         @Override

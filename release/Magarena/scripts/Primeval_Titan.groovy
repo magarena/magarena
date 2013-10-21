@@ -28,10 +28,10 @@ def Event = {
             return Event(permanent);
         }
     },
-    new MagicWhenAttacksTrigger() {
+    new MagicWhenSelfAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            return (permanent == creature) ? Event(permanent) : MagicEvent.NONE;
+            return Event(permanent);
         }
     }      
 ]

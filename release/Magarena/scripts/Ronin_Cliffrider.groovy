@@ -1,16 +1,15 @@
 [
-    new MagicWhenAttacksTrigger() {
+    new MagicWhenSelfAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            return (permanent == creature) ?
-                new MagicEvent(
-                    permanent,
-                    new MagicMayChoice(),
-                    this,
-                    "PN may\$ have SN deal 1 damage " +
-                    "to each creature defending player controls."
-                ) :
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                new MagicMayChoice(),
+                this,
+                "PN may\$ have SN deal 1 damage " +
+                "to each creature defending player controls."
+            ) :
+            MagicEvent.NONE;
         }
 
         @Override

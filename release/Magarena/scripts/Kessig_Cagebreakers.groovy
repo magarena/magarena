@@ -1,16 +1,15 @@
 [
-    new MagicWhenAttacksTrigger() {
+    new MagicWhenSelfAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            return permanent == creature ?
-                new MagicEvent(
-                    permanent,
-                    this,
-                    "PN puts a 2/2 green Wolf creature token onto " +
-                    "the battlefield tapped and attacking for each creature " +
-                    "card in his or her graveyard."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                this,
+                "PN puts a 2/2 green Wolf creature token onto " +
+                "the battlefield tapped and attacking for each creature " +
+                "card in his or her graveyard."
+            ):
+            MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
