@@ -1,4 +1,4 @@
-name=Bat
+name=1/1 black Bat creature token with flying
 token=Bat
 image=http://img.photobucket.com/albums/v237/Xand0r/bat-token_guildpact_300.jpg
 value=2

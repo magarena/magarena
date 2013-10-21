@@ -7,6 +7,8 @@ type=Creature
 subtype=Vampire,Skeleton
 cost={4}{B}{B}
 pt=3/3
-ability=flying
+ability=flying;\
+        enters effect PN puts two 1/1 black Bat creature tokens with flying onto the battlefield.;\
+        pay {3}{B}{B}, Sacrifice a Bat: PN puts two 1/1 black Bat creature tokens with flying onto the battlefield.
 timing=main
 requires_groovy_code
