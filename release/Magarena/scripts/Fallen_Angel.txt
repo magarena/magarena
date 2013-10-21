@@ -7,6 +7,6 @@ type=Creature
 subtype=Angel
 cost={3}{B}{B}
 pt=3/3
-ability=flying
+ability=flying;\
+        pay Sacrifice a creature: SN gets +2/+1 until end of turn.
 timing=main
-requires_groovy_code
