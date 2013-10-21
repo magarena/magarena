@@ -5,5 +5,5 @@ value=3.041
 rarity=C
 type=Sorcery
 cost={3}{W}
+effect=PN puts three 1/1 white Soldier creature tokens onto the battlefield.
 timing=token
-requires_groovy_code
