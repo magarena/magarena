@@ -1,4 +1,4 @@
-name=Centaur3
+name=3/3 green Centaur creature token
 token=Centaur
 image=http://magiccards.info/extras/token/return-to-ravnica/centaur-1.jpg
 value=3

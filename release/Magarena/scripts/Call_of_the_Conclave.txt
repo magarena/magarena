@@ -5,5 +5,5 @@ value=3.914
 rarity=U
 type=Sorcery
 cost={G}{W}
-timing=main
-requires_groovy_code
+effect=PN puts a 3/3 green Centaur creature token onto the battlefield.
+timing=token
