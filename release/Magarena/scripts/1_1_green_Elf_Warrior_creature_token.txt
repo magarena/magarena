@@ -1,4 +1,4 @@
-name=Elf1
+name=1/1 green Elf Warrior creature token
 token=Elf Warrior
 image=http://magiccards.info/extras/token/shadowmoor/elf-warrior-1.jpg
 value=1
