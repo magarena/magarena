@@ -8,7 +8,6 @@ def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
     @Override
     public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
         flags.add(MagicAbility.Flying);
-        flags.add(MagicAbility.Changeling);
     }
 };
 
@@ -28,7 +27,12 @@ def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 MagicPermanent creature ->
-                game.doAction(new MagicBecomesCreatureAction(creature,PT,AB));
+                game.doAction(new MagicBecomesCreatureAction(
+                    creature,
+                    PT,
+                    MagicStatic.AllCreatureTypesUntilEOT,
+                    AB
+                ));
             } as MagicPermanentAction);
         }
     }
