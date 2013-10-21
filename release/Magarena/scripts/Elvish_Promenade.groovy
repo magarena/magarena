@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "PN puts a 1/1 green Elf Warrior creature tokens onto the battlefield " +
+                "PN puts a 1/1 green Elf Warrior creature token onto the battlefield " +
                 "for each Elf creature he or she controls."
             );
         }
@@ -14,7 +14,7 @@
             final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicPlayTokensAction(
                 player,
-                TokenCardDefinitions.get("Elf1"),
+                TokenCardDefinitions.get("1/1 green Elf Warrior creature token"),
                 player.getNrOfPermanents(MagicTargetFilter.TARGET_ELF)
             ));
         }
