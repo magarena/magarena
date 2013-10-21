@@ -7,5 +7,6 @@ type=Creature
 subtype=Fungus
 cost={1}{G}{G}
 pt=2/2
+ability=pay Sacrifice a Saproling: SN gets +1/+2 until end of turn.
 timing=main
-requires_groovy_code=Thallid;Thallid Devourer
+requires_groovy_code=Thallid
