@@ -14,7 +14,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player=event.getPlayer();
-            final MagicCard card=MagicCard.createTokenCard(TokenCardDefinitions.get("Soldier"),player);
+            final MagicCard card=MagicCard.createTokenCard(
+                TokenCardDefinitions.get("1/1 white Soldier creature token"),
+                player
+            );
             for (int count=0; count < 2; count++) {
                 game.doAction(new MagicPlayCardAction(
                     card,

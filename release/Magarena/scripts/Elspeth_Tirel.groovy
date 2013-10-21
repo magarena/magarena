@@ -28,7 +28,11 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicPlayTokensAction(event.getPlayer(), TokenCardDefinitions.get("Soldier"), 3));
+            game.doAction(new MagicPlayTokensAction(
+                event.getPlayer(), 
+                TokenCardDefinitions.get("1/1 white Soldier creature token"), 
+                3
+            ));
         }
     },
     new MagicPlaneswalkerActivation(-5) {
