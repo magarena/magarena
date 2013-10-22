@@ -5,5 +5,5 @@ value=2.833
 rarity=C
 type=Sorcery
 cost={4}{W}
+effect=PN puts two 2/2 white Knight creature tokens with vigilance onto the battlefield.
 timing=token
-requires_groovy_code
