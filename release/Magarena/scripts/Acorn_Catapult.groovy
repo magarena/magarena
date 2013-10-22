@@ -36,7 +36,7 @@
                     game.doAction(new MagicDealDamageAction(damage));
                     game.doAction(new MagicPlayTokenAction(
                         target.getController(),
-                        TokenCardDefinitions.get("Squirrel1")
+                        TokenCardDefinitions.get("1/1 green Squirrel creature token")
                     ));
                 }
             });

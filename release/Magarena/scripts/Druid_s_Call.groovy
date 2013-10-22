@@ -21,7 +21,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicPlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("Squirrel1"),
+                TokenCardDefinitions.get("1/1 green Squirrel creature token"),
                 event.getRefInt()
             ));
         }

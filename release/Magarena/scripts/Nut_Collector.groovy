@@ -20,7 +20,7 @@
             if (event.isYes()) {
                 game.doAction(new MagicPlayTokenAction(
                     event.getPlayer(),
-                    TokenCardDefinitions.get("Squirrel1")
+                    TokenCardDefinitions.get("1/1 green Squirrel creature token")
                 ));
             }
         }
