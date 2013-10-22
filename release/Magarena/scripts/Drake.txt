@@ -1,4 +1,4 @@
-name=Drake
+name=2/2 blue Drake creature token with flying
 token=Drake
 image=http://magiccards.info/extras/token/magic-2013/drake.jpg
 value=2
