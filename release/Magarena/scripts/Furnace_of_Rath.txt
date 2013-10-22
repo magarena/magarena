@@ -1,0 +1,9 @@
+name=Furnace of Rath
+url=http://magiccards.info/dpa/en/44.html
+image=http://magiccards.info/scans/en/dpa/44.jpg
+value=4.444
+rarity=R
+type=Enchantment
+cost={1}{R}{R}{R}
+timing=enchantment
+requires_groovy_code
