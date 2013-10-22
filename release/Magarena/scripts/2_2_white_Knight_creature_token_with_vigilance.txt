@@ -1,4 +1,4 @@
-name=Knight2
+name=2/2 white Knight creature token with vigilance
 token=Knight
 image=http://magiccards.info/extras/token/return-to-ravnica/knight.jpg
 value=3
