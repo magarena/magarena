@@ -1,4 +1,4 @@
-name=Squirrel1
+name=1/1 green Squirrel creature token
 token=Squirrel
 image=http://magiccards.info/extras/token/player-rewards-2002/squirrel.jpg
 value=1
