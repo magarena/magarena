@@ -8,6 +8,7 @@ import magic.model.MagicPermanentState;
 import magic.model.MagicDamage;
 import magic.model.MagicCounterType;
 import magic.model.MagicAbility;
+import magic.model.MagicCardDefinition;
 import magic.model.action.MagicCardOnStackAction;
 import magic.model.action.MagicCounterItemOnStackAction;
 import magic.model.action.MagicDestroyAction;
@@ -567,12 +568,13 @@ public enum MagicRuleEventAction {
     ) {
         public MagicEventAction getAction(final String rule) {
             final Matcher matcher = matched(rule);
+            final MagicCardDefinition tokenDef = TokenCardDefinitions.get(matcher.group("name"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     game.doAction(new MagicPlayTokenAction(
                         event.getPlayer(),
-                        TokenCardDefinitions.get(matcher.group("name"))
+                        tokenDef
                     ));
                 }
             };
@@ -587,12 +589,13 @@ public enum MagicRuleEventAction {
             final Matcher matcher = matched(rule);
             final int amount = englishToInt(matcher.group("amount"));
             final String tokenName = matcher.group("name").replace("tokens", "token");
+            final MagicCardDefinition tokenDef = TokenCardDefinitions.get(tokenName);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     game.doAction(new MagicPlayTokensAction(
                         event.getPlayer(),
-                        TokenCardDefinitions.get(tokenName),
+                        tokenDef,
                         amount
                     ));
                 }
