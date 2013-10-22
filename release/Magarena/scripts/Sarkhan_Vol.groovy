@@ -55,7 +55,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicPlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("Dragon4"),
+                TokenCardDefinitions.get("4/4 red Dragon creature token with flying"),
                 5
             ));
         }
