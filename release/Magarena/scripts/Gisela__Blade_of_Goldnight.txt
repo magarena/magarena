@@ -1,0 +1,12 @@
+name=Gisela, Blade of Goldnight
+url=http://magiccards.info/avr/en/209.html
+image=http://magiccards.info/scans/en/avr/209.jpg
+value=4.230
+rarity=M
+type=Legendary,Creature
+subtype=Angel
+cost={4}{R}{W}{W}
+ability=flying;first strike
+pt=5/5
+timing=main
+requires_groovy_code

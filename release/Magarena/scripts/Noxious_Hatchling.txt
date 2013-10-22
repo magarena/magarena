@@ -1,0 +1,13 @@
+name=Noxious Hatchling
+url=http://magiccards.info/eve/en/124.html
+image=http://magiccards.info/scans/en/eve/124.jpg
+value=3.513
+rarity=U
+type=Creature
+subtype=Elemental
+cost={3}{B/G}
+ability=wither;enters with -1/-1 4
+pt=6/6
+timing=main
+requires_groovy_code
+
