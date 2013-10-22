@@ -1,4 +1,4 @@
-name=Cat21
+name=2/1 black Cat creature token
 token=Cat
 image=http://forums.mtgsalvation.com/attachment.php?attachmentid=19957&amp;d=1143667949
 value=2

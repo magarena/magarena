@@ -6,6 +6,6 @@ rarity=C
 type=Creature
 subtype=Cat
 cost={2}{G}
+ability=dies effect PN puts a 2/1 black Cat creature token onto the battlefield.
 pt=2/1
 timing=main
-requires_groovy_code
