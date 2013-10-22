@@ -1,4 +1,4 @@
-name=Insect3
+name=1/1 green Insect creature token with flying and deathtouch
 token=Insect
 image=http://i167.photobucket.com/albums/u148/Ruja/Magic%20Tokens/Insect.jpg
 value=3
