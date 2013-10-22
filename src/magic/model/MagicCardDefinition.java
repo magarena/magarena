@@ -58,14 +58,6 @@ public class MagicCardDefinition implements MagicAbilityStore {
         }
     };
 
-    private static int numTriggers;
-    private static int numStatics;
-    private static int numPermanentActivations;
-    private static int numCardActivations;
-    private static int numManaActivations;
-    private static int numSpellEvent;
-    private static int numCDAs;
-
     // name displayed in UI, may be repeated in tokens
     private String name;
 
@@ -108,6 +100,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     private final Collection<MagicEventSource> costEventSources=new ArrayList<MagicEventSource>();
     private boolean excludeManaOrCombat;
 
+    private String abilityProperty;
     private String requiresGroovy;
 
     public MagicCardDefinition() {
@@ -116,6 +109,9 @@ public class MagicCardDefinition implements MagicAbilityStore {
 
     protected void initialize() {}
 
+    public void setAbilityProperty(final String value) {
+        abilityProperty = value;
+    }
 
     public void setRequiresGroovy(final String value) {
         requiresGroovy = value;
@@ -126,16 +122,10 @@ public class MagicCardDefinition implements MagicAbilityStore {
             CardProperty.LOAD_GROOVY_CODE.setProperty(this, requiresGroovy);
             requiresGroovy = null;
         }
-    }
-
-    public static void printStatistics() {
-        System.err.println(numTriggers + " triggers");
-        System.err.println(numStatics + " statics");
-        System.err.println(numPermanentActivations + " permanent activations");
-        System.err.println(numCardActivations + " card activations");
-        System.err.println(numManaActivations + " mana activations");
-        System.err.println(numSpellEvent + " spell event");
-        System.err.println(numCDAs + " CDAs");
+        if (abilityProperty != null) {
+            CardProperty.LOAD_ABILITY.setProperty(this, abilityProperty);
+            abilityProperty = null;
+        }
     }
 
     public boolean isValid() {
@@ -622,7 +612,6 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public void setEvent(final MagicCardEvent aCardEvent) {
         assert cardEvent == MagicPlayCardEvent.create() : "Attempting to set two MagicCardEvents for " + this;
         cardEvent = aCardEvent;
-        numSpellEvent++;
     }
 
     public MagicCardEvent getCardEvent() {
@@ -645,7 +634,6 @@ public class MagicCardDefinition implements MagicAbilityStore {
 
     public void addCDA(final MagicCDA cda) {
         CDAs.add(cda);
-        numCDAs++;
     }
 
     public void addCostEvent(final MagicEventSource eventSource) {
@@ -654,7 +642,6 @@ public class MagicCardDefinition implements MagicAbilityStore {
 
     public void addTrigger(final MagicWhenSpellIsCastTrigger trigger) {
         spellIsCastTriggers.add(trigger);
-        numTriggers++;
     }
 
     public void addTrigger(final MagicWhenComesIntoPlayTrigger trigger) {
@@ -663,27 +650,22 @@ public class MagicCardDefinition implements MagicAbilityStore {
         } else {
             comeIntoPlayTriggers.addFirst(trigger);
         }
-        numTriggers++;
     }
 
     public void addTrigger(final MagicWhenPutIntoGraveyardTrigger trigger) {
         putIntoGraveyardTriggers.add(trigger);
-        numTriggers++;
     }
 
     public void addTrigger(final MagicWhenDrawnTrigger trigger) {
         drawnTriggers.add(trigger);
-        numTriggers++;
     }
 
     public void addTrigger(final MagicTrigger<?> trigger) {
         triggers.add(trigger);
-        numTriggers++;
     }
 
     public void addStatic(final MagicStatic mstatic) {
         statics.add(mstatic);
-        numStatics++;
     }
 
     public Collection<MagicTrigger<?>> getTriggers() {
@@ -712,12 +694,10 @@ public class MagicCardDefinition implements MagicAbilityStore {
 
     public void addAct(final MagicPermanentActivation activation) {
         permActivations.add(activation);
-        numPermanentActivations++;
     }
 
     public void addCardAct(final MagicCardActivation activation) {
         cardActivations.add(activation);
-        numCardActivations++;
     }
 
     public Collection<MagicActivation<MagicPermanent>> getActivations() {
@@ -726,7 +706,6 @@ public class MagicCardDefinition implements MagicAbilityStore {
 
     public void addManaAct(final MagicManaActivation activation) {
         manaActivations.add(activation);
-        numManaActivations++;
     }
 
     public Collection<MagicManaActivation> getManaActivations() {
