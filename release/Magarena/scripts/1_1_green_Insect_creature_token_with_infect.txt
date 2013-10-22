@@ -1,4 +1,4 @@
-name=Insect1
+name=1/1 green Insect creature token with infect
 token=Insect
 image=http://magiccards.info/extras/token/scars-of-mirrodin/insect.jpg
 value=1
