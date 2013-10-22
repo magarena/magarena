@@ -6,8 +6,7 @@
                 new MagicEvent(
                     permanent,
                     this,
-                    "PN puts a 6/1 green Insect creature token " +
-                    "with shroud onto the battlefield."
+                    "PN puts a 6/1 green Insect creature token with shroud onto the battlefield."
                 ) :
                 MagicEvent.NONE;
         }
@@ -15,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicPlayTokenAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("Insect2")
+                TokenCardDefinitions.get("6/1 green Insect creature token with shroud")
             ));
         }
     }

@@ -1,4 +1,4 @@
-name=Insect2
+name=6/1 green Insect creature token with shroud
 token=Insect
 image=http://forums.mtgsalvation.com/attachment.php?attachmentid=42433&amp;stc=1&amp;d=1173951402
 value=3
