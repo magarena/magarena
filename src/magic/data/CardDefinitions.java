@@ -160,7 +160,7 @@ public class CardDefinitions {
             
         if (Boolean.getBoolean("debug")) {
             for (final MagicCardDefinition cdef : cards) {
-                cdef.loadScript();
+                cdef.loadAbilities();
             }
         }
 

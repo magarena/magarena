@@ -47,7 +47,7 @@ public class MagicCard extends MagicObjectImpl implements MagicSource,MagicTarge
     }
 
     private MagicCard(final MagicCardDefinition aCardDefinition,final MagicPlayer aOwner,final long aId, final boolean aToken) {
-        aCardDefinition.loadScript();
+        aCardDefinition.loadAbilities();
         cardDefinition = aCardDefinition;
         owner = aOwner;
         id = aId;

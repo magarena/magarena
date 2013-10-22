@@ -117,7 +117,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
         requiresGroovy = value;
     }
 
-    public void loadScript() {
+    public void loadAbilities() {
         if (requiresGroovy != null) {
             CardProperty.LOAD_GROOVY_CODE.setProperty(this, requiresGroovy);
             requiresGroovy = null;
