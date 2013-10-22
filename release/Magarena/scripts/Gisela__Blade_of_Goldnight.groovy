@@ -2,14 +2,19 @@
     new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.INCREASE_DAMAGE) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            final int amount = damage.getAmount();
             if (permanent.isEnemy(damage.getTarget())) {
-                // Generates no event or action.
+                final int amount = damage.getAmount();
                 damage.setAmount(amount * 2);
-            }else{
-                int half = (int) Math.ceil((double)amount / 2);
-                // Prevention effect.
-                damage.prevent(half);
+            }
+            return MagicEvent.NONE;
+        }
+    },
+    new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.PREVENT_DAMAGE) {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+            if (permanent.isFriend(damage.getTarget())) {
+                final int amount = damage.getAmount();
+                damage.prevent((amount + 1).intdiv(2));
             }
             return MagicEvent.NONE;
         }
