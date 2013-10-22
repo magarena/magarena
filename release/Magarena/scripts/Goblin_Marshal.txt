@@ -7,6 +7,7 @@ type=Creature
 subtype=Goblin,Warrior
 cost={4}{R}{R}
 pt=3/3
-ability=echo {4}{R}{R}
+ability=echo {4}{R}{R};\
+        enters effect PN puts two 1/1 red Goblin creature tokens onto the battlefield.;\
+        dies effect PN puts two 1/1 red Goblin creature tokens onto the battlefield.
 timing=main
-requires_groovy_code
