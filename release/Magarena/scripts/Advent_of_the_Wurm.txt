@@ -5,5 +5,5 @@ value=4.154
 rarity=R
 type=Instant
 cost={1}{G}{G}{W}
+effect=PN puts a 5/5 green Wurm creature token with trample onto the battlefield.
 timing=token
-requires_groovy_code
