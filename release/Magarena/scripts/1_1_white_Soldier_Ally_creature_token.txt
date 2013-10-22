@@ -1,4 +1,4 @@
-name=Soldier Ally
+name=1/1 white Soldier Ally creature token
 token=Soldier Ally
 image=http://magiccards.info/extras/token/worldwake/soldier-ally.jpg
 value=1
