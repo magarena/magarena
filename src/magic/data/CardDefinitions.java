@@ -19,6 +19,7 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ExecutorService;
+import java.util.concurrent.TimeUnit;
 
 import org.codehaus.groovy.control.CompilerConfiguration;
 import org.codehaus.groovy.control.customizers.ImportCustomizer;
@@ -43,7 +44,6 @@ public class CardDefinitions {
     private static final Map<String,MagicCardDefinition> cardsMap = new HashMap<String, MagicCardDefinition>();
     private static final File cardDir = new File(MagicMain.getScriptsPath());
 
-    private static final ExecutorService executor = Executors.newCachedThreadPool();
 
 
     // groovy shell for evaluating groovy card scripts with autmatic imports
@@ -158,18 +158,30 @@ public class CardDefinitions {
             loadCardDefinition(file);
         }
             
-        if (Boolean.getBoolean("debug")) {
-            for (final MagicCardDefinition cdef : cards) {
-                cdef.loadAbilities();
-            }
-        }
-
         filterCards();
         printStatistics();
 
         addDefinition(MagicCardDefinition.UNKNOWN);
 
         System.err.println(getNumberOfCards()+ " card definitions");
+    }
+
+    public static void loadCardAbilities() {
+        final ExecutorService executor = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
+        for(final MagicCardDefinition cdef : getCards()) {
+            executor.execute(new Runnable() {
+                @Override
+                public void run() {
+                    cdef.loadAbilities();
+                }
+            });
+        }
+        executor.shutdown();
+        try {
+            executor.awaitTermination(100, TimeUnit.SECONDS);
+        } catch (final InterruptedException ex) {
+            throw new RuntimeException(ex);
+        }
     }
 
     public static int getNumberOfCards() {
@@ -189,6 +201,7 @@ public class CardDefinitions {
     }
 
     public static void loadCardTexts() {
+        final ExecutorService executor = Executors.newSingleThreadExecutor();
         executor.execute(new Runnable() {
             @Override
             public void run() {
@@ -199,6 +212,7 @@ public class CardDefinitions {
                 }
             }
         });
+        executor.shutdown();
     }
 
     private static void loadCardText(final MagicCardDefinition card) {

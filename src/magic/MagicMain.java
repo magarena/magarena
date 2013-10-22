@@ -85,6 +85,9 @@ public class MagicMain {
 
     static void initializeEngine() {
         CardDefinitions.loadCardDefinitions();
+        if (Boolean.getBoolean("debug")) {
+            CardDefinitions.loadCardAbilities();
+        }
         CardDefinitions.loadCardTexts();
         CubeDefinitions.loadCubeDefinitions();
         KeywordDefinitions.getInstance().loadKeywordDefinitions();
