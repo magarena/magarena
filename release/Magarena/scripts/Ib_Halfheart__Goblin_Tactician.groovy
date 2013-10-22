@@ -56,7 +56,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicPlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("Goblin1"),
+                TokenCardDefinitions.get("1/1 red Goblin creature token"),
                 2
             ));
         }
