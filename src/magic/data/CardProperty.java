@@ -85,6 +85,11 @@ public enum CardProperty {
     },
     ABILITY() {
         public void setProperty(final MagicCardDefinition card, final String value) {
+            card.setAbilityProperty(value);
+        }
+    },
+    LOAD_ABILITY() {
+        public void setProperty(final MagicCardDefinition card, final String value) {
             final String[] names=value.split(SEMI);
             for (final String name : names) {
                 MagicAbility.getAbility(name).addAbility(card, name);
