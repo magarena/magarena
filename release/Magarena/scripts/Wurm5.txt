@@ -1,4 +1,4 @@
-name=Wurm5
+name=5/5 green Wurm creature token with trample
 token=Wurm
 image=http://magiccards.info/extras/token/return-to-ravnica/wurm.jpg
 value=4
