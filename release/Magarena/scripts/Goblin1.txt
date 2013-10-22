@@ -1,4 +1,4 @@
-name=Goblin1
+name=1/1 red Goblin creature token
 token=Goblin
 image=http://img.photobucket.com/albums/v237/Xand0r/goblin-token_ravnica_300.jpg
 value=1
