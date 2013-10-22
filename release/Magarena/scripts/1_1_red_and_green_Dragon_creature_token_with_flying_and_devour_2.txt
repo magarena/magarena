@@ -1,4 +1,4 @@
-name=Dragon1
+name=1/1 red and green Dragon creature token with flying and devour 2
 token=Dragon
 image=http://magiccards.info/extras/token/alara-reborn/dragon.jpg
 value=1
