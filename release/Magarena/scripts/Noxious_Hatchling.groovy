@@ -9,7 +9,7 @@ def Trigger = {
                 new MagicEvent(
                     permanent,
                     this,
-                    "Remove a -1/-1 counter on SN."
+                    "Remove a -1/-1 counter from SN."
                 ):
                 MagicEvent.NONE;
         }
