@@ -18,7 +18,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicPlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("Bird1"),
+                TokenCardDefinitions.get("1/1 white Bird creature token with flying"),
                 event.getRefInt()
             ));
         }

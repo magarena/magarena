@@ -19,7 +19,7 @@
             if (event.isYes()) {
                 game.doAction(new MagicPlayTokenAction(
                     event.getPlayer(),
-                    TokenCardDefinitions.get("Bird1")
+                    TokenCardDefinitions.get("1/1 white Bird creature token with flying")
                 ));
             }
         }
