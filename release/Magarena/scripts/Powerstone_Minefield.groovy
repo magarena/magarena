@@ -25,5 +25,6 @@ def Event = {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             return Event(permanent, creature);
+        }
     }
 ]
