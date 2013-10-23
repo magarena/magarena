@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player=event.getPlayer();
-            game.doAction(new MagicPlayTokensAction(player,TokenCardDefinitions.get("Saproling"), 3));
+            game.doAction(new MagicPlayTokensAction(player,TokenCardDefinitions.get("1/1 green Saproling creature token"), 3));
         }
     }
 ]

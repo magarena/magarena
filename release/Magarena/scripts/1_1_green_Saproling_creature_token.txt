@@ -1,4 +1,4 @@
-name=Saproling
+name=1/1 green Saproling creature token
 token=Saproling
 image=http://magiccards.info/extras/token/tenth-edition/saproling.jpg
 value=1

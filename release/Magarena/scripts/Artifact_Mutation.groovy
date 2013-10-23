@@ -22,7 +22,7 @@
                     game.doAction(new MagicDestroyAction(permanent));
                     game.doAction(new MagicPlayTokensAction(
                         event.getPlayer(),
-                        TokenCardDefinitions.get("Saproling"),
+                        TokenCardDefinitions.get("1/1 green Saproling creature token"),
                         permanent.getConvertedCost()
                     ));
                 }

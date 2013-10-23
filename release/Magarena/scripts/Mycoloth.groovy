@@ -17,7 +17,7 @@
             final int amt = event.getPermanent().getCounters(MagicCounterType.PlusOne);
             game.doAction(new MagicPlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("Saproling"),
+                TokenCardDefinitions.get("1/1 green Saproling creature token"),
                 amt
             ));
         }
