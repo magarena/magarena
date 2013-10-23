@@ -1,4 +1,4 @@
-name=Spirit1
+name=1/1 colorless Spirit creature token
 token=Spirit
 image=http://magiccards.info/extras/token/player-rewards-2004/spirit.jpg
 value=1

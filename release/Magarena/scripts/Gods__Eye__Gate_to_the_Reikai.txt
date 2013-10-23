@@ -4,6 +4,6 @@ image=http://magiccards.info/scans/en/bok/164.jpg
 value=3.316
 rarity=U
 type=Legendary,Land
-ability=tap add mana {1}
+ability=tap add mana {1};\
+        dies effect PN puts a 1/1 colorless Spirit creature token onto the battlefield.
 timing=land
-requires_groovy_code
