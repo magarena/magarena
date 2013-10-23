@@ -461,7 +461,8 @@ checks: \
 	check_url \
 	check_image \
 	check_meta \
-	check_rarity
+	check_rarity \
+	check_tokens
 
 
 # check rarity using meta.xml
@@ -512,7 +513,7 @@ check_script_name:
 check_tokens:
 	diff \
 	<(grep token= -r release/Magarena/scripts -C 1 | grep -o "name=.*" | sed 's/name=//' | sort) \
-	<(grep "TokenCardDefinitions.get" -r release/Magarena/scripts src | grep -o '".*"' | sed 's/"//g' | sort | uniq)
+	<(grep 'TokenCardDefinitions.get("' -r release/Magarena/scripts src | grep -o '".*"' | sed 's/"//g' | sort | uniq) | grep ">" | ${NO_OUTPUT}
 
 check_unique_key:
 	grep "^[^=]*" -r release/Magarena/scripts/*.txt | sed 's/=.*//g' | sort | uniq -d | ${NO_OUTPUT}
