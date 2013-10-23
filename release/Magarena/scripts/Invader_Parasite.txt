@@ -1,0 +1,11 @@
+name=Invader Parasite
+url=http://magiccards.info/nph/en/87.html
+image=http://magiccards.info/scans/en/nph/87.jpg
+value=3.329
+rarity=R
+type=Creature
+subtype=Insect
+cost={3}{R}{R}
+pt=3/2
+timing=main
+requires_groovy_code
