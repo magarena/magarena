@@ -164,6 +164,8 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
                 events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_SAMURAI));
             } else if (cost.equals("Discard a card")) {
                 events.add(new MagicDiscardEvent(source));
+            } else if (cost.equals("Discard two cards")) {
+                events.add(new MagicDiscardEvent(source, 2));
             } else if (cost.equals("{E}")) {
                 events.add(new MagicExileEvent(source));
             } else if (cost.equals("{T}")) {
