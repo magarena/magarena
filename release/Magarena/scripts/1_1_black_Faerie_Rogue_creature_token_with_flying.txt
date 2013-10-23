@@ -1,4 +1,4 @@
-name=Faerie Rogue
+name=1/1 black Faerie Rogue creature token with flying
 token=Faerie Rogue
 image=http://magiccards.info/extras/token/morningtide/faerie-rogue.jpg
 value=2

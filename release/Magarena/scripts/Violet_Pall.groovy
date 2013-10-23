@@ -18,7 +18,7 @@
                     game.doAction(new MagicDestroyAction(creature));
                     game.doAction(new MagicPlayTokenAction(
                         event.getPlayer(),
-                        TokenCardDefinitions.get("Faerie Rogue")
+                        TokenCardDefinitions.get("1/1 black Faerie Rogue creature token with flying")
                     ));
                 }
             });
