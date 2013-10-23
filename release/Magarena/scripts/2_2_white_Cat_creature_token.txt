@@ -1,4 +1,4 @@
-name=Cat2
+name=2/2 white Cat creature token
 token=Cat
 image=http://magiccards.info/extras/token/scars-of-mirrodin/cat.jpg
 value=2

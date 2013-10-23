@@ -14,10 +14,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
-            int amount = permanent.getEquipmentPermanents().size();
-            for (;amount>0;amount--) {
-                game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Cat2")));
-            }
+            game.doAction(new MagicPlayTokensAction(
+                event.getPlayer(),
+                TokenCardDefinitions.get("2/2 white Cat creature token"),
+                permanent.getEquipmentPermanents().size()
+            ));
         }
     }
 ]

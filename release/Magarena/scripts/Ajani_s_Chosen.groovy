@@ -15,7 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayTokenAction act = new MagicPlayTokenAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("Cat2")
+                TokenCardDefinitions.get("2/2 white Cat creature token")
             );
             game.doAction(act);
             final MagicPermanent token = act.getPermanent();
