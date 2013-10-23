@@ -7,5 +7,5 @@ type=Creature
 subtype=Zombie
 cost={5}{B}
 pt=4/4
+ability=dies effect PN puts two 2/2 black Zombie creature tokens onto the battlefield.
 timing=main
-requires_groovy_code
