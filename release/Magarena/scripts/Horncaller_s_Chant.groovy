@@ -10,7 +10,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicPlayTokenAction(event.getPlayer(), TokenCardDefinitions.get("Rhino4")));
+            game.doAction(new MagicPlayTokenAction(event.getPlayer(), TokenCardDefinitions.get("4/4 green Rhino creature token with trample")));
             game.addEvent(new MagicPopulateEvent(event.getSource()));
         }
     }

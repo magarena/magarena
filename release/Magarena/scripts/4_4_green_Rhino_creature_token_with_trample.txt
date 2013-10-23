@@ -1,4 +1,4 @@
-name=Rhino4
+name=4/4 green Rhino creature token with trample
 token=Rhino
 image=http://magiccards.info/extras/token/return-to-ravnica/rhino.jpg
 value=4
