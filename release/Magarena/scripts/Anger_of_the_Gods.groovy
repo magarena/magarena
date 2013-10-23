@@ -21,7 +21,7 @@
                 if (target.isCreature()) {
                     game.doAction(new MagicAddTurnTriggerAction(
                         (MagicPermanent)target, 
-                        MagicWhenLeavesPlayTrigger.IfDieExileInstead
+                        MagicWhenSelfLeavesPlayTrigger.IfDieExileInstead
                     ));
                 }
             }
