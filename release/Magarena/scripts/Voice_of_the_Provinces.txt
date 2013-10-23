@@ -7,6 +7,6 @@ type=Creature
 subtype=Angel
 cost={4}{W}{W}
 pt=3/3
-ability=flying
+ability=flying;\
+        enters effect PN puts a 1/1 white Human creature token onto the battlefield.
 timing=main
-requires_groovy_code
