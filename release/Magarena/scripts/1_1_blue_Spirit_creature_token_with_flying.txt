@@ -1,4 +1,4 @@
-name=Spirit1 Blue
+name=1/1 blue Spirit creature token with flying
 token=Spirit
 image=http://magiccards.info/extras/token/avacyn-restored/spirit-2.jpg
 value=1

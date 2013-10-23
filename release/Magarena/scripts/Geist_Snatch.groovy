@@ -1,3 +1,5 @@
+def Spirit = TokenCardDefinitions.get("1/1 blue Spirit creature token with flying");
+
 [
     new MagicSpellCardEvent() {
         @Override
@@ -6,8 +8,8 @@
                 cardOnStack,
                 MagicTargetChoice.NEG_TARGET_CREATURE_SPELL,
                 this,
-                "Counter target creature spell\$. Put a 1/1 blue " +
-                "Spirit creature token with flying onto the battlefield."
+                "Counter target creature spell\$. " +
+                "Put a 1/1 blue Spirit creature token with flying onto the battlefield."
             );
         }
         @Override
@@ -17,7 +19,7 @@
                     game.doAction(new MagicCounterItemOnStackAction(targetSpell));
                     game.doAction(new MagicPlayTokenAction(
                         event.getPlayer(),
-                        TokenCardDefinitions.get("Spirit1 Blue")
+                        Spirit
                     ));
                 }
             });
