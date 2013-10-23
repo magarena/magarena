@@ -17,7 +17,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicPlayCardAction(
                 MagicCard.createTokenCard(
-                    TokenCardDefinitions.get("Zombie"),
+                    TokenCardDefinitions.get("2/2 black Zombie creature token"),
                     event.getPlayer()
                 ),
                 [MagicPlayMod.TAPPED]

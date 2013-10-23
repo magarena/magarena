@@ -24,7 +24,7 @@
             final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicPlayTokenAction(
                 player,
-                TokenCardDefinitions.get("Zombie")
+                TokenCardDefinitions.get("2/2 black Zombie creature token")
             ));
             final Collection<MagicPermanent> targets = game.filterPermanents(
                     player,

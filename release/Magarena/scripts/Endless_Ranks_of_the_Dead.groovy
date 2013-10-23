@@ -17,7 +17,7 @@
             final Collection<MagicPermanent> targets =
                     game.filterPermanents(player,MagicTargetFilter.TARGET_ZOMBIE_YOU_CONTROL);
             def amount = targets.size().intdiv(2);
-            game.doAction(new MagicPlayTokensAction(player,TokenCardDefinitions.get("Zombie"),amount));;
+            game.doAction(new MagicPlayTokensAction(player,TokenCardDefinitions.get("2/2 black Zombie creature token"),amount));;
         }
     }
 ]
