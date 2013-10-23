@@ -1,5 +1,3 @@
-def Dragon = TokenCardDefinitions.get("5/5 red Dragon creature token with flying"); 
-
 [
     new MagicWhenComesIntoPlayTrigger() {
         @Override
@@ -23,7 +21,7 @@ def Dragon = TokenCardDefinitions.get("5/5 red Dragon creature token with flying
             }
             game.doAction(new MagicPlayTokensAction(
                 event.getPlayer(),
-                Dragon,
+                TokenCardDefinitions.get("5/5 red Dragon creature token with flying"),
                 targets.size()
             ));
         }

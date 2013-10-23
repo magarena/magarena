@@ -1,5 +1,3 @@
-def Dragon = TokenCardDefinitions.get("5/5 red Dragon creature token with flying"); 
-
 [
     new MagicAtUpkeepTrigger() {
         @Override
@@ -15,7 +13,10 @@ def Dragon = TokenCardDefinitions.get("5/5 red Dragon creature token with flying
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicPlayTokenAction(event.getPlayer(),Dragon));
+            game.doAction(new MagicPlayTokenAction(
+                event.getPlayer(),
+                TokenCardDefinitions.get("5/5 red Dragon creature token with flying")
+            ));
         }
     }
 ]

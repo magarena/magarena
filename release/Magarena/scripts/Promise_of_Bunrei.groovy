@@ -1,4 +1,3 @@
-def Spirit = TokenCardDefinitions.get("1/1 colorless Spirit creature token");
 
 [
     new MagicWhenOtherDiesTrigger() {
@@ -23,7 +22,7 @@ def Spirit = TokenCardDefinitions.get("1/1 colorless Spirit creature token");
                 game.doAction(new MagicSacrificeAction(permanent));
                 game.doAction(new MagicPlayTokensAction(
                     player,
-                    Spirit,
+                    TokenCardDefinitions.get("1/1 colorless Spirit creature token"),
                     4
                 ));
             }

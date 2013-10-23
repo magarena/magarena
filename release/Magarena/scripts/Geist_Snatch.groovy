@@ -1,4 +1,3 @@
-def Spirit = TokenCardDefinitions.get("1/1 blue Spirit creature token with flying");
 
 [
     new MagicSpellCardEvent() {
@@ -19,7 +18,7 @@ def Spirit = TokenCardDefinitions.get("1/1 blue Spirit creature token with flyin
                     game.doAction(new MagicCounterItemOnStackAction(targetSpell));
                     game.doAction(new MagicPlayTokenAction(
                         event.getPlayer(),
-                        Spirit
+                        TokenCardDefinitions.get("1/1 blue Spirit creature token with flying")
                     ));
                 }
             });
