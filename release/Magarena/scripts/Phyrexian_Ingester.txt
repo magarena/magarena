@@ -1,0 +1,11 @@
+name=Phyrexian Ingester
+url=http://magiccards.info/nph/en/41.html
+image=http://magiccards.info/scans/en/nph/41.jpg
+value=3.698
+rarity=R
+type=Creature
+subtype=Beast
+cost={6}{U}
+pt=3/3
+timing=main
+requires_groovy_code
