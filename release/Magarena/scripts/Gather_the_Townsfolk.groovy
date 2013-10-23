@@ -14,7 +14,7 @@
             int amount = MagicCondition.FATEFUL_HOUR.accept(event.getSource()) ? 5 : 2;
             game.doAction(new MagicPlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("Human1"),
+                TokenCardDefinitions.get("1/1 white Human creature token"),
                 amount
             ));
         }
