@@ -1,0 +1,11 @@
+name=Duplicant
+url=http://magiccards.info/cma/en/7.html
+image=http://magiccards.info/scans/en/cma/7.jpg
+value=4.413
+rarity=R
+type=Artifact,Creature
+subtype=Shapeshifter
+cost={6}
+pt=2/4
+timing=artifact
+requires_groovy_code
