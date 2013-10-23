@@ -1,4 +1,4 @@
-name=Plant
+name=0/1 green Plant creature token
 token=Plant
 image=http://magiccards.info/extras/token/worldwake/plant.jpg
 value=1

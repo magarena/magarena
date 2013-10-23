@@ -6,5 +6,5 @@ rarity=C
 type=Land
 mana=g4
 timing=land
-ability=enters tapped;tap add mana {G}
-requires_groovy_code
+ability=enters tapped;tap add mana {G};\
+        enters effect PN puts a 0/1 green Plant creature token onto the battlefield.
