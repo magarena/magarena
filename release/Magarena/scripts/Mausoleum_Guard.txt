@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Scout
 cost={3}{W}
 pt=2/2
+ability=dies effect PN puts two 1/1 white Spirit creature tokens with flying onto the battlefield.
 timing=main
-requires_groovy_code
