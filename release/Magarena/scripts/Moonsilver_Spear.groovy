@@ -11,8 +11,7 @@
                 new MagicEvent(
                     permanent,
                     this,
-                    "PN puts a 4/4 white Angel " +
-                    "creature token with flying onto the battlefield."
+                    "PN puts a 4/4 white Angel creature token with flying onto the battlefield."
                 ):
                 MagicEvent.NONE;
         }
@@ -20,7 +19,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicPlayTokenAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("Angel4")
+                TokenCardDefinitions.get("4/4 white Angel creature token with flying")
             ));
         }
     }

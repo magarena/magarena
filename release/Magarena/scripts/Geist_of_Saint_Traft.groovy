@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final MagicCard card = MagicCard.createTokenCard(TokenCardDefinitions.get("Angel4"),player);
+            final MagicCard card = MagicCard.createTokenCard(TokenCardDefinitions.get("4/4 white Angel creature token with flying"),player);
             game.doAction(new MagicPlayCardAction(
                 card,
                 player,
