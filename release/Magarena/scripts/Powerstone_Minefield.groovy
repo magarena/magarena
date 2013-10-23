@@ -9,7 +9,7 @@ def Event = {
     return new MagicEvent(
         permanent,
         creature,
-        this,
+        Action,
         "SN deals 2 damage to RN."
     );
 }
