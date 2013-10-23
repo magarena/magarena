@@ -18,7 +18,7 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (MagicCondition.LEAST_FIVE_OTHER_MOUNTAINS.accept(event.getRefPermanent()) == false) {
+            if (MagicCondition.LEAST_FIVE_OTHER_MOUNTAINS.accept(event.getRefPermanent()) == false || event.isNo()) {
                 return;
             }
             event.processTarget(game,new MagicTargetAction() {
