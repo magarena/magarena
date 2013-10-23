@@ -6,6 +6,7 @@ rarity=R
 type=Creature
 subtype=Human,Monk
 cost={3}{W}{W}
-ability=vigilance
+ability=vigilance;\
+        enters effect PN puts two 1/1 white Spirit creature tokens with flying onto the battlefield.
 timing=main
 requires_groovy_code
