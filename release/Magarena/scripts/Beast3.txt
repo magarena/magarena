@@ -1,4 +1,4 @@
-name=Beast3
+name=3/3 green Beast creature token
 token=Beast
 image=http://magiccards.info/extras/token/magic-2011/beast.jpg
 value=3
