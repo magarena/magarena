@@ -15,7 +15,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicPlayTokenAction(event.getPlayer(), TokenCardDefinitions.get("Wolf")));
+                game.doAction(new MagicPlayTokenAction(event.getPlayer(), TokenCardDefinitions.get("2/2 green Wolf creature token")));
             }
         }
     },

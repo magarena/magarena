@@ -15,7 +15,7 @@
             final MagicPlayer player = event.getPlayer();
             final int amount = game.filterCards(player,MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD).size();
             for (int count=amount;count>0;count--) {
-                final MagicCard card = MagicCard.createTokenCard(TokenCardDefinitions.get("Wolf"),player);
+                final MagicCard card = MagicCard.createTokenCard(TokenCardDefinitions.get("2/2 green Wolf creature token"),player);
                 game.doAction(new MagicPlayCardAction(
                     card,
                     player,

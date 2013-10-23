@@ -22,7 +22,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicPlayTokenAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("Wolf")
+                TokenCardDefinitions.get("2/2 green Wolf creature token")
             ));
         }
     }

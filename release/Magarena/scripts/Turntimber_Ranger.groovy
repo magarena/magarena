@@ -25,7 +25,7 @@
             if (event.isYes()) {
                 game.doAction(new MagicPlayTokenAction(
                     event.getPlayer(),
-                    TokenCardDefinitions.get("Wolf")
+                    TokenCardDefinitions.get("2/2 green Wolf creature token")
                 ));
                 game.doAction(new MagicChangeCountersAction(
                     event.getPermanent(),

@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player=event.getPlayer();
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Snake")));
-            game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Wolf")));
+            game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("2/2 green Wolf creature token")));
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Elephant")));
         }
     }
