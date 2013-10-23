@@ -1,4 +1,4 @@
-name=Demon5
+name=5/5 black Demon creature token with flying
 token=Demon
 image=http://magiccards.info/extras/token/avacyn-restored/demon.jpg
 value=4

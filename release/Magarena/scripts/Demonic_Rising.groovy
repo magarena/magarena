@@ -20,7 +20,7 @@
             if (event.getPlayer().getNrOfPermanents(MagicType.Creature) == 1) {
                 game.doAction(new MagicPlayTokenAction(
                     event.getPlayer(),
-                    TokenCardDefinitions.get("Demon5")
+                    TokenCardDefinitions.get("5/5 black Demon creature token with flying")
                 ));
             }
         }
