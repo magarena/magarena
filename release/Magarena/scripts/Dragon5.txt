@@ -1,4 +1,4 @@
-name=Dragon5
+name=5/5 red Dragon creature token with flying
 token=Dragon
 image=http://magiccards.info/extras/token/worldwake/dragon.jpg
 value=5
