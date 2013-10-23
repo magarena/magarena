@@ -27,7 +27,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicPlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("Elephant"),
+                TokenCardDefinitions.get("3/3 green Elephant creature token"),
                 event.getRefInt()
             ));
         }

@@ -1,4 +1,4 @@
-name=Elephant
+name=3/3 green Elephant creature token
 token=Elephant
 image=http://magiccards.info/extras/token/worldwake/elephant.jpg
 value=3
