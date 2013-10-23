@@ -54,7 +54,7 @@
             final int amt = event.getPlayer().getNrOfPermanents(MagicType.Land);
             game.doAction(new MagicPlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("Wurm6G"),
+                TokenCardDefinitions.get("6/6 green Wurm creature token"),
                 amt
             ));
         }
