@@ -1,3 +1,5 @@
+def Spirit = TokenCardDefinitions.get("1/1 colorless Spirit creature token");
+
 [
     new MagicWhenOtherDiesTrigger() {
         @Override
@@ -19,7 +21,11 @@
             final MagicPlayer player=event.getPlayer();
             if (player.controlsPermanent(permanent)) {
                 game.doAction(new MagicSacrificeAction(permanent));
-                game.doAction(new MagicPlayTokensAction(player,TokenCardDefinitions.get("Spirit1"),4));
+                game.doAction(new MagicPlayTokensAction(
+                    player,
+                    Spirit,
+                    4
+                ));
             }
         }
     }
