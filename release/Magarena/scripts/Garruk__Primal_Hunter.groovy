@@ -12,7 +12,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicPlayTokenAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("Beast3")
+                TokenCardDefinitions.get("3/3 green Beast creature token")
             ));
         }
     },
