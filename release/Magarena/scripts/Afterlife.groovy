@@ -24,7 +24,7 @@
                     game.doAction(new MagicDestroyAction(creature));
                     game.doAction(new MagicPlayTokenAction(
                         controller,
-                        TokenCardDefinitions.get("Spirit2")
+                        TokenCardDefinitions.get("1/1 white Spirit creature token with flying")
                     ));
                 }
             });
