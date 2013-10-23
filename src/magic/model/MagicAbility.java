@@ -67,6 +67,7 @@ import magic.model.trigger.MagicThiefTrigger.Player;
 import magic.model.trigger.MagicWhenBlocksPumpTrigger;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 import magic.model.trigger.MagicWhenLeavesPlayTrigger;
+import magic.model.trigger.MagicWhenSelfLeavesPlayTrigger;
 import magic.model.trigger.MagicWhenDiesTrigger;
 import magic.model.trigger.MagicAtEndOfTurnTrigger;
 import magic.model.trigger.MagicAtUpkeepTrigger;
@@ -666,14 +667,14 @@ public enum MagicAbility {
     },
     LeavesEffect("leaves effect", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicWhenLeavesPlayTrigger.create(
+            card.add(MagicWhenSelfLeavesPlayTrigger.create(
                 MagicRuleEventAction.create(arg)
             ));
         }
     },
     LeavesMayEffect("leaves effect PN may", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicWhenLeavesPlayTrigger.create(
+            card.add(MagicWhenSelfLeavesPlayTrigger.create(
                 MagicRuleEventAction.createMay(arg)
             ));
         }

@@ -13,15 +13,6 @@ import magic.model.event.MagicRuleEventAction;
 import magic.model.action.MagicRemoveFromPlayAction;
 
 public abstract class MagicWhenLeavesPlayTrigger extends MagicTrigger<MagicRemoveFromPlayAction> {
-    public static final MagicWhenLeavesPlayTrigger create(final MagicSourceEvent sourceEvent) {
-        return new MagicWhenLeavesPlayTrigger() {
-            @Override
-            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicRemoveFromPlayAction data) {
-                return sourceEvent.getEvent(permanent);
-            }
-        };
-    }
-    
     public MagicWhenLeavesPlayTrigger(final int priority) {
         super(priority);
     }
@@ -31,15 +22,4 @@ public abstract class MagicWhenLeavesPlayTrigger extends MagicTrigger<MagicRemov
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenLeavesPlay;
     }
-
-    // replacement effect has priority 1
-    public static final MagicWhenLeavesPlayTrigger IfDieExileInstead = new MagicWhenLeavesPlayTrigger(MagicTrigger.REPLACEMENT) {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
-            if (act.isPermanent(permanent) && act.getToLocation() == MagicLocationType.Graveyard) {
-                act.setToLocation(MagicLocationType.Exile);
-            }
-            return MagicEvent.NONE;
-        }
-    };
 }
