@@ -65,8 +65,7 @@ def NONTOKEN_CREATURE = new MagicPermanentFilterImpl() {
             final MagicCardList exiled = permanent.getExiledCards();
             final MagicCard card = exiled.getCardAtTop();
             if (card != MagicCard.NONE) {
-                final EnumSet<MagicSubType> subtypes = MagicSubType.getSubTypes(card.getCardDefinition().getSubTypeString());
-                flags.addAll(subtypes);
+                flags.addAll(card.getCardDefinition().genSubTypeFlags());
             }
         }
     }
