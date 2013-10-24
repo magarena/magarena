@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player=event.getPlayer();
-            game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Snake")));
+            game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("1/1 green Snake creature token")));
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("2/2 green Wolf creature token")));
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("3/3 green Elephant creature token")));
         }

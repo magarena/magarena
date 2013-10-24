@@ -1,4 +1,4 @@
-name=Snake
+name=1/1 green Snake creature token
 token=Snake
 image=http://magiccards.info/extras/token/zendikar/snake.jpg
 value=1
