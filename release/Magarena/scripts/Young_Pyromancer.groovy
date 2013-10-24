@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicPlayTokenAction(
                 event.getPlayer(), 
-                TokenCardDefinitions.get("R Elemental")
+                TokenCardDefinitions.get("1/1 red Elemental creature token")
             ));
         }
     }
