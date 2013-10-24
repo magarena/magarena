@@ -1,5 +1,6 @@
 [
     new MagicPermanentActivation(
+        [MagicConditionFactory.ManaCost("{2}{R}")]
         new MagicActivationHints(MagicTiming.Token),
         "Token"
     ) {
@@ -22,7 +23,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicPlayTokenAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("Kobolds")
+                TokenCardDefinitions.get("0/1 red Kobold creature token named Kobolds of Kher Keep")
             ));
         }
     }

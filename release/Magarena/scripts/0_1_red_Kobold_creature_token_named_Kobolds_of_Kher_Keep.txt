@@ -1,4 +1,4 @@
-name=Kobolds
+name=0/1 red Kobold creature token named Kobolds of Kher Keep
 token=Kobolds of Kher Keep
 image=http://www.magic-ville.com/pics/big/vir/036.jpg
 value=3.846
