@@ -1,4 +1,4 @@
-name=G Elemental
+name=4/4 green Elemental creature token
 token=Elemental
 image=http://magiccards.info/extras/token/lorwyn/elemental-1.jpg
 value=4

@@ -16,7 +16,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicPlayTokenAction(event.getPlayer(), TokenCardDefinitions.get("G Elemental")));
+                game.doAction(new MagicPlayTokenAction(event.getPlayer(), TokenCardDefinitions.get("4/4 green Elemental creature token")));
             }
         }
     }
