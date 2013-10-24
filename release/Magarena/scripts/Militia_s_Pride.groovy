@@ -19,7 +19,10 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 final MagicPlayer player=event.getPlayer();
-                final MagicCard card=MagicCard.createTokenCard(TokenCardDefinitions.get("Kithkin Soldier"),player);
+                final MagicCard card=MagicCard.createTokenCard(
+                    TokenCardDefinitions.get("1/1 white Kithkin Soldier creature token"),
+                    player
+                );
                 game.doAction(new MagicPlayCardAction(
                     card,
                     player,

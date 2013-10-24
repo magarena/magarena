@@ -1,4 +1,4 @@
-name=Kithkin Soldier
+name=1/1 white Kithkin Soldier creature token
 token=Kithkin Soldier
 image=http://magiccards.info/extras/token/lorwyn/kithkin-soldier.jpg
 value=1
