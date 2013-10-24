@@ -35,7 +35,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicPlayTokenAction(event.getPlayer(), TokenCardDefinitions.get("U Bird")));
+                game.doAction(new MagicPlayTokenAction(event.getPlayer(), TokenCardDefinitions.get("1/1 blue Bird creature token with flying")));
             }
         }
     }

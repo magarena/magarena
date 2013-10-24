@@ -1,4 +1,4 @@
-name=U Bird
+name=1/1 blue Bird creature token with flying
 token=Bird
 image=http://magiccards.info/extras/token/eventide/bird.jpg
 value=1
