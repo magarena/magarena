@@ -24,7 +24,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Goblin Rogue1")));
+                game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("1/1 black Goblin Rogue creature token")));
             }
         }
     }
