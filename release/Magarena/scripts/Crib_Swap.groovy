@@ -18,7 +18,7 @@
                     game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.Exile));
                     game.doAction(new MagicPlayTokenAction(
                         creature.getController(),
-                        TokenCardDefinitions.get("Changeling")
+                        TokenCardDefinitions.get("1/1 colorless Shapeshifter creature token with changeling")
                     ));
                 }
             });
