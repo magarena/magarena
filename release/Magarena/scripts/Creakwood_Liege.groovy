@@ -19,7 +19,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Worm")));
+                game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("1/1 black and green Worm creature token")));
             }
         }
     }

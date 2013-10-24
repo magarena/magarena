@@ -1,4 +1,4 @@
-name=Worm
+name=1/1 black and green Worm creature token
 token=Worm
 image=http://magiccards.info/extras/token/eventide/worm.jpg
 value=1
