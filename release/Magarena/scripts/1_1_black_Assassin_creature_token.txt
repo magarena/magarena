@@ -1,4 +1,4 @@
-name=Assassin
+name=1/1 black Assassin creature token
 token=Assassin
 image=http://magiccards.info/extras/token/return-to-ravnica/assassin.jpg
 value=4

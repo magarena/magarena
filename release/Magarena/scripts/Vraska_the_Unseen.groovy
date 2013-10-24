@@ -80,7 +80,7 @@ def T = new MagicWhenDamageIsDealtTrigger() {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicPlayTokensAction(event.getPlayer(), TokenCardDefinitions.get("Assassin"), 3));
+            game.doAction(new MagicPlayTokensAction(event.getPlayer(), TokenCardDefinitions.get("1/1 black Assassin creature token"), 3));
         }
     }
 ]
