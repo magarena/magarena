@@ -1,4 +1,4 @@
-name=Elemental2
+name=4/4 white Elemental creature token with flying
 token=Elemental
 image=http://magiccards.info/extras/token/lorwyn/elemental-2.jpg
 value=4

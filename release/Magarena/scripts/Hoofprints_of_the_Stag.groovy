@@ -53,7 +53,7 @@ def YOUR_TURN_CONDITION = new MagicCondition() {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Elemental2")));
+            game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("4/4 white Elemental creature token with flying")));
         }
     }
 ]
