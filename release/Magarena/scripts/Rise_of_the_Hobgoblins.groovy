@@ -17,7 +17,7 @@
             if (event.isYes()) {
                 game.doAction(new MagicPlayTokensAction(
                     event.getPlayer(),
-                    TokenCardDefinitions.get("Goblin Soldier"),
+                    TokenCardDefinitions.get("1/1 red and white Goblin Soldier creature token"),
                     event.getPaidMana().getX()
                 ));
             }
