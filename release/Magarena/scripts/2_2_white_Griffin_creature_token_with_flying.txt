@@ -1,4 +1,4 @@
-name=Griffin
+name=2/2 white Griffin creature token with flying
 token=Griffin
 image=http://i248.photobucket.com/albums/gg179/AC666AC/MTG/Griffinfull.jpg
 value=3
