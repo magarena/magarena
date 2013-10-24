@@ -1,4 +1,4 @@
-name=Bird4
+name=4/4 red Bird creature token with flying
 token=Bird
 image=http://magiccards.info/extras/token/player-rewards-2003/rukh.jpg
 value=3
