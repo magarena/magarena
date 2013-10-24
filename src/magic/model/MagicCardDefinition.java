@@ -403,7 +403,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
         return subTypeFlags.clone();
     }
 
-    EnumSet<MagicSubType> getSubTypeFlags() {
+    public EnumSet<MagicSubType> getSubTypeFlags() {
         final EnumSet<MagicSubType> subTypes = genSubTypeFlags();
         applyCDASubType(null, null, subTypes);
         return subTypes;

@@ -53,7 +53,7 @@ def NONTOKEN_CREATURE = new MagicPermanentFilterImpl() {
         @Override
         public void modSubTypeFlags(final MagicPermanent source, final Set<MagicSubType> flags) {
             final MagicCard card = source.getExiledCards().getCardAtTop();
-            flags.addAll(card.getCardDefinition().genSubTypeFlags());
+            flags.addAll(card.getCardDefinition().getSubTypeFlags());
         }
         @Override
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
