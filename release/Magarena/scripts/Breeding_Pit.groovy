@@ -37,7 +37,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicPlayTokenAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("Thrull1")
+                TokenCardDefinitions.get("0/1 black Thrull creature token")
             ));
         }
     }
