@@ -18,7 +18,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player=event.getPlayer();
-            final MagicCard card = MagicCard.createTokenCard(TokenCardDefinitions.get("Goblin2"),player);
+            final MagicCard card = MagicCard.createTokenCard(TokenCardDefinitions.get("2/1 red Goblin creature token with haste"),player);
             game.doAction(new MagicPlayCardAction(
                 card,
                 player,
