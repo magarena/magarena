@@ -19,7 +19,7 @@
             if (event.isYes()) {
                 game.doAction(new MagicPlayTokenAction(
                     event.getPlayer(),
-                    TokenCardDefinitions.get("Beast4")
+                    TokenCardDefinitions.get("4/4 green Beast creature token")
                 ));
             }
         }
