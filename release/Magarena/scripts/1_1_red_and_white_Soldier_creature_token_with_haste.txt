@@ -1,4 +1,4 @@
-name=RW Soldier
+name=1/1 red and white Soldier creature token with haste
 token=Soldier
 image=http://magiccards.info/extras/token/gatecrash/soldier.jpg
 value=1

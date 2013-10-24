@@ -21,7 +21,7 @@
             ));
             game.doAction(new MagicPlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("RW Soldier"), 
+                TokenCardDefinitions.get("1/1 red and white Soldier creature token with haste"), 
                 perm.getCounters(MagicCounterType.Charge)
             ));
         }
