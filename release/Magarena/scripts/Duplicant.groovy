@@ -26,47 +26,39 @@ def NONTOKEN_CREATURE = new MagicPermanentFilterImpl() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                final MagicPermanent source = event.getPermanent();
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent target) {
-                        game.doAction(new MagicRemoveFromPlayAction(target, MagicLocationType.Exile));
-                        source.addExiledCard(target.getCard());
+                        game.doAction(new MagicExileUntilThisLeavesPlayAction(
+                            event.getPermanent(), 
+                            target
+                        ));
                     }
                 });
             }
         }
     },
-    new MagicWhenLeavesPlayTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
-            final MagicPermanent left = act.getPermanent();
-            if(left == permanent){
-                MagicCardList exiled = permanent.getExiledCards();
-                if(exiled.getCardAtTop() != MagicCard.NONE){
-                    exiled.removeCardAtTop();
-                }
-            }
-            return MagicEvent.NONE;
-        }
-    },
     new MagicStatic(MagicLayer.SetPT) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            final MagicCardList exiled = permanent.getExiledCards();
-            final MagicCard card = exiled.getCardAtTop();
-            if (card != MagicCard.NONE) {
-                pt.set(card.getPower(),card.getToughness());
-            }
+            final MagicCard card = source.getExiledCards().getCardAtTop();
+            pt.set(card.getPower(),card.getToughness());
+        }
+        @Override
+        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+            final MagicCard card = source.getExiledCards().getCardAtTop();
+            return card != MagicCard.NONE && card.hasType(MagicType.Creature);
         }
     }, 
     new MagicStatic(MagicLayer.Type) {
         @Override
-        public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
-            final MagicCardList exiled = permanent.getExiledCards();
-            final MagicCard card = exiled.getCardAtTop();
-            if (card != MagicCard.NONE) {
-                flags.addAll(card.getCardDefinition().genSubTypeFlags());
-            }
+        public void modSubTypeFlags(final MagicPermanent source, final Set<MagicSubType> flags) {
+            final MagicCard card = source.getExiledCards().getCardAtTop();
+            flags.addAll(card.getCardDefinition().genSubTypeFlags());
+        }
+        @Override
+        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+            final MagicCard card = source.getExiledCards().getCardAtTop();
+            return card != MagicCard.NONE && card.hasType(MagicType.Creature);
         }
     }
 ]
