@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final MagicCardDefinition token = TokenCardDefinitions.get("Human2");
+            final MagicCardDefinition token = TokenCardDefinitions.get("1/1 red Human creature tokens with haste");
             for (int x=3;x>0;x--) {
                 final MagicPutIntoPlayAction action = new MagicPlayTokenAction(player, token);
                 game.doAction(action);
