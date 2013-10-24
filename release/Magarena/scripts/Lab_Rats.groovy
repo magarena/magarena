@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicPlayTokenAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("Rat1")
+                TokenCardDefinitions.get("1/1 black Rat creature token")
             ));
             if (event.isBuyback()) {
                 game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));

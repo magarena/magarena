@@ -1,4 +1,4 @@
-name=Rat1
+name=1/1 black Rat creature token
 token=Rat
 image=http://magiccards.info/extras/token/shadowmoor/rat.jpg
 value=1
