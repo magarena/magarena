@@ -1,6 +1,6 @@
 name=Duplicant
-url=http://magiccards.info/cma/en/7.html
-image=http://magiccards.info/scans/en/cma/7.jpg
+url=http://magiccards.info/arc/en/106.html
+image=http://magiccards.info/scans/en/arc/106.jpg
 value=4.413
 rarity=R
 type=Artifact,Creature
