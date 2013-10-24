@@ -1,0 +1,9 @@
+name=Isochron Scepter
+url=http://magiccards.info/ddj/en/16.html
+image=http://magiccards.info/scans/en/ddj/16.jpg
+value=4.656
+rarity=U
+type=Artifact
+cost={2}
+timing=artifact
+requires_groovy_code
