@@ -1,4 +1,4 @@
-name=Ooze1
+name=1/1 green Ooze creature token
 token=Ooze
 image=http://magiccards.info/extras/token/magic-2011/ooze-2.jpg
 value=1

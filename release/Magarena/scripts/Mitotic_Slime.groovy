@@ -12,7 +12,7 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicPlayTokensAction(event.getPlayer(), TokenCardDefinitions.get("Ooze2"), 2));
+            game.doAction(new MagicPlayTokensAction(event.getPlayer(), TokenCardDefinitions.get("2/2 green Ooze creature token"), 2));
         }
     }
 ]

@@ -1,4 +1,4 @@
-name=Ooze2
+name=2/2 green Ooze creature token
 token=Ooze
 image=http://magiccards.info/extras/token/magic-2011/ooze-1.jpg
 value=2
@@ -7,4 +7,4 @@ subtype=Ooze
 color=g
 cost={0}
 pt=2/2
-requires_groovy_code
+ability=PN puts two 1/1 green Ooze creature tokens onto the battlefield.
