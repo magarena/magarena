@@ -1,64 +1,32 @@
 [
-    new MagicWhenComesIntoPlayTrigger() {
+    new MagicTrigger<MagicExileUntilThisLeavesPlayAction>() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
-            final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilter.TARGET_FAERIE_YOU_CONTROL,
-                    permanent
-                ),
-                MagicTargetHint.None,
-                "another Faerie to exile"
-            );
-            return new MagicEvent(
-                permanent,
-                new MagicMayChoice(targetChoice),
-                MagicExileTargetPicker.create(),
-                this,
-                "PN may\$ exile another Faerie you control\$. " +
-                "If you don't, sacrifice SN."
-            );
+        public MagicTriggerType getType() {
+            return MagicTriggerType.WhenChampioned;
         }
+         
         @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPermanent permanent = event.getPermanent();
-            if (event.isYes()) {
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent creature) {
-                        game.doAction(new MagicExileUntilThisLeavesPlayAction(permanent,creature));
-                        final Collection<MagicPermanent> targets = game.filterPermanents(
-                                event.getPlayer().getOpponent(),
-                                MagicTargetFilter.TARGET_LAND_YOU_CONTROL);
-                        for (final MagicPermanent land : targets) {
-                            game.doAction(new MagicTapAction(land,true));
-                        }
-                    }
-                });
-            } else {
-                game.doAction(new MagicSacrificeAction(permanent));
-            }
-        }
-    },
-    new MagicWhenLeavesPlayTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
-            if (act.isPermanent(permanent) &&
-                !permanent.getExiledCards().isEmpty()) {
-                final MagicCard exiledCard = permanent.getExiledCards().get(0);
-                return new MagicEvent(
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicExileUntilThisLeavesPlayAction action) {
+            return action.source == permanent && action.permanent.hasSubType(MagicSubType.Faerie) ?
+                new MagicEvent(
                     permanent,
-                    exiledCard,
+                    MagicTargetChoice.NEG_TARGET_PLAYER,
                     this,
-                    "Return RN to the battlefield"
-                );
-            }
-            return MagicEvent.NONE;
+                    "Tap all lands target player\$ controls."
+                ):
+                MagicEvent.NONE;
         }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicCard exiledCard = event.getRefCard();
-            game.doAction(new MagicRemoveCardAction(exiledCard,MagicLocationType.Exile));
-            game.doAction(new MagicPlayCardAction(exiledCard,exiledCard.getOwner()));
+
+         @Override
+         public void executeEvent(final MagicGame game, final MagicEvent event) {
+             event.processTargetPlayer(game,new MagicPlayerAction() {
+                public void doAction(final MagicPlayer player) {
+                    final Collection<MagicPermanent> targets = player.filterPermanents(MagicTargetFilter.TARGET_LAND_YOU_CONTROL);
+                    for (final MagicPermanent land : targets) {
+                        game.doAction(new MagicTapAction(land,true));
+                    }
+                }
+             });
         }
     }
 ]
