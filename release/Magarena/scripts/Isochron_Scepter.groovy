@@ -26,22 +26,21 @@ def INSTANT_LEQ_CMC_2_FROM_HAND = new MagicCardFilterImpl() {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPermanent source = event.getPermanent();
-            final MagicCardList exiled = source.getExiledCards();            
             if (event.isYes()) {
                 event.processTargetCard(game,new MagicCardAction() {
                     public void doAction(final MagicCard target) {
-                        game.doAction(new MagicRemoveCardAction(target, MagicLocationType.OwnersHand));
-                        game.doAction(new MagicMoveCardAction(target, MagicLocationType.OwnersHand,MagicLocationType.Exile));
-                        exiled.addToTop(target);
+                        game.doAction(new MagicExileUntilThisLeavesPlayAction(
+                            event.getPermanent(), 
+                            target, 
+                            MagicLocationType.OwnersHand
+                        ));
                     }
                 });
-            }else{
-                exiled.addToTop(MagicCard.NONE);
             }
         }
     },
     new MagicPermanentActivation(
+        [MagicCondition.HAS_EXILED_CARD],
         new MagicActivationHints(MagicTiming.Removal),
         "Copy"
     ) {
@@ -55,24 +54,18 @@ def INSTANT_LEQ_CMC_2_FROM_HAND = new MagicCardFilterImpl() {
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
-            final MagicCardList exiled = source.getExiledCards();
-            final MagicCard card = exiled.getCardAtTop();
+            final MagicCard card = source.getExiledCards().getCardAtTop();
             return new MagicEvent(
                 source,
+                card,
                 this,
-                "PN plays a copy of " + card.getName() + " without paying its mana cost."       
-            );
+                "PN cast a copy of RN without paying its mana cost."
+            )
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPermanent permanent = event.getPermanent();
-            final MagicCardList exiled = permanent.getExiledCards();
-            final MagicCard card = exiled.getCardAtTop();
-            final MagicCard copy = MagicCard.createTokenCard(card.getCardDefinition(),event.getPlayer());
-            final MagicCardOnStack cardOnStack=new MagicCardOnStack(copy,event.getPlayer(),MagicPayedCost.NO_COST);
-            cardOnStack.setMoveLocation(MagicLocationType.Exile);
-            game.doAction(new MagicPutItemOnStackAction(cardOnStack));
+            game.doAction(new MagicCastFreeCopyAction(event.getPlayer(), event.getRefCard());
         }
     }
 ]
