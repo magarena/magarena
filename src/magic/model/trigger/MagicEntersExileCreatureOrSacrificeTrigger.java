@@ -76,7 +76,9 @@ public class MagicEntersExileCreatureOrSacrificeTrigger extends MagicWhenComesIn
         if (event.isYes()) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    game.doAction(new MagicExileUntilThisLeavesPlayAction(permanent,creature));
+                    final MagicExileUntilThisLeavesPlayAction act = new MagicExileUntilThisLeavesPlayAction(permanent,creature);
+                    game.doAction(act);
+                    game.executeTrigger(MagicTriggerType.WhenChampioned, act);
                 }
             });
         } else {
