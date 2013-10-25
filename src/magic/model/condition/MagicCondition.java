@@ -195,4 +195,12 @@ public interface MagicCondition {
             return permanent.getExiledCards().getCardAtTop() != MagicCard.NONE;
         }
     };
+    
+    MagicCondition HAS_EXILED_CREATURE_CARD = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicPermanent permanent = (MagicPermanent)source;
+            final MagicCard card = permanent.getExiledCards().getCardAtTop(); 
+            return card != MagicCard.NONE && card.hasType(MagicType.Creature);
+        }
+    };
 }
