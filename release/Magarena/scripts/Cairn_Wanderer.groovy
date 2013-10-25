@@ -22,9 +22,8 @@ CAIRN_WANDERER_FLAGS.addAll(MagicAbility.PROTECTION_FLAGS);
             final MagicGame game = source.getGame();
             for (final MagicPlayer player : game.getPlayers()) {
                 for (final MagicCard card : player.getGraveyard()) {
-                    final MagicCardDefinition cardDefinition = card.getCardDefinition();
-                    if (cardDefinition.isCreature()) {
-                        final Set<MagicAbility> creatureAbilities = cardDefinition.genAbilityFlags();
+                    if (card.hasType(MagicType.Creature)) {
+                        final Set<MagicAbility> creatureAbilities = card.getAbilityFlags();
                         creatureAbilities.retainAll(CAIRN_WANDERER_FLAGS);
                         flags.addAll(creatureAbilities);
                     }

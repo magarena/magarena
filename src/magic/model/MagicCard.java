@@ -234,6 +234,10 @@ public class MagicCard extends MagicObjectImpl implements MagicSource,MagicTarge
     public boolean hasAbility(final MagicAbility ability) {
         return getCardDefinition().hasAbility(ability);
     }
+    
+    public Set<MagicAbility> getAbilityFlags() {
+        return getCardDefinition().genAbilityFlags();
+    }
 
     @Override
     public boolean hasType(final MagicType type) {
