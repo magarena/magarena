@@ -11,6 +11,7 @@ import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.action.MagicChangePoisonAction;
+import magic.model.action.MagicCastFreeCopyAction;
 
 public abstract class MagicWhenDamageIsDealtTrigger extends MagicTrigger<MagicDamage> {
     public MagicWhenDamageIsDealtTrigger(final int priority) {
@@ -45,13 +46,7 @@ public abstract class MagicWhenDamageIsDealtTrigger extends MagicTrigger<MagicDa
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 if (event.isYes()) {
-                    game.doAction(new MagicPutItemOnStackAction(
-                        new MagicCardOnStack(
-                            MagicCard.createTokenCard(cardDef,event.getPlayer()),
-                            event.getPlayer(),
-                            MagicPayedCost.NO_COST
-                        )
-                    ));
+                    game.doAction(new MagicCastFreeCopyAction(event.getPlayer(), cardDef));
                 }
             }
         };
