@@ -1,12 +1,12 @@
 def INSTANT_LEQ_CMC_2_FROM_HAND = new MagicCardFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            final MagicCardDefinition cardDefinition = target.getCardDefinition();
-            return (cardDefinition.getConvertedCost() <= 2 && target.hasType(MagicType.Instant));
-        }
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Hand;
-        }
-    };
+    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+        return target.getConvertedCost() <= 2 && target.hasType(MagicType.Instant);
+    }
+    public boolean acceptType(final MagicTargetType targetType) {
+        return targetType == MagicTargetType.Hand;
+    }
+};
+
 [
     new MagicWhenComesIntoPlayTrigger() {
         @Override
