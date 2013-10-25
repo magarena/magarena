@@ -45,8 +45,7 @@ def NONTOKEN_CREATURE = new MagicPermanentFilterImpl() {
         }
         @Override
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-            final MagicCard card = source.getExiledCards().getCardAtTop();
-            return card != MagicCard.NONE && card.hasType(MagicType.Creature);
+            return MagicCondition.HAS_EXILED_CARD.accept(source);
         }
     }, 
     new MagicStatic(MagicLayer.Type) {
@@ -57,8 +56,7 @@ def NONTOKEN_CREATURE = new MagicPermanentFilterImpl() {
         }
         @Override
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-            final MagicCard card = source.getExiledCards().getCardAtTop();
-            return card != MagicCard.NONE && card.hasType(MagicType.Creature);
+            return MagicCondition.HAS_EXILED_CARD.accept(source);
         }
     }
 ]
