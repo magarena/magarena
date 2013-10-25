@@ -7,8 +7,8 @@ import magic.model.MagicPermanent;
 
 public class MagicExileUntilThisLeavesPlayAction extends MagicAction {
 
-    private final MagicPermanent source;
-    private final MagicPermanent permanent;
+    public final MagicPermanent source;
+    public final MagicPermanent permanent;
     private final MagicCard card;
     private final MagicLocationType location;
 
