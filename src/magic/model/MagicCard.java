@@ -244,6 +244,10 @@ public class MagicCard extends MagicObjectImpl implements MagicSource,MagicTarge
     public boolean hasSubType(final MagicSubType subType) {
         return getCardDefinition().hasSubType(subType);
     }
+    
+    public Set<MagicSubType> getSubTypeFlags() {
+        return getCardDefinition().getSubTypeFlags();
+    }
 
     @Override
     public Collection<MagicSourceActivation<? extends MagicSource>> getSourceActivations() {
