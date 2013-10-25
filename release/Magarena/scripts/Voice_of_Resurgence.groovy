@@ -1,6 +1,6 @@
 def Action = {
     final MagicGame game, final MagicEvent event ->
-    game.doAction(new MagicPlayTokenAction(event.getPlayer(), TokenCardDefinitions.get("GW Elemental")));
+    game.doAction(new MagicPlayTokenAction(event.getPlayer(), TokenCardDefinitions.get("green and white Elemental creature token")));
 } as MagicEventAction
 
 def Event = {
