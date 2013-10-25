@@ -54,10 +54,9 @@ def INSTANT_LEQ_CMC_2_FROM_HAND = new MagicCardFilterImpl() {
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
-            final MagicCard card = source.getExiledCards().getCardAtTop();
             return new MagicEvent(
                 source,
-                card,
+                source.getExiledCard(),
                 this,
                 "PN cast a copy of RN without paying its mana cost."
             );

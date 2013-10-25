@@ -40,7 +40,7 @@ def NONTOKEN_CREATURE = new MagicPermanentFilterImpl() {
     new MagicStatic(MagicLayer.SetPT) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            final MagicCard card = source.getExiledCards().getCardAtTop();
+            final MagicCard card = source.getExiledCard();.
             pt.set(card.getPower(),card.getToughness());
         }
         @Override
@@ -51,7 +51,7 @@ def NONTOKEN_CREATURE = new MagicPermanentFilterImpl() {
     new MagicStatic(MagicLayer.Type) {
         @Override
         public void modSubTypeFlags(final MagicPermanent source, final Set<MagicSubType> flags) {
-            final MagicCard card = source.getExiledCards().getCardAtTop();
+            final MagicCard card = source.getExiledCard();.
             flags.addAll(card.getCardDefinition().getSubTypeFlags());
         }
         @Override
