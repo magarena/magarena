@@ -1,8 +1,9 @@
 def NONTOKEN_CREATURE = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isCreature() && !target.isToken();
-        }
-    };
+    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+        return target.isCreature() && target.isNonToken();
+    }
+};
+
 [
     new MagicWhenComesIntoPlayTrigger() {
         @Override
@@ -12,7 +13,7 @@ def NONTOKEN_CREATURE = new MagicPermanentFilterImpl() {
                     NONTOKEN_CREATURE,
                     permanent
                 ),
-                MagicTargetHint.None,
+                MagicTargetHint.Negative,
                 "another target nontoken creature to exile"
             );
             return new MagicEvent(
@@ -25,28 +26,27 @@ def NONTOKEN_CREATURE = new MagicPermanentFilterImpl() {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPermanent source = event.getPermanent();
-            final MagicCardList exiled = source.getExiledCards();            
             if (event.isYes()) {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent target) {
-                        game.doAction(new MagicRemoveFromPlayAction(target, MagicLocationType.Exile));
-                        exiled.addToTop(target.getCard());
+                        game.doAction(new MagicExileUntilThisLeavesPlayAction(
+                            event.getPermanent(), 
+                            target
+                        ));
                     }
                 });
-            }else{
-                exiled.addToTop(MagicCard.NONE);
             }
         }
     },
     new MagicStatic(MagicLayer.ModPT) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            final MagicCardList exiled = permanent.getExiledCards();
-            final MagicCard card = exiled.getCardAtTop();
-            if (card != MagicCard.NONE) {
-                pt.add(card.getPower(),card.getToughness());
-            }
+            final MagicCard card = source.getExiledCards().getCardAtTop();
+            pt.add(card.getPower(),card.getToughness());
+        }
+        @Override
+        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+            return MagicCondition.HAS_EXILED_CREATURE_CARD.accept(source);
         }
     }
 ]
