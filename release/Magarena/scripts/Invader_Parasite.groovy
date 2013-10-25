@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {  
             return new MagicEvent(
                 permanent,
-                MagicTargetChoice.TARGET_LAND,
+                MagicTargetChoice.NEG_TARGET_LAND,
                 MagicExileTargetPicker.create(),
                 this,
                 "PN exiles target land\$."
@@ -12,12 +12,12 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPermanent source = event.getPermanent();
-            final MagicCardList exiled = source.getExiledCards();            
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent target) {
-                    game.doAction(new MagicRemoveFromPlayAction(target, MagicLocationType.Exile));
-                    exiled.addToTop(target.getCard());
+                    game.doAction(new MagicExileUntilThisLeavesPlayAction(
+                        event.getPermanent(),
+                        target
+                    ));
                 }
             });
             
@@ -26,9 +26,10 @@
     new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent otherPermanent) {
-            final MagicCardList exiled = permanent.getExiledCards();
-            final MagicCard card = exiled.getCardAtTop();
-            return (otherPermanent.isLand() && otherPermanent.isEnemy(permanent) && otherPermanent.getName() == card.getName()) ?
+            final String cardName = permanent.getExiledCard().getName();
+            return (otherPermanent.isLand() && 
+                    otherPermanent.getName().equals(cardName) &&
+                    otherPermanent.isEnemy(permanent)) ?
                 new MagicEvent(
                     permanent,
                     otherPermanent.getController(),

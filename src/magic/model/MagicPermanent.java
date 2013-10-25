@@ -640,6 +640,10 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     public MagicCardList getExiledCards() {
         return exiledCards;
     }
+    
+    public MagicCard getExiledCard() {
+        return exiledCards.getCardAtTop();
+    }
 
     public void addExiledCard(final MagicCard card) {
         // only non tokens can be added
