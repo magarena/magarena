@@ -188,4 +188,11 @@ public interface MagicCondition {
             return permanent.getEnchantedCreature().isUntapped();
         }
     };
+    
+    MagicCondition HAS_EXILED_CARD = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicPermanent permanent = (MagicPermanent)source;
+            return permanent.getExiledCards().getCardAtTop() != MagicCard.NONE;
+        }
+    };
 }
