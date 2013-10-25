@@ -192,14 +192,14 @@ public interface MagicCondition {
     MagicCondition HAS_EXILED_CARD = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
-            return permanent.getExiledCards().getCardAtTop() != MagicCard.NONE;
+            return permanent.getExiledCard() != MagicCard.NONE;
         }
     };
     
     MagicCondition HAS_EXILED_CREATURE_CARD = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
-            final MagicCard card = permanent.getExiledCards().getCardAtTop(); 
+            final MagicCard card = permanent.getExiledCard(); 
             return card != MagicCard.NONE && card.hasType(MagicType.Creature);
         }
     };
