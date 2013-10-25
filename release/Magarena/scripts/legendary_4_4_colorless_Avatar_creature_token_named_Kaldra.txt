@@ -1,4 +1,4 @@
-name=Kaldra
+name=legendary 4/4 colorless Avatar creature token named Kaldra
 token=Kaldra
 image=http://img.photobucket.com/albums/v237/Xand0r/kaldra-token_mirrodin-dst-5dn_01.jpg
 value=4
