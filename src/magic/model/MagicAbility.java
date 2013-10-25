@@ -39,7 +39,7 @@ import magic.model.trigger.MagicDamageGrowTrigger;
 import magic.model.trigger.MagicDevourTrigger;
 import magic.model.trigger.MagicEchoTrigger;
 import magic.model.trigger.MagicEntersDamageTargetTrigger;
-import magic.model.trigger.MagicEntersExileCreatureOrSacrificeTrigger;
+import magic.model.trigger.MagicChampionTrigger;
 import magic.model.trigger.MagicExaltedTrigger;
 import magic.model.trigger.MagicFadeVanishCounterTrigger;
 import magic.model.trigger.MagicFlankingTrigger;
@@ -504,7 +504,7 @@ public enum MagicAbility {
     },
     Champion("champion",-10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(new MagicEntersExileCreatureOrSacrificeTrigger(arg));
+            card.add(new MagicChampionTrigger(arg));
             card.add(MagicLeavesReturnExileTrigger.create());
         }
     },

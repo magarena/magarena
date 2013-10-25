@@ -17,12 +17,12 @@ import magic.model.target.MagicPermanentFilterImpl;
 import magic.model.target.MagicTargetHint;
 import magic.model.target.MagicTargetType;
 
-public class MagicEntersExileCreatureOrSacrificeTrigger extends MagicWhenComesIntoPlayTrigger {
+public class MagicChampionTrigger extends MagicWhenComesIntoPlayTrigger {
 
     private final MagicSubType[] subtypes;
     private final String targets;
 
-    public MagicEntersExileCreatureOrSacrificeTrigger(final String targets) {
+    public MagicChampionTrigger(final String targets) {
         this.targets = targets;
         if ("creature".equalsIgnoreCase(targets)) {
             subtypes = new MagicSubType[0];
