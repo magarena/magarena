@@ -19,9 +19,11 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            for (int count=event.getRefInt();count>0;count--) {
-                game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Eldrazi Spawn")));
-            }
+            game.doAction(new MagicPlayTokensAction(
+                event.getPlayer(),
+                TokenCardDefinitions.get("0/1 colorless Eldrazi Spawn creature token"),
+                event.getRefInt()
+            ));
         }
     }
 ]

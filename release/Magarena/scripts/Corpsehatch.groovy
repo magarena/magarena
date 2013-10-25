@@ -8,7 +8,7 @@
                 new MagicDestroyTargetPicker(false),
                 this,
                 "Destroy target nonblack creature\$. " +
-                "Put two 0/1 colorless Eldrazi Spawn creature tokens onto the battlefield. " +
+                "PN puts two 0/1 colorless Eldrazi Spawn creature tokens onto the battlefield. " +
                 "They have \"Sacrifice this creature: Add {1} to your mana pool.\""
             );
         }
@@ -19,7 +19,7 @@
                     game.doAction(new MagicDestroyAction(creature));
                     game.doAction(new MagicPlayTokensAction(
                         event.getPlayer(),
-                        TokenCardDefinitions.get("Eldrazi Spawn"),
+                        TokenCardDefinitions.get("0/1 colorless Eldrazi Spawn creature token"),
                         2
                     ));
                 }
