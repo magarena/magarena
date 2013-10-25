@@ -27,6 +27,7 @@ public enum MagicTriggerType {
     WhenTargeted,           // permanent
     WhenLoseControl,        // permanent
     WhenBecomesState,       // MagicChangeStateAction
+    WhenChampioned,         // MagicExiledUntilThisLeavesPlayAction
     IfDamageWouldBeDealt,   // item on stack
     IfPlayerWouldLose,      // player[]
     IfLifeWouldChange,      // MagicChangeLifeAction
