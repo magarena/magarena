@@ -60,12 +60,15 @@ def INSTANT_LEQ_CMC_2_FROM_HAND = new MagicCardFilterImpl() {
                 card,
                 this,
                 "PN cast a copy of RN without paying its mana cost."
-            )
+            );
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicCastFreeCopyAction(event.getPlayer(), event.getRefCard());
+            game.doAction(new MagicCastFreeCopyAction(
+                event.getPlayer(), 
+                event.getRefCard()
+            ));
         }
     }
 ]
