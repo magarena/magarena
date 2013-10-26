@@ -1,6 +1,7 @@
 [
     // equipped creature gets +2/+2 until end of turn
     new MagicPermanentActivation(
+        [MagicCondition.HAS_EQUIPPED_CREATURE],
         new MagicActivationHints(MagicTiming.Pump),
         "+2/+2"
     ) {
