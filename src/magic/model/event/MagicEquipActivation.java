@@ -18,17 +18,21 @@ import java.util.Arrays;
 public class MagicEquipActivation extends MagicPermanentActivation {
 
     private final MagicManaCost equipCost;
+    
+    public MagicEquipActivation(final MagicManaCost aEquipCost) {
+        this(aEquipCost, "Equip");
+    }
 
-    public MagicEquipActivation(final MagicManaCost equipCost) {
+    public MagicEquipActivation(final MagicManaCost aEquipCost, final String description) {
         super(
             new MagicCondition[]{
                 MagicCondition.SORCERY_CONDITION,
                 MagicCondition.NOT_CREATURE_CONDITION,
             },
             new MagicActivationHints(MagicTiming.Equipment,2),
-            "Equip"
+            description
         );
-        this.equipCost=equipCost;
+        equipCost = aEquipCost;
     }
 
     @Override
