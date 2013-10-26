@@ -19,7 +19,7 @@ def INSTANT_LEQ_CMC_2_FROM_HAND = new MagicCardFilterImpl() {
             return new MagicEvent(
                 permanent,
                 new MagicMayChoice(targetChoice),
-                MagicExileTargetPicker.create(),
+                MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
                 "PN may\$ exile an instant card\$ with converted mana cost 2 or less from his or her hand."
             );
