@@ -7,5 +7,4 @@ rarity=U
 type=Sorcery
 cost={3}{G}{R}
 timing=removal
-effect=Destroy target land.
-requires_groovy_code=Rampant Growth
+requires_groovy_code

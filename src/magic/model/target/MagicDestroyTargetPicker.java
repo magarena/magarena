@@ -8,6 +8,10 @@ import magic.model.MagicPlayer;
 public class MagicDestroyTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
     private final boolean noRegeneration;
+    
+    public MagicDestroyTargetPicker() {
+        this(false);
+    }
 
     public MagicDestroyTargetPicker(final boolean noRegeneration) {
         this.noRegeneration=noRegeneration;
