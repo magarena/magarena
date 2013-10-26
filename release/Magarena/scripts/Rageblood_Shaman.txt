@@ -1,7 +1,7 @@
 name=Rageblood Shaman
 url=http://magiccards.info/ths/en/138.html
 image=http://magiccards.info/scans/en/ths/138.jpg
-value=3.985
+value=4.011
 rarity=R
 type=Creature
 subtype=Minotaur,Shaman

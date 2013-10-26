@@ -1,7 +1,7 @@
 name=Primeval Titan
 url=http://magiccards.info/m12/en/188.html
 image=http://magiccards.info/scans/en/m12/188.jpg
-value=4.399
+value=4.404
 rarity=M
 type=Creature
 subtype=Giant

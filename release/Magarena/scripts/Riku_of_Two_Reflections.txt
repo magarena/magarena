@@ -1,7 +1,7 @@
 name=Riku of Two Reflections
 url=http://magiccards.info/cmd/en/220.html
 image=http://magiccards.info/scans/en/cmd/220.jpg
-value=4.080
+value=4.086
 rarity=M
 type=Legendary,Creature
 subtype=Human,Wizard

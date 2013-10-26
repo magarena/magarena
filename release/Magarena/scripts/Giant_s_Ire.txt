@@ -1,7 +1,7 @@
 name=Giant's Ire
 url=http://magiccards.info/lw/en/170.html
 image=http://magiccards.info/scans/en/lw/170.jpg
-value=2.708
+value=2.660
 rarity=C
 type=Tribal,Sorcery
 subtype=Giant

@@ -1,7 +1,7 @@
 name=Traumatize
 url=http://magiccards.info/m14/en/77.html
 image=http://magiccards.info/scans/en/m14/77.jpg
-value=2.500
+value=4.065
 rarity=R
 type=Sorcery
 cost={3}{U}{U}

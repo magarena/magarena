@@ -1,7 +1,7 @@
 name=Elspeth, Sun's Champion
 url=http://magiccards.info/ths/en/9.html
 image=http://magiccards.info/scans/en/ths/9.jpg
-value=4.039
+value=4.272
 rarity=M
 type=Planeswalker
 subtype=Elspeth

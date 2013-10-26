@@ -1,7 +1,7 @@
 name=Insatiable Harpy
 url=http://magiccards.info/ths/en/92.html
 image=http://magiccards.info/scans/en/ths/92.jpg
-value=2.500
+value=2.970
 rarity=U
 type=Creature
 subtype=Harpy

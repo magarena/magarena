@@ -1,7 +1,7 @@
 name=Kodama of the South Tree
 url=http://magiccards.info/chk/en/223.html
 image=http://magiccards.info/scans/en/chk/223.jpg
-value=3.671
+value=3.700
 rarity=R
 type=Legendary,Creature
 subtype=Spirit

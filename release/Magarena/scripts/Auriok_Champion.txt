@@ -1,7 +1,7 @@
 name=Auriok Champion
 url=http://magiccards.info/5dn/en/3.html
 image=http://magiccards.info/scans/en/5dn/3.jpg
-value=4.449
+value=4.472
 rarity=R
 type=Creature
 subtype=Human,Cleric

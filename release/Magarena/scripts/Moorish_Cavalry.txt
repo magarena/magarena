@@ -1,7 +1,7 @@
 name=Moorish Cavalry
 url=http://magiccards.info/tsts/en/11.html
 image=http://magiccards.info/scans/en/tsts/11.jpg
-value=2.500
+value=3.282
 rarity=C
 type=Creature
 subtype=Human,Knight

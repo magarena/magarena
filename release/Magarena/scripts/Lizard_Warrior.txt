@@ -1,7 +1,7 @@
 name=Lizard Warrior
 url=http://magiccards.info/po/en/144.html
 image=http://magiccards.info/scans/en/po/144.jpg
-value=1.971
+value=1.972
 rarity=C
 type=Creature
 subtype=Lizard,Warrior

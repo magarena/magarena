@@ -1,7 +1,7 @@
 name=Hunting Triad
 url=http://magiccards.info/mt/en/127.html
 image=http://magiccards.info/scans/en/mt/127.jpg
-value=3.548
+value=3.581
 rarity=U
 type=Tribal,Sorcery
 subtype=Elf

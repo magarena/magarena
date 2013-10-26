@@ -1,7 +1,7 @@
 name=Night of Souls' Betrayal
 url=http://magiccards.info/chk/en/133.html
 image=http://magiccards.info/scans/en/chk/133.jpg
-value=2.500
+value=3.951
 rarity=R
 type=Legendary,Enchantment
 cost={2}{B}{B}

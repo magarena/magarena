@@ -1,7 +1,7 @@
 name=Duplicant
 url=http://magiccards.info/arc/en/106.html
 image=http://magiccards.info/scans/en/arc/106.jpg
-value=4.413
+value=4.396
 rarity=R
 type=Artifact,Creature
 subtype=Shapeshifter

@@ -1,7 +1,7 @@
 name=Gift of Orzhova
 url=http://magiccards.info/gtc/en/219.html
 image=http://magiccards.info/scans/en/gtc/219.jpg
-value=3.753
+value=3.778
 rarity=U
 type=Enchantment
 subtype=Aura

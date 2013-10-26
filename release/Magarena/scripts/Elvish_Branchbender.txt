@@ -1,7 +1,7 @@
 name=Elvish Branchbender
 url=http://magiccards.info/lw/en/204.html
 image=http://magiccards.info/scans/en/lw/204.jpg
-value=3.500
+value=3.453
 rarity=C
 type=Creature
 subtype=Elf,Druid

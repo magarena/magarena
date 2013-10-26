@@ -1,7 +1,7 @@
 name=Sliver Construct
 url=http://magiccards.info/m14/en/218.html
 image=http://magiccards.info/scans/en/m14/218.jpg
-value=1.594
+value=1.629
 rarity=C
 type=Artifact,Creature
 subtype=Sliver,Construct

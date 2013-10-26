@@ -1,7 +1,7 @@
 name=Jungle Weaver
 url=http://magiccards.info/ala/en/134.html
 image=http://magiccards.info/scans/en/ala/134.jpg
-value=2.500
+value=2.664
 rarity=C
 type=Creature
 subtype=Spider

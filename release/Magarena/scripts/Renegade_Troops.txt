@@ -1,7 +1,7 @@
 name=Renegade Troops
 url=http://magiccards.info/p3k/en/120.html
 image=http://magiccards.info/scans/en/p3k/120.jpg
-value=2.500
+value=1.929
 rarity=U
 type=Creature
 subtype=Human,Soldier

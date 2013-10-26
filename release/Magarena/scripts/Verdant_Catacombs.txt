@@ -1,7 +1,7 @@
 name=Verdant Catacombs
 url=http://magiccards.info/zen/en/229.html
 image=http://magiccards.info/scans/en/zen/229.jpg
-value=4.491
+value=4.495
 rarity=R
 type=Land
 timing=land

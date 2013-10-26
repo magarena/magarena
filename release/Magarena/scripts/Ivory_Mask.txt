@@ -1,7 +1,7 @@
 name=Ivory Mask
 url=http://magiccards.info/9e/en/23.html
 image=http://magiccards.info/scans/en/9e/23.jpg
-value=4.275
+value=4.268
 rarity=R
 type=Enchantment
 cost={2}{W}{W}

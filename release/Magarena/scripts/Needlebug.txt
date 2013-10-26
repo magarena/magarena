@@ -1,7 +1,7 @@
 name=Needlebug
 url=http://magiccards.info/mi/en/217.html
 image=http://magiccards.info/scans/en/mi/217.jpg
-value=2.500
+value=3.000
 rarity=U
 type=Artifact,Creature
 subtype=Insect

@@ -1,7 +1,7 @@
 name=Figure of Destiny
 url=http://magiccards.info/ddl/en/3.html
 image=http://magiccards.info/scans/en/ddl/3.jpg
-value=4.692
+value=4.393
 rarity=R
 type=Creature
 subtype=Kithkin

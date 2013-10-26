@@ -1,7 +1,7 @@
 name=Tel-Jilad Fallen
 url=http://magiccards.info/som/en/130.html
 image=http://magiccards.info/scans/en/som/130.jpg
-value=2.500
+value=2.991
 rarity=C
 type=Creature
 subtype=Elf,Warrior

@@ -1,7 +1,7 @@
 name=Raze
 url=http://magiccards.info/us/en/207.html
 image=http://magiccards.info/scans/en/us/207.jpg
-value=3.872
+value=3.875
 removal=3
 rarity=C
 type=Sorcery

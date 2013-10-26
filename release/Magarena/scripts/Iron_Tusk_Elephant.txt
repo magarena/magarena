@@ -1,7 +1,7 @@
 name=Iron Tusk Elephant
 url=http://magiccards.info/mr/en/226.html
 image=http://magiccards.info/scans/en/mr/226.jpg
-value=2.500
+value=1.865
 rarity=U
 type=Creature
 subtype=Elephant

@@ -1,7 +1,7 @@
 name=Poultice Sliver
 url=http://magiccards.info/pc/en/11.html
 image=http://magiccards.info/scans/en/pc/11.jpg
-value=2.122
+value=2.120
 rarity=C
 type=Creature
 subtype=Sliver

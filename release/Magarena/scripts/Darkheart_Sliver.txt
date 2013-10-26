@@ -1,7 +1,7 @@
 name=Darkheart Sliver
 url=http://magiccards.info/pc/en/155.html
 image=http://magiccards.info/scans/en/pc/155.jpg
-value=3.840
+value=3.843
 rarity=U
 type=Creature
 subtype=Sliver

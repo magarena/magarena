@@ -1,7 +1,7 @@
 name=Village Cannibals
 url=http://magiccards.info/isd/en/125.html
 image=http://magiccards.info/scans/en/isd/125.jpg
-value=3.306
+value=3.309
 rarity=U
 type=Creature
 subtype=Human

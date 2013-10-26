@@ -1,7 +1,7 @@
 name=Gossamer Phantasm
 url=http://magiccards.info/pc/en/55.html
 image=http://magiccards.info/scans/en/pc/55.jpg
-value=2.452
+value=2.434
 rarity=C
 type=Creature
 subtype=Illusion

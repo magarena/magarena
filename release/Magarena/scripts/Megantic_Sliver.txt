@@ -1,7 +1,7 @@
 name=Megantic Sliver
 url=http://magiccards.info/m14/en/185.html
 image=http://magiccards.info/scans/en/m14/185.jpg
-value=3.446
+value=3.470
 rarity=R
 type=Creature
 subtype=Sliver

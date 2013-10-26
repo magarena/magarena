@@ -1,7 +1,7 @@
 name=Battlegate Mimic
 url=http://magiccards.info/pch/en/98.html
 image=http://magiccards.info/scans/en/pch/98.jpg
-value=3.541
+value=3.570
 rarity=C
 type=Creature
 subtype=Shapeshifter

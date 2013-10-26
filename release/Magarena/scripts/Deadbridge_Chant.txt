@@ -1,7 +1,7 @@
 name=Deadbridge Chant
 url=http://magiccards.info/dgm/en/63.html
 image=http://magiccards.info/scans/en/dgm/63.jpg
-value=4.106
+value=4.127
 rarity=M
 type=Enchantment
 cost={4}{B}{G}

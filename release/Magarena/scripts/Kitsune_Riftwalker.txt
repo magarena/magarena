@@ -1,7 +1,7 @@
 name=Kitsune Riftwalker
 url=http://magiccards.info/chk/en/29.html
 image=http://magiccards.info/scans/en/chk/29.jpg
-value=2.500
+value=1.828
 rarity=C
 type=Creature
 subtype=Fox,Wizard

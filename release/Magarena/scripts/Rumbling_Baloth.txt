@@ -1,7 +1,7 @@
 name=Rumbling Baloth
 url=http://magiccards.info/m14/en/193.html
 image=http://magiccards.info/scans/en/m14/193.jpg
-value=2.982
+value=3.000
 rarity=C
 type=Creature
 subtype=Beast

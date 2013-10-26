@@ -1,7 +1,7 @@
 name=Tivadar's Crusade
 url=http://magiccards.info/med/en/28.html
 image=http://magiccards.info/scans/en/med/28.jpg
-value=2.500
+value=3.723
 rarity=U
 type=Sorcery
 cost={1}{W}{W}

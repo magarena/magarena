@@ -1,7 +1,7 @@
 name=Spring of Eternal Peace
 url=http://magiccards.info/p3k/en/148.html
 image=http://magiccards.info/scans/en/p3k/148.jpg
-value=2.500
+value=1.559
 rarity=C
 type=Sorcery
 cost={3}{G}{G}

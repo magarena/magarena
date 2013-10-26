@@ -1,7 +1,7 @@
 name=Young Pyromancer
 url=http://magiccards.info/m14/en/163.html
 image=http://magiccards.info/scans/en/m14/163.jpg
-value=4.322
+value=4.359
 rarity=U
 type=Creature
 subtype=Human,Shaman

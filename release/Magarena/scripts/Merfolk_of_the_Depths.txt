@@ -1,7 +1,7 @@
 name=Merfolk of the Depths
 url=http://magiccards.info/gtc/en/221.html
 image=http://magiccards.info/scans/en/gtc/221.jpg
-value=2.500
+value=1.151
 rarity=U
 type=Creature
 subtype=Merfolk,Soldier

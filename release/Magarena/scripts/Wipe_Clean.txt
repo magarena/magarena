@@ -1,7 +1,7 @@
 name=Wipe Clean
 url=http://magiccards.info/sc/en/26.html
 image=http://magiccards.info/scans/en/sc/26.jpg
-value=2.500
+value=3.250
 rarity=C
 type=Instant
 cost={1}{W}

@@ -1,7 +1,7 @@
 name=Balthor the Stout
 url=http://magiccards.info/tr/en/91.html
 image=http://magiccards.info/scans/en/tr/91.jpg
-value=4.238
+value=3.966
 rarity=R
 type=Legendary,Creature
 subtype=Dwarf,Barbarian
