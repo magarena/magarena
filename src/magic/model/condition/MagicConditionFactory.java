@@ -71,6 +71,14 @@ public class MagicConditionFactory {
             }
         };
     }
+    
+    public static MagicCondition NoAbility(final MagicAbility ability) {
+        return new MagicCondition() {
+            public boolean accept(final MagicSource source) {
+                return source.hasAbility(ability) == false;
+            }
+        };
+    }
 
     public static MagicCondition HandAtLeast(final int n) {
         return new MagicCondition() {

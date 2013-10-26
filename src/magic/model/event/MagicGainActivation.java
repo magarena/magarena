@@ -7,6 +7,7 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicGainAbilityAction;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 
 import java.util.Arrays;
 
@@ -15,17 +16,16 @@ public class MagicGainActivation extends MagicPermanentActivation {
     private final MagicManaCost cost;
     private final MagicAbility ability;
 
-    public MagicGainActivation(final MagicManaCost cost,final MagicAbility ability,final MagicActivationHints hints,final String txt) {
-        super(hints,txt);
-        this.cost=cost;
-        this.ability=ability;
+    public MagicGainActivation(final MagicManaCost aCost,final MagicAbility aAbility,final MagicActivationHints hints,final String txt) {
+        super(new MagicCondition[]{MagicConditionFactory.NoAbility(aAbility)}, hints, txt);
+        cost = aCost;
+        ability = aAbility;
     }
 
     @Override
     public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
         return Arrays.asList(
-            new MagicPayManaCostEvent(source,cost),
-            new MagicPlayAbilityEvent(source)
+            new MagicPayManaCostEvent(source,cost)
         );
     }
 
