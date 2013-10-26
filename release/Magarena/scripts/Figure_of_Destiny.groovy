@@ -1,11 +1,3 @@
-//basic subtype is Kithkin
-def ST = new MagicStatic(MagicLayer.Type) {
-    @Override
-    public void modSubTypeFlags(final MagicPermanent permanent,final Set<MagicSubType> flags) {
-        flags.removeAll(MagicSubType.ALL_CREATURES);
-        flags.add(MagicSubType.Kithkin);
-    }
-};
 // becomes a 2/2 Kithkin Spirit
 def PT1 = new MagicStatic(MagicLayer.SetPT) {
     @Override
@@ -16,6 +8,8 @@ def PT1 = new MagicStatic(MagicLayer.SetPT) {
 def ST1 = new MagicStatic(MagicLayer.Type) {
     @Override
     public void modSubTypeFlags(final MagicPermanent permanent,final Set<MagicSubType> flags) {
+        flags.clear();
+        flags.add(MagicSubType.Kithkin);
         flags.add(MagicSubType.Spirit);
     }
 };
@@ -30,6 +24,9 @@ def PT2 = new MagicStatic(MagicLayer.SetPT) {
 def ST2 = new MagicStatic(MagicLayer.Type) {
     @Override
     public void modSubTypeFlags(final MagicPermanent permanent,final Set<MagicSubType> flags) {
+        flags.clear();
+        flags.add(MagicSubType.Kithkin);
+        flags.add(MagicSubType.Spirit);
         flags.add(MagicSubType.Warrior);
     }
 };
@@ -44,32 +41,31 @@ def PT3 = new MagicStatic(MagicLayer.SetPT) {
 def ST3 = new MagicStatic(MagicLayer.Type) {
     @Override
     public void modSubTypeFlags(final MagicPermanent permanent,final Set<MagicSubType> flags) {
+        flags.clear();
+        flags.add(MagicSubType.Kithkin);
+        flags.add(MagicSubType.Spirit);
+        flags.add(MagicSubType.Warrior);
         flags.add(MagicSubType.Avatar);
     }
 };
-def AB1 = new MagicStatic(MagicLayer.Ability) {
+def AB3 = new MagicStatic(MagicLayer.Ability) {
     @Override
     public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
         flags.add(MagicAbility.FirstStrike);
-    }
-};
-def AB2 = new MagicStatic(MagicLayer.Ability) {
-    @Override
-    public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
         flags.add(MagicAbility.Flying);
     }
 };
 
 [
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Animate,1),
+        [MagicConditionFactory.NotSubType(MagicSubType.Spirit)],
+        new MagicActivationHints(MagicTiming.Animate),
         "Spirit"
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-                new MagicPayManaCostEvent(source,"{R/W}"),
-                new MagicPlayAbilityEvent(source)
+                new MagicPayManaCostEvent(source,"{R/W}")
             ];
         }
 
@@ -84,65 +80,67 @@ def AB2 = new MagicStatic(MagicLayer.Ability) {
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT1,ST,ST1));
+            game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT1,ST1));
         }
     },
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Animate,1),
+        [
+            MagicConditionFactory.HasSubType(MagicSubType.Spirit),
+            MagicConditionFactory.NotSubType(MagicSubType.Warrior)
+        ],
+        new MagicActivationHints(MagicTiming.Animate),
         "Warrior"
     ) {
 
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-                new MagicPayManaCostEvent(source,"{R/W}{R/W}{R/W}"),
-                new MagicPlayAbilityEvent(source)
+                new MagicPayManaCostEvent(source,"{R/W}{R/W}{R/W}")
             ];
         }
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
-            return (source.hasSubType(MagicSubType.Spirit))?
-            new MagicEvent(
+            return new MagicEvent(
                 source,
                 this,
                 "SN becomes a 4/4 Kithkin Spirit Warrior."
-            ):
-            MagicEvent.NONE;
+            );
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT2,ST,ST1,ST2));
+            game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT2,ST2));
         }
     },
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Animate,1),
+        [
+            MagicConditionFactory.HasSubType(MagicSubType.Warrior),
+            MagicConditionFactory.NotSubType(MagicSubType.Avatar)
+        ],
+        new MagicActivationHints(MagicTiming.Animate),
         "Avatar"
     ) {
 
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-                new MagicPayManaCostEvent(source,"{R/W}{R/W}{R/W}{R/W}{R/W}{R/W}"),
-                new MagicPlayAbilityEvent(source)
+                new MagicPayManaCostEvent(source,"{R/W}{R/W}{R/W}{R/W}{R/W}{R/W}")
             ];
         }
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
-            return (source.hasSubType(MagicSubType.Warrior))?
-            new MagicEvent(
+            return new MagicEvent(
                 source,
                 this,
                 "SN becomes a 8/8 Kithkin Spirit Warrior Avatar with flying and first strike."
-            ):
-            MagicEvent.NONE;
+            );
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT3,AB1,AB2,ST,ST1,ST2,ST3));
+            game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT3,ST3,AB3));
         }
     }
 ]
