@@ -1,30 +1,16 @@
-def ZeroEquip = new MagicEquipActivation(MagicManaCost.create("{0}"));
-def FreeAttach = new MagicPermanentActivation(
-    [MagicCondition.SORCERY_CONDITION, MagicCondition.NOT_CREATURE_CONDITION],
-    new MagicActivationHints(MagicTiming.Equipment),
-    "FreeEquip"
-) {
+def Equip0 = new MagicEquipActivation(MagicManaCost.create("{0}"), "Equip {0}");
 
-    @Override
-    public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
-        return ZeroEquip.getCostEvent(source);
-    }
-
-    @Override
-    public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-        return ZeroEquip.getPermanentEvent(source, payedCost);
-    } 
-};
 def EQUIPMENT_YOU_CONTROL = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return (target.isEquipment() && target.isController(player));
-        }
-    };
+    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+        return target.isEquipment() && target.isController(player);
+    }
+};
+
 [
     new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            return (otherPermanent.isEquipment() && (otherPermanent.getController() == permanent.getController())) ?
+            return (otherPermanent.isEquipment() && otherPermanent.isFriend(permanent)) ?
                 new MagicEvent(
                     permanent,
                     new MagicSimpleMayChoice(
@@ -50,9 +36,11 @@ def EQUIPMENT_YOU_CONTROL = new MagicPermanentFilterImpl() {
     ) {
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
-            if (MagicCondition.METALCRAFT_CONDITION.accept(permanent)) {
-                permanent.addAbility(FreeAttach);
-            }
+            permanent.addAbility(Equip0);
+        }
+        @Override
+        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+            return MagicCondition.METALCRAFT_CONDITION.accept(source);
         }
     }
 ]
