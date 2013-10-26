@@ -203,4 +203,11 @@ public interface MagicCondition {
             return card != MagicCard.NONE && card.hasType(MagicType.Creature);
         }
     };
+    
+    MagicCondition HAS_EQUIPPED_CREATURE = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicPermanent permanent = (MagicPermanent)source;
+            return permanent.getEquippedCreature().isCreature();
+        }
+    };
 }
