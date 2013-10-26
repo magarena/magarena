@@ -4,12 +4,18 @@ Accursed Spirit
 Act of Treason
 Adaptive Snapjaw
 Advent of the Wurm
+Advocate of the Beast
 Air Servant
 Ajani, Caller of the Pride
 Ajani's Chosen
+Akroan Crusader
+Angelic Edict
 Angelic Wall
 Anger of the Gods
 Annihilating Fire
+Anvilwrought Raptor
+Arbor Colossus
+Archangel of Thune
 Archweaver
 Armada Wurm
 Armored Cancrix
@@ -17,6 +23,7 @@ Armored Wolf-Rider
 Armory Guard
 Arrest
 Ascended Lawmage
+Ashen Rider
 Assault Griffin
 Assemble the Legion
 Auramancer
@@ -29,6 +36,7 @@ Basilica Screecher
 Battering Krasis
 Battle Sliver
 Bellows Lizard
+Benthic Giant
 Blind Obedience
 Blood Baron of Vizkopa
 Blood Crypt
@@ -37,6 +45,7 @@ Blur Sliver
 Blustersquall
 Bomber Corps
 Bonescythe Sliver
+Borderland Minotaur
 Boros Elite
 Boros Guildgate
 Boros Mastiff
@@ -45,6 +54,7 @@ Bramblecrush
 Breeding Pool
 Briarpack Alpha
 Brindle Boar
+Bronze Sable
 Brushstrider
 Call of the Conclave
 Cancel
@@ -53,7 +63,10 @@ Capashen Knight
 Carnival Hellsteed
 Cartel Aristocrat
 Catacomb Slug
+Cavern Lampad
+Centaur Battlemaster
 Centaur Healer
+Centaur's Herald
 Chandra's Outrage
 Chaos Imps
 Chemister's Trick
@@ -78,8 +91,10 @@ Dark Favor
 Darksteel Forge
 Darksteel Ingot
 Dawnstrike Paladin
+Deadbridge Chant
 Deadly Recluse
 Dead Reveler
+Deathbellow Raider
 Deathgaze Cockatrice
 Demolish
 Dimir Guildgate
@@ -98,14 +113,19 @@ Druid's Deliverance
 Dryad Militant
 Dynacharge
 Electrickery
+Elspeth, Sun's Champion
 Elusive Krasis
 Elvish Mystic
+Emmara Tandris
 Essence Scatter
 Ethereal Armor
 Experiment One
 Explosive Impact
 Eyes in the Skies
+Fabled Hero
+Fade into Antiquity
 Fatal Fumes
+Felhide Minotaur
 Fencing Ace
 Fiendslayer Paladin
 Firefist Striker
@@ -115,11 +135,13 @@ Fog
 Forced Adaptation
 Forest
 Foundry Street Denizen
+Frenzied Tilling
 Frilled Oculus
 Frontline Medic
 Frostburn Weird
 Galerider Sliver
 Ghor-Clan Rampager
+Giant Adephage
 Giant Growth
 Giant Spider
 Gideon, Champion of Justice
@@ -132,12 +154,15 @@ Golgari Guildgate
 Golgari Longlegs
 Gore-House Chainwalker
 Grave Betrayal
+Greenside Watcher
 Griffin Sentinel
 Grim Roustabout
 Griptide
 Groundshaker Sliver
 Growing Ranks
 Gruul Guildgate
+Guardians of Meletis
+Gutter Skulk
 Hallowed Fountain
 Hands of Binding
 Haunter of Nightveil
@@ -151,6 +176,7 @@ Hover Barrier
 Hussar Patrol
 Inaction Injunction
 Indestructibility
+Insatiable Harpy
 Island
 Isperia's Skywatch
 Izzet Guildgate
@@ -159,21 +185,27 @@ Kingpin's Pet
 Knightly Valor
 Knight of Obligation
 Knight Watch
+Kragma Warcaller
 Kraul Warrior
+Labyrinth Champion
 Lava Axe
+Lay of the Land
 Legion Loyalist
 Lightning Talons
+Liliana's Reaver
 Loxodon Smiter
 Lyev Skyknight
 Manaweft Sliver
 Mark of the Vampire
 Martial Law
 Megantic Sliver
+Merfolk of the Depths
 Millennial Gargoyle
 Mind Rot
 Mindstatic
 Minotaur Abomination
 Minotaur Aggressor
+Minotaur Skullcleaver
 Mistcutter Hydra
 Mizzium Mortars
 Mizzium Skin
@@ -187,6 +219,7 @@ Naturalize
 Nav Squad Commandos
 Negate
 Nephalia Seakite
+Nessian Asp
 Nessian Courser
 New Prahv Guildmage
 Nightmare
@@ -201,6 +234,7 @@ Pacifism
 Paralyzing Grasp
 Perilous Shadow
 Phantom Warrior
+Pheres-Band Centaurs
 Pillarfield Ox
 Pitchburn Devils
 Plains
@@ -209,6 +243,7 @@ Precinct Captain
 Predatory Sliver
 Progenitor Mimic
 Psychic Strike
+Purphoros, God of the Forge
 Putrefy
 Rageblood Shaman
 Rakdos Cackler
@@ -230,26 +265,33 @@ Rootwalla
 Rubbleback Rhino
 Rubblebelt Maaka
 Rubblehulk
+Ruination Wurm
 Rumbling Baloth
 Runewing
 Sacred Foundry
 Sanguine Bond
+Satyr Rambler
 Scab-Clan Charger
 Scavenging Ooze
 Scorchwalker
 Scroll Thief
 Seacoast Drake
+Sedge Scorpion
 Selesnya Guildgate
 Selesnya Sentry
 Seller of Songbirds
 Sensory Deprivation
 Sentinel Sliver
+Seraph of the Sword
 Serra Angel
+Setessan Battle Priest
 Shambleshark
+Shattering Blow
 Shivan Dragon
 Shock
 Siege Mastodon
 Silence
+Silent Artisan
 Simic Guildgate
 Skarrg Goliath
 Skinbrand Goblin
@@ -268,6 +310,7 @@ Spawn of Rix Maadi
 Sphinx's Revelation
 Spike Jester
 Splatter Thug
+Staunch-Hearted Warrior
 Stealer of Secrets
 Steam Vents
 Steelform Sliver
@@ -304,10 +347,15 @@ Towering Indrik
 Towering Thunderfist
 Trained Caracal
 Transguild Promenade
+Traumatize
+Traveling Philosopher
 Trestle Troll
+Triton Fortune Hunter
+Triton Shorethief
 Trostani, Selesnya's Voice
 Trostani's Judgment
 Truefire Paladin
+Two-Headed Cerberus
 Undead Minotaur
 Underworld Connections
 Unflinching Courage
@@ -318,7 +366,9 @@ Vassal Soul
 Viashino Shanktail
 Vitu-Ghazi Guildmage
 Voice of Resurgence
+Voyaging Satyr
 Vraska the Unseen
+Vulpine Goliath
 Wake the Reflections
 Wall of Frost
 Wall of Swords
@@ -329,11 +379,13 @@ Water Servant
 Watery Grave
 Wayfaring Temple
 Wind Drake
+Wingsteed Rider
 Wojek Halberdiers
 Woodlot Crawler
 Worldspine Wurm
 Wrecking Ogre
 Wring Flesh
 Xathrid Necromancer
+Yoked Ox
 Young Pyromancer
 Zhur-Taa Swine
