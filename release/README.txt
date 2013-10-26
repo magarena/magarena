@@ -55,6 +55,31 @@ Thank you for your support and have fun!
 Release 1.43 (October 26, 2013)
 ============
 includes contributions from:
+Blants
+ember hauler
+hong yie
+Jericho Pumpkin
+melvin
+willianmgbr
+
+added monstrosity <n> <mana cost> to ability property
+support 'bestow <mana cost>' in ability property of card script
+add 'heroic effect <effect>' to ability property
+added 'each upkeep effect' to ability
+added MagicHeroicTrigger for heroic mechanic
+added WhenBecomesMonstrousTrigger
+Nav Squad Commandos get +2/+2 instead of +1/+1 according to its rules text, fixes issue 411
+support basic specification of activated ability in ability property by starting with keyword 'pay'
+fix Valakut crash due to not checking for result of MagicMayChoice
+Bosh cost of ability should not tap
+Wooded Foothills searches for Mountain or Plain instead of Mountain or Forest, fixes issue 412
+Primeval Titan should tutor land cards not basic land cards
+added protection from lands
+added more protection from abilities
+
+- added the following premade decks:
+
+- added the following cards:
 
 Release 1.42 (September 29, 2013)
 ============
