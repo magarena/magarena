@@ -76,6 +76,7 @@ Wooded Foothills searches for Mountain or Plain instead of Mountain or Forest, f
 Primeval Titan should tutor land cards not basic land cards
 added protection from lands
 added more protection from abilities
+check that Jitte is equipped for pump equipped ability
 
 - added the following premade decks:
 
