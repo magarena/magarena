@@ -51,8 +51,8 @@ def ST3 = new MagicStatic(MagicLayer.Type) {
 def AB3 = new MagicStatic(MagicLayer.Ability) {
     @Override
     public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
-        flags.add(MagicAbility.FirstStrike);
         flags.add(MagicAbility.Flying);
+        flags.add(MagicAbility.FirstStrike);
     }
 };
 
@@ -110,7 +110,9 @@ def AB3 = new MagicStatic(MagicLayer.Ability) {
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT2,ST2));
+            if (event.getPermanent().hasSubType(MagicSubType.Spirit)) {
+                game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT2,ST2));
+            }
         }
     },
     new MagicPermanentActivation(
@@ -140,7 +142,9 @@ def AB3 = new MagicStatic(MagicLayer.Ability) {
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT3,ST3,AB3));
+            if (event.getPermanent().hasSubType(MagicSubType.Warrior)) {
+                game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT3,ST3,AB3));
+            }
         }
     }
 ]
