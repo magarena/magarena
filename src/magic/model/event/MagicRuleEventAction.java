@@ -95,23 +95,6 @@ public enum MagicRuleEventAction {
             }
         }
     ),
-    Counter(
-        "counter (?<choice>[^\\.]*).", 
-        MagicTargetHint.Negative, 
-        MagicDefaultTargetPicker.create(), 
-        MagicTiming.Counter,
-        "Counter",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTargetCardOnStack(game,new MagicCardOnStackAction() {
-                    public void doAction(final MagicCardOnStack targetSpell) {
-                        game.doAction(new MagicCounterItemOnStackAction(targetSpell));
-                    }
-                });
-            }
-        }
-    ),
     CounterUnless(
         "counter (?<choice>[^\\.]*) unless its controller pays (?<cost>[^\\.]*).", 
         MagicTargetHint.Negative, 
@@ -137,6 +120,23 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    Counter(
+        "counter (?<choice>[^\\.]*).", 
+        MagicTargetHint.Negative, 
+        MagicDefaultTargetPicker.create(), 
+        MagicTiming.Counter,
+        "Counter",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTargetCardOnStack(game,new MagicCardOnStackAction() {
+                    public void doAction(final MagicCardOnStack targetSpell) {
+                        game.doAction(new MagicCounterItemOnStackAction(targetSpell));
+                    }
+                });
+            }
+        }
+    ),
     Exile(
         "exile (?<choice>[^\\.]*).", 
         MagicTargetHint.Negative, 
