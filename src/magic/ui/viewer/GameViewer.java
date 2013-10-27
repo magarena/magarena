@@ -4,19 +4,22 @@ import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
+import magic.model.phase.MagicPhaseType;
 import magic.ui.GameController;
-import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TextLabel;
 import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.TitleBar;
 
+import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.awt.Insets;
@@ -48,7 +51,7 @@ public class GameViewer extends TexturedPanel implements ActionListener {
         this.controller=controller;
 
         setLayout(new BorderLayout());
-        setBorder(FontsAndBorders.BLACK_BORDER_2);
+        setBorder(BorderFactory.createMatteBorder(0, 1, 1, 1, Color.BLACK));
 
         actionPanel=new JPanel();
         actionPanel.setOpaque(false);
@@ -112,7 +115,7 @@ public class GameViewer extends TexturedPanel implements ActionListener {
         titleBar.setText("Turn " + game.getTurn() + " : " + game.getPhase().getType().getName());
         titleBar.setIcon(game.getTurnPlayer() == game.getVisiblePlayer() ? IconImages.YOU : IconImages.OPPONENT);
     }
-    
+
     public void clearContentPanel() {
         contentPanel.removeAll();
     }
@@ -170,5 +173,9 @@ public class GameViewer extends TexturedPanel implements ActionListener {
         } else if (source==undoButton) {
             controller.undoClicked();
         }
+    }
+
+    public MagicPhaseType getMagicPhaseType() {
+        return game.getPhase().getType();
     }
 }
