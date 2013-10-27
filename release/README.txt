@@ -59,28 +59,97 @@ Blants
 ember hauler
 hong yie
 Jericho Pumpkin
+Lodici
 melvin
 willianmgbr
 
-added monstrosity <n> <mana cost> to ability property
-support 'bestow <mana cost>' in ability property of card script
-add 'heroic effect <effect>' to ability property
-added 'each upkeep effect' to ability
-added MagicHeroicTrigger for heroic mechanic
-added WhenBecomesMonstrousTrigger
-Nav Squad Commandos get +2/+2 instead of +1/+1 according to its rules text, fixes issue 411
-support basic specification of activated ability in ability property by starting with keyword 'pay'
+- support basic specification of activated ability in ability property by starting with keyword 'pay'
+
+- added the following to the ability property in card script:
+  * monstrosity <n> <mana cost>
+  * bestow <mana cost>
+  * heroic effect <effect>
+  * each upkeep <effect>
+  * protection from <stuff>
+  * pay <cost>[, <cost]: <effect>
+
+- fixed the following bugs:
 fix Valakut crash due to not checking for result of MagicMayChoice
 Bosh cost of ability should not tap
 Wooded Foothills searches for Mountain or Plain instead of Mountain or Forest, fixes issue 412
 Primeval Titan should tutor land cards not basic land cards
-added protection from lands
-added more protection from abilities
 check that Jitte is equipped for pump equipped ability
+added option to show card popup using mousewheel instead of an automatic delay.
+Nav Squad Commandos get +2/+2 instead of +1/+1 according to its rules text, fixes issue 411
 
 - added the following premade decks:
+Jericho_Blinking_Alliance_WU.dec, Jericho_Boros_Minefield_WR.dec,
+Jericho_Elemental_Falls_GRU.dec, Jericho_Exalted_Horde_BUG.dec,
+Jericho_Kithkin_Rampage_W.dec, Jericho_Mirror_Stomper_GRU.dec,
+Jericho_Myrage_U.jpg.dec, Jericho_Night_Goblins_BR.dec,
+Jericho_Persinsistence_WG.dec, Jericho_Phantom_Lord_GW.dec,
+Jericho_Pure_Steel_W.dec, Jericho_Reckoning_Army_BRW.dec,
+Jericho_Reverse_Pain_B.dec, Jericho_War_Dance_GBW.dec,
+Jericho_Wild_Growth_WG.dec
 
 - added the following cards:
+Acid Rain, Advocate of the Beast, Akroan Crusader, All Is Dust,
+Allosaurus Rider, Altar's Light, Ambush Commander, Anaba Shaman,
+Anaba Spirit Crafter, Angelic Curator, Angelic Edict, Anvilwrought Raptor,
+Arbor Colossus, Archangel of Thune, Ashen Rider, Barkhide Mauler,
+Belligerent Hatchling, Benthic Giant, Blightsoil Druid, Boggart Birth Rite,
+Boil, Boiling Seas, Borderland Minotaur, Bramblewood Paragon, Bronze Sable,
+Cavern Lampad, Centaur Battlemaster, Centaur's Herald, Child of Alara,
+Cho-Manno, Revolutionary, Chronomaton, Cinder Pyromancer, Cleanfall,
+Cloak and Dagger, Concordant Crossroads, Craven Giant, Crib Swap, Crypt Rats,
+Cylian Sunsinger, Deadbridge Chant, Deadshot Minotaur, Deathbellow Raider,
+Dispatch, Dispense Justice, Diviner's Wand, Duplicant,
+Eladamri, Lord of Leaves, Elder Druid, Elf Replica, Elspeth, Sun's Champion,
+Elvish Branchbender, Elvish Eulogist, Elvish Farmer, Elvish Handservant,
+Elvish Healer, Elvish Herder, Elvish Hexhunter, Elvish Hunter, Elvish Lyrist,
+Elvish Promenade, Elvish Scout, Elvish Scrapper, Elvish Skysweeper,
+Elvish Vanguard, Emmara Tandris, Evolving Wilds, Eyeblight's Ending,
+Fabled Hero, Fade into Antiquity, Faerie Tauntings, Faerie Trickery,
+Favor of the Mighty, Felhide Minotaur, Feudkiller's Verdict, Fierce Empath,
+Figure of Destiny, Flashfires, Fodder Launch, Frenetic Raptor,
+Frenzied Tilling, Frontier Guide, Furnace of Rath, Galvanic Blast,
+Giant Adephage, Giant's Ire, Gisela, Blade of Goldnight, Godtoucher,
+Godtracker of Jund, Golgari Guildmage, Goliath Beetle, Greatbow Doyen,
+Greenhilt Trainee, Greenside Watcher, Guardians of Meletis, Gutter Skulk,
+Hoofprints of the Stag, Horizon Drake, Hundroog, Hunting Triad,
+Hurloon Shaman, Insatiable Harpy, Invader Parasite, Iron Tusk Elephant,
+Isochron Scepter, Jhovall Rider, Jor Kadeen, the Prevailer, Jungle Weaver,
+Keeneye Aven, Kiln Fiend, Kitsune Riftwalker, Kragma Warcaller,
+Labyrinth Champion, Labyrinth Minotaur, Lay of the Land, Liliana's Reaver,
+Macetail Hystrodon, Marsh Boa, Merfolk of the Depths, Merrow Commerce,
+Militia's Pride, Minotaur Explorer, Minotaur Illusionist,
+Minotaur Skullcleaver, Miraculous Recovery, Mirran Mettle, Moat,
+Moorish Cavalry, Mosquito Guard, Nacatl Savage, Nath's Buffoon, Needlebug,
+Nessian Asp, Night of Souls' Betrayal, Nourish, Noxious Hatchling,
+Obsidian Battle-Axe, One with Nothing, Ordruun Commando, Pendrell Drake,
+Pendrell Mists, Peppersmoke, Phantom Centaur, Phantom Flock, Phantom Nantuko,
+Phantom Nishoba, Phantom Nomad, Phantom Tiger, Phantom Wurm,
+Pheres-Band Centaurs, Phyrexian Ingester, Powerstone Minefield,
+Primoc Escapee, Prowess of the Fair, Puresteel Paladin,
+Purphoros, God of the Forge, Raiding Nightstalker, Raka Disciple,
+Ramirez DePietro, Raze, Reach Through Mists, Rend Spirit, Renegade Troops,
+Ridge Rannet, Riku of Two Reflections, Ronom Hulk, Rootgrapple,
+Ruination Wurm, Ruinous Minotaur, Rusted Relic, Sacred Nectar, Sage's Dousing,
+Sandbar Merfolk, Sandbar Serpent, Sands of Delirium, Satyr Rambler,
+Sedge Scorpion, Seraph of the Sword, Serene Heart, Setessan Battle Priest,
+Shattering Blow, Shields of Velis Vel, Shimmering Barrier, Shoreline Raider,
+Silent Artisan, Skittering Invasion, Sliver Overlord, Spring of Eternal Peace,
+Squirming Mass, Staunch-Hearted Warrior, Stream of Unconsciousness,
+Sturdy Hatchling, Surge of Thoughtweft, Tahngarth, Talruum Hero, Tarfire,
+Tariel, Reckoner of Souls, Tel-Jilad Archers, Tel-Jilad Chosen,
+Tel-Jilad Fallen, Tel-Jilad Outrider, Terramorphic Expanse,
+The Tabernacle at Pendrell Vale, Thornbite Staff, Tivadar's Crusade,
+Touch of Brilliance, Traumatize, Traveling Philosopher, Triton Fortune Hunter,
+Triton Shorethief, True Believer, Tsunami, Two-Headed Cerberus,
+Veteran's Armaments, Violet Pall, Voracious Hatchling, Voyaging Satyr,
+Vulpine Goliath, Wall of Earth, Wall of Granite, Wall of Ice,
+Warren-Scourge Elf, Whitesun's Passage, Wings of Velis Vel, Wingsteed Rider,
+Wipe Clean, Yoked Ox, Yoked Plowbeast
 
 Release 1.42 (September 29, 2013)
 ============
