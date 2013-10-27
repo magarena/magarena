@@ -5,6 +5,6 @@ value=4.275
 rarity=R
 type=Instant
 cost={U}
+effect=Counter target instant or sorcery spell unless its controller pays {1}.
 ability=storm
 timing=counter
-requires_groovy_code

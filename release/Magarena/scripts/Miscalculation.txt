@@ -5,6 +5,6 @@ value=4.051
 rarity=C
 type=Instant
 cost={1}{U}
-timing=counter
+effect=Counter target spell unless its controller pays {2}.
 ability=cycling {2}
-requires_groovy_code
+timing=counter
