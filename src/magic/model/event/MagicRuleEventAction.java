@@ -28,6 +28,7 @@ import magic.model.action.MagicPlayTokenAction;
 import magic.model.action.MagicPlayTokensAction;
 import magic.model.action.MagicPreventDamageAction;
 import magic.model.action.MagicGainAbilityAction;
+import magic.model.action.MagicMillLibraryAction;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
@@ -624,6 +625,22 @@ public enum MagicRuleEventAction {
                         tokenDef,
                         amount
                     ));
+                }
+            };
+        }
+    },
+    MillSelf(
+        "PN puts the top (?<amount>[a-z]+) card(s)? of his or her library into his or her graveyard.",
+        MagicTiming.Draw, 
+        "Mill"
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final int amount = englishToInt(matcher.group("amount"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.doAction(new MagicMillLibraryAction(event.getPlayer(), amount));
                 }
             };
         }
