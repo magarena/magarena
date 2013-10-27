@@ -7,6 +7,6 @@ type=Creature
 subtype=Sliver
 cost={2}{R}
 pt=2/2
+ability=lord all Sliver creatures have "pay {2}: SN gets +1/+0 until end of turn."
 timing=main
 static=all
-requires_groovy_code
