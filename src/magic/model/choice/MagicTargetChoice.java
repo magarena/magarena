@@ -656,7 +656,8 @@ public class MagicTargetChoice extends MagicChoice {
             targetFilter = MagicTargetFilterFactory.single(targetDescription.replaceFirst("an ", ""));
             targeted     = false;
         } else {
-            throw new RuntimeException("Unable to parse target choice: " + targetDescription);
+            targetFilter = MagicTargetFilterFactory.single(targetDescription);
+            targeted     = false;
         }
     }
     
