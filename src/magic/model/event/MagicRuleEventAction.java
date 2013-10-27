@@ -8,6 +8,7 @@ import magic.model.MagicPermanentState;
 import magic.model.MagicDamage;
 import magic.model.MagicCounterType;
 import magic.model.MagicAbility;
+import magic.model.MagicManaCost;
 import magic.model.MagicCardDefinition;
 import magic.model.action.MagicCardOnStackAction;
 import magic.model.action.MagicCounterItemOnStackAction;
@@ -111,6 +112,31 @@ public enum MagicRuleEventAction {
             }
         }
     ),
+    CounterUnless(
+        "counter (?<choice>[^\\.]*) unless its controller pays (?<cost>[^\\.]*).", 
+        MagicTargetHint.Negative, 
+        MagicTiming.Counter,
+        "Counter"
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final MagicManaCost cost = MagicManaCost.create(matcher.group("cost"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTargetCardOnStack(game,new MagicCardOnStackAction() {
+                        public void doAction(final MagicCardOnStack targetSpell) {
+                            game.addEvent(new MagicCounterUnlessEvent(
+                                event.getSource(),
+                                targetSpell,
+                                cost
+                            ));
+                        }
+                    });
+                }
+            };
+        }
+    },
     Exile(
         "exile (?<choice>[^\\.]*).", 
         MagicTargetHint.Negative, 
