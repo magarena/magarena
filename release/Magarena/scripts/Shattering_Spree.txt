@@ -7,5 +7,5 @@ rarity=U
 type=Sorcery
 cost={R}
 ability=replicate {R}
+effect=Destroy target artifact.
 timing=removal
-requires_groovy_code
