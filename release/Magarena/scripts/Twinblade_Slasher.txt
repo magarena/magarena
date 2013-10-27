@@ -7,6 +7,6 @@ type=Creature
 subtype=Elf,Warrior
 cost={G}
 pt=1/1
-ability=wither
+ability=wither;\
+        pay {1}{G}, {O}: SN gets +2/+2 until end of turn.
 timing=main
-requires_groovy_code=Rootwalla

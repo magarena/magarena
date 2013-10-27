@@ -7,6 +7,6 @@ type=Creature
 subtype=Drake
 cost={3}{R}
 pt=2/2
-ability=flying
+ability=flying;\
+        pay {R}, {O}: SN gets +1/+0 until end of turn.
 timing=main
-requires_groovy_code=Fire Drake
