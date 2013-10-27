@@ -7,6 +7,6 @@ type=Creature
 subtype=Minotaur,Berserker
 cost={2}{R}
 pt=2/2
-ability=haste
+ability=haste;\
+        enters effect SN gets +2/+0 until end of turn.
 timing=fmain
-requires_groovy_code
