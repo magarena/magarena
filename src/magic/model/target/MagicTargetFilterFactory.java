@@ -185,7 +185,7 @@ public class MagicTargetFilterFactory {
     }
     
     public static MagicTargetFilter<?> single(final String arg) {
-        final String filter = arg.replaceFirst("^(?i)target |^a |^an ", "").replaceFirst(" to sacrifice$", " you control");
+        final String filter = arg.replaceFirst(" to sacrifice$", " you control");
         if (single.containsKey(filter)) {
             return single.get(filter);
         } else if (filter.endsWith(" card from your graveyard")) {

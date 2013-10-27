@@ -640,10 +640,24 @@ public class MagicTargetChoice extends MagicChoice {
     
     public MagicTargetChoice(final MagicTargetHint aTargetHint, final String aTargetDescription) {
         super("Choose " + aTargetDescription + '.');
-        targetFilter = MagicTargetFilterFactory.single(aTargetDescription);
-        targeted     = aTargetDescription.contains("target");
-        targetHint   = aTargetHint;
+        targetHint        = aTargetHint;
         targetDescription = aTargetDescription;
+
+        if (targetDescription.startsWith("Target ")) {
+            targetFilter = MagicTargetFilterFactory.single(targetDescription.replaceFirst("Target ", ""));
+            targeted     = true;
+        } else if (targetDescription.startsWith("target ")) {
+            targetFilter = MagicTargetFilterFactory.single(targetDescription.replaceFirst("target ", ""));
+            targeted     = true;
+        } else if (targetDescription.startsWith("a ")) {
+            targetFilter = MagicTargetFilterFactory.single(targetDescription.replaceFirst("a ", ""));
+            targeted     = false;
+        } else if (targetDescription.startsWith("an ")) {
+            targetFilter = MagicTargetFilterFactory.single(targetDescription.replaceFirst("an ", ""));
+            targeted     = false;
+        } else {
+            throw new RuntimeException("Unable to parse target choice: " + targetDescription);
+        }
     }
     
     public MagicTargetChoice(
