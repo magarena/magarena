@@ -63,24 +63,27 @@ Lodici
 melvin
 willianmgbr
 
-- support basic specification of activated ability in ability property by starting with keyword 'pay'
+- support specification of activated ability in ability property by starting with keyword 'pay'
+
+- added option to show card popup using mousewheel instead of an automatic delay
+
+- show order of phases/steps, with the current phase/step highlighted
 
 - added the following to the ability property in card script:
   * monstrosity <n> <mana cost>
   * bestow <mana cost>
   * heroic effect <effect>
   * each upkeep <effect>
-  * protection from <stuff>
-  * pay <cost>[, <cost]: <effect>
+  * protection from <thing>
+  * pay <cost>[, <cost>]: <effect>
 
 - fixed the following bugs:
-fix Valakut crash due to not checking for result of MagicMayChoice
-Bosh cost of ability should not tap
-Wooded Foothills searches for Mountain or Plain instead of Mountain or Forest, fixes issue 412
-Primeval Titan should tutor land cards not basic land cards
-check that Jitte is equipped for pump equipped ability
-added option to show card popup using mousewheel instead of an automatic delay.
-Nav Squad Commandos get +2/+2 instead of +1/+1 according to its rules text, fixes issue 411
+  * Valakut, the Molten Pinnacle crashes if "No" is selected for the may choice
+  * Bosh, Iron Golem's activated ability require tapping
+  * Umezawa's Jitte able to pump equipped creature when it is not attached
+  * Wooded Foothills searches for Mountain or Plain instead of Mountain or Forest
+  * Nav Squad Commandos batallion trigger gives +2/+2 instead of +1/+1
+  * Primeval Titan searches for basic land cards instead of land cards
 
 - added the following premade decks:
 Jericho_Blinking_Alliance_WU.dec, Jericho_Boros_Minefield_WR.dec,
