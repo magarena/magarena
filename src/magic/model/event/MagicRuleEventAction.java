@@ -685,7 +685,7 @@ public enum MagicRuleEventAction {
             final MagicTiming aTiming, 
             final String aName, 
             final MagicEventAction aAction) {
-        pattern = Pattern.compile(aPattern);
+        pattern = Pattern.compile(aPattern, Pattern.CASE_INSENSITIVE);
         hint = aHint;
         picker = aPicker;
         timing = aTiming;
@@ -770,7 +770,7 @@ public enum MagicRuleEventAction {
     }
 
     public static MagicSourceEvent create(final String rule) {
-        final String effect = rule.toLowerCase();
+        final String effect = rule;
         final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
         final MagicEventAction action  = ruleAction.getAction(effect);
         final MagicTargetPicker<?> picker = ruleAction.getPicker(effect);
@@ -795,7 +795,7 @@ public enum MagicRuleEventAction {
     }
     
     public static MagicSourceEvent createMay(final String rule) {
-        final String effect = rule.toLowerCase();
+        final String effect = rule;
         final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
         final MagicEventAction action  = ruleAction.getAction(effect);
         final MagicTargetPicker<?> picker = ruleAction.getPicker(effect);

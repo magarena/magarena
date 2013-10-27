@@ -165,14 +165,14 @@ public class MagicTargetFilterFactory {
     public static MagicTargetFilter<MagicPermanent> build(final String arg) {
         if (factory.containsKey(arg)) {
             return factory.get(arg);
-        } else if (arg.endsWith(" creatures pn controls")) {
-            return matchCreaturePrefix(arg, " creatures pn controls", Control.You);
+        } else if (arg.endsWith(" creatures PN controls")) {
+            return matchCreaturePrefix(arg, " creatures PN controls", Control.You);
         } else if (arg.endsWith(" creatures you control")) {
             return matchCreaturePrefix(arg, " creatures you control", Control.You);
         } else if (arg.endsWith(" creatures your opponents control")) {
             return matchCreaturePrefix(arg, " creatures your opponents control", Control.Opp);
-        } else if (arg.endsWith(" creatures pn's opponents control")) {
-            return matchCreaturePrefix(arg, " creatures pn's opponents control", Control.Opp);
+        } else if (arg.endsWith(" creatures PN's opponents control")) {
+            return matchCreaturePrefix(arg, " creatures PN's opponents control", Control.Opp);
         } else if (arg.endsWith(" creatures")) {
             return matchCreaturePrefix(arg, " creatures", Control.Any);
         } else if (arg.endsWith(" you control")) {
@@ -185,7 +185,7 @@ public class MagicTargetFilterFactory {
     }
     
     public static MagicTargetFilter<?> single(final String arg) {
-        final String filter = arg.replaceFirst("^target |^a |^an ", "").replaceFirst(" to sacrifice$", " you control");
+        final String filter = arg.replaceFirst("^(?i)target |^a |^an ", "").replaceFirst(" to sacrifice$", " you control");
         if (single.containsKey(filter)) {
             return single.get(filter);
         } else if (filter.endsWith(" card from your graveyard")) {
