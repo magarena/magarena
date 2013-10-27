@@ -84,6 +84,7 @@ willianmgbr
   * Wooded Foothills searches for Mountain or Plain instead of Mountain or Forest
   * Nav Squad Commandos batallion trigger gives +2/+2 instead of +1/+1
   * Primeval Titan searches for basic land cards instead of land cards
+  * Activated abilities that grants abilities could only be used once per turn
 
 - added the following premade decks:
 Jericho_Blinking_Alliance_WU.dec, Jericho_Boros_Minefield_WR.dec,
