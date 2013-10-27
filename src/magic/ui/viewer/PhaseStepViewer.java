@@ -19,7 +19,6 @@ public class PhaseStepViewer extends TexturedPanel {
 
     private int currentPhaseStep = -1;
     private final Theme theme = ThemeFactory.getInstance().getCurrentTheme();
-    private final Dimension gap = new Dimension(8, 0);
 
     // CTR
     public PhaseStepViewer() {
@@ -27,8 +26,6 @@ public class PhaseStepViewer extends TexturedPanel {
     }
 
     private void setMyLayout() {
-        setLayout(new BoxLayout(this, BoxLayout.X_AXIS));
-        add(Box.createRigidArea(new Dimension(9, 0)));
         setPhaseStepIndicator("UN", "Beginning Phase : Untap Step");
         setPhaseStepIndicator("UP", "Beginning Phase : Upkeep Step");
         setPhaseStepIndicator("DR", "Beginning Phase : Draw Step");
@@ -66,30 +63,9 @@ public class PhaseStepViewer extends TexturedPanel {
         lbl.setHorizontalAlignment(SwingConstants.CENTER);
         lbl.setForeground(Color.GRAY);
         add(lbl);
-        add(Box.createRigidArea(gap));
     }
 
     public void setPhaseStep(MagicPhaseType gamePhaseType) {
-        switch (gamePhaseType) {
-        case Mulligan:          { setPhaseStep(-1); break; }
-        case Untap:             { setPhaseStep(1); break; }
-        case Upkeep:            { setPhaseStep(3); break; }
-        case Draw:              { setPhaseStep(5); break; }
-        case FirstMain:         { setPhaseStep(7); break; }
-        case BeginOfCombat:     { setPhaseStep(9); break; }
-        case DeclareAttackers:  { setPhaseStep(11); break; }
-        case DeclareBlockers:   { setPhaseStep(13); break; }
-        case CombatDamage:      { setPhaseStep(15); break; }
-        case EndOfCombat:       { setPhaseStep(17); break; }
-        case SecondMain:        { setPhaseStep(19); break; }
-        case EndOfTurn:         { setPhaseStep(21); break; }
-        case Cleanup:           { setPhaseStep(23); break; }
-        }
+        setPhaseStep(gamePhaseType.ordinal() - 1);
     }
-
-    @Override
-    public Dimension getPreferredSize() {
-        return new Dimension(0, 22);
-    }
-
 }
