@@ -33,6 +33,7 @@ public class GeneralConfig {
     private static final String SOUND="sound";
     private static final String CONFIRM_EXIT = "confirmExit";
     private static final String TOUCHSCREEN = "touchscreen";
+    private static final String MOUSEWHEEL_POPUP = "mousewheel";
 
     private static final int DEFAULT_LEFT=0;
     private static final int DEFAULT_TOP=0;
@@ -56,6 +57,7 @@ public class GeneralConfig {
     private static final boolean DEFAULT_SOUND=false;
     private static final boolean DEFAULT_CONFIRM_EXIT = true;
     private static final boolean DEFAULT_TOUCHSCREEN = false;
+    private static final boolean DEFAULT_MOUSEWHEEL_POPUP = false;
 
     private int left=DEFAULT_LEFT;
     private int top=DEFAULT_TOP;
@@ -79,6 +81,7 @@ public class GeneralConfig {
     private boolean sound=DEFAULT_SOUND;
     private boolean confirmExit = DEFAULT_CONFIRM_EXIT;
     private boolean touchscreen = DEFAULT_TOUCHSCREEN;
+    private boolean mouseWheelPopup = DEFAULT_MOUSEWHEEL_POPUP;
 
     private GeneralConfig() {}
 
@@ -270,6 +273,14 @@ public class GeneralConfig {
         this.touchscreen = touchscreen;
     }
 
+    public boolean isMouseWheelPopup() {
+        return mouseWheelPopup;
+    }
+
+    public void setMouseWheelPopup(final boolean mouseWheelPopup) {
+        this.mouseWheelPopup = mouseWheelPopup;
+    }
+
     private void load(final Properties properties) {
         left=Integer.parseInt(properties.getProperty(LEFT,""+DEFAULT_LEFT));
         top=Integer.parseInt(properties.getProperty(TOP,""+DEFAULT_TOP));
@@ -293,6 +304,7 @@ public class GeneralConfig {
         sound=Boolean.parseBoolean(properties.getProperty(SOUND,""+DEFAULT_SOUND));
         confirmExit = Boolean.parseBoolean(properties.getProperty(CONFIRM_EXIT,""+DEFAULT_CONFIRM_EXIT));
         touchscreen = Boolean.parseBoolean(properties.getProperty(TOUCHSCREEN,""+DEFAULT_TOUCHSCREEN));
+        mouseWheelPopup = Boolean.parseBoolean(properties.getProperty(MOUSEWHEEL_POPUP, "" + DEFAULT_MOUSEWHEEL_POPUP));
     }
 
     public void load() {
@@ -322,6 +334,7 @@ public class GeneralConfig {
         properties.setProperty(SOUND,String.valueOf(sound));
         properties.setProperty(CONFIRM_EXIT,String.valueOf(confirmExit));
         properties.setProperty(TOUCHSCREEN,String.valueOf(touchscreen));
+        properties.setProperty(MOUSEWHEEL_POPUP, String.valueOf(mouseWheelPopup));
     }
 
     public void save() {

@@ -10,6 +10,7 @@ import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 
 import javax.swing.JPanel;
+
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -22,6 +23,8 @@ import java.awt.RenderingHints;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
+import java.awt.event.MouseWheelEvent;
+import java.awt.event.MouseWheelListener;
 import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
@@ -81,17 +84,42 @@ public class ImagePermanentViewer extends JPanel {
             public void mouseMoved(final MouseEvent event) {
                 final int index=getPermanentInfoIndexAt(event.getX(),event.getY());
                 if (index>=0) {
-                    final PermanentViewerInfo info=linkedInfos.get(index);
-                    final Point pointOnScreen=getLocationOnScreen();
-                    final Rectangle rect=new Rectangle(linkedScreenRectangles.get(index));
-                    rect.x+=pointOnScreen.x;
-                    rect.y+=pointOnScreen.y;
-                    viewer.getController().viewInfoAbove(info.cardDefinition,info.index,rect);
+                    if (!GeneralConfig.getInstance().isMouseWheelPopup()) {
+                        showCardPopup(index);
+                    }
                 } else {
                     viewer.getController().hideInfo();
                 }
             }
         });
+
+        addMouseWheelListener(new MouseWheelListener() {
+            @Override
+            public void mouseWheelMoved(MouseWheelEvent event) {
+                if (GeneralConfig.getInstance().isMouseWheelPopup()) {
+                    final int index=getPermanentInfoIndexAt(event.getX(),event.getY());
+                    if (event.getWheelRotation() < 0) { // rotate mousewheel forward
+                        if (index>=0) {
+                            showCardPopup(index);
+                        }
+                    } else if (event.getWheelRotation() > 0) { // rotate mousewheel back
+                        if (index>=0) {
+                            viewer.getController().hideInfo();
+                        }
+                    }
+                }
+            }
+        });
+
+    }
+
+    private void showCardPopup(int index) {
+        final PermanentViewerInfo info=linkedInfos.get(index);
+        final Point pointOnScreen=getLocationOnScreen();
+        final Rectangle rect=new Rectangle(linkedScreenRectangles.get(index));
+        rect.x+=pointOnScreen.x;
+        rect.y+=pointOnScreen.y;
+        viewer.getController().viewInfoAbove(info.cardDefinition,info.index,rect);
     }
 
     private int getPermanentInfoIndexAt(final int x,final int y) {

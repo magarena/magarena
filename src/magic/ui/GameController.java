@@ -10,7 +10,6 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.choice.MagicChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPriorityEvent;
 import magic.model.target.MagicTarget;
@@ -28,7 +27,6 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
-import java.util.LinkedList;
 import java.util.Set;
 import java.util.concurrent.Callable;
 import java.util.concurrent.BlockingQueue;
@@ -262,7 +260,7 @@ public class GameController {
         }
         imageCardViewer.setCard(cardDefinition,index);
         imageCardViewer.setLocation(x,y);
-        imageCardViewer.showDelayed(GeneralConfig.getInstance().getPopupDelay());
+        imageCardViewer.showDelayed(getPopupDelay());
     }
 
     public void viewInfoRight(final MagicCardDefinition cardDefinition,final int index,final Rectangle rect) {
@@ -280,7 +278,11 @@ public class GameController {
         }
         imageCardViewer.setCard(cardDefinition,index);
         imageCardViewer.setLocation(x,y);
-        imageCardViewer.showDelayed(GeneralConfig.getInstance().getPopupDelay());
+        imageCardViewer.showDelayed(getPopupDelay());
+    }
+
+    private int getPopupDelay() {
+        return GeneralConfig.getInstance().isMouseWheelPopup() ? 0 : GeneralConfig.getInstance().getPopupDelay();
     }
 
     public void hideInfo() {

@@ -6,10 +6,7 @@ import magic.data.IconImages;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.SliderPanel;
 
-import java.util.Arrays;
 import javax.swing.JComboBox;
-import javax.swing.ComboBoxModel;
-import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JDialog;
@@ -37,6 +34,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
     private final JCheckBox skipSingleCheckBox;
     private final JCheckBox alwaysPassCheckBox;
     private final JCheckBox smartTargetCheckBox;
+    private final JCheckBox mouseWheelPopupCheckBox;
     private final SliderPanel popupDelaySlider;
     private final SliderPanel messageDelaySlider;
     private final JButton okButton;
@@ -46,7 +44,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 
         super(frame,true);
         this.setTitle("Preferences");
-        this.setSize(400,530);
+        this.setSize(400,560);
         this.setLocationRelativeTo(frame);
         this.setResizable(false);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -164,6 +162,13 @@ public class PreferencesDialog extends JDialog implements ActionListener {
         mainPanel.add(smartTargetCheckBox);
 
         Y += 30;
+        mouseWheelPopupCheckBox = new JCheckBox("Popup using mouse wheel (instead of delay)",
+                config.isMouseWheelPopup());
+        mouseWheelPopupCheckBox.setBounds(X3,Y,W3,H3);
+        mouseWheelPopupCheckBox.setFocusable(false);
+        mainPanel.add(mouseWheelPopupCheckBox);
+
+        Y += 30;
         popupDelaySlider=new SliderPanel("Popup",
                 IconImages.DELAY,
                 0,
@@ -205,6 +210,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
             config.setSkipSingle(skipSingleCheckBox.isSelected());
             config.setAlwaysPass(alwaysPassCheckBox.isSelected());
             config.setSmartTarget(smartTargetCheckBox.isSelected());
+            config.setMouseWheelPopup(mouseWheelPopupCheckBox.isSelected());
             config.setPopupDelay(popupDelaySlider.getValue());
             config.setMessageDelay(messageDelaySlider.getValue());
             config.save();

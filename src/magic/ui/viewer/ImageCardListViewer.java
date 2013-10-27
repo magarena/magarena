@@ -23,6 +23,8 @@ import java.awt.RenderingHints;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
+import java.awt.event.MouseWheelEvent;
+import java.awt.event.MouseWheelListener;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -43,6 +45,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
     private List<Point> cardPoints;
     private Set<?> validChoices;
     private boolean showInfo;
+    private int oldIndex = 0;
 
     public ImageCardListViewer(final GameController controller) {
         setOpaque(false);
@@ -85,17 +88,47 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
             public void mouseMoved(final MouseEvent event) {
                 final int index=getCardIndexAt(event.getX(),event.getY());
                 if (index>=0) {
-                    final MagicCard card=cardList.get(index);
-                    final Point pointOnScreen=getLocationOnScreen();
-                    final Point point=cardPoints.get(index);
-                    final Rectangle rect=
-                        new Rectangle(pointOnScreen.x+point.x,pointOnScreen.y+point.y,CARD_WIDTH,CARD_HEIGHT);
-                    ImageCardListViewer.this.controller.viewInfoAbove(card.getCardDefinition(),card.getImageIndex(),rect);
+                    if (!GeneralConfig.getInstance().isMouseWheelPopup()) {
+                        showCardPopup(index);
+                    } else if (oldIndex != index) {
+                        // handles case where mousewheel popup is enabled and the mouseExited
+                        // event does not fire because cards overlap.
+                        oldIndex = index;
+                        ImageCardListViewer.this.controller.hideInfo();
+                    }
                 } else {
                     ImageCardListViewer.this.controller.hideInfo();
                 }
             }
         });
+
+        addMouseWheelListener(new MouseWheelListener() {
+            @Override
+            public void mouseWheelMoved(MouseWheelEvent event) {
+                if (GeneralConfig.getInstance().isMouseWheelPopup()) {
+                    final int index=getCardIndexAt(event.getX(),event.getY());
+                    if (event.getWheelRotation() < 0) { // rotate mousewheel forward
+                        if (index>=0) {
+                            showCardPopup(index);
+                        }
+                    } else if (event.getWheelRotation() > 0) { // rotate mousewheel back
+                        if (index>=0) {
+                            ImageCardListViewer.this.controller.hideInfo();
+                        }
+                    }
+                }
+            }
+        });
+
+    }
+
+    private void showCardPopup(int index) {
+        final MagicCard card=cardList.get(index);
+        final Point pointOnScreen=getLocationOnScreen();
+        final Point point=cardPoints.get(index);
+        final Rectangle rect=
+                new Rectangle(pointOnScreen.x+point.x,pointOnScreen.y+point.y,CARD_WIDTH,CARD_HEIGHT);
+        ImageCardListViewer.this.controller.viewInfoAbove(card.getCardDefinition(),card.getImageIndex(),rect);
     }
 
     private int getCardIndexAt(final int x,final int y) {
