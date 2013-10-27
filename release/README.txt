@@ -75,7 +75,7 @@ willianmgbr
   * heroic effect <effect>
   * each upkeep <effect>
   * protection from <thing>
-  * pay <cost>[, <cost>]: <effect>
+  * pay <cost>[, <cost>]*: <effect>
 
 - fixed the following bugs:
   * Valakut, the Molten Pinnacle crashes if "No" is selected for the may choice
