@@ -7,6 +7,6 @@ type=Creature
 subtype=Bird
 cost={2}{W}
 pt=1/1
-ability=flying;first strike
+ability=flying;first strike;\
+        pay {W}{W}, {O}: SN gets +2/+0 until end of turn.
 timing=main
-requires_groovy_code

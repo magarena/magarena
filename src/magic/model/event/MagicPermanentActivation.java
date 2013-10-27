@@ -184,6 +184,8 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
                 events.add(new MagicRemoveCounterEvent(source,MagicCounterType.Charge,1));
             } else if (cost.equals("{C3}")) {
                 events.add(new MagicRemoveCounterEvent(source,MagicCounterType.Charge,3));
+            } else if (cost.equals("{O}")) {
+                events.add(new MagicPlayAbilityEvent(source));
             } else {
                 events.add(new MagicPayManaCostEvent(source, MagicManaCost.create(cost)));
             }
