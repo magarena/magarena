@@ -1,13 +1,10 @@
 package magic.ui.viewer;
 
 import java.awt.Color;
-import java.awt.Dimension;
-
-import javax.swing.Box;
-import javax.swing.BoxLayout;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 
+import net.miginfocom.swing.MigLayout;
 import magic.model.phase.MagicPhaseType;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
@@ -26,6 +23,7 @@ public class PhaseStepViewer extends TexturedPanel {
     }
 
     private void setMyLayout() {
+        setLayout(new MigLayout("insets 3 5 3 5"));
         setPhaseStepIndicator("UN", "Beginning Phase : Untap Step");
         setPhaseStepIndicator("UP", "Beginning Phase : Upkeep Step");
         setPhaseStepIndicator("DR", "Beginning Phase : Draw Step");
@@ -62,7 +60,7 @@ public class PhaseStepViewer extends TexturedPanel {
         lbl.setFont(FontsAndBorders.FONT1);
         lbl.setHorizontalAlignment(SwingConstants.CENTER);
         lbl.setForeground(Color.GRAY);
-        add(lbl);
+        add(lbl, "w 100%");
     }
 
     public void setPhaseStep(MagicPhaseType gamePhaseType) {

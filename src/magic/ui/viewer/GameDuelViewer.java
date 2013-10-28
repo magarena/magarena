@@ -32,7 +32,7 @@ public class GameDuelViewer extends JPanel implements ChangeListener {
         duelViewer=new DuelViewer(game.getDuel());
 
         phaseStepViewer = new PhaseStepViewer();
-        phaseStepViewer.setBorder(BorderFactory.createMatteBorder(0, 1, 0, 1, Color.BLACK));
+        phaseStepViewer.setBorder(BorderFactory.createMatteBorder(1, 0, 0, 0, Color.BLACK));
         phaseStepViewer.setOpaque(false);
 
         setSize(320,125);
@@ -40,6 +40,7 @@ public class GameDuelViewer extends JPanel implements ChangeListener {
 
         titleBar=new TitleBar("");
         add(titleBar,BorderLayout.NORTH);
+        titleBar.setBorder(BorderFactory.createMatteBorder(1, 1, 0, 1, Color.BLACK));
 
         cardLayout=new CardLayout();
         cardPanel=new JPanel(cardLayout);
@@ -50,11 +51,9 @@ public class GameDuelViewer extends JPanel implements ChangeListener {
         tabSelector=new TabSelector(this,false);
         tabSelector.addTab(IconImages.MESSAGE,"Message");
         tabSelector.addTab(IconImages.PROGRESS,"Progress");
-        tabSelector.setBorder(BorderFactory.createMatteBorder(1, 1, 1, 1, Color.BLACK));
         titleBar.add(tabSelector,BorderLayout.EAST);
         titleBar.add(phaseStepViewer,BorderLayout.SOUTH);
 
-        //add(phaseStepViewer, BorderLayout.SOUTH);
     }
 
     public GameViewer getGameViewer() {

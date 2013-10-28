@@ -25,6 +25,13 @@
       <get src="http://search.maven.org/remotecontent?filepath=org/codehaus/groovy/groovy-all/2.1.7/groovy-all-${groovy-version}.jar" 
            dest="${lib}/groovy-all-${groovy-version}.jar" 
            skipexisting="true" />
+      <echo message="downloading MigLayout to ${lib}"/>
+      <get src="http://repo1.maven.org/maven2/com/miglayout/miglayout-core/4.2/miglayout-core-4.2.jar" 
+           dest="${lib}/miglayout-core-4.2.jar" 
+           skipexisting="true" />  	
+      <get src="http://repo1.maven.org/maven2/com/miglayout/miglayout-swing/4.2/miglayout-swing-4.2.jar" 
+           dest="${lib}/miglayout-swing-4.2.jar" 
+           skipexisting="true" />
   </target>
 
   <!-- init - Create temporary directory to build the program -->
@@ -57,8 +64,8 @@
     <jar destfile="release/Magarena.jar" basedir="build" includes="**/*.*">
       <manifest>
         <attribute name="Main-Class" value="magic.MagicMain" />
-      	<attribute name="SplashScreen-Image" value="magic/data/textures/logo.jpg" />
-        <attribute name="Class-Path" value="lib/groovy-all-${groovy-version}.jar" />
+        <attribute name="SplashScreen-Image" value="magic/data/textures/logo.jpg" />
+        <attribute name="Class-Path" value="lib/groovy-all-${groovy-version}.jar lib/miglayout-core-4.2.jar lib/miglayout-swing-4.2.jar" />
       </manifest>
     </jar>
   </target>
