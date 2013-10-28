@@ -459,6 +459,7 @@ checks: \
 	check_tokens \
 	check_unique_key \
 	check_groovy_escape \
+	check_tokens \
 	check_url \
 	check_image \
 	check_meta \
@@ -514,6 +515,12 @@ check_tokens:
 	diff \
 	<(grep token= -r release/Magarena/scripts -C 1 | grep -o "name=.*" | sed 's/name=//' | sort) \
 	<(grep 'TokenCardDefinitions.get("' -r release/Magarena/scripts src | grep -o '".*"' | sed 's/"//g' | sort | uniq) | grep ">" | ${NO_OUTPUT}
+
+# check that cards in decks exist in the game
+check_decks:
+	diff \
+	<(grep "name=" -r release/Magarena/scripts/ | sed 's/.*name=//' | sort) \
+	<(cat release/Magarena/decks/*.dec | grep "^[0-9]" | sed 's/^[0-9]* //' | sort | uniq) | grep ">" | ${NO_OUTPUT}
 
 check_unique_key:
 	grep "^[^=]*" -r release/Magarena/scripts/*.txt | sed 's/=.*//g' | sort | uniq -d | ${NO_OUTPUT}
