@@ -7,6 +7,6 @@ type=Creature
 subtype=Zombie
 cost={B}{B}{B}
 pt=3/2
-timing=fmain
-ability=enters tapped;undying
-requires_groovy_code
+ability=enters tapped;undying;\
+        enters effect Target opponent loses 2 life.
+timing=main
