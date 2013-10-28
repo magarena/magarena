@@ -289,6 +289,29 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    LoseGainLifeChosen(
+        "(?<choice>[^\\.]*) loses (?<amount1>[0-9]+) life and PN gains (?<amount2>[0-9]+) life.", 
+        MagicTargetHint.Negative, 
+        MagicTiming.Removal, 
+        "-Life"
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final int amount1 = Integer.parseInt(matcher.group("amount1"));
+            final int amount2 = Integer.parseInt(matcher.group("amount2"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTargetPlayer(game,new MagicPlayerAction() {
+                        public void doAction(final MagicPlayer player) {
+                            game.doAction(new MagicChangeLifeAction(player,-amount1));
+                            game.doAction(new MagicChangeLifeAction(event.getPlayer(),amount2));
+                        }
+                    });
+                }
+            };
+        }
+    },
     PumpSelf(
         "sn gets (?<pt>[+-][0-9]+/[+-][0-9]+) until end of turn.", 
         MagicTiming.Pump, 
