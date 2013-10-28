@@ -7,5 +7,6 @@ type=Legendary,Creature
 subtype=Spirit
 cost={W}{W}{B}{B}
 pt=4/4
+ability=enters effect Target opponent loses 1 life and PN gains 1 life.
 timing=main
 requires_groovy_code
