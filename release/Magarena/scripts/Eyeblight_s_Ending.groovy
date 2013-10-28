@@ -18,7 +18,7 @@ def TARGET_NON_ELF_CREATURE = new MagicTargetChoice(
             return new MagicEvent(
                 cardOnStack,
                 TARGET_NON_ELF_CREATURE,
-                new MagicDestroyTargetPicker(false),
+                MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target non-Elf creature\$."
             );

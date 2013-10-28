@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.TARGET_CREATURE,
-                new MagicDestroyTargetPicker(true),
+                MagicDestroyTargetPicker.DestroyNoRegen,
                 this,
                 "Destroy target creature\$. It can't be regenerated. " +
                 "That creature's controller puts a 3/3 green Ape " +

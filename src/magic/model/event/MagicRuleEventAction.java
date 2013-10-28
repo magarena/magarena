@@ -63,8 +63,8 @@ import java.util.Collection;
 public enum MagicRuleEventAction {
     Destroy(
         "destroy (?<choice>[^\\.]*).", 
-        MagicTargetHint.Negative, 
-        new MagicDestroyTargetPicker(false), 
+        MagicTargetHint.Negative,
+        MagicDestroyTargetPicker.Destroy,
         MagicTiming.Removal,
         "Destroy",
         new MagicEventAction() {
@@ -81,7 +81,7 @@ public enum MagicRuleEventAction {
     DestroyNoRegen(
         "destroy (?<choice>[^\\.]*). it can't be regenerated.", 
         MagicTargetHint.Negative, 
-        new MagicDestroyTargetPicker(true), 
+        MagicDestroyTargetPicker.DestroyNoRegen,
         MagicTiming.Removal,
         "Destroy",
         new MagicEventAction() {

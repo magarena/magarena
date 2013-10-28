@@ -17,7 +17,7 @@ def NecroticSacrifice = new MagicPermanentActivation(
         return new MagicEvent(
             source,
             MagicTargetChoice.NEG_TARGET_PERMANENT,
-            new MagicDestroyTargetPicker(false),
+            MagicDestroyTargetPicker.Destroy,
             this,
             "Destroy target permanent\$."
         );

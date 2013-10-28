@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.NEG_TARGET_NONLAND_PERMANENT,
-                new MagicDestroyTargetPicker(false),
+                MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target nonland permanent\$ and all other permanents with the same name as that permanent."
             );

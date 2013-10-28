@@ -28,7 +28,7 @@ def action = {
             return new MagicEvent(
                 source,
                 MagicTargetChoice.NEG_TARGET_LAND,
-                new MagicDestroyTargetPicker(false),
+                MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target land\$ unless its controller has " +
                 "SN deal 2 damage to him or her."

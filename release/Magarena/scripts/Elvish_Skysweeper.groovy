@@ -17,7 +17,7 @@
             return new MagicEvent(
                 source,
                 MagicTargetChoice.NEG_TARGET_CREATURE_WITH_FLYING,
-                new MagicDestroyTargetPicker(false),
+                MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target creature\$ with flying."
             );

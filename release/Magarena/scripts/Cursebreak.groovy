@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.NEG_TARGET_ENCHANTMENT,
-                new MagicDestroyTargetPicker(false),
+                MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target enchantment\$. " +
                 "PN gains 2 life."

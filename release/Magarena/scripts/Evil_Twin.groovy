@@ -19,7 +19,7 @@ def DestroyTwin = new MagicPermanentActivation(
         return new MagicEvent(
             source,
             targetChoice,
-            new MagicDestroyTargetPicker(false),
+            MagicDestroyTargetPicker.Destroy,
             this,
             "Destroy target creature\$ with same name as this creature."
         );

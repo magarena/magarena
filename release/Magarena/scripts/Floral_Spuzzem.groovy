@@ -8,7 +8,7 @@
                     new MagicMayChoice(
                         MagicTargetChoice.TARGET_ARTIFACT_YOUR_OPPONENT_CONTROLS
                     ),
-                    new MagicDestroyTargetPicker(false),
+                    MagicDestroyTargetPicker.Destroy,
                     this,
                     "PN may\$ destroy target artifact\$."
                 ):

@@ -12,7 +12,7 @@
             return new MagicEvent(
                 source,
                 MagicTargetChoice.TARGET_ARTIFACT,
-                new MagicDestroyTargetPicker(false),
+                MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target artifact\$. SN gets +X/+0 " +
                 "until end of turn, where X is that artifact's converted mana cost."

@@ -9,7 +9,7 @@
                 new MagicEvent(
                     permanent,
                     MagicTargetChoice.NEG_TARGET_NONBASIC_LAND,
-                    new MagicDestroyTargetPicker(false),
+                    MagicDestroyTargetPicker.Destroy,
                     this,
                     "Destroy target nonbasic land\$."
                 ):

@@ -9,7 +9,7 @@
                     permanent.isController(damage.getTarget()) ?
                         MagicTargetChoice.TARGET_ENCHANTMENT_YOU_CONTROL :
                         MagicTargetChoice.TARGET_ENCHANTMENT_YOUR_OPPONENT_CONTROLS,
-                    new MagicDestroyTargetPicker(false),
+                    MagicDestroyTargetPicker.Destroy,
                     this,
                     "Destroy target enchantment\$."
                 ):

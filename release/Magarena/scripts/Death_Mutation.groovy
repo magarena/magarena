@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.NEG_TARGET_NONBLACK_CREATURE,
-                new MagicDestroyTargetPicker(true),
+                MagicDestroyTargetPicker.DestroyNoRegen,
                 this,
                 "Destroy target nonblack creature\$. " +
                 "It can't be regenerated. " +

@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.NEG_TARGET_LAND,
-                new MagicDestroyTargetPicker(),
+                MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target land\$. " +
                 "PN searches his or her library for a basic land card and put that card onto the battlefield tapped. Then shuffle PN's library."

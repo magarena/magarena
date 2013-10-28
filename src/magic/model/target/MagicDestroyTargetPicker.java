@@ -9,12 +9,11 @@ public class MagicDestroyTargetPicker extends MagicTargetPicker<MagicPermanent> 
 
     private final boolean noRegeneration;
     
-    public MagicDestroyTargetPicker() {
-        this(false);
-    }
+    public static MagicDestroyTargetPicker Destroy = new MagicDestroyTargetPicker(false);
+    public static MagicDestroyTargetPicker DestroyNoRegen = new MagicDestroyTargetPicker(true);
 
-    public MagicDestroyTargetPicker(final boolean noRegeneration) {
-        this.noRegeneration=noRegeneration;
+    private MagicDestroyTargetPicker(final boolean aNoRegeneration) {
+        noRegeneration = aNoRegeneration;
     }
 
     @Override

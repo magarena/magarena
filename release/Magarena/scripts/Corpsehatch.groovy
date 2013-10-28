@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.NEG_TARGET_NONBLACK_CREATURE,
-                new MagicDestroyTargetPicker(false),
+                MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target nonblack creature\$. " +
                 "PN puts two 0/1 colorless Eldrazi Spawn creature tokens onto the battlefield. " +

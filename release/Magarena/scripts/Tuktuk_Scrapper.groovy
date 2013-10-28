@@ -9,7 +9,7 @@
                     new MagicMayChoice(
                         MagicTargetChoice.NEG_TARGET_ARTIFACT
                     ),
-                    new MagicDestroyTargetPicker(false),
+                    MagicDestroyTargetPicker.Destroy,
                     this,
                     "PN may\$ destroy target artifact\$. " +
                     "If that artifact is put into a graveyard this way, SN deals damage to that artifact's controller equal to the number of Allies you control."

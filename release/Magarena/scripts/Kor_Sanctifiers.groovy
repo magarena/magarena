@@ -9,7 +9,7 @@
                 new MagicEvent(
                     permanent,
                     MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_ENCHANTMENT,
-                    new MagicDestroyTargetPicker(false),
+                    MagicDestroyTargetPicker.Destroy,
                     this,
                     "Destroy target artifact or enchantment\$."
                 ):

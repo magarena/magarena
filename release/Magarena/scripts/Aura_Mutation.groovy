@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.NEG_TARGET_ENCHANTMENT,
-                new MagicDestroyTargetPicker(true),
+                MagicDestroyTargetPicker.DestroyNoRegen,
                 this,
                 "Destroy target enchantment\$. " +
                 "Put X 1/1 green Saproling creature tokens onto the battlefield, where X is that enchantment's converted mana cost."

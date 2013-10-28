@@ -10,7 +10,7 @@
                     new MagicMayChoice(
                         MagicTargetChoice.TARGET_ARTIFACT_OR_ENCHANTMENT_YOUR_OPPONENT_CONTROLS
                     ),
-                    new MagicDestroyTargetPicker(false),
+                    MagicDestroyTargetPicker.Destroy,
                     this,
                     "PN may\$ destroy target artifact or enchantment\$ an opponent controls."
                 ):

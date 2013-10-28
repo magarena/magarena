@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.NEG_TARGET_ARTIFACT,
-                new MagicDestroyTargetPicker(true),
+                MagicDestroyTargetPicker.DestroyNoRegen,
                 this,
                 "Destroy target artifact\$. It can't be regenerated. " +
                 "Put X 1/1 green Saproling creature tokens onto the battlefield, where X is that artifact's converted mana cost."

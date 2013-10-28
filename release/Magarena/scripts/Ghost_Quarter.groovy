@@ -15,7 +15,7 @@
             return new MagicEvent(
                 source,
                 MagicTargetChoice.TARGET_LAND,
-                new MagicDestroyTargetPicker(false),
+                MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target land\$."
             );

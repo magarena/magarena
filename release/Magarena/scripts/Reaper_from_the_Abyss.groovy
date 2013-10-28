@@ -6,7 +6,7 @@
                 new MagicEvent(
                     permanent,
                     MagicTargetChoice.TARGET_NON_DEMON,
-                    new MagicDestroyTargetPicker(false),
+                    MagicDestroyTargetPicker.Destroy,
                     this,
                     "Destroy target non-Demon creature\$."
                 ):

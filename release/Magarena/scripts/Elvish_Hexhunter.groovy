@@ -17,7 +17,7 @@
             return new MagicEvent(
                 source,
                 MagicTargetChoice.NEG_TARGET_ENCHANTMENT,
-                new MagicDestroyTargetPicker(false),
+                MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target enchantment\$."
             );

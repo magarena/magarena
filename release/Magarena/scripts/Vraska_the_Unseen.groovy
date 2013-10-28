@@ -54,7 +54,7 @@ def T = new MagicWhenDamageIsDealtTrigger() {
             return new MagicEvent(
                 source,
                 MagicTargetChoice.NEG_TARGET_NONLAND_PERMANENT,
-                new MagicDestroyTargetPicker(false),
+                MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target nonland permanent."
             );

@@ -15,7 +15,7 @@ def action = {
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_ENCHANTMENT,
-                new MagicDestroyTargetPicker(false),
+                MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target artifact or enchantment\$." +
                 "If SN was kicked, it deals damage equal to that permanent's converted mana cost to target creature."

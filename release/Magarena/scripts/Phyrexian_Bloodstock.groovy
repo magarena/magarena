@@ -6,7 +6,7 @@
                 new MagicEvent(
                     permanent,
                     MagicTargetChoice.TARGET_WHITE_CREATURE,
-                    new MagicDestroyTargetPicker(true),
+                    MagicDestroyTargetPicker.DestroyNoRegen,
                     this,
                     "Destroy target white creature\$. It can't be regenerated."
                 ) :

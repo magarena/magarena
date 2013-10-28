@@ -11,7 +11,7 @@
                         1,
                         MagicSimpleMayChoice.DEFAULT_YES
                     ),
-                    new MagicDestroyTargetPicker(false),
+                    MagicDestroyTargetPicker.Destroy,
                     this,
                     "PN may\$ put a 2/2 green Wolf creature " +
                     "token onto the battlefield. If you do, put a " +

@@ -48,7 +48,7 @@
             return new MagicEvent(
                 permanent,
                 MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
-                new MagicDestroyTargetPicker(false),
+                MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target creature\$ your opponent controls, " +
                 "then put a +1/+1 counter on SN."

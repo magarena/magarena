@@ -8,7 +8,7 @@
             return new MagicEvent(
                 spell,
                 MagicTargetChoice.NEG_TARGET_PERMANENT,
-                new MagicDestroyTargetPicker(false),
+                MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target permanent\$."
             );

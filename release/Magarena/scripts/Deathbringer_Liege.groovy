@@ -9,7 +9,7 @@
                     new MagicMayChoice(
                         MagicTargetChoice.NEG_TARGET_CREATURE
                     ),
-                    new MagicDestroyTargetPicker(false),
+                    MagicDestroyTargetPicker.Destroy,
                     this,
                     "PN may\$ destroy target creature\$ if it's tapped."
                 ):

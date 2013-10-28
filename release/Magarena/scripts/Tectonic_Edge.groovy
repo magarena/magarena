@@ -27,7 +27,7 @@ def OPP_FOUR_LANDS_CONDITION=new MagicCondition() {
             return new MagicEvent(
                 source,
                 MagicTargetChoice.TARGET_NONBASIC_LAND,
-                new MagicDestroyTargetPicker(false),
+                MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target nonbasic land\$."
             );

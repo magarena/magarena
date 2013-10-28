@@ -6,7 +6,7 @@
                 new MagicEvent(
                     permanent,
                     new MagicTargetChoice("target creature with flying an opponent controls"),
-                    new MagicDestroyTargetPicker(false),
+                    MagicDestroyTargetPicker.Destroy,
                     this,
                     "Destroy target creature\$ with flying an opponent controls."
                 ):
