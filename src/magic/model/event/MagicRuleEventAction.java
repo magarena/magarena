@@ -229,7 +229,7 @@ public enum MagicRuleEventAction {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     game.doAction(new MagicDrawAction(event.getPlayer(), amount1));
-                    game.addEvent(new MagicDiscardEvent(event.getPermanent(), event.getPlayer(), amount2));
+                    game.addEvent(new MagicDiscardEvent(event.getSource(), event.getPlayer(), amount2));
                 }
             };
         }
