@@ -41,6 +41,7 @@ def action = {
                 final MagicPermanent permanent ->
                 game.addEvent(new MagicEvent(
                     event.getSource(),
+                    permanent.getController(),
                     new MagicMayChoice(),
                     permanent,
                     action,
