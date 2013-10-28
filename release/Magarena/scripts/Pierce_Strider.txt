@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Construct
 cost={4}
 pt=3/3
-timing=fmain
-requires_groovy_code
+ability=enters effect Target opponent loses 3 life.
+timing=main
