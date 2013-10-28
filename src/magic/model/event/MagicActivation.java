@@ -100,6 +100,13 @@ public abstract class MagicActivation<T extends MagicSource> implements MagicEve
         }
 
         // Check able to pay costs
+        // 
+        // Current method of using MagicCondition could lead to unpayable costs in certain cases:
+        // * self needed to tap to pay mana cost, but self must tap as part of cost
+        // Ideally execute each event with the first choice, if all events have choices then cost can be paid
+        // * execute tap self event
+        // * execyte pay mana cost event
+        //
         for (final MagicEvent event : getCostEvent(source)) {
             for (final MagicCondition condition : event.getConditions()) {
                 if (!condition.accept(source)) {
