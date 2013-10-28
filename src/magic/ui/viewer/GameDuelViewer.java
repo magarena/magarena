@@ -48,7 +48,7 @@ public class GameDuelViewer extends JPanel implements ChangeListener {
         cardPanel.add(duelViewer,"1");
         add(cardPanel,BorderLayout.CENTER);
 
-        tabSelector=new TabSelector(this,false);
+        tabSelector=new TabSelector(this, false, titleBar.getBackground());
         tabSelector.addTab(IconImages.MESSAGE,"Message");
         tabSelector.addTab(IconImages.PROGRESS,"Progress");
         titleBar.add(tabSelector,BorderLayout.EAST);

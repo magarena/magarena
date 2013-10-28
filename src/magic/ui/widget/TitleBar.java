@@ -18,12 +18,13 @@ public class TitleBar extends JPanel {
     public TitleBar(final String title) {
 
         final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
+        setBackground(theme.getColor(Theme.COLOR_TITLE_BACKGROUND));
         setLayout(new BorderLayout());
+
         label=new JLabel(title);
         label.setIconTextGap(4);
-        label.setOpaque(true);
+        label.setOpaque(false);
         label.setForeground(theme.getColor(Theme.COLOR_TITLE_FOREGROUND));
-        label.setBackground(theme.getColor(Theme.COLOR_TITLE_BACKGROUND));
         label.setPreferredSize(new Dimension(0,20));
         label.setBorder(FontsAndBorders.NO_TARGET_BORDER);
         add(label,BorderLayout.CENTER);

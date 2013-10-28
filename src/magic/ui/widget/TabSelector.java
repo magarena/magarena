@@ -6,7 +6,9 @@ import javax.swing.JPanel;
 import javax.swing.JToggleButton;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
+
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
@@ -26,16 +28,20 @@ public class TabSelector extends JPanel implements ActionListener {
     private final ChangeListener listener;
     private int selectedTab;
     private final Dimension buttonDimension;
+    private final Color backgroundColor;
 
-    public TabSelector(final ChangeListener listener,final boolean vertical) {
+    public TabSelector(final ChangeListener listener, final boolean vertical, final Color backgroundColor0) {
 
         this.listener=listener;
+        this.backgroundColor = (backgroundColor0 == null ? getBackground() : backgroundColor0);
         selectedTab=0;
 
         setOpaque(false);
         setLayout(new BorderLayout());
 
         buttonPanel=new JPanel();
+        buttonPanel.setBackground(backgroundColor0);
+
         if (vertical) {
             buttonPanel.setLayout(new BoxLayout(buttonPanel,BoxLayout.Y_AXIS));
             add(buttonPanel,BorderLayout.NORTH);
@@ -47,6 +53,11 @@ public class TabSelector extends JPanel implements ActionListener {
         }
 
         buttons=new ArrayList<JToggleButton>();
+
+    }
+
+    public TabSelector(final ChangeListener listener,final boolean vertical) {
+        this(listener, vertical, null);
     }
 
     public int getSelectedTab() {
@@ -66,6 +77,7 @@ public class TabSelector extends JPanel implements ActionListener {
         if (toolTip!=null) {
             button.setToolTipText(toolTip);
         }
+        button.setBackground(this.backgroundColor);
         button.setFocusable(false);
         button.setPreferredSize(buttonDimension);
         button.setActionCommand(Integer.toString(buttons.size()));
@@ -99,4 +111,5 @@ public class TabSelector extends JPanel implements ActionListener {
 
         showTab((JToggleButton)event.getSource());
     }
+
 }
