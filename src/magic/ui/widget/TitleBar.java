@@ -6,6 +6,7 @@ import magic.ui.theme.ThemeFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 
@@ -22,10 +23,10 @@ public class TitleBar extends JPanel {
         setLayout(new BorderLayout());
 
         label=new JLabel(title);
-        label.setIconTextGap(4);
         label.setOpaque(false);
         label.setForeground(theme.getColor(Theme.COLOR_TITLE_FOREGROUND));
         label.setPreferredSize(new Dimension(0,20));
+        label.setMinimumSize(new Dimension(0,20));
         label.setBorder(FontsAndBorders.NO_TARGET_BORDER);
         add(label,BorderLayout.CENTER);
     }
