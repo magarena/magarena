@@ -341,6 +341,13 @@ public enum MagicAbility {
             ));
         }
     },
+    LandfallMayEffect("landfall effect PN may",0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            card.add(MagicLandfallTrigger.create(
+                MagicRuleEventAction.createMay(arg)
+            ));
+        }
+    },
     TapAddMana("tap add mana",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             final List<MagicManaType> manatype = MagicManaType.getList(arg);

@@ -522,7 +522,7 @@ public enum MagicRuleEventAction {
         }
     },
     Weaken(
-        "(?<choice>[^\\.]*) gets (?<pt>[0-9-]+/[0-9-]+) until end of turn.", 
+        "(have )?(?<choice>[^\\.]*) gets (?<pt>[0-9-]+/[0-9-]+) until end of turn.", 
         MagicTargetHint.Negative, 
         MagicTiming.Removal, 
         "Weaken"
