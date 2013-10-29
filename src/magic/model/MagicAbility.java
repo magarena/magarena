@@ -658,6 +658,13 @@ public enum MagicAbility {
             ));
         }
     },
+    EntersKickedEffect("enters kicked effect", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            card.add(MagicWhenComesIntoPlayTrigger.createKicked(
+                MagicRuleEventAction.create(arg)
+            ));
+        }
+    },
     DiesEffect("dies effect", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicWhenDiesTrigger.create(

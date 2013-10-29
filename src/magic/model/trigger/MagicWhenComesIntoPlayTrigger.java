@@ -30,6 +30,19 @@ public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPa
         };
     }
     
+    public static final MagicWhenComesIntoPlayTrigger createKicked(final MagicSourceEvent sourceEvent) {
+        return new MagicWhenComesIntoPlayTrigger() {
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost data) {
+                return sourceEvent.getEvent(permanent);
+            }
+            @Override
+            public boolean accept(final MagicPermanent permanent, final MagicPayedCost payedCost) {
+                return payedCost.isKicked();
+            }
+        };
+    }
+    
     public MagicWhenComesIntoPlayTrigger(final int priority) {
         super(priority);
     }
