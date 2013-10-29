@@ -7,6 +7,6 @@ type=Creature
 subtype=Kor,Cleric
 cost={2}{W}
 pt=2/3
+ability=kicker {W};\
+        enters kicked effect Destroy target artifact or enchantment.
 timing=main
-ability=kicker {W}
-requires_groovy_code
