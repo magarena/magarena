@@ -158,7 +158,7 @@ public enum MagicRuleEventAction {
         }
     ),
     Deals(
-        "sn deals (?<amount>[0-9]+) damage to (?<choice>[^\\.]*).",
+        "sn deal(s)? (?<amount>[0-9]+) damage to (?<choice>[^\\.]*).",
         MagicTargetHint.Negative, 
         new MagicDamageTargetPicker(1), 
         MagicTiming.Removal,
@@ -522,7 +522,7 @@ public enum MagicRuleEventAction {
         }
     },
     Weaken(
-        "(have )?(?<choice>[^\\.]*) gets (?<pt>[0-9-]+/[0-9-]+) until end of turn.", 
+        "(?<choice>target[^\\.]*) get(s)? (?<pt>[0-9-]+/[0-9-]+) until end of turn.", 
         MagicTargetHint.Negative, 
         MagicTiming.Removal, 
         "Weaken"
@@ -896,7 +896,7 @@ public enum MagicRuleEventAction {
     }
     
     public static MagicSourceEvent createMay(final String rule) {
-        final String effect = rule;
+        final String effect = rule.replaceFirst("^have ","");
         final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
         final MagicEventAction action  = ruleAction.getAction(effect);
         final MagicTargetPicker<?> picker = ruleAction.getPicker(effect);
