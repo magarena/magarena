@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Cleric
 cost={1}{B}
 pt=1/1
+ability=pay {3}{B}, {T}, Sacrifice a Human: Destroy target creature.
 timing=main
-requires_groovy_code
