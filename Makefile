@@ -632,3 +632,7 @@ untracked:
 
 common_actions:
 	grep -ho "Magic[A-Za-z]*Action" -r release/Magarena/scripts  | sort | uniq -c | sort -n
+
+src/magic/MurmurHash3.java:
+	curl https://raw.github.com/infinispan/infinispan/master/commons/src/main/java/org/infinispan/commons/hash/MurmurHash3.java > $@
+	patch $@ MurmurHash3.diff

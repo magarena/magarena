@@ -1,0 +1,92 @@
+--- MurmurHash3.java	2013-10-29 14:40:27.337877362 +0800
++++ src/magic/MurmurHash3.java	2013-10-29 14:35:58.153873432 +0800
+@@ -1,11 +1,4 @@
+-package org.infinispan.commons.hash;
+-
+-import net.jcip.annotations.Immutable;
+-import net.jcip.annotations.ThreadSafe;
+-
+-import org.infinispan.commons.marshall.exts.NoStateExternalizer;
+-import org.infinispan.commons.util.Util;
+-import org.infinispan.commons.marshall.Ids;
++package magic;
+ 
+ import java.io.ObjectInput;
+ import java.nio.charset.Charset;
+@@ -25,9 +18,7 @@
+  * @see <a href="http://en.wikipedia.org/wiki/MurmurHash">MurmurHash entry on Wikipedia</a>
+  * @since 5.0
+  */
+-@ThreadSafe
+-@Immutable
+-public class MurmurHash3 implements Hash {
++public class MurmurHash3 {
+    private static final Charset UTF8 = Charset.forName("UTF-8");
+ 
+    static class State {
+@@ -92,6 +83,7 @@
+     * @param seed random value
+     * @return 128 bit hashed key, in an array containing two longs
+     */
++   @SuppressWarnings("fallthrough")
+    public static long[] MurmurHash3_x64_128(final byte[] key, final int seed) {
+       State state = new State();
+ 
+@@ -154,6 +146,7 @@
+     * @param seed random value
+     * @return 64 bit hashed key
+     */
++   @SuppressWarnings("fallthrough")
+    public static long MurmurHash3_x64_64(final byte[] key, final int seed) {
+       // Exactly the same as MurmurHash3_x64_128, except it only returns state.h1
+       State state = new State();
+@@ -322,7 +315,7 @@
+       return (int) (MurmurHash3_x64_64(key, seed) >>> 32);
+    }
+ 
+-   @Override
++   
+    public int hash(byte[] payload) {
+       return MurmurHash3_x64_32(payload, 9001);
+    }
+@@ -337,7 +330,7 @@
+       return MurmurHash3_x64_32(payload, 9001);
+    }
+ 
+-   @Override
++   
+    public int hash(int hashcode) {
+       // Obtained by inlining MurmurHash3_x64_32(byte[], 9001) and removing all the unused code
+       // (since we know the input is always 4 bytes and we only need 4 bytes of output)
+@@ -376,7 +369,7 @@
+       return (int) (state.h1 >>> 32);
+    }
+ 
+-   @Override
++   
+    public int hash(Object o) {
+       if (o instanceof byte[])
+          return hash((byte[]) o);
+@@ -397,22 +390,4 @@
+    public String toString() {
+       return "MurmurHash3";
+    }
+-
+-   public static class Externalizer extends NoStateExternalizer<MurmurHash3> {
+-      @Override
+-      @SuppressWarnings("unchecked")
+-      public Set<Class<? extends MurmurHash3>> getTypeClasses() {
+-         return Util.<Class<? extends MurmurHash3>>asSet(MurmurHash3.class);
+-      }
+-
+-      @Override
+-      public MurmurHash3 readObject(ObjectInput input) {
+-         return new MurmurHash3();
+-      }
+-
+-      @Override
+-      public Integer getId() {
+-         return Ids.MURMURHASH_3;
+-      }
+-   }
+ }
