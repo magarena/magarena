@@ -7,5 +7,5 @@ type=Creature
 subtype=Elf
 cost={G}
 pt=1/1
+ability=pay {G}, {T}, {S}: Destroy target artifact.
 timing=main
-requires_groovy_code
