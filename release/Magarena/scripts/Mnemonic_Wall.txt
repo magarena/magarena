@@ -7,6 +7,6 @@ type=Creature
 subtype=Wall
 cost={4}{U}
 pt=0/4
-ability=defender
+ability=defender;\
+        enters effect PN may return target instant or sorcery card from your graveyard to your hand.
 timing=main
-requires_groovy_code
