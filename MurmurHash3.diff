@@ -1,5 +1,5 @@
---- MurmurHash3.java	2013-10-29 21:09:46.466580663 +0800
-+++ src/magic/MurmurHash3.java	2013-10-29 21:09:28.574580320 +0800
+--- MurmurHash3.java	2013-10-29 22:40:32.510685131 +0800
++++ src/magic/MurmurHash3.java	2013-10-29 22:42:12.150687043 +0800
 @@ -1,11 +1,4 @@
 -package org.infinispan.commons.hash;
 -
@@ -67,8 +67,14 @@
     public int hash(byte[] payload) {
        return MurmurHash3_x64_32(payload, 9001);
     }
-@@ -337,7 +330,7 @@
-       return MurmurHash3_x64_32(payload, 9001);
+@@ -333,11 +326,11 @@
+     * @param payload a byte array to hash
+     * @return a hash code for the byte array
+     */
+-   public static int hash(long[] payload) {
+-      return MurmurHash3_x64_32(payload, 9001);
++   public static long hash(long[] payload) {
++      return MurmurHash3_x64_64(payload, 9001);
     }
  
 -   @Override
@@ -76,19 +82,32 @@
     public int hash(int hashcode) {
        // Obtained by inlining MurmurHash3_x64_32(byte[], 9001) and removing all the unused code
        // (since we know the input is always 4 bytes and we only need 4 bytes of output)
-@@ -376,7 +369,7 @@
+@@ -375,44 +368,4 @@
+ 
        return (int) (state.h1 >>> 32);
     }
- 
+-
 -   @Override
-+   
-    public int hash(Object o) {
-       if (o instanceof byte[])
-          return hash((byte[]) o);
-@@ -397,22 +390,4 @@
-    public String toString() {
-       return "MurmurHash3";
-    }
+-   public int hash(Object o) {
+-      if (o instanceof byte[])
+-         return hash((byte[]) o);
+-      else if (o instanceof long[])
+-         return hash((long[]) o);
+-      else if (o instanceof String)
+-         return hash(((String) o).getBytes(UTF8));
+-      else
+-         return hash(o.hashCode());
+-   }
+-
+-   @Override
+-   public boolean equals(Object other) {
+-      return other != null && other.getClass() == getClass();
+-   }
+-
+-   @Override
+-   public String toString() {
+-      return "MurmurHash3";
+-   }
 -
 -   public static class Externalizer extends NoStateExternalizer<MurmurHash3> {
 -      @Override
