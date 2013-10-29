@@ -7,5 +7,5 @@ type=Creature
 subtype=Zombie
 cost={4}{B}
 pt=3/3
+ability=leaves effect Destroy target white creature. It can't be regenerated.
 timing=main
-requires_groovy_code
