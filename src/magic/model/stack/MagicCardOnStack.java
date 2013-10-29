@@ -10,6 +10,7 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.MagicType;
+import magic.model.action.MagicMoveCardAction;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicSourceActivation;
 import magic.model.event.MagicEvent;
@@ -59,6 +60,15 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
             copyCardOnStack.setChoiceResults(Arrays.copyOf(choiceResults,choiceResults.length));
         }
         return copyCardOnStack;
+    }
+    
+    @Override
+    public void resolve(final MagicGame game) {
+        super.resolve(game);
+        // Move card to move location that is not play
+        if (moveLocation != MagicLocationType.Play) {
+            game.doAction(new MagicMoveCardAction(this));
+        }
     }
 
     @Override
