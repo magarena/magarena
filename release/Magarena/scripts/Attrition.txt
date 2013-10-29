@@ -5,5 +5,5 @@ value=4.220
 rarity=R
 type=Enchantment
 cost={1}{B}{B}
+ability=pay {B}, Sacrifice a creature: Destroy target nonblack creature.
 timing=enchantment
-requires_groovy_code
