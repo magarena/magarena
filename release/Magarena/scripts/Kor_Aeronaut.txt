@@ -7,6 +7,6 @@ type=Creature
 subtype=Kor,Soldier
 cost={W}{W}
 pt=2/2
-ability=flying;kicker {1}{W}
+ability=flying;kicker {1}{W};\
+        enters kicked effect Target creature gains flying until end of turn.
 timing=main
-requires_groovy_code
