@@ -7,5 +7,5 @@ type=Creature
 subtype=Elf,Warrior
 cost={G}
 pt=1/1
+ability=pay {4}{G}, Sacrifice a creature: Destroy target creature with flying.
 timing=main
-requires_groovy_code
