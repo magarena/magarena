@@ -7,5 +7,5 @@ type=Creature
 subtype=Surrakar
 cost={1}{B}
 pt=2/1
+ability=landfall effect SN gains intimidate until end of turn.
 timing=main
-requires_groovy_code
