@@ -1,0 +1,11 @@
+name=Innocent Blood
+url=http://magiccards.info/pch/en/33.html
+image=http://magiccards.info/scans/en/pch/33.jpg
+value=4.528
+removal=2
+rarity=C
+type=Sorcery
+cost={B}
+timing=removal
+requires_groovy_code
+
