@@ -17,7 +17,7 @@
                 MagicTargetChoice.TARGET_LAND,
                 MagicDestroyTargetPicker.Destroy,
                 this,
-                "Destroy target land\$."
+                "Destroy target land\$. Its controller may search his or her library for a basic land card, put it onto the battlefield, then shuffle his or her library."
             );
         }
         @Override
