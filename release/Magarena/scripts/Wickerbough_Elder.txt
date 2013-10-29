@@ -7,6 +7,6 @@ type=Creature
 subtype=Treefolk,Shaman
 cost={3}{G}
 pt=4/4
-ability=enters with -1/-1 1
+ability=enters with -1/-1 1;\
+        pay {G}, {-1/-1}: Destroy target artifact or enchantment.
 timing=main
-requires_groovy_code
