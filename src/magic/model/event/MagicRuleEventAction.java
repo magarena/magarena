@@ -4,6 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicSource;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
+import magic.model.MagicCard;
 import magic.model.MagicPlayer;
 import magic.model.MagicPermanentState;
 import magic.model.MagicDamage;
@@ -15,6 +16,7 @@ import magic.model.action.MagicCardOnStackAction;
 import magic.model.action.MagicCounterItemOnStackAction;
 import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicPermanentAction;
+import magic.model.action.MagicCardAction;
 import magic.model.action.MagicPlayerAction;
 import magic.model.action.MagicTargetAction;
 import magic.model.action.MagicRemoveFromPlayAction;
@@ -31,6 +33,8 @@ import magic.model.action.MagicPlayTokensAction;
 import magic.model.action.MagicPreventDamageAction;
 import magic.model.action.MagicGainAbilityAction;
 import magic.model.action.MagicMillLibraryAction;
+import magic.model.action.MagicRemoveCardAction;
+import magic.model.action.MagicMoveCardAction;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
@@ -53,6 +57,7 @@ import magic.model.target.MagicHasteTargetPicker;
 import magic.model.target.MagicIndestructibleTargetPicker;
 import magic.model.target.MagicTrampleTargetPicker;
 import magic.model.target.MagicFlyingTargetPicker;
+import magic.model.target.MagicGraveyardTargetPicker;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicMayChoice;
@@ -599,6 +604,24 @@ public enum MagicRuleEventAction {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent permanent) {
                         game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
+                    }
+                });
+            }
+        }
+    ),
+    Recover(
+        "return (?<choice>[^\\.]*from your graveyard) to your hand.",
+        MagicTargetHint.None,
+        MagicGraveyardTargetPicker.ReturnToHand,
+        MagicTiming.Draw,
+        "Return",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTargetCard(game,new MagicCardAction() {
+                    public void doAction(final MagicCard card) {
+                        game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
+                        game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
                     }
                 });
             }
