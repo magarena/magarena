@@ -7,6 +7,6 @@ type=Creature
 subtype=Beast
 cost={3}{G}{G}
 pt=4/6
-ability=fading 3
+ability=fading 3;\
+        pay {1}, {C}: Destroy target artifact.
 timing=main
-requires_groovy_code
