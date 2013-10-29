@@ -5,16 +5,17 @@ import magic.model.MagicDuel;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.TitleBar;
 
+import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 
-public class DuelViewer extends TexturedPanel {
+public class DuelViewer extends JPanel {
 
     private static final long serialVersionUID = 1L;
 
@@ -43,7 +44,7 @@ public class DuelViewer extends TexturedPanel {
 
         final JPanel mainPanel=new JPanel(new BorderLayout(0,5));
         mainPanel.setOpaque(false);
-        mainPanel.setBorder(FontsAndBorders.BLACK_BORDER_2);
+        mainPanel.setBorder(BorderFactory.createMatteBorder(0, 1, 1, 1, Color.BLACK));
 
         if (duel.isFinished()) {
             final JLabel finishedLabel=new JLabel("Finished!");

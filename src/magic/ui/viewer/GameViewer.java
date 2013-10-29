@@ -6,8 +6,9 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
 import magic.model.phase.MagicPhaseType;
 import magic.ui.GameController;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.TextLabel;
-import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.TitleBar;
 
 import javax.swing.BorderFactory;
@@ -30,7 +31,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-public class GameViewer extends TexturedPanel implements ActionListener {
+public class GameViewer extends JPanel implements ActionListener {
 
     private static final long serialVersionUID = 1L;
 
@@ -44,6 +45,7 @@ public class GameViewer extends TexturedPanel implements ActionListener {
     private final CardLayout actionCardLayout;
     private final JPanel contentPanel;
     private boolean actionEnabled;
+    private final Theme theme = ThemeFactory.getInstance().getCurrentTheme();
 
     public GameViewer(final MagicGame game,final GameController controller) {
 
@@ -113,7 +115,6 @@ public class GameViewer extends TexturedPanel implements ActionListener {
 
     public void setTitle(final TitleBar titleBar) {
         titleBar.setText("Turn " + game.getTurn() + " : " + game.getPhase().getType().getName());
-        titleBar.setIcon(game.getTurnPlayer() == game.getVisiblePlayer() ? IconImages.YOU : IconImages.OPPONENT);
     }
 
     public void clearContentPanel() {
@@ -178,4 +179,13 @@ public class GameViewer extends TexturedPanel implements ActionListener {
     public MagicPhaseType getMagicPhaseType() {
         return game.getPhase().getType();
     }
+
+    /**
+     * Gets the avatar portrait of the current player sized specifically
+     * for use with the GameDuelViewer component.
+     */
+    public ImageIcon getTurnSizedPlayerAvatar() {
+        return theme.getAvatarIcon(game.getTurnPlayer().getPlayerDefinition().getFace(), 4);
+    }
+
 }

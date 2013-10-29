@@ -1,7 +1,9 @@
 package magic.ui.viewer;
 
 import java.awt.Color;
+
 import javax.swing.JLabel;
+import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
 import net.miginfocom.swing.MigLayout;
@@ -9,10 +11,9 @@ import magic.model.phase.MagicPhaseType;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.TexturedPanel;
 
 @SuppressWarnings("serial")
-public class PhaseStepViewer extends TexturedPanel {
+public class PhaseStepViewer extends JPanel {
 
     private int currentPhaseStep = -1;
     private final Theme theme = ThemeFactory.getInstance().getCurrentTheme();
@@ -23,7 +24,7 @@ public class PhaseStepViewer extends TexturedPanel {
     }
 
     private void setMyLayout() {
-        setLayout(new MigLayout("insets 3 5 3 5"));
+        setLayout(new MigLayout("insets 1 5 0 5"));
         setPhaseStepIndicator("UN", "Beginning Phase : Untap Step");
         setPhaseStepIndicator("UP", "Beginning Phase : Upkeep Step");
         setPhaseStepIndicator("DR", "Beginning Phase : Draw Step");
