@@ -709,6 +709,26 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    MillChosen(
+        "(?<choice>[^\\.]*) puts the top (?<amount>[a-z]+) card(s)? of his or her library into his or her graveyard.", 
+        MagicTiming.Draw, 
+        "Mill"
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final int amount = Integer.parseInt(matcher.group("amount"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTargetPlayer(game,new MagicPlayerAction() {
+                        public void doAction(final MagicPlayer player) {
+                            game.doAction(new MagicMillLibraryAction(player,amount));
+                        }
+                    });
+                }
+            };
+        }
+    },
     ;
 
     private final Pattern pattern;
