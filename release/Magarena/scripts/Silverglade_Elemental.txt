@@ -1,0 +1,11 @@
+name=Silverglade Elemental
+url=http://magiccards.info/pch/en/78.html
+image=http://magiccards.info/scans/en/pch/78.jpg
+value=4.095
+rarity=C
+type=Creature
+subtype=Elemental
+cost={4}{G}
+pt=4/4
+timing=main
+requires_groovy_code
