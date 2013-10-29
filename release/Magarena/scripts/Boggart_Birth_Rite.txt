@@ -6,5 +6,5 @@ rarity=C
 type=Tribal,Sorcery
 subtype=Goblin
 cost={B}
+effect=Return target Goblin card from your graveyard to your hand.
 timing=main
-requires_groovy_code
