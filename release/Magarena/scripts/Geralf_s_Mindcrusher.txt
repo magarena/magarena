@@ -7,6 +7,6 @@ type=Creature
 subtype=Zombie,Horror
 cost={4}{U}{U}
 pt=5/5
-ability=undying
+ability=undying;\
+        enters effect Target player puts the top five cards of his or her library into his or her graveyard.
 timing=main
-requires_groovy_code

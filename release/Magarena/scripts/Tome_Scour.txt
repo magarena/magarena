@@ -5,5 +5,5 @@ value=3.460
 rarity=C
 type=Sorcery
 cost={U}
+effect=Target player puts the top five cards of his or her library into his or her graveyard.
 timing=main
-requires_groovy_code

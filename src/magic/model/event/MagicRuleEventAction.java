@@ -866,6 +866,9 @@ public enum MagicRuleEventAction {
             case "five" : return 5;
             case "six" : return 6;
             case "seven" : return 7;
+            case "eight" : return 8;
+            case "nine" : return 9;
+            case "ten" : return 10;
             default: throw new RuntimeException("Unknown count: " + num);
         }
     }
