@@ -716,7 +716,7 @@ public enum MagicRuleEventAction {
     ) {
         public MagicEventAction getAction(final String rule) {
             final Matcher matcher = matched(rule);
-            final int amount = Integer.parseInt(matcher.group("amount"));
+            final int amount = englishToInt(matcher.group("amount"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
