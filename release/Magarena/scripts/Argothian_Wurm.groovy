@@ -5,16 +5,23 @@
             return new MagicEvent(
                 permanent,
                 permanent.getOpponent(),
-                new MagicMayChoice(),
+                new MagicMayChoice(MagicTargetChoice.SACRIFICE_LAND),
                 this,
-                "PN may\$ sacrifice a land. If a he or she does, put SN on the top of controller's library."
+                "PN may\$ sacrifice a land\$. If a he or she does, put SN on the top of its owner's library."
             );
         }
         @Override
        public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                return new MagicSacrificePermanentEvent(source, MagicTargetChoice.SACRIFICE_LAND);                
-                
+                event.processTargetPermanent(game,new MagicPermanentAction() {
+                    public void doAction(final MagicPermanent creature) {
+                        game.doAction(new MagicSacrificeAction(creature));
+                        game.doAction(new MagicRemoveFromPlayAction(
+                            event.getPermanent(),
+                            MagicLocationType.TopOfOwnersLibrary
+                        ));
+                    }
+                });
             } 
         }
     }
