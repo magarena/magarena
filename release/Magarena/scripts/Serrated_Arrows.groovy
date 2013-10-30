@@ -1,16 +1,4 @@
 [
-    new MagicWeakenCreatureActivation(
-        new MagicActivationHints(MagicTiming.Removal),
-        "-1/-1"
-    ) {
-        @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
-            return [
-                new MagicTapEvent(source),
-                new MagicRemoveCounterEvent(source,MagicCounterType.Charge,1)
-            ];
-        }
-    },
     new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(

@@ -5,5 +5,5 @@ value=3.032
 rarity=R
 type=Enchantment
 cost={B}{B}
+ability=pay {2}{B}{B}: Put a -1/-1 counter on target creature.
 timing=enchantment
-requires_groovy_code
