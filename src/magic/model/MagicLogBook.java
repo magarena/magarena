@@ -1,15 +1,21 @@
 package magic.model;
 
+import java.util.List;
 import java.util.ArrayList;
+
+import javax.swing.SwingUtilities;
 
 public class MagicLogBook extends ArrayList<MagicMessage> {
 
     private static final long serialVersionUID = 1L;
 
+    private List<ILogBookListener> _listeners = new ArrayList<>();
+
     MagicLogBook() {}
 
     @Override
     public boolean add(final MagicMessage msg) {
+    	notifyMessageLogged(msg);
         final String player = msg.getPlayer().getIndex() == 0 ? "P" : "C";
         MagicGameLog.log("LOG (" + player + "): " + msg.getText());
         if (Boolean.getBoolean("debug")) {
@@ -24,4 +30,26 @@ public class MagicLogBook extends ArrayList<MagicMessage> {
             remove(index);
         }
     }
+
+    public synchronized void addListener(ILogBookListener obj) {
+        _listeners.add(obj);
+    }
+
+    public synchronized void removeListener(ILogBookListener obj) {
+        _listeners.remove(obj);
+    }
+
+    private synchronized void notifyMessageLogged(final MagicMessage msg) {
+        if (msg != null) {
+            for (final ILogBookListener listener : _listeners) {
+                SwingUtilities.invokeLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        listener.messageLogged(new MagicLogBookEvent(this, msg));
+                    }
+                });
+            }
+        }
+    }
+
 }
