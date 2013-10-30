@@ -1,0 +1,9 @@
+name=Mystical Tutor
+url=http://magiccards.info/fve/en/8.html
+image=http://magiccards.info/scans/en/fve/8.jpg
+value=4.640
+rarity=M
+type=Instant
+cost={U}
+timing=removal
+requires_groovy_code
