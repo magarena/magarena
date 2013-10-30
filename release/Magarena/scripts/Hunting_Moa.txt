@@ -7,6 +7,7 @@ type=Creature
 subtype=Bird,Beast
 cost={2}{G}
 pt=3/2
-ability=echo {2}{G}
+ability=echo {2}{G};\
+        enters effect Put a +1/+1 counter on target creature.;\
+        dies effect Put a +1/+1 counter on target creature.
 timing=main
-requires_groovy_code=Timberland Guide;Hunting Moa

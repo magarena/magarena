@@ -315,13 +315,6 @@ public enum MagicAbility {
             ));
         }
     },
-    AttacksEffectMay("attacks effect PN may", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicWhenSelfAttacksTrigger.create(
-                MagicRuleEventAction.createMay(arg)
-            ));
-        }
-    },
     AllyGrow("ally grow",20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
@@ -338,13 +331,6 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicLandfallTrigger.create(
                 MagicRuleEventAction.create(arg)
-            ));
-        }
-    },
-    LandfallMayEffect("landfall effect PN may",0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicLandfallTrigger.create(
-                MagicRuleEventAction.createMay(arg)
             ));
         }
     },
@@ -651,10 +637,17 @@ public enum MagicAbility {
             ));
         }
     },
-    EntersMayEffect("enters effect PN may", 10) {
+    EndStepEffect("end step effect", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicWhenComesIntoPlayTrigger.create(
-                MagicRuleEventAction.createMay(arg)
+            card.add(MagicAtEndOfTurnTrigger.create(
+                MagicRuleEventAction.create(arg)
+            ));
+        }
+    },
+    YourEndStepEffect("your end step effect", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            card.add(MagicAtEndOfTurnTrigger.createYour(
+                MagicRuleEventAction.create(arg)
             ));
         }
     },
@@ -672,13 +665,6 @@ public enum MagicAbility {
             ));
         }
     },
-    DiesMayEffect("dies effect PN may", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicWhenDiesTrigger.create(
-                MagicRuleEventAction.createMay(arg)
-            ));
-        }
-    },
     LeavesEffect("leaves effect", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicWhenSelfLeavesPlayTrigger.create(
@@ -686,23 +672,10 @@ public enum MagicAbility {
             ));
         }
     },
-    LeavesMayEffect("leaves effect PN may", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicWhenSelfLeavesPlayTrigger.create(
-                MagicRuleEventAction.createMay(arg)
-            ));
-        }
-    },
     ControlEnchanted("control enchanted", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
             card.add(MagicStatic.ControlEnchanted);
-        }
-    },
-    ReturnAtEnd("return at end", -50) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
-            card.add(MagicAtEndOfTurnTrigger.ReturnAtEnd);
         }
     },
     SwitchPT("switch pt", 10) {
@@ -824,6 +797,13 @@ public enum MagicAbility {
     EachUpkeepEffect("each upkeep effect", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicAtUpkeepTrigger.create(
+                MagicRuleEventAction.create(arg)
+            ));
+        }
+    },
+    YourUpkeepEffect("your upkeep effect", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            card.add(MagicAtUpkeepTrigger.createYour(
                 MagicRuleEventAction.create(arg)
             ));
         }

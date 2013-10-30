@@ -869,6 +869,8 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
     MagicCardFilterImpl TARGET_CREATURE_CARD_FROM_GRAVEYARD = Factory.card(MagicTargetType.Graveyard, MagicType.Creature);
     
+    MagicCardFilterImpl TARGET_ARTIFACT_CREATURE_CARD_FROM_GRAVEYARD = Factory.cardAnd(MagicTargetType.Graveyard, MagicType.Artifact, MagicType.Creature);
+    
     MagicCardFilterImpl PAYABLE_CREATURE_CARD_FROM_GRAVEYARD=new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
             return target.hasType(MagicType.Creature) && target.getCost().getCondition().accept(target);
@@ -1260,6 +1262,16 @@ public interface MagicTargetFilter<T extends MagicTarget> {
             return new MagicCardFilterImpl() {
                 public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
                     return target.hasType(type1) || target.hasType(type2);
+                }
+                public boolean acceptType(final MagicTargetType targetType) {
+                    return targetType == aTargetType;
+                }
+            };
+        }
+        public static final MagicCardFilterImpl cardAnd(final MagicTargetType aTargetType, final MagicType type1, final MagicType type2) {
+            return new MagicCardFilterImpl() {
+                public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+                    return target.hasType(type1) && target.hasType(type2);
                 }
                 public boolean acceptType(final MagicTargetType targetType) {
                     return targetType == aTargetType;

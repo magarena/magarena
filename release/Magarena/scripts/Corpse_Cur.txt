@@ -7,6 +7,6 @@ type=Artifact,Creature
 subtype=Hound
 cost={4}
 pt=2/2
-ability=infect
+ability=infect;\
+        enters effect PN may return target creature card with infect from your graveyard to your hand.
 timing=main
-requires_groovy_code

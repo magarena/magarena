@@ -293,12 +293,6 @@ public class MagicEvent implements MagicCopyable {
         return true;
     }
 
-    public boolean isSpellCardEvent() {
-        return source instanceof MagicCardOnStack &&
-               action instanceof MagicSpellCardEvent &&
-               getCardOnStack().getMoveLocation() != MagicLocationType.Play;
-    }
-
     public final MagicSource getSource() {
         return source;
     }

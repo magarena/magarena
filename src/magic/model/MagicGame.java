@@ -733,11 +733,6 @@ public class MagicGame {
         activeSource = event.getSource();
         event.executeEvent(this,choiceResults);
         update();
-
-        // Move card to move location that is not play
-        if (event.isSpellCardEvent()) {
-            doAction(new MagicMoveCardAction(event.getCardOnStack()));
-        }
     }
 
     public MagicEventQueue getEvents() {

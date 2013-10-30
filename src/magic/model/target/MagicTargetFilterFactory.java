@@ -101,6 +101,7 @@ public class MagicTargetFilterFactory {
         single.put("card from your graveyard", TARGET_CARD_FROM_GRAVEYARD);
         single.put("card from your hand", TARGET_CARD_FROM_HAND);
         single.put("artifact or creature card from a graveyard", TARGET_ARTIFACT_OR_CREATURE_CARD_FROM_ALL_GRAVEYARDS);
+        single.put("artifact creature card from your graveyard", TARGET_ARTIFACT_CREATURE_CARD_FROM_GRAVEYARD);
         single.put("attacking creature", TARGET_ATTACKING_CREATURE);
         single.put("attacking creature with flying", TARGET_ATTACKING_CREATURE_WITH_FLYING);
         single.put("attacking or blocking creature", TARGET_ATTACKING_OR_BLOCKING_CREATURE);

@@ -7,6 +7,6 @@ type=Artifact,Creature
 subtype=Juggernaut
 cost={4}
 pt=4/3
-ability=echo {4}
+ability=echo {4};\
+        pay Sacrifice an artifact: Put a +1/+1 counter on target creature.
 timing=main
-requires_groovy_code

@@ -6,7 +6,7 @@ removal=1
 rarity=U
 type=Enchantment
 cost={W}{U}
-ability=lord creatures you control get +0/+1
+ability=lord creatures you control get +0/+1;\
+        pay {S}: Return target creature to its owner's hand.
 static=player
 timing=enchantment
-requires_groovy_code

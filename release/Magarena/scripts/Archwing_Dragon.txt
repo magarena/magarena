@@ -7,5 +7,5 @@ type=Creature
 subtype=Dragon
 cost={2}{R}{R}
 pt=4/4
-ability=flying;haste;return at end
+ability=flying;haste;end step effect Return SN to its owner's hand.
 timing=fmain

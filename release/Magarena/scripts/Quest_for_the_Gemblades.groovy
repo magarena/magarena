@@ -1,34 +1,4 @@
 [
-    new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Pump),
-        "Pump"
-    ) {
-        @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
-            return [
-                new MagicRemoveCounterEvent(source,MagicCounterType.Charge,1),
-                new MagicSacrificeEvent(source)
-            ];
-        }
-        @Override
-        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            return new MagicEvent(
-                source,
-                MagicTargetChoice.POS_TARGET_CREATURE,
-                MagicPumpTargetPicker.create(),
-                this,
-                "Put four +1/+1 counters on target creature\$."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent creature) {
-                    game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.PlusOne,4,true));
-                }
-            });
-        }
-    },
     new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {

@@ -5,5 +5,6 @@ value=3.292
 rarity=U
 type=Enchantment
 cost={3}{B}
+ability=your end step effect PN puts a 0/1 black Thrull creature token onto the battlefield.
 timing=enchantment
 requires_groovy_code

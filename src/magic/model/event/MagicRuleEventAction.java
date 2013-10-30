@@ -4,6 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicSource;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
+import magic.model.MagicCard;
 import magic.model.MagicPlayer;
 import magic.model.MagicPermanentState;
 import magic.model.MagicDamage;
@@ -15,6 +16,7 @@ import magic.model.action.MagicCardOnStackAction;
 import magic.model.action.MagicCounterItemOnStackAction;
 import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicPermanentAction;
+import magic.model.action.MagicCardAction;
 import magic.model.action.MagicPlayerAction;
 import magic.model.action.MagicTargetAction;
 import magic.model.action.MagicRemoveFromPlayAction;
@@ -31,6 +33,8 @@ import magic.model.action.MagicPlayTokensAction;
 import magic.model.action.MagicPreventDamageAction;
 import magic.model.action.MagicGainAbilityAction;
 import magic.model.action.MagicMillLibraryAction;
+import magic.model.action.MagicRemoveCardAction;
+import magic.model.action.MagicMoveCardAction;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
@@ -53,6 +57,7 @@ import magic.model.target.MagicHasteTargetPicker;
 import magic.model.target.MagicIndestructibleTargetPicker;
 import magic.model.target.MagicTrampleTargetPicker;
 import magic.model.target.MagicFlyingTargetPicker;
+import magic.model.target.MagicGraveyardTargetPicker;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicMayChoice;
@@ -214,6 +219,27 @@ public enum MagicRuleEventAction {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     game.doAction(new MagicDrawAction(event.getPlayer(), amount));
+                }
+            };
+        }
+    },
+    DrawChosen(
+        "(?<choice>[^\\.]*) draws (?<amount>[a-z]+) card(s)?.",
+        MagicTargetHint.Positive, 
+        MagicTiming.Draw, 
+        "Draw"
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final int amount = MagicRuleEventAction.englishToInt(matcher.group("amount"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTargetPlayer(game,new MagicPlayerAction() {
+                        public void doAction(final MagicPlayer player) {
+                            game.doAction(new MagicDrawAction(player,amount));
+                        }
+                    });
                 }
             };
         }
@@ -500,9 +526,88 @@ public enum MagicRuleEventAction {
         }
     },
     GrowSelf(
-        "put (?<amount>[a-z]+) (?<type>[^\\.]*) counter(s)? on sn.", 
+        "put (?<amount>[a-z]+) \\+1/\\+1 counter(s)? on sn.", 
         MagicTiming.Pump, 
         "Pump"
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final int amount = englishToInt(matcher.group("amount"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.doAction(new MagicChangeCountersAction(
+                        event.getPermanent(),
+                        MagicCounterType.PlusOne,
+                        amount,
+                        true
+                    ));
+                }
+            };
+        }
+    },
+    GrowChosen(
+        "put (?<amount>[a-z]+) \\+1/\\+1 counter(s)? on (?<choice>[^\\.]*).", 
+        MagicTargetHint.Positive,
+        MagicPumpTargetPicker.create(),
+        MagicTiming.Pump, 
+        "Pump"
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final int amount = englishToInt(matcher.group("amount"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTargetPermanent(game,new MagicPermanentAction() {
+                        public void doAction(final MagicPermanent creature) {
+                            game.doAction(new MagicChangeCountersAction(
+                                creature,
+                                MagicCounterType.PlusOne,
+                                amount,
+                                true
+                            ));
+                        }
+                    });
+                }
+            };
+        }
+    },
+    ShrinkChosen(
+        "put (?<amount>[a-z]+) -1/-1 counter(s)? on (?<choice>[^\\.]*).", 
+        MagicTargetHint.Negative,
+        MagicTiming.Removal, 
+        "Weaken"
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final int amount = englishToInt(matcher.group("amount"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTargetPermanent(game,new MagicPermanentAction() {
+                        public void doAction(final MagicPermanent creature) {
+                            game.doAction(new MagicChangeCountersAction(
+                                creature,
+                                MagicCounterType.MinusOne,
+                                amount,
+                                true
+                            ));
+                        }
+                    });
+                }
+            };
+        }
+        public MagicTargetPicker<?> getPicker(final String rule) {
+            final Matcher matcher = matched(rule);
+            final int amount = englishToInt(matcher.group("amount"));
+            return new MagicWeakenTargetPicker(amount,amount);
+        }
+    },
+    ChargeSelf(
+        "put (?<amount>[a-z]+) (?<type>[^\\.]*) counter(s)? on sn.", 
+        MagicTiming.Main, 
+        "Charge"
     ) {
         public MagicEventAction getAction(final String rule) {
             final Matcher matcher = matched(rule);
@@ -587,6 +692,19 @@ public enum MagicRuleEventAction {
             }
         }
     ),
+    RecoverSelf(
+        "return sn from the graveyard to its owner's hand.",
+        MagicTiming.Draw,
+        "Return",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                final MagicCard card = event.getPermanent().getCard();
+                game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
+                game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+            }
+        }
+    ),
     Bounce(
         "return (?<choice>[^\\.]*) to its owner's hand.",
         MagicTargetHint.None,
@@ -599,6 +717,24 @@ public enum MagicRuleEventAction {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent permanent) {
                         game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
+                    }
+                });
+            }
+        }
+    ),
+    Recover(
+        "return (?<choice>[^\\.]*from your graveyard) to your hand.",
+        MagicTargetHint.None,
+        MagicGraveyardTargetPicker.ReturnToHand,
+        MagicTiming.Draw,
+        "Return",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTargetCard(game,new MagicCardAction() {
+                    public void doAction(final MagicCard card) {
+                        game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
+                        game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
                     }
                 });
             }
@@ -851,6 +987,7 @@ public enum MagicRuleEventAction {
             case "-1/-1": return MagicCounterType.MinusOne;
             case "charge": 
             case "strife":
+            case "spore":
                 return MagicCounterType.Charge;
             default: throw new RuntimeException("Unknown type of counter: " + counter);
         }
@@ -874,59 +1011,51 @@ public enum MagicRuleEventAction {
     }
 
     public static MagicSourceEvent create(final String rule) {
-        final String effect = rule;
+        final String effect = rule.replaceFirst("^PN may ", "").replaceFirst("^have ", "");
         final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
         final MagicEventAction action  = ruleAction.getAction(effect);
         final MagicTargetPicker<?> picker = ruleAction.getPicker(effect);
         final MagicChoice choice = ruleAction.getChoice(effect);
 
-        return new MagicSourceEvent() {
-            @Override
-            public MagicEvent getEvent(final MagicSource source) {
-                return new MagicEvent(
-                    source,
-                    choice,
-                    picker,
-                    action,
-                    rule + "$"
-                );
-            }
-            @Override
-            public MagicRuleEventAction getRule() {
-                return ruleAction;
-            }
-        };
-    }
-    
-    public static MagicSourceEvent createMay(final String rule) {
-        final String effect = rule.replaceFirst("^have ","");
-        final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
-        final MagicEventAction action  = ruleAction.getAction(effect);
-        final MagicTargetPicker<?> picker = ruleAction.getPicker(effect);
-        final MagicChoice choice = ruleAction.getChoice(effect);
-
-        return new MagicSourceEvent() {
-            @Override
-            public MagicEvent getEvent(final MagicSource source) {
-                return new MagicEvent(
-                    source,
-                    new MagicMayChoice(choice),
-                    picker,
-                    new MagicEventAction() {
-                        @Override
-                        public void executeEvent(final MagicGame game, final MagicEvent event) {
-                            if (event.isYes()) {
-                                action.executeEvent(game, event);
+        return rule.startsWith("PN may ") ?
+            new MagicSourceEvent() {
+                @Override
+                public MagicEvent getEvent(final MagicSource source) {
+                    return new MagicEvent(
+                        source,
+                        new MagicMayChoice(choice),
+                        picker,
+                        new MagicEventAction() {
+                            @Override
+                            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                                if (event.isYes()) {
+                                    action.executeEvent(game, event);
+                                }
                             }
-                        }
-                    },
-                    "PN may$ " + rule + "$"
-                );
-            }
-            @Override
-            public MagicRuleEventAction getRule() {
-                return ruleAction;
-            }
-        };
+                        },
+                        "PN may$ " + rule + "$"
+                    );
+                }
+                @Override
+                public MagicRuleEventAction getRule() {
+                    return ruleAction;
+                }
+            }:
+            new MagicSourceEvent() {
+                @Override
+                public MagicEvent getEvent(final MagicSource source) {
+                    return new MagicEvent(
+                        source,
+                        choice,
+                        picker,
+                        action,
+                        rule + "$"
+                    );
+                }
+                @Override
+                public MagicRuleEventAction getRule() {
+                    return ruleAction;
+                }
+            };
     }
 }

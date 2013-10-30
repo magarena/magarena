@@ -5,5 +5,5 @@ value=4.882
 rarity=R
 type=Instant
 cost={U}
+effect=Target player draws three cards.
 timing=draw
-requires_groovy_code

@@ -326,8 +326,8 @@ public class MurmurHash3 {
     * @param payload a byte array to hash
     * @return a hash code for the byte array
     */
-   public static int hash(long[] payload) {
-      return MurmurHash3_x64_32(payload, 9001);
+   public static long hash(long[] payload) {
+      return MurmurHash3_x64_64(payload, 9001);
    }
 
    
@@ -367,27 +367,5 @@ public class MurmurHash3 {
       state.h2 += state.h1;
 
       return (int) (state.h1 >>> 32);
-   }
-
-   
-   public int hash(Object o) {
-      if (o instanceof byte[])
-         return hash((byte[]) o);
-      else if (o instanceof long[])
-         return hash((long[]) o);
-      else if (o instanceof String)
-         return hash(((String) o).getBytes(UTF8));
-      else
-         return hash(o.hashCode());
-   }
-
-   @Override
-   public boolean equals(Object other) {
-      return other != null && other.getClass() == getClass();
-   }
-
-   @Override
-   public String toString() {
-      return "MurmurHash3";
    }
 }

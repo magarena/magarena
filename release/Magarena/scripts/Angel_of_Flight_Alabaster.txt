@@ -7,6 +7,6 @@ type=Creature
 subtype=Angel
 cost={4}{W}
 pt=4/4
-ability=flying
+ability=flying;\
+        your upkeep effect Return target Spirit card from your graveyard to your hand.
 timing=main
-requires_groovy_code
