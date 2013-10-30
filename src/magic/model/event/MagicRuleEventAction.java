@@ -887,6 +887,7 @@ public enum MagicRuleEventAction {
             case "-1/-1": return MagicCounterType.MinusOne;
             case "charge": 
             case "strife":
+            case "spore":
                 return MagicCounterType.Charge;
             default: throw new RuntimeException("Unknown type of counter: " + counter);
         }
