@@ -548,7 +548,7 @@ public enum MagicRuleEventAction {
         }
     },
     GrowChosen(
-        "put (?<amount>[a-z]+) +1/+1 counter(s)? on (?<choice>[^\\.]*).", 
+        "put (?<amount>[a-z]+) \\+1/\\+1 counter(s)? on (?<choice>[^\\.]*).", 
         MagicTargetHint.Positive,
         MagicPumpTargetPicker.create(),
         MagicTiming.Pump, 
