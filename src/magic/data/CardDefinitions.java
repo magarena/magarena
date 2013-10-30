@@ -172,7 +172,11 @@ public class CardDefinitions {
             executor.execute(new Runnable() {
                 @Override
                 public void run() {
-                    cdef.loadAbilities();
+                    try {
+                        cdef.loadAbilities();
+                    } catch (Throwable cause) {
+                        throw new RuntimeException("Unable to load " + cdef, cause);
+                    }
                 }
             });
         }
