@@ -7,6 +7,7 @@ import magic.model.MagicPlayer;
 import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicSourceEvent;
 
 public abstract class MagicAtEndOfTurnTrigger extends MagicTrigger<MagicPlayer> {
     public MagicAtEndOfTurnTrigger(final int priority) {
@@ -18,24 +19,15 @@ public abstract class MagicAtEndOfTurnTrigger extends MagicTrigger<MagicPlayer> 
     public MagicTriggerType getType() {
         return MagicTriggerType.AtEndOfTurn;
     }
-
-    public static final MagicAtEndOfTurnTrigger ReturnAtEnd = new MagicAtEndOfTurnTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer eotPlayer) {
-            return new MagicEvent(
-                permanent,
-                this,
-                "Return SN to its owner's hand."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicRemoveFromPlayAction(
-                event.getPermanent(),
-                MagicLocationType.OwnersHand
-            ));
-        }
-    };
+    
+    public static final MagicAtEndOfTurnTrigger create(final MagicSourceEvent sourceEvent) {
+        return new MagicAtEndOfTurnTrigger() {
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+                return sourceEvent.getEvent(permanent);
+            }
+        };
+    }
 
     public static final MagicAtEndOfTurnTrigger Sacrifice = new MagicAtEndOfTurnTrigger() {
         @Override

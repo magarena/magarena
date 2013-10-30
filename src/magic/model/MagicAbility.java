@@ -637,6 +637,13 @@ public enum MagicAbility {
             ));
         }
     },
+    EndStepEffect("end step effect", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            card.add(MagicAtEndOfTurnTrigger.create(
+                MagicRuleEventAction.create(arg)
+            ));
+        }
+    },
     EntersKickedEffect("enters kicked effect", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicWhenComesIntoPlayTrigger.createKicked(
@@ -662,12 +669,6 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
             card.add(MagicStatic.ControlEnchanted);
-        }
-    },
-    ReturnAtEnd("return at end", -50) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
-            card.add(MagicAtEndOfTurnTrigger.ReturnAtEnd);
         }
     },
     SwitchPT("switch pt", 10) {
