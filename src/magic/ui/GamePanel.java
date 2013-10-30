@@ -17,7 +17,6 @@ import magic.ui.viewer.HandGraveyardExileViewer;
 import magic.ui.viewer.ImageBattlefieldViewer;
 import magic.ui.viewer.ImageCombatViewer;
 import magic.ui.viewer.ImageHandGraveyardExileViewer;
-import magic.ui.viewer.ImageViewer;
 import magic.ui.viewer.LogBookViewer;
 import magic.ui.viewer.PlayerViewer;
 import magic.ui.viewer.StackCombatViewer;
@@ -28,13 +27,11 @@ import magic.ui.widget.ZoneBackgroundLabel;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.AbstractAction;
-import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 import javax.swing.JToggleButton;
 import javax.swing.KeyStroke;
 
 import java.awt.BorderLayout;
-import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
@@ -78,8 +75,6 @@ public final class GamePanel extends JPanel {
     private final ImageBattlefieldViewer imagePlayerPermanentViewer;
     private final ImageBattlefieldViewer imageOpponentPermanentViewer;
     private final ImageCombatViewer imageCombatViewer;
-    private final ImageViewer imageViewer;
-
     private final JPanel lhsPanel, rhsPanel;
 
     public GamePanel(
@@ -111,7 +106,6 @@ public final class GamePanel extends JPanel {
         lhsPanel.setOpaque(false);
         rhsPanel = new JPanel(null);
         rhsPanel.setOpaque(false);
-        rhsPanel.setBorder(BorderFactory.createLineBorder(Color.CYAN, 1));
 
         logBookViewer=new LogBookViewer(game.getLogBook());
         logBookViewer.setVisible(false);
@@ -180,7 +174,6 @@ public final class GamePanel extends JPanel {
         imagePlayerPermanentViewer=new ImageBattlefieldViewer(viewerInfo,controller,false);
         imageOpponentPermanentViewer=new ImageBattlefieldViewer(viewerInfo,controller,true);
         imageCombatViewer=new ImageCombatViewer(viewerInfo,controller);
-        imageViewer=new ImageViewer();
 
         final TitleBar stackTitleBar = new TitleBar("Stack");
         stackTitleBar.setIcon(theme.getIcon(Theme.ICON_SMALL_STACK));
@@ -360,7 +353,6 @@ public final class GamePanel extends JPanel {
             rhsPanel.remove(imagePlayerPermanentViewer);
             rhsPanel.remove(imageOpponentPermanentViewer);
             rhsPanel.remove(imageCombatViewer);
-            rhsPanel.remove(imageViewer);
             rhsPanel.add(cardViewer);
             rhsPanel.add(handGraveyardViewer);
             rhsPanel.add(stackCombatViewer);
@@ -379,10 +371,8 @@ public final class GamePanel extends JPanel {
             rhsPanel.add(imagePlayerPermanentViewer);
             rhsPanel.add(imageOpponentPermanentViewer);
             rhsPanel.add(imageCombatViewer);
-            rhsPanel.add(imageViewer);
         }
         resizeComponents();
-        //update();
         revalidate();
         repaint();
     }
@@ -407,7 +397,6 @@ public final class GamePanel extends JPanel {
         logBookViewer.setBounds(result.getBoundary(ResolutionProfileType.GameLogBookViewer));
 
         if (isTextView()) {
-            cardViewer.setBounds(result.getBoundary(ResolutionProfileType.GameCardViewer));
             stackCombatViewer.setBounds(result.getBoundary(ResolutionProfileType.GameStackCombatViewer));
             handGraveyardViewer.setBounds(result.getBoundary(ResolutionProfileType.GameHandGraveyardViewer));
             playerPermanentViewer.setBounds(result.getBoundary(ResolutionProfileType.GamePlayerPermanentViewer));
@@ -418,7 +407,6 @@ public final class GamePanel extends JPanel {
             imagePlayerPermanentViewer.setBounds(result.getBoundary(ResolutionProfileType.GameImagePlayerPermanentViewer));
             imageOpponentPermanentViewer.setBounds(result.getBoundary(ResolutionProfileType.GameImageOpponentPermanentViewer));
             imageCombatViewer.setBounds(result.getBoundary(ResolutionProfileType.GameImageCombatViewer));
-            imageViewer.setBounds(result.getBoundary(ResolutionProfileType.GameImageViewer));
         }
 
         setThisLayout(result);
@@ -458,7 +446,6 @@ public final class GamePanel extends JPanel {
         buttonPanel.add(textViewButton, "w " + r.width + "px!, h " + r.height + "px!");
         lhsPanel.add(buttonPanel, "w 100%");
 
-        r = result.getBoundary(ResolutionProfileType.GameImageStackViewer);
         lhsPanel.add(imageStackViewer, "w 100%, pushy, bottom");
 
         r = result.getBoundary(ResolutionProfileType.GameDuelViewer);
@@ -471,9 +458,6 @@ public final class GamePanel extends JPanel {
 
         // RHS
         add(rhsPanel, "w 100%, h 100%");
-
-//        lhsPanel.validate();
-//        lhsPanel.repaint();
 
     }
 
