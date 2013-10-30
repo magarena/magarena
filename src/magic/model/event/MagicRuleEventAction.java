@@ -223,6 +223,27 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    DrawChosen(
+        "(?<choice>[^\\.]*) draws (?<amount>[a-z]+) card(s)?.",
+        MagicTargetHint.Positive, 
+        MagicTiming.Draw, 
+        "Draw"
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final int amount = MagicRuleEventAction.englishToInt(matcher.group("amount"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTargetPlayer(game,new MagicPlayerAction() {
+                        public void doAction(final MagicPlayer player) {
+                            game.doAction(new MagicDrawAction(player,amount));
+                        }
+                    });
+                }
+            };
+        }
+    },
     DrawDiscard(
         "(pn )?draw(s)? (?<amount1>[a-z]+) card(s)?, then discard(s)? (?<amount2>[a-z]+) card(s)?.", 
         MagicTiming.Draw, 
