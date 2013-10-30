@@ -7,7 +7,7 @@ type=Creature
 subtype=Elf
 cost={1}{G}
 pt=0/2
-ability=pay Sacrifice a Saproling: PN gains 2 life.;\
-        pay {C3}: PN puts a 1/1 green Saproling creature token onto the battlefield.
+ability=your upkeep effect Put a spore counter on SN;\
+        pay {C3}: PN puts a 1/1 green Saproling creature token onto the battlefield.;\
+        pay Sacrifice a Saproling: PN gains 2 life.
 timing=main
-requires_groovy_code=Thallid
