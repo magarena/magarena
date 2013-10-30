@@ -547,6 +547,29 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    GrowChosen(
+        "put (?<amount>[a-z]+) +1/+1 counter(s)? on (?<choice>[^\\.]*).", 
+        MagicTargetHint.Positive,
+        MagicPumpTargetPicker.create(),
+        MagicTiming.Pump, 
+        "Pump"
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final int amount = englishToInt(matcher.group("amount"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.doAction(new MagicChangeCountersAction(
+                        event.getPermanent(),
+                        MagicCounterType.PlusOne,
+                        amount,
+                        true
+                    ));
+                }
+            };
+        }
+    },
     Weaken(
         "(?<choice>target[^\\.]*) get(s)? (?<pt>[0-9-]+/[0-9-]+) until end of turn.", 
         MagicTargetHint.Negative, 
