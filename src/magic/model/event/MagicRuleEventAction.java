@@ -574,6 +574,37 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    ShrinkChosen(
+        "put (?<amount>[a-z]+) -1/-1 counter(s)? on (?<choice>[^\\.]*).", 
+        MagicTargetHint.Negative,
+        MagicTiming.Removal, 
+        "Weaken"
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final int amount = englishToInt(matcher.group("amount"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTargetPermanent(game,new MagicPermanentAction() {
+                        public void doAction(final MagicPermanent creature) {
+                            game.doAction(new MagicChangeCountersAction(
+                                creature,
+                                MagicCounterType.MinusOne,
+                                amount,
+                                true
+                            ));
+                        }
+                    });
+                }
+            };
+        }
+        public MagicTargetPicker<?> getPicker(final String rule) {
+            final Matcher matcher = matched(rule);
+            final int amount = englishToInt(matcher.group("amount"));
+            return new MagicWeakenTargetPicker(amount,amount);
+        }
+    },
     Weaken(
         "(?<choice>target[^\\.]*) get(s)? (?<pt>[0-9-]+/[0-9-]+) until end of turn.", 
         MagicTargetHint.Negative, 
