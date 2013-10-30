@@ -526,20 +526,19 @@ public enum MagicRuleEventAction {
         }
     },
     GrowSelf(
-        "put (?<amount>[a-z]+) (?<type>[^\\.]*) counter(s)? on sn.", 
+        "put (?<amount>[a-z]+) \\+1/\\+1 counter(s)? on sn.", 
         MagicTiming.Pump, 
         "Pump"
     ) {
         public MagicEventAction getAction(final String rule) {
             final Matcher matcher = matched(rule);
             final int amount = englishToInt(matcher.group("amount"));
-            final MagicCounterType counterType = englishToCounter(matcher.group("type"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     game.doAction(new MagicChangeCountersAction(
                         event.getPermanent(),
-                        counterType,
+                        MagicCounterType.PlusOne,
                         amount,
                         true
                     ));
@@ -603,6 +602,28 @@ public enum MagicRuleEventAction {
             final Matcher matcher = matched(rule);
             final int amount = englishToInt(matcher.group("amount"));
             return new MagicWeakenTargetPicker(amount,amount);
+        }
+    },
+    ChargeSelf(
+        "put (?<amount>[a-z]+) (?<type>[^\\.]*) counter(s)? on sn.", 
+        MagicTiming.Main, 
+        "Charge"
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final int amount = englishToInt(matcher.group("amount"));
+            final MagicCounterType counterType = englishToCounter(matcher.group("type"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.doAction(new MagicChangeCountersAction(
+                        event.getPermanent(),
+                        counterType,
+                        amount,
+                        true
+                    ));
+                }
+            };
         }
     },
     Weaken(
