@@ -22,12 +22,14 @@ import magic.ui.viewer.PlayerViewer;
 import magic.ui.viewer.StackCombatViewer;
 import magic.ui.viewer.StackViewer;
 import magic.ui.viewer.ViewerInfo;
+import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TitleBar;
 import magic.ui.widget.ZoneBackgroundLabel;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
+import javax.swing.JSplitPane;
 import javax.swing.JToggleButton;
 import javax.swing.KeyStroke;
 
@@ -108,7 +110,7 @@ public final class GamePanel extends JPanel {
         rhsPanel.setOpaque(false);
 
         logBookViewer=new LogBookViewer(game.getLogBook());
-        logBookViewer.setVisible(false);
+        logBookViewer.setVisible(true);
 
         cardViewer=new CardViewer("Card",false,true);
         add(cardViewer, "w 100%, h 100%");
@@ -394,7 +396,7 @@ public final class GamePanel extends JPanel {
         gameDuelViewer.setBounds(result.getBoundary(ResolutionProfileType.GameDuelViewer));
         logBookButton.setBounds(result.getBoundary(ResolutionProfileType.GameLogBookButton));
         textViewButton.setBounds(result.getBoundary(ResolutionProfileType.TextViewButton));
-        logBookViewer.setBounds(result.getBoundary(ResolutionProfileType.GameLogBookViewer));
+        //logBookViewer.setBounds(result.getBoundary(ResolutionProfileType.GameLogBookViewer));
 
         if (isTextView()) {
             stackCombatViewer.setBounds(result.getBoundary(ResolutionProfileType.GameStackCombatViewer));
@@ -426,6 +428,17 @@ public final class GamePanel extends JPanel {
     			"insets 0, gap 0, flowx, wrap 2",
     			"[" + r.width +"px!][]"));
 
+    	JPanel splitterPanel = new JPanel(new MigLayout("insets 0, gap 0"));
+    	splitterPanel.add(imageStackViewer, "w 100%, pushy, bottom");
+
+    	JSplitPane splitter = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
+    	splitter.setBorder(FontsAndBorders.BLACK_BORDER_2);
+    	splitter.setTopComponent(logBookViewer);
+    	splitter.setBottomComponent(splitterPanel);
+    	splitter.setOneTouchExpandable(false);
+    	splitter.setContinuousLayout(true);
+    	splitter.setResizeWeight(0.5);
+
         // LHS
         lhsPanel.removeAll();
         lhsPanel.setLayout(
@@ -446,7 +459,8 @@ public final class GamePanel extends JPanel {
         buttonPanel.add(textViewButton, "w " + r.width + "px!, h " + r.height + "px!");
         lhsPanel.add(buttonPanel, "w 100%");
 
-        lhsPanel.add(imageStackViewer, "w 100%, pushy, bottom");
+        lhsPanel.add(splitter, "w 100%, h 100%");
+        //lhsPanel.add(imageStackViewer, "w 100%, pushy, bottom");
 
         r = result.getBoundary(ResolutionProfileType.GameDuelViewer);
         lhsPanel.add(gameDuelViewer, "w 100%, h " + r.height + "px!");
