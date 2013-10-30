@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Rogue
 cost={1}{G}
 pt=2/1
+ability=pay {1}{G}, Sacrifice a Human: Put two +1/+1 counters on target creature.
 timing=main
-requires_groovy_code
