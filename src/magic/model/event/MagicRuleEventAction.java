@@ -560,12 +560,16 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicChangeCountersAction(
-                        event.getPermanent(),
-                        MagicCounterType.PlusOne,
-                        amount,
-                        true
-                    ));
+                    event.processTargetPermanent(game,new MagicPermanentAction() {
+                        public void doAction(final MagicPermanent creature) {
+                            game.doAction(new MagicChangeCountersAction(
+                                creature,
+                                MagicCounterType.PlusOne,
+                                amount,
+                                true
+                            ));
+                        }
+                    });
                 }
             };
         }
