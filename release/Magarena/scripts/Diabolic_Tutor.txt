@@ -1,0 +1,10 @@
+name=Diabolic Tutor
+url=http://magiccards.info/m14/en/95.html
+image=http://magiccards.info/scans/en/m14/95.jpg
+value=4.143
+rarity=U
+type=Sorcery
+cost={2}{B}{B}
+timing=main
+requires_groovy_code=Demonic_Tutor
+
