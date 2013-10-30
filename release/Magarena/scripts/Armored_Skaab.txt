@@ -7,5 +7,5 @@ type=Creature
 subtype=Zombie,Warrior
 cost={2}{U}
 pt=1/4
-ability=enters effect PN puts the top four cards of your library into your graveyard.
+ability=enters effect PN puts the top four cards of his or her library into his or her graveyard.
 timing=main
