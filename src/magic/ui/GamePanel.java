@@ -2,7 +2,6 @@ package magic.ui;
 
 import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
-import magic.data.IconImages;
 import magic.model.MagicGame;
 import magic.model.MagicCardList;
 import magic.ui.resolution.ResolutionProfileResult;
@@ -30,17 +29,14 @@ import net.miginfocom.swing.MigLayout;
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import javax.swing.JSplitPane;
-import javax.swing.JToggleButton;
 import javax.swing.KeyStroke;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
-import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
 
@@ -65,8 +61,6 @@ public final class GamePanel extends JPanel {
     private final CardViewer cardViewer;
     private final GameDuelViewer gameDuelViewer;
     private final LogBookViewer logBookViewer;
-    private final JToggleButton logBookButton;
-    private final JToggleButton textViewButton;
     private final StackCombatViewer stackCombatViewer;
     private final HandGraveyardExileViewer handGraveyardViewer;
     private final BattlefieldViewer playerPermanentViewer;
@@ -126,43 +120,6 @@ public final class GamePanel extends JPanel {
         opponentViewer=new PlayerViewer(viewerInfo,controller,true);
         gameDuelViewer=new GameDuelViewer(game,controller);
         controller.setGameViewer(gameDuelViewer.getGameViewer());
-
-        logBookButton=new JToggleButton(theme.getIcon(Theme.ICON_MESSAGE),false);
-        logBookButton.setFocusable(false);
-        logBookButton.setOpaque(false);
-        add(logBookButton);
-        logBookButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(final ActionEvent event) {
-                logBookViewer.setVisible(logBookButton.isSelected());
-            }
-        });
-        logBookButton.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseEntered(final MouseEvent event) {
-                showLogBook(true);
-            }
-            @Override
-            public void mouseExited(final MouseEvent event) {
-                if (!logBookButton.isSelected()) {
-                    showLogBook(false);
-                }
-            }
-        });
-
-        textViewButton=new JToggleButton(IconImages.TEXT,isTextView());
-        textViewButton.setToolTipText("Images / Text");
-        textViewButton.setFocusable(false);
-        textViewButton.setOpaque(false);
-        add(textViewButton);
-        textViewButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(final ActionEvent event) {
-                final boolean selected=textViewButton.isSelected();
-                GeneralConfig.getInstance().setTextView(selected);
-                updateView();
-            }
-        });
 
         createActionMaps();
         createShortcutKeys();
@@ -236,16 +193,6 @@ public final class GamePanel extends JPanel {
             }
         });
 
-        getActionMap().put(LOG_KEY, new AbstractAction() {
-            private static final long serialVersionUID = 1L;
-            @Override
-            public void actionPerformed(final ActionEvent e) {
-                final boolean selected=!logBookButton.isSelected();
-                logBookButton.setSelected(selected);
-                showLogBook(selected);
-            }
-        });
-
         getActionMap().put(PASS_KEY, new AbstractAction() {
             private static final long serialVersionUID = 1L;
             @Override
@@ -274,15 +221,6 @@ public final class GamePanel extends JPanel {
             frame.setTextImageMode(selected);
         }
         */
-    }
-
-    private void showLogBook(final boolean visible) {
-        if (visible) {
-            logBookViewer.update();
-            logBookViewer.setVisible(true);
-        } else {
-            logBookViewer.setVisible(false);
-        }
     }
 
     private static boolean isTextView() {
@@ -394,8 +332,6 @@ public final class GamePanel extends JPanel {
         opponentViewer.setBounds(result.getBoundary(ResolutionProfileType.GameOpponentViewer));
         opponentViewer.setSmall(result.getFlag(ResolutionProfileType.GamePlayerViewerSmall));
         gameDuelViewer.setBounds(result.getBoundary(ResolutionProfileType.GameDuelViewer));
-        logBookButton.setBounds(result.getBoundary(ResolutionProfileType.GameLogBookButton));
-        textViewButton.setBounds(result.getBoundary(ResolutionProfileType.TextViewButton));
         //logBookViewer.setBounds(result.getBoundary(ResolutionProfileType.GameLogBookViewer));
 
         if (isTextView()) {
@@ -450,14 +386,6 @@ public final class GamePanel extends JPanel {
 
         r = result.getBoundary(ResolutionProfileType.GameOpponentViewer);
         lhsPanel.add(opponentViewer, "w 100%, h " + r.height + "px!");
-
-        JPanel buttonPanel = new JPanel(new MigLayout("insets 0, flowx"));
-        buttonPanel.setOpaque(false);
-        r = result.getBoundary(ResolutionProfileType.GameLogBookButton);
-        buttonPanel.add(logBookButton, "w " + r.width + "px!, h " + r.height + "px!");
-        r = result.getBoundary(ResolutionProfileType.TextViewButton);
-        buttonPanel.add(textViewButton, "w " + r.width + "px!, h " + r.height + "px!");
-        lhsPanel.add(buttonPanel, "w 100%");
 
         lhsPanel.add(splitter, "w 100%, h 100%");
         //lhsPanel.add(imageStackViewer, "w 100%, pushy, bottom");
