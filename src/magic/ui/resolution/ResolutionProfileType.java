@@ -1,6 +1,8 @@
 package magic.ui.resolution;
 
 public enum ResolutionProfileType {
+	GameLHS,
+
     DuelPlayersViewer,
     DuelDeckViewers,
     DuelDeckStatisticsViewer,
