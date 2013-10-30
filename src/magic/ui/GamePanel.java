@@ -2,6 +2,7 @@ package magic.ui;
 
 import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
+import magic.data.IconImages;
 import magic.model.MagicGame;
 import magic.model.MagicCardList;
 import magic.ui.resolution.ResolutionProfileResult;
@@ -29,7 +30,6 @@ import net.miginfocom.swing.MigLayout;
 import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
-import javax.swing.JSplitPane;
 import javax.swing.JToggleButton;
 import javax.swing.KeyStroke;
 
@@ -67,7 +67,7 @@ public final class GamePanel extends JPanel {
     private final GameDuelViewer gameDuelViewer;
     private final LogBookViewer logBookViewer;
     private final JToggleButton logBookButton;
-    private JToggleButton textViewButton;
+    private final JToggleButton textViewButton;
     private final StackCombatViewer stackCombatViewer;
     private final HandGraveyardExileViewer handGraveyardViewer;
     private final BattlefieldViewer playerPermanentViewer;
@@ -81,7 +81,6 @@ public final class GamePanel extends JPanel {
     private final ImageViewer imageViewer;
 
     private final JPanel lhsPanel, rhsPanel;
-    private JSplitPane splitter;
 
     public GamePanel(
             final MagicFrame frame,
@@ -118,7 +117,7 @@ public final class GamePanel extends JPanel {
         logBookViewer.setVisible(false);
 
         cardViewer=new CardViewer("Card",false,true);
-        //rhsPanel.add(cardViewer, "w 100%, h 100%");
+        add(cardViewer, "w 100%, h 100%");
         cardViewer.setVisible(false);
         controller.setCardViewer(cardViewer);
 
@@ -154,6 +153,21 @@ public final class GamePanel extends JPanel {
                 }
             }
         });
+
+        textViewButton=new JToggleButton(IconImages.TEXT,isTextView());
+        textViewButton.setToolTipText("Images / Text");
+        textViewButton.setFocusable(false);
+        textViewButton.setOpaque(false);
+        add(textViewButton);
+        textViewButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(final ActionEvent event) {
+                final boolean selected=textViewButton.isSelected();
+                GeneralConfig.getInstance().setTextView(selected);
+                updateView();
+            }
+        });
+
         createActionMaps();
         createShortcutKeys();
 
@@ -383,16 +397,13 @@ public final class GamePanel extends JPanel {
 
         backgroundLabel.setZones(result);
 
-        //lhsPanel.setBounds(result.getBoundary(ResolutionProfileType.GameLHS));
-        //lhsPanel.setPreferredSize(new Dimension(lhsPanel.getBounds().width, lhsPanel.getBounds().height));
-
         playerViewer.setBounds(result.getBoundary(ResolutionProfileType.GamePlayerViewer));
         playerViewer.setSmall(result.getFlag(ResolutionProfileType.GamePlayerViewerSmall));
         opponentViewer.setBounds(result.getBoundary(ResolutionProfileType.GameOpponentViewer));
-        opponentViewer.setSmall(true); //result.getFlag(ResolutionProfileType.GamePlayerViewerSmall));
+        opponentViewer.setSmall(result.getFlag(ResolutionProfileType.GamePlayerViewerSmall));
         gameDuelViewer.setBounds(result.getBoundary(ResolutionProfileType.GameDuelViewer));
         logBookButton.setBounds(result.getBoundary(ResolutionProfileType.GameLogBookButton));
-        //textViewButton.setBounds(result.getBoundary(ResolutionProfileType.TextViewButton));
+        textViewButton.setBounds(result.getBoundary(ResolutionProfileType.TextViewButton));
         logBookViewer.setBounds(result.getBoundary(ResolutionProfileType.GameLogBookViewer));
 
         if (isTextView()) {
@@ -427,14 +438,6 @@ public final class GamePanel extends JPanel {
     			"insets 0, gap 0, flowx, wrap 2",
     			"[" + r.width +"px!][]"));
 
-//        splitter = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
-//        splitter.setBorder(FontsAndBorders.BLACK_BORDER_2);
-//        splitter.setTopComponent(logBookViewer);
-//        splitter.setBottomComponent(imageStackViewer);
-//        splitter.setOneTouchExpandable(true);
-//        splitter.setContinuousLayout(true);
-//        splitter.setResizeWeight(0.5);
-
         // LHS
         lhsPanel.removeAll();
         lhsPanel.setLayout(
@@ -445,23 +448,32 @@ public final class GamePanel extends JPanel {
         				.append("").toString()));
 
         r = result.getBoundary(ResolutionProfileType.GameOpponentViewer);
-        lhsPanel.add(opponentViewer, "w 10:100%, h " + r.height + "px!");
+        lhsPanel.add(opponentViewer, "w 100%, h " + r.height + "px!");
+
+        JPanel buttonPanel = new JPanel(new MigLayout("insets 0, flowx"));
+        buttonPanel.setOpaque(false);
         r = result.getBoundary(ResolutionProfileType.GameLogBookButton);
-        lhsPanel.add(logBookButton, "w " + r.width + "px!, h " + r.height + "px!");
+        buttonPanel.add(logBookButton, "w " + r.width + "px!, h " + r.height + "px!");
+        r = result.getBoundary(ResolutionProfileType.TextViewButton);
+        buttonPanel.add(textViewButton, "w " + r.width + "px!, h " + r.height + "px!");
+        lhsPanel.add(buttonPanel, "w 100%");
+
         r = result.getBoundary(ResolutionProfileType.GameImageStackViewer);
-        lhsPanel.add(imageStackViewer, "w " + r.width + "px!, h " + r.height + "px!");
-        //lhsPanel.add(splitter, "w 10:100%, h 100%");
+        lhsPanel.add(imageStackViewer, "w 100%, pushy, bottom");
+
         r = result.getBoundary(ResolutionProfileType.GameDuelViewer);
-        lhsPanel.add(gameDuelViewer, "w 10:100%, h " + r.height + "px!");
+        lhsPanel.add(gameDuelViewer, "w 100%, h " + r.height + "px!");
+
         r = result.getBoundary(ResolutionProfileType.GamePlayerViewer);
-        lhsPanel.add(playerViewer, "w 10:100%, h " + r.height + "px!");
-        add(lhsPanel, "w 100%, h 100%");//, "w 300px!, h 600px!");
+        lhsPanel.add(playerViewer, "w 100%, h " + r.height + "px!");
+
+        add(lhsPanel, "w 100%, h 100%");
 
         // RHS
         add(rhsPanel, "w 100%, h 100%");
 
-        lhsPanel.validate();
-        lhsPanel.repaint();
+//        lhsPanel.validate();
+//        lhsPanel.repaint();
 
     }
 
