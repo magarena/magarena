@@ -28,6 +28,19 @@ public abstract class MagicAtEndOfTurnTrigger extends MagicTrigger<MagicPlayer> 
             }
         };
     }
+    
+    public static final MagicAtEndOfTurnTrigger createYour(final MagicSourceEvent sourceEvent) {
+        return new MagicAtEndOfTurnTrigger() {
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+                return sourceEvent.getEvent(permanent);
+            }
+            @Override
+            public boolean accept(final MagicPermanent permanent, final MagicPlayer eotPlayer) {
+                return permanent.isController(eotPlayer);
+            }
+        };
+    }
 
     public static final MagicAtEndOfTurnTrigger Sacrifice = new MagicAtEndOfTurnTrigger() {
         @Override

@@ -644,6 +644,13 @@ public enum MagicAbility {
             ));
         }
     },
+    YourEndStepEffect("your end step effect", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            card.add(MagicAtEndOfTurnTrigger.createYour(
+                MagicRuleEventAction.create(arg)
+            ));
+        }
+    },
     EntersKickedEffect("enters kicked effect", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicWhenComesIntoPlayTrigger.createKicked(
