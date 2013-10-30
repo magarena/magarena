@@ -315,13 +315,6 @@ public enum MagicAbility {
             ));
         }
     },
-    AttacksEffectMay("attacks effect PN may", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicWhenSelfAttacksTrigger.create(
-                MagicRuleEventAction.createMay(arg)
-            ));
-        }
-    },
     AllyGrow("ally grow",20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
@@ -338,13 +331,6 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicLandfallTrigger.create(
                 MagicRuleEventAction.create(arg)
-            ));
-        }
-    },
-    LandfallMayEffect("landfall effect PN may",0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicLandfallTrigger.create(
-                MagicRuleEventAction.createMay(arg)
             ));
         }
     },
@@ -651,13 +637,6 @@ public enum MagicAbility {
             ));
         }
     },
-    EntersMayEffect("enters effect PN may", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicWhenComesIntoPlayTrigger.create(
-                MagicRuleEventAction.createMay(arg)
-            ));
-        }
-    },
     EntersKickedEffect("enters kicked effect", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicWhenComesIntoPlayTrigger.createKicked(
@@ -672,24 +651,10 @@ public enum MagicAbility {
             ));
         }
     },
-    DiesMayEffect("dies effect PN may", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicWhenDiesTrigger.create(
-                MagicRuleEventAction.createMay(arg)
-            ));
-        }
-    },
     LeavesEffect("leaves effect", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicWhenSelfLeavesPlayTrigger.create(
                 MagicRuleEventAction.create(arg)
-            ));
-        }
-    },
-    LeavesMayEffect("leaves effect PN may", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicWhenSelfLeavesPlayTrigger.create(
-                MagicRuleEventAction.createMay(arg)
             ));
         }
     },

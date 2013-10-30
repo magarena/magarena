@@ -911,59 +911,51 @@ public enum MagicRuleEventAction {
     }
 
     public static MagicSourceEvent create(final String rule) {
-        final String effect = rule;
+        final String effect = rule.replaceFirst("^PN may ", "").replaceFirst("^have ", "");
         final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
         final MagicEventAction action  = ruleAction.getAction(effect);
         final MagicTargetPicker<?> picker = ruleAction.getPicker(effect);
         final MagicChoice choice = ruleAction.getChoice(effect);
 
-        return new MagicSourceEvent() {
-            @Override
-            public MagicEvent getEvent(final MagicSource source) {
-                return new MagicEvent(
-                    source,
-                    choice,
-                    picker,
-                    action,
-                    rule + "$"
-                );
-            }
-            @Override
-            public MagicRuleEventAction getRule() {
-                return ruleAction;
-            }
-        };
-    }
-    
-    public static MagicSourceEvent createMay(final String rule) {
-        final String effect = rule.replaceFirst("^have ","");
-        final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
-        final MagicEventAction action  = ruleAction.getAction(effect);
-        final MagicTargetPicker<?> picker = ruleAction.getPicker(effect);
-        final MagicChoice choice = ruleAction.getChoice(effect);
-
-        return new MagicSourceEvent() {
-            @Override
-            public MagicEvent getEvent(final MagicSource source) {
-                return new MagicEvent(
-                    source,
-                    new MagicMayChoice(choice),
-                    picker,
-                    new MagicEventAction() {
-                        @Override
-                        public void executeEvent(final MagicGame game, final MagicEvent event) {
-                            if (event.isYes()) {
-                                action.executeEvent(game, event);
+        return rule.startsWith("PN may ") ?
+            new MagicSourceEvent() {
+                @Override
+                public MagicEvent getEvent(final MagicSource source) {
+                    return new MagicEvent(
+                        source,
+                        new MagicMayChoice(choice),
+                        picker,
+                        new MagicEventAction() {
+                            @Override
+                            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                                if (event.isYes()) {
+                                    action.executeEvent(game, event);
+                                }
                             }
-                        }
-                    },
-                    "PN may$ " + rule + "$"
-                );
-            }
-            @Override
-            public MagicRuleEventAction getRule() {
-                return ruleAction;
-            }
-        };
+                        },
+                        "PN may$ " + rule + "$"
+                    );
+                }
+                @Override
+                public MagicRuleEventAction getRule() {
+                    return ruleAction;
+                }
+            }:
+            new MagicSourceEvent() {
+                @Override
+                public MagicEvent getEvent(final MagicSource source) {
+                    return new MagicEvent(
+                        source,
+                        choice,
+                        picker,
+                        action,
+                        rule + "$"
+                    );
+                }
+                @Override
+                public MagicRuleEventAction getRule() {
+                    return ruleAction;
+                }
+            };
     }
 }
