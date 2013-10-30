@@ -1,0 +1,12 @@
+name=Spellbinder
+url=http://magiccards.info/ds/en/143.html
+image=http://magiccards.info/scans/en/ds/143.jpg
+value=3.207
+rarity=R
+type=Artifact
+subtype=Equipment
+cost={3}
+equip={4}
+timing=artifact
+requires_groovy_code
+
