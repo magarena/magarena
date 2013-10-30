@@ -29,11 +29,16 @@ import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JRadioButtonMenuItem;
+import javax.swing.KeyStroke;
+
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.Font;
+import java.awt.Frame;
+import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.File;
@@ -43,6 +48,9 @@ import java.util.LinkedList;
 public class MagicFrame extends JFrame implements ActionListener {
 
     private static final long serialVersionUID = 1L;
+
+    private boolean isFullScreen = false;
+    private boolean ignoreWindowDeactivate = false;
 
     private static final Dimension MIN_SIZE = new Dimension(GeneralConfig.DEFAULT_WIDTH, GeneralConfig.DEFAULT_HEIGHT);
     private static final String NAME = "Magarena";
@@ -107,16 +115,8 @@ public class MagicFrame extends JFrame implements ActionListener {
         config.load();
 
         this.setTitle(NAME);
-        this.setSize(config.getWidth(),config.getHeight());
         this.setIconImage(IconImages.ARENA.getImage());
-        if (config.getLeft()!=-1) {
-            this.setLocation(config.getLeft(),config.getTop());
-        } else {
-            this.setLocationRelativeTo(null);
-        }
-        if (config.isMaximized()) {
-            this.setExtendedState(JFrame.MAXIMIZED_BOTH);
-        }
+        setSizeAndPosition();
 
         setMinimumSize(MIN_SIZE);
 
@@ -138,6 +138,16 @@ public class MagicFrame extends JFrame implements ActionListener {
         createMenuBar();
         setInitialContent();
         setVisible(true);
+
+        addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowDeactivated(WindowEvent e) {
+                if (isFullScreen && e.getOppositeWindow() == null && !ignoreWindowDeactivate) {
+                    setState(Frame.ICONIFIED);
+                }
+                ignoreWindowDeactivate = false;
+            }
+        });
 
         // Set up our application to respond to the Mac OS X application menu
         registerForMacOSXEvents();
@@ -315,6 +325,20 @@ public class MagicFrame extends JFrame implements ActionListener {
 
         // view menu
         final JMenu viewMenu = new JMenu("View");
+        viewMenu.setMnemonic(KeyEvent.VK_V);
+
+        JMenuItem fullScreenMenuItem = new JMenuItem("Full Screen");
+        fullScreenMenuItem.setAccelerator(KeyStroke.getKeyStroke("F11"));
+        fullScreenMenuItem.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent arg0) {
+                doFullScreenMode(!isFullScreen);
+                isFullScreen = !isFullScreen;
+                ignoreWindowDeactivate = true;
+            }
+        });
+        viewMenu.add(fullScreenMenuItem);
+        viewMenu.addSeparator();
 
         final ButtonGroup modeGroup = new ButtonGroup();
 
@@ -792,4 +816,35 @@ public class MagicFrame extends JFrame implements ActionListener {
         System.exit(0);
         return true;
     }
+
+    private void doFullScreenMode(boolean showFullScreen) {
+
+        this.dispose();
+
+        if (showFullScreen) {
+            this.setExtendedState(JFrame.MAXIMIZED_BOTH);
+            this.setUndecorated(true);
+            Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+            this.setSize(screenSize.width, screenSize.height);
+        } else {
+            this.setExtendedState(JFrame.NORMAL);
+            this.setUndecorated(false);
+            setSizeAndPosition();
+        }
+
+        setVisible(true);
+    }
+
+    private void setSizeAndPosition() {
+        this.setSize(config.getWidth(),config.getHeight());
+        if (config.getLeft()!=-1) {
+            this.setLocation(config.getLeft(),config.getTop());
+        } else {
+            this.setLocationRelativeTo(null);
+        }
+        if (config.isMaximized()) {
+            this.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        }
+    }
+
 }
