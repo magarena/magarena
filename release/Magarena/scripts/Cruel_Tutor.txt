@@ -1,0 +1,9 @@
+name=Cruel Tutor
+url=http://magiccards.info/po/en/9.html
+image=http://magiccards.info/scans/en/po/9.jpg
+value=3.056
+rarity=R
+type=Sorcery
+cost={2}{B}
+timing=main
+requires_groovy_code=Vampiric_Tutor
