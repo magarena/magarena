@@ -28,6 +28,19 @@ public abstract class MagicAtUpkeepTrigger extends MagicTrigger<MagicPlayer> {
             }
         };
     }
+    
+    public static final MagicAtUpkeepTrigger createYour(final MagicSourceEvent sourceEvent) {
+        return new MagicAtUpkeepTrigger() {
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
+                return sourceEvent.getEvent(permanent);
+            }
+            @Override
+            public boolean accept(final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
+                return permanent.isController(upkeepPlayer);
+            }
+        };
+    }
 
     public static final MagicAtUpkeepTrigger MayCharge = new MagicAtUpkeepTrigger() {
         @Override

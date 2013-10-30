@@ -828,6 +828,13 @@ public enum MagicAbility {
             ));
         }
     },
+    YourUpkeepEffect("your upkeep effect", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            card.add(MagicAtUpkeepTrigger.createYour(
+                MagicRuleEventAction.create(arg)
+            ));
+        }
+    },
     BattalionEffect("battalion effect", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicBattalionTrigger.create(
