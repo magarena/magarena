@@ -28,7 +28,6 @@ public class ViewerScrollPane extends JScrollPane {
     public synchronized JPanel getContent() {
         if (contentPanel==null) {
             contentPanel=new JPanel();
-            contentPanel.setBorder(FontsAndBorders.BLACK_BORDER_2);
             contentPanel.setLayout(new BoxLayout(contentPanel,BoxLayout.Y_AXIS));
             contentPanel.setBackground(ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_VIEWER_BACKGROUND));
         }

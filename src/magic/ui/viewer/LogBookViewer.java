@@ -19,7 +19,7 @@ public class LogBookViewer extends JPanel {
     private static final long serialVersionUID = 1L;
 
     private static final Border SEPARATOR_BORDER=BorderFactory.createCompoundBorder(
-        BorderFactory.createMatteBorder(1,0,0,0,Color.BLACK),
+        BorderFactory.createMatteBorder(0,0,1,0,Color.BLACK),
         FontsAndBorders.EMPTY_BORDER
     );
 
@@ -33,27 +33,29 @@ public class LogBookViewer extends JPanel {
 
         this.logBook=logBook;
 
-        setBorder(FontsAndBorders.UP_BORDER);
         setLayout(new BorderLayout());
-        setOpaque(true);
 
-        add(new TitleBar("Messages"),BorderLayout.NORTH);
+        TitleBar tb = new TitleBar("Log");
+        tb.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.BLACK));
+        add(tb, BorderLayout.NORTH);
 
         final JPanel centerPanel=new JPanel();
+        centerPanel.setOpaque(false);
         centerPanel.setLayout(new BorderLayout());
         add(centerPanel,BorderLayout.CENTER);
 
         messagePanel=new JPanel();
+        messagePanel.setOpaque(false);
         messagePanel.setLayout(new BoxLayout(messagePanel,BoxLayout.Y_AXIS));
         centerPanel.add(messagePanel,BorderLayout.NORTH);
 
         scrollPane=new JScrollPane();
         scrollPane.getViewport().setView(centerPanel);
+        scrollPane.getViewport().setOpaque(false);
         scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
         scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
         scrollPane.getVerticalScrollBar().setUnitIncrement(INCREMENT);
         scrollPane.getVerticalScrollBar().setBlockIncrement(INCREMENT);
-        scrollPane.setBorder(FontsAndBorders.BLACK_BORDER_2);
         add(scrollPane,BorderLayout.CENTER);
     }
 
@@ -65,6 +67,7 @@ public class LogBookViewer extends JPanel {
     public void addMagicMessage(MagicMessage magicMessage) {
         final int maxWidth = getWidth() - 175;
         final MessagePanel panel = new MessagePanel(magicMessage, maxWidth);
+        panel.setOpaque(false);
         panel.setBorder(SEPARATOR_BORDER);
         messagePanel.add(panel, 0);
         scrollPane.getVerticalScrollBar().setValue(0);

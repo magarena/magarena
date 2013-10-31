@@ -1,14 +1,18 @@
 package magic.ui.viewer;
 
 import magic.ui.GameController;
+import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.PanelButton;
 import magic.ui.widget.TextLabel;
+import magic.ui.widget.TitleBar;
 import magic.ui.widget.ViewerScrollPane;
 
+import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Rectangle;
@@ -37,6 +41,12 @@ public class StackViewer extends JPanel implements ChoiceViewer {
         controller.registerChoiceViewer(this);
 
         setLayout(new BorderLayout());
+
+        final Theme theme = ThemeFactory.getInstance().getCurrentTheme();
+        final TitleBar stackTitleBar = new TitleBar("Stack");
+        stackTitleBar.setBorder(BorderFactory.createMatteBorder(1, 0, 0, 0, Color.BLACK));
+        stackTitleBar.setIcon(theme.getIcon(Theme.ICON_SMALL_STACK));
+        add(stackTitleBar, BorderLayout.SOUTH);
 
         viewerPane=new ViewerScrollPane();
         add(viewerPane,BorderLayout.CENTER);
