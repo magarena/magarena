@@ -48,12 +48,9 @@ public class DefaultResolutionProfile implements ResolutionProfile {
         //
         int x = spacing;
         int y = spacing;
-        int playerHeight = PLAYER_VIEWER_HEIGHT;
+        int playerHeight = PLAYER_VIEWER_HEIGHT_SMALL;
         int cardHeight = size.height - GAME_VIEWER_HEIGHT - (spacing * 4) - BUTTON_Y_SPACING;
-        final boolean small = (cardHeight - playerHeight * 2) < CARD_VIEWER_HEIGHT;
-        if (small) {
-            playerHeight = PLAYER_VIEWER_HEIGHT_SMALL;
-        }
+        final boolean small = true;
         cardHeight -= playerHeight * 2;
 
         result.setFlag(ResolutionProfileType.GamePlayerViewerSmall, small);
