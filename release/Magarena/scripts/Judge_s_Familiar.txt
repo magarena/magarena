@@ -1,0 +1,11 @@
+name=Judge's Familiar
+url=http://magiccards.info/rtr/en/218.html
+image=http://magiccards.info/scans/en/rtr/218.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Bird
+cost={W/U}
+pt=1/1
+timing=main
+ability=flying;pay {S}: Counter target instant or sorcery spell unless its controller pays {1}.
