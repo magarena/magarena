@@ -6,6 +6,7 @@ import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.MagicCopyable;
 import magic.model.MagicCopyMap;
@@ -56,6 +57,34 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
             EVENT_ACTION,
             "Play activated ability of SN."
         );
+    }
+    
+    @Override
+    public final boolean canPlay(final MagicGame game, final MagicPlayer player, final MagicPermanent source, final boolean useHints) {
+        final boolean superCanPlay = super.canPlay(game, player, source, useHints);
+       
+        // More complex check that first executes events without choice, then check conditions of the others
+        if (superCanPlay && source.producesMana()) {
+            game.record();
+            for (final MagicEvent event : getCostEvent(source)) {
+                if (event.hasChoice() == false) {
+                    game.executeEvent(event, MagicEvent.NO_CHOICE_RESULTS);
+                }
+            }
+            for (final MagicEvent event : getCostEvent(source)) {
+                if (event.hasChoice() == true) {
+                    for (final MagicCondition condition : event.getConditions()) {
+                        if (!condition.accept(source)) {
+                            game.restore();
+                            return false;
+                        }
+                    }
+                }
+            }
+            game.restore();
+        }
+
+        return superCanPlay;
     }
 
     @Override
