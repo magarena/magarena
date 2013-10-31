@@ -1,0 +1,11 @@
+name=Dwarven Miner
+url=http://magiccards.info/mr/en/169.html
+image=http://magiccards.info/scans/en/mr/169.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dwarf
+cost={1}{R}
+pt=1/2
+timing=main
+ability=pay {2}{R},{T}: Destroy target nonbasic land.
