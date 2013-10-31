@@ -62,11 +62,7 @@ public abstract class MagicActivation<T extends MagicSource> implements MagicEve
         player.getOpponent().getActivationPriority().clear();
     }
 
-    public final boolean canPlay(
-            final MagicGame game,
-            final MagicPlayer player,
-            final T source,
-            final boolean useHints) {
+    public boolean canPlay(final MagicGame game, final MagicPlayer player, final T source, final boolean useHints) {
 
         if (useHints && !checkActivationPriority(source)) {
             return false;
