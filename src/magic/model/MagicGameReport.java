@@ -6,6 +6,7 @@ import magic.model.action.MagicAction;
 import magic.model.stack.MagicItemOnStack;
 import magic.ui.VersionPanel;
 
+import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -13,11 +14,31 @@ import java.io.StringWriter;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import javax.swing.JOptionPane;
+
 public class MagicGameReport implements Thread.UncaughtExceptionHandler {
 
     public void uncaughtException(final Thread th, final Throwable ex) {
         MagicGameReport.buildReport(MagicGame.getInstance(), th, ex);
+        doNotifyUser();
         System.exit(1);
+    }
+
+    private void doNotifyUser() {
+        try {
+            JOptionPane.showMessageDialog(
+                    null,
+                    "An unexpected error has occurred and Magarena will need to close.\n\n" +
+                    "Please consider posting a crash report to the Magarena forum so that the\n" +
+                    "development team can investigate. Full instructions on how to submit a\n" +
+                    "crash report can be found in HELP.txt in the main game directory.\n\n" +
+                    "Magarena will now try to open this directory in your default file manager.",
+                    "Fatal Error",
+                    JOptionPane.ERROR_MESSAGE);
+            Desktop.getDesktop().open(new File(MagicMain.getGamePath()));
+        } catch (Exception e) {
+            // do nothing - crash report has already been generated and app is about to exit anyway.
+        }
     }
 
     private static void buildCard(final MagicGame game,final String place,final MagicCard card,final StringBuilder report) {
