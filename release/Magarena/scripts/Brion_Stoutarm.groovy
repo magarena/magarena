@@ -15,7 +15,7 @@
                 "a creature other than " + source + " to sacrifice"
             );
             return [
-                new MagicPayManaCostTapEvent(source,"{R}"),
+                new MagicTapEvent(source), new MagicPayManaCostEvent(source, "{R}"),
                 new MagicSacrificePermanentEvent(source,targetChoice)
             ];
         }

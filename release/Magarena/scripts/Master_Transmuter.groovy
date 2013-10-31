@@ -7,7 +7,7 @@
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-                new MagicPayManaCostTapEvent(source, "{U}"),
+                new MagicTapEvent(source), new MagicPayManaCostEvent(source,  "{U}"),
                 new MagicBounceChosenPermanentEvent(source, MagicTargetChoice.ARTIFACT_YOU_CONTROL)
             ];
         }

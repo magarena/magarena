@@ -18,7 +18,7 @@ def TARGET_ATTACKING_CREATURE_YOU_CONTROL = new MagicTargetChoice(
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-                new MagicPayManaCostTapEvent(source,"{G}")
+                new MagicTapEvent(source), new MagicPayManaCostEvent(source, "{G}")
             ];
         }
 

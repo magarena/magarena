@@ -14,7 +14,7 @@ def action = {
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
-            return [new MagicPayManaCostTapEvent(source,"{1}{U}")];
+            return [new MagicTapEvent(source), new MagicPayManaCostEvent(source, "{1}{U}")];
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

@@ -15,7 +15,7 @@ def OPP_FOUR_LANDS_CONDITION=new MagicCondition() {
             return [
                 new MagicTapEvent(source),
                 new MagicSacrificeEvent(source),
-                new MagicPayManaCostTapEvent(source,"{1}")
+                new MagicTapEvent(source), new MagicPayManaCostEvent(source, "{1}")
             ];
         }
         @Override

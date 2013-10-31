@@ -13,7 +13,7 @@ def CREATURE_POWER_5_OR_MORE = new MagicPermanentFilterImpl() {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-                new MagicPayManaCostTapEvent(source, "{1}{W}")
+                new MagicTapEvent(source), new MagicPayManaCostEvent(source,  "{1}{W}")
             ];
         }
 

@@ -48,7 +48,7 @@ def INSTANT_LEQ_CMC_2_FROM_HAND = new MagicCardFilterImpl() {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-                new MagicPayManaCostTapEvent(source, "{2}")
+                new MagicTapEvent(source), new MagicPayManaCostEvent(source,  "{2}")
             ];
         }
 
