@@ -4,6 +4,6 @@ image=http://magiccards.info/scans/en/dka/156.jpg
 value=3.320
 rarity=R
 type=Land
-ability=tap add mana {1}
+ability=tap add mana {1};\
+        pay {2}{B}{G}, {T}, Sacrifice a creature: PN draws a card.
 timing=land
-requires_groovy_code
