@@ -1,9 +1,5 @@
 [
     new MagicPermanentActivation(
-        [
-            //add ONE for the card itself
-            MagicConditionFactory.ManaCost("{3}{R}{W}"),
-        ],
         new MagicActivationHints(MagicTiming.Pump),
         "Pump"
     ) {

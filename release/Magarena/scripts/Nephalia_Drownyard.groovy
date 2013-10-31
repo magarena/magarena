@@ -1,9 +1,5 @@
 [
     new MagicPermanentActivation(
-        [
-            //add ONE for the card itself
-            MagicConditionFactory.ManaCost("{2}{U}{B}"),
-        ],
         new MagicActivationHints(MagicTiming.Pump),
         "Mill"
     ) {

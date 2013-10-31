@@ -1,9 +1,5 @@
 [
     new MagicPermanentActivation(
-        [
-            //Add one for the card itself
-            MagicConditionFactory.ManaCost("{2}")
-        ],
         new MagicActivationHints(MagicTiming.Draw),
         "Draw"
     ) {

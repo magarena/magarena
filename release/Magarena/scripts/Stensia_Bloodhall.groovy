@@ -1,9 +1,5 @@
 [
     new MagicPermanentActivation(
-        [
-            //add ONE for the card itself as it cannot pay for itself
-            MagicConditionFactory.ManaCost("{4}{B}{R}"),
-        ],
         new MagicActivationHints(MagicTiming.Removal),
         "Damage"
     ) {

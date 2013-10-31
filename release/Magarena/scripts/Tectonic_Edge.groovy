@@ -6,11 +6,7 @@ def OPP_FOUR_LANDS_CONDITION=new MagicCondition() {
 
 [
     new MagicPermanentActivation(
-        [
-            //add ONE for the card itself
-            MagicConditionFactory.ManaCost("{2}"),
-            OPP_FOUR_LANDS_CONDITION
-        ],
+        [OPP_FOUR_LANDS_CONDITION],
         new MagicActivationHints(MagicTiming.Removal),
         "Destroy"
     ) {
