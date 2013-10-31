@@ -4,6 +4,6 @@ image=http://magiccards.info/scans/en/chk/280.jpg
 value=4.053
 rarity=R
 type=Legendary,Land
-ability=tap add mana {G}
+ability=tap add mana {G};\
+        pay {G}, {T}: Target legendary creature gets +1/+1 until end of turn.
 timing=land
-requires_groovy_code
