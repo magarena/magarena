@@ -7,6 +7,6 @@ type=Creature
 subtype=Spirit
 cost={4}{G}{G}
 pt=3/4
-ability=reach
+ability=reach;\
+        spirit or arcane effect SN gains forestwalk until end of turn.
 timing=main
-requires_groovy_code
