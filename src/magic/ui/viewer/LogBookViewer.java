@@ -23,6 +23,7 @@ public class LogBookViewer extends JPanel {
         FontsAndBorders.EMPTY_BORDER
     );
 
+    private static final int MAX_LINES=200;
     private static final int INCREMENT=108;
 
     private final MagicLogBook logBook;
@@ -60,17 +61,32 @@ public class LogBookViewer extends JPanel {
     }
 
     public MagicLogBook getLogBook() {
-
         return logBook;
     }
 
+    public void update() {
+        messagePanel.removeAll();
+        synchronized (logBook) {
+            int index = logBook.size() - 1;
+            for (int lines = MAX_LINES; lines > 0 && index >= 0; lines--, index--) {
+                messagePanel.add(getNewMessagePanel(logBook.get(index)));
+            }
+        }
+        revalidate();
+        scrollPane.getVerticalScrollBar().setValue(0);
+    }
+
     public void addMagicMessage(MagicMessage magicMessage) {
+        messagePanel.add(getNewMessagePanel(magicMessage), 0);
+        scrollPane.getVerticalScrollBar().setValue(0);
+    }
+
+    private MessagePanel getNewMessagePanel(MagicMessage message) {
         final int maxWidth = getWidth() - 175;
-        final MessagePanel panel = new MessagePanel(magicMessage, maxWidth);
+        final MessagePanel panel = new MessagePanel(message, maxWidth);
         panel.setOpaque(false);
         panel.setBorder(SEPARATOR_BORDER);
-        messagePanel.add(panel, 0);
-        scrollPane.getVerticalScrollBar().setValue(0);
+        return panel;
     }
 
 }

@@ -475,6 +475,7 @@ public class GameController implements ILogBookListener {
         } else {
             game.gotoLastUndoPoint();
         }
+        gamePanel.getLogBookViewer().update();
     }
 
     public void haltGame() {
