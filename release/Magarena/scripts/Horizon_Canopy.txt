@@ -4,6 +4,6 @@ image=http://magiccards.info/scans/en/fut/177.jpg
 value=4.305
 rarity=R
 type=Land
+ability=tap pain add mana {G} or {W};\
+        pay {1}, {T}, {S}: PN draws a card.
 timing=land
-ability=tap pain add mana {G} or {W}
-requires_groovy_code
