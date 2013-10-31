@@ -4,6 +4,6 @@ image=http://magiccards.info/scans/en/isd/245.jpg
 value=3.612
 rarity=R
 type=Land
-ability=tap add mana {1}
+ability=tap add mana {1};\
+        pay {1}{U}{B}, {T}: Target player puts the top three cards of his or her library into his or her graveyard.
 timing=land
-requires_groovy_code
