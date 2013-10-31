@@ -7,6 +7,6 @@ type=Creature
 subtype=Minotaur,Wizard
 cost={3}{U}{R}
 pt=3/4
-ability=gains {1}{U} shroud
+ability=pay {1}{U}: SN gains shroud until end of turn.
 timing=main
 requires_groovy_code

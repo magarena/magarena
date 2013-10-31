@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Wall
 cost={2}
 pt=0/6
-ability=defender;gains {G} reach
+ability=defender;pay {G}: SN gains reach until end of turn.
 timing=main

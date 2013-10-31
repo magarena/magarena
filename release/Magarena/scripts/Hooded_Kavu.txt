@@ -7,5 +7,5 @@ type=Creature
 subtype=Kavu
 cost={2}{R}
 pt=2/2
-ability=gains {B} fear
+ability=pay {B}: SN gains fear until end of turn.
 timing=main

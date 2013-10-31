@@ -7,5 +7,5 @@ type=Creature
 subtype=Frog
 cost={2}{U}
 pt=1/3
-ability=gains {U} flying
+ability=pay {U}: SN gains flying until end of turn.
 timing=main

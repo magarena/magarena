@@ -108,8 +108,6 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
         
         final MagicSourceEvent sourceEvent = MagicRuleEventAction.create(rule);
         final MagicRuleEventAction ruleAction = sourceEvent.getRule();
-        final MagicTiming timing = ruleAction.getTiming(rule);
-        final String name = ruleAction.getName(rule);
 
         assert englishToCostEvents(costs, MagicPermanent.NONE).size() > 0;
 
@@ -126,8 +124,12 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
         ) == false;
 
         return new MagicPermanentActivation(
-            new MagicActivationHints(timing, isCostIndependent && ruleAction.isIndependent()),
-            name
+            ruleAction.getConditions(rule),
+            new MagicActivationHints(
+                ruleAction.getTiming(rule),
+                isCostIndependent && ruleAction.isIndependent()
+            ),
+            ruleAction.getName(rule)
         ) {
             @Override
             public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {

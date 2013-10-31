@@ -7,5 +7,5 @@ type=Creature
 subtype=Goblin
 cost={R}
 pt=1/1
-ability=gains {R} protection from red
+ability=pay {R}: SN gains protection from red until end of turn.
 timing=main

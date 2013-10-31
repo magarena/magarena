@@ -7,5 +7,5 @@ type=Creature
 subtype=Spirit
 cost={3}{G}{G}
 pt=3/3
+ability=spirit or arcane effect Put a +1/+1 counter on target creature.
 timing=main
-requires_groovy_code

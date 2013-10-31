@@ -7,5 +7,5 @@ type=Creature
 subtype=Imp
 cost={3}{B}
 pt=2/2
-ability=flying;gains {1}{R} first strike
+ability=flying;pay {1}{R}: SN gains first strike until end of turn.
 timing=main

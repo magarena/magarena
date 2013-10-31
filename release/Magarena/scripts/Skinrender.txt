@@ -8,5 +8,5 @@ type=Creature
 subtype=Zombie
 cost={2}{B}{B}
 pt=3/3
-timing=fmain
-requires_groovy_code
+ability=enters effect Put three -1/-1 counters on target creature.
+timing=main

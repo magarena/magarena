@@ -7,5 +7,5 @@ type=Creature
 subtype=Snake
 cost={1}{G}
 pt=2/2
-ability=gains {1}{G} deathtouch;gains {1}{G} reach
+ability=pay {1}{G}: SN gains deathtouch until end of turn.;pay {1}{G}: SN gains reach until end of turn.
 timing=main

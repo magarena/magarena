@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Warrior
 cost={1}{G}
 pt=2/2
-ability=gains {R} first strike
+ability=pay {R}: SN gains first strike until end of turn.
 timing=main

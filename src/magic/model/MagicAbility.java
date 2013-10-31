@@ -4,7 +4,6 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
 import magic.model.event.MagicActivationHints;
-import magic.model.event.MagicGainActivation;
 import magic.model.event.MagicLevelUpActivation;
 import magic.model.event.MagicPlayCardEvent;
 import magic.model.event.MagicPlayMulticounterEvent;
@@ -83,6 +82,7 @@ import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 import magic.model.trigger.MagicHeroicTrigger;
 import magic.model.trigger.MagicBattalionTrigger;
 import magic.model.trigger.MagicWhenSelfAttacksTrigger;
+import magic.model.trigger.MagicWhenYouCastSpiritOrArcaneTrigger;
 
 import java.util.EnumSet;
 import java.util.Set;
@@ -386,23 +386,6 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             final List<MagicManaType> manatype = MagicManaType.getList(arg);
             card.add(new MagicSacrificeTapManaActivation(manatype));
-        }
-    },
-    GainAbility("gains",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final int idx = arg.indexOf(' ');
-            final String[] token = {arg.substring(0,idx), arg.substring(idx+1)};
-            final MagicManaCost cost = MagicManaCost.create(token[0]);
-            final MagicAbility ability = MagicAbility.getAbility(token[1]);
-            final MagicTiming timing = (ability == Haste || ability == Vigilance) ?
-                MagicTiming.FirstMain :
-                MagicTiming.Pump;
-            card.add(new MagicGainActivation(
-                cost,
-                ability,
-                new MagicActivationHints(timing,1),
-                token[1]
-            ));
         }
     },
     DamageDiscardCard("damage discard",10) {
@@ -811,6 +794,13 @@ public enum MagicAbility {
     BattalionEffect("battalion effect", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicBattalionTrigger.create(
+                MagicRuleEventAction.create(arg)
+            ));
+        }
+    },
+    SpiritOrArcaneEffect("spirit or arcane effect", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            card.add(MagicWhenYouCastSpiritOrArcaneTrigger.create(
                 MagicRuleEventAction.create(arg)
             ));
         }
