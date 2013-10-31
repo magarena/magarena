@@ -623,6 +623,22 @@ public class MagicGame {
         undoPoints.addLast(markerAction);
     }
 
+    public void record() {
+        if (artificial) {
+            startActions();
+        } else {
+            createUndoPoint();
+        }
+    }
+
+    public void restore() {
+        if (artificial) {
+            undoActions();
+        } else {
+            gotoLastUndoPoint();
+        }
+    }
+
     public void gotoLastUndoPoint() {
         final MagicAction markerAction = undoPoints.removeLast();
         MagicAction action;
