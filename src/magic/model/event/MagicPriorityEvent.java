@@ -51,8 +51,18 @@ public class MagicPriorityEvent extends MagicEvent {
                 // reset payed costs
                 game.resetPayedCost();
 
+                // pay costs without choices first, eg {T}
                 for (final MagicEvent costEvent : sourceActivation.getCostEvent()) {
-                    game.addEvent(costEvent);
+                    if (costEvent.hasChoice() == false) {
+                        game.addEvent(costEvent);
+                    }
+                }
+
+                // then pay costs with choices. eg mana cost
+                for (final MagicEvent costEvent : sourceActivation.getCostEvent()) {
+                    if (costEvent.hasChoice() == true) {
+                        game.addEvent(costEvent);
+                    }
                 }
 
                 game.addEvent(sourceActivation.getEvent());
