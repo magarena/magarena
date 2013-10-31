@@ -71,6 +71,9 @@ public final class GamePanel extends JPanel {
     private final ImageBattlefieldViewer imageOpponentPermanentViewer;
     private final ImageCombatViewer imageCombatViewer;
     private final JPanel lhsPanel, rhsPanel;
+    private final JPanel stackContainer;
+    private final JSplitPane splitter;
+    private final TexturedPanel splitterContainer;
 
     public GamePanel(
             final MagicFrame frame,
@@ -133,6 +136,17 @@ public final class GamePanel extends JPanel {
         imagePlayerPermanentViewer=new ImageBattlefieldViewer(viewerInfo,controller,false);
         imageOpponentPermanentViewer=new ImageBattlefieldViewer(viewerInfo,controller,true);
         imageCombatViewer=new ImageCombatViewer(viewerInfo,controller);
+
+        stackContainer = new JPanel(new MigLayout("insets 0, gap 0"));
+        stackContainer.setOpaque(false);
+        splitter = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
+        splitter.setBorder(FontsAndBorders.BLACK_BORDER);
+        splitter.setOneTouchExpandable(false);
+        splitter.setContinuousLayout(true);
+        splitter.setResizeWeight(0.5);
+        splitter.setOpaque(false);
+        splitterContainer = new TexturedPanel();
+        splitterContainer.setLayout(new MigLayout("insets 0, gap 0"));
 
         updateView();
 
@@ -328,7 +342,6 @@ public final class GamePanel extends JPanel {
         opponentViewer.setBounds(result.getBoundary(ResolutionProfileType.GameOpponentViewer));
         opponentViewer.setSmall(result.getFlag(ResolutionProfileType.GamePlayerViewerSmall));
         gameDuelViewer.setBounds(result.getBoundary(ResolutionProfileType.GameDuelViewer));
-        //logBookViewer.setBounds(result.getBoundary(ResolutionProfileType.GameLogBookViewer));
 
         if (isTextView()) {
             stackCombatViewer.setBounds(result.getBoundary(ResolutionProfileType.GameStackCombatViewer));
@@ -360,46 +373,27 @@ public final class GamePanel extends JPanel {
                 "insets 0, gap 0, flowx, wrap 2",
                 "[" + r.width +"px!][]"));
 
-        JPanel stackContainer = new JPanel(new MigLayout("insets 0, gap 0"));
-        stackContainer.setOpaque(false);
-        stackContainer.add(imageStackViewer, "w 100%, pushy, bottom");
-
-        JSplitPane splitter = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
-        splitter.setBorder(FontsAndBorders.BLACK_BORDER);
-        splitter.setTopComponent(logBookViewer);
-        splitter.setBottomComponent(stackContainer);
-        splitter.setOneTouchExpandable(false);
-        splitter.setContinuousLayout(true);
-        splitter.setResizeWeight(0.5);
-        splitter.setOpaque(false);
-
-        TexturedPanel splitterContainer = new TexturedPanel();
-        splitterContainer.setLayout(new MigLayout("insets 0, gap 0"));
-        splitterContainer.add(splitter, "w 100%, h 100%");
-
-        // LHS
         lhsPanel.removeAll();
         lhsPanel.setLayout(
                 new MigLayout(
                         sb.append("insets ").append(spacing).append(",")	// margins
                         .append("gap 0 ").append(spacing).append(",")		// gapx [gapy]
                         .append("flowy,")
-                        .append("").toString()));
+                        .append("").toString()));                           // debug
 
         r = result.getBoundary(ResolutionProfileType.GameOpponentViewer);
         lhsPanel.add(opponentViewer, "w 100%, h " + r.height + "px!");
-
+        stackContainer.add(imageStackViewer, "w 100%, pushy, bottom");
+        splitter.setTopComponent(logBookViewer);
+        splitter.setBottomComponent(stackContainer);
+        splitterContainer.add(splitter, "w 100%, h 100%");
         lhsPanel.add(splitterContainer, "w 100%, h 100%");
-
         r = result.getBoundary(ResolutionProfileType.GameDuelViewer);
         lhsPanel.add(gameDuelViewer, "w 100%, h " + r.height + "px!");
-
         r = result.getBoundary(ResolutionProfileType.GamePlayerViewer);
         lhsPanel.add(playerViewer, "w 100%, h " + r.height + "px!");
 
         add(lhsPanel, "w 100%, h 100%");
-
-        // RHS
         add(rhsPanel, "w 100%, h 100%");
 
     }
