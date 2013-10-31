@@ -1,0 +1,11 @@
+name=Vampiric Tutor
+url=http://magiccards.infovi/en/22.html
+image=http://magiccards.info/scans/en/vi/22.jpg
+value=4.699
+rarity=R
+type=Instant
+cost={B}
+timing=removal
+requires_groovy_code
+
+

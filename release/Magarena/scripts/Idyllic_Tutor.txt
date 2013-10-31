@@ -1,0 +1,9 @@
+name=Idyllic Tutor
+url=http://magiccards.info/mt/en/12.html
+image=http://magiccards.info/scans/en/mt/12.jpg
+value=3.588
+rarity=R
+type=Sorcery
+cost={2}{W}
+timing=main
+requires_groovy_code
