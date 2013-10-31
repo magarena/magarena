@@ -82,6 +82,7 @@ import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 import magic.model.trigger.MagicHeroicTrigger;
 import magic.model.trigger.MagicBattalionTrigger;
 import magic.model.trigger.MagicWhenSelfAttacksTrigger;
+import magic.model.trigger.MagicWhenYouCastSpiritOrArcaneTrigger;
 
 import java.util.EnumSet;
 import java.util.Set;
@@ -793,6 +794,13 @@ public enum MagicAbility {
     BattalionEffect("battalion effect", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicBattalionTrigger.create(
+                MagicRuleEventAction.create(arg)
+            ));
+        }
+    },
+    SpiritOrArcaneEffect("spirit or arcane effect", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            card.add(MagicWhenYouCastSpiritOrArcaneTrigger.create(
                 MagicRuleEventAction.create(arg)
             ));
         }

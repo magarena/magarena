@@ -3,6 +3,9 @@ package magic.model.trigger;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.MagicPermanent;
 import magic.model.MagicSubType;
+import magic.model.MagicGame;
+import magic.model.event.MagicEvent;
+import magic.model.event.MagicSourceEvent;
 
 public abstract class MagicWhenYouCastSpiritOrArcaneTrigger extends MagicWhenOtherSpellIsCastTrigger {
     public MagicWhenYouCastSpiritOrArcaneTrigger(final int priority) {
@@ -16,5 +19,14 @@ public abstract class MagicWhenYouCastSpiritOrArcaneTrigger extends MagicWhenOth
         return (permanent.isFriend(spell) &&
                 (spell.getCardDefinition().hasSubType(MagicSubType.Spirit) ||
                  spell.getCardDefinition().hasSubType(MagicSubType.Arcane)));
+    }
+    
+    public static final MagicWhenYouCastSpiritOrArcaneTrigger create(final MagicSourceEvent sourceEvent) {
+        return new MagicWhenYouCastSpiritOrArcaneTrigger() {
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicCardOnStack spell) {
+                return sourceEvent.getEvent(permanent);
+            }
+        };
     }
 }
