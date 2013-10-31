@@ -53,32 +53,5 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT,AB,ST));
         }
-    },
-    new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Pump,true),
-        "Pump"
-    ) {
-        @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
-            return [new MagicTapEvent(source), new MagicPayManaCostEvent(source, "{1}")];
-        }
-        @Override
-        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            return new MagicEvent(
-                source,
-                MagicTargetChoice.POS_TARGET_BLINKMOTH_CREATURE,
-                MagicPumpTargetPicker.create(),
-                this,
-                "Target Blinkmoth creature\$ gets +1/+1 until end of turn."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent creature) {
-                    game.doAction(new MagicChangeTurnPTAction(creature,1,1));
-                }
-            });
-        }
     }
 ]

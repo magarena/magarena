@@ -4,7 +4,8 @@ image=http://magiccards.info/scans/en/ds/163.jpg
 value=4.038
 rarity=R
 type=Land
-ability=tap add mana {1}
+ability=tap add mana {1};\
+        pay {1}, {T}: Target Blinkmoth creature gets +1/+1 until end of turn.
 timing=land
 mana_or_combat
 requires_groovy_code
