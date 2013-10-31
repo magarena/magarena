@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Golem
 cost={6}
 pt=5/3
-ability=gains {1}{G} trample
+ability=pay {1}{G}: SN gains trample until end of turn.
 timing=main

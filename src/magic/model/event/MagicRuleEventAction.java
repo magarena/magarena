@@ -12,6 +12,8 @@ import magic.model.MagicCounterType;
 import magic.model.MagicAbility;
 import magic.model.MagicManaCost;
 import magic.model.MagicCardDefinition;
+import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.action.MagicCardOnStackAction;
 import magic.model.action.MagicCounterItemOnStackAction;
 import magic.model.action.MagicDestroyAction;
@@ -435,6 +437,13 @@ public enum MagicRuleEventAction {
         public String getName(final String rule) {
             final String ability = matched(rule).group("ability");
             return Character.toUpperCase(ability.charAt(0)) + ability.substring(1);
+        }
+        public MagicCondition[] getConditions(final String rule) {
+            final Matcher matcher = matched(rule);
+            final MagicAbility ability = MagicAbility.getAbility(matcher.group("ability"));
+            return new MagicCondition[]{
+                MagicConditionFactory.NoAbility(ability)
+            };
         }
     },
     GainChosen(
@@ -961,6 +970,10 @@ public enum MagicRuleEventAction {
         } catch (IllegalArgumentException e) {
             return MagicChoice.NONE;
         }
+    }
+    
+    public MagicCondition[] getConditions(final String rule) {
+        return MagicActivation.NO_COND;
     }
 
     public static MagicRuleEventAction build(final String rule) {

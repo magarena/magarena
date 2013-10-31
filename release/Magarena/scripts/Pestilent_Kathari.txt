@@ -7,5 +7,5 @@ type=Creature
 subtype=Bird,Warrior
 cost={2}{B}
 pt=1/1
-ability=flying;deathtouch;gains {2}{R} first strike
+ability=flying;deathtouch;pay {2}{R}: SN gains first strike until end of turn.
 timing=main

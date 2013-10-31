@@ -7,5 +7,5 @@ type=Creature
 subtype=Beast
 cost={2}{B}
 pt=2/2
-ability=gains {U} islandwalk
+ability=pay {U}: SN gains islandwalk until end of turn.
 timing=main

@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Soldier
 cost={2}{G}
 pt=1/4
-ability=gains {W} vigilance
+ability=pay {W}: SN gains vigilance until end of turn.
 timing=main

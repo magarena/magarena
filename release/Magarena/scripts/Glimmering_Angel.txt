@@ -7,5 +7,5 @@ type=Creature
 subtype=Angel
 cost={3}{W}
 pt=2/2
-ability=gains {U} shroud
+ability=pay {U}: SN gains shroud until end of turn.
 timing=main

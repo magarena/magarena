@@ -7,5 +7,5 @@ type=Creature
 subtype=Wolf
 cost={2}{R}
 pt=3/1
-ability=gains {1}{R} first strike
+ability=pay {1}{R}: SN gains first strike until end of turn.
 timing=main
