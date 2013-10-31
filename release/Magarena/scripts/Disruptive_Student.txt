@@ -1,0 +1,11 @@
+name=Disruptive Student
+url=http://magiccards.info/br/en/21.html
+image=http://magiccards.info/scans/en/br/21.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={2}{U}
+pt=1/1
+timing=main
+ability=pay {T}: Counter target spell unless its controller pays {1}.
