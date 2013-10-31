@@ -1,20 +1,11 @@
 package magic.ui.resolution;
 
 public enum ResolutionProfileType {
-    DuelPlayersViewer,
-    DuelDeckViewers,
-    DuelDeckStatisticsViewer,
-    DuelDeckStrengthViewer,
-    DuelCardViewer,
-    DuelDifficultyViewer,
-    DuelPlayButton,
-    DuelNewButton,
-
+	GameLHS,
     GameZones,
     GamePlayerViewerSmall,
     GamePlayerViewer,
     GameOpponentViewer,
-    GameCardViewer,
     GameDuelViewer,
     GameLogBookViewer,
     GameLogBookButton,
@@ -27,6 +18,5 @@ public enum ResolutionProfileType {
     GameImageHandGraveyardViewer,
     GameImagePlayerPermanentViewer,
     GameImageOpponentPermanentViewer,
-    GameImageCombatViewer,
-    GameImageViewer;
+    GameImageCombatViewer;
 }

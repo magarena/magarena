@@ -2,7 +2,6 @@ package magic.ui;
 
 import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
-import magic.data.IconImages;
 import magic.model.MagicGame;
 import magic.model.MagicCardList;
 import magic.ui.resolution.ResolutionProfileResult;
@@ -17,26 +16,26 @@ import magic.ui.viewer.HandGraveyardExileViewer;
 import magic.ui.viewer.ImageBattlefieldViewer;
 import magic.ui.viewer.ImageCombatViewer;
 import magic.ui.viewer.ImageHandGraveyardExileViewer;
-import magic.ui.viewer.ImageViewer;
 import magic.ui.viewer.LogBookViewer;
 import magic.ui.viewer.PlayerViewer;
 import magic.ui.viewer.StackCombatViewer;
 import magic.ui.viewer.StackViewer;
 import magic.ui.viewer.ViewerInfo;
-import magic.ui.widget.TitleBar;
+import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.ZoneBackgroundLabel;
+import net.miginfocom.swing.MigLayout;
 
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
-import javax.swing.JToggleButton;
+import javax.swing.JSplitPane;
 import javax.swing.KeyStroke;
-import java.awt.BorderLayout;
+
 import java.awt.Dimension;
+import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
-import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
 
@@ -49,6 +48,7 @@ public final class GamePanel extends JPanel {
     private static final String SWITCH_KEY="switch";
     private static final String LOG_KEY="log";
     private static final String PASS_KEY="pass";
+    private static final Theme theme = ThemeFactory.getInstance().getCurrentTheme();
 
     private final MagicFrame frame;
     private final MagicGame game;
@@ -60,8 +60,6 @@ public final class GamePanel extends JPanel {
     private final CardViewer cardViewer;
     private final GameDuelViewer gameDuelViewer;
     private final LogBookViewer logBookViewer;
-    private final JToggleButton logBookButton;
-    private final JToggleButton textViewButton;
     private final StackCombatViewer stackCombatViewer;
     private final HandGraveyardExileViewer handGraveyardViewer;
     private final BattlefieldViewer playerPermanentViewer;
@@ -72,7 +70,10 @@ public final class GamePanel extends JPanel {
     private final ImageBattlefieldViewer imagePlayerPermanentViewer;
     private final ImageBattlefieldViewer imageOpponentPermanentViewer;
     private final ImageCombatViewer imageCombatViewer;
-    private final ImageViewer imageViewer;
+    private final JPanel lhsPanel, rhsPanel;
+    private final JPanel stackContainer;
+    private final JSplitPane splitter;
+    private final TexturedPanel splitterContainer;
 
     public GamePanel(
             final MagicFrame frame,
@@ -95,17 +96,21 @@ public final class GamePanel extends JPanel {
         viewerInfo=new ViewerInfo();
         viewerInfo.update(game);
 
-        setLayout(null);
         setOpaque(false);
         setFocusable(true);
 
-        final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
+        // One-time creation of UI panels.
+        lhsPanel = new JPanel();
+        lhsPanel.setOpaque(false);
+        rhsPanel = new JPanel(null);
+        rhsPanel.setOpaque(false);
 
         logBookViewer=new LogBookViewer(game.getLogBook());
-        logBookViewer.setVisible(false);
+        logBookViewer.setVisible(true);
+        logBookViewer.setOpaque(false);
 
         cardViewer=new CardViewer("Card",false,true);
-        add(cardViewer);
+        add(cardViewer, "w 100%, h 100%");
         cardViewer.setVisible(false);
         controller.setCardViewer(cardViewer);
 
@@ -115,51 +120,64 @@ public final class GamePanel extends JPanel {
         controller.setImageCardViewer(imageCardViewer);
 
         playerViewer=new PlayerViewer(viewerInfo,controller,false);
-        add(playerViewer);
-
         opponentViewer=new PlayerViewer(viewerInfo,controller,true);
-        add(opponentViewer);
-
         gameDuelViewer=new GameDuelViewer(game,controller);
         controller.setGameViewer(gameDuelViewer.getGameViewer());
-        add(gameDuelViewer);
 
-        logBookButton=new JToggleButton(theme.getIcon(Theme.ICON_MESSAGE),false);
-        logBookButton.setFocusable(false);
-        logBookButton.setOpaque(false);
-        add(logBookButton);
-        logBookButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(final ActionEvent event) {
-                logBookViewer.setVisible(logBookButton.isSelected());
-            }
-        });
-        logBookButton.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseEntered(final MouseEvent event) {
-                showLogBook(true);
-            }
-            @Override
-            public void mouseExited(final MouseEvent event) {
-                if (!logBookButton.isSelected()) {
-                    showLogBook(false);
-                }
-            }
-        });
+        createActionMaps();
+        createShortcutKeys();
 
-        textViewButton=new JToggleButton(IconImages.TEXT,isTextView());
-        textViewButton.setToolTipText("Images / Text");
-        textViewButton.setFocusable(false);
-        textViewButton.setOpaque(false);
-        add(textViewButton);
-        textViewButton.addActionListener(new ActionListener() {
+        stackCombatViewer=new StackCombatViewer(viewerInfo,controller);
+        handGraveyardViewer=new HandGraveyardExileViewer(viewerInfo,controller);
+        playerPermanentViewer=new BattlefieldViewer(viewerInfo,controller,false);
+        opponentPermanentViewer=new BattlefieldViewer(viewerInfo,controller,true);
+        imageStackViewer=new StackViewer(viewerInfo,controller,true);
+        imageHandGraveyardViewer=new ImageHandGraveyardExileViewer(viewerInfo,controller);
+        imagePlayerPermanentViewer=new ImageBattlefieldViewer(viewerInfo,controller,false);
+        imageOpponentPermanentViewer=new ImageBattlefieldViewer(viewerInfo,controller,true);
+        imageCombatViewer=new ImageCombatViewer(viewerInfo,controller);
+
+        stackContainer = new JPanel(new MigLayout("insets 0, gap 0"));
+        stackContainer.setOpaque(false);
+        splitter = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
+        splitter.setBorder(FontsAndBorders.BLACK_BORDER);
+        splitter.setOneTouchExpandable(false);
+        splitter.setContinuousLayout(true);
+        splitter.setResizeWeight(0.5);
+        splitter.setOpaque(false);
+        splitterContainer = new TexturedPanel();
+        splitterContainer.setLayout(new MigLayout("insets 0, gap 0"));
+
+        updateView();
+
+        //start game logic controller in another thread
+        (new Thread(){
             @Override
-            public void actionPerformed(final ActionEvent event) {
-                final boolean selected=textViewButton.isSelected();
-                GeneralConfig.getInstance().setTextView(selected);
-                updateView();
+            public void run() {
+                //reduce priority
+                final Thread cur=Thread.currentThread();
+                cur.setPriority(Thread.MIN_PRIORITY);
+                System.err.println("Starting game...");
+                controller.runGame();
+                System.err.println("Stopping game...");
             }
-        });
+        }).start();
+    }
+
+    private void createShortcutKeys() {
+        //defining shortcut keys
+        getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_RIGHT, 0),ACTION_KEY);
+        getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_SPACE, 0),ACTION_KEY);
+        getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_RIGHT, InputEvent.SHIFT_MASK),PASS_KEY);
+        getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_SPACE, InputEvent.SHIFT_MASK),PASS_KEY);
+        getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_LEFT, 0),UNDO_KEY);
+        getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0),UNDO_KEY);
+        getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_F1, 0),LOG_KEY);
+        getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_M, 0),LOG_KEY);
+        getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_S, 0),SWITCH_KEY);
+    }
+
+    private void createActionMaps() {
 
         getActionMap().put(ACTION_KEY, new AbstractAction() {
             private static final long serialVersionUID = 1L;
@@ -185,16 +203,6 @@ public final class GamePanel extends JPanel {
             }
         });
 
-        getActionMap().put(LOG_KEY, new AbstractAction() {
-            private static final long serialVersionUID = 1L;
-            @Override
-            public void actionPerformed(final ActionEvent e) {
-                final boolean selected=!logBookButton.isSelected();
-                logBookButton.setSelected(selected);
-                showLogBook(selected);
-            }
-        });
-
         getActionMap().put(PASS_KEY, new AbstractAction() {
             private static final long serialVersionUID = 1L;
             @Override
@@ -203,46 +211,6 @@ public final class GamePanel extends JPanel {
             }
         });
 
-        //defining shortcut keys
-        getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_RIGHT, 0),ACTION_KEY);
-        getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_SPACE, 0),ACTION_KEY);
-        getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_RIGHT, InputEvent.SHIFT_MASK),PASS_KEY);
-        getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_SPACE, InputEvent.SHIFT_MASK),PASS_KEY);
-        getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_LEFT, 0),UNDO_KEY);
-        getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0),UNDO_KEY);
-        getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_F1, 0),LOG_KEY);
-        getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_M, 0),LOG_KEY);
-        getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_S, 0),SWITCH_KEY);
-
-        stackCombatViewer=new StackCombatViewer(viewerInfo,controller);
-        handGraveyardViewer=new HandGraveyardExileViewer(viewerInfo,controller);
-        playerPermanentViewer=new BattlefieldViewer(viewerInfo,controller,false);
-        opponentPermanentViewer=new BattlefieldViewer(viewerInfo,controller,true);
-        imageStackViewer=new StackViewer(viewerInfo,controller,true);
-        imageHandGraveyardViewer=new ImageHandGraveyardExileViewer(viewerInfo,controller);
-        imagePlayerPermanentViewer=new ImageBattlefieldViewer(viewerInfo,controller,false);
-        imageOpponentPermanentViewer=new ImageBattlefieldViewer(viewerInfo,controller,true);
-        imageCombatViewer=new ImageCombatViewer(viewerInfo,controller);
-        imageViewer=new ImageViewer();
-
-        final TitleBar stackTitleBar = new TitleBar("Stack");
-        stackTitleBar.setIcon(theme.getIcon(Theme.ICON_SMALL_STACK));
-        imageStackViewer.add(stackTitleBar,BorderLayout.SOUTH);
-
-        updateView();
-
-        //start game logic controller in another thread
-        (new Thread(){
-            @Override
-            public void run() {
-                //reduce priority
-                final Thread cur=Thread.currentThread();
-                cur.setPriority(Thread.MIN_PRIORITY);
-                System.err.println("Starting game...");
-                controller.runGame();
-                System.err.println("Stopping game...");
-            }
-        }).start();
     }
 
     public boolean canClickAction() {
@@ -262,16 +230,7 @@ public final class GamePanel extends JPanel {
             textViewButton.setSelected(selected);
             frame.setTextImageMode(selected);
         }
-        */
-    }
-
-    private void showLogBook(final boolean visible) {
-        if (visible) {
-            logBookViewer.update();
-            logBookViewer.setVisible(true);
-        } else {
-            logBookViewer.setVisible(false);
-        }
+         */
     }
 
     private static boolean isTextView() {
@@ -302,7 +261,7 @@ public final class GamePanel extends JPanel {
             imageHandGraveyardViewer.setSelectedTab(handGraveyard);
         }
     }
-    
+
     public void showCards(final MagicCardList cards) {
         if (isTextView()) {
             handGraveyardViewer.showCards(cards);
@@ -339,34 +298,31 @@ public final class GamePanel extends JPanel {
     public void updateView() {
         if (isTextView()) {
             backgroundLabel.setImage(false);
-            remove(imageStackViewer);
-            remove(imageHandGraveyardViewer);
-            remove(imagePlayerPermanentViewer);
-            remove(imageOpponentPermanentViewer);
-            remove(imageCombatViewer);
-            remove(imageViewer);
-            add(cardViewer);
-            add(handGraveyardViewer);
-            add(stackCombatViewer);
-            add(playerPermanentViewer);
-            add(opponentPermanentViewer);
+            rhsPanel.remove(imageStackViewer);
+            rhsPanel.remove(imageHandGraveyardViewer);
+            rhsPanel.remove(imagePlayerPermanentViewer);
+            rhsPanel.remove(imageOpponentPermanentViewer);
+            rhsPanel.remove(imageCombatViewer);
+            rhsPanel.add(cardViewer);
+            rhsPanel.add(handGraveyardViewer);
+            rhsPanel.add(stackCombatViewer);
+            rhsPanel.add(playerPermanentViewer);
+            rhsPanel.add(opponentPermanentViewer);
             imageCardViewer.setVisible(false);
         } else if (imageHandGraveyardViewer!=null) {
             backgroundLabel.setImage(true);
-            remove(cardViewer);
-            remove(handGraveyardViewer);
-            remove(stackCombatViewer);
-            remove(playerPermanentViewer);
-            remove(opponentPermanentViewer);
-            add(imageStackViewer);
-            add(imageHandGraveyardViewer);
-            add(imagePlayerPermanentViewer);
-            add(imageOpponentPermanentViewer);
-            add(imageCombatViewer);
-            add(imageViewer);
+            rhsPanel.remove(cardViewer);
+            rhsPanel.remove(handGraveyardViewer);
+            rhsPanel.remove(stackCombatViewer);
+            rhsPanel.remove(playerPermanentViewer);
+            rhsPanel.remove(opponentPermanentViewer);
+            rhsPanel.add(imageStackViewer);
+            rhsPanel.add(imageHandGraveyardViewer);
+            rhsPanel.add(imagePlayerPermanentViewer);
+            rhsPanel.add(imageOpponentPermanentViewer);
+            rhsPanel.add(imageCombatViewer);
         }
         resizeComponents();
-        update();
         revalidate();
         repaint();
     }
@@ -386,12 +342,8 @@ public final class GamePanel extends JPanel {
         opponentViewer.setBounds(result.getBoundary(ResolutionProfileType.GameOpponentViewer));
         opponentViewer.setSmall(result.getFlag(ResolutionProfileType.GamePlayerViewerSmall));
         gameDuelViewer.setBounds(result.getBoundary(ResolutionProfileType.GameDuelViewer));
-        logBookButton.setBounds(result.getBoundary(ResolutionProfileType.GameLogBookButton));
-        textViewButton.setBounds(result.getBoundary(ResolutionProfileType.TextViewButton));
-        logBookViewer.setBounds(result.getBoundary(ResolutionProfileType.GameLogBookViewer));
 
         if (isTextView()) {
-            cardViewer.setBounds(result.getBoundary(ResolutionProfileType.GameCardViewer));
             stackCombatViewer.setBounds(result.getBoundary(ResolutionProfileType.GameStackCombatViewer));
             handGraveyardViewer.setBounds(result.getBoundary(ResolutionProfileType.GameHandGraveyardViewer));
             playerPermanentViewer.setBounds(result.getBoundary(ResolutionProfileType.GamePlayerPermanentViewer));
@@ -402,9 +354,48 @@ public final class GamePanel extends JPanel {
             imagePlayerPermanentViewer.setBounds(result.getBoundary(ResolutionProfileType.GameImagePlayerPermanentViewer));
             imageOpponentPermanentViewer.setBounds(result.getBoundary(ResolutionProfileType.GameImageOpponentPermanentViewer));
             imageCombatViewer.setBounds(result.getBoundary(ResolutionProfileType.GameImageCombatViewer));
-            imageViewer.setBounds(result.getBoundary(ResolutionProfileType.GameImageViewer));
         }
+
+        setThisLayout(result);
 
         controller.update();
     }
+
+    private void setThisLayout(final ResolutionProfileResult result) {
+
+        final int spacing = theme.getValue(Theme.VALUE_SPACING);
+        StringBuilder sb = new StringBuilder();
+
+        Rectangle r = result.getBoundary(ResolutionProfileType.GameLHS);
+
+        removeAll();
+        setLayout(new MigLayout(
+                "insets 0, gap 0, flowx, wrap 2",
+                "[" + r.width +"px!][]"));
+
+        lhsPanel.removeAll();
+        lhsPanel.setLayout(
+                new MigLayout(
+                        sb.append("insets ").append(spacing).append(",")	// margins
+                        .append("gap 0 ").append(spacing).append(",")		// gapx [gapy]
+                        .append("flowy,")
+                        .append("").toString()));                           // debug
+
+        r = result.getBoundary(ResolutionProfileType.GameOpponentViewer);
+        lhsPanel.add(opponentViewer, "w 100%, h " + r.height + "px!");
+        stackContainer.add(imageStackViewer, "w 100%, pushy, bottom");
+        splitter.setTopComponent(logBookViewer);
+        splitter.setBottomComponent(stackContainer);
+        splitterContainer.add(splitter, "w 100%, h 100%");
+        lhsPanel.add(splitterContainer, "w 100%, h 100%");
+        r = result.getBoundary(ResolutionProfileType.GameDuelViewer);
+        lhsPanel.add(gameDuelViewer, "w 100%, h " + r.height + "px!");
+        r = result.getBoundary(ResolutionProfileType.GamePlayerViewer);
+        lhsPanel.add(playerViewer, "w 100%, h " + r.height + "px!");
+
+        add(lhsPanel, "w 100%, h 100%");
+        add(rhsPanel, "w 100%, h 100%");
+
+    }
+
 }

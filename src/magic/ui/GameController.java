@@ -4,10 +4,12 @@ import magic.ai.MagicAI;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.data.SoundEffects;
+import magic.model.ILogBookListener;
 import magic.model.MagicCard;
 import magic.model.MagicCardList;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
+import magic.model.MagicLogBookEvent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
@@ -20,6 +22,7 @@ import magic.ui.viewer.GameViewer;
 
 import javax.swing.JComponent;
 import javax.swing.SwingUtilities;
+
 import java.awt.Dimension;
 import java.awt.Point;
 import java.awt.Rectangle;
@@ -34,7 +37,7 @@ import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
 
-public class GameController {
+public class GameController implements ILogBookListener {
 
     private long MAX_TEST_MODE_DURATION=10000;
 
@@ -61,6 +64,7 @@ public class GameController {
         game = aGame;
         testMode = false;
         clearValidChoices();
+        game.getLogBook().addListener(this);
     }
 
     /** Fully artificial test game. */
@@ -471,6 +475,7 @@ public class GameController {
         } else {
             game.gotoLastUndoPoint();
         }
+        gamePanel.getLogBookViewer().update();
     }
 
     public void haltGame() {
@@ -544,4 +549,10 @@ public class GameController {
         }
         running.set(false);
     }
+
+	@Override
+	public void messageLogged(MagicLogBookEvent ev) {
+        System.out.println("GameController.messageLogged : " + ev.getMagicMessage().getText());
+        gamePanel.getLogBookViewer().addMagicMessage(ev.getMagicMessage());
+	}
 }
