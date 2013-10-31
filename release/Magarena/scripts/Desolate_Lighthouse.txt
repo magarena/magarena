@@ -4,6 +4,6 @@ image=http://magiccards.info/scans/en/avr/227.jpg
 value=3.965
 rarity=R
 type=Land
-ability=tap add mana {1}
+ability=tap add mana {1};\
+        pay {1}{U}{R}, {T}: PN draws a card, then discards a card.
 timing=land
-requires_groovy_code
