@@ -1,7 +1,7 @@
 [
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Pump),
-        "Remove an ice counter"
+        new MagicActivationHints(MagicTiming.Token),
+        "Token"
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
