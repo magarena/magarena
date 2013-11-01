@@ -1,5 +1,6 @@
 package magic.ui.viewer;
 
+import magic.data.IconImages;
 import magic.model.MagicLogBook;
 import magic.model.MagicMessage;
 import magic.ui.widget.FontsAndBorders;
@@ -8,11 +9,25 @@ import magic.ui.widget.TitleBar;
 
 import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
+import javax.swing.JCheckBoxMenuItem;
+import javax.swing.JLabel;
+import javax.swing.JMenuItem;
 import javax.swing.JPanel;
+import javax.swing.JPopupMenu;
+import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
 import javax.swing.border.Border;
+import javax.swing.event.MouseInputAdapter;
+
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Cursor;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
+import java.awt.event.MouseEvent;
+import java.util.ListIterator;
 
 public class LogBookViewer extends JPanel {
 
@@ -23,12 +38,13 @@ public class LogBookViewer extends JPanel {
         FontsAndBorders.EMPTY_BORDER
     );
 
-    private static final int MAX_LINES=200;
     private static final int INCREMENT=108;
 
     private final MagicLogBook logBook;
     private final JPanel messagePanel;
     private final JScrollPane scrollPane;
+    private boolean isScrollbarVisible = true;
+    private boolean isNewMessageAddedToTop = true;
 
     public LogBookViewer(final MagicLogBook logBook) {
 
@@ -38,6 +54,7 @@ public class LogBookViewer extends JPanel {
 
         TitleBar tb = new TitleBar("Log");
         tb.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.BLACK));
+        tb.add(getOptionsButton(), BorderLayout.EAST);
         add(tb, BorderLayout.NORTH);
 
         final JPanel centerPanel=new JPanel();
@@ -54,11 +71,22 @@ public class LogBookViewer extends JPanel {
         scrollPane.getViewport().setView(centerPanel);
         scrollPane.getViewport().setOpaque(false);
         scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
-        scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
+        setVerticalScrollbarPolicy();
         scrollPane.getVerticalScrollBar().setUnitIncrement(INCREMENT);
         scrollPane.getVerticalScrollBar().setBlockIncrement(INCREMENT);
         add(scrollPane,BorderLayout.CENTER);
+
+        addComponentListener(new ComponentAdapter() {
+            @Override
+            public void componentResized(ComponentEvent arg0) {
+                if (!isNewMessageAddedToTop) {
+                    forceVerticalScrollbarToMax();
+                }
+            }
+        });
+
     }
+
 
     public MagicLogBook getLogBook() {
         return logBook;
@@ -67,18 +95,33 @@ public class LogBookViewer extends JPanel {
     public void update() {
         messagePanel.removeAll();
         synchronized (logBook) {
-            int index = logBook.size() - 1;
-            for (int lines = MAX_LINES; lines > 0 && index >= 0; lines--, index--) {
-                messagePanel.add(getNewMessagePanel(logBook.get(index)));
+            if (!isNewMessageAddedToTop) {
+                // use the default order of messages in logBook list.
+                for (MagicMessage msg : logBook) {
+                    messagePanel.add(getNewMessagePanel(msg));
+                }
+                forceVerticalScrollbarToMax();
+            } else {
+                // display messages in reverse order.
+                ListIterator<MagicMessage> listIterator = logBook.listIterator(logBook.size());
+                while(listIterator.hasPrevious()){
+                    messagePanel.add(getNewMessagePanel(listIterator.previous()));
+                }
+                validate();
+                scrollPane.getVerticalScrollBar().setValue(0);
             }
+
         }
-        revalidate();
-        scrollPane.getVerticalScrollBar().setValue(0);
     }
 
     public void addMagicMessage(MagicMessage magicMessage) {
-        messagePanel.add(getNewMessagePanel(magicMessage), 0);
-        scrollPane.getVerticalScrollBar().setValue(0);
+        if (isNewMessageAddedToTop) {
+            messagePanel.add(getNewMessagePanel(magicMessage), 0);
+            scrollPane.getVerticalScrollBar().setValue(0);
+        } else {
+            messagePanel.add(getNewMessagePanel(magicMessage));
+            forceVerticalScrollbarToMax();
+        }
     }
 
     private MessagePanel getNewMessagePanel(MagicMessage message) {
@@ -87,6 +130,69 @@ public class LogBookViewer extends JPanel {
         panel.setOpaque(false);
         panel.setBorder(SEPARATOR_BORDER);
         return panel;
+    }
+
+    private JLabel getOptionsButton() {
+        JLabel lbl = new JLabel(IconImages.PROGRESS);
+        lbl.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+        lbl.addMouseListener(new MouseInputAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                doPopup(e);
+            }
+            private void doPopup(MouseEvent e){
+                JPopupMenu menu = getOptionsPopupMenu();
+                menu.show(e.getComponent(), e.getX(), e.getY());
+            }
+        });
+        return lbl;
+    }
+
+    private JPopupMenu getOptionsPopupMenu() {
+        JPopupMenu menu = new JPopupMenu();
+        menu.add(getMenuItem_ScrollbarVisibility());
+        menu.add(getMenuItem_GrowDirection());
+        return menu;
+    }
+
+    private JMenuItem getMenuItem_GrowDirection() {
+        JCheckBoxMenuItem item = new JCheckBoxMenuItem("Add new message to top", isNewMessageAddedToTop);
+        item.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                isNewMessageAddedToTop = !isNewMessageAddedToTop;
+                update();
+            }
+        });
+        return item;
+    }
+
+    private JCheckBoxMenuItem getMenuItem_ScrollbarVisibility() {
+        JCheckBoxMenuItem item = new JCheckBoxMenuItem("Show scroll-bar", isScrollbarVisible);
+        item.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                isScrollbarVisible = !isScrollbarVisible;
+                setVerticalScrollbarPolicy();
+            }
+        });
+        return item;
+    }
+
+    private void setVerticalScrollbarPolicy() {
+        scrollPane.setVerticalScrollBarPolicy(getVerticalScrollbarPolicy());
+    }
+
+    private int getVerticalScrollbarPolicy() {
+        return isScrollbarVisible ?
+                JScrollPane.VERTICAL_SCROLLBAR_ALWAYS :
+                    JScrollPane.VERTICAL_SCROLLBAR_NEVER;
+    }
+
+    private void forceVerticalScrollbarToMax() {
+        scrollPane.validate();
+        JScrollBar scrollbar = scrollPane.getVerticalScrollBar();
+        scrollbar.setValue(scrollbar.getMaximum());
     }
 
 }
