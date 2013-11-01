@@ -5,5 +5,5 @@ value=4.092
 rarity=R
 type=Sorcery
 cost={3}{W}{B}
+effect=Return target permanent card from your graveyard to the battlefield.
 timing=main
-requires_groovy_code
