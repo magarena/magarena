@@ -1,0 +1,10 @@
+name=Marit Lage
+token=Avatar
+image=http://magiccards.info/extras/token/coldsnap/marit-lage.jpg
+value=1
+type=Legendary,Creature
+subtype=Avatar
+color=black
+cost={0}
+pt=20/20
+ability=flying;indestrutible
