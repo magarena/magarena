@@ -1,21 +1,6 @@
 [
-    new MagicWhenComesIntoPlayTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPayedCost payedCost) {      
-            game.doAction(new MagicChangeCountersAction(
-                permanent,
-                MagicCounterType.Charge,
-                10,
-                true
-            ));        
-        }
-
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-        }
-    },
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Pump,true),
+        new MagicActivationHints(MagicTiming.Pump),
         "Remove an ice counter"
     ) {
         @Override
@@ -24,14 +9,14 @@
         }
 
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            new MagicEvent(
-                permanent,
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
+                source,
                 this,
-                "Remove an ice counter from SN."
+                "Remove an ice counter from SN. " +
+                "If SN has no ice counters on it, sacrifice it and put a legendary 20/20 black Avatar creature token with flying and indestructible named Marit Lage onto the battlefield."
             );
         }
-
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -42,10 +27,13 @@
                 -1,
                 true
             ));            
-            perm.getCounters(MagicCounterType.Charge) =0 ?
-                game.doAction(new MagicPlayTokensAction(
-                event.getPlayer(), TokenCardDefinitions.get("Marit Lage"), 1)):
-                NONE;  
+            if (perm.getCounters(MagicCounterType.Charge) == 0) {
+                game.doAction(new MagicSacrificeAction(perm));
+                game.doAction(new MagicPlayTokenAction(
+                    event.getPlayer(), 
+                    TokenCardDefinitions.get("legendary 20/20 black Avatar creature token with flying and indestructible named Marit Lage")
+                ))
+            }
         }
     }
 ]
