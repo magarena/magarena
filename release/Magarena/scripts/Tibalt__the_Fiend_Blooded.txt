@@ -6,6 +6,6 @@ rarity=M
 type=Planeswalker
 subtype=Tibalt
 cost={R}{R}
-ability=enters with charge 2
+ability=enters with counter charge 2
 timing=main
 requires_groovy_code

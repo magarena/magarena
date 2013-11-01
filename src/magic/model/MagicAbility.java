@@ -502,22 +502,12 @@ public enum MagicAbility {
             card.add(MagicTappedIntoPlayTrigger.create());
         }
     },
-    EntersCharged("enters with charge", 0) {
+    EntersCharged("enters with counter", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final int n = Integer.parseInt(arg);
-            card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,"charge",n));
-        }
-    },
-    EntersMining("enters with mining", 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final int n = Integer.parseInt(arg);
-            card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,"mining",n));
-        }
-    },
-    EntersArrowhead("enters with arrowhead", 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final int n = Integer.parseInt(arg);
-            card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,"arrowhead",n));
+            final String[] token = arg.split(" ");
+            final String name = token[0];
+            final int n = Integer.parseInt(token[1]);
+            card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,name,n));
         }
     },
     EntersXPlus("enters with X +1/+1", 0) {

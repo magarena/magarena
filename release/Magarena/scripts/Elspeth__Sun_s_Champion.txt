@@ -6,6 +6,6 @@ rarity=M
 type=Planeswalker
 subtype=Elspeth
 cost={4}{W}{W}
-ability=enters with charge 4
+ability=enters with counter charge 4
 timing=main
 requires_groovy_code
