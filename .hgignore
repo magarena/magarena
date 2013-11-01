@@ -19,7 +19,7 @@ release/Magarena.exe
 release/Magarena.jar
 .git/*
 bin/
-release\lib\*
+release/lib/*
 .classpath
 .project
 release/Magarena/mods/
