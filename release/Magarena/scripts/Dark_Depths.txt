@@ -4,5 +4,6 @@ image=http://magiccards.info/scans/en/csp/145.jpg
 value=2.500
 rarity=R
 type=Legendary,Snow,Land
+ability=enters with counter ice 10
 timing=land
 requires_groovy_code
