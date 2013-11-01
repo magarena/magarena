@@ -7,5 +7,5 @@ type=Creature
 subtype=Insect
 cost={1}{B}{R}
 pt=1/1
-timing=main
 ability=pay {T},Sacrifice a land: Destroy target land.
+timing=main
