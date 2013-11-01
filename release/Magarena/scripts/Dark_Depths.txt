@@ -3,6 +3,6 @@ url=http://magiccards.info/csp/en/145.html
 image=http://magiccards.info/scans/en/csp/145.jpg
 value=2.500
 rarity=R
-type=Snow,Legendary,Land
-mana=
+type=Legendary,Snow,Land
 timing=land
+requires_groovy_code
