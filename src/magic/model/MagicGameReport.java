@@ -2,10 +2,12 @@ package magic.model;
 
 import magic.MagicMain;
 import magic.data.FileIO;
+import magic.data.URLUtils;
 import magic.model.action.MagicAction;
 import magic.model.stack.MagicItemOnStack;
 import magic.ui.VersionPanel;
 
+import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -13,11 +15,56 @@ import java.io.StringWriter;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
 public class MagicGameReport implements Thread.UncaughtExceptionHandler {
 
     public void uncaughtException(final Thread th, final Throwable ex) {
         MagicGameReport.buildReport(MagicGame.getInstance(), th, ex);
+        doNotifyUser();
         System.exit(1);
+    }
+
+    /**
+     * Displays a message to user in the event an unexpected exception occurs.
+     * User can open logs folder and/or Issue tracker directly from this dialog.
+     */
+    private void doNotifyUser() {
+        try {
+
+            // By specifying a frame the JOptionPane will be shown in the taskbar.
+            // Otherwise if the dialog is hidden it is easy to forget it is still open.
+            JFrame frame = new JFrame("Fatal Error");
+            frame.setUndecorated(true);
+            frame.setVisible(true);
+            frame.setLocationRelativeTo(null);
+
+            // Custom option dialog.
+            Object[] options = {"Open logs folder", "Issue Tracker", "Close"};
+            int action = -1;
+            do {
+                action = JOptionPane.showOptionDialog(
+                        frame,
+                        "An unexpected error has occurred and Magarena will need to close.\n\n" +
+                        "Please consider posting the crash report (\"crash.log\") to the Magarena\n" +
+                        "forum or Issue Tracker so that the development team can investigate.\n\n",
+                        "Fatal Error",
+                        JOptionPane.YES_NO_CANCEL_OPTION,
+                        JOptionPane.ERROR_MESSAGE,
+                        null,
+                        options,
+                        options[2]);
+                if (action == JOptionPane.YES_OPTION) {
+                    Desktop.getDesktop().open(new File(MagicMain.getGamePath()));
+                } else if (action == JOptionPane.NO_OPTION) {
+                    URLUtils.openURL("http://code.google.com/p/magarena/issues/list");
+                }
+            } while (action != JOptionPane.CANCEL_OPTION && action != -1);
+
+        } catch (Exception e) {
+            // do nothing - crash report has already been generated and app is about to exit anyway.
+        }
     }
 
     private static void buildCard(final MagicGame game,final String place,final MagicCard card,final StringBuilder report) {
