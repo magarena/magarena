@@ -7,6 +7,7 @@ type=Creature
 subtype=Giant
 cost={4}{W}{W}
 pt=6/6
-ability=vigilance
-timing=fmain
-requires_groovy_code
+ability=vigilance;\
+        enters effect PN may return target permanent card with converted mana cost 3 or less from your graveyard to the battlefield.;\
+        attacks effect PN may return target permanent card with converted mana cost 3 or less from your graveyard to the battlefield.
+timing=main
