@@ -9,12 +9,16 @@ import magic.data.KeywordDefinitions;
 import magic.model.MagicGameLog;
 import magic.ui.MagicFrame;
 
+import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.UIManager.LookAndFeelInfo;
+
 import java.io.File;
 
 public class MagicMain {
+
+    public static JFrame rootFrame;
 
     private static final String GAME_FOLDER  = "Magarena";
     private static final String MODS_PATH    = "mods";
@@ -61,7 +65,7 @@ public class MagicMain {
         System.err.println("Initalization of engine took " + duration + "s");
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
-                new MagicFrame();
+                rootFrame = new MagicFrame();
             }
         });
     }
