@@ -23,3 +23,4 @@ release/lib/*
 .classpath
 .project
 release/Magarena/mods/
+release/Magarena/crash.png
