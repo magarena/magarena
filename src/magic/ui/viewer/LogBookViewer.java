@@ -1,5 +1,6 @@
 package magic.ui.viewer;
 
+import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.model.MagicLogBook;
 import magic.model.MagicMessage;
@@ -43,8 +44,9 @@ public class LogBookViewer extends JPanel {
     private final MagicLogBook logBook;
     private final JPanel messagePanel;
     private final JScrollPane scrollPane;
-    private boolean isScrollbarVisible = true;
-    private boolean isNewMessageAddedToTop = true;
+    private final GeneralConfig config = GeneralConfig.getInstance();
+    private boolean isScrollbarVisible = config.isLogScrollbarVisible();
+    private boolean isNewMessageAddedToTop = config.isLogMessageAddedToTop();
 
     public LogBookViewer(final MagicLogBook logBook) {
 
@@ -151,17 +153,19 @@ public class LogBookViewer extends JPanel {
     private JPopupMenu getOptionsPopupMenu() {
         JPopupMenu menu = new JPopupMenu();
         menu.add(getMenuItem_ScrollbarVisibility());
-        menu.add(getMenuItem_GrowDirection());
+        menu.add(getMenuItem_TopInsert());
         return menu;
     }
 
-    private JMenuItem getMenuItem_GrowDirection() {
+    private JMenuItem getMenuItem_TopInsert() {
         JCheckBoxMenuItem item = new JCheckBoxMenuItem("Add new message to top", isNewMessageAddedToTop);
         item.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 isNewMessageAddedToTop = !isNewMessageAddedToTop;
                 update();
+                config.setLogMessageAddedToTop(isNewMessageAddedToTop);
+                config.save();
             }
         });
         return item;
@@ -174,6 +178,8 @@ public class LogBookViewer extends JPanel {
             public void actionPerformed(ActionEvent e) {
                 isScrollbarVisible = !isScrollbarVisible;
                 setVerticalScrollbarPolicy();
+                config.setLogScrollbarVisible(isScrollbarVisible);
+                config.save();
             }
         });
         return item;

@@ -34,6 +34,8 @@ public class GeneralConfig {
     private static final String CONFIRM_EXIT = "confirmExit";
     private static final String TOUCHSCREEN = "touchscreen";
     private static final String MOUSEWHEEL_POPUP = "mousewheel";
+    private static final String LOG_SCROLLBAR = "logScrollbar";
+    private static final String LOG_TOPINSERT = "logTopInsert";
 
     private static final int DEFAULT_LEFT=0;
     private static final int DEFAULT_TOP=0;
@@ -58,6 +60,8 @@ public class GeneralConfig {
     private static final boolean DEFAULT_CONFIRM_EXIT = true;
     private static final boolean DEFAULT_TOUCHSCREEN = false;
     private static final boolean DEFAULT_MOUSEWHEEL_POPUP = false;
+    private static final boolean DEFAULT_LOG_SCROLLBAR = true;
+    private static final boolean DEFAULT_LOG_TOPINSERT = false;
 
     private int left=DEFAULT_LEFT;
     private int top=DEFAULT_TOP;
@@ -82,8 +86,24 @@ public class GeneralConfig {
     private boolean confirmExit = DEFAULT_CONFIRM_EXIT;
     private boolean touchscreen = DEFAULT_TOUCHSCREEN;
     private boolean mouseWheelPopup = DEFAULT_MOUSEWHEEL_POPUP;
+    private boolean isLogScrollbarVisible = DEFAULT_LOG_SCROLLBAR;
+    private boolean isLogMessageAddedToTop = DEFAULT_LOG_TOPINSERT;
 
     private GeneralConfig() {}
+
+    public boolean isLogMessageAddedToTop() {
+        return this.isLogMessageAddedToTop;
+    }
+    public void setLogMessageAddedToTop(final boolean b) {
+        this.isLogMessageAddedToTop = b;
+    }
+
+    public boolean isLogScrollbarVisible() {
+        return this.isLogScrollbarVisible;
+    }
+    public void setLogScrollbarVisible(final boolean b) {
+        this.isLogScrollbarVisible = b;
+    }
 
     public int getLeft() {
         return left;
@@ -305,6 +325,8 @@ public class GeneralConfig {
         confirmExit = Boolean.parseBoolean(properties.getProperty(CONFIRM_EXIT,""+DEFAULT_CONFIRM_EXIT));
         touchscreen = Boolean.parseBoolean(properties.getProperty(TOUCHSCREEN,""+DEFAULT_TOUCHSCREEN));
         mouseWheelPopup = Boolean.parseBoolean(properties.getProperty(MOUSEWHEEL_POPUP, "" + DEFAULT_MOUSEWHEEL_POPUP));
+        isLogScrollbarVisible = Boolean.parseBoolean(properties.getProperty(LOG_SCROLLBAR, "" + DEFAULT_LOG_SCROLLBAR));
+        isLogMessageAddedToTop = Boolean.parseBoolean(properties.getProperty(LOG_TOPINSERT, "" + DEFAULT_LOG_TOPINSERT));
     }
 
     public void load() {
@@ -335,6 +357,8 @@ public class GeneralConfig {
         properties.setProperty(CONFIRM_EXIT,String.valueOf(confirmExit));
         properties.setProperty(TOUCHSCREEN,String.valueOf(touchscreen));
         properties.setProperty(MOUSEWHEEL_POPUP, String.valueOf(mouseWheelPopup));
+        properties.setProperty(LOG_SCROLLBAR, String.valueOf(isLogScrollbarVisible));
+        properties.setProperty(LOG_TOPINSERT, String.valueOf(isLogMessageAddedToTop));
     }
 
     public void save() {
