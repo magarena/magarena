@@ -907,6 +907,15 @@ public interface MagicTargetFilter<T extends MagicTarget> {
             return targetType==MagicTargetType.Graveyard;
         }
     };
+    
+    MagicCardFilterImpl TARGET_CREATURE_CARD_CMC_LEQ_2_FROM_GRAVEYARD=new MagicCardFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+            return target.getConvertedCost() <= 2 && target.hasType(MagicType.Creature);
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType==MagicTargetType.Graveyard;
+        }
+    };
 
     MagicPermanentFilterImpl TARGET_NONLAND_PERMANENT_CMC_LEQ_3 = new MagicTargetFilter.MagicCMCPermanentFilter(
         MagicTargetFilter.TARGET_NONLAND_PERMANENT,

@@ -7,5 +7,5 @@ type=Creature
 subtype=Dwarf
 cost={1}{R}
 pt=1/2
-timing=main
 ability=pay {2}{R},{T}: Destroy target nonbasic land.
+timing=main

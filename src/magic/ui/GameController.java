@@ -475,7 +475,11 @@ public class GameController implements ILogBookListener {
         } else {
             game.gotoLastUndoPoint();
         }
-        gamePanel.getLogBookViewer().update();
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                gamePanel.getLogBookViewer().update();
+            }
+        });
     }
 
     public void haltGame() {

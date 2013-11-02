@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Wizard
 cost={2}{U}
 pt=1/1
-timing=main
 ability=pay {T}: Counter target spell unless its controller pays {1}.
+timing=main

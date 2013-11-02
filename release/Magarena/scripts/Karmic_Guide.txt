@@ -7,6 +7,6 @@ type=Creature
 subtype=Angel,Spirit
 cost={3}{W}{W}
 pt=2/2
-ability=flying;protection from black;echo {3}{W}{W}
+ability=flying;protection from black;echo {3}{W}{W};\
+        enters effect Return target creature card from your graveyard to the battlefield.
 timing=main
-requires_groovy_code

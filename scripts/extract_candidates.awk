@@ -34,6 +34,11 @@ FILENAME ~ /unimplementable/ {
     next
 }
 
+FILENAME ~ /groovy/ {
+    comment[$1] = "groovy"
+    next
+}
+
 {
     if (NF == 1) {
         score[$1] = 1

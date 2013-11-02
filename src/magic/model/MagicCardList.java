@@ -71,6 +71,12 @@ public class MagicCardList extends ArrayList<MagicCard> implements MagicCopyable
         remove(index);
         return card;
     }
+    
+    public MagicCard removeCardAtBottom() {
+        final MagicCard card=get(0);
+        remove(0);
+        return card;
+    }
 
     public int removeCard(final MagicCard card) {
         final int index=indexOf(card);

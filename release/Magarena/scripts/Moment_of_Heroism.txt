@@ -5,5 +5,5 @@ value=3.438
 rarity=C
 type=Instant
 cost={1}{W}
+effect=Target creature gets +2/+2 and gains lifelink until end of turn.
 timing=pump
-requires_groovy_code

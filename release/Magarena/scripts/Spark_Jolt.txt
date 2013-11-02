@@ -1,0 +1,10 @@
+name=Spark Jolt
+url=http://magiccards.info/ths/en/140.html
+image=http://magiccards.info/scans/en/ths/140.jpg
+value=4.641
+removal=1
+rarity=C
+type=Instant
+cost={R}
+timing=removal
+requires_groovy_code
