@@ -213,7 +213,7 @@ public class MagicGameReport implements Thread.UncaughtExceptionHandler {
                         Rectangle rec = container.getBounds();
                         BufferedImage capture = new BufferedImage(rec.width, rec.height,BufferedImage.TYPE_INT_ARGB);
                         container.paint(capture.getGraphics()); //capturing the components content in the capture object
-                        ImageIO.write(capture, "png", new File(MagicMain.getGamePath() + "\\crash.png"));
+                        ImageIO.write(capture, "png", new File(MagicMain.getGamePath(), "crash.png"));
                     } catch (Exception e) {
                         System.err.println("grabScreenShot failed : " + e.toString());
                     }
