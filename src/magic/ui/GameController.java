@@ -552,7 +552,6 @@ public class GameController implements ILogBookListener {
 
 	@Override
 	public void messageLogged(MagicLogBookEvent ev) {
-        System.out.println("GameController.messageLogged : " + ev.getMagicMessage().getText());
         gamePanel.getLogBookViewer().addMagicMessage(ev.getMagicMessage());
 	}
 }
