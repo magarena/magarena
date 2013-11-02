@@ -1,0 +1,11 @@
+name=Temple of Abandon
+url=http://magiccards.info/ths/en/224.html
+image=http://magiccards.info/scans/en/ths/224.jpg
+value=3.792
+rarity=R
+type=Land
+mana=r3g3
+ability=tap add mana {R} or {G};\
+        enters tapped
+timing=tapland
+requires_groovy_code=Temple of Silence

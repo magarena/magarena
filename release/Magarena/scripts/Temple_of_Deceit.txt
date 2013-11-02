@@ -1,0 +1,11 @@
+name=Temple of Deceit
+url=http://magiccards.info/ths/en/225.html
+image=http://magiccards.info/scans/en/ths/225.jpg
+value=3.792
+rarity=R
+type=Land
+mana=u3b3
+ability=tap add mana {U} or {B};\
+        enters tapped
+timing=tapland
+requires_groovy_code=Temple of Silence
