@@ -5,5 +5,5 @@ value=2.932
 rarity=C
 type=Instant
 cost={1}{W}
+effect=Target creature gets +2/+2 and gains flying until end of turn.
 timing=pump
-requires_groovy_code
