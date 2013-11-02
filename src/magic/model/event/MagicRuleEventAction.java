@@ -503,6 +503,66 @@ public enum MagicRuleEventAction {
             }
         }
     },
+    GainPumpChosen(
+        "(?<choice>[^\\.]*) gets (?<pt>[0-9+]+/[0-9+]+) and gains (?<ability>[^\\.]*) until end of turn.", 
+        MagicTargetHint.Positive
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final MagicAbility ability = MagicAbility.getAbility(matcher.group("ability"));
+            final String[] pt = matcher.group("pt").replace("+","").split("/");
+            final int power = Integer.parseInt(pt[0]);
+            final int toughness = Integer.parseInt(pt[1]);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTargetPermanent(game,new MagicPermanentAction() {
+                        public void doAction(final MagicPermanent creature) {
+                            game.doAction(new MagicChangeTurnPTAction(creature,power,toughness));
+                            game.doAction(new MagicGainAbilityAction(creature,ability));
+                        }
+                    });
+                }
+            };
+        }
+        public MagicTiming getTiming(final String rule) {
+            final Matcher matcher = matched(rule);
+            final MagicAbility ability = MagicAbility.getAbility(matcher.group("ability"));
+            switch (ability) {
+                case Haste:
+                case Vigilance:
+                    return MagicTiming.FirstMain;
+                case FirstStrike:
+                case DoubleStrike:
+                    return MagicTiming.Block;
+                default:
+                    return MagicTiming.Pump;
+            }
+        }
+        public MagicTargetPicker<?> getPicker(final String rule) {
+            final Matcher matcher = matched(rule);
+            final MagicAbility ability = MagicAbility.getAbility(matcher.group("ability"));
+            switch (ability) {
+                case Deathtouch: 
+                    return MagicDeathtouchTargetPicker.getInstance();
+                case Lifelink:
+                    return MagicLifelinkTargetPicker.create();
+                case FirstStrike:
+                case DoubleStrike:
+                    return MagicFirstStrikeTargetPicker.create();
+                case Haste:
+                    return MagicHasteTargetPicker.create();
+                case Indestructible:
+                    return MagicIndestructibleTargetPicker.create();
+                case Trample:
+                    return MagicTrampleTargetPicker.create();
+                case Flying:
+                    return MagicFlyingTargetPicker.create();
+                default:
+                    return MagicPumpTargetPicker.create(); 
+            }
+        }
+    },
     GainGroup(
         "(?<group>[^\\.]*) gain (?<ability>[^\\.]*) until end of turn."
     ) {
