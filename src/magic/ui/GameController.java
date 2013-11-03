@@ -479,11 +479,6 @@ public class GameController implements ILogBookListener {
         } else {
             game.gotoLastUndoPoint();
         }
-        SwingUtilities.invokeLater(new Runnable() {
-            public void run() {
-                gamePanel.getLogBookViewer().update();
-            }
-        });
     }
 
     public void haltGame() {
@@ -559,7 +554,16 @@ public class GameController implements ILogBookListener {
     }
 
 	@Override
-	public void messageLogged(MagicLogBookEvent ev) {
-        gamePanel.getLogBookViewer().addMagicMessage(ev.getMagicMessage());
+	public void messageLogged(final MagicLogBookEvent ev) {
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                if (ev.getMagicMessage() == null) {
+                    gamePanel.getLogBookViewer().update();
+                } else {
+                    gamePanel.getLogBookViewer().addMagicMessage(ev.getMagicMessage());
+                }
+            }
+        });
 	}
 }

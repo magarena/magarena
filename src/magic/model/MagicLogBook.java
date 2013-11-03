@@ -29,6 +29,7 @@ public class MagicLogBook extends ArrayList<MagicMessage> {
         for (int index=size()-1;index>=toIndex;index--) {
             remove(index);
         }
+        notifyMessageLogged(null);
     }
 
     public synchronized void addListener(ILogBookListener obj) {
@@ -40,16 +41,8 @@ public class MagicLogBook extends ArrayList<MagicMessage> {
     }
 
     private synchronized void notifyMessageLogged(final MagicMessage msg) {
-        if (msg != null) {
-            for (final ILogBookListener listener : _listeners) {
-                SwingUtilities.invokeLater(new Runnable() {
-                    @Override
-                    public void run() {
-                        listener.messageLogged(new MagicLogBookEvent(this, msg));
-                    }
-                });
-            }
+        for (final ILogBookListener listener : _listeners) {
+            listener.messageLogged(new MagicLogBookEvent(this, msg));
         }
     }
-
 }
