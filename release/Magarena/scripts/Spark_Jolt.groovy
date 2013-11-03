@@ -13,14 +13,13 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game, {
-                final MagicPermanent target ->
+            event.processTarget(game, {
+                final MagicTarget target ->
                 game.doAction(new MagicDealDamageAction(
-                    new MagicDamage(event.getSource(),target,2)
+                    new MagicDamage(event.getSource(),target,1)
                 ));
-                game.doAction(new MagicGainAbilityAction(target, MagicAbility.CannotBlock));
                 game.addEvent(new MagicScryEvent(event));
-            } as MagicPermanentAction);
+            } as MagicTargetAction);
         }
     }
 ]
