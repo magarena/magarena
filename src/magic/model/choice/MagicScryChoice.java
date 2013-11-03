@@ -27,8 +27,7 @@ public class MagicScryChoice extends MagicMayChoice {
             final MagicPlayer player,
             final MagicSource source) {
         
-        final MagicCard topCard = player.getLibrary().getCardAtTop();
-        if (topCard == MagicCard.NONE) {
+        if (player.getLibrary().isEmpty()) {
             final List<Object[]> choiceResultsList=new ArrayList<Object[]>();
             choiceResultsList.add(new Object[]{NO_CHOICE});
             return choiceResultsList;
@@ -47,13 +46,12 @@ public class MagicScryChoice extends MagicMayChoice {
         final Object[] choiceResults=new Object[1];
         choiceResults[0]=NO_CHOICE;
         
-        final MagicCard topCard = player.getLibrary().getCardAtTop();
-        if (topCard == MagicCard.NONE) {
+        if (player.getLibrary().isEmpty()) {
             return choiceResults;
         }
         
         final MagicCardList cards = new MagicCardList();
-        cards.add(topCard);
+        cards.add(player.getLibrary().getCardAtTop());
         controller.showCards(cards);
 
         controller.disableActionButton(false);
