@@ -37,8 +37,8 @@ class TestScry extends TestGameBuilder {
         P = opponent;
 
         P.setLife(6);
-        addToLibrary(P, "Mountain", 20);
-        createPermanent(game,P,"Rupture Spire",false,9);
+        addToLibrary(P, "Temple of Silence", 20);
+        createPermanent(game,P,"Rupture Spire",false,1);
         createPermanent(game,P, "Grizzly Bears", false, 1);
         addToHand(P, "Spark Jolt", 1);
         addToHand(P, "Temple of Silence", 1);
