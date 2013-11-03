@@ -3,8 +3,6 @@ package magic.model;
 import java.util.List;
 import java.util.ArrayList;
 
-import javax.swing.SwingUtilities;
-
 public class MagicLogBook extends ArrayList<MagicMessage> {
 
     private static final long serialVersionUID = 1L;
