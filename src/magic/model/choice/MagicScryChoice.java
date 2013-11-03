@@ -44,7 +44,7 @@ public class MagicScryChoice extends MagicMayChoice {
             }
         });
             
-        controller.showCards(new MagicCardList());
+        controller.clearCards();
 
         if (choicePanel.isYesClicked()) {
             choiceResults[0]=YES_CHOICE;

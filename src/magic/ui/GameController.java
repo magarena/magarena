@@ -308,6 +308,10 @@ public class GameController implements ILogBookListener {
             }
         });
     }
+    
+    public void clearCards() {
+        showCards(new MagicCardList());
+    }
 
     public void showCards(final MagicCardList cards) {
         SwingUtilities.invokeLater(new Runnable() {
