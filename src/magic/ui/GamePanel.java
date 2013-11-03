@@ -27,10 +27,15 @@ import magic.ui.widget.ZoneBackgroundLabel;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.AbstractAction;
+import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 import javax.swing.JSplitPane;
 import javax.swing.KeyStroke;
+import javax.swing.border.Border;
+import javax.swing.plaf.basic.BasicSplitPaneDivider;
+import javax.swing.plaf.basic.BasicSplitPaneUI;
 
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
@@ -74,6 +79,7 @@ public final class GamePanel extends JPanel {
     private final JPanel stackContainer;
     private final JSplitPane splitter;
     private final TexturedPanel splitterContainer;
+    private final boolean isLogAutosizeMode = true;
 
     public GamePanel(
             final MagicFrame frame,
@@ -139,14 +145,35 @@ public final class GamePanel extends JPanel {
 
         stackContainer = new JPanel(new MigLayout("insets 0, gap 0"));
         stackContainer.setOpaque(false);
-        splitter = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
-        splitter.setBorder(FontsAndBorders.BLACK_BORDER);
-        splitter.setOneTouchExpandable(false);
-        splitter.setContinuousLayout(true);
-        splitter.setResizeWeight(0.5);
-        splitter.setOpaque(false);
-        splitterContainer = new TexturedPanel();
-        splitterContainer.setLayout(new MigLayout("insets 0, gap 0"));
+
+        if (isLogAutosizeMode) {
+            splitter = null;
+            splitterContainer = new TexturedPanel();
+            splitterContainer.setLayout(new MigLayout("insets 0, gap 0, flowy"));
+
+        } else {
+            splitter = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
+            splitter.setBorder(FontsAndBorders.BLACK_BORDER);
+            splitter.setOneTouchExpandable(false);
+            splitter.setContinuousLayout(true);
+            splitter.setResizeWeight(0.5);
+            splitter.setOpaque(true);
+            splitter.setDividerSize(4);
+            splitter.setUI(new BasicSplitPaneUI() {
+                @SuppressWarnings("serial")
+                @Override
+                public BasicSplitPaneDivider createDefaultDivider() {
+                    return new BasicSplitPaneDivider(this) {
+                        @Override
+                        public Border getBorder() {
+                            return BorderFactory.createLineBorder(Color.RED, 2);
+                        }
+                    };
+                }
+            });
+            splitterContainer = new TexturedPanel();
+            splitterContainer.setLayout(new MigLayout("insets 0, gap 0"));
+        }
 
         updateView();
 
@@ -379,21 +406,29 @@ public final class GamePanel extends JPanel {
                         sb.append("insets ").append(spacing).append(",")	// margins
                         .append("gap 0 ").append(spacing).append(",")		// gapx [gapy]
                         .append("flowy,")
-                        .append("").toString()));                           // debug
+                        .append("debug").toString()));                           // debug
 
         r = result.getBoundary(ResolutionProfileType.GameOpponentViewer);
         lhsPanel.add(opponentViewer, "w 100%, h " + r.height + "px!");
+
         stackContainer.add(imageStackViewer, "w 100%, pushy, bottom");
-        splitter.setTopComponent(logBookViewer);
-        splitter.setBottomComponent(stackContainer);
-        splitterContainer.add(splitter, "w 100%, h 100%");
+        if (isLogAutosizeMode) {
+            splitterContainer.add(logBookViewer, "w 100%, h 20:100%, growy");
+            splitterContainer.add(stackContainer, "w 100%, h min(pref, " + splitterContainer.getHeight() / 2 + "):pref");
+
+        } else {
+            splitter.setTopComponent(logBookViewer);
+            splitter.setBottomComponent(stackContainer);
+            splitterContainer.add(splitter, "w 100%, h 100%");
+        }
         lhsPanel.add(splitterContainer, "w 100%, h 100%");
+
         r = result.getBoundary(ResolutionProfileType.GameDuelViewer);
         lhsPanel.add(gameDuelViewer, "w 100%, h " + r.height + "px!");
         r = result.getBoundary(ResolutionProfileType.GamePlayerViewer);
         lhsPanel.add(playerViewer, "w 100%, h " + r.height + "px!");
 
-        add(lhsPanel, "w 100%, h 100%");
+        add(lhsPanel, "w 100%, h 500!");
         add(rhsPanel, "w 100%, h 100%");
 
     }
