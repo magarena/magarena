@@ -8,6 +8,7 @@ import magic.ui.widget.PanelButton;
 import magic.ui.widget.TextLabel;
 import magic.ui.widget.TitleBar;
 import magic.ui.widget.ViewerScrollPane;
+import net.miginfocom.swing.MigLayout;
 
 import javax.swing.BorderFactory;
 import javax.swing.JComponent;
@@ -40,6 +41,8 @@ public class StackViewer extends JPanel implements ChoiceViewer {
 
     public StackViewer(final ViewerInfo viewerInfo,final GameController controller,final boolean image) {
 
+        boolean useMig = false;
+
         this.viewerInfo=viewerInfo;
         this.controller=controller;
         this.image=image;
@@ -47,26 +50,23 @@ public class StackViewer extends JPanel implements ChoiceViewer {
 
         controller.registerChoiceViewer(this);
 
-        setLayout(new BorderLayout());
+        setLayout(useMig ? new MigLayout("debug, insets 0, gap 0, flowy") : new BorderLayout(0, 0));
 
         final Theme theme = ThemeFactory.getInstance().getCurrentTheme();
         stackTitleBar = new TitleBar("Stack");
         stackTitleBar.setBorder(BorderFactory.createMatteBorder(1, 0, 0, 0, Color.BLACK));
         stackTitleBar.setIcon(theme.getIcon(Theme.ICON_SMALL_STACK));
-        add(stackTitleBar, BorderLayout.NORTH);
+        add(stackTitleBar, useMig ? "w 100%, h 20px!" : BorderLayout.NORTH);
 
         viewerPane=new ViewerScrollPane();
-        add(viewerPane,BorderLayout.CENTER);
+        viewerPane.setBorder(BorderFactory.createEmptyBorder());
+        add(viewerPane, useMig ? "w 100%, h 0" : BorderLayout.CENTER);
+
+        // Set unchanging minimum sizes.
+        setMinimumSize(new Dimension(0, stackTitleBar.getMinimumSize().height));
+        viewerPane.setMinimumSize(new Dimension(0, 0));
 
         buttons=new ArrayList<StackButton>();
-
-//        addComponentListener(new ComponentAdapter() {
-//        @Override
-//            public void componentResized(ComponentEvent e) {
-//                super.componentResized(e);
-//                System.out.println("StackViewer Resized : " + getSize());
-//            }
-//        });
 
         update();
 
@@ -102,9 +102,9 @@ public class StackViewer extends JPanel implements ChoiceViewer {
         }
 
         if (image) {
-            final int contentHeight=viewerPane.getContent().getPreferredSize().height + 20;
-            if (contentHeight<setRectangle.height) {
-                setBounds(getX(),setRectangle.y+setRectangle.height-contentHeight,getWidth(),contentHeight);
+            final int contentHeight = viewerPane.getContent().getPreferredSize().height + 20;
+            if (contentHeight < setRectangle.height) {
+                setBounds(getX(), setRectangle.y + setRectangle.height -contentHeight, getWidth(), contentHeight);
             } else {
                 setBounds(setRectangle);
             }
@@ -130,7 +130,7 @@ public class StackViewer extends JPanel implements ChoiceViewer {
                 System.out.println("Validating JPanel");
                 Dimension d = new Dimension(getBounds().width, getBounds().height + 1);
                 setPreferredSize(d);
-                //setMinimumSize(d); //new Dimension(d.width, stackTitleBar.getHeight() * 3));
+                setMinimumSize(d);
                 setMaximumSize(d);
                 viewerPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED);
                 layoutContainer.validate();

@@ -76,6 +76,7 @@ public class LogBookViewer extends JPanel {
         setVerticalScrollbarPolicy();
         scrollPane.getVerticalScrollBar().setUnitIncrement(INCREMENT);
         scrollPane.getVerticalScrollBar().setBlockIncrement(INCREMENT);
+        scrollPane.setBorder(BorderFactory.createEmptyBorder());
         add(scrollPane,BorderLayout.CENTER);
 
         addComponentListener(new ComponentAdapter() {

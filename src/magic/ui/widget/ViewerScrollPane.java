@@ -21,6 +21,7 @@ public class ViewerScrollPane extends JScrollPane {
         getViewport().setOpaque(false);
         setBorder(FontsAndBorders.NO_BORDER);
         setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+        setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
         getVerticalScrollBar().setUnitIncrement(80);
         getVerticalScrollBar().setBlockIncrement(80);
     }
