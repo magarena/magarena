@@ -83,6 +83,15 @@ public class StackViewer extends JPanel implements ChoiceViewer {
         return "Stack";
     }
 
+    private JPanel getNewStackButtonPanel(final StackViewerInfo stackInfo, final int maxWidth) {
+        final JPanel panel=new JPanel(new BorderLayout());
+        panel.setBorder(FontsAndBorders.SMALL_EMPTY_BORDER);
+        final StackButton button=new StackButton(stackInfo, maxWidth);
+        buttons.add(button);
+        panel.add(button,BorderLayout.CENTER);
+        return panel;
+    }
+
     public void update() {
         System.out.print("StackViewer.update()");
 
@@ -92,13 +101,9 @@ public class StackViewer extends JPanel implements ChoiceViewer {
 
         final JPanel contentPanel=viewerPane.getContent();
         for (final StackViewerInfo stackInfo : viewerInfo.getStack()) {
-
-            final JPanel panel=new JPanel(new BorderLayout());
-            panel.setBorder(FontsAndBorders.SMALL_EMPTY_BORDER);
-            final StackButton button=new StackButton(stackInfo,maxWidth);
-            buttons.add(button);
-            panel.add(button,BorderLayout.CENTER);
-            contentPanel.add(panel);
+            for (int i = 0; i < 10; i++) {
+                contentPanel.add(getNewStackButtonPanel(stackInfo, maxWidth));
+            }
         }
 
         if (image) {
