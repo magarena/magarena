@@ -5,6 +5,6 @@ value=4.172
 rarity=R
 type=Enchantment
 cost={3}{U}
-timing=enchantment
+ability=lord all creatures have "your upkeep effect PN may pay {1}. If you don't, sacrifice SN."
 static=all
-requires_groovy_code
+timing=enchantment
