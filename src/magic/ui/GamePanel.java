@@ -4,6 +4,7 @@ import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
 import magic.model.MagicGame;
 import magic.model.MagicCardList;
+import magic.ui.resolution.DefaultResolutionProfile;
 import magic.ui.resolution.ResolutionProfileResult;
 import magic.ui.resolution.ResolutionProfileType;
 import magic.ui.resolution.ResolutionProfiles;
@@ -18,11 +19,11 @@ import magic.ui.viewer.ImageBattlefieldViewer;
 import magic.ui.viewer.ImageCombatViewer;
 import magic.ui.viewer.ImageHandGraveyardExileViewer;
 import magic.ui.viewer.LogBookViewer;
+import magic.ui.viewer.LogStackViewer;
 import magic.ui.viewer.PlayerViewer;
 import magic.ui.viewer.StackCombatViewer;
 import magic.ui.viewer.StackViewer;
 import magic.ui.viewer.ViewerInfo;
-import magic.ui.widget.AlphaContainer;
 import magic.ui.widget.ZoneBackgroundLabel;
 import net.miginfocom.swing.MigLayout;
 
@@ -55,6 +56,7 @@ public final class GamePanel
     private static final String LOG_KEY="log";
     private static final String PASS_KEY="pass";
     private static final Theme theme = ThemeFactory.getInstance().getCurrentTheme();
+    private static final Color translucentPanelColor = new Color(255, 255, 255, 200);
 
     private final MagicFrame frame;
     private final MagicGame game;
@@ -83,9 +85,9 @@ public final class GamePanel
     private final boolean isLogAutosizeMode = true;
     private final JLabel dummyLabel = new JLabel();
 
-    private int spacing = 0;
     private ResolutionProfileResult result;
     private final JPanel logStackPanel = new JPanel();
+    private final LogStackViewer logStackViewer;
 
     public GamePanel(
             final MagicFrame frame,
@@ -116,6 +118,9 @@ public final class GamePanel
         lhsPanel.setOpaque(false);
         rhsPanel = new JPanel(null);
         rhsPanel.setOpaque(false);
+
+        logStackViewer = new LogStackViewer();
+        logStackViewer.setBackground(translucentPanelColor);
 
         logBookViewer=new LogBookViewer(game.getLogBook());
         logBookViewer.setVisible(true);
@@ -373,7 +378,6 @@ public final class GamePanel
 
         playerViewer.setBounds(result.getBoundary(ResolutionProfileType.GamePlayerViewer));
         playerViewer.setSmall(result.getFlag(ResolutionProfileType.GamePlayerViewerSmall));
-        opponentViewer.setBounds(result.getBoundary(ResolutionProfileType.GameOpponentViewer));
         opponentViewer.setSmall(result.getFlag(ResolutionProfileType.GamePlayerViewerSmall));
         gameDuelViewer.setBounds(result.getBoundary(ResolutionProfileType.GameDuelViewer));
 
@@ -397,7 +401,7 @@ public final class GamePanel
 
     private void setThisLayout(final ResolutionProfileResult result) {
 
-        spacing = theme.getValue(Theme.VALUE_SPACING);
+
         Rectangle r = result.getBoundary(ResolutionProfileType.GameLHS);
 
         // LHS and RHS
@@ -408,42 +412,41 @@ public final class GamePanel
         add(lhsPanel, "w 100%, h 100%"); //500!");
         add(rhsPanel, "w 100%, h 100%");
 
-        setLhsLayout();
+        setLeftSideLayout();
 
     }
 
-    private void setLhsLayout() {
+    /**
+     *  The LHS of the game screen contains the two player info views, the Log/Stack
+     *  viewer and the game console. All are at a fixed height except the Log/Stack view
+     *  which should expand and contract to fill any remaining space depending on screen height.
+     */
+    private void setLeftSideLayout() {
 
-        StringBuilder sb = new StringBuilder();
+        int spacing = theme.getValue(Theme.VALUE_SPACING);
+
+        String layoutConstraints =
+                "insets " + spacing + "," +             // margins determined by theme.
+                "gap 0 " + spacing + "," +              // vertical spacing determined by theme.
+                "flowy" +                               // vertical layout.
+                "";                                     // add "debug" to show layout outlines.
+        String columnConstraints = "[100%, fill]";      // each component fills width of LHS.
 
         lhsPanel.removeAll();
-        lhsPanel.setLayout(
-                new MigLayout(
-                        sb.append("insets ").append(spacing).append(",")    // margins
-                        .append("gap 0 ").append(spacing).append(",")       // gapx [gapy]
-                        .append("flowy,")
-                        .append("").toString()));                           // debug
+        lhsPanel.setLayout(new MigLayout(layoutConstraints, columnConstraints));
 
-        Rectangle r;
-        r = result.getBoundary(ResolutionProfileType.GameOpponentViewer);
-        lhsPanel.add(opponentViewer, "w 100%, h " + r.height + "px!");
+        lhsPanel.add(opponentViewer, "h " + DefaultResolutionProfile.PLAYER_VIEWER_HEIGHT_SMALL + "!");
+        lhsPanel.add(logStackViewer, "h 100%");
+        lhsPanel.add(gameDuelViewer, "h " + DefaultResolutionProfile.GAME_VIEWER_HEIGHT + "!");
+        lhsPanel.add(playerViewer,   "h " + DefaultResolutionProfile.PLAYER_VIEWER_HEIGHT_SMALL + "!");
 
-        lhsPanel.add(splitter, "w 100%, h 100%");
-
-        r = result.getBoundary(ResolutionProfileType.GameDuelViewer);
-        lhsPanel.add(gameDuelViewer, "w 100%, h " + r.height + "px!");
-
-        r = result.getBoundary(ResolutionProfileType.GamePlayerViewer);
-        lhsPanel.add(playerViewer, "w 100%, h " + r.height + "px!");
-
-        setSplitterLayout();
     }
 
-    private void setSplitterLayout() {
-        setLogStackPanelLayout();
-        splitter.setTopComponent(new AlphaContainer(logStackPanel));
-        splitter.setBottomComponent(dummyLabel);
-    }
+//    private void setSplitterLayout() {
+//        setLogStackPanelLayout();
+//        splitter.setTopComponent(new AlphaContainer(logStackPanel));
+//        splitter.setBottomComponent(dummyLabel);
+//    }
 
     private void setLogStackPanelLayout() {
 
@@ -492,7 +495,7 @@ public final class GamePanel
     @Override
     public void stackViewerUpdated() {
         System.out.println("GamePanel.stackViewerUpdated : height = " + imageStackViewer.getHeight());
-        setLhsLayout();
+        setLogStackPanelLayout();
         lhsPanel.revalidate();
     }
 

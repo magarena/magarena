@@ -3,7 +3,6 @@ package magic.ui.viewer;
 import magic.data.IconImages;
 import magic.model.MagicGame;
 import magic.ui.GameController;
-import magic.ui.widget.AlphaContainer;
 import magic.ui.widget.TabSelector;
 import magic.ui.widget.TitleBar;
 import net.miginfocom.swing.MigLayout;
@@ -32,6 +31,7 @@ public class GameDuelViewer extends JPanel implements ChangeListener {
     private final JLabel playerAvatar = new JLabel();
 
     public GameDuelViewer(final MagicGame game,final GameController controller) {
+
         gameViewer=new GameViewer(game,controller);
         duelViewer=new DuelViewer(game.getDuel());
         gameViewer.setOpaque(false);
@@ -44,7 +44,7 @@ public class GameDuelViewer extends JPanel implements ChangeListener {
 
         playerAvatar.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 1, Color.BLACK));
 
-        setSize(320,125);
+        //setSize(320,125);
         setLayout(new BorderLayout());
 
         titleBar=new TitleBar("");
@@ -54,9 +54,9 @@ public class GameDuelViewer extends JPanel implements ChangeListener {
         cardPanel.setOpaque(false);
         cardPanel.add(gameViewer,"0");
         cardPanel.add(duelViewer,"1");
-        //add(cardPanel,BorderLayout.CENTER);
-        cardPanel.setBackground(new Color(255,255,255,200));
-        add(new AlphaContainer(cardPanel), BorderLayout.CENTER);
+        add(cardPanel,BorderLayout.CENTER);
+        //cardPanel.setBackground(new Color(255,255,255,200));
+        //add(new AlphaContainer(cardPanel), BorderLayout.CENTER);
 
         tabSelector=new TabSelector(this, false, titleBar.getBackground());
         tabSelector.addTab(IconImages.MESSAGE,"Message");
@@ -68,11 +68,11 @@ public class GameDuelViewer extends JPanel implements ChangeListener {
         titlePanel.setBorder(BorderFactory.createMatteBorder(1, 1, 0, 1, Color.BLACK));
         titlePanel.add(playerAvatar, "w 40px!, h 40px!, cell 1 1 1 2");
         titlePanel.add(titleBar, "w 100%, h 20px!, cell 2 1");
-        titlePanel.add(new AlphaContainer(phaseStepViewer), "w 100%, h 20px!, cell 2 2");
+        titlePanel.add(phaseStepViewer, "w 100%, h 20px!, cell 2 2");
 
         add(titlePanel, BorderLayout.NORTH);
 
-        setOpaque(false);
+        //setOpaque(false);
 
     }
 
