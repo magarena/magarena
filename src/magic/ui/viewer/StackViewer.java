@@ -11,11 +11,9 @@ import magic.ui.widget.ViewerScrollPane;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.BorderFactory;
-import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JSplitPane;
-import javax.swing.ScrollPaneConstants;
+import javax.swing.SwingUtilities;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -23,6 +21,7 @@ import java.awt.Dimension;
 import java.awt.Rectangle;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 import java.util.Set;
 
 public class StackViewer extends JPanel implements ChoiceViewer {
@@ -35,8 +34,8 @@ public class StackViewer extends JPanel implements ChoiceViewer {
     private final boolean image;
     private final Collection<StackButton> buttons;
     private Rectangle setRectangle = new Rectangle();
+    private List<IStackViewerListener> _listeners = new ArrayList<>();
 
-    private JComponent layoutContainer = null;
     final TitleBar stackTitleBar;
 
     public StackViewer(final ViewerInfo viewerInfo,final GameController controller,final boolean image) {
@@ -58,7 +57,7 @@ public class StackViewer extends JPanel implements ChoiceViewer {
         stackTitleBar.setIcon(theme.getIcon(Theme.ICON_SMALL_STACK));
         add(stackTitleBar, useMig ? "w 100%, h 20px!" : BorderLayout.NORTH);
 
-        viewerPane=new ViewerScrollPane();
+        viewerPane=new ViewerScrollPane(); //JScrollPane();
         viewerPane.setBorder(BorderFactory.createEmptyBorder());
         add(viewerPane, useMig ? "w 100%, h 0" : BorderLayout.CENTER);
 
@@ -101,7 +100,7 @@ public class StackViewer extends JPanel implements ChoiceViewer {
 
         final JPanel contentPanel=viewerPane.getContent();
         for (final StackViewerInfo stackInfo : viewerInfo.getStack()) {
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 1; i++) {
                 contentPanel.add(getNewStackButtonPanel(stackInfo, maxWidth));
             }
         }
@@ -116,33 +115,34 @@ public class StackViewer extends JPanel implements ChoiceViewer {
         }
 
         int stackHeight = getBounds().height;
-        System.out.print(" : contentHeight = " + stackHeight); // contentHeight);
+        System.out.println(" : contentHeight = " + stackHeight); // contentHeight);
 
         showValidChoices(controller.getValidChoices());
         viewerPane.switchContent();
         repaint();
 
-        System.out.println();
+//
+//        System.out.println();
+//
+//        if (getParent() != null && layoutContainer == null) {
+//            layoutContainer = (JComponent)getParent().getParent();
+//            System.out.println(layoutContainer.getClass().getName());
+//        }
+//        if (layoutContainer != null) {
+//            if (layoutContainer.getClass().getName() == "javax.swing.JSplitPane") {
+//                setSplitterPosition((JSplitPane)layoutContainer, stackHeight);
+//            } else if (layoutContainer.getClass().getName() == "magic.ui.widget.TexturedPanel") {
+//                System.out.println("Validating JPanel");
+//                Dimension d = new Dimension(getBounds().width, getBounds().height + 1);
+//                setPreferredSize(d);
+//                setMinimumSize(d);
+//                setMaximumSize(d);
+//                viewerPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED);
+//                //layoutContainer.validate();
+//            }
+//        }
 
-        if (getParent() != null && layoutContainer == null) {
-            layoutContainer = (JComponent)getParent().getParent();
-            System.out.println(layoutContainer.getClass().getName());
-        }
-        if (layoutContainer != null) {
-            if (layoutContainer.getClass().getName() == "javax.swing.JSplitPane") {
-                setSplitterPosition((JSplitPane)layoutContainer, stackHeight);
-            } else if (layoutContainer.getClass().getName() == "magic.ui.widget.TexturedPanel") {
-                System.out.println("Validating JPanel");
-                Dimension d = new Dimension(getBounds().width, getBounds().height + 1);
-                setPreferredSize(d);
-                setMinimumSize(d);
-                setMaximumSize(d);
-                viewerPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED);
-                layoutContainer.validate();
-            }
-        }
-
-
+        notifyStackViewerUpdated();
 
 //        //updateSplitterComponent(getBounds().height);
 //        if (getParent() != null && splitter == null) {
@@ -160,13 +160,13 @@ public class StackViewer extends JPanel implements ChoiceViewer {
 
     }
 
-    private void setSplitterPosition(JSplitPane splitter, int stackHeight) {
-        if (splitter != null) {
-            System.out.println("splitter.getDividerLocation() = " + splitter.getDividerLocation());
-            splitter.setDividerLocation(splitter.getHeight() - stackHeight - stackTitleBar.getHeight());
-            //splitter.validate();
-        }
-    }
+//    private void setSplitterPosition(JSplitPane splitter, int stackHeight) {
+//        if (splitter != null) {
+//            System.out.println("splitter.getDividerLocation() = " + splitter.getDividerLocation());
+//            splitter.setDividerLocation(splitter.getHeight() - stackHeight - stackTitleBar.getHeight());
+//            //splitter.validate();
+//        }
+//    }
 
 //    private void updateSplitterComponent(int stackHeight) {
 //        if (stackHeight > 0 && splitter == null) {
@@ -259,6 +259,25 @@ public class StackViewer extends JPanel implements ChoiceViewer {
         @Override
         public Color getValidColor() {
             return ThemeFactory.getInstance().getCurrentTheme().getChoiceColor();
+        }
+    }
+
+    public synchronized void addListener(IStackViewerListener obj) {
+        _listeners.add(obj);
+    }
+
+    public synchronized void removeListener(IStackViewerListener obj) {
+        _listeners.remove(obj);
+    }
+
+    private synchronized void notifyStackViewerUpdated() {
+        for (final IStackViewerListener listener : _listeners) {
+            SwingUtilities.invokeLater(new Runnable() {
+                @Override
+                public void run() {
+                    listener.stackViewerUpdated();
+                }
+            });
         }
     }
 }
