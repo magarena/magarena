@@ -31,6 +31,7 @@ import javax.swing.JPanel;
 import javax.swing.JSplitPane;
 import javax.swing.KeyStroke;
 
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
@@ -49,6 +50,7 @@ public final class GamePanel extends JPanel {
     private static final String LOG_KEY="log";
     private static final String PASS_KEY="pass";
     private static final Theme theme = ThemeFactory.getInstance().getCurrentTheme();
+    private static final Color translucentPanelColor = new Color(255, 255, 255, 200);
 
     private final MagicFrame frame;
     private final MagicGame game;
@@ -122,6 +124,7 @@ public final class GamePanel extends JPanel {
         playerViewer=new PlayerViewer(viewerInfo,controller,false);
         opponentViewer=new PlayerViewer(viewerInfo,controller,true);
         gameDuelViewer=new GameDuelViewer(game,controller);
+        gameDuelViewer.setBackground(translucentPanelColor);
         controller.setGameViewer(gameDuelViewer.getGameViewer());
 
         createActionMaps();
@@ -147,6 +150,7 @@ public final class GamePanel extends JPanel {
         splitter.setOpaque(false);
         splitterContainer = new TexturedPanel();
         splitterContainer.setLayout(new MigLayout("insets 0, gap 0"));
+        splitterContainer.setBackground(translucentPanelColor);
 
         updateView();
 
