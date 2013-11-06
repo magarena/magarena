@@ -1,0 +1,11 @@
+name=Temple of Mystery
+url=http://magiccards.info/ths/en/226.html
+image=http://magiccards.info/scans/en/ths/226.jpg
+value=3.792
+rarity=R
+type=Land
+mana=g3u3
+ability=tap add mana {G} or {U};\
+        enters tapped
+timing=tapland
+requires_groovy_code=Temple of Silence

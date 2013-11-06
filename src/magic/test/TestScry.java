@@ -26,11 +26,10 @@ class TestScry extends TestGameBuilder {
         MagicPlayer P = player;
 
         P.setLife(6);
-        addToLibrary(P, "Forest", 20);
-        addToLibrary(P, "Island", 20);
-        addToLibrary(P, "Entreat the Angels", 20);
+        addToLibrary(P, "Forest", 2);
+        addToLibrary(P, "Island", 2);
+        addToLibrary(P, "Entreat the Angels", 1);
         addToLibrary(P, "Sliver Overlord", 1);
-        addToGraveyard(P, "Ink-Eyes, Servant of Oni", 3);
         createPermanent(game,P, "Rupture Spire", false, 10);
         addToHand(P, "Spark Jolt", 1);
         addToHand(P, "Temple of Silence", 1);
@@ -38,11 +37,11 @@ class TestScry extends TestGameBuilder {
         P = opponent;
 
         P.setLife(6);
-        addToLibrary(P, "Mountain", 20);
-        createPermanent(game,P,"Rupture Spire",false,9);
+        addToLibrary(P, "Temple of Silence", 20);
+        createPermanent(game,P,"Rupture Spire",false,1);
         createPermanent(game,P, "Grizzly Bears", false, 1);
-        addToHand(P, "Trained Jackal", 1);
-        addToGraveyard(P, "Ink-Eyes, Servant of Oni", 1);
+        addToHand(P, "Spark Jolt", 1);
+        addToHand(P, "Temple of Silence", 1);
 
         return game;
     }

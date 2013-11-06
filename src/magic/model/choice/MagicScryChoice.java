@@ -12,10 +12,28 @@ import magic.ui.UndoClickedException;
 import magic.ui.choice.MayChoicePanel;
 
 import java.util.concurrent.Callable;
+import java.util.List;
+import java.util.ArrayList;
 
 public class MagicScryChoice extends MagicMayChoice {
     public MagicScryChoice() {
         super("Put this card on the bottom of your library?");
+    }
+    
+    @Override
+    public List<Object[]> getArtificialChoiceResults(
+            final MagicGame game,
+            final MagicEvent event,
+            final MagicPlayer player,
+            final MagicSource source) {
+        
+        if (player.getLibrary().isEmpty()) {
+            final List<Object[]> choiceResultsList=new ArrayList<Object[]>();
+            choiceResultsList.add(new Object[]{NO_CHOICE});
+            return choiceResultsList;
+        } else {
+            return NO_OTHER_CHOICE_RESULTS;
+        }
     }
 
     @Override
@@ -28,13 +46,12 @@ public class MagicScryChoice extends MagicMayChoice {
         final Object[] choiceResults=new Object[1];
         choiceResults[0]=NO_CHOICE;
         
-        final MagicCard topCard = player.getLibrary().getCardAtTop();
-        if (topCard == MagicCard.NONE) {
+        if (player.getLibrary().isEmpty()) {
             return choiceResults;
         }
         
         final MagicCardList cards = new MagicCardList();
-        cards.add(topCard);
+        cards.add(player.getLibrary().getCardAtTop());
         controller.showCards(cards);
 
         controller.disableActionButton(false);
@@ -44,7 +61,7 @@ public class MagicScryChoice extends MagicMayChoice {
             }
         });
             
-        controller.showCards(new MagicCardList());
+        controller.clearCards();
 
         if (choicePanel.isYesClicked()) {
             choiceResults[0]=YES_CHOICE;

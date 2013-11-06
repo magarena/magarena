@@ -12,6 +12,7 @@ import magic.model.MagicCounterType;
 import magic.model.MagicAbility;
 import magic.model.MagicManaCost;
 import magic.model.MagicCardDefinition;
+import magic.model.MagicManaCost;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
 import magic.model.action.MagicCardOnStackAction;
@@ -38,6 +39,7 @@ import magic.model.action.MagicMillLibraryAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicReanimateAction;
+import magic.model.action.MagicSacrificeAction;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
@@ -64,6 +66,7 @@ import magic.model.target.MagicGraveyardTargetPicker;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicMayChoice;
+import magic.model.choice.MagicPayManaCostChoice;
 import magic.data.TokenCardDefinitions;
 
 import java.util.regex.Pattern;
@@ -955,6 +958,24 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    SacrificeUnless(
+        "pay (?<cost>[^\\.]*). If you don't, sacrifice SN.", 
+        MagicTiming.None, 
+        "Sacrifice"
+    ) {
+        public MagicChoice getChoice(final String rule) {
+            final Matcher matcher = matched(rule);
+            return new MagicPayManaCostChoice(MagicManaCost.create(matcher.group("cost")));
+        }
+        public MagicEventAction getNoAction(final String rule) {
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.doAction(new MagicSacrificeAction(event.getPermanent()));
+                }
+            };
+        }
+    },
     ;
 
     private final Pattern pattern;
@@ -1032,6 +1053,10 @@ public enum MagicRuleEventAction {
         return action;
     }
     
+    public MagicEventAction getNoAction(final String rule) {
+        return MagicEvent.NO_ACTION;
+    }
+    
     public MagicTiming getTiming(final String rule) {
         return timing;
     }
@@ -1105,9 +1130,11 @@ public enum MagicRuleEventAction {
     }
 
     public static MagicSourceEvent create(final String rule) {
-        final String effect = rule.replaceFirst("^PN may ", "").replaceFirst("^have ", "");
+        final String ruleWithoutMay = rule.replaceFirst("^PN may ", "");
+        final String effect = ruleWithoutMay.replaceFirst("^have ", "");
         final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
         final MagicEventAction action  = ruleAction.getAction(effect);
+        final MagicEventAction noAction  = ruleAction.getNoAction(effect);
         final MagicTargetPicker<?> picker = ruleAction.getPicker(effect);
         final MagicChoice choice = ruleAction.getChoice(effect);
 
@@ -1124,10 +1151,12 @@ public enum MagicRuleEventAction {
                             public void executeEvent(final MagicGame game, final MagicEvent event) {
                                 if (event.isYes()) {
                                     action.executeEvent(game, event);
+                                } else {
+                                    noAction.executeEvent(game, event);
                                 }
                             }
                         },
-                        "PN may$ " + rule + "$"
+                        "PN may$ " + ruleWithoutMay + "$"
                     );
                 }
                 @Override

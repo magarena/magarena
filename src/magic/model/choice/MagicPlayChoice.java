@@ -91,11 +91,10 @@ public class MagicPlayChoice extends MagicChoice {
             final MagicPlayer player,
             final MagicSource source) throws UndoClickedException {
 
-        //always pass draw and begin combat option
-        if (game.canAlwaysPass()) {
-            if (!game.getStack().isEmpty()) {
-                controller.pause(GeneralConfig.getInstance().getMessageDelay());
-            }
+        //always pass draw and begin combat if
+        //  option is true and 
+        //  stack is empty
+        if (game.canAlwaysPass() && game.getStack().isEmpty()) {
             return PASS_CHOICE_RESULTS;
         }
 

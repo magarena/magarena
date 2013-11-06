@@ -785,7 +785,7 @@ public class MagicTargetChoice extends MagicChoice {
         controller.setValidChoices(validChoices,false);
         controller.waitForInput();
         if (targetFilter.acceptType(MagicTargetType.Library)) {
-            controller.showCards(new MagicCardList());
+            controller.clearCards();
         }
         return new Object[]{controller.getChoiceClicked()};
     }

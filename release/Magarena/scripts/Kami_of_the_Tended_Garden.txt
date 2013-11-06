@@ -7,6 +7,6 @@ type=Creature
 subtype=Spirit
 cost={3}{G}
 pt=4/4
-ability=soulshift 3
+ability=soulshift 3;\
+        your upkeep effect PN may pay {G}. If you don't, sacrifice SN.
 timing=main
-requires_groovy_code

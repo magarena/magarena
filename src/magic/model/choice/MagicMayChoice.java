@@ -20,10 +20,11 @@ import java.util.concurrent.Callable;
 
 public class MagicMayChoice extends MagicChoice {
 
-    private static final List<Object[]> NO_OTHER_CHOICE_RESULTS=Arrays.asList(
-            new Object[]{YES_CHOICE},
-            new Object[]{NO_CHOICE});
-
+    protected static final List<Object[]> NO_OTHER_CHOICE_RESULTS = Arrays.asList(
+        new Object[]{YES_CHOICE},
+        new Object[]{NO_CHOICE}
+    );
+    
     private final MagicChoice[] choices;
     private final MagicTargetChoice targetChoice;
     private final int manaChoiceResultIndex;
