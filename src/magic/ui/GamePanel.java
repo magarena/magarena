@@ -139,6 +139,7 @@ public final class GamePanel
         playerViewer=new PlayerViewer(viewerInfo,controller,false);
         opponentViewer=new PlayerViewer(viewerInfo,controller,true);
         gameDuelViewer=new GameDuelViewer(game,controller);
+        gameDuelViewer.setBackground(translucentPanelColor);
         controller.setGameViewer(gameDuelViewer.getGameViewer());
 
         createActionMaps();
