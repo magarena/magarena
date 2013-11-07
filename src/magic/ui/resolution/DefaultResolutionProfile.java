@@ -177,7 +177,7 @@ public class DefaultResolutionProfile implements ResolutionProfile {
     	result.setBoundary(ResolutionProfileType.GameLHS, r);
     }
 
-    private int getPanelWidthLHS() {
+    public static int getPanelWidthLHS() {
     	return LHS_CONTENT_WIDTH + (OUTER_MARGIN * 2);
     }
 }

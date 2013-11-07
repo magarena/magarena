@@ -14,7 +14,6 @@ import magic.ui.viewer.BattlefieldViewer;
 import magic.ui.viewer.CardViewer;
 import magic.ui.viewer.GameDuelViewer;
 import magic.ui.viewer.HandGraveyardExileViewer;
-import magic.ui.viewer.IStackViewerListener;
 import magic.ui.viewer.ImageBattlefieldViewer;
 import magic.ui.viewer.ImageCombatViewer;
 import magic.ui.viewer.ImageHandGraveyardExileViewer;
@@ -28,25 +27,18 @@ import magic.ui.widget.ZoneBackgroundLabel;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.AbstractAction;
-import javax.swing.BorderFactory;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JSplitPane;
 import javax.swing.KeyStroke;
 
-import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
 
-public final class GamePanel
-    extends JPanel
-    implements IStackViewerListener {
+public final class GamePanel extends JPanel {
 
     private static final long serialVersionUID = 1L;
 
@@ -79,14 +71,8 @@ public final class GamePanel
     private final ImageBattlefieldViewer imageOpponentPermanentViewer;
     private final ImageCombatViewer imageCombatViewer;
     private final JPanel lhsPanel, rhsPanel;
-    private final JPanel stackContainer;
-    private final JSplitPane splitter;
-    private final JPanel splitterContainer;
-    private final boolean isLogAutosizeMode = true;
-    private final JLabel dummyLabel = new JLabel();
 
     private ResolutionProfileResult result;
-    private final JPanel logStackPanel = new JPanel();
     private final LogStackViewer logStackViewer;
 
     public GamePanel(
@@ -138,8 +124,10 @@ public final class GamePanel
 
         playerViewer=new PlayerViewer(viewerInfo,controller,false);
         opponentViewer=new PlayerViewer(viewerInfo,controller,true);
+
         gameDuelViewer=new GameDuelViewer(game,controller);
         gameDuelViewer.setBackground(translucentPanelColor);
+
         controller.setGameViewer(gameDuelViewer.getGameViewer());
 
         createActionMaps();
@@ -151,41 +139,42 @@ public final class GamePanel
         opponentPermanentViewer=new BattlefieldViewer(viewerInfo,controller,true);
 
         imageStackViewer=new StackViewer(viewerInfo,controller,true);
-        imageStackViewer.addListener(this);
+        imageStackViewer.setVisible(false);
+        imageStackViewer.addListener(logStackViewer);
 
         imageHandGraveyardViewer=new ImageHandGraveyardExileViewer(viewerInfo,controller);
         imagePlayerPermanentViewer=new ImageBattlefieldViewer(viewerInfo,controller,false);
         imageOpponentPermanentViewer=new ImageBattlefieldViewer(viewerInfo,controller,true);
         imageCombatViewer=new ImageCombatViewer(viewerInfo,controller);
 
-        stackContainer = new JPanel(new MigLayout("insets 0, gap 0"));
-        stackContainer.setOpaque(false);
-
-        splitter = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
-        //splitter.setBorder(FontsAndBorders.BLACK_BORDER);
-        splitter.setOneTouchExpandable(false);
-        splitter.setContinuousLayout(true);
-        splitter.setResizeWeight(1);
-        //splitter.setDividerLocation(200);
-        splitter.setOpaque(false);
-        splitter.setEnabled(true);
-//        splitter.addPropertyChangeListener(JSplitPane.DIVIDER_LOCATION_PROPERTY, new PropertyChangeListener() {
-//            @Override
-//            public void propertyChange(PropertyChangeEvent evt) {
-//                setLogStackPanelLayout();
-//            }
-//        });
-
-        splitterContainer = new JPanel();
-        splitterContainer.setLayout(new MigLayout("insets 0, gap 0"));
-
-//        dummyLabel.addComponentListener(new ComponentAdapter() {
-//            @Override
-//            public void componentResized(ComponentEvent e) {
-//                super.componentResized(e);
-//                dummyLabel.setPreferredSize(new Dimension(dummyLabel.getWidth(), dummyLabel.getHeight()));
-//            }
-//        });
+//        stackContainer = new JPanel(new MigLayout("insets 0, gap 0"));
+//        stackContainer.setOpaque(false);
+//
+//        splitter = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
+//        //splitter.setBorder(FontsAndBorders.BLACK_BORDER);
+//        splitter.setOneTouchExpandable(false);
+//        splitter.setContinuousLayout(true);
+//        splitter.setResizeWeight(1);
+//        //splitter.setDividerLocation(200);
+//        splitter.setOpaque(false);
+//        splitter.setEnabled(true);
+////        splitter.addPropertyChangeListener(JSplitPane.DIVIDER_LOCATION_PROPERTY, new PropertyChangeListener() {
+////            @Override
+////            public void propertyChange(PropertyChangeEvent evt) {
+////                setLogStackPanelLayout();
+////            }
+////        });
+//
+//        splitterContainer = new JPanel();
+//        splitterContainer.setLayout(new MigLayout("insets 0, gap 0"));
+//
+////        dummyLabel.addComponentListener(new ComponentAdapter() {
+////            @Override
+////            public void componentResized(ComponentEvent e) {
+////                super.componentResized(e);
+////                dummyLabel.setPreferredSize(new Dimension(dummyLabel.getWidth(), dummyLabel.getHeight()));
+////            }
+////        });
 
         updateView();
 
@@ -395,22 +384,28 @@ public final class GamePanel
             imageCombatViewer.setBounds(result.getBoundary(ResolutionProfileType.GameImageCombatViewer));
         }
 
-        setThisLayout(result);
+        setGamePanelLayout();
 
         controller.update();
     }
 
-    private void setThisLayout(final ResolutionProfileResult result) {
+    /**
+     * The game screen layout is split into two columns using MigLayout.
+     * The LHS is a fixed-width column that uses MigLayout to position UI components.
+     * The RHS column represents the battlefield and uses absolute positioning.
+     */
+    private void setGamePanelLayout() {
 
+        String layoutConstraints =
+                "insets 0," +           // no margins.
+                "gap 0," +              // no spacing between left & right panels.
+                "flowx," +              // horizontal layout.
+                "";                     // add "debug" to show layout outlines.
 
-        Rectangle r = result.getBoundary(ResolutionProfileType.GameLHS);
-
-        // LHS and RHS
         removeAll();
-        setLayout(new MigLayout(
-                "insets 0, gap 0, flowx, wrap 2",
-                "[" + r.width +"px!][]"));
-        add(lhsPanel, "w 100%, h 100%"); //500!");
+        setLayout(new MigLayout(layoutConstraints));
+
+        add(lhsPanel, "w " + DefaultResolutionProfile.getPanelWidthLHS() +"!, h 100%");
         add(rhsPanel, "w 100%, h 100%");
 
         setLeftSideLayout();
@@ -441,63 +436,6 @@ public final class GamePanel
         lhsPanel.add(gameDuelViewer, "h " + DefaultResolutionProfile.GAME_VIEWER_HEIGHT + "!");
         lhsPanel.add(playerViewer,   "h " + DefaultResolutionProfile.PLAYER_VIEWER_HEIGHT_SMALL + "!");
 
-    }
-
-//    private void setSplitterLayout() {
-//        setLogStackPanelLayout();
-//        splitter.setTopComponent(new AlphaContainer(logStackPanel));
-//        splitter.setBottomComponent(dummyLabel);
-//    }
-
-    private void setLogStackPanelLayout() {
-
-        System.out.println("GamePanel.setLogStackPanelLayout");
-        System.out.print("-> logStackPanel pref=" + logStackPanel.getPreferredSize().height);
-        System.out.println(", size=" + logStackPanel.getSize().height);
-        System.out.print("-> logBookViewer pref=" + logBookViewer.getPreferredSize().height);
-        System.out.println(", size=" + logBookViewer.getSize().height);
-        System.out.print("-> imageStackViewer pref=" + imageStackViewer.getPreferredSize().height);
-        System.out.println(", size=" + imageStackViewer.getSize().height);
-
-//        stackContainer.add(imageStackViewer, "w 100%, pushy, bottom");
-//        stackContainer.setMinimumSize(imageStackViewer.getMinimumSize());
-//        stackContainer.setPreferredSize(imageStackViewer.getPreferredSize());
-//        stackContainer.setMaximumSize(imageStackViewer.getMaximumSize());
-
-        logStackPanel.removeAll();
-        logStackPanel.setLayout(new BorderLayout(0, 0)); // new MigLayout("insets 0, gap 0, flowy"));
-        // p.setBackground(Color.MAGENTA);
-        logStackPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
-        logStackPanel.setBackground(new Color(255, 255, 255, 200));
-
-        logStackPanel.setMinimumSize(new Dimension(300, 40));
-        int h1 = logStackPanel.getSize().height;
-
-
-
-        logBookViewer.setMinimumSize(new Dimension(300, 20));
-
-//        int h2 = imageStackViewer.stackHeight;
-//        if (h1 - h2 < 20) {
-//            h2 = h1-20;
-//        }
-
-//        imageStackViewer.setPreferredSize(new Dimension(300, h2 + 1));
-        imageStackViewer.setMinimumSize(new Dimension(300, 21));
-        //imageStackViewer.setMaximumSize(new Dimension(300, imageStackViewer.stackHeight + 1));
-
-
-        //int h = lhsPanel.getHeight() - imageStackViewer.getPreferredSize().height;
-        logStackPanel.add(logBookViewer, BorderLayout.CENTER); //  "w 100%, hmin 20"); //, h " + h + "!");
-        logStackPanel.add(imageStackViewer, BorderLayout.SOUTH); //  "w 100%, hmin 20");
-
-    }
-
-    @Override
-    public void stackViewerUpdated() {
-        System.out.println("GamePanel.stackViewerUpdated : height = " + imageStackViewer.getHeight());
-        setLogStackPanelLayout();
-        lhsPanel.revalidate();
     }
 
 }
