@@ -105,12 +105,9 @@ public final class GamePanel extends JPanel {
         rhsPanel = new JPanel(null);
         rhsPanel.setOpaque(false);
 
-        logStackViewer = new LogStackViewer();
-        logStackViewer.setBackground(translucentPanelColor);
-
         logBookViewer=new LogBookViewer(game.getLogBook());
-        logBookViewer.setVisible(true);
-        logBookViewer.setOpaque(false);
+//        logBookViewer.setVisible(true);
+//        logBookViewer.setOpaque(false);
 
         cardViewer=new CardViewer("Card",false,true);
         add(cardViewer, "w 100%, h 100%");
@@ -139,8 +136,11 @@ public final class GamePanel extends JPanel {
         opponentPermanentViewer=new BattlefieldViewer(viewerInfo,controller,true);
 
         imageStackViewer=new StackViewer(viewerInfo,controller,true);
-        imageStackViewer.setVisible(false);
-        imageStackViewer.addListener(logStackViewer);
+        //imageStackViewer.setVisible(false);
+        //imageStackViewer.addListener(logStackViewer);
+
+        logStackViewer = new LogStackViewer(logBookViewer, imageStackViewer);
+        logStackViewer.setBackground(translucentPanelColor);
 
         imageHandGraveyardViewer=new ImageHandGraveyardExileViewer(viewerInfo,controller);
         imagePlayerPermanentViewer=new ImageBattlefieldViewer(viewerInfo,controller,false);
@@ -305,6 +305,9 @@ public final class GamePanel extends JPanel {
     }
 
     public void update() {
+
+        System.out.println("GamePanel.update");
+
         playerViewer.update();
         opponentViewer.update();
         gameDuelViewer.update();
@@ -435,6 +438,8 @@ public final class GamePanel extends JPanel {
         lhsPanel.add(logStackViewer, "h 100%");
         lhsPanel.add(gameDuelViewer, "h " + DefaultResolutionProfile.GAME_VIEWER_HEIGHT + "!");
         lhsPanel.add(playerViewer,   "h " + DefaultResolutionProfile.PLAYER_VIEWER_HEIGHT_SMALL + "!");
+
+        logStackViewer.setLogStackLayout();
 
     }
 

@@ -13,8 +13,6 @@ import net.miginfocom.swing.MigLayout;
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.SwingUtilities;
-
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -67,7 +65,7 @@ public class StackViewer extends JPanel implements ChoiceViewer {
 
         buttons=new ArrayList<StackButton>();
 
-        update();
+        //update();
 
     }
 
@@ -100,9 +98,7 @@ public class StackViewer extends JPanel implements ChoiceViewer {
 
         final JPanel contentPanel=viewerPane.getContent();
         for (final StackViewerInfo stackInfo : viewerInfo.getStack()) {
-            for (int i = 0; i < 1; i++) {
-                contentPanel.add(getNewStackButtonPanel(stackInfo, maxWidth));
-            }
+            contentPanel.add(getNewStackButtonPanel(stackInfo, maxWidth));
         }
 
         if (image) {
@@ -120,6 +116,8 @@ public class StackViewer extends JPanel implements ChoiceViewer {
         showValidChoices(controller.getValidChoices());
         viewerPane.switchContent();
         repaint();
+
+        notifyStackViewerUpdated();
 
 //
 //        System.out.println();
@@ -141,8 +139,6 @@ public class StackViewer extends JPanel implements ChoiceViewer {
 //                //layoutContainer.validate();
 //            }
 //        }
-
-        notifyStackViewerUpdated();
 
 //        //updateSplitterComponent(getBounds().height);
 //        if (getParent() != null && splitter == null) {
@@ -272,12 +268,13 @@ public class StackViewer extends JPanel implements ChoiceViewer {
 
     private synchronized void notifyStackViewerUpdated() {
         for (final IStackViewerListener listener : _listeners) {
-            SwingUtilities.invokeLater(new Runnable() {
-                @Override
-                public void run() {
-                    listener.stackViewerUpdated();
-                }
-            });
+            listener.stackViewerUpdated();
+//            SwingUtilities.invokeLater(new Runnable() {
+//                @Override
+//                public void run() {
+//                    listener.stackViewerUpdated();
+//                }
+//            });
         }
     }
 }
