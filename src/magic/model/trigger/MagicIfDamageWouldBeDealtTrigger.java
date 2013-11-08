@@ -21,12 +21,21 @@ public abstract class MagicIfDamageWouldBeDealtTrigger extends MagicTrigger<Magi
         return MagicTriggerType.IfDamageWouldBeDealt;
     }
     
-    public static final MagicIfDamageWouldBeDealtTrigger PreventDamageDealtToDealtBy = new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.PREVENT_DAMAGE) {
+    public static final MagicIfDamageWouldBeDealtTrigger PreventCombatDamageDealtToDealtBy = new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.PREVENT_DAMAGE) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             if (damage.isCombat() && 
                 (damage.getTarget() == permanent || damage.getSource() == permanent)) {
-                // Replacement effect. Generates no event or action.
+                damage.prevent();
+            }
+            return MagicEvent.NONE;
+        }
+    };
+    
+    public static final MagicIfDamageWouldBeDealtTrigger PreventDamageDealtTo = new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.PREVENT_DAMAGE) {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+            if (damage.getTarget() == permanent) {
                 damage.prevent();
             }
             return MagicEvent.NONE;

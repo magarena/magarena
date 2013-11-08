@@ -44,8 +44,7 @@ public class MagicDealDamageAction extends MagicAction {
         
         if (target.isPermanent()) {
             final MagicPermanent targetPermanent = (MagicPermanent)target;
-            if (targetPermanent.hasProtectionFrom(damage.getSource()) ||
-                targetPermanent.hasState(MagicPermanentState.PreventAllDamage)) {
+            if (targetPermanent.hasProtectionFrom(damage.getSource())) {
                 return 0;
             }
         }

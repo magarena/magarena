@@ -17,9 +17,9 @@
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicGainAbilityAction(creature,MagicAbility.Flying));
-                    game.doAction(MagicChangeStateAction.Set(
+                    game.doAction(new MagicAddTurnTriggerAction(
                         creature,
-                        MagicPermanentState.PreventAllDamage
+                        MagicIfDamageWouldBeDealtTrigger.PreventDamageDealtTo
                     ));
                 }
             });

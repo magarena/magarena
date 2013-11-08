@@ -41,7 +41,7 @@ def TARGET_ATTACKING_CREATURE_YOU_CONTROL = new MagicTargetChoice(
                     game.doAction(new MagicUntapAction(creature));
                     game.doAction(new MagicAddTurnTriggerAction(
                         creature,
-                        MagicIfDamageWouldBeDealtTrigger.PreventDamageDealtToDealtBy
+                        MagicIfDamageWouldBeDealtTrigger.PreventCombatDamageDealtToDealtBy
                     ));
                 }
             });
