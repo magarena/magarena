@@ -16,7 +16,6 @@ public enum MagicPermanentState {
     CannotAttack("can't attack",""),
     NoCombatDamage("assigns no combat damage",""),
     MustPayEchoCost("echo",""),
-    PreventAllDamage("prevent all damage that would be dealt this turn",""),
     Monstrous("monstrous", "")
     ;
 

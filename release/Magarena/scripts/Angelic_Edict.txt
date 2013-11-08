@@ -5,5 +5,5 @@ value=2.763
 rarity=C
 type=Sorcery
 cost={4}{W}
-effect=Exile target artifact or enchantment.
+effect=Exile target creature or enchantment.
 timing=removal
