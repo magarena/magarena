@@ -38,7 +38,7 @@ public class StackViewer extends JPanel implements ChoiceViewer {
 
     public StackViewer(final ViewerInfo viewerInfo,final GameController controller,final boolean image) {
 
-        boolean useMig = false;
+        boolean useMigLayout = false;
 
         this.viewerInfo=viewerInfo;
         this.controller=controller;
@@ -47,25 +47,23 @@ public class StackViewer extends JPanel implements ChoiceViewer {
 
         controller.registerChoiceViewer(this);
 
-        setLayout(useMig ? new MigLayout("debug, insets 0, gap 0, flowy") : new BorderLayout(0, 0));
+        setLayout(useMigLayout ? new MigLayout("debug, insets 0, gap 0, flowy") : new BorderLayout(0, 0));
 
         final Theme theme = ThemeFactory.getInstance().getCurrentTheme();
         stackTitleBar = new TitleBar("Stack");
         stackTitleBar.setBorder(BorderFactory.createMatteBorder(1, 0, 0, 0, Color.BLACK));
         stackTitleBar.setIcon(theme.getIcon(Theme.ICON_SMALL_STACK));
-        add(stackTitleBar, useMig ? "w 100%, h 20px!" : BorderLayout.NORTH);
+        add(stackTitleBar, useMigLayout ? "w 100%, h 20px!" : BorderLayout.NORTH);
 
-        viewerPane=new ViewerScrollPane(); //JScrollPane();
+        viewerPane=new ViewerScrollPane();
         viewerPane.setBorder(BorderFactory.createEmptyBorder());
-        add(viewerPane, useMig ? "w 100%, h 0" : BorderLayout.CENTER);
+        add(viewerPane, useMigLayout ? "w 100%, h 0" : BorderLayout.CENTER);
 
         // Set unchanging minimum sizes.
         setMinimumSize(new Dimension(0, stackTitleBar.getMinimumSize().height));
         viewerPane.setMinimumSize(new Dimension(0, 0));
 
         buttons=new ArrayList<StackButton>();
-
-        //update();
 
     }
 
@@ -90,7 +88,6 @@ public class StackViewer extends JPanel implements ChoiceViewer {
     }
 
     public void update() {
-        System.out.print("StackViewer.update()");
 
         final int maxWidth=getWidth()-40;
 
@@ -110,77 +107,13 @@ public class StackViewer extends JPanel implements ChoiceViewer {
             }
         }
 
-        int stackHeight = getBounds().height;
-        System.out.println(" : contentHeight = " + stackHeight); // contentHeight);
-
         showValidChoices(controller.getValidChoices());
         viewerPane.switchContent();
         repaint();
 
         notifyStackViewerUpdated();
 
-//
-//        System.out.println();
-//
-//        if (getParent() != null && layoutContainer == null) {
-//            layoutContainer = (JComponent)getParent().getParent();
-//            System.out.println(layoutContainer.getClass().getName());
-//        }
-//        if (layoutContainer != null) {
-//            if (layoutContainer.getClass().getName() == "javax.swing.JSplitPane") {
-//                setSplitterPosition((JSplitPane)layoutContainer, stackHeight);
-//            } else if (layoutContainer.getClass().getName() == "magic.ui.widget.TexturedPanel") {
-//                System.out.println("Validating JPanel");
-//                Dimension d = new Dimension(getBounds().width, getBounds().height + 1);
-//                setPreferredSize(d);
-//                setMinimumSize(d);
-//                setMaximumSize(d);
-//                viewerPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED);
-//                //layoutContainer.validate();
-//            }
-//        }
-
-//        //updateSplitterComponent(getBounds().height);
-//        if (getParent() != null && splitter == null) {
-//            Component c = getParent().getParent();
-//            if (c.getClass().getName() == "javax.swing.JSplitPane") {
-//                splitter = (JSplitPane)getParent().getParent();
-//            }
-//        }
-//
-//        if (splitter != null) {
-//            setSplitterPosition(stackHeight);
-//        } else {
-//
-//        }
-
     }
-
-//    private void setSplitterPosition(JSplitPane splitter, int stackHeight) {
-//        if (splitter != null) {
-//            System.out.println("splitter.getDividerLocation() = " + splitter.getDividerLocation());
-//            splitter.setDividerLocation(splitter.getHeight() - stackHeight - stackTitleBar.getHeight());
-//            //splitter.validate();
-//        }
-//    }
-
-//    private void updateSplitterComponent(int stackHeight) {
-//        if (stackHeight > 0 && splitter == null) {
-//            Component p = getParent();
-//            while (p != null) {
-//                if (p.getClass().getName() == "javax.swing.JSplitPane") {
-//                    //splitter = (JSplitPane)p;
-//                    break;
-//                }
-//            }
-//        }
-//        if (splitter != null) {
-//
-////            } else {
-////                throw new NullPointerException("Could not locate JSplitPane component.");
-////            }
-//        }
-//    }
 
     public boolean isEmpty() {
 
@@ -269,12 +202,6 @@ public class StackViewer extends JPanel implements ChoiceViewer {
     private synchronized void notifyStackViewerUpdated() {
         for (final IStackViewerListener listener : _listeners) {
             listener.stackViewerUpdated();
-//            SwingUtilities.invokeLater(new Runnable() {
-//                @Override
-//                public void run() {
-//                    listener.stackViewerUpdated();
-//                }
-//            });
         }
     }
 }

@@ -106,8 +106,6 @@ public final class GamePanel extends JPanel {
         rhsPanel.setOpaque(false);
 
         logBookViewer=new LogBookViewer(game.getLogBook());
-//        logBookViewer.setVisible(true);
-//        logBookViewer.setOpaque(false);
 
         cardViewer=new CardViewer("Card",false,true);
         add(cardViewer, "w 100%, h 100%");
@@ -134,11 +132,7 @@ public final class GamePanel extends JPanel {
         handGraveyardViewer=new HandGraveyardExileViewer(viewerInfo,controller);
         playerPermanentViewer=new BattlefieldViewer(viewerInfo,controller,false);
         opponentPermanentViewer=new BattlefieldViewer(viewerInfo,controller,true);
-
         imageStackViewer=new StackViewer(viewerInfo,controller,true);
-        //imageStackViewer.setVisible(false);
-        //imageStackViewer.addListener(logStackViewer);
-
         logStackViewer = new LogStackViewer(logBookViewer, imageStackViewer);
         logStackViewer.setBackground(translucentPanelColor);
 
@@ -146,35 +140,6 @@ public final class GamePanel extends JPanel {
         imagePlayerPermanentViewer=new ImageBattlefieldViewer(viewerInfo,controller,false);
         imageOpponentPermanentViewer=new ImageBattlefieldViewer(viewerInfo,controller,true);
         imageCombatViewer=new ImageCombatViewer(viewerInfo,controller);
-
-//        stackContainer = new JPanel(new MigLayout("insets 0, gap 0"));
-//        stackContainer.setOpaque(false);
-//
-//        splitter = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
-//        //splitter.setBorder(FontsAndBorders.BLACK_BORDER);
-//        splitter.setOneTouchExpandable(false);
-//        splitter.setContinuousLayout(true);
-//        splitter.setResizeWeight(1);
-//        //splitter.setDividerLocation(200);
-//        splitter.setOpaque(false);
-//        splitter.setEnabled(true);
-////        splitter.addPropertyChangeListener(JSplitPane.DIVIDER_LOCATION_PROPERTY, new PropertyChangeListener() {
-////            @Override
-////            public void propertyChange(PropertyChangeEvent evt) {
-////                setLogStackPanelLayout();
-////            }
-////        });
-//
-//        splitterContainer = new JPanel();
-//        splitterContainer.setLayout(new MigLayout("insets 0, gap 0"));
-//
-////        dummyLabel.addComponentListener(new ComponentAdapter() {
-////            @Override
-////            public void componentResized(ComponentEvent e) {
-////                super.componentResized(e);
-////                dummyLabel.setPreferredSize(new Dimension(dummyLabel.getWidth(), dummyLabel.getHeight()));
-////            }
-////        });
 
         updateView();
 
@@ -305,8 +270,6 @@ public final class GamePanel extends JPanel {
     }
 
     public void update() {
-
-        System.out.println("GamePanel.update");
 
         playerViewer.update();
         opponentViewer.update();
