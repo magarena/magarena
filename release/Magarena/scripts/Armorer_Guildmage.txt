@@ -1,0 +1,13 @@
+name=Armorer Guildmage
+url=http://magiccards.info/mr/en/156.html
+image=http://magiccards.info/scans/en/mr/156.jpg
+value=2.353
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={R}
+pt=1/1
+ability=pay {G},{T}: Target creature gets +0/+1 until end of turn.;\
+        pay {B},{T}: Target creature gets +1/+0 until end of turn.
+timing=main
+
