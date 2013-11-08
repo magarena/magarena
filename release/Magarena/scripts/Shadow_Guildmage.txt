@@ -1,0 +1,11 @@
+name=Shadow Guildmage
+url=http://magiccards.info/mr/en/38.html
+image=http://magiccards.info/scans/en/mr/38.jpg
+value=3.630
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={B}
+pt=1/1
+timing=main
+requires_groovy_code=Granger_Guildmage;Civic_Guildmage
