@@ -16,8 +16,9 @@
             if (amount > 0) {
                 game.doAction(new MagicChangeLifeAction(player,amount));
             }
-            game.doAction(new MagicChangePlayerStateAction(player,MagicPlayerState.PreventAllCombatDamage));
-            game.doAction(new MagicChangePlayerStateAction(player.getOpponent(),MagicPlayerState.PreventAllCombatDamage));
+            game.doAction(new MagicAddTurnTriggerAction(
+                MagicIfDamageWouldBeDealtTrigger.PreventCombatDamage
+            ));
         }
     }
 ]

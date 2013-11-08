@@ -12,15 +12,10 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
+            game.doAction(new MagicAddTurnTriggerAction(
+                MagicIfDamageWouldBeDealtTrigger.PreventCombatDamage
+            ));
             final MagicPlayer player = event.getPlayer();
-            game.doAction(new MagicChangePlayerStateAction(
-                player,
-                MagicPlayerState.PreventAllCombatDamage
-            ));
-            game.doAction(new MagicChangePlayerStateAction(
-                player.getOpponent(),
-                MagicPlayerState.PreventAllCombatDamage
-            ));
             if (MagicCondition.FATEFUL_HOUR.accept(event.getSource())) {
                 final Collection<MagicPermanent> targets =
                     game.filterPermanents(player,MagicTargetFilter.TARGET_ATTACKING_CREATURE);
