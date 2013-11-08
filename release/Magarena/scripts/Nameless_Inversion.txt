@@ -1,0 +1,12 @@
+name=Nameless Inversion
+url=http://magiccards.info/lw/en/128.html
+image=http://magiccards.info/scans/en/lw/128.jpg
+value=4.211
+rarity=C
+type=Tribal,Instant
+subtype=Shapeshifter
+ability=changeling
+cost={1}{B}
+timing=removal
+requires_groovy_code
+
