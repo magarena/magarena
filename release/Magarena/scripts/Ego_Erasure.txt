@@ -1,0 +1,12 @@
+name=Ego Erasure
+url=http://magiccards.info/lw/en/59.html
+image=http://magiccards.info/scans/en/lw/59.jpg
+value=2.756
+rarity=U
+type=Tribal,Instant
+subtype=Shapeshifter
+ability=changeling
+cost={2}{U}
+timing=removal
+requires_groovy_code
+
