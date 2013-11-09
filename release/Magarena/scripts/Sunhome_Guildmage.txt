@@ -1,0 +1,13 @@
+name=Sunhome Guildmage
+url=http://magiccards.info/gtc/en/200.html
+image=http://magiccards.info/scans/en/gtc/200.jpg
+value=3.330
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={R}{W}
+pt=2/2
+ability=pay {2}{R}{W}: PN puts a 1/1 red and white Soldier creature token with haste onto the battlefield.;\
+        pay {1}{R}{W}: Creatures PN controls get +1/+0 until end of turn.
+timing=main
+
