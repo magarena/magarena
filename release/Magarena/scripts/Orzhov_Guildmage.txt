@@ -1,0 +1,12 @@
+name=Orzhov Guildmage
+url=http://magiccards.info/cmd/en/217.html
+image=http://magiccards.info/scans/en/cmd/217.jpg
+value=3.677
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={W/B}{W/B}
+pt=2/2
+timing=main
+requires_groovy_code
+
