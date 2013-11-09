@@ -1,0 +1,11 @@
+name=Nivix Guildmage
+url=http://magiccards.info/rtr/en/182.html
+image=http://magiccards.info/scans/en/rtr/182.jpg
+value=3.750
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={U}{R}
+pt=2/2
+timing=main
+requires_groovy_code
