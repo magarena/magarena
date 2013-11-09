@@ -35,7 +35,7 @@ public class LogBookViewer extends JPanel {
     private static final long serialVersionUID = 1L;
 
     private static final Border SEPARATOR_BORDER=BorderFactory.createCompoundBorder(
-        BorderFactory.createMatteBorder(0,0,1,0,Color.BLACK),
+        BorderFactory.createMatteBorder(0,0,1,0,Color.GRAY),
         FontsAndBorders.EMPTY_BORDER
     );
 

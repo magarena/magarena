@@ -33,7 +33,7 @@ public class LogStackViewer extends TexturedPanel implements IStackViewerListene
     public void setLogStackLayout() {
 
         int viewerHeight = getSize().height;
-        int stackHeight = stackViewer.getPreferredSize().height + 1;
+        int stackHeight = stackViewer.getPreferredSize().height;
         int logHeight = 60; // minimum log height.
 
         if (stackHeight > 0) {

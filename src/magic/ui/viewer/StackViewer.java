@@ -1,18 +1,20 @@
 package magic.ui.viewer;
 
 import magic.ui.GameController;
-import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.PanelButton;
 import magic.ui.widget.TextLabel;
 import magic.ui.widget.TitleBar;
-import magic.ui.widget.ViewerScrollPane;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.ScrollPaneConstants;
+import javax.swing.Scrollable;
+
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -25,91 +27,82 @@ import java.util.Set;
 public class StackViewer extends JPanel implements ChoiceViewer {
 
     private static final long serialVersionUID = 1L;
+    private static final String TITLE_CAPTION = "Stack";
 
     private final ViewerInfo viewerInfo;
     private final GameController controller;
-    private final ViewerScrollPane viewerPane;
-    private final boolean image;
+    private final boolean isImageMode;
     private final Collection<StackButton> buttons;
-    private Rectangle setRectangle = new Rectangle();
     private List<IStackViewerListener> _listeners = new ArrayList<>();
+    private JScrollPane stackScrollPane;
+    private ScrollablePanel stackScrollablePanel;
+    private TitleBar stackTitleBar;
 
-    final TitleBar stackTitleBar;
-
-    public StackViewer(final ViewerInfo viewerInfo,final GameController controller,final boolean image) {
-
-        boolean useMigLayout = false;
+    public StackViewer(
+            final ViewerInfo viewerInfo,
+            final GameController controller,
+            final boolean isImageMode0) {
 
         this.viewerInfo=viewerInfo;
         this.controller=controller;
-        this.image=image;
-        setOpaque(false);
+        this.isImageMode=isImageMode0;
 
         controller.registerChoiceViewer(this);
-
-        setLayout(useMigLayout ? new MigLayout("debug, insets 0, gap 0, flowy") : new BorderLayout(0, 0));
-
-        final Theme theme = ThemeFactory.getInstance().getCurrentTheme();
-        stackTitleBar = new TitleBar("Stack");
-        stackTitleBar.setBorder(BorderFactory.createMatteBorder(1, 0, 0, 0, Color.BLACK));
-        stackTitleBar.setIcon(theme.getIcon(Theme.ICON_SMALL_STACK));
-        add(stackTitleBar, useMigLayout ? "w 100%, h 20px!" : BorderLayout.NORTH);
-
-        viewerPane=new ViewerScrollPane();
-        viewerPane.setBorder(BorderFactory.createEmptyBorder());
-        add(viewerPane, useMigLayout ? "w 100%, h 0" : BorderLayout.CENTER);
-
-        // Set unchanging minimum sizes.
-        setMinimumSize(new Dimension(0, stackTitleBar.getMinimumSize().height));
-        viewerPane.setMinimumSize(new Dimension(0, 0));
-
         buttons=new ArrayList<StackButton>();
 
+        refreshLayout();
     }
 
-    @Override
-    public void setBounds(final Rectangle r) {
-
-        this.setRectangle=new Rectangle(r);
-        super.setBounds(r);
+    private void refreshLayout() {
+        removeAll();
+        setLayout(new MigLayout("insets 0, gap 0, flowy"));
+        //
+        // Title bar
+        stackTitleBar = new TitleBar(TITLE_CAPTION);
+        add(stackTitleBar, "w 100%");
+        stackTitleBar.setBorder(BorderFactory.createMatteBorder(1, 0, 0, 0, Color.BLACK));
+        //
+        // Stack scroll pane
+        stackScrollablePanel = new ScrollablePanel();
+        stackScrollablePanel.setLayout(new MigLayout("insets 0, gap 0, flowy"));
+        stackScrollPane = new JScrollPane(stackScrollablePanel);
+        add(stackScrollPane, "w 100%");
+        stackScrollPane.setMinimumSize(new Dimension(0, 0));
+        stackScrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED);
+        stackScrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        stackScrollPane.setBorder(BorderFactory.createMatteBorder(1, 0, 0, 0, Color.BLACK));
     }
 
     public static String getTitle() {
-        return "Stack";
-    }
-
-    private JPanel getNewStackButtonPanel(final StackViewerInfo stackInfo, final int maxWidth) {
-        final JPanel panel=new JPanel(new BorderLayout());
-        panel.setBorder(FontsAndBorders.SMALL_EMPTY_BORDER);
-        final StackButton button=new StackButton(stackInfo, maxWidth);
-        buttons.add(button);
-        panel.add(button,BorderLayout.CENTER);
-        return panel;
+        return TITLE_CAPTION;
     }
 
     public void update() {
 
         final int maxWidth=getWidth()-40;
 
+        stackScrollablePanel.removeAll();
         buttons.clear();
 
-        final JPanel contentPanel=viewerPane.getContent();
+        // Display stack items
         for (final StackViewerInfo stackInfo : viewerInfo.getStack()) {
-            contentPanel.add(getNewStackButtonPanel(stackInfo, maxWidth));
+            StackButton btn = new StackButton(stackInfo, maxWidth);
+            buttons.add(btn);
+            stackScrollablePanel.add(btn, "w 100%");
         }
 
-        if (image) {
-            final int contentHeight = viewerPane.getContent().getPreferredSize().height + 20;
-            if (contentHeight < setRectangle.height) {
-                setBounds(getX(), setRectangle.y + setRectangle.height -contentHeight, getWidth(), contentHeight);
-            } else {
-                setBounds(setRectangle);
-            }
+        // set preferred size for layout manager.
+        int preferredHeight =
+                stackTitleBar.getPreferredSize().height +
+                stackScrollablePanel.getPreferredSize().height;
+        if (!isEmpty()) {
+            preferredHeight += 2;
         }
+        setPreferredSize(new Dimension(getWidth(), preferredHeight));
 
         showValidChoices(controller.getValidChoices());
-        viewerPane.switchContent();
-        repaint();
+//        viewerPane.switchContent();
+//        repaint();
 
         notifyStackViewerUpdated();
 
@@ -142,7 +135,7 @@ public class StackViewer extends JPanel implements ChoiceViewer {
             final JPanel panel=new JPanel();
             panel.setOpaque(false);
             panel.setBorder(FontsAndBorders.getPlayerBorder(stackInfo.visible));
-            panel.setLayout(new BorderLayout(0,2));
+            panel.setLayout(new BorderLayout(0,0));
             setComponent(panel);
 
             final JLabel sourceLabel=new JLabel(stackInfo.name);
@@ -161,7 +154,7 @@ public class StackViewer extends JPanel implements ChoiceViewer {
 
         @Override
         public void mouseEntered() {
-            if (image) {
+            if (isImageMode) {
                 final Rectangle rect=new Rectangle(
                         StackViewer.this.getLocationOnScreen().x,
                         getLocationOnScreen().y,
@@ -175,7 +168,7 @@ public class StackViewer extends JPanel implements ChoiceViewer {
 
         @Override
         public void mouseExited() {
-            if (image) {
+            if (isImageMode) {
                 controller.hideInfo();
             }
         }
@@ -204,4 +197,35 @@ public class StackViewer extends JPanel implements ChoiceViewer {
             listener.stackViewerUpdated();
         }
     }
+
+    /**
+     * By using a Scrollable panel in the ScrollPane the content will adjust
+     * correctly based on whether the vertical scrollbar is visible or not.
+     */
+    @SuppressWarnings("serial")
+    private final class ScrollablePanel extends JPanel implements Scrollable {
+
+        public Dimension getPreferredScrollableViewportSize() {
+            return getPreferredSize();
+        }
+
+        public int getScrollableUnitIncrement(Rectangle visibleRect, int orientation, int direction) {
+            return getFont().getSize();
+        }
+
+        public int getScrollableBlockIncrement(Rectangle visibleRect, int orientation, int direction) {
+            return getFont().getSize();
+        }
+
+        public boolean getScrollableTracksViewportWidth() {
+            return true;
+        }
+
+        // we don't want to track the height, because we want to scroll vertically.
+        public boolean getScrollableTracksViewportHeight() {
+            return false;
+        }
+
+    }
+
 }
