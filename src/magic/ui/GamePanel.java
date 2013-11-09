@@ -4,6 +4,7 @@ import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
 import magic.model.MagicGame;
 import magic.model.MagicCardList;
+import magic.ui.resolution.DefaultResolutionProfile;
 import magic.ui.resolution.ResolutionProfileResult;
 import magic.ui.resolution.ResolutionProfileType;
 import magic.ui.resolution.ResolutionProfiles;
@@ -17,22 +18,20 @@ import magic.ui.viewer.ImageBattlefieldViewer;
 import magic.ui.viewer.ImageCombatViewer;
 import magic.ui.viewer.ImageHandGraveyardExileViewer;
 import magic.ui.viewer.LogBookViewer;
+import magic.ui.viewer.LogStackViewer;
 import magic.ui.viewer.PlayerViewer;
 import magic.ui.viewer.StackCombatViewer;
 import magic.ui.viewer.StackViewer;
 import magic.ui.viewer.ViewerInfo;
-import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.ZoneBackgroundLabel;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
-import javax.swing.JSplitPane;
 import javax.swing.KeyStroke;
 
+import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
@@ -49,6 +48,7 @@ public final class GamePanel extends JPanel {
     private static final String LOG_KEY="log";
     private static final String PASS_KEY="pass";
     private static final Theme theme = ThemeFactory.getInstance().getCurrentTheme();
+    private static final Color translucentPanelColor = new Color(255, 255, 255, 200);
 
     private final MagicFrame frame;
     private final MagicGame game;
@@ -71,9 +71,9 @@ public final class GamePanel extends JPanel {
     private final ImageBattlefieldViewer imageOpponentPermanentViewer;
     private final ImageCombatViewer imageCombatViewer;
     private final JPanel lhsPanel, rhsPanel;
-    private final JPanel stackContainer;
-    private final JSplitPane splitter;
-    private final TexturedPanel splitterContainer;
+
+    private ResolutionProfileResult result;
+    private final LogStackViewer logStackViewer;
 
     public GamePanel(
             final MagicFrame frame,
@@ -106,8 +106,6 @@ public final class GamePanel extends JPanel {
         rhsPanel.setOpaque(false);
 
         logBookViewer=new LogBookViewer(game.getLogBook());
-        logBookViewer.setVisible(true);
-        logBookViewer.setOpaque(false);
 
         cardViewer=new CardViewer("Card",false,true);
         add(cardViewer, "w 100%, h 100%");
@@ -121,7 +119,10 @@ public final class GamePanel extends JPanel {
 
         playerViewer=new PlayerViewer(viewerInfo,controller,false);
         opponentViewer=new PlayerViewer(viewerInfo,controller,true);
+
         gameDuelViewer=new GameDuelViewer(game,controller);
+        gameDuelViewer.setBackground(translucentPanelColor);
+
         controller.setGameViewer(gameDuelViewer.getGameViewer());
 
         createActionMaps();
@@ -132,21 +133,13 @@ public final class GamePanel extends JPanel {
         playerPermanentViewer=new BattlefieldViewer(viewerInfo,controller,false);
         opponentPermanentViewer=new BattlefieldViewer(viewerInfo,controller,true);
         imageStackViewer=new StackViewer(viewerInfo,controller,true);
+        logStackViewer = new LogStackViewer(logBookViewer, imageStackViewer);
+        logStackViewer.setBackground(translucentPanelColor);
+
         imageHandGraveyardViewer=new ImageHandGraveyardExileViewer(viewerInfo,controller);
         imagePlayerPermanentViewer=new ImageBattlefieldViewer(viewerInfo,controller,false);
         imageOpponentPermanentViewer=new ImageBattlefieldViewer(viewerInfo,controller,true);
         imageCombatViewer=new ImageCombatViewer(viewerInfo,controller);
-
-        stackContainer = new JPanel(new MigLayout("insets 0, gap 0"));
-        stackContainer.setOpaque(false);
-        splitter = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
-        splitter.setBorder(FontsAndBorders.BLACK_BORDER);
-        splitter.setOneTouchExpandable(false);
-        splitter.setContinuousLayout(true);
-        splitter.setResizeWeight(0.5);
-        splitter.setOpaque(false);
-        splitterContainer = new TexturedPanel();
-        splitterContainer.setLayout(new MigLayout("insets 0, gap 0"));
 
         updateView();
 
@@ -277,6 +270,7 @@ public final class GamePanel extends JPanel {
     }
 
     public void update() {
+
         playerViewer.update();
         opponentViewer.update();
         gameDuelViewer.update();
@@ -332,14 +326,14 @@ public final class GamePanel extends JPanel {
     }
 
     public void resizeComponents() {
+
         final Dimension size=getSize();
-        final ResolutionProfileResult result=ResolutionProfiles.calculate(size);
+        result = ResolutionProfiles.calculate(size);
 
         backgroundLabel.setZones(result);
 
         playerViewer.setBounds(result.getBoundary(ResolutionProfileType.GamePlayerViewer));
         playerViewer.setSmall(result.getFlag(ResolutionProfileType.GamePlayerViewerSmall));
-        opponentViewer.setBounds(result.getBoundary(ResolutionProfileType.GameOpponentViewer));
         opponentViewer.setSmall(result.getFlag(ResolutionProfileType.GamePlayerViewerSmall));
         gameDuelViewer.setBounds(result.getBoundary(ResolutionProfileType.GameDuelViewer));
 
@@ -356,45 +350,59 @@ public final class GamePanel extends JPanel {
             imageCombatViewer.setBounds(result.getBoundary(ResolutionProfileType.GameImageCombatViewer));
         }
 
-        setThisLayout(result);
+        setGamePanelLayout();
 
         controller.update();
     }
 
-    private void setThisLayout(final ResolutionProfileResult result) {
+    /**
+     * The game screen layout is split into two columns using MigLayout.
+     * The LHS is a fixed-width column that uses MigLayout to position UI components.
+     * The RHS column represents the battlefield and uses absolute positioning.
+     */
+    private void setGamePanelLayout() {
 
-        final int spacing = theme.getValue(Theme.VALUE_SPACING);
-        StringBuilder sb = new StringBuilder();
-
-        Rectangle r = result.getBoundary(ResolutionProfileType.GameLHS);
+        String layoutConstraints =
+                "insets 0," +           // no margins.
+                "gap 0," +              // no spacing between left & right panels.
+                "flowx," +              // horizontal layout.
+                "";                     // add "debug" to show layout outlines.
 
         removeAll();
-        setLayout(new MigLayout(
-                "insets 0, gap 0, flowx, wrap 2",
-                "[" + r.width +"px!][]"));
+        setLayout(new MigLayout(layoutConstraints));
+
+        add(lhsPanel, "w " + DefaultResolutionProfile.getPanelWidthLHS() +"!, h 100%");
+        add(rhsPanel, "w 100%, h 100%");
+
+        setLeftSideLayout();
+
+    }
+
+    /**
+     *  The LHS of the game screen contains the two player info views, the Log/Stack
+     *  viewer and the game console. All are at a fixed height except the Log/Stack view
+     *  which should expand and contract to fill any remaining space depending on screen height.
+     */
+    private void setLeftSideLayout() {
+
+        int spacing = theme.getValue(Theme.VALUE_SPACING);
+
+        String layoutConstraints =
+                "insets " + spacing + "," +             // margins determined by theme.
+                "gap 0 " + spacing + "," +              // vertical spacing determined by theme.
+                "flowy" +                               // vertical layout.
+                "";                                     // add "debug" to show layout outlines.
+        String columnConstraints = "[100%, fill]";      // each component fills width of LHS.
 
         lhsPanel.removeAll();
-        lhsPanel.setLayout(
-                new MigLayout(
-                        sb.append("insets ").append(spacing).append(",")	// margins
-                        .append("gap 0 ").append(spacing).append(",")		// gapx [gapy]
-                        .append("flowy,")
-                        .append("").toString()));                           // debug
+        lhsPanel.setLayout(new MigLayout(layoutConstraints, columnConstraints));
 
-        r = result.getBoundary(ResolutionProfileType.GameOpponentViewer);
-        lhsPanel.add(opponentViewer, "w 100%, h " + r.height + "px!");
-        stackContainer.add(imageStackViewer, "w 100%, pushy, bottom");
-        splitter.setTopComponent(logBookViewer);
-        splitter.setBottomComponent(stackContainer);
-        splitterContainer.add(splitter, "w 100%, h 100%");
-        lhsPanel.add(splitterContainer, "w 100%, h 100%");
-        r = result.getBoundary(ResolutionProfileType.GameDuelViewer);
-        lhsPanel.add(gameDuelViewer, "w 100%, h " + r.height + "px!");
-        r = result.getBoundary(ResolutionProfileType.GamePlayerViewer);
-        lhsPanel.add(playerViewer, "w 100%, h " + r.height + "px!");
+        lhsPanel.add(opponentViewer, "h " + DefaultResolutionProfile.PLAYER_VIEWER_HEIGHT_SMALL + "!");
+        lhsPanel.add(logStackViewer, "h 100%");
+        lhsPanel.add(gameDuelViewer, "h " + DefaultResolutionProfile.GAME_VIEWER_HEIGHT + "!");
+        lhsPanel.add(playerViewer,   "h " + DefaultResolutionProfile.PLAYER_VIEWER_HEIGHT_SMALL + "!");
 
-        add(lhsPanel, "w 100%, h 100%");
-        add(rhsPanel, "w 100%, h 100%");
+        logStackViewer.setLogStackLayout();
 
     }
 

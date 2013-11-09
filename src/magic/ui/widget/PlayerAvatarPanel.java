@@ -76,19 +76,20 @@ public class PlayerAvatarPanel extends TexturedPanel {
     }
 
     private void update() {
-
-        final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
-        final ImageIcon faceIcon=theme.getAvatarIcon(playerDefinition.getFace(),small?2:3);
-        faceLabel.setIcon(faceIcon);
-        titleBar.setText(playerDefinition.getName());
-        if (small) {
-            titleBar.setVisible(false);
-            setPreferredSize(new Dimension(72,80));
-        } else {
-            new JLabel(faceIcon);
-            titleBar.setVisible(true);
-            setPreferredSize(new Dimension(132,150));
+        if (playerDefinition != null) {
+            final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
+            final ImageIcon faceIcon=theme.getAvatarIcon(playerDefinition.getFace(),small?2:3);
+            faceLabel.setIcon(faceIcon);
+            titleBar.setText(playerDefinition.getName());
+            if (small) {
+                titleBar.setVisible(false);
+                setPreferredSize(new Dimension(72,80));
+            } else {
+                new JLabel(faceIcon);
+                titleBar.setVisible(true);
+                setPreferredSize(new Dimension(132,150));
+            }
+            revalidate();
         }
-        revalidate();
     }
 }

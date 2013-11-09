@@ -8,16 +8,18 @@ import magic.ui.widget.PanelButton;
 import magic.ui.widget.TextLabel;
 import magic.ui.widget.TitleBar;
 import magic.ui.widget.ViewerScrollPane;
+import net.miginfocom.swing.MigLayout;
 
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Rectangle;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 import java.util.Set;
 
 public class StackViewer extends JPanel implements ChoiceViewer {
@@ -30,8 +32,13 @@ public class StackViewer extends JPanel implements ChoiceViewer {
     private final boolean image;
     private final Collection<StackButton> buttons;
     private Rectangle setRectangle = new Rectangle();
+    private List<IStackViewerListener> _listeners = new ArrayList<>();
+
+    final TitleBar stackTitleBar;
 
     public StackViewer(final ViewerInfo viewerInfo,final GameController controller,final boolean image) {
+
+        boolean useMigLayout = false;
 
         this.viewerInfo=viewerInfo;
         this.controller=controller;
@@ -40,20 +47,24 @@ public class StackViewer extends JPanel implements ChoiceViewer {
 
         controller.registerChoiceViewer(this);
 
-        setLayout(new BorderLayout());
+        setLayout(useMigLayout ? new MigLayout("debug, insets 0, gap 0, flowy") : new BorderLayout(0, 0));
 
         final Theme theme = ThemeFactory.getInstance().getCurrentTheme();
-        final TitleBar stackTitleBar = new TitleBar("Stack");
+        stackTitleBar = new TitleBar("Stack");
         stackTitleBar.setBorder(BorderFactory.createMatteBorder(1, 0, 0, 0, Color.BLACK));
         stackTitleBar.setIcon(theme.getIcon(Theme.ICON_SMALL_STACK));
-        add(stackTitleBar, BorderLayout.SOUTH);
+        add(stackTitleBar, useMigLayout ? "w 100%, h 20px!" : BorderLayout.NORTH);
 
         viewerPane=new ViewerScrollPane();
-        add(viewerPane,BorderLayout.CENTER);
+        viewerPane.setBorder(BorderFactory.createEmptyBorder());
+        add(viewerPane, useMigLayout ? "w 100%, h 0" : BorderLayout.CENTER);
+
+        // Set unchanging minimum sizes.
+        setMinimumSize(new Dimension(0, stackTitleBar.getMinimumSize().height));
+        viewerPane.setMinimumSize(new Dimension(0, 0));
 
         buttons=new ArrayList<StackButton>();
 
-        update();
     }
 
     @Override
@@ -67,6 +78,15 @@ public class StackViewer extends JPanel implements ChoiceViewer {
         return "Stack";
     }
 
+    private JPanel getNewStackButtonPanel(final StackViewerInfo stackInfo, final int maxWidth) {
+        final JPanel panel=new JPanel(new BorderLayout());
+        panel.setBorder(FontsAndBorders.SMALL_EMPTY_BORDER);
+        final StackButton button=new StackButton(stackInfo, maxWidth);
+        buttons.add(button);
+        panel.add(button,BorderLayout.CENTER);
+        return panel;
+    }
+
     public void update() {
 
         final int maxWidth=getWidth()-40;
@@ -75,19 +95,13 @@ public class StackViewer extends JPanel implements ChoiceViewer {
 
         final JPanel contentPanel=viewerPane.getContent();
         for (final StackViewerInfo stackInfo : viewerInfo.getStack()) {
-
-            final JPanel panel=new JPanel(new BorderLayout());
-            panel.setBorder(FontsAndBorders.SMALL_EMPTY_BORDER);
-            final StackButton button=new StackButton(stackInfo,maxWidth);
-            buttons.add(button);
-            panel.add(button,BorderLayout.CENTER);
-            contentPanel.add(panel);
+            contentPanel.add(getNewStackButtonPanel(stackInfo, maxWidth));
         }
 
         if (image) {
-            final int contentHeight=viewerPane.getContent().getPreferredSize().height+20;
-            if (contentHeight<setRectangle.height) {
-                setBounds(getX(),setRectangle.y+setRectangle.height-contentHeight,getWidth(),contentHeight);
+            final int contentHeight = viewerPane.getContent().getPreferredSize().height + 20;
+            if (contentHeight < setRectangle.height) {
+                setBounds(getX(), setRectangle.y + setRectangle.height -contentHeight, getWidth(), contentHeight);
             } else {
                 setBounds(setRectangle);
             }
@@ -96,6 +110,9 @@ public class StackViewer extends JPanel implements ChoiceViewer {
         showValidChoices(controller.getValidChoices());
         viewerPane.switchContent();
         repaint();
+
+        notifyStackViewerUpdated();
+
     }
 
     public boolean isEmpty() {
@@ -171,6 +188,20 @@ public class StackViewer extends JPanel implements ChoiceViewer {
         @Override
         public Color getValidColor() {
             return ThemeFactory.getInstance().getCurrentTheme().getChoiceColor();
+        }
+    }
+
+    public synchronized void addListener(IStackViewerListener obj) {
+        _listeners.add(obj);
+    }
+
+    public synchronized void removeListener(IStackViewerListener obj) {
+        _listeners.remove(obj);
+    }
+
+    private synchronized void notifyStackViewerUpdated() {
+        for (final IStackViewerListener listener : _listeners) {
+            listener.stackViewerUpdated();
         }
     }
 }

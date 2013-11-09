@@ -7,6 +7,7 @@ import magic.ui.widget.TabSelector;
 import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.TitleBar;
 import net.miginfocom.swing.MigLayout;
+
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -31,6 +32,7 @@ public class GameDuelViewer extends TexturedPanel implements ChangeListener {
     private final JLabel playerAvatar = new JLabel();
 
     public GameDuelViewer(final MagicGame game,final GameController controller) {
+
         gameViewer=new GameViewer(game,controller);
         duelViewer=new DuelViewer(game.getDuel());
         gameViewer.setOpaque(false);
@@ -42,7 +44,7 @@ public class GameDuelViewer extends TexturedPanel implements ChangeListener {
 
         playerAvatar.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 1, Color.BLACK));
 
-        setSize(320,125);
+        //setSize(320,125);
         setLayout(new BorderLayout());
 
         titleBar=new TitleBar("");

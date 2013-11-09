@@ -87,7 +87,7 @@ public class PlayerViewer extends JPanel implements ChoiceViewer {
             labels[index].setIcon(theme.getIcon(ICON_NAMES[index]));
         }
 
-        setSmall(false);
+        setSmall(true);
         update();
     }
 

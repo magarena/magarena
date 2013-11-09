@@ -76,6 +76,7 @@ public class LogBookViewer extends JPanel {
         setVerticalScrollbarPolicy();
         scrollPane.getVerticalScrollBar().setUnitIncrement(INCREMENT);
         scrollPane.getVerticalScrollBar().setBlockIncrement(INCREMENT);
+        scrollPane.setBorder(BorderFactory.createEmptyBorder());
         add(scrollPane,BorderLayout.CENTER);
 
         addComponentListener(new ComponentAdapter() {
@@ -195,7 +196,7 @@ public class LogBookViewer extends JPanel {
                     JScrollPane.VERTICAL_SCROLLBAR_NEVER;
     }
 
-    private void forceVerticalScrollbarToMax() {
+    public void forceVerticalScrollbarToMax() {
         scrollPane.validate();
         JScrollBar scrollbar = scrollPane.getVerticalScrollBar();
         scrollbar.setValue(scrollbar.getMaximum());
