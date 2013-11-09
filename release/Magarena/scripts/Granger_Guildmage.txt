@@ -1,0 +1,12 @@
+name=Granger Guildmage
+url=http://magiccards.info/mr/en/118.html
+image=http://magiccards.info/scans/en/mr/118.jpg
+value=3.430
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={G}
+pt=1/1
+ability=pay {W},{T}: Target creature gains first strike until end of turn.
+timing=main
+requires_groovy_code

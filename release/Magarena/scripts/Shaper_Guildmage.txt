@@ -1,0 +1,13 @@
+name=Shaper Guildmage
+url=http://magiccards.info/mr/en/91.html
+image=http://magiccards.info/scans/en/mr/91.jpg
+value=3.015
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={U}
+pt=1/1
+ability=pay {W},{T}: Target creature gains first strike until end of turn.;\
+        pay {B},{T}: Target creature gets +1/+0 until end of turn.
+timing=main
+

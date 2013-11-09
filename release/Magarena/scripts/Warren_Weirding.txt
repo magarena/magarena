@@ -1,0 +1,11 @@
+name=Warren Weirding
+url=http://magiccards.info/mt/en/82.html
+image=http://magiccards.info/scans/en/mt/82.jpg
+value=4.045
+removal=2
+rarity=C
+type=Tribal,Sorcery
+subtype=Goblin
+cost={1}{B}
+timing=main
+requires_groovy_code
