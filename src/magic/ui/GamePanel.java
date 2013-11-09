@@ -249,7 +249,6 @@ public final class GamePanel extends JPanel {
     public void focusViewers(final int handGraveyard,final int stackCombat) {
         if (isTextView()) {
             handGraveyardViewer.setSelectedTab(handGraveyard);
-            stackCombatViewer.setSelectedTab(stackCombat);
         } else {
             imageHandGraveyardViewer.setSelectedTab(handGraveyard);
         }
@@ -274,6 +273,7 @@ public final class GamePanel extends JPanel {
         playerViewer.update();
         opponentViewer.update();
         gameDuelViewer.update();
+        imageStackViewer.update();
 
         if (isTextView()) {
             handGraveyardViewer.update();
@@ -281,7 +281,6 @@ public final class GamePanel extends JPanel {
             playerPermanentViewer.update();
             opponentPermanentViewer.update();
         } else {
-            imageStackViewer.update();
             imageHandGraveyardViewer.update();
             imagePlayerPermanentViewer.update();
             imageOpponentPermanentViewer.update();
@@ -292,7 +291,6 @@ public final class GamePanel extends JPanel {
     public void updateView() {
         if (isTextView()) {
             backgroundLabel.setImage(false);
-            rhsPanel.remove(imageStackViewer);
             rhsPanel.remove(imageHandGraveyardViewer);
             rhsPanel.remove(imagePlayerPermanentViewer);
             rhsPanel.remove(imageOpponentPermanentViewer);

@@ -100,16 +100,13 @@ public class StackViewer extends JPanel implements ChoiceViewer {
         }
         setPreferredSize(new Dimension(getWidth(), preferredHeight));
 
-        showValidChoices(controller.getValidChoices());
-//        viewerPane.switchContent();
-//        repaint();
-
         notifyStackViewerUpdated();
+
+        showValidChoices(controller.getValidChoices());
 
     }
 
     public boolean isEmpty() {
-
         return buttons.isEmpty();
     }
 
