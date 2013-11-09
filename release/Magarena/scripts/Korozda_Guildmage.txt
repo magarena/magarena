@@ -1,0 +1,12 @@
+name=Korozda Guildmage
+url=http://magiccards.info/rtr/en/176.html
+image=http://magiccards.info/scans/en/rtr/176.jpg
+value=3.740
+rarity=U
+type=Creature
+subtype=Elf,Shaman
+cost={B}{G}
+pt=2/2
+timing=main
+requires_groovy_code
+
