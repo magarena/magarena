@@ -27,10 +27,12 @@
                     token,
                     {
                         final MagicGame G, final MagicEvent E ->
-                        G.doAction(new MagicAttachAction(
-                            E.getPermanent(), 
-                            E.getRefPermanent()
-                        ));
+                        if (E.isYes()) {
+                            G.doAction(new MagicAttachAction(
+                                E.getPermanent(), 
+                                E.getRefPermanent()
+                            ));
+                        }
                     } as MagicEventAction,
                     "You may\$ attach SN to RN."
                 ));
